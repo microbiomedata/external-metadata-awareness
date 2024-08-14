@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "external-metadata-awareness"
+version = "0.1.0"
+description = "Tools for fetching and processing external schemas, ontologies and metadata records. Includes value set maintenance."
+authors = ["Mark A. Miller <MAM@lbl.gov>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
