@@ -7,8 +7,17 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
+click = "^8.1.7"
+pymongo = "^4.8.0"
+tqdm = "^4.66.5"
+lxml = "^5.3.0"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+list-mongodb-paths = 'external_metadata_awareness.list_mongodb_paths:main'
+xml-to-mongo = 'external_metadata_awareness.xml_to_mongo:process_xml_with_progress'
+

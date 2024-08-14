@@ -1,4 +1,5 @@
 WGET=wget
+RUN=poetry run
 
 # get MIxS YAML and EnvO OWL or sqlite
 
@@ -27,3 +28,16 @@ downloads/ncbi_biosample_attributes.xml:
 
 downloads/ncbi_biosample_packages.xml:
 	$(WGET) -O $@ "https://www.ncbi.nlm.nih.gov/biosample/docs/packages/?format=xml"
+
+local/mongodb-paths.txt:
+	$(RUN) list-mongodb-paths > $@
+
+load-biosamples-into-mongo: local/biosample_set.xml
+	$(RUN) xml-to-mongo \
+		--file-path $< \
+		--node-type BioSample \
+		--id-field id \
+		--db-name biosamples_dev \
+		--collection-name biosamples_dev \
+		--max-elements 100000 \
+		--anticipated-last-id 100000
