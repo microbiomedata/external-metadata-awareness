@@ -2,3 +2,4 @@
 downloads/
 local/
 __pycache__/
+**/__pycache__/

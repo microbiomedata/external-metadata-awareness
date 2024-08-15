@@ -1,7 +1,10 @@
 WGET=wget
 RUN=poetry run
 
-# get MIxS YAML and EnvO OWL or sqlite
+# preferable to use a tagged release, but theres good stuff in this commit that hasn't been released yet
+MIXS_YAML_URL=https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/b0b1e03b705cb432d08914c686ea820985b9cb20/src/mixs/schema/mixs.yaml
+SUBMISSION_SCHEMA_URL=https://raw.githubusercontent.com/microbiomedata/submission-schema/v10.7.0/src/nmdc_submission_schema/schema/nmdc_submission_schema.yaml
+
 
 # very complex documents; many are too large to load into a MongoDB BSON document
 downloads/bioproject.xml:
@@ -23,14 +26,22 @@ downloads/biosample.xsd:
 
 # find code for converting to tabel in other repos
 # or convert to duckdb
-downloads/ncbi_biosample_attributes.xml:
+downloads/ncbi-biosample-attributes.xml:
 	$(WGET) -O $@ "https://www.ncbi.nlm.nih.gov/biosample/docs/attributes/?format=xml"
 
-downloads/ncbi_biosample_packages.xml:
+downloads/ncbi-biosample-packages.xml:
 	$(WGET) -O $@ "https://www.ncbi.nlm.nih.gov/biosample/docs/packages/?format=xml"
 
-local/mongodb-paths.txt:
-	$(RUN) list-mongodb-paths > $@
+local/ncbi-biosample-packages.csv: downloads/ncbi-biosample-packages.xml
+	$(RUN) python external_metadata_awareness/ncbi_packages_csv_report.py \
+	--xml-file $< \
+	--output-file $@
+
+local/mongodb-paths-1pct.txt:
+	$(RUN) list-mongodb-paths \
+		--db-name biosamples \
+		--collection biosamples \
+		--sample-size 500000 > $@
 
 load-biosamples-into-mongo: local/biosample_set.xml
 	$(RUN) xml-to-mongo \
@@ -41,3 +52,230 @@ load-biosamples-into-mongo: local/biosample_set.xml
 		--collection-name biosamples_dev \
 		--max-elements 100000 \
 		--anticipated-last-id 100000
+
+# ENVO STUFF
+# getting fragments of EnvO because the whole thing is too large to feed into an LLM
+# our guideline is that env_broad_scale should be answered with an EnvO biome subclass
+
+# these OAK commands fetch the latest EnvO SQLite file from a BBOP S3 bucket
+# it may be a few days behind the envo.owl file form the EnvO GH repo
+# use `runoak cache-ls` to see where the SQLite files are cached
+local/biome-relationships.tsv:
+	$(RUN) runoak --input sqlite:obo:envo relationships .desc//p=i ENVO:00000428 > $@
+	# !!! pivot? include entailment? --include-entailed / --no-include-entailed; --non-redundant-entailed / --no-non-redundant-entailed
+	# LLM web interfaces might want CSVs
+
+local/biome-relationships.csv: local/biome-relationships.tsv
+	sed 's/\t/,/g' $< > $@
+	#awk 'BEGIN {FS="\t"; OFS=","} {print $$0}' $< > $@
+	rm -rf $<
+
+local/biome-metadata.yaml:
+	$(RUN) runoak --input sqlite:obo:envo term-metadata .desc//p=i ENVO:00000428 > $@
+	 # !!! try different formats? or predicate list?
+
+local/biome-metadata.json: local/biome-metadata.yaml
+	yq ea '[.]' $< -o=json | cat > $@
+	rm -rf $<
+
+# our guideline is that env_medium should be answered with an EnvO biome subclass
+local/environmental-materials-relationships.tsv:
+	$(RUN) runoak --input sqlite:obo:envo relationships .desc//p=i ENVO:00010483 > $@
+
+local/environmental-materials-relationships.csv: local/environmental-materials-relationships.tsv
+	sed 's/\t/,/g' $< > $@
+	rm -rf $<
+
+local/environmental-materials-metadata.yaml:
+	$(RUN) runoak --input sqlite:obo:envo term-metadata .desc//p=i ENVO:00010483 > $@
+
+local/environmental-materials-metadata.json: local/environmental-materials-metadata.yaml
+	yq ea '[.]' $< -o=json | cat > $@
+	rm -rf $<
+
+# the guidance for env_local_scale is less concrete so I am skipping for now.
+
+# MIXS STUFF
+downloads/mixs.yaml:
+	wget -O $@ $(MIXS_YAML_URL)
+
+# getting fragments of MIxS because the whole thing is too large to feed into an LLM
+local/mixs-extensions-with-slots.json: downloads/mixs.yaml
+	yq -o=json e '.classes | with_entries(select(.value.is_a == "Extension") | .value |= del(.slot_usage))' $< | cat > $@
+
+local/mixs-extensions.json: downloads/mixs.yaml
+	yq -o=json e '.classes | with_entries(select(.value.is_a == "Extension") | .value |= del(.slots, .slot_usage))' $< | cat > $@
+
+local/mixs-env-triad.json: downloads/mixs.yaml
+	yq -o=json e '{"slots": {"env_broad_scale": .slots.env_broad_scale, "env_local_scale": .slots.env_local_scale, "env_medium": .slots.env_medium}}' $< | cat > $@
+
+# NMDC SCHEMA STUFF
+downloads/nmdc_submission_schema.yaml:
+	wget -O $@ $(SUBMISSION_SCHEMA_URL)
+
+local/established-value-sets-from-submission-schema.json: downloads/nmdc_submission_schema.yaml
+	yq -o=json e '{"enums": {"EnvBroadScaleSoilEnum": .enums.EnvBroadScaleSoilEnum, "EnvLocalScaleSoilEnum": .enums.EnvLocalScaleSoilEnum, "EnvMediumSoilEnum": .enums.EnvMediumSoilEnum}}' $< | cat > $@ # ~ 48
+
+
+# NMDC METADATA STUFF
+downloads/nmdc-production-studies.json:
+	wget -O $@.bak https://api.microbiomedata.org/nmdcschema/study_set?max_page_size=999999
+	yq '.resources' -o=json $@.bak | cat > $@
+	rm -rf $@.bak
+
+downloads/nmdc-production-biosamples.json:
+	wget -O $@.bak https://api.microbiomedata.org/nmdcschema/biosample_set?max_page_size=999999
+	yq '.resources' -o=json $@.bak | cat > $@
+	rm -rf $@.bak
+
+local/nmdc-production-biosamples-5pct.json: downloads/nmdc-production-biosamples.json
+	$(RUN) python external_metadata_awareness/random_sample_resources.py \
+		--input-file $< \
+		--output-file $@ \
+		--sample-percentage 5
+
+local/nmdc-production-biosamples-json-to-context.tsv: downloads/nmdc-production-biosamples.json
+	$(RUN) python external_metadata_awareness/biosample_json_to_context_tsv.py \
+		--input-file $< \
+		--output-file $@
+
+
+####
+
+environmental-material-info.txt:
+	$(RUN) runoak --input sqlite:obo:envo info  .desc//p=i ENVO:00010483 > $@
+
+biome-minus-aquatic-runoak.txt:
+	$(RUN) runoak --input sqlite:obo:envo info .desc//p=i ENVO:00000428  .not .desc//p=i ENVO:00002030 > $@ # ~ 72
+
+#biome-minus-aquatic-runoak.tsv: # includes lots of columns, but ids are wrapped in arrays
+#	$(RUN) runoak --input sqlite:obo:envo info --output-type tsv  .desc//p=i ENVO:00000428 .not .desc//p=i ENVO:00002030  > $@
+
+local/ncbi-biosamples-packages-counts.tsv: sql/packages-counts.sql
+	$(RUN) python external_metadata_awareness/sql_to_tsv.py \
+	--sql-file $< \
+	--output-file $@
+
+####
+
+valid-env_broad_scale-biosample-all: valid-env_broad_scale-biosample-clean \
+local/ncbi-biosamples-context-value-counts-real-labels-only-annotated-2-or-ed.tsv \
+local/ncbi-biosamples-context-value-counts-failures.csv
+
+valid-env_broad_scale-biosample-clean:
+	rm -rf local/biome-info.txt \
+		local/envo-info.csv \
+		local/envo-info.txt \
+		local/ncbi-biosamples-context-value-counts.csv \
+		local/ncbi-biosamples-context-value-counts-normalized.csv \
+		local/ncbi-biosamples-context-value-counts-real-labels.csv \
+		local/ncbi-biosamples-context-value-counts-real-labels-only-annotated.tsv \
+		local/ncbi-biosamples-context-value-counts-real-labels-only-annotated-1.tsv \
+		local/ncbi-biosamples-context-value-counts-real-labels-only-annotated-2.tsv \
+		local/ncbi-biosamples-context-value-counts-real-labels-only-annotated-2-or-ed.tsv
+
+local/ncbi-biosamples-context-value-counts.csv:
+	$(RUN) python external_metadata_awareness/count_biosample_context_vals_from_postgres.py \
+		--output-file $@ \
+		--min-count 999
+
+local/ncbi-biosamples-context-value-counts-normalized.csv: local/ncbi-biosamples-context-value-counts.csv
+	$(RUN) python external_metadata_awareness/normalize_envo_data.py \
+		--count-col-name total_count \
+		--input-file $< \
+		--ontology-prefix ENVO \
+		--output-file $@ \
+		--val-col-name value
+
+local/ncbi-biosamples-context-value-counts-failures.csv: local/ncbi-biosamples-context-value-counts-normalized.csv
+	$(RUN) python external_metadata_awareness/find_envo_present_no_curie_extracted.py \
+		--input-file $< \
+		--output-file $@
+
+local/envo-info.txt:
+	$(RUN) runoak --input sqlite:obo:envo info  .desc//p=i continuant > $@ # or .ALL
+
+local/envo-info.csv: local/envo-info.txt
+	$(RUN) python external_metadata_awareness/normalize_envo_data.py \
+			--input-file $< \
+			--ontology-prefix ENVO \
+			--output-file $@
+
+local/ncbi-biosamples-context-value-counts-real-labels.csv: local/ncbi-biosamples-context-value-counts-normalized.csv local/envo-info.csv
+	$(RUN) python external_metadata_awareness/merge_in_reference_data.py \
+		--keep-file $(word 1,$^) \
+		--keep-key normalized_curie \
+		--reference-file $(word 2,$^) \
+		--reference-key normalized_curie \
+		--reference-addition normalized_label \
+		--addition-rename real_label \
+		--merged-file $@
+
+local/ncbi-biosamples-context-value-counts-real-labels-only-annotated.tsv: local/ncbi-biosamples-context-value-counts-real-labels.csv
+	date ; $(RUN) runoak \
+		--input sqlite:obo:envo annotate \
+		--matches-whole-text \
+		--output-type tsv \
+		--output $@ \
+		--text-file $< \
+		--match-column normalized_label ; date
+
+local/biome-info.txt:
+	$(RUN) runoak --input sqlite:obo:envo info  .desc//p=i ENVO:00000428 > $@
+
+local/ncbi-biosamples-context-value-counts-real-labels-only-annotated-1.tsv: local/biome-info.txt \
+local/ncbi-biosamples-context-value-counts-real-labels-only-annotated.tsv
+	$(RUN) python external_metadata_awareness/detect_curies_in_subset.py \
+		--tsv-file $(word 2,$^) \
+		--class-info-file $(word 1,$^)  \
+		--tsv-column-name normalized_curie \
+		--subset-label biome \
+		--output-file $@
+
+local/ncbi-biosamples-context-value-counts-real-labels-only-annotated-2.tsv: local/biome-info.txt \
+local/ncbi-biosamples-context-value-counts-real-labels-only-annotated-1.tsv
+	$(RUN) python external_metadata_awareness/detect_curies_in_subset.py \
+		--tsv-file $(word 2,$^) \
+		--class-info-file $(word 1,$^)  \
+		--tsv-column-name matched_id \
+		--subset-label biome \
+		--output-file $@
+
+local/ncbi-biosamples-context-value-counts-real-labels-only-annotated-2-or-ed.tsv: local/ncbi-biosamples-context-value-counts-real-labels-only-annotated-2.tsv
+	$(RUN) python external_metadata_awareness/or_boolean_columns.py \
+		--input-file $< \
+		--output-file $@ \
+		--column1 "normalized_curie_biome" \
+		--column2 "matched_id_biome"
+
+## for env medium
+#local/ncbi-biosamples-context-value-counts-real-labels-only-annotated-3.csv: local/environmental-material-info.txt \
+#local/ncbi-biosamples-context-value-counts-real-labels-only-annotated-2.csv
+#	$(RUN) python external_metadata_awareness/detect_curies_in_subset.py \
+#		--tsv-file $(word 2,$^) \
+#		--class-info-file $(word 1,$^)  \
+#		--tsv-column-name normalized-curie \
+#		--subset-label environmental-material \
+#		--output-file $@
+#
+#local/ncbi-biosamples-context-value-counts-real-labels-only-annotated-4.csv: local/environmental-material-info.txt \
+#local/ncbi-biosamples-context-value-counts-real-labels-only-annotated-3.csv
+#	$(RUN) python external_metadata_awareness/detect_curies_in_subset.py \
+#		--tsv-file $(word 2,$^) \
+#		--class-info-file $(word 1,$^)  \
+#		--tsv-column-name matched_id \
+#		--subset-label environmental_material \
+#		--output-file $@
+
+detected-annotations-to-postgres: local/ncbi-biosamples-context-value-counts-real-labels-only-annotated-2-or-ed.tsv
+	$(RUN) python external_metadata_awareness/load_tsv_into_postgres.py \
+	--tsv-file $< \
+	--table-name detected_annotations
+
+# joins pre-loaded (grouped) detected_annotations table with individual biosample env_broad_scale assertions
+local/soil-water-env-broad-scale.tsv: sql/soil-water-env-broad-scale.sql
+	$(RUN) python external_metadata_awareness/sql_to_tsv.py \
+	--sql-file $< \
+	--output-file $@
+
+

@@ -1,0 +1,14 @@
+# runoak query provides several prefixes provided for free (by default)
+PREFIX ENVO: <http://purl.obolibrary.org/obo/ENVO_>
+SELECT distinct *
+WHERE { # might theoretically be faster or cleaner with a named graph like <http://purl.obolibrary.org/obo/envo/envo-base.owl> but that may give abbreviated results
+    ?biome rdfs:subClassOf+ ENVO:00000428 .
+    minus {
+        ?biome rdfs:subClassOf+ ENVO:00002030 .
+    }
+    filter(strstarts(str(?biome), "http://purl.obolibrary.org/obo/ENVO_")) # foodon asserts that some climate zones are biomes!
+}
+order by ?biome
+limit 999
+# runoak query gives labels for free by default
+# try bioportal, ontology file, or different named graph ?
