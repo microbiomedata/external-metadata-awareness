@@ -159,7 +159,9 @@ biosample.
 In some cases it may be necessary to request new terms from EnvO (or another ontology) to reflect the true environmental
 context of a sample.
 
-## System Requirements:
+## System Dependencies:
+
+_Tested on Ubuntu 20.04 and MacOS Sonoma 12.0.1. Not all dependencies are required for all tools in this repo._
 
 - [yq](https://github.com/mikefarah/yq) (Mike Farah/GO)
     - [go](https://go.dev/)
@@ -170,8 +172,11 @@ context of a sample.
 - ssh tunnel to the BBOP/NMDC Postgres server on NERSC
 - [yamlfmt](https://github.com/google/yamlfmt)
     - [go](https://go.dev/)
-- jq
-- gh CLI
+- [jq](https://github.com/jqlang/jq)
+- [gh CLI](https://cli.github.com/)
+- [efetch](https://www.ncbi.nlm.nih.gov/books/NBK179288/)?
+
+## Related resources
 
 ## Ideas
 
