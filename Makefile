@@ -207,6 +207,13 @@ local/ncbi-biosamples-packages-counts.tsv: sql/packages-counts.sql
 	--sql-file $< \
 	--output-file $@
 
+local/nmdc-production-biosamples-env-package.json:
+	curl -X 'GET' \
+		'https://api.microbiomedata.org/nmdcschema/biosample_set?max_page_size=999999&projection=env_package' \
+		-H 'accept: application/json' > $@.bak
+	yq '.resources' -o=json $@.bak | cat > $@ # ENVO:00001998 is also soil
+	rm -rf $@.bak
+
 ####
 
 valid-env_broad_scale-biosample-all: valid-env_broad_scale-biosample-clean \
@@ -338,3 +345,6 @@ local/unused-terrestrial-biomes-prompt.txt: prompt-templates/unused-terrestrial-
 
 local/unused-terrestrial-biomes-response.txt: local/unused-terrestrial-biomes-prompt.txt
 	cat $< | $(RUN) llm prompt --model gpt-4o  -o temperature 0.99 | tee $@
+
+local/microbiomedata-repos.csv:
+	. ./report-microbiomedata-repos.sh > $@
