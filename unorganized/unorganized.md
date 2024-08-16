@@ -1,4 +1,4 @@
-## LLM models available after installing the XXX and XXX llm plugins. 
+## LLM models available after installing the llm-gemini and llm-claude-3 [llm](https://llm.datasette.io/en/stable/index.html) plugins.
 
 Most promising models **highlighted in bold**.
 
@@ -21,6 +21,7 @@ Most promising models **highlighted in bold**.
 * Anthropic Messages: claude-3-haiku-20240307 (aliases: claude-3-haiku)
 * **Anthropic Messages: claude-3-5-sonnet-20240620 (aliases: claude-3.5-sonnet)**
 
-It can be helpful to set the `temperature` to something close to 0 for "least creative" answers, but not all models take that parameter
+It can be helpful to set the `temperature` to something close to 0 for "least creative" answers, but not all models take
+that parameter
 
 `-o temperature 0.01`

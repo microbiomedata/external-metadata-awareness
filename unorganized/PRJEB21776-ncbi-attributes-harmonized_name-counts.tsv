@@ -1,0 +1,45 @@
+attribute_name	harmonized_name	count
+amount or size of sample collected		141
+collection date	collection_date	141
+common name		141
+current land use (emp 500 soil)		141
+DNA concentration		141
+ENA-CHECKLIST		141
+ENA-FIRST-PUBLIC		141
+ENA-LAST-UPDATE		141
+environment (biome)	env_broad_scale	141
+environment (feature)	env_local_scale	141
+environment (material)	env_medium	141
+External Id		141
+geographic location (country and/or sea)	geo_loc_name	141
+geographic location (depth)		141
+geographic location (elevation)		141
+geographic location (latitude)		141
+geographic location (longitude)		141
+geographic location (region and locality)		141
+INSDC center name		141
+INSDC first public		141
+INSDC last update		141
+INSDC status		141
+investigation type	investigation_type	141
+pcr primers		141
+place name		141
+project name	project_name	141
+sample collection device or method	samp_collect_device	141
+sample name	sample_name	141
+sample volume or weight for DNA extraction	samp_vol_we_dna_ext	141
+scientific_name		141
+sequencing method		141
+soil environmental package		141
+source material identifiers	source_material_id	141
+storage conditions (fresh/frozen/other)	store_cond	141
+Submitter Id		141
+target gene		141
+target subfragment		141
+total nitrogen	tot_nitro	141
+total nitrogen method		141
+total organic carbon	tot_org_carb	141
+total organic C method	tot_org_c_meth	141
+vegetation zone		141
+water content	water_content	141
+water content method		141

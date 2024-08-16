@@ -1,0 +1,11 @@
+components:
+  - prompt: Here is a list of non-aquatic biomes from the Environment Ontology
+    file: local/biome-minus-aquatic.txt
+  - prompt: Here are the EnvO biomes that are included in my project's soil biome enumeration
+    file: local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv
+question: How many non-aquatic biomes are there? How many biomes are included in the enumeration?
+  How many non-aquatic biomes are not included in the enumeration? List them.
+
+sequence:
+  - local/biome-minus-aquatic.txt
+  - local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv

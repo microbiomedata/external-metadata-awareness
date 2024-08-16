@@ -106,6 +106,11 @@ local/mixs-extensions-with-slots.json: downloads/mixs.yaml
 local/mixs-extensions.json: downloads/mixs.yaml
 	yq -o=json e '.classes | with_entries(select(.value.is_a == "Extension") | .value |= del(.slots, .slot_usage))' $< | cat > $@
 
+local/mixs-extension-unique-slots.json: local/mixs-extensions-with-slots.json
+	$(RUN) python external_metadata_awareness/get_extension_unique_slots.py \
+		--input-file $< \
+		--output-file $@
+
 local/mixs-env-triad.json: downloads/mixs.yaml
 	yq -o=json e '{"slots": {"env_broad_scale": .slots.env_broad_scale, "env_local_scale": .slots.env_local_scale, "env_medium": .slots.env_medium}}' $< | cat > $@
 
@@ -116,6 +121,23 @@ downloads/nmdc_submission_schema.yaml:
 local/established-value-sets-from-submission-schema.json: downloads/nmdc_submission_schema.yaml
 	yq -o=json e '{"enums": {"EnvBroadScaleSoilEnum": .enums.EnvBroadScaleSoilEnum, "EnvLocalScaleSoilEnum": .enums.EnvLocalScaleSoilEnum, "EnvMediumSoilEnum": .enums.EnvMediumSoilEnum}}' $< | cat > $@ # ~ 48
 
+local/nmdc-submission-schema-enums-keys.txt: downloads/nmdc_submission_schema.yaml
+	yq eval '.enums | keys | .[]' $< | sort  > $@
+
+local/EnvBroadScaleSoilEnum-pvs-keys.txt: downloads/nmdc_submission_schema.yaml
+	yq eval '.enums.EnvBroadScaleSoilEnum.permissible_values | keys | .[]' $< | cat > $@
+
+local/EnvBroadScaleSoilEnum-pvs-keys-parsed.csv: local/EnvBroadScaleSoilEnum-pvs-keys.txt
+	$(RUN) python external_metadata_awareness/normalize_envo_data.py \
+		--input-file $< \
+		--ontology-prefix ENVO \
+		--output-file $@
+
+local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv: local/EnvBroadScaleSoilEnum-pvs-keys-parsed.csv
+	cut -f3,4 -d, $< | head -n 1 > $<.header.csv
+	tail -n +2 $< | cut -f3,4 -d, | sort | uniq > $@.tmp
+	cat $<.header.csv $@.tmp > $@
+	rm -rf $<.header.csv $@.tmp
 
 # NMDC METADATA STUFF
 downloads/nmdc-production-studies.json:
@@ -139,16 +161,45 @@ local/nmdc-production-biosamples-json-to-context.tsv: downloads/nmdc-production-
 		--input-file $< \
 		--output-file $@
 
+####
+
+# biosamples that are part of a particular study
+downloads/sty-11-ev70y104_biosamples.json:
+	wget -O $@.bak 'https://api.microbiomedata.org/nmdcschema/biosample_set?filter=%7B%22part_of%22%3A%20%22nmdc%3Asty-11-ev70y104%22%7D&max_page_size=999999'
+	yq -o=json e '.resources' $@.bak | cat > $@
+	rm -rf $@.bak
+
+# metadata about a particular study
+downloads/sty-11-ev70y104_study.json:
+	wget -O $@.bak 'https://api.microbiomedata.org/nmdcschema/ids/nmdc%3Asty-11-ev70y104'
+	yq -o=json e '.' $@.bak | cat > $@
+	rm -rf $@.bak
+
 
 ####
 
-environmental-material-info.txt:
-	$(RUN) runoak --input sqlite:obo:envo info  .desc//p=i ENVO:00010483 > $@
+local/environmental-material-info.txt:
+	$(RUN) runoak --input sqlite:obo:envo info .desc//p=i ENVO:00010483 > $@
 
-biome-minus-aquatic-runoak.txt:
+local/aquatic-biome-info.txt:
+	$(RUN) runoak --input sqlite:obo:envo info .desc//p=i ENVO:00002030 > $@
+
+#local/aquatic-biome-info.tsv:
+#	$(RUN) runoak --input sqlite:obo:envo info --output-type tsv --output $@ .desc//p=i ENVO:00002030
+#
+#local/aquatic-biome-tree.txt:
+#	$(RUN) runoak --input sqlite:obo:envo tree --gap-fill .desc//p=i ENVO:00002030 > $@
+
+local/aquatic-biome-relationships.tsv:
+	$(RUN) runoak --input sqlite:obo:envo relationships --output-type tsv --output $@ .desc//p=i ENVO:00002030
+
+local/aquatic-biome-viz.png:
+	$(RUN) runoak --input sqlite:obo:envo viz --no-view --output $@ --gap-fill .desc//p=i ENVO:00002030
+
+local/biome-minus-aquatic.txt:
 	$(RUN) runoak --input sqlite:obo:envo info .desc//p=i ENVO:00000428  .not .desc//p=i ENVO:00002030 > $@ # ~ 72
 
-#biome-minus-aquatic-runoak.tsv: # includes lots of columns, but ids are wrapped in arrays
+#local/biome-minus-aquatic.tsv: # includes lots of columns, but ids are wrapped in arrays
 #	$(RUN) runoak --input sqlite:obo:envo info --output-type tsv  .desc//p=i ENVO:00000428 .not .desc//p=i ENVO:00002030  > $@
 
 local/ncbi-biosamples-packages-counts.tsv: sql/packages-counts.sql
@@ -273,9 +324,17 @@ detected-annotations-to-postgres: local/ncbi-biosamples-context-value-counts-rea
 	--table-name detected_annotations
 
 # joins pre-loaded (grouped) detected_annotations table with individual biosample env_broad_scale assertions
-local/soil-water-env-broad-scale.tsv: sql/soil-water-env-broad-scale.sql
+local/soil-water-env-broad-scale.tsv: sql/soil-water-env_broad_scale.sql
 	$(RUN) python external_metadata_awareness/sql_to_tsv.py \
 	--sql-file $< \
 	--output-file $@
 
+#####
 
+local/unused-terrestrial-biomes-prompt.txt: prompt-templates/unused-terrestrial-biomes-prompt.yaml
+	$(RUN) python external_metadata_awareness/build-prompt-from-template.py \
+		--spec-file-path $< \
+		--output-file-path $@
+
+local/unused-terrestrial-biomes-response.txt: local/unused-terrestrial-biomes-prompt.txt
+	cat $< | $(RUN) llm prompt --model gpt-4o  -o temperature 0.99 | tee $@

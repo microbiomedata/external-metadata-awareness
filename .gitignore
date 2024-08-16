@@ -1,5 +1,7 @@
+**/*.env
+**/.DS_Store
+**/__pycache__/
 .idea/
+__pycache__/
 downloads/
 local/
-__pycache__/
-**/__pycache__/
