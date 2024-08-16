@@ -167,6 +167,8 @@ context of a sample.
 - [robot](https://robot.obolibrary.org/)
     - Java
 - wget
+- completed `local/.env`, based on `local/.env.template`
+- ssh tunnel to the BBOP/NMDC Postgres server on NERSC
 
 
 ## Ideas
