@@ -1,0 +1,44 @@
+components:
+  - prompt: Here are the definitions of what NMDC calls the "MIxS environment triad" of environmental context slots.
+      They can be thought of as questions about a Biosample, which should be answered with classes form ontologies like EnvO
+    file: mixs_env_triad.json
+  - prompt: Here are the definition of MIxS environmental Extensions
+    file: mixs_extensions_with_slots.json
+  - prompt: Here is some annotative metadata about EnvO's environmental material classes
+      Relationships between these classes and other EnvO classes will be provided in a separate CSV file
+    file: environmental-materials-metadata.json
+  - prompt: Here is some annotative metadata about EnvO's biome classes
+      Relationships between these classes and other EnvO classes will be provided in a separate CSV file
+    file: biome-metadata.json
+  - prompt: Here are some LinkML enumerations corresponding to established Extension-scoped value sets, from the NMDC schema.
+      They define what NMDC considers to be reasonable answers, from EnvO, for the environmental context questions from MIxS
+    file: established_value_sets_from_schema.json
+  - prompt: Here is the metadata about the studies in NMDC's production database
+    file: nmdc_production_studies.json
+  - prompt: Here is a 5 percent sample of the metadata about the biosamples in NMDC's production database
+    file: nmdc_production_biosamples_5pct.json
+question: Look at the values of the Biosample's env_package.has_raw_value field. In what cases do they match the name of a MIxS Extension verbatim, or a EnvO environmental material id, and when do they not match either?
+
+sequence:
+  - mixs_env_triad.json
+  - mixs_extensions_with_slots.json
+  - biome-metadata.json
+  - environmental-materials-metadata.json
+  - biome-metadata.json
+  - established_value_sets_from_schema.json
+  - nmdc_production_studies.json
+  - nmdc_production_biosamples_5pct.json
+
+# For the Biosamples that have an env_package value of soil or ENVO:00001998,
+#  which have an env_medium value that is or is not a subclass of  ENVO:00001998?
+
+# How many biomes are mentioned in the EnvO metadata? It's not necessary to list them in your response.
+
+# Use the provided data to generate a json file with dicts for each biosample, with the id for the biosample, its asserted env_package,
+#  and whatever MIxS extension seems most suitable for it. Add a comment for each biosample if necessary.
+
+# what methods could I use to infer env_package.has_raw_value values for those biosamples that are missing them?
+#  The values should be drawn from the keys of MIxS Extensions like MiscellaneousNaturalOrArtificialEnvironment, Soil, Water, etc.
+#  All of the content I have sent you is available on my local filesystem, so you don;t need to embed any of it in nay python code you generate
+
+# For the Biosamples that have an env_medium value of ENVO:00001998 or any subclass of ENVO:00001998, which have an env_medium value that is or is not a subclass of ENVO:00001998?

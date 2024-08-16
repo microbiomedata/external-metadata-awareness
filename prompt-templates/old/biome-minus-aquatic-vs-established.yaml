@@ -1,0 +1,44 @@
+components:
+  - prompt: Here is a report of the biome classes in the Environment Ontology (EnvO), minus the aquatic biomes
+    file: biome_minus_aquatic_runoak.tsv
+  - prompt: Here are some metadata (textual annotations) about all EnvO biomes
+    file: biome-metadata.yaml
+  - prompt: Here is a table with relationships between the EnvO biomes and other EnvO classes.
+      Remember that subclass relationships are transitive and that subclasses inherit all relationship from their parent classes
+    file: biome-relationships.csv
+  - prompt: Here are the definitions of what NMDC calls the "MIxS environment triad" of environmental context slots.
+      They can be thought of as questions about a Biosample, which should be answered with classes form ontologies like EnvO
+    file: mixs_env_triad.json
+  - prompt: Here are the definition of MIxS environmental Extensions
+    file: mixs_extensions.json
+  - prompt: Here are LinkML enumerations, representing value sets of EnvO class ids that NMDC finds to be
+      appropriate for answering the MIxS environment triad questions, in the context of the MIxS environmental Extensions
+    file: established_value_sets_from_schema.json
+question: Examine the EnvBroadScaleSoilEnum from established_value_sets_from_schema.json,
+  in which the permissible_values.texts are EnvO classes that NMDC has found to be reasonable answers for
+  the env_broad_scale question in the context of a Soil Extension sample. There may be some duplication,
+  and the EnvO class representation may be preceded by underscores. Make a unique, sorted list of the EnvO classes
+  in a label [identifier] format, with a count of the number of multiple permissible_values.texts they appear in.
+  Provide a count of the permissible_values.texts and the unique EnvO classes.
+  The inputs are long so be careful not to truncate your output.
+  Also consider the EnvO classes in biome_minus_aquatic_runoak.tsv and generate a similar list.
+  What EnvO classes appear in the EnvBroadScaleSoilEnum but not in biome_minus_aquatic_runoak.tsv, and vice versa?
+  Your answers should be sorted, in the label [identifier] format.
+  What are some patterns that explain why some EnvO non-aquatic biomes have been omitted from the EnvBroadScaleSoilEnum?
+  Do they have any distinguishing relationships according to biome-relationships.csv?
+
+sequence:
+  - biome_minus_aquatic_runoak.tsv
+  - biome-metadata.yaml
+  - biome-relationships.csv
+  - mixs_env_triad.json
+  - mixs_extensions.json
+  - established_value_sets_from_schema.json
+
+#  Please provide some computational artifact that could regenerate the EnvBroadScaleSoilEnum from the provided data,
+#  without additional human review, preferably using the runoak command-line interface.
+#  Alternative solutions could be a SPARQL query against the EnvO ontology,
+#  or Python code that uses the ontology access kit library https://incatools.github.io/ontology-access-kit/.
+
+#   How could you explain why some EnvO non-aquatic biomes have been omitted from the EnvBroadScaleSoilEnum?
+#  Do they have any distinguishing relationships according to biome-relationships.csv?

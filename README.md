@@ -138,7 +138,7 @@ have been variously ML-based, completely manual, SPARQL-based, etc. The outputs 
 many GitHub repos and Google Docs.
 
 Value sets for the three MIxS environmental context fields, for the Soil environment, have been retained as static
-enumerations in the NMDC submission-schema. The Soil `env_broad_scale` value set contains 39 
+enumerations in the NMDC submission-schema. The Soil `env_broad_scale` value set contains 39
 
 ## Implementation Questions
 
@@ -159,8 +159,8 @@ biosample.
 In some cases it may be necessary to request new terms from EnvO (or another ontology) to reflect the true environmental
 context of a sample.
 
-
 ## System Requirements:
+
 - [yamlfmt](https://github.com/google/yamlfmt)
     - [go](https://go.dev/)
 - [yq](https://github.com/mikefarah/yq) (Mike Farah/GO)
@@ -169,7 +169,6 @@ context of a sample.
 - wget
 - completed `local/.env`, based on `local/.env.template`
 - ssh tunnel to the BBOP/NMDC Postgres server on NERSC
-
 
 ## Ideas
 

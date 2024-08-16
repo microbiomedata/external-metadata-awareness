@@ -23,6 +23,7 @@ google-cloud-bigquery = "^3.25.0"
 #pygithub = "^2.3.0"
 #tqdm = "^4.66.4"
 #xmltodict = "^0.13.0"
+xmltodict = "^0.13.0"
 
 
 [build-system]
