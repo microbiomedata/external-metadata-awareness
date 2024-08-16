@@ -66,6 +66,11 @@ local/ncbi-biosamples-packages-counts.tsv: sql/packages-counts.sql
 # these OAK commands fetch the latest EnvO SQLite file from a BBOP S3 bucket
 # it may be a few days behind the envo.owl file form the EnvO GH repo
 # use `runoak cache-ls` to see where the SQLite files are cached
+
+# ENVO:01000174 ! forest biome
+# ENVO:00000428 ! biome
+# ENVO:00002030 ! aquatic biome
+# ENVO:01000177 ! grassland biome
 local/biome-relationships.tsv:
 	$(RUN) runoak --input sqlite:obo:envo relationships .desc//p=i ENVO:00000428 > $@
 	# !!! pivot? include entailment? --include-entailed / --no-include-entailed; --non-redundant-entailed / --no-non-redundant-entailed
@@ -119,8 +124,8 @@ local/aquatic-biome-relationships.tsv:
 local/aquatic-biome-viz.png:
 	$(RUN) runoak --input sqlite:obo:envo viz --no-view --output $@ --gap-fill .desc//p=i ENVO:00002030
 
-local/biome-minus-aquatic.txt:
-	$(RUN) runoak --input sqlite:obo:envo info .desc//p=i ENVO:00000428  .not .desc//p=i ENVO:00002030 > $@ # ~ 72
+local/soil-env_broad_scale-algebraic.txt:
+	$(RUN) runoak --input sqlite:obo:envo info [ [ [ [ [ .desc//p=i biome .not .desc//p=i 'aquatic biome' ] .not .desc//p=i 'forest biome' ] .not .desc//p=i 'grassland biome' ]  .not .desc//p=i 'desert biome' ] .not biome ] .or [ [ 'forest biome' .or 'grassland biome' ] .or 'desert biome' ] > $@ # ~biome -aquatic =  72
 
 #local/biome-minus-aquatic.tsv: # includes lots of columns, but ids are wrapped in arrays
 #	$(RUN) runoak --input sqlite:obo:envo info --output-type tsv  .desc//p=i ENVO:00000428 .not .desc//p=i ENVO:00002030  > $@
@@ -342,7 +347,7 @@ local/soil-water-env-broad-scale.tsv: sql/soil-water-env_broad_scale.sql
 ####
 
 local/unused-terrestrial-biomes-prompt.txt: prompt-templates/unused-terrestrial-biomes-prompt.yaml \
-local/biome-minus-aquatic.txt local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv \
+local/soil-env_broad_scale-algebraic.txt local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv \
 local/biome-relationships.csv
 	$(RUN) build-prompt-from-template \
 		--spec-file-path $(word 1,$^) \
