@@ -339,7 +339,8 @@ local/soil-water-env-broad-scale.tsv: sql/soil-water-env_broad_scale.sql
 #####
 
 local/unused-terrestrial-biomes-prompt.txt: prompt-templates/unused-terrestrial-biomes-prompt.yaml \
-local/biome-minus-aquatic.txt local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv
+local/biome-minus-aquatic.txt local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv \
+local/biome-relationships.csv
 	$(RUN) build-prompt-from-template \
 		--spec-file-path $(word 1,$^) \
 		--output-file-path $@
@@ -348,6 +349,8 @@ local/biome-minus-aquatic.txt local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique
 # gemini models don't seem to take a temperature parameter
 local/unused-terrestrial-biomes-response.txt: local/unused-terrestrial-biomes-prompt.txt
 	cat $(word 1,$^) | $(RUN) llm prompt --model 4o  -o temperature 0.01 | tee $@
+
+####
 
 local/microbiomedata-repos.csv:
 	. ./report-microbiomedata-repos.sh > $@

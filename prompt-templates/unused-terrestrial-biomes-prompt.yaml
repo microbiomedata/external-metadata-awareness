@@ -3,12 +3,17 @@ components:
     file: local/biome-minus-aquatic.txt
   - prompt: Here are the EnvO biomes that are included in my project's soil biome enumeration. A header line is included.
     file: local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv
+  - prompt: Here is a table of relationships between the Environment Ontology biomes and other classes.
+      Subclass relationships are transitive.
+    file: local/biome-relationships.csv
 question: Write a Python script to answer the following questions...
   How many non-aquatic biomes are there? How many biomes are included in the enumeration?
-  How many non-aquatic biomes are not included in the enumeration? List them.
+  How many non-aquatic biomes are not included in the enumeration? List them as bare CURIes.
   Whats the mean and the standard deviation of lengths of the enum-included biome labels,
   and the lengths of the enum-excluded biome labels?
 
 sequence:
   - local/biome-minus-aquatic.txt
   - local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv
+
+

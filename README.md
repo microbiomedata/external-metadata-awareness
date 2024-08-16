@@ -53,9 +53,8 @@ Everyone is welcome to contribute to the Python scripts and Makefile targets, al
 
 The greatest contribution that an NMDC team member can make is to add value-added file to the `contributed` directory.
 Ideally, these files would be in a machine-readable format like TSV, CSV, YAML, or JSON. Contributors who have XLSX
-files
-or Google Sheets are asked to save them as TSV or CSV. Please be aware of any knowledge that is captured in a way that
-would be lost upon conversion to TSV or CSV, like color coding or comments. See Mark for help.
+files or Google Sheets are asked to save them as TSV or CSV. Please be aware of any knowledge that is captured in a way
+that would be lost upon conversion to TSV or CSV, like color coding or comments. See Mark for help.
 
 ### TSV vs CSV
 
@@ -66,11 +65,9 @@ LLMs are more likely to accept JSON files. This means that conversion between fo
 ### Role of LLMs
 
 Large language models like ChatGPT can provide valuable insights about the metadata and their standards, but there are
-many
-caveats about loading data and prompts into LLMs and about interpreting their output. NMDC team members are encouraged
-to experiment with LLMs for metadata and schema exploration, even if it is through a web interface. However, all use of
-LLMs
-in this repo will be automated with the `llm` or `litellm` tools.
+many caveats about loading data and prompts into LLMs and about interpreting their output. NMDC team members are
+encouraged to experiment with LLMs for metadata and schema exploration, even if it is through a web interface. However,
+all use of LLMs in this repo will be automated with the `llm` command line tool.
 
 While many vendors provide a free tier for using their LLMs, those are usually not sufficient for NMDC metadata/schema
 exploration tasks. That's partially due to the fact that the free tiers don't use the most advanced models, but also due
@@ -85,8 +82,7 @@ a LBL-paid OpenAI/GPT account for API access (but not web access). LBL also prov
 interface https://cborg.lbl.gov/
 
 The LLMs that Mark has found most useful are Anthropic Claude Sonnet 3.5 (200k tokens input), OpenAI GPT 4 and 4o (
-128k),
-and Google Gemini 1.5 pro (2M).
+128k), and Google Gemini 1.5 pro (2M).
 
 The time and financial cost of developing LLM methods is not trivial, and there's no guarantee that the results will be
 accurate, comprehensive, or repeatable. In the long run, the best use of LLMs may be in interpreting input data in order
@@ -140,6 +136,8 @@ many GitHub repos and Google Docs.
 Value sets for the three MIxS environmental context fields, for the Soil environment, have been retained as static
 enumerations in the NMDC submission-schema. The Soil `env_broad_scale` value set contains 39
 
+_(add recent findings and max name length idea?)_
+
 ## Implementation Questions
 
 - Should the submission of ontology terms for these fields be absolutely limited to the value sets, or should a string
@@ -150,11 +148,12 @@ enumerations in the NMDC submission-schema. The Soil `env_broad_scale` value set
       really meant?
 - Should any attempt be made to display the ontology term value sets in a hierarchical view? If so, and there are
   multiple paths from a term up to its root, should all of those paths be shown?
+- What's a reasonable maximum number or permissible values for each value set?
 
 Note that this repo provides tooling for manually reviewing the ontology terms that have been associated with each NMDC
 biosample.
 
-## Requesting New Terms for the Value Set
+## Requesting New Terms from the Source for the Value Set
 
 In some cases it may be necessary to request new terms from EnvO (or another ontology) to reflect the true environmental
 context of a sample.
@@ -170,6 +169,8 @@ _Tested on Ubuntu 20.04 and MacOS Sonoma 12.0.1. Not all dependencies are requir
 - wget
 - completed `local/.env`, based on `local/.env.template`
 - ssh tunnel to the BBOP/NMDC Postgres server on NERSC
+- LBL CBORG llm users will want to create a extra-openai-models.yaml file (at ~/Library/Application
+  Support/io.datasette.llm/ on MacOS)
 - [yamlfmt](https://github.com/google/yamlfmt)
     - [go](https://go.dev/)
 - [jq](https://github.com/jqlang/jq)
@@ -186,5 +187,7 @@ _Tested on Ubuntu 20.04 and MacOS Sonoma 12.0.1. Not all dependencies are requir
 
 ## Ideas
 
-- try [litellm](https://litellm.vercel.app/) instead of [llm](https://llm.datasette.io/en/stable/)?
-- extract `Extension`s with [linkml-map](https://linkml.io/linkml-map/) instead of yq?
+- Try [litellm](https://litellm.vercel.app/) as a proxy for [llm](https://llm.datasette.io/en/stable/)?
+    - May be adequate for this purpose
+- Extract `Extension`s with [linkml-map](https://linkml.io/linkml-map/) instead of yq?
+    - No `robot extract`-like CLI yet. Would require custom Python scripting.

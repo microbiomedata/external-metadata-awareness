@@ -1,0 +1,22 @@
+# goes in ~/Library/Application Support/io.datasette.llm/ (on MacOS)
+# see https://cborg.lbl.gov/api_examples/
+# does not include gemini yet
+- model_name: lbl/llama-3
+  model_id: cborg/llama-3
+  api_base: "https://api.cborg.lbl.gov"
+  api_key_name: cborg
+- model_name: openai/gpt-4o
+  model_id: cborg/gpt-4o
+  api_base: "https://api.cborg.lbl.gov"
+  api_key_name: cborg
+- model_name: anthropic/claude-opus
+  model_id: cborg/claude-opus
+  api_base: "https://api.cborg.lbl.gov"
+  api_key_name: cborg
+- model_name: anthropic/claude-sonnet
+  model_id: cborg/claude-sonnet
+  api_base: "https://api.cborg.lbl.gov"
+  api_key_name: cborg
+# note that the cborg key needs to be managed with `llm keys set cborg`, not as an environment variable
+# this also works for many cborg endpoints: ontogpt complete -m anthropic/claude-opus --temperature 0.01 --model-provider openai --api-base "https://api.cborg.lbl.gov" -i capital-prompt.txt
+# han't gotten litellm proxy to work yet
