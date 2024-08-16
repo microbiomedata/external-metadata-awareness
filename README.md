@@ -159,7 +159,6 @@ biosample.
 In some cases it may be necessary to request new terms from EnvO (or another ontology) to reflect the true environmental
 context of a sample.
 
-----
 
 ## System Requirements:
 - [yamlfmt](https://github.com/google/yamlfmt)
@@ -169,7 +168,6 @@ context of a sample.
     - Java
 - wget
 
-----
 
 ## Ideas
 
