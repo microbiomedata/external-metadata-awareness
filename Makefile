@@ -6,6 +6,7 @@ MIXS_YAML_URL=https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs
 SUBMISSION_SCHEMA_URL=https://raw.githubusercontent.com/microbiomedata/submission-schema/v10.7.0/src/nmdc_submission_schema/schema/nmdc_submission_schema.yaml
 
 
+## NCBI STUFF
 # very complex documents; many are too large to load into a MongoDB BSON document
 downloads/bioproject.xml:
 	$(WGET) -O $@ "https://ftp.ncbi.nlm.nih.gov/bioproject/bioproject.xml" # ~ 3 GB August 2024
@@ -53,6 +54,11 @@ load-biosamples-into-mongo: local/biosample_set.xml
 		--max-elements 100000 \
 		--anticipated-last-id 100000
 
+local/ncbi-biosamples-packages-counts.tsv: sql/packages-counts.sql
+	$(RUN) sql-to-tsv \
+	--sql-file $< \
+	--output-file $@
+
 # ENVO STUFF
 # getting fragments of EnvO because the whole thing is too large to feed into an LLM
 # our guideline is that env_broad_scale should be answered with an EnvO biome subclass
@@ -95,6 +101,30 @@ local/environmental-materials-metadata.json: local/environmental-materials-metad
 
 # the guidance for env_local_scale is less concrete so I am skipping for now.
 
+local/environmental-material-info.txt:
+	$(RUN) runoak --input sqlite:obo:envo info .desc//p=i ENVO:00010483 > $@
+
+local/aquatic-biome-info.txt:
+	$(RUN) runoak --input sqlite:obo:envo info .desc//p=i ENVO:00002030 > $@
+
+#local/aquatic-biome-info.tsv:
+#	$(RUN) runoak --input sqlite:obo:envo info --output-type tsv --output $@ .desc//p=i ENVO:00002030
+#
+#local/aquatic-biome-tree.txt:
+#	$(RUN) runoak --input sqlite:obo:envo tree --gap-fill .desc//p=i ENVO:00002030 > $@
+
+local/aquatic-biome-relationships.tsv:
+	$(RUN) runoak --input sqlite:obo:envo relationships --output-type tsv --output $@ .desc//p=i ENVO:00002030
+
+local/aquatic-biome-viz.png:
+	$(RUN) runoak --input sqlite:obo:envo viz --no-view --output $@ --gap-fill .desc//p=i ENVO:00002030
+
+local/biome-minus-aquatic.txt:
+	$(RUN) runoak --input sqlite:obo:envo info .desc//p=i ENVO:00000428  .not .desc//p=i ENVO:00002030 > $@ # ~ 72
+
+#local/biome-minus-aquatic.tsv: # includes lots of columns, but ids are wrapped in arrays
+#	$(RUN) runoak --input sqlite:obo:envo info --output-type tsv  .desc//p=i ENVO:00000428 .not .desc//p=i ENVO:00002030  > $@
+
 # MIXS STUFF
 downloads/mixs.yaml:
 	wget -O $@ $(MIXS_YAML_URL)
@@ -113,6 +143,10 @@ local/mixs-extension-unique-slots.json: local/mixs-extensions-with-slots.json
 
 local/mixs-env-triad.json: downloads/mixs.yaml
 	yq -o=json e '{"slots": {"env_broad_scale": .slots.env_broad_scale, "env_local_scale": .slots.env_local_scale, "env_medium": .slots.env_medium}}' $< | cat > $@
+
+# NMDC microbiomedata GitHub STUFF
+local/microbiomedata-repos.csv:
+	. ./report-microbiomedata-repos.sh > $@
 
 # NMDC SCHEMA STUFF
 downloads/nmdc_submission_schema.yaml:
@@ -161,6 +195,13 @@ local/nmdc-production-biosamples-json-to-context.tsv: downloads/nmdc-production-
 		--input-file $< \
 		--output-file $@
 
+local/nmdc-production-biosamples-env-package.json:
+	curl -X 'GET' \
+		'https://api.microbiomedata.org/nmdcschema/biosample_set?max_page_size=999999&projection=env_package' \
+		-H 'accept: application/json' > $@.bak
+	yq '.resources' -o=json $@.bak | cat > $@ # ENVO:00001998 is also soil
+	rm -rf $@.bak
+
 ####
 
 # biosamples that are part of a particular study
@@ -173,45 +214,6 @@ downloads/sty-11-ev70y104_biosamples.json:
 downloads/sty-11-ev70y104_study.json:
 	wget -O $@.bak 'https://api.microbiomedata.org/nmdcschema/ids/nmdc%3Asty-11-ev70y104'
 	yq -o=json e '.' $@.bak | cat > $@
-	rm -rf $@.bak
-
-
-####
-
-local/environmental-material-info.txt:
-	$(RUN) runoak --input sqlite:obo:envo info .desc//p=i ENVO:00010483 > $@
-
-local/aquatic-biome-info.txt:
-	$(RUN) runoak --input sqlite:obo:envo info .desc//p=i ENVO:00002030 > $@
-
-#local/aquatic-biome-info.tsv:
-#	$(RUN) runoak --input sqlite:obo:envo info --output-type tsv --output $@ .desc//p=i ENVO:00002030
-#
-#local/aquatic-biome-tree.txt:
-#	$(RUN) runoak --input sqlite:obo:envo tree --gap-fill .desc//p=i ENVO:00002030 > $@
-
-local/aquatic-biome-relationships.tsv:
-	$(RUN) runoak --input sqlite:obo:envo relationships --output-type tsv --output $@ .desc//p=i ENVO:00002030
-
-local/aquatic-biome-viz.png:
-	$(RUN) runoak --input sqlite:obo:envo viz --no-view --output $@ --gap-fill .desc//p=i ENVO:00002030
-
-local/biome-minus-aquatic.txt:
-	$(RUN) runoak --input sqlite:obo:envo info .desc//p=i ENVO:00000428  .not .desc//p=i ENVO:00002030 > $@ # ~ 72
-
-#local/biome-minus-aquatic.tsv: # includes lots of columns, but ids are wrapped in arrays
-#	$(RUN) runoak --input sqlite:obo:envo info --output-type tsv  .desc//p=i ENVO:00000428 .not .desc//p=i ENVO:00002030  > $@
-
-local/ncbi-biosamples-packages-counts.tsv: sql/packages-counts.sql
-	$(RUN) sql-to-tsv \
-	--sql-file $< \
-	--output-file $@
-
-local/nmdc-production-biosamples-env-package.json:
-	curl -X 'GET' \
-		'https://api.microbiomedata.org/nmdcschema/biosample_set?max_page_size=999999&projection=env_package' \
-		-H 'accept: application/json' > $@.bak
-	yq '.resources' -o=json $@.bak | cat > $@ # ENVO:00001998 is also soil
 	rm -rf $@.bak
 
 ####
@@ -330,13 +332,14 @@ detected-annotations-to-postgres: local/ncbi-biosamples-context-value-counts-rea
 	--tsv-file $< \
 	--table-name detected_annotations
 
+# REPORT OF WHETHER A BIOSAMPLE USES A BIOME AS IT'S env_broad_scale VALUE
 # joins pre-loaded (grouped) detected_annotations table with individual biosample env_broad_scale assertions
 local/soil-water-env-broad-scale.tsv: sql/soil-water-env_broad_scale.sql
 	$(RUN) sql-to-tsv \
 	--sql-file $< \
 	--output-file $@
 
-#####
+####
 
 local/unused-terrestrial-biomes-prompt.txt: prompt-templates/unused-terrestrial-biomes-prompt.yaml \
 local/biome-minus-aquatic.txt local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv \
@@ -348,9 +351,7 @@ local/biome-relationships.csv
 # suggested models: gpt-4, gpt-4o, gpt-4-turbo (?), claude-3-opus, claude-3.5-sonnet, gemini-1.5-pro-latest
 # gemini models don't seem to take a temperature parameter
 local/unused-terrestrial-biomes-response.txt: local/unused-terrestrial-biomes-prompt.txt
-	cat $(word 1,$^) | $(RUN) llm prompt --model 4o  -o temperature 0.01 | tee $@
+	cat $(word 1,$^) | $(RUN) llm prompt --model cborg/claude-sonnet -o temperature 0.01 | tee $@
 
 ####
 
-local/microbiomedata-repos.csv:
-	. ./report-microbiomedata-repos.sh > $@
