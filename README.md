@@ -161,14 +161,17 @@ context of a sample.
 
 ## System Requirements:
 
-- [yamlfmt](https://github.com/google/yamlfmt)
-    - [go](https://go.dev/)
 - [yq](https://github.com/mikefarah/yq) (Mike Farah/GO)
+    - [go](https://go.dev/)
 - [robot](https://robot.obolibrary.org/)
     - Java
 - wget
 - completed `local/.env`, based on `local/.env.template`
 - ssh tunnel to the BBOP/NMDC Postgres server on NERSC
+- [yamlfmt](https://github.com/google/yamlfmt)
+    - [go](https://go.dev/)
+- jq
+- gh CLI
 
 ## Ideas
 
