@@ -7,7 +7,7 @@ import click
 @click.option('--input-file', required=True, type=str, help='Path to the input JSON file.')
 @click.option('--output-file', required=True, type=str,
               help='Path to the output JSON file where the downsampled data will be saved.')
-@click.option('--sample_percentage', required=True, type=float,
+@click.option('--sample-percentage', required=True, type=float,
               help='Percentage of the data to keep (e.g., 10 for 10%).')
 def downsample_json_resources(input_file: str, output_file: str, sample_percentage: float):
     """

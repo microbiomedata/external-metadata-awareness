@@ -178,6 +178,12 @@ _Tested on Ubuntu 20.04 and MacOS Sonoma 12.0.1. Not all dependencies are requir
 
 ## Related resources
 
+- https://github.com/microbiomedata/context-collaboration
+- https://github.com/microbiomedata/nmdc-ontology
+- https://github.com/microbiomedata/submission-schema
+- https://github.com/turbomam/llm-github
+- https://github.com/turbomam/biosample-xmldb-sqldb
+
 ## Ideas
 
 - try [litellm](https://litellm.vercel.app/) instead of [llm](https://llm.datasette.io/en/stable/)?

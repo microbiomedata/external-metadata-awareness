@@ -29,6 +29,18 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
+biosample-json-to-context-tsv = 'external_metadata_awareness.biosample_json_to_context_tsv:create_biosample_table'
+build-prompt-from-template = 'external_metadata_awareness.build_prompt_from_template:process_files'
+count-biosample-context-vals-from-postgres = 'external_metadata_awareness.count_biosample_context_vals_from_postgres:main'
+detect-curies-in-subset = 'external_metadata_awareness.detect_curies_in_subset:process_tsv'
+find-envo-present-no-curie-extracted = 'external_metadata_awareness.find_envo_present_no_curie_extracted:main'
+get-extension-unique-slots = 'external_metadata_awareness.get_extension_unique_slots:process_json'
 list-mongodb-paths = 'external_metadata_awareness.list_mongodb_paths:main'
+load-tsv-into-postgres = 'external_metadata_awareness.load_tsv_into_postgres:load_tsv_to_postgres'
+merge-in-reference-data = 'external_metadata_awareness.merge_in_reference_data:process_csvs'
+ncbi-packages-csv-report = 'external_metadata_awareness.ncbi_packages_csv_report:xml_to_csv'
+normalize-envo-data = 'external_metadata_awareness.normalize_envo_data:main'
+or-boolean-columns = 'external_metadata_awareness.or_boolean_columns:process_tsv'
+random-sample-resources = 'external_metadata_awareness.random_sample_resources:downsample_json_resources'
+sql-to-tsv = 'external_metadata_awareness.sql_to_tsv:run_query'
 xml-to-mongo = 'external_metadata_awareness.xml_to_mongo:process_xml_with_progress'
-
