@@ -344,8 +344,10 @@ local/biome-minus-aquatic.txt local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique
 		--spec-file-path $(word 1,$^) \
 		--output-file-path $@
 
+# suggested models: gpt-4, gpt-4o, gpt-4-turbo (?), claude-3-opus, claude-3.5-sonnet, gemini-1.5-pro-latest
+# gemini models don't seem to take a temperature parameter
 local/unused-terrestrial-biomes-response.txt: local/unused-terrestrial-biomes-prompt.txt
-	cat $(word 1,$^) | $(RUN) llm prompt --model gpt-4o  -o temperature 0.01 | tee $@
+	cat $(word 1,$^) | $(RUN) llm prompt --model 4o  -o temperature 0.01 | tee $@
 
 local/microbiomedata-repos.csv:
 	. ./report-microbiomedata-repos.sh > $@

@@ -1,10 +1,13 @@
 components:
-  - prompt: Here is a list of non-aquatic biomes from the Environment Ontology
+  - prompt: Here is a list of non-aquatic biomes from the Environment Ontology. There's no header line.
     file: local/biome-minus-aquatic.txt
-  - prompt: Here are the EnvO biomes that are included in my project's soil biome enumeration
+  - prompt: Here are the EnvO biomes that are included in my project's soil biome enumeration. A header line is included.
     file: local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv
-question: How many non-aquatic biomes are there? How many biomes are included in the enumeration?
+question: Write a Python script to answer the following questions...
+  How many non-aquatic biomes are there? How many biomes are included in the enumeration?
   How many non-aquatic biomes are not included in the enumeration? List them.
+  Whats the mean and the standard deviation of lengths of the enum-included biome labels,
+  and the lengths of the enum-excluded biome labels?
 
 sequence:
   - local/biome-minus-aquatic.txt
