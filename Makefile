@@ -121,11 +121,15 @@ local/aquatic-biome-info.txt:
 local/aquatic-biome-relationships.tsv:
 	$(RUN) runoak --input sqlite:obo:envo relationships --output-type tsv --output $@ .desc//p=i ENVO:00002030
 
-local/aquatic-biome-viz.png:
+local/aquatic-biome.png:
 	$(RUN) runoak --input sqlite:obo:envo viz --no-view --output $@ --gap-fill .desc//p=i ENVO:00002030
 
+#local/soil-env_broad_scale-algebraic.txt:
+#	$(RUN) runoak --input sqlite:obo:envo info [ [ [ [ [ .desc//p=i biome .not .desc//p=i 'aquatic biome' ] .not .desc//p=i 'forest biome' ] .not .desc//p=i 'grassland biome' ]  .not .desc//p=i 'desert biome' ] .not biome ] .or [ [ 'forest biome' .or 'grassland biome' ] .or 'desert biome' ] > $@
+
 local/soil-env_broad_scale-algebraic.txt:
-	$(RUN) runoak --input sqlite:obo:envo info [ [ [ [ [ .desc//p=i biome .not .desc//p=i 'aquatic biome' ] .not .desc//p=i 'forest biome' ] .not .desc//p=i 'grassland biome' ]  .not .desc//p=i 'desert biome' ] .not biome ] .or [ [ 'forest biome' .or 'grassland biome' ] .or 'desert biome' ] > $@ # ~biome -aquatic =  72
+	$(RUN) runoak --input sqlite:obo:envo info [ [ [ [ [ .desc//p=i biome .not .desc//p=i 'aquatic biome' ] .not .desc//p=i 'forest biome' ] .not .desc//p=i 'grassland biome' ]  .not .desc//p=i 'desert biome' ] .not biome ]  .not 'cropland biome' > $@
+
 
 #local/biome-minus-aquatic.tsv: # includes lots of columns, but ids are wrapped in arrays
 #	$(RUN) runoak --input sqlite:obo:envo info --output-type tsv  .desc//p=i ENVO:00000428 .not .desc//p=i ENVO:00002030  > $@
@@ -177,6 +181,31 @@ local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv: local/EnvBroadScaleSoilE
 	tail -n +2 $< | cut -f3,4 -d, | sort | uniq > $@.tmp
 	cat $<.header.csv $@.tmp > $@
 	rm -rf $<.header.csv $@.tmp
+
+local/EnvBroadScaleSoilEnum.png: local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv
+	cat $< | tail -n +2  | cut -f1 -d, > $@.ids.txt
+	$(RUN) runoak --input sqlite:obo:envo viz --no-view --output $@ --gap-fill .idfile $@.ids.txt
+	rm -rf $@.ids.txt
+
+local/EnvMediumSoilEnum-pvs-keys.txt: downloads/nmdc_submission_schema.yaml
+	yq eval '.enums.EnvMediumSoilEnum.permissible_values | keys | .[]' $< | cat > $@
+
+local/EnvMediumSoilEnum-pvs-keys-parsed.csv: local/EnvMediumSoilEnum-pvs-keys.txt
+	$(RUN) normalize-envo-data \
+		--input-file $< \
+		--ontology-prefix ENVO \
+		--output-file $@
+
+local/EnvMediumSoilEnum-pvs-keys-parsed-unique.csv: local/EnvMediumSoilEnum-pvs-keys-parsed.csv
+	cut -f3,4 -d, $< | head -n 1 > $<.header.csv
+	tail -n +2 $< | cut -f3,4 -d, | sort | uniq > $@.tmp
+	cat $<.header.csv $@.tmp > $@
+	rm -rf $<.header.csv $@.tmp
+
+local/EnvMediumSoilEnum.png: local/EnvMediumSoilEnum-pvs-keys-parsed-unique.csv
+	cat $< | tail -n +2  | cut -f1 -d, > $@.ids.txt
+	$(RUN) runoak --input sqlite:obo:envo viz --gap-fill --no-view --output $@ .idfile $@.ids.txt
+	rm -rf $@.ids.txt
 
 # NMDC METADATA STUFF
 downloads/nmdc-production-studies.json:
