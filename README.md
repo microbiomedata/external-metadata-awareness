@@ -110,6 +110,8 @@ of `mediterranean sea biome`, nor would we **intuitively** expect
 a [Water](https://genomicsstandardsconsortium.github.io/mixs/0016014/) sample to have a `env_broad_scale` annotation
 of `broadleaf forest biome`.
 
+[NMDC's prioritization of environments (as MIxS Extensions)](https://github.com/microbiomedata/issues/issues/468)
+
 The problem here is that **intuition** shouldn't be required for either providing metadata about Biosamples, or for
 searching over Biosample metadata. NMDC should take a stance on which ontology terms are appropriate for each
 combination of a MIxS environmental context field and a MIxS Extension, and NMDC should provide metadata submission and
