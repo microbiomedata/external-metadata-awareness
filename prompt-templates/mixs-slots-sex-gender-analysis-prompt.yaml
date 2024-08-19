@@ -1,0 +1,9 @@
+components:
+  - prompt: Here are the global definitions of the slots in the Minimum Information about any (x) Sequence (MIxS) standard.
+    file: local/mixs-slots.json
+question: List all slots that are related to biological sex, gender, etc. What are their ranges and patterns? 
+  If the range is an enumeration. list the permissible values.
+
+sequence:
+  - local/mixs-slots.json
+

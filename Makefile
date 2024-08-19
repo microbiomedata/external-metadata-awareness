@@ -143,6 +143,18 @@ local/soil-env_broad_scale-algebraic.csv: local/soil-env_broad_scale-algebraic.t
 downloads/mixs.yaml:
 	wget -O $@ $(MIXS_YAML_URL)
 
+local/mixs-slots.json: downloads/mixs.yaml
+	yq -o=json e '.slots' $< | cat > $@
+
+local/mixs-slots-sex-gender-analysis-prompt.txt: prompt-templates/mixs-slots-sex-gender-analysis-prompt.yaml local/mixs-slots.json
+	$(RUN) build-prompt-from-template \
+		--spec-file-path $(word 1,$^) \
+		--output-file-path $@
+
+local/mixs-slots-sex-gender-analysis-response.txt: local/mixs-slots-sex-gender-analysis-prompt.txt
+	cat $(word 1,$^) | $(RUN) llm prompt --model cborg/claude-sonnet -o temperature 0.01 | tee $@
+
+
 # getting fragments of MIxS because the whole thing is too large to feed into an LLM
 local/mixs-extensions-with-slots.json: downloads/mixs.yaml
 	yq -o=json e '.classes | with_entries(select(.value.is_a == "Extension") | .value |= del(.slot_usage))' $< | cat > $@
