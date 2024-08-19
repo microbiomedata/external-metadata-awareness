@@ -143,16 +143,21 @@ local/soil-env_broad_scale-algebraic.csv: local/soil-env_broad_scale-algebraic.t
 downloads/mixs.yaml:
 	wget -O $@ $(MIXS_YAML_URL)
 
-local/mixs-slots.json: downloads/mixs.yaml
-	yq -o=json e '.slots' $< | cat > $@
+local/mixs-slots-enums.json: downloads/mixs.yaml
+	yq eval '{"slots": .slots, "enums": .enums}' -o=json $< | cat > $@
 
-local/mixs-slots-sex-gender-analysis-prompt.txt: prompt-templates/mixs-slots-sex-gender-analysis-prompt.yaml local/mixs-slots.json
+local/mixs-slots-enums-no-MixsCompliantData-domain.json: local/mixs-slots-enums.json
+	yq e '.slots |= (del(.[] | select(.domain == "MixsCompliantData"))) | del(.[].keywords)' $< > $@
+
+local/mixs-slots-sex-gender-analysis-prompt.txt: prompt-templates/mixs-slots-sex-gender-analysis-prompt.yaml \
+local/mixs-slots-enums-no-MixsCompliantData-domain.json
 	$(RUN) build-prompt-from-template \
 		--spec-file-path $(word 1,$^) \
 		--output-file-path $@
 
 local/mixs-slots-sex-gender-analysis-response.txt: local/mixs-slots-sex-gender-analysis-prompt.txt
-	cat $(word 1,$^) | $(RUN) llm prompt --model cborg/claude-sonnet -o temperature 0.01 | tee $@
+	# cborg/claude-opus
+	cat $(word 1,$^) | $(RUN) llm prompt --model claude-3.5-sonnet -o temperature 0.01 | tee $@
 
 
 # getting fragments of MIxS because the whole thing is too large to feed into an LLM

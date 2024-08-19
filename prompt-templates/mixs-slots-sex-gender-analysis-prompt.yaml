@@ -1,9 +1,11 @@
 components:
   - prompt: Here are the global definitions of the slots in the Minimum Information about any (x) Sequence (MIxS) standard.
-    file: local/mixs-slots.json
-question: List all slots that are related to biological sex, gender, etc. What are their ranges and patterns? 
-  If the range is an enumeration. list the permissible values.
+    file: local/mixs-slots-enums-no-MixsCompliantData-domain.json
+question: List all slots that are related to biological sex or gender. What are their ranges, patterns, structured patterns, and string_serializations?
+  If no range is asserted, then the ranges is 'string'.
+  If the range is an enumeration, then look up the permissible values and list them, even if the list is long.
+  Do not consider any input other than the provided file.
+  Emit your response as raw Markdown.
 
 sequence:
-  - local/mixs-slots.json
-
+  - local/mixs-slots-enums-no-MixsCompliantData-domain.json
