@@ -136,9 +136,7 @@ have been variously ML-based, completely manual, SPARQL-based, etc. The outputs 
 many GitHub repos and Google Docs.
 
 Value sets for the three MIxS environmental context fields, for the Soil environment, have been retained as static
-enumerations in the NMDC submission-schema. The Soil `env_broad_scale` value set contains 39
-
-_(add recent findings and max name length idea?)_
+enumerations in the NMDC submission-schema.
 
 ## Implementation Questions
 
@@ -156,6 +154,10 @@ _(add recent findings and max name length idea?)_
 
 Note that this repo provides tooling for manually reviewing the ontology terms that have been associated with each NMDC
 biosample.
+
+## Value Set Google Sheets
+
+- [Soil-value-sets](https://docs.google.com/spreadsheets/d/1UUA-WfZG2-UMtIuX5TPsE7hCfPFaOCHhjUYwZPjiAjQ/edit?gid=0#gid=0)
 
 ## Requesting New Terms from the Source for the Value Set
 
@@ -180,9 +182,6 @@ _Tested on Ubuntu 20.04 and MacOS Sonoma 12.0.1. Not all dependencies are requir
 - [jq](https://github.com/jqlang/jq)
 - [gh CLI](https://cli.github.com/)
 - [efetch](https://www.ncbi.nlm.nih.gov/books/NBK179288/)?
-
-## Google Sheets
-- [Soil-value-sets](https://docs.google.com/spreadsheets/d/1UUA-WfZG2-UMtIuX5TPsE7hCfPFaOCHhjUYwZPjiAjQ/edit?gid=0#gid=0)
 
 ## Related resources
 
