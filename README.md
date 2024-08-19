@@ -150,6 +150,8 @@ _(add recent findings and max name length idea?)_
       really meant?
 - Should any attempt be made to display the ontology term value sets in a hierarchical view? If so, and there are
   multiple paths from a term up to its root, should all of those paths be shown?
+- Should they be saved as LinkML static enumerations, LinkML dynamic enumerations, or something else?
+- If LinkML enumerations, should the permissible values be saved as IDs, labels, or both (in label [id] format?)
 - What's a reasonable maximum number or permissible values for each value set?
 
 Note that this repo provides tooling for manually reviewing the ontology terms that have been associated with each NMDC
@@ -179,6 +181,9 @@ _Tested on Ubuntu 20.04 and MacOS Sonoma 12.0.1. Not all dependencies are requir
 - [gh CLI](https://cli.github.com/)
 - [efetch](https://www.ncbi.nlm.nih.gov/books/NBK179288/)?
 
+## Google Sheets
+- [Soil-value-sets](https://docs.google.com/spreadsheets/d/1UUA-WfZG2-UMtIuX5TPsE7hCfPFaOCHhjUYwZPjiAjQ/edit?gid=0#gid=0)
+
 ## Related resources
 
 - https://github.com/microbiomedata/context-collaboration
@@ -190,6 +195,6 @@ _Tested on Ubuntu 20.04 and MacOS Sonoma 12.0.1. Not all dependencies are requir
 ## Ideas
 
 - Try [litellm](https://litellm.vercel.app/) as a proxy for [llm](https://llm.datasette.io/en/stable/)?
-    - May be adequate for this purpose
+    - llm, especially when configured to use CBORG, should be adequate for this purpose
 - Extract `Extension`s with [linkml-map](https://linkml.io/linkml-map/) instead of yq?
     - No `robot extract`-like CLI yet. Would require custom Python scripting.

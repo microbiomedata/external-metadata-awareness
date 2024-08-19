@@ -130,6 +130,11 @@ local/aquatic-biome.png:
 local/soil-env_broad_scale-algebraic.txt:
 	$(RUN) runoak --input sqlite:obo:envo info [ [ [ [ [ .desc//p=i biome .not .desc//p=i 'aquatic biome' ] .not .desc//p=i 'forest biome' ] .not .desc//p=i 'grassland biome' ]  .not .desc//p=i 'desert biome' ] .not biome ]  .not 'cropland biome' > $@
 
+local/soil-env_broad_scale-algebraic.csv: local/soil-env_broad_scale-algebraic.txt
+	$(RUN) normalize-envo-data \
+		--input-file $< \
+		--ontology-prefix ENVO \
+		--output-file $@
 
 #local/biome-minus-aquatic.tsv: # includes lots of columns, but ids are wrapped in arrays
 #	$(RUN) runoak --input sqlite:obo:envo info --output-type tsv  .desc//p=i ENVO:00000428 .not .desc//p=i ENVO:00002030  > $@
