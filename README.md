@@ -159,6 +159,11 @@ biosample.
 
 - [Soil-value-sets](https://docs.google.com/spreadsheets/d/1UUA-WfZG2-UMtIuX5TPsE7hCfPFaOCHhjUYwZPjiAjQ/edit?gid=0#gid=0)
 
+## MIxS Environmental Triad Notes
+
+- There are many other MIxS fields that are about the Biosample's environment, and that take ontology class IDs as
+  their values. Don't assume that all knowledge about the environmental context has to be captured in the triad slots.
+
 ## Requesting New Terms from the Source for the Value Set
 
 In some cases it may be necessary to request new terms from EnvO (or another ontology) to reflect the true environmental
