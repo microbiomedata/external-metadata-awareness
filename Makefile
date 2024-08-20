@@ -206,7 +206,7 @@ local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv: local/EnvBroadScaleSoilE
 
 local/EnvBroadScaleSoilEnum.png: local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv
 	cat $< | tail -n +2  | cut -f1 -d, > $@.ids.txt
-	$(RUN) runoak --input sqlite:obo:envo viz --no-view --output $@ --gap-fill .idfile $@.ids.txt
+	$(RUN) runoak --input sqlite:obo:envo viz --no-view --output $@ --gap-fill [ .idfile $@.ids.txt ] .or biome
 	rm -rf $@.ids.txt
 
 local/EnvMediumSoilEnum-pvs-keys.txt: downloads/nmdc_submission_schema.yaml
@@ -257,6 +257,11 @@ local/nmdc-production-biosamples-env-package.json:
 		-H 'accept: application/json' > $@.bak
 	yq '.resources' -o=json $@.bak | cat > $@ # ENVO:00001998 is also soil
 	rm -rf $@.bak
+
+local/nmdc-production-studies-images.csv: downloads/nmdc-production-studies.json
+	$(RUN) python external_metadata_awareness/study-image-table.py \
+		--input-file $< \
+		--output-file $@
 
 ####
 
