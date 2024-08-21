@@ -412,8 +412,13 @@ local/biome-relationships.csv
 
 # suggested models: gpt-4, gpt-4o, gpt-4-turbo (?), claude-3-opus, claude-3.5-sonnet, gemini-1.5-pro-latest
 # gemini models don't seem to take a temperature parameter
+# cborg/claude-sonnet
 local/unused-terrestrial-biomes-response.txt: local/unused-terrestrial-biomes-prompt.txt
-	cat $(word 1,$^) | $(RUN) llm prompt --model cborg/claude-sonnet -o temperature 0.01 | tee $@
+	cat $(word 1,$^) | $(RUN) llm prompt --model claude-3.5-sonnet -o temperature 0.01 | tee $@
 
 ####
+
+local/env-local-scale-candidates.txt:
+	$(RUN) runoak --input sqlite:obo:envo info [ [ [ [ [ [ [ .desc//p=i 'material entity' ] .not .desc//p=i 'biome' ] .not .desc//p=i 'environmental material' ]  .not .desc//p=i 'chemical entity' ]  .not .desc//p=i 'organic material' ]   .not .desc//p=i 'anatomical entity'  ]  .not .desc//p=i 'organism' ]   .not .desc//p=i 'plant anatomical entity'  > $@
+
 
