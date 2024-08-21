@@ -25,7 +25,7 @@ downloads/books.xml:
 downloads/biosample.xsd:
 	$(WGET) -O $@ "https://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/submit/public-docs/biosample/biosample.xsd?view=co"
 
-# find code for converting to tabel in other repos
+# find code for converting to table in other repos 
 # or convert to duckdb
 downloads/ncbi-biosample-attributes.xml:
 	$(WGET) -O $@ "https://www.ncbi.nlm.nih.gov/biosample/docs/attributes/?format=xml"
@@ -44,6 +44,7 @@ local/mongodb-paths-1pct.txt:
 		--collection biosamples \
 		--sample-size 500000 > $@
 
+# see also https://gitlab.com/wurssb/insdc_metadata
 load-biosamples-into-mongo: local/biosample_set.xml
 	$(RUN) xml-to-mongo \
 		--file-path $< \
