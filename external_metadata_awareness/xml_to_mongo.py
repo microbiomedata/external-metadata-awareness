@@ -48,7 +48,8 @@ def process_xml_with_progress(file_path: str, db_name: str, collection_name: str
             last_reported_progress = progress
 
         element_dict = xml_to_dict(elem)
-        collection.insert_one(element_dict)
+        wrapped_dict = {node_type: element_dict}
+        collection.insert_one(wrapped_dict)
         count += 1
 
         elem.clear()
@@ -68,7 +69,7 @@ def xml_to_dict(elem: ET.Element) -> Dict[str, Any]:
     """
     if not elem.getchildren() and elem.text:
         text = elem.text.strip()
-        return {**elem.attrib, 'value': text} if elem.attrib else text
+        return {**elem.attrib, 'content': text} if elem.attrib else text
 
     result = {child.tag: xml_to_dict(child) for child in elem}
     return {**elem.attrib, **result}

@@ -38,11 +38,13 @@ local/ncbi-biosample-packages.csv: downloads/ncbi-biosample-packages.xml
 	--xml-file $< \
 	--output-file $@
 
-local/mongodb-paths-1pct.txt:
+local/mongodb-paths-10pct.txt: # 450000 -> ~ 4 minutes # 4.5 M -> heavy load, never finishes. Use streaming approach?
 	$(RUN) list-mongodb-paths \
-		--db-name biosamples \
-		--collection biosamples \
-		--sample-size 500000 > $@
+		--db-name ncbi_metadata \
+		--collection samples \
+		--sample-size 4500000 > $@
+
+.PHONY: load-biosamples-into-mongo
 
 # see also https://gitlab.com/wurssb/insdc_metadata
 load-biosamples-into-mongo: local/biosample_set.xml
@@ -419,6 +421,17 @@ local/unused-terrestrial-biomes-response.txt: local/unused-terrestrial-biomes-pr
 ####
 
 local/env-local-scale-candidates.txt:
-	$(RUN) runoak --input sqlite:obo:envo info [ [ [ [ [ [ [ .desc//p=i 'material entity' ] .not .desc//p=i 'biome' ] .not .desc//p=i 'environmental material' ]  .not .desc//p=i 'chemical entity' ]  .not .desc//p=i 'organic material' ]   .not .desc//p=i 'anatomical entity'  ]  .not .desc//p=i 'organism' ]   .not .desc//p=i 'plant anatomical entity'  > $@
+	$(RUN) runoak --input sqlite:obo:envo info [ [ [ [ [ [ [ [ [ [ [ .desc//p=i 'material entity' ] .not .desc//p=i 'biome' ] .not .desc//p=i 'environmental material' ]  .not .desc//p=i 'chemical entity' ]  .not .desc//p=i 'organic material' ]   .not .desc//p=i 'anatomical entity'  ]  .not .desc//p=i 'organism' ]   .not .desc//p=i 'plant anatomical entity' ] .not .desc//p=i 'healthcare facility' ] .not .desc//p=i 'fluid layer' ] .not .desc//p=i 'interface layer' ] .not .desc//p=i 'manufactured product' > $@
 
+#local/env-local-scale-candidates.png:
+#	$(RUN) runoak --input sqlite:obo:envo viz --gap-fill [ [ [ [ [ [ [ [ [ [ [ .desc//p=i 'material entity' ] .not .desc//p=i 'biome' ] .not .desc//p=i 'environmental material' ]  .not .desc//p=i 'chemical entity' ]  .not .desc//p=i 'organic material' ]   .not .desc//p=i 'anatomical entity'  ]  .not .desc//p=i 'organism' ]   .not .desc//p=i 'plant anatomical entity' ] .not .desc//p=i 'healthcare facility' ] .not .desc//p=i 'fluid layer' ] .not .desc//p=i 'interface layer' ] .not .desc//p=i 'manufactured product'
 
+local/ncbi_biosamples_inferred_schema.json: # ~ 2 minutes for 410,000 (1%) # ~ 1 hour for 13 million ~ 30%
+	$(RUN) python external_metadata_awareness/infer_schema_with_batching.py \
+		--host localhost \
+		--port 27017 \
+		--database ncbi_metadata \
+		--collection samples \
+		--total-samples 13000000 \
+		--batch-size 50000 \
+		--output $@
