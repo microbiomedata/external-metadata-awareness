@@ -423,6 +423,12 @@ local/unused-terrestrial-biomes-response.txt: local/unused-terrestrial-biomes-pr
 local/env-local-scale-candidates.txt:
 	$(RUN) runoak --input sqlite:obo:envo info [ [ [ [ [ [ [ [ [ [ [ .desc//p=i 'material entity' ] .not .desc//p=i 'biome' ] .not .desc//p=i 'environmental material' ]  .not .desc//p=i 'chemical entity' ]  .not .desc//p=i 'organic material' ]   .not .desc//p=i 'anatomical entity'  ]  .not .desc//p=i 'organism' ]   .not .desc//p=i 'plant anatomical entity' ] .not .desc//p=i 'healthcare facility' ] .not .desc//p=i 'fluid layer' ] .not .desc//p=i 'interface layer' ] .not .desc//p=i 'manufactured product' > $@
 
+local/water-in-name.txt: # ice glac sea?
+	$(RUN) runoak --input sqlite:obo:envo info
+
+local/env-local-scale-candidates-relationships.tsv:
+	$(RUN) runoak --input sqlite:obo:envo relationships [ [ [ [ [ [ [ [ [ [ [ .desc//p=i 'material entity' ] .not .desc//p=i 'biome' ] .not .desc//p=i 'environmental material' ]  .not .desc//p=i 'chemical entity' ]  .not .desc//p=i 'organic material' ]   .not .desc//p=i 'anatomical entity'  ]  .not .desc//p=i 'organism' ]   .not .desc//p=i 'plant anatomical entity' ] .not .desc//p=i 'healthcare facility' ] .not .desc//p=i 'fluid layer' ] .not .desc//p=i 'interface layer' ] .not .desc//p=i 'manufactured product' > $@
+
 #local/env-local-scale-candidates.png:
 #	$(RUN) runoak --input sqlite:obo:envo viz --gap-fill [ [ [ [ [ [ [ [ [ [ [ .desc//p=i 'material entity' ] .not .desc//p=i 'biome' ] .not .desc//p=i 'environmental material' ]  .not .desc//p=i 'chemical entity' ]  .not .desc//p=i 'organic material' ]   .not .desc//p=i 'anatomical entity'  ]  .not .desc//p=i 'organism' ]   .not .desc//p=i 'plant anatomical entity' ] .not .desc//p=i 'healthcare facility' ] .not .desc//p=i 'fluid layer' ] .not .desc//p=i 'interface layer' ] .not .desc//p=i 'manufactured product'
 
