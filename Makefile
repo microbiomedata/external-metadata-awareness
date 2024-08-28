@@ -7,7 +7,7 @@ SUBMISSION_SCHEMA_URL=https://raw.githubusercontent.com/microbiomedata/submissio
 
 
 ## NCBI STUFF
-# very complex documents; many are too large to load into a MongoDB BSON document
+# very complex documents; many are too large to load into a MongoDB document
 downloads/bioproject.xml:
 	$(WGET) -O $@ "https://ftp.ncbi.nlm.nih.gov/bioproject/bioproject.xml" # ~ 3 GB August 2024
 
@@ -38,13 +38,29 @@ local/ncbi-biosample-packages.csv: downloads/ncbi-biosample-packages.xml
 	--xml-file $< \
 	--output-file $@
 
-local/mongodb-paths-10pct.txt: # 450000 -> ~ 4 minutes # 4.5 M -> heavy load, never finishes. Use streaming approach?
-	$(RUN) list-mongodb-paths \
-		--db-name ncbi_metadata \
-		--collection samples \
-		--sample-size 4500000 > $@
+
+# see also https://www.npmjs.com/package/mongodb-schema/v/12.2.0?activeTab=versions
+
+#local/mongodb-paths-10pct.txt: # 450000 -> ~ 4 minutes # 4.5 M -> heavy load, never finishes. Use streaming approach?
+#	$(RUN) list-mongodb-paths \
+#		--db-name ncbi_metadata \
+#		--collection samples \
+#		--sample-size 4500000 > $@
+
+#local/ncbi_biosamples_inferred_schema.json: # ~ 2 minutes for 410,000 (1%) # ~ 1 hour for 13 million ~ 30%
+#	$(RUN) python external_metadata_awareness/infer_schema_with_batching.py \
+#		--host localhost \
+#		--port 27017 \
+#		--database ncbi_metadata \
+#		--collection samples \
+#		--total-samples 13000000 \
+#		--batch-size 50000 \
+#		--output $@
 
 .PHONY: load-biosamples-into-mongo
+
+local/biosample-count-xml.txt: local/biosample_set.xml
+	date && grep -c "</BioSample>" $< > $@ && date
 
 # see also https://gitlab.com/wurssb/insdc_metadata
 load-biosamples-into-mongo: local/biosample_set.xml
@@ -57,10 +73,91 @@ load-biosamples-into-mongo: local/biosample_set.xml
 		--max-elements 100000 \
 		--anticipated-last-id 100000
 
+local/biosample-count-mongodb.txt:
+	date && mongosh --eval 'db.getSiblingDB("ncbi_metadata").samples.countDocuments()' > $@ && date # 1 minute
+
 local/ncbi-biosamples-packages-counts.tsv: sql/packages-counts.sql
 	$(RUN) sql-to-tsv \
 	--sql-file $< \
 	--output-file $@
+
+ncbi-biosamples-duckdb-overview:
+	$(RUN) python external_metadata_awareness/first_n_attributes_duckdb.py \
+		--connection-string "mongodb://localhost:27017/" \
+		--db-name ncbi_metadata \
+		--collection-name samples \
+		--limit 41000000 \
+		--batch-size 100000 \
+		--duckdb-file local/ncbi_biosamples.duckdb \
+		--table-name overview # no path # 40462422 biosamples in ~ 50 minutes
+
+# add counts from duckdb; need to compile duckdb or download binary
+
+ncbi-biosamples-duckdb-attributes:
+	$(RUN) python external_metadata_awareness/first_n_attributes_duckdb.py \
+		--connection-string "mongodb://localhost:27017/" \
+		--db-name ncbi_metadata \
+		--collection-name samples \
+		--limit 41000000 \
+		--batch-size 100000 \
+		--duckdb-file local/ncbi_biosamples.duckdb \
+		--table-name attributes \
+		--path BioSample.Attributes.Attribute
+
+ncbi-biosamples-duckdb-links:
+	$(RUN) python external_metadata_awareness/first_n_attributes_duckdb.py \
+		--connection-string "mongodb://localhost:27017/" \
+		--db-name ncbi_metadata \
+		--collection-name samples \
+		--limit 41000000 \
+		--batch-size 100000 \
+		--duckdb-file local/ncbi_biosamples.duckdb \
+		--table-name links \
+		--path BioSample.Links.Link
+
+  ## @click.option('--path', default="BioSample.Links.Link", required=True,
+  ##               help="Path within the document to process (e.g., 'BioSample.Attributes.Attribute').")
+  ## @click.option('--path', default="BioSample.Ids.Id", required=True,
+  ##               help="Path within the document to process (e.g., 'BioSample.Attributes.Attribute').")
+  ## @click.option('--path', default="BioSample.Description.Organism", required=True,
+  ##               help="Path within the document to process (e.g., 'BioSample.Attributes.Attribute').")
+
+NCBI_BIOSAMPLES_DUCKDB_PATH = local/ncbi_biosamples.duckdb
+
+local/ncbi-mims-soil-biosamples-env_local_scale.csv:
+	echo ".mode csv\nSELECT content, COUNT(1) AS sample_count FROM attributes WHERE harmonized_name = 'env_local_scale' AND package_content = 'MIMS.me.soil.6.0' GROUP BY content ORDER BY COUNT(1) DESC;" | duckdb $(NCBI_BIOSAMPLES_DUCKDB_PATH) > $@
+
+local/ncbi-mims-soil-biosamples-env_local_scale-normalized.csv: local/ncbi-mims-soil-biosamples-env_local_scale.csv
+	$(RUN) normalize-envo-data \
+		--count-col-name sample_count \
+		--input-file $< \
+		--ontology-prefix ENVO \
+		--output-file $@ \
+		--val-col-name content
+
+local/ncbi-mims-soil-biosamples-env_local_scale-failures.csv: local/ncbi-mims-soil-biosamples-env_local_scale-normalized.csv
+	$(RUN) find-envo-present-no-curie-extracted \
+		--input-file $< \
+		--output-file $@
+
+local/ncbi-mims-soil-biosamples-env_local_scale-real-labels.csv: local/ncbi-mims-soil-biosamples-env_local_scale-normalized.csv local/envo-info.csv
+	$(RUN) merge-in-reference-data \
+		--keep-file $(word 1,$^) \
+		--keep-key normalized_curie \
+		--reference-file $(word 2,$^) \
+		--reference-key normalized_curie \
+		--reference-addition normalized_label \
+		--addition-rename real_label \
+		--merged-file $@
+
+local/ncbi-mims-soil-biosamples-env_local_scale-annotated.tsv: local/ncbi-mims-soil-biosamples-env_local_scale-real-labels.csv
+	date ; $(RUN) runoak \
+		--input sqlite:obo:envo annotate \
+		--matches-whole-text \
+		--output-type tsv \
+		--output $@ \
+		--text-file $< \
+		--match-column normalized_label ; date
 
 # ENVO STUFF
 # getting fragments of EnvO because the whole thing is too large to feed into an LLM
@@ -70,10 +167,6 @@ local/ncbi-biosamples-packages-counts.tsv: sql/packages-counts.sql
 # it may be a few days behind the envo.owl file form the EnvO GH repo
 # use `runoak cache-ls` to see where the SQLite files are cached
 
-# ENVO:01000174 ! forest biome
-# ENVO:00000428 ! biome
-# ENVO:00002030 ! aquatic biome
-# ENVO:01000177 ! grassland biome
 local/biome-relationships.tsv:
 	$(RUN) runoak --input sqlite:obo:envo relationships .desc//p=i ENVO:00000428 > $@
 	# !!! pivot? include entailment? --include-entailed / --no-include-entailed; --non-redundant-entailed / --no-non-redundant-entailed
@@ -107,28 +200,17 @@ local/environmental-materials-metadata.json: local/environmental-materials-metad
 	yq ea '[.]' $< -o=json | cat > $@
 	rm -rf $<
 
-# the guidance for env_local_scale is less concrete so I am skipping for now.
-
 local/environmental-material-info.txt:
 	$(RUN) runoak --input sqlite:obo:envo info .desc//p=i ENVO:00010483 > $@
 
 local/aquatic-biome-info.txt:
-	$(RUN) runoak --input sqlite:obo:envo info .desc//p=i ENVO:00002030 > $@
-
-#local/aquatic-biome-info.tsv:
-#	$(RUN) runoak --input sqlite:obo:envo info --output-type tsv --output $@ .desc//p=i ENVO:00002030
-#
-#local/aquatic-biome-tree.txt:
-#	$(RUN) runoak --input sqlite:obo:envo tree --gap-fill .desc//p=i ENVO:00002030 > $@
+	$(RUN) runoak --input sqlite:obo:envo info .desc//p=i ENVO:00002030 > $@  # --output-type tsv has lots of info but wrapped in square brackets
 
 local/aquatic-biome-relationships.tsv:
 	$(RUN) runoak --input sqlite:obo:envo relationships --output-type tsv --output $@ .desc//p=i ENVO:00002030
 
 local/aquatic-biome.png:
 	$(RUN) runoak --input sqlite:obo:envo viz --no-view --output $@ --gap-fill .desc//p=i ENVO:00002030
-
-#local/soil-env_broad_scale-algebraic.txt:
-#	$(RUN) runoak --input sqlite:obo:envo info [ [ [ [ [ .desc//p=i biome .not .desc//p=i 'aquatic biome' ] .not .desc//p=i 'forest biome' ] .not .desc//p=i 'grassland biome' ]  .not .desc//p=i 'desert biome' ] .not biome ] .or [ [ 'forest biome' .or 'grassland biome' ] .or 'desert biome' ] > $@
 
 local/soil-env_broad_scale-algebraic.txt:
 	$(RUN) runoak --input sqlite:obo:envo info [ [ [ [ [ .desc//p=i biome .not .desc//p=i 'aquatic biome' ] .not .desc//p=i 'forest biome' ] .not .desc//p=i 'grassland biome' ]  .not .desc//p=i 'desert biome' ] .not biome ]  .not 'cropland biome' > $@
@@ -138,9 +220,6 @@ local/soil-env_broad_scale-algebraic.csv: local/soil-env_broad_scale-algebraic.t
 		--input-file $< \
 		--ontology-prefix ENVO \
 		--output-file $@
-
-#local/biome-minus-aquatic.tsv: # includes lots of columns, but ids are wrapped in arrays
-#	$(RUN) runoak --input sqlite:obo:envo info --output-type tsv  .desc//p=i ENVO:00000428 .not .desc//p=i ENVO:00002030  > $@
 
 # MIXS STUFF
 downloads/mixs.yaml:
@@ -421,31 +500,28 @@ local/unused-terrestrial-biomes-response.txt: local/unused-terrestrial-biomes-pr
 ####
 
 local/env-local-scale-candidates.txt:
-	$(RUN) runoak --input sqlite:obo:envo info [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ .desc//p=i 'material entity' ] .not .desc//p=i 'biome' ] .not .desc//p=i 'environmental material' ] .not .desc//p=i 'chemical entity' ] .not .desc//p=i 'organic material' ] .not .desc//p=i 'anatomical entity' ] .not .desc//p=i 'organism' ] .not .desc//p=i 'plant anatomical entity' ] .not .desc//p=i 'healthcare facility' ] .not .desc//p=i 'fluid layer' ] .not .desc//p=i 'interface layer' ] .not .desc//p=i 'manufactured product' ] .not .desc//p=i 'anatomical entity environment' ] .not .desc//p=i 'ecosystem' ] .not .desc//p=i 'area protected according to IUCN guidelines' ] .not .desc//p=i 'astronomical body' ] .not .desc//p=i 'astronomical object' ] .not .desc//p=i 'cloud' ] .not .desc//p=i 'collection of organisms' ] .not .desc//p=i 'environmental system' ] .not .desc//p=i 'ecozone' ] .not .desc//p=i 'environmental zone' ] .not .desc//p=i 'water current' ] .not .desc//p=i 'mass of environmental material' ] .not .desc//p=i 'subatomic particle' ] .not .desc//p=i 'observing system' ] .not .desc//p=i 'particle' ] .not .desc//p=i 'planetary structural layer' ] .not .desc//p=i 'political entity' ] .not .desc//p=i 'meteor' ] .not .desc//p=i 'room' ] .not .desc//p=i 'transport feature' ] .not .desc//p=i 'mass of liquid' ] .not .desc//p=RO:0001025 'water body' ] .not .desc//p=BFO:0000050 'environmental monitoring area' ] .not .desc//p=BFO:0000050 'marine littoral zone' ] .not .desc//p=BFO:0000050 'marine environmental zone' ] .not .desc//p=RO:0002473 'sea floor' ] .not .desc//p=BFO:0000050 'saline water' ] .not .desc//p=BFO:0000050 'ice' ] .not .desc//p=RO:0001025 'water body' ] .not .desc//p=i 'administrative region' ] .not .desc//p=i 'protected area' ] .not .desc//p=i 'channel of a watercourse' ] .not .desc//p=i 'cryospheric layer' ] .not 't~gaseous' ] .not 't~marine' ] .not .desc//p=i 'material isosurface' ] .not 't~undersea' ] .not .desc//p=i NCBITaxon:1 > $@
-
-# but may wnat to say a soil smaple was collected near a water body etc
-
-local/water-in-name.txt: # ice glac sea? # https://incatools.github.io/ontology-access-kit/howtos/use-oak-expression-language.html
-	$(RUN) runoak --input sqlite:obo:envo info 't~water' .or 't~ice' .or '~glac'> $@
-
-
-local/located-in-water-body.txt: # ice glac sea? # https://incatools.github.io/ontology-access-kit/howtos/use-oak-expression-language.html
-	$(RUN) runoak --input sqlite:obo:envo info .desc//p=RO:0001025 'water body' > $@
+	$(RUN) runoak --input sqlite:obo:envo info [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ .desc//p=i 'material entity' ] .not .desc//p=i 'biome' ] .not .desc//p=i 'environmental material' ] .not .desc//p=i 'chemical entity' ] .not .desc//p=i 'organic material' ] .not .desc//p=i 'anatomical entity' ] .not .desc//p=i 'organism' ] .not .desc//p=i 'plant anatomical entity' ] .not .desc//p=i 'healthcare facility' ] .not .desc//p=i 'fluid layer' ] .not .desc//p=i 'interface layer' ] .not .desc//p=i 'manufactured product' ] .not .desc//p=i 'anatomical entity environment' ] .not .desc//p=i 'ecosystem' ] .not .desc//p=i 'area protected according to IUCN guidelines' ] .not .desc//p=i 'astronomical body' ] .not .desc//p=i 'astronomical object' ] .not .desc//p=i 'cloud' ] .not .desc//p=i 'collection of organisms' ] .not .desc//p=i 'environmental system' ] .not .desc//p=i 'ecozone' ] .not .desc//p=i 'environmental zone' ] .not .desc//p=i 'water current' ] .not .desc//p=i 'mass of environmental material' ] .not .desc//p=i 'subatomic particle' ] .not .desc//p=i 'observing system' ] .not .desc//p=i 'particle' ] .not .desc//p=i 'planetary structural layer' ] .not .desc//p=i 'political entity' ] .not .desc//p=i 'meteor' ] .not .desc//p=i 'room' ] .not .desc//p=i 'transport feature' ] .not .desc//p=i 'mass of liquid' ] .not .desc//p=RO:0001025 'water body' ] .not .desc//p=BFO:0000050 'environmental monitoring area' ] .not .desc//p=BFO:0000050 'marine littoral zone' ] .not .desc//p=BFO:0000050 'marine environmental zone' ] .not .desc//p=RO:0002473 'sea floor' ] .not .desc//p=BFO:0000050 'saline water' ] .not .desc//p=BFO:0000050 'ice' ] .not .desc//p=RO:0001025 'water body' ] .not .desc//p=i 'administrative region' ] .not .desc//p=i 'protected area' ] .not .desc//p=i 'channel of a watercourse' ] .not .desc//p=i 'cryospheric layer' ] .not 'l~gaseous' ] .not 'l~marine' ] .not .desc//p=i 'material isosurface' ] .not 'l~undersea' ] .not .desc//p=i NCBITaxon:1 ] .not 'l~saline' ] .not 'l~brackish' ] .not .desc//p=i 'aeroform' > $@
 
 local/env-local-scale-candidates-relationships.tsv:
-	$(RUN) runoak --input sqlite:obo:envo relationships [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ .desc//p=i 'material entity' ] .not .desc//p=i 'biome' ] .not .desc//p=i 'environmental material' ] .not .desc//p=i 'chemical entity' ] .not .desc//p=i 'organic material' ] .not .desc//p=i 'anatomical entity' ] .not .desc//p=i 'organism' ] .not .desc//p=i 'plant anatomical entity' ] .not .desc//p=i 'healthcare facility' ] .not .desc//p=i 'fluid layer' ] .not .desc//p=i 'interface layer' ] .not .desc//p=i 'manufactured product' ] .not .desc//p=i 'anatomical entity environment' ] .not .desc//p=i 'ecosystem' ] .not .desc//p=i 'area protected according to IUCN guidelines' ] .not .desc//p=i 'astronomical body' ] .not .desc//p=i 'astronomical object' ] .not .desc//p=i 'cloud' ] .not .desc//p=i 'collection of organisms' ] .not .desc//p=i 'environmental system' ] .not .desc//p=i 'ecozone' ] .not .desc//p=i 'environmental zone' ] .not .desc//p=i 'water current' ] .not .desc//p=i 'mass of environmental material' ] .not .desc//p=i 'subatomic particle' ] .not .desc//p=i 'observing system' ] .not .desc//p=i 'particle' ] .not .desc//p=i 'planetary structural layer' ] .not .desc//p=i 'political entity' ] .not .desc//p=i 'meteor' ] .not .desc//p=i 'room' ] .not .desc//p=i 'transport feature' ] .not .desc//p=i 'mass of liquid' ] .not .desc//p=RO:0001025 'water body' ] .not .desc//p=BFO:0000050 'environmental monitoring area' ] .not .desc//p=BFO:0000050 'marine littoral zone' ] .not .desc//p=BFO:0000050 'marine environmental zone' ] .not .desc//p=RO:0002473 'sea floor' ] .not .desc//p=BFO:0000050 'saline water' ] .not .desc//p=BFO:0000050 'ice' ] .not .desc//p=RO:0001025 'water body' ] .not .desc//p=i 'administrative region' ] .not .desc//p=i 'protected area' ] .not .desc//p=i 'channel of a watercourse' ] .not .desc//p=i 'cryospheric layer' ] .not 't~gaseous' ] .not 't~marine' ] .not .desc//p=i 'material isosurface' ] .not 't~undersea' ] .not .desc//p=i NCBITaxon:1 > $@
+	$(RUN) runoak --input sqlite:obo:envo relationships [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ [ .desc//p=i 'material entity' ] .not .desc//p=i 'biome' ] .not .desc//p=i 'environmental material' ] .not .desc//p=i 'chemical entity' ] .not .desc//p=i 'organic material' ] .not .desc//p=i 'anatomical entity' ] .not .desc//p=i 'organism' ] .not .desc//p=i 'plant anatomical entity' ] .not .desc//p=i 'healthcare facility' ] .not .desc//p=i 'fluid layer' ] .not .desc//p=i 'interface layer' ] .not .desc//p=i 'manufactured product' ] .not .desc//p=i 'anatomical entity environment' ] .not .desc//p=i 'ecosystem' ] .not .desc//p=i 'area protected according to IUCN guidelines' ] .not .desc//p=i 'astronomical body' ] .not .desc//p=i 'astronomical object' ] .not .desc//p=i 'cloud' ] .not .desc//p=i 'collection of organisms' ] .not .desc//p=i 'environmental system' ] .not .desc//p=i 'ecozone' ] .not .desc//p=i 'environmental zone' ] .not .desc//p=i 'water current' ] .not .desc//p=i 'mass of environmental material' ] .not .desc//p=i 'subatomic particle' ] .not .desc//p=i 'observing system' ] .not .desc//p=i 'particle' ] .not .desc//p=i 'planetary structural layer' ] .not .desc//p=i 'political entity' ] .not .desc//p=i 'meteor' ] .not .desc//p=i 'room' ] .not .desc//p=i 'transport feature' ] .not .desc//p=i 'mass of liquid' ] .not .desc//p=RO:0001025 'water body' ] .not .desc//p=BFO:0000050 'environmental monitoring area' ] .not .desc//p=BFO:0000050 'marine littoral zone' ] .not .desc//p=BFO:0000050 'marine environmental zone' ] .not .desc//p=RO:0002473 'sea floor' ] .not .desc//p=BFO:0000050 'saline water' ] .not .desc//p=BFO:0000050 'ice' ] .not .desc//p=RO:0001025 'water body' ] .not .desc//p=i 'administrative region' ] .not .desc//p=i 'protected area' ] .not .desc//p=i 'channel of a watercourse' ] .not .desc//p=i 'cryospheric layer' ] .not 'l~gaseous' ] .not 'l~marine' ] .not .desc//p=i 'material isosurface' ] .not 'l~undersea' ] .not .desc//p=i NCBITaxon:1 ] .not 'l~saline' ] .not 'l~brackish' ] .not .desc//p=i 'aeroform' > $@
 
+local/envo-leaves.txt:
+	$(RUN) runoak --input sqlite:obo:envo leafs > $@
 
+local/envo-leaf-ids.txt: local/envo-leaves.txt
+	cut -f1 -d' ' $< > $@
 
-#local/env-local-scale-candidates.png:
-#	$(RUN) runoak --input sqlite:obo:envo viz --gap-fill [ [ [ [ [ [ [ [ [ [ [ .desc//p=i 'material entity' ] .not .desc//p=i 'biome' ] .not .desc//p=i 'environmental material' ] .not .desc//p=i 'chemical entity' ] .not .desc//p=i 'organic material' ] .not .desc//p=i 'anatomical entity' ] .not .desc//p=i 'organism' ] .not .desc//p=i 'plant anatomical entity' ] .not .desc//p=i 'healthcare facility' ] .not .desc//p=i 'fluid layer' ] .not .desc//p=i 'interface layer' ] .not .desc//p=i 'manufactured product'
+local/env-local-scale-candidate-ids.txt: local/env-local-scale-candidates.txt
+	cut -f1 -d' ' $< > $@
 
-local/ncbi_biosamples_inferred_schema.json: # ~ 2 minutes for 410,000 (1%) # ~ 1 hour for 13 million ~ 30%
-	$(RUN) python external_metadata_awareness/infer_schema_with_batching.py \
-		--host localhost \
-		--port 27017 \
-		--database ncbi_metadata \
-		--collection samples \
-		--total-samples 13000000 \
-		--batch-size 50000 \
-		--output $@
+local/env-local-scale-non-leaf.txt: local/env-local-scale-candidates.txt local/envo-leaf-ids.txt
+	$(RUN) runoak --input sqlite:obo:envo info .idfile $(word 1,$^) .not [ .idfile $(word 2,$^) ] > $@
+
+local/env-local-scale-non-leaf.csv: local/env-local-scale-non-leaf.txt
+	$(RUN) normalize-envo-data \
+		--input-file $< \
+		--ontology-prefix ENVO \
+		--output-file $@
+
+local/env-local-scale-non-leaf.png: local/env-local-scale-candidates.txt local/envo-leaf-ids.txt
+	$(RUN) runoak --input sqlite:obo:envo viz --gap-fill .idfile $(word 1,$^) .not [ .idfile $(word 2,$^) ]
