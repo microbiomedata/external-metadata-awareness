@@ -1,5 +1,6 @@
 import pytest
 import yaml
+import os
 from click.testing import CliRunner
 from external_metadata_awareness.env_local_scale_extraction import cli, load_configs, process_ontology
 
@@ -23,10 +24,14 @@ def oak_config_file(tmp_path):
 def extraction_config_file(tmp_path):
     config_data = {
         "entity": "material entity",
-        "exclusions": [
+        "term_exclusions": [
             "biome",
             "environmental material",
             "chemical entity"
+        ],
+        "text_exclusions": [
+            "brackish",
+            "marine"
         ],
         "output": str(tmp_path / "output.txt")
     }
@@ -42,21 +47,29 @@ def test_load_configs(oak_config_file, extraction_config_file):
     assert "envo" in oak_config["ontology_resources"]
     assert oak_config["ontology_resources"]["envo"]["selector"] == "sqlite:obo:envo"
     assert extraction_config["entity"] == "material entity"
+    assert "term_exclusions" in extraction_config
+    assert "text_exclusions" in extraction_config
     assert extraction_config["output"].endswith("output.txt")
 
 
 def test_process_ontology(oak_config_file, extraction_config_file):
     _, extraction_config = load_configs(oak_config_file, extraction_config_file)
 
-    # Replace with a real test ontology and expected behavior if possible.
+    # Run the ontology processing
     process_ontology(oak_config_file, extraction_config)
 
     # Check if the output file is created and has content
-    assert extraction_config["output"]
-    with open(extraction_config["output"], 'r') as file:
+    output_file_path = extraction_config["output"]
+    assert os.path.exists(output_file_path), "Output file was not created"
+
+    with open(output_file_path, 'r') as file:
         content = file.read()
-        print(content)
         assert len(content) > 0, "Output file is empty, expected some data."
+
+    # You could also add assertions based on expected content
+    # For example, checking that excluded terms are not in the output
+    assert "biome" not in content
+    assert "brackish" not in content
 
 
 def test_cli_runs_successfully(oak_config_file, extraction_config_file):
@@ -72,3 +85,7 @@ def test_cli_runs_successfully(oak_config_file, extraction_config_file):
     with open(output_file, 'r') as file:
         content = file.read()
         assert len(content) > 0, "Output file is empty, expected some data."
+
+    # Add additional assertions to check that the CLI correctly excluded terms
+    assert "biome" not in content
+    assert "brackish" not in content
