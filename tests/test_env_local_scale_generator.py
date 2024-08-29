@@ -64,7 +64,7 @@ def test_cli_runs_successfully(oak_config_file, extraction_config_file):
     result = runner.invoke(cli, ['--extraction-config-file', str(extraction_config_file), '--oak-config-file',
                                  str(oak_config_file)])
     assert result.exit_code == 0
-    assert "material entity" in result.output or "ENVO:00000447" in result.output  
+    assert "material entity" in result.output or "ENVO:00000447" in result.output
 
     # Verify the output file exists and contains the expected results
     output_file = extraction_config_file.parent / "output.txt"
