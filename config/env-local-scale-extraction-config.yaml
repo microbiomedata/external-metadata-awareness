@@ -1,7 +1,13 @@
 # env-local-scale-extraction-config.yaml
 output: "local/environmental-materials-relationships.txt"
 entity: "material entity"
-exclusions:
+text_exclusions:
+  - "l~gaseous"
+  - "l~marine"
+  - "l~undersea"
+  - "l~saline"
+  - "l~brackish"
+term_exclusions:
   - "biome"
   - "environmental material"
   - "chemical entity"
@@ -22,6 +28,7 @@ exclusions:
   - "collection of organisms"
   - "environmental system"
   - "ecozone"
+  - "material isosurface"
   - "environmental zone"
   - "water current"
   - "mass of environmental material"
@@ -46,11 +53,6 @@ exclusions:
   - "protected area"
   - "channel of a watercourse"
   - "cryospheric layer"
-  - "l~gaseous"
-  - "l~marine"
   - "material isosurface"
-  - "l~undersea"
   - "NCBITaxon:1"
-  - "l~saline"
-  - "l~brackish"
   - "aeroform"

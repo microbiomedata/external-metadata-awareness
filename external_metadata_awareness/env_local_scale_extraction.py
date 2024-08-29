@@ -1,6 +1,7 @@
 import yaml
 import click
 from oaklib import get_adapter
+from oaklib.query import onto_query
 
 
 def load_configs(oak_config_file, extraction_config_file):
@@ -18,7 +19,17 @@ def process_ontology(oak_config_file, extraction_config):
     # Get the entity and exclusions from the config
     initial_term_label = extraction_config['entity']
     initial_term_curie = oak_adapter.curies_by_label(label=initial_term_label)
-    exclusion_labels = extraction_config['exclusions']
+    exclusion_labels = extraction_config['term_exclusions']
+    exclusion_curies = []
+
+    for exclusion_label in exclusion_labels:
+        exclusion_curie = oak_adapter.curies_by_label(label=exclusion_label)
+        if exclusion_curie:
+            exclusion_curies.append(exclusion_curie)
+
+    results = onto_query(oak_adapter, initial_term_curie, exclusion_curies)
+
+    excluded_text_matches = extraction_config['text_exclusions']
 
     # Get all descendants of the initial term
     descendants = oak_adapter.descendants(initial_term_curie)
