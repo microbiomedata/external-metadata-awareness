@@ -2,11 +2,11 @@
 output: "local/environmental-materials-relationships.txt"
 entity: "material entity"
 text_exclusions:
-  - "l~gaseous"
-  - "l~marine"
-  - "l~undersea"
-  - "l~saline"
-  - "l~brackish"
+  - "gaseous"
+  - "marine"
+  - "undersea"
+  - "saline"
+  - "brackish"
 term_exclusions:
   - "biome"
   - "environmental material"
