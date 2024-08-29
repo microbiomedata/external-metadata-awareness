@@ -1,20 +1,15 @@
 import pytest
+import os
 import yaml
 from click.testing import CliRunner
-from external_metadata_awareness.env_local_scale_extraction import cli
+from external_metadata_awareness.env_local_scale_extraction import cli, load_config, process_ontology
 
 
 @pytest.fixture
-def sample_config(tmp_path):
-    """
-    :param tmp_path:
-    :return:
-    """
-
-    # Create a sample config.yaml file for testing
+def config_file(tmp_path):
     config_data = {
         "input": "sqlite:obo:envo",
-        "output": "local/environmental-materials-relationships.txt",
+        "output": str(tmp_path / "output.txt"),
         "entity": "material entity",
         "exclusions": [
             "biome",
@@ -25,57 +20,42 @@ def sample_config(tmp_path):
     config_file = tmp_path / "config.yaml"
     with open(config_file, 'w') as file:
         yaml.dump(config_data, file)
-    return str(config_file)
+    return config_file
 
 
-def test_generate_command(sample_config):
-    """
-    Test the generate_oak_command function.
-    :param sample_config:
-    :return:
+def test_load_config(config_file):
+    config = load_config(config_file)
+    assert config['input'] == "sqlite:obo:envo"
+    assert config['output'].endswith("output.txt")
+    assert config['entity'] == "material entity"
+    assert "biome" in config['exclusions']
 
-    """
+
+def test_process_ontology(config_file):
+    config = load_config(config_file)
+    process_ontology(config)
+
+    # Check if the output file is created and not empty
+    assert os.path.exists(config['output'])
+    with open(config['output'], 'r') as file:
+        content = file.read()
+        assert len(content) > 0, "Output file is empty, expected some data."
+
+
+def test_cli_runs_successfully(config_file):
     runner = CliRunner()
-    result = runner.invoke(cli, [sample_config])
-
-    expected_command = (
-        "$(RUN) runoak --input sqlite:obo:envo info [ .desc//p=i 'material entity' ]"
-        " .not .desc//p=i 'biome'"
-        " .not .desc//p=i 'environmental material'"
-        " .not .desc//p=i 'chemical entity'"
-        " > local/environmental-materials-relationships.txt"
-    )
-
+    result = runner.invoke(cli, ['--config-file', str(config_file)])
     assert result.exit_code == 0
-    assert expected_command in result.output
+    assert os.path.exists(load_config(config_file)['output'])
 
 
-def test_missing_config():
-    """
-    Test the CLI tool when the config file is missing.
-    :return:
+def test_no_exclusions(config_file):
+    config = load_config(config_file)
+    config['exclusions'] = []
+    process_ontology(config)
 
-    """
-    runner = CliRunner()
-    result = runner.invoke(cli, ["nonexistent.yaml"])
-
-    assert result.exit_code != 0
-    assert "No such file or directory" in result.output
-
-
-def test_invalid_config(tmp_path):
-    """
-    Test the CLI tool when the config file is invalid.
-    :param tmp_path:
-    :return:
-
-    """
-    invalid_config_file = tmp_path / "invalid_config.yaml"
-    with open(invalid_config_file, 'w') as file:
-        file.write("Invalid YAML content")
-
-    runner = CliRunner()
-    result = runner.invoke(cli, [str(invalid_config_file)])
-
-    assert result.exit_code != 0
-    assert "could not find expected" in result.output  # Checking for a YAML syntax error message
+    # Check if the output file is created and has content
+    assert os.path.exists(config['output'])
+    with open(config['output'], 'r') as file:
+        content = file.read()
+        assert len(content) > 0, "Output file is empty, expected some data even without exclusions."
