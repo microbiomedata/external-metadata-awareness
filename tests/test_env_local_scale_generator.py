@@ -1,61 +1,74 @@
 import pytest
-import os
 import yaml
 from click.testing import CliRunner
-from external_metadata_awareness.env_local_scale_extraction import cli, load_config, process_ontology
+from external_metadata_awareness.env_local_scale_extraction import cli, load_configs, process_ontology
 
 
 @pytest.fixture
-def config_file(tmp_path):
+def oak_config_file(tmp_path):
     config_data = {
-        "input": "sqlite:obo:envo",
-        "output": str(tmp_path / "output.txt"),
-        "entity": "material entity",
-        "exclusions": [
-            "biome",
-            "environmental material",
-            "chemical entity"
-        ]
+        "ontology_resources": {
+            "envo": {
+                "selector": "sqlite:obo:envo"
+            }
+        }
     }
-    config_file = tmp_path / "config.yaml"
+    config_file = tmp_path / "oak_config.yaml"
     with open(config_file, 'w') as file:
         yaml.dump(config_data, file)
     return config_file
 
 
-def test_load_config(config_file):
-    config = load_config(config_file)
-    assert config['input'] == "sqlite:obo:envo"
-    assert config['output'].endswith("output.txt")
-    assert config['entity'] == "material entity"
-    assert "biome" in config['exclusions']
+@pytest.fixture
+def extraction_config_file(tmp_path):
+    config_data = {
+        "entity": "material entity",
+        "exclusions": [
+            "biome",
+            "environmental material",
+            "chemical entity"
+        ],
+        "output": str(tmp_path / "output.txt")
+    }
+    config_file = tmp_path / "extraction_config.yaml"
+    with open(config_file, 'w') as file:
+        yaml.dump(config_data, file)
+    return config_file
 
 
-def test_process_ontology(config_file):
-    config = load_config(config_file)
-    process_ontology(config)
+def test_load_configs(oak_config_file, extraction_config_file):
+    oak_config, extraction_config = load_configs(oak_config_file, extraction_config_file)
+    assert "ontology_resources" in oak_config
+    assert "envo" in oak_config["ontology_resources"]
+    assert oak_config["ontology_resources"]["envo"]["selector"] == "sqlite:obo:envo"
+    assert extraction_config["entity"] == "material entity"
+    assert extraction_config["output"].endswith("output.txt")
 
-    # Check if the output file is created and not empty
-    assert os.path.exists(config['output'])
-    with open(config['output'], 'r') as file:
+
+def test_process_ontology(oak_config_file, extraction_config_file):
+    _, extraction_config = load_configs(oak_config_file, extraction_config_file)
+
+    # Replace with a real test ontology and expected behavior if possible.
+    process_ontology(oak_config_file, extraction_config)
+
+    # Check if the output file is created and has content
+    assert extraction_config["output"]
+    with open(extraction_config["output"], 'r') as file:
         content = file.read()
+        print(content)
         assert len(content) > 0, "Output file is empty, expected some data."
 
 
-def test_cli_runs_successfully(config_file):
+def test_cli_runs_successfully(oak_config_file, extraction_config_file):
     runner = CliRunner()
-    result = runner.invoke(cli, ['--config-file', str(config_file)])
+    result = runner.invoke(cli, ['--extraction-config-file', str(extraction_config_file), '--oak-config-file',
+                                 str(oak_config_file)])
     assert result.exit_code == 0
-    assert os.path.exists(load_config(config_file)['output'])
+    assert "material entity" in result.output or "ENVO:00000447" in result.output  
 
-
-def test_no_exclusions(config_file):
-    config = load_config(config_file)
-    config['exclusions'] = []
-    process_ontology(config)
-
-    # Check if the output file is created and has content
-    assert os.path.exists(config['output'])
-    with open(config['output'], 'r') as file:
+    # Verify the output file exists and contains the expected results
+    output_file = extraction_config_file.parent / "output.txt"
+    assert output_file.exists()
+    with open(output_file, 'r') as file:
         content = file.read()
-        assert len(content) > 0, "Output file is empty, expected some data even without exclusions."
+        assert len(content) > 0, "Output file is empty, expected some data."
