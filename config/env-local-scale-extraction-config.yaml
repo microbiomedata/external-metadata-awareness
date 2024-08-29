@@ -1,5 +1,4 @@
-# config.yaml
-input: "sqlite:obo:envo"
+# env-local-scale-extraction-config.yaml
 output: "local/environmental-materials-relationships.txt"
 entity: "material entity"
 exclusions:

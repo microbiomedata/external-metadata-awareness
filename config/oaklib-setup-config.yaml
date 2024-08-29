@@ -1,0 +1,3 @@
+ontology_resources:
+  envo:
+    selector: sqlite:obo:envo
