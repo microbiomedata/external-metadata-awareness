@@ -17,8 +17,10 @@ def process_ontology(config):
     initial_term = config['entity']
     exclusions = config['exclusions']
 
+    print(initial_term)
     # Get all descendants of the initial term
     descendants = ontology.descendants(initial_term)
+
 
     # Filter out the excluded terms
     filtered_descendants = [
@@ -33,7 +35,7 @@ def process_ontology(config):
 
 
 @click.command()
-@click.argument('config_file')
+@click.option('--config-file', required=True, help='Path to the YAML configuration file.')
 def cli(config_file):
     """
     CLI tool to process an ontology based on the provided YAML configuration file.

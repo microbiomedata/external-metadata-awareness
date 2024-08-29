@@ -117,7 +117,7 @@ local/unused-terrestrial-biomes-response.txt: local/unused-terrestrial-biomes-pr
 
 generate-env-local-scale-candidates:
 	# Ensure the poetry environment is activated and run the script with the specified config
-	poetry run python external_metadata_awareness/env_local_scale_extraction.py config.yaml
+	poetry run python external_metadata_awareness/env_local_scale_extraction.py --config-file config/env_local_scale_extraction_config.yaml
 
 
 local/env-local-scale-candidates-relationships.tsv:
