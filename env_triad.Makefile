@@ -169,6 +169,17 @@ local/env-local-scale-non-leaf.csv: local/env-local-scale-non-leaf.txt
 local/env-local-scale-non-leaf.png: local/env-local-scale-candidates.txt local/envo-leaf-ids.txt
 	$(RUN) runoak --input sqlite:obo:envo viz --gap-fill .idfile $(word 1,$^) .not [ .idfile $(word 2,$^) ]
 
+local/goldData.xlsx:
+	wget -O $@ "https://gold.jgi.doe.gov/download?mode=site_excel"
+
+local/goldData_biosamples.csv: local/goldData.xlsx # for counting biosamples with a path that corresponds to en env_local_scale from local/goldterms-env_local_scale-of-environmental-terrestrial-soil-counts.txt
+	$(RUN) python -c "import pandas as pd; import sys; pd.read_excel(sys.argv[1], sheet_name=sys.argv[3]).to_csv(sys.argv[2], index=False)" $< $@ Biosample
+
+local/goldterms-env_local_scale-of-environmental-terrestrial-soil-counts.txt: # counts by path,  not by bold biosamples
+	$(RUN) runoak --input sqlite:obo:goldterms query --output $@.bak --query "SELECT s.object, count(1) as path_count FROM entailed_edge ee JOIN statements s ON ee.subject = s.subject WHERE ee.predicate = 'rdfs:subClassOf' AND ee.object = 'GOLDTERMS:4212' AND s.predicate = 'mixs:env_local' group by s.object order by count(1) desc"
+	cut -f 1,3 $@.bak  > $@
+	rm -rf $@.bak
+
 
 ###### SIERRA's STUFF #######
 
