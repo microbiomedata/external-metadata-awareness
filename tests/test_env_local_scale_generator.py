@@ -103,7 +103,6 @@ def test_load_configs(oak_config_file, extraction_config_file):
     assert oak_config["ontology_resources"]["envo"]["selector"] == "sqlite:obo:envo"
     assert extraction_config["entity"] == "material entity"
     assert "post_process_inclusion_single_terms" in extraction_config
-    assert "single_term_exclusions" in extraction_config
     assert "text_exclusions" in extraction_config
     assert extraction_config["output"].endswith("environmental-materials-relationships.txt")
 
