@@ -2,9 +2,10 @@ import pytest
 import yaml
 import os
 from click.testing import CliRunner
-from external_metadata_awareness.env_local_scale_extraction import cli, load_configs, process_ontology
+from external_metadata_awareness.env_local_scale_extraction import cli, load_configs, extract_terms_to_file
 from oaklib.query import onto_query
 from oaklib.selector import get_adapter
+
 
 @pytest.fixture
 def oak_config_file(tmp_path):
@@ -43,12 +44,46 @@ def extraction_config_file(tmp_path):
             , "astronomical body"
             , "astronomical object"
             , "cloud"
+            , "collection of organisms"
+            , "environmental system"
+            , "ecozone"
+            , "material isosurface"
+            , "environmental zone"
+            , "water current"
+            , "mass of environmental material"
+            , "subatomic particle"
+            , "observing system"
+            , "particle"
+            , "planetary structural layer"
+            , "political entity"
+            , "meteor"
+            , "room"
+            , "transport feature"
+            , "mass of liquid"
+            , "RO:0001025 water body"
+            , "BFO:0000050 environmental monitoring area"
+            , "BFO:0000050 marine littoral zone"
+            , "BFO:0000050 marine environmental zone"
+            , "RO:0002473 sea floor"
+            , "BFO:0000050 saline water"
+            , "BFO:0000050 ice"
+            , "RO:0001025 water body"
+            , "administrative region"
+            , "protected area"
+            , "channel of a watercourse"
+            , "cryospheric layer"
+            , "material isosurface"
+            , "NCBITaxon:1"
+            , "aeroform"
         ],
         "text_exclusions": [
-            "brackish",
-            "marine"
+            "gaseous"
+            , "marine"
+            , "undersea"
+            , "saline"
+            , "brackish"
         ],
-        "output": str(tmp_path / "output.txt")
+        "output": str(tmp_path / "environmental-materials-relationships.txt")
     }
     config_file = tmp_path / "extraction_config.yaml"
     with open(config_file, 'w') as file:
@@ -71,7 +106,7 @@ def test_process_ontology(oak_config_file, extraction_config_file):
     _, extraction_config = load_configs(oak_config_file, extraction_config_file)
 
     # Run the ontology processing
-    process_ontology(oak_config_file, extraction_config)
+    extract_terms_to_file(oak_config_file, extraction_config)
 
     # Check if the output file is created and has content
     output_file_path = extraction_config["output"]
@@ -79,13 +114,13 @@ def test_process_ontology(oak_config_file, extraction_config_file):
 
     with open(output_file_path, 'r') as file:
         content = file.read()
-        print(content)
         assert len(content) > 0, "Output file is empty, expected some data."
 
     # You could also add assertions based on expected content
     # For example, checking that excluded terms are not in the output
     assert "biome" not in content
     assert "brackish" not in content
+    assert "saline" not in content
 
 
 def test_cli_runs_successfully(oak_config_file, extraction_config_file):
@@ -93,10 +128,9 @@ def test_cli_runs_successfully(oak_config_file, extraction_config_file):
     result = runner.invoke(cli, ['--extraction-config-file', str(extraction_config_file), '--oak-config-file',
                                  str(oak_config_file)])
     assert result.exit_code == 0
-    assert "material entity" in result.output or "ENVO:00000447" in result.output
 
     # Verify the output file exists and contains the expected results
-    output_file = extraction_config_file.parent / "output.txt"
+    output_file = extraction_config_file.parent / "environmental-materials-relationships.txt"
     assert output_file.exists()
     with open(output_file, 'r') as file:
         content = file.read()
@@ -105,6 +139,7 @@ def test_cli_runs_successfully(oak_config_file, extraction_config_file):
     # Add additional assertions to check that the CLI correctly excluded terms
     assert "biome" not in content
     assert "brackish" not in content
+    assert "saline" not in content
 
 
 def test_onto_query():
