@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 
 # Load environment variables from local/.env
-load_dotenv(os.path.join('../..', 'local', '.env'))
+load_dotenv(os.path.join('..', 'local', '.env'))
 
 client = openai.OpenAI(
     api_key=os.environ.get('CBORG_API_KEY'),  # Retrieve API key from environment variables
