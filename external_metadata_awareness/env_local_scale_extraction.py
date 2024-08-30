@@ -91,18 +91,17 @@ def extract_terms_to_file(oak_config_file, extraction_config):
     initial_term_list = onto_query([".desc//p=i", initial_term_label], envo)
     print("length of initial term list", len(initial_term_list))
 
-
     exclusion_terms_and_children = create_exclusion_list(extraction_config.get('term_and_descendant_exclusions', []),
                                                          envo)
 
     exclusion_terms_from_text = create_text_exclusion_list(extraction_config.get('text_exclusions', []),
                                                            envo)
-    exluded_terms = create_exclude_solo_terms(extraction_config.get('term_exclusions', []), envo)
+    excluded_terms = create_exclude_solo_terms(extraction_config.get('term_exclusions', []), envo)
 
-    exclusion_list = exclusion_terms_and_children + exclusion_terms_from_text + exluded_terms
+    exclusion_list = exclusion_terms_and_children + exclusion_terms_from_text + excluded_terms
     print("length of excluded terms", len(exclusion_terms_and_children))
     print("length of excluded terms from text", len(exclusion_terms_from_text))
-    print("length of excluded terms from solo terms", len(exluded_terms))
+    print("length of excluded terms from solo terms", len(excluded_terms))
 
     remaining_items = exclude_terms(initial_term_list, exclusion_list)
     print("length of remaining items", len(remaining_items))

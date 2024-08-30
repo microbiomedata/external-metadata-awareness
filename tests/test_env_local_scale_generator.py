@@ -27,6 +27,11 @@ def extraction_config_file(tmp_path):
     config_data = {
         "entity": "material entity",
         "term_exclusions": [
+            "bridge",
+            "road",
+            "wildlife management area"
+        ],
+        "term_and_descendant_exclusions": [
             "biome"
             , "environmental material"
             , "chemical entity"
