@@ -2,7 +2,7 @@ import pytest
 import yaml
 import os
 from click.testing import CliRunner
-from external_metadata_awareness.env_local_scale_extraction import cli, load_configs, extract_terms_to_file
+from external_metadata_awareness.envo_local_scale_extraction import cli, load_configs, extract_terms_to_file
 from oaklib.query import onto_query
 from oaklib.selector import get_adapter
 

@@ -1,5 +1,5 @@
 # env-local-scale-extraction-config.yaml
-output: "local/environmental-materials-relationships.txt"
+output: "local/env-local-scale-candidates.txt"
 entity: "material entity"
 text_exclusions:
   - "gaseous"

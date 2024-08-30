@@ -1,9 +1,12 @@
+import logging
 from typing import List
-
 import yaml
 import click
 from oaklib import get_adapter
-from oaklib.query import onto_query, FunctionQuery, FunctionEnum, SimpleQueryTerm
+from oaklib.query import onto_query, SimpleQueryTerm
+
+# Configure logging
+logging.basicConfig(level=logging.WARN, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
 def load_configs(oak_config_file, extraction_config_file):
@@ -63,23 +66,20 @@ def exclude_terms(full_list, exclusion_list):
     return [item for item in full_list if item not in exclusion_list]
 
 
-def create_exclude_solo_terms(exlusion_terms: List[str], adapter) -> List[str]:
+def create_exclude_solo_terms(exclusion_terms: List[str], adapter) -> List[str]:
     """
     Creates a list of CURIEs to exclude based on the provided list of terms.
 
-    :param exlusion_terms: List of term labels to exclude.
+    :param exclusion_terms: List of term labels to exclude.
     :param envo: The ontology adapter.
-
     """
-
     all_ids_to_exclude = []
 
-    for term_label in exlusion_terms:
+    for term_label in exclusion_terms:
         # Find the CURIE for the label
         list_to_exclude = onto_query([term_label], adapter)
         all_ids_to_exclude.extend(list_to_exclude)
     return list(set(all_ids_to_exclude))
-    pass
 
 
 def extract_terms_to_file(oak_config_file, extraction_config):
@@ -89,7 +89,7 @@ def extract_terms_to_file(oak_config_file, extraction_config):
     # Get the entity and exclusions from the config
     initial_term_label = extraction_config['entity']
     initial_term_list = onto_query([".desc//p=i", initial_term_label], envo)
-    print("length of initial term list", len(initial_term_list))
+    logging.info(f"Length of initial term list: {len(initial_term_list)}")
 
     exclusion_terms_and_children = create_exclusion_list(extraction_config.get('term_and_descendant_exclusions', []),
                                                          envo)
@@ -99,12 +99,12 @@ def extract_terms_to_file(oak_config_file, extraction_config):
     excluded_terms = create_exclude_solo_terms(extraction_config.get('term_exclusions', []), envo)
 
     exclusion_list = exclusion_terms_and_children + exclusion_terms_from_text + excluded_terms
-    print("length of excluded terms", len(exclusion_terms_and_children))
-    print("length of excluded terms from text", len(exclusion_terms_from_text))
-    print("length of excluded terms from solo terms", len(excluded_terms))
+    logging.info(f"Length of excluded terms and descendants: {len(exclusion_terms_and_children)}")
+    logging.info(f"Length of excluded terms from text: {len(exclusion_terms_from_text)}")
+    logging.info(f"Length of excluded terms from solo terms: {len(excluded_terms)}")
 
     remaining_items = exclude_terms(initial_term_list, exclusion_list)
-    print("length of remaining items", len(remaining_items))
+    logging.info(f"Length of remaining items: {len(remaining_items)}")
 
     results = onto_query(remaining_items, envo, labels=True)
 
@@ -114,7 +114,7 @@ def extract_terms_to_file(oak_config_file, extraction_config):
         for curie, label in results:
             output_file.write(f"{curie}: {label}\n")
 
-    print(f"Results written to {output_file_path}")
+    logging.info(f"Results written to {output_file_path}")
 
 
 @click.command()
