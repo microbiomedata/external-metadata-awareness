@@ -1,3 +1,5 @@
+from typing import List
+
 import yaml
 import click
 from oaklib import get_adapter
@@ -12,7 +14,7 @@ def load_configs(oak_config_file, extraction_config_file):
     return oak_config, extraction_config
 
 
-def create_exclusion_query(term_labels, adapter):
+def create_exclusion_list(term_labels, adapter) -> List[str]:
     """
     Creates a combined FunctionQuery to exclude specific terms and their descendants.
 
@@ -20,29 +22,16 @@ def create_exclusion_query(term_labels, adapter):
     :param adapter: The ontology adapter.
     :return: Combined FunctionQuery to exclude all specified terms and their descendants.
     """
-    exclusion_queries = []
-
+    all_ids_to_exclude = []
     for label in term_labels:
         # Find the CURIE for the label
         term_curies = onto_query(SimpleQueryTerm(term=label), adapter)
         if term_curies:
             term_curie = term_curies[0]  # Assuming one CURIE per label
             # Create a descendant exclusion query for the term
-            exclusion_query = FunctionQuery(
-                function=FunctionEnum.DESCENDANT,
-                argument=term_curie,
-                description=f"Descendants of {label}"
-            )
-            exclusion_queries.append(exclusion_query)
-
-    # Combine all exclusion queries into one using the OR (|) operator
-    if exclusion_queries:
-        combined_exclusion_query = exclusion_queries[0]
-        for query in exclusion_queries[1:]:
-            combined_exclusion_query = combined_exclusion_query | query
-        return combined_exclusion_query
-    else:
-        return None
+            list_to_exclude = onto_query([".desc//p=i", term_curie], adapter)
+            all_ids_to_exclude.extend(list_to_exclude)
+    return list(set(all_ids_to_exclude))
 
 
 def create_text_exclusion_query(text_exclusions, adapter):
@@ -53,20 +42,25 @@ def create_text_exclusion_query(text_exclusions, adapter):
     :param adapter: The ontology adapter.
     :return: Combined FunctionQuery to exclude all specified text matches.
     """
-    text_exclusion_queries = []
+
+    all_ids_to_exclude = []
 
     for text in text_exclusions:
-        exclusion_query = SimpleQueryTerm(term=text)
-        text_exclusion_queries.append(exclusion_query)
+        # Find the CURIE for the label
+        list_to_exclude = onto_query(["l~"+text], adapter)
+        all_ids_to_exclude.extend(list_to_exclude)
+    return list(set(all_ids_to_exclude))
 
-    # Combine all exclusion queries into one using the OR (|) operator
-    if text_exclusion_queries:
-        combined_text_exclusion_query = text_exclusion_queries[0]
-        for query in text_exclusion_queries[1:]:
-            combined_text_exclusion_query = combined_text_exclusion_query | query
-        return combined_text_exclusion_query
-    else:
-        return None
+
+def exclude_terms(full_list, exclusion_list):
+    """
+    Returns a list of items from the full list with the items in the exclusion list removed.
+
+    :param full_list: List of items to be filtered.
+    :param exclusion_list: List of items to exclude from the full list.
+    :return: A list with items from exclusion_list removed.
+    """
+    return [item for item in full_list if item not in exclusion_list]
 
 
 def process_ontology(oak_config_file, extraction_config):
@@ -75,51 +69,20 @@ def process_ontology(oak_config_file, extraction_config):
 
     # Get the entity and exclusions from the config
     initial_term_label = extraction_config['entity']
-    initial_term_curies = onto_query(SimpleQueryTerm(term=initial_term_label), oak_adapter)
+    initial_term_list = onto_query([".desc//p=i", initial_term_label], oak_adapter)
+    print("length of initial term list", len(initial_term_list))
 
-    if not initial_term_curies:
-        raise ValueError(f"Entity '{initial_term_label}' not found in the ontology.")
+    exclusion_terms = extraction_config.get('term_exclusions', [])
+    exclusion_texts = extraction_config.get('text_exclusions', [])
 
-    initial_term_curie = initial_term_curies[0]
-    print("initial_term_curie", initial_term_curie)
+    exclusion_terms_and_children = create_exclusion_list(exclusion_terms, oak_adapter)
+    exclusion_terms_from_text = create_text_exclusion_query(exclusion_texts, oak_adapter)
+    exclusion_list = exclusion_terms_and_children + exclusion_terms_from_text
+    print("length of excluded terms", len(exclusion_terms_and_children))
+    print("length of excluded terms from text", len(exclusion_terms_from_text))
 
-    # Create exclusion queries from terms
-    term_exclusion_query = create_exclusion_query(extraction_config.get('term_exclusions', []), oak_adapter)
-
-    # Create exclusion queries from text patterns
-    text_exclusion_query = create_text_exclusion_query(extraction_config.get('text_exclusions', []), oak_adapter)
-
-    # Combine term and text exclusion queries
-    combined_exclusion_query = None
-    if term_exclusion_query and text_exclusion_query:
-        combined_exclusion_query = term_exclusion_query | text_exclusion_query
-    elif term_exclusion_query:
-        combined_exclusion_query = term_exclusion_query
-    elif text_exclusion_query:
-        combined_exclusion_query = text_exclusion_query
-
-    # Main query for descendants of the specified entity
-    material_entity_query = FunctionQuery(
-        function=FunctionEnum.DESCENDANT,
-        argument=initial_term_curie,  # Assuming one CURIE for the entity
-        description=f"Descendants of {initial_term_label}"
-    )
-
-    # Combine the main query with the exclusion query
-    if combined_exclusion_query:
-        final_query = material_entity_query - combined_exclusion_query
-    else:
-        final_query = material_entity_query
-
-    # Execute the final query
-    result = onto_query(final_query, oak_adapter)
-
-    # Write the results to the output file
-    with open(extraction_config['output'], 'w') as output_file:
-        for curie in result:
-            label = oak_adapter.label(curie)
-            output_file.write(f"{curie}: {label}\n")
-            print(curie, label)
+    remaining_items = exclude_terms(initial_term_list, exclusion_list)
+    print(len(remaining_items))
 
 
 @click.command()

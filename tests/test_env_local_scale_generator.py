@@ -3,7 +3,8 @@ import yaml
 import os
 from click.testing import CliRunner
 from external_metadata_awareness.env_local_scale_extraction import cli, load_configs, process_ontology
-
+from oaklib.query import onto_query
+from oaklib.selector import get_adapter
 
 @pytest.fixture
 def oak_config_file(tmp_path):
@@ -25,9 +26,23 @@ def extraction_config_file(tmp_path):
     config_data = {
         "entity": "material entity",
         "term_exclusions": [
-            "biome",
-            "environmental material",
-            "chemical entity"
+            "biome"
+            , "environmental material"
+            , "chemical entity"
+            , "organic material"
+            , "anatomical entity"
+            , "organism"
+            , "plant anatomical entity"
+            , "healthcare facility"
+            , "fluid layer"
+            , "interface layer"
+            , "manufactured product"
+            , "anatomical entity environment"
+            , "ecosystem"
+            , "area protected according to IUCN guidelines"
+            , "astronomical body"
+            , "astronomical object"
+            , "cloud"
         ],
         "text_exclusions": [
             "brackish",
@@ -64,6 +79,7 @@ def test_process_ontology(oak_config_file, extraction_config_file):
 
     with open(output_file_path, 'r') as file:
         content = file.read()
+        print(content)
         assert len(content) > 0, "Output file is empty, expected some data."
 
     # You could also add assertions based on expected content
@@ -89,3 +105,12 @@ def test_cli_runs_successfully(oak_config_file, extraction_config_file):
     # Add additional assertions to check that the CLI correctly excluded terms
     assert "biome" not in content
     assert "brackish" not in content
+
+
+def test_onto_query():
+    adapter = get_adapter("sqlite:obo:envo")
+    # desc = onto_query([".desc//p=i", "material entity"], adapter)
+    # print(len(desc))
+
+    list_to_exclude = onto_query(["l~saline"], adapter, labels=True)
+    print(list_to_exclude)
