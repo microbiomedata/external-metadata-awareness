@@ -34,7 +34,7 @@ def create_exclusion_list(term_labels, adapter) -> List[str]:
     return list(set(all_ids_to_exclude))
 
 
-def create_text_exclusion_query(text_exclusions, adapter):
+def create_text_exclusion_list(text_exclusions, adapter):
     """
     Creates a combined FunctionQuery to exclude specific terms based on text matching.
 
@@ -63,26 +63,59 @@ def exclude_terms(full_list, exclusion_list):
     return [item for item in full_list if item not in exclusion_list]
 
 
-def process_ontology(oak_config_file, extraction_config):
+def create_exclude_solo_terms(exlusion_terms: List[str], adapter) -> List[str]:
+    """
+    Creates a list of CURIEs to exclude based on the provided list of terms.
+
+    :param exlusion_terms: List of term labels to exclude.
+    :param envo: The ontology adapter.
+
+    """
+
+    all_ids_to_exclude = []
+
+    for term_label in exlusion_terms:
+        # Find the CURIE for the label
+        list_to_exclude = onto_query([term_label], adapter)
+        all_ids_to_exclude.extend(list_to_exclude)
+    return list(set(all_ids_to_exclude))
+    pass
+
+
+def extract_terms_to_file(oak_config_file, extraction_config):
     # Load the ontology using the get_adapter function
-    oak_adapter = get_adapter(oak_config_file)
+    envo = get_adapter(oak_config_file)
 
     # Get the entity and exclusions from the config
     initial_term_label = extraction_config['entity']
-    initial_term_list = onto_query([".desc//p=i", initial_term_label], oak_adapter)
+    initial_term_list = onto_query([".desc//p=i", initial_term_label], envo)
     print("length of initial term list", len(initial_term_list))
 
-    exclusion_terms = extraction_config.get('term_exclusions', [])
-    exclusion_texts = extraction_config.get('text_exclusions', [])
 
-    exclusion_terms_and_children = create_exclusion_list(exclusion_terms, oak_adapter)
-    exclusion_terms_from_text = create_text_exclusion_query(exclusion_texts, oak_adapter)
-    exclusion_list = exclusion_terms_and_children + exclusion_terms_from_text
+    exclusion_terms_and_children = create_exclusion_list(extraction_config.get('term_and_descendant_exclusions', []),
+                                                         envo)
+
+    exclusion_terms_from_text = create_text_exclusion_list(extraction_config.get('text_exclusions', []),
+                                                           envo)
+    exluded_terms = create_exclude_solo_terms(extraction_config.get('term_exclusions', []), envo)
+
+    exclusion_list = exclusion_terms_and_children + exclusion_terms_from_text + exluded_terms
     print("length of excluded terms", len(exclusion_terms_and_children))
     print("length of excluded terms from text", len(exclusion_terms_from_text))
+    print("length of excluded terms from solo terms", len(exluded_terms))
 
     remaining_items = exclude_terms(initial_term_list, exclusion_list)
-    print(len(remaining_items))
+    print("length of remaining items", len(remaining_items))
+
+    results = onto_query(remaining_items, envo, labels=True)
+
+    # Write the results to the output file specified in the extraction config
+    output_file_path = extraction_config['output']
+    with open(output_file_path, 'w') as output_file:
+        for curie, label in results:
+            output_file.write(f"{curie}: {label}\n")
+
+    print(f"Results written to {output_file_path}")
 
 
 @click.command()
@@ -93,7 +126,7 @@ def cli(extraction_config_file, oak_config_file):
     CLI tool to process an ontology based on the provided YAML configuration file.
     """
     _, extraction_config = load_configs(oak_config_file, extraction_config_file)
-    process_ontology(oak_config_file, extraction_config)
+    extract_terms_to_file(oak_config_file, extraction_config)
 
 
 if __name__ == "__main__":
