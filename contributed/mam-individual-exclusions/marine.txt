@@ -1,0 +1,14 @@
+ENVO:01001345 ! floating ice mass
+ENVO:01000122 ! marine hydrothermal vent
+ENVO:01001536 ! sea ice mass
+ENVO:00001999 ! marine water body
+ENVO:03000066 ! sea ice floe
+ENVO:01000143 ! marine reef
+ENVO:01001671 ! open cage mariculture facility
+ENVO:00000130 ! rocky reef
+ENVO:00000264 ! seamount
+ENVO:00000550 ! range of seamounts
+ENVO:00002450 ! ocean basin
+ENVO:01001537 ! sea ice hummock
+ENVO:01001382 ! area of attached mussel assemblages
+ENVO:01001497 ! carbonate system of ocean water
