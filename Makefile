@@ -499,31 +499,38 @@ local/unused-terrestrial-biomes-response.txt: local/unused-terrestrial-biomes-pr
 
 ####
 
-# remove .desc//p=BFO:0000050 'marine littoral zone' .or .desc//p=BFO:0000050 'saline water' .or .desc//p=RO:0001025 'water body' .or .desc//p=RO:0001025 'water body' .or .desc//p=RO:0002473 ' because of .or 'l~marine'
-# remove .or .desc//p=i 'organic material' because of .or .desc//p=i 'environmental material'
-# remove .or .desc//p=i 'mass of liquid' because of .or .desc//p=i 'mass of environmental material'
-# removed  .or .desc//p=i NCBITaxon:1 because of .or .desc//p=i 'organism'
-# .or .desc//p=i 'organic material' (.desc//p=i 'environmental material')
-# .or .desc//p=i 'gas planet' (.desc//p=i 'environmental material')
 local/env-local-scale-candidates.txt:
-	$(RUN) runoak --input sqlite:obo:envo info .desc//p=i 'material entity' .not [ .desc//p=i 'biome'.or .desc//p=i 'environmental material' .or .desc//p=i 'anatomical entity' .or .desc//p=i 'chemical entity' .or .desc//p=i 'environmental system' .or .desc//p=i 'administrative region' .or .desc//p=i 'aeroform' .or .desc//p=i 'anatomical entity environment' .or .desc//p=i 'area protected according to IUCN guidelines' .or .desc//p=i 'astronomical object' .or .desc//p=i 'building part' .or .desc//p=i 'channel of a watercourse' .or .desc//p=i 'collection of organisms' .or .desc//p=i 'cryospheric layer' .or .desc//p=i 'ecozone' .or .desc//p=i 'environmental monitoring area' .or .desc//p=i 'fluid layer'  .or .desc//p=i 'healthcare facility' .or .desc//p=i 'interface layer' .or .desc//p=i 'manufactured product' .or .desc//p=i 'mass of biological material' .or .desc//p=i 'mass of fluid' .or .desc//p=i 'material isosurface' .or .desc//p=i 'meteor' .or .desc//p=i 'meteorite' .or .desc//p=i 'observing system' .or .desc//p=i 'organic object' .or .desc//p=i 'organism' .or .desc//p=i 'particle' .or .desc//p=i 'piece of plastic' .or .desc//p=i 'piece of rock' .or .desc//p=i 'planetary structural layer' .or .desc//p=i 'plant anatomical entity' .or .desc//p=i 'political entity' .or .desc//p=i 'protected area' .or .desc//p=i 'subatomic particle' .or .desc//p=i 'transport feature' .or .desc//p=i 'water current' .or .desc//p=i,p 'l~undersea' ] .or bridge .or road .or 'wildlife management area' .or .desc//p=i 'lake layer' .or .desc//p=i island > $@
+	$(RUN) runoak --input sqlite:obo:envo info .desc//p=i 'material entity' .not [ .desc//p=i 'biome'.or .desc//p=i 'environmental material' .or .desc//p=i 'anatomical entity' .or .desc//p=i 'chemical entity' .or .desc//p=i 'environmental system' .or .desc//p=i 'administrative region' .or .desc//p=i 'aeroform' .or .desc//p=i 'anatomical entity environment' .or .desc//p=i 'area protected according to IUCN guidelines' .or .desc//p=i 'astronomical object' .or .desc//p=i 'building part' .or .desc//p=i 'channel of a watercourse' .or .desc//p=i 'collection of organisms' .or .desc//p=i 'cryospheric layer' .or .desc//p=i 'ecozone' .or .desc//p=i 'environmental monitoring area' .or .desc//p=i 'fluid layer'  .or .desc//p=i 'healthcare facility' .or .desc//p=i 'ice field' .or .desc//p=i 'ice mass' .or .desc//p=i 'industrial building' .or .desc//p=i 'interface layer' .or .desc//p=i 'manufactured product' .or .desc//p=i 'mass of biological material' .or .desc//p=i 'mass of fluid' .or .desc//p=i 'material isosurface' .or .desc//p=i 'meteor' .or .desc//p=i 'meteorite' .or .desc//p=i 'observing system' .or .desc//p=i 'organic object' .or .desc//p=i 'organism' .or .desc//p=i 'particle' .or .desc//p=i 'piece of plastic' .or .desc//p=i 'piece of rock' .or .desc//p=i 'planetary structural layer' .or .desc//p=i 'plant anatomical entity' .or .desc//p=i 'political entity' .or .desc//p=i 'protected area' .or .desc//p=i 'subatomic particle' .or .desc//p=i 'transport feature' .or .desc//p=i 'water current' .or .desc//p=i,p 'l~undersea' ] .or bridge .or road .or 'wildlife management area' .or .desc//p=i 'lake layer' .or .desc//p=i island > $@
 
-local/env-local-scale-candidates-relationships.tsv:
-	$(RUN) runoak --input sqlite:obo:envo relationships .desc//p=i 'material entity' .not [ .desc//p=i 'biome' .or .desc//p=i 'environmental material'  .or .desc//p=i 'meteorite'  .or .desc//p=i 'chemical entity' .or .desc//p=i 'organic material' .or .desc//p=i 'anatomical entity' .or .desc//p=i 'organism'  .or .desc//p=i 'plant anatomical entity'  .or .desc//p=i 'healthcare facility'  .or .desc//p=i 'fluid layer'  .or .desc//p=i 'interface layer'  .or .desc//p=i 'manufactured product'  .or .desc//p=i 'anatomical entity environment'  .or .desc//p=i 'ecosystem'  .or .desc//p=i 'area protected according to IUCN guidelines'  .or .desc//p=i 'astronomical body'  .or .desc//p=i 'astronomical object'  .or .desc//p=i 'cloud'  .or .desc//p=i 'collection of organisms'  .or .desc//p=i 'environmental system'  .or .desc//p=i 'ecozone'  .or .desc//p=i 'environmental zone'  .or .desc//p=i 'water current'  .or .desc//p=i 'mass of environmental material'  .or .desc//p=i 'subatomic particle'  .or .desc//p=i 'observing system'  .or .desc//p=i 'particle'  .or .desc//p=i 'planetary structural layer'  .or .desc//p=i 'political entity'  .or .desc//p=i 'meteor'  .or .desc//p=i 'room'  .or .desc//p=i 'transport feature'  .or .desc//p=i 'mass of liquid'  .or .desc//p=RO:0001025 'water body'  .or .desc//p=BFO:0000050 'environmental monitoring area'  .or .desc//p=BFO:0000050 'marine littoral zone'  .or .desc//p=BFO:0000050 'marine environmental zone'  .or .desc//p=RO:0002473 'sea floor'  .or .desc//p=BFO:0000050 'saline water'  .or .desc//p=BFO:0000050 'ice'  .or .desc//p=RO:0001025 'water body'  .or .desc//p=i 'administrative region'  .or .desc//p=i 'protected area'  .or .desc//p=i 'channel of a watercourse'  .or .desc//p=i 'cryospheric layer'  .or 'l~gaseous'  .or 'l~marine'  .or .desc//p=i 'material isosurface'  .or 'l~undersea'  .or .desc//p=i NCBITaxon:1  .or 'l~saline'  .or 'l~brackish'  .or .desc//p=i 'aeroform' ] > $@
+local/env-local-scale-candidate-ids.txt: local/env-local-scale-candidates.txt
+	cut -f1 -d' ' $< > $@
 
-local/envo-leaves.txt:
+local/mam-individual-exclusion-ids.txt:
+	cat contributed/mam-individual-exclusions/*txt | cut -f1 -d' ' > $@
+
+local/env-local-scale-candidates-relationships.tsv: local/env-local-scale-candidate-ids.txt
+	$(RUN) runoak --input sqlite:obo:envo relationships .idfile $< > $@
+
+local/envo-leaves.txt: local/env-local-scale-candidate-ids.txt
 	$(RUN) runoak --input sqlite:obo:envo leafs > $@
 
 local/envo-leaf-ids.txt: local/envo-leaves.txt
 	cut -f1 -d' ' $< > $@
 
-local/env-local-scale-candidate-ids.txt: local/env-local-scale-candidates.txt
-	cut -f1 -d' ' $< > $@
+local/env-local-scale-candidate-leaves.txt: local/env-local-scale-candidate-ids.txt local/envo-leaf-ids.txt
+	$(RUN) runoak --input sqlite:obo:envo info .idfile $(word 1,$^) .and .idfile $(word 2,$^)  > $@
 
-local/env-local-scale-non-leaf.txt: local/env-local-scale-candidates.txt local/envo-leaf-ids.txt
+local/env-local-scale-candidate-non-leaf.txt: local/env-local-scale-candidates.txt local/envo-leaf-ids.txt
 	$(RUN) runoak --input sqlite:obo:envo info .idfile $(word 1,$^) .not [ .idfile $(word 2,$^) ] > $@
 
-local/env-local-scale-non-leaf.csv: local/env-local-scale-non-leaf.txt
+local/env-local-scale-candidate-non-leaf-mam-individual-exclusion-applied.txt: local/env-local-scale-candidate-non-leaf.txt local/mam-individual-exclusion-ids.txt
+	$(RUN) runoak --input sqlite:obo:envo info .idfile $(word 1,$^) .not .idfile $(word 2,$^) > $@
+
+local/env-local-scale-candidate-non-leaf-mam-individual-exclusion-applied.png: local/env-local-scale-candidate-non-leaf.txt \
+local/mam-individual-exclusion-ids.txt
+	$(RUN) runoak --input sqlite:obo:envo viz --gap-fill [ 'material entity' or .idfile $(word 1,$^) ] .not .idfile $(word 2,$^) > $@
+
+local/env-local-scale-non-leaf.csv: local/env-local-scale-candidate-non-leaf.txt
 	$(RUN) normalize-envo-data \
 		--input-file $< \
 		--ontology-prefix ENVO \
@@ -531,3 +538,14 @@ local/env-local-scale-non-leaf.csv: local/env-local-scale-non-leaf.txt
 
 local/env-local-scale-non-leaf.png: local/env-local-scale-candidates.txt local/envo-leaf-ids.txt
 	$(RUN) runoak --input sqlite:obo:envo viz --gap-fill .idfile $(word 1,$^) .not [ .idfile $(word 2,$^) ]
+
+local/goldData.xlsx:
+	wget -O $@ "https://gold.jgi.doe.gov/download?mode=site_excel"
+
+local/goldData_biosamples.csv: local/goldData.xlsx
+	$(RUN) python -c "import pandas as pd; import sys; pd.read_excel(sys.argv[1], sheet_name=sys.argv[3]).to_csv(sys.argv[2], index=False)" $< $@ Biosample
+
+local/goldterms-env_local_scale-of-environmental-terrestrial-soil-counts.txt:
+	$(RUN) runoak --input sqlite:obo:goldterms query --output $@.bak --query "SELECT s.object, count(1) as path_count FROM entailed_edge ee JOIN statements s ON ee.subject = s.subject WHERE ee.predicate = 'rdfs:subClassOf' AND ee.object = 'GOLDTERMS:4212' AND s.predicate = 'mixs:env_local' group by s.object order by count(1) desc"
+	cut -f 1,3 $@.bak  > $@
+	rm -rf $@.bak
