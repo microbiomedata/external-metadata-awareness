@@ -181,4 +181,6 @@ generate-env-local-scale-candidates:
            --oak-config-file config/oak-config.yaml \
            --extraction-config-file config/env-local-scale-extraction-config.yaml
 
+test:
+	$(RUN) pytest tests/*
 ###### END SIERRA's STUFF #######
