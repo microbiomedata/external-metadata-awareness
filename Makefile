@@ -549,3 +549,11 @@ local/goldterms-env_local_scale-of-environmental-terrestrial-soil-counts.txt: # 
 	$(RUN) runoak --input sqlite:obo:goldterms query --output $@.bak --query "SELECT s.object, count(1) as path_count FROM entailed_edge ee JOIN statements s ON ee.subject = s.subject WHERE ee.predicate = 'rdfs:subClassOf' AND ee.object = 'GOLDTERMS:4212' AND s.predicate = 'mixs:env_local' group by s.object order by count(1) desc"
 	cut -f 1,3 $@.bak  > $@
 	rm -rf $@.bak
+
+# want to combine the evidence from
+# local/env-local-scale-candidate-non-leaf-mam-individual-exclusion-applied.txt (class hierarchy judgement calls)
+# counts of GOLD Biosamples using env_local_scale terms inferred from goldterms (incomplete)
+# counts of NCBI Biosamples env_local_scale assertions (local/ncbi-mims-soil-biosamples-env_local_scale-annotated.tsv) after normalization. See normalized_curie/real_lable and matched_id/matched_label... some overlap with GOLD Biosamples?
+# counts of NMDC Biosamples env_local_scale assertions (env_local_scale_id from local/nmdc-production-biosamples-json-to-context.tsv needs extraction and counting)
+# flags for process, biome, or envirnmental material classes
+
