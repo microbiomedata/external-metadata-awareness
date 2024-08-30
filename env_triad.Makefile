@@ -177,7 +177,7 @@ local/env-local-scale-non-leaf.png: local/env-local-scale-candidates.txt local/e
 
 generate-env-local-scale-candidates:
 	# Ensure the poetry environment is activated and run the script with the specified config
-	$(RUN) python external_metadata_awareness/env_local_scale_extraction.py \
+	$(RUN) python external_metadata_awareness/envo_local_scale_extraction.py \
            --oak-config-file config/oak-config.yaml \
            --extraction-config-file config/env-local-scale-extraction-config.yaml
 
