@@ -104,7 +104,7 @@ def test_load_configs(oak_config_file, extraction_config_file):
     assert extraction_config["entity"] == "material entity"
     assert "term_exclusions" in extraction_config
     assert "text_exclusions" in extraction_config
-    assert extraction_config["output"].endswith("output.txt")
+    assert extraction_config["output"].endswith("environmental-materials-relationships.txt")
 
 
 def test_process_ontology(oak_config_file, extraction_config_file):
