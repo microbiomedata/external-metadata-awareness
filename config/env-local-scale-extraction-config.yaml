@@ -71,96 +71,97 @@ term_and_descendant_exclusions:
   - "water body"
   - "water current"
 "single_term_exclusions":
-  - anthropised terrestrial environmental zone
-  - anthropogenic contamination feature
-  - anthropogenic geographic feature
-  - area of attached faunal communities
-  - area of attached mussel assemblages
-  - area of developed space
-  - astronomical body part
-  - biosphere
-  - body of liquid
-  - carbonate system of ocean water
-  - cellular organisms
-  - child care facility
-  - cloud part
-  - compound astronomical body part
-  - construction
-  - conveyor system
-  - cryoform
-  - educational facility
-  - environmental zone
-  - environmental zone of processual equilibrium
-  - facility
-  - fiat object
-  - fiat part of an astronomical object
-  - floating ice mass
-  - fluid astronomical body part
-  - fresh water body
-  - gaseous astronomical body part
-  - gaseous part of an atmosphere
-  - geographic feature
-  - hail stone
-  - hydroform
-  - hydrographic feature
-  - hydrosphere
-  - ice decumulation zone
-  - landform
-  - layer
-  - liquid astronomical body part
-  - lotic water body
-  - marine hydrothermal vent
-  - marine reef
-  - marine water body
-  - marine water mass
-  - mass of compounded environmental materials
-  - mass of environmental material
-  - mass of solid material
-  - material accumulation zone
-  - material decumulation zone
-  - material entity
-  - object
-  - object aggregate
-  - ocean basin
-  - open cage mariculture facility
-  - organismal entity
-  - pedosphere
-  - planetary photic zone
-  - planetary subsurface zone
-  - pole
-  - polling place
-  - polling station
-  - processed material
-  - processing plant
-  - public infrastructure
-  - public transit system
-  - rapid transit system
-  - rain
-  - range of seamounts
-  - rocky reef
-  - root
-  - saline water body
-  - sea ice floe
-  - sea ice hummock
-  - sea ice mass
-  - seamount
-  - sleet pellet
-  - sleet pellet
-  - soil horizon
-  - soil layer
-  - solid astronomical body part
-  - solid layer
-  - subsurface landform
-  - subsurface zone of an astronomical body
-  - surface landform
-  - system
-  - Taylor column
-  - technosphere
-  - underground water body
-  - volcanic feature
-  - water body
-  - watercourse
-  - water mass
-  - water-based rain
+  - "anthropised terrestrial environmental zone"
+  - "anthropogenic contamination feature"
+  - "anthropogenic geographic feature"
+  - "area of attached faunal communities"
+  - "area of attached mussel assemblages"
+  - "area of developed space"
+  - "astronomical body part"
+  - "biosphere"
+  - "body of liquid"
+  - "carbonate system of ocean water"
+  - "cellular organisms"
+  - "child care facility"
+  - "cloud part"
+  - "compound astronomical body part"
+  - "construction"
+  - "conveyor system"
+  - "cryoform"
+  - "educational facility"
+  - "environmental zone"
+  - "environmental zone of processual equilibrium"
+  - "facility"
+  - "fiat object"
+  - "fiat part of an astronomical object"
+  - "floating ice mass"
+  - "fluid astronomical body part"
+  - "fresh water body"
+  - "gaseous astronomical body part"
+  - "gaseous part of an atmosphere"
+  - "geographic feature"
+  - "hail stone"
+  - "hydroform"
+  - "hydrographic feature"
+  - "hydrosphere"
+  - "ice decumulation zone"
+  - "landform"
+  - "layer"
+  - "liquid astronomical body part"
+  - "lotic water body"
+  - "marine hydrothermal vent"
+  - "marine reef"
+  - "marine water body"
+  - "marine water mass"
+  - "mass of compounded environmental materials"
+  - "mass of environmental material"
+  - "mass of solid material"
+  - "material accumulation zone"
+  - "material decumulation zone"
+  - "material entity"
+  - "object"
+  - "object aggregate"
+  - "ocean basin"
+  - "open cage mariculture facility"
+  - "organismal entity"
+  - "pedosphere"
+  - "planetary photic zone"
+  - "planetary subsurface zone"
+  - "pole"
+  - "polling place"
+  - "polling station"
+  - "processed material"
+  - "processing plant"
+  - "public infrastructure"
+  - "public transit system"
+  - "rapid transit system"
+  - "rain"
+  - "range of seamounts"
+  - "rocky reef"
+  - "root"
+  - "saline water body"
+  - "sea ice floe"
+  - "sea ice hummock"
+  - "sea ice mass"
+  - "seamount"
+  - "sleet pellet"
+  - "sleet pellet"
+  - "soil horizon"
+  - "soil layer"
+  - "solid astronomical body part"
+  - "solid layer"
+  - "subsurface landform"
+  - "subsurface zone of an astronomical body"
+  - "surface landform"
+  - "system"
+  - "Taylor column"
+  - "technosphere"
+  - "underground water body"
+  - "volcanic feature"
+  - "water body"
+  - "watercourse"
+  - "water mass"
+  - "water-based rain"
+
 
 
