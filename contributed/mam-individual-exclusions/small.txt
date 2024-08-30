@@ -1,0 +1,2 @@
+ENVO:03400015 ! sleet pellet
+ENVO:03400012 ! hail stone
