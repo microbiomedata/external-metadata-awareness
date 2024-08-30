@@ -26,7 +26,7 @@ def oak_config_file(tmp_path):
 def extraction_config_file(tmp_path):
     config_data = {
         "entity": "material entity",
-        "term_exclusions": [
+        "post_process_inclusion_single_terms": [
             "bridge",
             "road",
             "wildlife management area"
@@ -126,6 +126,7 @@ def test_process_ontology(oak_config_file, extraction_config_file):
     assert "biome" not in content
     assert "brackish" not in content
     assert "saline" not in content
+    assert "wildlife management area" in content
 
 
 def test_cli_runs_successfully(oak_config_file, extraction_config_file):
