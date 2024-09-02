@@ -17,15 +17,16 @@ local/nmdc-production-biosamples-5pct.json: downloads/nmdc-production-biosamples
 		--output-file $@ \
 		--sample-percentage 5
 
-local/nmdc-production-biosamples-json-to-context.tsv: downloads/nmdc-production-biosamples.json
+local/nmdc-production-biosamples-env-context-columns.tsv: downloads/nmdc-production-biosamples.json
 	$(RUN) biosample-json-to-context-tsv \
 		--input-file $< \
 		--output-file $@
 
-local/nmdc-production-biosamples-json-to-context-counts.tsv: local/nmdc-production-biosamples-json-to-context.tsv
+# no header?
+local/nmdc-production-biosamples-env_local_scale.tsv: local/nmdc-production-biosamples-env-context-columns.tsv
 	cut -f5 $< | sed '1d' | sort | uniq -c | awk '{print $$2 "\t" $$1}' > $@
 
-local/nmdc-production-biosamples-json-to-context-ids.txt: local/nmdc-production-biosamples-json-to-context-counts.tsv
+local/nmdc-production-biosamples-env_local_scale-ids.txt: local/nmdc-production-biosamples-env_local_scale.tsv
 	cut -f1 $< > $@
 
 local/nmdc-production-biosamples-env-package.json:
