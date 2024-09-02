@@ -2,10 +2,13 @@ RUN=poetry run
 WGET=wget
 
 # want to combine the evidence from
+
 # local/env-local-scale-candidate-non-leaf-mam-individual-exclusion-applied.txt (class hierarchy judgement calls)
-# counts of GOLD Biosamples using env_local_scale terms inferred from goldterms (sparse local/goldterms-env_local_scale-of-environmental-terrestrial-soil-counts.tsv)
-# counts of NCBI Biosamples env_local_scale assertions (local/ncbi-mims-soil-biosamples-env_local_scale-annotated.tsv) after normalization. See normalized_curie/real_lable and matched_id/matched_label... some overlap with GOLD Biosamples?
-# counts of NMDC Biosamples env_local_scale assertions (env_local_scale_id from local/nmdc-production-biosamples-json-to-context.tsv needs extraction and counting)
+# counts of NCBI Biosamples env_local_scale assertions (local/ncbi-mims-soil-biosamples-env_local_scale-annotated.tsv) after normalization. See normalized_curie/real_label and matched_id/matched_label... some overlap with GOLD Biosamples?
+# counts of NMDC Biosamples env_local_scale assertions (env_local_scale_id from  needs extraction and counting)
+
+# counts of GOLD Biosamples using env_local_scale terms inferred from goldterms (sparse local/goldData_biosamples-inferred-soil-env_local_scale-counts.tsv)
+
 # flags for process, biome, or envirnmental material classes
 
 local/env-local-scale-candidates.txt:
@@ -29,9 +32,13 @@ local/env-local-scale-candidate-non-leaf.txt: local/env-local-scale-candidates.t
 local/env-local-scale-candidate-non-leaf-mam-individual-exclusion-applied.txt: local/env-local-scale-candidate-non-leaf.txt local/mam-individual-exclusion-ids.txt
 	$(RUN) runoak --input sqlite:obo:envo info .idfile $(word 1,$^) .not .idfile $(word 2,$^) > $@
 
+local/env-local-scale-candidate-non-leaf-mam-individual-exclusion-applied-ids.txt: local/env-local-scale-candidate-non-leaf-mam-individual-exclusion-applied.txt
+	cut -f1 -d' ' $< > $@
+
+
 local/env-local-scale-candidate-non-leaf-mam-individual-exclusion-applied.png: local/env-local-scale-candidate-non-leaf.txt \
 local/mam-individual-exclusion-ids.txt
-	$(RUN) runoak --input sqlite:obo:envo viz --gap-fill [ 'material entity' or .idfile $(word 1,$^) ] .not .idfile $(word 2,$^) > $@
+	$(RUN) runoak --input sqlite:obo:envo viz --gap-fill --output $@ [ 'material entity' or .idfile $(word 1,$^) ] .not .idfile $(word 2,$^)
 
 #local/env-local-scale-non-leaf.csv: local/env-local-scale-candidate-non-leaf.txt
 #	$(RUN) normalize-envo-data \
@@ -40,4 +47,12 @@ local/mam-individual-exclusion-ids.txt
 #		--output-file $@
 
 local/env-local-scale-non-leaf.png: local/env-local-scale-candidates.txt local/envo-leaf-ids.txt
-	$(RUN) runoak --input sqlite:obo:envo viz --gap-fill .idfile $(word 1,$^) .not [ .idfile $(word 2,$^) ]
+	$(RUN) runoak --input sqlite:obo:envo viz --gap-fill  --output $@  .idfile $(word 1,$^) .not [ .idfile $(word 2,$^) ]
+
+# 		--downsample-uncounted \
+
+local/env-local-scale-evidence-table.tsv: config/env_local_scale-evidence-config.yaml
+	$(RUN) python external_metadata_awareness/extract_value_set_evidence.py \
+		--config $< \
+		--downsample-uncounted \
+		--output-file $@
