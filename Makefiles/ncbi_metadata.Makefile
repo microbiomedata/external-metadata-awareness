@@ -130,3 +130,6 @@ local/ncbi-mims-soil-biosamples-env_local_scale-annotated.tsv: local/ncbi-mims-s
 		--output $@ \
 		--text-file $< \
 		--match-column normalized_label ; date
+
+# from duckdb, with counts
+# normalized_curie/real_label and matched_id/matched_label
