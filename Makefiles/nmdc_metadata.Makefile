@@ -22,12 +22,6 @@ local/nmdc-production-biosamples-env-context-columns.tsv: downloads/nmdc-product
 		--input-file $< \
 		--output-file $@
 
-local/nmdc-production-biosamples-env-context-authoritative-labels.tsv: local/nmdc-production-biosamples-env-context-columns.tsv
-	$(RUN) python external_metadata_awareness/get_authoritative_labels_for_nmdc_context_columns.py \
-		--input-file $< \
-		--output-file $@ \
-		--oak-adapter-string 'sqlite:obo:envo'
-
 # no header?
 local/nmdc-production-biosamples-env_local_scale.tsv: local/nmdc-production-biosamples-env-context-columns.tsv
 	cut -f5 $< | sed '1d' | sort | uniq -c | awk '{print $$2 "\t" $$1}' > $@
