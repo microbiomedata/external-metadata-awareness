@@ -22,6 +22,23 @@ local/nmdc-production-biosamples-env-context-columns.tsv: downloads/nmdc-product
 		--input-file $< \
 		--output-file $@
 
+local/nmdc-production-biosamples-env-context-authoritative-labels.tsv: local/nmdc-production-biosamples-env-context-columns.tsv
+	$(RUN) python external_metadata_awareness/get_authoritative_labels_only_for_nmdc_context_columns.py \
+		--input-file $< \
+		--output-file $@ \
+		--oak-adapter-string 'sqlite:obo:envo'
+
+local/nmdc-production-biosamples-env_package-predictions.tsv: local/nmdc-production-biosamples-env-context-authoritative-labels.tsv
+	$(RUN) python external_metadata_awareness/predict_env_package_from_nmdc_context_authoritative_labels.py \
+		--input-file $< \
+		--output-file $@ \
+		--oak-adapter-string 'sqlite:obo:envo' \
+		--heterogeneity-file 'local/env-package-heterogeneity.tsv' \
+		--override-file 'contributed/mam-env-package-overrides.tsv' \
+		--override-biosample-column 'id' \
+		--override-env-package-column 'mam_inferred_env_package' \
+		--studies-json 'downloads/nmdc-production-studies.json'
+
 # no header?
 local/nmdc-production-biosamples-env_local_scale.tsv: local/nmdc-production-biosamples-env-context-columns.tsv
 	cut -f5 $< | sed '1d' | sort | uniq -c | awk '{print $$2 "\t" $$1}' > $@
