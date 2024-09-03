@@ -44,6 +44,22 @@ local/mixs-extension-unique-slots.json: local/mixs-extensions-with-slots.json
 local/mixs-env-triad.json: downloads/mixs.yaml
 	yq -o=json e '{"slots": {"env_broad_scale": .slots.env_broad_scale, "env_local_scale": .slots.env_local_scale, "env_medium": .slots.env_medium}}' $< | cat > $@
 
+include Makefiles/env_broad_scale.Makefile
+include Makefiles/envo.Makefile
+include Makefiles/gold.Makefile
+include Makefiles/mixs.Makefile
+include Makefiles/ncbi_metadata.Makefile
+include Makefiles/ncbi_schema.Makefile
+include Makefiles/nmdc_metadata.Makefile
+include Makefiles/nmdc_schema.Makefile
+include Makefiles/non-host-env_local_scale.Makefile
+include Makefiles/soil-env_medium.Makefile
+
+# suggested LLM models: gpt-4, gpt-4o, gpt-4-turbo (?), claude-3-opus, claude-3.5-sonnet, gemini-1.5-pro-latest
+# gemini models don't seem to take a temperature parameter
+# cborg/claude-sonnet
+# check cborg for recent model name changes
+
 # NMDC microbiomedata GitHub STUFF
 local/microbiomedata-repos.csv:
 	. ./report-microbiomedata-repos.sh > $@
@@ -242,3 +258,11 @@ detected-annotations-to-postgres: local/ncbi-biosamples-context-value-counts-rea
 	$(RUN) load-tsv-into-postgres \
 	--tsv-file $< \
 	--table-name detected_annotations
+local/envo_goldterms.db:
+	$(RUN) runoak --input sqlite:obo:envo ontology-metadata --all > /dev/null # ensure semsql fiel is cached
+	$(RUN) runoak --input sqlite:obo:goldterms ontology-metadata --all > /dev/null # ensure semsql fiel is cached
+	cp ~/.data/oaklib/envo.db local/
+	poetry run python external_metadata_awareness/sem_sql_combine.py \
+		--primary-db local/envo_goldterms.db \
+		--secondary-db ~/.data/oaklib/goldterms.db
+	mv local/envo.db $@
