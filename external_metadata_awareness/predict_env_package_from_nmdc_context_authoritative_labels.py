@@ -1,3 +1,5 @@
+import json
+
 import pandas as pd
 import click
 from oaklib import get_adapter
@@ -17,26 +19,40 @@ descendant_cache = {}
 
 
 def generate_percentage_heterogeneity_report(df, study_column='part_of',
-                                             prediction_column='predicted_normalized_env_package'):
+                                             prediction_column='predicted_normalized_env_package',
+                                             study_metadata=None):
     """
     Generates a report where each row corresponds to a study and each column corresponds to a possible
     predicted_normalized_env_package value. The value in each cell is the percentage of rows with that study
-    in part_of that have that predicted_normalized_env_package value.
+    in part_of that have that predicted_normalized_env_package value. Includes study metadata.
 
     Args:
         df (pd.DataFrame): The input DataFrame containing study data.
         study_column (str): The column name that identifies different studies.
         prediction_column (str): The column name that contains the predicted normalized_env_package values.
+        study_metadata (dict): Dictionary with study metadata.
 
     Returns:
-        pd.DataFrame: A DataFrame where rows are studies and columns are predicted_normalized_env_package values.
+        pd.DataFrame: A DataFrame where rows are studies and columns are predicted_normalized_env_package values,
+                      including a metadata column.
     """
     # Create a cross-tabulation of the study and the predicted normalized_env_package
     crosstab = pd.crosstab(df[study_column], df[prediction_column], normalize='index') * 100
 
-    # Sort columns for consistent ordering
-    crosstab = crosstab.sort_index(axis=1)
+    # Rename 'part_of' to 'study'
+    crosstab.rename_axis('study', axis='index', inplace=True)
 
+    # Add study metadata
+    if study_metadata:
+        # Create the 'study_metadata' column based on the index and study metadata
+        study_metadata_col = crosstab.index.map(lambda x:
+                                                f"{study_metadata.get(x, {}).get('title', 'Unknown')} ; {study_metadata.get(x, {}).get('name', 'Unknown')}"
+                                                )
+        # Sort columns for consistent ordering
+        crosstab = crosstab.sort_index(axis=1)
+
+        # Insert 'study_metadata' as the first column (after the index)
+        crosstab.insert(0, 'study_title_name', study_metadata_col)
     return crosstab
 
 
@@ -95,30 +111,20 @@ def get_hierarchy_terms(curie: str, adapter) -> dict:
     }
 
 
-def get_ontology_label(curie: str, adapter) -> str:
-    """
-    Retrieve the authoritative label for a given CURIE from the ontology.
-
-    Args:
-        curie (str): The CURIE identifier for the ontology term.
-        adapter: The ontology adapter used to fetch the term label.
-
-    Returns:
-        str: The authoritative label for the given CURIE, or None if not found.
-    """
-    try:
-        return adapter.label(curie)
-    except Exception as e:
-        print(f"Error retrieving label for {curie}: {e}")
-        return None
-
-
 @click.command()
 @click.option('--input-file', required=True, type=click.Path(exists=True), help="Path to the input TSV file.")
 @click.option('--output-file', required=True, type=click.Path(), help="Path to save the output TSV file.")
+@click.option('--heterogeneity-file', required=True, type=click.Path(),
+              help="Path to save a report of heterogeneity of env_package use by studies.")
 @click.option('--oak-adapter-string', default="sqlite:obo:envo", show_default=True,
               help="OAK adapter string (default is 'sqlite:obo:envo').")
-def merge_authoritative_labels(input_file: str, output_file: str, oak_adapter_string: str) -> None:
+@click.option('--override-file', type=click.Path(exists=True), help="Optional path to an override TSV file.")
+@click.option('--override-biosample-column', type=str, help="Column with Biosample ids.")
+@click.option('--override-env-package-column', type=str, help="Column with curated env_package values.")
+@click.option('--studies-json', type=click.Path(exists=True), help="Path to a JSON file with study metadata.")
+def predict_env_package(input_file: str, output_file: str, oak_adapter_string: str,
+                        heterogeneity_file: str, override_file: str = None, override_biosample_column: str = None,
+                        override_env_package_column: str = None, studies_json: str = None) -> None:
     """
     Merge authoritative labels into a TSV file based on ontology CURIE identifiers.
 
@@ -128,7 +134,12 @@ def merge_authoritative_labels(input_file: str, output_file: str, oak_adapter_st
     Args:
         input_file (str): Path to the input TSV file.
         output_file (str): Path to save the output TSV file.
+        heterogeneity_file (str): Path to save a report of heterogeneity of env_package use by studies.
         oak_adapter_string (str): OAK adapter string for accessing the ontology.
+        override_file (str): Optional path to an override TSV file.
+        override_biosample_column (str): Column with Biosample ids.
+        override_env_package_column (str): Column with curated env_package values.
+        studies_json (str): Path to a JSON file with study metadata.
     """
     # Load the TSV file into a DataFrame
     df = pd.read_csv(input_file, sep='\t')
@@ -138,28 +149,36 @@ def merge_authoritative_labels(input_file: str, output_file: str, oak_adapter_st
         lambda x: 'soil' if x == 'ENVO:00001998' else x
     )  # todo shouldn't be hard coded
 
+    df['curated_env_package'] = df['normalized_env_package']
+
+    if override_file and override_biosample_column and override_env_package_column:
+        # Load the override TSV file into a DataFrame
+        df_override = pd.read_csv(override_file, sep='\t')
+        df_override = df_override[[override_biosample_column, override_env_package_column]]
+        df_override.columns = ['override_biosample_id', 'override_env_package']
+
+        # Merge the 'df' DataFrame with 'df_override' on the matching 'id' and 'override_biosample_id'
+        df = pd.merge(df, df_override, how='left', left_on='id', right_on='override_biosample_id')
+
+        # Replace values in 'env_package_with_curation' where 'override_env_package' is not null
+        df['curated_env_package'] = df['override_env_package'].combine_first(df['curated_env_package'])
+
+        # Drop the columns from the merge that are no longer needed
+        df.drop(columns=['override_biosample_id', 'override_env_package'], inplace=True)
+
+    df.to_csv(output_file, sep='\t', index=False)
+
+    # print a value count for the curated_env_package column
+    print("Value counts for curated_env_package column:")
+    print(df['curated_env_package'].value_counts(dropna=False))
+
     # Initialize the ontology adapter
     adapter = get_adapter(oak_adapter_string)
-
-    # Apply the function to the relevant columns
-    df['env_broad_scale_authoritative_label'] = df['env_broad_scale_id'].apply(lambda x: get_ontology_label(x, adapter))
-    df['env_local_scale_authoritative_label'] = df['env_local_scale_id'].apply(lambda x: get_ontology_label(x, adapter))
-    df['env_medium_authoritative_label'] = df['env_medium_id'].apply(lambda x: get_ontology_label(x, adapter))
 
     # Apply the function to the relevant columns
     for column in ['env_broad_scale_id', 'env_local_scale_id', 'env_medium_id']:
         df[f'{column}_ancestors'] = df[column].apply(lambda x: get_hierarchy_terms(x, adapter)['ancestors'])
         df[f'{column}_descendants'] = df[column].apply(lambda x: get_hierarchy_terms(x, adapter)['descendants'])
-
-    # # Save the updated DataFrame back to a new TSV file
-    # df.to_csv(output_file, sep='\t', index=False)
-
-    print(f"Authoritative labels merged and saved to {output_file}")
-
-    # Print out the unique value counts for 'env_package_has_raw_value'
-    unique_values_counts = df['normalized_env_package'].value_counts(dropna=False)
-    print("\nUnique value counts for 'normalized_env_package':")
-    print(unique_values_counts)
 
     # Vectorize each set of terms separately
     broad_scale_ancestors = vectorize_terms(df, 'env_broad_scale_id_ancestors')
@@ -181,17 +200,11 @@ def merge_authoritative_labels(input_file: str, output_file: str, oak_adapter_st
         medium_descendants
     ])
 
-    # print(type(X)) # <class 'scipy.sparse._csr.csr_matrix'
-
-    # np.savetxt("vectorized_matrix.txt", X.toarray(), fmt="%d")
-
-    # Assuming your DataFrame is already loaded into df and X is your feature matrix
-
     # Filter the DataFrame to only include non-null rows for the target column
-    df_filtered = df[df['normalized_env_package'].notnull()]
+    df_filtered = df[df['curated_env_package'].notnull()]
 
     # Extract the target variable
-    y = df_filtered['normalized_env_package']
+    y = df_filtered['curated_env_package']
 
     # Ensure X corresponds to the filtered rows
     X_filtered = X[df_filtered.index]
@@ -209,14 +222,8 @@ def merge_authoritative_labels(input_file: str, output_file: str, oak_adapter_st
     # Evaluate the model
     print(classification_report(y_test, y_pred))
 
-    # # Optionally, save the trained model for later use
-    # import joblib
-    # joblib.dump(clf, 'random_forest_model.pkl')
-
-    # Assuming clf is your trained RandomForestClassifier and df is your DataFrame
-
-    # Predict the normalized_env_package for all rows
-    df['predicted_normalized_env_package'] = clf.predict(X)
+    # Predict the curated_env_package for all rows
+    df['predicted_curated_env_package'] = clf.predict(X)
 
     # If you want to add confidence scores for each class
     class_probabilities = clf.predict_proba(X)
@@ -228,46 +235,28 @@ def merge_authoritative_labels(input_file: str, output_file: str, oak_adapter_st
     for i, class_label in enumerate(class_labels):
         df[f'confidence_{class_label}'] = class_probabilities[:, i]
 
-    # Exclude the feature columns from the final output
-    # Assuming the feature columns were derived from specific columns like 'env_broad_scale_id', 'env_local_scale_id', etc.
-    columns_to_exclude = ['env_broad_scale_id_ancestors', 'env_broad_scale_id_descendants',
-                          'env_local_scale_id_ancestors', 'env_local_scale_id_descendants',
-                          'env_medium_id_ancestors', 'env_medium_id_descendants']
-    df_final = df.drop(columns=columns_to_exclude)
-
-    # # Optionally, save the updated DataFrame to a new TSV file
-    # df_final.to_csv('updated_dataframe_with_predictions.tsv', sep='\t', index=False)
-
     # Save the updated DataFrame back to a new TSV file
-    df_final.to_csv(output_file, sep='\t', index=False)
+    df.to_csv(output_file, sep='\t', index=False)
 
-    print("Predicted normalized_env_package and confidence scores added to the DataFrame, excluding feature columns.")
+    # Load the study metadata from the JSON file
+    if studies_json:
+        with open(studies_json, 'r') as f:
+            study_metadata = json.load(f)
 
-    # # Assuming df_final is your final DataFrame after predictions
-    # heterogeneity_report = generate_heterogeneity_report(df_final, study_column='part_of',
-    #                                                      prediction_column='predicted_normalized_env_package')
-    #
-    # # Optionally, save the report to a CSV file
-    # heterogeneity_report.to_csv('heterogeneity_report.csv', index=False)
-    #
-    # # Print the report to the console
-    # if heterogeneity_report.empty:
-    #     print("All studies are homogeneous for predicted_normalized_env_package.")
-    # else:
-    #     print("Heterogeneous studies found:")
-    #     print(heterogeneity_report)
+        # Create a dictionary for quick lookup
+        study_metadata_dict = {study['id']: study for study in study_metadata}
+    else:
+        study_metadata_dict = None
 
-    # Assuming df_final is your final DataFrame after predictions
-    heterogeneity_report = generate_percentage_heterogeneity_report(df_final, study_column='part_of',
-                                                                    prediction_column='predicted_normalized_env_package')
+    # Generate the heterogeneity report with the study metadata included
+    heterogeneity_report = generate_percentage_heterogeneity_report(
+        df, study_column='part_of',
+        prediction_column='predicted_curated_env_package',
+        study_metadata=study_metadata_dict
+    )
 
-    # Optionally, save the report to a CSV file
-    heterogeneity_report.to_csv('heterogeneity_percentage_report.csv')
-
-    # Print the report to the console
-    print("Heterogeneity report with percentage of predictions by study:")
-    print(heterogeneity_report)
+    heterogeneity_report.to_csv(heterogeneity_file, sep='\t')
 
 
 if __name__ == '__main__':
-    merge_authoritative_labels()
+    predict_env_package()
