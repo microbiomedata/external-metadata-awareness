@@ -24,3 +24,19 @@ _from `Makefiles/soil-env_local_scale.Makefile`_
   might be traced back to the submitter trying to drag a legitimate EnvO CURIe down a column in a spreadsheet, but
   incrementing the value on each row without noticing it.
 - Rows where the label starts with 'obsolete...' should probably be excluded from prospective value sets
+- The normalization of ontology class CURIes is currently limited to curies with the prefix 'ENVO' and the CURIe
+  annotation from labels is currently limited to any class in EnvO
+- See files like `local/ncbi-mims-soil-biosamples-env_broad_scale-failures.csv` for a record of NCBI Biosample
+  annotations that look as if an EnvO CURIe could be parsed out, with some additional development effort. Some of these
+  will be recovered thorough label annotation
+- `jaccard_distance`s in files like `local/ncbi-mims-soil-biosamples-env_broad_scale-real-labels.csv` may be erroneous (
+  see issue ???)
+- There's probably potential for templating some of the Makefile targets
+
+## `local/soil-env-broad-scale-evidence-table.tsv`
+
+_from `Makefiles/soil-env_broad_scale.Makefile`_
+
+- all of the notes above should still apply, **except** that the `is_biome` column should ideally be set to 'True' for a
+  prospective value set
+- ENVO:00000428, 'biome' would itself not be a useful in the value set
