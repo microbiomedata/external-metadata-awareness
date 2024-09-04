@@ -58,7 +58,7 @@ local/soil-env-local-scale-evidence-distribution.png: local/soil-env-local-scale
 	python -c "import sys; import pandas as pd; import matplotlib.pyplot as plt; df = pd.read_csv(sys.argv[1], sep='\t'); df[sys.argv[2]].hist(bins=20); plt.yscale('log'); plt.xlabel(sys.argv[2]); plt.ylabel('Frequency'); plt.title(f'Distribution of {sys.argv[2]} on Log Scale'); plt.savefig(sys.argv[3])" $< all_evidence $@
 
 
-.PHONE: aggressive-cleanup
+.PHONY: aggressive-soil-env-local-scale-cleanup
 aggressive-soil-env-local-scale-cleanup:
 	# building local/envo_goldterms.db takes < 1 minute # may want to include other sem sql files too
 	# building local/ncbi_biosamples.duckdb and compressing local/ncbi_biosamples.duckdb.gz takes "a while"
