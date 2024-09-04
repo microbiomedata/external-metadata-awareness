@@ -40,3 +40,6 @@ _from `Makefiles/soil-env_broad_scale.Makefile`_
 - all of the notes above should still apply, **except** that the `is_biome` column should ideally be set to 'True' for a
   prospective value set
 - ENVO:00000428, 'biome' would itself not be a useful in the value set
+
+## `local/soil-env-medium-evidence-table.tsv`
+- as above, except that `is_environmental_material` column should ideally be set to 'True'

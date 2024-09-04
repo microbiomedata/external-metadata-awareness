@@ -18,6 +18,9 @@ local/EnvBroadScaleSoilEnum-pvs-keys.txt: downloads/nmdc_submission_schema.yaml
 local/EnvLocalScaleSoilEnum-pvs-keys.txt: downloads/nmdc_submission_schema.yaml
 	yq eval '.enums.EnvLocalScaleSoilEnum.permissible_values | keys | .[]' $< | cat > $@
 
+local/EnvMediumSoilEnum-pvs-keys.txt: downloads/nmdc_submission_schema.yaml
+	yq eval '.enums.EnvMediumSoilEnum.permissible_values | keys | .[]' $< | cat > $@
+
 local/EnvBroadScaleSoilEnum-pvs-keys-parsed.csv: local/EnvBroadScaleSoilEnum-pvs-keys.txt
 	$(RUN) normalize-envo-data \
 		--input-file $< \
@@ -29,6 +32,12 @@ local/EnvLocalScaleSoilEnum-pvs-keys-parsed.csv: local/EnvLocalScaleSoilEnum-pvs
 		--input-file $< \
 		--ontology-prefix ENVO \
 		--output-file $@
+
+#local/EnvMediumSoilEnum-pvs-keys-parsed.csv: local/EnvLocalScaleSoilEnum-pvs-keys.txt
+#	$(RUN) normalize-envo-data \
+#		--input-file $< \
+#		--ontology-prefix ENVO \
+#		--output-file $@
 
 local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv: local/EnvBroadScaleSoilEnum-pvs-keys-parsed.csv
 	cut -f3,4 -d, $< | head -n 1 > $<.header.csv
@@ -46,9 +55,6 @@ local/EnvBroadScaleSoilEnum.png: local/EnvBroadScaleSoilEnum-pvs-keys-parsed-uni
 	cat $< | tail -n +2  | cut -f1 -d, > $@.ids.txt
 	$(RUN) runoak --input sqlite:obo:envo viz --no-view --output $@ --gap-fill [ .idfile $@.ids.txt ] .or biome
 	rm -rf $@.ids.txt
-
-local/EnvMediumSoilEnum-pvs-keys.txt: downloads/nmdc_submission_schema.yaml
-	yq eval '.enums.EnvMediumSoilEnum.permissible_values | keys | .[]' $< | cat > $@
 
 local/EnvMediumSoilEnum-pvs-keys-parsed.csv: local/EnvMediumSoilEnum-pvs-keys.txt
 	$(RUN) normalize-envo-data \
