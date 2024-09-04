@@ -9,7 +9,7 @@ include Makefiles/ncbi_metadata.Makefile
 include Makefiles/ncbi_schema.Makefile
 include Makefiles/nmdc_metadata.Makefile
 include Makefiles/nmdc_schema.Makefile
-include Makefiles/non-host-env_local_scale.Makefile
+include Makefiles/soil-env_local_scale.Makefile
 include Makefiles/soil-env_medium.Makefile
 
 # suggested LLM models: gpt-4, gpt-4o, gpt-4-turbo (?), claude-3-opus, claude-3.5-sonnet, gemini-1.5-pro-latest
@@ -22,11 +22,11 @@ local/microbiomedata-repos.csv:
 	. ./report-microbiomedata-repos.sh > $@
 
 local/envo_goldterms.db:
-	$(RUN) runoak --input sqlite:obo:envo ontology-metadata --all > /dev/null # ensure semsql fiel is cached
-	$(RUN) runoak --input sqlite:obo:goldterms ontology-metadata --all > /dev/null # ensure semsql fiel is cached
+	$(RUN) runoak --input sqlite:obo:envo ontology-metadata --all > /dev/null # ensure semsql file is cached
+	$(RUN) runoak --input sqlite:obo:goldterms ontology-metadata --all > /dev/null # ensure semsql file is cached
 	cp ~/.data/oaklib/envo.db local/
 	poetry run python external_metadata_awareness/sem_sql_combine.py \
-		--primary-db local/envo_goldterms.db \
+		--primary-db local/envo.db \
 		--secondary-db ~/.data/oaklib/goldterms.db
 	mv local/envo.db $@
 

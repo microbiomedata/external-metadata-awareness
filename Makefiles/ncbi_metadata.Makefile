@@ -46,6 +46,7 @@ load-biosamples-into-mongo: local/biosample_set.xml
 #		--output $@
 
 local/biosample-count-mongodb.txt:
+	# depends on MongoDB having a ncbi_metadata database with a samples collection, running locally, with no access control
 	date && mongosh --eval 'db.getSiblingDB("ncbi_metadata").samples.countDocuments()' > $@ && date # 1 minute
 
 local/ncbi-biosamples-packages-counts.tsv: sql/packages-counts.sql

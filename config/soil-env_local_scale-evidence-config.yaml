@@ -2,8 +2,12 @@
   output_prefix: non_host_oak_queries
   header: false
   data_column_number: 1
-- filename: local/nmdc-production-biosamples-env_local_scale.tsv
-  output_prefix: NMDC_all
+- filename: local/EnvLocalScaleSoilEnum-pvs-keys-parsed-unique.csv
+  output_prefix: historical_permissible_values
+  header: true
+  data_column_name: normalized_curie
+- filename: local/nmdc-production-biosamples-soil-env_local_scale.tsv
+  output_prefix: NMDC_soil
   header: false
   data_column_number: 1
   count_column_number: 2
@@ -22,4 +26,3 @@
   header: false
   data_column_number: 1
   count_column_number: 2
-
