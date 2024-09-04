@@ -15,13 +15,28 @@ local/nmdc-submission-schema-enums-keys.txt: downloads/nmdc_submission_schema.ya
 local/EnvBroadScaleSoilEnum-pvs-keys.txt: downloads/nmdc_submission_schema.yaml
 	yq eval '.enums.EnvBroadScaleSoilEnum.permissible_values | keys | .[]' $< | cat > $@
 
+local/EnvLocalScaleSoilEnum-pvs-keys.txt: downloads/nmdc_submission_schema.yaml
+	yq eval '.enums.EnvLocalScaleSoilEnum.permissible_values | keys | .[]' $< | cat > $@
+
 local/EnvBroadScaleSoilEnum-pvs-keys-parsed.csv: local/EnvBroadScaleSoilEnum-pvs-keys.txt
 	$(RUN) normalize-envo-data \
 		--input-file $< \
 		--ontology-prefix ENVO \
 		--output-file $@
 
+local/EnvLocalScaleSoilEnum-pvs-keys-parsed.csv: local/EnvLocalScaleSoilEnum-pvs-keys.txt
+	$(RUN) normalize-envo-data \
+		--input-file $< \
+		--ontology-prefix ENVO \
+		--output-file $@
+
 local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv: local/EnvBroadScaleSoilEnum-pvs-keys-parsed.csv
+	cut -f3,4 -d, $< | head -n 1 > $<.header.csv
+	tail -n +2 $< | cut -f3,4 -d, | sort | uniq > $@.tmp
+	cat $<.header.csv $@.tmp > $@
+	rm -rf $<.header.csv $@.tmp
+
+local/EnvLocalScaleSoilEnum-pvs-keys-parsed-unique.csv: local/EnvLocalScaleSoilEnum-pvs-keys-parsed.csv
 	cut -f3,4 -d, $< | head -n 1 > $<.header.csv
 	tail -n +2 $< | cut -f3,4 -d, | sort | uniq > $@.tmp
 	cat $<.header.csv $@.tmp > $@
