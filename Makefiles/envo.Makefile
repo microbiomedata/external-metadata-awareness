@@ -89,3 +89,11 @@ local/biome-relationships.csv
 
 local/unused-terrestrial-biomes-response.txt: local/unused-terrestrial-biomes-prompt.txt
 	cat $(word 1,$^) | $(RUN) llm prompt --model claude-3.5-sonnet -o temperature 0.01 | tee $@
+
+.PHONY: unused-terrestrial-biomes-response
+unused-terrestrial-biomes-response-aggressive-clean:
+	rm -rf local/EnvBroadScaleSoilEnum*
+	rm -rf local/biome-relationships*
+	rm -rf local/soil-env_broad_scale-algebraic*
+	rm -rf local/unused-terrestrial-biomes*
+
