@@ -46,6 +46,7 @@ load-biosamples-into-mongo: local/biosample_set.xml
 #		--output $@
 
 local/biosample-count-mongodb.txt:
+	# depends on MongoDB having a ncbi_metadata database with a samples collection, running locally, with no access control
 	date && mongosh --eval 'db.getSiblingDB("ncbi_metadata").samples.countDocuments()' > $@ && date # 1 minute
 
 local/ncbi-biosamples-packages-counts.tsv: sql/packages-counts.sql
@@ -99,6 +100,12 @@ NCBI_BIOSAMPLES_DUCKDB_PATH = local/ncbi_biosamples.duckdb
 local/ncbi-mims-soil-biosamples-env_local_scale.csv:
 	echo ".mode csv\nSELECT content, COUNT(1) AS sample_count FROM attributes WHERE harmonized_name = 'env_local_scale' AND package_content = 'MIMS.me.soil.6.0' GROUP BY content ORDER BY COUNT(1) DESC;" | duckdb $(NCBI_BIOSAMPLES_DUCKDB_PATH) > $@
 
+local/ncbi-mims-soil-biosamples-env_broad_scale.csv:
+	echo ".mode csv\nSELECT content, COUNT(1) AS sample_count FROM attributes WHERE harmonized_name = 'env_broad_scale' AND package_content = 'MIMS.me.soil.6.0' GROUP BY content ORDER BY COUNT(1) DESC;" | duckdb $(NCBI_BIOSAMPLES_DUCKDB_PATH) > $@
+
+local/ncbi-mims-soil-biosamples-env_medium.csv:
+	echo ".mode csv\nSELECT content, COUNT(1) AS sample_count FROM attributes WHERE harmonized_name = 'env_medium' AND package_content = 'MIMS.me.soil.6.0' GROUP BY content ORDER BY COUNT(1) DESC;" | duckdb $(NCBI_BIOSAMPLES_DUCKDB_PATH) > $@
+
 local/ncbi-mims-soil-biosamples-env_local_scale-normalized.csv: local/ncbi-mims-soil-biosamples-env_local_scale.csv
 	$(RUN) normalize-envo-data \
 		--count-col-name sample_count \
@@ -107,7 +114,33 @@ local/ncbi-mims-soil-biosamples-env_local_scale-normalized.csv: local/ncbi-mims-
 		--output-file $@ \
 		--val-col-name content
 
+local/ncbi-mims-soil-biosamples-env_broad_scale-normalized.csv: local/ncbi-mims-soil-biosamples-env_broad_scale.csv
+	$(RUN) normalize-envo-data \
+		--count-col-name sample_count \
+		--input-file $< \
+		--ontology-prefix ENVO \
+		--output-file $@ \
+		--val-col-name content
+
+local/ncbi-mims-soil-biosamples-env_medium-normalized.csv: local/ncbi-mims-soil-biosamples-env_medium.csv
+	$(RUN) normalize-envo-data \
+		--count-col-name sample_count \
+		--input-file $< \
+		--ontology-prefix ENVO \
+		--output-file $@ \
+		--val-col-name content
+
 local/ncbi-mims-soil-biosamples-env_local_scale-failures.csv: local/ncbi-mims-soil-biosamples-env_local_scale-normalized.csv
+	$(RUN) find-envo-present-no-curie-extracted \
+		--input-file $< \
+		--output-file $@
+
+local/ncbi-mims-soil-biosamples-env_broad_scale-failures.csv: local/ncbi-mims-soil-biosamples-env_broad_scale-normalized.csv
+	$(RUN) find-envo-present-no-curie-extracted \
+		--input-file $< \
+		--output-file $@
+
+local/ncbi-mims-soil-biosamples-env_medium-failures.csv: local/ncbi-mims-soil-biosamples-env_medium-normalized.csv
 	$(RUN) find-envo-present-no-curie-extracted \
 		--input-file $< \
 		--output-file $@
@@ -122,7 +155,45 @@ local/ncbi-mims-soil-biosamples-env_local_scale-real-labels.csv: local/ncbi-mims
 		--addition-rename real_label \
 		--merged-file $@
 
+local/ncbi-mims-soil-biosamples-env_broad_scale-real-labels.csv: local/ncbi-mims-soil-biosamples-env_broad_scale-normalized.csv local/envo-info.csv
+	$(RUN) merge-in-reference-data \
+		--keep-file $(word 1,$^) \
+		--keep-key normalized_curie \
+		--reference-file $(word 2,$^) \
+		--reference-key normalized_curie \
+		--reference-addition normalized_label \
+		--addition-rename real_label \
+		--merged-file $@
+
+local/ncbi-mims-soil-biosamples-env_medium-real-labels.csv: local/ncbi-mims-soil-biosamples-env_medium-normalized.csv local/envo-info.csv
+	$(RUN) merge-in-reference-data \
+		--keep-file $(word 1,$^) \
+		--keep-key normalized_curie \
+		--reference-file $(word 2,$^) \
+		--reference-key normalized_curie \
+		--reference-addition normalized_label \
+		--addition-rename real_label \
+		--merged-file $@
+
 local/ncbi-mims-soil-biosamples-env_local_scale-annotated.tsv: local/ncbi-mims-soil-biosamples-env_local_scale-real-labels.csv
+	date ; $(RUN) runoak \
+		--input sqlite:obo:envo annotate \
+		--matches-whole-text \
+		--output-type tsv \
+		--output $@ \
+		--text-file $< \
+		--match-column normalized_label ; date
+
+local/ncbi-mims-soil-biosamples-env_broad_scale-annotated.tsv: local/ncbi-mims-soil-biosamples-env_broad_scale-real-labels.csv
+	date ; $(RUN) runoak \
+		--input sqlite:obo:envo annotate \
+		--matches-whole-text \
+		--output-type tsv \
+		--output $@ \
+		--text-file $< \
+		--match-column normalized_label ; date
+
+local/ncbi-mims-soil-biosamples-env_medium-annotated.tsv: local/ncbi-mims-soil-biosamples-env_medium-real-labels.csv
 	date ; $(RUN) runoak \
 		--input sqlite:obo:envo annotate \
 		--matches-whole-text \
