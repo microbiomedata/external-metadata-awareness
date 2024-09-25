@@ -11,7 +11,7 @@ local/mixs-slots-enums.json: downloads/mixs.yaml
 	yq eval '{"slots": .slots, "enums": .enums}' -o=json $< | cat > $@
 
 local/mixs-slots-enums-no-MixsCompliantData-domain.json: local/mixs-slots-enums.json
-	yq e '.slots |= (del(.[] | select(.domain == "MixsCompliantData"))) | del(.[].keywords)' $< > $@
+	yq e '.slots |= (del(.[] | select(.domain == "MixsCompliantData"))) | del(.[].keywords)' $< | cat > $@
 
 local/mixs-slots-sex-gender-analysis-prompt.txt: prompt-templates/mixs-slots-sex-gender-analysis-prompt.yaml \
 local/mixs-slots-enums-no-MixsCompliantData-domain.json

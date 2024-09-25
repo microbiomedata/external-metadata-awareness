@@ -151,14 +151,14 @@ def pivot_table(db_path: str, output_table: str, max_id: Optional[int], batch_si
         """
         batch_df = con.execute(query).fetchdf()
 
-        # Check for multiple content values and log if needed
-        with open(log_file, 'a') as log:
-            multiple_content_df = batch_df[batch_df['combined_content'].str.contains(delimiter)]
-            if not multiple_content_df.empty:
-                log.write(
-                    f"{timestamp()} - Max ID: {max_id} - Multiple content values found for the following id and harmonized_name combinations:\n")
-                log.write(multiple_content_df.to_string(index=False))
-                log.write('\n\n')
+        # # Check for multiple content values and log if needed
+        # with open(log_file, 'a') as log:
+        #     multiple_content_df = batch_df[batch_df['combined_content'].str.contains(delimiter)]
+        #     if not multiple_content_df.empty:
+        #         log.write(
+        #             f"{timestamp()} - Max ID: {max_id} - Multiple content values found for the following id and harmonized_name combinations:\n")
+        #         log.write(multiple_content_df.to_string(index=False))
+        #         log.write('\n\n')
 
         # Create a pivot table for the current batch
         pivot_df = batch_df.pivot(index='id', columns='harmonized_name', values='combined_content').reset_index()

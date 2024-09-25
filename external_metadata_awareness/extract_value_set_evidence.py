@@ -43,6 +43,9 @@ def add_ontology_based_columns(df: pd.DataFrame, my_adapter,
         subclasses = set(my_adapter.descendants(class_curie, predicates=[IS_A]))
         # Add the boolean column to indicate subclass relationship
         df[column_name] = df['unique_id'].apply(lambda curie: curie in subclasses)
+    obsolete_classes_in_envo = list(my_adapter.obsoletes())
+    # print(obsolete_classes_in_envo)
+    df['obsolete'] = df['unique_id'].apply(lambda curie: curie in obsolete_classes_in_envo)
     return df
 
 
@@ -201,6 +204,8 @@ def extract_columns(config: str, output_file: str, downsample_uncounted: bool) -
         'BFO:0000019': 'is_quality',  # Quality
         'CHEBI:24431': 'is_chemical_entity',  # Chemical entity
         'ENVO:00000428': 'is_biome',  # Biome
+        'ENVO:00002030': 'is_aquatic_biome',  # Biome
+        'ENVO:00000446': 'is_terrestrial_biome',  # Biome
         'ENVO:00010483': 'is_environmental_material',  # Environmental material
     }
 
@@ -216,7 +221,10 @@ def extract_columns(config: str, output_file: str, downsample_uncounted: bool) -
     columns.insert(4, columns.pop(columns.index('is_quality')))
     columns.insert(5, columns.pop(columns.index('is_chemical_entity')))
     columns.insert(6, columns.pop(columns.index('is_biome')))
-    columns.insert(7, columns.pop(columns.index('is_environmental_material')))
+    columns.insert(7, columns.pop(columns.index('is_aquatic_biome')))
+    columns.insert(8, columns.pop(columns.index('is_terrestrial_biome')))
+    columns.insert(9, columns.pop(columns.index('is_environmental_material')))
+    columns.insert(10, columns.pop(columns.index('obsolete')))
     final_df_with_labels = final_df_with_labels[columns]
 
     # Save the final DataFrame to the specified output file

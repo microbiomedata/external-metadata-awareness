@@ -77,23 +77,42 @@ ncbi-biosamples-duckdb-attributes:
 		--table-name attributes \
 		--path BioSample.Attributes.Attribute
 
+# don't forget rows with no links
+# also want to see time/date stamp
+# 		--start-offset 20000000
+
 ncbi-biosamples-duckdb-links:
-	$(RUN) python external_metadata_awareness/first_n_attributes_duckdb.py \
+	$(RUN) python ../external_metadata_awareness/first_n_attributes_duckdb.py \
 		--connection-string "mongodb://localhost:27017/" \
 		--db-name ncbi_metadata \
 		--collection-name samples \
 		--limit 41000000 \
 		--batch-size 100000 \
-		--duckdb-file local/ncbi_biosamples.duckdb \
+		--duckdb-file ../local/ncbi_biosamples.duckdb \
 		--table-name links \
 		--path BioSample.Links.Link
 
-  ## @click.option('--path', default="BioSample.Links.Link", required=True,
-  ##               help="Path within the document to process (e.g., 'BioSample.Attributes.Attribute').")
-  ## @click.option('--path', default="BioSample.Ids.Id", required=True,
-  ##               help="Path within the document to process (e.g., 'BioSample.Attributes.Attribute').")
-  ## @click.option('--path', default="BioSample.Description.Organism", required=True,
-  ##               help="Path within the document to process (e.g., 'BioSample.Attributes.Attribute').")
+ncbi-biosamples-duckdb-ids:
+	$(RUN) python ../external_metadata_awareness/first_n_attributes_duckdb.py \
+		--connection-string "mongodb://localhost:27017/" \
+		--db-name ncbi_metadata \
+		--collection-name samples \
+		--limit 41000000 \
+		--batch-size 100000 \
+		--duckdb-file ../local/ncbi_biosamples.duckdb \
+		--table-name ids \
+		--path BioSample.Ids.Id
+
+ncbi-biosamples-duckdb-organism:
+	$(RUN) python ../external_metadata_awareness/first_n_attributes_duckdb.py \
+		--connection-string "mongodb://localhost:27017/" \
+		--db-name ncbi_metadata \
+		--collection-name samples \
+		--limit 41000000 \
+		--batch-size 100000 \
+		--duckdb-file ../local/ncbi_biosamples.duckdb \
+		--table-name organism \
+		--path BioSample.Description.Organism
 
 NCBI_BIOSAMPLES_DUCKDB_PATH = local/ncbi_biosamples.duckdb
 
