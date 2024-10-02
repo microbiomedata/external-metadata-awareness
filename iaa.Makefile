@@ -1,6 +1,6 @@
 RUN=poetry run
 
-soil-ebs-with-iaa.csv: Consolidated_soil-env-broad-scale-evidence-table.xlsx-soil-env-broad-scale-evidence.csv
+env-triad-voting-data/with-iaa/soil-ebs-with-iaa.csv: env-triad-voting-data/raw-curated/Consolidated_soil-env-broad-scale-evidence-table.xlsx-soil-env-broad-scale-evidence.csv
 	poetry run python iaa.py  \
 		--input-file $< \
 		--vote-columns CJM_Vote \
@@ -10,7 +10,7 @@ soil-ebs-with-iaa.csv: Consolidated_soil-env-broad-scale-evidence-table.xlsx-soi
 		--vote-columns SM_vote \
 		--output-file $@
 
-soil-em-with-iaa.csv: Consolidated_soil-env-medium-evidence-table.xlsx-soil-env-medium-evidence.csv
+env-triad-voting-data/with-iaa/soil-els-with-iaa.csv: triad-voting-data/raw-curated/Consolidated_soil-env-local-scale-evidence-table.xlsx-soil-env-local-scale-evidence.csv
 	poetry run python iaa.py  \
 		--input-file $< \
 		--vote-columns CJM_Vote \
@@ -20,8 +20,7 @@ soil-em-with-iaa.csv: Consolidated_soil-env-medium-evidence-table.xlsx-soil-env-
 		--vote-columns SM_vote \
 		--output-file $@
 
-
-soil-els-with-iaa.csv: Consolidated_soil-env-local-scale-evidence-table.xlsx-soil-env-local-scale-evidence.csv
+env-triad-voting-data/with-iaa/soil-em-with-iaa.csv: triad-voting-data/raw-curated/Consolidated_soil-env-medium-evidence-table.xlsx-soil-env-medium-evidence.csv
 	poetry run python iaa.py  \
 		--input-file $< \
 		--vote-columns CJM_Vote \
@@ -30,5 +29,4 @@ soil-els-with-iaa.csv: Consolidated_soil-env-local-scale-evidence-table.xlsx-soi
 		--vote-columns NMW_vote \
 		--vote-columns SM_vote \
 		--output-file $@
-
 
