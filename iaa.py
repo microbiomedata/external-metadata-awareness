@@ -47,65 +47,6 @@ def main(input_file: str, output_file: str, vote_columns: List[str], debug_toolb
     # Step 2: Save the `for_plotting` DataFrame to a CSV file
     df.to_csv(f"{output_file}", index=False)
     print(f"Updated CSV file with IAA scores has been created: {output_file}")
-    #
-    # # Step 3: Create and launch the Dash dashboard with dynamic layout
-    # app = Dash(__name__)
-    #
-    # app.layout = html.Div(
-    #     style={"display": "flex", "flexDirection": "column", "height": "100vh"},  # Flex container for full height
-    #     children=[
-    #         dcc.Graph(id='scatter-plot', config={'displayModeBar': True}, style={"flex": "1", "width": "100%"}),
-    #         # Plot takes up space
-    #         dash_table.DataTable(
-    #             id='data-table',
-    #             columns=[{"name": i, "id": i} for i in for_plotting.columns],
-    #             data=for_plotting.to_dict('records'),
-    #             style_table={
-    #                 'overflowY': 'auto',  # Allow vertical scrolling for the table
-    #                 'overflowX': 'auto',  # Allow horizontal scrolling
-    #                 'maxWidth': '100%',  # Ensure table takes full width
-    #                 'flex': '1',  # Table takes remaining vertical space
-    #                 'display': 'block',  # Ensure scrollbars are visible
-    #             },
-    #             sort_action='native',  # Enables sorting
-    #             fixed_columns={'headers': True, 'data': 2},  # Freeze the first two columns
-    #             style_cell={
-    #                 'minWidth': '150px',  # Set a minimum width for columns
-    #                 'width': '150px',  # Set a default width for columns
-    #                 'maxWidth': '200px',  # Ensure columns don't become too wide
-    #                 'whiteSpace': 'normal'  # Allow text to wrap within the cells
-    #             },
-    #         ),
-    #     ]
-    # )
-    #
-    # @app.callback(
-    #     Output('scatter-plot', 'figure'),
-    #     Input('scatter-plot', 'selectedData')
-    # )
-    # def update_plot(selectedData):
-    #     # Plot vote_sum on x-axis and IAA_score on y-axis with larger and color-coded dots
-    #     fig = px.scatter(grouped, x='vote_sum', y='IAA_score', size='count', color='count',
-    #                      hover_data=['count'], size_max=30, color_continuous_scale='Viridis')
-    #     return fig
-    #
-    # @app.callback(
-    #     Output('data-table', 'data'),
-    #     Input('scatter-plot', 'selectedData')
-    # )
-    # def filter_table_on_selection(selectedData):
-    #     if selectedData is None or not selectedData['points']:
-    #         return for_plotting.to_dict('records')  # Show all rows if no points are selected
-    #
-    #     # Extract selected points and filter the DataFrame based on those points
-    #     selected_points = [(point['x'], point['y']) for point in selectedData['points']]
-    #     filtered_data = for_plotting[
-    #         for_plotting.apply(lambda row: (row['vote_sum'], row['IAA_score']) in selected_points, axis=1)
-    #     ]
-    #     return filtered_data.to_dict('records')
-    #
-    # # Run the Dash app, pass `debug_toolbar` to control the toolbar visibility
-    # app.run_server(debug=debug_toolbar)
 
 
 if __name__ == '__main__':
