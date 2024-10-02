@@ -1,0 +1,735 @@
+unique_id,label,all_evidence,is_process,is_quality,is_chemical_entity,is_biome,is_environmental_material,historical_permissible_values_count,NMDC_soil_count,NCBI_mims_soil_trusting_CURIe_count,NCBI_mims_soil_trusting_labels_count,GOLD_env_terr_soil_count,historical_permissible_values_frequency,NMDC_soil_frequency,NCBI_mims_soil_trusting_CURIe_frequency,NCBI_mims_soil_trusting_labels_frequency,GOLD_env_terr_soil_frequency,CJM_Vote,CJM_Comments,MAM vote,MAM comments,MLS_vote,MLS_comments,NMW_vote,NMW_comment,SM_vote,SM_comment,Yes = 1 No = -1 Maybe = 0,CJM_Vote_safe_int,MAM vote_safe_int,MLS_vote_safe_int,NMW_vote_safe_int,SM_vote_safe_int,IAA_score,vote_sum
+ENVO:00010483,environmental material,0.01377797463,False,False,False,False,True,0,0,502,61,0,0.0,0.0,0.05397269111,0.00113920741,0.0,,,-1,too general,-1,,,,-1,too broad,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:03000133,agricultural potting mixture,0.01289566237,False,False,False,False,True,0,0,0,0,44,0.0,0.0,0.0,0.0,0.05158264947,,,-1,too specific,-1,,,,-1,too specific,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00003869,straw,0.003868979363,False,False,False,False,True,0,0,96,276,0,0.0,0.0,0.01032147081,0.005154446644,0.0,,,-1,not soil,-1,not a soil,,,-1,is this considered soil?,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00001995,rock,0.001213299132,False,False,False,False,True,0,0,17,162,0,0.0,0.0,0.001827760456,0.003025436074,0.0,,,-1,not soil,-1,rock is not soil,,,-1, not soil?,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00002040,wood,0.001014064685,False,False,False,False,True,0,0,28,56,0,0.0,0.0,0.003010428986,0.001045829754,0.0,,,-1,not soil,-1,not soil,,,-1,not soil,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:01000301,estuarine water,0.0009863134197,False,False,False,False,True,0,0,36,4,0,0.0,0.0,0.003870551554,7.47e-05,0.0,,,-1,water,-1,water,,,-1,not soil,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00005758,alluvial swamp soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,-1,too specific,-1,too specific,,,-1,"too specific, keep alluvial soil",-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00005759,alluvial paddy field soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,-1,too specific,-1,too specific,,,-1,"too specific, keep alluvial soil",-3,0,-1,-1,0,-1,0.4,-3
+ENVO:06105276,sandy clay loam,0.0007804293993,False,False,False,False,True,1,0,0,0,0,0.003121717597,0.0,0.0,0.0,0.0,,,-1,too specific,-1,this is soil texture,,,-1,too specific yet undefined,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:06105278,silty clay loam,0.0007804293993,False,False,False,False,True,1,0,0,0,0,0.003121717597,0.0,0.0,0.0,0.0,,,-1,too specific,-1,this is soil texture,,,-1,too specific yet undefined,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:01000349,root matter,0.0007794860768,False,False,False,False,True,0,0,29,0,0,0.0,0.0,0.003117944307,0.0,0.0,,,-1,not soil,-1,not soil,,,-1,seems too broad?,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00005797,lake bottom mud,0.0006578330915,False,False,False,False,True,0,0,21,20,0,0.0,0.0,0.00225782174,0.0003735106264,0.0,,,-1,water,-1,sediment?,,,-1,do we have lake bottom sediment? do we have lake bottom clay? seems like lake bottom should be covered in broad,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00002179,intertidal sediment,0.0005375766047,False,False,False,False,True,0,0,20,0,0,0.0,0.0,0.002150306419,0.0,0.0,,,-1,not soil,-1,sediment,,,-1,"should be in ""sediment"" package instead?",-3,0,-1,-1,0,-1,0.4,-3
+ENVO:03000033,marine sediment,0.0001624074481,False,False,False,False,True,0,0,5,6,0,0.0,0.0,0.0005375766047,0.0001120531879,0.0,,,-1,water,-1,sediment,,,-1,should be in sediment package,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00002005,air,7e-05,False,False,False,False,True,0,0,0,15,0,0.0,0.0,0.0,0.0002801329698,0.0,,,-1,not soil,-1,not soil,,,-1,not soil,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00002266,chicken breeding waste material,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,not soil,-1,not soil,,,-1,can use biological waste material?,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00005753,urea enriched soil,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,use ENVO:382 enriched soil instead?,-1,urea enrichment seems like a treatment,,,-1,what other kinds of enrichments - endless - lets include the parent,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00005757,bacteria enriched soil,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,use ENVO:382 enriched soil instead?,-1,enriched seems like a treatment,,,-1,aren't they all -- what do we mean by enriched,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00005762,chloropicrin enriched soil,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,use ENVO:382 enriched soil instead?,-1,enriched seems like a treatment,,,-1,what other kinds of enrichments - lets use just enriched soil,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00005775,salt contaminated soil,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,just use ENVO:2116 contaminated soil ?,-1,salinity,,,-1,what other contaminates are available in the ontology - use parent - we don't want specifics here if we aren't going to update them as the ontology changes,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00005792,underground water,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,water,-1,water,,,-1,not soil,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00005793,muddy water,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,water,-1,water,,,-1,not soil?,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00005794,water scum,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,water,-1,water,,,-1,not soil,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00005798,acid dune sand,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,too specific,-1,acid =pH,,,-1,too specific,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:01000356,granite,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,not soil,-1,rock,,,-1,not soil?,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:01000357,alkaline water,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,water,-1,water,,,-1,not soil,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:01000358,acidic water,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,water,-1,water,,,-1,not soil,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:01000372,household waste material,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,not soil,-1,not soil,,,-1,biological waste material - though other household things aren't biological in nature,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:01000405,respirable suspended particulate matter,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,not soil,-1,not soil,,,-1, not soil,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:01000406,snow,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,not soil,-1,not soil,,,-1,not soil?,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:01000415,fine respirable suspended particulate matter,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,not soil,-1,not soil,,,-1,not soil,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:01000416,ultrafine respirable suspended particulate matter,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,not soil,-1,not soil,,,-1,not soil,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:01000427,carbon nanotube enriched soil,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,use ENVO:382 enriched soil instead?,-1,enrichment is a treatment,,,-1,too specific,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:01000436,waterborne particulate matter,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,water,-1,not soil,,,-1,not soil,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00002046,activated sludge,2.33e-05,False,False,False,False,True,0,0,0,5,0,0.0,0.0,0.0,9.34e-05,0.0,,,-1,too specific,-1,not soil,,,-1,too specific,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00003884,farmyard manure,2.33e-05,False,False,False,False,True,0,0,0,5,0,0.0,0.0,0.0,9.34e-05,0.0,,,-1,not soil,-1,not soil,,,-1,biological waste material...,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00002127,stream sediment,4.67e-06,False,False,False,False,True,0,0,0,1,0,0.0,0.0,0.0,1.87e-05,0.0,,,-1,too specific,-1,sediment,,,-1,is this for soil or sediment ,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:00002149,sea water,4.67e-06,False,False,False,False,True,0,0,0,1,0,0.0,0.0,0.0,1.87e-05,0.0,,,-1,water,-1,water,,,-1,not soil,-3,0,-1,-1,0,-1,0.4,-3
+ENVO:04000008,soil organic matter,0.002077480179,False,False,False,False,True,0,0,66,65,0,0.0,0.0,0.007096011182,0.001213909536,0.0,,,-1,,-1,,,,0,how would a user disambiguate this specific part of the soil to collect sample from? ,-2,0,-1,-1,0,0,0.4,-2
+ENVO:01001527,plastic-frozen soil,0.0008435248255,False,False,False,False,True,1,0,2,2,0,0.003121717597,0.0,0.0002150306419,3.74e-05,0.0,,,-1,don't use temperature as a differential,0,?,,,-1,lots of terms with froze as an axis of differentiation,-2,0,-1,0,0,-1,0.4,-2
+ENVO:00002044,sludge,0.0008170544952,False,False,False,False,True,0,0,0,175,0,0.0,0.0,0.0,0.003268217981,0.0,,,-1,NCBI_mims_soil_trusting_labels_count_only,-1,,,,0,,-2,0,-1,-1,0,0,0.4,-2
+ENVO:00005765,frozen compost soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,-1,too specific,-1,compost?,,,0,vs. permafrost vs. frozen compost soil vs. frozen soil,-2,0,-1,-1,0,0,0.4,-2
+ENVO:01001525,hard-frozen soil,0.0007804293993,False,False,False,False,True,1,0,0,0,0,0.003121717597,0.0,0.0,0.0,0.0,,,-1,too specific,-1,too general,,,0,vs. permafrost vs. frozen compost soil vs. frozen soil,-2,0,-1,-1,0,0,0.4,-2
+ENVO:01001528,friable-frozen soil,0.0007804293993,False,False,False,False,True,1,0,0,0,0,0.003121717597,0.0,0.0,0.0,0.0,,,-1,too specific,-1,too general,,,0,vs. permafrost vs. frozen compost soil vs. frozen soil,-2,0,-1,-1,0,0,0.4,-2
+ENVO:01001638,frost-susceptible soil,0.0007804293993,False,False,False,False,True,1,0,0,0,0,0.003121717597,0.0,0.0,0.0,0.0,,,-1,too specific,-1,too general,,,0,vs. permafrost vs. frozen compost soil vs. frozen soil,-2,0,-1,-1,0,0,0.4,-2
+ENVO:01000001,mud,0.0003818449411,False,False,False,False,True,0,0,5,53,0,0.0,0.0,0.0005375766047,0.0009898031599,0.0,,,-1,use ENVO:5771 muddy soil,-1,"mud = sediment, dirt = soil",,,0,,-2,0,-1,-1,0,0,0.4,-2
+ENVO:00003081,metal contaminated soil,0.0002523817045,False,False,False,False,True,0,0,8,8,0,0.0,0.0,0.0008601225675,0.0001494042506,0.0,,,-1,just use ENVO:2116 contaminated soil ?,0,heavy metals slot?,,,-1,use parent - contaminated soil,-2,0,-1,0,0,-1,0.4,-2
+ENVO:00002875,oil contaminated soil,6.07e-05,False,False,False,False,True,0,0,0,13,0,0.0,0.0,0.0,0.0002427819071,0.0,,,-1,just use ENVO:2116 contaminated soil ?,0,,,,-1,other contaminants - use parent,-2,0,-1,0,0,-1,0.4,-2
+ENVO:01000371,agricultural waste material,5.84e-05,False,False,False,False,True,0,0,2,1,0,0.0,0.0,0.0002150306419,1.87e-05,0.0,,,-1,not soil,-1,not soil,,,0,"could parent of agricultural waste, animal waste and biological waste be used to subsume all 3 categories?",-2,0,-1,-1,0,0,0.4,-2
+ENVO:00002276,animal waste material,5.38e-05,False,False,False,False,True,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,-1,not soil,-1,not soil,,,0,"could parent of agricultural waste, animal waste and biological waste be used to subsume all 3 categories?",-2,0,-1,-1,0,0,0.4,-2
+ENVO:00003033,mushroom compost,2.8e-05,False,False,False,False,True,0,0,0,6,0,0.0,0.0,0.0,0.0001120531879,0.0,,,-1,NCBI_mims_soil_trusting_labels_count_only,-1,not soil,,,0,,-2,0,-1,-1,0,0,0.4,-2
+ENVO:00002264,waste material,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,not soil,-1,not soil,,,0,could use instead of biological waste material,-2,0,-1,-1,0,0,0.4,-2
+ENVO:00005791,sterile water,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,water,-1,water,,,0,,-2,0,-1,-1,0,0,0.4,-2
+ENVO:00005796,marine sludge,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,water,-1,sludge isn't soil,,,0,Sierra: check in OLS what's the definition of sludge and do we disambiguate sludge from contaminated soil?,-2,0,-1,-1,0,0,0.4,-2
+ENVO:01000373,biological waste material,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,not soil,-1,not soil,,,0,"could parent of agricultural waste, animal waste and biological waste be used to subsume all 3 categories?",-2,0,-1,-1,0,0,0.4,-2
+ENVO:00005802,bulk soil,0.03068551084,False,False,False,False,True,1,172,441,2126,0,0.003121717597,0.03250188964,0.04741425653,0.03970417958,0.0,,,1,,-1,too general,,,-1,too specific,-1,0,1,-1,0,-1,0.2,-1
+ENVO:00002982,clay,0.01566384177,False,False,False,False,True,0,0,96,103,43,0.0,0.0,0.01032147081,0.001923579726,0.05041031653,,,-1,"use ENVO:2262 clay soil, ENVO:615277 clay loam etc",-1,you can get that it's clay from `soil_text_measure` or `particle_class` depending on the extension,,,1,,-1,0,-1,-1,0,1,0.2,-1
+ENVO:00002160,estuarine mud,0.006180689779,False,False,False,False,True,0,0,186,253,0,0.0,0.0,0.01999784969,0.004724909424,0.0,,,-1,use ENVO:5771 muddy soil,1,,,,-1,what other kinds of mud - lets just use mud,-1,0,-1,1,0,-1,0.2,-1
+ENVO:00002007,sediment,0.001983926831,False,False,False,False,True,0,0,25,281,0,0.0,0.0,0.002687883023,0.005247824301,0.0,,,0,,-1,sediment,,,0,,-1,0,0,-1,0,0,0.6,-1
+ENVO:06105274,sandy loam,0.001139933377,False,False,False,False,True,1,0,0,77,0,0.003121717597,0.0,0.0,0.001438015912,0.0,,,1,,-1,this is soil texture; you can get that it's clay from `soil_text_measure` or `particle_class` depending on the extension,,,-1,too specific yet undefined,-1,0,1,-1,0,-1,0.2,-1
+ENVO:00005769,mountain forest soil,0.001119250944,False,False,False,False,True,1,0,10,15,0,0.003121717597,0.0,0.001075153209,0.0002801329698,0.0,,,-1,too specific,1,,,,-1,can we just use forest soil here? is there forest soil - can't this concept be evaluated with the broad scale value?,-1,0,-1,1,0,-1,0.2,-1
+ENVO:00005779,vegetable garden soil,0.0009473747145,False,False,False,False,True,1,0,1,30,0,0.003121717597,0.0,0.0001075153209,0.0005602659396,0.0,,,-1,too specific,1,,,,-1,agricultural soil vs. garden soil,-1,0,-1,1,0,-1,0.2,-1
+ENVO:03600017,slurry,0.0009464313919,False,False,False,False,True,0,0,30,30,0,0.0,0.0,0.003225459628,0.0005602659396,0.0,,,0,,-1,a slurry is soil + something,,,0,,-1,0,0,-1,0,0,0.6,-1
+ENVO:00002170,compost,0.0008450677922,False,False,False,False,True,0,0,0,181,0,0.0,0.0,0.0,0.003380271169,0.0,,,-1,NCBI_mims_soil_trusting_labels_count_only,-1,not soil?,,,1,,-1,0,-1,-1,0,1,0.2,-1
+ENVO:00005783,leafy wood soil,0.0008119771124,False,False,False,False,True,1,0,1,1,0,0.003121717597,0.0,0.0001075153209,1.87e-05,0.0,,,-1,,1,,,,-1,do we have needly wood soil?,-1,0,-1,1,0,-1,0.2,-1
+ENVO:00002236,cryosol,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,-1,don't use temperature as a differential,-1,"this is available in `fao_class` .. it isn't currently, but it's in the updated FAO class list",,,1,,-1,0,-1,-1,0,1,0.2,-1
+ENVO:00005770,beech forest soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,-1,too specific,1,,,,-1,too specific,-1,0,-1,1,0,-1,0.2,-1
+ENVO:00005771,muddy soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,unclear,,,-1,"Sierra: check OLS definition....do we have ""clay-y soil""?  do we have ""loamy soil""? ",-1,0,1,-1,0,-1,0.2,-1
+ENVO:00005776,peaty paddy field soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,-1,too specific,1,,,,-1,too specific?,-1,0,-1,1,0,-1,0.2,-1
+ENVO:00005781,heat stressed soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,-1,don't use temperature as a differential,-1,heat stress seems like a treatment,,,1,,-1,0,-1,-1,0,1,0.2,-1
+ENVO:00005787,eucalyptus forest soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,-1,too specific,1,,,,-1,too narrow,-1,0,-1,1,0,-1,0.2,-1
+ENVO:00005788,rubber plantation soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,-1,too specific,1,,,,-1,too specific,-1,0,-1,1,0,-1,0.2,-1
+ENVO:00005789,bluegrass field soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,-1,too specific,1,,,,-1,too specific,-1,0,-1,1,0,-1,0.2,-1
+ENVO:00005744,allotment garden soil,0.0007804293993,False,False,False,False,True,1,0,0,0,0,0.003121717597,0.0,0.0,0.0,0.0,,,-1,too specific,1,,,,-1,keep agricultural soil,-1,0,-1,1,0,-1,0.2,-1
+ENVO:03600036,pathogen-suppressive soil,0.0007804293993,False,False,False,False,True,1,0,0,0,0,0.003121717597,0.0,0.0,0.0,0.0,,,1,,-1,that's a treatment,,,-1,"can use ""treated soil"" instead?",-1,0,1,-1,0,-1,0.2,-1
+ENVO:06105275,silty loam,0.0007804293993,False,False,False,False,True,1,0,0,0,0,0.003121717597,0.0,0.0,0.0,0.0,,,1,,-1,this is soil texture,,,-1,too specific yet undefined,-1,0,1,-1,0,-1,0.2,-1
+ENVO:01000000,humus,0.0005089082284,False,False,False,False,True,0,0,0,109,0,0.0,0.0,0.0,0.002035632914,0.0,,,-1,NCBI_mims_soil_trusting_labels_count_only,-1,?,,,1,,-1,0,-1,-1,0,1,0.2,-1
+ENVO:01000016,silt,0.0003199620659,False,False,False,False,True,0,0,1,0,1,0.0,0.0,0.0001075153209,0.0,0.001172332943,,,0,,-1,this is soil texture,,,0,,-1,0,0,-1,0,0,0.6,-1
+ENVO:00002267,industrial waste material,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,not soil,-1,not soil,,,1,,-1,0,-1,-1,0,1,0.2,-1
+ENVO:00005763,humus-rich acidic ash soil,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,too specific,-1,weirdly specific,,,1,,-1,0,-1,-1,0,1,0.2,-1
+ENVO:00005795,marine mud,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,water,-1,water,,,1,"not sure the boundaries between soil, sediment, mud, clay, loam ",-1,0,-1,-1,0,1,0.2,-1
+ENVO:00005799,rocky sand,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,too specific,1,,,,-1,what is the axis of differentiation - rocky vs. ... ? ,-1,0,-1,1,0,-1,0.2,-1
+ENVO:01000350,autoclaved sand,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,not found in the genrally understood soil environment,1,,,,-1,"I would take the parent here - some ""treated soil"" ",-1,0,-1,1,0,-1,0.2,-1
+ENVO:01000441,andesite,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,gray to black volcanic rock with between about 52 and 63 weight percent silica,-1,rock,,,1,,-1,0,-1,-1,0,1,0.2,-1
+ENVO:01000442,dacite,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,volcanic rock formed by rapid solidification of lava that is high in silica and low in alkali metal oxides,-1,rock,,,1,,-1,0,-1,-1,0,1,0.2,-1
+ENVO:01000444,dacitic lava,2.69e-05,False,False,False,False,True,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,-1,not soil,-1,lava isn't soil,,,1,what other kinds of lava....,-1,0,-1,-1,0,1,0.2,-1
+ENVO:00002984,petroleum,4.67e-06,False,False,False,False,True,0,0,0,1,0,0.0,0.0,0.0,1.87e-05,0.0,,,-1,not soil,-1,not soil,,,1,,-1,0,-1,-1,0,1,0.2,-1
+ENVO:02000091,coal,4.67e-06,False,False,False,False,True,0,0,0,1,0,0.0,0.0,0.0,1.87e-05,0.0,,,-1,not soil,-1,not soil,,,1,,-1,0,-1,-1,0,1,0.2,-1
+CHEBI:15377,water,0.001097187465,False,False,True,False,False,0,0,0,235,0,0.0,0.0,0.0,0.00438874986,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+CHEBI:18248,iron atom,4.67e-06,False,False,True,False,False,0,0,0,1,0,0.0,0.0,0.0,1.87e-05,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+CHEBI:26020,phosphate,1.87e-05,False,False,True,False,False,0,0,0,4,0,0.0,0.0,0.0,7.47e-05,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+CHEBI:46662,mineral,0.0003735106264,False,False,True,False,False,0,0,0,80,0,0.0,0.0,0.0,0.001494042506,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00001998,soil,1.0,False,False,False,False,True,0,5292,9301,53546,853,0.0,1.0,1.0,1.0,1.0,,,1,,-1,,,,0,think we need to decide if we're going to enumerate all the kinds of soil or only have a grouping term to annotate to here.,0,0,1,-1,0,0,0.3,0
+ENVO:00000035,marsh,0.0002661263213,False,False,False,False,False,0,0,0,57,0,0.0,0.0,0.0,0.001064505285,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00000044,peatland,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00000064,road,3.74e-05,False,False,False,False,False,0,0,0,8,0,0.0,0.0,0.0,0.0001494042506,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00000077,agricultural ecosystem,0.0009477832144,False,False,False,False,False,0,0,0,203,0,0.0,0.0,0.0,0.003791132858,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00000078,farm,0.0008332437372,False,False,False,False,False,0,0,31,0,0,0.0,0.0,0.003332974949,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00000111,forested area,0.0005360490904,False,False,False,False,False,0,0,9,63,0,0.0,0.0,0.0009676378884,0.001176558473,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00000114,agricultural field,0.001143876293,False,False,False,False,False,0,0,0,245,0,0.0,0.0,0.0,0.004575505173,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00000115,orchard,3.74e-05,False,False,False,False,False,0,0,0,8,0,0.0,0.0,0.0,0.0001494042506,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00000190,abyssal feature,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00000232,fen,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00000243,freshwater wetland ecosystem,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00000266,pasture,0.001542303524,False,False,False,False,False,0,0,48,54,0,0.0,0.0,0.005160735405,0.001008478691,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00000300,scrubland area,0.0007843723154,False,False,False,False,False,0,0,0,168,0,0.0,0.0,0.0,0.003137489262,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00000486,shoreline,0.003709278572,False,False,False,False,False,0,0,138,0,0,0.0,0.0,0.01483711429,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00001048,,0.0004031824535,False,False,False,False,False,0,0,15,0,0,0.0,0.0,0.001612729814,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005800,desert sand,0.06338009885,False,False,False,False,True,0,1,1,0,216,0.0,0.0001889644747,0.0001075153209,0.0,0.2532239156,,,-1,too specific,1,,,,0,we disambiguate sand by the location in ENVO vs its mineral/element/biological material content it is like we do with clay?,0,0,-1,1,0,0,0.3,0
+ENVO:00002034,biofilm,0.001487411397,False,False,False,False,False,0,0,47,48,0,0.0,0.0,0.005053220084,0.0008964255033,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:02000059,surface soil,0.04051010738,False,False,False,False,True,1,13,1272,1055,0,0.003121717597,0.002456538171,0.1367594882,0.01970268554,0.0,,,1,,-1,too general,,,0,,0,0,1,-1,0,0,0.3,0
+ENVO:01000017,sand,0.02998434679,False,False,False,False,True,0,0,1,704,91,0.0,0.0,0.0001075153209,0.01314757405,0.1066822978,,,1,,-1,too general,,,0,,0,0,1,-1,0,0,0.3,0
+ENVO:02000138,mangrove biome soil,0.02189642901,False,False,False,False,True,1,0,0,3,72,0.003121717597,0.0,0.0,5.6e-05,0.08440797186,,,1,,0,seems weirdly specific,,,-1,"should be handled by the fact that the records are annotating soil, and that mangrove biome is captured in the broad scale",0,0,1,0,0,-1,0.3,0
+ENVO:00002169,coal mine,0.001048274379,False,False,False,False,False,0,0,39,0,0,0.0,0.0,0.004193097516,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005778,tropical soil,0.00576762569,False,False,False,False,True,1,105,1,0,0,0.003121717597,0.01984126984,0.0001075153209,0.0,0.0,,,-1,don't use temperature as a differential,1,,,,0,,0,0,-1,1,0,0,0.3,0
+ENVO:03600016,saprolite,0.002930832356,False,False,False,False,True,0,0,0,0,10,0.0,0.0,0.0,0.0,0.01172332943,,,1,,-1,this is rock. I would accept this for local but not medium. because soil isn't a rock. ,,,0,,0,0,1,-1,0,0,0.3,0
+ENVO:00005784,spruce forest soil,0.002037669039,False,False,False,False,True,1,0,40,39,0,0.003121717597,0.0,0.004300612837,0.0007283457214,0.0,,,-1,too specific,1,,,,0,,0,0,-1,1,0,0,0.3,0
+ENVO:00005755,field soil,0.001905543821,False,False,False,False,True,1,0,33,51,0,0.003121717597,0.0,0.003548005591,0.0009524520973,0.0,,,1,,-1,too general,,,0,agricultural soil ??,0,0,1,-1,0,0,0.3,0
+ENVO:00000003,mine tailing,0.001227916184,False,False,False,False,True,0,0,0,263,0,0.0,0.0,0.0,0.004911664737,0.0,,,-1,not soil,0,what is this?,,,1,,0,0,-1,0,0,1,0.3,0
+ENVO:00002241,leptosol,0.001217428499,False,False,False,False,True,1,0,14,13,0,0.003121717597,0.0,0.001505214493,0.0002427819071,0.0,,,1,,-1,"this is available in `fao_class` .. it isn't currently, but it's in the updated FAO class list",,,0,,0,0,1,-1,0,0,0.3,0
+ENVO:00005748,dry soil,0.0009613813629,False,False,False,False,True,1,0,1,33,0,0.003121717597,0.0,0.0001075153209,0.0006162925335,0.0,,,1,,-1,dryness is a treatment or characteristic that can be captured elsewhere,,,0,dry soil vs. desert sand....,0,0,1,-1,0,0,0.3,0
+ENVO:00002265,obsolete agricultural waste,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01001526,frozen soil,0.0009064892357,False,False,False,False,True,1,0,0,27,0,0.003121717597,0.0,0.0,0.0005042393456,0.0,,,-1,don't use temperature as a differential,1,,,,0,vs. permafrost vs. frozen compost soil vs. frozen soil,0,0,-1,1,0,0,0.3,0
+ENVO:00002268,sphagnum bog,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002269,thermocline,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002270,chemocline,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002271,nuclear power plant,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002272,waste treatment plant,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005764,pond soil,0.0008704036557,False,False,False,False,True,1,0,3,2,0,0.003121717597,0.0,0.0003225459628,3.74e-05,0.0,,,1,,-1,sediment?,,,0,is pond broad scale?,0,0,1,-1,0,0,0.3,0
+ENVO:00002277,back-arc basin,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002278,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002279,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002280,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002281,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002282,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002283,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002284,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002285,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002286,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002287,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002288,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002289,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002290,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002291,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00002254,vertisol,0.0008341870598,False,False,False,False,True,1,0,2,0,0,0.003121717597,0.0,0.0002150306419,0.0,0.0,,,1,,-1,this is available in `fao_class` ,,,0,,0,0,1,-1,0,0,0.3,0
+ENVO:00005790,red soil,0.0008119771124,False,False,False,False,True,1,0,1,1,0,0.003121717597,0.0,0.0001075153209,1.87e-05,0.0,,,1,,-1,"I assume it's red because it's iron rich, but you should say the iron content",,,0,".....I can be brown I can be blue I can be violet sky..... clearly sierra isn't a soil expert.  
+
+after the reading the definition, it seems like this term is very very specific and I have a hard time thinking about how a researcher trying to catalog their sample at NMDC will experimentally analyze it to the composition levels in this definition unless the composition of the soil is the purpose of the experiment.  Comparing this definition to plinthosol for example -- I can imagine someone picking plinthosol even if soil compsition isn't the main focus of the experiment because it talks more generally about soil composition ... could be a critical set of parameters/distinctions for real soil scientists however.  So I don't know about red soil; defer to experts.",0,0,1,-1,0,0,0.3,0
+ENVO:00002252,solonchak,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,this is available in `fao_class` ,,,0,,0,0,1,-1,0,0,0.3,0
+ENVO:00002253,umbrisol,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,"this is available in `fao_class` .. it isn't currently, but it's in the updated FAO class list",,,0,,0,0,1,-1,0,0,0.3,0
+ENVO:00002255,solonetz,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,this is available in `fao_class` ,,,0,,0,0,1,-1,0,0,0.3,0
+ENVO:00002274,stagnosol,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,"this is available in `fao_class` .. it isn't currently, but it's in the updated FAO class list",,,0,,0,0,1,-1,0,0,0.3,0
+ENVO:00002275,technosol,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,"this is available in `fao_class` .. it isn't currently, but it's in the updated FAO class list",,,0,,0,0,1,-1,0,0,0.3,0
+ENVO:00005785,obsolete volcanic soil,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005801,rhizosphere,0.01782463357,False,False,False,False,False,0,0,606,329,0,0.0,0.0,0.06515428449,0.006144249804,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000628,plant litter,0.0005451248243,False,False,False,False,True,0,0,1,111,0,0.0,0.0,0.0001075153209,0.002072983976,0.0,,,0,,-1,not soil,,,1,,0,0,0,-1,0,1,0.3,0
+ENVO:00005803,animal habitation,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005804,nest of ant,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005805,nest of bird,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005806,obsolete Tropical and subtropical coniferous forest biome,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005807,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005808,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005809,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005810,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005811,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005812,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005813,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005814,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005815,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005816,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005817,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005818,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005819,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005820,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005821,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005822,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005823,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005824,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005825,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005826,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005827,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005828,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005829,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005830,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005831,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005832,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005833,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005834,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005835,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005836,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005837,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005838,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005839,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005840,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005841,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005842,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005843,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005844,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005845,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005846,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005847,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005848,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005849,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005850,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005851,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005852,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005853,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005854,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005855,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005856,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005857,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005858,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005859,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005860,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005861,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005862,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005863,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005864,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005865,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005866,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005867,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005868,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005869,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005870,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005871,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005872,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005873,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005874,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005875,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005876,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005877,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005878,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005879,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005880,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005881,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005882,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005883,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005884,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005885,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005886,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005887,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005888,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005889,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005890,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005891,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005892,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005893,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005894,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005895,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005896,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005897,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005898,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005899,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005900,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005901,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005902,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005903,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005904,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005905,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005906,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005907,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005908,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005909,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005910,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005911,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005912,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005913,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005914,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005915,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005916,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005917,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005918,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005919,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005920,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005921,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005922,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005923,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005924,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005925,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005926,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005927,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005928,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005929,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005930,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005931,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005932,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005933,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005934,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005935,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005936,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005937,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005938,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005939,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005940,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005941,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005942,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005943,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005944,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005945,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005946,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005947,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005948,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005949,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005950,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005951,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005952,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005953,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005954,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005955,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005956,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005957,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005958,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005959,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005960,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005961,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005962,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005963,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005964,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005965,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005966,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005967,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005968,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005969,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005970,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005971,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005972,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005973,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005974,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005975,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005976,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005977,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005978,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005979,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005980,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005981,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005982,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005983,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005984,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005985,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005986,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005987,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005988,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005989,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005990,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005991,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005992,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005993,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005994,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005995,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005996,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005997,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005998,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005999,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006000,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006001,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006002,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006003,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006004,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006005,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006006,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006007,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006008,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006009,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006010,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006011,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006012,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006013,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006014,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006015,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006016,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006017,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006018,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006019,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006020,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006021,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006022,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006023,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006024,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006025,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006026,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006027,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006028,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006029,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006030,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006031,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006032,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006033,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006034,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006035,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006036,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006037,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006038,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006039,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006040,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006041,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006042,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006043,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006044,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006045,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006046,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006047,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006048,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006049,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006050,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006051,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006052,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006053,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006054,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006055,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006056,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006057,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006058,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006059,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006060,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006061,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006062,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006063,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006064,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006065,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006066,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006067,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006068,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006069,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006070,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006071,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006072,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006073,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006074,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006075,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006076,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006077,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006078,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006079,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006080,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006081,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006082,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006083,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006084,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006085,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006086,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006087,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006088,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006089,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006090,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006091,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006092,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006093,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006094,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006095,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006096,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006097,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006098,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006099,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006100,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006101,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006102,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006103,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006104,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006105,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006106,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006107,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006108,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006109,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006110,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006111,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006112,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006113,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006114,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006115,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006116,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006117,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006118,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006119,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006120,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006121,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006122,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006123,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006124,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006125,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006126,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006127,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006128,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006129,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00006130,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:0001048,,0.0004300612837,False,False,False,False,False,0,0,16,0,0,0.0,0.0,0.001720245135,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00010484,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00010485,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00010486,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00010487,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00010488,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:0005774,,0.0003763036233,False,False,False,False,False,0,0,14,0,0,0.0,0.0,0.001505214493,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00123402,,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000002,water well,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000003,oil well,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000004,concentration basin mediterranean sea biome,2.69e-05,False,False,False,True,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000005,upwelling,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000006,coastal upwelling,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000007,organic object formed through microbial activity,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000008,microbial mat,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000009,obsolete biotic mesoscopic physical object,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:0100001,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000010,obsolete abiotic mesoscopic physical object,8.06e-05,False,False,False,False,False,0,0,3,0,0,0.0,0.0,0.0003225459628,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000011,obsolete dairy product,8.06e-05,False,False,False,False,False,0,0,3,0,0,0.0,0.0,0.0003225459628,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000012,obsolete milk product,8.06e-05,False,False,False,False,False,0,0,3,0,0,0.0,0.0,0.0003225459628,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000013,obsolete fermented food product,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000014,obsolete wine,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000015,obsolete beer,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000019,cave floor,0.0001846173955,False,False,False,False,False,0,0,6,5,0,0.0,0.0,0.0006450919256,9.34e-05,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:0100002,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000020,estuarine biome,2.69e-05,False,False,False,True,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:0100003,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:0100004,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:0100005,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000057,marine algal bloom,0.0002521196728,False,False,False,False,False,0,0,0,54,0,0.0,0.0,0.0,0.001008478691,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:0100006,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:0100007,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:0100008,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:0100009,,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000174,forest biome,0.0002054308445,False,False,False,True,False,0,0,0,44,0,0.0,0.0,0.0,0.000821723378,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000208,mediterranean woodland biome,0.0009676378884,False,False,False,True,False,0,0,36,0,0,0.0,0.0,0.003870551554,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000221,temperate woodland biome,0.008171164391,False,False,False,True,False,0,0,304,0,0,0.0,0.0,0.03268465756,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000018,gravel,7.41e-05,False,False,False,False,True,0,1,1,0,0,0.0,0.0001889644747,0.0001075153209,0.0,0.0,,,0,,1,,,,-1,not soil?,0,0,0,1,0,-1,0.3,0
+ENVO:01000302,outcrop,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000303,endolithic environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000304,high pressure environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000305,high temperature environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000306,freshwater environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000307,saline water environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000308,extraterrestrial environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000309,cold environment,0.0001249253697,False,False,False,False,False,0,0,1,21,0,0.0,0.0,0.0001075153209,0.0003921861577,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000310,haline environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000311,cultivated environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000312,culturing environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000313,anthropogenic environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000314,high osmolarity environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000315,acidic environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000316,alkaline environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000317,aquatic environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000318,extreme high temperature environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000319,rocky slope,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000320,marine environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000321,sea water environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000322,brackish water environment,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000323,atmospheric boundary layer,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000324,planetary surface,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000325,aquatic layer,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000326,deep chlorophyll maximum layer,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000327,strand swamp,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000328,dome swamp,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000329,cypress dome,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000330,cypress strand swamp,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000331,cypress swamp,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000332,gravelly slope,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000333,hillside,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000334,talus slope,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000335,understory,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000336,shrub layer,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000337,herb and fern layer,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000338,litter layer,0.0007840239437,False,False,False,False,False,0,0,25,24,0,0.0,0.0,0.002687883023,0.0004482127517,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000339,polar biome,2.69e-05,False,False,False,True,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000340,alpine,2.69e-05,False,True,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000341,subalpine,2.69e-05,False,True,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000342,montane,2.69e-05,False,True,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000343,altitudinal condition,2.69e-05,False,True,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000344,nival,2.69e-05,False,True,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000345,upper montane,2.69e-05,False,True,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000346,lower montane,2.69e-05,False,True,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000347,montane conifer woodland,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000348,maize field,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000351,obsolete marine mesoscale eddy,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000352,field,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000353,marine mesoscale eddy field,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000354,ice cap climatic condition,2.69e-05,False,True,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000355,vegetation layer,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000359,limestone cave,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000360,solutional cave,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000361,primary cave,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000362,inflationary cave,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000363,erosional cave,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000364,glacier cave,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000365,ice cave,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000366,talus cave,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000367,anchialine cave,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000368,anchialine pool,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000369,vadose cave,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000370,tundra climatic condition,2.69e-05,False,True,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000374,dry woodland,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000375,tropical marine condition,2.69e-05,False,True,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000376,tropical marine semi-evergreen forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000377,humid subtropical,5.38e-05,False,True,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000378,arid subtropical,2.69e-05,False,True,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000379,highland subtropical,2.69e-05,False,True,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000380,oceanic temperate,2.69e-05,False,True,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000381,continental temperate,2.69e-05,False,True,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000382,cold desert,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000383,temperate evergreen needleleaf forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000384,tropical lowland evergreen broadleaf rain forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000385,temperate deciduous broadleaf forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000386,temperate deciduous needleleaf forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000387,tropical deciduous broadleaf forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000388,tropical semi-deciduous broadleaf forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000389,temperate mixed broadleaf forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000390,temperate mixed needleleaf forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000391,tropical semi-evergreen moist broadleaf forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000392,tropical upper montane forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000393,tropical lower montane forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000394,tropical freshwater swamp forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000395,temperate sclerophyllous dry forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000396,tropical sclerophyllous dry forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000397,temperate broadleaf evergreen forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000398,temperate freshwater swamp forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000399,tropical needleleaf forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000400,tropical thorn forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000401,tropical mixed needleleaf forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000402,tropical mixed broadleaf forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000403,tropical mangrove,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000404,obsolete manufactured plastic,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000407,littoral zone,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000408,environmental zone,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000409,freshwater littoral zone,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000410,marine eulittoral zone,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000411,infralittoral zone,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000412,circalittoral zone,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000413,old plant,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000414,young plant,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000417,house,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000418,human house,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000419,domestic garden,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000420,building part,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000421,indoor kitchen,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000422,bathroom,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000423,living room,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000424,patio,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000425,indoor toilet,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000426,room,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000428,area of rocky shore,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000429,burrow,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000430,broadleaf forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000431,mixed forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000432,swamp forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000433,needleleaf forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000434,sclerophyllous forest,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000435,montane forest,3.15e-05,False,False,False,False,False,0,0,1,1,0,0.0,0.0,0.0001075153209,1.87e-05,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000437,lava field,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000438,lava flow,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000439,andesitic volcano,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000440,dacitic volcano,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000443,salt mass,2.69e-05,False,False,False,False,False,0,0,1,0,0,0.0,0.0,0.0001075153209,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000703,hydrological precipitation process,0.0002100997273,True,False,False,False,False,0,0,0,45,0,0.0,0.0,0.0,0.0008403989093,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000816,area of deciduous forest,0.001343941512,False,False,False,False,False,0,0,50,0,0,0.0,0.0,0.005375766047,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000890,area of moss-dominated vegetation,0.001419647088,False,False,False,False,False,0,0,45,45,0,0.0,0.0,0.004838189442,0.0008403989093,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000909,biocrust,0.004295372203,False,False,False,False,False,0,0,0,920,0,0.0,0.0,0.0,0.01718148881,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01000910,soil biocrust,8.29e-05,False,False,False,False,False,0,0,1,12,0,0.0,0.0,0.0001075153209,0.0002241063758,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01001001,plant-associated environment,0.000275464087,False,False,False,False,False,0,0,0,59,0,0.0,0.0,0.0,0.001101856348,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01001044,soil environment,0.01415196464,False,False,False,False,False,0,0,481,262,0,0.0,0.0,0.05171486937,0.004892989206,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01001181,rhizoplane,0.0001353976021,False,False,False,False,False,0,0,0,29,0,0.0,0.0,0.0,0.0005415904082,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01001206,grassland ecosystem,0.01365885261,False,False,False,False,False,0,0,500,47,0,0.0,0.0,0.05375766047,0.000877749972,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01001209,wetland ecosystem,4.67e-06,False,False,False,False,False,0,0,0,1,0,0.0,0.0,0.0,1.87e-05,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01001244,cropland ecosystem,0.000806364907,False,False,False,False,False,0,0,30,0,0,0.0,0.0,0.003225459628,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01001357,desert,0.003179509207,False,False,False,False,False,0,0,0,681,0,0.0,0.0,0.0,0.01271803683,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01001405,laboratory environment,0.0003154771306,False,False,False,False,False,0,0,10,10,0,0.0,0.0,0.001075153209,0.0001867553132,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01001442,agriculture,0.001748258432,True,False,False,False,False,0,0,64,6,0,0.0,0.0,0.00688098054,0.0001120531879,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:01001834,subpolar biome,0.003060128167,False,False,False,True,False,0,0,97,97,0,0.0,0.0,0.01042898613,0.001811526538,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:03501109,subway train,2.8e-05,False,False,False,False,False,0,0,0,6,0,0.0,0.0,0.0,0.0001120531879,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:03600087,greenhouse,0.0001120531879,False,False,False,False,False,0,0,0,24,0,0.0,0.0,0.0,0.0004482127517,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:04000011,bare soil surface layer,5.38e-05,False,False,False,False,False,0,0,2,0,0,0.0,0.0,0.0002150306419,0.0,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+NCBITaxon:1,root,0.0009197699175,False,False,False,False,False,0,0,0,197,0,0.0,0.0,0.0,0.00367907967,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+NCBITaxon:2,Bacteria,0.0001540731334,False,False,False,False,False,0,0,0,33,0,0.0,0.0,0.0,0.0006162925335,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+UBERON:0001988,feces,0.0005415904082,False,False,False,False,False,0,0,0,116,0,0.0,0.0,0.0,0.002166361633,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+UBERON:0002416,integumental system,2.8e-05,False,False,False,False,False,0,0,0,6,0,0.0,0.0,0.0,0.0001120531879,0.0,,,0,,0,,,,0,,0,0,0,0,0,0,1.0,0
+ENVO:00005760,burned soil,0.0153284331,False,False,False,False,True,1,2,458,459,0,0.003121717597,0.0003779289494,0.04924201699,0.008572068875,0.0,,,1,,1,,,,-1,too specific - e.g. do we assume all the rest of the soils are not burned?,1,0,1,1,0,-1,0.2,1
+ENVO:00005750,grassland soil,0.01214733633,False,False,False,False,True,1,64,255,319,0,0.003121717597,0.01209372638,0.02741640684,0.005957494491,0.0,,,1,,1,,,,-1,shouldn't grassland be in the env_broad_context,1,0,1,1,0,-1,0.2,1
+ENVO:00005773,pasture soil,0.01211144744,False,False,False,False,True,1,2,232,255,13,0.003121717597,0.0003779289494,0.02494355446,0.004762260486,0.01524032825,,,1,,1,,,,-1,agricultural soil,1,0,1,1,0,-1,0.2,1
+ENVO:00002138,beach sand,0.006209968559,False,False,False,False,True,0,0,189,242,0,0.0,0.0,0.02032039566,0.004519478579,0.0,,,-1,too specific,1,,,,1,,1,0,-1,1,0,1,0.2,1
+ENVO:00002116,contaminated soil,0.005847540568,False,False,False,False,True,0,0,171,268,0,0.0,0.0,0.01838511988,0.005005042393,0.0,,,1,,-1,"the fact that it's contaminated should be captured elsewhere, but I could be convinced",,,1,could be a good high level term so we can avoid all the kinds of contamination - however we should be really clear about what constitutes a contamination concentration and/or event. ,1,0,1,-1,0,1,0.2,1
+ENVO:00002235,cambisol,0.003387675932,False,False,False,False,True,1,0,97,0,0,0.003121717597,0.0,0.01042898613,0.0,0.0,,,1,,-1,this is available in `fao_class`,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00005749,farm soil,0.002912974386,False,False,False,False,True,1,0,1,451,0,0.003121717597,0.0,0.0001075153209,0.008422664625,0.0,,,1,,1,,,,-1,agricultural vs. farm soil....,1,0,1,1,0,-1,0.2,1
+ENVO:00002258,loam,0.002617235703,False,False,False,False,True,1,2,61,22,0,0.003121717597,0.0003779289494,0.006558434577,0.000410861689,0.0,,,1,,-1,this is soil texture; you can get that it's clay from `soil_text_measure` or `particle_class` depending on the extension,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:01001616,bare soil,0.002357010543,False,False,False,False,True,1,10,35,35,0,0.003121717597,0.001889644747,0.003763036233,0.0006536435962,0.0,,,1,,1,,,,-1,ambiguous definition,1,0,1,1,0,-1,0.2,1
+ENVO:00002229,arenosol,0.001769753172,False,False,False,False,True,1,0,21,91,0,0.003121717597,0.0,0.00225782174,0.00169947335,0.0,,,1,,-1,this is available in `fao_class`,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00005761,meadow soil,0.001391772604,False,False,False,False,True,1,10,1,24,0,0.003121717597,0.001889644747,0.0001075153209,0.0004482127517,0.0,,,1,,1,,,,-1,seems like env_broad_scale should cover meadow,1,0,1,1,0,-1,0.2,1
+ENVO:00002230,anthrosol,0.0009381679646,False,False,False,False,True,1,0,5,5,0,0.003121717597,0.0,0.0005375766047,9.34e-05,0.0,,,1,,-1,"this is available in `fao_class` .. it isn't currently, but it's in the updated FAO class list",,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00002239,calcisol,0.0008704036557,False,False,False,False,True,1,0,3,2,0,0.003121717597,0.0,0.0003225459628,3.74e-05,0.0,,,1,,-1,"this is available in `fao_class` .. it isn't currently, but it's in the updated FAO class list",,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00005747,compost soil,0.0008704036557,False,False,False,False,True,1,0,3,2,0,0.003121717597,0.0,0.0003225459628,3.74e-05,0.0,,,1,,1,,,,-1,,1,0,1,1,0,-1,0.2,1
+ENVO:00002244,gleysol,0.0008388559426,False,False,False,False,True,1,0,2,1,0,0.003121717597,0.0,0.0002150306419,1.87e-05,0.0,,,1,,-1,this is available in `fao_class` ,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00002257,podzol,0.0008388559426,False,False,False,False,True,1,0,2,1,0,0.003121717597,0.0,0.0002150306419,1.87e-05,0.0,,,1,,-1,this is available in `fao_class` ,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:01001185,acidic soil,0.0008341870598,False,False,False,False,True,1,0,2,0,0,0.003121717597,0.0,0.0002150306419,0.0,0.0,,,1,,-1,pH tells you this,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00002263,garden soil,0.0008119771124,False,False,False,False,True,1,0,1,1,0,0.003121717597,0.0,0.0001075153209,1.87e-05,0.0,,,1,,1,,,,-1,vs agricultural soil,1,0,1,1,0,-1,0.2,1
+ENVO:00002234,acrisol,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,this is available in `fao_class` ,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00002237,chernozem,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,this is available in `fao_class` ,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00002238,durisol,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,"this is available in `fao_class` .. it isn't currently, but it's in the updated FAO class list",,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00002240,kastanozem,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,this is available in `fao_class` ,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00002242,lixisol,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,"this is available in `fao_class` .. it isn't currently, but it's in the updated FAO class list",,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00002243,histosol,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,this is available in `fao_class` ,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00002245,gypsisol,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,this is available in `fao_class` ,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00002246,ferralsol,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,this is available in `fao_class` ,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00002247,nitisol,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,0,I think this is `local_class` but not sure,,,0,,1,0,1,0,0,0,0.6,1
+ENVO:00002248,luvisol,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,this is available in `fao_class` ,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00002249,phaeozem,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,"dark soil with a high base status, but without a secondary carbonates within one metre of the soil surface",-1,this is available in `fao_class` ,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00002250,plinthosol,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,"this is available in `fao_class` .. it isn't currently, but it's in the updated FAO class list",,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00002251,planosol,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,this is available in `fao_class` ,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00002256,regosol,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,this term has been removed from FAO,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00002262,clay soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,clay is captured in soil texture,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00002273,fluvisol,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,-1,this is available in `fao_class` ,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:00005752,sawah soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,0,?,,,0,,1,0,1,0,0,0,0.6,1
+ENVO:00005756,lawn soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,1,,,,-1,"agricultural soil?  (yes, lawns are different than crops)",1,0,1,1,0,-1,0.2,1
+ENVO:00005766,limed soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,1,,,,-1,"would prefer a general term here like ""enriched soil""",1,0,1,1,0,-1,0.2,1
+ENVO:00005782,ornithogenic soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,0,?,,,0,,1,0,1,0,0,0,0.6,1
+ENVO:00002232,andosol,0.0008037738135,False,False,False,False,True,1,0,0,5,0,0.003121717597,0.0,0.0,9.34e-05,0.0,,,1,,-1,this is available in `fao_class` ,,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:01001397,ultisol,0.0007991049306,False,False,False,False,True,1,0,0,4,0,0.003121717597,0.0,0.0,7.47e-05,0.0,,,1,,0,I think this is `local_class` but not sure,,,0,,1,0,1,0,0,0,0.6,1
+ENVO:00002231,alisol,0.0007804293993,False,False,False,False,True,1,0,0,0,0,0.003121717597,0.0,0.0,0.0,0.0,,,1,,-1,"this is available in `fao_class` .. it isn't currently, but it's in the updated FAO class list",,,1,,1,0,1,-1,0,1,0.2,1
+ENVO:06105277,clay loam,0.0007804293993,False,False,False,False,True,1,0,0,0,0,0.003121717597,0.0,0.0,0.0,0.0,,,1,,-1,this is soil texture,,,1,do we need to make sure all large categories of types of soil are covered if we keep types of clay soil?,1,0,1,-1,0,1,0.2,1
+ENVO:00000134,permafrost,0.0704857683,False,False,False,False,True,0,0,0,94,239,0.0,0.0,0.0,0.001755499944,0.2801875733,,,1,,0,the sample is permafrost or surrounded by permafrost?,,,1,,2,0,1,0,0,1,0.4,2
+ENVO:00005774,peat soil,0.04439498429,False,False,False,False,True,1,142,251,559,94,0.003121717597,0.0268329554,0.02698634555,0.01043962201,0.1101992966,,,1,,1,,,,0,,2,0,1,1,0,0,0.4,2
+ENVO:00005772,orchard soil,0.04382218004,False,False,False,False,True,1,0,1,362,141,0.003121717597,0.0,0.0001075153209,0.006760542337,0.1652989449,,,1,,1,,,,0,,2,0,1,1,0,0,0.4,2
+ENVO:00005740,paddy field soil,0.01971822232,False,False,False,False,True,1,0,666,222,0,0.003121717597,0.0,0.07160520374,0.004145967953,0.0,,,1,,1,,,,0,,2,0,1,1,0,0,0.4,2
+ENVO:00002260,dune soil,0.003646602405,False,False,False,False,True,1,0,91,90,0,0.003121717597,0.0,0.009783894205,0.001680797819,0.0,,,1,,1,,,,0,dune soil vs. beach sand vs. desert sand -- we should pick one/the parent,2,0,1,1,0,0,0.4,2
+ENVO:00005746,savanna soil,0.002364359821,False,False,False,False,True,1,0,36,132,0,0.003121717597,0.0,0.003870551554,0.002465170134,0.0,,,1,,1,,,,0,,2,0,1,1,0,0,0.4,2
+ENVO:00005742,arable soil,0.001838913979,False,False,False,False,True,1,0,30,54,0,0.003121717597,0.0,0.003225459628,0.001008478691,0.0,,,1,,1,,,,0,arable vs. agricultural - do we care about the distinction here?,2,0,1,1,0,0,0.4,2
+ENVO:00005754,fertilized soil,0.001438262491,False,False,False,False,True,1,0,21,20,0,0.003121717597,0.0,0.00225782174,0.0003735106264,0.0,,,1,,1,,,,0,agricultural soil ??,2,0,1,1,0,0,0.4,2
+ENVO:00005777,steppe soil,0.001023473338,False,False,False,False,True,1,0,8,6,0,0.003121717597,0.0,0.0008601225675,0.0001120531879,0.0,,,1,,1,,,,0,,2,0,1,1,0,0,0.4,2
+ENVO:00005786,upland soil,0.0009753880114,False,False,False,False,True,1,0,1,36,0,0.003121717597,0.0,0.0001075153209,0.0006723191275,0.0,,,1,,1,,,,0,,2,0,1,1,0,0,0.4,2
+ENVO:01001841,volcanic soil,0.000969393874,False,False,False,False,True,1,4,0,0,0,0.003121717597,0.0007558578987,0.0,0.0,0.0,,,1,,1,,,,0,,2,0,1,1,0,0,0.4,2
+ENVO:2000007,biochar,0.0008792497069,False,False,False,False,True,0,0,0,0,3,0.0,0.0,0.0,0.0,0.003516998828,,,0,,1,,,,1,,2,0,0,1,0,1,0.4,2
+ENVO:00002233,albeluvisol,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,0,I think this is `local_class` but not sure,,,1,,2,0,1,0,0,1,0.4,2
+ENVO:00005768,orchid soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,1,,,,0,,2,0,1,1,0,0,0.4,2
+ENVO:00005780,greenhouse soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,1,,,,0,vs garden soil vs agricultural soil,2,0,1,1,0,0,0.4,2
+ENVO:00002871,alluvial soil,0.0007804293993,False,False,False,False,True,1,0,0,0,0,0.003121717597,0.0,0.0,0.0,0.0,,,1,,0,I think this is `local_class` but not sure,,,1,,2,0,1,0,0,1,0.4,2
+ENVO:00005743,roadside soil,0.0007804293993,False,False,False,False,True,1,0,0,0,0,0.003121717597,0.0,0.0,0.0,0.0,,,1,,1,,,,0,"do we have dockside soil, what is the axis of differentiation here",2,0,1,1,0,0,0.4,2
+ENVO:00002259,agricultural soil,0.04739773584,False,False,False,False,True,1,12,1105,1493,32,0.003121717597,0.002267573696,0.1188044296,0.02788256826,0.03751465416,,,1,,1,,,,1,,3,0,1,1,0,1,0.4,3
+ENVO:00002261,forest soil,0.04707891685,False,False,False,False,True,1,22,1289,2273,0,0.003121717597,0.004157218443,0.1385872487,0.04244948269,0.0,,,1,,1,,,,1,,3,0,1,1,0,1,0.4,3
+ENVO:00005741,alpine soil,0.01609263268,False,False,False,False,True,1,6,11,268,46,0.003121717597,0.001133786848,0.00118266853,0.005005042393,0.05392731536,,,1,,1,,,,1,,3,0,1,1,0,1,0.4,3
+ENVO:00005751,jungle soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,1,,,,1,,3,0,1,1,0,1,0.4,3
+ENVO:00005767,manured soil,0.0008073082296,False,False,False,False,True,1,0,1,0,0,0.003121717597,0.0,0.0001075153209,0.0,0.0,,,1,,1,,,,1,,3,0,1,1,0,1,0.4,3
