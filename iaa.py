@@ -2,9 +2,6 @@ import pandas as pd
 import itertools
 import click
 from typing import List, Tuple
-from dash import Dash, dcc, html, Input, Output
-from dash import dash_table
-import plotly.express as px
 
 
 def safe_int_convert(x):
