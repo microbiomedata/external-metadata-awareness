@@ -40,6 +40,9 @@ streamlit-plotly-events = "^0.0.6"
 streamlit-aggrid = "^1.0.5"
 
 
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.1.1"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
