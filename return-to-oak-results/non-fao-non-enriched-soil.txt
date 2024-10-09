@@ -1,0 +1,77 @@
+ENVO:00002230 ! anthrosol
+ENVO:00002231 ! alisol
+ENVO:00002236 ! cryosol
+ENVO:00002238 ! durisol
+ENVO:00002239 ! calcisol
+ENVO:00002241 ! leptosol
+ENVO:00002242 ! lixisol
+ENVO:00002247 ! nitisol
+ENVO:00002250 ! plinthosol
+ENVO:00002253 ! umbrisol
+ENVO:00002258 ! loam
+ENVO:00002259 ! agricultural soil
+ENVO:00002260 ! dune soil
+ENVO:00002261 ! forest soil
+ENVO:00002262 ! clay soil
+ENVO:00002263 ! garden soil
+ENVO:00002274 ! stagnosol
+ENVO:00002275 ! technosol
+ENVO:00002871 ! alluvial soil
+ENVO:00003082 ! enriched soil
+ENVO:00005740 ! paddy field soil
+ENVO:00005741 ! alpine soil
+ENVO:00005742 ! arable soil
+ENVO:00005743 ! roadside soil
+ENVO:00005744 ! allotment garden soil
+ENVO:00005746 ! savanna soil
+ENVO:00005747 ! compost soil
+ENVO:00005748 ! dry soil
+ENVO:00005749 ! farm soil
+ENVO:00005750 ! grassland soil
+ENVO:00005751 ! jungle soil
+ENVO:00005752 ! sawah soil
+ENVO:00005754 ! fertilized soil
+ENVO:00005755 ! field soil
+ENVO:00005756 ! lawn soil
+ENVO:00005758 ! alluvial swamp soil
+ENVO:00005759 ! alluvial paddy field soil
+ENVO:00005760 ! burned soil
+ENVO:00005761 ! meadow soil
+ENVO:00005764 ! pond soil
+ENVO:00005765 ! frozen compost soil
+ENVO:00005766 ! limed soil
+ENVO:00005767 ! manured soil
+ENVO:00005768 ! orchid soil
+ENVO:00005769 ! mountain forest soil
+ENVO:00005770 ! beech forest soil
+ENVO:00005771 ! muddy soil
+ENVO:00005772 ! orchard soil
+ENVO:00005773 ! pasture soil
+ENVO:00005774 ! peat soil
+ENVO:00005777 ! steppe soil
+ENVO:00005778 ! tropical soil
+ENVO:00005779 ! vegetable garden soil
+ENVO:00005780 ! greenhouse soil
+ENVO:00005781 ! heat stressed soil
+ENVO:00005782 ! ornithogenic soil
+ENVO:00005783 ! leafy wood soil
+ENVO:00005784 ! spruce forest soil
+ENVO:00005786 ! upland soil
+ENVO:00005787 ! eucalyptus forest soil
+ENVO:00005788 ! rubber plantation soil
+ENVO:00005789 ! bluegrass field soil
+ENVO:00005790 ! red soil
+ENVO:00005802 ! bulk soil
+ENVO:01001185 ! acidic soil
+ENVO:01001397 ! ultisol
+ENVO:01001525 ! hard-frozen soil
+ENVO:01001526 ! frozen soil
+ENVO:01001527 ! plastic-frozen soil
+ENVO:01001528 ! friable-frozen soil
+ENVO:01001616 ! bare soil
+ENVO:01001638 ! frost-susceptible soil
+ENVO:01001841 ! volcanic soil
+ENVO:02000059 ! surface soil
+ENVO:02000138 ! mangrove biome soil
+ENVO:03600036 ! pathogen-suppressive soil
+ENVO:06105205 ! compacted soil

@@ -1,0 +1,21 @@
+ENVO:00000446 ! terrestrial biome
+ENVO:00002030 ! aquatic biome
+ENVO:01000179 ! desert biome
+ENVO:01000182 ! temperate desert biome
+ENVO:01000183 ! tropical desert biome
+ENVO:01000184 ! subtropical desert biome
+ENVO:01000185 ! montane desert biome
+ENVO:01000186 ! polar desert biome
+ENVO:01000246 ! village biome
+ENVO:01000248 ! dense settlement biome
+ENVO:01000249 ! urban biome
+ENVO:01000339 ! polar biome
+ENVO:01001830 ! tropical biome
+ENVO:01001831 ! temperate biome
+ENVO:01001832 ! subtropical biome
+ENVO:01001833 ! mediterranean biome
+ENVO:01001834 ! subpolar biome
+ENVO:01001835 ! alpine biome
+ENVO:01001836 ! montane biome
+ENVO:01001837 ! subalpine biome
+ENVO:01001838 ! arid biome

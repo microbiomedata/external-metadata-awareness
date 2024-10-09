@@ -1,0 +1,32 @@
+ENVO:00002116 ! contaminated soil
+ENVO:00002117 ! creosote contaminated soil
+ENVO:00002145 ! chromate contaminated soil
+ENVO:00002146 ! xylene contaminated soil
+ENVO:00002875 ! oil contaminated soil
+ENVO:00003081 ! metal contaminated soil
+ENVO:00003083 ! sarcosine enriched soil
+ENVO:00003084 ! trimethylamine enriched soil
+ENVO:00003085 ! skatole enriched soil
+ENVO:00003086 ! ethanol enriched soil
+ENVO:00003087 ! acetamide enriched soil
+ENVO:00003088 ! pantothenate enriched soil
+ENVO:00003089 ! testosterone enriched soil
+ENVO:00003090 ! kynurenate enriched soil
+ENVO:00003091 ! threonine enriched soil
+ENVO:00003092 ! salicylate enriched soil
+ENVO:00003093 ! poly-beta-hydroxybutyrate enriched soil
+ENVO:00003094 ! L-(+)-tartrate enriched soil
+ENVO:00003095 ! quinate enriched soil
+ENVO:00003914 ! chalk soil
+ENVO:00005753 ! urea enriched soil
+ENVO:00005757 ! bacteria enriched soil
+ENVO:00005762 ! chloropicrin enriched soil
+ENVO:00005763 ! humus-rich acidic ash soil
+ENVO:00005775 ! salt contaminated soil
+ENVO:00005776 ! peaty paddy field soil
+ENVO:01000427 ! carbon nanotube enriched soil
+ENVO:06105274 ! sandy loam
+ENVO:06105275 ! silty loam
+ENVO:06105276 ! sandy clay loam
+ENVO:06105277 ! clay loam
+ENVO:06105278 ! silty clay loam

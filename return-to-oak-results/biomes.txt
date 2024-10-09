@@ -1,0 +1,127 @@
+ENVO:00000446 ! terrestrial biome
+ENVO:00000447 ! marine biome
+ENVO:00000873 ! freshwater biome
+ENVO:00000887 ! large river biome
+ENVO:00000888 ! large river headwater biome
+ENVO:00000889 ! large river delta biome
+ENVO:00000890 ! small river biome
+ENVO:00000891 ! large freshwater lake biome
+ENVO:00000892 ! small freshwater lake biome
+ENVO:00000893 ! xeric basin biome
+ENVO:00002030 ! aquatic biome
+ENVO:01000004 ! concentration basin mediterranean sea biome
+ENVO:01000020 ! estuarine biome
+ENVO:01000022 ! marine salt marsh biome
+ENVO:01000023 ! marine pelagic biome
+ENVO:01000024 ! marine benthic biome
+ENVO:01000025 ! marine neritic benthic zone biome
+ENVO:01000026 ! marine bathyal zone biome
+ENVO:01000027 ! marine abyssal zone biome
+ENVO:01000028 ! marine hadal zone biome
+ENVO:01000029 ! marine reef biome
+ENVO:01000030 ! marine hydrothermal vent biome
+ENVO:01000032 ! neritic pelagic zone biome
+ENVO:01000033 ! oceanic pelagic zone biome
+ENVO:01000034 ! oceanic sea surface microlayer biome
+ENVO:01000035 ! oceanic epipelagic zone biome
+ENVO:01000036 ! oceanic mesopelagic zone biome
+ENVO:01000037 ! oceanic bathypelagic zone biome
+ENVO:01000038 ! oceanic abyssopelagic zone biome
+ENVO:01000039 ! oceanic hadal pelagic zone biome
+ENVO:01000040 ! oceanic benthopelagic zone biome
+ENVO:01000041 ! neritic sea surface microlayer biome
+ENVO:01000042 ! neritic epipelagic zone biome
+ENVO:01000043 ! neritic mesopelagic zone biome
+ENVO:01000045 ! epeiric sea biome
+ENVO:01000046 ! marginal sea biome
+ENVO:01000047 ! mediterranean sea biome
+ENVO:01000048 ! ocean biome
+ENVO:01000049 ! marine coral reef biome
+ENVO:01000050 ! marine subtidal rocky reef biome
+ENVO:01000051 ! marine black smoker biome
+ENVO:01000052 ! marine white smoker biome
+ENVO:01000053 ! marine ultramafic hydrothermal vent biome
+ENVO:01000054 ! marine basaltic hydrothermal vent biome
+ENVO:01000123 ! marine sponge reef biome
+ENVO:01000127 ! marine cold seep biome
+ENVO:01000128 ! dilution basin mediterranean sea biome
+ENVO:01000174 ! forest biome
+ENVO:01000175 ! woodland biome
+ENVO:01000176 ! shrubland biome
+ENVO:01000177 ! grassland biome
+ENVO:01000178 ! savanna biome
+ENVO:01000179 ! desert biome
+ENVO:01000180 ! tundra biome
+ENVO:01000181 ! mangrove biome
+ENVO:01000182 ! temperate desert biome
+ENVO:01000183 ! tropical desert biome
+ENVO:01000184 ! subtropical desert biome
+ENVO:01000185 ! montane desert biome
+ENVO:01000186 ! polar desert biome
+ENVO:01000187 ! subtropical savanna biome
+ENVO:01000188 ! tropical savanna biome
+ENVO:01000189 ! temperate savanna biome
+ENVO:01000190 ! flooded savanna biome
+ENVO:01000191 ! subtropical grassland biome
+ENVO:01000192 ! tropical grassland biome
+ENVO:01000193 ! temperate grassland biome
+ENVO:01000194 ! montane grassland biome
+ENVO:01000195 ! flooded grassland biome
+ENVO:01000196 ! coniferous forest biome
+ENVO:01000197 ! broadleaf forest biome
+ENVO:01000198 ! mixed forest biome
+ENVO:01000199 ! mediterranean forest biome
+ENVO:01000200 ! tropical broadleaf forest biome
+ENVO:01000201 ! subtropical broadleaf forest biome
+ENVO:01000202 ! temperate broadleaf forest biome
+ENVO:01000208 ! mediterranean woodland biome
+ENVO:01000209 ! subtropical coniferous forest biome
+ENVO:01000210 ! tropical coniferous forest biome
+ENVO:01000211 ! temperate coniferous forest biome
+ENVO:01000212 ! temperate mixed forest biome
+ENVO:01000213 ! subtropical shrubland biome
+ENVO:01000214 ! tropical shrubland biome
+ENVO:01000215 ! temperate shrubland biome
+ENVO:01000216 ! montane shrubland biome
+ENVO:01000217 ! mediterranean shrubland biome
+ENVO:01000218 ! xeric shrubland biome
+ENVO:01000219 ! anthropogenic terrestrial biome
+ENVO:01000220 ! tropical woodland biome
+ENVO:01000221 ! temperate woodland biome
+ENVO:01000222 ! subtropical woodland biome
+ENVO:01000223 ! montane savanna biome
+ENVO:01000224 ! mediterranean grassland biome
+ENVO:01000225 ! subtropical dry broadleaf forest biome
+ENVO:01000226 ! subtropical moist broadleaf forest biome
+ENVO:01000227 ! tropical dry broadleaf forest biome
+ENVO:01000228 ! tropical moist broadleaf forest biome
+ENVO:01000229 ! mediterranean savanna biome
+ENVO:01000245 ! cropland biome
+ENVO:01000246 ! village biome
+ENVO:01000247 ! rangeland biome
+ENVO:01000248 ! dense settlement biome
+ENVO:01000249 ! urban biome
+ENVO:01000250 ! subpolar coniferous forest biome
+ENVO:01000252 ! freshwater lake biome
+ENVO:01000253 ! freshwater river biome
+ENVO:01000339 ! polar biome
+ENVO:01000854 ! tropical marine coral reef biome
+ENVO:01000856 ! temperate marginal sea biome
+ENVO:01000857 ! temperate mediterranean sea biome
+ENVO:01000858 ! marine upwelling biome
+ENVO:01000859 ! tropical marine upwelling biome
+ENVO:01000860 ! temperate marine upwelling biome
+ENVO:01001230 ! tropical marginal sea biome
+ENVO:01001369 ! tidal mangrove shrubland
+ENVO:01001505 ! alpine tundra biome
+ENVO:01001798 ! tropical mixed forest biome
+ENVO:01001830 ! tropical biome
+ENVO:01001831 ! temperate biome
+ENVO:01001832 ! subtropical biome
+ENVO:01001833 ! mediterranean biome
+ENVO:01001834 ! subpolar biome
+ENVO:01001835 ! alpine biome
+ENVO:01001836 ! montane biome
+ENVO:01001837 ! subalpine biome
+ENVO:01001838 ! arid biome
+ENVO:03605008 ! freshwater stream biome
