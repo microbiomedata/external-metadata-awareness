@@ -24,6 +24,32 @@ return-to-oak-results/non-aquatic-non-terrestrial-biomes.txt: return-to-oak-resu
 return-to-oak-results/soil.txt:
 	poetry run runoak --input sqlite:obo:envo info .desc//p=i 'soil' .not soil | sort > $@
 
+
+return-to-oak-results/soil.csv: return-to-oak-results/soil.txt
+	poetry run normalize-envo-data \
+		--input-file $< \
+		--ontology-prefix ENVO \
+		--output-file $@
+
+# 			--output $@ \
+    #				--output-type tsv
+
+#    		--output-type yaml \
+#		--output $@
+
+return-to-oak-results/soil-annotated.yaml: return-to-oak-results/soil.csv
+	date ; poetry run runoak \
+		-v \
+		--input bioportal: annotate \
+		--no-matches-whole-text \
+		--output-type yaml \
+		--output $@ \
+		--text-file $< \
+		--match-column normalized_label ; date
+
+return-to-oak-results/soil-relationships.tsv:
+	poetry run runoak --input sqlite:obo:envo relationships .desc//p=i soil > $@
+
 return-to-oak-results/enriched-soil.txt:
 	poetry run runoak --input sqlite:obo:envo info .desc//p=i 'enriched soil' .not 'enriched soil' | sort > $@
 
@@ -37,4 +63,7 @@ return-to-oak-results/mixs-fao-classes-tidy.txt: return-to-oak-results/mixs-fao-
 	sed 's/://' $< | sed 's/s$$//' | tr '[:upper:]' '[:lower:]' | sort > $@
 
 return-to-oak-results/non-fao-non-enriched-soil.txt: return-to-oak-results/mixs-fao-classes-tidy.txt return-to-oak-results/non-enriched-soil.txt
+	grep -v -f $(word 1, $^) $(word 2, $^) > $@
+
+return-to-oak-results/non-observed-biomes.txt: return-to-oak-results/observed-consolidated/soil-ebs-biomes.txt return-to-oak-results/biomes.txt
 	grep -v -f $(word 1, $^) $(word 2, $^) > $@
