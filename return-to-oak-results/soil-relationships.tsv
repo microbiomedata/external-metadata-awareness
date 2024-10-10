@@ -1,0 +1,228 @@
+subject	predicate	object	subject_label	predicate_label	object_label
+ENVO:00002116	rdfs:subClassOf	ENVO:00003082	contaminated soil	None	enriched soil
+ENVO:00002117	ENVO:02000200	ENVO:2000001	creosote contaminated soil	has increased levels of	creosote
+ENVO:00002117	rdfs:subClassOf	ENVO:00002116	creosote contaminated soil	None	contaminated soil
+ENVO:00002145	ENVO:02000200	CHEBI:35404	chromate contaminated soil	has increased levels of	chromate(2-)
+ENVO:00002145	rdfs:subClassOf	ENVO:00003081	chromate contaminated soil	None	metal contaminated soil
+ENVO:00002146	ENVO:02000200	CHEBI:27338	xylene contaminated soil	has increased levels of	xylene
+ENVO:00002146	rdfs:subClassOf	ENVO:00002116	xylene contaminated soil	None	contaminated soil
+ENVO:00002229	rdfs:subClassOf	ENVO:00001998	arenosol	None	soil
+ENVO:00002230	RO:0002353	ENVO:01000952	anthrosol	output of	anthropisation
+ENVO:00002230	rdfs:subClassOf	ENVO:00001998	anthrosol	None	soil
+ENVO:00002230	rdfs:subClassOf	ENVO:0010001	anthrosol	None	anthropogenic environmental material
+ENVO:00002231	rdfs:subClassOf	ENVO:00001998	alisol	None	soil
+ENVO:00002233	rdfs:subClassOf	ENVO:00001998	albeluvisol	None	soil
+ENVO:00002234	rdfs:subClassOf	ENVO:01001397	acrisol	None	ultisol
+ENVO:00002235	rdfs:subClassOf	ENVO:00001998	cambisol	None	soil
+ENVO:00002236	BFO:0000050	ENVO:00000134	cryosol	part of	permafrost
+ENVO:00002236	rdfs:subClassOf	ENVO:01001526	cryosol	None	frozen soil
+ENVO:00002237	rdfs:subClassOf	ENVO:00001998	chernozem	None	soil
+ENVO:00002238	rdfs:subClassOf	ENVO:00001998	durisol	None	soil
+ENVO:00002239	rdfs:subClassOf	ENVO:00001998	calcisol	None	soil
+ENVO:00002240	rdfs:subClassOf	ENVO:00001998	kastanozem	None	soil
+ENVO:00002241	rdfs:subClassOf	ENVO:00001998	leptosol	None	soil
+ENVO:00002242	rdfs:subClassOf	ENVO:00001998	lixisol	None	soil
+ENVO:00002244	rdfs:subClassOf	ENVO:00001998	gleysol	None	soil
+ENVO:00002245	rdfs:subClassOf	ENVO:00001998	gypsisol	None	soil
+ENVO:00002246	rdfs:subClassOf	ENVO:00001998	ferralsol	None	soil
+ENVO:00002247	rdfs:subClassOf	ENVO:00001998	nitisol	None	soil
+ENVO:00002249	rdfs:subClassOf	ENVO:00001998	phaeozem	None	soil
+ENVO:00002251	rdfs:subClassOf	ENVO:00001998	planosol	None	soil
+ENVO:00002252	rdfs:subClassOf	ENVO:00001998	solonchak	None	soil
+ENVO:00002253	rdfs:subClassOf	ENVO:00001998	umbrisol	None	soil
+ENVO:00002254	rdfs:subClassOf	ENVO:00001998	vertisol	None	soil
+ENVO:00002255	rdfs:subClassOf	ENVO:00001998	solonetz	None	soil
+ENVO:00002257	rdfs:subClassOf	ENVO:00001998	podzol	None	soil
+ENVO:00002258	RO:0000053	ENVO:06105271	loam	has characteristic	soil texture
+ENVO:00002258	rdfs:subClassOf	ENVO:00001998	loam	None	soil
+ENVO:00002259	BFO:0000050	ENVO:00000077	agricultural soil	part of	agricultural ecosystem
+ENVO:00002259	rdfs:subClassOf	ENVO:00001998	agricultural soil	None	soil
+ENVO:00002260	BFO:0000050	ENVO:00000170	dune soil	part of	dune
+ENVO:00002260	rdfs:subClassOf	ENVO:00005786	dune soil	None	upland soil
+ENVO:00002262	RO:0002473	ENVO:00002982	clay soil	composed primarily of	clay
+ENVO:00002262	rdfs:subClassOf	ENVO:00001998	clay soil	None	soil
+ENVO:00002263	BFO:0000050	ENVO:00000011	garden soil	part of	garden
+ENVO:00002263	RO:0001025	ENVO:00000011	garden soil	located in	garden
+ENVO:00002263	rdfs:subClassOf	ENVO:00001998	garden soil	None	soil
+ENVO:00002274	rdfs:subClassOf	ENVO:00001998	stagnosol	None	soil
+ENVO:00002275	BFO:0000050	ENVO:01000983	technosol	part of	technosphere
+ENVO:00002275	rdfs:subClassOf	ENVO:00001998	technosol	None	soil
+ENVO:00002875	ENVO:02000200	ENVO:00002985	oil contaminated soil	has increased levels of	oil
+ENVO:00002875	rdfs:subClassOf	ENVO:00002116	oil contaminated soil	None	contaminated soil
+ENVO:00003081	ENVO:02000200	CHEBI:33521	metal contaminated soil	has increased levels of	metal atom
+ENVO:00003081	rdfs:subClassOf	ENVO:00002116	metal contaminated soil	None	contaminated soil
+ENVO:00003082	ENVO:02000200	BFO:0000040	enriched soil	has increased levels of	material entity
+ENVO:00003082	rdfs:subClassOf	ENVO:00001998	enriched soil	None	soil
+ENVO:00003083	ENVO:02000200	CHEBI:15611	sarcosine enriched soil	has increased levels of	sarcosine
+ENVO:00003083	rdfs:subClassOf	ENVO:00003082	sarcosine enriched soil	None	enriched soil
+ENVO:00003085	ENVO:02000200	CHEBI:9171	skatole enriched soil	has increased levels of	skatole
+ENVO:00003085	rdfs:subClassOf	ENVO:00003082	skatole enriched soil	None	enriched soil
+ENVO:00003086	ENVO:02000200	CHEBI:16236	ethanol enriched soil	has increased levels of	ethanol
+ENVO:00003086	rdfs:subClassOf	ENVO:00003082	ethanol enriched soil	None	enriched soil
+ENVO:00003087	ENVO:02000200	CHEBI:27856	acetamide enriched soil	has increased levels of	acetamide
+ENVO:00003087	rdfs:subClassOf	ENVO:00003082	acetamide enriched soil	None	enriched soil
+ENVO:00003088	ENVO:02000200	CHEBI:16454	pantothenate enriched soil	has increased levels of	pantothenate
+ENVO:00003088	rdfs:subClassOf	ENVO:00003082	pantothenate enriched soil	None	enriched soil
+ENVO:00003090	ENVO:02000200	CHEBI:58454	kynurenate enriched soil	has increased levels of	kynurenate
+ENVO:00003090	rdfs:subClassOf	ENVO:00003082	kynurenate enriched soil	None	enriched soil
+ENVO:00003091	ENVO:02000200	CHEBI:26986	threonine enriched soil	has increased levels of	threonine
+ENVO:00003091	rdfs:subClassOf	ENVO:00003082	threonine enriched soil	None	enriched soil
+ENVO:00003092	ENVO:02000200	CHEBI:30762	salicylate enriched soil	has increased levels of	salicylate
+ENVO:00003092	rdfs:subClassOf	ENVO:00003082	salicylate enriched soil	None	enriched soil
+ENVO:00003093	ENVO:02000200	CHEBI:53388	poly-beta-hydroxybutyrate enriched soil	has increased levels of	poly(hydroxybutyrate)
+ENVO:00003093	rdfs:subClassOf	ENVO:00003082	poly-beta-hydroxybutyrate enriched soil	None	enriched soil
+ENVO:00003094	rdfs:subClassOf	ENVO:00003082	L-(+)-tartrate enriched soil	None	enriched soil
+ENVO:00005740	BFO:0000050	ENVO:00000297	paddy field soil	part of	paddy field
+ENVO:00005740	rdfs:subClassOf	ENVO:00002259	paddy field soil	None	agricultural soil
+ENVO:00005740	rdfs:subClassOf	ENVO:00005755	paddy field soil	None	field soil
+ENVO:00005743	RO:0001025	ENVO:01000447	roadside soil	located in	roadside
+ENVO:00005743	rdfs:subClassOf	ENVO:00001998	roadside soil	None	soil
+ENVO:00005744	BFO:0000050	ENVO:00005745	allotment garden soil	part of	allotment garden
+ENVO:00005744	rdfs:subClassOf	ENVO:00002263	allotment garden soil	None	garden soil
+ENVO:00005746	RO:0001025	ENVO:00000261	savanna soil	located in	savanna
+ENVO:00005746	rdfs:subClassOf	ENVO:00005750	savanna soil	None	grassland soil
+ENVO:00005749	rdfs:subClassOf	ENVO:00001998	farm soil	None	soil
+ENVO:00005751	rdfs:subClassOf	ENVO:00001998	jungle soil	None	soil
+ENVO:00005752	rdfs:subClassOf	ENVO:00001998	sawah soil	None	soil
+ENVO:00005754	rdfs:subClassOf	ENVO:00001998	fertilized soil	None	soil
+ENVO:00005755	BFO:0000050	ENVO:00000114	field soil	part of	agricultural field
+ENVO:00005755	rdfs:subClassOf	ENVO:00001998	field soil	None	soil
+ENVO:00005756	rdfs:subClassOf	ENVO:00001998	lawn soil	None	soil
+ENVO:00005757	rdfs:subClassOf	ENVO:00003082	bacteria enriched soil	None	enriched soil
+ENVO:00005758	BFO:0000050	ENVO:00000233	alluvial swamp soil	part of	swamp ecosystem
+ENVO:00005758	rdfs:subClassOf	ENVO:00002871	alluvial swamp soil	None	alluvial soil
+ENVO:00005760	RO:0002353	ENVO:01000839	burned soil	output of	combustion process
+ENVO:00005760	rdfs:subClassOf	ENVO:00001998	burned soil	None	soil
+ENVO:00005761	BFO:0000050	ENVO:00000108	meadow soil	part of	meadow ecosystem
+ENVO:00005761	rdfs:subClassOf	ENVO:00001998	meadow soil	None	soil
+ENVO:00005763	ENVO:02000200	ENVO:01000000	humus-rich acidic ash soil	has increased levels of	humus
+ENVO:00005763	ENVO:02000200	ENVO:02000090	humus-rich acidic ash soil	has increased levels of	ash
+ENVO:00005763	rdfs:subClassOf	ENVO:00003082	humus-rich acidic ash soil	None	enriched soil
+ENVO:00005764	RO:0002220	ENVO:00000033	pond soil	adjacent to	pond
+ENVO:00005764	rdfs:subClassOf	ENVO:00001998	pond soil	None	soil
+ENVO:00005765	rdfs:subClassOf	ENVO:00005747	frozen compost soil	None	compost soil
+ENVO:00005765	rdfs:subClassOf	ENVO:01001526	frozen compost soil	None	frozen soil
+ENVO:00005766	rdfs:subClassOf	ENVO:00001998	limed soil	None	soil
+ENVO:00005768	rdfs:subClassOf	ENVO:00001998	orchid soil	None	soil
+ENVO:00005769	BFO:0000050	ENVO:00000081	mountain forest soil	part of	mountain
+ENVO:00005769	rdfs:subClassOf	ENVO:00002261	mountain forest soil	None	forest soil
+ENVO:00005769	rdfs:subClassOf	ENVO:00005786	mountain forest soil	None	upland soil
+ENVO:00005770	rdfs:subClassOf	ENVO:00002261	beech forest soil	None	forest soil
+ENVO:00005772	BFO:0000050	ENVO:00000115	orchard soil	part of	orchard
+ENVO:00005772	RO:0001025	ENVO:00000115	orchard soil	located in	orchard
+ENVO:00005772	rdfs:subClassOf	ENVO:00005749	orchard soil	None	farm soil
+ENVO:00005773	RO:0001025	ENVO:00000266	pasture soil	located in	pasture
+ENVO:00005773	rdfs:subClassOf	ENVO:00001998	pasture soil	None	soil
+ENVO:00005774	rdfs:subClassOf	ENVO:00002243	peat soil	None	histosol
+ENVO:00005775	ENVO:02000200	CHEBI:26710	salt contaminated soil	has increased levels of	sodium chloride
+ENVO:00005775	RO:0000086	PATO:0001657	salt contaminated soil	has quality	increased osmolarity
+ENVO:00005775	rdfs:subClassOf	ENVO:00002116	salt contaminated soil	None	contaminated soil
+ENVO:00005777	RO:0001025	ENVO:00000262	steppe soil	located in	steppe
+ENVO:00005777	rdfs:subClassOf	ENVO:00005750	steppe soil	None	grassland soil
+ENVO:00005778	rdfs:subClassOf	ENVO:00001998	tropical soil	None	soil
+ENVO:00005779	rdfs:subClassOf	ENVO:00002263	vegetable garden soil	None	garden soil
+ENVO:00005780	rdfs:subClassOf	ENVO:00001998	greenhouse soil	None	soil
+ENVO:00005782	rdfs:subClassOf	ENVO:00001998	ornithogenic soil	None	soil
+ENVO:00005783	rdfs:subClassOf	ENVO:00002261	leafy wood soil	None	forest soil
+ENVO:00005784	rdfs:subClassOf	ENVO:00002261	spruce forest soil	None	forest soil
+ENVO:00005786	BFO:0000050	ENVO:00000176	upland soil	part of	elevated landform
+ENVO:00005786	rdfs:subClassOf	ENVO:00001998	upland soil	None	soil
+ENVO:00005787	rdfs:subClassOf	ENVO:00002261	eucalyptus forest soil	None	forest soil
+ENVO:00005788	BFO:0000050	ENVO:00000164	rubber plantation soil	part of	rubber plantation
+ENVO:00005788	rdfs:subClassOf	ENVO:00002259	rubber plantation soil	None	agricultural soil
+ENVO:00005788	rdfs:subClassOf	ENVO:00005749	rubber plantation soil	None	farm soil
+ENVO:00005789	rdfs:subClassOf	ENVO:00002259	bluegrass field soil	None	agricultural soil
+ENVO:00005802	rdfs:subClassOf	ENVO:00001998	bulk soil	None	soil
+ENVO:01000427	ENVO:02000200	CHEBI:50594	carbon nanotube enriched soil	has increased levels of	carbon nanotube
+ENVO:01000427	rdfs:subClassOf	ENVO:00003082	carbon nanotube enriched soil	None	enriched soil
+ENVO:01001185	RO:0000086	PATO:0001429	acidic soil	has quality	acidic
+ENVO:01001185	rdfs:subClassOf	ENVO:00001998	acidic soil	None	soil
+ENVO:01001397	rdfs:subClassOf	ENVO:00001998	ultisol	None	soil
+ENVO:01001527	BFO:0000051	ENVO:00002006	plastic-frozen soil	has part	liquid water
+ENVO:01001527	rdfs:subClassOf	ENVO:01001526	plastic-frozen soil	None	frozen soil
+ENVO:01001528	BFO:0000051	ENVO:01000277	friable-frozen soil	has part	water ice
+ENVO:01001528	RO:0000086	PATO:0000386	friable-frozen soil	has quality	hard
+ENVO:01001528	rdfs:subClassOf	ENVO:01000814	friable-frozen soil	None	solid environmental material
+ENVO:01001528	rdfs:subClassOf	ENVO:01001526	friable-frozen soil	None	frozen soil
+ENVO:01001616	RO:0002220	ENVO:01000540	bare soil	adjacent to	troposphere
+ENVO:01001616	rdfs:subClassOf	ENVO:00001998	bare soil	None	soil
+ENVO:01001638	rdfs:subClassOf	ENVO:00001998	frost-susceptible soil	None	soil
+ENVO:01001841	rdfs:subClassOf	ENVO:00002232	volcanic soil	None	andosol
+ENVO:02000059	rdfs:subClassOf	ENVO:00001998	surface soil	None	soil
+ENVO:02000138	RO:0001025	ENVO:01000181	mangrove biome soil	located in	mangrove biome
+ENVO:02000138	rdfs:subClassOf	ENVO:00001998	mangrove biome soil	None	soil
+ENVO:06105205	RO:0000086	PATO:0001485	compacted soil	has quality	condensed
+ENVO:06105205	rdfs:subClassOf	ENVO:00001998	compacted soil	None	soil
+ENVO:06105274	ENVO:02000200	ENVO:01000017	sandy loam	has increased levels of	sand
+ENVO:06105274	rdfs:subClassOf	ENVO:00002258	sandy loam	None	loam
+ENVO:06105274	rdfs:subClassOf	ENVO:00003082	sandy loam	None	enriched soil
+ENVO:06105275	ENVO:02000200	ENVO:01000016	silty loam	has increased levels of	silt
+ENVO:06105275	rdfs:subClassOf	ENVO:00002258	silty loam	None	loam
+ENVO:06105275	rdfs:subClassOf	ENVO:00003082	silty loam	None	enriched soil
+ENVO:06105276	ENVO:02000200	ENVO:01000017	sandy clay loam	has increased levels of	sand
+ENVO:06105276	rdfs:subClassOf	ENVO:06105277	sandy clay loam	None	clay loam
+ENVO:06105277	ENVO:02000200	ENVO:00002982	clay loam	has increased levels of	clay
+ENVO:06105277	rdfs:subClassOf	ENVO:00002258	clay loam	None	loam
+ENVO:06105277	rdfs:subClassOf	ENVO:00003082	clay loam	None	enriched soil
+ENVO:00001998	BFO:0000050	ENVO:01000820	soil	part of	pedosphere
+ENVO:00001998	BFO:0000051	ENVO:00002982	soil	has part	clay
+ENVO:00001998	BFO:0000051	ENVO:01000016	soil	has part	silt
+ENVO:00001998	BFO:0000051	ENVO:01000017	soil	has part	sand
+ENVO:00001998	BFO:0000051	ENVO:01000155	soil	has part	organic material
+ENVO:00001998	BFO:0000051	ENVO:01000256	soil	has part	mineral material
+ENVO:00001998	RO:0000086	PATO:0000984	soil	has quality	porous
+ENVO:00001998	RO:0000091	ENVO:06105304	soil	has disposition	water-holding capacity of soil
+ENVO:00001998	rdfs:subClassOf	ENVO:00010483	soil	None	environmental material
+ENVO:00001998	rdfs:subClassOf	ENVO:01000813	soil	None	astronomical body part
+ENVO:00002232	rdfs:subClassOf	ENVO:00001998	andosol	None	soil
+ENVO:00002243	rdfs:subClassOf	ENVO:00001998	histosol	None	soil
+ENVO:00002248	rdfs:subClassOf	ENVO:00001998	luvisol	None	soil
+ENVO:00002250	rdfs:subClassOf	ENVO:00001998	plinthosol	None	soil
+ENVO:00002256	rdfs:subClassOf	ENVO:00001998	regosol	None	soil
+ENVO:00002261	RO:0001025	ENVO:00000111	forest soil	located in	forested area
+ENVO:00002261	rdfs:subClassOf	ENVO:00001998	forest soil	None	soil
+ENVO:00002273	rdfs:subClassOf	ENVO:00001998	fluvisol	None	soil
+ENVO:00002871	RO:0002353	ENVO:01001346	alluvial soil	output of	erosion
+ENVO:00002871	RO:0002354	ENVO:01000982	alluvial soil	formed as result of	water flow process
+ENVO:00002871	RO:0002354	ENVO:01001346	alluvial soil	formed as result of	erosion
+ENVO:00002871	rdfs:subClassOf	ENVO:00001998	alluvial soil	None	soil
+ENVO:00003084	ENVO:02000200	CHEBI:18139	trimethylamine enriched soil	has increased levels of	trimethylamine
+ENVO:00003084	rdfs:subClassOf	ENVO:00003082	trimethylamine enriched soil	None	enriched soil
+ENVO:00003089	ENVO:02000200	CHEBI:17347	testosterone enriched soil	has increased levels of	testosterone
+ENVO:00003089	rdfs:subClassOf	ENVO:00003082	testosterone enriched soil	None	enriched soil
+ENVO:00003095	ENVO:02000200	CHEBI:26490	quinate enriched soil	has increased levels of	quinate
+ENVO:00003095	rdfs:subClassOf	ENVO:00003082	quinate enriched soil	None	enriched soil
+ENVO:00003914	ENVO:02000200	ENVO:00002054	chalk soil	has increased levels of	chalk
+ENVO:00003914	rdfs:subClassOf	ENVO:00003082	chalk soil	None	enriched soil
+ENVO:00005741	rdfs:subClassOf	ENVO:00001998	alpine soil	None	soil
+ENVO:00005742	rdfs:subClassOf	ENVO:00001998	arable soil	None	soil
+ENVO:00005747	RO:0001000	ENVO:00002170	compost soil	derives from	compost
+ENVO:00005747	rdfs:subClassOf	ENVO:00001998	compost soil	None	soil
+ENVO:00005748	RO:0000086	PATO:0001824	dry soil	has quality	dry
+ENVO:00005748	rdfs:subClassOf	ENVO:00001998	dry soil	None	soil
+ENVO:00005750	RO:0001025	ENVO:00000106	grassland soil	located in	grassland area
+ENVO:00005750	rdfs:subClassOf	ENVO:00001998	grassland soil	None	soil
+ENVO:00005753	ENVO:02000200	CHEBI:16199	urea enriched soil	has increased levels of	urea
+ENVO:00005753	rdfs:subClassOf	ENVO:00003082	urea enriched soil	None	enriched soil
+ENVO:00005759	rdfs:subClassOf	ENVO:00002871	alluvial paddy field soil	None	alluvial soil
+ENVO:00005759	rdfs:subClassOf	ENVO:00005740	alluvial paddy field soil	None	paddy field soil
+ENVO:00005762	ENVO:02000200	CHEBI:39285	chloropicrin enriched soil	has increased levels of	chloropicrin
+ENVO:00005762	rdfs:subClassOf	ENVO:00003082	chloropicrin enriched soil	None	enriched soil
+ENVO:00005767	rdfs:subClassOf	ENVO:00001998	manured soil	None	soil
+ENVO:00005771	RO:0002473	ENVO:01000001	muddy soil	composed primarily of	mud
+ENVO:00005771	rdfs:subClassOf	ENVO:00001998	muddy soil	None	soil
+ENVO:00005776	ENVO:02000200	ENVO:00005774	peaty paddy field soil	has increased levels of	peat soil
+ENVO:00005776	rdfs:subClassOf	ENVO:00003082	peaty paddy field soil	None	enriched soil
+ENVO:00005776	rdfs:subClassOf	ENVO:00005740	peaty paddy field soil	None	paddy field soil
+ENVO:00005781	rdfs:subClassOf	ENVO:00001998	heat stressed soil	None	soil
+ENVO:00005790	rdfs:subClassOf	ENVO:00001998	red soil	None	soil
+ENVO:01001525	BFO:0000051	ENVO:01000277	hard-frozen soil	has part	water ice
+ENVO:01001525	RO:0000086	PATO:0000386	hard-frozen soil	has quality	hard
+ENVO:01001525	rdfs:subClassOf	ENVO:01000814	hard-frozen soil	None	solid environmental material
+ENVO:01001525	rdfs:subClassOf	ENVO:01001526	hard-frozen soil	None	frozen soil
+ENVO:01001526	BFO:0000050	ENVO:01001524	frozen soil	part of	frozen land
+ENVO:01001526	RO:0000086	PATO:0001985	frozen soil	has quality	frozen
+ENVO:01001526	rdfs:subClassOf	ENVO:00001998	frozen soil	None	soil
+ENVO:03600036	rdfs:subClassOf	ENVO:00001998	pathogen-suppressive soil	None	soil
+ENVO:06105278	ENVO:02000200	ENVO:01000016	silty clay loam	has increased levels of	silt
+ENVO:06105278	rdfs:subClassOf	ENVO:06105277	silty clay loam	None	clay loam
