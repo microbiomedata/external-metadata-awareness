@@ -5,7 +5,8 @@ local/soil-env-medium-evidence-table.tsv: config/soil-env_medium-evidence-config
 local/EnvMediumSoilEnum-pvs-keys-parsed-unique.csv \
 local/nmdc-production-biosamples-soil-env_medium.tsv \
 local/ncbi-mims-soil-biosamples-env_medium-annotated.tsv \
-local/goldData_biosamples-inferred-soil-env_medium-counts.tsv
+local/goldData_biosamples-inferred-soil-env_medium-counts.tsv \
+local/soil-ids.tsv
 	$(RUN) python external_metadata_awareness/extract_value_set_evidence.py \
 		--config $< \
 		--downsample-uncounted \

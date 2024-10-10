@@ -1,0 +1,1030 @@
+raw_text: ENVO:00002116 ! contaminated soil
+portion_parsed: ENVO:00002116 ! contaminated soil
+normalized_curie: ENVO:00002116
+normalized_label: contaminated soil
+matched_id: SNMI:A-A3040
+matched_label: Soil pollution
+
+---
+raw_text: ENVO:00002117 ! creosote contaminated soil
+portion_parsed: ENVO:00002117 ! creosote contaminated soil
+normalized_curie: ENVO:00002117
+normalized_label: creosote contaminated soil
+matched_id: MEO:MEO_0001810
+matched_label: creosote contaminated soil
+
+---
+raw_text: ENVO:00002145 ! chromate contaminated soil
+portion_parsed: ENVO:00002145 ! chromate contaminated soil
+normalized_curie: ENVO:00002145
+normalized_label: chromate contaminated soil
+matched_id: MEO:MEO_0002116
+matched_label: chromate contaminated soil
+
+---
+raw_text: ENVO:00002146 ! xylene contaminated soil
+portion_parsed: ENVO:00002146 ! xylene contaminated soil
+normalized_curie: ENVO:00002146
+normalized_label: xylene contaminated soil
+matched_id: ENVO:00002146
+matched_label: xylene contaminated soil
+
+---
+raw_text: ENVO:00002229 ! arenosol
+portion_parsed: ENVO:00002229 ! arenosol
+normalized_curie: ENVO:00002229
+normalized_label: arenosol
+matched_id: MEO:MEO_0001855
+matched_label: arenosol
+
+---
+raw_text: ENVO:00002230 ! anthrosol
+portion_parsed: ENVO:00002230 ! anthrosol
+normalized_curie: ENVO:00002230
+normalized_label: anthrosol
+matched_id: http://purl.obolibrary.org/obo/MVC_0000407
+matched_label: Anthrosol
+
+---
+raw_text: ENVO:00002231 ! alisol
+portion_parsed: ENVO:00002231 ! alisol
+normalized_curie: ENVO:00002231
+normalized_label: alisol
+matched_id: MEO:MEO_0001856
+matched_label: alisol
+
+---
+raw_text: ENVO:00002232 ! andosol
+portion_parsed: ENVO:00002232 ! andosol
+normalized_curie: ENVO:00002232
+normalized_label: andosol
+matched_id: ENVO:00002232
+matched_label: andosol
+
+---
+raw_text: ENVO:00002233 ! albeluvisol
+portion_parsed: ENVO:00002233 ! albeluvisol
+normalized_curie: ENVO:00002233
+normalized_label: albeluvisol
+matched_id: http://purl.obolibrary.org/obo/MVC_0000404
+matched_label: Albeluvisol
+
+---
+raw_text: ENVO:00002234 ! acrisol
+portion_parsed: ENVO:00002234 ! acrisol
+normalized_curie: ENVO:00002234
+normalized_label: acrisol
+matched_id: http://purl.obolibrary.org/obo/MVC_0000403
+matched_label: Acrisol
+
+---
+raw_text: ENVO:00002235 ! cambisol
+portion_parsed: ENVO:00002235 ! cambisol
+normalized_curie: ENVO:00002235
+normalized_label: cambisol
+matched_id: MEO:MEO_0000948
+matched_label: cambisol
+
+---
+raw_text: ENVO:00002236 ! cryosol
+portion_parsed: ENVO:00002236 ! cryosol
+normalized_curie: ENVO:00002236
+normalized_label: cryosol
+matched_id: MEO:MEO_0001860
+matched_label: cryosol
+
+---
+raw_text: ENVO:00002237 ! chernozem
+portion_parsed: ENVO:00002237 ! chernozem
+normalized_curie: ENVO:00002237
+normalized_label: chernozem
+matched_id: MEO:MEO_0001861
+matched_label: chernozem
+
+---
+raw_text: ENVO:00002238 ! durisol
+portion_parsed: ENVO:00002238 ! durisol
+normalized_curie: ENVO:00002238
+normalized_label: durisol
+matched_id: http://purl.obolibrary.org/obo/MVC_0000413
+matched_label: Durisol
+
+---
+raw_text: ENVO:00002239 ! calcisol
+portion_parsed: ENVO:00002239 ! calcisol
+normalized_curie: ENVO:00002239
+normalized_label: calcisol
+matched_id: MEO:MEO_0001163
+matched_label: calcisol
+
+---
+raw_text: ENVO:00002240 ! kastanozem
+portion_parsed: ENVO:00002240 ! kastanozem
+normalized_curie: ENVO:00002240
+normalized_label: kastanozem
+matched_id: ENVO:00002240
+matched_label: kastanozem
+
+---
+raw_text: ENVO:00002241 ! leptosol
+portion_parsed: ENVO:00002241 ! leptosol
+normalized_curie: ENVO:00002241
+normalized_label: leptosol
+matched_id: http://purl.obolibrary.org/obo/MVC_0000420
+matched_label: Leptosol
+
+---
+raw_text: ENVO:00002242 ! lixisol
+portion_parsed: ENVO:00002242 ! lixisol
+normalized_curie: ENVO:00002242
+normalized_label: lixisol
+matched_id: ENVO:00002242
+matched_label: lixisol
+
+---
+raw_text: ENVO:00002243 ! histosol
+portion_parsed: ENVO:00002243 ! histosol
+normalized_curie: ENVO:00002243
+normalized_label: histosol
+matched_id: ENVO:00002243
+matched_label: histosol
+
+---
+raw_text: ENVO:00002244 ! gleysol
+portion_parsed: ENVO:00002244 ! gleysol
+normalized_curie: ENVO:00002244
+normalized_label: gleysol
+matched_id: http://purl.obolibrary.org/obo/MVC_0000416
+matched_label: Gleysol
+
+---
+raw_text: ENVO:00002245 ! gypsisol
+portion_parsed: ENVO:00002245 ! gypsisol
+normalized_curie: ENVO:00002245
+normalized_label: gypsisol
+matched_id: MEO:MEO_0001868
+matched_label: gypsisol
+
+---
+raw_text: ENVO:00002246 ! ferralsol
+portion_parsed: ENVO:00002246 ! ferralsol
+normalized_curie: ENVO:00002246
+normalized_label: ferralsol
+matched_id: MEO:MEO_0001164
+matched_label: ferralsol
+
+---
+raw_text: ENVO:00002247 ! nitisol
+portion_parsed: ENVO:00002247 ! nitisol
+normalized_curie: ENVO:00002247
+normalized_label: nitisol
+matched_id: MEO:MEO_0001869
+matched_label: nitisol
+
+---
+raw_text: ENVO:00002248 ! luvisol
+portion_parsed: ENVO:00002248 ! luvisol
+normalized_curie: ENVO:00002248
+normalized_label: luvisol
+matched_id: ENVO:00002248
+matched_label: luvisol
+
+---
+raw_text: ENVO:00002249 ! phaeozem
+portion_parsed: ENVO:00002249 ! phaeozem
+normalized_curie: ENVO:00002249
+normalized_label: phaeozem
+matched_id: ENVO:00002249
+matched_label: phaeozem
+
+---
+raw_text: ENVO:00002250 ! plinthosol
+portion_parsed: ENVO:00002250 ! plinthosol
+normalized_curie: ENVO:00002250
+normalized_label: plinthosol
+matched_id: MEO:MEO_0001872
+matched_label: plinthosol
+
+---
+raw_text: ENVO:00002251 ! planosol
+portion_parsed: ENVO:00002251 ! planosol
+normalized_curie: ENVO:00002251
+normalized_label: planosol
+matched_id: http://purl.jp/bio/4/id/200906097905115030
+matched_label: planosol
+
+---
+raw_text: ENVO:00002252 ! solonchak
+portion_parsed: ENVO:00002252 ! solonchak
+normalized_curie: ENVO:00002252
+normalized_label: solonchak
+matched_id: http://purl.jp/bio/4/id/200906028202411116
+matched_label: saline soil
+
+---
+raw_text: ENVO:00002253 ! umbrisol
+portion_parsed: ENVO:00002253 ! umbrisol
+normalized_curie: ENVO:00002253
+normalized_label: umbrisol
+matched_id: MEO:MEO_0001875
+matched_label: umbrisol
+
+---
+raw_text: ENVO:00002254 ! vertisol
+portion_parsed: ENVO:00002254 ! vertisol
+normalized_curie: ENVO:00002254
+normalized_label: vertisol
+matched_id: http://purl.jp/bio/4/id/200906031405733152
+matched_label: Vertisol
+
+---
+raw_text: ENVO:00002255 ! solonetz
+portion_parsed: ENVO:00002255 ! solonetz
+normalized_curie: ENVO:00002255
+normalized_label: solonetz
+matched_id: MEO:MEO_0001877
+matched_label: solonetz
+
+---
+raw_text: ENVO:00002256 ! regosol
+portion_parsed: ENVO:00002256 ! regosol
+normalized_curie: ENVO:00002256
+normalized_label: regosol
+matched_id: ENVO:00002256
+matched_label: regosol
+
+---
+raw_text: ENVO:00002257 ! podzol
+portion_parsed: ENVO:00002257 ! podzol
+normalized_curie: ENVO:00002257
+normalized_label: podzol
+matched_id: MEO:MEO_0001879
+matched_label: podzol
+
+---
+raw_text: ENVO:00002258 ! loam
+portion_parsed: ENVO:00002258 ! loam
+normalized_curie: ENVO:00002258
+normalized_label: loam
+matched_id: http://purl.jp/bio/4/id/201106073577193357
+matched_label: loam
+
+---
+raw_text: ENVO:00002259 ! agricultural soil
+portion_parsed: ENVO:00002259 ! agricultural soil
+normalized_curie: ENVO:00002259
+normalized_label: agricultural soil
+matched_id: https://w3id.org/gold.path/4244
+matched_label: Environmental > Terrestrial > Soil > Loam > Agricultural soil
+
+---
+raw_text: ENVO:00002260 ! dune soil
+portion_parsed: ENVO:00002260 ! dune soil
+normalized_curie: ENVO:00002260
+normalized_label: dune soil
+matched_id: ENVO:00002260
+matched_label: dune soil
+
+---
+raw_text: ENVO:00002261 ! forest soil
+portion_parsed: ENVO:00002261 ! forest soil
+normalized_curie: ENVO:00002261
+normalized_label: forest soil
+matched_id: https://w3id.org/gold.vocab/Forest-Soil
+matched_label: Forest Soil
+
+---
+raw_text: ENVO:00002262 ! clay soil
+portion_parsed: ENVO:00002262 ! clay soil
+normalized_curie: ENVO:00002262
+normalized_label: clay soil
+matched_id: EO:0007156
+matched_label: clay soil
+
+---
+raw_text: ENVO:00002263 ! garden soil
+portion_parsed: ENVO:00002263 ! garden soil
+normalized_curie: ENVO:00002263
+normalized_label: garden soil
+matched_id: ENVO:00002263
+matched_label: garden soil
+
+---
+raw_text: ENVO:00002273 ! fluvisol
+portion_parsed: ENVO:00002273 ! fluvisol
+normalized_curie: ENVO:00002273
+normalized_label: fluvisol
+matched_id: MEO:MEO_0001881
+matched_label: fluvisol
+
+---
+raw_text: ENVO:00002274 ! stagnosol
+portion_parsed: ENVO:00002274 ! stagnosol
+normalized_curie: ENVO:00002274
+normalized_label: stagnosol
+matched_id: http://purl.obolibrary.org/obo/MVC_0000431
+matched_label: Stagnosol
+
+---
+raw_text: ENVO:00002275 ! technosol
+portion_parsed: ENVO:00002275 ! technosol
+normalized_curie: ENVO:00002275
+normalized_label: technosol
+matched_id: http://purl.obolibrary.org/obo/MVC_0000432
+matched_label: Technosol
+
+---
+raw_text: ENVO:00002871 ! alluvial soil
+portion_parsed: ENVO:00002871 ! alluvial soil
+normalized_curie: ENVO:00002871
+normalized_label: alluvial soil
+matched_id: http://purl.jp/bio/4/id/200906078780940960
+matched_label: alluvial soil
+
+---
+raw_text: ENVO:00002875 ! oil contaminated soil
+portion_parsed: ENVO:00002875 ! oil contaminated soil
+normalized_curie: ENVO:00002875
+normalized_label: oil contaminated soil
+matched_id: MEO:MEO_0000128
+matched_label: oil contaminated soil
+
+---
+raw_text: ENVO:00003081 ! metal contaminated soil
+portion_parsed: ENVO:00003081 ! metal contaminated soil
+normalized_curie: ENVO:00003081
+normalized_label: metal contaminated soil
+matched_id: MEO:MEO_0001894
+matched_label: metal contaminated soil
+
+---
+raw_text: ENVO:00003082 ! enriched soil
+portion_parsed: ENVO:00003082 ! enriched soil
+normalized_curie: ENVO:00003082
+normalized_label: enriched soil
+matched_id: ENVO:00003082
+matched_label: enriched soil
+
+---
+raw_text: ENVO:00003083 ! sarcosine enriched soil
+portion_parsed: ENVO:00003083 ! sarcosine enriched soil
+normalized_curie: ENVO:00003083
+normalized_label: sarcosine enriched soil
+matched_id: ENVO:00003083
+matched_label: sarcosine enriched soil
+
+---
+raw_text: ENVO:00003084 ! trimethylamine enriched soil
+portion_parsed: ENVO:00003084 ! trimethylamine enriched soil
+normalized_curie: ENVO:00003084
+normalized_label: trimethylamine enriched soil
+matched_id: ENVO:00003084
+matched_label: trimethylamine enriched soil
+
+---
+raw_text: ENVO:00003085 ! skatole enriched soil
+portion_parsed: ENVO:00003085 ! skatole enriched soil
+normalized_curie: ENVO:00003085
+normalized_label: skatole enriched soil
+matched_id: MEO:MEO_0002138
+matched_label: skatole enriched soil
+
+---
+raw_text: ENVO:00003086 ! ethanol enriched soil
+portion_parsed: ENVO:00003086 ! ethanol enriched soil
+normalized_curie: ENVO:00003086
+normalized_label: ethanol enriched soil
+matched_id: MEO:MEO_0002139
+matched_label: ethanol enriched soil
+
+---
+raw_text: ENVO:00003087 ! acetamide enriched soil
+portion_parsed: ENVO:00003087 ! acetamide enriched soil
+normalized_curie: ENVO:00003087
+normalized_label: acetamide enriched soil
+matched_id: MEO:MEO_0002140
+matched_label: acetamide enriched soil
+
+---
+raw_text: ENVO:00003088 ! pantothenate enriched soil
+portion_parsed: ENVO:00003088 ! pantothenate enriched soil
+normalized_curie: ENVO:00003088
+normalized_label: pantothenate enriched soil
+matched_id: ENVO:00003088
+matched_label: pantothenate enriched soil
+
+---
+raw_text: ENVO:00003089 ! testosterone enriched soil
+portion_parsed: ENVO:00003089 ! testosterone enriched soil
+normalized_curie: ENVO:00003089
+normalized_label: testosterone enriched soil
+matched_id: MEO:MEO_0002142
+matched_label: testosterone enriched soil
+
+---
+raw_text: ENVO:00003090 ! kynurenate enriched soil
+portion_parsed: ENVO:00003090 ! kynurenate enriched soil
+normalized_curie: ENVO:00003090
+normalized_label: kynurenate enriched soil
+matched_id: MEO:MEO_0002143
+matched_label: kynurenate enriched soil
+
+---
+raw_text: ENVO:00003091 ! threonine enriched soil
+portion_parsed: ENVO:00003091 ! threonine enriched soil
+normalized_curie: ENVO:00003091
+normalized_label: threonine enriched soil
+matched_id: ENVO:00003091
+matched_label: threonine enriched soil
+
+---
+raw_text: ENVO:00003092 ! salicylate enriched soil
+portion_parsed: ENVO:00003092 ! salicylate enriched soil
+normalized_curie: ENVO:00003092
+normalized_label: salicylate enriched soil
+matched_id: ENVO:00003092
+matched_label: salicylate enriched soil
+
+---
+raw_text: ENVO:00003093 ! poly-beta-hydroxybutyrate enriched soil
+portion_parsed: ENVO:00003093 ! poly-beta-hydroxybutyrate enriched soil
+normalized_curie: ENVO:00003093
+normalized_label: poly-beta-hydroxybutyrate enriched soil
+matched_id: MEO:MEO_0002146
+matched_label: poly-beta-hydroxybutyrate enriched soil
+
+---
+raw_text: ENVO:00003094 ! L-(+)-tartrate enriched soil
+portion_parsed: ENVO:00003094 ! L-(+)-tartrate enriched soil
+normalized_curie: ENVO:00003094
+normalized_label: L-(+)-tartrate enriched soil
+matched_id: MEO:MEO_0002147
+matched_label: L-(+)-tartrate enriched soil
+
+---
+raw_text: ENVO:00003095 ! quinate enriched soil
+portion_parsed: ENVO:00003095 ! quinate enriched soil
+normalized_curie: ENVO:00003095
+normalized_label: quinate enriched soil
+matched_id: MEO:MEO_0002148
+matched_label: quinate enriched soil
+
+---
+raw_text: ENVO:00003914 ! chalk soil
+portion_parsed: ENVO:00003914 ! chalk soil
+normalized_curie: ENVO:00003914
+normalized_label: chalk soil
+matched_id: MEO:MEO_0002154
+matched_label: chalk soil
+
+---
+raw_text: ENVO:00005740 ! paddy field soil
+portion_parsed: ENVO:00005740 ! paddy field soil
+normalized_curie: ENVO:00005740
+normalized_label: paddy field soil
+matched_id: ENVO:00005740
+matched_label: paddy field soil
+
+---
+raw_text: ENVO:00005741 ! alpine soil
+portion_parsed: ENVO:00005741 ! alpine soil
+normalized_curie: ENVO:00005741
+normalized_label: alpine soil
+matched_id: ENVO:00005741
+matched_label: alpine soil
+
+---
+raw_text: ENVO:00005742 ! arable soil
+portion_parsed: ENVO:00005742 ! arable soil
+normalized_curie: ENVO:00005742
+normalized_label: arable soil
+matched_id: ENVO:00005742
+matched_label: arable soil
+
+---
+raw_text: ENVO:00005743 ! roadside soil
+portion_parsed: ENVO:00005743 ! roadside soil
+normalized_curie: ENVO:00005743
+normalized_label: roadside soil
+matched_id: MEO:MEO_0001923
+matched_label: roadside soil
+
+---
+raw_text: ENVO:00005744 ! allotment garden soil
+portion_parsed: ENVO:00005744 ! allotment garden soil
+normalized_curie: ENVO:00005744
+normalized_label: allotment garden soil
+matched_id: ENVO:00005744
+matched_label: allotment garden soil
+
+---
+raw_text: ENVO:00005746 ! savanna soil
+portion_parsed: ENVO:00005746 ! savanna soil
+normalized_curie: ENVO:00005746
+normalized_label: savanna soil
+matched_id: ENVO:00005746
+matched_label: savanna soil
+
+---
+raw_text: ENVO:00005747 ! compost soil
+portion_parsed: ENVO:00005747 ! compost soil
+normalized_curie: ENVO:00005747
+normalized_label: compost soil
+matched_id: MEO:MEO_0001927
+matched_label: compost soil
+
+---
+raw_text: ENVO:00005748 ! dry soil
+portion_parsed: ENVO:00005748 ! dry soil
+normalized_curie: ENVO:00005748
+normalized_label: dry soil
+matched_id: ENVO:00005748
+matched_label: dry soil
+
+---
+raw_text: ENVO:00005749 ! farm soil
+portion_parsed: ENVO:00005749 ! farm soil
+normalized_curie: ENVO:00005749
+normalized_label: farm soil
+matched_id: ENVO:00005749
+matched_label: farm soil
+
+---
+raw_text: ENVO:00005750 ! grassland soil
+portion_parsed: ENVO:00005750 ! grassland soil
+normalized_curie: ENVO:00005750
+normalized_label: grassland soil
+matched_id: ENVO:00005750
+matched_label: grassland soil
+
+---
+raw_text: ENVO:00005751 ! jungle soil
+portion_parsed: ENVO:00005751 ! jungle soil
+normalized_curie: ENVO:00005751
+normalized_label: jungle soil
+matched_id: MEO:MEO_0001928
+matched_label: jungle soil
+
+---
+raw_text: ENVO:00005752 ! sawah soil
+portion_parsed: ENVO:00005752 ! sawah soil
+normalized_curie: ENVO:00005752
+normalized_label: sawah soil
+matched_id: ENVO:00005752
+matched_label: sawah soil
+
+---
+raw_text: ENVO:00005753 ! urea enriched soil
+portion_parsed: ENVO:00005753 ! urea enriched soil
+normalized_curie: ENVO:00005753
+normalized_label: urea enriched soil
+matched_id: MEO:MEO_0002157
+matched_label: urea enriched soil
+
+---
+raw_text: ENVO:00005754 ! fertilized soil
+portion_parsed: ENVO:00005754 ! fertilized soil
+normalized_curie: ENVO:00005754
+normalized_label: fertilized soil
+matched_id: ENVO:00005754
+matched_label: fertilized soil
+
+---
+raw_text: ENVO:00005755 ! field soil
+portion_parsed: ENVO:00005755 ! field soil
+normalized_curie: ENVO:00005755
+normalized_label: field soil
+matched_id: http://purl.jp/bio/4/id/200906005180272508
+matched_label: upland field soil
+
+---
+raw_text: ENVO:00005756 ! lawn soil
+portion_parsed: ENVO:00005756 ! lawn soil
+normalized_curie: ENVO:00005756
+normalized_label: lawn soil
+matched_id: MEO:MEO_0001931
+matched_label: lawn soil
+
+---
+raw_text: ENVO:00005757 ! bacteria enriched soil
+portion_parsed: ENVO:00005757 ! bacteria enriched soil
+normalized_curie: ENVO:00005757
+normalized_label: bacteria enriched soil
+matched_id: ENVO:00005757
+matched_label: bacteria enriched soil
+
+---
+raw_text: ENVO:00005758 ! alluvial swamp soil
+portion_parsed: ENVO:00005758 ! alluvial swamp soil
+normalized_curie: ENVO:00005758
+normalized_label: alluvial swamp soil
+matched_id: MEO:MEO_0002159
+matched_label: alluvial swamp soil
+
+---
+raw_text: ENVO:00005759 ! alluvial paddy field soil
+portion_parsed: ENVO:00005759 ! alluvial paddy field soil
+normalized_curie: ENVO:00005759
+normalized_label: alluvial paddy field soil
+matched_id: MEO:MEO_0001932
+matched_label: alluvial paddy field soil
+
+---
+raw_text: ENVO:00005760 ! burned soil
+portion_parsed: ENVO:00005760 ! burned soil
+normalized_curie: ENVO:00005760
+normalized_label: burned soil
+matched_id: MEO:MEO_0001933
+matched_label: burned soil
+
+---
+raw_text: ENVO:00005761 ! meadow soil
+portion_parsed: ENVO:00005761 ! meadow soil
+normalized_curie: ENVO:00005761
+normalized_label: meadow soil
+matched_id: http://purl.jp/bio/4/id/200906004386371930
+matched_label: meadow soil
+
+---
+raw_text: ENVO:00005762 ! chloropicrin enriched soil
+portion_parsed: ENVO:00005762 ! chloropicrin enriched soil
+normalized_curie: ENVO:00005762
+normalized_label: chloropicrin enriched soil
+matched_id: MEO:MEO_0002160
+matched_label: chloropicrin enriched soil
+
+---
+raw_text: ENVO:00005763 ! humus-rich acidic ash soil
+portion_parsed: ENVO:00005763 ! humus-rich acidic ash soil
+normalized_curie: ENVO:00005763
+normalized_label: humus-rich acidic ash soil
+matched_id: ENVO:00005763
+matched_label: humus-rich acidic ash soil
+
+---
+raw_text: ENVO:00005764 ! pond soil
+portion_parsed: ENVO:00005764 ! pond soil
+normalized_curie: ENVO:00005764
+normalized_label: pond soil
+matched_id: MEO:MEO_0001935
+matched_label: pond soil
+
+---
+raw_text: ENVO:00005765 ! frozen compost soil
+portion_parsed: ENVO:00005765 ! frozen compost soil
+normalized_curie: ENVO:00005765
+normalized_label: frozen compost soil
+matched_id: ENVO:00005765
+matched_label: frozen compost soil
+
+---
+raw_text: ENVO:00005766 ! limed soil
+portion_parsed: ENVO:00005766 ! limed soil
+normalized_curie: ENVO:00005766
+normalized_label: limed soil
+matched_id: ENVO:00005766
+matched_label: limed soil
+
+---
+raw_text: ENVO:00005767 ! manured soil
+portion_parsed: ENVO:00005767 ! manured soil
+normalized_curie: ENVO:00005767
+normalized_label: manured soil
+matched_id: MEO:MEO_0001937
+matched_label: manured soil
+
+---
+raw_text: ENVO:00005768 ! orchid soil
+portion_parsed: ENVO:00005768 ! orchid soil
+normalized_curie: ENVO:00005768
+normalized_label: orchid soil
+matched_id: MEO:MEO_0001938
+matched_label: orchid soil
+
+---
+raw_text: ENVO:00005769 ! mountain forest soil
+portion_parsed: ENVO:00005769 ! mountain forest soil
+normalized_curie: ENVO:00005769
+normalized_label: mountain forest soil
+matched_id: ENVO:00005769
+matched_label: mountain forest soil
+
+---
+raw_text: ENVO:00005770 ! beech forest soil
+portion_parsed: ENVO:00005770 ! beech forest soil
+normalized_curie: ENVO:00005770
+normalized_label: beech forest soil
+matched_id: ENVO:00005770
+matched_label: beech forest soil
+
+---
+raw_text: ENVO:00005771 ! muddy soil
+portion_parsed: ENVO:00005771 ! muddy soil
+normalized_curie: ENVO:00005771
+normalized_label: muddy soil
+matched_id: ENVO:00005771
+matched_label: muddy soil
+
+---
+raw_text: ENVO:00005772 ! orchard soil
+portion_parsed: ENVO:00005772 ! orchard soil
+normalized_curie: ENVO:00005772
+normalized_label: orchard soil
+matched_id: https://w3id.org/gold.path/5414
+matched_label: Environmental > Terrestrial > Soil > Unclassified > Orchard soil
+
+---
+raw_text: ENVO:00005773 ! pasture soil
+portion_parsed: ENVO:00005773 ! pasture soil
+normalized_curie: ENVO:00005773
+normalized_label: pasture soil
+matched_id: ENVO:00005773
+matched_label: pasture soil
+
+---
+raw_text: ENVO:00005774 ! peat soil
+portion_parsed: ENVO:00005774 ! peat soil
+normalized_curie: ENVO:00005774
+normalized_label: peat soil
+matched_id: MEO:MEO_0000204
+matched_label: peat soil
+
+---
+raw_text: ENVO:00005775 ! salt contaminated soil
+portion_parsed: ENVO:00005775 ! salt contaminated soil
+normalized_curie: ENVO:00005775
+normalized_label: salt contaminated soil
+matched_id: MEO:MEO_0001941
+matched_label: salt contaminated soil
+
+---
+raw_text: ENVO:00005776 ! peaty paddy field soil
+portion_parsed: ENVO:00005776 ! peaty paddy field soil
+normalized_curie: ENVO:00005776
+normalized_label: peaty paddy field soil
+matched_id: ENVO:00005776
+matched_label: peaty paddy field soil
+
+---
+raw_text: ENVO:00005777 ! steppe soil
+portion_parsed: ENVO:00005777 ! steppe soil
+normalized_curie: ENVO:00005777
+normalized_label: steppe soil
+matched_id: MEO:MEO_0001942
+matched_label: steppe soil
+
+---
+raw_text: ENVO:00005778 ! tropical soil
+portion_parsed: ENVO:00005778 ! tropical soil
+normalized_curie: ENVO:00005778
+normalized_label: tropical soil
+matched_id: ENVTHES:msa1076
+matched_label: tropical soil
+
+---
+raw_text: ENVO:00005779 ! vegetable garden soil
+portion_parsed: ENVO:00005779 ! vegetable garden soil
+normalized_curie: ENVO:00005779
+normalized_label: vegetable garden soil
+matched_id: ENVO:00005779
+matched_label: vegetable garden soil
+
+---
+raw_text: ENVO:00005780 ! greenhouse soil
+portion_parsed: ENVO:00005780 ! greenhouse soil
+normalized_curie: ENVO:00005780
+normalized_label: greenhouse soil
+matched_id: MEO:MEO_0000133
+matched_label: greenhouse soil
+
+---
+raw_text: ENVO:00005781 ! heat stressed soil
+portion_parsed: ENVO:00005781 ! heat stressed soil
+normalized_curie: ENVO:00005781
+normalized_label: heat stressed soil
+matched_id: MEO:MEO_0001944
+matched_label: heat stressed soil
+
+---
+raw_text: ENVO:00005782 ! ornithogenic soil
+portion_parsed: ENVO:00005782 ! ornithogenic soil
+normalized_curie: ENVO:00005782
+normalized_label: ornithogenic soil
+matched_id: ENVO:00005782
+matched_label: ornithogenic soil
+
+---
+raw_text: ENVO:00005783 ! leafy wood soil
+portion_parsed: ENVO:00005783 ! leafy wood soil
+normalized_curie: ENVO:00005783
+normalized_label: leafy wood soil
+matched_id: MEO:MEO_0001946
+matched_label: leafy wood soil
+
+---
+raw_text: ENVO:00005784 ! spruce forest soil
+portion_parsed: ENVO:00005784 ! spruce forest soil
+normalized_curie: ENVO:00005784
+normalized_label: spruce forest soil
+matched_id: ENVO:00005784
+matched_label: spruce forest soil
+
+---
+raw_text: ENVO:00005786 ! upland soil
+portion_parsed: ENVO:00005786 ! upland soil
+normalized_curie: ENVO:00005786
+normalized_label: upland soil
+matched_id: ENVO:00005786
+matched_label: upland soil
+
+---
+raw_text: ENVO:00005787 ! eucalyptus forest soil
+portion_parsed: ENVO:00005787 ! eucalyptus forest soil
+normalized_curie: ENVO:00005787
+normalized_label: eucalyptus forest soil
+matched_id: MEO:MEO_0001948
+matched_label: eucalyptus forest soil
+
+---
+raw_text: ENVO:00005788 ! rubber plantation soil
+portion_parsed: ENVO:00005788 ! rubber plantation soil
+normalized_curie: ENVO:00005788
+normalized_label: rubber plantation soil
+matched_id: ENVO:00005788
+matched_label: rubber plantation soil
+
+---
+raw_text: ENVO:00005789 ! bluegrass field soil
+portion_parsed: ENVO:00005789 ! bluegrass field soil
+normalized_curie: ENVO:00005789
+normalized_label: bluegrass field soil
+matched_id: ENVO:00005789
+matched_label: bluegrass field soil
+
+---
+raw_text: ENVO:00005790 ! red soil
+portion_parsed: ENVO:00005790 ! red soil
+normalized_curie: ENVO:00005790
+normalized_label: red soil
+matched_id: http://purl.jp/bio/4/id/200906026238054643
+matched_label: red colored soil
+
+---
+raw_text: ENVO:00005802 ! bulk soil
+portion_parsed: ENVO:00005802 ! bulk soil
+normalized_curie: ENVO:00005802
+normalized_label: bulk soil
+matched_id: ENVO:00005802
+matched_label: bulk soil
+
+---
+raw_text: ENVO:01000427 ! carbon nanotube enriched soil
+portion_parsed: ENVO:01000427 ! carbon nanotube enriched soil
+normalized_curie: ENVO:01000427
+normalized_label: carbon nanotube enriched soil
+matched_id: ENVO:01000427
+matched_label: carbon nanotube enriched soil
+
+---
+raw_text: ENVO:01001185 ! acidic soil
+portion_parsed: ENVO:01001185 ! acidic soil
+normalized_curie: ENVO:01001185
+normalized_label: acidic soil
+matched_id: MEO:MEO_0000645
+matched_label: acidic soil
+
+---
+raw_text: ENVO:01001397 ! ultisol
+portion_parsed: ENVO:01001397 ! ultisol
+normalized_curie: ENVO:01001397
+normalized_label: ultisol
+matched_id: SWEET:realmSoil/Ultisol
+matched_label: ultisol
+
+---
+raw_text: ENVO:01001525 ! hard-frozen soil
+portion_parsed: ENVO:01001525 ! hard-frozen soil
+normalized_curie: ENVO:01001525
+normalized_label: hard-frozen soil
+matched_id: ENVO:01001525
+matched_label: hard-frozen soil
+
+---
+raw_text: ENVO:01001526 ! frozen soil
+portion_parsed: ENVO:01001526 ! frozen soil
+normalized_curie: ENVO:01001526
+normalized_label: frozen soil
+matched_id: ENVO:01001526
+matched_label: frozen soil
+
+---
+raw_text: ENVO:01001527 ! plastic-frozen soil
+portion_parsed: ENVO:01001527 ! plastic-frozen soil
+normalized_curie: ENVO:01001527
+normalized_label: plastic-frozen soil
+matched_id: ENVO:01001527
+matched_label: plastic-frozen soil
+
+---
+raw_text: ENVO:01001528 ! friable-frozen soil
+portion_parsed: ENVO:01001528 ! friable-frozen soil
+normalized_curie: ENVO:01001528
+normalized_label: friable-frozen soil
+matched_id: ENVO:01001528
+matched_label: friable-frozen soil
+
+---
+raw_text: ENVO:01001616 ! bare soil
+portion_parsed: ENVO:01001616 ! bare soil
+normalized_curie: ENVO:01001616
+normalized_label: bare soil
+matched_id: ENVTHES:msa0098
+matched_label: bare soil
+
+---
+raw_text: ENVO:01001638 ! frost-susceptible soil
+portion_parsed: ENVO:01001638 ! frost-susceptible soil
+normalized_curie: ENVO:01001638
+normalized_label: frost-susceptible soil
+matched_id: ENVO:01001638
+matched_label: frost-susceptible soil
+
+---
+raw_text: ENVO:01001841 ! volcanic soil
+portion_parsed: ENVO:01001841 ! volcanic soil
+normalized_curie: ENVO:01001841
+normalized_label: volcanic soil
+matched_id: http://purl.jp/bio/4/id/200906017841987540
+matched_label: volcanic soil
+
+---
+raw_text: ENVO:02000059 ! surface soil
+portion_parsed: ENVO:02000059 ! surface soil
+normalized_curie: ENVO:02000059
+normalized_label: surface soil
+matched_id: SWEET:realmSoil/SurfaceSoil
+matched_label: surface soil
+
+---
+raw_text: ENVO:02000138 ! mangrove biome soil
+portion_parsed: ENVO:02000138 ! mangrove biome soil
+normalized_curie: ENVO:02000138
+normalized_label: mangrove biome soil
+matched_id: ENVO:02000138
+matched_label: mangrove biome soil
+
+---
+raw_text: ENVO:03600036 ! pathogen-suppressive soil
+portion_parsed: ENVO:03600036 ! pathogen-suppressive soil
+normalized_curie: ENVO:03600036
+normalized_label: pathogen-suppressive soil
+matched_id: ENVO:03600036
+matched_label: pathogen-suppressive soil
+
+---
+raw_text: ENVO:06105205 ! compacted soil
+portion_parsed: ENVO:06105205 ! compacted soil
+normalized_curie: ENVO:06105205
+normalized_label: compacted soil
+matched_id: ENVO:06105205
+matched_label: compacted soil
+
+---
+raw_text: ENVO:06105274 ! sandy loam
+portion_parsed: ENVO:06105274 ! sandy loam
+normalized_curie: ENVO:06105274
+normalized_label: sandy loam
+matched_id: ENVO:06105274
+matched_label: sandy loam
+
+---
+raw_text: ENVO:06105275 ! silty loam
+portion_parsed: ENVO:06105275 ! silty loam
+normalized_curie: ENVO:06105275
+normalized_label: silty loam
+matched_id: ENVO:06105275
+matched_label: silty loam
+
+---
+raw_text: ENVO:06105276 ! sandy clay loam
+portion_parsed: ENVO:06105276 ! sandy clay loam
+normalized_curie: ENVO:06105276
+normalized_label: sandy clay loam
+matched_id: https://w3id.org/mixs/vocab/SoilTextureClassEnum#sandy+clay+loam
+matched_label: sandy clay loam
+
+---
+raw_text: ENVO:06105277 ! clay loam
+portion_parsed: ENVO:06105277 ! clay loam
+normalized_curie: ENVO:06105277
+normalized_label: clay loam
+matched_id: http://purl.jp/bio/4/id/201306049350038823
+matched_label: clay loam
+
+---
+raw_text: ENVO:06105278 ! silty clay loam
+portion_parsed: ENVO:06105278 ! silty clay loam
+normalized_curie: ENVO:06105278
+normalized_label: silty clay loam
+matched_id: https://w3id.org/mixs/vocab/SoilTextureClassEnum#silty+clay+loam
+matched_label: silty clay loam

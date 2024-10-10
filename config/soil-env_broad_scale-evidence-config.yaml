@@ -3,6 +3,10 @@
 #  output_prefix: non_host_oak_queries
 #  header: false
 #  data_column_number: 1
+- filename: local/biome-ids.tsv
+  output_prefix: all_biomes_oak
+  header: false
+  data_column_number: 1
 - filename: local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv
   output_prefix: historical_permissible_values
   header: true
