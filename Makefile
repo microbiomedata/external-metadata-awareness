@@ -13,6 +13,7 @@ include Makefiles/nmdc_schema.Makefile
 include Makefiles/soil-env_broad_scale.Makefile
 include Makefiles/soil-env_local_scale.Makefile
 include Makefiles/soil-env_medium.Makefile
+include Makefiles/water-env_broad_scale.Makefile
 
 # suggested LLM models: gpt-4, gpt-4o, gpt-4-turbo (?), claude-3-opus, claude-3.5-sonnet, gemini-1.5-pro-latest
 # gemini models don't seem to take a temperature parameter

@@ -1,0 +1,25 @@
+- filename: local/biome-ids.tsv
+  output_prefix: all_biomes_oak
+  header: false
+  data_column_number: 1
+# no legacy enum
+- filename: local/nmdc-production-biosamples-water-env_broad_scale.tsv
+  output_prefix: NMDC_water
+  header: false
+  data_column_number: 1
+  count_column_number: 2
+- filename: local/ncbi-mims-water-biosamples-env_broad_scale-annotated.tsv
+  output_prefix: NCBI_mims_water_trusting_CURIe
+  header: true
+  data_column_name: normalized_curie
+  count_column_name: count
+- filename: local/ncbi-mims-water-biosamples-env_broad_scale-annotated.tsv
+  output_prefix: NCBI_mims_water_trusting_labels
+  header: true
+  data_column_name: matched_id
+  count_column_name: count
+- filename: local/goldData_biosamples-inferred-water-env_broad_scale-counts.tsv
+  output_prefix: GOLD_env_terr_soil
+  header: false
+  data_column_number: 1
+  count_column_number: 2
