@@ -30,6 +30,8 @@ local/nmdc-production-biosamples-env-context-authoritative-labels.tsv: local/nmd
 
 local/nmdc-production-biosamples-env_package-predictions.tsv: local/nmdc-production-biosamples-env-context-authoritative-labels.tsv \
 downloads/nmdc-production-studies.json
+	#  local/env-package-heterogeneity.tsv is an output
+	# may also get printed to the console?
 	$(RUN) python external_metadata_awareness/predict_env_package_from_nmdc_context_authoritative_labels.py \
 		--input-file $(word 1,$^) \
 		--output-file $@ \
@@ -51,6 +53,11 @@ local/nmdc-production-biosamples-soil-env_local_scale.tsv: local/nmdc-production
 
 local/nmdc-production-biosamples-soil-env_broad_scale.tsv: local/nmdc-production-biosamples-env_package-predictions.tsv
 	$(RUN) python -c "import pandas as pd, sys; pd.read_csv(sys.argv[1], sep='\t').query('predicted_curated_env_package == \"soil\"').to_csv(sys.argv[2], sep='\t', index=False)" $<  $@.bak
+	cut -f3 $@.bak | sed '1d' | sort | uniq -c | awk '{print $$2 "\t" $$1}' > $@
+	rm -rf $@.bak
+
+local/nmdc-production-biosamples-water-env_broad_scale.tsv: local/nmdc-production-biosamples-env_package-predictions.tsv
+	$(RUN) python -c "import pandas as pd, sys; pd.read_csv(sys.argv[1], sep='\t').query('predicted_curated_env_package == \"water\"').to_csv(sys.argv[2], sep='\t', index=False)" $<  $@.bak
 	cut -f3 $@.bak | sed '1d' | sort | uniq -c | awk '{print $$2 "\t" $$1}' > $@
 	rm -rf $@.bak
 
