@@ -78,7 +78,16 @@ local/envo-info.csv: local/envo-info.txt
 			--output-file $@
 
 local/biome-info.txt:
-	$(RUN) runoak --input sqlite:obo:envo info  .desc//p=i ENVO:00000428 > $@
+	$(RUN) runoak --input sqlite:obo:envo info  .desc//p=i biome > $@
+
+local/biome-ids.tsv: local/biome-info.txt
+	cut -f1 -d' ' $< > $@
+
+local/soil-info.txt:
+	$(RUN) runoak --input sqlite:obo:envo info  .desc//p=i soil > $@
+
+local/soil-ids.tsv: local/soil-info.txt
+	cut -f1 -d' ' $< > $@
 
 local/unused-terrestrial-biomes-prompt.txt: prompt-templates/unused-terrestrial-biomes-prompt.yaml \
 local/soil-env_broad_scale-algebraic.txt local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv \

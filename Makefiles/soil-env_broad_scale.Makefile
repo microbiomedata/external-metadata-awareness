@@ -2,6 +2,7 @@ RUN=poetry run
 WGET=wget
 
 local/soil-env-broad-scale-evidence-table.tsv: config/soil-env_broad_scale-evidence-config.yaml \
+local/biome-ids.tsv \
 local/EnvBroadScaleSoilEnum-pvs-keys-parsed-unique.csv \
 local/nmdc-production-biosamples-soil-env_broad_scale.tsv \
 local/ncbi-mims-soil-biosamples-env_broad_scale-annotated.tsv \

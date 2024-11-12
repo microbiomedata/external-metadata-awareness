@@ -2,7 +2,7 @@ RUN=poetry run
 WGET=wget
 
 # preferable to use a tagged release, but theres good stuff in this commit that hasn't been released yet
-MIXS_YAML_URL=https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/b0b1e03b705cb432d08914c686ea820985b9cb20/src/mixs/schema/mixs.yaml
+MIXS_YAML_URL=https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/3abc0096702ddbf453e7c115e978286f892edfe0/src/mixs/schema/mixs.yaml
 
 downloads/mixs.yaml:
 	wget -O $@ $(MIXS_YAML_URL)

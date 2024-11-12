@@ -207,6 +207,8 @@ def extract_columns(config: str, output_file: str, downsample_uncounted: bool) -
         'ENVO:00002030': 'is_aquatic_biome',  # Biome
         'ENVO:00000446': 'is_terrestrial_biome',  # Biome
         'ENVO:00010483': 'is_environmental_material',  # Environmental material
+        'ENVO:00001998': 'is_soil',
+        'ENVO:00003082': 'is_enriched_soil',
     }
 
     # Add boolean columns based on ontology subclass relationships
@@ -224,7 +226,9 @@ def extract_columns(config: str, output_file: str, downsample_uncounted: bool) -
     columns.insert(7, columns.pop(columns.index('is_aquatic_biome')))
     columns.insert(8, columns.pop(columns.index('is_terrestrial_biome')))
     columns.insert(9, columns.pop(columns.index('is_environmental_material')))
-    columns.insert(10, columns.pop(columns.index('obsolete')))
+    columns.insert(10, columns.pop(columns.index('is_soil')))
+    columns.insert(11, columns.pop(columns.index('is_enriched_soil')))
+    columns.insert(12, columns.pop(columns.index('obsolete')))
     final_df_with_labels = final_df_with_labels[columns]
 
     # Save the final DataFrame to the specified output file
