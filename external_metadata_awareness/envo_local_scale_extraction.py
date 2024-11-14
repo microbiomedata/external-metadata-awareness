@@ -84,7 +84,7 @@ def retrieve_individual_terms(terms_to_retrieve: List[str], adapter) -> List[str
     return list(set(all_ids))
 
 
-def extract_terms_to_file(oak_config_file, extraction_config):
+def extract_terfms_to_file(oak_config_file, extraction_config):
     # Load the ontology using the get_adapter function
     envo = get_adapter(oak_config_file)
 
