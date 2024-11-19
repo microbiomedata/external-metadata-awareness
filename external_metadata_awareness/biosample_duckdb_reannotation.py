@@ -10,6 +10,8 @@ from typing import List
 
 from oaklib import get_adapter
 
+import xml.etree.ElementTree as ET
+import requests
 import pandas as pd
 
 
@@ -92,63 +94,58 @@ def verify_table_creation(connection, schema_name: str, table_name: str) -> bool
         return False
 
 
-def create_and_normalize_tables_with_keys(engine: Engine, schema_name: str, connection) -> None:
+def create_and_normalize_tables_with_keys(connection, schema_name: str) -> None:
     source_table = f'{schema_name}."attributes"'
     intermediate_table = f'{schema_name}."context_content_count"'
     normalized_table = f'{schema_name}."normalized_context_content_count"'
 
-    try:
-        trans = connection.begin()
+    with connection.begin():  # Begin a transaction
+        try:
+            # Drop intermediate and final tables if they exist
+            connection.execute(text(f"DROP TABLE IF EXISTS {intermediate_table}"))
+            connection.execute(text(f"DROP TABLE IF EXISTS {normalized_table}"))
 
-        # Drop intermediate and final tables if they exist
-        connection.execute(text(f"DROP TABLE IF EXISTS {intermediate_table}"))
-        connection.execute(text(f"DROP TABLE IF EXISTS {normalized_table}"))
+            # Create intermediate table
+            connection.execute(text(f"""
+                CREATE TABLE {intermediate_table} AS
+                SELECT content, COUNT(*) AS count
+                FROM {source_table}
+                WHERE harmonized_name IN ('env_broad_scale', 'env_local_scale', 'env_medium')
+                GROUP BY content
+                ORDER BY COUNT(*) DESC
+            """))
 
-        # Create intermediate table
-        connection.execute(text(f"""
-            CREATE TABLE {intermediate_table} AS
-            SELECT content, COUNT(*) AS count
-            FROM {source_table}
-            WHERE harmonized_name IN ('env_broad_scale', 'env_local_scale', 'env_medium')
-            GROUP BY content
-            ORDER BY COUNT(*) DESC
-        """))
+            # Add a normalized content column to the intermediate table
+            connection.execute(text(f"ALTER TABLE {intermediate_table} ADD COLUMN normalized_content VARCHAR"))
 
-        # Add a normalized content column to the intermediate table
-        connection.execute(text(f"ALTER TABLE {intermediate_table} ADD COLUMN normalized_content VARCHAR"))
+            # Populate the normalized content column
+            connection.execute(text(f"""
+                UPDATE {intermediate_table}
+                SET normalized_content = regexp_replace(
+                    trim(lower(content)),
+                    '\\s+',
+                    ' ',
+                    'g'
+                )
+            """))
 
-        # Populate the normalized content column
-        connection.execute(text(f"""
-            UPDATE {intermediate_table}
-            SET normalized_content = regexp_replace(
-                trim(lower(content)),
-                '\\s+',
-                ' ',
-                'g'
-            )
-        """))
+            # Create final table with unique keys
+            connection.execute(text(f"""
+                CREATE TABLE {normalized_table} AS
+                SELECT 
+                    row_number() OVER () AS id,  -- Add a unique key
+                    normalized_content, 
+                    SUM(count) AS count
+                FROM {intermediate_table}
+                GROUP BY normalized_content
+                ORDER BY count DESC
+            """))
 
-        # Create final table with unique keys
-        connection.execute(text(f"""
-            CREATE TABLE {normalized_table} AS
-            SELECT 
-                row_number() OVER () AS id,  -- Add a unique key
-                normalized_content, 
-                SUM(count) AS count
-            FROM {intermediate_table}
-            GROUP BY normalized_content
-            ORDER BY count DESC
-        """))
+            if verify_table_creation(connection, schema_name, "normalized_context_content_count"):
+                print("All tables created and normalized successfully, with unique keys added to the final table")
 
-        trans.commit()
-
-        if verify_table_creation(connection, schema_name, "normalized_context_content_count"):
-            print("All tables created and normalized successfully, with unique keys added to the final table")
-
-    except Exception as e:
-        if 'trans' in locals():
-            trans.rollback()
-        raise RuntimeError(f"Error creating and normalizing tables: {e}")
+        except Exception as e:
+            raise RuntimeError(f"Error creating and normalizing tables: {e}")
 
 
 def extract_curies_from_text(
@@ -228,7 +225,9 @@ def process_table_and_extract_curies(connection, schema_name: str) -> None:
                 curie_free_content = curie_free_content.replace(full_curie, "\n")  # Use a delimiter
 
             # Remove parentheses and square brackets
-            curie_free_content = curie_free_content.replace("(", "").replace(")", "").replace("[", "").replace("]", "")
+            curie_free_content = curie_free_content.replace("(", "").replace(")", "").replace("[", "").replace("]",
+                                                                                                               "").replace(
+                "|", "")
 
             # Split into CURIE-free substrings and clean up
             curie_free_strings = [
@@ -457,7 +456,7 @@ def annotate_curie_free_strings(curie_free_strings_df, ontology_adapters,
                             "subject_start": annotation.subject_start,
                             "subject_end": annotation.subject_end,
                             "predicate_id": annotation.predicate_id,
-                            "object_id": annotation.object_id,
+                            "concluded_curie": annotation.object_id,
                             "object_string": annotation.object_label,
                         }
                         annotations_for_this_string.append(annotations_dict)
@@ -518,7 +517,8 @@ def save_annotations_to_duckdb(connection, schema_name: str, df: pd.DataFrame, t
 
 def create_by_re_annotation_table(connection, schema_name: str) -> None:
     """
-    Creates a table 'by_re_annotation' based on the specified complex SQL join query.
+    Creates a table 'by_re_annotation' based on the provided SQL query,
+    which extracts annotations and merges in the corresponding CURIE labels.
 
     Args:
         connection: The active SQLAlchemy connection.
@@ -526,17 +526,21 @@ def create_by_re_annotation_table(connection, schema_name: str) -> None:
     """
     target_table = f'{schema_name}."by_re_annotation"'
 
-    # SQL query to create the 'by_re_annotation' table
     query = f"""
     CREATE TABLE {target_table} AS
     SELECT DISTINCT
         a.accession,
+        a.package_content,
+        np.group AS package_group,
+        np.EnvPackage,
         a.harmonized_name,
         a.content,
-        cfsa.subject_string,
+        'by re-annotation' as conclusion_method,
         cfsa.predicate_id,
-        cfsa.object_id,
-        cfsa.object_string
+        cfsa.concluded_curie,
+        cfsa.object_string,
+        cl.label AS concluded_label,  -- Join curie_labels to get the label
+        cl.ontology AS label_source
     FROM
         {schema_name}."attributes" a
     LEFT JOIN {schema_name}."context_content_count" ccc
@@ -549,51 +553,46 @@ def create_by_re_annotation_table(connection, schema_name: str) -> None:
         ON cfs.curie_free_string = cfsc.curie_free_string
     LEFT JOIN {schema_name}."curie_free_string_annotations" cfsa
         ON cfsc.id = cfsa.id
+    LEFT JOIN {schema_name}."curie_labels" cl
+        ON cfsa.concluded_curie = cl.curie
+    LEFT JOIN {schema_name}."ncbi_packages" np
+        ON a.package_content = np.Name  -- Join with ncbi_packages
     WHERE
         cfsa.is_longest_match
         AND a.harmonized_name IN ('env_broad_scale', 'env_local_scale', 'env_medium');
     """
 
     try:
-        # Start a transaction
-        trans = connection.begin()
-
         # Drop the target table if it already exists
         connection.execute(text(f"DROP TABLE IF EXISTS {target_table}"))
 
-        # Execute the query to create the new table
+        # Create the target table using the provided query
         connection.execute(text(query))
 
         print(f"Table '{target_table}' created successfully.")
 
-        # Commit the transaction to ensure persistence
-        trans.commit()
-
     except Exception as e:
-        if 'trans' in locals():
-            trans.rollback()  # Rollback in case of errors
         raise RuntimeError(f"Error creating '{target_table}' table: {e}")
 
 
 def create_by_curie_extraction_table(connection, schema_name: str) -> None:
-    """
-    Creates a table 'by_curie_extraction' based on the provided SQL query,
-    which extracts CURIE information from the related tables.
-
-    Args:
-        connection: The active SQLAlchemy connection.
-        schema_name (str): The schema where the tables reside.
-    """
     target_table = f'{schema_name}."by_curie_extraction"'
 
-    # SQL query to create the 'by_curie_extraction' table
     query = f"""
     CREATE TABLE {target_table} AS
     SELECT DISTINCT
         a.accession,
+        a.package_content,
+        np.group AS package_group,
+        np.EnvPackage,
         a.harmonized_name,
         a.content,
-        concat(upper(ec.prefix), ':', ec.local_id) AS extracted_curie
+        'by curie extraction' as conclusion_method,
+        '' as predicate_id,
+        concat(upper(ec.prefix), ':', ec.local_id) AS concluded_curie,
+        '' as object_string,
+        cl.label AS concluded_label,
+        cl.ontology AS label_source
     FROM
         {schema_name}."attributes" a
     LEFT JOIN {schema_name}."context_content_count" ccc
@@ -602,22 +601,68 @@ def create_by_curie_extraction_table(connection, schema_name: str) -> None:
         ON ccc.normalized_content = nccc.normalized_content
     LEFT JOIN {schema_name}."extracted_curies" ec
         ON nccc.id = ec.source_id
+    LEFT JOIN {schema_name}."curie_labels" cl
+        ON concat(upper(ec.prefix), ':', ec.local_id) = cl.curie
+    LEFT JOIN {schema_name}."ncbi_packages" np
+        ON a.package_content = np.Name
     WHERE
         a.harmonized_name IN ('env_broad_scale', 'env_local_scale', 'env_medium')
         AND ec.local_id IS NOT NULL;
     """
 
     try:
+        # Directly execute the SQL commands using the active transaction
+        connection.execute(text(f"DROP TABLE IF EXISTS {target_table}"))
+        connection.execute(text(query))
+        print(f"Table '{target_table}' created successfully.")
+    except Exception as e:
+        raise RuntimeError(f"Error creating '{target_table}' table: {e}")
+
+
+def create_curie_labels_table(connection, schema_name: str, ontology_adapters: dict) -> None:
+    """
+    Fetch CURIEs and their labels from the provided ontology adapters,
+    filter out tuples where the label is None, and store the results in a new 'curie_labels' table,
+    including the ontology key (short name) for each CURIE.
+
+    Args:
+        connection: The active SQLAlchemy connection.
+        schema_name (str): The schema where the tables reside.
+        ontology_adapters (dict): A dictionary of ontology adapters.
+    """
+    target_table = f'{schema_name}."curie_labels"'
+
+    try:
         # Start a transaction
         trans = connection.begin()
 
-        # Drop the target table if it already exists
+        # Prepare a list to collect CURIEs, their labels, and ontology keys
+        all_curies_and_labels = []
+
+        # Fetch CURIEs and labels for each ontology adapter
+        for short_name, adapter in ontology_adapters.items():
+            # Get all CURIEs and their labels from the adapter
+            curies_and_labels = list(adapter.labels(curies=list(adapter.entities())))
+
+            # Filter out tuples where the label is None
+            filtered_curies_and_labels = [
+                (curie, label, short_name)  # Add ontology key (short_name) to each tuple
+                for curie, label in curies_and_labels if label is not None
+            ]
+
+            # Add the filtered results to the overall list
+            all_curies_and_labels.extend(filtered_curies_and_labels)
+
+        # Convert the filtered data into a DataFrame
+        curie_labels_df = pd.DataFrame(all_curies_and_labels, columns=["curie", "label", "ontology"])
+
+        # Create the 'curie_labels' table in DuckDB
         connection.execute(text(f"DROP TABLE IF EXISTS {target_table}"))
 
-        # Execute the query to create the new table
-        connection.execute(text(query))
+        # Write the DataFrame to DuckDB
+        curie_labels_df.to_sql('curie_labels', con=connection, schema=schema_name, if_exists='replace', index=False)
 
-        print(f"Table '{target_table}' created successfully.")
+        print(f"Table '{target_table}' created and populated successfully.")
 
         # Commit the transaction to ensure persistence
         trans.commit()
@@ -625,7 +670,94 @@ def create_by_curie_extraction_table(connection, schema_name: str) -> None:
     except Exception as e:
         if 'trans' in locals():
             trans.rollback()  # Rollback in case of errors
-        raise RuntimeError(f"Error creating '{target_table}' table: {e}")
+        raise RuntimeError(f"Error creating and saving 'curie_labels' table: {e}")
+
+
+def create_ontology_class_candidates_view(connection, schema_name: str) -> None:
+    """
+    Create a view `ontology_class_candidates` in the DuckDB database.
+
+    This view is a union of all rows from the `by_curie_extraction` table
+    and the `by_re_annotation` table in the specified schema.
+
+    Args:
+        connection: SQLAlchemy connection object to the DuckDB database.
+        schema_name (str): Name of the schema where the tables are located.
+    """
+    # Define the SQL for creating the view
+    create_view_sql = f"""
+    CREATE VIEW {schema_name}.ontology_class_candidates AS
+    SELECT
+        *
+    FROM
+        {schema_name}.by_curie_extraction
+    UNION
+    SELECT
+        *
+    FROM
+        {schema_name}.by_re_annotation;
+    """
+
+    # Wrap the raw SQL string with sqlalchemy.text()
+    create_view_query = text(create_view_sql)
+
+    try:
+        # Execute the SQL using the provided connection
+        connection.execute(create_view_query)
+        print(f"View '{schema_name}.ontology_class_candidates' created successfully.")
+    except Exception as e:
+        raise RuntimeError(f"Error creating view '{schema_name}.ontology_class_candidates': {e}")
+
+
+def create_ncbi_packages_table(schema_name: str, connection) -> None:
+    """Creates and populates the ncbi_packages table with data from NCBI BioSample packages XML."""
+    import requests
+    import xml.etree.ElementTree as ET
+    import pandas as pd
+
+    target_table = f'{schema_name}."ncbi_packages"'
+
+    try:
+        trans = connection.begin()
+
+        url = "https://www.ncbi.nlm.nih.gov/biosample/docs/packages/?format=xml"
+        response = requests.get(url)
+        root = ET.fromstring(response.content)
+
+        node_names = {child.tag for package in root.findall('.//Package')
+                      for child in package if child.tag not in ['Antibiogram', 'Name']}
+
+        data = []
+        for package in root.findall('.//Package'):
+            row = {
+                'Name': package.find('Name').text,
+                'group': package.get('group', '')
+            }
+            for node in node_names:
+                element = package.find(node)
+                row[node] = element.text if element is not None else ''
+            data.append(row)
+
+        df = pd.DataFrame(data)
+        cols = ['Name', 'group'] + [col for col in df.columns if col not in ['Name', 'group']]
+        df = df[cols]
+
+        connection.execute(text(f"DROP TABLE IF EXISTS {target_table}"))
+        df.to_sql(target_table.replace(f'{schema_name}."', '').replace('"', ''),
+                  connection,
+                  schema=schema_name,
+                  if_exists='append',
+                  index=False)
+
+        trans.commit()
+
+        if verify_table_creation(connection, schema_name, "ncbi_packages"):
+            print("NCBI packages table created successfully")
+
+    except Exception as e:
+        if 'trans' in locals():
+            trans.rollback()
+        raise RuntimeError(f"Error creating NCBI packages table: {e}")
 
 
 @click.command()
@@ -649,58 +781,76 @@ def create_by_curie_extraction_table(connection, schema_name: str) -> None:
 )
 def main(db_path: str, schema_name: str, ontologies: list) -> None:
     ontology_adapters = create_ontology_adapters(ontologies)
+    engine = create_engine_connection(db_path)
+
     try:
-        engine = create_engine_connection(db_path)
         print("\nTables before operations:")
         list_tables(engine)
 
-        with engine.connect() as connection:
-            create_and_normalize_tables_with_keys(engine, schema_name, connection)
+        # Use a connection for all operations
+        with engine.connect() as connection:  # Open a connection
+            # Pass the connection object instead of the engine
+            create_and_normalize_tables_with_keys(connection, schema_name)
 
             print("\nTables after operations:")
             list_tables(engine)
 
+            # Process tables and extract CURIEs
             process_table_and_extract_curies(connection, schema_name)
 
-            print("\nTables after operations:")
+            print("\nTables after CURIE extraction:")
             list_tables(engine)
 
-            # Count CURIE-free strings and save to a new table
+            # Count CURIE-free strings
             count_curie_free_strings(connection, schema_name)
 
-            print("\nTables after operations:")
+            print("\nTables after CURIE-free string count:")
             list_tables(engine)
 
+            # Retrieve CURIE-free strings for annotation
             curie_free_strings_df = get_curie_free_strings(db_path, schema_name)
 
-            # sample annotation
-            # TextAnnotation(predicate_id='oio:hasRelatedSynonym', object_id='CHEBI:26833', object_label='S', object_categories=[], object_source=None, confidence=None, match_string='s', is_longest_match=None, matches_whole_text=False, match_type=None, info=None, object_aliases=[], subject_start=1, subject_end=1, subject_label=None, subject_source=None, subject_text_id=None)
+            # Annotate CURIE-free strings
+            curie_free_string_annotations_frame = annotate_curie_free_strings(
+                curie_free_strings_df, ontology_adapters
+            )
 
-            # Annotate the curie_free_strings
-            curie_free_string_annotations_frame = annotate_curie_free_strings(curie_free_strings_df, ontology_adapters)
+            # Save annotations to DuckDB
+            save_annotations_to_duckdb(
+                connection, schema_name, curie_free_string_annotations_frame, "curie_free_string_annotations"
+            )
 
-            save_annotations_to_duckdb(connection=connection, schema_name=schema_name,
-                                       df=curie_free_string_annotations_frame,
-                                       table_name='curie_free_string_annotations')
+            # Create CURIE labels table
+            create_curie_labels_table(connection, schema_name, ontology_adapters)
 
+            # Create NCBI packages table
+            create_ncbi_packages_table(schema_name, connection)
+
+            # Create `by_re_annotation` table
             print("\nStarting to create by_re_annotation table")
-            # print the time of day
             print("Current Time =", datetime.now().strftime("%H:%M:%S"))
             create_by_re_annotation_table(connection, schema_name)
-            print("\nfinished creating by_re_annotation table")
-            # print the time of day
+            print("\nFinished creating by_re_annotation table")
             print("Current Time =", datetime.now().strftime("%H:%M:%S"))
 
+            # Create `by_curie_extraction` table
             print("\nStarting to create by_curie_extraction table")
-            # print the time of day
             print("Current Time =", datetime.now().strftime("%H:%M:%S"))
             create_by_curie_extraction_table(connection, schema_name)
-            print("\nfinished creating by_curie_extraction table")
-            # print the time of day
+            print("\nFinished creating by_curie_extraction table")
             print("Current Time =", datetime.now().strftime("%H:%M:%S"))
 
+            # Create `ontology_class_candidates` view
+            create_ontology_class_candidates_view(connection, schema_name)
 
-    except RuntimeError as error:
+            # Explicit commit at the end
+            print("\nCommitting transaction...")
+            connection.commit()
+
+        print("\nTables after all operations:")
+        list_tables(engine)
+
+    except Exception as error:
         print(f"Error: {error}")
 
 
