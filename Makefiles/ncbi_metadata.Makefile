@@ -1,118 +1,96 @@
 RUN=poetry run
 WGET=wget
 
-# very complex documents; many are too large to load into a MongoDB document
-downloads/bioproject.xml:
-	$(WGET) -O $@ "https://ftp.ncbi.nlm.nih.gov/bioproject/bioproject.xml" # ~ 3 GB August 2024
-
 downloads/biosample_set.xml.gz:
 	$(WGET) -O $@ "https://ftp.ncbi.nlm.nih.gov/biosample/biosample_set.xml.gz" # ~ 3 GB August 2024
 
 local/biosample_set.xml: downloads/biosample_set.xml.gz
 	gunzip -c $< > $@
 
-.PHONY: load-biosamples-into-mongo
-
-local/biosample-count-xml.txt: local/biosample_set.xml
-	date && grep -c "</BioSample>" $< > $@ && date
+local/biosample-last-id-xml.txt: local/biosample_set.xml
+	tac $< | grep -m 1 '<BioSample' > $@
 
 # see also https://gitlab.com/wurssb/insdc_metadata
+.PHONY: load-biosamples-into-mongo
 load-biosamples-into-mongo: local/biosample_set.xml
 	$(RUN) xml-to-mongo \
+		--anticipated-last-id 43000000 \
+		--collection-name biosamples \
+		--db-name biosamples \
 		--file-path $< \
-		--node-type BioSample \
 		--id-field id \
-		--db-name biosamples_dev \
-		--collection-name biosamples_dev \
-		--max-elements 100000 \
-		--anticipated-last-id 100000
+		--max-elements 43000000
 
-# see also https://www.npmjs.com/package/mongodb-schema/v/12.2.0?activeTab=versions
+# no indexing necessary for the mongodb to duckdb convertion in notebooks/mongodb_biosamples_to_duckdb.ipynb
 
-#local/mongodb-paths-10pct.txt: # 450000 -> ~ 4 minutes # 4.5 M -> heavy load, never finishes. Use streaming approach?
-#	$(RUN) list-mongodb-paths \
-#		--db-name ncbi_metadata \
-#		--collection samples \
-#		--sample-size 4500000 > $@
+# Assuming your script is named load_biosamples.py
+# load_first_100_biosamples: local/biosample_set.xml
+# 	python external_metadata_awareness/xml_to_mongo_2.py \
+# 		--anticipated-last-id 45000000 \
+# 		--collection-name biosamples_dev \
+# 		--db-name biosamples_dev \
+# 		--file-path $< \
+# 		--max-elements 100
 
-#local/ncbi_biosamples_inferred_schema.json: # ~ 2 minutes for 410,000 (1%) # ~ 1 hour for 13 million ~ 30%
-#	$(RUN) python external_metadata_awareness/infer_schema_with_batching.py \
-#		--host localhost \
-#		--port 27017 \
-#		--database ncbi_metadata \
-#		--collection samples \
-#		--total-samples 13000000 \
-#		--batch-size 50000 \
-#		--output $@
+# local/biosample-count-mongodb.txt:
+# 	# depends on MongoDB having a ncbi_metadata database with a samples collection, running locally, with no access control
+# 	date && mongosh --eval 'db.getSiblingDB("biosamples").biosamples.countDocuments()' > $@ && date # 1 minute
 
-local/biosample-count-mongodb.txt:
-	# depends on MongoDB having a ncbi_metadata database with a samples collection, running locally, with no access control
-	date && mongosh --eval 'db.getSiblingDB("ncbi_metadata").samples.countDocuments()' > $@ && date # 1 minute
+# ncbi-biosamples-duckdb-overview:
+# 	$(RUN) python external_metadata_awareness/biosamples_mongodb_to_duckdb.py \
+# 		--connection-string "mongodb://localhost:27017/" \
+# 		--db-name biosamples \
+# 		--collection-name biosamples \
+# 		--limit 46000000 \
+# 		--batch-size 100000 \
+# 		--duckdb-file local/ncbi_biosamples.duckdb \
+# 		--table-name overview # no path # 40462422 biosamples in ~ 50 minutes
 
-local/ncbi-biosamples-packages-counts.tsv: sql/packages-counts.sql
-	$(RUN) sql-to-tsv \
-	--sql-file $< \
-	--output-file $@
+# # add counts from duckdb; need to compile duckdb or download binary
 
-ncbi-biosamples-duckdb-overview:
-	$(RUN) python external_metadata_awareness/first_n_attributes_duckdb.py \
-		--connection-string "mongodb://localhost:27017/" \
-		--db-name ncbi_metadata \
-		--collection-name samples \
-		--limit 41000000 \
-		--batch-size 100000 \
-		--duckdb-file local/ncbi_biosamples.duckdb \
-		--table-name overview # no path # 40462422 biosamples in ~ 50 minutes
+# ncbi-biosamples-duckdb-attributes:
+# 	$(RUN) python external_metadata_awareness/biosamples_mongodb_to_duckdb.py \
+# 		--connection-string "mongodb://localhost:27017/" \
+# 		--db-name ncbi_metadata \
+# 		--collection-name samples \
+# 		--limit 46000000 \
+# 		--batch-size 100000 \
+# 		--duckdb-file local/ncbi_biosamples.duckdb \
+# 		--table-name attributes \
+# 		--path BioSample.Attributes.Attribute
 
-# add counts from duckdb; need to compile duckdb or download binary
+# ncbi-biosamples-duckdb-links:
+# 	$(RUN) python ../external_metadata_awareness/biosamples_mongodb_to_duckdb.py \
+# 		--connection-string "mongodb://localhost:27017/" \
+# 		--db-name ncbi_metadata \
+# 		--collection-name samples \
+# 		--limit 46000000 \
+# 		--batch-size 100000 \
+# 		--duckdb-file ../local/ncbi_biosamples.duckdb \
+# 		--table-name links \
+# 		--path BioSample.Links.Link
 
-ncbi-biosamples-duckdb-attributes:
-	$(RUN) python external_metadata_awareness/first_n_attributes_duckdb.py \
-		--connection-string "mongodb://localhost:27017/" \
-		--db-name ncbi_metadata \
-		--collection-name samples \
-		--limit 41000000 \
-		--batch-size 100000 \
-		--duckdb-file local/ncbi_biosamples.duckdb \
-		--table-name attributes \
-		--path BioSample.Attributes.Attribute
+# ncbi-biosamples-duckdb-ids:
+# 	$(RUN) python ../external_metadata_awareness/biosamples_mongodb_to_duckdb.py \
+# 		--connection-string "mongodb://localhost:27017/" \
+# 		--db-name ncbi_metadata \
+# 		--collection-name samples \
+# 		--limit 46000000 \
+# 		--batch-size 100000 \
+# 		--duckdb-file ../local/ncbi_biosamples.duckdb \
+# 		--table-name ids \
+# 		--path BioSample.Ids.Id
 
-# don't forget rows with no links
-# also want to see time/date stamp
-# 		--start-offset 20000000
-
-ncbi-biosamples-duckdb-links:
-	$(RUN) python ../external_metadata_awareness/first_n_attributes_duckdb.py \
-		--connection-string "mongodb://localhost:27017/" \
-		--db-name ncbi_metadata \
-		--collection-name samples \
-		--limit 41000000 \
-		--batch-size 100000 \
-		--duckdb-file ../local/ncbi_biosamples.duckdb \
-		--table-name links \
-		--path BioSample.Links.Link
-
-ncbi-biosamples-duckdb-ids:
-	$(RUN) python ../external_metadata_awareness/first_n_attributes_duckdb.py \
-		--connection-string "mongodb://localhost:27017/" \
-		--db-name ncbi_metadata \
-		--collection-name samples \
-		--limit 41000000 \
-		--batch-size 100000 \
-		--duckdb-file ../local/ncbi_biosamples.duckdb \
-		--table-name ids \
-		--path BioSample.Ids.Id
-
-ncbi-biosamples-duckdb-organism:
-	$(RUN) python ../external_metadata_awareness/first_n_attributes_duckdb.py \
-		--connection-string "mongodb://localhost:27017/" \
-		--db-name ncbi_metadata \
-		--collection-name samples \
-		--limit 41000000 \
-		--batch-size 100000 \
-		--duckdb-file ../local/ncbi_biosamples.duckdb \
-		--table-name organism \
-		--path BioSample.Description.Organism
+# ncbi-biosamples-duckdb-organism:
+# 	$(RUN) python ../external_metadata_awareness/biosamples_mongodb_to_duckdb.py \
+# 		--connection-string "mongodb://localhost:27017/" \
+# 		--db-name ncbi_metadata \
+# 		--collection-name samples \
+# 		--limit 46000000 \
+# 		--batch-size 100000 \
+# 		--duckdb-file ../local/ncbi_biosamples.duckdb \
+# 		--table-name organism \
+# 		--path BioSample.Description.Organism
 
 NCBI_BIOSAMPLES_DUCKDB_PATH = local/ncbi_biosamples.duckdb
 
@@ -223,3 +201,36 @@ local/ncbi-mims-soil-biosamples-env_medium-annotated.tsv: local/ncbi-mims-soil-b
 
 # from duckdb, with counts
 # normalized_curie/real_label and matched_id/matched_label
+
+####
+
+# very complex documents; many are too large to load into a MongoDB document
+downloads/bioproject.xml:
+	$(WGET) -O $@ "https://ftp.ncbi.nlm.nih.gov/bioproject/bioproject.xml" # ~ 3 GB August 2024
+
+## intolerably slow
+#local/biosample-count-xml.txt: local/biosample_set.xml
+#	date && grep -c "</BioSample>" $< > $@ && date
+
+# see also https://www.npmjs.com/package/mongodb-schema/v/12.2.0?activeTab=versions
+
+#local/mongodb-paths-10pct.txt: # 450000 -> ~ 4 minutes # 4.5 M -> heavy load, never finishes. Use streaming approach?
+#	$(RUN) list-mongodb-paths \
+#		--db-name ncbi_metadata \
+#		--collection samples \
+#		--sample-size 4500000 > $@
+
+#local/ncbi_biosamples_inferred_schema.json: # ~ 2 minutes for 410,000 (1%) # ~ 1 hour for 13 million ~ 30%
+#	$(RUN) python external_metadata_awareness/infer_schema_with_batching.py \
+#		--host localhost \
+#		--port 27017 \
+#		--database ncbi_metadata \
+#		--collection samples \
+#		--total-samples 13000000 \
+#		--batch-size 50000 \
+#		--output $@
+
+local/ncbi-biosamples-packages-counts.tsv: sql/packages-counts.sql
+	$(RUN) sql-to-tsv \
+	--sql-file $< \
+	--output-file $@
