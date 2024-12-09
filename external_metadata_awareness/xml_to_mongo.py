@@ -1,79 +1,83 @@
+import time
+from typing import Optional
+
 import click
-from datetime import datetime
-import lxml.etree as ET
 from pymongo import MongoClient
-from typing import Any, Dict
+import lxml.etree as ET
 
 
 @click.command()
 @click.option('--file-path', default='../downloads/biosample_set.xml', help='Path to the XML file.')
-@click.option('--node-type', default='BioSample')
-@click.option('--id-field', default='id')
 @click.option('--db-name', default='biosamples_dev', help='Database name.')
 @click.option('--collection-name', default='biosamples_dev', help='Collection name.')
+@click.option('--node-type', default='BioSample', help='Type of the XML node to process.')
+@click.option('--id-field', default='id', help='Name of the ID attribute within the node.')
 @click.option('--max-elements', default=100000, type=int,
-              help='Maximum number of elements to process.')  # expecting ~ 45 million
-@click.option('--anticipated-last-id', default=100000, type=int, help='Anticipated last ID for progress calculation.')
-def process_xml_with_progress(file_path: str, db_name: str, collection_name: str, max_elements: int,
-                              anticipated_last_id: int, node_type: str, id_field: str):
+              help='Maximum number of elements to process.')
+@click.option('--anticipated-last-id', default=45000000, type=int,
+              help='Anticipated last ID for progress calculation.')
+def load_xml_to_mongodb(file_path: str, db_name: str, collection_name: str, node_type: str,
+                        id_field: str, max_elements: Optional[int] = None,
+                        anticipated_last_id: Optional[int] = None):
     """
-    Process the specified XML file and store its contents into a MongoDB collection with progress reporting.
+    Loads data from an XML file into MongoDB, preserving the nested structure.
 
-    :param id_field:
-    :param node_type:
-    :param file_path: Path to the XML file.
-    :param db_name: Name of the MongoDB database.
-    :param collection_name: Name of the MongoDB collection.
-    :param max_elements: Maximum number of XML elements to process.
-    :param anticipated_last_id: Highest expected ID in the XML elements for progress calculation.
+    This script uses lxml's iterparse for incremental processing, handles
+    different node types, and allows specifying the ID attribute for progress
+    calculation.
     """
-    client = MongoClient('localhost', 27017)
-    db = client[db_name]
-    collection = db[collection_name]
 
-    context = ET.iterparse(file_path, events=('end',), tag=node_type)
-    count = 0
-    last_reported_progress = 0
+    def element_to_dict(elem):
+        """
+        Recursively converts an XML element to a nested dictionary.
+        """
+        doc = {}
+        if elem.text and elem.text.strip():
+            doc['content'] = elem.text.strip()
+        doc.update(elem.attrib)
+        for child in elem:
+            child_doc = element_to_dict(child)
+            if child.tag in doc:
+                if isinstance(doc[child.tag], list):
+                    doc[child.tag].append(child_doc)
+                else:
+                    doc[child.tag] = [doc[child.tag], child_doc]
+            else:
+                doc[child.tag] = child_doc
+        return doc
 
-    for event, elem in context:
-        if count >= max_elements:
-            break
+    try:
+        client = MongoClient()
+        db = client[db_name]
+        collection = db[collection_name]
 
-        current_id = int(elem.get(id_field))
-        progress = current_id / anticipated_last_id
+        start_time = time.time()
+        processed_count = 0
 
-        if progress - last_reported_progress >= 0.001:
-            current_time = datetime.now().isoformat()
-            print(f"{current_time}: {current_id}, {progress * 100:.1f}%")
-            last_reported_progress = progress
+        for event, elem in ET.iterparse(file_path, events=('end',)):
+            if elem.tag == node_type:
+                doc = element_to_dict(elem)
+                collection.insert_one(doc)
+                processed_count += 1
 
-        element_dict = xml_to_dict(elem)
-        wrapped_dict = {node_type: element_dict}
-        collection.insert_one(wrapped_dict)
-        count += 1
+                if anticipated_last_id:
+                    if processed_count % 10000 == 0:
+                        progress = (int(elem.attrib.get(id_field, 0)) / anticipated_last_id) * 100
+                        elapsed_time = time.time() - start_time
+                        print(f"Processed {processed_count} {node_type} nodes ({progress:.2f}%), "
+                              f"elapsed time: {elapsed_time:.2f} seconds")
 
-        elem.clear()
-        while elem.getprevious() is not None:
-            del elem.getparent()[0]
+                if max_elements and processed_count >= max_elements:
+                    print(f"Reached max_elements ({max_elements}). Stopping.")
+                    break
 
-    del context
-    client.close()
+                elem.clear()
 
-
-def xml_to_dict(elem: ET.Element) -> Dict[str, Any]:
-    """
-    Converts an XML element into a dictionary, handling attributes and child elements recursively.
-
-    :param elem: The XML element to convert.
-    :return: A dictionary representing the XML element.
-    """
-    if not elem.getchildren() and elem.text:
-        text = elem.text.strip()
-        return {**elem.attrib, 'content': text} if elem.attrib else text
-
-    result = {child.tag: xml_to_dict(child) for child in elem}
-    return {**elem.attrib, **result}
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        client.close()
 
 
-if __name__ == '__main__':
-    process_xml_with_progress()
+if __name__ == "__main__":
+    load_xml_to_mongodb()
