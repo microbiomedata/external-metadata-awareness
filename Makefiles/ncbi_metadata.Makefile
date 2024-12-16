@@ -33,7 +33,7 @@ load-biosamples-into-mongo-docker: local/biosample_set.xml
 		--db-name biosamples \
 		--file-path $< \
 		--id-field id \
-		--max-elements 43000000
+		--max-elements 430000
 
 # no indexing necessary for the mongodb to duckdb convertion in notebooks/mongodb_biosamples_to_duckdb.ipynb
 
