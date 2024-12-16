@@ -21,6 +21,20 @@ load-biosamples-into-mongo: local/biosample_set.xml
 		--id-field id \
 		--max-elements 43000000
 
+
+# see also https://gitlab.com/wurssb/insdc_metadata
+.PHONY: load-biosamples-into-mongo
+load-biosamples-into-mongo-docker: local/biosample_set.xml
+	$(RUN) xml-to-mongo \
+		--anticipated-last-id 43000000 \
+		--collection-name biosamples \
+		--mongo-host mongo \
+		--mongo-port 27017 \
+		--db-name biosamples \
+		--file-path $< \
+		--id-field id \
+		--max-elements 43000000
+
 # no indexing necessary for the mongodb to duckdb convertion in notebooks/mongodb_biosamples_to_duckdb.ipynb
 
 # Assuming your script is named load_biosamples.py
