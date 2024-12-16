@@ -26,7 +26,7 @@ load-biosamples-into-mongo: local/biosample_set.xml
 .PHONY: load-biosamples-into-mongo
 load-biosamples-into-mongo-docker: local/biosample_set.xml
 	$(RUN) xml-to-mongo \
-		--anticipated-last-id 43000000 \
+		--anticipated-last-id 430000 \
 		--collection-name biosamples \
 		--mongo-host mongo \
 		--mongo-port 27017 \
