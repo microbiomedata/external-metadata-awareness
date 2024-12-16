@@ -33,6 +33,7 @@ scikit-learn = "^1.5.1"
 scipy = "^1.14.1"
 matplotlib = "^3.9.2"
 jupyter = "^1.1.1"
+pyarrow = "^18.1.0"
 
 
 [build-system]
