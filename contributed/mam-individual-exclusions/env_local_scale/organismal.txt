@@ -1,3 +1,0 @@
-NCBITaxon:1 ! root
-PCO:0000031 ! organismal entity
-NCBITaxon:131567 ! cellular organisms

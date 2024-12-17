@@ -1,7 +1,0 @@
-ENVO:03501334 ! child care facility
-ENVO:01000498 ! pole
-ENVO:03501356 ! conveyor system
-ENVO:03501201 ! polling place
-ENVO:03501202 ! polling station
-ENVO:01000299 ! Taylor column
-ENVO:01000822 ! planetary photic zone
