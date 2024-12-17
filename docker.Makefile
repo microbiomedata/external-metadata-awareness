@@ -10,7 +10,7 @@ start:
 	docker compose start
 
 down:
-	docker compose down # deletes volumes?!
+	docker compose down # deletes volumes
 
 build:
 	docker compose build

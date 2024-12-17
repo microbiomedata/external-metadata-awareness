@@ -3,7 +3,7 @@ FROM ubuntu:latest
 RUN apt-get update -y
 RUN apt-get upgrade -y
 
-RUN apt-get install wget curl git make gnupg -y
+RUN apt-get install wget curl git make gnupg nano unzip -y
 
 # mongosh
 RUN wget -qO- https://www.mongodb.org/static/pgp/server-8.0.asc | tee /etc/apt/trusted.gpg.d/server-8.0.asc
@@ -24,6 +24,9 @@ RUN curl -sSL https://install.python-poetry.org | python3 -
 RUN cd external-metadata-awareness && ~/.local/bin/poetry install
 
 RUN echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+
+RUN wget --verbose https://github.com/duckdb/duckdb/releases/download/v1.1.3/duckdb_cli-linux-amd64.zip
+RUN unzip duckdb_cli-linux-amd64.zip
 
 ## Set the working directory
 #WORKDIR /app
