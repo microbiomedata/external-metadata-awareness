@@ -51,9 +51,7 @@ biosamples_from_mongo.duckdb:
 		--db_name biosamples \
 		--duckdb_file $@ \
 		--max_docs 500000 \
-		--mongo_uri mongodb://mongo:27017/ \
-		--paths BioSample \
-		--paths BioSample.Attributes.Attribute
+		--mongo_uri mongodb://mongo:27017/
 	date
 
 # Assuming your script is named load_biosamples.py
