@@ -1,5 +1,10 @@
 FROM ubuntu:latest
 
+# todo could remove git (and just copy cwd contents into container)
+# todo could remove mongosh and just interact within mongo container or host (which wouod require exposing port)
+# todo couod remove duckdb and just copy a completed file to host
+# todo remoke make and use soem kind of Docker automation?
+
 RUN apt-get update -y
 RUN apt-get upgrade -y
 
