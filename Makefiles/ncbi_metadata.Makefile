@@ -29,12 +29,12 @@ load-biosamples-into-mongo: local/biosample_set.xml
 load-biosamples-into-mongo-docker: local/biosample_set.xml
 	date
 	$(RUN) xml-to-mongo \
-		--anticipated-last-id 500000 \
+		--anticipated-last-id 50000000 \
 		--collection-name biosamples \
 		--db-name biosamples \
 		--file-path $< \
 		--id-field id \
-		--max-elements 500000 \
+		--max-elements 50000000 \
 		--mongo-host mongo \
 		--mongo-port 27017
 	date
@@ -50,7 +50,7 @@ biosamples_from_mongo.duckdb:
 		--collection biosamples \
 		--db_name biosamples \
 		--duckdb_file $@ \
-		--max_docs 500000 \
+		--max_docs 50000000 \
 		--mongo_uri mongodb://mongo:27017/
 	date
 
