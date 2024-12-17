@@ -5,7 +5,9 @@ downloads/biosample_set.xml.gz:
 	$(WGET) -O $@ "https://ftp.ncbi.nlm.nih.gov/biosample/biosample_set.xml.gz" # ~ 3 GB August 2024
 
 local/biosample_set.xml: downloads/biosample_set.xml.gz
+	date
 	gunzip -c $< > $@
+	date
 
 local/biosample-last-id-xml.txt: local/biosample_set.xml
 	tac $< | grep -m 1 '<BioSample' > $@
@@ -25,6 +27,7 @@ load-biosamples-into-mongo: local/biosample_set.xml
 # see also https://gitlab.com/wurssb/insdc_metadata
 .PHONY: load-biosamples-into-mongo
 load-biosamples-into-mongo-docker: local/biosample_set.xml
+	date
 	$(RUN) xml-to-mongo \
 		--anticipated-last-id 500000 \
 		--collection-name biosamples \
@@ -34,10 +37,12 @@ load-biosamples-into-mongo-docker: local/biosample_set.xml
 		--max-elements 500000 \
 		--mongo-host mongo \
 		--mongo-port 27017
+	date
 
 # no indexing necessary for the mongodb to duckdb convertion in notebooks/mongodb_biosamples_to_duckdb.ipynb
 
 biosamples_from_mongo.duckdb:
+	date
 	poetry run python \
 		external_metadata_awareness/mongodb_biosamples_to_duckdb.py \
 		extract \
@@ -49,6 +54,7 @@ biosamples_from_mongo.duckdb:
 		--mongo_uri mongodb://mongo:27017/ \
 		--paths BioSample \
 		--paths BioSample.Attributes.Attribute
+	date
 
 # Assuming your script is named load_biosamples.py
 # load_first_100_biosamples: local/biosample_set.xml
