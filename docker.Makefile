@@ -1,4 +1,4 @@
-.PHONY: temp
+.PHONY: up stop start down build shell all
 
 up:
 	docker compose up -d
@@ -13,8 +13,9 @@ down:
 	docker compose down # deletes volumes
 
 build:
-	docker compose build
+	docker compose build --no-cache
 
 shell:
 	docker compose exec -it dev bash
 
+all: down build up
