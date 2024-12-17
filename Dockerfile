@@ -30,7 +30,7 @@ RUN unzip duckdb_cli-linux-amd64.zip
 
 ## Set the working directory
 #WORKDIR /app
-#
+
 ## Copy the application code
 #COPY . .
 

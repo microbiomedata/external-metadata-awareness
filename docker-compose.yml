@@ -1,15 +1,11 @@
 services:
   mongo:
     image: mongo:latest
-#    ports:
-#      - "27017:27017"
     restart: unless-stopped
 
   dev:
     build: .
     tty: true
     stdin_open: true
-#    volumes:
-#      - /:/host
     depends_on:
       - mongo
