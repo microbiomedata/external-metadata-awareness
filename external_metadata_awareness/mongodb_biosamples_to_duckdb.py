@@ -5,7 +5,10 @@ import time
 import pymongo
 import duckdb
 
-paths = [
+# does not account for
+#   BioSample.Owner.Contacts (highly nested). we ARE processing BioSample.Owner.Name
+#   BioSample.Description.Comment.Table (exclusively antibiograms)
+legal_paths = [
     "BioSample",
     "BioSample.Attributes.Attribute",
     "BioSample.Curation",
@@ -219,7 +222,7 @@ def cli():
 @click.option('--collection', '-c', type=str, required=True, help='Name of the MongoDB collection')
 @click.option('--duckdb_file', '-f', type=click.Path(exists=False), required=True,
               help='Path to the DuckDB database file')
-@click.option('--paths', '-p', type=click.Choice(paths), multiple=True, required=True,
+@click.option('--paths', '-p', type=click.Choice(legal_paths), multiple=True, required=True,
               help='List of paths to extract data from (e.g., BioSample, BioSample.Attributes.Attribute).')
 @click.option('--max_docs', '-x', type=int, default=None,
               help='Maximum number of documents to process (default: no limit)')
@@ -231,6 +234,9 @@ def extract(mongo_uri, db_name, collection, duckdb_file, paths, max_docs, batch_
     collection = db[collection]
 
     duckdb_conn = create_duckdb_file(duckdb_file)
+
+    if len(paths) == 0:
+        paths = legal_paths
 
     extract_all_paths_data(collection, duckdb_conn, paths, max_docs, client, batch_size)
 

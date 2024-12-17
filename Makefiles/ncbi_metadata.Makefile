@@ -26,16 +26,29 @@ load-biosamples-into-mongo: local/biosample_set.xml
 .PHONY: load-biosamples-into-mongo
 load-biosamples-into-mongo-docker: local/biosample_set.xml
 	$(RUN) xml-to-mongo \
-		--anticipated-last-id 430000 \
+		--anticipated-last-id 500000 \
 		--collection-name biosamples \
-		--mongo-host mongo \
-		--mongo-port 27017 \
 		--db-name biosamples \
 		--file-path $< \
 		--id-field id \
-		--max-elements 430000
+		--max-elements 500000 \
+		--mongo-host mongo \
+		--mongo-port 27017
 
 # no indexing necessary for the mongodb to duckdb convertion in notebooks/mongodb_biosamples_to_duckdb.ipynb
+
+biosamples_from_mongo.duckdb:
+	poetry run python \
+		external_metadata_awareness/mongodb_biosamples_to_duckdb.py \
+		extract \
+		--batch_size 10000 \
+		--collection biosamples \
+		--db_name biosamples \
+		--duckdb_file $@ \
+		--max_docs 500000 \
+		--mongo_uri mongodb://mongo:27017/ \
+		--paths BioSample \
+		--paths BioSample.Attributes.Attribute
 
 # Assuming your script is named load_biosamples.py
 # load_first_100_biosamples: local/biosample_set.xml
