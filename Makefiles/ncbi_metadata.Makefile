@@ -8,7 +8,8 @@ WGET=wget
 # todo what cpu/ram resources are really required? 4 cores and 128 gb ram in ec2 was probably excessive
 #   but 32 gb 2020 macbook pro complains about swapping while running this code if many other "medium" apps are running
 
-.PHONY:load-biosamples-into-mongo duck-all purge
+
+.PHONY:load-biosamples-into-mongo duck-all purge add-ncbi-biosample-package-attributes
 
 purge:
 	rm -rf local/biosample_set.xml*
@@ -83,6 +84,22 @@ local/ncbi_biosamples.duckdb:
 
 local/biosample-count-mongodb.txt:
 	date && mongosh --eval 'db.getSiblingDB("biosamples").biosamples.countDocuments()' > $@ && date # 1 minute
+
+local/ncbi-biosample-packages.tsv: downloads/ncbi-biosample-packages.xml
+	poetry run python external_metadata_awareness/extract_all_ncbi_packages_fields.py \
+		--xml-file $< \
+		--output-file $@
+
+
+add-ncbi-biosample-package-attributes: downloads/ncbi-biosample-packages.xml local/biosamples_from_mongo.duckdb
+	date
+	poetry run python external_metadata_awareness/ncbi_package_info_to_duck_db.py \
+		--db-path $(word 2, $^) \
+		--table-name ncbi_package_info \
+		--xml-file $(word 1, $^) \
+		--overwrite
+	date
+
 
 NCBI_BIOSAMPLES_DUCKDB_PATH = local/ncbi_biosamples.duckdb
 
