@@ -1,15 +1,12 @@
 RUN=poetry run
 WGET=wget
 
-# todo add package info
 # todo add taxonomy info?
-# todo add readme table with date/time stamp (of XML download ideally)
-# todo migrate voting sheet generation code into this repo
 # todo what cpu/ram resources are really required? 4 cores and 128 gb ram in ec2 was probably excessive
 #   but 32 gb 2020 macbook pro complains about swapping while running this code if many other "medium" apps are running
 
 
-.PHONY:load-biosamples-into-mongo duck-all purge add-ncbi-biosample-package-attributes
+.PHONY:load-biosamples-into-mongo duck-all purge add-ncbi-biosample-package-attributes add-ncbi-biosamples-xml-download-date
 
 purge:
 	rm -rf local/biosample_set.xml*
@@ -90,8 +87,7 @@ local/ncbi-biosample-packages.tsv: downloads/ncbi-biosample-packages.xml
 		--xml-file $< \
 		--output-file $@
 
-
-add-ncbi-biosample-package-attributes: downloads/ncbi-biosample-packages.xml local/biosamples_from_mongo.duckdb
+add-ncbi-biosample-package-attributes: downloads/ncbi-biosample-packages.xml local/ncbi_biosamples.duckdb
 	date
 	poetry run python external_metadata_awareness/ncbi_package_info_to_duck_db.py \
 		--db-path $(word 2, $^) \
@@ -99,6 +95,13 @@ add-ncbi-biosample-package-attributes: downloads/ncbi-biosample-packages.xml loc
 		--xml-file $(word 1, $^) \
 		--overwrite
 	date
+
+add-ncbi-biosamples-xml-download-date: local/ncbi_biosamples.duckdb
+	poetry run python external_metadata_awareness/add_duckdb_key_value_row.py \
+		--db-path $< \
+		--table-name etl_log \
+		--key ncbi-biosamples-xml-download-date \
+		--value "2024-12-16"
 
 
 NCBI_BIOSAMPLES_DUCKDB_PATH = local/ncbi_biosamples.duckdb
