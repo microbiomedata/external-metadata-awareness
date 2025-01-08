@@ -10,9 +10,6 @@ include Makefiles/ncbi_metadata.Makefile
 include Makefiles/ncbi_schema.Makefile
 include Makefiles/nmdc_metadata.Makefile
 include Makefiles/nmdc_schema.Makefile
-include Makefiles/soil-env_broad_scale.Makefile
-include Makefiles/soil-env_local_scale.Makefile
-include Makefiles/soil-env_medium.Makefile
 
 # suggested LLM models: gpt-4, gpt-4o, gpt-4-turbo (?), claude-3-opus, claude-3.5-sonnet, gemini-1.5-pro-latest
 # gemini models don't seem to take a temperature parameter
@@ -20,8 +17,6 @@ include Makefiles/soil-env_medium.Makefile
 # check cborg for recent model name changes
 
 # NMDC microbiomedata GitHub STUFF
-local/microbiomedata-repos.csv:
-	. ./report-microbiomedata-repos.sh > $@
 
 local/envo_goldterms.db:
 	$(RUN) runoak --input sqlite:obo:envo ontology-metadata --all > /dev/null # ensure semsql file is cached
