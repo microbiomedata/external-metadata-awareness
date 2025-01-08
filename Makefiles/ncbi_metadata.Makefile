@@ -6,7 +6,7 @@ WGET=wget
 #   but 32 gb 2020 macbook pro complains about swapping while running this code if many other "medium" apps are running
 
 
-.PHONY:load-biosamples-into-mongo duck-all purge add-ncbi-biosample-package-attributes add-ncbi-biosamples-xml-download-date
+.PHONY:load-biosamples-into-mongo duck-all purge add-ncbi-biosample-package-attributes add-ncbi-biosamples-xml-download-date infer-env-triad-curies
 
 purge:
 	rm -rf local/biosample_set.xml*
@@ -102,6 +102,13 @@ add-ncbi-biosamples-xml-download-date: local/ncbi_biosamples.duckdb
 		--table-name etl_log \
 		--key ncbi-biosamples-xml-download-date \
 		--value "2024-12-16"
+
+infer-env-triad-curies: local/biosamples_from_mongo.duckdb
+	# ~ 15 minutes with envo and po. add bto and uberon: ~ 70 minutes. still running after 24 hours with NCBITaxon.
+	date
+	poetry run python external_metadata_awareness/infer_biosample_env_context_obo_curies.py \
+		--biosamples-duckdb-file $<
+	date
 
 
 NCBI_BIOSAMPLES_DUCKDB_PATH = local/ncbi_biosamples.duckdb

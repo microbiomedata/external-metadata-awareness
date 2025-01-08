@@ -34,6 +34,7 @@ scipy = "^1.14.1"
 matplotlib = "^3.9.2"
 jupyter = "^1.1.1"
 pyarrow = "^18.1.0"
+duckdb-engine = "^0.14.0"
 
 
 [build-system]
