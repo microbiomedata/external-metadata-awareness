@@ -32,6 +32,7 @@ pandas = "^2.2.2"
 scikit-learn = "^1.5.1"
 scipy = "^1.14.1"
 matplotlib = "^3.9.2"
+duckdb-engine = "^0.13.5"
 jupyter = "^1.1.1"
 pyarrow = "^18.1.0"
 
@@ -56,6 +57,8 @@ or-boolean-columns = 'external_metadata_awareness.or_boolean_columns:process_tsv
 random-sample-resources = 'external_metadata_awareness.random_sample_resources:downsample_json_resources'
 sql-to-tsv = 'external_metadata_awareness.sql_to_tsv:run_query'
 xml-to-mongo = 'external_metadata_awareness.xml_to_mongo:load_xml_to_mongodb'
+
+biosample-duckdb-reannotation = 'external_metadata_awareness.biosample_duckdb_reannotation:main'
 
 #external_metadata_awareness/cborg_test.py
 #external_metadata_awareness/dict_print_biosamples_from_efetch.py
