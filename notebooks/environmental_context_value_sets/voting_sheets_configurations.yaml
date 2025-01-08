@@ -102,6 +102,7 @@ configurations:
       - "mixs:env_broad"
       - "mixs:env_local"
       - "mixs:env_medium"
+      - "mixs:anatomical_site"
     ncbi_context_selector: "env_medium"
     nmdc_context_selector: "env_medium_id"
     first_where: "lower(s1.value) like '%plant%'"
