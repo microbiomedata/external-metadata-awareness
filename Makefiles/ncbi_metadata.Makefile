@@ -36,18 +36,27 @@ MONGO2DUCK_BATCH_SIZE=10000
 
 # todo what kind of logging/progress indication is really most useful?
 
+# todo parameterize annotation ontologies in new re-annotator script infer_biosample_env_context_obo_curies
+
+# todo add all labels table? or include label in annotation results?
+
+# todo curies_asserted and curies_ner have inconsistent casing for their prefix columns
+
+# todo log don't print
+
+
 .PHONY: add-ncbi-biosample-package-attributes \
 add-ncbi-biosamples-xml-download-date \
 duck-all \
+infer-env-triad-curies \
 load-biosamples-into-mongo \
-purge \
-re-annotate-biosample-contexts
+purge
 
 duck-all: purge \
 local/biosample-last-id-xml.txt \
 load-biosamples-into-mongo local/biosample-count-mongodb.txt \
 local/ncbi_biosamples.duckdb \
-add-ncbi-biosample-package-attributes add-ncbi-biosamples-xml-download-date re-annotate-biosample-contexts
+add-ncbi-biosample-package-attributes add-ncbi-biosamples-xml-download-date infer-env-triad-curies
 
 purge:
 	rm -rf downloads/biosample_set.xml*
@@ -146,16 +155,11 @@ add-ncbi-biosamples-xml-download-date: local/ncbi_biosamples.duckdb downloads/bi
 		--key ncbi-biosamples-xml-download-date \
     --value `stat -c %y downloads/biosample_set.xml.gz | cut -d ' ' -f 1`
 
-infer-env-triad-curies: local/biosamples_from_mongo.duckdb
+infer-env-triad-curies: local/ncbi_biosamples.duckdb
 	# ~ 15 minutes with envo and po. add bto and uberon: ~ 70 minutes. still running after 24 hours with NCBITaxon.
 	date
 	poetry run python external_metadata_awareness/infer_biosample_env_context_obo_curies.py \
 		--biosamples-duckdb-file $<
 	date
 
-re-annotate-biosample-contexts: local/ncbi_biosamples.duckdb
-	poetry run biosample-duckdb-reannotation \
-		--db-path $< \
-		--ontologies envo \
-		--ontologies po
 
