@@ -24,12 +24,17 @@ obo_ontologies_yaml_url = "https://raw.githubusercontent.com/OBOFoundry/OBOFound
 
 obo_ontologies_json_url = "https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/ontologies.jsonld"
 
+# ner_ontologies = [
+#     'bto',
+#     'envo',
+#     'ncbitaxon',
+#     'po',
+#     'uberon',
+# ]
+
 ner_ontologies = [
-    'bto',
     'envo',
-    'ncbitaxon',
     'po',
-    'uberon',
 ]
 
 
@@ -355,8 +360,6 @@ def main(biosamples_duckdb_file: str):
 
     normalized_context_strings = pd.read_sql("select * from main.normalized_context_strings", biosamples_duckdb_engine)
 
-    print(normalized_context_strings)
-
     # Ensure the column has string values and handle non-string entries
     normalized_context_strings['normalized_context_string'] = normalized_context_strings[
         'normalized_context_string'].fillna("").astype(str)
@@ -385,27 +388,20 @@ def main(biosamples_duckdb_file: str):
         'reassembled_curie': 'curie'
     })
 
-    print(curies_asserted)
-
-    # unique_split_normalized_context_string_id
-    # curie_prefix
-    # reassembled_curie
-
     with biosamples_duckdb_engine.connect() as connection:
         curies_asserted.to_sql('curies_asserted', connection, if_exists='replace', index=False)
 
-    curies_counts = curies_asserted['prefix_lc'].value_counts()
+    asserted_curies_prefixes_counts = curies_asserted['prefix_lc'].value_counts()
 
     obo_id_to_titles = get_obo_ids(obo_ontologies_yaml_url)
     obo_ids = list(obo_id_to_titles.keys())
 
-    # Add a new column 'in_obo' to curies_counts
-    curies_counts = curies_counts.to_frame(name='count')  # Convert to DataFrame for easier manipulation
-    curies_counts['in_obo'] = curies_counts.index.isin(obo_ids)
+    # Add a new column 'in_obo' to asserted_curies_prefixes_counts
+    asserted_curies_prefixes_counts = asserted_curies_prefixes_counts.to_frame(
+        name='count')  # Convert to DataFrame for easier manipulation
+    asserted_curies_prefixes_counts['in_obo'] = asserted_curies_prefixes_counts.index.isin(obo_ids)
 
-    print(curies_counts)
-
-    curies_counts.to_csv('curies_counts.tsv', index=True, sep='\t')
+    asserted_curies_prefixes_counts.to_csv('asserted_curies_prefixes_counts.tsv', index=True, sep='\t')
 
     ###
 
@@ -429,8 +425,6 @@ def main(biosamples_duckdb_file: str):
     curies_of_strings = curies_of_strings.drop_duplicates()
 
     curies_of_strings['prefix_native'] = curies_of_strings['curie'].str.split(':').str[0]
-
-    print(curies_of_strings)
 
     with biosamples_duckdb_engine.connect() as connection:
         curies_of_strings.to_sql('curies_ner', connection, if_exists='replace', index=False)
