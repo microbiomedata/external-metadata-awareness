@@ -16,7 +16,25 @@ MONGO2DUCK_BATCH_SIZE=10000
 
 # todo add a count from duckdb step
 
-# todo add purge of MongoDB
+# todo (efficiently) pre-count the number of biosamples in the XML file?
+
+# todo (long term) annotate with more ontologies. uberon is slow. ncbitaxon might take days with this implementation
+#   do other normalizations, like quantity values
+
+# todo update dev and user documentation; share database and documentation at NERSC portal
+#   document paths not included in duckdb
+#   document limitations of using DBeaver with large DuckDBs
+
+# todo warn about conflicting duckdb locks even when both processes are just reading
+# todo warn about apparent error messages when creating annotator
+
+# todo reassess duckdb table names
+
+# todo return to generating a wide table?
+
+# todo add poetry CLI aliases for python scripts
+
+# todo what kind of logging/progress indication is really most useful?
 
 .PHONY: add-ncbi-biosample-package-attributes \
 add-ncbi-biosamples-xml-download-date \
@@ -41,7 +59,6 @@ purge:
 	rm -rf local/ncbi_biosamples.duckdb
 	@echo "Attempting to delete MongoDB database: $(MONGO_DB)"
 	mongosh --quiet --eval "db.getSiblingDB('$(MONGO_DB)').dropDatabase()" || true
-	@echo "MongoDB database $(MONGO_DB) deletion attempted."
 
 downloads/biosample_set.xml.gz:
 	date
@@ -74,6 +91,9 @@ load-biosamples-into-mongo: local/biosample_set.xml
 		--mongo-port $(MONGO_PORT)
 	date
 
+local/biosample-count-mongodb.txt:
+	date && mongosh --eval 'db.getSiblingDB("biosamples").biosamples.countDocuments()' > $@ && date # 1 minute
+
 # no indexing necessary for the mongodb to duckdb convertion in notebooks/mongodb_biosamples_to_duckdb.ipynb
 # 1% MongoDB load 8 minutes on MAM Ubuntu NUC
 
@@ -100,9 +120,6 @@ local/ncbi_biosamples.duckdb:
 # everything on one Samsung SSD 980 PRO, which is supposed to write 5 GB/s. looks like less than 1 MB/s write and wya less read
 # CPU bound?
 
-local/biosample-count-mongodb.txt:
-	date && mongosh --eval 'db.getSiblingDB("biosamples").biosamples.countDocuments()' > $@ && date # 1 minute
-
 downloads/ncbi-biosample-packages.xml:
 	date
 	$(WGET) -O $@ "https://www.ncbi.nlm.nih.gov/biosample/docs/packages/?format=xml"
@@ -122,7 +139,7 @@ add-ncbi-biosample-package-attributes: downloads/ncbi-biosample-packages.xml loc
 		--overwrite
 	date
 
-add-ncbi-biosamples-xml-download-date: local/ncbi_biosamples.duckdb
+add-ncbi-biosamples-xml-download-date: local/ncbi_biosamples.duckdb downloads/biosample_set.xml.gz
 	poetry run python external_metadata_awareness/add_duckdb_key_value_row.py \
 		--db-path $< \
 		--table-name etl_log \
