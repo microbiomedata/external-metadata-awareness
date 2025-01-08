@@ -44,6 +44,8 @@ MONGO2DUCK_BATCH_SIZE=10000
 
 # todo log don't print
 
+# todo add ranking of re-annotation predicates and prefixes
+
 
 .PHONY: add-ncbi-biosample-package-attributes \
 add-ncbi-biosamples-xml-download-date \
