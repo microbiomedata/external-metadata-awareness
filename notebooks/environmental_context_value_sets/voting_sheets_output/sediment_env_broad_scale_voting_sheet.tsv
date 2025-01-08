@@ -1,0 +1,1056 @@
+curie	claimed_prefix	label	envo_native	obsolete	EnvBroadScaleSoilEnum_11_1	ancestors_in_enum_count	descendants_in_enum_count	nlcd_class	abp	env_sys	biome	terrestrial_biome	aquatic_biome	marine_biome	env_mat	soil	liquid water	water ice	snow	mass_of_environmental_material	human_construction	building	building_part	plant_structure	goldterms_mappings	nmdc_biosamples_count	ncbi_bioprojects_count
+ENVO:00000382	ENVO	lake shore	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:00000091	ENVO	beach	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		13.0
+UBERON:0001988	UBERON	feces	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000858	ENVO	marine upwelling biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002166	ENVO	obsolete sausage	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000179	ENVO	desert biome	True	False	False	1	0	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002317	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002000	ENVO	slope	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		7.0
+ENVO:00002132	ENVO	metalimnion	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002329	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001908	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000198	ENVO	mixed forest biome	True	False	True	2	2	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001870	ENVO	gas well	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000194	ENVO	montane grassland biome	True	False	True	2	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000208	ENVO	mediterranean woodland biome	True	False	True	3	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000303	ENVO	sea coast	True	False	False	0	2	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:01001433	ENVO	terrestrial mining	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00000446	ENVO	terrestrial biome	True	False	True	0	51	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	True		
+ENVO:01000218	ENVO	xeric shrubland biome	True	False	True	2	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002186	ENVO	contaminated water	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		1.0
+ENVO:0000026	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001847	ENVO	hoarfrost	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002112	ENVO	gold mine drainage	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001256	ENVO	coastal shrimp pond	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001228	ENVO	Hill sphere	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001850	ENVO	frost	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002007	ENVO	sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	True		299.0
+ENVO:01001207	ENVO	ranch	True	False	False	3	0	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000143	ENVO	river bank	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002010	ENVO	saline water	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		3.0
+ENVO:00000214	ENVO	hadalpelagic zone	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+CHEBI:17632	CHEBI	nitrate	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:00000038	ENVO	lagoon	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		21.0
+ENVO:01000211	ENVO	temperate coniferous forest biome	True	False	True	3	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002015	ENVO	volcanic rock	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:06105011	ENVO	water column	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000195	ENVO	flooded grassland biome	True	False	True	2	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000281	ENVO	fault escarpment	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000406	ENVO	mid-ocean ridge	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		6.0
+ENVO:01003002	ENVO	particle	True	False	False	0	6	False	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False	False		22.0
+ENVO:00002310	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002304	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000018	ENVO	obsolete dry river	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000049	ENVO	marine coral reef biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000407	ENVO	littoral zone	True	False	False	0	0	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002276	ENVO	animal waste material	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002022	ENVO	obsolete alkaline habitat	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000034	ENVO	oceanic sea surface microlayer biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000140	ENVO	drainage ditch	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		2.0
+ENVO:01001929	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000904	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000487	ENVO	paternoster lake	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000524	ENVO	abandoned watercourse	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000526	ENVO	cliff cleft	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000022	ENVO	marine salt marsh biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00002152	ENVO	biofilter	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002042	ENVO	surface water	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		1.0
+ENVO:01000117	ENVO	granular sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01001838	ENVO	arid biome	True	False	False	0	0	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000545	ENVO	shingle beach	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00000542	ENVO	kame	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+UBERON:0000060	UBERON	anatomical wall	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+OBI:0001046	OBI		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		
+ENVO:00002273	ENVO	fluvisol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000263	ENVO	cold seep	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		28.0
+ENVO:01001906	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001851	ENVO	geothermally active field	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002237	ENVO	chernozem	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001924	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001893	ENVO	salt spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002111	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002016	ENVO	sedimentary rock	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000746	ENVO	area of perennial ice or snow	True	False	False	0	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002083	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+FOODON:00001209	FOODON	pulse food product	False	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:00002195	ENVO	pyritic acid mine drainage	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000365	ENVO	ice cave	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002030	ENVO	aquatic biome	True	False	False	0	0	False	True	True	True	False	True	False	False	False	False	False	False	False	False	False	False	False	True		1.0
+ENVO:01000045	ENVO	epeiric sea biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002133	ENVO	anaerobic mud	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000912	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002193	ENVO	pulp-bleaching waste water	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		1.0
+ENVO:00000109	ENVO	woodland area	True	False	False	1	12	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00000098	ENVO	island	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000894	ENVO	obsolete polar biome	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+CHEBI:28938	CHEBI	ammonium	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002175	ENVO	obsolete processed meat product	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002201	ENVO	cis-dichloroethane contaminated sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000215	ENVO	hydrothermal vent	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		16.0
+ENVO:00000230	ENVO	coastal wetland ecosystem	True	False	False	0	2	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01001901	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:0009012	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001230	ENVO	tropical marginal sea biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000318	ENVO	high tide zone	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000321	ENVO	sea water environment	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000245	ENVO	cropland biome	True	False	True	2	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002299	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002045	ENVO	anaerobic sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		7.0
+ENVO:00002103	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002037	ENVO	obsolete freshwater habitat	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000029	ENVO	marine reef biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002121	ENVO	alkaline salt lake	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00002223	ENVO	oligotrophic water	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		1.0
+ENVO:03000082	ENVO	thermokarst lake	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000625	ENVO	manufactured cage	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		8.0
+ENVO:01000859	ENVO	tropical marine upwelling biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000001	ENVO	bedding-plane cave	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002117	ENVO	creosote contaminated soil	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002099	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002251	ENVO	planosol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000104	ENVO	undersea feature	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		20.0
+ENVO:00002142	ENVO	borax leachate	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		1.0
+ENVO:00002204	ENVO	anthropogenic contamination feature	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:03600004	ENVO	drinking water treatment plant	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	True	False	False	False		3.0
+ENVO:03600074	ENVO	aquaculture farm	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000020	ENVO	estuarine biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000199	ENVO	mediterranean forest biome	True	False	True	2	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002280	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002134	ENVO	anaerobic stream sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002180	ENVO	naphthalene enriched sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000503	ENVO	container of an intermittent oxbow lake	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000008	ENVO	microbial mat	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False	False		6.0
+BFO:0000029	BFO	site	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		30.0
+ENVO:01000191	ENVO	subtropical grassland biome	True	False	True	2	1	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001224	ENVO	office	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	True	False	False		
+PATO:0001162	PATO	increased concentration	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:01001861	ENVO	shortwave radiation	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002279	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000856	ENVO	city	True	False	False	0	0	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000248	ENVO	dense settlement biome	True	False	False	0	0	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002209	ENVO	saline lake sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002031	ENVO	obsolete anthropogenic habitat	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000126	ENVO	sulfur spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000047	ENVO	mediterranean sea biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002026	ENVO	obsolete cold temperature habitat	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01001874	ENVO	poultry hatchery	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		
+ENVO:01000186	ENVO	polar desert biome	True	False	False	1	0	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000016	ENVO	sea	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00002123	ENVO	bioreactor	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000201	ENVO	subtropical broadleaf forest biome	True	False	True	3	2	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001842	ENVO	momentum transfer process	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000883	ENVO	area of developed open space	True	False	False	2	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000501	ENVO	submerged bed	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00002178	ENVO	iron-reducing zone of petroleum contaminated sediment	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+PO:0009012	PO	plant structure development stage	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000552	ENVO	natural gas	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002028	ENVO	obsolete high osmolarity habitat	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002157	ENVO	stromatolite mat	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False	False		1.0
+ENVO:01001110	ENVO	ecosystem	True	False	False	0	52	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002306	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002222	ENVO	food shop	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	True	False	False	False		1.0
+ENVO:00000504	ENVO	container of an intermittent pond	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000183	ENVO	tropical desert biome	True	False	False	1	0	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001933	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001915	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000147	ENVO	ocean current	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000182	ENVO	temperate desert biome	True	False	False	1	0	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000121	ENVO	artificial channel	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		1.0
+ENVO:00002261	ENVO	forest soil	True	False	False	1	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000030	ENVO	marine hydrothermal vent biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002096	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001928	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000032	ENVO	neritic pelagic zone biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002163	ENVO	obsolete fermenting Elaeis Palm sap	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002050	ENVO	achondrite	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False	False		1.0
+ENVO:00002275	ENVO	technosol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000129	ENVO	marine hydrothermal vent chimney	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002189	ENVO	obsolete cheese product	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000898	ENVO	obsolete tropical coral biome	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000802	ENVO	planetary moon	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000508	ENVO	terrace	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001340	ENVO	semi-diurnal marine tidal flow zone	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002270	ENVO	chemocline	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000246	ENVO	volcanic crater	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:02000003	ENVO	pockmark field	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+NCBITaxon:436486	NCBITaxon	Dinosauria	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001818	ENVO	enrichment culturing unit	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002046	ENVO	activated sludge	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002172	ENVO	obsolete liver paste	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001836	ENVO	montane biome	True	False	False	0	3	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000514	ENVO	crater	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000497	ENVO	rincon	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000013	ENVO	cave system	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002124	ENVO	anaerobic bioreactor	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00002333	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002036	ENVO	obsolete habitat	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002327	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002206	ENVO	coal mine waste material	True	False	False	0	0	False	True	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002272	ENVO	waste treatment plant	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	True	False	False	False		1.0
+ENVO:00000521	ENVO	rockfall	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001892	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000857	ENVO	temperate mediterranean sea biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002171	ENVO	hay compost	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001855	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000262	ENVO	steppe	True	False	False	1	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00000510	ENVO	meander neck	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002268	ENVO	sphagnum bog	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002094	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002260	ENVO	dune soil	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000910	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002119	ENVO	alkaline hot spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002148	ENVO	coarse beach sand	True	False	False	0	0	False	True	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002146	ENVO	xylene contaminated soil	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000638	ENVO	planetary crust	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000212	ENVO	marine abyssalpelagic zone	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00000130	ENVO	rocky reef	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00002064	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000059	ENVO	sea grass bed	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00002110	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001059	ENVO	mock community culture	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000897	ENVO	obsolete tropical upwelling biome	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000081	ENVO	mountain	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002114	ENVO	chemically enriched sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002188	ENVO	obsolete powdered milk formula	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002118	ENVO	sea sand	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001369	ENVO	tidal mangrove shrubland	True	False	True	3	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000224	ENVO	mediterranean grassland biome	True	False	True	3	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002141	ENVO	leachate	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		1.0
+ENVO:02000140	ENVO	fluid environmental material	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002332	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000491	ENVO	subsequent stream	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000621	ENVO	microcosm	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		53.0
+CHEBI:15377	CHEBI	water	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		13.0
+ENVO:01000193	ENVO	temperate grassland biome	True	False	True	2	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001821	ENVO	hydrothermally-influenced sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:00000133	ENVO	glacier	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False	False		39.0
+ENVO:01000035	ENVO	oceanic epipelagic zone biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000243	ENVO	freshwater wetland ecosystem	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00002234	ENVO	acrisol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001843	ENVO	atmosphere-ocean momentum transfer process	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002039	ENVO	obsolete bone	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000614	ENVO	bicycle	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002100	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:0100032	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:03000120	ENVO	subglacial lake	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000885	ENVO	area of developed space with medium usage intensity	True	False	False	2	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:02000152	ENVO	mangrove biome sediment	True	False	False	2	0	False	True	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	True		4.0
+ENVO:00000890	ENVO	small river biome	True	False	False	0	0	False	True	True	True	False	True	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:01001213	ENVO	radio wave stellar radiation	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002078	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002025	ENVO	obsolete high temperature habitat	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000891	ENVO	area of pastureland or hayfields	True	False	False	3	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000033	ENVO	oceanic pelagic zone biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000426	ENVO	ocean floor	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		14.0
+ENVO:00002075	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:03600001	ENVO	chemically contaminated sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002314	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002161	ENVO	obsolete fermented agave juice	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001065	ENVO	meteorite lake	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:02000142	ENVO	petroleum oil refinery	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	True		
+PATO:0001711	PATO	perimeter	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000608	ENVO	boat	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000240	ENVO	saline wetland	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:01000403	ENVO	tropical mangrove	True	False	False	0	0	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:02000091	ENVO	coal	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001020	ENVO	hypersaline lake	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		8.0
+ENVO:00002330	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000197	ENVO	broadleaf forest biome	True	False	True	2	7	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002158	ENVO	ditch water	True	False	False	0	0	False	True	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		1.0
+ENVO:00000917	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000309	ENVO	cold environment	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+PATO:0001323	PATO	area	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00002192	ENVO	poultry litter	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:03600017	ENVO	slurry	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00005797	ENVO	lake bottom mud	True	False	False	0	0	False	True	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002235	ENVO	cambisol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000816	ENVO	area of deciduous forest	True	False	False	1	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000529	ENVO	beach ridge	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000903	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001036	ENVO	sediment permeated by saline water	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		3.0
+CHEBI:18248	CHEBI	iron atom	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:01001254	ENVO	animal aquaculture process	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001864	ENVO	photosynthetically active radiation	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002331	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002257	ENVO	podzol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000496	ENVO	rill	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+PATO:0001759	PATO	granular	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		15.0
+ENVO:00000428	ENVO	biome	True	False	False	0	52	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:01000688	ENVO	lake coast	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000247	ENVO	rangeland biome	True	False	True	2	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002323	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000187	ENVO	subtropical savanna biome	True	False	True	3	1	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002156	ENVO	Superfund site	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002059	ENVO	biosolids	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001227	ENVO	aquatic natural environment	True	False	False	0	0	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000527	ENVO	interfluve	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001226	ENVO	terrestrial natural environment	True	False	False	0	0	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002278	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000533	ENVO	landfill	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001607	ENVO	water current	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000101	ENVO	delta	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01001825	ENVO	active anaerobic enrichment culturing unit	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001839	ENVO	safe environment for living organisms	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+RO:0001025	RO	located in	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00002214	ENVO	power plant	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	True	False	False	False		1.0
+ENVO:01001922	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000160	ENVO	marine pockmark	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000406	ENVO	snow	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	True	False	False	False	False	False	False		1.0
+ENVO:00002081	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:03000039	ENVO	cryoconite hole	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002145	ENVO	chromate contaminated soil	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000322	ENVO	brackish water environment	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002072	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000027	ENVO	spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		21.0
+ENVO:01000228	ENVO	tropical moist broadleaf forest biome	True	False	True	4	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000007	ENVO	organic object formed through microbial activity	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False	False		2.0
+ENVO:00000007	ENVO	third-order administrative region	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000893	ENVO	xeric basin biome	True	False	False	0	0	False	True	True	True	False	True	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002245	ENVO	gypsisol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002095	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000024	ENVO	obsolete intermittent stream	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002150	ENVO	coastal sea water	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		3.0
+ENVO:00002282	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+PATO:0045093	PATO	south	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:01000220	ENVO	tropical woodland biome	True	False	True	2	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000495	ENVO	tributary	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002065	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000250	ENVO	subpolar coniferous forest biome	True	False	True	3	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000889	ENVO	area of lichen-dominated vegetation	True	False	False	2	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000210	ENVO	tropical coniferous forest biome	True	False	True	3	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001004	ENVO	groundwater	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		9.0
+ENVO:00000057	ENVO	mangrove swamp	True	False	False	0	2	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002048	ENVO	chondrite	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False	False		1.0
+ENVO:00000552	ENVO	talik	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001503	ENVO	glacial surface layer	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00000050	ENVO	geyser	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00000017	ENVO	saline hydrographic feature	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000499	ENVO	trough	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002291	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000906	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001229	ENVO	Lagrangian point	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000519	ENVO	agricultural terrace	True	False	False	0	0	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000105	ENVO	obsolete marine benthic feature	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000126	ENVO	marine sub-littoral zone	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00000296	ENVO	rice field	True	False	False	3	0	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00002053	ENVO	limestone	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002267	ENVO	industrial waste material	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000010	ENVO	transport feature	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		
+ENVO:00002084	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002300	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002242	ENVO	lixisol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000234	ENVO	bayou	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00005801	ENVO	rhizosphere	True	False	False	0	0	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		10.0
+ENVO:00002208	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000402	ENVO	mud volcano	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		12.0
+ENVO:02000049	ENVO	coastal water body	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000124	ENVO	marine supra-littoral zone	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		6.0
+ENVO:00002301	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000041	ENVO	tidal creek	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00003096	ENVO	tap water	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		1.0
+RO:0002577	RO	system	False	False	False	0	52	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		6.0
+PATO:0000025	PATO	composition	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000502	ENVO	container of an intermittent saline lake	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+PO:0003000	PO	transition zone	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True	False		1.0
+ENVO:01001859	ENVO	dew point	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000048	ENVO	ocean biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002225	ENVO	mesotrophic water	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		1.0
+ENVO:01000223	ENVO	montane savanna biome	True	False	True	3	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002090	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002292	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002101	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:0000051	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:02000059	ENVO	surface soil	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000534	ENVO	riverine pothole	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000352	ENVO	field	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:01000722	ENVO	meltwater	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		1.0
+ENVO:01000752	ENVO	area of barren land	True	False	False	1	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000902	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000463	ENVO	harbour	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		10.0
+ENVO:01000133	ENVO	hyperthermophilic sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:01001846	ENVO	depth hoar	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001932	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002210	ENVO	aerobic sulfide-oxidizing bioreactor	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002226	ENVO	borehole	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		7.0
+PATO:0000587	PATO	decreased size	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000617	ENVO	lentic water body	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		
+ENVO:02500034	ENVO	evaporation	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000523	ENVO	cutoff	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000651	ENVO	ocean strait	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002344	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000313	ENVO	anthropogenic environment	True	False	False	0	3	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		1.0
+ENVO:00000220	ENVO	archipelago	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		2.0
+ENVO:00002185	ENVO	oil reservoir	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		1.0
+ENVO:00002027	ENVO	obsolete extreme high temperature habitat	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000905	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002296	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001214	ENVO	infrared stellar radiation	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000219	ENVO	anthropogenic terrestrial biome	True	False	True	1	2	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002153	ENVO	compost biofilter	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000548	ENVO	gravel field	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000891	ENVO	large freshwater lake biome	True	False	False	0	0	False	True	True	True	False	True	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001934	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001872	ENVO	manure pit	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001907	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002182	ENVO	nitrobenzene enriched sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002143	ENVO	calcite hot spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002286	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001902	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001840	ENVO	safe environment	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002313	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001200	ENVO	anthropised terrestrial environmental zone	True	False	False	2	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000298	ENVO	continental margin	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		4.0
+ENVO:00002116	ENVO	contaminated soil	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000464	ENVO	artificial harbor	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		1.0
+ENVO:00000522	ENVO	canal tunnel	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002167	ENVO	platinum mine	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		1.0
+ENVO:00002221	ENVO	shop	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	True	False	False	False		1.0
+ENVO:00001997	ENVO	acid mine drainage	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:00000494	ENVO	insequent stream	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000544	ENVO	leat	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		
+ENVO:01001911	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:03605008	ENVO	freshwater stream biome	True	False	False	0	0	False	True	True	True	False	True	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001218	ENVO	gamma-ray stellar radiation	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002247	ENVO	nitisol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002055	ENVO	sandstone	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00000304	ENVO	shore	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		7.0
+ENVO:00000026	ENVO	well	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001887	ENVO	letter paper	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001919	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002205	ENVO	unexploded-ordnance dump	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000669	ENVO	active geological fault	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001877	ENVO	transient tracer	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000221	ENVO	continental island	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001848	ENVO	rime	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002295	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002281	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001209	ENVO	wetland ecosystem	True	False	False	0	2	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		
+ENVO:00002236	ENVO	cryosol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:02500040	ENVO	plastic pollution	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002159	ENVO	drilling bore water	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		1.0
+ENVO:01001879	ENVO	proglacial	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002020	ENVO	obsolete extreme habitat	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002019	ENVO	brackish water	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		3.0
+PATO:0001306	PATO	decreased temperature	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00000322	ENVO	volcanic cave	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000855	ENVO	area of mixed forest	True	False	False	1	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002052	ENVO	iron meteorite	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False	False		1.0
+ENVO:00000531	ENVO	ice cap depression	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001841	ENVO	volcanic soil	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002253	ENVO	umbrisol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000384	ENVO	river bed	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00002058	ENVO	secondary sludge	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002054	ENVO	chalk	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001860	ENVO	wind gust	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000894	ENVO	area of emergent herbaceous wetland	True	False	False	1	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000888	ENVO	large river headwater biome	True	False	False	0	0	False	True	True	True	False	True	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002239	ENVO	calcisol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002341	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000518	ENVO	ditch mouth	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000915	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+NCBITaxon:2157	NCBITaxon	Archaea	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		12.0
+ENVO:01000177	ENVO	grassland biome	True	False	True	1	6	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000886	ENVO	area of developed space with high usage intensity	True	False	False	2	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000127	ENVO	marine cold seep biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:02500000	ENVO	environmental system process	True	False	False	0	52	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002249	ENVO	phaeozem	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002266	ENVO	chicken breeding waste material	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001798	ENVO	tropical mixed forest biome	True	False	True	3	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000002	ENVO	water well	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002198	ENVO	fresh water aquarium	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000123	ENVO	marine sponge reef biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002126	ENVO	aerobic bioreactor	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001530	ENVO	water ice core	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False	False		1.0
+ENVO:00002168	ENVO	gold mine	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		1.0
+ENVO:00002079	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000913	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000520	ENVO	landslide	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000381	ENVO	massif	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002227	ENVO	obsolete saline water habitat	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002106	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000512	ENVO	pond bed	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000515	ENVO	road cut	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000745	ENVO	area of perennial snow	True	False	False	0	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001830	ENVO	tropical biome	True	False	False	0	9	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001930	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000222	ENVO	subtropical woodland biome	True	False	True	2	1	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002108	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002085	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+CHEBI:16189	CHEBI	sulfate	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00002102	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000117	ENVO	plantation	True	False	False	3	0	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:03000033	ENVO	marine sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	True		81.0
+ENVO:00000535	ENVO	weir	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		
+ENVO:01000217	ENVO	mediterranean shrubland biome	True	False	True	3	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001225	ENVO	IUCN protected area with sustainable use of natural resources	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001202	ENVO	alluvium	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001215	ENVO	visible spectrum stellar radiation	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002196	ENVO	aquarium	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00002038	ENVO	obsolete WWF biome	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000843	ENVO	area of evergreen forest	True	False	False	1	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001833	ENVO	mediterranean biome	True	False	False	0	5	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+PATO:0045094	PATO	west	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000206	ENVO	marine neritic zone	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		1.0
+ENVO:01000666	ENVO	area of open water	True	False	False	0	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001882	ENVO	surface hoar	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002211	ENVO	thermophilic anaerobic methanogenic reactor	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+PATO:0000146	PATO	temperature	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00002070	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002034	ENVO	biofilm	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False	False		4.0
+ENVO:01001048	ENVO	sediment environment	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000869	ENVO	area of scrub	True	False	False	1	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002077	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001891	ENVO	alum spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000549	ENVO	container of an intermittent water body	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000053	ENVO	freshwater marsh	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001890	ENVO	chalybeate spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00005785	ENVO	obsolete volcanic soil	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001871	ENVO	pit	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000002	ENVO	anthropogenic geographic feature	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002080	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002127	ENVO	stream sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		6.0
+ENVO:00002294	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002288	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:21001216	ENVO	ultraviolet radiation	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+PATO:0045092	PATO	east	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000547	ENVO	waterhole	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000320	ENVO	marine environment	True	False	False	0	0	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002264	ENVO	waste material	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001865	ENVO	concentration of carbon dioxide in an atmosphere	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001495	ENVO	dioxygen dissolved in marine water	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00000543	ENVO	swale	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000005	ENVO	first-order administrative region	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001832	ENVO	subtropical biome	True	False	False	0	13	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002231	ENVO	alisol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001876	ENVO	graupel	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	True	False	False	False	False	False	False		
+ENVO:00000161	ENVO	banana plantation	True	False	False	3	0	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002115	ENVO	petroleum enriched sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:01001231	ENVO	kerogen	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		
+PATO:0045091	PATO	north	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002140	ENVO	cobble	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False	False		1.0
+ENVO:00000393	ENVO	sound	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002228	ENVO	pond water	True	False	False	0	0	False	True	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		1.0
+PO:0000025	PO	root tip	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True	False		1.0
+ENVO:01000043	ENVO	neritic mesopelagic zone biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000028	ENVO	marine hadal zone biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002017	ENVO	metamorphic rock	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001866	ENVO	well intervention	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000892	ENVO	area of cropland	True	False	False	1	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000213	ENVO	marine mesopelagic zone	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002875	ENVO	oil contaminated soil	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		3.0
+ENVO:01000906	ENVO	aquaculture process	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000108	ENVO	meadow ecosystem	True	False	False	0	0	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002061	ENVO	oil spill	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00000896	ENVO	obsolete temperate upwelling biome	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002092	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000892	ENVO	small freshwater lake biome	True	False	False	0	0	False	True	True	True	False	True	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00000914	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001875	ENVO	debris flow following rainfall	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000415	ENVO	raised beach	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000908	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002298	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001853	ENVO	periglacial	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000066	ENVO	marine anoxic zone	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002179	ENVO	intertidal sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	True		18.0
+ENVO:00002104	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002014	ENVO	plutonic rock	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001931	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002139	ENVO	pebble	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False	False		1.0
+PO:0025172	PO	thorn	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True	False		1.0
+ENVO:04000007	ENVO	lake water	True	False	False	0	0	False	True	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		2.0
+ENVO:01000770	ENVO	carbon dioxide emission	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002213	ENVO	anaerobic sludge blanket reactor	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001863	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000192	ENVO	tropical grassland biome	True	False	True	2	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001881	ENVO	supraglacial	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00000073	ENVO	building	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	True	False	False	False		1.0
+ENVO:00002063	ENVO	oil seep	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00000044	ENVO	peatland	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:01001904	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:03000034	ENVO	shallow marine sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:01000026	ENVO	marine bathyal zone biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000551	ENVO	endorheic basin	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000025	ENVO	reservoir	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		5.0
+ENVO:00002098	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000888	ENVO	area of gramanoid or herbaceous vegetation	True	False	False	1	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000011	ENVO	garden	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002131	ENVO	epilimnion	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000253	ENVO	freshwater river biome	True	False	False	0	0	False	True	True	True	False	True	False	False	False	False	False	False	False	False	False	False	False	False	163.0	
+ENVO:00000208	ENVO	marine pelagic zone	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002320	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001912	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000536	ENVO	moatan	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000548	ENVO	eutrophic lake	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+PATO:0001456	PATO	anaerobic	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		6.0
+ENVO:00001995	ENVO	rock	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00000076	ENVO	mine	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		8.0
+ENVO:00000911	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000536	ENVO	factory	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	True	False	False	False		2.0
+ENVO:01001221	ENVO	office building	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	True	False	False	False		
+ENVO:00000383	ENVO	stream bed	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+CHEBI:41609	CHEBI	carbonate	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001895	ENVO	soda spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002240	ENVO	kastanozem	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000189	ENVO	temperate savanna biome	True	False	True	3	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000890	ENVO	area of moss-dominated vegetation	True	False	False	1	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002151	ENVO	obsolete ocean water	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002033	ENVO	carcass	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False	False		1.0
+ENVO:00002229	ENVO	arenosol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000040	ENVO	oceanic benthopelagic zone biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001314	ENVO	estuarine coastal lower water column	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002008	ENVO	dust	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000315	ENVO	acidic environment	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01001854	ENVO	hydrothermal field	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:00000035	ENVO	marsh	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		40.0
+ENVO:03000096	ENVO	season	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001889	ENVO	lithia spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001201	ENVO	marine environmental zone	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		37.0
+ENVO:01001468	ENVO	intertidal ecosystem	True	False	False	0	0	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00000003	ENVO	mine tailing	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002334	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002246	ENVO	ferralsol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002051	ENVO	stony-iron meteorite	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False	False		1.0
+ENVO:01001217	ENVO	X-ray stellar radiation	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002340	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002113	ENVO	deep marine sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		16.0
+ENVO:00002184	ENVO	subsurface landform	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002319	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002091	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000180	ENVO	tundra biome	True	False	True	1	1	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000297	ENVO	freshwater river	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00000476	ENVO	lake inlet	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002263	ENVO	garden soil	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002169	ENVO	coal mine	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		1.0
+ENVO:01001304	ENVO	oasis	True	False	False	1	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002062	ENVO	obsolete oil	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000036	ENVO	oceanic mesopelagic zone biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002164	ENVO	fossil material	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002312	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000215	ENVO	temperate shrubland biome	True	False	True	2	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+CHEBI:46662	CHEBI	mineral	False	False	False	0	6	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000246	ENVO	village biome	True	False	False	0	0	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000185	ENVO	montane desert biome	True	False	False	1	0	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000150	ENVO	coral reef	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00000500	ENVO	beaver dam	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002173	ENVO	hospital	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		1.0
+ENVO:00000036	ENVO	irrigation canal	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		
+ENVO:01000579	ENVO	television set	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000641	ENVO	planetary core	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000409	ENVO	freshwater littoral zone	True	False	False	0	0	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002154	ENVO	radioactive sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002220	ENVO	obsolete cheese spoilage	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001613	ENVO	permafrost thawing process	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000178	ENVO	savanna biome	True	False	True	2	6	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002297	ENVO	obsolete environmental feature	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002144	ENVO	cave wall	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:01000749	ENVO	oceanic crust	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01001835	ENVO	alpine biome	True	False	False	0	1	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+PATO:0000592	PATO	decreased thickness	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000051	ENVO	marine black smoker biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001917	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000368	ENVO	anchialine pool	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000019	ENVO	saline lake	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		95.0
+ENVO:00000004	ENVO	administrative region	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000040	ENVO	waterfall	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000490	ENVO	consequent stream	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000188	ENVO	tropical savanna biome	True	False	True	3	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002345	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000086	ENVO	plain	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+PATO:0001472	PATO	decreased depth	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00000889	ENVO	large river delta biome	True	False	False	0	0	False	True	True	True	False	True	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000205	ENVO	subtropical	True	False	False	0	13	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002049	ENVO	stony meteorite	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False	False		1.0
+ENVO:00000009	ENVO	national geopolitical entity	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000306	ENVO	freshwater environment	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000041	ENVO	neritic sea surface microlayer biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002162	ENVO	obsolete fermenting sugar cane juice	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002023	ENVO	obsolete high pressure habitat	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002155	ENVO	high-level radioactive sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002060	ENVO	oil sludge	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001884	ENVO	surface landform	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002074	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002011	ENVO	fresh water	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		22.0
+ENVO:01000991	ENVO	bathtub fixture	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00002250	ENVO	plinthosol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002035	ENVO	meteorite	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False	False		1.0
+CHEBI:26822	CHEBI	sulfide	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00000899	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000096	ENVO	caldera	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:01001894	ENVO	alkaline spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002325	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002190	ENVO	obsolete yogurt	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002274	ENVO	stagnosol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000447	ENVO	marine biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	True		9.0
+ENVO:00002337	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002232	ENVO	andosol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001900	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001062	ENVO	crater lake	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+PATO:0001429	PATO	acidic	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002293	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001899	ENVO	reef	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002160	ENVO	estuarine mud	True	False	False	0	0	False	True	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00002097	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002336	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001921	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002984	ENVO	petroleum	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00002057	ENVO	raw primary sludge	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002255	ENVO	solonetz	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000006	ENVO	second-order administrative region	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000229	ENVO	mediterranean savanna biome	True	False	True	4	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000467	ENVO	university campus	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		2.0
+ENVO:01000209	ENVO	subtropical coniferous forest biome	True	False	True	3	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002086	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000244	ENVO	abyssal plain	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+PATO:0001595	PATO	depth	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000053	ENVO	marine ultramafic hydrothermal vent biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000884	ENVO	area of developed space with low usage intensity	True	False	False	2	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002202	ENVO	organically enriched sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002194	ENVO	oil field production water	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		1.0
+ENVO:00002303	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001222	ENVO	commercial building	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	True	False	False	False		
+ENVO:00012411	ENVO	karst cave	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000740	ENVO	area of perennial water ice	True	False	False	0	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002269	ENVO	thermocline	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000294	ENVO	fish farm	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002024	ENVO	obsolete haline habitat	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000297	ENVO	paddy field	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002343	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002203	ENVO	inorganically enriched sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000493	ENVO	obsequent stream	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001378	ENVO	marine bed	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+PATO:0002067	PATO	stratification	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001837	ENVO	subalpine biome	True	False	False	0	0	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002309	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002066	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001905	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000598	ENVO	freshwater spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00000169	ENVO	canyon	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000206	ENVO	temperate	True	False	False	0	7	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000687	ENVO	coast	True	False	False	0	2	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		32.0
+ENVO:00002328	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000111	ENVO	forested area	True	False	False	1	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		7.0
+ENVO:00002191	ENVO	animal litter	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000274	ENVO	continental rise	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+CHEBI:60004	CHEBI	mixture	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001903	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000249	ENVO	urban biome	True	False	False	0	0	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00001998	ENVO	soil	True	False	False	0	6	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		11.0
+ENVO:01000221	ENVO	temperate woodland biome	True	False	True	2	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000023	ENVO	stream	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		19.0
+ENVO:00000045	ENVO	estuary	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		57.0
+ENVO:00000054	ENVO	saline marsh	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:00000492	ENVO	resequent stream	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002271	ENVO	nuclear power plant	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	True	False	False	False		1.0
+ENVO:00000015	ENVO	ocean	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		22.0
+ENVO:01000213	ENVO	subtropical shrubland biome	True	False	True	2	1	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000918	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000620	ENVO	mesocosm	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00000175	ENVO	karst	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002230	ENVO	anthrosol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:03600064	ENVO	microbialite	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002138	ENVO	beach sand	True	False	False	0	0	False	True	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:01000214	ENVO	tropical shrubland biome	True	False	True	2	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000255	ENVO	flood plain	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		2.0
+ENVO:01001927	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000900	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002218	ENVO	obsolete commercial yogurt	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000192	ENVO	mudflat	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000861	ENVO	area of dwarf scrub	True	False	False	1	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001379	ENVO	mussel bed	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00001999	ENVO	marine water body	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000942	ENVO	continental subsurface zone	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+NCBITaxon:2836	NCBITaxon	Bacillariophyta	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00000279	ENVO	saline pan	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00000901	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002284	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+CHEBI:24866	CHEBI	salt	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00000895	ENVO	obsolete temperate shelf and sea biome	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000020	ENVO	lake	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		64.0
+ENVO:00002256	ENVO	regosol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002041	ENVO	obsolete ground water	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002324	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+NCBITaxon:2	NCBITaxon	Bacteria	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		27.0
+ENVO:00000486	ENVO	shoreline	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		134.0
+ENVO:00000012	ENVO	hydrographic feature	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000489	ENVO	palsa	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000227	ENVO	tropical dry broadleaf forest biome	True	False	True	4	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000174	ENVO	forest biome	True	False	True	1	17	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000513	ENVO	reservoir bed	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002137	ENVO	brackish estuary	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:01001099	ENVO	divergent plate boundary	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000051	ENVO	hot spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		44.0
+ENVO:00000055	ENVO	saline evaporation pond	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00000078	ENVO	farm	True	False	False	2	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		5.0
+CHEBI:22695	CHEBI	base	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:01001920	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000216	ENVO	montane shrubland biome	True	False	True	2	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001926	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002068	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002339	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000525	ENVO	canalized stream	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000054	ENVO	marine basaltic hydrothermal vent biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002082	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002308	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002029	ENVO	obsolete extraterrestial habitat	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001868	ENVO	hydraulic fracturing	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002073	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000200	ENVO	tropical broadleaf forest biome	True	False	True	3	2	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001219	ENVO	ionizing stellar radiation	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000316	ENVO	intertidal zone	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		227.0
+ENVO:01000025	ENVO	marine neritic benthic zone biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:01000023	ENVO	marine pelagic biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00002258	ENVO	loam	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002277	ENVO	back-arc basin	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000032	ENVO	bay	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:01000027	ENVO	marine abyssal zone biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001192	ENVO	sediment surface	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		12.0
+ENVO:01001923	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000854	ENVO	tropical marine coral reef biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000739	ENVO	habitat	True	False	False	0	0	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		6.0
+ENVO:01001898	ENVO	acidic spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000909	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:03600071	ENVO	cyanobacterial bloom	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002311	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001925	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002197	ENVO	saline water aquarium	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001505	ENVO	alpine tundra biome	True	False	True	2	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002290	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002125	ENVO	anaerobic dechlorinating bioreactor	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001822	ENVO	active enrichment culturing unit	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000488	ENVO	glacial lake	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001216	ENVO	ultraviolet stellar radiation	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002316	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002136	ENVO	arsenate treated wood	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002044	ENVO	sludge	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:01000154	ENVO	carbon dioxide-reducing sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002087	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002170	ENVO	compost	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000039	ENVO	oceanic hadal pelagic zone biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002241	ENVO	leptosol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000196	ENVO	coniferous forest biome	True	False	True	2	4	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000100	ENVO	valley	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:01000046	ENVO	marginal sea biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002187	ENVO	obsolete milk formula	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002147	ENVO	coal mine lake sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002335	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000014	ENVO	canal	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001206	ENVO	grassland ecosystem	True	False	False	0	7	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002013	ENVO	igneous rock	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002326	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001916	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002071	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000498	ENVO	volcanic dike	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001049	ENVO	non-saline sediment environment	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		7.0
+ENVO:00002315	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002199	ENVO	sandy beach	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		6.0
+ENVO:02000112	ENVO	fume	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000907	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002181	ENVO	neutral hot spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:01001878	ENVO	oceanic transient tracer	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000141	ENVO	bank	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:01000243	ENVO	boulder	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False	False		1.0
+ENVO:00002305	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001885	ENVO	submerged landform	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000873	ENVO	freshwater biome	True	False	False	0	0	False	True	True	True	False	True	False	False	False	False	False	False	False	False	False	False	False	False	2.0	5.0
+ENVO:00000485	ENVO	sea shore	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000223	ENVO	continental shelf	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		14.0
+ENVO:00000505	ENVO	underground irrigation canal	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000008	ENVO	fourth-order administrative region	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002200	ENVO	sea ice	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	True	False	False	False	False	False	False	False		1.0
+ENVO:00000207	ENVO	oceanic zone	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000022	ENVO	river	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		45.0
+ENVO:00000021	ENVO	freshwater lake	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		13.0
+ENVO:00002088	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001867	ENVO	well stimulation	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002032	ENVO	obsolete organism-associated habitat	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000087	ENVO	cliff	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001873	ENVO	hatchery	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		
+ENVO:01001913	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000541	ENVO	brackish pond	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002244	ENVO	gleysol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002067	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00010504	ENVO	surface layer	True	False	False	0	52	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00002215	ENVO	geothermal power plant	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	True	False	False	False		1.0
+ENVO:00002224	ENVO	eutrophic water	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		1.0
+ENVO:03600087	ENVO	greenhouse	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		2.0
+ENVO:00002122	ENVO	arsenic-rich mud	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002285	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001232	ENVO	sapropelic kerogen	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001205	ENVO	lithification	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000165	ENVO	asphalt lake	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00000167	ENVO	bar	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		6.0
+ENVO:01000339	ENVO	polar biome	True	False	False	0	0	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:03501208	ENVO	air vent	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:01001888	ENVO	calcic spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002176	ENVO	contaminated sludge	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001918	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001220	ENVO	water accumulation process	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001211	ENVO	stellar radiation	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000343	ENVO	altitudinal condition	True	False	False	0	4	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002321	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000916	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000540	ENVO	brackish lake	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00002012	ENVO	hypersaline water	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		1.0
+ENVO:00002262	ENVO	clay soil	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000033	ENVO	pond	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		13.0
+ENVO:00002107	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000184	ENVO	subtropical desert biome	True	False	False	1	0	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001203	ENVO	alluvial sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00000134	ENVO	permafrost	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		6.0
+UBERON:0002416	UBERON	integumental system	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		9.0
+ENVO:00002219	ENVO	obsolete cheese starter culture	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000122	ENVO	track	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		1.0
+ENVO:00000267	ENVO	submarine canyon	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001204	ENVO	alluvial deposit	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000039	ENVO	fjord	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		9.0
+ENVO:01000190	ENVO	flooded savanna biome	True	False	True	3	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002129	ENVO	anaerobic sludge	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		7.0
+ENVO:01000202	ENVO	temperate broadleaf forest biome	True	False	True	3	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002342	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000128	ENVO	dilution basin mediterranean sea biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001910	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000860	ENVO	temperate marine upwelling biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001883	ENVO	hoar crystal	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001856	ENVO	liquid accumulation process	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002283	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+CHEBI:33521	CHEBI	metal atom	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001223	ENVO	lumber production process	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000300	ENVO	scrubland area	True	False	False	1	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000254	ENVO	environmental system	True	False	False	0	52	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00002093	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000268	ENVO	lake bed	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:02000092	ENVO	iron mine	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		1.0
+ENVO:01000037	ENVO	oceanic bathypelagic zone biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001880	ENVO	subglacial	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002183	ENVO	oil tank	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000273	ENVO	continental slope	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:00002056	ENVO	shale	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000004	ENVO	concentration basin mediterranean sea biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000317	ENVO	tidal pool	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002287	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002243	ENVO	histosol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002302	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002105	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+PCO:1000004	PCO	microbial community	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000226	ENVO	subtropical moist broadleaf forest biome	True	False	True	4	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001857	ENVO	outgoing longwave radiation	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002165	ENVO	obsolete meat food product	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002076	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002130	ENVO	hypolimnion	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002338	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000509	ENVO	marine terrace	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002212	ENVO	thermophilic granular sludge	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000530	ENVO	apron	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000176	ENVO	shrubland biome	True	False	True	1	7	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001914	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002109	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002128	ENVO	mesophilic sulfur spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000075	ENVO	bridge	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		1.0
+ENVO:00002174	ENVO	obsolete hot dog	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002120	ENVO	acidic hot spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		9.0
+ENVO:00002254	ENVO	vertisol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000067	ENVO	cave	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		11.0
+ENVO:01001849	ENVO	glaze	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001834	ENVO	subpolar biome	True	False	False	0	1	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000546	ENVO	lake sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		36.0
+ENVO:01000856	ENVO	temperate marginal sea biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001208	ENVO	swamp area	True	False	False	1	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:03600065	ENVO	spring water	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		5.0
+ENVO:00002322	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000511	ENVO	blanket bog	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001845	ENVO	hoar	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000216	ENVO	fumarole	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00003081	ENVO	metal contaminated soil	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002289	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002259	ENVO	agricultural soil	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		3.0
+ENVO:01001896	ENVO	radioactive spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002318	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001852	ENVO	energy transfer process	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000050	ENVO	marine subtidal rocky reef biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000887	ENVO	area of sedge- and forb-dominated herbaceous vegetation	True	False	False	1	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000887	ENVO	large river biome	True	False	False	0	0	False	True	True	True	False	True	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000038	ENVO	oceanic abyssopelagic zone biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001869	ENVO	fracking liquid	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		
+CHEBI:16183	CHEBI	methane	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002207	ENVO	self-heating coal mine waste material	True	False	False	0	0	False	True	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000170	ENVO	dune	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002216	ENVO	obsolete plant food product	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002069	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002018	ENVO	sewage	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		3.0
+ENVO:00000538	ENVO	arrugado	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000122	ENVO	marine hydrothermal vent	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		8.0
+ENVO:00002217	ENVO	obsolete cabbage product	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002238	ENVO	durisol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+CHEBI:25555	CHEBI	nitrogen atom	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002043	ENVO	wastewater treatment plant	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	True	False	False	False		8.0
+ENVO:00002307	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:03600082	ENVO	crustal fluid	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002089	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000516	ENVO	hummock	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000043	ENVO	wetland area	True	False	False	1	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00000037	ENVO	ditch	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		2.0
+ENVO:00000153	ENVO	headwater	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:0000316	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002135	ENVO	treated wood	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000132	ENVO	thermophilic sediment	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:00000507	ENVO	wadi mouth	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000265	ENVO	hydrothermal seep	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00002021	ENVO	obsolete acid habitat	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000919	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000252	ENVO	freshwater lake biome	True	False	False	0	0	False	True	True	True	False	True	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002177	ENVO	1,4-dioxane contaminated sludge	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000241	ENVO	tidal mudflat	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		9.0
+ENVO:00002149	ENVO	sea water	True	False	False	0	0	False	False	False	False	False	False	False	True	False	True	False	False	False	False	False	False	False	False		7.0
+ENVO:00012408	ENVO	aquifer	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		6.0
+ENVO:00000180	ENVO	mound	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001212	ENVO	microwave stellar radiation	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001858	ENVO	cloud cover	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000506	ENVO	intermittently filled reservoir	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002248	ENVO	luvisol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001210	ENVO	defence against flooding	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002009	ENVO	obsolete terrestrial habitat	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00005756	ENVO	lawn soil	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01001886	ENVO	landform	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+PATO:0001305	PATO	increased temperature	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000780	ENVO	public road	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	True	False	False	False	False		1.0
+ENVO:00002265	ENVO	obsolete agricultural waste	True	True	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000539	ENVO	geographic sill	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000276	ENVO	ecoregion	True	False	False	0	0	False	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+PATO:0001163	PATO	decreased concentration	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000212	ENVO	temperate mixed forest biome	True	False	True	3	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002252	ENVO	solonchak	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00002040	ENVO	wood	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000247	ENVO	volcano	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:01000017	ENVO	sand	True	False	False	0	6	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:0000207	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		4.0
+ENVO:00002047	ENVO	urine material	True	False	False	0	0	False	False	False	False	False	False	False	True	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000114	ENVO	agricultural field	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+PATO:0001901	PATO	back	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001050	ENVO	saline sediment environment	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		9.0
+ENVO:01000175	ENVO	woodland biome	True	False	True	1	11	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000024	ENVO	marine benthic biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		5.0
+ENVO:00000275	ENVO	ocean trench	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	True		24.0
+ENVO:01000181	ENVO	mangrove biome	True	False	True	1	1	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		3.0
+ENVO:01000042	ENVO	neritic epipelagic zone biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000550	ENVO	range of seamounts	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000207	ENVO	mediterranean	True	False	False	0	5	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		103.0
+ENVO:01001405	ENVO	laboratory environment	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01001844	ENVO	ocean surface stress	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+CHEBI:86471	CHEBI	pyrite	False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001831	ENVO	temperate biome	True	False	False	0	7	False	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00002233	ENVO	albeluvisol	True	False	False	0	0	False	True	False	False	False	False	False	True	True	False	False	False	False	False	False	False	False	False		1.0
+ENVO:00000528	ENVO	ice cap ridge	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000537	ENVO	boulder field	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000482	ENVO	sea floor	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		22.0
+ENVO:01001897	ENVO	neutral spring	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01001909	ENVO		False	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001102	ENVO	tectonic plate subduction	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000311	ENVO	cultivated environment	True	False	False	0	0	False	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:01000019	ENVO	cave floor	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000893	ENVO	area of woody wetland	True	False	False	1	0	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		2.0
+ENVO:00000517	ENVO	lost stream	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:00000532	ENVO	intermittent saline evaporation pond	True	False	False	0	0	False	True	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		1.0
+ENVO:01000225	ENVO	subtropical dry broadleaf forest biome	True	False	True	4	0	False	True	True	True	True	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01001862	ENVO	Solar radiation	True	False	False	0	0	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False	False		
+ENVO:01000052	ENVO	marine white smoker biome	True	False	False	0	0	False	True	True	True	False	True	True	False	False	False	False	False	False	False	False	False	False	False		
