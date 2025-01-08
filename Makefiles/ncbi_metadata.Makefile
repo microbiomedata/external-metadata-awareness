@@ -1,17 +1,64 @@
 RUN=poetry run
 WGET=wget
 
-# todo add taxonomy info?
+MONGO_HOST=localhost
+MONGO_PORT=27017
+MONGO_DB=biosamples
+MONGO_COLLECTION=biosamples
+#BIOSAMPLES_MAX_DOCS=50000000
+BIOSAMPLES_MAX_DOCS=500000 # initial 1%
+MONGO2DUCK_BATCH_SIZE=10000
+
 # todo what cpu/ram resources are really required? 4 cores and 128 gb ram in ec2 was probably excessive
 #   but 32 gb 2020 macbook pro complains about swapping while running this code if many other "medium" apps are running
 
+# todo switch to more consistent mongodb connection strings
 
-.PHONY:load-biosamples-into-mongo duck-all purge add-ncbi-biosample-package-attributes add-ncbi-biosamples-xml-download-date infer-env-triad-curies
+# todo add a count from duckdb step
+
+# todo (efficiently) pre-count the number of biosamples in the XML file?
+
+# todo (long term) annotate with more ontologies. uberon is slow. ncbitaxon might take days with this implementation
+#   do other normalizations, like quantity values
+
+# todo update dev and user documentation; share database and documentation at NERSC portal
+#   document paths not included in duckdb
+#   document limitations of using DBeaver with large DuckDBs
+
+# todo warn about conflicting duckdb locks even when both processes are just reading
+# todo warn about apparent error messages when creating annotator
+
+# todo reassess duckdb table names
+
+# todo return to generating a wide table?
+
+# todo add poetry CLI aliases for python scripts
+
+# todo what kind of logging/progress indication is really most useful?
+
+.PHONY: add-ncbi-biosample-package-attributes \
+add-ncbi-biosamples-xml-download-date \
+duck-all \
+load-biosamples-into-mongo \
+purge \
+re-annotate-biosample-contexts
+
+duck-all: purge \
+local/biosample-last-id-xml.txt \
+load-biosamples-into-mongo local/biosample-count-mongodb.txt \
+local/ncbi_biosamples.duckdb \
+add-ncbi-biosample-package-attributes add-ncbi-biosamples-xml-download-date re-annotate-biosample-contexts
 
 purge:
+	rm -rf downloads/biosample_set.xml*
+	rm -rf downloads/ncbi-biosample-packages.xml
+	rm -rf local/biosample-count-mongodb.txt
+	rm -rf local/biosample-last-id-xml.txt
 	rm -rf local/biosample_set.xml*
-
-duck-all: purge local/biosample-last-id-xml.txt load-biosamples-into-mongo local/ncbi_biosamples.duckdb
+	rm -rf local/ncbi-biosample-packages.tsv
+	rm -rf local/ncbi_biosamples.duckdb
+	@echo "Attempting to delete MongoDB database: $(MONGO_DB)"
+	mongosh --quiet --eval "db.getSiblingDB('$(MONGO_DB)').dropDatabase()" || true
 
 downloads/biosample_set.xml.gz:
 	date
@@ -30,16 +77,7 @@ local/biosample_set.xml: downloads/biosample_set.xml.gz
 local/biosample-last-id-xml.txt: local/biosample_set.xml
 	tac $< | grep -m 1 '<BioSample' > $@
 
-MONGO_HOST=localhost
-MONGO_PORT=27017
-MONGO_DB=biosamples
-MONGO_COLLECTION=biosamples
-#BIOSAMPLES_MAX_DOCS=50000000
-BIOSAMPLES_MAX_DOCS=500000
-MONGO2DUCK_BATCH_SIZE=10000
-
 # see also https://gitlab.com/wurssb/insdc_metadata
-.PHONY: load-biosamples-into-mongo
 load-biosamples-into-mongo: local/biosample_set.xml
 	date
 	$(RUN) xml-to-mongo \
@@ -52,6 +90,9 @@ load-biosamples-into-mongo: local/biosample_set.xml
 		--mongo-host $(MONGO_HOST) \
 		--mongo-port $(MONGO_PORT)
 	date
+
+local/biosample-count-mongodb.txt:
+	date && mongosh --eval 'db.getSiblingDB("biosamples").biosamples.countDocuments()' > $@ && date # 1 minute
 
 # no indexing necessary for the mongodb to duckdb convertion in notebooks/mongodb_biosamples_to_duckdb.ipynb
 # 1% MongoDB load 8 minutes on MAM Ubuntu NUC
@@ -79,8 +120,10 @@ local/ncbi_biosamples.duckdb:
 # everything on one Samsung SSD 980 PRO, which is supposed to write 5 GB/s. looks like less than 1 MB/s write and wya less read
 # CPU bound?
 
-local/biosample-count-mongodb.txt:
-	date && mongosh --eval 'db.getSiblingDB("biosamples").biosamples.countDocuments()' > $@ && date # 1 minute
+downloads/ncbi-biosample-packages.xml:
+	date
+	$(WGET) -O $@ "https://www.ncbi.nlm.nih.gov/biosample/docs/packages/?format=xml"
+	date
 
 local/ncbi-biosample-packages.tsv: downloads/ncbi-biosample-packages.xml
 	poetry run python external_metadata_awareness/extract_all_ncbi_packages_fields.py \
@@ -96,12 +139,12 @@ add-ncbi-biosample-package-attributes: downloads/ncbi-biosample-packages.xml loc
 		--overwrite
 	date
 
-add-ncbi-biosamples-xml-download-date: local/ncbi_biosamples.duckdb
+add-ncbi-biosamples-xml-download-date: local/ncbi_biosamples.duckdb downloads/biosample_set.xml.gz
 	poetry run python external_metadata_awareness/add_duckdb_key_value_row.py \
 		--db-path $< \
 		--table-name etl_log \
 		--key ncbi-biosamples-xml-download-date \
-		--value "2024-12-16"
+    --value `stat -c %y downloads/biosample_set.xml.gz | cut -d ' ' -f 1`
 
 infer-env-triad-curies: local/biosamples_from_mongo.duckdb
 	# ~ 15 minutes with envo and po. add bto and uberon: ~ 70 minutes. still running after 24 hours with NCBITaxon.
@@ -110,115 +153,9 @@ infer-env-triad-curies: local/biosamples_from_mongo.duckdb
 		--biosamples-duckdb-file $<
 	date
 
+re-annotate-biosample-contexts: local/ncbi_biosamples.duckdb
+	poetry run biosample-duckdb-reannotation \
+		--db-path $< \
+		--ontologies envo \
+		--ontologies po
 
-NCBI_BIOSAMPLES_DUCKDB_PATH = local/ncbi_biosamples.duckdb
-
-local/ncbi-mims-soil-biosamples-env_local_scale.csv:
-	echo ".mode csv\nSELECT content, COUNT(1) AS sample_count FROM attributes WHERE harmonized_name = 'env_local_scale' AND package_content = 'MIMS.me.soil.6.0' GROUP BY content ORDER BY COUNT(1) DESC;" | duckdb $(NCBI_BIOSAMPLES_DUCKDB_PATH) > $@
-
-local/ncbi-mims-soil-biosamples-env_broad_scale.csv:
-	echo ".mode csv\nSELECT content, COUNT(1) AS sample_count FROM attributes WHERE harmonized_name = 'env_broad_scale' AND package_content = 'MIMS.me.soil.6.0' GROUP BY content ORDER BY COUNT(1) DESC;" | duckdb $(NCBI_BIOSAMPLES_DUCKDB_PATH) > $@
-
-local/ncbi-mims-soil-biosamples-env_medium.csv:
-	echo ".mode csv\nSELECT content, COUNT(1) AS sample_count FROM attributes WHERE harmonized_name = 'env_medium' AND package_content = 'MIMS.me.soil.6.0' GROUP BY content ORDER BY COUNT(1) DESC;" | duckdb $(NCBI_BIOSAMPLES_DUCKDB_PATH) > $@
-
-#local/ncbi-mims-soil-biosamples-env_local_scale-normalized.csv: local/ncbi-mims-soil-biosamples-env_local_scale.csv
-#	$(RUN) normalize-envo-data \
-#		--count-col-name sample_count \
-#		--input-file $< \
-#		--ontology-prefix ENVO \
-#		--output-file $@ \
-#		--val-col-name content
-#
-#local/ncbi-mims-soil-biosamples-env_broad_scale-normalized.csv: local/ncbi-mims-soil-biosamples-env_broad_scale.csv
-#	$(RUN) normalize-envo-data \
-#		--count-col-name sample_count \
-#		--input-file $< \
-#		--ontology-prefix ENVO \
-#		--output-file $@ \
-#		--val-col-name content
-#
-#local/ncbi-mims-soil-biosamples-env_medium-normalized.csv: local/ncbi-mims-soil-biosamples-env_medium.csv
-#	$(RUN) normalize-envo-data \
-#		--count-col-name sample_count \
-#		--input-file $< \
-#		--ontology-prefix ENVO \
-#		--output-file $@ \
-#		--val-col-name content
-#
-#local/ncbi-mims-soil-biosamples-env_local_scale-failures.csv: local/ncbi-mims-soil-biosamples-env_local_scale-normalized.csv
-#	$(RUN) find-envo-present-no-curie-extracted \
-#		--input-file $< \
-#		--output-file $@
-#
-#local/ncbi-mims-soil-biosamples-env_broad_scale-failures.csv: local/ncbi-mims-soil-biosamples-env_broad_scale-normalized.csv
-#	$(RUN) find-envo-present-no-curie-extracted \
-#		--input-file $< \
-#		--output-file $@
-#
-#local/ncbi-mims-soil-biosamples-env_medium-failures.csv: local/ncbi-mims-soil-biosamples-env_medium-normalized.csv
-#	$(RUN) find-envo-present-no-curie-extracted \
-#		--input-file $< \
-#		--output-file $@
-#
-#local/ncbi-mims-soil-biosamples-env_local_scale-real-labels.csv: local/ncbi-mims-soil-biosamples-env_local_scale-normalized.csv local/envo-info.csv
-#	$(RUN) merge-in-reference-data \
-#		--keep-file $(word 1,$^) \
-#		--keep-key normalized_curie \
-#		--reference-file $(word 2,$^) \
-#		--reference-key normalized_curie \
-#		--reference-addition normalized_label \
-#		--addition-rename real_label \
-#		--merged-file $@
-#
-#local/ncbi-mims-soil-biosamples-env_broad_scale-real-labels.csv: local/ncbi-mims-soil-biosamples-env_broad_scale-normalized.csv local/envo-info.csv
-#	$(RUN) merge-in-reference-data \
-#		--keep-file $(word 1,$^) \
-#		--keep-key normalized_curie \
-#		--reference-file $(word 2,$^) \
-#		--reference-key normalized_curie \
-#		--reference-addition normalized_label \
-#		--addition-rename real_label \
-#		--merged-file $@
-#
-#local/ncbi-mims-soil-biosamples-env_medium-real-labels.csv: local/ncbi-mims-soil-biosamples-env_medium-normalized.csv local/envo-info.csv
-#	$(RUN) merge-in-reference-data \
-#		--keep-file $(word 1,$^) \
-#		--keep-key normalized_curie \
-#		--reference-file $(word 2,$^) \
-#		--reference-key normalized_curie \
-#		--reference-addition normalized_label \
-#		--addition-rename real_label \
-#		--merged-file $@
-#
-#local/ncbi-mims-soil-biosamples-env_local_scale-annotated.tsv: local/ncbi-mims-soil-biosamples-env_local_scale-real-labels.csv
-#	date ; $(RUN) runoak \
-#		--input sqlite:obo:envo annotate \
-#		--matches-whole-text \
-#		--output-type tsv \
-#		--output $@ \
-#		--text-file $< \
-#		--match-column normalized_label ; date
-#
-#local/ncbi-mims-soil-biosamples-env_broad_scale-annotated.tsv: local/ncbi-mims-soil-biosamples-env_broad_scale-real-labels.csv
-#	date ; $(RUN) runoak \
-#		--input sqlite:obo:envo annotate \
-#		--matches-whole-text \
-#		--output-type tsv \
-#		--output $@ \
-#		--text-file $< \
-#		--match-column normalized_label ; date
-#
-#local/ncbi-mims-soil-biosamples-env_medium-annotated.tsv: local/ncbi-mims-soil-biosamples-env_medium-real-labels.csv
-#	date ; $(RUN) runoak \
-#		--input sqlite:obo:envo annotate \
-#		--matches-whole-text \
-#		--output-type tsv \
-#		--output $@ \
-#		--text-file $< \
-#		--match-column normalized_label ; date
-
-local/ncbi-biosamples-packages-counts.tsv: sql/packages-counts.sql
-	$(RUN) sql-to-tsv \
-	--sql-file $< \
-	--output-file $@
