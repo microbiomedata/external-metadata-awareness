@@ -144,10 +144,18 @@ add-ncbi-biosamples-xml-download-date: local/ncbi_biosamples.duckdb downloads/bi
 		--db-path $< \
 		--table-name etl_log \
 		--key ncbi-biosamples-xml-download-date \
-		--value `stat -c %y downloads/biosample_set.xml.gz | cut -d ' ' -f 1`
+    --value `stat -c %y downloads/biosample_set.xml.gz | cut -d ' ' -f 1`
+
+infer-env-triad-curies: local/biosamples_from_mongo.duckdb
+	# ~ 15 minutes with envo and po. add bto and uberon: ~ 70 minutes. still running after 24 hours with NCBITaxon.
+	date
+	poetry run python external_metadata_awareness/infer_biosample_env_context_obo_curies.py \
+		--biosamples-duckdb-file $<
+	date
 
 re-annotate-biosample-contexts: local/ncbi_biosamples.duckdb
 	poetry run biosample-duckdb-reannotation \
 		--db-path $< \
 		--ontologies envo \
 		--ontologies po
+
