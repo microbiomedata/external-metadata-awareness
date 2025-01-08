@@ -1,5 +1,0 @@
-ENVO:03520003 ! cloud part
-ENVO:01001564 ! rain
-ENVO:01001565 ! water-based rain
-ENVO:03400015 ! sleet pellet
-ENVO:03400012 ! hail stone
