@@ -124,6 +124,7 @@ configurations:
     output_file_name: "voting_sheets_output/sediment_env_medium_voting_sheet.tsv"
     semantic_anchors:
       - "ENVO:00010483" # environmental material
+      - "ENVO:00002007" # sediment
     gold_context_selectors:
       - "mixs:env_broad"
       - "mixs:env_local"
