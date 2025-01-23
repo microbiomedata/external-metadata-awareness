@@ -1,7 +1,8 @@
 configurations:
   plant_associated_env_broad_scale:
     output_file_name: "voting_sheets_output/plant_associated_env_broad_scale_voting_sheet.tsv"
-    semantic_anchor: "ENVO:00000428"
+    semantic_anchors:
+      - "ENVO:00000428" # biome
     gold_context_selectors:
       - "mixs:env_broad"
       - "mixs:env_local"
@@ -17,7 +18,8 @@ configurations:
 
   sediment_env_broad_scale:
     output_file_name: "voting_sheets_output/sediment_env_broad_scale_voting_sheet.tsv"
-    semantic_anchor: "ENVO:00000428"
+    semantic_anchors:
+      - "ENVO:00000428" # biome
     gold_context_selectors:
       - "mixs:env_broad"
       - "mixs:env_local"
@@ -33,7 +35,8 @@ configurations:
 
   soil_env_broad_scale:
     output_file_name: "voting_sheets_output/soil_env_broad_scale_voting_sheet.tsv"
-    semantic_anchor: "ENVO:00000428"
+    semantic_anchors:
+      - "ENVO:00000428" # biome
     gold_context_selectors:
       - "mixs:env_broad"
       - "mixs:env_local"
@@ -49,7 +52,9 @@ configurations:
 
   plant_associated_env_local_scale:
     output_file_name: "voting_sheets_output/plant_associated_env_local_scale_voting_sheet.tsv"
-    semantic_anchor: "ENVO:01000813"
+    semantic_anchors:
+      - "ENVO:01000813" # astronomical body part
+      - "ENVO:01000355" # vegetation layer
     gold_context_selectors:
       - "mixs:env_broad"
       - "mixs:env_local"
@@ -65,7 +70,8 @@ configurations:
 
   sediment_env_local_scale:
     output_file_name: "voting_sheets_output/sediment_env_local_scale_voting_sheet.tsv"
-    semantic_anchor: "ENVO:01000813"
+    semantic_anchors:
+      - "ENVO:01000813" # astronomical body part
     gold_context_selectors:
       - "mixs:env_broad"
       - "mixs:env_local"
@@ -81,7 +87,8 @@ configurations:
 
   soil_env_local_scale:
     output_file_name: "voting_sheets_output/soil_env_local_scale_voting_sheet.tsv"
-    semantic_anchor: "ENVO:01000813"
+    semantic_anchors:
+      - "ENVO:01000813" # astronomical body part
     gold_context_selectors:
       - "mixs:env_broad"
       - "mixs:env_local"
@@ -97,7 +104,8 @@ configurations:
 
   plant_associated_env_medium:
     output_file_name: "voting_sheets_output/plant_associated_env_medium_voting_sheet.tsv"
-    semantic_anchor: "ENVO:00010483"
+    semantic_anchors:
+      - "ENVO:00010483" # environmental material
     gold_context_selectors:
       - "mixs:env_broad"
       - "mixs:env_local"
@@ -114,7 +122,8 @@ configurations:
 
   sediment_env_medium:
     output_file_name: "voting_sheets_output/sediment_env_medium_voting_sheet.tsv"
-    semantic_anchor: "ENVO:00010483"
+    semantic_anchors:
+      - "ENVO:00010483" # environmental material
     gold_context_selectors:
       - "mixs:env_broad"
       - "mixs:env_local"
@@ -130,7 +139,8 @@ configurations:
 
   soil_env_medium:
     output_file_name: "voting_sheets_output/soil_env_medium_voting_sheet.tsv"
-    semantic_anchor: "ENVO:00010483"
+    semantic_anchors:
+      - "ENVO:00010483" # environmental material
     gold_context_selectors:
       - "mixs:env_broad"
       - "mixs:env_local"
@@ -146,7 +156,8 @@ configurations:
 
   water_env_broad_scale:
     output_file_name: "voting_sheets_output/water_env_broad_scale_voting_sheet.tsv"
-    semantic_anchor: "ENVO:00000428"
+    semantic_anchors:
+      - "ENVO:00000428" # biome
     gold_context_selectors:
       - "mixs:env_broad"
       - "mixs:env_local"
@@ -162,7 +173,8 @@ configurations:
 
   water_env_local_scale:
     output_file_name: "voting_sheets_output/water_env_local_scale_voting_sheet.tsv"
-    semantic_anchor: "ENVO:01000813"
+    semantic_anchors:
+      - "ENVO:01000813" # astronomical body part
     gold_context_selectors:
       - "mixs:env_broad"
       - "mixs:env_local"
@@ -178,7 +190,8 @@ configurations:
 
   water_env_medium:
     output_file_name: "voting_sheets_output/water_env_medium_voting_sheet.tsv"
-    semantic_anchor: "ENVO:00010483"
+    semantic_anchors:
+      - "ENVO:00010483" # environmental material
     gold_context_selectors:
       - "mixs:env_broad"
       - "mixs:env_local"
