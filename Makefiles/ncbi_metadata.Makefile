@@ -131,10 +131,10 @@ local/ncbi_biosamples.duckdb:
 # everything on one Samsung SSD 980 PRO, which is supposed to write 5 GB/s. looks like less than 1 MB/s write and wya less read
 # CPU bound?
 
-downloads/ncbi-biosample-packages.xml:
-	date
-	$(WGET) -O $@ "https://www.ncbi.nlm.nih.gov/biosample/docs/packages/?format=xml"
-	date
+#downloads/ncbi-biosample-packages.xml:
+#	date
+#	$(WGET) -O $@ "https://www.ncbi.nlm.nih.gov/biosample/docs/packages/?format=xml"
+#	date
 
 local/ncbi-biosample-packages.tsv: downloads/ncbi-biosample-packages.xml
 	poetry run python external_metadata_awareness/extract_all_ncbi_packages_fields.py \

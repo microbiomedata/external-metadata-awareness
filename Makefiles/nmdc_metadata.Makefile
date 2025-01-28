@@ -1,6 +1,12 @@
 RUN=poetry run
 WGET=wget
 
+# Load environment variables from local/.env file if it exists
+ifneq (,$(wildcard local/.env))
+    include local/.env
+    export $(shell sed 's/=.*//' local/.env)
+endif
+
 downloads/nmdc-production-studies.json:
 	wget -O $@.bak https://api.microbiomedata.org/nmdcschema/study_set?max_page_size=999999
 	yq '.resources' -o=json $@.bak | cat > $@
@@ -87,3 +93,94 @@ downloads/sty-11-ev70y104_study.json:
 	wget -O $@.bak 'https://api.microbiomedata.org/nmdcschema/ids/nmdc%3Asty-11-ev70y104'
 	yq -o=json e '.' $@.bak | cat > $@
 	rm -rf $@.bak
+
+.PHONY: local_mongodb_restore
+local_nmdc_mongodb_restore: downloads/nmdc_select_mongodb_dump.gz
+	mongorestore \
+		--gzip \
+		--archive=$< \
+		--db nmdc
+
+downloads/nmdc_select_mongodb_dump.gz:
+	# requires opening a ssh tunnel to the NMDC MongoDB, which requires NERSC credentials
+	#   and NMDC MongoDB credentials
+	mongodump \
+		--uri "mongodb://$(NMDC_MONGO_USER):$(NMDC_MONGO_PASSWORD)@localhost:27777/?directConnection=true&authMechanism=SCRAM-SHA-256&authSource=admin" \
+		--db nmdc \
+		--archive=$@ \
+		--gzip \
+		--excludeCollection _migration_events \
+		--excludeCollection _runtime.analytics \
+		--excludeCollection _runtime.api.allow \
+		--excludeCollection _runtime.healthcheck \
+		--excludeCollection _tmp__get_file_size_bytes \
+		--excludeCollection alldocs \
+		--excludeCollection capabilities \
+		--excludeCollection chemical_entity_set \
+		--excludeCollection collecting_biosamples_from_site_set \
+		--excludeCollection date_created \
+		--excludeCollection EMP_soil_project_run_counts \
+		--excludeCollection etl_software_version \
+		--excludeCollection file_type_enum \
+		--excludeCollection fs.chunks \
+		--excludeCollection fs.files \
+		--excludeCollection functional_annotation_agg \
+		--excludeCollection id_records \
+		--excludeCollection ids \
+		--excludeCollection ids_nmdc_fk0 \
+		--excludeCollection ids_nmdc_fk4 \
+		--excludeCollection ids_nmdc_gfs0 \
+		--excludeCollection ids_nmdc_mga0 \
+		--excludeCollection ids_nmdc_mta0 \
+		--excludeCollection ids_nmdc_sys0 \
+		--excludeCollection jobs \
+		--excludeCollection material_sample_set \
+		--excludeCollection metap_gene_function_aggregation \
+		--excludeCollection minter.id_records \
+		--excludeCollection minter.requesters \
+		--excludeCollection minter.schema_classes \
+		--excludeCollection minter.services \
+		--excludeCollection minter.shoulders \
+		--excludeCollection minter.typecodes \
+		--excludeCollection nmdc_schema_version \
+		--excludeCollection notes \
+		--excludeCollection object_types \
+		--excludeCollection objects \
+		--excludeCollection omics_processing_set \
+		--excludeCollection operations \
+		--excludeCollection page_tokens \
+		--excludeCollection planned_process_set \
+		--excludeCollection protocol_execution_set \
+		--excludeCollection queries \
+		--excludeCollection query_runs \
+		--excludeCollection requesters \
+		--excludeCollection run_events \
+		--excludeCollection schema_classes \
+		--excludeCollection services \
+		--excludeCollection shoulders \
+		--excludeCollection sites \
+		--excludeCollection storage_process_set \
+		--excludeCollection system.views \
+		--excludeCollection triggers \
+		--excludeCollection txn_log \
+		--excludeCollection typecodes \
+		--excludeCollection users \
+		--excludeCollection workflows
+
+ #functional_annotation_agg,4543621539
+ #workflow_execution_set,196286407
+ #data_object_set,46924773
+ #biosample_set,15580460
+ #data_generation_set,5206299
+ #material_processing_set,2037568
+ #processed_sample_set,808302
+ #study_set,169372
+ #field_research_site_set,12705
+ #configuration_set,5287
+ #instrument_set,2224
+ #calibration_set,1476
+ #manifest_set,678
+ #storage_process_set,0
+ #collecting_biosamples_from_site_set,0
+ #protocol_execution_set,0
+ #chemical_entity_set,0
