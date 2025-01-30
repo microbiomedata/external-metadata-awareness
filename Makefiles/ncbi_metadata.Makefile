@@ -194,7 +194,7 @@ downloads/sra_accession_pairs_1000000.tsv:
 		--output $@ \
 		--verbose
 
-.PHONY: biosample-bioproject-preview sra_accession_pairs_tsv_to_mongo
+.PHONY: biosample-bioproject-preview sra_accession_pairs_tsv_to_mongo analyze_bioproject_paths load_acceptable_sized_leaf_bioprojects_into_mongodb
 
 sra_accession_pairs_tsv_to_mongo: downloads/sra_relationships.tsv
 	poetry run python external_metadata_awareness/sra_accession_pairs_tsv_to_mongo.py \
@@ -205,3 +205,23 @@ sra_accession_pairs_tsv_to_mongo: downloads/sra_relationships.tsv
 		--collection biosamples_bioprojects \
 		--batch-size 100000 \
 		--report-interval 500000
+
+analyze_bioproject_paths: downloads/bioproject.xml
+	poetry run python external_metadata_awareness/measure_xml_paths.py \
+		--xml-file $< \
+		--root-tag Project \
+		--expected-docs 1000000 \
+		--progress-interval 1000 \
+		--print-limit 999
+
+
+load_acceptable_sized_leaf_bioprojects_into_mongodb: downloads/bioproject.xml
+	poetry run python external_metadata_awareness/load_acceptable_sized_leaf_bioprojects_into_mongodb.py \
+		--input-file $< \
+		--host localhost \
+		--port 27017 \
+		--database biosamples \
+		--collection bioprojects2 \
+		--size-limit 15000000 \
+		--progress-interval 1000 \
+		--debug
