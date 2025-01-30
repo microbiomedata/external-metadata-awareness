@@ -164,4 +164,44 @@ infer-env-triad-curies: local/ncbi_biosamples.duckdb
 		--biosamples-duckdb-file $<
 	date
 
+####
 
+PROJECT = nmdc-377118
+DATASET = nih-sra-datastore.sra
+TABLE = metadata
+BATCH_SIZE = 100000
+LIMIT = 1000000 # expect ~ 30000000
+
+# Preview mode: analyze the dataset without exporting
+biosample-bioproject-preview:
+	poetry run python  external_metadata_awareness/export_sra_accession_pairs.py \
+		--project $(PROJECT) \
+		--dataset $(DATASET) \
+		--table $(TABLE) \
+		--report-nulls \
+		--preview \
+		--verbose
+
+# Production mode: full export of accession pairs
+downloads/sra_accession_pairs_1000000.tsv:
+	poetry run python  external_metadata_awareness/export_sra_accession_pairs.py \
+		--project $(PROJECT) \
+		--dataset $(DATASET) \
+		--table $(TABLE) \
+		--batch-size $(BATCH_SIZE) \
+		--limit $(LIMIT) \
+		--exclude-nulls \
+		--output $@ \
+		--verbose
+
+.PHONY: biosample-bioproject-preview sra_accession_pairs_tsv_to_mongo
+
+sra_accession_pairs_tsv_to_mongo: downloads/sra_relationships.tsv
+	poetry run python external_metadata_awareness/sra_accession_pairs_tsv_to_mongo.py \
+		--file-path $< \
+		--mongo-host localhost \
+		--mongo-port 27017 \
+		--database biosamples \
+		--collection biosamples_bioprojects \
+		--batch-size 100000 \
+		--report-interval 500000
