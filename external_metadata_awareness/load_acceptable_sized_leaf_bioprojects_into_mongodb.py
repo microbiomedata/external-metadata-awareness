@@ -1,6 +1,7 @@
 import click
 import lxml.etree as ET
 import xmltodict
+import json
 from pymongo import MongoClient
 import bson
 import time
@@ -23,26 +24,12 @@ def clean_dict(d):
         return d  # Base case: return value unchanged
 
 
-def get_accession(project_dict):
-    """Extract the ProjectID.ArchiveID.accession value from the document, if present."""
+def get_submission_id(submission_dict):
+    """Extracts the submission_id from the Submission node if present."""
     try:
-        return project_dict["ProjectID"]["ArchiveID"]["accession"]
+        return submission_dict["Submission"]["submission_id"]
     except KeyError:
-        return "UNKNOWN_ACCESSION"
-
-
-def reduce_oversized_record(project_dict):
-    """Keep only `ProjectID` and add `oversize: true` when a record is too large."""
-    return {
-        "ProjectID": project_dict.get("ProjectID", {}),
-        "oversize": True
-    }
-
-
-def remove_inner_projects(project_dict):
-    """Removes inner `<Project>` nodes from `/PackageSet/Package/Project` before inserting into `submission`."""
-    project_dict.pop("Project", None)  # Remove nested Project nodes
-    return project_dict
+        return None  # No submission_id found
 
 
 def parse_and_insert(xml_file, mongo_uri, db_name, project_collection, submission_collection, progress_interval):
@@ -74,32 +61,19 @@ def parse_and_insert(xml_file, mongo_uri, db_name, project_collection, submissio
                                                                                                   "Project"]:
                 total_projects_processed += 1
 
-                # Convert XML to dictionary using xmltodict
-                project_dict = xmltodict.parse(ET.tostring(elem, encoding="utf-8"))
-
-                # Get rid of root tag wrapping
-                project_dict = project_dict.get("Project", {})
-
-                # Clean field names
+                project_dict = xmltodict.parse(ET.tostring(elem, encoding="utf-8")).get("Project", {})
                 project_dict = clean_dict(project_dict)
 
-                if not project_dict:  # Skip empty projects
+                if not project_dict:
                     elem.clear()
                     parent_stack.pop()
                     continue
 
-                # Estimate BSON size
                 bson_size = sum(len(str(value)) for value in project_dict.values()) + 500
                 if bson_size > MAX_BSON_SIZE:
                     oversize_projects += 1
-                    accession = get_accession(project_dict)
-                    click.echo(
-                        f"[{datetime.utcnow().isoformat()}] Oversized project ({bson_size} bytes), Accession: {accession}")
-
-                    # Store reduced record
-                    reduced_doc = reduce_oversized_record(project_dict)
-                    project_col.insert_one(reduced_doc)
-
+                    project_col.insert_one({"ProjectID": project_dict.get("ProjectID", {}), "oversize": True})
+                    click.echo(f"[{datetime.utcnow().isoformat()}] Oversized project, stored with ProjectID only.")
                 else:
                     project_col.insert_one(project_dict)
                     inserted_projects += 1
@@ -112,31 +86,27 @@ def parse_and_insert(xml_file, mongo_uri, db_name, project_collection, submissio
                                                                                                     "Project"]:
                 total_submissions_processed += 1
 
-                # Convert XML to dictionary
-                submission_dict = xmltodict.parse(ET.tostring(elem, encoding="utf-8"))
-
-                # Get rid of root tag wrapping
-                submission_dict = submission_dict.get("Project", {})
-
-                # Clean field names
+                submission_dict = xmltodict.parse(ET.tostring(elem, encoding="utf-8")).get("Project", {})
                 submission_dict = clean_dict(submission_dict)
 
-                # Remove inner <Project> nodes
-                submission_dict = remove_inner_projects(submission_dict)
-
-                if not submission_dict:  # Skip empty submissions
+                if not submission_dict:
                     elem.clear()
                     parent_stack.pop()
                     continue
 
-                # Estimate BSON size
                 bson_size = sum(len(str(value)) for value in submission_dict.values()) + 500
                 if bson_size > MAX_BSON_SIZE:
                     oversize_submissions += 1
-                    accession = get_accession(submission_dict)
-                    click.echo(
-                        f"[{datetime.utcnow().isoformat()}] Oversized submission ({bson_size} bytes), Accession: {accession}")
-                    # Do not insert oversized submission documents (per your request)
+                    submission_id = get_submission_id(submission_dict)
+
+                    if submission_id:
+                        click.echo(
+                            f"[{datetime.utcnow().isoformat()}] Oversized submission (submission_id: {submission_id})")
+                        submission_col.insert_one({"submission_id": submission_id, "oversize": True})
+                    else:
+                        click.echo(
+                            f"[{datetime.utcnow().isoformat()}] Oversized submission without submission_id (not inserting)")
+
                 else:
                     submission_col.insert_one(submission_dict)
                     inserted_submissions += 1
