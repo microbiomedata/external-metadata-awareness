@@ -239,5 +239,5 @@ local/bioproject_xpath_counts.json: downloads/bioproject.xml
 		--xml-file $< \
 		--interval 10 \
 		--always-count-path '/PackageSet/Package/Project' \
-		--stop-after 100000 \
+		--stop-after 999999999 \
 		--output $@

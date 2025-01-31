@@ -440,3 +440,12 @@ def main(
 
 if __name__ == "__main__":
     main()
+
+# very roughly
+# Bytes per minute: 652,582,678 bytes/min
+# Lines per minute: 14,103,559 lines/min
+# -rw-rw-r-- 1 mark mark 3.1G Jan 30 10:40 downloads/bioproject.xml
+# -rw-rw-r-- 1 mark mark 110G Jan  8 20:32 ./gitrepos/external-metadata-awareness/local/biosample_set.xml
+# about 5 minutes for bioproject.xml
+# 3 hours for biosample_set.xml ?
+
