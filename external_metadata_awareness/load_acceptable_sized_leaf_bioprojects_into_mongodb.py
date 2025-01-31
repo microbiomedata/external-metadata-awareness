@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Load BioProject XML records into MongoDB, handling the hierarchical nature of
-the data structure. This script processes each unique Project exactly once,
-preserving parent-child relationships while avoiding duplicate processing.
+Load BioProject XML records into MongoDB, handling both regular and oversized records.
+This script processes all project nodes (both leaf and non-leaf), preserves project
+hierarchies, and creates minimal records for oversized projects.
 """
 
 import sys
@@ -106,19 +106,36 @@ def transform_document(doc: Dict[str, Any]) -> Dict[str, Any]:
     return cleaned
 
 
-def is_nested_project(element: etree._Element) -> bool:
+def print_invalid_record(doc: Dict[str, Any], error_msg: str) -> None:
     """
-    Determine if this Project element is nested inside another Project.
-    This helps us avoid processing the same Project multiple times.
-    We check the ancestors of the current element to see if any of them
-    are also Project elements.
+    Pretty print details about an invalid record to help understand what's wrong.
+    This function provides context about where and why validation failed.
     """
-    parent = element.getparent()
-    while parent is not None:
-        if parent.tag == "Project":
-            return True
-        parent = parent.getparent()
-    return False
+    print("\nInvalid Record Found:")
+    print("=" * 80)
+    print(f"Error: {error_msg}")
+
+    # Try to get any identifying information we can
+    project_id = doc.get("ProjectID", {})
+    archive_id = project_id.get("ArchiveID", {})
+
+    print("\nIdentifying Information:")
+    print("-" * 40)
+    if "Name" in doc.get("ProjectDescr", {}):
+        print(f"Project Name: {doc['ProjectDescr']['Name']}")
+    if "Title" in doc.get("ProjectDescr", {}):
+        print(f"Project Title: {doc['ProjectDescr']['Title']}")
+
+    print("\nProjectID Structure:")
+    print("-" * 40)
+    print(json.dumps(project_id, indent=2))
+
+    if "child_bioprojects" in doc:
+        print("\nChild Projects:")
+        print("-" * 40)
+        print(json.dumps(doc["child_bioprojects"], indent=2))
+
+    print("=" * 80 + "\n")
 
 
 def validate_project(doc: Dict[str, Any]) -> tuple[bool, Optional[str]]:
@@ -133,17 +150,21 @@ def validate_project(doc: Dict[str, Any]) -> tuple[bool, Optional[str]]:
     try:
         accession = get_accession(doc)
         if not accession:
+            print_invalid_record(doc, "Missing accession number")
             return False, "Missing accession number"
 
         if "ProjectID" not in doc:
+            print_invalid_record(doc, "Missing ProjectID section")
             return False, "Missing ProjectID section"
 
         if "ArchiveID" not in doc["ProjectID"]:
+            print_invalid_record(doc, "Missing ArchiveID in ProjectID")
             return False, "Missing ArchiveID in ProjectID"
 
         return True, None
 
     except Exception as e:
+        print_invalid_record(doc, f"Validation error: {str(e)}")
         return False, f"Validation error: {str(e)}"
 
 
@@ -314,7 +335,7 @@ def main(
     Load BioProject XML records into MongoDB.
 
     This tool:
-    - Processes each Project exactly once (avoiding nested duplicates)
+    - Processes all projects (both leaf and non-leaf nodes)
     - Preserves project hierarchies via child_bioprojects field
     - Creates minimal records for oversized projects
     - Removes '@' prefixes from field names
@@ -342,16 +363,6 @@ def main(
 
     try:
         for event, elem in context:
-            # Skip if this is a nested Project - we'll handle it through its parent
-            if is_nested_project(elem):
-                # Clean up this element
-                elem.clear()
-                parent = elem.getparent()
-                if parent is not None:
-                    while elem.getprevious() is not None:
-                        del parent[0]
-                continue
-
             # Process the record - if None is returned, silently skip it
             result = process_project(elem, mongo_collection, size_limit)
             if result is None:
