@@ -226,13 +226,9 @@ analyze_bioproject_paths: downloads/bioproject.xml
 
 load_acceptable_sized_leaf_bioprojects_into_mongodb: downloads/bioproject.xml
 	poetry run python external_metadata_awareness/load_acceptable_sized_leaf_bioprojects_into_mongodb.py \
-		--input-file $< \
-		--host localhost \
-		--port 27017 \
-		--database biosamples \
-		--collection bioprojects2 \
-		--size-limit 15000000 \
-		--progress-interval 1000
+		--mongo-uri mongodb://localhost:27017 \
+		--db-name biosamples \
+		--collection-name bioprojects2 $<
 
 local/bioproject_xpath_counts.json: downloads/bioproject.xml
 	poetry run python external_metadata_awareness/count_xml_paths.py \
