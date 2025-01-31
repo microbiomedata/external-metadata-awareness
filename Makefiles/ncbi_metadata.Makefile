@@ -228,7 +228,8 @@ load_acceptable_sized_leaf_bioprojects_into_mongodb: downloads/bioproject.xml
 	poetry run python external_metadata_awareness/load_acceptable_sized_leaf_bioprojects_into_mongodb.py \
 		--mongo-uri mongodb://localhost:27017 \
 		--db-name biosamples \
-		--collection-name bioprojects2 $<
+		--project-collection bioprojects2\
+		--submission-collection submissions2 $<
 
 local/bioproject_xpath_counts.json: downloads/bioproject.xml
 	poetry run python external_metadata_awareness/count_xml_paths.py \
