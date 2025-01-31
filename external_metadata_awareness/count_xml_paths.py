@@ -28,8 +28,18 @@ def count_unique_xpaths(xml_file, status_interval, always_count_path, stop_after
                 path_parts.append(current.tag)
                 current = current.getparent()
 
-            xpath = '/' + '/'.join(reversed(path_parts))
-            xpath_counter[xpath] += 1
+            base_xpath = '/' + '/'.join(reversed(path_parts))
+            xpath_counter[base_xpath] += 1
+
+            # Include attributes
+            for attr in elem.attrib:
+                attr_xpath = f"{base_xpath}@{attr}"
+                xpath_counter[attr_xpath] += 1
+
+            # Include text content if present
+            if elem.text and elem.text.strip():
+                text_xpath = f"{base_xpath}#text"
+                xpath_counter[text_xpath] += 1
 
             if stop_after and xpath_counter[always_count_path] >= stop_after:
                 click.echo(f"Stopping after {stop_after} occurrences of {always_count_path}")

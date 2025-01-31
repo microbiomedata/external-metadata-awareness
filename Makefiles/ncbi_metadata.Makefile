@@ -234,5 +234,10 @@ load_acceptable_sized_leaf_bioprojects_into_mongodb: downloads/bioproject.xml
 		--size-limit 15000000 \
 		--progress-interval 1000
 
-# \
-#		--debug
+local/bioproject_xpath_counts.json: downloads/bioproject.xml
+	poetry run python external_metadata_awareness/count_xml_paths.py \
+		--xml-file $< \
+		--interval 10 \
+		--always-count-path '/PackageSet/Package/Project' \
+		--stop-after 100000 \
+		--output $@
