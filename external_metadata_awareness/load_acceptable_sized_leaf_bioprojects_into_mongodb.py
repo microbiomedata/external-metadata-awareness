@@ -1,451 +1,122 @@
-#!/usr/bin/env python3
-"""
-Load BioProject XML records into MongoDB, handling both regular and oversized records.
-This script processes all project nodes (both leaf and non-leaf), preserves project
-hierarchies, and creates minimal records for oversized projects.
-"""
-
-import sys
+import click
+import lxml.etree as ET
+import xmltodict
+from pymongo import MongoClient
+import bson
 import time
-import json
-from typing import Optional, Dict, Any
 from datetime import datetime
 
-import click
-from pymongo import MongoClient, ASCENDING
-from pymongo.collection import Collection
-from lxml import etree
-import xmltodict
+MAX_BSON_SIZE = 16 * 1024 * 1024  # MongoDB max document size (16MB)
 
 
-def connect_mongodb(host: str, port: int, database: str, collection: str) -> Collection:
-    """
-    Establish connection to MongoDB and return the specified collection.
-    Creates an index on accession for faster lookups and uniqueness constraints.
-    """
-    client = MongoClient(host, port)
-    db = client[database]
-    coll = db[collection]
-
-    # Create an index on accession for faster lookups and uniqueness
-    coll.create_index(
-        [("ProjectID.ArchiveID.accession", ASCENDING)],
-        unique=True,
-        background=True
-    )
-
-    return coll
-
-
-def get_child_project_accessions(element: etree._Element) -> list[str]:
-    """
-    Extract accession numbers from all immediate child Project elements.
-    This helps us maintain the project hierarchy without embedding entire projects.
-    """
-    child_accessions = []
-
-    # Find all immediate child Project elements
-    for child in element.findall(".//Project"):
-        # Don't include deeper nested projects
-        if any(parent.tag == "Project" for parent in child.iterancestors() if parent != element):
-            continue
-
-        # Get the accession from this child project
-        archive_id = child.find(".//ArchiveID")
-        if archive_id is not None and archive_id.get("accession"):
-            child_accessions.append(archive_id.get("accession"))
-
-    return child_accessions
-
-
-def transform_document(doc: Dict[str, Any]) -> Dict[str, Any]:
-    """
-    Transform a dictionary by:
-    1. Removing '@' prefixes from field names
-    2. Renaming '#text' fields to 'content'
-    3. Flattening the Project structure to the root level
-
-    This ensures consistent field naming and structure in MongoDB.
-    """
-
-    def clean_key(key: str) -> str:
-        """
-        Clean up field names by:
-        - Removing '@' prefix if present
-        - Replacing '#text' with 'content'
-        """
-        if key.startswith('@'):
-            return key[1:]
-        elif key == '#text':
-            return 'content'
-        return key
-
-    def process_dict(d: Dict[str, Any]) -> Dict[str, Any]:
-        """Recursively process a dictionary to clean all key names."""
-        result = {}
+def clean_dict(d):
+    """Recursively clean dictionary keys by removing '@' and '#' prefixes."""
+    if isinstance(d, dict):
+        new_dict = {}
         for key, value in d.items():
-            clean_key_name = clean_key(key)
-
-            if isinstance(value, dict):
-                result[clean_key_name] = process_dict(value)
-            elif isinstance(value, list):
-                result[clean_key_name] = [
-                    process_dict(item) if isinstance(item, dict) else item
-                    for item in value
-                ]
-            else:
-                result[clean_key_name] = value
-        return result
-
-    # First, process the entire document to clean key names
-    cleaned = process_dict(doc)
-
-    # If there's a Project key at the root, move its contents to root level
-    if 'Project' in cleaned:
-        return cleaned['Project']
-    return cleaned
+            clean_key = key.lstrip("@#")  # Remove '@' or '#' from field names
+            new_dict[clean_key] = clean_dict(value)  # Recursively clean values
+        return new_dict
+    elif isinstance(d, list):
+        return [clean_dict(item) for item in d]  # Clean each item in lists
+    else:
+        return d  # Base case: return value unchanged
 
 
-def print_invalid_record(doc: Dict[str, Any], error_msg: str) -> None:
-    """
-    Pretty print details about an invalid record to help understand what's wrong.
-    This function provides context about where and why validation failed.
-    """
-    print("\nInvalid Record Found:")
-    print("=" * 80)
-    print(f"Error: {error_msg}")
-
-    # Try to get any identifying information we can
-    project_id = doc.get("ProjectID", {})
-    archive_id = project_id.get("ArchiveID", {})
-
-    print("\nIdentifying Information:")
-    print("-" * 40)
-    if "Name" in doc.get("ProjectDescr", {}):
-        print(f"Project Name: {doc['ProjectDescr']['Name']}")
-    if "Title" in doc.get("ProjectDescr", {}):
-        print(f"Project Title: {doc['ProjectDescr']['Title']}")
-
-    print("\nProjectID Structure:")
-    print("-" * 40)
-    print(json.dumps(project_id, indent=2))
-
-    if "child_bioprojects" in doc:
-        print("\nChild Projects:")
-        print("-" * 40)
-        print(json.dumps(doc["child_bioprojects"], indent=2))
-
-    print("=" * 80 + "\n")
-
-
-def validate_project(doc: Dict[str, Any]) -> tuple[bool, Optional[str]]:
-    """
-    Validate a project document before insertion.
-    Returns (is_valid, error_message).
-
-    A valid project must have:
-    1. A non-null accession number
-    2. A properly structured ProjectID section
-    """
+def get_accession(project_dict):
+    """Extract the ProjectID.ArchiveID.accession value from the document, if present."""
     try:
-        accession = get_accession(doc)
-        if not accession:
-            print_invalid_record(doc, "Missing accession number")
-            return False, "Missing accession number"
-
-        if "ProjectID" not in doc:
-            print_invalid_record(doc, "Missing ProjectID section")
-            return False, "Missing ProjectID section"
-
-        if "ArchiveID" not in doc["ProjectID"]:
-            print_invalid_record(doc, "Missing ArchiveID in ProjectID")
-            return False, "Missing ArchiveID in ProjectID"
-
-        return True, None
-
-    except Exception as e:
-        print_invalid_record(doc, f"Validation error: {str(e)}")
-        return False, f"Validation error: {str(e)}"
+        return project_dict["ProjectID"]["ArchiveID"]["accession"]
+    except KeyError:
+        return "UNKNOWN_ACCESSION"
 
 
-def create_minimal_doc(doc: Dict[str, Any]) -> Dict[str, Any]:
-    """
-    Create a minimal version of a BioProject document containing only the ProjectID
-    path and an oversize flag. This preserves essential identifying information
-    while keeping the document size well under MongoDB limits.
-    """
+def reduce_oversized_record(project_dict):
+    """Keep only `ProjectID` and add `oversize: true` when a record is too large."""
     return {
-        "ProjectID": doc["ProjectID"],
-        "oversize": True,
-        # Include child_bioprojects if present
-        **({"child_bioprojects": doc["child_bioprojects"]} if "child_bioprojects" in doc else {})
+        "ProjectID": project_dict.get("ProjectID", {}),
+        "oversize": True
     }
 
 
-def get_accession(doc: Dict) -> Optional[str]:
-    """Extract the accession from a Project dictionary."""
-    try:
-        return doc["ProjectID"]["ArchiveID"]["accession"]
-    except (KeyError, TypeError):
-        return None
+def parse_and_insert(xml_file, mongo_uri, db_name, collection_name, progress_interval):
+    """Parses an NCBI BioProject XML file and inserts ONLY `/PackageSet/Package/Project/Project` documents into MongoDB."""
 
+    client = MongoClient(mongo_uri)
+    db = client[db_name]
+    collection = db[collection_name]
 
-def estimate_record_size(doc: Dict) -> int:
-    """
-    Estimate the size this record would occupy in MongoDB by converting to a string
-    and measuring its UTF-8 encoded size.
-    """
-    return len(str(doc).encode('utf-8'))
+    context = ET.iterparse(xml_file, events=("start", "end"))
+    parent_stack = []
+    inserted_count = 0
+    oversize_count = 0
+    total_projects_processed = 0
+    start_time = time.time()
 
+    for event, elem in context:
+        if event == "start":
+            parent_stack.append(elem.tag)
 
-def process_project(
-        element: etree._Element,
-        collection: Collection,
-        size_limit: int
-) -> Optional[Dict[str, Any]]:
-    """
-    Process a single Project element and store it in MongoDB.
-    Returns None for empty documents (which should be ignored by the caller),
-    otherwise returns a dictionary with processing results.
-    """
-    try:
-        # Convert to dictionary format that MongoDB can store
-        xml_string = etree.tostring(element, encoding="utf-8")
-        doc = xmltodict.parse(
-            xml_string,
-            process_namespaces=True,
-            dict_constructor=dict
-        )
+        elif event == "end":
+            if parent_stack[-1] == "Project" and len(parent_stack) >= 4 and parent_stack[-4:] == ["PackageSet",
+                                                                                                  "Package", "Project",
+                                                                                                  "Project"]:
+                total_projects_processed += 1
 
-        # Transform the document structure to match requirements
-        doc = transform_document(doc)
+                # Convert XML to dictionary using xmltodict
+                project_dict = xmltodict.parse(ET.tostring(elem, encoding="utf-8"))
 
-        # Skip completely empty documents silently
-        if not doc or (len(doc) == 1 and "ProjectID" in doc and not doc["ProjectID"]):
-            return None
+                # Get rid of root tag wrapping
+                project_dict = project_dict.get("Project", {})
 
-        # Get any child project accessions
-        child_accessions = get_child_project_accessions(element)
+                # Clean field names to remove leading '@' or '#'
+                project_dict = clean_dict(project_dict)
 
-        # Add child projects if any were found
-        if child_accessions:
-            doc["child_bioprojects"] = child_accessions
+                if not project_dict:  # Skip empty projects
+                    elem.clear()
+                    parent_stack.pop()
+                    continue
 
-        # Validate the document
-        is_valid, error_msg = validate_project(doc)
-        if not is_valid:
-            return {
-                "accession": get_accession(doc),
-                "size": None,
-                "status": "invalid",
-                "reason": error_msg,
-                "child_count": len(child_accessions) if child_accessions else 0
-            }
+                # Estimate BSON size
+                bson_size = sum(len(str(value)) for value in project_dict.values()) + 500  # Approximate size
+                if bson_size > MAX_BSON_SIZE:
+                    oversize_count += 1
+                    accession = get_accession(project_dict)  # Extract accession ID
+                    click.echo(
+                        f"[{datetime.utcnow().isoformat()}] Oversized document ({bson_size} bytes), Accession: {accession}")
 
-        # Get the accession for logging (we know it exists now)
-        accession = get_accession(doc)
+                    # Reduce the document to just ProjectID + `oversize: true`
+                    reduced_doc = reduce_oversized_record(project_dict)
+                    collection.insert_one(reduced_doc)
 
-        # Estimate size
-        estimated_size = estimate_record_size(doc)
+                else:
+                    collection.insert_one(project_dict)
+                    inserted_count += 1
 
-        result = {
-            "accession": accession,
-            "size": estimated_size,
-            "status": "success",
-            "reason": None,
-            "child_count": len(child_accessions) if child_accessions else 0
-        }
+                elem.clear()
 
-        # For oversized records, store minimal version
-        if estimated_size > size_limit:
-            minimal_doc = create_minimal_doc(doc)
-            collection.insert_one(minimal_doc)
-            result["reason"] = "stored_minimal"
-            result["stored_size"] = estimate_record_size(minimal_doc)
-        else:
-            # Store complete document
-            collection.insert_one(doc)
-            result["stored_size"] = estimated_size
+            parent_stack.pop()
 
-    except Exception as e:
-        result = {
-            "accession": accession if 'accession' in locals() else None,
-            "size": estimated_size if 'estimated_size' in locals() else None,
-            "status": "error",
-            "reason": str(e),
-            "child_count": len(child_accessions) if 'child_accessions' in locals() else 0
-        }
+        if time.time() - start_time >= progress_interval:
+            timestamp = datetime.utcnow().isoformat()
+            click.echo(
+                f"[{timestamp}] Inserted: {inserted_count}, Oversized (modified): {oversize_count}, Total Processed: {total_projects_processed}")
+            start_time = time.time()
 
-    return result
+    click.echo(
+        f"Final Summary: Inserted {inserted_count}, Oversized (modified) {oversize_count}, Total Processed: {total_projects_processed}")
 
 
 @click.command()
-@click.option(
-    '--input-file', '-i',
-    type=click.Path(exists=True, dir_okay=False, path_type=str),
-    required=True,
-    help="Path to the input BioProject XML file"
-)
-@click.option(
-    '--host',
-    default='localhost',
-    help="MongoDB host address"
-)
-@click.option(
-    '--port',
-    default=27017,
-    help="MongoDB port number"
-)
-@click.option(
-    '--database',
-    default='biosamples',
-    help="MongoDB database name"
-)
-@click.option(
-    '--collection',
-    default='bioprojects',
-    help="MongoDB collection name"
-)
-@click.option(
-    '--size-limit',
-    default=15_000_000,  # 15MB to be safe
-    help="Size threshold in bytes for creating minimal records"
-)
-@click.option(
-    '--progress-interval',
-    default=1000,
-    help="How often to print progress updates"
-)
-@click.option(
-    '--debug/--no-debug',
-    default=False,
-    help="Print detailed error messages for failed records"
-)
-def main(
-        input_file: str,
-        host: str,
-        port: int,
-        database: str,
-        collection: str,
-        size_limit: int,
-        progress_interval: int,
-        debug: bool
-):
-    """
-    Load BioProject XML records into MongoDB.
-
-    This tool:
-    - Processes all projects (both leaf and non-leaf nodes)
-    - Preserves project hierarchies via child_bioprojects field
-    - Creates minimal records for oversized projects
-    - Removes '@' prefixes from field names
-    - Renames '#text' fields to 'content'
-    - Flattens Project content to root level
-    """
-    # Connect to MongoDB
-    mongo_collection = connect_mongodb(host, port, database, collection)
-
-    # Statistics to track progress
-    stats = {
-        "processed": 0,
-        "success": 0,
-        "minimal": 0,
-        "invalid": 0,
-        "errors": 0,
-        "start_time": time.time()
-    }
-
-    # Keep track of the last few errors for debugging
-    recent_errors = []
-
-    # Create iterator for Project elements
-    context = etree.iterparse(input_file, events=("end",), tag="Project")
-
-    try:
-        for event, elem in context:
-            # Process the record - if None is returned, silently skip it
-            result = process_project(elem, mongo_collection, size_limit)
-            if result is None:
-                # Memory cleanup for skipped record
-                elem.clear()
-                parent = elem.getparent()
-                if parent is not None:
-                    while elem.getprevious() is not None:
-                        del parent[0]
-                continue
-
-            # Only increment processed count for non-empty documents
-            stats["processed"] += 1
-
-            # Update statistics
-            if result["status"] == "success":
-                if result.get("reason") == "stored_minimal":
-                    stats["minimal"] += 1
-                else:
-                    stats["success"] += 1
-            elif result["status"] == "invalid":
-                stats["invalid"] += 1
-            else:
-                stats["errors"] += 1
-
-            if debug and result["status"] in ["error", "invalid"]:
-                recent_errors.append(
-                    f"{result['status'].title()} with accession {result['accession']}: {result['reason']}"
-                )
-                if len(recent_errors) > 5:  # Keep only recent errors
-                    recent_errors.pop(0)
-
-            # Print progress periodically
-            if stats["processed"] % progress_interval == 0:
-                elapsed = time.time() - stats["start_time"]
-                rate = stats["processed"] / elapsed
-                print(
-                    f"{datetime.now().isoformat()} - "
-                    f"Processed: {stats['processed']:,} | "
-                    f"Full Records: {stats['success']:,} | "
-                    f"Minimal Records: {stats['minimal']:,} | "
-                    f"Invalid: {stats['invalid']:,} | "
-                    f"Errors: {stats['errors']:,} | "
-                    f"Rate: {rate:.1f} records/sec"
-                )
-
-                if debug and recent_errors:
-                    print("\nRecent issues:")
-                    for error in recent_errors:
-                        print(f"  {error}")
-                    print()
-
-            # Memory management
-            elem.clear()
-            parent = elem.getparent()
-            if parent is not None:
-                while elem.getprevious() is not None:
-                    del parent[0]
-
-    except KeyboardInterrupt:
-        print("\nProcess interrupted by user. Saving final statistics...")
-
-    finally:
-        # Print final statistics
-        elapsed = time.time() - stats["start_time"]
-        print("\nFinal Statistics:")
-        print(f"Total time: {elapsed:.1f} seconds")
-        print(f"Total processed: {stats['processed']:,}")
-        print(f"Successfully loaded (full): {stats['success']:,}")
-        print(f"Successfully loaded (minimal): {stats['minimal']:,}")
-        print(f"Invalid records: {stats['invalid']:,}")
-        print(f"Errors: {stats['errors']:,}")
-        print(f"Average rate: {stats['processed'] / elapsed:.1f} records/sec")
+@click.argument("xml_file", type=click.Path(exists=True))
+@click.option("--mongo-uri", default="mongodb://localhost:27017/", help="MongoDB connection URI.")
+@click.option("--db-name", default="ncbi_bioprojects", help="MongoDB database name.")
+@click.option("--collection-name", default="projects", help="MongoDB collection name.")
+@click.option("--progress-interval", default=10, type=int, help="Progress report interval in seconds.")
+def main(xml_file, mongo_uri, db_name, collection_name, progress_interval):
+    """Command-line interface to process and insert NCBI BioProject XML data into MongoDB with periodic progress updates."""
+    parse_and_insert(xml_file, mongo_uri, db_name, collection_name, progress_interval)
 
 
 if __name__ == "__main__":
     main()
-
-# very roughly
-# Bytes per minute: 652,582,678 bytes/min
-# Lines per minute: 14,103,559 lines/min
-# -rw-rw-r-- 1 mark mark 3.1G Jan 30 10:40 downloads/bioproject.xml
-# -rw-rw-r-- 1 mark mark 110G Jan  8 20:32 ./gitrepos/external-metadata-awareness/local/biosample_set.xml
-# about 5 minutes for bioproject.xml
-# 3 hours for biosample_set.xml ?
-
