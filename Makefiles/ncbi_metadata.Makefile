@@ -238,3 +238,12 @@ local/bioproject_xpath_counts.json: downloads/bioproject.xml
 		--always-count-path '/PackageSet/Package/Project' \
 		--stop-after 999999999 \
 		--output $@
+
+
+local/biosample_xpath_counts.json: local/biosample_set.xml
+	poetry run python external_metadata_awareness/count_xml_paths.py \
+		--xml-file $< \
+		--interval 10 \
+		--always-count-path '/BioSampleSet/BioSample' \
+		--stop-after 999999999 \
+		--output $@
