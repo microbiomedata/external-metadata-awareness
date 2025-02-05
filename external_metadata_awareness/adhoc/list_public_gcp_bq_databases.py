@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from google.cloud import bigquery
 
 # Load environment variables from local/.env
-load_dotenv(os.path.join('..', 'local', '.env'))
+load_dotenv(os.path.join('../..', 'local', '.env'))
 
 GCP_PROJECT_NAME = os.environ.get('GCP_PROJECT_NAME')
 
