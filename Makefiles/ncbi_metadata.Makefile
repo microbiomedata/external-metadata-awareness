@@ -3,8 +3,8 @@ WGET=wget
 
 MONGO_HOST=localhost
 MONGO_PORT=27017
-MONGO_DB=biosamples
-MONGO_COLLECTION=biosamples
+MONGO_DB=ncbi_metadata
+MONGO_BIOSAMPLES_COLLECTION=biosamples
 #BIOSAMPLES_MAX_DOCS=50000000
 BIOSAMPLES_MAX_DOCS=500000 # initial 1%
 MONGO2DUCK_BATCH_SIZE=10000
@@ -93,7 +93,7 @@ load-biosamples-into-mongo: local/biosample_set.xml
 	date
 	$(RUN) xml-to-mongo \
 		--anticipated-last-id $(BIOSAMPLES_MAX_DOCS) \
-		--collection-name $(MONGO_COLLECTION) \
+		--collection-name $(MONGO_BIOSAMPLES_COLLECTION) \
 		--db-name $(MONGO_DB) \
 		--file-path $< \
 		--id-field id \
@@ -103,7 +103,7 @@ load-biosamples-into-mongo: local/biosample_set.xml
 	date
 
 local/biosample-count-mongodb.txt:
-	date && mongosh --eval 'db.getSiblingDB("biosamples").biosamples.countDocuments()' > $@ && date # 1 minute
+	date && mongosh --eval 'db.getSiblingDB("$(MONGO_DB").biosamples.countDocuments()' > $@ && date # 1 minute # how to use Makefile variables here?
 
 # no indexing necessary for the mongodb to duckdb convertion in notebooks/mongodb_biosamples_to_duckdb.ipynb
 # 1% MongoDB load 8 minutes on MAM Ubuntu NUC
@@ -114,8 +114,8 @@ local/ncbi_biosamples.duckdb:
 		external_metadata_awareness/mongodb_biosamples_to_duckdb.py \
 		extract \
 		--batch_size $(MONGO2DUCK_BATCH_SIZE) \
-		--collection biosamples \
-		--db_name biosamples \
+		--collection $(MONGO_BIOSAMPLES_COLLECTION) \
+		--db_name $(MONGO_DB) \
 		--duckdb_file $@ \
 		--max_docs $(BIOSAMPLES_MAX_DOCS) \
 		--mongo_uri mongodb://$(MONGO_HOST):$(MONGO_PORT)/
@@ -166,70 +166,59 @@ infer-env-triad-curies: local/ncbi_biosamples.duckdb
 
 ####
 
-PROJECT = nmdc-377118
-DATASET = nih-sra-datastore.sra
-TABLE = metadata
-BATCH_SIZE = 100000
-LIMIT = 1000000 # expect ~ 30000000
+SRA_BIGQUERY_PROJECT = nmdc-377118
+SRA_BIGQUERY_DATASET = nih-sra-datastore.sra
+SRA_BIGQUERY_TABLE = metadata
+SRA_BIGQUERY_BATCH_SIZE = 100000
+SRA_BIGQUERY_LIMIT = 30000000 # expect ~ 30000000
 
 # Preview mode: analyze the dataset without exporting
 biosample-bioproject-preview:
 	poetry run python  external_metadata_awareness/export_sra_accession_pairs.py \
-		--project $(PROJECT) \
-		--dataset $(DATASET) \
-		--table $(TABLE) \
+		--project $(SRA_BIGQUERY_PROJECT) \
+		--dataset $(SRA_BIGQUERY_DATASET) \
+		--table $(SRA_BIGQUERY_TABLE) \
 		--report-nulls \
 		--preview \
 		--verbose
 
 # Production mode: full export of accession pairs
-downloads/sra_accession_pairs_1000000.tsv:
+downloads/sra_accession_pairs.tsv:
 	poetry run python  external_metadata_awareness/export_sra_accession_pairs.py \
-		--project $(PROJECT) \
-		--dataset $(DATASET) \
-		--table $(TABLE) \
-		--batch-size $(BATCH_SIZE) \
-		--limit $(LIMIT) \
+		--project $(SRA_BIGQUERY_PROJECT) \
+		--dataset $(SRA_BIGQUERY_DATASET) \
+		--table $(SRA_BIGQUERY_TABLE) \
+		--batch-size $(SRA_BIGQUERY_BATCH_SIZE) \
+		--limit $(SRA_BIGQUERY_LIMIT) \
 		--exclude-nulls \
-		--output $@ \
-		--verbose
+		--output $@
 
 downloads/sra_metadata_table_schema.tsv:
 	poetry run python  external_metadata_awareness/dump_sra_metadata_table_schema.py \
-		--project $(PROJECT) \
-		--dataset $(DATASET) \
-		--table $(TABLE) \
+		--project $(SRA_BIGQUERY_PROJECT) \
+		--dataset $(SRA_BIGQUERY_DATASET) \
+		--table $(SRA_BIGQUERY_TABLE) \
 		--output $@ \
-		--format tsv \
-		--verbose
+		--format tsv
 
 .PHONY: biosample-bioproject-preview sra_accession_pairs_tsv_to_mongo analyze_bioproject_paths load_acceptable_sized_leaf_bioprojects_into_mongodb
 
-sra_accession_pairs_tsv_to_mongo: downloads/sra_relationships.tsv
+sra_accession_pairs_tsv_to_mongo: downloads/sra_accession_pairs.tsv
 	poetry run python external_metadata_awareness/sra_accession_pairs_tsv_to_mongo.py \
 		--file-path $< \
-		--mongo-host localhost \
-		--mongo-port 27017 \
-		--database biosamples \
-		--collection biosamples_bioprojects \
+		--mongo-host $(MONGO_HOST) \
+		--mongo-port $(MONGO_PORT)  \
+		--database $(MONGO_DB) \
+		--collection sra_biosamples_bioprojects \
 		--batch-size 100000 \
 		--report-interval 500000
 
-analyze_bioproject_paths: downloads/bioproject.xml
-	poetry run python external_metadata_awareness/measure_xml_paths.py \
-		--xml-file $< \
-		--root-tag Project \
-		--expected-docs 1000000 \
-		--progress-interval 1000 \
-		--print-limit 999
-
-
 load_acceptable_sized_leaf_bioprojects_into_mongodb: downloads/bioproject.xml
 	poetry run python external_metadata_awareness/load_acceptable_sized_leaf_bioprojects_into_mongodb.py \
-		--mongo-uri mongodb://localhost:27017 \
-		--db-name biosamples \
-		--project-collection bioprojects2\
-		--submission-collection submissions2 $<
+		--mongo-uri mongodb://$(MONGO_HOST):$(MONGO_PORT) \
+		--db-name $(MONGO_DB) \
+		--project-collection bioprojects \
+		--submission-collection bioprojects_submissions $<
 
 local/bioproject_xpath_counts.json: downloads/bioproject.xml
 	poetry run python external_metadata_awareness/count_xml_paths.py \
