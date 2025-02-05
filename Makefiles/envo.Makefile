@@ -56,12 +56,6 @@ local/aquatic-biome.png:
 local/soil-env_broad_scale-algebraic.txt:
 	$(RUN) runoak --input sqlite:obo:envo info [ [ [ [ [ .desc//p=i biome .not .desc//p=i 'aquatic biome' ] .not .desc//p=i 'forest biome' ] .not .desc//p=i 'grassland biome' ]  .not .desc//p=i 'desert biome' ] .not biome ]  .not 'cropland biome' > $@
 
-local/soil-env_broad_scale-algebraic.csv: local/soil-env_broad_scale-algebraic.txt
-	$(RUN) normalize-envo-data \
-		--input-file $< \
-		--ontology-prefix ENVO \
-		--output-file $@
-
 local/envo-leaves.txt: local/env-local-scale-candidate-ids.txt
 	$(RUN) runoak --input sqlite:obo:envo leafs > $@
 
@@ -70,12 +64,6 @@ local/envo-leaf-ids.txt: local/envo-leaves.txt
 
 local/envo-info.txt:
 	$(RUN) runoak --input sqlite:obo:envo info  .desc//p=i continuant > $@ # or .ALL
-
-local/envo-info.csv: local/envo-info.txt
-	$(RUN) normalize-envo-data \
-			--input-file $< \
-			--ontology-prefix ENVO \
-			--output-file $@
 
 local/biome-info.txt:
 	$(RUN) runoak --input sqlite:obo:envo info  .desc//p=i ENVO:00000428 > $@
@@ -90,10 +78,5 @@ local/biome-relationships.csv
 local/unused-terrestrial-biomes-response.txt: local/unused-terrestrial-biomes-prompt.txt
 	cat $(word 1,$^) | $(RUN) llm prompt --model claude-3.5-sonnet -o temperature 0.01 | tee $@
 
-.PHONY: unused-terrestrial-biomes-response
-unused-terrestrial-biomes-response-aggressive-clean:
-	rm -rf local/EnvBroadScaleSoilEnum*
-	rm -rf local/biome-relationships*
-	rm -rf local/soil-env_broad_scale-algebraic*
-	rm -rf local/unused-terrestrial-biomes*
+
 
