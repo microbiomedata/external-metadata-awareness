@@ -1,0 +1,9 @@
+{
+    "total_unique_terms": 112,
+    "perfect_matches": 88,
+    "matches_need_review": 22,
+    "no_valid_oak_match": 2,
+    "exact_obsolete_matches": 5,
+    "obsolete_terms_with_replacement": 1,
+    "obsolete_terms_with_consider": 2
+}
