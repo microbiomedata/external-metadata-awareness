@@ -32,6 +32,8 @@ scipy = "^1.14.1"
 tqdm = "^4.66.5"
 xmltodict = "^0.13.0"
 textdistance = "^4.6.3"
+notebook = "^7.3.2"
+rapidfuzz = "^3.12.1"
 
 [build-system]
 requires = ["poetry-core"]
