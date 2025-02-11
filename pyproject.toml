@@ -34,6 +34,7 @@ xmltodict = "^0.13.0"
 textdistance = "^4.6.3"
 notebook = "^7.3.2"
 rapidfuzz = "^3.12.1"
+pymupdf = "^1.25.3"
 
 [build-system]
 requires = ["poetry-core"]

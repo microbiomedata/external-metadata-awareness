@@ -1,0 +1,68 @@
+Number	Item	Present in the manuscript? Yes/No/NA	Comments or location in manuscript.1
+1.0	Structured or unstructured abstract	Yes	Unstructured abstract present on p.1 including background, methods, results and conclusions
+1.1	Study design	Yes	Study design described in abstract - laboratory incubation study with freeze-thaw cycles
+1.2	Environmental & sample information	Yes	Abstract describes permafrost aggregates from mineral soil horizon in Toolik, Alaska
+1.3	Host information (if applicable)	NA	No host organisms involved in this study
+1.4	Experiments & omics methods	Yes	Abstract describes experimental freeze-thaw cycles and X-ray computed tomography (XCT) methods
+1.5	Analyses & results	Yes	Abstract summarizes analyses of pore morphology, connectivity and key results
+2.0	Background & rationale	Yes	Introduction provides extensive background on freeze-thaw processes in permafrost and rationale for study
+2.1	Hypotheses or questions	Yes	Research objective and hypothesis stated on p.2: "We hypothesized that freeze-thaw would increase pore connectivity across all aggregates through the expansion of smaller pore throats"
+3.0	Study design	Yes	Detailed experimental design described in Methods section 2.2-2.3, including laboratory incubation with 5 freeze-thaw cycles
+3.1	Samples	Yes	Sample collection and preparation detailed in Methods 2.1-2.2
+3.2	Environmental context & geographic location	Yes	Site description and coordinates provided in Methods 2.1
+3.3	Relevant dates	Yes	Sample collection date (April 2016) provided in Methods 2.1
+3.4	Host(s) (if applicable)	NA	No host organisms involved
+3.5	Ethics	No	No ethics statements or permit information provided
+3.6	Environmental conditions & experimental treatments	Yes	Environmental conditions and experimental treatments detailed in Methods 2.2-2.3
+3.7	Sample collection	Yes	Sample collection methods described in Methods 2.1-2.2
+3.8	Eligibility/selection criteria	Yes	Sample selection criteria described in Methods 2.2
+3.9	Analytic sample size	Yes	Six aggregates total (two per core) described in Methods 2.2
+4.0	Storage & preservation	Yes	Storage conditions (-40°C) described in Methods 2.1
+4.1	Shipping	Yes	Shipping mentioned briefly in Methods 2.1
+4.2	Extraction methods	NA	No extractions performed in this physical analysis study
+4.3	Experiments & sample processing	Yes	Sample processing and experimental methods detailed in Methods 2.2-2.3
+4.4	Library preparation	NA	Not applicable for this XCT imaging study
+4.5	Depletion, enrichment, & multiplexing	NA	Not applicable for this XCT imaging study
+4.6	Primer selection	NA	Not applicable for this XCT imaging study
+5.0	Positive controls	No	No positive controls described
+5.1	Negative controls	No	No negative controls described
+6.0	Quantification & quality assessments	Yes	XCT scanning parameters and image quality assessment described in Methods 2.4
+6.1	Contaminant mitigation & identification	No	No contaminant mitigation methods described
+6.2	Replication	Yes	Two replicates per core (six total aggregates) described in Methods 2.2
+6.3	Sequencing methods	NA	Not applicable for this XCT imaging study
+6.4	Metabolomics, metaproteomics, & other omics methods	NA	Not applicable for this XCT imaging study
+6.5	Contextual & linked datasets	Yes	Temperature data from NEON described and analyzed in Methods 2.1
+6.6	Batch effects	No	No discussion of batch effects
+7.0	Bioinformatics analyses	Yes	Image analysis methods detailed in Methods 2.4-2.5
+7.1	Quality control	Yes	Data filtering and artifact removal described in Methods 2.6
+7.2	Normalization	Yes	Data normalization described in Methods 2.5
+7.3	Database information	NA	Not applicable for this XCT imaging study
+7.4	Statistical methods	Yes	Statistical methods described in Methods 2.7
+7.5	Missing data	No	No discussion of missing data handling
+7.6	Bias & confounding variables	Yes	Potential sources of bias discussed in Results and Discussion
+7.7	Subgroup analysis	Yes	Subgroup analyses by aggregate and moisture content described in Results
+7.8	Sensitivity analyses	No	No sensitivity analyses described
+7.9	Criteria for significance	Yes	Statistical significance criteria (α = 0.05) stated in Methods 2.7
+8.0	Metadata access	Yes	Data availability statement provided at end of paper
+8.1	Host data access (if applicable)	NA	No host data involved
+8.2	Raw data access	Yes	Data availability statement indicates GitHub repository access
+8.3	Processed data access	Yes	Processed data availability described in Data availability section
+8.4	Software & source code access	Yes	Software and code availability described in Data availability section
+8.5	Reproducible research	Yes	Reproducibility information provided in Data availability section
+9.0	Descriptive data	Yes	Sample characteristics described in Results 3.1
+10.0	Microbiome sequencing data	NA	Not applicable for this XCT imaging study
+10.1	Metabolomics, proteomics, & other omics data	NA	Not applicable for this XCT imaging study
+10.2	Statistical analyses	Yes	Statistical results reported throughout Results section
+10.3	Figures, tables, & captions	Yes	Multiple figures with detailed captions provided
+11.0	Key results	Yes	Key results summarized in Discussion 4.1-4.4
+11.1	Interpretation	Yes	Results interpretation provided throughout Discussion
+11.2	Limitations	Yes	Study limitations discussed in section 4.1
+11.3	Generalizability	Yes	Generalizability discussed in Discussion sections 4.1-4.3
+12.0	Ongoing & future work	Yes	Future research directions discussed in section 4.4
+13.0	Conclusions	Yes	Conclusions provided in final paragraph of Discussion
+14.0	Acknowledgements	Yes	Acknowledgements section present
+14.1	Funding	Yes	Funding information provided in Acknowledgements
+15.0	Conflicts of interest	Yes	Conflicts of interest statement provided
+16.0	Supplementary data & files	Yes	Supplementary data referenced throughout and availability stated
+17.0	Sample & data availability	Yes	Sample and data availability described in Data availability section
+18.0	AI usage	No	No mention of AI usage

@@ -1,0 +1,68 @@
+Number	Item	Present in the manuscript? Yes/No/NA	Comments or location in manuscript.1
+1.0	Structured or unstructured abstract	Yes	Unstructured abstract present, includes all recommended sections (background, methods, results, conclusions)
+1.1	Study design	Yes	Study design described in abstract - analysis of bacterial isolate genomes and metagenome samples
+1.2	Environmental & sample information	Yes	Specific source described as Populus root microbiome, both rhizosphere and endosphere samples
+1.3	Host information (if applicable)	Yes	Host identified as Populus deltoides and Populus trichocarpa, mentions 339 bacterial isolates
+1.4	Experiments & omics methods	Yes	Abstract mentions genome sequencing and bioinformatics analysis approaches
+1.5	Analyses & results	Yes	Abstract describes key findings about BGC diversity and uniqueness
+2.0	Background & rationale	Yes	Introduction provides thorough background on plant microbiomes and natural products with appropriate citations
+2.1	Hypotheses or questions	Yes	Research objectives clearly stated - to analyze biosynthetic potential of Populus microbiome
+3.0	Study design	Yes	Both observational and experimental components described in Methods
+3.1	Samples	Yes	Sample types and collection methods detailed in Methods
+3.2	Environmental context & geographic location	Yes	Geographic coordinates provided for sampling locations in Methods
+3.3	Relevant dates	Yes	Collection dates (August 2014) provided in Methods
+3.4	Host(s) (if applicable)	Yes	Host species details provided, including both P. deltoides and P. trichocarpa
+3.5	Ethics	NA	Not applicable for environmental samples from plants
+3.6	Environmental conditions & experimental treatments	Yes	Field and laboratory conditions described in Methods
+3.7	Sample collection	Yes	Detailed collection protocols provided in Methods
+3.8	Eligibility/selection criteria	Yes	Criteria for isolate selection described in Methods
+3.9	Analytic sample size	Yes	339 bacterial strains analyzed, with numbers broken down by type
+4.0	Storage & preservation	Yes	Sample storage and preservation methods described in Methods
+4.1	Shipping	NA	Not mentioned but likely not relevant
+4.2	Extraction methods	Yes	DNA extraction methods described in Methods
+4.3	Experiments & sample processing	Yes	Processing methods detailed in Methods including sequencing
+4.4	Library preparation	Yes	Sequencing library preparation mentioned in Methods
+4.5	Depletion, enrichment, & multiplexing	NA	Not applicable for this study type
+4.6	Primer selection	NA	Not applicable for whole genome sequencing
+5.0	Positive controls	No	No mention of positive controls
+5.1	Negative controls	No	No mention of negative controls
+6.0	Quantification & quality assessments	Yes	Quality assessment methods described in Methods and Results
+6.1	Contaminant mitigation & identification	No	Not explicitly discussed
+6.2	Replication	No	Replication strategy not clearly described
+6.3	Sequencing methods	Yes	Sequencing methods and platforms described in Methods
+6.4	Metabolomics, metaproteomics, & other omics methods	NA	Not applicable - study focused on genomics only
+6.5	Contextual & linked datasets	Yes	Links to sequence data provided
+6.6	Batch effects	No	Not discussed
+7.0	Bioinformatics analyses	Yes	Detailed description of bioinformatics methods and tools used
+7.1	Quality control	Yes	Quality control steps described in Methods
+7.2	Normalization	Yes	Data normalization approaches described
+7.3	Database information	Yes	Database versions and parameters provided
+7.4	Statistical methods	Yes	Statistical methods described in Methods
+7.5	Missing data	No	Not discussed
+7.6	Bias & confounding variables	No	Not explicitly discussed
+7.7	Subgroup analysis	Yes	Subgroup analyses described for different bacterial groups
+7.8	Sensitivity analyses	No	Not discussed
+7.9	Criteria for significance	Yes	Significance criteria described for analyses
+8.0	Metadata access	Yes	Data accessibility information provided
+8.1	Host data access (if applicable)	Yes	Host data access information provided
+8.2	Raw data access	Yes	Raw data access information provided with accession numbers
+8.3	Processed data access	Yes	Processed data access information provided
+8.4	Software & source code access	Yes	Software tools and versions listed
+8.5	Reproducible research	No	No explicit reproducibility statement
+9.0	Descriptive data	Yes	Characteristics of samples and experiments summarized in Results section and Table 1
+10.0	Microbiome sequencing data	Yes	Comprehensive reporting of sequencing results and analyses in Results section
+10.1	Metabolomics, proteomics, & other omics data	NA	Study focused only on genomic data
+10.2	Statistical analyses	Yes	Statistical analysis results reported throughout Results section
+10.3	Figures, tables, & captions	Yes	Clear figures and tables with detailed captions provided
+11.0	Key results	Yes	Key findings summarized in Discussion
+11.1	Interpretation	Yes	Results interpreted in context of objectives and prior research
+11.2	Limitations	Yes	Limitations discussed in Discussion section
+11.3	Generalizability	Yes	Generalizability of findings discussed in Discussion
+12.0	Ongoing & future work	Yes	Future research directions discussed in Discussion
+13.0	Conclusions	Yes	Clear conclusions provided
+14.0	Acknowledgements	Yes	Detailed acknowledgements section included
+14.1	Funding	Yes	Funding sources and roles detailed in Acknowledgements
+15.0	Conflicts of interest	No	No explicit conflicts of interest statement
+16.0	Supplementary data & files	Yes	Supplementary materials referenced and described
+17.0	Sample & data availability	Yes	Detailed data availability statement provided with accession numbers
+18.0	AI usage	NA	Article published in 2018, before AI usage reporting requirements
