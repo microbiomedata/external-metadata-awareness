@@ -1,0 +1,68 @@
+Number	Item	Present in the manuscript? Yes/No/NA	Comments or location in manuscript.1
+1.0	Structured or unstructured abstract	Yes	Unstructured abstract with background, methods, results and importance sections
+1.1	Study design	Yes	Study design comparing mini-metagenomics and bulk metagenomics described in abstract
+1.2	Environmental & sample information	Yes	Forest soil samples described in abstract and methods
+1.3	Host information (if applicable)	NA	Not applicable - environmental soil samples
+1.4	Experiments & omics methods	Yes	Mini-metagenomics and bulk metagenomics methods described
+1.5	Analyses & results	Yes	Key findings about genomic diversity described in abstract
+2.0	Background & rationale	Yes	Detailed background on soil microbiome and metagenomic methods provided in introduction
+2.1	Hypotheses or questions	Yes	Clear aim to compare mini-metagenomics and bulk approaches
+3.0	Study design	Yes	Experimental design described in detail in methods
+3.1	Samples	Yes	Four soil samples from experimental warming plots described
+3.2	Environmental context & geographic location	Yes	Harvard Forest Long Term Ecological Research site with coordinates provided
+3.3	Relevant dates	Yes	Sample collection date (May 24, 2017) specified
+3.4	Host(s) (if applicable)	NA	Not applicable - environmental samples
+3.5	Ethics	NA	Not applicable for this type of study
+3.6	Environmental conditions & experimental treatments	Yes	Experimental warming treatments described
+3.7	Sample collection	Yes	Detailed collection and processing methods provided
+3.8	Eligibility/selection criteria	Yes	Sample selection criteria described
+3.9	Analytic sample size	Yes	Number of samples and replicates specified
+4.0	Storage & preservation	Yes	Sample storage conditions (-80°C) described
+4.1	Shipping	Yes	Sample transport conditions described
+4.2	Extraction methods	Yes	DNA extraction protocol detailed
+4.3	Experiments & sample processing	Yes	Cell sorting and DNA amplification methods described
+4.4	Library preparation	Yes	Library preparation protocol detailed
+4.5	Depletion, enrichment, & multiplexing	Yes	Cell sorting enrichment described
+4.6	Primer selection	NA	Not applicable for shotgun sequencing
+5.0	Positive controls	No	No controls mentioned
+5.1	Negative controls	No	No controls mentioned
+6.0	Quantification & quality assessments	Yes	Quality assessment of MAGs described
+6.1	Contaminant mitigation & identification	Yes	MAG quality filtering described
+6.2	Replication	Yes	Multiple replicates used
+6.3	Sequencing methods	Yes	Sequencing platforms and parameters specified
+6.4	Metabolomics, metaproteomics, & other omics methods	NA	Only metagenomics performed
+6.5	Contextual & linked datasets	Yes	Reference datasets and databases described
+6.6	Batch effects	No	Not discussed
+7.0	Bioinformatics analyses	Yes	Detailed bioinformatics methods provided
+7.1	Quality control	Yes	Quality control steps described
+7.2	Normalization	Yes	Data normalization methods described
+7.3	Database information	Yes	All database versions specified
+7.4	Statistical methods	Yes	Statistical analyses described
+7.5	Missing data	No	Not discussed
+7.6	Bias & confounding variables	Yes	Potential biases discussed
+7.7	Subgroup analysis	Yes	Analysis by taxonomic groups described
+7.8	Sensitivity analyses	No	Not discussed
+7.9	Criteria for significance	Yes	Quality thresholds and criteria specified
+8.0	Metadata access	Yes	Data availability information provided
+8.1	Host data access (if applicable)	NA	Not applicable
+8.2	Raw data access	Yes	Data deposited in NCBI GenBank with accession
+8.3	Processed data access	Yes	Processed data availability detailed
+8.4	Software & source code access	Yes	All software versions and parameters provided
+8.5	Reproducible research	Yes	Methods described in reproducible detail
+9.0	Descriptive data	Yes	Sample characteristics summarized 
+10.0	Microbiome sequencing data	Yes	Sequencing results presented
+10.1	Metabolomics, proteomics, & other omics data	NA	Not applicable
+10.2	Statistical analyses	Yes	Statistical results presented
+10.3	Figures, tables, & captions	Yes	Clear figures and detailed captions provided
+11.0	Key results	Yes	Key findings highlighted
+11.1	Interpretation	Yes	Results interpreted in context
+11.2	Limitations	Yes	Limitations discussed
+11.3	Generalizability	Yes	Generalizability discussed
+12.0	Ongoing & future work	Yes	Future applications discussed
+13.0	Conclusions	Yes	Clear conclusions provided
+14.0	Acknowledgements	Yes	Detailed acknowledgements provided
+14.1	Funding	Yes	Funding sources listed
+15.0	Conflicts of interest	No	No conflicts of interest statement
+16.0	Supplementary data & files	Yes	Supplementary figures and tables provided
+17.0	Sample & data availability	Yes	Data availability statement with accession numbers
+18.0	AI usage	NA	Published in 2020, before AI usage reporting requirements

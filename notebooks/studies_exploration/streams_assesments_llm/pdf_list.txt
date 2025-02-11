@@ -1,0 +1,29 @@
+total 127588
+-rw-rw-r-- 1 mark mark  7407475 Feb 10 17:40 1-s2.0-S0016706121007540-main.pdf
+-rw-rw-r-- 1 mark mark   807066 Feb 10 17:37 2022.12.12.520098v2.full.pdf
+-rw-rw-r-- 1 mark mark  4697100 Jul 30  2024 41564_2019_Article_449.pdf
+-rw-rw-r-- 1 mark mark  9790604 Feb 11 11:22 acp-23-15783-2023.pdf
+-rw-rw-r-- 1 mark mark  2689922 Feb 10 17:39 alteio-et-al-2020-complementary-metagenomic-approaches-improve-reconstruction-of-microbial-diversity-in-a-forest-soil.pdf
+-rw-rw-r-- 1 mark mark   126729 Feb 10 19:11 bell-et-al-2020-metatranscriptomic-sequencing-of-a-cyanobacterial-soil-surface-consortium-with-and-without-a-diverse.pdf
+-rw-rw-r-- 1 mark mark    53436 Apr 29  2024 BISS_article_20637.pdf
+
+-rw-rw-r-- 1 mark mark  2053442 Feb 10 17:36 blair-et-al-2018-exploration-of-the-biosynthetic-potential-of-the-populus-microbiome.pdf
+
+-rw-rw-r-- 1 mark mark 35334752 Feb 10 17:38 Environmental Microbiology - 2022 - Olmsted - Environmental predictors of electroactive bacterioplankton in small boreal.pdf
+-rw-rw-r-- 1 mark mark  2539255 Feb 10 17:40 file.pdf
+-rw-rw-r-- 1 mark mark  2398649 Aug 21 13:43 gkab990.pdf
+-rw-rw-r-- 1 mark mark  4554497 Feb 10 17:41 JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.pdf
+-rw-rw-r-- 1 mark mark  1227193 Feb 10 17:42 Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.pdf
+-rw-rw-r-- 1 mark mark  3357486 Feb 11 11:51 microorganisms-09-00357-v2.pdf
+-rw-rw-r-- 1 mark mark  3347477 Feb 10 17:38 Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.pdf
+-rw-rw-r-- 1 mark mark  1615179 Jul 25  2024 New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.pdf
+-rw-rw-r-- 1 mark mark   169527 Feb 10 19:10 nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.pdf
+-rw-rw-r-- 1 mark mark 12588800 Feb 10 19:12 s40168-020-00889-8.pdf
+-rw-rw-r-- 1 mark mark  1948590 Feb 10 17:42 s41467-023-36515-y.pdf
+-rw-rw-r-- 1 mark mark  7388885 Feb 10 17:42 s41564-020-00861-0.pdf
+-rw-rw-r-- 1 mark mark 13434856 Feb 10 17:37 s41564-022-01266-x.pdf
+-rw-rw-r-- 1 mark mark  1258474 Feb 10 19:09 s41597-019-0132-4.pdf
+-rw-rw-r-- 1 mark mark  1312335 Feb 10 17:42 s41597-024-03069-7.pdf
+-rw-rw-r-- 1 mark mark  2193840 Feb 10 19:10 s41597-024-04013-5.pdf
+-rw-rw-r-- 1 mark mark  6380271 Aug 22 13:45 sciadv.adg7888.pdf
+-rw-rw-r-- 1 mark mark  1921033 Jan 27 10:20 Soil_Bacterial_Diversity_Is_Positively_Correlated_.pdf
