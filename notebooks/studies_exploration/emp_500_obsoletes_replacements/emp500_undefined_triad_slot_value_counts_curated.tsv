@@ -1,0 +1,25 @@
+problematic_key	problematic_value	count	replacement	notes
+env_broad_scale	Small lake biome	20	small freshwater lake biome [ENVO:00000892]
+env_local_scale	marine benthic feature	125
+env_local_scale	host-associated habitat	133	animal-associated environment [ENVO:01001002]
+env_local_scale	animal-associated habitat	84	animal-associated environment [ENVO:01001002]
+env_local_scale	mangrove	1		SAMEA7723419. used in combination with marine benthic biome/marine sediment ?! 16.82583 -88.1068 (geographic location: Atlantic Ocean:Northwest Atlantic Ocean,Belize) offshore from a minor island
+env_local_scale	intermittent pond	7	container of an intermittent pond [ENVO:00000504]
+env_local_scale	insecta-associated habitat	28	animal-associated environment [ENVO:01001002]	SAMEA7723460. tropical broadleaf forest biome/organic material. the fact that it came from an insect should be captured in a host slot
+env_medium	coastal water	9	liquid water [ENVO:00002006]
+env_local_scale	bog	3	peatland [ENVO:00000044]	SAMEA7723551. subpolar coniferous forest biome/soil. via related synonym
+env_local_scale	oil reservior	14	oil reservoir [ENVO:00002185]	spelling
+env_local_scale	wetland	9	wetland area [ENVO:00000043]
+env_broad_scale	temperate shrubland	6	temperate shrubland biome [ENVO:01000215]
+env_local_scale	forest	21	forest [ENVO:01001243]	new?
+env_medium	pitcher plant fluid	6	liquid environmental material [ENVO:01000815]	SAMEA7723869, SAMEA7723863. ask to have phytotelma/phytotelm or ascidia/ascidium added to EnvO. taxon should go in a different slot. env_local_scale could be leaf [PO:0025034] ?
+env_broad_scale	flooded savanna	1	flooded savanna biome [ENVO:01000190]
+env_broad_scale	neritic bathypelagic zone biome	1	oceanic bathypelagic zone biome [ENVO:01000037]	"SAMEA7723939: Neritic names a superficial horizontal region, Bathypelagic names a deep vertical zone. reported depth: ""3000"". GEBCO confirms ocean floor is ~ 3800 m deep around 33.35° N, –122.12° W -> bathypelagic"
+env_broad_scale	montane grasslands and shrubland biome	12		SAMEA7724107: montane grassland biome [ENVO:01000194] OR montane shrubland biome [ENVO:01000216]
+env_local_scale	temperate coniferous forest	16	""	SAMEA7724195. temperate coniferous forest SAMEA7724207: cropland biome/soil
+env_local_scale	cropland	10		SAMEA7724207: cropland biome/soil
+env_local_scale	rangeland	5		SAMEA7724211. rangeland SAMEA7724207: cropland biome/soil
+env_local_scale	temperate woodland	2		SAMEA7724221. temperate woodland biome/soil
+env_local_scale	temperate shrubland	1		SAMEA7724228. temperate shrubland biome/soil
+env_local_scale	montane desert	26	montane desert ecosystem [ENVO:01001903]	SAMEA7724257. desert biome/alpine soil. ... mine other biosample (lat lon?), bioproject or study slots, or journal article
+env_local_scale	stratum	18		SAMEA7724332: forest floor [ENVO:01001582] OR active permafrost layer [ENVO:04000009]
