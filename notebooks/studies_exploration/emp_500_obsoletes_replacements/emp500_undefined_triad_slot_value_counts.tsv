@@ -1,0 +1,25 @@
+problematic_key	problematic_value	count
+env_broad_scale	Small lake biome	20
+env_local_scale	marine benthic feature	125
+env_local_scale	host-associated habitat	133
+env_local_scale	animal-associated habitat	84
+env_local_scale	mangrove	1
+env_local_scale	intermittent pond	7
+env_local_scale	insecta-associated habitat	28
+env_medium	coastal water	9
+env_local_scale	bog	3
+env_local_scale	oil reservior	14
+env_local_scale	wetland	9
+env_broad_scale	temperate shrubland	6
+env_local_scale	forest	21
+env_medium	pitcher plant fluid	6
+env_broad_scale	flooded savanna	1
+env_broad_scale	neritic bathypelagic zone biome	1
+env_broad_scale	montane grasslands and shrubland biome	12
+env_local_scale	temperate coniferous forest	16
+env_local_scale	cropland	10
+env_local_scale	rangeland	5
+env_local_scale	temperate woodland	2
+env_local_scale	temperate shrubland	1
+env_local_scale	montane desert	26
+env_local_scale	stratum	18
