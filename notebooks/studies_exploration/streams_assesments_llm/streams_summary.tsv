@@ -1,4 +1,272 @@
 Number	Item	Vote	Comments	Filename
+1.0	Structured or unstructured abstract	Yes	Contains both an abstract and plain language summary with background, methods, results and significance.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+1.1	Study design	Yes	States this is a laboratory-controlled freeze-thaw incubation experiment examining two soil systems.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+1.2	Environmental & sample information	Yes	Describes permafrost soils from two Alaskan sites and depths up to 60 cm.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+1.3	Host information (if applicable)	NA	Study does not involve host organisms.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+1.4	Experiments & omics methods	Yes	Describes use of FT-ICR-MS analysis to identify carbon compounds and oxidation states.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+1.5	Analyses & results	Yes	Describes major findings regarding carbon composition differences between sites and response to freeze-thaw.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+2.0	Background & rationale	Yes	Introduction thoroughly explains importance of understanding freeze-thaw cycles in permafrost soils with citations.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+2.1	Hypotheses or questions	Yes	Two clear hypotheses presented in introduction regarding carbon composition and freeze-thaw response.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+3.0	Study design	Yes	Describes lab incubation design comparing two sites with different freeze-thaw histories.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+3.1	Samples	Yes	Details number of cores (3 per site) and depths/horizons sampled from each site.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+3.2	Environmental context & geographic location	Yes	Provides coordinates and detailed site descriptions for Healy and Toolik locations in Alaska.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+3.3	Relevant dates	Yes	States cores were collected in April 2016.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+3.4	Host(s) (if applicable)	NA	No host organisms involved.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+3.5	Ethics	NA	No human/animal subjects or permits required for soil sampling.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+3.6	Environmental conditions & experimental treatments	Yes	Describes site conditions, soil properties, and experimental freeze-thaw treatments.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+3.7	Sample collection	Yes	Describes use of Gidding's probe for core extraction and preservation methods.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+3.8	Eligibility/selection criteria	Yes	Explains site selection based on contrasting freeze-thaw histories.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+3.9	Analytic sample size	Yes	Reports 3 cores per site to ~60 cm depth.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+4.0	Storage & preservation	Yes	Details -40°C storage of cores and handling conditions.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+4.1	Shipping	Yes	States cores were shipped frozen to Oregon State University.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+4.2	Extraction methods	Yes	Describes water extraction methods for FT-ICR-MS analysis.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+4.3	Experiments & sample processing	Yes	Details laboratory freeze-thaw incubation parameters and sub-sampling procedures.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+4.4	Library preparation	NA	Not applicable - no sequencing performed.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+4.5	Depletion, enrichment, & multiplexing	NA	Not applicable - no sequencing performed.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+4.6	Primer selection	NA	Not applicable - no PCR/sequencing performed.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+5.0	Positive controls	No	No mention of positive controls or standards.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+5.1	Negative controls	No	No mention of negative controls.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+6.0	Quantification & quality assessments	Yes	Details FT-ICR-MS data filtering and quality parameters.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+6.1	Contaminant mitigation & identification	Yes	Describes signal filtering and peak selection criteria.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+6.2	Replication	Yes	Reports 3 replicate cores per site.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+6.3	Sequencing methods	NA	Not applicable - no sequencing performed.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+6.4	Metabolomics, metaproteomics, & other omics methods	Yes	Comprehensive description of FT-ICR-MS methods and parameters.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+6.5	Contextual & linked datasets	Yes	References NEON soil temperature data used to calculate freeze-thaw cycles.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+6.6	Batch effects	No	Batch effects not discussed.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+7.0	Bioinformatics analyses	Yes	Details statistical analyses and data processing methods.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+7.1	Quality control	Yes	Describes filtering criteria and data quality thresholds.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+7.2	Normalization	Yes	Explains relative abundance calculations and data transformations.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+7.3	Database information	NA	Not applicable - no sequence databases used.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+7.4	Statistical methods	Yes	Details statistical tests including PERMANOVA, ANOVA, PCA.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+7.5	Missing data	Yes	States exclusion criteria for missing data and low quality measurements.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+7.6	Bias & confounding variables	Yes	Discusses potential confounding factors like moisture and mineralogy.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+7.7	Subgroup analysis	Yes	Describes analysis by depth classes and site comparisons.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+7.8	Sensitivity analyses	No	No sensitivity analyses reported.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+7.9	Criteria for significance	Yes	States alpha = 0.05 for statistical significance.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+8.0	Metadata access	Yes	Notes data and code availability via GitHub.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+8.1	Host data access (if applicable)	NA	No host data involved.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+8.2	Raw data access	Yes	States data available on GitHub with link provided.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+8.3	Processed data access	Yes	States processed data available on GitHub and EMSL.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+8.4	Software & source code access	Yes	Lists all software used with versions and provides GitHub repository link.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+8.5	Reproducible research	Yes	Provides code availability and methods for reproducibility.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+9.0	Descriptive data	Yes	Comprehensive reporting of soil properties and site characteristics.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+10.0	Microbiome sequencing data	NA	No sequencing performed.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+10.1	Metabolomics, proteomics, & other omics data	Yes	Reports FT-ICR-MS results including carbon compound classifications.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+10.2	Statistical analyses	Yes	Reports statistical test results with p-values.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+10.3	Figures, tables, & captions	Yes	Clear figures and tables with detailed captions.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+11.0	Key results	Yes	Clear summary of key findings tied to objectives.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+11.1	Interpretation	Yes	Thorough discussion of results and implications.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+11.2	Limitations	Yes	Discusses limitations of methods and interpretations.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+11.3	Generalizability	Yes	Discusses broader implications for permafrost carbon cycling.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+12.0	Ongoing & future work	Yes	Notes need for further research on thawing permafrost response.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+13.0	Conclusions	Yes	Clear conclusions summarizing major findings.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+14.0	Acknowledgements	Yes	Comprehensive acknowledgements section.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+14.1	Funding	Yes	Lists funding sources and grant information.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+15.0	Conflicts of interest	No	No conflicts of interest statement found.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+16.0	Supplementary data & files	Yes	References supplementary figures and information.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+17.0	Sample & data availability	Yes	States data/code availability via GitHub and EMSL.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+18.0	AI usage	No	No mention of AI usage.	JGR Biogeosciences - 2022 - Rooney - The Impact of Freeze‐Thaw History on Soil Carbon Response to Experimental Freeze‐Thaw.tsv
+1.0	Structured or unstructured abstract	Yes	Unstructured abstract provided on page 1 containing background, methods, results, and conclusions.	s41467-023-36515-y.tsv
+1.1	Study design	Yes	"Study design described in abstract as ""genome-centric approach"" with replicated plots of field-grown switchgrass and miscanthus."	s41467-023-36515-y.tsv
+1.2	Environmental & sample information	Yes	Abstract specifies leaf microbiome samples from switchgrass and miscanthus phyllosphere.	s41467-023-36515-y.tsv
+1.3	Host information (if applicable)	Yes	Abstract identifies hosts as switchgrass and miscanthus, replicated plots described.	s41467-023-36515-y.tsv
+1.4	Experiments & omics methods	Yes	Abstract describes metagenome and metatranscriptome sequencing and curation of 40 MAGs.	s41467-023-36515-y.tsv
+1.5	Analyses & results	Yes	Abstract describes key findings including MAG classes identified, upregulated transcripts, and seasonal dynamics.	s41467-023-36515-y.tsv
+2.0	Background & rationale	Yes	Introduction provides detailed background on perennial plants, microbiomes, and research motivation with citations.	s41467-023-36515-y.tsv
+2.1	Hypotheses or questions	Yes	Research questions stated in introduction (p.2) to understand functional attributes and activities of persistent phyllosphere taxa.	s41467-023-36515-y.tsv
+3.0	Study design	Yes	Observational field study design described in Methods, including spatial and temporal aspects over 2 growing seasons.	s41467-023-36515-y.tsv
+3.1	Samples	Yes	Leaf samples described in Methods with ID scheme and collection protocol.	s41467-023-36515-y.tsv
+3.2	Environmental context & geographic location	Yes	"Located at GLBRC at KBS in Hickory Corners, MI (42°23'41.6"" N, 85°22'23.1"" W)."	s41467-023-36515-y.tsv
+3.3	Relevant dates	Yes	Sampling dates provided in Table 1 and Fig. 1 for 2016-2017 growing seasons.	s41467-023-36515-y.tsv
+3.4	Host(s) (if applicable)	Yes	Switchgrass (Panicum virgatum L. cultivar Cave-in-rock) and miscanthus (Miscanthus x giganteus) described.	s41467-023-36515-y.tsv
+3.5	Ethics	NA	No ethics protocols required for plant sampling.	s41467-023-36515-y.tsv
+3.6	Environmental conditions & experimental treatments	Yes	Field conditions and phenological stages described throughout sampling period.	s41467-023-36515-y.tsv
+3.7	Sample collection	Yes	Detailed leaf collection methods described in Methods section.	s41467-023-36515-y.tsv
+3.8	Eligibility/selection criteria	Yes	Sample selection criteria described in Methods for plot replicates.	s41467-023-36515-y.tsv
+3.9	Analytic sample size	Yes	Sample sizes provided in Table 1 - includes numbers of successful metagenomes and metatranscriptomes.	s41467-023-36515-y.tsv
+4.0	Storage & preservation	Yes	Flash freezing in liquid nitrogen and -80°C storage described in Methods.	s41467-023-36515-y.tsv
+4.1	Shipping	NA	No shipping involved, on-site collection.	s41467-023-36515-y.tsv
+4.2	Extraction methods	Yes	Detailed DNA/RNA extraction protocols provided in Methods.	s41467-023-36515-y.tsv
+4.3	Experiments & sample processing	Yes	Sample processing methods detailed in Methods section.	s41467-023-36515-y.tsv
+4.4	Library preparation	Yes	Library preparation methods described in Methods with kit specifications.	s41467-023-36515-y.tsv
+4.5	Depletion, enrichment, & multiplexing	Yes	rRNA depletion described in Methods.	s41467-023-36515-y.tsv
+4.6	Primer selection	Yes	Sequencing methods described but not PCR-based.	s41467-023-36515-y.tsv
+5.0	Positive controls	No	No mention of positive controls.	s41467-023-36515-y.tsv
+5.1	Negative controls	No	No mention of negative controls.	s41467-023-36515-y.tsv
+6.0	Quantification & quality assessments	Yes	Quality control steps described in Methods and Fig. S1.	s41467-023-36515-y.tsv
+6.1	Contaminant mitigation & identification	Yes	Host DNA/RNA and fungal read filtering described.	s41467-023-36515-y.tsv
+6.2	Replication	Yes	Four replicate plots described with biological replication.	s41467-023-36515-y.tsv
+6.3	Sequencing methods	Yes	Illumina sequencing platforms and methods detailed in Methods.	s41467-023-36515-y.tsv
+6.4	Metabolomics, metaproteomics, & other omics methods	NA	Study focused on metagenomics/metatranscriptomics only.	s41467-023-36515-y.tsv
+6.5	Contextual & linked datasets	Yes	Links to prior 16S rRNA and ITS studies provided.	s41467-023-36515-y.tsv
+6.6	Batch effects	Yes	Sample processing and analysis standardization described.	s41467-023-36515-y.tsv
+7.0	Bioinformatics analyses	Yes	Detailed bioinformatics pipeline described in Methods and Fig. 2.	s41467-023-36515-y.tsv
+7.1	Quality control	Yes	QC steps for sequence data and MAGs described.	s41467-023-36515-y.tsv
+7.2	Normalization	Yes	Read normalization methods described in Methods.	s41467-023-36515-y.tsv
+7.3	Database information	Yes	Reference databases and versions listed in Methods.	s41467-023-36515-y.tsv
+7.4	Statistical methods	Yes	Statistical analyses detailed in Methods.	s41467-023-36515-y.tsv
+7.5	Missing data	Yes	Sample exclusion criteria described.	s41467-023-36515-y.tsv
+7.6	Bias & confounding variables	Yes	Potential biases discussed throughout Methods and Results.	s41467-023-36515-y.tsv
+7.7	Subgroup analysis	Yes	MAG clustering and subgroup analyses described.	s41467-023-36515-y.tsv
+7.8	Sensitivity analyses	Yes	Multiple analytical approaches described to verify findings.	s41467-023-36515-y.tsv
+7.9	Criteria for significance	Yes	Statistical significance criteria defined in Methods.	s41467-023-36515-y.tsv
+8.0	Metadata access	Yes	Data availability statement provided.	s41467-023-36515-y.tsv
+8.1	Host data access (if applicable)	Yes	Host genome references cited.	s41467-023-36515-y.tsv
+8.2	Raw data access	Yes	Raw data deposited in JGI portal with accession.	s41467-023-36515-y.tsv
+8.3	Processed data access	Yes	Processed data deposited in NCBI (PRJNA800073).	s41467-023-36515-y.tsv
+8.4	Software & source code access	Yes	Code available on GitHub and Zenodo.	s41467-023-36515-y.tsv
+8.5	Reproducible research	Yes	Reproducibility information provided in Methods.	s41467-023-36515-y.tsv
+9.0	Descriptive data	Yes	Sample characteristics summarized in Results.	s41467-023-36515-y.tsv
+10.0	Microbiome sequencing data	Yes	Comprehensive sequencing results presented.	s41467-023-36515-y.tsv
+10.1	Metabolomics, proteomics, & other omics data	NA	Study focused on metagenomics/metatranscriptomics only.	s41467-023-36515-y.tsv
+10.2	Statistical analyses	Yes	Statistical results reported throughout Results.	s41467-023-36515-y.tsv
+10.3	Figures, tables, & captions	Yes	Clear figures and tables with detailed captions provided.	s41467-023-36515-y.tsv
+11.0	Key results	Yes	Key findings summarized in Discussion.	s41467-023-36515-y.tsv
+11.1	Interpretation	Yes	Results interpreted in context of objectives and field.	s41467-023-36515-y.tsv
+11.2	Limitations	Yes	Study limitations discussed.	s41467-023-36515-y.tsv
+11.3	Generalizability	Yes	Generalizability discussed in Discussion.	s41467-023-36515-y.tsv
+12.0	Ongoing & future work	Yes	Future research directions outlined in Discussion.	s41467-023-36515-y.tsv
+13.0	Conclusions	Yes	Clear conclusions provided.	s41467-023-36515-y.tsv
+14.0	Acknowledgements	Yes	Detailed acknowledgements section with funding.	s41467-023-36515-y.tsv
+14.1	Funding	Yes	Funding sources and grant numbers provided.	s41467-023-36515-y.tsv
+15.0	Conflicts of interest	Yes	Authors declare no competing interests.	s41467-023-36515-y.tsv
+16.0	Supplementary data & files	Yes	Supplementary data referenced throughout.	s41467-023-36515-y.tsv
+17.0	Sample & data availability	Yes	Comprehensive data availability statement provided.	s41467-023-36515-y.tsv
+18.0	AI usage	No	No mention of AI usage in the study.	s41467-023-36515-y.tsv
+1.0	Structured or unstructured abstract	Yes	Contains unstructured abstract followed by plain language summary covering background, methods, results and significance.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+1.1	Study design	Yes	States comparative metatranscriptomic study design with 2-day time series across 3 lake types.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+1.2	Environmental & sample information	Yes	Describes freshwater lake samples from three different trophic states.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+1.3	Host information (if applicable)	NA	No host organisms involved in study.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+1.4	Experiments & omics methods	Yes	Details metatranscriptomic sequencing and analysis methods.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+1.5	Analyses & results	Yes	Reports findings on diel expression patterns between phototrophic and heterotrophic microbes.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+2.0	Background & rationale	Yes	Comprehensive introduction explaining importance of understanding microbial interactions in freshwater systems.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+2.1	Hypotheses or questions	Yes	Clear hypotheses stated about diel gene expression patterns.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+3.0	Study design	Yes	Details 2-day time series sampling every 4h in 3 contrasting lake types.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+3.1	Samples	Yes	Describes epilimnion sampling from 3 lakes with replication.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+3.2	Environmental context & geographic location	Yes	Provides coordinates and descriptions for each lake in Wisconsin.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+3.3	Relevant dates	Yes	Reports sampling dates in July 2016.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+3.4	Host(s) (if applicable)	NA	No host organisms involved.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+3.5	Ethics	NA	No permits required for water sampling.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+3.6	Environmental conditions & experimental treatments	Yes	Reports environmental parameters measured at each timepoint.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+3.7	Sample collection	Yes	Details integrated water sampling methods.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+3.8	Eligibility/selection criteria	Yes	Explains lake selection rationale based on trophic status.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+3.9	Analytic sample size	Yes	Reports triplicate samples per timepoint with some exceptions.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+4.0	Storage & preservation	Yes	Describes flash freezing and -80C storage.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+4.1	Shipping	NA	Not applicable as processed on site.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+4.2	Extraction methods	Yes	Details RNA extraction protocols.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+4.3	Experiments & sample processing	Yes	Describes sample processing and RNA isolation methods.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+4.4	Library preparation	Yes	Reports library prep methods including rRNA depletion.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+4.5	Depletion, enrichment, & multiplexing	Yes	Describes rRNA depletion approach.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+4.6	Primer selection	NA	Not applicable for metatranscriptomics.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+5.0	Positive controls	Yes	Reports use of internal RNA standard.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+5.1	Negative controls	No	No negative controls mentioned.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+6.0	Quantification & quality assessments	Yes	Details QC criteria and filtering steps.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+6.1	Contaminant mitigation & identification	Yes	Describes filtering of poor quality reads and samples.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+6.2	Replication	Yes	Reports replicate sampling and analysis approach.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+6.3	Sequencing methods	Yes	Details Illumina sequencing methods.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+6.4	Metabolomics, metaproteomics, & other omics methods	NA	Only metatranscriptomics performed.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+6.5	Contextual & linked datasets	Yes	References environmental data from NEON.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+6.6	Batch effects	No	No discussion of batch effects.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+7.0	Bioinformatics analyses	Yes	Comprehensive description of bioinformatics pipelines.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+7.1	Quality control	Yes	Details QC filtering criteria.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+7.2	Normalization	Yes	Describes normalization using internal standard.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+7.3	Database information	Yes	Reports reference databases used.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+7.4	Statistical methods	Yes	Details statistical approaches including RAIN analysis.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+7.5	Missing data	Yes	Explains handling of missing samples.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+7.6	Bias & confounding variables	Yes	Discusses technical variability.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+7.7	Subgroup analysis	Yes	Reports analysis by functional categories.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+7.8	Sensitivity analyses	No	No sensitivity analyses reported.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+7.9	Criteria for significance	Yes	States p-value cutoffs.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+8.0	Metadata access	Yes	States data available via OSF.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+8.1	Host data access (if applicable)	NA	No host data involved.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+8.2	Raw data access	Yes	States sequence data available via JGI.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+8.3	Processed data access	Yes	States processed data available via OSF.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+8.4	Software & source code access	Yes	Code available on GitHub.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+8.5	Reproducible research	Yes	Methods and code provided for reproducibility.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+9.0	Descriptive data	Yes	Reports environmental parameters for each lake.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+10.0	Microbiome sequencing data	NA	Not a microbiome sequencing study.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+10.1	Metabolomics, proteomics, & other omics data	Yes	Reports metatranscriptomic results.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+10.2	Statistical analyses	Yes	Reports statistical test results.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+10.3	Figures, tables, & captions	Yes	Clear figures and detailed captions.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+11.0	Key results	Yes	Clear summary of major findings.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+11.1	Interpretation	Yes	Thorough discussion of results and implications.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+11.2	Limitations	Yes	Discusses technical limitations.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+11.3	Generalizability	Yes	Discusses broader implications.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+12.0	Ongoing & future work	Yes	Outlines future research directions.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+13.0	Conclusions	Yes	Clear conclusions provided.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+14.0	Acknowledgements	Yes	Comprehensive acknowledgements section.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+14.1	Funding	Yes	Details funding sources.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+15.0	Conflicts of interest	Yes	States no conflicts.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+16.0	Supplementary data & files	Yes	References supplementary materials.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+17.0	Sample & data availability	Yes	Data availability statement provided.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+18.0	AI usage	No	No mention of AI usage.	Limnology   Oceanography - 2019 - Linz - Time‐series metatranscriptomes reveal conserved patterns between phototrophic and.tsv
+1.0	Structured or unstructured abstract	Yes	The manuscript contains an unstructured abstract that includes background, methods, results, and significance	s41597-024-03069-7.tsv
+1.1	Study design	Yes	Study design is stated in abstract - describes sampling from common gardens with different P. trichocarpa genotypes	s41597-024-03069-7.tsv
+1.2	Environmental & sample information	Yes	Abstract describes environmental systems (soil, rhizosphere, root endosphere, leaf samples) and Populus trichocarpa as the studied organism	s41597-024-03069-7.tsv
+1.3	Host information	Yes	Abstract mentions 27 different P. trichocarpa genotypes and the number of samples collected	s41597-024-03069-7.tsv
+1.4	Experiments & omics methods	Yes	Abstract describes metagenomics, metabolomics, transcriptomics approaches used	s41597-024-03069-7.tsv
+1.5	Analyses & results	Yes	Abstract summarizes analyses performed and describes integrated dataset results	s41597-024-03069-7.tsv
+2.0	Background & rationale	Yes	Background section provides thorough motivation and context, with citations to previous work	s41597-024-03069-7.tsv
+2.1	Hypotheses or questions	Yes	States aim to understand causal linkages between molecular events and ecosystem processes	s41597-024-03069-7.tsv
+3.0	Study design	Yes	Methods section describes observational study design across two common garden locations with different environmental conditions	s41597-024-03069-7.tsv
+3.1	Samples	Yes	Methods section describes all sample types (soil, rhizosphere, root endosphere, leaf) and their collection	s41597-024-03069-7.tsv
+3.2	Environmental context & geographic location	Yes	Detailed descriptions of both common garden locations (Corvallis and Clatskanie, OR) with soil and climate information	s41597-024-03069-7.tsv
+3.3	Relevant dates	Yes	Sampling conducted in September 2020; gardens planted in 2009	s41597-024-03069-7.tsv
+3.4	Host	Yes	Detailed description of P. trichocarpa genotypes and selection criteria in Table 1 and Methods	s41597-024-03069-7.tsv
+3.5	Ethics	No	No explicit statement about permits or ethical protocols	s41597-024-03069-7.tsv
+3.6	Environmental conditions & experimental treatments	Yes	Detailed description of soil conditions, climate, and site histories for both locations	s41597-024-03069-7.tsv
+3.7	Sample collection	Yes	Detailed methods for collecting soil, root, rhizosphere and leaf samples	s41597-024-03069-7.tsv
+3.8	Eligibility/selection criteria	Yes	Describes criteria for selecting genotypes based on metabolite profiles	s41597-024-03069-7.tsv
+3.9	Analytic sample size	Yes	Reports final numbers of samples for each data type (318 metagenomes, 98 transcriptomes, 314 metabolomics)	s41597-024-03069-7.tsv
+4.0	Storage & preservation	Yes	Methods describe sample storage on dry ice and at -80°C	s41597-024-03069-7.tsv
+4.1	Shipping	Yes	Methods mention shipping samples on dry ice/ice to laboratories	s41597-024-03069-7.tsv
+4.2	Extraction methods	Yes	Detailed extraction protocols for DNA, RNA and metabolites	s41597-024-03069-7.tsv
+4.3	Experiments & sample processing	Yes	Detailed processing methods for all sample types	s41597-024-03069-7.tsv
+4.4	Library preparation	Yes	Describes library prep methods for sequencing	s41597-024-03069-7.tsv
+4.5	Depletion, enrichment, & multiplexing	Yes	Details on host DNA depletion methods and sequencing library preparation	s41597-024-03069-7.tsv
+4.6	Primer selection	NA	Not applicable as study used shotgun sequencing rather than amplicon sequencing	s41597-024-03069-7.tsv
+5.0	Positive controls	No	No mention of positive controls	s41597-024-03069-7.tsv
+5.1	Negative controls	Yes	Mentions extraction controls for metabolomics	s41597-024-03069-7.tsv
+6.0	Quantification & quality assessments	Yes	Quality assessment methods described for all data types	s41597-024-03069-7.tsv
+6.1	Contaminant mitigation & identification	Yes	Methods for minimizing plant DNA contamination described	s41597-024-03069-7.tsv
+6.2	Replication	Yes	3 biological replicates described	s41597-024-03069-7.tsv
+6.3	Sequencing methods	Yes	Details on Illumina NovaSeq 6000 sequencing provided	s41597-024-03069-7.tsv
+6.4	Metabolomics, metaproteomics, & other omics methods	Yes	Detailed metabolomics methods provided	s41597-024-03069-7.tsv
+6.5	Contextual & linked datasets	Yes	Links provided to all associated datasets	s41597-024-03069-7.tsv
+6.6	Batch effects	Yes	Describes randomization of metabolomics sample injection order	s41597-024-03069-7.tsv
+7.0	Bioinformatics analyses	Yes	Details provided on sequence processing pipelines	s41597-024-03069-7.tsv
+7.1	Quality control	Yes	QC steps described for all data types	s41597-024-03069-7.tsv
+7.2	Normalization	Yes	Describes normalization methods where applicable	s41597-024-03069-7.tsv
+7.3	Database information	Yes	References to JGI and other databases used	s41597-024-03069-7.tsv
+7.4	Statistical methods	Yes	Statistical methods described where relevant	s41597-024-03069-7.tsv
+7.5	Missing data	Yes	Reports on missing samples e.g., 18 missing transcriptome samples	s41597-024-03069-7.tsv
+7.6	Bias & confounding variables	Yes	Discusses potential biases in measurements	s41597-024-03069-7.tsv
+7.7	Subgroup analysis	NA	No subgroup analyses reported	s41597-024-03069-7.tsv
+7.8	Sensitivity analyses	No	No sensitivity analyses reported	s41597-024-03069-7.tsv
+7.9	Criteria for significance	Yes	Describes quality thresholds used	s41597-024-03069-7.tsv
+8.0	Metadata access	Yes	Provides access info for all metadata	s41597-024-03069-7.tsv
+8.1	Host data access	Yes	References to host genome data provided	s41597-024-03069-7.tsv
+8.2	Raw data access	Yes	Accession numbers provided for raw data	s41597-024-03069-7.tsv
+8.3	Processed data access	Yes	Links to processed data provided	s41597-024-03069-7.tsv
+8.4	Software & source code access	Yes	Software versions and access provided	s41597-024-03069-7.tsv
+8.5	Reproducible research	Yes	Methods described in reproducible detail	s41597-024-03069-7.tsv
+9.0	Descriptive data	Yes	Sample characteristics summarized	s41597-024-03069-7.tsv
+10.0	Microbiome sequencing data	Yes	Sequencing results reported	s41597-024-03069-7.tsv
+10.1	Metabolomics, proteomics, & other omics data	Yes	Metabolomics results reported	s41597-024-03069-7.tsv
+10.2	Statistical analyses	Yes	Statistical results provided where relevant	s41597-024-03069-7.tsv
+10.3	Figures, tables, & captions	Yes	Clear figures and tables with detailed captions	s41597-024-03069-7.tsv
+11.0	Key results	Yes	Results summarized in relation to objectives	s41597-024-03069-7.tsv
+11.1	Interpretation	Yes	Results interpreted in context of field	s41597-024-03069-7.tsv
+11.2	Limitations	Yes	Limitations discussed including technical challenges	s41597-024-03069-7.tsv
+11.3	Generalizability	Yes	Discusses broader applications	s41597-024-03069-7.tsv
+12.0	Ongoing & future work	No	No explicit discussion of future work	s41597-024-03069-7.tsv
+13.0	Conclusions	Yes	Clear conclusions provided	s41597-024-03069-7.tsv
+14.0	Acknowledgements	Yes	Detailed acknowledgements section	s41597-024-03069-7.tsv
+14.1	Funding	Yes	Funding sources and award numbers provided	s41597-024-03069-7.tsv
+15.0	Conflicts of interest	Yes	States no competing interests	s41597-024-03069-7.tsv
+16.0	Supplementary data & files	Yes	References supplementary materials	s41597-024-03069-7.tsv
+17.0	Sample & data availability	Yes	Comprehensive data availability statement	s41597-024-03069-7.tsv
+18.0	AI usage	No	No mention of AI usage	s41597-024-03069-7.tsv
 1.0	Structured or unstructured abstract	Yes	Unstructured abstract present on p.1 including background, methods, results and conclusions	1-s2.0-S0016706121007540-main.tsv
 1.1	Study design	Yes	Study design described in abstract - laboratory incubation study with freeze-thaw cycles	1-s2.0-S0016706121007540-main.tsv
 1.2	Environmental & sample information	Yes	Abstract describes permafrost aggregates from mineral soil horizon in Toolik, Alaska	1-s2.0-S0016706121007540-main.tsv
@@ -66,6 +334,73 @@ Number	Item	Vote	Comments	Filename
 16.0	Supplementary data & files	Yes	Supplementary data referenced throughout and availability stated	1-s2.0-S0016706121007540-main.tsv
 17.0	Sample & data availability	Yes	Sample and data availability described in Data availability section	1-s2.0-S0016706121007540-main.tsv
 18.0	AI usage	No	No mention of AI usage	1-s2.0-S0016706121007540-main.tsv
+1.0	Structured or unstructured abstract	Yes	Unstructured abstract provided on page 1 containing background, methods, results, and conclusions.	s41564-020-00861-0.tsv
+1.1	Study design	Yes	"Study design described in abstract as ""genome-centric approach"" with replicated plots of field-grown switchgrass and miscanthus."	s41564-020-00861-0.tsv
+1.2	Environmental & sample information	Yes	Abstract specifies leaf microbiome samples from switchgrass and miscanthus phyllosphere.	s41564-020-00861-0.tsv
+1.3	Host information (if applicable)	Yes	Abstract identifies hosts as switchgrass and miscanthus, replicated plots described.	s41564-020-00861-0.tsv
+1.4	Experiments & omics methods	Yes	Abstract describes metagenome and metatranscriptome sequencing and curation of 40 MAGs.	s41564-020-00861-0.tsv
+1.5	Analyses & results	Yes	Abstract describes key findings including MAG classes identified, upregulated transcripts, and seasonal dynamics.	s41564-020-00861-0.tsv
+2.0	Background & rationale	Yes	Introduction provides detailed background on perennial plants, microbiomes, and research motivation with citations.	s41564-020-00861-0.tsv
+2.1	Hypotheses or questions	Yes	Research questions stated in introduction (p.2) to understand functional attributes and activities of persistent phyllosphere taxa.	s41564-020-00861-0.tsv
+3.0	Study design	Yes	Observational field study design described in Methods, including spatial and temporal aspects over 2 growing seasons.	s41564-020-00861-0.tsv
+3.1	Samples	Yes	Leaf samples described in Methods with ID scheme and collection protocol.	s41564-020-00861-0.tsv
+3.2	Environmental context & geographic location	Yes	"Located at GLBRC at KBS in Hickory Corners, MI (42°23'41.6"" N, 85°22'23.1"" W)."	s41564-020-00861-0.tsv
+3.3	Relevant dates	Yes	Sampling dates provided in Table 1 and Fig. 1 for 2016-2017 growing seasons.	s41564-020-00861-0.tsv
+3.4	Host(s) (if applicable)	Yes	Switchgrass (Panicum virgatum L. cultivar Cave-in-rock) and miscanthus (Miscanthus x giganteus) described.	s41564-020-00861-0.tsv
+3.5	Ethics	NA	No ethics protocols required for plant sampling.	s41564-020-00861-0.tsv
+3.6	Environmental conditions & experimental treatments	Yes	Field conditions and phenological stages described throughout sampling period.	s41564-020-00861-0.tsv
+3.7	Sample collection	Yes	Detailed leaf collection methods described in Methods section.	s41564-020-00861-0.tsv
+3.8	Eligibility/selection criteria	Yes	Sample selection criteria described in Methods for plot replicates.	s41564-020-00861-0.tsv
+3.9	Analytic sample size	Yes	Sample sizes provided in Table 1 - includes numbers of successful metagenomes and metatranscriptomes.	s41564-020-00861-0.tsv
+4.0	Storage & preservation	Yes	Flash freezing in liquid nitrogen and -80°C storage described in Methods.	s41564-020-00861-0.tsv
+4.1	Shipping	NA	No shipping involved, on-site collection.	s41564-020-00861-0.tsv
+4.2	Extraction methods	Yes	Detailed DNA/RNA extraction protocols provided in Methods.	s41564-020-00861-0.tsv
+4.3	Experiments & sample processing	Yes	Sample processing methods detailed in Methods section.	s41564-020-00861-0.tsv
+4.4	Library preparation	Yes	Library preparation methods described in Methods with kit specifications.	s41564-020-00861-0.tsv
+4.5	Depletion, enrichment, & multiplexing	Yes	rRNA depletion described in Methods.	s41564-020-00861-0.tsv
+4.6	Primer selection	Yes	Sequencing methods described but not PCR-based.	s41564-020-00861-0.tsv
+5.0	Positive controls	No	No mention of positive controls.	s41564-020-00861-0.tsv
+5.1	Negative controls	No	No mention of negative controls.	s41564-020-00861-0.tsv
+6.0	Quantification & quality assessments	Yes	Quality control steps described in Methods and Fig. S1.	s41564-020-00861-0.tsv
+6.1	Contaminant mitigation & identification	Yes	Host DNA/RNA and fungal read filtering described.	s41564-020-00861-0.tsv
+6.2	Replication	Yes	Four replicate plots described with biological replication.	s41564-020-00861-0.tsv
+6.3	Sequencing methods	Yes	Illumina sequencing platforms and methods detailed in Methods.	s41564-020-00861-0.tsv
+6.4	Metabolomics, metaproteomics, & other omics methods	NA	Study focused on metagenomics/metatranscriptomics only.	s41564-020-00861-0.tsv
+6.5	Contextual & linked datasets	Yes	Links to prior 16S rRNA and ITS studies provided.	s41564-020-00861-0.tsv
+6.6	Batch effects	Yes	Sample processing and analysis standardization described.	s41564-020-00861-0.tsv
+7.0	Bioinformatics analyses	Yes	Detailed bioinformatics pipeline described in Methods and Fig. 2.	s41564-020-00861-0.tsv
+7.1	Quality control	Yes	QC steps for sequence data and MAGs described.	s41564-020-00861-0.tsv
+7.2	Normalization	Yes	Read normalization methods described in Methods.	s41564-020-00861-0.tsv
+7.3	Database information	Yes	Reference databases and versions listed in Methods.	s41564-020-00861-0.tsv
+7.4	Statistical methods	Yes	Statistical analyses detailed in Methods.	s41564-020-00861-0.tsv
+7.5	Missing data	Yes	Sample exclusion criteria described.	s41564-020-00861-0.tsv
+7.6	Bias & confounding variables	Yes	Potential biases discussed throughout Methods and Results.	s41564-020-00861-0.tsv
+7.7	Subgroup analysis	Yes	MAG clustering and subgroup analyses described.	s41564-020-00861-0.tsv
+7.8	Sensitivity analyses	Yes	Multiple analytical approaches described to verify findings.	s41564-020-00861-0.tsv
+7.9	Criteria for significance	Yes	Statistical significance criteria defined in Methods.	s41564-020-00861-0.tsv
+8.0	Metadata access	Yes	Data availability statement provided.	s41564-020-00861-0.tsv
+8.1	Host data access (if applicable)	Yes	Host genome references cited.	s41564-020-00861-0.tsv
+8.2	Raw data access	Yes	Raw data deposited in JGI portal with accession.	s41564-020-00861-0.tsv
+8.3	Processed data access	Yes	Processed data deposited in NCBI (PRJNA800073).	s41564-020-00861-0.tsv
+8.4	Software & source code access	Yes	Code available on GitHub and Zenodo.	s41564-020-00861-0.tsv
+8.5	Reproducible research	Yes	Reproducibility information provided in Methods.	s41564-020-00861-0.tsv
+9.0	Descriptive data	Yes	Sample characteristics summarized in Results.	s41564-020-00861-0.tsv
+10.0	Microbiome sequencing data	Yes	Comprehensive sequencing results presented.	s41564-020-00861-0.tsv
+10.1	Metabolomics, proteomics, & other omics data	NA	Study focused on metagenomics/metatranscriptomics only.	s41564-020-00861-0.tsv
+10.2	Statistical analyses	Yes	Statistical results reported throughout Results.	s41564-020-00861-0.tsv
+10.3	Figures, tables, & captions	Yes	Clear figures and tables with detailed captions provided.	s41564-020-00861-0.tsv
+11.0	Key results	Yes	Key findings summarized in Discussion.	s41564-020-00861-0.tsv
+11.1	Interpretation	Yes	Results interpreted in context of objectives and field.	s41564-020-00861-0.tsv
+11.2	Limitations	Yes	Study limitations discussed.	s41564-020-00861-0.tsv
+11.3	Generalizability	Yes	Generalizability discussed in Discussion.	s41564-020-00861-0.tsv
+12.0	Ongoing & future work	Yes	Future research directions outlined in Discussion.	s41564-020-00861-0.tsv
+13.0	Conclusions	Yes	Clear conclusions provided.	s41564-020-00861-0.tsv
+14.0	Acknowledgements	Yes	Detailed acknowledgements section with funding.	s41564-020-00861-0.tsv
+14.1	Funding	Yes	Funding sources and grant numbers provided.	s41564-020-00861-0.tsv
+15.0	Conflicts of interest	Yes	Authors declare no competing interests.	s41564-020-00861-0.tsv
+16.0	Supplementary data & files	Yes	Supplementary data referenced throughout.	s41564-020-00861-0.tsv
+17.0	Sample & data availability	Yes	Comprehensive data availability statement provided.	s41564-020-00861-0.tsv
+18.0	AI usage	No	No mention of AI usage in the study.	s41564-020-00861-0.tsv
 1.0	Structured or unstructured abstract	Yes	Brief unstructured abstract present describing key aspects of study	bell-et-al-2020-metatranscriptomic-sequencing-of-a-cyanobacterial-soil-surface-consortium-with-and-without-a-diverse.tsv
 1.1	Study design	Yes	Study design described in abstract and methods 	bell-et-al-2020-metatranscriptomic-sequencing-of-a-cyanobacterial-soil-surface-consortium-with-and-without-a-diverse.tsv
 1.2	Environmental & sample information	Yes	Soil surface consortium and soil samples described	bell-et-al-2020-metatranscriptomic-sequencing-of-a-cyanobacterial-soil-surface-consortium-with-and-without-a-diverse.tsv
@@ -200,6 +535,140 @@ Number	Item	Vote	Comments	Filename
 16.0	Supplementary data & files	Yes	Supplementary figures and tables provided	alteio-et-al-2020-complementary-metagenomic-approaches-improve-reconstruction-of-microbial-diversity-in-a-forest-soil.tsv
 17.0	Sample & data availability	Yes	Data availability statement with accession numbers	alteio-et-al-2020-complementary-metagenomic-approaches-improve-reconstruction-of-microbial-diversity-in-a-forest-soil.tsv
 18.0	AI usage	NA	Published in 2020, before AI usage reporting requirements	alteio-et-al-2020-complementary-metagenomic-approaches-improve-reconstruction-of-microbial-diversity-in-a-forest-soil.tsv
+1.0	Structured or unstructured abstract	Yes	Unstructured abstract present with background, methods, results, and conclusions	microorganisms-09-00357-v2.tsv
+1.1	Study design	Yes	"Study design stated in abstract as ""incubation experiment"""	microorganisms-09-00357-v2.tsv
+1.2	Environmental & sample information	Yes	Describes soil and maize leaf samples from agricultural field	microorganisms-09-00357-v2.tsv
+1.3	Host information (if applicable)	NA	No host organisms involved in study	microorganisms-09-00357-v2.tsv
+1.4	Experiments & omics methods	Yes	16S rRNA gene metabarcoding described in abstract	microorganisms-09-00357-v2.tsv
+1.5	Analyses & results	Yes	Abstract describes analysis of bacterial diversity and correlation with decomposition rates	microorganisms-09-00357-v2.tsv
+2.0	Background & rationale	Yes	Introduction provides background on litter decomposition and microbial roles with citations	microorganisms-09-00357-v2.tsv
+2.1	Hypotheses or questions	Yes	Two hypotheses stated in introduction regarding bacterial diversity correlation and invasion	microorganisms-09-00357-v2.tsv
+3.0	Study design	Yes	Detailed experimental design described in Methods section 2.2	microorganisms-09-00357-v2.tsv
+3.1	Samples	Yes	Soil and maize leaf samples described in Methods section 2.1	microorganisms-09-00357-v2.tsv
+3.2	Environmental context & geographic location	Yes	Location and soil characteristics provided in Methods section 2.1	microorganisms-09-00357-v2.tsv
+3.3	Relevant dates	Yes	Sampling date (October 2015) provided in Methods section 2.1	microorganisms-09-00357-v2.tsv
+3.4	Host(s) (if applicable)	NA	No host organisms involved in study	microorganisms-09-00357-v2.tsv
+3.5	Ethics	No	No ethics statements or permit information provided	microorganisms-09-00357-v2.tsv
+3.6	Environmental conditions & experimental treatments	Yes	Incubation conditions and treatments detailed in Methods section 2.2	microorganisms-09-00357-v2.tsv
+3.7	Sample collection	Yes	Sampling methods described in Methods section 2.1	microorganisms-09-00357-v2.tsv
+3.8	Eligibility/selection criteria	No	No explicit inclusion/exclusion criteria stated	microorganisms-09-00357-v2.tsv
+3.9	Analytic sample size	Yes	Three replicates per treatment detailed in Methods	microorganisms-09-00357-v2.tsv
+4.0	Storage & preservation	Yes	Storage conditions (-20°C) described in Methods	microorganisms-09-00357-v2.tsv
+4.1	Shipping	No	No shipping information provided	microorganisms-09-00357-v2.tsv
+4.2	Extraction methods	Yes	DNA extraction methods detailed in Methods section 2.3	microorganisms-09-00357-v2.tsv
+4.3	Experiments & sample processing	Yes	Sample processing described in Methods sections 2.2-2.3	microorganisms-09-00357-v2.tsv
+4.4	Library preparation	Yes	Detailed library preparation protocol in Methods section 2.3	microorganisms-09-00357-v2.tsv
+4.5	Depletion, enrichment, & multiplexing	Yes	Indexing and multiplexing described in Methods section 2.3	microorganisms-09-00357-v2.tsv
+4.6	Primer selection	Yes	Primer information provided in Methods section 2.3 and Table S2	microorganisms-09-00357-v2.tsv
+5.0	Positive controls	No	No positive controls described	microorganisms-09-00357-v2.tsv
+5.1	Negative controls	Yes	Extraction and PCR controls mentioned in Methods section 2.3	microorganisms-09-00357-v2.tsv
+6.0	Quantification & quality assessments	Yes	DNA quantification and quality assessment methods described in Methods section 2.3	microorganisms-09-00357-v2.tsv
+6.1	Contaminant mitigation & identification	Yes	Quality control steps described in Methods section 2.4	microorganisms-09-00357-v2.tsv
+6.2	Replication	Yes	Three replicates per treatment described throughout	microorganisms-09-00357-v2.tsv
+6.3	Sequencing methods	Yes	Sequencing platform and chemistry detailed in Methods section 2.3	microorganisms-09-00357-v2.tsv
+6.4	Metabolomics, metaproteomics, & other omics methods	NA	No other omics methods used	microorganisms-09-00357-v2.tsv
+6.5	Contextual & linked datasets	Yes	Associated data available in supplementary materials	microorganisms-09-00357-v2.tsv
+6.6	Batch effects	No	No discussion of batch effects	microorganisms-09-00357-v2.tsv
+7.0	Bioinformatics analyses	Yes	Detailed bioinformatics pipeline described in Methods section 2.4	microorganisms-09-00357-v2.tsv
+7.1	Quality control	Yes	Quality filtering parameters described in Methods section 2.4	microorganisms-09-00357-v2.tsv
+7.2	Normalization	Yes	Rarefaction to 33,899 reads described in Methods section 2.4	microorganisms-09-00357-v2.tsv
+7.3	Database information	Yes	SILVA database (release 132) referenced in Methods section 2.4	microorganisms-09-00357-v2.tsv
+7.4	Statistical methods	Yes	Statistical analyses detailed in Methods section 2.4	microorganisms-09-00357-v2.tsv
+7.5	Missing data	No	No discussion of missing data handling	microorganisms-09-00357-v2.tsv
+7.6	Bias & confounding variables	Yes	Potential biases discussed in Discussion	microorganisms-09-00357-v2.tsv
+7.7	Subgroup analysis	Yes	Subgroup analyses described in Methods section 2.4	microorganisms-09-00357-v2.tsv
+7.8	Sensitivity analyses	No	No sensitivity analyses reported	microorganisms-09-00357-v2.tsv
+7.9	Criteria for significance	Yes	Statistical significance criteria described in Methods section 2.4	microorganisms-09-00357-v2.tsv
+8.0	Metadata access	Yes	Data accessibility statement provided	microorganisms-09-00357-v2.tsv
+8.1	Host data access (if applicable)	NA	No host data involved	microorganisms-09-00357-v2.tsv
+8.2	Raw data access	Yes	Raw sequence data available in NCBI SRA (SRP127524)	microorganisms-09-00357-v2.tsv
+8.3	Processed data access	Yes	Processed data available in supplementary materials	microorganisms-09-00357-v2.tsv
+8.4	Software & source code access	Yes	Software versions and parameters provided throughout Methods	microorganisms-09-00357-v2.tsv
+8.5	Reproducible research	Yes	Detailed methods enable reproducibility	microorganisms-09-00357-v2.tsv
+9.0	Descriptive data	Yes	Sample characteristics described in Results	microorganisms-09-00357-v2.tsv
+10.0	Microbiome sequencing data	Yes	Sequencing results reported in section 3.3	microorganisms-09-00357-v2.tsv
+10.1	Metabolomics, proteomics, & other omics data	NA	No other omics data	microorganisms-09-00357-v2.tsv
+10.2	Statistical analyses	Yes	Statistical results reported throughout Results	microorganisms-09-00357-v2.tsv
+10.3	Figures, tables, & captions	Yes	Multiple figures and tables with detailed captions	microorganisms-09-00357-v2.tsv
+11.0	Key results	Yes	Key findings summarized in Discussion	microorganisms-09-00357-v2.tsv
+11.1	Interpretation	Yes	Results interpreted in context of hypotheses	microorganisms-09-00357-v2.tsv
+11.2	Limitations	Yes	Study limitations discussed in Discussion	microorganisms-09-00357-v2.tsv
+11.3	Generalizability	Yes	Generalizability discussed in Discussion	microorganisms-09-00357-v2.tsv
+12.0	Ongoing & future work	Yes	Future research directions discussed in Discussion	microorganisms-09-00357-v2.tsv
+13.0	Conclusions	Yes	Clear conclusions provided	microorganisms-09-00357-v2.tsv
+14.0	Acknowledgements	Yes	Acknowledgements section present	microorganisms-09-00357-v2.tsv
+14.1	Funding	Yes	Funding information provided	microorganisms-09-00357-v2.tsv
+15.0	Conflicts of interest	Yes	Conflicts of interest statement included	microorganisms-09-00357-v2.tsv
+16.0	Supplementary data & files	Yes	Supplementary materials referenced throughout	microorganisms-09-00357-v2.tsv
+17.0	Sample & data availability	Yes	Data availability statement with accession numbers	microorganisms-09-00357-v2.tsv
+18.0	AI usage	No	No mention of AI usage	microorganisms-09-00357-v2.tsv
+1.0	Structured or unstructured abstract	Yes	Contains unstructured abstract with clear background, methods, and results sections, p.1	s40168-020-00889-8.tsv
+1.1	Study design	Yes	Clearly describes sampling of two biocrust types and time series design in abstract and methods, p.1	s40168-020-00889-8.tsv
+1.2	Environmental & sample information	Yes	Details biocrust samples from Mojave Desert with specific GPS coordinates (34.1736 N, 115.3888 W), p.1	s40168-020-00889-8.tsv
+1.3	Host information (if applicable)	NA	Not applicable - study examines microbial communities directly	s40168-020-00889-8.tsv
+1.4	Experiments & omics methods	Yes	Details RNA extraction, rRNA depletion and NovaSeq sequencing methods, p.1	s40168-020-00889-8.tsv
+1.5	Analyses & results	Yes	Reports sequencing stats and effectiveness of rRNA depletion, p.1-2	s40168-020-00889-8.tsv
+2.0	Background & rationale	Yes	Introduces importance of studying biological soil crusts and their response to wetting, p.1	s40168-020-00889-8.tsv
+2.1	Hypotheses or questions	Yes	Aims to understand gene expression patterns after reactivation by water addition, p.1	s40168-020-00889-8.tsv
+3.0	Study design	Yes	Details experimental setup with replicate samples and timed sampling, p.1	s40168-020-00889-8.tsv
+3.1	Samples	Yes	Describes 5 cm² biocrust samples and collection procedures, p.1	s40168-020-00889-8.tsv
+3.2	Environmental context & geographic location	Yes	Provides specific GPS coordinates and location in Mojave Desert, p.1	s40168-020-00889-8.tsv
+3.3	Relevant dates	Yes	Indicates when samples were collected and processed, p.1	s40168-020-00889-8.tsv
+3.4	Host(s) (if applicable)	NA	Not applicable - direct microbial community study	s40168-020-00889-8.tsv
+3.5	Ethics	Yes	Mentions BLM permitting in acknowledgments	s40168-020-00889-8.tsv
+3.6	Environmental conditions & experimental treatments	Yes	Describes ambient lab conditions and wetting treatment protocol, p.1	s40168-020-00889-8.tsv
+3.7	Sample collection	Yes	Details sampling procedures and storage methods, p.1	s40168-020-00889-8.tsv
+3.8	Eligibility/selection criteria	Yes	Specifies 5 cm² sample size and incubation conditions, p.1	s40168-020-00889-8.tsv
+3.9	Analytic sample size	Yes	Reports total of 10 samples used, p.1	s40168-020-00889-8.tsv
+4.0	Storage & preservation	Yes	Reports storage at -80°C, p.1	s40168-020-00889-8.tsv
+4.1	Shipping	No	No shipping information provided	s40168-020-00889-8.tsv
+4.2	Extraction methods	Yes	Details RNA extraction kit and protocol, p.1	s40168-020-00889-8.tsv
+4.3	Experiments & sample processing	Yes	Describes rRNA depletion and library prep methods, p.1	s40168-020-00889-8.tsv
+4.4	Library preparation	Yes	Details TruSeq library preparation protocol, p.1	s40168-020-00889-8.tsv
+4.5	Depletion, enrichment, & multiplexing	Yes	Describes QIAseq FastSelect rRNA depletion methods, p.1	s40168-020-00889-8.tsv
+4.6	Primer selection	NA	Not applicable for RNA-seq	s40168-020-00889-8.tsv
+5.0	Positive controls	No	No positive controls mentioned	s40168-020-00889-8.tsv
+5.1	Negative controls	No	No negative controls mentioned	s40168-020-00889-8.tsv
+6.0	Quantification & quality assessments	Yes	Reports qPCR quantification of libraries, p.1	s40168-020-00889-8.tsv
+6.1	Contaminant mitigation & identification	Yes	Describes read filtering and quality control steps, p.1	s40168-020-00889-8.tsv
+6.2	Replication	Yes	Multiple samples collected for each condition	s40168-020-00889-8.tsv
+6.3	Sequencing methods	Yes	Details NovaSeq parameters and run recipe, p.1	s40168-020-00889-8.tsv
+6.4	Metabolomics, metaproteomics, & other omics methods	NA	RNA-seq only	s40168-020-00889-8.tsv
+6.5	Contextual & linked datasets	No	No additional linked datasets mentioned	s40168-020-00889-8.tsv
+6.6	Batch effects	No	No discussion of batch effects	s40168-020-00889-8.tsv
+7.0	Bioinformatics analyses	Yes	Details assembly and mapping methods using BBDuk and MEGAHIT, p.1	s40168-020-00889-8.tsv
+7.1	Quality control	Yes	Describes read filtering criteria and QC steps, p.1	s40168-020-00889-8.tsv
+7.2	Normalization	No	No normalization methods described	s40168-020-00889-8.tsv
+7.3	Database information	Yes	References SILVA database for rRNA analysis, p.3	s40168-020-00889-8.tsv
+7.4	Statistical methods	NA	Descriptive statistics only for this data announcement	s40168-020-00889-8.tsv
+7.5	Missing data	No	No discussion of missing data handling	s40168-020-00889-8.tsv
+7.6	Bias & confounding variables	No	No discussion of potential biases	s40168-020-00889-8.tsv
+7.7	Subgroup analysis	NA	Not applicable for data announcement	s40168-020-00889-8.tsv
+7.8	Sensitivity analyses	NA	Not applicable for data announcement	s40168-020-00889-8.tsv
+7.9	Criteria for significance	NA	Not applicable for data announcement	s40168-020-00889-8.tsv
+8.0	Metadata access	Yes	Provides BioSample and BioProject accession numbers in Table 1	s40168-020-00889-8.tsv
+8.1	Host data access (if applicable)	NA	Not applicable	s40168-020-00889-8.tsv
+8.2	Raw data access	Yes	Data available via NCBI BioProject IDs listed in Table 1	s40168-020-00889-8.tsv
+8.3	Processed data access	Yes	Assemblies accessible through stated repositories	s40168-020-00889-8.tsv
+8.4	Software & source code access	Yes	Lists software versions and references, p.1	s40168-020-00889-8.tsv
+8.5	Reproducible research	Yes	Methods detailed enough for reproduction	s40168-020-00889-8.tsv
+9.0	Descriptive data	Yes	Sample characteristics provided in text and Table 1	s40168-020-00889-8.tsv
+10.0	Microbiome sequencing data	Yes	Reports read counts and assembly statistics	s40168-020-00889-8.tsv
+10.1	Metabolomics, proteomics, & other omics data	NA	RNA-seq only	s40168-020-00889-8.tsv
+10.2	Statistical analyses	NA	Not applicable for data announcement	s40168-020-00889-8.tsv
+10.3	Figures, tables, & captions	Yes	Table 1 provides comprehensive sequencing metrics	s40168-020-00889-8.tsv
+11.0	Key results	Yes	Reports sequencing outputs and rRNA content	s40168-020-00889-8.tsv
+11.1	Interpretation	Yes	Discusses implications of rRNA content for future analyses	s40168-020-00889-8.tsv
+11.2	Limitations	Yes	Notes ineffective rRNA depletion, p.3	s40168-020-00889-8.tsv
+11.3	Generalizability	No	Generalizability not discussed	s40168-020-00889-8.tsv
+12.0	Ongoing & future work	No	Future work not discussed	s40168-020-00889-8.tsv
+13.0	Conclusions	No	No explicit conclusions section	s40168-020-00889-8.tsv
+14.0	Acknowledgements	Yes	Includes funding sources and facility acknowledgments	s40168-020-00889-8.tsv
+14.1	Funding	Yes	Lists grant numbers and funding sources	s40168-020-00889-8.tsv
+15.0	Conflicts of interest	Yes	"States ""The authors declare no conflict of interest"", p.1"	s40168-020-00889-8.tsv
+16.0	Supplementary data & files	No	No supplementary files mentioned	s40168-020-00889-8.tsv
+17.0	Sample & data availability	Yes	Clear data availability through NCBI and JGI portals	s40168-020-00889-8.tsv
+18.0	AI usage	No	No AI methods mentioned	s40168-020-00889-8.tsv
 1.0	Structured or unstructured abstract	Yes	Unstructured abstract present on pg 15783 containing background, methods, results, and conclusions	acp-23-15783-2023.tsv
 1.1	Study design	Yes	"Study design described in abstract: ""large-scale survey of potential INP sources in tundra terrain"""	acp-23-15783-2023.tsv
 1.2	Environmental & sample information	Yes	Abstract describes specific environmental system (thermokarst regions, tundra terrain) and sample types (permafrost, active layer, ice wedge, vegetation, water, aerosol)	acp-23-15783-2023.tsv
@@ -401,6 +870,207 @@ Number	Item	Vote	Comments	Filename
 16.0	Supplementary data & files	Yes	Supplementary data referenced	2022.12.12.520098v2.full.tsv
 17.0	Sample & data availability	Yes	Data availability described with repository links	2022.12.12.520098v2.full.tsv
 18.0	AI usage	No	No mention of AI usage	2022.12.12.520098v2.full.tsv
+1.0	Structured or unstructured abstract	Yes	Contains structured abstract with background, methods, results, conclusions and significance, p.1149	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+1.1	Study design	Yes	"Abstract states ""utilized fabricated ecosystem (EcoFAB) devices to grow the model grass Brachypodium distachyon in three distinct media across four laboratories"", p.1149"	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+1.2	Environmental & sample information	Yes	"Abstract describes three media conditions studied: ""phosphate-sufficient and -deficient mineral media"" and ""complex, sterile soil extract"", p.1149"	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+1.3	Host information (if applicable)	Yes	Abstract specifies use of model grass Brachypodium distachyon, p.1149	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+1.4	Experiments & omics methods	Yes	Abstract mentions metabolic profiles, tissue weight and phosphate content measurements, p.1149	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+1.5	Analyses & results	Yes	Abstract reports key findings: consistent measurements across labs, distinct profiles between treatments, and depletion of metabolites, p.1149	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+2.0	Background & rationale	Yes	Introduction provides detailed background on plant-soil interactions and challenges in studying them, pp.1149-1150	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+2.1	Hypotheses or questions	Yes	"States hypothesis: ""We hypothesized that the use of the EcoFAB system produces data reproducible across laboratories, and that B. distachyon grown in the various media would result in distinct metabolic and morphological changes."" p.1152"	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+3.0	Study design	Yes	Detailed experimental design described in Methods section including observational measurements and treatments, pp.1150-1152	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+3.1	Samples	Yes	Describes sample types including root tissue, shoot tissue, and exudates, p.1151	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+3.2	Environmental context & geographic location	Yes	Laboratory conditions detailed including light/dark cycles, temperature, and growth chamber specifications, p.1151	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+3.3	Relevant dates	No	Specific dates of experiment not provided	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+3.4	Host(s) (if applicable)	Yes	B. distachyon Bd21-3 strain specified with citation, p.1150	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+3.5	Ethics	NA	Not applicable for plant study	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+3.6	Environmental conditions & experimental treatments	Yes	Growth conditions and media compositions detailed in Methods, pp.1150-1151	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+3.7	Sample collection	Yes	Sample collection procedures described for tissue and exudates, p.1151	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+3.8	Eligibility/selection criteria	Yes	Reports selection of seedlings of comparable size distributed randomly to EcoFABs, p.1151	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+3.9	Analytic sample size	Yes	Reports quadruplicate samples for each condition, p.1151	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+4.0	Storage & preservation	Yes	Describes freezing of samples at -80°C, p.1152	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+4.1	Shipping	Yes	Mentions shipping of samples to laboratory 1 for analysis, p.1152	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+4.2	Extraction methods	Yes	Details metabolite extraction methods, p.1152	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+4.3	Experiments & sample processing	Yes	Sample processing methods detailed including homogenization and extraction, p.1152	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+4.4	Library preparation	NA	Not applicable - no sequencing performed	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+4.5	Depletion, enrichment, & multiplexing	NA	Not applicable - no sequencing performed	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+4.6	Primer selection	NA	Not applicable - no sequencing performed	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+5.0	Positive controls	Yes	Control EcoFABs without plants described, p.1151	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+5.1	Negative controls	Yes	Control EcoFABs without plants and sterility monitoring described, p.1151	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+6.0	Quantification & quality assessments	Yes	Details LC-MS quality control methods and standards, p.1152	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+6.1	Contaminant mitigation & identification	Yes	Reports monitoring of sterility and exclusion of contaminated chambers, p.1151	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+6.2	Replication	Yes	Reports quadruplicate biological replicates, p.1151	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+6.3	Sequencing methods	NA	Not applicable - no sequencing performed	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+6.4	Metabolomics, metaproteomics, & other omics methods	Yes	Detailed LC-MS methods provided, pp.1152-1153	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+6.5	Contextual & linked datasets	Yes	Root imaging and phosphate content measurements described alongside metabolomics data, pp.1151-1152	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+6.6	Batch effects	Yes	Discusses interlaboratory variation and standardization efforts, p.1155	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+7.0	Bioinformatics analyses	Yes	Metabolite identification and statistical analysis methods detailed, pp.1152-1153	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+7.1	Quality control	Yes	Describes QC samples, standards, and data filtering, p.1152	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+7.2	Normalization	Yes	Details normalization of metabolite peak heights, p.1152	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+7.3	Database information	Yes	References Metabolite Atlas and standards library, p.1152	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+7.4	Statistical methods	Yes	Details statistical analyses including PCA, clustering, and ANOVA, pp.1152-1153	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+7.5	Missing data	No	No explicit discussion of missing data handling	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+7.6	Bias & confounding variables	Yes	Discusses potential sources of variation between laboratories, p.1155	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+7.7	Subgroup analysis	Yes	Reports analysis by experimental condition and laboratory, p.1155	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+7.8	Sensitivity analyses	No	No explicit sensitivity analyses reported	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+7.9	Criteria for significance	Yes	Reports use of ANOVA with α=0.05, p.1153	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+8.0	Metadata access	Yes	Supporting information tables described, p.1160	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+8.1	Host data access (if applicable)	Yes	References B. distachyon strain and citation, p.1150	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+8.2	Raw data access	Yes	Supplementary data tables referenced, p.1160	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+8.3	Processed data access	Yes	Processed data provided in supplementary tables, p.1160	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+8.4	Software & source code access	Yes	Analysis software and versions specified, p.1152	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+8.5	Reproducible research	Yes	Detailed methods provided for reproducibility, extensive protocol sharing between labs described	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+9.0	Descriptive data	Yes	Characteristics of samples and experimental conditions reported throughout Results	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+10.0	Microbiome sequencing data	NA	Not applicable - no microbiome sequencing performed	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+10.1	Metabolomics, proteomics, & other omics data	Yes	Comprehensive metabolomics results reported, pp.1153-1157	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+10.2	Statistical analyses	Yes	Statistical analysis results reported throughout Results section	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+10.3	Figures, tables, & captions	Yes	Multiple clear figures with detailed captions provided	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+11.0	Key results	Yes	Key findings summarized in relation to objectives, pp.1157-1158	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+11.1	Interpretation	Yes	Results interpreted in context of plant biology and methodology, pp.1157-1159	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+11.2	Limitations	Yes	Discusses limitations of experimental setup, p.1158	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+11.3	Generalizability	Yes	Discusses applicability to other plant-environment interaction studies, p.1159	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+12.0	Ongoing & future work	Yes	Future research directions discussed, p.1159	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+13.0	Conclusions	Yes	Clear conclusions provided about reproducibility and plant responses, p.1159	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+14.0	Acknowledgements	Yes	Detailed acknowledgements including funding sources, p.1158	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+14.1	Funding	Yes	Funding sources and award information provided, p.1158	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+15.0	Conflicts of interest	No	No explicit conflicts of interest statement provided	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+16.0	Supplementary data & files	Yes	Supporting information described, p.1160	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+17.0	Sample & data availability	Yes	Availability of supplementary data stated, p.1160	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+18.0	AI usage	No	No mention of AI usage (article predates widespread AI use)	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
+1.0	Structured or unstructured abstract	Yes	The paper has an unstructured abstract that includes background, methods, results, and significance on p.2128	s41564-022-01266-x.tsv
+1.1	Study design	Yes	Abstract states study design - multi-omics analysis using standardized protocols across 880 samples	s41564-022-01266-x.tsv
+1.2	Environmental & sample information	Yes	Abstract describes environmental systems (e.g., soil, marine, freshwater) and sample types studied	s41564-022-01266-x.tsv
+1.3	Host information	Yes	Abstract mentions various hosts (e.g., plants, animals) and number of samples (880)	s41564-022-01266-x.tsv
+1.4	Experiments & omics methods	Yes	Abstract describes experimental strategies including amplicon sequencing, metagenomics, and metabolomics approaches	s41564-022-01266-x.tsv
+1.5	Analyses & results	Yes	Abstract includes key analyses (e.g., metabolite diversity, turnover patterns) and significant findings	s41564-022-01266-x.tsv
+2.0	Background & rationale	Yes	Introduction (p.2128-2129) provides comprehensive background and motivation for the study	s41564-022-01266-x.tsv
+2.1	Hypotheses or questions	Yes	States research questions and hypotheses about metabolite distribution patterns on p.2130-2131	s41564-022-01266-x.tsv
+3.0	Study design	Yes	Methods section describes observational study design spanning multiple environments and sample types	s41564-022-01266-x.tsv
+3.1	Samples	Yes	Sample collection and types described in Methods p.2137-2138	s41564-022-01266-x.tsv
+3.2	Environmental context & geographic location	Yes	Geographic locations provided in Fig 1b and detailed in Methods/Supplementary materials	s41564-022-01266-x.tsv
+3.3	Relevant dates	Yes	Sample collection dates noted in Methods section	s41564-022-01266-x.tsv
+3.4	Host(s)	Yes	Host information detailed in Methods and Supplementary Table 1	s41564-022-01266-x.tsv
+3.5	Ethics	Yes	Ethics/permit information provided in Methods p.2144-2145	s41564-022-01266-x.tsv
+3.6	Environmental conditions & experimental treatments	Yes	Environmental conditions described in Methods and Supplementary materials	s41564-022-01266-x.tsv
+3.7	Sample collection	Yes	Detailed sample collection protocols in Methods p.2137-2138	s41564-022-01266-x.tsv
+3.8	Eligibility/selection criteria	Yes	Sample selection criteria described in Methods p.2137	s41564-022-01266-x.tsv
+3.9	Analytic sample size	Yes	Final sample sizes reported throughout Results and in figures	s41564-022-01266-x.tsv
+4.0	Storage & preservation	Yes	Sample storage protocols described in Methods p.2137-2138	s41564-022-01266-x.tsv
+4.1	Shipping	Yes	Sample shipping details provided in Methods	s41564-022-01266-x.tsv
+4.2	Extraction methods	Yes	Detailed extraction protocols in Methods p.2139-2140	s41564-022-01266-x.tsv
+4.3	Experiments & sample processing	Yes	Processing methods detailed in Methods p.2139-2142	s41564-022-01266-x.tsv
+4.4	Library preparation	Yes	Sequencing library preparation protocols in Methods p.2140-2141	s41564-022-01266-x.tsv
+4.5	Depletion, enrichment, & multiplexing	Yes	Library preparation details including multiplexing in Methods p.2140-2141	s41564-022-01266-x.tsv
+4.6	Primer selection	Yes	Primer sequences and selection criteria detailed in Methods p.2140	s41564-022-01266-x.tsv
+5.0	Positive controls	Yes	Control samples described in Methods p.2139	s41564-022-01266-x.tsv
+5.1	Negative controls	Yes	Negative controls described in Methods p.2139	s41564-022-01266-x.tsv
+6.0	Quantification & quality assessments	Yes	Quality control procedures detailed in Methods p.2141-2142	s41564-022-01266-x.tsv
+6.1	Contaminant mitigation & identification	Yes	Contamination control procedures described in Methods	s41564-022-01266-x.tsv
+6.2	Replication	Yes	Replication strategy described in Methods and Results	s41564-022-01266-x.tsv
+6.3	Sequencing methods	Yes	Detailed sequencing protocols in Methods p.2140-2142	s41564-022-01266-x.tsv
+6.4	Metabolomics, metaproteomics, & other omics methods	Yes	Comprehensive metabolomics methods described p.2137-2139	s41564-022-01266-x.tsv
+6.5	Contextual & linked datasets	Yes	Linked datasets described and referenced throughout manuscript	s41564-022-01266-x.tsv
+6.6	Batch effects	Yes	Batch effects addressed in Methods and study design	s41564-022-01266-x.tsv
+7.0	Bioinformatics analyses	Yes	Detailed bioinformatics protocols in Methods p.2141-2143	s41564-022-01266-x.tsv
+7.1	Quality control	Yes	Quality control procedures detailed in Methods	s41564-022-01266-x.tsv
+7.2	Normalization	Yes	Data normalization procedures described in Methods	s41564-022-01266-x.tsv
+7.3	Database information	Yes	All databases described and cited in Methods	s41564-022-01266-x.tsv
+7.4	Statistical methods	Yes	Comprehensive statistical methods described p.2142-2143	s41564-022-01266-x.tsv
+7.5	Missing data	Yes	Handling of missing data addressed in Methods	s41564-022-01266-x.tsv
+7.6	Bias & confounding variables	Yes	Potential biases discussed in Methods and Discussion	s41564-022-01266-x.tsv
+7.7	Subgroup analysis	Yes	Subgroup analyses described in Results	s41564-022-01266-x.tsv
+7.8	Sensitivity analyses	Yes	Sensitivity analyses mentioned in Results and Methods	s41564-022-01266-x.tsv
+7.9	Criteria for significance	Yes	Significance criteria defined in Methods p.2142-2143	s41564-022-01266-x.tsv
+8.0	Metadata access	Yes	Metadata access information provided in Data Availability section	s41564-022-01266-x.tsv
+8.1	Host data access	Yes	Host data access information provided in Data Availability section	s41564-022-01266-x.tsv
+8.2	Raw data access	Yes	Raw data access detailed in Data Availability section	s41564-022-01266-x.tsv
+8.3	Processed data access	Yes	Processed data access detailed in Data Availability section	s41564-022-01266-x.tsv
+8.4	Software & source code access	Yes	Code availability detailed in Methods and Data Availability sections	s41564-022-01266-x.tsv
+8.5	Reproducible research	Yes	Reproducibility addressed throughout Methods section	s41564-022-01266-x.tsv
+9.0	Descriptive data	Yes	Sample characteristics summarized in Results and figures	s41564-022-01266-x.tsv
+10.0	Microbiome sequencing data	Yes	Sequencing results presented throughout Results section	s41564-022-01266-x.tsv
+10.1	Metabolomics, proteomics, & other omics data	Yes	Metabolomics results presented throughout Results section	s41564-022-01266-x.tsv
+10.2	Statistical analyses	Yes	Statistical analysis results presented throughout Results	s41564-022-01266-x.tsv
+10.3	Figures, tables, & captions	Yes	Comprehensive figures and tables with detailed captions	s41564-022-01266-x.tsv
+11.0	Key results	Yes	Key findings summarized in Results and Discussion	s41564-022-01266-x.tsv
+11.1	Interpretation	Yes	Results interpreted in Discussion section	s41564-022-01266-x.tsv
+11.2	Limitations	Yes	Study limitations discussed in Discussion p.2136	s41564-022-01266-x.tsv
+11.3	Generalizability	Yes	Generalizability discussed in Discussion	s41564-022-01266-x.tsv
+12.0	Ongoing & future work	Yes	Future directions discussed in Discussion	s41564-022-01266-x.tsv
+13.0	Conclusions	Yes	Clear conclusions presented at end of Discussion	s41564-022-01266-x.tsv
+14.0	Acknowledgements	Yes	Comprehensive acknowledgements section p.2148-2149	s41564-022-01266-x.tsv
+14.1	Funding	Yes	Funding information provided p.2148-2149	s41564-022-01266-x.tsv
+15.0	Conflicts of interest	Yes	Conflicts of interest stated p.2149	s41564-022-01266-x.tsv
+16.0	Supplementary data & files	Yes	Supplementary materials referenced throughout	s41564-022-01266-x.tsv
+17.0	Sample & data availability	Yes	Detailed data availability statement provided	s41564-022-01266-x.tsv
+18.0	AI usage	NA	No mention of AI usage in research methods	s41564-022-01266-x.tsv
+1.0	Structured or unstructured abstract	Yes	Unstructured abstract on p.1 includes background, methods, results with data description	s41597-019-0132-4.tsv
+1.1	Study design	Yes	Abstract and introduction describe time-series sampling design over 52-day period	s41597-019-0132-4.tsv
+1.2	Environmental & sample information	Yes	Monterey Bay coastal system described; sampling location and depth specified (p.1-2)	s41597-019-0132-4.tsv
+1.3	Host information	Yes	Dinoflagellate bloom organism (Akashiwo sanguinea) described in Background section p.1	s41597-019-0132-4.tsv
+1.4	Experiments & omics methods	Yes	Abstract and Methods detail metagenomic, metatranscriptomic and amplicon sequencing approaches	s41597-019-0132-4.tsv
+1.5	Analyses & results	Yes	Results summarized in figures showing taxonomic compositions; analyses described in Methods	s41597-019-0132-4.tsv
+2.0	Background & rationale	Yes	Background section provides context for marine microbial communities and bloom dynamics (p.1)	s41597-019-0132-4.tsv
+2.1	Hypotheses or questions	Yes	Study aims to characterize microbial community structure/function during bloom events	s41597-019-0132-4.tsv
+3.0	Study design	Yes	Time series design with 41 sampling dates over 52 days described in Methods	s41597-019-0132-4.tsv
+3.1	Samples	Yes	Sample collection methods and processing detailed in Methods p.1-2	s41597-019-0132-4.tsv
+3.2	Environmental context & geographic location	Yes	Monterey Bay station M0 coordinates given (36.835 N, 121.901 W); Figure 1 shows location	s41597-019-0132-4.tsv
+3.3	Relevant dates	Yes	Sampling dates specified (Sept 26 - Nov 16, 2016) p.1	s41597-019-0132-4.tsv
+3.4	Host(s)	Yes	Dinoflagellate bloom organism characterized with cell counts and chlorophyll measurements	s41597-019-0132-4.tsv
+3.5	Ethics	NA	No ethics approvals required for environmental sampling	s41597-019-0132-4.tsv
+3.6	Environmental conditions & experimental treatments	Yes	Environmental data (temp, salinity, chlorophyll, etc.) collected and described	s41597-019-0132-4.tsv
+3.7	Sample collection	Yes	Detailed collection protocols including filtration described in Methods	s41597-019-0132-4.tsv
+3.8	Eligibility/selection criteria	Yes	Sample inclusion based on location and time period during bloom	s41597-019-0132-4.tsv
+3.9	Analytic sample size	Yes	Final numbers of samples for each data type specified in abstract and Table 1	s41597-019-0132-4.tsv
+4.0	Storage & preservation	Yes	Sample preservation in RNAlater and liquid nitrogen described in Methods	s41597-019-0132-4.tsv
+4.1	Shipping	Yes	Sample storage until retrieval mentioned in Methods	s41597-019-0132-4.tsv
+4.2	Extraction methods	Yes	Detailed DNA/RNA extraction protocols provided in Methods	s41597-019-0132-4.tsv
+4.3	Experiments & sample processing	Yes	Complete processing workflow described in Methods	s41597-019-0132-4.tsv
+4.4	Library preparation	Yes	Sequencing library preparation detailed for all data types	s41597-019-0132-4.tsv
+4.5	Depletion, enrichment, & multiplexing	Yes	Size fractionation and filtering described in Methods	s41597-019-0132-4.tsv
+4.6	Primer selection	Yes	Primer sequences provided for 16S and 18S amplification	s41597-019-0132-4.tsv
+5.0	Positive controls	Yes	Internal standards described in Usage Notes	s41597-019-0132-4.tsv
+5.1	Negative controls	Yes	Quality control and filtering steps described in Technical Validation	s41597-019-0132-4.tsv
+6.0	Quantification & quality assessments	Yes	Quality metrics and standards recovery described in Technical Validation	s41597-019-0132-4.tsv
+6.1	Contaminant mitigation & identification	Yes	Contamination filtering described in Technical Validation	s41597-019-0132-4.tsv
+6.2	Replication	Yes	Duplicate filters sequenced for most samples	s41597-019-0132-4.tsv
+6.3	Sequencing methods	Yes	Sequencing platforms and parameters specified for each data type	s41597-019-0132-4.tsv
+6.4	Metabolomics, metaproteomics, & other omics methods	NA	No metabolomics/proteomics performed	s41597-019-0132-4.tsv
+6.5	Contextual & linked datasets	Yes	Environmental data linked through BCO-DMO	s41597-019-0132-4.tsv
+6.6	Batch effects	Yes	Sample randomization and quality controls described	s41597-019-0132-4.tsv
+7.0	Bioinformatics analyses	Yes	Complete bioinformatics workflows with parameters provided	s41597-019-0132-4.tsv
+7.1	Quality control	Yes	Quality filtering steps detailed in Technical Validation	s41597-019-0132-4.tsv
+7.2	Normalization	Yes	Data normalization approaches described	s41597-019-0132-4.tsv
+7.3	Database information	Yes	Reference databases specified (SILVA, etc.)	s41597-019-0132-4.tsv
+7.4	Statistical methods	Yes	Analysis methods described throughout Methods	s41597-019-0132-4.tsv
+7.5	Missing data	Yes	Sample exclusions noted	s41597-019-0132-4.tsv
+7.6	Bias & confounding variables	Yes	Quality controls and technical validation described	s41597-019-0132-4.tsv
+7.7	Subgroup analysis	Yes	Time series analysis of community composition shown in figures	s41597-019-0132-4.tsv
+7.8	Sensitivity analyses	NA	Not applicable to descriptive study	s41597-019-0132-4.tsv
+7.9	Criteria for significance	Yes	Quality thresholds specified in Methods	s41597-019-0132-4.tsv
+8.0	Metadata access	Yes	Sample metadata available through BCO-DMO	s41597-019-0132-4.tsv
+8.1	Host data access	Yes	Bloom organism data included in environmental measurements	s41597-019-0132-4.tsv
+8.2	Raw data access	Yes	Raw sequence data deposited in NCBI SRA	s41597-019-0132-4.tsv
+8.3	Processed data access	Yes	Assembled data available through JGI	s41597-019-0132-4.tsv
+8.4	Software & source code access	Yes	Software versions and parameters provided in Code Availability	s41597-019-0132-4.tsv
+8.5	Reproducible research	Yes	Complete workflows and parameters provided	s41597-019-0132-4.tsv
+9.0	Descriptive data	Yes	Sample characteristics described throughout	s41597-019-0132-4.tsv
+10.0	Microbiome sequencing data	Yes	Sequence data results presented in figures	s41597-019-0132-4.tsv
+10.1	Metabolomics, proteomics, & other omics data	NA	No metabolomics/proteomics performed	s41597-019-0132-4.tsv
+10.2	Statistical analyses	Yes	Analysis results presented in figures	s41597-019-0132-4.tsv
+10.3	Figures, tables, & captions	Yes	Clear figures with detailed captions provided	s41597-019-0132-4.tsv
+11.0	Key results	Yes	Main findings summarized	s41597-019-0132-4.tsv
+11.1	Interpretation	Yes	Results interpreted in context of bloom dynamics	s41597-019-0132-4.tsv
+11.2	Limitations	Yes	Technical limitations noted in Methods	s41597-019-0132-4.tsv
+11.3	Generalizability	Yes	Results discussed in context of coastal systems	s41597-019-0132-4.tsv
+12.0	Ongoing & future work	NA	Not discussed as this is a data descriptor	s41597-019-0132-4.tsv
+13.0	Conclusions	Yes	Study conclusions provided	s41597-019-0132-4.tsv
+14.0	Acknowledgements	Yes	Comprehensive acknowledgements section	s41597-019-0132-4.tsv
+14.1	Funding	Yes	Funding sources listed	s41597-019-0132-4.tsv
+15.0	Conflicts of interest	Yes	No competing interests stated	s41597-019-0132-4.tsv
+16.0	Supplementary data & files	Yes	Online-only tables referenced	s41597-019-0132-4.tsv
+17.0	Sample & data availability	Yes	Complete data availability statement provided	s41597-019-0132-4.tsv
+18.0	AI usage	NA	No AI methods used in study	s41597-019-0132-4.tsv
 1.0	Structured or unstructured abstract	Yes	Unstructured abstract forms main body of conference paper	BISS_article_20637.tsv
 1.1	Study design	Yes	Implementation report of MIxS standard in two systems	BISS_article_20637.tsv
 1.2	Environmental & sample information	Yes	Environmental microbiome samples described	BISS_article_20637.tsv
@@ -468,6 +1138,73 @@ Number	Item	Vote	Comments	Filename
 16.0	Supplementary data & files	No	No supplementary materials mentioned	BISS_article_20637.tsv
 17.0	Sample & data availability	NA	Not applicable for this implementation report	BISS_article_20637.tsv
 18.0	AI usage	NA	Published in 2017, before AI usage reporting requirements	BISS_article_20637.tsv
+1.0	Structured or unstructured abstract	Yes	The article contains an unstructured abstract that includes background, describes the data portal and its features, and outlines its significance.	gkab990.tsv
+1.1	Study design	Yes	Abstract states this is a pilot data portal system aligned with FAIR principles.	gkab990.tsv
+1.2	Environmental & sample information	Yes	"Abstract describes environmental systems including ""multi-omics microbiome data, spanning five data types"" and specifies data types."	gkab990.tsv
+1.3	Host information (if applicable)	NA	The study does not involve host organisms.	gkab990.tsv
+1.4	Experiments & omics methods	Yes	"Abstract describes the five omics data types: ""metagenomes, metatranscriptomes, metaproteomes, metabolomes, and natural organic matter characterizations""."	gkab990.tsv
+1.5	Analyses & results	Yes	Abstract describes analyses performed including search capabilities based on environmental context, data access and visualization features.	gkab990.tsv
+2.0	Background & rationale	Yes	Introduction describes the need for integrated multi-omics data resources and current limitations, with citations to relevant work (refs 2-4).	gkab990.tsv
+2.1	Hypotheses or questions	Yes	"Primary goal stated as ""democratize microbiome data science by providing access to multi-omics microbiome data to support reproducible, cross-study analyses""."	gkab990.tsv
+3.0	Study design	Yes	Describes pilot infrastructure for data portal development using user-centered design process, integration of data from two DOE facilities.	gkab990.tsv
+3.1	Samples	Yes	Detailed in Table 1 and Resource Content section - describes samples from river sediments, shale carbon reservoirs, plant-microbe associations, etc.	gkab990.tsv
+3.2	Environmental context & geographic location	Yes	Geographic locations specified for samples including Columbia River, East River watershed Colorado, Ohio and West Virginia.	gkab990.tsv
+3.3	Relevant dates	Yes	States sample collection dates ranging from January 2014 to January 2020 (described in Interactive Visualizations section).	gkab990.tsv
+3.4	Host(s) (if applicable)	NA	Study does not involve host organisms.	gkab990.tsv
+3.5	Ethics	NA	No human/animal subjects or permits required as this describes a data portal.	gkab990.tsv
+3.6	Environmental conditions & experimental treatments	Yes	Environmental conditions described for source samples (e.g., river sediments, subsurface shale reservoirs).	gkab990.tsv
+3.7	Sample collection	Yes	References original studies (refs 36-38) that detail sample collection methods.	gkab990.tsv
+3.8	Eligibility/selection criteria	Yes	States criteria for including studies - focused on FICUS Program projects between JGI and EMSL facilities.	gkab990.tsv
+3.9	Analytic sample size	Yes	"Reports ""638 biosamples, 7 studies and 5 data types"" in Resource Content section."	gkab990.tsv
+4.0	Storage & preservation	Yes	Describes data storage infrastructure and preservation in PostgreSQL database, MongoDB, use of containers.	gkab990.tsv
+4.1	Shipping	NA	Not applicable as this describes a data portal rather than physical sample handling.	gkab990.tsv
+4.2	Extraction methods	Yes	Methods for nucleic acid, protein, metabolite extraction described in detail for each data type.	gkab990.tsv
+4.3	Experiments & sample processing	Yes	Detailed processing methods provided for each omics data type in Resource Content section.	gkab990.tsv
+4.4	Library preparation	Yes	Sequencing library preparation described for metagenomes and metatranscriptomes.	gkab990.tsv
+4.5	Depletion, enrichment, & multiplexing	Yes	Processing steps including ribosomal read filtering described for metatranscriptomes.	gkab990.tsv
+4.6	Primer selection	Yes	Not directly specified but references relevant protocols and workflows.	gkab990.tsv
+5.0	Positive controls	No	No mention of positive controls or standards used.	gkab990.tsv
+5.1	Negative controls	No	No mention of negative controls used.	gkab990.tsv
+6.0	Quantification & quality assessments	Yes	Quality control steps described for each data type including read QC, assembly quality, peptide FDR.	gkab990.tsv
+6.1	Contaminant mitigation & identification	Yes	Quality control steps include filtering and contamination removal described in workflow sections.	gkab990.tsv
+6.2	Replication	No	Replication strategies not explicitly discussed.	gkab990.tsv
+6.3	Sequencing methods	Yes	Sequencing methods described including Illumina platform use, details on processing.	gkab990.tsv
+6.4	Metabolomics, metaproteomics, & other omics methods	Yes	Detailed methods provided for metabolomics (GC-MS), metaproteomics (LC-MS/MS), and natural organic matter characterization.	gkab990.tsv
+6.5	Contextual & linked datasets	Yes	Describes integration with multiple databases and linking of multi-omics data types.	gkab990.tsv
+6.6	Batch effects	No	Batch effects and their handling not discussed.	gkab990.tsv
+7.0	Bioinformatics analyses	Yes	Detailed bioinformatics workflows described for each data type.	gkab990.tsv
+7.1	Quality control	Yes	Quality control methods described for sequence data, protein identification, metabolite annotation.	gkab990.tsv
+7.2	Normalization	Yes	Normalization approaches described for metaproteomics and metabolomics data.	gkab990.tsv
+7.3	Database information	Yes	Specifies databases used including KEGG, MIxS, EnvO with versions.	gkab990.tsv
+7.4	Statistical methods	No	Statistical analysis methods not explicitly described.	gkab990.tsv
+7.5	Missing data	Yes	Discusses handling of missing metadata and data validation.	gkab990.tsv
+7.6	Bias & confounding variables	No	Potential biases not explicitly discussed.	gkab990.tsv
+7.7	Subgroup analysis	NA	Not applicable to this type of study.	gkab990.tsv
+7.8	Sensitivity analyses	No	Sensitivity analyses not described.	gkab990.tsv
+7.9	Criteria for significance	Yes	Describes criteria for data inclusion and quality thresholds.	gkab990.tsv
+8.0	Metadata access	Yes	Detailed description of metadata standards, access and storage provided.	gkab990.tsv
+8.1	Host data access (if applicable)	NA	No host data involved.	gkab990.tsv
+8.2	Raw data access	Yes	Data access through NMDC Data Portal described with authentication requirements.	gkab990.tsv
+8.3	Processed data access	Yes	Access to processed data products detailed through portal interface.	gkab990.tsv
+8.4	Software & source code access	Yes	Code availability stated through GitHub repository.	gkab990.tsv
+8.5	Reproducible research	Yes	Documentation and reproducibility features described including containerization.	gkab990.tsv
+9.0	Descriptive data	Yes	Sample and data characteristics summarized in text and Table 1.	gkab990.tsv
+10.0	Microbiome sequencing data	Yes	Results of sequence processing and analysis described for all data types.	gkab990.tsv
+10.1	Metabolomics, proteomics, & other omics data	Yes	Results from metabolomics, proteomics analyses described.	gkab990.tsv
+10.2	Statistical analyses	No	Statistical analysis results not presented.	gkab990.tsv
+10.3	Figures, tables, & captions	Yes	Contains detailed figures and tables with clear captions explaining results.	gkab990.tsv
+11.0	Key results	Yes	Key features and capabilities of data portal summarized.	gkab990.tsv
+11.1	Interpretation	Yes	Discusses significance and utility of the data portal.	gkab990.tsv
+11.2	Limitations	Yes	Current limitations and future development needs discussed.	gkab990.tsv
+11.3	Generalizability	Yes	Discusses broad applicability for microbiome research community.	gkab990.tsv
+12.0	Ongoing & future work	Yes	Future directions detailed in dedicated section.	gkab990.tsv
+13.0	Conclusions	Yes	Overall conclusions provided about portal's utility.	gkab990.tsv
+14.0	Acknowledgements	Yes	Includes acknowledgements section thanking contributors.	gkab990.tsv
+14.1	Funding	Yes	Funding sources and grant numbers provided.	gkab990.tsv
+15.0	Conflicts of interest	Yes	"States ""None declared."""	gkab990.tsv
+16.0	Supplementary data & files	Yes	Supplementary materials referenced including user guide.	gkab990.tsv
+17.0	Sample & data availability	Yes	Data portal URL and GitHub repository provided.	gkab990.tsv
+18.0	AI usage	No	No mention of AI usage in manuscript preparation or analysis.	gkab990.tsv
 1.0	Structured or unstructured abstract	Yes	Unstructured abstract present, includes all recommended sections (background, methods, results, conclusions)	blair-et-al-2018-exploration-of-the-biosynthetic-potential-of-the-populus-microbiome.tsv
 1.1	Study design	Yes	Study design described in abstract - analysis of bacterial isolate genomes and metagenome samples	blair-et-al-2018-exploration-of-the-biosynthetic-potential-of-the-populus-microbiome.tsv
 1.2	Environmental & sample information	Yes	Specific source described as Populus root microbiome, both rhizosphere and endosphere samples	blair-et-al-2018-exploration-of-the-biosynthetic-potential-of-the-populus-microbiome.tsv
@@ -535,6 +1272,73 @@ Number	Item	Vote	Comments	Filename
 16.0	Supplementary data & files	Yes	Supplementary materials referenced and described	blair-et-al-2018-exploration-of-the-biosynthetic-potential-of-the-populus-microbiome.tsv
 17.0	Sample & data availability	Yes	Detailed data availability statement provided with accession numbers	blair-et-al-2018-exploration-of-the-biosynthetic-potential-of-the-populus-microbiome.tsv
 18.0	AI usage	NA	Article published in 2018, before AI usage reporting requirements	blair-et-al-2018-exploration-of-the-biosynthetic-potential-of-the-populus-microbiome.tsv
+1.0	Structured or unstructured abstract	Yes	Contains unstructured abstract with background, methods and purpose of data, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+1.1	Study design	Yes	Abstract and methods describe experimental setup with two biocrust types and timed sampling after wetting, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+1.2	Environmental & sample information	Yes	Describes biocrust samples from Mojave Desert Sheephole Valley Wilderness, including GPS coordinates, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+1.3	Host information (if applicable)	NA	No host organism - study focuses on microbial communities	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+1.4	Experiments & omics methods	Yes	Details RNA extraction, rRNA depletion, library prep and NovaSeq sequencing methods, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+1.5	Analyses & results	Yes	Reports sequencing stats, assembly results and coverage metrics in text and Table 1, pp.1-2	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+2.0	Background & rationale	Yes	Introduces importance of biological soil crusts and their responses to wetting, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+2.1	Hypotheses or questions	Yes	States aim to understand gene expression patterns after reactivation by water, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+3.0	Study design	Yes	Details sampling strategy, wetting treatment, and time points for collection, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+3.1	Samples	Yes	Describes 5 cm² biocrust samples and collection location, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+3.2	Environmental context & geographic location	Yes	Provides specific GPS coordinates (34.1736 N, 115.3888 W) and location name, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+3.3	Relevant dates	No	Collection and experiment dates not provided	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+3.4	Host(s) (if applicable)	NA	No host organism studied	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+3.5	Ethics	Yes	Mentions BLM permitting in acknowledgments, p.3	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+3.6	Environmental conditions & experimental treatments	Yes	Describes ambient lab conditions and wetting treatment protocol, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+3.7	Sample collection	Yes	Details sample transfer and storage methods after collection, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+3.8	Eligibility/selection criteria	No	No explicit inclusion/exclusion criteria described	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+3.9	Analytic sample size	Yes	Reports 10 samples total with sizes specified, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+4.0	Storage & preservation	Yes	Reports storage at -80°C, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+4.1	Shipping	No	No shipping information provided	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+4.2	Extraction methods	Yes	Details RNA extraction kit and protocol, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+4.3	Experiments & sample processing	Yes	Describes rRNA depletion and library prep methods, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+4.4	Library preparation	Yes	Details cDNA synthesis and library preparation protocol, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+4.5	Depletion, enrichment, & multiplexing	Yes	Describes rRNA depletion methods and kits used, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+4.6	Primer selection	NA	Not applicable for RNA-seq library prep	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+5.0	Positive controls	No	No positive controls mentioned	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+5.1	Negative controls	No	No negative controls mentioned	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+6.0	Quantification & quality assessments	Yes	Reports qPCR quantification of libraries, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+6.1	Contaminant mitigation & identification	Yes	Describes read filtering and contaminant removal, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+6.2	Replication	No	Replication strategy not explicitly described	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+6.3	Sequencing methods	Yes	Details NovaSeq parameters and run recipe, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+6.4	Metabolomics, metaproteomics, & other omics methods	NA	Not applicable - only RNA sequencing performed	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+6.5	Contextual & linked datasets	No	No additional linked datasets described	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+6.6	Batch effects	No	No discussion of batch effects	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+7.0	Bioinformatics analyses	Yes	Describes assembly and mapping software/methods, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+7.1	Quality control	Yes	Details read filtering criteria and QC steps, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+7.2	Normalization	No	No normalization methods described	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+7.3	Database information	Yes	References SILVA database version for rRNA analysis, p.3	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+7.4	Statistical methods	No	No statistical analyses described	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+7.5	Missing data	Yes	Notes failed samples due to insufficient RNA yields, p.1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+7.6	Bias & confounding variables	No	No discussion of potential biases	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+7.7	Subgroup analysis	NA	Not applicable for data announcement	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+7.8	Sensitivity analyses	NA	Not applicable for data announcement	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+7.9	Criteria for significance	NA	Not applicable for data announcement	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+8.0	Metadata access	Yes	Provides BioSample and BioProject IDs in Table 1, p.2	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+8.1	Host data access (if applicable)	NA	No host organism studied	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+8.2	Raw data access	Yes	Provides NCBI accession numbers and JGI portal access, p.5	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+8.3	Processed data access	Yes	Assembly data available through specified repositories, p.5	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+8.4	Software & source code access	Yes	Lists software versions and references, pp.1,5	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+8.5	Reproducible research	Yes	Methods detailed enough for reproduction	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+9.0	Descriptive data	Yes	Sample and sequencing characteristics provided in Table 1	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+10.0	Microbiome sequencing data	Yes	Metatranscriptome data described and accessible	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+10.1	Metabolomics, proteomics, & other omics data	NA	Not applicable - only RNA sequencing performed	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+10.2	Statistical analyses	NA	Not applicable for data announcement	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+10.3	Figures, tables, & captions	Yes	Comprehensive Table 1 with clear caption	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+11.0	Key results	Yes	Reports sequencing outputs and assembly statistics	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+11.1	Interpretation	Yes	Discusses implications of rRNA content and coverage	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+11.2	Limitations	Yes	Notes ineffective rRNA depletion, p.3	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+11.3	Generalizability	No	Does not discuss broader applicability	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+12.0	Ongoing & future work	No	Future directions not discussed	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+13.0	Conclusions	No	No explicit conclusions section	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+14.0	Acknowledgements	Yes	Detailed acknowledgments including permits and facilities, p.3	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+14.1	Funding	Yes	Comprehensive funding information provided, p.4	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+15.0	Conflicts of interest	Yes	"States ""The authors declare no conflict of interest"", p.1"	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+16.0	Supplementary data & files	No	No supplementary files mentioned	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+17.0	Sample & data availability	Yes	Clear data availability statement with multiple access points, p.5	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
+18.0	AI usage	No	No AI methods mentioned	nguyen-et-al-2024-metatranscriptomes-of-two-biological-soil-crust-types-from-the-mojave-desert-in-response-to-wetting.tsv
 1.0	Structured or unstructured abstract	Yes	Unstructured abstract present on pg 15783 containing background, methods, results, and conclusions	file.tsv
 1.1	Study design	Yes	"Study design described in abstract: ""large-scale survey of potential INP sources in tundra terrain"""	file.tsv
 1.2	Environmental & sample information	Yes	Abstract describes specific environmental system (thermokarst regions, tundra terrain) and sample types (permafrost, active layer, ice wedge, vegetation, water, aerosol)	file.tsv
@@ -602,3 +1406,70 @@ Number	Item	Vote	Comments	Filename
 16.0	Supplementary data & files	Yes	Supplementary information referenced	file.tsv
 17.0	Sample & data availability	Yes	Data availability statement provided with DOI	file.tsv
 18.0	AI usage	No	No statement about AI usage provided	file.tsv
+1.0	Structured or unstructured abstract	Yes	Unstructured abstract present with background, methods, results and conclusions sections.	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+1.1	Study design	Yes	"States ""incubation experiment"" and describes metagenomics/transcriptomics approach in abstract"	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+1.2	Environmental & sample information	Yes	Clear description of humic and clearwater lake samples and physicochemical characteristics in abstract	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+1.3	Host information	NA	Study does not involve host organisms	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+1.4	Experiments & omics methods	Yes	Details metagenomic sequencing, metatranscriptomics and bioinformatics analyses in abstract	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+1.5	Analyses & results	Yes	Abstract summarizes key findings about opsin gene diversity, distribution and expression	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+2.0	Background & rationale	Yes	Introduction provides comprehensive background on microbial rhodopsins with citations	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+2.1	Hypotheses or questions	Yes	States two specific hypotheses about bacterial diversity correlation and invasion in Introduction	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+3.0	Study design	Yes	Detailed experimental design described in Methods section 2.2	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+3.1	Samples	Yes	Describes lake water sample collection in Methods 2.1	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+3.2	Environmental context & geographic location	Yes	Provides GPS coordinates and lake characteristics in Methods 2.1	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+3.3	Relevant dates	Yes	Sampling dates provided (2007-2012) in Methods 2.1	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+3.4	Host(s)	NA	No host organisms involved	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+3.5	Ethics	No	No ethics statements or permits mentioned	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+3.6	Environmental conditions & experimental treatments	Yes	Details incubation conditions and treatments in Methods 2.2	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+3.7	Sample collection	Yes	Describes sampling methods and depths in Methods 2.1	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+3.8	Eligibility/selection criteria	Yes	Criteria for MAG quality and sequence filtering described in Methods	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+3.9	Analytic sample size	Yes	Reports number of samples and replicates throughout Methods	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+4.0	Storage & preservation	Yes	Sample storage at -20°C described in Methods	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+4.1	Shipping	No	No shipping information provided	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+4.2	Extraction methods	Yes	DNA/RNA extraction protocols detailed in Methods 2.3	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+4.3	Experiments & sample processing	Yes	Processing steps described in Methods 2.2-2.3	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+4.4	Library preparation	Yes	Sequencing library prep protocol in Methods 2.3	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+4.5	Depletion, enrichment, & multiplexing	Yes	Library indexing described in Methods 2.3	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+4.6	Primer selection	Yes	Primer sequences provided in Table S2	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+5.0	Positive controls	No	No positive controls mentioned	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+5.1	Negative controls	Yes	Extraction and PCR controls described in Methods 2.3	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+6.0	Quantification & quality assessments	Yes	Quality control steps detailed in Methods 2.3-2.4	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+6.1	Contaminant mitigation & identification	Yes	Contamination filtering described in Methods 2.4	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+6.2	Replication	Yes	Three replicates per treatment described	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+6.3	Sequencing methods	Yes	Sequencing platform and parameters in Methods 2.3	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+6.4	Metabolomics, metaproteomics, & other omics methods	NA	No other omics methods used	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+6.5	Contextual & linked datasets	Yes	References prior datasets and supplementary data	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+6.6	Batch effects	No	No discussion of batch effects	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+7.0	Bioinformatics analyses	Yes	Detailed bioinformatics pipeline in Methods 2.4	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+7.1	Quality control	Yes	Sequence QC parameters in Methods 2.4	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+7.2	Normalization	Yes	Read depth normalization described in Methods 2.4	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+7.3	Database information	Yes	SILVA database version specified in Methods 2.4	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+7.4	Statistical methods	Yes	Statistical analyses detailed in Methods 2.4	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+7.5	Missing data	No	No discussion of missing data handling	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+7.6	Bias & confounding variables	Yes	Potential biases discussed in Discussion	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+7.7	Subgroup analysis	Yes	Analysis of different bacterial groups described	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+7.8	Sensitivity analyses	No	No sensitivity analyses mentioned	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+7.9	Criteria for significance	Yes	Statistical significance criteria specified	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+8.0	Metadata access	Yes	Data availability statement provided	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+8.1	Host data access	NA	No host data involved	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+8.2	Raw data access	Yes	Data deposited in IMG and ENA with accession numbers	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+8.3	Processed data access	Yes	Processed data available in supplementary materials	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+8.4	Software & source code access	Yes	Software versions and parameters provided	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+8.5	Reproducible research	Yes	Methods described in reproducible detail	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+9.0	Descriptive data	Yes	Sample characteristics described in Results	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+10.0	Microbiome sequencing data	Yes	Sequencing results reported in Results section 3	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+10.1	Metabolomics, proteomics, & other omics data	NA	No other omics data	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+10.2	Statistical analyses	Yes	Statistical results reported throughout Results	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+10.3	Figures, tables, & captions	Yes	Multiple figures and tables with detailed captions	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+11.0	Key results	Yes	Key findings summarized in Discussion 	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+11.1	Interpretation	Yes	Results interpreted in context of hypotheses	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+11.2	Limitations	Yes	Study limitations discussed in Discussion	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+11.3	Generalizability	Yes	Discusses applicability to other lake systems	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+12.0	Ongoing & future work	Yes	Future research directions discussed	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+13.0	Conclusions	Yes	Clear conclusions provided	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+14.0	Acknowledgements	Yes	Comprehensive acknowledgements section	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+14.1	Funding	Yes	Detailed funding information provided	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+15.0	Conflicts of interest	Yes	COI statement included	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+16.0	Supplementary data & files	Yes	Supplementary tables and files referenced	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+17.0	Sample & data availability	Yes	Data availability statement with accession numbers	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv
+18.0	AI usage	No	No mention of AI usage	Molecular Ecology - 2023 - He - Diversity  distribution  and expression of opsin genes in freshwater lakes.tsv

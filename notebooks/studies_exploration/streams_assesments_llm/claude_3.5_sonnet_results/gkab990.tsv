@@ -1,0 +1,68 @@
+Number	Item	Present in the manuscript? Yes/No/NA	Comments or location in manuscript.1
+1.0	Structured or unstructured abstract	Yes	The article contains an unstructured abstract that includes background, describes the data portal and its features, and outlines its significance.
+1.1	Study design	Yes	Abstract states this is a pilot data portal system aligned with FAIR principles.
+1.2	Environmental & sample information	Yes	Abstract describes environmental systems including "multi-omics microbiome data, spanning five data types" and specifies data types.
+1.3	Host information (if applicable)	NA	The study does not involve host organisms.
+1.4	Experiments & omics methods	Yes	Abstract describes the five omics data types: "metagenomes, metatranscriptomes, metaproteomes, metabolomes, and natural organic matter characterizations".
+1.5	Analyses & results	Yes	Abstract describes analyses performed including search capabilities based on environmental context, data access and visualization features.
+2.0	Background & rationale	Yes	Introduction describes the need for integrated multi-omics data resources and current limitations, with citations to relevant work (refs 2-4).
+2.1	Hypotheses or questions	Yes	Primary goal stated as "democratize microbiome data science by providing access to multi-omics microbiome data to support reproducible, cross-study analyses".
+3.0	Study design	Yes	Describes pilot infrastructure for data portal development using user-centered design process, integration of data from two DOE facilities.
+3.1	Samples	Yes	Detailed in Table 1 and Resource Content section - describes samples from river sediments, shale carbon reservoirs, plant-microbe associations, etc.
+3.2	Environmental context & geographic location	Yes	Geographic locations specified for samples including Columbia River, East River watershed Colorado, Ohio and West Virginia.
+3.3	Relevant dates	Yes	States sample collection dates ranging from January 2014 to January 2020 (described in Interactive Visualizations section).
+3.4	Host(s) (if applicable)	NA	Study does not involve host organisms.
+3.5	Ethics	NA	No human/animal subjects or permits required as this describes a data portal.
+3.6	Environmental conditions & experimental treatments	Yes	Environmental conditions described for source samples (e.g., river sediments, subsurface shale reservoirs).
+3.7	Sample collection	Yes	References original studies (refs 36-38) that detail sample collection methods.
+3.8	Eligibility/selection criteria	Yes	States criteria for including studies - focused on FICUS Program projects between JGI and EMSL facilities.
+3.9	Analytic sample size	Yes	Reports "638 biosamples, 7 studies and 5 data types" in Resource Content section.
+4.0	Storage & preservation	Yes	Describes data storage infrastructure and preservation in PostgreSQL database, MongoDB, use of containers.
+4.1	Shipping	NA	Not applicable as this describes a data portal rather than physical sample handling.
+4.2	Extraction methods	Yes	Methods for nucleic acid, protein, metabolite extraction described in detail for each data type.
+4.3	Experiments & sample processing	Yes	Detailed processing methods provided for each omics data type in Resource Content section.
+4.4	Library preparation	Yes	Sequencing library preparation described for metagenomes and metatranscriptomes.
+4.5	Depletion, enrichment, & multiplexing	Yes	Processing steps including ribosomal read filtering described for metatranscriptomes.
+4.6	Primer selection	Yes	Not directly specified but references relevant protocols and workflows.
+5.0	Positive controls	No	No mention of positive controls or standards used.
+5.1	Negative controls	No	No mention of negative controls used.
+6.0	Quantification & quality assessments	Yes	Quality control steps described for each data type including read QC, assembly quality, peptide FDR.
+6.1	Contaminant mitigation & identification	Yes	Quality control steps include filtering and contamination removal described in workflow sections.
+6.2	Replication	No	Replication strategies not explicitly discussed.
+6.3	Sequencing methods	Yes	Sequencing methods described including Illumina platform use, details on processing.
+6.4	Metabolomics, metaproteomics, & other omics methods	Yes	Detailed methods provided for metabolomics (GC-MS), metaproteomics (LC-MS/MS), and natural organic matter characterization.
+6.5	Contextual & linked datasets	Yes	Describes integration with multiple databases and linking of multi-omics data types.
+6.6	Batch effects	No	Batch effects and their handling not discussed.
+7.0	Bioinformatics analyses	Yes	Detailed bioinformatics workflows described for each data type.
+7.1	Quality control	Yes	Quality control methods described for sequence data, protein identification, metabolite annotation.
+7.2	Normalization	Yes	Normalization approaches described for metaproteomics and metabolomics data.
+7.3	Database information	Yes	Specifies databases used including KEGG, MIxS, EnvO with versions.
+7.4	Statistical methods	No	Statistical analysis methods not explicitly described.
+7.5	Missing data	Yes	Discusses handling of missing metadata and data validation.
+7.6	Bias & confounding variables	No	Potential biases not explicitly discussed.
+7.7	Subgroup analysis	NA	Not applicable to this type of study.
+7.8	Sensitivity analyses	No	Sensitivity analyses not described.
+7.9	Criteria for significance	Yes	Describes criteria for data inclusion and quality thresholds.
+8.0	Metadata access	Yes	Detailed description of metadata standards, access and storage provided.
+8.1	Host data access (if applicable)	NA	No host data involved.
+8.2	Raw data access	Yes	Data access through NMDC Data Portal described with authentication requirements.
+8.3	Processed data access	Yes	Access to processed data products detailed through portal interface.
+8.4	Software & source code access	Yes	Code availability stated through GitHub repository.
+8.5	Reproducible research	Yes	Documentation and reproducibility features described including containerization.
+9.0	Descriptive data	Yes	Sample and data characteristics summarized in text and Table 1.
+10.0	Microbiome sequencing data	Yes	Results of sequence processing and analysis described for all data types.
+10.1	Metabolomics, proteomics, & other omics data	Yes	Results from metabolomics, proteomics analyses described.
+10.2	Statistical analyses	No	Statistical analysis results not presented.
+10.3	Figures, tables, & captions	Yes	Contains detailed figures and tables with clear captions explaining results.
+11.0	Key results	Yes	Key features and capabilities of data portal summarized.
+11.1	Interpretation	Yes	Discusses significance and utility of the data portal.
+11.2	Limitations	Yes	Current limitations and future development needs discussed.
+11.3	Generalizability	Yes	Discusses broad applicability for microbiome research community.
+12.0	Ongoing & future work	Yes	Future directions detailed in dedicated section.
+13.0	Conclusions	Yes	Overall conclusions provided about portal's utility.
+14.0	Acknowledgements	Yes	Includes acknowledgements section thanking contributors.
+14.1	Funding	Yes	Funding sources and grant numbers provided.
+15.0	Conflicts of interest	Yes	States "None declared."
+16.0	Supplementary data & files	Yes	Supplementary materials referenced including user guide.
+17.0	Sample & data availability	Yes	Data portal URL and GitHub repository provided.
+18.0	AI usage	No	No mention of AI usage in manuscript preparation or analysis.

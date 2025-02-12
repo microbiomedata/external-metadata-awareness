@@ -1,0 +1,68 @@
+Number	Item	Present in the manuscript? Yes/No/NA	Comments or location in manuscript.1
+1.0	Structured or unstructured abstract	Yes	Contains unstructured abstract with background, methods and purpose of data, p.1
+1.1	Study design	Yes	Abstract and methods describe experimental setup with two biocrust types and timed sampling after wetting, p.1
+1.2	Environmental & sample information	Yes	Describes biocrust samples from Mojave Desert Sheephole Valley Wilderness, including GPS coordinates, p.1
+1.3	Host information (if applicable)	NA	No host organism - study focuses on microbial communities
+1.4	Experiments & omics methods	Yes	Details RNA extraction, rRNA depletion, library prep and NovaSeq sequencing methods, p.1
+1.5	Analyses & results	Yes	Reports sequencing stats, assembly results and coverage metrics in text and Table 1, pp.1-2
+2.0	Background & rationale	Yes	Introduces importance of biological soil crusts and their responses to wetting, p.1
+2.1	Hypotheses or questions	Yes	States aim to understand gene expression patterns after reactivation by water, p.1
+3.0	Study design	Yes	Details sampling strategy, wetting treatment, and time points for collection, p.1
+3.1	Samples	Yes	Describes 5 cm² biocrust samples and collection location, p.1
+3.2	Environmental context & geographic location	Yes	Provides specific GPS coordinates (34.1736 N, 115.3888 W) and location name, p.1
+3.3	Relevant dates	No	Collection and experiment dates not provided
+3.4	Host(s) (if applicable)	NA	No host organism studied
+3.5	Ethics	Yes	Mentions BLM permitting in acknowledgments, p.3
+3.6	Environmental conditions & experimental treatments	Yes	Describes ambient lab conditions and wetting treatment protocol, p.1
+3.7	Sample collection	Yes	Details sample transfer and storage methods after collection, p.1
+3.8	Eligibility/selection criteria	No	No explicit inclusion/exclusion criteria described
+3.9	Analytic sample size	Yes	Reports 10 samples total with sizes specified, p.1
+4.0	Storage & preservation	Yes	Reports storage at -80°C, p.1
+4.1	Shipping	No	No shipping information provided
+4.2	Extraction methods	Yes	Details RNA extraction kit and protocol, p.1
+4.3	Experiments & sample processing	Yes	Describes rRNA depletion and library prep methods, p.1
+4.4	Library preparation	Yes	Details cDNA synthesis and library preparation protocol, p.1
+4.5	Depletion, enrichment, & multiplexing	Yes	Describes rRNA depletion methods and kits used, p.1
+4.6	Primer selection	NA	Not applicable for RNA-seq library prep
+5.0	Positive controls	No	No positive controls mentioned
+5.1	Negative controls	No	No negative controls mentioned
+6.0	Quantification & quality assessments	Yes	Reports qPCR quantification of libraries, p.1
+6.1	Contaminant mitigation & identification	Yes	Describes read filtering and contaminant removal, p.1
+6.2	Replication	No	Replication strategy not explicitly described
+6.3	Sequencing methods	Yes	Details NovaSeq parameters and run recipe, p.1
+6.4	Metabolomics, metaproteomics, & other omics methods	NA	Not applicable - only RNA sequencing performed
+6.5	Contextual & linked datasets	No	No additional linked datasets described
+6.6	Batch effects	No	No discussion of batch effects
+7.0	Bioinformatics analyses	Yes	Describes assembly and mapping software/methods, p.1
+7.1	Quality control	Yes	Details read filtering criteria and QC steps, p.1
+7.2	Normalization	No	No normalization methods described
+7.3	Database information	Yes	References SILVA database version for rRNA analysis, p.3
+7.4	Statistical methods	No	No statistical analyses described
+7.5	Missing data	Yes	Notes failed samples due to insufficient RNA yields, p.1
+7.6	Bias & confounding variables	No	No discussion of potential biases
+7.7	Subgroup analysis	NA	Not applicable for data announcement
+7.8	Sensitivity analyses	NA	Not applicable for data announcement
+7.9	Criteria for significance	NA	Not applicable for data announcement
+8.0	Metadata access	Yes	Provides BioSample and BioProject IDs in Table 1, p.2
+8.1	Host data access (if applicable)	NA	No host organism studied
+8.2	Raw data access	Yes	Provides NCBI accession numbers and JGI portal access, p.5
+8.3	Processed data access	Yes	Assembly data available through specified repositories, p.5
+8.4	Software & source code access	Yes	Lists software versions and references, pp.1,5
+8.5	Reproducible research	Yes	Methods detailed enough for reproduction
+9.0	Descriptive data	Yes	Sample and sequencing characteristics provided in Table 1
+10.0	Microbiome sequencing data	Yes	Metatranscriptome data described and accessible
+10.1	Metabolomics, proteomics, & other omics data	NA	Not applicable - only RNA sequencing performed
+10.2	Statistical analyses	NA	Not applicable for data announcement
+10.3	Figures, tables, & captions	Yes	Comprehensive Table 1 with clear caption
+11.0	Key results	Yes	Reports sequencing outputs and assembly statistics
+11.1	Interpretation	Yes	Discusses implications of rRNA content and coverage
+11.2	Limitations	Yes	Notes ineffective rRNA depletion, p.3
+11.3	Generalizability	No	Does not discuss broader applicability
+12.0	Ongoing & future work	No	Future directions not discussed
+13.0	Conclusions	No	No explicit conclusions section
+14.0	Acknowledgements	Yes	Detailed acknowledgments including permits and facilities, p.3
+14.1	Funding	Yes	Comprehensive funding information provided, p.4
+15.0	Conflicts of interest	Yes	States "The authors declare no conflict of interest", p.1
+16.0	Supplementary data & files	No	No supplementary files mentioned
+17.0	Sample & data availability	Yes	Clear data availability statement with multiple access points, p.5
+18.0	AI usage	No	No AI methods mentioned

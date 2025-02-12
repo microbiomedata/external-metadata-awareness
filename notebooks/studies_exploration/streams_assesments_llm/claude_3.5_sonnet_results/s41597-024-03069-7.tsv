@@ -1,0 +1,68 @@
+Number	Item	Present in the manuscript? Yes/No/NA	Comments or location in manuscript.1
+1.0	Structured or unstructured abstract	Yes	The manuscript contains an unstructured abstract that includes background, methods, results, and significance
+1.1	Study design	Yes	Study design is stated in abstract - describes sampling from common gardens with different P. trichocarpa genotypes
+1.2	Environmental & sample information	Yes	Abstract describes environmental systems (soil, rhizosphere, root endosphere, leaf samples) and Populus trichocarpa as the studied organism
+1.3	Host information	Yes	Abstract mentions 27 different P. trichocarpa genotypes and the number of samples collected
+1.4	Experiments & omics methods	Yes	Abstract describes metagenomics, metabolomics, transcriptomics approaches used
+1.5	Analyses & results	Yes	Abstract summarizes analyses performed and describes integrated dataset results
+2.0	Background & rationale	Yes	Background section provides thorough motivation and context, with citations to previous work
+2.1	Hypotheses or questions	Yes	States aim to understand causal linkages between molecular events and ecosystem processes
+3.0	Study design	Yes	Methods section describes observational study design across two common garden locations with different environmental conditions
+3.1	Samples	Yes	Methods section describes all sample types (soil, rhizosphere, root endosphere, leaf) and their collection
+3.2	Environmental context & geographic location	Yes	Detailed descriptions of both common garden locations (Corvallis and Clatskanie, OR) with soil and climate information
+3.3	Relevant dates	Yes	Sampling conducted in September 2020; gardens planted in 2009
+3.4	Host	Yes	Detailed description of P. trichocarpa genotypes and selection criteria in Table 1 and Methods
+3.5	Ethics	No	No explicit statement about permits or ethical protocols
+3.6	Environmental conditions & experimental treatments	Yes	Detailed description of soil conditions, climate, and site histories for both locations
+3.7	Sample collection	Yes	Detailed methods for collecting soil, root, rhizosphere and leaf samples
+3.8	Eligibility/selection criteria	Yes	Describes criteria for selecting genotypes based on metabolite profiles
+3.9	Analytic sample size	Yes	Reports final numbers of samples for each data type (318 metagenomes, 98 transcriptomes, 314 metabolomics)
+4.0	Storage & preservation	Yes	Methods describe sample storage on dry ice and at -80°C
+4.1	Shipping	Yes	Methods mention shipping samples on dry ice/ice to laboratories
+4.2	Extraction methods	Yes	Detailed extraction protocols for DNA, RNA and metabolites
+4.3	Experiments & sample processing	Yes	Detailed processing methods for all sample types
+4.4	Library preparation	Yes	Describes library prep methods for sequencing
+4.5	Depletion, enrichment, & multiplexing	Yes	Details on host DNA depletion methods and sequencing library preparation
+4.6	Primer selection	NA	Not applicable as study used shotgun sequencing rather than amplicon sequencing
+5.0	Positive controls	No	No mention of positive controls
+5.1	Negative controls	Yes	Mentions extraction controls for metabolomics
+6.0	Quantification & quality assessments	Yes	Quality assessment methods described for all data types
+6.1	Contaminant mitigation & identification	Yes	Methods for minimizing plant DNA contamination described
+6.2	Replication	Yes	3 biological replicates described
+6.3	Sequencing methods	Yes	Details on Illumina NovaSeq 6000 sequencing provided
+6.4	Metabolomics, metaproteomics, & other omics methods	Yes	Detailed metabolomics methods provided
+6.5	Contextual & linked datasets	Yes	Links provided to all associated datasets
+6.6	Batch effects	Yes	Describes randomization of metabolomics sample injection order
+7.0	Bioinformatics analyses	Yes	Details provided on sequence processing pipelines
+7.1	Quality control	Yes	QC steps described for all data types
+7.2	Normalization	Yes	Describes normalization methods where applicable
+7.3	Database information	Yes	References to JGI and other databases used
+7.4	Statistical methods	Yes	Statistical methods described where relevant
+7.5	Missing data	Yes	Reports on missing samples e.g., 18 missing transcriptome samples
+7.6	Bias & confounding variables	Yes	Discusses potential biases in measurements
+7.7	Subgroup analysis	NA	No subgroup analyses reported
+7.8	Sensitivity analyses	No	No sensitivity analyses reported
+7.9	Criteria for significance	Yes	Describes quality thresholds used
+8.0	Metadata access	Yes	Provides access info for all metadata
+8.1	Host data access	Yes	References to host genome data provided
+8.2	Raw data access	Yes	Accession numbers provided for raw data
+8.3	Processed data access	Yes	Links to processed data provided
+8.4	Software & source code access	Yes	Software versions and access provided
+8.5	Reproducible research	Yes	Methods described in reproducible detail
+9.0	Descriptive data	Yes	Sample characteristics summarized
+10.0	Microbiome sequencing data	Yes	Sequencing results reported
+10.1	Metabolomics, proteomics, & other omics data	Yes	Metabolomics results reported
+10.2	Statistical analyses	Yes	Statistical results provided where relevant
+10.3	Figures, tables, & captions	Yes	Clear figures and tables with detailed captions
+11.0	Key results	Yes	Results summarized in relation to objectives
+11.1	Interpretation	Yes	Results interpreted in context of field
+11.2	Limitations	Yes	Limitations discussed including technical challenges
+11.3	Generalizability	Yes	Discusses broader applications
+12.0	Ongoing & future work	No	No explicit discussion of future work
+13.0	Conclusions	Yes	Clear conclusions provided
+14.0	Acknowledgements	Yes	Detailed acknowledgements section
+14.1	Funding	Yes	Funding sources and award numbers provided
+15.0	Conflicts of interest	Yes	States no competing interests
+16.0	Supplementary data & files	Yes	References supplementary materials
+17.0	Sample & data availability	Yes	Comprehensive data availability statement
+18.0	AI usage	No	No mention of AI usage
