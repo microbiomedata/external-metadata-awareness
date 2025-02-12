@@ -1,0 +1,29 @@
+
+Usual flow:
+Identify the DOIs for journal articles linked to NMDC studies. Add DOIs from a few Eloe-Fadrosh papers over the 2000s. Paste into web browser with http://doi.org/ base. Let the website/browser determine the name of the downloaded PDF file.
+Set to Claude 3.5 Sonnet. I have not ever changed the response style setting. I think it was always in the "choose style" state, which equals "Normal"?
+Upload a PDF and "streams_final.tsv" (does the order matter?)
+Paste in claude_3.5_sonnet_prompt_v2.txt and click the submit button
+
+Hasn't ever provide a link for downloading a TSV file.
+Usually puts tab-separated content in the artifact pane to the right with a click to download button. The files obtained form that have almost always had an .md extnesion, but they have always been tab separated values.
+Sometimes puts response in chat flow with click to copy button
+Sometimes generates outline-like analysis, either in the artifact pane (instead of TSV) or in the chat flow, in addition to the TSV in the artifact pane
+	The first that time happened, I uploaded a completed TSV output and said to regenerate the output in the same style, without retaining any of the content, but rather extracting new content from the PDF. Don't remember which PDF that was for.
+	Subsequently: "The response must be given as tab separated values as originally requested"
+Click download button (or copy from chat flow and paste into text editor). Rename (or save) with same base-name as the input PDF.
+
+Attach next PDF and "now analyze this article"
+
+Skipped "Environmental Microbiology - 2022 - Olmsted - Environmental predictors of electroactive bacterioplankton in small boreal.pdf" because it exceeded Clause's upload size limit
+
+25 articles + 67 standards elements?
+
+Net steps:
+	Automate with OntoGPT (which will require converting the streams_final.tsv into a LinkML schema template
+	Ask for section and page identifiers in all reponses plus an extract of the suporting text
+	Refine strategy for dealing with non-TSV content, especially if we continue to do thsi interactively
+	Ask for a review of the TSV output so far and ask for suggesting about refining the
+
+
+I have developed some code for automating PDF download, but that only gets a small subset. Also experimented with code that converts the DOIs to a URL that gets as close to manually downloading the article sin the browser as possible.
