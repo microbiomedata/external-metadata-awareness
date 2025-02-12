@@ -1,68 +1,68 @@
 Question Number	Item	Yes Votes	No Votes	NA Votes
-1.0	Structured or unstructured abstract	9	0	0
-1.1	Study design	9	0	0
-1.2	Environmental & sample information	9	0	0
-1.3	Host information (if applicable)	1	0	8
-1.4	Experiments & omics methods	9	0	0
-1.5	Analyses & results	9	0	0
-2.0	Background & rationale	9	0	0
-2.1	Hypotheses or questions	9	0	0
-3.0	Study design	8	0	1
-3.1	Samples	8	0	1
-3.2	Environmental context & geographic location	8	0	1
-3.3	Relevant dates	9	0	0
-3.4	Host(s) (if applicable)	1	0	8
-3.5	Ethics	1	4	4
-3.6	Environmental conditions & experimental treatments	8	0	1
-3.7	Sample collection	8	0	1
-3.8	Eligibility/selection criteria	8	0	1
-3.9	Analytic sample size	9	0	0
-4.0	Storage & preservation	8	0	1
-4.1	Shipping	5	2	2
-4.2	Extraction methods	7	0	2
-4.3	Experiments & sample processing	8	0	1
-4.4	Library preparation	4	0	5
-4.5	Depletion, enrichment, & multiplexing	2	0	7
-4.6	Primer selection	0	0	9
-5.0	Positive controls	0	8	1
-5.1	Negative controls	2	6	1
-6.0	Quantification & quality assessments	8	0	1
-6.1	Contaminant mitigation & identification	4	4	1
-6.2	Replication	7	1	1
-6.3	Sequencing methods	4	0	5
-6.4	Metabolomics, metaproteomics, & other omics methods	2	0	7
-6.5	Contextual & linked datasets	7	2	0
-6.6	Batch effects	1	7	1
-7.0	Bioinformatics analyses	8	0	1
-7.1	Quality control	8	0	1
-7.2	Normalization	8	0	1
-7.3	Database information	5	0	4
-7.4	Statistical methods	8	0	1
-7.5	Missing data	0	8	1
-7.6	Bias & confounding variables	6	2	1
-7.7	Subgroup analysis	8	0	1
-7.8	Sensitivity analyses	3	5	1
-7.9	Criteria for significance	8	0	1
-8.0	Metadata access	9	0	0
-8.1	Host data access (if applicable)	1	0	8
-8.2	Raw data access	8	0	1
-8.3	Processed data access	8	0	1
-8.4	Software & source code access	6	2	1
-8.5	Reproducible research	5	3	1
-9.0	Descriptive data	9	0	0
-10.0	Microbiome sequencing data	3	0	6
-10.1	Metabolomics, proteomics, & other omics data	2	0	7
-10.2	Statistical analyses	8	0	1
-10.3	Figures, tables, & captions	8	1	0
-11.0	Key results	9	0	0
-11.1	Interpretation	9	0	0
-11.2	Limitations	8	1	0
-11.3	Generalizability	8	1	0
-12.0	Ongoing & future work	7	2	0
-13.0	Conclusions	9	0	0
-14.0	Acknowledgements	8	1	0
-14.1	Funding	8	1	0
-15.0	Conflicts of interest	5	4	0
-16.0	Supplementary data & files	7	2	0
-17.0	Sample & data availability	8	0	1
-18.0	AI usage	0	5	4
+1.0	Structured or unstructured abstract	22	0	0
+1.1	Study design	22	0	0
+1.2	Environmental & sample information	22	0	0
+1.3	Host information (if applicable)	7	0	15
+1.4	Experiments & omics methods	22	0	0
+1.5	Analyses & results	22	0	0
+2.0	Background & rationale	22	0	0
+2.1	Hypotheses or questions	22	0	0
+3.0	Study design	21	0	1
+3.1	Samples	21	0	1
+3.2	Environmental context & geographic location	21	0	1
+3.3	Relevant dates	20	2	0
+3.4	Host(s) (if applicable)	7	0	15
+3.5	Ethics	4	7	11
+3.6	Environmental conditions & experimental treatments	21	0	1
+3.7	Sample collection	21	0	1
+3.8	Eligibility/selection criteria	19	2	1
+3.9	Analytic sample size	22	0	0
+4.0	Storage & preservation	21	0	1
+4.1	Shipping	10	6	6
+4.2	Extraction methods	20	0	2
+4.3	Experiments & sample processing	21	0	1
+4.4	Library preparation	15	0	7
+4.5	Depletion, enrichment, & multiplexing	13	0	9
+4.6	Primer selection	7	0	15
+5.0	Positive controls	4	17	1
+5.1	Negative controls	8	13	1
+6.0	Quantification & quality assessments	21	0	1
+6.1	Contaminant mitigation & identification	17	4	1
+6.2	Replication	18	3	1
+6.3	Sequencing methods	15	0	7
+6.4	Metabolomics, metaproteomics, & other omics methods	7	0	15
+6.5	Contextual & linked datasets	18	4	0
+6.6	Batch effects	7	14	1
+7.0	Bioinformatics analyses	21	0	1
+7.1	Quality control	21	0	1
+7.2	Normalization	19	2	1
+7.3	Database information	17	0	5
+7.4	Statistical methods	18	2	2
+7.5	Missing data	9	12	1
+7.6	Bias & confounding variables	16	5	1
+7.7	Subgroup analysis	17	0	5
+7.8	Sensitivity analyses	6	12	4
+7.9	Criteria for significance	19	0	3
+8.0	Metadata access	22	0	0
+8.1	Host data access (if applicable)	7	0	15
+8.2	Raw data access	21	0	1
+8.3	Processed data access	21	0	1
+8.4	Software & source code access	19	2	1
+8.5	Reproducible research	18	3	1
+9.0	Descriptive data	22	0	0
+10.0	Microbiome sequencing data	13	0	9
+10.1	Metabolomics, proteomics, & other omics data	8	0	14
+10.2	Statistical analyses	18	1	3
+10.3	Figures, tables, & captions	21	1	0
+11.0	Key results	22	0	0
+11.1	Interpretation	22	0	0
+11.2	Limitations	21	1	0
+11.3	Generalizability	19	3	0
+12.0	Ongoing & future work	16	5	1
+13.0	Conclusions	20	2	0
+14.0	Acknowledgements	21	1	0
+14.1	Funding	21	1	0
+15.0	Conflicts of interest	16	6	0
+16.0	Supplementary data & files	18	4	0
+17.0	Sample & data availability	21	0	1
+18.0	AI usage	0	16	6
