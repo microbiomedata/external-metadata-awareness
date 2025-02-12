@@ -535,6 +535,73 @@ Number	Item	Vote	Comments	Filename
 16.0	Supplementary data & files	Yes	Supplementary figures and tables provided	alteio-et-al-2020-complementary-metagenomic-approaches-improve-reconstruction-of-microbial-diversity-in-a-forest-soil.tsv
 17.0	Sample & data availability	Yes	Data availability statement with accession numbers	alteio-et-al-2020-complementary-metagenomic-approaches-improve-reconstruction-of-microbial-diversity-in-a-forest-soil.tsv
 18.0	AI usage	NA	Published in 2020, before AI usage reporting requirements	alteio-et-al-2020-complementary-metagenomic-approaches-improve-reconstruction-of-microbial-diversity-in-a-forest-soil.tsv
+1.0	Structured or unstructured abstract	Yes	Abstract is unstructured but contains all recommended elements (background, methods, results, conclusions, significance)	s41597-024-04013-5.tsv
+1.1	Study design	Yes	Study design (high temporal resolution field sampling) stated in abstract	s41597-024-04013-5.tsv
+1.2	Environmental & sample information	Yes	Specifies East Sound, WA coastal waters and marine microbial samples (0.22-1.2 μm fraction)	s41597-024-04013-5.tsv
+1.3	Host information (if applicable)	NA	No host organisms were studied	s41597-024-04013-5.tsv
+1.4	Experiments & omics methods	Yes	States DNA sequencing and metagenomics methods, plus nutrient analysis and flow cytometry	s41597-024-04013-5.tsv
+1.5	Analyses & results	Yes	Describes capturing bloom cycles and providing gene abundances for bacteria, archaea, and viruses	s41597-024-04013-5.tsv
+2.0	Background & rationale	Yes	Extensive background on phytoplankton blooms and their importance provided in Background & Summary section	s41597-024-04013-5.tsv
+2.1	Hypotheses or questions	Yes	Research aim to understand community-level controls on bloom cycles stated in introduction	s41597-024-04013-5.tsv
+3.0	Study design	Yes	Details sampling frequency (4 hours), duration (22 days), location (East Sound, WA), and field vs. lab components throughout Methods	s41597-024-04013-5.tsv
+3.1	Samples	Yes	Sample types, collection methods, and IDs detailed in Methods section	s41597-024-04013-5.tsv
+3.2	Environmental context & geographic location	Yes	Detailed coordinates and site description provided in Methods (Lat: N 48° 40.590′, Long: W 122° 52.994′)	s41597-024-04013-5.tsv
+3.3	Relevant dates	Yes	Study dates specified as May 27-June 18, 2021 with precise timing	s41597-024-04013-5.tsv
+3.4	Host(s) (if applicable)	NA	No host organisms were studied	s41597-024-04013-5.tsv
+3.5	Ethics	No	No statement about permits or research ethics protocols	s41597-024-04013-5.tsv
+3.6	Environmental conditions & experimental treatments	Yes	Details about tides, light levels, and environmental parameters provided throughout	s41597-024-04013-5.tsv
+3.7	Sample collection	Yes	Comprehensive sampling protocol described in Methods	s41597-024-04013-5.tsv
+3.8	Eligibility/selection criteria	Yes	Sample inclusion criteria described in Methods	s41597-024-04013-5.tsv
+3.9	Analytic sample size	Yes	Reports 128 DNA samples out of 133 time points collected	s41597-024-04013-5.tsv
+4.0	Storage & preservation	Yes	Details about sample preservation in DNA/RNA Shield and liquid nitrogen provided	s41597-024-04013-5.tsv
+4.1	Shipping	No	No information about sample transport provided	s41597-024-04013-5.tsv
+4.2	Extraction methods	Yes	DNA extraction methods using Qiagen DNeasy PowerWater kit detailed	s41597-024-04013-5.tsv
+4.3	Experiments & sample processing	Yes	Detailed processing protocols provided in Methods	s41597-024-04013-5.tsv
+4.4	Library preparation	Yes	Detailed library prep protocol provided in Methods	s41597-024-04013-5.tsv
+4.5	Depletion, enrichment, & multiplexing	Yes	Size fractionation and filtering described in Methods	s41597-024-04013-5.tsv
+4.6	Primer selection	NA	Not applicable for metagenomic sequencing	s41597-024-04013-5.tsv
+5.0	Positive controls	No	No mention of positive controls	s41597-024-04013-5.tsv
+5.1	Negative controls	No	No mention of negative controls	s41597-024-04013-5.tsv
+6.0	Quantification & quality assessments	Yes	DNA quantification using Quant-iT DNA Assay Kits described	s41597-024-04013-5.tsv
+6.1	Contaminant mitigation & identification	Yes	BBDuk used to remove contaminants described in Technical Validation	s41597-024-04013-5.tsv
+6.2	Replication	Yes	Biological replicates described for various measurements	s41597-024-04013-5.tsv
+6.3	Sequencing methods	Yes	Detailed Illumina sequencing methods provided	s41597-024-04013-5.tsv
+6.4	Metabolomics, metaproteomics, & other omics methods	NA	Study only used metagenomics	s41597-024-04013-5.tsv
+6.5	Contextual & linked datasets	Yes	Environmental data, nutrients, flow cytometry data provided	s41597-024-04013-5.tsv
+6.6	Batch effects	No	No discussion of batch effects	s41597-024-04013-5.tsv
+7.0	Bioinformatics analyses	Yes	Detailed bioinformatics methods provided in Methods	s41597-024-04013-5.tsv
+7.1	Quality control	Yes	Quality control steps described in Technical Validation	s41597-024-04013-5.tsv
+7.2	Normalization	Yes	Data transformations described in Methods	s41597-024-04013-5.tsv
+7.3	Database information	Yes	References to IMG/M and other databases provided	s41597-024-04013-5.tsv
+7.4	Statistical methods	Yes	Statistical analyses described throughout Methods	s41597-024-04013-5.tsv
+7.5	Missing data	Yes	Missing data points addressed in Results	s41597-024-04013-5.tsv
+7.6	Bias & confounding variables	No	No explicit discussion of potential biases	s41597-024-04013-5.tsv
+7.7	Subgroup analysis	NA	No subgroup analyses performed	s41597-024-04013-5.tsv
+7.8	Sensitivity analyses	No	No sensitivity analyses reported	s41597-024-04013-5.tsv
+7.9	Criteria for significance	No	No explicit significance criteria provided	s41597-024-04013-5.tsv
+8.0	Metadata access	Yes	Detailed data access information provided	s41597-024-04013-5.tsv
+8.1	Host data access (if applicable)	NA	No host organisms were studied	s41597-024-04013-5.tsv
+8.2	Raw data access	Yes	NCBI Sequence Read Archive accession provided	s41597-024-04013-5.tsv
+8.3	Processed data access	Yes	Access to processed data through JGI portal described	s41597-024-04013-5.tsv
+8.4	Software & source code access	Yes	GitHub repository and code availability detailed	s41597-024-04013-5.tsv
+8.5	Reproducible research	Yes	Reproducibility information provided in Code availability section	s41597-024-04013-5.tsv
+9.0	Descriptive data	Yes	Comprehensive environmental and sample characteristics provided	s41597-024-04013-5.tsv
+10.0	Microbiome sequencing data	Yes	Detailed sequencing results provided	s41597-024-04013-5.tsv
+10.1	Metabolomics, proteomics, & other omics data	NA	Study only used metagenomics	s41597-024-04013-5.tsv
+10.2	Statistical analyses	Yes	Statistical results reported throughout Results	s41597-024-04013-5.tsv
+10.3	Figures, tables, & captions	Yes	Clear figures with detailed captions provided	s41597-024-04013-5.tsv
+11.0	Key results	Yes	Key findings summarized in Discussion	s41597-024-04013-5.tsv
+11.1	Interpretation	Yes	Results interpreted in context of objectives	s41597-024-04013-5.tsv
+11.2	Limitations	No	No explicit discussion of study limitations	s41597-024-04013-5.tsv
+11.3	Generalizability	No	No explicit discussion of result generalizability	s41597-024-04013-5.tsv
+12.0	Ongoing & future work	No	No discussion of future research directions	s41597-024-04013-5.tsv
+13.0	Conclusions	Yes	Main conclusions presented in Background & Summary	s41597-024-04013-5.tsv
+14.0	Acknowledgements	Yes	Detailed acknowledgements section provided	s41597-024-04013-5.tsv
+14.1	Funding	Yes	Comprehensive funding information provided	s41597-024-04013-5.tsv
+15.0	Conflicts of interest	Yes	Conflicts of interest statement included	s41597-024-04013-5.tsv
+16.0	Supplementary data & files	Yes	Supplementary datasets described and accessible	s41597-024-04013-5.tsv
+17.0	Sample & data availability	Yes	Comprehensive data availability statement provided	s41597-024-04013-5.tsv
+18.0	AI usage	No	No statement about AI usage in the study	s41597-024-04013-5.tsv
 1.0	Structured or unstructured abstract	Yes	Unstructured abstract present with background, methods, results, and conclusions	microorganisms-09-00357-v2.tsv
 1.1	Study design	Yes	"Study design stated in abstract as ""incubation experiment"""	microorganisms-09-00357-v2.tsv
 1.2	Environmental & sample information	Yes	Describes soil and maize leaf samples from agricultural field	microorganisms-09-00357-v2.tsv
@@ -870,6 +937,73 @@ Number	Item	Vote	Comments	Filename
 16.0	Supplementary data & files	Yes	Supplementary data referenced	2022.12.12.520098v2.full.tsv
 17.0	Sample & data availability	Yes	Data availability described with repository links	2022.12.12.520098v2.full.tsv
 18.0	AI usage	No	No mention of AI usage	2022.12.12.520098v2.full.tsv
+1.0	Structured or unstructured abstract	Yes	Contains unstructured abstract with background, methods, results, significance	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+1.1	Study design	Yes	Describes experimental approach with EcoFAB 2.0 devices and soil treatments in abstract	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+1.2	Environmental & sample information	Yes	Describes soil and maize litter samples obtained from Scheyern, Germany	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+1.3	Host information (if applicable)	Yes	Maize (Zea mays L.) leaf samples characterized with C/N content specified	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+1.4	Experiments & omics methods	Yes	Details LC-MS/MS and 16S rRNA sequencing methods	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+1.5	Analyses & results	Yes	Reports findings on diversity effects on decomposition rates	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+2.0	Background & rationale	Yes	Comprehensive introduction with citations establishing importance of plant litter decomposition	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+2.1	Hypotheses or questions	Yes	Clear hypotheses stated on pg. 2 regarding iN form and starvation effects	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+3.0	Study design	Yes	Details experimental design with three soil treatments and controls	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+3.1	Samples	Yes	Describes soil and litter sample collection and processing (pg. 3)	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+3.2	Environmental context & geographic location	Yes	Agricultural field in Scheyern, Germany with coordinates provided	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+3.3	Relevant dates	Yes	October 2015 sampling date specified	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+3.4	Host(s) (if applicable)	Yes	Maize characteristics described	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+3.5	Ethics	NA	Not required for plant/soil research	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+3.6	Environmental conditions & experimental treatments	Yes	Detailed experimental conditions described in Methods	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+3.7	Sample collection	Yes	Complete sampling protocols provided	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+3.8	Eligibility/selection criteria	Yes	Sample inclusion criteria specified	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+3.9	Analytic sample size	Yes	Three replicates per treatment specified	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+4.0	Storage & preservation	Yes	Sample storage conditions described (-20°C)	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+4.1	Shipping	No	Not mentioned	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+4.2	Extraction methods	Yes	DNA extraction methods detailed	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+4.3	Experiments & sample processing	Yes	Complete processing protocols provided	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+4.4	Library preparation	Yes	Library prep for sequencing detailed	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+4.5	Depletion, enrichment, & multiplexing	Yes	PCR and sequencing protocols specified	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+4.6	Primer selection	Yes	Primer information provided in Methods	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+5.0	Positive controls	No	Not mentioned	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+5.1	Negative controls	Yes	Extraction controls mentioned	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+6.0	Quantification & quality assessments	Yes	Quality control steps described	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+6.1	Contaminant mitigation & identification	Yes	Contamination control measures described	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+6.2	Replication	Yes	Three replicates per treatment	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+6.3	Sequencing methods	Yes	Detailed sequencing methods provided	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+6.4	Metabolomics, metaproteomics, & other omics methods	Yes	LC-MS/MS methods detailed	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+6.5	Contextual & linked datasets	Yes	Data availability stated	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+6.6	Batch effects	No	Not discussed	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+7.0	Bioinformatics analyses	Yes	Complete bioinformatics pipeline described	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+7.1	Quality control	Yes	QC steps detailed	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+7.2	Normalization	Yes	Data normalization methods described	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+7.3	Database information	Yes	SILVA database version specified	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+7.4	Statistical methods	Yes	Statistical analyses detailed	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+7.5	Missing data	No	Not addressed	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+7.6	Bias & confounding variables	Yes	Potential confounders discussed	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+7.7	Subgroup analysis	Yes	Treatment group comparisons described	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+7.8	Sensitivity analyses	No	Not mentioned	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+7.9	Criteria for significance	Yes	Statistical significance criteria specified	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+8.0	Metadata access	Yes	Data accession numbers provided	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+8.1	Host data access (if applicable)	Yes	Maize characteristics data provided	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+8.2	Raw data access	Yes	Sequence data deposited in NCBI SRA	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+8.3	Processed data access	Yes	Processed data availability stated	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+8.4	Software & source code access	Yes	Analysis code available on GitHub	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+8.5	Reproducible research	Yes	Methods thoroughly described for reproducibility	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+9.0	Descriptive data	Yes	Sample characteristics provided	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+10.0	Microbiome sequencing data	Yes	Sequencing results reported	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+10.1	Metabolomics, proteomics, & other omics data	Yes	LC-MS/MS results reported	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+10.2	Statistical analyses	Yes	Statistical results presented	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+10.3	Figures, tables, & captions	Yes	Clear figures with detailed captions	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+11.0	Key results	Yes	Main findings summarized	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+11.1	Interpretation	Yes	Results discussed in context	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+11.2	Limitations	Yes	Study limitations discussed	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+11.3	Generalizability	Yes	Result generalizability addressed	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+12.0	Ongoing & future work	Yes	Future directions outlined	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+13.0	Conclusions	Yes	Clear conclusions presented	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+14.0	Acknowledgements	Yes	Funding and contributions acknowledged	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+14.1	Funding	Yes	Funding sources listed	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+15.0	Conflicts of interest	Yes	COI statement included	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+16.0	Supplementary data & files	Yes	Supplementary materials described	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+17.0	Sample & data availability	Yes	Data availability statement provided	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
+18.0	AI usage	No	No mention of AI use	Soil_Bacterial_Diversity_Is_Positively_Correlated_.tsv
 1.0	Structured or unstructured abstract	Yes	Contains structured abstract with background, methods, results, conclusions and significance, p.1149	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
 1.1	Study design	Yes	"Abstract states ""utilized fabricated ecosystem (EcoFAB) devices to grow the model grass Brachypodium distachyon in three distinct media across four laboratories"", p.1149"	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
 1.2	Environmental & sample information	Yes	"Abstract describes three media conditions studied: ""phosphate-sufficient and -deficient mineral media"" and ""complex, sterile soil extract"", p.1149"	New Phytologist - 2018 - Sasse - Multilab EcoFAB study shows highly reproducible physiology and depletion of soil.tsv
@@ -1205,6 +1339,73 @@ Number	Item	Vote	Comments	Filename
 16.0	Supplementary data & files	Yes	Supplementary materials referenced including user guide.	gkab990.tsv
 17.0	Sample & data availability	Yes	Data portal URL and GitHub repository provided.	gkab990.tsv
 18.0	AI usage	No	No mention of AI usage in manuscript preparation or analysis.	gkab990.tsv
+1.0	Structured or unstructured abstract	Yes	Contains unstructured abstract with background, methods, results and significance (pg. 1)	sciadv.adg7888.tsv
+1.1	Study design	Yes	States hydroponic growth experiment design and timeframes in abstract and Fig 1B	sciadv.adg7888.tsv
+1.2	Environmental & sample information	Yes	Details EcoFAB 2.0 hydroponic system and B. distachyon samples	sciadv.adg7888.tsv
+1.3	Host information (if applicable)	Yes	B. distachyon Bd21-3 strain specified with removed lemma 	sciadv.adg7888.tsv
+1.4	Experiments & omics methods	Yes	Describes LC-MS/MS metabolomics, bacterial growth assays (pg. 1)	sciadv.adg7888.tsv
+1.5	Analyses & results	Yes	Reports key findings on nitrogen effects on exudation (pg. 1)	sciadv.adg7888.tsv
+2.0	Background & rationale	Yes	Extensive introduction with citations on nitrogen effects and plant exudation (pg. 1-2)	sciadv.adg7888.tsv
+2.1	Hypotheses or questions	Yes	"Clear hypothesis stated on pg. 2: ""iN form and starvation will change plant exudate profile"""	sciadv.adg7888.tsv
+3.0	Study design	Yes	Detailed experimental design with replication and controls described (pg. 2, Fig 1B)	sciadv.adg7888.tsv
+3.1	Samples	Yes	Sample collection and processing detailed in Methods (pg. 2-3)	sciadv.adg7888.tsv
+3.2	Environmental context & geographic location	Yes	Laboratory conditions specified including light, temperature (pg. 2)	sciadv.adg7888.tsv
+3.3	Relevant dates	No	Experimental timeline given but calendar dates not provided	sciadv.adg7888.tsv
+3.4	Host(s) (if applicable)	Yes	Host plant B. distachyon Bd21-3 characteristics described (pg. 1)	sciadv.adg7888.tsv
+3.5	Ethics	NA	Not required for plant research	sciadv.adg7888.tsv
+3.6	Environmental conditions & experimental treatments	Yes	Growth conditions and N treatments fully detailed (pg. 2-3)	sciadv.adg7888.tsv
+3.7	Sample collection	Yes	Comprehensive sampling protocols provided (pg. 3-4)	sciadv.adg7888.tsv
+3.8	Eligibility/selection criteria	Yes	Sample inclusion criteria described in Methods	sciadv.adg7888.tsv
+3.9	Analytic sample size	Yes	States 5 biological replicates per treatment group (pg. 2)	sciadv.adg7888.tsv
+4.0	Storage & preservation	Yes	Sample preservation methods described in Methods (pg. 3)	sciadv.adg7888.tsv
+4.1	Shipping	NA	Not applicable - lab-based study	sciadv.adg7888.tsv
+4.2	Extraction methods	Yes	DNA/metabolite extraction methods detailed (pg. 4)	sciadv.adg7888.tsv
+4.3	Experiments & sample processing	Yes	Sample handling and analysis protocols provided (pg. 3-4)	sciadv.adg7888.tsv
+4.4	Library preparation	NA	Not applicable - metabolomics study	sciadv.adg7888.tsv
+4.5	Depletion, enrichment, & multiplexing	NA	Not applicable - metabolomics study  	sciadv.adg7888.tsv
+4.6	Primer selection	NA	Not applicable - metabolomics study	sciadv.adg7888.tsv
+5.0	Positive controls	Yes	Technical controls included (pg. 2)	sciadv.adg7888.tsv
+5.1	Negative controls	Yes	Extraction controls described (pg. 4)	sciadv.adg7888.tsv
+6.0	Quantification & quality assessments	Yes	Quality control parameters detailed (pg. 4)	sciadv.adg7888.tsv
+6.1	Contaminant mitigation & identification	Yes	Contaminant filtering described (pg. 4)	sciadv.adg7888.tsv
+6.2	Replication	Yes	5 biological replicates per treatment specified (pg. 2)	sciadv.adg7888.tsv
+6.3	Sequencing methods	NA	Not applicable - metabolomics study	sciadv.adg7888.tsv
+6.4	Metabolomics, metaproteomics, & other omics methods	Yes	Detailed LC-MS/MS methods provided (pg. 4)	sciadv.adg7888.tsv
+6.5	Contextual & linked datasets	Yes	Associated data and code availability stated (pg. 14)	sciadv.adg7888.tsv
+6.6	Batch effects	Yes	Discusses technical variability (pg. 8)	sciadv.adg7888.tsv
+7.0	Bioinformatics analyses	Yes	Data analysis methods detailed (pg. 4-5)	sciadv.adg7888.tsv
+7.1	Quality control	Yes	QC filtering described (pg. 4)	sciadv.adg7888.tsv
+7.2	Normalization	Yes	Data normalization methods described (pg. 4)	sciadv.adg7888.tsv
+7.3	Database information	Yes	GNPS and other databases specified (pg. 4)	sciadv.adg7888.tsv
+7.4	Statistical methods	Yes	Statistical analyses detailed (pg. 4-5)	sciadv.adg7888.tsv
+7.5	Missing data	Yes	Handling of missing data addressed (pg. 8)	sciadv.adg7888.tsv
+7.6	Bias & confounding variables	Yes	Technical variability discussed (pg. 8)	sciadv.adg7888.tsv
+7.7	Subgroup analysis	NA	Not applicable to study design	sciadv.adg7888.tsv
+7.8	Sensitivity analyses	No	No explicit sensitivity analyses reported	sciadv.adg7888.tsv
+7.9	Criteria for significance	Yes	Statistical significance criteria specified (p. 4)	sciadv.adg7888.tsv
+8.0	Metadata access	Yes	Data availability statements provided (p. 14)	sciadv.adg7888.tsv
+8.1	Host data access (if applicable)	Yes	Phenotype data availability stated (p. 14) 	sciadv.adg7888.tsv
+8.2	Raw data access	Yes	MS data availability in MassIVE specified (p. 14)	sciadv.adg7888.tsv
+8.3	Processed data access	Yes	Processed data availability stated (p. 14)	sciadv.adg7888.tsv
+8.4	Software & source code access	Yes	Code availability on GitHub detailed (p. 14)	sciadv.adg7888.tsv
+8.5	Reproducible research	Yes	Reproducibility information provided (p. 14)	sciadv.adg7888.tsv
+9.0	Descriptive data	Yes	Sample characteristics described (pg. 2-3)	sciadv.adg7888.tsv
+10.0	Microbiome sequencing data	NA	Not applicable - metabolomics study	sciadv.adg7888.tsv
+10.1	Metabolomics, proteomics, & other omics data	Yes	Metabolomics results reported (pg. 4-6)	sciadv.adg7888.tsv
+10.2	Statistical analyses	Yes	Statistical results presented throughout	sciadv.adg7888.tsv
+10.3	Figures, tables, & captions	Yes	Clear figures with detailed captions provided	sciadv.adg7888.tsv
+11.0	Key results	Yes	Key findings summarized (pg. 8-9)	sciadv.adg7888.tsv
+11.1	Interpretation	Yes	Results interpreted in context (pg. 8-9)	sciadv.adg7888.tsv
+11.2	Limitations	Yes	Study limitations discussed (pg. 9)	sciadv.adg7888.tsv
+11.3	Generalizability	Yes	Result generalizability discussed (pg. 9)	sciadv.adg7888.tsv
+12.0	Ongoing & future work	Yes	Future directions outlined (pg. 9)	sciadv.adg7888.tsv
+13.0	Conclusions	Yes	Clear conclusions presented (pg. 10)	sciadv.adg7888.tsv
+14.0	Acknowledgements	Yes	Detailed acknowledgements provided (pg. 14)	sciadv.adg7888.tsv
+14.1	Funding	Yes	Funding sources listed (pg. 14)	sciadv.adg7888.tsv
+15.0	Conflicts of interest	Yes	COI statement included (pg. 14)	sciadv.adg7888.tsv
+16.0	Supplementary data & files	Yes	Supplementary materials described (pg. 14)	sciadv.adg7888.tsv
+17.0	Sample & data availability	Yes	Comprehensive data availability statement (pg. 14)	sciadv.adg7888.tsv
+18.0	AI usage	No	No statement about AI usage provided	sciadv.adg7888.tsv
 1.0	Structured or unstructured abstract	Yes	Unstructured abstract present, includes all recommended sections (background, methods, results, conclusions)	blair-et-al-2018-exploration-of-the-biosynthetic-potential-of-the-populus-microbiome.tsv
 1.1	Study design	Yes	Study design described in abstract - analysis of bacterial isolate genomes and metagenome samples	blair-et-al-2018-exploration-of-the-biosynthetic-potential-of-the-populus-microbiome.tsv
 1.2	Environmental & sample information	Yes	Specific source described as Populus root microbiome, both rhizosphere and endosphere samples	blair-et-al-2018-exploration-of-the-biosynthetic-potential-of-the-populus-microbiome.tsv
