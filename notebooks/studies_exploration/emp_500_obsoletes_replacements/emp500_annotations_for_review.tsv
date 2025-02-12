@@ -1,0 +1,559 @@
+accession	problematic_key	problematic_value	consider_replacements
+SAMEA7723392	env_broad_scale	Small lake biome	
+SAMEA7723393	env_broad_scale	Small lake biome	
+SAMEA7723394	env_broad_scale	Small lake biome	
+SAMEA7723395	env_broad_scale	Small lake biome	
+SAMEA7723396	env_broad_scale	Small lake biome	
+SAMEA7723397	env_broad_scale	Small lake biome	
+SAMEA7723398	env_broad_scale	Small lake biome	
+SAMEA7723399	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723400	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723401	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723402	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723403	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723404	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723405	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723406	env_local_scale	host-associated habitat	
+SAMEA7723407	env_local_scale	host-associated habitat	
+SAMEA7723408	env_local_scale	host-associated habitat	
+SAMEA7723409	env_local_scale	host-associated habitat	
+SAMEA7723410	env_local_scale	animal-associated habitat	
+SAMEA7723411	env_local_scale	animal-associated habitat	
+SAMEA7723412	env_local_scale	animal-associated habitat	
+SAMEA7723413	env_local_scale	animal-associated habitat	
+SAMEA7723414	env_local_scale	animal-associated habitat	
+SAMEA7723415	env_local_scale	animal-associated habitat	
+SAMEA7723416	env_local_scale	animal-associated habitat	
+SAMEA7723419	env_local_scale	mangrove	
+SAMEA7723437	env_local_scale	intermittent pond	
+SAMEA7723438	env_local_scale	intermittent pond	
+SAMEA7723439	env_local_scale	intermittent pond	
+SAMEA7723452	env_local_scale	animal-associated habitat	
+SAMEA7723453	env_local_scale	animal-associated habitat	
+SAMEA7723454	env_local_scale	animal-associated habitat	
+SAMEA7723455	env_local_scale	host-associated habitat	
+SAMEA7723456	env_local_scale	host-associated habitat	
+SAMEA7723457	env_local_scale	host-associated habitat	
+SAMEA7723458	env_local_scale	host-associated habitat	
+SAMEA7723459	env_local_scale	host-associated habitat	
+SAMEA7723460	env_local_scale	insecta-associated habitat	
+SAMEA7723461	env_local_scale	insecta-associated habitat	
+SAMEA7723462	env_local_scale	insecta-associated habitat	
+SAMEA7723463	env_local_scale	insecta-associated habitat	
+SAMEA7723464	env_local_scale	insecta-associated habitat	
+SAMEA7723465	env_local_scale	insecta-associated habitat	
+SAMEA7723466	env_local_scale	insecta-associated habitat	
+SAMEA7723467	env_local_scale	insecta-associated habitat	
+SAMEA7723468	env_local_scale	insecta-associated habitat	
+SAMEA7723469	env_local_scale	insecta-associated habitat	
+SAMEA7723470	env_local_scale	insecta-associated habitat	
+SAMEA7723471	env_local_scale	insecta-associated habitat	
+SAMEA7723472	env_local_scale	insecta-associated habitat	
+SAMEA7723473	env_local_scale	insecta-associated habitat	
+SAMEA7723474	env_local_scale	insecta-associated habitat	
+SAMEA7723475	env_local_scale	insecta-associated habitat	
+SAMEA7723476	env_local_scale	insecta-associated habitat	
+SAMEA7723479	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723480	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723481	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723482	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723483	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723484	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723485	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723486	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723487	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723488	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723489	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723490	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723491	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723492	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723493	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723494	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723495	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723498	env_local_scale	animal-associated habitat	
+SAMEA7723499	env_local_scale	animal-associated habitat	
+SAMEA7723500	env_local_scale	animal-associated habitat	
+SAMEA7723501	env_local_scale	animal-associated habitat	
+SAMEA7723502	env_local_scale	animal-associated habitat	
+SAMEA7723503	env_local_scale	animal-associated habitat	
+SAMEA7723504	env_local_scale	animal-associated habitat	
+SAMEA7723505	env_local_scale	animal-associated habitat	
+SAMEA7723506	env_local_scale	animal-associated habitat	
+SAMEA7723507	env_local_scale	animal-associated habitat	
+SAMEA7723508	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723509	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723510	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723511	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723512	env_local_scale	animal-associated habitat	
+SAMEA7723513	env_local_scale	animal-associated habitat	
+SAMEA7723514	env_local_scale	animal-associated habitat	
+SAMEA7723515	env_local_scale	animal-associated habitat	
+SAMEA7723516	env_local_scale	animal-associated habitat	
+SAMEA7723517	env_local_scale	animal-associated habitat	
+SAMEA7723518	env_local_scale	animal-associated habitat	
+SAMEA7723519	env_local_scale	animal-associated habitat	
+SAMEA7723520	env_local_scale	animal-associated habitat	
+SAMEA7723521	env_local_scale	animal-associated habitat	
+SAMEA7723522	env_local_scale	animal-associated habitat	
+SAMEA7723523	env_local_scale	animal-associated habitat	
+SAMEA7723524	env_local_scale	animal-associated habitat	
+SAMEA7723525	env_local_scale	animal-associated habitat	
+SAMEA7723526	env_local_scale	animal-associated habitat	
+SAMEA7723527	env_local_scale	animal-associated habitat	
+SAMEA7723528	env_local_scale	animal-associated habitat	
+SAMEA7723529	env_local_scale	animal-associated habitat	
+SAMEA7723530	env_local_scale	animal-associated habitat	
+SAMEA7723531	env_local_scale	animal-associated habitat	
+SAMEA7723532	env_local_scale	animal-associated habitat	
+SAMEA7723533	env_local_scale	animal-associated habitat	
+SAMEA7723534	env_local_scale	animal-associated habitat	
+SAMEA7723535	env_local_scale	animal-associated habitat	
+SAMEA7723536	env_local_scale	animal-associated habitat	
+SAMEA7723537	env_local_scale	animal-associated habitat	
+SAMEA7723538	env_local_scale	animal-associated habitat	
+SAMEA7723539	env_medium	coastal water	
+SAMEA7723540	env_medium	coastal water	
+SAMEA7723541	env_medium	coastal water	
+SAMEA7723542	env_medium	coastal water	
+SAMEA7723551	env_local_scale	bog	
+SAMEA7723552	env_local_scale	bog	
+SAMEA7723599	env_broad_scale	Small lake biome	
+SAMEA7723600	env_broad_scale	Small lake biome	
+SAMEA7723601	env_broad_scale	Small lake biome	
+SAMEA7723602	env_broad_scale	Small lake biome	
+SAMEA7723603	env_broad_scale	Small lake biome	
+SAMEA7723604	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723605	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723606	env_local_scale	host-associated habitat	
+SAMEA7723607	env_local_scale	host-associated habitat	
+SAMEA7723608	env_local_scale	host-associated habitat	
+SAMEA7723609	env_local_scale	animal-associated habitat	
+SAMEA7723611	env_local_scale	intermittent pond	
+SAMEA7723612	env_local_scale	intermittent pond	
+SAMEA7723617	env_local_scale	host-associated habitat	
+SAMEA7723618	env_local_scale	host-associated habitat	
+SAMEA7723619	env_local_scale	host-associated habitat	
+SAMEA7723620	env_local_scale	host-associated habitat	
+SAMEA7723621	env_local_scale	host-associated habitat	
+SAMEA7723622	env_local_scale	host-associated habitat	
+SAMEA7723623	env_local_scale	host-associated habitat	
+SAMEA7723624	env_local_scale	host-associated habitat	
+SAMEA7723625	env_local_scale	host-associated habitat	
+SAMEA7723626	env_local_scale	host-associated habitat	
+SAMEA7723627	env_local_scale	host-associated habitat	
+SAMEA7723628	env_local_scale	host-associated habitat	
+SAMEA7723629	env_local_scale	host-associated habitat	
+SAMEA7723630	env_local_scale	host-associated habitat	
+SAMEA7723631	env_local_scale	host-associated habitat	
+SAMEA7723632	env_local_scale	host-associated habitat	
+SAMEA7723633	env_local_scale	host-associated habitat	
+SAMEA7723634	env_local_scale	host-associated habitat	
+SAMEA7723635	env_local_scale	host-associated habitat	
+SAMEA7723636	env_local_scale	host-associated habitat	
+SAMEA7723637	env_local_scale	host-associated habitat	
+SAMEA7723638	env_local_scale	host-associated habitat	
+SAMEA7723639	env_local_scale	host-associated habitat	
+SAMEA7723640	env_local_scale	host-associated habitat	
+SAMEA7723641	env_local_scale	host-associated habitat	
+SAMEA7723642	env_local_scale	host-associated habitat	
+SAMEA7723643	env_local_scale	host-associated habitat	
+SAMEA7723644	env_local_scale	host-associated habitat	
+SAMEA7723645	env_local_scale	host-associated habitat	
+SAMEA7723646	env_local_scale	host-associated habitat	
+SAMEA7723647	env_local_scale	host-associated habitat	
+SAMEA7723648	env_local_scale	host-associated habitat	
+SAMEA7723649	env_local_scale	host-associated habitat	
+SAMEA7723650	env_local_scale	host-associated habitat	
+SAMEA7723651	env_local_scale	host-associated habitat	
+SAMEA7723652	env_local_scale	host-associated habitat	
+SAMEA7723653	env_local_scale	host-associated habitat	
+SAMEA7723654	env_local_scale	host-associated habitat	
+SAMEA7723655	env_local_scale	host-associated habitat	
+SAMEA7723656	env_local_scale	host-associated habitat	
+SAMEA7723657	env_local_scale	host-associated habitat	
+SAMEA7723658	env_local_scale	host-associated habitat	
+SAMEA7723659	env_local_scale	host-associated habitat	
+SAMEA7723660	env_local_scale	host-associated habitat	
+SAMEA7723661	env_local_scale	host-associated habitat	
+SAMEA7723662	env_local_scale	host-associated habitat	
+SAMEA7723663	env_local_scale	host-associated habitat	
+SAMEA7723664	env_local_scale	host-associated habitat	
+SAMEA7723665	env_local_scale	host-associated habitat	
+SAMEA7723666	env_local_scale	host-associated habitat	
+SAMEA7723667	env_local_scale	host-associated habitat	
+SAMEA7723668	env_local_scale	host-associated habitat	
+SAMEA7723669	env_local_scale	host-associated habitat	
+SAMEA7723670	env_local_scale	host-associated habitat	
+SAMEA7723676	env_local_scale	insecta-associated habitat	
+SAMEA7723677	env_local_scale	insecta-associated habitat	
+SAMEA7723678	env_local_scale	insecta-associated habitat	
+SAMEA7723679	env_local_scale	insecta-associated habitat	
+SAMEA7723680	env_local_scale	insecta-associated habitat	
+SAMEA7723681	env_local_scale	insecta-associated habitat	
+SAMEA7723682	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723683	env_local_scale	animal-associated habitat	
+SAMEA7723684	env_local_scale	animal-associated habitat	
+SAMEA7723685	env_local_scale	animal-associated habitat	
+SAMEA7723689	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723690	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723691	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723692	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723693	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723694	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723695	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723696	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723697	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723698	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723699	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723700	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723701	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723702	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723703	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723704	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723705	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723706	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723707	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723708	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723709	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723710	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723711	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723712	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723713	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723714	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723715	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723716	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723717	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723718	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723719	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723720	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723721	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723722	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723723	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723724	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723725	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723726	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723727	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723728	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723729	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723730	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723731	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723732	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723733	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723734	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723740	env_local_scale	bog	
+SAMEA7723792	env_local_scale	oil reservior	
+SAMEA7723793	env_local_scale	oil reservior	
+SAMEA7723794	env_local_scale	oil reservior	
+SAMEA7723795	env_local_scale	oil reservior	
+SAMEA7723796	env_local_scale	oil reservior	
+SAMEA7723797	env_local_scale	oil reservior	
+SAMEA7723798	env_local_scale	oil reservior	
+SAMEA7723799	env_local_scale	oil reservior	
+SAMEA7723800	env_local_scale	oil reservior	
+SAMEA7723801	env_local_scale	oil reservior	
+SAMEA7723802	env_local_scale	oil reservior	
+SAMEA7723803	env_local_scale	oil reservior	
+SAMEA7723804	env_local_scale	oil reservior	
+SAMEA7723805	env_local_scale	oil reservior	
+SAMEA7723849	env_broad_scale	Small lake biome	
+SAMEA7723850	env_broad_scale	Small lake biome	
+SAMEA7723851	env_broad_scale	Small lake biome	
+SAMEA7723852	env_broad_scale	Small lake biome	
+SAMEA7723853	env_broad_scale	Small lake biome	
+SAMEA7723854	env_broad_scale	Small lake biome	
+SAMEA7723855	env_broad_scale	Small lake biome	
+SAMEA7723856	env_broad_scale	Small lake biome	
+SAMEA7723857	env_broad_scale	temperate shrubland	
+SAMEA7723857	env_local_scale	wetland	
+SAMEA7723858	env_broad_scale	temperate shrubland	
+SAMEA7723858	env_local_scale	wetland	
+SAMEA7723859	env_broad_scale	temperate shrubland	
+SAMEA7723859	env_local_scale	wetland	
+SAMEA7723860	env_local_scale	forest	
+SAMEA7723861	env_local_scale	forest	
+SAMEA7723862	env_local_scale	forest	
+SAMEA7723863	env_local_scale	forest	
+SAMEA7723863	env_medium	pitcher plant fluid	
+SAMEA7723864	env_local_scale	forest	
+SAMEA7723864	env_medium	pitcher plant fluid	
+SAMEA7723865	env_local_scale	forest	
+SAMEA7723865	env_medium	pitcher plant fluid	
+SAMEA7723866	env_broad_scale	flooded savanna	
+SAMEA7723866	env_local_scale	wetland	
+SAMEA7723867	env_local_scale	wetland	
+SAMEA7723868	env_local_scale	wetland	
+SAMEA7723869	env_broad_scale	temperate shrubland	
+SAMEA7723869	env_local_scale	wetland	
+SAMEA7723869	env_medium	pitcher plant fluid	
+SAMEA7723870	env_broad_scale	temperate shrubland	
+SAMEA7723870	env_local_scale	wetland	
+SAMEA7723870	env_medium	pitcher plant fluid	
+SAMEA7723871	env_broad_scale	temperate shrubland	
+SAMEA7723871	env_local_scale	wetland	
+SAMEA7723871	env_medium	pitcher plant fluid	
+SAMEA7723872	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723873	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723874	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723875	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723876	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723877	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723878	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723882	env_local_scale	host-associated habitat	
+SAMEA7723883	env_local_scale	host-associated habitat	
+SAMEA7723884	env_local_scale	host-associated habitat	
+SAMEA7723885	env_local_scale	host-associated habitat	
+SAMEA7723886	env_local_scale	host-associated habitat	
+SAMEA7723887	env_local_scale	host-associated habitat	
+SAMEA7723888	env_local_scale	host-associated habitat	
+SAMEA7723889	env_local_scale	host-associated habitat	
+SAMEA7723890	env_local_scale	animal-associated habitat	
+SAMEA7723891	env_local_scale	animal-associated habitat	
+SAMEA7723892	env_local_scale	animal-associated habitat	
+SAMEA7723893	env_local_scale	animal-associated habitat	
+SAMEA7723908	env_local_scale	intermittent pond	
+SAMEA7723909	env_local_scale	intermittent pond	
+SAMEA7723928	env_local_scale	host-associated habitat	
+SAMEA7723939	env_broad_scale	neritic bathypelagic zone biome	
+SAMEA7723957	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723958	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723959	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723960	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723961	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723962	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723963	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723964	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723965	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723966	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723967	env_local_scale	animal-associated habitat	
+SAMEA7723968	env_local_scale	animal-associated habitat	
+SAMEA7723969	env_local_scale	animal-associated habitat	
+SAMEA7723970	env_local_scale	animal-associated habitat	
+SAMEA7723971	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723972	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723973	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723974	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7723975	env_local_scale	animal-associated habitat	
+SAMEA7723976	env_local_scale	animal-associated habitat	
+SAMEA7723977	env_local_scale	animal-associated habitat	
+SAMEA7723978	env_local_scale	animal-associated habitat	
+SAMEA7723979	env_local_scale	animal-associated habitat	
+SAMEA7723980	env_local_scale	animal-associated habitat	
+SAMEA7723981	env_local_scale	animal-associated habitat	
+SAMEA7723982	env_local_scale	animal-associated habitat	
+SAMEA7723983	env_local_scale	animal-associated habitat	
+SAMEA7723984	env_local_scale	animal-associated habitat	
+SAMEA7723985	env_local_scale	animal-associated habitat	
+SAMEA7723986	env_local_scale	animal-associated habitat	
+SAMEA7723987	env_local_scale	animal-associated habitat	
+SAMEA7723988	env_local_scale	animal-associated habitat	
+SAMEA7723989	env_local_scale	animal-associated habitat	
+SAMEA7723990	env_local_scale	animal-associated habitat	
+SAMEA7723991	env_local_scale	animal-associated habitat	
+SAMEA7723992	env_local_scale	animal-associated habitat	
+SAMEA7723993	env_local_scale	animal-associated habitat	
+SAMEA7723994	env_local_scale	animal-associated habitat	
+SAMEA7723995	env_local_scale	animal-associated habitat	
+SAMEA7723996	env_local_scale	animal-associated habitat	
+SAMEA7723997	env_local_scale	animal-associated habitat	
+SAMEA7723998	env_local_scale	animal-associated habitat	
+SAMEA7724005	env_medium	coastal water	
+SAMEA7724006	env_medium	coastal water	
+SAMEA7724007	env_medium	coastal water	
+SAMEA7724008	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724009	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724010	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724011	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724012	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724013	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724014	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724015	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724024	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724025	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724026	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724027	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724028	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724029	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724030	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724031	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724032	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724033	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724034	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724035	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724036	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724037	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724038	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724039	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724107	env_broad_scale	montane grasslands and shrubland biome	ENVO:01000194/montane grassland biome | ENVO:01000216/montane shrubland biome
+SAMEA7724108	env_broad_scale	montane grasslands and shrubland biome	ENVO:01000194/montane grassland biome | ENVO:01000216/montane shrubland biome
+SAMEA7724109	env_broad_scale	montane grasslands and shrubland biome	ENVO:01000194/montane grassland biome | ENVO:01000216/montane shrubland biome
+SAMEA7724110	env_broad_scale	montane grasslands and shrubland biome	ENVO:01000194/montane grassland biome | ENVO:01000216/montane shrubland biome
+SAMEA7724111	env_broad_scale	montane grasslands and shrubland biome	ENVO:01000194/montane grassland biome | ENVO:01000216/montane shrubland biome
+SAMEA7724112	env_broad_scale	montane grasslands and shrubland biome	ENVO:01000194/montane grassland biome | ENVO:01000216/montane shrubland biome
+SAMEA7724113	env_broad_scale	montane grasslands and shrubland biome	ENVO:01000194/montane grassland biome | ENVO:01000216/montane shrubland biome
+SAMEA7724114	env_broad_scale	montane grasslands and shrubland biome	ENVO:01000194/montane grassland biome | ENVO:01000216/montane shrubland biome
+SAMEA7724115	env_broad_scale	montane grasslands and shrubland biome	ENVO:01000194/montane grassland biome | ENVO:01000216/montane shrubland biome
+SAMEA7724116	env_broad_scale	montane grasslands and shrubland biome	ENVO:01000194/montane grassland biome | ENVO:01000216/montane shrubland biome
+SAMEA7724117	env_broad_scale	montane grasslands and shrubland biome	ENVO:01000194/montane grassland biome | ENVO:01000216/montane shrubland biome
+SAMEA7724118	env_broad_scale	montane grasslands and shrubland biome	ENVO:01000194/montane grassland biome | ENVO:01000216/montane shrubland biome
+SAMEA7724137	env_local_scale	host-associated habitat	
+SAMEA7724138	env_local_scale	host-associated habitat	
+SAMEA7724139	env_local_scale	host-associated habitat	
+SAMEA7724140	env_local_scale	host-associated habitat	
+SAMEA7724141	env_local_scale	host-associated habitat	
+SAMEA7724142	env_local_scale	host-associated habitat	
+SAMEA7724143	env_local_scale	host-associated habitat	
+SAMEA7724144	env_local_scale	host-associated habitat	
+SAMEA7724145	env_local_scale	host-associated habitat	
+SAMEA7724146	env_local_scale	host-associated habitat	
+SAMEA7724147	env_local_scale	host-associated habitat	
+SAMEA7724148	env_local_scale	host-associated habitat	
+SAMEA7724149	env_local_scale	host-associated habitat	
+SAMEA7724150	env_local_scale	host-associated habitat	
+SAMEA7724151	env_local_scale	host-associated habitat	
+SAMEA7724152	env_local_scale	host-associated habitat	
+SAMEA7724153	env_local_scale	host-associated habitat	
+SAMEA7724154	env_local_scale	host-associated habitat	
+SAMEA7724155	env_local_scale	host-associated habitat	
+SAMEA7724156	env_local_scale	host-associated habitat	
+SAMEA7724157	env_local_scale	host-associated habitat	
+SAMEA7724158	env_local_scale	host-associated habitat	
+SAMEA7724159	env_local_scale	host-associated habitat	
+SAMEA7724160	env_local_scale	host-associated habitat	
+SAMEA7724161	env_local_scale	host-associated habitat	
+SAMEA7724162	env_local_scale	host-associated habitat	
+SAMEA7724163	env_local_scale	host-associated habitat	
+SAMEA7724164	env_local_scale	host-associated habitat	
+SAMEA7724165	env_local_scale	host-associated habitat	
+SAMEA7724166	env_local_scale	host-associated habitat	
+SAMEA7724167	env_local_scale	host-associated habitat	
+SAMEA7724168	env_local_scale	host-associated habitat	
+SAMEA7724169	env_local_scale	host-associated habitat	
+SAMEA7724170	env_local_scale	host-associated habitat	
+SAMEA7724171	env_local_scale	host-associated habitat	
+SAMEA7724172	env_local_scale	host-associated habitat	
+SAMEA7724173	env_local_scale	host-associated habitat	
+SAMEA7724174	env_local_scale	host-associated habitat	
+SAMEA7724175	env_local_scale	host-associated habitat	
+SAMEA7724176	env_local_scale	host-associated habitat	
+SAMEA7724177	env_local_scale	host-associated habitat	
+SAMEA7724178	env_local_scale	host-associated habitat	
+SAMEA7724179	env_local_scale	host-associated habitat	
+SAMEA7724180	env_local_scale	host-associated habitat	
+SAMEA7724181	env_local_scale	host-associated habitat	
+SAMEA7724182	env_local_scale	host-associated habitat	
+SAMEA7724183	env_local_scale	host-associated habitat	
+SAMEA7724184	env_local_scale	host-associated habitat	
+SAMEA7724185	env_local_scale	host-associated habitat	
+SAMEA7724186	env_local_scale	host-associated habitat	
+SAMEA7724187	env_local_scale	host-associated habitat	
+SAMEA7724188	env_local_scale	host-associated habitat	
+SAMEA7724189	env_local_scale	host-associated habitat	
+SAMEA7724190	env_local_scale	host-associated habitat	
+SAMEA7724191	env_local_scale	host-associated habitat	
+SAMEA7724192	env_local_scale	host-associated habitat	
+SAMEA7724193	env_local_scale	host-associated habitat	
+SAMEA7724194	env_local_scale	host-associated habitat	
+SAMEA7724195	env_local_scale	temperate coniferous forest	
+SAMEA7724196	env_local_scale	temperate coniferous forest	
+SAMEA7724197	env_local_scale	temperate coniferous forest	
+SAMEA7724198	env_local_scale	temperate coniferous forest	
+SAMEA7724199	env_local_scale	temperate coniferous forest	
+SAMEA7724200	env_local_scale	temperate coniferous forest	
+SAMEA7724201	env_local_scale	temperate coniferous forest	
+SAMEA7724202	env_local_scale	temperate coniferous forest	
+SAMEA7724203	env_local_scale	temperate coniferous forest	
+SAMEA7724204	env_local_scale	temperate coniferous forest	
+SAMEA7724205	env_local_scale	temperate coniferous forest	
+SAMEA7724206	env_local_scale	temperate coniferous forest	
+SAMEA7724207	env_local_scale	cropland	
+SAMEA7724208	env_local_scale	cropland	
+SAMEA7724209	env_local_scale	cropland	
+SAMEA7724210	env_local_scale	cropland	
+SAMEA7724211	env_local_scale	rangeland	
+SAMEA7724212	env_local_scale	temperate coniferous forest	
+SAMEA7724213	env_local_scale	rangeland	
+SAMEA7724214	env_local_scale	rangeland	
+SAMEA7724215	env_local_scale	cropland	
+SAMEA7724216	env_local_scale	cropland	
+SAMEA7724217	env_local_scale	cropland	
+SAMEA7724218	env_local_scale	cropland	
+SAMEA7724219	env_local_scale	rangeland	
+SAMEA7724220	env_local_scale	temperate coniferous forest	
+SAMEA7724221	env_local_scale	temperate woodland	
+SAMEA7724222	env_local_scale	rangeland	
+SAMEA7724223	env_local_scale	temperate woodland	
+SAMEA7724224	env_local_scale	cropland	
+SAMEA7724225	env_local_scale	temperate coniferous forest	
+SAMEA7724226	env_local_scale	cropland	
+SAMEA7724227	env_local_scale	temperate coniferous forest	
+SAMEA7724228	env_local_scale	temperate shrubland	
+SAMEA7724229	env_local_scale	insecta-associated habitat	
+SAMEA7724230	env_local_scale	insecta-associated habitat	
+SAMEA7724231	env_local_scale	insecta-associated habitat	
+SAMEA7724232	env_local_scale	insecta-associated habitat	
+SAMEA7724233	env_local_scale	insecta-associated habitat	
+SAMEA7724257	env_local_scale	montane desert	
+SAMEA7724258	env_local_scale	montane desert	
+SAMEA7724259	env_local_scale	montane desert	
+SAMEA7724260	env_local_scale	montane desert	
+SAMEA7724261	env_local_scale	montane desert	
+SAMEA7724262	env_local_scale	montane desert	
+SAMEA7724263	env_local_scale	montane desert	
+SAMEA7724264	env_local_scale	montane desert	
+SAMEA7724265	env_local_scale	montane desert	
+SAMEA7724266	env_local_scale	montane desert	
+SAMEA7724267	env_local_scale	montane desert	
+SAMEA7724268	env_local_scale	montane desert	
+SAMEA7724269	env_local_scale	montane desert	
+SAMEA7724270	env_local_scale	montane desert	
+SAMEA7724271	env_local_scale	montane desert	
+SAMEA7724272	env_local_scale	montane desert	
+SAMEA7724273	env_local_scale	montane desert	
+SAMEA7724274	env_local_scale	montane desert	
+SAMEA7724275	env_local_scale	montane desert	
+SAMEA7724276	env_local_scale	montane desert	
+SAMEA7724277	env_local_scale	montane desert	
+SAMEA7724278	env_local_scale	montane desert	
+SAMEA7724279	env_local_scale	montane desert	
+SAMEA7724280	env_local_scale	montane desert	
+SAMEA7724281	env_local_scale	montane desert	
+SAMEA7724282	env_local_scale	montane desert	
+SAMEA7724307	env_local_scale	forest	
+SAMEA7724308	env_local_scale	forest	
+SAMEA7724309	env_local_scale	forest	
+SAMEA7724310	env_local_scale	forest	
+SAMEA7724311	env_local_scale	forest	
+SAMEA7724312	env_local_scale	forest	
+SAMEA7724313	env_local_scale	forest	
+SAMEA7724314	env_local_scale	forest	
+SAMEA7724315	env_local_scale	forest	
+SAMEA7724316	env_local_scale	forest	
+SAMEA7724317	env_local_scale	forest	
+SAMEA7724318	env_local_scale	forest	
+SAMEA7724319	env_local_scale	forest	
+SAMEA7724320	env_local_scale	forest	
+SAMEA7724321	env_local_scale	forest	
+SAMEA7724332	env_local_scale	stratum	
+SAMEA7724333	env_local_scale	stratum	
+SAMEA7724334	env_local_scale	stratum	
+SAMEA7724335	env_local_scale	stratum	
+SAMEA7724336	env_local_scale	stratum	
+SAMEA7724337	env_local_scale	stratum	
+SAMEA7724338	env_local_scale	stratum	
+SAMEA7724339	env_local_scale	stratum	
+SAMEA7724340	env_local_scale	stratum	
+SAMEA7724341	env_local_scale	stratum	
+SAMEA7724342	env_local_scale	stratum	
+SAMEA7724343	env_local_scale	stratum	
+SAMEA7724344	env_local_scale	stratum	
+SAMEA7724345	env_local_scale	stratum	
+SAMEA7724346	env_local_scale	stratum	
+SAMEA7724347	env_local_scale	stratum	
+SAMEA7724348	env_local_scale	stratum	
+SAMEA7724349	env_local_scale	stratum	
+SAMEA7724350	env_medium	coastal water	
+SAMEA7724351	env_medium	coastal water	
+SAMEA7724352	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724353	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
+SAMEA7724370	env_local_scale	animal-associated habitat	
+SAMEA7724371	env_local_scale	marine benthic feature	ENVO:01001788/marine ecosystem | ENVO:01001479/fluid astronomical body part | ENVO:00000447/marine biome | ENVO:00000191/solid astronomical body part
