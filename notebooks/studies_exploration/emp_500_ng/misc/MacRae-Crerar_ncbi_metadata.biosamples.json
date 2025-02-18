@@ -1,0 +1,3904 @@
+[{
+  "_id": {
+    "$oid": "677f49bc0a6241ac79631e6d"
+  },
+  "access": "public",
+  "publication_date": "2020-12-17T00:00:00.000",
+  "last_update": "2021-08-23T00:27:30.000",
+  "submission_date": "2020-12-19T08:06:11.113",
+  "id": "17119136",
+  "accession": "SAMEA7724107",
+  "Ids": {
+    "Id": [
+      {
+        "content": "SAMEA7724107",
+        "db": "BioSample",
+        "is_primary": "1"
+      },
+      {
+        "content": "ERS5471484",
+        "db": "SRA"
+      }
+    ]
+  },
+  "Description": {
+    "Title": {
+      "content": "13114.macrae.crerar.3.s001"
+    },
+    "Organism": {
+      "taxonomy_id": "410658",
+      "taxonomy_name": "soil metagenome",
+      "OrganismName": {
+        "content": "soil metagenome"
+      }
+    },
+    "Comment": {
+      "Paragraph": {
+        "content": "Northern Mongolian soil 454"
+      }
+    }
+  },
+  "Owner": {
+    "Name": {
+      "content": "EBI"
+    }
+  },
+  "Models": {
+    "Model": {
+      "content": "Generic"
+    }
+  },
+  "Package": {
+    "content": "Generic.1.0",
+    "display_name": "Generic"
+  },
+  "Attributes": {
+    "Attribute": [
+      {
+        "content": "2020-12-17",
+        "attribute_name": "ENA first public"
+      },
+      {
+        "content": "2020-12-16",
+        "attribute_name": "ENA last update"
+      },
+      {
+        "content": "ERC000011",
+        "attribute_name": "ENA-CHECKLIST"
+      },
+      {
+        "content": "SAMEA7724107",
+        "attribute_name": "External Id"
+      },
+      {
+        "content": "UCSDMI",
+        "attribute_name": "INSDC center alias"
+      },
+      {
+        "content": "University of California San Diego Microbiome Initiative",
+        "attribute_name": "INSDC center name"
+      },
+      {
+        "content": "2020-12-17T04:08:06Z",
+        "attribute_name": "INSDC first public"
+      },
+      {
+        "content": "2020-12-16T01:23:54Z",
+        "attribute_name": "INSDC last update"
+      },
+      {
+        "content": "public",
+        "attribute_name": "INSDC status"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s001",
+        "attribute_name": "Submitter Id"
+      },
+      {
+        "content": "27.8",
+        "attribute_name": "air_temp",
+        "harmonized_name": "air_temp",
+        "display_name": "air temperature"
+      },
+      {
+        "content": "353.0",
+        "attribute_name": "alpha_shotgun_woltka_rar3450_richness"
+      },
+      {
+        "content": "B09",
+        "attribute_name": "block"
+      },
+      {
+        "content": "7/9/12 15:12",
+        "attribute_name": "collection_timestamp"
+      },
+      {
+        "content": "montaine steppe",
+        "attribute_name": "cur_vegetation",
+        "harmonized_name": "cur_vegetation",
+        "display_name": "current vegetation"
+      },
+      {
+        "content": "0.05",
+        "attribute_name": "depth_sample"
+      },
+      {
+        "content": "well drained",
+        "attribute_name": "drainage_class",
+        "harmonized_name": "drainage_class",
+        "display_name": "drainage classification"
+      },
+      {
+        "content": "1741",
+        "attribute_name": "elevation",
+        "harmonized_name": "elev",
+        "display_name": "elevation"
+      },
+      {
+        "content": "MacRae-Crerar",
+        "attribute_name": "emp500_principal_investigator"
+      },
+      {
+        "content": "3",
+        "attribute_name": "emp500_study_id"
+      },
+      {
+        "content": "Mongolia soils (NSF PIRE)",
+        "attribute_name": "emp500_title"
+      },
+      {
+        "content": "Non-saline",
+        "attribute_name": "empo_2"
+      },
+      {
+        "content": "Soil (non-saline)",
+        "attribute_name": "empo_3"
+      },
+      {
+        "content": "montane grasslands and shrubland biome",
+        "attribute_name": "env biome",
+        "harmonized_name": "env_broad_scale",
+        "display_name": "broad-scale environmental context"
+      },
+      {
+        "content": "steppe soil",
+        "attribute_name": "env feature",
+        "harmonized_name": "env_local_scale",
+        "display_name": "local-scale environmental context"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env_material",
+        "harmonized_name": "env_medium",
+        "display_name": "environmental medium"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "environmental_package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "EMP_McR3_1_008_GC",
+        "attribute_name": "gcms_sample_name"
+      },
+      {
+        "content": "Mongolia",
+        "attribute_name": "geo loc name",
+        "harmonized_name": "geo_loc_name",
+        "display_name": "geographic location"
+      },
+      {
+        "content": "51.01.658",
+        "attribute_name": "latitude"
+      },
+      {
+        "content": "8.00",
+        "attribute_name": "lcms_batch"
+      },
+      {
+        "content": "Bulk_Seed_PNNL",
+        "attribute_name": "lcms_extraction_protocol"
+      },
+      {
+        "content": "100.45.643",
+        "attribute_name": "longitude"
+      },
+      {
+        "content": "7.3",
+        "attribute_name": "ph",
+        "harmonized_name": "ph",
+        "display_name": "pH"
+      },
+      {
+        "content": "UCSD Knight Lab Freezer I and University of Pennsylvania",
+        "attribute_name": "physical_specimen_location"
+      },
+      {
+        "content": "NSF PIRE Mongolia Project",
+        "attribute_name": "project name",
+        "harmonized_name": "project_name",
+        "display_name": "project name"
+      },
+      {
+        "content": "51.6",
+        "attribute_name": "relative humidity"
+      },
+      {
+        "content": "0.565",
+        "attribute_name": "resp_ave"
+      },
+      {
+        "content": "0.62",
+        "attribute_name": "respiration1"
+      },
+      {
+        "content": "0.51",
+        "attribute_name": "respiration2"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s001",
+        "attribute_name": "sample name",
+        "harmonized_name": "sample_name",
+        "display_name": "sample name"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "sample type",
+        "harmonized_name": "sample_type",
+        "display_name": "sample type"
+      },
+      {
+        "content": "bulk",
+        "attribute_name": "sampling method"
+      },
+      {
+        "content": "11.4",
+        "attribute_name": "soil_moisture1"
+      },
+      {
+        "content": "11.5",
+        "attribute_name": "soil_moisture2"
+      },
+      {
+        "content": "13.9",
+        "attribute_name": "soil_moisture3"
+      },
+      {
+        "content": "12.26666667",
+        "attribute_name": "soil_moisture_ave"
+      },
+      {
+        "content": "74",
+        "attribute_name": "soil_salinity1"
+      },
+      {
+        "content": "76",
+        "attribute_name": "soil_salinity2"
+      },
+      {
+        "content": "65",
+        "attribute_name": "soil_salinity3"
+      },
+      {
+        "content": "71.66666667",
+        "attribute_name": "soil_salinity_ave"
+      },
+      {
+        "content": "27.4",
+        "attribute_name": "soil_temp1"
+      },
+      {
+        "content": "31.2",
+        "attribute_name": "soil_temp2"
+      },
+      {
+        "content": "30.4",
+        "attribute_name": "soil_temp3"
+      },
+      {
+        "content": "29.66666667",
+        "attribute_name": "soil_temp_ave"
+      },
+      {
+        "content": "1",
+        "attribute_name": "study_sample_number"
+      }
+    ]
+  },
+  "Status": {
+    "status": "live",
+    "when": "2020-12-20T10:30:11.242"
+  }
+},
+{
+  "_id": {
+    "$oid": "677f49bc0a6241ac79631e6e"
+  },
+  "access": "public",
+  "publication_date": "2020-12-17T00:00:00.000",
+  "last_update": "2021-08-23T00:27:30.000",
+  "submission_date": "2020-12-19T08:06:11.176",
+  "id": "17119137",
+  "accession": "SAMEA7724108",
+  "Ids": {
+    "Id": [
+      {
+        "content": "SAMEA7724108",
+        "db": "BioSample",
+        "is_primary": "1"
+      },
+      {
+        "content": "ERS5471485",
+        "db": "SRA"
+      }
+    ]
+  },
+  "Description": {
+    "Title": {
+      "content": "13114.macrae.crerar.3.s002"
+    },
+    "Organism": {
+      "taxonomy_id": "410658",
+      "taxonomy_name": "soil metagenome",
+      "OrganismName": {
+        "content": "soil metagenome"
+      }
+    },
+    "Comment": {
+      "Paragraph": {
+        "content": "Northern Mongolian soil 455"
+      }
+    }
+  },
+  "Owner": {
+    "Name": {
+      "content": "EBI"
+    }
+  },
+  "Models": {
+    "Model": {
+      "content": "Generic"
+    }
+  },
+  "Package": {
+    "content": "Generic.1.0",
+    "display_name": "Generic"
+  },
+  "Attributes": {
+    "Attribute": [
+      {
+        "content": "2020-12-17",
+        "attribute_name": "ENA first public"
+      },
+      {
+        "content": "2020-12-16",
+        "attribute_name": "ENA last update"
+      },
+      {
+        "content": "ERC000011",
+        "attribute_name": "ENA-CHECKLIST"
+      },
+      {
+        "content": "SAMEA7724108",
+        "attribute_name": "External Id"
+      },
+      {
+        "content": "UCSDMI",
+        "attribute_name": "INSDC center alias"
+      },
+      {
+        "content": "University of California San Diego Microbiome Initiative",
+        "attribute_name": "INSDC center name"
+      },
+      {
+        "content": "2020-12-17T04:08:06Z",
+        "attribute_name": "INSDC first public"
+      },
+      {
+        "content": "2020-12-16T01:23:54Z",
+        "attribute_name": "INSDC last update"
+      },
+      {
+        "content": "public",
+        "attribute_name": "INSDC status"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s002",
+        "attribute_name": "Submitter Id"
+      },
+      {
+        "content": "24.9",
+        "attribute_name": "air_temp",
+        "harmonized_name": "air_temp",
+        "display_name": "air temperature"
+      },
+      {
+        "content": "869.0",
+        "attribute_name": "alpha_shotgun_woltka_min10k_richness"
+      },
+      {
+        "content": "672.0",
+        "attribute_name": "alpha_shotgun_woltka_rar10k_richness"
+      },
+      {
+        "content": "384.0",
+        "attribute_name": "alpha_shotgun_woltka_rar3450_richness"
+      },
+      {
+        "content": "B09",
+        "attribute_name": "block"
+      },
+      {
+        "content": "7/9/12 15:05",
+        "attribute_name": "collection_timestamp"
+      },
+      {
+        "content": "montaine steppe",
+        "attribute_name": "cur_vegetation",
+        "harmonized_name": "cur_vegetation",
+        "display_name": "current vegetation"
+      },
+      {
+        "content": "0.05",
+        "attribute_name": "depth_sample"
+      },
+      {
+        "content": "well drained",
+        "attribute_name": "drainage_class",
+        "harmonized_name": "drainage_class",
+        "display_name": "drainage classification"
+      },
+      {
+        "content": "1741",
+        "attribute_name": "elevation",
+        "harmonized_name": "elev",
+        "display_name": "elevation"
+      },
+      {
+        "content": "MacRae-Crerar",
+        "attribute_name": "emp500_principal_investigator"
+      },
+      {
+        "content": "3",
+        "attribute_name": "emp500_study_id"
+      },
+      {
+        "content": "Mongolia soils (NSF PIRE)",
+        "attribute_name": "emp500_title"
+      },
+      {
+        "content": "Non-saline",
+        "attribute_name": "empo_2"
+      },
+      {
+        "content": "Soil (non-saline)",
+        "attribute_name": "empo_3"
+      },
+      {
+        "content": "montane grasslands and shrubland biome",
+        "attribute_name": "env biome",
+        "harmonized_name": "env_broad_scale",
+        "display_name": "broad-scale environmental context"
+      },
+      {
+        "content": "steppe soil",
+        "attribute_name": "env feature",
+        "harmonized_name": "env_local_scale",
+        "display_name": "local-scale environmental context"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env_material",
+        "harmonized_name": "env_medium",
+        "display_name": "environmental medium"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "environmental_package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "EMP_McR3_2_005_GC",
+        "attribute_name": "gcms_sample_name"
+      },
+      {
+        "content": "Mongolia",
+        "attribute_name": "geo loc name",
+        "harmonized_name": "geo_loc_name",
+        "display_name": "geographic location"
+      },
+      {
+        "content": "51.01.658",
+        "attribute_name": "latitude"
+      },
+      {
+        "content": "8.00",
+        "attribute_name": "lcms_batch"
+      },
+      {
+        "content": "Bulk_Seed_PNNL",
+        "attribute_name": "lcms_extraction_protocol"
+      },
+      {
+        "content": "100.45.643",
+        "attribute_name": "longitude"
+      },
+      {
+        "content": "7",
+        "attribute_name": "ph",
+        "harmonized_name": "ph",
+        "display_name": "pH"
+      },
+      {
+        "content": "UCSD Knight Lab Freezer I and University of Pennsylvania",
+        "attribute_name": "physical_specimen_location"
+      },
+      {
+        "content": "NSF PIRE Mongolia Project",
+        "attribute_name": "project name",
+        "harmonized_name": "project_name",
+        "display_name": "project name"
+      },
+      {
+        "content": "47.1",
+        "attribute_name": "relative humidity"
+      },
+      {
+        "content": "0.275",
+        "attribute_name": "resp_ave"
+      },
+      {
+        "content": "0.29",
+        "attribute_name": "respiration1"
+      },
+      {
+        "content": "0.26",
+        "attribute_name": "respiration2"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s002",
+        "attribute_name": "sample name",
+        "harmonized_name": "sample_name",
+        "display_name": "sample name"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "sample type",
+        "harmonized_name": "sample_type",
+        "display_name": "sample type"
+      },
+      {
+        "content": "bulk",
+        "attribute_name": "sampling method"
+      },
+      {
+        "content": "8.5",
+        "attribute_name": "soil_moisture1"
+      },
+      {
+        "content": "7.1",
+        "attribute_name": "soil_moisture2"
+      },
+      {
+        "content": "8.9",
+        "attribute_name": "soil_moisture3"
+      },
+      {
+        "content": "8.166666667",
+        "attribute_name": "soil_moisture_ave"
+      },
+      {
+        "content": "not provided",
+        "attribute_name": "soil_salinity1"
+      },
+      {
+        "content": "not provided",
+        "attribute_name": "soil_salinity2"
+      },
+      {
+        "content": "76",
+        "attribute_name": "soil_salinity3"
+      },
+      {
+        "content": "76",
+        "attribute_name": "soil_salinity_ave"
+      },
+      {
+        "content": "28.3",
+        "attribute_name": "soil_temp1"
+      },
+      {
+        "content": "27.6",
+        "attribute_name": "soil_temp2"
+      },
+      {
+        "content": "27.2",
+        "attribute_name": "soil_temp3"
+      },
+      {
+        "content": "27.7",
+        "attribute_name": "soil_temp_ave"
+      },
+      {
+        "content": "2",
+        "attribute_name": "study_sample_number"
+      }
+    ]
+  },
+  "Status": {
+    "status": "live",
+    "when": "2020-12-20T10:30:14.040"
+  }
+},
+{
+  "_id": {
+    "$oid": "677f49bc0a6241ac79631e6f"
+  },
+  "access": "public",
+  "publication_date": "2020-12-17T00:00:00.000",
+  "last_update": "2021-08-23T00:27:30.000",
+  "submission_date": "2020-12-19T08:06:11.206",
+  "id": "17119138",
+  "accession": "SAMEA7724109",
+  "Ids": {
+    "Id": [
+      {
+        "content": "SAMEA7724109",
+        "db": "BioSample",
+        "is_primary": "1"
+      },
+      {
+        "content": "ERS5471486",
+        "db": "SRA"
+      }
+    ]
+  },
+  "Description": {
+    "Title": {
+      "content": "13114.macrae.crerar.3.s003"
+    },
+    "Organism": {
+      "taxonomy_id": "410658",
+      "taxonomy_name": "soil metagenome",
+      "OrganismName": {
+        "content": "soil metagenome"
+      }
+    },
+    "Comment": {
+      "Paragraph": {
+        "content": "Northern Mongolian soil 456"
+      }
+    }
+  },
+  "Owner": {
+    "Name": {
+      "content": "EBI"
+    }
+  },
+  "Models": {
+    "Model": {
+      "content": "Generic"
+    }
+  },
+  "Package": {
+    "content": "Generic.1.0",
+    "display_name": "Generic"
+  },
+  "Attributes": {
+    "Attribute": [
+      {
+        "content": "2020-12-17",
+        "attribute_name": "ENA first public"
+      },
+      {
+        "content": "2020-12-16",
+        "attribute_name": "ENA last update"
+      },
+      {
+        "content": "ERC000011",
+        "attribute_name": "ENA-CHECKLIST"
+      },
+      {
+        "content": "SAMEA7724109",
+        "attribute_name": "External Id"
+      },
+      {
+        "content": "UCSDMI",
+        "attribute_name": "INSDC center alias"
+      },
+      {
+        "content": "University of California San Diego Microbiome Initiative",
+        "attribute_name": "INSDC center name"
+      },
+      {
+        "content": "2020-12-17T04:08:06Z",
+        "attribute_name": "INSDC first public"
+      },
+      {
+        "content": "2020-12-16T01:23:54Z",
+        "attribute_name": "INSDC last update"
+      },
+      {
+        "content": "public",
+        "attribute_name": "INSDC status"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s003",
+        "attribute_name": "Submitter Id"
+      },
+      {
+        "content": "26.2",
+        "attribute_name": "air_temp",
+        "harmonized_name": "air_temp",
+        "display_name": "air temperature"
+      },
+      {
+        "content": "890.0",
+        "attribute_name": "alpha_shotgun_woltka_min10k_richness"
+      },
+      {
+        "content": "640.0",
+        "attribute_name": "alpha_shotgun_woltka_rar10k_richness"
+      },
+      {
+        "content": "389.0",
+        "attribute_name": "alpha_shotgun_woltka_rar3450_richness"
+      },
+      {
+        "content": "B09",
+        "attribute_name": "block"
+      },
+      {
+        "content": "7/9/12 15:17",
+        "attribute_name": "collection_timestamp"
+      },
+      {
+        "content": "montaine steppe",
+        "attribute_name": "cur_vegetation",
+        "harmonized_name": "cur_vegetation",
+        "display_name": "current vegetation"
+      },
+      {
+        "content": "0.05",
+        "attribute_name": "depth_sample"
+      },
+      {
+        "content": "well drained",
+        "attribute_name": "drainage_class",
+        "harmonized_name": "drainage_class",
+        "display_name": "drainage classification"
+      },
+      {
+        "content": "1741",
+        "attribute_name": "elevation",
+        "harmonized_name": "elev",
+        "display_name": "elevation"
+      },
+      {
+        "content": "MacRae-Crerar",
+        "attribute_name": "emp500_principal_investigator"
+      },
+      {
+        "content": "3",
+        "attribute_name": "emp500_study_id"
+      },
+      {
+        "content": "Mongolia soils (NSF PIRE)",
+        "attribute_name": "emp500_title"
+      },
+      {
+        "content": "Non-saline",
+        "attribute_name": "empo_2"
+      },
+      {
+        "content": "Soil (non-saline)",
+        "attribute_name": "empo_3"
+      },
+      {
+        "content": "montane grasslands and shrubland biome",
+        "attribute_name": "env biome",
+        "harmonized_name": "env_broad_scale",
+        "display_name": "broad-scale environmental context"
+      },
+      {
+        "content": "steppe soil",
+        "attribute_name": "env feature",
+        "harmonized_name": "env_local_scale",
+        "display_name": "local-scale environmental context"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env_material",
+        "harmonized_name": "env_medium",
+        "display_name": "environmental medium"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "environmental_package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "EMP_McR3_3_006_GC",
+        "attribute_name": "gcms_sample_name"
+      },
+      {
+        "content": "Mongolia",
+        "attribute_name": "geo loc name",
+        "harmonized_name": "geo_loc_name",
+        "display_name": "geographic location"
+      },
+      {
+        "content": "51.01.658",
+        "attribute_name": "latitude"
+      },
+      {
+        "content": "8.00",
+        "attribute_name": "lcms_batch"
+      },
+      {
+        "content": "Bulk_Seed_PNNL",
+        "attribute_name": "lcms_extraction_protocol"
+      },
+      {
+        "content": "100.45.643",
+        "attribute_name": "longitude"
+      },
+      {
+        "content": "7.1",
+        "attribute_name": "ph",
+        "harmonized_name": "ph",
+        "display_name": "pH"
+      },
+      {
+        "content": "UCSD Knight Lab Freezer I and University of Pennsylvania",
+        "attribute_name": "physical_specimen_location"
+      },
+      {
+        "content": "NSF PIRE Mongolia Project",
+        "attribute_name": "project name",
+        "harmonized_name": "project_name",
+        "display_name": "project name"
+      },
+      {
+        "content": "45.5",
+        "attribute_name": "relative humidity"
+      },
+      {
+        "content": "0.43",
+        "attribute_name": "resp_ave"
+      },
+      {
+        "content": "0.55",
+        "attribute_name": "respiration1"
+      },
+      {
+        "content": "0.31",
+        "attribute_name": "respiration2"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s003",
+        "attribute_name": "sample name",
+        "harmonized_name": "sample_name",
+        "display_name": "sample name"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "sample type",
+        "harmonized_name": "sample_type",
+        "display_name": "sample type"
+      },
+      {
+        "content": "bulk",
+        "attribute_name": "sampling method"
+      },
+      {
+        "content": "9.7",
+        "attribute_name": "soil_moisture1"
+      },
+      {
+        "content": "10",
+        "attribute_name": "soil_moisture2"
+      },
+      {
+        "content": "11.6",
+        "attribute_name": "soil_moisture3"
+      },
+      {
+        "content": "10.43333333",
+        "attribute_name": "soil_moisture_ave"
+      },
+      {
+        "content": "82",
+        "attribute_name": "soil_salinity1"
+      },
+      {
+        "content": "80",
+        "attribute_name": "soil_salinity2"
+      },
+      {
+        "content": "65",
+        "attribute_name": "soil_salinity3"
+      },
+      {
+        "content": "75.66666667",
+        "attribute_name": "soil_salinity_ave"
+      },
+      {
+        "content": "27.8",
+        "attribute_name": "soil_temp1"
+      },
+      {
+        "content": "30.3",
+        "attribute_name": "soil_temp2"
+      },
+      {
+        "content": "31.9",
+        "attribute_name": "soil_temp3"
+      },
+      {
+        "content": "30",
+        "attribute_name": "soil_temp_ave"
+      },
+      {
+        "content": "3",
+        "attribute_name": "study_sample_number"
+      }
+    ]
+  },
+  "Status": {
+    "status": "live",
+    "when": "2020-12-20T10:30:09.046"
+  }
+},
+{
+  "_id": {
+    "$oid": "677f49bc0a6241ac79631e70"
+  },
+  "access": "public",
+  "publication_date": "2020-12-17T00:00:00.000",
+  "last_update": "2021-08-23T00:27:30.000",
+  "submission_date": "2020-12-19T08:06:11.253",
+  "id": "17119139",
+  "accession": "SAMEA7724110",
+  "Ids": {
+    "Id": [
+      {
+        "content": "SAMEA7724110",
+        "db": "BioSample",
+        "is_primary": "1"
+      },
+      {
+        "content": "ERS5471487",
+        "db": "SRA"
+      }
+    ]
+  },
+  "Description": {
+    "Title": {
+      "content": "13114.macrae.crerar.3.s004"
+    },
+    "Organism": {
+      "taxonomy_id": "410658",
+      "taxonomy_name": "soil metagenome",
+      "OrganismName": {
+        "content": "soil metagenome"
+      }
+    },
+    "Comment": {
+      "Paragraph": {
+        "content": "Northern Mongolian soil 457"
+      }
+    }
+  },
+  "Owner": {
+    "Name": {
+      "content": "EBI"
+    }
+  },
+  "Models": {
+    "Model": {
+      "content": "Generic"
+    }
+  },
+  "Package": {
+    "content": "Generic.1.0",
+    "display_name": "Generic"
+  },
+  "Attributes": {
+    "Attribute": [
+      {
+        "content": "2020-12-17",
+        "attribute_name": "ENA first public"
+      },
+      {
+        "content": "2020-12-16",
+        "attribute_name": "ENA last update"
+      },
+      {
+        "content": "ERC000011",
+        "attribute_name": "ENA-CHECKLIST"
+      },
+      {
+        "content": "SAMEA7724110",
+        "attribute_name": "External Id"
+      },
+      {
+        "content": "UCSDMI",
+        "attribute_name": "INSDC center alias"
+      },
+      {
+        "content": "University of California San Diego Microbiome Initiative",
+        "attribute_name": "INSDC center name"
+      },
+      {
+        "content": "2020-12-17T04:08:06Z",
+        "attribute_name": "INSDC first public"
+      },
+      {
+        "content": "2020-12-16T01:23:54Z",
+        "attribute_name": "INSDC last update"
+      },
+      {
+        "content": "public",
+        "attribute_name": "INSDC status"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s004",
+        "attribute_name": "Submitter Id"
+      },
+      {
+        "content": "24.6",
+        "attribute_name": "air_temp",
+        "harmonized_name": "air_temp",
+        "display_name": "air temperature"
+      },
+      {
+        "content": "1107.0",
+        "attribute_name": "alpha_shotgun_woltka_min10k_richness"
+      },
+      {
+        "content": "620.0",
+        "attribute_name": "alpha_shotgun_woltka_rar10k_richness"
+      },
+      {
+        "content": "359.0",
+        "attribute_name": "alpha_shotgun_woltka_rar3450_richness"
+      },
+      {
+        "content": "B09",
+        "attribute_name": "block"
+      },
+      {
+        "content": "7/9/12 14:59",
+        "attribute_name": "collection_timestamp"
+      },
+      {
+        "content": "montaine steppe",
+        "attribute_name": "cur_vegetation",
+        "harmonized_name": "cur_vegetation",
+        "display_name": "current vegetation"
+      },
+      {
+        "content": "0.05",
+        "attribute_name": "depth_sample"
+      },
+      {
+        "content": "well drained",
+        "attribute_name": "drainage_class",
+        "harmonized_name": "drainage_class",
+        "display_name": "drainage classification"
+      },
+      {
+        "content": "1741",
+        "attribute_name": "elevation",
+        "harmonized_name": "elev",
+        "display_name": "elevation"
+      },
+      {
+        "content": "MacRae-Crerar",
+        "attribute_name": "emp500_principal_investigator"
+      },
+      {
+        "content": "3",
+        "attribute_name": "emp500_study_id"
+      },
+      {
+        "content": "Mongolia soils (NSF PIRE)",
+        "attribute_name": "emp500_title"
+      },
+      {
+        "content": "Non-saline",
+        "attribute_name": "empo_2"
+      },
+      {
+        "content": "Soil (non-saline)",
+        "attribute_name": "empo_3"
+      },
+      {
+        "content": "montane grasslands and shrubland biome",
+        "attribute_name": "env biome",
+        "harmonized_name": "env_broad_scale",
+        "display_name": "broad-scale environmental context"
+      },
+      {
+        "content": "steppe soil",
+        "attribute_name": "env feature",
+        "harmonized_name": "env_local_scale",
+        "display_name": "local-scale environmental context"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env_material",
+        "harmonized_name": "env_medium",
+        "display_name": "environmental medium"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "environmental_package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "EMP_McR3_4_009_GC",
+        "attribute_name": "gcms_sample_name"
+      },
+      {
+        "content": "Mongolia",
+        "attribute_name": "geo loc name",
+        "harmonized_name": "geo_loc_name",
+        "display_name": "geographic location"
+      },
+      {
+        "content": "51.01.658",
+        "attribute_name": "latitude"
+      },
+      {
+        "content": "8.00",
+        "attribute_name": "lcms_batch"
+      },
+      {
+        "content": "Bulk_Seed_PNNL",
+        "attribute_name": "lcms_extraction_protocol"
+      },
+      {
+        "content": "100.45.643",
+        "attribute_name": "longitude"
+      },
+      {
+        "content": "7.25",
+        "attribute_name": "ph",
+        "harmonized_name": "ph",
+        "display_name": "pH"
+      },
+      {
+        "content": "UCSD Knight Lab Freezer I and University of Pennsylvania",
+        "attribute_name": "physical_specimen_location"
+      },
+      {
+        "content": "NSF PIRE Mongolia Project",
+        "attribute_name": "project name",
+        "harmonized_name": "project_name",
+        "display_name": "project name"
+      },
+      {
+        "content": "46.7",
+        "attribute_name": "relative humidity"
+      },
+      {
+        "content": "0.71",
+        "attribute_name": "resp_ave"
+      },
+      {
+        "content": "0.67",
+        "attribute_name": "respiration1"
+      },
+      {
+        "content": "0.75",
+        "attribute_name": "respiration2"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s004",
+        "attribute_name": "sample name",
+        "harmonized_name": "sample_name",
+        "display_name": "sample name"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "sample type",
+        "harmonized_name": "sample_type",
+        "display_name": "sample type"
+      },
+      {
+        "content": "bulk",
+        "attribute_name": "sampling method"
+      },
+      {
+        "content": "12.1",
+        "attribute_name": "soil_moisture1"
+      },
+      {
+        "content": "10.1",
+        "attribute_name": "soil_moisture2"
+      },
+      {
+        "content": "12.7",
+        "attribute_name": "soil_moisture3"
+      },
+      {
+        "content": "11.63333333",
+        "attribute_name": "soil_moisture_ave"
+      },
+      {
+        "content": "66",
+        "attribute_name": "soil_salinity1"
+      },
+      {
+        "content": "77",
+        "attribute_name": "soil_salinity2"
+      },
+      {
+        "content": "71",
+        "attribute_name": "soil_salinity3"
+      },
+      {
+        "content": "71.33333333",
+        "attribute_name": "soil_salinity_ave"
+      },
+      {
+        "content": "30.7",
+        "attribute_name": "soil_temp1"
+      },
+      {
+        "content": "31.6",
+        "attribute_name": "soil_temp2"
+      },
+      {
+        "content": "30",
+        "attribute_name": "soil_temp3"
+      },
+      {
+        "content": "30.76666667",
+        "attribute_name": "soil_temp_ave"
+      },
+      {
+        "content": "4",
+        "attribute_name": "study_sample_number"
+      }
+    ]
+  },
+  "Status": {
+    "status": "live",
+    "when": "2020-12-20T10:30:07.478"
+  }
+},
+{
+  "_id": {
+    "$oid": "677f49bc0a6241ac79631e71"
+  },
+  "access": "public",
+  "publication_date": "2020-12-17T00:00:00.000",
+  "last_update": "2021-08-23T00:27:30.000",
+  "submission_date": "2020-12-19T08:06:11.300",
+  "id": "17119140",
+  "accession": "SAMEA7724111",
+  "Ids": {
+    "Id": [
+      {
+        "content": "SAMEA7724111",
+        "db": "BioSample",
+        "is_primary": "1"
+      },
+      {
+        "content": "ERS5471488",
+        "db": "SRA"
+      }
+    ]
+  },
+  "Description": {
+    "Title": {
+      "content": "13114.macrae.crerar.3.s005"
+    },
+    "Organism": {
+      "taxonomy_id": "410658",
+      "taxonomy_name": "soil metagenome",
+      "OrganismName": {
+        "content": "soil metagenome"
+      }
+    },
+    "Comment": {
+      "Paragraph": {
+        "content": "Northern Mongolian soil 460"
+      }
+    }
+  },
+  "Owner": {
+    "Name": {
+      "content": "EBI"
+    }
+  },
+  "Models": {
+    "Model": {
+      "content": "Generic"
+    }
+  },
+  "Package": {
+    "content": "Generic.1.0",
+    "display_name": "Generic"
+  },
+  "Attributes": {
+    "Attribute": [
+      {
+        "content": "2020-12-17",
+        "attribute_name": "ENA first public"
+      },
+      {
+        "content": "2020-12-16",
+        "attribute_name": "ENA last update"
+      },
+      {
+        "content": "ERC000011",
+        "attribute_name": "ENA-CHECKLIST"
+      },
+      {
+        "content": "SAMEA7724111",
+        "attribute_name": "External Id"
+      },
+      {
+        "content": "UCSDMI",
+        "attribute_name": "INSDC center alias"
+      },
+      {
+        "content": "University of California San Diego Microbiome Initiative",
+        "attribute_name": "INSDC center name"
+      },
+      {
+        "content": "2020-12-17T04:08:06Z",
+        "attribute_name": "INSDC first public"
+      },
+      {
+        "content": "2020-12-16T01:23:54Z",
+        "attribute_name": "INSDC last update"
+      },
+      {
+        "content": "public",
+        "attribute_name": "INSDC status"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s005",
+        "attribute_name": "Submitter Id"
+      },
+      {
+        "content": "35.2",
+        "attribute_name": "air_temp",
+        "harmonized_name": "air_temp",
+        "display_name": "air temperature"
+      },
+      {
+        "content": "1012.0",
+        "attribute_name": "alpha_shotgun_woltka_min10k_richness"
+      },
+      {
+        "content": "634.0",
+        "attribute_name": "alpha_shotgun_woltka_rar10k_richness"
+      },
+      {
+        "content": "354.0",
+        "attribute_name": "alpha_shotgun_woltka_rar3450_richness"
+      },
+      {
+        "content": "B10",
+        "attribute_name": "block"
+      },
+      {
+        "content": "7/9/12 14:15",
+        "attribute_name": "collection_timestamp"
+      },
+      {
+        "content": "montaine steppe",
+        "attribute_name": "cur_vegetation",
+        "harmonized_name": "cur_vegetation",
+        "display_name": "current vegetation"
+      },
+      {
+        "content": "0.05",
+        "attribute_name": "depth_sample"
+      },
+      {
+        "content": "well drained",
+        "attribute_name": "drainage_class",
+        "harmonized_name": "drainage_class",
+        "display_name": "drainage classification"
+      },
+      {
+        "content": "1747",
+        "attribute_name": "elevation",
+        "harmonized_name": "elev",
+        "display_name": "elevation"
+      },
+      {
+        "content": "MacRae-Crerar",
+        "attribute_name": "emp500_principal_investigator"
+      },
+      {
+        "content": "3",
+        "attribute_name": "emp500_study_id"
+      },
+      {
+        "content": "Mongolia soils (NSF PIRE)",
+        "attribute_name": "emp500_title"
+      },
+      {
+        "content": "Non-saline",
+        "attribute_name": "empo_2"
+      },
+      {
+        "content": "Soil (non-saline)",
+        "attribute_name": "empo_3"
+      },
+      {
+        "content": "montane grasslands and shrubland biome",
+        "attribute_name": "env biome",
+        "harmonized_name": "env_broad_scale",
+        "display_name": "broad-scale environmental context"
+      },
+      {
+        "content": "steppe soil",
+        "attribute_name": "env feature",
+        "harmonized_name": "env_local_scale",
+        "display_name": "local-scale environmental context"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env_material",
+        "harmonized_name": "env_medium",
+        "display_name": "environmental medium"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "environmental_package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "EMP_McR3_5_007_GC",
+        "attribute_name": "gcms_sample_name"
+      },
+      {
+        "content": "Mongolia",
+        "attribute_name": "geo loc name",
+        "harmonized_name": "geo_loc_name",
+        "display_name": "geographic location"
+      },
+      {
+        "content": "51.01.550",
+        "attribute_name": "latitude"
+      },
+      {
+        "content": "8.00",
+        "attribute_name": "lcms_batch"
+      },
+      {
+        "content": "Bulk_Seed_PNNL",
+        "attribute_name": "lcms_extraction_protocol"
+      },
+      {
+        "content": "100.45.810",
+        "attribute_name": "longitude"
+      },
+      {
+        "content": "7.2",
+        "attribute_name": "ph",
+        "harmonized_name": "ph",
+        "display_name": "pH"
+      },
+      {
+        "content": "UCSD Knight Lab Freezer I and University of Pennsylvania",
+        "attribute_name": "physical_specimen_location"
+      },
+      {
+        "content": "NSF PIRE Mongolia Project",
+        "attribute_name": "project name",
+        "harmonized_name": "project_name",
+        "display_name": "project name"
+      },
+      {
+        "content": "30.8",
+        "attribute_name": "relative humidity"
+      },
+      {
+        "content": "0.665",
+        "attribute_name": "resp_ave"
+      },
+      {
+        "content": "0.69",
+        "attribute_name": "respiration1"
+      },
+      {
+        "content": "0.64",
+        "attribute_name": "respiration2"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s005",
+        "attribute_name": "sample name",
+        "harmonized_name": "sample_name",
+        "display_name": "sample name"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "sample type",
+        "harmonized_name": "sample_type",
+        "display_name": "sample type"
+      },
+      {
+        "content": "bulk",
+        "attribute_name": "sampling method"
+      },
+      {
+        "content": "6.8",
+        "attribute_name": "soil_moisture1"
+      },
+      {
+        "content": "7.1",
+        "attribute_name": "soil_moisture2"
+      },
+      {
+        "content": "10.7",
+        "attribute_name": "soil_moisture3"
+      },
+      {
+        "content": "8.2",
+        "attribute_name": "soil_moisture_ave"
+      },
+      {
+        "content": "not provided",
+        "attribute_name": "soil_salinity1"
+      },
+      {
+        "content": "not provided",
+        "attribute_name": "soil_salinity2"
+      },
+      {
+        "content": "69",
+        "attribute_name": "soil_salinity3"
+      },
+      {
+        "content": "69",
+        "attribute_name": "soil_salinity_ave"
+      },
+      {
+        "content": "33.1",
+        "attribute_name": "soil_temp1"
+      },
+      {
+        "content": "34.8",
+        "attribute_name": "soil_temp2"
+      },
+      {
+        "content": "32.1",
+        "attribute_name": "soil_temp3"
+      },
+      {
+        "content": "33.33333333",
+        "attribute_name": "soil_temp_ave"
+      },
+      {
+        "content": "5",
+        "attribute_name": "study_sample_number"
+      }
+    ]
+  },
+  "Status": {
+    "status": "live",
+    "when": "2020-12-20T10:30:41.543"
+  }
+},
+{
+  "_id": {
+    "$oid": "677f49bc0a6241ac79631e72"
+  },
+  "access": "public",
+  "publication_date": "2020-12-17T00:00:00.000",
+  "last_update": "2021-08-23T00:27:30.000",
+  "submission_date": "2020-12-19T08:06:11.350",
+  "id": "17119141",
+  "accession": "SAMEA7724112",
+  "Ids": {
+    "Id": [
+      {
+        "content": "SAMEA7724112",
+        "db": "BioSample",
+        "is_primary": "1"
+      },
+      {
+        "content": "ERS5471489",
+        "db": "SRA"
+      }
+    ]
+  },
+  "Description": {
+    "Title": {
+      "content": "13114.macrae.crerar.3.s006"
+    },
+    "Organism": {
+      "taxonomy_id": "410658",
+      "taxonomy_name": "soil metagenome",
+      "OrganismName": {
+        "content": "soil metagenome"
+      }
+    },
+    "Comment": {
+      "Paragraph": {
+        "content": "Northern Mongolian soil 461"
+      }
+    }
+  },
+  "Owner": {
+    "Name": {
+      "content": "EBI"
+    }
+  },
+  "Models": {
+    "Model": {
+      "content": "Generic"
+    }
+  },
+  "Package": {
+    "content": "Generic.1.0",
+    "display_name": "Generic"
+  },
+  "Attributes": {
+    "Attribute": [
+      {
+        "content": "2020-12-17",
+        "attribute_name": "ENA first public"
+      },
+      {
+        "content": "2020-12-16",
+        "attribute_name": "ENA last update"
+      },
+      {
+        "content": "ERC000011",
+        "attribute_name": "ENA-CHECKLIST"
+      },
+      {
+        "content": "SAMEA7724112",
+        "attribute_name": "External Id"
+      },
+      {
+        "content": "UCSDMI",
+        "attribute_name": "INSDC center alias"
+      },
+      {
+        "content": "University of California San Diego Microbiome Initiative",
+        "attribute_name": "INSDC center name"
+      },
+      {
+        "content": "2020-12-17T04:08:06Z",
+        "attribute_name": "INSDC first public"
+      },
+      {
+        "content": "2020-12-16T01:23:54Z",
+        "attribute_name": "INSDC last update"
+      },
+      {
+        "content": "public",
+        "attribute_name": "INSDC status"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s006",
+        "attribute_name": "Submitter Id"
+      },
+      {
+        "content": "30.3",
+        "attribute_name": "air_temp",
+        "harmonized_name": "air_temp",
+        "display_name": "air temperature"
+      },
+      {
+        "content": "992.0",
+        "attribute_name": "alpha_shotgun_woltka_min10k_richness"
+      },
+      {
+        "content": "666.0",
+        "attribute_name": "alpha_shotgun_woltka_rar10k_richness"
+      },
+      {
+        "content": "371.0",
+        "attribute_name": "alpha_shotgun_woltka_rar3450_richness"
+      },
+      {
+        "content": "B10",
+        "attribute_name": "block"
+      },
+      {
+        "content": "7/9/12 14:20",
+        "attribute_name": "collection_timestamp"
+      },
+      {
+        "content": "montaine steppe",
+        "attribute_name": "cur_vegetation",
+        "harmonized_name": "cur_vegetation",
+        "display_name": "current vegetation"
+      },
+      {
+        "content": "0.05",
+        "attribute_name": "depth_sample"
+      },
+      {
+        "content": "well drained",
+        "attribute_name": "drainage_class",
+        "harmonized_name": "drainage_class",
+        "display_name": "drainage classification"
+      },
+      {
+        "content": "1747",
+        "attribute_name": "elevation",
+        "harmonized_name": "elev",
+        "display_name": "elevation"
+      },
+      {
+        "content": "MacRae-Crerar",
+        "attribute_name": "emp500_principal_investigator"
+      },
+      {
+        "content": "3",
+        "attribute_name": "emp500_study_id"
+      },
+      {
+        "content": "Mongolia soils (NSF PIRE)",
+        "attribute_name": "emp500_title"
+      },
+      {
+        "content": "Non-saline",
+        "attribute_name": "empo_2"
+      },
+      {
+        "content": "Soil (non-saline)",
+        "attribute_name": "empo_3"
+      },
+      {
+        "content": "montane grasslands and shrubland biome",
+        "attribute_name": "env biome",
+        "harmonized_name": "env_broad_scale",
+        "display_name": "broad-scale environmental context"
+      },
+      {
+        "content": "steppe soil",
+        "attribute_name": "env feature",
+        "harmonized_name": "env_local_scale",
+        "display_name": "local-scale environmental context"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env_material",
+        "harmonized_name": "env_medium",
+        "display_name": "environmental medium"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "environmental_package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "EMP_McR3_6_002_GC",
+        "attribute_name": "gcms_sample_name"
+      },
+      {
+        "content": "Mongolia",
+        "attribute_name": "geo loc name",
+        "harmonized_name": "geo_loc_name",
+        "display_name": "geographic location"
+      },
+      {
+        "content": "51.01.550",
+        "attribute_name": "latitude"
+      },
+      {
+        "content": "8.00",
+        "attribute_name": "lcms_batch"
+      },
+      {
+        "content": "Bulk_Seed_PNNL",
+        "attribute_name": "lcms_extraction_protocol"
+      },
+      {
+        "content": "100.45.810",
+        "attribute_name": "longitude"
+      },
+      {
+        "content": "7",
+        "attribute_name": "ph",
+        "harmonized_name": "ph",
+        "display_name": "pH"
+      },
+      {
+        "content": "UCSD Knight Lab Freezer I and University of Pennsylvania",
+        "attribute_name": "physical_specimen_location"
+      },
+      {
+        "content": "NSF PIRE Mongolia Project",
+        "attribute_name": "project name",
+        "harmonized_name": "project_name",
+        "display_name": "project name"
+      },
+      {
+        "content": "34.6",
+        "attribute_name": "relative humidity"
+      },
+      {
+        "content": "0.49",
+        "attribute_name": "resp_ave"
+      },
+      {
+        "content": "0.52",
+        "attribute_name": "respiration1"
+      },
+      {
+        "content": "0.46",
+        "attribute_name": "respiration2"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s006",
+        "attribute_name": "sample name",
+        "harmonized_name": "sample_name",
+        "display_name": "sample name"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "sample type",
+        "harmonized_name": "sample_type",
+        "display_name": "sample type"
+      },
+      {
+        "content": "bulk",
+        "attribute_name": "sampling method"
+      },
+      {
+        "content": "5.9",
+        "attribute_name": "soil_moisture1"
+      },
+      {
+        "content": "3.8",
+        "attribute_name": "soil_moisture2"
+      },
+      {
+        "content": "8.7",
+        "attribute_name": "soil_moisture3"
+      },
+      {
+        "content": "6.133333333",
+        "attribute_name": "soil_moisture_ave"
+      },
+      {
+        "content": "not provided",
+        "attribute_name": "soil_salinity1"
+      },
+      {
+        "content": "not provided",
+        "attribute_name": "soil_salinity2"
+      },
+      {
+        "content": "87",
+        "attribute_name": "soil_salinity3"
+      },
+      {
+        "content": "87",
+        "attribute_name": "soil_salinity_ave"
+      },
+      {
+        "content": "29.5",
+        "attribute_name": "soil_temp1"
+      },
+      {
+        "content": "31.9",
+        "attribute_name": "soil_temp2"
+      },
+      {
+        "content": "32.2",
+        "attribute_name": "soil_temp3"
+      },
+      {
+        "content": "31.2",
+        "attribute_name": "soil_temp_ave"
+      },
+      {
+        "content": "6",
+        "attribute_name": "study_sample_number"
+      }
+    ]
+  },
+  "Status": {
+    "status": "live",
+    "when": "2020-12-20T10:30:12.644"
+  }
+},
+{
+  "_id": {
+    "$oid": "677f49bc0a6241ac79631e73"
+  },
+  "access": "public",
+  "publication_date": "2020-12-17T00:00:00.000",
+  "last_update": "2021-08-23T00:27:30.000",
+  "submission_date": "2020-12-19T08:06:11.410",
+  "id": "17119142",
+  "accession": "SAMEA7724113",
+  "Ids": {
+    "Id": [
+      {
+        "content": "SAMEA7724113",
+        "db": "BioSample",
+        "is_primary": "1"
+      },
+      {
+        "content": "ERS5471490",
+        "db": "SRA"
+      }
+    ]
+  },
+  "Description": {
+    "Title": {
+      "content": "13114.macrae.crerar.3.s007"
+    },
+    "Organism": {
+      "taxonomy_id": "410658",
+      "taxonomy_name": "soil metagenome",
+      "OrganismName": {
+        "content": "soil metagenome"
+      }
+    },
+    "Comment": {
+      "Paragraph": {
+        "content": "Northern Mongolian soil 462"
+      }
+    }
+  },
+  "Owner": {
+    "Name": {
+      "content": "EBI"
+    }
+  },
+  "Models": {
+    "Model": {
+      "content": "Generic"
+    }
+  },
+  "Package": {
+    "content": "Generic.1.0",
+    "display_name": "Generic"
+  },
+  "Attributes": {
+    "Attribute": [
+      {
+        "content": "2020-12-17",
+        "attribute_name": "ENA first public"
+      },
+      {
+        "content": "2020-12-16",
+        "attribute_name": "ENA last update"
+      },
+      {
+        "content": "ERC000011",
+        "attribute_name": "ENA-CHECKLIST"
+      },
+      {
+        "content": "SAMEA7724113",
+        "attribute_name": "External Id"
+      },
+      {
+        "content": "UCSDMI",
+        "attribute_name": "INSDC center alias"
+      },
+      {
+        "content": "University of California San Diego Microbiome Initiative",
+        "attribute_name": "INSDC center name"
+      },
+      {
+        "content": "2020-12-17T04:08:06Z",
+        "attribute_name": "INSDC first public"
+      },
+      {
+        "content": "2020-12-16T01:23:54Z",
+        "attribute_name": "INSDC last update"
+      },
+      {
+        "content": "public",
+        "attribute_name": "INSDC status"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s007",
+        "attribute_name": "Submitter Id"
+      },
+      {
+        "content": "30.6",
+        "attribute_name": "air_temp",
+        "harmonized_name": "air_temp",
+        "display_name": "air temperature"
+      },
+      {
+        "content": "B10",
+        "attribute_name": "block"
+      },
+      {
+        "content": "7/9/12 14:38",
+        "attribute_name": "collection_timestamp"
+      },
+      {
+        "content": "montaine steppe",
+        "attribute_name": "cur_vegetation",
+        "harmonized_name": "cur_vegetation",
+        "display_name": "current vegetation"
+      },
+      {
+        "content": "0.05",
+        "attribute_name": "depth_sample"
+      },
+      {
+        "content": "well drained",
+        "attribute_name": "drainage_class",
+        "harmonized_name": "drainage_class",
+        "display_name": "drainage classification"
+      },
+      {
+        "content": "1747",
+        "attribute_name": "elevation",
+        "harmonized_name": "elev",
+        "display_name": "elevation"
+      },
+      {
+        "content": "MacRae-Crerar",
+        "attribute_name": "emp500_principal_investigator"
+      },
+      {
+        "content": "3",
+        "attribute_name": "emp500_study_id"
+      },
+      {
+        "content": "Mongolia soils (NSF PIRE)",
+        "attribute_name": "emp500_title"
+      },
+      {
+        "content": "Non-saline",
+        "attribute_name": "empo_2"
+      },
+      {
+        "content": "Soil (non-saline)",
+        "attribute_name": "empo_3"
+      },
+      {
+        "content": "montane grasslands and shrubland biome",
+        "attribute_name": "env biome",
+        "harmonized_name": "env_broad_scale",
+        "display_name": "broad-scale environmental context"
+      },
+      {
+        "content": "steppe soil",
+        "attribute_name": "env feature",
+        "harmonized_name": "env_local_scale",
+        "display_name": "local-scale environmental context"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env_material",
+        "harmonized_name": "env_medium",
+        "display_name": "environmental medium"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "environmental_package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "EMP_McR3_7_012_GC",
+        "attribute_name": "gcms_sample_name"
+      },
+      {
+        "content": "Mongolia",
+        "attribute_name": "geo loc name",
+        "harmonized_name": "geo_loc_name",
+        "display_name": "geographic location"
+      },
+      {
+        "content": "51.01.550",
+        "attribute_name": "latitude"
+      },
+      {
+        "content": "8.00",
+        "attribute_name": "lcms_batch"
+      },
+      {
+        "content": "Bulk_Seed_PNNL",
+        "attribute_name": "lcms_extraction_protocol"
+      },
+      {
+        "content": "100.45.810",
+        "attribute_name": "longitude"
+      },
+      {
+        "content": "7.1",
+        "attribute_name": "ph",
+        "harmonized_name": "ph",
+        "display_name": "pH"
+      },
+      {
+        "content": "UCSD Knight Lab Freezer I and University of Pennsylvania",
+        "attribute_name": "physical_specimen_location"
+      },
+      {
+        "content": "NSF PIRE Mongolia Project",
+        "attribute_name": "project name",
+        "harmonized_name": "project_name",
+        "display_name": "project name"
+      },
+      {
+        "content": "35.1",
+        "attribute_name": "relative humidity"
+      },
+      {
+        "content": "0.915",
+        "attribute_name": "resp_ave"
+      },
+      {
+        "content": "0.84",
+        "attribute_name": "respiration1"
+      },
+      {
+        "content": "0.99",
+        "attribute_name": "respiration2"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s007",
+        "attribute_name": "sample name",
+        "harmonized_name": "sample_name",
+        "display_name": "sample name"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "sample type",
+        "harmonized_name": "sample_type",
+        "display_name": "sample type"
+      },
+      {
+        "content": "bulk",
+        "attribute_name": "sampling method"
+      },
+      {
+        "content": "5.9",
+        "attribute_name": "soil_moisture1"
+      },
+      {
+        "content": "4",
+        "attribute_name": "soil_moisture2"
+      },
+      {
+        "content": "6.6",
+        "attribute_name": "soil_moisture3"
+      },
+      {
+        "content": "5.5",
+        "attribute_name": "soil_moisture_ave"
+      },
+      {
+        "content": "not provided",
+        "attribute_name": "soil_salinity1"
+      },
+      {
+        "content": "not provided",
+        "attribute_name": "soil_salinity2"
+      },
+      {
+        "content": "not provided",
+        "attribute_name": "soil_salinity3"
+      },
+      {
+        "content": "not provided",
+        "attribute_name": "soil_salinity_ave"
+      },
+      {
+        "content": "29.9",
+        "attribute_name": "soil_temp1"
+      },
+      {
+        "content": "32.6",
+        "attribute_name": "soil_temp2"
+      },
+      {
+        "content": "32.9",
+        "attribute_name": "soil_temp3"
+      },
+      {
+        "content": "31.8",
+        "attribute_name": "soil_temp_ave"
+      },
+      {
+        "content": "7",
+        "attribute_name": "study_sample_number"
+      }
+    ]
+  },
+  "Status": {
+    "status": "live",
+    "when": "2020-12-20T10:31:03.713"
+  }
+},
+{
+  "_id": {
+    "$oid": "677f49bc0a6241ac79631e74"
+  },
+  "access": "public",
+  "publication_date": "2020-12-17T00:00:00.000",
+  "last_update": "2021-08-23T00:27:30.000",
+  "submission_date": "2020-12-19T08:06:11.440",
+  "id": "17119143",
+  "accession": "SAMEA7724114",
+  "Ids": {
+    "Id": [
+      {
+        "content": "SAMEA7724114",
+        "db": "BioSample",
+        "is_primary": "1"
+      },
+      {
+        "content": "ERS5471491",
+        "db": "SRA"
+      }
+    ]
+  },
+  "Description": {
+    "Title": {
+      "content": "13114.macrae.crerar.3.s008"
+    },
+    "Organism": {
+      "taxonomy_id": "410658",
+      "taxonomy_name": "soil metagenome",
+      "OrganismName": {
+        "content": "soil metagenome"
+      }
+    },
+    "Comment": {
+      "Paragraph": {
+        "content": "Northern Mongolian soil 463"
+      }
+    }
+  },
+  "Owner": {
+    "Name": {
+      "content": "EBI"
+    }
+  },
+  "Models": {
+    "Model": {
+      "content": "Generic"
+    }
+  },
+  "Package": {
+    "content": "Generic.1.0",
+    "display_name": "Generic"
+  },
+  "Attributes": {
+    "Attribute": [
+      {
+        "content": "2020-12-17",
+        "attribute_name": "ENA first public"
+      },
+      {
+        "content": "2020-12-16",
+        "attribute_name": "ENA last update"
+      },
+      {
+        "content": "ERC000011",
+        "attribute_name": "ENA-CHECKLIST"
+      },
+      {
+        "content": "SAMEA7724114",
+        "attribute_name": "External Id"
+      },
+      {
+        "content": "UCSDMI",
+        "attribute_name": "INSDC center alias"
+      },
+      {
+        "content": "University of California San Diego Microbiome Initiative",
+        "attribute_name": "INSDC center name"
+      },
+      {
+        "content": "2020-12-17T04:08:06Z",
+        "attribute_name": "INSDC first public"
+      },
+      {
+        "content": "2020-12-16T01:23:54Z",
+        "attribute_name": "INSDC last update"
+      },
+      {
+        "content": "public",
+        "attribute_name": "INSDC status"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s008",
+        "attribute_name": "Submitter Id"
+      },
+      {
+        "content": "28.7",
+        "attribute_name": "air_temp",
+        "harmonized_name": "air_temp",
+        "display_name": "air temperature"
+      },
+      {
+        "content": "676.0",
+        "attribute_name": "alpha_shotgun_woltka_min10k_richness"
+      },
+      {
+        "content": "587.0",
+        "attribute_name": "alpha_shotgun_woltka_rar10k_richness"
+      },
+      {
+        "content": "338.0",
+        "attribute_name": "alpha_shotgun_woltka_rar3450_richness"
+      },
+      {
+        "content": "B10",
+        "attribute_name": "block"
+      },
+      {
+        "content": "7/9/12 14:32",
+        "attribute_name": "collection_timestamp"
+      },
+      {
+        "content": "montaine steppe",
+        "attribute_name": "cur_vegetation",
+        "harmonized_name": "cur_vegetation",
+        "display_name": "current vegetation"
+      },
+      {
+        "content": "0.05",
+        "attribute_name": "depth_sample"
+      },
+      {
+        "content": "well drained",
+        "attribute_name": "drainage_class",
+        "harmonized_name": "drainage_class",
+        "display_name": "drainage classification"
+      },
+      {
+        "content": "1747",
+        "attribute_name": "elevation",
+        "harmonized_name": "elev",
+        "display_name": "elevation"
+      },
+      {
+        "content": "MacRae-Crerar",
+        "attribute_name": "emp500_principal_investigator"
+      },
+      {
+        "content": "3",
+        "attribute_name": "emp500_study_id"
+      },
+      {
+        "content": "Mongolia soils (NSF PIRE)",
+        "attribute_name": "emp500_title"
+      },
+      {
+        "content": "Non-saline",
+        "attribute_name": "empo_2"
+      },
+      {
+        "content": "Soil (non-saline)",
+        "attribute_name": "empo_3"
+      },
+      {
+        "content": "montane grasslands and shrubland biome",
+        "attribute_name": "env biome",
+        "harmonized_name": "env_broad_scale",
+        "display_name": "broad-scale environmental context"
+      },
+      {
+        "content": "steppe soil",
+        "attribute_name": "env feature",
+        "harmonized_name": "env_local_scale",
+        "display_name": "local-scale environmental context"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env_material",
+        "harmonized_name": "env_medium",
+        "display_name": "environmental medium"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "environmental_package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "EMP_McR3_8_003_GC",
+        "attribute_name": "gcms_sample_name"
+      },
+      {
+        "content": "Mongolia",
+        "attribute_name": "geo loc name",
+        "harmonized_name": "geo_loc_name",
+        "display_name": "geographic location"
+      },
+      {
+        "content": "51.01.550",
+        "attribute_name": "latitude"
+      },
+      {
+        "content": "8.00",
+        "attribute_name": "lcms_batch"
+      },
+      {
+        "content": "Bulk_Seed_PNNL",
+        "attribute_name": "lcms_extraction_protocol"
+      },
+      {
+        "content": "100.45.810",
+        "attribute_name": "longitude"
+      },
+      {
+        "content": "7.25",
+        "attribute_name": "ph",
+        "harmonized_name": "ph",
+        "display_name": "pH"
+      },
+      {
+        "content": "UCSD Knight Lab Freezer I and University of Pennsylvania",
+        "attribute_name": "physical_specimen_location"
+      },
+      {
+        "content": "NSF PIRE Mongolia Project",
+        "attribute_name": "project name",
+        "harmonized_name": "project_name",
+        "display_name": "project name"
+      },
+      {
+        "content": "35.3",
+        "attribute_name": "relative humidity"
+      },
+      {
+        "content": "0.435",
+        "attribute_name": "resp_ave"
+      },
+      {
+        "content": "0.57",
+        "attribute_name": "respiration1"
+      },
+      {
+        "content": "0.3",
+        "attribute_name": "respiration2"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s008",
+        "attribute_name": "sample name",
+        "harmonized_name": "sample_name",
+        "display_name": "sample name"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "sample type",
+        "harmonized_name": "sample_type",
+        "display_name": "sample type"
+      },
+      {
+        "content": "bulk",
+        "attribute_name": "sampling method"
+      },
+      {
+        "content": "8.6",
+        "attribute_name": "soil_moisture1"
+      },
+      {
+        "content": "9.3",
+        "attribute_name": "soil_moisture2"
+      },
+      {
+        "content": "10.6",
+        "attribute_name": "soil_moisture3"
+      },
+      {
+        "content": "9.5",
+        "attribute_name": "soil_moisture_ave"
+      },
+      {
+        "content": "73",
+        "attribute_name": "soil_salinity1"
+      },
+      {
+        "content": "69",
+        "attribute_name": "soil_salinity2"
+      },
+      {
+        "content": "63",
+        "attribute_name": "soil_salinity3"
+      },
+      {
+        "content": "68.33333333",
+        "attribute_name": "soil_salinity_ave"
+      },
+      {
+        "content": "31.1",
+        "attribute_name": "soil_temp1"
+      },
+      {
+        "content": "32.8",
+        "attribute_name": "soil_temp2"
+      },
+      {
+        "content": "31.9",
+        "attribute_name": "soil_temp3"
+      },
+      {
+        "content": "31.93333333",
+        "attribute_name": "soil_temp_ave"
+      },
+      {
+        "content": "8",
+        "attribute_name": "study_sample_number"
+      }
+    ]
+  },
+  "Status": {
+    "status": "live",
+    "when": "2020-12-20T10:30:16.191"
+  }
+},
+{
+  "_id": {
+    "$oid": "677f49bc0a6241ac79631e75"
+  },
+  "access": "public",
+  "publication_date": "2020-12-17T00:00:00.000",
+  "last_update": "2021-08-23T00:27:30.000",
+  "submission_date": "2020-12-19T08:06:11.490",
+  "id": "17119144",
+  "accession": "SAMEA7724115",
+  "Ids": {
+    "Id": [
+      {
+        "content": "SAMEA7724115",
+        "db": "BioSample",
+        "is_primary": "1"
+      },
+      {
+        "content": "ERS5471492",
+        "db": "SRA"
+      }
+    ]
+  },
+  "Description": {
+    "Title": {
+      "content": "13114.macrae.crerar.3.s009"
+    },
+    "Organism": {
+      "taxonomy_id": "410658",
+      "taxonomy_name": "soil metagenome",
+      "OrganismName": {
+        "content": "soil metagenome"
+      }
+    },
+    "Comment": {
+      "Paragraph": {
+        "content": "Northern Mongolian soil 466"
+      }
+    }
+  },
+  "Owner": {
+    "Name": {
+      "content": "EBI"
+    }
+  },
+  "Models": {
+    "Model": {
+      "content": "Generic"
+    }
+  },
+  "Package": {
+    "content": "Generic.1.0",
+    "display_name": "Generic"
+  },
+  "Attributes": {
+    "Attribute": [
+      {
+        "content": "2020-12-17",
+        "attribute_name": "ENA first public"
+      },
+      {
+        "content": "2020-12-16",
+        "attribute_name": "ENA last update"
+      },
+      {
+        "content": "ERC000011",
+        "attribute_name": "ENA-CHECKLIST"
+      },
+      {
+        "content": "SAMEA7724115",
+        "attribute_name": "External Id"
+      },
+      {
+        "content": "UCSDMI",
+        "attribute_name": "INSDC center alias"
+      },
+      {
+        "content": "University of California San Diego Microbiome Initiative",
+        "attribute_name": "INSDC center name"
+      },
+      {
+        "content": "2020-12-17T04:08:06Z",
+        "attribute_name": "INSDC first public"
+      },
+      {
+        "content": "2020-12-16T01:23:54Z",
+        "attribute_name": "INSDC last update"
+      },
+      {
+        "content": "public",
+        "attribute_name": "INSDC status"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s009",
+        "attribute_name": "Submitter Id"
+      },
+      {
+        "content": "38.5",
+        "attribute_name": "air_temp",
+        "harmonized_name": "air_temp",
+        "display_name": "air temperature"
+      },
+      {
+        "content": "1586.0",
+        "attribute_name": "alpha_shotgun_woltka_min10k_richness"
+      },
+      {
+        "content": "660.0",
+        "attribute_name": "alpha_shotgun_woltka_rar10k_richness"
+      },
+      {
+        "content": "385.0",
+        "attribute_name": "alpha_shotgun_woltka_rar3450_richness"
+      },
+      {
+        "content": "B11",
+        "attribute_name": "block"
+      },
+      {
+        "content": "7/9/12 13:59",
+        "attribute_name": "collection_timestamp"
+      },
+      {
+        "content": "montaine steppe",
+        "attribute_name": "cur_vegetation",
+        "harmonized_name": "cur_vegetation",
+        "display_name": "current vegetation"
+      },
+      {
+        "content": "0.05",
+        "attribute_name": "depth_sample"
+      },
+      {
+        "content": "well drained",
+        "attribute_name": "drainage_class",
+        "harmonized_name": "drainage_class",
+        "display_name": "drainage classification"
+      },
+      {
+        "content": "1735",
+        "attribute_name": "elevation",
+        "harmonized_name": "elev",
+        "display_name": "elevation"
+      },
+      {
+        "content": "MacRae-Crerar",
+        "attribute_name": "emp500_principal_investigator"
+      },
+      {
+        "content": "3",
+        "attribute_name": "emp500_study_id"
+      },
+      {
+        "content": "Mongolia soils (NSF PIRE)",
+        "attribute_name": "emp500_title"
+      },
+      {
+        "content": "Non-saline",
+        "attribute_name": "empo_2"
+      },
+      {
+        "content": "Soil (non-saline)",
+        "attribute_name": "empo_3"
+      },
+      {
+        "content": "montane grasslands and shrubland biome",
+        "attribute_name": "env biome",
+        "harmonized_name": "env_broad_scale",
+        "display_name": "broad-scale environmental context"
+      },
+      {
+        "content": "steppe soil",
+        "attribute_name": "env feature",
+        "harmonized_name": "env_local_scale",
+        "display_name": "local-scale environmental context"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env_material",
+        "harmonized_name": "env_medium",
+        "display_name": "environmental medium"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "environmental_package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "EMP_McR3_9_010_GC",
+        "attribute_name": "gcms_sample_name"
+      },
+      {
+        "content": "Mongolia",
+        "attribute_name": "geo loc name",
+        "harmonized_name": "geo_loc_name",
+        "display_name": "geographic location"
+      },
+      {
+        "content": "51.01.524",
+        "attribute_name": "latitude"
+      },
+      {
+        "content": "8.00",
+        "attribute_name": "lcms_batch"
+      },
+      {
+        "content": "Bulk_Seed_PNNL",
+        "attribute_name": "lcms_extraction_protocol"
+      },
+      {
+        "content": "100.45.836",
+        "attribute_name": "longitude"
+      },
+      {
+        "content": "6.95",
+        "attribute_name": "ph",
+        "harmonized_name": "ph",
+        "display_name": "pH"
+      },
+      {
+        "content": "UCSD Knight Lab Freezer I and University of Pennsylvania",
+        "attribute_name": "physical_specimen_location"
+      },
+      {
+        "content": "NSF PIRE Mongolia Project",
+        "attribute_name": "project name",
+        "harmonized_name": "project_name",
+        "display_name": "project name"
+      },
+      {
+        "content": "24.5",
+        "attribute_name": "relative humidity"
+      },
+      {
+        "content": "0.64",
+        "attribute_name": "resp_ave"
+      },
+      {
+        "content": "0.59",
+        "attribute_name": "respiration1"
+      },
+      {
+        "content": "0.69",
+        "attribute_name": "respiration2"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s009",
+        "attribute_name": "sample name",
+        "harmonized_name": "sample_name",
+        "display_name": "sample name"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "sample type",
+        "harmonized_name": "sample_type",
+        "display_name": "sample type"
+      },
+      {
+        "content": "bulk",
+        "attribute_name": "sampling method"
+      },
+      {
+        "content": "5.1",
+        "attribute_name": "soil_moisture1"
+      },
+      {
+        "content": "8",
+        "attribute_name": "soil_moisture2"
+      },
+      {
+        "content": "9.3",
+        "attribute_name": "soil_moisture3"
+      },
+      {
+        "content": "7.466666667",
+        "attribute_name": "soil_moisture_ave"
+      },
+      {
+        "content": "not provided",
+        "attribute_name": "soil_salinity1"
+      },
+      {
+        "content": "not provided",
+        "attribute_name": "soil_salinity2"
+      },
+      {
+        "content": "64",
+        "attribute_name": "soil_salinity3"
+      },
+      {
+        "content": "64",
+        "attribute_name": "soil_salinity_ave"
+      },
+      {
+        "content": "34.4",
+        "attribute_name": "soil_temp1"
+      },
+      {
+        "content": "35.3",
+        "attribute_name": "soil_temp2"
+      },
+      {
+        "content": "33.5",
+        "attribute_name": "soil_temp3"
+      },
+      {
+        "content": "34.4",
+        "attribute_name": "soil_temp_ave"
+      },
+      {
+        "content": "9",
+        "attribute_name": "study_sample_number"
+      }
+    ]
+  },
+  "Status": {
+    "status": "live",
+    "when": "2020-12-20T10:30:08.286"
+  }
+},
+{
+  "_id": {
+    "$oid": "677f49bc0a6241ac79631e76"
+  },
+  "access": "public",
+  "publication_date": "2020-12-17T00:00:00.000",
+  "last_update": "2021-08-23T00:27:30.000",
+  "submission_date": "2020-12-19T08:06:11.536",
+  "id": "17119145",
+  "accession": "SAMEA7724116",
+  "Ids": {
+    "Id": [
+      {
+        "content": "SAMEA7724116",
+        "db": "BioSample",
+        "is_primary": "1"
+      },
+      {
+        "content": "ERS5471493",
+        "db": "SRA"
+      }
+    ]
+  },
+  "Description": {
+    "Title": {
+      "content": "13114.macrae.crerar.3.s010"
+    },
+    "Organism": {
+      "taxonomy_id": "410658",
+      "taxonomy_name": "soil metagenome",
+      "OrganismName": {
+        "content": "soil metagenome"
+      }
+    },
+    "Comment": {
+      "Paragraph": {
+        "content": "Northern Mongolian soil 467"
+      }
+    }
+  },
+  "Owner": {
+    "Name": {
+      "content": "EBI"
+    }
+  },
+  "Models": {
+    "Model": {
+      "content": "Generic"
+    }
+  },
+  "Package": {
+    "content": "Generic.1.0",
+    "display_name": "Generic"
+  },
+  "Attributes": {
+    "Attribute": [
+      {
+        "content": "2020-12-17",
+        "attribute_name": "ENA first public"
+      },
+      {
+        "content": "2020-12-16",
+        "attribute_name": "ENA last update"
+      },
+      {
+        "content": "ERC000011",
+        "attribute_name": "ENA-CHECKLIST"
+      },
+      {
+        "content": "SAMEA7724116",
+        "attribute_name": "External Id"
+      },
+      {
+        "content": "UCSDMI",
+        "attribute_name": "INSDC center alias"
+      },
+      {
+        "content": "University of California San Diego Microbiome Initiative",
+        "attribute_name": "INSDC center name"
+      },
+      {
+        "content": "2020-12-17T04:08:06Z",
+        "attribute_name": "INSDC first public"
+      },
+      {
+        "content": "2020-12-16T01:23:54Z",
+        "attribute_name": "INSDC last update"
+      },
+      {
+        "content": "public",
+        "attribute_name": "INSDC status"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s010",
+        "attribute_name": "Submitter Id"
+      },
+      {
+        "content": "29",
+        "attribute_name": "air_temp",
+        "harmonized_name": "air_temp",
+        "display_name": "air temperature"
+      },
+      {
+        "content": "701.0",
+        "attribute_name": "alpha_shotgun_woltka_min10k_richness"
+      },
+      {
+        "content": "647.0",
+        "attribute_name": "alpha_shotgun_woltka_rar10k_richness"
+      },
+      {
+        "content": "396.0",
+        "attribute_name": "alpha_shotgun_woltka_rar3450_richness"
+      },
+      {
+        "content": "B11",
+        "attribute_name": "block"
+      },
+      {
+        "content": "7/9/12 13:42",
+        "attribute_name": "collection_timestamp"
+      },
+      {
+        "content": "montaine steppe",
+        "attribute_name": "cur_vegetation",
+        "harmonized_name": "cur_vegetation",
+        "display_name": "current vegetation"
+      },
+      {
+        "content": "0.05",
+        "attribute_name": "depth_sample"
+      },
+      {
+        "content": "well drained",
+        "attribute_name": "drainage_class",
+        "harmonized_name": "drainage_class",
+        "display_name": "drainage classification"
+      },
+      {
+        "content": "1735",
+        "attribute_name": "elevation",
+        "harmonized_name": "elev",
+        "display_name": "elevation"
+      },
+      {
+        "content": "MacRae-Crerar",
+        "attribute_name": "emp500_principal_investigator"
+      },
+      {
+        "content": "3",
+        "attribute_name": "emp500_study_id"
+      },
+      {
+        "content": "Mongolia soils (NSF PIRE)",
+        "attribute_name": "emp500_title"
+      },
+      {
+        "content": "Non-saline",
+        "attribute_name": "empo_2"
+      },
+      {
+        "content": "Soil (non-saline)",
+        "attribute_name": "empo_3"
+      },
+      {
+        "content": "montane grasslands and shrubland biome",
+        "attribute_name": "env biome",
+        "harmonized_name": "env_broad_scale",
+        "display_name": "broad-scale environmental context"
+      },
+      {
+        "content": "steppe soil",
+        "attribute_name": "env feature",
+        "harmonized_name": "env_local_scale",
+        "display_name": "local-scale environmental context"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env_material",
+        "harmonized_name": "env_medium",
+        "display_name": "environmental medium"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "environmental_package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "EMP_McR3_10_001_GC",
+        "attribute_name": "gcms_sample_name"
+      },
+      {
+        "content": "Mongolia",
+        "attribute_name": "geo loc name",
+        "harmonized_name": "geo_loc_name",
+        "display_name": "geographic location"
+      },
+      {
+        "content": "51.01.524",
+        "attribute_name": "latitude"
+      },
+      {
+        "content": "8.00",
+        "attribute_name": "lcms_batch"
+      },
+      {
+        "content": "Bulk_Seed_PNNL",
+        "attribute_name": "lcms_extraction_protocol"
+      },
+      {
+        "content": "100.45.836",
+        "attribute_name": "longitude"
+      },
+      {
+        "content": "7.23",
+        "attribute_name": "ph",
+        "harmonized_name": "ph",
+        "display_name": "pH"
+      },
+      {
+        "content": "UCSD Knight Lab Freezer I and University of Pennsylvania",
+        "attribute_name": "physical_specimen_location"
+      },
+      {
+        "content": "NSF PIRE Mongolia Project",
+        "attribute_name": "project name",
+        "harmonized_name": "project_name",
+        "display_name": "project name"
+      },
+      {
+        "content": "34.9",
+        "attribute_name": "relative humidity"
+      },
+      {
+        "content": "0.545",
+        "attribute_name": "resp_ave"
+      },
+      {
+        "content": "0.71",
+        "attribute_name": "respiration1"
+      },
+      {
+        "content": "0.38",
+        "attribute_name": "respiration2"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s010",
+        "attribute_name": "sample name",
+        "harmonized_name": "sample_name",
+        "display_name": "sample name"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "sample type",
+        "harmonized_name": "sample_type",
+        "display_name": "sample type"
+      },
+      {
+        "content": "bulk",
+        "attribute_name": "sampling method"
+      },
+      {
+        "content": "10.6",
+        "attribute_name": "soil_moisture1"
+      },
+      {
+        "content": "10.3",
+        "attribute_name": "soil_moisture2"
+      },
+      {
+        "content": "8.8",
+        "attribute_name": "soil_moisture3"
+      },
+      {
+        "content": "9.9",
+        "attribute_name": "soil_moisture_ave"
+      },
+      {
+        "content": "68",
+        "attribute_name": "soil_salinity1"
+      },
+      {
+        "content": "68",
+        "attribute_name": "soil_salinity2"
+      },
+      {
+        "content": "67",
+        "attribute_name": "soil_salinity3"
+      },
+      {
+        "content": "67.66666667",
+        "attribute_name": "soil_salinity_ave"
+      },
+      {
+        "content": "31.2",
+        "attribute_name": "soil_temp1"
+      },
+      {
+        "content": "30.8",
+        "attribute_name": "soil_temp2"
+      },
+      {
+        "content": "29.9",
+        "attribute_name": "soil_temp3"
+      },
+      {
+        "content": "30.63333333",
+        "attribute_name": "soil_temp_ave"
+      },
+      {
+        "content": "10",
+        "attribute_name": "study_sample_number"
+      }
+    ]
+  },
+  "Status": {
+    "status": "live",
+    "when": "2020-12-20T10:30:09.770"
+  }
+},
+{
+  "_id": {
+    "$oid": "677f49bc0a6241ac79631e77"
+  },
+  "access": "public",
+  "publication_date": "2020-12-17T00:00:00.000",
+  "last_update": "2021-08-23T00:27:30.000",
+  "submission_date": "2020-12-19T08:06:11.583",
+  "id": "17119146",
+  "accession": "SAMEA7724117",
+  "Ids": {
+    "Id": [
+      {
+        "content": "SAMEA7724117",
+        "db": "BioSample",
+        "is_primary": "1"
+      },
+      {
+        "content": "ERS5471494",
+        "db": "SRA"
+      }
+    ]
+  },
+  "Description": {
+    "Title": {
+      "content": "13114.macrae.crerar.3.s011"
+    },
+    "Organism": {
+      "taxonomy_id": "410658",
+      "taxonomy_name": "soil metagenome",
+      "OrganismName": {
+        "content": "soil metagenome"
+      }
+    },
+    "Comment": {
+      "Paragraph": {
+        "content": "Northern Mongolian soil 468"
+      }
+    }
+  },
+  "Owner": {
+    "Name": {
+      "content": "EBI"
+    }
+  },
+  "Models": {
+    "Model": {
+      "content": "Generic"
+    }
+  },
+  "Package": {
+    "content": "Generic.1.0",
+    "display_name": "Generic"
+  },
+  "Attributes": {
+    "Attribute": [
+      {
+        "content": "2020-12-17",
+        "attribute_name": "ENA first public"
+      },
+      {
+        "content": "2020-12-16",
+        "attribute_name": "ENA last update"
+      },
+      {
+        "content": "ERC000011",
+        "attribute_name": "ENA-CHECKLIST"
+      },
+      {
+        "content": "SAMEA7724117",
+        "attribute_name": "External Id"
+      },
+      {
+        "content": "UCSDMI",
+        "attribute_name": "INSDC center alias"
+      },
+      {
+        "content": "University of California San Diego Microbiome Initiative",
+        "attribute_name": "INSDC center name"
+      },
+      {
+        "content": "2020-12-17T04:08:05Z",
+        "attribute_name": "INSDC first public"
+      },
+      {
+        "content": "2020-12-16T01:23:54Z",
+        "attribute_name": "INSDC last update"
+      },
+      {
+        "content": "public",
+        "attribute_name": "INSDC status"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s011",
+        "attribute_name": "Submitter Id"
+      },
+      {
+        "content": "30.6",
+        "attribute_name": "air_temp",
+        "harmonized_name": "air_temp",
+        "display_name": "air temperature"
+      },
+      {
+        "content": "954.0",
+        "attribute_name": "alpha_shotgun_woltka_min10k_richness"
+      },
+      {
+        "content": "573.0",
+        "attribute_name": "alpha_shotgun_woltka_rar10k_richness"
+      },
+      {
+        "content": "347.0",
+        "attribute_name": "alpha_shotgun_woltka_rar3450_richness"
+      },
+      {
+        "content": "B11",
+        "attribute_name": "block"
+      },
+      {
+        "content": "7/9/12 14:05",
+        "attribute_name": "collection_timestamp"
+      },
+      {
+        "content": "montaine steppe",
+        "attribute_name": "cur_vegetation",
+        "harmonized_name": "cur_vegetation",
+        "display_name": "current vegetation"
+      },
+      {
+        "content": "0.05",
+        "attribute_name": "depth_sample"
+      },
+      {
+        "content": "well drained",
+        "attribute_name": "drainage_class",
+        "harmonized_name": "drainage_class",
+        "display_name": "drainage classification"
+      },
+      {
+        "content": "1735",
+        "attribute_name": "elevation",
+        "harmonized_name": "elev",
+        "display_name": "elevation"
+      },
+      {
+        "content": "MacRae-Crerar",
+        "attribute_name": "emp500_principal_investigator"
+      },
+      {
+        "content": "3",
+        "attribute_name": "emp500_study_id"
+      },
+      {
+        "content": "Mongolia soils (NSF PIRE)",
+        "attribute_name": "emp500_title"
+      },
+      {
+        "content": "Non-saline",
+        "attribute_name": "empo_2"
+      },
+      {
+        "content": "Soil (non-saline)",
+        "attribute_name": "empo_3"
+      },
+      {
+        "content": "montane grasslands and shrubland biome",
+        "attribute_name": "env biome",
+        "harmonized_name": "env_broad_scale",
+        "display_name": "broad-scale environmental context"
+      },
+      {
+        "content": "steppe soil",
+        "attribute_name": "env feature",
+        "harmonized_name": "env_local_scale",
+        "display_name": "local-scale environmental context"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env_material",
+        "harmonized_name": "env_medium",
+        "display_name": "environmental medium"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "environmental_package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "EMP_McR3_11_011_GC",
+        "attribute_name": "gcms_sample_name"
+      },
+      {
+        "content": "Mongolia",
+        "attribute_name": "geo loc name",
+        "harmonized_name": "geo_loc_name",
+        "display_name": "geographic location"
+      },
+      {
+        "content": "51.01.524",
+        "attribute_name": "latitude"
+      },
+      {
+        "content": "8.00",
+        "attribute_name": "lcms_batch"
+      },
+      {
+        "content": "Bulk_Seed_PNNL",
+        "attribute_name": "lcms_extraction_protocol"
+      },
+      {
+        "content": "100.45.836",
+        "attribute_name": "longitude"
+      },
+      {
+        "content": "6.77",
+        "attribute_name": "ph",
+        "harmonized_name": "ph",
+        "display_name": "pH"
+      },
+      {
+        "content": "UCSD Knight Lab Freezer I and University of Pennsylvania",
+        "attribute_name": "physical_specimen_location"
+      },
+      {
+        "content": "NSF PIRE Mongolia Project",
+        "attribute_name": "project name",
+        "harmonized_name": "project_name",
+        "display_name": "project name"
+      },
+      {
+        "content": "41.5",
+        "attribute_name": "relative humidity"
+      },
+      {
+        "content": "0.645",
+        "attribute_name": "resp_ave"
+      },
+      {
+        "content": "0.66",
+        "attribute_name": "respiration1"
+      },
+      {
+        "content": "0.63",
+        "attribute_name": "respiration2"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s011",
+        "attribute_name": "sample name",
+        "harmonized_name": "sample_name",
+        "display_name": "sample name"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "sample type",
+        "harmonized_name": "sample_type",
+        "display_name": "sample type"
+      },
+      {
+        "content": "bulk",
+        "attribute_name": "sampling method"
+      },
+      {
+        "content": "3.5",
+        "attribute_name": "soil_moisture1"
+      },
+      {
+        "content": "8.3",
+        "attribute_name": "soil_moisture2"
+      },
+      {
+        "content": "5.9",
+        "attribute_name": "soil_moisture3"
+      },
+      {
+        "content": "5.9",
+        "attribute_name": "soil_moisture_ave"
+      },
+      {
+        "content": "not provided",
+        "attribute_name": "soil_salinity1"
+      },
+      {
+        "content": "not provided",
+        "attribute_name": "soil_salinity2"
+      },
+      {
+        "content": "not provided",
+        "attribute_name": "soil_salinity3"
+      },
+      {
+        "content": "not provided",
+        "attribute_name": "soil_salinity_ave"
+      },
+      {
+        "content": "35.2",
+        "attribute_name": "soil_temp1"
+      },
+      {
+        "content": "36.6",
+        "attribute_name": "soil_temp2"
+      },
+      {
+        "content": "35.4",
+        "attribute_name": "soil_temp3"
+      },
+      {
+        "content": "35.73333333",
+        "attribute_name": "soil_temp_ave"
+      },
+      {
+        "content": "11",
+        "attribute_name": "study_sample_number"
+      }
+    ]
+  },
+  "Status": {
+    "status": "live",
+    "when": "2020-12-20T10:30:13.348"
+  }
+},
+{
+  "_id": {
+    "$oid": "677f49bc0a6241ac79631e78"
+  },
+  "access": "public",
+  "publication_date": "2020-12-17T00:00:00.000",
+  "last_update": "2021-08-23T00:27:30.000",
+  "submission_date": "2020-12-19T08:06:11.643",
+  "id": "17119147",
+  "accession": "SAMEA7724118",
+  "Ids": {
+    "Id": [
+      {
+        "content": "SAMEA7724118",
+        "db": "BioSample",
+        "is_primary": "1"
+      },
+      {
+        "content": "ERS5471495",
+        "db": "SRA"
+      }
+    ]
+  },
+  "Description": {
+    "Title": {
+      "content": "13114.macrae.crerar.3.s012"
+    },
+    "Organism": {
+      "taxonomy_id": "410658",
+      "taxonomy_name": "soil metagenome",
+      "OrganismName": {
+        "content": "soil metagenome"
+      }
+    },
+    "Comment": {
+      "Paragraph": {
+        "content": "Northern Mongolian soil 469"
+      }
+    }
+  },
+  "Owner": {
+    "Name": {
+      "content": "EBI"
+    }
+  },
+  "Models": {
+    "Model": {
+      "content": "Generic"
+    }
+  },
+  "Package": {
+    "content": "Generic.1.0",
+    "display_name": "Generic"
+  },
+  "Attributes": {
+    "Attribute": [
+      {
+        "content": "2020-12-17",
+        "attribute_name": "ENA first public"
+      },
+      {
+        "content": "2020-12-16",
+        "attribute_name": "ENA last update"
+      },
+      {
+        "content": "ERC000011",
+        "attribute_name": "ENA-CHECKLIST"
+      },
+      {
+        "content": "SAMEA7724118",
+        "attribute_name": "External Id"
+      },
+      {
+        "content": "UCSDMI",
+        "attribute_name": "INSDC center alias"
+      },
+      {
+        "content": "University of California San Diego Microbiome Initiative",
+        "attribute_name": "INSDC center name"
+      },
+      {
+        "content": "2020-12-17T04:08:05Z",
+        "attribute_name": "INSDC first public"
+      },
+      {
+        "content": "2020-12-16T01:23:54Z",
+        "attribute_name": "INSDC last update"
+      },
+      {
+        "content": "public",
+        "attribute_name": "INSDC status"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s012",
+        "attribute_name": "Submitter Id"
+      },
+      {
+        "content": "27.8",
+        "attribute_name": "air_temp",
+        "harmonized_name": "air_temp",
+        "display_name": "air temperature"
+      },
+      {
+        "content": "868.0",
+        "attribute_name": "alpha_shotgun_woltka_min10k_richness"
+      },
+      {
+        "content": "580.0",
+        "attribute_name": "alpha_shotgun_woltka_rar10k_richness"
+      },
+      {
+        "content": "355.0",
+        "attribute_name": "alpha_shotgun_woltka_rar3450_richness"
+      },
+      {
+        "content": "B11",
+        "attribute_name": "block"
+      },
+      {
+        "content": "7/9/12 13:34",
+        "attribute_name": "collection_timestamp"
+      },
+      {
+        "content": "montaine steppe",
+        "attribute_name": "cur_vegetation",
+        "harmonized_name": "cur_vegetation",
+        "display_name": "current vegetation"
+      },
+      {
+        "content": "0.05",
+        "attribute_name": "depth_sample"
+      },
+      {
+        "content": "well drained",
+        "attribute_name": "drainage_class",
+        "harmonized_name": "drainage_class",
+        "display_name": "drainage classification"
+      },
+      {
+        "content": "1735",
+        "attribute_name": "elevation",
+        "harmonized_name": "elev",
+        "display_name": "elevation"
+      },
+      {
+        "content": "MacRae-Crerar",
+        "attribute_name": "emp500_principal_investigator"
+      },
+      {
+        "content": "3",
+        "attribute_name": "emp500_study_id"
+      },
+      {
+        "content": "Mongolia soils (NSF PIRE)",
+        "attribute_name": "emp500_title"
+      },
+      {
+        "content": "Non-saline",
+        "attribute_name": "empo_2"
+      },
+      {
+        "content": "Soil (non-saline)",
+        "attribute_name": "empo_3"
+      },
+      {
+        "content": "montane grasslands and shrubland biome",
+        "attribute_name": "env biome",
+        "harmonized_name": "env_broad_scale",
+        "display_name": "broad-scale environmental context"
+      },
+      {
+        "content": "steppe soil",
+        "attribute_name": "env feature",
+        "harmonized_name": "env_local_scale",
+        "display_name": "local-scale environmental context"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "env_material",
+        "harmonized_name": "env_medium",
+        "display_name": "environmental medium"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "environmental_package",
+        "harmonized_name": "env_package",
+        "display_name": "environmental package"
+      },
+      {
+        "content": "EMP_McR3_12_004_GC",
+        "attribute_name": "gcms_sample_name"
+      },
+      {
+        "content": "Mongolia",
+        "attribute_name": "geo loc name",
+        "harmonized_name": "geo_loc_name",
+        "display_name": "geographic location"
+      },
+      {
+        "content": "51.01.524",
+        "attribute_name": "latitude"
+      },
+      {
+        "content": "8.00",
+        "attribute_name": "lcms_batch"
+      },
+      {
+        "content": "Bulk_Seed_PNNL",
+        "attribute_name": "lcms_extraction_protocol"
+      },
+      {
+        "content": "100.45.836",
+        "attribute_name": "longitude"
+      },
+      {
+        "content": "6.95",
+        "attribute_name": "ph",
+        "harmonized_name": "ph",
+        "display_name": "pH"
+      },
+      {
+        "content": "UCSD Knight Lab Freezer I and University of Pennsylvania",
+        "attribute_name": "physical_specimen_location"
+      },
+      {
+        "content": "NSF PIRE Mongolia Project",
+        "attribute_name": "project name",
+        "harmonized_name": "project_name",
+        "display_name": "project name"
+      },
+      {
+        "content": "40",
+        "attribute_name": "relative humidity"
+      },
+      {
+        "content": "0.77",
+        "attribute_name": "resp_ave"
+      },
+      {
+        "content": "0.83",
+        "attribute_name": "respiration1"
+      },
+      {
+        "content": "0.71",
+        "attribute_name": "respiration2"
+      },
+      {
+        "content": "qiita_sid_13114:13114.macrae.crerar.3.s012",
+        "attribute_name": "sample name",
+        "harmonized_name": "sample_name",
+        "display_name": "sample name"
+      },
+      {
+        "content": "soil",
+        "attribute_name": "sample type",
+        "harmonized_name": "sample_type",
+        "display_name": "sample type"
+      },
+      {
+        "content": "bulk",
+        "attribute_name": "sampling method"
+      },
+      {
+        "content": "10.4",
+        "attribute_name": "soil_moisture1"
+      },
+      {
+        "content": "9.6",
+        "attribute_name": "soil_moisture2"
+      },
+      {
+        "content": "7",
+        "attribute_name": "soil_moisture3"
+      },
+      {
+        "content": "9",
+        "attribute_name": "soil_moisture_ave"
+      },
+      {
+        "content": "69",
+        "attribute_name": "soil_salinity1"
+      },
+      {
+        "content": "76",
+        "attribute_name": "soil_salinity2"
+      },
+      {
+        "content": "not provided",
+        "attribute_name": "soil_salinity3"
+      },
+      {
+        "content": "72.5",
+        "attribute_name": "soil_salinity_ave"
+      },
+      {
+        "content": "29.2",
+        "attribute_name": "soil_temp1"
+      },
+      {
+        "content": "30",
+        "attribute_name": "soil_temp2"
+      },
+      {
+        "content": "29.4",
+        "attribute_name": "soil_temp3"
+      },
+      {
+        "content": "29.53333333",
+        "attribute_name": "soil_temp_ave"
+      },
+      {
+        "content": "12",
+        "attribute_name": "study_sample_number"
+      }
+    ]
+  },
+  "Status": {
+    "status": "live",
+    "when": "2020-12-20T10:30:15.493"
+  }
+}]
