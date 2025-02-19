@@ -1,0 +1,2 @@
+sed 's/^ *"/"/' notebooks/github_data/microbiomedata_nmdc-metadata_pulls.json | grep '"login":' | sort | uniq -c > notebooks/g
+ithub_data/microbiomedata_nmdc-metadata_pulls_participants.txt
