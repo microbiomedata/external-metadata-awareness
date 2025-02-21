@@ -14,16 +14,12 @@ while IFS= read -r ontology; do
     # Run the first command
     poetry run runoak \
       -i nmdc.db \
-      -a sqlite:obo:$ontology lexmatch \
-      --output nmdc_mixs_vs_${ontology}.SSSOM.tsv \
-      i^mixs: @ i^$ontology:
-
-    # Run the second command
-    poetry run runoak \
-      -i nmdc.db \
-      -a sqlite:obo:$ontology lexmatch \
-      --output nmdc_nmdc_vs_${ontology}.SSSOM.tsv \
-      i^nmdc: @ i^$ontology:
+      -a sqlite:obo:$ontology \
+      lexmatch \
+      --add-pipeline-step CaseNormalization \
+      --add-pipeline-step WhitespaceNormalization  \
+      --add-pipeline-step WordOrderNormalization \
+      --output lexmatch-output/nmdc_mixs_vs_${ontology}.SSSOM.tsv 2>>lexmatch-errors.txt
   fi
 done < for-lexmatch.txt
 
