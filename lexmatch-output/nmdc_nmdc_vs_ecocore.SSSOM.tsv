@@ -1,0 +1,19 @@
+# curie_map:
+#   ECOCORE: http://purl.obolibrary.org/obo/ECOCORE_
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/3159145f-c51d-4ee9-8a05-f125e1a7e88e
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+nmdc:BioticRelationshipEnum#parasite	parasite	skos:closeMatch	ECOCORE:00000146	parasite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	parasite
+nmdc:ChemicalConversionCategoryEnum#decomposition	decomposition	skos:closeMatch	ECOCORE:00000058	decomposition	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	decomposition
+nmdc:PlantSexEnum#Hermaphroditic	Hermaphroditic	skos:closeMatch	ECOCORE:00000042	hermaphroditic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hermaphroditic
+nmdc:PlantSexEnum#Monoecious	Monoecious	skos:closeMatch	ECOCORE:00000042	hermaphroditic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	monoecious
+nmdc:PlantSexEnum#Protandrous	Protandrous	skos:closeMatch	ECOCORE:00000117	protandrous	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	protandrous
+nmdc:PlantSexEnum#Protogynous	Protogynous	skos:closeMatch	ECOCORE:00000043	protogynous	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	protogynous

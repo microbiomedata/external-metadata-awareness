@@ -1,0 +1,27 @@
+# curie_map:
+#   PFAM: http://w3id.org/sssom/unknown_prefix/pfam/
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/72037f73-6726-40f8-8b14-2422245f1850
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+nmdc:BiosampleCategoryEnum#SIP	SIP	skos:closeMatch	PFAM:PF04954	SIP	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sip
+nmdc:CurLandUseEnum#sand	sand	skos:closeMatch	PFAM:PF01342	SAND	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sand
+nmdc:DrawingsEnum#bid	bid	skos:closeMatch	PFAM:PF06393	BID	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bid
+nmdc:FloorWaterMoldEnum#condensation	condensation	skos:closeMatch	PFAM:PF00668	Condensation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	condensation
+nmdc:HcProducedEnum#Gas	Gas	skos:closeMatch	PFAM:PF13851	GAS	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gas
+nmdc:JgiContTypeEnum#tube	tube	skos:closeMatch	PFAM:PF17212	Tube	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tube
+nmdc:PlantGrowthMedEnum#sand	sand	skos:closeMatch	PFAM:PF01342	SAND	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sand
+nmdc:SampleStateEnum#gas	gas	skos:closeMatch	PFAM:PF13851	GAS	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gas
+nmdc:SpecificEnum#bid	bid	skos:closeMatch	PFAM:PF06393	BID	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bid
+nmdc:StationaryPhaseEnum#C2	C2	skos:closeMatch	PFAM:PF00168	C2	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	c2
+nmdc:StationaryPhaseEnum#C4	C4	skos:closeMatch	PFAM:PF01413	C4	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	c4
+nmdc:StationaryPhaseEnum#C8	C8	skos:closeMatch	PFAM:PF08742	C8	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	c8
+nmdc:TillageEnum#chisel	chisel	skos:closeMatch	PFAM:PF15355	Chisel	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chisel
+nmdc:id	id	skos:closeMatch	PFAM:PF18543	ID	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	id
+nmdc:start	start	skos:closeMatch	PFAM:PF01852	START	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	start

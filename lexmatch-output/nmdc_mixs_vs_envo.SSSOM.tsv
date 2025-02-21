@@ -1,0 +1,27 @@
+# curie_map:
+#   ENVO: http://purl.obolibrary.org/obo/ENVO_
+#   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/a7c2e086-f221-491a-9c35-851b1ca7c73c
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+mixs:basin	basin	skos:closeMatch	ENVO:00000104	undersea feature	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	basin
+mixs:basin	basin	skos:closeMatch	ENVO:00000151	sabkha	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	basin
+mixs:basin	basin	skos:closeMatch	ENVO:00000165	asphalt lake	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	basin
+mixs:basin	basin	skos:closeMatch	ENVO:00000195	sinkhole	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	basin
+mixs:basin	basin	skos:closeMatch	ENVO:00000291	drainage basin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	basin
+mixs:basin	basin	skos:closeMatch	ENVO:00000311	kettle	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	basin
+mixs:basin	basin	skos:closeMatch	ENVO:00002277	back-arc basin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	basin
+mixs:biomass	biomass	skos:closeMatch	ENVO:01000155	organic material	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	biomass
+mixs:field	field	skos:closeMatch	ENVO:01000352	field	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	field
+mixs:fire	fire	skos:closeMatch	ENVO:01000786	fire	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fire
+mixs:flooding	flooding	skos:closeMatch	ENVO:02500002	flooding	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	flooding
+mixs:oxygen	oxygen	skos:closeMatch	ENVO:01001495	dioxygen dissolved in marine water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	oxygen
+mixs:reservoir	reservoir	skos:closeMatch	ENVO:00000025	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reservoir
+mixs:season	season	skos:closeMatch	ENVO:03000096	season	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	season

@@ -1,0 +1,13 @@
+# curie_map:
+#   NCRO: http://purl.obolibrary.org/obo/NCRO_
+#   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/3b5bd27f-af4b-4f1a-95ce-9d2e80179aa4
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+mixs:pressure	pressure	skos:closeMatch	NCRO:0000028	pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure

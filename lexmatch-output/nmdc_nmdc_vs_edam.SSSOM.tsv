@@ -1,0 +1,51 @@
+# curie_map:
+#   EDAM: http://w3id.org/sssom/unknown_prefix/edam/
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/19adbebb-9813-4f18-a043-65aa7fe32c54
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+nmdc:AnalysisTypeEnum#metabolomics	metabolomics	skos:closeMatch	EDAM:topic_3172	Metabolomics	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metabolomics
+nmdc:AnalysisTypeEnum#metagenomics	metagenomics	skos:closeMatch	EDAM:topic_3174	Metagenomics	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metagenomics
+nmdc:AnalysisTypeEnum#metaproteomics	metaproteomics	skos:closeMatch	EDAM:topic_0121	Proteomics	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	metaproteomics
+nmdc:AnalysisTypeEnum#metatranscriptomics	metatranscriptomics	skos:closeMatch	EDAM:topic_3941	Metatranscriptomics	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metatranscriptomics
+nmdc:CreditEnum#Data+curation	Data curation	skos:closeMatch	EDAM:topic_0219	Data curation and archival	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	data curation
+nmdc:CreditEnum#Validation	Validation	skos:closeMatch	EDAM:operation_2428	Validation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	validation
+nmdc:DrawingsEnum#construction	construction	skos:closeMatch	EDAM:operation_3429	Generation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	construction
+nmdc:DrawingsEnum#design	design	skos:closeMatch	EDAM:operation_2430	Design	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	design
+nmdc:DrawingsEnum#operation	operation	skos:closeMatch	EDAM:operation_0004	Operation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	operation
+nmdc:ExtractionTargetEnum#DNA	DNA	skos:closeMatch	EDAM:format_1212	dna	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dna
+nmdc:ExtractionTargetEnum#DNA	DNA	skos:closeMatch	EDAM:topic_0654	DNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dna
+nmdc:ExtractionTargetEnum#RNA	RNA	skos:closeMatch	EDAM:format_1213	rna	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rna
+nmdc:ExtractionTargetEnum#RNA	RNA	skos:closeMatch	EDAM:topic_0099	RNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rna
+nmdc:ExtractionTargetEnum#protein	protein	skos:closeMatch	EDAM:format_1208	protein	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	protein
+nmdc:FileTypeEnum#Protein+Report	Protein Report	skos:closeMatch	EDAM:data_0896	Protein report	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	protein report
+nmdc:LibraryTypeEnum#DNA	DNA	skos:closeMatch	EDAM:format_1212	dna	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dna
+nmdc:LibraryTypeEnum#DNA	DNA	skos:closeMatch	EDAM:topic_0654	DNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dna
+nmdc:LibraryTypeEnum#RNA	RNA	skos:closeMatch	EDAM:format_1213	rna	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rna
+nmdc:LibraryTypeEnum#RNA	RNA	skos:closeMatch	EDAM:topic_0099	RNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rna
+nmdc:MassSpectrometryEnum#metabolome	metabolome	skos:closeMatch	EDAM:topic_3172	Metabolomics	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	metabolome
+nmdc:Pathway	Pathway	skos:closeMatch	EDAM:data_2600	Pathway or network	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	pathway
+nmdc:SpecificEnum#construction	construction	skos:closeMatch	EDAM:operation_3429	Generation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	construction
+nmdc:SpecificEnum#design	design	skos:closeMatch	EDAM:operation_2430	Design	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	design
+nmdc:SpecificEnum#operation	operation	skos:closeMatch	EDAM:operation_0004	Operation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	operation
+nmdc:attribute_values/:term	term	skos:closeMatch	EDAM:data_0968	Keyword	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	term
+nmdc:basic_classes/:Doi	Doi	skos:closeMatch	EDAM:data_1188	DOI	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	doi
+nmdc:basic_classes/:Protocol	Protocol	skos:closeMatch	EDAM:data_2531	Protocol	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	protocol
+nmdc:concentration	concentration	skos:closeMatch	EDAM:data_2140	Concentration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	concentration
+nmdc:contigs	contigs	skos:closeMatch	EDAM:data_0925	Sequence assembly	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	contigs
+nmdc:doi_value	doi_value	skos:closeMatch	EDAM:data_1188	DOI	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	nmdc:doi_value
+nmdc:doi_value	doi_value	skos:closeMatch	EDAM:data_1188	DOI	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	nmdc:doi_value
+nmdc:id	id	skos:closeMatch	EDAM:data_0842	Identifier	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	id
+nmdc:inchi	inchi	skos:closeMatch	EDAM:format_1197	InChI	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	inchi
+nmdc:language	language	skos:closeMatch	EDAM:topic_3068	Literature and language	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	language
+nmdc:name	name	skos:closeMatch	EDAM:data_2099	Name	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	name
+nmdc:smiles	smiles	skos:closeMatch	EDAM:format_1196	SMILES	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	smiles
+nmdc:temperature	temperature	skos:closeMatch	EDAM:data_3724	Cultivation parameter	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	temperature
+nmdc:url	url	skos:closeMatch	EDAM:data_1052	URL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	url

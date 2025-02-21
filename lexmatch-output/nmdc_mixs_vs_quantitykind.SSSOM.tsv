@@ -1,0 +1,18 @@
+# curie_map:
+#   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   owl: http://www.w3.org/2002/07/owl#
+#   quantitykind: http://w3id.org/sssom/unknown_prefix/quantitykind/
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/5d8721b2-c15f-449b-bd0f-eb072911749d
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+mixs:density	density	skos:closeMatch	quantitykind:Density	Density	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	density
+mixs:depth	depth	skos:closeMatch	quantitykind:Depth	Depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+mixs:permeability	permeability	skos:closeMatch	quantitykind:ElectromagneticPermeability	Permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permeability
+mixs:permeability	permeability	skos:closeMatch	quantitykind:Permeability	Permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permeability
+mixs:turbidity	turbidity	skos:closeMatch	quantitykind:Turbidity	Turbidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	turbidity
+mixs:viscosity	viscosity	skos:closeMatch	quantitykind:Viscosity	Viscosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	viscosity
