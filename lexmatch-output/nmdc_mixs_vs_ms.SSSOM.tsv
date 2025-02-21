@@ -1,0 +1,15 @@
+# curie_map:
+#   MS: http://purl.obolibrary.org/obo/MS_
+#   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/da89f0d9-2eb6-4679-87eb-eab1f7008260
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+mixs:api	api	skos:closeMatch	MS:1000240	atmospheric pressure ionization	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	api
+mixs:reservoir	reservoir	skos:closeMatch	MS:1000067	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reservoir

@@ -1,0 +1,65 @@
+# curie_map:
+#   comet: http://w3id.org/sssom/unknown_prefix/comet/
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/f616e82b-77d1-45cc-b5e8-6c36d786eb51
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+nmdc:ArchStrucEnum#building	building	skos:closeMatch	comet:Building	Building	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	building
+nmdc:CeilFinishMatEnum#metal	metal	skos:closeMatch	comet:ExtractiveIndustryProductType#METAL	METAL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:CollectingBiosamplesFromSite	CollectingBiosamplesFromSite	skos:closeMatch	comet:SampleCollectionProcess	SampleCollectionProcess	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	nmdc:collectingbiosamplesfromsite
+nmdc:CollectingBiosamplesFromSite	CollectingBiosamplesFromSite	skos:closeMatch	comet:SampleCollectionProcess	SampleCollectionProcess	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	nmdc:collectingbiosamplesfromsite
+nmdc:CollectingBiosamplesFromSite	CollectingBiosamplesFromSite	skos:closeMatch	comet:SampleCollectionProcess	SampleCollectionProcess	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	nmdc:collectingbiosamplesfromsite
+nmdc:CollectingBiosamplesFromSite	CollectingBiosamplesFromSite	skos:closeMatch	comet:SampleCollectionProcess	SampleCollectionProcess	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	comet:samplecollectionprocess
+nmdc:CollectingBiosamplesFromSite	CollectingBiosamplesFromSite	skos:closeMatch	comet:SampleCollectionProcess	SampleCollectionProcess	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch	nmdc:collectingbiosamplesfromsite
+nmdc:CreditEnum#Investigation	Investigation	skos:closeMatch	comet:Investigation	Investigation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	investigation
+nmdc:CurLandUseEnum#gravel	gravel	skos:closeMatch	comet:ExtractiveIndustryProductType#GRAVEL	GRAVEL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gravel
+nmdc:CurLandUseEnum#sand	sand	skos:closeMatch	comet:ExtractiveIndustryProductType#SAND	SAND	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sand
+nmdc:DNASampleFormatEnum#Water	Water	skos:closeMatch	comet:WellType#WATER	WATER	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:DoorMatEnum#metal	metal	skos:closeMatch	comet:ExtractiveIndustryProductType#METAL	METAL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:DoorTypeEnum#metal	metal	skos:closeMatch	comet:ExtractiveIndustryProductType#METAL	METAL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:DrawingsEnum#design	design	skos:closeMatch	comet:design	design	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	design
+nmdc:FloorFinishMatEnum#stone	stone	skos:closeMatch	comet:ExtractiveIndustryProductType#STONE	STONE	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stone
+nmdc:HcProducedEnum#Gas	Gas	skos:closeMatch	comet:ExtractiveIndustryProductType#GAS	GAS	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gas
+nmdc:HcProducedEnum#Gas	Gas	skos:closeMatch	comet:WellType#GAS	GAS	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gas
+nmdc:HcProducedEnum#Oil	Oil	skos:closeMatch	comet:ExtractiveIndustryProductType#OIL	OIL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	oil
+nmdc:HcProducedEnum#Oil	Oil	skos:closeMatch	comet:WellType#OIL	OIL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	oil
+nmdc:LithologyEnum#Coal	Coal	skos:closeMatch	comet:ExtractiveIndustryProductType#COAL	COAL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	coal
+nmdc:LithologyEnum#Coal	Coal	skos:closeMatch	comet:FossilFuelType#COAL	COAL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	coal
+nmdc:MaterialProcessing	MaterialProcessing	skos:closeMatch	comet:MaterialProcessing	MaterialProcessing	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	materialprocessing
+nmdc:PlantGrowthMedEnum#sand	sand	skos:closeMatch	comet:ExtractiveIndustryProductType#SAND	SAND	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sand
+nmdc:PlantGrowthMedEnum#water	water	skos:closeMatch	comet:WellType#WATER	WATER	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:RNASampleFormatEnum#Water	Water	skos:closeMatch	comet:WellType#WATER	WATER	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:SampleStateEnum#gas	gas	skos:closeMatch	comet:ExtractiveIndustryProductType#GAS	GAS	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gas
+nmdc:SampleStateEnum#gas	gas	skos:closeMatch	comet:WellType#GAS	GAS	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gas
+nmdc:SampleTypeEnum#water	water	skos:closeMatch	comet:WellType#WATER	WATER	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:SpecificEnum#design	design	skos:closeMatch	comet:design	design	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	design
+nmdc:SrLithologyEnum#Coal	Coal	skos:closeMatch	comet:ExtractiveIndustryProductType#COAL	COAL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	coal
+nmdc:SrLithologyEnum#Coal	Coal	skos:closeMatch	comet:FossilFuelType#COAL	COAL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	coal
+nmdc:SurfMaterialEnum#metal	metal	skos:closeMatch	comet:ExtractiveIndustryProductType#METAL	METAL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:SurfMaterialEnum#stone	stone	skos:closeMatch	comet:ExtractiveIndustryProductType#STONE	STONE	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stone
+nmdc:VisMediaEnum#equipment	equipment	skos:closeMatch	comet:Equipment	Equipment	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	equipment
+nmdc:WallFinishMatEnum#metal	metal	skos:closeMatch	comet:ExtractiveIndustryProductType#METAL	METAL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:WindowMatEnum#metal	metal	skos:closeMatch	comet:ExtractiveIndustryProductType#METAL	METAL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:basic_classes/:PlannedProcess	PlannedProcess	skos:closeMatch	comet:PlannedProcess	PlannedProcess	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	plannedprocess
+nmdc:basic_classes/:PlannedProcess	PlannedProcess	skos:closeMatch	comet:PlannedProcess	PlannedProcess	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	obi:0000011
+nmdc:basic_classes/:definition	definition	skos:closeMatch	comet:definition	definition	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	definition
+nmdc:basic_classes/:model	model	skos:closeMatch	comet:Model	Model	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	model
+nmdc:basic_classes/:object	object	skos:closeMatch	comet:object	object	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	object
+nmdc:basic_classes/:subject	subject	skos:closeMatch	comet:subject	subject	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	subject
+nmdc:collected_from	collected_from	skos:closeMatch	comet:collected_from	collected_from	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	collected_from
+nmdc:description	description	skos:closeMatch	comet:description	description	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	description
+nmdc:duration	duration	skos:closeMatch	comet:Duration	Duration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	duration
+nmdc:id	id	skos:closeMatch	comet:id	id	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	id
+nmdc:latitude	latitude	skos:closeMatch	comet:latitude	latitude	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	latitude
+nmdc:location	location	skos:closeMatch	comet:Location	Location	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	location
+nmdc:location	location	skos:closeMatch	comet:location	location	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	location
+nmdc:longitude	longitude	skos:closeMatch	comet:longitude	longitude	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	longitude
+nmdc:name	name	skos:closeMatch	comet:name	name	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	name
+nmdc:subject	subject	skos:closeMatch	comet:subject	subject	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	subject
+nmdc:type	type	skos:closeMatch	comet:type	type	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	type

@@ -1,0 +1,86 @@
+# curie_map:
+#   PATO: http://purl.obolibrary.org/obo/PATO_
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/278fc7e4-ba44-4aff-ae6b-59ae35384e7c
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+nmdc:CeilCondEnum#damaged	damaged	skos:closeMatch	PATO:0001167	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:CeilTextureEnum#smooth	smooth	skos:closeMatch	PATO:0000701	smooth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	smooth
+nmdc:CeilTextureEnum#smooth	smooth	skos:closeMatch	PATO:0001975	unserrated	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	smooth
+nmdc:CeilTypeEnum#concave	concave	skos:closeMatch	PATO:0001857	concave	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	concave
+nmdc:DoorCompTypeEnum#telescopic	telescopic	skos:closeMatch	PATO:0002313	telescopic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	telescopic
+nmdc:DoorCondEnum#damaged	damaged	skos:closeMatch	PATO:0001167	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:DoorLocEnum#east	east	skos:closeMatch	PATO:0045092	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:DoorLocEnum#north	north	skos:closeMatch	PATO:0045091	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:DoorLocEnum#south	south	skos:closeMatch	PATO:0045093	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:DoorLocEnum#west	west	skos:closeMatch	PATO:0045094	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:DoorTypeMetalEnum#hollow	hollow	skos:closeMatch	PATO:0002078	hollow	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hollow
+nmdc:DoorTypeWoodEnum#flush	flush	skos:closeMatch	PATO:0002518	flush	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	flush
+nmdc:ExtWallOrientEnum#east	east	skos:closeMatch	PATO:0045092	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:ExtWallOrientEnum#north	north	skos:closeMatch	PATO:0045091	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:ExtWallOrientEnum#south	south	skos:closeMatch	PATO:0045093	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:ExtWallOrientEnum#west	west	skos:closeMatch	PATO:0045094	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:ExtWindowOrientEnum#east	east	skos:closeMatch	PATO:0045092	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:ExtWindowOrientEnum#north	north	skos:closeMatch	PATO:0045091	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:ExtWindowOrientEnum#south	south	skos:closeMatch	PATO:0045093	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:ExtWindowOrientEnum#west	west	skos:closeMatch	PATO:0045094	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:FloorCondEnum#damaged	damaged	skos:closeMatch	PATO:0001167	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:GenderRestroomEnum#female	female	skos:closeMatch	PATO:0000383	female	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	female
+nmdc:GenderRestroomEnum#male	male	skos:closeMatch	PATO:0000384	male	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	male
+nmdc:GrowthHabitEnum#erect	erect	skos:closeMatch	PATO:0000622	erect	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	erect
+nmdc:GrowthHabitEnum#prostrate	prostrate	skos:closeMatch	PATO:0000631	prostrate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	prostrate
+nmdc:HandidnessEnum#left+handedness	left handedness	skos:closeMatch	PATO:0002202	left handedness	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	left handedness
+nmdc:HandidnessEnum#right+handedness	right handedness	skos:closeMatch	PATO:0002203	right handedness	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	right handedness
+nmdc:HcProducedEnum#Gas	Gas	skos:closeMatch	PATO:0001737	gaseus configuration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	gas
+nmdc:HeatDelivLocEnum#east	east	skos:closeMatch	PATO:0045092	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:HeatDelivLocEnum#north	north	skos:closeMatch	PATO:0045091	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:HeatDelivLocEnum#south	south	skos:closeMatch	PATO:0045093	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:HeatDelivLocEnum#west	west	skos:closeMatch	PATO:0045094	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:HostSexEnum#female	female	skos:closeMatch	PATO:0000383	female	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	female
+nmdc:HostSexEnum#hermaphrodite	hermaphrodite	skos:closeMatch	PATO:0001340	hermaphrodite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hermaphrodite
+nmdc:HostSexEnum#male	male	skos:closeMatch	PATO:0000384	male	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	male
+nmdc:IntWallCondEnum#damaged	damaged	skos:closeMatch	PATO:0001167	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:OxyStatSampEnum#aerobic	aerobic	skos:closeMatch	PATO:0001455	aerobic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	aerobic
+nmdc:OxyStatSampEnum#anaerobic	anaerobic	skos:closeMatch	PATO:0001456	anaerobic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	anaerobic
+nmdc:PlantSexEnum#Hermaphroditic	Hermaphroditic	skos:closeMatch	PATO:0001340	hermaphrodite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	hermaphroditic
+nmdc:PlantSexEnum#Protandrous	Protandrous	skos:closeMatch	PATO:0040053	protandrous	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	protandrous
+nmdc:PlantSexEnum#Protogynous	Protogynous	skos:closeMatch	PATO:0040052	protogynous	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	protogynous
+nmdc:RoomCondtEnum#damaged	damaged	skos:closeMatch	PATO:0001167	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:SampWeatherEnum#cloudy	cloudy	skos:closeMatch	PATO:0000963	opaque	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	cloudy
+nmdc:SampleStateEnum#gas	gas	skos:closeMatch	PATO:0001737	gaseus configuration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	gas
+nmdc:SampleStateEnum#liquid	liquid	skos:closeMatch	PATO:0001735	liquid configuration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	liquid
+nmdc:SampleStateEnum#solid	solid	skos:closeMatch	PATO:0001736	solid configuration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	solid
+nmdc:ShadingDeviceCondEnum#damaged	damaged	skos:closeMatch	PATO:0001167	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:TrainLineEnum#green	green	skos:closeMatch	PATO:0000320	green	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	green
+nmdc:TrainLineEnum#orange	orange	skos:closeMatch	PATO:0000953	orange	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	orange
+nmdc:TrainLineEnum#red	red	skos:closeMatch	PATO:0000322	red	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	red
+nmdc:WallLocEnum#east	east	skos:closeMatch	PATO:0045092	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:WallLocEnum#north	north	skos:closeMatch	PATO:0045091	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:WallLocEnum#south	south	skos:closeMatch	PATO:0045093	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:WallLocEnum#west	west	skos:closeMatch	PATO:0045094	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:WallTextureEnum#smooth	smooth	skos:closeMatch	PATO:0000701	smooth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	smooth
+nmdc:WallTextureEnum#smooth	smooth	skos:closeMatch	PATO:0001975	unserrated	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	smooth
+nmdc:WindowCondEnum#damaged	damaged	skos:closeMatch	PATO:0001167	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:WindowHorizPosEnum#left	left	skos:closeMatch	PATO:0000366	left	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	left
+nmdc:WindowHorizPosEnum#right	right	skos:closeMatch	PATO:0000367	right	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	right
+nmdc:WindowLocEnum#east	east	skos:closeMatch	PATO:0045092	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:WindowLocEnum#north	north	skos:closeMatch	PATO:0045091	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:WindowLocEnum#south	south	skos:closeMatch	PATO:0045093	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:WindowLocEnum#west	west	skos:closeMatch	PATO:0045094	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:completeness	completeness	skos:closeMatch	PATO:0002324	offset quality	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	completeness
+nmdc:concentration	concentration	skos:closeMatch	PATO:0000033	concentration of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	concentration
+nmdc:contamination	contamination	skos:closeMatch	PATO:0015031	contamination	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	contamination
+nmdc:duration	duration	skos:closeMatch	PATO:0001309	duration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	duration
+nmdc:location	location	skos:closeMatch	PATO:0000140	position	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	location
+nmdc:mass	mass	skos:closeMatch	PATO:0000125	mass	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	nmdc:mass
+nmdc:mass	mass	skos:closeMatch	PATO:0000125	mass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mass
+nmdc:phase	phase	skos:closeMatch	PATO:0000083	phase	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	phase
+nmdc:temperature	temperature	skos:closeMatch	PATO:0000146	temperature	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	temperature
+nmdc:volume	volume	skos:closeMatch	PATO:0000918	volume	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	volume

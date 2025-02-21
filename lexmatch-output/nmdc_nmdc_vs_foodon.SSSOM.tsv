@@ -1,0 +1,22 @@
+# curie_map:
+#   FOODON: http://purl.obolibrary.org/obo/FOODON_
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/078f38d7-e208-4ce1-83b0-ce078afce982
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+nmdc:DNASampleFormatEnum#Water	Water	skos:closeMatch	FOODON:00002340	water food product	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	water
+nmdc:HcProducedEnum#Oil	Oil	skos:closeMatch	FOODON:03310387	oil	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	oil
+nmdc:JgiContTypeEnum#tube	tube	skos:closeMatch	FOODON:03490200	tube	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tube
+nmdc:PlantGrowthMedEnum#water	water	skos:closeMatch	FOODON:00002340	water food product	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	water
+nmdc:RNASampleFormatEnum#Water	Water	skos:closeMatch	FOODON:00002340	water food product	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	water
+nmdc:SampleTypeEnum#water	water	skos:closeMatch	FOODON:00002340	water food product	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	water
+nmdc:TrainLineEnum#orange	orange	skos:closeMatch	FOODON:03309832	orange (raw)	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	orange
+nmdc:TrainLineEnum#orange	orange	skos:closeMatch	FOODON:03315106	orange	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	orange
+nmdc:WallSurfTreatmentEnum#fabric	fabric	skos:closeMatch	FOODON:03500045	food-grade textile surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	fabric

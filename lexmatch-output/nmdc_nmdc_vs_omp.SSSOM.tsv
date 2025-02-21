@@ -1,0 +1,15 @@
+# curie_map:
+#   OMP: http://purl.obolibrary.org/obo/OMP_
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/bee3a9c0-6f85-4a27-adcb-ef36e4a14a9b
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+nmdc:ExtractionTargetEnum#RNA	RNA	skos:closeMatch	OMP:0000290	genetic material phenotype	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	rna
+nmdc:LibraryTypeEnum#RNA	RNA	skos:closeMatch	OMP:0000290	genetic material phenotype	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	rna

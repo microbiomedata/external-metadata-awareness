@@ -1,0 +1,16 @@
+# curie_map:
+#   IDO: http://purl.obolibrary.org/obo/IDO_
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/3aeea621-efb8-4f80-863d-186919f13154
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+nmdc:BioticRelationshipEnum#commensal	commensal	skos:closeMatch	IDO:0000525	commensal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	commensal
+nmdc:BioticRelationshipEnum#parasite	parasite	skos:closeMatch	IDO:0000526	parasite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	parasite
+nmdc:BioticRelationshipEnum#symbiont	symbiont	skos:closeMatch	IDO:0000522	symbiont	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	symbiont
+nmdc:SampDisStageEnum#infection	infection	skos:closeMatch	IDO:0000586	infection	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	infection

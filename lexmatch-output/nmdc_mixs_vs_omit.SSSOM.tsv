@@ -1,0 +1,31 @@
+# curie_map:
+#   OMIT: http://purl.obolibrary.org/obo/OMIT_
+#   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/df5d87f8-bbe6-4135-902d-2c67f9f15e6d
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+mixs:benzene	benzene	skos:closeMatch	OMIT:0002921	Benzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	benzene
+mixs:biomass	biomass	skos:closeMatch	OMIT:0018723	Biomass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	biomass
+mixs:calcium	calcium	skos:closeMatch	OMIT:0003460	Calcium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	calcium
+mixs:chlorophyll	chlorophyll	skos:closeMatch	OMIT:0004055	Chlorophyll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+mixs:drawings	drawings	skos:closeMatch	OMIT:0020355	Drawings	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	drawings
+mixs:emulsions	emulsions	skos:closeMatch	OMIT:0005902	Emulsions	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	emulsions
+mixs:gravidity	gravidity	skos:closeMatch	OMIT:0020000	Gravidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gravidity
+mixs:humidity	humidity	skos:closeMatch	OMIT:0007955	Humidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	humidity
+mixs:magnesium	magnesium	skos:closeMatch	OMIT:0009349	Magnesium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	magnesium
+mixs:methane	methane	skos:closeMatch	OMIT:0009760	Methane	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	methane
+mixs:oxygen	oxygen	skos:closeMatch	OMIT:0011105	Oxygen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	oxygen
+mixs:permeability	permeability	skos:closeMatch	OMIT:0011531	Permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permeability
+mixs:porosity	porosity	skos:closeMatch	OMIT:0016645	Porosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	porosity
+mixs:potassium	potassium	skos:closeMatch	OMIT:0012153	Potassium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	potassium
+mixs:pressure	pressure	skos:closeMatch	OMIT:0012268	Pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure
+mixs:salinity	salinity	skos:closeMatch	OMIT:0025967	Salinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	salinity
+mixs:sodium	sodium	skos:closeMatch	OMIT:0013851	Sodium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sodium
+mixs:toluene	toluene	skos:closeMatch	OMIT:0014891	Toluene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	toluene
+mixs:viscosity	viscosity	skos:closeMatch	OMIT:0015613	Viscosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	viscosity

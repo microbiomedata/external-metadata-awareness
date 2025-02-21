@@ -1,0 +1,18 @@
+# curie_map:
+#   MOD: http://purl.obolibrary.org/obo/MOD_
+#   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/c0559e78-d2e7-4a82-9891-c8bfdab53a0a
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+mixs:nitro	nitro	skos:closeMatch	MOD:00461	nitrated residue	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	nitro
+mixs:nitro	nitro	skos:closeMatch	MOD:01351	nitrated L-tryptophan	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	nitro
+mixs:nitro	nitro	skos:closeMatch	MOD:01352	nitrated L-tyrosine	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	nitro
+mixs:sodium	sodium	skos:closeMatch	MOD:00423	monosodium salt	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	sodium
+mixs:sulfide	sulfide	skos:closeMatch	MOD:00274	L-cysteine persulfide	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	sulfide

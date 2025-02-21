@@ -1,0 +1,38 @@
+# curie_map:
+#   ExO: http://purl.obolibrary.org/obo/ExO_
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/37db468f-aa18-4456-abfc-e8b19c335602
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:GenderRestroomEnum#female	female	skos:closeMatch	ExO:0000111	female	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	female
+nmdc:GenderRestroomEnum#male	male	skos:closeMatch	ExO:0000112	male	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	male
+nmdc:HcProducedEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:HcrEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:HostSexEnum#female	female	skos:closeMatch	ExO:0000111	female	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	female
+nmdc:HostSexEnum#male	male	skos:closeMatch	ExO:0000112	male	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	male
+nmdc:LithologyEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:SampCaptStatusEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:SampCollectPointEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:SampDisStageEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:SampMdEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:SampSubtypeEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:SrDepEnvEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:SrGeolAgeEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:SrKerogTypeEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:SrLithologyEnum#other	other	skos:closeMatch	ExO:0000153	Other Race	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	other
+nmdc:basic_classes/:model	model	skos:closeMatch	ExO:0000072	model	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	model
+nmdc:duration	duration	skos:closeMatch	ExO:0000054	duration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	duration
+nmdc:location	location	skos:closeMatch	ExO:0000017	location	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	location

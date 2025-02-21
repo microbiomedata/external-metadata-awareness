@@ -1,0 +1,76 @@
+# curie_map:
+#   OMIT: http://purl.obolibrary.org/obo/OMIT_
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/31d4af7e-ed8d-4155-8044-b77e71ae0bd0
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+nmdc:AnalysisTypeEnum#metabolomics	metabolomics	skos:closeMatch	OMIT:0026286	Metabolomics	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metabolomics
+nmdc:AnalysisTypeEnum#metagenomics	metagenomics	skos:closeMatch	OMIT:0026577	Metagenomics	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metagenomics
+nmdc:CalibrationStandardEnum#alkanes	alkanes	skos:closeMatch	OMIT:0001894	Alkanes	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	alkanes
+nmdc:CeilCondEnum#rupture	rupture	skos:closeMatch	OMIT:0013326	Rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:CeilFinishMatEnum#wood	wood	skos:closeMatch	OMIT:0015758	Wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:CreditEnum#Data+curation	Data curation	skos:closeMatch	OMIT:0028885	Data Curation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	data curation
+nmdc:CreditEnum#Software	Software	skos:closeMatch	OMIT:0013871	Software	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	software
+nmdc:CurLandUseEnum#cities	cities	skos:closeMatch	OMIT:0004264	Cities	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cities
+nmdc:CurLandUseEnum#rainforest	rainforest	skos:closeMatch	OMIT:0028792	Rainforest	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rainforest
+nmdc:CurLandUseEnum#tundra	tundra	skos:closeMatch	OMIT:0028790	Tundra	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tundra
+nmdc:DNASampleFormatEnum#Ethanol	Ethanol	skos:closeMatch	OMIT:0001855	Ethanol	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ethanol
+nmdc:DNASampleFormatEnum#Water	Water	skos:closeMatch	OMIT:0015695	Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:Database	Database	skos:closeMatch	OMIT:0019945	Database	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	database
+nmdc:DoiProviderEnum#gsc	gsc	skos:closeMatch	OMIT:0048702	GSC	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gsc
+nmdc:DoorCondEnum#rupture	rupture	skos:closeMatch	OMIT:0013326	Rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:DoorMatEnum#aluminum	aluminum	skos:closeMatch	OMIT:0001954	Aluminum	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	aluminum
+nmdc:DoorMatEnum#wood	wood	skos:closeMatch	OMIT:0015758	Wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:DrawingsEnum#bid	bid	skos:closeMatch	OMIT:0030520	BID	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bid
+nmdc:ExtractionTargetEnum#DNA	DNA	skos:closeMatch	OMIT:0005504	DNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dna
+nmdc:ExtractionTargetEnum#RNA	RNA	skos:closeMatch	OMIT:0013221	RNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rna
+nmdc:FloorCondEnum#rupture	rupture	skos:closeMatch	OMIT:0013326	Rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:FloorFinishMatEnum#paint	paint	skos:closeMatch	OMIT:0011153	Paint	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	paint
+nmdc:IntWallCondEnum#rupture	rupture	skos:closeMatch	OMIT:0013326	Rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:LibraryTypeEnum#DNA	DNA	skos:closeMatch	OMIT:0005504	DNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dna
+nmdc:LibraryTypeEnum#RNA	RNA	skos:closeMatch	OMIT:0013221	RNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rna
+nmdc:LithologyEnum#Coal	Coal	skos:closeMatch	OMIT:0004341	Coal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	coal
+nmdc:MassSpectrometryEnum#metabolome	metabolome	skos:closeMatch	OMIT:0026294	Metabolome	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metabolome
+nmdc:NucleotideSequencingEnum#metagenome	metagenome	skos:closeMatch	OMIT:0026082	Metagenome	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metagenome
+nmdc:PlantGrowthMedEnum#soil	soil	skos:closeMatch	OMIT:0013874	Soil	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	soil
+nmdc:PlantGrowthMedEnum#water	water	skos:closeMatch	OMIT:0015695	Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:ProfilePositionEnum#shoulder	shoulder	skos:closeMatch	OMIT:0013675	Shoulder	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	shoulder
+nmdc:RNASampleFormatEnum#Ethanol	Ethanol	skos:closeMatch	OMIT:0001855	Ethanol	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ethanol
+nmdc:RNASampleFormatEnum#Water	Water	skos:closeMatch	OMIT:0015695	Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:RoomCondtEnum#rupture	rupture	skos:closeMatch	OMIT:0013326	Rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:SampDisStageEnum#infection	infection	skos:closeMatch	OMIT:0008366	Infection	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	infection
+nmdc:SampWeatherEnum#rain	rain	skos:closeMatch	OMIT:0012821	Rain	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rain
+nmdc:SampWeatherEnum#snow	snow	skos:closeMatch	OMIT:0013802	Snow	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	snow
+nmdc:SampleTypeEnum#soil	soil	skos:closeMatch	OMIT:0013874	Soil	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	soil
+nmdc:SampleTypeEnum#water	water	skos:closeMatch	OMIT:0015695	Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:ShadingDeviceCondEnum#rupture	rupture	skos:closeMatch	OMIT:0013326	Rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:SoilHorizonEnum#Permafrost	Permafrost	skos:closeMatch	OMIT:0028791	Permafrost	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permafrost
+nmdc:SpecificEnum#bid	bid	skos:closeMatch	OMIT:0030520	BID	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bid
+nmdc:SrLithologyEnum#Coal	Coal	skos:closeMatch	OMIT:0004341	Coal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	coal
+nmdc:StationaryPhaseEnum#C2	C2	skos:closeMatch	OMIT:0030588	C2	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	c2
+nmdc:StationaryPhaseEnum#SCX	SCX	skos:closeMatch	OMIT:0056684	SCX	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	scx
+nmdc:SurfAirContEnum#dust	dust	skos:closeMatch	OMIT:0005646	Dust	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dust
+nmdc:SurfAirContEnum#particulate+matter	particulate matter	skos:closeMatch	OMIT:0025164	Particulate Matter	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	particulate matter
+nmdc:SurfAirContEnum#radon	radon	skos:closeMatch	OMIT:0012816	Radon	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	radon
+nmdc:SurfAirContEnum#volatile+organic+compounds	volatile organic compounds	skos:closeMatch	OMIT:0026343	Volatile Organic Compounds	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	volatile organic compounds
+nmdc:SurfMaterialEnum#glass	glass	skos:closeMatch	OMIT:0007093	Glass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	glass
+nmdc:SurfMaterialEnum#paint	paint	skos:closeMatch	OMIT:0011153	Paint	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	paint
+nmdc:SurfMaterialEnum#stainless+steel	stainless steel	skos:closeMatch	OMIT:0014071	Stainless Steel	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stainless steel
+nmdc:SurfMaterialEnum#wood	wood	skos:closeMatch	OMIT:0015758	Wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:WallFinishMatEnum#wood	wood	skos:closeMatch	OMIT:0015758	Wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:WindowCondEnum#rupture	rupture	skos:closeMatch	OMIT:0013326	Rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:WindowMatEnum#wood	wood	skos:closeMatch	OMIT:0015758	Wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:ecosystem	ecosystem	skos:closeMatch	OMIT:0018052	Ecosystem	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ecosystem
+nmdc:id	id	skos:closeMatch	OMIT:0008191	Id	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	id
+nmdc:language	language	skos:closeMatch	OMIT:0008902	Language	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	language
+nmdc:manganese	manganese	skos:closeMatch	OMIT:0009418	Manganese	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	manganese
+nmdc:num_23s	num_23s	skos:closeMatch	OMIT:0013245	RNA, Ribosomal, 23S	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:broadMatch-INVERSE	nmdc:num_23s
+nmdc:num_5s	num_5s	skos:closeMatch	OMIT:0013248	RNA, Ribosomal, 5S	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:broadMatch-INVERSE	nmdc:num_5s
+nmdc:temperature	temperature	skos:closeMatch	OMIT:0014553	Temperature	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	temperature
+nmdc:zinc	zinc	skos:closeMatch	OMIT:0015854	Zinc	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	zinc

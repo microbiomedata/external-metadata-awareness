@@ -1,0 +1,17 @@
+# curie_map:
+#   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/05d64d16-889c-4577-8449-30caa3e55a78
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+mixs:elevator	elevator	skos:closeMatch	nmdc:IndoorSpaceEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:MechStrucEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomConnectedEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomTypeEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:escalator	escalator	skos:closeMatch	nmdc:MechStrucEnum#escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator

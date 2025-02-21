@@ -1,0 +1,21 @@
+# curie_map:
+#   OPMI: http://purl.obolibrary.org/obo/OPMI_
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/8aa46ab0-0dfd-40d4-927c-d3d081e1d628
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+nmdc:ArchStrucEnum#home	home	skos:closeMatch	OPMI:0000500	home	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	home
+nmdc:BuildOccupTypeEnum#health+care	health care	skos:closeMatch	OPMI:0000229	health care	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	health care
+nmdc:WeekdayEnum#Friday	Friday	skos:closeMatch	OPMI:0000088	Friday	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	friday
+nmdc:WeekdayEnum#Monday	Monday	skos:closeMatch	OPMI:0000084	Monday	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	monday
+nmdc:WeekdayEnum#Saturday	Saturday	skos:closeMatch	OPMI:0000089	Saturday	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	saturday
+nmdc:WeekdayEnum#Sunday	Sunday	skos:closeMatch	OPMI:0000090	Sunday	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sunday
+nmdc:WeekdayEnum#Thursday	Thursday	skos:closeMatch	OPMI:0000087	Thursday	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	thursday
+nmdc:WeekdayEnum#Tuesday	Tuesday	skos:closeMatch	OPMI:0000085	Tuesday	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tuesday
+nmdc:WeekdayEnum#Wednesday	Wednesday	skos:closeMatch	OPMI:0000086	Wednesday	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wednesday

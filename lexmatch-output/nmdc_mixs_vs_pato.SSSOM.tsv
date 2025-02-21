@@ -1,0 +1,22 @@
+# curie_map:
+#   PATO: http://purl.obolibrary.org/obo/PATO_
+#   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/0150c0d2-76f9-43d2-a268-cd8e021ce512
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+mixs:density	density	skos:closeMatch	PATO:0001019	mass density	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	density
+mixs:depth	depth	skos:closeMatch	PATO:0001595	depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+mixs:humidity	humidity	skos:closeMatch	PATO:0015009	humidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	humidity
+mixs:permeability	permeability	skos:closeMatch	PATO:0000970	permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permeability
+mixs:ph	ph	skos:closeMatch	PATO:0001842	acidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	ph
+mixs:porosity	porosity	skos:closeMatch	PATO:0000973	porosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	porosity
+mixs:pressure	pressure	skos:closeMatch	PATO:0001025	pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure
+mixs:salinity	salinity	skos:closeMatch	PATO:0085001	salinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	salinity
+mixs:viscosity	viscosity	skos:closeMatch	PATO:0000992	viscosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	viscosity
