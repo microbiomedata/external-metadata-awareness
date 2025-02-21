@@ -1,0 +1,77 @@
+# curie_map:
+#   biolink: http://w3id.org/sssom/unknown_prefix/biolink/
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/52189169-924a-46c6-b56c-70ab7ad41bfc
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+nmdc:Biosample	Biosample	skos:closeMatch	biolink:MaterialSample	material sample	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	obi:0000747
+nmdc:DoorMoveEnum#folding	folding	skos:closeMatch	biolink:GeneOrGeneProductOrChemicalEntityAspectEnum#folding	folding	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	folding
+nmdc:ExtractionTargetEnum#metabolite	metabolite	skos:closeMatch	biolink:ChemicalEntityDerivativeEnum#metabolite	metabolite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metabolite
+nmdc:ExtractionTargetEnum#protein	protein	skos:closeMatch	biolink:Protein	protein	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	protein
+nmdc:FunctionalAnnotation	FunctionalAnnotation	skos:closeMatch	biolink:GeneToGoTermAssociation	gene to go term association	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	nmdc:functionalannotation
+nmdc:FunctionalAnnotation	FunctionalAnnotation	skos:closeMatch	biolink:GeneToGoTermAssociation	gene to go term association	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	nmdc:functionalannotation
+nmdc:FunctionalAnnotation	FunctionalAnnotation	skos:closeMatch	biolink:GeneToGoTermAssociation	gene to go term association	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch-INVERSE	nmdc:functionalannotation
+nmdc:FunctionalAnnotation	FunctionalAnnotation	skos:closeMatch	biolink:GeneToGoTermAssociation	gene to go term association	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:narrowMatch-INVERSE	nmdc:functionalannotation
+nmdc:FunctionalAnnotation	FunctionalAnnotation	skos:closeMatch	biolink:GeneToGoTermAssociation	gene to go term association	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	rdf:ID	biolink:genetogotermassociation
+nmdc:OrthologyGroup	OrthologyGroup	skos:closeMatch	biolink:GeneFamily	gene family	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	nmdc:orthologygroup
+nmdc:OrthologyGroup	OrthologyGroup	skos:closeMatch	biolink:GeneFamily	gene family	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	nmdc:orthologygroup
+nmdc:OrthologyGroup	OrthologyGroup	skos:closeMatch	biolink:GeneFamily	gene family	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	rdf:ID	biolink:genefamily
+nmdc:OrthologyGroup	OrthologyGroup	skos:closeMatch	biolink:GeneFamily	gene family	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	rdf:ID	biolink:genefamily
+nmdc:OrthologyGroup	OrthologyGroup	skos:closeMatch	biolink:GeneFamily	gene family	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	rdf:ID	biolink:genefamily
+nmdc:OrthologyGroup	OrthologyGroup	skos:closeMatch	biolink:GeneFamily	gene family	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	rdf:ID	biolink:genefamily
+nmdc:OrthologyGroup	OrthologyGroup	skos:closeMatch	biolink:GeneFamily	gene family	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	rdf:ID	biolink:genefamily
+nmdc:OrthologyGroup	OrthologyGroup	skos:closeMatch	biolink:GeneFamily	gene family	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch-INVERSE	nmdc:orthologygroup
+nmdc:OrthologyGroup	OrthologyGroup	skos:closeMatch	biolink:GeneFamily	gene family	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch-INVERSE	nmdc:orthologygroup
+nmdc:Pathway	Pathway	skos:closeMatch	biolink:Pathway	pathway	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	nmdc:pathway
+nmdc:Pathway	Pathway	skos:closeMatch	biolink:Pathway	pathway	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	nmdc:pathway
+nmdc:Pathway	Pathway	skos:closeMatch	biolink:Pathway	pathway	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pathway
+nmdc:Pathway	Pathway	skos:closeMatch	biolink:Pathway	pathway	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	rdf:ID	biolink:pathway
+nmdc:Pathway	Pathway	skos:closeMatch	biolink:Pathway	pathway	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	rdf:ID	biolink:pathway
+nmdc:Pathway	Pathway	skos:closeMatch	biolink:Pathway	pathway	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	rdf:ID	biolink:pathway
+nmdc:Pathway	Pathway	skos:closeMatch	biolink:Pathway	pathway	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	rdf:ID	biolink:pathway
+nmdc:Pathway	Pathway	skos:closeMatch	biolink:Pathway	pathway	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch-INVERSE	nmdc:pathway
+nmdc:Pathway	Pathway	skos:closeMatch	biolink:Pathway	pathway	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch-INVERSE	nmdc:pathway
+nmdc:WindowHorizPosEnum#left	left	skos:closeMatch	biolink:ReactionSideEnum#left	left	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	left
+nmdc:WindowHorizPosEnum#right	right	skos:closeMatch	biolink:ReactionSideEnum#right	right	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	right
+nmdc:alternative_names	alternative_names	skos:closeMatch	biolink:synonym	synonym	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	skos:altlabel
+nmdc:basic_classes/:OntologyClass	OntologyClass	skos:closeMatch	biolink:OntologyClass	ontology class	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	nmdc:basic_classes/:ontologyclass
+nmdc:basic_classes/:OntologyClass	OntologyClass	skos:closeMatch	biolink:OntologyClass	ontology class	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	nmdc:basic_classes/:ontologyclass
+nmdc:basic_classes/:OntologyClass	OntologyClass	skos:closeMatch	biolink:OntologyClass	ontology class	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	nmdc:basic_classes/:ontologyclass
+nmdc:basic_classes/:OntologyClass	OntologyClass	skos:closeMatch	biolink:OntologyClass	ontology class	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	nmdc:basic_classes/:ontologyclass
+nmdc:basic_classes/:OntologyClass	OntologyClass	skos:closeMatch	biolink:OntologyClass	ontology class	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	rdf:ID	biolink:ontologyclass
+nmdc:basic_classes/:OntologyClass	OntologyClass	skos:closeMatch	biolink:OntologyClass	ontology class	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	rdf:ID	biolink:ontologyclass
+nmdc:basic_classes/:OntologyClass	OntologyClass	skos:closeMatch	biolink:OntologyClass	ontology class	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	http://schema.org/class
+nmdc:basic_classes/:OntologyClass	OntologyClass	skos:closeMatch	biolink:OntologyClass	ontology class	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	owl:class
+nmdc:basic_classes/:Study	Study	skos:closeMatch	biolink:Activity	activity	semapv:LexicalMatching	oaklib	0.5	skos:broadMatch	skos:exactMatch	prov:activity
+nmdc:basic_classes/:Study	Study	skos:closeMatch	biolink:Study	study	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	study
+nmdc:basic_classes/:object	object	skos:closeMatch	biolink:object	object	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	object
+nmdc:basic_classes/:predicate	predicate	skos:closeMatch	biolink:predicate	predicate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	predicate
+nmdc:basic_classes/:subject	subject	skos:closeMatch	biolink:subject	subject	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	subject
+nmdc:description	description	skos:closeMatch	biolink:description	description	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	description
+nmdc:end	end	skos:closeMatch	biolink:end_interbase_coordinate	end interbase coordinate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:closeMatch-INVERSE	nmdc:end
+nmdc:end	end	skos:closeMatch	biolink:end_interbase_coordinate	end interbase coordinate	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch	rdf:ID	biolink:end_interbase_coordinate
+nmdc:external_database_identifiers	external_database_identifiers	skos:closeMatch	biolink:close_match	close match	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch	skos:exactMatch	skos:closematch
+nmdc:id	id	skos:closeMatch	biolink:id	id	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	id
+nmdc:latitude	latitude	skos:closeMatch	biolink:latitude	latitude	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	latitude
+nmdc:longitude	longitude	skos:closeMatch	biolink:longitude	longitude	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	longitude
+nmdc:name	name	skos:closeMatch	biolink:name	name	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	name
+nmdc:phase	phase	skos:closeMatch	biolink:phase	phase	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	nmdc:phase
+nmdc:phase	phase	skos:closeMatch	biolink:phase	phase	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	phase
+nmdc:phase	phase	skos:closeMatch	biolink:phase	phase	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	rdf:ID	biolink:phase
+nmdc:start	start	skos:closeMatch	biolink:start_interbase_coordinate	start interbase coordinate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:closeMatch-INVERSE	nmdc:start
+nmdc:start	start	skos:closeMatch	biolink:start_interbase_coordinate	start interbase coordinate	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch	rdf:ID	biolink:start_interbase_coordinate
+nmdc:strand	strand	skos:closeMatch	biolink:strand	strand	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	nmdc:strand
+nmdc:strand	strand	skos:closeMatch	biolink:strand	strand	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	strand
+nmdc:strand	strand	skos:closeMatch	biolink:strand	strand	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	rdf:ID	biolink:strand
+nmdc:subject	subject	skos:closeMatch	biolink:subject	subject	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	subject
+nmdc:title	title	skos:closeMatch	biolink:name	name	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	dcterms:title
+nmdc:type	type	skos:closeMatch	biolink:type	type	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	type
+nmdc:url	url	skos:closeMatch	biolink:url	url	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	url
+nmdc:version	version	skos:closeMatch	biolink:version	version	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	version
+nmdc:volume	volume	skos:closeMatch	biolink:volume	volume	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	volume

@@ -1,0 +1,15 @@
+# curie_map:
+#   EDAM: http://w3id.org/sssom/unknown_prefix/edam/
+#   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/e11c0472-df8e-4047-9071-81264ec06a29
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+mixs:ph	ph	skos:closeMatch	EDAM:format_1997	PHYLIP format	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	ph
+mixs:salinity	salinity	skos:closeMatch	EDAM:data_3724	Cultivation parameter	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	salinity

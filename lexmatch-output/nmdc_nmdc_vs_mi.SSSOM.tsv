@@ -1,0 +1,30 @@
+# curie_map:
+#   MI: http://purl.obolibrary.org/obo/MI_
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/be395731-3c72-4416-b92e-e5d38f467abf
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+nmdc:ExtractionTargetEnum#DNA	DNA	skos:closeMatch	MI:0319	deoxyribonucleic acid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	dna
+nmdc:ExtractionTargetEnum#DNA	DNA	skos:closeMatch	MI:0319	deoxyribonucleic acid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	dna
+nmdc:ExtractionTargetEnum#RNA	RNA	skos:closeMatch	MI:0320	ribonucleic acid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	rna
+nmdc:ExtractionTargetEnum#RNA	RNA	skos:closeMatch	MI:0320	ribonucleic acid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	rna
+nmdc:ExtractionTargetEnum#protein	protein	skos:closeMatch	MI:0326	protein	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	protein
+nmdc:LibraryTypeEnum#DNA	DNA	skos:closeMatch	MI:0319	deoxyribonucleic acid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	dna
+nmdc:LibraryTypeEnum#DNA	DNA	skos:closeMatch	MI:0319	deoxyribonucleic acid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	dna
+nmdc:LibraryTypeEnum#RNA	RNA	skos:closeMatch	MI:0320	ribonucleic acid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	rna
+nmdc:LibraryTypeEnum#RNA	RNA	skos:closeMatch	MI:0320	ribonucleic acid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	rna
+nmdc:Pathway	Pathway	skos:closeMatch	MI:0619	pathway	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pathway
+nmdc:SampDisStageEnum#infection	infection	skos:closeMatch	MI:0310	infection	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	infection
+nmdc:basic_classes/:Doi	Doi	skos:closeMatch	MI:0574	digital object identifier	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	doi
+nmdc:title	title	skos:closeMatch	MI:1091	publication title	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	title
+nmdc:url	url	skos:closeMatch	MI:0614	url	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	url
+nmdc:zinc	zinc	skos:closeMatch	MI:2225	zinc	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	zinc
+nmdc:zinc	zinc	skos:closeMatch	MI:2225	zinc	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	zinc
+nmdc:zinc	zinc	skos:closeMatch	MI:2225	zinc	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	zinc
