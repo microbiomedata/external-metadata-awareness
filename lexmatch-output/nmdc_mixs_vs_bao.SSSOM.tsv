@@ -1,14 +1,1121 @@
 # curie_map:
 #   BAO: http://w3id.org/sssom/unknown_prefix/bao/
+#   CHEBI: http://purl.obolibrary.org/obo/CHEBI_
+#   CLO: http://purl.obolibrary.org/obo/CLO_
+#   DOID: http://purl.obolibrary.org/obo/DOID_
+#   EFO: http://www.ebi.ac.uk/efo/EFO_
+#   GO: http://purl.obolibrary.org/obo/GO_
+#   IAO: http://purl.obolibrary.org/obo/IAO_
+#   OBI: http://purl.obolibrary.org/obo/OBI_
+#   PATO: http://purl.obolibrary.org/obo/PATO_
+#   UBERON: http://purl.obolibrary.org/obo/UBERON_
+#   UO: http://purl.obolibrary.org/obo/UO_
+#   dcterms: http://w3id.org/sssom/unknown_prefix/dcterms/
+#   linkml: http://w3id.org/sssom/unknown_prefix/linkml/
 #   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
 #   owl: http://www.w3.org/2002/07/owl#
 #   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
 #   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   ror: http://w3id.org/sssom/unknown_prefix/ror/
 #   semapv: https://w3id.org/semapv/vocab/
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/0195da6d-4e30-4a81-91b3-e0d8fa0c973e
+# mapping_set_id: https://w3id.org/sssom/mappings/c95eb7a5-245d-4706-acc0-458dac081241
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
-mixs:calcium	calcium	skos:closeMatch	BAO:0000874	calcium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	calcium
-mixs:permeability	permeability	skos:closeMatch	BAO:0002808	permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permeability
+BAO:0000171	lipid	skos:closeMatch	nmdc:ExtractionTargetEnum#lipid	lipid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	lipid
+BAO:0000175	protein	skos:closeMatch	nmdc:ExtractionTargetEnum#protein	protein	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	protein
+BAO:0000269	DNA	skos:closeMatch	nmdc:ExtractionTargetEnum#DNA	DNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dna
+BAO:0000269	DNA	skos:closeMatch	nmdc:LibraryTypeEnum#DNA	DNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dna
+BAO:0000270	RNA	skos:closeMatch	nmdc:ExtractionTargetEnum#RNA	RNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rna
+BAO:0000270	RNA	skos:closeMatch	nmdc:LibraryTypeEnum#RNA	RNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rna
+BAO:0000760	estrogen	skos:closeMatch	CHEBI:50114	estrogen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	estrogen
+BAO:0000795	furafylline	skos:closeMatch	CHEBI:165840	Furafylline	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	furafylline
+BAO:0000797	quinidine	skos:closeMatch	CHEBI:28593	quinidine	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	quinidine
+BAO:0000874	calcium	skos:closeMatch	mixs:calcium	calcium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	calcium
+BAO:0000882	coenzyme A	skos:closeMatch	CHEBI:23354	coenzyme	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	coenzyme
+BAO:0000924	Glucose	skos:closeMatch	CHEBI:17234	glucose	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	glucose
+BAO:0002007	phosphorylated	skos:closeMatch	PATO:0002220	phosphorylated	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	phosphorylated
+BAO:0002038	conformation	skos:closeMatch	PATO:0000141	structure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	conformation
+BAO:0002088	activator	skos:closeMatch	CHEBI:195251	activator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	activator
+BAO:0002652	Gilson	skos:closeMatch	nmdc:InstrumentVendorEnum#gilson	gilson	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gilson
+BAO:0002654	Bruker	skos:closeMatch	nmdc:InstrumentVendorEnum#bruker	bruker	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bruker
+BAO:0002659	encodes	skos:closeMatch	nmdc:encodes	encodes	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	encodes
+BAO:0002737	regulation of catalytic activity	skos:closeMatch	GO:0050790	regulation of catalytic activity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	activity catalytic regulation
+BAO:0002808	permeability	skos:closeMatch	mixs:permeability	permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permeability
+BAO:0002859	has phenotype	skos:closeMatch	BAO:0090003	has phenotype	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	has phenotype
+BAO:0002927	disease	skos:closeMatch	DOID:4	disease	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	disease
+BAO:0002930	anatomical entity	skos:closeMatch	UBERON:0001062	anatomical entity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	anatomical entity
+BAO:0002931	cell line cell	skos:closeMatch	CLO:0000001	cell line cell	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cell cell line
+BAO:0003042	F	skos:closeMatch	UO:0000195	degree Fahrenheit	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	f
+BAO:0003043	molecular entity	skos:closeMatch	CHEBI:23367	molecular entity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	entity molecular
+BAO:0003118	instrument	skos:closeMatch	nmdc:basic_classes/:Instrument	Instrument	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	instrument
+BAO:0003119	software	skos:closeMatch	nmdc:CreditEnum#Software	Software	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	software
+BAO:0010014	tube	skos:closeMatch	nmdc:JgiContTypeEnum#tube	tube	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tube
+BAO:0010016	dish	skos:closeMatch	DOID:6652	diffuse idiopathic skeletal hyperostosis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	dish
+BAO:0080007	neurite outgrowth	skos:closeMatch	GO:0031175	neuron projection development	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	neurite outgrowth
+BAO:0110000	chemical role	skos:closeMatch	CHEBI:51086	chemical role	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chemical role
+BAO:0110001	application	skos:closeMatch	CHEBI:33232	application	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	application
+BAO:0110002	biological role	skos:closeMatch	CHEBI:24432	biological role	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	biological role
+BAO:0120000	cellular quality	skos:closeMatch	PATO:0001396	cellular quality	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cellular quality
+BAO:0120001	molecular quality	skos:closeMatch	PATO:0002182	molecular quality	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	molecular quality
+BAO:0120002	organismal quality	skos:closeMatch	PATO:0001995	organismal quality	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	organismal quality
+BAO:0120003	physical quality	skos:closeMatch	PATO:0001018	physical quality	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	physical quality
+BAO:0150095	Luminex 200 Flow Cytometer	skos:closeMatch	BAO:0150096	Luminex 200 Flow Cytometer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	200 cytometer flow luminex
+BAO:0190000	concentration unit	skos:closeMatch	UO:0000051	concentration unit	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	concentration unit
+BAO:0190001	ratio	skos:closeMatch	UO:0000190	ratio	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ratio
+BAO:0190002	temperature unit	skos:closeMatch	UO:0000005	temperature unit	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	temperature unit
+BAO:0190003	time unit	skos:closeMatch	UO:0000003	time unit	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	time unit
+BAO:0190007	cells per well	skos:closeMatch	UO:0000317	cells per well	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cells per well
+BAO:0190008	cells per microliter	skos:closeMatch	UO:0000316	cells per microliter	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cells microliter per
+BAO:0200000	Illumina	skos:closeMatch	OBI:0000759	illumina	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	illumina
+CHEBI:15377	water	skos:closeMatch	nmdc:DNASampleFormatEnum#Water	Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+CHEBI:15377	water	skos:closeMatch	nmdc:PlantGrowthMedEnum#water	water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+CHEBI:15377	water	skos:closeMatch	nmdc:RNASampleFormatEnum#Water	Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+CHEBI:15377	water	skos:closeMatch	nmdc:SampleTypeEnum#water	water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+CHEBI:25212	metabolite	skos:closeMatch	nmdc:ExtractionTargetEnum#metabolite	metabolite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metabolite
+CHEBI:35209	label	skos:closeMatch	rdfs:label	label	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	label
+CHEBI:50188	provitamin	skos:closeMatch	CHEBI:67200	provitamin A	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	provitamin
+CHEBI:51451	endothelin receptor antagonist	skos:closeMatch	CHEBI:51452	endothelin A receptor antagonist	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	antagonist endothelin receptor
+CHEBI:52214	ligand	skos:closeMatch	GO:0005488	binding	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	ligand
+CHEBI:64106	protein kinase agonist	skos:closeMatch	CHEBI:78547	protein kinase A agonist	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	agonist kinase protein
+CLO:0002175	CAKI-1 cell	skos:closeMatch	CLO:0002176	Caki-1 cell	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	caki-1 cell
+DOID:0050035	African tick-bite fever	skos:closeMatch	DOID:14095	boutonneuse fever	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	african fever south tick-bite
+DOID:0050133	superficial mycosis	skos:closeMatch	DOID:13450	coccidioidomycosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:266218008
+DOID:0050133	superficial mycosis	skos:closeMatch	DOID:13564	aspergillosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:266218008
+DOID:0050133	superficial mycosis	skos:closeMatch	DOID:14484	sporotrichosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:266218008
+DOID:0050133	superficial mycosis	skos:closeMatch	DOID:1563	dermatomycosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:47382004
+DOID:0050133	superficial mycosis	skos:closeMatch	DOID:1731	histoplasmosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:266218008
+DOID:0050145	adenoiditis	skos:closeMatch	DOID:10456	tonsillitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:195794009
+DOID:0050152	aspiration pneumonia	skos:closeMatch	DOID:3240	aspiration pneumonitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:j69.0
+DOID:0050152	aspiration pneumonia	skos:closeMatch	DOID:3240	aspiration pneumonitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d011015
+DOID:0050152	aspiration pneumonia	skos:closeMatch	DOID:3240	aspiration pneumonitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:47839005
+DOID:0050152	aspiration pneumonia	skos:closeMatch	DOID:3240	aspiration pneumonitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	umls_cui:c0032290
+DOID:0050161	lower respiratory tract disease	skos:closeMatch	DOID:974	upper respiratory tract disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd9cm:478.19
+DOID:0050161	lower respiratory tract disease	skos:closeMatch	DOID:974	upper respiratory tract disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:195823002
+DOID:0050161	lower respiratory tract disease	skos:closeMatch	DOID:974	upper respiratory tract disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	umls_cui:c0029581
+DOID:0050352	foodborne botulism	skos:closeMatch	DOID:11976	botulism	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	botulism foodborne
+DOID:0050429	Hailey-Hailey disease	skos:closeMatch	DOID:2732	Rothmund-Thomson syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q82.8
+DOID:0050429	Hailey-Hailey disease	skos:closeMatch	DOID:3144	cutis laxa	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q82.8
+DOID:0050444	infantile Refsum disease	skos:closeMatch	DOID:10582	Refsum disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:g60.1
+DOID:0050444	infantile Refsum disease	skos:closeMatch	DOID:10582	Refsum disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	omim:266510
+DOID:0050452	mevalonic aciduria	skos:closeMatch	DOID:2987	familial Mediterranean fever	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:m04.1
+DOID:0050453	lissencephaly	skos:closeMatch	DOID:4626	hydranencephaly	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q04.3
+DOID:0050461	aspartylglucosaminuria	skos:closeMatch	DOID:14500	fucosidosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:e77.1
+DOID:0050481	endemic typhus	skos:closeMatch	DOID:11256	typhus	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	murine typhus
+DOID:0050481	endemic typhus	skos:closeMatch	DOID:11256	typhus	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	typhus urban
+DOID:0050481	endemic typhus	skos:closeMatch	DOID:11256	typhus	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	shop typhus
+DOID:0050523	adult T-cell leukemia	skos:closeMatch	DOID:5603	T-cell acute lymphoblastic leukemia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:c91.5
+DOID:0050523	adult T-cell leukemia	skos:closeMatch	DOID:5603	T-cell acute lymphoblastic leukemia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d015459
+DOID:0050523	adult T-cell leukemia	skos:closeMatch	DOID:5603	T-cell acute lymphoblastic leukemia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	nci:c3184
+DOID:0050523	adult T-cell leukemia	skos:closeMatch	DOID:5603	T-cell acute lymphoblastic leukemia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:77430005
+DOID:0050523	adult T-cell leukemia	skos:closeMatch	DOID:5603	T-cell acute lymphoblastic leukemia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	umls_cui:c0023493
+DOID:0050534	congenital stationary night blindness	skos:closeMatch	DOID:8498	hereditary night blindness	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:h53.63
+DOID:0050534	congenital stationary night blindness	skos:closeMatch	DOID:8498	hereditary night blindness	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd9cm:368.61
+DOID:0050534	congenital stationary night blindness	skos:closeMatch	DOID:8498	hereditary night blindness	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:c537743
+DOID:0050534	congenital stationary night blindness	skos:closeMatch	DOID:8498	hereditary night blindness	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:193687000
+DOID:0050534	congenital stationary night blindness	skos:closeMatch	DOID:8498	hereditary night blindness	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	umls_cui:c1306122
+DOID:0050572	cone-rod dystrophy	skos:closeMatch	DOID:0050661	vitelliform macular dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:h35.5
+DOID:0050588	muscular dystrophy-dystroglycanopathy	skos:closeMatch	DOID:3191	nemaline myopathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:g71.2
+DOID:0050588	muscular dystrophy-dystroglycanopathy	skos:closeMatch	DOID:3529	central core myopathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:g71.2
+DOID:0050589	inflammatory bowel disease	skos:closeMatch	DOID:9778	irritable bowel syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	kegg:05321
+DOID:0050590	severe congenital neutropenia	skos:closeMatch	DOID:1227	neutropenia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:d70
+DOID:0050590	severe congenital neutropenia	skos:closeMatch	DOID:12987	agranulocytosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:d70
+DOID:0050619	paranasal sinus cancer	skos:closeMatch	DOID:1350	paranasal sinus benign neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d010255
+DOID:0050657	Bannayan-Riley-Ruvalcaba syndrome	skos:closeMatch	DOID:1935	Bardet-Biedl syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.89
+DOID:0050657	Bannayan-Riley-Ruvalcaba syndrome	skos:closeMatch	DOID:6457	Cowden syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d006223
+DOID:0050759	myotonic dystrophy type 2	skos:closeMatch	DOID:11722	myotonic dystrophy type 1	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:exactMatch	mesh:c535686
+DOID:0050759	myotonic dystrophy type 2	skos:closeMatch	DOID:450	myotonic disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:g71.1
+DOID:0050759	myotonic dystrophy type 2	skos:closeMatch	DOID:450	myotonic disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd9cm:359.2
+DOID:0050759	myotonic dystrophy type 2	skos:closeMatch	DOID:450	myotonic disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d020967
+DOID:0050759	myotonic dystrophy type 2	skos:closeMatch	DOID:450	myotonic disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	nci:c84913
+DOID:0050759	myotonic dystrophy type 2	skos:closeMatch	DOID:450	myotonic disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:155096007
+DOID:0050759	myotonic dystrophy type 2	skos:closeMatch	DOID:450	myotonic disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	umls_cui:c0553604
+DOID:0050759	myotonic dystrophy type 2	skos:closeMatch	DOID:450	myotonic disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	mesh:d020967
+DOID:0050765	neuroacanthocytosis	skos:closeMatch	DOID:0050766	choreaacanthocytosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d054546
+DOID:0050902	medulloblastoma	skos:closeMatch	DOID:3861	medullomyoblastoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008527
+DOID:0050902	medulloblastoma	skos:closeMatch	DOID:3864	adult medulloblastoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008527
+DOID:0050902	medulloblastoma	skos:closeMatch	DOID:3869	childhood medulloblastoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008527
+DOID:0050902	medulloblastoma	skos:closeMatch	DOID:4790	medulloepithelioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d018242
+DOID:0050902	medulloblastoma	skos:closeMatch	DOID:4794	ependymoblastoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d018242
+DOID:0050938	breast lobular carcinoma	skos:closeMatch	DOID:3457	invasive lobular carcinoma	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	breast carcinoma lobular
+DOID:0050938	breast lobular carcinoma	skos:closeMatch	DOID:3457	invasive lobular carcinoma	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	breast carcinoma lobular
+DOID:0060060	non-Hodgkin lymphoma	skos:closeMatch	DOID:8538	reticulosarcoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008228
+DOID:0060160	childhood spinal muscular atrophy	skos:closeMatch	DOID:12377	spinal muscular atrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	gard:7674
+DOID:0060160	childhood spinal muscular atrophy	skos:closeMatch	DOID:13137	Werdnig-Hoffmann disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d014897
+DOID:0060162	dentatorubral-pallidoluysian atrophy	skos:closeMatch	DOID:891	progressive myoclonus epilepsy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d020191
+DOID:0060162	dentatorubral-pallidoluysian atrophy	skos:closeMatch	DOID:891	progressive myoclonus epilepsy	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	mesh:d020191
+DOID:0060173	Timothy syndrome	skos:closeMatch	DOID:1029	familial periodic paralysis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:g72.3
+DOID:0060173	Timothy syndrome	skos:closeMatch	DOID:14451	hyperkalemic periodic paralysis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:g72.3
+DOID:0060173	Timothy syndrome	skos:closeMatch	DOID:14452	hypokalemic periodic paralysis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:g72.3
+DOID:0060173	Timothy syndrome	skos:closeMatch	DOID:2843	long QT syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	ordo:768
+DOID:0060180	colitis	skos:closeMatch	DOID:2326	gastroenteritis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:k52.9
+DOID:0060611	abdominal obesity-metabolic syndrome	skos:closeMatch	DOID:14221	abdominal obesity-metabolic syndrome 1	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	gard:9226
+DOID:0070309	absence epilepsy	skos:closeMatch	DOID:1825	childhood absence epilepsy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d004832
+DOID:0070313	thiamine deficiency disease	skos:closeMatch	DOID:13725	beriberi	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	nci:c34418
+DOID:0080041	hypochondroplasia	skos:closeMatch	DOID:4480	achondroplasia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q77.4
+DOID:0080544	hyper IgM syndrome	skos:closeMatch	DOID:6620	X-linked hyper IgM syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	nci:c3990
+DOID:0080602	benign teratoma	skos:closeMatch	DOID:2658	dermoid cyst	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	benign teratoma
+DOID:0090070	hypogonadotropic hypogonadism	skos:closeMatch	DOID:1921	Klinefelter syndrome	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	hypogonadism hypogonadotropic
+DOID:0090070	hypogonadotropic hypogonadism	skos:closeMatch	DOID:3614	Kallmann syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:e23.0
+DOID:0090070	hypogonadotropic hypogonadism	skos:closeMatch	DOID:3614	Kallmann syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	ordo:478
+DOID:0090070	hypogonadotropic hypogonadism	skos:closeMatch	DOID:9406	hypopituitarism	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:e23.0
+DOID:0110731	neuronal ceroid lipofuscinosis 3	skos:closeMatch	DOID:14503	neuronal ceroid lipofuscinosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:e75.4
+DOID:0111417	familial chylomicronemia syndrome	skos:closeMatch	DOID:14118	familial lipoprotein lipase deficiency	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	chylomicronemia familial syndrome
+DOID:0111824	Aarskog syndrome	skos:closeMatch	DOID:6683	X-linked Aarskog syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	aarskog-scott syndrome
+DOID:0111824	Aarskog syndrome	skos:closeMatch	DOID:6683	X-linked Aarskog syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	dysplasia faciogenital
+DOID:0111866	trichothiodystrophy	skos:closeMatch	DOID:2960	photosensitive trichothiodystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d054463
+DOID:0111866	trichothiodystrophy	skos:closeMatch	DOID:2960	photosensitive trichothiodystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	nci:c4924
+DOID:0111866	trichothiodystrophy	skos:closeMatch	DOID:2960	photosensitive trichothiodystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:723551003
+DOID:0111962	combined immunodeficiency	skos:closeMatch	DOID:628	combined T cell and B cell immunodeficiency	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	combined immunodeficiency
+DOID:10020	ampulla of Vater cancer	skos:closeMatch	DOID:4932	ampulla of Vater carcinoma	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	ampulla cancer vater
+DOID:1003	pelvic inflammatory disease	skos:closeMatch	DOID:10974	oophoritis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:266648001
+DOID:10113	trypanosomiasis	skos:closeMatch	DOID:11100	Q fever	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:266205000
+DOID:10155	intestinal cancer	skos:closeMatch	DOID:4610	intestinal benign neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d007414
+DOID:10211	cholelithiasis	skos:closeMatch	DOID:11755	choledocholithiasis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:197397004
+DOID:1029	familial periodic paralysis	skos:closeMatch	DOID:14451	hyperkalemic periodic paralysis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:g72.3
+DOID:1029	familial periodic paralysis	skos:closeMatch	DOID:14452	hypokalemic periodic paralysis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:g72.3
+DOID:1029	familial periodic paralysis	skos:closeMatch	DOID:14452	hypokalemic periodic paralysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	familial paralysis periodic
+DOID:10301	parotitis	skos:closeMatch	DOID:10303	sialadenitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:k11.2
+DOID:10371	yaws	skos:closeMatch	DOID:13819	lymphogranuloma venereum	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:266213004
+DOID:10375	suppression amblyopia	skos:closeMatch	DOID:10376	amblyopia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d000550
+DOID:10375	suppression amblyopia	skos:closeMatch	DOID:10376	amblyopia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	mesh:d000550
+DOID:10393	secondary hypertrophic osteoarthropathy	skos:closeMatch	DOID:14283	primary hypertrophic osteoarthropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:m89.4
+DOID:10398	pneumonic plague	skos:closeMatch	DOID:3482	plague	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d010930
+DOID:10459	common cold	skos:closeMatch	DOID:10460	nasopharyngitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:j00
+DOID:10461	dentin caries	skos:closeMatch	DOID:216	dental caries	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:k02
+DOID:10534	stomach cancer	skos:closeMatch	DOID:5517	stomach carcinoma	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	cancer stomach
+DOID:10554	meningoencephalitis	skos:closeMatch	DOID:1389	polyneuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:a69.22
+DOID:10573	osteomalacia	skos:closeMatch	DOID:10609	rickets	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:190639009
+DOID:1059	intellectual disability	skos:closeMatch	DOID:8927	learning disability	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:1855002
+DOID:10595	Charcot-Marie-Tooth disease	skos:closeMatch	DOID:2477	motor peripheral neuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:g60.0
+DOID:10595	Charcot-Marie-Tooth disease	skos:closeMatch	DOID:2477	motor peripheral neuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	nci:c75467
+DOID:10600	chronic tic disorder	skos:closeMatch	DOID:2769	tic disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d013981
+DOID:10603	glucose intolerance	skos:closeMatch	DOID:11716	prediabetes syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:r73.03
+DOID:1063	interstitial nephritis	skos:closeMatch	DOID:2744	pyelitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:n12
+DOID:1067	open-angle glaucoma	skos:closeMatch	DOID:1070	primary open angle glaucoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d005902
+DOID:10792	chronic maxillary sinusitis	skos:closeMatch	DOID:2051	maxillary sinusitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:j32.0
+DOID:10871	age related macular degeneration	skos:closeMatch	DOID:4448	macular degeneration	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008268
+DOID:10908	hydrocephalus	skos:closeMatch	DOID:1573	communicating hydrocephalus	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d006849
+DOID:10914	amnestic disorder	skos:closeMatch	DOID:11037	dissociative amnesia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d000647
+DOID:10930	borderline personality disorder	skos:closeMatch	DOID:12401	intermittent explosive disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:f60.3
+DOID:10935	dissociative disorder	skos:closeMatch	DOID:4964	neurotic disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:f48.9
+DOID:10937	impulse control disorder	skos:closeMatch	DOID:12400	kleptomania	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d007174
+DOID:10937	impulse control disorder	skos:closeMatch	DOID:12401	intermittent explosive disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d007174
+DOID:10952	nephritis	skos:closeMatch	DOID:2921	glomerulonephritis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:n08
+DOID:10952	nephritis	skos:closeMatch	DOID:557	kidney disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:n08
+DOID:10965	spastic diplegia	skos:closeMatch	DOID:10970	spastic quadriplegia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d002547
+DOID:10965	spastic diplegia	skos:closeMatch	DOID:1969	cerebral palsy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d002547
+DOID:10969	hemiplegia	skos:closeMatch	DOID:1969	cerebral palsy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:155024003
+DOID:10970	spastic quadriplegia	skos:closeMatch	DOID:1969	cerebral palsy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d002547
+DOID:10972	salpingo-oophoritis	skos:closeMatch	DOID:5732	pyosalpinx	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:n70
+DOID:10992	acute hemorrhagic leukoencephalitis	skos:closeMatch	DOID:5222	acute necrotizing encephalitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d004684
+DOID:1107	esophageal carcinoma	skos:closeMatch	DOID:5041	esophageal cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	cancer esophagus
+DOID:11080	myiasis	skos:closeMatch	DOID:9965	toxoplasmosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:266225001
+DOID:1115	sarcoma	skos:closeMatch	DOID:4045	muscle cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:c49
+DOID:11153	miliaria rubra	skos:closeMatch	DOID:1382	miliaria	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008883
+DOID:11155	hypohidrosis	skos:closeMatch	DOID:11156	anhidrosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:l74.4
+DOID:11155	hypohidrosis	skos:closeMatch	DOID:11156	anhidrosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d007007
+DOID:11155	hypohidrosis	skos:closeMatch	DOID:11156	anhidrosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:201189007
+DOID:11155	hypohidrosis	skos:closeMatch	DOID:11156	anhidrosis	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	mesh:d007007
+DOID:11175	enophthalmos	skos:closeMatch	DOID:930	orbital disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:267746003
+DOID:11198	DiGeorge syndrome	skos:closeMatch	DOID:12583	velocardiofacial syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d004062
+DOID:11198	DiGeorge syndrome	skos:closeMatch	DOID:12583	velocardiofacial syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	22q11.2 deletion syndrome
+DOID:11206	opioid abuse	skos:closeMatch	DOID:2559	opiate dependence	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d009293
+DOID:11239	appendix cancer	skos:closeMatch	DOID:11240	appendiceal neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d001063
+DOID:11269	chronic apical periodontitis	skos:closeMatch	DOID:823	periapical periodontitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:k04.5
+DOID:1138	spinal meningioma	skos:closeMatch	DOID:3565	meningioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008579
+DOID:1138	spinal meningioma	skos:closeMatch	DOID:4587	benign meningioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008579
+DOID:1138	spinal meningioma	skos:closeMatch	DOID:7210	psammomatous meningioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008579
+DOID:1138	spinal meningioma	skos:closeMatch	DOID:7211	fibrous meningioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008579
+DOID:11482	hemopericardium	skos:closeMatch	DOID:118	pericardial effusion	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d010490
+DOID:11502	mitral valve insufficiency	skos:closeMatch	DOID:57	aortic valve insufficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd9cm:396.3
+DOID:11502	mitral valve insufficiency	skos:closeMatch	DOID:57	aortic valve insufficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:194736003
+DOID:11502	mitral valve insufficiency	skos:closeMatch	DOID:57	aortic valve insufficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	umls_cui:c0264774
+DOID:116	pericardium cancer	skos:closeMatch	DOID:117	heart cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:c38.0
+DOID:11615	penile cancer	skos:closeMatch	DOID:11624	penile benign neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d010412
+DOID:11661	blue color blindness	skos:closeMatch	DOID:13399	color blindness	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d003117
+DOID:11661	blue color blindness	skos:closeMatch	DOID:13910	red color blindness	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d003117
+DOID:11661	blue color blindness	skos:closeMatch	DOID:13911	achromatopsia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d003117
+DOID:11684	melanoacanthoma	skos:closeMatch	DOID:6498	seborrheic keratosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:201096007
+DOID:11720	distal myopathy	skos:closeMatch	DOID:11724	limb-girdle muscular dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:g71.09
+DOID:11722	myotonic dystrophy type 1	skos:closeMatch	DOID:450	myotonic disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	mesh:d009223
+DOID:11723	Duchenne muscular dystrophy	skos:closeMatch	DOID:9884	muscular dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:155095006
+DOID:11724	limb-girdle muscular dystrophy	skos:closeMatch	DOID:11727	facioscapulohumeral muscular dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:56096001
+DOID:11725	Cornelia de Lange syndrome	skos:closeMatch	DOID:14681	Silver-Russell syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.19
+DOID:11725	Cornelia de Lange syndrome	skos:closeMatch	DOID:14796	Dubowitz syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.19
+DOID:11725	Cornelia de Lange syndrome	skos:closeMatch	DOID:2962	Cockayne syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.19
+DOID:11725	Cornelia de Lange syndrome	skos:closeMatch	DOID:3490	Noonan syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.19
+DOID:11725	Cornelia de Lange syndrome	skos:closeMatch	DOID:6683	X-linked Aarskog syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.19
+DOID:11771	spontaneous ocular nystagmus	skos:closeMatch	DOID:13174	dissociated nystagmus	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d009759
+DOID:11771	spontaneous ocular nystagmus	skos:closeMatch	DOID:9650	pathologic nystagmus	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d009759
+DOID:11816	vitreous syneresis	skos:closeMatch	DOID:9726	vitreous detachment	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:h43.81
+DOID:11819	ureter cancer	skos:closeMatch	DOID:11885	ureteral benign neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d014516
+DOID:11875	denture stomatitis	skos:closeMatch	DOID:9637	stomatitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:k12.1
+DOID:11875	denture stomatitis	skos:closeMatch	DOID:9673	ulcerative stomatitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:k12.1
+DOID:1188	mononeuropathy	skos:closeMatch	DOID:1802	mononeuritis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d020422
+DOID:1192	peripheral nervous system neoplasm	skos:closeMatch	DOID:3193	peripheral nerve sheath neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d018317
+DOID:1192	peripheral nervous system neoplasm	skos:closeMatch	DOID:3193	peripheral nerve sheath neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	neoplasm nerve sheath
+DOID:1192	peripheral nervous system neoplasm	skos:closeMatch	DOID:4697	perineurioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d018317
+DOID:12028	Conn's syndrome	skos:closeMatch	DOID:446	primary hyperaldosteronism	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d006929
+DOID:12028	Conn's syndrome	skos:closeMatch	DOID:446	primary hyperaldosteronism	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	hyperaldosteronism primary
+DOID:12139	dysthymic disorder	skos:closeMatch	DOID:4964	neurotic disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:f34.1
+DOID:12168	ulnar nerve lesion	skos:closeMatch	DOID:4613	ulnar neuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:55802003
+DOID:1222	cartilage disease	skos:closeMatch	DOID:2557	chondromalacia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d002357
+DOID:1227	neutropenia	skos:closeMatch	DOID:12987	agranulocytosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:d70
+DOID:12318	granular corneal dystrophy	skos:closeMatch	DOID:2565	macular corneal dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d003317
+DOID:12318	granular corneal dystrophy	skos:closeMatch	DOID:2566	corneal dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d003317
+DOID:12361	Graves' disease	skos:closeMatch	DOID:7997	thyrotoxicosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:154655004
+DOID:12377	spinal muscular atrophy	skos:closeMatch	DOID:318	progressive muscular atrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d009134
+DOID:12384	dysentery	skos:closeMatch	DOID:13250	diarrhea	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd9cm:009.2
+DOID:12384	dysentery	skos:closeMatch	DOID:13250	diarrhea	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d004403
+DOID:12384	dysentery	skos:closeMatch	DOID:13250	diarrhea	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:154268000
+DOID:12384	dysentery	skos:closeMatch	DOID:13250	diarrhea	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	umls_cui:c0013369
+DOID:12400	kleptomania	skos:closeMatch	DOID:12401	intermittent explosive disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d007174
+DOID:12506	Bell's palsy	skos:closeMatch	DOID:13934	facial paralysis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:g51.0
+DOID:12514	retinal perforation	skos:closeMatch	DOID:7633	macular holes	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d012167
+DOID:12549	hepatitis A	skos:closeMatch	DOID:1884	viral hepatitis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	hepatitis viral
+DOID:12549	hepatitis A	skos:closeMatch	DOID:2237	hepatitis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hepatitis
+DOID:12642	hiatus hernia	skos:closeMatch	DOID:3827	congenital diaphragmatic hernia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:k44
+DOID:12678	hypercalcemia	skos:closeMatch	DOID:12679	nephrocalcinosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:154752005
+DOID:12689	acoustic neuroma	skos:closeMatch	DOID:3565	meningioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:269643009
+DOID:127	leiomyoma	skos:closeMatch	DOID:13223	uterine fibroid	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d007889
+DOID:12721	multiple epiphyseal dysplasia	skos:closeMatch	DOID:2256	osteochondrodysplasia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d010009
+DOID:12842	Guillain-Barre syndrome	skos:closeMatch	DOID:12889	Miller Fisher syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:g61.0
+DOID:12900	Mikulicz disease	skos:closeMatch	DOID:12901	necrotizing sialometaplasia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:k11.8
+DOID:13003	vertebrobasilar insufficiency	skos:closeMatch	DOID:13095	vertebral artery insufficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d014715
+DOID:13003	vertebrobasilar insufficiency	skos:closeMatch	DOID:13095	vertebral artery insufficiency	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	mesh:d014715
+DOID:13003	vertebrobasilar insufficiency	skos:closeMatch	DOID:224	transient cerebral ischemia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:195196001
+DOID:13094	branch retinal artery occlusion	skos:closeMatch	DOID:13098	central retinal artery occlusion	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d015356
+DOID:13094	branch retinal artery occlusion	skos:closeMatch	DOID:8483	retinal artery occlusion	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d015356
+DOID:13098	central retinal artery occlusion	skos:closeMatch	DOID:8483	retinal artery occlusion	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d015356
+DOID:13174	dissociated nystagmus	skos:closeMatch	DOID:9650	pathologic nystagmus	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d009759
+DOID:1324	lung cancer	skos:closeMatch	DOID:3905	lung carcinoma	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	cancer lung
+DOID:13270	erythropoietic protoporphyria	skos:closeMatch	DOID:13271	cutaneous porphyria	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:e80.0
+DOID:13374	fibrodysplasia ossificans progressiva	skos:closeMatch	DOID:668	myositis ossificans	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d009221
+DOID:1339	Diamond-Blackfan anemia	skos:closeMatch	DOID:1342	congenital hypoplastic anemia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:d61.01
+DOID:13399	color blindness	skos:closeMatch	DOID:13910	red color blindness	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d003117
+DOID:13399	color blindness	skos:closeMatch	DOID:13911	achromatopsia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d003117
+DOID:13450	coccidioidomycosis	skos:closeMatch	DOID:13564	aspergillosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:266218008
+DOID:13450	coccidioidomycosis	skos:closeMatch	DOID:14484	sporotrichosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:266218008
+DOID:13450	coccidioidomycosis	skos:closeMatch	DOID:1731	histoplasmosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:266218008
+DOID:13501	Mobius syndrome	skos:closeMatch	DOID:2907	Goldenhar syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.0
+DOID:13501	Mobius syndrome	skos:closeMatch	DOID:4501	orofaciodigital syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.0
+DOID:13515	tuberous sclerosis	skos:closeMatch	DOID:758	situs inversus	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:157033002
+DOID:13533	osteopetrosis	skos:closeMatch	DOID:4254	osteosclerosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q78.2
+DOID:13543	hyperparathyroidism	skos:closeMatch	DOID:3341	osteitis fibrosa	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:190451000
+DOID:13564	aspergillosis	skos:closeMatch	DOID:14484	sporotrichosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:266218008
+DOID:13564	aspergillosis	skos:closeMatch	DOID:1731	histoplasmosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:266218008
+DOID:13620	patent foramen ovale	skos:closeMatch	DOID:1882	atrial heart septal defect	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q21.1
+DOID:13628	favism	skos:closeMatch	DOID:2373	hereditary elliptocytosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:154801000
+DOID:13725	beriberi	skos:closeMatch	DOID:8457	pellagra	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:267491008
+DOID:13757	excessive tearing	skos:closeMatch	DOID:1400	lacrimal apparatus disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d007766
+DOID:13778	chancroid	skos:closeMatch	DOID:2297	leptospirosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:154391003
+DOID:1380	endometrial cancer	skos:closeMatch	DOID:2871	endometrial carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d016889
+DOID:1386	abetalipoproteinemia	skos:closeMatch	DOID:1387	hypolipoproteinemia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:e78.6
+DOID:1386	abetalipoproteinemia	skos:closeMatch	DOID:1388	Tangier disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:e78.6
+DOID:1386	abetalipoproteinemia	skos:closeMatch	DOID:1391	Norum disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:e78.6
+DOID:1387	hypolipoproteinemia	skos:closeMatch	DOID:1388	Tangier disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:e78.6
+DOID:1387	hypolipoproteinemia	skos:closeMatch	DOID:1391	Norum disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:e78.6
+DOID:1388	Tangier disease	skos:closeMatch	DOID:1391	Norum disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:e78.6
+DOID:139	squamous cell papilloma	skos:closeMatch	DOID:2615	papilloma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d010212
+DOID:13910	red color blindness	skos:closeMatch	DOID:13911	achromatopsia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d003117
+DOID:13934	facial paralysis	skos:closeMatch	DOID:1756	facial nerve disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:90039006
+DOID:13994	cleidocranial dysplasia	skos:closeMatch	DOID:9827	radioulnar synostosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q74.0
+DOID:14175	von Hippel-Lindau disease	skos:closeMatch	DOID:3852	Peutz-Jeghers syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q85.8
+DOID:14188	frozen shoulder	skos:closeMatch	DOID:2965	bursitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d002062
+DOID:14223	ochronosis	skos:closeMatch	DOID:9270	alkaptonuria	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:e70.29
+DOID:14268	sclerosing cholangitis	skos:closeMatch	DOID:14270	ascending cholangitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:k83.09
+DOID:14451	hyperkalemic periodic paralysis	skos:closeMatch	DOID:14452	hypokalemic periodic paralysis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:g72.3
+DOID:14453	farmer's lung	skos:closeMatch	DOID:841	extrinsic allergic alveolitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:155581001
+DOID:14484	sporotrichosis	skos:closeMatch	DOID:1731	histoplasmosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:266218008
+DOID:14495	dumping syndrome	skos:closeMatch	DOID:8439	postgastrectomy syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:k91.1
+DOID:14504	Niemann-Pick disease	skos:closeMatch	DOID:1927	sphingolipidosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:58459009
+DOID:146	papilledema	skos:closeMatch	DOID:6929	retinal edema	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d010211
+DOID:14679	VACTERL association	skos:closeMatch	DOID:14699	thrombocytopenia-absent radius syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.2
+DOID:14679	VACTERL association	skos:closeMatch	DOID:1933	Rubinstein-Taybi syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.2
+DOID:14679	VACTERL association	skos:closeMatch	DOID:2926	Klippel-Trenaunay syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.2
+DOID:14679	VACTERL association	skos:closeMatch	DOID:9467	nail-patella syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.2
+DOID:14681	Silver-Russell syndrome	skos:closeMatch	DOID:14796	Dubowitz syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.19
+DOID:14681	Silver-Russell syndrome	skos:closeMatch	DOID:2962	Cockayne syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.19
+DOID:14681	Silver-Russell syndrome	skos:closeMatch	DOID:3490	Noonan syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.19
+DOID:14681	Silver-Russell syndrome	skos:closeMatch	DOID:6683	X-linked Aarskog syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.19
+DOID:14693	Clouston syndrome	skos:closeMatch	DOID:2121	ectodermal dysplasia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d004476
+DOID:14695	galactokinase deficiency	skos:closeMatch	DOID:9870	galactosemia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d005693
+DOID:14699	thrombocytopenia-absent radius syndrome	skos:closeMatch	DOID:1933	Rubinstein-Taybi syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.2
+DOID:14699	thrombocytopenia-absent radius syndrome	skos:closeMatch	DOID:2926	Klippel-Trenaunay syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.2
+DOID:14699	thrombocytopenia-absent radius syndrome	skos:closeMatch	DOID:9467	nail-patella syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.2
+DOID:14717	centronuclear myopathy	skos:closeMatch	DOID:422	congenital structural myopathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d020914
+DOID:14717	centronuclear myopathy	skos:closeMatch	DOID:422	congenital structural myopathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	nci:c84648
+DOID:14748	Sotos syndrome	skos:closeMatch	DOID:5572	Beckwith-Wiedemann syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.3
+DOID:1475	lymphangioma	skos:closeMatch	DOID:255	hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:154625006
+DOID:14796	Dubowitz syndrome	skos:closeMatch	DOID:2962	Cockayne syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.19
+DOID:14796	Dubowitz syndrome	skos:closeMatch	DOID:3490	Noonan syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.19
+DOID:14796	Dubowitz syndrome	skos:closeMatch	DOID:6683	X-linked Aarskog syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.19
+DOID:1483	gingival disease	skos:closeMatch	DOID:5337	epulis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d005882
+DOID:1509	avoidant personality disorder	skos:closeMatch	DOID:2745	narcissistic personality disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d010554
+DOID:1540	parathyroid carcinoma	skos:closeMatch	DOID:7608	parathyroid adenoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d010282
+DOID:1595	endogenous depression	skos:closeMatch	DOID:2848	melancholia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d003866
+DOID:1595	endogenous depression	skos:closeMatch	DOID:4964	neurotic disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d003866
+DOID:1612	breast cancer	skos:closeMatch	DOID:3459	breast carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d001943
+DOID:1618	breast fibroadenoma	skos:closeMatch	DOID:1625	breast adenoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:269640007
+DOID:162	cancer	skos:closeMatch	DOID:305	carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:269513004
+DOID:1664	pineoblastoma	skos:closeMatch	DOID:5032	pineal gland cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d010871
+DOID:169	neuroendocrine tumor	skos:closeMatch	DOID:1800	neuroendocrine carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:55937004
+DOID:171	neuroectodermal tumor	skos:closeMatch	DOID:3369	Ewing sarcoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:73676002
+DOID:172	clear cell acanthoma	skos:closeMatch	DOID:174	acanthoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d049309
+DOID:172	clear cell acanthoma	skos:closeMatch	DOID:174	acanthoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	mesh:d049309
+DOID:1727	retinal vein occlusion	skos:closeMatch	DOID:2450	central retinal vein occlusion	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d012170
+DOID:1749	squamous cell carcinoma	skos:closeMatch	DOID:3168	squamous cell neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d018307
+DOID:1781	thyroid gland cancer	skos:closeMatch	DOID:2891	thyroid adenoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d013964
+DOID:1781	thyroid gland cancer	skos:closeMatch	DOID:3963	thyroid gland carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d013964
+DOID:1785	pituitary cancer	skos:closeMatch	DOID:3829	pituitary adenoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d010911
+DOID:1785	pituitary cancer	skos:closeMatch	DOID:4916	pituitary carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d010911
+DOID:1798	pancreatic endocrine carcinoma	skos:closeMatch	DOID:1799	islet cell tumor	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:c25.4
+DOID:1799	islet cell tumor	skos:closeMatch	DOID:3892	insulinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d007516
+DOID:1849	cannabis dependence	skos:closeMatch	DOID:9505	cannabis abuse	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d002189
+DOID:1856	cherubism	skos:closeMatch	DOID:203	exostosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:m27.8
+DOID:1923	disorder of sexual development	skos:closeMatch	DOID:3763	hermaphroditism	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d012734
+DOID:1923	disorder of sexual development	skos:closeMatch	DOID:3765	pseudohermaphroditism	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d012734
+DOID:1933	Rubinstein-Taybi syndrome	skos:closeMatch	DOID:2926	Klippel-Trenaunay syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.2
+DOID:1933	Rubinstein-Taybi syndrome	skos:closeMatch	DOID:9467	nail-patella syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.2
+DOID:1936	atherosclerosis	skos:closeMatch	DOID:2348	arteriosclerotic cardiovascular disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:i70
+DOID:1936	atherosclerosis	skos:closeMatch	DOID:2348	arteriosclerotic cardiovascular disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd9cm:440
+DOID:1936	atherosclerosis	skos:closeMatch	DOID:2348	arteriosclerotic cardiovascular disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d050197
+DOID:1936	atherosclerosis	skos:closeMatch	DOID:2348	arteriosclerotic cardiovascular disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	nci:c35768
+DOID:1936	atherosclerosis	skos:closeMatch	DOID:2348	arteriosclerotic cardiovascular disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:155414001
+DOID:1936	atherosclerosis	skos:closeMatch	DOID:2348	arteriosclerotic cardiovascular disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	umls_cui:c0004153
+DOID:1936	atherosclerosis	skos:closeMatch	DOID:2348	arteriosclerotic cardiovascular disease	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	mesh:d050197
+DOID:1936	atherosclerosis	skos:closeMatch	DOID:2349	arteriosclerosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:i70
+DOID:1936	atherosclerosis	skos:closeMatch	DOID:5162	arteriolosclerosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:i70
+DOID:1963	fallopian tube carcinoma	skos:closeMatch	DOID:1964	fallopian tube cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d005185
+DOID:1963	fallopian tube carcinoma	skos:closeMatch	DOID:1964	fallopian tube cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	cancer fallopian tube
+DOID:1984	rectal benign neoplasm	skos:closeMatch	DOID:1993	rectum cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d012004
+DOID:1993	rectum cancer	skos:closeMatch	DOID:1996	rectum adenocarcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:254582000
+DOID:2021	placenta cancer	skos:closeMatch	DOID:3594	choriocarcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:c58
+DOID:2033	communication disorder	skos:closeMatch	DOID:93	language disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:f80.9
+DOID:204	enthesopathy	skos:closeMatch	DOID:971	tendinitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:m77.9
+DOID:2065	syringoma	skos:closeMatch	DOID:3178	skin papilloma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:189051001
+DOID:2095	sweat gland cancer	skos:closeMatch	DOID:4840	sebaceous carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:c44
+DOID:2187	amelogenesis imperfecta	skos:closeMatch	DOID:4154	dentinogenesis imperfecta	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:k00.5
+DOID:2187	amelogenesis imperfecta	skos:closeMatch	DOID:701	dentin dysplasia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:k00.5
+DOID:219	colon cancer	skos:closeMatch	DOID:235	colonic benign neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d003110
+DOID:2215	factor VII deficiency	skos:closeMatch	DOID:2216	factor V deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:d68.2
+DOID:2226	myeloproliferative neoplasm	skos:closeMatch	DOID:4960	bone marrow cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:d47.1
+DOID:225	syndrome	skos:closeMatch	DOID:4	disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:64572001
+DOID:230	lateral sclerosis	skos:closeMatch	DOID:231	motor neuron disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d016472
+DOID:230	lateral sclerosis	skos:closeMatch	DOID:4873	anterior horn cell disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d016472
+DOID:231	motor neuron disease	skos:closeMatch	DOID:4873	anterior horn cell disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d016472
+DOID:2348	arteriosclerotic cardiovascular disease	skos:closeMatch	DOID:2349	arteriosclerosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:i70
+DOID:2348	arteriosclerotic cardiovascular disease	skos:closeMatch	DOID:5162	arteriolosclerosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:i70
+DOID:2349	arteriosclerosis	skos:closeMatch	DOID:5162	arteriolosclerosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:i70
+DOID:2365	West Nile encephalitis	skos:closeMatch	DOID:2366	West Nile fever	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d014901
+DOID:2426	gangliocytoma	skos:closeMatch	DOID:4817	ganglioneuroma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d005729
+DOID:2451	protein S deficiency	skos:closeMatch	DOID:2452	thrombophilia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:d68.59
+DOID:2451	protein S deficiency	skos:closeMatch	DOID:3755	antithrombin III deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:d68.59
+DOID:2451	protein S deficiency	skos:closeMatch	DOID:3756	protein C deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:d68.59
+DOID:2452	thrombophilia	skos:closeMatch	DOID:3755	antithrombin III deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:d68.59
+DOID:2452	thrombophilia	skos:closeMatch	DOID:3756	protein C deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:d68.59
+DOID:2479	central nervous system origin vertigo	skos:closeMatch	DOID:2952	inner ear disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:20425006
+DOID:2479	central nervous system origin vertigo	skos:closeMatch	DOID:3426	vestibular disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:20425006
+DOID:2536	chronic inflammatory demyelinating polyneuritis	skos:closeMatch	DOID:5213	chronic inflammatory demyelinating polyradiculoneuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:g61.81
+DOID:2536	chronic inflammatory demyelinating polyneuritis	skos:closeMatch	DOID:5213	chronic inflammatory demyelinating polyradiculoneuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd9cm:357.81
+DOID:2536	chronic inflammatory demyelinating polyneuritis	skos:closeMatch	DOID:5213	chronic inflammatory demyelinating polyradiculoneuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d020277
+DOID:2536	chronic inflammatory demyelinating polyneuritis	skos:closeMatch	DOID:5213	chronic inflammatory demyelinating polyradiculoneuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	nci:c84636
+DOID:2536	chronic inflammatory demyelinating polyneuritis	skos:closeMatch	DOID:5213	chronic inflammatory demyelinating polyradiculoneuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:128209004
+DOID:2536	chronic inflammatory demyelinating polyneuritis	skos:closeMatch	DOID:5213	chronic inflammatory demyelinating polyradiculoneuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	umls_cui:c0393819
+DOID:255	hemangioma	skos:closeMatch	DOID:468	intramuscular hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d006391
+DOID:255	hemangioma	skos:closeMatch	DOID:474	histiocytoid hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d006391
+DOID:255	hemangioma	skos:closeMatch	DOID:483	cavernous hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:d18.0
+DOID:2560	morphine dependence	skos:closeMatch	DOID:9975	cocaine dependence	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:286934009
+DOID:2565	macular corneal dystrophy	skos:closeMatch	DOID:2566	corneal dystrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d003317
+DOID:2596	larynx cancer	skos:closeMatch	DOID:2598	laryngeal benign neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d007822
+DOID:2596	larynx cancer	skos:closeMatch	DOID:2600	laryngeal carcinoma	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	cancer larynx
+DOID:2596	larynx cancer	skos:closeMatch	DOID:2600	laryngeal carcinoma	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	cancer larynx
+DOID:2615	papilloma	skos:closeMatch	DOID:7532	squamous papillomatosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:82049002
+DOID:2636	ovarian Brenner tumor	skos:closeMatch	DOID:4217	malignant ovarian Brenner tumor	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d001948
+DOID:2691	myoma	skos:closeMatch	DOID:461	muscle benign neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	benign muscle neoplasm
+DOID:2731	vesiculobullous skin disease	skos:closeMatch	DOID:8508	subcorneal pustular dermatosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d012872
+DOID:2732	Rothmund-Thomson syndrome	skos:closeMatch	DOID:3144	cutis laxa	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q82.8
+DOID:2815	cranial nerve malignant neoplasm	skos:closeMatch	DOID:338	cranial nerve neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d003390
+DOID:2848	melancholia	skos:closeMatch	DOID:4964	neurotic disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d003866
+DOID:2860	hemoglobinopathy	skos:closeMatch	DOID:5379	hemoglobin E disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:d58.2
+DOID:2891	thyroid adenoma	skos:closeMatch	DOID:3963	thyroid gland carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d013964
+DOID:2893	cervix carcinoma	skos:closeMatch	DOID:4362	cervical cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	cancer cervix
+DOID:2907	Goldenhar syndrome	skos:closeMatch	DOID:4501	orofaciodigital syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.0
+DOID:2913	acute pancreatitis	skos:closeMatch	DOID:4989	pancreatitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d010195
+DOID:2921	glomerulonephritis	skos:closeMatch	DOID:557	kidney disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:n08
+DOID:2926	Klippel-Trenaunay syndrome	skos:closeMatch	DOID:9467	nail-patella syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.2
+DOID:2952	inner ear disease	skos:closeMatch	DOID:3426	vestibular disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:20425006
+DOID:2962	Cockayne syndrome	skos:closeMatch	DOID:3490	Noonan syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.19
+DOID:2962	Cockayne syndrome	skos:closeMatch	DOID:6683	X-linked Aarskog syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.19
+DOID:299	adenocarcinoma	skos:closeMatch	DOID:5675	cribriform carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d000230
+DOID:299	adenocarcinoma	skos:closeMatch	DOID:5675	cribriform carcinoma	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	mesh:d000230
+DOID:2994	germ cell cancer	skos:closeMatch	DOID:3095	germ cell and embryonal cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d009373
+DOID:2994	germ cell cancer	skos:closeMatch	DOID:688	embryonal cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d009373
+DOID:302	substance abuse	skos:closeMatch	DOID:303	substance-related disorder	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d019966
+DOID:305	carcinoma	skos:closeMatch	DOID:4840	sebaceous carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:188083002
+DOID:3069	astrocytoma	skos:closeMatch	DOID:4851	pilocytic astrocytoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d001254
+DOID:3069	astrocytoma	skos:closeMatch	DOID:4851	pilocytic astrocytoma	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	mesh:d001254
+DOID:3069	astrocytoma	skos:closeMatch	DOID:5077	subependymal giant cell astrocytoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d001254
+DOID:3069	astrocytoma	skos:closeMatch	DOID:5077	subependymal giant cell astrocytoma	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	mesh:d001254
+DOID:3069	astrocytoma	skos:closeMatch	DOID:6811	juvenile pilocytic astrocytoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d001254
+DOID:3069	astrocytoma	skos:closeMatch	DOID:6811	juvenile pilocytic astrocytoma	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	mesh:d001254
+DOID:3069	astrocytoma	skos:closeMatch	DOID:7005	gemistocytic astrocytoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d001254
+DOID:3069	astrocytoma	skos:closeMatch	DOID:7005	gemistocytic astrocytoma	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	mesh:d001254
+DOID:3070	malignant glioma	skos:closeMatch	DOID:5076	mixed glioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d005910
+DOID:3095	germ cell and embryonal cancer	skos:closeMatch	DOID:688	embryonal cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d009373
+DOID:3103	thoracic outlet syndrome	skos:closeMatch	DOID:3690	brachial plexus neuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:g54.0
+DOID:3108	ascaridiasis	skos:closeMatch	DOID:456	ascariasis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:2435008
+DOID:3112	papillary adenocarcinoma	skos:closeMatch	DOID:4465	papillary renal cell carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:4797003
+DOID:3118	hepatobiliary disease	skos:closeMatch	DOID:77	gastrointestinal system disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d004066
+DOID:3121	gallbladder cancer	skos:closeMatch	DOID:4948	gallbladder carcinoma	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	cancer gallbladder
+DOID:3165	skin benign neoplasm	skos:closeMatch	DOID:4159	skin cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d012878
+DOID:3172	papillary adenoma	skos:closeMatch	DOID:5403	microcystic adenoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d000236
+DOID:3172	papillary adenoma	skos:closeMatch	DOID:6204	follicular adenoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d000236
+DOID:3172	papillary adenoma	skos:closeMatch	DOID:657	adenoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d000236
+DOID:3172	papillary adenoma	skos:closeMatch	DOID:657	adenoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	mesh:d000236
+DOID:3191	nemaline myopathy	skos:closeMatch	DOID:3529	central core myopathy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:g71.2
+DOID:3193	peripheral nerve sheath neoplasm	skos:closeMatch	DOID:4697	perineurioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d018317
+DOID:3225	tracheal disease	skos:closeMatch	DOID:786	laryngeal disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:s12.8
+DOID:3275	thymoma	skos:closeMatch	DOID:3284	thymic carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d013945
+DOID:349	systemic mastocytosis	skos:closeMatch	DOID:4660	indolent systemic mastocytosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:d47.02
+DOID:349	systemic mastocytosis	skos:closeMatch	DOID:4660	indolent systemic mastocytosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d034721
+DOID:3490	Noonan syndrome	skos:closeMatch	DOID:6683	X-linked Aarskog syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:q87.19
+DOID:350	mastocytosis	skos:closeMatch	DOID:3664	mast cell neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:d47.09
+DOID:3512	neurofibrosarcoma	skos:closeMatch	DOID:5940	malignant peripheral nerve sheath tumor	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d018319
+DOID:3565	meningioma	skos:closeMatch	DOID:4587	benign meningioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008579
+DOID:3565	meningioma	skos:closeMatch	DOID:7210	psammomatous meningioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008579
+DOID:3565	meningioma	skos:closeMatch	DOID:7211	fibrous meningioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008579
+DOID:3571	liver cancer	skos:closeMatch	DOID:684	hepatocellular carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:c22.0
+DOID:3612	retinitis	skos:closeMatch	DOID:8886	chorioretinitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:h30.9
+DOID:3614	Kallmann syndrome	skos:closeMatch	DOID:9406	hypopituitarism	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:e23.0
+DOID:3690	brachial plexus neuropathy	skos:closeMatch	DOID:8443	brachial plexus lesion	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:3548001
+DOID:3755	antithrombin III deficiency	skos:closeMatch	DOID:3756	protein C deficiency	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:d68.59
+DOID:3763	hermaphroditism	skos:closeMatch	DOID:3765	pseudohermaphroditism	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d012734
+DOID:3829	pituitary adenoma	skos:closeMatch	DOID:4916	pituitary carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d010911
+DOID:3861	medullomyoblastoma	skos:closeMatch	DOID:3864	adult medulloblastoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008527
+DOID:3861	medullomyoblastoma	skos:closeMatch	DOID:3869	childhood medulloblastoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008527
+DOID:3864	adult medulloblastoma	skos:closeMatch	DOID:3869	childhood medulloblastoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008527
+DOID:4045	muscle cancer	skos:closeMatch	DOID:461	muscle benign neoplasm	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d019042
+DOID:4072	duodenum disease	skos:closeMatch	DOID:76	stomach disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:196598004
+DOID:4154	dentinogenesis imperfecta	skos:closeMatch	DOID:701	dentin dysplasia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:k00.5
+DOID:418	systemic scleroderma	skos:closeMatch	DOID:419	scleroderma	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	scleroderma
+DOID:4183	pseudopseudohypoparathyroidism	skos:closeMatch	DOID:4184	pseudohypoparathyroidism	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:190867002
+DOID:419	scleroderma	skos:closeMatch	DOID:8472	localized scleroderma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d012594
+DOID:4201	peroneal neuropathy	skos:closeMatch	DOID:6925	peroneal nerve paralysis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d020427
+DOID:4203	brain stem cancer	skos:closeMatch	DOID:4706	infratentorial cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:c71.7
+DOID:4235	spindle cell sarcoma	skos:closeMatch	DOID:6193	epithelioid sarcoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d012509
+DOID:4336	tinea favosa	skos:closeMatch	DOID:8913	dermatophytosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:b35
+DOID:4398	pustulosis of palm and sole	skos:closeMatch	DOID:8893	psoriasis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d011565
+DOID:4415	fibrous histiocytoma	skos:closeMatch	DOID:4418	cutaneous fibrous histiocytoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d018219
+DOID:4440	seminoma	skos:closeMatch	DOID:5842	testis seminoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d018239
+DOID:4440	seminoma	skos:closeMatch	DOID:5842	testis seminoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	nci:c9309
+DOID:4440	seminoma	skos:closeMatch	DOID:5842	testis seminoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:443675005
+DOID:4440	seminoma	skos:closeMatch	DOID:5842	testis seminoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	umls_cui:c0036631
+DOID:4447	cystoid macular edema	skos:closeMatch	DOID:4449	macular retinal edema	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008269
+DOID:4450	renal cell carcinoma	skos:closeMatch	DOID:4451	renal carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:254915003
+DOID:4450	renal cell carcinoma	skos:closeMatch	DOID:4464	collecting duct carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d002292
+DOID:4450	renal cell carcinoma	skos:closeMatch	DOID:4465	papillary renal cell carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d002292
+DOID:4450	renal cell carcinoma	skos:closeMatch	DOID:4467	clear cell renal cell carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d002292
+DOID:4450	renal cell carcinoma	skos:closeMatch	DOID:4467	clear cell renal cell carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:254915003
+DOID:4450	renal cell carcinoma	skos:closeMatch	DOID:4471	chromophobe renal cell carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d002292
+DOID:4451	renal carcinoma	skos:closeMatch	DOID:4467	clear cell renal cell carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:254915003
+DOID:4464	collecting duct carcinoma	skos:closeMatch	DOID:4465	papillary renal cell carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d002292
+DOID:4464	collecting duct carcinoma	skos:closeMatch	DOID:4467	clear cell renal cell carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d002292
+DOID:4464	collecting duct carcinoma	skos:closeMatch	DOID:4471	chromophobe renal cell carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d002292
+DOID:4465	papillary renal cell carcinoma	skos:closeMatch	DOID:4467	clear cell renal cell carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d002292
+DOID:4465	papillary renal cell carcinoma	skos:closeMatch	DOID:4471	chromophobe renal cell carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d002292
+DOID:4467	clear cell renal cell carcinoma	skos:closeMatch	DOID:4471	chromophobe renal cell carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d002292
+DOID:4551	anus benign neoplasm	skos:closeMatch	DOID:4908	anal carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d001005
+DOID:4587	benign meningioma	skos:closeMatch	DOID:7210	psammomatous meningioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008579
+DOID:4587	benign meningioma	skos:closeMatch	DOID:7211	fibrous meningioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008579
+DOID:4606	bile duct cancer	skos:closeMatch	DOID:4897	bile duct carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d001650
+DOID:461	muscle benign neoplasm	skos:closeMatch	DOID:5039	myoblastoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d009379
+DOID:4648	familial retinoblastoma	skos:closeMatch	DOID:768	retinoblastoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d012175
+DOID:468	intramuscular hemangioma	skos:closeMatch	DOID:474	histiocytoid hemangioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d006391
+DOID:4790	medulloepithelioma	skos:closeMatch	DOID:4794	ependymoblastoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d018242
+DOID:4844	benign ependymoma	skos:closeMatch	DOID:5505	papillary ependymoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d004806
+DOID:4851	pilocytic astrocytoma	skos:closeMatch	DOID:5077	subependymal giant cell astrocytoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d001254
+DOID:4851	pilocytic astrocytoma	skos:closeMatch	DOID:6811	juvenile pilocytic astrocytoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d001254
+DOID:4851	pilocytic astrocytoma	skos:closeMatch	DOID:7005	gemistocytic astrocytoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d001254
+DOID:4873	anterior horn cell disease	skos:closeMatch	DOID:767	muscular atrophy	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:267693003
+DOID:4896	bile duct adenocarcinoma	skos:closeMatch	DOID:4897	bile duct carcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:70179006
+DOID:4896	bile duct adenocarcinoma	skos:closeMatch	DOID:4947	cholangiocarcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:70179006
+DOID:4897	bile duct carcinoma	skos:closeMatch	DOID:4947	cholangiocarcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:70179006
+DOID:4928	intrahepatic cholangiocarcinoma	skos:closeMatch	DOID:4947	cholangiocarcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:c22.1
+DOID:4928	intrahepatic cholangiocarcinoma	skos:closeMatch	DOID:4947	cholangiocarcinoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d018281
+DOID:5077	subependymal giant cell astrocytoma	skos:closeMatch	DOID:6811	juvenile pilocytic astrocytoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d001254
+DOID:5077	subependymal giant cell astrocytoma	skos:closeMatch	DOID:7005	gemistocytic astrocytoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d001254
+DOID:5101	ear cancer	skos:closeMatch	DOID:833	auditory system cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d004428
+DOID:526	human immunodeficiency virus infectious disease	skos:closeMatch	DOID:635	acquired immunodeficiency syndrome	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:b20
+DOID:540	strabismus	skos:closeMatch	DOID:9837	hypertropia	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	oio:hasDbXref	mesh:d013285
+DOID:5403	microcystic adenoma	skos:closeMatch	DOID:6204	follicular adenoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d000236
+DOID:5403	microcystic adenoma	skos:closeMatch	DOID:657	adenoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d000236
+DOID:5403	microcystic adenoma	skos:closeMatch	DOID:657	adenoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	mesh:d000236
+DOID:5442	eccrine acrospiroma	skos:closeMatch	DOID:5443	clear cell hidradenoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:254719003
+DOID:5574	VIPoma	skos:closeMatch	DOID:6977	pancreatic cholera	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d003969
+DOID:5672	large intestine cancer	skos:closeMatch	DOID:9256	colorectal cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:c18.9
+DOID:5672	large intestine cancer	skos:closeMatch	DOID:9256	colorectal cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	nci:c4978
+DOID:5672	large intestine cancer	skos:closeMatch	DOID:9256	colorectal cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:93854002
+DOID:5672	large intestine cancer	skos:closeMatch	DOID:9256	colorectal cancer	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	umls_cui:c0346629
+DOID:574	peripheral nervous system disease	skos:closeMatch	DOID:870	neuropathy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	neuropathy peripheral
+DOID:6204	follicular adenoma	skos:closeMatch	DOID:657	adenoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d000236
+DOID:6204	follicular adenoma	skos:closeMatch	DOID:657	adenoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	skos:exactMatch	mesh:d000236
+DOID:6262	follicular dendritic cell sarcoma	skos:closeMatch	DOID:7146	Langerhans cell sarcoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:c96.4
+DOID:6262	follicular dendritic cell sarcoma	skos:closeMatch	DOID:7849	dendritic cell sarcoma	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	cell dendritic follicular sarcoma
+DOID:6262	follicular dendritic cell sarcoma	skos:closeMatch	DOID:7849	dendritic cell sarcoma	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	cell dendritic follicular sarcoma
+DOID:6811	juvenile pilocytic astrocytoma	skos:closeMatch	DOID:7005	gemistocytic astrocytoma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d001254
+DOID:699	mitochondrial myopathy	skos:closeMatch	DOID:700	mitochondrial metabolism disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:240096000
+DOID:7210	psammomatous meningioma	skos:closeMatch	DOID:7211	fibrous meningioma	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d008579
+DOID:7489	Osgood-Schlatter's disease	skos:closeMatch	DOID:8125	osteochondrosis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d055034
+DOID:783	end stage renal disease	skos:closeMatch	DOID:784	chronic kidney disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd9cm:585.6
+DOID:7997	thyrotoxicosis	skos:closeMatch	DOID:7998	hyperthyroidism	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:e05.9
+DOID:809	cocaine abuse	skos:closeMatch	DOID:9975	cocaine dependence	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d019970
+DOID:8125	osteochondrosis	skos:closeMatch	DOID:84	osteochondritis dissecans	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:m93.9
+DOID:8593	chronic monocytic leukemia	skos:closeMatch	DOID:8692	myeloid leukemia	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d007951
+DOID:884	metagonimiasis	skos:closeMatch	DOID:888	fasciolopsiasis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d014201
+DOID:934	viral infectious disease	skos:closeMatch	GO:0016032	viral process	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	infection viral
+DOID:950	dacryoadenitis	skos:closeMatch	DOID:9938	dacryocystitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mesh:d003607
+DOID:9637	stomatitis	skos:closeMatch	DOID:9673	ulcerative stomatitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:k12.1
+DOID:9808	Goodpasture syndrome	skos:closeMatch	DOID:9809	hypersensitivity vasculitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:m31.0
+DOID:9848	endolymphatic hydrops	skos:closeMatch	DOID:9849	Meniere's disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	icd10cm:h81.0
+DOID:9848	endolymphatic hydrops	skos:closeMatch	DOID:9849	Meniere's disease	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:194346003
+DOID:9935	chronic inflammation of lacrimal passage	skos:closeMatch	DOID:9937	chronic dacryocystitis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	snomedct_us_2020_03_01:193990009
+EFO:0001272	adult	skos:closeMatch	UBERON:0000113	post-juvenile adult stage	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	ev:0300070
+EFO:0001272	adult	skos:closeMatch	UBERON:0000113	post-juvenile adult stage	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	adult stage
+GO:0006915	apoptotic process	skos:closeMatch	PATO:0000638	apoptotic	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref-INVERSE	rdf:ID	pato:0000638
+GO:0006915	apoptotic process	skos:closeMatch	PATO:0000638	apoptotic	semapv:LexicalMatching	oaklib	0.5	rdf:ID	oio:hasDbXref	go:0006915
+GO:0008219	cell death	skos:closeMatch	GO:0070265	necrotic cell death	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	necrosis
+GO:0031175	neuron projection development	skos:closeMatch	GO:0048812	neuron projection morphogenesis	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	biosynthesis neurite
+GO:0031175	neuron projection development	skos:closeMatch	GO:0048812	neuron projection morphogenesis	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	formation neurite
+GO:0031175	neuron projection development	skos:closeMatch	GO:0048812	neuron projection morphogenesis	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	growth neurite
+IAO:0000115	definition	skos:closeMatch	nmdc:basic_classes/:definition	definition	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	definition
+IAO:0000115	definition	skos:closeMatch	nmdc:basic_classes/:definition	definition	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	definition
+OBI:0000066		skos:closeMatch	nmdc:basic_classes/:Study	Study	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:basic_classes/:study
+OBI:0000066		skos:closeMatch	nmdc:basic_classes/:Study	Study	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:basic_classes/:study
+OBI:0000066		skos:closeMatch	nmdc:basic_classes/:Study	Study	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:basic_classes/:study
+OBI:0000066		skos:closeMatch	nmdc:basic_classes/:Study	Study	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:basic_classes/:study
+OBI:0000066		skos:closeMatch	nmdc:basic_classes/:Study	Study	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:basic_classes/:study
+OBI:0000066		skos:closeMatch	nmdc:basic_classes/:Study	Study	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:basic_classes/:study
+PATO:0000383	female	skos:closeMatch	nmdc:GenderRestroomEnum#female	female	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	female
+PATO:0000383	female	skos:closeMatch	nmdc:HostSexEnum#female	female	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	female
+PATO:0000384	male	skos:closeMatch	nmdc:GenderRestroomEnum#male	male	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	male
+PATO:0000384	male	skos:closeMatch	nmdc:HostSexEnum#male	male	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	male
+PATO:0000574	decreased length	skos:closeMatch	PATO:0002364	shortened	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	shortened
+PATO:0000918	volume	skos:closeMatch	nmdc:volume	volume	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	volume
+UO:0000008	meter	skos:closeMatch	UO:0000062	molar	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	m
+UO:0000016	millimeter	skos:closeMatch	UO:0000017	micrometer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	micrometre
+UO:0000016	millimeter	skos:closeMatch	UO:0000063	millimolar	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	mm
+UO:0000017	micrometer	skos:closeMatch	UO:0000064	micromolar	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	um
+UO:0000018	nanometer	skos:closeMatch	UO:0000065	nanomolar	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	nm
+UO:0000020	picometer	skos:closeMatch	UO:0000066	picomolar	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	pm
+UO:0000196	pH	skos:closeMatch	mixs:ph	ph	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ph
+dcterms:title		skos:closeMatch	nmdc:title	title	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:title
+linkml:topValue	value	skos:closeMatch	nmdc:value	value	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	value
+mixs:elevator	elevator	skos:closeMatch	nmdc:IndoorSpaceEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:MechStrucEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomConnectedEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomTypeEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:escalator	escalator	skos:closeMatch	nmdc:MechStrucEnum#escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+nmdc:BuildOccupTypeEnum#office	office	skos:closeMatch	nmdc:IndoorSpaceEnum#office	office	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	office
+nmdc:BuildOccupTypeEnum#office	office	skos:closeMatch	nmdc:RoomConnectedEnum#office	office	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	office
+nmdc:CeilCondEnum#damaged	damaged	skos:closeMatch	nmdc:DoorCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:CeilCondEnum#damaged	damaged	skos:closeMatch	nmdc:FloorCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:CeilCondEnum#damaged	damaged	skos:closeMatch	nmdc:IntWallCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:CeilCondEnum#damaged	damaged	skos:closeMatch	nmdc:RoomCondtEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:CeilCondEnum#damaged	damaged	skos:closeMatch	nmdc:ShadingDeviceCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:CeilCondEnum#damaged	damaged	skos:closeMatch	nmdc:WindowCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:CeilCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:DoorCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:CeilCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:FloorCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:CeilCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:IntWallCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:CeilCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:RoomCondtEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:CeilCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:ShadingDeviceCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:CeilCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:WindowCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:CeilCondEnum#new	new	skos:closeMatch	nmdc:DoorCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:CeilCondEnum#new	new	skos:closeMatch	nmdc:FloorCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:CeilCondEnum#new	new	skos:closeMatch	nmdc:IntWallCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:CeilCondEnum#new	new	skos:closeMatch	nmdc:RoomCondtEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:CeilCondEnum#new	new	skos:closeMatch	nmdc:ShadingDeviceCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:CeilCondEnum#new	new	skos:closeMatch	nmdc:WindowCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:CeilCondEnum#rupture	rupture	skos:closeMatch	nmdc:DoorCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:CeilCondEnum#rupture	rupture	skos:closeMatch	nmdc:FloorCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:CeilCondEnum#rupture	rupture	skos:closeMatch	nmdc:IntWallCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:CeilCondEnum#rupture	rupture	skos:closeMatch	nmdc:RoomCondtEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:CeilCondEnum#rupture	rupture	skos:closeMatch	nmdc:ShadingDeviceCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:CeilCondEnum#rupture	rupture	skos:closeMatch	nmdc:WindowCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:CeilCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:DoorCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:CeilCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:FloorCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:CeilCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:IntWallCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:CeilCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:RoomCondtEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:CeilCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:ShadingDeviceCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:CeilCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:WindowCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:CeilFinishMatEnum#fiberglass	fiberglass	skos:closeMatch	nmdc:DoorMatEnum#fiberglass	fiberglass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fiberglass
+nmdc:CeilFinishMatEnum#fiberglass	fiberglass	skos:closeMatch	nmdc:WindowMatEnum#fiberglass	fiberglass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fiberglass
+nmdc:CeilFinishMatEnum#metal	metal	skos:closeMatch	nmdc:DoorMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:CeilFinishMatEnum#metal	metal	skos:closeMatch	nmdc:DoorTypeEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:CeilFinishMatEnum#metal	metal	skos:closeMatch	nmdc:SurfMaterialEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:CeilFinishMatEnum#metal	metal	skos:closeMatch	nmdc:WallFinishMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:CeilFinishMatEnum#metal	metal	skos:closeMatch	nmdc:WindowMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:CeilFinishMatEnum#stucco	stucco	skos:closeMatch	nmdc:SurfMaterialEnum#stucco	stucco	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stucco
+nmdc:CeilFinishMatEnum#stucco	stucco	skos:closeMatch	nmdc:WallSurfTreatmentEnum#stucco	stucco	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stucco
+nmdc:CeilFinishMatEnum#wood	wood	skos:closeMatch	nmdc:DoorMatEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:CeilFinishMatEnum#wood	wood	skos:closeMatch	nmdc:SurfMaterialEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:CeilFinishMatEnum#wood	wood	skos:closeMatch	nmdc:WallFinishMatEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:CeilFinishMatEnum#wood	wood	skos:closeMatch	nmdc:WindowMatEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:CeilTextureEnum#Santa-Fe+texture	Santa-Fe texture	skos:closeMatch	nmdc:WallTextureEnum#Santa-Fe+texture	Santa-Fe texture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	santa-fe texture
+nmdc:CeilTextureEnum#crows+feet	crows feet	skos:closeMatch	nmdc:WallTextureEnum#crows+feet	crows feet	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	crows feet
+nmdc:CeilTextureEnum#crows-foot+stomp	crows-foot stomp	skos:closeMatch	nmdc:WallTextureEnum#crows-foot+stomp	crows-foot stomp	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	crows-foot stomp
+nmdc:CeilTextureEnum#double+skip	double skip	skos:closeMatch	nmdc:WallTextureEnum#double+skip	double skip	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	double skip
+nmdc:CeilTextureEnum#hawk+and+trowel	hawk and trowel	skos:closeMatch	nmdc:WallTextureEnum#hawk+and+trowel	hawk and trowel	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	and hawk trowel
+nmdc:CeilTextureEnum#knockdown	knockdown	skos:closeMatch	nmdc:WallTextureEnum#knockdown	knockdown	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	knockdown
+nmdc:CeilTextureEnum#orange+peel	orange peel	skos:closeMatch	nmdc:WallTextureEnum#orange+peel	orange peel	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	orange peel
+nmdc:CeilTextureEnum#popcorn	popcorn	skos:closeMatch	nmdc:WallTextureEnum#popcorn	popcorn	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	popcorn
+nmdc:CeilTextureEnum#rosebud+stomp	rosebud stomp	skos:closeMatch	nmdc:WallTextureEnum#rosebud+stomp	rosebud stomp	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rosebud stomp
+nmdc:CeilTextureEnum#skip+trowel	skip trowel	skos:closeMatch	nmdc:WallTextureEnum#skip+trowel	skip trowel	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	skip trowel
+nmdc:CeilTextureEnum#smooth	smooth	skos:closeMatch	nmdc:WallTextureEnum#smooth	smooth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	smooth
+nmdc:CeilTextureEnum#stomp+knockdown	stomp knockdown	skos:closeMatch	nmdc:WallTextureEnum#stomp+knockdown	stomp knockdown	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	knockdown stomp
+nmdc:CeilTextureEnum#swirl	swirl	skos:closeMatch	nmdc:WallTextureEnum#swirl	swirl	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	swirl
+nmdc:ChromatographicCategoryEnum#gas_chromatography	gas_chromatography	skos:closeMatch	nmdc:EluentIntroductionCategoryEnum#gas_chromatography	gas_chromatography	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gas_chromatography
+nmdc:ChromatographicCategoryEnum#liquid_chromatography	liquid_chromatography	skos:closeMatch	nmdc:EluentIntroductionCategoryEnum#liquid_chromatography	liquid_chromatography	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	liquid_chromatography
+nmdc:ChromatographicCategoryEnum#solid_phase_extraction	solid_phase_extraction	skos:closeMatch	nmdc:ProtocolCategoryEnum#solid_phase_extraction	solid_phase_extraction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	solid_phase_extraction
+nmdc:CollectingBiosamplesFromSite	CollectingBiosamplesFromSite	skos:closeMatch	nmdc:SubSamplingProcess	SubSamplingProcess	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch	skos:relatedMatch	obi:0000744
+nmdc:CurLandUseEnum#sand	sand	skos:closeMatch	nmdc:PlantGrowthMedEnum#sand	sand	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sand
+nmdc:DNASampleFormatEnum#10+mM+Tris-HCl	10 mM Tris-HCl	skos:closeMatch	nmdc:RNASampleFormatEnum#10+mM+Tris-HCl	10 mM Tris-HCl	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	10 mm tris-hcl
+nmdc:DNASampleFormatEnum#DNAStable	DNAStable	skos:closeMatch	nmdc:RNASampleFormatEnum#DNAStable	DNAStable	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dnastable
+nmdc:DNASampleFormatEnum#Ethanol	Ethanol	skos:closeMatch	nmdc:RNASampleFormatEnum#Ethanol	Ethanol	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ethanol
+nmdc:DNASampleFormatEnum#Gentegra-DNA	Gentegra-DNA	skos:closeMatch	nmdc:RNASampleFormatEnum#Gentegra-DNA	Gentegra-DNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gentegra-dna
+nmdc:DNASampleFormatEnum#Gentegra-RNA	Gentegra-RNA	skos:closeMatch	nmdc:RNASampleFormatEnum#Gentegra-RNA	Gentegra-RNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gentegra-rna
+nmdc:DNASampleFormatEnum#Low+EDTA+TE	Low EDTA TE	skos:closeMatch	nmdc:RNASampleFormatEnum#Low+EDTA+TE	Low EDTA TE	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	edta low te
+nmdc:DNASampleFormatEnum#MDA+reaction+buffer	MDA reaction buffer	skos:closeMatch	nmdc:RNASampleFormatEnum#MDA+reaction+buffer	MDA reaction buffer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	buffer mda reaction
+nmdc:DNASampleFormatEnum#PBS	PBS	skos:closeMatch	nmdc:RNASampleFormatEnum#PBS	PBS	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pbs
+nmdc:DNASampleFormatEnum#Pellet	Pellet	skos:closeMatch	nmdc:RNASampleFormatEnum#Pellet	Pellet	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pellet
+nmdc:DNASampleFormatEnum#Pellet	Pellet	skos:closeMatch	nmdc:SamplePortionEnum#pellet	pellet	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pellet
+nmdc:DNASampleFormatEnum#RNAStable	RNAStable	skos:closeMatch	nmdc:RNASampleFormatEnum#RNAStable	RNAStable	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rnastable
+nmdc:DNASampleFormatEnum#TE	TE	skos:closeMatch	nmdc:RNASampleFormatEnum#TE	TE	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	te
+nmdc:DNASampleFormatEnum#Water	Water	skos:closeMatch	nmdc:PlantGrowthMedEnum#water	water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:DNASampleFormatEnum#Water	Water	skos:closeMatch	nmdc:RNASampleFormatEnum#Water	Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:DNASampleFormatEnum#Water	Water	skos:closeMatch	nmdc:SampleTypeEnum#water	water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:FailureWhatEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:FreqCleanEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:HcProducedEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:HcrEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:HcrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:LithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:OrganismCountEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:OxyStatSampEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DoorCompTypeEnum#revolving	revolving	skos:closeMatch	nmdc:DoorMoveEnum#revolving	revolving	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	revolving
+nmdc:DoorCompTypeEnum#sliding	sliding	skos:closeMatch	nmdc:DoorMoveEnum#sliding	sliding	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sliding
+nmdc:DoorCondEnum#damaged	damaged	skos:closeMatch	nmdc:FloorCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:DoorCondEnum#damaged	damaged	skos:closeMatch	nmdc:IntWallCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:DoorCondEnum#damaged	damaged	skos:closeMatch	nmdc:RoomCondtEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:DoorCondEnum#damaged	damaged	skos:closeMatch	nmdc:ShadingDeviceCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:DoorCondEnum#damaged	damaged	skos:closeMatch	nmdc:WindowCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:DoorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:FloorCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:DoorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:IntWallCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:DoorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:RoomCondtEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:DoorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:ShadingDeviceCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:DoorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:WindowCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:DoorCondEnum#new	new	skos:closeMatch	nmdc:FloorCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:DoorCondEnum#new	new	skos:closeMatch	nmdc:IntWallCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:DoorCondEnum#new	new	skos:closeMatch	nmdc:RoomCondtEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:DoorCondEnum#new	new	skos:closeMatch	nmdc:ShadingDeviceCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:DoorCondEnum#new	new	skos:closeMatch	nmdc:WindowCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:DoorCondEnum#rupture	rupture	skos:closeMatch	nmdc:FloorCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:DoorCondEnum#rupture	rupture	skos:closeMatch	nmdc:IntWallCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:DoorCondEnum#rupture	rupture	skos:closeMatch	nmdc:RoomCondtEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:DoorCondEnum#rupture	rupture	skos:closeMatch	nmdc:ShadingDeviceCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:DoorCondEnum#rupture	rupture	skos:closeMatch	nmdc:WindowCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:DoorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:FloorCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:DoorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:IntWallCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:DoorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:RoomCondtEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:DoorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:ShadingDeviceCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:DoorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:WindowCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:DoorLocEnum#east	east	skos:closeMatch	nmdc:ExtWallOrientEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:DoorLocEnum#east	east	skos:closeMatch	nmdc:ExtWindowOrientEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:DoorLocEnum#east	east	skos:closeMatch	nmdc:HeatDelivLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:DoorLocEnum#east	east	skos:closeMatch	nmdc:WallLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:DoorLocEnum#east	east	skos:closeMatch	nmdc:WindowLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:DoorLocEnum#north	north	skos:closeMatch	nmdc:ExtWallOrientEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:DoorLocEnum#north	north	skos:closeMatch	nmdc:ExtWindowOrientEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:DoorLocEnum#north	north	skos:closeMatch	nmdc:HeatDelivLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:DoorLocEnum#north	north	skos:closeMatch	nmdc:WallLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:DoorLocEnum#north	north	skos:closeMatch	nmdc:WindowLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:DoorLocEnum#south	south	skos:closeMatch	nmdc:ExtWallOrientEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:DoorLocEnum#south	south	skos:closeMatch	nmdc:ExtWindowOrientEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:DoorLocEnum#south	south	skos:closeMatch	nmdc:HeatDelivLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:DoorLocEnum#south	south	skos:closeMatch	nmdc:WallLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:DoorLocEnum#south	south	skos:closeMatch	nmdc:WindowLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:DoorLocEnum#west	west	skos:closeMatch	nmdc:ExtWallOrientEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:DoorLocEnum#west	west	skos:closeMatch	nmdc:ExtWindowOrientEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:DoorLocEnum#west	west	skos:closeMatch	nmdc:HeatDelivLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:DoorLocEnum#west	west	skos:closeMatch	nmdc:WallLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:DoorLocEnum#west	west	skos:closeMatch	nmdc:WindowLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:DoorMatEnum#fiberglass	fiberglass	skos:closeMatch	nmdc:WindowMatEnum#fiberglass	fiberglass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fiberglass
+nmdc:DoorMatEnum#metal	metal	skos:closeMatch	nmdc:DoorTypeEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:DoorMatEnum#metal	metal	skos:closeMatch	nmdc:SurfMaterialEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:DoorMatEnum#metal	metal	skos:closeMatch	nmdc:WallFinishMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:DoorMatEnum#metal	metal	skos:closeMatch	nmdc:WindowMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:DoorMatEnum#vinyl	vinyl	skos:closeMatch	nmdc:SurfMaterialEnum#vinyl	vinyl	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	vinyl
+nmdc:DoorMatEnum#vinyl	vinyl	skos:closeMatch	nmdc:WindowMatEnum#vinyl	vinyl	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	vinyl
+nmdc:DoorMatEnum#wood	wood	skos:closeMatch	nmdc:SurfMaterialEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:DoorMatEnum#wood	wood	skos:closeMatch	nmdc:WallFinishMatEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:DoorMatEnum#wood	wood	skos:closeMatch	nmdc:WindowMatEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:DoorMoveEnum#collapsible	collapsible	skos:closeMatch	nmdc:DoorTypeMetalEnum#collapsible	collapsible	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	collapsible
+nmdc:DoorTypeEnum#metal	metal	skos:closeMatch	nmdc:SurfMaterialEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:DoorTypeEnum#metal	metal	skos:closeMatch	nmdc:WallFinishMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:DoorTypeEnum#metal	metal	skos:closeMatch	nmdc:WindowMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:DrainageClassEnum#well	well	skos:closeMatch	nmdc:SampCollectPointEnum#well	well	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	well
+nmdc:DrawingsEnum#as+built	as built	skos:closeMatch	nmdc:SpecificEnum#as+built	as built	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	as built
+nmdc:DrawingsEnum#bid	bid	skos:closeMatch	nmdc:SpecificEnum#bid	bid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bid
+nmdc:DrawingsEnum#construction	construction	skos:closeMatch	nmdc:SpecificEnum#construction	construction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	construction
+nmdc:DrawingsEnum#design	design	skos:closeMatch	nmdc:SpecificEnum#design	design	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	design
+nmdc:DrawingsEnum#operation	operation	skos:closeMatch	nmdc:SpecificEnum#operation	operation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	operation
+nmdc:ExecutionResourceEnum#EMSL	EMSL	skos:closeMatch	ror:04rc0xn13	EMSL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	emsl
+nmdc:ExecutionResourceEnum#JGI	JGI	skos:closeMatch	ror:04xm1d337	JGI	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	jgi
+nmdc:ExtWallOrientEnum#east	east	skos:closeMatch	nmdc:ExtWindowOrientEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:ExtWallOrientEnum#east	east	skos:closeMatch	nmdc:HeatDelivLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:ExtWallOrientEnum#east	east	skos:closeMatch	nmdc:WallLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:ExtWallOrientEnum#east	east	skos:closeMatch	nmdc:WindowLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:ExtWallOrientEnum#north	north	skos:closeMatch	nmdc:ExtWindowOrientEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:ExtWallOrientEnum#north	north	skos:closeMatch	nmdc:HeatDelivLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:ExtWallOrientEnum#north	north	skos:closeMatch	nmdc:WallLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:ExtWallOrientEnum#north	north	skos:closeMatch	nmdc:WindowLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:ExtWallOrientEnum#northeast	northeast	skos:closeMatch	nmdc:ExtWindowOrientEnum#northeast	northeast	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	northeast
+nmdc:ExtWallOrientEnum#northwest	northwest	skos:closeMatch	nmdc:ExtWindowOrientEnum#northwest	northwest	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	northwest
+nmdc:ExtWallOrientEnum#south	south	skos:closeMatch	nmdc:ExtWindowOrientEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:ExtWallOrientEnum#south	south	skos:closeMatch	nmdc:HeatDelivLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:ExtWallOrientEnum#south	south	skos:closeMatch	nmdc:WallLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:ExtWallOrientEnum#south	south	skos:closeMatch	nmdc:WindowLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:ExtWallOrientEnum#southeast	southeast	skos:closeMatch	nmdc:ExtWindowOrientEnum#southeast	southeast	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	southeast
+nmdc:ExtWallOrientEnum#southwest	southwest	skos:closeMatch	nmdc:ExtWindowOrientEnum#southwest	southwest	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	southwest
+nmdc:ExtWallOrientEnum#west	west	skos:closeMatch	nmdc:ExtWindowOrientEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:ExtWallOrientEnum#west	west	skos:closeMatch	nmdc:HeatDelivLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:ExtWallOrientEnum#west	west	skos:closeMatch	nmdc:WallLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:ExtWallOrientEnum#west	west	skos:closeMatch	nmdc:WindowLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:ExtWindowOrientEnum#east	east	skos:closeMatch	nmdc:HeatDelivLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:ExtWindowOrientEnum#east	east	skos:closeMatch	nmdc:WallLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:ExtWindowOrientEnum#east	east	skos:closeMatch	nmdc:WindowLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:ExtWindowOrientEnum#north	north	skos:closeMatch	nmdc:HeatDelivLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:ExtWindowOrientEnum#north	north	skos:closeMatch	nmdc:WallLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:ExtWindowOrientEnum#north	north	skos:closeMatch	nmdc:WindowLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:ExtWindowOrientEnum#south	south	skos:closeMatch	nmdc:HeatDelivLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:ExtWindowOrientEnum#south	south	skos:closeMatch	nmdc:WallLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:ExtWindowOrientEnum#south	south	skos:closeMatch	nmdc:WindowLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:ExtWindowOrientEnum#west	west	skos:closeMatch	nmdc:HeatDelivLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:ExtWindowOrientEnum#west	west	skos:closeMatch	nmdc:WallLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:ExtWindowOrientEnum#west	west	skos:closeMatch	nmdc:WindowLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:Extraction	Extraction	skos:closeMatch	nmdc:FailureWhereEnum#Extraction	Extraction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	extraction
+nmdc:ExtractionTargetEnum#DNA	DNA	skos:closeMatch	nmdc:LibraryTypeEnum#DNA	DNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dna
+nmdc:ExtractionTargetEnum#RNA	RNA	skos:closeMatch	nmdc:LibraryTypeEnum#RNA	RNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rna
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:FreqCleanEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:HcProducedEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:HcrEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:HcrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:LithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:OrganismCountEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:OxyStatSampEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhereEnum#LibraryPreparation	LibraryPreparation	skos:closeMatch	nmdc:LibraryPreparation	LibraryPreparation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	librarypreparation
+nmdc:FailureWhereEnum#MagsAnalysis	MagsAnalysis	skos:closeMatch	nmdc:MagsAnalysis	MagsAnalysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	magsanalysis
+nmdc:FailureWhereEnum#MassSpectrometry	MassSpectrometry	skos:closeMatch	nmdc:MassSpectrometry	MassSpectrometry	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	massspectrometry
+nmdc:FailureWhereEnum#MetabolomicsAnalysis	MetabolomicsAnalysis	skos:closeMatch	nmdc:MetabolomicsAnalysis	MetabolomicsAnalysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metabolomicsanalysis
+nmdc:FailureWhereEnum#MetagenomeAnnotation	MetagenomeAnnotation	skos:closeMatch	nmdc:MetagenomeAnnotation	MetagenomeAnnotation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metagenomeannotation
+nmdc:FailureWhereEnum#MetagenomeAssembly	MetagenomeAssembly	skos:closeMatch	nmdc:MetagenomeAssembly	MetagenomeAssembly	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metagenomeassembly
+nmdc:FailureWhereEnum#MetaproteomicsAnalysis	MetaproteomicsAnalysis	skos:closeMatch	nmdc:MetaproteomicsAnalysis	MetaproteomicsAnalysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metaproteomicsanalysis
+nmdc:FailureWhereEnum#MetatranscriptomeAnnotation	MetatranscriptomeAnnotation	skos:closeMatch	nmdc:MetatranscriptomeAnnotation	MetatranscriptomeAnnotation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metatranscriptomeannotation
+nmdc:FailureWhereEnum#MetatranscriptomeAssembly	MetatranscriptomeAssembly	skos:closeMatch	nmdc:MetatranscriptomeAssembly	MetatranscriptomeAssembly	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metatranscriptomeassembly
+nmdc:FailureWhereEnum#MetatranscriptomeExpressionAnalysis	MetatranscriptomeExpressionAnalysis	skos:closeMatch	nmdc:MetatranscriptomeExpressionAnalysis	MetatranscriptomeExpressionAnalysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metatranscriptomeexpressionanalysis
+nmdc:FailureWhereEnum#NomAnalysis	NomAnalysis	skos:closeMatch	nmdc:NomAnalysis	NomAnalysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nomanalysis
+nmdc:FailureWhereEnum#NucleotideSequencing	NucleotideSequencing	skos:closeMatch	nmdc:NucleotideSequencing	NucleotideSequencing	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nucleotidesequencing
+nmdc:FailureWhereEnum#Pooling	Pooling	skos:closeMatch	nmdc:Pooling	Pooling	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pooling
+nmdc:FailureWhereEnum#ReadBasedTaxonomyAnalysis	ReadBasedTaxonomyAnalysis	skos:closeMatch	nmdc:ReadBasedTaxonomyAnalysis	ReadBasedTaxonomyAnalysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	readbasedtaxonomyanalysis
+nmdc:FailureWhereEnum#ReadQcAnalysis	ReadQcAnalysis	skos:closeMatch	nmdc:ReadQcAnalysis	ReadQcAnalysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	readqcanalysis
+nmdc:FloorCondEnum#damaged	damaged	skos:closeMatch	nmdc:IntWallCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:FloorCondEnum#damaged	damaged	skos:closeMatch	nmdc:RoomCondtEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:FloorCondEnum#damaged	damaged	skos:closeMatch	nmdc:ShadingDeviceCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:FloorCondEnum#damaged	damaged	skos:closeMatch	nmdc:WindowCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:FloorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:IntWallCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:FloorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:RoomCondtEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:FloorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:ShadingDeviceCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:FloorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:WindowCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:FloorCondEnum#new	new	skos:closeMatch	nmdc:IntWallCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:FloorCondEnum#new	new	skos:closeMatch	nmdc:RoomCondtEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:FloorCondEnum#new	new	skos:closeMatch	nmdc:ShadingDeviceCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:FloorCondEnum#new	new	skos:closeMatch	nmdc:WindowCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:FloorCondEnum#rupture	rupture	skos:closeMatch	nmdc:IntWallCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:FloorCondEnum#rupture	rupture	skos:closeMatch	nmdc:RoomCondtEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:FloorCondEnum#rupture	rupture	skos:closeMatch	nmdc:ShadingDeviceCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:FloorCondEnum#rupture	rupture	skos:closeMatch	nmdc:WindowCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:FloorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:IntWallCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:FloorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:RoomCondtEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:FloorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:ShadingDeviceCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:FloorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:WindowCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:FloorFinishMatEnum#carpet	carpet	skos:closeMatch	nmdc:SurfMaterialEnum#carpet	carpet	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	carpet
+nmdc:FloorFinishMatEnum#concrete	concrete	skos:closeMatch	nmdc:FloorStrucEnum#concrete	concrete	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	concrete
+nmdc:FloorFinishMatEnum#concrete	concrete	skos:closeMatch	nmdc:SurfMaterialEnum#concrete	concrete	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	concrete
+nmdc:FloorFinishMatEnum#none	none	skos:closeMatch	nmdc:LightTypeEnum#none	none	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	none
+nmdc:FloorFinishMatEnum#none	none	skos:closeMatch	nmdc:WindowCoverEnum#none	none	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	none
+nmdc:FloorFinishMatEnum#paint	paint	skos:closeMatch	nmdc:SurfMaterialEnum#paint	paint	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	paint
+nmdc:FloorFinishMatEnum#stone	stone	skos:closeMatch	nmdc:SurfMaterialEnum#stone	stone	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stone
+nmdc:FloorFinishMatEnum#tile	tile	skos:closeMatch	nmdc:SurfMaterialEnum#tile	tile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tile
+nmdc:FloorFinishMatEnum#tile	tile	skos:closeMatch	nmdc:WallFinishMatEnum#tile	tile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tile
+nmdc:FloorStrucEnum#concrete	concrete	skos:closeMatch	nmdc:SurfMaterialEnum#concrete	concrete	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	concrete
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:HcProducedEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:HcrEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:HcrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:LithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:OrganismCountEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:OxyStatSampEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FurnitureEnum#cabinet	cabinet	skos:closeMatch	nmdc:IndoorSurfEnum#cabinet	cabinet	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cabinet
+nmdc:GenderRestroomEnum#female	female	skos:closeMatch	nmdc:HostSexEnum#female	female	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	female
+nmdc:GenderRestroomEnum#male	male	skos:closeMatch	nmdc:HostSexEnum#male	male	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	male
+nmdc:HcProducedEnum#Gas	Gas	skos:closeMatch	nmdc:SampleStateEnum#gas	gas	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gas
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:HcrEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:HcrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:LithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:OrganismCountEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:OxyStatSampEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#Shale	Shale	skos:closeMatch	nmdc:LithologyEnum#Shale	Shale	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	shale
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:HcrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:LithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:OrganismCountEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:OxyStatSampEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#Archean	Archean	skos:closeMatch	nmdc:SrGeolAgeEnum#Archean	Archean	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	archean
+nmdc:HcrGeolAgeEnum#Cambrian	Cambrian	skos:closeMatch	nmdc:SrGeolAgeEnum#Cambrian	Cambrian	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cambrian
+nmdc:HcrGeolAgeEnum#Carboniferous	Carboniferous	skos:closeMatch	nmdc:SrGeolAgeEnum#Carboniferous	Carboniferous	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	carboniferous
+nmdc:HcrGeolAgeEnum#Cenozoic	Cenozoic	skos:closeMatch	nmdc:SrGeolAgeEnum#Cenozoic	Cenozoic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cenozoic
+nmdc:HcrGeolAgeEnum#Cretaceous	Cretaceous	skos:closeMatch	nmdc:SrGeolAgeEnum#Cretaceous	Cretaceous	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cretaceous
+nmdc:HcrGeolAgeEnum#Devonian	Devonian	skos:closeMatch	nmdc:SrGeolAgeEnum#Devonian	Devonian	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	devonian
+nmdc:HcrGeolAgeEnum#Jurassic	Jurassic	skos:closeMatch	nmdc:SrGeolAgeEnum#Jurassic	Jurassic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	jurassic
+nmdc:HcrGeolAgeEnum#Mesozoic	Mesozoic	skos:closeMatch	nmdc:SrGeolAgeEnum#Mesozoic	Mesozoic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mesozoic
+nmdc:HcrGeolAgeEnum#Neogene	Neogene	skos:closeMatch	nmdc:SrGeolAgeEnum#Neogene	Neogene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	neogene
+nmdc:HcrGeolAgeEnum#Ordovician	Ordovician	skos:closeMatch	nmdc:SrGeolAgeEnum#Ordovician	Ordovician	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ordovician
+nmdc:HcrGeolAgeEnum#Paleogene	Paleogene	skos:closeMatch	nmdc:SrGeolAgeEnum#Paleogene	Paleogene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	paleogene
+nmdc:HcrGeolAgeEnum#Paleozoic	Paleozoic	skos:closeMatch	nmdc:SrGeolAgeEnum#Paleozoic	Paleozoic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	paleozoic
+nmdc:HcrGeolAgeEnum#Permian	Permian	skos:closeMatch	nmdc:SrGeolAgeEnum#Permian	Permian	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permian
+nmdc:HcrGeolAgeEnum#Precambrian	Precambrian	skos:closeMatch	nmdc:SrGeolAgeEnum#Precambrian	Precambrian	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	precambrian
+nmdc:HcrGeolAgeEnum#Proterozoic	Proterozoic	skos:closeMatch	nmdc:SrGeolAgeEnum#Proterozoic	Proterozoic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	proterozoic
+nmdc:HcrGeolAgeEnum#Silurian	Silurian	skos:closeMatch	nmdc:SrGeolAgeEnum#Silurian	Silurian	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	silurian
+nmdc:HcrGeolAgeEnum#Triassic	Triassic	skos:closeMatch	nmdc:SrGeolAgeEnum#Triassic	Triassic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	triassic
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:LithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:OrganismCountEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:OxyStatSampEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HeatDelivLocEnum#east	east	skos:closeMatch	nmdc:WallLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:HeatDelivLocEnum#east	east	skos:closeMatch	nmdc:WindowLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:HeatDelivLocEnum#north	north	skos:closeMatch	nmdc:WallLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:HeatDelivLocEnum#north	north	skos:closeMatch	nmdc:WindowLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:HeatDelivLocEnum#south	south	skos:closeMatch	nmdc:WallLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:HeatDelivLocEnum#south	south	skos:closeMatch	nmdc:WindowLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:HeatDelivLocEnum#west	west	skos:closeMatch	nmdc:WallLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:HeatDelivLocEnum#west	west	skos:closeMatch	nmdc:WindowLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:IndoorSpaceEnum#bathroom	bathroom	skos:closeMatch	nmdc:RoomConnectedEnum#bathroom	bathroom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bathroom
+nmdc:IndoorSpaceEnum#bathroom	bathroom	skos:closeMatch	nmdc:RoomTypeEnum#bathroom	bathroom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bathroom
+nmdc:IndoorSpaceEnum#elevator	elevator	skos:closeMatch	nmdc:MechStrucEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+nmdc:IndoorSpaceEnum#elevator	elevator	skos:closeMatch	nmdc:RoomConnectedEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+nmdc:IndoorSpaceEnum#elevator	elevator	skos:closeMatch	nmdc:RoomTypeEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+nmdc:IndoorSpaceEnum#hallway	hallway	skos:closeMatch	nmdc:RoomConnectedEnum#hallway	hallway	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hallway
+nmdc:IndoorSpaceEnum#hallway	hallway	skos:closeMatch	nmdc:RoomTypeEnum#hallway	hallway	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hallway
+nmdc:IndoorSpaceEnum#kitchen	kitchen	skos:closeMatch	nmdc:RoomConnectedEnum#kitchen	kitchen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	kitchen
+nmdc:IndoorSpaceEnum#kitchen	kitchen	skos:closeMatch	nmdc:RoomTypeEnum#kitchen	kitchen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	kitchen
+nmdc:IndoorSpaceEnum#office	office	skos:closeMatch	nmdc:RoomConnectedEnum#office	office	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	office
+nmdc:IntWallCondEnum#damaged	damaged	skos:closeMatch	nmdc:RoomCondtEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:IntWallCondEnum#damaged	damaged	skos:closeMatch	nmdc:ShadingDeviceCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:IntWallCondEnum#damaged	damaged	skos:closeMatch	nmdc:WindowCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:IntWallCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:RoomCondtEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:IntWallCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:ShadingDeviceCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:IntWallCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:WindowCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:IntWallCondEnum#new	new	skos:closeMatch	nmdc:RoomCondtEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:IntWallCondEnum#new	new	skos:closeMatch	nmdc:ShadingDeviceCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:IntWallCondEnum#new	new	skos:closeMatch	nmdc:WindowCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:IntWallCondEnum#rupture	rupture	skos:closeMatch	nmdc:RoomCondtEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:IntWallCondEnum#rupture	rupture	skos:closeMatch	nmdc:ShadingDeviceCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:IntWallCondEnum#rupture	rupture	skos:closeMatch	nmdc:WindowCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:IntWallCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:RoomCondtEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:IntWallCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:ShadingDeviceCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:IntWallCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:WindowCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:LightTypeEnum#none	none	skos:closeMatch	nmdc:WindowCoverEnum#none	none	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	none
+nmdc:LithologyEnum#Basement	Basement	skos:closeMatch	nmdc:SampFloorEnum#basement	basement	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	basement
+nmdc:LithologyEnum#Basement	Basement	skos:closeMatch	nmdc:SubstructureTypeEnum#basement	basement	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	basement
+nmdc:LithologyEnum#Coal	Coal	skos:closeMatch	nmdc:SrLithologyEnum#Coal	Coal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	coal
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:OrganismCountEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:OxyStatSampEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:MechStrucEnum#elevator	elevator	skos:closeMatch	nmdc:RoomConnectedEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+nmdc:MechStrucEnum#elevator	elevator	skos:closeMatch	nmdc:RoomTypeEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+nmdc:OccupDocumentEnum#videos	videos	skos:closeMatch	nmdc:VisMediaEnum#videos	videos	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	videos
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:OxyStatSampEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:PlantGrowthMedEnum#soil	soil	skos:closeMatch	nmdc:SampleTypeEnum#soil	soil	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	soil
+nmdc:PlantGrowthMedEnum#water	water	skos:closeMatch	nmdc:RNASampleFormatEnum#Water	Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:PlantGrowthMedEnum#water	water	skos:closeMatch	nmdc:SampleTypeEnum#water	water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:RNASampleFormatEnum#Pellet	Pellet	skos:closeMatch	nmdc:SamplePortionEnum#pellet	pellet	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pellet
+nmdc:RNASampleFormatEnum#Water	Water	skos:closeMatch	nmdc:SampleTypeEnum#water	water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:ResolutionCategoryEnum#high	high	skos:closeMatch	nmdc:WindowVertPosEnum#high	high	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	high
+nmdc:ResolutionCategoryEnum#low	low	skos:closeMatch	nmdc:WindowVertPosEnum#low	low	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	low
+nmdc:RoomCondtEnum#damaged	damaged	skos:closeMatch	nmdc:ShadingDeviceCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:RoomCondtEnum#damaged	damaged	skos:closeMatch	nmdc:WindowCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:RoomCondtEnum#needs+repair	needs repair	skos:closeMatch	nmdc:ShadingDeviceCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:RoomCondtEnum#needs+repair	needs repair	skos:closeMatch	nmdc:WindowCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:RoomCondtEnum#new	new	skos:closeMatch	nmdc:ShadingDeviceCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:RoomCondtEnum#new	new	skos:closeMatch	nmdc:WindowCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:RoomCondtEnum#rupture	rupture	skos:closeMatch	nmdc:ShadingDeviceCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:RoomCondtEnum#rupture	rupture	skos:closeMatch	nmdc:WindowCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:RoomCondtEnum#visible+wear	visible wear	skos:closeMatch	nmdc:ShadingDeviceCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:RoomCondtEnum#visible+wear	visible wear	skos:closeMatch	nmdc:WindowCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:RoomConnectedEnum#attic	attic	skos:closeMatch	nmdc:RoomTypeEnum#attic	attic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	attic
+nmdc:RoomConnectedEnum#bathroom	bathroom	skos:closeMatch	nmdc:RoomTypeEnum#bathroom	bathroom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bathroom
+nmdc:RoomConnectedEnum#closet	closet	skos:closeMatch	nmdc:RoomTypeEnum#closet	closet	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	closet
+nmdc:RoomConnectedEnum#conference+room	conference room	skos:closeMatch	nmdc:RoomTypeEnum#conference+room	conference room	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	conference room
+nmdc:RoomConnectedEnum#elevator	elevator	skos:closeMatch	nmdc:RoomTypeEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+nmdc:RoomConnectedEnum#examining+room	examining room	skos:closeMatch	nmdc:RoomTypeEnum#examining+room	examining room	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	examining room
+nmdc:RoomConnectedEnum#hallway	hallway	skos:closeMatch	nmdc:RoomTypeEnum#hallway	hallway	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hallway
+nmdc:RoomConnectedEnum#kitchen	kitchen	skos:closeMatch	nmdc:RoomTypeEnum#kitchen	kitchen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	kitchen
+nmdc:RoomConnectedEnum#mail+room	mail room	skos:closeMatch	nmdc:RoomTypeEnum#mail+room	mail room	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mail room
+nmdc:RoomConnectedEnum#stairwell	stairwell	skos:closeMatch	nmdc:RoomTypeEnum#stairwell	stairwell	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stairwell
+nmdc:RoomTypeEnum#lobby	lobby	skos:closeMatch	nmdc:SampFloorEnum#lobby	lobby	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	lobby
+nmdc:SampCaptStatusEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCaptStatusEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCaptStatusEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCaptStatusEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCaptStatusEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCaptStatusEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCaptStatusEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCaptStatusEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCollectPointEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCollectPointEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCollectPointEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCollectPointEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCollectPointEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCollectPointEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCollectPointEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampDisStageEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampDisStageEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampDisStageEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampDisStageEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampDisStageEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampDisStageEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampFloorEnum#basement	basement	skos:closeMatch	nmdc:SubstructureTypeEnum#basement	basement	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	basement
+nmdc:SampMdEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampMdEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampMdEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampMdEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampMdEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampSubtypeEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampSubtypeEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampSubtypeEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampSubtypeEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:ShadingDeviceCondEnum#damaged	damaged	skos:closeMatch	nmdc:WindowCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:ShadingDeviceCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:WindowCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:ShadingDeviceCondEnum#new	new	skos:closeMatch	nmdc:WindowCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:ShadingDeviceCondEnum#rupture	rupture	skos:closeMatch	nmdc:WindowCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:ShadingDeviceCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:WindowCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:SpecificEnum#photos	photos	skos:closeMatch	nmdc:VisMediaEnum#photos	photos	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	photos
+nmdc:SrDepEnvEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SrDepEnvEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SrDepEnvEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SrKerogTypeEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SurfMaterialEnum#metal	metal	skos:closeMatch	nmdc:WallFinishMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:SurfMaterialEnum#metal	metal	skos:closeMatch	nmdc:WindowMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:SurfMaterialEnum#stucco	stucco	skos:closeMatch	nmdc:WallSurfTreatmentEnum#stucco	stucco	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stucco
+nmdc:SurfMaterialEnum#tile	tile	skos:closeMatch	nmdc:WallFinishMatEnum#tile	tile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tile
+nmdc:SurfMaterialEnum#vinyl	vinyl	skos:closeMatch	nmdc:WindowMatEnum#vinyl	vinyl	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	vinyl
+nmdc:SurfMaterialEnum#wood	wood	skos:closeMatch	nmdc:WallFinishMatEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:SurfMaterialEnum#wood	wood	skos:closeMatch	nmdc:WindowMatEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:TrainStopLocEnum#end	end	skos:closeMatch	nmdc:end	end	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	end
+nmdc:WallFinishMatEnum#metal	metal	skos:closeMatch	nmdc:WindowMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:WallFinishMatEnum#wood	wood	skos:closeMatch	nmdc:WindowMatEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:WallLocEnum#east	east	skos:closeMatch	nmdc:WindowLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:WallLocEnum#north	north	skos:closeMatch	nmdc:WindowLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:WallLocEnum#south	south	skos:closeMatch	nmdc:WindowLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:WallLocEnum#west	west	skos:closeMatch	nmdc:WindowLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:WindowHorizPosEnum#middle	middle	skos:closeMatch	nmdc:WindowVertPosEnum#middle	middle	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	middle
+nmdc:alternative_names	alternative_names	skos:closeMatch	nmdc:alternative_titles	alternative_titles	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	dcterms:alternative
+nmdc:alternative_names	alternative_names	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	nmdc:alternative_names
+nmdc:alternative_names	alternative_names	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	nmdc:alternative_names
+nmdc:basic_classes/:Doi	Doi	skos:closeMatch	nmdc:doi_value	doi_value	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	obi:0002110
+nmdc:basic_classes/:subject	subject	skos:closeMatch	nmdc:subject	subject	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	subject
+nmdc:external_database_identifiers	external_database_identifiers	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:closeMatch-INVERSE	nmdc:external_database_identifiers
+nmdc:id	id	skos:closeMatch	oio:id	id	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	id

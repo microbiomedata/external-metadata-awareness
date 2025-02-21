@@ -1,13 +1,766 @@
 # curie_map:
+#   CHEBI: http://purl.obolibrary.org/obo/CHEBI_
 #   biolink: http://w3id.org/sssom/unknown_prefix/biolink/
+#   dcterms: http://w3id.org/sssom/unknown_prefix/dcterms/
+#   linkml: http://w3id.org/sssom/unknown_prefix/linkml/
 #   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
 #   owl: http://www.w3.org/2002/07/owl#
 #   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
 #   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   ror: http://w3id.org/sssom/unknown_prefix/ror/
 #   semapv: https://w3id.org/semapv/vocab/
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/c6259e27-18d1-4b91-8f87-a18446dc6bd1
+# mapping_set_id: https://w3id.org/sssom/mappings/371e39e0-8719-4efb-bb4b-fdd2f5b78371
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
-mixs:address	address	skos:closeMatch	biolink:address	address	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	address
+CHEBI:15377	water	skos:closeMatch	nmdc:DNASampleFormatEnum#Water	Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+CHEBI:15377	water	skos:closeMatch	nmdc:PlantGrowthMedEnum#water	water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+CHEBI:15377	water	skos:closeMatch	nmdc:RNASampleFormatEnum#Water	Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+CHEBI:15377	water	skos:closeMatch	nmdc:SampleTypeEnum#water	water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+biolink:Activity	activity	skos:closeMatch	biolink:GeneOrGeneProductOrChemicalEntityAspectEnum#activity	activity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	activity
+biolink:Activity	activity	skos:closeMatch	nmdc:basic_classes/:Study	Study	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:broadMatch	prov:activity
+biolink:AgentTypeEnum#not_provided	not_provided	skos:closeMatch	biolink:ClinicalApprovalStatusEnum#not_provided	not_provided	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	not_provided
+biolink:AgentTypeEnum#not_provided	not_provided	skos:closeMatch	biolink:KnowledgeLevelEnum#not_provided	not_provided	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	not_provided
+biolink:AgentTypeEnum#not_provided	not_provided	skos:closeMatch	biolink:ResearchPhaseEnum#not_provided	not_provided	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	not_provided
+biolink:AnatomicalEntity	anatomical entity	skos:closeMatch	biolink:GrossAnatomicalStructure	gross anatomical structure	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	https://www.wikidata.org/entity/q4936952
+biolink:ApprovalStatusEnum#post_approval_withdrawal	post_approval_withdrawal	skos:closeMatch	biolink:ClinicalApprovalStatusEnum#post_approval_withdrawal	post_approval_withdrawal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	post_approval_withdrawal
+biolink:ChemicalAffectsGeneAssociation	chemical affects gene association	skos:closeMatch	biolink:GeneAffectsChemicalAssociation	gene affects chemical association	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	affects association chemical gene
+biolink:ChemicalEntityDerivativeEnum#metabolite	metabolite	skos:closeMatch	nmdc:ExtractionTargetEnum#metabolite	metabolite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metabolite
+biolink:ChemicalGeneInteractionAssociation	chemical gene interaction association	skos:closeMatch	biolink:DrugToGeneAssociation	drug to gene association	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:relatedMatch	sio:001257
+biolink:ChemicalRole	chemical role	skos:closeMatch	biolink:chemical_role_mixin	chemical role mixin	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	chebi:51086
+biolink:ClinicalApprovalStatusEnum#not_provided	not_provided	skos:closeMatch	biolink:KnowledgeLevelEnum#not_provided	not_provided	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	not_provided
+biolink:ClinicalApprovalStatusEnum#not_provided	not_provided	skos:closeMatch	biolink:ResearchPhaseEnum#not_provided	not_provided	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	not_provided
+biolink:DiseaseOrPhenotypicFeatureToEntityAssociationMixin	disease or phenotypic feature to entity association mixin	skos:closeMatch	biolink:EntityToDiseaseOrPhenotypicFeatureAssociationMixin	entity to disease or phenotypic feature association mixin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	association disease entity feature mixin or phenotypic to
+biolink:DiseaseToEntityAssociationMixin	disease to entity association mixin	skos:closeMatch	biolink:EntityToDiseaseAssociationMixin	entity to disease association mixin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	association disease entity mixin to
+biolink:DiseaseToPhenotypicFeatureAssociation	disease to phenotypic feature association	skos:closeMatch	biolink:PhenotypicFeatureToDiseaseAssociation	phenotypic feature to disease association	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	association disease feature phenotypic to
+biolink:EntityToFeatureOrDiseaseQualifiersMixin	entity to feature or disease qualifiers mixin	skos:closeMatch	biolink:FeatureOrDiseaseQualifiersToEntityMixin	feature or disease qualifiers to entity mixin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	disease entity feature mixin or qualifiers to
+biolink:EntityToPhenotypicFeatureAssociationMixin	entity to phenotypic feature association mixin	skos:closeMatch	biolink:PhenotypicFeatureToEntityAssociationMixin	phenotypic feature to entity association mixin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	association entity feature mixin phenotypic to
+biolink:Exon	exon	skos:closeMatch	biolink:GeneOrGeneProductOrChemicalPartQualifierEnum#exon	exon	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	exon
+biolink:GeneFamily	gene family	skos:closeMatch	biolink:ProteinFamily	protein family	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	https://www.wikidata.org/entity/q2278983
+biolink:GeneFamily	gene family	skos:closeMatch	biolink:ProteinFamily	protein family	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	ncit:c26004
+biolink:GeneFamily	gene family	skos:closeMatch	biolink:ProteinFamily	protein family	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	https://www.wikidata.org/entity/q417841
+biolink:GeneFamily	gene family	skos:closeMatch	biolink:ProteinFamily	protein family	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ncit:c20130
+biolink:GeneFamily	gene family	skos:closeMatch	biolink:ProteinFamily	protein family	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	sio:001380
+biolink:GeneFamily	gene family	skos:closeMatch	nmdc:OrthologyGroup	OrthologyGroup	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	biolink:genefamily
+biolink:GeneFamily	gene family	skos:closeMatch	nmdc:OrthologyGroup	OrthologyGroup	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	biolink:genefamily
+biolink:GeneFamily	gene family	skos:closeMatch	nmdc:OrthologyGroup	OrthologyGroup	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	biolink:genefamily
+biolink:GeneFamily	gene family	skos:closeMatch	nmdc:OrthologyGroup	OrthologyGroup	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	biolink:genefamily
+biolink:GeneFamily	gene family	skos:closeMatch	nmdc:OrthologyGroup	OrthologyGroup	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	biolink:genefamily
+biolink:GeneFamily	gene family	skos:closeMatch	nmdc:OrthologyGroup	OrthologyGroup	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:orthologygroup
+biolink:GeneFamily	gene family	skos:closeMatch	nmdc:OrthologyGroup	OrthologyGroup	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:orthologygroup
+biolink:GeneFamily	gene family	skos:closeMatch	nmdc:OrthologyGroup	OrthologyGroup	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch	nmdc:orthologygroup
+biolink:GeneFamily	gene family	skos:closeMatch	nmdc:OrthologyGroup	OrthologyGroup	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch-INVERSE	nmdc:orthologygroup
+biolink:GeneOrGeneProductOrChemicalEntityAspectEnum#folding	folding	skos:closeMatch	nmdc:DoorMoveEnum#folding	folding	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	folding
+biolink:GeneToDiseaseAssociation	gene to disease association	skos:closeMatch	biolink:GeneToDiseaseOrPhenotypicFeatureAssociation	gene to disease or phenotypic feature association	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch	skos:narrowMatch	https://datacommons.org/browser/diseasegeneassociation
+biolink:GeneToDiseaseAssociation	gene to disease association	skos:closeMatch	biolink:GeneToDiseaseOrPhenotypicFeatureAssociation	gene to disease or phenotypic feature association	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	sio:000983
+biolink:GeneToDiseaseOrPhenotypicFeatureAssociation	gene to disease or phenotypic feature association	skos:closeMatch	biolink:GeneToPhenotypicFeatureAssociation	gene to phenotypic feature association	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:exactMatch	http://bio2rdf.org/wormbase_vocabularygene-phenotype-association
+biolink:GeneToGoTermAssociation	gene to go term association	skos:closeMatch	nmdc:FunctionalAnnotation	FunctionalAnnotation	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch	biolink:genetogotermassociation
+biolink:GeneToGoTermAssociation	gene to go term association	skos:closeMatch	nmdc:FunctionalAnnotation	FunctionalAnnotation	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch-INVERSE	rdf:ID	nmdc:functionalannotation
+biolink:GeneToGoTermAssociation	gene to go term association	skos:closeMatch	nmdc:FunctionalAnnotation	FunctionalAnnotation	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch-INVERSE	rdf:ID	nmdc:functionalannotation
+biolink:GeneToGoTermAssociation	gene to go term association	skos:closeMatch	nmdc:FunctionalAnnotation	FunctionalAnnotation	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch-INVERSE	skos:exactMatch	nmdc:functionalannotation
+biolink:GeneToGoTermAssociation	gene to go term association	skos:closeMatch	nmdc:FunctionalAnnotation	FunctionalAnnotation	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch-INVERSE	skos:exactMatch-INVERSE	nmdc:functionalannotation
+biolink:GeneticInheritance	genetic inheritance	skos:closeMatch	biolink:MolecularActivity	molecular activity	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch	skos:broadMatch	http://purl.bioontology.org/ontology/sty/t045
+biolink:GeneticInheritance	genetic inheritance	skos:closeMatch	biolink:PhysiologicalProcess	physiological process	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch	skos:narrowMatch	http://purl.bioontology.org/ontology/sty/t045
+biolink:IndividualOrganism	individual organism	skos:closeMatch	biolink:OrganismTaxon	organism taxon	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	http://purl.bioontology.org/ontology/sty/t001
+biolink:JournalArticle	journal article	skos:closeMatch	biolink:Publication	publication	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	iao:0000013
+biolink:KnowledgeLevelEnum#not_provided	not_provided	skos:closeMatch	biolink:ResearchPhaseEnum#not_provided	not_provided	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	not_provided
+biolink:MaterialSample	material sample	skos:closeMatch	nmdc:Biosample	Biosample	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	obi:0000747
+biolink:MolecularActivity	molecular activity	skos:closeMatch	biolink:PhysiologicalProcess	physiological process	semapv:LexicalMatching	oaklib	0.5	skos:broadMatch	skos:narrowMatch	http://purl.bioontology.org/ontology/sty/t045
+biolink:OntologyClass	ontology class	skos:closeMatch	nmdc:basic_classes/:OntologyClass	OntologyClass	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	biolink:ontologyclass
+biolink:OntologyClass	ontology class	skos:closeMatch	nmdc:basic_classes/:OntologyClass	OntologyClass	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	biolink:ontologyclass
+biolink:OntologyClass	ontology class	skos:closeMatch	nmdc:basic_classes/:OntologyClass	OntologyClass	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	http://schema.org/class
+biolink:OntologyClass	ontology class	skos:closeMatch	nmdc:basic_classes/:OntologyClass	OntologyClass	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	owl:class
+biolink:OntologyClass	ontology class	skos:closeMatch	nmdc:basic_classes/:OntologyClass	OntologyClass	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:basic_classes/:ontologyclass
+biolink:OntologyClass	ontology class	skos:closeMatch	nmdc:basic_classes/:OntologyClass	OntologyClass	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:basic_classes/:ontologyclass
+biolink:OntologyClass	ontology class	skos:closeMatch	nmdc:basic_classes/:OntologyClass	OntologyClass	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:basic_classes/:ontologyclass
+biolink:OntologyClass	ontology class	skos:closeMatch	nmdc:basic_classes/:OntologyClass	OntologyClass	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:basic_classes/:ontologyclass
+biolink:PathologicalEntityMixin	pathological entity mixin	skos:closeMatch	biolink:PhenotypicFeature	phenotypic feature	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	hp:0000118
+biolink:Pathway	pathway	skos:closeMatch	nmdc:Pathway	Pathway	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	biolink:pathway
+biolink:Pathway	pathway	skos:closeMatch	nmdc:Pathway	Pathway	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	biolink:pathway
+biolink:Pathway	pathway	skos:closeMatch	nmdc:Pathway	Pathway	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	biolink:pathway
+biolink:Pathway	pathway	skos:closeMatch	nmdc:Pathway	Pathway	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	biolink:pathway
+biolink:Pathway	pathway	skos:closeMatch	nmdc:Pathway	Pathway	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pathway
+biolink:Pathway	pathway	skos:closeMatch	nmdc:Pathway	Pathway	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:pathway
+biolink:Pathway	pathway	skos:closeMatch	nmdc:Pathway	Pathway	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:pathway
+biolink:Pathway	pathway	skos:closeMatch	nmdc:Pathway	Pathway	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch	nmdc:pathway
+biolink:Pathway	pathway	skos:closeMatch	nmdc:Pathway	Pathway	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	skos:exactMatch-INVERSE	nmdc:pathway
+biolink:Protein	protein	skos:closeMatch	nmdc:ExtractionTargetEnum#protein	protein	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	protein
+biolink:ReactionSideEnum#left	left	skos:closeMatch	nmdc:WindowHorizPosEnum#left	left	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	left
+biolink:ReactionSideEnum#right	right	skos:closeMatch	nmdc:WindowHorizPosEnum#right	right	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	right
+biolink:Study	study	skos:closeMatch	nmdc:basic_classes/:Study	Study	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	study
+biolink:acts_upstream_of	acts upstream of	skos:closeMatch	biolink:affects	affects	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	ro:0002263
+biolink:acts_upstream_of	acts upstream of	skos:closeMatch	biolink:precedes	precedes	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:closeMatch	ro:0002263
+biolink:acts_upstream_of_or_within	acts upstream of or within	skos:closeMatch	biolink:affects	affects	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	ro:0002264
+biolink:acts_upstream_of_or_within	acts upstream of or within	skos:closeMatch	biolink:precedes	precedes	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:closeMatch	ro:0002264
+biolink:address	address	skos:closeMatch	mixs:address	address	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	address
+biolink:affects	affects	skos:closeMatch	biolink:located_in	located in	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ncit:r100
+biolink:affects	affects	skos:closeMatch	biolink:participates_in	participates in	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:narrowMatch	http://identifiers.org/drugbank/pathway
+biolink:affects	affects	skos:closeMatch	biolink:precedes	precedes	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:closeMatch	ro:0002263
+biolink:affects	affects	skos:closeMatch	biolink:precedes	precedes	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:closeMatch	ro:0002264
+biolink:associated_with	associated with	skos:closeMatch	biolink:has_phenotype	has phenotype	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ro:0004029
+biolink:associated_with_decreased_likelihood_of	associated with decreased likelihood of	skos:closeMatch	biolink:decreased_likelihood_associated_with	decreased likelihood associated with	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	associated decreased likelihood with
+biolink:associated_with_increased_likelihood_of	associated with increased likelihood of	skos:closeMatch	biolink:increased_likelihood_associated_with	increased likelihood associated with	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	associated increased likelihood with
+biolink:associated_with_likelihood_of	associated with likelihood of	skos:closeMatch	biolink:likelihood_associated_with	likelihood associated with	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	associated likelihood with
+biolink:broad_match	broad match	skos:closeMatch	skos:broadMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:broad_match
+biolink:broad_match	broad match	skos:closeMatch	skos:broadMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:broad_match
+biolink:broad_match	broad match	skos:closeMatch	skos:broadMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:broad_match
+biolink:broad_match	broad match	skos:closeMatch	skos:broadMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:broad_match
+biolink:catalyzes	catalyzes	skos:closeMatch	biolink:enables	enables	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	ro:0002327
+biolink:caused_by	caused by	skos:closeMatch	biolink:has_participant	has participant	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ro:0004020
+biolink:chemically_similar_to	chemically similar to	skos:closeMatch	biolink:close_match	close match	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	chebi:is_enantiomer_of
+biolink:chemically_similar_to	chemically similar to	skos:closeMatch	biolink:close_match	close match	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	chebi:is_tautomer_of
+biolink:chemically_similar_to	chemically similar to	skos:closeMatch	biolink:derives_from	derives from	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	chebi:has_functional_parent
+biolink:chemically_similar_to	chemically similar to	skos:closeMatch	biolink:related_to	related to	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	chebi:is_conjugate_acid_of
+biolink:chemically_similar_to	chemically similar to	skos:closeMatch	biolink:related_to	related to	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	chebi:is_conjugate_base_of
+biolink:chemically_similar_to	chemically similar to	skos:closeMatch	biolink:subclass_of	subclass of	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	chebi:has_parent_hydride
+biolink:close_match	close match	skos:closeMatch	nmdc:external_database_identifiers	external_database_identifiers	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:closeMatch	skos:closematch
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:composed_primarily_of	composed primarily of	skos:closeMatch	biolink:has_part	has part	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	ro:0002473
+biolink:composed_primarily_of	composed primarily of	skos:closeMatch	biolink:primarily_composed_of	primarily composed of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	composed primarily
+biolink:condition_associated_with_gene	condition associated with gene	skos:closeMatch	biolink:gene_associated_with_condition	gene associated with condition	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	associated condition gene with
+biolink:consumes	consumes	skos:closeMatch	biolink:has_input	has input	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ro:0004009
+biolink:contributor	contributor	skos:closeMatch	dcterms:contributor		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:contributor
+biolink:description	description	skos:closeMatch	nmdc:description	description	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	description
+biolink:disease_has_location	disease has location	skos:closeMatch	biolink:related_to	related to	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	ro:0004026
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_approved_unknown_phase
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_suspended_phase_0
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_suspended_phase_1
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_suspended_phase_1_or_phase_2
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_suspended_phase_2
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_suspended_phase_2_or_phase_3
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_suspended_phase_3
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_terminated_phase_0
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_terminated_phase_1
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_terminated_phase_1_or_phase_2
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_terminated_phase_2
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_terminated_phase_2_or_phase_3
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_terminated_phase_3
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_withdrawn_phase_0
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_withdrawn_phase_1
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_withdrawn_phase_1_or_phase_2
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_withdrawn_phase_2
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_withdrawn_phase_2_or_phase_3
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_withdrawn_phase_3
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ncit:regimen_has_accepted_use_for_disease
+biolink:end_coordinate	end coordinate	skos:closeMatch	biolink:end_interbase_coordinate	end interbase coordinate	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch	skos:closeMatch	faldo:end
+biolink:end_interbase_coordinate	end interbase coordinate	skos:closeMatch	nmdc:end	end	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:closeMatch	biolink:end_interbase_coordinate
+biolink:end_interbase_coordinate	end interbase coordinate	skos:closeMatch	nmdc:end	end	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch-INVERSE	rdf:ID	nmdc:end
+biolink:exact_match	exact match	skos:closeMatch	biolink:same_as	same as	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	skos:exactmatch
+biolink:exact_match	exact match	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:exact_match
+biolink:exact_match	exact match	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:exact_match
+biolink:exact_match	exact match	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:exact_match
+biolink:exact_match	exact match	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:exact_match
+biolink:exact_match	exact match	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:exact_match
+biolink:exact_match	exact match	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:exact_match
+biolink:genome_build	genome build	skos:closeMatch	biolink:strand	strand	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	https://github.com/the-sequence-ontology/specifications/blob/master/gff3.md#strand
+biolink:has_attribute	has attribute	skos:closeMatch	biolink:related_to	related to	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ro:0000053
+biolink:has_dataset	has dataset	skos:closeMatch	biolink:source_web_page	source web page	semapv:LexicalMatching	oaklib	0.5	skos:broadMatch	skos:broadMatch	dcterms:source
+biolink:has_member	has member	skos:closeMatch	biolink:has_part	has part	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	ro:0002351
+biolink:has_member	has member	skos:closeMatch	biolink:member_of	member of	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:closeMatch	skos:member
+biolink:has_metabolite	has metabolite	skos:closeMatch	biolink:is_metabolite	is metabolite	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	chebi:25212
+biolink:has_metabolite	has metabolite	skos:closeMatch	biolink:is_metabolite_of	is metabolite of	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	chebi:25212
+biolink:has_numeric_value	has numeric value	skos:closeMatch	biolink:has_quantitative_value	has quantitative value	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	http://qudt.org/1.1/schema/qudt#quantityvalue
+biolink:has_part	has part	skos:closeMatch	biolink:has_plasma_membrane_part	has plasma membrane part	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:exactMatch	ro:0002104
+biolink:id	id	skos:closeMatch	nmdc:id	id	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	id
+biolink:is_metabolite	is metabolite	skos:closeMatch	biolink:is_metabolite_of	is metabolite of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	is metabolite
+biolink:is_metabolite	is metabolite	skos:closeMatch	biolink:is_metabolite_of	is metabolite of	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	chebi:25212
+biolink:latitude	latitude	skos:closeMatch	nmdc:latitude	latitude	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	latitude
+biolink:license	license	skos:closeMatch	dcterms:license		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:license
+biolink:license	license	skos:closeMatch	dcterms:license		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:license
+biolink:license	license	skos:closeMatch	dcterms:license		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:license
+biolink:license	license	skos:closeMatch	dcterms:license		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:license
+biolink:location_of	location of	skos:closeMatch	nmdc:location	location	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	location
+biolink:longitude	longitude	skos:closeMatch	nmdc:longitude	longitude	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	longitude
+biolink:member_of	member of	skos:closeMatch	biolink:part_of	part of	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	ro:0002350
+biolink:model_of	model of	skos:closeMatch	nmdc:basic_classes/:model	model	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	model
+biolink:name	name	skos:closeMatch	dcterms:title		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:name
+biolink:name	name	skos:closeMatch	dcterms:title		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:name
+biolink:name	name	skos:closeMatch	dcterms:title		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:name
+biolink:name	name	skos:closeMatch	dcterms:title		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:name
+biolink:name	name	skos:closeMatch	nmdc:name	name	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	name
+biolink:name	name	skos:closeMatch	nmdc:title	title	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:exactMatch	dcterms:title
+biolink:narrow_match	narrow match	skos:closeMatch	skos:narrowMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:narrow_match
+biolink:narrow_match	narrow match	skos:closeMatch	skos:narrowMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:narrow_match
+biolink:narrow_match	narrow match	skos:closeMatch	skos:narrowMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:narrow_match
+biolink:narrow_match	narrow match	skos:closeMatch	skos:narrowMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:narrow_match
+biolink:object	object	skos:closeMatch	nmdc:basic_classes/:object	object	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	object
+biolink:part_of	part of	skos:closeMatch	biolink:related_to	related to	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	fma:related_developmental_entity_of
+biolink:phase	phase	skos:closeMatch	nmdc:phase	phase	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	biolink:phase
+biolink:phase	phase	skos:closeMatch	nmdc:phase	phase	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	phase
+biolink:phase	phase	skos:closeMatch	nmdc:phase	phase	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:phase
+biolink:predicate	predicate	skos:closeMatch	nmdc:basic_classes/:predicate	predicate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	predicate
+biolink:regulates	regulates	skos:closeMatch	biolink:related_to	related to	semapv:LexicalMatching	oaklib	0.5	skos:broadMatch	skos:narrowMatch	ro:0002332
+biolink:related_to	related to	skos:closeMatch	biolink:synonym	synonym	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	iao:0000136
+biolink:related_to	related to	skos:closeMatch	biolink:temporally_related_to	temporally related to	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ro:0002092
+biolink:related_to	related to	skos:closeMatch	biolink:temporally_related_to	temporally related to	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ro:0002093
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:start_coordinate	start coordinate	skos:closeMatch	biolink:start_interbase_coordinate	start interbase coordinate	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch	skos:closeMatch	faldo:begin
+biolink:start_interbase_coordinate	start interbase coordinate	skos:closeMatch	nmdc:start	start	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:closeMatch	biolink:start_interbase_coordinate
+biolink:start_interbase_coordinate	start interbase coordinate	skos:closeMatch	nmdc:start	start	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch-INVERSE	rdf:ID	nmdc:start
+biolink:strand	strand	skos:closeMatch	nmdc:strand	strand	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	biolink:strand
+biolink:strand	strand	skos:closeMatch	nmdc:strand	strand	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	strand
+biolink:strand	strand	skos:closeMatch	nmdc:strand	strand	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:strand
+biolink:subject	subject	skos:closeMatch	nmdc:basic_classes/:subject	subject	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	subject
+biolink:subject	subject	skos:closeMatch	nmdc:subject	subject	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	subject
+biolink:synonym	synonym	skos:closeMatch	nmdc:alternative_names	alternative_names	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:exactMatch	skos:altlabel
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:treated_by	treated by	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:broadMatch	mondo:disease_responds_to
+biolink:treated_by	treated by	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:relatedMatch	mondo:disease_responds_to
+biolink:treats	treats	skos:closeMatch	biolink:treats_or_applied_or_studied_to_treat	treats or applied or studied to treat	semapv:LexicalMatching	oaklib	0.5	skos:broadMatch	skos:exactMatch	https://skr3.nlm.nih.gov/semmeddbtreats
+biolink:type	type	skos:closeMatch	nmdc:type	type	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	type
+biolink:url	url	skos:closeMatch	nmdc:url	url	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	url
+biolink:version	version	skos:closeMatch	biolink:version_of	version of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	version
+biolink:version	version	skos:closeMatch	nmdc:version	version	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	version
+biolink:version_of	version of	skos:closeMatch	nmdc:version	version	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	version
+biolink:volume	volume	skos:closeMatch	nmdc:volume	volume	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	volume
+dcterms:title		skos:closeMatch	nmdc:title	title	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	nmdc:title
+linkml:topValue	value	skos:closeMatch	nmdc:value	value	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	value
+mixs:elevator	elevator	skos:closeMatch	nmdc:IndoorSpaceEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:MechStrucEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomConnectedEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomTypeEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:escalator	escalator	skos:closeMatch	nmdc:MechStrucEnum#escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+nmdc:BuildOccupTypeEnum#office	office	skos:closeMatch	nmdc:IndoorSpaceEnum#office	office	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	office
+nmdc:BuildOccupTypeEnum#office	office	skos:closeMatch	nmdc:RoomConnectedEnum#office	office	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	office
+nmdc:CeilCondEnum#damaged	damaged	skos:closeMatch	nmdc:DoorCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:CeilCondEnum#damaged	damaged	skos:closeMatch	nmdc:FloorCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:CeilCondEnum#damaged	damaged	skos:closeMatch	nmdc:IntWallCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:CeilCondEnum#damaged	damaged	skos:closeMatch	nmdc:RoomCondtEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:CeilCondEnum#damaged	damaged	skos:closeMatch	nmdc:ShadingDeviceCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:CeilCondEnum#damaged	damaged	skos:closeMatch	nmdc:WindowCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:CeilCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:DoorCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:CeilCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:FloorCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:CeilCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:IntWallCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:CeilCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:RoomCondtEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:CeilCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:ShadingDeviceCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:CeilCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:WindowCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:CeilCondEnum#new	new	skos:closeMatch	nmdc:DoorCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:CeilCondEnum#new	new	skos:closeMatch	nmdc:FloorCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:CeilCondEnum#new	new	skos:closeMatch	nmdc:IntWallCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:CeilCondEnum#new	new	skos:closeMatch	nmdc:RoomCondtEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:CeilCondEnum#new	new	skos:closeMatch	nmdc:ShadingDeviceCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:CeilCondEnum#new	new	skos:closeMatch	nmdc:WindowCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:CeilCondEnum#rupture	rupture	skos:closeMatch	nmdc:DoorCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:CeilCondEnum#rupture	rupture	skos:closeMatch	nmdc:FloorCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:CeilCondEnum#rupture	rupture	skos:closeMatch	nmdc:IntWallCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:CeilCondEnum#rupture	rupture	skos:closeMatch	nmdc:RoomCondtEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:CeilCondEnum#rupture	rupture	skos:closeMatch	nmdc:ShadingDeviceCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:CeilCondEnum#rupture	rupture	skos:closeMatch	nmdc:WindowCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:CeilCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:DoorCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:CeilCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:FloorCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:CeilCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:IntWallCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:CeilCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:RoomCondtEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:CeilCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:ShadingDeviceCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:CeilCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:WindowCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:CeilFinishMatEnum#fiberglass	fiberglass	skos:closeMatch	nmdc:DoorMatEnum#fiberglass	fiberglass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fiberglass
+nmdc:CeilFinishMatEnum#fiberglass	fiberglass	skos:closeMatch	nmdc:WindowMatEnum#fiberglass	fiberglass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fiberglass
+nmdc:CeilFinishMatEnum#metal	metal	skos:closeMatch	nmdc:DoorMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:CeilFinishMatEnum#metal	metal	skos:closeMatch	nmdc:DoorTypeEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:CeilFinishMatEnum#metal	metal	skos:closeMatch	nmdc:SurfMaterialEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:CeilFinishMatEnum#metal	metal	skos:closeMatch	nmdc:WallFinishMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:CeilFinishMatEnum#metal	metal	skos:closeMatch	nmdc:WindowMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:CeilFinishMatEnum#stucco	stucco	skos:closeMatch	nmdc:SurfMaterialEnum#stucco	stucco	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stucco
+nmdc:CeilFinishMatEnum#stucco	stucco	skos:closeMatch	nmdc:WallSurfTreatmentEnum#stucco	stucco	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stucco
+nmdc:CeilFinishMatEnum#wood	wood	skos:closeMatch	nmdc:DoorMatEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:CeilFinishMatEnum#wood	wood	skos:closeMatch	nmdc:SurfMaterialEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:CeilFinishMatEnum#wood	wood	skos:closeMatch	nmdc:WallFinishMatEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:CeilFinishMatEnum#wood	wood	skos:closeMatch	nmdc:WindowMatEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:CeilTextureEnum#Santa-Fe+texture	Santa-Fe texture	skos:closeMatch	nmdc:WallTextureEnum#Santa-Fe+texture	Santa-Fe texture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	santa-fe texture
+nmdc:CeilTextureEnum#crows+feet	crows feet	skos:closeMatch	nmdc:WallTextureEnum#crows+feet	crows feet	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	crows feet
+nmdc:CeilTextureEnum#crows-foot+stomp	crows-foot stomp	skos:closeMatch	nmdc:WallTextureEnum#crows-foot+stomp	crows-foot stomp	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	crows-foot stomp
+nmdc:CeilTextureEnum#double+skip	double skip	skos:closeMatch	nmdc:WallTextureEnum#double+skip	double skip	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	double skip
+nmdc:CeilTextureEnum#hawk+and+trowel	hawk and trowel	skos:closeMatch	nmdc:WallTextureEnum#hawk+and+trowel	hawk and trowel	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	and hawk trowel
+nmdc:CeilTextureEnum#knockdown	knockdown	skos:closeMatch	nmdc:WallTextureEnum#knockdown	knockdown	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	knockdown
+nmdc:CeilTextureEnum#orange+peel	orange peel	skos:closeMatch	nmdc:WallTextureEnum#orange+peel	orange peel	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	orange peel
+nmdc:CeilTextureEnum#popcorn	popcorn	skos:closeMatch	nmdc:WallTextureEnum#popcorn	popcorn	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	popcorn
+nmdc:CeilTextureEnum#rosebud+stomp	rosebud stomp	skos:closeMatch	nmdc:WallTextureEnum#rosebud+stomp	rosebud stomp	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rosebud stomp
+nmdc:CeilTextureEnum#skip+trowel	skip trowel	skos:closeMatch	nmdc:WallTextureEnum#skip+trowel	skip trowel	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	skip trowel
+nmdc:CeilTextureEnum#smooth	smooth	skos:closeMatch	nmdc:WallTextureEnum#smooth	smooth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	smooth
+nmdc:CeilTextureEnum#stomp+knockdown	stomp knockdown	skos:closeMatch	nmdc:WallTextureEnum#stomp+knockdown	stomp knockdown	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	knockdown stomp
+nmdc:CeilTextureEnum#swirl	swirl	skos:closeMatch	nmdc:WallTextureEnum#swirl	swirl	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	swirl
+nmdc:ChromatographicCategoryEnum#gas_chromatography	gas_chromatography	skos:closeMatch	nmdc:EluentIntroductionCategoryEnum#gas_chromatography	gas_chromatography	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gas_chromatography
+nmdc:ChromatographicCategoryEnum#liquid_chromatography	liquid_chromatography	skos:closeMatch	nmdc:EluentIntroductionCategoryEnum#liquid_chromatography	liquid_chromatography	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	liquid_chromatography
+nmdc:ChromatographicCategoryEnum#solid_phase_extraction	solid_phase_extraction	skos:closeMatch	nmdc:ProtocolCategoryEnum#solid_phase_extraction	solid_phase_extraction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	solid_phase_extraction
+nmdc:CollectingBiosamplesFromSite	CollectingBiosamplesFromSite	skos:closeMatch	nmdc:SubSamplingProcess	SubSamplingProcess	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch	skos:relatedMatch	obi:0000744
+nmdc:CurLandUseEnum#sand	sand	skos:closeMatch	nmdc:PlantGrowthMedEnum#sand	sand	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sand
+nmdc:DNASampleFormatEnum#10+mM+Tris-HCl	10 mM Tris-HCl	skos:closeMatch	nmdc:RNASampleFormatEnum#10+mM+Tris-HCl	10 mM Tris-HCl	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	10 mm tris-hcl
+nmdc:DNASampleFormatEnum#DNAStable	DNAStable	skos:closeMatch	nmdc:RNASampleFormatEnum#DNAStable	DNAStable	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dnastable
+nmdc:DNASampleFormatEnum#Ethanol	Ethanol	skos:closeMatch	nmdc:RNASampleFormatEnum#Ethanol	Ethanol	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ethanol
+nmdc:DNASampleFormatEnum#Gentegra-DNA	Gentegra-DNA	skos:closeMatch	nmdc:RNASampleFormatEnum#Gentegra-DNA	Gentegra-DNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gentegra-dna
+nmdc:DNASampleFormatEnum#Gentegra-RNA	Gentegra-RNA	skos:closeMatch	nmdc:RNASampleFormatEnum#Gentegra-RNA	Gentegra-RNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gentegra-rna
+nmdc:DNASampleFormatEnum#Low+EDTA+TE	Low EDTA TE	skos:closeMatch	nmdc:RNASampleFormatEnum#Low+EDTA+TE	Low EDTA TE	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	edta low te
+nmdc:DNASampleFormatEnum#MDA+reaction+buffer	MDA reaction buffer	skos:closeMatch	nmdc:RNASampleFormatEnum#MDA+reaction+buffer	MDA reaction buffer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	buffer mda reaction
+nmdc:DNASampleFormatEnum#PBS	PBS	skos:closeMatch	nmdc:RNASampleFormatEnum#PBS	PBS	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pbs
+nmdc:DNASampleFormatEnum#Pellet	Pellet	skos:closeMatch	nmdc:RNASampleFormatEnum#Pellet	Pellet	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pellet
+nmdc:DNASampleFormatEnum#Pellet	Pellet	skos:closeMatch	nmdc:SamplePortionEnum#pellet	pellet	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pellet
+nmdc:DNASampleFormatEnum#RNAStable	RNAStable	skos:closeMatch	nmdc:RNASampleFormatEnum#RNAStable	RNAStable	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rnastable
+nmdc:DNASampleFormatEnum#TE	TE	skos:closeMatch	nmdc:RNASampleFormatEnum#TE	TE	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	te
+nmdc:DNASampleFormatEnum#Water	Water	skos:closeMatch	nmdc:PlantGrowthMedEnum#water	water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:DNASampleFormatEnum#Water	Water	skos:closeMatch	nmdc:RNASampleFormatEnum#Water	Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:DNASampleFormatEnum#Water	Water	skos:closeMatch	nmdc:SampleTypeEnum#water	water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:FailureWhatEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:FreqCleanEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:HcProducedEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:HcrEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:HcrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:LithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:OrganismCountEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:OxyStatSampEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DeposEnvEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:DoorCompTypeEnum#revolving	revolving	skos:closeMatch	nmdc:DoorMoveEnum#revolving	revolving	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	revolving
+nmdc:DoorCompTypeEnum#sliding	sliding	skos:closeMatch	nmdc:DoorMoveEnum#sliding	sliding	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sliding
+nmdc:DoorCondEnum#damaged	damaged	skos:closeMatch	nmdc:FloorCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:DoorCondEnum#damaged	damaged	skos:closeMatch	nmdc:IntWallCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:DoorCondEnum#damaged	damaged	skos:closeMatch	nmdc:RoomCondtEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:DoorCondEnum#damaged	damaged	skos:closeMatch	nmdc:ShadingDeviceCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:DoorCondEnum#damaged	damaged	skos:closeMatch	nmdc:WindowCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:DoorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:FloorCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:DoorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:IntWallCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:DoorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:RoomCondtEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:DoorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:ShadingDeviceCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:DoorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:WindowCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:DoorCondEnum#new	new	skos:closeMatch	nmdc:FloorCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:DoorCondEnum#new	new	skos:closeMatch	nmdc:IntWallCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:DoorCondEnum#new	new	skos:closeMatch	nmdc:RoomCondtEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:DoorCondEnum#new	new	skos:closeMatch	nmdc:ShadingDeviceCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:DoorCondEnum#new	new	skos:closeMatch	nmdc:WindowCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:DoorCondEnum#rupture	rupture	skos:closeMatch	nmdc:FloorCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:DoorCondEnum#rupture	rupture	skos:closeMatch	nmdc:IntWallCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:DoorCondEnum#rupture	rupture	skos:closeMatch	nmdc:RoomCondtEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:DoorCondEnum#rupture	rupture	skos:closeMatch	nmdc:ShadingDeviceCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:DoorCondEnum#rupture	rupture	skos:closeMatch	nmdc:WindowCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:DoorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:FloorCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:DoorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:IntWallCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:DoorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:RoomCondtEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:DoorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:ShadingDeviceCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:DoorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:WindowCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:DoorLocEnum#east	east	skos:closeMatch	nmdc:ExtWallOrientEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:DoorLocEnum#east	east	skos:closeMatch	nmdc:ExtWindowOrientEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:DoorLocEnum#east	east	skos:closeMatch	nmdc:HeatDelivLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:DoorLocEnum#east	east	skos:closeMatch	nmdc:WallLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:DoorLocEnum#east	east	skos:closeMatch	nmdc:WindowLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:DoorLocEnum#north	north	skos:closeMatch	nmdc:ExtWallOrientEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:DoorLocEnum#north	north	skos:closeMatch	nmdc:ExtWindowOrientEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:DoorLocEnum#north	north	skos:closeMatch	nmdc:HeatDelivLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:DoorLocEnum#north	north	skos:closeMatch	nmdc:WallLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:DoorLocEnum#north	north	skos:closeMatch	nmdc:WindowLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:DoorLocEnum#south	south	skos:closeMatch	nmdc:ExtWallOrientEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:DoorLocEnum#south	south	skos:closeMatch	nmdc:ExtWindowOrientEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:DoorLocEnum#south	south	skos:closeMatch	nmdc:HeatDelivLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:DoorLocEnum#south	south	skos:closeMatch	nmdc:WallLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:DoorLocEnum#south	south	skos:closeMatch	nmdc:WindowLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:DoorLocEnum#west	west	skos:closeMatch	nmdc:ExtWallOrientEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:DoorLocEnum#west	west	skos:closeMatch	nmdc:ExtWindowOrientEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:DoorLocEnum#west	west	skos:closeMatch	nmdc:HeatDelivLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:DoorLocEnum#west	west	skos:closeMatch	nmdc:WallLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:DoorLocEnum#west	west	skos:closeMatch	nmdc:WindowLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:DoorMatEnum#fiberglass	fiberglass	skos:closeMatch	nmdc:WindowMatEnum#fiberglass	fiberglass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fiberglass
+nmdc:DoorMatEnum#metal	metal	skos:closeMatch	nmdc:DoorTypeEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:DoorMatEnum#metal	metal	skos:closeMatch	nmdc:SurfMaterialEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:DoorMatEnum#metal	metal	skos:closeMatch	nmdc:WallFinishMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:DoorMatEnum#metal	metal	skos:closeMatch	nmdc:WindowMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:DoorMatEnum#vinyl	vinyl	skos:closeMatch	nmdc:SurfMaterialEnum#vinyl	vinyl	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	vinyl
+nmdc:DoorMatEnum#vinyl	vinyl	skos:closeMatch	nmdc:WindowMatEnum#vinyl	vinyl	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	vinyl
+nmdc:DoorMatEnum#wood	wood	skos:closeMatch	nmdc:SurfMaterialEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:DoorMatEnum#wood	wood	skos:closeMatch	nmdc:WallFinishMatEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:DoorMatEnum#wood	wood	skos:closeMatch	nmdc:WindowMatEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:DoorMoveEnum#collapsible	collapsible	skos:closeMatch	nmdc:DoorTypeMetalEnum#collapsible	collapsible	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	collapsible
+nmdc:DoorTypeEnum#metal	metal	skos:closeMatch	nmdc:SurfMaterialEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:DoorTypeEnum#metal	metal	skos:closeMatch	nmdc:WallFinishMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:DoorTypeEnum#metal	metal	skos:closeMatch	nmdc:WindowMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:DrainageClassEnum#well	well	skos:closeMatch	nmdc:SampCollectPointEnum#well	well	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	well
+nmdc:DrawingsEnum#as+built	as built	skos:closeMatch	nmdc:SpecificEnum#as+built	as built	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	as built
+nmdc:DrawingsEnum#bid	bid	skos:closeMatch	nmdc:SpecificEnum#bid	bid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bid
+nmdc:DrawingsEnum#construction	construction	skos:closeMatch	nmdc:SpecificEnum#construction	construction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	construction
+nmdc:DrawingsEnum#design	design	skos:closeMatch	nmdc:SpecificEnum#design	design	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	design
+nmdc:DrawingsEnum#operation	operation	skos:closeMatch	nmdc:SpecificEnum#operation	operation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	operation
+nmdc:ExecutionResourceEnum#EMSL	EMSL	skos:closeMatch	ror:04rc0xn13	EMSL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	emsl
+nmdc:ExecutionResourceEnum#JGI	JGI	skos:closeMatch	ror:04xm1d337	JGI	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	jgi
+nmdc:ExtWallOrientEnum#east	east	skos:closeMatch	nmdc:ExtWindowOrientEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:ExtWallOrientEnum#east	east	skos:closeMatch	nmdc:HeatDelivLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:ExtWallOrientEnum#east	east	skos:closeMatch	nmdc:WallLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:ExtWallOrientEnum#east	east	skos:closeMatch	nmdc:WindowLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:ExtWallOrientEnum#north	north	skos:closeMatch	nmdc:ExtWindowOrientEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:ExtWallOrientEnum#north	north	skos:closeMatch	nmdc:HeatDelivLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:ExtWallOrientEnum#north	north	skos:closeMatch	nmdc:WallLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:ExtWallOrientEnum#north	north	skos:closeMatch	nmdc:WindowLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:ExtWallOrientEnum#northeast	northeast	skos:closeMatch	nmdc:ExtWindowOrientEnum#northeast	northeast	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	northeast
+nmdc:ExtWallOrientEnum#northwest	northwest	skos:closeMatch	nmdc:ExtWindowOrientEnum#northwest	northwest	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	northwest
+nmdc:ExtWallOrientEnum#south	south	skos:closeMatch	nmdc:ExtWindowOrientEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:ExtWallOrientEnum#south	south	skos:closeMatch	nmdc:HeatDelivLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:ExtWallOrientEnum#south	south	skos:closeMatch	nmdc:WallLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:ExtWallOrientEnum#south	south	skos:closeMatch	nmdc:WindowLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:ExtWallOrientEnum#southeast	southeast	skos:closeMatch	nmdc:ExtWindowOrientEnum#southeast	southeast	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	southeast
+nmdc:ExtWallOrientEnum#southwest	southwest	skos:closeMatch	nmdc:ExtWindowOrientEnum#southwest	southwest	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	southwest
+nmdc:ExtWallOrientEnum#west	west	skos:closeMatch	nmdc:ExtWindowOrientEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:ExtWallOrientEnum#west	west	skos:closeMatch	nmdc:HeatDelivLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:ExtWallOrientEnum#west	west	skos:closeMatch	nmdc:WallLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:ExtWallOrientEnum#west	west	skos:closeMatch	nmdc:WindowLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:ExtWindowOrientEnum#east	east	skos:closeMatch	nmdc:HeatDelivLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:ExtWindowOrientEnum#east	east	skos:closeMatch	nmdc:WallLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:ExtWindowOrientEnum#east	east	skos:closeMatch	nmdc:WindowLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:ExtWindowOrientEnum#north	north	skos:closeMatch	nmdc:HeatDelivLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:ExtWindowOrientEnum#north	north	skos:closeMatch	nmdc:WallLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:ExtWindowOrientEnum#north	north	skos:closeMatch	nmdc:WindowLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:ExtWindowOrientEnum#south	south	skos:closeMatch	nmdc:HeatDelivLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:ExtWindowOrientEnum#south	south	skos:closeMatch	nmdc:WallLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:ExtWindowOrientEnum#south	south	skos:closeMatch	nmdc:WindowLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:ExtWindowOrientEnum#west	west	skos:closeMatch	nmdc:HeatDelivLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:ExtWindowOrientEnum#west	west	skos:closeMatch	nmdc:WallLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:ExtWindowOrientEnum#west	west	skos:closeMatch	nmdc:WindowLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:Extraction	Extraction	skos:closeMatch	nmdc:FailureWhereEnum#Extraction	Extraction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	extraction
+nmdc:ExtractionTargetEnum#DNA	DNA	skos:closeMatch	nmdc:LibraryTypeEnum#DNA	DNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dna
+nmdc:ExtractionTargetEnum#RNA	RNA	skos:closeMatch	nmdc:LibraryTypeEnum#RNA	RNA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rna
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:FreqCleanEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:HcProducedEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:HcrEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:HcrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:LithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:OrganismCountEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:OxyStatSampEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhatEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FailureWhereEnum#LibraryPreparation	LibraryPreparation	skos:closeMatch	nmdc:LibraryPreparation	LibraryPreparation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	librarypreparation
+nmdc:FailureWhereEnum#MagsAnalysis	MagsAnalysis	skos:closeMatch	nmdc:MagsAnalysis	MagsAnalysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	magsanalysis
+nmdc:FailureWhereEnum#MassSpectrometry	MassSpectrometry	skos:closeMatch	nmdc:MassSpectrometry	MassSpectrometry	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	massspectrometry
+nmdc:FailureWhereEnum#MetabolomicsAnalysis	MetabolomicsAnalysis	skos:closeMatch	nmdc:MetabolomicsAnalysis	MetabolomicsAnalysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metabolomicsanalysis
+nmdc:FailureWhereEnum#MetagenomeAnnotation	MetagenomeAnnotation	skos:closeMatch	nmdc:MetagenomeAnnotation	MetagenomeAnnotation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metagenomeannotation
+nmdc:FailureWhereEnum#MetagenomeAssembly	MetagenomeAssembly	skos:closeMatch	nmdc:MetagenomeAssembly	MetagenomeAssembly	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metagenomeassembly
+nmdc:FailureWhereEnum#MetaproteomicsAnalysis	MetaproteomicsAnalysis	skos:closeMatch	nmdc:MetaproteomicsAnalysis	MetaproteomicsAnalysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metaproteomicsanalysis
+nmdc:FailureWhereEnum#MetatranscriptomeAnnotation	MetatranscriptomeAnnotation	skos:closeMatch	nmdc:MetatranscriptomeAnnotation	MetatranscriptomeAnnotation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metatranscriptomeannotation
+nmdc:FailureWhereEnum#MetatranscriptomeAssembly	MetatranscriptomeAssembly	skos:closeMatch	nmdc:MetatranscriptomeAssembly	MetatranscriptomeAssembly	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metatranscriptomeassembly
+nmdc:FailureWhereEnum#MetatranscriptomeExpressionAnalysis	MetatranscriptomeExpressionAnalysis	skos:closeMatch	nmdc:MetatranscriptomeExpressionAnalysis	MetatranscriptomeExpressionAnalysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metatranscriptomeexpressionanalysis
+nmdc:FailureWhereEnum#NomAnalysis	NomAnalysis	skos:closeMatch	nmdc:NomAnalysis	NomAnalysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nomanalysis
+nmdc:FailureWhereEnum#NucleotideSequencing	NucleotideSequencing	skos:closeMatch	nmdc:NucleotideSequencing	NucleotideSequencing	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nucleotidesequencing
+nmdc:FailureWhereEnum#Pooling	Pooling	skos:closeMatch	nmdc:Pooling	Pooling	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pooling
+nmdc:FailureWhereEnum#ReadBasedTaxonomyAnalysis	ReadBasedTaxonomyAnalysis	skos:closeMatch	nmdc:ReadBasedTaxonomyAnalysis	ReadBasedTaxonomyAnalysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	readbasedtaxonomyanalysis
+nmdc:FailureWhereEnum#ReadQcAnalysis	ReadQcAnalysis	skos:closeMatch	nmdc:ReadQcAnalysis	ReadQcAnalysis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	readqcanalysis
+nmdc:FloorCondEnum#damaged	damaged	skos:closeMatch	nmdc:IntWallCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:FloorCondEnum#damaged	damaged	skos:closeMatch	nmdc:RoomCondtEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:FloorCondEnum#damaged	damaged	skos:closeMatch	nmdc:ShadingDeviceCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:FloorCondEnum#damaged	damaged	skos:closeMatch	nmdc:WindowCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:FloorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:IntWallCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:FloorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:RoomCondtEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:FloorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:ShadingDeviceCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:FloorCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:WindowCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:FloorCondEnum#new	new	skos:closeMatch	nmdc:IntWallCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:FloorCondEnum#new	new	skos:closeMatch	nmdc:RoomCondtEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:FloorCondEnum#new	new	skos:closeMatch	nmdc:ShadingDeviceCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:FloorCondEnum#new	new	skos:closeMatch	nmdc:WindowCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:FloorCondEnum#rupture	rupture	skos:closeMatch	nmdc:IntWallCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:FloorCondEnum#rupture	rupture	skos:closeMatch	nmdc:RoomCondtEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:FloorCondEnum#rupture	rupture	skos:closeMatch	nmdc:ShadingDeviceCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:FloorCondEnum#rupture	rupture	skos:closeMatch	nmdc:WindowCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:FloorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:IntWallCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:FloorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:RoomCondtEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:FloorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:ShadingDeviceCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:FloorCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:WindowCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:FloorFinishMatEnum#carpet	carpet	skos:closeMatch	nmdc:SurfMaterialEnum#carpet	carpet	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	carpet
+nmdc:FloorFinishMatEnum#concrete	concrete	skos:closeMatch	nmdc:FloorStrucEnum#concrete	concrete	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	concrete
+nmdc:FloorFinishMatEnum#concrete	concrete	skos:closeMatch	nmdc:SurfMaterialEnum#concrete	concrete	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	concrete
+nmdc:FloorFinishMatEnum#none	none	skos:closeMatch	nmdc:LightTypeEnum#none	none	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	none
+nmdc:FloorFinishMatEnum#none	none	skos:closeMatch	nmdc:WindowCoverEnum#none	none	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	none
+nmdc:FloorFinishMatEnum#paint	paint	skos:closeMatch	nmdc:SurfMaterialEnum#paint	paint	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	paint
+nmdc:FloorFinishMatEnum#stone	stone	skos:closeMatch	nmdc:SurfMaterialEnum#stone	stone	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stone
+nmdc:FloorFinishMatEnum#tile	tile	skos:closeMatch	nmdc:SurfMaterialEnum#tile	tile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tile
+nmdc:FloorFinishMatEnum#tile	tile	skos:closeMatch	nmdc:WallFinishMatEnum#tile	tile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tile
+nmdc:FloorStrucEnum#concrete	concrete	skos:closeMatch	nmdc:SurfMaterialEnum#concrete	concrete	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	concrete
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:HcProducedEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:HcrEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:HcrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:LithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:OrganismCountEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:OxyStatSampEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FreqCleanEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:FurnitureEnum#cabinet	cabinet	skos:closeMatch	nmdc:IndoorSurfEnum#cabinet	cabinet	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cabinet
+nmdc:GenderRestroomEnum#female	female	skos:closeMatch	nmdc:HostSexEnum#female	female	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	female
+nmdc:GenderRestroomEnum#male	male	skos:closeMatch	nmdc:HostSexEnum#male	male	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	male
+nmdc:HcProducedEnum#Gas	Gas	skos:closeMatch	nmdc:SampleStateEnum#gas	gas	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gas
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:HcrEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:HcrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:LithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:OrganismCountEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:OxyStatSampEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcProducedEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#Shale	Shale	skos:closeMatch	nmdc:LithologyEnum#Shale	Shale	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	shale
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:HcrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:LithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:OrganismCountEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:OxyStatSampEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#Archean	Archean	skos:closeMatch	nmdc:SrGeolAgeEnum#Archean	Archean	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	archean
+nmdc:HcrGeolAgeEnum#Cambrian	Cambrian	skos:closeMatch	nmdc:SrGeolAgeEnum#Cambrian	Cambrian	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cambrian
+nmdc:HcrGeolAgeEnum#Carboniferous	Carboniferous	skos:closeMatch	nmdc:SrGeolAgeEnum#Carboniferous	Carboniferous	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	carboniferous
+nmdc:HcrGeolAgeEnum#Cenozoic	Cenozoic	skos:closeMatch	nmdc:SrGeolAgeEnum#Cenozoic	Cenozoic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cenozoic
+nmdc:HcrGeolAgeEnum#Cretaceous	Cretaceous	skos:closeMatch	nmdc:SrGeolAgeEnum#Cretaceous	Cretaceous	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cretaceous
+nmdc:HcrGeolAgeEnum#Devonian	Devonian	skos:closeMatch	nmdc:SrGeolAgeEnum#Devonian	Devonian	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	devonian
+nmdc:HcrGeolAgeEnum#Jurassic	Jurassic	skos:closeMatch	nmdc:SrGeolAgeEnum#Jurassic	Jurassic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	jurassic
+nmdc:HcrGeolAgeEnum#Mesozoic	Mesozoic	skos:closeMatch	nmdc:SrGeolAgeEnum#Mesozoic	Mesozoic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mesozoic
+nmdc:HcrGeolAgeEnum#Neogene	Neogene	skos:closeMatch	nmdc:SrGeolAgeEnum#Neogene	Neogene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	neogene
+nmdc:HcrGeolAgeEnum#Ordovician	Ordovician	skos:closeMatch	nmdc:SrGeolAgeEnum#Ordovician	Ordovician	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ordovician
+nmdc:HcrGeolAgeEnum#Paleogene	Paleogene	skos:closeMatch	nmdc:SrGeolAgeEnum#Paleogene	Paleogene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	paleogene
+nmdc:HcrGeolAgeEnum#Paleozoic	Paleozoic	skos:closeMatch	nmdc:SrGeolAgeEnum#Paleozoic	Paleozoic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	paleozoic
+nmdc:HcrGeolAgeEnum#Permian	Permian	skos:closeMatch	nmdc:SrGeolAgeEnum#Permian	Permian	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permian
+nmdc:HcrGeolAgeEnum#Precambrian	Precambrian	skos:closeMatch	nmdc:SrGeolAgeEnum#Precambrian	Precambrian	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	precambrian
+nmdc:HcrGeolAgeEnum#Proterozoic	Proterozoic	skos:closeMatch	nmdc:SrGeolAgeEnum#Proterozoic	Proterozoic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	proterozoic
+nmdc:HcrGeolAgeEnum#Silurian	Silurian	skos:closeMatch	nmdc:SrGeolAgeEnum#Silurian	Silurian	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	silurian
+nmdc:HcrGeolAgeEnum#Triassic	Triassic	skos:closeMatch	nmdc:SrGeolAgeEnum#Triassic	Triassic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	triassic
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:LithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:OrganismCountEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:OxyStatSampEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HcrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:HeatDelivLocEnum#east	east	skos:closeMatch	nmdc:WallLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:HeatDelivLocEnum#east	east	skos:closeMatch	nmdc:WindowLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:HeatDelivLocEnum#north	north	skos:closeMatch	nmdc:WallLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:HeatDelivLocEnum#north	north	skos:closeMatch	nmdc:WindowLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:HeatDelivLocEnum#south	south	skos:closeMatch	nmdc:WallLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:HeatDelivLocEnum#south	south	skos:closeMatch	nmdc:WindowLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:HeatDelivLocEnum#west	west	skos:closeMatch	nmdc:WallLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:HeatDelivLocEnum#west	west	skos:closeMatch	nmdc:WindowLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:IndoorSpaceEnum#bathroom	bathroom	skos:closeMatch	nmdc:RoomConnectedEnum#bathroom	bathroom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bathroom
+nmdc:IndoorSpaceEnum#bathroom	bathroom	skos:closeMatch	nmdc:RoomTypeEnum#bathroom	bathroom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bathroom
+nmdc:IndoorSpaceEnum#elevator	elevator	skos:closeMatch	nmdc:MechStrucEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+nmdc:IndoorSpaceEnum#elevator	elevator	skos:closeMatch	nmdc:RoomConnectedEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+nmdc:IndoorSpaceEnum#elevator	elevator	skos:closeMatch	nmdc:RoomTypeEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+nmdc:IndoorSpaceEnum#hallway	hallway	skos:closeMatch	nmdc:RoomConnectedEnum#hallway	hallway	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hallway
+nmdc:IndoorSpaceEnum#hallway	hallway	skos:closeMatch	nmdc:RoomTypeEnum#hallway	hallway	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hallway
+nmdc:IndoorSpaceEnum#kitchen	kitchen	skos:closeMatch	nmdc:RoomConnectedEnum#kitchen	kitchen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	kitchen
+nmdc:IndoorSpaceEnum#kitchen	kitchen	skos:closeMatch	nmdc:RoomTypeEnum#kitchen	kitchen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	kitchen
+nmdc:IndoorSpaceEnum#office	office	skos:closeMatch	nmdc:RoomConnectedEnum#office	office	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	office
+nmdc:IntWallCondEnum#damaged	damaged	skos:closeMatch	nmdc:RoomCondtEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:IntWallCondEnum#damaged	damaged	skos:closeMatch	nmdc:ShadingDeviceCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:IntWallCondEnum#damaged	damaged	skos:closeMatch	nmdc:WindowCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:IntWallCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:RoomCondtEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:IntWallCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:ShadingDeviceCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:IntWallCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:WindowCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:IntWallCondEnum#new	new	skos:closeMatch	nmdc:RoomCondtEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:IntWallCondEnum#new	new	skos:closeMatch	nmdc:ShadingDeviceCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:IntWallCondEnum#new	new	skos:closeMatch	nmdc:WindowCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:IntWallCondEnum#rupture	rupture	skos:closeMatch	nmdc:RoomCondtEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:IntWallCondEnum#rupture	rupture	skos:closeMatch	nmdc:ShadingDeviceCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:IntWallCondEnum#rupture	rupture	skos:closeMatch	nmdc:WindowCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:IntWallCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:RoomCondtEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:IntWallCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:ShadingDeviceCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:IntWallCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:WindowCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:LightTypeEnum#none	none	skos:closeMatch	nmdc:WindowCoverEnum#none	none	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	none
+nmdc:LithologyEnum#Basement	Basement	skos:closeMatch	nmdc:SampFloorEnum#basement	basement	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	basement
+nmdc:LithologyEnum#Basement	Basement	skos:closeMatch	nmdc:SubstructureTypeEnum#basement	basement	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	basement
+nmdc:LithologyEnum#Coal	Coal	skos:closeMatch	nmdc:SrLithologyEnum#Coal	Coal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	coal
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:OrganismCountEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:OxyStatSampEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:LithologyEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:MechStrucEnum#elevator	elevator	skos:closeMatch	nmdc:RoomConnectedEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+nmdc:MechStrucEnum#elevator	elevator	skos:closeMatch	nmdc:RoomTypeEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+nmdc:OccupDocumentEnum#videos	videos	skos:closeMatch	nmdc:VisMediaEnum#videos	videos	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	videos
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:OxyStatSampEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OrganismCountEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SampCaptStatusEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:OxyStatSampEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:PlantGrowthMedEnum#soil	soil	skos:closeMatch	nmdc:SampleTypeEnum#soil	soil	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	soil
+nmdc:PlantGrowthMedEnum#water	water	skos:closeMatch	nmdc:RNASampleFormatEnum#Water	Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:PlantGrowthMedEnum#water	water	skos:closeMatch	nmdc:SampleTypeEnum#water	water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:RNASampleFormatEnum#Pellet	Pellet	skos:closeMatch	nmdc:SamplePortionEnum#pellet	pellet	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pellet
+nmdc:RNASampleFormatEnum#Water	Water	skos:closeMatch	nmdc:SampleTypeEnum#water	water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
+nmdc:ResolutionCategoryEnum#high	high	skos:closeMatch	nmdc:WindowVertPosEnum#high	high	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	high
+nmdc:ResolutionCategoryEnum#low	low	skos:closeMatch	nmdc:WindowVertPosEnum#low	low	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	low
+nmdc:RoomCondtEnum#damaged	damaged	skos:closeMatch	nmdc:ShadingDeviceCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:RoomCondtEnum#damaged	damaged	skos:closeMatch	nmdc:WindowCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:RoomCondtEnum#needs+repair	needs repair	skos:closeMatch	nmdc:ShadingDeviceCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:RoomCondtEnum#needs+repair	needs repair	skos:closeMatch	nmdc:WindowCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:RoomCondtEnum#new	new	skos:closeMatch	nmdc:ShadingDeviceCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:RoomCondtEnum#new	new	skos:closeMatch	nmdc:WindowCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:RoomCondtEnum#rupture	rupture	skos:closeMatch	nmdc:ShadingDeviceCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:RoomCondtEnum#rupture	rupture	skos:closeMatch	nmdc:WindowCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:RoomCondtEnum#visible+wear	visible wear	skos:closeMatch	nmdc:ShadingDeviceCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:RoomCondtEnum#visible+wear	visible wear	skos:closeMatch	nmdc:WindowCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:RoomConnectedEnum#attic	attic	skos:closeMatch	nmdc:RoomTypeEnum#attic	attic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	attic
+nmdc:RoomConnectedEnum#bathroom	bathroom	skos:closeMatch	nmdc:RoomTypeEnum#bathroom	bathroom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bathroom
+nmdc:RoomConnectedEnum#closet	closet	skos:closeMatch	nmdc:RoomTypeEnum#closet	closet	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	closet
+nmdc:RoomConnectedEnum#conference+room	conference room	skos:closeMatch	nmdc:RoomTypeEnum#conference+room	conference room	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	conference room
+nmdc:RoomConnectedEnum#elevator	elevator	skos:closeMatch	nmdc:RoomTypeEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+nmdc:RoomConnectedEnum#examining+room	examining room	skos:closeMatch	nmdc:RoomTypeEnum#examining+room	examining room	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	examining room
+nmdc:RoomConnectedEnum#hallway	hallway	skos:closeMatch	nmdc:RoomTypeEnum#hallway	hallway	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hallway
+nmdc:RoomConnectedEnum#kitchen	kitchen	skos:closeMatch	nmdc:RoomTypeEnum#kitchen	kitchen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	kitchen
+nmdc:RoomConnectedEnum#mail+room	mail room	skos:closeMatch	nmdc:RoomTypeEnum#mail+room	mail room	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mail room
+nmdc:RoomConnectedEnum#stairwell	stairwell	skos:closeMatch	nmdc:RoomTypeEnum#stairwell	stairwell	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stairwell
+nmdc:RoomTypeEnum#lobby	lobby	skos:closeMatch	nmdc:SampFloorEnum#lobby	lobby	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	lobby
+nmdc:SampCaptStatusEnum#other	other	skos:closeMatch	nmdc:SampCollectPointEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCaptStatusEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCaptStatusEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCaptStatusEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCaptStatusEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCaptStatusEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCaptStatusEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCaptStatusEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCollectPointEnum#other	other	skos:closeMatch	nmdc:SampDisStageEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCollectPointEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCollectPointEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCollectPointEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCollectPointEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCollectPointEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampCollectPointEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampDisStageEnum#other	other	skos:closeMatch	nmdc:SampMdEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampDisStageEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampDisStageEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampDisStageEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampDisStageEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampDisStageEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampFloorEnum#basement	basement	skos:closeMatch	nmdc:SubstructureTypeEnum#basement	basement	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	basement
+nmdc:SampMdEnum#other	other	skos:closeMatch	nmdc:SampSubtypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampMdEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampMdEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampMdEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampMdEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampSubtypeEnum#other	other	skos:closeMatch	nmdc:SrDepEnvEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampSubtypeEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampSubtypeEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SampSubtypeEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:ShadingDeviceCondEnum#damaged	damaged	skos:closeMatch	nmdc:WindowCondEnum#damaged	damaged	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	damaged
+nmdc:ShadingDeviceCondEnum#needs+repair	needs repair	skos:closeMatch	nmdc:WindowCondEnum#needs+repair	needs repair	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	needs repair
+nmdc:ShadingDeviceCondEnum#new	new	skos:closeMatch	nmdc:WindowCondEnum#new	new	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	new
+nmdc:ShadingDeviceCondEnum#rupture	rupture	skos:closeMatch	nmdc:WindowCondEnum#rupture	rupture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rupture
+nmdc:ShadingDeviceCondEnum#visible+wear	visible wear	skos:closeMatch	nmdc:WindowCondEnum#visible+wear	visible wear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible wear
+nmdc:SpecificEnum#photos	photos	skos:closeMatch	nmdc:VisMediaEnum#photos	photos	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	photos
+nmdc:SrDepEnvEnum#other	other	skos:closeMatch	nmdc:SrGeolAgeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SrDepEnvEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SrDepEnvEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SrKerogTypeEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SrGeolAgeEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SrKerogTypeEnum#other	other	skos:closeMatch	nmdc:SrLithologyEnum#other	other	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	other
+nmdc:SurfMaterialEnum#metal	metal	skos:closeMatch	nmdc:WallFinishMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:SurfMaterialEnum#metal	metal	skos:closeMatch	nmdc:WindowMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:SurfMaterialEnum#stucco	stucco	skos:closeMatch	nmdc:WallSurfTreatmentEnum#stucco	stucco	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stucco
+nmdc:SurfMaterialEnum#tile	tile	skos:closeMatch	nmdc:WallFinishMatEnum#tile	tile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tile
+nmdc:SurfMaterialEnum#vinyl	vinyl	skos:closeMatch	nmdc:WindowMatEnum#vinyl	vinyl	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	vinyl
+nmdc:SurfMaterialEnum#wood	wood	skos:closeMatch	nmdc:WallFinishMatEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:SurfMaterialEnum#wood	wood	skos:closeMatch	nmdc:WindowMatEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:TrainStopLocEnum#end	end	skos:closeMatch	nmdc:end	end	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	end
+nmdc:WallFinishMatEnum#metal	metal	skos:closeMatch	nmdc:WindowMatEnum#metal	metal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	metal
+nmdc:WallFinishMatEnum#wood	wood	skos:closeMatch	nmdc:WindowMatEnum#wood	wood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	wood
+nmdc:WallLocEnum#east	east	skos:closeMatch	nmdc:WindowLocEnum#east	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+nmdc:WallLocEnum#north	north	skos:closeMatch	nmdc:WindowLocEnum#north	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+nmdc:WallLocEnum#south	south	skos:closeMatch	nmdc:WindowLocEnum#south	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+nmdc:WallLocEnum#west	west	skos:closeMatch	nmdc:WindowLocEnum#west	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+nmdc:WindowHorizPosEnum#middle	middle	skos:closeMatch	nmdc:WindowVertPosEnum#middle	middle	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	middle
+nmdc:alternative_names	alternative_names	skos:closeMatch	nmdc:alternative_titles	alternative_titles	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	dcterms:alternative
+nmdc:alternative_names	alternative_names	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	nmdc:alternative_names
+nmdc:alternative_names	alternative_names	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	nmdc:alternative_names
+nmdc:alternative_names	alternative_names	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	nmdc:alternative_names
+nmdc:alternative_names	alternative_names	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	nmdc:alternative_names
+nmdc:basic_classes/:Doi	Doi	skos:closeMatch	nmdc:doi_value	doi_value	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	obi:0002110
+nmdc:basic_classes/:subject	subject	skos:closeMatch	nmdc:subject	subject	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	subject
+nmdc:external_database_identifiers	external_database_identifiers	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:closeMatch-INVERSE	nmdc:external_database_identifiers
+nmdc:external_database_identifiers	external_database_identifiers	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:closeMatch-INVERSE	nmdc:external_database_identifiers
