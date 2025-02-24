@@ -1,0 +1,848 @@
+# curie_map:
+#   ENVO: http://purl.obolibrary.org/obo/ENVO_
+#   PO: http://purl.obolibrary.org/obo/PO_
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+#   sweet: http://w3id.org/sssom/unknown_prefix/sweet/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/8716ed0f-7691-4819-8a4c-1635efaa769d
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+ENVO:00000014	canal	skos:closeMatch	sweet:realmHydroBody/Canal	canal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	canal
+ENVO:00000015	ocean	skos:closeMatch	sweet:realm/Ocean	ocean	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ocean
+ENVO:00000020	lake	skos:closeMatch	sweet:realmHydroBody/Lake	lake	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	lake
+ENVO:00000021	freshwater lake	skos:closeMatch	sweet:realmHydroBody/FreshwaterLake	freshwater lake	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	freshwater lake
+ENVO:00000022	river	skos:closeMatch	sweet:realmHydroBody/River	river	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	river
+ENVO:00000023	stream	skos:closeMatch	sweet:realmHydroBody/Stream	stream	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stream
+ENVO:00000025	reservoir	skos:closeMatch	sweet:realmHydroBody/Reservoir	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reservoir
+ENVO:00000025	reservoir	skos:closeMatch	sweet:reprSciComponent/Reservoir	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reservoir
+ENVO:00000026	well	skos:closeMatch	sweet:matrEquipment/Well	well	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	well
+ENVO:00000026	well	skos:closeMatch	sweet:reprMathFunction/Well	well	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	well
+ENVO:00000026	well	skos:closeMatch	sweet:stateOrdinal/Well	well	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	well
+ENVO:00000027	spring	skos:closeMatch	sweet:realmHydroBody/Spring	spring	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	spring
+ENVO:00000027	spring	skos:closeMatch	sweet:reprTimeSeason/Spring	spring	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	spring
+ENVO:00000032	bay	skos:closeMatch	sweet:realmHydroBody/Bay	bay	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bay
+ENVO:00000033	pond	skos:closeMatch	sweet:realmHydroBody/Pond	pond	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pond
+ENVO:00000035	marsh	skos:closeMatch	sweet:realmHydroBody/Marsh	marsh	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	marsh
+ENVO:00000039	fjord	skos:closeMatch	sweet:realmHydroBody/Fjord	fjord	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fjord
+ENVO:00000044	peatland	skos:closeMatch	sweet:realmHydroBody/Peatland	peatland	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	peatland
+ENVO:00000045	estuary	skos:closeMatch	sweet:realmHydroBody/Estuary	estuary	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	estuary
+ENVO:00000050	geyser	skos:closeMatch	sweet:realmLandVolcanic/Geyser	geyser	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	geyser
+ENVO:00000067	cave	skos:closeMatch	sweet:realmLandFluvial/Cave	cave	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cave
+ENVO:00000068	tunnel	skos:closeMatch	sweet:realmLandFluvial/Tunnel	tunnel	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tunnel
+ENVO:00000076	mine	skos:closeMatch	sweet:matrFacility/Mine	mine	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mine
+ENVO:00000078	farm	skos:closeMatch	sweet:matrFacility/Farm	farm	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	farm
+ENVO:00000081	mountain	skos:closeMatch	sweet:realmLandOrographic/Mountain	mountain	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mountain
+ENVO:00000083	hill	skos:closeMatch	sweet:realmLandOrographic/Hill	hill	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hill
+ENVO:00000086	plain	skos:closeMatch	sweet:realmLandform/Plain	plain	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	plain
+ENVO:00000087	cliff	skos:closeMatch	sweet:realmLandOrographic/Cliff	cliff	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cliff
+ENVO:00000091	beach	skos:closeMatch	sweet:realmLandCoastal/Beach	beach	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	beach
+ENVO:00000096	caldera	skos:closeMatch	sweet:realmLandVolcanic/Caldera	caldera	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	caldera
+ENVO:00000098	island	skos:closeMatch	sweet:realmLandCoastal/Island	island	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	island
+ENVO:00000100	valley	skos:closeMatch	sweet:realmLandFluvial/Valley	valley	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	valley
+ENVO:00000101	delta	skos:closeMatch	sweet:realmLandCoastal/Delta	delta	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	delta
+ENVO:00000117	plantation	skos:closeMatch	sweet:matrFacility/Plantation	plantation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	plantation
+ENVO:00000133	glacier	skos:closeMatch	sweet:realmCryo/Glacier	glacier	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00000133
+ENVO:00000133	glacier	skos:closeMatch	sweet:realmCryo/Glacier	glacier	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	glacier
+ENVO:00000133	glacier	skos:closeMatch	sweet:realmCryo/Glacier	glacier	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	sweet:realmcryo/glacier
+ENVO:00000141	bank	skos:closeMatch	sweet:realmHydro/Bank	bank	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bank
+ENVO:00000150	coral reef	skos:closeMatch	sweet:realmBiolBiome/CoralReef	coral reef	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	coral reef
+ENVO:00000155	cirque	skos:closeMatch	sweet:realmLandGlacial/Cirque	cirque	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cirque
+ENVO:00000167	bar	skos:closeMatch	sweet:realmLandCoastal/Bar	bar	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bar
+ENVO:00000170	dune	skos:closeMatch	sweet:realmLandAeolian/Dune	dune	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dune
+ENVO:00000174	isthmus	skos:closeMatch	sweet:realmLandCoastal/Isthmus	isthmus	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	isthmus
+ENVO:00000175	karst	skos:closeMatch	sweet:phenGeolGeomorphology/Karst	karst	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	karst
+ENVO:00000178	levee	skos:closeMatch	sweet:realmHydro/Levee	levee	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	levee
+ENVO:00000179	mesa	skos:closeMatch	sweet:realmLandOrographic/Mesa	mesa	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mesa
+ENVO:00000182	plateau	skos:closeMatch	sweet:realmLandOrographic/Plateau	plateau	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	plateau
+ENVO:00000215	hydrothermal vent	skos:closeMatch	sweet:realmOceanFloor/HydrothermalVent	hydrothermal vent	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hydrothermal vent
+ENVO:00000216	fumarole	skos:closeMatch	sweet:realmLandVolcanic/Fumarole	fumarole	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fumarole
+ENVO:00000223	continental shelf	skos:closeMatch	sweet:realmOceanFloor/ContinentalShelf	continental shelf	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	continental shelf
+ENVO:00000244	abyssal plain	skos:closeMatch	sweet:realmOceanFloor/AbyssalPlain	abyssal plain	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	abyssal plain
+ENVO:00000247	volcano	skos:closeMatch	sweet:realmLandVolcanic/Volcano	volcano	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	volcano
+ENVO:00000255	flood plain	skos:closeMatch	sweet:realmLandFluvial/FloodPlain	flood plain	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	flood plain
+ENVO:00000258	alluvial plain	skos:closeMatch	sweet:realmLandFluvial/AlluvialPlain	alluvial plain	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	alluvial plain
+ENVO:00000262	steppe	skos:closeMatch	sweet:realmBiolBiome/Steppe	steppe	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	steppe
+ENVO:00000266	pasture	skos:closeMatch	sweet:realmBiolBiome/Pasture	pasture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pasture
+ENVO:00000283	ridge	skos:closeMatch	sweet:phenFluidDynamics/Ridge	ridge	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ridge
+ENVO:00000283	ridge	skos:closeMatch	sweet:realmLandOrographic/Ridge	ridge	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ridge
+ENVO:00000283	ridge	skos:closeMatch	sweet:reprSpaceGeometry/Ridge	ridge	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ridge
+ENVO:00000287	butte	skos:closeMatch	sweet:realmLandOrographic/Butte	butte	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	butte
+ENVO:00000291	drainage basin	skos:closeMatch	sweet:realmLandFluvial/DrainageBasin	drainage basin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	basin drainage
+ENVO:00000292	watershed	skos:closeMatch	sweet:realmLandFluvial/Watershed	watershed	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	watershed
+ENVO:00000304	shore	skos:closeMatch	sweet:realmLandCoastal/Shore	shore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	shore
+ENVO:00000316	intertidal zone	skos:closeMatch	sweet:realmLandCoastal/IntertidalZone	intertidal zone	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	intertidal zone
+ENVO:00000328	vadose zone	skos:closeMatch	sweet:realmHydro/VadoseZone	vadose zone	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	vadose zone
+ENVO:00000384	river bed	skos:closeMatch	sweet:realmLandFluvial/RiverBed	river bed	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bed river
+ENVO:00000394	strait	skos:closeMatch	sweet:realmHydroBody/Strait	strait	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	strait
+ENVO:00000426	ocean floor	skos:closeMatch	sweet:realmOceanFloor/OceanFloor	ocean floor	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	floor ocean
+ENVO:00000446	terrestrial biome	skos:closeMatch	sweet:realmBiolBiome/TerrestrialBiome	terrestrial biome	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	biome terrestrial
+ENVO:00000475	inlet	skos:closeMatch	sweet:realmHydroBody/Inlet	inlet	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	inlet
+ENVO:00000482	sea floor	skos:closeMatch	sweet:realmOceanFloor/SeaFloor	sea floor	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	floor sea
+ENVO:00000486	shoreline	skos:closeMatch	sweet:realmLandCoastal/Shoreline	shoreline	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	shoreline
+ENVO:00000514	crater	skos:closeMatch	sweet:realmLandform/Crater	crater	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	crater
+ENVO:00000516	hummock	skos:closeMatch	sweet:realmLandOrographic/Hummock	hummock	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hummock
+ENVO:00000562	park	skos:closeMatch	sweet:realmLandProtected/Park	park	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	park
+ENVO:00001998	soil	skos:closeMatch	sweet:matrSediment/Soil	soil	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	soil
+ENVO:00002000	slope	skos:closeMatch	sweet:reprMathOperation/Slope	slope	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	slope
+ENVO:00002006	liquid water	skos:closeMatch	sweet:matrWater/LiquidWater	liquid water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	liquid water
+ENVO:00002007	sediment	skos:closeMatch	sweet:matrSediment/Sediment	sediment	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sediment
+ENVO:00002010	saline water	skos:closeMatch	sweet:matrWater/SalineWater	saline water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	saline water
+ENVO:00002011	fresh water	skos:closeMatch	sweet:matrWater/FreshWater	fresh water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fresh water
+ENVO:00002018	sewage	skos:closeMatch	sweet:matrWater/Sewage	sewage	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sewage
+ENVO:00002019	brackish water	skos:closeMatch	sweet:matrWater/BrackishWater	brackish water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	brackish water
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	sweet:realmHydro/SurfaceWater	surface water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002061	oil spill	skos:closeMatch	sweet:phenEnvirImpact/OilSpill	oil spill	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	oil spill
+ENVO:00002149	sea water	skos:closeMatch	sweet:matrWater/SeaWater	sea water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sea water
+ENVO:00002200	sea ice	skos:closeMatch	sweet:realmCryo/SeaIce	sea ice	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:closeMatch	envo:00002200
+ENVO:00002200	sea ice	skos:closeMatch	sweet:realmCryo/SeaIce	sea ice	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ice sea
+ENVO:00002200	sea ice	skos:closeMatch	sweet:realmCryo/SeaIce	sea ice	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch-INVERSE	rdf:ID	sweet:realmcryo/seaice
+ENVO:00002236	cryosol	skos:closeMatch	sweet:realmSoil/Cryosol	cryosol	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cryosol
+ENVO:00002254	vertisol	skos:closeMatch	sweet:realmSoil/Vertisol	vertisol	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	vertisol
+ENVO:00002258	loam	skos:closeMatch	sweet:matrSediment/Loam	loam	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	loam
+ENVO:00003044	brine	skos:closeMatch	sweet:matrWater/Brine	brine	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	brine
+ENVO:00003064	drinking water	skos:closeMatch	sweet:matrWater/DrinkingWater	drinking water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	drinking water
+ENVO:00003096	tap water	skos:closeMatch	ENVO:03600052	water tap	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tap water
+ENVO:00005792	underground water	skos:closeMatch	sweet:realmHydro/UndergroundWater	underground water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	underground water
+ENVO:00012408	aquifer	skos:closeMatch	sweet:realmHydro/Aquifer	aquifer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	aquifer
+ENVO:01000263	cold seep	skos:closeMatch	sweet:realmOceanFloor/ColdSeep	cold seep	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cold seep
+ENVO:01000298	continental margin	skos:closeMatch	sweet:realmGeolContinental/ContinentalMargin	continental margin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	continental margin
+ENVO:01000406	snow	skos:closeMatch	sweet:matrWater/Snow	snow	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	snow
+ENVO:01000407	littoral zone	skos:closeMatch	sweet:realmLandCoastal/LittoralZone	littoral zone	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	littoral zone
+ENVO:01000600	rainwater	skos:closeMatch	sweet:matrWater/Rainwater	rainwater	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rainwater
+ENVO:01000671	dike	skos:closeMatch	sweet:realmGeol/Dike	dike	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dike
+ENVO:01000671	dike	skos:closeMatch	sweet:realmHydro/Dike	dike	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dike
+ENVO:01001004	groundwater	skos:closeMatch	sweet:matrWater/Groundwater	groundwater	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	groundwater
+ENVO:01001191	water surface	skos:closeMatch	sweet:realmHydro/SurfaceWater	surface water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:01001357	desert	skos:closeMatch	sweet:realmLandAeolian/Desert	desert	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	desert
+ENVO:01001397	ultisol	skos:closeMatch	sweet:realmSoil/Ultisol	ultisol	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ultisol
+ENVO:01001512	congelation sea ice	skos:closeMatch	sweet:realmCryo/CongelationIce	congelation ice	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:closeMatch	envo:01001512
+ENVO:01001512	congelation sea ice	skos:closeMatch	sweet:realmCryo/CongelationIce	congelation ice	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch-INVERSE	rdf:ID	sweet:realmcryo/congelationice
+ENVO:01001803	tropical forest	skos:closeMatch	sweet:realmBiolBiome/TropicalForest	tropical forest	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	forest tropical
+ENVO:02000059	surface soil	skos:closeMatch	sweet:realmSoil/SurfaceSoil	surface soil	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	soil surface
+ENVO:03000046	frazil ice	skos:closeMatch	sweet:realmCryo/FrazilIce	frazil ice	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:closeMatch	envo:03000046
+ENVO:03000046	frazil ice	skos:closeMatch	sweet:realmCryo/FrazilIce	frazil ice	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	frazil ice
+ENVO:03000046	frazil ice	skos:closeMatch	sweet:realmCryo/FrazilIce	frazil ice	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch-INVERSE	rdf:ID	sweet:realmcryo/frazilice
+ENVO:03000071	first year ice	skos:closeMatch	sweet:realmCryo/SeasonalIce	seasonal ice	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:closeMatch	envo:03000071
+ENVO:03000071	first year ice	skos:closeMatch	sweet:realmCryo/SeasonalIce	seasonal ice	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch-INVERSE	rdf:ID	sweet:realmcryo/seasonalice
+ENVO:03000117	channel	skos:closeMatch	sweet:realmHydroBody/Channel	channel	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	channel
+ENVO:06105211	runoff	skos:closeMatch	sweet:phenHydro/Runoff	runoff	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	runoff
+PO:0009001	fruit	skos:closeMatch	sweet:matrPlant/Fruit	fruit	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fruit
+PO:0009005	root	skos:closeMatch	sweet:matrPlant/Root	root	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	root
+PO:0025034	leaf	skos:closeMatch	sweet:matrPlant/Leaf	leaf	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	leaf
+PO:0025281	pollen	skos:closeMatch	sweet:matrAerosol/Pollen	pollen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pollen
+PO:0025281	pollen	skos:closeMatch	sweet:matrPlant/Pollen	pollen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pollen
+sweet:human/ConsumptiveUse	consumptive use	skos:closeMatch	sweet:humanCommerce/ConsumptiveUse	consumptive use	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	consumptive use
+sweet:human/Mapping	mapping	skos:closeMatch	sweet:reprDataServiceGeospatial/Mapping	mapping	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mapping
+sweet:human/PsychologicalParameter	psychological parameter	skos:closeMatch	sweet:propIndex/PsychologicalParameter	psychological parameter	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	parameter psychological
+sweet:human/Work	work	skos:closeMatch	sweet:propEnergy/Work	work	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	work
+sweet:humanCommerce/Demand	demand	skos:closeMatch	sweet:phenSystem/Demand	demand	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	demand
+sweet:humanCommerce/Development	development	skos:closeMatch	sweet:phenSystemComplexity/Development	development	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	development
+sweet:humanCommerce/Extraction	extraction	skos:closeMatch	sweet:phenGeolFault/Extraction	extraction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	extraction
+sweet:humanCommerce/Mining	mining	skos:closeMatch	sweet:reprDataServiceReduction/Mining	mining	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mining
+sweet:humanCommerce/Productivity	productivity	skos:closeMatch	sweet:propMassFlux/Productivity	productivity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	productivity
+sweet:humanEnvirControl/Flocculation	flocculation	skos:closeMatch	sweet:procPhysical/Flocculation	flocculation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	flocculation
+sweet:humanEnvirControl/WellInjection	well injection	skos:closeMatch	sweet:matrEquipment/InjectionWell	injection well	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	injection well
+sweet:humanEnvirStandards/EPA	epa	skos:closeMatch	sweet:humanEnvirStandards/EnvironmentalProtectionAgency	environmental protection agency	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:humanenvirstandards/epa
+sweet:humanEnvirStandards/FCAA	fcaa	skos:closeMatch	sweet:humanEnvirStandards/FederalCleanAirAct	federal clean air act	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:humanenvirstandards/fcaa
+sweet:humanEnvirStandards/FWS	fws	skos:closeMatch	sweet:humanEnvirStandards/FishAndWildlifeService	fish and wildlife service	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:humanenvirstandards/fws
+sweet:humanEnvirStandards/MLMA	mlma	skos:closeMatch	sweet:humanEnvirStandards/MarineLifeManagementAct	marine life management act	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:humanenvirstandards/mlma
+sweet:humanEnvirStandards/NEPA	nepa	skos:closeMatch	sweet:humanEnvirStandards/NationalEnvironmentalProtectionAct	national environmental protection act	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:humanenvirstandards/nepa
+sweet:humanEnvirStandards/NESHAP	neshap	skos:closeMatch	sweet:humanEnvirStandards/NationalEmissionStandardsForHazardousAirPollutant	national emission standards for hazardous air pollutant	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:humanenvirstandards/neshap
+sweet:humanEnvirStandards/NFMA	nfma	skos:closeMatch	sweet:humanEnvirStandards/NationalForestManagementAct	national forest management act	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:humanenvirstandards/nfma
+sweet:humanEnvirStandards/NFS	nfs	skos:closeMatch	sweet:humanEnvirStandards/NationalForestService	national forest service	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:humanenvirstandards/nfs
+sweet:humanEnvirStandards/PSD	psd	skos:closeMatch	sweet:humanEnvirStandards/PreventionOfSignificantDeteriorization	prevention of significant deteriorization	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:humanenvirstandards/psd
+sweet:humanEnvirStandards/PSI	psi	skos:closeMatch	sweet:humanEnvirStandards/PollutantStandardsIndex	pollutant standards index	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:humanenvirstandards/psi
+sweet:humanEnvirStandards/RCRA	rcra	skos:closeMatch	sweet:humanEnvirStandards/ResourceConservationAndRecoveryAct	resource conservation and recovery act	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:humanenvirstandards/rcra
+sweet:humanJurisdiction/CSA	csa	skos:closeMatch	sweet:realmClimateZone/Csa	csa	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	csa
+sweet:humanJurisdiction/Continent	continent	skos:closeMatch	sweet:realmLandform/Continent	continent	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	continent
+sweet:humanJurisdiction/SAR	sar	skos:closeMatch	sweet:propChemical/SAR	sar	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sar
+sweet:humanJurisdiction/State	state	skos:closeMatch	sweet:state/State	state	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	state
+sweet:humanResearch/Difference	difference	skos:closeMatch	sweet:propDifference/Difference	difference	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	difference
+sweet:humanResearch/Difference	difference	skos:closeMatch	sweet:reprMathOperation/Difference	difference	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	difference
+sweet:humanResearch/HypothesisTest	hypothesis test	skos:closeMatch	sweet:reprMathStatistics/HypothesisTest	hypothesis test	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hypothesis test
+sweet:humanResearch/Sample	sample	skos:closeMatch	sweet:stateRoleRepresentative/Sample	sample	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sample
+sweet:humanResearch/Validation	validation	skos:closeMatch	sweet:reprDataServiceValidation/Validation	validation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	validation
+sweet:humanResearch/Variable	variable	skos:closeMatch	sweet:reprMath/Variable	variable	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	variable
+sweet:humanTransportation/FAA	faa	skos:closeMatch	sweet:humanTransportation/FederalAviationAdministration	federal aviation administration	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:humantransportation/faa
+sweet:humanTransportation/Transit	transit	skos:closeMatch	sweet:stateSpaceConfiguration/Transit	transit	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	transit
+sweet:humanTransportation/Transport	transport	skos:closeMatch	sweet:phenFluidTransport/Transport	transport	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	transport
+sweet:humanTransportation/Transport	transport	skos:closeMatch	sweet:relaPhysical/transportOf	transport of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	transport
+sweet:matr/Medium	medium	skos:closeMatch	sweet:stateOrdinal/Medium	medium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	medium
+sweet:matr/Medium	medium	skos:closeMatch	sweet:stateSpace/Medium	medium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	medium
+sweet:matr/Solution	solution	skos:closeMatch	sweet:reprMathSolution/Solution	solution	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	solution
+sweet:matrAerosol/Pollen	pollen	skos:closeMatch	sweet:matrPlant/Pollen	pollen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pollen
+sweet:matrBiomass/Biomass	biomass	skos:closeMatch	sweet:matrEnergy/Biomass	biomass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	biomass
+sweet:matrCompound/Ammonia	ammonia	skos:closeMatch	sweet:matrCompound/NH3	nh3	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/ammonia
+sweet:matrCompound/BrCl	brcl	skos:closeMatch	sweet:matrCompound/BromineChloride	bromine chloride	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/brcl
+sweet:matrCompound/BrNO3	brno3	skos:closeMatch	sweet:matrCompound/BromineNitrate	bromine nitrate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/brno3
+sweet:matrCompound/BrO	bro	skos:closeMatch	sweet:matrCompound/BromineMonoxide	bromine monoxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/bro
+sweet:matrCompound/CO	co	skos:closeMatch	sweet:matrCompound/CarbonMonoxide	carbon monoxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/co
+sweet:matrCompound/CO2	co2	skos:closeMatch	sweet:matrCompound/CarbonDioxide	carbon dioxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/co2
+sweet:matrCompound/COS	cos	skos:closeMatch	sweet:matrCompound/CarbonylSulfide	carbonyl sulfide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/cos
+sweet:matrCompound/Carbonate	carbonate	skos:closeMatch	sweet:matrIon/Carbonate	carbonate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	carbonate
+sweet:matrCompound/CarbonicAcid	carbonic acid	skos:closeMatch	sweet:matrCompound/H2CO3	h2co3	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/carbonicacid
+sweet:matrCompound/CarbonylSulfide	carbonyl sulfide	skos:closeMatch	sweet:matrOrganicCompound/CarbonylSulfide	carbonyl sulfide	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	carbonyl sulfide
+sweet:matrCompound/ChlorineDioxide	chlorine dioxide	skos:closeMatch	sweet:matrCompound/ClO2	clo2	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/chlorinedioxide
+sweet:matrCompound/ChlorineMonoxide	chlorine monoxide	skos:closeMatch	sweet:matrCompound/ClO	clo	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/chlorinemonoxide
+sweet:matrCompound/ChlorineNitrate	chlorine nitrate	skos:closeMatch	sweet:matrCompound/ClONO2	clono2	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/chlorinenitrate
+sweet:matrCompound/Cl2O2	cl2o2	skos:closeMatch	sweet:matrCompound/DichlorinePeroxide	dichlorine peroxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/cl2o2
+sweet:matrCompound/DinitrogenPentoxide	dinitrogen pentoxide	skos:closeMatch	sweet:matrCompound/N2O5	n2o5	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/dinitrogenpentoxide
+sweet:matrCompound/Fe2.3	fe2.3	skos:closeMatch	sweet:matrCompound/Hematite	hematite	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/fe2.3
+sweet:matrCompound/Fe2.3	fe2.3	skos:closeMatch	sweet:matrCompound/Hematite	hematite	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/fe2.3
+sweet:matrCompound/Fe2.3	fe2.3	skos:closeMatch	sweet:matrCompound/Hematite	hematite	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/fe2.3
+sweet:matrCompound/Fe2.3	fe2.3	skos:closeMatch	sweet:matrCompound/IronOxide	iron oxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/fe2.3
+sweet:matrCompound/Fe2.3	fe2.3	skos:closeMatch	sweet:matrCompound/IronOxide	iron oxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/fe2.3
+sweet:matrCompound/Fe2.3	fe2.3	skos:closeMatch	sweet:matrCompound/IronOxide	iron oxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/fe2.3
+sweet:matrCompound/Fe2.3	fe2.3	skos:closeMatch	sweet:matrCompound/Rust	rust	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/fe2.3
+sweet:matrCompound/Fe2.3	fe2.3	skos:closeMatch	sweet:matrCompound/Rust	rust	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/fe2.3
+sweet:matrCompound/Fe2.3	fe2.3	skos:closeMatch	sweet:matrCompound/Rust	rust	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/fe2.3
+sweet:matrCompound/Fe3O4	fe3o4	skos:closeMatch	sweet:matrCompound/Magnetite	magnetite	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/fe3o4
+sweet:matrCompound/H2O	h2o	skos:closeMatch	sweet:matrCompound/Water	water	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/h2o
+sweet:matrCompound/H2O2	h2o2	skos:closeMatch	sweet:matrCompound/HydrogenPeroxide	hydrogen peroxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/h2o2
+sweet:matrCompound/H2SO4	h2so4	skos:closeMatch	sweet:matrCompound/SulfuricAcid	sulfuric acid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/h2so4
+sweet:matrCompound/HBr	hbr	skos:closeMatch	sweet:matrCompound/HydrogenBromide	hydrogen bromide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/hbr
+sweet:matrCompound/HBrO	hbro	skos:closeMatch	sweet:matrCompound/HydrobromousAcid	hydrobromous acid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/hbro
+sweet:matrCompound/HClO	hclo	skos:closeMatch	sweet:matrCompound/HypochlorousAcid	hypochlorous acid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/hclo
+sweet:matrCompound/HClO4	hclo4	skos:closeMatch	sweet:matrCompound/PerchloricAcid	perchloric acid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/hclo4
+sweet:matrCompound/HF	hf	skos:closeMatch	sweet:matrCompound/HydrogenFluoride	hydrogen fluoride	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/hf
+sweet:matrCompound/HNO2	hno2	skos:closeMatch	sweet:matrCompound/NitrousAcid	nitrous acid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/hno2
+sweet:matrCompound/HNO3	hno3	skos:closeMatch	sweet:matrCompound/NitricAcid	nitric acid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/hno3
+sweet:matrCompound/HNO4	hno4	skos:closeMatch	sweet:matrCompound/PeroxynitricAcid	peroxynitric acid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/hno4
+sweet:matrCompound/HO2	ho2	skos:closeMatch	sweet:matrCompound/Hydroperoxyl	hydroperoxyl	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/ho2
+sweet:matrCompound/HOCl	hocl	skos:closeMatch	sweet:matrCompound/HydrochlorousAcid	hydrochlorous acid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/hocl
+sweet:matrCompound/HOx	hox	skos:closeMatch	sweet:matrCompound/HydrogenOxides	hydrogen oxides	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/hox
+sweet:matrCompound/Hematite	hematite	skos:closeMatch	sweet:matrCompound/IronOxide	iron oxide	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:matrcompound/fe2.3
+sweet:matrCompound/Hematite	hematite	skos:closeMatch	sweet:matrCompound/Rust	rust	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:matrcompound/fe2.3
+sweet:matrCompound/Hematite	hematite	skos:closeMatch	sweet:matrMineral/Hematite	hematite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hematite
+sweet:matrCompound/Hydroxyl	hydroxyl	skos:closeMatch	sweet:matrCompound/OH	oh	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/hydroxyl
+sweet:matrCompound/IronOxide	iron oxide	skos:closeMatch	sweet:matrCompound/Rust	rust	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:matrcompound/fe2.3
+sweet:matrCompound/Magnetite	magnetite	skos:closeMatch	sweet:matrMineral/Magnetite	magnetite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	magnetite
+sweet:matrCompound/N2O	n2o	skos:closeMatch	sweet:matrCompound/NitrousOxide	nitrous oxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/n2o
+sweet:matrCompound/NAT	nat	skos:closeMatch	sweet:matrCompound/NitricAcidTrihydrate	nitric acid trihydrate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/nat
+sweet:matrCompound/NO	no	skos:closeMatch	sweet:matrCompound/NitricOxide	nitric oxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/no
+sweet:matrCompound/NO	no	skos:closeMatch	sweet:matrCompound/NitricOxide	nitric oxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/no
+sweet:matrCompound/NO	no	skos:closeMatch	sweet:matrCompound/NitrogenMonoxide	nitrogen monoxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/no
+sweet:matrCompound/NO	no	skos:closeMatch	sweet:matrCompound/NitrogenMonoxide	nitrogen monoxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/no
+sweet:matrCompound/NO2	no2	skos:closeMatch	sweet:matrCompound/NitrogenDioxide	nitrogen dioxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/no2
+sweet:matrCompound/NO3	no3	skos:closeMatch	sweet:matrCompound/NitrateRadical	nitrate radical	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/no3
+sweet:matrCompound/NOx	nox	skos:closeMatch	sweet:matrCompound/NitrogenOxide	nitrogen oxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/nox
+sweet:matrCompound/NaCl	nacl	skos:closeMatch	sweet:matrCompound/Salt	salt	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/nacl
+sweet:matrCompound/NitricOxide	nitric oxide	skos:closeMatch	sweet:matrCompound/NitrogenMonoxide	nitrogen monoxide	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:matrcompound/no
+sweet:matrCompound/PO	po	skos:closeMatch	sweet:matrCompound/Phosphate	phosphate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/po
+sweet:matrCompound/SO2	so2	skos:closeMatch	sweet:matrCompound/SulfurDioxide	sulfur dioxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/so2
+sweet:matrCompound/SO4	so4	skos:closeMatch	sweet:matrCompound/Sulfate	sulfate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/so4
+sweet:matrCompound/SOx	sox	skos:closeMatch	sweet:matrCompound/SulfurOxide	sulfur oxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/sox
+sweet:matrCompound/SiO2	sio2	skos:closeMatch	sweet:matrCompound/Silica	silica	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/sio2
+sweet:matrCompound/SiO2	sio2	skos:closeMatch	sweet:matrCompound/Silica	silica	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/sio2
+sweet:matrCompound/SiO2	sio2	skos:closeMatch	sweet:matrCompound/SiliconDioxide	silicon dioxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/sio2
+sweet:matrCompound/SiO2	sio2	skos:closeMatch	sweet:matrCompound/SiliconDioxide	silicon dioxide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrcompound/sio2
+sweet:matrCompound/Silica	silica	skos:closeMatch	sweet:matrCompound/SiliconDioxide	silicon dioxide	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:matrcompound/sio2
+sweet:matrElement/Al	al	skos:closeMatch	sweet:matrElement/Aluminum	aluminum	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/al
+sweet:matrElement/Aluminum	aluminum	skos:closeMatch	sweet:matrMineral/Aluminum	Aluminum	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	aluminum
+sweet:matrElement/Antimony	antimony	skos:closeMatch	sweet:matrElement/Sb	sb	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/antimony
+sweet:matrElement/Antimony	antimony	skos:closeMatch	sweet:matrMineral/Antimony	Antimony	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	antimony
+sweet:matrElement/Ar	ar	skos:closeMatch	sweet:matrElement/Argon	argon	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/ar
+sweet:matrElement/Arsenic	arsenic	skos:closeMatch	sweet:matrElement/As	as	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/arsenic
+sweet:matrElement/Arsenic	arsenic	skos:closeMatch	sweet:matrMineral/Arsenic	Arsenic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	arsenic
+sweet:matrElement/B	b	skos:closeMatch	sweet:matrElement/Boron	boron	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/b
+sweet:matrElement/B	b	skos:closeMatch	sweet:realmClimateZone/B	b	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	b
+sweet:matrElement/Be	be	skos:closeMatch	sweet:matrElement/Beryllium	beryllium	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/be
+sweet:matrElement/Br	br	skos:closeMatch	sweet:matrElement/Bromine	bromine	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/br
+sweet:matrElement/C	c	skos:closeMatch	sweet:matrElement/Carbon	carbon	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/c
+sweet:matrElement/C	c	skos:closeMatch	sweet:realmClimateZone/C	c	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	c
+sweet:matrElement/Ca	ca	skos:closeMatch	sweet:matrElement/Calcium	calcium	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/ca
+sweet:matrElement/Cadmium	cadmium	skos:closeMatch	sweet:matrElement/Cd	cd	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/cadmium
+sweet:matrElement/Cadmium	cadmium	skos:closeMatch	sweet:matrMineral/Cadmium	Cadmium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cadmium
+sweet:matrElement/Ch	ch	skos:closeMatch	sweet:matrElement/Chromium	chromium	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/ch
+sweet:matrElement/Chlorine	chlorine	skos:closeMatch	sweet:matrElement/Cl	cl	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/chlorine
+sweet:matrElement/Chromium	chromium	skos:closeMatch	sweet:matrMineral/Chromium	Chromium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chromium
+sweet:matrElement/Copper	copper	skos:closeMatch	sweet:matrElement/Cu	cu	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/copper
+sweet:matrElement/Copper	copper	skos:closeMatch	sweet:matrMineral/Copper	Copper	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	copper
+sweet:matrElement/F	f	skos:closeMatch	sweet:matrElement/Fluorine	fluorine	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/f
+sweet:matrElement/Fe	fe	skos:closeMatch	sweet:matrElement/Iron	iron	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/fe
+sweet:matrElement/H	h	skos:closeMatch	sweet:matrElement/Hydrogen	hydrogen	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/h
+sweet:matrElement/He	he	skos:closeMatch	sweet:matrElement/Helium	helium	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/he
+sweet:matrElement/Hg	hg	skos:closeMatch	sweet:matrElement/Mercury	mercury	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/hg
+sweet:matrElement/I	i	skos:closeMatch	sweet:matrElement/Iodine	iodine	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/i
+sweet:matrElement/Iron	iron	skos:closeMatch	sweet:matrMineral/Iron	Iron	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	iron
+sweet:matrElement/K	k	skos:closeMatch	sweet:matrElement/Potassium	potassium	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/k
+sweet:matrElement/Lead	lead	skos:closeMatch	sweet:matrElement/Pb	pb	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/lead
+sweet:matrElement/Lead	lead	skos:closeMatch	sweet:matrMineral/Lead	Lead	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	lead
+sweet:matrElement/Lead	lead	skos:closeMatch	sweet:realmCryo/Lead	lead	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	lead
+sweet:matrElement/Li	li	skos:closeMatch	sweet:matrElement/Lithium	lithium	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/li
+sweet:matrElement/Magnesium	magnesium	skos:closeMatch	sweet:matrElement/Mg	mg	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/magnesium
+sweet:matrElement/Manganese	manganese	skos:closeMatch	sweet:matrElement/Mn	mn	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/manganese
+sweet:matrElement/Mercury	mercury	skos:closeMatch	sweet:matrMineral/Mercury	Mercury	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mercury
+sweet:matrElement/Mo	mo	skos:closeMatch	sweet:matrElement/Molybdenum	molybdenum	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/mo
+sweet:matrElement/N	n	skos:closeMatch	sweet:matrElement/Nitrogen	nitrogen	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/n
+sweet:matrElement/Na	na	skos:closeMatch	sweet:matrElement/Sodium	sodium	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/na
+sweet:matrElement/Ne	ne	skos:closeMatch	sweet:matrElement/Neon	neon	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/ne
+sweet:matrElement/O	o	skos:closeMatch	sweet:matrElement/Oxygen	oxygen	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/o
+sweet:matrElement/P	p	skos:closeMatch	sweet:matrElement/Phosphorus	phosphorus	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/p
+sweet:matrElement/Radon	radon	skos:closeMatch	sweet:matrElement/Rn	rn	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/radon
+sweet:matrElement/S	s	skos:closeMatch	sweet:matrElement/Sulfur	sulfur	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/s
+sweet:matrElement/S	s	skos:closeMatch	sweet:reprSpaceCoordinate/S	s	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	s
+sweet:matrElement/Selenium	selenium	skos:closeMatch	sweet:matrMineral/Selenium	Selenium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	selenium
+sweet:matrElement/Si	si	skos:closeMatch	sweet:matrElement/Silicon	silicon	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/si
+sweet:matrElement/Silicon	silicon	skos:closeMatch	sweet:matrMineral/Silicon	Silicon	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	silicon
+sweet:matrElement/Sulfur	sulfur	skos:closeMatch	sweet:matrMineral/Sulfur	Sulfur	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sulfur
+sweet:matrElement/Th	th	skos:closeMatch	sweet:matrElement/Thorium	thorium	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/th
+sweet:matrElement/Zi	zi	skos:closeMatch	sweet:matrElement/Zinc	zinc	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelement/zi
+sweet:matrElement/Zinc	zinc	skos:closeMatch	sweet:matrMineral/Zinc	Zinc	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	zinc
+sweet:matrElementalMolecule/C12	c12	skos:closeMatch	sweet:matrIsotope/C12	c12	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	c12
+sweet:matrElementalMolecule/F2	f2	skos:closeMatch	sweet:stateStorm/F2	f2	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	f2
+sweet:matrElementalMolecule/F3	f3	skos:closeMatch	sweet:stateStorm/F3	f3	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	f3
+sweet:matrElementalMolecule/F4	f4	skos:closeMatch	sweet:stateStorm/F4	f4	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	f4
+sweet:matrElementalMolecule/H2	h2	skos:closeMatch	sweet:matrIsotope/H2	h2	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	h2
+sweet:matrElementalMolecule/H3	h3	skos:closeMatch	sweet:matrIsotope/H3	h3	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	h3
+sweet:matrElementalMolecule/MolecularOxygen	molecular oxygen	skos:closeMatch	sweet:matrElementalMolecule/O2	o2	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelementalmolecule/molecularoxygen
+sweet:matrElementalMolecule/O3	o3	skos:closeMatch	sweet:matrElementalMolecule/Ozone	ozone	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrelementalmolecule/o3
+sweet:matrEnergy/Ethanol	ethanol	skos:closeMatch	sweet:matrOrganicCompound/Ethanol	ethanol	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ethanol
+sweet:matrEquipment/Jet	jet	skos:closeMatch	sweet:phenFluidDynamics/Jet	jet	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	jet
+sweet:matrEquipment/Pipeline	pipeline	skos:closeMatch	sweet:reprSciProvenance/Pipeline	pipeline	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pipeline
+sweet:matrEquipment/Satellite	satellite	skos:closeMatch	sweet:realmAstroBody/Satellite	satellite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	satellite
+sweet:matrEquipment/Sink	sink	skos:closeMatch	sweet:reprSciComponent/Sink	sink	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sink
+sweet:matrEquipment/Train	train	skos:closeMatch	sweet:reprDataServiceAnalysis/Train	train	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	train
+sweet:matrEquipment/Transmission	transmission	skos:closeMatch	sweet:procWave/Transmission	transmission	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	transmission
+sweet:matrEquipment/Well	well	skos:closeMatch	sweet:reprMathFunction/Well	well	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	well
+sweet:matrEquipment/Well	well	skos:closeMatch	sweet:stateOrdinal/Well	well	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	well
+sweet:matrFacility/Base	base	skos:closeMatch	sweet:stateChemical/Base	base	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	base
+sweet:matrFacility/Base	base	skos:closeMatch	sweet:stateSpaceConfiguration/Base	base	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	base
+sweet:matrFacility/Dome	dome	skos:closeMatch	sweet:reprSpaceGeometry3D/Dome	dome	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dome
+sweet:matrFacility/Fishery	fishery	skos:closeMatch	sweet:realmBiolBiome/Fishery	fishery	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fishery
+sweet:matrFacility/Habitat	habitat	skos:closeMatch	sweet:stateRoleBiological/Habitat	habitat	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	habitat
+sweet:matrFacility/Structure	structure	skos:closeMatch	sweet:propMass/Structure	structure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	structure
+sweet:matrFacility/Structure	structure	skos:closeMatch	sweet:reprDataModel/Structure	structure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	structure
+sweet:matrIndustrial/Product	product	skos:closeMatch	sweet:relaMath/productOf	product of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	product
+sweet:matrIndustrial/Product	product	skos:closeMatch	sweet:reprMathOperation/Product	product	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	product
+sweet:matrIndustrial/Product	product	skos:closeMatch	sweet:stateRoleChemical/Product	product	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	product
+sweet:matrIon/Ammonium	ammonium	skos:closeMatch	sweet:matrIon/NH4plus	nh4plus	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrion/ammonium
+sweet:matrIon/Bicarbonite	bicarbonite	skos:closeMatch	sweet:matrIon/HCO3minus	hco3minus	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	sweet:matrion/hco3minus
+sweet:matrIon/Bicarbonite	bicarbonite	skos:closeMatch	sweet:matrIon/HCO3minus	hco3minus	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrion/bicarbonite
+sweet:matrIon/Bicarbonite	bicarbonite	skos:closeMatch	sweet:matrIon/HydrogenCarbonate	hydrogen carbonate	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs-INVERSE	sweet:matrion/hco3minus
+sweet:matrIon/CO3minusminus	co3minusminus	skos:closeMatch	sweet:matrIon/Carbonate	carbonate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrion/co3minusminus
+sweet:matrIon/HCO3minus	hco3minus	skos:closeMatch	sweet:matrIon/HydrogenCarbonate	hydrogen carbonate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrion/hco3minus
+sweet:matrIon/NO2minus	no2minus	skos:closeMatch	sweet:matrIon/Nitrite	nitrite	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrion/no2minus
+sweet:matrIon/NO3minus	no3minus	skos:closeMatch	sweet:matrIon/Nitrate	nitrate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrion/no3minus
+sweet:matrIsotope/D	d	skos:closeMatch	sweet:matrIsotope/Deuterium	deuterium	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs	sweet:matrisotope/h2
+sweet:matrIsotope/D	d	skos:closeMatch	sweet:matrIsotope/H2	h2	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrisotope/d
+sweet:matrIsotope/D	d	skos:closeMatch	sweet:realmClimateZone/D	d	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	d
+sweet:matrIsotope/Deuterium	deuterium	skos:closeMatch	sweet:matrIsotope/H2	h2	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrisotope/deuterium
+sweet:matrIsotope/H1	h1	skos:closeMatch	sweet:stateSpectralLine/H1	h1	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	h1
+sweet:matrIsotope/H3	h3	skos:closeMatch	sweet:matrIsotope/T	t	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrisotope/h3
+sweet:matrIsotope/H3	h3	skos:closeMatch	sweet:matrIsotope/T	t	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrisotope/h3
+sweet:matrIsotope/H3	h3	skos:closeMatch	sweet:matrIsotope/Tritium	tritium	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrisotope/h3
+sweet:matrIsotope/H3	h3	skos:closeMatch	sweet:matrIsotope/Tritium	tritium	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrisotope/h3
+sweet:matrIsotope/Radiation	radiation	skos:closeMatch	sweet:procPhysical/Radiation	radiation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	radiation
+sweet:matrIsotope/T	t	skos:closeMatch	sweet:matrIsotope/Tritium	tritium	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:matrisotope/h3
+sweet:matrMineral/Bentonite	Bentonite	skos:closeMatch	sweet:matrSediment/Bentonite	bentonite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bentonite
+sweet:matrMineral/Ice	Ice	skos:closeMatch	sweet:matrWater/Ice	ice	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ice
+sweet:matrMineral/Lead	Lead	skos:closeMatch	sweet:realmCryo/Lead	lead	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	lead
+sweet:matrMineral/Methane_Clathrate	Methane Clathrate	skos:closeMatch	sweet:matrOrganicCompound/MethaneClathrate	methane clathrate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	clathrate methane
+sweet:matrMineral/Methane_hydrate	Methane hydrate	skos:closeMatch	sweet:matrOrganicCompound/MethaneHydrate	methane hydrate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hydrate methane
+sweet:matrMineral/Plasma	Plasma	skos:closeMatch	sweet:statePhysical/Plasma	plasma	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	plasma
+sweet:matrNaturalResource/Deposit	deposit	skos:closeMatch	sweet:phenSystem/Deposit	deposit	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	deposit
+sweet:matrOrganicCompound/Acenaphthene	acenaphthene	skos:closeMatch	sweet:matrOrganicCompound/C12H10	c12h10	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/acenaphthene
+sweet:matrOrganicCompound/Acenaphthylene	acenaphthylene	skos:closeMatch	sweet:matrOrganicCompound/C12H8	c12h8	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/acenaphthylene
+sweet:matrOrganicCompound/Acetonitrile	acetonitrile	skos:closeMatch	sweet:matrOrganicCompound/CH3CN	ch3cn	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	sweet:matrorganiccompound/ch3cn
+sweet:matrOrganicCompound/Acetonitrile	acetonitrile	skos:closeMatch	sweet:matrOrganicCompound/CH3CN	ch3cn	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/acetonitrile
+sweet:matrOrganicCompound/Acetonitrile	acetonitrile	skos:closeMatch	sweet:matrOrganicCompound/MethylCyanide	methyl cyanide	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs-INVERSE	sweet:matrorganiccompound/ch3cn
+sweet:matrOrganicCompound/Acrolein	acrolein	skos:closeMatch	sweet:matrOrganicCompound/C3H4O	c3h4o	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/acrolein
+sweet:matrOrganicCompound/Acrylonitrile	acrylonitrile	skos:closeMatch	sweet:matrOrganicCompound/CH2CHCN	ch2chcn	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/acrylonitrile
+sweet:matrOrganicCompound/Benzene	benzene	skos:closeMatch	sweet:matrOrganicCompound/Benzol	benzol	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs	sweet:matrorganiccompound/c6h6
+sweet:matrOrganicCompound/Benzene	benzene	skos:closeMatch	sweet:matrOrganicCompound/C6H6	c6h6	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/benzene
+sweet:matrOrganicCompound/Benzol	benzol	skos:closeMatch	sweet:matrOrganicCompound/C6H6	c6h6	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/benzol
+sweet:matrOrganicCompound/Butane	butane	skos:closeMatch	sweet:matrOrganicCompound/C4H10	c4h10	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/butane
+sweet:matrOrganicCompound/C2Br2F4	c2br2f4	skos:closeMatch	sweet:matrOrganicCompound/C2F4Br2	c2f4br2	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2br2f4
+sweet:matrOrganicCompound/C2Br2F4	c2br2f4	skos:closeMatch	sweet:matrOrganicCompound/C2F4Br2	c2f4br2	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2br2f4
+sweet:matrOrganicCompound/C2Br2F4	c2br2f4	skos:closeMatch	sweet:matrOrganicCompound/C2F4Br2	c2f4br2	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2br2f4
+sweet:matrOrganicCompound/C2Br2F4	c2br2f4	skos:closeMatch	sweet:matrOrganicCompound/Dibromotetrafluoroethane	dibromotetrafluoroethane	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2br2f4
+sweet:matrOrganicCompound/C2Br2F4	c2br2f4	skos:closeMatch	sweet:matrOrganicCompound/Dibromotetrafluoroethane	dibromotetrafluoroethane	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2br2f4
+sweet:matrOrganicCompound/C2Br2F4	c2br2f4	skos:closeMatch	sweet:matrOrganicCompound/Dibromotetrafluoroethane	dibromotetrafluoroethane	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2br2f4
+sweet:matrOrganicCompound/C2Br2F4	c2br2f4	skos:closeMatch	sweet:matrOrganicCompound/Halon2402	halon2402	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2br2f4
+sweet:matrOrganicCompound/C2Br2F4	c2br2f4	skos:closeMatch	sweet:matrOrganicCompound/Halon2402	halon2402	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2br2f4
+sweet:matrOrganicCompound/C2Br2F4	c2br2f4	skos:closeMatch	sweet:matrOrganicCompound/Halon2402	halon2402	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2br2f4
+sweet:matrOrganicCompound/C2F4Br2	c2f4br2	skos:closeMatch	sweet:matrOrganicCompound/Dibromotetrafluoroethane	dibromotetrafluoroethane	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2br2f4
+sweet:matrOrganicCompound/C2F4Br2	c2f4br2	skos:closeMatch	sweet:matrOrganicCompound/Halon2402	halon2402	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2br2f4
+sweet:matrOrganicCompound/C2H3NO5	c2h3no5	skos:closeMatch	sweet:matrOrganicCompound/PAN	pan	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2h3no5
+sweet:matrOrganicCompound/C2H3NO5	c2h3no5	skos:closeMatch	sweet:matrOrganicCompound/PAN	pan	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2h3no5
+sweet:matrOrganicCompound/C2H3NO5	c2h3no5	skos:closeMatch	sweet:matrOrganicCompound/PeroxyacetylNitrate	peroxyacetyl nitrate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2h3no5
+sweet:matrOrganicCompound/C2H3NO5	c2h3no5	skos:closeMatch	sweet:matrOrganicCompound/PeroxyacetylNitrate	peroxyacetyl nitrate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2h3no5
+sweet:matrOrganicCompound/C2H4	c2h4	skos:closeMatch	sweet:matrOrganicCompound/Ethene	ethene	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2h4
+sweet:matrOrganicCompound/C2H6	c2h6	skos:closeMatch	sweet:matrOrganicCompound/Ethane	ethane	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2h6
+sweet:matrOrganicCompound/C2H6O	c2h6o	skos:closeMatch	sweet:matrOrganicCompound/Ethanol	ethanol	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2h6o
+sweet:matrOrganicCompound/C2H6S	c2h6s	skos:closeMatch	sweet:matrOrganicCompound/DMS	dms	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2h6s
+sweet:matrOrganicCompound/C2H6S	c2h6s	skos:closeMatch	sweet:matrOrganicCompound/DMS	dms	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2h6s
+sweet:matrOrganicCompound/C2H6S	c2h6s	skos:closeMatch	sweet:matrOrganicCompound/DimethylSulfide	dimethyl sulfide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2h6s
+sweet:matrOrganicCompound/C2H6S	c2h6s	skos:closeMatch	sweet:matrOrganicCompound/DimethylSulfide	dimethyl sulfide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2h6s
+sweet:matrOrganicCompound/C3H6	c3h6	skos:closeMatch	sweet:matrOrganicCompound/Propene	propene	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c3h6
+sweet:matrOrganicCompound/C3H8	c3h8	skos:closeMatch	sweet:matrOrganicCompound/Propane	propane	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c3h8
+sweet:matrOrganicCompound/C5H12O	c5h12o	skos:closeMatch	sweet:matrOrganicCompound/MTBE	mtbe	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c5h12o
+sweet:matrOrganicCompound/C5H12O	c5h12o	skos:closeMatch	sweet:matrOrganicCompound/MTBE	mtbe	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c5h12o
+sweet:matrOrganicCompound/C5H12O	c5h12o	skos:closeMatch	sweet:matrOrganicCompound/MethylTertButylEther	methyl tert butyl ether	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c5h12o
+sweet:matrOrganicCompound/C5H12O	c5h12o	skos:closeMatch	sweet:matrOrganicCompound/MethylTertButylEther	methyl tert butyl ether	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c5h12o
+sweet:matrOrganicCompound/C5H8	c5h8	skos:closeMatch	sweet:matrOrganicCompound/Isoprene	isoprene	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c5h8
+sweet:matrOrganicCompound/C7H8	c7h8	skos:closeMatch	sweet:matrOrganicCompound/Toluene	toluene	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c7h8
+sweet:matrOrganicCompound/C8H10	c8h10	skos:closeMatch	sweet:matrOrganicCompound/Xylene	xylene	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/c8h10
+sweet:matrOrganicCompound/CBrF2	cbrf2	skos:closeMatch	sweet:matrOrganicCompound/Halon1202	halon1202	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/cbrf2
+sweet:matrOrganicCompound/CBrF3	cbrf3	skos:closeMatch	sweet:matrOrganicCompound/Halon1301	halon1301	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/cbrf3
+sweet:matrOrganicCompound/CCl2F2	ccl2f2	skos:closeMatch	sweet:matrOrganicCompound/Dichlorodifluoromethane	dichlorodifluoromethane	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/ccl2f2
+sweet:matrOrganicCompound/CCl2F2	ccl2f2	skos:closeMatch	sweet:matrOrganicCompound/Dichlorodifluoromethane	dichlorodifluoromethane	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/ccl2f2
+sweet:matrOrganicCompound/CCl2F2	ccl2f2	skos:closeMatch	sweet:matrOrganicCompound/Freon12	freon12	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/ccl2f2
+sweet:matrOrganicCompound/CCl2F2	ccl2f2	skos:closeMatch	sweet:matrOrganicCompound/Freon12	freon12	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/ccl2f2
+sweet:matrOrganicCompound/CF2ClBr	cf2clbr	skos:closeMatch	sweet:matrOrganicCompound/Halon1211	halon1211	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/cf2clbr
+sweet:matrOrganicCompound/CF4	cf4	skos:closeMatch	sweet:matrOrganicCompound/CarbonTetrafluoride	carbon tetrafluoride	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/cf4
+sweet:matrOrganicCompound/CF4	cf4	skos:closeMatch	sweet:matrOrganicCompound/CarbonTetrafluoride	carbon tetrafluoride	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/cf4
+sweet:matrOrganicCompound/CF4	cf4	skos:closeMatch	sweet:matrOrganicCompound/CarbonTetrafluoride	carbon tetrafluoride	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/cf4
+sweet:matrOrganicCompound/CF4	cf4	skos:closeMatch	sweet:matrOrganicCompound/CarbonTetrafluoromethane	carbon tetrafluoromethane	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/cf4
+sweet:matrOrganicCompound/CF4	cf4	skos:closeMatch	sweet:matrOrganicCompound/CarbonTetrafluoromethane	carbon tetrafluoromethane	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/cf4
+sweet:matrOrganicCompound/CF4	cf4	skos:closeMatch	sweet:matrOrganicCompound/CarbonTetrafluoromethane	carbon tetrafluoromethane	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/cf4
+sweet:matrOrganicCompound/CF4	cf4	skos:closeMatch	sweet:matrOrganicCompound/Freon14	freon14	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/cf4
+sweet:matrOrganicCompound/CF4	cf4	skos:closeMatch	sweet:matrOrganicCompound/Freon14	freon14	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/cf4
+sweet:matrOrganicCompound/CF4	cf4	skos:closeMatch	sweet:matrOrganicCompound/Freon14	freon14	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/cf4
+sweet:matrOrganicCompound/CFC	cfc	skos:closeMatch	sweet:realmClimateZone/Cfc	cfc	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cfc
+sweet:matrOrganicCompound/CH2O	ch2o	skos:closeMatch	sweet:matrOrganicCompound/Formaldehyde	formaldehyde	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/ch2o
+sweet:matrOrganicCompound/CH2O2	ch2o2	skos:closeMatch	sweet:matrOrganicCompound/FormicAcid	formic acid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/ch2o2
+sweet:matrOrganicCompound/CH2O2	ch2o2	skos:closeMatch	sweet:matrOrganicCompound/FormicAcid	formic acid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/ch2o2
+sweet:matrOrganicCompound/CH2O2	ch2o2	skos:closeMatch	sweet:matrOrganicCompound/MethanoicAcid	methanoic acid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/ch2o2
+sweet:matrOrganicCompound/CH2O2	ch2o2	skos:closeMatch	sweet:matrOrganicCompound/MethanoicAcid	methanoic acid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/ch2o2
+sweet:matrOrganicCompound/CH3CN	ch3cn	skos:closeMatch	sweet:matrOrganicCompound/MethylCyanide	methyl cyanide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/ch3cn
+sweet:matrOrganicCompound/CH3COOH	ch3cooh	skos:closeMatch	sweet:matrOrganicCompound/EthanoicAcid	ethanoic acid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/ch3cooh
+sweet:matrOrganicCompound/CH4	ch4	skos:closeMatch	sweet:matrOrganicCompound/Methane	methane	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/ch4
+sweet:matrOrganicCompound/CaCO3	caco3	skos:closeMatch	sweet:matrOrganicCompound/CalciumCarbonate	calcium carbonate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/caco3
+sweet:matrOrganicCompound/CarbonTetrafluoride	carbon tetrafluoride	skos:closeMatch	sweet:matrOrganicCompound/CarbonTetrafluoromethane	carbon tetrafluoromethane	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:matrorganiccompound/cf4
+sweet:matrOrganicCompound/CarbonTetrafluoride	carbon tetrafluoride	skos:closeMatch	sweet:matrOrganicCompound/Freon14	freon14	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:matrorganiccompound/cf4
+sweet:matrOrganicCompound/CarbonTetrafluoromethane	carbon tetrafluoromethane	skos:closeMatch	sweet:matrOrganicCompound/Freon14	freon14	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:matrorganiccompound/cf4
+sweet:matrOrganicCompound/CarbonylSulfide	carbonyl sulfide	skos:closeMatch	sweet:matrOrganicCompound/OCS	ocs	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/carbonylsulfide
+sweet:matrOrganicCompound/Chlorophyll	chlorophyll	skos:closeMatch	sweet:matrOrganicCompound/ChlorophyllA	chlorophyll a	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+sweet:matrOrganicCompound/DMS	dms	skos:closeMatch	sweet:matrOrganicCompound/DimethylSulfide	dimethyl sulfide	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2h6s
+sweet:matrOrganicCompound/Dibromotetrafluoroethane	dibromotetrafluoroethane	skos:closeMatch	sweet:matrOrganicCompound/Halon2402	halon2402	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2br2f4
+sweet:matrOrganicCompound/Dichlorodifluoromethane	dichlorodifluoromethane	skos:closeMatch	sweet:matrOrganicCompound/Freon12	freon12	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:matrorganiccompound/ccl2f2
+sweet:matrOrganicCompound/FC	fc	skos:closeMatch	sweet:matrOrganicCompound/Fluorocarbon	fluorocarbon	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/fc
+sweet:matrOrganicCompound/FormicAcid	formic acid	skos:closeMatch	sweet:matrOrganicCompound/MethanoicAcid	methanoic acid	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:matrorganiccompound/ch2o2
+sweet:matrOrganicCompound/HCH	hch	skos:closeMatch	sweet:matrOrganicCompound/Hexachlorocyclohexane	hexachlorocyclohexane	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/hch
+sweet:matrOrganicCompound/HCN	hcn	skos:closeMatch	sweet:matrOrganicCompound/HydrogenCyanide	hydrogen cyanide	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/hcn
+sweet:matrOrganicCompound/Hexachlorobiphenyl	hexachlorobiphenyl	skos:closeMatch	sweet:matrOrganicCompound/PCB153	pcb153	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/hexachlorobiphenyl
+sweet:matrOrganicCompound/MTBE	mtbe	skos:closeMatch	sweet:matrOrganicCompound/MethylTertButylEther	methyl tert butyl ether	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:matrorganiccompound/c5h12o
+sweet:matrOrganicCompound/NMHC	nmhc	skos:closeMatch	sweet:matrOrganicCompound/NonMethaneHydrocarbon	non methane hydrocarbon	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/nmhc
+sweet:matrOrganicCompound/PAN	pan	skos:closeMatch	sweet:matrOrganicCompound/PeroxyacetylNitrate	peroxyacetyl nitrate	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:matrorganiccompound/c2h3no5
+sweet:matrOrganicCompound/PCB	pcb	skos:closeMatch	sweet:matrOrganicCompound/PolychlorinatedBiphenyl	polychlorinated biphenyl	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:matrorganiccompound/pcb
+sweet:matrParticle/Particle	particle	skos:closeMatch	sweet:statePhysical/Particle	particle	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	particle
+sweet:matrPlant/Exotic	exotic	skos:closeMatch	sweet:stateRoleRepresentative/Exotic	exotic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	exotic
+sweet:matrPlant/Native	native	skos:closeMatch	sweet:stateSystem/Native	native	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	native
+sweet:matrPlant/OldGrowth	old growth	skos:closeMatch	sweet:stateBiological/OldGrowth	old growth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	growth old
+sweet:matrPlant/Tree	tree	skos:closeMatch	sweet:reprMathGraph/Tree	tree	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tree
+sweet:matrRock/Regolith	regolith	skos:closeMatch	sweet:realmSoil/Regolith	regolith	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	regolith
+sweet:matrSediment/Granule	granule	skos:closeMatch	sweet:phenStar/Granule	granule	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	granule
+sweet:matrSediment/Granule	granule	skos:closeMatch	sweet:reprDataProduct/Granule	granule	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	granule
+sweet:matrWater/Drop	drop	skos:closeMatch	sweet:phenSystem/Drop	drop	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	drop
+sweet:matrWater/Drop	drop	skos:closeMatch	sweet:relaSci/drop	drop	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	drop
+sweet:matrWater/Hydrate	hydrate	skos:closeMatch	sweet:stateRoleChemical/Hydrate	hydrate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hydrate
+sweet:phen/Precipitation	precipitation	skos:closeMatch	sweet:propSpaceThickness/Precipitation	precipitation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	precipitation
+sweet:phenAtmoFront/TriplePoint	triple point	skos:closeMatch	sweet:propTemperature/TriplePoint	triple point	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	point triple
+sweet:phenAtmoPrecipitation/SquallLine	squall line	skos:closeMatch	sweet:phenAtmoWindMesoscale/LineSquall	line squall	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	line squall
+sweet:phenBiol/Assimilation	assimilation	skos:closeMatch	sweet:reprDataServiceAnalysis/Assimilation	assimilation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	assimilation
+sweet:phenBiol/Exposure	exposure	skos:closeMatch	sweet:propTime/Exposure	exposure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	exposure
+sweet:phenBiol/Sense	sense	skos:closeMatch	sweet:phenGeolFault/Sense	sense	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sense
+sweet:phenBiol/Uptake	uptake	skos:closeMatch	sweet:phenFluidTransport/Uptake	uptake	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	uptake
+sweet:phenCryo/Accumulation	accumulation	skos:closeMatch	sweet:phenSystem/Accumulation	accumulation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	accumulation
+sweet:phenEcology/Evolution	evolution	skos:closeMatch	sweet:phenSystemComplexity/Evolution	evolution	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	evolution
+sweet:phenEcology/Migration	migration	skos:closeMatch	sweet:procPhysical/Migration	migration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	migration
+sweet:phenEnergy/Gasification	gasification	skos:closeMatch	sweet:procStateChange/Gasification	gasification	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gasification
+sweet:phenEnergy/Geothermal	geothermal	skos:closeMatch	sweet:realmLandVolcanic/Geothermal	geothermal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	geothermal
+sweet:phenEnvirImpact/Extinction	extinction	skos:closeMatch	sweet:procWave/Extinction	extinction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	extinction
+sweet:phenFluidDynamics/BoundaryLayer	boundary layer	skos:closeMatch	sweet:realmAtmoBoundaryLayer/BoundaryLayer	boundary layer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	boundary layer
+sweet:phenFluidDynamics/Cell	cell	skos:closeMatch	sweet:reprDataModel/Cell	cell	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cell
+sweet:phenFluidDynamics/Circulation	circulation	skos:closeMatch	sweet:propRotation/Circulation	circulation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	circulation
+sweet:phenFluidDynamics/Depression	depression	skos:closeMatch	sweet:reprSpaceGeometry/Depression	depression	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depression
+sweet:phenFluidDynamics/Eddy	eddy	skos:closeMatch	sweet:statePhysical/Eddy	eddy	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	eddy
+sweet:phenFluidDynamics/Flow	flow	skos:closeMatch	sweet:phenSystem/Flow	flow	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	flow
+sweet:phenFluidDynamics/Ridge	ridge	skos:closeMatch	sweet:realmLandOrographic/Ridge	ridge	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ridge
+sweet:phenFluidDynamics/Ridge	ridge	skos:closeMatch	sweet:reprSpaceGeometry/Ridge	ridge	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ridge
+sweet:phenFluidDynamics/Trough	trough	skos:closeMatch	sweet:reprSpaceGeometry/Trough	trough	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	trough
+sweet:phenFluidInstability/Inversion	inversion	skos:closeMatch	sweet:stateThermodynamic/Inversion	inversion	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	inversion
+sweet:phenFluidTransport/Deposition	deposition	skos:closeMatch	sweet:procStateChange/Deposition	deposition	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	deposition
+sweet:phenFluidTransport/Surge	surge	skos:closeMatch	sweet:phenGeolVolcano/Surge	surge	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surge
+sweet:phenFluidTransport/Transport	transport	skos:closeMatch	sweet:relaPhysical/transportOf	transport of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	transport
+sweet:phenGeol/CompositeProcess	composite process	skos:closeMatch	sweet:phenGeolTectonic/CompositeProcess	composite process	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	composite process
+sweet:phenGeol/Differentiation	differentiation	skos:closeMatch	sweet:reprMathOperation/Differentiation	differentiation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	differentiation
+sweet:phenGeolFault/Horizontal	horizontal	skos:closeMatch	sweet:reprSpaceDirection/Horizontal	horizontal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	horizontal
+sweet:phenGeolFault/Normal	normal	skos:closeMatch	sweet:reprMathFunction/Normal	normal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	normal
+sweet:phenGeolFault/Normal	normal	skos:closeMatch	sweet:reprSpaceDirection/Normal	normal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	normal
+sweet:phenGeolFault/Slip	slip	skos:closeMatch	sweet:phenSolid/Slip	slip	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	slip
+sweet:phenGeolGeomorphology/Abrasion	abrasion	skos:closeMatch	sweet:procPhysical/Abrasion	abrasion	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	abrasion
+sweet:phenGeolGeomorphology/Compaction	compaction	skos:closeMatch	sweet:phenSolid/Compaction	compaction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	compaction
+sweet:phenGeolGeomorphology/Creep	creep	skos:closeMatch	sweet:phenGeolTectonic/Creep	creep	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	creep
+sweet:phenGeolGeomorphology/Diagenesis	diagenesis	skos:closeMatch	sweet:phenSolid/Diagenesis	diagenesis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	diagenesis
+sweet:phenGeolGeomorphology/Subsidence	subsidence	skos:closeMatch	sweet:phenSolid/Subsidence	subsidence	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	subsidence
+sweet:phenHydro/Recharge	recharge	skos:closeMatch	sweet:phenSystemComplexity/Recharge	recharge	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	recharge
+sweet:phenHydro/SnowCover	snow cover	skos:closeMatch	sweet:propSpaceThickness/SnowCover	snow cover	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cover snow
+sweet:phenMixing/Diffuse	diffuse	skos:closeMatch	sweet:reprSpaceDirection/Diffuse	diffuse	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	diffuse
+sweet:phenMixing/Separation	separation	skos:closeMatch	sweet:stateRoleGeographic/Separation	separation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	separation
+sweet:phenReaction/Emission	emission	skos:closeMatch	sweet:procWave/Emission	emission	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	emission
+sweet:phenReaction/Flare	flare	skos:closeMatch	sweet:phenStar/Flare	flare	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	flare
+sweet:phenSolid/Consolidation	consolidation	skos:closeMatch	sweet:procPhysical/Consolidation	consolidation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	consolidation
+sweet:phenSolid/Distortion	distortion	skos:closeMatch	sweet:phenWaveNoise/Distortion	distortion	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	distortion
+sweet:phenSolid/Distortion	distortion	skos:closeMatch	sweet:prop/Distortion	distortion	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	distortion
+sweet:phenSolid/Extension	extension	skos:closeMatch	sweet:phenSystem/Extension	extension	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	extension
+sweet:phenSolid/Shear	shear	skos:closeMatch	sweet:reprSpaceDirection/Shear	shear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	shear
+sweet:phenStar/Granule	granule	skos:closeMatch	sweet:reprDataProduct/Granule	granule	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	granule
+sweet:phenSystem/Collection	collection	skos:closeMatch	sweet:reprDataProduct/Collection	collection	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	collection
+sweet:phenSystem/Collection	collection	skos:closeMatch	sweet:reprMath/Collection	collection	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	collection
+sweet:phenSystem/Decline	decline	skos:closeMatch	sweet:relaSci/decline	decline	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	decline
+sweet:phenSystem/Decrease	decrease	skos:closeMatch	sweet:relaSci/decrease	decrease	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	decrease
+sweet:phenSystem/Disturbance	disturbance	skos:closeMatch	sweet:propFunction/Disturbance	disturbance	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	disturbance
+sweet:phenSystem/Drift	drift	skos:closeMatch	sweet:propSpeed/Drift	drift	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	drift
+sweet:phenSystem/Drop	drop	skos:closeMatch	sweet:relaSci/drop	drop	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	drop
+sweet:phenSystem/Fall	fall	skos:closeMatch	sweet:relaSci/fall	fall	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fall
+sweet:phenSystem/Fall	fall	skos:closeMatch	sweet:reprTimeSeason/Fall	fall	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fall
+sweet:phenSystem/Increase	increase	skos:closeMatch	sweet:relaSci/increase	increase	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	increase
+sweet:phenSystem/Interaction	interaction	skos:closeMatch	sweet:proc/Interaction	interaction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	interaction
+sweet:phenSystem/Reduction	reduction	skos:closeMatch	sweet:procChemical/Reduction	reduction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reduction
+sweet:phenSystem/Reduction	reduction	skos:closeMatch	sweet:relaSci/reduction	reduction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reduction
+sweet:phenSystem/Reduction	reduction	skos:closeMatch	sweet:reprMathSolution/Reduction	reduction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reduction
+sweet:phenSystem/Rise	rise	skos:closeMatch	sweet:relaSci/rise	rise	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rise
+sweet:phenSystem/Stress	stress	skos:closeMatch	sweet:propPressure/Stress	stress	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stress
+sweet:phenSystemComplexity/Signature	signature	skos:closeMatch	sweet:reprDataServiceValidation/Signature	signature	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	signature
+sweet:phenWave/ShortWave	short wave	skos:closeMatch	sweet:stateSpectralBand/ShortWave	short wave	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	short wave
+sweet:phenWave/Sound	sound	skos:closeMatch	sweet:realmHydroBody/Sound	sound	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sound
+sweet:phenWaveNoise/Distortion	distortion	skos:closeMatch	sweet:prop/Distortion	distortion	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	distortion
+sweet:phenWaveNoise/Interference	interference	skos:closeMatch	sweet:procWave/Interference	interference	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	interference
+sweet:proc/Force	force	skos:closeMatch	sweet:propQuantity/Force	force	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	force
+sweet:proc/Process	process	skos:closeMatch	sweet:reprSciProvenance/Process	process	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	process
+sweet:procChemical/Absorption	absorption	skos:closeMatch	sweet:procWave/Absorption	absorption	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	absorption
+sweet:procChemical/Burning	burning	skos:closeMatch	sweet:procPhysical/Burning	burning	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	burning
+sweet:procChemical/Outgas	outgas	skos:closeMatch	sweet:stateRoleChemical/Outgas	outgas	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	outgas
+sweet:procChemical/Reduction	reduction	skos:closeMatch	sweet:relaSci/reduction	reduction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reduction
+sweet:procChemical/Reduction	reduction	skos:closeMatch	sweet:reprMathSolution/Reduction	reduction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reduction
+sweet:procPhysical/Compression	compression	skos:closeMatch	sweet:reprDataService/Compression	compression	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	compression
+sweet:procPhysical/ElectricCurrent	electric current	skos:closeMatch	sweet:propCharge/ElectricCurrent	electric current	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	current electric
+sweet:procPhysical/Expansion	expansion	skos:closeMatch	sweet:reprMathSolution/Expansion	expansion	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	expansion
+sweet:procPhysical/Falling	falling	skos:closeMatch	sweet:relaSci/falling	falling	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	falling
+sweet:procPhysical/Orientation	orientation	skos:closeMatch	sweet:propSpaceDirection/Orientation	orientation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	orientation
+sweet:procPhysical/Pressure	pressure	skos:closeMatch	sweet:propPressure/Pressure	pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure
+sweet:procPhysical/Pressure	pressure	skos:closeMatch	sweet:reprSpaceCoordinate/Pressure	pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure
+sweet:procPhysical/Sinking	sinking	skos:closeMatch	sweet:reprSpaceDirection/Sinking	sinking	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sinking
+sweet:prop/Efficiency	efficiency	skos:closeMatch	sweet:propFraction/Efficiency	efficiency	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	efficiency
+sweet:prop/Measure	measure	skos:closeMatch	sweet:relaSci/measureOf	measure of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	measure
+sweet:propCapacity/Capacity	capacity	skos:closeMatch	sweet:propSpaceMultidimensional/Capacity	capacity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	capacity
+sweet:propCapacity/CoefficientOfThermalExpansion	coefficient of thermal expansion	skos:closeMatch	sweet:propCapacity/ThermalExpansionCoefficient	thermal expansion coefficient	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	coefficient expansion thermal
+sweet:propCategorical/Classification	classification	skos:closeMatch	sweet:reprDataServiceAnalysis/Classification	classification	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	classification
+sweet:propCharge/Permeability	permeability	skos:closeMatch	sweet:propMassFlux/Permeability	permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permeability
+sweet:propDifference/Anomaly	anomaly	skos:closeMatch	sweet:stateRoleRepresentative/Anomaly	anomaly	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	anomaly
+sweet:propDifference/Difference	difference	skos:closeMatch	sweet:reprMathOperation/Difference	difference	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	difference
+sweet:propDifference/NDVI	ndvi	skos:closeMatch	sweet:propDifference/NormalizedDifferenceVegetationIndex	normalized difference vegetation index	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:propdifference/ndvi
+sweet:propDifference/Tolerance	tolerance	skos:closeMatch	sweet:relaMath/tolerance	tolerance	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tolerance
+sweet:propDimensionlessRatio/DarcySlope	darcy slope	skos:closeMatch	sweet:propDimensionlessRatio/HydraulicGradient	hydraulic gradient	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:propdimensionlessratio/darcyslope
+sweet:propEnergy/Lagrangian	lagrangian	skos:closeMatch	sweet:repr/Lagrangian	lagrangian	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	lagrangian
+sweet:propFunction/Maximum	maximum	skos:closeMatch	sweet:relaMath/maximumOf	maximum of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	maximum
+sweet:propFunction/Minimum	minimum	skos:closeMatch	sweet:relaMath/minimumOf	minimum of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	minimum
+sweet:propFunction/Mode	mode	skos:closeMatch	sweet:reprMathFunctionOrthogonal/Mode	mode	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mode
+sweet:propFunction/Peak	peak	skos:closeMatch	sweet:reprSpaceGeometry/Peak	peak	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	peak
+sweet:propMass/PotentialDensity	potential density	skos:closeMatch	sweet:reprSpaceCoordinate/PotentialDensity	potential density	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	density potential
+sweet:propMass/Structure	structure	skos:closeMatch	sweet:reprDataModel/Structure	structure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	structure
+sweet:propOrdinal/Age	age	skos:closeMatch	sweet:propTime/Age	age	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	age
+sweet:propOrdinal/Age	age	skos:closeMatch	sweet:stateTime/Age	age	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	age
+sweet:propOrdinal/Level	level	skos:closeMatch	sweet:propSpaceHeight/Level	level	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	level
+sweet:propOrdinal/Level	level	skos:closeMatch	sweet:reprSpaceCoordinate/Level	level	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	level
+sweet:propOrdinal/TemperatureRange	temperature range	skos:closeMatch	sweet:propTemperature/TemperatureRange	temperature range	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	range temperature
+sweet:propOrdinal/Visibility	visibility	skos:closeMatch	sweet:propSpaceDistance/Visibility	visibility	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visibility
+sweet:propPressure/Pressure	pressure	skos:closeMatch	sweet:reprSpaceCoordinate/Pressure	pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure
+sweet:propQuantity/VectorQuantity	vector quantity	skos:closeMatch	sweet:reprMathFunction/VectorQuantity	vector quantity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	quantity vector
+sweet:propSpaceDirection/Incidence	incidence	skos:closeMatch	sweet:propTimeFrequency/Incidence	incidence	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	incidence
+sweet:propSpaceDirection/Zenith	zenith	skos:closeMatch	sweet:reprSpaceDirection/Zenith	zenith	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	zenith
+sweet:propSpaceDistance/Range	range	skos:closeMatch	sweet:relaSci/rangeOf	range of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	range
+sweet:propSpaceHeight/Depth	depth	skos:closeMatch	sweet:reprSpaceCoordinate/Depth	depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+sweet:propSpaceHeight/Elevation	elevation	skos:closeMatch	sweet:reprSpaceCoordinate/Elevation	elevation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevation
+sweet:propSpaceHeight/Height	height	skos:closeMatch	sweet:reprSpaceCoordinate/Height	height	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	height
+sweet:propSpaceHeight/Level	level	skos:closeMatch	sweet:reprSpaceCoordinate/Level	level	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	level
+sweet:propSpaceMultidimensional/Resolution	resolution	skos:closeMatch	sweet:reprDataModel/Resolution	resolution	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	resolution
+sweet:propTime/Age	age	skos:closeMatch	sweet:stateTime/Age	age	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	age
+sweet:propTime/Cycle	cycle	skos:closeMatch	sweet:reprMathGraph/Cycle	cycle	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cycle
+sweet:propTime/Duration	duration	skos:closeMatch	sweet:reprTime/Duration	duration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	duration
+sweet:propTime/Episodic	episodic	skos:closeMatch	sweet:stateTimeFrequency/Episodic	episodic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	episodic
+sweet:propTime/Period	period	skos:closeMatch	sweet:stateTime/Period	period	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	period
+sweet:propTime/Time	time	skos:closeMatch	sweet:reprTime/Time	time	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	time
+sweet:realm/Land	land	skos:closeMatch	sweet:realmLandform/Land	land	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	land
+sweet:realm/Ring	ring	skos:closeMatch	sweet:reprSpaceGeometry3D/Ring	ring	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ring
+sweet:realmAstroBody/Extraterrestrial	extraterrestrial	skos:closeMatch	sweet:stateRealm/Extraterrestrial	extraterrestrial	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	extraterrestrial
+sweet:realmAstroBody/Star	star	skos:closeMatch	sweet:reprSpaceGeometry/Star	star	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	star
+sweet:realmAstroHelio/DLayer	d layer	skos:closeMatch	sweet:realmGeol/DLayer	d layer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	d layer
+sweet:realmAstroStar/Corona	corona	skos:closeMatch	sweet:realmGeolConstituent/Corona	corona	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	corona
+sweet:realmAtmo/Mesosphere	mesosphere	skos:closeMatch	sweet:realmGeol/Mesosphere	mesosphere	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mesosphere
+sweet:realmAtmoBoundaryLayer/MixedLayer	mixed layer	skos:closeMatch	sweet:realmOcean/MixedLayer	mixed layer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	layer mixed
+sweet:realmAtmoBoundaryLayer/SkinLayer	skin layer	skos:closeMatch	sweet:realmGeol/SkinLayer	skin layer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	layer skin
+sweet:realmBiolBiome/Forest	forest	skos:closeMatch	sweet:reprMathGraph/Forest	forest	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	forest
+sweet:realmClimateZone/Af	af	skos:closeMatch	sweet:realmClimateZone/TropicalRainForestClimate	tropical rain forest climate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmclimatezone/af
+sweet:realmClimateZone/Am	am	skos:closeMatch	sweet:realmClimateZone/TropicalMonsoonClimate	tropical monsoon climate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmclimatezone/am
+sweet:realmClimateZone/Arid	arid	skos:closeMatch	sweet:realmClimateZone/AridClimate	arid climate	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs	sweet:realmclimatezone/bw
+sweet:realmClimateZone/Arid	arid	skos:closeMatch	sweet:realmClimateZone/BW	bw	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmclimatezone/arid
+sweet:realmClimateZone/AridClimate	arid climate	skos:closeMatch	sweet:realmClimateZone/BW	bw	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmclimatezone/aridclimate
+sweet:realmClimateZone/Aw	aw	skos:closeMatch	sweet:realmClimateZone/TropicalSavannaClimate	tropical savanna climate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmclimatezone/aw
+sweet:realmClimateZone/BS	bs	skos:closeMatch	sweet:realmClimateZone/SemiAridClimate	semi arid climate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmclimatezone/bs
+sweet:realmClimateZone/BSh	bsh	skos:closeMatch	sweet:realmClimateZone/HotLowLatitudeSteppeClimate	hot low latitude steppe climate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmclimatezone/bsh
+sweet:realmClimateZone/BSk	bsk	skos:closeMatch	sweet:realmClimateZone/ColdMidlatitudeSteppeClimate	cold midlatitude steppe climate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmclimatezone/bsk
+sweet:realmClimateZone/BWh	bwh	skos:closeMatch	sweet:realmClimateZone/HotLowLatitudeDesertClimate	hot low latitude desert climate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmclimatezone/bwh
+sweet:realmClimateZone/BWk	bwk	skos:closeMatch	sweet:realmClimateZone/ColdMidlatitudeDesertClimate	cold midlatitude desert climate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmclimatezone/bwk
+sweet:realmClimateZone/EF	ef	skos:closeMatch	sweet:realmClimateZone/IceCapClimate	ice cap climate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmclimatezone/ef
+sweet:realmClimateZone/EM	em	skos:closeMatch	sweet:realmClimateZone/PolarMarineClimate	polar marine climate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmclimatezone/em
+sweet:realmClimateZone/ET	et	skos:closeMatch	sweet:realmClimateZone/TundraClimate	tundra climate	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmclimatezone/et
+sweet:realmClimateZone/Equator	equator	skos:closeMatch	sweet:realmRegion/Equator	equator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	equator
+sweet:realmClimateZone/Equator	equator	skos:closeMatch	sweet:reprSpaceCoordinate/Equator	equator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	equator
+sweet:realmCryo/Floe	sea ice floe	skos:closeMatch	sweet:realmCryo/IceFloe	ice floe	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch	skos:closeMatch	envo:03000066
+sweet:realmCryo/GlacierTerminus	glacier terminus	skos:closeMatch	sweet:realmCryo/Snout	snout	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch	skos:closeMatch	envo:01001529
+sweet:realmEarthReference/AbyssopelagicZone	abyssopelagic zone	skos:closeMatch	sweet:realmOcean/AbyssopelagicZone	abyssopelagic zone	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	abyssopelagic zone
+sweet:realmEarthReference/IGRF	igrf	skos:closeMatch	sweet:realmEarthReference/InternationalGeomagneticReferenceField	international geomagnetic reference field	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmearthreference/igrf
+sweet:realmGeol/Continental	continental	skos:closeMatch	sweet:stateSpaceScale/Continental	continental	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	continental
+sweet:realmGeol/Dike	dike	skos:closeMatch	sweet:realmHydro/Dike	dike	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dike
+sweet:realmGeolBasin/Basin	basin	skos:closeMatch	sweet:realmHydroBody/Basin	basin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	basin
+sweet:realmGeolConstituent/Irregular	irregular	skos:closeMatch	sweet:stateRoleTrust/Irregular	irregular	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	irregular
+sweet:realmGeolConstituent/Layer	layer	skos:closeMatch	sweet:reprDataProduct/Layer	layer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	layer
+sweet:realmGeolConstituent/Layer	layer	skos:closeMatch	sweet:reprSpaceGeometry3D/Layer	layer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	layer
+sweet:realmGeolConstituent/Matrix	matrix	skos:closeMatch	sweet:reprMath/Matrix	matrix	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	matrix
+sweet:realmGeolOrogen/Arc	arc	skos:closeMatch	sweet:reprMathGraph/Arc	arc	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	arc
+sweet:realmGeolOrogen/Arc	arc	skos:closeMatch	sweet:reprSpaceGeometry/Arc	arc	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	arc
+sweet:realmHydroBody/Reservoir	reservoir	skos:closeMatch	sweet:reprSciComponent/Reservoir	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reservoir
+sweet:realmHydroBody/Spring	spring	skos:closeMatch	sweet:reprTimeSeason/Spring	spring	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	spring
+sweet:realmLandCoastal/Key	key	skos:closeMatch	sweet:reprDataServiceValidation/Key	key	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	key
+sweet:realmLandCoastal/Key	key	skos:closeMatch	sweet:stateRole/Key	key	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	key
+sweet:realmLandOrographic/Ridge	ridge	skos:closeMatch	sweet:reprSpaceGeometry/Ridge	ridge	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ridge
+sweet:realmLandform/Field	field	skos:closeMatch	sweet:reprDataModel/Field	field	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	field
+sweet:realmLandform/Field	field	skos:closeMatch	sweet:reprMathFunction/Field	field	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	field
+sweet:realmRegion/Equator	equator	skos:closeMatch	sweet:reprSpaceCoordinate/Equator	equator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	equator
+sweet:realmRegion/Global	global	skos:closeMatch	sweet:stateSpaceScale/Global	global	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	global
+sweet:realmRegion/LowLatitude	low latitude	skos:closeMatch	sweet:realmRegion/Tropical	tropical	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmregion/lowlatitude
+sweet:realmRegion/LowLatitude	low latitude	skos:closeMatch	sweet:realmRegion/Tropical	tropical	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmregion/lowlatitude
+sweet:realmRegion/LowLatitude	low latitude	skos:closeMatch	sweet:realmRegion/Tropics	tropics	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmregion/lowlatitude
+sweet:realmRegion/LowLatitude	low latitude	skos:closeMatch	sweet:realmRegion/Tropics	tropics	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmregion/lowlatitude
+sweet:realmRegion/Polar	polar	skos:closeMatch	sweet:stateChemical/Polar	polar	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	polar
+sweet:realmRegion/Pole	pole	skos:closeMatch	sweet:reprSpaceCoordinate/Pole	pole	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pole
+sweet:realmRegion/Subtropical	subtropical	skos:closeMatch	sweet:realmRegion/Subtropics	subtropics	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:realmregion/subtropical
+sweet:realmRegion/Tropical	tropical	skos:closeMatch	sweet:realmRegion/Tropics	tropics	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:realmregion/lowlatitude
+sweet:realmSoil/A_Horizon	a horizon	skos:closeMatch	sweet:reprMathFunction/Horizon	horizon	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	horizon
+sweet:relaMath/estimateOf	estimate of	skos:closeMatch	sweet:reprSciModel/Estimate	estimate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	estimate
+sweet:relaMath/hasInterval	has interval	skos:closeMatch	sweet:relaSci/hasInterval	has interval	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	has interval
+sweet:relaMath/inequality	inequality	skos:closeMatch	sweet:reprMath/Inequality	inequality	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	inequality
+sweet:relaMath/productOf	product of	skos:closeMatch	sweet:reprMathOperation/Product	product	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	product
+sweet:relaMath/productOf	product of	skos:closeMatch	sweet:stateRoleChemical/Product	product	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	product
+sweet:relaMath/projection	projection	skos:closeMatch	sweet:stateSpaceConfiguration/Projection	projection	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	projection
+sweet:relaMath/relation	relation	skos:closeMatch	sweet:reprMath/Relation	relation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	relation
+sweet:relaMath/representationOf	representation of	skos:closeMatch	sweet:repr/Representation	representation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	representation
+sweet:relaMath/subsetOf	subset of	skos:closeMatch	sweet:reprDataServiceReduction/Subset	subset	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	subset
+sweet:relaProvenance/fillValue	fill value	skos:closeMatch	sweet:reprDataProduct/FillValue	fill value	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fill value
+sweet:relaProvenance/genesisOf	genesis of	skos:closeMatch	sweet:reprSciProvenance/Genesis	genesis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	genesis
+sweet:relaProvenance/hasSource	has source	skos:closeMatch	sweet:relaSci/hasSource	has source	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	has source
+sweet:relaProvenance/transparent	transparent	skos:closeMatch	sweet:stateVisibility/Transparent	transparent	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	transparent
+sweet:relaSci/componentOf	component of	skos:closeMatch	sweet:repr/Component	component	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	component
+sweet:relaSci/componentOf	component of	skos:closeMatch	sweet:reprSciComponent/Component	component	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	component
+sweet:relaSci/fall	fall	skos:closeMatch	sweet:reprTimeSeason/Fall	fall	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fall
+sweet:relaSci/reduce	reduce	skos:closeMatch	sweet:stateRoleChemical/Reduce	reduce	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reduce
+sweet:relaSci/reduction	reduction	skos:closeMatch	sweet:reprMathSolution/Reduction	reduction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reduction
+sweet:relaSpace/clusterOf	cluster of	skos:closeMatch	sweet:reprDataServiceAnalysis/Cluster	cluster	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cluster
+sweet:relaSpace/clusterOf	cluster of	skos:closeMatch	sweet:reprSpaceGeometry/Cluster	cluster	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cluster
+sweet:relaSpace/east	east	skos:closeMatch	sweet:reprSpaceDirection/East	east	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	east
+sweet:relaSpace/near	near	skos:closeMatch	sweet:stateSpace/Near	near	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	near
+sweet:relaSpace/north	north	skos:closeMatch	sweet:reprSpaceDirection/North	north	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	north
+sweet:relaSpace/south	south	skos:closeMatch	sweet:reprSpaceDirection/South	south	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	south
+sweet:relaSpace/spatialSubset	spatial subset	skos:closeMatch	sweet:reprDataServiceReduction/SpatialSubset	spatial subset	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	spatial subset
+sweet:relaSpace/west	west	skos:closeMatch	sweet:reprSpaceDirection/West	west	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	west
+sweet:relaTime/end	end	skos:closeMatch	sweet:relaTime/endOf	end of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	end
+sweet:relaTime/start	start	skos:closeMatch	sweet:relaTime/startOf	start of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	start
+sweet:repr/Component	component	skos:closeMatch	sweet:reprSciComponent/Component	component	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	component
+sweet:repr/Spectral	spectral	skos:closeMatch	sweet:reprSciModel/Spectral	spectral	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	spectral
+sweet:reprDataModel/Array	array	skos:closeMatch	sweet:reprMath/Array	array	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	array
+sweet:reprDataModel/Field	field	skos:closeMatch	sweet:reprMathFunction/Field	field	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	field
+sweet:reprDataModel/Point	point	skos:closeMatch	sweet:reprMath/Point	point	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	point
+sweet:reprDataModel/Point	point	skos:closeMatch	sweet:reprSpaceGeometry/Point	point	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	point
+sweet:reprDataModel/Point	point	skos:closeMatch	sweet:stateSpace/Point	point	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	point
+sweet:reprDataModel/Trajectory	trajectory	skos:closeMatch	sweet:reprSpaceGeometry/Trajectory	trajectory	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	trajectory
+sweet:reprDataModel/Vector	vector	skos:closeMatch	sweet:reprMath/Vector	vector	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	vector
+sweet:reprDataProduct/Collection	collection	skos:closeMatch	sweet:reprMath/Collection	collection	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	collection
+sweet:reprDataProduct/Layer	layer	skos:closeMatch	sweet:reprSpaceGeometry3D/Layer	layer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	layer
+sweet:reprDataProduct/Profile	profile	skos:closeMatch	sweet:reprMathFunction/Profile	profile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	profile
+sweet:reprDataService/DODS	dods	skos:closeMatch	sweet:reprDataService/OPeNDAP	opendap	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprdataservice/dods
+sweet:reprDataService/Z	z	skos:closeMatch	sweet:reprSpaceCoordinate/Z	z	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	z
+sweet:reprDataService/Z	z	skos:closeMatch	sweet:reprSpaceDirection/Z	z	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	z
+sweet:reprDataServiceAnalysis/Cluster	cluster	skos:closeMatch	sweet:reprSpaceGeometry/Cluster	cluster	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cluster
+sweet:reprDataServiceAnalysis/Filter	filter	skos:closeMatch	sweet:reprMathFunction/Filter	filter	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	filter
+sweet:reprDataServiceAnalysis/Reconstruction	reconstruction	skos:closeMatch	sweet:reprSciProvenance/Reconstruction	reconstruction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reconstruction
+sweet:reprDataServiceGeospatial/WCS	wcs	skos:closeMatch	sweet:reprDataServiceGeospatial/WebCoverageServer	web coverage server	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprdataservicegeospatial/wcs
+sweet:reprDataServiceGeospatial/WFS	wfs	skos:closeMatch	sweet:reprDataServiceGeospatial/WebFeatureServer	web feature server	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprdataservicegeospatial/wfs
+sweet:reprDataServiceGeospatial/WMS	wms	skos:closeMatch	sweet:reprDataServiceGeospatial/WebMapServer	web map server	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprdataservicegeospatial/wms
+sweet:reprDataServiceReduction/Normalization	normalization	skos:closeMatch	sweet:reprMathOperation/Normalization	normalization	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	normalization
+sweet:reprDataServiceValidation/Key	key	skos:closeMatch	sweet:stateRole/Key	key	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	key
+sweet:reprMath/Order	order	skos:closeMatch	sweet:reprMathFunctionOrthogonal/Order	order	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	order
+sweet:reprMath/Point	point	skos:closeMatch	sweet:reprSpaceGeometry/Point	point	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	point
+sweet:reprMath/Point	point	skos:closeMatch	sweet:stateSpace/Point	point	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	point
+sweet:reprMath/Sequence	sequence	skos:closeMatch	sweet:reprSciProvenance/Sequence	sequence	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sequence
+sweet:reprMathFunction/Normal	normal	skos:closeMatch	sweet:reprSpaceDirection/Normal	normal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	normal
+sweet:reprMathFunction/Well	well	skos:closeMatch	sweet:stateOrdinal/Well	well	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	well
+sweet:reprMathGraph/Arc	arc	skos:closeMatch	sweet:reprSpaceGeometry/Arc	arc	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	arc
+sweet:reprMathGraph/Edge	edge	skos:closeMatch	sweet:stateRoleGeographic/Edge	edge	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	edge
+sweet:reprMathGraph/Path	path	skos:closeMatch	sweet:reprSpaceGeometry/Path	path	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	path
+sweet:reprMathOperation/Product	product	skos:closeMatch	sweet:stateRoleChemical/Product	product	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	product
+sweet:reprMathOperation/Ratio	ratio	skos:closeMatch	sweet:reprSciUnits/ratio	ratio	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ratio
+sweet:reprMathOperation/Square	square	skos:closeMatch	sweet:reprSpaceGeometry/Square	square	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	square
+sweet:reprMathOperation/Square	square	skos:closeMatch	sweet:stateSpaceConfiguration/Square	square	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	square
+sweet:reprMathSolution/Parallel	parallel	skos:closeMatch	sweet:reprSpaceDirection/Parallel	parallel	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	parallel
+sweet:reprSciComponent/Ambient	ambient	skos:closeMatch	sweet:reprSciComponent/Background	background	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprscicomponent/ambient
+sweet:reprSciComponent/Background	background	skos:closeMatch	sweet:reprSciProvenance/Background	background	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	background
+sweet:reprSciComponent/Direct	direct	skos:closeMatch	sweet:reprSpaceDirection/Direct	direct	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	direct
+sweet:reprSciMethodology/Active	active	skos:closeMatch	sweet:stateSystem/Active	active	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	active
+sweet:reprSciProvenance/Artifact	artifact	skos:closeMatch	sweet:stateRoleTrust/Artifact	artifact	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	artifact
+sweet:reprSciUnits/FNU	fnu	skos:closeMatch	sweet:reprSciUnits/FTU	ftu	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	sweet:reprsciunits/ftu
+sweet:reprSciUnits/FNU	fnu	skos:closeMatch	sweet:reprSciUnits/FTU	ftu	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprsciunits/fnu
+sweet:reprSciUnits/FNU	fnu	skos:closeMatch	sweet:reprSciUnits/FormazinTurbidityUnit	formazin turbidity unit	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs-INVERSE	sweet:reprsciunits/ftu
+sweet:reprSciUnits/FTU	ftu	skos:closeMatch	sweet:reprSciUnits/FormazinTurbidityUnit	formazin turbidity unit	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprsciunits/ftu
+sweet:reprSciUnits/MHz	mhz	skos:closeMatch	sweet:reprSciUnits/megahertz	megahertz	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprsciunits/mhz
+sweet:reprSciUnits/day	day	skos:closeMatch	sweet:reprTimeDay/Day	day	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	day
+sweet:reprSciUnits/hertz	hertz	skos:closeMatch	sweet:reprSciUnits/perSecond	per second	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprsciunits/hertz
+sweet:reprSciUnits/kelvinPerMeter	kelvin per meter	skos:closeMatch	sweet:reprSciUnits/meterPerKelvin	meter per kelvin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	kelvin meter per
+sweet:reprSciUnits/kilogramPerMeterCubed	kilogram per meter cubed	skos:closeMatch	sweet:reprSciUnits/meterCubedPerKilogram	meter cubed per kilogram	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cubed kilogram meter per
+sweet:reprSciUnits/kilogramPerMeterSquared	kilogram per meter squared	skos:closeMatch	sweet:reprSciUnits/meterSquaredPerKilogram	meter squared per kilogram	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	kilogram meter per squared
+sweet:reprSciUnits/meter	meter	skos:closeMatch	sweet:reprSciUnits/metre	metre	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprsciunits/meter
+sweet:reprSciUnits/meterPerSecondSquared	meter per second squared	skos:closeMatch	sweet:reprSciUnits/meterSquaredPerSecond	meter squared per second	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	meter per second squared
+sweet:reprSciUnits/micro	micro	skos:closeMatch	sweet:stateSpace/Micro	micro	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	micro
+sweet:reprSciUnits/micrometer	micrometer	skos:closeMatch	sweet:reprSciUnits/micron	micron	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprsciunits/micrometer
+sweet:reprSciUnits/season	season	skos:closeMatch	sweet:reprTimeSeason/Season	season	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	season
+sweet:reprSpaceCoordinate/Elevation	elevation	skos:closeMatch	sweet:reprSpaceCoordinate/Height	height	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprspacecoordinate/elevation
+sweet:reprSpaceCoordinate/RA	ra	skos:closeMatch	sweet:reprSpaceCoordinate/RightAscension	right ascension	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprspacecoordinate/ra
+sweet:reprSpaceCoordinate/Vertical	vertical	skos:closeMatch	sweet:reprSpaceDirection/Vertical	vertical	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	vertical
+sweet:reprSpaceCoordinate/X	x	skos:closeMatch	sweet:reprSpaceDirection/X	x	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	x
+sweet:reprSpaceCoordinate/Y	y	skos:closeMatch	sweet:reprSpaceDirection/Y	y	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	y
+sweet:reprSpaceCoordinate/Z	z	skos:closeMatch	sweet:reprSpaceDirection/Z	z	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	z
+sweet:reprSpaceDirection/Down	down	skos:closeMatch	sweet:reprSpaceDirection/Downward	downward	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprspacedirection/down
+sweet:reprSpaceDirection/East	east	skos:closeMatch	sweet:reprSpaceDirection/Eastward	eastward	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprspacedirection/east
+sweet:reprSpaceDirection/Lee	lee	skos:closeMatch	sweet:reprSpaceDirection/Leeward	leeward	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprspacedirection/lee
+sweet:reprSpaceDirection/Normal	normal	skos:closeMatch	sweet:reprSpaceDirection/Perpendicular	perpendicular	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	sweet:reprspacedirection/perpendicular
+sweet:reprSpaceDirection/Normal	normal	skos:closeMatch	sweet:reprSpaceDirection/Perpendicular	perpendicular	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprspacedirection/normal
+sweet:reprSpaceDirection/Normal	normal	skos:closeMatch	sweet:reprSpaceDirection/Transverse	transverse	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs-INVERSE	sweet:reprspacedirection/perpendicular
+sweet:reprSpaceDirection/North	north	skos:closeMatch	sweet:reprSpaceDirection/Northward	northward	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprspacedirection/north
+sweet:reprSpaceDirection/Perpendicular	perpendicular	skos:closeMatch	sweet:reprSpaceDirection/Transverse	transverse	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprspacedirection/perpendicular
+sweet:reprSpaceDirection/Prograde	prograde	skos:closeMatch	sweet:stateSpaceConfiguration/Prograde	prograde	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	prograde
+sweet:reprSpaceDirection/Retrograde	retrograde	skos:closeMatch	sweet:stateSpaceConfiguration/Retrograde	retrograde	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	retrograde
+sweet:reprSpaceDirection/South	south	skos:closeMatch	sweet:reprSpaceDirection/Southward	southward	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprspacedirection/south
+sweet:reprSpaceDirection/Up	up	skos:closeMatch	sweet:reprSpaceDirection/Upward	upward	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprspacedirection/up
+sweet:reprSpaceDirection/West	west	skos:closeMatch	sweet:reprSpaceDirection/Westward	westward	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprspacedirection/west
+sweet:reprSpaceGeometry/Point	point	skos:closeMatch	sweet:stateSpace/Point	point	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	point
+sweet:reprSpaceGeometry/Square	square	skos:closeMatch	sweet:stateSpaceConfiguration/Square	square	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	square
+sweet:reprSpaceReferenceSystem/Sinusoidal	sinusoidal	skos:closeMatch	sweet:stateSpaceConfiguration/Sinusoidal	sinusoidal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sinusoidal
+sweet:reprTime/Local	local	skos:closeMatch	sweet:stateSpaceScale/Local	local	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	local
+sweet:reprTime/UT	ut	skos:closeMatch	sweet:reprTime/UniversalTime	universal time	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprtime/ut
+sweet:reprTimeSeason/Autumn	autumn	skos:closeMatch	sweet:reprTimeSeason/Fall	fall	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprtimeseason/autumn
+sweet:reprTimeSeason/AutumnalEquinox	autumnal equinox	skos:closeMatch	sweet:reprTimeSeason/FallEquinox	fall equinox	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:reprtimeseason/autumnalequinox
+sweet:stateBiological/Alive	alive	skos:closeMatch	sweet:stateBiological/Live	live	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	sweet:statebiological/live
+sweet:stateBiological/Alive	alive	skos:closeMatch	sweet:stateBiological/Live	live	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statebiological/alive
+sweet:stateBiological/Alive	alive	skos:closeMatch	sweet:stateBiological/Living	living	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs-INVERSE	sweet:statebiological/live
+sweet:stateBiological/Dead	dead	skos:closeMatch	sweet:stateBiological/Deceased	deceased	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statebiological/dead
+sweet:stateBiological/Live	live	skos:closeMatch	sweet:stateBiological/Living	living	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statebiological/live
+sweet:stateChemical/Anoxia	anoxia	skos:closeMatch	sweet:stateChemical/Anoxic	anoxic	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statechemical/anoxia
+sweet:stateChemical/Base	base	skos:closeMatch	sweet:stateSpaceConfiguration/Base	base	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	base
+sweet:stateChemical/Hypoxia	hypoxia	skos:closeMatch	sweet:stateChemical/Hypoxic	hypoxic	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statechemical/hypoxia
+sweet:stateChemical/Potability	potability	skos:closeMatch	sweet:stateChemical/Potable	potable	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statechemical/potability
+sweet:stateChemical/Radioactive	radioactive	skos:closeMatch	sweet:stateChemical/RadioactiveDecay	radioactive decay	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statechemical/radioactive
+sweet:stateChemical/Radioactive	radioactive	skos:closeMatch	sweet:stateChemical/RadioactiveDecay	radioactive decay	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statechemical/radioactive
+sweet:stateChemical/Radioactive	radioactive	skos:closeMatch	sweet:stateChemical/Radioactivity	radioactivity	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statechemical/radioactive
+sweet:stateChemical/Radioactive	radioactive	skos:closeMatch	sweet:stateChemical/Radioactivity	radioactivity	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statechemical/radioactive
+sweet:stateChemical/RadioactiveDecay	radioactive decay	skos:closeMatch	sweet:stateChemical/Radioactivity	radioactivity	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:statechemical/radioactive
+sweet:stateChemical/Saturate	saturate	skos:closeMatch	sweet:stateChemical/Saturated	saturated	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statechemical/saturate
+sweet:stateChemical/Saturate	saturate	skos:closeMatch	sweet:stateChemical/Saturated	saturated	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statechemical/saturate
+sweet:stateChemical/Saturate	saturate	skos:closeMatch	sweet:stateChemical/Saturation	saturation	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statechemical/saturate
+sweet:stateChemical/Saturate	saturate	skos:closeMatch	sweet:stateChemical/Saturation	saturation	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statechemical/saturate
+sweet:stateChemical/Saturated	saturated	skos:closeMatch	sweet:stateChemical/Saturation	saturation	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:statechemical/saturate
+sweet:stateDataProcessing/Validated	validated	skos:closeMatch	sweet:stateRoleTrust/Validated	validated	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	validated
+sweet:stateEnergyFlux/X44.lass	x44 class	skos:closeMatch	sweet:stateEnergyFlux/X44Class	x44 class	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	class x44
+sweet:stateFluid/Stratification	stratification	skos:closeMatch	sweet:stateFluid/Stratified	stratified	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statefluid/stratification
+sweet:stateOrdinal/Intermediate	intermediate	skos:closeMatch	sweet:stateOrdinal/Medium	medium	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs	sweet:stateordinal/middle
+sweet:stateOrdinal/Intermediate	intermediate	skos:closeMatch	sweet:stateOrdinal/Middle	middle	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:stateordinal/intermediate
+sweet:stateOrdinal/Medium	medium	skos:closeMatch	sweet:stateOrdinal/Middle	middle	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:stateordinal/medium
+sweet:stateOrdinal/Medium	medium	skos:closeMatch	sweet:stateSpace/Medium	medium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	medium
+sweet:stateOrdinal/Slight	slight	skos:closeMatch	sweet:stateOrdinal/Slightly	slightly	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:stateordinal/slight
+sweet:statePhysical/FreeOscillation	free oscillation	skos:closeMatch	sweet:statePhysical/NormalMode	normal mode	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statephysical/freeoscillation
+sweet:statePhysical/Frozen	frozen	skos:closeMatch	sweet:statePhysical/Solid	solid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statephysical/frozen
+sweet:statePhysical/Gas	gas	skos:closeMatch	sweet:statePhysical/Vapor	vapor	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statephysical/gas
+sweet:statePhysical/Gentle	gentle	skos:closeMatch	sweet:stateRoleImpact/Gentle	gentle	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gentle
+sweet:statePhysical/Heavy	heavy	skos:closeMatch	sweet:stateRoleImpact/Heavy	heavy	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	heavy
+sweet:statePhysical/Humid	humid	skos:closeMatch	sweet:statePhysical/Moist	moist	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statephysical/humid
+sweet:statePhysical/Intermittent	intermittent	skos:closeMatch	sweet:stateSystem/Intermittent	intermittent	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	intermittent
+sweet:statePhysical/Ionized	ionized	skos:closeMatch	sweet:statePhysical/IonizedState	ionized state	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statephysical/ionized
+sweet:statePhysical/Isostacy	isostacy	skos:closeMatch	sweet:statePhysical/Isostatic	isostatic	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statephysical/isostacy
+sweet:statePhysical/Light	light	skos:closeMatch	sweet:stateRoleImpact/Light	light	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	light
+sweet:statePhysical/Light	light	skos:closeMatch	sweet:stateVisibility/Light	light	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	light
+sweet:statePhysical/Neutral	neutral	skos:closeMatch	sweet:statePhysical/NeutralState	neutral state	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statephysical/neutral
+sweet:statePhysical/Severe	severe	skos:closeMatch	sweet:stateRoleImpact/Severe	severe	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	severe
+sweet:stateRealm/Airborne	airborne	skos:closeMatch	sweet:stateRealm/Aloft	aloft	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:staterealm/airborne
+sweet:stateRealm/Geologic	geologic	skos:closeMatch	sweet:stateRealm/Geological	geological	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:staterealm/geologic
+sweet:stateRole/Key	key	skos:closeMatch	sweet:stateRole/Keystone	keystone	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:staterole/key
+sweet:stateRole/Major	major	skos:closeMatch	sweet:stateRoleImpact/Major	major	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	major
+sweet:stateRole/Minor	minor	skos:closeMatch	sweet:stateRoleImpact/Minor	minor	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	minor
+sweet:stateRoleBiological/TAC	tac	skos:closeMatch	sweet:stateRoleBiological/ToxicAirContaminant	toxic air contaminant	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:staterolebiological/tac
+sweet:stateRoleBiological/Toxic	toxic	skos:closeMatch	sweet:stateRoleBiological/Toxin	toxin	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:staterolebiological/toxic
+sweet:stateRoleGeographic/Remote	remote	skos:closeMatch	sweet:stateSpace/Remote	remote	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	remote
+sweet:stateRoleImpact/Disaster	disaster	skos:closeMatch	sweet:stateRoleImpact/Disasterous	disasterous	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:stateroleimpact/disaster
+sweet:stateRoleImpact/Light	light	skos:closeMatch	sweet:stateVisibility/Light	light	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	light
+sweet:stateRoleImpact/Rough	rough	skos:closeMatch	sweet:stateSolid/Rough	rough	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rough
+sweet:stateRoleRepresentative/Anomalous	anomalous	skos:closeMatch	sweet:stateRoleRepresentative/Anomaly	anomaly	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:staterolerepresentative/anomalous
+sweet:stateRoleTrust/Certain	certain	skos:closeMatch	sweet:stateRoleTrust/Certainty	certainty	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:stateroletrust/certain
+sweet:stateRoleTrust/Investigated	investigated	skos:closeMatch	sweet:stateRoleTrust/Researched	researched	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:stateroletrust/investigated
+sweet:stateRoleTrust/Predictable	predictable	skos:closeMatch	sweet:stateRoleTrust/Predictivee	predictivee	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:stateroletrust/predictable
+sweet:stateRoleTrust/Risk	risk	skos:closeMatch	sweet:stateRoleTrust/Risky	risky	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:stateroletrust/risk
+sweet:stateRoleTrust/Trusted	trusted	skos:closeMatch	sweet:stateRoleTrust/Trustworthy	trustworthy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:stateroletrust/trusted
+sweet:stateRoleTrust/Uncertain	uncertain	skos:closeMatch	sweet:stateRoleTrust/Uncertainty	uncertainty	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:stateroletrust/uncertain
+sweet:stateSolid/Amorphous	amorphous	skos:closeMatch	sweet:stateSpaceConfiguration/Amorphous	amorphous	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	amorphous
+sweet:stateSolid/Crystal	crystal	skos:closeMatch	sweet:stateSolid/CrystalStructure	crystal structure	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statesolid/crystal
+sweet:stateSolid/Crystal	crystal	skos:closeMatch	sweet:stateSolid/CrystalStructure	crystal structure	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statesolid/crystal
+sweet:stateSolid/Crystal	crystal	skos:closeMatch	sweet:stateSolid/Crystalline	crystalline	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statesolid/crystal
+sweet:stateSolid/Crystal	crystal	skos:closeMatch	sweet:stateSolid/Crystalline	crystalline	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statesolid/crystal
+sweet:stateSolid/CrystalStructure	crystal structure	skos:closeMatch	sweet:stateSolid/Crystalline	crystalline	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:statesolid/crystal
+sweet:stateSolid/Hard	hard	skos:closeMatch	sweet:stateSolid/Hardened	hardened	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statesolid/hard
+sweet:stateSolid/Soft	soft	skos:closeMatch	sweet:stateSolid/Softened	softened	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statesolid/soft
+sweet:stateSpace/Close	close	skos:closeMatch	sweet:stateSpace/Near	near	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	sweet:statespace/near
+sweet:stateSpace/Close	close	skos:closeMatch	sweet:stateSpace/Near	near	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespace/close
+sweet:stateSpace/Close	close	skos:closeMatch	sweet:stateSpace/Nearby	nearby	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs-INVERSE	sweet:statespace/near
+sweet:stateSpace/Microscopic	microscopic	skos:closeMatch	sweet:stateSpaceScale/Microscopic	microscopic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	microscopic
+sweet:stateSpace/Near	near	skos:closeMatch	sweet:stateSpace/Nearby	nearby	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespace/near
+sweet:stateSpace/Stationary	stationary	skos:closeMatch	sweet:stateTimeFrequency/Stationary	stationary	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stationary
+sweet:stateSpaceConfiguration/Anisotropic	anisotropic	skos:closeMatch	sweet:stateSpaceConfiguration/Anisotropy	anisotropy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespaceconfiguration/anisotropic
+sweet:stateSpaceConfiguration/Asymmetric	asymmetric	skos:closeMatch	sweet:stateSpaceConfiguration/Asymmetry	asymmetry	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespaceconfiguration/asymmetric
+sweet:stateSpaceConfiguration/Confined	confined	skos:closeMatch	sweet:stateSpaceConfiguration/Trapped	trapped	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespaceconfiguration/confined
+sweet:stateSpaceConfiguration/Connected	connected	skos:closeMatch	sweet:stateSpaceConfiguration/Interconnected	interconnected	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespaceconfiguration/connected
+sweet:stateSpaceConfiguration/Imbricated	imbricated	skos:closeMatch	sweet:stateSpaceConfiguration/Imbrication	imbrication	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespaceconfiguration/imbricated
+sweet:stateSpaceConfiguration/Isotropic	isotropic	skos:closeMatch	sweet:stateSpaceConfiguration/Isotropy	isotropy	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespaceconfiguration/isotropic
+sweet:stateSpaceConfiguration/Open	open	skos:closeMatch	sweet:stateSystem/Open	open	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	open
+sweet:stateSpaceConfiguration/Symmetric	symmetric	skos:closeMatch	sweet:stateSpaceConfiguration/Symmetry	symmetry	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespaceconfiguration/symmetric
+sweet:stateSpaceScale/Global	global	skos:closeMatch	sweet:stateSpaceScale/GlobalScale	global scale	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespacescale/global
+sweet:stateSpaceScale/Local	local	skos:closeMatch	sweet:stateSpaceScale/LocalScale	local scale	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs	sweet:statespacescale/microscale
+sweet:stateSpaceScale/Local	local	skos:closeMatch	sweet:stateSpaceScale/Microscale	microscale	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespacescale/local
+sweet:stateSpaceScale/LocalScale	local scale	skos:closeMatch	sweet:stateSpaceScale/Microscale	microscale	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespacescale/localscale
+sweet:stateSpaceScale/Mesoscale	mesoscale	skos:closeMatch	sweet:stateSpaceScale/Regional	regional	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespacescale/mesoscale
+sweet:stateSpaceScale/Mesoscale	mesoscale	skos:closeMatch	sweet:stateSpaceScale/Regional	regional	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespacescale/mesoscale
+sweet:stateSpaceScale/Mesoscale	mesoscale	skos:closeMatch	sweet:stateSpaceScale/RegionalScale	regional scale	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespacescale/mesoscale
+sweet:stateSpaceScale/Mesoscale	mesoscale	skos:closeMatch	sweet:stateSpaceScale/RegionalScale	regional scale	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespacescale/mesoscale
+sweet:stateSpaceScale/Regional	regional	skos:closeMatch	sweet:stateSpaceScale/RegionalScale	regional scale	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:statespacescale/mesoscale
+sweet:stateSpectralBand/Infrared	infrared	skos:closeMatch	sweet:stateSpectralBand/LongWave	long wave	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespectralband/infrared
+sweet:stateSpectralBand/ShortWave	short wave	skos:closeMatch	sweet:stateSpectralBand/UV	uv	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs	sweet:statespectralband/ultraviolet
+sweet:stateSpectralBand/ShortWave	short wave	skos:closeMatch	sweet:stateSpectralBand/Ultraviolet	ultraviolet	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespectralband/shortwave
+sweet:stateSpectralBand/UV	uv	skos:closeMatch	sweet:stateSpectralBand/Ultraviolet	ultraviolet	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statespectralband/uv
+sweet:stateSpectralBand/Visible	visible	skos:closeMatch	sweet:stateVisibility/Visible	visible	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	visible
+sweet:stateSystem/Balance	balance	skos:closeMatch	sweet:stateSystem/Balanced	balanced	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statesystem/balance
+sweet:stateSystem/Chaos	chaos	skos:closeMatch	sweet:stateSystem/Chaotic	chaotic	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statesystem/chaos
+sweet:stateSystem/Dynamic	dynamic	skos:closeMatch	sweet:stateSystem/TimeDependent	time dependent	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statesystem/dynamic
+sweet:stateSystem/Dynamic	dynamic	skos:closeMatch	sweet:stateSystem/TimeDependent	time dependent	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statesystem/dynamic
+sweet:stateSystem/Dynamic	dynamic	skos:closeMatch	sweet:stateSystem/TimeVarying	time varying	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statesystem/dynamic
+sweet:stateSystem/Dynamic	dynamic	skos:closeMatch	sweet:stateSystem/TimeVarying	time varying	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statesystem/dynamic
+sweet:stateSystem/TimeDependent	time dependent	skos:closeMatch	sweet:stateSystem/TimeVarying	time varying	semapv:LexicalMatching	oaklib	0.5	owl:sameAs-INVERSE	owl:sameAs-INVERSE	sweet:statesystem/dynamic
+sweet:stateThermodynamic/DryAdiabat	dry adiabat	skos:closeMatch	sweet:stateThermodynamic/DryAdiabatic	dry adiabatic	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statethermodynamic/dryadiabat
+sweet:stateThermodynamic/LTE	lte	skos:closeMatch	sweet:stateThermodynamic/LocalThermodynamicEquilibrium	local thermodynamic equilibrium	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statethermodynamic/lte
+sweet:stateThermodynamic/Lukewarm	lukewarm	skos:closeMatch	sweet:stateThermodynamic/Tepid	tepid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statethermodynamic/lukewarm
+sweet:stateTimeFrequency/Annual	annual	skos:closeMatch	sweet:stateTimeFrequency/Yearly	yearly	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statetimefrequency/annual
+sweet:stateTimeFrequency/Daily	daily	skos:closeMatch	sweet:stateTimeFrequency/Diurnal	diurnal	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statetimefrequency/daily
+sweet:stateVisibility/Clear	clear	skos:closeMatch	sweet:stateVisibility/Sunny	sunny	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	sweet:statevisibility/sunny
+sweet:stateVisibility/Clear	clear	skos:closeMatch	sweet:stateVisibility/Sunny	sunny	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statevisibility/clear
+sweet:stateVisibility/Clear	clear	skos:closeMatch	sweet:stateVisibility/Sunshine	sunshine	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs-INVERSE	sweet:statevisibility/sunny
+sweet:stateVisibility/Sunny	sunny	skos:closeMatch	sweet:stateVisibility/Sunshine	sunshine	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	sweet:statevisibility/sunny

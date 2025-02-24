@@ -1,0 +1,115 @@
+# curie_map:
+#   CHMO: http://purl.obolibrary.org/obo/CHMO_
+#   ENVO: http://purl.obolibrary.org/obo/ENVO_
+#   MS: http://purl.obolibrary.org/obo/MS_
+#   OBI: http://purl.obolibrary.org/obo/OBI_
+#   PO: http://purl.obolibrary.org/obo/PO_
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/9463eae9-d7e3-40fb-975b-ac9f97175c64
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+CHMO:0000018	stripping potentiometry	skos:closeMatch	CHMO:0000135	profilometry	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	sp
+CHMO:0000053	imaging mass spectrometry	skos:closeMatch	CHMO:0000430	ion mobility spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	ims
+CHMO:0000062	Forster resonance energy transfer	skos:closeMatch	CHMO:0000064	fluorescence resonance energy transfer	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	fret
+CHMO:0000072	reflection electron microscopy	skos:closeMatch	CHMO:0001439	replica moulding	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	rem
+CHMO:0000073	scanning electron microscopy	skos:closeMatch	CHMO:0000941	scanning electron microscope	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	sem
+CHMO:0000074	field-emission scanning electron microscopy	skos:closeMatch	CHMO:0000942	field-emission scanning electron microscope	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	fe-sem
+CHMO:0000074	field-emission scanning electron microscopy	skos:closeMatch	CHMO:0000942	field-emission scanning electron microscope	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	feg-sem
+CHMO:0000075	cold-field-emission scanning electron microscopy	skos:closeMatch	CHMO:0002454	cold-field-emission scanning electron microscope	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	cfe-sem
+CHMO:0000076	environmental scanning electron microscopy	skos:closeMatch	CHMO:0002656	environmental scanning electron microscope	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	e-sem
+CHMO:0000076	environmental scanning electron microscopy	skos:closeMatch	CHMO:0002656	environmental scanning electron microscope	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	environmental sem
+CHMO:0000076	environmental scanning electron microscopy	skos:closeMatch	CHMO:0002656	environmental scanning electron microscope	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	esem
+CHMO:0000079	scanning Auger microscopy	skos:closeMatch	CHMO:0000129	scanning probe acoustic microscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	sam
+CHMO:0000080	transmission electron microscopy	skos:closeMatch	CHMO:0001099	transmission electron microscope	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	tem
+CHMO:0000082	energy-filtered transmission electron microscopy	skos:closeMatch	CHMO:0001659	electrospray ionisation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	esi
+CHMO:0000082	energy-filtered transmission electron microscopy	skos:closeMatch	MS:1000073	electrospray ionization	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	esi
+CHMO:0000084	high-resolution transmission electron microscopy	skos:closeMatch	CHMO:0002323	high-resolution transmission electron microscope	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	hrtem
+CHMO:0000086	scanning transmission electron microscopy	skos:closeMatch	CHMO:0002649	scanning transmission electron microscope	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	stem
+CHMO:0000086	scanning transmission electron microscopy	skos:closeMatch	PO:0009047	stem	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	stem
+CHMO:0000089	confocal laser scanning microscopy	skos:closeMatch	CHMO:0001126	laser-scanning confocal microscope	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	lscm
+CHMO:0000101	scanning ion microscopy	skos:closeMatch	CHMO:0000571	selective ion monitoring	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	sim
+CHMO:0000110	phase contrast microscopy	skos:closeMatch	CHMO:0001567	photo etching	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	pcm
+CHMO:0000112	scanning probe microscopy	skos:closeMatch	CHMO:0000943	scanning probe microscope	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	spm
+CHMO:0000113	atomic force microscopy	skos:closeMatch	CHMO:0000954	atomic force microscope	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	afm
+CHMO:0000114	piezoresponse force microscopy	skos:closeMatch	CHMO:0000116	photonic force microscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	pfm
+CHMO:0000122	infrared scanning near-field optical microscopy	skos:closeMatch	CHMO:0002662	scattering near-field optical microscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	snim
+CHMO:0000138	Fourier profilometry	skos:closeMatch	CHMO:0002509	flash photolysis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	fp
+CHMO:0000142	electron diffraction	skos:closeMatch	CHMO:0001713	electrochemical detection	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	ed
+CHMO:0000152	photoelectron diffraction	skos:closeMatch	CHMO:0001714	pulsed electrochemical detection	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ped
+CHMO:0000154	normal photoelectron diffraction	skos:closeMatch	CHMO:0000699	neutron powder diffraction	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	npd
+CHMO:0000154	normal photoelectron diffraction	skos:closeMatch	CHMO:0001726	nitrogen–phosphorus detection	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	npd
+CHMO:0000174	resonance Rayleigh scattering spectroscopy	skos:closeMatch	CHMO:0000668	resonance Raman spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	rrs
+CHMO:0000180	static light scattering	skos:closeMatch	CHMO:0001705	selective laser sintering	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	sls
+CHMO:0000188	incoherent neutron scattering	skos:closeMatch	CHMO:0000192	inelastic neutron scattering	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ins
+CHMO:0000188	incoherent neutron scattering	skos:closeMatch	CHMO:0000346	ion-excited Auger electron spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ins
+CHMO:0000192	inelastic neutron scattering	skos:closeMatch	CHMO:0000346	ion-excited Auger electron spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ins
+CHMO:0000192	inelastic neutron scattering	skos:closeMatch	CHMO:0000590	neutron spectroscopy	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	inelastic neutron scattering
+CHMO:0000251	atomic emission spectroscopy	skos:closeMatch	CHMO:0000339	Auger electron spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	aes
+CHMO:0000284	laser-enhanced atomic fluorescence spectroscopy	skos:closeMatch	PO:0025034	leaf	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	leaf
+CHMO:0000363	resonance-ionisation spectroscopy	skos:closeMatch	CHMO:0000463	resonance ionisation spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	ris
+CHMO:0000366	electron energy loss spectroscopy	skos:closeMatch	CHMO:0000423	electrochemical-induced impedance spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	eis
+CHMO:0000366	electron energy loss spectroscopy	skos:closeMatch	CHMO:0001718	evaporative light scattering detection	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	els
+CHMO:0000366	electron energy loss spectroscopy	skos:closeMatch	CHMO:0001826	electrophoretic light scattering	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	els
+CHMO:0000371	ionisation spectroscopy	skos:closeMatch	CHMO:0000421	impedance spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	is
+CHMO:0000371	ionisation spectroscopy	skos:closeMatch	CHMO:0000446	intracavity laser absorption spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ils
+CHMO:0000387	photoelectron spectroscopy	skos:closeMatch	CHMO:0002186	polarisation spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ps
+CHMO:0000420	nuclear activation analysis	skos:closeMatch	CHMO:0000782	neutron activation analysis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	naa
+CHMO:0000426	ion-beam spectroscopy	skos:closeMatch	CHMO:0001367	ion-beam sputter deposition	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	ibs
+CHMO:0000431	differential mobility spectroscopy	skos:closeMatch	CHMO:0000561	dynamic secondary ion mass spectrometry	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	dms
+CHMO:0000470	mass spectrometry	skos:closeMatch	CHMO:0001592	magnetic bead extraction	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	ms
+CHMO:0000502	Fourier transform ion cyclotron resonance mass spectrometry	skos:closeMatch	CHMO:0000965	Fourier transform ion cyclotron resonance mass spectrometer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	ft-icr ms
+CHMO:0000502	Fourier transform ion cyclotron resonance mass spectrometry	skos:closeMatch	CHMO:0002925	Fourier transform mass spectrometry	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ftms
+CHMO:0000502	Fourier transform ion cyclotron resonance mass spectrometry	skos:closeMatch	CHMO:0002925	Fourier transform mass spectrometry	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	fourier mass spectrometry transform
+CHMO:0000504	quadrupole mass spectrometry	skos:closeMatch	CHMO:0000963	quadrupole mass spectrometer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	qms
+CHMO:0000538	inductively coupled plasma mass spectrometry	skos:closeMatch	CHMO:0000955	inductively coupled plasma mass spectrometer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	icp-ms
+CHMO:0000580	time-of-flight mass spectrometry	skos:closeMatch	CHMO:0000981	time-of-flight mass spectrometer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	tof-ms
+CHMO:0000580	time-of-flight mass spectrometry	skos:closeMatch	CHMO:0000981	time-of-flight mass spectrometer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	tof-ms
+CHMO:0000591	nuclear magnetic resonance spectroscopy	skos:closeMatch	CHMO:0000613	pulsed nuclear magnetic resonance spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	magnetic nuclear resonance spectrometry
+CHMO:0000591	nuclear magnetic resonance spectroscopy	skos:closeMatch	CHMO:0000613	pulsed nuclear magnetic resonance spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	nmr
+CHMO:0000591	nuclear magnetic resonance spectroscopy	skos:closeMatch	CHMO:0000613	pulsed nuclear magnetic resonance spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	nmr spectrometry
+CHMO:0000591	nuclear magnetic resonance spectroscopy	skos:closeMatch	CHMO:0000613	pulsed nuclear magnetic resonance spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	nmr spectroscopy
+CHMO:0000591	nuclear magnetic resonance spectroscopy	skos:closeMatch	CHMO:0000613	pulsed nuclear magnetic resonance spectroscopy	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	magnetic nuclear resonance spectroscopy
+CHMO:0000638	near-infrared absorption spectroscopy	skos:closeMatch	CHMO:0000646	near-infrared reflectance spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	nirs
+CHMO:0000648	attenuated total reflectance infrared spectroscopy	skos:closeMatch	CHMO:0001940	stimulated Raman loss spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	irs
+CHMO:0000690	thermogravimetry	skos:closeMatch	CHMO:0002121	thermogravimetric analyser	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	tg
+CHMO:0000690	thermogravimetry	skos:closeMatch	CHMO:0002121	thermogravimetric analyser	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	tga
+CHMO:0000699	neutron powder diffraction	skos:closeMatch	CHMO:0001726	nitrogen–phosphorus detection	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	npd
+CHMO:0000798	orthogonal acceleration time of flight mass spectrometry	skos:closeMatch	CHMO:0000962	orthogonal-acceleration time-of-flight mass spectrometer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	ms oa-tof
+CHMO:0000928	particle-tracking velocimetry	skos:closeMatch	CHMO:0002540	programmed temperature vaporisation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ptv
+CHMO:0000948	charge-coupled device	skos:closeMatch	CHMO:0001712	catalytic combustion detection	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	ccd
+CHMO:0000969	linear quadrupole ion trap mass-to-charge analyser	skos:closeMatch	CHMO:0002659	linear quadrupole mass spectrometer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ion linear mass quadrupole spectrometer trap
+CHMO:0000988	chromatography paper	skos:closeMatch	CHMO:0001008	paper chromatography	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chromatography paper
+CHMO:0000997	chromatography column	skos:closeMatch	CHMO:0001001	column chromatography	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chromatography column
+CHMO:0001011	gel filtration chromatography	skos:closeMatch	CHMO:0002571	gel filtration chromatograph	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	gpc
+CHMO:0001014	ion-exchange chromatography	skos:closeMatch	CHMO:0002874	ion chromatography	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	chromatography ion
+CHMO:0001100	field-emission transmission electron microscope	skos:closeMatch	CHMO:0002611	field-emission transmission electron microscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	feg-tem
+CHMO:0001100	field-emission transmission electron microscope	skos:closeMatch	CHMO:0002611	field-emission transmission electron microscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	fegtem
+CHMO:0001160	Raman circular dichroism spectroscopy	skos:closeMatch	CHMO:0001161	reflectance circular dichroism spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	rcd
+CHMO:0001345	solid-phase epitaxy	skos:closeMatch	CHMO:0001583	liquid-solid extraction	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	spe
+CHMO:0001401	electron-beam lithography	skos:closeMatch	CHMO:0001404	electron-beam projection lithography	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	epl
+CHMO:0001410	photolithography	skos:closeMatch	CHMO:0001417	ultraviolet lithography	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	lithography ultraviolet
+CHMO:0001419	continuous-flow lithography	skos:closeMatch	CHMO:0001783	capillary force lithography	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	cfl
+CHMO:0001549	sample drying	skos:closeMatch	CHMO:0002208	solvent evaporation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	drying
+CHMO:0001582	static headspace extraction	skos:closeMatch	CHMO:0002348	hydrogen gas electrode	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	she
+CHMO:0001659	electrospray ionisation	skos:closeMatch	MS:1000073	electrospray ionization	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	electrospray ionization
+CHMO:0001659	electrospray ionisation	skos:closeMatch	MS:1000073	electrospray ionization	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	esi
+CHMO:0001659	electrospray ionisation	skos:closeMatch	MS:1000073	electrospray ionization	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	electrospray ionisation
+CHMO:0001717	electron capture detection	skos:closeMatch	CHMO:0001926	electronic circular dichroism spectroscopy	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	ecd
+CHMO:0001718	evaporative light scattering detection	skos:closeMatch	CHMO:0001826	electrophoretic light scattering	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	els
+CHMO:0001719	flame ionisation detection	skos:closeMatch	CHMO:0002810	flame ionisation detector	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	fid
+CHMO:0001947	precipitation with compressed antisolvent	skos:closeMatch	OBI:0200051	principal components analysis dimensionality reduction	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	pca
+CHMO:0002097	electron transfer detection	skos:closeMatch	CHMO:0002532	Everhart–Thornley detector	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	etd
+CHMO:0002309	quadrupole time-of-flight mass spectrometer	skos:closeMatch	CHMO:0002719	quadrupole time-of-flight mass spectrometry	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	ms q-tof
+CHMO:0002309	quadrupole time-of-flight mass spectrometer	skos:closeMatch	CHMO:0002719	quadrupole time-of-flight mass spectrometry	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	ms qtof
+CHMO:0002309	quadrupole time-of-flight mass spectrometer	skos:closeMatch	CHMO:0002719	quadrupole time-of-flight mass spectrometry	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	q-tof-ms
+CHMO:0002309	quadrupole time-of-flight mass spectrometer	skos:closeMatch	CHMO:0002719	quadrupole time-of-flight mass spectrometry	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	qtof-ms
+CHMO:0002649	scanning transmission electron microscope	skos:closeMatch	PO:0009047	stem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	stem
+CHMO:0002703	fluorescence speckle microscopy	skos:closeMatch	CHMO:0002704	force spectroscopy mapping	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	fsm
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00003096	tap water	skos:closeMatch	ENVO:03600052	water tap	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tap water

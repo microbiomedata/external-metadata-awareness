@@ -1,0 +1,62 @@
+# curie_map:
+#   BFO: http://purl.obolibrary.org/obo/BFO_
+#   ECSO: http://w3id.org/sssom/unknown_prefix/ecso/
+#   ENVO: http://purl.obolibrary.org/obo/ENVO_
+#   RO: http://purl.obolibrary.org/obo/RO_
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/03a0b6bc-d942-4357-9bdc-5cce8eaeb301
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+BFO:0000015	process	skos:closeMatch	ECSO:00000546	Process	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	process
+ECSO:#PAR	PAR	skos:closeMatch	ECSO:00000048	Absorbed_Fraction_Incoming_PAR_MOV	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	active photosynthetically radiation
+ECSO:#PAR	PAR	skos:closeMatch	ECSO:00001573	photosynthetically active radiation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	active photosynthetically radiation
+ECSO:#PAR	PAR	skos:closeMatch	ECSO:00001573	photosynthetically active radiation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	par
+ECSO:#http://purl.obolibrary.org/obo/ENVO_01000406	snow	skos:closeMatch	ENVO:01000406	snow	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	snow
+ECSO:00000027	Soil Carbon Pool	skos:closeMatch	ECSO:00000531	Total Soil Carbon	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	carbon soil total
+ECSO:00000030	Leaf Carbon Pool	skos:closeMatch	ECSO:00000034	Leaf Litter Carbon Pool	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	leaves
+ECSO:00000037	Annual Net Primary Productivity Flux	skos:closeMatch	ECSO:00000533	Grassland Above Ground Net Primary Production Carbon Flux	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	anpp
+ECSO:00000037	Annual Net Primary Productivity Flux	skos:closeMatch	ECSO:00000533	Grassland Above Ground Net Primary Production Carbon Flux	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	anpp
+ECSO:00000046	Near_Surface_CO2_Concentration_MOV	skos:closeMatch	ECSO:00000580	CO2 Concentration in air	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	carbon concentration dioxide mov near surface
+ECSO:00000048	Absorbed_Fraction_Incoming_PAR_MOV	skos:closeMatch	ECSO:00001573	photosynthetically active radiation	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	active photosynthetically radiation
+ECSO:00000063	Longwave_Albedo_MOV	skos:closeMatch	ECSO:00000077	Shortwave_Albedo_MOV	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	albedo
+ECSO:00000063	Longwave_Albedo_MOV	skos:closeMatch	ECSO:00001694	albedo	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	albedo
+ECSO:00000077	Shortwave_Albedo_MOV	skos:closeMatch	ECSO:00001694	albedo	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	albedo
+ECSO:00000509	diameter	skos:closeMatch	ECSO:00001251	Diameter	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	diameter
+ECSO:00000510	circumference	skos:closeMatch	ECSO:00001255	Circumference	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	circumference
+ECSO:00000511	height	skos:closeMatch	ECSO:00001252	Height	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	height
+ECSO:00000515	depth	skos:closeMatch	ECSO:00001250	Depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+ECSO:00000523	thickness	skos:closeMatch	ECSO:00002227	thickness	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	thickness
+ECSO:00000528	Near_Surface_Specific_Humidity_MOV	skos:closeMatch	ECSO:00001163	Air Moisture Percentage	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	humidity
+ECSO:00000535	Oceanic Total Inorganic Carbon Concentration	skos:closeMatch	ECSO:00001122	Freshwater Total Inorganic Carbon Concentration	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	dic
+ECSO:00000571	dissolved organic carbon	skos:closeMatch	ECSO:00000577	Aquatic Dissolved Organic Carbon	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	doc
+ECSO:00000571	dissolved organic carbon	skos:closeMatch	ECSO:00000658	dissolved organic matter	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	dom
+ECSO:00000571	dissolved organic carbon	skos:closeMatch	ECSO:00000658	dissolved organic matter	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	dissolved material organic
+ECSO:00000571	dissolved organic carbon	skos:closeMatch	ECSO:00000658	dissolved organic matter	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	dom
+ECSO:00000571	dissolved organic carbon	skos:closeMatch	ECSO:00001125	Dissolved Organic Carbon Concentration	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	doc
+ECSO:00000572	particulate organic carbon	skos:closeMatch	ECSO:00000578	Aquatic Particulate Organic Carbon	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	poc
+ECSO:00000577	Aquatic Dissolved Organic Carbon	skos:closeMatch	ECSO:00001125	Dissolved Organic Carbon Concentration	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	doc
+ECSO:00000579	Soil organic matter proportion	skos:closeMatch	ECSO:00000670	Soil organic matter percentage	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	matter organic percentage soil
+ECSO:00000612	mole fraction	skos:closeMatch	ECSO:00000627	molar density	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	density molar
+ECSO:00000668	D14C	skos:closeMatch	ECSO:00003112	d14C	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	14 c delta
+ECSO:00000668	D14C	skos:closeMatch	ECSO:00003112	d14C	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	δ14c
+ECSO:00000668	D14C	skos:closeMatch	ECSO:00003112	d14C	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	d14c
+ECSO:00001106	Radiative Flux	skos:closeMatch	ECSO:00001121	Flux	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	flux
+ECSO:00001114	biomass	skos:closeMatch	ENVO:01000155	organic material	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	biomass
+ECSO:00001118	Aquatic Total Organic Carbon Concentration	skos:closeMatch	ECSO:00001130	Organic Carbon Concentration in Water	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	toc
+ECSO:00001142	Stable Carbon Isotope Ratio	skos:closeMatch	ECSO:00001514	carbon isotope ratio	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	carbon isotope ratio
+ECSO:00001154	Ocean	skos:closeMatch	ENVO:00000015	ocean	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ocean
+ECSO:00001159	Water pH	skos:closeMatch	ECSO:00001645	pH	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	ph
+ECSO:00001159	Water pH	skos:closeMatch	ECSO:00001645	pH	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	ph
+ECSO:00001188	Sample Count	skos:closeMatch	ECSO:00001189	Entity Count	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	count
+ECSO:00001188	Sample Count	skos:closeMatch	ECSO:00001200	Biomass Volumetric Density	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	abundance
+ECSO:00001246	Oxygen Concentration	skos:closeMatch	ECSO:00001669	dissolved oxygen concentration	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	concentration dissolved oxygen
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00003096	tap water	skos:closeMatch	ENVO:03600052	water tap	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tap water
+ENVO:2100001	determined by	skos:closeMatch	RO:0002507	determined by	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	by determined
+ENVO:2100007	determined by part of	skos:closeMatch	RO:0002509	determined by part of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	by determined part

@@ -1,0 +1,53 @@
+# curie_map:
+#   CHEBI: http://purl.obolibrary.org/obo/CHEBI_
+#   PATO: http://purl.obolibrary.org/obo/PATO_
+#   UBERON: http://purl.obolibrary.org/obo/UBERON_
+#   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/f4758715-e3cb-4ec5-b7ac-81cfb05ed1d4
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+mixs:ammonium	ammonium	skos:closeMatch	CHEBI:28938	ammonium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	ammonium
+mixs:ammonium	ammonium	skos:closeMatch	CHEBI:28938	ammonium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ammonium
+mixs:ammonium	ammonium	skos:closeMatch	mixs:ammonium	ammonium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ammonium
+mixs:density	density	skos:closeMatch	PATO:0001019	mass density	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	density
+mixs:density	density	skos:closeMatch	mixs:density	density	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	density
+mixs:depth	depth	skos:closeMatch	PATO:0001595	depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+mixs:depth	depth	skos:closeMatch	mixs:depth	depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+mixs:elevator	elevator	skos:closeMatch	mixs:elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:IndoorSpaceEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:MechStrucEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomConnectedEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomTypeEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:escalator	escalator	skos:closeMatch	mixs:escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+mixs:escalator	escalator	skos:closeMatch	nmdc:MechStrucEnum#escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+mixs:field	field	skos:closeMatch	UBERON:0007688	anlage	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	field
+mixs:field	field	skos:closeMatch	mixs:field	field	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	field
+mixs:humidity	humidity	skos:closeMatch	PATO:0015009	humidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	humidity
+mixs:humidity	humidity	skos:closeMatch	mixs:humidity	humidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	humidity
+mixs:oxygen	oxygen	skos:closeMatch	CHEBI:15379	dioxygen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	oxygen
+mixs:oxygen	oxygen	skos:closeMatch	CHEBI:25805	oxygen atom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	oxygen
+mixs:oxygen	oxygen	skos:closeMatch	mixs:oxygen	oxygen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	oxygen
+mixs:permeability	permeability	skos:closeMatch	PATO:0000970	permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permeability
+mixs:permeability	permeability	skos:closeMatch	mixs:permeability	permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permeability
+mixs:ph	ph	skos:closeMatch	PATO:0001842	acidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	ph
+mixs:ph	ph	skos:closeMatch	mixs:ph	ph	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ph
+mixs:porosity	porosity	skos:closeMatch	PATO:0000973	porosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	porosity
+mixs:porosity	porosity	skos:closeMatch	mixs:porosity	porosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	porosity
+mixs:pressure	pressure	skos:closeMatch	PATO:0001025	pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure
+mixs:pressure	pressure	skos:closeMatch	mixs:pressure	pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure
+mixs:salinity	salinity	skos:closeMatch	PATO:0085001	salinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	salinity
+mixs:salinity	salinity	skos:closeMatch	mixs:salinity	salinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	salinity
+mixs:sulfate	sulfate	skos:closeMatch	CHEBI:16189	sulfate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	sulfate
+mixs:sulfate	sulfate	skos:closeMatch	CHEBI:16189	sulfate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	sulfate
+mixs:sulfate	sulfate	skos:closeMatch	CHEBI:16189	sulfate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sulfate
+mixs:sulfate	sulfate	skos:closeMatch	mixs:sulfate	sulfate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sulfate
+mixs:viscosity	viscosity	skos:closeMatch	PATO:0000992	viscosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	viscosity
+mixs:viscosity	viscosity	skos:closeMatch	mixs:viscosity	viscosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	viscosity

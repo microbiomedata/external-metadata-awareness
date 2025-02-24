@@ -1,0 +1,124 @@
+# curie_map:
+#   ECOSIM: http://w3id.org/sssom/unknown_prefix/ecosim/
+#   ECOSIMCONCEPT: http://w3id.org/sssom/unknown_prefix/ecosimconcept/
+#   ENVO: http://purl.obolibrary.org/obo/ENVO_
+#   PO: http://purl.obolibrary.org/obo/PO_
+#   obo: http://w3id.org/sssom/unknown_prefix/obo/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/c0469027-4071-4dbd-9d4f-5ae5066e3116
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+ECOSIM:ALTZ	altitude	skos:closeMatch	ECOSIMCONCEPT:Altitude	Altitude	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	altitude
+ECOSIM:ARLFZ	branch leaf area	skos:closeMatch	obo:ECOSIM#_CanopyBranchLeafA_pft	branch leaf area	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	area branch leaf
+ECOSIM:ARSTX	total canopy stem area	skos:closeMatch	ECOSIM:StemAreag	total canopy stem area	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	area canopy stem total
+ECOSIM:ATCA	mean annual air temperature	skos:closeMatch	ECOSIM:TairKClimMean	mean annual air temperature	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	air annual mean temperature
+ECOSIM:ATCS	mean annual soil temperature	skos:closeMatch	ECOSIM:ATKS	mean annual soil temperature	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	annual mean soil temperature
+ECOSIM:BndlResistCanG	canopy boundary layer resistance	skos:closeMatch	ECOSIM:CanPbndlResist	canopy boundary layer resistance	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	boundary canopy layer resistance
+ECOSIM:CCO2EI	initial atmospheric CO2 concentration	skos:closeMatch	ECOSIM:CO2EI	initial atmospheric CO2 concentration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	atmospheric co2 concentration initial
+ECOSIM:CER	soil detachment/deposition	skos:closeMatch	ECOSIM:XER	soil detachment/deposition	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	detachment/deposition soil
+ECOSIM:CKAQ	surface irrigation K concentration	skos:closeMatch	ECOSIM:CKASQ	surface irrigation K concentration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	concentration irrigation k surface
+ECOSIM:CKAR	precipitation K concentration	skos:closeMatch	ECOSIM:CKASR	precipitation K concentration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	concentration k precipitation
+ECOSIM:CKASU	subsurface irrigation K concentration	skos:closeMatch	ECOSIM:CNAU	subsurface irrigation K concentration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	concentration irrigation k subsurface
+ECOSIM:CNETX	total net canopy CO2 exchange	skos:closeMatch	ECOSIM:TCNET	total canopy net CO2 exchange	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	canopy co2 exchange net total
+ECOSIM:CO2B	bundle sheath nonstructural C3 content in C4 photosynthesis	skos:closeMatch	ECOSIM:HCOB	bundle sheath nonstructural C3 content in C4 photosynthesis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bundle c3 c4 content in nonstructural photosynthesis sheath
+ECOSIM:CSTRQ	surface irrigation ion strength	skos:closeMatch	ECOSIM:CSTRR	surface irrigation ion strength	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ion irrigation strength surface
+ECOSIM:CanPHeight4WatUptake	canopy height	skos:closeMatch	ECOSIM:CanopyHeight	canopy height	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	canopy height
+ECOSIM:CanPHeight4WatUptake	canopy height	skos:closeMatch	ECOSIM:GridMaxCanopyHeight	canopy height	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	canopy height
+ECOSIM:CanopyHeight	canopy height	skos:closeMatch	ECOSIM:GridMaxCanopyHeight	canopy height	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	canopy height
+ECOSIM:DH	number of EW grid cells	skos:closeMatch	ECOSIM:DV	number of EW grid cells	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cells ew grid number
+ECOSIM:EPOOLN	root layer nonstructural element	skos:closeMatch	ECOSIM:EPOOLR	root layer nonstructural element	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	element layer nonstructural root
+ECOSIM:ESNC	plant litterfall element	skos:closeMatch	ECOSIM:HESNC	plant element litterfall	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	element litterfall plant
+ECOSIM:F1PR	F1PR	skos:closeMatch	ECOSIMCONCEPT:F1PR	F1PR	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	f1pr
+ECOSIM:FDBK4	down-regulation of C4 photosynthesis	skos:closeMatch	ECOSIM:FDBKX	down-regulation of C4 photosynthesis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	c4 down-regulation photosynthesis
+ECOSIM:FWatIrrigate2MicP	underground irrigation	skos:closeMatch	ECOSIM:IrrigSubsurf	underground irrigation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	irrigation underground
+ECOSIM:GSTGF	normalized node number during reproductive growth stages	skos:closeMatch	ECOSIM:TGSTGF	normalized node number during reproductive growth stages	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	during growth node normalized number reproductive stages
+ECOSIM:GSTGI	normalized node number during vegetative growth stages	skos:closeMatch	ECOSIM:TGSTGI	normalized node number during vegetative growth stages	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	during growth node normalized number stages vegetative
+ECOSIM:H2OVapDifscSno	water vapor diffusivity	skos:closeMatch	ECOSIM:VaporDiffusivityLitR	water vapor diffusivity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	diffusivity vapor water
+ECOSIM:H2OVapDifscSno	water vapor diffusivity	skos:closeMatch	ECOSIM:WGSGA	water vapor diffusivity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	diffusivity vapor water
+ECOSIM:H2OVapDifscSno	water vapor diffusivity	skos:closeMatch	ECOSIM:WGSGL	water vapor diffusivity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	diffusivity vapor water
+ECOSIM:HTNODE	internode height	skos:closeMatch	ECOSIM:HTNODX	internode height	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	height internode
+ECOSIM:LWRadSky	sky longwave radiation	skos:closeMatch	ECOSIM:THSX	sky longwave radiation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	longwave radiation sky
+ECOSIM:MPa	MPa	skos:closeMatch	ECOSIM:Mpa	Mpa	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mpa
+ECOSIM:MaxCanPStomaResistH2O	maximum stomatal resistance to vapor	skos:closeMatch	ECOSIM:RSMX	maximum stomatal resistance to vapor	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	maximum resistance stomatal to vapor
+ECOSIM:PPX	plant population	skos:closeMatch	ECOSIM:pftPlantPopulation	plant population	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	plant population
+ECOSIM:PRECB	precipitation at ground surface used to calculate soil erosion	skos:closeMatch	ECOSIM:PRECD	precipitation at ground surface used to calculate soil erosion	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	at calculate erosion ground precipitation soil surface to used
+ECOSIM:RN2BX	total root + microbial NO2 uptake band	skos:closeMatch	ECOSIM:RN2BY	total root + microbial NO2 uptake band	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	+ band microbial no2 root total uptake
+ECOSIM:RN2G	microbial net N2 exchange	skos:closeMatch	ECOSIM:XN2GS	net microbial N2 exchange	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	exchange microbial n2 net
+ECOSIM:RN2OX	total root + microbial N2O uptake	skos:closeMatch	ECOSIM:RN2OY	total root + microbial N2O uptake	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	+ microbial n2o root total uptake
+ECOSIM:RN3BX	total root + microbial NO3 uptake band	skos:closeMatch	ECOSIM:RN3BY	total root + microbial NO3 uptake band	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	+ band microbial no3 root total uptake
+ECOSIM:RNH4X	total root + microbial NH4 uptake non-band	skos:closeMatch	ECOSIM:RNH4Y	total root + microbial NH4 uptake non-band	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	+ microbial nh4 non-band root total uptake
+ECOSIM:RNHBX	total root + microbial NH4 uptake band	skos:closeMatch	ECOSIM:RNHBY	total root + microbial NH4 uptake band	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	+ band microbial nh4 root total uptake
+ECOSIM:RNO2X	total root + microbial NO2 uptake non-band	skos:closeMatch	ECOSIM:RNO2Y	total root + microbial NO2 uptake non-band	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	+ microbial no2 non-band root total uptake
+ECOSIM:RNO3X	total root + microbial NO3 uptake non-band	skos:closeMatch	ECOSIM:RNO3Y	total root + microbial NO3 uptake non-band	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	+ microbial no3 non-band root total uptake
+ECOSIM:ROQAX	total root + microbial acetate uptake	skos:closeMatch	ECOSIM:ROQAY	total root + microbial acetate uptake	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	+ acetate microbial root total uptake
+ECOSIM:ROQCX	total root + microbial DOC uptake	skos:closeMatch	ECOSIM:ROQCY	total root + microbial DOC uptake	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	+ doc microbial root total uptake
+ECOSIM:ROXYX	total root + microbial O2 uptake	skos:closeMatch	ECOSIM:ROXYY	total root + microbial O2 uptake	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	+ microbial o2 root total uptake
+ECOSIM:RPO4X	total root + microbial PO4 uptake non-band	skos:closeMatch	ECOSIM:RPO4Y	total root + microbial PO4 uptake non-band	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	+ microbial non-band po4 root total uptake
+ECOSIM:RPOBX	total root + microbial PO4 uptake band	skos:closeMatch	ECOSIM:RPOBY	total root + microbial PO4 uptake band	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	+ band microbial po4 root total uptake
+ECOSIM:SL	slope	skos:closeMatch	ECOSIMCONCEPT:Slope	Slope	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	slope
+ECOSIM:SL	slope	skos:closeMatch	ENVO:00002000	slope	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	slope
+ECOSIM:SoilDetachability4Erosion1	soil detachment	skos:closeMatch	ECOSIMCONCEPT:SoilDetachment	Soil detachment	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	detachment soil
+ECOSIM:TCA	air temperature	skos:closeMatch	ECOSIM:TairK	air temperature	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	air temperature
+ECOSIM:TCC	canopy temperature	skos:closeMatch	ECOSIM:TKC	canopy temperature	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	canopy temperature
+ECOSIM:TCC	canopy temperature	skos:closeMatch	ECOSIM:TKCZ	canopy temperature	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	canopy temperature
+ECOSIM:TCG	canopy growth temperature	skos:closeMatch	ECOSIM:TKG	canopy growth temperature	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	canopy growth temperature
+ECOSIM:TCSnow	snow temperature	skos:closeMatch	ECOSIM:TKSnow	snow temperature	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	snow temperature
+ECOSIM:TKC	canopy temperature	skos:closeMatch	ECOSIM:TKCZ	canopy temperature	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	canopy temperature
+ECOSIM:TLEC	total latent heat flux x boundary layer resistance	skos:closeMatch	ECOSIM:TLEX	total latent heat flux x boundary layer resistance	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	boundary flux heat latent layer resistance total x
+ECOSIM:TSHC	total sensible heat flux x boundary layer resistance	skos:closeMatch	ECOSIM:TSHX	total sensible heat flux x boundary layer resistance	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	boundary flux heat layer resistance sensible total x
+ECOSIM:TUPNF	total root N2 fixation	skos:closeMatch	ECOSIM:UPNF	total root N2 fixation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fixation n2 root total
+ECOSIM:UXCSN	total litterfall C	skos:closeMatch	obo:ECOSIM#_LitrfalChemElemnts_vr	total litterfall C	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	c litterfall total
+ECOSIM:VGRO4	C4 carboxylation rate	skos:closeMatch	ECOSIMCONCEPT:C4CarboxylationRate	C4 carboxylation rate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	c4 carboxylation rate
+ECOSIM:VLWatMacPM	macropore water flux	skos:closeMatch	ECOSIM:WaterFlow2MacPM	macropore water flux	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	flux macropore water
+ECOSIM:VLWatMacPM	macropore water flux	skos:closeMatch	ECOSIM:WaterFlowMacP	water flux macropore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	flux macropore water
+ECOSIM:VLWatMicPM	micropore water flux	skos:closeMatch	ECOSIM:WaterFlow2MicPM	micropore water flux	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	flux micropore water
+ECOSIM:VLWatMicPM	micropore water flux	skos:closeMatch	ECOSIM:WaterFlowSoiMicP	water flux micropore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	flux micropore water
+ECOSIM:VOMX	rubisco oxygenase activity	skos:closeMatch	ECOSIMCONCEPT:RubiscoOxygenaseActivity	Rubisco oxygenase activity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	activity oxygenase rubisco
+ECOSIM:VaporDiffusivityLitR	water vapor diffusivity	skos:closeMatch	ECOSIM:WGSGA	water vapor diffusivity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	diffusivity vapor water
+ECOSIM:VaporDiffusivityLitR	water vapor diffusivity	skos:closeMatch	ECOSIM:WGSGL	water vapor diffusivity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	diffusivity vapor water
+ECOSIM:WGLFE	leaf element	skos:closeMatch	ECOSIMCONCEPT:LeafElement	Leaf element	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	element leaf
+ECOSIM:WGSGA	water vapor diffusivity	skos:closeMatch	ECOSIM:WGSGL	water vapor diffusivity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	diffusivity vapor water
+ECOSIM:WTLFBE	branch leaf element	skos:closeMatch	ECOSIMCONCEPT:BranchLeafElement	Branch leaf element	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	branch element leaf
+ECOSIM:WaterFlow2MacPM	macropore water flux	skos:closeMatch	ECOSIM:WaterFlowMacP	water flux macropore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	flux macropore water
+ECOSIM:WaterFlow2MicPM	micropore water flux	skos:closeMatch	ECOSIM:WaterFlowSoiMicP	water flux micropore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	flux micropore water
+ECOSIM:attribute	attribute	skos:closeMatch	ECOSIMCONCEPT:Attribute	attribute	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	attribute
+ECOSIM:context	context	skos:closeMatch	ECOSIMCONCEPT:Context	context	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	context
+ECOSIM:qualifier	qualifier	skos:closeMatch	ECOSIMCONCEPT:Qualifier	qualifier	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	qualifier
+ECOSIMCONCEPT:Al	Aluminum	skos:closeMatch	ECOSIMCONCEPT:Aluminum	Aluminum	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	aluminum
+ECOSIMCONCEPT:Ammonia	Ammonia	skos:closeMatch	ECOSIMCONCEPT:NH3	Ammonia	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ammonia
+ECOSIMCONCEPT:Ammonium	Ammonium	skos:closeMatch	ECOSIMCONCEPT:NH4	Ammonium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ammonium
+ECOSIMCONCEPT:Bicarbonate	Bicarbonate	skos:closeMatch	ECOSIMCONCEPT:HCO3	Bicarbonate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bicarbonate
+ECOSIMCONCEPT:Ca	Calcium	skos:closeMatch	ECOSIMCONCEPT:Calcium	Calcium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	calcium
+ECOSIMCONCEPT:Fe	Iron	skos:closeMatch	ECOSIMCONCEPT:Iron	Iron	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	iron
+ECOSIMCONCEPT:H	Hydrogen	skos:closeMatch	ECOSIMCONCEPT:Hydrogen	Hydrogen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hydrogen
+ECOSIMCONCEPT:K	Potassium	skos:closeMatch	ECOSIMCONCEPT:Potassium	Potassium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	potassium
+ECOSIMCONCEPT:Leaf	Leaf	skos:closeMatch	PO:0025034	leaf	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	leaf
+ECOSIMCONCEPT:Magnesium	Magnesium	skos:closeMatch	ECOSIMCONCEPT:Mg	Magnesium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	magnesium
+ECOSIMCONCEPT:MeltWater	MeltWater	skos:closeMatch	ECOSIMCONCEPT:Meltwater	Meltwater	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	meltwater
+ECOSIMCONCEPT:MeltWater	MeltWater	skos:closeMatch	ENVO:01000722	meltwater	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	meltwater
+ECOSIMCONCEPT:Meltwater	Meltwater	skos:closeMatch	ENVO:01000722	meltwater	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	meltwater
+ECOSIMCONCEPT:NO3	Nitrate	skos:closeMatch	ECOSIMCONCEPT:Nitrate	Nitrate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nitrate
+ECOSIMCONCEPT:P	Phosphorus	skos:closeMatch	ECOSIMCONCEPT:Phosphorus	Phosphorus	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	phosphorus
+ECOSIMCONCEPT:PO4	Phosphate	skos:closeMatch	ECOSIMCONCEPT:Phosphate	Phosphate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	phosphate
+ECOSIMCONCEPT:PO4Band	Phosphate band	skos:closeMatch	ECOSIMCONCEPT:PO4band	Phosphate band	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	band phosphate
+ECOSIMCONCEPT:Root	Root	skos:closeMatch	PO:0009005	root	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	root
+ECOSIMCONCEPT:RootNodule	Root nodule	skos:closeMatch	PO:0003023	root nodule	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nodule root
+ECOSIMCONCEPT:Runoff	Runoff	skos:closeMatch	ENVO:06105211	runoff	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	runoff
+ECOSIMCONCEPT:Sediment	Sediment	skos:closeMatch	ENVO:00002007	sediment	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sediment
+ECOSIMCONCEPT:Seed	Seed	skos:closeMatch	PO:0009010	seed	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	seed
+ECOSIMCONCEPT:Slope	Slope	skos:closeMatch	ENVO:00002000	slope	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	slope
+ECOSIMCONCEPT:Snow	Snow	skos:closeMatch	ENVO:01000406	snow	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	snow
+ECOSIMCONCEPT:SnowPack	SnowPack	skos:closeMatch	ECOSIMCONCEPT:Snowpack	Snowpack	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	snowpack
+ECOSIMCONCEPT:Soil	Soil	skos:closeMatch	ENVO:00001998	soil	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	soil
+ECOSIMCONCEPT:SoilSurface	Soil surface	skos:closeMatch	ENVO:02000059	surface soil	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	soil surface
+ECOSIMCONCEPT:Stem	Stem	skos:closeMatch	PO:0009047	stem	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stem
+ECOSIMCONCEPT:SurfaceWater	Surface water	skos:closeMatch	ENVO:00002042	surface water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ECOSIMCONCEPT:SurfaceWater	Surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00003096	tap water	skos:closeMatch	ENVO:03600052	water tap	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tap water
+obo:ECOSIM#_trcg_TFLA	total internal root gas flux	skos:closeMatch	obo:ECOSIM#_trcg_TLP	total root internal gas flux	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	flux gas internal root total

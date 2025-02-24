@@ -1,0 +1,19 @@
+# curie_map:
+#   BFO: http://purl.obolibrary.org/obo/BFO_
+#   ENVO: http://purl.obolibrary.org/obo/ENVO_
+#   RO: http://purl.obolibrary.org/obo/RO_
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/fe7b80e1-f0a2-4715-96a0-54b8eb68d8df
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+BFO:0000016	disposition	skos:closeMatch	RO:0000092	disposition of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	disposition
+BFO:0000019	quality	skos:closeMatch	RO:0000080	quality of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	quality
+BFO:0000023	role	skos:closeMatch	RO:0000081	role of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	role
+BFO:0000034	function	skos:closeMatch	RO:0000079	function of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	function
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00003096	tap water	skos:closeMatch	ENVO:03600052	water tap	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tap water

@@ -1,0 +1,61 @@
+# curie_map:
+#   envthes: http://w3id.org/sssom/unknown_prefix/envthes/
+#   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/6a9626f9-b2da-4cda-b0cc-163bbd353f82
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+mixs:alkalinity	alkalinity	skos:closeMatch	envthes:21450	alkalinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	alkalinity
+mixs:alkalinity	alkalinity	skos:closeMatch	mixs:alkalinity	alkalinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	alkalinity
+mixs:ammonium	ammonium	skos:closeMatch	envthes:20836	Ammonium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ammonium
+mixs:ammonium	ammonium	skos:closeMatch	mixs:ammonium	ammonium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ammonium
+mixs:basin	basin	skos:closeMatch	envthes:20529	basin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	basin
+mixs:basin	basin	skos:closeMatch	mixs:basin	basin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	basin
+mixs:calcium	calcium	skos:closeMatch	envthes:20804	Calcium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	calcium
+mixs:calcium	calcium	skos:closeMatch	mixs:calcium	calcium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	calcium
+mixs:chlorophyll	chlorophyll	skos:closeMatch	envthes:20784	Chlorophyll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	envthes:20785	chlorophyll a	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	mixs:chlorophyll	chlorophyll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+mixs:density	density	skos:closeMatch	envthes:21539	density	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	density
+mixs:density	density	skos:closeMatch	mixs:density	density	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	density
+mixs:depth	depth	skos:closeMatch	envthes:21549	depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+mixs:depth	depth	skos:closeMatch	mixs:depth	depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+mixs:elevator	elevator	skos:closeMatch	mixs:elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:IndoorSpaceEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:MechStrucEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomConnectedEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomTypeEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:escalator	escalator	skos:closeMatch	mixs:escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+mixs:escalator	escalator	skos:closeMatch	nmdc:MechStrucEnum#escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+mixs:fire	fire	skos:closeMatch	envthes:20379	fire	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fire
+mixs:fire	fire	skos:closeMatch	mixs:fire	fire	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fire
+mixs:fluor	fluor	skos:closeMatch	envthes:20823	Fluor	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fluor
+mixs:fluor	fluor	skos:closeMatch	mixs:fluor	fluor	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fluor
+mixs:humidity	humidity	skos:closeMatch	envthes:21578	humidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	humidity
+mixs:humidity	humidity	skos:closeMatch	mixs:humidity	humidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	humidity
+mixs:magnesium	magnesium	skos:closeMatch	envthes:20829	magnesium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	magnesium
+mixs:magnesium	magnesium	skos:closeMatch	mixs:magnesium	magnesium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	magnesium
+mixs:porosity	porosity	skos:closeMatch	envthes:21556	porosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	porosity
+mixs:porosity	porosity	skos:closeMatch	mixs:porosity	porosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	porosity
+mixs:potassium	potassium	skos:closeMatch	envthes:20864	potassium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	potassium
+mixs:potassium	potassium	skos:closeMatch	mixs:potassium	potassium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	potassium
+mixs:salinity	salinity	skos:closeMatch	envthes:10312	salinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	salinity
+mixs:salinity	salinity	skos:closeMatch	mixs:salinity	salinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	salinity
+mixs:sodium	sodium	skos:closeMatch	envthes:20867	sodium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sodium
+mixs:sodium	sodium	skos:closeMatch	mixs:sodium	sodium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sodium
+mixs:specific	specific	skos:closeMatch	envthes:10346	specific	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	specific
+mixs:specific	specific	skos:closeMatch	mixs:specific	specific	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	specific
+mixs:sulfate	sulfate	skos:closeMatch	envthes:20870	sulfate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sulfate
+mixs:sulfate	sulfate	skos:closeMatch	mixs:sulfate	sulfate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sulfate
+mixs:sulfide	sulfide	skos:closeMatch	envthes:20871	sulfide	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sulfide
+mixs:sulfide	sulfide	skos:closeMatch	mixs:sulfide	sulfide	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sulfide
+mixs:tillage	tillage	skos:closeMatch	envthes:20103	tillage	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tillage
+mixs:tillage	tillage	skos:closeMatch	mixs:tillage	tillage	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tillage
+mixs:turbidity	turbidity	skos:closeMatch	envthes:10389	turbidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	turbidity
+mixs:turbidity	turbidity	skos:closeMatch	mixs:turbidity	turbidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	turbidity
