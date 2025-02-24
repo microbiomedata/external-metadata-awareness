@@ -27,7 +27,7 @@
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/aca455a7-5f27-4d6b-9bad-f5b52deccfdf
+# mapping_set_id: https://w3id.org/sssom/mappings/d6cee5fc-7074-4c1a-b683-958bf4fc9a5c
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 BFO:0000003	occurrent	skos:closeMatch	UBERON:0000000	processual entity	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref-INVERSE	rdf:ID	uberon:0000000
 BFO:0000004	independent continuant	skos:closeMatch	CARO:0000000		semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref-INVERSE	oio:hasDbXref-INVERSE	uberon:0001062

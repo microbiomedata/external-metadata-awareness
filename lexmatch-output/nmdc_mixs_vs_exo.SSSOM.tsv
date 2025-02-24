@@ -16,7 +16,7 @@
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/b3ccb5c1-46bf-4370-91bb-19e5e16e237a
+# mapping_set_id: https://w3id.org/sssom/mappings/3909420d-6526-4dda-bfad-e5d1155a0f79
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 BFO:0000015	process	skos:closeMatch	ExO:0000023	process	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	process
 CHEBI:15377	water	skos:closeMatch	nmdc:DNASampleFormatEnum#Water	Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water

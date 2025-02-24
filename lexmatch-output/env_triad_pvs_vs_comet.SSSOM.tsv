@@ -1,0 +1,20 @@
+# curie_map:
+#   ENVO: http://purl.obolibrary.org/obo/ENVO_
+#   comet: http://w3id.org/sssom/unknown_prefix/comet/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/7bfe79fb-0c2c-4195-b83b-9c1dc0db925c
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+ENVO:00000141	bank	skos:closeMatch	comet:bank	bank	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bank
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00003096	tap water	skos:closeMatch	ENVO:03600052	water tap	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tap water
+comet:ExtractiveIndustryProductType#COAL	COAL	skos:closeMatch	comet:FossilFuelType#COAL	COAL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	coal
+comet:ExtractiveIndustryProductType#GAS	GAS	skos:closeMatch	comet:WellType#GAS	GAS	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gas
+comet:ExtractiveIndustryProductType#OIL	OIL	skos:closeMatch	comet:WellType#OIL	OIL	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	oil
+comet:HealthcareSite	HealthcareSite	skos:closeMatch	comet:PostalAddress	PostalAddress	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	ex:omop/care_site
+comet:Location	Location	skos:closeMatch	comet:location	location	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	location

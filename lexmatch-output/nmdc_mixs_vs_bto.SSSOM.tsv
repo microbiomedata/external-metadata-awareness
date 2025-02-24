@@ -15,7 +15,7 @@
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/e17666ac-3766-4665-bc20-55a5a294bf50
+# mapping_set_id: https://w3id.org/sssom/mappings/8f926555-d017-4cf3-8219-287d204b02a6
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 BTO:0000036	gastric adenocarcinoma cell	skos:closeMatch	BTO:0000498	gastric cancer cell	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	carcinoma cell gastric
 BTO:0000037	renal cell carcinoma cell	skos:closeMatch	BTO:0002787	clear cell adenocarcinoma cell	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	carcinoma cell cell clear

@@ -18,7 +18,7 @@
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/b296c6e9-27e8-41f7-82bc-bddf86a49056
+# mapping_set_id: https://w3id.org/sssom/mappings/250eb32c-94e1-43f0-9c1d-ad200164a2bc
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 BFO:0000029	site	skos:closeMatch	nmdc:Site	Site	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	site
 BFO:0000030	object	skos:closeMatch	nmdc:basic_classes/:object	object	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	object

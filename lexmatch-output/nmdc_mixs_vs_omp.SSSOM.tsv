@@ -20,7 +20,7 @@
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/4e7a8093-6f80-4f1e-9f9f-abb0d5201f42
+# mapping_set_id: https://w3id.org/sssom/mappings/c8d3538f-1ea3-46fa-9704-cc2cd1110589
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 BFO:0000050	part_of	skos:closeMatch	nmdc:basic_classes/:part_of	part_of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	part_of
 CHEBI:15377	water	skos:closeMatch	nmdc:DNASampleFormatEnum#Water	Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water

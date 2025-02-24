@@ -18,7 +18,7 @@
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/c88ae01d-6fc6-41a9-a8d5-e296ad89ead6
+# mapping_set_id: https://w3id.org/sssom/mappings/e168c758-7046-4507-a608-6c15398bb984
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 BCO:0000070	material entity A	skos:closeMatch	BFO:0000040	material entity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	entity material
 BFO:0000016	disposition	skos:closeMatch	RO:0000092	disposition of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	disposition
