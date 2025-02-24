@@ -1,0 +1,78 @@
+# curie_map:
+#   ENVO: http://purl.obolibrary.org/obo/ENVO_
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   schema: http://w3id.org/sssom/unknown_prefix/schema/
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/124d3b84-9d37-4258-a2a2-522299137511
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+ENVO:00000014	canal	skos:closeMatch	schema:Canal	Canal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	canal
+ENVO:00000025	reservoir	skos:closeMatch	schema:Reservoir	Reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reservoir
+ENVO:00000033	pond	skos:closeMatch	schema:Pond	Pond	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pond
+ENVO:00000081	mountain	skos:closeMatch	schema:Mountain	Mountain	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mountain
+ENVO:00000091	beach	skos:closeMatch	schema:Beach	Beach	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	beach
+ENVO:00000247	volcano	skos:closeMatch	schema:Volcano	Volcano	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	volcano
+ENVO:00000562	park	skos:closeMatch	schema:Park	Park	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	park
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00003096	tap water	skos:closeMatch	ENVO:03600052	water tap	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tap water
+ENVO:01000417	house	skos:closeMatch	schema:House	House	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	house
+schema:AggregateRating	AggregateRating	skos:closeMatch	schema:aggregateRating	aggregateRating	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	aggregaterating
+schema:AlbumRelease	AlbumRelease	skos:closeMatch	schema:albumRelease	albumRelease	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	albumrelease
+schema:Appearance	Appearance	skos:closeMatch	schema:appearance	appearance	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	appearance
+schema:Audience	Audience	skos:closeMatch	schema:audience	audience	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	audience
+schema:Brand	Brand	skos:closeMatch	schema:brand	brand	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	brand
+schema:BusinessFunction	BusinessFunction	skos:closeMatch	schema:businessFunction	businessFunction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	businessfunction
+schema:Code	Code	skos:closeMatch	schema:code	code	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	code
+schema:Collection	Collection	skos:closeMatch	schema:collection	collection	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	collection
+schema:Comment	Comment	skos:closeMatch	schema:comment	comment	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	comment
+schema:ContactPoint	ContactPoint	skos:closeMatch	schema:contactPoint	contactPoint	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	contactpoint
+schema:Course	Course	skos:closeMatch	schema:course	course	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	course
+schema:Dataset	Dataset	skos:closeMatch	schema:dataset	dataset	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dataset
+schema:DayOfWeek	DayOfWeek	skos:closeMatch	schema:dayOfWeek	dayOfWeek	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dayofweek
+schema:DeliveryMethod	DeliveryMethod	skos:closeMatch	schema:deliveryMethod	deliveryMethod	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	deliverymethod
+schema:Diet	Diet	skos:closeMatch	schema:diet	diet	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	diet
+schema:Distance	Distance	skos:closeMatch	schema:distance	distance	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	distance
+schema:DoseSchedule	DoseSchedule	skos:closeMatch	schema:doseSchedule	doseSchedule	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	doseschedule
+schema:Downpayment	Downpayment	skos:closeMatch	schema:downPayment	downPayment	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	downpayment
+schema:Drug	Drug	skos:closeMatch	schema:drug	drug	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	drug
+schema:DrugClass	DrugClass	skos:closeMatch	schema:drugClass	drugClass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	drugclass
+schema:Duration	Duration	skos:closeMatch	schema:duration	duration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	duration
+schema:EntertainmentBusiness	EntertainmentBusiness	skos:closeMatch	schema:entertainmentBusiness	entertainmentBusiness	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	entertainmentbusiness
+schema:Episode	Episode	skos:closeMatch	schema:episode	episode	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	episode
+schema:Event	Event	skos:closeMatch	schema:event	event	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	event
+schema:ExercisePlan	ExercisePlan	skos:closeMatch	schema:exercisePlan	exercisePlan	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	exerciseplan
+schema:FoodEstablishment	FoodEstablishment	skos:closeMatch	schema:foodEstablishment	foodEstablishment	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	foodestablishment
+schema:FoodEvent	FoodEvent	skos:closeMatch	schema:foodEvent	foodEvent	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	foodevent
+schema:Game	Game	skos:closeMatch	schema:game	game	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	game
+schema:GameServer	GameServer	skos:closeMatch	schema:gameServer	gameServer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gameserver
+schema:InfectiousAgentClass	InfectiousAgentClass	skos:closeMatch	schema:infectiousAgentClass	infectiousAgentClass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	infectiousagentclass
+schema:Language	Language	skos:closeMatch	schema:language	language	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	language
+schema:Map	Map	skos:closeMatch	schema:map	map	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	map
+schema:MedicalAudience	MedicalAudience	skos:closeMatch	schema:medicalAudience	medicalAudience	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	medicalaudience
+schema:MedicalSpecialty	MedicalSpecialty	skos:closeMatch	schema:medicalSpecialty	medicalSpecialty	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	medicalspecialty
+schema:MedicineSystem	MedicineSystem	skos:closeMatch	schema:medicineSystem	medicineSystem	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	medicinesystem
+schema:Menu	Menu	skos:closeMatch	schema:menu	menu	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	menu
+schema:Nerve	Nerve	skos:closeMatch	schema:nerve	nerve	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nerve
+schema:OpeningHoursSpecification	OpeningHoursSpecification	skos:closeMatch	schema:openingHoursSpecification	openingHoursSpecification	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	openinghoursspecification
+schema:OrderStatus	OrderStatus	skos:closeMatch	schema:orderStatus	orderStatus	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	orderstatus
+schema:PaymentDue	PaymentDue	skos:closeMatch	schema:paymentDue	paymentDue	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	paymentdue
+schema:PaymentMethod	PaymentMethod	skos:closeMatch	schema:paymentMethod	paymentMethod	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	paymentmethod
+schema:PaymentMethodType	PaymentMethodType	skos:closeMatch	schema:paymentMethodType	paymentMethodType	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	paymentmethodtype
+schema:PriceSpecification	PriceSpecification	skos:closeMatch	schema:priceSpecification	priceSpecification	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pricespecification
+schema:Question	Question	skos:closeMatch	schema:question	question	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	question
+schema:RealEstateAgent	RealEstateAgent	skos:closeMatch	schema:realEstateAgent	realEstateAgent	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	realestateagent
+schema:Recipe	Recipe	skos:closeMatch	schema:recipe	recipe	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	recipe
+schema:Review	Review	skos:closeMatch	schema:review	review	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	review
+schema:Season	Season	skos:closeMatch	schema:season	season	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	season
+schema:Specialty	Specialty	skos:closeMatch	schema:specialty	specialty	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	specialty
+schema:SportsActivityLocation	SportsActivityLocation	skos:closeMatch	schema:sportsActivityLocation	sportsActivityLocation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sportsactivitylocation
+schema:SportsEvent	SportsEvent	skos:closeMatch	schema:sportsEvent	sportsEvent	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sportsevent
+schema:SportsTeam	SportsTeam	skos:closeMatch	schema:sportsTeam	sportsTeam	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sportsteam
+schema:Text	Text	skos:closeMatch	schema:text	text	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	text
+schema:URL	URL	skos:closeMatch	schema:url	url	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	url
+schema:WarrantyPromise	WarrantyPromise	skos:closeMatch	schema:warrantyPromise	warrantyPromise	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	warrantypromise
+schema:WarrantyScope	WarrantyScope	skos:closeMatch	schema:warrantyScope	warrantyScope	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	warrantyscope

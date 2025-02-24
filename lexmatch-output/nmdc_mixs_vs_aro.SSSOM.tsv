@@ -15,7 +15,7 @@
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/d4154e20-b83a-4fa7-aebe-c34353e66c44
+# mapping_set_id: https://w3id.org/sssom/mappings/fb03ba1f-3f5c-4494-839f-d116dfbc689f
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 ARO:0000014	gentamicin C	skos:closeMatch	ARO:3004015	gentamicin A	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	garamycin
 ARO:0000014	gentamicin C	skos:closeMatch	ARO:3007382	gentamicin	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	cidomycin

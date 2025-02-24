@@ -16,7 +16,7 @@
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/0d75ca01-8f8f-466c-884c-8ed05f0e18c6
+# mapping_set_id: https://w3id.org/sssom/mappings/430eb78d-7d8d-49ad-bcc0-c759e24c651e
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 CHEBI:15377	water	skos:closeMatch	nmdc:DNASampleFormatEnum#Water	Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
 CHEBI:15377	water	skos:closeMatch	nmdc:PlantGrowthMedEnum#water	water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	water
