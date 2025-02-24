@@ -19,7 +19,7 @@
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/8f0a8084-a324-449e-ab37-8f608142f4b4
+# mapping_set_id: https://w3id.org/sssom/mappings/11824939-67b6-47e1-b4bd-64def21587f0
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 BFO:0000050	part_of	skos:closeMatch	nmdc:basic_classes/:part_of	part_of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	part_of
 CHEBI:13193	hydrogen acceptor	skos:closeMatch	CHEBI:15339	acceptor	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	

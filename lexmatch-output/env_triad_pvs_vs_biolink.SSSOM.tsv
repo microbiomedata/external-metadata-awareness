@@ -1,0 +1,161 @@
+# curie_map:
+#   ENVO: http://purl.obolibrary.org/obo/ENVO_
+#   biolink: http://w3id.org/sssom/unknown_prefix/biolink/
+#   dcterms: http://w3id.org/sssom/unknown_prefix/dcterms/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/3e00ef74-f238-4da1-972b-9f3eed97e7eb
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00003096	tap water	skos:closeMatch	ENVO:03600052	water tap	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tap water
+biolink:Activity	activity	skos:closeMatch	biolink:GeneOrGeneProductOrChemicalEntityAspectEnum#activity	activity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	activity
+biolink:AgentTypeEnum#not_provided	not_provided	skos:closeMatch	biolink:ClinicalApprovalStatusEnum#not_provided	not_provided	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	not_provided
+biolink:AgentTypeEnum#not_provided	not_provided	skos:closeMatch	biolink:KnowledgeLevelEnum#not_provided	not_provided	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	not_provided
+biolink:AgentTypeEnum#not_provided	not_provided	skos:closeMatch	biolink:ResearchPhaseEnum#not_provided	not_provided	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	not_provided
+biolink:AnatomicalEntity	anatomical entity	skos:closeMatch	biolink:GrossAnatomicalStructure	gross anatomical structure	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	https://www.wikidata.org/entity/q4936952
+biolink:ApprovalStatusEnum#post_approval_withdrawal	post_approval_withdrawal	skos:closeMatch	biolink:ClinicalApprovalStatusEnum#post_approval_withdrawal	post_approval_withdrawal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	post_approval_withdrawal
+biolink:ChemicalAffectsGeneAssociation	chemical affects gene association	skos:closeMatch	biolink:GeneAffectsChemicalAssociation	gene affects chemical association	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	affects association chemical gene
+biolink:ChemicalGeneInteractionAssociation	chemical gene interaction association	skos:closeMatch	biolink:DrugToGeneAssociation	drug to gene association	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:relatedMatch	sio:001257
+biolink:ChemicalRole	chemical role	skos:closeMatch	biolink:chemical_role_mixin	chemical role mixin	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	chebi:51086
+biolink:ClinicalApprovalStatusEnum#not_provided	not_provided	skos:closeMatch	biolink:KnowledgeLevelEnum#not_provided	not_provided	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	not_provided
+biolink:ClinicalApprovalStatusEnum#not_provided	not_provided	skos:closeMatch	biolink:ResearchPhaseEnum#not_provided	not_provided	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	not_provided
+biolink:DiseaseOrPhenotypicFeatureToEntityAssociationMixin	disease or phenotypic feature to entity association mixin	skos:closeMatch	biolink:EntityToDiseaseOrPhenotypicFeatureAssociationMixin	entity to disease or phenotypic feature association mixin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	association disease entity feature mixin or phenotypic to
+biolink:DiseaseToEntityAssociationMixin	disease to entity association mixin	skos:closeMatch	biolink:EntityToDiseaseAssociationMixin	entity to disease association mixin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	association disease entity mixin to
+biolink:DiseaseToPhenotypicFeatureAssociation	disease to phenotypic feature association	skos:closeMatch	biolink:PhenotypicFeatureToDiseaseAssociation	phenotypic feature to disease association	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	association disease feature phenotypic to
+biolink:EntityToFeatureOrDiseaseQualifiersMixin	entity to feature or disease qualifiers mixin	skos:closeMatch	biolink:FeatureOrDiseaseQualifiersToEntityMixin	feature or disease qualifiers to entity mixin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	disease entity feature mixin or qualifiers to
+biolink:EntityToPhenotypicFeatureAssociationMixin	entity to phenotypic feature association mixin	skos:closeMatch	biolink:PhenotypicFeatureToEntityAssociationMixin	phenotypic feature to entity association mixin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	association entity feature mixin phenotypic to
+biolink:Exon	exon	skos:closeMatch	biolink:GeneOrGeneProductOrChemicalPartQualifierEnum#exon	exon	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	exon
+biolink:GeneFamily	gene family	skos:closeMatch	biolink:ProteinFamily	protein family	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	https://www.wikidata.org/entity/q2278983
+biolink:GeneFamily	gene family	skos:closeMatch	biolink:ProteinFamily	protein family	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	ncit:c26004
+biolink:GeneFamily	gene family	skos:closeMatch	biolink:ProteinFamily	protein family	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	https://www.wikidata.org/entity/q417841
+biolink:GeneFamily	gene family	skos:closeMatch	biolink:ProteinFamily	protein family	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ncit:c20130
+biolink:GeneFamily	gene family	skos:closeMatch	biolink:ProteinFamily	protein family	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	sio:001380
+biolink:GeneToDiseaseAssociation	gene to disease association	skos:closeMatch	biolink:GeneToDiseaseOrPhenotypicFeatureAssociation	gene to disease or phenotypic feature association	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch	skos:narrowMatch	https://datacommons.org/browser/diseasegeneassociation
+biolink:GeneToDiseaseAssociation	gene to disease association	skos:closeMatch	biolink:GeneToDiseaseOrPhenotypicFeatureAssociation	gene to disease or phenotypic feature association	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	sio:000983
+biolink:GeneToDiseaseOrPhenotypicFeatureAssociation	gene to disease or phenotypic feature association	skos:closeMatch	biolink:GeneToPhenotypicFeatureAssociation	gene to phenotypic feature association	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:exactMatch	http://bio2rdf.org/wormbase_vocabularygene-phenotype-association
+biolink:GeneticInheritance	genetic inheritance	skos:closeMatch	biolink:MolecularActivity	molecular activity	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch	skos:broadMatch	http://purl.bioontology.org/ontology/sty/t045
+biolink:GeneticInheritance	genetic inheritance	skos:closeMatch	biolink:PhysiologicalProcess	physiological process	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch	skos:narrowMatch	http://purl.bioontology.org/ontology/sty/t045
+biolink:IndividualOrganism	individual organism	skos:closeMatch	biolink:OrganismTaxon	organism taxon	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	http://purl.bioontology.org/ontology/sty/t001
+biolink:JournalArticle	journal article	skos:closeMatch	biolink:Publication	publication	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	iao:0000013
+biolink:KnowledgeLevelEnum#not_provided	not_provided	skos:closeMatch	biolink:ResearchPhaseEnum#not_provided	not_provided	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	not_provided
+biolink:MolecularActivity	molecular activity	skos:closeMatch	biolink:PhysiologicalProcess	physiological process	semapv:LexicalMatching	oaklib	0.5	skos:broadMatch	skos:narrowMatch	http://purl.bioontology.org/ontology/sty/t045
+biolink:PathologicalEntityMixin	pathological entity mixin	skos:closeMatch	biolink:PhenotypicFeature	phenotypic feature	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	hp:0000118
+biolink:acts_upstream_of	acts upstream of	skos:closeMatch	biolink:affects	affects	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	ro:0002263
+biolink:acts_upstream_of	acts upstream of	skos:closeMatch	biolink:precedes	precedes	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:closeMatch	ro:0002263
+biolink:acts_upstream_of_or_within	acts upstream of or within	skos:closeMatch	biolink:affects	affects	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	ro:0002264
+biolink:acts_upstream_of_or_within	acts upstream of or within	skos:closeMatch	biolink:precedes	precedes	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:closeMatch	ro:0002264
+biolink:affects	affects	skos:closeMatch	biolink:located_in	located in	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ncit:r100
+biolink:affects	affects	skos:closeMatch	biolink:participates_in	participates in	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:narrowMatch	http://identifiers.org/drugbank/pathway
+biolink:affects	affects	skos:closeMatch	biolink:precedes	precedes	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:closeMatch	ro:0002263
+biolink:affects	affects	skos:closeMatch	biolink:precedes	precedes	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:closeMatch	ro:0002264
+biolink:associated_with	associated with	skos:closeMatch	biolink:has_phenotype	has phenotype	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ro:0004029
+biolink:associated_with_decreased_likelihood_of	associated with decreased likelihood of	skos:closeMatch	biolink:decreased_likelihood_associated_with	decreased likelihood associated with	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	associated decreased likelihood with
+biolink:associated_with_increased_likelihood_of	associated with increased likelihood of	skos:closeMatch	biolink:increased_likelihood_associated_with	increased likelihood associated with	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	associated increased likelihood with
+biolink:associated_with_likelihood_of	associated with likelihood of	skos:closeMatch	biolink:likelihood_associated_with	likelihood associated with	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	associated likelihood with
+biolink:broad_match	broad match	skos:closeMatch	skos:broadMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:broad_match
+biolink:broad_match	broad match	skos:closeMatch	skos:broadMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:broad_match
+biolink:catalyzes	catalyzes	skos:closeMatch	biolink:enables	enables	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	ro:0002327
+biolink:caused_by	caused by	skos:closeMatch	biolink:has_participant	has participant	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ro:0004020
+biolink:chemically_similar_to	chemically similar to	skos:closeMatch	biolink:close_match	close match	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	chebi:is_enantiomer_of
+biolink:chemically_similar_to	chemically similar to	skos:closeMatch	biolink:close_match	close match	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	chebi:is_tautomer_of
+biolink:chemically_similar_to	chemically similar to	skos:closeMatch	biolink:derives_from	derives from	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	chebi:has_functional_parent
+biolink:chemically_similar_to	chemically similar to	skos:closeMatch	biolink:related_to	related to	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	chebi:is_conjugate_acid_of
+biolink:chemically_similar_to	chemically similar to	skos:closeMatch	biolink:related_to	related to	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	chebi:is_conjugate_base_of
+biolink:chemically_similar_to	chemically similar to	skos:closeMatch	biolink:subclass_of	subclass of	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	chebi:has_parent_hydride
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:close_match	close match	skos:closeMatch	skos:closeMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:close_match
+biolink:composed_primarily_of	composed primarily of	skos:closeMatch	biolink:has_part	has part	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	ro:0002473
+biolink:composed_primarily_of	composed primarily of	skos:closeMatch	biolink:primarily_composed_of	primarily composed of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	composed primarily
+biolink:condition_associated_with_gene	condition associated with gene	skos:closeMatch	biolink:gene_associated_with_condition	gene associated with condition	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	associated condition gene with
+biolink:consumes	consumes	skos:closeMatch	biolink:has_input	has input	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ro:0004009
+biolink:disease_has_location	disease has location	skos:closeMatch	biolink:related_to	related to	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	ro:0004026
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_approved_unknown_phase
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_suspended_phase_0
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_suspended_phase_1
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_suspended_phase_1_or_phase_2
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_suspended_phase_2
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_suspended_phase_2_or_phase_3
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_suspended_phase_3
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_terminated_phase_0
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_terminated_phase_1
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_terminated_phase_1_or_phase_2
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_terminated_phase_2
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_terminated_phase_2_or_phase_3
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_terminated_phase_3
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_withdrawn_phase_0
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_withdrawn_phase_1
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_withdrawn_phase_1_or_phase_2
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_withdrawn_phase_2
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_withdrawn_phase_2_or_phase_3
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	http://apps.chiragjpgroup.org/repodb/clinically_tested_withdrawn_phase_3
+biolink:drug_regulatory_status_world_wide	drug regulatory status world wide	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ncit:regimen_has_accepted_use_for_disease
+biolink:end_coordinate	end coordinate	skos:closeMatch	biolink:end_interbase_coordinate	end interbase coordinate	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch	skos:closeMatch	faldo:end
+biolink:exact_match	exact match	skos:closeMatch	biolink:same_as	same as	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	skos:exactmatch
+biolink:exact_match	exact match	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:exact_match
+biolink:exact_match	exact match	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:exact_match
+biolink:exact_match	exact match	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:exact_match
+biolink:exact_match	exact match	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:exact_match
+biolink:exact_match	exact match	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:exact_match
+biolink:exact_match	exact match	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:exact_match
+biolink:genome_build	genome build	skos:closeMatch	biolink:strand	strand	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	https://github.com/the-sequence-ontology/specifications/blob/master/gff3.md#strand
+biolink:has_attribute	has attribute	skos:closeMatch	biolink:related_to	related to	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ro:0000053
+biolink:has_dataset	has dataset	skos:closeMatch	biolink:source_web_page	source web page	semapv:LexicalMatching	oaklib	0.5	skos:broadMatch	skos:broadMatch	dcterms:source
+biolink:has_member	has member	skos:closeMatch	biolink:has_part	has part	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	ro:0002351
+biolink:has_member	has member	skos:closeMatch	biolink:member_of	member of	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:closeMatch	skos:member
+biolink:has_metabolite	has metabolite	skos:closeMatch	biolink:is_metabolite	is metabolite	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	chebi:25212
+biolink:has_metabolite	has metabolite	skos:closeMatch	biolink:is_metabolite_of	is metabolite of	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	chebi:25212
+biolink:has_numeric_value	has numeric value	skos:closeMatch	biolink:has_quantitative_value	has quantitative value	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	http://qudt.org/1.1/schema/qudt#quantityvalue
+biolink:has_part	has part	skos:closeMatch	biolink:has_plasma_membrane_part	has plasma membrane part	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:exactMatch	ro:0002104
+biolink:is_metabolite	is metabolite	skos:closeMatch	biolink:is_metabolite_of	is metabolite of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	is metabolite
+biolink:is_metabolite	is metabolite	skos:closeMatch	biolink:is_metabolite_of	is metabolite of	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	chebi:25212
+biolink:license	license	skos:closeMatch	dcterms:license		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:license
+biolink:license	license	skos:closeMatch	dcterms:license		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:license
+biolink:member_of	member of	skos:closeMatch	biolink:part_of	part of	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:narrowMatch	ro:0002350
+biolink:name	name	skos:closeMatch	dcterms:title		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:name
+biolink:name	name	skos:closeMatch	dcterms:title		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:name
+biolink:name	name	skos:closeMatch	dcterms:title		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:name
+biolink:name	name	skos:closeMatch	dcterms:title		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:name
+biolink:narrow_match	narrow match	skos:closeMatch	skos:narrowMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:narrow_match
+biolink:narrow_match	narrow match	skos:closeMatch	skos:narrowMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:narrow_match
+biolink:part_of	part of	skos:closeMatch	biolink:related_to	related to	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	fma:related_developmental_entity_of
+biolink:regulates	regulates	skos:closeMatch	biolink:related_to	related to	semapv:LexicalMatching	oaklib	0.5	skos:broadMatch	skos:narrowMatch	ro:0002332
+biolink:related_to	related to	skos:closeMatch	biolink:synonym	synonym	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	iao:0000136
+biolink:related_to	related to	skos:closeMatch	biolink:temporally_related_to	temporally related to	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ro:0002092
+biolink:related_to	related to	skos:closeMatch	biolink:temporally_related_to	temporally related to	semapv:LexicalMatching	oaklib	0.5	skos:narrowMatch	skos:narrowMatch	ro:0002093
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:same_as	same as	skos:closeMatch	skos:exactMatch		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch-INVERSE	biolink:same_as
+biolink:start_coordinate	start coordinate	skos:closeMatch	biolink:start_interbase_coordinate	start interbase coordinate	semapv:LexicalMatching	oaklib	0.5	skos:closeMatch	skos:closeMatch	faldo:begin
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:synonym	synonym	skos:closeMatch	skos:altLabel		semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:narrowMatch-INVERSE	biolink:synonym
+biolink:treated_by	treated by	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:broadMatch	mondo:disease_responds_to
+biolink:treated_by	treated by	skos:closeMatch	biolink:treats	treats	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:relatedMatch	mondo:disease_responds_to
+biolink:treats	treats	skos:closeMatch	biolink:treats_or_applied_or_studied_to_treat	treats or applied or studied to treat	semapv:LexicalMatching	oaklib	0.5	skos:broadMatch	skos:exactMatch	https://skr3.nlm.nih.gov/semmeddbtreats
+biolink:version	version	skos:closeMatch	biolink:version_of	version of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	version

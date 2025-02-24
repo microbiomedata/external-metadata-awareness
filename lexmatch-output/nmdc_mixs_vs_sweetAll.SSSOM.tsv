@@ -1,0 +1,103 @@
+# curie_map:
+#   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+#   sweet: http://w3id.org/sssom/unknown_prefix/sweet/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/048a35c5-735a-448b-812a-1d15b726fcd9
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+mixs:alkalinity	alkalinity	skos:closeMatch	mixs:alkalinity	alkalinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	alkalinity
+mixs:alkalinity	alkalinity	skos:closeMatch	sweet:propChemical/Alkalinity	alkalinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	alkalinity
+mixs:ammonium	ammonium	skos:closeMatch	mixs:ammonium	ammonium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ammonium
+mixs:ammonium	ammonium	skos:closeMatch	sweet:matrIon/Ammonium	ammonium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ammonium
+mixs:basin	basin	skos:closeMatch	mixs:basin	basin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	basin
+mixs:basin	basin	skos:closeMatch	sweet:realmGeolBasin/Basin	basin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	basin
+mixs:basin	basin	skos:closeMatch	sweet:realmHydroBody/Basin	basin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	basin
+mixs:benzene	benzene	skos:closeMatch	mixs:benzene	benzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	benzene
+mixs:benzene	benzene	skos:closeMatch	sweet:matrOrganicCompound/Benzene	benzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	benzene
+mixs:biomass	biomass	skos:closeMatch	mixs:biomass	biomass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	biomass
+mixs:biomass	biomass	skos:closeMatch	sweet:matrBiomass/Biomass	biomass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	biomass
+mixs:biomass	biomass	skos:closeMatch	sweet:matrEnergy/Biomass	biomass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	biomass
+mixs:calcium	calcium	skos:closeMatch	mixs:calcium	calcium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	calcium
+mixs:calcium	calcium	skos:closeMatch	sweet:matrElement/Calcium	calcium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	calcium
+mixs:chlorophyll	chlorophyll	skos:closeMatch	mixs:chlorophyll	chlorophyll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	sweet:matrOrganicCompound/Chlorophyll	chlorophyll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	sweet:matrOrganicCompound/ChlorophyllA	chlorophyll a	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+mixs:density	density	skos:closeMatch	mixs:density	density	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	density
+mixs:density	density	skos:closeMatch	sweet:propMass/Density	density	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	density
+mixs:depth	depth	skos:closeMatch	mixs:depth	depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+mixs:depth	depth	skos:closeMatch	sweet:propSpaceHeight/Depth	depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+mixs:depth	depth	skos:closeMatch	sweet:reprSpaceCoordinate/Depth	depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+mixs:elevator	elevator	skos:closeMatch	mixs:elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:IndoorSpaceEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:MechStrucEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomConnectedEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomTypeEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:escalator	escalator	skos:closeMatch	mixs:escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+mixs:escalator	escalator	skos:closeMatch	nmdc:MechStrucEnum#escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+mixs:field	field	skos:closeMatch	mixs:field	field	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	field
+mixs:field	field	skos:closeMatch	sweet:realmLandform/Field	field	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	field
+mixs:field	field	skos:closeMatch	sweet:reprDataModel/Field	field	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	field
+mixs:field	field	skos:closeMatch	sweet:reprMathFunction/Field	field	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	field
+mixs:fire	fire	skos:closeMatch	mixs:fire	fire	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fire
+mixs:fire	fire	skos:closeMatch	sweet:phenReaction/Fire	fire	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fire
+mixs:gravity	gravity	skos:closeMatch	mixs:gravity	gravity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gravity
+mixs:gravity	gravity	skos:closeMatch	sweet:procPhysical/Gravity	gravity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gravity
+mixs:humidity	humidity	skos:closeMatch	mixs:humidity	humidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	humidity
+mixs:humidity	humidity	skos:closeMatch	sweet:propFraction/Humidity	humidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	humidity
+mixs:lithology	lithology	skos:closeMatch	mixs:lithology	lithology	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	lithology
+mixs:lithology	lithology	skos:closeMatch	sweet:humanKnowledgeDomain/Lithology	lithology	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	lithology
+mixs:magnesium	magnesium	skos:closeMatch	mixs:magnesium	magnesium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	magnesium
+mixs:magnesium	magnesium	skos:closeMatch	sweet:matrElement/Magnesium	magnesium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	magnesium
+mixs:methane	methane	skos:closeMatch	mixs:methane	methane	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	methane
+mixs:methane	methane	skos:closeMatch	sweet:matrOrganicCompound/Methane	methane	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	methane
+mixs:nitrate	nitrate	skos:closeMatch	mixs:nitrate	nitrate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nitrate
+mixs:nitrate	nitrate	skos:closeMatch	sweet:matrIon/Nitrate	nitrate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nitrate
+mixs:nitrite	nitrite	skos:closeMatch	mixs:nitrite	nitrite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nitrite
+mixs:nitrite	nitrite	skos:closeMatch	sweet:matrIon/Nitrite	nitrite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nitrite
+mixs:oxygen	oxygen	skos:closeMatch	mixs:oxygen	oxygen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	oxygen
+mixs:oxygen	oxygen	skos:closeMatch	sweet:matrElement/Oxygen	oxygen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	oxygen
+mixs:permeability	permeability	skos:closeMatch	mixs:permeability	permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permeability
+mixs:permeability	permeability	skos:closeMatch	sweet:propCharge/Permeability	permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permeability
+mixs:permeability	permeability	skos:closeMatch	sweet:propMassFlux/Permeability	permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permeability
+mixs:perturbation	perturbation	skos:closeMatch	mixs:perturbation	perturbation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	perturbation
+mixs:perturbation	perturbation	skos:closeMatch	sweet:phenSystem/Perturbation	perturbation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	perturbation
+mixs:ph	ph	skos:closeMatch	mixs:ph	ph	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ph
+mixs:ph	ph	skos:closeMatch	sweet:propChemical/pH	ph	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ph
+mixs:phosphate	phosphate	skos:closeMatch	mixs:phosphate	phosphate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	phosphate
+mixs:phosphate	phosphate	skos:closeMatch	sweet:matrCompound/Phosphate	phosphate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	phosphate
+mixs:porosity	porosity	skos:closeMatch	mixs:porosity	porosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	porosity
+mixs:porosity	porosity	skos:closeMatch	sweet:propFraction/Porosity	porosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	porosity
+mixs:potassium	potassium	skos:closeMatch	mixs:potassium	potassium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	potassium
+mixs:potassium	potassium	skos:closeMatch	sweet:matrElement/Potassium	potassium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	potassium
+mixs:pressure	pressure	skos:closeMatch	mixs:pressure	pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure
+mixs:pressure	pressure	skos:closeMatch	sweet:procPhysical/Pressure	pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure
+mixs:pressure	pressure	skos:closeMatch	sweet:propPressure/Pressure	pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure
+mixs:pressure	pressure	skos:closeMatch	sweet:reprSpaceCoordinate/Pressure	pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure
+mixs:reservoir	reservoir	skos:closeMatch	mixs:reservoir	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reservoir
+mixs:reservoir	reservoir	skos:closeMatch	sweet:realmHydroBody/Reservoir	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reservoir
+mixs:reservoir	reservoir	skos:closeMatch	sweet:reprSciComponent/Reservoir	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reservoir
+mixs:salinity	salinity	skos:closeMatch	mixs:salinity	salinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	salinity
+mixs:salinity	salinity	skos:closeMatch	sweet:propChemical/Salinity	salinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	salinity
+mixs:season	season	skos:closeMatch	mixs:season	season	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	season
+mixs:season	season	skos:closeMatch	sweet:reprSciUnits/season	season	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	season
+mixs:season	season	skos:closeMatch	sweet:reprTimeSeason/Season	season	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	season
+mixs:silicate	silicate	skos:closeMatch	mixs:silicate	silicate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	silicate
+mixs:silicate	silicate	skos:closeMatch	sweet:matrCompound/Silicate	silicate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	silicate
+mixs:sodium	sodium	skos:closeMatch	mixs:sodium	sodium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sodium
+mixs:sodium	sodium	skos:closeMatch	sweet:matrElement/Sodium	sodium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sodium
+mixs:sulfate	sulfate	skos:closeMatch	mixs:sulfate	sulfate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sulfate
+mixs:sulfate	sulfate	skos:closeMatch	sweet:matrCompound/Sulfate	sulfate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sulfate
+mixs:toluene	toluene	skos:closeMatch	mixs:toluene	toluene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	toluene
+mixs:toluene	toluene	skos:closeMatch	sweet:matrOrganicCompound/Toluene	toluene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	toluene
+mixs:turbidity	turbidity	skos:closeMatch	mixs:turbidity	turbidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	turbidity
+mixs:turbidity	turbidity	skos:closeMatch	sweet:propIndex/Turbidity	turbidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	turbidity
+mixs:viscosity	viscosity	skos:closeMatch	mixs:viscosity	viscosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	viscosity
+mixs:viscosity	viscosity	skos:closeMatch	sweet:propPressure/Viscosity	viscosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	viscosity
+mixs:xylene	xylene	skos:closeMatch	mixs:xylene	xylene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	xylene
+mixs:xylene	xylene	skos:closeMatch	sweet:matrOrganicCompound/Xylene	xylene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	xylene

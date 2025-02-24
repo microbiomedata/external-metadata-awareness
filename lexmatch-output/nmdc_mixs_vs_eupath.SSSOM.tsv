@@ -26,7 +26,7 @@
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/0a0a91c6-f966-4582-a164-c147b47fbed0
+# mapping_set_id: https://w3id.org/sssom/mappings/0aa1e407-8e61-4e6c-b18a-b8c336d506fb
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 BFO:0000019	quality	skos:closeMatch	RO:0000080	quality of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	quality
 BFO:0000023	role	skos:closeMatch	RO:0000081	role of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	role
