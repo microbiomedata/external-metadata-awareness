@@ -23,7 +23,7 @@
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/c95eb7a5-245d-4706-acc0-458dac081241
+# mapping_set_id: https://w3id.org/sssom/mappings/5a146a7f-5756-48d4-b1e9-8876f589952a
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 BAO:0000171	lipid	skos:closeMatch	nmdc:ExtractionTargetEnum#lipid	lipid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	lipid
 BAO:0000175	protein	skos:closeMatch	nmdc:ExtractionTargetEnum#protein	protein	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	protein

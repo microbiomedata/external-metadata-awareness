@@ -20,7 +20,7 @@
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/25b874db-cf33-4aa2-ab75-6248009eb0c1
+# mapping_set_id: https://w3id.org/sssom/mappings/d29f5c9c-7384-42d8-b2f2-356d5b5751f6
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 BCO:0000070	material entity A	skos:closeMatch	BFO:0000040	material entity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	entity material
 BCO:0000086	of organism	skos:closeMatch	OBI:0100026	organism	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	organism
