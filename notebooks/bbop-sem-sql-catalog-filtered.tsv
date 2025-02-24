@@ -1,681 +1,681 @@
-Key	basename	extension	LastModified	Size	obo_foundry_title
-README.md	README	md	2021-05-25T02:37:23.000Z	21	
-ado.db	ado	db	2022-10-17T16:07:06.000Z	17653760	Alzheimer's Disease Ontology
-ado.db.gz	ado	db.gz	2025-02-05T06:24:16.000Z	4266828	Alzheimer's Disease Ontology
-aeo-relation-graph.tsv.gz	aeo	relation-graph.tsv.gz	2022-06-15T13:38:01.000Z	7761	Anatomical Entity Ontology
-aeo.db	aeo	db	2022-10-17T16:07:06.000Z	1159168	Anatomical Entity Ontology
-aeo.owl	aeo	owl	2022-06-15T13:38:01.000Z	407236	Anatomical Entity Ontology
-agro-relation-graph.tsv.gz	agro	relation-graph.tsv.gz	2022-06-20T01:47:05.000Z	988343	Agronomy Ontology
-agro.db	agro	db	2022-10-17T16:07:06.000Z	43225088	Agronomy Ontology
-agro.db.gz	agro	db.gz	2025-02-05T06:24:16.000Z	11851963	Agronomy Ontology
-agro.owl	agro	owl	2022-06-20T01:47:05.000Z	6978509	Agronomy Ontology
-aio.db	aio	db	2022-10-17T16:07:06.000Z	532480	
-aio.db.gz	aio	db.gz	2025-02-05T06:24:16.000Z	384897	
-aism-relation-graph.tsv.gz	aism	relation-graph.tsv.gz	2022-06-20T01:47:05.000Z	6168091	Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
-aism.db.gz	aism	db.gz	2025-02-05T06:24:16.000Z	48241287	Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
-aism.owl	aism	owl	2022-06-20T01:47:05.000Z	23598556	Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
-allotrope.db	allotrope	db	2022-10-17T16:07:06.000Z	49381376	
-amphx-relation-graph.tsv.gz	amphx	relation-graph.tsv.gz	2022-06-20T01:47:05.000Z	11918	The Amphioxus Development and Anatomy Ontology
-amphx.db	amphx	db	2022-10-17T16:07:15.000Z	1798144	The Amphioxus Development and Anatomy Ontology
-amphx.db.gz	amphx	db.gz	2025-02-05T06:24:16.000Z	295618	The Amphioxus Development and Anatomy Ontology
-amphx.owl	amphx	owl	2022-06-20T01:47:11.000Z	589457	The Amphioxus Development and Anatomy Ontology
-apo-relation-graph.tsv.gz	apo	relation-graph.tsv.gz	2022-06-20T01:47:12.000Z	6665	Ascomycete phenotype ontology
-apo.db	apo	db	2022-10-17T16:07:17.000Z	1576960	Ascomycete phenotype ontology
-apo.db.gz	apo	db.gz	2025-02-05T06:24:16.000Z	305306	Ascomycete phenotype ontology
-apo.owl	apo	owl	2022-06-20T01:47:15.000Z	716033	Ascomycete phenotype ontology
-apollo_sv-relation-graph.tsv.gz	apollo_sv	relation-graph.tsv.gz	2022-06-20T01:47:16.000Z	235542	Apollo Structured Vocabulary
-apollo_sv.db	apollo_sv	db	2022-10-17T16:07:18.000Z	14520320	Apollo Structured Vocabulary
-apollo_sv.db.gz	apollo_sv	db.gz	2025-02-05T06:24:16.000Z	3588893	Apollo Structured Vocabulary
-apollo_sv.owl	apollo_sv	owl	2022-06-20T01:47:16.000Z	2521317	Apollo Structured Vocabulary
-aro-relation-graph.tsv.gz	aro	relation-graph.tsv.gz	2022-06-20T01:47:16.000Z	437321	Antibiotic Resistance Ontology
-aro.db	aro	db	2022-10-17T16:07:18.000Z	41005056	Antibiotic Resistance Ontology
-aro.db.gz	aro	db.gz	2025-02-05T06:24:16.000Z	8533973	Antibiotic Resistance Ontology
-aro.owl	aro	owl	2022-06-20T01:47:17.000Z	11798509	Antibiotic Resistance Ontology
-bad-ontology.db	bad	ontology.db	2022-10-17T16:07:18.000Z	532480	
-bad-ontology.db.old	bad	ontology.db.old	2022-04-21T01:10:06.000Z	532480	
-bao.db.gz	bao	db.gz	2025-02-05T06:24:16.000Z	6039743	
-bcio.db.gz	bcio	db.gz	2025-02-05T06:24:16.000Z	1318132	
-bco-relation-graph.tsv.gz	bco	relation-graph.tsv.gz	2022-06-20T01:47:17.000Z	11482	Biological Collections Ontology
-bco.db	bco	db	2022-10-17T16:07:19.000Z	2641920	Biological Collections Ontology
-bco.db.gz	bco	db.gz	2025-02-05T06:24:18.000Z	554772	Biological Collections Ontology
-bco.owl	bco	owl	2022-06-20T01:47:19.000Z	899384	Biological Collections Ontology
-bero-relation-graph.tsv.gz	bero	relation-graph.tsv.gz	2022-05-31T03:00:06.000Z	187302382	
-bero.db.gz	bero	db.gz	2025-02-05T06:24:19.000Z	1601603888	
-bero.owl	bero	owl	2022-05-31T03:00:12.000Z	1080249848	
-bfo-relation-graph.tsv.gz	bfo	relation-graph.tsv.gz	2022-06-20T01:47:19.000Z	560	Basic Formal Ontology
-bfo.db	bfo	db	2022-10-17T16:07:20.000Z	561152	Basic Formal Ontology
-bfo.db.gz	bfo	db.gz	2025-02-05T06:24:22.000Z	111344	Basic Formal Ontology
-bfo.owl	bfo	owl	2022-06-20T01:47:19.000Z	157931	Basic Formal Ontology
-bfo2020.db.gz	bfo2020	db.gz	2025-02-01T21:44:34.000Z	94876	
-bfo2020_core.db.gz	bfo2020_core	db.gz	2025-02-01T21:44:34.000Z	79866	
-bfo2020_notime.db.gz	bfo2020_notime	db.gz	2025-02-01T21:44:36.000Z	66738	
-bfo2020_time.db.gz	bfo2020_time	db.gz	2025-02-01T21:44:36.000Z	94857	
-biolink.db	biolink	db	2022-10-17T16:07:21.000Z	4399104	
-biolink.db.gz	biolink	db.gz	2025-02-05T06:24:23.000Z	873668	
-biopax.db	biopax	db	2022-09-05T01:22:28.000Z	700416	
-biopax.db.gz	biopax	db.gz	2025-02-05T06:24:24.000Z	646	
-biopragmatics-reactome.db.gz	biopragmatics	reactome.db.gz	2025-02-01T21:44:37.000Z	46	
-biovoices.db.gz	biovoices	db.gz	2025-02-05T06:24:25.000Z	435152	
-bspo-relation-graph.tsv.gz	bspo	relation-graph.tsv.gz	2022-06-20T01:47:19.000Z	11416	Biological Spatial Ontology
-bspo.db	bspo	db	2022-10-17T16:07:22.000Z	1478656	Biological Spatial Ontology
-bspo.db.gz	bspo	db.gz	2025-02-05T06:24:25.000Z	369318	Biological Spatial Ontology
-bspo.owl	bspo	owl	2022-06-20T01:47:20.000Z	635854	Biological Spatial Ontology
-bto-relation-graph.tsv.gz	bto	relation-graph.tsv.gz	2022-06-20T01:47:20.000Z	181633	BRENDA tissue / enzyme source
-bto.db.gz	bto	db.gz	2025-02-05T06:24:25.000Z	5230421	BRENDA tissue / enzyme source
-bto.owl	bto	owl	2022-06-20T01:47:21.000Z	10645778	BRENDA tissue / enzyme source
-caro-relation-graph.tsv.gz	caro	relation-graph.tsv.gz	2022-06-20T01:47:22.000Z	166302	Common Anatomy Reference Ontology
-caro.db.gz	caro	db.gz	2025-02-05T06:24:25.000Z	5248698	Common Anatomy Reference Ontology
-caro.owl	caro	owl	2022-06-20T01:47:23.000Z	12075775	Common Anatomy Reference Ontology
-cco.db.gz	cco	db.gz	2025-02-05T06:24:26.000Z	1376935	
-cdao-relation-graph.tsv.gz	cdao	relation-graph.tsv.gz	2022-06-20T01:47:23.000Z	2974	Comparative Data Analysis Ontology
-cdao.db	cdao	db	2022-10-17T16:07:23.000Z	651264	Comparative Data Analysis Ontology
-cdao.db.gz	cdao	db.gz	2025-02-05T06:24:26.000Z	136301	Comparative Data Analysis Ontology
-cdao.owl	cdao	owl	2022-06-20T01:47:25.000Z	205605	Comparative Data Analysis Ontology
-cdno-relation-graph.tsv.gz	cdno	relation-graph.tsv.gz	2022-06-20T01:47:26.000Z	83968	Compositional Dietary Nutrition Ontology
-cdno.db.gz	cdno	db.gz	2025-02-05T06:24:27.000Z	5793673	Compositional Dietary Nutrition Ontology
-cdno.owl	cdno	owl	2022-06-20T01:47:28.000Z	5693932	Compositional Dietary Nutrition Ontology
-cellosaurus.db.gz	cellosaurus	db.gz	2025-02-01T21:44:39.000Z	98728333	
-chebi-relation-graph.tsv.gz	chebi	relation-graph.tsv.gz	2022-06-20T01:47:28.000Z	51456933	Chemical Entities of Biological Interest
-chebi.db.gz	chebi	db.gz	2025-02-05T06:24:27.000Z	726067642	Chemical Entities of Biological Interest
-chebi.owl	chebi	owl	2022-06-20T01:49:20.000Z	691563543	Chemical Entities of Biological Interest
-chebiplus.db.gz	chebiplus	db.gz	2025-02-05T06:24:27.000Z	735956544	
-chemessence.db.gz	chemessence	db.gz	2025-02-05T06:24:27.000Z	508405341	
-cheminf-relation-graph.tsv.gz	cheminf	relation-graph.tsv.gz	2022-06-20T01:49:34.000Z	62962	Chemical Information Ontology
-cheminf.db	cheminf	db	2022-10-17T16:07:28.000Z	4468736	Chemical Information Ontology
-cheminf.db.gz	cheminf	db.gz	2025-02-05T06:24:28.000Z	943697	Chemical Information Ontology
-cheminf.owl	cheminf	owl	2022-06-20T01:49:34.000Z	1094479	Chemical Information Ontology
-chemont.db.gz	chemont	db.gz	2025-02-05T06:24:29.000Z	4812935	
-chiro-relation-graph.tsv.gz	chiro	relation-graph.tsv.gz	2022-06-20T01:49:34.000Z	559362	CHEBI Integrated Role Ontology
-chiro.db.gz	chiro	db.gz	2025-02-05T06:24:31.000Z	11520112	CHEBI Integrated Role Ontology
-chiro.owl	chiro	owl	2022-06-20T01:49:35.000Z	24233872	CHEBI Integrated Role Ontology
-chmo-relation-graph.tsv.gz	chmo	relation-graph.tsv.gz	2022-06-20T01:49:35.000Z	138187	Chemical Methods Ontology
-chmo.db	chmo	db	2022-10-17T16:07:35.000Z	16154624	Chemical Methods Ontology
-chmo.db.gz	chmo	db.gz	2025-02-05T06:24:41.000Z	3030651	Chemical Methods Ontology
-chmo.owl	chmo	owl	2022-06-20T01:49:36.000Z	6252756	Chemical Methods Ontology
-chr.db.gz	chr	db.gz	2025-02-01T21:45:00.000Z	6614905	
-cido-relation-graph.tsv.gz	cido	relation-graph.tsv.gz	2022-06-20T01:49:37.000Z	6660815	Coronavirus Infectious Disease Ontology
-cido.db.gz	cido	db.gz	2025-02-05T06:24:42.000Z	110457845	Coronavirus Infectious Disease Ontology
-cido.owl	cido	owl	2022-06-20T01:49:39.000Z	21027930	Coronavirus Infectious Disease Ontology
-cio-relation-graph.tsv.gz	cio	relation-graph.tsv.gz	2022-06-20T01:49:40.000Z	677	Confidence Information Ontology
-cio.db	cio	db	2022-10-17T16:07:42.000Z	532480	Confidence Information Ontology
-cio.db.gz	cio	db.gz	2025-02-05T06:25:14.000Z	77898	Confidence Information Ontology
-cio.owl	cio	owl	2022-06-20T01:49:43.000Z	124172	Confidence Information Ontology
-cl-relation-graph.tsv.gz	cl	relation-graph.tsv.gz	2022-06-20T01:49:44.000Z	17196197	Cell Ontology
-cl.db.gz	cl	db.gz	2025-02-05T06:25:20.000Z	89285401	Cell Ontology
-cl.owl	cl	owl	2022-06-20T01:49:46.000Z	59048755	Cell Ontology
-clao-relation-graph.tsv.gz	clao	relation-graph.tsv.gz	2022-06-20T01:49:49.000Z	129743	Collembola Anatomy Ontology
-clao.db	clao	db	2022-10-17T16:08:01.000Z	8949760	Collembola Anatomy Ontology
-clao.db.gz	clao	db.gz	2025-02-05T06:25:49.000Z	1649307	Collembola Anatomy Ontology
-clao.owl	clao	owl	2022-06-20T01:49:54.000Z	1754601	Collembola Anatomy Ontology
-clo-relation-graph.tsv.gz	clo	relation-graph.tsv.gz	2022-06-20T01:49:55.000Z	10848291	Cell Line Ontology
-clo.db.gz	clo	db.gz	2025-02-05T06:25:52.000Z	80237626	Cell Line Ontology
-clo.owl	clo	owl	2022-06-20T01:49:59.000Z	51785600	Cell Line Ontology
-clyh-relation-graph.tsv.gz	clyh	relation-graph.tsv.gz	2022-06-20T01:50:10.000Z	7596	Clytia hemisphaerica Development and Anatomy Ontology
-clyh.db	clyh	db	2022-10-17T16:08:27.000Z	987136	Clytia hemisphaerica Development and Anatomy Ontology
-clyh.db.gz	clyh	db.gz	2025-02-05T06:26:12.000Z	184803	Clytia hemisphaerica Development and Anatomy Ontology
-clyh.owl	clyh	owl	2022-06-20T01:50:12.000Z	301349	Clytia hemisphaerica Development and Anatomy Ontology
-cme.db	cme	db	2022-10-17T16:08:28.000Z	1216512	
-cmo-relation-graph.tsv	cmo	relation-graph.tsv	2022-06-20T01:50:12.000Z	1028279	Clinical measurement ontology
-cmo.db.gz	cmo	db.gz	2025-02-05T06:26:14.000Z	3666691	Clinical measurement ontology
-cmo.db.tmp	cmo	db.tmp	2022-06-20T01:50:13.000Z	532480	Clinical measurement ontology
-cmo.owl	cmo	owl	2022-06-20T01:50:13.000Z	5689123	Clinical measurement ontology
-co_324.db	co_324	db	2022-10-17T16:08:29.000Z	4780032	
-co_324.db.gz	co_324	db.gz	2025-02-01T21:45:36.000Z	877878	
-cob-relation-graph.tsv.gz	cob	relation-graph.tsv.gz	2022-06-20T01:50:14.000Z	1474	Core Ontology for Biology and Biomedicine
-cob.db	cob	db	2022-10-17T16:08:29.000Z	532480	Core Ontology for Biology and Biomedicine
-cob.db.gz	cob	db.gz	2025-02-05T06:26:16.000Z	59279	Core Ontology for Biology and Biomedicine
-cob.db.old	cob	db.old	2022-02-12T09:14:36.000Z	487424	Core Ontology for Biology and Biomedicine
-cob.owl	cob	owl	2022-06-20T01:50:14.000Z	55733	Core Ontology for Biology and Biomedicine
-colao-relation-graph.tsv.gz	colao	relation-graph.tsv.gz	2022-06-20T01:50:15.000Z	56639	Coleoptera Anatomy Ontology (COLAO)
-colao.db	colao	db	2022-10-17T16:08:30.000Z	10297344	Coleoptera Anatomy Ontology (COLAO)
-colao.db.gz	colao	db.gz	2025-02-05T06:26:17.000Z	2029792	Coleoptera Anatomy Ontology (COLAO)
-colao.owl	colao	owl	2022-06-20T01:50:15.000Z	3148474	Coleoptera Anatomy Ontology (COLAO)
-comet.db.gz	comet	db.gz	2025-02-05T06:26:17.000Z	243014	
-complexportal.db.gz	complexportal	db.gz	2025-02-01T21:45:39.000Z	7123645	
-comploinc.db.gz	comploinc	db.gz	2025-02-05T06:26:19.000Z	13763653	
-cosmo.db.gz	cosmo	db.gz	2025-02-01T21:45:41.000Z	164430063	
-cpont.db.gz	cpont	db.gz	2025-02-05T06:26:23.000Z	22282993	
-credit.db.gz	credit	db.gz	2025-02-01T21:45:51.000Z	28174	
-cro-relation-graph.tsv.gz	cro	relation-graph.tsv.gz	2022-06-20T01:50:16.000Z	1492	Contributor Role Ontology
-cro.db	cro	db	2022-10-17T16:08:34.000Z	667648	Contributor Role Ontology
-cro.db.gz	cro	db.gz	2025-02-05T06:26:23.000Z	138887	Contributor Role Ontology
-cro.owl	cro	owl	2022-06-20T01:50:17.000Z	191462	Contributor Role Ontology
-cso.db.gz	cso	db.gz	2025-02-01T21:45:52.000Z	7313167	
-cteno-relation-graph.tsv.gz	cteno	relation-graph.tsv.gz	2022-06-20T01:50:17.000Z	79344	Ctenophore Ontology
-cteno.db	cteno	db	2022-10-17T16:08:37.000Z	4435968	Ctenophore Ontology
-cteno.db.gz	cteno	db.gz	2025-02-05T06:26:23.000Z	871102	Ctenophore Ontology
-cteno.owl	cteno	owl	2022-06-20T01:50:18.000Z	1068205	Ctenophore Ontology
-cto-relation-graph.tsv.gz	cto	relation-graph.tsv.gz	2022-06-20T01:50:18.000Z	8165	CTO: Core Ontology of Clinical Trials
-cto.db	cto	db	2022-10-17T16:08:38.000Z	1810432	CTO: Core Ontology of Clinical Trials
-cto.db.gz	cto	db.gz	2025-02-05T06:26:24.000Z	403709	CTO: Core Ontology of Clinical Trials
-cto.owl	cto	owl	2022-06-20T01:50:18.000Z	600735	CTO: Core Ontology of Clinical Trials
-cvdo-relation-graph.tsv.gz	cvdo	relation-graph.tsv.gz	2022-06-20T01:50:19.000Z	20253	Cardiovascular Disease Ontology
-cvdo.db	cvdo	db	2022-10-17T16:08:38.000Z	3125248	Cardiovascular Disease Ontology
-cvdo.db.gz	cvdo	db.gz	2025-02-05T06:26:27.000Z	965784	Cardiovascular Disease Ontology
-cvdo.owl	cvdo	owl	2022-06-20T01:50:19.000Z	1015820	Cardiovascular Disease Ontology
-dbpediaont.db.gz	dbpediaont	db.gz	2023-01-05T20:14:23.000Z	1981807	
-dbpendiaont.db.gz	dbpendiaont	db.gz	2025-02-01T21:45:55.000Z	1969392	
-ddanat-relation-graph.tsv.gz	ddanat	relation-graph.tsv.gz	2022-06-20T01:50:19.000Z	5133	Dictyostelium discoideum anatomy
-ddanat.db	ddanat	db	2022-10-17T16:08:39.000Z	958464	Dictyostelium discoideum anatomy
-ddanat.db.gz	ddanat	db.gz	2025-02-05T06:26:30.000Z	170447	Dictyostelium discoideum anatomy
-ddanat.owl	ddanat	owl	2022-06-20T01:50:20.000Z	301721	Dictyostelium discoideum anatomy
-ddpheno-relation-graph.tsv.gz	ddpheno	relation-graph.tsv.gz	2022-06-20T01:50:20.000Z	24970	Dictyostelium discoideum phenotype ontology
-ddpheno.db	ddpheno	db	2022-10-17T16:08:41.000Z	4390912	Dictyostelium discoideum phenotype ontology
-ddpheno.db.gz	ddpheno	db.gz	2025-02-05T06:26:31.000Z	787511	Dictyostelium discoideum phenotype ontology
-ddpheno.owl	ddpheno	owl	2022-06-20T01:50:20.000Z	1830781	Dictyostelium discoideum phenotype ontology
-dhba.db.gz	dhba	db.gz	2025-02-05T06:26:31.000Z	3513312	
-dideo-relation-graph.tsv.gz	dideo	relation-graph.tsv.gz	2022-06-20T01:50:21.000Z	23407	Drug-drug Interaction and Drug-drug Interaction Evidence Ontology
-dideo.db	dideo	db	2022-10-17T16:08:41.000Z	3915776	Drug-drug Interaction and Drug-drug Interaction Evidence Ontology
-dideo.db.gz	dideo	db.gz	2025-02-05T06:26:34.000Z	859809	Drug-drug Interaction and Drug-drug Interaction Evidence Ontology
-dideo.owl	dideo	owl	2022-06-20T01:50:21.000Z	1505243	Drug-drug Interaction and Drug-drug Interaction Evidence Ontology
-disdriv-relation-graph.tsv.gz	disdriv	relation-graph.tsv.gz	2022-06-20T01:50:21.000Z	263	Disease Drivers Ontology
-disdriv.db	disdriv	db	2022-10-17T16:08:42.000Z	532480	Disease Drivers Ontology
-disdriv.db.gz	disdriv	db.gz	2025-02-05T06:26:33.000Z	37944	Disease Drivers Ontology
-disdriv.owl	disdriv	owl	2022-06-20T01:50:22.000Z	19678	Disease Drivers Ontology
-dmba.db.gz	dmba	db.gz	2025-02-05T06:26:37.000Z	1530656	
-doid-relation-graph.tsv.gz	doid	relation-graph.tsv.gz	2022-06-20T01:50:22.000Z	1165625	Human Disease Ontology
-doid.db.gz	doid	db.gz	2025-02-05T06:26:38.000Z	21632402	Human Disease Ontology
-doid.owl	doid	owl	2022-06-20T01:50:22.000Z	31775742	Human Disease Ontology
-dpo-relation-graph.tsv.gz	dpo	relation-graph.tsv.gz	2022-06-20T01:50:22.000Z	5879140	Drosophila Phenotype Ontology
-dpo.db.gz	dpo	db.gz	2025-02-05T06:26:41.000Z	3380237	Drosophila Phenotype Ontology
-dpo.owl	dpo	owl	2022-06-20T01:50:30.000Z	22041151	Drosophila Phenotype Ontology
-dron-relation-graph.tsv.gz	dron	relation-graph.tsv.gz	2022-06-20T01:50:36.000Z	50253436	The Drug Ontology
-dron.db.gz	dron	db.gz	2025-02-05T06:26:44.000Z	625135150	The Drug Ontology
-dron.owl	dron	owl	2022-06-20T01:50:47.000Z	595491084	The Drug Ontology
-drugbank.db.gz	drugbank	db.gz	2025-02-01T21:46:05.000Z	19697241	
-dtype.db.gz	dtype	db.gz	2025-02-01T21:46:08.000Z	39509	
-duo-relation-graph.tsv.gz	duo	relation-graph.tsv.gz	2022-06-20T01:51:00.000Z	10231	Data Use Ontology
-duo.db	duo	db	2022-10-17T16:09:50.000Z	1785856	Data Use Ontology
-duo.db.gz	duo	db.gz	2025-02-05T06:26:47.000Z	412386	Data Use Ontology
-duo.owl	duo	owl	2022-06-20T01:51:05.000Z	598267	Data Use Ontology
-ecao-relation-graph.tsv.gz	ecao	relation-graph.tsv.gz	2022-06-20T01:51:06.000Z	269761	The Echinoderm Anatomy and Development Ontology
-ecao.db	ecao	db	2022-10-17T16:09:51.000Z	9105408	The Echinoderm Anatomy and Development Ontology
-ecao.db.gz	ecao	db.gz	2025-02-05T06:26:49.000Z	36574741	The Echinoderm Anatomy and Development Ontology
-ecao.owl	ecao	owl	2022-06-20T01:51:07.000Z	950405	The Echinoderm Anatomy and Development Ontology
-eccode.db.gz	eccode	db.gz	2025-02-01T21:46:09.000Z	50932953	
-eco-relation-graph.tsv.gz	eco	relation-graph.tsv.gz	2022-06-20T01:51:09.000Z	354987	Evidence and Conclusion Ontology
-eco.db.gz	eco	db.gz	2025-02-05T06:26:54.000Z	5377679	Evidence and Conclusion Ontology
-eco.owl	eco	owl	2022-06-20T01:51:11.000Z	6883952	Evidence and Conclusion Ontology
-ecocore-relation-graph.tsv.gz	ecocore	relation-graph.tsv.gz	2022-06-20T01:51:12.000Z	5073887	An ontology of core ecological entities
-ecocore.db.gz	ecocore	db.gz	2025-02-05T06:26:56.000Z	30587831	An ontology of core ecological entities
-ecocore.owl	ecocore	owl	2022-06-20T01:51:17.000Z	20700022	An ontology of core ecological entities
-ecosim.db.gz	ecosim	db.gz	2025-02-01T21:46:14.000Z	1371838	
-ecso.db.gz	ecso	db.gz	2025-02-01T21:46:14.000Z	1471205	
-ecto-relation-graph.tsv.gz	ecto	relation-graph.tsv.gz	2022-06-20T01:51:18.000Z	13196717	Environmental conditions, treatments and exposures ontology
-ecto.db.gz	ecto	db.gz	2025-02-05T06:27:03.000Z	56675702	Environmental conditions, treatments and exposures ontology
-ecto.owl	ecto	owl	2022-06-20T01:51:24.000Z	62406135	Environmental conditions, treatments and exposures ontology
-edam.db	edam	db	2022-10-17T16:11:19.000Z	11829248	
-edam.db.gz	edam	db.gz	2025-02-01T21:46:15.000Z	2383711	
-efo.db.gz	efo	db.gz	2025-02-01T21:46:15.000Z	150940306	
-emapa-relation-graph.tsv.gz	emapa	relation-graph.tsv.gz	2022-06-20T01:51:41.000Z	701518	Mouse Developmental Anatomy Ontology
-emapa.db	emapa	db	2022-10-17T16:12:34.000Z	44933120	Mouse Developmental Anatomy Ontology
-emapa.db.gz	emapa	db.gz	2025-02-05T06:27:04.000Z	7529078	Mouse Developmental Anatomy Ontology
-emapa.owl	emapa	owl	2022-06-20T01:52:00.000Z	10907105	Mouse Developmental Anatomy Ontology
-enanomapper.db	enanomapper	db	2022-10-17T16:12:41.000Z	57860096	
-enanomapper.db.gz	enanomapper	db.gz	2025-02-05T06:27:08.000Z	15018326	
-enanomapper.owl.old	enanomapper	owl.old	2022-06-15T13:40:53.000Z	5645	
-enigma_context.db.gz	enigma_context	db.gz	2025-02-01T21:46:20.000Z	233359	
-envo-relation-graph.tsv.gz	envo	relation-graph.tsv.gz	2022-06-20T01:52:00.000Z	1700415	Environment Ontology
-envo.db-journal	envo.db	journal	2022-02-12T09:14:58.000Z	8720	
-envo.db.gz	envo	db.gz	2025-02-05T06:27:14.000Z	14980101	Environment Ontology
-envo.owl	envo	owl	2022-06-20T01:52:04.000Z	10129540	Environment Ontology
-envthes.db.gz	envthes	db.gz	2025-02-05T06:27:18.000Z	3841677	
-epio-relation-graph.tsv.ttl.tmp	epio	relation-graph.tsv.ttl.tmp	2022-06-20T01:52:09.000Z	4708339	Epilepsy Ontology
-epio.db.gz	epio	db.gz	2025-02-05T06:27:19.000Z	2863708	Epilepsy Ontology
-epio.owl	epio	owl	2022-06-20T01:52:10.000Z	3259140	Epilepsy Ontology
-eupath-relation-graph.tsv.gz	eupath	relation-graph.tsv.gz	2022-06-20T01:52:12.000Z	302403	VEuPathDB ontology
-eupath.db	eupath	db	2022-10-17T16:12:55.000Z	19828736	VEuPathDB ontology
-eupath.db.gz	eupath	db.gz	2025-02-05T06:27:21.000Z	4512627	VEuPathDB ontology
-eupath.owl	eupath	owl	2022-06-20T01:52:14.000Z	4650296	VEuPathDB ontology
-exo-relation-graph.tsv.gz	exo	relation-graph.tsv.gz	2022-06-20T01:52:15.000Z	4889	Exposure ontology
-exo.db	exo	db	2022-10-17T16:12:57.000Z	749568	Exposure ontology
-exo.db.gz	exo	db.gz	2025-02-05T06:27:20.000Z	148819	Exposure ontology
-exo.owl	exo	owl	2022-06-20T01:52:18.000Z	255174	Exposure ontology
-fao-relation-graph.tsv.gz	fao	relation-graph.tsv.gz	2022-06-20T01:52:18.000Z	4529	Fungal gross anatomy
-fao.db	fao	db	2022-10-17T16:12:58.000Z	741376	Fungal gross anatomy
-fao.db.gz	fao	db.gz	2025-02-05T06:27:22.000Z	147441	Fungal gross anatomy
-fao.owl	fao	owl	2022-06-20T01:52:19.000Z	235282	Fungal gross anatomy
-fbbi-relation-graph.tsv.gz	fbbi	relation-graph.tsv.gz	2022-06-20T01:52:20.000Z	13880	Biological Imaging Methods Ontology
-fbbi.db	fbbi	db	2022-10-17T16:12:59.000Z	2019328	Biological Imaging Methods Ontology
-fbbi.db.gz	fbbi	db.gz	2025-02-05T06:27:22.000Z	384717	Biological Imaging Methods Ontology
-fbbi.owl	fbbi	owl	2022-06-20T01:52:21.000Z	768600	Biological Imaging Methods Ontology
-fbbt-relation-graph.tsv.gz	fbbt	relation-graph.tsv.gz	2022-06-20T01:52:22.000Z	22011872	Drosophila gross anatomy
-fbbt.db.gz	fbbt	db.gz	2025-02-05T06:27:23.000Z	444173464	Drosophila gross anatomy
-fbbt.owl	fbbt	owl	2022-06-20T01:52:28.000Z	76269898	Drosophila gross anatomy
-fbcv-relation-graph.tsv.gz	fbcv	relation-graph.tsv.gz	2022-06-20T01:52:35.000Z	445046	FlyBase Controlled Vocabulary
-fbcv.db.gz	fbcv	db.gz	2025-02-05T06:27:27.000Z	3845661	FlyBase Controlled Vocabulary
-fbcv.owl	fbcv	owl	2022-06-20T01:52:44.000Z	5749634	FlyBase Controlled Vocabulary
-fbdv-relation-graph.tsv.gz	fbdv	relation-graph.tsv.gz	2022-06-20T01:52:45.000Z	222394	Drosophila development
-fbdv.db	fbdv	db	2022-10-17T16:13:18.000Z	7684096	Drosophila development
-fbdv.db.gz	fbdv	db.gz	2025-02-05T06:27:23.000Z	1318202	Drosophila development
-fbdv.owl	fbdv	owl	2022-06-20T01:52:46.000Z	802844	Drosophila development
-fhkb.db.gz	fhkb	db.gz	2025-02-01T21:46:27.000Z	74056	
-fibo.db.gz	fibo	db.gz	2025-02-01T21:46:28.000Z	13814070	
-fideo-relation-graph.tsv.gz	fideo	relation-graph.tsv.gz	2022-06-20T01:52:47.000Z	10181	Food Interactions with Drugs Evidence Ontology
-fideo.db	fideo	db	2022-10-17T16:13:20.000Z	12722176	Food Interactions with Drugs Evidence Ontology
-fideo.db.gz	fideo	db.gz	2025-02-05T06:27:25.000Z	1849785	Food Interactions with Drugs Evidence Ontology
-fideo.owl	fideo	owl	2022-06-20T01:52:49.000Z	334714	Food Interactions with Drugs Evidence Ontology
-flopo-relation-graph.tsv.gz	flopo	relation-graph.tsv.gz	2022-06-20T01:52:50.000Z	7571055	Flora Phenotype Ontology
-flopo.db.gz	flopo	db.gz	2025-02-05T06:27:27.000Z	51794371	Flora Phenotype Ontology
-flopo.owl	flopo	owl	2022-06-20T01:52:51.000Z	62498877	Flora Phenotype Ontology
-fma.db.gz	fma	db.gz	2025-02-05T06:27:31.000Z	628017413	Foundational Model of Anatomy Ontology (subset)
-fobi-relation-graph.tsv.gz	fobi	relation-graph.tsv.gz	2022-06-20T01:53:02.000Z	80931	Food-Biomarker Ontology
-fobi.db	fobi	db	2022-10-17T16:14:16.000Z	8892416	Food-Biomarker Ontology
-fobi.db.gz	fobi	db.gz	2025-02-05T06:27:37.000Z	1620826	Food-Biomarker Ontology
-fobi.owl	fobi	owl	2022-06-20T01:53:06.000Z	2640677	Food-Biomarker Ontology
-foo.db	foo	db	2021-05-18T01:34:24.000Z	57344	
-foodon-relation-graph.tsv.gz	foodon	relation-graph.tsv.gz	2022-06-20T01:53:08.000Z	4036406	Food Ontology
-foodon.db.gz	foodon	db.gz	2025-02-05T06:27:39.000Z	50458969	Food Ontology
-foodon.owl	foodon	owl	2022-06-20T01:53:09.000Z	40123872	Food Ontology
-fovt-relation-graph.tsv.gz	fovt	relation-graph.tsv.gz	2022-06-20T01:53:17.000Z	7836316	FuTRES Ontology of Vertebrate Traits
-fovt.db.gz	fovt	db.gz	2025-02-05T06:28:01.000Z	74703499	FuTRES Ontology of Vertebrate Traits
-fovt.owl	fovt	owl	2022-06-20T01:53:43.000Z	20156463	FuTRES Ontology of Vertebrate Traits
-fypo-relation-graph.tsv.gz	fypo	relation-graph.tsv.gz	2022-06-20T01:53:48.000Z	9720548	Fission Yeast Phenotype Ontology
-fypo.db.gz	fypo	db.gz	2025-02-05T06:28:18.000Z	58415565	Fission Yeast Phenotype Ontology
-fypo.owl	fypo	owl	2022-06-20T01:53:51.000Z	100255019	Fission Yeast Phenotype Ontology
-gard.db.gz	gard	db.gz	2025-02-05T06:28:48.000Z	2336625	
-gecko-relation-graph.tsv.gz	gecko	relation-graph.tsv.gz	2022-06-20T01:54:02.000Z	2550	Genomics Cohorts Knowledge Ontology
-gecko.db	gecko	db	2022-10-17T16:15:04.000Z	536576	Genomics Cohorts Knowledge Ontology
-gecko.db.gz	gecko	db.gz	2025-02-05T06:28:53.000Z	113020	Genomics Cohorts Knowledge Ontology
-gecko.owl	gecko	owl	2022-06-20T01:54:04.000Z	160220	Genomics Cohorts Knowledge Ontology
-genepio.db.gz	genepio	db.gz	2025-02-05T06:29:01.000Z	6527289	Genomic Epidemiology Ontology
-geno-relation-graph.tsv.gz	geno	relation-graph.tsv.gz	2022-06-20T01:54:05.000Z	38495	Genotype Ontology
-geno.db	geno	db	2022-10-17T16:15:04.000Z	2899968	Genotype Ontology
-geno.db.gz	geno	db.gz	2025-02-05T06:29:02.000Z	615005	Genotype Ontology
-geno.owl	geno	owl	2022-06-20T01:54:07.000Z	634329	Genotype Ontology
-geo-relation-graph.tsv.gz	geo	relation-graph.tsv.gz	2022-06-20T01:54:07.000Z	3188	Geographical Entity Ontology
-geo.db	geo	db	2022-10-17T16:15:05.000Z	1003520	Geographical Entity Ontology
-geo.db.gz	geo	db.gz	2025-02-05T06:29:01.000Z	214032	Geographical Entity Ontology
-geo.owl	geo	owl	2022-06-20T01:54:07.000Z	325667	Geographical Entity Ontology
-gno-relation-graph.tsv.gz	gno	relation-graph.tsv.gz	2022-06-20T01:54:08.000Z	4236790	Glycan Naming and Subsumption Ontology (GNOme)
-gno.db.gz	gno	db.gz	2025-02-05T06:29:02.000Z	133918902	Glycan Naming and Subsumption Ontology (GNOme)
-gno.owl	gno	owl	2022-06-20T01:54:09.000Z	111657840	Glycan Naming and Subsumption Ontology (GNOme)
-go-amigo.db.gz	go	amigo.db.gz	2025-02-05T06:29:02.000Z	1155586241	Gene Ontology
-go-lego.db.gz	go	lego.db.gz	2025-02-05T06:29:04.000Z	1777838118	Gene Ontology
-go-nucleus-relation-graph.tsv.gz	go	nucleus-relation-graph.tsv.gz	2022-05-31T05:50:36.000Z	21749	Gene Ontology
-go-nucleus.db	go	nucleus.db	2022-10-17T16:15:12.000Z	1847296	Gene Ontology
-go-nucleus.db.old	go	nucleus.db.old	2022-05-31T05:50:44.000Z	1310720	Gene Ontology
-go-nucleus.owl	go	nucleus.owl	2022-05-31T05:50:47.000Z	495695	Gene Ontology
-go-plus.db	go	plus.db	2022-10-17T16:15:13.000Z	532480	Gene Ontology
-go-relation-graph.tsv.gz	go	relation-graph.tsv.gz	2022-06-20T01:54:30.000Z	36560630	Gene Ontology
-go.db.gz	go	db.gz	2025-02-05T06:30:23.000Z	285882090	Gene Ontology
-go.owl	go	owl	2022-06-20T01:54:41.000Z	226540271	Gene Ontology
-goa_uniprot_all.db	goa_uniprot_all	db	2022-10-17T16:15:39.000Z	8192	
-goldterms.db.gz	goldterms	db.gz	2025-02-05T06:29:52.000Z	2949396	
-gsso-relation-graph.tsv	gsso	relation-graph.tsv	2022-06-20T01:55:08.000Z	8193063	Gender, Sex, and Sexual Orientation (GSSO) ontology
-gsso.db.gz	gsso	db.gz	2025-02-05T06:29:52.000Z	644	Gender, Sex, and Sexual Orientation (GSSO) ontology
-gsso.db.tmp	gsso	db.tmp	2022-06-20T01:55:08.000Z	532480	Gender, Sex, and Sexual Orientation (GSSO) ontology
-gsso.owl	gsso	owl	2022-06-20T01:55:08.000Z	17904543	Gender, Sex, and Sexual Orientation (GSSO) ontology
-gtdb.db.gz	gtdb	db.gz	2025-02-01T21:47:15.000Z	63417498	
-hancestro-relation-graph.tsv.gz	hancestro	relation-graph.tsv.gz	2022-06-20T01:55:10.000Z	11268	Human Ancestry Ontology
-hancestro.db	hancestro	db	2022-10-17T16:15:41.000Z	2437120	Human Ancestry Ontology
-hancestro.db.gz	hancestro	db.gz	2025-02-05T06:29:52.000Z	1698060	Human Ancestry Ontology
-hancestro.owl	hancestro	owl	2022-06-20T01:55:13.000Z	837074	Human Ancestry Ontology
-hao-relation-graph.tsv.gz	hao	relation-graph.tsv.gz	2022-06-20T01:55:14.000Z	402852	Hymenoptera Anatomy Ontology
-hao.db	hao	db	2022-10-17T16:15:42.000Z	35266560	Hymenoptera Anatomy Ontology
-hao.db.gz	hao	db.gz	2025-02-05T06:29:52.000Z	4518100	Hymenoptera Anatomy Ontology
-hao.owl	hao	owl	2022-06-20T01:55:15.000Z	6923086	Hymenoptera Anatomy Ontology
-hba.db.gz	hba	db.gz	2025-02-05T06:29:53.000Z	1379099	
-hcao.db.gz	hcao	db.gz	2025-02-01T21:47:26.000Z	155640919	
-hgnc.db.gz	hgnc	db.gz	2025-02-01T21:47:36.000Z	74978911	
-hgnc.genegroup.db.gz	hgnc	genegroup.db.gz	2025-02-01T21:47:39.000Z	1423023	
-hom-relation-graph.tsv.gz	hom	relation-graph.tsv.gz	2022-06-20T01:55:16.000Z	958	Homology Ontology
-hom.db	hom	db	2022-10-17T16:15:49.000Z	532480	Homology Ontology
-hom.db.gz	hom	db.gz	2025-02-05T06:29:53.000Z	79271	Homology Ontology
-hom.owl	hom	owl	2022-06-20T01:55:19.000Z	128079	Homology Ontology
-hp-relation-graph.tsv.gz	hp	relation-graph.tsv.gz	2022-06-20T01:55:19.000Z	21273554	Human Phenotype Ontology (HPO)
-hp.db.gz	hp	db.gz	2025-02-05T06:29:53.000Z	87804954	Human Phenotype Ontology (HPO)
-hp.owl	hp	owl	2022-06-20T01:55:23.000Z	95344503	Human Phenotype Ontology (HPO)
-hpinternational.db.gz	hpinternational	db.gz	2025-02-01T21:47:44.000Z	152804685	
-hsapdv-relation-graph.tsv.gz	hsapdv	relation-graph.tsv.gz	2022-06-20T01:55:25.000Z	24410	Human Developmental Stages
-hsapdv.db	hsapdv	db	2022-10-17T16:16:04.000Z	2342912	Human Developmental Stages
-hsapdv.db.gz	hsapdv	db.gz	2025-02-05T06:29:57.000Z	398716	Human Developmental Stages
-hsapdv.owl	hsapdv	owl	2022-06-20T01:55:27.000Z	610323	Human Developmental Stages
-hso-relation-graph.tsv.gz	hso	relation-graph.tsv.gz	2022-06-20T01:55:29.000Z	24327	Health Surveillance Ontology
-hso.db	hso	db	2022-10-17T16:16:06.000Z	3870720	Health Surveillance Ontology
-hso.db.gz	hso	db.gz	2025-02-05T06:29:57.000Z	797134	Health Surveillance Ontology
-hso.owl	hso	owl	2022-06-20T01:55:31.000Z	1360649	Health Surveillance Ontology
-htn-relation-graph.tsv.gz	htn	relation-graph.tsv.gz	2022-06-20T01:55:32.000Z	33183	Hypertension Ontology
-htn.db	htn	db	2022-10-17T16:16:07.000Z	3723264	Hypertension Ontology
-htn.db.gz	htn	db.gz	2025-02-05T06:29:57.000Z	828221	Hypertension Ontology
-htn.owl	htn	owl	2022-06-20T01:55:34.000Z	1322052	Hypertension Ontology
-iao-relation-graph.tsv.gz	iao	relation-graph.tsv.gz	2022-06-20T01:55:35.000Z	9087	Information Artifact Ontology
-iao.db	iao	db	2022-10-17T16:16:08.000Z	1691648	Information Artifact Ontology
-iao.db.gz	iao	db.gz	2025-02-05T06:29:57.000Z	389256	Information Artifact Ontology
-iao.owl	iao	owl	2022-06-20T01:55:38.000Z	560430	Information Artifact Ontology
-icd10cm.db.gz	icd10cm	db.gz	2025-02-01T21:47:46.000Z	26205683	
-icd10who.db.gz	icd10who	db.gz	2025-02-05T06:29:57.000Z	3305653	
-iceo-relation-graph.tsv.gz	iceo	relation-graph.tsv.gz	2022-06-20T01:55:38.000Z	6388459	Integrative and Conjugative Element Ontology
-iceo.db.gz	iceo	db.gz	2025-02-05T06:29:57.000Z	61229308	Integrative and Conjugative Element Ontology
-iceo.owl	iceo	owl	2022-06-20T01:55:40.000Z	37318862	Integrative and Conjugative Element Ontology
-ico-relation-graph.tsv.gz	ico	relation-graph.tsv.gz	2022-06-20T01:55:49.000Z	38381	Informed Consent Ontology
-ico.db	ico	db	2022-10-17T16:16:26.000Z	4485120	Informed Consent Ontology
-ico.db.gz	ico	db.gz	2025-02-05T06:29:59.000Z	991919	Informed Consent Ontology
-ico.owl	ico	owl	2022-06-20T01:55:52.000Z	1510583	Informed Consent Ontology
-ido-relation-graph.tsv.gz	ido	relation-graph.tsv.gz	2022-06-20T01:55:53.000Z	12075	Infectious Disease Ontology
-ido.db	ido	db	2022-10-17T16:16:27.000Z	2220032	Infectious Disease Ontology
-ido.db.gz	ido	db.gz	2025-02-05T06:29:59.000Z	469497	Infectious Disease Ontology
-ido.owl	ido	owl	2022-06-20T01:55:56.000Z	766591	Infectious Disease Ontology
-ino-relation-graph.tsv.gz	ino	relation-graph.tsv.gz	2022-06-20T01:55:57.000Z	12218	Interaction Network Ontology
-ino.db	ino	db	2022-10-17T16:16:28.000Z	1495040	Interaction Network Ontology
-ino.db.gz	ino	db.gz	2025-02-05T06:30:00.000Z	330515	Interaction Network Ontology
-ino.owl	ino	owl	2022-06-20T01:55:59.000Z	492962	Interaction Network Ontology
-inst.db	inst	db	2022-10-17T16:16:30.000Z	532480	
-interpro.db.gz	interpro	db.gz	2025-02-01T21:47:53.000Z	14256550	
-iof.db.gz	iof	db.gz	2025-02-05T06:30:00.000Z	387093	
-ito.db.gz	ito	db.gz	2025-02-05T06:30:00.000Z	57605730	
-ito.db.gz.old	ito	db.gz.old	2024-08-14T02:24:38.000Z	61265807	
-kegg.genome.db.gz	kegg	genome.db.gz	2025-02-01T21:47:59.000Z	35	
-kgcl.db.gz	kgcl	db.gz	2025-02-01T21:47:59.000Z	184756	
-kin.db.gz	kin	db.gz	2025-02-05T06:30:02.000Z	40642	
-kisao-relation-graph.tsv.gz	kisao	relation-graph.tsv.gz	2022-06-20T01:56:01.000Z	33519	Kinetic Simulation Algorithm Ontology
-kisao.db	kisao	db	2022-10-17T16:16:30.000Z	6971392	Kinetic Simulation Algorithm Ontology
-kisao.db.gz	kisao	db.gz	2025-02-05T06:30:03.000Z	770672	Kinetic Simulation Algorithm Ontology
-kisao.owl	kisao	owl	2022-06-20T01:56:02.000Z	1094726	Kinetic Simulation Algorithm Ontology
-labo-relation-graph.tsv.gz	labo	relation-graph.tsv.gz	2022-06-20T01:56:04.000Z	5557	clinical LABoratory Ontology
-labo.db	labo	db	2022-10-17T16:16:32.000Z	1175552	clinical LABoratory Ontology
-labo.db.gz	labo	db.gz	2025-02-05T06:30:03.000Z	257741	clinical LABoratory Ontology
-labo.owl	labo	owl	2022-06-20T01:56:07.000Z	380157	clinical LABoratory Ontology
-lepao-relation-graph.tsv.gz	lepao	relation-graph.tsv.gz	2022-06-20T01:56:07.000Z	137078	Lepidoptera Anatomy Ontology
-lepao.db	lepao	db	2022-10-17T16:16:33.000Z	11046912	Lepidoptera Anatomy Ontology
-lepao.db.gz	lepao	db.gz	2025-02-05T06:30:04.000Z	1940269	Lepidoptera Anatomy Ontology
-lepao.owl	lepao	owl	2022-06-20T01:56:15.000Z	3044039	Lepidoptera Anatomy Ontology
-ma-relation-graph.tsv.gz	ma	relation-graph.tsv.gz	2022-06-20T01:56:17.000Z	177539	Mouse adult gross anatomy
-ma.db	ma	db	2022-10-17T16:16:37.000Z	10653696	Mouse adult gross anatomy
-ma.db.gz	ma	db.gz	2025-02-05T06:30:04.000Z	1874063	Mouse adult gross anatomy
-ma.owl	ma	owl	2022-06-20T01:56:23.000Z	2699120	Mouse adult gross anatomy
-mamo-relation-graph.tsv.gz	mamo	relation-graph.tsv.gz	2022-06-20T01:56:25.000Z	3408	Mathematical modeling ontology
-mamo.db	mamo	db	2022-10-17T16:16:40.000Z	778240	Mathematical modeling ontology
-mamo.db.gz	mamo	db.gz	2022-09-12T02:11:36.000Z	104395	Mathematical modeling ontology
-mamo.owl	mamo	owl	2022-06-20T01:56:27.000Z	126934	Mathematical modeling ontology
-matcher-test.db.old	matcher	test.db.old	2022-04-21T01:20:16.000Z	532480	
-maxo-relation-graph.tsv.gz	maxo	relation-graph.tsv.gz	2022-06-20T01:56:28.000Z	15729464	Medical Action Ontology
-maxo.db.gz	maxo	db.gz	2025-02-05T06:30:05.000Z	23192576	Medical Action Ontology
-maxo.owl	maxo	owl	2022-06-20T01:56:36.000Z	57224995	Medical Action Ontology
-mba.db.gz	mba	db.gz	2025-02-05T06:30:05.000Z	1687843	
-mco-relation-graph.tsv.gz	mco	relation-graph.tsv.gz	2022-06-20T01:56:52.000Z	968810	Microbial Conditions Ontology
-mco.db.gz	mco	db.gz	2025-02-05T06:30:05.000Z	11990654	Microbial Conditions Ontology
-mco.owl	mco	owl	2022-06-20T01:57:11.000Z	17308396	Microbial Conditions Ontology
-mesh.db.gz	mesh	db.gz	2023-01-05T20:18:13.000Z	87556908	
-mf-relation-graph.tsv.gz	mf	relation-graph.tsv.gz	2022-06-20T01:57:16.000Z	19827	Mental Functioning Ontology
-mf.db	mf	db	2022-10-17T16:16:54.000Z	1818624	Mental Functioning Ontology
-mf.db.gz	mf	db.gz	2025-02-05T06:30:05.000Z	372309	Mental Functioning Ontology
-mf.owl	mf	owl	2022-06-20T01:57:19.000Z	482133	Mental Functioning Ontology
-mfmo-relation-graph.tsv.gz	mfmo	relation-graph.tsv.gz	2022-06-20T01:57:20.000Z	5815	Mammalian Feeding Muscle Ontology
-mfmo.db	mfmo	db	2022-10-17T16:16:55.000Z	2703360	Mammalian Feeding Muscle Ontology
-mfmo.db.gz	mfmo	db.gz	2025-02-05T06:30:05.000Z	742846	Mammalian Feeding Muscle Ontology
-mfmo.owl	mfmo	owl	2022-06-20T01:57:22.000Z	1112445	Mammalian Feeding Muscle Ontology
-mfoem-relation-graph.tsv.gz	mfoem	relation-graph.tsv.gz	2022-06-20T01:57:23.000Z	38821	Emotion Ontology
-mfoem.db	mfoem	db	2022-10-17T16:16:57.000Z	2777088	Emotion Ontology
-mfoem.db.gz	mfoem	db.gz	2025-02-05T06:30:06.000Z	573135	Emotion Ontology
-mfoem.owl	mfoem	owl	2022-06-20T01:57:25.000Z	628118	Emotion Ontology
-mfomd-relation-graph.tsv.gz	mfomd	relation-graph.tsv.gz	2022-06-20T01:57:26.000Z	50747	Mental Disease Ontology
-mfomd.db	mfomd	db	2022-10-17T16:16:57.000Z	4517888	Mental Disease Ontology
-mfomd.db.gz	mfomd	db.gz	2025-02-05T06:30:06.000Z	959202	Mental Disease Ontology
-mfomd.owl	mfomd	owl	2022-06-20T01:57:29.000Z	1347941	Mental Disease Ontology
-mi-relation-graph.tsv.gz	mi	relation-graph.tsv.gz	2022-06-20T01:57:30.000Z	27462	Molecular Interactions Controlled Vocabulary
-mi.db	mi	db	2022-10-17T16:16:58.000Z	8040448	Molecular Interactions Controlled Vocabulary
-mi.db.gz	mi	db.gz	2025-02-05T06:30:06.000Z	1761695	Molecular Interactions Controlled Vocabulary
-mi.owl	mi	owl	2022-06-20T01:57:38.000Z	3862595	Molecular Interactions Controlled Vocabulary
-miapa-relation-graph.tsv.gz	miapa	relation-graph.tsv.gz	2022-06-20T01:57:41.000Z	4808	MIAPA Ontology
-miapa.db	miapa	db	2022-10-17T16:16:58.000Z	1220608	MIAPA Ontology
-miapa.db.gz	miapa	db.gz	2025-02-05T06:30:06.000Z	232743	MIAPA Ontology
-miapa.owl	miapa	owl	2022-06-20T01:57:46.000Z	353875	MIAPA Ontology
-micro-relation-graph.tsv	micro	relation-graph.tsv	2022-06-20T01:57:47.000Z	38223419	Ontology of Prokaryotic Phenotypic and Metabolic Characters
-micro.db.gz	micro	db.gz	2025-02-05T06:30:06.000Z	645	Ontology of Prokaryotic Phenotypic and Metabolic Characters
-micro.db.tmp	micro	db.tmp	2022-06-20T01:57:50.000Z	532480	Ontology of Prokaryotic Phenotypic and Metabolic Characters
-micro.owl	micro	owl	2022-06-20T01:57:51.000Z	42503778	Ontology of Prokaryotic Phenotypic and Metabolic Characters
-mixs.db.gz	mixs	db.gz	2025-02-01T21:48:05.000Z	1647820	
-mlo.db.gz	mlo	db.gz	2025-02-05T06:30:07.000Z	296357	
-mmo-relation-graph.tsv.gz	mmo	relation-graph.tsv.gz	2022-06-20T01:57:58.000Z	14459	Measurement method ontology
-mmo.db	mmo	db	2022-10-17T16:16:59.000Z	3371008	Measurement method ontology
-mmo.db.gz	mmo	db.gz	2025-02-05T06:30:07.000Z	802323	Measurement method ontology
-mmo.owl	mmo	owl	2022-06-20T01:58:02.000Z	1494705	Measurement method ontology
-mmusdv-relation-graph.tsv.gz	mmusdv	relation-graph.tsv.gz	2022-06-20T01:58:02.000Z	11522	Mouse Developmental Stages
-mmusdv.db	mmusdv	db	2022-10-17T16:17:00.000Z	1228800	Mouse Developmental Stages
-mmusdv.db.gz	mmusdv	db.gz	2025-02-05T06:30:07.000Z	259620	Mouse Developmental Stages
-mmusdv.owl	mmusdv	owl	2022-06-20T01:58:04.000Z	310367	Mouse Developmental Stages
-mod-relation-graph.tsv.gz	mod	relation-graph.tsv.gz	2022-06-20T01:58:05.000Z	67862	Protein modification
-mod.db.gz	mod	db.gz	2025-02-05T06:30:07.000Z	3831476	Protein modification
-mod.owl	mod	owl	2022-06-20T01:58:06.000Z	9566164	Protein modification
-modl.db.gz	modl	db.gz	2025-02-05T06:30:07.000Z	36182	
-mondo-ingest.db.gz	mondo	ingest.db.gz	2025-02-05T06:30:07.000Z	113586385	Mondo Disease Ontology
-mondo-relation-graph.tsv.gz	mondo	relation-graph.tsv.gz	2022-06-20T01:58:09.000Z	29660418	Mondo Disease Ontology
-mondo.db.gz	mondo	db.gz	2025-02-05T06:30:11.000Z	225098136	Mondo Disease Ontology
-mondo.owl	mondo	owl	2022-06-20T01:58:16.000Z	234103507	Mondo Disease Ontology
-mop-relation-graph.tsv.gz	mop	relation-graph.tsv.gz	2022-06-20T01:58:28.000Z	113553	Molecular Process Ontology
-mop.db	mop	db	2022-10-17T16:19:00.000Z	12865536	Molecular Process Ontology
-mop.db.gz	mop	db.gz	2025-02-05T06:30:22.000Z	2037885	Molecular Process Ontology
-mop.owl	mop	owl	2022-06-20T01:58:33.000Z	4842212	Molecular Process Ontology
-mp-relation-graph.tsv.gz	mp	relation-graph.tsv.gz	2022-06-20T01:58:36.000Z	25408180	Mammalian Phenotype Ontology
-mp.db.gz	mp	db.gz	2025-02-05T06:30:23.000Z	146816221	Mammalian Phenotype Ontology
-mp.owl	mp	owl	2022-06-20T01:58:51.000Z	108836912	Mammalian Phenotype Ontology
-mpath-relation-graph.tsv.gz	mpath	relation-graph.tsv.gz	2022-06-20T01:58:52.000Z	19453	Mouse pathology ontology
-mpath.db	mpath	db	2022-10-17T16:19:17.000Z	3313664	Mouse pathology ontology
-mpath.db.gz	mpath	db.gz	2025-02-05T06:31:00.000Z	703270	Mouse pathology ontology
-mpath.owl	mpath	owl	2022-06-20T01:58:53.000Z	1434612	Mouse pathology ontology
-mpio-relation-graph.tsv.gz	mpio	relation-graph.tsv.gz	2022-06-20T01:58:54.000Z	972	Minimum PDDI Information Ontology
-mpio.db	mpio	db	2022-10-17T16:19:18.000Z	532480	Minimum PDDI Information Ontology
-mpio.db.gz	mpio	db.gz	2025-02-05T06:31:03.000Z	114828	Minimum PDDI Information Ontology
-mpio.owl	mpio	owl	2022-06-20T01:58:56.000Z	154066	Minimum PDDI Information Ontology
-mro-relation-graph.tsv.gz	mro	relation-graph.tsv.gz	2022-06-20T01:58:57.000Z	1362474	MHC Restriction Ontology
-mro.db.gz	mro	db.gz	2025-02-05T06:31:04.000Z	37839414	MHC Restriction Ontology
-mro.owl	mro	owl	2022-06-20T01:59:05.000Z	82330974	MHC Restriction Ontology
-ms-relation-graph.tsv.gz	ms	relation-graph.tsv.gz	2022-06-20T01:59:17.000Z	6569800	Mass spectrometry ontology
-ms.db.gz	ms	db.gz	2025-02-05T06:31:17.000Z	2749432	Mass spectrometry ontology
-ms.owl	ms	owl	2022-06-20T01:59:29.000Z	35882321	Mass spectrometry ontology
-msio.db	msio	db	2022-10-17T16:20:06.000Z	5320704	
-msio.db.gz	msio	db.gz	2025-02-05T06:31:20.000Z	1153133	
-nando.db.gz	nando	db.gz	2025-02-01T21:48:28.000Z	2459025	
-nbo-relation-graph.tsv.gz	nbo	relation-graph.tsv.gz	2022-06-20T01:59:36.000Z	1203784	Neuro Behavior Ontology
-nbo.db	nbo	db	2022-10-17T16:20:06.000Z	52895744	Neuro Behavior Ontology
-nbo.db.gz	nbo	db.gz	2025-02-05T06:31:21.000Z	17296415	Neuro Behavior Ontology
-nbo.owl	nbo	owl	2022-06-20T01:59:49.000Z	8567298	Neuro Behavior Ontology
-ncbitaxon-relation-graph.tsv.gz	ncbitaxon	relation-graph.tsv.gz	2022-06-20T01:59:53.000Z	195489956	NCBI organismal classification
-ncbitaxon.db.gz	ncbitaxon	db.gz	2025-02-05T06:31:30.000Z	1985778568	NCBI organismal classification
-ncbitaxon.owl	ncbitaxon	owl	2022-06-20T02:00:23.000Z	1881999296	NCBI organismal classification
-ncit-relation-graph.tsv.gz	ncit	relation-graph.tsv.gz	2022-06-20T02:00:30.000Z	10028185	NCI Thesaurus OBO Edition
-ncit.db.gz	ncit	db.gz	2025-02-05T06:31:30.000Z	493315770	NCI Thesaurus OBO Edition
-ncit.owl	ncit	owl	2022-06-20T02:01:03.000Z	651435324	NCI Thesaurus OBO Edition
-ncro-relation-graph.tsv.gz	ncro	relation-graph.tsv.gz	2022-06-20T02:01:16.000Z	294354	Non-Coding RNA Ontology
-ncro.db	ncro	db	2022-10-17T16:21:24.000Z	15265792	Non-Coding RNA Ontology
-ncro.db.gz	ncro	db.gz	2025-02-05T06:31:34.000Z	2574435	Non-Coding RNA Ontology
-ncro.owl	ncro	owl	2022-06-20T02:01:22.000Z	2555592	Non-Coding RNA Ontology
-neo.db.gz	neo	db.gz	2025-02-05T06:31:36.000Z	950579020	
-nmdc_schema.db.gz	nmdc_schema	db.gz	2025-02-01T21:48:48.000Z	21767	
-nomen-relation-graph.tsv.gz	nomen	relation-graph.tsv.gz	2022-06-20T02:01:23.000Z	5301	NOMEN - A nomenclatural ontology for biological names
-nomen.db	nomen	db	2022-10-17T16:21:28.000Z	712704	NOMEN - A nomenclatural ontology for biological names
-nomen.db.gz	nomen	db.gz	2025-02-05T06:33:30.000Z	131749	NOMEN - A nomenclatural ontology for biological names
-nomen.owl	nomen	owl	2022-06-20T02:01:25.000Z	182776	NOMEN - A nomenclatural ontology for biological names
-oae-relation-graph.tsv.gz	oae	relation-graph.tsv.gz	2022-06-20T02:01:26.000Z	1598567	Ontology of Adverse Events
-oae.db	oae	db	2022-10-17T16:21:29.000Z	91504640	Ontology of Adverse Events
-oae.db.gz	oae	db.gz	2025-02-05T06:33:32.000Z	17183365	Ontology of Adverse Events
-oae.owl	oae	owl	2022-06-20T02:01:39.000Z	9508026	Ontology of Adverse Events
-oarcs-relation-graph.tsv.gz	oarcs	relation-graph.tsv.gz	2022-06-20T02:01:44.000Z	29967	Ontology of Arthropod Circulatory Systems
-oarcs.db	oarcs	db	2022-10-17T16:21:43.000Z	3661824	Ontology of Arthropod Circulatory Systems
-oarcs.db.gz	oarcs	db.gz	2025-02-05T06:33:39.000Z	466667	Ontology of Arthropod Circulatory Systems
-oarcs.owl	oarcs	owl	2022-06-20T02:01:49.000Z	705882	Ontology of Arthropod Circulatory Systems
-oba-relation-graph.tsv.gz	oba	relation-graph.tsv.gz	2022-06-20T02:01:49.000Z	29404856	Ontology of Biological Attributes
-oba.db.gz	oba	db.gz	2025-02-05T06:33:40.000Z	376638536	Ontology of Biological Attributes
-oba.owl	oba	owl	2022-06-20T02:02:38.000Z	109757263	Ontology of Biological Attributes
-obcs-relation-graph.tsv.gz	obcs	relation-graph.tsv.gz	2022-06-20T02:02:56.000Z	65987	Ontology of Biological and Clinical Statistics
-obcs.db	obcs	db	2022-10-17T16:22:09.000Z	4845568	Ontology of Biological and Clinical Statistics
-obcs.db.gz	obcs	db.gz	2025-02-05T06:33:57.000Z	1501041	Ontology of Biological and Clinical Statistics
-obcs.owl	obcs	owl	2022-06-20T02:02:58.000Z	1179480	Ontology of Biological and Clinical Statistics
-obi-relation-graph.tsv.gz	obi	relation-graph.tsv.gz	2022-06-20T02:03:00.000Z	465647	Ontology for Biomedical Investigations
-obi.db	obi	db	2022-10-17T16:22:10.000Z	35737600	Ontology for Biomedical Investigations
-obi.db.gz	obi	db.gz	2025-02-05T06:33:58.000Z	7637827	Ontology for Biomedical Investigations
-obi.owl	obi	owl	2022-06-20T02:03:08.000Z	8640137	Ontology for Biomedical Investigations
-obib-relation-graph.tsv.gz	obib	relation-graph.tsv.gz	2022-06-20T02:03:12.000Z	66648	Ontology for Biobanking
-obib.db	obib	db	2022-10-17T16:22:16.000Z	7725056	Ontology for Biobanking
-obib.db.gz	obib	db.gz	2025-02-05T06:34:00.000Z	1618167	Ontology for Biobanking
-obib.owl	obib	owl	2022-06-20T02:03:15.000Z	2756078	Ontology for Biobanking
-obiws.db.gz	obiws	db.gz	2025-02-01T21:49:27.000Z	286354	
-obo-ontologies.db	obo	ontologies.db	2022-10-17T16:22:18.000Z	1519616	
-obo_prefixes.db	obo_prefixes	db	2022-10-17T16:22:18.000Z	122880	
-oboe-core.db.gz	oboe	core.db.gz	2025-02-01T21:49:28.000Z	33	
-oboe-standards.db.gz	oboe	standards.db.gz	2025-02-01T21:49:28.000Z	38	
-occo.db.gz	occo	db.gz	2025-02-05T06:34:02.000Z	3085307	Occupation Ontology
-oeo.db.gz	oeo	db.gz	2025-02-05T06:34:03.000Z	2244824	
-ogco.db.gz	ogco	db.gz	2025-02-05T06:34:05.000Z	3918363	
-ogg-relation-graph.tsv.gz	ogg	relation-graph.tsv.gz	2022-06-20T02:03:16.000Z	14740930	The Ontology of Genes and Genomes
-ogg.db.gz	ogg	db.gz	2025-02-05T06:34:08.000Z	153008794	The Ontology of Genes and Genomes
-ogg.owl	ogg	owl	2022-06-20T02:04:48.000Z	161502996	The Ontology of Genes and Genomes
-ogms-relation-graph.tsv.gz	ogms	relation-graph.tsv.gz	2022-06-20T02:04:53.000Z	3953	Ontology for General Medical Science
-ogms.db	ogms	db	2022-10-17T16:23:17.000Z	991232	Ontology for General Medical Science
-ogms.db.gz	ogms	db.gz	2025-02-05T06:34:53.000Z	207297	Ontology for General Medical Science
-ogms.owl	ogms	owl	2022-06-20T02:04:54.000Z	298806	Ontology for General Medical Science
-ogsf-relation-graph.tsv.gz	ogsf	relation-graph.tsv.gz	2022-06-20T02:04:56.000Z	42998	Ontology of Genetic Susceptibility Factor
-ogsf.db	ogsf	db	2022-10-17T16:23:18.000Z	3489792	Ontology of Genetic Susceptibility Factor
-ogsf.db.gz	ogsf	db.gz	2025-02-05T06:34:57.000Z	657879	Ontology of Genetic Susceptibility Factor
-ogsf.owl	ogsf	owl	2022-06-20T02:04:58.000Z	748070	Ontology of Genetic Susceptibility Factor
-ohd-relation-graph.tsv.gz	ohd	relation-graph.tsv.gz	2022-06-20T02:04:59.000Z	429540	Oral Health and Disease Ontology
-ohd.db.gz	ohd	db.gz	2025-02-05T06:34:59.000Z	4772328	Oral Health and Disease Ontology
-ohd.owl	ohd	owl	2022-06-20T02:05:06.000Z	3143280	Oral Health and Disease Ontology
-ohmi-relation-graph.tsv.gz	ohmi	relation-graph.tsv.gz	2022-06-20T02:05:07.000Z	216723	Ontology of Host-Microbiome Interactions
-ohmi.db	ohmi	db	2022-10-17T16:23:21.000Z	12918784	Ontology of Host-Microbiome Interactions
-ohmi.db.gz	ohmi	db.gz	2025-02-05T06:35:00.000Z	2476880	Ontology of Host-Microbiome Interactions
-ohmi.owl	ohmi	owl	2022-06-20T02:05:12.000Z	2533276	Ontology of Host-Microbiome Interactions
-ohpi-relation-graph.tsv.gz	ohpi	relation-graph.tsv.gz	2022-06-20T02:05:12.000Z	5310365	Ontology of Host Pathogen Interactions
-ohpi.db.gz	ohpi	db.gz	2025-02-05T06:35:03.000Z	38851955	Ontology of Host Pathogen Interactions
-ohpi.owl	ohpi	owl	2022-06-20T02:05:12.000Z	29016104	Ontology of Host Pathogen Interactions
-olatdv-relation-graph.tsv.gz	olatdv	relation-graph.tsv.gz	2022-06-20T02:05:13.000Z	3338	Medaka Developmental Stages
-olatdv.db	olatdv	db	2022-10-17T16:23:29.000Z	593920	Medaka Developmental Stages
-olatdv.db.gz	olatdv	db.gz	2025-02-05T06:35:10.000Z	102983	Medaka Developmental Stages
-olatdv.owl	olatdv	owl	2022-06-20T02:05:15.000Z	131690	Medaka Developmental Stages
-omiabis.db	omiabis	db	2022-10-17T16:23:30.000Z	544768	Ontologized MIABIS
-omim.db.gz	omim	db.gz	2025-02-01T21:49:50.000Z	19077950	
-omit-relation-graph.tsv.gz	omit	relation-graph.tsv.gz	2022-06-20T02:05:16.000Z	6101793	Ontology for MIRNA Target
-omit.db.gz	omit	db.gz	2025-02-05T06:35:14.000Z	50952172	Ontology for MIRNA Target
-omit.owl	omit	owl	2022-06-20T02:05:18.000Z	48062234	Ontology for MIRNA Target
-omo-relation-graph.tsv.gz	omo	relation-graph.tsv.gz	2022-06-20T02:05:26.000Z	657	OBO Metadata Ontology
-omo.db	omo	db	2022-10-17T16:23:38.000Z	532480	OBO Metadata Ontology
-omo.db.gz	omo	db.gz	2025-02-05T06:35:15.000Z	77385	OBO Metadata Ontology
-omo.owl	omo	owl	2022-06-20T02:05:27.000Z	79275	OBO Metadata Ontology
-omop.db.gz	omop	db.gz	2025-02-05T06:35:16.000Z	2141768729	
-omp-relation-graph.tsv.gz	omp	relation-graph.tsv.gz	2022-06-20T02:05:27.000Z	109442	Ontology of Microbial Phenotypes
-omp.db	omp	db	2022-10-17T16:23:39.000Z	11735040	Ontology of Microbial Phenotypes
-omp.db.gz	omp	db.gz	2025-02-05T06:35:22.000Z	2156995	Ontology of Microbial Phenotypes
-omp.owl	omp	owl	2022-06-20T02:05:28.000Z	4511169	Ontology of Microbial Phenotypes
-omrse-relation-graph.tsv.gz	omrse	relation-graph.tsv.gz	2022-06-20T02:05:29.000Z	33672	Ontology for Modeling and Representation of Social Entities
-omrse.db	omrse	db	2022-10-17T16:23:40.000Z	4001792	Ontology for Modeling and Representation of Social Entities
-omrse.db.gz	omrse	db.gz	2025-02-05T06:35:22.000Z	986819	Ontology for Modeling and Representation of Social Entities
-omrse.owl	omrse	owl	2022-06-20T02:05:31.000Z	1236549	Ontology for Modeling and Representation of Social Entities
-one-relation-graph.tsv.gz	one	relation-graph.tsv.gz	2022-06-20T02:05:31.000Z	332145	Ontology for Nutritional Epidemiology
-one.db.gz	one	db.gz	2025-02-05T06:35:25.000Z	5210572	Ontology for Nutritional Epidemiology
-one.owl	one	owl	2022-06-20T02:05:32.000Z	7030218	Ontology for Nutritional Epidemiology
-ons-relation-graph.tsv.gz	ons	relation-graph.tsv.gz	2022-06-20T02:05:33.000Z	863224	Ontology for Nutritional Studies
-ons.db	ons	db	2022-10-17T16:23:42.000Z	50122752	Ontology for Nutritional Studies
-ons.db.gz	ons	db.gz	2025-02-05T06:35:27.000Z	3709183	Ontology for Nutritional Studies
-ons.owl	ons	owl	2022-06-20T02:05:37.000Z	9215150	Ontology for Nutritional Studies
-ontie.db.gz	ontie	db.gz	2025-02-01T21:50:01.000Z	1704675	
-ontoavida-relation-graph.tsv.gz	ontoavida	relation-graph.tsv.gz	2022-06-20T02:05:41.000Z	6082	OntoAvida: ontology for Avida digital evolution platform
-ontoavida.db	ontoavida	db	2022-10-17T16:23:44.000Z	1298432	OntoAvida: ontology for Avida digital evolution platform
-ontoavida.db.gz	ontoavida	db.gz	2025-02-05T06:35:28.000Z	200495	OntoAvida: ontology for Avida digital evolution platform
-ontoavida.owl	ontoavida	owl	2022-06-20T02:05:42.000Z	472853	OntoAvida: ontology for Avida digital evolution platform
-ontobiotope.db.gz	ontobiotope	db.gz	2025-02-01T21:50:02.000Z	1839706	
-ontoneo-relation-graph.tsv.gz	ontoneo	relation-graph.tsv.gz	2022-06-20T02:05:42.000Z	119625	Obstetric and Neonatal Ontology
-ontoneo.db	ontoneo	db	2022-10-17T16:23:45.000Z	9498624	Obstetric and Neonatal Ontology
-ontoneo.db.gz	ontoneo	db.gz	2025-02-05T06:35:29.000Z	2032047	Obstetric and Neonatal Ontology
-ontoneo.owl	ontoneo	owl	2022-06-20T02:05:43.000Z	2945937	Obstetric and Neonatal Ontology
-oostt-relation-graph.tsv.gz	oostt	relation-graph.tsv.gz	2022-06-20T02:05:43.000Z	29998	Ontology of Organizational Structures of Trauma centers and Trauma systems
-oostt.db	oostt	db	2022-10-17T16:23:46.000Z	3624960	Ontology of Organizational Structures of Trauma centers and Trauma systems
-oostt.db.gz	oostt	db.gz	2025-02-05T06:35:30.000Z	953597	Ontology of Organizational Structures of Trauma centers and Trauma systems
-oostt.owl	oostt	owl	2022-06-20T02:05:43.000Z	1158678	Ontology of Organizational Structures of Trauma centers and Trauma systems
-opl-relation-graph.tsv.gz	opl	relation-graph.tsv.gz	2022-06-20T02:05:43.000Z	38852	Ontology for Parasite LifeCycle
-opl.db	opl	db	2022-10-17T16:23:47.000Z	3174400	Ontology for Parasite LifeCycle
-opl.db.gz	opl	db.gz	2025-02-05T06:35:30.000Z	780173	Ontology for Parasite LifeCycle
-opl.owl	opl	owl	2022-06-20T02:05:44.000Z	965825	Ontology for Parasite LifeCycle
-opmi-relation-graph.tsv.gz	opmi	relation-graph.tsv.gz	2022-06-20T02:05:45.000Z	803242	Ontology of Precision Medicine and Investigation
-opmi.db.gz	opmi	db.gz	2025-02-05T06:35:31.000Z	5328325	Ontology of Precision Medicine and Investigation
-opmi.owl	opmi	owl	2022-06-20T02:05:45.000Z	4181905	Ontology of Precision Medicine and Investigation
-orcid.db.gz	orcid	db.gz	2025-02-05T06:35:33.000Z	308823	
-ordo.db.gz	ordo	db.gz	2025-02-05T06:35:34.000Z	19529635	
-ornaseq-relation-graph.tsv.gz	ornaseq	relation-graph.tsv.gz	2022-06-20T02:05:45.000Z	4959	Ontology of RNA Sequencing
-ornaseq.db	ornaseq	db	2022-10-17T16:23:47.000Z	663552	Ontology of RNA Sequencing
-ornaseq.db.gz	ornaseq	db.gz	2025-02-05T06:35:36.000Z	144027	Ontology of RNA Sequencing
-ornaseq.owl	ornaseq	owl	2022-06-20T02:05:45.000Z	166036	Ontology of RNA Sequencing
-ovae-relation-graph.tsv.gz	ovae	relation-graph.tsv.gz	2022-06-20T02:05:46.000Z	540388	Ontology of Vaccine Adverse Events
-ovae.db.gz	ovae	db.gz	2025-02-05T06:35:39.000Z	4833387	Ontology of Vaccine Adverse Events
-ovae.owl	ovae	owl	2022-06-20T02:05:47.000Z	4593976	Ontology of Vaccine Adverse Events
-pathbank.db.gz	pathbank	db.gz	2025-02-01T21:50:06.000Z	32	
-pato-min.owl	pato	min.owl	2022-05-31T15:29:44.000Z	6078387	Phenotype And Trait Ontology
-pato-relation-graph.tsv.gz	pato	relation-graph.tsv.gz	2022-06-20T02:05:48.000Z	5276983	Phenotype And Trait Ontology
-pato.db.db	pato	db.db	2022-10-17T16:23:50.000Z	532480	Phenotype And Trait Ontology
-pato.db.gz	pato	db.gz	2025-02-05T06:35:40.000Z	28238571	Phenotype And Trait Ontology
-pato.owl	pato	owl	2022-06-20T02:05:50.000Z	28431839	Phenotype And Trait Ontology
-pba.db.gz	pba	db.gz	2025-02-05T06:35:41.000Z	439299	
-pcl-relation-graph.tsv.gz	pcl	relation-graph.tsv.gz	2022-06-20T02:05:50.000Z	12888327	Provisional Cell Ontology
-pcl.db.gz	pcl	db.gz	2025-02-05T06:35:43.000Z	218074460	Provisional Cell Ontology
-pcl.owl	pcl	owl	2022-06-20T02:05:55.000Z	92915378	Provisional Cell Ontology
-pco-relation-graph.tsv.gz	pco	relation-graph.tsv.gz	2022-06-20T02:05:57.000Z	10775	Population and Community Ontology
-pco.db	pco	db	2022-10-17T16:23:56.000Z	1765376	Population and Community Ontology
-pco.db.gz	pco	db.gz	2025-02-05T06:35:50.000Z	377853	Population and Community Ontology
-pco.owl	pco	owl	2022-06-20T02:05:59.000Z	595304	Population and Community Ontology
-pdro-relation-graph.tsv.gz	pdro	relation-graph.tsv.gz	2022-06-20T02:06:00.000Z	11916	The Prescription of Drugs Ontology
-pdro.db	pdro	db	2022-10-17T16:23:57.000Z	1794048	The Prescription of Drugs Ontology
-pdro.db.gz	pdro	db.gz	2025-02-05T06:35:52.000Z	393536	The Prescription of Drugs Ontology
-pdro.owl	pdro	owl	2022-06-20T02:06:02.000Z	567148	The Prescription of Drugs Ontology
-pdumdv-relation-graph.tsv.gz	pdumdv	relation-graph.tsv.gz	2022-06-20T02:06:04.000Z	906	Platynereis Developmental Stages
-pdumdv.db	pdumdv	db	2022-10-17T16:23:58.000Z	532480	Platynereis Developmental Stages
-pdumdv.db.gz	pdumdv	db.gz	2025-02-05T06:35:56.000Z	56959	Platynereis Developmental Stages
-pdumdv.owl	pdumdv	owl	2022-06-20T02:06:05.000Z	73234	Platynereis Developmental Stages
-peco-relation-graph.tsv.gz	peco	relation-graph.tsv.gz	2022-06-20T02:06:07.000Z	976744	Plant Experimental Conditions Ontology
-peco.db	peco	db	2022-10-17T16:24:00.000Z	41930752	Plant Experimental Conditions Ontology
-peco.db.gz	peco	db.gz	2025-02-05T06:35:56.000Z	6373073	Plant Experimental Conditions Ontology
-peco.owl	peco	owl	2022-06-20T02:06:11.000Z	6981357	Plant Experimental Conditions Ontology
-pfam.db.gz	pfam	db.gz	2025-02-01T21:50:14.000Z	4447181	
-phenio-relation-graph.tsv.gz	phenio	relation-graph.tsv.gz	2022-05-31T15:32:02.000Z	256510586	
-phenio.db.gz	phenio	db.gz	2025-02-05T06:35:58.000Z	3240059836	
-phenio_test.db.gz	phenio_test	db.gz	2025-02-05T06:36:26.000Z	23958	
-phipo-relation-graph.tsv.gz	phipo	relation-graph.tsv.gz	2022-06-20T02:06:12.000Z	869776	Pathogen Host Interaction Phenotype Ontology
-phipo.db.gz	phipo	db.gz	2025-02-05T06:36:29.000Z	11847181	Pathogen Host Interaction Phenotype Ontology
-phipo.owl	phipo	owl	2022-06-20T02:06:16.000Z	13889278	Pathogen Host Interaction Phenotype Ontology
-plana-relation-graph.tsv.gz	plana	relation-graph.tsv.gz	2022-06-20T02:06:20.000Z	150002	planaria-ontology
-plana.db	plana	db	2022-10-17T16:24:10.000Z	9658368	planaria-ontology
-plana.db.gz	plana	db.gz	2025-02-05T06:36:36.000Z	1950784	planaria-ontology
-plana.owl	plana	owl	2022-06-20T02:06:20.000Z	2719628	planaria-ontology
-planp-relation-graph.tsv.gz	planp	relation-graph.tsv.gz	2022-06-20T02:06:21.000Z	709281	Planarian Phenotype Ontology
-planp.db	planp	db	2022-10-17T16:24:13.000Z	41021440	Planarian Phenotype Ontology
-planp.db.gz	planp	db.gz	2025-02-05T06:36:38.000Z	7788658	Planarian Phenotype Ontology
-planp.owl	planp	owl	2022-06-20T02:06:21.000Z	10529138	Planarian Phenotype Ontology
-po-relation-graph.tsv.gz	po	relation-graph.tsv.gz	2022-06-20T02:06:23.000Z	397334	Plant Ontology
-po.db.gz	po	db.gz	2025-02-05T06:36:41.000Z	4625396	Plant Ontology
-po.owl	po	owl	2022-06-20T02:06:24.000Z	7155145	Plant Ontology
-poro-relation-graph.tsv.gz	poro	relation-graph.tsv.gz	2022-06-20T02:06:25.000Z	121654	Porifera Ontology
-poro.db	poro	db	2022-10-17T16:24:17.000Z	5443584	Porifera Ontology
-poro.db.gz	poro	db.gz	2025-02-05T06:36:41.000Z	1072024	Porifera Ontology
-poro.owl	poro	owl	2022-06-20T02:06:27.000Z	1133756	Porifera Ontology
-ppeo.db	ppeo	db	2022-10-17T16:24:18.000Z	655360	
-ppeo.db.gz	ppeo	db.gz	2025-02-01T21:50:22.000Z	96547	
-ppo-relation-graph.tsv.gz	ppo	relation-graph.tsv.gz	2022-06-20T02:06:28.000Z	28809	Plant Phenology Ontology
-ppo.db	ppo	db	2022-10-17T16:24:18.000Z	4341760	Plant Phenology Ontology
-ppo.db.gz	ppo	db.gz	2025-02-05T06:36:42.000Z	895740	Plant Phenology Ontology
-ppo.owl	ppo	owl	2022-06-20T02:06:28.000Z	1589925	Plant Phenology Ontology
-pr-relation-graph.tsv.gz	pr	relation-graph.tsv.gz	2022-06-20T02:06:28.000Z	38863718	PRotein Ontology (PRO)
-pr.db.gz	pr	db.gz	2025-02-05T06:36:43.000Z	746989142	PRotein Ontology (PRO)
-pr.owl	pr	owl	2022-06-20T02:06:29.000Z	1241028150	PRotein Ontology (PRO)
-pride.db.gz	pride	db.gz	2025-02-05T06:36:42.000Z	161534298	
-proco.db	proco	db	2022-10-17T16:24:58.000Z	5332992	Process Chemistry Ontology
-proco.db.gz	proco	db.gz	2025-02-05T06:37:22.000Z	1089119	Process Chemistry Ontology
-prov.db.gz	prov	db.gz	2025-02-01T21:50:52.000Z	140215	
-psdo-relation-graph.tsv.gz	psdo	relation-graph.tsv.gz	2022-06-20T02:06:35.000Z	105243	Performance Summary Display Ontology
-psdo.db	psdo	db	2022-10-17T16:24:59.000Z	8785920	Performance Summary Display Ontology
-psdo.db.gz	psdo	db.gz	2025-02-05T06:37:26.000Z	2061689	Performance Summary Display Ontology
-psdo.owl	psdo	owl	2022-06-20T02:06:41.000Z	2354320	Performance Summary Display Ontology
-pso-relation-graph.tsv.gz	pso	relation-graph.tsv.gz	2022-06-20T02:06:42.000Z	477144	Plant Stress Ontology
-pso.db.gz	pso	db.gz	2025-02-05T06:37:29.000Z	7569144	Plant Stress Ontology
-pso.owl	pso	owl	2022-06-20T02:06:55.000Z	4290382	Plant Stress Ontology
-pw-relation-graph.tsv.gz	pw	relation-graph.tsv.gz	2022-06-20T02:06:56.000Z	67320	Pathway ontology
-pw.db	pw	db	2022-10-17T16:25:06.000Z	11108352	Pathway ontology
-pw.db.gz	pw	db.gz	2025-02-05T06:37:34.000Z	2256411	Pathway ontology
-pw.owl	pw	owl	2022-06-20T02:06:59.000Z	4965358	Pathway ontology
-quantitykind.db.gz	quantitykind	db.gz	2025-02-01T21:50:56.000Z	2379055	
-qudtunit.db.gz	qudtunit	db.gz	2025-02-01T21:50:57.000Z	4629520	
-rbo-relation-graph.tsv.gz	rbo	relation-graph.tsv.gz	2022-06-20T02:07:01.000Z	3216235	Radiation Biology Ontology
-rbo.db.gz	rbo	db.gz	2025-02-05T06:37:34.000Z	38971276	Radiation Biology Ontology
-rbo.owl	rbo	owl	2022-06-20T02:07:28.000Z	11108994	Radiation Biology Ontology
-reacto.db.gz	reacto	db.gz	2025-02-05T06:37:49.000Z	74792946	
-reactome-Homo-sapiens.db.gz	reactome	Homo-sapiens.db.gz	2024-05-26T16:01:47.000Z	228616167	
-reactome-hs.db.gz	reactome	hs.db.gz	2025-02-01T21:51:12.000Z	172819909	
-reactome-mm.db.gz	reactome	mm.db.gz	2025-02-01T21:51:28.000Z	101799558	
+Key	basename	extension	LastModified	Size	obo_foundry_title	bioportal_name	registry_url
+README.md	README	md	2021-05-25T02:37:23.000Z	21			
+ado.db	ado	db	2022-10-17T16:07:06.000Z	17653760	Alzheimer's Disease Ontology	Alzheimer's Disease Ontology	
+ado.db.gz	ado	db.gz	2025-02-05T06:24:16.000Z	4266828	Alzheimer's Disease Ontology	Alzheimer's Disease Ontology	
+aeo-relation-graph.tsv.gz	aeo	relation-graph.tsv.gz	2022-06-15T13:38:01.000Z	7761	Anatomical Entity Ontology	Anatomical Entity Ontology	
+aeo.db	aeo	db	2022-10-17T16:07:06.000Z	1159168	Anatomical Entity Ontology	Anatomical Entity Ontology	
+aeo.owl	aeo	owl	2022-06-15T13:38:01.000Z	407236	Anatomical Entity Ontology	Anatomical Entity Ontology	
+agro-relation-graph.tsv.gz	agro	relation-graph.tsv.gz	2022-06-20T01:47:05.000Z	988343	Agronomy Ontology	AGRonomy Ontology	
+agro.db	agro	db	2022-10-17T16:07:06.000Z	43225088	Agronomy Ontology	AGRonomy Ontology	
+agro.db.gz	agro	db.gz	2025-02-05T06:24:16.000Z	11851963	Agronomy Ontology	AGRonomy Ontology	
+agro.owl	agro	owl	2022-06-20T01:47:05.000Z	6978509	Agronomy Ontology	AGRonomy Ontology	
+aio.db	aio	db	2022-10-17T16:07:06.000Z	532480		Artificial Intelligence Ontology	https://raw.githubusercontent.com/berkeleybop/artificial-intelligence-ontology/main/aio.owl
+aio.db.gz	aio	db.gz	2025-02-05T06:24:16.000Z	384897		Artificial Intelligence Ontology	https://raw.githubusercontent.com/berkeleybop/artificial-intelligence-ontology/main/aio.owl
+aism-relation-graph.tsv.gz	aism	relation-graph.tsv.gz	2022-06-20T01:47:05.000Z	6168091	Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)	Ontology for the Anatomy of the Insect SkeletoMuscular system	
+aism.db.gz	aism	db.gz	2025-02-05T06:24:16.000Z	48241287	Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)	Ontology for the Anatomy of the Insect SkeletoMuscular system	
+aism.owl	aism	owl	2022-06-20T01:47:05.000Z	23598556	Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)	Ontology for the Anatomy of the Insect SkeletoMuscular system	
+allotrope.db	allotrope	db	2022-10-17T16:07:06.000Z	49381376			
+amphx-relation-graph.tsv.gz	amphx	relation-graph.tsv.gz	2022-06-20T01:47:05.000Z	11918	The Amphioxus Development and Anatomy Ontology	The Amphioxus Development and Anatomy Ontology	
+amphx.db	amphx	db	2022-10-17T16:07:15.000Z	1798144	The Amphioxus Development and Anatomy Ontology	The Amphioxus Development and Anatomy Ontology	
+amphx.db.gz	amphx	db.gz	2025-02-05T06:24:16.000Z	295618	The Amphioxus Development and Anatomy Ontology	The Amphioxus Development and Anatomy Ontology	
+amphx.owl	amphx	owl	2022-06-20T01:47:11.000Z	589457	The Amphioxus Development and Anatomy Ontology	The Amphioxus Development and Anatomy Ontology	
+apo-relation-graph.tsv.gz	apo	relation-graph.tsv.gz	2022-06-20T01:47:12.000Z	6665	Ascomycete phenotype ontology	Ascomycete Phenotype Ontology	
+apo.db	apo	db	2022-10-17T16:07:17.000Z	1576960	Ascomycete phenotype ontology	Ascomycete Phenotype Ontology	
+apo.db.gz	apo	db.gz	2025-02-05T06:24:16.000Z	305306	Ascomycete phenotype ontology	Ascomycete Phenotype Ontology	
+apo.owl	apo	owl	2022-06-20T01:47:15.000Z	716033	Ascomycete phenotype ontology	Ascomycete Phenotype Ontology	
+apollo_sv-relation-graph.tsv.gz	apollo_sv	relation-graph.tsv.gz	2022-06-20T01:47:16.000Z	235542	Apollo Structured Vocabulary		
+apollo_sv.db	apollo_sv	db	2022-10-17T16:07:18.000Z	14520320	Apollo Structured Vocabulary		
+apollo_sv.db.gz	apollo_sv	db.gz	2025-02-05T06:24:16.000Z	3588893	Apollo Structured Vocabulary		
+apollo_sv.owl	apollo_sv	owl	2022-06-20T01:47:16.000Z	2521317	Apollo Structured Vocabulary		
+aro-relation-graph.tsv.gz	aro	relation-graph.tsv.gz	2022-06-20T01:47:16.000Z	437321	Antibiotic Resistance Ontology	Antibiotic Resistance Ontology	
+aro.db	aro	db	2022-10-17T16:07:18.000Z	41005056	Antibiotic Resistance Ontology	Antibiotic Resistance Ontology	
+aro.db.gz	aro	db.gz	2025-02-05T06:24:16.000Z	8533973	Antibiotic Resistance Ontology	Antibiotic Resistance Ontology	
+aro.owl	aro	owl	2022-06-20T01:47:17.000Z	11798509	Antibiotic Resistance Ontology	Antibiotic Resistance Ontology	
+bad-ontology.db	bad	ontology.db	2022-10-17T16:07:18.000Z	532480			
+bad-ontology.db.old	bad	ontology.db.old	2022-04-21T01:10:06.000Z	532480			
+bao.db.gz	bao	db.gz	2025-02-05T06:24:16.000Z	6039743		BioAssay Ontology	http://www.bioassayontology.org/bao/bao_complete.owl
+bcio.db.gz	bcio	db.gz	2025-02-05T06:24:16.000Z	1318132			http://humanbehaviourchange.org/ontology/bcio.owl
+bco-relation-graph.tsv.gz	bco	relation-graph.tsv.gz	2022-06-20T01:47:17.000Z	11482	Biological Collections Ontology	Biological Collections Ontology	
+bco.db	bco	db	2022-10-17T16:07:19.000Z	2641920	Biological Collections Ontology	Biological Collections Ontology	
+bco.db.gz	bco	db.gz	2025-02-05T06:24:18.000Z	554772	Biological Collections Ontology	Biological Collections Ontology	
+bco.owl	bco	owl	2022-06-20T01:47:19.000Z	899384	Biological Collections Ontology	Biological Collections Ontology	
+bero-relation-graph.tsv.gz	bero	relation-graph.tsv.gz	2022-05-31T03:00:06.000Z	187302382		Biological and Environmental Research Ontology	https://github.com/berkeleybop/bero/releases/download/2022-05-26/bero.owl
+bero.db.gz	bero	db.gz	2025-02-05T06:24:19.000Z	1601603888		Biological and Environmental Research Ontology	https://github.com/berkeleybop/bero/releases/download/2022-05-26/bero.owl
+bero.owl	bero	owl	2022-05-31T03:00:12.000Z	1080249848		Biological and Environmental Research Ontology	https://github.com/berkeleybop/bero/releases/download/2022-05-26/bero.owl
+bfo-relation-graph.tsv.gz	bfo	relation-graph.tsv.gz	2022-06-20T01:47:19.000Z	560	Basic Formal Ontology	Basic Formal Ontology	
+bfo.db	bfo	db	2022-10-17T16:07:20.000Z	561152	Basic Formal Ontology	Basic Formal Ontology	
+bfo.db.gz	bfo	db.gz	2025-02-05T06:24:22.000Z	111344	Basic Formal Ontology	Basic Formal Ontology	
+bfo.owl	bfo	owl	2022-06-20T01:47:19.000Z	157931	Basic Formal Ontology	Basic Formal Ontology	
+bfo2020.db.gz	bfo2020	db.gz	2025-02-01T21:44:34.000Z	94876			http://purl.obolibrary.org/obo/bfo/2020/bfo.owl
+bfo2020_core.db.gz	bfo2020_core	db.gz	2025-02-01T21:44:34.000Z	79866			http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl
+bfo2020_notime.db.gz	bfo2020_notime	db.gz	2025-02-01T21:44:36.000Z	66738			http://purl.obolibrary.org/obo/bfo/2020/notime/bfo.owl
+bfo2020_time.db.gz	bfo2020_time	db.gz	2025-02-01T21:44:36.000Z	94857			https://raw.githubusercontent.com/BFO-ontology/BFO-2020/master/src/owl/profiles/temporal%20extensions/temporalized%20relations/owl/bfo-temporalized-relations.owl
+biolink.db	biolink	db	2022-10-17T16:07:21.000Z	4399104		Biolink Model	https://w3id.org/biolink/biolink-model.owl.ttl
+biolink.db.gz	biolink	db.gz	2025-02-05T06:24:23.000Z	873668		Biolink Model	https://w3id.org/biolink/biolink-model.owl.ttl
+biopax.db	biopax	db	2022-09-05T01:22:28.000Z	700416			http://www.biopax.org/release/biopax-level3.owl
+biopax.db.gz	biopax	db.gz	2025-02-05T06:24:24.000Z	646			http://www.biopax.org/release/biopax-level3.owl
+biopragmatics-reactome.db.gz	biopragmatics	reactome.db.gz	2025-02-01T21:44:37.000Z	46			
+biovoices.db.gz	biovoices	db.gz	2025-02-05T06:24:25.000Z	435152			https://zenodo.org/record/5589773/files/ontology.owl?download=1
+bspo-relation-graph.tsv.gz	bspo	relation-graph.tsv.gz	2022-06-20T01:47:19.000Z	11416	Biological Spatial Ontology	Spatial Ontology	
+bspo.db	bspo	db	2022-10-17T16:07:22.000Z	1478656	Biological Spatial Ontology	Spatial Ontology	
+bspo.db.gz	bspo	db.gz	2025-02-05T06:24:25.000Z	369318	Biological Spatial Ontology	Spatial Ontology	
+bspo.owl	bspo	owl	2022-06-20T01:47:20.000Z	635854	Biological Spatial Ontology	Spatial Ontology	
+bto-relation-graph.tsv.gz	bto	relation-graph.tsv.gz	2022-06-20T01:47:20.000Z	181633	BRENDA tissue / enzyme source	BRENDA Tissue and Enzyme Source Ontology	
+bto.db.gz	bto	db.gz	2025-02-05T06:24:25.000Z	5230421	BRENDA tissue / enzyme source	BRENDA Tissue and Enzyme Source Ontology	
+bto.owl	bto	owl	2022-06-20T01:47:21.000Z	10645778	BRENDA tissue / enzyme source	BRENDA Tissue and Enzyme Source Ontology	
+caro-relation-graph.tsv.gz	caro	relation-graph.tsv.gz	2022-06-20T01:47:22.000Z	166302	Common Anatomy Reference Ontology	Common Anatomy Reference Ontology	
+caro.db.gz	caro	db.gz	2025-02-05T06:24:25.000Z	5248698	Common Anatomy Reference Ontology	Common Anatomy Reference Ontology	
+caro.owl	caro	owl	2022-06-20T01:47:23.000Z	12075775	Common Anatomy Reference Ontology	Common Anatomy Reference Ontology	
+cco.db.gz	cco	db.gz	2025-02-05T06:24:26.000Z	1376935		Cell Cycle Ontology	http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntology
+cdao-relation-graph.tsv.gz	cdao	relation-graph.tsv.gz	2022-06-20T01:47:23.000Z	2974	Comparative Data Analysis Ontology	Comparative Data Analysis Ontology	
+cdao.db	cdao	db	2022-10-17T16:07:23.000Z	651264	Comparative Data Analysis Ontology	Comparative Data Analysis Ontology	
+cdao.db.gz	cdao	db.gz	2025-02-05T06:24:26.000Z	136301	Comparative Data Analysis Ontology	Comparative Data Analysis Ontology	
+cdao.owl	cdao	owl	2022-06-20T01:47:25.000Z	205605	Comparative Data Analysis Ontology	Comparative Data Analysis Ontology	
+cdno-relation-graph.tsv.gz	cdno	relation-graph.tsv.gz	2022-06-20T01:47:26.000Z	83968	Compositional Dietary Nutrition Ontology	Compositional Dietary Nutrition Ontology	
+cdno.db.gz	cdno	db.gz	2025-02-05T06:24:27.000Z	5793673	Compositional Dietary Nutrition Ontology	Compositional Dietary Nutrition Ontology	
+cdno.owl	cdno	owl	2022-06-20T01:47:28.000Z	5693932	Compositional Dietary Nutrition Ontology	Compositional Dietary Nutrition Ontology	
+cellosaurus.db.gz	cellosaurus	db.gz	2025-02-01T21:44:39.000Z	98728333			https://raw.githubusercontent.com/calipho-sib/cellosaurus/master/cellosaurus.obo
+chebi-relation-graph.tsv.gz	chebi	relation-graph.tsv.gz	2022-06-20T01:47:28.000Z	51456933	Chemical Entities of Biological Interest	Chemical Entities of Biological Interest Ontology	
+chebi.db.gz	chebi	db.gz	2025-02-05T06:24:27.000Z	726067642	Chemical Entities of Biological Interest	Chemical Entities of Biological Interest Ontology	
+chebi.owl	chebi	owl	2022-06-20T01:49:20.000Z	691563543	Chemical Entities of Biological Interest	Chemical Entities of Biological Interest Ontology	
+chebiplus.db.gz	chebiplus	db.gz	2025-02-05T06:24:27.000Z	735956544			http://purl.obolibrary.org/obo/chebi.owl
+chemessence.db.gz	chemessence	db.gz	2025-02-05T06:24:27.000Z	508405341			https://github.com/cmungall/chemessence/releases/latest/download/chemessence.owl
+cheminf-relation-graph.tsv.gz	cheminf	relation-graph.tsv.gz	2022-06-20T01:49:34.000Z	62962	Chemical Information Ontology	Chemical Information Ontology	
+cheminf.db	cheminf	db	2022-10-17T16:07:28.000Z	4468736	Chemical Information Ontology	Chemical Information Ontology	
+cheminf.db.gz	cheminf	db.gz	2025-02-05T06:24:28.000Z	943697	Chemical Information Ontology	Chemical Information Ontology	
+cheminf.owl	cheminf	owl	2022-06-20T01:49:34.000Z	1094479	Chemical Information Ontology	Chemical Information Ontology	
+chemont.db.gz	chemont	db.gz	2025-02-05T06:24:29.000Z	4812935			http://classyfire.wishartlab.com/system/downloads/1_0/chemont/ChemOnt_2_1.obo.zip
+chiro-relation-graph.tsv.gz	chiro	relation-graph.tsv.gz	2022-06-20T01:49:34.000Z	559362	CHEBI Integrated Role Ontology	CHEBI Integrated Role Ontology	http://purl.obolibrary.org/obo/chiro.owl
+chiro.db.gz	chiro	db.gz	2025-02-05T06:24:31.000Z	11520112	CHEBI Integrated Role Ontology	CHEBI Integrated Role Ontology	http://purl.obolibrary.org/obo/chiro.owl
+chiro.owl	chiro	owl	2022-06-20T01:49:35.000Z	24233872	CHEBI Integrated Role Ontology	CHEBI Integrated Role Ontology	http://purl.obolibrary.org/obo/chiro.owl
+chmo-relation-graph.tsv.gz	chmo	relation-graph.tsv.gz	2022-06-20T01:49:35.000Z	138187	Chemical Methods Ontology	Chemical Methods Ontology	
+chmo.db	chmo	db	2022-10-17T16:07:35.000Z	16154624	Chemical Methods Ontology	Chemical Methods Ontology	
+chmo.db.gz	chmo	db.gz	2025-02-05T06:24:41.000Z	3030651	Chemical Methods Ontology	Chemical Methods Ontology	
+chmo.owl	chmo	owl	2022-06-20T01:49:36.000Z	6252756	Chemical Methods Ontology	Chemical Methods Ontology	
+chr.db.gz	chr	db.gz	2025-02-01T21:45:00.000Z	6614905		Monochrom	https://raw.githubusercontent.com/monarch-initiative/monochrom/master/chr.owl
+cido-relation-graph.tsv.gz	cido	relation-graph.tsv.gz	2022-06-20T01:49:37.000Z	6660815	Coronavirus Infectious Disease Ontology	Coronavirus Infectious Disease Ontology	
+cido.db.gz	cido	db.gz	2025-02-05T06:24:42.000Z	110457845	Coronavirus Infectious Disease Ontology	Coronavirus Infectious Disease Ontology	
+cido.owl	cido	owl	2022-06-20T01:49:39.000Z	21027930	Coronavirus Infectious Disease Ontology	Coronavirus Infectious Disease Ontology	
+cio-relation-graph.tsv.gz	cio	relation-graph.tsv.gz	2022-06-20T01:49:40.000Z	677	Confidence Information Ontology	Confidence Information Ontology	
+cio.db	cio	db	2022-10-17T16:07:42.000Z	532480	Confidence Information Ontology	Confidence Information Ontology	
+cio.db.gz	cio	db.gz	2025-02-05T06:25:14.000Z	77898	Confidence Information Ontology	Confidence Information Ontology	
+cio.owl	cio	owl	2022-06-20T01:49:43.000Z	124172	Confidence Information Ontology	Confidence Information Ontology	
+cl-relation-graph.tsv.gz	cl	relation-graph.tsv.gz	2022-06-20T01:49:44.000Z	17196197	Cell Ontology	Cell Ontology	
+cl.db.gz	cl	db.gz	2025-02-05T06:25:20.000Z	89285401	Cell Ontology	Cell Ontology	
+cl.owl	cl	owl	2022-06-20T01:49:46.000Z	59048755	Cell Ontology	Cell Ontology	
+clao-relation-graph.tsv.gz	clao	relation-graph.tsv.gz	2022-06-20T01:49:49.000Z	129743	Collembola Anatomy Ontology	Collembola Anatomy Ontology	
+clao.db	clao	db	2022-10-17T16:08:01.000Z	8949760	Collembola Anatomy Ontology	Collembola Anatomy Ontology	
+clao.db.gz	clao	db.gz	2025-02-05T06:25:49.000Z	1649307	Collembola Anatomy Ontology	Collembola Anatomy Ontology	
+clao.owl	clao	owl	2022-06-20T01:49:54.000Z	1754601	Collembola Anatomy Ontology	Collembola Anatomy Ontology	
+clo-relation-graph.tsv.gz	clo	relation-graph.tsv.gz	2022-06-20T01:49:55.000Z	10848291	Cell Line Ontology	Cell Line Ontology	
+clo.db.gz	clo	db.gz	2025-02-05T06:25:52.000Z	80237626	Cell Line Ontology	Cell Line Ontology	
+clo.owl	clo	owl	2022-06-20T01:49:59.000Z	51785600	Cell Line Ontology	Cell Line Ontology	
+clyh-relation-graph.tsv.gz	clyh	relation-graph.tsv.gz	2022-06-20T01:50:10.000Z	7596	Clytia hemisphaerica Development and Anatomy Ontology	Clytia hemisphaerica Development and Anatomy Ontology	
+clyh.db	clyh	db	2022-10-17T16:08:27.000Z	987136	Clytia hemisphaerica Development and Anatomy Ontology	Clytia hemisphaerica Development and Anatomy Ontology	
+clyh.db.gz	clyh	db.gz	2025-02-05T06:26:12.000Z	184803	Clytia hemisphaerica Development and Anatomy Ontology	Clytia hemisphaerica Development and Anatomy Ontology	
+clyh.owl	clyh	owl	2022-06-20T01:50:12.000Z	301349	Clytia hemisphaerica Development and Anatomy Ontology	Clytia hemisphaerica Development and Anatomy Ontology	
+cme.db	cme	db	2022-10-17T16:08:28.000Z	1216512			
+cmo-relation-graph.tsv	cmo	relation-graph.tsv	2022-06-20T01:50:12.000Z	1028279	Clinical measurement ontology	Clinical Measurement Ontology	
+cmo.db.gz	cmo	db.gz	2025-02-05T06:26:14.000Z	3666691	Clinical measurement ontology	Clinical Measurement Ontology	
+cmo.db.tmp	cmo	db.tmp	2022-06-20T01:50:13.000Z	532480	Clinical measurement ontology	Clinical Measurement Ontology	
+cmo.owl	cmo	owl	2022-06-20T01:50:13.000Z	5689123	Clinical measurement ontology	Clinical Measurement Ontology	
+co_324.db	co_324	db	2022-10-17T16:08:29.000Z	4780032			https://cropontology.org/ontology/CO_324/rdf
+co_324.db.gz	co_324	db.gz	2025-02-01T21:45:36.000Z	877878			https://cropontology.org/ontology/CO_324/rdf
+cob-relation-graph.tsv.gz	cob	relation-graph.tsv.gz	2022-06-20T01:50:14.000Z	1474	Core Ontology for Biology and Biomedicine	Core Ontology for Biology and Biomedicine	
+cob.db	cob	db	2022-10-17T16:08:29.000Z	532480	Core Ontology for Biology and Biomedicine	Core Ontology for Biology and Biomedicine	
+cob.db.gz	cob	db.gz	2025-02-05T06:26:16.000Z	59279	Core Ontology for Biology and Biomedicine	Core Ontology for Biology and Biomedicine	
+cob.db.old	cob	db.old	2022-02-12T09:14:36.000Z	487424	Core Ontology for Biology and Biomedicine	Core Ontology for Biology and Biomedicine	
+cob.owl	cob	owl	2022-06-20T01:50:14.000Z	55733	Core Ontology for Biology and Biomedicine	Core Ontology for Biology and Biomedicine	
+colao-relation-graph.tsv.gz	colao	relation-graph.tsv.gz	2022-06-20T01:50:15.000Z	56639	Coleoptera Anatomy Ontology (COLAO)	Coleoptera Anatomy Ontology	
+colao.db	colao	db	2022-10-17T16:08:30.000Z	10297344	Coleoptera Anatomy Ontology (COLAO)	Coleoptera Anatomy Ontology	
+colao.db.gz	colao	db.gz	2025-02-05T06:26:17.000Z	2029792	Coleoptera Anatomy Ontology (COLAO)	Coleoptera Anatomy Ontology	
+colao.owl	colao	owl	2022-06-20T01:50:15.000Z	3148474	Coleoptera Anatomy Ontology (COLAO)	Coleoptera Anatomy Ontology	
+comet.db.gz	comet	db.gz	2025-02-05T06:26:17.000Z	243014		LinkML Common Metadata Elements and Terms	https://raw.githubusercontent.com/linkml/linkml-common/main/project/owl/linkml_common.owl.ttl
+complexportal.db.gz	complexportal	db.gz	2025-02-01T21:45:39.000Z	7123645			https://github.com/biopragmatics/obo-db-ingest/raw/main/export/complexportal/2022-02-03/complexportal.owl.gz
+comploinc.db.gz	comploinc	db.gz	2025-02-05T06:26:19.000Z	13763653			https://github.com/loinc/comp-loinc/releases/download/v2022-11-05/merged_reasoned_loinc.owl
+cosmo.db.gz	cosmo	db.gz	2025-02-01T21:45:41.000Z	164430063			https://micra.com/COSMO/COSMO.owl
+cpont.db.gz	cpont	db.gz	2025-02-05T06:26:23.000Z	22282993			https://w3id.org/cpont/cpont.owl
+credit.db.gz	credit	db.gz	2025-02-01T21:45:51.000Z	28174			https://raw.githubusercontent.com/biopragmatics/obo-db-ingest/main/export/credit/credit.owl
+cro-relation-graph.tsv.gz	cro	relation-graph.tsv.gz	2022-06-20T01:50:16.000Z	1492	Contributor Role Ontology	Contributor Role Ontology	
+cro.db	cro	db	2022-10-17T16:08:34.000Z	667648	Contributor Role Ontology	Contributor Role Ontology	
+cro.db.gz	cro	db.gz	2025-02-05T06:26:23.000Z	138887	Contributor Role Ontology	Contributor Role Ontology	
+cro.owl	cro	owl	2022-06-20T01:50:17.000Z	191462	Contributor Role Ontology	Contributor Role Ontology	
+cso.db.gz	cso	db.gz	2025-02-01T21:45:52.000Z	7313167		Clinical Study Ontology	https://cso.kmi.open.ac.uk/download/version-3.3/CSO.3.3.owl.zip
+cteno-relation-graph.tsv.gz	cteno	relation-graph.tsv.gz	2022-06-20T01:50:17.000Z	79344	Ctenophore Ontology	Ctenophore Ontology	
+cteno.db	cteno	db	2022-10-17T16:08:37.000Z	4435968	Ctenophore Ontology	Ctenophore Ontology	
+cteno.db.gz	cteno	db.gz	2025-02-05T06:26:23.000Z	871102	Ctenophore Ontology	Ctenophore Ontology	
+cteno.owl	cteno	owl	2022-06-20T01:50:18.000Z	1068205	Ctenophore Ontology	Ctenophore Ontology	
+cto-relation-graph.tsv.gz	cto	relation-graph.tsv.gz	2022-06-20T01:50:18.000Z	8165	CTO: Core Ontology of Clinical Trials	Clinical Trials Ontology	
+cto.db	cto	db	2022-10-17T16:08:38.000Z	1810432	CTO: Core Ontology of Clinical Trials	Clinical Trials Ontology	
+cto.db.gz	cto	db.gz	2025-02-05T06:26:24.000Z	403709	CTO: Core Ontology of Clinical Trials	Clinical Trials Ontology	
+cto.owl	cto	owl	2022-06-20T01:50:18.000Z	600735	CTO: Core Ontology of Clinical Trials	Clinical Trials Ontology	
+cvdo-relation-graph.tsv.gz	cvdo	relation-graph.tsv.gz	2022-06-20T01:50:19.000Z	20253	Cardiovascular Disease Ontology	Cardiovascular Disease Ontology	
+cvdo.db	cvdo	db	2022-10-17T16:08:38.000Z	3125248	Cardiovascular Disease Ontology	Cardiovascular Disease Ontology	
+cvdo.db.gz	cvdo	db.gz	2025-02-05T06:26:27.000Z	965784	Cardiovascular Disease Ontology	Cardiovascular Disease Ontology	
+cvdo.owl	cvdo	owl	2022-06-20T01:50:19.000Z	1015820	Cardiovascular Disease Ontology	Cardiovascular Disease Ontology	
+dbpediaont.db.gz	dbpediaont	db.gz	2023-01-05T20:14:23.000Z	1981807			
+dbpendiaont.db.gz	dbpendiaont	db.gz	2025-02-01T21:45:55.000Z	1969392			https://databus.dbpedia.org/ontologies/dbpedia.org/ontology--DEV/2023.01.03-072003/ontology--DEV_type=parsed.owl
+ddanat-relation-graph.tsv.gz	ddanat	relation-graph.tsv.gz	2022-06-20T01:50:19.000Z	5133	Dictyostelium discoideum anatomy	Dictyostelium Discoideum Anatomy Ontology	
+ddanat.db	ddanat	db	2022-10-17T16:08:39.000Z	958464	Dictyostelium discoideum anatomy	Dictyostelium Discoideum Anatomy Ontology	
+ddanat.db.gz	ddanat	db.gz	2025-02-05T06:26:30.000Z	170447	Dictyostelium discoideum anatomy	Dictyostelium Discoideum Anatomy Ontology	
+ddanat.owl	ddanat	owl	2022-06-20T01:50:20.000Z	301721	Dictyostelium discoideum anatomy	Dictyostelium Discoideum Anatomy Ontology	
+ddpheno-relation-graph.tsv.gz	ddpheno	relation-graph.tsv.gz	2022-06-20T01:50:20.000Z	24970	Dictyostelium discoideum phenotype ontology	Dictyostelium Discoideum Phenotype Ontology	
+ddpheno.db	ddpheno	db	2022-10-17T16:08:41.000Z	4390912	Dictyostelium discoideum phenotype ontology	Dictyostelium Discoideum Phenotype Ontology	
+ddpheno.db.gz	ddpheno	db.gz	2025-02-05T06:26:31.000Z	787511	Dictyostelium discoideum phenotype ontology	Dictyostelium Discoideum Phenotype Ontology	
+ddpheno.owl	ddpheno	owl	2022-06-20T01:50:20.000Z	1830781	Dictyostelium discoideum phenotype ontology	Dictyostelium Discoideum Phenotype Ontology	
+dhba.db.gz	dhba	db.gz	2025-02-05T06:26:31.000Z	3513312			https://github.com/brain-bican/developing_human_brain_atlas_ontology/raw/main/dhbao-base.owl
+dideo-relation-graph.tsv.gz	dideo	relation-graph.tsv.gz	2022-06-20T01:50:21.000Z	23407	Drug-drug Interaction and Drug-drug Interaction Evidence Ontology	Drug Interaction and Evidence Ontology	
+dideo.db	dideo	db	2022-10-17T16:08:41.000Z	3915776	Drug-drug Interaction and Drug-drug Interaction Evidence Ontology	Drug Interaction and Evidence Ontology	
+dideo.db.gz	dideo	db.gz	2025-02-05T06:26:34.000Z	859809	Drug-drug Interaction and Drug-drug Interaction Evidence Ontology	Drug Interaction and Evidence Ontology	
+dideo.owl	dideo	owl	2022-06-20T01:50:21.000Z	1505243	Drug-drug Interaction and Drug-drug Interaction Evidence Ontology	Drug Interaction and Evidence Ontology	
+disdriv-relation-graph.tsv.gz	disdriv	relation-graph.tsv.gz	2022-06-20T01:50:21.000Z	263	Disease Drivers Ontology	Disease Drivers Ontology	
+disdriv.db	disdriv	db	2022-10-17T16:08:42.000Z	532480	Disease Drivers Ontology	Disease Drivers Ontology	
+disdriv.db.gz	disdriv	db.gz	2025-02-05T06:26:33.000Z	37944	Disease Drivers Ontology	Disease Drivers Ontology	
+disdriv.owl	disdriv	owl	2022-06-20T01:50:22.000Z	19678	Disease Drivers Ontology	Disease Drivers Ontology	
+dmba.db.gz	dmba	db.gz	2025-02-05T06:26:37.000Z	1530656			https://github.com/brain-bican/developing_mouse_brain_atlas_ontology/raw/main/dmbao-base.owl
+doid-relation-graph.tsv.gz	doid	relation-graph.tsv.gz	2022-06-20T01:50:22.000Z	1165625	Human Disease Ontology	Human Disease Ontology	
+doid.db.gz	doid	db.gz	2025-02-05T06:26:38.000Z	21632402	Human Disease Ontology	Human Disease Ontology	
+doid.owl	doid	owl	2022-06-20T01:50:22.000Z	31775742	Human Disease Ontology	Human Disease Ontology	
+dpo-relation-graph.tsv.gz	dpo	relation-graph.tsv.gz	2022-06-20T01:50:22.000Z	5879140	Drosophila Phenotype Ontology	Drosophila Phenotype Ontology	
+dpo.db.gz	dpo	db.gz	2025-02-05T06:26:41.000Z	3380237	Drosophila Phenotype Ontology	Drosophila Phenotype Ontology	
+dpo.owl	dpo	owl	2022-06-20T01:50:30.000Z	22041151	Drosophila Phenotype Ontology	Drosophila Phenotype Ontology	
+dron-relation-graph.tsv.gz	dron	relation-graph.tsv.gz	2022-06-20T01:50:36.000Z	50253436	The Drug Ontology	The Drug Ontology	
+dron.db.gz	dron	db.gz	2025-02-05T06:26:44.000Z	625135150	The Drug Ontology	The Drug Ontology	
+dron.owl	dron	owl	2022-06-20T01:50:47.000Z	595491084	The Drug Ontology	The Drug Ontology	
+drugbank.db.gz	drugbank	db.gz	2025-02-01T21:46:05.000Z	19697241			https://github.com/biopragmatics/obo-db-ingest/raw/main/export/drugbank/5.1.9/drugbank.owl.gz
+dtype.db.gz	dtype	db.gz	2025-02-01T21:46:08.000Z	39509			http://www.linkedmodel.org/schema/dtype
+duo-relation-graph.tsv.gz	duo	relation-graph.tsv.gz	2022-06-20T01:51:00.000Z	10231	Data Use Ontology	The Data Use Ontology	
+duo.db	duo	db	2022-10-17T16:09:50.000Z	1785856	Data Use Ontology	The Data Use Ontology	
+duo.db.gz	duo	db.gz	2025-02-05T06:26:47.000Z	412386	Data Use Ontology	The Data Use Ontology	
+duo.owl	duo	owl	2022-06-20T01:51:05.000Z	598267	Data Use Ontology	The Data Use Ontology	
+ecao-relation-graph.tsv.gz	ecao	relation-graph.tsv.gz	2022-06-20T01:51:06.000Z	269761	The Echinoderm Anatomy and Development Ontology	The Echinoderm Anatomy and Development Ontology	
+ecao.db	ecao	db	2022-10-17T16:09:51.000Z	9105408	The Echinoderm Anatomy and Development Ontology	The Echinoderm Anatomy and Development Ontology	
+ecao.db.gz	ecao	db.gz	2025-02-05T06:26:49.000Z	36574741	The Echinoderm Anatomy and Development Ontology	The Echinoderm Anatomy and Development Ontology	
+ecao.owl	ecao	owl	2022-06-20T01:51:07.000Z	950405	The Echinoderm Anatomy and Development Ontology	The Echinoderm Anatomy and Development Ontology	
+eccode.db.gz	eccode	db.gz	2025-02-01T21:46:09.000Z	50932953			https://w3id.org/biopragmatics/resources/eccode/eccode.owl.gz
+eco-relation-graph.tsv.gz	eco	relation-graph.tsv.gz	2022-06-20T01:51:09.000Z	354987	Evidence and Conclusion Ontology	Evidence and Conclusion Ontology	
+eco.db.gz	eco	db.gz	2025-02-05T06:26:54.000Z	5377679	Evidence and Conclusion Ontology	Evidence and Conclusion Ontology	
+eco.owl	eco	owl	2022-06-20T01:51:11.000Z	6883952	Evidence and Conclusion Ontology	Evidence and Conclusion Ontology	
+ecocore-relation-graph.tsv.gz	ecocore	relation-graph.tsv.gz	2022-06-20T01:51:12.000Z	5073887	An ontology of core ecological entities	An ontology of core ecological entities	
+ecocore.db.gz	ecocore	db.gz	2025-02-05T06:26:56.000Z	30587831	An ontology of core ecological entities	An ontology of core ecological entities	
+ecocore.owl	ecocore	owl	2022-06-20T01:51:17.000Z	20700022	An ontology of core ecological entities	An ontology of core ecological entities	
+ecosim.db.gz	ecosim	db.gz	2025-02-01T21:46:14.000Z	1371838		ecosim ontology	https://data.bioontology.org/ontologies/ECOSIM/submissions/1/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb
+ecso.db.gz	ecso	db.gz	2025-02-01T21:46:14.000Z	1471205		The Ecosystem Ontology	'https://data.bioontology.org/ontologies/ECSO/submissions/64/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb'
+ecto-relation-graph.tsv.gz	ecto	relation-graph.tsv.gz	2022-06-20T01:51:18.000Z	13196717	Environmental conditions, treatments and exposures ontology	Environmental conditions, treatments and exposures ontology	
+ecto.db.gz	ecto	db.gz	2025-02-05T06:27:03.000Z	56675702	Environmental conditions, treatments and exposures ontology	Environmental conditions, treatments and exposures ontology	
+ecto.owl	ecto	owl	2022-06-20T01:51:24.000Z	62406135	Environmental conditions, treatments and exposures ontology	Environmental conditions, treatments and exposures ontology	
+edam.db	edam	db	2022-10-17T16:11:19.000Z	11829248		EDAM - The data analysis and management ontology	http://edamontology.org/EDAM.owl
+edam.db.gz	edam	db.gz	2025-02-01T21:46:15.000Z	2383711		EDAM - The data analysis and management ontology	http://edamontology.org/EDAM.owl
+efo.db.gz	efo	db.gz	2025-02-01T21:46:15.000Z	150940306		Experimental Factor Ontology	http://www.ebi.ac.uk/efo/efo.owl
+emapa-relation-graph.tsv.gz	emapa	relation-graph.tsv.gz	2022-06-20T01:51:41.000Z	701518	Mouse Developmental Anatomy Ontology	Mouse gross anatomy and development, timed	
+emapa.db	emapa	db	2022-10-17T16:12:34.000Z	44933120	Mouse Developmental Anatomy Ontology	Mouse gross anatomy and development, timed	
+emapa.db.gz	emapa	db.gz	2025-02-05T06:27:04.000Z	7529078	Mouse Developmental Anatomy Ontology	Mouse gross anatomy and development, timed	
+emapa.owl	emapa	owl	2022-06-20T01:52:00.000Z	10907105	Mouse Developmental Anatomy Ontology	Mouse gross anatomy and development, timed	
+enanomapper.db	enanomapper	db	2022-10-17T16:12:41.000Z	57860096			http://enanomapper.github.io/ontologies/enanomapper.owl
+enanomapper.db.gz	enanomapper	db.gz	2025-02-05T06:27:08.000Z	15018326			http://enanomapper.github.io/ontologies/enanomapper.owl
+enanomapper.owl.old	enanomapper	owl.old	2022-06-15T13:40:53.000Z	5645			http://enanomapper.github.io/ontologies/enanomapper.owl
+enigma_context.db.gz	enigma_context	db.gz	2025-02-01T21:46:20.000Z	233359			https://raw.githubusercontent.com/jmchandonia/CORAL/main/example/enigma/ontologies/context_measurement_ontology.obo
+envo-relation-graph.tsv.gz	envo	relation-graph.tsv.gz	2022-06-20T01:52:00.000Z	1700415	Environment Ontology	Environment Ontology	
+envo.db-journal	envo.db	journal	2022-02-12T09:14:58.000Z	8720			
+envo.db.gz	envo	db.gz	2025-02-05T06:27:14.000Z	14980101	Environment Ontology	Environment Ontology	
+envo.owl	envo	owl	2022-06-20T01:52:04.000Z	10129540	Environment Ontology	Environment Ontology	
+envthes.db.gz	envthes	db.gz	2025-02-05T06:27:18.000Z	3841677		Thesaurus for long-term ecological research, monitoring, experiments	https://vocabs.lter-europe.net/rest/v1/envthes/data?format=text/turtle
+epio-relation-graph.tsv.ttl.tmp	epio	relation-graph.tsv.ttl.tmp	2022-06-20T01:52:09.000Z	4708339	Epilepsy Ontology	EpilepsyOntology	
+epio.db.gz	epio	db.gz	2025-02-05T06:27:19.000Z	2863708	Epilepsy Ontology	EpilepsyOntology	
+epio.owl	epio	owl	2022-06-20T01:52:10.000Z	3259140	Epilepsy Ontology	EpilepsyOntology	
+eupath-relation-graph.tsv.gz	eupath	relation-graph.tsv.gz	2022-06-20T01:52:12.000Z	302403	VEuPathDB ontology	VEuPathDB Ontology	
+eupath.db	eupath	db	2022-10-17T16:12:55.000Z	19828736	VEuPathDB ontology	VEuPathDB Ontology	
+eupath.db.gz	eupath	db.gz	2025-02-05T06:27:21.000Z	4512627	VEuPathDB ontology	VEuPathDB Ontology	
+eupath.owl	eupath	owl	2022-06-20T01:52:14.000Z	4650296	VEuPathDB ontology	VEuPathDB Ontology	
+exo-relation-graph.tsv.gz	exo	relation-graph.tsv.gz	2022-06-20T01:52:15.000Z	4889	Exposure ontology	Exposure Ontology	
+exo.db	exo	db	2022-10-17T16:12:57.000Z	749568	Exposure ontology	Exposure Ontology	
+exo.db.gz	exo	db.gz	2025-02-05T06:27:20.000Z	148819	Exposure ontology	Exposure Ontology	
+exo.owl	exo	owl	2022-06-20T01:52:18.000Z	255174	Exposure ontology	Exposure Ontology	
+fao-relation-graph.tsv.gz	fao	relation-graph.tsv.gz	2022-06-20T01:52:18.000Z	4529	Fungal gross anatomy	Fungal Gross Anatomy Ontology	
+fao.db	fao	db	2022-10-17T16:12:58.000Z	741376	Fungal gross anatomy	Fungal Gross Anatomy Ontology	
+fao.db.gz	fao	db.gz	2025-02-05T06:27:22.000Z	147441	Fungal gross anatomy	Fungal Gross Anatomy Ontology	
+fao.owl	fao	owl	2022-06-20T01:52:19.000Z	235282	Fungal gross anatomy	Fungal Gross Anatomy Ontology	
+fbbi-relation-graph.tsv.gz	fbbi	relation-graph.tsv.gz	2022-06-20T01:52:20.000Z	13880	Biological Imaging Methods Ontology	Biological Imaging Methods Ontology	
+fbbi.db	fbbi	db	2022-10-17T16:12:59.000Z	2019328	Biological Imaging Methods Ontology	Biological Imaging Methods Ontology	
+fbbi.db.gz	fbbi	db.gz	2025-02-05T06:27:22.000Z	384717	Biological Imaging Methods Ontology	Biological Imaging Methods Ontology	
+fbbi.owl	fbbi	owl	2022-06-20T01:52:21.000Z	768600	Biological Imaging Methods Ontology	Biological Imaging Methods Ontology	
+fbbt-relation-graph.tsv.gz	fbbt	relation-graph.tsv.gz	2022-06-20T01:52:22.000Z	22011872	Drosophila gross anatomy		
+fbbt.db.gz	fbbt	db.gz	2025-02-05T06:27:23.000Z	444173464	Drosophila gross anatomy		
+fbbt.owl	fbbt	owl	2022-06-20T01:52:28.000Z	76269898	Drosophila gross anatomy		
+fbcv-relation-graph.tsv.gz	fbcv	relation-graph.tsv.gz	2022-06-20T01:52:35.000Z	445046	FlyBase Controlled Vocabulary		
+fbcv.db.gz	fbcv	db.gz	2025-02-05T06:27:27.000Z	3845661	FlyBase Controlled Vocabulary		
+fbcv.owl	fbcv	owl	2022-06-20T01:52:44.000Z	5749634	FlyBase Controlled Vocabulary		
+fbdv-relation-graph.tsv.gz	fbdv	relation-graph.tsv.gz	2022-06-20T01:52:45.000Z	222394	Drosophila development		
+fbdv.db	fbdv	db	2022-10-17T16:13:18.000Z	7684096	Drosophila development		
+fbdv.db.gz	fbdv	db.gz	2025-02-05T06:27:23.000Z	1318202	Drosophila development		
+fbdv.owl	fbdv	owl	2022-06-20T01:52:46.000Z	802844	Drosophila development		
+fhkb.db.gz	fhkb	db.gz	2025-02-01T21:46:27.000Z	74056			
+fibo.db.gz	fibo	db.gz	2025-02-01T21:46:28.000Z	13814070			https://spec.edmcouncil.org/fibo/ontology/AboutFIBOProd/
+fideo-relation-graph.tsv.gz	fideo	relation-graph.tsv.gz	2022-06-20T01:52:47.000Z	10181	Food Interactions with Drugs Evidence Ontology	Food Interactions with Drugs Evidence Ontology	
+fideo.db	fideo	db	2022-10-17T16:13:20.000Z	12722176	Food Interactions with Drugs Evidence Ontology	Food Interactions with Drugs Evidence Ontology	
+fideo.db.gz	fideo	db.gz	2025-02-05T06:27:25.000Z	1849785	Food Interactions with Drugs Evidence Ontology	Food Interactions with Drugs Evidence Ontology	
+fideo.owl	fideo	owl	2022-06-20T01:52:49.000Z	334714	Food Interactions with Drugs Evidence Ontology	Food Interactions with Drugs Evidence Ontology	
+flopo-relation-graph.tsv.gz	flopo	relation-graph.tsv.gz	2022-06-20T01:52:50.000Z	7571055	Flora Phenotype Ontology	Flora Phenotype Ontology	
+flopo.db.gz	flopo	db.gz	2025-02-05T06:27:27.000Z	51794371	Flora Phenotype Ontology	Flora Phenotype Ontology	
+flopo.owl	flopo	owl	2022-06-20T01:52:51.000Z	62498877	Flora Phenotype Ontology	Flora Phenotype Ontology	
+fma.db.gz	fma	db.gz	2025-02-05T06:27:31.000Z	628017413	Foundational Model of Anatomy Ontology (subset)	Foundational Model of Anatomy	http://sig.biostr.washington.edu/share/downloads/fma/release/latest/fma.owl
+fobi-relation-graph.tsv.gz	fobi	relation-graph.tsv.gz	2022-06-20T01:53:02.000Z	80931	Food-Biomarker Ontology	FOBI (Food-Biomarker Ontology)	
+fobi.db	fobi	db	2022-10-17T16:14:16.000Z	8892416	Food-Biomarker Ontology	FOBI (Food-Biomarker Ontology)	
+fobi.db.gz	fobi	db.gz	2025-02-05T06:27:37.000Z	1620826	Food-Biomarker Ontology	FOBI (Food-Biomarker Ontology)	
+fobi.owl	fobi	owl	2022-06-20T01:53:06.000Z	2640677	Food-Biomarker Ontology	FOBI (Food-Biomarker Ontology)	
+foo.db	foo	db	2021-05-18T01:34:24.000Z	57344			
+foodon-relation-graph.tsv.gz	foodon	relation-graph.tsv.gz	2022-06-20T01:53:08.000Z	4036406	Food Ontology	The FoodOn Food Ontology	http://purl.obolibrary.org/obo/foodon.owl
+foodon.db.gz	foodon	db.gz	2025-02-05T06:27:39.000Z	50458969	Food Ontology	The FoodOn Food Ontology	http://purl.obolibrary.org/obo/foodon.owl
+foodon.owl	foodon	owl	2022-06-20T01:53:09.000Z	40123872	Food Ontology	The FoodOn Food Ontology	http://purl.obolibrary.org/obo/foodon.owl
+fovt-relation-graph.tsv.gz	fovt	relation-graph.tsv.gz	2022-06-20T01:53:17.000Z	7836316	FuTRES Ontology of Vertebrate Traits	FuTRES Ontology of Vertebrate Traits	
+fovt.db.gz	fovt	db.gz	2025-02-05T06:28:01.000Z	74703499	FuTRES Ontology of Vertebrate Traits	FuTRES Ontology of Vertebrate Traits	
+fovt.owl	fovt	owl	2022-06-20T01:53:43.000Z	20156463	FuTRES Ontology of Vertebrate Traits	FuTRES Ontology of Vertebrate Traits	
+fypo-relation-graph.tsv.gz	fypo	relation-graph.tsv.gz	2022-06-20T01:53:48.000Z	9720548	Fission Yeast Phenotype Ontology	Fission Yeast Phenotype Ontology	
+fypo.db.gz	fypo	db.gz	2025-02-05T06:28:18.000Z	58415565	Fission Yeast Phenotype Ontology	Fission Yeast Phenotype Ontology	
+fypo.owl	fypo	owl	2022-06-20T01:53:51.000Z	100255019	Fission Yeast Phenotype Ontology	Fission Yeast Phenotype Ontology	
+gard.db.gz	gard	db.gz	2025-02-05T06:28:48.000Z	2336625			https://github.com/monarch-initiative/mondo-ingest/releases/latest/download/gard.owl
+gecko-relation-graph.tsv.gz	gecko	relation-graph.tsv.gz	2022-06-20T01:54:02.000Z	2550	Genomics Cohorts Knowledge Ontology	Genomics Cohorts Knowledge Ontology	
+gecko.db	gecko	db	2022-10-17T16:15:04.000Z	536576	Genomics Cohorts Knowledge Ontology	Genomics Cohorts Knowledge Ontology	
+gecko.db.gz	gecko	db.gz	2025-02-05T06:28:53.000Z	113020	Genomics Cohorts Knowledge Ontology	Genomics Cohorts Knowledge Ontology	
+gecko.owl	gecko	owl	2022-06-20T01:54:04.000Z	160220	Genomics Cohorts Knowledge Ontology	Genomics Cohorts Knowledge Ontology	
+genepio.db.gz	genepio	db.gz	2025-02-05T06:29:01.000Z	6527289	Genomic Epidemiology Ontology	Genomic Epidemiology Application Ontology 	
+geno-relation-graph.tsv.gz	geno	relation-graph.tsv.gz	2022-06-20T01:54:05.000Z	38495	Genotype Ontology	Genotype Ontology	
+geno.db	geno	db	2022-10-17T16:15:04.000Z	2899968	Genotype Ontology	Genotype Ontology	
+geno.db.gz	geno	db.gz	2025-02-05T06:29:02.000Z	615005	Genotype Ontology	Genotype Ontology	
+geno.owl	geno	owl	2022-06-20T01:54:07.000Z	634329	Genotype Ontology	Genotype Ontology	
+geo-relation-graph.tsv.gz	geo	relation-graph.tsv.gz	2022-06-20T01:54:07.000Z	3188	Geographical Entity Ontology	Geographical Entity Ontology	
+geo.db	geo	db	2022-10-17T16:15:05.000Z	1003520	Geographical Entity Ontology	Geographical Entity Ontology	
+geo.db.gz	geo	db.gz	2025-02-05T06:29:01.000Z	214032	Geographical Entity Ontology	Geographical Entity Ontology	
+geo.owl	geo	owl	2022-06-20T01:54:07.000Z	325667	Geographical Entity Ontology	Geographical Entity Ontology	
+gno-relation-graph.tsv.gz	gno	relation-graph.tsv.gz	2022-06-20T01:54:08.000Z	4236790	Glycan Naming and Subsumption Ontology (GNOme)	Glycan Naming Ontology	
+gno.db.gz	gno	db.gz	2025-02-05T06:29:02.000Z	133918902	Glycan Naming and Subsumption Ontology (GNOme)	Glycan Naming Ontology	
+gno.owl	gno	owl	2022-06-20T01:54:09.000Z	111657840	Glycan Naming and Subsumption Ontology (GNOme)	Glycan Naming Ontology	
+go-amigo.db.gz	go	amigo.db.gz	2025-02-05T06:29:02.000Z	1155586241	Gene Ontology	Gene Ontology	http://purl.obolibrary.org/obo/go/extensions/go-plus.owl
+go-lego.db.gz	go	lego.db.gz	2025-02-05T06:29:04.000Z	1777838118	Gene Ontology	Gene Ontology	http://purl.obolibrary.org/obo/go/extensions/go-plus.owl
+go-nucleus-relation-graph.tsv.gz	go	nucleus-relation-graph.tsv.gz	2022-05-31T05:50:36.000Z	21749	Gene Ontology	Gene Ontology	http://purl.obolibrary.org/obo/go/extensions/go-plus.owl
+go-nucleus.db	go	nucleus.db	2022-10-17T16:15:12.000Z	1847296	Gene Ontology	Gene Ontology	http://purl.obolibrary.org/obo/go/extensions/go-plus.owl
+go-nucleus.db.old	go	nucleus.db.old	2022-05-31T05:50:44.000Z	1310720	Gene Ontology	Gene Ontology	http://purl.obolibrary.org/obo/go/extensions/go-plus.owl
+go-nucleus.owl	go	nucleus.owl	2022-05-31T05:50:47.000Z	495695	Gene Ontology	Gene Ontology	http://purl.obolibrary.org/obo/go/extensions/go-plus.owl
+go-plus.db	go	plus.db	2022-10-17T16:15:13.000Z	532480	Gene Ontology	Gene Ontology	http://purl.obolibrary.org/obo/go/extensions/go-plus.owl
+go-relation-graph.tsv.gz	go	relation-graph.tsv.gz	2022-06-20T01:54:30.000Z	36560630	Gene Ontology	Gene Ontology	http://purl.obolibrary.org/obo/go/extensions/go-plus.owl
+go.db.gz	go	db.gz	2025-02-05T06:30:23.000Z	285882090	Gene Ontology	Gene Ontology	http://purl.obolibrary.org/obo/go/extensions/go-plus.owl
+go.owl	go	owl	2022-06-20T01:54:41.000Z	226540271	Gene Ontology	Gene Ontology	http://purl.obolibrary.org/obo/go/extensions/go-plus.owl
+goa_uniprot_all.db	goa_uniprot_all	db	2022-10-17T16:15:39.000Z	8192			
+goldterms.db.gz	goldterms	db.gz	2025-02-05T06:29:52.000Z	2949396		GOLD Ecosystem Classification	https://raw.githubusercontent.com/cmungall/gold-ontology/main/gold.owl
+gsso-relation-graph.tsv	gsso	relation-graph.tsv	2022-06-20T01:55:08.000Z	8193063	Gender, Sex, and Sexual Orientation (GSSO) ontology	Gender, Sex, and Sexual Orientation Ontology	
+gsso.db.gz	gsso	db.gz	2025-02-05T06:29:52.000Z	644	Gender, Sex, and Sexual Orientation (GSSO) ontology	Gender, Sex, and Sexual Orientation Ontology	
+gsso.db.tmp	gsso	db.tmp	2022-06-20T01:55:08.000Z	532480	Gender, Sex, and Sexual Orientation (GSSO) ontology	Gender, Sex, and Sexual Orientation Ontology	
+gsso.owl	gsso	owl	2022-06-20T01:55:08.000Z	17904543	Gender, Sex, and Sexual Orientation (GSSO) ontology	Gender, Sex, and Sexual Orientation Ontology	
+gtdb.db.gz	gtdb	db.gz	2025-02-01T21:47:15.000Z	63417498			https://w3id.org/biopragmatics/resources/gtdb/gtdb.owl
+hancestro-relation-graph.tsv.gz	hancestro	relation-graph.tsv.gz	2022-06-20T01:55:10.000Z	11268	Human Ancestry Ontology	Human Ancestry Ontology	
+hancestro.db	hancestro	db	2022-10-17T16:15:41.000Z	2437120	Human Ancestry Ontology	Human Ancestry Ontology	
+hancestro.db.gz	hancestro	db.gz	2025-02-05T06:29:52.000Z	1698060	Human Ancestry Ontology	Human Ancestry Ontology	
+hancestro.owl	hancestro	owl	2022-06-20T01:55:13.000Z	837074	Human Ancestry Ontology	Human Ancestry Ontology	
+hao-relation-graph.tsv.gz	hao	relation-graph.tsv.gz	2022-06-20T01:55:14.000Z	402852	Hymenoptera Anatomy Ontology	Hymenoptera Anatomy Ontology	
+hao.db	hao	db	2022-10-17T16:15:42.000Z	35266560	Hymenoptera Anatomy Ontology	Hymenoptera Anatomy Ontology	
+hao.db.gz	hao	db.gz	2025-02-05T06:29:52.000Z	4518100	Hymenoptera Anatomy Ontology	Hymenoptera Anatomy Ontology	
+hao.owl	hao	owl	2022-06-20T01:55:15.000Z	6923086	Hymenoptera Anatomy Ontology	Hymenoptera Anatomy Ontology	
+hba.db.gz	hba	db.gz	2025-02-05T06:29:53.000Z	1379099			https://github.com/brain-bican/human_brain_atlas_ontology/raw/main/hbao-base.owl
+hcao.db.gz	hcao	db.gz	2025-02-01T21:47:26.000Z	155640919			https://raw.githubusercontent.com/HumanCellAtlas/ontology/master/hcao.owl
+hgnc.db.gz	hgnc	db.gz	2025-02-01T21:47:36.000Z	74978911		HUGO Gene Nomenclature	https://github.com/biopragmatics/obo-db-ingest/raw/main/export/hgnc/2022-06-01/hgnc.owl.gz
+hgnc.genegroup.db.gz	hgnc	genegroup.db.gz	2025-02-01T21:47:39.000Z	1423023		HUGO Gene Nomenclature	https://github.com/biopragmatics/obo-db-ingest/raw/main/export/hgnc/2022-06-01/hgnc.owl.gz
+hom-relation-graph.tsv.gz	hom	relation-graph.tsv.gz	2022-06-20T01:55:16.000Z	958	Homology Ontology	Ontology of Homology and Related Concepts in Biology	
+hom.db	hom	db	2022-10-17T16:15:49.000Z	532480	Homology Ontology	Ontology of Homology and Related Concepts in Biology	
+hom.db.gz	hom	db.gz	2025-02-05T06:29:53.000Z	79271	Homology Ontology	Ontology of Homology and Related Concepts in Biology	
+hom.owl	hom	owl	2022-06-20T01:55:19.000Z	128079	Homology Ontology	Ontology of Homology and Related Concepts in Biology	
+hp-relation-graph.tsv.gz	hp	relation-graph.tsv.gz	2022-06-20T01:55:19.000Z	21273554	Human Phenotype Ontology (HPO)	Human Phenotype Ontology	
+hp.db.gz	hp	db.gz	2025-02-05T06:29:53.000Z	87804954	Human Phenotype Ontology (HPO)	Human Phenotype Ontology	
+hp.owl	hp	owl	2022-06-20T01:55:23.000Z	95344503	Human Phenotype Ontology (HPO)	Human Phenotype Ontology	
+hpinternational.db.gz	hpinternational	db.gz	2025-02-01T21:47:44.000Z	152804685			http://purl.obolibrary.org/obo/hp/hp-international.owl
+hsapdv-relation-graph.tsv.gz	hsapdv	relation-graph.tsv.gz	2022-06-20T01:55:25.000Z	24410	Human Developmental Stages	Human Developmental Stages Ontology	
+hsapdv.db	hsapdv	db	2022-10-17T16:16:04.000Z	2342912	Human Developmental Stages	Human Developmental Stages Ontology	
+hsapdv.db.gz	hsapdv	db.gz	2025-02-05T06:29:57.000Z	398716	Human Developmental Stages	Human Developmental Stages Ontology	
+hsapdv.owl	hsapdv	owl	2022-06-20T01:55:27.000Z	610323	Human Developmental Stages	Human Developmental Stages Ontology	
+hso-relation-graph.tsv.gz	hso	relation-graph.tsv.gz	2022-06-20T01:55:29.000Z	24327	Health Surveillance Ontology	Health Surveillance Ontology	
+hso.db	hso	db	2022-10-17T16:16:06.000Z	3870720	Health Surveillance Ontology	Health Surveillance Ontology	
+hso.db.gz	hso	db.gz	2025-02-05T06:29:57.000Z	797134	Health Surveillance Ontology	Health Surveillance Ontology	
+hso.owl	hso	owl	2022-06-20T01:55:31.000Z	1360649	Health Surveillance Ontology	Health Surveillance Ontology	
+htn-relation-graph.tsv.gz	htn	relation-graph.tsv.gz	2022-06-20T01:55:32.000Z	33183	Hypertension Ontology	Hypertension Ontology	
+htn.db	htn	db	2022-10-17T16:16:07.000Z	3723264	Hypertension Ontology	Hypertension Ontology	
+htn.db.gz	htn	db.gz	2025-02-05T06:29:57.000Z	828221	Hypertension Ontology	Hypertension Ontology	
+htn.owl	htn	owl	2022-06-20T01:55:34.000Z	1322052	Hypertension Ontology	Hypertension Ontology	
+iao-relation-graph.tsv.gz	iao	relation-graph.tsv.gz	2022-06-20T01:55:35.000Z	9087	Information Artifact Ontology	Information Artifact Ontology	
+iao.db	iao	db	2022-10-17T16:16:08.000Z	1691648	Information Artifact Ontology	Information Artifact Ontology	
+iao.db.gz	iao	db.gz	2025-02-05T06:29:57.000Z	389256	Information Artifact Ontology	Information Artifact Ontology	
+iao.owl	iao	owl	2022-06-20T01:55:38.000Z	560430	Information Artifact Ontology	Information Artifact Ontology	
+icd10cm.db.gz	icd10cm	db.gz	2025-02-01T21:47:46.000Z	26205683		International Classification of Diseases, Version 10 - Clinical Modification	https://github.com/monarch-initiative/mondo-ingest/releases/latest/download/icd10cm.owl
+icd10who.db.gz	icd10who	db.gz	2025-02-05T06:29:57.000Z	3305653			https://github.com/monarch-initiative/mondo-ingest/releases/latest/download/icd10who.owl
+iceo-relation-graph.tsv.gz	iceo	relation-graph.tsv.gz	2022-06-20T01:55:38.000Z	6388459	Integrative and Conjugative Element Ontology	Integrative and Conjugative Element Ontology	
+iceo.db.gz	iceo	db.gz	2025-02-05T06:29:57.000Z	61229308	Integrative and Conjugative Element Ontology	Integrative and Conjugative Element Ontology	
+iceo.owl	iceo	owl	2022-06-20T01:55:40.000Z	37318862	Integrative and Conjugative Element Ontology	Integrative and Conjugative Element Ontology	
+ico-relation-graph.tsv.gz	ico	relation-graph.tsv.gz	2022-06-20T01:55:49.000Z	38381	Informed Consent Ontology	Informed Consent Ontology	
+ico.db	ico	db	2022-10-17T16:16:26.000Z	4485120	Informed Consent Ontology	Informed Consent Ontology	
+ico.db.gz	ico	db.gz	2025-02-05T06:29:59.000Z	991919	Informed Consent Ontology	Informed Consent Ontology	
+ico.owl	ico	owl	2022-06-20T01:55:52.000Z	1510583	Informed Consent Ontology	Informed Consent Ontology	
+ido-relation-graph.tsv.gz	ido	relation-graph.tsv.gz	2022-06-20T01:55:53.000Z	12075	Infectious Disease Ontology	Infectious Disease Ontology	
+ido.db	ido	db	2022-10-17T16:16:27.000Z	2220032	Infectious Disease Ontology	Infectious Disease Ontology	
+ido.db.gz	ido	db.gz	2025-02-05T06:29:59.000Z	469497	Infectious Disease Ontology	Infectious Disease Ontology	
+ido.owl	ido	owl	2022-06-20T01:55:56.000Z	766591	Infectious Disease Ontology	Infectious Disease Ontology	
+ino-relation-graph.tsv.gz	ino	relation-graph.tsv.gz	2022-06-20T01:55:57.000Z	12218	Interaction Network Ontology	Interaction Network Ontology	
+ino.db	ino	db	2022-10-17T16:16:28.000Z	1495040	Interaction Network Ontology	Interaction Network Ontology	
+ino.db.gz	ino	db.gz	2025-02-05T06:30:00.000Z	330515	Interaction Network Ontology	Interaction Network Ontology	
+ino.owl	ino	owl	2022-06-20T01:55:59.000Z	492962	Interaction Network Ontology	Interaction Network Ontology	
+inst.db	inst	db	2022-10-17T16:16:30.000Z	532480			
+interpro.db.gz	interpro	db.gz	2025-02-01T21:47:53.000Z	14256550			https://w3id.org/biopragmatics/resources/interpro/interpro.obo
+iof.db.gz	iof	db.gz	2025-02-05T06:30:00.000Z	387093			https://spec.industrialontologies.org/ontology/AboutIOFProd/
+ito.db.gz	ito	db.gz	2025-02-05T06:30:00.000Z	57605730		Intelligence Task Ontology	https://github.com/OpenBioLink/ITO/raw/master/ITO.owl.zip
+ito.db.gz.old	ito	db.gz.old	2024-08-14T02:24:38.000Z	61265807		Intelligence Task Ontology	https://github.com/OpenBioLink/ITO/raw/master/ITO.owl.zip
+kegg.genome.db.gz	kegg	genome.db.gz	2025-02-01T21:47:59.000Z	35			
+kgcl.db.gz	kgcl	db.gz	2025-02-01T21:47:59.000Z	184756		Knowledge Graph Change Language	https://w3id.org/kgcl/kgcl.owl.ttl
+kin.db.gz	kin	db.gz	2025-02-05T06:30:02.000Z	40642			http://purl.org/ga4gh/kin.owl
+kisao-relation-graph.tsv.gz	kisao	relation-graph.tsv.gz	2022-06-20T01:56:01.000Z	33519	Kinetic Simulation Algorithm Ontology	Kinetic Simulation Algorithm Ontology	
+kisao.db	kisao	db	2022-10-17T16:16:30.000Z	6971392	Kinetic Simulation Algorithm Ontology	Kinetic Simulation Algorithm Ontology	
+kisao.db.gz	kisao	db.gz	2025-02-05T06:30:03.000Z	770672	Kinetic Simulation Algorithm Ontology	Kinetic Simulation Algorithm Ontology	
+kisao.owl	kisao	owl	2022-06-20T01:56:02.000Z	1094726	Kinetic Simulation Algorithm Ontology	Kinetic Simulation Algorithm Ontology	
+labo-relation-graph.tsv.gz	labo	relation-graph.tsv.gz	2022-06-20T01:56:04.000Z	5557	clinical LABoratory Ontology	clinical LABoratory Ontology	
+labo.db	labo	db	2022-10-17T16:16:32.000Z	1175552	clinical LABoratory Ontology	clinical LABoratory Ontology	
+labo.db.gz	labo	db.gz	2025-02-05T06:30:03.000Z	257741	clinical LABoratory Ontology	clinical LABoratory Ontology	
+labo.owl	labo	owl	2022-06-20T01:56:07.000Z	380157	clinical LABoratory Ontology	clinical LABoratory Ontology	
+lepao-relation-graph.tsv.gz	lepao	relation-graph.tsv.gz	2022-06-20T01:56:07.000Z	137078	Lepidoptera Anatomy Ontology	Lepidoptera Anatomy Ontology	
+lepao.db	lepao	db	2022-10-17T16:16:33.000Z	11046912	Lepidoptera Anatomy Ontology	Lepidoptera Anatomy Ontology	
+lepao.db.gz	lepao	db.gz	2025-02-05T06:30:04.000Z	1940269	Lepidoptera Anatomy Ontology	Lepidoptera Anatomy Ontology	
+lepao.owl	lepao	owl	2022-06-20T01:56:15.000Z	3044039	Lepidoptera Anatomy Ontology	Lepidoptera Anatomy Ontology	
+ma-relation-graph.tsv.gz	ma	relation-graph.tsv.gz	2022-06-20T01:56:17.000Z	177539	Mouse adult gross anatomy	Mouse Adult Gross Anatomy Ontology	
+ma.db	ma	db	2022-10-17T16:16:37.000Z	10653696	Mouse adult gross anatomy	Mouse Adult Gross Anatomy Ontology	
+ma.db.gz	ma	db.gz	2025-02-05T06:30:04.000Z	1874063	Mouse adult gross anatomy	Mouse Adult Gross Anatomy Ontology	
+ma.owl	ma	owl	2022-06-20T01:56:23.000Z	2699120	Mouse adult gross anatomy	Mouse Adult Gross Anatomy Ontology	
+mamo-relation-graph.tsv.gz	mamo	relation-graph.tsv.gz	2022-06-20T01:56:25.000Z	3408	Mathematical modeling ontology	Mathematical Modelling Ontology	
+mamo.db	mamo	db	2022-10-17T16:16:40.000Z	778240	Mathematical modeling ontology	Mathematical Modelling Ontology	
+mamo.db.gz	mamo	db.gz	2022-09-12T02:11:36.000Z	104395	Mathematical modeling ontology	Mathematical Modelling Ontology	
+mamo.owl	mamo	owl	2022-06-20T01:56:27.000Z	126934	Mathematical modeling ontology	Mathematical Modelling Ontology	
+matcher-test.db.old	matcher	test.db.old	2022-04-21T01:20:16.000Z	532480			
+maxo-relation-graph.tsv.gz	maxo	relation-graph.tsv.gz	2022-06-20T01:56:28.000Z	15729464	Medical Action Ontology	Medical Action Ontology	http://purl.obolibrary.org/obo/maxo.owl
+maxo.db.gz	maxo	db.gz	2025-02-05T06:30:05.000Z	23192576	Medical Action Ontology	Medical Action Ontology	http://purl.obolibrary.org/obo/maxo.owl
+maxo.owl	maxo	owl	2022-06-20T01:56:36.000Z	57224995	Medical Action Ontology	Medical Action Ontology	http://purl.obolibrary.org/obo/maxo.owl
+mba.db.gz	mba	db.gz	2025-02-05T06:30:05.000Z	1687843			https://github.com/brain-bican/mouse_brain_atlas_ontology/raw/main/mbao-base.owl
+mco-relation-graph.tsv.gz	mco	relation-graph.tsv.gz	2022-06-20T01:56:52.000Z	968810	Microbial Conditions Ontology	Microbial Conditions Ontology	
+mco.db.gz	mco	db.gz	2025-02-05T06:30:05.000Z	11990654	Microbial Conditions Ontology	Microbial Conditions Ontology	
+mco.owl	mco	owl	2022-06-20T01:57:11.000Z	17308396	Microbial Conditions Ontology	Microbial Conditions Ontology	
+mesh.db.gz	mesh	db.gz	2023-01-05T20:18:13.000Z	87556908		Medical Subject Headings	
+mf-relation-graph.tsv.gz	mf	relation-graph.tsv.gz	2022-06-20T01:57:16.000Z	19827	Mental Functioning Ontology	Mental Functioning Ontology	
+mf.db	mf	db	2022-10-17T16:16:54.000Z	1818624	Mental Functioning Ontology	Mental Functioning Ontology	
+mf.db.gz	mf	db.gz	2025-02-05T06:30:05.000Z	372309	Mental Functioning Ontology	Mental Functioning Ontology	
+mf.owl	mf	owl	2022-06-20T01:57:19.000Z	482133	Mental Functioning Ontology	Mental Functioning Ontology	
+mfmo-relation-graph.tsv.gz	mfmo	relation-graph.tsv.gz	2022-06-20T01:57:20.000Z	5815	Mammalian Feeding Muscle Ontology	Mammalian Feeding Muscle Ontology	
+mfmo.db	mfmo	db	2022-10-17T16:16:55.000Z	2703360	Mammalian Feeding Muscle Ontology	Mammalian Feeding Muscle Ontology	
+mfmo.db.gz	mfmo	db.gz	2025-02-05T06:30:05.000Z	742846	Mammalian Feeding Muscle Ontology	Mammalian Feeding Muscle Ontology	
+mfmo.owl	mfmo	owl	2022-06-20T01:57:22.000Z	1112445	Mammalian Feeding Muscle Ontology	Mammalian Feeding Muscle Ontology	
+mfoem-relation-graph.tsv.gz	mfoem	relation-graph.tsv.gz	2022-06-20T01:57:23.000Z	38821	Emotion Ontology	Emotion Ontology	
+mfoem.db	mfoem	db	2022-10-17T16:16:57.000Z	2777088	Emotion Ontology	Emotion Ontology	
+mfoem.db.gz	mfoem	db.gz	2025-02-05T06:30:06.000Z	573135	Emotion Ontology	Emotion Ontology	
+mfoem.owl	mfoem	owl	2022-06-20T01:57:25.000Z	628118	Emotion Ontology	Emotion Ontology	
+mfomd-relation-graph.tsv.gz	mfomd	relation-graph.tsv.gz	2022-06-20T01:57:26.000Z	50747	Mental Disease Ontology	MFO Mental Disease Ontology	
+mfomd.db	mfomd	db	2022-10-17T16:16:57.000Z	4517888	Mental Disease Ontology	MFO Mental Disease Ontology	
+mfomd.db.gz	mfomd	db.gz	2025-02-05T06:30:06.000Z	959202	Mental Disease Ontology	MFO Mental Disease Ontology	
+mfomd.owl	mfomd	owl	2022-06-20T01:57:29.000Z	1347941	Mental Disease Ontology	MFO Mental Disease Ontology	
+mi-relation-graph.tsv.gz	mi	relation-graph.tsv.gz	2022-06-20T01:57:30.000Z	27462	Molecular Interactions Controlled Vocabulary	Molecular Interactions	
+mi.db	mi	db	2022-10-17T16:16:58.000Z	8040448	Molecular Interactions Controlled Vocabulary	Molecular Interactions	
+mi.db.gz	mi	db.gz	2025-02-05T06:30:06.000Z	1761695	Molecular Interactions Controlled Vocabulary	Molecular Interactions	
+mi.owl	mi	owl	2022-06-20T01:57:38.000Z	3862595	Molecular Interactions Controlled Vocabulary	Molecular Interactions	
+miapa-relation-graph.tsv.gz	miapa	relation-graph.tsv.gz	2022-06-20T01:57:41.000Z	4808	MIAPA Ontology	MIAPA Ontology	
+miapa.db	miapa	db	2022-10-17T16:16:58.000Z	1220608	MIAPA Ontology	MIAPA Ontology	
+miapa.db.gz	miapa	db.gz	2025-02-05T06:30:06.000Z	232743	MIAPA Ontology	MIAPA Ontology	
+miapa.owl	miapa	owl	2022-06-20T01:57:46.000Z	353875	MIAPA Ontology	MIAPA Ontology	
+micro-relation-graph.tsv	micro	relation-graph.tsv	2022-06-20T01:57:47.000Z	38223419	Ontology of Prokaryotic Phenotypic and Metabolic Characters		
+micro.db.gz	micro	db.gz	2025-02-05T06:30:06.000Z	645	Ontology of Prokaryotic Phenotypic and Metabolic Characters		
+micro.db.tmp	micro	db.tmp	2022-06-20T01:57:50.000Z	532480	Ontology of Prokaryotic Phenotypic and Metabolic Characters		
+micro.owl	micro	owl	2022-06-20T01:57:51.000Z	42503778	Ontology of Prokaryotic Phenotypic and Metabolic Characters		
+mixs.db.gz	mixs	db.gz	2025-02-01T21:48:05.000Z	1647820		Minimal Information about any Sequence Ontology	https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/main/project/owl/mixs.owl.ttl
+mlo.db.gz	mlo	db.gz	2025-02-05T06:30:07.000Z	296357			https://raw.githubusercontent.com/berkeleybop/artificial-intelligence-ontology/v2023-09-11/external/ml-ontology-202010021305.owl
+mmo-relation-graph.tsv.gz	mmo	relation-graph.tsv.gz	2022-06-20T01:57:58.000Z	14459	Measurement method ontology	Measurement Method Ontology	
+mmo.db	mmo	db	2022-10-17T16:16:59.000Z	3371008	Measurement method ontology	Measurement Method Ontology	
+mmo.db.gz	mmo	db.gz	2025-02-05T06:30:07.000Z	802323	Measurement method ontology	Measurement Method Ontology	
+mmo.owl	mmo	owl	2022-06-20T01:58:02.000Z	1494705	Measurement method ontology	Measurement Method Ontology	
+mmusdv-relation-graph.tsv.gz	mmusdv	relation-graph.tsv.gz	2022-06-20T01:58:02.000Z	11522	Mouse Developmental Stages	Mouse Developmental Stages	
+mmusdv.db	mmusdv	db	2022-10-17T16:17:00.000Z	1228800	Mouse Developmental Stages	Mouse Developmental Stages	
+mmusdv.db.gz	mmusdv	db.gz	2025-02-05T06:30:07.000Z	259620	Mouse Developmental Stages	Mouse Developmental Stages	
+mmusdv.owl	mmusdv	owl	2022-06-20T01:58:04.000Z	310367	Mouse Developmental Stages	Mouse Developmental Stages	
+mod-relation-graph.tsv.gz	mod	relation-graph.tsv.gz	2022-06-20T01:58:05.000Z	67862	Protein modification		
+mod.db.gz	mod	db.gz	2025-02-05T06:30:07.000Z	3831476	Protein modification		
+mod.owl	mod	owl	2022-06-20T01:58:06.000Z	9566164	Protein modification		
+modl.db.gz	modl	db.gz	2025-02-05T06:30:07.000Z	36182			https://raw.githubusercontent.com/Data-Semantics-Laboratory/modular-ontology-design-library/master/MODL.owl
+mondo-ingest.db.gz	mondo	ingest.db.gz	2025-02-05T06:30:07.000Z	113586385	Mondo Disease Ontology	Mondo Disease Ontology	
+mondo-relation-graph.tsv.gz	mondo	relation-graph.tsv.gz	2022-06-20T01:58:09.000Z	29660418	Mondo Disease Ontology	Mondo Disease Ontology	
+mondo.db.gz	mondo	db.gz	2025-02-05T06:30:11.000Z	225098136	Mondo Disease Ontology	Mondo Disease Ontology	
+mondo.owl	mondo	owl	2022-06-20T01:58:16.000Z	234103507	Mondo Disease Ontology	Mondo Disease Ontology	
+mop-relation-graph.tsv.gz	mop	relation-graph.tsv.gz	2022-06-20T01:58:28.000Z	113553	Molecular Process Ontology	Molecular Process Ontology	
+mop.db	mop	db	2022-10-17T16:19:00.000Z	12865536	Molecular Process Ontology	Molecular Process Ontology	
+mop.db.gz	mop	db.gz	2025-02-05T06:30:22.000Z	2037885	Molecular Process Ontology	Molecular Process Ontology	
+mop.owl	mop	owl	2022-06-20T01:58:33.000Z	4842212	Molecular Process Ontology	Molecular Process Ontology	
+mp-relation-graph.tsv.gz	mp	relation-graph.tsv.gz	2022-06-20T01:58:36.000Z	25408180	Mammalian Phenotype Ontology	Mammalian Phenotype Ontology	
+mp.db.gz	mp	db.gz	2025-02-05T06:30:23.000Z	146816221	Mammalian Phenotype Ontology	Mammalian Phenotype Ontology	
+mp.owl	mp	owl	2022-06-20T01:58:51.000Z	108836912	Mammalian Phenotype Ontology	Mammalian Phenotype Ontology	
+mpath-relation-graph.tsv.gz	mpath	relation-graph.tsv.gz	2022-06-20T01:58:52.000Z	19453	Mouse pathology ontology	Mouse Pathology Ontology	
+mpath.db	mpath	db	2022-10-17T16:19:17.000Z	3313664	Mouse pathology ontology	Mouse Pathology Ontology	
+mpath.db.gz	mpath	db.gz	2025-02-05T06:31:00.000Z	703270	Mouse pathology ontology	Mouse Pathology Ontology	
+mpath.owl	mpath	owl	2022-06-20T01:58:53.000Z	1434612	Mouse pathology ontology	Mouse Pathology Ontology	
+mpio-relation-graph.tsv.gz	mpio	relation-graph.tsv.gz	2022-06-20T01:58:54.000Z	972	Minimum PDDI Information Ontology	Minimum PDDI Information Ontology	
+mpio.db	mpio	db	2022-10-17T16:19:18.000Z	532480	Minimum PDDI Information Ontology	Minimum PDDI Information Ontology	
+mpio.db.gz	mpio	db.gz	2025-02-05T06:31:03.000Z	114828	Minimum PDDI Information Ontology	Minimum PDDI Information Ontology	
+mpio.owl	mpio	owl	2022-06-20T01:58:56.000Z	154066	Minimum PDDI Information Ontology	Minimum PDDI Information Ontology	
+mro-relation-graph.tsv.gz	mro	relation-graph.tsv.gz	2022-06-20T01:58:57.000Z	1362474	MHC Restriction Ontology	Defen	
+mro.db.gz	mro	db.gz	2025-02-05T06:31:04.000Z	37839414	MHC Restriction Ontology	Defen	
+mro.owl	mro	owl	2022-06-20T01:59:05.000Z	82330974	MHC Restriction Ontology	Defen	
+ms-relation-graph.tsv.gz	ms	relation-graph.tsv.gz	2022-06-20T01:59:17.000Z	6569800	Mass spectrometry ontology	Mass Spectrometry Ontology	
+ms.db.gz	ms	db.gz	2025-02-05T06:31:17.000Z	2749432	Mass spectrometry ontology	Mass Spectrometry Ontology	
+ms.owl	ms	owl	2022-06-20T01:59:29.000Z	35882321	Mass spectrometry ontology	Mass Spectrometry Ontology	
+msio.db	msio	db	2022-10-17T16:20:06.000Z	5320704			https://raw.githubusercontent.com/MSI-Metabolomics-Standards-Initiative/MSIO/master/releases/latest_release/MSIO-merged-reasoned.owl
+msio.db.gz	msio	db.gz	2025-02-05T06:31:20.000Z	1153133			https://raw.githubusercontent.com/MSI-Metabolomics-Standards-Initiative/MSIO/master/releases/latest_release/MSIO-merged-reasoned.owl
+nando.db.gz	nando	db.gz	2025-02-01T21:48:28.000Z	2459025		Nanbyo Disease Ontology	'https://data.bioontology.org/ontologies/NANDO/submissions/15/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb'
+nbo-relation-graph.tsv.gz	nbo	relation-graph.tsv.gz	2022-06-20T01:59:36.000Z	1203784	Neuro Behavior Ontology	Neuro Behavior Ontology	
+nbo.db	nbo	db	2022-10-17T16:20:06.000Z	52895744	Neuro Behavior Ontology	Neuro Behavior Ontology	
+nbo.db.gz	nbo	db.gz	2025-02-05T06:31:21.000Z	17296415	Neuro Behavior Ontology	Neuro Behavior Ontology	
+nbo.owl	nbo	owl	2022-06-20T01:59:49.000Z	8567298	Neuro Behavior Ontology	Neuro Behavior Ontology	
+ncbitaxon-relation-graph.tsv.gz	ncbitaxon	relation-graph.tsv.gz	2022-06-20T01:59:53.000Z	195489956	NCBI organismal classification	National Center for Biotechnology Information (NCBI) Organismal Classification	
+ncbitaxon.db.gz	ncbitaxon	db.gz	2025-02-05T06:31:30.000Z	1985778568	NCBI organismal classification	National Center for Biotechnology Information (NCBI) Organismal Classification	
+ncbitaxon.owl	ncbitaxon	owl	2022-06-20T02:00:23.000Z	1881999296	NCBI organismal classification	National Center for Biotechnology Information (NCBI) Organismal Classification	
+ncit-relation-graph.tsv.gz	ncit	relation-graph.tsv.gz	2022-06-20T02:00:30.000Z	10028185	NCI Thesaurus OBO Edition	National Cancer Institute Thesaurus	http://purl.obolibrary.org/obo/ncit.owl
+ncit.db.gz	ncit	db.gz	2025-02-05T06:31:30.000Z	493315770	NCI Thesaurus OBO Edition	National Cancer Institute Thesaurus	http://purl.obolibrary.org/obo/ncit.owl
+ncit.owl	ncit	owl	2022-06-20T02:01:03.000Z	651435324	NCI Thesaurus OBO Edition	National Cancer Institute Thesaurus	http://purl.obolibrary.org/obo/ncit.owl
+ncro-relation-graph.tsv.gz	ncro	relation-graph.tsv.gz	2022-06-20T02:01:16.000Z	294354	Non-Coding RNA Ontology	Non-coding RNA Ontology	
+ncro.db	ncro	db	2022-10-17T16:21:24.000Z	15265792	Non-Coding RNA Ontology	Non-coding RNA Ontology	
+ncro.db.gz	ncro	db.gz	2025-02-05T06:31:34.000Z	2574435	Non-Coding RNA Ontology	Non-coding RNA Ontology	
+ncro.owl	ncro	owl	2022-06-20T02:01:22.000Z	2555592	Non-Coding RNA Ontology	Non-coding RNA Ontology	
+neo.db.gz	neo	db.gz	2025-02-05T06:31:36.000Z	950579020		Neurologic Examination Ontology	http://purl.obolibrary.org/obo/go/noctua/neo.owl
+nmdc_schema.db.gz	nmdc_schema	db.gz	2025-02-01T21:48:48.000Z	21767			https://raw.githubusercontent.com/microbiomedata/nmdc-schema/main/project/owl/nmdc.owl.ttl
+nomen-relation-graph.tsv.gz	nomen	relation-graph.tsv.gz	2022-06-20T02:01:23.000Z	5301	NOMEN - A nomenclatural ontology for biological names	NOMEN - A nomenclatural ontology for biological names	
+nomen.db	nomen	db	2022-10-17T16:21:28.000Z	712704	NOMEN - A nomenclatural ontology for biological names	NOMEN - A nomenclatural ontology for biological names	
+nomen.db.gz	nomen	db.gz	2025-02-05T06:33:30.000Z	131749	NOMEN - A nomenclatural ontology for biological names	NOMEN - A nomenclatural ontology for biological names	
+nomen.owl	nomen	owl	2022-06-20T02:01:25.000Z	182776	NOMEN - A nomenclatural ontology for biological names	NOMEN - A nomenclatural ontology for biological names	
+oae-relation-graph.tsv.gz	oae	relation-graph.tsv.gz	2022-06-20T02:01:26.000Z	1598567	Ontology of Adverse Events	Ontology of Adverse Events	
+oae.db	oae	db	2022-10-17T16:21:29.000Z	91504640	Ontology of Adverse Events	Ontology of Adverse Events	
+oae.db.gz	oae	db.gz	2025-02-05T06:33:32.000Z	17183365	Ontology of Adverse Events	Ontology of Adverse Events	
+oae.owl	oae	owl	2022-06-20T02:01:39.000Z	9508026	Ontology of Adverse Events	Ontology of Adverse Events	
+oarcs-relation-graph.tsv.gz	oarcs	relation-graph.tsv.gz	2022-06-20T02:01:44.000Z	29967	Ontology of Arthropod Circulatory Systems	Ontology of Arthropod Circulatory Systems	
+oarcs.db	oarcs	db	2022-10-17T16:21:43.000Z	3661824	Ontology of Arthropod Circulatory Systems	Ontology of Arthropod Circulatory Systems	
+oarcs.db.gz	oarcs	db.gz	2025-02-05T06:33:39.000Z	466667	Ontology of Arthropod Circulatory Systems	Ontology of Arthropod Circulatory Systems	
+oarcs.owl	oarcs	owl	2022-06-20T02:01:49.000Z	705882	Ontology of Arthropod Circulatory Systems	Ontology of Arthropod Circulatory Systems	
+oba-relation-graph.tsv.gz	oba	relation-graph.tsv.gz	2022-06-20T02:01:49.000Z	29404856	Ontology of Biological Attributes	Ontology of Biological Attributes	
+oba.db.gz	oba	db.gz	2025-02-05T06:33:40.000Z	376638536	Ontology of Biological Attributes	Ontology of Biological Attributes	
+oba.owl	oba	owl	2022-06-20T02:02:38.000Z	109757263	Ontology of Biological Attributes	Ontology of Biological Attributes	
+obcs-relation-graph.tsv.gz	obcs	relation-graph.tsv.gz	2022-06-20T02:02:56.000Z	65987	Ontology of Biological and Clinical Statistics	Ontology of Biological and Clinical Statistics	
+obcs.db	obcs	db	2022-10-17T16:22:09.000Z	4845568	Ontology of Biological and Clinical Statistics	Ontology of Biological and Clinical Statistics	
+obcs.db.gz	obcs	db.gz	2025-02-05T06:33:57.000Z	1501041	Ontology of Biological and Clinical Statistics	Ontology of Biological and Clinical Statistics	
+obcs.owl	obcs	owl	2022-06-20T02:02:58.000Z	1179480	Ontology of Biological and Clinical Statistics	Ontology of Biological and Clinical Statistics	
+obi-relation-graph.tsv.gz	obi	relation-graph.tsv.gz	2022-06-20T02:03:00.000Z	465647	Ontology for Biomedical Investigations	Ontology for Biomedical Investigations	
+obi.db	obi	db	2022-10-17T16:22:10.000Z	35737600	Ontology for Biomedical Investigations	Ontology for Biomedical Investigations	
+obi.db.gz	obi	db.gz	2025-02-05T06:33:58.000Z	7637827	Ontology for Biomedical Investigations	Ontology for Biomedical Investigations	
+obi.owl	obi	owl	2022-06-20T02:03:08.000Z	8640137	Ontology for Biomedical Investigations	Ontology for Biomedical Investigations	
+obib-relation-graph.tsv.gz	obib	relation-graph.tsv.gz	2022-06-20T02:03:12.000Z	66648	Ontology for Biobanking	Ontology for Biobanking	
+obib.db	obib	db	2022-10-17T16:22:16.000Z	7725056	Ontology for Biobanking	Ontology for Biobanking	
+obib.db.gz	obib	db.gz	2025-02-05T06:34:00.000Z	1618167	Ontology for Biobanking	Ontology for Biobanking	
+obib.owl	obib	owl	2022-06-20T02:03:15.000Z	2756078	Ontology for Biobanking	Ontology for Biobanking	
+obiws.db.gz	obiws	db.gz	2025-02-01T21:49:27.000Z	286354		Bioinformatics Web Service Ontology	https://data.bioontology.org/ontologies/OBIWS/submissions/2/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb
+obo-ontologies.db	obo	ontologies.db	2022-10-17T16:22:18.000Z	1519616			
+obo_prefixes.db	obo_prefixes	db	2022-10-17T16:22:18.000Z	122880			
+oboe-core.db.gz	oboe	core.db.gz	2025-02-01T21:49:28.000Z	33		The Extensible Observation Ontology	
+oboe-standards.db.gz	oboe	standards.db.gz	2025-02-01T21:49:28.000Z	38		The Extensible Observation Ontology	
+occo.db.gz	occo	db.gz	2025-02-05T06:34:02.000Z	3085307	Occupation Ontology	Occupation Ontology	https://raw.githubusercontent.com/Occupation-Ontology/OccO/main/src/ontology/occo-merged.owl
+oeo.db.gz	oeo	db.gz	2025-02-05T06:34:03.000Z	2244824			https://openenergyplatform.org/ontology/oeo/releases/oeo-full.owl
+ogco.db.gz	ogco	db.gz	2025-02-05T06:34:05.000Z	3918363		OriGinal Chemical Ontology	https://raw.githubusercontent.com/cmungall/chemessence/refs/heads/main/src/ontology/components/ogco.owl
+ogg-relation-graph.tsv.gz	ogg	relation-graph.tsv.gz	2022-06-20T02:03:16.000Z	14740930	The Ontology of Genes and Genomes	Ontology of Genes and Genomes	
+ogg.db.gz	ogg	db.gz	2025-02-05T06:34:08.000Z	153008794	The Ontology of Genes and Genomes	Ontology of Genes and Genomes	
+ogg.owl	ogg	owl	2022-06-20T02:04:48.000Z	161502996	The Ontology of Genes and Genomes	Ontology of Genes and Genomes	
+ogms-relation-graph.tsv.gz	ogms	relation-graph.tsv.gz	2022-06-20T02:04:53.000Z	3953	Ontology for General Medical Science	Ontology for General Medical Science	
+ogms.db	ogms	db	2022-10-17T16:23:17.000Z	991232	Ontology for General Medical Science	Ontology for General Medical Science	
+ogms.db.gz	ogms	db.gz	2025-02-05T06:34:53.000Z	207297	Ontology for General Medical Science	Ontology for General Medical Science	
+ogms.owl	ogms	owl	2022-06-20T02:04:54.000Z	298806	Ontology for General Medical Science	Ontology for General Medical Science	
+ogsf-relation-graph.tsv.gz	ogsf	relation-graph.tsv.gz	2022-06-20T02:04:56.000Z	42998	Ontology of Genetic Susceptibility Factor	Ontology for Genetic Susceptibility Factor	
+ogsf.db	ogsf	db	2022-10-17T16:23:18.000Z	3489792	Ontology of Genetic Susceptibility Factor	Ontology for Genetic Susceptibility Factor	
+ogsf.db.gz	ogsf	db.gz	2025-02-05T06:34:57.000Z	657879	Ontology of Genetic Susceptibility Factor	Ontology for Genetic Susceptibility Factor	
+ogsf.owl	ogsf	owl	2022-06-20T02:04:58.000Z	748070	Ontology of Genetic Susceptibility Factor	Ontology for Genetic Susceptibility Factor	
+ohd-relation-graph.tsv.gz	ohd	relation-graph.tsv.gz	2022-06-20T02:04:59.000Z	429540	Oral Health and Disease Ontology	The Oral Health and Disease Ontology	
+ohd.db.gz	ohd	db.gz	2025-02-05T06:34:59.000Z	4772328	Oral Health and Disease Ontology	The Oral Health and Disease Ontology	
+ohd.owl	ohd	owl	2022-06-20T02:05:06.000Z	3143280	Oral Health and Disease Ontology	The Oral Health and Disease Ontology	
+ohmi-relation-graph.tsv.gz	ohmi	relation-graph.tsv.gz	2022-06-20T02:05:07.000Z	216723	Ontology of Host-Microbiome Interactions	Ontology of Host-Microbe Interactions	
+ohmi.db	ohmi	db	2022-10-17T16:23:21.000Z	12918784	Ontology of Host-Microbiome Interactions	Ontology of Host-Microbe Interactions	
+ohmi.db.gz	ohmi	db.gz	2025-02-05T06:35:00.000Z	2476880	Ontology of Host-Microbiome Interactions	Ontology of Host-Microbe Interactions	
+ohmi.owl	ohmi	owl	2022-06-20T02:05:12.000Z	2533276	Ontology of Host-Microbiome Interactions	Ontology of Host-Microbe Interactions	
+ohpi-relation-graph.tsv.gz	ohpi	relation-graph.tsv.gz	2022-06-20T02:05:12.000Z	5310365	Ontology of Host Pathogen Interactions	Ontology of Host-Pathogen Interactions	
+ohpi.db.gz	ohpi	db.gz	2025-02-05T06:35:03.000Z	38851955	Ontology of Host Pathogen Interactions	Ontology of Host-Pathogen Interactions	
+ohpi.owl	ohpi	owl	2022-06-20T02:05:12.000Z	29016104	Ontology of Host Pathogen Interactions	Ontology of Host-Pathogen Interactions	
+olatdv-relation-graph.tsv.gz	olatdv	relation-graph.tsv.gz	2022-06-20T02:05:13.000Z	3338	Medaka Developmental Stages	Medaka Developmental Stages	
+olatdv.db	olatdv	db	2022-10-17T16:23:29.000Z	593920	Medaka Developmental Stages	Medaka Developmental Stages	
+olatdv.db.gz	olatdv	db.gz	2025-02-05T06:35:10.000Z	102983	Medaka Developmental Stages	Medaka Developmental Stages	
+olatdv.owl	olatdv	owl	2022-06-20T02:05:15.000Z	131690	Medaka Developmental Stages	Medaka Developmental Stages	
+omiabis.db	omiabis	db	2022-10-17T16:23:30.000Z	544768	Ontologized MIABIS		
+omim.db.gz	omim	db.gz	2025-02-01T21:49:50.000Z	19077950		Online Mendelian Inheritance in Man	https://github.com/monarch-initiative/mondo-ingest/releases/latest/download/omim.owl
+omit-relation-graph.tsv.gz	omit	relation-graph.tsv.gz	2022-06-20T02:05:16.000Z	6101793	Ontology for MIRNA Target	Ontology for MicroRNA Target	
+omit.db.gz	omit	db.gz	2025-02-05T06:35:14.000Z	50952172	Ontology for MIRNA Target	Ontology for MicroRNA Target	
+omit.owl	omit	owl	2022-06-20T02:05:18.000Z	48062234	Ontology for MIRNA Target	Ontology for MicroRNA Target	
+omo-relation-graph.tsv.gz	omo	relation-graph.tsv.gz	2022-06-20T02:05:26.000Z	657	OBO Metadata Ontology	OBO Metadata Ontology	
+omo.db	omo	db	2022-10-17T16:23:38.000Z	532480	OBO Metadata Ontology	OBO Metadata Ontology	
+omo.db.gz	omo	db.gz	2025-02-05T06:35:15.000Z	77385	OBO Metadata Ontology	OBO Metadata Ontology	
+omo.owl	omo	owl	2022-06-20T02:05:27.000Z	79275	OBO Metadata Ontology	OBO Metadata Ontology	
+omop.db.gz	omop	db.gz	2025-02-05T06:35:16.000Z	2141768729			
+omp-relation-graph.tsv.gz	omp	relation-graph.tsv.gz	2022-06-20T02:05:27.000Z	109442	Ontology of Microbial Phenotypes	Ontology of Microbial Phenotypes	
+omp.db	omp	db	2022-10-17T16:23:39.000Z	11735040	Ontology of Microbial Phenotypes	Ontology of Microbial Phenotypes	
+omp.db.gz	omp	db.gz	2025-02-05T06:35:22.000Z	2156995	Ontology of Microbial Phenotypes	Ontology of Microbial Phenotypes	
+omp.owl	omp	owl	2022-06-20T02:05:28.000Z	4511169	Ontology of Microbial Phenotypes	Ontology of Microbial Phenotypes	
+omrse-relation-graph.tsv.gz	omrse	relation-graph.tsv.gz	2022-06-20T02:05:29.000Z	33672	Ontology for Modeling and Representation of Social Entities	Ontology for Modeling and Representation of Social Entities	
+omrse.db	omrse	db	2022-10-17T16:23:40.000Z	4001792	Ontology for Modeling and Representation of Social Entities	Ontology for Modeling and Representation of Social Entities	
+omrse.db.gz	omrse	db.gz	2025-02-05T06:35:22.000Z	986819	Ontology for Modeling and Representation of Social Entities	Ontology for Modeling and Representation of Social Entities	
+omrse.owl	omrse	owl	2022-06-20T02:05:31.000Z	1236549	Ontology for Modeling and Representation of Social Entities	Ontology for Modeling and Representation of Social Entities	
+one-relation-graph.tsv.gz	one	relation-graph.tsv.gz	2022-06-20T02:05:31.000Z	332145	Ontology for Nutritional Epidemiology	Ontology for Nutritional Epidemiology	
+one.db.gz	one	db.gz	2025-02-05T06:35:25.000Z	5210572	Ontology for Nutritional Epidemiology	Ontology for Nutritional Epidemiology	
+one.owl	one	owl	2022-06-20T02:05:32.000Z	7030218	Ontology for Nutritional Epidemiology	Ontology for Nutritional Epidemiology	
+ons-relation-graph.tsv.gz	ons	relation-graph.tsv.gz	2022-06-20T02:05:33.000Z	863224	Ontology for Nutritional Studies	Ontology for Nutritional Studies	
+ons.db	ons	db	2022-10-17T16:23:42.000Z	50122752	Ontology for Nutritional Studies	Ontology for Nutritional Studies	
+ons.db.gz	ons	db.gz	2025-02-05T06:35:27.000Z	3709183	Ontology for Nutritional Studies	Ontology for Nutritional Studies	
+ons.owl	ons	owl	2022-06-20T02:05:37.000Z	9215150	Ontology for Nutritional Studies	Ontology for Nutritional Studies	
+ontie.db.gz	ontie	db.gz	2025-02-01T21:50:01.000Z	1704675			https://ontology.iedb.org/file/ontie.owl
+ontoavida-relation-graph.tsv.gz	ontoavida	relation-graph.tsv.gz	2022-06-20T02:05:41.000Z	6082	OntoAvida: ontology for Avida digital evolution platform	OntoAvida: ontology for Avida digital evolution platform	
+ontoavida.db	ontoavida	db	2022-10-17T16:23:44.000Z	1298432	OntoAvida: ontology for Avida digital evolution platform	OntoAvida: ontology for Avida digital evolution platform	
+ontoavida.db.gz	ontoavida	db.gz	2025-02-05T06:35:28.000Z	200495	OntoAvida: ontology for Avida digital evolution platform	OntoAvida: ontology for Avida digital evolution platform	
+ontoavida.owl	ontoavida	owl	2022-06-20T02:05:42.000Z	472853	OntoAvida: ontology for Avida digital evolution platform	OntoAvida: ontology for Avida digital evolution platform	
+ontobiotope.db.gz	ontobiotope	db.gz	2025-02-01T21:50:02.000Z	1839706			'https://data.agroportal.lirmm.fr/ontologies/ONTOBIOTOPE/download?apikey=1de0a270-29c5-4dda-b043-7c3580628cd5&download_format=rdf'
+ontoneo-relation-graph.tsv.gz	ontoneo	relation-graph.tsv.gz	2022-06-20T02:05:42.000Z	119625	Obstetric and Neonatal Ontology	Obstetric and Neonatal Ontology	
+ontoneo.db	ontoneo	db	2022-10-17T16:23:45.000Z	9498624	Obstetric and Neonatal Ontology	Obstetric and Neonatal Ontology	
+ontoneo.db.gz	ontoneo	db.gz	2025-02-05T06:35:29.000Z	2032047	Obstetric and Neonatal Ontology	Obstetric and Neonatal Ontology	
+ontoneo.owl	ontoneo	owl	2022-06-20T02:05:43.000Z	2945937	Obstetric and Neonatal Ontology	Obstetric and Neonatal Ontology	
+oostt-relation-graph.tsv.gz	oostt	relation-graph.tsv.gz	2022-06-20T02:05:43.000Z	29998	Ontology of Organizational Structures of Trauma centers and Trauma systems	Ontology of Organizational Structures of Trauma centers and Trauma systems	
+oostt.db	oostt	db	2022-10-17T16:23:46.000Z	3624960	Ontology of Organizational Structures of Trauma centers and Trauma systems	Ontology of Organizational Structures of Trauma centers and Trauma systems	
+oostt.db.gz	oostt	db.gz	2025-02-05T06:35:30.000Z	953597	Ontology of Organizational Structures of Trauma centers and Trauma systems	Ontology of Organizational Structures of Trauma centers and Trauma systems	
+oostt.owl	oostt	owl	2022-06-20T02:05:43.000Z	1158678	Ontology of Organizational Structures of Trauma centers and Trauma systems	Ontology of Organizational Structures of Trauma centers and Trauma systems	
+opl-relation-graph.tsv.gz	opl	relation-graph.tsv.gz	2022-06-20T02:05:43.000Z	38852	Ontology for Parasite LifeCycle	Ontology for Parasite LifeCycle	
+opl.db	opl	db	2022-10-17T16:23:47.000Z	3174400	Ontology for Parasite LifeCycle	Ontology for Parasite LifeCycle	
+opl.db.gz	opl	db.gz	2025-02-05T06:35:30.000Z	780173	Ontology for Parasite LifeCycle	Ontology for Parasite LifeCycle	
+opl.owl	opl	owl	2022-06-20T02:05:44.000Z	965825	Ontology for Parasite LifeCycle	Ontology for Parasite LifeCycle	
+opmi-relation-graph.tsv.gz	opmi	relation-graph.tsv.gz	2022-06-20T02:05:45.000Z	803242	Ontology of Precision Medicine and Investigation	Ontology of Precision Medicine and Investigation	
+opmi.db.gz	opmi	db.gz	2025-02-05T06:35:31.000Z	5328325	Ontology of Precision Medicine and Investigation	Ontology of Precision Medicine and Investigation	
+opmi.owl	opmi	owl	2022-06-20T02:05:45.000Z	4181905	Ontology of Precision Medicine and Investigation	Ontology of Precision Medicine and Investigation	
+orcid.db.gz	orcid	db.gz	2025-02-05T06:35:33.000Z	308823			https://w3id.org/orcidio/orcidio.owl
+ordo.db.gz	ordo	db.gz	2025-02-05T06:35:34.000Z	19529635		Orphanet Rare Disease Ontology	https://github.com/monarch-initiative/mondo-ingest/releases/latest/download/ordo.owl
+ornaseq-relation-graph.tsv.gz	ornaseq	relation-graph.tsv.gz	2022-06-20T02:05:45.000Z	4959	Ontology of RNA Sequencing	Ontology of RNA Sequencing	
+ornaseq.db	ornaseq	db	2022-10-17T16:23:47.000Z	663552	Ontology of RNA Sequencing	Ontology of RNA Sequencing	
+ornaseq.db.gz	ornaseq	db.gz	2025-02-05T06:35:36.000Z	144027	Ontology of RNA Sequencing	Ontology of RNA Sequencing	
+ornaseq.owl	ornaseq	owl	2022-06-20T02:05:45.000Z	166036	Ontology of RNA Sequencing	Ontology of RNA Sequencing	
+ovae-relation-graph.tsv.gz	ovae	relation-graph.tsv.gz	2022-06-20T02:05:46.000Z	540388	Ontology of Vaccine Adverse Events	Ontology of Vaccine Adverse Events	
+ovae.db.gz	ovae	db.gz	2025-02-05T06:35:39.000Z	4833387	Ontology of Vaccine Adverse Events	Ontology of Vaccine Adverse Events	
+ovae.owl	ovae	owl	2022-06-20T02:05:47.000Z	4593976	Ontology of Vaccine Adverse Events	Ontology of Vaccine Adverse Events	
+pathbank.db.gz	pathbank	db.gz	2025-02-01T21:50:06.000Z	32			https://w3id.org/biopragmatics/resources/pathbank/pathbank.obo.gz
+pato-min.owl	pato	min.owl	2022-05-31T15:29:44.000Z	6078387	Phenotype And Trait Ontology	Phenotypic Quality Ontology	
+pato-relation-graph.tsv.gz	pato	relation-graph.tsv.gz	2022-06-20T02:05:48.000Z	5276983	Phenotype And Trait Ontology	Phenotypic Quality Ontology	
+pato.db.db	pato	db.db	2022-10-17T16:23:50.000Z	532480	Phenotype And Trait Ontology	Phenotypic Quality Ontology	
+pato.db.gz	pato	db.gz	2025-02-05T06:35:40.000Z	28238571	Phenotype And Trait Ontology	Phenotypic Quality Ontology	
+pato.owl	pato	owl	2022-06-20T02:05:50.000Z	28431839	Phenotype And Trait Ontology	Phenotypic Quality Ontology	
+pba.db.gz	pba	db.gz	2025-02-05T06:35:41.000Z	439299			https://github.com/brain-bican/primate_brain_atlas_ontology/raw/main/pbao-base.owl
+pcl-relation-graph.tsv.gz	pcl	relation-graph.tsv.gz	2022-06-20T02:05:50.000Z	12888327	Provisional Cell Ontology	Provisional Cell Ontology	http://purl.obolibrary.org/obo/pcl.owl
+pcl.db.gz	pcl	db.gz	2025-02-05T06:35:43.000Z	218074460	Provisional Cell Ontology	Provisional Cell Ontology	http://purl.obolibrary.org/obo/pcl.owl
+pcl.owl	pcl	owl	2022-06-20T02:05:55.000Z	92915378	Provisional Cell Ontology	Provisional Cell Ontology	http://purl.obolibrary.org/obo/pcl.owl
+pco-relation-graph.tsv.gz	pco	relation-graph.tsv.gz	2022-06-20T02:05:57.000Z	10775	Population and Community Ontology	Population and Community Ontology	
+pco.db	pco	db	2022-10-17T16:23:56.000Z	1765376	Population and Community Ontology	Population and Community Ontology	
+pco.db.gz	pco	db.gz	2025-02-05T06:35:50.000Z	377853	Population and Community Ontology	Population and Community Ontology	
+pco.owl	pco	owl	2022-06-20T02:05:59.000Z	595304	Population and Community Ontology	Population and Community Ontology	
+pdro-relation-graph.tsv.gz	pdro	relation-graph.tsv.gz	2022-06-20T02:06:00.000Z	11916	The Prescription of Drugs Ontology	The Prescription of Drugs Ontology	
+pdro.db	pdro	db	2022-10-17T16:23:57.000Z	1794048	The Prescription of Drugs Ontology	The Prescription of Drugs Ontology	
+pdro.db.gz	pdro	db.gz	2025-02-05T06:35:52.000Z	393536	The Prescription of Drugs Ontology	The Prescription of Drugs Ontology	
+pdro.owl	pdro	owl	2022-06-20T02:06:02.000Z	567148	The Prescription of Drugs Ontology	The Prescription of Drugs Ontology	
+pdumdv-relation-graph.tsv.gz	pdumdv	relation-graph.tsv.gz	2022-06-20T02:06:04.000Z	906	Platynereis Developmental Stages	Platynereis Developmental Stages	
+pdumdv.db	pdumdv	db	2022-10-17T16:23:58.000Z	532480	Platynereis Developmental Stages	Platynereis Developmental Stages	
+pdumdv.db.gz	pdumdv	db.gz	2025-02-05T06:35:56.000Z	56959	Platynereis Developmental Stages	Platynereis Developmental Stages	
+pdumdv.owl	pdumdv	owl	2022-06-20T02:06:05.000Z	73234	Platynereis Developmental Stages	Platynereis Developmental Stages	
+peco-relation-graph.tsv.gz	peco	relation-graph.tsv.gz	2022-06-20T02:06:07.000Z	976744	Plant Experimental Conditions Ontology	Plant Experimental Conditions Ontology	
+peco.db	peco	db	2022-10-17T16:24:00.000Z	41930752	Plant Experimental Conditions Ontology	Plant Experimental Conditions Ontology	
+peco.db.gz	peco	db.gz	2025-02-05T06:35:56.000Z	6373073	Plant Experimental Conditions Ontology	Plant Experimental Conditions Ontology	
+peco.owl	peco	owl	2022-06-20T02:06:11.000Z	6981357	Plant Experimental Conditions Ontology	Plant Experimental Conditions Ontology	
+pfam.db.gz	pfam	db.gz	2025-02-01T21:50:14.000Z	4447181			https://w3id.org/biopragmatics/resources/pfam/pfam.owl
+phenio-relation-graph.tsv.gz	phenio	relation-graph.tsv.gz	2022-05-31T15:32:02.000Z	256510586			https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl.gz
+phenio.db.gz	phenio	db.gz	2025-02-05T06:35:58.000Z	3240059836			https://github.com/monarch-initiative/phenio/releases/latest/download/phenio.owl.gz
+phenio_test.db.gz	phenio_test	db.gz	2025-02-05T06:36:26.000Z	23958			https://github.com/monarch-initiative/phenio/releases/latest/download/phenio-test.owl
+phipo-relation-graph.tsv.gz	phipo	relation-graph.tsv.gz	2022-06-20T02:06:12.000Z	869776	Pathogen Host Interaction Phenotype Ontology	Pathogen Host Interaction Phenotype Ontology	
+phipo.db.gz	phipo	db.gz	2025-02-05T06:36:29.000Z	11847181	Pathogen Host Interaction Phenotype Ontology	Pathogen Host Interaction Phenotype Ontology	
+phipo.owl	phipo	owl	2022-06-20T02:06:16.000Z	13889278	Pathogen Host Interaction Phenotype Ontology	Pathogen Host Interaction Phenotype Ontology	
+plana-relation-graph.tsv.gz	plana	relation-graph.tsv.gz	2022-06-20T02:06:20.000Z	150002	planaria-ontology	Planarian Anatomy and Developmental Stage Ontolgoy	
+plana.db	plana	db	2022-10-17T16:24:10.000Z	9658368	planaria-ontology	Planarian Anatomy and Developmental Stage Ontolgoy	
+plana.db.gz	plana	db.gz	2025-02-05T06:36:36.000Z	1950784	planaria-ontology	Planarian Anatomy and Developmental Stage Ontolgoy	
+plana.owl	plana	owl	2022-06-20T02:06:20.000Z	2719628	planaria-ontology	Planarian Anatomy and Developmental Stage Ontolgoy	
+planp-relation-graph.tsv.gz	planp	relation-graph.tsv.gz	2022-06-20T02:06:21.000Z	709281	Planarian Phenotype Ontology	Planarian Phenotype Ontology	
+planp.db	planp	db	2022-10-17T16:24:13.000Z	41021440	Planarian Phenotype Ontology	Planarian Phenotype Ontology	
+planp.db.gz	planp	db.gz	2025-02-05T06:36:38.000Z	7788658	Planarian Phenotype Ontology	Planarian Phenotype Ontology	
+planp.owl	planp	owl	2022-06-20T02:06:21.000Z	10529138	Planarian Phenotype Ontology	Planarian Phenotype Ontology	
+po-relation-graph.tsv.gz	po	relation-graph.tsv.gz	2022-06-20T02:06:23.000Z	397334	Plant Ontology	Plant Ontology	
+po.db.gz	po	db.gz	2025-02-05T06:36:41.000Z	4625396	Plant Ontology	Plant Ontology	
+po.owl	po	owl	2022-06-20T02:06:24.000Z	7155145	Plant Ontology	Plant Ontology	
+poro-relation-graph.tsv.gz	poro	relation-graph.tsv.gz	2022-06-20T02:06:25.000Z	121654	Porifera Ontology	Porifera Ontology	
+poro.db	poro	db	2022-10-17T16:24:17.000Z	5443584	Porifera Ontology	Porifera Ontology	
+poro.db.gz	poro	db.gz	2025-02-05T06:36:41.000Z	1072024	Porifera Ontology	Porifera Ontology	
+poro.owl	poro	owl	2022-06-20T02:06:27.000Z	1133756	Porifera Ontology	Porifera Ontology	
+ppeo.db	ppeo	db	2022-10-17T16:24:18.000Z	655360			http://purl.org/ppeo/PPEO.owl
+ppeo.db.gz	ppeo	db.gz	2025-02-01T21:50:22.000Z	96547			http://purl.org/ppeo/PPEO.owl
+ppo-relation-graph.tsv.gz	ppo	relation-graph.tsv.gz	2022-06-20T02:06:28.000Z	28809	Plant Phenology Ontology	Plant Phenology Ontology	
+ppo.db	ppo	db	2022-10-17T16:24:18.000Z	4341760	Plant Phenology Ontology	Plant Phenology Ontology	
+ppo.db.gz	ppo	db.gz	2025-02-05T06:36:42.000Z	895740	Plant Phenology Ontology	Plant Phenology Ontology	
+ppo.owl	ppo	owl	2022-06-20T02:06:28.000Z	1589925	Plant Phenology Ontology	Plant Phenology Ontology	
+pr-relation-graph.tsv.gz	pr	relation-graph.tsv.gz	2022-06-20T02:06:28.000Z	38863718	PRotein Ontology (PRO)	Protein Ontology	
+pr.db.gz	pr	db.gz	2025-02-05T06:36:43.000Z	746989142	PRotein Ontology (PRO)	Protein Ontology	
+pr.owl	pr	owl	2022-06-20T02:06:29.000Z	1241028150	PRotein Ontology (PRO)	Protein Ontology	
+pride.db.gz	pride	db.gz	2025-02-05T06:36:42.000Z	161534298			https://raw.githubusercontent.com/PRIDE-Archive/pride-ontology/master/pride_cv.obo
+proco.db	proco	db	2022-10-17T16:24:58.000Z	5332992	Process Chemistry Ontology	Process Chemistry Ontology	
+proco.db.gz	proco	db.gz	2025-02-05T06:37:22.000Z	1089119	Process Chemistry Ontology	Process Chemistry Ontology	
+prov.db.gz	prov	db.gz	2025-02-01T21:50:52.000Z	140215			http://www.w3.org/ns/prov.owl
+psdo-relation-graph.tsv.gz	psdo	relation-graph.tsv.gz	2022-06-20T02:06:35.000Z	105243	Performance Summary Display Ontology	Performance Summary Display Ontology	
+psdo.db	psdo	db	2022-10-17T16:24:59.000Z	8785920	Performance Summary Display Ontology	Performance Summary Display Ontology	
+psdo.db.gz	psdo	db.gz	2025-02-05T06:37:26.000Z	2061689	Performance Summary Display Ontology	Performance Summary Display Ontology	
+psdo.owl	psdo	owl	2022-06-20T02:06:41.000Z	2354320	Performance Summary Display Ontology	Performance Summary Display Ontology	
+pso-relation-graph.tsv.gz	pso	relation-graph.tsv.gz	2022-06-20T02:06:42.000Z	477144	Plant Stress Ontology	PatientSafetyOntology	
+pso.db.gz	pso	db.gz	2025-02-05T06:37:29.000Z	7569144	Plant Stress Ontology	PatientSafetyOntology	
+pso.owl	pso	owl	2022-06-20T02:06:55.000Z	4290382	Plant Stress Ontology	PatientSafetyOntology	
+pw-relation-graph.tsv.gz	pw	relation-graph.tsv.gz	2022-06-20T02:06:56.000Z	67320	Pathway ontology	Pathway Ontology	
+pw.db	pw	db	2022-10-17T16:25:06.000Z	11108352	Pathway ontology	Pathway Ontology	
+pw.db.gz	pw	db.gz	2025-02-05T06:37:34.000Z	2256411	Pathway ontology	Pathway Ontology	
+pw.owl	pw	owl	2022-06-20T02:06:59.000Z	4965358	Pathway ontology	Pathway Ontology	
+quantitykind.db.gz	quantitykind	db.gz	2025-02-01T21:50:56.000Z	2379055			http://qudt.org/vocab/quantitykind
+qudtunit.db.gz	qudtunit	db.gz	2025-02-01T21:50:57.000Z	4629520			http://qudt.org/vocab/unit
+rbo-relation-graph.tsv.gz	rbo	relation-graph.tsv.gz	2022-06-20T02:07:01.000Z	3216235	Radiation Biology Ontology	Radiation Biology Ontology	
+rbo.db.gz	rbo	db.gz	2025-02-05T06:37:34.000Z	38971276	Radiation Biology Ontology	Radiation Biology Ontology	
+rbo.owl	rbo	owl	2022-06-20T02:07:28.000Z	11108994	Radiation Biology Ontology	Radiation Biology Ontology	
+reacto.db.gz	reacto	db.gz	2025-02-05T06:37:49.000Z	74792946			http://purl.obolibrary.org/obo/go/extensions/reacto.owl
+reactome-Homo-sapiens.db.gz	reactome	Homo-sapiens.db.gz	2024-05-26T16:01:47.000Z	228616167			
+reactome-hs.db.gz	reactome	hs.db.gz	2025-02-01T21:51:12.000Z	172819909			
+reactome-mm.db.gz	reactome	mm.db.gz	2025-02-01T21:51:28.000Z	101799558			

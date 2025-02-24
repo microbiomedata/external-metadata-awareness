@@ -24,7 +24,7 @@
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   sssom: https://w3id.org/sssom/
 # license: https://w3id.org/sssom/license/unspecified
-# mapping_set_id: https://w3id.org/sssom/mappings/c957cb7f-b147-482b-b11d-efd146adea1c
+# mapping_set_id: https://w3id.org/sssom/mappings/c3273a40-45bc-4133-ba09-41b7d356e06e
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
 APOLLO_SV:00000032	count	skos:closeMatch	nmdc:count	count	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	count
 BFO:0000016	disposition	skos:closeMatch	RO:0000092	disposition of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	disposition
