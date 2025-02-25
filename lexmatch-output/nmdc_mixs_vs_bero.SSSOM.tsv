@@ -1,0 +1,228 @@
+# curie_map:
+#   CHEBI: http://purl.obolibrary.org/obo/CHEBI_
+#   ENVO: http://purl.obolibrary.org/obo/ENVO_
+#   GO: http://purl.obolibrary.org/obo/GO_
+#   NCIT: http://purl.obolibrary.org/obo/NCIT_
+#   PATO: http://purl.obolibrary.org/obo/PATO_
+#   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   obo: http://w3id.org/sssom/unknown_prefix/obo/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/0306003b-77f8-4b14-990d-24c3e35e0cb0
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+mixs:address	address	skos:closeMatch	NCIT:C25407	Address	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	address
+mixs:address	address	skos:closeMatch	NCIT:C86945	Address	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	address
+mixs:address	address	skos:closeMatch	mixs:address	address	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	address
+mixs:alt	alt	skos:closeMatch	CHEBI:37708	altrose	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	alt
+mixs:alt	alt	skos:closeMatch	GO:0004021	L-alanine:2-oxoglutarate aminotransferase activity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	alt
+mixs:alt	alt	skos:closeMatch	mixs:alt	alt	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	alt
+mixs:ammonium	ammonium	skos:closeMatch	CHEBI:28938	ammonium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	ammonium
+mixs:ammonium	ammonium	skos:closeMatch	CHEBI:28938	ammonium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ammonium
+mixs:ammonium	ammonium	skos:closeMatch	mixs:ammonium	ammonium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ammonium
+mixs:basin	basin	skos:closeMatch	ENVO:00000104	undersea feature	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	basin
+mixs:basin	basin	skos:closeMatch	ENVO:00000151	sabkha	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	basin
+mixs:basin	basin	skos:closeMatch	ENVO:00000165	asphalt lake	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	basin
+mixs:basin	basin	skos:closeMatch	ENVO:00000195	sinkhole	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	basin
+mixs:basin	basin	skos:closeMatch	ENVO:00000291	drainage basin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	basin
+mixs:basin	basin	skos:closeMatch	ENVO:00000311	kettle	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	basin
+mixs:basin	basin	skos:closeMatch	ENVO:00002277	back-arc basin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	basin
+mixs:basin	basin	skos:closeMatch	mixs:basin	basin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	basin
+mixs:benzene	benzene	skos:closeMatch	CHEBI:16716	benzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	benzene
+mixs:benzene	benzene	skos:closeMatch	CHEBI:16716	benzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	benzene
+mixs:benzene	benzene	skos:closeMatch	CHEBI:16716	benzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	benzene
+mixs:benzene	benzene	skos:closeMatch	CHEBI:16716	benzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	benzene
+mixs:benzene	benzene	skos:closeMatch	NCIT:C302	Benzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	benzene
+mixs:benzene	benzene	skos:closeMatch	mixs:benzene	benzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	benzene
+mixs:benzene	benzene	skos:closeMatch	obo:MESH_D001554	Benzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	benzene
+mixs:benzene	benzene	skos:closeMatch	obo:MESH_D001554	Benzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	benzene
+mixs:biomass	biomass	skos:closeMatch	ENVO:01000155	organic material	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	biomass
+mixs:biomass	biomass	skos:closeMatch	mixs:biomass	biomass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	biomass
+mixs:biomass	biomass	skos:closeMatch	obo:MESH_D018533	Biomass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	biomass
+mixs:biomass	biomass	skos:closeMatch	obo:MESH_D018533	Biomass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	biomass
+mixs:bishomohopanol	bishomohopanol	skos:closeMatch	CHEBI:68517	17beta(H),21beta(H)-bishomohopanol	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	bishomohopanol
+mixs:bishomohopanol	bishomohopanol	skos:closeMatch	mixs:bishomohopanol	bishomohopanol	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bishomohopanol
+mixs:bromide	bromide	skos:closeMatch	CHEBI:15858	bromide	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	bromide
+mixs:bromide	bromide	skos:closeMatch	CHEBI:15858	bromide	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	bromide
+mixs:bromide	bromide	skos:closeMatch	CHEBI:15858	bromide	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bromide
+mixs:bromide	bromide	skos:closeMatch	mixs:bromide	bromide	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bromide
+mixs:calcium	calcium	skos:closeMatch	CHEBI:22984	calcium atom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	calcium
+mixs:calcium	calcium	skos:closeMatch	CHEBI:22984	calcium atom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	calcium
+mixs:calcium	calcium	skos:closeMatch	CHEBI:22984	calcium atom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	calcium
+mixs:calcium	calcium	skos:closeMatch	CHEBI:29320	calcium(0)	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	calcium
+mixs:calcium	calcium	skos:closeMatch	NCIT:C331	Calcium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	calcium
+mixs:calcium	calcium	skos:closeMatch	mixs:calcium	calcium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	calcium
+mixs:calcium	calcium	skos:closeMatch	obo:MESH_D002118	Calcium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	calcium
+mixs:calcium	calcium	skos:closeMatch	obo:MESH_D002118	Calcium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	calcium
+mixs:chloride	chloride	skos:closeMatch	CHEBI:17996	chloride	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	chloride
+mixs:chloride	chloride	skos:closeMatch	CHEBI:17996	chloride	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	chloride
+mixs:chloride	chloride	skos:closeMatch	CHEBI:17996	chloride	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chloride
+mixs:chloride	chloride	skos:closeMatch	mixs:chloride	chloride	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chloride
+mixs:chlorophyll	chlorophyll	skos:closeMatch	CHEBI:139291	chlorophyll(1-)	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	CHEBI:18230	chlorophyll a	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	CHEBI:18230	chlorophyll a	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	CHEBI:18230	chlorophyll a	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	CHEBI:18230	chlorophyll a	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	CHEBI:28966	chlorophyll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	CHEBI:28966	chlorophyll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	CHEBI:28966	chlorophyll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	CHEBI:58416	chlorophyll a(1-)	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	NCIT:C366	Chlorophyll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	mixs:chlorophyll	chlorophyll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	obo:MESH_D002734	Chlorophyll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	obo:MESH_D002734	Chlorophyll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+mixs:density	density	skos:closeMatch	NCIT:C45781	Density	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	density
+mixs:density	density	skos:closeMatch	PATO:0001019	mass density	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	density
+mixs:density	density	skos:closeMatch	mixs:density	density	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	density
+mixs:depth	depth	skos:closeMatch	NCIT:C25333	Depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+mixs:depth	depth	skos:closeMatch	PATO:0001595	depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+mixs:depth	depth	skos:closeMatch	mixs:depth	depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+mixs:elevator	elevator	skos:closeMatch	mixs:elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:IndoorSpaceEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:MechStrucEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomConnectedEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomTypeEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:emulsions	emulsions	skos:closeMatch	mixs:emulsions	emulsions	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	emulsions
+mixs:emulsions	emulsions	skos:closeMatch	obo:MESH_D004655	Emulsions	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	emulsions
+mixs:emulsions	emulsions	skos:closeMatch	obo:MESH_D004655	Emulsions	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	emulsions
+mixs:escalator	escalator	skos:closeMatch	mixs:escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+mixs:escalator	escalator	skos:closeMatch	nmdc:MechStrucEnum#escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+mixs:ethylbenzene	ethylbenzene	skos:closeMatch	CHEBI:16101	ethylbenzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	ethylbenzene
+mixs:ethylbenzene	ethylbenzene	skos:closeMatch	CHEBI:16101	ethylbenzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	ethylbenzene
+mixs:ethylbenzene	ethylbenzene	skos:closeMatch	CHEBI:16101	ethylbenzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ethylbenzene
+mixs:ethylbenzene	ethylbenzene	skos:closeMatch	NCIT:C173418	Ethylbenzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ethylbenzene
+mixs:ethylbenzene	ethylbenzene	skos:closeMatch	mixs:ethylbenzene	ethylbenzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ethylbenzene
+mixs:field	field	skos:closeMatch	ENVO:00000114	agricultural field	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	field
+mixs:field	field	skos:closeMatch	ENVO:01000352	field	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	field
+mixs:field	field	skos:closeMatch	NCIT:C70773	Field	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	field
+mixs:field	field	skos:closeMatch	mixs:field	field	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	field
+mixs:fire	fire	skos:closeMatch	ENVO:01000786	fire	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fire
+mixs:fire	fire	skos:closeMatch	mixs:fire	fire	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fire
+mixs:flooding	flooding	skos:closeMatch	ENVO:02500002	flooding	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	flooding
+mixs:flooding	flooding	skos:closeMatch	mixs:flooding	flooding	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	flooding
+mixs:fluor	fluor	skos:closeMatch	CHEBI:24061	fluorine atom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	fluor
+mixs:fluor	fluor	skos:closeMatch	CHEBI:24061	fluorine atom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	fluor
+mixs:fluor	fluor	skos:closeMatch	mixs:fluor	fluor	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fluor
+mixs:gravidity	gravidity	skos:closeMatch	mixs:gravidity	gravidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gravidity
+mixs:gravidity	gravidity	skos:closeMatch	obo:MESH_D020073	Gravidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	gravidity
+mixs:gravidity	gravidity	skos:closeMatch	obo:MESH_D020073	Gravidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gravidity
+mixs:gravity	gravity	skos:closeMatch	NCIT:C74992	Gravity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gravity
+mixs:gravity	gravity	skos:closeMatch	mixs:gravity	gravity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gravity
+mixs:humidity	humidity	skos:closeMatch	NCIT:C88206	Humidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	humidity
+mixs:humidity	humidity	skos:closeMatch	PATO:0015009	humidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	humidity
+mixs:humidity	humidity	skos:closeMatch	mixs:humidity	humidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	humidity
+mixs:humidity	humidity	skos:closeMatch	obo:MESH_D006813	Humidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	humidity
+mixs:humidity	humidity	skos:closeMatch	obo:MESH_D006813	Humidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	humidity
+mixs:magnesium	magnesium	skos:closeMatch	CHEBI:25107	magnesium atom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	magnesium
+mixs:magnesium	magnesium	skos:closeMatch	CHEBI:25107	magnesium atom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	magnesium
+mixs:magnesium	magnesium	skos:closeMatch	CHEBI:25107	magnesium atom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	magnesium
+mixs:magnesium	magnesium	skos:closeMatch	NCIT:C29239	Magnesium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	magnesium
+mixs:magnesium	magnesium	skos:closeMatch	mixs:magnesium	magnesium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	magnesium
+mixs:magnesium	magnesium	skos:closeMatch	obo:MESH_D008274	Magnesium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	magnesium
+mixs:magnesium	magnesium	skos:closeMatch	obo:MESH_D008274	Magnesium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	magnesium
+mixs:methane	methane	skos:closeMatch	CHEBI:16183	methane	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	methane
+mixs:methane	methane	skos:closeMatch	CHEBI:16183	methane	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	methane
+mixs:methane	methane	skos:closeMatch	CHEBI:16183	methane	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	methane
+mixs:methane	methane	skos:closeMatch	mixs:methane	methane	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	methane
+mixs:methane	methane	skos:closeMatch	obo:MESH_D008697	Methane	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	methane
+mixs:methane	methane	skos:closeMatch	obo:MESH_D008697	Methane	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	methane
+mixs:nitrate	nitrate	skos:closeMatch	CHEBI:17632	nitrate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	nitrate
+mixs:nitrate	nitrate	skos:closeMatch	CHEBI:17632	nitrate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nitrate
+mixs:nitrate	nitrate	skos:closeMatch	NCIT:C80487	Nitrate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nitrate
+mixs:nitrate	nitrate	skos:closeMatch	mixs:nitrate	nitrate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nitrate
+mixs:nitrite	nitrite	skos:closeMatch	CHEBI:16301	nitrite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	nitrite
+mixs:nitrite	nitrite	skos:closeMatch	CHEBI:16301	nitrite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	nitrite
+mixs:nitrite	nitrite	skos:closeMatch	CHEBI:16301	nitrite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nitrite
+mixs:nitrite	nitrite	skos:closeMatch	NCIT:C120467	Nitrite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nitrite
+mixs:nitrite	nitrite	skos:closeMatch	mixs:nitrite	nitrite	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nitrite
+mixs:nitro	nitro	skos:closeMatch	CHEBI:29785	nitro group	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	nitro
+mixs:nitro	nitro	skos:closeMatch	mixs:nitro	nitro	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nitro
+mixs:oxygen	oxygen	skos:closeMatch	CHEBI:15379	dioxygen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	oxygen
+mixs:oxygen	oxygen	skos:closeMatch	CHEBI:25805	oxygen atom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	oxygen
+mixs:oxygen	oxygen	skos:closeMatch	CHEBI:25805	oxygen atom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	oxygen
+mixs:oxygen	oxygen	skos:closeMatch	NCIT:C722	Oxygen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	oxygen
+mixs:oxygen	oxygen	skos:closeMatch	mixs:oxygen	oxygen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	oxygen
+mixs:oxygen	oxygen	skos:closeMatch	obo:MESH_D010100	Oxygen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	oxygen
+mixs:oxygen	oxygen	skos:closeMatch	obo:MESH_D010100	Oxygen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	oxygen
+mixs:permeability	permeability	skos:closeMatch	NCIT:C71611	Permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permeability
+mixs:permeability	permeability	skos:closeMatch	mixs:permeability	permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permeability
+mixs:permeability	permeability	skos:closeMatch	obo:MESH_D010539	Permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	permeability
+mixs:permeability	permeability	skos:closeMatch	obo:MESH_D010539	Permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permeability
+mixs:ph	ph	skos:closeMatch	CHEBI:30396	phenyl group	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	ph
+mixs:ph	ph	skos:closeMatch	NCIT:C45997	pH	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ph
+mixs:ph	ph	skos:closeMatch	mixs:ph	ph	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ph
+mixs:ph	ph	skos:closeMatch	obo:MESH_D006863	Hydrogen-Ion Concentration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	ph
+mixs:ph	ph	skos:closeMatch	obo:MESH_D006863	Hydrogen-Ion Concentration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	ph
+mixs:phosphate	phosphate	skos:closeMatch	CHEBI:18367	phosphate(3-)	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	phosphate
+mixs:phosphate	phosphate	skos:closeMatch	CHEBI:18367	phosphate(3-)	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	phosphate
+mixs:phosphate	phosphate	skos:closeMatch	CHEBI:26020	phosphate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	phosphate
+mixs:phosphate	phosphate	skos:closeMatch	CHEBI:26078	phosphoric acid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	phosphate
+mixs:phosphate	phosphate	skos:closeMatch	CHEBI:35780	phosphate ion	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	phosphate
+mixs:phosphate	phosphate	skos:closeMatch	CHEBI:43474	hydrogenphosphate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	phosphate
+mixs:phosphate	phosphate	skos:closeMatch	mixs:phosphate	phosphate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	phosphate
+mixs:potassium	potassium	skos:closeMatch	CHEBI:26216	potassium atom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	potassium
+mixs:potassium	potassium	skos:closeMatch	CHEBI:26216	potassium atom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	potassium
+mixs:potassium	potassium	skos:closeMatch	NCIT:C765	Potassium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	potassium
+mixs:potassium	potassium	skos:closeMatch	mixs:potassium	potassium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	potassium
+mixs:potassium	potassium	skos:closeMatch	obo:MESH_D011188	Potassium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	potassium
+mixs:potassium	potassium	skos:closeMatch	obo:MESH_D011188	Potassium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	potassium
+mixs:pressure	pressure	skos:closeMatch	NCIT:C25195	Pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure
+mixs:pressure	pressure	skos:closeMatch	PATO:0001025	pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure
+mixs:pressure	pressure	skos:closeMatch	mixs:pressure	pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure
+mixs:reservoir	reservoir	skos:closeMatch	ENVO:00000025	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	reservoir
+mixs:reservoir	reservoir	skos:closeMatch	ENVO:00000025	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reservoir
+mixs:reservoir	reservoir	skos:closeMatch	mixs:reservoir	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reservoir
+mixs:salinity	salinity	skos:closeMatch	mixs:salinity	salinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	salinity
+mixs:salinity	salinity	skos:closeMatch	obo:MESH_D054712	Salinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	salinity
+mixs:salinity	salinity	skos:closeMatch	obo:MESH_D054712	Salinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	salinity
+mixs:season	season	skos:closeMatch	ENVO:03000096	season	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	season
+mixs:season	season	skos:closeMatch	NCIT:C94729	Season	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	season
+mixs:season	season	skos:closeMatch	mixs:season	season	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	season
+mixs:silicate	silicate	skos:closeMatch	CHEBI:29241	silicate(4-)	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	silicate
+mixs:silicate	silicate	skos:closeMatch	mixs:silicate	silicate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	silicate
+mixs:silicate	silicate	skos:closeMatch	obo:MESH_D017640	Silicates	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	silicate
+mixs:silicate	silicate	skos:closeMatch	obo:MESH_D017640	Silicates	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	silicate
+mixs:sodium	sodium	skos:closeMatch	CHEBI:26708	sodium atom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	sodium
+mixs:sodium	sodium	skos:closeMatch	CHEBI:26708	sodium atom	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	sodium
+mixs:sodium	sodium	skos:closeMatch	NCIT:C830	Sodium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sodium
+mixs:sodium	sodium	skos:closeMatch	mixs:sodium	sodium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sodium
+mixs:sodium	sodium	skos:closeMatch	obo:MESH_D012964	Sodium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	sodium
+mixs:sodium	sodium	skos:closeMatch	obo:MESH_D012964	Sodium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sodium
+mixs:sulfate	sulfate	skos:closeMatch	CHEBI:16189	sulfate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	sulfate
+mixs:sulfate	sulfate	skos:closeMatch	CHEBI:16189	sulfate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	sulfate
+mixs:sulfate	sulfate	skos:closeMatch	CHEBI:16189	sulfate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sulfate
+mixs:sulfate	sulfate	skos:closeMatch	mixs:sulfate	sulfate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sulfate
+mixs:sulfide	sulfide	skos:closeMatch	CHEBI:15138	sulfide(2-)	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	sulfide
+mixs:sulfide	sulfide	skos:closeMatch	CHEBI:16136	hydrogen sulfide	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	sulfide
+mixs:sulfide	sulfide	skos:closeMatch	CHEBI:16385	organic sulfide	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	sulfide
+mixs:sulfide	sulfide	skos:closeMatch	CHEBI:26822	sulfide	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sulfide
+mixs:sulfide	sulfide	skos:closeMatch	mixs:sulfide	sulfide	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sulfide
+mixs:tan	tan	skos:closeMatch	NCIT:C96298	Tan	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tan
+mixs:tan	tan	skos:closeMatch	mixs:tan	tan	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tan
+mixs:tan	tan	skos:closeMatch	obo:MESH_D014216	Triacetoneamine-N-Oxyl	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	tan
+mixs:tan	tan	skos:closeMatch	obo:MESH_D014216	Triacetoneamine-N-Oxyl	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	tan
+mixs:toluene	toluene	skos:closeMatch	CHEBI:17578	toluene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	toluene
+mixs:toluene	toluene	skos:closeMatch	CHEBI:17578	toluene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	toluene
+mixs:toluene	toluene	skos:closeMatch	CHEBI:17578	toluene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	toluene
+mixs:toluene	toluene	skos:closeMatch	CHEBI:17578	toluene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	toluene
+mixs:toluene	toluene	skos:closeMatch	NCIT:C77930	Toluene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	toluene
+mixs:toluene	toluene	skos:closeMatch	mixs:toluene	toluene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	toluene
+mixs:toluene	toluene	skos:closeMatch	obo:MESH_D014050	Toluene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	toluene
+mixs:toluene	toluene	skos:closeMatch	obo:MESH_D014050	Toluene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	toluene
+mixs:viscosity	viscosity	skos:closeMatch	NCIT:C75912	Viscosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	viscosity
+mixs:viscosity	viscosity	skos:closeMatch	PATO:0000992	viscosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	viscosity
+mixs:viscosity	viscosity	skos:closeMatch	mixs:viscosity	viscosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	viscosity
+mixs:viscosity	viscosity	skos:closeMatch	obo:MESH_D014783	Viscosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	viscosity
+mixs:viscosity	viscosity	skos:closeMatch	obo:MESH_D014783	Viscosity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	viscosity
+mixs:weekday	weekday	skos:closeMatch	NCIT:C86936	Weekday	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	weekday
+mixs:weekday	weekday	skos:closeMatch	mixs:weekday	weekday	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	weekday
+mixs:xylene	xylene	skos:closeMatch	CHEBI:27338	xylene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	xylene
+mixs:xylene	xylene	skos:closeMatch	CHEBI:27338	xylene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	xylene
+mixs:xylene	xylene	skos:closeMatch	NCIT:C126304	Xylene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	xylene
+mixs:xylene	xylene	skos:closeMatch	mixs:xylene	xylene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	xylene
