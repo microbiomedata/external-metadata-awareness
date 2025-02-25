@@ -13,30 +13,30 @@ rm -rf lexmatch-errors.txt
 while IFS= read -r ontology; do
   if [ -n "$ontology" ]; then
 
-#    echo "nmdc mixs vs $ontology"
-#    poetry run runoak \
-#      -i nmdc.db \
-#      -a sqlite:obo:$ontology \
-#      lexmatch \
-#      --add-pipeline-step CaseNormalization \
-#      --add-pipeline-step WhitespaceNormalization  \
-#      --add-pipeline-step WordOrderNormalization \
-#      --output lexmatch-output/nmdc_mixs_vs_${ontology}.SSSOM.tsv \
-#      i^mixs @ .all \
-#      2>>lexmatch-errors.txt
-#
-#    echo "nmdc nmdc vs $ontology"
-#    poetry run runoak \
-#      -i nmdc.db \
-#      -a sqlite:obo:$ontology \
-#      lexmatch \
-#      --add-pipeline-step CaseNormalization \
-#      --add-pipeline-step WhitespaceNormalization  \
-#      --add-pipeline-step WordOrderNormalization \
-#      --output lexmatch-output/nmdc_nmdc_vs_${ontology}.SSSOM.tsv \
-#      i^nmdc @ .all \
-#      2>>lexmatch-errors.txt
-#
+    echo "nmdc mixs vs $ontology"
+    poetry run runoak \
+      -i nmdc.db \
+      -a sqlite:obo:$ontology \
+      lexmatch \
+      --add-pipeline-step CaseNormalization \
+      --add-pipeline-step WhitespaceNormalization  \
+      --add-pipeline-step WordOrderNormalization \
+      --output ../lexmatch-output/nmdc_mixs_vs_${ontology}.SSSOM.tsv \
+      i^mixs @ .all \
+      2>>lexmatch-errors.txt
+
+    echo "nmdc nmdc vs $ontology"
+    poetry run runoak \
+      -i nmdc.db \
+      -a sqlite:obo:$ontology \
+      lexmatch \
+      --add-pipeline-step CaseNormalization \
+      --add-pipeline-step WhitespaceNormalization  \
+      --add-pipeline-step WordOrderNormalization \
+      --output ../lexmatch-output/nmdc_nmdc_vs_${ontology}.SSSOM.tsv \
+      i^nmdc @ .all \
+      2>>lexmatch-errors.txt
+
 #    echo "submission schema vs $ontology"
 #    poetry run runoak \
 #      -i nmdc_submission_schema_no_from_schema_no_brackets.db \
@@ -58,7 +58,7 @@ while IFS= read -r ontology; do
       --add-pipeline-step CaseNormalization \
       --add-pipeline-step WhitespaceNormalization  \
       --add-pipeline-step WordOrderNormalization \
-      --output lexmatch-output/env_triad_pvs_vs_${ontology}.SSSOM.tsv \
+      --output ../lexmatch-output/env_triad_pvs_vs_${ontology}.SSSOM.tsv \
       i^nmdc_sub_schema @ .all \
       2>>lexmatch-errors.txt
   fi
