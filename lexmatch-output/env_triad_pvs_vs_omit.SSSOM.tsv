@@ -1,0 +1,140 @@
+# curie_map:
+#   BFO: http://purl.obolibrary.org/obo/BFO_
+#   CHEBI: http://purl.obolibrary.org/obo/CHEBI_
+#   CLO: http://purl.obolibrary.org/obo/CLO_
+#   DOID: http://purl.obolibrary.org/obo/DOID_
+#   ENVO: http://purl.obolibrary.org/obo/ENVO_
+#   GO: http://purl.obolibrary.org/obo/GO_
+#   NCRO: http://purl.obolibrary.org/obo/NCRO_
+#   OMIT: http://purl.obolibrary.org/obo/OMIT_
+#   PO: http://purl.obolibrary.org/obo/PO_
+#   SO: http://purl.obolibrary.org/obo/SO_
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/e948ad8b-552c-4100-9631-569185b45290
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+BFO:0000023	role	skos:closeMatch	OMIT:0013286	Role	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	role
+BFO:0000182	history	skos:closeMatch	OMIT:0007819	History	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	history
+CHEBI:17843	transfer RNA	skos:closeMatch	OMIT:0013250	RNA, Transfer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rna transfer
+CHEBI:18111	ribosomal RNA	skos:closeMatch	OMIT:0013242	RNA, Ribosomal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ribosomal rna
+CHEBI:74035	small nuclear RNA	skos:closeMatch	OMIT:0013249	RNA, Small Nuclear	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nuclear rna small
+CLO:0000031	cell line	skos:closeMatch	OMIT:0003789	Cell Line	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cell line
+DOID:4	disease	skos:closeMatch	OMIT:0005457	Disease	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	disease
+ENVO:00000016	sea	skos:closeMatch	OMIT:0035157	SEA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sea
+ENVO:00001998	soil	skos:closeMatch	OMIT:0013874	Soil	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	soil
+ENVO:00002001	waste water	skos:closeMatch	OMIT:0028035	Waste Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	waste water
+ENVO:00002011	fresh water	skos:closeMatch	OMIT:0006821	Fresh Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fresh water
+ENVO:00002018	sewage	skos:closeMatch	OMIT:0013618	Sewage	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sewage
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00003064	drinking water	skos:closeMatch	OMIT:0027835	Drinking Water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	drinking water
+ENVO:00003096	tap water	skos:closeMatch	ENVO:03600052	water tap	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tap water
+ENVO:00005801	rhizosphere	skos:closeMatch	OMIT:0027202	Rhizosphere	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rhizosphere
+ENVO:01000406	snow	skos:closeMatch	OMIT:0013802	Snow	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	snow
+ENVO:01001004	groundwater	skos:closeMatch	OMIT:0027802	Groundwater	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	groundwater
+GO:0005737	cytoplasm	skos:closeMatch	OMIT:0004877	Cytoplasm	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cytoplasm
+GO:0010467	gene expression	skos:closeMatch	OMIT:0016499	Gene Expression	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	expression gene
+GO:0010468	regulation of gene expression	skos:closeMatch	OMIT:0006984	Gene Expression Regulation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	expression gene regulation
+GO:0016246	RNA interference	skos:closeMatch	OMIT:0022541	RNA Interference	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	interference rna
+GO:0016458	gene silencing	skos:closeMatch	OMIT:0020703	Gene Silencing	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	gene silencing
+GO:0050658	RNA transport	skos:closeMatch	OMIT:0022526	RNA Transport	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rna transport
+NCRO:0000028	pressure	skos:closeMatch	OMIT:0012268	Pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure
+NCRO:0000029	temperature	skos:closeMatch	OMIT:0014553	Temperature	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	temperature
+NCRO:0000105	blood	skos:closeMatch	OMIT:0003129	Blood	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	blood
+NCRO:0000107	cartilage	skos:closeMatch	OMIT:0003689	Cartilage	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cartilage
+NCRO:0000111	ectoderm	skos:closeMatch	OMIT:0005726	Ectoderm	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ectoderm
+NCRO:0000112	endoderm	skos:closeMatch	OMIT:0005950	Endoderm	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	endoderm
+NCRO:0000113	mesoderm	skos:closeMatch	OMIT:0009711	Mesoderm	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mesoderm
+NCRO:0000482	archaea	skos:closeMatch	OMIT:0002493	Archaea	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	archaea
+NCRO:0000483	bacteria	skos:closeMatch	OMIT:0002795	Bacteria	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bacteria
+NCRO:0001671	hsa-mir-93	skos:closeMatch	NCRO:0002215	hsa-mir-939	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0005761
+NCRO:0001720	hsa-mir-369	skos:closeMatch	NCRO:0002633	hsa-mir-3690-2	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0023561
+NCRO:0001835	hsa-mir-211	skos:closeMatch	NCRO:0002583	hsa-mir-2114	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0010633
+NCRO:0001841	hsa-mir-219b	skos:closeMatch	NCRO:0001863	hsa-mir-21	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0017299
+NCRO:0001850	hsa-mir-22	skos:closeMatch	NCRO:0002603	hsa-mir-2278	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0011285
+NCRO:0001858	hsa-mir-28	skos:closeMatch	NCRO:0002427	hsa-mir-2861	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0013006
+NCRO:0001870	hsa-mir-31	skos:closeMatch	NCRO:0002417	hsa-mir-3179-4	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0031510
+NCRO:0001872	hsa-mir-132	skos:closeMatch	NCRO:0002298	hsa-mir-1324	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0006657
+NCRO:0001878	hsa-mir-32	skos:closeMatch	NCRO:0002404	hsa-mir-3202-2	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0014253
+NCRO:0001898	hsa-mir-127	skos:closeMatch	NCRO:0002292	hsa-mir-1273g	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0018003
+NCRO:0001912	hsa-mir-122	skos:closeMatch	NCRO:0002422	hsa-mir-1228	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0006318
+NCRO:0001933	hsa-mir-134	skos:closeMatch	NCRO:0002481	hsa-mir-1343	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0017320
+NCRO:0001938	hsa-mir-126	skos:closeMatch	NCRO:0002544	hsa-mir-1260b	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0014197
+NCRO:0001939	hsa-mir-182	skos:closeMatch	NCRO:0002346	hsa-mir-1827	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0008195
+NCRO:0001942	hsa-mir-197	skos:closeMatch	NCRO:0002445	hsa-mir-1972-2	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0015977
+NCRO:0001979	hsa-mir-431	skos:closeMatch	NCRO:0002452	hsa-mir-4315-2	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0015983
+NCRO:0001984	hsa-mir-448	skos:closeMatch	NCRO:0002634	hsa-mir-4488	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0016849
+NCRO:0001987	hsa-mir-367	skos:closeMatch	NCRO:0002535	hsa-mir-3670-4	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0031514
+NCRO:0002004	hsa-mir-361	skos:closeMatch	NCRO:0002654	hsa-mir-3618	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0016008
+NCRO:0002020	hsa-mir-191	skos:closeMatch	NCRO:0002454	hsa-mir-1915	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0008336
+NCRO:0002031	hsa-mir-362	skos:closeMatch	NCRO:0002480	hsa-mir-3622b	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0016014
+NCRO:0002043	hsa-mir-452	skos:closeMatch	NCRO:0002529	hsa-mir-4524b	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0019114
+NCRO:0002050	hsa-mir-466	skos:closeMatch	NCRO:0002555	hsa-mir-4667	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0017297
+NCRO:0002051	hsa-mir-570	skos:closeMatch	NCRO:0002527	hsa-mir-5701-2	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0019593
+NCRO:0002054	hsa-mir-548b	skos:closeMatch	NCRO:0002124	hsa-mir-548bb	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0029321
+NCRO:0002088	hsa-mir-548x	skos:closeMatch	NCRO:0002106	hsa-mir-548x-2	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0016833
+NCRO:0002139	hsa-mir-671	skos:closeMatch	NCRO:0002653	hsa-mir-6715a	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0022548
+NCRO:0002160	hsa-mir-568	skos:closeMatch	NCRO:0002537	hsa-mir-5681b	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0019293
+NCRO:0002178	hsa-mir-1302-1	skos:closeMatch	NCRO:0002188	hsa-mir-1302-11	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0015980
+NCRO:0002189	hsa-mir-650	skos:closeMatch	NCRO:0002663	hsa-mir-6505	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0022217
+NCRO:0002193	hsa-mir-612	skos:closeMatch	NCRO:0002568	hsa-mir-6129	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0021274
+NCRO:0002206	hsa-mir-651	skos:closeMatch	NCRO:0002643	hsa-mir-6516	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0025513
+NCRO:0002253	hsa-mir-569	skos:closeMatch	NCRO:0002657	hsa-mir-5697	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0019304
+NCRO:0002256	hsa-mir-558	skos:closeMatch	NCRO:0002543	hsa-mir-5583-2	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0019140
+NCRO:0002299	hsa-mir-613	skos:closeMatch	NCRO:0002577	hsa-mir-6134	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0021279
+NCRO:0002383	hsa-mir-764	skos:closeMatch	NCRO:0002668	hsa-mir-7641-2	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0024976
+NCRO:0002432	hsa-mir-608	skos:closeMatch	NCRO:0002596	hsa-mir-6089-2	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	mirbase:mi0023563
+NCRO:0004005	small interfering RNA	skos:closeMatch	OMIT:0022551	RNA, Small Interfering	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	interfering rna small
+OMIT:0000030	PubMed_id	skos:closeMatch	OMIT:0000151	pubmed_id	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pubmed_id
+OMIT:0001815	Air	skos:closeMatch	OMIT:0036296	AIR	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	air
+OMIT:0002443	Apolipoproteins	skos:closeMatch	OMIT:0002444	Apolipoproteins A	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	apolipoproteins
+OMIT:0003605	Carboxypeptidases	skos:closeMatch	OMIT:0023260	Carboxypeptidases A	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	carboxypeptidases
+OMIT:0003923	Chad	skos:closeMatch	OMIT:0030914	CHAD	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chad
+OMIT:0004437	Coma	skos:closeMatch	OMIT:0050785	COMA	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	coma
+OMIT:0004866	Cytochromes	skos:closeMatch	OMIT:0023566	Cytochromes a	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cytochromes
+OMIT:0004917	DDT	skos:closeMatch	OMIT:0031356	DDT	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ddt
+OMIT:0006840	Fruit	skos:closeMatch	PO:0009001	fruit	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fruit
+OMIT:0007273	Graft vs Host Reaction	skos:closeMatch	OMIT:0007932	Host vs Graft Reaction	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	graft host reaction vs
+OMIT:0007674	Hepatitis	skos:closeMatch	OMIT:0007675	Hepatitis A	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hepatitis
+OMIT:0007677	Hepatitis Antibodies	skos:closeMatch	OMIT:0022653	Hepatitis A Antibodies	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	antibodies hepatitis
+OMIT:0011725	Phospholipases	skos:closeMatch	OMIT:0011726	Phospholipases A	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	phospholipases
+OMIT:0011812	Phytochrome	skos:closeMatch	OMIT:0025045	Phytochrome A	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	phytochrome
+OMIT:0012028	Pollen	skos:closeMatch	PO:0025281	pollen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pollen
+OMIT:0012400	Prostaglandins	skos:closeMatch	OMIT:0012401	Prostaglandins A	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	prostaglandins
+OMIT:0012402	Prostaglandins A, Synthetic	skos:closeMatch	OMIT:0012412	Prostaglandins, Synthetic	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	prostaglandins synthetic
+OMIT:0013018	Replicon	skos:closeMatch	SO:0001235	replicon	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	replicon
+OMIT:0013067	Rest	skos:closeMatch	OMIT:0034814	REST	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rest
+OMIT:0014496	Tars	skos:closeMatch	OMIT:0035594	TARS	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tars
+OMIT:0017732	Cyclic AMP Response Element-Binding Protein	skos:closeMatch	OMIT:0024923	Cyclic AMP Response Element-Binding Protein A	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	amp cyclic element-binding protein response
+OMIT:0018725	Mars	skos:closeMatch	OMIT:0033382	MARS	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mars
+OMIT:0019084	Hepatitis Antigens	skos:closeMatch	OMIT:0022652	Hepatitis A Antigens	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	antigens hepatitis
+OMIT:0021289	Rhizome	skos:closeMatch	PO:0004542	rhizome	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rhizome
+OMIT:0023648	Furin	skos:closeMatch	OMIT:0034050	FURIN	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	furin
+OMIT:0024808	Mice	skos:closeMatch	OMIT:0033484	MICE	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mice
+OMIT:0028605	Endothelin Receptor Antagonists	skos:closeMatch	OMIT:0028607	Endothelin A Receptor Antagonists	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	antagonists endothelin receptor
+OMIT:0032511	HBD	skos:closeMatch	OMIT:0062224	HBD	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hbd
+OMIT:0033651	RNR1	skos:closeMatch	OMIT:0034880	RNR1	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rnr1
+OMIT:0033652	RNR2	skos:closeMatch	OMIT:0034881	RNR2	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rnr2
+OMIT:0035181	SFPQ	skos:closeMatch	OMIT:0058159	SFPQ	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sfpq
+OMIT:0035692	TEC	skos:closeMatch	OMIT:0059766	TEC	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tec
+OMIT:0036289	MEMO1	skos:closeMatch	OMIT:0041658	MEMO1	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	memo1
+OMIT:0037827	LRRC37A	skos:closeMatch	OMIT:0083134	LRRC37A	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	lrrc37a
+OMIT:0041806	2-Mar	skos:closeMatch	OMIT:0042651	2-Mar	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	2-mar
+OMIT:0042670	1-Mar	skos:closeMatch	OMIT:0044458	1-Mar	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	1-mar
+OMIT:0043458	LINC00470	skos:closeMatch	OMIT:0078281	LINC00470	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	linc00470
+OMIT:0049361	LINC00475	skos:closeMatch	OMIT:0086106	LINC00475	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	linc00475
+OMIT:0049807	EMX2OS	skos:closeMatch	OMIT:0084785	EMX2OS	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	emx2os
+OMIT:0050213	ZEB1-AS1	skos:closeMatch	OMIT:0073568	ZEB1-AS1	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	zeb1-as1
+OMIT:0050307	MMD2	skos:closeMatch	OMIT:0067655	MMD2	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mmd2
+OMIT:0050532	LINC00677	skos:closeMatch	OMIT:0077021	LINC00677	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	linc00677
+OMIT:0052040	LINC00299	skos:closeMatch	OMIT:0079726	LINC00299	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	linc00299
+OMIT:0055054	LINC00596	skos:closeMatch	OMIT:0075030	LINC00596	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	linc00596
+OMIT:0055057	HCG20	skos:closeMatch	OMIT:0081319	HCG20	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hcg20
+OMIT:0055058	HCG21	skos:closeMatch	OMIT:0074149	HCG21	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hcg21
+OMIT:0062351	LINC00092	skos:closeMatch	OMIT:0082459	LINC00092	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	linc00092
+OMIT:0068072	LSAMP-AS1	skos:closeMatch	OMIT:0071506	LSAMP-AS1	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	lsamp-as1
