@@ -35,6 +35,7 @@ textdistance = "^4.6.3"
 notebook = "^7.3.2"
 rapidfuzz = "^3.12.1"
 pymupdf = "^1.25.3"
+folium = "^0.19.4"
 
 [build-system]
 requires = ["poetry-core"]
