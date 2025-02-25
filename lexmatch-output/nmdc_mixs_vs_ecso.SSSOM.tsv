@@ -1,0 +1,48 @@
+# curie_map:
+#   ECSO: http://w3id.org/sssom/unknown_prefix/ecso/
+#   ENVO: http://purl.obolibrary.org/obo/ENVO_
+#   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/211f1fe3-9b10-4f8b-a6dd-2a1d757e8dd2
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+mixs:alkalinity	alkalinity	skos:closeMatch	ECSO:00000521	Alkalinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	alkalinity
+mixs:alkalinity	alkalinity	skos:closeMatch	mixs:alkalinity	alkalinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	alkalinity
+mixs:biomass	biomass	skos:closeMatch	ECSO:00001114	biomass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	biomass
+mixs:biomass	biomass	skos:closeMatch	ENVO:01000155	organic material	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	biomass
+mixs:biomass	biomass	skos:closeMatch	mixs:biomass	biomass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	biomass
+mixs:chlorophyll	chlorophyll	skos:closeMatch	ECSO:00000562	chlorophyll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	mixs:chlorophyll	chlorophyll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+mixs:depth	depth	skos:closeMatch	ECSO:00000515	depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+mixs:depth	depth	skos:closeMatch	ECSO:00001250	Depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+mixs:depth	depth	skos:closeMatch	mixs:depth	depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+mixs:elevator	elevator	skos:closeMatch	mixs:elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:IndoorSpaceEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:MechStrucEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomConnectedEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomTypeEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:escalator	escalator	skos:closeMatch	mixs:escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+mixs:escalator	escalator	skos:closeMatch	nmdc:MechStrucEnum#escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+mixs:humidity	humidity	skos:closeMatch	ECSO:00000528	Near_Surface_Specific_Humidity_MOV	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	humidity
+mixs:humidity	humidity	skos:closeMatch	ECSO:00001163	Air Moisture Percentage	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	humidity
+mixs:humidity	humidity	skos:closeMatch	mixs:humidity	humidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	humidity
+mixs:ph	ph	skos:closeMatch	ECSO:00001159	Water pH	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	ph
+mixs:ph	ph	skos:closeMatch	ECSO:00001159	Water pH	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	ph
+mixs:ph	ph	skos:closeMatch	ECSO:00001645	pH	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ph
+mixs:ph	ph	skos:closeMatch	mixs:ph	ph	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ph
+mixs:salinity	salinity	skos:closeMatch	ECSO:00001164	Water Salinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	salinity
+mixs:salinity	salinity	skos:closeMatch	ECSO:00001164	Water Salinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	salinity
+mixs:salinity	salinity	skos:closeMatch	mixs:salinity	salinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	salinity
+mixs:season	season	skos:closeMatch	ECSO:00002366	season	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	season
+mixs:season	season	skos:closeMatch	mixs:season	season	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	season
+mixs:temp	temp	skos:closeMatch	ECSO:00001104	temperature_measurementType	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	temp
+mixs:temp	temp	skos:closeMatch	mixs:temp	temp	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	temp
+mixs:turbidity	turbidity	skos:closeMatch	ECSO:00002359	turbidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	turbidity
+mixs:turbidity	turbidity	skos:closeMatch	mixs:turbidity	turbidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	turbidity
