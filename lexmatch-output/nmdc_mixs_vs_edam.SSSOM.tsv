@@ -1,0 +1,25 @@
+# curie_map:
+#   EDAM: http://w3id.org/sssom/unknown_prefix/edam/
+#   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/58607aa8-0a78-4b1e-b39f-520763731df0
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+mixs:elevator	elevator	skos:closeMatch	mixs:elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:IndoorSpaceEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:MechStrucEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomConnectedEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomTypeEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:escalator	escalator	skos:closeMatch	mixs:escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+mixs:escalator	escalator	skos:closeMatch	nmdc:MechStrucEnum#escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+mixs:ph	ph	skos:closeMatch	EDAM:format_1997	PHYLIP format	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	ph
+mixs:ph	ph	skos:closeMatch	mixs:ph	ph	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ph
+mixs:salinity	salinity	skos:closeMatch	EDAM:data_3724	Cultivation parameter	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	salinity
+mixs:salinity	salinity	skos:closeMatch	mixs:salinity	salinity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	salinity

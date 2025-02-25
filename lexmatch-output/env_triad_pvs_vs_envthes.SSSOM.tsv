@@ -1,0 +1,279 @@
+# curie_map:
+#   ENVO: http://purl.obolibrary.org/obo/ENVO_
+#   PO: http://purl.obolibrary.org/obo/PO_
+#   dbpedia: http://w3id.org/sssom/unknown_prefix/dbpedia/
+#   envthes: http://w3id.org/sssom/unknown_prefix/envthes/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/47a88d4d-4b14-4563-9446-b77962b539ff
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+ENVO:00000015	ocean	skos:closeMatch	envthes:21811	ocean	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00000015
+ENVO:00000015	ocean	skos:closeMatch	envthes:21811	ocean	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ocean
+ENVO:00000015	ocean	skos:closeMatch	envthes:21811	ocean	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21811
+ENVO:00000015	ocean	skos:closeMatch	envthes:21811	ocean	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21811
+ENVO:00000015	ocean	skos:closeMatch	envthes:21811	ocean	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21811
+ENVO:00000015	ocean	skos:closeMatch	envthes:21811	ocean	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21811
+ENVO:00000020	lake	skos:closeMatch	envthes:20915	lake	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00000020
+ENVO:00000020	lake	skos:closeMatch	envthes:20915	lake	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	lake
+ENVO:00000020	lake	skos:closeMatch	envthes:20915	lake	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20915
+ENVO:00000020	lake	skos:closeMatch	envthes:20915	lake	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20915
+ENVO:00000020	lake	skos:closeMatch	envthes:20915	lake	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20915
+ENVO:00000020	lake	skos:closeMatch	envthes:20915	lake	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20915
+ENVO:00000022	river	skos:closeMatch	envthes:20916	river	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00000022
+ENVO:00000022	river	skos:closeMatch	envthes:20916	river	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	river
+ENVO:00000022	river	skos:closeMatch	envthes:20916	river	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20916
+ENVO:00000022	river	skos:closeMatch	envthes:20916	river	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20916
+ENVO:00000022	river	skos:closeMatch	envthes:20916	river	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20916
+ENVO:00000022	river	skos:closeMatch	envthes:20916	river	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20916
+ENVO:00000022	river	skos:closeMatch	envthes:20916	river	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20916
+ENVO:00000023	stream	skos:closeMatch	envthes:21796	stream	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00000023
+ENVO:00000023	stream	skos:closeMatch	envthes:21796	stream	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stream
+ENVO:00000023	stream	skos:closeMatch	envthes:21796	stream	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21796
+ENVO:00000023	stream	skos:closeMatch	envthes:21796	stream	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21796
+ENVO:00000023	stream	skos:closeMatch	envthes:21796	stream	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21796
+ENVO:00000023	stream	skos:closeMatch	envthes:21796	stream	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21796
+ENVO:00000023	stream	skos:closeMatch	envthes:21796	stream	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21796
+ENVO:00000033	pond	skos:closeMatch	envthes:21792	Weiher	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00000033
+ENVO:00000033	pond	skos:closeMatch	envthes:21792	Weiher	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21792
+ENVO:00000033	pond	skos:closeMatch	envthes:21792	Weiher	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21792
+ENVO:00000033	pond	skos:closeMatch	envthes:21792	Weiher	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21792
+ENVO:00000033	pond	skos:closeMatch	envthes:21792	Weiher	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21792
+ENVO:00000035	marsh	skos:closeMatch	envthes:21801	marsh	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00000035
+ENVO:00000035	marsh	skos:closeMatch	envthes:21801	marsh	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	marsh
+ENVO:00000035	marsh	skos:closeMatch	envthes:21801	marsh	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21801
+ENVO:00000035	marsh	skos:closeMatch	envthes:21801	marsh	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21801
+ENVO:00000035	marsh	skos:closeMatch	envthes:21801	marsh	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21801
+ENVO:00000035	marsh	skos:closeMatch	envthes:21801	marsh	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21801
+ENVO:00000035	marsh	skos:closeMatch	envthes:21801	marsh	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21801
+ENVO:00000044	peatland	skos:closeMatch	envthes:21803	peatland	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00000044
+ENVO:00000044	peatland	skos:closeMatch	envthes:21803	peatland	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	peatland
+ENVO:00000044	peatland	skos:closeMatch	envthes:21803	peatland	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21803
+ENVO:00000044	peatland	skos:closeMatch	envthes:21803	peatland	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21803
+ENVO:00000044	peatland	skos:closeMatch	envthes:21803	peatland	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21803
+ENVO:00000044	peatland	skos:closeMatch	envthes:21803	peatland	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21803
+ENVO:00000044	peatland	skos:closeMatch	envthes:21889	peat bog	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00000044
+ENVO:00000044	peatland	skos:closeMatch	envthes:21889	peat bog	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21889
+ENVO:00000045	estuary	skos:closeMatch	envthes:21807	estuary	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00000045
+ENVO:00000045	estuary	skos:closeMatch	envthes:21807	estuary	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	estuary
+ENVO:00000045	estuary	skos:closeMatch	envthes:21807	estuary	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21807
+ENVO:00000045	estuary	skos:closeMatch	envthes:21807	estuary	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21807
+ENVO:00000045	estuary	skos:closeMatch	envthes:21807	estuary	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21807
+ENVO:00000045	estuary	skos:closeMatch	envthes:21807	estuary	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21807
+ENVO:00000054	saline marsh	skos:closeMatch	envthes:21802	salt marsh	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00000054
+ENVO:00000054	saline marsh	skos:closeMatch	envthes:21802	salt marsh	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21802
+ENVO:00000054	saline marsh	skos:closeMatch	envthes:21802	salt marsh	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21802
+ENVO:00000054	saline marsh	skos:closeMatch	envthes:21802	salt marsh	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21802
+ENVO:00000150	coral reef	skos:closeMatch	envthes:21805	coral reef	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00000150
+ENVO:00000150	coral reef	skos:closeMatch	envthes:21805	coral reef	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	coral reef
+ENVO:00000150	coral reef	skos:closeMatch	envthes:21805	coral reef	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21805
+ENVO:00000150	coral reef	skos:closeMatch	envthes:21805	coral reef	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21805
+ENVO:00000150	coral reef	skos:closeMatch	envthes:21805	coral reef	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21805
+ENVO:00000150	coral reef	skos:closeMatch	envthes:21805	coral reef	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21805
+ENVO:00000150	coral reef	skos:closeMatch	envthes:21805	coral reef	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21805
+ENVO:00000170	dune	skos:closeMatch	envthes:21885	dune	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00000170
+ENVO:00000170	dune	skos:closeMatch	envthes:21885	dune	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dune
+ENVO:00000170	dune	skos:closeMatch	envthes:21885	dune	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21885
+ENVO:00000170	dune	skos:closeMatch	envthes:21885	dune	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21885
+ENVO:00000170	dune	skos:closeMatch	envthes:21885	dune	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21885
+ENVO:00000170	dune	skos:closeMatch	envthes:21885	dune	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21885
+ENVO:00000170	dune	skos:closeMatch	envthes:21885	dune	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21885
+ENVO:00000223	continental shelf	skos:closeMatch	envthes:21816	continental shelf	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00000223
+ENVO:00000223	continental shelf	skos:closeMatch	envthes:21816	continental shelf	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	continental shelf
+ENVO:00000223	continental shelf	skos:closeMatch	envthes:21816	continental shelf	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21816
+ENVO:00000223	continental shelf	skos:closeMatch	envthes:21816	continental shelf	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21816
+ENVO:00000255	flood plain	skos:closeMatch	envthes:21799	floodplain	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00000255
+ENVO:00000255	flood plain	skos:closeMatch	envthes:21799	floodplain	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21799
+ENVO:00000255	flood plain	skos:closeMatch	envthes:21799	floodplain	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21799
+ENVO:00000255	flood plain	skos:closeMatch	envthes:21799	floodplain	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21799
+ENVO:00000255	flood plain	skos:closeMatch	envthes:21799	floodplain	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21799
+ENVO:00000291	drainage basin	skos:closeMatch	envthes:10092	(surinkimo) baseinas	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00000291
+ENVO:00000291	drainage basin	skos:closeMatch	envthes:10092	(surinkimo) baseinas	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:10092
+ENVO:00000291	drainage basin	skos:closeMatch	envthes:10092	(surinkimo) baseinas	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:10092
+ENVO:00000292	watershed	skos:closeMatch	envthes:20534	watershed	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00000292
+ENVO:00000292	watershed	skos:closeMatch	envthes:20534	watershed	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	watershed
+ENVO:00000292	watershed	skos:closeMatch	envthes:20534	watershed	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20534
+ENVO:00000292	watershed	skos:closeMatch	envthes:20534	watershed	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20534
+ENVO:00000292	watershed	skos:closeMatch	envthes:20534	watershed	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20534
+ENVO:00001998	soil	skos:closeMatch	envthes:24	Boden	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00001998
+ENVO:00001998	soil	skos:closeMatch	envthes:24	Boden	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:24
+ENVO:00001998	soil	skos:closeMatch	envthes:24	Boden	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:24
+ENVO:00001998	soil	skos:closeMatch	envthes:24	Boden	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:24
+ENVO:00002006	liquid water	skos:closeMatch	envthes:20538	water	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00002006
+ENVO:00002006	liquid water	skos:closeMatch	envthes:20538	water	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20538
+ENVO:00002006	liquid water	skos:closeMatch	envthes:20538	water	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20538
+ENVO:00002006	liquid water	skos:closeMatch	envthes:20538	water	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20538
+ENVO:00002006	liquid water	skos:closeMatch	envthes:20538	water	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20538
+ENVO:00002006	liquid water	skos:closeMatch	envthes:20538	water	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20538
+ENVO:00002007	sediment	skos:closeMatch	envthes:20899	sediment	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sediment
+ENVO:00002019	brackish water	skos:closeMatch	envthes:20539	Brackwasser	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00002019
+ENVO:00002019	brackish water	skos:closeMatch	envthes:20539	Brackwasser	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20539
+ENVO:00002019	brackish water	skos:closeMatch	envthes:20539	Brackwasser	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20539
+ENVO:00002019	brackish water	skos:closeMatch	envthes:20539	Brackwasser	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20539
+ENVO:00002019	brackish water	skos:closeMatch	envthes:20539	Brackwasser	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20539
+ENVO:00002019	brackish water	skos:closeMatch	envthes:20539	Brackwasser	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20539
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	envthes:30264	surface water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002149	sea water	skos:closeMatch	envthes:20921	seawater	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00002149
+ENVO:00002149	sea water	skos:closeMatch	envthes:20921	seawater	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20921
+ENVO:00002149	sea water	skos:closeMatch	envthes:20921	seawater	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20921
+ENVO:00002149	sea water	skos:closeMatch	envthes:20921	seawater	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20921
+ENVO:00002150	coastal sea water	skos:closeMatch	envthes:21814	coastal water	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00002150
+ENVO:00002150	coastal sea water	skos:closeMatch	envthes:21814	coastal water	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21814
+ENVO:00002229	arenosol	skos:closeMatch	envthes:21917	sandy soil	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00002229
+ENVO:00002229	arenosol	skos:closeMatch	envthes:21917	sandy soil	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21917
+ENVO:00002261	forest soil	skos:closeMatch	envthes:20913	forest soil	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00002261
+ENVO:00002261	forest soil	skos:closeMatch	envthes:20913	forest soil	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	forest soil
+ENVO:00002261	forest soil	skos:closeMatch	envthes:20913	forest soil	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20913
+ENVO:00003096	tap water	skos:closeMatch	ENVO:03600052	water tap	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tap water
+ENVO:00005778	tropical soil	skos:closeMatch	envthes:21918	tropical soil	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00005778
+ENVO:00005778	tropical soil	skos:closeMatch	envthes:21918	tropical soil	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	soil tropical
+ENVO:00005778	tropical soil	skos:closeMatch	envthes:21918	tropical soil	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21918
+ENVO:00005801	rhizosphere	skos:closeMatch	envthes:21924	rhizosphere	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:00005801
+ENVO:00005801	rhizosphere	skos:closeMatch	envthes:21924	rhizosphere	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rhizosphere
+ENVO:00005801	rhizosphere	skos:closeMatch	envthes:21924	rhizosphere	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21924
+ENVO:00005801	rhizosphere	skos:closeMatch	envthes:21924	rhizosphere	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21924
+ENVO:00005801	rhizosphere	skos:closeMatch	envthes:21924	rhizosphere	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21924
+ENVO:00005801	rhizosphere	skos:closeMatch	envthes:21924	rhizosphere	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21924
+ENVO:00005801	rhizosphere	skos:closeMatch	envthes:21924	rhizosphere	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21924
+ENVO:01000336	shrub layer	skos:closeMatch	envthes:36	shrub layer	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:01000336
+ENVO:01000336	shrub layer	skos:closeMatch	envthes:36	shrub layer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	layer shrub
+ENVO:01000336	shrub layer	skos:closeMatch	envthes:36	shrub layer	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:36
+ENVO:01000406	snow	skos:closeMatch	envthes:20923	Schnee	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:01000406
+ENVO:01000406	snow	skos:closeMatch	envthes:20923	Schnee	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20923
+ENVO:01000406	snow	skos:closeMatch	envthes:20923	Schnee	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20923
+ENVO:01000406	snow	skos:closeMatch	envthes:20923	Schnee	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20923
+ENVO:01000406	snow	skos:closeMatch	envthes:20923	Schnee	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20923
+ENVO:01000406	snow	skos:closeMatch	envthes:20923	Schnee	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20923
+ENVO:01000406	snow	skos:closeMatch	envthes:20923	Schnee	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20923
+ENVO:01000599	river water	skos:closeMatch	envthes:30284	river water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	river water
+ENVO:01001191	water surface	skos:closeMatch	envthes:30264	surface water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:01001357	desert	skos:closeMatch	envthes:21817	desert	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	envo:01001357
+ENVO:01001357	desert	skos:closeMatch	envthes:21817	desert	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	desert
+ENVO:01001357	desert	skos:closeMatch	envthes:21817	desert	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21817
+ENVO:01001357	desert	skos:closeMatch	envthes:21817	desert	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21817
+ENVO:01001357	desert	skos:closeMatch	envthes:21817	desert	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21817
+ENVO:01001357	desert	skos:closeMatch	envthes:21817	desert	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21817
+ENVO:01001357	desert	skos:closeMatch	envthes:21817	desert	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:21817
+ENVO:01001582	forest floor	skos:closeMatch	envthes:20912	forest floor	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	floor forest
+ENVO:01001803	tropical forest	skos:closeMatch	envthes:21850	tropical forest	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	forest tropical
+PO:0004518	bark	skos:closeMatch	envthes:20573	bark	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bark
+PO:0004542	rhizome	skos:closeMatch	envthes:10108	rhizome	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	rhizome
+PO:0008037	seedling	skos:closeMatch	envthes:20698	seedling	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	seedling
+PO:0009001	fruit	skos:closeMatch	envthes:20576	fruit	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:exactMatch	po:0009001
+PO:0009001	fruit	skos:closeMatch	envthes:20576	fruit	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fruit
+PO:0009001	fruit	skos:closeMatch	envthes:20576	fruit	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch-INVERSE	rdf:ID	envthes:20576
+PO:0009005	root	skos:closeMatch	envthes:20579	root	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	root
+PO:0009010	seed	skos:closeMatch	envthes:20583	seed	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	seed
+PO:0009046	flower	skos:closeMatch	envthes:20574	flower	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	flower
+PO:0009047	stem	skos:closeMatch	envthes:20584	stem	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	stem
+PO:0025034	leaf	skos:closeMatch	envthes:20577	leaf	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	leaf
+PO:0025281	pollen	skos:closeMatch	envthes:20578	Pollen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pollen
+dbpedia:resource.Bryophytes		skos:closeMatch	dbpedia:resource.Moss		semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs	envthes:20691
+dbpedia:resource.Bryophytes		skos:closeMatch	dbpedia:resource.Moss		semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs	envthes:usltercv_354
+dbpedia:resource.Bryophytes		skos:closeMatch	dbpedia:resource.Mosses		semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs	envthes:20691
+dbpedia:resource.Bryophytes		skos:closeMatch	dbpedia:resource.Mosses		semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs	envthes:usltercv_354
+dbpedia:resource.Bryophytes		skos:closeMatch	envthes:20691	mosses	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20691
+dbpedia:resource.Bryophytes		skos:closeMatch	envthes:20691	mosses	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20691
+dbpedia:resource.Bryophytes		skos:closeMatch	envthes:20691	mosses	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.bryophytes
+dbpedia:resource.Bryophytes		skos:closeMatch	envthes:20691	mosses	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.bryophytes
+dbpedia:resource.Carbon_Dioxide		skos:closeMatch	envthes:20808	Kohlendioxid	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20808
+dbpedia:resource.Carbon_Dioxide		skos:closeMatch	envthes:20808	Kohlendioxid	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20808
+dbpedia:resource.Carbon_Dioxide		skos:closeMatch	envthes:20808	Kohlendioxid	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20808
+dbpedia:resource.Carbon_Dioxide		skos:closeMatch	envthes:20808	Kohlendioxid	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20808
+dbpedia:resource.Carbon_Dioxide		skos:closeMatch	envthes:20808	Kohlendioxid	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20808
+dbpedia:resource.Carbon_Dioxide		skos:closeMatch	envthes:20808	Kohlendioxid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.carbon_dioxide
+dbpedia:resource.Carbon_Dioxide		skos:closeMatch	envthes:20808	Kohlendioxid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.carbon_dioxide
+dbpedia:resource.Chloride		skos:closeMatch	envthes:20820	Chlorid	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20820
+dbpedia:resource.Chloride		skos:closeMatch	envthes:20820	Chlorid	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20820
+dbpedia:resource.Chloride		skos:closeMatch	envthes:20820	Chlorid	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20820
+dbpedia:resource.Chloride		skos:closeMatch	envthes:20820	Chlorid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.chloride
+dbpedia:resource.Chloride		skos:closeMatch	envthes:20820	Chlorid	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.chloride
+dbpedia:resource.Chlorine		skos:closeMatch	envthes:20819	Chlor	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20819
+dbpedia:resource.Chlorine		skos:closeMatch	envthes:20819	Chlor	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20819
+dbpedia:resource.Chlorine		skos:closeMatch	envthes:20819	Chlor	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20819
+dbpedia:resource.Chlorine		skos:closeMatch	envthes:20819	Chlor	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20819
+dbpedia:resource.Chlorine		skos:closeMatch	envthes:20819	Chlor	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20819
+dbpedia:resource.Chlorine		skos:closeMatch	envthes:20819	Chlor	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20819
+dbpedia:resource.Chlorine		skos:closeMatch	envthes:20819	Chlor	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.chlorine
+dbpedia:resource.Chlorine		skos:closeMatch	envthes:20819	Chlor	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.chlorine
+dbpedia:resource.Moss		skos:closeMatch	dbpedia:resource.Mosses		semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs	envthes:20691
+dbpedia:resource.Moss		skos:closeMatch	dbpedia:resource.Mosses		semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs	envthes:usltercv_354
+dbpedia:resource.Moss		skos:closeMatch	envthes:20691	mosses	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20691
+dbpedia:resource.Moss		skos:closeMatch	envthes:20691	mosses	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20691
+dbpedia:resource.Moss		skos:closeMatch	envthes:20691	mosses	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.moss
+dbpedia:resource.Moss		skos:closeMatch	envthes:20691	mosses	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.moss
+dbpedia:resource.Mosses		skos:closeMatch	envthes:20691	mosses	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20691
+dbpedia:resource.Mosses		skos:closeMatch	envthes:20691	mosses	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20691
+dbpedia:resource.Mosses		skos:closeMatch	envthes:20691	mosses	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.mosses
+dbpedia:resource.Mosses		skos:closeMatch	envthes:20691	mosses	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.mosses
+dbpedia:resource.Nitrogen-15		skos:closeMatch	dbpedia:resource.Nitrogen_15		semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs	envthes:20885
+dbpedia:resource.Nitrogen-15		skos:closeMatch	dbpedia:resource.Nitrogen_15		semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs	envthes:usltercv_379
+dbpedia:resource.Nitrogen-15		skos:closeMatch	envthes:20885	nitrogen-15	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20885
+dbpedia:resource.Nitrogen-15		skos:closeMatch	envthes:20885	nitrogen-15	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20885
+dbpedia:resource.Nitrogen-15		skos:closeMatch	envthes:20885	nitrogen-15	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20885
+dbpedia:resource.Nitrogen-15		skos:closeMatch	envthes:20885	nitrogen-15	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.nitrogen-15
+dbpedia:resource.Nitrogen-15		skos:closeMatch	envthes:20885	nitrogen-15	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.nitrogen-15
+dbpedia:resource.Nitrogen_15		skos:closeMatch	envthes:20885	nitrogen-15	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20885
+dbpedia:resource.Nitrogen_15		skos:closeMatch	envthes:20885	nitrogen-15	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20885
+dbpedia:resource.Nitrogen_15		skos:closeMatch	envthes:20885	nitrogen-15	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20885
+dbpedia:resource.Nitrogen_15		skos:closeMatch	envthes:20885	nitrogen-15	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.nitrogen_15
+dbpedia:resource.Nitrogen_15		skos:closeMatch	envthes:20885	nitrogen-15	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.nitrogen_15
+dbpedia:resource.Ozone		skos:closeMatch	envthes:20853	Ozon	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20853
+dbpedia:resource.Ozone		skos:closeMatch	envthes:20853	Ozon	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20853
+dbpedia:resource.Ozone		skos:closeMatch	envthes:20853	Ozon	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20853
+dbpedia:resource.Ozone		skos:closeMatch	envthes:20853	Ozon	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20853
+dbpedia:resource.Ozone		skos:closeMatch	envthes:20853	Ozon	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20853
+dbpedia:resource.Ozone		skos:closeMatch	envthes:20853	Ozon	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:20853
+dbpedia:resource.Ozone		skos:closeMatch	envthes:20853	Ozon	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.ozone
+dbpedia:resource.Ozone		skos:closeMatch	envthes:20853	Ozon	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.ozone
+dbpedia:resource.Reflectance		skos:closeMatch	dbpedia:resource.Reflectivity		semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs	envthes:21580
+dbpedia:resource.Reflectance		skos:closeMatch	dbpedia:resource.Reflectivity		semapv:LexicalMatching	oaklib	0.5	owl:sameAs	owl:sameAs	envthes:usltercv_460
+dbpedia:resource.Reflectance		skos:closeMatch	envthes:21580	reflectance	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:21580
+dbpedia:resource.Reflectance		skos:closeMatch	envthes:21580	reflectance	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:21580
+dbpedia:resource.Reflectance		skos:closeMatch	envthes:21580	reflectance	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:21580
+dbpedia:resource.Reflectance		skos:closeMatch	envthes:21580	reflectance	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.reflectance
+dbpedia:resource.Reflectance		skos:closeMatch	envthes:21580	reflectance	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.reflectance
+dbpedia:resource.Reflectivity		skos:closeMatch	envthes:21580	reflectance	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:21580
+dbpedia:resource.Reflectivity		skos:closeMatch	envthes:21580	reflectance	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:21580
+dbpedia:resource.Reflectivity		skos:closeMatch	envthes:21580	reflectance	semapv:LexicalMatching	oaklib	0.5	owl:sameAs	rdf:ID	envthes:21580
+dbpedia:resource.Reflectivity		skos:closeMatch	envthes:21580	reflectance	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.reflectivity
+dbpedia:resource.Reflectivity		skos:closeMatch	envthes:21580	reflectance	semapv:LexicalMatching	oaklib	0.5	rdf:ID	owl:sameAs-INVERSE	dbpedia:resource.reflectivity
+envthes:10016	Evaporation	skos:closeMatch	envthes:21298	Evaporation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	evaporation
+envthes:10016	Evaporation	skos:closeMatch	envthes:21298	Evaporation	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	http://www.eionet.europa.eu/gemet/concept/3019
+envthes:10016	Evaporation	skos:closeMatch	envthes:21298	Evaporation	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	lternet.tema:184
+envthes:10031	tree breast height diameter	skos:closeMatch	envthes:22304	tree diameter at breast height	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	ecso:00000549
+envthes:10072	ammonium nitrate concentration	skos:closeMatch	envthes:21276	Trockene Deposition	semapv:LexicalMatching	oaklib	0.5	skos:broadMatch-INVERSE	skos:broadMatch-INVERSE	envthes:30100
+envthes:10072	ammonium nitrate concentration	skos:closeMatch	envthes:30100	nitrogen dry deposition	semapv:LexicalMatching	oaklib	0.5	skos:broadMatch-INVERSE	rdf:ID	envthes:30100
+envthes:10072	ammonium nitrate concentration	skos:closeMatch	envthes:30100	nitrogen dry deposition	semapv:LexicalMatching	oaklib	0.5	skos:broadMatch-INVERSE	rdf:ID	envthes:30100
+envthes:10147	range (statistics)	skos:closeMatch	envthes:21423	range	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	http://purl.org/net/ocre/statistics.owl#ocre200007
+envthes:10223	fertilizer application	skos:closeMatch	envthes:20101	fertilizer application	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	application fertilizer
+envthes:10308	water salinity	skos:closeMatch	envthes:10312	salinity	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	ecso:00001164
+envthes:10312	salinity	skos:closeMatch	envthes:22270	soil salinity	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	lternet.tema:481
+envthes:20166	chlorophyll a fluorescence	skos:closeMatch	envthes:20167	chlorophyll fluorescence	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll fluorescence
+envthes:20297	harvesting (practice)	skos:closeMatch	envthes:21187	harvesting	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	lternet.tema:239
+envthes:20362	biological marker	skos:closeMatch	envthes:21643	molecular marker	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	evs.ncit:c16342
+envthes:20784	Chlorophyll	skos:closeMatch	envthes:20785	chlorophyll a	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+envthes:20914	Süßwasser	skos:closeMatch	envthes:22	Süßwasser	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	süßwasser
+envthes:20914	Süßwasser	skos:closeMatch	envthes:22	Süßwasser	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	http://www.eionet.europa.eu/gemet/concept/3485
+envthes:21073	bacterial production	skos:closeMatch	envthes:22284	Solarstrahlung	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	lternet.tema:53
+envthes:21217	water turbidity	skos:closeMatch	envthes:30114	water turbidity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	turbidity water
+envthes:21241	primary productivity of ecosystem	skos:closeMatch	envthes:21419	primary productivity	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	http://aims.fao.org/aos/agrovoc/c_34328
+envthes:21241	primary productivity of ecosystem	skos:closeMatch	envthes:21419	primary productivity	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	lternet.tema:448
+envthes:21276	Trockene Deposition	skos:closeMatch	envthes:30100	nitrogen dry deposition	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:broadMatch	envthes:21276
+envthes:21276	Trockene Deposition	skos:closeMatch	envthes:30100	nitrogen dry deposition	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:broadMatch	envthes:21276
+envthes:21276	Trockene Deposition	skos:closeMatch	envthes:30100	nitrogen dry deposition	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:broadMatch	envthes:21276
+envthes:21276	Trockene Deposition	skos:closeMatch	envthes:30100	nitrogen dry deposition	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:broadMatch	envthes:21276
+envthes:21276	Trockene Deposition	skos:closeMatch	envthes:30100	nitrogen dry deposition	semapv:LexicalMatching	oaklib	0.5	skos:broadMatch-INVERSE	rdf:ID	envthes:30100
+envthes:21276	Trockene Deposition	skos:closeMatch	envthes:30100	nitrogen dry deposition	semapv:LexicalMatching	oaklib	0.5	skos:broadMatch-INVERSE	rdf:ID	envthes:30100
+envthes:21450	alkalinity	skos:closeMatch	envthes:22038	soil alkalinity	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	lternet.tema:24
+envthes:21803	peatland	skos:closeMatch	envthes:21889	peat bog	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	envo:00000044
+envthes:21826	dry tropical forest	skos:closeMatch	envthes:21849	tropical dry forest	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	dry forest tropical
+envthes:22033	air parameter	skos:closeMatch	envthes:23	Luft	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	http://www.eionet.europa.eu/gemet/concept/245
+envthes:22033	air parameter	skos:closeMatch	envthes:23	Luft	semapv:LexicalMatching	oaklib	0.5	skos:exactMatch	skos:exactMatch	lternet.tema:18
+envthes:22065	soil base saturation	skos:closeMatch	envthes:22244	soil base saturation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	base saturation soil
+envthes:30127	chlorophyll content	skos:closeMatch	envthes:30149	chlorophyll a content	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll content

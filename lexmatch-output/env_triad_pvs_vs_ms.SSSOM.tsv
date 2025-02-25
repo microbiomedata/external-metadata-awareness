@@ -1,0 +1,490 @@
+# curie_map:
+#   ENVO: http://purl.obolibrary.org/obo/ENVO_
+#   MS: http://purl.obolibrary.org/obo/MS_
+#   UO: http://purl.obolibrary.org/obo/UO_
+#   obo: http://w3id.org/sssom/unknown_prefix/obo/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/bd982a29-2d0e-464f-8a1f-59abce970997
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+ENVO:00000025	reservoir	skos:closeMatch	MS:1000067	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reservoir
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00003096	tap water	skos:closeMatch	ENVO:03600052	water tap	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tap water
+MS:1000025	magnetic field strength	skos:closeMatch	UO:0000227	magnetic flux density unit	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	b
+MS:1000109	conversion dynode photomultiplier	skos:closeMatch	MS:1000349	ion-to-photon detector	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	detector ion-to-photon
+MS:1000273	photoionization	skos:closeMatch	MS:1000862	isoelectric point	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	pi
+MS:1000514	m/z array	skos:closeMatch	MS:1000515	intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000514	m/z array	skos:closeMatch	MS:1000515	intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000514	m/z array	skos:closeMatch	MS:1000517	signal to noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000514	m/z array	skos:closeMatch	MS:1000517	signal to noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000514	m/z array	skos:closeMatch	MS:1000595	time array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000514	m/z array	skos:closeMatch	MS:1000595	time array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000514	m/z array	skos:closeMatch	MS:1000617	wavelength array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000514	m/z array	skos:closeMatch	MS:1000617	wavelength array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000514	m/z array	skos:closeMatch	MS:1000786	non-standard data array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000514	m/z array	skos:closeMatch	MS:1000786	non-standard data array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000514	m/z array	skos:closeMatch	MS:1000820	flow rate array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000514	m/z array	skos:closeMatch	MS:1000820	flow rate array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000514	m/z array	skos:closeMatch	MS:1000821	pressure array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000514	m/z array	skos:closeMatch	MS:1000821	pressure array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000514	m/z array	skos:closeMatch	MS:1000822	temperature array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000514	m/z array	skos:closeMatch	MS:1000822	temperature array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000514	m/z array	skos:closeMatch	MS:1002478	mean charge array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000514	m/z array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000514	m/z array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000514	m/z array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000514	m/z array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000514	m/z array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000514	m/z array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000514	m/z array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000514	m/z array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000514	m/z array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000514	m/z array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000514	m/z array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000514	m/z array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000514	m/z array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000514	m/z array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000515	intensity array	skos:closeMatch	MS:1000517	signal to noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000515	intensity array	skos:closeMatch	MS:1000517	signal to noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000515	intensity array	skos:closeMatch	MS:1000595	time array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000515	intensity array	skos:closeMatch	MS:1000595	time array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000515	intensity array	skos:closeMatch	MS:1000617	wavelength array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000515	intensity array	skos:closeMatch	MS:1000617	wavelength array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000515	intensity array	skos:closeMatch	MS:1000786	non-standard data array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000515	intensity array	skos:closeMatch	MS:1000786	non-standard data array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000515	intensity array	skos:closeMatch	MS:1000820	flow rate array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000515	intensity array	skos:closeMatch	MS:1000820	flow rate array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000515	intensity array	skos:closeMatch	MS:1000821	pressure array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000515	intensity array	skos:closeMatch	MS:1000821	pressure array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000515	intensity array	skos:closeMatch	MS:1000822	temperature array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000515	intensity array	skos:closeMatch	MS:1000822	temperature array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000515	intensity array	skos:closeMatch	MS:1002478	mean charge array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000515	intensity array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000515	intensity array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000515	intensity array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000515	intensity array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000515	intensity array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000515	intensity array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000515	intensity array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000515	intensity array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000515	intensity array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000515	intensity array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000515	intensity array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000515	intensity array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000515	intensity array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000515	intensity array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000516	charge array	skos:closeMatch	MS:1000786	non-standard data array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000519
+MS:1000517	signal to noise array	skos:closeMatch	MS:1000595	time array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000517	signal to noise array	skos:closeMatch	MS:1000595	time array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000517	signal to noise array	skos:closeMatch	MS:1000617	wavelength array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000517	signal to noise array	skos:closeMatch	MS:1000617	wavelength array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000517	signal to noise array	skos:closeMatch	MS:1000786	non-standard data array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000517	signal to noise array	skos:closeMatch	MS:1000786	non-standard data array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000517	signal to noise array	skos:closeMatch	MS:1000820	flow rate array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000517	signal to noise array	skos:closeMatch	MS:1000820	flow rate array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000517	signal to noise array	skos:closeMatch	MS:1000821	pressure array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000517	signal to noise array	skos:closeMatch	MS:1000821	pressure array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000517	signal to noise array	skos:closeMatch	MS:1000822	temperature array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000517	signal to noise array	skos:closeMatch	MS:1000822	temperature array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000517	signal to noise array	skos:closeMatch	MS:1002478	mean charge array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000517	signal to noise array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000517	signal to noise array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000517	signal to noise array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000517	signal to noise array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000517	signal to noise array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000517	signal to noise array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000517	signal to noise array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000517	signal to noise array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000517	signal to noise array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000517	signal to noise array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000517	signal to noise array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000517	signal to noise array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000517	signal to noise array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000517	signal to noise array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000533	Bioworks	skos:closeMatch	MS:1000693	Thermo Finnigan software	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	bioworks browser
+MS:1000595	time array	skos:closeMatch	MS:1000617	wavelength array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000595	time array	skos:closeMatch	MS:1000617	wavelength array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000595	time array	skos:closeMatch	MS:1000786	non-standard data array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000595	time array	skos:closeMatch	MS:1000786	non-standard data array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000595	time array	skos:closeMatch	MS:1000820	flow rate array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000595	time array	skos:closeMatch	MS:1000820	flow rate array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000595	time array	skos:closeMatch	MS:1000821	pressure array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000595	time array	skos:closeMatch	MS:1000821	pressure array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000595	time array	skos:closeMatch	MS:1000822	temperature array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000595	time array	skos:closeMatch	MS:1000822	temperature array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000595	time array	skos:closeMatch	MS:1002478	mean charge array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000595	time array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000595	time array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000595	time array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000595	time array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000595	time array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000595	time array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000595	time array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000595	time array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000595	time array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000595	time array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000595	time array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000595	time array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000595	time array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000595	time array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000617	wavelength array	skos:closeMatch	MS:1000786	non-standard data array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000617	wavelength array	skos:closeMatch	MS:1000786	non-standard data array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000617	wavelength array	skos:closeMatch	MS:1000820	flow rate array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000617	wavelength array	skos:closeMatch	MS:1000820	flow rate array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000617	wavelength array	skos:closeMatch	MS:1000821	pressure array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000617	wavelength array	skos:closeMatch	MS:1000821	pressure array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000617	wavelength array	skos:closeMatch	MS:1000822	temperature array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000617	wavelength array	skos:closeMatch	MS:1000822	temperature array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000617	wavelength array	skos:closeMatch	MS:1002478	mean charge array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000617	wavelength array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000617	wavelength array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000617	wavelength array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000617	wavelength array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000617	wavelength array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000617	wavelength array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000617	wavelength array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000617	wavelength array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000617	wavelength array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000617	wavelength array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000617	wavelength array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000617	wavelength array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000617	wavelength array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000617	wavelength array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000744	selected ion m/z	skos:closeMatch	MS:1002234	selected precursor m/z	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	ion m/z selected
+MS:1000786	non-standard data array	skos:closeMatch	MS:1000820	flow rate array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000786	non-standard data array	skos:closeMatch	MS:1000820	flow rate array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000786	non-standard data array	skos:closeMatch	MS:1000821	pressure array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000786	non-standard data array	skos:closeMatch	MS:1000821	pressure array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000786	non-standard data array	skos:closeMatch	MS:1000822	temperature array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000786	non-standard data array	skos:closeMatch	MS:1000822	temperature array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000786	non-standard data array	skos:closeMatch	MS:1002478	mean charge array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000786	non-standard data array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000786	non-standard data array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000786	non-standard data array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000786	non-standard data array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000786	non-standard data array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000786	non-standard data array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000786	non-standard data array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000786	non-standard data array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000786	non-standard data array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000786	non-standard data array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000786	non-standard data array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000786	non-standard data array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000786	non-standard data array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000786	non-standard data array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000820	flow rate array	skos:closeMatch	MS:1000821	pressure array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000820	flow rate array	skos:closeMatch	MS:1000821	pressure array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000820	flow rate array	skos:closeMatch	MS:1000822	temperature array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000820	flow rate array	skos:closeMatch	MS:1000822	temperature array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000820	flow rate array	skos:closeMatch	MS:1002478	mean charge array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000820	flow rate array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000820	flow rate array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000820	flow rate array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000820	flow rate array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000820	flow rate array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000820	flow rate array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000820	flow rate array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000820	flow rate array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000820	flow rate array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000820	flow rate array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000820	flow rate array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000820	flow rate array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000820	flow rate array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000820	flow rate array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000821	pressure array	skos:closeMatch	MS:1000822	temperature array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000821	pressure array	skos:closeMatch	MS:1000822	temperature array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000821	pressure array	skos:closeMatch	MS:1002478	mean charge array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000821	pressure array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000821	pressure array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000821	pressure array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000821	pressure array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000821	pressure array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000821	pressure array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000821	pressure array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000821	pressure array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000821	pressure array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000821	pressure array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000821	pressure array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000821	pressure array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000821	pressure array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000821	pressure array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000822	temperature array	skos:closeMatch	MS:1002478	mean charge array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000822	temperature array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000822	temperature array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000822	temperature array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000822	temperature array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000822	temperature array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000822	temperature array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000822	temperature array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000822	temperature array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000822	temperature array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000822	temperature array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000822	temperature array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000822	temperature array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000822	temperature array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1000822	temperature array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1000920	includes supersede excludes	skos:closeMatch	MS:1000921	excludes supersede includes	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	excludes includes supersede
+MS:1001883	coefficient of variation	skos:closeMatch	MS:1002963	variation coefficient	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	coefficient variation
+MS:1002478	mean charge array	skos:closeMatch	MS:1002529	resolution array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002478	mean charge array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002478	mean charge array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002478	mean charge array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002478	mean charge array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002478	mean charge array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002478	mean charge array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002529	resolution array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002529	resolution array	skos:closeMatch	MS:1002530	baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002529	resolution array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002529	resolution array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002529	resolution array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002529	resolution array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002529	resolution array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002529	resolution array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002529	resolution array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002529	resolution array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002529	resolution array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002529	resolution array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002530	baseline array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002530	baseline array	skos:closeMatch	MS:1002742	noise array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002530	baseline array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002530	baseline array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002530	baseline array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002530	baseline array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002530	baseline array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002530	baseline array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002530	baseline array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002530	baseline array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002742	noise array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002742	noise array	skos:closeMatch	MS:1002743	sampled noise m/z array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002742	noise array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002742	noise array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002742	noise array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002742	noise array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002742	noise array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002742	noise array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002743	sampled noise m/z array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002743	sampled noise m/z array	skos:closeMatch	MS:1002744	sampled noise intensity array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002743	sampled noise m/z array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002743	sampled noise m/z array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002743	sampled noise m/z array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002743	sampled noise m/z array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002744	sampled noise intensity array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002744	sampled noise intensity array	skos:closeMatch	MS:1002745	sampled noise baseline array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002744	sampled noise intensity array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002744	sampled noise intensity array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:1002745	sampled noise baseline array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000521
+MS:1002745	sampled noise baseline array	skos:closeMatch	MS:1003143	mass array	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	binary-data-type:ms:1000523
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	is-3a
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	is-3a
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	is-3b
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	is-3b
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	is-3c
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	is-3c
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-5
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-more
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-5
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-more
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-5
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-more
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-5
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ms2-precz-more
+MS:4000063	MS2 known precursor charges fractions	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	is-3a
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000167	ratio of 1+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000168	ratio of 1+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	is-3b
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000169	ratio of 3+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000170	ratio of 3+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	is-3c
+MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000171	ratio of 4+ over 2+ of all MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000173	mean MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000172	ratio of 4+ over 2+ of identified MS2 known precursor charges	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-5
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000174	mean MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-more
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-5
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-more
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-5
+MS:4000173	mean MS2 precursor charge in all spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-more
+MS:4000174	mean MS2 precursor charge in identified spectra	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000174	mean MS2 precursor charge in identified spectra	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000174	mean MS2 precursor charge in identified spectra	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000174	mean MS2 precursor charge in identified spectra	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000174	mean MS2 precursor charge in identified spectra	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000174	mean MS2 precursor charge in identified spectra	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-5
+MS:4000174	mean MS2 precursor charge in identified spectra	skos:closeMatch	MS:4000175	median MS2 precursor charge in all spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-more
+MS:4000174	mean MS2 precursor charge in identified spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000174	mean MS2 precursor charge in identified spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000174	mean MS2 precursor charge in identified spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000174	mean MS2 precursor charge in identified spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000174	mean MS2 precursor charge in identified spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000174	mean MS2 precursor charge in identified spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-5
+MS:4000174	mean MS2 precursor charge in identified spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-more
+MS:4000175	median MS2 precursor charge in all spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	charges fractions known ms2 precursor
+MS:4000175	median MS2 precursor charge in all spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-1
+MS:4000175	median MS2 precursor charge in all spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-2
+MS:4000175	median MS2 precursor charge in all spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-3
+MS:4000175	median MS2 precursor charge in all spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-4
+MS:4000175	median MS2 precursor charge in all spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-5
+MS:4000175	median MS2 precursor charge in all spectra	skos:closeMatch	MS:4000176	median MS2 precursor charge in identified spectra	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ms2-precz-more
+MS:4000185	MS2 quantile RT fraction	skos:closeMatch	MS:4000188	identified MS2 quantile RT fraction	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	rt-msms-q1
+MS:4000185	MS2 quantile RT fraction	skos:closeMatch	MS:4000188	identified MS2 quantile RT fraction	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	rt-msms-q2
+MS:4000185	MS2 quantile RT fraction	skos:closeMatch	MS:4000188	identified MS2 quantile RT fraction	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	rt-msms-q3
+MS:4000185	MS2 quantile RT fraction	skos:closeMatch	MS:4000188	identified MS2 quantile RT fraction	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	rt-msms-q4
+UO:0000266	electronvolt	skos:closeMatch	obo:PEFF_0001008	EV	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	ev
+obo:PEFF_0001026	ID	skos:closeMatch	oio:id	id	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	id
