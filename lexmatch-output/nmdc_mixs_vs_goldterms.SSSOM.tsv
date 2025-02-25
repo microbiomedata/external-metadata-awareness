@@ -1,0 +1,34 @@
+# curie_map:
+#   GOLDTERMS: http://w3id.org/sssom/unknown_prefix/goldterms/
+#   GOLDVOCAB: http://w3id.org/sssom/unknown_prefix/goldvocab/
+#   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/29f20734-495e-40dd-b47d-fc197715767e
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+mixs:benzene	benzene	skos:closeMatch	GOLDTERMS:Engineered-Bioremediation-Hydrocarbon-Benzene	Engineered > Bioremediation > Hydrocarbon > Benzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	benzene
+mixs:benzene	benzene	skos:closeMatch	GOLDVOCAB:Benzene	Benzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	benzene
+mixs:benzene	benzene	skos:closeMatch	mixs:benzene	benzene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	benzene
+mixs:elevator	elevator	skos:closeMatch	mixs:elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:IndoorSpaceEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:MechStrucEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomConnectedEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomTypeEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:escalator	escalator	skos:closeMatch	mixs:escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+mixs:escalator	escalator	skos:closeMatch	nmdc:MechStrucEnum#escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+mixs:methane	methane	skos:closeMatch	GOLDTERMS:4452	Engineered > Bioremediation > Hydrocarbon > Methane	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	methane
+mixs:methane	methane	skos:closeMatch	GOLDVOCAB:Methane	Methane	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	methane
+mixs:methane	methane	skos:closeMatch	mixs:methane	methane	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	methane
+mixs:reservoir	reservoir	skos:closeMatch	GOLDTERMS:5237	Environmental > Aquatic > Freshwater > Reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	reservoir
+mixs:reservoir	reservoir	skos:closeMatch	GOLDVOCAB:Reservoir	Reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reservoir
+mixs:reservoir	reservoir	skos:closeMatch	mixs:reservoir	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	reservoir
+mixs:xylene	xylene	skos:closeMatch	GOLDTERMS:5087	Engineered > Bioremediation > Hydrocarbon > Xylene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	xylene
+mixs:xylene	xylene	skos:closeMatch	GOLDVOCAB:Xylene	Xylene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	xylene
+mixs:xylene	xylene	skos:closeMatch	mixs:xylene	xylene	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	xylene

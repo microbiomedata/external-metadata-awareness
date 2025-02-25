@@ -1,0 +1,735 @@
+# curie_map:
+#   AGRO: http://purl.obolibrary.org/obo/AGRO_
+#   BFO: http://purl.obolibrary.org/obo/BFO_
+#   CARO: http://purl.obolibrary.org/obo/CARO_
+#   CHEBI: http://purl.obolibrary.org/obo/CHEBI_
+#   ENVO: http://purl.obolibrary.org/obo/ENVO_
+#   FOODON: http://purl.obolibrary.org/obo/FOODON_
+#   GO: http://purl.obolibrary.org/obo/GO_
+#   NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
+#   OBI: http://purl.obolibrary.org/obo/OBI_
+#   PATO: http://purl.obolibrary.org/obo/PATO_
+#   PO: http://purl.obolibrary.org/obo/PO_
+#   RO: http://purl.obolibrary.org/obo/RO_
+#   TO: http://purl.obolibrary.org/obo/TO_
+#   UBERON: http://purl.obolibrary.org/obo/UBERON_
+#   UO: http://purl.obolibrary.org/obo/UO_
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/41d04038-2a0b-4084-ad7c-8d955fc9cf73
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+AGRO:00000002	tillage process	skos:closeMatch	AGRO:01000015	tillage	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	tillage
+AGRO:00000027	thinning	skos:closeMatch	AGRO:00000566	pruning process	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	pruning
+AGRO:00000079	animal manure	skos:closeMatch	ENVO:00003031	animal manure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	animal manure
+AGRO:00000116	draft animal	skos:closeMatch	AGRO:00002004	draft animal role	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	animal draught
+AGRO:00000116	draft animal	skos:closeMatch	AGRO:00002004	draft animal role	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	animal working
+AGRO:00000116	draft animal	skos:closeMatch	AGRO:00002004	draft animal role	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	animal draft
+AGRO:00000137	chain harrow	skos:closeMatch	AGRO:00000138	tine harrow	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	drag harrow
+AGRO:00000137	chain harrow	skos:closeMatch	AGRO:00000138	tine harrow	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	harrow
+AGRO:00000142	seeding process	skos:closeMatch	AGRO:00000229	plant transplanting process	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	crop establishement
+AGRO:00000190	tillage tool blade length	skos:closeMatch	AGRO:00010002	tillage depth	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	depth tillage
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000170	dune	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	ridge
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000170	dune	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	ridge
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000178	levee	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	dyke
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000178	levee	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	dyke
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000178	levee	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	levee
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000178	levee	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	levee
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000178	levee	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	levee
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000178	levee	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	levee
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000178	levee	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	levee
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000178	levee	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	levee
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ridge
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ridge
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ridge
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ridge
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	ridge
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	ridge
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	ridge
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	ridge
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	ridge
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	ridge
+AGRO:00000196	bund	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	ridge
+AGRO:00000325	crop	skos:closeMatch	AGRO:00002001	crop role	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	crop
+AGRO:00000363	greenhouse	skos:closeMatch	ENVO:03600087	greenhouse	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	greenhouse
+AGRO:00000548	seedling	skos:closeMatch	PO:0008037	seedling	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	seedling
+AGRO:00000548	seedling	skos:closeMatch	PO:0008037	seedling	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	seedling
+AGRO:00000579	alley cropping	skos:closeMatch	AGRO:00000610	hedgerow intercropping	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	hedgerow intercropping
+AGRO:00000683	forest garden	skos:closeMatch	AGRO:00010166	forest garden practice	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	forest garden
+AGRO:00002065	triple superphosphate	skos:closeMatch	CHEBI:35433	calcium bis(dihydrogenphosphate)	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	monocalcium phosphate
+AGRO:00002071	agricultural process	skos:closeMatch	ENVO:01001246	agricultural process	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	agricultural process
+AGRO:00010098	seeding date	skos:closeMatch	AGRO:00010131	plant transplanting date	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	crop date establishement
+AGRO:00010160	buffer planting	skos:closeMatch	CHEBI:35225	buffer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	buffer
+AGRO:00020002	biochar	skos:closeMatch	ENVO:2000007	biochar	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	biochar
+BFO:0000016	disposition	skos:closeMatch	RO:0000092	disposition of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	disposition
+BFO:0000019	quality	skos:closeMatch	PATO:0000001	quality	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	quality
+BFO:0000019	quality	skos:closeMatch	RO:0000080	quality of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	quality
+BFO:0000023	role	skos:closeMatch	CHEBI:50906	role	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	role
+BFO:0000023	role	skos:closeMatch	RO:0000081	role of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	role
+BFO:0000034	function	skos:closeMatch	RO:0000079	function of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	function
+CARO:0000000	anatomical entity	skos:closeMatch	UBERON:0001062	anatomical entity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	anatomical entity
+CHEBI:139291	chlorophyll(1-)	skos:closeMatch	CHEBI:28966	chlorophyll	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	chlorophyll
+CHEBI:139291	chlorophyll(1-)	skos:closeMatch	CHEBI:28966	chlorophyll	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	chlorophyll
+CHEBI:139291	chlorophyll(1-)	skos:closeMatch	CHEBI:28966	chlorophyll	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	chlorophyll
+CHEBI:13941	carbamate	skos:closeMatch	CHEBI:28616	carbamic acid	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	carbamate
+CHEBI:13941	carbamate	skos:closeMatch	CHEBI:28616	carbamic acid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	carbamate
+CHEBI:15022	electron donor	skos:closeMatch	CHEBI:39144	Lewis base	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	donor electron
+CHEBI:15138	sulfide(2-)	skos:closeMatch	CHEBI:16136	hydrogen sulfide	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	sulfide
+CHEBI:15377	water	skos:closeMatch	ENVO:00002006	liquid water	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	water
+CHEBI:15377	water	skos:closeMatch	ENVO:00002006	liquid water	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	water
+CHEBI:15377	water	skos:closeMatch	ENVO:00002006	liquid water	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	water
+CHEBI:15377	water	skos:closeMatch	ENVO:00002006	liquid water	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	water
+CHEBI:15377	water	skos:closeMatch	ENVO:00002006	liquid water	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	water
+CHEBI:15377	water	skos:closeMatch	ENVO:00002006	liquid water	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	water
+CHEBI:15377	water	skos:closeMatch	ENVO:00002006	liquid water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	water
+CHEBI:15377	water	skos:closeMatch	ENVO:00002006	liquid water	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	water
+CHEBI:16042	halide anion	skos:closeMatch	CHEBI:18140	hydrogen halide	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	hx
+CHEBI:16042	halide anion	skos:closeMatch	CHEBI:33958	halide salt	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	halides
+CHEBI:16042	halide anion	skos:closeMatch	CHEBI:37578	halide	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	halides
+CHEBI:16042	halide anion	skos:closeMatch	CHEBI:37578	halide	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	halide
+CHEBI:16134	ammonia	skos:closeMatch	CHEBI:35107	azane	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	azane
+CHEBI:16136	hydrogen sulfide	skos:closeMatch	CHEBI:29919	hydrosulfide	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	hydrogen sulfide
+CHEBI:16136	hydrogen sulfide	skos:closeMatch	CHEBI:29919	hydrosulfide	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	hydrogen sulfide
+CHEBI:16136	hydrogen sulfide	skos:closeMatch	CHEBI:29919	hydrosulfide	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	hydrogen sulfide
+CHEBI:17997	dinitrogen	skos:closeMatch	CHEBI:25555	nitrogen atom	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	nitrogen
+CHEBI:17997	dinitrogen	skos:closeMatch	CHEBI:25555	nitrogen atom	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	nitrogen
+CHEBI:18367	phosphate(3-)	skos:closeMatch	CHEBI:26020	phosphate	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	phosphate
+CHEBI:18367	phosphate(3-)	skos:closeMatch	CHEBI:26020	phosphate	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	phosphate
+CHEBI:18367	phosphate(3-)	skos:closeMatch	CHEBI:26078	phosphoric acid	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	phosphate
+CHEBI:18367	phosphate(3-)	skos:closeMatch	CHEBI:26078	phosphoric acid	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	phosphate
+CHEBI:18367	phosphate(3-)	skos:closeMatch	CHEBI:35780	phosphate ion	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	phosphate
+CHEBI:18367	phosphate(3-)	skos:closeMatch	CHEBI:35780	phosphate ion	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	phosphate
+CHEBI:18367	phosphate(3-)	skos:closeMatch	CHEBI:35780	phosphate ion	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	ion phosphate
+CHEBI:18367	phosphate(3-)	skos:closeMatch	CHEBI:43474	hydrogenphosphate	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	phosphate
+CHEBI:18367	phosphate(3-)	skos:closeMatch	CHEBI:43474	hydrogenphosphate	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	phosphate
+CHEBI:23004	carbamoyl group	skos:closeMatch	CHEBI:37622	carboxamide	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	carboxamide
+CHEBI:23116	chlorine atom	skos:closeMatch	CHEBI:29310	dichlorine	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	chlorine
+CHEBI:23116	chlorine atom	skos:closeMatch	CHEBI:29310	dichlorine	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	chlorine
+CHEBI:26020	phosphate	skos:closeMatch	CHEBI:26078	phosphoric acid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	phosphate
+CHEBI:26020	phosphate	skos:closeMatch	CHEBI:35780	phosphate ion	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	phosphate
+CHEBI:26020	phosphate	skos:closeMatch	CHEBI:43474	hydrogenphosphate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	phosphate
+CHEBI:26078	phosphoric acid	skos:closeMatch	CHEBI:35780	phosphate ion	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	phosphate
+CHEBI:26078	phosphoric acid	skos:closeMatch	CHEBI:43474	hydrogenphosphate	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	phosphate
+CHEBI:26820	sulfates	skos:closeMatch	CHEBI:35175	sulfate salt	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	sulfates
+CHEBI:26820	sulfates	skos:closeMatch	CHEBI:35175	sulfate salt	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	sulphates
+CHEBI:26820	sulfates	skos:closeMatch	CHEBI:35175	sulfate salt	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	sulfates
+CHEBI:26820	sulfates	skos:closeMatch	CHEBI:37826	sulfuric acid derivative	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	acid derivative sulfuric
+CHEBI:26820	sulfates	skos:closeMatch	CHEBI:37826	sulfuric acid derivative	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	acid derivative sulfuric
+CHEBI:27363	zinc atom	skos:closeMatch	CHEBI:29105	zinc(2+)	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	zn(ii)
+CHEBI:27363	zinc atom	skos:closeMatch	CHEBI:29105	zinc(2+)	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	zn2+
+CHEBI:27365	zinc ion	skos:closeMatch	CHEBI:29105	zinc(2+)	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	ion zinc
+CHEBI:27365	zinc ion	skos:closeMatch	CHEBI:29105	zinc(2+)	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	ion zinc
+CHEBI:27560	boron atom	skos:closeMatch	CHEBI:33609	elemental boron	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	boron
+CHEBI:27560	boron atom	skos:closeMatch	CHEBI:33609	elemental boron	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	boron
+CHEBI:27560	boron atom	skos:closeMatch	CHEBI:33609	elemental boron	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	boron
+CHEBI:29105	zinc(2+)	skos:closeMatch	CHEBI:63056	zinc cation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	cation zinc
+CHEBI:29108	calcium(2+)	skos:closeMatch	CHEBI:39124	calcium ion	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	calcium ion
+CHEBI:29108	calcium(2+)	skos:closeMatch	CHEBI:39124	calcium ion	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	calcium ion
+CHEBI:29337	azanide	skos:closeMatch	CHEBI:32988	amide	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	amide
+CHEBI:29337	azanide	skos:closeMatch	CHEBI:32988	amide	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	amide
+CHEBI:31341	calcium dihydroxide	skos:closeMatch	CHEBI:35150	calcium hydroxide	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	calcium hydroxide
+CHEBI:31344	calcium oxide	skos:closeMatch	ENVO:00002053	limestone	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	limestone
+CHEBI:33250	atom	skos:closeMatch	UBERON:0000062	organ	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	element
+CHEBI:33290	food	skos:closeMatch	FOODON:00002403	food material	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	food
+CHEBI:33958	halide salt	skos:closeMatch	CHEBI:37578	halide	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	halides
+CHEBI:35780	phosphate ion	skos:closeMatch	CHEBI:43474	hydrogenphosphate	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	phosphate
+CHEBI:35780	phosphate ion	skos:closeMatch	UO:0000188	pi	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	pi
+CHEBI:48376	carbamimidic acid	skos:closeMatch	CHEBI:48379	isourea	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	isourea
+CHEBI:50860	organic molecular entity	skos:closeMatch	CHEBI:72695	organic molecule	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	compounds organic
+CHEBI:50906	role	skos:closeMatch	RO:0000081	role of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	role
+CHEBI:52214	ligand	skos:closeMatch	GO:0005488	binding	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	ligand
+CHEBI:62488	signalling molecule	skos:closeMatch	GO:0048018	receptor ligand activity	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	molecule signaling
+CHEBI:63005	sodium nitrate	skos:closeMatch	CHEBI:63043	potassium nitrate	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	niter
+CHEBI:63038	ammonium nitrate	skos:closeMatch	CHEBI:64205	calcium nitrate	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	norway saltpeter
+CHEBI:63043	potassium nitrate	skos:closeMatch	CHEBI:64205	calcium nitrate	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	saltpeter
+CHEBI:64047	food additive	skos:closeMatch	FOODON:03412972	food additive	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	additive food
+ENVO:00000009	national geopolitical entity	skos:closeMatch	ENVO:00000123	political entity	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	entity political
+ENVO:00000009	national geopolitical entity	skos:closeMatch	ENVO:00000123	political entity	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	entity political
+ENVO:00000012	hydrographic feature	skos:closeMatch	ENVO:00000063	water body	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	feature hydrographic
+ENVO:00000016	sea	skos:closeMatch	ENVO:00000020	lake	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	open water
+ENVO:00000016	sea	skos:closeMatch	ENVO:00000020	lake	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	open water
+ENVO:00000016	sea	skos:closeMatch	ENVO:00000020	lake	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	open water
+ENVO:00000016	sea	skos:closeMatch	ENVO:00000020	lake	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	open water
+ENVO:00000016	sea	skos:closeMatch	ENVO:03000117	channel	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	channel
+ENVO:00000016	sea	skos:closeMatch	ENVO:03000117	channel	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	channel
+ENVO:00000016	sea	skos:closeMatch	ENVO:03000117	channel	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	channel
+ENVO:00000016	sea	skos:closeMatch	ENVO:03000117	channel	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	channel
+ENVO:00000016	sea	skos:closeMatch	ENVO:03000117	channel	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	channel
+ENVO:00000016	sea	skos:closeMatch	ENVO:03000117	channel	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	channel
+ENVO:00000016	sea	skos:closeMatch	ENVO:03000117	channel	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	channel
+ENVO:00000016	sea	skos:closeMatch	ENVO:03000117	channel	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	channel
+ENVO:00000020	lake	skos:closeMatch	ENVO:00000025	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	lake
+ENVO:00000020	lake	skos:closeMatch	ENVO:00000025	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	lake
+ENVO:00000020	lake	skos:closeMatch	ENVO:00000025	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	lake
+ENVO:00000020	lake	skos:closeMatch	ENVO:00000025	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	lake
+ENVO:00000020	lake	skos:closeMatch	ENVO:00000025	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	lake
+ENVO:00000020	lake	skos:closeMatch	ENVO:00000025	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	lake
+ENVO:00000020	lake	skos:closeMatch	ENVO:00000025	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	lake
+ENVO:00000020	lake	skos:closeMatch	ENVO:00000025	reservoir	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	lake
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	watercourse
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	watercourse
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	stream
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	stream
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	stream
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	stream
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	lode
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	lode
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasNarrowSynonym	rivulet
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasNarrowSynonym	rivulet
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	beck
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	beck
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	brook
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	brook
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	stream
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	stream
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	stream
+ENVO:00000023	stream	skos:closeMatch	ENVO:00000029	watercourse	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	stream
+ENVO:00000029	watercourse	skos:closeMatch	ENVO:00000100	valley	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	gulch
+ENVO:00000029	watercourse	skos:closeMatch	ENVO:00000100	valley	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	gulch
+ENVO:00000029	watercourse	skos:closeMatch	ENVO:00000100	valley	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	gully
+ENVO:00000029	watercourse	skos:closeMatch	ENVO:00000100	valley	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasNarrowSynonym	gully
+ENVO:00000029	watercourse	skos:closeMatch	ENVO:00000100	valley	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	gap water
+ENVO:00000029	watercourse	skos:closeMatch	ENVO:00000100	valley	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	gap water
+ENVO:00000029	watercourse	skos:closeMatch	ENVO:00000100	valley	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ravine
+ENVO:00000029	watercourse	skos:closeMatch	ENVO:00000100	valley	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ravine
+ENVO:00000029	watercourse	skos:closeMatch	ENVO:00000100	valley	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	seachannel
+ENVO:00000029	watercourse	skos:closeMatch	ENVO:00000100	valley	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	seachannel
+ENVO:00000029	watercourse	skos:closeMatch	ENVO:00000100	valley	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	moat
+ENVO:00000029	watercourse	skos:closeMatch	ENVO:00000100	valley	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	moat
+ENVO:00000029	watercourse	skos:closeMatch	ENVO:00000129	stream valley	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	ravine
+ENVO:00000029	watercourse	skos:closeMatch	PO:0025073	branch	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	branch
+ENVO:00000035	marsh	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	marsh
+ENVO:00000035	marsh	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	marsh
+ENVO:00000044	peatland	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	peatland
+ENVO:00000044	peatland	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	peatland
+ENVO:00000067	cave	skos:closeMatch	ENVO:00000068	tunnel	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	cave
+ENVO:00000067	cave	skos:closeMatch	ENVO:00000068	tunnel	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	cave
+ENVO:00000077	agricultural ecosystem	skos:closeMatch	ENVO:00000078	farm	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	agricultural site
+ENVO:00000077	agricultural ecosystem	skos:closeMatch	ENVO:00000078	farm	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	agricultural site
+ENVO:00000077	agricultural ecosystem	skos:closeMatch	ENVO:00000114	agricultural field	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	agricultural site
+ENVO:00000077	agricultural ecosystem	skos:closeMatch	ENVO:00000114	agricultural field	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	agricultural site
+ENVO:00000078	farm	skos:closeMatch	ENVO:00000114	agricultural field	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	agricultural site
+ENVO:00000078	farm	skos:closeMatch	ENVO:00000114	agricultural field	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	agricultural site
+ENVO:00000078	farm	skos:closeMatch	ENVO:00000114	agricultural field	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	agricultural site
+ENVO:00000078	farm	skos:closeMatch	ENVO:00000114	agricultural field	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	agricultural site
+ENVO:00000078	farm	skos:closeMatch	ENVO:01001207	ranch	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ranch
+ENVO:00000078	farm	skos:closeMatch	ENVO:01001207	ranch	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ranch
+ENVO:00000078	farm	skos:closeMatch	ENVO:01001207	ranch	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	ranch
+ENVO:00000078	farm	skos:closeMatch	ENVO:01001207	ranch	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	ranch
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000083	hill	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	mountain
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000083	hill	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	mountain
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000083	hill	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	mountain
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000083	hill	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	mountain
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000083	hill	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	mountain
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000083	hill	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	mountain
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000083	hill	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	mountain
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000083	hill	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	mountain
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000083	hill	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	mountain
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000083	hill	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	mountain
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000083	hill	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	mountain
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000083	hill	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	mountain
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	mountain
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	mountain
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	mountain
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	mountain
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	mountain
+ENVO:00000081	mountain	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	mountain
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000141	bank	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	mount
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000141	bank	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	mount
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000141	bank	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	mount
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000141	bank	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	mount
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000170	dune	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	mount
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000170	dune	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	mount
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000170	dune	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	mount
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000170	dune	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	mount
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000247	volcano	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	mount
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000247	volcano	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	mount
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000247	volcano	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	mount
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000247	volcano	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	mount
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	mount
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	mount
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	cerro
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	cerro
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	hill
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	hill
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	hillock
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	hillock
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	knoll
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	knoll
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	mountain
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	mountain
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	mount
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	mount
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	hill
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	hill
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	hill
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	hill
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	mount
+ENVO:00000083	hill	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	mount
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	llanos
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	llanos
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	llanos
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	llanos
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000312	sandur	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	outwash plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000312	sandur	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	outwash plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000527	interfluve	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000527	interfluve	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000527	interfluve	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000527	interfluve	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000527	interfluve	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000527	interfluve	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000527	interfluve	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	interfluve
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000527	interfluve	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	interfluve
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000527	interfluve	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	interfluve
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000527	interfluve	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	interfluve
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000527	interfluve	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000527	interfluve	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000527	interfluve	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	plain
+ENVO:00000086	plain	skos:closeMatch	ENVO:00000527	interfluve	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	plain
+ENVO:00000087	cliff	skos:closeMatch	ENVO:00000280	escarpment	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	cliff
+ENVO:00000091	beach	skos:closeMatch	ENVO:00000092	sea beach	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	strand
+ENVO:00000091	beach	skos:closeMatch	ENVO:00000092	sea beach	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	strand
+ENVO:00000091	beach	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	rivage
+ENVO:00000091	beach	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	rivage
+ENVO:00000091	beach	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	rivage
+ENVO:00000091	beach	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	rivage
+ENVO:00000091	beach	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	strand
+ENVO:00000091	beach	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	strand
+ENVO:00000091	beach	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	strand
+ENVO:00000091	beach	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	strand
+ENVO:00000092	sea beach	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	strand
+ENVO:00000092	sea beach	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	strand
+ENVO:00000098	island	skos:closeMatch	ENVO:00000166	atoll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	island
+ENVO:00000098	island	skos:closeMatch	ENVO:00000166	atoll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	island
+ENVO:00000098	island	skos:closeMatch	ENVO:00000166	atoll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	island
+ENVO:00000098	island	skos:closeMatch	ENVO:00000166	atoll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	island
+ENVO:00000098	island	skos:closeMatch	ENVO:00000423	river island	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	eyot
+ENVO:00000098	island	skos:closeMatch	ENVO:00000423	river island	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	eyot
+ENVO:00000098	island	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	hummock
+ENVO:00000098	island	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	hummock
+ENVO:00000098	island	skos:closeMatch	ENVO:00000516	hummock	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	hummock
+ENVO:00000098	island	skos:closeMatch	ENVO:00000516	hummock	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	hummock
+ENVO:00000100	valley	skos:closeMatch	ENVO:00000129	stream valley	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ravine
+ENVO:00000100	valley	skos:closeMatch	ENVO:00000129	stream valley	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ravine
+ENVO:00000100	valley	skos:closeMatch	ENVO:00000184	hanging valley	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	valley
+ENVO:00000100	valley	skos:closeMatch	ENVO:00000184	hanging valley	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	valley
+ENVO:00000100	valley	skos:closeMatch	ENVO:00000184	hanging valley	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	valley
+ENVO:00000100	valley	skos:closeMatch	ENVO:00000184	hanging valley	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	valley
+ENVO:00000100	valley	skos:closeMatch	ENVO:00000248	glacial valley	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	valley
+ENVO:00000100	valley	skos:closeMatch	ENVO:00000248	glacial valley	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	valley
+ENVO:00000100	valley	skos:closeMatch	ENVO:00000248	glacial valley	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	valley
+ENVO:00000100	valley	skos:closeMatch	ENVO:00000248	glacial valley	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	valley
+ENVO:00000100	valley	skos:closeMatch	ENVO:01000649	trench	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	trench
+ENVO:00000100	valley	skos:closeMatch	ENVO:01000649	trench	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	trench
+ENVO:00000100	valley	skos:closeMatch	PATO:0002078	hollow	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	hollow
+ENVO:00000100	valley	skos:closeMatch	PATO:0002078	hollow	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	hollow
+ENVO:00000106	grassland area	skos:closeMatch	ENVO:00000266	pasture	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	area grazing
+ENVO:00000106	grassland area	skos:closeMatch	ENVO:00000266	pasture	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	area grazing
+ENVO:00000106	grassland area	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	area grazing
+ENVO:00000106	grassland area	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	area herbaceous
+ENVO:00000109	woodland area	skos:closeMatch	ENVO:00000111	forested area	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	wood
+ENVO:00000109	woodland area	skos:closeMatch	ENVO:00000111	forested area	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	wood
+ENVO:00000109	woodland area	skos:closeMatch	ENVO:00000300	scrubland area	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	scrub
+ENVO:00000109	woodland area	skos:closeMatch	ENVO:00000300	scrubland area	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	scrub
+ENVO:00000109	woodland area	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	moor
+ENVO:00000109	woodland area	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	moor
+ENVO:00000109	woodland area	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	moor
+ENVO:00000109	woodland area	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	moor
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:00000260	prairie	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:00000261	savanna	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:00000261	savanna	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:00000262	steppe	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:00000262	steppe	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:00000262	steppe	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:00000262	steppe	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:01000352	field	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	field
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:01000352	field	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	field
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	grassland
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	grassland
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	grassland
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	grassland
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000114	agricultural field	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000130	rocky reef	skos:closeMatch	ENVO:00000150	coral reef	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	reef
+ENVO:00000130	rocky reef	skos:closeMatch	ENVO:00000150	coral reef	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	reef
+ENVO:00000130	rocky reef	skos:closeMatch	ENVO:00000150	coral reef	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	barrier reef
+ENVO:00000130	rocky reef	skos:closeMatch	ENVO:00000150	coral reef	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	barrier reef
+ENVO:00000130	rocky reef	skos:closeMatch	ENVO:00000150	coral reef	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	fringing reef
+ENVO:00000130	rocky reef	skos:closeMatch	ENVO:00000150	coral reef	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	fringing reef
+ENVO:00000130	rocky reef	skos:closeMatch	ENVO:00000150	coral reef	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	reef
+ENVO:00000130	rocky reef	skos:closeMatch	ENVO:00000150	coral reef	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	reef
+ENVO:00000130	rocky reef	skos:closeMatch	ENVO:00000166	atoll	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	reef
+ENVO:00000130	rocky reef	skos:closeMatch	ENVO:00000166	atoll	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	reef
+ENVO:00000130	rocky reef	skos:closeMatch	ENVO:00000508	terrace	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasNarrowSynonym	ledge
+ENVO:00000131	glacial feature	skos:closeMatch	ENVO:01000277	water ice	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ice
+ENVO:00000131	glacial feature	skos:closeMatch	ENVO:01000277	water ice	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	ice
+ENVO:00000131	glacial feature	skos:closeMatch	ENVO:01001125	ice	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	ice
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000170	dune	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000170	dune	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000170	dune	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000170	dune	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000247	volcano	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000247	volcano	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000247	volcano	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000247	volcano	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000304	shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	mount
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	mount
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	mount
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	mount
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000485	sea shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000485	sea shore	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	shore
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000141	bank	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000150	coral reef	skos:closeMatch	ENVO:00000166	atoll	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	reef
+ENVO:00000150	coral reef	skos:closeMatch	ENVO:00000166	atoll	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	reef
+ENVO:00000156	desert oasis	skos:closeMatch	ENVO:01001304	oasis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	oasis
+ENVO:00000156	desert oasis	skos:closeMatch	ENVO:01001304	oasis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	oasis
+ENVO:00000156	desert oasis	skos:closeMatch	ENVO:01001304	oasis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	oasis
+ENVO:00000156	desert oasis	skos:closeMatch	ENVO:01001304	oasis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	oasis
+ENVO:00000156	desert oasis	skos:closeMatch	ENVO:01001304	oasis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	oasis
+ENVO:00000156	desert oasis	skos:closeMatch	ENVO:01001304	oasis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	oasis
+ENVO:00000156	desert oasis	skos:closeMatch	ENVO:01001304	oasis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	oasis
+ENVO:00000156	desert oasis	skos:closeMatch	ENVO:01001304	oasis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	oasis
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000247	volcano	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000247	volcano	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000247	volcano	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000247	volcano	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasRelatedSynonym	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasRelatedSynonym	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasRelatedSynonym	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasRelatedSynonym	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	mount
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	mount
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	mount
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	mount
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	ridge
+ENVO:00000170	dune	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	ridge
+ENVO:00000176	elevation	skos:closeMatch	PATO:0001687	elevation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevation
+ENVO:00000178	levee	skos:closeMatch	ENVO:01000671	dike	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	dike
+ENVO:00000178	levee	skos:closeMatch	ENVO:01000671	dike	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	dike
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	plateau
+ENVO:00000182	plateau	skos:closeMatch	ENVO:00000287	butte	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	plateau
+ENVO:00000184	hanging valley	skos:closeMatch	ENVO:00000248	glacial valley	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasRelatedSynonym	valley
+ENVO:00000194	scree	skos:closeMatch	ENVO:01000334	talus slope	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	slope talus
+ENVO:00000233	swamp ecosystem	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	wetland
+ENVO:00000233	swamp ecosystem	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	wetland
+ENVO:00000233	swamp ecosystem	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	wetland
+ENVO:00000233	swamp ecosystem	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	wetland
+ENVO:00000233	swamp ecosystem	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	wetland
+ENVO:00000233	swamp ecosystem	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	wetland
+ENVO:00000233	swamp ecosystem	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	wetland
+ENVO:00000233	swamp ecosystem	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	wetland
+ENVO:00000233	swamp ecosystem	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasNarrowSynonym	cienaga
+ENVO:00000233	swamp ecosystem	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasNarrowSynonym	cienaga
+ENVO:00000233	swamp ecosystem	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasNarrowSynonym	cienaga
+ENVO:00000233	swamp ecosystem	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasNarrowSynonym	cienaga
+ENVO:00000233	swamp ecosystem	skos:closeMatch	ENVO:01001304	oasis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	cienaga
+ENVO:00000233	swamp ecosystem	skos:closeMatch	ENVO:01001304	oasis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	cienaga
+ENVO:00000233	swamp ecosystem	skos:closeMatch	ENVO:01001304	oasis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	cienaga
+ENVO:00000233	swamp ecosystem	skos:closeMatch	ENVO:01001304	oasis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	cienaga
+ENVO:00000247	volcano	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	mount
+ENVO:00000247	volcano	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasExactSynonym	mount
+ENVO:00000247	volcano	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	mount
+ENVO:00000247	volcano	skos:closeMatch	ENVO:00000477	mount	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	mount
+ENVO:00000247	volcano	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000247	volcano	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	mount
+ENVO:00000260	prairie	skos:closeMatch	ENVO:00000261	savanna	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000260	prairie	skos:closeMatch	ENVO:00000261	savanna	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000260	prairie	skos:closeMatch	ENVO:00000262	steppe	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000260	prairie	skos:closeMatch	ENVO:00000262	steppe	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000260	prairie	skos:closeMatch	ENVO:00000262	steppe	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000260	prairie	skos:closeMatch	ENVO:00000262	steppe	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000260	prairie	skos:closeMatch	ENVO:00000262	steppe	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pampa
+ENVO:00000260	prairie	skos:closeMatch	ENVO:00000262	steppe	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pampa
+ENVO:00000260	prairie	skos:closeMatch	ENVO:00000262	steppe	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pampa
+ENVO:00000260	prairie	skos:closeMatch	ENVO:00000262	steppe	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pampa
+ENVO:00000260	prairie	skos:closeMatch	ENVO:00000527	interfluve	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	plain
+ENVO:00000260	prairie	skos:closeMatch	ENVO:00000527	interfluve	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	plain
+ENVO:00000260	prairie	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	grassland
+ENVO:00000260	prairie	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	grassland
+ENVO:00000260	prairie	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	grassland
+ENVO:00000260	prairie	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	grassland
+ENVO:00000260	prairie	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000260	prairie	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000261	savanna	skos:closeMatch	ENVO:00000262	steppe	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000261	savanna	skos:closeMatch	ENVO:00000262	steppe	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000261	savanna	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	grassland
+ENVO:00000261	savanna	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	grassland
+ENVO:00000261	savanna	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000262	steppe	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	grassland
+ENVO:00000262	steppe	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	grassland
+ENVO:00000262	steppe	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	grassland
+ENVO:00000262	steppe	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	grassland
+ENVO:00000262	steppe	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000262	steppe	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	grassland
+ENVO:00000266	pasture	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	area grazing
+ENVO:00000266	pasture	skos:closeMatch	ENVO:01001206	grassland ecosystem	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	area grazing
+ENVO:00000280	escarpment	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	cuesta
+ENVO:00000280	escarpment	skos:closeMatch	ENVO:00000283	ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	cuesta
+ENVO:00000283	ridge	skos:closeMatch	ENVO:00000529	beach ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	beach ridge
+ENVO:00000283	ridge	skos:closeMatch	ENVO:00000529	beach ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	beach ridge
+ENVO:00000283	ridge	skos:closeMatch	ENVO:00000529	beach ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	beach ridge
+ENVO:00000283	ridge	skos:closeMatch	ENVO:00000529	beach ridge	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	rdfs:label	beach ridge
+ENVO:00000283	ridge	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	ridge
+ENVO:00000283	ridge	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	ridge
+ENVO:00000283	ridge	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	ridge
+ENVO:00000283	ridge	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	ridge
+ENVO:00000283	ridge	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	ridge
+ENVO:00000283	ridge	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	ridge
+ENVO:00000283	ridge	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	ridge
+ENVO:00000283	ridge	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	ridge
+ENVO:00000283	ridge	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	ridge
+ENVO:00000283	ridge	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	ridge
+ENVO:00000291	drainage basin	skos:closeMatch	ENVO:00000292	watershed	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	watershed
+ENVO:00000291	drainage basin	skos:closeMatch	ENVO:00000292	watershed	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	watershed
+ENVO:00000291	drainage basin	skos:closeMatch	ENVO:00000292	watershed	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	watershed
+ENVO:00000291	drainage basin	skos:closeMatch	ENVO:00000292	watershed	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	watershed
+ENVO:00000291	drainage basin	skos:closeMatch	ENVO:00000311	kettle	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	basin
+ENVO:00000291	drainage basin	skos:closeMatch	ENVO:00000311	kettle	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	basin
+ENVO:00000300	scrubland area	skos:closeMatch	ENVO:01001293	bush area	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	bush
+ENVO:00000304	shore	skos:closeMatch	ENVO:00000485	sea shore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	shore
+ENVO:00000304	shore	skos:closeMatch	ENVO:00000485	sea shore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	shore
+ENVO:00000304	shore	skos:closeMatch	ENVO:00000485	sea shore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	shore
+ENVO:00000304	shore	skos:closeMatch	ENVO:00000485	sea shore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	shore
+ENVO:00000304	shore	skos:closeMatch	ENVO:00000485	sea shore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	shore
+ENVO:00000304	shore	skos:closeMatch	ENVO:00000485	sea shore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	shore
+ENVO:00000304	shore	skos:closeMatch	ENVO:00000485	sea shore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	shore
+ENVO:00000304	shore	skos:closeMatch	ENVO:00000485	sea shore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	shore
+ENVO:00000477	mount	skos:closeMatch	ENVO:00000516	hummock	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	hummock
+ENVO:00000477	mount	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	mount
+ENVO:00000477	mount	skos:closeMatch	ENVO:00000542	kame	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	mount
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00002042	surface water	skos:closeMatch	ENVO:01001191	water surface	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	surface water
+ENVO:00003096	tap water	skos:closeMatch	ENVO:03600052	water tap	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	tap water
+ENVO:01000277	water ice	skos:closeMatch	ENVO:01001125	ice	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	ice
+ENVO:01000277	water ice	skos:closeMatch	ENVO:01001125	ice	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	ice
+ENVO:01000480	glass	skos:closeMatch	ENVO:01000481	silica-based glass	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	glass
+ENVO:01000635	planetary landmass	skos:closeMatch	ENVO:01001785	land	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	land
+ENVO:01000703	hydrological precipitation process	skos:closeMatch	ENVO:01001363	volume of hydrological precipitation	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasRelatedSynonym	precipitation
+ENVO:01000792	mass gaseous flow	skos:closeMatch	ENVO:01000793	atmospheric wind	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasBroadSynonym	wind
+ENVO:01000797	gaseous environmental material	skos:closeMatch	ENVO:01001155	astrogeological gas	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	gas
+ENVO:01001086	formation of a solid aerosol in an atmosphere	skos:closeMatch	ENVO:01001090	formation of a solid aerosol from gaseous material in an atmosphere	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	aerosol atmosphere formation in solid
+ENVO:01001086	formation of a solid aerosol in an atmosphere	skos:closeMatch	ENVO:01001090	formation of a solid aerosol from gaseous material in an atmosphere	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	aerosol atmosphere formation in solid
+ENVO:01001086	formation of a solid aerosol in an atmosphere	skos:closeMatch	ENVO:01001639	formation of a solid aerosol from liquid material in an atmosphere	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	aerosol atmosphere formation in solid
+ENVO:01001086	formation of a solid aerosol in an atmosphere	skos:closeMatch	ENVO:01001639	formation of a solid aerosol from liquid material in an atmosphere	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	aerosol atmosphere formation in solid
+ENVO:01001087	formation of a liquid aerosol in an atmosphere	skos:closeMatch	ENVO:01001091	formation of a liquid aerosol from gaseous material in an atmosphere	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	aerosol atmosphere formation in liquid
+ENVO:01001087	formation of a liquid aerosol in an atmosphere	skos:closeMatch	ENVO:01001091	formation of a liquid aerosol from gaseous material in an atmosphere	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	aerosol atmosphere formation in liquid
+ENVO:01001090	formation of a solid aerosol from gaseous material in an atmosphere	skos:closeMatch	ENVO:01001639	formation of a solid aerosol from liquid material in an atmosphere	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	aerosol atmosphere formation in solid
+ENVO:01001090	formation of a solid aerosol from gaseous material in an atmosphere	skos:closeMatch	ENVO:01001639	formation of a solid aerosol from liquid material in an atmosphere	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	aerosol atmosphere formation in solid
+ENVO:01001090	formation of a solid aerosol from gaseous material in an atmosphere	skos:closeMatch	ENVO:01001639	formation of a solid aerosol from liquid material in an atmosphere	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	aerosol atmosphere formation in solid
+ENVO:01001090	formation of a solid aerosol from gaseous material in an atmosphere	skos:closeMatch	ENVO:01001639	formation of a solid aerosol from liquid material in an atmosphere	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	aerosol atmosphere formation in solid
+ENVO:01001090	formation of a solid aerosol from gaseous material in an atmosphere	skos:closeMatch	ENVO:01001639	formation of a solid aerosol from liquid material in an atmosphere	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	aerosol atmospheric formation solid
+ENVO:01001209	wetland ecosystem	skos:closeMatch	ENVO:01001304	oasis	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	cienaga
+ENVO:01001209	wetland ecosystem	skos:closeMatch	ENVO:01001304	oasis	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	cienaga
+ENVO:01001209	wetland ecosystem	skos:closeMatch	ENVO:01001304	oasis	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	cienaga
+ENVO:01001209	wetland ecosystem	skos:closeMatch	ENVO:01001304	oasis	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasRelatedSynonym	cienaga
+FOODON:00001901	ginger food product	skos:closeMatch	FOODON:00002718	ginger root	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ginger
+FOODON:00001901	ginger food product	skos:closeMatch	FOODON:00003717	ginger root (whole)	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ginger
+FOODON:00001901	ginger food product	skos:closeMatch	FOODON:03000220	ginger root (whole or parts)	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ginger
+FOODON:00001901	ginger food product	skos:closeMatch	NCBITaxon:94328	Zingiber officinale	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ginger
+FOODON:00002452	invertebrate animal	skos:closeMatch	FOODON:00003004	animal	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	animal
+FOODON:00002452	invertebrate animal	skos:closeMatch	FOODON:03411297	vertebrate animal	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	animal
+FOODON:00002452	invertebrate animal	skos:closeMatch	UBERON:0000468	multicellular organism	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasNarrowSynonym	animal
+FOODON:00002718	ginger root	skos:closeMatch	FOODON:00003717	ginger root (whole)	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ginger
+FOODON:00002718	ginger root	skos:closeMatch	FOODON:00003717	ginger root (whole)	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	ginger root
+FOODON:00002718	ginger root	skos:closeMatch	FOODON:03000220	ginger root (whole or parts)	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ginger
+FOODON:00002718	ginger root	skos:closeMatch	FOODON:03000220	ginger root (whole or parts)	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	ginger root
+FOODON:00002718	ginger root	skos:closeMatch	NCBITaxon:94328	Zingiber officinale	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ginger
+FOODON:00003004	animal	skos:closeMatch	FOODON:03411297	vertebrate animal	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	animal
+FOODON:00003004	animal	skos:closeMatch	UBERON:0000468	multicellular organism	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	animal
+FOODON:00003717	ginger root (whole)	skos:closeMatch	FOODON:03000220	ginger root (whole or parts)	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ginger
+FOODON:00003717	ginger root (whole)	skos:closeMatch	FOODON:03000220	ginger root (whole or parts)	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ginger root
+FOODON:00003717	ginger root (whole)	skos:closeMatch	NCBITaxon:94328	Zingiber officinale	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ginger
+FOODON:03000220	ginger root (whole or parts)	skos:closeMatch	NCBITaxon:94328	Zingiber officinale	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ginger
+FOODON:03000245	soybean (whole or parts)	skos:closeMatch	FOODON:03301415	soybean (whole)	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	soybean
+FOODON:03000245	soybean (whole or parts)	skos:closeMatch	NCBITaxon:3847	Glycine max	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	soybean
+FOODON:03000245	soybean (whole or parts)	skos:closeMatch	NCBITaxon:3847	Glycine max	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	soybean
+FOODON:03301415	soybean (whole)	skos:closeMatch	NCBITaxon:3847	Glycine max	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	bean soya
+FOODON:03301415	soybean (whole)	skos:closeMatch	NCBITaxon:3847	Glycine max	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	soybean
+FOODON:03301415	soybean (whole)	skos:closeMatch	NCBITaxon:3847	Glycine max	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	soybean
+FOODON:03411297	vertebrate animal	skos:closeMatch	UBERON:0000468	multicellular organism	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasNarrowSynonym	animal
+GO:0004872	receptor activity	skos:closeMatch	GO:0038023	signaling receptor activity	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	activity receptor
+NCBITaxon:1	root	skos:closeMatch	PO:0009005	root	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	root
+NCBITaxon:1	root	skos:closeMatch	PO:0009005	root	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	root
+NCBITaxon:1	root	skos:closeMatch	PO:0009005	root	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	root
+NCBITaxon:1	root	skos:closeMatch	PO:0009005	root	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	root
+NCBITaxon:2870	Phaeophyceae	skos:closeMatch	NCBITaxon:569578	PX clade	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	algae
+NCBITaxon:33343	Prosorrhyncha	skos:closeMatch	NCBITaxon:7524	Hemiptera	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	bugs
+NCBITaxon:356	Hyphomicrobiales	skos:closeMatch	NCBITaxon:41294	Nitrobacteraceae	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	alpha-2 proteobacteria
+NCBITaxon:50557	Insecta	skos:closeMatch	NCBITaxon:6960	Hexapoda	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	insects
+NCBITaxon:9779	Proboscidea <placentals>	skos:closeMatch	NCBITaxon:9780	Elephantidae	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	elephants
+OBI:0100026	organism	skos:closeMatch	UBERON:0000468	multicellular organism	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	organism
+PATO:0000001	quality	skos:closeMatch	RO:0000080	quality of	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	quality
+PATO:0000070	amount	skos:closeMatch	PATO:0001555	has number of	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	number
+PATO:0000070	amount	skos:closeMatch	PATO:0001555	has number of	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	number
+PATO:0000133	orientation	skos:closeMatch	PATO:0002326	angle	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	angle
+PATO:0000140	position	skos:closeMatch	RO:0001015	location of	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	location
+PATO:0000161	rate	skos:closeMatch	PATO:0001470	proportionality to	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	rate
+PATO:0000165	time	skos:closeMatch	PATO:0001309	duration	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	time
+PATO:0000407	flat	skos:closeMatch	PATO:0002253	platelike	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	plate-like
+PATO:0001470	proportionality to	skos:closeMatch	UO:0000190	ratio	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	ratio
+PATO:0001842	acidity	skos:closeMatch	UO:0000196	pH	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	ph
+PATO:0001873	cylindrical	skos:closeMatch	PATO:0002299	tubular	semapv:LexicalMatching	oaklib	0.5	oio:hasNarrowSynonym	oio:hasExactSynonym	tubulate
+PO:0000018	ovule primordium	skos:closeMatch	PO:0000019	gynoecium primordium	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:465
+PO:0000018	ovule primordium	skos:closeMatch	PO:0004703	carpel primordium	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:465
+PO:0000018	ovule primordium	skos:closeMatch	PO:0025477	floral organ primordium	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:465
+PO:0000019	gynoecium primordium	skos:closeMatch	PO:0004703	carpel primordium	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:465
+PO:0000019	gynoecium primordium	skos:closeMatch	PO:0025477	floral organ primordium	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:465
+PO:0001083	inflorescence development stage	skos:closeMatch	PO:0025527	shoot system development stage	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:517
+PO:0001083	inflorescence development stage	skos:closeMatch	PO:0025530	reproductive shoot system development stage	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:517
+PO:0004543	shoot axis tuber	skos:closeMatch	PO:0009001	fruit	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) diaspore
+PO:0004543	shoot axis tuber	skos:closeMatch	PO:0009001	fruit	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) diaspore
+PO:0004543	shoot axis tuber	skos:closeMatch	PO:0009010	seed	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) diaspore
+PO:0004543	shoot axis tuber	skos:closeMatch	PO:0009010	seed	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) diaspore
+PO:0004543	shoot axis tuber	skos:closeMatch	PO:0025522	tuber	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:127
+PO:0004543	shoot axis tuber	skos:closeMatch	PO:0025522	tuber	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:127
+PO:0004543	shoot axis tuber	skos:closeMatch	PO:0025522	tuber	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:127
+PO:0004543	shoot axis tuber	skos:closeMatch	PO:0025522	tuber	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:127
+PO:0004703	carpel primordium	skos:closeMatch	PO:0025128	phyllome primordium	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:466
+PO:0004703	carpel primordium	skos:closeMatch	PO:0025477	floral organ primordium	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:465
+PO:0006005	carpel anlagen	skos:closeMatch	PO:0025430	phyllome anlagen	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:427
+PO:0006005	carpel anlagen	skos:closeMatch	PO:0025433	root anlagen	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:427
+PO:0006079	shoot system meristem	skos:closeMatch	PO:0009013	portion of meristem tissue	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:472
+PO:0006079	shoot system meristem	skos:closeMatch	PO:0020148	shoot apical meristem	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:472
+PO:0006342	infructescence	skos:closeMatch	PO:0009049	inflorescence	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:260
+PO:0006342	infructescence	skos:closeMatch	PO:0009049	inflorescence	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:71
+PO:0006342	infructescence	skos:closeMatch	PO:0009062	gynoecium	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:71
+PO:0006342	infructescence	skos:closeMatch	PO:0020122	inflorescence axis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:260
+PO:0006342	infructescence	skos:closeMatch	PO:0025241	second order infructescence	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:261
+PO:0009001	fruit	skos:closeMatch	PO:0009010	seed	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) diaspore
+PO:0009001	fruit	skos:closeMatch	PO:0009010	seed	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) diaspore
+PO:0009001	fruit	skos:closeMatch	PO:0009010	seed	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) diaspore
+PO:0009001	fruit	skos:closeMatch	PO:0009010	seed	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) diaspore
+PO:0009001	fruit	skos:closeMatch	PO:0030100	legume fruit	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) dehiscent fruit
+PO:0009001	fruit	skos:closeMatch	PO:0030100	legume fruit	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) dehiscent fruit
+PO:0009001	fruit	skos:closeMatch	PO:0030104	caryopsis fruit	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) fruit indehiscent
+PO:0009001	fruit	skos:closeMatch	PO:0030104	caryopsis fruit	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) fruit indehiscent
+PO:0009001	fruit	skos:closeMatch	PO:0030108	berry fruit	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) fruit indehiscent
+PO:0009001	fruit	skos:closeMatch	PO:0030108	berry fruit	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) fruit indehiscent
+PO:0009001	fruit	skos:closeMatch	PO:0030111	pepo fruit	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) fruit indehiscent
+PO:0009001	fruit	skos:closeMatch	PO:0030111	pepo fruit	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) fruit indehiscent
+PO:0009006	shoot system	skos:closeMatch	PO:0025029	shoot axis	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	(related) shoot
+PO:0009013	portion of meristem tissue	skos:closeMatch	PO:0020148	shoot apical meristem	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:472
+PO:0009030	carpel	skos:closeMatch	PO:0009062	gynoecium	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) pistil
+PO:0009030	carpel	skos:closeMatch	PO:0009062	gynoecium	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:470
+PO:0009047	stem	skos:closeMatch	PO:0025001	cardinal organ part	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:52
+PO:0009047	stem	skos:closeMatch	PO:0025001	cardinal organ part	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:52
+PO:0009047	stem	skos:closeMatch	PO:0025001	cardinal organ part	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:52
+PO:0009047	stem	skos:closeMatch	PO:0025001	cardinal organ part	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:52
+PO:0009049	inflorescence	skos:closeMatch	PO:0009062	gynoecium	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:71
+PO:0009049	inflorescence	skos:closeMatch	PO:0020122	inflorescence axis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:260
+PO:0020144	apical meristem	skos:closeMatch	PO:0020148	shoot apical meristem	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) promeristem
+PO:0025112	second order infructescence axis	skos:closeMatch	PO:0025243	higher order infructescence axis	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:264
+PO:0025430	phyllome anlagen	skos:closeMatch	PO:0025433	root anlagen	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:427
+PO:0025476	tuberous root tuber	skos:closeMatch	PO:0025523	tuberous root	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:47
+PO:0025527	shoot system development stage	skos:closeMatch	PO:0025530	reproductive shoot system development stage	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:517
+PO:0025598	pistillate inflorescence	skos:closeMatch	PO:0025599	pistillate flower	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:585
+PO:0030104	caryopsis fruit	skos:closeMatch	PO:0030108	berry fruit	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) fruit indehiscent
+PO:0030104	caryopsis fruit	skos:closeMatch	PO:0030111	pepo fruit	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) fruit indehiscent
+PO:0030108	berry fruit	skos:closeMatch	PO:0030111	pepo fruit	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	oio:hasBroadSynonym	(broad) fruit indehiscent
+PO:0030108	berry fruit	skos:closeMatch	PO:0030111	pepo fruit	semapv:LexicalMatching	oaklib	0.5	oio:hasDbXref	oio:hasDbXref	po_git:652
+RO:0002264	acts upstream of or within	skos:closeMatch	RO:0002418	causally upstream of or within	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	affects
+RO:0002577	system	skos:closeMatch	UBERON:0000467	anatomical system	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	system
+TO:0000279	root weight	skos:closeMatch	TO:0000352	plant dry weight	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	(related) rtwt
+TO:0000371	yield trait	skos:closeMatch	TO:0000396	grain yield trait	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	(related) yld
+UBERON:0000922	embryo	skos:closeMatch	UBERON:0005423	developing anatomical structure	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	developmental tissue
+UBERON:0000923	germ layer	skos:closeMatch	UBERON:0005291	embryonic tissue	semapv:LexicalMatching	oaklib	0.5	oio:hasBroadSynonym	rdfs:label	embryonic tissue
+UBERON:0002050	embryonic structure	skos:closeMatch	UBERON:0005423	developing anatomical structure	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	developing structure
+UO:0000039	micromole	skos:closeMatch	UO:0010048	micromole	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	micromole
+UO:0000083	kilogram per cubic meter	skos:closeMatch	UO:0000093	cubic meter per kilogram	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cubic kilogram meter per
+UO:0000174	kilogram per liter	skos:closeMatch	UO:0000197	liter per kilogram	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	kilogram liter per
+UO:0000297	milli	skos:closeMatch	UO:0010009	milli	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	milli
