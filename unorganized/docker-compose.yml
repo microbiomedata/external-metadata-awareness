@@ -1,0 +1,11 @@
+services:
+  mongo:
+    image: mongo:latest
+    restart: unless-stopped
+
+  dev:
+    build: .
+    tty: true
+    stdin_open: true
+    depends_on:
+      - mongo
