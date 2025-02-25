@@ -9,8 +9,8 @@ env_local_scale	insecta-associated habitat	28
 env_medium	coastal water	9
 env_local_scale	bog	3
 env_local_scale	oil reservior	14
-env_broad_scale	temperate shrubland	6
 env_local_scale	wetland	9
+env_broad_scale	temperate shrubland	6
 env_local_scale	forest	21
 env_medium	pitcher plant fluid	6
 env_broad_scale	flooded savanna	1
