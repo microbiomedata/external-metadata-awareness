@@ -1,0 +1,1001 @@
+id	insdc_biosample_identifiers	env_broad_scale_id	env_broad_scale_mongo_label	env_broad_scale_auth_label	env_local_scale_id	env_local_scale_mongo_label	env_local_scale_auth_label	env_medium_id	env_medium_mongo_label	env_medium_auth_label	env_package_has_raw_value	normalized_env_package	associated_studies	predicted_env_package
+nmdc:bsm-11-002vgm56		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-006pnx90		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-00dkyf35		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-00hrxp98		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-00m15h97		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-00yhef97		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-011z7z70		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00005801	rhizosphere	rhizosphere	ENVO:00001998	soil	soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-0169zs66	biosample:SAMN10864929	ENVO:01001002	animal-associated environment	animal-associated environment	UBERON:0001555	digestive tract	digestive tract	ENVO:00002003	fecal material	fecal material			nmdc:sty-11-t91cwb40	host-associated
+nmdc:bsm-11-01bbrr08		ENVO:00000446		terrestrial biome	ENVO:01000219		anthropogenic terrestrial biome	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-01f6m423		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-01g9wf51		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-01jah904		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-01teww33		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00000011	garden	garden	ENVO:00005802	bulk soil	bulk soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-01vt2q72		ENVO:00000446		terrestrial biome	ENVO:01000816		area of deciduous forest	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-02kcw433		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-02n85875		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-02v78297		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-02x97z84	biosample:SAMN11532521	ENVO:01000174		forest biome	ENVO:01001803		tropical forest	ENVO:00005778		tropical soil			nmdc:sty-11-076c9980	soil
+nmdc:bsm-11-034x5t48		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-03c88471	biosample:SAMN18245245	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-03dy0348		ENVO:01001837	subalpine biome 	subalpine biome	ENVO:00000100	valley 	valley	ENVO:00005750	grassland soil 	grassland soil	soil	soil	nmdc:sty-11-28tm5d36	soil
+nmdc:bsm-11-03tatq76		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-03wdqa25		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-040a1y63		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-040pda34		ENVO:01000249	urban biome	urban biome	ENVO:00002003	fecal material	fecal material	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-042nd237		ENVO:01000174	forest biome	forest biome	ENVO:03600011	mineral horizon	mineral horizon	ENVO:00002261	forest soil	forest soil	soil	soil	nmdc:sty-11-8ws97026	soil
+nmdc:bsm-11-0435yq18		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-043hgn06		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-044gzn43		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002007	sediment	sediment		sediment	nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-04bta395		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-04kd7a87		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-04qjyv47	biosample:SAMN08902854	ENVO:01000177		grassland biome	ENVO:00000376		biosphere reserve	ENVO:00005750		grassland soil			nmdc:sty-11-zs2syx06	soil
+nmdc:bsm-11-04t36j23	biosample:SAMN12795171	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00000021	freshwater lake	freshwater lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-04tyx479	biosample:SAMN08778356	ENVO:01001002	animal-associated environment	animal-associated environment	UBERON:0001555	digestive tract	digestive tract	ENVO:00002003	fecal material	fecal material			nmdc:sty-11-t91cwb40	host-associated
+nmdc:bsm-11-04wp3b78		ENVO:00000446		terrestrial biome	ENVO:01000816		area of deciduous forest	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-04z8tj85		ENVO:01000215	temperate shrubland biome	temperate shrubland biome	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:01001209	wetland ecosystem	wetland ecosystem			nmdc:sty-11-547rwq94	plant-associated
+nmdc:bsm-11-05082t91	biosample:SAMN08902858	ENVO:01000177		grassland biome	ENVO:00000376		biosphere reserve	ENVO:00005750		grassland soil			nmdc:sty-11-zs2syx06	soil
+nmdc:bsm-11-05d5a977	biosample:SAMN18244945	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-05dve909		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00005801	rhizosphere	rhizosphere	ENVO:00001998	soil	soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-05fh0s26		ENVO:01001002	Animal-associated environment	animal-associated environment	UBERON:0001153	caecum		UBERON:0035118	material entity in digestive tract		Host-associated	host-associated	nmdc:sty-11-hdd4bf83	host-associated
+nmdc:bsm-11-05m5kp37	biosample:SAMN11532764	ENVO:01000174		forest biome	ENVO:01001803		tropical forest	ENVO:00005778		tropical soil			nmdc:sty-11-076c9980	soil
+nmdc:bsm-11-05t3df21	biosample:SAMN37862702	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-05yzsw39		ENVO:00000446		terrestrial biome	ENVO:01000219		anthropogenic terrestrial biome	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-063svk49		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-06bhy091		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-06ccvh28		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-06dh4270		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-06dzrg11		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-06hvfb08		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-06mvg980		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-06pa9m89	biosample:SAMEA7724288	ENVO:01000245		cropland biome	ENVO:00000119		planted forest	ENVO:02000059		surface soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-06qrej20		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-06ry4a86	biosample:SAMN18246934	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-06ta8e31		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-06tgpb52		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-06wdhd53		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-06zjzf92		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-070qpa21		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-070z3y04		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-071rdf83		ENVO:01001002	Animal-associated environment	animal-associated environment	UBERON:0001153	caecum		UBERON:0035118	material entity in digestive tract		Host-associated	host-associated	nmdc:sty-11-hdd4bf83	host-associated
+nmdc:bsm-11-072a9s43		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-28tm5d36	soil
+nmdc:bsm-11-074phz40		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-07ar1j63		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-07dyqv24	biosample:SAMN37862665	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-07hz4140		ENVO:01000212	temperate mixed forest biome	temperate mixed forest biome	ENVO:00002003	fecal material	fecal material	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	plant-associated
+nmdc:bsm-11-07js9c68	biosample:SAMN18247846	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-07nqms41		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-07pb3642		ENVO:01000200	tropical broadleaf forest biome	tropical broadleaf forest biome	ENVO:01000155	organic material	organic material	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	plant-associated
+nmdc:bsm-11-07qp3e36		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-07qq9z23		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-07spy989	biosample:SAMN10864401	ENVO:01000177		grassland biome	ENVO:00000292		watershed	ENVO:00005802		bulk soil			nmdc:sty-11-dcqce727	soil
+nmdc:bsm-11-0806bb27		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-083pnf20		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-083vtj79		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-08bzjv22		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-08e9gn78	biosample:SAMN18247739	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-08fpzx54		ENVO:01000174	forest biome	forest biome	ENVO:00000094	volcanic feature	volcanic feature	ENVO:01001841	volcanic soil	volcanic soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-08mamh62		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00000011	garden	garden	ENVO:00005802	bulk soil	bulk soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-08mmms67		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-08nch810		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-08nps265	biosample:SAMN18246391	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-08vsp197		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-08xb2k71	biosample:SAMN37862742	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-097t3b49		ENVO:00000890	small river biome	small river biome	ENVO:00002127	stream sediment	stream sediment	ENVO:00000495	tributary	tributary			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-09ad0019		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-09bbdk62	biosample:SAMN18247737	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-09ep6044		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-09h8g835		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-09z9jm13		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-09zas694		ENVO:00000446		terrestrial biome	ENVO:01000891		area of pastureland or hayfields	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-0ahthd94	biosample:SAMN43527827	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:00005801	rhizosphere	rhizosphere	ENVO:01000349	root matter	root matter	miscellaneous natural or artificial environment	miscellaneous natural or artificial environment	nmdc:sty-11-ev70y104	miscellaneous natural or artificial environment
+nmdc:bsm-11-0an3j196		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0asn5d63		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0b3f6q91	biosample:SAMN18247943	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-0b52dk93		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0b67sr13		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-0b8ncb13		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0b9aj433		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0bj8v379		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0bj91094		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0bnpdx15		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0br06j81	biosample:SAMN06264371	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:01000548	eutrophic lake	eutrophic lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-fkbnah04	soil
+nmdc:bsm-11-0bvp3w41	biosample:SAMN18245678	ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-0byf2s84	biosample:SAMN37862661	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0c5jqf27		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0c9czb71		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0cd1ge08	biosample:SAMN18248538	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-0ch3bt53	biosample:SAMN07630530	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-fkbnah04	soil
+nmdc:bsm-11-0cq0tt05	biosample:SAMN10865517	ENVO:01001002	animal-associated environment	animal-associated environment	UBERON:0001555	digestive tract	digestive tract	ENVO:00002003	fecal material	fecal material			nmdc:sty-11-t91cwb40	host-associated
+nmdc:bsm-11-0cqdm784	biosample:SAMN43527826	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:01000621	microcosm	microcosm	ENVO:00005791	Sterile water	sterile water	miscellaneous natural or artificial environment	miscellaneous natural or artificial environment	nmdc:sty-11-ev70y104	miscellaneous natural or artificial environment
+nmdc:bsm-11-0d2xxc20		ENVO:01000212	temperate mixed forest biome	temperate mixed forest biome	ENVO:00002003	fecal material	fecal material	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	plant-associated
+nmdc:bsm-11-0d4a3v31		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0d6dns65		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0d6kw824		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-0d7rka29		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0djp2e45		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0ds10w95		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0dvkcy09	biosample:SAMN11532487	ENVO:01000174		forest biome	ENVO:01001803		tropical forest	ENVO:00005778		tropical soil			nmdc:sty-11-076c9980	soil
+nmdc:bsm-11-0dxeyx75		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0e0c0n70		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0e3ayb34	biosample:SAMN10864896	ENVO:01001002	animal-associated environment	animal-associated environment	UBERON:0001555	digestive tract	digestive tract	ENVO:00002003	fecal material	fecal material			nmdc:sty-11-t91cwb40	host-associated
+nmdc:bsm-11-0e61tc95		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0e7t9d56		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0eaqta51	biosample:SAMN37862707	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0earmn44		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0ebe7s44		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0egxc971		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-0ewcv120		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0f42r714	biosample:SAMN08778364	ENVO:01001002	animal-associated environment	animal-associated environment	UBERON:0001555	digestive tract	digestive tract	ENVO:00002003	fecal material	fecal material			nmdc:sty-11-t91cwb40	host-associated
+nmdc:bsm-11-0f43ab20		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0f4qbv31		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0f7w3426		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0fg7rn04		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0fps8951		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0fxs7w80		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002007	sediment	sediment		sediment	nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-0g28x785		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0g3qzr85		ENVO:00000446		terrestrial biome	ENVO:00000516	hummock	hummock	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-0g4d7n95		ENVO:00000447	marine biome	marine biome	ENVO:00002003	fecal material	fecal material	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	plant-associated
+nmdc:bsm-11-0g6wkd40		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0gdeef56	biosample:SAMN17675398	ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-0geq1e97		ENVO:00000446		terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-0gj3wh79	biosample:SAMN37862669	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0gmd9f09		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0gy85h88		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0h3s6t03		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-0h7ft579		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0hc2cc92		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0hh70w74		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0hjwvs60		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0hkm4783		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0hmr6870		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0hz4rd27		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0j182d47		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0j2bs453	biosample:SAMN18246919	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-0j3ff625		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0j8e6d39		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0jdesy83		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-0jgtxr69	biosample:SAMN18245248	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-0jh8w006	biosample:SAMN18245147	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-0jsqys69		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0jw46z66		ENVO:00000446		terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-0jxgba87		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0k5bep35		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0k6dy332		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0k6fam25		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002007	sediment	sediment		sediment	nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-0k8nkx16	biosample:SAMN06264537	ENVO:00000446		terrestrial biome	PO:0025025		root system	PO:0009007		portion of plant tissue		plant-associated	nmdc:sty-11-1t150432	plant-associated
+nmdc:bsm-11-0kawe915	biosample:SAMN18247907	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002132	metalimnion	metalimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5tgfr349	soil
+nmdc:bsm-11-0kekqm16		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0mbb0m42	biosample:SAMN18245375	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-0mmva916		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0mt42v27		ENVO:00000446		terrestrial biome	ENVO:01001370	tundra ecosystem	tundra ecosystem	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-0n9kgt73		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0nas9n36		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0nazn012		ENVO:01001002	Animal-associated environment	animal-associated environment	UBERON:0001153	caecum		UBERON:0035118	material entity in digestive tract		Host-associated	host-associated	nmdc:sty-11-hdd4bf83	host-associated
+nmdc:bsm-11-0nbmnc66		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0nd36621		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0ne9e584	biosample:SAMN12796213	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00000021	freshwater lake	freshwater lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-0nez8d79		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0nk4at30		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0nqehw82		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0p3waw07	biosample:SAMN11533383	ENVO:01000174		forest biome	ENVO:01001803		tropical forest	ENVO:00005778		tropical soil			nmdc:sty-11-076c9980	soil
+nmdc:bsm-11-0pm8jq17		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0pp1y564		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00000011	garden	garden	ENVO:00005802	bulk soil	bulk soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-0pq23720		ENVO:00000446		terrestrial biome	ENVO:01000219		anthropogenic terrestrial biome	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-0pq46m48	biosample:SAMN10864179	ENVO:01000177		grassland biome	ENVO:00000292		watershed	ENVO:00005802		bulk soil			nmdc:sty-11-dcqce727	soil
+nmdc:bsm-11-0pqvg660		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-0pybkd05		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0pyv7738		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-0q0ytn25		ENVO:01000249	urban biome	urban biome	ENVO:00002003	fecal material	fecal material	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-0q1w4832		ENVO:01001002	Animal-associated environment	animal-associated environment	UBERON:0001153	caecum		UBERON:0035118	material entity in digestive tract		Host-associated	host-associated	nmdc:sty-11-hdd4bf83	host-associated
+nmdc:bsm-11-0q26tj53		ENVO:01000022	marine salt marsh biome	marine salt marsh biome	ENVO:00000054	saline marsh	saline marsh	ENVO:00001998	soil	soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-0qa78w81		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0qbfyr37		ENVO:00000446		terrestrial biome	ENVO:01000888		area of gramanoid or herbaceous vegetation	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-0qmfcv11		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-0qypsy03		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0r62mq05		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0rn5v405		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0rnz8g06		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0rqhtj66		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-0rqnr440		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0rqs8455		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-28tm5d36	soil
+nmdc:bsm-11-0rtyy508		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-0rvewk88	biosample:SAMN18247126	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-0rygg262	biosample:SAMN43527825	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:00005801	rhizosphere	rhizosphere	ENVO:01000349	root matter	root matter	miscellaneous natural or artificial environment	miscellaneous natural or artificial environment	nmdc:sty-11-ev70y104	miscellaneous natural or artificial environment
+nmdc:bsm-11-0s4z3q14		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0s62j636		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0s7xvb75		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0snmnf40		ENVO:01000211	temperate coniferous forest biome	temperate coniferous forest biome	ENVO:01000211	temperate coniferous forest biome	temperate coniferous forest biome	ENVO:00001998	soil	soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-0t2nbd91		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0t30k005		ENVO:01000249	urban biome	urban biome	ENVO:00002059	biosolids	biosolids	ENVO:00002123	bioreactor	bioreactor			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-0t4hha86		ENVO:01000212	temperate mixed forest biome	temperate mixed forest biome	ENVO:00002003	fecal material	fecal material	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	plant-associated
+nmdc:bsm-11-0tbjtz54		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0tde3t26		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0teqzx96		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0thxv339		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0v0ecc36		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0v1etz47		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0v2kpm96		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0v4vv913		ENVO:01000212	temperate mixed forest biome	temperate mixed forest biome	ENVO:00002003	fecal material	fecal material	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	plant-associated
+nmdc:bsm-11-0ve03274		ENVO:01000200	tropical broadleaf forest biome	tropical broadleaf forest biome	ENVO:01000155	organic material	organic material	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	plant-associated
+nmdc:bsm-11-0wb39875		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0whn0117		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0wvxcg04		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0x2ymd43		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0x5m4z09		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0x7bvh88		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0x9p8y05		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000894	area of emergent herbaceous wetland	area of emergent herbaceous wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0xajtb06		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-0xg3w467		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0xkg1h94	biosample:SAMN18247278	ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-0xm44r37		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0xn27x15		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0xqxvc88		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00005801	rhizosphere	rhizosphere	ENVO:00001998	soil	soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-0xs3cz68	biosample:SAMN11528698	ENVO:01000174		forest biome	ENVO:01001803		tropical forest	ENVO:00005778		tropical soil			nmdc:sty-11-076c9980	soil
+nmdc:bsm-11-0xvgya91		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0xxj7a46		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-0yb49r23		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-0yjc5n80		ENVO:00000446		terrestrial biome	ENVO:01000219		anthropogenic terrestrial biome	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-0ynadq83	biosample:SAMN18247944	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-0yw1rj05		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0ywr3c59		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0z0yn327	biosample:SAMN08779049	ENVO:01001002	animal-associated environment	animal-associated environment	UBERON:0001555	digestive tract	digestive tract	ENVO:00002003	fecal material	fecal material			nmdc:sty-11-t91cwb40	host-associated
+nmdc:bsm-11-0z0z0144	biosample:SAMN18248242	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-0zbejz22	biosample:SAMN18246724	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-0zcdcz38		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0zd71e37		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0zddn388	biosample:SAMN06265186	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:01000548	eutrophic lake	eutrophic lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-fkbnah04	soil
+nmdc:bsm-11-0zgy0491		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0zn3g786		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-0zp00g98		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-0zxynz54		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-101d8291	biosample:SAMN12795907	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00000021	freshwater lake	freshwater lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-1026rp71		ENVO:00000892	small lake biome	small freshwater lake biome	ENVO:00000546	lake sediment	lake sediment	ENVO:00000512	pond bed	pond bed			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-104brf69		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-106c8d05		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-10c7qy36		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-10cg0s25		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-10fc8a15		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-10g75712	biosample:SAMN18247282	ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-10re4k49		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1109f777		ENVO:01000177	grassland biome	grassland biome	ENVO:01001785	land	land	ENVO:00005750	grassland soil	grassland soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-11226k13	biosample:SAMN18247751	ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-112jxh69	biosample:SAMN43527824	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:01000621	microcosm	microcosm	ENVO:00005791	Sterile water	sterile water	miscellaneous natural or artificial environment	miscellaneous natural or artificial environment	nmdc:sty-11-ev70y104	miscellaneous natural or artificial environment
+nmdc:bsm-11-113gg097		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-115r6257		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-116fe613		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-11a1rr28		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-11avmz59		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-11hvm142		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-11jk9a93		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-11paxx81		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-11ybd810		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-127y7152		ENVO:01000174	forest biome	forest biome	ENVO:03600018	organic horizon	organic horizon	ENVO:00005781	heat stressed soil	heat stressed soil	soil	soil	nmdc:sty-11-8ws97026	soil
+nmdc:bsm-11-12e4ke56		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-12esnc57		ENVO:01000249	urban biome 	urban biome	ENVO:00000444	woodland clearing 	woodland clearing	ENVO:00002261	forest soil 	forest soil	soil	soil	nmdc:sty-11-28tm5d36	soil
+nmdc:bsm-11-12khgx15		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-12zm4r83		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1302r041	biosample:SAMEA7724217	ENVO:01000245		cropland biome	ENVO:01000892		area of cropland	ENVO:00001998		soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-133a9t75		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1362ms92		ENVO:00000446		terrestrial biome	ENVO:01000892		area of cropland	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-13b8a328	biosample:SAMN07632078	ENVO:00000446	terrestrial biome	terrestrial biome	PO:0025025	root system	root system	ENVO:00005801	rhizosphere	rhizosphere			nmdc:sty-11-prtb4s28	plant-associated
+nmdc:bsm-11-13kvnw34		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-13n02604		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-13p5fw68	biosample:SAMN06344022	ENVO:00000446	terrestrial biome	terrestrial biome	PO:0025025	root system	root system	PO:0009005	root	root			nmdc:sty-11-prtb4s28	plant-associated
+nmdc:bsm-11-13rnnv18	biosample:SAMN43527823	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:00005801	rhizosphere	rhizosphere	ENVO:01000349	root matter	root matter	miscellaneous natural or artificial environment	miscellaneous natural or artificial environment	nmdc:sty-11-ev70y104	miscellaneous natural or artificial environment
+nmdc:bsm-11-13rvbb54		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-13s3f541		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-13tve392		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-145xg276		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1481pt52		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-14986392	biosample:SAMN37862718	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-14dtyj87		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-14hxc920		ENVO:00000446		terrestrial biome	ENVO:01001370	tundra ecosystem	tundra ecosystem	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-14qr3105		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-14xprx08		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-14y6dz18		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-158pa966		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-15q6wv37	biosample:SAMN18247698	ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-162tdx86		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-163kk106		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-168xmm55		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-16t3g930	biosample:SAMN37862680	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-16yk2m32		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1713p538		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-171et506		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-17ag3b30		ENVO:00000446		terrestrial biome	ENVO:00000516	hummock	hummock	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-17djvx32		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-17dpqm86		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-28tm5d36	soil
+nmdc:bsm-11-17hg1e09		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-17rsbh94	biosample:SAMN37862665	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-17yggv08		ENVO:01000221	temperate woodland biome 	temperate woodland biome	ENVO:00002000	slope 	slope	ENVO:00002261	forest soil 	forest soil	soil	soil	nmdc:sty-11-28tm5d36	soil
+nmdc:bsm-11-182t3n64		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-186rqh54	biosample:SAMN06269025	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:01000774	oligotrophic lake	oligotrophic lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-fkbnah04	soil
+nmdc:bsm-11-18btad96		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00005801	rhizosphere	rhizosphere	ENVO:00001998	soil	soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-18ejwv75		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000894	area of emergent herbaceous wetland	area of emergent herbaceous wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-18mvcq04		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-190hex25		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-197ez411		ENVO:01000339	polar biome	polar biome	ENVO:00000133	glacier	glacier	ENVO:00001998	soil	soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-19v98823		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01001057	environment associated with a plant part or small plant	environment associated with a plant part or small plant	PO:0025034	leaf	leaf		plant-associated	nmdc:sty-11-r2h77870	plant-associated
+nmdc:bsm-11-19z8hm83		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-19z9km20		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-1a77a924		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1a8dy123		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1a9d1633		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00005801	rhizosphere	rhizosphere	ENVO:00001998	soil	soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-1abjk337	biosample:SAMN18247712	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-1affyn17		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1am9vt77	biosample:SAMEA7724345	ENVO:01000250		subpolar coniferous forest biome	ENVO:01000355		vegetation layer	ENVO:00005774		peat soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-1amv9s56		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1aq18b09		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1ay3rx25		ENVO:00000446		terrestrial biome	ENVO:01000219		anthropogenic terrestrial biome	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-1ayznn69		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1az3ym15		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1b0wkq73		ENVO:01000248	dense settlement biome	dense settlement biome	ENVO:00003031	animal manure	animal manure	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-1b487w10		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1b773e81	biosample:SAMN06265090	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:01000548	eutrophic lake	eutrophic lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-fkbnah04	soil
+nmdc:bsm-11-1b87xf61		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1by2a436		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1byjjh32		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1c3d5n20		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1d5ngd13		ENVO:00000446		terrestrial biome	ENVO:01000219		anthropogenic terrestrial biome	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-1dcchs68		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1dd4dk74		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1dg9pg26		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1dn6a430		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1dpnqj50		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00000011	garden	garden	ENVO:00005802	bulk soil	bulk soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-1dr3yg80		ENVO:01000189	temperate savanna biome 	temperate savanna biome	ENVO:00000086	plain 	plain	ENVO:00005760	burned soil 	burned soil	soil	soil	nmdc:sty-11-28tm5d36	soil
+nmdc:bsm-11-1drqxc52		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1dwqny12	biosample:SAMN43527822	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:01000621	microcosm	microcosm	ENVO:00005791	Sterile water	sterile water	miscellaneous natural or artificial environment	miscellaneous natural or artificial environment	nmdc:sty-11-ev70y104	miscellaneous natural or artificial environment
+nmdc:bsm-11-1dxe8825		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1dzc3x98		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-1ed0ac43		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1edk3k41		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-1eqt1z88		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1er31a51		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1evk3b45		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-1eybv881		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00000011	garden	garden	ENVO:00005802	bulk soil	bulk soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-1f79d707		ENVO:00000446		terrestrial biome	ENVO:01000855		area of mixed forest	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-1fa0hs25		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00005801	rhizosphere	rhizosphere	ENVO:00001998	soil	soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-1fhqn927		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1fjptk24		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-1frj0t76		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1fsf9z28		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1ft6wx13		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1fw8f065		ENVO:00000446		terrestrial biome	ENVO:01000219		anthropogenic terrestrial biome	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-1fwekh16		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1fxj7q71	biosample:SAMN18246723	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-1fxq7b73		ENVO:00000446		terrestrial biome	ENVO:01000869		area of scrub	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-1g6cz846		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1g7xbc30		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002007	sediment	sediment		sediment	nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-1g814q21	biosample:SAMN43527821	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:00005801	rhizosphere	rhizosphere	ENVO:01000349	root matter	root matter	miscellaneous natural or artificial environment	miscellaneous natural or artificial environment	nmdc:sty-11-ev70y104	miscellaneous natural or artificial environment
+nmdc:bsm-11-1g8nz369	biosample:SAMN37862705	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1gcypf43		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1gf9wt88	biosample:SAMN18245950	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-1gm9pn76		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-1gnanf82		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1gy1sq66		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1gymef08		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1gzgce32		ENVO:01001002	Animal-associated environment	animal-associated environment	UBERON:0001153	caecum		UBERON:0035118	material entity in digestive tract		Host-associated	host-associated	nmdc:sty-11-hdd4bf83	host-associated
+nmdc:bsm-11-1h2cv511		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1h3e1z25		ENVO:00000446		terrestrial biome	ENVO:01000219		anthropogenic terrestrial biome	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-1h5ge303		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002007	sediment	sediment		sediment	nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-1hc5gy47		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1hjq8j05	biosample:SAMN18246398	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-1hkmx038		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1hm8wk38		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1hvvpx18	biosample:SAMN18245538	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-1j598v71		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1j6kvc24		ENVO:01000249	urban biome	urban biome	ENVO:00002003	fecal material	fecal material	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-1j7f2f13		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1jbmeg10		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1jhh6b51		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-1jtev689		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1k40dz92		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1k830e54		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1kadb632		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1kamm768		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1kc3zb19		ENVO:00000892	small lake biome	small freshwater lake biome	ENVO:00000546	lake sediment	lake sediment	ENVO:00000512	pond bed	pond bed			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-1kc7kw84		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000894	area of emergent herbaceous wetland	area of emergent herbaceous wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1kjfmt89		ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-1kpx8p74		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1kvye254		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1kysjj12		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1kzrnd52		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1kzwrj71		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1kzywk39	biosample:SAMN18246899	ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-1m0p3c27	biosample:SAMN12794842	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00000021	freshwater lake	freshwater lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-1m51cm95		ENVO:00000446		terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-1m7kvm18		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-1m8p7p45		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1m9zzf44		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1mhzmg74		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1mw29n05	biosample:SAMN43527820	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:01000621	microcosm	microcosm	ENVO:00005791	Sterile water	sterile water	miscellaneous natural or artificial environment	miscellaneous natural or artificial environment	nmdc:sty-11-ev70y104	miscellaneous natural or artificial environment
+nmdc:bsm-11-1myy1191		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-1mzcdt88		ENVO:00000446		terrestrial biome	ENVO:01000219		anthropogenic terrestrial biome	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-1n211s83		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1n4rp732		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1n566p31	biosample:SAMN07632067	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01001785	land	land	ENVO:00001998	soil	soil			nmdc:sty-11-prtb4s28	soil
+nmdc:bsm-11-1n9brc67	biosample:SAMN37862664	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1nsdsc26	biosample:SAMN43527819	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:00005801	rhizosphere	rhizosphere	ENVO:01000349	root matter	root matter	miscellaneous natural or artificial environment	miscellaneous natural or artificial environment	nmdc:sty-11-ev70y104	miscellaneous natural or artificial environment
+nmdc:bsm-11-1p0j4385	biosample:SAMN06344030	ENVO:00000446	terrestrial biome	terrestrial biome	PO:0025025	root system	root system	PO:0009005	root	root			nmdc:sty-11-prtb4s28	plant-associated
+nmdc:bsm-11-1p0wgj81		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-1p2n9n46		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-1p3c0k03		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1p3pzd81		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1p6fh432		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1p8mqd85		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1pbfcc79		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1ppwv655		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1pqb6b14		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1q33d349		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1q90hg48		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-1qcn5r70		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1qhbxx29		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1qygsp35		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1qyzap15		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1r4br749		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00000011	garden	garden	ENVO:00005802	bulk soil	bulk soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-1r59n445		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00005801	rhizosphere	rhizosphere	ENVO:00001998	soil	soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-1rae0a48		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1rm17e70		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1rn3f820	biosample:SAMN11532109	ENVO:01000174		forest biome	ENVO:01001803		tropical forest	ENVO:00005778		tropical soil			nmdc:sty-11-076c9980	soil
+nmdc:bsm-11-1rrw7h74	biosample:SAMN18247710	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-1rvbg528	biosample:SAMN18246715	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-1s142j75		ENVO:00000446		terrestrial biome	ENVO:01000888		area of gramanoid or herbaceous vegetation	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-1s5b2278		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1s7vxr77		ENVO:00000446		terrestrial biome	ENVO:01000869		area of scrub	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-1sn5mv14		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1spk4k39	biosample:SAMN07632060	ENVO:00000446	terrestrial biome	terrestrial biome	PO:0025025	root system	root system	ENVO:00005801	rhizosphere	rhizosphere			nmdc:sty-11-prtb4s28	plant-associated
+nmdc:bsm-11-1sqwza47		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1srsh991	biosample:SAMN10863953	ENVO:01000177		grassland biome	ENVO:00000292		watershed	ENVO:00005802		bulk soil			nmdc:sty-11-dcqce727	soil
+nmdc:bsm-11-1t5ern24		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1tbfgc11		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1tmyhy51		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1tt5a628		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-1ttnjf36		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1tw7rz42		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1v3w4k41		ENVO:00000446		terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-1v418p02		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1vny2356		ENVO:01000249	urban biome	urban biome	ENVO:00002003	fecal material	fecal material	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-1vzn7q59	biosample:SAMN43527818	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:00005801	rhizosphere	rhizosphere	ENVO:01000349	root matter	root matter	miscellaneous natural or artificial environment	miscellaneous natural or artificial environment	nmdc:sty-11-ev70y104	miscellaneous natural or artificial environment
+nmdc:bsm-11-1w5nfd33		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-1wbmbn06		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1wcc3926		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1whcey50	biosample:SAMN14511330	ENVO:01001002	animal-associated environment	animal-associated environment	UBERON:0001555	digestive tract	digestive tract	ENVO:00002003	fecal material	fecal material			nmdc:sty-11-t91cwb40	host-associated
+nmdc:bsm-11-1wr4q368	biosample:SAMN07632066	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01001785	land	land	ENVO:00001998	soil	soil			nmdc:sty-11-prtb4s28	soil
+nmdc:bsm-11-1x1djv86		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1x3q4h45		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1x4qvf31		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1x9ae596		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1xcga558		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1xh21e38		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1xw24m35		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1xx5yx87		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1xy0sv79		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-1y1nfb78		ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-1y4mvw72		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1y6wsk73		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1yc28a60		ENVO:01000249	urban biome	urban biome	ENVO:00002003	fecal material	fecal material	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-1ygvdz48		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-1ymf2v75		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1yq40d22		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-1yrt3r71		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1yvac190		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01001057	environment associated with a plant part or small plant	environment associated with a plant part or small plant	ENVO:01000349	root matter	root matter		plant-associated	nmdc:sty-11-r2h77870	plant-associated
+nmdc:bsm-11-1yvrq358		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1yxscs24		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1yz48307		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-1zdsxs32		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00000011	garden	garden	ENVO:00005802	bulk soil	bulk soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-1ze4mb29	biosample:SAMN11533381	ENVO:01000174		forest biome	ENVO:01001803		tropical forest	ENVO:00005778		tropical soil			nmdc:sty-11-076c9980	soil
+nmdc:bsm-11-1znmzj36		ENVO:00000446		terrestrial biome	ENVO:01000219		anthropogenic terrestrial biome	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-1zsths21		ENVO:01001002	Animal-associated environment	animal-associated environment	UBERON:0001153	caecum		UBERON:0035118	material entity in digestive tract		Host-associated	host-associated	nmdc:sty-11-hdd4bf83	host-associated
+nmdc:bsm-11-1zx6fg10	biosample:SAMN43527817	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:01000621	microcosm	microcosm	ENVO:00005791	Sterile water	sterile water	miscellaneous natural or artificial environment	miscellaneous natural or artificial environment	nmdc:sty-11-ev70y104	miscellaneous natural or artificial environment
+nmdc:bsm-11-203z5687		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-20gdzp94		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-20h6s372		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-20meth61		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-20n7wy48		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00000011	garden	garden	ENVO:00005802	bulk soil	bulk soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-20vcf706		ENVO:00000446		terrestrial biome	ENVO:01000893		area of woody wetland	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-21833332		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-21cfvr11	biosample:SAMN37862735	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-21j98y09		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-21pxwc66		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-21rj7e86	biosample:SAMN37862671	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-21xrn895	biosample:SAMN37862689	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000887	area of sedge- and forb-dominated herbaceous vegetation	area of sedge- and forb-dominated herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-221gqs06		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-222nfb60		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-223nqw71		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-227vda38		ENVO:01000212	temperate mixed forest biome	temperate mixed forest biome	ENVO:00002003	fecal material	fecal material	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	plant-associated
+nmdc:bsm-11-228q6569		ENVO:01000174	forest biome	forest biome	ENVO:00000094	volcanic feature	volcanic feature	ENVO:01001841	volcanic soil	volcanic soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-22n1qn36		ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-22p3hw30		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-22rvn024		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-22w53003		ENVO:00000446		terrestrial biome	ENVO:01000887	area of sedge- and forb-dominated herbaceous vegetation	area of sedge- and forb-dominated herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-23e67720		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-23ern728	biosample:SAMN18247141	ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-23jz8a58	biosample:SAMN12795918	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00000021	freshwater lake	freshwater lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-23nxyk54		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-23rb5739		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-23tyv410		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-23vvk069		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-23w82g32		ENVO:00000446		terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-240d0454		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-24153934		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-242za275		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-28tm5d36	soil
+nmdc:bsm-11-24619e70		ENVO:00000447	marine biome	marine biome	ENVO:2100002	intestine environment	intestine environment	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	plant-associated
+nmdc:bsm-11-247mvn50		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-24pfxa56		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-2576zp70		ENVO:00000446		terrestrial biome	ENVO:01000219		anthropogenic terrestrial biome	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-257rs124		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-25nqh646	biosample:SAMN10864869	ENVO:01001002	animal-associated environment	animal-associated environment	UBERON:0001555	digestive tract	digestive tract	ENVO:00002003	fecal material	fecal material			nmdc:sty-11-t91cwb40	host-associated
+nmdc:bsm-11-25tpde62		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-28tm5d36	soil
+nmdc:bsm-11-262p6s66	biosample:SAMN18247950	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-262r9r39		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-268k4561		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-26bgjj05		ENVO:00000446		terrestrial biome	ENVO:01000888		area of gramanoid or herbaceous vegetation	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-26dffh81		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-26khva17		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-26n20n70		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-26syey05		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2744k638		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2769z821		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-276f8m57		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-27fpcp86		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002007	sediment	sediment		sediment	nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-27jtvy76	biosample:SAMN37862669	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-27kvkp81	biosample:SAMN14511296	ENVO:01001002	animal-associated environment	animal-associated environment	UBERON:0001555	digestive tract	digestive tract	ENVO:00002003	fecal material	fecal material			nmdc:sty-11-t91cwb40	host-associated
+nmdc:bsm-11-27n9mt87		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-27x6e010		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-27za2f92	biosample:SAMN37862675	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-283f1803		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-287ny173		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-28a1zr12		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-28kgw077		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01001057	environment associated with a plant part or small plant	environment associated with a plant part or small plant	PO:0025034	leaf	leaf		plant-associated	nmdc:sty-11-r2h77870	plant-associated
+nmdc:bsm-11-28ssek36		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-28v9fb45		ENVO:01000212	temperate mixed forest biome	temperate mixed forest biome	ENVO:00002003	fecal material	fecal material	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	plant-associated
+nmdc:bsm-11-28xnr191		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002007	sediment	sediment		sediment	nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-292c1h02		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2940sv11		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-295d8545		ENVO:00000446		terrestrial biome	ENVO:01000869		area of scrub	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-29d9a657	biosample:SAMN10864412	ENVO:01000177		grassland biome	ENVO:00000292		watershed	ENVO:00005802		bulk soil			nmdc:sty-11-dcqce727	soil
+nmdc:bsm-11-29kct608		ENVO:01000339	polar biome	polar biome	ENVO:00000133	glacier	glacier	ENVO:00001998	soil	soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-29krtc83		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-29p1bh61		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-29y6f126		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-29zhmk92		ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-2a37n046		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00005801	rhizosphere	rhizosphere	ENVO:00001998	soil	soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-2ag8pj48		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2agfbg73		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2ags7v65		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2ah5z651	biosample:SAMEA7724320	ENVO:01000250		subpolar coniferous forest biome	ENVO:01000174		forest biome	ENVO:00001998		soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-2ak1nh85		ENVO:00000446		terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-2an4ky54		ENVO:00000446		terrestrial biome	ENVO:01000892		area of cropland	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-2anayn90		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2aq28w93		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-2b3je276		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2b3nvt16		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2b47qb51		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2bab6228		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2bgtzv06		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2btg8s15		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-2c1nf635		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2c7vsd55		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-2c8r9c97		ENVO:00000892	small lake biome	small freshwater lake biome	ENVO:00000546	lake sediment	lake sediment	ENVO:00000512	pond bed	pond bed			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-2cc3wv03	biosample:SAMN18245759	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-2cctk617		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-2cn89r57		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2cvp9m65		ENVO:00000446		terrestrial biome	ENVO:01001370	tundra ecosystem	tundra ecosystem	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-2d3eam48		ENVO:01000219	anthropogenic terrestrial biome 	anthropogenic terrestrial biome	ENVO:00000114	agricultural field 	agricultural field	ENVO:00002259	agricultural soil 	agricultural soil	soil	soil	nmdc:sty-11-28tm5d36	soil
+nmdc:bsm-11-2d4vgv18		ENVO:00000446		terrestrial biome	ENVO:01000888		area of gramanoid or herbaceous vegetation	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-2d51bs17		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2d77nw27		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2da2vw35		ENVO:00000446		terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-2da77e23		ENVO:01000049	marine coral reef biome	marine coral reef biome	ENVO:01000155	organic material	organic material	ENVO:01000024	marine benthic biome	marine benthic biome			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-2dh3gj76		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2drasm02		ENVO:01000177	grassland biome	grassland biome	ENVO:00000546	lake sediment	lake sediment	ENVO:00000389	intermittent wetland	intermittent wetland			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-2f27b571		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2fjtje68	biosample:SAMN08902850	ENVO:01000177		grassland biome	ENVO:00000376		biosphere reserve	ENVO:00005750		grassland soil			nmdc:sty-11-zs2syx06	soil
+nmdc:bsm-11-2fxbgf80		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2g2td096		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2g6d7w97		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00005801	rhizosphere	rhizosphere	ENVO:00001998	soil	soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-2g9wzw84		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2gbbgq36		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2ghvt854		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2h1bv722		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2h2j6s31	biosample:SAMN10864123	ENVO:01000177		grassland biome	ENVO:00000292		watershed	ENVO:00005802		bulk soil			nmdc:sty-11-dcqce727	soil
+nmdc:bsm-11-2h512j54		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2hk4pa77	biosample:SAMN18245519	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-2hmpdx59		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2hnm2028	biosample:SAMN37862722	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2hqjj767		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2hswww54	biosample:SAMN06343684	ENVO:00000446		terrestrial biome	ENVO:01001209		wetland ecosystem	ENVO:00003082		enriched soil		hydrocarbon resources-fluids_swabs	nmdc:sty-11-8fb6t785	hydrocarbon resources-fluids_swabs
+nmdc:bsm-11-2htmvy39		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2hv7wn93	biosample:SAMEA7724292	ENVO:01000249		urban biome	ENVO:00000120		oil palm plantation	ENVO:02000059		surface soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-2hve6455		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2hze3183		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2j4qq664		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-2j81ra50	biosample:SAMN18247326	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-2j891q50		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2j8f3z26		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2jcr6626	biosample:SAMN11532859	ENVO:01000174		forest biome	ENVO:01001803		tropical forest	ENVO:00005778		tropical soil			nmdc:sty-11-076c9980	soil
+nmdc:bsm-11-2jg2sa30		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2jgt5a02		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2jmhwj26		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2jsrz965		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-2jt0tm89		ENVO:01000249	urban biome	urban biome	ENVO:00002059	biosolids	biosolids	ENVO:00002123	bioreactor	bioreactor			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-2jtnq042		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2k12be49		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2k5t0q25		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2k6pk233		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2k7det13		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00000011	garden	garden	ENVO:00005802	bulk soil	bulk soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-2k7hev41		ENVO:00000446		terrestrial biome	ENVO:01000219		anthropogenic terrestrial biome	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-2kd3pz10		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2kdpcs44		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2khbs287	biosample:SAMN43527816	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:00005801	rhizosphere	rhizosphere	ENVO:01000349	root matter	root matter	miscellaneous natural or artificial environment	miscellaneous natural or artificial environment	nmdc:sty-11-ev70y104	miscellaneous natural or artificial environment
+nmdc:bsm-11-2kne9n35		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2kqg6170	biosample:SAMN18246402	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-2krgp822		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2krtwg33		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2m6ma821		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2m8gfz34		ENVO:00000446		terrestrial biome	ENVO:01000869		area of scrub	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-2mb94m91		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00000011	garden	garden	ENVO:00005802	bulk soil	bulk soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-2mfrgx93		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-2mx0se38		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2mzm9q64		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2n9dds87		ENVO:00000446		terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-2nacvc65	biosample:SAMN18247714	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-2nk75n51		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2npw1g23	biosample:SAMN11533352	ENVO:01000174		forest biome	ENVO:01001803		tropical forest	ENVO:00005778		tropical soil			nmdc:sty-11-076c9980	soil
+nmdc:bsm-11-2nqe9j19	biosample:SAMN10863951	ENVO:01000177		grassland biome	ENVO:00000292		watershed	ENVO:00005802		bulk soil			nmdc:sty-11-dcqce727	soil
+nmdc:bsm-11-2nrtzw61		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2ns1df15		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2nt1jx32		ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-2nt7ft36		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2pab2r51		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2pdqgg53	biosample:SAMN11532917	ENVO:01000174		forest biome	ENVO:01001803		tropical forest	ENVO:00005778		tropical soil			nmdc:sty-11-076c9980	soil
+nmdc:bsm-11-2pebmt85	biosample:SAMN18245179	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-2pgc5f49		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000894	area of emergent herbaceous wetland	area of emergent herbaceous wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2phkb281		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2prjdm84		ENVO:01000219	anthropogenic terrestrial biome 	anthropogenic terrestrial biome	ENVO:00000114	agricultural field 	agricultural field	ENVO:00002259	agricultural soil 	agricultural soil	soil	soil	nmdc:sty-11-28tm5d36	soil
+nmdc:bsm-11-2q1z3648	biosample:SAMN07632068	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01001785	land	land	ENVO:00001998	soil	soil			nmdc:sty-11-prtb4s28	soil
+nmdc:bsm-11-2q2qmz79		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00000011	garden	garden	ENVO:00005802	bulk soil	bulk soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-2q6szk18		ENVO:01000049	marine coral reef biome	marine coral reef biome	ENVO:01000155	organic material	organic material	ENVO:01000024	marine benthic biome	marine benthic biome			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-2qaqh504		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002007	sediment	sediment		sediment	nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-2qcn8345	biosample:SAMN37862687	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2qfz9d13		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2qvytb70		ENVO:00000446		terrestrial biome	ENVO:01000887	area of sedge- and forb-dominated herbaceous vegetation	area of sedge- and forb-dominated herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-2qygzq44		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-2r3fr053		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2rhzdz53		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2rkxne59		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2rna7h21		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2rqwfh34		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2rtk4045		ENVO:01000177	grassland biome	grassland biome	ENVO:00000546	lake sediment	lake sediment	ENVO:00000389	intermittent wetland	intermittent wetland			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-2rtvmd84		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2rx2v171		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-2sbnqj22		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2sjea508		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2sqnjk80		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002007	sediment	sediment		sediment	nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-2sv7xk53		ENVO:00000446		terrestrial biome	ENVO:00000516	hummock	hummock	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-2sweer10		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2t33bn42		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-2tcr3576	biosample:SAMN18246936	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-2tnrd005		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2ttwev32	biosample:SAMN14511244	ENVO:01001002	animal-associated environment	animal-associated environment	UBERON:0001555	digestive tract	digestive tract	ENVO:00002003	fecal material	fecal material			nmdc:sty-11-t91cwb40	host-associated
+nmdc:bsm-11-2tyc9s28		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2v8trb06		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2v8vhe22	biosample:SAMN12796107	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00000021	freshwater lake	freshwater lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-2vbmv206	biosample:SAMN37862736	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2vcr7659		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-2vd9b140		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2vk3ed42		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2vvyp803		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2w2s9232		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-2w55wh13		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2w5m5t55		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2wb2q869	biosample:SAMN14515778	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00000021	freshwater lake	freshwater lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-2wgc1a49		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2wq5w163		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2wzp8w65		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2x079y22		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2x413809		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2x5m0v29		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2xa1hc44		ENVO:01000249	urban biome 	urban biome	ENVO:00000444	woodland clearing 	woodland clearing	ENVO:00002261	forest soil 	forest soil	soil	soil	nmdc:sty-11-28tm5d36	soil
+nmdc:bsm-11-2xd8r279		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002007	sediment	sediment		sediment	nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-2xfev194		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-2xgypy83		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2xj86434		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2xpd3w44		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-2xv2xk15		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2xw6s444		ENVO:01001002	Animal-associated environment	animal-associated environment	UBERON:0001153	caecum		UBERON:0035118	material entity in digestive tract		Host-associated	host-associated	nmdc:sty-11-hdd4bf83	host-associated
+nmdc:bsm-11-2yadg057		ENVO:00000446		terrestrial biome	ENVO:01000219		anthropogenic terrestrial biome	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-2yyjw048		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2yz57x63		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-2yzw8b78		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-2z0y0d85		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2z241662		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2z530112		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2zft9k79	biosample:SAMN18247838	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-2zt7w626		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2zwg9712		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-2zyckv39		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-30160653	biosample:SAMN11532402	ENVO:01000174		forest biome	ENVO:01001803		tropical forest	ENVO:00005778		tropical soil			nmdc:sty-11-076c9980	soil
+nmdc:bsm-11-301ntr20		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-302b5a66	biosample:SAMN07630344	ENVO:01000174		forest biome	ENVO:01001803		tropical forest	ENVO:00005778		tropical soil			nmdc:sty-11-076c9980	soil
+nmdc:bsm-11-30npyx54	biosample:SAMEA7724303	ENVO:01000219		anthropogenic terrestrial biome	ENVO:00002204		anthropogenic contamination feature	ENVO:00001998		soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-30syvs50		ENVO:01000212	temperate mixed forest biome	temperate mixed forest biome	ENVO:00002003	fecal material	fecal material	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	plant-associated
+nmdc:bsm-11-30yc8k34		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-310rhs32		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3112an66		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-311wby96		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-315ss902		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-317z1g63		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-31b4ev74		ENVO:00000446		terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-31jggw59		ENVO:01000212	temperate mixed forest biome	temperate mixed forest biome	ENVO:00002003	fecal material	fecal material	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	plant-associated
+nmdc:bsm-11-31qt4e97		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-31vzd718		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-31z52576	biosample:SAMN08777589	ENVO:01001002	animal-associated environment	animal-associated environment	UBERON:0001555	digestive tract	digestive tract	ENVO:00002003	fecal material	fecal material			nmdc:sty-11-t91cwb40	host-associated
+nmdc:bsm-11-3227bb02		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3227t050		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-325rea35		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-32ak7k14		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-32c8zj88		ENVO:00000446		terrestrial biome	ENVO:01000219		anthropogenic terrestrial biome	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-32fzkb25		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-32g6a079		ENVO:00000446		terrestrial biome	ENVO:01000892		area of cropland	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-32qe2y33		ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-336s0y29		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3396fd37		ENVO:01000174	forest biome	forest biome	ENVO:00000094	volcanic feature	volcanic feature	ENVO:01001841	volcanic soil	volcanic soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-33rxfe28		ENVO:00000446		terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-33seav43	biosample:SAMN18247539	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-33vapw32	biosample:SAMN09200863	ENVO:01001002	animal-associated environment	animal-associated environment	UBERON:0001555	digestive tract	digestive tract	ENVO:00002003	fecal material	fecal material			nmdc:sty-11-t91cwb40	host-associated
+nmdc:bsm-11-33zdma08		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3417cf95		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-34k3jq48		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-34m6f652		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002007	sediment	sediment		sediment	nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-34przm31		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01001057	environment associated with a plant part or small plant	environment associated with a plant part or small plant	PO:0025034	leaf	leaf		plant-associated	nmdc:sty-11-r2h77870	plant-associated
+nmdc:bsm-11-34qb0862		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-34rd6307		ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-34z3xg49		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-351gmr55		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-354m9d76		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-357mga60	biosample:SAMN37862680	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-35fd3c55	biosample:SAMN37862688	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-35m0rm03	biosample:SAMN06266345	ENVO:00000446		terrestrial biome	ENVO:01000941		planetary subsurface zone	ENVO:00002194		oil field production water		hydrocarbon resources-fluids_swabs	nmdc:sty-11-8fb6t785	hydrocarbon resources-fluids_swabs
+nmdc:bsm-11-35peqt55		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00000011	garden	garden	ENVO:00005802	bulk soil	bulk soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-35wr5n17		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-35zsgb58	biosample:SAMN06264566	ENVO:00000446		terrestrial biome	ENVO:00000291		drainage basin	ENVO:00005802		bulk soil			nmdc:sty-11-1t150432	soil
+nmdc:bsm-11-3636w778		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01001057	environment associated with a plant part or small plant	environment associated with a plant part or small plant	ENVO:01000349	root matter	root matter		plant-associated	nmdc:sty-11-r2h77870	plant-associated
+nmdc:bsm-11-364fk917		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-364td390		ENVO:00000446		terrestrial biome	ENVO:01000869		area of scrub	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-364ysf97	biosample:SAMN37862712	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-36kq4416		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-36w52f85	biosample:SAMN37862736	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-36wstz22		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-36yhdm88		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-37190g90		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-374kh928	biosample:SAMN06265074	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:01001021	humic lake	humic lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-fkbnah04	soil
+nmdc:bsm-11-376z9r79		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-28tm5d36	soil
+nmdc:bsm-11-37azfw95		ENVO:00000446		terrestrial biome	ENVO:01000893		area of woody wetland	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-37k7j870		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-37n3v471		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-37p0n229		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-37ppxh17		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-37rz5828	biosample:SAMN12794931	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00000021	freshwater lake	freshwater lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-37xw6h79		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-37zk8h95		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-381nzv66		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-385ax494		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-38ajnb09		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-38exgt42		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-38fth079		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000887	area of sedge- and forb-dominated herbaceous vegetation	area of sedge- and forb-dominated herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-38g3vk29	biosample:SAMN37862674	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-38hj8116		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-38kptn16		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-38ktv790	biosample:SAMN12795556	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00000021	freshwater lake	freshwater lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-38qetk79		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-38rnvj70		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-38v45w24		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-39daxa05		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-39fd9704		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-39ffvf62		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-39ggxp32	biosample:SAMN08778331	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:01000774	oligotrophic lake	oligotrophic lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-fkbnah04	soil
+nmdc:bsm-11-39j0y956	biosample:SAMN10864376	ENVO:01000177		grassland biome	ENVO:00000292		watershed	ENVO:00005802		bulk soil			nmdc:sty-11-dcqce727	soil
+nmdc:bsm-11-39k6sh79	biosample:SAMN18247924	ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-39pekd18	biosample:SAMN37862726	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-39qcw250	biosample:SAMEA7724211	ENVO:01000247		rangeland biome	ENVO:01000247		rangeland biome	ENVO:00001998		soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-39r2y083	biosample:SAMN18245961	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-39r3p592		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002007	sediment	sediment		sediment	nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-39yajc33		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3a1n1760		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-3a2ezx48	biosample:SAMN18248400	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-3a6fv767	biosample:SAMN10864292	ENVO:01000174		forest biome	ENVO:01001803		tropical forest	ENVO:00005778		tropical soil			nmdc:sty-11-076c9980	soil
+nmdc:bsm-11-3a8h4b10		ENVO:01000049	marine coral reef biome	marine coral reef biome	ENVO:01000155	organic material	organic material	ENVO:01000024	marine benthic biome	marine benthic biome			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-3abdbp18		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3admsx52		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3agf7q54		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3ah1ad81		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3ar8rm94		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3b5hbp95		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3b5xj746		ENVO:01000177	grassland biome	grassland biome	ENVO:01001785	land	land	ENVO:00005750	grassland soil	grassland soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-3b86qc44		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3bp8t709		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-3brzvj45		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3c01ne08		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3c1vqq93	biosample:SAMN37862694	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3c84rs21	biosample:SAMN12795196	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00000021	freshwater lake	freshwater lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-3ce3r776		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3cjvcy09	biosample:SAMN18247933	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-3cpn7p52		ENVO:00000446		terrestrial biome	ENVO:01000887	area of sedge- and forb-dominated herbaceous vegetation	area of sedge- and forb-dominated herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-3d7gwr49	biosample:SAMN10864378	ENVO:01000177		grassland biome	ENVO:00000292		watershed	ENVO:00005802		bulk soil			nmdc:sty-11-dcqce727	soil
+nmdc:bsm-11-3dfzaz49		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3dmqhk09		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3dr5zv27		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3draxa42		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-3dt94x36		ENVO:01001002	Animal-associated environment	animal-associated environment	UBERON:0001153	caecum		UBERON:0035118	material entity in digestive tract		Host-associated	host-associated	nmdc:sty-11-hdd4bf83	host-associated
+nmdc:bsm-11-3e1f3k53		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000891	area of pastureland or hayfields	area of pastureland or hayfields	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3e5e2c63		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-3e7a5r10		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-3edc4469	biosample:SAMN07630531	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-fkbnah04	soil
+nmdc:bsm-11-3egexs63		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3ekef286		ENVO:01000174	forest biome	forest biome	ENVO:00000094	volcanic feature	volcanic feature	ENVO:01001841	volcanic soil	volcanic soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-3ekmcr15		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00000011	garden	garden	ENVO:00005802	bulk soil	bulk soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-3erjkf61		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002007	sediment	sediment		sediment	nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-3f01ss22		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3f6xe336		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3f8kpv51		ENVO:00000446		terrestrial biome	ENVO:01000893		area of woody wetland	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-3fmmy917		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3g522z71		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-3g76f413		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3gaxe340		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3gepyf12		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3gjjef84		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3h3w1c57	biosample:SAMEA7724337	ENVO:01000250		subpolar coniferous forest biome	ENVO:01000355		vegetation layer	ENVO:00005774		peat soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-3h770p55		ENVO:00000446		terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-3h782c22		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-3h806636		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3hktkx48		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3hm8jt19		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3hnk5z09		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3hpb6j41		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-3hqszc04		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000887	area of sedge- and forb-dominated herbaceous vegetation	area of sedge- and forb-dominated herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3hz6md08		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3j1ppe45		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3j1zh467		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3j5cxy94	biosample:SAMN37862678	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3j94py47	biosample:SAMN43527815	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:01000621	microcosm	microcosm	ENVO:00005791	Sterile water	sterile water	miscellaneous natural or artificial environment	miscellaneous natural or artificial environment	nmdc:sty-11-ev70y104	miscellaneous natural or artificial environment
+nmdc:bsm-11-3jdzbh88		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3jenm561		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3jnvb928	biosample:SAMN06269031	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:01000774	oligotrophic lake	oligotrophic lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-fkbnah04	soil
+nmdc:bsm-11-3jwxa011		ENVO:00000446		terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-3jzdf830		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3k70k365	biosample:SAMN43527814	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:00005801	rhizosphere	rhizosphere	ENVO:01000349	root matter	root matter	miscellaneous natural or artificial environment	miscellaneous natural or artificial environment	nmdc:sty-11-ev70y104	miscellaneous natural or artificial environment
+nmdc:bsm-11-3kfjd882		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3kjsqe72		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3kpex275	biosample:SAMEA7724318	ENVO:01000250		subpolar coniferous forest biome	ENVO:01000174		forest biome	ENVO:00001998		soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-3kpgx533	biosample:SAMN37862702	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3kpqrc37		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3kpvrr32		ENVO:01000049	marine coral reef biome	marine coral reef biome	ENVO:01000155	organic material	organic material	ENVO:01000024	marine benthic biome	marine benthic biome			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-3ksa8g46		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-28tm5d36	soil
+nmdc:bsm-11-3m02xs65		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-28tm5d36	soil
+nmdc:bsm-11-3m5y7993	biosample:SAMN11532489	ENVO:01000174		forest biome	ENVO:01001803		tropical forest	ENVO:00005778		tropical soil			nmdc:sty-11-076c9980	soil
+nmdc:bsm-11-3m6dhm65	biosample:SAMN18245944	ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-3m7yjd06		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3m88k172		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3mzep154	biosample:SAMN09202470	ENVO:01001002	animal-associated environment	animal-associated environment	UBERON:0001555	digestive tract	digestive tract	ENVO:00002003	fecal material	fecal material			nmdc:sty-11-t91cwb40	host-associated
+nmdc:bsm-11-3n3k2m62		ENVO:01000174	forest biome	forest biome	ENVO:03600018	organic horizon	organic horizon	ENVO:00002261	forest soil	forest soil	soil	soil	nmdc:sty-11-8ws97026	soil
+nmdc:bsm-11-3n668456		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3nap8s42		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3nb25207	biosample:SAMN43527813	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:00005801	rhizosphere	rhizosphere	ENVO:01000349	root matter	root matter	miscellaneous natural or artificial environment	miscellaneous natural or artificial environment	nmdc:sty-11-ev70y104	miscellaneous natural or artificial environment
+nmdc:bsm-11-3nffqc45		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01001057	environment associated with a plant part or small plant	environment associated with a plant part or small plant	ENVO:01000349	root matter	root matter		plant-associated	nmdc:sty-11-r2h77870	plant-associated
+nmdc:bsm-11-3nhng665		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01001057	environment associated with a plant part or small plant	environment associated with a plant part or small plant	ENVO:01000349	root matter	root matter		plant-associated	nmdc:sty-11-r2h77870	plant-associated
+nmdc:bsm-11-3nhs7493		ENVO:01000211	temperate coniferous forest biome	temperate coniferous forest biome	ENVO:01000211	temperate coniferous forest biome	temperate coniferous forest biome	ENVO:00001998	soil	soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-3njxqh58		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3nmc7e03		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3nqemc54		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3ns4mm12		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-3p154x45		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3p2mnz08		ENVO:01000174	forest biome	forest biome	ENVO:03600018	organic horizon	organic horizon	ENVO:00005781	heat stressed soil	heat stressed soil	soil	soil	nmdc:sty-11-8ws97026	soil
+nmdc:bsm-11-3pa5by50		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3pr9q163		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3q21wk07		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3q2ndd68		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3q50qd53		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3qbt0v77		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-3qf8sr42		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3qhtv606		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3qngd585		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3r0swa94		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3r4g4610	biosample:SAMN06343778	ENVO:00000446		terrestrial biome	ENVO:01000941		planetary subsurface zone	ENVO:00002194		oil field production water		hydrocarbon resources-fluids_swabs	nmdc:sty-11-8fb6t785	hydrocarbon resources-fluids_swabs
+nmdc:bsm-11-3r5hfx38		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3rbwrr59		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3rdtr854	biosample:SAMN18247314	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-3rf7dz56		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3rfk4718	biosample:SAMN37862708	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000887	area of sedge- and forb-dominated herbaceous vegetation	area of sedge- and forb-dominated herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3rg13r26		ENVO:00000446		terrestrial biome	ENVO:01001370	tundra ecosystem	tundra ecosystem	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-3rn3wr94		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3rs2th06		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3s29d851	biosample:SAMN06268339	ENVO:00000446	terrestrial biome	terrestrial biome	PO:0025025	root system	root system	ENVO:00005801	rhizosphere	rhizosphere			nmdc:sty-11-prtb4s28	plant-associated
+nmdc:bsm-11-3saj3k49		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3scntg91		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3sdqfq80		ENVO:01000250	subpolar coniferous forest biome	subpolar coniferous forest biome	ENVO:00001998	soil	soil	ENVO:00000087	cliff	cliff			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-3sf7tr72		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3sh13y44		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3sj4mk50		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3srygf50	biosample:SAMN43527812	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:00005801	rhizosphere	rhizosphere	ENVO:01000349	root matter	root matter	miscellaneous natural or artificial environment	miscellaneous natural or artificial environment	nmdc:sty-11-ev70y104	miscellaneous natural or artificial environment
+nmdc:bsm-11-3swdfr82		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3szkxa07		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000894	area of emergent herbaceous wetland	area of emergent herbaceous wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3sztee10		ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-3t0sfk18		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00000011	garden	garden	ENVO:00005802	bulk soil	bulk soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-3t39zs54		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-3t7d0v70	biosample:SAMN17675277	ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-3t81cy34		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3tdfpk19	biosample:SAMN18245947	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-3tedww85		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3tr7f795		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01001057	environment associated with a plant part or small plant	environment associated with a plant part or small plant	PO:0025034	leaf	leaf		plant-associated	nmdc:sty-11-r2h77870	plant-associated
+nmdc:bsm-11-3twkwk90	biosample:SAMN12795922	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00000021	freshwater lake	freshwater lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-3vawwx37	biosample:SAMN18245971	ENVO:01000253	freshwater river biome	freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-3vh4fe67		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3vqa5d91		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3vrxgz31		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3vsywc89		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3w041d90		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3w0vf491		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3waz1854		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3we9d184		ENVO:01001442	agricultural biome	agriculture	ENVO:01001442	phyllosphere biome	agriculture	ENVO:01001001	plant-associated biome	plant-associated environment	plant-associated	plant-associated	nmdc:sty-11-e4yb9z58	plant-associated
+nmdc:bsm-11-3wwe4w37		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3x6bd477		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00000011	garden	garden	ENVO:00005802	bulk soil	bulk soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-3xc5ft48	biosample:SAMN06266331	ENVO:00000446		terrestrial biome	PO:0025025		root system	PO:0009007		portion of plant tissue		plant-associated	nmdc:sty-11-1t150432	plant-associated
+nmdc:bsm-11-3xhpjk13		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000887	area of sedge- and forb-dominated herbaceous vegetation	area of sedge- and forb-dominated herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3xmw9v43		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3xns3k19		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3xthwx28		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01001057	environment associated with a plant part or small plant	environment associated with a plant part or small plant	ENVO:01000349	root matter	root matter		plant-associated	nmdc:sty-11-r2h77870	plant-associated
+nmdc:bsm-11-3y53nf15		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3y5c5235	biosample:SAMN18247965	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-3y7t3789		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3ytv0t20		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000869	area of scrub	area of scrub	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3yv0h954		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3yzava15		ENVO:00000446		terrestrial biome	ENVO:01000816		area of deciduous forest	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-3z6z5297		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-28tm5d36	soil
+nmdc:bsm-11-3zbnxv93		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3zh6yy26		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:00005801	rhizosphere	rhizosphere	ENVO:00001998	soil	soil			nmdc:sty-11-r2h77870	soil
+nmdc:bsm-11-3zk3cr38		ENVO:00000446		terrestrial biome	ENVO:00000516	hummock	hummock	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-3zqv7h68		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-3zrd9503	biosample:SAMN08902829	ENVO:01000177		grassland biome	ENVO:00000376		biosphere reserve	ENVO:00005750		grassland soil			nmdc:sty-11-zs2syx06	soil
+nmdc:bsm-11-405vf010		ENVO:01000253		freshwater river biome	ENVO:00000022	river	river	ENVO:00002042	surface water	surface water			nmdc:sty-11-5tgfr349	sediment
+nmdc:bsm-11-407zcq77	biosample:SAMEA7724284	ENVO:01000245		cropland biome	ENVO:00000161		banana plantation	ENVO:02000059		surface soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-40d3zr06		ENVO:00000446		terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-40djr260		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-40g2k584		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-412jma02		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-413jhn20		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-41c0rb64		ENVO:01000212	temperate mixed forest biome	temperate mixed forest biome	ENVO:00002003	fecal material	fecal material	ENVO:01001002	animal-associated environment	animal-associated environment			nmdc:sty-11-547rwq94	plant-associated
+nmdc:bsm-11-41cym762		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-41ebdf16		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-41hg0p13	biosample:SAMN08775249	ENVO:01001002	animal-associated environment	animal-associated environment	UBERON:0001555	digestive tract	digestive tract	ENVO:00002003	fecal material	fecal material			nmdc:sty-11-t91cwb40	host-associated
+nmdc:bsm-11-41mb3v03	biosample:SAMN37862738	ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-41w8rj96	biosample:SAMN14515701	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00000021	freshwater lake	freshwater lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-41xbh390		ENVO:00000446		terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-42278r63		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000855	area of mixed forest	area of mixed forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-4269ar54	biosample:SAMN18245505	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002132	metalimnion	metalimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5tgfr349	soil
+nmdc:bsm-11-42c9kj17		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01001057	environment associated with a plant part or small plant	environment associated with a plant part or small plant	ENVO:01000349	root matter	root matter		plant-associated	nmdc:sty-11-r2h77870	plant-associated
+nmdc:bsm-11-42tvb619		ENVO:00000446		terrestrial biome	ENVO:01000861	area of dwarf scrub	area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-42vx3f05		ENVO:00000446		terrestrial biome	ENVO:01000861		area of dwarf scrub	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-430wwh68		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000888	area of gramanoid or herbaceous vegetation	area of gramanoid or herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-431wyv94		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000816	area of deciduous forest	area of deciduous forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-431yfb94		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-43229n89		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-434y7e45	biosample:SAMN18247318	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-43mzy230		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000893	area of woody wetland	area of woody wetland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-43p2pv97		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000892	area of cropland	area of cropland	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-43rwvm93		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01001057	environment associated with a plant part or small plant	environment associated with a plant part or small plant	ENVO:01000349	root matter	root matter		plant-associated	nmdc:sty-11-r2h77870	plant-associated
+nmdc:bsm-11-440xjb90		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000887	area of sedge- and forb-dominated herbaceous vegetation	area of sedge- and forb-dominated herbaceous vegetation	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-442x9w41	biosample:SAMN43527811	ENVO:01001001	plant-associated environment	plant-associated environment	ENVO:00005801	rhizosphere	rhizosphere	ENVO:01000349	root matter	root matter	miscellaneous natural or artificial environment	miscellaneous natural or artificial environment	nmdc:sty-11-ev70y104	miscellaneous natural or artificial environment
+nmdc:bsm-11-44a6bw30		ENVO:01000249	urban biome 	urban biome	ENVO:00000011	garden 	garden	ENVO:01001616	bare soil 	bare soil	soil	soil	nmdc:sty-11-28tm5d36	soil
+nmdc:bsm-11-44c0aq57		ENVO:00000446		terrestrial biome	ENVO:01000219		anthropogenic terrestrial biome	ENVO:00001998	soil	soil			nmdc:sty-11-db67n062	soil
+nmdc:bsm-11-44d45s34		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-44ekce26	biosample:SAMN06269035	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:01000774	oligotrophic lake	oligotrophic lake	ENVO:04000007	lake water	lake water			nmdc:sty-11-fkbnah04	soil
+nmdc:bsm-11-44hrnd69		ENVO:01000174	forest biome	forest biome	ENVO:00000094	volcanic feature	volcanic feature	ENVO:01001841	volcanic soil	volcanic soil			nmdc:sty-11-547rwq94	soil
+nmdc:bsm-11-44qchg93	biosample:SAMN11532490	ENVO:01000174		forest biome	ENVO:01001803		tropical forest	ENVO:00005778		tropical soil			nmdc:sty-11-076c9980	soil
+nmdc:bsm-11-44wftq59	biosample:SAMN18246421	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
+nmdc:bsm-11-44zmrs82		ENVO:00000446		terrestrial biome	ENVO:01000892		area of cropland	ENVO:00001998		soil			nmdc:sty-11-8xdqsn54	soil
+nmdc:bsm-11-452xfc77		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil			nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-45890655		ENVO:00000446	terrestrial biome	terrestrial biome	ENVO:01000843	area of evergreen forest	area of evergreen forest	ENVO:00001998	soil	soil	soil	soil	nmdc:sty-11-34xj1150	soil
+nmdc:bsm-11-458w1w16	biosample:SAMN18245151	ENVO:01000252	freshwater lake biome	freshwater lake biome	ENVO:00002131	epilimnion	epilimnion	ENVO:04000007	lake water	lake water			nmdc:sty-11-5bgrvr62	soil
