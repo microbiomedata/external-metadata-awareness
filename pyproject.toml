@@ -39,6 +39,7 @@ rasterio = "^1.4.3"
 folium = "^0.19.4"
 db-dtypes = "^1.4.1"
 google-cloud-bigquery-storage = "^2.28.0"
+git-filter-repo = "^2.47.0"
 
 [build-system]
 requires = ["poetry-core"]
