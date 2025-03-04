@@ -1354,6 +1354,18 @@ rdflib-shim = "*"
 rfc3987 = "*"
 
 [[package]]
+name = "git-filter-repo"
+version = "2.47.0"
+description = "Quickly rewrite git repository history"
+optional = false
+python-versions = ">=3.6"
+groups = ["main"]
+files = [
+    {file = "git_filter_repo-2.47.0-py3-none-any.whl", hash = "sha256:2cd04929b9024e83e65db571cbe36aec65ead0cb5f9ec5abe42158654af5ad83"},
+    {file = "git_filter_repo-2.47.0.tar.gz", hash = "sha256:411b27e68a080c07a69c233cb526dbc2d848b09a72f10477f4444dd0822cf290"},
+]
+
+[[package]]
 name = "google-api-core"
 version = "2.24.1"
 description = "Google API client core library"
@@ -6921,4 +6933,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "fc2b1ef72143f478e72e2a1094337e12e2d80c9d4ead6d413797adaac2e46881"
+content-hash = "cf35437a3a09f2169ddcd5c12f3dc6bc24999ddffc9d4980f96d6b674f046d62"

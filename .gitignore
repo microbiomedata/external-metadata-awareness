@@ -1,3 +1,5 @@
+notebooks/studies_exploration/flattening/ols_cache.sqlite
+
 **/*.env
 **/.DS_Store
 **/__pycache__/
