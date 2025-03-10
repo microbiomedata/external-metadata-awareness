@@ -330,6 +330,18 @@ files = [
 ]
 
 [[package]]
+name = "case-converter"
+version = "1.2.0"
+description = "A string case conversion package."
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "case_converter-1.2.0-py3-none-any.whl", hash = "sha256:bb5bc6b1e121c394a6de6526cd3f8be0f5c5817c40d32251cce28a2cf4a72d8c"},
+    {file = "case_converter-1.2.0.tar.gz", hash = "sha256:4e0281ae60d4335e57300bafd61cfb3fa65734587fe9efd32f6cec1a506685c5"},
+]
+
+[[package]]
 name = "cattrs"
 version = "24.1.2"
 description = "Composable complex class support for attrs and dataclasses."
@@ -6933,4 +6945,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "cf35437a3a09f2169ddcd5c12f3dc6bc24999ddffc9d4980f96d6b674f046d62"
+content-hash = "4bfae7398bfaf1e7cf8cf81c06e7f623a5ad72bb5210b1a353878eccfe04a1fd"
