@@ -1,0 +1,31 @@
+count	attribute_name	normalized_name
+95	Environment Feature	environment_feature_sam
+200	Feature	feature_sam
+114109	feature	feature_sam
+30	Environment feature	environment_feature_sam
+1520	Local-scale Environmental Context	local_scale_environmental_context_sam
+88	Env_feature	env_feature_sam
+356	local-scale_environmental_context	local_scale_environmental_context_sam
+29	Environment (feature)	environment__feature__sam
+385	env-local-scale	env_local_scale_sam
+669	environment_(feature)	environment__feature__sam
+717	environment_feature	environment_feature_sam
+601	local_scale_environmental_context	local_scale_environmental_context_sam
+223015	env feature	env_feature_sam
+220	ENV_FEATURE	env_feature_sam
+158	_env_local_scale	_env_local_scale_sam
+1044237	environment (feature)	environment__feature__sam
+648	local scale environmental context	local_scale_environmental_context_sam
+111	Environment (Feature)	environment__feature__sam
+2545707	env_local_scale	env_local_scale_sam
+48	env_local scale	env_local_scale_sam
+482	env local scale	env_local_scale_sam
+295	env_local_range	env_local_range_sam
+542550	env_feature	env_feature_sam
+36	Local-Scale Environmental Context	local_scale_environmental_context_sam
+13930	environment feature	environment_feature_sam
+4	env-feature	env_feature_sam
+3500	Local-scale environmental context	local_scale_environmental_context_sam
+27078	local-scale environmental context	local_scale_environmental_context_sam
+6	Local-scale_environmental_context	local_scale_environmental_context_sam
+99	envfeature	envfeature_sam
