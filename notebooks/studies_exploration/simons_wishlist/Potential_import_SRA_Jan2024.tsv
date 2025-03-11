@@ -1,0 +1,114 @@
+## Bioproject selected based on: ## At least 50 metagenomes (10M reads +), not currently in IMG (as far as I know), environmental / terrestrial / soil / plant ## For IMG imports, looked at cases where MAGs are not already available in NCBI, and potential for interesting new diversity ## For NMDC imports, looked more specifically at soil and related, and nice metadata BioProject Id	# metaG 10M+	Project name	Environment(s)	Publication	MAGs in NCBI	Import to IMG ?	Import to NMDC ?	Notes
+PRJEB52368	827	Metagenomic sequencing of Tara Pacific coral samples	Marine/coral			No	No	Tara, unpublished, probably stay away
+PRJNA352737	721	HOT ALOHA metagenomic time and depth series	Marine	10.1038/s41564-017-0008-3	Yes (197)	No	No	Already has MAGs in NCBI, and oceanic so not high priority for NMDC ?
+PRJNA385736	688	Marine amplicons/metagenomes  from Australian marine (benthic and pelagic environments)	Marine			Yes	Maybe ?	Some paired metaG and metaT, but marine and not published maybe should stay away or get in touch before importing (CSIRO). Could be interesting for NMDC as it's part of this larger effort https://www.australianmicrobiome.com
+PRJNA656268	572	Bio-GO-SHIP: Global marine 'omics studies of repeat hydrography transects	Marine	No but NSF grant	Maybe (see TPA)	No	No	Has a TPA and already in MGnify. 10.1093/nar/gkx967
+PRJNA385854	470	Marine metagenomes from the bioGEOTRACES project	Marine	10.1038/sdata.2018.176		Yes	Maybe ?	Rich metadata, could be good if no MAGs (Data paper from 2018 so a long time enough ?)
+PRJNA386568	380	peat metagenome Metagenome	Soil	10.1038/s41586-018-0338-1	Yes (1530)	No	Maybe ?	Isogenie (ACE)
+PRJNA781406	350	Vanishing Glaciers Project	Streams / Glacier	10.1038/s41467-022-29914-0	Yes (717)	No	No	
+PRJEB52452	347	Malaspina Expedition 2010 Microbial Vertical Profiles Metagenomes	Marine	10.1101/2023.02.06.526790		No	No	Some maybe already in IMG ? Also some quality issues in some other Malaspina datasets
+PRJEB45634	330	Recovery of metagenome-assembled genomes from 110 rice cultivars	Soil / Plant		Yes (529)	No	No	
+PRJNA674565	312	Water-born virome	Aquatic			No	No	If viral, probably more interesting for IMG/VR, so too late now for v5 ?
+PRJEB52753	286	European grassland soils subjected to multiple disturbances	Soil		Maybe (see TPA)	No	No	Has a TPA - MGnify ? 10.1093/nar/gkx967
+PRJEB38681	266	Comprehensive dataset of shotgun metagenomes from stratified freshwater lakes and ponds	Freshwater lake	10.1038/s41597-021-00910-1	Yes (12764)	Maybe ?	No	Already binned, but maybe still worth having as reference / good demo dataset in IMG ?
+PRJNA859194	237	Viral response to simulated wetup across four grassland soils	Soil			Maybe ?	Maybe ?	Big DOE Grassland project (DE-SC0020163), would make sense to import scientifically, tbd politically
+PRJNA856348	233	Grassland soil wet-up metagenomes and density fractionated metagenomes	Soil			Maybe ?	Maybe ?	Multiple big DOE projects (DE-SC0016247 / DE-SC0020163 / SCW1632) - Microbes Persist SFA - same as above
+PRJEB38290	216	2018 Helgoland Spring Bloom Metagenomes	Marine		Yes (276)	No	No	MPI Helgoland station, already binned
+PRJNA698060	181	Genome-wide association study of citrus microbiome	Soil/Plant			Yes	Yes	Potentially interesting, but BGISeq data (so to keep an eye on in terms of pipeline failures, etc) - Submission is from University of Florida
+PRJNA1035420	180	Soil samples at large scale (China)	Soil			No	No	Very new (registered in 2023), probably to stay away from
+PRJNA838942	180	Soil metagenomics of GCEF-UFZ during the summers of 2014-2019	Soil	10.1038/s41396-023-01470-5	Yes (97)	Yes	Yes	Existing MAGs, but may still be worth included in NMDC/IMG for reference
+PRJNA716697	164	Evolution of MAP lettuce microbiomes during storage	Plant			Yes	Yes	Food microbiome, not high priority, but could be nice collab (submitted by FDA)
+PRJEB4352	163	Shotgun Sequencing of Tara Oceans DNA samples corresponding to size fractions for protist	Marine			No	No	Tara for euks, probably don’t want to touch  - Has a TPA - MGnify ? 10.1093/nar/gkx967
+PRJNA718849	163	Quantitative stable isotope probing study on soils from three California Mediterranean grasslands	Soil			Maybe ?	Maybe ?	Hungate collab (NAU) – same comments as Big DOE grants above
+PRJNA450295	160	Metagenomic sequencing of foxtail millet root-associated microbiome	Soil / Plant			Yes	No	Registered in 2018, so probably ok ? But not sure of metadata quality (BGI).
+PRJNA681031	142	Arctic Metagenomes	Marine			No	No	Not sequenced very deep, not sure about the metadata, submitted by University of Alaska Fairbanks
+PRJNA912236	138	Metagenomics of Fertilizer Regime Soil (China ?) - Soil macrogenome under different fertilization systems	Soil			No	No	Not sure, but no metadata so probably no
+PRJNA385855	130	Temporal sampling of marine metagenomes from Station ALOHA and BATS	Marine			Yes	Maybe ?	Rich metadata, could be good (Data paper from 2018 so a long time enough ?)
+PRJNA913601	126	Bodega Bay wetland sampling 2021	Wetlands			Yes	Yes	Potentially interesting, combination of metagenomes and viral metagenomes from UC Davis (not sure who or which project though)
+PRJNA629394	125	Mangrove microbiome Metagenome (China)	?			No	No	Doesn’t seem to have a lot of metadata
+PRJEB9691	120	Shotgun Sequencing of Tara Oceans Polar Circle DNA samples corresponding to size fractions for protists.	Marine			No	No	Tara for euks, probably don’t want to touch
+PRJNA588686	120	The polar microbiota Metagenome	?			No	No	Poor metadata (only 2 biosamples ?)
+PRJNA779832	119	Metagenomic data from sediments, bulk soils, and rhizosphere soils in the riverine ecosystem of eastern China	Soil/Rivers			Yes	No	Good for comparison ?
+PRJEB44309	118	Soil metagenome from Drought-Net experiment plots in Western Australia	Soil			Yes	Yes	Could be interesting as comparison to similar experiments (drought) in US ? But 2023, so ideally would get in touch
+PRJEB44414	117	Metagenomes of global wetland soils	Wetlands			Yes	Maybe ?	Quadram - UK - may get in touch ?
+PRJNA1002763	117	Chinese loess soil microbiomes	Soil			No	No	From 2023, stay away ?
+PRJNA789467	114	Disentangling the genetic basis of rhizosphere microbiome assembly in tomato (metagenomics part)	Plant			No	No	Has a TPA - MGnify ? 10.1093/nar/gkx967
+PRJEB18675	108	‘A Clear-cut Timepoint’ – a Multi-omic Survey of Soil Microbial Communities Decades After Timber Harvesting - Seasonal Samples	Soil			Yes	Yes	Paired metaG/metaT, forest soil, rich metadata, likely interesting. Maybe to get in touch with PIs at UBC - Check with Steven Hallam ? (pretty sure he knows them, seems like he was in some older papers with them)
+PRJEB27870	108	RM_CSULB	Soil			Yes	Maybe ?	CSU Long Beach project, imported from MGRAST in 2018, seems like an easy import and potential collab ?
+PRJNA916885	108	Study on Carbon and Nitrogen Cycles Driven by Microorganisms in Grassland Ecosystem of Qinghai-Tibet Plateau	Soil			No	No	Poor metadata
+PRJNA329908	107	seawater metagenome Genome sequencing and assembly	Marine		Yes (20)	No	No	NRCC (Canada)
+PRJNA379303	107	Farm metagenomes conventional and organic	Soil			Yes	Maybe ?	Col State U – possible to get in touch ?
+PRJNA689669	106	soil samples from degraded grassland and mango cultivation (China)	Soil			No	No	No metadata, not sequenced very deep, no high value
+PRJEB34634	104	Detailed study at the genetic level at bacteria in farm animals, human/animal sewage, sewage treatment works and rivers, to work out the complex network of transmission of important antibiotic-resistant bacteria and antibiotic resistance genes	Mixed			No	No	No metadata (1 BioSample ??) - From the UK (project “REHAB”, from UK Centre for Ecology & Hydrology - https://gtr.ukri.org/projects?ref=NE%2FN019660%2F1) - Has a TPA in MGNify
+PRJNA982563	103	Daily occupational exposure in swine farm alters human skin microbiota and antibiotic resistome	Mixed			No	No	From 2023, maybe stay away
+PRJNA1000596	96	Soil microbial community Raw sequence reads	Soil incubations	10.1101/2023.10.06.561230		Yes	Maybe ?	Argonne – PUREX chemicals. DOE interest ?
+PRJNA776090	92	Mult-omics Data of Citrus Reticulata 'Chachi'	Soil	10.1186/s40168-023-01504-2		Yes	No	Maybe interesting since published ?
+PRJNA905198	91	Metagenomes of endolithically colonized Antarctic rocks	Soil			Yes	No	Antarctic endoliths, may have new diversity but challenging - may have already a pre-print / data paper (Claudia Coleine) and a collab with JGI ?!
+PRJNA308326	90	Hydraulically fractured gas well metagenomes	Shale/subsurface		Yes (239)	No	No	Wrighton/Wilkins not sequenced at JGI, but maybe not high priority (no comparison, already binned, etc)
+PRJNA358725	90	Meta-genomic and -transcriptomic samples from the HOE Legacy 2 expedition	Marine		Yes (70)	No	No	SCOPE (Simons Foundation) / C-MORE
+PRJNA730330	90	metagenomic study of estuaries	Aquatic		Yes (500)	No	No	
+PRJEB9742	89	BNA. Shotgun Sequencing of Tara Oceans Polar Circle DNA samples corresponding to size fractions for small DNA viruses	Marine			No	No	Tara – Has a TPA - MGnify ? 10.1093/nar/gkx967
+PRJNA729490	84	Microbial Ecology of the Comau Fjord, Northern Patagonia (42 S)	Marine (?)		Yes (677)	No	No	
+PRJNA730325	83	Soil metagenomes (China)	Soil			No	No	No metadata at all
+PRJEB66294	78	Land use transition effects on soil microbiomes	Soil			No	No	Again the “Centre for Ecology and Hydrology” in the UK, again limited information, but registered in 2023 so ..
+PRJNA1001993	77	Soil metagenomes at different stages of grape growth. (China)	Soil			No	No	Plant-associated / Ag, registered in 2023
+PRJNA429141	75	Freshwater metagenomes from Rimov resevoir, Czech Republic	Freshwater lake	10.1186/s40168-018-0563-8		Yes	No	Published, no MAG in database, interesting ?
+PRJNA450643	75	NRC - DFO Douglas channel seawater metagenomes	Marine			Yes	Maybe ?	From 2018, with NRCC and Genome Quebec, has metaG and metaT, maybe good ? But relatively shallow sequencing (most metaT under 10M)
+PRJNA832417	75	Metagenomes from hot and cold deserts across seven continents (unpublished)	Soil		Yes (986)	No	No	
+PRJNA889855	75	Lettuce and soil Metagenome	Soil / Plant			Maybe ?	Maybe ?	FDA
+PRJEB62460	74	Metcalf - Microbial clock for estimating PMI in three geographic regions in the U.S - decomposing bodies				No	No	Cool but potentially out of scope – UCSD, already processed by qiita
+PRJNA608274	73	Metagenome manure-rhizosphere-soil (AB-treated)	Soil / Plant			No	No	Wagenigen, not a lot of metadata
+PRJEB41834	72	Diversity across environmental gradients in Baltic Sea sediments	Marine sediments			Yes	No	Registered in 2022, no point of contact, but could be good for IMG/GEMs ?
+PRJNA389803	72	Amazon River Metagenomics	River ?			Yes	No	Weill Cornell, very little metadata
+PRJNA628860	72	soil metagenome Raw sequence reads (China)	Soil			No	No	no metadata
+PRJNA985794	72	Enhancing Soil Health and Carbon Sequestration through Phytogenic Treatment	Soil			No	No	2023, stay away ?
+PRJNA448773	71	AAFC Phosphore Nitrogen study	Soil			Yes	Maybe ?	50-year old field plots, interesting with potential metadata, Canada (NRCC, Quebec)
+PRJNA632564	69	wild and cultivated rice for Metagenome (China)	Soil / Plant			No	No	no metadata
+PRJNA473136	68	Samples collected from potential crop irrigation water sources in the U.S. for CONSERVE (A Center at the Excellence of Sustainable Water Reuse, Food, and Health).	Aquatic		No	No	No	USDA – crop irrigation - of interest ?
+PRJNA882411	65	Metagenomic and network analysis of soil fungal and bacterial communities along a soil pH gradient	Soil			Yes	Yes	Interesting, potential metadata and collaboration (Estonia – University of Tartu) - https://omi.ut.ee/en/node/60185
+PRJNA924737	63	saline-alkali soil Metagenome (Netherlands)	Soil			No	No	no metadata, from 2023
+PRJEB35770	62	Freshwater Metagenomes from European Lakes and Reservoirs (including time-series metagenomes)	Freshwater lake	Several	Yes (6253)	No	No	
+PRJEB44163	62	Characterization of the soil microbiome of Colombian Amazon rainforest	Soil			Yes	Yes	May be interesting, from Universidad de la Amazonia, see if we could get in touch ?
+PRJEB41174	61	A taxon-wise insight into rock weathering and nitrogen fixation functional profiles of proglacial systems	Soil	10.1093/femsec/fiy114		Yes	No	Arctic soil, published (with EEF as co-author), no NCBI MAGs, good to import
+PRJNA688583	61	Microbiome diversity in cultivated land and native prairies, South Dakota, USA	Soil			No	No	South Dakota State University, not a lot of metadata
+PRJNA892917	61	Metagenomic inventory of the Lockwitzbach River microbiome and resistome	River	10.1021/acs.est.2c00370		Yes	No	Looks like analysis was for ARG, but nice paper with metadata, good to import ? PI: Stefanie Hess
+PRJNA1014704	60	Microbiome of maize root compartments from an experiment with fertilization and cropping treatments in Northeast China	Soil			No	No	no metadata, from 2023
+PRJNA1028263	60	sea sediment Raw sequence reads (China)	Marine sediments			No	No	no metadata, from 2023
+PRJNA1035643	60	Halophilic Microorganisms by Tamarisk Enhances (China)	Soil			No	No	no metadata, from 2023
+PRJNA449266	60	Meadow Soil samples from Angelo Coast Range Reserve (2014)	Soil	Several	Yes (897)	No	No	Banfield lab, stay away
+PRJNA528368	60	Mikania micrantha isolate:NLD-2019	?	?	?	No	No	Plant BioProject ? Unclear what this is
+PRJNA660264	60	Xenobiotics biodegradation metagenome (China)	Soil / sediments			No	No	Consortia, possibly incubated in lab (not clear)
+PRJNA823681	60	SE Asia Mangrove Metagenomes by Plant Component	Soil / Plant			Yes	No	Utah Valley University, mention MAGs in intro, maybe worth importing ?
+PRJNA871234	60	Pot experiment of erythromycin fermentation residue, metagenomic sequencing	Soil			No	No	very little metadata, sequencing not great for soil
+PRJNA909948	60	Raw reads of desert soil metagenomic sequencing	Soil			No	No	very little metadata, sequencing not great for soil
+PRJNA946152	60	Inhibition of Biochar on PAHs biodegradation	Soil			No	No	very little metadata, 2023
+PRJNA530708	59	Jiulong River 201209-201306	River			Yes	No	Little to no metadata, registered in 2019
+PRJNA545144	59	HOE BOE expeditions diel environmental transcriptomic depth surveys	Marine			Yes	Maybe ?	SCOPE / MMI – looks like a good candidate for import
+PRJNA714922	59	Manistee Forest Soil Nitrogen Mineralization Gradient Study	Soil			Yes	Yes	Tree root and fungi, good sequencing depth, potentially interesting ? PI: Donald Zak from U Michigan, NSF project (Award Abstract # 1754369)
+PRJNA818909	59	Wetlands oil remediation in Canada	Wetlands			Yes	Maybe ?	Maybe interesting, should try to get in touch (registered in 2022) ?
+PRJEB35640	58	Freshwater metagenomes from different European and Asian lakes	Freshwater lake		Yes (1780)	No	No	
+PRJNA849359	58	Spirodela polyrhiza pool-seq				No	No	Weird sequencing strategy (pool-seq), stay away ?
+PRJEB52406	57	High resolution sampling of Rimov freshwater reservoir in Czech Republic	Freshwater lake		Yes (1219)	No	No	
+PRJNA577476	57	Soil and Saprolite samples from the Eel River Critical Zone Observatory 2013-2016			Yes (59)	No	No	Banfield lab, stay away
+PRJNA932007	57	Metagenomic sequencing of Priestia megaterium populations during in situ adaptive evolution in soil	Soil			No	No	Manipulated microbiome, adaptive evolution, probably not ideal
+PRJEB34883	56	Baltic Sea metagenome assembly and MAG data sets: Coastal transect 2015 and LMO time series 2013-2014	Marine		Yes (352)	No	No	
+PRJEB55522	56	Shotgun and capture enriched metagenomic data from 2 million year old geological sediments	Soil	10.1038/s41586-022-05453-y		Yes	No	Center for Geogenetics, Denmark (?) - Looks like they looked at animal data, but not really microbes ? Could get in touch ?
+PRJNA395437	56	Mesocoms marine planktonic metagenome Raw sequence reads (KAUST)	Marine			Yes	No	Ok to Import IMG ?
+PRJNA688820	56	Wheat rhizosphere microbiome	Soil / Plant	10.3389/fmicb.2021.689855		Yes	Maybe ?	Published, rhizosphere with good sequencing depth, nice metadata good to import
+PRJNA880762	56	Microbial communities from seawater collected from the South China Sea	Marine		Yes (?)	No	No	
+PRJNA888551	56	Soil metagenome Raw sequence reads Raw sequence reads	Soil			No	No	very little metadata
+PRJNA1000042	54	sediment metagenome Metagenome hyporheic zone	River sediment			No	No	very little metadata, 2023
+PRJNA558772	54	Crosstalk with astrocytes establishes tumor edge in glioblastoma	Human			No	No	
+PRJNA899702	54	soil metagenome sequencing	Soil			No	No	no metadata
+PRJNA855256	53	Ammonia-oxidizing archaea and complete ammonia-oxidizing (comammox) bacteria, differentially contribute to ammonia oxidation in soil under precipitation gradient and land legacy	Soil			No	No	no metadata
+PRJEB40760	52	Shotgun metagenome sequencing from the Ocean Sampling Day (OSD) campaign June 2018	Marine			Yes	Maybe ?	Should be in IMG anyway ? Maybe NMDC as well, nice metadata but marine ?
+PRJNA640378	52	Metagenomes from Northern California groundwater	Subsurface	10.1101/2020.05.14.094862	Yes (2007)	No	No	Banfield lab, stay away
+PRJNA746701	52	Rhizosphere metagenomes from the Byers Peninsula, Livingston Island, Antarctica (62 S)	Soil / Plant	?	Yes and No (BioSample, no Assembly ?)	No	No	Universidad Andres Bello, Castro Lab
+PRJNA903825	51	Forest soil metagenome (China)	Soil			No	No	no metadata
+PRJNA914269	51	Terrestrial geothermal spring samples from Costa Rica, Panama, Argentina, and Iceland.	Hot Springs			Yes	No	Interesting for IMG, not enough metadata for NMDC, linked to Deep Carbon Observatory - https://deepcarbon.net, worldwide
+PRJEB31530	50	Whole genome shotgun sequencing of leaf Arabidopsis thaliana phylospheres	Plant			No	No	Arabidopsis, maybe not very interesting even if “wild” arabidopsis ?
+PRJEB35627	50	Seasonal and diel patterns of bacteriophages in the Red Sea	Marine			No	No	
+PRJNA476799	50	Greenhouse Vegetable Surfaces Raw sequence reads	Plant			No	No	Food related, not high priority
+PRJNA691683	50	Topsoil viromes from five types of land uses	Soil			No	No	More for IMG/VR ?
+PRJNA798446	50	Shotgun metagenome of microbial community in mangrove sediments in a depth range of 100 cm	Soil			No	No	no metadata
+PRJNA893888	50	vineyards soil sample	Soil			No	No	no metadata
