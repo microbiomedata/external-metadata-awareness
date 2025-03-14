@@ -330,6 +330,18 @@ files = [
 ]
 
 [[package]]
+name = "case-converter"
+version = "1.2.0"
+description = "A string case conversion package."
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "case_converter-1.2.0-py3-none-any.whl", hash = "sha256:bb5bc6b1e121c394a6de6526cd3f8be0f5c5817c40d32251cce28a2cf4a72d8c"},
+    {file = "case_converter-1.2.0.tar.gz", hash = "sha256:4e0281ae60d4335e57300bafd61cfb3fa65734587fe9efd32f6cec1a506685c5"},
+]
+
+[[package]]
 name = "cattrs"
 version = "24.1.2"
 description = "Composable complex class support for attrs and dataclasses."
@@ -1352,6 +1364,18 @@ pyjsg = ">=0.11.6"
 rdflib = ">=6.2.0,<8"
 rdflib-shim = "*"
 rfc3987 = "*"
+
+[[package]]
+name = "git-filter-repo"
+version = "2.47.0"
+description = "Quickly rewrite git repository history"
+optional = false
+python-versions = ">=3.6"
+groups = ["main"]
+files = [
+    {file = "git_filter_repo-2.47.0-py3-none-any.whl", hash = "sha256:2cd04929b9024e83e65db571cbe36aec65ead0cb5f9ec5abe42158654af5ad83"},
+    {file = "git_filter_repo-2.47.0.tar.gz", hash = "sha256:411b27e68a080c07a69c233cb526dbc2d848b09a72f10477f4444dd0822cf290"},
+]
 
 [[package]]
 name = "google-api-core"
@@ -6921,4 +6945,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "fc2b1ef72143f478e72e2a1094337e12e2d80c9d4ead6d413797adaac2e46881"
+content-hash = "4bfae7398bfaf1e7cf8cf81c06e7f623a5ad72bb5210b1a353878eccfe04a1fd"

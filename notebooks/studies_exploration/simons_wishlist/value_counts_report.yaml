@@ -1,0 +1,100 @@
+assay_type:
+  AMPLICON: 31582
+  WGS: 19222
+  OTHER: 1374
+  WGA: 514
+  RNA-Seq: 464
+instrument:
+  Illumina MiSeq: 29061
+  Illumina NovaSeq 6000: 8937
+  Illumina HiSeq 4000: 5296
+  Illumina HiSeq 2500: 3050
+  Illumina HiSeq 2000: 2206
+  NextSeq 500: 1818
+  Illumina HiSeq 3000: 1285
+  HiSeq X Ten: 679
+  NextSeq 550: 657
+  Illumina HiSeq 1000: 119
+  unspecified: 44
+  Illumina Genome Analyzer IIx: 4
+librarylayout:
+  PAIRED: 50134
+  SINGLE: 3022
+libraryselection:
+  PCR: 33434
+  RANDOM: 15960
+  other: 1694
+  size fractionation: 856
+  RANDOM PCR: 633
+  unspecified: 525
+  cDNA: 54
+librarysource:
+  METAGENOMIC: 32771
+  GENOMIC: 19405
+  METATRANSCRIPTOMIC: 792
+  TRANSCRIPTOMIC: 105
+  GENOMIC SINGLE CELL: 83
+platform:
+  ILLUMINA: 53156
+organism:
+  marine metagenome: 29929
+  soil metagenome: 7362
+  sediment metagenome: 3841
+  metagenome: 2235
+  seawater metagenome: 1571
+  Arabidopsis thaliana: 1215
+  marine plankton metagenome: 1181
+  human skin metagenome: 966
+  aquatic metagenome: 709
+  plant metagenome: 642
+  rock metagenome: 508
+  lake water metagenome: 482
+  peat metagenome: 468
+  rhizosphere metagenome: 291
+  freshwater metagenome: 196
+  subsurface metagenome: 161
+  estuary metagenome: 144
+  terrestrial metagenome: 128
+  skin metagenome: 121
+  pond metagenome: 117
+  dust metagenome: 103
+  prokaryotic metagenome: 90
+  fungus metagenome: 90
+  marine sediment metagenome: 75
+  hot springs metagenome: 63
+  wetland metagenome: 60
+  Mikania micrantha: 55
+  groundwater metagenome: 53
+  Homo sapiens: 45
+  uncultured prokaryote: 43
+  wastewater metagenome: 33
+  uncultured Chlorobiaceae bacterium: 30
+  biofilm metagenome: 29
+  gas well metagenome: 19
+  uncultured bacterium: 12
+  ice metagenome: 9
+  freshwater sediment metagenome: 9
+  synthetic metagenome: 9
+  Mus musculus: 8
+  feces metagenome: 8
+  Candidatus Moraniibacteriota bacterium: 6
+  root metagenome: 6
+  uncultured Methylococcaceae bacterium: 5
+  uncultured Actinomycetes bacterium: 4
+  uncultured Bacteroidota bacterium: 3
+  oil production facility metagenome: 3
+  uncultured beta proteobacterium: 2
+  uncultured Holophagaceae bacterium: 2
+  uncultured Caulobacteraceae bacterium: 2
+  uncultured Ferrovum sp.: 2
+  uncultured Opitutia bacterium: 1
+  uncultured Verrucomicrobia subdivision 3 bacterium: 1
+  uncultured Pseudomonadota bacterium: 1
+  Akkermansiaceae bacterium: 1
+  uncultured candidate division WWE3 bacterium: 1
+  uncultured Schlesneria sp.: 1
+  uncultured Bacteroidales bacterium: 1
+  uncultured Candidatus Peregrinibacteria bacterium: 1
+  uncultured Verrucomicrobiales bacterium: 1
+  Halanaerobium: 1
+  snow metagenome: 1
