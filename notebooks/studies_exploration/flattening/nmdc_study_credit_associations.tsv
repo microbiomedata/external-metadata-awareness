@@ -69,6 +69,10 @@ nmdc:sty-11-33fbta56	Conceptualization|Data curation|Formal Analysis|Funding acq
 nmdc:sty-11-34xj1150	Data curation|Methodology	Hugh Cross	orcid:0000-0002-6745-9479
 nmdc:sty-11-34xj1150	Data curation|Methodology	Samantha Weintraub-Leff	orcid:0000-0003-4789-5086
 nmdc:sty-11-34xj1150	Principal Investigator	Kate Thibault	orcid:0000-0003-3477-6424
+nmdc:sty-11-3cmn1g53	Supervision	Andrew Leakey	
+nmdc:sty-11-3cmn1g53	Supervision	Elizabeth Murphy	
+nmdc:sty-11-3cmn1g53	Supervision	Vijay Singh	
+nmdc:sty-11-3cmn1g53	Supervision	Wendy Yang	
 nmdc:sty-11-547rwq94	Data curation|Formal Analysis|Investigation|Methodology|Project administration|Supervision|Validation|Visualization|Writing original draft|Writing review and editing	Justin P. Shaffer	0000-0002-9371-6336
 nmdc:sty-11-547rwq94	Data curation|Formal Analysis|Investigation|Methodology|Software|Validation|Visualization|Writing original draft|Writing review and editing	Louis-Félix Nothias	
 nmdc:sty-11-547rwq94	Conceptualization|Data curation|Investigation|Methodology|Project administration|Supervision|Validation|Writing review and editing	Luke R. Thompson	0000-0002-3911-1280
@@ -212,6 +216,10 @@ nmdc:sty-11-aygzgv51	Investigation|Methodology|Resources|Writing review and edit
 nmdc:sty-11-aygzgv51	Data curation|Formal Analysis|Investigation|Methodology|Validation|Writing review and editing	Samuel Purvine	orcid:0000-0002-2257-2400
 nmdc:sty-11-aygzgv51	Investigation|Methodology|Writing review and editing	Carrie Nicora	orcid:0000-0003-2461-9548
 nmdc:sty-11-aygzgv51	Conceptualization|Formal Analysis|Funding acquisition|Investigation|Methodology|Writing review and editing	William Nelson	orcid:0000-0002-1873-3929
+nmdc:sty-11-cssvjy19	Supervision	Jerry Tuskan	
+nmdc:sty-11-cssvjy19	Supervision	Brian Davison	
+nmdc:sty-11-cssvjy19	Supervision	Renae Speck	
+nmdc:sty-11-cssvjy19	Supervision	 Lynn Giuliano	
 nmdc:sty-11-cytnjc39	Conceptualization|Funding acquisition|Principal Investigator|Project administration|Supervision	Paul J. Hanson	orcid:0000-0001-7293-3561
 nmdc:sty-11-cytnjc39	Conceptualization|Funding acquisition|Principal Investigator|Project administration|Supervision	Daniel M. Ricciuto	orcid:0000-0002-3668-3021
 nmdc:sty-11-cytnjc39	Conceptualization|Investigation	Terri Velliquette	orcid:0000-0001-9855-5191
@@ -250,6 +258,10 @@ nmdc:sty-11-dcqce727	Formal Analysis|Funding acquisition|Methodology|Writing rev
 nmdc:sty-11-dcqce727	Formal Analysis|Funding acquisition|Writing original draft	Patrick Sorensen	orcid:0000-0002-0558-2789
 nmdc:sty-11-dcqce727	Project administration	Tijana Glavina del Rio	orcid:0000-0003-1411-9814
 nmdc:sty-11-dcqce727	Formal Analysis|Investigation|Writing review and editing	Malak Tfaily	orcid:0000-0002-3036-2833
+nmdc:sty-11-dwsv7q78	Formal Analysis|Visualization|Writing original draft|Writing review and editing	Emily N. Boak	
+nmdc:sty-11-dwsv7q78	Data curation|Formal Analysis|Software|Writing review and editing	Benjamin P. Bowen	
+nmdc:sty-11-dwsv7q78	Data curation|Methodology|Validation|Writing review and editing	Katherine B. Louie	
+nmdc:sty-11-dwsv7q78	Methodology|Resources|Supervision|Writing review and editing	Trent R. Northen	
 nmdc:sty-11-e4yb9z58	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Principal Investigator|Project administration|Resources|Software|Supervision|Validation|Visualization|Writing original draft|Writing review and editing	Adina Howe	0000-0002-7705-343X
 nmdc:sty-11-ev70y104	Conceptualization|Data curation|Formal Analysis|Investigation|Methodology|Submitter|Validation|Writing original draft|Writing review and editing	Vlastimil Novak	0000-0001-7890-4593
 nmdc:sty-11-ev70y104	Methodology|Writing review and editing	Dor Russ	0000-0003-4372-7958
@@ -321,6 +333,13 @@ nmdc:sty-11-f1he1955	Conceptualization|Investigation	Alyssa Carrell	orcid:0000-0
 nmdc:sty-11-f1he1955	Conceptualization|Investigation	Jay Chen	orcid:0000-0002-1752-4201
 nmdc:sty-11-f1he1955	Conceptualization|Investigation	Hari Chhetri	orcid:0000-0001-6820-8789
 nmdc:sty-11-f1he1955	Conceptualization|Investigation	Melissa Cregger	orcid:0000-0001-8329-366X
+nmdc:sty-11-ggfd7z76	Supervision	Jay Keasling	
+nmdc:sty-11-ggfd7z76	Supervision	Justin Heady	
+nmdc:sty-11-ggfd7z76	Supervision	Blake Simmons	
+nmdc:sty-11-ggfd7z76	Supervision	Corinne Scown	
+nmdc:sty-11-ggfd7z76	Supervision	Henrik Vibe Scheller	
+nmdc:sty-11-ggfd7z76	Supervision	Aindrila Mukhopadhyay	
+nmdc:sty-11-ggfd7z76	Supervision	Paul Adams	
 nmdc:sty-11-hdd4bf83	Data curation	Andrew Tritt	0000-0002-1617-449X
 nmdc:sty-11-hdd4bf83	Formal Analysis	Connor Tiffany	0000-0001-8188-7720
 nmdc:sty-11-hdd4bf83	Formal Analysis|Investigation	Hannah Pritkin Savage	"	0000-0002-1057-7239"
@@ -328,6 +347,18 @@ nmdc:sty-11-hdd4bf83	Investigation	Krystle Lynn Reagan	0000-0003-3426-6352
 nmdc:sty-11-hht5sb92	Data curation|Methodology	Hugh Cross	orcid:0000-0002-6745-9479
 nmdc:sty-11-hht5sb92	Principal Investigator	Kate Thibault	orcid:0000-0003-3477-6424
 nmdc:sty-11-hht5sb92	Data curation|Methodology	Stephanie Parker	0000-0002-7180-7245
+nmdc:sty-11-kjs8av65	Supervision	Vanessa Bailey	
+nmdc:sty-11-kjs8av65	Supervision	Pat Megonigal	
+nmdc:sty-11-kjs8av65	Supervision	Mike Weintraub	
+nmdc:sty-11-kjs8av65	Supervision	Peter Thornton	
+nmdc:sty-11-kjs8av65	Supervision	Ben Bond-Lamberty	
+nmdc:sty-11-kjs8av65	Supervision	Sandy Carrasco	
+nmdc:sty-11-kjs8av65	Supervision	Xingyuan Chen	
+nmdc:sty-11-kjs8av65	Supervision	Ken Kemner	
+nmdc:sty-11-kjs8av65	Supervision	Teri O'Meara	
+nmdc:sty-11-kjs8av65	Supervision	Nick Ward	
+nmdc:sty-11-kjs8av65	Supervision	Alli Lewis	
+nmdc:sty-11-kjs8av65	Supervision	Kurt Maier	
 nmdc:sty-11-msexsy29	Conceptualization|Funding acquisition|Principal Investigator|Project administration|Supervision	Jennifer Pett-Ridge	orcid:0000-0002-4439-2398
 nmdc:sty-11-msexsy29	Conceptualization|Investigation	Steven Blazewicz	orcid:0000-0001-7517-1750
 nmdc:sty-11-msexsy29	Conceptualization|Investigation	Stephanie Malfatti	orcid:0000-0003-4225-9857
@@ -367,6 +398,13 @@ nmdc:sty-11-r2h77870	Conceptualization|Data curation|Formal Analysis|Funding acq
 nmdc:sty-11-r2h77870	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Supervision|Validation|Visualization|Writing original draft|Writing review and editing	Wellington Muchero	orcid:0000-0002-0200-9856
 nmdc:sty-11-r2h77870	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Supervision|Validation|Visualization|Writing original draft|Writing review and editing	Christopher Schadt	orcid:0000-0001-8759-2448
 nmdc:sty-11-r2h77870	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Supervision|Validation|Visualization|Writing original draft|Writing review and editing	David Weston	orcid:0000-0002-4794-9913
+nmdc:sty-11-srtxhh77	Supervision	John Bargar	
+nmdc:sty-11-srtxhh77	Supervision	Emily Graham	
+nmdc:sty-11-srtxhh77	Supervision	Odeta Qafoku	
+nmdc:sty-11-srtxhh77	Supervision	Yuri Corilo	
+nmdc:sty-11-srtxhh77	Supervision	Sarah Leichty	
+nmdc:sty-11-srtxhh77	Supervision	Tanja Woyke	
+nmdc:sty-11-srtxhh77	Supervision	Christa Pennacchio	
 nmdc:sty-11-x4aawf73	Conceptualization|Funding acquisition|Principal Investigator|Project administration|Supervision	Timothy Scheibe	orcid:0000-0002-8864-5772
 nmdc:sty-11-x4aawf73	Conceptualization|Funding acquisition|Principal Investigator|Project administration|Supervision	Xingyuan Chen	
 nmdc:sty-11-x4aawf73	Conceptualization|Funding acquisition|Principal Investigator|Project administration|Supervision	James C. Stegen	orcid:0000-0001-9135-7424
@@ -393,6 +431,21 @@ nmdc:sty-11-xcbexm97	Conceptualization|Data curation|Formal Analysis|Funding acq
 nmdc:sty-11-xcbexm97	Conceptualization|Funding acquisition	Xingyuan Chen	
 nmdc:sty-11-xcbexm97	Data curation|Investigation|Methodology	Rosey Chu	orcid:0000-0001-7428-7647
 nmdc:sty-11-xcbexm97	Conceptualization|Formal Analysis|Investigation|Methodology|Visualization|Writing original draft|Writing review and editing	Bob Danczak	
+nmdc:sty-11-y1kdd163	Supervision	Timothy Donohue	
+nmdc:sty-11-y1kdd163	Supervision	Yiying Xiong	
+nmdc:sty-11-y1kdd163	Supervision	Kurt Thelen	
+nmdc:sty-11-y1kdd163	Supervision	Federica Brandizzi	
+nmdc:sty-11-y1kdd163	Supervision	Robert Landick	
+nmdc:sty-11-y1kdd163	Supervision	Christos Maravelias	
+nmdc:sty-11-y1kdd163	Supervision	Daniel Noguera	
+nmdc:sty-11-y1kdd163	Supervision	G Philip Robertson	
+nmdc:sty-11-y1kdd163	Supervision	Donna Bates	
+nmdc:sty-11-y1kdd163	Supervision	Eva Ziegelhoffer	
+nmdc:sty-11-y1kdd163	Supervision	Sarynna Lopez Meza	
+nmdc:sty-11-y1kdd163	Supervision	Anne-Sophie Bohrer	
+nmdc:sty-11-y1kdd163	Supervision	Christine Preston	
+nmdc:sty-11-y1kdd163	Supervision	Dirk Norman	
+nmdc:sty-11-y1kdd163	Supervision	Millicent Sanciangco	
 nmdc:sty-11-zs2syx06	Conceptualization|Data curation|Formal Analysis|Methodology|Writing original draft	Spencer Diamond	orcid:0000-0003-4131-341X
 nmdc:sty-11-zs2syx06	Data curation|Methodology|Writing review and editing	Karthik Anantharaman	orcid:0000-0002-9584-2491
 nmdc:sty-11-zs2syx06	Conceptualization|Data curation|Formal Analysis|Methodology|Writing original draft	Peter F. Andeer	
