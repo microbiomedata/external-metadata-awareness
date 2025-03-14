@@ -109,22 +109,20 @@ downloads/nmdc_select_mongodb_dump.gz:
 		--db nmdc \
 		--archive=$@ \
 		--gzip \
+		--excludeCollection EMP_soil_project_run_counts \
 		--excludeCollection _migration_events \
+		--excludeCollection _migration_latest_schema_version \
 		--excludeCollection _runtime.analytics \
 		--excludeCollection _runtime.api.allow \
 		--excludeCollection _runtime.healthcheck \
 		--excludeCollection _tmp__get_file_size_bytes \
 		--excludeCollection alldocs \
 		--excludeCollection capabilities \
-		--excludeCollection chemical_entity_set \
-		--excludeCollection collecting_biosamples_from_site_set \
 		--excludeCollection date_created \
-		--excludeCollection EMP_soil_project_run_counts \
 		--excludeCollection etl_software_version \
 		--excludeCollection file_type_enum \
 		--excludeCollection fs.chunks \
 		--excludeCollection fs.files \
-		--excludeCollection functional_annotation_agg \
 		--excludeCollection id_records \
 		--excludeCollection ids \
 		--excludeCollection ids_nmdc_fk0 \
@@ -134,7 +132,6 @@ downloads/nmdc_select_mongodb_dump.gz:
 		--excludeCollection ids_nmdc_mta0 \
 		--excludeCollection ids_nmdc_sys0 \
 		--excludeCollection jobs \
-		--excludeCollection material_sample_set \
 		--excludeCollection metap_gene_function_aggregation \
 		--excludeCollection minter.id_records \
 		--excludeCollection minter.requesters \
@@ -146,11 +143,8 @@ downloads/nmdc_select_mongodb_dump.gz:
 		--excludeCollection notes \
 		--excludeCollection object_types \
 		--excludeCollection objects \
-		--excludeCollection omics_processing_set \
 		--excludeCollection operations \
 		--excludeCollection page_tokens \
-		--excludeCollection planned_process_set \
-		--excludeCollection protocol_execution_set \
 		--excludeCollection queries \
 		--excludeCollection query_runs \
 		--excludeCollection requesters \
@@ -159,7 +153,6 @@ downloads/nmdc_select_mongodb_dump.gz:
 		--excludeCollection services \
 		--excludeCollection shoulders \
 		--excludeCollection sites \
-		--excludeCollection storage_process_set \
 		--excludeCollection system.views \
 		--excludeCollection triggers \
 		--excludeCollection txn_log \
@@ -184,3 +177,12 @@ downloads/nmdc_select_mongodb_dump.gz:
  #collecting_biosamples_from_site_set,0
  #protocol_execution_set,0
  #chemical_entity_set,0
+
+# 		--excludeCollection chemical_entity_set \
+# 		--excludeCollection collecting_biosamples_from_site_set \
+# 		--excludeCollection storage_process_set \
+#		--excludeCollection material_sample_set \
+#		--excludeCollection omics_processing_set \
+#		--excludeCollection planned_process_set \
+#		--excludeCollection protocol_execution_set \
+#		--excludeCollection functional_annotation_agg \
