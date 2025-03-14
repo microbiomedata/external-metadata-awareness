@@ -236,3 +236,8 @@ local/biosample_xpath_counts.json: local/biosample_set.xml
 		--always-count-path '/BioSampleSet/BioSample' \
 		--stop-after 999999999 \
 		--output $@
+
+downloads/bioproject.xml:
+	date
+	$(WGET) -O $@ "https://ftp.ncbi.nlm.nih.gov/bioproject/bioproject.xml" # ~ 3 GB March 2025
+	date
