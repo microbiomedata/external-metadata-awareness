@@ -103,7 +103,7 @@ load-biosamples-into-mongo: local/biosample_set.xml
 	date
 
 local/biosample-count-mongodb.txt:
-	date && mongosh --eval 'db.getSiblingDB("$(MONGO_DB").biosamples.countDocuments()' > $@ && date # 1 minute # how to use Makefile variables here?
+	date && mongosh --eval "db.getSiblingDB('$(MONGO_DB)').biosamples.countDocuments()" > $@ && date # 1 minute # how to use Makefile variables here?
 
 # no indexing necessary for the mongodb to duckdb convertion in notebooks/mongodb_biosamples_to_duckdb.ipynb
 # 1% MongoDB load 8 minutes on MAM Ubuntu NUC
