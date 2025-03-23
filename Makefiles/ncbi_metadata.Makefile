@@ -218,7 +218,8 @@ load_acceptable_sized_leaf_bioprojects_into_mongodb: downloads/bioproject.xml
 		--mongo-uri mongodb://$(MONGO_HOST):$(MONGO_PORT) \
 		--db-name $(MONGO_DB) \
 		--project-collection bioprojects \
-		--submission-collection bioprojects_submissions $<
+		--submission-collection bioprojects_submissions \
+		--oversize-dir local/oversize $<
 
 local/bioproject_xpath_counts.json: downloads/bioproject.xml
 	poetry run python external_metadata_awareness/count_xml_paths.py \
@@ -228,6 +229,13 @@ local/bioproject_xpath_counts.json: downloads/bioproject.xml
 		--stop-after 999999999 \
 		--output $@
 
+local/bioproject_packageset_xpath_counts.json: downloads/bioproject.xml
+	poetry run python external_metadata_awareness/count_xml_paths.py \
+		--xml-file $< \
+		--interval 10 \
+		--always-count-path '/PackageSet' \
+		--stop-after 999999999 \
+		--output $@
 
 local/biosample_xpath_counts.json: local/biosample_set.xml
 	poetry run python external_metadata_awareness/count_xml_paths.py \
