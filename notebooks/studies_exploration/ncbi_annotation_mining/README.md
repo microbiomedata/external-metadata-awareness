@@ -5,15 +5,15 @@
 2. flatten_all_ncbi_biosample_harmonized_attributes.ipynb
     - hours (no benefit from requests caching)
 3. extract_and_parse_env_triad_values.ipynb
-    - fast if requests have been cached
-4. build_and_apply_lexical_index_from_env_triad_values_ner.ipynb
+4. notebooks/lexical_index_functions.ipynb
+5. build_and_apply_lexical_index_from_env_triad_values_ner.ipynb
     - fast if requests have been cached
     - check for creation of `preferred_mappings_curies` in `target_collection` aka "class_label_cache"
     - rerun some steps after second lexical index is created?
         - how to assess benefit?
         - before: 69% of `triad_components_labels` have an `partial_matches_vs_precedent.partial_matches_vs_precedent` with average length of 1.69
         - after: 71% of `triad_components_labels` have an `partial_matches_vs_precedent.partial_matches_vs_precedent` with average length of 1.75
-5. compact_mined_triads.ipynb
+6. compact_mined_triads.ipynb
 
 
 ## Second pass
