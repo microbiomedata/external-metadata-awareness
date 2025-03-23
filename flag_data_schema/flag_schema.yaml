@@ -1,0 +1,33 @@
+name: flag_schema
+id: https://example.com/flag_schema
+prefixes:
+  linkml: https://w3id.org/linkml/
+  flagschema: https://example.com/flag_schema/
+imports:
+  - linkml:types
+default_prefix: flagschema
+default_range: string
+slots:
+  flags:
+    range: Flag
+    multivalued: true
+    inlined: true
+    inlined_as_list: true
+  represents:
+    description: a municipality, state, nation, etc.
+#  colors:
+#    multivalued: true
+  horizontal_bars:
+    range: boolean
+    comments:
+      - if there are colors arranged in bars or stripes, and those bars are longer than wide, then set this to true
+classes:
+  FlagCollection:
+    slots:
+    - flags
+    tree_root: true
+  Flag:
+    slots:
+    - represents
+#    - colors
+    - horizontal_bars

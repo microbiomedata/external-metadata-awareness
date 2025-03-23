@@ -1,0 +1,4 @@
+I can get that to validate with the "single linkml command" and in  --legacy-mode
+linkml validate --schema flag_schema.yaml --legacy-mode --target-class FlagCollection --index-slot flags flag_data.tsv
+or with the "pre-single-command" style in "non-legacy-mode"
+linkml-validate --schema flag_schema.yaml --target-class FlagCollection flag_data.yaml
