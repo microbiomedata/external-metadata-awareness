@@ -1,0 +1,12 @@
+flags:
+  - represents: Canada
+    horizontal_bars: false
+    colors:
+      - red
+      - white
+  - represents: Belgium
+    horizontal_bars: true
+    colors:
+      - black
+      - yellow
+      - red
