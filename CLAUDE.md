@@ -80,6 +80,77 @@ To ensure maintained alignment between repositories:
 3. **Pipeline Testing**: Test full pipeline from term selection through schema integration
 4. **Reproducibility**: Document thresholds and criteria used for each voting round
 
+## SRA BigQuery Data Handling
+
+### Approaches for Fetching and Storing SRA Data
+
+This repository contains several scripts and notebooks for retrieving data from the `nih-sra-datastore.sra` BigQuery tables and storing it in various formats:
+
+#### Direct BigQuery to MongoDB Approach
+
+1. **filtered_sra_metadata_to_mongo.ipynb**
+   - Primary notebook for direct BigQuery to MongoDB import
+   - Located in `notebooks/studies_exploration/simons_wishlist/`
+   - Directly queries the `nih-sra-datastore.sra.metadata` table with environmental context filters
+   - Streams results in batches (10,000 records) to MongoDB
+   - Uses complex filtering for specific environment contexts (all three triad components)
+   - Writes to `ncbi_metadata.filtered_sra_metadata` collection
+   - Processes ~2.7 million records that meet filter criteria
+
+2. **simons_wishlist_env_triads.ipynb**
+   - Located in `notebooks/studies_exploration/simons_wishlist/`
+   - More focused approach using a curated list of ~113 bioprojects
+   - Combines a Google Sheet project list with BigQuery data
+   - Fetches environmental triads and SRA metadata in batches
+   - Processes environmental context data through DuckDB for normalization
+   - Outputs TSV files rather than writing directly to MongoDB
+
+#### Two-Step Approach (BigQuery → Parquet → MongoDB)
+
+1. **export_sra_accession_pairs.py**
+   - Extracts bioproject-biosample pairs from `nih-sra-datastore.sra.metadata`
+   - Creates TSV files with relationship data rather than full SRA metadata
+   - Uses batching for memory efficiency and progress reporting
+   - Designed for incremental loading of large datasets (tens of millions of records)
+
+2. **sra_parquet_to_mongodb.py**
+   - Loads SRA metadata from Parquet files into MongoDB
+   - Uses batching for memory efficiency and controlled progress reporting
+   - Cleanses data (converts dates, removes nulls) during import
+   - Target collection: `sra_metadata` or `biosamples.sra_metadata`
+   - Handles ~35M records in the full dataset
+
+3. **biosample_to_bioproject_via_sra.ipynb**
+   - Analysis notebook demonstrating count queries against BigQuery
+   - Shows ~30M distinct biosample-bioproject pairs exist in the data
+   - No direct import to MongoDB, but provides analytical insights
+
+### Common Patterns and Implementation Details
+
+1. **Consistent Filtering Criteria**:
+   - Minimum average spot length: ≥ 150
+   - Minimum bases: ≥ 10
+   - Platform: ILLUMINA
+   - Minimum samples per project: ≥ 50
+   - Environmental context fields must be present
+
+2. **Memory Management Techniques**:
+   - All approaches use batched processing (typically 1k-10k records)
+   - Progress reporting at regular intervals
+   - Optional row limits for testing and partial imports
+
+3. **Data Serialization**:
+   - All scripts convert datetime objects to ISO format strings
+   - Complex nested attributes are flattened or preserved as structured data
+   - MongoDB's document structure maintains the complex hierarchical nature of SRA data
+
+4. **Production Implementations**:
+   - `filtered_sra_metadata` collection: ~2.7M filtered records
+   - `biosamples.sra_metadata` collection: ~35M complete records on local instance
+   - `ncbi_metadata.sra_metadata` collection: ~31.4M records on loadbalancer instance
+
+The main technical challenge with this data is scale - the complete SRA metadata set is tens of millions of records requiring careful memory management during import operations.
+
 ## MongoDB Infrastructure
 
 ### Servers
