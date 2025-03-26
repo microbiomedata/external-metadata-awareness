@@ -1,0 +1,112 @@
+value	count	UCUM	confidence	notes
+milligram per liter	54	mg/L	high	Exact match on UCUM description
+parts per million	29		none	No match found
+micromole per liter	26	umol/L	high	Exact match on UCUM description
+gram	20	g	high	Exact match on UCUM description
+degree Celsius	20	Cel	high	Exact match on UCUM description
+mole per liter	15	mol/L	high	Exact match on UCUM description
+meter	15	m	high	Exact match on UCUM description
+microgram per liter	11	ug/L	high	Exact match on UCUM description
+percentage	11		none	No match found
+square meter	7	m2	high	Exact match on UCUM description
+kilogram	7	kg	high	Exact match on UCUM description
+gram per liter	6	g/L	high	Exact match on UCUM description
+percent	6	%	high	Exact match on UCUM description
+centimeter	5	cm	high	Exact match on UCUM description
+days	5	d/wk	low	Partial match on UCUM description
+millimeter	5	mm	high	Exact match on UCUM description
+milliliter	4	mL	high	Exact match on UCUM description
+micrometer	4	um	high	Exact match on UCUM description
+microgram	4	ug	high	Exact match on UCUM description
+hour	3	h	high	Exact match on UCUM description
+hours or days	3		none	No match found
+micromole per kilogram	3	umol/kg	high	Exact match on UCUM description
+milligram per cubic meter per day	3		none	No match found
+joule per degree Celsius	3		none	No match found
+lux	3		none	No match found
+gram per cubic meter	3	kg/m3	low	Partial match on UCUM description
+colony forming units per gram of dry weight	3		none	No match found
+colony forming units per milliliter	3		none	No match found
+year	3	a	high	Exact match on UCUM description
+	2	10.L/min	low	Partial match on UCUM description
+atmosphere	2	atm	high	Exact match on UCUM description
+meter per second	2	m/s	high	Exact match on UCUM description
+nanogram per liter	2	ng/L	high	Exact match on UCUM description
+milligram	2	mg	high	Exact match on UCUM description
+milliSiemens per centimeter	2		none	No match found
+microgram per gram	2	ug/g	high	Exact match on UCUM description
+microgram per cubic meter	2	ug/m3	high	Exact match on UCUM description
+kilogram of air	2		none	No match found
+cubic meter per day	2		none	No match found
+gram of air	2		none	No match found
+milligram per cubic meter	2	mg/m3	high	Exact match on UCUM description
+millimeter mercury	2		none	No match found
+ton	2	10.uN.s/(cm5.m2)	low	Partial match on UCUM description
+day	2	d	high	Exact match on UCUM description
+liters per second	1		none	No match found
+cubic meter	1	m3/s	low	Partial match on UCUM description
+cubic meter per minute	1		none	No match found
+hours	1		none	No match found
+grams	1		none	No match found
+microliter	1	uL	high	Exact match on UCUM description
+part per million	1	[ppm]	high	Exact match on UCUM description
+pound	1	[lb_av]	low	Partial match on UCUM description
+degree	1	deg	low	Partial match on UCUM description
+knots	1		none	No match found
+cubic meter per second	1	m3/s	high	Exact match on UCUM description
+dpi	1		none	No match found
+degrees or cardinal direction	1		none	No match found
+degrees API	1		none	No match found
+gram Carbon per kilogram sample material	1		none	No match found
+gram per cubic centimeter	1	g/cm3	high	Exact match on UCUM description
+gram per gram or cubic centimeter per cubic centimeter	1		none	No match found
+gram per gram	1	g/g	high	Exact match on UCUM description
+kilogram per kilogram	1		none	No match found
+cubic feet	1		none	No match found
+beats per minute	1	{beats}/min	low	Partial match on UCUM description
+kilopascal	1	kPa	high	Exact match on UCUM description
+cP at degree Celsius	1		none	No match found
+lumens per square meter	1		none	No match found
+kilowatts per square meter per day	1		none	No match found
+ergs per square centimeter per second	1		none	No match found
+nanometer	1	nm	high	Exact match on UCUM description
+meter per square second	1	m/s2	high	Exact match on UCUM description
+mD	1		none	No match found
+angstrom	1		none	No match found
+liter per hour	1	L/h	high	Exact match on UCUM description
+kilowatt per square metre	1		none	No match found
+inch	1	[cin_i]	low	Partial match on UCUM description
+kilogram per metre square	1		none	No match found
+kilogram per square meter	1	kg/m2	high	Exact match on UCUM description
+milligram or gram	1		none	No match found
+volts	1		none	No match found
+milligram chlorophyll a per cubic meter	1		none	No match found
+milliequivalent per liter	1	meq/L	high	Exact match on UCUM description
+parts per billion	1		none	No match found
+millibar	1	mbar	high	Exact match on UCUM description
+g	1	[AU]	low	Partial match on UCUM description
+microEinstein per square meter per second	1		none	No match found
+microEinstein per square centimeter per second	1		none	No match found
+millivolt	1	mV	high	Exact match on UCUM description
+millimeter per year	1		none	No match found
+gram per square meter per day	1		none	No match found
+micromole oxygen per liter per hour	1		none	No match found
+milligram per kilogram	1	mg/kg	high	Exact match on UCUM description
+square centimeter	1	cm2	high	Exact match on UCUM description
+liter	1	L	high	Exact match on UCUM description
+gram per square meter	1	g/m2	high	Exact match on UCUM description
+number of photons per second per unit area	1		none	No match found
+number of cells per gram (or ml or cm^2)	1		none	No match found
+mole per liter per hour	1	umol/L/h	low	Partial match on UCUM description
+mol per liter per hour	1		none	No match found
+mol m-2 s-1	1		none	No match found
+per week	1	/wk	high	Exact match on UCUM description
+per day	1	/d	high	Exact match on UCUM description
+gray	1	Gy	high	Exact match on UCUM description
+rad	1	F	low	Partial match on UCUM description
+practical salinity unit	1		none	No match found
+per month	1	/mo	high	Exact match on UCUM description
+gram per kilogram soil	1		none	No match found
+square feet	1		none	No match found
+years	1		none	No match found
+weeks	1		none	No match found
