@@ -1,0 +1,513 @@
+slot	count	value	split	UCUM	confidence	notes
+abs_air_humidity		gram per gram, kilogram per kilogram, kilogram, pound	gram per gram	g/g	high	Exact match on UCUM description
+abs_air_humidity		gram per gram, kilogram per kilogram, kilogram, pound	kilogram	kg	high	Exact match on UCUM description
+abs_air_humidity		gram per gram, kilogram per kilogram, kilogram, pound	kilogram per kilogram		none	No match found
+abs_air_humidity		gram per gram, kilogram per kilogram, kilogram, pound	pound	[lb_av]	low	Partial match on UCUM description
+agrochem_addition	2825.0	gram, mole per liter, milligram per liter	gram	g	high	Exact match on UCUM description
+agrochem_addition	2825.0	gram, mole per liter, milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+agrochem_addition	2825.0	gram, mole per liter, milligram per liter	mole per liter	mol/L	high	Exact match on UCUM description
+air_temp	3.0	degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+air_temp_regm	425.0	meter	meter	m	high	Exact match on UCUM description
+al_sat		percentage	percentage		none	No match found
+alkalinity		milliequivalent per liter, milligram per liter	milliequivalent per liter	meq/L	high	Exact match on UCUM description
+alkalinity		milliequivalent per liter, milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+alt	20.0	meter	meter	m	high	Exact match on UCUM description
+aminopept_act		mole per liter per hour	mole per liter per hour	umol/L/h	low	Partial match on UCUM description
+ammonium	994.0	micromole per liter, milligram per liter, parts per million	micromole per liter	umol/L	high	Exact match on UCUM description
+ammonium	994.0	micromole per liter, milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+ammonium	994.0	micromole per liter, milligram per liter, parts per million	parts per million		none	No match found
+ammonium_nitrogen	28.0					
+amount_light		lux, lumens per square meter	lumens per square meter		none	No match found
+amount_light		lux, lumens per square meter	lux		none	No match found
+analysis_type	19366.0					
+annual_precpt	2170.0	millimeter	millimeter	mm	high	Exact match on UCUM description
+annual_temp	2170.0	degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+antibiotic_regm		milligram	milligram	mg	high	Exact match on UCUM description
+api		degrees API	degrees API		none	No match found
+area_samp_size		centimeter	centimeter	cm	high	Exact match on UCUM description
+aromatics_pc		percent	percent	%	high	Exact match on UCUM description
+asphaltenes_pc		percent	percent	%	high	Exact match on UCUM description
+association_duration		year, day, hour	day	d	high	Exact match on UCUM description
+association_duration		year, day, hour	hour	h	high	Exact match on UCUM description
+association_duration		year, day, hour	year	a	high	Exact match on UCUM description
+avg_dew_point		degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+avg_temp		degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+bac_prod		milligram per cubic meter per day	milligram per cubic meter per day		none	No match found
+bac_resp		milligram per cubic meter per day, micromole oxygen per liter per hour	micromole oxygen per liter per hour		none	No match found
+bac_resp		milligram per cubic meter per day, micromole oxygen per liter per hour	milligram per cubic meter per day		none	No match found
+bacterial_density		colony forming units per milliliter; colony forming units per gram of dry weight	colony forming units per gram of dry weight		none	No match found
+bacterial_density		colony forming units per milliliter; colony forming units per gram of dry weight	colony forming units per milliliter		none	No match found
+barometric_press		millibar	millibar	mbar	high	Exact match on UCUM description
+benzene		milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+benzene		milligram per liter, parts per million	parts per million		none	No match found
+biochem_oxygen_dem		milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+biocide_admin_method		milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+biol_stat	1.0					
+biomass		ton, kilogram, gram	gram	g	high	Exact match on UCUM description
+biomass		ton, kilogram, gram	kilogram	kg	high	Exact match on UCUM description
+biomass		ton, kilogram, gram	ton	10.uN.s/(cm5.m2)	low	Partial match on UCUM description
+biotic_regm	158.0					
+biotic_relationship	1762.0					
+bishomohopanol		microgram per liter, microgram per gram	microgram per gram	ug/g	high	Exact match on UCUM description
+bishomohopanol		microgram per liter, microgram per gram	microgram per liter	ug/L	high	Exact match on UCUM description
+blood_press_diast		millimeter mercury	millimeter mercury		none	No match found
+blood_press_syst		millimeter mercury	millimeter mercury		none	No match found
+bromide		parts per million	parts per million		none	No match found
+built_struc_age		year	year	a	high	Exact match on UCUM description
+bulk_elect_conductivity	66.0					
+calcium		milligram per liter, micromole per liter, parts per million	micromole per liter	umol/L	high	Exact match on UCUM description
+calcium		milligram per liter, micromole per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+calcium		milligram per liter, micromole per liter, parts per million	parts per million		none	No match found
+carb_dioxide		micromole per liter, parts per million	micromole per liter	umol/L	high	Exact match on UCUM description
+carb_dioxide		micromole per liter, parts per million	parts per million		none	No match found
+carb_monoxide		micromole per liter, parts per million	micromole per liter	umol/L	high	Exact match on UCUM description
+carb_monoxide		micromole per liter, parts per million	parts per million		none	No match found
+carb_nitro_ratio	489.0					
+ceil_area		square meter	square meter	m2	high	Exact match on UCUM description
+ceil_thermal_mass		joule per degree Celsius	joule per degree Celsius		none	No match found
+chem_administration	596.0					
+chem_mutagen		milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+chem_oxygen_dem		milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+chem_treat_method		milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+chloride		milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+chloride		milligram per liter, parts per million	parts per million		none	No match found
+chlorophyll	159.0	milligram per cubic meter, microgram per liter	microgram per liter	ug/L	high	Exact match on UCUM description
+chlorophyll	159.0	milligram per cubic meter, microgram per liter	milligram per cubic meter	mg/m3	high	Exact match on UCUM description
+climate_environment	373.0					
+collection_date	16462.0					
+collection_date_inc	339.0					
+collection_time	6112.0					
+conduc	1084.0	milliSiemens per centimeter	milliSiemens per centimeter		none	No match found
+cons_food_stor_dur		hours or days	hours or days		none	No match found
+cons_food_stor_temp		degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+crop_rotation	62.0					
+crop_yield		kilogram per metre square	kilogram per metre square		none	No match found
+cur_land_use	817.0					
+cur_vegetation	6941.0					
+cur_vegetation_meth	1.0					
+density	153.0	gram per cubic meter, gram per cubic centimeter	gram per cubic centimeter	g/cm3	high	Exact match on UCUM description
+density	153.0	gram per cubic meter, gram per cubic centimeter	gram per cubic meter	kg/m3	low	Partial match on UCUM description
+depth	14013.0	meter	meter	m	high	Exact match on UCUM description
+dew_point		degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+diether_lipids		nanogram per liter	nanogram per liter	ng/L	high	Exact match on UCUM description
+diss_carb_dioxide		micromole per liter, milligram per liter	micromole per liter	umol/L	high	Exact match on UCUM description
+diss_carb_dioxide		micromole per liter, milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+diss_hydrogen		micromole per liter	micromole per liter	umol/L	high	Exact match on UCUM description
+diss_inorg_carb		microgram per liter, milligram per liter, parts per million	microgram per liter	ug/L	high	Exact match on UCUM description
+diss_inorg_carb		microgram per liter, milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+diss_inorg_carb		microgram per liter, milligram per liter, parts per million	parts per million		none	No match found
+diss_inorg_nitro		microgram per liter, micromole per liter	microgram per liter	ug/L	high	Exact match on UCUM description
+diss_inorg_nitro		microgram per liter, micromole per liter	micromole per liter	umol/L	high	Exact match on UCUM description
+diss_iron		milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+diss_org_carb	31.0	micromole per liter, milligram per liter	micromole per liter	umol/L	high	Exact match on UCUM description
+diss_org_carb	31.0	micromole per liter, milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+diss_oxygen	1063.0	micromole per kilogram, milligram per liter	micromole per kilogram	umol/kg	high	Exact match on UCUM description
+diss_oxygen	1063.0	micromole per kilogram, milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+diss_oxygen_fluid		micromole per kilogram, milligram per liter	micromole per kilogram	umol/kg	high	Exact match on UCUM description
+diss_oxygen_fluid		micromole per kilogram, milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+dna_absorb1	347.0					
+dna_absorb2	339.0					
+dna_collect_site	17.0					
+dna_concentration	1747.0					
+dna_cont_type	1592.0					
+dna_cont_well	1566.0					
+dna_container_ID	17.0					
+dna_container_id	1239.0					
+dna_dnase	1591.0					
+dna_isolate_meth	1591.0					
+dna_project_contact	1925.0					
+dna_samp_ID	17.0					
+dna_samp_id	1664.0					
+dna_sample_format	1591.0					
+dna_sample_name	2073.0					
+dna_seq_project	2017.0					
+dna_seq_project_PI	17.0					
+dna_seq_project_name	2017.0					
+dna_seq_project_pi	1572.0					
+dna_volume	1591.0					
+dnase_rna	111.0					
+door_size		square meter	square meter	m2	high	Exact match on UCUM description
+down_par		microEinstein per square meter per second, microEinstein per square centimeter per second	microEinstein per square centimeter per second		none	No match found
+down_par		microEinstein per square meter per second, microEinstein per square centimeter per second	microEinstein per square meter per second		none	No match found
+drainage_class	202.0					
+ecosystem	15057.0					
+ecosystem_category	14800.0					
+ecosystem_subtype	11096.0					
+ecosystem_type	15035.0					
+efficiency_percent		micromole per liter	micromole per liter	umol/L	high	Exact match on UCUM description
+elev	13399.0	meter	meter	m	high	Exact match on UCUM description
+emsl_store_temp	816.0					
+emulsions		gram per liter	gram per liter	g/L	high	Exact match on UCUM description
+env_broad_scale	12253.0					
+env_local_scale	12041.0					
+env_medium	12493.0					
+env_package	1857.0					
+ethylbenzene		milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+ethylbenzene		milligram per liter, parts per million	parts per million		none	No match found
+exp_duct		square meter	square meter	m2	high	Exact match on UCUM description
+experimental_factor	844.0					
+experimental_factor_other	3460.0					
+extreme_event	19.0					
+fao_class	304.0					
+farm_equip_san		parts per million	parts per million		none	No match found
+ferm_chem_add_perc		percentage	percentage		none	No match found
+ferm_headspace_oxy		percentage	percentage		none	No match found
+ferm_rel_humidity		percentage	percentage		none	No match found
+ferm_temp		degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+ferm_time		days	days	d/wk	low	Partial match on UCUM description
+fertilizer_regm	192.0	gram, mole per liter, milligram per liter	gram	g	high	Exact match on UCUM description
+fertilizer_regm	192.0	gram, mole per liter, milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+fertilizer_regm	192.0	gram, mole per liter, milligram per liter	mole per liter	mol/L	high	Exact match on UCUM description
+fire	85.0					
+floor_age		years, weeks, days	days	d/wk	low	Partial match on UCUM description
+floor_age		years, weeks, days	weeks		none	No match found
+floor_age		years, weeks, days	years		none	No match found
+floor_area		square meter	square meter	m2	high	Exact match on UCUM description
+floor_thermal_mass		joule per degree Celsius	joule per degree Celsius		none	No match found
+fluor	118.0	milligram chlorophyll a per cubic meter, volts	milligram chlorophyll a per cubic meter		none	No match found
+fluor	118.0	milligram chlorophyll a per cubic meter, volts	volts		none	No match found
+food_pack_capacity		grams	grams		none	No match found
+food_source_age		days	days	d/wk	low	Partial match on UCUM description
+fungicide_regm		gram, mole per liter, milligram per liter	gram	g	high	Exact match on UCUM description
+fungicide_regm		gram, mole per liter, milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+fungicide_regm		gram, mole per liter, milligram per liter	mole per liter	mol/L	high	Exact match on UCUM description
+gaseous_environment	102.0	micromole per liter	micromole per liter	umol/L	high	Exact match on UCUM description
+gaseous_substances		micromole per liter	micromole per liter	umol/L	high	Exact match on UCUM description
+genetic_mod	6.0					
+geo_loc_name	16420.0					
+glucosidase_act		mol per liter per hour	mol per liter per hour		none	No match found
+gravidity	61.0					
+gravity		meter per square second, g	g	[AU]	low	Partial match on UCUM description
+gravity		meter per square second, g	meter per square second	m/s2	high	Exact match on UCUM description
+growth_facil	12777.0					
+growth_hormone_regm		gram, mole per liter, milligram per liter	gram	g	high	Exact match on UCUM description
+growth_hormone_regm		gram, mole per liter, milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+growth_hormone_regm		gram, mole per liter, milligram per liter	mole per liter	mol/L	high	Exact match on UCUM description
+hcr_fw_salinity		milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+hcr_pressure		atmosphere, kilopascal	atmosphere	atm	high	Exact match on UCUM description
+hcr_pressure		atmosphere, kilopascal	kilopascal	kPa	high	Exact match on UCUM description
+hcr_temp		degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+heavy_metals		microgram per gram	microgram per gram	ug/g	high	Exact match on UCUM description
+height_carper_fiber		centimeter	centimeter	cm	high	Exact match on UCUM description
+herbicide_regm		gram, mole per liter, milligram per liter	gram	g	high	Exact match on UCUM description
+herbicide_regm		gram, mole per liter, milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+herbicide_regm		gram, mole per liter, milligram per liter	mole per liter	mol/L	high	Exact match on UCUM description
+host_age	61.0	year, day, hour	day	d	high	Exact match on UCUM description
+host_age	61.0	year, day, hour	hour	h	high	Exact match on UCUM description
+host_age	61.0	year, day, hour	year	a	high	Exact match on UCUM description
+host_body_habitat	61.0					
+host_body_mass_index		kilogram per square meter	kilogram per square meter	kg/m2	high	Exact match on UCUM description
+host_body_product	61.0					
+host_body_site	61.0					
+host_body_temp		degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+host_common_name	281.0			10.L/min	low	Partial match on UCUM description
+host_diet	61.0					
+host_dry_mass		kilogram, gram	gram	g	high	Exact match on UCUM description
+host_dry_mass		kilogram, gram	kilogram	kg	high	Exact match on UCUM description
+host_genotype	61.0					
+host_height		centimeter, millimeter, meter	centimeter	cm	high	Exact match on UCUM description
+host_height		centimeter, millimeter, meter	meter	m	high	Exact match on UCUM description
+host_height		centimeter, millimeter, meter	millimeter	mm	high	Exact match on UCUM description
+host_length		centimeter, millimeter, meter	centimeter	cm	high	Exact match on UCUM description
+host_length		centimeter, millimeter, meter	meter	m	high	Exact match on UCUM description
+host_length		centimeter, millimeter, meter	millimeter	mm	high	Exact match on UCUM description
+host_life_stage	62.0					
+host_pulse		beats per minute	beats per minute	{beats}/min	low	Partial match on UCUM description
+host_sex	79.0					
+host_taxid	88.0					
+host_tot_mass		kilogram, gram	gram	g	high	Exact match on UCUM description
+host_tot_mass		kilogram, gram	kilogram	kg	high	Exact match on UCUM description
+host_wet_mass		kilogram, gram	gram	g	high	Exact match on UCUM description
+host_wet_mass		kilogram, gram	kilogram	kg	high	Exact match on UCUM description
+humidity_regm	6.0	gram per cubic meter	gram per cubic meter	kg/m3	low	Partial match on UCUM description
+indust_eff_percent		percentage	percentage		none	No match found
+infiltrations	12.0					
+inorg_particles		mole per liter, milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+inorg_particles		mole per liter, milligram per liter	mole per liter	mol/L	high	Exact match on UCUM description
+inside_lux		kilowatt per square metre	kilowatt per square metre		none	No match found
+isotope_exposure	421.0					
+iwf		percent	percent	%	high	Exact match on UCUM description
+lat_lon	16459.0					
+light_intensity		lux	lux		none	No match found
+light_regm		lux; micrometer, nanometer, angstrom	angstrom		none	No match found
+light_regm		lux; micrometer, nanometer, angstrom	lux		none	No match found
+light_regm		lux; micrometer, nanometer, angstrom	micrometer	um	high	Exact match on UCUM description
+light_regm		lux; micrometer, nanometer, angstrom	nanometer	nm	high	Exact match on UCUM description
+light_type	3.0					
+link_climate_info	30.0					
+local_class	152.0					
+magnesium		mole per liter, milligram per liter, parts per million, micromole per kilogram	micromole per kilogram	umol/kg	high	Exact match on UCUM description
+magnesium		mole per liter, milligram per liter, parts per million, micromole per kilogram	milligram per liter	mg/L	high	Exact match on UCUM description
+magnesium		mole per liter, milligram per liter, parts per million, micromole per kilogram	mole per liter	mol/L	high	Exact match on UCUM description
+magnesium		mole per liter, milligram per liter, parts per million, micromole per kilogram	parts per million		none	No match found
+mean_frict_vel		meter per second	meter per second	m/s	high	Exact match on UCUM description
+mean_peak_frict_vel		meter per second	meter per second	m/s	high	Exact match on UCUM description
+methane		micromole per liter, parts per billion, parts per million	micromole per liter	umol/L	high	Exact match on UCUM description
+methane		micromole per liter, parts per billion, parts per million	parts per billion		none	No match found
+methane		micromole per liter, parts per billion, parts per million	parts per million		none	No match found
+micro_biomass_meth	3665.0					
+microb_start_count		colony forming units per milliliter; colony forming units per gram of dry weight	colony forming units per gram of dry weight		none	No match found
+microb_start_count		colony forming units per milliliter; colony forming units per gram of dry weight	colony forming units per milliliter		none	No match found
+microb_start_inoc		milligram or gram	milligram or gram		none	No match found
+microbial_biomass		ton, kilogram, gram per kilogram soil	gram per kilogram soil		none	No match found
+microbial_biomass		ton, kilogram, gram per kilogram soil	kilogram	kg	high	Exact match on UCUM description
+microbial_biomass		ton, kilogram, gram per kilogram soil	ton	10.uN.s/(cm5.m2)	low	Partial match on UCUM description
+mineral_nutr_regm		gram, mole per liter, milligram per liter	gram	g	high	Exact match on UCUM description
+mineral_nutr_regm		gram, mole per liter, milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+mineral_nutr_regm		gram, mole per liter, milligram per liter	mole per liter	mol/L	high	Exact match on UCUM description
+misc_param	2239.0					
+nitrate	1201.0	micromole per liter, milligram per liter, parts per million	micromole per liter	umol/L	high	Exact match on UCUM description
+nitrate	1201.0	micromole per liter, milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+nitrate	1201.0	micromole per liter, milligram per liter, parts per million	parts per million		none	No match found
+nitrate_nitrogen	28.0					
+nitrite	275.0	micromole per liter, milligram per liter, parts per million	micromole per liter	umol/L	high	Exact match on UCUM description
+nitrite	275.0	micromole per liter, milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+nitrite	275.0	micromole per liter, milligram per liter, parts per million	parts per million		none	No match found
+nitro		micromole per liter	micromole per liter	umol/L	high	Exact match on UCUM description
+non_min_nutr_regm		gram, mole per liter, milligram per liter	gram	g	high	Exact match on UCUM description
+non_min_nutr_regm		gram, mole per liter, milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+non_min_nutr_regm		gram, mole per liter, milligram per liter	mole per liter	mol/L	high	Exact match on UCUM description
+occup_samp	3.0					
+org_count_qpcr_info		number of cells per gram (or ml or cm^2)	number of cells per gram (or ml or cm^2)		none	No match found
+org_matter	26.0	microgram per liter	microgram per liter	ug/L	high	Exact match on UCUM description
+org_particles		gram per liter	gram per liter	g/L	high	Exact match on UCUM description
+other_treatment	1058.0					
+owc_tvdss		meter	meter	m	high	Exact match on UCUM description
+oxy_stat_samp	303.0					
+oxygen		milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+oxygen		milligram per liter, parts per million	parts per million		none	No match found
+part_org_carb	31.0					
+part_org_nitro	31.0	microgram per liter, micromole per liter	microgram per liter	ug/L	high	Exact match on UCUM description
+part_org_nitro	31.0	microgram per liter, micromole per liter	micromole per liter	umol/L	high	Exact match on UCUM description
+particle_class		micrometer	micrometer	um	high	Exact match on UCUM description
+permeability		mD	mD		none	No match found
+perturbation	201.0					
+pesticide_regm		gram, mole per liter, milligram per liter	gram	g	high	Exact match on UCUM description
+pesticide_regm		gram, mole per liter, milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+pesticide_regm		gram, mole per liter, milligram per liter	mole per liter	mol/L	high	Exact match on UCUM description
+petroleum_hydrocarb		micromole per liter	micromole per liter	umol/L	high	Exact match on UCUM description
+ph	4012.0					
+ph_meth	360.0					
+phaeopigments	128.0	milligram per cubic meter	milligram per cubic meter	mg/m3	high	Exact match on UCUM description
+phosphate	303.0	micromole per liter	micromole per liter	umol/L	high	Exact match on UCUM description
+photon_flux		number of photons per second per unit area	number of photons per second per unit area		none	No match found
+photosynt_activ		mol m-2 s-1	mol m-2 s-1		none	No match found
+plant_struc	8.0					
+pollutants		gram, mole per liter, milligram per liter, microgram per cubic meter	gram	g	high	Exact match on UCUM description
+pollutants		gram, mole per liter, milligram per liter, microgram per cubic meter	microgram per cubic meter	ug/m3	high	Exact match on UCUM description
+pollutants		gram, mole per liter, milligram per liter, microgram per cubic meter	milligram per liter	mg/L	high	Exact match on UCUM description
+pollutants		gram, mole per liter, milligram per liter, microgram per cubic meter	mole per liter	mol/L	high	Exact match on UCUM description
+pool_dna_extracts		gram, milliliter, microliter	gram	g	high	Exact match on UCUM description
+pool_dna_extracts		gram, milliliter, microliter	microliter	uL	high	Exact match on UCUM description
+pool_dna_extracts		gram, milliliter, microliter	milliliter	mL	high	Exact match on UCUM description
+porosity		percentage	percentage		none	No match found
+potassium		milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+potassium		milligram per liter, parts per million	parts per million		none	No match found
+pour_point		degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+pressure		atmosphere	atmosphere	atm	high	Exact match on UCUM description
+prev_land_use_meth	5.0					
+primary_prod		milligram per cubic meter per day, gram per square meter per day	gram per square meter per day		none	No match found
+primary_prod		milligram per cubic meter per day, gram per square meter per day	milligram per cubic meter per day		none	No match found
+prod_rate		cubic meter per day	cubic meter per day		none	No match found
+project_id	816.0					
+proposal_dna	1925.0					
+proposal_rna	192.0					
+radiation_regm		rad, gray	gray	Gy	high	Exact match on UCUM description
+radiation_regm		rad, gray	rad	F	low	Partial match on UCUM description
+rainfall_regm		millimeter	millimeter	mm	high	Exact match on UCUM description
+redox_potential		millivolt	millivolt	mV	high	Exact match on UCUM description
+rel_air_humidity	3.0	percentage	percentage		none	No match found
+rel_humidity_out		gram of air, kilogram of air	gram of air		none	No match found
+rel_humidity_out		gram of air, kilogram of air	kilogram of air		none	No match found
+replicate_number	85.0					
+resins_pc		percent	percent	%	high	Exact match on UCUM description
+rna_absorb1	111.0					
+rna_absorb2	103.0					
+rna_concentration	111.0					
+rna_cont_type	111.0					
+rna_cont_well	103.0					
+rna_container_id	111.0					
+rna_isolate_meth	111.0					
+rna_project_contact	192.0					
+rna_samp_id	192.0					
+rna_sample_format	111.0					
+rna_sample_name	192.0					
+rna_seq_project	192.0					
+rna_seq_project_name	192.0					
+rna_seq_project_pi	192.0					
+rna_volume	111.0					
+room_air_exch_rate		liter per hour	liter per hour	L/h	high	Exact match on UCUM description
+room_dim		meter	meter	m	high	Exact match on UCUM description
+room_door_dist		meter	meter	m	high	Exact match on UCUM description
+room_net_area		square feet, square meter	square feet		none	No match found
+room_net_area		square feet, square meter	square meter	m2	high	Exact match on UCUM description
+room_vol		cubic feet, cubic meter	cubic feet		none	No match found
+room_vol		cubic feet, cubic meter	cubic meter	m3/s	low	Partial match on UCUM description
+root_med_carbon		milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+root_med_macronutr		milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+root_med_micronutr		milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+root_med_regl		milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+root_med_suppl		milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+salinity	607.0	practical salinity unit, percentage	percentage		none	No match found
+salinity	607.0	practical salinity unit, percentage	practical salinity unit		none	No match found
+salt_regm		gram, microgram, mole per liter, gram per liter	gram	g	high	Exact match on UCUM description
+salt_regm		gram, microgram, mole per liter, gram per liter	gram per liter	g/L	high	Exact match on UCUM description
+salt_regm		gram, microgram, mole per liter, gram per liter	microgram	ug	high	Exact match on UCUM description
+salt_regm		gram, microgram, mole per liter, gram per liter	mole per liter	mol/L	high	Exact match on UCUM description
+samp_collec_device	2715.0					
+samp_collec_method	4392.0					
+samp_loc_corr_rate		millimeter per year	millimeter per year		none	No match found
+samp_mat_process	670.0					
+samp_md		meter	meter	m	high	Exact match on UCUM description
+samp_name	20626.0			10.L/min	low	Partial match on UCUM description
+samp_preserv		milliliter	milliliter	mL	high	Exact match on UCUM description
+samp_size	599.0					
+samp_store_dur	220.0					
+samp_store_loc	175.0					
+samp_store_temp	12758.0	degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+samp_time_out		hour	hour	h	high	Exact match on UCUM description
+samp_transport_cond		days;degree Celsius	days	d/wk	low	Partial match on UCUM description
+samp_transport_cond		days;degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+samp_transport_dur		days	days	d/wk	low	Partial match on UCUM description
+samp_transport_temp		degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+samp_tvdss		meter	meter	m	high	Exact match on UCUM description
+samp_vol_we_dna_ext		milliliter, gram, milligram, square centimeter	gram	g	high	Exact match on UCUM description
+samp_vol_we_dna_ext		milliliter, gram, milligram, square centimeter	milligram	mg	high	Exact match on UCUM description
+samp_vol_we_dna_ext		milliliter, gram, milligram, square centimeter	milliliter	mL	high	Exact match on UCUM description
+samp_vol_we_dna_ext		milliliter, gram, milligram, square centimeter	square centimeter	cm2	high	Exact match on UCUM description
+sample_link	886.0					
+sample_shipped	816.0					
+sample_type	816.0					
+saturates_pc		percent	percent	%	high	Exact match on UCUM description
+season_precpt	4.0	millimeter	millimeter	mm	high	Exact match on UCUM description
+season_temp	4.0	degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+sieving	5345.0					
+silicate	275.0	micromole per liter	micromole per liter	umol/L	high	Exact match on UCUM description
+size_frac_low	32.0	micrometer	micrometer	um	high	Exact match on UCUM description
+size_frac_up	1.0	micrometer	micrometer	um	high	Exact match on UCUM description
+slope_aspect	18.0	degree	degree	deg	low	Partial match on UCUM description
+slope_gradient	24.0	percentage	percentage		none	No match found
+sludge_retent_time		hours	hours		none	No match found
+sodium		milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+sodium		milligram per liter, parts per million	parts per million		none	No match found
+soil_conductivity		milliSiemens per centimeter	milliSiemens per centimeter		none	No match found
+soil_horizon	1907.0					
+soil_porosity		percentage	percentage		none	No match found
+soil_temp		degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+soil_texture_meth	30.0					
+soil_type	50.0					
+soil_type_meth	87.0					
+solar_irradiance		kilowatts per square meter per day, ergs per square centimeter per second	ergs per square centimeter per second		none	No match found
+solar_irradiance		kilowatts per square meter per day, ergs per square centimeter per second	kilowatts per square meter per day		none	No match found
+soluble_inorg_mat		gram, microgram, mole per liter, gram per liter, parts per million	gram	g	high	Exact match on UCUM description
+soluble_inorg_mat		gram, microgram, mole per liter, gram per liter, parts per million	gram per liter	g/L	high	Exact match on UCUM description
+soluble_inorg_mat		gram, microgram, mole per liter, gram per liter, parts per million	microgram	ug	high	Exact match on UCUM description
+soluble_inorg_mat		gram, microgram, mole per liter, gram per liter, parts per million	mole per liter	mol/L	high	Exact match on UCUM description
+soluble_inorg_mat		gram, microgram, mole per liter, gram per liter, parts per million	parts per million		none	No match found
+soluble_org_mat		gram, microgram, mole per liter, gram per liter, parts per million	gram	g	high	Exact match on UCUM description
+soluble_org_mat		gram, microgram, mole per liter, gram per liter, parts per million	gram per liter	g/L	high	Exact match on UCUM description
+soluble_org_mat		gram, microgram, mole per liter, gram per liter, parts per million	microgram	ug	high	Exact match on UCUM description
+soluble_org_mat		gram, microgram, mole per liter, gram per liter, parts per million	mole per liter	mol/L	high	Exact match on UCUM description
+soluble_org_mat		gram, microgram, mole per liter, gram per liter, parts per million	parts per million		none	No match found
+soluble_react_phosp	31.0	micromole per liter, milligram per liter, parts per million	micromole per liter	umol/L	high	Exact match on UCUM description
+soluble_react_phosp	31.0	micromole per liter, milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+soluble_react_phosp	31.0	micromole per liter, milligram per liter, parts per million	parts per million		none	No match found
+source_mat_id	9097.0					
+space_typ_state	3.0					
+specific_ecosystem	8861.0					
+specific_humidity		gram of air, kilogram of air	gram of air		none	No match found
+specific_humidity		gram of air, kilogram of air	kilogram of air		none	No match found
+spikein_count		colony forming units per milliliter; colony forming units per gram of dry weight	colony forming units per gram of dry weight		none	No match found
+spikein_count		colony forming units per milliliter; colony forming units per gram of dry weight	colony forming units per milliliter		none	No match found
+start_date_inc	419.0					
+store_cond	11463.0					
+study_inc_dur		hours or days	hours or days		none	No match found
+study_inc_temp		degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+study_timecourse		dpi	dpi		none	No match found
+sulfate		micromole per liter, milligram per liter, parts per million	micromole per liter	umol/L	high	Exact match on UCUM description
+sulfate		micromole per liter, milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+sulfate		micromole per liter, milligram per liter, parts per million	parts per million		none	No match found
+sulfate_fw		milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+sulfide		micromole per liter, milligram per liter, parts per million	micromole per liter	umol/L	high	Exact match on UCUM description
+sulfide		micromole per liter, milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+sulfide		micromole per liter, milligram per liter, parts per million	parts per million		none	No match found
+surf_humidity		percentage	percentage		none	No match found
+surf_moisture		parts per million, gram per cubic meter, gram per square meter	gram per cubic meter	kg/m3	low	Partial match on UCUM description
+surf_moisture		parts per million, gram per cubic meter, gram per square meter	gram per square meter	g/m2	high	Exact match on UCUM description
+surf_moisture		parts per million, gram per cubic meter, gram per square meter	parts per million		none	No match found
+surf_temp		degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+suspend_part_matter	31.0	milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+suspend_solids		gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	gram	g	high	Exact match on UCUM description
+suspend_solids		gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	gram per liter	g/L	high	Exact match on UCUM description
+suspend_solids		gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	microgram	ug	high	Exact match on UCUM description
+suspend_solids		gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	milligram per liter	mg/L	high	Exact match on UCUM description
+suspend_solids		gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	mole per liter	mol/L	high	Exact match on UCUM description
+suspend_solids		gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	part per million	[ppm]	high	Exact match on UCUM description
+tan		milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+technical_reps	3.0					
+temp	4097.0	degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+temp_out		degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+tidal_stage	220.0					
+tillage	22.0					
+timepoint		hours or days	hours or days		none	No match found
+toluene		milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+toluene		milligram per liter, parts per million	parts per million		none	No match found
+tot_carb	500.0					
+tot_depth_water_col		meter	meter	m	high	Exact match on UCUM description
+tot_diss_nitro	64.0	microgram per liter	microgram per liter	ug/L	high	Exact match on UCUM description
+tot_inorg_nitro		microgram per liter	microgram per liter	ug/L	high	Exact match on UCUM description
+tot_iron		milligram per liter, milligram per kilogram	milligram per kilogram	mg/kg	high	Exact match on UCUM description
+tot_iron		milligram per liter, milligram per kilogram	milligram per liter	mg/L	high	Exact match on UCUM description
+tot_nitro	31.0	microgram per liter, micromole per liter, milligram per liter	microgram per liter	ug/L	high	Exact match on UCUM description
+tot_nitro	31.0	microgram per liter, micromole per liter, milligram per liter	micromole per liter	umol/L	high	Exact match on UCUM description
+tot_nitro	31.0	microgram per liter, micromole per liter, milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+tot_nitro_cont_meth	144.0					
+tot_nitro_content	644.0					
+tot_org_c_meth	144.0					
+tot_org_carb	189.0	gram Carbon per kilogram sample material	gram Carbon per kilogram sample material		none	No match found
+tot_part_carb		microgram per liter, micromole per liter	microgram per liter	ug/L	high	Exact match on UCUM description
+tot_part_carb		microgram per liter, micromole per liter	micromole per liter	umol/L	high	Exact match on UCUM description
+tot_phosp	977.0	micromole per liter, milligram per liter, parts per million	micromole per liter	umol/L	high	Exact match on UCUM description
+tot_phosp	977.0	micromole per liter, milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+tot_phosp	977.0	micromole per liter, milligram per liter, parts per million	parts per million		none	No match found
+tot_phosphate		microgram per liter, micromole per liter	microgram per liter	ug/L	high	Exact match on UCUM description
+tot_phosphate		microgram per liter, micromole per liter	micromole per liter	umol/L	high	Exact match on UCUM description
+tot_sulfur		milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+tot_sulfur		milligram per liter, parts per million	parts per million		none	No match found
+turbidity	921.0					
+tvdss_of_hcr_press		meter	meter	m	high	Exact match on UCUM description
+tvdss_of_hcr_temp		meter	meter	m	high	Exact match on UCUM description
+ventilation_rate		cubic meter per minute, liters per second	cubic meter per minute		none	No match found
+ventilation_rate		cubic meter per minute, liters per second	liters per second		none	No match found
+ventilation_type	3.0					
+vfa		milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+vfa		milligram per liter, parts per million	parts per million		none	No match found
+vfa_fw		milligram per liter	milligram per liter	mg/L	high	Exact match on UCUM description
+viscosity		cP at degree Celsius	cP at degree Celsius		none	No match found
+volatile_org_comp		microgram per cubic meter, parts per million, nanogram per liter	microgram per cubic meter	ug/m3	high	Exact match on UCUM description
+volatile_org_comp		microgram per cubic meter, parts per million, nanogram per liter	nanogram per liter	ng/L	high	Exact match on UCUM description
+volatile_org_comp		microgram per cubic meter, parts per million, nanogram per liter	parts per million		none	No match found
+wall_area		square meter	square meter	m2	high	Exact match on UCUM description
+wall_height		centimeter	centimeter	cm	high	Exact match on UCUM description
+wall_thermal_mass		joule per degree Celsius	joule per degree Celsius		none	No match found
+water_cont_soil_meth	289.0					
+water_content	1724.0	gram per gram or cubic centimeter per cubic centimeter	gram per gram or cubic centimeter per cubic centimeter		none	No match found
+water_current		cubic meter per second, knots	cubic meter per second	m3/s	high	Exact match on UCUM description
+water_current		cubic meter per second, knots	knots		none	No match found
+water_cut		percent	percent	%	high	Exact match on UCUM description
+water_feat_size		square meter	square meter	m2	high	Exact match on UCUM description
+water_frequency		per day, per week, per month	per day	/d	high	Exact match on UCUM description
+water_frequency		per day, per week, per month	per month	/mo	high	Exact match on UCUM description
+water_frequency		per day, per week, per month	per week	/wk	high	Exact match on UCUM description
+water_prod_rate		cubic meter per day	cubic meter per day		none	No match found
+water_temp_regm		degree Celsius	degree Celsius	Cel	high	Exact match on UCUM description
+watering_regm	266.0	milliliter, liter	liter	L	high	Exact match on UCUM description
+watering_regm	266.0	milliliter, liter	milliliter	mL	high	Exact match on UCUM description
+weight_loss_3_month		kilogram, gram	gram	g	high	Exact match on UCUM description
+weight_loss_3_month		kilogram, gram	kilogram	kg	high	Exact match on UCUM description
+wind_direction	19.0	degrees or cardinal direction	degrees or cardinal direction		none	No match found
+wind_speed	19.0					
+window_size		inch, meter	inch	[cin_i]	low	Partial match on UCUM description
+window_size		inch, meter	meter	m	high	Exact match on UCUM description
+xylene		milligram per liter, parts per million	milligram per liter	mg/L	high	Exact match on UCUM description
+xylene		milligram per liter, parts per million	parts per million		none	No match found
