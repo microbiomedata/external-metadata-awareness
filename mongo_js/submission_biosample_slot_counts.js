@@ -1,4 +1,6 @@
-db.your_collection_name.aggregate([
+// NMDC Submissions
+
+db.submission_biosample_rows.aggregate([
   { $unwind: "$row_data" },
   { $group: {
       _id: "$row_data.field",
