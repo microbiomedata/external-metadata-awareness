@@ -3,6 +3,7 @@
 
 // supersedes minimal_biosamples_env_triad_value_counts_gt_1.js
 // follow with split_env_triad_values_from_perlmutter Makefile target (and more)
+// < 3 minutes
 
 db.biosamples_flattened.aggregate([
     {
