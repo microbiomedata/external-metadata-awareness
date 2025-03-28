@@ -29,13 +29,14 @@ db.biosamples_env_triad_value_counts_gt_1.aggregate([
         }
     },
 
-    // Project the desired fields
+    // Project the desired fields and retain the original prefix field
     {
         $project: {
             curie_lc: 1,
             count: 1,
             uses_obo_prefix: 1,
             uses_bioportal_prefix: 1,
+            prefix: "$_id.prefix",  // Retain the prefix here
             _id: 0
         }
     },

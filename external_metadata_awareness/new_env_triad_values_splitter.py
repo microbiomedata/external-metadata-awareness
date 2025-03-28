@@ -117,12 +117,42 @@ def extract_components(text, known_envo_curies=None, obo_ontology_indicators_lc=
         ann = ann.strip()
         if not ann:
             continue
-        # Pre-clean each annotation for quotes and duplicate prefixes.
+        # Add the check: if no separator is found, treat as plain text
+        if not any(sep in ann for sep in [":", "-", "_", "\uFF1A"]):
+            components.append({
+                'raw': ann,
+                'label': normalize_label(ann),
+                'prefix': None,
+                'local': None,
+                'digits_only': is_digits_only(ann),
+                'lingering_envo': "ENVO" in ann.upper(),
+                'uses_obo_prefix': False,
+                'uses_bioportal_prefix': False,
+            })
+            continue
+        # Continue with existing pre-cleaning and regex matching
         ann = ann.strip('“”"\'')
         ann = re.sub(r'\b(ENVO:){2,}', 'ENVO:', ann, flags=re.IGNORECASE)
         m = improved_curie_pattern.match(ann)
         if m:
-            prefix = m.group('prefix').upper()  # normalize prefix to uppercase
+            candidate_prefix = m.group('prefix').upper()
+            known_prefixes = set(x.upper() for x in (obo_ontology_indicators_lc or [])) | set(
+                x.upper() for x in (bioportal_ontology_indicators_lc or []))
+            if candidate_prefix not in known_prefixes:
+                # Candidate prefix isn’t recognized; treat as plain text.
+                components.append({
+                    'raw': ann,
+                    'label': normalize_label(ann),
+                    'prefix': None,
+                    'local': None,
+                    'digits_only': is_digits_only(ann),
+                    'lingering_envo': "ENVO" in ann.upper(),
+                    'uses_obo_prefix': False,
+                    'uses_bioportal_prefix': False,
+                })
+                continue
+            # Otherwise, proceed with the usual CURIE parsing…
+            prefix = candidate_prefix
             local = m.group('local')
             label_after = m.group('label_after')
             label_before = m.group('label_before')
