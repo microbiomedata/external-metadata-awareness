@@ -18,13 +18,13 @@ db.biosamples_flattened.aggregate([
     {
         $unwind: "$env_values"
     },
-    {
-        $match: {
-            env_values: {
-                $nin: [null, "missing", "not determined"]
-            }
-        }
-    },
+    // {
+    //     $match: {
+    //         env_values: {
+    //             $nin: [null, "missing", "not determined"]
+    //         }
+    //     }
+    // },
     {
         $group: {
             _id: {$toString: "$env_values"},
@@ -106,6 +106,14 @@ db.biosamples_flattened.aggregate([
                         ]
                     }
                 }
+            },
+            other_missing_indicator: {
+                $or: [
+                    {$eq: ["$_id", null]},
+                    {$eq: ["$_id", ""]},
+                    {$eq: [{$toLower: {$ifNull: ["$_id", ""]}}, "na"]},
+                    {$eq: [{$toLower: {$ifNull: ["$_id", ""]}}, "null"]}
+                ]
             }
         }
     },

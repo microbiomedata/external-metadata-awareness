@@ -2,48 +2,48 @@
 """
 Standalone script to annotate documents in the env_triad_component_labels collection.
 
-For each document:
-  - Retrieve the "label" field (e.g., "ocean water").
-  - Use the ENVO ontology adapter’s annotate_text method (via your semantic SQL/OAK database)
-    to obtain matching annotations.
-  - For each annotation:
-      * If the annotation's span length (subject_end - subject_start + 1) is at least MIN_ANNOTATION_LENGTH,
-        calculate its individual coverage.
-      * Convert the annotation object to a dictionary, omitting keys with None values.
-  - Filter out any annotations whose ranges are completely subsumed by another annotation's range.
-  - Compute the combined coverage from the union of annotation ranges.
-  - Update the document by inserting the filtered annotations under "oak_text_annotations",
-    the computed combined coverage as "combined_oak_envo_coverage", and the count of annotations
-    as "oak_envo_annotations_count".
+This script first loads a lexical index for text annotation from
+"expanded_envo_po_lexical_index.yaml" if that file exists; otherwise, it builds
+the index from the ENVO connection string and saves it for future use.
+It then uses the lexical index via a TextAnnotatorInterface to annotate the
+"label" field in each document, filtering out short or subsumed annotations,
+computing the combined coverage, and updating the document with:
+  - "oak_text_annotations"
+  - "combined_oak_envo_coverage"
+  - "oak_envo_annotations_count"
 
 Notes:
   - Annotation coordinates are 1-based and inclusive.
-  - The combined coverage is computed by merging overlapping or adjacent intervals.
-
-Requirements:
-  • MongoDB database "ncbi_metadata" with collection "env_triad_component_labels".
-  • ENVO ontology adapter (e.g., "sqlite:obo:envo") that supports annotate_text.
+  - Combined coverage is computed by merging overlapping or adjacent intervals.
 """
 
+import os
 from pymongo import MongoClient
 from oaklib import get_adapter
+from oaklib.interfaces.text_annotator_interface import TextAnnotatorInterface
+from oaklib.utilities.lexical.lexical_indexer import load_lexical_index, create_lexical_index, save_lexical_index
 from tqdm import tqdm
 
 # Set the minimum annotation length for retaining an annotation.
 MIN_ANNOTATION_LENGTH = 3
+LEX_INDEX_FILE = "expanded_envo_po_lexical_index.yaml"
 
 
 def annotation_to_dict(ann, label_length):
     """
-    Convert an annotation object to a dictionary, filtering out keys with None values.
-    Also calculates and adds the annotation's coverage of the label.
-    Uses 1-based inclusive indexing:
-       coverage = (subject_end - subject_start + 1) / label_length.
+    Convert an annotation object to a dictionary, filtering out keys with None or empty list values.
+    Also calculates and adds the annotation's coverage of the label using 1-based inclusive indexing:
+         coverage = (subject_end - subject_start + 1) / label_length.
     """
     result = {}
     for key, value in vars(ann).items():
-        if value is not None:
-            result[key] = value
+        # Skip if value is None.
+        if value is None:
+            continue
+        # Skip if value is an empty list.
+        if isinstance(value, list) and len(value) == 0:
+            continue
+        result[key] = value
     if hasattr(ann, "subject_start") and hasattr(ann, "subject_end"):
         ann_length = ann.subject_end - ann.subject_start + 1
         result["coverage"] = ann_length / label_length if label_length > 0 else 0
@@ -89,7 +89,7 @@ def compute_combined_oak_envo_coverage(annotations, label_length):
     and uses 1-based inclusive indexing.
 
     The function merges overlapping or adjacent intervals, then computes:
-        combined_oak_envo_coverage = (total_covered_characters) / label_length.
+         combined_oak_envo_coverage = (total_covered_characters) / label_length.
     """
     intervals = []
     for ann in annotations:
@@ -97,19 +97,17 @@ def compute_combined_oak_envo_coverage(annotations, label_length):
             intervals.append((ann["subject_start"], ann["subject_end"]))
     if not intervals or label_length == 0:
         return 0
-    # Sort intervals by their start coordinate.
+    # Sort intervals by start coordinate.
     intervals.sort(key=lambda x: x[0])
     merged = []
     current_start, current_end = intervals[0]
     for start, end in intervals[1:]:
-        # If the next interval overlaps or is immediately adjacent (inclusive), merge them.
-        if start <= current_end + 1:
+        if start <= current_end + 1:  # Merge overlapping or adjacent intervals.
             current_end = max(current_end, end)
         else:
             merged.append((current_start, current_end))
             current_start, current_end = start, end
     merged.append((current_start, current_end))
-    # For each merged interval, compute its length using inclusive indexing.
     total_covered = sum(end - start + 1 for start, end in merged)
     return total_covered / label_length
 
@@ -121,21 +119,32 @@ def main():
     db = client.ncbi_metadata
     collection = db.env_triad_component_labels
 
-    # Set up the ENVO ontology adapter (using your semantic SQL/OAK database).
-    envo_adapter_string = "sqlite:obo:envo"
-    envo_adapter = get_adapter(envo_adapter_string)
+    # Attempt to load the lexical index from file if it exists.
+    if os.path.exists(LEX_INDEX_FILE):
+        print(f"Loading lexical index from {LEX_INDEX_FILE}...")
+        lexical_index = load_lexical_index(LEX_INDEX_FILE)
+    else:
+        print(f"Lexical index file {LEX_INDEX_FILE} not found; building from ENVO adapter...")
+        envo_adapter = get_adapter("sqlite:obo:envo")
+        lexical_index = create_lexical_index(envo_adapter)
+        # Optionally save the newly built index for future runs.
+        save_lexical_index(lexical_index, LEX_INDEX_FILE)
+        print(f"Lexical index saved to {LEX_INDEX_FILE}")
+
+    # Set up the TextAnnotatorInterface with the lexical index.
+    annotator = TextAnnotatorInterface()
+    annotator.lexical_index = lexical_index
 
     total_docs = collection.estimated_document_count()
     print(f"Processing {total_docs} documents from env_triad_component_labels collection.")
 
-    # Process each document.
     for doc in tqdm(collection.find(), total=total_docs, desc="Annotating documents"):
         label = doc.get("label")
         if not label:
             continue
 
-        # Obtain annotations using the adapter.
-        annotations = list(envo_adapter.annotate_text(label))
+        # Annotate using the lexical index via the TextAnnotatorInterface.
+        annotations = list(annotator.annotate_text(label))
         processed_annotations = []
         label_length = len(label)
 
@@ -143,15 +152,12 @@ def main():
             if hasattr(ann, "subject_start") and hasattr(ann, "subject_end"):
                 ann_length = ann.subject_end - ann.subject_start + 1
                 if ann_length < MIN_ANNOTATION_LENGTH:
-                    continue  # Skip annotations that are too short.
+                    continue  # Skip too-short annotations.
             ann_dict = annotation_to_dict(ann, label_length)
             processed_annotations.append(ann_dict)
 
-        # Remove annotations whose ranges are subsumed by others.
         filtered_annotations = filter_subsumed_annotations(processed_annotations)
-        # Compute the combined coverage from the union of annotation ranges.
         combined_coverage = compute_combined_oak_envo_coverage(filtered_annotations, label_length)
-        # Calculate the number of (filtered) annotations.
         annotations_count = len(filtered_annotations)
 
         update_data = {

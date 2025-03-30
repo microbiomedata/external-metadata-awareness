@@ -1,0 +1,112 @@
+biosamples:
+  fields:
+    - accession:
+        type: String
+        primary_key: true
+
+biosamples_flattened:
+  fields:
+    - accession:
+        type: String
+        foreign_key: true
+        references: biosamples.accession
+    - env_broad_scale:
+        type: String
+    - env_local_scale:
+        type: String
+    - env_medium:
+        type: String
+
+biosamples_env_triad_value_counts_gt_1:
+  fields:
+    - _id:
+        type: ObjectId
+        primary_key: true
+    - components:
+        type: Array of Documents
+        fields:
+          - digits_only:
+              type: Boolean
+          - label:
+              type: [ String, Null ]
+          - lingering_envo:
+              type: Boolean
+          - local:
+              type: [ String, Null ]
+          - prefix:
+              type: [ String, Null ]
+          - raw:
+              type: String
+          - uses_bioportal_prefix:
+              type: Boolean
+          - uses_obo_prefix:
+              type: Boolean
+    - components_count:
+        type: Int32
+    - count:
+        type: Int32
+    - digits_only:
+        type: Boolean
+    - env_triad_value:
+        type: String
+    - equation_like:
+        type: Boolean
+    - insdc_missing_match:
+        type: Boolean
+    - length:
+        type: Int32
+
+biosamples_env_triad_components_prefix_lc_counts:
+  fields:
+    - _id:
+        type: String
+        primary_key: true
+    - totalCount:
+        type: Int32
+
+env_triad_component_in_scope_curies_lc:
+  fields:
+    - _id:
+        type: ObjectId
+        primary_key: true
+    - count:
+        type: Int32
+    - label:
+        type: [ String, Null ]
+    - mappings:
+        type: Array of Documents
+        fields:
+          - curie:
+              type: String
+          - obsolete:
+              type: Boolean
+          - prefLabel:
+              type: [ String, Null ]
+          - synonyms:
+              type: Array of Strings
+    - prefix:
+        type: String
+    - local:
+        type: String
+    - uses_obo_prefix:
+        type: Boolean
+
+relationships:
+  One-to-One:
+    - biosamples.accession maps to biosamples_flattened.accession
+
+  One-to-Many (env_triad_value mapping):
+    - biosamples_env_triad_value_counts_gt_1.env_triad_value maps to:
+        - biosamples_flattened.env_broad_scale
+        - biosamples_flattened.env_local_scale
+        - biosamples_flattened.env_medium
+      description: "Logical OR: env_triad_value may match any of these three fields"
+
+  Many-to-One (components.prefix:components.local):
+    - biosamples_env_triad_value_counts_gt_1.components.prefix combined with biosamples_env_triad_value_counts_gt_1.components.local (both lowercased) maps to biosamples_env_triad_components_prefix_lc_counts._id
+
+  One-to-Many (prefix, local shared fields):
+    - env_triad_component_in_scope_curies_lc.prefix and env_triad_component_in_scope_curies_lc.local maps to biosamples_env_triad_value_counts_gt_1.components.prefix and biosamples_env_triad_value_counts_gt_1.components.local
+
+  Many-to-One (prefix:local):
+    - biosamples_env_triad_value_counts_gt_1.components.prefix combined with biosamples_env_triad_value_counts_gt_1.components.local (both lowercased) maps to env_triad_in_scope_prefix_lc_counts._id
