@@ -1,0 +1,154 @@
+id: https://w3id.org/nmdc/env-triads
+name: env_triads
+prefixes:
+  linkml: https://w3id.org/linkml/
+  nmdc: https://w3id.org/nmdc/
+  xsd: http://www.w3.org/2001/XMLSchema#
+types:
+  ObjectId:
+    base: str
+    uri: xsd:string
+    description: MongoDB ObjectId in hex string form
+
+imports:
+  - linkml:types
+
+default_range: string
+
+classes:
+  EnvTriadComponent:
+    attributes:
+      raw:
+        range: string
+      label:
+        range: string
+      prefix:
+        range: string
+        required: false
+      local:
+        range: string
+        required: false
+      digits_only:
+        range: boolean
+      lingering_envo:
+        range: boolean
+      uses_obo_prefix:
+        range: boolean
+      uses_bioportal_prefix:
+        range: boolean
+      curie_lc:
+        range: string
+        required: false
+      text_annotations:
+        range: TextAnnotations
+        required: false
+      asserted_class:
+        range: AssertedClass
+        required: false
+
+  TextAnnotations:
+    attributes:
+      oak_text_annotations:
+        multivalued: true
+        range: OakAnnotation
+      ols_text_annotations:
+        multivalued: true
+        range: OlsAnnotation
+      combined_oak_coverage:
+        range: float
+      oak_annotations_count:
+        range: integer
+      ols_annotations_count:
+        range: integer
+
+  OakAnnotation:
+    attributes:
+      predicate_id:
+        range: string
+      object_id:
+        range: string
+      object_label:
+        range: string
+      match_string:
+        range: string
+      subject_start:
+        range: integer
+      subject_end:
+        range: integer
+      coverage:
+        range: float
+      matches_whole_text:
+        range: boolean
+
+  OlsAnnotation:
+    attributes:
+      label:
+        range: string
+      synonyms:
+        multivalued: true
+        range: string
+      exact_label_match:
+        range: boolean
+      exact_synonym_match:
+        range: boolean
+      obo_id:
+        range: string
+      ontology_name_lc:
+        range: string
+      ontology_prefix:
+        range: string
+
+  Mapping:
+    attributes:
+      curie:
+        range: string
+      prefix:
+        range: string
+      prefLabel:
+        range: string
+      synonyms:
+        multivalued: true
+        range: string
+
+  AssertedClass:
+    attributes:
+      curie_lc:
+        range: string
+      ontology_prefix:
+        range: string
+      label:
+        range: string
+      prefLabel:
+        range: string
+        required: false
+      synonyms:
+        multivalued: true
+        range: string
+        required: false
+      mappings:
+        multivalued: true
+        inlined: true
+        range: Mapping
+        required: false
+
+  EnvTriadBlock:
+    attributes:
+      value:
+        range: string
+      components:
+        multivalued: true
+        inlined: true
+        range: EnvTriadComponent
+
+  EnvTriads:
+    attributes:
+      _id:
+        range: ObjectId
+      accession:
+        range: string
+      env_broad_scale:
+        range: EnvTriadBlock
+      env_local_scale:
+        range: EnvTriadBlock
+      env_medium:
+        range: EnvTriadBlock
