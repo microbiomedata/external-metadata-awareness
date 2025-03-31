@@ -9,8 +9,8 @@ It then uses the lexical index via a TextAnnotatorInterface to annotate the
 "label" field in each document, filtering out short or subsumed annotations,
 computing the combined coverage, and updating the document with:
   - "oak_text_annotations"
-  - "combined_oak_envo_coverage"
-  - "oak_envo_annotations_count"
+  - "combined_oak_coverage"
+  - "oak_annotations_count"
 
 Notes:
   - Annotation coordinates are 1-based and inclusive.
@@ -82,14 +82,14 @@ def filter_subsumed_annotations(annotations):
     return filtered
 
 
-def compute_combined_oak_envo_coverage(annotations, label_length):
+def compute_combined_oak_coverage(annotations, label_length):
     """
     Compute the combined coverage provided by the union of all annotation ranges.
     Each annotation range is defined by its subject_start and subject_end,
     and uses 1-based inclusive indexing.
 
     The function merges overlapping or adjacent intervals, then computes:
-         combined_oak_envo_coverage = (total_covered_characters) / label_length.
+         combined_oak_coverage = (total_covered_characters) / label_length.
     """
     intervals = []
     for ann in annotations:
@@ -138,7 +138,13 @@ def main():
     total_docs = collection.estimated_document_count()
     print(f"Processing {total_docs} documents from env_triad_component_labels collection.")
 
-    for doc in tqdm(collection.find(), total=total_docs, desc="Annotating documents"):
+    min_length = 3
+    query = {
+        "label_digits_only": False,
+        "label_length": {"$gte": min_length}
+    }
+
+    for doc in tqdm(collection.find(query), total=total_docs, desc="Annotating documents"):
         label = doc.get("label")
         if not label:
             continue
@@ -157,13 +163,13 @@ def main():
             processed_annotations.append(ann_dict)
 
         filtered_annotations = filter_subsumed_annotations(processed_annotations)
-        combined_coverage = compute_combined_oak_envo_coverage(filtered_annotations, label_length)
+        combined_coverage = compute_combined_oak_coverage(filtered_annotations, label_length)
         annotations_count = len(filtered_annotations)
 
         update_data = {
             "oak_text_annotations": filtered_annotations,
-            "combined_oak_envo_coverage": combined_coverage,
-            "oak_envo_annotations_count": annotations_count
+            "combined_oak_coverage": combined_coverage,
+            "oak_annotations_count": annotations_count
         }
         collection.update_one({"_id": doc["_id"]}, {"$set": update_data})
 

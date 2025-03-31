@@ -58,5 +58,3 @@ while (componentLabels.hasNext()) {
 
 const end = new Date();
 print("Elapsed time: " + (end - start) + " ms");
-
-
