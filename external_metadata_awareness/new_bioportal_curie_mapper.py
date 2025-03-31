@@ -1,10 +1,12 @@
-#!/usr/bin/env python
 import os
 import urllib.parse
 from pymongo import MongoClient
 import requests
 import requests_cache
 from dotenv import load_dotenv
+from prefixmaps.io.parser import load_converter
+import pprint
+from typing import List, Dict
 
 # Load environment variables from local/.env file (make sure BIOPORTAL_API_KEY is defined)
 load_dotenv("local/.env")
@@ -15,16 +17,39 @@ if not BIOPORTAL_API_KEY:
 # Enable requests caching (expires after 7 days)
 requests_cache.install_cache("requests_cache", expire_after=6048000)
 
-# Load the converter using prefixmaps (assumes you have the curies and prefixmaps packages installed)
-from prefixmaps.io.parser import load_converter
-
 converter = load_converter(["bioportal", "obo"])
 
-# Connect to MongoDB (adjust the URL if necessary)
+converter.add_prefix("ENV", "http://purl.obolibrary.org/obo/ENVO_", merge=True)
+converter.add_prefix("ENV0", "http://purl.obolibrary.org/obo/ENVO_", merge=True)
+converter.add_prefix("EVNO", "http://purl.obolibrary.org/obo/ENVO_", merge=True)
+converter.add_prefix("SNOMED", "http://purl.bioontology.org/ontology/SNOMEDCT/", merge=True)
+
+# Connect to MongoDB
 mongo_url = "mongodb://localhost:27017"
 client = MongoClient(mongo_url)
 db = client.ncbi_metadata
-collection = db.env_triad_component_in_scope_curies_lc
+collection = db.env_triad_component_curies_uc
+
+map_to = {"ENVO", "FOODON", "MONDO", "NCBITAXON", "PO", "UBERON", }
+dont_map_from = {
+    "BFO",
+    "IAO",
+    "RO",
+    "OF",  # todo garbage CURIes? double check where they come from
+}
+ignore = list(map_to | dont_map_from)
+
+
+def deduplicate_dicts(lst: List[Dict]) -> List[Dict]:
+    seen = set()
+    result = []
+    for d in lst:
+        # Convert dict to a tuple of sorted key-value pairs
+        items = tuple(sorted(d.items()))
+        if items not in seen:
+            seen.add(items)
+            result.append(d)
+    return result
 
 
 def safe_expand(curie):
@@ -32,7 +57,7 @@ def safe_expand(curie):
     try:
         return converter.expand(curie.upper())
     except Exception as e:
-        print(f"CURIE: {curie} - Expansion error: {e}")
+        # print(f"CURIE: {curie} - Expansion error: {e}")
         return None
 
 
@@ -51,7 +76,7 @@ def get_bioportal_info(term_uri, prefix):
         mappings_link = data.get("links", {}).get("mappings")
         return {"mappings_link": mappings_link, "data": data}
     except Exception as e:
-        print(f"Error fetching BioPortal info for {term_uri}: {e}")
+        # print(f"Error fetching BioPortal info for {url}: {e}")
         return None
 
 
@@ -64,24 +89,18 @@ def get_mapped_term_info(self_link):
         url = self_link + f"&apikey={BIOPORTAL_API_KEY}"
     else:
         url = self_link + f"?apikey={BIOPORTAL_API_KEY}"
-    # print(f"Following mapping self link: {url}")
     try:
         response = requests.get(url, timeout=10)
         response.raise_for_status()
         return response.json()
     except Exception as e:
-        print(f"Error fetching mapped term info from {self_link}: {e}")
+        # print(f"Error fetching mapped term info from {self_link}: {e}")
         return {}
 
 
 def fetch_mappings(mappings_url):
     """
     Fetch LOOM-type mappings from BioPortal using the mappings_link.
-    Returns a tuple: (accepted_mappings, counts) where counts is a dict containing:
-       - total: total mapping items in response,
-       - loom: number of mapping items with source 'LOOM',
-       - accepted: number of LOOM mappings that passed the overlap check,
-       - overlap: True if any accepted mapping's id overlapped with its links.ontology.
     """
     try:
         if "?" in mappings_url:
@@ -92,7 +111,6 @@ def fetch_mappings(mappings_url):
         response = requests.get(full_url, timeout=10)
         response.raise_for_status()
         mappings_obj = response.json()
-        total_count = len(mappings_obj) if isinstance(mappings_obj, list) else 0
         loom_count = 0
         accepted_mappings = []
         for item in mappings_obj:
@@ -110,31 +128,24 @@ def fetch_mappings(mappings_url):
             if not mapped_curie:
                 continue
             mapped_prefix = mapped_curie.split(":")[0]
-            if mapped_prefix.lower() in ontology_url:
+            if mapped_prefix.upper() in map_to and ontology_url.upper() in ontology_url.upper():
                 self_link = class_links.get("self")
-                if self_link:
-                    # print(f"Following mapping self link: {self_link}")
-                    pass
                 mapped_info = get_mapped_term_info(self_link) if self_link else {}
-                mapping_obj = {
-                    "curie": mapped_curie,
-                    "prefix": mapped_prefix,
-                    "prefLabel": mapped_info.get("prefLabel"),
-                    "synonyms": mapped_info.get("synonym", []),
-                    "obsolete": mapped_info.get("obsolete", False)
-                }
-                accepted_mappings.append(mapping_obj)
-        accepted_count = len(accepted_mappings)
-        overlap_found = accepted_count > 0
-        return accepted_mappings, {
-            "total": total_count,
-            "loom": loom_count,
-            "accepted": accepted_count,
-            "overlap": overlap_found
-        }
+                if mapped_info.get("prefLabel"):
+                    mapping_obj = {
+                        "curie": mapped_curie,
+                        "prefix": mapped_prefix,
+                        "label_lc": mapped_info.get("prefLabel").lower(),
+                        "obsolete": mapped_info.get("obsolete", False)
+                    }
+
+                    accepted_mappings.append(mapping_obj)
+        accepted_mappings = deduplicate_dicts(accepted_mappings)
+        pprint.pprint(accepted_mappings)
+        return accepted_mappings
     except Exception as e:
-        print(f"Error fetching mappings from {mappings_url}: {e}")
-        return [], {"total": 0, "loom": 0, "accepted": 0, "overlap": False}
+        # print(f"Error fetching mappings from {mappings_url}: {e}")
+        return []
 
 
 def process_document(doc):
@@ -142,8 +153,7 @@ def process_document(doc):
     Process a document: expand its CURIE, fetch BioPortal info, and update the document with fetched data and mappings.
     Logs a summary message with the CURIE, expansion status, the prefLabel from BioPortal, and mapping details.
     """
-    curie = doc.get("curie_lc")
-    print(f"Processing CURIE: {curie}")
+    curie = doc.get("curie_uc")
 
     term_uri = safe_expand(curie)
     if term_uri:
@@ -152,9 +162,12 @@ def process_document(doc):
         print(f"Expansion failed for CURIE: {curie}")
         return
 
-    bioportal_info = get_bioportal_info(term_uri, doc.get("prefix", ""))
+    reverse_engineered = converter.compress(term_uri)
+    reverse_engineered_prefix = reverse_engineered.split(":")[0]
+
+    bioportal_info = get_bioportal_info(term_uri, reverse_engineered_prefix)
     if not bioportal_info:
-        print(f"Failed to fetch BioPortal info for CURIE: {curie}")
+        # print(f"Failed to fetch BioPortal info for CURIE: {curie}")
         return
 
     data = bioportal_info["data"]
@@ -162,37 +175,31 @@ def process_document(doc):
     print(f"BioPortal prefLabel for {curie}: {pref_label}")
 
     update_fields = {
-        "prefLabel": pref_label,
-        "synonyms": data.get("synonym", []),
+        "label": pref_label,
         "obsolete": data.get("obsolete", False)
     }
 
-    mapping_summary = ""
     if bioportal_info.get("mappings_link"):
         mappings_url = bioportal_info["mappings_link"]
-        accepted_mappings, counts = fetch_mappings(mappings_url)
-        mapping_summary = (
-            f"Total mappings in response: {counts['total']}; "
-            f"LOOM mappings encountered: {counts['loom']}; "
-            f"Accepted LOOM mappings: {counts['accepted']}; "
-            f"Overlap found: {'Yes' if counts['overlap'] else 'No'}"
-        )
+        accepted_mappings = fetch_mappings(mappings_url)
         if accepted_mappings:
             update_fields["mappings"] = accepted_mappings
-    else:
-        mapping_summary = "No mappings_link available."
 
-    print(f"CURIE: {curie} - {mapping_summary}")
     collection.update_one({"_id": doc["_id"]}, {"$set": update_fields})
 
 
 def main():
     query = {
-        "prefix": {"$nin": ["ENVO"]},
-        # "count": {"$gte": 1},
-        # "$or": [{"label": {"$exists": False}}, {"label": {"$in": [None, ""]}}]
+        "prefix_uc": {
+            "$nin": ignore
+        },
+        "curie_uc": {
+            "$ne": None
+        }
     }
+
     docs_cursor = collection.find(query)
+
     for doc in docs_cursor:
         process_document(doc)
 

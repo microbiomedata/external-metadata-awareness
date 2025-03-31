@@ -32,9 +32,18 @@ def main():
     db = client[DATABASE_NAME]
     collection = db[COLLECTION_NAME]
 
-    # Find documents that do not already have the oak_text_annotations field.
-    # query = {"oak_text_annotations": {"$exists": False}}
-    query = {"combined_coverage": {"$lt": 0.90}}
+    # Find documents to update (in this example, those with combined_oak_coverage < 0.90)
+
+    min_length = 3
+    max_oak_coverage = 0.9
+
+    query = {
+        "label_digits_only": False,
+        "label_length": {"$gte": min_length},
+        "combined_oak_coverage": {"$lt": max_oak_coverage}
+    }
+
+    # query = {"combined_oak_coverage": {"$lt": 0.90}}
     projection = {"label": 1}
     docs = list(collection.find(query, projection))
 
@@ -53,7 +62,6 @@ def main():
         start = 0
         ols_hits = []
         while True:
-            # print(f"Querying '{query_text}' at start={start}")
             params = {
                 "q": query_text,
                 "exact": OLS_REQ_EXACT_MATCH,
@@ -68,12 +76,9 @@ def main():
                 response.raise_for_status()
                 data = response.json()
             except Exception as e:
-                # print(f"OLS request failed for {query_text} at start={start}: {e}")
                 break
 
             results = data.get("response", {}).get("docs", [])
-            # print(f" - Got {len(results)} results")
-
             if not results:
                 break
 
@@ -89,20 +94,27 @@ def main():
                         "exact_label_match": exact_match,
                         "exact_synonym_match": exact_synonym_match,
                         "obo_id": result.get("obo_id", ""),
-                        "ontology_name_lc": result.get("ontology_name", "").lower(),
-                        "ontology_prefix": result.get("ontology_prefix", ""),
+                        # Store ontology name and prefix in upper case:
+                        "ontology_name_uc": result.get("ontology_name", "").upper(),
+                        "ontology_prefix_uc": result.get("ontology_prefix", "").upper(),
                     }
                     ols_hits.append(hit)
 
             num_found = data.get("response", {}).get("numFound", 0)
-            # print(f" - numFound={num_found}, next start={start + ROWS}")
             start += ROWS
             if start >= num_found:
                 break
 
-        # If we found any OLS hits, update the document with the new field.
+        # If we found any OLS hits, update the document with the new fields,
+        # including an "ols_annotations_count" field.
         if ols_hits:
-            collection.update_one({"_id": doc["_id"]}, {"$set": {"ols_text_annotations": ols_hits}})
+            collection.update_one(
+                {"_id": doc["_id"]},
+                {"$set": {
+                    "ols_text_annotations": ols_hits,
+                    "ols_annotations_count": len(ols_hits)
+                }}
+            )
 
     print("OLS lookups completed and documents updated.")
 
