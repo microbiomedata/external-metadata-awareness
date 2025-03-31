@@ -77,7 +77,8 @@ def extract_components(text, known_envo_curies=None, obo_ontology_indicators_lc=
     text = re.sub(r'\b(ENVO:){2,}', 'ENVO:', text, flags=re.IGNORECASE)
 
     # If the text appears to contain multiple bracketed CURIEs, use the dedicated branch.
-    if re.search(r'[\[\(\{]', text) and len(re.findall(r'[\[\(\{]', text)) > 1:
+    # if re.search(r'[\[\(\{]', text) and len(re.findall(r'[\[\(\{]', text)) > 1:
+    if re.search(r'[\[\(\{].+[\]\)\}]', text):
         found_any = False
         for m in bracketed_pattern.finditer(text):
             found_any = True
@@ -145,6 +146,7 @@ def extract_components(text, known_envo_curies=None, obo_ontology_indicators_lc=
             candidate_prefix = m.group('prefix').upper()
             known_prefixes = set(x.upper() for x in (obo_ontology_indicators_lc or [])) | set(
                 x.upper() for x in (bioportal_ontology_indicators_lc or []))
+            known_prefixes.discard("OF")  # Remove OF from the whitelist
             if candidate_prefix not in known_prefixes:
                 # Candidate prefix isn’t recognized; treat as plain text.
                 components.append({
