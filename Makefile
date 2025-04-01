@@ -1,6 +1,7 @@
 WGET=wget
 RUN=poetry run
 
+include Makefiles/env_triads.Makefile
 include Makefiles/envo.Makefile
 include Makefiles/gold.Makefile
 include Makefiles/mixs.Makefile

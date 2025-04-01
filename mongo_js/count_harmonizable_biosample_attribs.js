@@ -33,5 +33,5 @@ db.biosamples.aggregate([
         }
     },
     {$sort: {count: -1}},
-    {$out: "biosample_attribute_name_counts_flat_gt_1"}
+    {$out: "biosamples_attribute_name_counts_flat_gt_1"}
 ])

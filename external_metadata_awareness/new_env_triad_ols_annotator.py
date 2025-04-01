@@ -1,9 +1,9 @@
-#!/usr/bin/env python3
+import datetime
+
 import requests
+import requests_cache
 from pymongo import MongoClient
 from tqdm import tqdm
-import requests_cache
-import datetime
 
 # --- Configuration ---
 MONGO_URL = "mongodb://localhost:27017"
@@ -22,8 +22,10 @@ OLS_REQ_EXACT_MATCH = "true"  # Use exact matching
 MIN_LABEL_LEN = 3  # Minimum length for labels to query
 ROWS = 1000  # Number of results per page
 
+requests_cache_filename="external-metadata-awareness-requests-cache"
+
 # Enable requests caching (expires after 7 days)
-requests_cache.install_cache("requests_cache", expire_after=datetime.timedelta(days=30))
+requests_cache.install_cache(requests_cache_filename, expire_after=datetime.timedelta(days=30))
 
 
 def main():
