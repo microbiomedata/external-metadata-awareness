@@ -11,3 +11,5 @@ local/
 
 *.db
 *.gz
+*.sqlite
+*.db
