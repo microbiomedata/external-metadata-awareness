@@ -1,0 +1,58 @@
+# curie_map:
+#   ECOSIMCONCEPT: http://w3id.org/sssom/unknown_prefix/ecosimconcept/
+#   mixs: http://w3id.org/sssom/unknown_prefix/mixs/
+#   nmdc: http://w3id.org/sssom/unknown_prefix/nmdc/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/5ba77736-d26d-4b25-963f-ca01e09ea6c6
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+mixs:ammonium	ammonium	skos:closeMatch	ECOSIMCONCEPT:Ammonium	Ammonium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ammonium
+mixs:ammonium	ammonium	skos:closeMatch	ECOSIMCONCEPT:NH4	Ammonium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ammonium
+mixs:ammonium	ammonium	skos:closeMatch	mixs:ammonium	ammonium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ammonium
+mixs:calcium	calcium	skos:closeMatch	ECOSIMCONCEPT:Ca	Calcium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	calcium
+mixs:calcium	calcium	skos:closeMatch	ECOSIMCONCEPT:Calcium	Calcium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	calcium
+mixs:calcium	calcium	skos:closeMatch	mixs:calcium	calcium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	calcium
+mixs:chloride	chloride	skos:closeMatch	ECOSIMCONCEPT:Chloride	Chloride	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chloride
+mixs:chloride	chloride	skos:closeMatch	mixs:chloride	chloride	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chloride
+mixs:chlorophyll	chlorophyll	skos:closeMatch	ECOSIMCONCEPT:Chlorophyll	Chlorophyll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+mixs:chlorophyll	chlorophyll	skos:closeMatch	mixs:chlorophyll	chlorophyll	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlorophyll
+mixs:depth	depth	skos:closeMatch	ECOSIMCONCEPT:Depth	Depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+mixs:depth	depth	skos:closeMatch	mixs:depth	depth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	depth
+mixs:elevator	elevator	skos:closeMatch	mixs:elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:IndoorSpaceEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:MechStrucEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomConnectedEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:elevator	elevator	skos:closeMatch	nmdc:RoomTypeEnum#elevator	elevator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	elevator
+mixs:escalator	escalator	skos:closeMatch	mixs:escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+mixs:escalator	escalator	skos:closeMatch	nmdc:MechStrucEnum#escalator	escalator	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	escalator
+mixs:field	field	skos:closeMatch	ECOSIMCONCEPT:Field	Field	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	field
+mixs:field	field	skos:closeMatch	mixs:field	field	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	field
+mixs:fire	fire	skos:closeMatch	ECOSIMCONCEPT:Fire	Fire	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fire
+mixs:fire	fire	skos:closeMatch	mixs:fire	fire	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	fire
+mixs:magnesium	magnesium	skos:closeMatch	ECOSIMCONCEPT:Magnesium	Magnesium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	magnesium
+mixs:magnesium	magnesium	skos:closeMatch	ECOSIMCONCEPT:Mg	Magnesium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	magnesium
+mixs:magnesium	magnesium	skos:closeMatch	mixs:magnesium	magnesium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	magnesium
+mixs:methane	methane	skos:closeMatch	ECOSIMCONCEPT:CH4	Methane	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	methane
+mixs:methane	methane	skos:closeMatch	mixs:methane	methane	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	methane
+mixs:nitrate	nitrate	skos:closeMatch	ECOSIMCONCEPT:NO3	Nitrate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nitrate
+mixs:nitrate	nitrate	skos:closeMatch	ECOSIMCONCEPT:Nitrate	Nitrate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nitrate
+mixs:nitrate	nitrate	skos:closeMatch	mixs:nitrate	nitrate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	nitrate
+mixs:oxygen	oxygen	skos:closeMatch	ECOSIMCONCEPT:Oxygen	Oxygen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	oxygen
+mixs:oxygen	oxygen	skos:closeMatch	mixs:oxygen	oxygen	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	oxygen
+mixs:permeability	permeability	skos:closeMatch	ECOSIMCONCEPT:Permeability	Permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permeability
+mixs:permeability	permeability	skos:closeMatch	mixs:permeability	permeability	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	permeability
+mixs:phosphate	phosphate	skos:closeMatch	ECOSIMCONCEPT:PO4	Phosphate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	phosphate
+mixs:phosphate	phosphate	skos:closeMatch	ECOSIMCONCEPT:Phosphate	Phosphate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	phosphate
+mixs:phosphate	phosphate	skos:closeMatch	mixs:phosphate	phosphate	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	phosphate
+mixs:potassium	potassium	skos:closeMatch	ECOSIMCONCEPT:K	Potassium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	potassium
+mixs:potassium	potassium	skos:closeMatch	ECOSIMCONCEPT:Potassium	Potassium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	potassium
+mixs:potassium	potassium	skos:closeMatch	mixs:potassium	potassium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	potassium
+mixs:pressure	pressure	skos:closeMatch	ECOSIMCONCEPT:Pressure	Pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure
+mixs:pressure	pressure	skos:closeMatch	mixs:pressure	pressure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	pressure
+mixs:sodium	sodium	skos:closeMatch	ECOSIMCONCEPT:Sodium	Sodium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sodium
+mixs:sodium	sodium	skos:closeMatch	mixs:sodium	sodium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sodium

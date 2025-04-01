@@ -13,3 +13,17 @@ local/ncbi-biosample-packages.csv: downloads/ncbi-biosample-packages.xml
 	$(RUN) ncbi-packages-csv-report \
 	--xml-file $< \
 	--output-file $@
+
+.PHONY: load-packages-into-mongo
+load-packages-into-mongo: downloads/ncbi-biosample-packages.xml
+	date
+	$(RUN) xml-to-mongo \
+		--node-type Package \
+		--collection-name packages \
+		--db-name $(MONGO_DB) \
+		--file-path $< \
+		--max-elements 999999 \
+		--mongo-host $(MONGO_HOST) \
+		--mongo-port $(MONGO_PORT)
+	date
+

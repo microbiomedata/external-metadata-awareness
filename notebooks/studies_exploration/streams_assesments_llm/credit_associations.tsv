@@ -1,0 +1,405 @@
+study_id	name	email	orcid	applied_roles
+nmdc:sty-11-076c9980	Jennifer Pett-Ridge	pettridge2@llnl.gov	orcid:0000-0002-4439-2398	Principal Investigator|Funding acquisition|Conceptualization|Formal Analysis|Investigation|Project administration|Resources|Supervision|Writing review and editing
+nmdc:sty-11-076c9980	Ashley Campbell	a.campbell910@gmail.com	orcid:0000-0002-2253-8317	Methodology|Formal Analysis|Investigation|Writing original draft
+nmdc:sty-11-076c9980	Jeff Kimbrel	kimbrel1@llnl.gov	orcid:0000-0001-7213-9392	Data curation|Formal Analysis|Visualization
+nmdc:sty-11-076c9980	Amrita Bhattacharyya	abhattacharyya@lbl.gov	orcid:0000-0003-2685-0698	Formal Analysis|Writing original draft
+nmdc:sty-11-076c9980	Gary Trubl	trubl1@llnl.gov	orcid:0000-0001-5008-1476	Formal Analysis|Visualization|Writing original draft
+nmdc:sty-11-076c9980	Vanessa Brisson	brisson2@llnl.gov	orcid:0000-0003-1398-1664	Formal Analysis|Visualization
+nmdc:sty-11-076c9980	Peter Nico	psnico@lbl.gov	orcid:0000-0002-4180-9397	Conceptualization|Writing review and editing
+nmdc:sty-11-1t150432	Mitchel J. Doktycz	doktyczmj@ornl.gov	orcid:0000-0003-4856-8343	Principal Investigator|Conceptualization
+nmdc:sty-11-1t150432	Josh Michener	michenerjk@ornl.gov	orcid:0000-0003-2302-8180	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	Jennifer Morrell-Falvey	morrelljl1@ornl.gov	orcid:0000-0002-9362-7528	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Software|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	Wellington Muchero	mucherow@ornl.gov	orcid:0000-0002-0200-9856	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Resources|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	Dale Pelletier	pelletierda@ornl.gov	orcid:0000-0002-4321-7918	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Project administration|Resources|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	Mircea Podar	podarm@ornl.gov	orcid:0000-0003-2776-0205	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	Scott Retterer	rettererst@ornl.gov	orcid:0000-0001-8534-1979	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Resources|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	Robert Hettich	hettichrl@ornl.gov	orcid:0000-0001-7708-786X	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Resources|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	Christopher Schadt	schadtcw@ornl.gov	orcid:0000-0001-8759-2448	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	Timothy Tschaplinski	tschaplinstj@ornl.gov	orcid:0000-0002-9540-6622	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Project administration|Resources|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	David Weston	westondj@ornl.gov	orcid:0000-0002-4794-9913	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	Paul Abraham	abrahampe@ornl.gov	orcid:0000-0003-2685-9123	Data curation|Formal Analysis|Investigation|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	Xiaohan Yang	yangx@ornl.gov	orcid:0000-0001-5207-4210	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	Jin-Gui Chen	chenj@ornl.gov	orcid:0000-0002-1752-4201	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Resources|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	Melissa Cregger	creggerma@ornl.gov	orcid:0000-0001-8329-366X	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Resources|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	Omar Demerdash	demerdashon@ornl.gov	orcid:0000-0001-6846-1506	Conceptualization|Data curation|Formal Analysis|Investigation|Methodology|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	Joseph C. Ellis	ellisjc@ornl.gov	orcid:0000-0002-2510-977X	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Software|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	Daniel Jacobson	jacobsonda@ornl.gov	orcid:0000-0002-9822-8251	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Software|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	Udaya Kalluri	Kalluriudayc@ornl.gov	orcid:0000-0002-5963-8370	Conceptualization|Data curation|Formal Analysis|Investigation|Methodology|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-1t150432	Stanton Martin	martins@ornl.gov	orcid:0000-0001-9246-8193	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Software|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-28tm5d36	Emily B. Graham	emily.graham@pnnl.gov	orcid:0000-0002-4623-7076	Funding acquisition|Conceptualization|Project administration|Writing review and editing
+nmdc:sty-11-28tm5d36	Maggie M. Bowman	maggie.bowman@pnnl.gov	orcid:0000-0001-8825-1098	Conceptualization|Investigation|Data curation|Methodology|Formal Analysis|Writing original draft|Project administration
+nmdc:sty-11-28tm5d36	John Bargar	john.bargar@pnnl.gov	orcid:0000-0001-9303-4901	Project administration|Writing review and editing
+nmdc:sty-11-28tm5d36	Nancy Hess			Funding acquisition|Conceptualization
+nmdc:sty-11-28tm5d36	Sarah Leichty	sarah.leichty@pnnl.gov	orcid:0000-0002-9609-9126	Project administration
+nmdc:sty-11-28tm5d36	Andrew Townsend	andrew.townsend@pnnl.gov		Investigation
+nmdc:sty-11-28tm5d36	Nick Sconzo	nicholas.sconzo@pnnl.gov		Investigation
+nmdc:sty-11-28tm5d36	Patricia Miller	patricia.miller@pnnl.gov		Investigation
+nmdc:sty-11-28tm5d36	James Anderson			Investigation
+nmdc:sty-11-28tm5d36	Izabel Stohel	izabel.stohel@pnnl.gov		Investigation
+nmdc:sty-11-28tm5d36	Michael Rosenstock	michael.rosenstock@pnnl.gov		Investigation
+nmdc:sty-11-28tm5d36	Albert Lawver			Investigation
+nmdc:sty-11-28tm5d36	Alexis E. Heath			Investigation
+nmdc:sty-11-28tm5d36	Che Clendinen	chaevien.clendinen@pnnl.gov	orcid:0000-0002-1487-4126	Methodology|Investigation|Formal Analysis
+nmdc:sty-11-28tm5d36	Tamas Varga	tamas.varga@pnnl.gov	orcid:0000-0002-5492-866X	Methodology|Visualization|Investigation
+nmdc:sty-11-28tm5d36	Anil K. Battu	anilkrishna.battu@pnnl.gov	orcid:0000-0001-7724-5100	Methodology|Visualization|Investigation
+nmdc:sty-11-28tm5d36	Will Kew	william.kew@pnnl.gov	orcid:0000-0002-4281-4630	Methodology|Investigation
+nmdc:sty-11-28tm5d36	Cheng Shi	cheng.shi@pnnl.gov	orcid:0000-0001-6985-1514	Visualization|Formal Analysis
+nmdc:sty-11-28tm5d36	Rosey Chu	rosalie.chu@pnnl.gov	orcid:0000-0001-7428-7647	Methodology|Investigation
+nmdc:sty-11-28tm5d36	Jason Toyoda	jason.toyoda@pnnl.gov	orcid:0000-0001-6299-2146	Investigation|Project administration
+nmdc:sty-11-28tm5d36	Odeta Qafoku	odeta.qafoku@pnnl.gov	orcid:0000-0002-4946-8988	Project administration|Writing review and editing
+nmdc:sty-11-28tm5d36	Rey Huachambé	rey.huachambe@pnnl.gov	orcid:0000-0002-6943-0063	Investigation
+nmdc:sty-11-2zhqs261	Eoin Brodie		orcid:0000-0002-8453-8435	Principal Investigator|Supervision|Conceptualization|Funding acquisition|Project administration
+nmdc:sty-11-2zhqs261	Ken Williams			Conceptualization|Investigation
+nmdc:sty-11-2zhqs261	Carl Steefel		orcid:0000-0002-2802-611X	Conceptualization|Investigation
+nmdc:sty-11-2zhqs261	Charuleka Varadharajan		orcid:0000-0002-4142-3224	Conceptualization|Investigation
+nmdc:sty-11-2zhqs261	Yuxin Wu			Conceptualization|Investigation
+nmdc:sty-11-2zhqs261	Bhavna Arora		orcid:0000-0001-7841-886X	Conceptualization|Investigation
+nmdc:sty-11-2zhqs261	Nick Bouskill		orcid:0000-0002-6577-8724	Conceptualization|Investigation
+nmdc:sty-11-2zhqs261	Rosemary Carroll			Conceptualization|Investigation
+nmdc:sty-11-2zhqs261	Dipankar Dwivedi		orcid:0000-0003-1788-1900	Conceptualization|Investigation
+nmdc:sty-11-2zhqs261	Benjamin Gilbert			Conceptualization|Investigation
+nmdc:sty-11-2zhqs261	Michelle Newcomer		orcid:0000-0001-5138-9026	Conceptualization|Investigation
+nmdc:sty-11-2zhqs261	Peter Nico		orcid:0000-0002-4180-9397	Conceptualization|Investigation
+nmdc:sty-11-2zhqs261	Matthias Sprenger		orcid:0000-0003-1221-2767	Conceptualization|Investigation
+nmdc:sty-11-33fbta56	Christopher Schadt	schadtcw@ornl.gov	orcid:0000-0001-8759-2448	Principal Investigator|Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Project administration|Resources|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-33fbta56	Joel Kostka	joel.kostka@biology.gatech.edu	orcid:0000-0003-3051-1330	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Project administration|Resources|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-33fbta56	Rachel Wilson	rachelyounge@gmail.com	orcid:0000-0002-5770-9614	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Project administration|Resources|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-33fbta56	Jeff Chanton	jchanton@fsu.edu	orcid:0000-0002-3303-9708	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Project administration|Resources|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-33fbta56	Paul Hanson	hansonpj@ornl.gov	orcid:0000-0001-7293-3561	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Project administration|Resources|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-34xj1150	Hugh Cross	crossh@battelleecology.org	orcid:0000-0002-6745-9479	Methodology|Data curation
+nmdc:sty-11-34xj1150	Samantha Weintraub-Leff	sweintraub@battelleecology.org	orcid:0000-0003-4789-5086	Methodology|Data curation
+nmdc:sty-11-34xj1150	Kate Thibault	kthibault@battelleecology.org	orcid:0000-0003-3477-6424	Principal Investigator
+nmdc:sty-11-547rwq94	Justin P. Shaffer	jpshaffer@health.ucsd.edu	0000-0002-9371-6336	Data curation|Formal Analysis|Investigation|Methodology|Project administration|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-547rwq94	Louis-Félix Nothias	nothias@health.ucsd.edu		Data curation|Formal Analysis|Investigation|Methodology|Software|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-547rwq94	Luke R. Thompson	luke.thompson@noaa.gov	0000-0002-3911-1280	Conceptualization|Data curation|Investigation|Methodology|Project administration|Supervision|Validation|Writing review and editing
+nmdc:sty-11-547rwq94	Jon G. Sanders	jonsan@gmail.com	0000-0001-6077-4014	Conceptualization|Data curation|Investigation|Methodology|Project administration|Supervision|Validation|Writing review and editing
+nmdc:sty-11-547rwq94	Rodolfo A. Salido	rsalidob@eng.ucsd.edu		Data curation|Methodology|Validation
+nmdc:sty-11-547rwq94	Sneha P. Couvillion	sneha.couvillion@pnnl.gov	0000-0003-0307-9343	Data curation|Investigation|Methodology|Validation|Writing review and editing|Writing review and editing
+nmdc:sty-11-547rwq94	Asker D. Brejnrod	askerbrejnrod@gmail.com	0000-0002-1327-2051	Formal Analysis|Writing original draft|Writing review and editing
+nmdc:sty-11-547rwq94	Shi Huang	shh047@ucsd.edu	0000-0002-7529-2269	Formal Analysis|Writing review and editing
+nmdc:sty-11-547rwq94	Franck Lejzerowicz	flejzerowicz@health.ucsd.edu	0000-0002-3195-032X	Formal Analysis|Writing review and editing
+nmdc:sty-11-547rwq94	Holly L. Lutz	hllutz@health.ucsd.edu	0000-0001-6454-809X	Formal Analysis|Writing review and editing
+nmdc:sty-11-547rwq94	Qiyun Zhu	qiyun.zhu@asu.edu	0000-0002-3568-6271	Formal Analysis|Methodology|Software|Writing review and editing
+nmdc:sty-11-547rwq94	Cameron Martino	cmartino@eng.ucsd.edu		Formal Analysis|Writing review and editing
+nmdc:sty-11-547rwq94	James T. Morton	jmorton@flatironinstitute.org	0000-0003-3189-2681	Methodology|Writing review and editing
+nmdc:sty-11-547rwq94	Smruthi Karthikeyan	skarthikeyan@health.ucsd.edu	0000-0001-6226-4536	Formal Analysis|Writing review and editing
+nmdc:sty-11-547rwq94	Mélissa Nothias-Esposito	mesposito@health.ucsd.edu	0000-0002-7221-6033	Data curation
+nmdc:sty-11-547rwq94	Kai Dührkop	kai.duehrkop@uni-jena.de	0000-0002-9056-0540	Methodology|Writing review and editing
+nmdc:sty-11-547rwq94	Sebastian Böcker	sebastian.boecker@uni-jena.de	0000-0002-9304-8091	Methodology|Writing review and editing
+nmdc:sty-11-547rwq94	Hyunwoo Kim	hwkim@ucsd.edu	0000-0003-2473-8360	Methodology|Validation|Writing review and editing
+nmdc:sty-11-547rwq94	Alexander A. Aksenov	aaksenov@uconn.edu	0000-0002-9445-2248	Methodology|Validation|Writing review and editing
+nmdc:sty-11-547rwq94	Wout Bittremieux	wbittremieux@health.ucsd.edu	0000-0002-3105-1359	Formal Analysis|Validation|Writing review and editing
+nmdc:sty-11-547rwq94	Jeremiah J. Minich	Jeremiah.minich@gmail.com	0000-0002-7202-965X	Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Clarisse Marotz	cmarotz@health.ucsd.edu	0000-0002-1520-8854	Data curation|Methodology|Validation
+nmdc:sty-11-547rwq94	MacKenzie M. Bryant	mmbryant@ucsd.edu	0000-0003-0749-2995	Data curation
+nmdc:sty-11-547rwq94	Karenina Sanders	kareninasanders@gmail.com	0000-0002-6793-5770	Data curation
+nmdc:sty-11-547rwq94	Tara Schwartz	taraschwartz86@gmail.com		Data curation
+nmdc:sty-11-547rwq94	Greg Humphrey	gchumphrey@health.ucsd.edu		Data curation|Methodology|Supervision|Writing review and editing
+nmdc:sty-11-547rwq94	Yoshiki Vasquez-Baeza	yoshiki@eng.ucsd.edu		Formal Analysis|Visualization
+nmdc:sty-11-547rwq94	Anupriya Tripathi	a3tripat@ucsd.edu		Formal Analysis|Visualization
+nmdc:sty-11-547rwq94	Laxmi Parida	parida@us.ibm.com	0000-0002-7872-5074	Formal Analysis|Methodology|Software|Visualization|Writing review and editing
+nmdc:sty-11-547rwq94	Anna Paola Carrieri	acarrieri@uk.ibm.com	0000-0003-2349-1896	Formal Analysis|Methodology|Software|Visualization|Writing review and editing
+nmdc:sty-11-547rwq94	Niina Haiminen	nshaimin@us.ibm.com	0000-0002-8663-1019	Formal Analysis|Methodology|Software|Visualization|Writing review and editing
+nmdc:sty-11-547rwq94	Kristen L.. Beck	klbeck@us.ibm.com	0000-0002-4603-0235	Formal Analysis|Methodology|Software|Visualization|Writing review and editing
+nmdc:sty-11-547rwq94	Promi Das	prdas@health.ucsd.edu	0000-0001-6733-2059	Formal Analysis|Writing original draft
+nmdc:sty-11-547rwq94	Antonio Gonzalez	antgonza@gmail.com		Data curation|Formal Analysis|Investigation|Software|Validation|Visualization|Writing review and editing
+nmdc:sty-11-547rwq94	Daniel McDonald	danielmcdonald@ucsd.edu	0000-0003-0876-9060	Formal Analysis|Investigation|Software|Validation|Visualization|Writing review and editing
+nmdc:sty-11-547rwq94	Søren Michael. Karst	sorenkarst@gmail.com		Data curation|Investigation|Methodology|Validation|Writing review and editing|Writing review and editing
+nmdc:sty-11-547rwq94	Mads Albertsen	ma@bio.aau.dk		Data curation|Investigation|Methodology|Validation|Writing review and editing|Writing review and editing
+nmdc:sty-11-547rwq94	Gail Ackermann	ackermag@ucsd.edu	0000-0002-3901-4931	Data curation|Validation|Writing review and editing
+nmdc:sty-11-547rwq94	Jeff DeReus	jdereus@health.ucsd.edu		Data curation|Validation
+nmdc:sty-11-547rwq94	Torsten Thomas	t.thomas@unsw.edu.au	0000-0001-9557-3001‬	Resources|Writing original draft|Writing review and editing
+nmdc:sty-11-547rwq94	Daniel Petras	functionalmetabolomics@gmail.com	0000-0002-6561-3022	Formal Analysis|Writing review and editing
+nmdc:sty-11-547rwq94	Ashley Shade	shadeash@msu.edu	0000-0002-7189-3067	Resources|Writing review and editing
+nmdc:sty-11-547rwq94	James Stegen	James.Stegen@pnnl.gov		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Se Jin Song	Sjsong@eng.ucsd.edu	0000-0003-0750-5709	Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Thomas O. Metz	thomas.metz@pnnl.gov	0000-0001-6049-3968	Data curation|Investigation|Methodology|Project administration|Supervision|Validation|Writing review and editing
+nmdc:sty-11-547rwq94	Austin D. Swafford	adswafford@ucsd.edu	0000-0001-5655-8300	Project administration|Resources|Supervision|Writing review and editing
+nmdc:sty-11-547rwq94	Pieter C. Dorrestein	pdorrestein@health.ucsd.edu		Project administration|Resources|Supervision|Writing review and editing
+nmdc:sty-11-547rwq94	Janet K. Jansson	janet.jansson@pnnl.gov		Conceptualization|Funding acquisition|Methodology|Project administration|Resources|Supervision|Writing review and editing
+nmdc:sty-11-547rwq94	Jack A. Gilbert	gilbertjack@gmail.com		Conceptualization|Funding acquisition|Methodology|Project administration|Resources|Supervision|Writing review and editing
+nmdc:sty-11-547rwq94	Rob Knight	robknight@ucsd.edu		Conceptualization|Funding acquisition|Methodology|Project administration|Resources|Supervision|Writing review and editing
+nmdc:sty-11-547rwq94	Lars T. Angenant	l.angenent@uni-tuebingen.de		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Alison M. Berry	amberry@ucdavis.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Leonora S. Bittleston	leobit@gmail.com		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Jennifer L. Bowen	je.bowen@northeastern.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Max Chavarría	max.chavarria@ucr.ac.cr		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Don A. Cowan	don.cowan@up.ac.za		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Dan Distel	d.distel@neu.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Peter R. Girguis	pgirguis@oeb.harvard.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Jaime Huerta-Cepas	huerta.jaime@inia.es		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Paul R. Jensen	pjensen@ucsd.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Lingjing Jiang	ljiang53@its.jnj.com		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Gary M. King	gking@lsu.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Anton Lavrinienko	anton.1.lavrinienko@jyu.fi		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Aurora MacRae-Crerar	aurorama@sas.upenn.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Thulani P. Makhalanyane	thulani.makhalanyane@up.ac.za		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Tapio Mappes	tapio.mappes@jyu.fi		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Ezequiel M. Marzinelli	e.marzinelli@sydney.edu.au		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Gregory Mayer	greg.mayer@ttu.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Katherine D. McMahon	trina.mcmahon@wisc.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Jessica L. Metcalf	jessicalmetcalf@gmail.com		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Sou Miyake	sou.miyake@kaust.edu.sa		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Timothy A. Mousseau	mousseau@sc.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Catalina Murillo-Cruz	catalina.murillocruz@ucr.ac.cr		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	David Myrold	david.myrold@oregonstate.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Brian Palenik	bpalenik@ucsd.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Adrián A. Pinto-Tomás	adrian.pinto@ucr.ac.cr		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Dorota L. Porazinska	dorotalp@ufl.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Jean-Baptiste Ramond	jbramond@bio.puc.cl		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Forest Rohwer	frohwer@gmail.com		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Taniya RoyChowdhury	roychowdhuryt.05@gmail.com		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Stuart A. Sandin	ssandin@ucsd.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Steven K. Schmidt	steve.schmidt@colorado.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Henning Seedorf	henning@tll.org.sg		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	J. Reuben. Shipway	reuben.shipway@plymouth.ac.uk		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Jennifer E. Smith	smithj@ucsd.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Frank J. Stewart	frank.stewart@montana.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Karen Tait	ktait@pml.ac.uk		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Yael Tucker	yael.tucker@netl.doe.gov		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Jana M. U'Ren	juren@email.arizona.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Phillip C. Watts	phillip.c.watts@jyu.fi		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Nicole S. Webster	Nicole.webster@aad.gov.au		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Jesse R. Zaneveld	zaneveld@uw.edu		Resources|Writing review and editing
+nmdc:sty-11-547rwq94	Shan Zhang	shan.zhang@student.unsw.edu.au		Resources|Writing review and editing
+nmdc:sty-11-5tgfr349	Stephen Good	stephen.good@oregonstate.edu		Principal Investigator
+nmdc:sty-11-5tgfr349	Kelly Wrighton	kwrighton@gmail.com	orcid:0000-0003-0434-4217	Principal Investigator
+nmdc:sty-11-5tgfr349	Matthew Sullivan	mbsulli@gmail.com		Principal Investigator
+nmdc:sty-11-5tgfr349	Edward Hall	ed.hall@colostate.edu		Principal Investigator
+nmdc:sty-11-5tgfr349	Christopher Henry	chenry@mcs.anl.gov		Principal Investigator
+nmdc:sty-11-5tgfr349	James Stegen	james.stegen@pnnl.gov		Principal Investigator
+nmdc:sty-11-5tgfr349	Robert Danczak	robert.danczak@pnnl.gov		Principal Investigator
+nmdc:sty-11-5tgfr349	Peter Raymond	peter.raymond@yale.edu		Principal Investigator
+nmdc:sty-11-5tgfr349	Jacob Hosen	jakehosen@gmail.com		Principal Investigator
+nmdc:sty-11-5tgfr349	Mikayla Borton	mborton@colostate.edu		Principal Investigator|Investigation
+nmdc:sty-11-5tgfr349	Annika Mosier	annika.mosier@gmail.com		Principal Investigator
+nmdc:sty-11-5tgfr349	Rebecca Daly	rebdaly@colostate.edu		Principal Investigator|Investigation
+nmdc:sty-11-5tgfr349	Jerome P. Payet	jpayet@ceoas.oregonstate.edu		Principal Investigator
+nmdc:sty-11-5tgfr349	Byron Crump	bcrump@coas.oregonstate.edu		Principal Investigator|Investigation
+nmdc:sty-11-5tgfr349	Michael Wilkins	mike.wilkins@colostate.edu		Principal Investigator
+nmdc:sty-11-8fb6t785	Kelly Wrighton	Kelly.Wrighton@colostate.edu	orcid:0000-0003-0434-4217	Principal Investigator|Conceptualization|Funding acquisition|Project administration|Supervision|Writing original draft|Writing review and editing
+nmdc:sty-11-8fb6t785	Rebecca Daly	Reb.Daly@colostate.edu	orcid:0000-0003-2223-7458	Formal Analysis|Investigation|Project administration|Writing original draft|Writing review and editing
+nmdc:sty-11-8fb6t785	Mikayla Borton	mikayla.borton@pnnl.gov	orcid:0000-0001-8037-4253	Formal Analysis|Investigation|Writing original draft|Writing review and editing
+nmdc:sty-11-8fb6t785	Michael Wilkins	Mike.Wilkins@colostate.edu	orcid:0000-0002-3595-0853	Funding acquisition|Writing review and editing
+nmdc:sty-11-8fb6t785	David Hoyt	David.Hoyt@pnnl.gov	orcid:0000-0002-2857-719X	Data curation|Resources|Writing review and editing
+nmdc:sty-11-8ws97026	Lauren Alteio		 https://orcid.org/0000-0002-9108-5083	Methodology|Writing original draft|Writing review and editing|Visualization|Formal Analysis
+nmdc:sty-11-8xdqsn54	Michael SanClements		orcid:0000-0002-1962-3561	Principal Investigator
+nmdc:sty-11-8xdqsn54	Margaret Bowman		orcid:0000-0001-8825-1098	Investigation
+nmdc:sty-11-abkzcd11	Trent Northen		orcid:0000-0001-8404-3259	Principal Investigator|Supervision|Conceptualization|Funding acquisition|Project administration
+nmdc:sty-11-abkzcd11	Adam Deutschbauer		orcid:0000-0003-2728-7622	Supervision|Conceptualization|Funding acquisition
+nmdc:sty-11-abkzcd11	N. Louise Glass		orcid:0000-0002-4844-2890	Conceptualization|Investigation
+nmdc:sty-11-abkzcd11	Rodolphe Barrangou		orcid:0000-0002-0648-3504	Conceptualization|Investigation
+nmdc:sty-11-abkzcd11	Anup Singh			Conceptualization|Investigation
+nmdc:sty-11-abkzcd11	Daniel Segrè		orcid:0000-0003-4859-1914	Conceptualization|Investigation
+nmdc:sty-11-abkzcd11	Astrid Terry		orcid:0000-0002-5234-1224	Project administration
+nmdc:sty-11-abkzcd11	Romy Chakraborty		orcid:0000-0001-9326-554X	Conceptualization|Investigation
+nmdc:sty-11-abkzcd11	Jenny Mortimer			Conceptualization|Investigation
+nmdc:sty-11-abkzcd11	Aindrila Mukhopdahyay		orcid:0000-0002-6513-7425	Conceptualization|Investigation
+nmdc:sty-11-abkzcd11	John Vogel		orcid:0000-0003-1786-2689	Conceptualization|Investigation
+nmdc:sty-11-abkzcd11	Kateryna Zhalnina		orcid:0000-0002-1893-1888	Conceptualization|Investigation
+nmdc:sty-11-abkzcd11	Jillian Banfield		orcid:0000-0001-8203-8771	Conceptualization|Investigation
+nmdc:sty-11-abkzcd11	Jennifer Doudna		orcid:0000-0001-9161-999X	Conceptualization|Investigation
+nmdc:sty-11-aygzgv51	James Stegen	James.Stegen@pnnl.gov	orcid:0000-0001-9135-7424	Principal Investigator|Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Project administration|Resources|Supervision|Validation|Writing review and editing
+nmdc:sty-11-aygzgv51	Malak Tfaily	tfaily@email.arizona.edu	orcid:0000-0002-3036-2833	Conceptualization|Data curation|Investigation|Methodology|Validation|Writing review and editing
+nmdc:sty-11-aygzgv51	Amy Goldman	amy.goldman@pnnl.gov	orcid:0000-0003-0490-6451	Investigation|Methodology|Writing review and editing
+nmdc:sty-11-aygzgv51	Lisa Bramer	Lisa.Bramer@pnnl.gov	orcid:0000-0002-8384-1926	Investigation|Methodology|Writing review and editing
+nmdc:sty-11-aygzgv51	C. Tom Resch	tom.resch@pnnl.gov	orcid:0000-0002-9143-6277	Investigation|Methodology|Writing review and editing
+nmdc:sty-11-aygzgv51	Emily Graham	emily.graham@pnnl.gov	orcid:0000-0002-4623-7076	Conceptualization|Data curation|Formal Analysis|Investigation|Methodology|Software|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-aygzgv51	Alex Crump	acrump@uidaho.edu	orcid:0000-0002-2443-6146	Data curation|Investigation|Methodology|Resources|Writing review and editing
+nmdc:sty-11-aygzgv51	David Kennedy			Data curation|Investigation|Methodology|Resources|Writing review and editing
+nmdc:sty-11-aygzgv51	Evan Amtzen	Evan.Arntzen@pnnl.gov	orcid:0000-0002-9209-5670	Investigation|Methodology|Resources|Writing review and editing
+nmdc:sty-11-aygzgv51	Sarah Fansler	Sarah.Fansler@pnnl.gov	orcid:0000-0003-4190-907X	Investigation|Methodology|Resources|Writing review and editing
+nmdc:sty-11-aygzgv51	Samuel Purvine	Samuel.Purvine@pnnl.gov	orcid:0000-0002-2257-2400	Data curation|Formal Analysis|Investigation|Methodology|Validation|Writing review and editing
+nmdc:sty-11-aygzgv51	Carrie Nicora	Carrie.Nicora@pnnl.gov	orcid:0000-0003-2461-9548	Investigation|Methodology|Writing review and editing
+nmdc:sty-11-aygzgv51	William Nelson	William.Nelson@pnnl.gov	orcid:0000-0002-1873-3929	Conceptualization|Formal Analysis|Funding acquisition|Investigation|Methodology|Writing review and editing
+nmdc:sty-11-cytnjc39	Paul J. Hanson		orcid:0000-0001-7293-3561	Principal Investigator|Supervision|Conceptualization|Funding acquisition|Project administration
+nmdc:sty-11-cytnjc39	Daniel M. Ricciuto		orcid:0000-0002-3668-3021	Principal Investigator|Supervision|Conceptualization|Funding acquisition|Project administration
+nmdc:sty-11-cytnjc39	Terri Velliquette		orcid:0000-0001-9855-5191	Conceptualization|Investigation
+nmdc:sty-11-cytnjc39	Melanie A. Mayes		orcid:0000-0001-6368-9210	Conceptualization|Investigation
+nmdc:sty-11-cytnjc39	Natalie A. Griffiths		orcid:0000-0003-0068-7714	Conceptualization|Investigation
+nmdc:sty-11-cytnjc39	Lianhong Gu		orcid:0000-0001-5756-8738	Conceptualization|Investigation
+nmdc:sty-11-cytnjc39	Jeffrey M. Warren		orcid:0000-0002-0680-4697	Conceptualization|Investigation
+nmdc:sty-11-cytnjc39	Verity G. Salmon		orcid:0000-0002-2188-551X	Conceptualization|Investigation
+nmdc:sty-11-cytnjc39	Xiaojuan Yang		orcid:0000-0002-2686-745X	Conceptualization|Investigation
+nmdc:sty-11-cytnjc39	Christopher W. Schadt		orcid:0000-0001-8759-2448	Conceptualization|Investigation
+nmdc:sty-11-cytnjc39	Anthony P. Walker		orcid:0000-0003-0557-5594	Conceptualization|Investigation
+nmdc:sty-11-db67n062	Rebecca Lybrand		orcid:0000-0001-7811-9093	Conceptualization|Funding acquisition|Investigation|Methodology|Project administration|Supervision|Resources|Visualization|Writing review and editing|Principal Investigator
+nmdc:sty-11-db67n062	Erin C. Rooney		orcid:0000-0002-9121-7699	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Project administration|Software|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-db67n062	Maria Dragila			Conceptualization|Investigation|Methodology|Writing review and editing
+nmdc:sty-11-db67n062	Jeff Hatten		orcid:0000-0002-1685-6351	Funding acquisition|Data curation|Investigation|Methodology|Resources|Writing review and editing
+nmdc:sty-11-db67n062	Michael SanClements		orcid:0000-0002-1962-3561	Resources|Data curation|Investigation|Methodology|Writing review and editing
+nmdc:sty-11-db67n062	Adrian Gallo		orcid:0000-0001-7913-9280	Data curation|Investigation|Methodology|Writing review and editing
+nmdc:sty-11-db67n062	Angela Possinger		orcid:0000-0003-2518-0979	Conceptualization|Data curation|Investigation|Methodology|Software|Validation|Visualization|Writing review and editing
+nmdc:sty-11-db67n062	Holly Golightly		orcid:0000-0002-2120-9896	Formal Analysis|Writing review and editing
+nmdc:sty-11-db67n062	Alexander Kholodov		orcid:0000-0002-7878-8008	Conceptualization|Resources|Investigation|Writing review and editing
+nmdc:sty-11-db67n062	Maya Bergmann		orcid:0000-0001-6916-5135	Formal Analysis|Writing review and editing
+nmdc:sty-11-db67n062	Vanessa L. Bailey		orcid:0000-0002-2248-8890	Conceptualization|Funding acquisition|Investigation|Methodology|Project administration|Resources|Validation|Visualization|Writing review and editing
+nmdc:sty-11-db67n062	Odeta Qafoku		orcid:0000-0002-4946-8988	Conceptualization|Funding acquisition|Investigation|Formal Analysis|Methodology|Resources|Writing review and editing
+nmdc:sty-11-db67n062	Tamas Varga		orcid:0000-0002-5492-866X	Conceptualization|Visualization|Investigation|Methodology|Formal Analysis|Resources|Writing review and editing
+nmdc:sty-11-db67n062	Anil K. Battu		orcid:0000-0001-7724-5100	Visualization|Investigation|Methodology|Formal Analysis|Writing review and editing
+nmdc:sty-11-db67n062	Alexander C. Buchko		orcid:0000-0003-0383-0547	Visualization|Investigation|Methodology|Validation|Formal Analysis|Writing review and editing
+nmdc:sty-11-db67n062	Loren R. Reno		orcid:0000-0002-2043-5111	Visualization|Investigation|Methodology|Formal Analysis|Writing review and editing
+nmdc:sty-11-db67n062	Kaizad F Patel		orcid:0000-0001-6437-7809	Data curation|Formal Analysis|Investigation|Methodology|Resources|Software|Validation|Visualization|Writing review and editing
+nmdc:sty-11-dcqce727	Harry Beller	hrbeller@lbl.gov	orcid:0000-0001-9637-3650	Investigation|Funding acquisition|Writing review and editing
+nmdc:sty-11-dcqce727	Shi Wang	ShiWang@lbl.gov	orcid:0000-0002-2408-2544	Investigation|Writing review and editing
+nmdc:sty-11-dcqce727	Eoin Brodie	elbrodie@lbl.gov	orcid:0000-0002-8453-8435	Principal Investigator|Conceptualization|Investigation|Supervision|Funding acquisition|Writing original draft
+nmdc:sty-11-dcqce727	Rosalie Chu	Rosalie.Chu@pnnl.gov	orcid:0000-0001-7428-7647	Investigation|Formal Analysis|Writing review and editing
+nmdc:sty-11-dcqce727	Emiley Eloe-Fadrosh	eaeloefadrosh@lbl.gov	orcid:0000-0002-8162-1276	Project administration|Investigation|Writing review and editing
+nmdc:sty-11-dcqce727	David Hoyt	david.hoyt@pnnl.gov	orcid:0000-0002-2857-719X	Investigation|Formal Analysis|Writing review and editing
+nmdc:sty-11-dcqce727	Ulas Karaoz	ukaraoz@lbl.gov	orcid:0000-0002-8238-6757	Formal Analysis|Funding acquisition|Methodology|Writing review and editing
+nmdc:sty-11-dcqce727	Patrick Sorensen	posorensen@lbl.gov	orcid:0000-0002-0558-2789	Formal Analysis|Funding acquisition|Writing original draft
+nmdc:sty-11-dcqce727	Tijana Glavina del Rio	tglavina@lbl.gov	orcid:0000-0003-1411-9814	Project administration
+nmdc:sty-11-dcqce727	Malak Tfaily	tfaily@arizona.edu	orcid:0000-0002-3036-2833	Investigation|Formal Analysis|Writing review and editing
+nmdc:sty-11-e4yb9z58	Adina Howe		0000-0002-7705-343X	Writing review and editing|Visualization|Writing original draft|Investigation|Formal Analysis|Data curation|Conceptualization|Validation|Supervision|Project administration|Methodology|Resources|Software|Principal Investigator|Funding acquisition
+nmdc:sty-11-ev70y104	Vlastimil Novak	vnovak@lbl.gov	0000-0001-7890-4593	Conceptualization|Data curation|Formal Analysis|Investigation|Methodology|Validation|Writing original draft|Writing review and editing|Submitter
+nmdc:sty-11-ev70y104	Dor Russ	dorruss@email.unc.edu	0000-0003-4372-7958	Methodology|Writing review and editing
+nmdc:sty-11-ev70y104	Romy Chakraborty	RChakraborty@lbl.gov	0000-0001-9326-554X	Investigation|Formal Analysis|Visualization|Writing review and editing
+nmdc:sty-11-ev70y104	Peter F. Andeer	pfandeer@lbl.gov	0000-0002-3554-2008	Conceptualization|Formal Analysis|Investigation|Methodology|Writing original draft|Writing review and editing
+nmdc:sty-11-ev70y104	Eoghan King	eoghan.king.pro@gmail.com	0000-0001-9495-8858	Conceptualization|Formal Analysis|Investigation|Methodology|Writing review and editing
+nmdc:sty-11-ev70y104	Jacob Calabria	calabria.j@unimelb.edu.au	0009-0003-8735-2470	Investigation|Writing review and editing
+nmdc:sty-11-ev70y104	Connor Fitzpatrick	crfitz@email.unc.edu0000-0003-4720-1806	0000-0002-7100-9542	Investigation|Writing review and editing
+nmdc:sty-11-ev70y104	Jana M Kelm	j.kelm@fz-juelich.de	0000-0003-4720-1806	Investigation|Writing review and editing
+nmdc:sty-11-ev70y104	Kathrin Wippel	k.wippel@uva.nl	0000-0001-5901-3381	Investigation|Writing review and editing
+nmdc:sty-11-ev70y104	Suzanne Kosina	smkosina@lbl.gov	0000-0003-2885-1248	Investigation|Methodology|Validation|Writing review and editing
+nmdc:sty-11-ev70y104	Chris Daum	cgdaum@lbl.gov	0000-0003-3895-5892	Investigation|Writing review and editing
+nmdc:sty-11-ev70y104	Matt Zane	cgdaum@lbl.gov		Investigation|Writing review and editing
+nmdc:sty-11-ev70y104	Archana Yadav	archana.yadav@lbl.gov		Formal Analysis|Visualization|Writing review and editing
+nmdc:sty-11-ev70y104	Mingfei Chen	mingfeichen@lbl.gov	0000-0002-6281-2480	Investigation|Writing review and editing
+nmdc:sty-11-ev70y104	Catharine A. Adams	catadams@berkeley.edu	0000-0002-0914-0806	Resources|Writing review and editing
+nmdc:sty-11-ev70y104	Trenton Owens	trentonko@gmail.com	0000-0002-0574-9614	Investigation|Writing original draft
+nmdc:sty-11-ev70y104	Bradie Lee	BradieLee@lbl.gov		Investigation|Writing review and editing
+nmdc:sty-11-ev70y104	Yezhang Ding	yezhangding@lbl.gov	0000-0001-5903-1870	Investigation|Writing review and editing
+nmdc:sty-11-ev70y104	Zineb Sordo	zsordo@lbl.gov	0009-0008-3528-5874	Formal Analysis|Writing review and editing
+nmdc:sty-11-ev70y104	Simon Roux	sroux@lbl.gov	0000-0002-5831-5895	Formal Analysis|Writing review and editing
+nmdc:sty-11-ev70y104	Adam Deutschbauer	amdeutschbauer@lbl.gov	0000-0003-2728-7622	Writing review and editing|Formal Analysis
+nmdc:sty-11-ev70y104	Daniela Ushizima	dushizima@lbl.gov	0000-0002-7363-9468	Formal Analysis|Writing review and editing
+nmdc:sty-11-ev70y104	Karsten Zengler	kzengler@ucsd.edu	0000-0002-8062-3296	Conceptualization|Methodology|Writing review and editing
+nmdc:sty-11-ev70y104	Borjana Arsova	b.arsova@fz-juelich.de	0000-0002-0566-2009	Supervision|Writing review and editing
+nmdc:sty-11-ev70y104	Jeffery Dangl	dangl@email.unc.edu	0000-0003-3199-8654	Supervision|Writing review and editing
+nmdc:sty-11-ev70y104	Paul Schulze-Lefert	schlef@mpipz.mpg.de	0000-0002-8978-1717	Supervision|Writing review and editing
+nmdc:sty-11-ev70y104	Michelle Watt	watt.m@unimelb.edu.au	0000-0001-7843-0957	Supervision|Writing review and editing
+nmdc:sty-11-ev70y104	John Vogel	jpvogel@lbl.gov	0000-0003-1786-2689	Conceptualization|Funding acquisition|Investigation|Methodology|Project administration|Resources|Supervision|Writing review and editing
+nmdc:sty-11-ev70y104	Trent Northen	trnorthen@lbl.gov	0000-0001-8404-3259	Conceptualization|Funding acquisition|Methodology|Project administration|Resources|Supervision|Writing original draft|Writing review and editing|Principal Investigator
+nmdc:sty-11-f1he1955	Mitch Doktycz		orcid:0000-0003-4856-8343	Principal Investigator|Supervision|Conceptualization|Funding acquisition|Project administration
+nmdc:sty-11-f1he1955	Dale Pelletier		orcid:0000-0002-4321-7918	Conceptualization|Investigation|Supervision|Project administration
+nmdc:sty-11-f1he1955	Kuntal De			Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Omar Demerdash		orcid:0000-0001-6846-1506	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Nancy Engle		orcid:0000-0003-0290-7987	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	E. Peter Greenberg			Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Caroline Harwood			Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Robert Hettich		orcid:0000-0001-7708-786X	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Dan Jacobson		orcid:0000-0002-9822-8251	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Sara Jawdy		orcid:0000-0002-8123-5439	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Udaya Kalluri		orcid:0000-0002-5963-8370	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Timothy Tschaplinski		orcid:0000-0002-9540-6622	Conceptualization|Investigation|Supervision|Project administration
+nmdc:sty-11-f1he1955	Mac McLennan			Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Jennifer Morrell-Falvey		orcid:0000-0002-9362-7528	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Mircea Podar		orcid:0000-0003-2776-0205	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Priya Ranjan			Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Scott Retterer		orcid:0000-0001-8534-1979	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Brian Sanders			Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Christopher Schadt		orcid:0000-0001-8759-2448	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Amy Schaefer			Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Claire Veneault-Fourrey			Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Amy Kelley			Conceptualization|Investigation|Supervision|Project administration
+nmdc:sty-11-f1he1955	Rytas Vilgalys			Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Amber Webb			Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Xiaohan Yang		orcid:0000-0001-5207-4210	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Tao Yao			Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Larry York			Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Dave Weston			Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Erica Teixeira Prates			Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Tomás Rush			Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Wellington Muchero		orcid:0000-0002-0200-9856	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Paul E. Abraham		orcid:0000-0003-2685-9123	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Stanton Martin		orcid:0000-0001-9246-8193	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	JunHyung (Jun) Lee			Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Jack Cahill		orcid:0000-0002-9866-4010	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	John Lagergren		orcid:0000-0002-8092-7433	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Leah Burdick			Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Alyssa Carrell		orcid:0000-0003-1142-4709	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Jay Chen		orcid:0000-0002-1752-4201	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Hari Chhetri		orcid:0000-0001-6820-8789	Conceptualization|Investigation
+nmdc:sty-11-f1he1955	Melissa Cregger		orcid:0000-0001-8329-366X	Conceptualization|Investigation
+nmdc:sty-11-hdd4bf83	Andrew Tritt		0000-0002-1617-449X	Data curation
+nmdc:sty-11-hdd4bf83	Connor Tiffany		0000-0001-8188-7720	Formal Analysis
+nmdc:sty-11-hdd4bf83	Hannah Pritkin Savage		"	0000-0002-1057-7239"	Investigation|Formal Analysis
+nmdc:sty-11-hdd4bf83	Krystle Lynn Reagan		0000-0003-3426-6352	Investigation
+nmdc:sty-11-hht5sb92	Hugh Cross	crossh@battelleecology.org	orcid:0000-0002-6745-9479	Methodology|Data curation
+nmdc:sty-11-hht5sb92	Kate Thibault	kthibault@battelleecology.org	orcid:0000-0003-3477-6424	Principal Investigator
+nmdc:sty-11-hht5sb92	Stephanie Parker	sparker@battelleecology.org	0000-0002-7180-7245	Methodology|Data curation
+nmdc:sty-11-msexsy29	Jennifer Pett-Ridge		orcid:0000-0002-4439-2398	Principal Investigator|Supervision|Conceptualization|Funding acquisition|Project administration
+nmdc:sty-11-msexsy29	Steven Blazewicz		orcid:0000-0001-7517-1750	Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Stephanie Malfatti		orcid:0000-0003-4225-9857	Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Mary K. Firestone			Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Jill Banfield		orcid:0000-0001-8203-8771	Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Rohan Sachdeva			Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Bruce Hungate		orcid:0000-0002-7337-1887	Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Paul Dijkstra			Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Christina Schaedel			Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Eoin Brodie		orcid:0000-0002-8453-8435	Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Jinyun Tang			Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Matthew Sullivan			Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Mavrik Zavarin		orcid:0000-0002-2426-6706	Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Peter S. Nico			Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Ljiljana Pasa-Tolic			Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Egbert Schwartz			Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Karis Mcfarlane		orcid:0000-0001-6390-7863	Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Peter Weber			Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Yongqin Jiao		orcid:0000-0002-6798-5823	Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Rhona Stuart		orcid:0000-0001-5916-9693	Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Erin Nuccio		orcid:0000-0003-0189-183X	Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Jeffrey Kimbrel		orcid:0000-0001-7213-9392	Conceptualization|Investigation
+nmdc:sty-11-msexsy29	Keith Morrison		orcid:0000-0001-9927-2636	Conceptualization|Investigation
+nmdc:sty-11-nxrz9m96	Hugh Cross	crossh@battelleecology.org	orcid:0000-0002-6745-9479	Methodology|Data curation
+nmdc:sty-11-nxrz9m96	Samantha Weintraub-Leff	sweintraub@battelleecology.org	orcid:0000-0003-4789-5086	Methodology|Data curation
+nmdc:sty-11-nxrz9m96	Kate Thibault	kthibault@battelleecology.org	orcid:0000-0003-3477-6424	Principal Investigator
+nmdc:sty-11-nxrz9m96	Stephanie Parker	sparker@battelleecology.org	0000-0002-7180-7245	Methodology|Data curation
+nmdc:sty-11-pzmd0x14	Hugh Cross	crossh@battelleecology.org	orcid:0000-0002-6745-9479	Methodology|Data curation
+nmdc:sty-11-pzmd0x14	Kate Thibault	kthibault@battelleecology.org	orcid:0000-0003-3477-6424	Principal Investigator
+nmdc:sty-11-pzmd0x14	Stephanie Parker	sparker@battelleecology.org	0000-0002-7180-7245	Methodology|Data curation
+nmdc:sty-11-r2h77870	Mitchel J. Doktycz	doktyczmj@ornl.gov	orcid:0000-0003-4856-8343	Principal Investigator|Conceptualization
+nmdc:sty-11-r2h77870	Joseph C. Ellis	ellisjc@ornl.gov	orcid:0000-0002-2510-977X	Formal Analysis
+nmdc:sty-11-r2h77870	Daniel Jacobson	jacobsonda@ornl.gov	orcid:0000-0002-9822-8251	Conceptualization|Formal Analysis|Funding acquisition|Investigation|Methodology|Supervision|Writing original draft|Writing review and editing
+nmdc:sty-11-r2h77870	Stanton Martin	martins@ornl.gov	orcid:0000-0001-9246-8193	Conceptualization|Data curation|Software|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-r2h77870	Melanie Mayes	mayesma@ornl.gov	orcid:0000-0001-6368-9210	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-r2h77870	Julie Mitchell	mitchelljc@ornl.gov	orcid:0000-0002-5031-7343	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-r2h77870	Wellington Muchero	mucherow@ornl.gov	orcid:0000-0002-0200-9856	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-r2h77870	Christopher Schadt	schadtcw@ornl.gov	orcid:0000-0001-8759-2448	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-r2h77870	David Weston	westondj@ornl.gov	orcid:0000-0002-4794-9913	Conceptualization|Data curation|Formal Analysis|Funding acquisition|Investigation|Methodology|Supervision|Validation|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-x4aawf73	Timothy Scheibe		orcid:0000-0002-8864-5772	Principal Investigator|Supervision|Conceptualization|Funding acquisition|Project administration
+nmdc:sty-11-x4aawf73	Xingyuan Chen			Principal Investigator|Supervision|Conceptualization|Funding acquisition|Project administration
+nmdc:sty-11-x4aawf73	James C. Stegen		orcid:0000-0001-9135-7424	Principal Investigator|Supervision|Conceptualization|Funding acquisition|Project administration
+nmdc:sty-11-x4aawf73	Gautam Bisht		orcid:0000-0001-6641-7595	Conceptualization|Investigation
+nmdc:sty-11-x4aawf73	Yilin Fang		orcid:0000-0003-1969-9889	Conceptualization|Investigation
+nmdc:sty-11-x4aawf73	Amy Goldman		orcid:0000-0003-0490-6451	Conceptualization|Investigation
+nmdc:sty-11-x4aawf73	Jason Hou			Conceptualization|Investigation
+nmdc:sty-11-x4aawf73	Allison Myers-Pigg			Conceptualization|Investigation
+nmdc:sty-11-x4aawf73	Kyongho Son		orcid:0000-0003-0288-6522	Conceptualization|Investigation
+nmdc:sty-11-x4aawf73	Jianqiu Zheng		orcid:0000-0002-1609-9004	Conceptualization|Investigation
+nmdc:sty-11-xcbexm97	Amy Goldman		orcid:0000-0003-0490-6451	Principal Investigator|Supervision|Conceptualization|Funding acquisition|Project administration|Data curation|Writing review and editing
+nmdc:sty-11-xcbexm97	James C. Stegen		orcid:0000-0001-9135-7424	Principal Investigator|Supervision|Conceptualization|Funding acquisition|Project administration|Writing review and editing
+nmdc:sty-11-xcbexm97	Lupita Renteria			Investigation|Methodology|Data curation
+nmdc:sty-11-xcbexm97	Josué Rodríquez-Ramos			Investigation|Data curation|Formal Analysis|Visualization|Writing original draft|Writing review and editing|Software
+nmdc:sty-11-xcbexm97	Timothy Scheibe	orcid:0000-0002-8864-5772		Conceptualization|Funding acquisition|Project administration|Supervision|Writing review and editing
+nmdc:sty-11-xcbexm97	Dillman Delgado		0000-0001-6652-6775	Investigation|Methodology|Data curation|Formal Analysis|Visualization
+nmdc:sty-11-xcbexm97	Brieanne Forbes		0000-0001-9240-9687	Data curation|Formal Analysis|Visualization|Project administration
+nmdc:sty-11-xcbexm97	Vanessa Garayburu-Caruso			Supervision|Conceptualization|Methodology|Data curation|Formal Analysis|Visualization|Validation|Writing original draft|Writing review and editing
+nmdc:sty-11-xcbexm97	Maggi Laan		0000-0002-0256-3822	Investigation|Methodology|Data curation|Formal Analysis|Visualization
+nmdc:sty-11-xcbexm97	Sophia McKever		0000-0003-2870-7713	Investigation|Methodology|Data curation
+nmdc:sty-11-xcbexm97	Allison Myers-Pigg		0000-0002-6905-6841	Conceptualization|Funding acquisition
+nmdc:sty-11-xcbexm97	Kelly Wrighton	kwrighton@gmail.com	orcid:0000-0003-0434-4217	Conceptualization|Funding acquisition|Project administration|Supervision|Writing review and editing|Software
+nmdc:sty-11-xcbexm97	Kayla Borton			Conceptualization|Investigation|Methodology|Data curation|Formal Analysis|Visualization|Writing original draft|Writing review and editing|Funding acquisition|Software
+nmdc:sty-11-xcbexm97	Xingyuan Chen			Conceptualization|Funding acquisition
+nmdc:sty-11-xcbexm97	Rosey Chu	rosalie.chu@pnnl.gov	orcid:0000-0001-7428-7647	Investigation|Methodology|Data curation
+nmdc:sty-11-xcbexm97	Bob Danczak			Conceptualization|Methodology|Investigation|Formal Analysis|Visualization|Writing original draft|Writing review and editing
+nmdc:sty-11-zs2syx06	Spencer Diamond		orcid:0000-0003-4131-341X	Conceptualization|Formal Analysis|Writing original draft|Methodology|Data curation
+nmdc:sty-11-zs2syx06	Karthik Anantharaman		orcid:0000-0002-9584-2491	Data curation|Methodology|Writing review and editing
+nmdc:sty-11-zs2syx06	Peter F. Andeer			Conceptualization|Data curation|Formal Analysis|Writing original draft|Methodology
+nmdc:sty-11-zs2syx06	Zhou Li			Data curation|Formal Analysis|Writing review and editing
+nmdc:sty-11-zs2syx06	Alexander Crits-Christoph			Data curation|Formal Analysis|Methodology|Software|Visualization|Writing original draft
+nmdc:sty-11-zs2syx06	David Burstein			Conceptualization|Data curation|Writing review and editing
+nmdc:sty-11-zs2syx06	Katherine R. Lane			Resources|Data curation
+nmdc:sty-11-zs2syx06	Brian C. Thomas			Data curation|Formal Analysis|Conceptualization|Methodology|Software
+nmdc:sty-11-zs2syx06	Chongle Pan		orcid:0000-0003-2860-0334	Formal Analysis|Funding acquisition|Principal Investigator|Writing review and editing|Supervision|Project administration
+nmdc:sty-11-zs2syx06	Trent R. Northen		orcid:0000-0001-8404-3259	Conceptualization|Funding acquisition|Project administration|Supervision|Principal Investigator|Writing review and editing

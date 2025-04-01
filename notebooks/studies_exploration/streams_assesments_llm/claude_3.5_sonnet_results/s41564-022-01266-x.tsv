@@ -1,0 +1,68 @@
+Number	Item	Present in the manuscript? Yes/No/NA	Comments or location in manuscript.1
+1.0	Structured or unstructured abstract	Yes	The paper has an unstructured abstract that includes background, methods, results, and significance on p.2128
+1.1	Study design	Yes	Abstract states study design - multi-omics analysis using standardized protocols across 880 samples
+1.2	Environmental & sample information	Yes	Abstract describes environmental systems (e.g., soil, marine, freshwater) and sample types studied
+1.3	Host information	Yes	Abstract mentions various hosts (e.g., plants, animals) and number of samples (880)
+1.4	Experiments & omics methods	Yes	Abstract describes experimental strategies including amplicon sequencing, metagenomics, and metabolomics approaches
+1.5	Analyses & results	Yes	Abstract includes key analyses (e.g., metabolite diversity, turnover patterns) and significant findings
+2.0	Background & rationale	Yes	Introduction (p.2128-2129) provides comprehensive background and motivation for the study
+2.1	Hypotheses or questions	Yes	States research questions and hypotheses about metabolite distribution patterns on p.2130-2131
+3.0	Study design	Yes	Methods section describes observational study design spanning multiple environments and sample types
+3.1	Samples	Yes	Sample collection and types described in Methods p.2137-2138
+3.2	Environmental context & geographic location	Yes	Geographic locations provided in Fig 1b and detailed in Methods/Supplementary materials
+3.3	Relevant dates	Yes	Sample collection dates noted in Methods section
+3.4	Host(s)	Yes	Host information detailed in Methods and Supplementary Table 1
+3.5	Ethics	Yes	Ethics/permit information provided in Methods p.2144-2145
+3.6	Environmental conditions & experimental treatments	Yes	Environmental conditions described in Methods and Supplementary materials
+3.7	Sample collection	Yes	Detailed sample collection protocols in Methods p.2137-2138
+3.8	Eligibility/selection criteria	Yes	Sample selection criteria described in Methods p.2137
+3.9	Analytic sample size	Yes	Final sample sizes reported throughout Results and in figures
+4.0	Storage & preservation	Yes	Sample storage protocols described in Methods p.2137-2138
+4.1	Shipping	Yes	Sample shipping details provided in Methods
+4.2	Extraction methods	Yes	Detailed extraction protocols in Methods p.2139-2140
+4.3	Experiments & sample processing	Yes	Processing methods detailed in Methods p.2139-2142
+4.4	Library preparation	Yes	Sequencing library preparation protocols in Methods p.2140-2141
+4.5	Depletion, enrichment, & multiplexing	Yes	Library preparation details including multiplexing in Methods p.2140-2141
+4.6	Primer selection	Yes	Primer sequences and selection criteria detailed in Methods p.2140
+5.0	Positive controls	Yes	Control samples described in Methods p.2139
+5.1	Negative controls	Yes	Negative controls described in Methods p.2139
+6.0	Quantification & quality assessments	Yes	Quality control procedures detailed in Methods p.2141-2142
+6.1	Contaminant mitigation & identification	Yes	Contamination control procedures described in Methods
+6.2	Replication	Yes	Replication strategy described in Methods and Results
+6.3	Sequencing methods	Yes	Detailed sequencing protocols in Methods p.2140-2142
+6.4	Metabolomics, metaproteomics, & other omics methods	Yes	Comprehensive metabolomics methods described p.2137-2139
+6.5	Contextual & linked datasets	Yes	Linked datasets described and referenced throughout manuscript
+6.6	Batch effects	Yes	Batch effects addressed in Methods and study design
+7.0	Bioinformatics analyses	Yes	Detailed bioinformatics protocols in Methods p.2141-2143
+7.1	Quality control	Yes	Quality control procedures detailed in Methods
+7.2	Normalization	Yes	Data normalization procedures described in Methods
+7.3	Database information	Yes	All databases described and cited in Methods
+7.4	Statistical methods	Yes	Comprehensive statistical methods described p.2142-2143
+7.5	Missing data	Yes	Handling of missing data addressed in Methods
+7.6	Bias & confounding variables	Yes	Potential biases discussed in Methods and Discussion
+7.7	Subgroup analysis	Yes	Subgroup analyses described in Results
+7.8	Sensitivity analyses	Yes	Sensitivity analyses mentioned in Results and Methods
+7.9	Criteria for significance	Yes	Significance criteria defined in Methods p.2142-2143
+8.0	Metadata access	Yes	Metadata access information provided in Data Availability section
+8.1	Host data access	Yes	Host data access information provided in Data Availability section
+8.2	Raw data access	Yes	Raw data access detailed in Data Availability section
+8.3	Processed data access	Yes	Processed data access detailed in Data Availability section
+8.4	Software & source code access	Yes	Code availability detailed in Methods and Data Availability sections
+8.5	Reproducible research	Yes	Reproducibility addressed throughout Methods section
+9.0	Descriptive data	Yes	Sample characteristics summarized in Results and figures
+10.0	Microbiome sequencing data	Yes	Sequencing results presented throughout Results section
+10.1	Metabolomics, proteomics, & other omics data	Yes	Metabolomics results presented throughout Results section
+10.2	Statistical analyses	Yes	Statistical analysis results presented throughout Results
+10.3	Figures, tables, & captions	Yes	Comprehensive figures and tables with detailed captions
+11.0	Key results	Yes	Key findings summarized in Results and Discussion
+11.1	Interpretation	Yes	Results interpreted in Discussion section
+11.2	Limitations	Yes	Study limitations discussed in Discussion p.2136
+11.3	Generalizability	Yes	Generalizability discussed in Discussion
+12.0	Ongoing & future work	Yes	Future directions discussed in Discussion
+13.0	Conclusions	Yes	Clear conclusions presented at end of Discussion
+14.0	Acknowledgements	Yes	Comprehensive acknowledgements section p.2148-2149
+14.1	Funding	Yes	Funding information provided p.2148-2149
+15.0	Conflicts of interest	Yes	Conflicts of interest stated p.2149
+16.0	Supplementary data & files	Yes	Supplementary materials referenced throughout
+17.0	Sample & data availability	Yes	Detailed data availability statement provided
+18.0	AI usage	NA	No mention of AI usage in research methods

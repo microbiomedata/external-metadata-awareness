@@ -1,0 +1,68 @@
+Number	Item	Present in the manuscript? Yes/No/NA	Comments or location in manuscript.1
+1.0	Structured or unstructured abstract	Yes	Unstructured abstract present on pg 15783 containing background, methods, results, and conclusions
+1.1	Study design	Yes	Study design described in abstract: "large-scale survey of potential INP sources in tundra terrain"
+1.2	Environmental & sample information	Yes	Abstract describes specific environmental system (thermokarst regions, tundra terrain) and sample types (permafrost, active layer, ice wedge, vegetation, water, aerosol)
+1.3	Host information (if applicable)	NA	Study did not involve host organisms
+1.4	Experiments & omics methods	Yes	Abstract describes sample collection and INP analyses performed
+1.5	Analyses & results	Yes	Abstract summarizes key analyses and results, including INP concentrations and heat sensitivity tests
+2.0	Background & rationale	Yes	Introduction (pg 15783-15784) provides detailed background on thermokarst processes, INPs, and Arctic climate
+2.1	Hypotheses or questions	Yes	Research objectives stated on pg 15784: to survey "previously uncharacterized potential sources of airborne terrestrial-based Arctic INPs"
+3.0	Study design	Yes	Detailed in Methods section 2.1 (pg 15784). Observational study with field sampling conducted Sept 1-17, 2021
+3.1	Samples	Yes	Sample types and collection methods described in detail in Methods sections 2.1-2.2
+3.2	Environmental context & geographic location	Yes	Study conducted near Utqiagvik, Alaska with specific coordinates provided in Table 1
+3.3	Relevant dates	Yes	Sampling dates specified (Sept 1-17, 2021) with pre-campaign measurements Aug 22-24
+3.4	Host(s) (if applicable)	NA	Study did not involve host organisms
+3.5	Ethics	No	No mention of permits or ethical approvals
+3.6	Environmental conditions & experimental treatments	Yes	Environmental conditions described including wind speeds, temperatures, and weather conditions
+3.7	Sample collection	Yes	Detailed methods for collecting each sample type provided in Methods section 2.1
+3.8	Eligibility/selection criteria	Yes	Site selection criteria described on pg 15784: "Sites were chosen based on accessibility with all-terrain vehicles (ATVs) as well as to maximize areal coverage and diversity of terrain and weather conditions"
+3.9	Analytic sample size	Yes	Sample numbers provided throughout results and in Table 1
+4.0	Storage & preservation	Yes	Sample storage and preservation methods described on pg 15786
+4.1	Shipping	No	No information provided about sample transport
+4.2	Extraction methods	Yes	Methods for extracting and processing samples described in section 2.2
+4.3	Experiments & sample processing	Yes	Sample processing methods detailed in section 2.2
+4.4	Library preparation	NA	Study did not involve sequencing libraries
+4.5	Depletion, enrichment, & multiplexing	NA	Study did not involve nucleic acid work
+4.6	Primer selection	NA	Study did not involve PCR or primers
+5.0	Positive controls	No	No mention of positive controls
+5.1	Negative controls	Yes	Blank controls described for aerosol samples on pg 15786
+6.0	Quantification & quality assessments	Yes	Quality control measures described including confidence intervals and corrections
+6.1	Contaminant mitigation & identification	Yes	Methods to control for contamination described including filter cleaning and blanks
+6.2	Replication	Yes	Multiple samples collected at each site and replication described throughout methods
+6.3	Sequencing methods	NA	Study did not involve sequencing
+6.4	Metabolomics, metaproteomics, & other omics methods	NA	Study did not involve omics methods
+6.5	Contextual & linked datasets	No	No mention of linked datasets
+6.6	Batch effects	No	Batch effects not discussed
+7.0	Bioinformatics analyses	Yes	Statistical analyses and PCA described in Methods
+7.1	Quality control	Yes	Quality control measures described including blank corrections and confidence intervals
+7.2	Normalization	Yes	Data normalization methods described for freezing point depression corrections
+7.3	Database information	NA	Study did not use databases
+7.4	Statistical methods	Yes	Statistical methods including PCA and confidence intervals described
+7.5	Missing data	No	Handling of missing data not discussed
+7.6	Bias & confounding variables	Yes	Potential biases discussed including wind effects and sampling limitations
+7.7	Subgroup analysis	Yes	Subgroup analyses performed for different sample types and locations
+7.8	Sensitivity analyses	Yes	Heat sensitivity analyses performed and described
+7.9	Criteria for significance	Yes	95% confidence intervals used and described
+8.0	Metadata access	Yes	Data availability statement provided
+8.1	Host data access (if applicable)	NA	Study did not involve host organisms
+8.2	Raw data access	Yes	Data availability statement indicates data are available at DOI provided
+8.3	Processed data access	Yes	Data availability statement indicates processed data are available
+8.4	Software & source code access	No	No code availability statement
+8.5	Reproducible research	No	No explicit statement about reproducibility
+9.0	Descriptive data	Yes	Sample characteristics summarized in results and Table 1
+10.0	Microbiome sequencing data	NA	Study did not involve microbiome sequencing
+10.1	Metabolomics, proteomics, & other omics data	NA	Study did not involve omics data
+10.2	Statistical analyses	Yes	Statistical analysis results presented throughout Results section
+10.3	Figures, tables, & captions	Yes	Multiple clear figures and tables with detailed captions provided
+11.0	Key results	Yes	Key findings summarized in Discussion and Conclusions
+11.1	Interpretation	Yes	Results interpreted in context of objectives and previous work
+11.2	Limitations	Yes	Study limitations discussed
+11.3	Generalizability	Yes	Generalizability of findings discussed in relation to other Arctic regions
+12.0	Ongoing & future work	Yes	Future research directions discussed in Conclusions
+13.0	Conclusions	Yes	Clear conclusions provided
+14.0	Acknowledgements	Yes	Detailed acknowledgements provided
+14.1	Funding	Yes	Funding sources acknowledged
+15.0	Conflicts of interest	Yes	Competing interests statement provided
+16.0	Supplementary data & files	Yes	Supplementary information referenced
+17.0	Sample & data availability	Yes	Data availability statement provided with DOI
+18.0	AI usage	No	No statement about AI usage provided

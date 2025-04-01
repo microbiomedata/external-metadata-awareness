@@ -1,0 +1,68 @@
+Number	Item	Present in the manuscript? Yes/No/NA	Comments or location in manuscript.1
+1.0	Structured or unstructured abstract	Yes	Unstructured abstract on p.1 includes background, methods, results with data description
+1.1	Study design	Yes	Abstract and introduction describe time-series sampling design over 52-day period
+1.2	Environmental & sample information	Yes	Monterey Bay coastal system described; sampling location and depth specified (p.1-2)
+1.3	Host information	Yes	Dinoflagellate bloom organism (Akashiwo sanguinea) described in Background section p.1
+1.4	Experiments & omics methods	Yes	Abstract and Methods detail metagenomic, metatranscriptomic and amplicon sequencing approaches
+1.5	Analyses & results	Yes	Results summarized in figures showing taxonomic compositions; analyses described in Methods
+2.0	Background & rationale	Yes	Background section provides context for marine microbial communities and bloom dynamics (p.1)
+2.1	Hypotheses or questions	Yes	Study aims to characterize microbial community structure/function during bloom events
+3.0	Study design	Yes	Time series design with 41 sampling dates over 52 days described in Methods
+3.1	Samples	Yes	Sample collection methods and processing detailed in Methods p.1-2
+3.2	Environmental context & geographic location	Yes	Monterey Bay station M0 coordinates given (36.835 N, 121.901 W); Figure 1 shows location
+3.3	Relevant dates	Yes	Sampling dates specified (Sept 26 - Nov 16, 2016) p.1
+3.4	Host(s)	Yes	Dinoflagellate bloom organism characterized with cell counts and chlorophyll measurements
+3.5	Ethics	NA	No ethics approvals required for environmental sampling
+3.6	Environmental conditions & experimental treatments	Yes	Environmental data (temp, salinity, chlorophyll, etc.) collected and described
+3.7	Sample collection	Yes	Detailed collection protocols including filtration described in Methods
+3.8	Eligibility/selection criteria	Yes	Sample inclusion based on location and time period during bloom
+3.9	Analytic sample size	Yes	Final numbers of samples for each data type specified in abstract and Table 1
+4.0	Storage & preservation	Yes	Sample preservation in RNAlater and liquid nitrogen described in Methods
+4.1	Shipping	Yes	Sample storage until retrieval mentioned in Methods
+4.2	Extraction methods	Yes	Detailed DNA/RNA extraction protocols provided in Methods
+4.3	Experiments & sample processing	Yes	Complete processing workflow described in Methods
+4.4	Library preparation	Yes	Sequencing library preparation detailed for all data types
+4.5	Depletion, enrichment, & multiplexing	Yes	Size fractionation and filtering described in Methods
+4.6	Primer selection	Yes	Primer sequences provided for 16S and 18S amplification
+5.0	Positive controls	Yes	Internal standards described in Usage Notes
+5.1	Negative controls	Yes	Quality control and filtering steps described in Technical Validation
+6.0	Quantification & quality assessments	Yes	Quality metrics and standards recovery described in Technical Validation
+6.1	Contaminant mitigation & identification	Yes	Contamination filtering described in Technical Validation
+6.2	Replication	Yes	Duplicate filters sequenced for most samples
+6.3	Sequencing methods	Yes	Sequencing platforms and parameters specified for each data type
+6.4	Metabolomics, metaproteomics, & other omics methods	NA	No metabolomics/proteomics performed
+6.5	Contextual & linked datasets	Yes	Environmental data linked through BCO-DMO
+6.6	Batch effects	Yes	Sample randomization and quality controls described
+7.0	Bioinformatics analyses	Yes	Complete bioinformatics workflows with parameters provided
+7.1	Quality control	Yes	Quality filtering steps detailed in Technical Validation
+7.2	Normalization	Yes	Data normalization approaches described
+7.3	Database information	Yes	Reference databases specified (SILVA, etc.)
+7.4	Statistical methods	Yes	Analysis methods described throughout Methods
+7.5	Missing data	Yes	Sample exclusions noted
+7.6	Bias & confounding variables	Yes	Quality controls and technical validation described
+7.7	Subgroup analysis	Yes	Time series analysis of community composition shown in figures
+7.8	Sensitivity analyses	NA	Not applicable to descriptive study
+7.9	Criteria for significance	Yes	Quality thresholds specified in Methods
+8.0	Metadata access	Yes	Sample metadata available through BCO-DMO
+8.1	Host data access	Yes	Bloom organism data included in environmental measurements
+8.2	Raw data access	Yes	Raw sequence data deposited in NCBI SRA
+8.3	Processed data access	Yes	Assembled data available through JGI
+8.4	Software & source code access	Yes	Software versions and parameters provided in Code Availability
+8.5	Reproducible research	Yes	Complete workflows and parameters provided
+9.0	Descriptive data	Yes	Sample characteristics described throughout
+10.0	Microbiome sequencing data	Yes	Sequence data results presented in figures
+10.1	Metabolomics, proteomics, & other omics data	NA	No metabolomics/proteomics performed
+10.2	Statistical analyses	Yes	Analysis results presented in figures
+10.3	Figures, tables, & captions	Yes	Clear figures with detailed captions provided
+11.0	Key results	Yes	Main findings summarized
+11.1	Interpretation	Yes	Results interpreted in context of bloom dynamics
+11.2	Limitations	Yes	Technical limitations noted in Methods
+11.3	Generalizability	Yes	Results discussed in context of coastal systems
+12.0	Ongoing & future work	NA	Not discussed as this is a data descriptor
+13.0	Conclusions	Yes	Study conclusions provided
+14.0	Acknowledgements	Yes	Comprehensive acknowledgements section
+14.1	Funding	Yes	Funding sources listed
+15.0	Conflicts of interest	Yes	No competing interests stated
+16.0	Supplementary data & files	Yes	Online-only tables referenced
+17.0	Sample & data availability	Yes	Complete data availability statement provided
+18.0	AI usage	NA	No AI methods used in study

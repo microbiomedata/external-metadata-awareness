@@ -1,0 +1,68 @@
+Number	Item	Present in the manuscript? Yes/No/NA	Comments or location in manuscript.1
+1.0	Structured or unstructured abstract	Yes	Unstructured abstract forms main body of conference paper
+1.1	Study design	Yes	Implementation report of MIxS standard in two systems
+1.2	Environmental & sample information	Yes	Environmental microbiome samples described
+1.3	Host information (if applicable)	NA	Not applicable - environmental samples
+1.4	Experiments & omics methods	Yes	Mentions sequencing and analysis methods
+1.5	Analyses & results	Yes	Describes implementation challenges and solutions
+2.0	Background & rationale	Yes	Explains purpose of MIxS standard and implementation goals
+2.1	Hypotheses or questions	Yes	Clear aim to report on MIxS implementation experiences
+3.0	Study design	NA	As a conference abstract about implementation experiences, detailed study design not applicable
+3.1	Samples	NA	Not applicable - paper discusses metadata standards rather than specific samples
+3.2	Environmental context & geographic location	NA	Not applicable for this implementation report
+3.3	Relevant dates	Yes	Publication dates provided
+3.4	Host(s) (if applicable)	NA	Not applicable - environmental samples
+3.5	Ethics	NA	Not applicable for this type of study
+3.6	Environmental conditions & experimental treatments	NA	Not applicable for this implementation report
+3.7	Sample collection	NA	Not applicable - discusses metadata standards rather than specific samples
+3.8	Eligibility/selection criteria	NA	Not applicable for this type of study
+3.9	Analytic sample size	Yes	Mentions 50,000 samples for EMP
+4.0	Storage & preservation	NA	Not applicable for this implementation report
+4.1	Shipping	NA	Not applicable
+4.2	Extraction methods	NA	Not applicable
+4.3	Experiments & sample processing	NA	Not applicable
+4.4	Library preparation	NA	Not applicable
+4.5	Depletion, enrichment, & multiplexing	NA	Not applicable
+4.6	Primer selection	NA	Not applicable
+5.0	Positive controls	NA	Not applicable
+5.1	Negative controls	NA	Not applicable
+6.0	Quantification & quality assessments	NA	Not applicable
+6.1	Contaminant mitigation & identification	NA	Not applicable
+6.2	Replication	NA	Not applicable
+6.3	Sequencing methods	NA	Not applicable
+6.4	Metabolomics, metaproteomics, & other omics methods	NA	Not applicable
+6.5	Contextual & linked datasets	Yes	References EMP and GoC Ecobiomics projects
+6.6	Batch effects	NA	Not applicable
+7.0	Bioinformatics analyses	NA	Not applicable
+7.1	Quality control	NA	Not applicable
+7.2	Normalization	NA	Not applicable
+7.3	Database information	NA	Not applicable
+7.4	Statistical methods	NA	Not applicable
+7.5	Missing data	NA	Not applicable
+7.6	Bias & confounding variables	NA	Not applicable
+7.7	Subgroup analysis	NA	Not applicable
+7.8	Sensitivity analyses	NA	Not applicable
+7.9	Criteria for significance	NA	Not applicable
+8.0	Metadata access	Yes	Discusses metadata standards and implementation
+8.1	Host data access (if applicable)	NA	Not applicable
+8.2	Raw data access	NA	Not applicable for this implementation report
+8.3	Processed data access	NA	Not applicable for this implementation report
+8.4	Software & source code access	NA	Not applicable
+8.5	Reproducible research	NA	Not applicable for this type of report
+9.0	Descriptive data	Yes	Describes characteristics of projects implementing MIxS
+10.0	Microbiome sequencing data	NA	Not applicable - paper focuses on metadata standards
+10.1	Metabolomics, proteomics, & other omics data	NA	Not applicable
+10.2	Statistical analyses	NA	Not applicable
+10.3	Figures, tables, & captions	No	No figures or tables included
+11.0	Key results	Yes	Reports key implementation challenges and solutions
+11.1	Interpretation	Yes	Discusses implications of findings for metadata standards
+11.2	Limitations	Yes	Discusses challenges and limitations encountered
+11.3	Generalizability	Yes	Discusses applicability across different projects
+12.0	Ongoing & future work	No	No explicit discussion of future work
+13.0	Conclusions	Yes	Clear conclusions about implementation challenges
+14.0	Acknowledgements	No	No acknowledgements section
+14.1	Funding	No	No funding information provided
+15.0	Conflicts of interest	No	No conflicts of interest statement
+16.0	Supplementary data & files	No	No supplementary materials mentioned
+17.0	Sample & data availability	NA	Not applicable for this implementation report
+18.0	AI usage	NA	Published in 2017, before AI usage reporting requirements

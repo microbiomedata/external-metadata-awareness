@@ -1,0 +1,25 @@
+problematic_key	problematic_value	count	done	replacement_curie	replacement_label	notes
+env_local_scale	bog	3	false	ENVO:00000044	peatland	SAMEA7723551. subpolar coniferous forest biome/soil. via related synonym
+env_local_scale	mangrove	1	true	ENVO:00000103	mangrove island	SAMEA7723419. used in combination with marine benthic biome/marine sediment. Twin Cayes, Belize Barrier Reef System. Most depths < 30 m, but some 300 or 700. Might not want to call all benthic.
+env_local_scale	intermittent pond	7	true	ENVO:00000504	container of an intermittent pond	
+env_broad_scale	Small lake biome	20	true	ENVO:00000892	small freshwater lake biome	
+env_medium	coastal water	9	true	ENVO:00002006	liquid water	
+env_local_scale	oil reservior	14	true	ENVO:00002185	oil reservoir	SAMEA7723792 - SAMEA7723805 Oil reservoir misspelled in source
+env_broad_scale	neritic bathypelagic zone biome	1	true	ENVO:01000037	oceanic bathypelagic zone biome	"SAMEA7723671 – SAMEA7723943, esp. SAMEA7723939. Palenik San Diego seawater: Neritic names a superficial horizontal region, Bathypelagic names a deep vertical zone. reported depth: ""3000"". GEBCO confirms ocean floor is ~ 3800 m deep around 33.35° N, –122.12° W -> bathypelagic"
+env_broad_scale	flooded savanna	1	true	ENVO:01000190	flooded savanna biome	SAMEA7723866 “Seasonal succession influences the functioning of a host-associated microbial food web (pitcher plant Darlingtonia california)”
+env_broad_scale	temperate shrubland	6	true	ENVO:01000215	temperate shrubland biome	
+env_medium	pitcher plant fluid	6	true	ENVO:01000815	liquid environmental material	SAMEA7723869, SAMEA7723863. ask to have phytotelma/phytotelm or ascidia/ascidium added to EnvO. taxon should go in a different slot. env_local_scale could be leaf [PO:0025034] ?
+env_local_scale	insecta-associated habitat	28	true	ENVO:01001002	animal-associated environment	SAMEA7723460. tropical broadleaf forest biome/organic material. the fact that it came from an insect should be captured in a host slot
+env_local_scale	animal-associated habitat	84	true	ENVO:01001002	animal-associated environment	
+env_local_scale	host-associated habitat	133	true	ENVO:01001002	animal-associated environment	
+env_local_scale	forest	21	true	ENVO:01001243	forest	
+env_local_scale	montane desert	26	false	ENVO:01001903	montane desert ecosystem	SAMEA7724257. desert biome/alpine soil. ... mine other biosample (lat lon?), bioproject or study slots, or journal article
+env_broad_scale	montane grasslands and shrubland biome	12	true			SAMEA7724107 - SAMEA7724118. MacRae-Crerar
+env_local_scale	cropland	10	false			SAMEA7724195 - SAMEA7724228. Myrold
+env_local_scale	rangeland	5	false			SAMEA7724195 - SAMEA7724228. Myrold
+env_local_scale	temperate coniferous forest	16	false			SAMEA7724195 - SAMEA7724228. Myrold
+env_local_scale	temperate shrubland	1	false			SAMEA7724195 - SAMEA7724228. Myrold
+env_local_scale	temperate woodland	2	false			SAMEA7724195 - SAMEA7724228. Myrold
+env_local_scale	stratum	18	false			SAMEA7724332: forest floor [ENVO:01001582] OR active permafrost layer [ENVO:04000009] ?
+env_local_scale	wetland	9	false			
+env_local_scale	marine benthic feature	125	false			

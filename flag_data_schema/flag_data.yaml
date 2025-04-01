@@ -1,0 +1,5 @@
+flags:
+  - represents: Canada
+    horizontal_bars: false
+  - represents: Belgium
+    horizontal_bars: true

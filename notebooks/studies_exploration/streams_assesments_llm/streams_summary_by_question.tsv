@@ -1,0 +1,68 @@
+Question Number	Item	Yes Votes	No Votes	NA Votes
+1.0	Structured or unstructured abstract	25	0	0
+1.1	Study design	25	0	0
+1.2	Environmental & sample information	25	0	0
+1.3	Host information (if applicable)	9	0	16
+1.4	Experiments & omics methods	25	0	0
+1.5	Analyses & results	25	0	0
+2.0	Background & rationale	25	0	0
+2.1	Hypotheses or questions	25	0	0
+3.0	Study design	24	0	1
+3.1	Samples	24	0	1
+3.2	Environmental context & geographic location	24	0	1
+3.3	Relevant dates	22	3	0
+3.4	Host(s) (if applicable)	9	0	16
+3.5	Ethics	4	8	13
+3.6	Environmental conditions & experimental treatments	24	0	1
+3.7	Sample collection	24	0	1
+3.8	Eligibility/selection criteria	22	2	1
+3.9	Analytic sample size	25	0	0
+4.0	Storage & preservation	24	0	1
+4.1	Shipping	10	8	7
+4.2	Extraction methods	23	0	2
+4.3	Experiments & sample processing	24	0	1
+4.4	Library preparation	17	0	8
+4.5	Depletion, enrichment, & multiplexing	15	0	10
+4.6	Primer selection	8	0	17
+5.0	Positive controls	5	19	1
+5.1	Negative controls	10	14	1
+6.0	Quantification & quality assessments	24	0	1
+6.1	Contaminant mitigation & identification	20	4	1
+6.2	Replication	21	3	1
+6.3	Sequencing methods	17	0	8
+6.4	Metabolomics, metaproteomics, & other omics methods	9	0	16
+6.5	Contextual & linked datasets	21	4	0
+6.6	Batch effects	8	16	1
+7.0	Bioinformatics analyses	24	0	1
+7.1	Quality control	24	0	1
+7.2	Normalization	22	2	1
+7.3	Database information	20	0	5
+7.4	Statistical methods	21	2	2
+7.5	Missing data	11	13	1
+7.6	Bias & confounding variables	18	6	1
+7.7	Subgroup analysis	18	0	7
+7.8	Sensitivity analyses	6	15	4
+7.9	Criteria for significance	21	1	3
+8.0	Metadata access	25	0	0
+8.1	Host data access (if applicable)	9	0	16
+8.2	Raw data access	24	0	1
+8.3	Processed data access	24	0	1
+8.4	Software & source code access	22	2	1
+8.5	Reproducible research	21	3	1
+9.0	Descriptive data	25	0	0
+10.0	Microbiome sequencing data	15	0	10
+10.1	Metabolomics, proteomics, & other omics data	10	0	15
+10.2	Statistical analyses	21	1	3
+10.3	Figures, tables, & captions	24	1	0
+11.0	Key results	25	0	0
+11.1	Interpretation	25	0	0
+11.2	Limitations	23	2	0
+11.3	Generalizability	21	4	0
+12.0	Ongoing & future work	18	6	1
+13.0	Conclusions	23	2	0
+14.0	Acknowledgements	24	1	0
+14.1	Funding	24	1	0
+15.0	Conflicts of interest	19	6	0
+16.0	Supplementary data & files	21	4	0
+17.0	Sample & data availability	24	0	1
+18.0	AI usage	0	19	6

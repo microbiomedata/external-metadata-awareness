@@ -103,7 +103,7 @@ load-biosamples-into-mongo: local/biosample_set.xml
 	date
 
 local/biosample-count-mongodb.txt:
-	date && mongosh --eval 'db.getSiblingDB("$(MONGO_DB").biosamples.countDocuments()' > $@ && date # 1 minute # how to use Makefile variables here?
+	date && mongosh --eval "db.getSiblingDB('$(MONGO_DB)').biosamples.countDocuments()" > $@ && date # 1 minute # how to use Makefile variables here?
 
 # no indexing necessary for the mongodb to duckdb convertion in notebooks/mongodb_biosamples_to_duckdb.ipynb
 # 1% MongoDB load 8 minutes on MAM Ubuntu NUC
@@ -218,7 +218,8 @@ load_acceptable_sized_leaf_bioprojects_into_mongodb: downloads/bioproject.xml
 		--mongo-uri mongodb://$(MONGO_HOST):$(MONGO_PORT) \
 		--db-name $(MONGO_DB) \
 		--project-collection bioprojects \
-		--submission-collection bioprojects_submissions $<
+		--submission-collection bioprojects_submissions \
+		--oversize-dir local/oversize $<
 
 local/bioproject_xpath_counts.json: downloads/bioproject.xml
 	poetry run python external_metadata_awareness/count_xml_paths.py \
@@ -228,6 +229,13 @@ local/bioproject_xpath_counts.json: downloads/bioproject.xml
 		--stop-after 999999999 \
 		--output $@
 
+local/bioproject_packageset_xpath_counts.json: downloads/bioproject.xml
+	poetry run python external_metadata_awareness/count_xml_paths.py \
+		--xml-file $< \
+		--interval 10 \
+		--always-count-path '/PackageSet' \
+		--stop-after 999999999 \
+		--output $@
 
 local/biosample_xpath_counts.json: local/biosample_set.xml
 	poetry run python external_metadata_awareness/count_xml_paths.py \
@@ -236,3 +244,42 @@ local/biosample_xpath_counts.json: local/biosample_set.xml
 		--always-count-path '/BioSampleSet/BioSample' \
 		--stop-after 999999999 \
 		--output $@
+
+downloads/bioproject.xml:
+	date
+	$(WGET) -O $@ "https://ftp.ncbi.nlm.nih.gov/bioproject/bioproject.xml" # ~ 3 GB March 2025
+	date
+
+.PHONY: fetch_sra_metadata_parquet_from_s3_to_perlmutter load_sra_metadata_parquet_into_mongo
+# cd into desired directory
+fetch_sra_metadata_parquet_from_s3_to_perlmutter: local/sra_metadata_parquet
+	shifter --image=amazon/aws-cli:latest aws s3 cp s3://sra-pub-metadata-us-east-1/sra/metadata/ $< --recursive --no-sign-request
+
+load_sra_metadata_parquet_into_mongo: local/sra_metadata_parquet
+	# todo may need to fix .env path
+	# todo may want to change requests cache location
+	$(RUN) python external_metadata_awareness/sra_parquet_to_mongodb.py \
+		--parquet-dir $< \
+		--drop-collection \
+		--progress-interval 1000
+# [2025-03-21 22:53:08] Completed processing 30 files in 1935.58 minutes. Total inserted: 35567948 records.
+
+
+.PHONY:  split_env_triad_values_from_perlmutter split_env_triad_values_from_local
+split_env_triad_values_from_perlmutter:
+	# todo may need to fix .env path
+	$(RUN) python external_metadata_awareness/new_env_triad_values_splitter.py \
+		--db ncbi_metadata \
+		--collection biosamples_env_triad_value_counts_gt_1 \
+		--min-length 3
+
+split_env_triad_values_from_local:
+	# todo may need to fix .env path
+	$(RUN) python external_metadata_awareness/new_env_triad_values_splitter.py \
+		--host localhost \
+		--port 27017 \
+		--db ncbi_metadata \
+		--collection biosamples_env_triad_value_counts_gt_1 \
+		--no-authenticate \
+		--field env_triad_value \
+		--min-length 3

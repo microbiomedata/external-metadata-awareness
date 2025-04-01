@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d2a9e9849c6fe203d9c2010ff90aff98 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d2a9e9849c6fe203d9c2010ff90aff98" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d2a9e9849c6fe203d9c2010ff90aff98 = L.map(
+                "map_d2a9e9849c6fe203d9c2010ff90aff98",
+                {
+                    center: [42.632325866666676, -71.0011246],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_079d7824d67153b7a148fb123078f0a5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_079d7824d67153b7a148fb123078f0a5.addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var marker_e9aa0da19afda580c9ba4c4a19c7775a = L.marker(
+                [42.706758, -70.915147],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_e75138332fc2bd3e67174dfd8580cfe5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e9aa0da19afda580c9ba4c4a19c7775a.setIcon(icon_e75138332fc2bd3e67174dfd8580cfe5);
+        
+    
+        var popup_2ab183006927910ecc8d90bcaadd4048 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22cb6499f5c08496caca1086d0a93214 = $(`<div id="html_22cb6499f5c08496caca1086d0a93214" style="width: 100.0%; height: 100.0%;">YSISB-Stream Sediment</div>`)[0];
+                popup_2ab183006927910ecc8d90bcaadd4048.setContent(html_22cb6499f5c08496caca1086d0a93214);
+            
+        
+
+        marker_e9aa0da19afda580c9ba4c4a19c7775a.bindPopup(popup_2ab183006927910ecc8d90bcaadd4048)
+        ;
+
+        
+    
+    
+            var marker_61fc8b269b3bc033c6e735b79493c250 = L.marker(
+                [42.706758, -70.915147],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_3b526a8432abab00145d25df375d9c7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_61fc8b269b3bc033c6e735b79493c250.setIcon(icon_3b526a8432abab00145d25df375d9c7b);
+        
+    
+        var popup_357d6a195d496cb4a85b347f65857a3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f46039e18a67ff2fc888b0eecae536a = $(`<div id="html_6f46039e18a67ff2fc888b0eecae536a" style="width: 100.0%; height: 100.0%;">YSISB-Riparian Sediment</div>`)[0];
+                popup_357d6a195d496cb4a85b347f65857a3b.setContent(html_6f46039e18a67ff2fc888b0eecae536a);
+            
+        
+
+        marker_61fc8b269b3bc033c6e735b79493c250.bindPopup(popup_357d6a195d496cb4a85b347f65857a3b)
+        ;
+
+        
+    
+    
+            var marker_7394d6bb76cf1a3a278e56b61e8d97eb = L.marker(
+                [42.516602, -71.189903],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_b9462ce793dcffa4ac52113970536465 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7394d6bb76cf1a3a278e56b61e8d97eb.setIcon(icon_b9462ce793dcffa4ac52113970536465);
+        
+    
+        var popup_f3dec00d648519ee7aa2837536de3fc3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1cbe8c642190e01f0855cb370599f9f5 = $(`<div id="html_1cbe8c642190e01f0855cb370599f9f5" style="width: 100.0%; height: 100.0%;">SBFRE-Stream Sediment</div>`)[0];
+                popup_f3dec00d648519ee7aa2837536de3fc3.setContent(html_1cbe8c642190e01f0855cb370599f9f5);
+            
+        
+
+        marker_7394d6bb76cf1a3a278e56b61e8d97eb.bindPopup(popup_f3dec00d648519ee7aa2837536de3fc3)
+        ;
+
+        
+    
+    
+            var marker_556f9f96e6116a80efeec58594e1cf0e = L.marker(
+                [42.516602, -71.189903],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_a76a46a1f6687103adc3e309b133930d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_556f9f96e6116a80efeec58594e1cf0e.setIcon(icon_a76a46a1f6687103adc3e309b133930d);
+        
+    
+        var popup_4c333dc147668c441286e55bfe6b243a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85c155b1d973f6084348dfeb40c8b928 = $(`<div id="html_85c155b1d973f6084348dfeb40c8b928" style="width: 100.0%; height: 100.0%;">SBFRE-Riparian Sediment</div>`)[0];
+                popup_4c333dc147668c441286e55bfe6b243a.setContent(html_85c155b1d973f6084348dfeb40c8b928);
+            
+        
+
+        marker_556f9f96e6116a80efeec58594e1cf0e.bindPopup(popup_4c333dc147668c441286e55bfe6b243a)
+        ;
+
+        
+    
+    
+            var marker_4defb80da1c9eb3b8b16eb290bb77ca8 = L.marker(
+                [42.533218, -71.19883],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_070ded63536628cc25e266e27b8f3f55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4defb80da1c9eb3b8b16eb290bb77ca8.setIcon(icon_070ded63536628cc25e266e27b8f3f55);
+        
+    
+        var popup_132f6ec395053fc08aa8dda93b1430c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4276c97faac5e54664dcec2bf693337 = $(`<div id="html_f4276c97faac5e54664dcec2bf693337" style="width: 100.0%; height: 100.0%;">IS103-Stream Sediment</div>`)[0];
+                popup_132f6ec395053fc08aa8dda93b1430c9.setContent(html_f4276c97faac5e54664dcec2bf693337);
+            
+        
+
+        marker_4defb80da1c9eb3b8b16eb290bb77ca8.bindPopup(popup_132f6ec395053fc08aa8dda93b1430c9)
+        ;
+
+        
+    
+    
+            var marker_90bb441d5ffc8adf583d7a6d5c45faa9 = L.marker(
+                [42.533218, -71.19883],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_38f4740469e7d68444b99d7122c62654 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_90bb441d5ffc8adf583d7a6d5c45faa9.setIcon(icon_38f4740469e7d68444b99d7122c62654);
+        
+    
+        var popup_e25b6cdf795f5d2cbcadddf89778d657 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70182e34c2ce8153398e9a5671b8d65e = $(`<div id="html_70182e34c2ce8153398e9a5671b8d65e" style="width: 100.0%; height: 100.0%;">IS103-Riparian Sediment</div>`)[0];
+                popup_e25b6cdf795f5d2cbcadddf89778d657.setContent(html_70182e34c2ce8153398e9a5671b8d65e);
+            
+        
+
+        marker_90bb441d5ffc8adf583d7a6d5c45faa9.bindPopup(popup_e25b6cdf795f5d2cbcadddf89778d657)
+        ;
+
+        
+    
+    
+            var marker_a937cd1dd504a2af78115c702e7167c9 = L.marker(
+                [42.581268, -71.158653],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_2c3fc398b2ae3e20c3d51fe9674c60bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a937cd1dd504a2af78115c702e7167c9.setIcon(icon_2c3fc398b2ae3e20c3d51fe9674c60bd);
+        
+    
+        var popup_8c14b11ed3038c8d4cec84b2843958cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96e2e1cc028ef675394b4ebdf3ac6c28 = $(`<div id="html_96e2e1cc028ef675394b4ebdf3ac6c28" style="width: 100.0%; height: 100.0%;">IS111-Stream Sediment</div>`)[0];
+                popup_8c14b11ed3038c8d4cec84b2843958cd.setContent(html_96e2e1cc028ef675394b4ebdf3ac6c28);
+            
+        
+
+        marker_a937cd1dd504a2af78115c702e7167c9.bindPopup(popup_8c14b11ed3038c8d4cec84b2843958cd)
+        ;
+
+        
+    
+    
+            var marker_d589e9982a0321f677bdd60cdc2f7669 = L.marker(
+                [42.581268, -71.158653],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_91b09fb0ceb664d138c057f00d9c0fc8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d589e9982a0321f677bdd60cdc2f7669.setIcon(icon_91b09fb0ceb664d138c057f00d9c0fc8);
+        
+    
+        var popup_e7e9e14b987992449ef492486e478bab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3d1cf4b8df4cad200f81b46ceca6f6a = $(`<div id="html_e3d1cf4b8df4cad200f81b46ceca6f6a" style="width: 100.0%; height: 100.0%;">IS111-Riparian Sediment</div>`)[0];
+                popup_e7e9e14b987992449ef492486e478bab.setContent(html_e3d1cf4b8df4cad200f81b46ceca6f6a);
+            
+        
+
+        marker_d589e9982a0321f677bdd60cdc2f7669.bindPopup(popup_e7e9e14b987992449ef492486e478bab)
+        ;
+
+        
+    
+    
+            var marker_451d49e9c42212e6d23b07b2dc6ba0af = L.marker(
+                [42.58812, -70.988663],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_adef0cfda26f46a3605052bcd883ca5f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_451d49e9c42212e6d23b07b2dc6ba0af.setIcon(icon_adef0cfda26f46a3605052bcd883ca5f);
+        
+    
+        var popup_ce4bd97797eeadc36ac9864b40441676 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4e18995cdabebdd4ff2a5018202fc0a = $(`<div id="html_d4e18995cdabebdd4ff2a5018202fc0a" style="width: 100.0%; height: 100.0%;">IS122-Stream Sediment</div>`)[0];
+                popup_ce4bd97797eeadc36ac9864b40441676.setContent(html_d4e18995cdabebdd4ff2a5018202fc0a);
+            
+        
+
+        marker_451d49e9c42212e6d23b07b2dc6ba0af.bindPopup(popup_ce4bd97797eeadc36ac9864b40441676)
+        ;
+
+        
+    
+    
+            var marker_3459a72b917b16b570b967d190db9595 = L.marker(
+                [42.58812, -70.988663],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_e5d2d14860aef81c116b19a93884e46a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3459a72b917b16b570b967d190db9595.setIcon(icon_e5d2d14860aef81c116b19a93884e46a);
+        
+    
+        var popup_07c4daf62a00f5e162ffec8ea347bed4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75c53269b0216a4b690978f551ae0f3a = $(`<div id="html_75c53269b0216a4b690978f551ae0f3a" style="width: 100.0%; height: 100.0%;">IS122-Riparian Sediment</div>`)[0];
+                popup_07c4daf62a00f5e162ffec8ea347bed4.setContent(html_75c53269b0216a4b690978f551ae0f3a);
+            
+        
+
+        marker_3459a72b917b16b570b967d190db9595.bindPopup(popup_07c4daf62a00f5e162ffec8ea347bed4)
+        ;
+
+        
+    
+    
+            var marker_ff3c4897383d354a971255368bfc5695 = L.marker(
+                [42.66375, -71.10746],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_57ea33af90001cbcd33fdb320ca3e30c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ff3c4897383d354a971255368bfc5695.setIcon(icon_57ea33af90001cbcd33fdb320ca3e30c);
+        
+    
+        var popup_d25e8904c526ea5bc804cd8b278bfa10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2af7980552d2e5eaaf3600939f853218 = $(`<div id="html_2af7980552d2e5eaaf3600939f853218" style="width: 100.0%; height: 100.0%;">IS135-Stream Sediment</div>`)[0];
+                popup_d25e8904c526ea5bc804cd8b278bfa10.setContent(html_2af7980552d2e5eaaf3600939f853218);
+            
+        
+
+        marker_ff3c4897383d354a971255368bfc5695.bindPopup(popup_d25e8904c526ea5bc804cd8b278bfa10)
+        ;
+
+        
+    
+    
+            var marker_eed901e469deced1b17402a30bd29d25 = L.marker(
+                [42.66375, -71.10746],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_67e455967f4788f1290abd32b03a1300 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_eed901e469deced1b17402a30bd29d25.setIcon(icon_67e455967f4788f1290abd32b03a1300);
+        
+    
+        var popup_1b9b94772fba796d3043a097dce39915 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4887122a7d4ecbe80f4673ed13ebdee = $(`<div id="html_e4887122a7d4ecbe80f4673ed13ebdee" style="width: 100.0%; height: 100.0%;">IS135-Riparian Sediment</div>`)[0];
+                popup_1b9b94772fba796d3043a097dce39915.setContent(html_e4887122a7d4ecbe80f4673ed13ebdee);
+            
+        
+
+        marker_eed901e469deced1b17402a30bd29d25.bindPopup(popup_1b9b94772fba796d3043a097dce39915)
+        ;
+
+        
+    
+    
+            var marker_90ffdcc8b581698dc98d2550f90e888b = L.marker(
+                [42.686821, -71.063263],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_e759dba1a3c8b5fd87578955d38a099f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_90ffdcc8b581698dc98d2550f90e888b.setIcon(icon_e759dba1a3c8b5fd87578955d38a099f);
+        
+    
+        var popup_bca4ebadff0f0fac253548d0e1e89d5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f17a975d6b8aa5522838721a146ad48 = $(`<div id="html_2f17a975d6b8aa5522838721a146ad48" style="width: 100.0%; height: 100.0%;">IS136-Stream Sediment</div>`)[0];
+                popup_bca4ebadff0f0fac253548d0e1e89d5c.setContent(html_2f17a975d6b8aa5522838721a146ad48);
+            
+        
+
+        marker_90ffdcc8b581698dc98d2550f90e888b.bindPopup(popup_bca4ebadff0f0fac253548d0e1e89d5c)
+        ;
+
+        
+    
+    
+            var marker_a47332fc3d7a6f8cd43efdbfaa11d342 = L.marker(
+                [42.686821, -71.063263],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_0b2aa848217cb3abd368c1b9c6dbb557 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a47332fc3d7a6f8cd43efdbfaa11d342.setIcon(icon_0b2aa848217cb3abd368c1b9c6dbb557);
+        
+    
+        var popup_fa2baad02d43a1f200e34071b0d10abe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3cd367dd43378d8134a20d41321c7071 = $(`<div id="html_3cd367dd43378d8134a20d41321c7071" style="width: 100.0%; height: 100.0%;">IS136-Riparian Sediment</div>`)[0];
+                popup_fa2baad02d43a1f200e34071b0d10abe.setContent(html_3cd367dd43378d8134a20d41321c7071);
+            
+        
+
+        marker_a47332fc3d7a6f8cd43efdbfaa11d342.bindPopup(popup_fa2baad02d43a1f200e34071b0d10abe)
+        ;
+
+        
+    
+    
+            var marker_e2dfe96564fe720f6256aca052331d5b = L.marker(
+                [42.656639, -71.013107],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_0c5350e622d48b8059bb8b740f7f6235 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e2dfe96564fe720f6256aca052331d5b.setIcon(icon_0c5350e622d48b8059bb8b740f7f6235);
+        
+    
+        var popup_e77d90df68816b5948582f3e9af0f5a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb4d9725258f66b740c6efc8b7629eeb = $(`<div id="html_bb4d9725258f66b740c6efc8b7629eeb" style="width: 100.0%; height: 100.0%;">IS141-Stream Sediment</div>`)[0];
+                popup_e77d90df68816b5948582f3e9af0f5a8.setContent(html_bb4d9725258f66b740c6efc8b7629eeb);
+            
+        
+
+        marker_e2dfe96564fe720f6256aca052331d5b.bindPopup(popup_e77d90df68816b5948582f3e9af0f5a8)
+        ;
+
+        
+    
+    
+            var marker_3cc8182d71c774dd654d94b135cb9a03 = L.marker(
+                [42.656639, -71.013107],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_0f9ce170babd2736317358edaf87eb99 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3cc8182d71c774dd654d94b135cb9a03.setIcon(icon_0f9ce170babd2736317358edaf87eb99);
+        
+    
+        var popup_1d19020e705081f299834545d95f27b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b410b99c6cc9244934b512f7e1dc4fc6 = $(`<div id="html_b410b99c6cc9244934b512f7e1dc4fc6" style="width: 100.0%; height: 100.0%;">IS141-Riparian Sediment</div>`)[0];
+                popup_1d19020e705081f299834545d95f27b8.setContent(html_b410b99c6cc9244934b512f7e1dc4fc6);
+            
+        
+
+        marker_3cc8182d71c774dd654d94b135cb9a03.bindPopup(popup_1d19020e705081f299834545d95f27b8)
+        ;
+
+        
+    
+    
+            var marker_6223b4cb78747e78d726d6671e8a4fec = L.marker(
+                [42.64613, -70.996597],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_82f38cd6427270f48dfbeb3b65fe4fd9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6223b4cb78747e78d726d6671e8a4fec.setIcon(icon_82f38cd6427270f48dfbeb3b65fe4fd9);
+        
+    
+        var popup_070f790f73063ba39e7b4628620264b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20168552ffd8ad0b4046d5999b006623 = $(`<div id="html_20168552ffd8ad0b4046d5999b006623" style="width: 100.0%; height: 100.0%;">IS142-Stream Sediment</div>`)[0];
+                popup_070f790f73063ba39e7b4628620264b2.setContent(html_20168552ffd8ad0b4046d5999b006623);
+            
+        
+
+        marker_6223b4cb78747e78d726d6671e8a4fec.bindPopup(popup_070f790f73063ba39e7b4628620264b2)
+        ;
+
+        
+    
+    
+            var marker_503b8c1d8e0269493dd69c8aab696abc = L.marker(
+                [42.64613, -70.996597],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_479f6d4a548652a30353cad54e8eaccc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_503b8c1d8e0269493dd69c8aab696abc.setIcon(icon_479f6d4a548652a30353cad54e8eaccc);
+        
+    
+        var popup_f106c61958dca82e72bbd285432d5689 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6a931aaa9d70de4099d1ee043d9f504 = $(`<div id="html_c6a931aaa9d70de4099d1ee043d9f504" style="width: 100.0%; height: 100.0%;">IS142-Riparian Sediment</div>`)[0];
+                popup_f106c61958dca82e72bbd285432d5689.setContent(html_c6a931aaa9d70de4099d1ee043d9f504);
+            
+        
+
+        marker_503b8c1d8e0269493dd69c8aab696abc.bindPopup(popup_f106c61958dca82e72bbd285432d5689)
+        ;
+
+        
+    
+    
+            var marker_f8034264211fd214a08cf11cef183977 = L.marker(
+                [42.642151, -70.992729],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_54d7bc5756542a4845450324b8cc8fa2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f8034264211fd214a08cf11cef183977.setIcon(icon_54d7bc5756542a4845450324b8cc8fa2);
+        
+    
+        var popup_505d302cca38d0c5b1a12ba7c8eabb03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_688abf6e5e6ab0813c93eb7f98d79931 = $(`<div id="html_688abf6e5e6ab0813c93eb7f98d79931" style="width: 100.0%; height: 100.0%;">IS143-Stream Sediment</div>`)[0];
+                popup_505d302cca38d0c5b1a12ba7c8eabb03.setContent(html_688abf6e5e6ab0813c93eb7f98d79931);
+            
+        
+
+        marker_f8034264211fd214a08cf11cef183977.bindPopup(popup_505d302cca38d0c5b1a12ba7c8eabb03)
+        ;
+
+        
+    
+    
+            var marker_68591a79fb546e43f9e11c22f720a4c3 = L.marker(
+                [42.642151, -70.992729],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_daa9772bdee0d6a0554d789528ba7137 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_68591a79fb546e43f9e11c22f720a4c3.setIcon(icon_daa9772bdee0d6a0554d789528ba7137);
+        
+    
+        var popup_fbaa2c5e5dbc11d36c7778553cc53d70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01f1244b5a14b40efb5848e1e251763c = $(`<div id="html_01f1244b5a14b40efb5848e1e251763c" style="width: 100.0%; height: 100.0%;">IS143-Riparian Sediment</div>`)[0];
+                popup_fbaa2c5e5dbc11d36c7778553cc53d70.setContent(html_01f1244b5a14b40efb5848e1e251763c);
+            
+        
+
+        marker_68591a79fb546e43f9e11c22f720a4c3.bindPopup(popup_fbaa2c5e5dbc11d36c7778553cc53d70)
+        ;
+
+        
+    
+    
+            var marker_64822151699b683802d4a350ea085b0b = L.marker(
+                [42.646751, -70.975014],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_7ee76c0fffe198a4ff2f22fb27db070f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_64822151699b683802d4a350ea085b0b.setIcon(icon_7ee76c0fffe198a4ff2f22fb27db070f);
+        
+    
+        var popup_b3091ae01d4618e1556d851ec6074ed7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_388b40a1b93c0b7f2fc9d3b84c8b80b5 = $(`<div id="html_388b40a1b93c0b7f2fc9d3b84c8b80b5" style="width: 100.0%; height: 100.0%;">IS150-Stream Sediment</div>`)[0];
+                popup_b3091ae01d4618e1556d851ec6074ed7.setContent(html_388b40a1b93c0b7f2fc9d3b84c8b80b5);
+            
+        
+
+        marker_64822151699b683802d4a350ea085b0b.bindPopup(popup_b3091ae01d4618e1556d851ec6074ed7)
+        ;
+
+        
+    
+    
+            var marker_260364a6a5ed37c2f06c8197255fbf21 = L.marker(
+                [42.646751, -70.975014],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_15e91bd3f2ecf59ce043d1e3e37932d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_260364a6a5ed37c2f06c8197255fbf21.setIcon(icon_15e91bd3f2ecf59ce043d1e3e37932d7);
+        
+    
+        var popup_0a3ceb6ef43459a566bdc5be341f0c29 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac6090b4466a09cdda2bd596994fad96 = $(`<div id="html_ac6090b4466a09cdda2bd596994fad96" style="width: 100.0%; height: 100.0%;">IS150-Riparian Sediment</div>`)[0];
+                popup_0a3ceb6ef43459a566bdc5be341f0c29.setContent(html_ac6090b4466a09cdda2bd596994fad96);
+            
+        
+
+        marker_260364a6a5ed37c2f06c8197255fbf21.bindPopup(popup_0a3ceb6ef43459a566bdc5be341f0c29)
+        ;
+
+        
+    
+    
+            var marker_3a6b5fdc0999e8bc024cd63334ad16d5 = L.marker(
+                [42.638481, -70.886322],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_85556b9f91dbf3c2b6adb9101ff2c91e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3a6b5fdc0999e8bc024cd63334ad16d5.setIcon(icon_85556b9f91dbf3c2b6adb9101ff2c91e);
+        
+    
+        var popup_3f82e4c8791c8b6996aa723ba268375f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef445a3daac664c5caa16ff554ffa14f = $(`<div id="html_ef445a3daac664c5caa16ff554ffa14f" style="width: 100.0%; height: 100.0%;">IS160-Stream Sediment</div>`)[0];
+                popup_3f82e4c8791c8b6996aa723ba268375f.setContent(html_ef445a3daac664c5caa16ff554ffa14f);
+            
+        
+
+        marker_3a6b5fdc0999e8bc024cd63334ad16d5.bindPopup(popup_3f82e4c8791c8b6996aa723ba268375f)
+        ;
+
+        
+    
+    
+            var marker_a0123079a4462bdf5c349cc0f00e9718 = L.marker(
+                [42.638481, -70.886322],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_3798c20e481845f7af83bd6755978148 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a0123079a4462bdf5c349cc0f00e9718.setIcon(icon_3798c20e481845f7af83bd6755978148);
+        
+    
+        var popup_e4af5909bf4fa742773cf1e5c1160b32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b222a10fdfa34bd5a39251e44aae7b0 = $(`<div id="html_4b222a10fdfa34bd5a39251e44aae7b0" style="width: 100.0%; height: 100.0%;">IS160-Riparian Sediment</div>`)[0];
+                popup_e4af5909bf4fa742773cf1e5c1160b32.setContent(html_4b222a10fdfa34bd5a39251e44aae7b0);
+            
+        
+
+        marker_a0123079a4462bdf5c349cc0f00e9718.bindPopup(popup_e4af5909bf4fa742773cf1e5c1160b32)
+        ;
+
+        
+    
+    
+            var marker_a3638ffdc1b11f9f4d6f6a055abd4485 = L.marker(
+                [42.64716, -70.843727],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_4b2c470b9abfc21dff30bb1dca3c8f12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a3638ffdc1b11f9f4d6f6a055abd4485.setIcon(icon_4b2c470b9abfc21dff30bb1dca3c8f12);
+        
+    
+        var popup_0d60d387d84e54f1759118ce6aa35b2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93cf382aac7d444d90ee049d236fd227 = $(`<div id="html_93cf382aac7d444d90ee049d236fd227" style="width: 100.0%; height: 100.0%;">IS170-Stream Sediment</div>`)[0];
+                popup_0d60d387d84e54f1759118ce6aa35b2e.setContent(html_93cf382aac7d444d90ee049d236fd227);
+            
+        
+
+        marker_a3638ffdc1b11f9f4d6f6a055abd4485.bindPopup(popup_0d60d387d84e54f1759118ce6aa35b2e)
+        ;
+
+        
+    
+    
+            var marker_e5e10c793c57b4f6505c34dcf316c5ca = L.marker(
+                [42.64716, -70.843727],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_cee715de9fe5a0682814c387f1b92644 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e5e10c793c57b4f6505c34dcf316c5ca.setIcon(icon_cee715de9fe5a0682814c387f1b92644);
+        
+    
+        var popup_a895575c0a81e6211de5d6e9b5f24b09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_454aeed0de9d599a8b9d28f6c02652b4 = $(`<div id="html_454aeed0de9d599a8b9d28f6c02652b4" style="width: 100.0%; height: 100.0%;">IS170-Riparian Sediment</div>`)[0];
+                popup_a895575c0a81e6211de5d6e9b5f24b09.setContent(html_454aeed0de9d599a8b9d28f6c02652b4);
+            
+        
+
+        marker_e5e10c793c57b4f6505c34dcf316c5ca.bindPopup(popup_a895575c0a81e6211de5d6e9b5f24b09)
+        ;
+
+        
+    
+    
+            var marker_50056964120adc369a081af21ece41d8 = L.marker(
+                [42.65612, -70.836998],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_a71ea82e7fd9299ce736f70d2ba0ba13 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_50056964120adc369a081af21ece41d8.setIcon(icon_a71ea82e7fd9299ce736f70d2ba0ba13);
+        
+    
+        var popup_60a169a5131333405ce233c2b80a5b2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2730c15b421a7cf04f9cd7d107c3fde = $(`<div id="html_a2730c15b421a7cf04f9cd7d107c3fde" style="width: 100.0%; height: 100.0%;">IS172-Stream Sediment</div>`)[0];
+                popup_60a169a5131333405ce233c2b80a5b2f.setContent(html_a2730c15b421a7cf04f9cd7d107c3fde);
+            
+        
+
+        marker_50056964120adc369a081af21ece41d8.bindPopup(popup_60a169a5131333405ce233c2b80a5b2f)
+        ;
+
+        
+    
+    
+            var marker_57a74bbf6e5cb882b5d24277ae693819 = L.marker(
+                [42.65612, -70.836998],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_06739179abd4f9d14e4e02e974c74b57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_57a74bbf6e5cb882b5d24277ae693819.setIcon(icon_06739179abd4f9d14e4e02e974c74b57);
+        
+    
+        var popup_874c94016c5e23154e616151035f6d2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ef1273d1fed97f88d8d0bc613b6f4d5 = $(`<div id="html_4ef1273d1fed97f88d8d0bc613b6f4d5" style="width: 100.0%; height: 100.0%;">IS172-Riparian Sediment</div>`)[0];
+                popup_874c94016c5e23154e616151035f6d2a.setContent(html_4ef1273d1fed97f88d8d0bc613b6f4d5);
+            
+        
+
+        marker_57a74bbf6e5cb882b5d24277ae693819.bindPopup(popup_874c94016c5e23154e616151035f6d2a)
+        ;
+
+        
+    
+    
+            var marker_6e120362d2db6708afc6c234c0b69630 = L.marker(
+                [42.674919, -70.850456],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_59a6562ecbc65475961600552db417d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6e120362d2db6708afc6c234c0b69630.setIcon(icon_59a6562ecbc65475961600552db417d5);
+        
+    
+        var popup_cf9210329e916b1119ff8afc734eac88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65015f2b3e0748913321759f250f0a41 = $(`<div id="html_65015f2b3e0748913321759f250f0a41" style="width: 100.0%; height: 100.0%;">IS175-Stream Sediment</div>`)[0];
+                popup_cf9210329e916b1119ff8afc734eac88.setContent(html_65015f2b3e0748913321759f250f0a41);
+            
+        
+
+        marker_6e120362d2db6708afc6c234c0b69630.bindPopup(popup_cf9210329e916b1119ff8afc734eac88)
+        ;
+
+        
+    
+    
+            var marker_529b2aed26fc82efca1dbc10c5e2595e = L.marker(
+                [42.674919, -70.850456],
+                {
+}
+            ).addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+    
+            var icon_f2a0150684b8f8d2b97b2107e8e05e72 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_529b2aed26fc82efca1dbc10c5e2595e.setIcon(icon_f2a0150684b8f8d2b97b2107e8e05e72);
+        
+    
+        var popup_322d1ed6bc34719fd40dbb129c28bf6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac6d52c2121d51ae44f7dfc89ffbf504 = $(`<div id="html_ac6d52c2121d51ae44f7dfc89ffbf504" style="width: 100.0%; height: 100.0%;">IS175-Riparian Sediment</div>`)[0];
+                popup_322d1ed6bc34719fd40dbb129c28bf6a.setContent(html_ac6d52c2121d51ae44f7dfc89ffbf504);
+            
+        
+
+        marker_529b2aed26fc82efca1dbc10c5e2595e.bindPopup(popup_322d1ed6bc34719fd40dbb129c28bf6a)
+        ;
+
+        
+    
+    
+            tile_layer_079d7824d67153b7a148fb123078f0a5.addTo(map_d2a9e9849c6fe203d9c2010ff90aff98);
+        
+</script>
+</html>
