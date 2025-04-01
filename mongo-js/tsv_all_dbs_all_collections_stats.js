@@ -1,6 +1,6 @@
-// load("mongo_js/tsv_all_dbs_all_collections_stats.js");
+// load("mongo-js/tsv_all_dbs_all_collections_stats.js");
 // or
-// mongosh <connection_string> mongo_js/tsv_all_dbs_all_collections_stats.js
+// mongosh <connection_string> mongo-js/tsv_all_dbs_all_collections_stats.js
 
 function getDatabaseReportTSV() {
     let report = [];

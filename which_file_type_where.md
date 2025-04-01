@@ -29,7 +29,7 @@ Markdown (.md) files repo-wide:
 
 1. Root directory:
    - CLAUDE.md, env_triad_annotation.md, env_triads.md, requests-caching.md
-2. claude_mds directory:
+2. claude-mds directory:
    - nmdc-env-triad-valueset-lifecycle.md, submission-schema-CLAUDE.md
 3. Notebooks directory:
    - voting-sheet-generation-readme.md
