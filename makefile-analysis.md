@@ -340,3 +340,64 @@ To work with NCBI Packages:
 3. There's significant attention to memory efficiency, using iterparse for XML and batch processing for MongoDB.
 
 4. Package information is a critical reference dataset used throughout the environmental context analysis workflow.
+
+## Random Sample Resources Tool
+
+### Purpose and Functionality
+The `random-sample-resources` tool is a utility for randomly sampling JSON resource files. Its primary purpose is to:
+
+1. Read a JSON file containing a list of resources
+2. Randomly select a percentage of those resources
+3. Write the downsampled data to a new JSON file
+
+### Implementation Details
+- Located at: `external_metadata_awareness/adhoc/random_sample_resources.py`
+- Function: `downsample_json_resources`
+- Parameters:
+  - `input-file`: Path to the input JSON file
+  - `output-file`: Path to the output JSON file
+  - `sample-percentage`: Percentage of data to keep (e.g., 5 for 5%)
+
+### Code Analysis
+The implementation is straightforward:
+1. It loads the entire JSON file into memory
+2. Uses Python's `random.sample()` to randomly select a subset of resources
+3. Writes the downsampled data to a new file with JSON formatting
+
+There are commented-out sections in the code suggesting it was originally designed for a specific JSON structure with a 'resources' key, but was then modified to work with a flat list of resources.
+
+### Current Usage
+The tool is used in `nmdc_metadata.Makefile` for creating a 5% sample of NMDC production biosamples:
+```
+local/nmdc-production-biosamples-5pct.json: downloads/nmdc-production-biosamples.json
+    $(RUN) random-sample-resources \
+        --input-file $< \
+        --output-file $@ \
+        --sample-percentage 5
+```
+
+### Integration with the Workflow
+This tool serves in the data preparation phase, allowing:
+1. Creation of smaller test datasets for development and testing
+2. Faster processing when working with very large collections of resources
+3. Validation of analysis methods on representative samples
+
+### Considerations
+
+1. **Memory Usage**: The tool loads the entire JSON file into memory, which could be problematic for very large files.
+
+2. **Sampling Approach**: It uses simple random sampling without any stratification, which may not preserve the distribution of certain attributes in the original dataset.
+
+3. **Location**: The tool has been moved to the `adhoc` directory, suggesting it's considered a utility rather than a core part of the processing pipeline.
+
+4. **pyproject.toml Reference**: The alias entry in pyproject.toml needed to be updated to reflect the tool's new location in the adhoc directory.
+
+### Potential Improvements
+
+1. **Streaming Processing**: For very large files, a streaming approach to avoid loading the entire file into memory could be implemented.
+
+2. **Stratified Sampling**: Add support for stratified sampling based on specific attributes to preserve important distributions.
+
+3. **Progress Reporting**: For large files, adding progress reporting could be beneficial.
+
+4. **Error Handling**: More robust error handling for malformed JSON files or other potential issues.

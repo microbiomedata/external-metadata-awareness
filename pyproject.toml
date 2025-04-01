@@ -48,10 +48,25 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
+# Original aliases
 biosample-json-to-context-tsv = 'external_metadata_awareness.biosample_json_to_context_tsv:create_biosample_table'
 build-prompt-from-template = 'external_metadata_awareness.build_prompt_from_template:process_files'
-get-extension-unique-slots = 'external_metadata_awareness.get_extension_unique_slots:process_json'
 count-xml-paths = 'external_metadata_awareness.count_xml_paths:main'
+get-extension-unique-slots = 'external_metadata_awareness.get_extension_unique_slots:process_json'
 ncbi-packages-csv-report = 'external_metadata_awareness.ncbi_packages_csv_report:xml_to_csv'
-random-sample-resources = 'external_metadata_awareness.random_sample_resources:downsample_json_resources'
+random-sample-resources = 'external_metadata_awareness.adhoc.random_sample_resources:downsample_json_resources'
 xml-to-mongo = 'external_metadata_awareness.xml_to_mongo:load_xml_to_mongodb'
+
+# New aliases for Makefile scripts
+add-duckdb-key-value-row = 'external_metadata_awareness.add_duckdb_key_value_row:main'
+dump-sra-metadata-schema = 'external_metadata_awareness.dump_sra_metadata_table_schema:main'
+env-triad-values-splitter = 'external_metadata_awareness.new_env_triad_values_splitter:main'
+export-sra-accession-pairs = 'external_metadata_awareness.export_sra_accession_pairs:main'
+extract-ncbi-packages-fields = 'external_metadata_awareness.extract_all_ncbi_packages_fields:main'
+infer-biosample-env-context-curies = 'external_metadata_awareness.infer_biosample_env_context_obo_curies:main'
+load-bioprojects-into-mongodb = 'external_metadata_awareness.load_acceptable_sized_leaf_bioprojects_into_mongodb:main'
+mongodb-biosamples-to-duckdb = 'external_metadata_awareness.mongodb_biosamples_to_duckdb:main'
+ncbi-package-info-to-duckdb = 'external_metadata_awareness.ncbi_package_info_to_duck_db:main'
+prioritize-lexmatch-results = 'external_metadata_awareness.prioritize_lexmatch_results:main'
+sra-accession-pairs-to-mongo = 'external_metadata_awareness.sra_accession_pairs_tsv_to_mongo:main'
+sra-parquet-to-mongodb = 'external_metadata_awareness.sra_parquet_to_mongodb:main'
