@@ -160,6 +160,7 @@ def main():
                 if ann_length < MIN_ANNOTATION_LENGTH:
                     continue  # Skip too-short annotations.
             ann_dict = annotation_to_dict(ann, label_length)
+            ann_dict['prefix_uc'] = ann_dict['object_id'].split(":")[0].upper()
             processed_annotations.append(ann_dict)
 
         filtered_annotations = filter_subsumed_annotations(processed_annotations)
