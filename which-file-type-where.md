@@ -1,10 +1,3 @@
-- Python (.py): 5 files from root moved into external_metadata_awareness
-    - copy_database_without_compression.py
-    - nomalize_samp_size.py
-    - plot_oak_annotation_coverage.py
-    - populate_env_triads_collection.py
-    - prioritize_lexmatch_results.py
-
 1. Main Python package:
    - In external_metadata_awareness/ (large number of Python scripts, all were moved here including your scripts)
 2. Notebooks supporting files:
@@ -66,30 +59,19 @@ YAML/YML files repo-wide:
    - extra-openai-models.yaml
 
 
-- SQLite (.sqlite): 3 files in root
-    - my_cache.sqlite
-    - new-env-triad-values-splitter-cache.sqlite
-    - requests_cache.sqlite
+- SQLite (.sqlite): 1 file in root
+    - external-metadata-awareness-requests-cache.sqlite
 
 SQLite/DB files repo-wide:
 
 1. Root directory:
-   - my_cache.sqlite
-   - new-env-triad-values-splitter-cache.sqlite
-   - requests_cache.sqlite
+   - external-metadata-awareness-requests-cache.sqlite
 2. lexmatch-shell-scripts:
    - env_triad_pvs_sheet.db
    - nmdc.db
 3. metpo directory:
    - mpo_v0.74.en_only.db
    - n4l_merged.db
-4. Notebooks directory:
-   - requests_cache.sqlite in studies_exploration/ncbi_annotation_mining/
-
-- Jupyter Notebooks (.ipynb): 2 files in root, both deleted because of equivalent (or better) .py files, since moved
-  into external_metadata_awareness
-    - nomalize_samp_size.ipynb
-    - populate_env_triads_collection.ipynb
 
 Jupyter Notebooks (.ipynb) repo-wide:
 
@@ -105,14 +87,14 @@ Jupyter Notebooks (.ipynb) repo-wide:
     - studies_exploration/ (many subdirectories with notebooks)
 
 
-- Other files:
-    - Makefile (no extension)
-    - poetry.lock
-    - pyproject.toml
+- Other root files:
     - .gitignore
     - .yamlfmt
+    - Makefile 
     - bioportal-class-mapping-errors.txt
     - env-triad-annotation-etc-collections.tsv
+    - poetry.lock
+    - pyproject.toml
 
 Makefiles repo-wide:
 

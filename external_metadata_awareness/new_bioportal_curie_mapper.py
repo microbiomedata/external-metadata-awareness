@@ -36,6 +36,7 @@ db = client.ncbi_metadata
 collection = db.env_triad_component_curies_uc
 
 map_to = {
+    "DOID",
     "ENVO",
     "FOODON",
     "MONDO",

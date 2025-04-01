@@ -1,11 +1,22 @@
+import datetime
+import sys
+import time
+from copy import deepcopy
+
 import click
 from pymongo import MongoClient
 from quantulum3 import parser
-from copy import deepcopy
 from tqdm import tqdm
-import time
-import sys
-import datetime
+
+
+def ensure_index(collection, field_name):
+    """Ensure an ascending index exists on the given field."""
+    existing_indexes = collection.index_information()
+    if field_name not in [list(i["key"])[0][0] for i in existing_indexes.values()]:
+        collection.create_index([(field_name, 1)])
+        click.echo(f"[{timestamp()}] Created index on '{collection.name}.{field_name}'")
+    else:
+        click.echo(f"[{timestamp()}] Index already exists on '{collection.name}.{field_name}'")
 
 
 def clean_dict(d):
@@ -271,6 +282,9 @@ def main(mongodb_uri, db_name, input_collection, output_collection, field, verbo
 
         # Process each field incrementally
         for current_field in field:
+
+            ensure_index(client[db_name][input_collection], current_field)
+
             if not is_quiet:
                 click.echo(f"[{timestamp()}] " + "-" * 80)
                 click.echo(f"[{timestamp()}] Processing field: '{current_field}'")
@@ -285,6 +299,8 @@ def main(mongodb_uri, db_name, input_collection, output_collection, field, verbo
                 if not is_quiet:
                     click.echo(f"[{timestamp()}] Skipping processing for field '{current_field}'")
                 continue
+
+            ensure_index(client[db_name][output_collection], "harmonized_name")
 
             # Step 2: Parse measurements
             parsed_count = parse_measurements(client, db_name, output_collection, current_field, is_verbose)
