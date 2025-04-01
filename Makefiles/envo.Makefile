@@ -10,36 +10,17 @@ WGET=wget
 
 local/biome-relationships.tsv:
 	$(RUN) runoak --input sqlite:obo:envo relationships .desc//p=i ENVO:00000428 > $@
-	# !!! pivot? include entailment? --include-entailed / --no-include-entailed; --non-redundant-entailed / --no-non-redundant-entailed
-	# LLM web interfaces might want CSVs
-
-local/biome-relationships.csv: local/biome-relationships.tsv
-	sed 's/\t/,/g' $< > $@
-	#awk 'BEGIN {FS="\t"; OFS=","} {print $$0}' $< > $@
-	rm -rf $<
 
 local/biome-metadata.yaml:
 	$(RUN) runoak --input sqlite:obo:envo term-metadata .desc//p=i ENVO:00000428 > $@
 	 # !!! try different formats? or predicate list?
 
-local/biome-metadata.json: local/biome-metadata.yaml
-	yq ea '[.]' $< -o=json | cat > $@
-	rm -rf $<
-
 # our guideline is that env_medium should be answered with an EnvO biome subclass
 local/environmental-materials-relationships.tsv:
 	$(RUN) runoak --input sqlite:obo:envo relationships .desc//p=i ENVO:00010483 > $@
 
-local/environmental-materials-relationships.csv: local/environmental-materials-relationships.tsv
-	sed 's/\t/,/g' $< > $@
-	rm -rf $<
-
 local/environmental-materials-metadata.yaml:
 	$(RUN) runoak --input sqlite:obo:envo term-metadata .desc//p=i ENVO:00010483 > $@
-
-local/environmental-materials-metadata.json: local/environmental-materials-metadata.yaml
-	yq ea '[.]' $< -o=json | cat > $@
-	rm -rf $<
 
 local/environmental-material-info.txt:
 	$(RUN) runoak --input sqlite:obo:envo info .desc//p=i ENVO:00010483 > $@
@@ -59,9 +40,6 @@ local/soil-env_broad_scale-algebraic.txt:
 local/envo-leaves.txt: local/env-local-scale-candidate-ids.txt
 	$(RUN) runoak --input sqlite:obo:envo leafs > $@
 
-local/envo-leaf-ids.txt: local/envo-leaves.txt
-	cut -f1 -d' ' $< > $@
-
 local/envo-info.txt:
 	$(RUN) runoak --input sqlite:obo:envo info  .desc//p=i continuant > $@ # or .ALL
 
@@ -74,9 +52,4 @@ local/biome-relationships.csv
 	$(RUN) build-prompt-from-template \
 		--spec-file-path $(word 1,$^) \
 		--output-file-path $@
-
-local/unused-terrestrial-biomes-response.txt: local/unused-terrestrial-biomes-prompt.txt
-	cat $(word 1,$^) | $(RUN) llm prompt --model claude-3.5-sonnet -o temperature 0.01 | tee $@
-
-
 

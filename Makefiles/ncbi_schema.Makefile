@@ -6,6 +6,7 @@ WGET=wget
 downloads/ncbi-biosample-attributes.xml:
 	$(WGET) -O $@ "https://www.ncbi.nlm.nih.gov/biosample/docs/attributes/?format=xml"
 
+# also mentioned in ncbi_schema.Makefile
 downloads/ncbi-biosample-packages.xml:
 	$(WGET) -O $@ "https://www.ncbi.nlm.nih.gov/biosample/docs/packages/?format=xml"
 
@@ -26,4 +27,3 @@ load-packages-into-mongo: downloads/ncbi-biosample-packages.xml
 		--mongo-host $(MONGO_HOST) \
 		--mongo-port $(MONGO_PORT)
 	date
-

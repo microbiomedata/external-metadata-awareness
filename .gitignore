@@ -1,5 +1,11 @@
 notebooks/studies_exploration/flattening/ols_cache.sqlite
 
+# Explicitly ignore large files that exceed GitHub's recommended size limits
+notebooks/studies_exploration/flattening/flattened_biosample.json
+notebooks/studies_exploration/flattening/nmdc_submissions_biosamples.json
+lexmatch-output/nmdc_mixs_vs_mesh.SSSOM.tsv
+lexmatch-output/nmdc_mixs_vs_ito.SSSOM.tsv
+
 **/*.env
 **/.DS_Store
 **/__pycache__/
