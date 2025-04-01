@@ -42,7 +42,7 @@ ncbi_biosample_ids = get_ncbi_biosample_ids(ncbi_query)
 print(len(ncbi_biosample_ids))
 
 # Get BioSample IDs from DuckDB
-duckdb_file = '../local/ncbi_biosamples.duckdb'
+duckdb_file = '../../local/ncbi_biosamples.duckdb'
 duckdb_biosample_ids = get_duckdb_biosample_ids(duckdb_file)
 print(len(duckdb_biosample_ids))
 

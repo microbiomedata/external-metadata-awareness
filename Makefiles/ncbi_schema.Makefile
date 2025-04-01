@@ -14,11 +14,6 @@ local/ncbi-biosample-packages.csv: downloads/ncbi-biosample-packages.xml
 	--xml-file $< \
 	--output-file $@
 
-local/ncbi-biosamples-context-value-counts.csv:
-	$(RUN) count-biosample-context-vals-from-postgres \
-		--output-file $@ \
-		--min-count 2
-
 .PHONY: load-packages-into-mongo
 load-packages-into-mongo: downloads/ncbi-biosample-packages.xml
 	date
@@ -31,3 +26,4 @@ load-packages-into-mongo: downloads/ncbi-biosample-packages.xml
 		--mongo-host $(MONGO_HOST) \
 		--mongo-port $(MONGO_PORT)
 	date
+
