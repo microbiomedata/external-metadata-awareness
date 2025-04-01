@@ -1,0 +1,80 @@
+# curie_map:
+#   SO: http://purl.obolibrary.org/obo/SO_
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/f86837cd-588f-462e-a7c8-d022d5be4895
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+http://example.org/metpo-cleanroom/CRISPR	CRISPR	skos:closeMatch	SO:0001459	CRISPR	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	crispr
+http://example.org/metpo-cleanroom/CRISPR	CRISPR	skos:closeMatch	SO:0001459	CRISPR	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	crispr
+http://example.org/metpo-cleanroom/CRISPR	CRISPR	skos:closeMatch	http://example.org/metpo-cleanroom/CRISPR	CRISPR	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	crispr
+http://example.org/metpo-cleanroom/CRISPR	CRISPR	skos:closeMatch	http://example.org/metpo-cleanroom/CRISPR	CRISPR	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	crispr
+http://example.org/metpo-cleanroom/CRISPR	CRISPR	skos:closeMatch	http://example.org/metpo-cleanroom/CRISPR	CRISPR	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	crispr
+http://example.org/metpo-cleanroom/CRISPR	CRISPR	skos:closeMatch	http://example.org/metpo-cleanroom/CRISPR	CRISPR	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	crispr
+http://example.org/metpo-cleanroom/biofilm	biofilm	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm	biofilm	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	biofilm-forming
+http://example.org/metpo-cleanroom/biofilm	biofilm	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm	biofilm	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0042710
+http://example.org/metpo-cleanroom/biofilm	biofilm	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	biofilm-forming
+http://example.org/metpo-cleanroom/biofilm	biofilm	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0042710
+http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm	biofilm	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	biofilm-forming
+http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm	biofilm	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0042710
+http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	biofilm-forming
+http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0042710
+http://example.org/metpo-cleanroom/cold_shock_protein	cold shock protein	skos:closeMatch	http://example.org/metpo-cleanroom/cold_shock_protein	cold shock protein	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009409
+http://example.org/metpo-cleanroom/cold_shock_protein	cold shock protein	skos:closeMatch	http://example.org/metpo-cleanroom/cold_shock_response	cold shock response	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009409
+http://example.org/metpo-cleanroom/cold_shock_response	cold shock response	skos:closeMatch	http://example.org/metpo-cleanroom/cold_shock_protein	cold shock protein	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009409
+http://example.org/metpo-cleanroom/cold_shock_response	cold shock response	skos:closeMatch	http://example.org/metpo-cleanroom/cold_shock_response	cold shock response	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009409
+http://example.org/metpo-cleanroom/domain	domain	skos:closeMatch	SO:0000417	polypeptide_domain	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	domain
+http://example.org/metpo-cleanroom/domain	domain	skos:closeMatch	SO:0000417	polypeptide_domain	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	domain
+http://example.org/metpo-cleanroom/domain	domain	skos:closeMatch	http://example.org/metpo-cleanroom/domain	domain	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	domain
+http://example.org/metpo-cleanroom/domain	domain	skos:closeMatch	http://example.org/metpo-cleanroom/domain	domain	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	domain
+http://example.org/metpo-cleanroom/domain	domain	skos:closeMatch	http://example.org/metpo-cleanroom/domain	domain	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	domain
+http://example.org/metpo-cleanroom/domain	domain	skos:closeMatch	http://example.org/metpo-cleanroom/domain	domain	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	domain
+http://example.org/metpo-cleanroom/fimbriae	fimbriae	skos:closeMatch	http://example.org/metpo-cleanroom/fimbriae	fimbriae	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009289
+http://example.org/metpo-cleanroom/fimbriae	fimbriae	skos:closeMatch	http://example.org/metpo-cleanroom/pilus	pilus	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009289
+http://example.org/metpo-cleanroom/genomic_island	genomic island	skos:closeMatch	SO:0000772	genomic_island	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	genomic island
+http://example.org/metpo-cleanroom/genomic_island	genomic island	skos:closeMatch	SO:0000772	genomic_island	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	genomic island
+http://example.org/metpo-cleanroom/genomic_island	genomic island	skos:closeMatch	http://example.org/metpo-cleanroom/genomic_island	genomic island	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	genomic island
+http://example.org/metpo-cleanroom/genomic_island	genomic island	skos:closeMatch	http://example.org/metpo-cleanroom/genomic_island	genomic island	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	genomic island
+http://example.org/metpo-cleanroom/genomic_island	genomic island	skos:closeMatch	http://example.org/metpo-cleanroom/genomic_island	genomic island	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	genomic island
+http://example.org/metpo-cleanroom/genomic_island	genomic island	skos:closeMatch	http://example.org/metpo-cleanroom/genomic_island	genomic island	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	genomic island
+http://example.org/metpo-cleanroom/gram_stain_positive	Gram-stain positive	skos:closeMatch	SO:0001323	archaeosine	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	g+
+http://example.org/metpo-cleanroom/gram_stain_positive	Gram-stain positive	skos:closeMatch	http://example.org/metpo-cleanroom/gram_stain_positive	Gram-stain positive	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	g+
+http://example.org/metpo-cleanroom/mobile_genetic_element	mobile genetic element	skos:closeMatch	SO:0001037	mobile_genetic_element	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	mobile genetic element
+http://example.org/metpo-cleanroom/mobile_genetic_element	mobile genetic element	skos:closeMatch	SO:0001037	mobile_genetic_element	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	mge
+http://example.org/metpo-cleanroom/mobile_genetic_element	mobile genetic element	skos:closeMatch	SO:0001037	mobile_genetic_element	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	mobile genetic element
+http://example.org/metpo-cleanroom/mobile_genetic_element	mobile genetic element	skos:closeMatch	http://example.org/metpo-cleanroom/mobile_genetic_element	mobile genetic element	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	mobile genetic element
+http://example.org/metpo-cleanroom/mobile_genetic_element	mobile genetic element	skos:closeMatch	http://example.org/metpo-cleanroom/mobile_genetic_element	mobile genetic element	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	mobile genetic element
+http://example.org/metpo-cleanroom/mobile_genetic_element	mobile genetic element	skos:closeMatch	http://example.org/metpo-cleanroom/mobile_genetic_element	mobile genetic element	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	mge
+http://example.org/metpo-cleanroom/mobile_genetic_element	mobile genetic element	skos:closeMatch	http://example.org/metpo-cleanroom/mobile_genetic_element	mobile genetic element	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	mobile genetic element
+http://example.org/metpo-cleanroom/mobile_genetic_element	mobile genetic element	skos:closeMatch	http://example.org/metpo-cleanroom/mobile_genetic_element	mobile genetic element	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mobile genetic element
+http://example.org/metpo-cleanroom/pigment	pigment	skos:closeMatch	http://example.org/metpo-cleanroom/pigment	pigment	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pigmented
+http://example.org/metpo-cleanroom/pigment	pigment	skos:closeMatch	http://example.org/metpo-cleanroom/pigmentation	pigmentation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pigmented
+http://example.org/metpo-cleanroom/pigmentation	pigmentation	skos:closeMatch	http://example.org/metpo-cleanroom/pigment	pigment	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pigmented
+http://example.org/metpo-cleanroom/pigmentation	pigmentation	skos:closeMatch	http://example.org/metpo-cleanroom/pigmentation	pigmentation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pigmented
+http://example.org/metpo-cleanroom/pilus	pilus	skos:closeMatch	http://example.org/metpo-cleanroom/fimbriae	fimbriae	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009289
+http://example.org/metpo-cleanroom/pilus	pilus	skos:closeMatch	http://example.org/metpo-cleanroom/pilus	pilus	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009289
+http://example.org/metpo-cleanroom/plasmid	plasmid	skos:closeMatch	SO:0000155	plasmid	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	plasmid
+http://example.org/metpo-cleanroom/plasmid	plasmid	skos:closeMatch	SO:0000155	plasmid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	plasmid
+http://example.org/metpo-cleanroom/plasmid	plasmid	skos:closeMatch	http://example.org/metpo-cleanroom/plasmid	plasmid	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	plasmid
+http://example.org/metpo-cleanroom/plasmid	plasmid	skos:closeMatch	http://example.org/metpo-cleanroom/plasmid	plasmid	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	plasmid
+http://example.org/metpo-cleanroom/plasmid	plasmid	skos:closeMatch	http://example.org/metpo-cleanroom/plasmid	plasmid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	plasmid
+http://example.org/metpo-cleanroom/plasmid	plasmid	skos:closeMatch	http://example.org/metpo-cleanroom/plasmid	plasmid	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	plasmid
+http://example.org/metpo-cleanroom/prophage	prophage	skos:closeMatch	SO:0001006	prophage	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	prophage
+http://example.org/metpo-cleanroom/prophage	prophage	skos:closeMatch	SO:0001006	prophage	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	prophage
+http://example.org/metpo-cleanroom/prophage	prophage	skos:closeMatch	http://example.org/metpo-cleanroom/prophage	prophage	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	prophage
+http://example.org/metpo-cleanroom/prophage	prophage	skos:closeMatch	http://example.org/metpo-cleanroom/prophage	prophage	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	prophage
+http://example.org/metpo-cleanroom/prophage	prophage	skos:closeMatch	http://example.org/metpo-cleanroom/prophage	prophage	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	prophage
+http://example.org/metpo-cleanroom/prophage	prophage	skos:closeMatch	http://example.org/metpo-cleanroom/prophage	prophage	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	prophage
+http://example.org/metpo-cleanroom/transposon	transposon	skos:closeMatch	SO:0000101	transposable_element	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	transposon
+http://example.org/metpo-cleanroom/transposon	transposon	skos:closeMatch	SO:0000101	transposable_element	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	transposon
+http://example.org/metpo-cleanroom/transposon	transposon	skos:closeMatch	SO:0000182	DNA_transposon	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:relatedMatch-INVERSE	http://example.org/metpo-cleanroom/transposon
+http://example.org/metpo-cleanroom/transposon	transposon	skos:closeMatch	http://example.org/metpo-cleanroom/transposon	transposon	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	transposon
+http://example.org/metpo-cleanroom/transposon	transposon	skos:closeMatch	http://example.org/metpo-cleanroom/transposon	transposon	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	transposon
+http://example.org/metpo-cleanroom/transposon	transposon	skos:closeMatch	http://example.org/metpo-cleanroom/transposon	transposon	semapv:LexicalMatching	oaklib	0.5	rdf:ID	rdf:ID	http://example.org/metpo-cleanroom/transposon
+http://example.org/metpo-cleanroom/transposon	transposon	skos:closeMatch	http://example.org/metpo-cleanroom/transposon	transposon	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	transposon
+http://example.org/metpo-cleanroom/transposon	transposon	skos:closeMatch	http://example.org/metpo-cleanroom/transposon	transposon	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	transposon

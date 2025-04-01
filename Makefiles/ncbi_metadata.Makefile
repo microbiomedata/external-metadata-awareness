@@ -110,8 +110,7 @@ local/biosample-count-mongodb.txt:
 
 local/ncbi_biosamples.duckdb:
 	date
-	poetry run python \
-		external_metadata_awareness/mongodb_biosamples_to_duckdb.py \
+	$(RUN) mongodb-biosamples-to-duckdb \
 		extract \
 		--batch_size $(MONGO2DUCK_BATCH_SIZE) \
 		--collection $(MONGO_BIOSAMPLES_COLLECTION) \
@@ -137,13 +136,13 @@ local/ncbi_biosamples.duckdb:
 #	date
 
 local/ncbi-biosample-packages.tsv: downloads/ncbi-biosample-packages.xml
-	poetry run python external_metadata_awareness/extract_all_ncbi_packages_fields.py \
+	$(RUN) extract-ncbi-packages-fields \
 		--xml-file $< \
 		--output-file $@
 
 add-ncbi-biosample-package-attributes: downloads/ncbi-biosample-packages.xml local/ncbi_biosamples.duckdb
 	date
-	poetry run python external_metadata_awareness/ncbi_package_info_to_duck_db.py \
+	$(RUN) ncbi-package-info-to-duckdb \
 		--db-path $(word 2, $^) \
 		--table-name ncbi_package_info \
 		--xml-file $(word 1, $^) \
@@ -151,7 +150,7 @@ add-ncbi-biosample-package-attributes: downloads/ncbi-biosample-packages.xml loc
 	date
 
 add-ncbi-biosamples-xml-download-date: local/ncbi_biosamples.duckdb downloads/biosample_set.xml.gz
-	poetry run python external_metadata_awareness/add_duckdb_key_value_row.py \
+	$(RUN) add-duckdb-key-value-row \
 		--db-path $< \
 		--table-name etl_log \
 		--key ncbi-biosamples-xml-download-date \
@@ -160,7 +159,7 @@ add-ncbi-biosamples-xml-download-date: local/ncbi_biosamples.duckdb downloads/bi
 infer-env-triad-curies: local/ncbi_biosamples.duckdb
 	# ~ 15 minutes with envo and po. add bto and uberon: ~ 70 minutes. still running after 24 hours with NCBITaxon.
 	date
-	poetry run python external_metadata_awareness/infer_biosample_env_context_obo_curies.py \
+	$(RUN) infer-biosample-env-context-curies \
 		--biosamples-duckdb-file $<
 	date
 
@@ -174,7 +173,7 @@ SRA_BIGQUERY_LIMIT = 30000000 # expect ~ 30000000
 
 # Preview mode: analyze the dataset without exporting
 biosample-bioproject-preview:
-	poetry run python  external_metadata_awareness/export_sra_accession_pairs.py \
+	$(RUN) export-sra-accession-pairs \
 		--project $(SRA_BIGQUERY_PROJECT) \
 		--dataset $(SRA_BIGQUERY_DATASET) \
 		--table $(SRA_BIGQUERY_TABLE) \
@@ -184,7 +183,7 @@ biosample-bioproject-preview:
 
 # Production mode: full export of accession pairs
 downloads/sra_accession_pairs.tsv:
-	poetry run python  external_metadata_awareness/export_sra_accession_pairs.py \
+	$(RUN) export-sra-accession-pairs \
 		--project $(SRA_BIGQUERY_PROJECT) \
 		--dataset $(SRA_BIGQUERY_DATASET) \
 		--table $(SRA_BIGQUERY_TABLE) \
@@ -194,7 +193,7 @@ downloads/sra_accession_pairs.tsv:
 		--output $@
 
 downloads/sra_metadata_table_schema.tsv:
-	poetry run python  external_metadata_awareness/dump_sra_metadata_table_schema.py \
+	$(RUN) dump-sra-metadata-schema \
 		--project $(SRA_BIGQUERY_PROJECT) \
 		--dataset $(SRA_BIGQUERY_DATASET) \
 		--table $(SRA_BIGQUERY_TABLE) \
@@ -204,7 +203,7 @@ downloads/sra_metadata_table_schema.tsv:
 .PHONY: biosample-bioproject-preview sra_accession_pairs_tsv_to_mongo analyze_bioproject_paths load_acceptable_sized_leaf_bioprojects_into_mongodb
 
 sra_accession_pairs_tsv_to_mongo: downloads/sra_accession_pairs.tsv
-	poetry run python external_metadata_awareness/sra_accession_pairs_tsv_to_mongo.py \
+	$(RUN) sra-accession-pairs-to-mongo \
 		--file-path $< \
 		--mongo-host $(MONGO_HOST) \
 		--mongo-port $(MONGO_PORT)  \
@@ -214,7 +213,7 @@ sra_accession_pairs_tsv_to_mongo: downloads/sra_accession_pairs.tsv
 		--report-interval 500000
 
 load_acceptable_sized_leaf_bioprojects_into_mongodb: downloads/bioproject.xml
-	poetry run python external_metadata_awareness/load_acceptable_sized_leaf_bioprojects_into_mongodb.py \
+	$(RUN) load-bioprojects-into-mongodb \
 		--mongo-uri mongodb://$(MONGO_HOST):$(MONGO_PORT) \
 		--db-name $(MONGO_DB) \
 		--project-collection bioprojects \
@@ -222,7 +221,7 @@ load_acceptable_sized_leaf_bioprojects_into_mongodb: downloads/bioproject.xml
 		--oversize-dir local/oversize $<
 
 local/bioproject_xpath_counts.json: downloads/bioproject.xml
-	poetry run python external_metadata_awareness/count_xml_paths.py \
+	poetry run count-xml-paths \
 		--xml-file $< \
 		--interval 10 \
 		--always-count-path '/PackageSet/Package/Project' \
@@ -230,7 +229,7 @@ local/bioproject_xpath_counts.json: downloads/bioproject.xml
 		--output $@
 
 local/bioproject_packageset_xpath_counts.json: downloads/bioproject.xml
-	poetry run python external_metadata_awareness/count_xml_paths.py \
+	poetry run count-xml-paths \
 		--xml-file $< \
 		--interval 10 \
 		--always-count-path '/PackageSet' \
@@ -238,7 +237,7 @@ local/bioproject_packageset_xpath_counts.json: downloads/bioproject.xml
 		--output $@
 
 local/biosample_xpath_counts.json: local/biosample_set.xml
-	poetry run python external_metadata_awareness/count_xml_paths.py \
+	poetry run count-xml-paths \
 		--xml-file $< \
 		--interval 10 \
 		--always-count-path '/BioSampleSet/BioSample' \
@@ -258,7 +257,7 @@ fetch_sra_metadata_parquet_from_s3_to_perlmutter: local/sra_metadata_parquet
 load_sra_metadata_parquet_into_mongo: local/sra_metadata_parquet
 	# todo may need to fix .env path
 	# todo may want to change requests cache location
-	$(RUN) python external_metadata_awareness/sra_parquet_to_mongodb.py \
+	$(RUN) sra-parquet-to-mongodb \
 		--parquet-dir $< \
 		--drop-collection \
 		--progress-interval 1000
@@ -268,14 +267,14 @@ load_sra_metadata_parquet_into_mongo: local/sra_metadata_parquet
 .PHONY:  split_env_triad_values_from_perlmutter split_env_triad_values_from_local
 split_env_triad_values_from_perlmutter:
 	# todo may need to fix .env path
-	$(RUN) python external_metadata_awareness/new_env_triad_values_splitter.py \
+	$(RUN) env-triad-values-splitter \
 		--db ncbi_metadata \
 		--collection biosamples_env_triad_value_counts_gt_1 \
 		--min-length 3
 
 split_env_triad_values_from_local:
 	# todo may need to fix .env path
-	$(RUN) python external_metadata_awareness/new_env_triad_values_splitter.py \
+	$(RUN) env-triad-values-splitter \
 		--host localhost \
 		--port 27017 \
 		--db ncbi_metadata \

@@ -35,12 +35,19 @@ client = MongoClient(mongo_url)
 db = client.ncbi_metadata
 collection = db.env_triad_component_curies_uc
 
-map_to = {"ENVO", "FOODON", "MONDO", "NCBITAXON", "PO", "UBERON", }
+map_to = {
+    "ENVO",
+    "FOODON",
+    "MONDO",
+    "NCBITAXON",
+    "PO",
+    "UBERON",
+}
 dont_map_from = {
     "BFO",
     "IAO",
-    "RO",
     "OF",  # todo garbage CURIes? double check where they come from
+    "RO",
 }
 ignore = list(map_to | dont_map_from)
 

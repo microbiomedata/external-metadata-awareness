@@ -6,6 +6,7 @@ WGET=wget
 downloads/ncbi-biosample-attributes.xml:
 	$(WGET) -O $@ "https://www.ncbi.nlm.nih.gov/biosample/docs/attributes/?format=xml"
 
+# also mentioned in ncbi_schema.Makefile
 downloads/ncbi-biosample-packages.xml:
 	$(WGET) -O $@ "https://www.ncbi.nlm.nih.gov/biosample/docs/packages/?format=xml"
 
@@ -13,11 +14,6 @@ local/ncbi-biosample-packages.csv: downloads/ncbi-biosample-packages.xml
 	$(RUN) ncbi-packages-csv-report \
 	--xml-file $< \
 	--output-file $@
-
-local/ncbi-biosamples-context-value-counts.csv:
-	$(RUN) count-biosample-context-vals-from-postgres \
-		--output-file $@ \
-		--min-count 2
 
 .PHONY: load-packages-into-mongo
 load-packages-into-mongo: downloads/ncbi-biosample-packages.xml

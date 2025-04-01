@@ -1,0 +1,4301 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.jp/bio/10/mpo#"
+     xml:base="http://purl.jp/bio/10/mpo"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sio="http://semanticscience.org/ontology/sio.owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://purl.jp/bio/10/mpo">
+        <dc:contributor>Erick Antezana</dc:contributor>
+        <dc:contributor>Shinobu Okamoto</dc:contributor>
+        <dc:creator>Shuichi Kawashima</dc:creator>
+        <dc:language>English</dc:language>
+        <dc:language>Japanese</dc:language>
+        <dc:title>MPO: Microbial Phonotye Ontology</dc:title>
+        <owl:versionInfo>Version 0.74 alpha</owl:versionInfo>
+        <skos:definition>An ontology for describing microbial phenotypes</skos:definition>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/instructionalMethod -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/instructionalMethod"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03006 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_03006">
+        <rdfs:range rdf:resource="http://purl.jp/bio/10/mpo#MPO_03006"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10000 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10000">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://purl.jp/bio/10/mpo#MPO_00000"/>
+        <rdfs:label xml:lang="en">has phenotypes</rdfs:label>
+        <skos:prefLabel xml:lang="en">has phenotypes</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10001 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10001">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10000"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">has cell shape</rdfs:label>
+        <skos:prefLabel xml:lang="en">has cell shape</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10002 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10002">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10000"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://purl.jp/bio/10/mpo#MPO_04001"/>
+        <rdfs:label xml:lang="en">oxygen requirement</rdfs:label>
+        <skos:prefLabel xml:lang="en">oxygen requirement</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10003 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10003">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10000"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://purl.jp/bio/10/mpo#MPO_03013"/>
+        <rdfs:label xml:lang="en">temperature range</rdfs:label>
+        <skos:prefLabel xml:lang="en">temperature range</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10004 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10004">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10000"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10005 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10005">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10004"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10006 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10006">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10004"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10007 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10007">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10004"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10008 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10008">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10000"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10009 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10009">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10008"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10010 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10010">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10008"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10011 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10011">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10008"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10012 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10012">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10000"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://purl.jp/bio/10/mpo#MPO_03009"/>
+        <rdfs:label xml:lang="en">pH preference</rdfs:label>
+        <skos:prefLabel xml:lang="en">pH preference</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10013 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10013">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10000"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://purl.jp/bio/10/mpo#MPO_02000"/>
+        <rdfs:label xml:lang="en">has motility</rdfs:label>
+        <skos:prefLabel xml:lang="en">has motility</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10014 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10014">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10000"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">salinity preference</rdfs:label>
+        <skos:prefLabel xml:lang="en">salinity preference</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10016 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10016">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10000"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://purl.jp/bio/10/mpo#MPO_01030"/>
+        <rdfs:label xml:lang="en">has cell arrangement</rdfs:label>
+        <skos:prefLabel xml:lang="en">has cell arrangement</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10017 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10017">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10000"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://purl.jp/bio/10/mpo#MPO_04058"/>
+        <rdfs:label xml:lang="en">produce quinones </rdfs:label>
+        <skos:prefLabel xml:lang="en">produce quinones </skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10018 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10018">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10000"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">produce antibiotics</rdfs:label>
+        <skos:prefLabel xml:lang="en">produce antibiotics</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10019 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10019">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10000"/>
+        <rdfs:label xml:lang="en">representative morphology</rdfs:label>
+        <skos:prefLabel xml:lang="en">representative morphology</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10020 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10020">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10009"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10021 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10021">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10009"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10022 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10022">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10005"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10023 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10023">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10005"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10024 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10024">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10000"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://purl.jp/bio/10/mpo#MPO_07000"/>
+        <rdfs:label xml:lang="en">staining</rdfs:label>
+        <skos:prefLabel xml:lang="en">staining</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10025 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10025">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10000"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://purl.jp/bio/10/mpo#MPO_04010"/>
+        <rdfs:label xml:lang="en">evergy source</rdfs:label>
+        <skos:prefLabel xml:lang="en">energy source</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10026 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10026">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10000"/>
+        <rdfs:label xml:lang="en">has morphology</rdfs:label>
+        <skos:prefLabel xml:lang="en">has morphology</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10027 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10027">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10000"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://purl.jp/bio/10/mpo#MPO_04010"/>
+        <rdfs:label xml:lang="en">primary nutritional groups</rdfs:label>
+        <skos:prefLabel xml:lang="en">primary nutritional groups</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10028 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10028">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10029 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10029">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10028"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10030 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10030">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10028"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10031 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10031">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10028"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10032 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10032">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10031"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10033 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10033">
+        <rdfs:subPropertyOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_10031"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000216 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000216"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10004 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10004">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10005 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10005">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10006 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10006">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10007 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10007">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10008 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10008">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10009 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10009">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10010 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10010">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10011 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10011">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10020 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10020"/>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10021 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10021"/>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10022 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10022"/>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10023 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10023"/>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10028 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10028"/>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10029 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10029"/>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10030 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10030"/>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10031 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10031"/>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10032 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10032"/>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_10033 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#MPO_10033"/>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#testProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/10/mpo#testProperty">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">testProperty</rdfs:label>
+        <skos:prefLabel xml:lang="en">testProperty</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00000 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00000">
+        <rdfs:label xml:lang="en">Microbial phenotype</rdfs:label>
+        <skos:definition xml:lang="en">A microbial phenotype is an observable characteristic of a microbe</skos:definition>
+        <skos:prefLabel xml:lang="en">Microbial phenotype</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00001 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00001">
+        <rdfs:label xml:lang="en">Organism</rdfs:label>
+        <skos:prefLabel xml:lang="en">Organism</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00010 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00010">
+        <dcterms:identifier>MPO_00010</dcterms:identifier>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+        <skos:prefLabel xml:lang="en">Location</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00011 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00011">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00010"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000216"/>
+                        <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000318"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000216"/>
+                        <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000319"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000216"/>
+                        <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000438"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000216"/>
+                        <owl:someValuesFrom rdf:resource="http://sweet.jpl.nasa.gov/2.3/propSpaceHeight.owl#Depth"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <dcterms:identifier>MPO_00011</dcterms:identifier>
+        <rdfs:label xml:lang="en">Sampling location</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sampling location</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00012 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00012">
+        <dcterms:identifier>MPO_00012</dcterms:identifier>
+        <rdfs:label xml:lang="en">Habitat</rdfs:label>
+        <skos:prefLabel xml:lang="en">Habitat</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00101 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00101">
+        <dcterms:identifier>MPO_00101</dcterms:identifier>
+        <rdfs:label xml:lang="en">Growth temperature</rdfs:label>
+        <skos:prefLabel xml:lang="en">Growth temperature</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00102 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00102">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00101"/>
+        <dcterms:identifier>MPO_00102</dcterms:identifier>
+        <rdfs:label xml:lang="en">Optimal growth temperature</rdfs:label>
+        <skos:prefLabel xml:lang="en">Optimal growth temperature</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00103 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00103">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00101"/>
+        <dcterms:identifier>MPO_00103</dcterms:identifier>
+        <rdfs:label xml:lang="en">Maximum growth temperature</rdfs:label>
+        <skos:prefLabel xml:lang="en">Maximum growth temperature</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00104 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00104">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00101"/>
+        <dcterms:identifier>MPO_00104</dcterms:identifier>
+        <rdfs:label xml:lang="en">Minimum growth temperature</rdfs:label>
+        <skos:prefLabel xml:lang="en">Minimum growth temperature</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00105 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00105">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00102"/>
+        <dcterms:identifier>MPO_00105</dcterms:identifier>
+        <rdfs:label xml:lang="en">Maximum optimal growth temperature</rdfs:label>
+        <skos:prefLabel xml:lang="en">Maximum optimal growth temperature</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00106 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00106">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00102"/>
+        <dcterms:identifier>MPO_00106</dcterms:identifier>
+        <dcterms:instructionalMethod rdf:resource="http://purl.jp/bio/10/mpo#MPO_00106"/>
+        <rdfs:label xml:lang="en">Minimum optimal growth temperature</rdfs:label>
+        <skos:prefLabel xml:lang="en">Minimum optimal growth temperature</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00107 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00107">
+        <dcterms:identifier>MPO_00107</dcterms:identifier>
+        <rdfs:label xml:lang="en">Growth pH</rdfs:label>
+        <skos:prefLabel xml:lang="en">Growth pH</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00108 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00108">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00107"/>
+        <dcterms:identifier>MPO_00108</dcterms:identifier>
+        <rdfs:label xml:lang="en">Optimal growth pH</rdfs:label>
+        <skos:definition xml:lang="en">Optimal growth pH of a microbe</skos:definition>
+        <skos:prefLabel xml:lang="en">Optimal growth pH</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00109 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00109">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00107"/>
+        <dcterms:identifier>MPO_00109</dcterms:identifier>
+        <rdfs:label xml:lang="en">Maximum growth pH</rdfs:label>
+        <skos:prefLabel xml:lang="en">Maximum growth pH</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00110 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00110">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00107"/>
+        <dcterms:identifier>MPO_00110</dcterms:identifier>
+        <rdfs:label xml:lang="en">Minimum growth pH</rdfs:label>
+        <skos:prefLabel xml:lang="en">Minimum growth pH</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00111 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00111">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00108"/>
+        <dcterms:identifier>MPO_00111</dcterms:identifier>
+        <rdfs:label xml:lang="en">Maximum optimal growth pH</rdfs:label>
+        <skos:prefLabel xml:lang="en">Maximum optimal growth pH</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00112 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00112">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00108"/>
+        <dcterms:identifier>MPO_00112</dcterms:identifier>
+        <rdfs:label xml:lang="en">Minimum optimal growth pH</rdfs:label>
+        <skos:prefLabel xml:lang="en">Minimum optimal growth pH</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00113 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00113">
+        <dcterms:identifier>MPO_00113</dcterms:identifier>
+        <rdfs:label xml:lang="en">Growth salinity</rdfs:label>
+        <skos:prefLabel xml:lang="en">Growth salinity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00114 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00114">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00113"/>
+        <dcterms:identifier>MPO_00114</dcterms:identifier>
+        <rdfs:label xml:lang="en">Optimal growth salinity</rdfs:label>
+        <skos:prefLabel xml:lang="en">Optimal growth salinity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00115 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00115">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00113"/>
+        <dcterms:identifier>MPO_00115</dcterms:identifier>
+        <rdfs:label xml:lang="en">Maximum growth salinity</rdfs:label>
+        <skos:prefLabel xml:lang="en">Maximum growth salinity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00116 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00116">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00117"/>
+        <dcterms:identifier>MPO_00116</dcterms:identifier>
+        <rdfs:label xml:lang="en">Minimum growth salinity</rdfs:label>
+        <skos:prefLabel xml:lang="en">Minimum growth salinity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00117 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00117">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00114"/>
+        <dcterms:identifier>MPO_00117</dcterms:identifier>
+        <rdfs:label xml:lang="en">Maximum optimal growth salinity</rdfs:label>
+        <skos:prefLabel xml:lang="en">Maximum optimal growth salinity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00118 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00118">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00114"/>
+        <dcterms:identifier>MPO_00118</dcterms:identifier>
+        <rdfs:label xml:lang="en">Minimum optimal growth salinity</rdfs:label>
+        <skos:prefLabel xml:lang="en">Minimum optimal growth salinity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00119 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00119">
+        <dcterms:identifier>MPO_00119</dcterms:identifier>
+        <rdfs:label xml:lang="en">Growth pressure</rdfs:label>
+        <skos:prefLabel xml:lang="en">Growth pressure</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00120 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00120">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00119"/>
+        <dcterms:identifier>MPO_00120</dcterms:identifier>
+        <rdfs:label xml:lang="en">Optimal growth pressure</rdfs:label>
+        <skos:prefLabel xml:lang="en">Optimal growth pressure</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00121 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00121">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00119"/>
+        <dcterms:identifier>MPO_00121</dcterms:identifier>
+        <rdfs:label xml:lang="en">Maximum growth pressure</rdfs:label>
+        <skos:prefLabel xml:lang="en">Maximum growth pressure</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00122 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00122">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00119"/>
+        <dcterms:identifier>MPO_00122</dcterms:identifier>
+        <rdfs:label xml:lang="en">Minimum growth pressure</rdfs:label>
+        <skos:prefLabel xml:lang="en">Minimum growth pressure</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00123 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00123">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00120"/>
+        <dcterms:identifier>MPO_00123</dcterms:identifier>
+        <rdfs:label xml:lang="en">Maximum optimal growth pressure</rdfs:label>
+        <skos:prefLabel xml:lang="en">Maximum optimal growth pressure</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00124 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00124">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00120"/>
+        <dcterms:identifier>MPO_00124</dcterms:identifier>
+        <rdfs:label xml:lang="en">Minimum optimal growth pressure</rdfs:label>
+        <skos:prefLabel xml:lang="en">Minimum optimal growth pressure</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00125 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00125">
+        <dcterms:identifier>MPO_00125</dcterms:identifier>
+        <rdfs:label xml:lang="en">Depth of Water</rdfs:label>
+        <skos:prefLabel xml:lang="en">Depth of Water</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00126 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00126">
+        <dcterms:identifier>MPO_00126</dcterms:identifier>
+        <rdfs:label xml:lang="en">Cell size</rdfs:label>
+        <skos:prefLabel xml:lang="en">Cell size</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00127 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00127">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00126"/>
+        <dcterms:identifier>MPO_00127</dcterms:identifier>
+        <rdfs:label xml:lang="en">Width</rdfs:label>
+        <skos:prefLabel xml:lang="en">Width</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00128 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00128">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00126"/>
+        <dcterms:identifier>MPO_00128</dcterms:identifier>
+        <rdfs:label xml:lang="en">Length</rdfs:label>
+        <skos:prefLabel xml:lang="en">Length</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00129 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00129">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00127"/>
+        <dcterms:identifier>MPO_00129</dcterms:identifier>
+        <rdfs:label xml:lang="en">Minimum width</rdfs:label>
+        <skos:prefLabel xml:lang="en">Minimum width</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00130 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00130">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00127"/>
+        <dcterms:identifier>MPO_00130</dcterms:identifier>
+        <rdfs:label xml:lang="en">Maximum width</rdfs:label>
+        <skos:prefLabel xml:lang="en">Maximum width</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00131 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00131">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00128"/>
+        <dcterms:identifier>MPO_00131</dcterms:identifier>
+        <rdfs:label xml:lang="en">Minimum length</rdfs:label>
+        <skos:prefLabel xml:lang="en">Minimum length</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00132 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00132">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00128"/>
+        <dcterms:identifier>MPO_00132</dcterms:identifier>
+        <rdfs:label xml:lang="en">Maximum length</rdfs:label>
+        <skos:prefLabel xml:lang="en">Maximum length</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00133 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00133">
+        <dcterms:identifier>MPO_00133</dcterms:identifier>
+        <rdfs:label xml:lang="en">Growth illuminance</rdfs:label>
+        <skos:prefLabel xml:lang="en">Growth illuminance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00134 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00134">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00133"/>
+        <dcterms:identifier>MPO_00134</dcterms:identifier>
+        <rdfs:label xml:lang="en">Optimal growth illuminance</rdfs:label>
+        <skos:prefLabel xml:lang="en">Optimal growth illuminance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00135 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00135">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00133"/>
+        <dcterms:identifier>MPO_00135</dcterms:identifier>
+        <rdfs:label xml:lang="en">Minimum Growth illuminance</rdfs:label>
+        <skos:prefLabel xml:lang="en">Minimum Growth illuminance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00136 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00136">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00133"/>
+        <dcterms:identifier>MPO_00136</dcterms:identifier>
+        <rdfs:label xml:lang="en">Maximum growth illuminance</rdfs:label>
+        <skos:prefLabel xml:lang="en">Maximum growth illuminance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00137 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00137">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00134"/>
+        <dcterms:identifier>MPO_00137</dcterms:identifier>
+        <rdfs:label xml:lang="en">Minimum optimal growth illuminance</rdfs:label>
+        <skos:prefLabel xml:lang="en">Minimum optimal growth illuminance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00138 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00138">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00134"/>
+        <dcterms:identifier>MPO_00138</dcterms:identifier>
+        <rdfs:label xml:lang="en">Maximum optimal growth illuminance</rdfs:label>
+        <skos:prefLabel xml:lang="en">Maximum optimal growth illuminance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_00139 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_00139">
+        <dcterms:identifier>MPO_00139</dcterms:identifier>
+        <rdfs:label xml:lang="en">Growth radiation</rdfs:label>
+        <skos:prefLabel xml:lang="en">Growth radiation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01000 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01000">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00000"/>
+        <rdfs:label xml:lang="en">Morphology</rdfs:label>
+        <skos:definition xml:lang="en">The form and structure of microbes and their specific structural features</skos:definition>
+        <skos:prefLabel xml:lang="en">Morphology</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01001 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01001">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01000"/>
+        <rdfs:label xml:lang="en">Cell shape</rdfs:label>
+        <skos:prefLabel xml:lang="en">Cell shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01002 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01002">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Bean shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Bean</skos:altLabel>
+        <skos:altLabel xml:lang="en">Bean-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Bean shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01003 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01003">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:comment xml:lang="en">Sphere-shaped (MPO_01016) was merged to this class (MPO_01003) and the  label  and prefferred label were changed from Coccus to Sphere</rdfs:comment>
+        <rdfs:label xml:lang="en">Sphere shape</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Coccus"/>
+        <rdfs:seeAlso rdf:resource="http://ja.wikipedia.org/wiki/球菌"/>
+        <skos:altLabel xml:lang="en">Coccoid</skos:altLabel>
+        <skos:altLabel xml:lang="en">Coccus</skos:altLabel>
+        <skos:altLabel xml:lang="en">Coccus-shaped</skos:altLabel>
+        <skos:altLabel xml:lang="en">Sphere</skos:altLabel>
+        <skos:altLabel xml:lang="en">Sphere-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Sphere shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01004 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01004">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Crescent shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Crescent</skos:altLabel>
+        <skos:altLabel xml:lang="en">Crescent-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Crescent shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01005 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01005">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Curved shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Curved</skos:altLabel>
+        <skos:altLabel xml:lang="en">Curved-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Curved shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01006 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01006">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Disc shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Disc</skos:altLabel>
+        <skos:altLabel xml:lang="en">Disc-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Disc shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01007 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01007">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Filament shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Filament</skos:altLabel>
+        <skos:altLabel xml:lang="en">Filament-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Filament shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01008 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01008">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Flask shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Flask</skos:altLabel>
+        <skos:altLabel xml:lang="en">Flask-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Flask shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01009 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01009">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Fusiform shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Fusiform</skos:altLabel>
+        <skos:altLabel xml:lang="en">Fusiform-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Fusiform shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01010 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01010">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Helical shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Helical</skos:altLabel>
+        <skos:altLabel xml:lang="en">Helical-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Helical shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01011 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01011">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Open-ring shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Open-ring</skos:altLabel>
+        <skos:altLabel xml:lang="en">Open-ring-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Open-ring shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01012 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01012">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Oval shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Oval</skos:altLabel>
+        <skos:altLabel xml:lang="en">Oval-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Oval shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01013 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01013">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Ovoid shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Ovoid</skos:altLabel>
+        <skos:altLabel xml:lang="en">Ovoid-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Ovoid shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01014 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01014">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Pleomorphic shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Pleomorphic</skos:altLabel>
+        <skos:altLabel xml:lang="en">Pleomorphic-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Pleomorphic shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01015 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01015">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Rod shape</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Bacillus_(shape)"/>
+        <rdfs:seeAlso rdf:resource="http://ja.wikipedia.org/wiki/桿菌"/>
+        <skos:altLabel xml:lang="en">Bacillus</skos:altLabel>
+        <skos:altLabel xml:lang="en">Rod</skos:altLabel>
+        <skos:altLabel xml:lang="en">Rod-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Rod shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01017 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01017">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Spindle shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Spindle</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Spindle shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01018 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01018">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Spiral shape</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Spirillum"/>
+        <skos:altLabel xml:lang="en">Spiral</skos:altLabel>
+        <skos:altLabel xml:lang="en">Spiral-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Spiral</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01019 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01019">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Spore shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Spore</skos:altLabel>
+        <skos:altLabel xml:lang="en">Spore-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Spore shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01020 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01020">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Square shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Square</skos:altLabel>
+        <skos:altLabel xml:lang="en">Square-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Square shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01021 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01021">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01001"/>
+        <rdfs:label xml:lang="en">Star shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Star</skos:altLabel>
+        <skos:altLabel xml:lang="en">Star-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Star shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01022 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01022">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01018"/>
+        <rdfs:label xml:lang="en">Vibrio shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Vibrio</skos:altLabel>
+        <skos:altLabel xml:lang="en">Vibrio-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Vibrio shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01023 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01023">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01018"/>
+        <rdfs:label xml:lang="en">Spirochete shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Spirochete</skos:altLabel>
+        <skos:altLabel xml:lang="en">Spirochete-shaped</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Spirochete shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01025 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01025">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01018"/>
+        <rdfs:label xml:lang="en">Spirillum shape</rdfs:label>
+        <skos:altLabel xml:lang="en">Spirillum</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Spirillum shape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01030 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01030">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01000"/>
+        <rdfs:label xml:lang="en">Cell arrangement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Cell arrangement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01031 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01031">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01030"/>
+        <rdfs:label xml:lang="en">Single arrangement</rdfs:label>
+        <skos:altLabel xml:lang="en">Single</skos:altLabel>
+        <skos:altLabel xml:lang="en">Singles</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Single arrangement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01032 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01032">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01030"/>
+        <rdfs:label xml:lang="en">Pair arrangement</rdfs:label>
+        <skos:altLabel xml:lang="en">Pair</skos:altLabel>
+        <skos:altLabel xml:lang="en">Pairs</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Pair arrangement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01033 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01033">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01030"/>
+        <rdfs:label xml:lang="en">Tetrad arrangement</rdfs:label>
+        <skos:altLabel xml:lang="en">Tetrad</skos:altLabel>
+        <skos:altLabel xml:lang="en">Tetrads</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Tetrad arrangement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01034 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01034">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01030"/>
+        <rdfs:label xml:lang="en">Chain arrangement</rdfs:label>
+        <skos:altLabel xml:lang="en">Chain</skos:altLabel>
+        <skos:altLabel xml:lang="en">Chains</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Chain arrangement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01035 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01035">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01030"/>
+        <rdfs:label xml:lang="en">Filament arrangement</rdfs:label>
+        <skos:altLabel xml:lang="en">Filament</skos:altLabel>
+        <skos:altLabel xml:lang="en">Filaments</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Filament arrangement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01036 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01036">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01030"/>
+        <rdfs:label xml:lang="en">Cluster arrangement</rdfs:label>
+        <skos:altLabel xml:lang="en">Cluster</skos:altLabel>
+        <skos:altLabel xml:lang="en">Clusters</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Cluster arrangement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01037 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01037">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01030"/>
+        <rdfs:label xml:lang="en">Irregular colony</rdfs:label>
+        <skos:prefLabel xml:lang="en">Irregular colony</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01038 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01038">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01030"/>
+        <rdfs:label xml:lang="en">V-shaped form arrangement</rdfs:label>
+        <skos:altLabel xml:lang="en">V-shaped form</skos:altLabel>
+        <skos:altLabel xml:lang="en">V-shaped forms</skos:altLabel>
+        <skos:prefLabel xml:lang="en">V-shaped form arrangement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01039 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01039">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01035"/>
+        <rdfs:label xml:lang="en">Filamentous arrangement</rdfs:label>
+        <skos:altLabel xml:lang="en">Filamentous</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Filamentous arrangement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01040 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01040">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01032"/>
+        <rdfs:label xml:lang="en">Diplococcus arrangement</rdfs:label>
+        <skos:altLabel xml:lang="en">Diplococcus</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Diplococcus arrangement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01041 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01041">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01032"/>
+        <rdfs:label xml:lang="en">Diplobacillus arrangement</rdfs:label>
+        <skos:altLabel xml:lang="en">Diplobacillus</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Diplobacillus arrangement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01042 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01042">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01032"/>
+        <rdfs:label xml:lang="en">Diplococcus encapsulated arrangement</rdfs:label>
+        <skos:altLabel xml:lang="en">Diplococcus encapsulated</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Diplococcus encapsulated arrangement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01043 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01043">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01034"/>
+        <rdfs:label xml:lang="en">Streptococcus arrangement</rdfs:label>
+        <skos:altLabel xml:lang="en">Streptococcus</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Streptococcus arrangement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01044 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01044">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01034"/>
+        <rdfs:label xml:lang="en">Streptobacillus arrangement</rdfs:label>
+        <skos:altLabel xml:lang="en">Streptobacillus</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Streptobacillus arrangement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01045 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01045">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01036"/>
+        <rdfs:label xml:lang="en">Sarcina arrangement</rdfs:label>
+        <skos:altLabel xml:lang="en">Sarcina</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Sarcina arrangement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01046 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01046">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01036"/>
+        <rdfs:label xml:lang="en">Staphylococcus arrangement</rdfs:label>
+        <skos:altLabel xml:lang="en">Staphylococcus</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Staphylococcus arrangement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_01047 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_01047">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_01030"/>
+        <rdfs:label xml:lang="en">Sheathed arrangement</rdfs:label>
+        <skos:altLabel xml:lang="en">Sheathed</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Sheathed arrangement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02000 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02000">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00000"/>
+        <rdfs:label xml:lang="en">Motility</rdfs:label>
+        <skos:prefLabel xml:lang="en">Motility</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02001 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02001">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02000"/>
+        <rdfs:label xml:lang="en">Motile</rdfs:label>
+        <skos:prefLabel xml:lang="en">Motile</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02002 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02002">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02000"/>
+        <rdfs:label xml:lang="en">Nonmotile</rdfs:label>
+        <skos:prefLabel xml:lang="en">Nonmotile</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02003 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02003">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02000"/>
+        <rdfs:label xml:lang="en">Taxis</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Taxis"/>
+        <skos:prefLabel xml:lang="en">Taxis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02004 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02004">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02000"/>
+        <rdfs:label xml:lang="en">Kinesis</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Kinesis_(biology)"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/GO_0042465"/>
+        <skos:prefLabel xml:lang="en">Kinesis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02005 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02005">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02003"/>
+        <rdfs:label xml:lang="en">Aerotaxis</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/GO_0009454"/>
+        <skos:prefLabel xml:lang="en">Aerotaxis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02006 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02006">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02003"/>
+        <rdfs:label xml:lang="en">Barotaxis</rdfs:label>
+        <skos:prefLabel xml:lang="en">Barotaxis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02007 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02007">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02003"/>
+        <rdfs:label xml:lang="en">Chemotaxis</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Chemotaxis"/>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/GO_0006935"/>
+        <skos:prefLabel xml:lang="en">Chemotaxis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02008 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02008">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02003"/>
+        <rdfs:label xml:lang="en">Energy taxis</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/GO_0009453"/>
+        <skos:prefLabel xml:lang="en">Energy taxis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02009 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02009">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02003"/>
+        <rdfs:label xml:lang="en">Galvanotaxis</rdfs:label>
+        <skos:altLabel xml:lang="en">Electrotaxis</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Galvanotaxis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02010 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02010">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02003"/>
+        <rdfs:label xml:lang="en">Magnetotaxis</rdfs:label>
+        <skos:prefLabel xml:lang="en">Magnetotaxis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02011 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02011">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02003"/>
+        <rdfs:label xml:lang="en">Gravitaxis</rdfs:label>
+        <skos:altLabel xml:lang="en">Geotaxis</skos:altLabel>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/GO_0042332"/>
+        <skos:prefLabel xml:lang="en">Gravitaxis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02012 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02012">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02003"/>
+        <rdfs:label xml:lang="en">Hydrotaxis</rdfs:label>
+        <skos:prefLabel xml:lang="en">Hydrotaxis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02013 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02013">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02003"/>
+        <rdfs:label xml:lang="en">Phototaxis</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/GO_0042331"/>
+        <skos:prefLabel xml:lang="en">Phototaxis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02014 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02014">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02003"/>
+        <rdfs:label xml:lang="en">Scotophobotaxis</rdfs:label>
+        <skos:prefLabel xml:lang="en">Scotophobotaxis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02015 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02015">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02003"/>
+        <rdfs:label xml:lang="en">Rheotaxis</rdfs:label>
+        <skos:prefLabel xml:lang="en">Rheotaxis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02016 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02016">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02003"/>
+        <rdfs:label xml:lang="en">Thermotaxis</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/GO_0043052"/>
+        <skos:prefLabel xml:lang="en">Thermotaxis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02017 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02017">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02003"/>
+        <rdfs:label xml:lang="en">Thigmotaxis</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/GO_0001966"/>
+        <skos:prefLabel xml:lang="en">Thigmotaxis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02018 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02018">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02004"/>
+        <rdfs:label xml:lang="en">Orthokinesis</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/GO_0042467"/>
+        <skos:prefLabel xml:lang="en">Orthokinesis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02019 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02019">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02004"/>
+        <rdfs:label xml:lang="en">Kinokinesis</rdfs:label>
+        <skos:prefLabel xml:lang="en">Kinokinesis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02020 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02020">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02004"/>
+        <rdfs:label xml:lang="en">Chemokinesis</rdfs:label>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/GO_0042466"/>
+        <skos:prefLabel xml:lang="en">Chemokinesis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02021 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02021">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02004"/>
+        <rdfs:label xml:lang="en">Photokinesis</rdfs:label>
+        <skos:prefLabel xml:lang="en">Photokinesis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02022 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02022">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02000"/>
+        <rdfs:label xml:lang="en">Gliding motility</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Bacterial_gliding"/>
+        <skos:prefLabel xml:lang="en">Gliding motility</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02023 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02023">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02000"/>
+        <rdfs:label xml:lang="en">Twitching motility</rdfs:label>
+        <skos:prefLabel xml:lang="en">Twitching motility</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02024 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02024">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02000"/>
+        <rdfs:label xml:lang="en">Swarming motility</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Swarming_motility"/>
+        <skos:prefLabel xml:lang="en">Swarming motility</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02025 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02025">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02000"/>
+        <rdfs:label xml:lang="en">Swimming motility</rdfs:label>
+        <skos:prefLabel xml:lang="en">Swimming motility</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02026 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02026">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02000"/>
+        <rdfs:label xml:lang="en">Darting motility</rdfs:label>
+        <skos:prefLabel xml:lang="en">Darting motility</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02027 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02027">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02000"/>
+        <rdfs:label xml:lang="en">Tumbling motility</rdfs:label>
+        <skos:prefLabel xml:lang="en">Tumbling motility</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02028 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02028">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02000"/>
+        <rdfs:label xml:lang="en">Sliding motility</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sliding motility</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_02029 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_02029">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_02000"/>
+        <rdfs:label xml:lang="en">Floating motility</rdfs:label>
+        <skos:prefLabel xml:lang="en">Floating motility</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03000 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03000">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00000"/>
+        <rdfs:label xml:lang="en">Classification on environmental growth condition</rdfs:label>
+        <skos:prefLabel xml:lang="en">Classification on environmental growth condition</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03001 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03001">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03013"/>
+        <rdfs:label xml:lang="en">Thermophilic</rdfs:label>
+        <skos:altLabel xml:lang="en">Thermophile</skos:altLabel>
+        <skos:definition xml:lang="en">A microbial organism that thrives at relatively high temperatures, between 45 and 122 C (113 and 252 F).</skos:definition>
+        <skos:prefLabel xml:lang="en">Thermophilic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03002 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03002">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03004"/>
+        <rdfs:label xml:lang="en">Hyperthermophilic</rdfs:label>
+        <skos:altLabel xml:lang="en">Hyperthermophile</skos:altLabel>
+        <skos:definition xml:lang="en">A subset of obligate thermophiles for which optimal growth temperatures are above 80C.</skos:definition>
+        <skos:prefLabel xml:lang="en">Hyperthermophilic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03003 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03003">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03013"/>
+        <rdfs:label xml:lang="en">Psychrophilic</rdfs:label>
+        <skos:altLabel xml:lang="en">Cryophile</skos:altLabel>
+        <skos:altLabel xml:lang="en">Psychrophile</skos:altLabel>
+        <skos:definition xml:lang="en">Psychrophilic microbes are a type of bacteria or archia that are capable of growing and thriving in cold environment. Thier optimal growth temperatures are 15 C or lower and maximal are 20 C or lower and mimal growth temperatures are below 0 C.</skos:definition>
+        <skos:prefLabel xml:lang="en">Psychrophilic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03004 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03004">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03001"/>
+        <rdfs:label xml:lang="en">Obligate thermophilic</rdfs:label>
+        <skos:altLabel xml:lang="en">Extreme thermophile</skos:altLabel>
+        <skos:altLabel xml:lang="en">Obligate thermophile</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Obligate thermophilic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03005 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03005">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03001"/>
+        <rdfs:label xml:lang="en">Facultative thermophilic</rdfs:label>
+        <skos:altLabel xml:lang="en">Facultative thermophile</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Facultative thermophilic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03006 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03006">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03007 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03007">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03006"/>
+        <rdfs:label xml:lang="en">Halophile</rdfs:label>
+        <skos:prefLabel xml:lang="en">Halophilic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03008 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03008">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03006"/>
+        <rdfs:label xml:lang="en">Halotolerant</rdfs:label>
+        <skos:prefLabel xml:lang="en">Halotolerant</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03009 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03009">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03000"/>
+        <rdfs:label xml:lang="en">Classification of growth pH</rdfs:label>
+        <skos:prefLabel xml:lang="en">Classification of growth pH</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03010 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03010">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03009"/>
+        <rdfs:label xml:lang="en">Acidophilic</rdfs:label>
+        <skos:altLabel xml:lang="en">Acidophile</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Acidophilic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03011 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03011">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03009"/>
+        <rdfs:label xml:lang="en">Alkaliphilic</rdfs:label>
+        <skos:altLabel xml:lang="en">Alkalinophile</skos:altLabel>
+        <skos:altLabel xml:lang="en">Alkaliphile</skos:altLabel>
+        <skos:altLabel xml:lang="en">Alkalophile</skos:altLabel>
+        <skos:altLabel xml:lang="en">Basophile</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Alkaliphilic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03012 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03012">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03009"/>
+        <rdfs:label xml:lang="en">Neutrophilic</rdfs:label>
+        <skos:altLabel xml:lang="en">Neutrophile</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Neutrophilic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03013 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03013">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03000"/>
+        <rdfs:label xml:lang="en">Classification of growth temperature</rdfs:label>
+        <skos:altLabel xml:lang="en">Temperature tolerance</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Classification of growth temperature</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03014 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03014">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03000"/>
+        <rdfs:label xml:lang="en">Classification of growth pressure</rdfs:label>
+        <skos:prefLabel xml:lang="en">Classification of growth pressure</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03015 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03015">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03014"/>
+        <rdfs:label xml:lang="en">Peizophilic</rdfs:label>
+        <skos:altLabel xml:lang="en">Peizophile</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Peizophilic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03016 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03016">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03015"/>
+        <rdfs:label xml:lang="en">Obligate piezophilic</rdfs:label>
+        <skos:altLabel xml:lang="en">Obligate piezophile</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Obligate piezophilic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03017 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03017">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03015"/>
+        <rdfs:label xml:lang="en">Facultative piezophilic</rdfs:label>
+        <skos:altLabel xml:lang="en">Facultative piezophile</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Facultative piezophilic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03018 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03018">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03000"/>
+        <rdfs:label xml:lang="en">Radioresistant</rdfs:label>
+        <skos:prefLabel xml:lang="en">Radioresistant</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03019 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03019">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03003"/>
+        <rdfs:label xml:lang="en">Psychrotrophic</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Psychrotrophic_bacteria"/>
+        <skos:definition xml:lang="en">Psychrotrophic microbes are cold-tolerant bacteria or archaea that can grow or even thrive in a cold environment although their optimal growth temperatures are between above 15 C and below 20 C. Their maximal growth temperatures are below 20 C.</skos:definition>
+        <skos:prefLabel xml:lang="en">Psychrotrophic</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Psychrotrophile</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03020 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03020">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03013"/>
+        <rdfs:label xml:lang="en">Thermotolerant</rdfs:label>
+        <skos:prefLabel xml:lang="en">Thermotolerant</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03021 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03021">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03013"/>
+        <rdfs:label xml:lang="en">Psychrotolerant</rdfs:label>
+        <skos:prefLabel xml:lang="en">Psychrotolerant</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03022 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03022">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03013"/>
+        <rdfs:label xml:lang="en">Mesophilic</rdfs:label>
+        <skos:altLabel xml:lang="en">Mesophile</skos:altLabel>
+        <skos:definition xml:lang="en">A mibrobial organism that thrives at moderate temperature, typically between 20 and 45 C (68 and 113 F).</skos:definition>
+        <skos:prefLabel xml:lang="en">Mesophilic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03023 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03023">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03009"/>
+        <rdfs:label xml:lang="en">Alkalitolerant</rdfs:label>
+        <skos:prefLabel xml:lang="en">Alkalitolerant</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03024 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03024">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03006"/>
+        <rdfs:label xml:lang="en">Euryhaline</rdfs:label>
+        <skos:prefLabel xml:lang="en">Euryhaline</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_03025 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_03025">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_03006"/>
+        <rdfs:label xml:lang="en">Stenohaline</rdfs:label>
+        <skos:prefLabel xml:lang="en">Stenohaline</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04000 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04000">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00000"/>
+        <rdfs:label xml:lang="en">Metabolism related phenotype</rdfs:label>
+        <skos:prefLabel xml:lang="en">Metabolism related phenotype</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04001 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04001">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04000"/>
+        <rdfs:label xml:lang="en">Oxygen requirement</rdfs:label>
+        <skos:prefLabel xml:lang="en">Oxygen requirement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04002 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04002">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04001"/>
+        <rdfs:label xml:lang="en">Aerobe</rdfs:label>
+        <skos:prefLabel xml:lang="en">Aerobe</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04003 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04003">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04001"/>
+        <rdfs:label xml:lang="en">Anaerobe</rdfs:label>
+        <skos:prefLabel xml:lang="en">Anaerobe</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04004 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04004">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04002"/>
+        <rdfs:label xml:lang="en">Obligate aerobe</rdfs:label>
+        <skos:prefLabel xml:lang="en">Obligate aerobe</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04005 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04005">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04002"/>
+        <rdfs:label xml:lang="en">Facultative aerobe</rdfs:label>
+        <skos:prefLabel xml:lang="en">Facultative aerobe</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04006 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04006">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04003"/>
+        <rdfs:label xml:lang="en">Obligate anaerobe</rdfs:label>
+        <skos:prefLabel xml:lang="en">Obligate anaerobe</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04007 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04007">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04003"/>
+        <rdfs:label xml:lang="en">Facultative anaerobe</rdfs:label>
+        <skos:prefLabel xml:lang="en">Facultative anaerobe</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04008 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04008">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04003"/>
+        <rdfs:label xml:lang="en">Aerotolerant organism</rdfs:label>
+        <skos:prefLabel xml:lang="en">Aerotolerant organism</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04009 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04009">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04002"/>
+        <rdfs:label xml:lang="en">Microaerophile</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Microaerophile"/>
+        <skos:prefLabel xml:lang="en">Microaerophile</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04010 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04010">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04000"/>
+        <rdfs:label xml:lang="en">Energy source</rdfs:label>
+        <skos:prefLabel xml:lang="en">Energy source</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04011 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04011">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04010"/>
+        <rdfs:label xml:lang="en">Autotrophic</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Autotrophic"/>
+        <skos:altLabel xml:lang="en">Autotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Autotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04012 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04012">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04010"/>
+        <rdfs:label xml:lang="en">Heterotrophic</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Heterotrophic"/>
+        <skos:altLabel xml:lang="en">Heterotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Heterotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04013 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04013">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04010"/>
+        <rdfs:label xml:lang="en">Lithotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Lithotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Lithotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04014 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04014">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04015"/>
+        <rdfs:label xml:lang="en">Methanotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Methanotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Methanotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04015 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04015">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04010"/>
+        <rdfs:label xml:lang="en">Methylotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Methylotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Methylotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04016 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04016">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04010"/>
+        <rdfs:label xml:lang="en">Oligotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Oligotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Oligotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04017 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04017">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04010"/>
+        <rdfs:label xml:lang="en">Organotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Organotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Organotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04018 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04018">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04010"/>
+        <rdfs:label xml:lang="en">Diazotrophic</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Diazotroph"/>
+        <skos:altLabel xml:lang="en">Diazotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Diazotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04019 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04019">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04010"/>
+        <rdfs:label xml:lang="en">Phototrophic</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Phototroph"/>
+        <skos:altLabel xml:lang="en">Phototroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Phototrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04020 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04020">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04010"/>
+        <rdfs:label xml:lang="en">Photosynthetic</rdfs:label>
+        <skos:altLabel xml:lang="en">Photosynthetic microbe</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Photosynthetic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04021 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04021">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04010"/>
+        <rdfs:label xml:lang="en">Mixotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Mixotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Mixotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04022 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04022">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04010"/>
+        <rdfs:label xml:lang="en">Chemotrophic</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Chemotrophic"/>
+        <skos:altLabel xml:lang="en">Chemotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Chemotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04023 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04023">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04003"/>
+        <rdfs:label xml:lang="en">Microanaerobe</rdfs:label>
+        <skos:prefLabel xml:lang="en">Microanaerobe</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04024 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04024">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04010"/>
+        <rdfs:label xml:lang="en">Copiotrophic</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Copiotrophic"/>
+        <skos:altLabel xml:lang="en">Copiotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Copiotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04025 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04025">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04019"/>
+        <rdfs:label xml:lang="en">Photoorganotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Photoorganotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Photoorganotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04026 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04026">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04019"/>
+        <rdfs:label xml:lang="en">Photolithotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Photolithotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Photolithotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04027 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04027">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04019"/>
+        <rdfs:label xml:lang="en">Photoheterotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Photoheterotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Photoheterotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04028 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04028">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04019"/>
+        <rdfs:label xml:lang="en">Photoautotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Photoautotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Photoautotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04029 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04029">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04019"/>
+        <rdfs:label xml:lang="en">Photoorganoheterotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Photoorganoheterotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Photoorganoheterotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04030 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04030">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04019"/>
+        <rdfs:label xml:lang="en">Photoorganoautotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Photoorganoautotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Photoorganoautotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04031 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04031">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04019"/>
+        <rdfs:label xml:lang="en">Photolithoheterotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Photolithoheterotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Photolithoheterotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04032 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04032">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04019"/>
+        <rdfs:label xml:lang="en">Photolithoautotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Photolithoautotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Photolithoautotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04033 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04033">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04022"/>
+        <rdfs:label xml:lang="en">Chemoorganotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Chemoorganotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Chemoorganotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04034 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04034">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04022"/>
+        <rdfs:label xml:lang="en">Chemolithotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Chemolithotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Chemolithotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04035 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04035">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04022"/>
+        <rdfs:label xml:lang="en">Chemoheterotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Chemoheterotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Chemoheterotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04036 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04036">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04022"/>
+        <rdfs:label xml:lang="en">Chemoautotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Chemoautotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Chemoautotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04037 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04037">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04022"/>
+        <rdfs:label xml:lang="en">Chemoorganoheterotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Chemoorganoheterotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Chemoorganoheterotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04038 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04038">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04022"/>
+        <rdfs:label xml:lang="en">Chemoorganoautotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Chemoorganoautotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Chemoorganoautotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04039 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04039">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04022"/>
+        <rdfs:label xml:lang="en">Chemolithoheterotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Chemolithoheterotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Chemolithoheterotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04040 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04040">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04022"/>
+        <rdfs:label xml:lang="en">Chemolithoautotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Chemolithoautotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Chemolithoautotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04041 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04041">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04013"/>
+        <rdfs:label xml:lang="en">Lithoautotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Lithoautotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Lithoautotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04042 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04042">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04013"/>
+        <rdfs:label xml:lang="en">Lithoheterotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Lithoheterotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Lithoheterotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04043 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04043">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04010"/>
+        <rdfs:label xml:lang="en">Carboxydotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Carboxydotroph</skos:altLabel>
+        <skos:definition xml:lang="en">Any organism that can tolerate a high concentration of carbon monoxide</skos:definition>
+        <skos:prefLabel xml:lang="en">Carboxydotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04044 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04044">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04012"/>
+        <rdfs:label xml:lang="en">Auxotrophic</rdfs:label>
+        <rdfs:label xml:lang="zh-tw">栄養要求株</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Auxotrophy"/>
+        <skos:prefLabel xml:lang="en">Auxotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04045 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04045">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04010"/>
+        <rdfs:label xml:lang="en">Capnophilic</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Capnophile"/>
+        <skos:altLabel xml:lang="en">Capnophile</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Capnophilic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04046 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04046">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04000"/>
+        <rdfs:label xml:lang="en">Fermentation</rdfs:label>
+        <skos:prefLabel xml:lang="en">Fermentation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04047 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04047">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04046"/>
+        <rdfs:label xml:lang="en">Alcohol fermentation</rdfs:label>
+        <skos:prefLabel xml:lang="en">Alcohol fermentation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04048 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04048">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04046"/>
+        <rdfs:label xml:lang="en">Acetate fermentation</rdfs:label>
+        <skos:prefLabel xml:lang="en">Acetate fermentation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04049 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04049">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04046"/>
+        <rdfs:label xml:lang="en">Lactate fermentation</rdfs:label>
+        <skos:prefLabel xml:lang="en">Lactate fermentation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04050 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04050">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04046"/>
+        <rdfs:label xml:lang="en">Aceton-butanol fermentation</rdfs:label>
+        <skos:prefLabel xml:lang="en">Aceton-butanol fermentation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04052 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04052">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04010"/>
+        <rdfs:label xml:lang="en">Phagotrophic</rdfs:label>
+        <skos:prefLabel xml:lang="en">Phagotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04053 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04053">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04000"/>
+        <rdfs:label xml:lang="en">Assimilation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Assimilation_(biology)"/>
+        <skos:prefLabel xml:lang="en">Assimilation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04054 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04054">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04000"/>
+        <rdfs:label xml:lang="en">Catabolism</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Catabolism"/>
+        <skos:altLabel xml:lang="en">Dissimilatory process</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Catabolism</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04055 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04055">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04053"/>
+        <rdfs:label xml:lang="en">Nitrogen fixation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Nitrogen_fixation"/>
+        <skos:prefLabel xml:lang="en">Nitrogen fixation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04056 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04056">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04000"/>
+        <rdfs:label xml:lang="en">Biosynthesis</rdfs:label>
+        <skos:prefLabel xml:lang="en">Biosynthesis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04057 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04057">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04056"/>
+        <rdfs:label xml:lang="en">Lipid</rdfs:label>
+        <skos:prefLabel xml:lang="en">Lipid</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04058 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04058">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04057"/>
+        <rdfs:label xml:lang="en">Quinone</rdfs:label>
+        <skos:prefLabel xml:lang="en">Quinone</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04059 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04059">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04058"/>
+        <rdfs:label xml:lang="en">Benzoquinone</rdfs:label>
+        <skos:prefLabel xml:lang="en">Benzoquinone</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04060 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04060">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04058"/>
+        <rdfs:label xml:lang="en">Naphthoquinone</rdfs:label>
+        <skos:prefLabel xml:lang="en">Naphthoquinone</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04061 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04061">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04073"/>
+        <rdfs:label xml:lang="en">MK-4</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-4</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-4</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04062 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04062">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04073"/>
+        <rdfs:label xml:lang="en">MK-5</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/14009404"/>
+        <skos:altLabel xml:lang="en">Menaquinone-5</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-5</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04063 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04063">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04073"/>
+        <rdfs:label xml:lang="en">MK-6</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/5283547"/>
+        <skos:altLabel xml:lang="en">Menaquinone-6</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-6</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04064 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04064">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04073"/>
+        <rdfs:label xml:lang="en">MK-7</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/5287554"/>
+        <skos:altLabel xml:lang="en">Menaquinone-7</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-7</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04065 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04065">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04073"/>
+        <rdfs:label xml:lang="en">MK-8</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/45479636"/>
+        <skos:altLabel xml:lang="en">Menaquinone-8</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-8</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04066 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04066">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04073"/>
+        <rdfs:label xml:lang="en">MK-9</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-9</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-9</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04067 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04067">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04073"/>
+        <rdfs:label xml:lang="en">MK-10</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/9988135"/>
+        <skos:altLabel xml:lang="en">Menaquinone-10</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-10</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04068 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04068">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04073"/>
+        <rdfs:label xml:lang="en">MK-11</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/6442190"/>
+        <skos:altLabel xml:lang="en">Menaquinone-11</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-11</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04069 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04069">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04073"/>
+        <rdfs:label xml:lang="en">MK-12</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/6442143"/>
+        <skos:altLabel xml:lang="en">Menaquinone-12</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-12</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04070 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04070">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04073"/>
+        <rdfs:label xml:lang="en">MK-13</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/14325016"/>
+        <skos:altLabel xml:lang="en">Menaquinone-13</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-13</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04071 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04071">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04073"/>
+        <rdfs:label xml:lang="en">MK-14</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-14</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-14</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04072 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04072">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04073"/>
+        <rdfs:label xml:lang="en">MK-n</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-n</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-n</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04073 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04073">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04060"/>
+        <rdfs:label xml:lang="en">MK</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04074 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04074">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04060"/>
+        <rdfs:label xml:lang="en">DMK</rdfs:label>
+        <skos:altLabel xml:lang="en">Demethylmenaquinone</skos:altLabel>
+        <skos:prefLabel xml:lang="en">DMK</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04075 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04075">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04074"/>
+        <rdfs:label xml:lang="en">DMK-5</rdfs:label>
+        <skos:altLabel xml:lang="en">Demethylmenaquinone-5</skos:altLabel>
+        <skos:prefLabel xml:lang="en">DMK-5</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04076 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04076">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04074"/>
+        <rdfs:label xml:lang="en">DMK-6</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/25245576"/>
+        <skos:altLabel xml:lang="en">Demethylmenaquinone-6</skos:altLabel>
+        <skos:prefLabel xml:lang="en">DMK-6</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04077 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04077">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04074"/>
+        <rdfs:label xml:lang="en">DMK-7</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/25244494"/>
+        <skos:altLabel xml:lang="en">Demethylmenaquinone-7</skos:altLabel>
+        <skos:prefLabel xml:lang="en">DMK-7</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04078 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04078">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04074"/>
+        <rdfs:label xml:lang="en">DMK-8</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/5376004"/>
+        <skos:altLabel xml:lang="en">Demethylmenaquinone-8</skos:altLabel>
+        <skos:prefLabel xml:lang="en">DMK-8</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04079 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04079">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04060"/>
+        <rdfs:label xml:lang="en">MTK</rdfs:label>
+        <skos:altLabel xml:lang="en">Methionaquinone-7</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MTK</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04080 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04080">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04079"/>
+        <rdfs:label xml:lang="en">MTK-7</rdfs:label>
+        <skos:altLabel xml:lang="en">Methionaquinone-7</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MTK-7</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04081 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04081">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04093"/>
+        <rdfs:label xml:lang="en">Q-3</rdfs:label>
+        <skos:altLabel xml:lang="en">Ubiquinone-3</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Q-3</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04082 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04082">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04093"/>
+        <rdfs:label xml:lang="en">Q-4</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/16219098"/>
+        <skos:altLabel xml:lang="en">Ubiquinone-4</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Q-4</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04083 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04083">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04093"/>
+        <rdfs:label xml:lang="en">Q-5</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/4462"/>
+        <skos:altLabel xml:lang="en">Ubiquinone-5</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Q-5</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04084 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04084">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04093"/>
+        <rdfs:label xml:lang="en">Q-6</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/5283544"/>
+        <skos:altLabel xml:lang="en">Ubiquinone-6</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Q-6</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04085 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04085">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04093"/>
+        <rdfs:label xml:lang="en">Q-7</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/5289540"/>
+        <skos:altLabel xml:lang="en">Ubiquinone-7</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Q-7</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04086 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04086">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04093"/>
+        <rdfs:label xml:lang="en">Q-8</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/5283546"/>
+        <skos:altLabel xml:lang="en">Ubiquinone-8</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Q-8</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04087 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04087">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04093"/>
+        <rdfs:label xml:lang="en">Q-9</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/5280473"/>
+        <skos:altLabel xml:lang="en">Ubiquinone-9</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Q-9</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04088 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04088">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04093"/>
+        <rdfs:label xml:lang="en">Q-10</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/5281915"/>
+        <skos:altLabel xml:lang="en">Ubiquinone-10</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Q-10</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04089 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04089">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04093"/>
+        <rdfs:label xml:lang="en">Q-11</rdfs:label>
+        <skos:altLabel xml:lang="en">Ubiquinone-11</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Q-11</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04090 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04090">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04093"/>
+        <rdfs:label xml:lang="en">Q-12</rdfs:label>
+        <skos:altLabel xml:lang="en">Ubiquinone-12</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Q-12</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04091 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04091">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04093"/>
+        <rdfs:label xml:lang="en">Q-13</rdfs:label>
+        <skos:altLabel xml:lang="en">Ubiquinone-13</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Q-13</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04092 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04092">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04093"/>
+        <rdfs:label xml:lang="en">Q-14</rdfs:label>
+        <skos:altLabel xml:lang="en">Ubiquinone-14</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Q-14</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04093 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04093">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04059"/>
+        <rdfs:label xml:lang="en">Q</rdfs:label>
+        <skos:altLabel xml:lang="en">Ubiquinone</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Q</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04094 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04094">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04059"/>
+        <rdfs:label xml:lang="en">MQ</rdfs:label>
+        <skos:prefLabel xml:lang="en">MQ</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04095 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04095">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04094"/>
+        <rdfs:label xml:lang="en">MQ-8</rdfs:label>
+        <skos:altLabel>18-methylene-ubiquinone-8</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MQ-8</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04096 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04096">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04059"/>
+        <rdfs:label xml:lang="en">MDMQ</rdfs:label>
+        <skos:prefLabel xml:lang="en">MDMQ</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04097 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04097">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04096"/>
+        <rdfs:label xml:lang="en">MDMQ-6</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/9988135"/>
+        <skos:altLabel xml:lang="en">11-methylene-18-dimethyl-ubiquinone-6</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MDMQ-6</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04098 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04098">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04060"/>
+        <rdfs:label xml:lang="en">TPQ</rdfs:label>
+        <skos:altLabel xml:lang="en">Thermoplasma quinone</skos:altLabel>
+        <skos:prefLabel xml:lang="en">TPQ</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04099 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04099">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04098"/>
+        <rdfs:label xml:lang="en">TPQ-6</rdfs:label>
+        <skos:altLabel xml:lang="en">Thermoplasma quinone-6</skos:altLabel>
+        <skos:prefLabel xml:lang="en">TPQ-6</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04100 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04100">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04098"/>
+        <rdfs:label xml:lang="en">TPQ-7</rdfs:label>
+        <skos:altLabel xml:lang="en">Thermoplasma quinone-7</skos:altLabel>
+        <skos:prefLabel xml:lang="en">TPQ-7</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04101 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04101">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04062"/>
+        <rdfs:label xml:lang="en">MK-5(H2)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-5(H2)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-5(H2)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04102 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04102">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04063"/>
+        <rdfs:label xml:lang="en">MK-6(H2)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-6(H2)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-6(H2)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04103 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04103">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04065"/>
+        <rdfs:label xml:lang="en">MK-8(H2)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-8(H2)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-8(H2)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04104 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04104">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04065"/>
+        <rdfs:label xml:lang="en">MK-8(H4)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-8(H4)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-8(H4)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04105 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04105">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04066"/>
+        <rdfs:label xml:lang="en">MK-9(H0)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-9(H0)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-9(H0)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04106 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04106">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04066"/>
+        <rdfs:label xml:lang="en">MK-9(H2)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-9(H2)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-9(H2)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04107 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04107">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04066"/>
+        <rdfs:label xml:lang="en">MK-9(H4)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-9(H4)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-9(H4)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04108 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04108">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04066"/>
+        <rdfs:label xml:lang="en">MK-9(H6)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-9(H6)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-9(H6)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04109 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04109">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04066"/>
+        <rdfs:label xml:lang="en">MK-9(H8)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-9(H8)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-9(H8)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04110 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04110">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04067"/>
+        <rdfs:label xml:lang="en">MK-10(H4)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-10(H4)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-10(H4)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04111 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04111">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04067"/>
+        <rdfs:label xml:lang="en">MK-10(H6)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-10(H6)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-10(H6)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04112 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04112">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04067"/>
+        <rdfs:label xml:lang="en">MK-10(H8)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-10(H8)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-10(H8)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04113 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04113">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04068"/>
+        <rdfs:label xml:lang="en">MK-11(H6)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-11(H6)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-11(H6)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04114 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04114">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04080"/>
+        <rdfs:label xml:lang="en">MTK-7(H2)</rdfs:label>
+        <skos:altLabel xml:lang="en">Methionaquinone-7(H2)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MTK-7(H2)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04115 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04115">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04080"/>
+        <rdfs:label xml:lang="en">MTK-7(H4)</rdfs:label>
+        <skos:altLabel xml:lang="en">Methionaquinone-7(H4)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MTK-7(H4)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04116 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04116">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04060"/>
+        <rdfs:label xml:lang="en">TMK</rdfs:label>
+        <skos:prefLabel xml:lang="en">TMK</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04117 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04117">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04116"/>
+        <rdfs:label xml:lang="en">TMK-6</rdfs:label>
+        <skos:prefLabel xml:lang="en">TMK-6</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04118 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04118">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04059"/>
+        <rdfs:label xml:lang="en">RQ</rdfs:label>
+        <skos:prefLabel xml:lang="en">RQ</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04119 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04119">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04118"/>
+        <rdfs:label xml:lang="en">RQ-8</rdfs:label>
+        <skos:altLabel xml:lang="en">Rhodoquinone-8</skos:altLabel>
+        <skos:prefLabel xml:lang="en">RQ-8</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04120 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04120">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04118"/>
+        <rdfs:label xml:lang="en">RQ-10</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pccompound/6441300"/>
+        <skos:altLabel xml:lang="en">Rhodoquinone-10</skos:altLabel>
+        <skos:prefLabel xml:lang="en">RQ-10</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04121 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04121">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04067"/>
+        <rdfs:label xml:lang="en">MK-10(H2)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-10(H2)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-10(H2)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04122 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04122">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04067"/>
+        <rdfs:label xml:lang="en">MK-10(H0)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-10(H0)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-10(H0)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04123 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04123">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04068"/>
+        <rdfs:label xml:lang="en">MK-11(H4)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-11(H4)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-11(H4)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04124 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04124">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04068"/>
+        <rdfs:label xml:lang="en">MK-11(H2)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-11(H2)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-11(H2)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04125 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04125">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04061"/>
+        <rdfs:label xml:lang="en">MK-4(H6)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-4(H6)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-4(H6)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04126 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04126">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04061"/>
+        <rdfs:label xml:lang="en">MK-4(H8)</rdfs:label>
+        <skos:prefLabel xml:lang="en">MK-4(H8)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04127 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04127">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04062"/>
+        <rdfs:label xml:lang="en">MK-5(H8)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-5(H8)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-5(H8)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04128 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04128">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04062"/>
+        <rdfs:label xml:lang="en">MK-5(H10)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-5(H10)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-5(H10)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04129 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04129">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04063"/>
+        <rdfs:label xml:lang="en">MK-6(H4)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-6(H4)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-6(H4)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04130 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04130">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04063"/>
+        <rdfs:label xml:lang="en">MK-6(H8)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-6(H8)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-6(H8)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04131 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04131">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04063"/>
+        <rdfs:label xml:lang="en">MK-6(H10)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-6(H10)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-6(H10)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04132 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04132">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04064"/>
+        <rdfs:label xml:lang="en">MK-7(H0)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-7(H0)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-7(H0)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04133 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04133">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04064"/>
+        <rdfs:label xml:lang="en">MK-7(H2)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-7(H2)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-7(H2)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04134 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04134">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04064"/>
+        <rdfs:label xml:lang="en">MK-7(H4)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-7(H4)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-7(H4)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04135 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04135">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04064"/>
+        <rdfs:label xml:lang="en">MK-7(H14)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-7(H14)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-7(H14)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04136 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04136">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04065"/>
+        <rdfs:label xml:lang="en">MK-8(H6)</rdfs:label>
+        <skos:altLabel xml:lang="en">Menaquinone-8(H6)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MK-8(H6)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04137 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04137">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04066"/>
+        <rdfs:label xml:lang="en">MK-9(H10)</rdfs:label>
+        <skos:prefLabel xml:lang="en">MK-9(H10)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04138 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04138">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04060"/>
+        <rdfs:label xml:lang="en">MMK</rdfs:label>
+        <skos:altLabel xml:lang="en">Methylmenaquinone</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MMK</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04139 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04139">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04138"/>
+        <rdfs:label xml:lang="en">MMK-5</rdfs:label>
+        <skos:altLabel xml:lang="en">Methylmenaquinone-5</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MMK-5</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04140 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04140">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04138"/>
+        <rdfs:label xml:lang="en">MMK-6</rdfs:label>
+        <skos:altLabel xml:lang="en">Methylmenaquinone-6</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MMK-6</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04141 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04141">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04138"/>
+        <rdfs:label xml:lang="en">MMK-7</rdfs:label>
+        <skos:altLabel xml:lang="en">Methylmenaquinone-7</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MMK-7</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04142 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04142">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04138"/>
+        <rdfs:label xml:lang="en">MMK-8</rdfs:label>
+        <skos:altLabel xml:lang="en">Methylmenaquinone-8</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MMK-8</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04143 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04143">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04139"/>
+        <rdfs:label xml:lang="en">MMK-5(H10)</rdfs:label>
+        <skos:altLabel xml:lang="en">Methylmenaquinone-5(H10)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MMK-5(H10)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04144 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04144">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04140"/>
+        <rdfs:label xml:lang="en">MMK-6(H12)</rdfs:label>
+        <skos:altLabel xml:lang="en">Methylmenaquinone-6(H12)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MMK-6(H12)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04145 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04145">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04079"/>
+        <rdfs:label xml:lang="en">MTK-6</rdfs:label>
+        <skos:altLabel xml:lang="en">Methylmenaquinone-6</skos:altLabel>
+        <skos:prefLabel xml:lang="en">MTK-6</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04146 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04146">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04088"/>
+        <rdfs:label xml:lang="en">Q-10(H2)</rdfs:label>
+        <skos:altLabel xml:lang="en">Ubiquinone-10(H2)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Q-10(H2)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04147 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04147">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04088"/>
+        <rdfs:label xml:lang="en">Q-10(H4)</rdfs:label>
+        <skos:altLabel xml:lang="en">Ubiquinone-10(H4)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Q-10(H4)</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04148 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04148">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04060"/>
+        <rdfs:label xml:lang="en">SQ</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/17267967"/>
+        <skos:altLabel xml:lang="en">Smaragdiquinone</skos:altLabel>
+        <skos:prefLabel xml:lang="en">SQ</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04149 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04149">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04148"/>
+        <rdfs:label xml:lang="en">SQA-8</rdfs:label>
+        <skos:altLabel xml:lang="en">Smaragdiquinone A-8</skos:altLabel>
+        <skos:prefLabel xml:lang="en">SQA-8</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04150 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04150">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04148"/>
+        <rdfs:label xml:lang="en">SQB-8</rdfs:label>
+        <skos:altLabel xml:lang="en">Smaragdiquinone B-8</skos:altLabel>
+        <skos:prefLabel xml:lang="en">SQB-8</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04151 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04151">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04017"/>
+        <rdfs:label xml:lang="en">Organoheterotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Organoheterotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Organoheterotrophic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_04152 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_04152">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_04040"/>
+        <rdfs:label xml:lang="en">Obligate chemolithoautotrophic</rdfs:label>
+        <skos:altLabel xml:lang="en">Obligate chemoautolithotroph</skos:altLabel>
+        <skos:altLabel xml:lang="en">Obligate chemolithoautotroph</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Obligate chemolithoautotroph</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_05000 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_05000">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00000"/>
+        <rdfs:label xml:lang="en">Development</rdfs:label>
+        <skos:prefLabel xml:lang="en">Development</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_05001 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_05001">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_05000"/>
+        <rdfs:label xml:lang="en">Resting spore forming</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Akinete"/>
+        <skos:altLabel xml:lang="en">Akinete forming</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Resting spore forming</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_05002 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_05002">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_05000"/>
+        <rdfs:label xml:lang="en">Hetelocyst forming</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Heterocyst"/>
+        <skos:prefLabel xml:lang="en">Hetelocyst forming</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_06000 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_06000">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00000"/>
+        <rdfs:label xml:lang="en">Serotype</rdfs:label>
+        <skos:prefLabel xml:lang="en">Serotype</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_07000 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_07000">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00000"/>
+        <rdfs:label xml:lang="en">Staining</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Staining"/>
+        <skos:altLabel xml:lang="en">Cell staining</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Staining</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_07001 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_07001">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_07000"/>
+        <rdfs:label xml:lang="en">Gram stain</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Gram_staining"/>
+        <skos:prefLabel xml:lang="en">Gram stain</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_07002 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_07002">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_07001"/>
+        <rdfs:label xml:lang="en">Gram positive</rdfs:label>
+        <skos:altLabel xml:lang="en">Gram+</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Gram positive</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_07003 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_07003">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_07001"/>
+        <rdfs:label xml:lang="en">Gram negative</rdfs:label>
+        <skos:altLabel xml:lang="en">Gram-</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Gram negative</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_07004 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_07004">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_07001"/>
+        <rdfs:label xml:lang="en">Gram variable</rdfs:label>
+        <skos:prefLabel xml:lang="en">Gram variable</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_07005 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_07005">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_07000"/>
+        <rdfs:label xml:lang="en">Ziehl–Neelsen stain</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Ziehl-Neelsen_stain"/>
+        <skos:altLabel xml:lang="en">acid-fast stain</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Ziehl–Neelsen stain</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_08000 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_08000">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00000"/>
+        <rdfs:label xml:lang="en">Cell accumulation</rdfs:label>
+        <skos:prefLabel xml:lang="en">Cell accumulation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_08001 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_08001">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_08000"/>
+        <rdfs:label xml:lang="en">Algae bloom</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Algal_bloom"/>
+        <skos:prefLabel xml:lang="en">Algae bloom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_08002 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_08002">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_08001"/>
+        <rdfs:label xml:lang="en">Red tide</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Red_tide"/>
+        <skos:prefLabel xml:lang="en">Red tide</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_08003 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_08003">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_08001"/>
+        <rdfs:label xml:lang="en">Cyanobacterial water bloom</rdfs:label>
+        <skos:prefLabel xml:lang="en">Cyanobacterial water bloom</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_09000 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_09000">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00000"/>
+        <rdfs:label xml:lang="en">Way of life</rdfs:label>
+        <skos:prefLabel xml:lang="en">Way of life</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_09001 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_09001">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_09000"/>
+        <rdfs:label xml:lang="en">Planktonic</rdfs:label>
+        <skos:prefLabel xml:lang="en">Planktonic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_09002 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_09002">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_09000"/>
+        <rdfs:label xml:lang="en">Benthic</rdfs:label>
+        <skos:prefLabel xml:lang="en">Benthic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_09003 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_09003">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_09000"/>
+        <rdfs:label xml:lang="en">Epilithic</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Epilithic"/>
+        <skos:altLabel xml:lang="en">Lithophyte</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Epilithic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_09004 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_09004">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_09000"/>
+        <rdfs:label xml:lang="en">Aerial</rdfs:label>
+        <skos:prefLabel xml:lang="en">Aerial</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_11000 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_11000">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_00000"/>
+        <rdfs:label xml:lang="en">Sexual reproduction</rdfs:label>
+        <skos:prefLabel xml:lang="en">Sexual reproduction</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_11001 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_11001">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_11000"/>
+        <rdfs:label xml:lang="en">Heterothallic</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Heterothallic"/>
+        <skos:prefLabel xml:lang="en">Heterothallic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_11002 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_11002">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_11000"/>
+        <rdfs:label xml:lang="en">Homothallic</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Homothallic"/>
+        <skos:prefLabel xml:lang="en">Homothallic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_11003 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_11003">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_11000"/>
+        <rdfs:label xml:lang="en">Isogamy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Isogamy"/>
+        <skos:prefLabel xml:lang="en">Isogamy</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_11004 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_11004">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_11000"/>
+        <rdfs:label xml:lang="en">Anisogamy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Anisogamy"/>
+        <skos:altLabel xml:lang="en">Heterogamy</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Anisogamy</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_11005 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_11005">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_11000"/>
+        <rdfs:label xml:lang="en">Dioecious</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Dioecy"/>
+        <skos:prefLabel xml:lang="en">Dioecious</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.jp/bio/10/mpo#MPO_11006 -->
+
+    <owl:Class rdf:about="http://purl.jp/bio/10/mpo#MPO_11006">
+        <rdfs:subClassOf rdf:resource="http://purl.jp/bio/10/mpo#MPO_11000"/>
+        <rdfs:label xml:lang="en">Monoecious</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Monoecious"/>
+        <skos:prefLabel xml:lang="en">Monoecious</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000318 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000318"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000319 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000319"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000438 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000438"/>
+    
+
+
+    <!-- http://sweet.jpl.nasa.gov/2.3/propSpaceHeight.owl#Depth -->
+
+    <owl:Class rdf:about="http://sweet.jpl.nasa.gov/2.3/propSpaceHeight.owl#Depth"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000319 -->
+
+    <owl:Thing rdf:about="http://semanticscience.org/resource/SIO_000319">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
+
+    <owl:Thing rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_03006">
+        <rdfs:label xml:lang="en">Classification of growth salinity</rdfs:label>
+        <skos:prefLabel xml:lang="en">Classification of growth salinity</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10004">
+        <rdfs:label xml:lang="en">growth pH</rdfs:label>
+        <skos:prefLabel xml:lang="en">growth pH</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10005">
+        <rdfs:label xml:lang="en">optimal growth pH</rdfs:label>
+        <skos:prefLabel xml:lang="en">optimal growth pH</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10006">
+        <rdfs:label xml:lang="en">minimum growth pH</rdfs:label>
+        <skos:prefLabel xml:lang="en">minimum growth pH</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10007">
+        <rdfs:label xml:lang="en">maximum growth pH</rdfs:label>
+        <skos:prefLabel xml:lang="en">maximum growth pH</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10008">
+        <rdfs:label xml:lang="en">growth temperature</rdfs:label>
+        <skos:prefLabel xml:lang="en">growth temperature</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10009">
+        <rdfs:label xml:lang="en">optimal growth temperature</rdfs:label>
+        <skos:prefLabel xml:lang="en">optimal growth temperature</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10010">
+        <rdfs:label xml:lang="en">minimum growth temperature</rdfs:label>
+        <skos:prefLabel xml:lang="en">minimum growth temperature</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10011">
+        <rdfs:label xml:lang="en">maximum growth temperature</rdfs:label>
+        <skos:prefLabel xml:lang="en">maximum growth temperature</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10020">
+        <rdfs:label xml:lang="en">minimum optimal growth temperature</rdfs:label>
+        <skos:prefLabel xml:lang="en">minimum optimal growth temperature</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10021">
+        <rdfs:label xml:lang="en">maximum optimal growth temperature</rdfs:label>
+        <skos:prefLabel xml:lang="en">maximum optimal growth temperature</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10022">
+        <rdfs:label xml:lang="en">minimum optimal growth ph</rdfs:label>
+        <skos:prefLabel xml:lang="en">minimum optimal growth ph</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10023">
+        <rdfs:label xml:lang="en">maximum optimal growth ph</rdfs:label>
+        <skos:prefLabel xml:lang="en">maximum optimal growth ph</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10028">
+        <rdfs:label xml:lang="en">growth salinity</rdfs:label>
+        <skos:prefLabel xml:lang="en">growth salinity</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10029">
+        <rdfs:label xml:lang="en">maximal growth salinity</rdfs:label>
+        <skos:prefLabel xml:lang="en">maximal growth salinity</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10030">
+        <rdfs:label xml:lang="en">minimum growth salinity</rdfs:label>
+        <skos:prefLabel xml:lang="en">minimum growth salinity</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10031">
+        <rdfs:label xml:lang="en">optimal growth salinity</rdfs:label>
+        <skos:prefLabel xml:lang="en">optimal growth salinity</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10032">
+        <rdfs:label xml:lang="en">maximum optimal growth salinity</rdfs:label>
+        <skos:prefLabel xml:lang="en">maximum optimal growth salinity</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10033">
+        <rdfs:label xml:lang="en">minimum optimal growth salinity</rdfs:label>
+        <skos:prefLabel xml:lang="en">minimum optimal growth salinity</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.jp/bio/10/mpo#MPO_10034">
+        <rdfs:label xml:lang="en">is inhabited by</rdfs:label>
+        <skos:prefLabel xml:lang="en">is inhabited by</skos:prefLabel>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+

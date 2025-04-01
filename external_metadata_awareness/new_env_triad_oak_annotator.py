@@ -186,6 +186,7 @@ def main():
 
             ann_dict = annotation_to_dict(ann, label_length)
             ann_dict['rdfs_label'] = element_to_label.get(ann_dict['object_id'])
+            ann_dict['prefix_uc'] = ann_dict['object_id'].split(":")[0].upper()
             processed_annotations.append(ann_dict)
 
         filtered_annotations = filter_subsumed_annotations(processed_annotations)
