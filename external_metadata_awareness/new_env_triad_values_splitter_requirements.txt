@@ -1,6 +1,0 @@
-pymongo
-python-dotenv
-tqdm
-click
-oaklib
-requests_cache
