@@ -1,0 +1,74 @@
+# curie_map:
+#   FAO: http://purl.obolibrary.org/obo/FAO_
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/434f28fb-eb5f-4f57-a2cd-8bf647ede5bf
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+http://example.org/metpo-cleanroom/arthrospore	arthrospore	skos:closeMatch	FAO:0000041	arthroconidium	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	arthrospore
+http://example.org/metpo-cleanroom/arthrospore	arthrospore	skos:closeMatch	FAO:0000041	arthroconidium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	arthrospore
+http://example.org/metpo-cleanroom/arthrospore	arthrospore	skos:closeMatch	http://example.org/metpo-cleanroom/arthrospore	arthrospore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	arthrospore
+http://example.org/metpo-cleanroom/arthrospore	arthrospore	skos:closeMatch	http://example.org/metpo-cleanroom/arthrospore	arthrospore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	arthrospore
+http://example.org/metpo-cleanroom/arthrospore	arthrospore	skos:closeMatch	http://example.org/metpo-cleanroom/arthrospore	arthrospore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	arthrospore
+http://example.org/metpo-cleanroom/arthrospore	arthrospore	skos:closeMatch	http://example.org/metpo-cleanroom/arthrospore	arthrospore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	arthrospore
+http://example.org/metpo-cleanroom/ascospore	ascospore	skos:closeMatch	FAO:0000020	ascospore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	ascospore
+http://example.org/metpo-cleanroom/ascospore	ascospore	skos:closeMatch	FAO:0000020	ascospore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ascospore
+http://example.org/metpo-cleanroom/ascospore	ascospore	skos:closeMatch	http://example.org/metpo-cleanroom/ascospore	ascospore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	ascospore
+http://example.org/metpo-cleanroom/ascospore	ascospore	skos:closeMatch	http://example.org/metpo-cleanroom/ascospore	ascospore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	ascospore
+http://example.org/metpo-cleanroom/ascospore	ascospore	skos:closeMatch	http://example.org/metpo-cleanroom/ascospore	ascospore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	ascospore
+http://example.org/metpo-cleanroom/ascospore	ascospore	skos:closeMatch	http://example.org/metpo-cleanroom/ascospore	ascospore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	ascospore
+http://example.org/metpo-cleanroom/basidiospore	basidiospore	skos:closeMatch	FAO:0000021	basidiospore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	basidiospore
+http://example.org/metpo-cleanroom/basidiospore	basidiospore	skos:closeMatch	FAO:0000021	basidiospore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	basidiospore
+http://example.org/metpo-cleanroom/basidiospore	basidiospore	skos:closeMatch	http://example.org/metpo-cleanroom/basidiospore	basidiospore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	basidiospore
+http://example.org/metpo-cleanroom/basidiospore	basidiospore	skos:closeMatch	http://example.org/metpo-cleanroom/basidiospore	basidiospore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	basidiospore
+http://example.org/metpo-cleanroom/basidiospore	basidiospore	skos:closeMatch	http://example.org/metpo-cleanroom/basidiospore	basidiospore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	basidiospore
+http://example.org/metpo-cleanroom/basidiospore	basidiospore	skos:closeMatch	http://example.org/metpo-cleanroom/basidiospore	basidiospore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	basidiospore
+http://example.org/metpo-cleanroom/biofilm	biofilm	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm	biofilm	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	biofilm-forming
+http://example.org/metpo-cleanroom/biofilm	biofilm	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm	biofilm	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0042710
+http://example.org/metpo-cleanroom/biofilm	biofilm	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	biofilm-forming
+http://example.org/metpo-cleanroom/biofilm	biofilm	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0042710
+http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm	biofilm	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	biofilm-forming
+http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm	biofilm	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0042710
+http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	biofilm-forming
+http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0042710
+http://example.org/metpo-cleanroom/chlamydospore	chlamydospore	skos:closeMatch	FAO:0000067	chlamydospore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	chlamydospore
+http://example.org/metpo-cleanroom/chlamydospore	chlamydospore	skos:closeMatch	FAO:0000067	chlamydospore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlamydospore
+http://example.org/metpo-cleanroom/chlamydospore	chlamydospore	skos:closeMatch	http://example.org/metpo-cleanroom/chlamydospore	chlamydospore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	chlamydospore
+http://example.org/metpo-cleanroom/chlamydospore	chlamydospore	skos:closeMatch	http://example.org/metpo-cleanroom/chlamydospore	chlamydospore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	chlamydospore
+http://example.org/metpo-cleanroom/chlamydospore	chlamydospore	skos:closeMatch	http://example.org/metpo-cleanroom/chlamydospore	chlamydospore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	chlamydospore
+http://example.org/metpo-cleanroom/chlamydospore	chlamydospore	skos:closeMatch	http://example.org/metpo-cleanroom/chlamydospore	chlamydospore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chlamydospore
+http://example.org/metpo-cleanroom/cold_shock_protein	cold shock protein	skos:closeMatch	http://example.org/metpo-cleanroom/cold_shock_protein	cold shock protein	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009409
+http://example.org/metpo-cleanroom/cold_shock_protein	cold shock protein	skos:closeMatch	http://example.org/metpo-cleanroom/cold_shock_response	cold shock response	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009409
+http://example.org/metpo-cleanroom/cold_shock_response	cold shock response	skos:closeMatch	http://example.org/metpo-cleanroom/cold_shock_protein	cold shock protein	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009409
+http://example.org/metpo-cleanroom/cold_shock_response	cold shock response	skos:closeMatch	http://example.org/metpo-cleanroom/cold_shock_response	cold shock response	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009409
+http://example.org/metpo-cleanroom/conidium	conidium	skos:closeMatch	FAO:0000024	conidium	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	conidium
+http://example.org/metpo-cleanroom/conidium	conidium	skos:closeMatch	FAO:0000024	conidium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	conidium
+http://example.org/metpo-cleanroom/conidium	conidium	skos:closeMatch	http://example.org/metpo-cleanroom/conidium	conidium	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	conidium
+http://example.org/metpo-cleanroom/conidium	conidium	skos:closeMatch	http://example.org/metpo-cleanroom/conidium	conidium	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	conidium
+http://example.org/metpo-cleanroom/conidium	conidium	skos:closeMatch	http://example.org/metpo-cleanroom/conidium	conidium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	conidium
+http://example.org/metpo-cleanroom/conidium	conidium	skos:closeMatch	http://example.org/metpo-cleanroom/conidium	conidium	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	conidium
+http://example.org/metpo-cleanroom/fimbriae	fimbriae	skos:closeMatch	http://example.org/metpo-cleanroom/fimbriae	fimbriae	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009289
+http://example.org/metpo-cleanroom/fimbriae	fimbriae	skos:closeMatch	http://example.org/metpo-cleanroom/pilus	pilus	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009289
+http://example.org/metpo-cleanroom/oospore	oospore	skos:closeMatch	FAO:0000039	oospore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	oospore
+http://example.org/metpo-cleanroom/oospore	oospore	skos:closeMatch	FAO:0000039	oospore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	oospore
+http://example.org/metpo-cleanroom/oospore	oospore	skos:closeMatch	http://example.org/metpo-cleanroom/oospore	oospore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	oospore
+http://example.org/metpo-cleanroom/oospore	oospore	skos:closeMatch	http://example.org/metpo-cleanroom/oospore	oospore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	oospore
+http://example.org/metpo-cleanroom/oospore	oospore	skos:closeMatch	http://example.org/metpo-cleanroom/oospore	oospore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	oospore
+http://example.org/metpo-cleanroom/oospore	oospore	skos:closeMatch	http://example.org/metpo-cleanroom/oospore	oospore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	oospore
+http://example.org/metpo-cleanroom/pigment	pigment	skos:closeMatch	http://example.org/metpo-cleanroom/pigment	pigment	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pigmented
+http://example.org/metpo-cleanroom/pigment	pigment	skos:closeMatch	http://example.org/metpo-cleanroom/pigmentation	pigmentation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pigmented
+http://example.org/metpo-cleanroom/pigmentation	pigmentation	skos:closeMatch	http://example.org/metpo-cleanroom/pigment	pigment	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pigmented
+http://example.org/metpo-cleanroom/pigmentation	pigmentation	skos:closeMatch	http://example.org/metpo-cleanroom/pigmentation	pigmentation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pigmented
+http://example.org/metpo-cleanroom/pilus	pilus	skos:closeMatch	http://example.org/metpo-cleanroom/fimbriae	fimbriae	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009289
+http://example.org/metpo-cleanroom/pilus	pilus	skos:closeMatch	http://example.org/metpo-cleanroom/pilus	pilus	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009289
+http://example.org/metpo-cleanroom/zygospore	zygospore	skos:closeMatch	FAO:0000040	zygospore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	zygospore
+http://example.org/metpo-cleanroom/zygospore	zygospore	skos:closeMatch	FAO:0000040	zygospore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	zygospore
+http://example.org/metpo-cleanroom/zygospore	zygospore	skos:closeMatch	http://example.org/metpo-cleanroom/zygospore	zygospore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	zygospore
+http://example.org/metpo-cleanroom/zygospore	zygospore	skos:closeMatch	http://example.org/metpo-cleanroom/zygospore	zygospore	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	zygospore
+http://example.org/metpo-cleanroom/zygospore	zygospore	skos:closeMatch	http://example.org/metpo-cleanroom/zygospore	zygospore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	zygospore
+http://example.org/metpo-cleanroom/zygospore	zygospore	skos:closeMatch	http://example.org/metpo-cleanroom/zygospore	zygospore	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	zygospore

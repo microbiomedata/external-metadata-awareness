@@ -76,7 +76,7 @@ local/nmdc-production-biosamples-env-package.json:
 	rm -rf $@.bak
 
 local/nmdc-production-studies-images.csv: downloads/nmdc-production-studies.json
-	$(RUN) python external_metadata_awareness/study-image-table.py \
+	$(RUN) python external_metadata_awareness/study_image_table.py \
 		--input-file $< \
 		--output-file $@
 
