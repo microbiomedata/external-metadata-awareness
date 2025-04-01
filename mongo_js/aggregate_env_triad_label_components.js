@@ -7,27 +7,26 @@ db.biosamples_env_triad_value_counts_gt_1.aggregate([
         $group: {
             _id: "$components.label",
             count: {$sum: "$count"},
-            lingering_envo: {$first: "$components.lingering_envo"},
-            digits_only: {$first: "$components.digits_only"}
+            label_length: {$first: "$components.label_length"},
+            label_digits_only: {$first: "$components.label_digits_only"},
         }
     },
 
-    // Compute the label length, using $ifNull to default null labels to an empty string
-    {
-        $addFields: {
-            label_length: {$strLenCP: {$ifNull: ["$_id", ""]}}
-        }
-    },
+    // // Compute the label length, using $ifNull to default null labels to an empty string
+    // {
+    //     $addFields: {
+    //         label_length: {$strLenCP: {$ifNull: ["$_id", ""]}}
+    //     }
+    // },
 
     // Project fields in the desired format
     {
         $project: {
-            label: "$_id",
+            _id: 0,
             count: 1,
-            lingering_envo: 1,
-            digits_only: 1,
+            label: "$_id",
+            label_digits_only: 1,
             label_length: 1,
-            _id: 0
         }
     },
 
