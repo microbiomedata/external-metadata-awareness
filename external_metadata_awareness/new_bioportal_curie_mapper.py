@@ -14,8 +14,9 @@ BIOPORTAL_API_KEY = os.environ.get("BIOPORTAL_API_KEY")
 if not BIOPORTAL_API_KEY:
     raise Exception("Please set the BIOPORTAL_API_KEY environment variable in local/.env.")
 
-# Enable requests caching (expires after 7 days)
-requests_cache.install_cache("requests_cache", expire_after=6048000)
+# Enable requests caching (expires after 30 days)
+import datetime
+requests_cache.install_cache("requests_cache", expire_after=datetime.timedelta(days=30))
 
 converter = load_converter(["bioportal", "obo"])
 

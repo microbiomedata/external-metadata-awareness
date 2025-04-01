@@ -257,8 +257,9 @@ def main(host, port, db, collection, field, env_file, min_length, authenticate):
         if 'preferredPrefix' in i and len(i['preferredPrefix'].strip()) > 0:
             obo_ontology_indicators_lc.add(i['preferredPrefix'].strip().lower())
 
-    # Create a cache that lasts for 1 hour (3600 seconds)
-    requests_cache.install_cache('new_env_triad_values_splitter_cache', expire_after=3600)  # 1 hour
+    # Create a cache that lasts for 30 days
+    import datetime
+    requests_cache.install_cache('new_env_triad_values_splitter_cache', expire_after=datetime.timedelta(days=30))
 
     BIOPORTAL_API_KEY = os.getenv("BIOPORTAL_API_KEY")
 
