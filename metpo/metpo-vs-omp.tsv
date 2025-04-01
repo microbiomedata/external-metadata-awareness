@@ -1,0 +1,255 @@
+# curie_map:
+#   GO: http://purl.obolibrary.org/obo/GO_
+#   OMP: http://purl.obolibrary.org/obo/OMP_
+#   PATO: http://purl.obolibrary.org/obo/PATO_
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/9bbc64d9-9078-4e3f-9782-7cd3000439a6
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+http://example.org/metpo-cleanroom/acidophile	acidophile	skos:closeMatch	OMP:0005009	acidophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	acidophile
+http://example.org/metpo-cleanroom/acidophile	acidophile	skos:closeMatch	OMP:0005009	acidophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	acidophile
+http://example.org/metpo-cleanroom/acidophile	acidophile	skos:closeMatch	http://example.org/metpo-cleanroom/acidophile	acidophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	acidophile
+http://example.org/metpo-cleanroom/acidophile	acidophile	skos:closeMatch	http://example.org/metpo-cleanroom/acidophile	acidophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	acidophile
+http://example.org/metpo-cleanroom/acidophile	acidophile	skos:closeMatch	http://example.org/metpo-cleanroom/acidophile	acidophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	acidophile
+http://example.org/metpo-cleanroom/acidophile	acidophile	skos:closeMatch	http://example.org/metpo-cleanroom/acidophile	acidophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	acidophile
+http://example.org/metpo-cleanroom/alkaliphile	alkaliphile	skos:closeMatch	OMP:0005011	alkaliphile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	alkaliphile
+http://example.org/metpo-cleanroom/alkaliphile	alkaliphile	skos:closeMatch	OMP:0005011	alkaliphile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	alkaliphile
+http://example.org/metpo-cleanroom/alkaliphile	alkaliphile	skos:closeMatch	http://example.org/metpo-cleanroom/alkaliphile	alkaliphile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	alkaliphile
+http://example.org/metpo-cleanroom/alkaliphile	alkaliphile	skos:closeMatch	http://example.org/metpo-cleanroom/alkaliphile	alkaliphile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	alkaliphile
+http://example.org/metpo-cleanroom/alkaliphile	alkaliphile	skos:closeMatch	http://example.org/metpo-cleanroom/alkaliphile	alkaliphile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	alkaliphile
+http://example.org/metpo-cleanroom/alkaliphile	alkaliphile	skos:closeMatch	http://example.org/metpo-cleanroom/alkaliphile	alkaliphile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	alkaliphile
+http://example.org/metpo-cleanroom/auxotroph	auxotroph	skos:closeMatch	OMP:0007069	requires growth factor(s)	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	auxotroph
+http://example.org/metpo-cleanroom/auxotroph	auxotroph	skos:closeMatch	OMP:0007069	requires growth factor(s)	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	auxotrophic
+http://example.org/metpo-cleanroom/auxotroph	auxotroph	skos:closeMatch	OMP:0007069	requires growth factor(s)	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	auxotroph
+http://example.org/metpo-cleanroom/auxotroph	auxotroph	skos:closeMatch	PATO:0000422	auxotrophic	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	auxotrophic
+http://example.org/metpo-cleanroom/auxotroph	auxotroph	skos:closeMatch	http://example.org/metpo-cleanroom/auxotroph	auxotroph	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	auxotroph
+http://example.org/metpo-cleanroom/auxotroph	auxotroph	skos:closeMatch	http://example.org/metpo-cleanroom/auxotroph	auxotroph	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	auxotroph
+http://example.org/metpo-cleanroom/auxotroph	auxotroph	skos:closeMatch	http://example.org/metpo-cleanroom/auxotroph	auxotroph	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	auxotrophic
+http://example.org/metpo-cleanroom/auxotroph	auxotroph	skos:closeMatch	http://example.org/metpo-cleanroom/auxotroph	auxotroph	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	auxotroph
+http://example.org/metpo-cleanroom/auxotroph	auxotroph	skos:closeMatch	http://example.org/metpo-cleanroom/auxotroph	auxotroph	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	auxotroph
+http://example.org/metpo-cleanroom/axial_filament	axial filament	skos:closeMatch	OMP:0000023	periplasmic flagellum/flagella	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	axial filament
+http://example.org/metpo-cleanroom/axial_filament	axial filament	skos:closeMatch	OMP:0000023	periplasmic flagellum/flagella	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	axial filament
+http://example.org/metpo-cleanroom/axial_filament	axial filament	skos:closeMatch	http://example.org/metpo-cleanroom/axial_filament	axial filament	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	axial filament
+http://example.org/metpo-cleanroom/axial_filament	axial filament	skos:closeMatch	http://example.org/metpo-cleanroom/axial_filament	axial filament	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	axial filament
+http://example.org/metpo-cleanroom/axial_filament	axial filament	skos:closeMatch	http://example.org/metpo-cleanroom/axial_filament	axial filament	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	axial filament
+http://example.org/metpo-cleanroom/axial_filament	axial filament	skos:closeMatch	http://example.org/metpo-cleanroom/axial_filament	axial filament	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	axial filament
+http://example.org/metpo-cleanroom/bacillus	bacillus	skos:closeMatch	OMP:0000076	rod-shaped cells	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	bacillus
+http://example.org/metpo-cleanroom/bacillus	bacillus	skos:closeMatch	OMP:0000076	rod-shaped cells	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	bacillus
+http://example.org/metpo-cleanroom/bacillus	bacillus	skos:closeMatch	http://example.org/metpo-cleanroom/bacillus	bacillus	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	bacillus
+http://example.org/metpo-cleanroom/bacillus	bacillus	skos:closeMatch	http://example.org/metpo-cleanroom/bacillus	bacillus	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	bacillus
+http://example.org/metpo-cleanroom/bacillus	bacillus	skos:closeMatch	http://example.org/metpo-cleanroom/bacillus	bacillus	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	bacillus
+http://example.org/metpo-cleanroom/bacillus	bacillus	skos:closeMatch	http://example.org/metpo-cleanroom/bacillus	bacillus	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	bacillus
+http://example.org/metpo-cleanroom/biofilm	biofilm	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm	biofilm	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	biofilm-forming
+http://example.org/metpo-cleanroom/biofilm	biofilm	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm	biofilm	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0042710
+http://example.org/metpo-cleanroom/biofilm	biofilm	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	biofilm-forming
+http://example.org/metpo-cleanroom/biofilm	biofilm	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0042710
+http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm	biofilm	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	biofilm-forming
+http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm	biofilm	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0042710
+http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	biofilm-forming
+http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0042710
+http://example.org/metpo-cleanroom/cellular_component	cellular component	skos:closeMatch	GO:0005575	cellular_component	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	cellular component
+http://example.org/metpo-cleanroom/cellular_component	cellular component	skos:closeMatch	http://example.org/metpo-cleanroom/cellular_component	cellular component	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cellular component
+http://example.org/metpo-cleanroom/cellular_process	cellular process	skos:closeMatch	GO:0009987	cellular process	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cellular process
+http://example.org/metpo-cleanroom/cellular_process	cellular process	skos:closeMatch	GO:0042995	cell projection	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	cellular process
+http://example.org/metpo-cleanroom/cellular_process	cellular process	skos:closeMatch	http://example.org/metpo-cleanroom/cellular_process	cellular process	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	cellular process
+http://example.org/metpo-cleanroom/characteristic	characteristic	skos:closeMatch	PATO:0000001	quality	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	trait
+http://example.org/metpo-cleanroom/characteristic	characteristic	skos:closeMatch	PATO:0000001	quality	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	quality
+http://example.org/metpo-cleanroom/characteristic	characteristic	skos:closeMatch	http://example.org/metpo-cleanroom/characteristic	characteristic	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	quality
+http://example.org/metpo-cleanroom/characteristic	characteristic	skos:closeMatch	http://example.org/metpo-cleanroom/characteristic	characteristic	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	trait
+http://example.org/metpo-cleanroom/chemotaxis	chemotaxis	skos:closeMatch	GO:0006935	chemotaxis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	chemotaxis
+http://example.org/metpo-cleanroom/chemotaxis	chemotaxis	skos:closeMatch	GO:0006935	chemotaxis	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:relatedMatch-INVERSE	http://example.org/metpo-cleanroom/chemotaxis
+http://example.org/metpo-cleanroom/chemotaxis	chemotaxis	skos:closeMatch	GO:0006935	chemotaxis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chemotaxis
+http://example.org/metpo-cleanroom/chemotaxis	chemotaxis	skos:closeMatch	GO:0006935	chemotaxis	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	rdf:ID	go:0006935
+http://example.org/metpo-cleanroom/chemotaxis	chemotaxis	skos:closeMatch	OMP:0000048	chemotaxis phenotype	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	oio:hasDbXref	go:0006935
+http://example.org/metpo-cleanroom/chemotaxis	chemotaxis	skos:closeMatch	http://example.org/metpo-cleanroom/chemotaxis	chemotaxis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	chemotaxis
+http://example.org/metpo-cleanroom/chemotaxis	chemotaxis	skos:closeMatch	http://example.org/metpo-cleanroom/chemotaxis	chemotaxis	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	chemotaxis
+http://example.org/metpo-cleanroom/chemotaxis	chemotaxis	skos:closeMatch	http://example.org/metpo-cleanroom/chemotaxis	chemotaxis	semapv:LexicalMatching	oaklib	0.5	rdf:ID	rdf:ID	http://example.org/metpo-cleanroom/chemotaxis
+http://example.org/metpo-cleanroom/chemotaxis	chemotaxis	skos:closeMatch	http://example.org/metpo-cleanroom/chemotaxis	chemotaxis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	chemotaxis
+http://example.org/metpo-cleanroom/chemotaxis	chemotaxis	skos:closeMatch	http://example.org/metpo-cleanroom/chemotaxis	chemotaxis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	chemotaxis
+http://example.org/metpo-cleanroom/chemotaxis	chemotaxis	skos:closeMatch	http://example.org/metpo-cleanroom/chemotaxis	chemotaxis	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0006935
+http://example.org/metpo-cleanroom/coccus	coccus	skos:closeMatch	OMP:0000075	coccus	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	coccus
+http://example.org/metpo-cleanroom/coccus	coccus	skos:closeMatch	OMP:0000075	coccus	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	coccus
+http://example.org/metpo-cleanroom/coccus	coccus	skos:closeMatch	http://example.org/metpo-cleanroom/coccus	coccus	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	coccus
+http://example.org/metpo-cleanroom/coccus	coccus	skos:closeMatch	http://example.org/metpo-cleanroom/coccus	coccus	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	coccus
+http://example.org/metpo-cleanroom/coccus	coccus	skos:closeMatch	http://example.org/metpo-cleanroom/coccus	coccus	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	coccus
+http://example.org/metpo-cleanroom/coccus	coccus	skos:closeMatch	http://example.org/metpo-cleanroom/coccus	coccus	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	coccus
+http://example.org/metpo-cleanroom/cold_shock_protein	cold shock protein	skos:closeMatch	http://example.org/metpo-cleanroom/cold_shock_protein	cold shock protein	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009409
+http://example.org/metpo-cleanroom/cold_shock_protein	cold shock protein	skos:closeMatch	http://example.org/metpo-cleanroom/cold_shock_response	cold shock response	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009409
+http://example.org/metpo-cleanroom/cold_shock_response	cold shock response	skos:closeMatch	http://example.org/metpo-cleanroom/cold_shock_protein	cold shock protein	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009409
+http://example.org/metpo-cleanroom/cold_shock_response	cold shock response	skos:closeMatch	http://example.org/metpo-cleanroom/cold_shock_response	cold shock response	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009409
+http://example.org/metpo-cleanroom/colony_texture	colony texture	skos:closeMatch	OMP:0000229	colony consistency phenotype	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	colony texture
+http://example.org/metpo-cleanroom/colony_texture	colony texture	skos:closeMatch	OMP:0000229	colony consistency phenotype	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	colony texture
+http://example.org/metpo-cleanroom/colony_texture	colony texture	skos:closeMatch	http://example.org/metpo-cleanroom/colony_texture	colony texture	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	colony texture
+http://example.org/metpo-cleanroom/colony_texture	colony texture	skos:closeMatch	http://example.org/metpo-cleanroom/colony_texture	colony texture	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	colony texture
+http://example.org/metpo-cleanroom/colony_texture	colony texture	skos:closeMatch	http://example.org/metpo-cleanroom/colony_texture	colony texture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	colony texture
+http://example.org/metpo-cleanroom/colony_texture	colony texture	skos:closeMatch	http://example.org/metpo-cleanroom/colony_texture	colony texture	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	colony texture
+http://example.org/metpo-cleanroom/developmental_process	developmental process	skos:closeMatch	GO:0032502	developmental process	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	developmental process
+http://example.org/metpo-cleanroom/developmental_process	developmental process	skos:closeMatch	http://example.org/metpo-cleanroom/developmental_process	developmental process	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	developmental process
+http://example.org/metpo-cleanroom/enzyme_activity	enzyme activity	skos:closeMatch	OMP:0000221	enzymatic activity phenotype	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	oio:hasDbXref	go:0003824
+http://example.org/metpo-cleanroom/enzyme_activity	enzyme activity	skos:closeMatch	http://example.org/metpo-cleanroom/enzyme_activity	enzyme activity	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0003824
+http://example.org/metpo-cleanroom/facultative_anaerobe	facultative anaerobe	skos:closeMatch	OMP:0000087	facultative anaerobe	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	facultative anaerobe
+http://example.org/metpo-cleanroom/facultative_anaerobe	facultative anaerobe	skos:closeMatch	OMP:0000087	facultative anaerobe	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	facultative anaerobe
+http://example.org/metpo-cleanroom/facultative_anaerobe	facultative anaerobe	skos:closeMatch	http://example.org/metpo-cleanroom/facultative_anaerobe	facultative anaerobe	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	facultative anaerobe
+http://example.org/metpo-cleanroom/facultative_anaerobe	facultative anaerobe	skos:closeMatch	http://example.org/metpo-cleanroom/facultative_anaerobe	facultative anaerobe	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	facultative anaerobe
+http://example.org/metpo-cleanroom/facultative_anaerobe	facultative anaerobe	skos:closeMatch	http://example.org/metpo-cleanroom/facultative_anaerobe	facultative anaerobe	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	facultative anaerobe
+http://example.org/metpo-cleanroom/facultative_anaerobe	facultative anaerobe	skos:closeMatch	http://example.org/metpo-cleanroom/facultative_anaerobe	facultative anaerobe	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	facultative anaerobe
+http://example.org/metpo-cleanroom/filamentous	filamentous	skos:closeMatch	OMP:0000072	filamentous	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	filamentous
+http://example.org/metpo-cleanroom/filamentous	filamentous	skos:closeMatch	OMP:0000072	filamentous	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	filamentous
+http://example.org/metpo-cleanroom/filamentous	filamentous	skos:closeMatch	http://example.org/metpo-cleanroom/filamentous	filamentous	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	filamentous
+http://example.org/metpo-cleanroom/filamentous	filamentous	skos:closeMatch	http://example.org/metpo-cleanroom/filamentous	filamentous	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	filamentous
+http://example.org/metpo-cleanroom/filamentous	filamentous	skos:closeMatch	http://example.org/metpo-cleanroom/filamentous	filamentous	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	filamentous
+http://example.org/metpo-cleanroom/filamentous	filamentous	skos:closeMatch	http://example.org/metpo-cleanroom/filamentous	filamentous	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	filamentous
+http://example.org/metpo-cleanroom/fimbriae	fimbriae	skos:closeMatch	http://example.org/metpo-cleanroom/fimbriae	fimbriae	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009289
+http://example.org/metpo-cleanroom/fimbriae	fimbriae	skos:closeMatch	http://example.org/metpo-cleanroom/pilus	pilus	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009289
+http://example.org/metpo-cleanroom/growth_pattern	growth pattern	skos:closeMatch	GO:0040007	growth	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	growth pattern
+http://example.org/metpo-cleanroom/growth_pattern	growth pattern	skos:closeMatch	http://example.org/metpo-cleanroom/growth_pattern	growth pattern	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	growth pattern
+http://example.org/metpo-cleanroom/hyperthermophile	hyperthermophile	skos:closeMatch	OMP:0005003	hyperthermophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	hyperthermophile
+http://example.org/metpo-cleanroom/hyperthermophile	hyperthermophile	skos:closeMatch	OMP:0005003	hyperthermophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hyperthermophile
+http://example.org/metpo-cleanroom/hyperthermophile	hyperthermophile	skos:closeMatch	http://example.org/metpo-cleanroom/hyperthermophile	hyperthermophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	hyperthermophile
+http://example.org/metpo-cleanroom/hyperthermophile	hyperthermophile	skos:closeMatch	http://example.org/metpo-cleanroom/hyperthermophile	hyperthermophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	hyperthermophile
+http://example.org/metpo-cleanroom/hyperthermophile	hyperthermophile	skos:closeMatch	http://example.org/metpo-cleanroom/hyperthermophile	hyperthermophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	hyperthermophile
+http://example.org/metpo-cleanroom/hyperthermophile	hyperthermophile	skos:closeMatch	http://example.org/metpo-cleanroom/hyperthermophile	hyperthermophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	hyperthermophile
+http://example.org/metpo-cleanroom/localization	localization	skos:closeMatch	GO:0051179	localization	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	localization
+http://example.org/metpo-cleanroom/localization	localization	skos:closeMatch	http://example.org/metpo-cleanroom/localization	localization	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	localization
+http://example.org/metpo-cleanroom/mesophile	mesophile	skos:closeMatch	OMP:0005005	mesophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	mesophile
+http://example.org/metpo-cleanroom/mesophile	mesophile	skos:closeMatch	OMP:0005005	mesophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mesophile
+http://example.org/metpo-cleanroom/mesophile	mesophile	skos:closeMatch	http://example.org/metpo-cleanroom/mesophile	mesophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	mesophile
+http://example.org/metpo-cleanroom/mesophile	mesophile	skos:closeMatch	http://example.org/metpo-cleanroom/mesophile	mesophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	mesophile
+http://example.org/metpo-cleanroom/mesophile	mesophile	skos:closeMatch	http://example.org/metpo-cleanroom/mesophile	mesophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	mesophile
+http://example.org/metpo-cleanroom/mesophile	mesophile	skos:closeMatch	http://example.org/metpo-cleanroom/mesophile	mesophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mesophile
+http://example.org/metpo-cleanroom/microaerophile	microaerophile	skos:closeMatch	OMP:0000171	microaerophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	microaerophile
+http://example.org/metpo-cleanroom/microaerophile	microaerophile	skos:closeMatch	OMP:0000171	microaerophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	microaerophile
+http://example.org/metpo-cleanroom/microaerophile	microaerophile	skos:closeMatch	http://example.org/metpo-cleanroom/microaerophile	microaerophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	microaerophile
+http://example.org/metpo-cleanroom/microaerophile	microaerophile	skos:closeMatch	http://example.org/metpo-cleanroom/microaerophile	microaerophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	microaerophile
+http://example.org/metpo-cleanroom/microaerophile	microaerophile	skos:closeMatch	http://example.org/metpo-cleanroom/microaerophile	microaerophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	microaerophile
+http://example.org/metpo-cleanroom/microaerophile	microaerophile	skos:closeMatch	http://example.org/metpo-cleanroom/microaerophile	microaerophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	microaerophile
+http://example.org/metpo-cleanroom/neutrophile	neutrophile	skos:closeMatch	OMP:0005010	neutrophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	neutrophile
+http://example.org/metpo-cleanroom/neutrophile	neutrophile	skos:closeMatch	OMP:0005010	neutrophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	neutrophile
+http://example.org/metpo-cleanroom/neutrophile	neutrophile	skos:closeMatch	http://example.org/metpo-cleanroom/neutrophile	neutrophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	neutrophile
+http://example.org/metpo-cleanroom/neutrophile	neutrophile	skos:closeMatch	http://example.org/metpo-cleanroom/neutrophile	neutrophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	neutrophile
+http://example.org/metpo-cleanroom/neutrophile	neutrophile	skos:closeMatch	http://example.org/metpo-cleanroom/neutrophile	neutrophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	neutrophile
+http://example.org/metpo-cleanroom/neutrophile	neutrophile	skos:closeMatch	http://example.org/metpo-cleanroom/neutrophile	neutrophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	neutrophile
+http://example.org/metpo-cleanroom/obligate_aerobe	obligate aerobe	skos:closeMatch	OMP:0000185	obligate aerobe	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	obligate aerobe
+http://example.org/metpo-cleanroom/obligate_aerobe	obligate aerobe	skos:closeMatch	OMP:0000185	obligate aerobe	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	obligate aerobe
+http://example.org/metpo-cleanroom/obligate_aerobe	obligate aerobe	skos:closeMatch	http://example.org/metpo-cleanroom/obligate_aerobe	obligate aerobe	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	obligate aerobe
+http://example.org/metpo-cleanroom/obligate_aerobe	obligate aerobe	skos:closeMatch	http://example.org/metpo-cleanroom/obligate_aerobe	obligate aerobe	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	obligate aerobe
+http://example.org/metpo-cleanroom/obligate_aerobe	obligate aerobe	skos:closeMatch	http://example.org/metpo-cleanroom/obligate_aerobe	obligate aerobe	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	obligate aerobe
+http://example.org/metpo-cleanroom/obligate_aerobe	obligate aerobe	skos:closeMatch	http://example.org/metpo-cleanroom/obligate_aerobe	obligate aerobe	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	obligate aerobe
+http://example.org/metpo-cleanroom/obligate_anaerobe	obligate anaerobe	skos:closeMatch	OMP:0000184	obligate anaerobe	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	obligate anaerobe
+http://example.org/metpo-cleanroom/obligate_anaerobe	obligate anaerobe	skos:closeMatch	OMP:0000184	obligate anaerobe	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	obligate anaerobe
+http://example.org/metpo-cleanroom/obligate_anaerobe	obligate anaerobe	skos:closeMatch	http://example.org/metpo-cleanroom/obligate_anaerobe	obligate anaerobe	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	obligate anaerobe
+http://example.org/metpo-cleanroom/obligate_anaerobe	obligate anaerobe	skos:closeMatch	http://example.org/metpo-cleanroom/obligate_anaerobe	obligate anaerobe	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	obligate anaerobe
+http://example.org/metpo-cleanroom/obligate_anaerobe	obligate anaerobe	skos:closeMatch	http://example.org/metpo-cleanroom/obligate_anaerobe	obligate anaerobe	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	obligate anaerobe
+http://example.org/metpo-cleanroom/obligate_anaerobe	obligate anaerobe	skos:closeMatch	http://example.org/metpo-cleanroom/obligate_anaerobe	obligate anaerobe	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	obligate anaerobe
+http://example.org/metpo-cleanroom/physiological_process	physiological process	skos:closeMatch	GO:0008150	biological_process	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	physiological process
+http://example.org/metpo-cleanroom/physiological_process	physiological process	skos:closeMatch	http://example.org/metpo-cleanroom/physiological_process	physiological process	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	physiological process
+http://example.org/metpo-cleanroom/pigment	pigment	skos:closeMatch	http://example.org/metpo-cleanroom/pigment	pigment	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pigmented
+http://example.org/metpo-cleanroom/pigment	pigment	skos:closeMatch	http://example.org/metpo-cleanroom/pigmentation	pigmentation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pigmented
+http://example.org/metpo-cleanroom/pigmentation	pigmentation	skos:closeMatch	http://example.org/metpo-cleanroom/pigment	pigment	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pigmented
+http://example.org/metpo-cleanroom/pigmentation	pigmentation	skos:closeMatch	http://example.org/metpo-cleanroom/pigmentation	pigmentation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pigmented
+http://example.org/metpo-cleanroom/pilus	pilus	skos:closeMatch	http://example.org/metpo-cleanroom/fimbriae	fimbriae	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009289
+http://example.org/metpo-cleanroom/pilus	pilus	skos:closeMatch	http://example.org/metpo-cleanroom/pilus	pilus	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009289
+http://example.org/metpo-cleanroom/protein_synthesis	protein synthesis	skos:closeMatch	GO:0006412	translation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	protein synthesis
+http://example.org/metpo-cleanroom/protein_synthesis	protein synthesis	skos:closeMatch	http://example.org/metpo-cleanroom/protein_synthesis	protein synthesis	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	protein synthesis
+http://example.org/metpo-cleanroom/prototroph	prototroph	skos:closeMatch	OMP:0007018	does not require growth factor(s)	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	prototroph
+http://example.org/metpo-cleanroom/prototroph	prototroph	skos:closeMatch	OMP:0007018	does not require growth factor(s)	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasExactSynonym	prototrophic
+http://example.org/metpo-cleanroom/prototroph	prototroph	skos:closeMatch	OMP:0007018	does not require growth factor(s)	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	prototroph
+http://example.org/metpo-cleanroom/prototroph	prototroph	skos:closeMatch	PATO:0000423	prototrophic	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	prototrophic
+http://example.org/metpo-cleanroom/prototroph	prototroph	skos:closeMatch	http://example.org/metpo-cleanroom/prototroph	prototroph	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	prototroph
+http://example.org/metpo-cleanroom/prototroph	prototroph	skos:closeMatch	http://example.org/metpo-cleanroom/prototroph	prototroph	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	prototroph
+http://example.org/metpo-cleanroom/prototroph	prototroph	skos:closeMatch	http://example.org/metpo-cleanroom/prototroph	prototroph	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	prototrophic
+http://example.org/metpo-cleanroom/prototroph	prototroph	skos:closeMatch	http://example.org/metpo-cleanroom/prototroph	prototroph	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	prototroph
+http://example.org/metpo-cleanroom/prototroph	prototroph	skos:closeMatch	http://example.org/metpo-cleanroom/prototroph	prototroph	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	prototroph
+http://example.org/metpo-cleanroom/psychrophile	psychrophile	skos:closeMatch	OMP:0005007	psychrophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	psychrophile
+http://example.org/metpo-cleanroom/psychrophile	psychrophile	skos:closeMatch	OMP:0005007	psychrophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	psychrophile
+http://example.org/metpo-cleanroom/psychrophile	psychrophile	skos:closeMatch	http://example.org/metpo-cleanroom/psychrophile	psychrophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	psychrophile
+http://example.org/metpo-cleanroom/psychrophile	psychrophile	skos:closeMatch	http://example.org/metpo-cleanroom/psychrophile	psychrophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	psychrophile
+http://example.org/metpo-cleanroom/psychrophile	psychrophile	skos:closeMatch	http://example.org/metpo-cleanroom/psychrophile	psychrophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	psychrophile
+http://example.org/metpo-cleanroom/psychrophile	psychrophile	skos:closeMatch	http://example.org/metpo-cleanroom/psychrophile	psychrophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	psychrophile
+http://example.org/metpo-cleanroom/qualifier	qualifier	skos:closeMatch	http://example.org/metpo-cleanroom/qualifier	qualifier	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	qualifier
+http://example.org/metpo-cleanroom/quorum_sensing	quorum sensing	skos:closeMatch	OMP:0000069	quorum sensing phenotype	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	oio:hasDbXref	go:0009372
+http://example.org/metpo-cleanroom/quorum_sensing	quorum sensing	skos:closeMatch	http://example.org/metpo-cleanroom/quorum_sensing	quorum sensing	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009372
+http://example.org/metpo-cleanroom/regulation	regulation	skos:closeMatch	GO:0065007	biological regulation	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasBroadSynonym	regulation
+http://example.org/metpo-cleanroom/regulation	regulation	skos:closeMatch	GO:0065007	biological regulation	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:relatedMatch-INVERSE	http://example.org/metpo-cleanroom/regulation
+http://example.org/metpo-cleanroom/regulation	regulation	skos:closeMatch	GO:0065007	biological regulation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasBroadSynonym	regulation
+http://example.org/metpo-cleanroom/regulation	regulation	skos:closeMatch	http://example.org/metpo-cleanroom/regulation	regulation	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	regulation
+http://example.org/metpo-cleanroom/regulation	regulation	skos:closeMatch	http://example.org/metpo-cleanroom/regulation	regulation	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	regulation
+http://example.org/metpo-cleanroom/regulation	regulation	skos:closeMatch	http://example.org/metpo-cleanroom/regulation	regulation	semapv:LexicalMatching	oaklib	0.5	rdf:ID	rdf:ID	http://example.org/metpo-cleanroom/regulation
+http://example.org/metpo-cleanroom/regulation	regulation	skos:closeMatch	http://example.org/metpo-cleanroom/regulation	regulation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	regulation
+http://example.org/metpo-cleanroom/regulation	regulation	skos:closeMatch	http://example.org/metpo-cleanroom/regulation	regulation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	regulation
+http://example.org/metpo-cleanroom/sheathed	sheathed	skos:closeMatch	OMP:0000127	sheathed	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	sheathed
+http://example.org/metpo-cleanroom/sheathed	sheathed	skos:closeMatch	OMP:0000127	sheathed	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sheathed
+http://example.org/metpo-cleanroom/sheathed	sheathed	skos:closeMatch	http://example.org/metpo-cleanroom/sheathed	sheathed	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	sheathed
+http://example.org/metpo-cleanroom/sheathed	sheathed	skos:closeMatch	http://example.org/metpo-cleanroom/sheathed	sheathed	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	sheathed
+http://example.org/metpo-cleanroom/sheathed	sheathed	skos:closeMatch	http://example.org/metpo-cleanroom/sheathed	sheathed	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	sheathed
+http://example.org/metpo-cleanroom/sheathed	sheathed	skos:closeMatch	http://example.org/metpo-cleanroom/sheathed	sheathed	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sheathed
+http://example.org/metpo-cleanroom/slime_layer	slime layer	skos:closeMatch	OMP:0000203	capsule phenotype	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	slime layer
+http://example.org/metpo-cleanroom/slime_layer	slime layer	skos:closeMatch	OMP:0000203	capsule phenotype	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	slime layer
+http://example.org/metpo-cleanroom/slime_layer	slime layer	skos:closeMatch	OMP:0000204	presence of capsule	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasRelatedSynonym	slime layer
+http://example.org/metpo-cleanroom/slime_layer	slime layer	skos:closeMatch	OMP:0000204	presence of capsule	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasRelatedSynonym	slime layer
+http://example.org/metpo-cleanroom/slime_layer	slime layer	skos:closeMatch	http://example.org/metpo-cleanroom/slime_layer	slime layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	slime layer
+http://example.org/metpo-cleanroom/slime_layer	slime layer	skos:closeMatch	http://example.org/metpo-cleanroom/slime_layer	slime layer	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	slime layer
+http://example.org/metpo-cleanroom/slime_layer	slime layer	skos:closeMatch	http://example.org/metpo-cleanroom/slime_layer	slime layer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	slime layer
+http://example.org/metpo-cleanroom/slime_layer	slime layer	skos:closeMatch	http://example.org/metpo-cleanroom/slime_layer	slime layer	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	slime layer
+http://example.org/metpo-cleanroom/spirillum	spirillum	skos:closeMatch	OMP:0000086	spiral cell shape	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	spirillum
+http://example.org/metpo-cleanroom/spirillum	spirillum	skos:closeMatch	OMP:0000086	spiral cell shape	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	spirillum
+http://example.org/metpo-cleanroom/spirillum	spirillum	skos:closeMatch	OMP:0000124	spirillum	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	spirillum
+http://example.org/metpo-cleanroom/spirillum	spirillum	skos:closeMatch	OMP:0000124	spirillum	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	spirillum
+http://example.org/metpo-cleanroom/spirillum	spirillum	skos:closeMatch	http://example.org/metpo-cleanroom/spirillum	spirillum	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	spirillum
+http://example.org/metpo-cleanroom/spirillum	spirillum	skos:closeMatch	http://example.org/metpo-cleanroom/spirillum	spirillum	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	spirillum
+http://example.org/metpo-cleanroom/spirillum	spirillum	skos:closeMatch	http://example.org/metpo-cleanroom/spirillum	spirillum	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	spirillum
+http://example.org/metpo-cleanroom/spirillum	spirillum	skos:closeMatch	http://example.org/metpo-cleanroom/spirillum	spirillum	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	spirillum
+http://example.org/metpo-cleanroom/spirochete	spirochete	skos:closeMatch	OMP:0000086	spiral cell shape	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	spirochete
+http://example.org/metpo-cleanroom/spirochete	spirochete	skos:closeMatch	OMP:0000086	spiral cell shape	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	spirochete
+http://example.org/metpo-cleanroom/spirochete	spirochete	skos:closeMatch	OMP:0000125	spirochete	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	spirochete
+http://example.org/metpo-cleanroom/spirochete	spirochete	skos:closeMatch	OMP:0000125	spirochete	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	spirochete
+http://example.org/metpo-cleanroom/spirochete	spirochete	skos:closeMatch	http://example.org/metpo-cleanroom/spirochete	spirochete	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	spirochete
+http://example.org/metpo-cleanroom/spirochete	spirochete	skos:closeMatch	http://example.org/metpo-cleanroom/spirochete	spirochete	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	spirochete
+http://example.org/metpo-cleanroom/spirochete	spirochete	skos:closeMatch	http://example.org/metpo-cleanroom/spirochete	spirochete	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	spirochete
+http://example.org/metpo-cleanroom/spirochete	spirochete	skos:closeMatch	http://example.org/metpo-cleanroom/spirochete	spirochete	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	spirochete
+http://example.org/metpo-cleanroom/sporulation	sporulation	skos:closeMatch	GO:0030435	sporulation resulting in formation of a cellular spore	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:relatedMatch-INVERSE	http://example.org/metpo-cleanroom/sporulation
+http://example.org/metpo-cleanroom/sporulation	sporulation	skos:closeMatch	GO:0030435	sporulation resulting in formation of a cellular spore	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	rdf:ID	go:0030435
+http://example.org/metpo-cleanroom/sporulation	sporulation	skos:closeMatch	GO:0043934	sporulation	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	sporulation
+http://example.org/metpo-cleanroom/sporulation	sporulation	skos:closeMatch	GO:0043934	sporulation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sporulation
+http://example.org/metpo-cleanroom/sporulation	sporulation	skos:closeMatch	http://example.org/metpo-cleanroom/sporulation	sporulation	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	sporulation
+http://example.org/metpo-cleanroom/sporulation	sporulation	skos:closeMatch	http://example.org/metpo-cleanroom/sporulation	sporulation	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	sporulation
+http://example.org/metpo-cleanroom/sporulation	sporulation	skos:closeMatch	http://example.org/metpo-cleanroom/sporulation	sporulation	semapv:LexicalMatching	oaklib	0.5	rdf:ID	rdf:ID	http://example.org/metpo-cleanroom/sporulation
+http://example.org/metpo-cleanroom/sporulation	sporulation	skos:closeMatch	http://example.org/metpo-cleanroom/sporulation	sporulation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	sporulation
+http://example.org/metpo-cleanroom/sporulation	sporulation	skos:closeMatch	http://example.org/metpo-cleanroom/sporulation	sporulation	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	sporulation
+http://example.org/metpo-cleanroom/sporulation	sporulation	skos:closeMatch	http://example.org/metpo-cleanroom/sporulation	sporulation	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0030435
+http://example.org/metpo-cleanroom/square_cell	square cell	skos:closeMatch	OMP:0000129	cuboidal cell shape	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	square
+http://example.org/metpo-cleanroom/square_cell	square cell	skos:closeMatch	http://example.org/metpo-cleanroom/square_cell	square cell	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	square
+http://example.org/metpo-cleanroom/structure	structure	skos:closeMatch	PATO:0000141	structure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	structure
+http://example.org/metpo-cleanroom/structure	structure	skos:closeMatch	http://example.org/metpo-cleanroom/structure	structure	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	structure
+http://example.org/metpo-cleanroom/thermophile	thermophile	skos:closeMatch	OMP:0005004	thermophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	thermophile
+http://example.org/metpo-cleanroom/thermophile	thermophile	skos:closeMatch	OMP:0005004	thermophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	thermophile
+http://example.org/metpo-cleanroom/thermophile	thermophile	skos:closeMatch	http://example.org/metpo-cleanroom/thermophile	thermophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	thermophile
+http://example.org/metpo-cleanroom/thermophile	thermophile	skos:closeMatch	http://example.org/metpo-cleanroom/thermophile	thermophile	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	thermophile
+http://example.org/metpo-cleanroom/thermophile	thermophile	skos:closeMatch	http://example.org/metpo-cleanroom/thermophile	thermophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	thermophile
+http://example.org/metpo-cleanroom/thermophile	thermophile	skos:closeMatch	http://example.org/metpo-cleanroom/thermophile	thermophile	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	thermophile
+http://example.org/metpo-cleanroom/twitching_motility	twitching motility	skos:closeMatch	GO:0043107	type IV pilus-dependent motility	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	twitching motility
+http://example.org/metpo-cleanroom/twitching_motility	twitching motility	skos:closeMatch	GO:0043107	type IV pilus-dependent motility	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	twitching motility
+http://example.org/metpo-cleanroom/twitching_motility	twitching motility	skos:closeMatch	http://example.org/metpo-cleanroom/twitching_motility	twitching motility	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	twitching motility
+http://example.org/metpo-cleanroom/twitching_motility	twitching motility	skos:closeMatch	http://example.org/metpo-cleanroom/twitching_motility	twitching motility	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	twitching motility
+http://example.org/metpo-cleanroom/twitching_motility	twitching motility	skos:closeMatch	http://example.org/metpo-cleanroom/twitching_motility	twitching motility	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	twitching motility
+http://example.org/metpo-cleanroom/twitching_motility	twitching motility	skos:closeMatch	http://example.org/metpo-cleanroom/twitching_motility	twitching motility	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	twitching motility
+http://example.org/metpo-cleanroom/vibrio	vibrio	skos:closeMatch	OMP:0000077	vibrio	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	vibrio
+http://example.org/metpo-cleanroom/vibrio	vibrio	skos:closeMatch	OMP:0000077	vibrio	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	vibrio
+http://example.org/metpo-cleanroom/vibrio	vibrio	skos:closeMatch	OMP:0000086	spiral cell shape	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasNarrowSynonym	vibrio
+http://example.org/metpo-cleanroom/vibrio	vibrio	skos:closeMatch	OMP:0000086	spiral cell shape	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasNarrowSynonym	vibrio
+http://example.org/metpo-cleanroom/vibrio	vibrio	skos:closeMatch	http://example.org/metpo-cleanroom/vibrio	vibrio	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	vibrio
+http://example.org/metpo-cleanroom/vibrio	vibrio	skos:closeMatch	http://example.org/metpo-cleanroom/vibrio	vibrio	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	vibrio
+http://example.org/metpo-cleanroom/vibrio	vibrio	skos:closeMatch	http://example.org/metpo-cleanroom/vibrio	vibrio	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	vibrio
+http://example.org/metpo-cleanroom/vibrio	vibrio	skos:closeMatch	http://example.org/metpo-cleanroom/vibrio	vibrio	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	vibrio
+http://example.org/metpo-cleanroom/virulence	virulence	skos:closeMatch	OMP:0000098	altered virulence	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	virulence
+http://example.org/metpo-cleanroom/virulence	virulence	skos:closeMatch	OMP:0000098	altered virulence	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	virulence
+http://example.org/metpo-cleanroom/virulence	virulence	skos:closeMatch	http://example.org/metpo-cleanroom/virulence	virulence	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	virulence
+http://example.org/metpo-cleanroom/virulence	virulence	skos:closeMatch	http://example.org/metpo-cleanroom/virulence	virulence	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	virulence
+http://example.org/metpo-cleanroom/virulence	virulence	skos:closeMatch	http://example.org/metpo-cleanroom/virulence	virulence	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	virulence
+http://example.org/metpo-cleanroom/virulence	virulence	skos:closeMatch	http://example.org/metpo-cleanroom/virulence	virulence	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	virulence

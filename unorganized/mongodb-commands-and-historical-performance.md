@@ -42,12 +42,3 @@ db.collectionName.createIndex({ "Package.value": 1 })
 ```compass
 {"Package.value": "MIMS.me.soil.6.0"}
 ```
-
-```shell
-poetry run list-mongodb-paths \
-		--db-name biosamples \
-		--collection biosamples \
-		--sample-size 500000 > local/mongodb-paths-1pct.txt
-```
-
-> Processing documents: 100% 500000/500000 [07:28<00:00, 1114.98it/s]
