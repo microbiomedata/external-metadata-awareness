@@ -23,18 +23,12 @@ local/mixs-slots-sex-gender-analysis-response.txt: local/mixs-slots-sex-gender-a
 	# cborg/claude-opus
 	cat $(word 1,$^) | $(RUN) llm prompt --model claude-3.5-sonnet -o temperature 0.01 | tee $@
 
-
 # getting fragments of MIxS because the whole thing is too large to feed into an LLM
 local/mixs-extensions-with-slots.json: downloads/mixs.yaml
 	yq -o=json e '.classes | with_entries(select(.value.is_a == "Extension") | .value |= del(.slot_usage))' $< | cat > $@
 
 local/mixs-extensions.json: downloads/mixs.yaml
 	yq -o=json e '.classes | with_entries(select(.value.is_a == "Extension") | .value |= del(.slots, .slot_usage))' $< | cat > $@
-
-local/mixs-extension-unique-slots.json: local/mixs-extensions-with-slots.json
-	$(RUN) get-extension-unique-slots \
-		--input-file $< \
-		--output-file $@
 
 local/mixs-env-triad.json: downloads/mixs.yaml
 	yq -o=json e '{"slots": {"env_broad_scale": .slots.env_broad_scale, "env_local_scale": .slots.env_local_scale, "env_medium": .slots.env_medium}}' $< | cat > $@

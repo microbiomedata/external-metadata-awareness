@@ -1,0 +1,86 @@
+# curie_map:
+#   BFO: http://purl.obolibrary.org/obo/BFO_
+#   GO: http://purl.obolibrary.org/obo/GO_
+#   IDO: http://purl.obolibrary.org/obo/IDO_
+#   oio: http://www.geneontology.org/formats/oboInOwl#
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://w3id.org/sssom/license/unspecified
+# mapping_set_id: https://w3id.org/sssom/mappings/26dd3455-040c-4eda-95f2-6e667e45a242
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	confidence	subject_match_field	object_match_field	match_string
+http://example.org/metpo-cleanroom/antibiotic_resistance	antibiotic resistance	skos:closeMatch	IDO:0000581	antibiotic resistance	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	antibiotic resistance
+http://example.org/metpo-cleanroom/antibiotic_resistance	antibiotic resistance	skos:closeMatch	IDO:0000581	antibiotic resistance	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	antibiotic resistance
+http://example.org/metpo-cleanroom/antibiotic_resistance	antibiotic resistance	skos:closeMatch	http://example.org/metpo-cleanroom/antibiotic_resistance	antibiotic resistance	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	antibiotic resistance
+http://example.org/metpo-cleanroom/antibiotic_resistance	antibiotic resistance	skos:closeMatch	http://example.org/metpo-cleanroom/antibiotic_resistance	antibiotic resistance	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	antibiotic resistance
+http://example.org/metpo-cleanroom/antibiotic_resistance	antibiotic resistance	skos:closeMatch	http://example.org/metpo-cleanroom/antibiotic_resistance	antibiotic resistance	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	antibiotic resistance
+http://example.org/metpo-cleanroom/antibiotic_resistance	antibiotic resistance	skos:closeMatch	http://example.org/metpo-cleanroom/antibiotic_resistance	antibiotic resistance	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	antibiotic resistance
+http://example.org/metpo-cleanroom/biofilm	biofilm	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm	biofilm	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	biofilm-forming
+http://example.org/metpo-cleanroom/biofilm	biofilm	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm	biofilm	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0042710
+http://example.org/metpo-cleanroom/biofilm	biofilm	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	biofilm-forming
+http://example.org/metpo-cleanroom/biofilm	biofilm	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0042710
+http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm	biofilm	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	biofilm-forming
+http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm	biofilm	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0042710
+http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	biofilm-forming
+http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	skos:closeMatch	http://example.org/metpo-cleanroom/biofilm_formation	biofilm formation	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0042710
+http://example.org/metpo-cleanroom/characteristic	characteristic	skos:closeMatch	BFO:0000019	quality	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	quality
+http://example.org/metpo-cleanroom/characteristic	characteristic	skos:closeMatch	http://example.org/metpo-cleanroom/characteristic	characteristic	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	quality
+http://example.org/metpo-cleanroom/cold_shock_protein	cold shock protein	skos:closeMatch	http://example.org/metpo-cleanroom/cold_shock_protein	cold shock protein	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009409
+http://example.org/metpo-cleanroom/cold_shock_protein	cold shock protein	skos:closeMatch	http://example.org/metpo-cleanroom/cold_shock_response	cold shock response	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009409
+http://example.org/metpo-cleanroom/cold_shock_response	cold shock response	skos:closeMatch	http://example.org/metpo-cleanroom/cold_shock_protein	cold shock protein	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009409
+http://example.org/metpo-cleanroom/cold_shock_response	cold shock response	skos:closeMatch	http://example.org/metpo-cleanroom/cold_shock_response	cold shock response	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009409
+http://example.org/metpo-cleanroom/commensalism	commensalism	skos:closeMatch	GO:0085031	commensalism	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	commensalism
+http://example.org/metpo-cleanroom/commensalism	commensalism	skos:closeMatch	GO:0085031	commensalism	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	commensalism
+http://example.org/metpo-cleanroom/commensalism	commensalism	skos:closeMatch	IDO:0000525	commensal	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	rdfs:label	commensal
+http://example.org/metpo-cleanroom/commensalism	commensalism	skos:closeMatch	http://example.org/metpo-cleanroom/commensalism	commensalism	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	commensalism
+http://example.org/metpo-cleanroom/commensalism	commensalism	skos:closeMatch	http://example.org/metpo-cleanroom/commensalism	commensalism	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	commensalism
+http://example.org/metpo-cleanroom/commensalism	commensalism	skos:closeMatch	http://example.org/metpo-cleanroom/commensalism	commensalism	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	commensal
+http://example.org/metpo-cleanroom/commensalism	commensalism	skos:closeMatch	http://example.org/metpo-cleanroom/commensalism	commensalism	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	commensalism
+http://example.org/metpo-cleanroom/commensalism	commensalism	skos:closeMatch	http://example.org/metpo-cleanroom/commensalism	commensalism	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	commensalism
+http://example.org/metpo-cleanroom/developmental_process	developmental process	skos:closeMatch	GO:0032502	developmental process	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	developmental process
+http://example.org/metpo-cleanroom/developmental_process	developmental process	skos:closeMatch	http://example.org/metpo-cleanroom/developmental_process	developmental process	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	developmental process
+http://example.org/metpo-cleanroom/fimbriae	fimbriae	skos:closeMatch	http://example.org/metpo-cleanroom/fimbriae	fimbriae	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009289
+http://example.org/metpo-cleanroom/fimbriae	fimbriae	skos:closeMatch	http://example.org/metpo-cleanroom/pilus	pilus	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009289
+http://example.org/metpo-cleanroom/infection	infection	skos:closeMatch	IDO:0000586	infection	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	infection
+http://example.org/metpo-cleanroom/infection	infection	skos:closeMatch	IDO:0000586	infection	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	infection
+http://example.org/metpo-cleanroom/infection	infection	skos:closeMatch	http://example.org/metpo-cleanroom/infection	infection	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	infection
+http://example.org/metpo-cleanroom/infection	infection	skos:closeMatch	http://example.org/metpo-cleanroom/infection	infection	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	infection
+http://example.org/metpo-cleanroom/infection	infection	skos:closeMatch	http://example.org/metpo-cleanroom/infection	infection	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	infection
+http://example.org/metpo-cleanroom/infection	infection	skos:closeMatch	http://example.org/metpo-cleanroom/infection	infection	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	infection
+http://example.org/metpo-cleanroom/invasion	invasion	skos:closeMatch	GO:0044409	entry into host	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:relatedMatch-INVERSE	http://example.org/metpo-cleanroom/invasion
+http://example.org/metpo-cleanroom/invasion	invasion	skos:closeMatch	http://example.org/metpo-cleanroom/invasion	invasion	semapv:LexicalMatching	oaklib	0.5	rdf:ID	rdf:ID	http://example.org/metpo-cleanroom/invasion
+http://example.org/metpo-cleanroom/mutualism	mutualism	skos:closeMatch	GO:0085030	mutualism	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	mutualism
+http://example.org/metpo-cleanroom/mutualism	mutualism	skos:closeMatch	GO:0085030	mutualism	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mutualism
+http://example.org/metpo-cleanroom/mutualism	mutualism	skos:closeMatch	http://example.org/metpo-cleanroom/mutualism	mutualism	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	mutualism
+http://example.org/metpo-cleanroom/mutualism	mutualism	skos:closeMatch	http://example.org/metpo-cleanroom/mutualism	mutualism	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	mutualism
+http://example.org/metpo-cleanroom/mutualism	mutualism	skos:closeMatch	http://example.org/metpo-cleanroom/mutualism	mutualism	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	mutualism
+http://example.org/metpo-cleanroom/mutualism	mutualism	skos:closeMatch	http://example.org/metpo-cleanroom/mutualism	mutualism	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	mutualism
+http://example.org/metpo-cleanroom/pigment	pigment	skos:closeMatch	http://example.org/metpo-cleanroom/pigment	pigment	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pigmented
+http://example.org/metpo-cleanroom/pigment	pigment	skos:closeMatch	http://example.org/metpo-cleanroom/pigmentation	pigmentation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pigmented
+http://example.org/metpo-cleanroom/pigmentation	pigmentation	skos:closeMatch	http://example.org/metpo-cleanroom/pigment	pigment	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pigmented
+http://example.org/metpo-cleanroom/pigmentation	pigmentation	skos:closeMatch	http://example.org/metpo-cleanroom/pigmentation	pigmentation	semapv:LexicalMatching	oaklib	0.5	oio:hasRelatedSynonym	oio:hasRelatedSynonym	pigmented
+http://example.org/metpo-cleanroom/pilus	pilus	skos:closeMatch	http://example.org/metpo-cleanroom/fimbriae	fimbriae	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009289
+http://example.org/metpo-cleanroom/pilus	pilus	skos:closeMatch	http://example.org/metpo-cleanroom/pilus	pilus	semapv:LexicalMatching	oaklib	0.5	skos:relatedMatch	skos:relatedMatch	go:0009289
+http://example.org/metpo-cleanroom/process	process	skos:closeMatch	BFO:0000015	process	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	process
+http://example.org/metpo-cleanroom/process	process	skos:closeMatch	http://example.org/metpo-cleanroom/process	process	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	process
+http://example.org/metpo-cleanroom/regulation	regulation	skos:closeMatch	GO:0065007	biological regulation	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:relatedMatch-INVERSE	http://example.org/metpo-cleanroom/regulation
+http://example.org/metpo-cleanroom/regulation	regulation	skos:closeMatch	http://example.org/metpo-cleanroom/regulation	regulation	semapv:LexicalMatching	oaklib	0.5	rdf:ID	rdf:ID	http://example.org/metpo-cleanroom/regulation
+http://example.org/metpo-cleanroom/symbiosis	symbiosis	skos:closeMatch	GO:0044403	symbiosis, encompassing mutualism through parasitism	semapv:LexicalMatching	oaklib	0.5	rdf:ID	skos:relatedMatch-INVERSE	http://example.org/metpo-cleanroom/symbiosis
+http://example.org/metpo-cleanroom/symbiosis	symbiosis	skos:closeMatch	http://example.org/metpo-cleanroom/symbiosis	symbiosis	semapv:LexicalMatching	oaklib	0.5	rdf:ID	rdf:ID	http://example.org/metpo-cleanroom/symbiosis
+http://example.org/metpo-cleanroom/toxin	toxin	skos:closeMatch	IDO:0000549	toxin	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	toxin
+http://example.org/metpo-cleanroom/toxin	toxin	skos:closeMatch	IDO:0000549	toxin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	toxin
+http://example.org/metpo-cleanroom/toxin	toxin	skos:closeMatch	http://example.org/metpo-cleanroom/toxin	toxin	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	toxin
+http://example.org/metpo-cleanroom/toxin	toxin	skos:closeMatch	http://example.org/metpo-cleanroom/toxin	toxin	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	toxin
+http://example.org/metpo-cleanroom/toxin	toxin	skos:closeMatch	http://example.org/metpo-cleanroom/toxin	toxin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	toxin
+http://example.org/metpo-cleanroom/toxin	toxin	skos:closeMatch	http://example.org/metpo-cleanroom/toxin	toxin	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	toxin
+http://example.org/metpo-cleanroom/virulence	virulence	skos:closeMatch	IDO:0000466	virulence	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	virulence
+http://example.org/metpo-cleanroom/virulence	virulence	skos:closeMatch	IDO:0000466	virulence	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	virulence
+http://example.org/metpo-cleanroom/virulence	virulence	skos:closeMatch	http://example.org/metpo-cleanroom/virulence	virulence	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	oio:hasExactSynonym	virulence
+http://example.org/metpo-cleanroom/virulence	virulence	skos:closeMatch	http://example.org/metpo-cleanroom/virulence	virulence	semapv:LexicalMatching	oaklib	0.5	oio:hasExactSynonym	rdfs:label	virulence
+http://example.org/metpo-cleanroom/virulence	virulence	skos:closeMatch	http://example.org/metpo-cleanroom/virulence	virulence	semapv:LexicalMatching	oaklib	0.5	rdfs:label	oio:hasExactSynonym	virulence
+http://example.org/metpo-cleanroom/virulence	virulence	skos:closeMatch	http://example.org/metpo-cleanroom/virulence	virulence	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	virulence
+http://example.org/metpo-cleanroom/virulence_factor	virulence factor	skos:closeMatch	IDO:0000547	virulence factor	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	virulence factor
+http://example.org/metpo-cleanroom/virulence_factor	virulence factor	skos:closeMatch	http://example.org/metpo-cleanroom/virulence_factor	virulence factor	semapv:LexicalMatching	oaklib	0.5	rdfs:label	rdfs:label	virulence factor
