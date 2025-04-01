@@ -11,7 +11,7 @@ local	mongo-ncbi-loadbalancer	server count	data_gb	database	output_collection	so
 1	1	2		misc_metadata	submission_biosample_slot_counts	submission_biosample_rows	notebooks/studies_exploration/entire_submissions_extraction_flattening.py, which includes the equivalen tof mongo-js/submission_biosample_slot_counts.js							
 1	1	2		ncbi_metadata	bioprojects	https://ftp.ncbi.nlm.nih.gov/bioproject/bioproject.xml	load_acceptable_sized_leaf_bioprojects_into_mongodb		see also local/oversize		FALSE		FALSE	FALSE
 1	1	2		ncbi_metadata	bioprojects_submissions	https://ftp.ncbi.nlm.nih.gov/bioproject/bioproject.xml	load_acceptable_sized_leaf_bioprojects_into_mongodb		see also local/oversize		FALSE		FALSE	FALSE
-1	1	2		ncbi_metadata	biosample_attribute_name_counts_flat_gt_1	biosamples	mongo-js/count_harmonizable_biosample_attribs.js	14 minutes			TRUE		TRUE	TRUE
+1	1	2		ncbi_metadata	biosamples_attribute_name_counts_flat_gt_1	biosamples	mongo_js/count_harmonizable_biosample_attribs.js	14 minutes			TRUE		TRUE	TRUE
 1	1	2		ncbi_metadata	biosamples	https://ftp.ncbi.nlm.nih.gov/biosample/biosample_set.xml.gz	load-biosamples-into-mongo		Does not yet include Description/Synonym, Models. Unlikely to inlcude Description/Comment/Table, Owner/Contacts.		FALSE		FALSE	FALSE
 	1	1		ncbi_metadata	biosamples_env_triad_value_counts_gt_1	biosamples_flattened	mongo-js/enriched_biosamples_env_triad_value_counts_gt_1.js|split_env_triad_values_from_perlmutter				FALSE		TRUE	TRUE
 	1	1		ncbi_metadata	biosamples_env_triad_value_counts_gt_1	biosamples_flattened	mongo-js/minimal_biosamples_env_triad_value_counts_gt_1.js							

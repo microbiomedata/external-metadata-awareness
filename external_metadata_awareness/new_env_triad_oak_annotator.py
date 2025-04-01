@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Standalone script to annotate documents in the env_triad_component_labels collection.
 
@@ -18,15 +17,31 @@ Notes:
 """
 
 import os
-from pymongo import MongoClient
+import re
+
 from oaklib import get_adapter
+from oaklib.datamodels.text_annotator import TextAnnotationConfiguration
 from oaklib.interfaces.text_annotator_interface import TextAnnotatorInterface
 from oaklib.utilities.lexical.lexical_indexer import load_lexical_index, create_lexical_index, save_lexical_index
+from pymongo import MongoClient
 from tqdm import tqdm
+
+from oak_helpers import build_element_to_label_map
+
+config = TextAnnotationConfiguration()
+config.match_whole_words_only = True
 
 # Set the minimum annotation length for retaining an annotation.
 MIN_ANNOTATION_LENGTH = 3
 LEX_INDEX_FILE = "expanded_envo_po_lexical_index.yaml"
+
+
+def is_true_whole_word_match(label: str, match_string: str) -> bool:
+    """
+    Check if match_string occurs as a full word in the label.
+    """
+    words = re.findall(r"\b\w+\b", label.lower())
+    return match_string.lower() in words
 
 
 def annotation_to_dict(ann, label_length):
@@ -135,6 +150,8 @@ def main():
     annotator = TextAnnotatorInterface()
     annotator.lexical_index = lexical_index
 
+    element_to_label = build_element_to_label_map(lexical_index)
+
     total_docs = collection.estimated_document_count()
     print(f"Processing {total_docs} documents from env_triad_component_labels collection.")
 
@@ -150,7 +167,7 @@ def main():
             continue
 
         # Annotate using the lexical index via the TextAnnotatorInterface.
-        annotations = list(annotator.annotate_text(label))
+        annotations = list(annotator.annotate_text(label, configuration=config))
         processed_annotations = []
         label_length = len(label)
 
@@ -159,7 +176,16 @@ def main():
                 ann_length = ann.subject_end - ann.subject_start + 1
                 if ann_length < MIN_ANNOTATION_LENGTH:
                     continue  # Skip too-short annotations.
+
+            match_string = getattr(ann, "match_string", None)
+
+            # If it's a single-word match_string, make sure it's a whole word in the label
+            if match_string and " " not in match_string:
+                if not is_true_whole_word_match(label, match_string):
+                    continue  # Skip partial word matches like "gas" in "gastric"
+
             ann_dict = annotation_to_dict(ann, label_length)
+            ann_dict['rdfs_label'] = element_to_label.get(ann_dict['object_id'])
             ann_dict['prefix_uc'] = ann_dict['object_id'].split(":")[0].upper()
             processed_annotations.append(ann_dict)
 

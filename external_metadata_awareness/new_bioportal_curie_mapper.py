@@ -1,12 +1,16 @@
+import datetime
 import os
+import pprint
 import urllib.parse
-from pymongo import MongoClient
+from typing import List, Dict
+
 import requests
 import requests_cache
 from dotenv import load_dotenv
 from prefixmaps.io.parser import load_converter
-import pprint
-from typing import List, Dict
+from pymongo import MongoClient
+
+requests_cache_filename="external-metadata-awareness-requests-cache"
 
 # Load environment variables from local/.env file (make sure BIOPORTAL_API_KEY is defined)
 load_dotenv("local/.env")
@@ -15,8 +19,8 @@ if not BIOPORTAL_API_KEY:
     raise Exception("Please set the BIOPORTAL_API_KEY environment variable in local/.env.")
 
 # Enable requests caching (expires after 30 days)
-import datetime
-requests_cache.install_cache("requests_cache", expire_after=datetime.timedelta(days=30))
+
+requests_cache.install_cache(requests_cache_filename, expire_after=datetime.timedelta(days=30))
 
 converter = load_converter(["bioportal", "obo"])
 

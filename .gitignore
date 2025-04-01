@@ -15,6 +15,7 @@ downloads/
 local/
 .python-version
 
+*.sqlite
 *.db
 *.gz
 *.sqlite

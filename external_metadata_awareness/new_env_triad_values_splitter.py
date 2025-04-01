@@ -1,18 +1,22 @@
+import datetime
 import os
 import re
-import urllib.parse
-import click
-from pymongo import MongoClient
-from dotenv import load_dotenv
-from tqdm import tqdm
 import string
-from oaklib import get_adapter
-import yaml
+import urllib.parse
+
+import click
 import requests
 import requests_cache
+import yaml
+from dotenv import load_dotenv
+from oaklib import get_adapter
+from pymongo import MongoClient
+from tqdm import tqdm
 
 # todo doesnt' address ENV or ENV0 prefixes, but they are rare
-# seeing OF and TO prefixes that are defined in Bioportal. I'm suspicios.
+# seeing OF and TO prefixes that are defined in Bioportal. I'm suspicious.
+
+requests_cache_filename="external-metadata-awareness-requests-cache"
 
 # Precompiled regex patterns (assumed global in your file; repeated here for clarity).
 improved_curie_pattern = re.compile(
@@ -233,8 +237,7 @@ def main(host, port, db, collection, field, env_file, min_length, authenticate):
             obo_ontology_indicators_lc.add(i['preferredPrefix'].strip().lower())
 
     # Create a cache that lasts for 30 days
-    import datetime
-    requests_cache.install_cache('new_env_triad_values_splitter_cache', expire_after=datetime.timedelta(days=30))
+    requests_cache.install_cache(requests_cache_filename, expire_after=datetime.timedelta(days=30))
 
     BIOPORTAL_API_KEY = os.getenv("BIOPORTAL_API_KEY")
 
