@@ -86,7 +86,7 @@ def add_triads_to_samples(field_name, collection, sample_map, annotation_map):
 @click.option(
     '--acceptable-prefix',
     multiple=True,
-    default=["ENVO", "FOODON", "MONDO", "NCBITAXON", "PO", "UBERON"],
+    default=["DOID", "ENVO", "FOODON", "MONDO", "NCBITAXON", "PO", "UBERON"],
     show_default=True,
     help='List of accepted ontology prefixes. Can be repeated.'
 )
@@ -193,15 +193,15 @@ def populate(mongo_uri, db_name, dest_collection, min_label_length, acceptable_p
         if label:
             for ann in item.get("oak_text_annotations", []):
                 # Apply filtering in Python code
-                object_label = ann.get("object_label")
+                label = ann.get("rdfs_label") or ann.get("object_label")
                 prefix_uc = ann.get("prefix_uc")
 
                 if (prefix_uc in acceptable_prefix and
-                        isinstance(object_label, str) and
-                        len(object_label) >= min_label_length):
+                        isinstance(label, str) and
+                        len(label) >= min_label_length):
                     label_to_annotations[label].append({
-                        "object_id": ann.get("object_id"),
-                        "object_label": object_label,
+                        "id": ann.get("object_id"),
+                        "label": label,
                         "prefix_uc": prefix_uc,
                         "source": "OAK"
                     })
@@ -219,8 +219,8 @@ def populate(mongo_uri, db_name, dest_collection, min_label_length, acceptable_p
                         isinstance(annotation_label, str) and
                         len(annotation_label) >= min_label_length):
                     label_to_annotations[label].append({
-                        "object_id": ann.get("obo_id"),
-                        "object_label": annotation_label,
+                        "id": ann.get("obo_id"),
+                        "label": annotation_label,
                         "prefix_uc": prefix_uc,
                         "source": "OLS"
                     })
@@ -257,8 +257,8 @@ def populate(mongo_uri, db_name, dest_collection, min_label_length, acceptable_p
                 len(label) >= min_label_length):
 
             curie_uc_to_annotation[curie_uc].append({
-                "object_id": curie_uc,
-                "object_label": label,
+                "id": curie_uc,
+                "label": label,
                 "prefix_uc": item.get("prefix_uc"),
                 "source": "asserted CURIe"
             })
@@ -267,8 +267,8 @@ def populate(mongo_uri, db_name, dest_collection, min_label_length, acceptable_p
                 mapping_label = mapping.get("label_lc")
                 if isinstance(mapping_label, str) and len(mapping_label) >= min_label_length:
                     curie_uc_to_annotation[curie_uc].append({
-                        "object_id": mapping.get("curie"),
-                        "object_label": mapping_label,
+                        "id": mapping.get("curie"),
+                        "label": mapping_label,
                         "prefix_uc": mapping.get("prefix"),
                         "source": "asserted CURIe mapping"
                     })
