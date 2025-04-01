@@ -21,14 +21,14 @@
 
 - Markdown (.md): 4 files in root
     - CLAUDE.md
-    - env_triad_annotation.md
+    - env-triad-annotation.md
     - env_triads.md
     - requests-caching.md
 
 Markdown (.md) files repo-wide:
 
 1. Root directory:
-   - CLAUDE.md, env_triad_annotation.md, env_triads.md, requests-caching.md
+   - CLAUDE.md, env-triad-annotation.md, env_triads.md, requests-caching.md
 2. claude-mds directory:
    - nmdc-env-triad-valueset-lifecycle.md, submission-schema-CLAUDE.md
 3. Notebooks directory:
@@ -40,14 +40,14 @@ Markdown (.md) files repo-wide:
 
 
 - YAML (.yaml): 3 files in root
-    - env_triad_annotation.yaml
+    - env-triad-annotation.yaml
     - env_triads_chat_gpt_linkml_schema.yaml
     - expanded_envo_po_lexical_index.yaml
 
 YAML/YML files repo-wide:
 
 1. Root directory:
-   - env_triad_annotation.yaml
+   - env-triad-annotation.yaml
    - env_triads_chat_gpt_linkml_schema.yaml
    - expanded_envo_po_lexical_index.yaml
 2. Package directory:
@@ -68,14 +68,14 @@ YAML/YML files repo-wide:
 
 - SQLite (.sqlite): 3 files in root
     - my_cache.sqlite
-    - new_env_triad_values_splitter_cache.sqlite
+    - new-env-triad-values-splitter-cache.sqlite
     - requests_cache.sqlite
 
 SQLite/DB files repo-wide:
 
 1. Root directory:
    - my_cache.sqlite
-   - new_env_triad_values_splitter_cache.sqlite
+   - new-env-triad-values-splitter-cache.sqlite
    - requests_cache.sqlite
 2. lexmatch-shell-scripts:
    - env_triad_pvs_sheet.db
@@ -111,8 +111,8 @@ Jupyter Notebooks (.ipynb) repo-wide:
     - pyproject.toml
     - .gitignore
     - .yamlfmt
-    - bioportal_class_mapping_errors.txt
-    - env_triad_annotation-etc-collections.tsv
+    - bioportal-class-mapping-errors.txt
+    - env-triad-annotation-etc-collections.tsv
 
 Makefiles repo-wide:
 

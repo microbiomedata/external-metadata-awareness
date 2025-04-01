@@ -8,10 +8,10 @@ This report summarizes the data processing pipeline for environmental triad cont
 
 The system consists of several interconnected components:
 
-1. **MongoDB Collections**: Define data structures as documented in `env_triad_annotation.yaml`
+1. **MongoDB Collections**: Define data structures as documented in `env-triad-annotation.yaml`
 2. **MongoDB JavaScript Scripts**: Create and populate collections through aggregation operations
 3. **Python Processing Scripts**: Enrich collections with ontology mappings and annotations
-4. **Collection Inventory**: Documented in `env_triad_annotation-etc-collections.tsv` (formerly named `mongo-ncbi-loadbalancer-collections.tsv`)
+4. **Collection Inventory**: Documented in `env-triad-annotation-etc-collections.tsv` (formerly named `mongo-ncbi-loadbalancer-collections.tsv`)
 5. **Lexical Index Files**: Large YAML files like `expanded_envo_po_lexical_index.yaml` that store OAK lexical annotation data
 
 ## Data Flow Architecture
@@ -41,7 +41,7 @@ graph TD
 
 ## MongoDB Collections Schema (from YAML)
 
-The YAML file `env_triad_annotation.yaml` defines these primary collections:
+The YAML file `env-triad-annotation.yaml` defines these primary collections:
 
 1. **biosamples**: Raw NCBI BioSample data
 2. **biosamples_flattened**: Flattened view of biosamples with triad fields
@@ -84,7 +84,7 @@ These Python files enhance the collections with ontology annotations:
 
 ## Collection Inventory (from TSV)
 
-The `env_triad_annotation-etc-collections.tsv` (formerly `mongo-ncbi-loadbalancer-collections.tsv`) confirms the production deployment:
+The `env-triad-annotation-etc-collections.tsv` (formerly `mongo-ncbi-loadbalancer-collections.tsv`) confirms the production deployment:
 
 | Database | Collection | Source | Transformation | 
 |----------|------------|--------|---------------|
@@ -213,7 +213,7 @@ The process creates a lexical index for annotation and uses it to map terms:
   - `new_bioportal_curie_mapper.py` retrieves BioPortal mappings for terms
   - `plot_oak_annotation_coverage.py` visualizes the coverage statistics
 
-The annotation adds labels, synonyms, obsolete status flags, and ontology mappings to the collections. API errors are logged to `bioportal_class_mapping_errors.txt`, which contains the terminal output from the most recent run.
+The annotation adds labels, synonyms, obsolete status flags, and ontology mappings to the collections. API errors are logged to `bioportal-class-mapping-errors.txt`, which contains the terminal output from the most recent run.
 
 ## Key Files
 
@@ -362,7 +362,7 @@ The `expanded_envo_po_lexical_index.yaml` file (6.5MB) contains the combined lex
 3. **Caching**:
    - Request caching implemented for OBO Foundry and BioPortal API calls
    - Cache duration: 1 hour (3600 seconds)
-   - Cache location: `new_env_triad_values_splitter_cache.sqlite`
+   - Cache location: `new-env-triad-values-splitter-cache.sqlite`
 
 ## Production Implementation
 
@@ -404,13 +404,13 @@ Several additional files support the pipeline's functionality:
    - Used by `new_env_triad_oak_annotator.py` for text annotation
 
 3. **Error Logs**:
-   - `bioportal_class_mapping_errors.txt`: Logs errors encountered during BioPortal API requests
+   - `bioportal-class-mapping-errors.txt`: Logs errors encountered during BioPortal API requests
    - Contains the terminal output buffer from the most recent run of `new_bioportal_curie_mapper.py`
    - Used for debugging and monitoring the BioPortal mapping process
    - Shows patterns of access restrictions and problematic ontology prefixes
 
 4. **Collection Inventory**:
-   - `env_triad_annotation-etc-collections.tsv`: Comprehensive inventory of MongoDB collections
+   - `env-triad-annotation-etc-collections.tsv`: Comprehensive inventory of MongoDB collections
    - Renamed from `mongo-ncbi-loadbalancer-collections.tsv`
    - Documents source, transformation steps, and database location for collections
 
