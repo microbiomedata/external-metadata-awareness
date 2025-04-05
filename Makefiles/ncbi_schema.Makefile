@@ -27,3 +27,16 @@ load-packages-into-mongo: downloads/ncbi-biosample-packages.xml
 		--mongo-host $(MONGO_HOST) \
 		--mongo-port $(MONGO_PORT)
 	date
+
+.PHONY: load-packages-into-mongo
+load-attributes-into-mongo: downloads/ncbi-biosample-attributes.xml
+	date
+	$(RUN) xml-to-mongo \
+		--node-type Attribute \
+		--collection-name attributes \
+		--db-name $(MONGO_DB) \
+		--file-path $< \
+		--max-elements 999999 \
+		--mongo-host $(MONGO_HOST) \
+		--mongo-port $(MONGO_PORT)
+	date

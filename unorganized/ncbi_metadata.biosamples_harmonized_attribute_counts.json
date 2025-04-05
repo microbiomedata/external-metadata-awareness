@@ -1,0 +1,5376 @@
+[{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc68"
+  },
+  "total_count": 26938482,
+  "harmonized_name": "geo_loc_name"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc69"
+  },
+  "total_count": 25671033,
+  "harmonized_name": "collection_date"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc6a"
+  },
+  "total_count": 17290829,
+  "harmonized_name": "host"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc6b"
+  },
+  "total_count": 14368481,
+  "harmonized_name": "isolate"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc6c"
+  },
+  "total_count": 13221338,
+  "harmonized_name": "tissue"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc6d"
+  },
+  "total_count": 12750342,
+  "harmonized_name": "isolation_source"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc6e"
+  },
+  "total_count": 12738095,
+  "harmonized_name": "sex"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc6f"
+  },
+  "total_count": 12446461,
+  "harmonized_name": "sample_name"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc70"
+  },
+  "total_count": 9930908,
+  "harmonized_name": "lat_lon"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc71"
+  },
+  "total_count": 8635186,
+  "harmonized_name": "study_name"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc72"
+  },
+  "total_count": 8632599,
+  "harmonized_name": "submitter_handle"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc73"
+  },
+  "total_count": 8632599,
+  "harmonized_name": "biospecimen_repository"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc74"
+  },
+  "total_count": 8632577,
+  "harmonized_name": "submitted_sample_id"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc75"
+  },
+  "total_count": 8632571,
+  "harmonized_name": "submitted_subject_id"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc76"
+  },
+  "total_count": 8632569,
+  "harmonized_name": "biospecimen_repository_sample_id"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc77"
+  },
+  "total_count": 8632551,
+  "harmonized_name": "gap_accession"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc78"
+  },
+  "total_count": 8632521,
+  "harmonized_name": "gap_sample_id"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc79"
+  },
+  "total_count": 8632521,
+  "harmonized_name": "gap_subject_id"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc7a"
+  },
+  "total_count": 7927085,
+  "harmonized_name": "study_design"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc7b"
+  },
+  "total_count": 7503311,
+  "harmonized_name": "host_sex"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc7c"
+  },
+  "total_count": 7153359,
+  "harmonized_name": "collected_by"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc7d"
+  },
+  "total_count": 6857334,
+  "harmonized_name": "analyte_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc7e"
+  },
+  "total_count": 6662242,
+  "harmonized_name": "gap_consent_code"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc7f"
+  },
+  "total_count": 6530233,
+  "harmonized_name": "gap_consent_short_name"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc80"
+  },
+  "total_count": 6159073,
+  "harmonized_name": "strain"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc81"
+  },
+  "total_count": 5799124,
+  "harmonized_name": "host_disease"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc82"
+  },
+  "total_count": 5487236,
+  "harmonized_name": "host_subject_id"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc83"
+  },
+  "total_count": 5391553,
+  "harmonized_name": "env_broad_scale"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc84"
+  },
+  "total_count": 5231778,
+  "harmonized_name": "env_medium"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc85"
+  },
+  "total_count": 5208523,
+  "harmonized_name": "samp_capt_status"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc86"
+  },
+  "total_count": 4924341,
+  "harmonized_name": "source_name"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc87"
+  },
+  "total_count": 4695924,
+  "harmonized_name": "host_common_name"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc88"
+  },
+  "total_count": 4681733,
+  "harmonized_name": "host_health_state"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc89"
+  },
+  "total_count": 4651126,
+  "harmonized_name": "env_local_scale"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc8a"
+  },
+  "total_count": 4638230,
+  "harmonized_name": "age"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc8b"
+  },
+  "total_count": 4422626,
+  "harmonized_name": "is_tumor"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc8c"
+  },
+  "total_count": 3414766,
+  "harmonized_name": "host_age"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc8d"
+  },
+  "total_count": 3203058,
+  "harmonized_name": "subject_is_affected"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc8e"
+  },
+  "total_count": 2976644,
+  "harmonized_name": "histological_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc8f"
+  },
+  "total_count": 2887282,
+  "harmonized_name": "project_name"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc90"
+  },
+  "total_count": 2824682,
+  "harmonized_name": "dev_stage"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc91"
+  },
+  "total_count": 2783168,
+  "harmonized_name": "purpose_of_sequencing"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc92"
+  },
+  "total_count": 2721280,
+  "harmonized_name": "sample_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc93"
+  },
+  "total_count": 2462466,
+  "harmonized_name": "molecular_data_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc94"
+  },
+  "total_count": 2301863,
+  "harmonized_name": "cell_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc95"
+  },
+  "total_count": 2248226,
+  "harmonized_name": "collection_method"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc96"
+  },
+  "total_count": 2136186,
+  "harmonized_name": "collection_device"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc97"
+  },
+  "total_count": 1989505,
+  "harmonized_name": "treatment"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc98"
+  },
+  "total_count": 1935914,
+  "harmonized_name": "genotype"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc99"
+  },
+  "total_count": 1757828,
+  "harmonized_name": "biomaterial_provider"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc9a"
+  },
+  "total_count": 1662023,
+  "harmonized_name": "cultivar"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc9b"
+  },
+  "total_count": 1489532,
+  "harmonized_name": "ecotype"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc9c"
+  },
+  "total_count": 1463710,
+  "harmonized_name": "study_disease"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc9d"
+  },
+  "total_count": 1410391,
+  "harmonized_name": "investigation_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc9e"
+  },
+  "total_count": 1349628,
+  "harmonized_name": "sequenced_by"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcc9f"
+  },
+  "total_count": 1294243,
+  "harmonized_name": "cell_line"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcca0"
+  },
+  "total_count": 1214942,
+  "harmonized_name": "depth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcca1"
+  },
+  "total_count": 984695,
+  "harmonized_name": "gisaid_virus_name"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcca2"
+  },
+  "total_count": 942833,
+  "harmonized_name": "breed"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcca3"
+  },
+  "total_count": 935411,
+  "harmonized_name": "elev"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcca4"
+  },
+  "total_count": 857963,
+  "harmonized_name": "disease"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcca5"
+  },
+  "total_count": 844986,
+  "harmonized_name": "serovar"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcca6"
+  },
+  "total_count": 816935,
+  "harmonized_name": "isol_growth_condt"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcca7"
+  },
+  "total_count": 815845,
+  "harmonized_name": "source_material_id"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcca8"
+  },
+  "total_count": 688244,
+  "harmonized_name": "samp_collect_device"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcca9"
+  },
+  "total_count": 661832,
+  "harmonized_name": "source_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccaa"
+  },
+  "total_count": 641403,
+  "harmonized_name": "sub_species"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccab"
+  },
+  "total_count": 603260,
+  "harmonized_name": "gisaid_accession"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccac"
+  },
+  "total_count": 600667,
+  "harmonized_name": "isolate_name_alias"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccad"
+  },
+  "total_count": 567514,
+  "harmonized_name": "purpose_of_sampling"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccae"
+  },
+  "total_count": 545772,
+  "harmonized_name": "ref_biomaterial"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccaf"
+  },
+  "total_count": 509706,
+  "harmonized_name": "phenotype"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccb0"
+  },
+  "total_count": 508092,
+  "harmonized_name": "metagenome_source"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccb1"
+  },
+  "total_count": 448327,
+  "harmonized_name": "host_tissue_sampled"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccb2"
+  },
+  "total_count": 444833,
+  "harmonized_name": "host_description"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccb3"
+  },
+  "total_count": 443496,
+  "harmonized_name": "samp_size"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccb4"
+  },
+  "total_count": 442732,
+  "harmonized_name": "derived_from"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccb5"
+  },
+  "total_count": 434604,
+  "harmonized_name": "specimen_voucher"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccb6"
+  },
+  "total_count": 433377,
+  "harmonized_name": "timepoint"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccb7"
+  },
+  "total_count": 429138,
+  "harmonized_name": "samp_mat_process"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccb8"
+  },
+  "total_count": 419126,
+  "harmonized_name": "description"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccb9"
+  },
+  "total_count": 417176,
+  "harmonized_name": "host_taxid"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccba"
+  },
+  "total_count": 339816,
+  "harmonized_name": "env_package"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccbb"
+  },
+  "total_count": 327830,
+  "harmonized_name": "num_replicons"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccbc"
+  },
+  "total_count": 325334,
+  "harmonized_name": "temp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccbd"
+  },
+  "total_count": 321118,
+  "harmonized_name": "body_product"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccbe"
+  },
+  "total_count": 304812,
+  "harmonized_name": "identified_by"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccbf"
+  },
+  "total_count": 298451,
+  "harmonized_name": "host_body_product"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccc0"
+  },
+  "total_count": 249749,
+  "harmonized_name": "ethnicity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccc1"
+  },
+  "total_count": 248913,
+  "harmonized_name": "population"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccc2"
+  },
+  "total_count": 240738,
+  "harmonized_name": "altitude"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccc3"
+  },
+  "total_count": 208410,
+  "harmonized_name": "rel_to_oxygen"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccc4"
+  },
+  "total_count": 196867,
+  "harmonized_name": "serotype"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccc5"
+  },
+  "total_count": 195914,
+  "harmonized_name": "ploidy"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccc6"
+  },
+  "total_count": 192495,
+  "harmonized_name": "life_stage"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccc7"
+  },
+  "total_count": 191950,
+  "harmonized_name": "culture_collection"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccc8"
+  },
+  "total_count": 189694,
+  "harmonized_name": "food_origin"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccc9"
+  },
+  "total_count": 186808,
+  "harmonized_name": "host_body_habitat"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccca"
+  },
+  "total_count": 179360,
+  "harmonized_name": "ph"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcccb"
+  },
+  "total_count": 178206,
+  "harmonized_name": "host_life_stage"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcccc"
+  },
+  "total_count": 175276,
+  "harmonized_name": "samp_store_temp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcccd"
+  },
+  "total_count": 168360,
+  "harmonized_name": "estimated_size"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccce"
+  },
+  "total_count": 159118,
+  "harmonized_name": "ww_population"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcccf"
+  },
+  "total_count": 159103,
+  "harmonized_name": "ww_sample_duration"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccd0"
+  },
+  "total_count": 159083,
+  "harmonized_name": "ww_sample_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccd1"
+  },
+  "total_count": 159083,
+  "harmonized_name": "ww_sample_matrix"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccd2"
+  },
+  "total_count": 158794,
+  "harmonized_name": "ww_surv_target_1"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccd3"
+  },
+  "total_count": 158780,
+  "harmonized_name": "ww_surv_target_1_known_present"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccd4"
+  },
+  "total_count": 158553,
+  "harmonized_name": "disease_stage"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccd5"
+  },
+  "total_count": 155487,
+  "harmonized_name": "race"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccd6"
+  },
+  "total_count": 153241,
+  "harmonized_name": "host_genotype"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccd7"
+  },
+  "total_count": 147509,
+  "harmonized_name": "host_body_mass_index"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccd8"
+  },
+  "total_count": 147468,
+  "harmonized_name": "propagation"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccd9"
+  },
+  "total_count": 140720,
+  "harmonized_name": "purpose_of_ww_sampling"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccda"
+  },
+  "total_count": 140633,
+  "harmonized_name": "ifsac_category"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccdb"
+  },
+  "total_count": 137478,
+  "harmonized_name": "health_state"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccdc"
+  },
+  "total_count": 137087,
+  "harmonized_name": "host_disease_outcome"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccdd"
+  },
+  "total_count": 134959,
+  "harmonized_name": "host_height"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccde"
+  },
+  "total_count": 134076,
+  "harmonized_name": "ww_sample_site"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccdf"
+  },
+  "total_count": 128198,
+  "harmonized_name": "host_diet"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcce0"
+  },
+  "total_count": 124815,
+  "harmonized_name": "misc_param"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcce1"
+  },
+  "total_count": 122043,
+  "harmonized_name": "ww_surv_system_sample_id"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcce2"
+  },
+  "total_count": 115349,
+  "harmonized_name": "growth_protocol"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcce3"
+  },
+  "total_count": 114333,
+  "harmonized_name": "diet"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcce4"
+  },
+  "total_count": 110276,
+  "harmonized_name": "body_mass_index"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcce5"
+  },
+  "total_count": 108908,
+  "harmonized_name": "cell_subtype"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcce6"
+  },
+  "total_count": 108743,
+  "harmonized_name": "chem_administration"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcce7"
+  },
+  "total_count": 108186,
+  "harmonized_name": "passage_history"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcce8"
+  },
+  "total_count": 104772,
+  "harmonized_name": "ww_surv_jurisdiction"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcce9"
+  },
+  "total_count": 103247,
+  "harmonized_name": "label"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccea"
+  },
+  "total_count": 102498,
+  "harmonized_name": "samp_vol_we_dna_ext"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcceb"
+  },
+  "total_count": 102379,
+  "harmonized_name": "store_cond"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccec"
+  },
+  "total_count": 101194,
+  "harmonized_name": "ww_surv_target_1_conc_unit"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcced"
+  },
+  "total_count": 99677,
+  "harmonized_name": "ww_surv_target_1_gene"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccee"
+  },
+  "total_count": 96002,
+  "harmonized_name": "lab_host"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccef"
+  },
+  "total_count": 93246,
+  "harmonized_name": "birth_location"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccf0"
+  },
+  "total_count": 92173,
+  "harmonized_name": "birth_date"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccf1"
+  },
+  "total_count": 88174,
+  "harmonized_name": "body_habitat"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccf2"
+  },
+  "total_count": 86668,
+  "harmonized_name": "ww_surv_target_1_conc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccf3"
+  },
+  "total_count": 83168,
+  "harmonized_name": "ww_flow"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccf4"
+  },
+  "total_count": 81468,
+  "harmonized_name": "samp_store_loc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccf5"
+  },
+  "total_count": 78795,
+  "harmonized_name": "salinity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccf6"
+  },
+  "total_count": 76496,
+  "harmonized_name": "host_phenotype"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccf7"
+  },
+  "total_count": 76281,
+  "harmonized_name": "bio_material"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccf8"
+  },
+  "total_count": 67328,
+  "harmonized_name": "host_anatomical_part"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccf9"
+  },
+  "total_count": 66257,
+  "harmonized_name": "soil_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccfa"
+  },
+  "total_count": 66225,
+  "harmonized_name": "perturbation"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccfb"
+  },
+  "total_count": 64075,
+  "harmonized_name": "samp_store_dur"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccfc"
+  },
+  "total_count": 63779,
+  "harmonized_name": "host_tot_mass"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccfd"
+  },
+  "total_count": 62440,
+  "harmonized_name": "purpose_of_ww_sequencing"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccfe"
+  },
+  "total_count": 60553,
+  "harmonized_name": "ww_surv_target_1_protocol"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bccff"
+  },
+  "total_count": 58228,
+  "harmonized_name": "vaccine_received"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd00"
+  },
+  "total_count": 57742,
+  "harmonized_name": "biotic_relationship"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd01"
+  },
+  "total_count": 56389,
+  "harmonized_name": "compound"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd02"
+  },
+  "total_count": 56360,
+  "harmonized_name": "mating_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd03"
+  },
+  "total_count": 55766,
+  "harmonized_name": "height_or_length"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd04"
+  },
+  "total_count": 55233,
+  "harmonized_name": "subtype"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd05"
+  },
+  "total_count": 55094,
+  "harmonized_name": "organism_count"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd06"
+  },
+  "total_count": 53281,
+  "harmonized_name": "experimental_factor"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd07"
+  },
+  "total_count": 53103,
+  "harmonized_name": "plant_struc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd08"
+  },
+  "total_count": 52776,
+  "harmonized_name": "source_uvig"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd09"
+  },
+  "total_count": 51671,
+  "harmonized_name": "subgroup"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd0a"
+  },
+  "total_count": 50780,
+  "harmonized_name": "breeding_method"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd0b"
+  },
+  "total_count": 50167,
+  "harmonized_name": "virus_enrich_appr"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd0c"
+  },
+  "total_count": 48985,
+  "harmonized_name": "family_id"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd0d"
+  },
+  "total_count": 48526,
+  "harmonized_name": "tot_nitro"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd0e"
+  },
+  "total_count": 48350,
+  "harmonized_name": "ph_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd0f"
+  },
+  "total_count": 47758,
+  "harmonized_name": "size_frac"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd10"
+  },
+  "total_count": 46384,
+  "harmonized_name": "ww_processing_protocol"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd11"
+  },
+  "total_count": 45967,
+  "harmonized_name": "season"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd12"
+  },
+  "total_count": 44520,
+  "harmonized_name": "sars_cov_2_diag_pcr_ct_value_1"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd13"
+  },
+  "total_count": 43914,
+  "harmonized_name": "ww_population_source"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd14"
+  },
+  "total_count": 42515,
+  "harmonized_name": "death_date"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd15"
+  },
+  "total_count": 42041,
+  "harmonized_name": "sieving"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd16"
+  },
+  "total_count": 41904,
+  "harmonized_name": "variety"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd17"
+  },
+  "total_count": 41564,
+  "harmonized_name": "breeding_history"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd18"
+  },
+  "total_count": 41140,
+  "harmonized_name": "dominant_hand"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd19"
+  },
+  "total_count": 41128,
+  "harmonized_name": "nitrate"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd1a"
+  },
+  "total_count": 40721,
+  "harmonized_name": "plant_growth_med"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd1b"
+  },
+  "total_count": 39969,
+  "harmonized_name": "gastrointest_disord"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd1c"
+  },
+  "total_count": 39298,
+  "harmonized_name": "infra_specific_name"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd1d"
+  },
+  "total_count": 38466,
+  "harmonized_name": "stud_book_number"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd1e"
+  },
+  "total_count": 37523,
+  "harmonized_name": "cur_vegetation"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd1f"
+  },
+  "total_count": 37162,
+  "harmonized_name": "phosphate"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd20"
+  },
+  "total_count": 36471,
+  "harmonized_name": "samp_collect_method"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd21"
+  },
+  "total_count": 36151,
+  "harmonized_name": "substrain"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd22"
+  },
+  "total_count": 35925,
+  "harmonized_name": "family_relationship"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd23"
+  },
+  "total_count": 35560,
+  "harmonized_name": "tot_org_carb"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd24"
+  },
+  "total_count": 35387,
+  "harmonized_name": "sars_cov_2_diag_gene_name_1"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd25"
+  },
+  "total_count": 34336,
+  "harmonized_name": "agrochem_addition"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd26"
+  },
+  "total_count": 34266,
+  "harmonized_name": "diss_oxygen"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd27"
+  },
+  "total_count": 33964,
+  "harmonized_name": "pathotype"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd28"
+  },
+  "total_count": 33612,
+  "harmonized_name": "ammonium"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd29"
+  },
+  "total_count": 33437,
+  "harmonized_name": "host_family_relationship"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd2a"
+  },
+  "total_count": 33194,
+  "harmonized_name": "genetic_mod"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd2b"
+  },
+  "total_count": 33079,
+  "harmonized_name": "neg_cont_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd2c"
+  },
+  "total_count": 32433,
+  "harmonized_name": "dose"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd2d"
+  },
+  "total_count": 31714,
+  "harmonized_name": "omics_observ_id"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd2e"
+  },
+  "total_count": 31472,
+  "harmonized_name": "passage_method"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd2f"
+  },
+  "total_count": 31379,
+  "harmonized_name": "annual_season_precpt"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd30"
+  },
+  "total_count": 31036,
+  "harmonized_name": "host_disease_stage"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd31"
+  },
+  "total_count": 30785,
+  "harmonized_name": "host_specimen_voucher"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd32"
+  },
+  "total_count": 30633,
+  "harmonized_name": "passage_number"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd33"
+  },
+  "total_count": 30338,
+  "harmonized_name": "growth_facil"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd34"
+  },
+  "total_count": 30086,
+  "harmonized_name": "oxy_stat_samp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd35"
+  },
+  "total_count": 30050,
+  "harmonized_name": "soil_type_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd36"
+  },
+  "total_count": 29544,
+  "harmonized_name": "annual_season_temp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd37"
+  },
+  "total_count": 28621,
+  "harmonized_name": "cur_land_use"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd38"
+  },
+  "total_count": 28423,
+  "harmonized_name": "host_length"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd39"
+  },
+  "total_count": 28058,
+  "harmonized_name": "plant_body_site"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd3a"
+  },
+  "total_count": 28036,
+  "harmonized_name": "soil_text_measure"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd3b"
+  },
+  "total_count": 28033,
+  "harmonized_name": "microbial_biomass"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd3c"
+  },
+  "total_count": 27718,
+  "harmonized_name": "microbial_biomass_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd3d"
+  },
+  "total_count": 27483,
+  "harmonized_name": "host_body_temp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd3e"
+  },
+  "total_count": 26980,
+  "harmonized_name": "nitrite"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd3f"
+  },
+  "total_count": 26823,
+  "harmonized_name": "host_last_meal"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd40"
+  },
+  "total_count": 26458,
+  "harmonized_name": "host_recent_travel_loc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd41"
+  },
+  "total_count": 25999,
+  "harmonized_name": "date_of_sars_cov_2_vaccination"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd42"
+  },
+  "total_count": 25899,
+  "harmonized_name": "chlorophyll"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd43"
+  },
+  "total_count": 24905,
+  "harmonized_name": "food_product_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd44"
+  },
+  "total_count": 24566,
+  "harmonized_name": "host_occupation"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd45"
+  },
+  "total_count": 24303,
+  "harmonized_name": "karyotype"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd46"
+  },
+  "total_count": 24243,
+  "harmonized_name": "silicate"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd47"
+  },
+  "total_count": 23762,
+  "harmonized_name": "pos_cont_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd48"
+  },
+  "total_count": 23591,
+  "harmonized_name": "crop_rotation"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd49"
+  },
+  "total_count": 22552,
+  "harmonized_name": "coll_site_geo_feat"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd4a"
+  },
+  "total_count": 22505,
+  "harmonized_name": "water_content_soil"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd4b"
+  },
+  "total_count": 22471,
+  "harmonized_name": "building_setting"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd4c"
+  },
+  "total_count": 22370,
+  "harmonized_name": "soil_horizon"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd4d"
+  },
+  "total_count": 22077,
+  "harmonized_name": "medic_hist_perform"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd4e"
+  },
+  "total_count": 21926,
+  "harmonized_name": "sulfate"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd4f"
+  },
+  "total_count": 21060,
+  "harmonized_name": "food_source"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd50"
+  },
+  "total_count": 20967,
+  "harmonized_name": "host_infra_specific_name"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd51"
+  },
+  "total_count": 20671,
+  "harmonized_name": "sewage_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd52"
+  },
+  "total_count": 20657,
+  "harmonized_name": "watering_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd53"
+  },
+  "total_count": 20558,
+  "harmonized_name": "indoor_space"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd54"
+  },
+  "total_count": 20443,
+  "harmonized_name": "tot_depth_water_col"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd55"
+  },
+  "total_count": 20136,
+  "harmonized_name": "air_temp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd56"
+  },
+  "total_count": 20036,
+  "harmonized_name": "oxygen"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd57"
+  },
+  "total_count": 19609,
+  "harmonized_name": "pathogenicity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd58"
+  },
+  "total_count": 19541,
+  "harmonized_name": "water_content_soil_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd59"
+  },
+  "total_count": 19534,
+  "harmonized_name": "conduc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd5a"
+  },
+  "total_count": 19521,
+  "harmonized_name": "build_occup_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd5b"
+  },
+  "total_count": 19498,
+  "harmonized_name": "intended_consumer"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd5c"
+  },
+  "total_count": 19386,
+  "harmonized_name": "pool_dna_extracts"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd5d"
+  },
+  "total_count": 19091,
+  "harmonized_name": "special_diet"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd5e"
+  },
+  "total_count": 19018,
+  "harmonized_name": "host_pulse"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd5f"
+  },
+  "total_count": 18804,
+  "harmonized_name": "rel_air_humidity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd60"
+  },
+  "total_count": 18782,
+  "harmonized_name": "air_temp_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd61"
+  },
+  "total_count": 18747,
+  "harmonized_name": "diss_org_carb"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd62"
+  },
+  "total_count": 18713,
+  "harmonized_name": "occup_samp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd63"
+  },
+  "total_count": 18631,
+  "harmonized_name": "tot_mass"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd64"
+  },
+  "total_count": 18608,
+  "harmonized_name": "ventilation_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd65"
+  },
+  "total_count": 18505,
+  "harmonized_name": "space_typ_state"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd66"
+  },
+  "total_count": 18463,
+  "harmonized_name": "light_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd67"
+  },
+  "total_count": 18416,
+  "harmonized_name": "tot_org_c_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd68"
+  },
+  "total_count": 18411,
+  "harmonized_name": "filter_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd69"
+  },
+  "total_count": 18399,
+  "harmonized_name": "density"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd6a"
+  },
+  "total_count": 18391,
+  "harmonized_name": "smoker"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd6b"
+  },
+  "total_count": 18378,
+  "harmonized_name": "tot_n_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd6c"
+  },
+  "total_count": 18369,
+  "harmonized_name": "typ_occupant_dens"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd6d"
+  },
+  "total_count": 18335,
+  "harmonized_name": "chloride"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd6e"
+  },
+  "total_count": 18287,
+  "harmonized_name": "carb_dioxide"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd6f"
+  },
+  "total_count": 18236,
+  "harmonized_name": "calcium"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd70"
+  },
+  "total_count": 18185,
+  "harmonized_name": "abs_air_humidity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd71"
+  },
+  "total_count": 18160,
+  "harmonized_name": "occupant_dens_samp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd72"
+  },
+  "total_count": 18160,
+  "harmonized_name": "heat_cool_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd73"
+  },
+  "total_count": 17949,
+  "harmonized_name": "repository"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd74"
+  },
+  "total_count": 17830,
+  "harmonized_name": "ww_pre_treatment"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd75"
+  },
+  "total_count": 17301,
+  "harmonized_name": "potassium"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd76"
+  },
+  "total_count": 17291,
+  "harmonized_name": "biomass"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd77"
+  },
+  "total_count": 16753,
+  "harmonized_name": "ihmc_medication_code"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd78"
+  },
+  "total_count": 16667,
+  "harmonized_name": "alkalinity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd79"
+  },
+  "total_count": 16662,
+  "harmonized_name": "local_class"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd7a"
+  },
+  "total_count": 16653,
+  "harmonized_name": "diss_carb_dioxide"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd7b"
+  },
+  "total_count": 16569,
+  "harmonized_name": "soil_texture_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd7c"
+  },
+  "total_count": 15999,
+  "harmonized_name": "nitro"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd7d"
+  },
+  "total_count": 15962,
+  "harmonized_name": "previous_land_use"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd7e"
+  },
+  "total_count": 15922,
+  "harmonized_name": "magnesium"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd7f"
+  },
+  "total_count": 15879,
+  "harmonized_name": "liver_disord"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd80"
+  },
+  "total_count": 15872,
+  "harmonized_name": "antiviral_treatment_agent"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd81"
+  },
+  "total_count": 15865,
+  "harmonized_name": "fao_class"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd82"
+  },
+  "total_count": 15620,
+  "harmonized_name": "sodium"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd83"
+  },
+  "total_count": 15462,
+  "harmonized_name": "host_infra_specific_rank"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd84"
+  },
+  "total_count": 15230,
+  "harmonized_name": "prior_sars_cov_2_vaccination"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd85"
+  },
+  "total_count": 14834,
+  "harmonized_name": "samp_salinity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd86"
+  },
+  "total_count": 14498,
+  "harmonized_name": "type_status"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd87"
+  },
+  "total_count": 14317,
+  "harmonized_name": "extreme_event"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd88"
+  },
+  "total_count": 14292,
+  "harmonized_name": "fire"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd89"
+  },
+  "total_count": 14268,
+  "harmonized_name": "host_anatomical_material"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd8a"
+  },
+  "total_count": 14185,
+  "harmonized_name": "diss_inorg_carb"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd8b"
+  },
+  "total_count": 13951,
+  "harmonized_name": "subsrc_note"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd8c"
+  },
+  "total_count": 13750,
+  "harmonized_name": "local_class_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd8d"
+  },
+  "total_count": 13558,
+  "harmonized_name": "water_content"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd8e"
+  },
+  "total_count": 13324,
+  "harmonized_name": "geo_loc_exposure"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd8f"
+  },
+  "total_count": 13026,
+  "harmonized_name": "host_color"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd90"
+  },
+  "total_count": 12997,
+  "harmonized_name": "clone"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd91"
+  },
+  "total_count": 12838,
+  "harmonized_name": "wga_amp_appr"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd92"
+  },
+  "total_count": 12771,
+  "harmonized_name": "drainage_class"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd93"
+  },
+  "total_count": 12771,
+  "harmonized_name": "salinity_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd94"
+  },
+  "total_count": 12623,
+  "harmonized_name": "exposure_event"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd95"
+  },
+  "total_count": 12553,
+  "harmonized_name": "virus_isolate_of_prior_infection"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd96"
+  },
+  "total_count": 12548,
+  "harmonized_name": "substrate"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd97"
+  },
+  "total_count": 12479,
+  "harmonized_name": "date_of_prior_antiviral_treat"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd98"
+  },
+  "total_count": 12351,
+  "harmonized_name": "org_carb"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd99"
+  },
+  "total_count": 12246,
+  "harmonized_name": "animal_env"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd9a"
+  },
+  "total_count": 12210,
+  "harmonized_name": "date_of_prior_sars_cov_2_infection"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd9b"
+  },
+  "total_count": 12180,
+  "harmonized_name": "tissue_lib"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd9c"
+  },
+  "total_count": 11996,
+  "harmonized_name": "host_recent_travel_return_date"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd9d"
+  },
+  "total_count": 11932,
+  "harmonized_name": "fertilizer_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd9e"
+  },
+  "total_count": 11779,
+  "harmonized_name": "org_matter"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcd9f"
+  },
+  "total_count": 11579,
+  "harmonized_name": "field"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcda0"
+  },
+  "total_count": 11373,
+  "harmonized_name": "pressure"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcda1"
+  },
+  "total_count": 11266,
+  "harmonized_name": "link_climate_info"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcda2"
+  },
+  "total_count": 11252,
+  "harmonized_name": "slope_gradient"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcda3"
+  },
+  "total_count": 11130,
+  "harmonized_name": "climate_environment"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcda4"
+  },
+  "total_count": 10982,
+  "harmonized_name": "tillage"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcda5"
+  },
+  "total_count": 10981,
+  "harmonized_name": "cur_vegetation_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcda6"
+  },
+  "total_count": 10975,
+  "harmonized_name": "turbidity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcda7"
+  },
+  "total_count": 10951,
+  "harmonized_name": "plant_product"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcda8"
+  },
+  "total_count": 10940,
+  "harmonized_name": "food_prod_char"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcda9"
+  },
+  "total_count": 10810,
+  "harmonized_name": "ww_temperature"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdaa"
+  },
+  "total_count": 10780,
+  "harmonized_name": "host_growth_cond"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdab"
+  },
+  "total_count": 10700,
+  "harmonized_name": "slope_aspect"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdac"
+  },
+  "total_count": 10697,
+  "harmonized_name": "component_organism"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdad"
+  },
+  "total_count": 10685,
+  "harmonized_name": "methane"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdae"
+  },
+  "total_count": 10425,
+  "harmonized_name": "profile_position"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdaf"
+  },
+  "total_count": 10405,
+  "harmonized_name": "subspecf_gen_lin"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdb0"
+  },
+  "total_count": 10388,
+  "harmonized_name": "al_sat"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdb1"
+  },
+  "total_count": 10258,
+  "harmonized_name": "flooding"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdb2"
+  },
+  "total_count": 10223,
+  "harmonized_name": "size_frac_up"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdb3"
+  },
+  "total_count": 10134,
+  "harmonized_name": "wastewater_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdb4"
+  },
+  "total_count": 10090,
+  "harmonized_name": "ww_endog_control_1"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdb5"
+  },
+  "total_count": 9995,
+  "harmonized_name": "size_frac_low"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdb6"
+  },
+  "total_count": 9822,
+  "harmonized_name": "previous_land_use_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdb7"
+  },
+  "total_count": 9814,
+  "harmonized_name": "link_addit_analys"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdb8"
+  },
+  "total_count": 9746,
+  "harmonized_name": "part_org_carb"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdb9"
+  },
+  "total_count": 9716,
+  "harmonized_name": "heavy_metals"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdba"
+  },
+  "total_count": 9680,
+  "harmonized_name": "al_sat_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdbb"
+  },
+  "total_count": 9612,
+  "harmonized_name": "extreme_salinity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdbc"
+  },
+  "total_count": 9589,
+  "harmonized_name": "annual_temp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdbd"
+  },
+  "total_count": 9576,
+  "harmonized_name": "annual_precpt"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdbe"
+  },
+  "total_count": 9430,
+  "harmonized_name": "ww_surv_target_2"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdbf"
+  },
+  "total_count": 9292,
+  "harmonized_name": "growth_med"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdc0"
+  },
+  "total_count": 9273,
+  "harmonized_name": "fluor"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdc1"
+  },
+  "total_count": 9245,
+  "harmonized_name": "biol_stat"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdc2"
+  },
+  "total_count": 9185,
+  "harmonized_name": "pathovar"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdc3"
+  },
+  "total_count": 9165,
+  "harmonized_name": "heavy_metals_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdc4"
+  },
+  "total_count": 9156,
+  "harmonized_name": "horizon_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdc5"
+  },
+  "total_count": 9064,
+  "harmonized_name": "host_substrate"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdc6"
+  },
+  "total_count": 8967,
+  "harmonized_name": "tot_phosp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdc7"
+  },
+  "total_count": 8798,
+  "harmonized_name": "trophic_level"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdc8"
+  },
+  "total_count": 8785,
+  "harmonized_name": "sulfide"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdc9"
+  },
+  "total_count": 8758,
+  "harmonized_name": "ww_surv_target_2_conc_unit"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdca"
+  },
+  "total_count": 8675,
+  "harmonized_name": "link_class_info"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdcb"
+  },
+  "total_count": 8634,
+  "harmonized_name": "ww_ph"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdcc"
+  },
+  "total_count": 8621,
+  "harmonized_name": "redox_potential"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdcd"
+  },
+  "total_count": 8222,
+  "harmonized_name": "bromide"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdce"
+  },
+  "total_count": 8088,
+  "harmonized_name": "pregnancy"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdcf"
+  },
+  "total_count": 8041,
+  "harmonized_name": "biotic_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdd0"
+  },
+  "total_count": 8017,
+  "harmonized_name": "ww_surv_target_2_gene"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdd1"
+  },
+  "total_count": 7917,
+  "harmonized_name": "gravidity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdd2"
+  },
+  "total_count": 7889,
+  "harmonized_name": "ww_endog_control_1_protocol"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdd3"
+  },
+  "total_count": 7873,
+  "harmonized_name": "season_environment"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdd4"
+  },
+  "total_count": 7808,
+  "harmonized_name": "ww_surv_target_2_conc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdd5"
+  },
+  "total_count": 7785,
+  "harmonized_name": "reactor_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdd6"
+  },
+  "total_count": 7773,
+  "harmonized_name": "surf_material"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdd7"
+  },
+  "total_count": 7771,
+  "harmonized_name": "ww_surv_target_2_known_present"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdd8"
+  },
+  "total_count": 7735,
+  "harmonized_name": "diss_org_nitro"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdd9"
+  },
+  "total_count": 7637,
+  "harmonized_name": "tot_diss_nitro"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdda"
+  },
+  "total_count": 7474,
+  "harmonized_name": "tot_carb"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcddb"
+  },
+  "total_count": 7454,
+  "harmonized_name": "org_nitro"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcddc"
+  },
+  "total_count": 7274,
+  "harmonized_name": "host_dry_mass"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcddd"
+  },
+  "total_count": 7266,
+  "harmonized_name": "host_hiv_stat"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdde"
+  },
+  "total_count": 7250,
+  "harmonized_name": "indoor_surf"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcddf"
+  },
+  "total_count": 7182,
+  "harmonized_name": "diss_hydrogen"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcde0"
+  },
+  "total_count": 7134,
+  "harmonized_name": "phosplipid_fatt_acid"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcde1"
+  },
+  "total_count": 6971,
+  "harmonized_name": "diether_lipids"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcde2"
+  },
+  "total_count": 6954,
+  "harmonized_name": "carb_nitro_ratio"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcde3"
+  },
+  "total_count": 6903,
+  "harmonized_name": "water_temp_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcde4"
+  },
+  "total_count": 6629,
+  "harmonized_name": "risk_group"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcde5"
+  },
+  "total_count": 6589,
+  "harmonized_name": "gestation_state"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcde6"
+  },
+  "total_count": 6522,
+  "harmonized_name": "phaeopigments"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcde7"
+  },
+  "total_count": 6484,
+  "harmonized_name": "facility_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcde8"
+  },
+  "total_count": 6260,
+  "harmonized_name": "hiv_stat"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcde9"
+  },
+  "total_count": 6121,
+  "harmonized_name": "drug_usage"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdea"
+  },
+  "total_count": 6105,
+  "harmonized_name": "tidal_stage"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdeb"
+  },
+  "total_count": 6105,
+  "harmonized_name": "extrachrom_elements"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdec"
+  },
+  "total_count": 6102,
+  "harmonized_name": "samp_mat_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcded"
+  },
+  "total_count": 5887,
+  "harmonized_name": "ww_endog_control_1_units"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdee"
+  },
+  "total_count": 5874,
+  "harmonized_name": "bacteria_carb_prod"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdef"
+  },
+  "total_count": 5850,
+  "harmonized_name": "host_shape"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdf0"
+  },
+  "total_count": 5735,
+  "harmonized_name": "food_contact_surf"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdf1"
+  },
+  "total_count": 5560,
+  "harmonized_name": "ww_endog_control_1_conc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdf2"
+  },
+  "total_count": 5545,
+  "harmonized_name": "fungicide_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdf3"
+  },
+  "total_count": 5534,
+  "harmonized_name": "sars_cov_2_diag_pcr_ct_value_2"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdf4"
+  },
+  "total_count": 5522,
+  "harmonized_name": "sars_cov_2_diag_gene_name_2"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdf5"
+  },
+  "total_count": 5291,
+  "harmonized_name": "petroleum_hydrocarb"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdf6"
+  },
+  "total_count": 5267,
+  "harmonized_name": "mechanical_damage"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdf7"
+  },
+  "total_count": 5242,
+  "harmonized_name": "alkyl_diethers"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdf8"
+  },
+  "total_count": 5190,
+  "harmonized_name": "ww_industrial_effluent_percent"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdf9"
+  },
+  "total_count": 5160,
+  "harmonized_name": "aminopept_act"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdfa"
+  },
+  "total_count": 5132,
+  "harmonized_name": "birth_control"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdfb"
+  },
+  "total_count": 5090,
+  "harmonized_name": "mean_peak_frict_vel"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdfc"
+  },
+  "total_count": 5082,
+  "harmonized_name": "food_type_processed"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdfd"
+  },
+  "total_count": 5056,
+  "harmonized_name": "n_alkanes"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdfe"
+  },
+  "total_count": 5040,
+  "harmonized_name": "pulmonary_disord"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcdff"
+  },
+  "total_count": 4996,
+  "harmonized_name": "mean_frict_vel"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce00"
+  },
+  "total_count": 4961,
+  "harmonized_name": "glucosidase_act"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce01"
+  },
+  "total_count": 4954,
+  "harmonized_name": "bishomohopanol"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce02"
+  },
+  "total_count": 4812,
+  "harmonized_name": "host_housing"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce03"
+  },
+  "total_count": 4725,
+  "harmonized_name": "soluble_react_phosp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce04"
+  },
+  "total_count": 4641,
+  "harmonized_name": "dermatology_disord"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce05"
+  },
+  "total_count": 4605,
+  "harmonized_name": "water_current"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce06"
+  },
+  "total_count": 4598,
+  "harmonized_name": "porosity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce07"
+  },
+  "total_count": 4500,
+  "harmonized_name": "env_monitoring_zone"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce08"
+  },
+  "total_count": 4414,
+  "harmonized_name": "pet_farm_animal"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce09"
+  },
+  "total_count": 4374,
+  "harmonized_name": "ww_total_suspended_solids"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce0a"
+  },
+  "total_count": 4338,
+  "harmonized_name": "part_org_nitro"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce0b"
+  },
+  "total_count": 4313,
+  "harmonized_name": "surf_temp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce0c"
+  },
+  "total_count": 4297,
+  "harmonized_name": "host_symbiont"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce0d"
+  },
+  "total_count": 4278,
+  "harmonized_name": "biovar"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce0e"
+  },
+  "total_count": 4131,
+  "harmonized_name": "host_subspecf_genlin"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce0f"
+  },
+  "total_count": 4075,
+  "harmonized_name": "super_population_code"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce10"
+  },
+  "total_count": 4056,
+  "harmonized_name": "orgmod_note"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce11"
+  },
+  "total_count": 3906,
+  "harmonized_name": "encoded_traits"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce12"
+  },
+  "total_count": 3893,
+  "harmonized_name": "food_processing_method"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce13"
+  },
+  "total_count": 3832,
+  "harmonized_name": "host_blood_press_diast"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce14"
+  },
+  "total_count": 3828,
+  "harmonized_name": "location_in_facility"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce15"
+  },
+  "total_count": 3760,
+  "harmonized_name": "biocide_used"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce16"
+  },
+  "total_count": 3752,
+  "harmonized_name": "suspend_part_matter"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce17"
+  },
+  "total_count": 3746,
+  "harmonized_name": "narms_isolate_number"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce18"
+  },
+  "total_count": 3708,
+  "harmonized_name": "host_dependence"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce19"
+  },
+  "total_count": 3707,
+  "harmonized_name": "cult_isol_date"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce1a"
+  },
+  "total_count": 3684,
+  "harmonized_name": "food_quality_date"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce1b"
+  },
+  "total_count": 3676,
+  "harmonized_name": "indoor_surf_subpart"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce1c"
+  },
+  "total_count": 3670,
+  "harmonized_name": "sediment_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce1d"
+  },
+  "total_count": 3651,
+  "harmonized_name": "particle_class"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce1e"
+  },
+  "total_count": 3620,
+  "harmonized_name": "light_intensity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce1f"
+  },
+  "total_count": 3614,
+  "harmonized_name": "sym_life_cycle_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce20"
+  },
+  "total_count": 3605,
+  "harmonized_name": "material_condition"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce21"
+  },
+  "total_count": 3602,
+  "harmonized_name": "forma_specialis"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce22"
+  },
+  "total_count": 3601,
+  "harmonized_name": "surface_orientation"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce23"
+  },
+  "total_count": 3586,
+  "harmonized_name": "food_preserv_proc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce24"
+  },
+  "total_count": 3561,
+  "harmonized_name": "morphology"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce25"
+  },
+  "total_count": 3550,
+  "harmonized_name": "pre_treatment"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce26"
+  },
+  "total_count": 3480,
+  "harmonized_name": "soil_depth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce27"
+  },
+  "total_count": 3436,
+  "harmonized_name": "fertilizer_admin"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce28"
+  },
+  "total_count": 3434,
+  "harmonized_name": "host_blood_press_syst"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce29"
+  },
+  "total_count": 3426,
+  "harmonized_name": "mineral_nutr_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce2a"
+  },
+  "total_count": 3413,
+  "harmonized_name": "wind_speed"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce2b"
+  },
+  "total_count": 3388,
+  "harmonized_name": "label_claims"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce2c"
+  },
+  "total_count": 3362,
+  "harmonized_name": "diss_inorg_phosp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce2d"
+  },
+  "total_count": 3359,
+  "harmonized_name": "host_variety"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce2e"
+  },
+  "total_count": 3331,
+  "harmonized_name": "soil_ph"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce2f"
+  },
+  "total_count": 3301,
+  "harmonized_name": "douche"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce30"
+  },
+  "total_count": 3297,
+  "harmonized_name": "samp_source_mat_cat"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce31"
+  },
+  "total_count": 3254,
+  "harmonized_name": "reference_material"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce32"
+  },
+  "total_count": 3232,
+  "harmonized_name": "host_animal_breed"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce33"
+  },
+  "total_count": 3215,
+  "harmonized_name": "gynecologic_disord"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce34"
+  },
+  "total_count": 3195,
+  "harmonized_name": "host_group_size"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce35"
+  },
+  "total_count": 3192,
+  "harmonized_name": "growth_medium"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce36"
+  },
+  "total_count": 3179,
+  "harmonized_name": "food_contain_wrap"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce37"
+  },
+  "total_count": 3165,
+  "harmonized_name": "rainfall_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce38"
+  },
+  "total_count": 3144,
+  "harmonized_name": "ww_primary_sludge_retention_time"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce39"
+  },
+  "total_count": 3135,
+  "harmonized_name": "rel_location"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce3a"
+  },
+  "total_count": 3132,
+  "harmonized_name": "samp_stor_device"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce3b"
+  },
+  "total_count": 3130,
+  "harmonized_name": "upstream_intervention"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce3c"
+  },
+  "total_count": 3104,
+  "harmonized_name": "herbicide_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce3d"
+  },
+  "total_count": 3087,
+  "harmonized_name": "serogroup"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce3e"
+  },
+  "total_count": 3071,
+  "harmonized_name": "diss_inorg_nitro"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce3f"
+  },
+  "total_count": 2987,
+  "harmonized_name": "ww_surv_target_2_protocol"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce40"
+  },
+  "total_count": 2974,
+  "harmonized_name": "light_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce41"
+  },
+  "total_count": 2974,
+  "harmonized_name": "food_product_qual"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce42"
+  },
+  "total_count": 2974,
+  "harmonized_name": "samp_stor_media"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce43"
+  },
+  "total_count": 2929,
+  "harmonized_name": "farm_water_source"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce44"
+  },
+  "total_count": 2910,
+  "harmonized_name": "animal_intrusion"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce45"
+  },
+  "total_count": 2896,
+  "harmonized_name": "food_industry_code"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce46"
+  },
+  "total_count": 2884,
+  "harmonized_name": "address"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce47"
+  },
+  "total_count": 2861,
+  "harmonized_name": "host_am"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce48"
+  },
+  "total_count": 2854,
+  "harmonized_name": "food_additive"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce49"
+  },
+  "total_count": 2842,
+  "harmonized_name": "farm_equip"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce4a"
+  },
+  "total_count": 2839,
+  "harmonized_name": "food_industry_class"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce4b"
+  },
+  "total_count": 2814,
+  "harmonized_name": "plant_water_method"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce4c"
+  },
+  "total_count": 2797,
+  "harmonized_name": "spec_intended_cons"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce4d"
+  },
+  "total_count": 2789,
+  "harmonized_name": "food_pack_integrity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce4e"
+  },
+  "total_count": 2784,
+  "harmonized_name": "weekday"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce4f"
+  },
+  "total_count": 2779,
+  "harmonized_name": "food_prod_synonym"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce50"
+  },
+  "total_count": 2779,
+  "harmonized_name": "food_pack_medium"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce51"
+  },
+  "total_count": 2750,
+  "harmonized_name": "tot_part_carb"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce52"
+  },
+  "total_count": 2750,
+  "harmonized_name": "humidity_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce53"
+  },
+  "total_count": 2748,
+  "harmonized_name": "food_prod"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce54"
+  },
+  "total_count": 2748,
+  "harmonized_name": "extr_weather_event"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce55"
+  },
+  "total_count": 2745,
+  "harmonized_name": "menopause"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce56"
+  },
+  "total_count": 2743,
+  "harmonized_name": "sanitizer_used_postharvest"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce57"
+  },
+  "total_count": 2742,
+  "harmonized_name": "food_clean_proc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce58"
+  },
+  "total_count": 2734,
+  "harmonized_name": "ph_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce59"
+  },
+  "total_count": 2716,
+  "harmonized_name": "pulse"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce5a"
+  },
+  "total_count": 2626,
+  "harmonized_name": "radiation_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce5b"
+  },
+  "total_count": 2620,
+  "harmonized_name": "population_description"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce5c"
+  },
+  "total_count": 2588,
+  "harmonized_name": "super_population_description"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce5d"
+  },
+  "total_count": 2587,
+  "harmonized_name": "antibiotic_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce5e"
+  },
+  "total_count": 2583,
+  "harmonized_name": "amniotic_fluid_color"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce5f"
+  },
+  "total_count": 2507,
+  "harmonized_name": "travel_out_six_month"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce60"
+  },
+  "total_count": 2498,
+  "harmonized_name": "salt_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce61"
+  },
+  "total_count": 2448,
+  "harmonized_name": "gaseous_environment"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce62"
+  },
+  "total_count": 2440,
+  "harmonized_name": "diet_last_six_month"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce63"
+  },
+  "total_count": 2357,
+  "harmonized_name": "study_complt_stat"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce64"
+  },
+  "total_count": 2355,
+  "harmonized_name": "cult_result"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce65"
+  },
+  "total_count": 2352,
+  "harmonized_name": "sludge_retent_time"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce66"
+  },
+  "total_count": 2348,
+  "harmonized_name": "down_par"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce67"
+  },
+  "total_count": 2326,
+  "harmonized_name": "urine_collect_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce68"
+  },
+  "total_count": 2303,
+  "harmonized_name": "lot_number"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce69"
+  },
+  "total_count": 2297,
+  "harmonized_name": "nose_mouth_teeth_throat_disord"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce6a"
+  },
+  "total_count": 2275,
+  "harmonized_name": "host_number"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce6b"
+  },
+  "total_count": 2261,
+  "harmonized_name": "weight_loss_3_month"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce6c"
+  },
+  "total_count": 2226,
+  "harmonized_name": "season_temp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce6d"
+  },
+  "total_count": 2170,
+  "harmonized_name": "soil_temp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce6e"
+  },
+  "total_count": 2139,
+  "harmonized_name": "chem_oxygen_dem"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce6f"
+  },
+  "total_count": 2121,
+  "harmonized_name": "standing_water_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce70"
+  },
+  "total_count": 2108,
+  "harmonized_name": "urogenit_tract_disor"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce71"
+  },
+  "total_count": 2086,
+  "harmonized_name": "secondary_treatment"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce72"
+  },
+  "total_count": 2062,
+  "harmonized_name": "forma"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce73"
+  },
+  "total_count": 2040,
+  "harmonized_name": "room_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce74"
+  },
+  "total_count": 2011,
+  "harmonized_name": "sexual_act"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce75"
+  },
+  "total_count": 1996,
+  "harmonized_name": "season_precpt"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce76"
+  },
+  "total_count": 1959,
+  "harmonized_name": "bac_prod"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce77"
+  },
+  "total_count": 1928,
+  "harmonized_name": "menarche"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce78"
+  },
+  "total_count": 1915,
+  "harmonized_name": "host_wet_mass"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce79"
+  },
+  "total_count": 1904,
+  "harmonized_name": "train_line"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce7a"
+  },
+  "total_count": 1852,
+  "harmonized_name": "maternal_health_stat"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce7b"
+  },
+  "total_count": 1823,
+  "harmonized_name": "pesticide_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce7c"
+  },
+  "total_count": 1817,
+  "harmonized_name": "same_as"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce7d"
+  },
+  "total_count": 1816,
+  "harmonized_name": "ww_surv_target_1_extract_unit"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce7e"
+  },
+  "total_count": 1782,
+  "harmonized_name": "chem_mutagen"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce7f"
+  },
+  "total_count": 1778,
+  "harmonized_name": "primary_prod"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce80"
+  },
+  "total_count": 1768,
+  "harmonized_name": "non_mineral_nutr_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce81"
+  },
+  "total_count": 1760,
+  "harmonized_name": "hysterectomy"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce82"
+  },
+  "total_count": 1729,
+  "harmonized_name": "growth_hormone_regm"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce83"
+  },
+  "total_count": 1720,
+  "harmonized_name": "atmospheric_data"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce84"
+  },
+  "total_count": 1711,
+  "harmonized_name": "ferm_time"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce85"
+  },
+  "total_count": 1699,
+  "harmonized_name": "hrt"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce86"
+  },
+  "total_count": 1670,
+  "harmonized_name": "suspend_solids"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce87"
+  },
+  "total_count": 1667,
+  "harmonized_name": "gravity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce88"
+  },
+  "total_count": 1643,
+  "harmonized_name": "samp_dis_stage"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce89"
+  },
+  "total_count": 1633,
+  "harmonized_name": "primary_treatment"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce8a"
+  },
+  "total_count": 1632,
+  "harmonized_name": "ances_data"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce8b"
+  },
+  "total_count": 1622,
+  "harmonized_name": "wind_direction"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce8c"
+  },
+  "total_count": 1604,
+  "harmonized_name": "tiss_cult_growth_med"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce8d"
+  },
+  "total_count": 1598,
+  "harmonized_name": "authority"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce8e"
+  },
+  "total_count": 1589,
+  "harmonized_name": "ww_surv_target_1_extract"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce8f"
+  },
+  "total_count": 1558,
+  "harmonized_name": "haplotype"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce90"
+  },
+  "total_count": 1555,
+  "harmonized_name": "barometric_press"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce91"
+  },
+  "total_count": 1532,
+  "harmonized_name": "kidney_disord"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce92"
+  },
+  "total_count": 1524,
+  "harmonized_name": "bac_resp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce93"
+  },
+  "total_count": 1498,
+  "harmonized_name": "microb_cult_med"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce94"
+  },
+  "total_count": 1490,
+  "harmonized_name": "type_strain"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce95"
+  },
+  "total_count": 1456,
+  "harmonized_name": "tot_inorg_nitro"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce96"
+  },
+  "total_count": 1432,
+  "harmonized_name": "root_cond"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce97"
+  },
+  "total_count": 1428,
+  "harmonized_name": "photon_flux"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce98"
+  },
+  "total_count": 1423,
+  "harmonized_name": "twin_sibling"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce99"
+  },
+  "total_count": 1402,
+  "harmonized_name": "samp_subtype"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce9a"
+  },
+  "total_count": 1399,
+  "harmonized_name": "nose_throat_disord"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce9b"
+  },
+  "total_count": 1395,
+  "harmonized_name": "tot_nitro_cont_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce9c"
+  },
+  "total_count": 1355,
+  "harmonized_name": "dry_mass"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce9d"
+  },
+  "total_count": 1346,
+  "harmonized_name": "water_ph"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce9e"
+  },
+  "total_count": 1342,
+  "harmonized_name": "humidity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bce9f"
+  },
+  "total_count": 1336,
+  "harmonized_name": "time_last_toothbrush"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcea0"
+  },
+  "total_count": 1304,
+  "harmonized_name": "time_since_last_wash"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcea1"
+  },
+  "total_count": 1279,
+  "harmonized_name": "foetal_health_stat"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcea2"
+  },
+  "total_count": 1235,
+  "harmonized_name": "blood_blood_disord"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcea3"
+  },
+  "total_count": 1203,
+  "harmonized_name": "subclone"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcea4"
+  },
+  "total_count": 1181,
+  "harmonized_name": "area_samp_size"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcea5"
+  },
+  "total_count": 1180,
+  "harmonized_name": "urogenit_disord"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcea6"
+  },
+  "total_count": 1178,
+  "harmonized_name": "image_file"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcea7"
+  },
+  "total_count": 1173,
+  "harmonized_name": "cult_target"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcea8"
+  },
+  "total_count": 1168,
+  "harmonized_name": "soil_texture_class"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcea9"
+  },
+  "total_count": 1121,
+  "harmonized_name": "ww_sample_salinity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceaa"
+  },
+  "total_count": 1085,
+  "harmonized_name": "last_meal"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceab"
+  },
+  "total_count": 1043,
+  "harmonized_name": "carbapenemase"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceac"
+  },
+  "total_count": 1026,
+  "harmonized_name": "ww_surv_target_2_extract_unit"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcead"
+  },
+  "total_count": 1012,
+  "harmonized_name": "surf_moisture"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceae"
+  },
+  "total_count": 1011,
+  "harmonized_name": "teleomorph"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceaf"
+  },
+  "total_count": 994,
+  "harmonized_name": "cult_result_org"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceb0"
+  },
+  "total_count": 969,
+  "harmonized_name": "beta_lactamase_family"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceb1"
+  },
+  "total_count": 967,
+  "harmonized_name": "edta_inhibitor_tested"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceb2"
+  },
+  "total_count": 960,
+  "harmonized_name": "outbreak"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceb3"
+  },
+  "total_count": 941,
+  "harmonized_name": "ww_endog_control_2_units"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceb4"
+  },
+  "total_count": 939,
+  "harmonized_name": "cult_root_med"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceb5"
+  },
+  "total_count": 928,
+  "harmonized_name": "anamorph"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceb6"
+  },
+  "total_count": 880,
+  "harmonized_name": "biochem_oxygen_dem"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceb7"
+  },
+  "total_count": 819,
+  "harmonized_name": "growth_habit"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceb8"
+  },
+  "total_count": 812,
+  "harmonized_name": "additional_info"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceb9"
+  },
+  "total_count": 811,
+  "harmonized_name": "ww_endog_control_2"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceba"
+  },
+  "total_count": 802,
+  "harmonized_name": "ww_endog_control_2_conc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcebb"
+  },
+  "total_count": 758,
+  "harmonized_name": "plant_sex"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcebc"
+  },
+  "total_count": 754,
+  "harmonized_name": "samp_pooling"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcebd"
+  },
+  "total_count": 732,
+  "harmonized_name": "ww_endog_control_2_protocol"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcebe"
+  },
+  "total_count": 729,
+  "harmonized_name": "root_med_ph"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcebf"
+  },
+  "total_count": 726,
+  "harmonized_name": "tot_phosphate"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcec0"
+  },
+  "total_count": 716,
+  "harmonized_name": "samp_collect_point"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcec1"
+  },
+  "total_count": 711,
+  "harmonized_name": "efficiency_percent"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcec2"
+  },
+  "total_count": 710,
+  "harmonized_name": "adjacent_environment"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcec3"
+  },
+  "total_count": 667,
+  "harmonized_name": "avg_temp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcec4"
+  },
+  "total_count": 635,
+  "harmonized_name": "alkalinity_method"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcec5"
+  },
+  "total_count": 625,
+  "harmonized_name": "tertiary_treatment"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcec6"
+  },
+  "total_count": 600,
+  "harmonized_name": "samp_rep_biol"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcec7"
+  },
+  "total_count": 588,
+  "harmonized_name": "soluble_inorg_mat"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcec8"
+  },
+  "total_count": 588,
+  "harmonized_name": "enrichment_protocol"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcec9"
+  },
+  "total_count": 578,
+  "harmonized_name": "prior_sars_cov_2_antiviral_treat"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceca"
+  },
+  "total_count": 578,
+  "harmonized_name": "dew_point"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcecb"
+  },
+  "total_count": 574,
+  "harmonized_name": "gaseous_substances"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcecc"
+  },
+  "total_count": 572,
+  "harmonized_name": "chem_treatment"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcecd"
+  },
+  "total_count": 538,
+  "harmonized_name": "samp_sort_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcece"
+  },
+  "total_count": 512,
+  "harmonized_name": "root_med_macronutr"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcecf"
+  },
+  "total_count": 510,
+  "harmonized_name": "floor_area"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bced0"
+  },
+  "total_count": 510,
+  "harmonized_name": "floor_struc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bced1"
+  },
+  "total_count": 510,
+  "harmonized_name": "last_clean"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bced2"
+  },
+  "total_count": 491,
+  "harmonized_name": "soluble_org_mat"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bced3"
+  },
+  "total_count": 490,
+  "harmonized_name": "number_pets"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bced4"
+  },
+  "total_count": 485,
+  "harmonized_name": "root_med_carbon"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bced5"
+  },
+  "total_count": 485,
+  "harmonized_name": "samp_rep_tech"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bced6"
+  },
+  "total_count": 467,
+  "harmonized_name": "indust_eff_percent"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bced7"
+  },
+  "total_count": 465,
+  "harmonized_name": "type_of_symbiosis"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bced8"
+  },
+  "total_count": 461,
+  "harmonized_name": "inorg_particles"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bced9"
+  },
+  "total_count": 458,
+  "harmonized_name": "spikein_org"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceda"
+  },
+  "total_count": 452,
+  "harmonized_name": "water_source_shared"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcedb"
+  },
+  "total_count": 449,
+  "harmonized_name": "animal_sex"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcedc"
+  },
+  "total_count": 436,
+  "harmonized_name": "prior_sars_cov_2_infection"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcedd"
+  },
+  "total_count": 433,
+  "harmonized_name": "study_inc_temp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcede"
+  },
+  "total_count": 431,
+  "harmonized_name": "study_tmnt"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcedf"
+  },
+  "total_count": 420,
+  "harmonized_name": "pollutants"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcee0"
+  },
+  "total_count": 408,
+  "harmonized_name": "root_med_micronutr"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcee1"
+  },
+  "total_count": 385,
+  "harmonized_name": "season_humidity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcee2"
+  },
+  "total_count": 382,
+  "harmonized_name": "ferm_medium"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcee3"
+  },
+  "total_count": 370,
+  "harmonized_name": "mode_transmission"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcee4"
+  },
+  "total_count": 367,
+  "harmonized_name": "emulsions"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcee5"
+  },
+  "total_count": 366,
+  "harmonized_name": "org_particles"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcee6"
+  },
+  "total_count": 363,
+  "harmonized_name": "route_transmission"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcee7"
+  },
+  "total_count": 351,
+  "harmonized_name": "root_med_solid"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcee8"
+  },
+  "total_count": 337,
+  "harmonized_name": "spikein_strain"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcee9"
+  },
+  "total_count": 326,
+  "harmonized_name": "ferm_chem_add"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceea"
+  },
+  "total_count": 326,
+  "harmonized_name": "microb_start_taxid"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceeb"
+  },
+  "total_count": 312,
+  "harmonized_name": "samp_transport_temp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceec"
+  },
+  "total_count": 307,
+  "harmonized_name": "root_med_regl"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceed"
+  },
+  "total_count": 301,
+  "harmonized_name": "tot_iron"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceee"
+  },
+  "total_count": 290,
+  "harmonized_name": "occupation"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceef"
+  },
+  "total_count": 282,
+  "harmonized_name": "tot_sulfur"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcef0"
+  },
+  "total_count": 278,
+  "harmonized_name": "air_pm_concen"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcef1"
+  },
+  "total_count": 275,
+  "harmonized_name": "basin_name"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcef2"
+  },
+  "total_count": 274,
+  "harmonized_name": "api"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcef3"
+  },
+  "total_count": 270,
+  "harmonized_name": "hcr"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcef4"
+  },
+  "total_count": 270,
+  "harmonized_name": "hc_produced"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcef5"
+  },
+  "total_count": 261,
+  "harmonized_name": "root_med_suppl"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcef6"
+  },
+  "total_count": 261,
+  "harmonized_name": "permeability"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcef7"
+  },
+  "total_count": 252,
+  "harmonized_name": "built_struc_age"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcef8"
+  },
+  "total_count": 243,
+  "harmonized_name": "ferm_headspace_oxy"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcef9"
+  },
+  "total_count": 243,
+  "harmonized_name": "animal_diet"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcefa"
+  },
+  "total_count": 230,
+  "harmonized_name": "ferm_temp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcefb"
+  },
+  "total_count": 226,
+  "harmonized_name": "child_of"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcefc"
+  },
+  "total_count": 211,
+  "harmonized_name": "infra_specific_rank"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcefd"
+  },
+  "total_count": 205,
+  "harmonized_name": "cons_food_stor_dur"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcefe"
+  },
+  "total_count": 204,
+  "harmonized_name": "fertilizer_date"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bceff"
+  },
+  "total_count": 203,
+  "harmonized_name": "cons_food_stor_temp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf00"
+  },
+  "total_count": 193,
+  "harmonized_name": "ferm_chem_add_perc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf01"
+  },
+  "total_count": 188,
+  "harmonized_name": "iwf"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf02"
+  },
+  "total_count": 188,
+  "harmonized_name": "water_cut"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf03"
+  },
+  "total_count": 188,
+  "harmonized_name": "add_recov_method"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf04"
+  },
+  "total_count": 181,
+  "harmonized_name": "cons_purch_date"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf05"
+  },
+  "total_count": 171,
+  "harmonized_name": "ferm_ph"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf06"
+  },
+  "total_count": 170,
+  "harmonized_name": "surf_air_cont"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf07"
+  },
+  "total_count": 169,
+  "harmonized_name": "solar_irradiance"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf08"
+  },
+  "total_count": 163,
+  "harmonized_name": "animal_body_cond"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf09"
+  },
+  "total_count": 159,
+  "harmonized_name": "surf_moisture_ph"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf0a"
+  },
+  "total_count": 159,
+  "harmonized_name": "surf_humidity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf0b"
+  },
+  "total_count": 159,
+  "harmonized_name": "substructure_type"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf0c"
+  },
+  "total_count": 152,
+  "harmonized_name": "part_plant_animal"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf0d"
+  },
+  "total_count": 149,
+  "harmonized_name": "food_ingredient"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf0e"
+  },
+  "total_count": 146,
+  "harmonized_name": "blood_press_diast"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf0f"
+  },
+  "total_count": 146,
+  "harmonized_name": "blood_press_syst"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf10"
+  },
+  "total_count": 142,
+  "harmonized_name": "ww_surv_target_2_extract"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf11"
+  },
+  "total_count": 127,
+  "harmonized_name": "specific"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf12"
+  },
+  "total_count": 125,
+  "harmonized_name": "study_inc_dur"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf13"
+  },
+  "total_count": 121,
+  "harmonized_name": "ferm_vessel"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf14"
+  },
+  "total_count": 121,
+  "harmonized_name": "ventilation_rate"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf15"
+  },
+  "total_count": 115,
+  "harmonized_name": "toluene"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf16"
+  },
+  "total_count": 115,
+  "harmonized_name": "food_trav_mode"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf17"
+  },
+  "total_count": 115,
+  "harmonized_name": "ethylbenzene"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf18"
+  },
+  "total_count": 115,
+  "harmonized_name": "benzene"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf19"
+  },
+  "total_count": 113,
+  "harmonized_name": "bacterial_density"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf1a"
+  },
+  "total_count": 113,
+  "harmonized_name": "spikein_count"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf1b"
+  },
+  "total_count": 113,
+  "harmonized_name": "food_trav_vehic"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf1c"
+  },
+  "total_count": 107,
+  "harmonized_name": "food_treat_proc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf1d"
+  },
+  "total_count": 106,
+  "harmonized_name": "gender_restroom"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf1e"
+  },
+  "total_count": 105,
+  "harmonized_name": "anim_water_method"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf1f"
+  },
+  "total_count": 98,
+  "harmonized_name": "crop_yield"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf20"
+  },
+  "total_count": 98,
+  "harmonized_name": "host_cellular_loc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf21"
+  },
+  "total_count": 97,
+  "harmonized_name": "samp_store_sol"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf22"
+  },
+  "total_count": 96,
+  "harmonized_name": "food_harvest_proc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf23"
+  },
+  "total_count": 95,
+  "harmonized_name": "farm_equip_shared"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf24"
+  },
+  "total_count": 93,
+  "harmonized_name": "farm_equip_san"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf25"
+  },
+  "total_count": 90,
+  "harmonized_name": "spikein_serovar"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf26"
+  },
+  "total_count": 86,
+  "harmonized_name": "cool_syst_id"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf27"
+  },
+  "total_count": 82,
+  "harmonized_name": "sulfate_fw"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf28"
+  },
+  "total_count": 82,
+  "harmonized_name": "hcr_temp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf29"
+  },
+  "total_count": 82,
+  "harmonized_name": "vfa_fw"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf2a"
+  },
+  "total_count": 77,
+  "harmonized_name": "lithology"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf2b"
+  },
+  "total_count": 74,
+  "harmonized_name": "clone_lib"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf2c"
+  },
+  "total_count": 67,
+  "harmonized_name": "association_duration"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf2d"
+  },
+  "total_count": 66,
+  "harmonized_name": "occup_document"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf2e"
+  },
+  "total_count": 66,
+  "harmonized_name": "arch_struc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf2f"
+  },
+  "total_count": 66,
+  "harmonized_name": "built_struc_set"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf30"
+  },
+  "total_count": 65,
+  "harmonized_name": "vfa"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf31"
+  },
+  "total_count": 63,
+  "harmonized_name": "pres_animal_insect"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf32"
+  },
+  "total_count": 63,
+  "harmonized_name": "furniture"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf33"
+  },
+  "total_count": 62,
+  "harmonized_name": "photosynt_activ_meth"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf34"
+  },
+  "total_count": 62,
+  "harmonized_name": "soil_cover"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf35"
+  },
+  "total_count": 62,
+  "harmonized_name": "soil_conductivity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf36"
+  },
+  "total_count": 62,
+  "harmonized_name": "photosynt_activ"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf37"
+  },
+  "total_count": 54,
+  "harmonized_name": "host_of_host_name"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf38"
+  },
+  "total_count": 51,
+  "harmonized_name": "volatile_org_comp"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf39"
+  },
+  "total_count": 48,
+  "harmonized_name": "tan"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf3a"
+  },
+  "total_count": 44,
+  "harmonized_name": "adj_room"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf3b"
+  },
+  "total_count": 39,
+  "harmonized_name": "animal_am_dur"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf3c"
+  },
+  "total_count": 37,
+  "harmonized_name": "cons_qty_purchased"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf3d"
+  },
+  "total_count": 36,
+  "harmonized_name": "window_open_freq"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf3e"
+  },
+  "total_count": 33,
+  "harmonized_name": "host_of_host_sub_id"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf3f"
+  },
+  "total_count": 27,
+  "harmonized_name": "wet_mass"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf40"
+  },
+  "total_count": 25,
+  "harmonized_name": "food_cooking_proc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf41"
+  },
+  "total_count": 25,
+  "harmonized_name": "animal_feed_equip"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf42"
+  },
+  "total_count": 24,
+  "harmonized_name": "animal_am_route"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf43"
+  },
+  "total_count": 24,
+  "harmonized_name": "animal_am_freq"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf44"
+  },
+  "total_count": 24,
+  "harmonized_name": "animal_am_use"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf45"
+  },
+  "total_count": 21,
+  "harmonized_name": "food_dis_point"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf46"
+  },
+  "total_count": 20,
+  "harmonized_name": "food_prior_contact"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf47"
+  },
+  "total_count": 20,
+  "harmonized_name": "food_trace_list"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf48"
+  },
+  "total_count": 20,
+  "harmonized_name": "haccp_term"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf49"
+  },
+  "total_count": 20,
+  "harmonized_name": "food_pack_capacity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf4a"
+  },
+  "total_count": 18,
+  "harmonized_name": "serovar_or_serotype"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf4b"
+  },
+  "total_count": 18,
+  "harmonized_name": "samp_transport_cont"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf4c"
+  },
+  "total_count": 18,
+  "harmonized_name": "spikein_metal"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf4d"
+  },
+  "total_count": 18,
+  "harmonized_name": "study_timecourse"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf4e"
+  },
+  "total_count": 18,
+  "harmonized_name": "spikein_antibiotic"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf4f"
+  },
+  "total_count": 18,
+  "harmonized_name": "samp_transport_dur"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf50"
+  },
+  "total_count": 18,
+  "harmonized_name": "spikein_growth_med"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf51"
+  },
+  "total_count": 18,
+  "harmonized_name": "spikein_amr"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf52"
+  },
+  "total_count": 16,
+  "harmonized_name": "ceil_struc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf53"
+  },
+  "total_count": 16,
+  "harmonized_name": "ceil_texture"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf54"
+  },
+  "total_count": 15,
+  "harmonized_name": "dietary_claim_use"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf55"
+  },
+  "total_count": 14,
+  "harmonized_name": "food_name_status"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf56"
+  },
+  "total_count": 14,
+  "harmonized_name": "food_allergen_label"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf57"
+  },
+  "total_count": 14,
+  "harmonized_name": "num_samp_collect"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf58"
+  },
+  "total_count": 12,
+  "harmonized_name": "microb_start_prep"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf59"
+  },
+  "total_count": 12,
+  "harmonized_name": "microb_start_inoc"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf5a"
+  },
+  "total_count": 12,
+  "harmonized_name": "microb_start_count"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf5b"
+  },
+  "total_count": 12,
+  "harmonized_name": "microb_start"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf5c"
+  },
+  "total_count": 12,
+  "harmonized_name": "microb_start_source"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf5d"
+  },
+  "total_count": 12,
+  "harmonized_name": "ferm_rel_humidity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf5e"
+  },
+  "total_count": 9,
+  "harmonized_name": "host_specificity"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf5f"
+  },
+  "total_count": 9,
+  "harmonized_name": "symbiont_host_role"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf60"
+  },
+  "total_count": 8,
+  "harmonized_name": "food_dis_point_city"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf61"
+  },
+  "total_count": 7,
+  "harmonized_name": "affection_status"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf62"
+  },
+  "total_count": 7,
+  "harmonized_name": "original_subject_id"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf63"
+  },
+  "total_count": 6,
+  "harmonized_name": "food_source_age"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf64"
+  },
+  "total_count": 3,
+  "harmonized_name": "avg_occup"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf65"
+  },
+  "total_count": 2,
+  "harmonized_name": "prod_label_claims"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf66"
+  },
+  "total_count": 2,
+  "harmonized_name": "hygienic_area"
+},
+{
+  "_id": {
+    "$oid": "67eed9593586ad429b9bcf67"
+  },
+  "total_count": 2,
+  "harmonized_name": "freq_clean"
+}]
