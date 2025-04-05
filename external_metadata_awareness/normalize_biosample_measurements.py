@@ -8,6 +8,143 @@ from pymongo import MongoClient
 from quantulum3 import parser
 from tqdm import tqdm
 
+# these don't appear as a harmonized name attribute at all
+
+
+
+###
+
+# {
+#   "Name": {
+#     "content": "altitude"
+#   },
+#   "HarmonizedName": {
+#     "content": "altitude"
+#   },
+#   "Synonym": {
+#     "content": "alt"
+#   },
+#   "Description": {
+#     "content": "The altitude of the sample is the vertical distance between Earth's surface above Sea Level and the sampled position in the air."
+#   },
+#   "Format": {
+#     "content": "{float} m"
+#   }
+# }
+
+curated_measurements = [
+    "alt",
+    "amount_light",
+    "avg_dew_point",
+    "carb_monoxide",
+    "ceil_area",
+    "ceil_thermal_mass",
+    "diss_iron",
+    "diss_oxygen_fluid",
+    "association_duration",
+    "crop_yield",
+    "bacterial_density",
+    "benzene",
+    "blood_press_diast",
+    "blood_press_syst",
+    "cons_food_stor_temp",
+    "cons_food_stor_dur",
+    "built_struc_age",
+    "api",
+    "dew_point",
+    "avg_temp",
+    "biochem_oxygen_dem",
+    "area_samp_size",
+    "bac_resp",
+    "barometric_press",
+    "bac_prod",
+    "chem_oxygen_dem",
+    "down_par",
+    "diss_inorg_nitro",
+    "diss_inorg_phosp",
+    "bishomohopanol",
+    "aminopept_act",
+    "alkyl_diethers",
+    "bacteria_carb_prod",
+    "diss_hydrogen",
+    "diss_org_nitro",
+    "bromide",
+    "annual_precpt",
+    "annual_temp",
+    "al_sat",
+    "diss_inorg_carb",
+    "diss_carb_dioxide",
+    "alkalinity",
+    "abs_air_humidity",
+    "calcium",
+    "carb_dioxide",
+    "chloride",
+    "density",
+    "diss_org_carb",
+    "conduc",
+    "air_temp",
+    "chlorophyll",
+    "ammonium",
+    "diss_oxygen",
+    "depth",
+    "age",
+    "altitude",  # (not a mixs term)
+    "elev",
+    "env_broad_scale",
+    "geo_loc_name",
+    "samp_size",
+    "ph",
+    "add_date", "address", "amount_light", "avg_dew_point", "avg_occup",
+    "bathroom_count", "bedroom_count", "carb_monoxide", "carb_nitro_ratio",
+    "ceil_area", "ceil_thermal_mass", "collection_time", "collection_time_inc",
+    "community", "core field", "description", "dna_absorb1", "dna_absorb2",
+    "dna_concentration", "dna_volume", "door_size", "ecosystem",
+    "ecosystem_category", "ecosystem_subtype", "ecosystem_type",
+    "efficiency_percent", "elevator", "env_package", "environment field",
+    "escalator", "ethylbenzene", "exp_duct", "exp_pipe", "ext_door",
+    "floor_age", "floor_area", "floor_count", "floor_thermal_mass", "fluor",
+    "freq_cook", "glucosidase_act", "habitat", "hall_count", "hcr_fw_salinity",
+    "hcr_pressure", "hcr_temp", "height_carper_fiber", "host_age",
+    "host_body_temp", "host_dry_mass", "host_height", "host_length",
+    "host_name", "host_tot_mass", "host_wet_mass", "humidity",
+    "indust_eff_percent", "inside_lux", "investigation field",
+    "isotope_exposure", "iwf", "lbc_thirty", "lbceq", "light_intensity",
+    "location", "magnesium", "manganese", "max_occup", "mean_frict_vel",
+    "mean_peak_frict_vel", "methane", "microbial_biomass",
+    "microbial_biomass_c", "microbial_biomass_n", "mod_date", "name",
+    "ncbi_taxonomy_name", "nitrate", "nitrate_nitrogen", "nitrite",
+    "nitrite_nitrogen", "nitro", "nucleic acid sequence source field",
+    "number_pets", "number_plants", "number_resident", "occup_density_samp",
+    "occup_samp", "org_carb", "org_matter", "org_nitro", "owc_tvdss", "oxygen",
+    "part_org_carb", "part_org_nitro", "permeability", "petroleum_hydrocarb",
+    "phosphate", "photon_flux", "porosity", "potassium", "pour_point",
+    "pressure", "primary_prod", "prod_rate", "proport_woa_temperature",
+    "redox_potential", "rel_air_humidity", "rel_humidity_out",
+    "replicate_number", "rna_absorb1", "rna_absorb2", "rna_concentration",
+    "rna_volume", "room_air_exch_rate", "room_count", "room_dim",
+    "room_door_dist", "room_moist_dam_hist", "room_net_area", "room_occup",
+    "room_vol", "room_window_count", "root_med_ph", "salinity",
+    "salinity_category", "samp_loc_corr_rate", "samp_room_id",
+    "samp_store_dur", "samp_store_temp", "samp_time_out", "samp_tvdss",
+    "sample_collection_site", "sample_shipped", "season_precpt",
+    "season_temp", "sequencing field", "silicate", "size_frac",
+    "size_frac_low", "size_frac_up", "slope_aspect", "slope_gradient",
+    "sludge_retent_time", "sodium", "soil_text_measure", "solar_irradiance",
+    "soluble_iron_micromol", "soluble_react_phosp", "specific_ecosystem",
+    "specific_humidity", "start_time_inc", "subsurface_depth", "sulfate",
+    "sulfate_fw", "sulfide", "surf_humidity", "surf_moisture",
+    "surf_moisture_ph", "surf_temp", "suspend_part_matter", "tan",
+    "technical_reps", "temp", "temp_out", "toluene", "tot_carb",
+    "tot_depth_water_col", "tot_diss_nitro", "tot_inorg_nitro", "tot_iron",
+    "tot_nitro", "tot_nitro_content", "tot_org_carb", "tot_part_carb",
+    "tot_phosp", "tot_phosphate", "tot_sulfur", "turbidity",
+    "tvdss_of_hcr_press", "tvdss_of_hcr_temp", "typ_occup_density",
+    "ventilation_rate", "vfa", "vfa_fw", "viscosity", "wall_area",
+    "wall_height", "wall_thermal_mass", "water_current", "water_cut",
+    "water_feat_size", "water_prod_rate", "wind_speed", "window_open_freq",
+    "window_size", "xylene", "zinc"
+]
+
 
 def ensure_index(collection, field_name):
     """Ensure an ascending index exists on the given field."""
@@ -230,110 +367,81 @@ def parse_measurements(client, db_name, collection_name, field_name, extra_verbo
 @click.option('--db-name', default='ncbi_metadata', help='Database name')
 @click.option('--input-collection', default='biosamples_flattened', help='Input collection name')
 @click.option('--output-collection', default='biosamples_measurements', help='Output collection name')
-@click.option('--field', required=True, multiple=True,
-              help='Field name(s) to parse (e.g., samp_size). Can be specified multiple times.')
-@click.option('-v', '--verbosity',
-              type=click.Choice(['quiet', 'normal', 'verbose']),
-              default='normal',
-              help='Set output verbosity: quiet (errors only), normal (default), or verbose (detailed)')
+@click.option('--field', required=False, multiple=True, default=curated_measurements, help='Field name(s) to parse.')
+@click.option('-v', '--verbosity', type=click.Choice(['quiet', 'normal', 'verbose']), default='normal',
+              help='Verbosity level')
 @click.option('--overwrite', is_flag=True, help='Overwrite existing data for the specified field(s)')
 def main(mongodb_uri, db_name, input_collection, output_collection, field, verbosity, overwrite):
-    """Parse and normalize measurement fields from MongoDB collections."""
     try:
-        # Set output verbosity
         is_quiet = verbosity == 'quiet'
         is_verbose = verbosity == 'verbose'
 
         if not is_quiet:
-            click.echo(f"[{timestamp()}] " + "=" * 80)
-            click.echo(f"[{timestamp()}]  Measurement Parser for MongoDB Collections ")
-            click.echo(f"[{timestamp()}] " + "=" * 80)
-            click.echo(f"[{timestamp()}] Database: {db_name}")
-            click.echo(f"[{timestamp()}] Input collection: {input_collection}")
-            click.echo(f"[{timestamp()}] Output collection: {output_collection}")
-            click.echo(f"[{timestamp()}] Fields to parse: {', '.join(field)}")
-            click.echo(f"[{timestamp()}] MongoDB URI: {mongodb_uri}")
-            click.echo(f"[{timestamp()}] Verbosity: {verbosity}")
-            click.echo(f"[{timestamp()}] Overwrite existing: {'Yes' if overwrite else 'No'}")
-            click.echo(f"[{timestamp()}] " + "-" * 80)
-
-        # Connect to MongoDB
-        if not is_quiet:
             click.echo(f"[{timestamp()}] Connecting to MongoDB at {mongodb_uri}...")
-        start_time = time.time()
         client = MongoClient(mongodb_uri)
-
-        # Verify connection
         client.admin.command('ping')
-        end_time = time.time()
-        if not is_quiet:
-            click.echo(f"[{timestamp()}] Connected successfully in {end_time - start_time:.2f} seconds")
 
-        # Display available databases and collections
-        if is_verbose:
-            click.echo(f"[{timestamp()}] Available databases: {', '.join(client.list_database_names())}")
-            if db_name in client.list_database_names():
-                db = client[db_name]
-                click.echo(f"[{timestamp()}] Collections in '{db_name}': {', '.join(db.list_collection_names())}")
+        db = client[db_name]
+        input_col = db[input_collection]
+        output_col = db[output_collection]
 
         total_start_time = time.time()
         fields_processed = 0
         total_parsed = 0
 
-        # Process each field incrementally
         for current_field in field:
-
-            ensure_index(client[db_name][input_collection], current_field)
+            click.echo(f"[{timestamp()}] Ensuring index on '{current_field}' in '{input_collection}'...")
+            ensure_index(input_col, current_field)
 
             if not is_quiet:
-                click.echo(f"[{timestamp()}] " + "-" * 80)
+                click.echo(f"[{timestamp()}] ------------------------------------------------------------")
                 click.echo(f"[{timestamp()}] Processing field: '{current_field}'")
 
-            # Step 1: Aggregate measurements
             field_start_time = time.time()
-            processed_field = aggregate_measurements(client, db_name, input_collection, output_collection,
-                                                     current_field, is_verbose, overwrite)
 
-            # If aggregation was skipped (no overwrite), continue to next field
+            # Step 1: Aggregate
+            processed_field = aggregate_measurements(
+                client, db_name, input_collection, output_collection,
+                current_field, is_verbose, overwrite
+            )
+
             if processed_field is None:
-                if not is_quiet:
-                    click.echo(f"[{timestamp()}] Skipping processing for field '{current_field}'")
+                click.echo(f"[{timestamp()}] Skipping field '{current_field}' (likely due to overwrite=False)")
                 continue
 
-            ensure_index(client[db_name][output_collection], "harmonized_name")
+            ensure_index(output_col, "harmonized_name")
 
-            # Step 2: Parse measurements
-            parsed_count = parse_measurements(client, db_name, output_collection, current_field, is_verbose)
+            # Step 2: Parse
+            parsed_count = parse_measurements(
+                client, db_name, output_collection, current_field, is_verbose
+            )
+
+            # Drop index on input field
+            click.echo(f"[{timestamp()}] Dropping index on '{current_field}' from '{input_collection}'...")
+            try:
+                input_col.drop_index(f"{current_field}_1")
+                click.echo(f"[{timestamp()}] Index '{current_field}_1' dropped successfully.")
+            except Exception as e:
+                click.echo(f"[{timestamp()}] Warning: Failed to drop index '{current_field}_1': {str(e)}")
+
+            # Summary per field
             field_end_time = time.time()
-            field_duration = field_end_time - field_start_time
-
-            if not is_quiet:
-                click.echo(f"[{timestamp()}] Field '{current_field}' processed in {field_duration:.2f} seconds")
+            click.echo(
+                f"[{timestamp()}] Field '{current_field}' processed in {field_end_time - field_start_time:.2f} seconds")
 
             fields_processed += 1
             total_parsed += parsed_count
 
         total_end_time = time.time()
-        total_duration = total_end_time - total_start_time
-
-        # Final summary
         if not is_quiet:
-            click.echo(f"[{timestamp()}] " + "=" * 80)
-            click.echo(f"[{timestamp()}]  Operation Summary ")
-            click.echo(f"[{timestamp()}] " + "=" * 80)
+            click.echo(f"[{timestamp()}] ============================================================")
             click.echo(f"[{timestamp()}] Fields processed: {fields_processed} of {len(field)}")
-            click.echo(f"[{timestamp()}] Total documents parsed: {total_parsed}")
-            click.echo(f"[{timestamp()}] Input collection: '{input_collection}'")
-            click.echo(f"[{timestamp()}] Output collection: '{output_collection}'")
-            click.echo(f"[{timestamp()}] Total processing time: {total_duration:.2f} seconds")
-            click.echo(f"[{timestamp()}] " + "=" * 80)
-            click.echo(f"[{timestamp()}] Operation completed successfully!")
+            click.echo(f"[{timestamp()}] Total parsed documents: {total_parsed}")
+            click.echo(f"[{timestamp()}] Total processing time: {total_end_time - total_start_time:.2f} seconds")
+            click.echo(f"[{timestamp()}] Operation complete.")
 
     except Exception as e:
-        click.echo(f"[{timestamp()}] " + "=" * 80)
-        click.echo(f"[{timestamp()}]  ERROR ")
-        click.echo(f"[{timestamp()}] " + "=" * 80)
-        click.echo(f"[{timestamp()}] An error occurred: {str(e)}")
+        click.echo(f"[{timestamp()}] ERROR: {str(e)}")
         raise
 
 
