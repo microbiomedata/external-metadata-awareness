@@ -16,7 +16,7 @@ from tqdm import tqdm
 # todo doesnt' address ENV or ENV0 prefixes, but they are rare
 # seeing OF and TO prefixes that are defined in Bioportal. I'm suspicious.
 
-requests_cache_filename="external-metadata-awareness-requests-cache"
+requests_cache_filename = "external-metadata-awareness-requests-cache"
 
 # Precompiled regex patterns (assumed global in your file; repeated here for clarity).
 improved_curie_pattern = re.compile(
@@ -119,11 +119,11 @@ def extract_components(text,
                 'local_digits_only': is_digits_only(m.group('local')),
                 'prefix_uc': m.group('prefix').upper() if m.group('prefix') else None,
                 'raw': raw,
-                'uses_bioportal_prefix': (bioportal_ontology_indicators_lc and
-                                          m.group('prefix').upper() in {x.upper() for x in
-                                                                        bioportal_ontology_indicators_lc}),
-                'uses_obo_prefix': (obo_ontology_indicators_lc and
-                                    m.group('prefix').upper() in {x.upper() for x in obo_ontology_indicators_lc}),
+                'uses_bioportal_prefix': bool(bioportal_ontology_indicators_lc and
+                                              m.group('prefix').upper() in {x.upper() for x in
+                                                                            bioportal_ontology_indicators_lc}),
+                'uses_obo_prefix': bool(obo_ontology_indicators_lc and
+                                        m.group('prefix').upper() in {x.upper() for x in obo_ontology_indicators_lc}),
             })
         if found:
             return components
@@ -259,9 +259,6 @@ def main(host, port, db, collection, field, env_file, min_length, authenticate):
     known_prefixes.discard("OF")
     known_prefixes.discard("GUT")
     known_prefixes.discard("RHIZOSPHERE")
-
-
-
 
     docs = list(coll.find({
         "$and": [

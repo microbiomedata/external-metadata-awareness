@@ -3,7 +3,7 @@ name = "external-metadata-awareness"
 version = "0.1.0"
 description = "Tools for fetching and processing external schemas, ontologies and metadata records. Includes value set maintenance."
 authors = ["Mark A. Miller <MAM@lbl.gov>"]
-readme = "README.md"
+readme = "CLAUDE.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -69,4 +69,4 @@ mongodb-biosamples-to-duckdb = 'external_metadata_awareness.mongodb_biosamples_t
 ncbi-package-info-to-duckdb = 'external_metadata_awareness.ncbi_package_info_to_duck_db:main'
 prioritize-lexmatch-results = 'external_metadata_awareness.prioritize_lexmatch_results:main'
 sra-accession-pairs-to-mongo = 'external_metadata_awareness.sra_accession_pairs_tsv_to_mongo:main'
-sra-parquet-to-mongodb = 'external_metadata_awareness.sra_parquet_to_mongodb:main'
+sra-parquet-to-mongodb = 'external_metadata_awareness.sra_parquet_to_mongodb:insert_parquet_to_mongo'
