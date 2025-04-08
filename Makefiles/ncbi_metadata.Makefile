@@ -5,8 +5,8 @@ MONGO_HOST=localhost
 MONGO_PORT=27017
 MONGO_DB=ncbi_metadata
 MONGO_BIOSAMPLES_COLLECTION=biosamples
-#BIOSAMPLES_MAX_DOCS=50000000
-BIOSAMPLES_MAX_DOCS=500000 # initial 1%
+BIOSAMPLES_MAX_DOCS=50000000
+#BIOSAMPLES_MAX_DOCS=500000 # initial 1%
 MONGO2DUCK_BATCH_SIZE=10000
 
 # todo what cpu/ram resources are really required? 4 cores and 128 gb ram in ec2 was probably excessive

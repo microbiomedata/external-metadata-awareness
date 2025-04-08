@@ -5,11 +5,7 @@ import os
 import pymongo
 import time
 from dotenv import load_dotenv
-
-# Load .env file for MongoDB credentials
-# todo specify source of .env file
-#   not "as necessary" when running on NERSC Perlmutter?
-load_dotenv()
+from tqdm import tqdm
 
 
 def timestamp():
@@ -47,9 +43,16 @@ def clean_record(record):
 @click.option("--mongo-collection", default="sra_metadata", show_default=True, help="MongoDB collection name")
 @click.option("--drop-collection", is_flag=True, default=False,
               help="Drop the MongoDB collection before inserting new records")
+@click.option("--dotenv-path", type=click.Path(exists=True, dir_okay=False), default=".env",
+              show_default=True, help="Path to the .env file to load")
 def insert_parquet_to_mongo(parquet_dir, nrows, progress_interval, mongo_uri, mongo_db, mongo_collection,
-                            drop_collection):
+                            drop_collection, dotenv_path):
     """Insert Parquet records into MongoDB after processing, with controlled progress reporting."""
+
+    # Load .env file for MongoDB credentials
+    # todo specify source of .env file
+    #   not "as necessary" when running on NERSC Perlmutter?
+    load_dotenv(dotenv_path=dotenv_path)
 
     # Inject password from .env into the MongoDB URI
     mongo_password = os.getenv("MONGO_PASSWORD")
@@ -84,51 +87,55 @@ def insert_parquet_to_mongo(parquet_dir, nrows, progress_interval, mongo_uri, mo
     total_inserted = 0  # Track total inserted rows
 
     # Process files one by one
-    for i, file_path in enumerate(parquet_files):
+    processed_files = 0
+    for i, file_path in enumerate(tqdm(parquet_files, desc="Processing Parquet files")):
+        if nrows is not None and total_inserted >= nrows:
+            tqdm.write(f"{timestamp()} Reached global row limit ({nrows}). Stopping.")
+            break
+
+        processed_files += 1
+
         file_start = time.time()  # Track time per file
         parquet_file = os.path.basename(file_path)
 
         # Show immediate feedback before processing
         file_size = os.path.getsize(file_path) / (1024 * 1024)  # Convert to MB
-        click.echo(f"{timestamp()} [{i + 1}/{total_files}] Processing {parquet_file} ({file_size:.2f} MB)")
+        tqdm.write(f"{timestamp()} [{i + 1}/{total_files}] Processing {parquet_file} ({file_size:.2f} MB)")
 
         # Open Parquet file
         reader = pq.ParquetFile(file_path)
         total_rows = sum(reader.metadata.row_group(i).num_rows for i in range(reader.num_row_groups))
-        click.echo(f"{timestamp()}   - Total Rows: {total_rows}")
-
-        # Apply `nrows` limit if set
-        if nrows is not None:
-            total_rows = min(nrows, total_rows)
-            click.echo(f"{timestamp()}   - Applying row limit: {total_rows} rows")
+        tqdm.write(f"{timestamp()}   - Total Rows: {total_rows}")
 
         inserted_count = 0
+        rows_remaining = float('inf') if nrows is None else max(0, nrows - total_inserted)
+        file_row_limit = min(total_rows, rows_remaining)
 
-        # Insert records one by one with controlled progress reporting
-        for batch in reader.iter_batches(batch_size=1):  # Read one row at a time
-            for record in [dict(zip(batch.to_pydict(), t)) for t in zip(*batch.to_pydict().values())]:
-                record = convert_dates(clean_record(record))  # Remove jattr and filter out None values
-                collection.insert_one(record)
-                inserted_count += 1
-                total_inserted += 1
+        with tqdm(total=file_row_limit, desc=f"Inserting from {parquet_file}", leave=False) as pbar:
+            break_outer = False
+            for batch in reader.iter_batches(batch_size=1):
+                for record in [dict(zip(batch.to_pydict(), t)) for t in zip(*batch.to_pydict().values())]:
+                    if total_inserted >= rows_remaining:
+                        break_outer = True
+                        break
 
-                # Print progress at intervals
-                if inserted_count % progress_interval == 0:
-                    click.echo(
-                        f"{timestamp()}   - Inserted: {inserted_count}/{total_rows} rows (File {i + 1}/{total_files}) | Total inserted: {total_inserted}")
+                    record = convert_dates(clean_record(record))
+                    collection.insert_one(record)
+                    inserted_count += 1
+                    total_inserted += 1
+                    pbar.update(1)
 
-                # Stop processing if we reached `nrows` limit
-                if inserted_count >= total_rows:
+                if break_outer:
                     break
 
         # File completed
         file_end = time.time()
         elapsed_time = file_end - file_start
-        click.echo(f"{timestamp()} Done: {inserted_count} records inserted from {parquet_file} in {elapsed_time:.2f}s")
+        tqdm.write(f"{timestamp()} Done: {inserted_count} records inserted from {parquet_file} in {elapsed_time:.2f}s")
 
     total_time = time.time() - start_time
-    click.echo(
-        f"{timestamp()} Completed processing {total_files} files in {total_time / 60:.2f} minutes. Total inserted: {total_inserted} records.")
+    tqdm.write(
+        f"{timestamp()} Completed processing {processed_files} files in {total_time / 60:.2f} minutes. Total inserted: {total_inserted} records.")
 
 
 if __name__ == "__main__":

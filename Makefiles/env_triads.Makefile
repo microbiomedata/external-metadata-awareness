@@ -6,6 +6,12 @@ RUN = poetry run
 
 .PHONY: count-harmonizable-attribs purge-derived-repos
 
+# make load-biosamples-into-mongo
+# Processed 44750000 BioSample nodes (95.56%), elapsed time: 34960.22 seconds
+  #date
+  #Sat Apr  5 21:12:43 EDT 2025
+
+
 count-harmonizable-attribs: mongo-js/count_harmonizable_biosample_attribs.js
 	date
 	@echo "Ensuring index on Attributes.Attribute.harmonized_name..."
@@ -24,9 +30,10 @@ purge-derived-repos:
 		'db.env_triad_component_curies_uc.drop()'
 
 env-triads: # depends on biosamples_flattened, created from the biosamples collection with flatten_biosamples.js
-	time $(MONGO_COMMAND) --host $(MONGO_HOST) --port $(MONGO_PORT) $(MONGO_DB) --quiet --eval \
-		'db.biosamples_flattened.createIndex({ env_broad_scale: 1, env_local_scale: 1, env_medium: 1 })'  # fast
-	date && mongosh ncbi_metadata mongo-js/enriched_biosamples_env_triad_value_counts_gt_1.js && date # ~ 2.5 minutes
+#	time $(MONGO_COMMAND) --host $(MONGO_HOST) --port $(MONGO_PORT) $(MONGO_DB) mongo-js/flatten_biosamples.js # 1770.18 real
+#	time $(MONGO_COMMAND) --host $(MONGO_HOST) --port $(MONGO_PORT) $(MONGO_DB) --quiet --eval \
+#		'db.biosamples_flattened.createIndex({ env_broad_scale: 1, env_local_scale: 1, env_medium: 1 })'  # real    3m7.979s
+#	date && mongosh ncbi_metadata mongo-js/enriched_biosamples_env_triad_value_counts_gt_1.js && date # Elapsed time: 173055 ms
 	$(RUN) time python external_metadata_awareness/new_env_triad_values_splitter.py \
 		--host localhost \
 		--port 27017 \
@@ -34,14 +41,14 @@ env-triads: # depends on biosamples_flattened, created from the biosamples colle
 		--collection biosamples_env_triad_value_counts_gt_1 \
 		--no-authenticate \
 		--field env_triad_value \
-		--min-length 3 # < 1 minute
+		--min-length 3 # < 1 minute # FAILS IF BIOPORTAL KEY NOT IN local/.env # works best if expanded_envo_po_lexical_index.yaml present
 	time $(MONGO_COMMAND) --host $(MONGO_HOST) --port $(MONGO_PORT) $(MONGO_DB) --quiet --eval \
 		'db.biosamples_env_triad_value_counts_gt_1.createIndex({ "components.label": 1, "components.label_digits_only": 1, "components.label_length": 1, "count": 1 })'  # fast
 	date && time mongosh ncbi_metadata mongo-js/aggregate_env_triad_label_components.js && date # fast
 	time $(MONGO_COMMAND) --host $(MONGO_HOST) --port $(MONGO_PORT) $(MONGO_DB) --quiet --eval \
 		'db.env_triad_component_labels.createIndex({label_digits_only: 1, label_length: 1})'
 	date && time poetry run python external_metadata_awareness/new_env_triad_oak_annotator.py && date # 3 minutes, local, non-web API
-	date && time poetry run python external_metadata_awareness/new_env_triad_ols_annotator.py && date # 7 minutes, running mostly off of cache
+	date && time poetry run python external_metadata_awareness/new_env_triad_ols_annotator.py && date # 7 minutes, running mostly off of cache; 7 hours without cache
 	time $(MONGO_COMMAND) --host $(MONGO_HOST) --port $(MONGO_PORT) $(MONGO_DB) --quiet --eval \
 		'db.biosamples_env_triad_value_counts_gt_1.createIndex({ "components.curie_uc": 1, "count": 1 })'
 	date && time mongosh ncbi_metadata mongo-js/aggregate_env_triad_curies.js && date
@@ -50,7 +57,7 @@ env-triads: # depends on biosamples_flattened, created from the biosamples colle
 	date && time poetry run python external_metadata_awareness/new_check_semsql_curies.py && date
 	time $(MONGO_COMMAND) --host $(MONGO_HOST) --port $(MONGO_PORT) $(MONGO_DB) --quiet --eval \
 		'db.env_triad_component_curies_uc.createIndex({ prefix_uc: 1, curie_uc: 1 })'
-	date && time poetry run python external_metadata_awareness/new_bioportal_curie_mapper.py && date # 2 minutes, mostly running off of cache
+	date && time poetry run python external_metadata_awareness/new_bioportal_curie_mapper.py && date # 2 minutes, mostly running off of cache; 13 minutes without cache
 	$(RUN) python external_metadata_awareness/populate_env_triads_collection.py # creates its own indices # 30 minutes + 6 for indexing
 
 # todo run populate_env_triads_collection with --no-recreate-indices ?
