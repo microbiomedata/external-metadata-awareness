@@ -1,112 +1,112 @@
 value	count	UCUM	notes
-milligram per liter	54	mg/L
-parts per million	29	[ppm]
-micromole per liter	26	umol/L
-degree Celsius	20	Cel
-gram	20	g
-meter	15	m
-mole per liter	15	mol/L
-percentage	11	%
-microgram per liter	11	ug/L
-kilogram	7	kg
-square meter	7	m2
-percent	6	%
-gram per liter	6	g/L
-centimeter	5	cm
-days	5	d
-millimeter	5	mm
-milliliter	4	mL
-microgram	4	ug
-micrometer	4	um
-year	3	a
-days (from hours or days)	3	d
-hour	3	h
-Hours (from hours or days)	3	h
-joule per degree Celsius	3	J/Cel
-gram per cubic meter	3	kg/m3
+milligram per liter	54	mg/L	
+parts per million	29	[ppm]	
+micromole per liter	26	umol/L	
+degree Celsius	20	Cel	
+gram	20	g	
+meter	15	m	
+mole per liter	15	mol/L	
+percentage	11	%	
+microgram per liter	11	ug/L	
+kilogram	7	kg	
+square meter	7	m2	
+percent	6	%	
+gram per liter	6	g/L	
+centimeter	5	cm	
+days	5	d	
+millimeter	5	mm	
+milliliter	4	mL	
+microgram	4	ug	
+micrometer	4	um	
+year	3	a	
+days (from hours or days)	3	d	
+hour	3	h	
+Hours (from hours or days)	3	h	
+joule per degree Celsius	3	J/Cel	
+gram per cubic meter	3	kg/m3	
 lux	3	lx	amount_light, light_intensity, light_regm, BUT NOT inside_lux. Validates against https://ucum.nlm.nih.gov/ucum-lhc/demo.html.
-milligram per cubic meter per day	3	mg/m3/d
-micromole per kilogram	3	umol/kg
-atmosphere	2	atm
-day	2	d
-gram of air	2	g{air}
-kilogram of air	2	kg{air}
-meter per second	2	m/s
-cubic meter per day	2	m3/d
-milligram	2	mg
-milligram per cubic meter	2	mg/m3
-millimeter mercury	2	mm[Hg]
-milliSiemens per centimeter	2	mS/cm
-nanogram per liter	2	ng/L
-microgram per gram	2	ug/g
-microgram per cubic meter	2	ug/m3
+milligram per cubic meter per day	3	mg/m3/d	
+micromole per kilogram	3	umol/kg	
+atmosphere	2	atm	
+day	2	d	
+gram of air	2	g{air}	
+kilogram of air	2	kg{air}	
+meter per second	2	m/s	
+cubic meter per day	2	m3/d	
+milligram	2	mg	
+milligram per cubic meter	2	mg/m3	
+millimeter mercury	2	mm[Hg]	
+milliSiemens per centimeter	2	mS/cm	
+nanogram per liter	2	ng/L	
+microgram per gram	2	ug/g	
+microgram per cubic meter	2	ug/m3	
 ton	2		biomass, microbial_biomass (ambiguous: [ston_av] validates against https://ucum.nlm.nih.gov/ucum-lhc/demo.html. t appears in TableOfExampleUcumCodesForElectronicMessagingwithPreface.pdf for ‘metric ton’)
-square feet	1	[ft_i]2
-cubic feet	1	[ft_i]3
-inch	1	[in_i]
-pound	1	[lb_av]
-parts per billion	1	[ppb]
-part per million	1	[ppm]
-beats per minute	1	{beats}/min
-number of cells per gram (from number of cells per gram (or ml or cm^2))	1	{cells}/gm
-number of cells per ml (from number of cells per gram (or ml or cm^2))	1	{cells}/mL
+square feet	1	[ft_i]2	
+cubic feet	1	[ft_i]3	
+inch	1	[in_i]	
+pound	1	[lb_av]	
+parts per billion	1	[ppb]	
+part per million	1	[ppm]	
+beats per minute	1	{beats}/min	
+number of cells per gram (from number of cells per gram (or ml or cm^2))	1	{cells}/gm	
+number of cells per ml (from number of cells per gram (or ml or cm^2))	1	{cells}/mL	
 degrees API	1	{degrees_API}	api (American Petroleum Institute gravity) 10+ is heavier than water
 microEinstein per square centimeter per second	1	{microEinstein}/cm2/s	down_par (microEinstein also observed with https://github.com/microbiomedata/submission-schema/issues/162)
 microEinstein per square meter per second	1	{microEinstein}/m2/s	down_par (microEinstein also observed with https://github.com/microbiomedata/submission-schema/issues/162)
 mD	1	{milliDarcy}	permeability (millidarcy)
 practical salinity unit	1	{practical_salinity_unit}	salinity (PSU)
-per day	1	/d
-per month	1	/mo
-per week	1	/wk
-years	1	a
+per day	1	/d	
+per month	1	/mo	
+per week	1	/wk	
+years	1	a	
 angstrom	1	Ao	light_regm (validates but not in downloadable PDF or XLSX)
-square centimeter	1	cm2
-cubic centimeter per cubic centimeter (from gram per gram or cubic centimeter per cubic centimeter)	1	cm3/cm3
+square centimeter	1	cm2	
+cubic centimeter per cubic centimeter (from gram per gram or cubic centimeter per cubic centimeter)	1	cm3/cm3	
 dpi	1	d{post_inoculation}	study_timecourse (days post inoculation)
-degree	1	deg
-degrees (from degrees or cardinal direction)	1	deg
-ergs per square centimeter per second	1	erg/cm2/s
-g	1	g
-gram (from milligram or gram)	1	g
-grams	1	g
-gram Carbon per kilogram sample material	1	g{carbon}/kg{sample_material}
-gram per cubic centimeter	1	g/cm3
-gram per gram	1	g/g
-gram per gram (from gram per gram or cubic centimeter per cubic centimeter)	1	g/g
-gram per kilogram soil	1	g/kg{soil}
-gram per square meter	1	g/m2
-gram per square meter per day	1	g/m2/d
-gray	1	Gy
-hours	1	h
-kilogram per kilogram	1	kg/kg
-kilogram per metre square	1	kg/m2
-kilogram per square meter	1	kg/m2
-kilopascal	1	kPa
-kilowatt per square metre	1	kW/m2
-kilowatts per square meter per day	1	kW/m2/d
-liter	1	L
-liter per hour	1	L/h
-liters per second	1	L/s
-lumens per square meter	1	lm/m2
-meter per square second	1	m/s2
-cubic meter	1	m3
-cubic meter per minute	1	m3/min
-cubic meter per second	1	m3/s
-millibar	1	mbar
-milliequivalent per liter	1	mEq/L
-milligram (from milligram or gram)	1	mg
-milligram per kilogram	1	mg/kg
-millimeter per year	1	mm/a
-mol per liter per hour	1	mol/l/h
-mol m-2 s-1	1	mol/m2/s
-millivolt	1	mV
-nanometer	1	nm
+degree	1	deg	
+degrees (from degrees or cardinal direction)	1	deg	
+ergs per square centimeter per second	1	erg/cm2/s	
+g	1	g	
+gram (from milligram or gram)	1	g	
+grams	1	g	
+gram Carbon per kilogram sample material	1	g{carbon}/kg{sample_material}	
+gram per cubic centimeter	1	g/cm3	
+gram per gram	1	g/g	
+gram per gram (from gram per gram or cubic centimeter per cubic centimeter)	1	g/g	
+gram per kilogram soil	1	g/kg{soil}	
+gram per square meter	1	g/m2	
+gram per square meter per day	1	g/m2/d	
+gray	1	Gy	
+hours	1	h	
+kilogram per kilogram	1	kg/kg	
+kilogram per metre square	1	kg/m2	
+kilogram per square meter	1	kg/m2	
+kilopascal	1	kPa	
+kilowatt per square metre	1	kW/m2	
+kilowatts per square meter per day	1	kW/m2/d	
+liter	1	L	
+liter per hour	1	L/h	
+liters per second	1	L/s	
+lumens per square meter	1	lm/m2	
+meter per square second	1	m/s2	
+cubic meter	1	m3	
+cubic meter per minute	1	m3/min	
+cubic meter per second	1	m3/s	
+millibar	1	mbar	
+milliequivalent per liter	1	mEq/L	
+milligram (from milligram or gram)	1	mg	
+milligram per kilogram	1	mg/kg	
+millimeter per year	1	mm/a	
+mol per liter per hour	1	mol/l/h	
+mol m-2 s-1	1	mol/m2/s	
+millivolt	1	mV	
+nanometer	1	nm	
 rad	1	RAD	radiation_regm
-microliter	1	uL
-micromole oxygen per liter per hour	1	umol{oxygen}/L/h
-mole per liter per hour	1	umol/L/h
-volts	1	V
-weeks	1	wk
+microliter	1	uL	
+micromole oxygen per liter per hour	1	umol{oxygen}/L/h	
+mole per liter per hour	1	umol/L/h	
+volts	1	V	
+weeks	1	wk	
 cP at degree Celsius	1		viscosity (not a single measurement)
 knots	1		water_current. {knot} or {nautical_mile}?
 cardinal direction (from degrees or cardinal direction)	1		wind_direction (cardinal direction like N, S, SW) are not measurements
