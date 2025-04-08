@@ -1,0 +1,114 @@
+value	or	count	UCUM	notes
+milligram per liter	FALSE	54	mg/L	
+parts per million	FALSE	29	[ppm]	
+micromole per liter	FALSE	26	umol/L	
+degree Celsius	FALSE	20	Cel	
+gram	FALSE	20	g	
+meter	FALSE	15	m	
+mole per liter	FALSE	15	mol/L	
+percentage	FALSE	11	%	
+microgram per liter	FALSE	11	ug/L	
+kilogram	FALSE	7	kg	
+square meter	FALSE	7	m2	
+percent	FALSE	6	%	
+gram per liter	FALSE	6	g/L	
+centimeter	FALSE	5	cm	
+days	FALSE	5	d	
+millimeter	FALSE	5	mm	
+milliliter	FALSE	4	mL	
+microgram	FALSE	4	ug	
+micrometer	FALSE	4	um	
+year	FALSE	3	a	
+days (from hours or days)	TRUE	3	d	
+hour	FALSE	3	h	
+Hours (from hours or days)	TRUE	3	h	
+joule per degree Celsius	FALSE	3	J/Cel	
+gram per cubic meter	FALSE	3	kg/m3	
+lux	FALSE	3	lx	amount_light, light_intensity, light_regm, BUT NOT inside_lux. Validates against https://ucum.nlm.nih.gov/ucum-lhc/demo.html.
+milligram per cubic meter per day	FALSE	3	mg/m3/d	
+micromole per kilogram	FALSE	3	umol/kg	
+atmosphere	FALSE	2	atm	
+day	FALSE	2	d	
+gram of air	FALSE	2	g{air}	
+kilogram of air	FALSE	2	kg{air}	
+meter per second	FALSE	2	m/s	
+cubic meter per day	FALSE	2	m3/d	
+milligram	FALSE	2	mg	
+milligram per cubic meter	FALSE	2	mg/m3	
+millimeter mercury	FALSE	2	mm[Hg] 	
+milliSiemens per centimeter	FALSE	2	mS/cm	
+nanogram per liter	FALSE	2	ng/L	
+microgram per gram	FALSE	2	ug/g	
+microgram per cubic meter	FALSE	2	ug/m3	
+ton	FALSE	2		biomass, microbial_biomass (ambiguous: [ston_av] validates against https://ucum.nlm.nih.gov/ucum-lhc/demo.html. t appears in TableOfExampleUcumCodesForElectronicMessagingwithPreface.pdf for ‘metric ton’)
+square feet	FALSE	1	[ft_i]2	
+cubic feet	FALSE	1	[ft_i]3	
+inch	FALSE	1	[in_i]	
+pound	FALSE	1	[lb_av]	
+parts per billion	FALSE	1	[ppb]	
+part per million	FALSE	1	[ppm]	
+beats per minute	FALSE	1	{beats}/min	
+number of cells per gram (from number of cells per gram (or ml or cm^2))	TRUE	1	{cells}/gm	
+number of cells per ml (from number of cells per gram (or ml or cm^2))	TRUE	1	{cells}/mL	
+degrees API	FALSE	1	{degrees_API}	api (American Petroleum Institute gravity) 10+ is heavier than water
+microEinstein per square centimeter per second	FALSE	1	{microEinstein}/cm2/s	down_par (microEinstein also observed with https://github.com/microbiomedata/submission-schema/issues/162)
+microEinstein per square meter per second	FALSE	1	{microEinstein}/m2/s	down_par (microEinstein also observed with https://github.com/microbiomedata/submission-schema/issues/162)
+mD	FALSE	1	{milliDarcy}	permeability (millidarcy)
+practical salinity unit	FALSE	1	{practical_salinity_unit}	salinity (PSU)
+per day	FALSE	1	/d	
+per month	FALSE	1	/mo	
+per week	FALSE	1	/wk	
+years	FALSE	1	a	
+angstrom	FALSE	1	Ao	light_regm (validates but not in downloadable PDF or XLSX)
+square centimeter	FALSE	1	cm2	
+cubic centimeter per cubic centimeter (from gram per gram or cubic centimeter per cubic centimeter)	TRUE	1	cm3/cm3	
+dpi	FALSE	1	d{post_inoculation}	study_timecourse (days post inoculation)
+degree	FALSE	1	deg	
+degrees (from degrees or cardinal direction)	TRUE	1	deg	
+ergs per square centimeter per second	FALSE	1	erg/cm2/s	
+g	FALSE	1	g	
+gram (from milligram or gram)	TRUE	1	g	
+grams	FALSE	1	g	
+gram Carbon per kilogram sample material	FALSE	1	g{carbon}/kg{sample_material}	
+gram per cubic centimeter	FALSE	1	g/cm3	
+gram per gram	FALSE	1	g/g	
+gram per gram (from gram per gram or cubic centimeter per cubic centimeter)	TRUE	1	g/g	
+gram per kilogram soil	FALSE	1	g/kg{soil}	
+gram per square meter	FALSE	1	g/m2	
+gram per square meter per day	FALSE	1	g/m2/d	
+gray	FALSE	1	Gy	
+hours	FALSE	1	h	
+kilogram per kilogram	FALSE	1	kg/kg	
+kilogram per metre square	FALSE	1	kg/m2	
+kilogram per square meter	FALSE	1	kg/m2	
+kilopascal	FALSE	1	kPa	
+kilowatt per square metre	FALSE	1	kW/m2	
+kilowatts per square meter per day	FALSE	1	kW/m2/d	
+liter	FALSE	1	L	
+liter per hour	FALSE	1	L/h	
+liters per second	FALSE	1	L/s	
+lumens per square meter	FALSE	1	lm/m2	
+meter per square second	FALSE	1	m/s2	
+cubic meter	FALSE	1	m3	
+cubic meter per minute	FALSE	1	m3/min	
+cubic meter per second	FALSE	1	m3/s	
+millibar	FALSE	1	mbar	
+milliequivalent per liter	FALSE	1	mEq/L	
+milligram (from milligram or gram)	TRUE	1	mg	
+milligram per kilogram	FALSE	1	mg/kg	
+millimeter per year	FALSE	1	mm/a	
+mol per liter per hour	FALSE	1	mol/l/h	
+mol m-2 s-1	FALSE	1	mol/m2/s	
+millivolt	FALSE	1	mV	
+nanometer	FALSE	1	nm	
+rad	FALSE	1	RAD	radiation_regm
+microliter	FALSE	1	uL	
+micromole oxygen per liter per hour	FALSE	1	umol{oxygen}/L/h	
+mole per liter per hour	FALSE	1	umol/L/h	
+volts	FALSE	1	V	
+weeks	FALSE	1	wk	
+cP at degree Celsius	FALSE	1		viscosity (not a single measurement)
+knots	FALSE	1		water_current. {knot} or {nautical_mile}?
+cardinal direction (from degrees or cardinal direction)	TRUE	1		wind_direction (cardinal direction like N, S, SW) are not measurements
+number of photons per second per unit area	FALSE	1		photon_flux (ambiguous: “per unit area” is not specified as a unit)
+number of cells per cm^2 (from number of cells per gram (or ml or cm^2))	TRUE	1	{cells}/cm2	org_count_qpcr_info
