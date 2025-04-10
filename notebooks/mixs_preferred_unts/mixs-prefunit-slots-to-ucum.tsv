@@ -1,0 +1,1210 @@
+class	slot	annotation_Preferred_unit	prefunit_count	exploded_prefunit	exploded_count	annotation_times_explosion_count	ucum	notes	slots	example
+Agriculture	agrochem_addition	gram, mole per liter, milligram per liter	13	gram	10	130	g			
+Agriculture	agrochem_addition	gram, mole per liter, milligram per liter	13	mole per liter	7	91	mol/h			
+Agriculture	agrochem_addition	gram, mole per liter, milligram per liter	13	milligram per liter	15	195	mg/L			
+Agriculture	annual_precpt	millimeter	6	millimeter	2	12	mm			
+Agriculture	annual_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+Agriculture	crop_yield	kilogram per metre square	2	kilogram per metre square	1	2	kg/m2			
+Agriculture	depth	meter	72	meter	3	216	m			
+Agriculture	elev	meter	72	meter	3	216	m			
+Agriculture	farm_equip_san	parts per million	6	parts per million	11	66	[ppm]			
+Agriculture	fungicide_regm	gram, mole per liter, milligram per liter	13	gram	10	130	g			
+Agriculture	fungicide_regm	gram, mole per liter, milligram per liter	13	mole per liter	7	91	mol/h			
+Agriculture	fungicide_regm	gram, mole per liter, milligram per liter	13	milligram per liter	15	195	mg/L			
+Agriculture	gaseous_environment	micromole per liter	24	micromole per liter	8	192	umol/L			
+Agriculture	herbicide_regm	gram, mole per liter, milligram per liter	13	gram	10	130	g			
+Agriculture	herbicide_regm	gram, mole per liter, milligram per liter	13	mole per liter	7	91	mol/h			
+Agriculture	herbicide_regm	gram, mole per liter, milligram per liter	13	milligram per liter	15	195	mg/L			
+Agriculture	host_age	year, day, hour	11	year	2	22	a	!		
+Agriculture	host_age	year, day, hour	11	day	1	11	d			
+Agriculture	host_age	year, day, hour	11	hour	2	22	h			
+Agriculture	host_dry_mass	kilogram, gram	17	kilogram	4	68	kg			
+Agriculture	host_dry_mass	kilogram, gram	17	gram	10	170	g			
+Agriculture	host_height	centimeter, millimeter, meter	15	centimeter	2	30	cm			
+Agriculture	host_height	centimeter, millimeter, meter	15	millimeter	2	30	mm			
+Agriculture	host_height	centimeter, millimeter, meter	15	meter	3	45	m			
+Agriculture	host_length	centimeter, millimeter, meter	15	centimeter	2	30	cm			
+Agriculture	host_length	centimeter, millimeter, meter	15	millimeter	2	30	mm			
+Agriculture	host_length	centimeter, millimeter, meter	15	meter	3	45	m			
+Agriculture	host_tot_mass	kilogram, gram	17	kilogram	4	68	kg			
+Agriculture	host_tot_mass	kilogram, gram	17	gram	10	170	g			
+Agriculture	microbial_biomass	ton, kilogram, gram per kilogram soil	2	ton	2	4		Imperial = [ston_av]; Metric = t	biomass|microbial_biomass	
+Agriculture	microbial_biomass	ton, kilogram, gram per kilogram soil	2	kilogram	4	8	kg			
+Agriculture	microbial_biomass	ton, kilogram, gram per kilogram soil	2	gram per kilogram soil	1	2	g/kg{soil}			
+Agriculture	non_min_nutr_regm	gram, mole per liter, milligram per liter	13	gram	10	130	g			
+Agriculture	non_min_nutr_regm	gram, mole per liter, milligram per liter	13	mole per liter	7	91	mol/h			
+Agriculture	non_min_nutr_regm	gram, mole per liter, milligram per liter	13	milligram per liter	15	195	mg/L			
+Agriculture	pesticide_regm	gram, mole per liter, milligram per liter	13	gram	10	130	g			
+Agriculture	pesticide_regm	gram, mole per liter, milligram per liter	13	mole per liter	7	91	mol/h			
+Agriculture	pesticide_regm	gram, mole per liter, milligram per liter	13	milligram per liter	15	195	mg/L			
+Agriculture	photosynt_activ	mol m-2 s-1	1	mol m-2 s-1	1	1	mol/m2/s			
+Agriculture	pool_dna_extracts	gram, milliliter, microliter	5	gram	10	50	g			
+Agriculture	pool_dna_extracts	gram, milliliter, microliter	5	milliliter	4	20	mL			
+Agriculture	pool_dna_extracts	gram, milliliter, microliter	5	microliter	1	5	uL			
+Agriculture	porosity	percentage	13	percentage	2	26	%			
+Agriculture	root_med_carbon	milligram per liter	26	milligram per liter	15	390	mg/L			
+Agriculture	root_med_macronutr	milligram per liter	26	milligram per liter	15	390	mg/L			
+Agriculture	salt_regm	gram, microgram, mole per liter, gram per liter	2	gram	10	20	g			
+Agriculture	salt_regm	gram, microgram, mole per liter, gram per liter	2	microgram	3	6	ug			
+Agriculture	salt_regm	gram, microgram, mole per liter, gram per liter	2	mole per liter	7	14	mol/h			
+Agriculture	salt_regm	gram, microgram, mole per liter, gram per liter	2	gram per liter	4	8	g/L			
+Agriculture	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+Agriculture	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+Agriculture	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+Agriculture	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+Agriculture	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+Agriculture	season_precpt	millimeter	6	millimeter	2	12	mm			
+Agriculture	season_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+Agriculture	size_frac_low	micrometer	7	micrometer	2	14	um			
+Agriculture	size_frac_up	micrometer	7	micrometer	2	14	um			
+Agriculture	slope_aspect	degree	2	degree	1	2	deg		slope_aspect	
+Agriculture	slope_gradient	percentage	13	percentage	2	26	%			
+Agriculture	soil_conductivity	milliSiemens per centimeter	4	milliSiemens per centimeter	1	4	mS/cm			
+Agriculture	soil_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+Agriculture	solar_irradiance	kilowatts per square meter per day, ergs per square centimeter per second	3	kilowatts per square meter per day	1	3	kW/m2/d			
+Agriculture	solar_irradiance	kilowatts per square meter per day, ergs per square centimeter per second	3	ergs per square centimeter per second	1	3	erg/cm2/s			
+Agriculture	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+Agriculture	tot_org_carb	gram Carbon per kilogram sample material	5	gram Carbon per kilogram sample material	1	5	g{Carbon}/kg{sample_material}			
+Agriculture	tot_phosphate	microgram per liter, micromole per liter	5	microgram per liter	6	30	ug/L			
+Agriculture	tot_phosphate	microgram per liter, micromole per liter	5	micromole per liter	8	40	umol/L			
+Agriculture	water_temp_regm	degree Celsius	88	degree Celsius	2	176	Cel			
+Agriculture	watering_regm	milliliter, liter	2	milliliter	4	8	mL			
+Agriculture	watering_regm	milliliter, liter	2	liter	1	2	L			
+Air	alt	meter	72	meter	3	216	m			
+Air	barometric_press	millibar	1	millibar	1	1	mbar			
+Air	carb_dioxide	micromole per liter, parts per million	3	micromole per liter	8	24	umol/L			
+Air	carb_dioxide	micromole per liter, parts per million	3	parts per million	11	33	[ppm]			
+Air	carb_monoxide	micromole per liter, parts per million	3	micromole per liter	8	24	umol/L			
+Air	carb_monoxide	micromole per liter, parts per million	3	parts per million	11	33	[ppm]			
+Air	elev	meter	72	meter	3	216	m			
+Air	methane	micromole per liter, parts per billion, parts per million	3	micromole per liter	8	24	umol/L			
+Air	methane	micromole per liter, parts per billion, parts per million	3	parts per billion	1	3	[ppb]			
+Air	methane	micromole per liter, parts per billion, parts per million	3	parts per million	11	33	[ppm]			
+Air	oxygen	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+Air	oxygen	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+Air	pollutants	gram, mole per liter, milligram per liter, microgram per cubic meter	1	gram	10	10	g			
+Air	pollutants	gram, mole per liter, milligram per liter, microgram per cubic meter	1	mole per liter	7	7	mol/h			
+Air	pollutants	gram, mole per liter, milligram per liter, microgram per cubic meter	1	milligram per liter	15	15	mg/L			
+Air	pollutants	gram, mole per liter, milligram per liter, microgram per cubic meter	1	microgram per cubic meter	2	2	ug/m3			
+Air	salinity	practical salinity unit, percentage	17	practical salinity unit	1	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+Air	salinity	practical salinity unit, percentage	17	percentage	2	34	%			
+Air	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+Air	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+Air	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+Air	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+Air	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+Air	solar_irradiance	kilowatts per square meter per day, ergs per square centimeter per second	3	kilowatts per square meter per day	1	3	kW/m2/d			
+Air	solar_irradiance	kilowatts per square meter per day, ergs per square centimeter per second	3	ergs per square centimeter per second	1	3	erg/cm2/s			
+Air	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+Air	ventilation_rate	cubic meter per minute, liters per second	2	cubic meter per minute	1	2	m3/min			
+Air	ventilation_rate	cubic meter per minute, liters per second	2	liters per second	1	2	L/s			
+Air	volatile_org_comp	microgram per cubic meter, parts per million, nanogram per liter	1	microgram per cubic meter	2	2	ug/m3			
+Air	volatile_org_comp	microgram per cubic meter, parts per million, nanogram per liter	1	parts per million	11	11	[ppm]			
+Air	volatile_org_comp	microgram per cubic meter, parts per million, nanogram per liter	1	nanogram per liter	2	2	ng/L			
+Air	wind_direction	degrees or cardinal direction	2	degrees	1	2	deg	also mentioned in org_count_qpcr_info and pcr_cond	wind_direction	
+Air	wind_direction	degrees or cardinal direction	2	cardinal direction	1	2		cardinal directions are N, NE, E, etc. Example is compound and should be split.	wind_direction	0 degrees; Northwest
+BuiltEnvironment	abs_air_humidity	gram per gram, kilogram per kilogram, kilogram, pound	1	gram per gram	2	2	g/g			
+BuiltEnvironment	abs_air_humidity	gram per gram, kilogram per kilogram, kilogram, pound	1	kilogram per kilogram	1	1	kg/kg			
+BuiltEnvironment	abs_air_humidity	gram per gram, kilogram per kilogram, kilogram, pound	1	kilogram	4	4	kg			
+BuiltEnvironment	abs_air_humidity	gram per gram, kilogram per kilogram, kilogram, pound	1	pound	1	1	[lb_av]			
+BuiltEnvironment	air_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+BuiltEnvironment	amount_light	lux, lumens per square meter	1	lux	3	3	lx			
+BuiltEnvironment	amount_light	lux, lumens per square meter	1	lumens per square meter	1	1	lm/m2			
+BuiltEnvironment	avg_dew_point	degree Celsius	88	degree Celsius	2	176	Cel			
+BuiltEnvironment	avg_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+BuiltEnvironment	built_struc_age	year	1	year	2	2	a	!		
+BuiltEnvironment	carb_dioxide	micromole per liter, parts per million	3	micromole per liter	8	24	umol/L			
+BuiltEnvironment	carb_dioxide	micromole per liter, parts per million	3	parts per million	11	33	[ppm]			
+BuiltEnvironment	ceil_area	square meter	6	square meter	2	12	m2			
+BuiltEnvironment	ceil_thermal_mass	joule per degree Celsius	3	joule per degree Celsius	1	3		https://ucum.nlm.nih.gov/ucum-lhc/demo.html says J/Cel is an Attempt to divide by non-ratio unit degree Celsius	ceil_thermal_mass|floor_thermal_mass|wall_thermal_mass	
+BuiltEnvironment	dew_point	degree Celsius	88	degree Celsius	2	176	Cel			
+BuiltEnvironment	door_size	square meter	6	square meter	2	12	m2			
+BuiltEnvironment	exp_duct	square meter	6	square meter	2	12	m2			
+BuiltEnvironment	floor_age	years, weeks, days	1	years	1	1	a	!		
+BuiltEnvironment	floor_age	years, weeks, days	1	weeks	1	1	wk			
+BuiltEnvironment	floor_age	years, weeks, days	1	days	4	4	d			
+BuiltEnvironment	floor_area	square meter	6	square meter	2	12	m2			
+BuiltEnvironment	floor_thermal_mass	joule per degree Celsius	3	joule per degree Celsius	1	3		https://ucum.nlm.nih.gov/ucum-lhc/demo.html says J/Cel is an Attempt to divide by non-ratio unit degree Celsius	ceil_thermal_mass|floor_thermal_mass|wall_thermal_mass	
+BuiltEnvironment	height_carper_fiber	centimeter	3	centimeter	2	6	cm			
+BuiltEnvironment	inside_lux	kilowatt per square metre	1	kilowatt per square metre	1	1	kW/m2			
+BuiltEnvironment	rel_air_humidity	percentage	13	percentage	2	26	%			
+BuiltEnvironment	rel_humidity_out	gram of air, kilogram of air	2	gram of air	1	2	g{air}			
+BuiltEnvironment	rel_humidity_out	gram of air, kilogram of air	2	kilogram of air	1	2	kg{air}			
+BuiltEnvironment	room_air_exch_rate	liter per hour	1	liter per hour	1	1	L/h			
+BuiltEnvironment	room_dim	meter	72	meter	3	216	m			
+BuiltEnvironment	room_door_dist	meter	72	meter	3	216	m			
+BuiltEnvironment	room_net_area	square feet, square meter	1	square feet	1	1	[ft_i]2			
+BuiltEnvironment	room_net_area	square feet, square meter	1	square meter	2	2	m2			
+BuiltEnvironment	room_vol	cubic feet, cubic meter	1	cubic feet	1	1	[ft_i]3			
+BuiltEnvironment	room_vol	cubic feet, cubic meter	1	cubic meter	1	1	m3			
+BuiltEnvironment	samp_time_out	hour	1	hour	2	2	h			
+BuiltEnvironment	specific_humidity	gram of air, kilogram of air	2	gram of air	1	2	g{air}			
+BuiltEnvironment	specific_humidity	gram of air, kilogram of air	2	kilogram of air	1	2	kg{air}			
+BuiltEnvironment	surf_humidity	percentage	13	percentage	2	26	%			
+BuiltEnvironment	surf_moisture	parts per million, gram per cubic meter, gram per square meter	1	parts per million	11	11	[ppm]			
+BuiltEnvironment	surf_moisture	parts per million, gram per cubic meter, gram per square meter	1	gram per cubic meter	3	3	g/m3			
+BuiltEnvironment	surf_moisture	parts per million, gram per cubic meter, gram per square meter	1	gram per square meter	1	1	g/m2			
+BuiltEnvironment	surf_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+BuiltEnvironment	temp_out	degree Celsius	88	degree Celsius	2	176	Cel			
+BuiltEnvironment	wall_area	square meter	6	square meter	2	12	m2			
+BuiltEnvironment	wall_height	centimeter	3	centimeter	2	6	cm			
+BuiltEnvironment	wall_thermal_mass	joule per degree Celsius	3	joule per degree Celsius	1	3		https://ucum.nlm.nih.gov/ucum-lhc/demo.html says J/Cel is an Attempt to divide by non-ratio unit degree Celsius	ceil_thermal_mass|floor_thermal_mass|wall_thermal_mass	
+BuiltEnvironment	water_feat_size	square meter	6	square meter	2	12	m2			
+BuiltEnvironment	window_size	inch, meter	1	inch	1	1	[in_i]			
+BuiltEnvironment	window_size	inch, meter	1	meter	3	3	m			
+FoodAnimalAndAnimalFeed	bacterial_density	colony forming units per milliliter; colony forming units per gram of dry weight	7	colony forming units per milliliter	1	7	[CFU]/mL			
+FoodAnimalAndAnimalFeed	bacterial_density	colony forming units per milliliter; colony forming units per gram of dry weight	7	colony forming units per gram of dry weight	1	7	[CFU]/g{dry_weight}			
+FoodAnimalAndAnimalFeed	cons_food_stor_dur	hours or days	9	hours	2	18	h			
+FoodAnimalAndAnimalFeed	cons_food_stor_dur	hours or days	9	days	4	36	d			
+FoodAnimalAndAnimalFeed	cons_food_stor_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodAnimalAndAnimalFeed	food_pack_capacity	grams	3	grams	1	3	g			
+FoodAnimalAndAnimalFeed	food_source_age	days	5	days	4	20	d			
+FoodAnimalAndAnimalFeed	pool_dna_extracts	gram, milliliter, microliter	5	gram	10	50	g			
+FoodAnimalAndAnimalFeed	pool_dna_extracts	gram, milliliter, microliter	5	milliliter	4	20	mL			
+FoodAnimalAndAnimalFeed	pool_dna_extracts	gram, milliliter, microliter	5	microliter	1	5	uL			
+FoodAnimalAndAnimalFeed	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodAnimalAndAnimalFeed	samp_transport_dur	days	5	days	4	20	d			
+FoodAnimalAndAnimalFeed	samp_transport_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodAnimalAndAnimalFeed	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+FoodAnimalAndAnimalFeed	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+FoodAnimalAndAnimalFeed	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+FoodAnimalAndAnimalFeed	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+FoodAnimalAndAnimalFeed	spikein_count	colony forming units per milliliter; colony forming units per gram of dry weight	7	colony forming units per milliliter	1	7	[CFU]/mL			
+FoodAnimalAndAnimalFeed	spikein_count	colony forming units per milliliter; colony forming units per gram of dry weight	7	colony forming units per gram of dry weight	1	7	[CFU]/g{dry_weight}			
+FoodAnimalAndAnimalFeed	study_inc_dur	hours or days	9	hours	2	18	h			
+FoodAnimalAndAnimalFeed	study_inc_dur	hours or days	9	days	4	36	d			
+FoodAnimalAndAnimalFeed	study_inc_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodAnimalAndAnimalFeed	study_timecourse	dpi	3	dpi	1	3	d{post_infection}		study_timecourse	2 days post inoculation
+FoodAnimalAndAnimalFeed	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodAnimalAndAnimalFeed	timepoint	hours or days	9	hours	2	18	h			
+FoodAnimalAndAnimalFeed	timepoint	hours or days	9	days	4	36	d			
+FoodFarmEnvironment	conduc	milliSiemens per centimeter	4	milliSiemens per centimeter	1	4	mS/cm			
+FoodFarmEnvironment	crop_yield	kilogram per metre square	2	kilogram per metre square	1	2	kg/m2			
+FoodFarmEnvironment	depth	meter	72	meter	3	216	m			
+FoodFarmEnvironment	farm_equip_san	parts per million	6	parts per million	11	66	[ppm]			
+FoodFarmEnvironment	host_age	year, day, hour	11	year	2	22	a	!		
+FoodFarmEnvironment	host_age	year, day, hour	11	day	1	11	d			
+FoodFarmEnvironment	host_age	year, day, hour	11	hour	2	22	h			
+FoodFarmEnvironment	host_dry_mass	kilogram, gram	17	kilogram	4	68	kg			
+FoodFarmEnvironment	host_dry_mass	kilogram, gram	17	gram	10	170	g			
+FoodFarmEnvironment	host_height	centimeter, millimeter, meter	15	centimeter	2	30	cm			
+FoodFarmEnvironment	host_height	centimeter, millimeter, meter	15	millimeter	2	30	mm			
+FoodFarmEnvironment	host_height	centimeter, millimeter, meter	15	meter	3	45	m			
+FoodFarmEnvironment	host_length	centimeter, millimeter, meter	15	centimeter	2	30	cm			
+FoodFarmEnvironment	host_length	centimeter, millimeter, meter	15	millimeter	2	30	mm			
+FoodFarmEnvironment	host_length	centimeter, millimeter, meter	15	meter	3	45	m			
+FoodFarmEnvironment	host_tot_mass	kilogram, gram	17	kilogram	4	68	kg			
+FoodFarmEnvironment	host_tot_mass	kilogram, gram	17	gram	10	170	g			
+FoodFarmEnvironment	root_med_carbon	milligram per liter	26	milligram per liter	15	390	mg/L			
+FoodFarmEnvironment	root_med_macronutr	milligram per liter	26	milligram per liter	15	390	mg/L			
+FoodFarmEnvironment	root_med_micronutr	milligram per liter	26	milligram per liter	15	390	mg/L			
+FoodFarmEnvironment	salinity	practical salinity unit, percentage	17	practical salinity unit	1	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+FoodFarmEnvironment	salinity	practical salinity unit, percentage	17	percentage	2	34	%			
+FoodFarmEnvironment	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodFarmEnvironment	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+FoodFarmEnvironment	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+FoodFarmEnvironment	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+FoodFarmEnvironment	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+FoodFarmEnvironment	season_precpt	millimeter	6	millimeter	2	12	mm			
+FoodFarmEnvironment	season_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodFarmEnvironment	size_frac_low	micrometer	7	micrometer	2	14	um			
+FoodFarmEnvironment	size_frac_up	micrometer	7	micrometer	2	14	um			
+FoodFarmEnvironment	soil_conductivity	milliSiemens per centimeter	4	milliSiemens per centimeter	1	4	mS/cm			
+FoodFarmEnvironment	soil_porosity	percentage	13	percentage	2	26	%			
+FoodFarmEnvironment	soil_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodFarmEnvironment	solar_irradiance	kilowatts per square meter per day, ergs per square centimeter per second	3	kilowatts per square meter per day	1	3	kW/m2/d			
+FoodFarmEnvironment	solar_irradiance	kilowatts per square meter per day, ergs per square centimeter per second	3	ergs per square centimeter per second	1	3	erg/cm2/s			
+FoodFarmEnvironment	spikein_count	colony forming units per milliliter; colony forming units per gram of dry weight	7	colony forming units per milliliter	1	7	[CFU]/mL			
+FoodFarmEnvironment	spikein_count	colony forming units per milliliter; colony forming units per gram of dry weight	7	colony forming units per gram of dry weight	1	7	[CFU]/g{dry_weight}			
+FoodFarmEnvironment	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodFarmEnvironment	timepoint	hours or days	9	hours	2	18	h			
+FoodFarmEnvironment	timepoint	hours or days	9	days	4	36	d			
+FoodFarmEnvironment	tot_org_carb	gram Carbon per kilogram sample material	5	gram Carbon per kilogram sample material	1	5	g{Carbon}/kg{sample_material}			
+FoodFarmEnvironment	ventilation_rate	cubic meter per minute, liters per second	2	cubic meter per minute	1	2	m3/min			
+FoodFarmEnvironment	ventilation_rate	cubic meter per minute, liters per second	2	liters per second	1	2	L/s			
+FoodFarmEnvironment	water_frequency	per day, per week, per month	1	per day	1	1	/d			
+FoodFarmEnvironment	water_frequency	per day, per week, per month	1	per week	1	1	/wk			
+FoodFarmEnvironment	water_frequency	per day, per week, per month	1	per month	1	1	/mo			
+FoodFarmEnvironment	wind_direction	degrees or cardinal direction	2	degrees	1	2	deg	also mentioned in org_count_qpcr_info and pcr_cond	wind_direction	
+FoodFarmEnvironment	wind_direction	degrees or cardinal direction	2	cardinal direction	1	2		cardinal directions are N, NE, E, etc. Example is compound and should be split.	wind_direction	0 degrees; Northwest
+FoodFoodProductionFacility	air_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodFoodProductionFacility	area_samp_size	centimeter	3	centimeter	2	6	cm			
+FoodFoodProductionFacility	bacterial_density	colony forming units per milliliter; colony forming units per gram of dry weight	7	colony forming units per milliliter	1	7	[CFU]/mL			
+FoodFoodProductionFacility	bacterial_density	colony forming units per milliliter; colony forming units per gram of dry weight	7	colony forming units per gram of dry weight	1	7	[CFU]/g{dry_weight}			
+FoodFoodProductionFacility	food_pack_capacity	grams	3	grams	1	3	g			
+FoodFoodProductionFacility	pool_dna_extracts	gram, milliliter, microliter	5	gram	10	50	g			
+FoodFoodProductionFacility	pool_dna_extracts	gram, milliliter, microliter	5	milliliter	4	20	mL			
+FoodFoodProductionFacility	pool_dna_extracts	gram, milliliter, microliter	5	microliter	1	5	uL			
+FoodFoodProductionFacility	room_dim	meter	72	meter	3	216	m			
+FoodFoodProductionFacility	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodFoodProductionFacility	samp_transport_dur	days	5	days	4	20	d			
+FoodFoodProductionFacility	samp_transport_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodFoodProductionFacility	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+FoodFoodProductionFacility	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+FoodFoodProductionFacility	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+FoodFoodProductionFacility	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+FoodFoodProductionFacility	study_inc_dur	hours or days	9	hours	2	18	h			
+FoodFoodProductionFacility	study_inc_dur	hours or days	9	days	4	36	d			
+FoodFoodProductionFacility	study_inc_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodFoodProductionFacility	study_timecourse	dpi	3	dpi	1	3	d{post_infection}		study_timecourse	2 days post inoculation
+FoodFoodProductionFacility	timepoint	hours or days	9	hours	2	18	h			
+FoodFoodProductionFacility	timepoint	hours or days	9	days	4	36	d			
+FoodHumanFoods	bacterial_density	colony forming units per milliliter; colony forming units per gram of dry weight	7	colony forming units per milliliter	1	7	[CFU]/mL			
+FoodHumanFoods	bacterial_density	colony forming units per milliliter; colony forming units per gram of dry weight	7	colony forming units per gram of dry weight	1	7	[CFU]/g{dry_weight}			
+FoodHumanFoods	cons_food_stor_dur	hours or days	9	hours	2	18	h			
+FoodHumanFoods	cons_food_stor_dur	hours or days	9	days	4	36	d			
+FoodHumanFoods	cons_food_stor_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodHumanFoods	ferm_chem_add_perc	percentage	13	percentage	2	26	%			
+FoodHumanFoods	ferm_headspace_oxy	percentage	13	percentage	2	26	%			
+FoodHumanFoods	ferm_rel_humidity	percentage	13	percentage	2	26	%			
+FoodHumanFoods	ferm_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodHumanFoods	ferm_time	days	5	days	4	20	d			
+FoodHumanFoods	food_pack_capacity	grams	3	grams	1	3	g			
+FoodHumanFoods	microb_start_count	colony forming units per milliliter; colony forming units per gram of dry weight	7	colony forming units per milliliter	1	7	[CFU]/mL			
+FoodHumanFoods	microb_start_count	colony forming units per milliliter; colony forming units per gram of dry weight	7	colony forming units per gram of dry weight	1	7	[CFU]/g{dry_weight}			
+FoodHumanFoods	microb_start_inoc	milligram or gram	1	milligram	3	3	mg			
+FoodHumanFoods	microb_start_inoc	milligram or gram	1	gram	10	10	g			
+FoodHumanFoods	pool_dna_extracts	gram, milliliter, microliter	5	gram	10	50	g			
+FoodHumanFoods	pool_dna_extracts	gram, milliliter, microliter	5	milliliter	4	20	mL			
+FoodHumanFoods	pool_dna_extracts	gram, milliliter, microliter	5	microliter	1	5	uL			
+FoodHumanFoods	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodHumanFoods	samp_transport_dur	days	5	days	4	20	d			
+FoodHumanFoods	samp_transport_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodHumanFoods	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+FoodHumanFoods	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+FoodHumanFoods	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+FoodHumanFoods	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+FoodHumanFoods	spikein_count	colony forming units per milliliter; colony forming units per gram of dry weight	7	colony forming units per milliliter	1	7	[CFU]/mL			
+FoodHumanFoods	spikein_count	colony forming units per milliliter; colony forming units per gram of dry weight	7	colony forming units per gram of dry weight	1	7	[CFU]/g{dry_weight}			
+FoodHumanFoods	study_inc_dur	hours or days	9	hours	2	18	h			
+FoodHumanFoods	study_inc_dur	hours or days	9	days	4	36	d			
+FoodHumanFoods	study_inc_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodHumanFoods	study_timecourse	dpi	3	dpi	1	3	d{post_infection}		study_timecourse	2 days post inoculation
+FoodHumanFoods	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+FoodHumanFoods	timepoint	hours or days	9	hours	2	18	h			
+FoodHumanFoods	timepoint	hours or days	9	days	4	36	d			
+HostAssociated	alt	meter	72	meter	3	216	m			
+HostAssociated	blood_press_diast	millimeter mercury	2	millimeter mercury	1	2	mm[Hg]			
+HostAssociated	blood_press_syst	millimeter mercury	2	millimeter mercury	1	2	mm[Hg]			
+HostAssociated	depth	meter	72	meter	3	216	m			
+HostAssociated	elev	meter	72	meter	3	216	m			
+HostAssociated	host_age	year, day, hour	11	year	2	22	a	!		
+HostAssociated	host_age	year, day, hour	11	day	1	11	d			
+HostAssociated	host_age	year, day, hour	11	hour	2	22	h			
+HostAssociated	host_body_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HostAssociated	host_dry_mass	kilogram, gram	17	kilogram	4	68	kg			
+HostAssociated	host_dry_mass	kilogram, gram	17	gram	10	170	g			
+HostAssociated	host_height	centimeter, millimeter, meter	15	centimeter	2	30	cm			
+HostAssociated	host_height	centimeter, millimeter, meter	15	millimeter	2	30	mm			
+HostAssociated	host_height	centimeter, millimeter, meter	15	meter	3	45	m			
+HostAssociated	host_length	centimeter, millimeter, meter	15	centimeter	2	30	cm			
+HostAssociated	host_length	centimeter, millimeter, meter	15	millimeter	2	30	mm			
+HostAssociated	host_length	centimeter, millimeter, meter	15	meter	3	45	m			
+HostAssociated	host_tot_mass	kilogram, gram	17	kilogram	4	68	kg			
+HostAssociated	host_tot_mass	kilogram, gram	17	gram	10	170	g			
+HostAssociated	salinity	practical salinity unit, percentage	17	practical salinity unit	1	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+HostAssociated	salinity	practical salinity unit, percentage	17	percentage	2	34	%			
+HostAssociated	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HostAssociated	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+HostAssociated	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+HostAssociated	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+HostAssociated	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+HostAssociated	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HumanAssociated	host_age	year, day, hour	11	year	2	22	a	!		
+HumanAssociated	host_age	year, day, hour	11	day	1	11	d			
+HumanAssociated	host_age	year, day, hour	11	hour	2	22	h			
+HumanAssociated	host_body_mass_index	kilogram per square meter	5	kilogram per square meter	1	5	kg/m2			
+HumanAssociated	host_body_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HumanAssociated	host_height	centimeter, millimeter, meter	15	centimeter	2	30	cm			
+HumanAssociated	host_height	centimeter, millimeter, meter	15	millimeter	2	30	mm			
+HumanAssociated	host_height	centimeter, millimeter, meter	15	meter	3	45	m			
+HumanAssociated	host_pulse	beats per minute	5	beats per minute	1	5	{beats}/min			
+HumanAssociated	host_tot_mass	kilogram, gram	17	kilogram	4	68	kg			
+HumanAssociated	host_tot_mass	kilogram, gram	17	gram	10	170	g			
+HumanAssociated	salinity	practical salinity unit, percentage	17	practical salinity unit	1	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+HumanAssociated	salinity	practical salinity unit, percentage	17	percentage	2	34	%			
+HumanAssociated	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HumanAssociated	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+HumanAssociated	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+HumanAssociated	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+HumanAssociated	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+HumanAssociated	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HumanAssociated	weight_loss_3_month	kilogram, gram	17	kilogram	4	68	kg			
+HumanAssociated	weight_loss_3_month	kilogram, gram	17	gram	10	170	g			
+HumanGut	host_age	year, day, hour	11	year	2	22	a	!		
+HumanGut	host_age	year, day, hour	11	day	1	11	d			
+HumanGut	host_age	year, day, hour	11	hour	2	22	h			
+HumanGut	host_body_mass_index	kilogram per square meter	5	kilogram per square meter	1	5	kg/m2			
+HumanGut	host_body_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HumanGut	host_height	centimeter, millimeter, meter	15	centimeter	2	30	cm			
+HumanGut	host_height	centimeter, millimeter, meter	15	millimeter	2	30	mm			
+HumanGut	host_height	centimeter, millimeter, meter	15	meter	3	45	m			
+HumanGut	host_pulse	beats per minute	5	beats per minute	1	5	{beats}/min			
+HumanGut	host_tot_mass	kilogram, gram	17	kilogram	4	68	kg			
+HumanGut	host_tot_mass	kilogram, gram	17	gram	10	170	g			
+HumanGut	salinity	practical salinity unit, percentage	17	practical salinity unit	1	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+HumanGut	salinity	practical salinity unit, percentage	17	percentage	2	34	%			
+HumanGut	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HumanGut	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+HumanGut	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+HumanGut	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+HumanGut	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+HumanGut	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HumanOral	host_age	year, day, hour	11	year	2	22	a	!		
+HumanOral	host_age	year, day, hour	11	day	1	11	d			
+HumanOral	host_age	year, day, hour	11	hour	2	22	h			
+HumanOral	host_body_mass_index	kilogram per square meter	5	kilogram per square meter	1	5	kg/m2			
+HumanOral	host_body_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HumanOral	host_height	centimeter, millimeter, meter	15	centimeter	2	30	cm			
+HumanOral	host_height	centimeter, millimeter, meter	15	millimeter	2	30	mm			
+HumanOral	host_height	centimeter, millimeter, meter	15	meter	3	45	m			
+HumanOral	host_pulse	beats per minute	5	beats per minute	1	5	{beats}/min			
+HumanOral	host_tot_mass	kilogram, gram	17	kilogram	4	68	kg			
+HumanOral	host_tot_mass	kilogram, gram	17	gram	10	170	g			
+HumanOral	salinity	practical salinity unit, percentage	17	practical salinity unit	1	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+HumanOral	salinity	practical salinity unit, percentage	17	percentage	2	34	%			
+HumanOral	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HumanOral	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+HumanOral	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+HumanOral	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+HumanOral	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+HumanOral	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HumanSkin	host_age	year, day, hour	11	year	2	22	a	!		
+HumanSkin	host_age	year, day, hour	11	day	1	11	d			
+HumanSkin	host_age	year, day, hour	11	hour	2	22	h			
+HumanSkin	host_body_mass_index	kilogram per square meter	5	kilogram per square meter	1	5	kg/m2			
+HumanSkin	host_body_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HumanSkin	host_height	centimeter, millimeter, meter	15	centimeter	2	30	cm			
+HumanSkin	host_height	centimeter, millimeter, meter	15	millimeter	2	30	mm			
+HumanSkin	host_height	centimeter, millimeter, meter	15	meter	3	45	m			
+HumanSkin	host_pulse	beats per minute	5	beats per minute	1	5	{beats}/min			
+HumanSkin	host_tot_mass	kilogram, gram	17	kilogram	4	68	kg			
+HumanSkin	host_tot_mass	kilogram, gram	17	gram	10	170	g			
+HumanSkin	salinity	practical salinity unit, percentage	17	practical salinity unit	1	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+HumanSkin	salinity	practical salinity unit, percentage	17	percentage	2	34	%			
+HumanSkin	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HumanSkin	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+HumanSkin	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+HumanSkin	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+HumanSkin	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+HumanSkin	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HumanVaginal	host_age	year, day, hour	11	year	2	22	a	!		
+HumanVaginal	host_age	year, day, hour	11	day	1	11	d			
+HumanVaginal	host_age	year, day, hour	11	hour	2	22	h			
+HumanVaginal	host_body_mass_index	kilogram per square meter	5	kilogram per square meter	1	5	kg/m2			
+HumanVaginal	host_body_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HumanVaginal	host_height	centimeter, millimeter, meter	15	centimeter	2	30	cm			
+HumanVaginal	host_height	centimeter, millimeter, meter	15	millimeter	2	30	mm			
+HumanVaginal	host_height	centimeter, millimeter, meter	15	meter	3	45	m			
+HumanVaginal	host_pulse	beats per minute	5	beats per minute	1	5	{beats}/min			
+HumanVaginal	host_tot_mass	kilogram, gram	17	kilogram	4	68	kg			
+HumanVaginal	host_tot_mass	kilogram, gram	17	gram	10	170	g			
+HumanVaginal	salinity	practical salinity unit, percentage	17	practical salinity unit	1	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+HumanVaginal	salinity	practical salinity unit, percentage	17	percentage	2	34	%			
+HumanVaginal	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HumanVaginal	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+HumanVaginal	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+HumanVaginal	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+HumanVaginal	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+HumanVaginal	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HydrocarbonResourcesCores	alkalinity	milliequivalent per liter, milligram per liter	7	milliequivalent per liter	1	7	mEq/L			
+HydrocarbonResourcesCores	alkalinity	milliequivalent per liter, milligram per liter	7	milligram per liter	15	105	mg/L			
+HydrocarbonResourcesCores	ammonium	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+HydrocarbonResourcesCores	ammonium	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+HydrocarbonResourcesCores	ammonium	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+HydrocarbonResourcesCores	api	degrees API	2	degrees API	1	2	{api_gravity)	*	api	31.1 API
+HydrocarbonResourcesCores	aromatics_pc	percent	10	percent	1	10	%			
+HydrocarbonResourcesCores	asphaltenes_pc	percent	10	percent	1	10	%			
+HydrocarbonResourcesCores	benzene	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesCores	benzene	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+HydrocarbonResourcesCores	calcium	milligram per liter, micromole per liter, parts per million	6	milligram per liter	15	90	mg/L			
+HydrocarbonResourcesCores	calcium	milligram per liter, micromole per liter, parts per million	6	micromole per liter	8	48	umol/L			
+HydrocarbonResourcesCores	calcium	milligram per liter, micromole per liter, parts per million	6	parts per million	11	66	[ppm]			
+HydrocarbonResourcesCores	chloride	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesCores	chloride	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+HydrocarbonResourcesCores	density	gram per cubic meter, gram per cubic centimeter	5	gram per cubic meter	3	15	g/m3			
+HydrocarbonResourcesCores	density	gram per cubic meter, gram per cubic centimeter	5	gram per cubic centimeter	1	5	g/cm3			
+HydrocarbonResourcesCores	diss_carb_dioxide	micromole per liter, milligram per liter	11	micromole per liter	8	88	umol/L			
+HydrocarbonResourcesCores	diss_carb_dioxide	micromole per liter, milligram per liter	11	milligram per liter	15	165	mg/L			
+HydrocarbonResourcesCores	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	microgram per liter	6	36	ug/L			
+HydrocarbonResourcesCores	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	milligram per liter	15	90	mg/L			
+HydrocarbonResourcesCores	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	parts per million	11	66	[ppm]			
+HydrocarbonResourcesCores	diss_iron	milligram per liter	26	milligram per liter	15	390	mg/L			
+HydrocarbonResourcesCores	diss_org_carb	micromole per liter, milligram per liter	11	micromole per liter	8	88	umol/L			
+HydrocarbonResourcesCores	diss_org_carb	micromole per liter, milligram per liter	11	milligram per liter	15	165	mg/L			
+HydrocarbonResourcesCores	diss_oxygen_fluid	micromole per kilogram, milligram per liter	6	micromole per kilogram	2	12	umol/kg			
+HydrocarbonResourcesCores	diss_oxygen_fluid	micromole per kilogram, milligram per liter	6	milligram per liter	15	90	mg/L			
+HydrocarbonResourcesCores	elev	meter	72	meter	3	216	m			
+HydrocarbonResourcesCores	ethylbenzene	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesCores	ethylbenzene	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+HydrocarbonResourcesCores	hcr_fw_salinity	milligram per liter	26	milligram per liter	15	390	mg/L			
+HydrocarbonResourcesCores	hcr_pressure	atmosphere, kilopascal	2	atmosphere	2	4	atm			
+HydrocarbonResourcesCores	hcr_pressure	atmosphere, kilopascal	2	kilopascal	1	2	kPa			
+HydrocarbonResourcesCores	hcr_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HydrocarbonResourcesCores	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	mole per liter	7	35	mol/h			
+HydrocarbonResourcesCores	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	milligram per liter	15	75	mg/L			
+HydrocarbonResourcesCores	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	parts per million	11	55	[ppm]			
+HydrocarbonResourcesCores	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	micromole per kilogram	2	10	umol/kg			
+HydrocarbonResourcesCores	nitrate	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+HydrocarbonResourcesCores	nitrate	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+HydrocarbonResourcesCores	nitrate	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+HydrocarbonResourcesCores	nitrite	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+HydrocarbonResourcesCores	nitrite	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+HydrocarbonResourcesCores	nitrite	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+HydrocarbonResourcesCores	org_count_qpcr_info	number of cells per gram (or ml or cm^2)	2	number of cells per gram	1	2	{cells}/g	see number of cells per gram (or ml or cm^2)		
+HydrocarbonResourcesCores	org_count_qpcr_info	number of cells per gram (or ml or cm^2)	2	number of cells per ml	1	2	{cells}/mL	see number of cells per gram (or ml or cm^2)		
+HydrocarbonResourcesCores	org_count_qpcr_info	number of cells per gram (or ml or cm^2)	2	number of cells per cm^2	1	2	{cells}/cm2	see number of cells per gram (or ml or cm^2)		
+HydrocarbonResourcesCores	owc_tvdss	meter	72	meter	3	216	m			
+HydrocarbonResourcesCores	permeability	mD	1	mD	1	1	{millidarcy}		permeability	
+HydrocarbonResourcesCores	porosity	percentage	13	percentage	2	26	%			
+HydrocarbonResourcesCores	potassium	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesCores	potassium	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+HydrocarbonResourcesCores	pour_point	degree Celsius	88	degree Celsius	2	176	Cel			
+HydrocarbonResourcesCores	pressure	atmosphere	6	atmosphere	2	12	atm			
+HydrocarbonResourcesCores	resins_pc	percent	10	percent	1	10	%			
+HydrocarbonResourcesCores	salinity	practical salinity unit, percentage	17	practical salinity unit	1	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+HydrocarbonResourcesCores	salinity	practical salinity unit, percentage	17	percentage	2	34	%			
+HydrocarbonResourcesCores	samp_md	meter	72	meter	3	216	m			
+HydrocarbonResourcesCores	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HydrocarbonResourcesCores	samp_transport_cond	days;degree Celsius	2	days	4	8	d			
+HydrocarbonResourcesCores	samp_transport_cond	days;degree Celsius	2	degree Celsius	2	4	Cel			
+HydrocarbonResourcesCores	samp_tvdss	meter	72	meter	3	216	m			
+HydrocarbonResourcesCores	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+HydrocarbonResourcesCores	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+HydrocarbonResourcesCores	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+HydrocarbonResourcesCores	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+HydrocarbonResourcesCores	saturates_pc	percent	10	percent	1	10	%			
+HydrocarbonResourcesCores	sodium	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesCores	sodium	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+HydrocarbonResourcesCores	sulfate	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+HydrocarbonResourcesCores	sulfate	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+HydrocarbonResourcesCores	sulfate	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+HydrocarbonResourcesCores	sulfate_fw	milligram per liter	26	milligram per liter	15	390	mg/L			
+HydrocarbonResourcesCores	sulfide	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+HydrocarbonResourcesCores	sulfide	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+HydrocarbonResourcesCores	sulfide	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+HydrocarbonResourcesCores	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	gram	10	30	g			
+HydrocarbonResourcesCores	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	microgram	3	9	ug			
+HydrocarbonResourcesCores	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	milligram per liter	15	45	mg/L			
+HydrocarbonResourcesCores	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	mole per liter	7	21	mol/h			
+HydrocarbonResourcesCores	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	gram per liter	4	12	g/L			
+HydrocarbonResourcesCores	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	part per million	1	3	[ppm]			
+HydrocarbonResourcesCores	tan	milligram per liter	26	milligram per liter	15	390	mg/L			
+HydrocarbonResourcesCores	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HydrocarbonResourcesCores	toluene	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesCores	toluene	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+HydrocarbonResourcesCores	tot_iron	milligram per liter, milligram per kilogram	2	milligram per liter	15	30	mg/L			
+HydrocarbonResourcesCores	tot_iron	milligram per liter, milligram per kilogram	2	milligram per kilogram	1	2	mg/kg			
+HydrocarbonResourcesCores	tot_nitro	microgram per liter, micromole per liter, milligram per liter	4	microgram per liter	6	24	ug/L			
+HydrocarbonResourcesCores	tot_nitro	microgram per liter, micromole per liter, milligram per liter	4	micromole per liter	8	32	umol/L			
+HydrocarbonResourcesCores	tot_nitro	microgram per liter, micromole per liter, milligram per liter	4	milligram per liter	15	60	mg/L			
+HydrocarbonResourcesCores	tot_phosp	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+HydrocarbonResourcesCores	tot_phosp	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+HydrocarbonResourcesCores	tot_phosp	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+HydrocarbonResourcesCores	tot_sulfur	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesCores	tot_sulfur	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+HydrocarbonResourcesCores	tvdss_of_hcr_press	meter	72	meter	3	216	m			
+HydrocarbonResourcesCores	tvdss_of_hcr_temp	meter	72	meter	3	216	m			
+HydrocarbonResourcesCores	vfa	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesCores	vfa	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+HydrocarbonResourcesCores	vfa_fw	milligram per liter	26	milligram per liter	15	390	mg/L			
+HydrocarbonResourcesCores	viscosity	cP at degree Celsius	2	cP at degree Celsius	1	2		compound specification, not a single unit. Should probably be expressed as X cP;Y Cel. Note: the schema provides the example in the description	viscosity	3.5 cp; 100 C
+HydrocarbonResourcesCores	xylene	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesCores	xylene	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+HydrocarbonResourcesFluidsSwabs	alkalinity	milliequivalent per liter, milligram per liter	7	milliequivalent per liter	1	7	mEq/L			
+HydrocarbonResourcesFluidsSwabs	alkalinity	milliequivalent per liter, milligram per liter	7	milligram per liter	15	105	mg/L			
+HydrocarbonResourcesFluidsSwabs	ammonium	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+HydrocarbonResourcesFluidsSwabs	ammonium	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+HydrocarbonResourcesFluidsSwabs	ammonium	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+HydrocarbonResourcesFluidsSwabs	api	degrees API	2	degrees API	1	2	{api_gravity)	*	api	31.1 API
+HydrocarbonResourcesFluidsSwabs	aromatics_pc	percent	10	percent	1	10	%			
+HydrocarbonResourcesFluidsSwabs	asphaltenes_pc	percent	10	percent	1	10	%			
+HydrocarbonResourcesFluidsSwabs	benzene	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesFluidsSwabs	benzene	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+HydrocarbonResourcesFluidsSwabs	biocide_admin_method	milligram per liter	26	milligram per liter	15	390	mg/L			
+HydrocarbonResourcesFluidsSwabs	calcium	milligram per liter, micromole per liter, parts per million	6	milligram per liter	15	90	mg/L			
+HydrocarbonResourcesFluidsSwabs	calcium	milligram per liter, micromole per liter, parts per million	6	micromole per liter	8	48	umol/L			
+HydrocarbonResourcesFluidsSwabs	calcium	milligram per liter, micromole per liter, parts per million	6	parts per million	11	66	[ppm]			
+HydrocarbonResourcesFluidsSwabs	chem_treat_method	milligram per liter	26	milligram per liter	15	390	mg/L			
+HydrocarbonResourcesFluidsSwabs	chloride	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesFluidsSwabs	chloride	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+HydrocarbonResourcesFluidsSwabs	density	gram per cubic meter, gram per cubic centimeter	5	gram per cubic meter	3	15	g/m3			
+HydrocarbonResourcesFluidsSwabs	density	gram per cubic meter, gram per cubic centimeter	5	gram per cubic centimeter	1	5	g/cm3			
+HydrocarbonResourcesFluidsSwabs	diss_carb_dioxide	micromole per liter, milligram per liter	11	micromole per liter	8	88	umol/L			
+HydrocarbonResourcesFluidsSwabs	diss_carb_dioxide	micromole per liter, milligram per liter	11	milligram per liter	15	165	mg/L			
+HydrocarbonResourcesFluidsSwabs	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	microgram per liter	6	36	ug/L			
+HydrocarbonResourcesFluidsSwabs	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	milligram per liter	15	90	mg/L			
+HydrocarbonResourcesFluidsSwabs	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	parts per million	11	66	[ppm]			
+HydrocarbonResourcesFluidsSwabs	diss_iron	milligram per liter	26	milligram per liter	15	390	mg/L			
+HydrocarbonResourcesFluidsSwabs	diss_org_carb	micromole per liter, milligram per liter	11	micromole per liter	8	88	umol/L			
+HydrocarbonResourcesFluidsSwabs	diss_org_carb	micromole per liter, milligram per liter	11	milligram per liter	15	165	mg/L			
+HydrocarbonResourcesFluidsSwabs	diss_oxygen_fluid	micromole per kilogram, milligram per liter	6	micromole per kilogram	2	12	umol/kg			
+HydrocarbonResourcesFluidsSwabs	diss_oxygen_fluid	micromole per kilogram, milligram per liter	6	milligram per liter	15	90	mg/L			
+HydrocarbonResourcesFluidsSwabs	ethylbenzene	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesFluidsSwabs	ethylbenzene	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+HydrocarbonResourcesFluidsSwabs	hcr_fw_salinity	milligram per liter	26	milligram per liter	15	390	mg/L			
+HydrocarbonResourcesFluidsSwabs	hcr_pressure	atmosphere, kilopascal	2	atmosphere	2	4	atm			
+HydrocarbonResourcesFluidsSwabs	hcr_pressure	atmosphere, kilopascal	2	kilopascal	1	2	kPa			
+HydrocarbonResourcesFluidsSwabs	hcr_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HydrocarbonResourcesFluidsSwabs	iwf	percent	10	percent	1	10	%			
+HydrocarbonResourcesFluidsSwabs	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	mole per liter	7	35	mol/h			
+HydrocarbonResourcesFluidsSwabs	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	milligram per liter	15	75	mg/L			
+HydrocarbonResourcesFluidsSwabs	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	parts per million	11	55	[ppm]			
+HydrocarbonResourcesFluidsSwabs	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	micromole per kilogram	2	10	umol/kg			
+HydrocarbonResourcesFluidsSwabs	nitrate	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+HydrocarbonResourcesFluidsSwabs	nitrate	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+HydrocarbonResourcesFluidsSwabs	nitrate	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+HydrocarbonResourcesFluidsSwabs	nitrite	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+HydrocarbonResourcesFluidsSwabs	nitrite	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+HydrocarbonResourcesFluidsSwabs	nitrite	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+HydrocarbonResourcesFluidsSwabs	org_count_qpcr_info	number of cells per gram (or ml or cm^2)	2	number of cells per gram	1	2	{cells}/g	see number of cells per gram (or ml or cm^2)		
+HydrocarbonResourcesFluidsSwabs	org_count_qpcr_info	number of cells per gram (or ml or cm^2)	2	number of cells per ml	1	2	{cells}/mL	see number of cells per gram (or ml or cm^2)		
+HydrocarbonResourcesFluidsSwabs	org_count_qpcr_info	number of cells per gram (or ml or cm^2)	2	number of cells per cm^2	1	2	{cells}/cm2	see number of cells per gram (or ml or cm^2)		
+HydrocarbonResourcesFluidsSwabs	potassium	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesFluidsSwabs	potassium	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+HydrocarbonResourcesFluidsSwabs	pour_point	degree Celsius	88	degree Celsius	2	176	Cel			
+HydrocarbonResourcesFluidsSwabs	pressure	atmosphere	6	atmosphere	2	12	atm			
+HydrocarbonResourcesFluidsSwabs	prod_rate	cubic meter per day	2	cubic meter per day	1	2	m3/d			
+HydrocarbonResourcesFluidsSwabs	resins_pc	percent	10	percent	1	10	%			
+HydrocarbonResourcesFluidsSwabs	salinity	practical salinity unit, percentage	17	practical salinity unit	1	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+HydrocarbonResourcesFluidsSwabs	salinity	practical salinity unit, percentage	17	percentage	2	34	%			
+HydrocarbonResourcesFluidsSwabs	samp_loc_corr_rate	millimeter per year	1	millimeter per year	1	1	mm/a			
+HydrocarbonResourcesFluidsSwabs	samp_preserv	milliliter	1	milliliter	4	4	mL			
+HydrocarbonResourcesFluidsSwabs	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HydrocarbonResourcesFluidsSwabs	samp_transport_cond	days;degree Celsius	2	days	4	8	d			
+HydrocarbonResourcesFluidsSwabs	samp_transport_cond	days;degree Celsius	2	degree Celsius	2	4	Cel			
+HydrocarbonResourcesFluidsSwabs	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+HydrocarbonResourcesFluidsSwabs	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+HydrocarbonResourcesFluidsSwabs	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+HydrocarbonResourcesFluidsSwabs	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+HydrocarbonResourcesFluidsSwabs	saturates_pc	percent	10	percent	1	10	%			
+HydrocarbonResourcesFluidsSwabs	sodium	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesFluidsSwabs	sodium	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+HydrocarbonResourcesFluidsSwabs	sulfate	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+HydrocarbonResourcesFluidsSwabs	sulfate	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+HydrocarbonResourcesFluidsSwabs	sulfate	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+HydrocarbonResourcesFluidsSwabs	sulfate_fw	milligram per liter	26	milligram per liter	15	390	mg/L			
+HydrocarbonResourcesFluidsSwabs	sulfide	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+HydrocarbonResourcesFluidsSwabs	sulfide	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+HydrocarbonResourcesFluidsSwabs	sulfide	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+HydrocarbonResourcesFluidsSwabs	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	gram	10	30	g			
+HydrocarbonResourcesFluidsSwabs	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	microgram	3	9	ug			
+HydrocarbonResourcesFluidsSwabs	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	milligram per liter	15	45	mg/L			
+HydrocarbonResourcesFluidsSwabs	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	mole per liter	7	21	mol/h			
+HydrocarbonResourcesFluidsSwabs	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	gram per liter	4	12	g/L			
+HydrocarbonResourcesFluidsSwabs	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	part per million	1	3	[ppm]			
+HydrocarbonResourcesFluidsSwabs	tan	milligram per liter	26	milligram per liter	15	390	mg/L			
+HydrocarbonResourcesFluidsSwabs	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+HydrocarbonResourcesFluidsSwabs	toluene	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesFluidsSwabs	toluene	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+HydrocarbonResourcesFluidsSwabs	tot_iron	milligram per liter, milligram per kilogram	2	milligram per liter	15	30	mg/L			
+HydrocarbonResourcesFluidsSwabs	tot_iron	milligram per liter, milligram per kilogram	2	milligram per kilogram	1	2	mg/kg			
+HydrocarbonResourcesFluidsSwabs	tot_nitro	microgram per liter, micromole per liter, milligram per liter	4	microgram per liter	6	24	ug/L			
+HydrocarbonResourcesFluidsSwabs	tot_nitro	microgram per liter, micromole per liter, milligram per liter	4	micromole per liter	8	32	umol/L			
+HydrocarbonResourcesFluidsSwabs	tot_nitro	microgram per liter, micromole per liter, milligram per liter	4	milligram per liter	15	60	mg/L			
+HydrocarbonResourcesFluidsSwabs	tot_phosp	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+HydrocarbonResourcesFluidsSwabs	tot_phosp	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+HydrocarbonResourcesFluidsSwabs	tot_phosp	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+HydrocarbonResourcesFluidsSwabs	tot_sulfur	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesFluidsSwabs	tot_sulfur	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+HydrocarbonResourcesFluidsSwabs	tvdss_of_hcr_press	meter	72	meter	3	216	m			
+HydrocarbonResourcesFluidsSwabs	tvdss_of_hcr_temp	meter	72	meter	3	216	m			
+HydrocarbonResourcesFluidsSwabs	vfa	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesFluidsSwabs	vfa	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+HydrocarbonResourcesFluidsSwabs	vfa_fw	milligram per liter	26	milligram per liter	15	390	mg/L			
+HydrocarbonResourcesFluidsSwabs	viscosity	cP at degree Celsius	2	cP at degree Celsius	1	2		compound specification, not a single unit. Should probably be expressed as X cP;Y Cel. Note: the schema provides the example in the description	viscosity	3.5 cp; 100 C
+HydrocarbonResourcesFluidsSwabs	water_cut	percent	10	percent	1	10	%			
+HydrocarbonResourcesFluidsSwabs	water_prod_rate	cubic meter per day	2	cubic meter per day	1	2	m3/d			
+HydrocarbonResourcesFluidsSwabs	xylene	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+HydrocarbonResourcesFluidsSwabs	xylene	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+MicrobialMatBiofilm	alkalinity	milliequivalent per liter, milligram per liter	7	milliequivalent per liter	1	7	mEq/L			
+MicrobialMatBiofilm	alkalinity	milliequivalent per liter, milligram per liter	7	milligram per liter	15	105	mg/L			
+MicrobialMatBiofilm	aminopept_act	mole per liter per hour	3	mole per liter per hour	1	3	mol/L/h			
+MicrobialMatBiofilm	ammonium	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+MicrobialMatBiofilm	ammonium	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+MicrobialMatBiofilm	ammonium	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+MicrobialMatBiofilm	biomass	ton, kilogram, gram	4	ton	2	8		Imperial = [ston_av]; Metric = t	biomass|microbial_biomass	
+MicrobialMatBiofilm	biomass	ton, kilogram, gram	4	kilogram	4	16	kg			
+MicrobialMatBiofilm	biomass	ton, kilogram, gram	4	gram	10	40	g			
+MicrobialMatBiofilm	bishomohopanol	microgram per liter, microgram per gram	3	microgram per liter	6	18	ug/L			
+MicrobialMatBiofilm	bishomohopanol	microgram per liter, microgram per gram	3	microgram per gram	2	6	ug/g			
+MicrobialMatBiofilm	bromide	parts per million	6	parts per million	11	66	[ppm]			
+MicrobialMatBiofilm	calcium	milligram per liter, micromole per liter, parts per million	6	milligram per liter	15	90	mg/L			
+MicrobialMatBiofilm	calcium	milligram per liter, micromole per liter, parts per million	6	micromole per liter	8	48	umol/L			
+MicrobialMatBiofilm	calcium	milligram per liter, micromole per liter, parts per million	6	parts per million	11	66	[ppm]			
+MicrobialMatBiofilm	chloride	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+MicrobialMatBiofilm	chloride	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+MicrobialMatBiofilm	chlorophyll	milligram per cubic meter, microgram per liter	4	milligram per cubic meter	2	8	mg/m3			
+MicrobialMatBiofilm	chlorophyll	milligram per cubic meter, microgram per liter	4	microgram per liter	6	24	ug/L			
+MicrobialMatBiofilm	depth	meter	72	meter	3	216	m			
+MicrobialMatBiofilm	diether_lipids	nanogram per liter	4	nanogram per liter	2	8	ng/L			
+MicrobialMatBiofilm	diss_carb_dioxide	micromole per liter, milligram per liter	11	micromole per liter	8	88	umol/L			
+MicrobialMatBiofilm	diss_carb_dioxide	micromole per liter, milligram per liter	11	milligram per liter	15	165	mg/L			
+MicrobialMatBiofilm	diss_hydrogen	micromole per liter	24	micromole per liter	8	192	umol/L			
+MicrobialMatBiofilm	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	microgram per liter	6	36	ug/L			
+MicrobialMatBiofilm	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	milligram per liter	15	90	mg/L			
+MicrobialMatBiofilm	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	parts per million	11	66	[ppm]			
+MicrobialMatBiofilm	diss_org_carb	micromole per liter, milligram per liter	11	micromole per liter	8	88	umol/L			
+MicrobialMatBiofilm	diss_org_carb	micromole per liter, milligram per liter	11	milligram per liter	15	165	mg/L			
+MicrobialMatBiofilm	diss_oxygen	micromole per kilogram, milligram per liter	6	micromole per kilogram	2	12	umol/kg			
+MicrobialMatBiofilm	diss_oxygen	micromole per kilogram, milligram per liter	6	milligram per liter	15	90	mg/L			
+MicrobialMatBiofilm	elev	meter	72	meter	3	216	m			
+MicrobialMatBiofilm	glucosidase_act	mol per liter per hour	3	mol per liter per hour	1	3	mol/L/h			
+MicrobialMatBiofilm	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	mole per liter	7	35	mol/h			
+MicrobialMatBiofilm	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	milligram per liter	15	75	mg/L			
+MicrobialMatBiofilm	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	parts per million	11	55	[ppm]			
+MicrobialMatBiofilm	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	micromole per kilogram	2	10	umol/kg			
+MicrobialMatBiofilm	mean_frict_vel	meter per second	6	meter per second	1	6	m/s			
+MicrobialMatBiofilm	mean_peak_frict_vel	meter per second	6	meter per second	1	6	m/s			
+MicrobialMatBiofilm	methane	micromole per liter, parts per billion, parts per million	3	micromole per liter	8	24	umol/L			
+MicrobialMatBiofilm	methane	micromole per liter, parts per billion, parts per million	3	parts per billion	1	3	[ppb]			
+MicrobialMatBiofilm	methane	micromole per liter, parts per billion, parts per million	3	parts per million	11	33	[ppm]			
+MicrobialMatBiofilm	nitrate	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+MicrobialMatBiofilm	nitrate	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+MicrobialMatBiofilm	nitrate	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+MicrobialMatBiofilm	nitrite	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+MicrobialMatBiofilm	nitrite	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+MicrobialMatBiofilm	nitrite	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+MicrobialMatBiofilm	nitro	micromole per liter	24	micromole per liter	8	192	umol/L			
+MicrobialMatBiofilm	org_matter	microgram per liter	7	microgram per liter	6	42	ug/L			
+MicrobialMatBiofilm	petroleum_hydrocarb	micromole per liter	24	micromole per liter	8	192	umol/L			
+MicrobialMatBiofilm	phaeopigments	milligram per cubic meter	3	milligram per cubic meter	2	6	mg/m3			
+MicrobialMatBiofilm	phosphate	micromole per liter	24	micromole per liter	8	192	umol/L			
+MicrobialMatBiofilm	potassium	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+MicrobialMatBiofilm	potassium	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+MicrobialMatBiofilm	pressure	atmosphere	6	atmosphere	2	12	atm			
+MicrobialMatBiofilm	redox_potential	millivolt	3	millivolt	1	3	mV			
+MicrobialMatBiofilm	salinity	practical salinity unit, percentage	17	practical salinity unit	1	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+MicrobialMatBiofilm	salinity	practical salinity unit, percentage	17	percentage	2	34	%			
+MicrobialMatBiofilm	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+MicrobialMatBiofilm	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+MicrobialMatBiofilm	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+MicrobialMatBiofilm	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+MicrobialMatBiofilm	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+MicrobialMatBiofilm	silicate	micromole per liter	24	micromole per liter	8	192	umol/L			
+MicrobialMatBiofilm	sodium	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+MicrobialMatBiofilm	sodium	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+MicrobialMatBiofilm	sulfate	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+MicrobialMatBiofilm	sulfate	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+MicrobialMatBiofilm	sulfate	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+MicrobialMatBiofilm	sulfide	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+MicrobialMatBiofilm	sulfide	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+MicrobialMatBiofilm	sulfide	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+MicrobialMatBiofilm	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+MicrobialMatBiofilm	tot_org_carb	gram Carbon per kilogram sample material	5	gram Carbon per kilogram sample material	1	5	g{Carbon}/kg{sample_material}			
+MicrobialMatBiofilm	water_content	gram per gram or cubic centimeter per cubic centimeter	3	gram per gram	2	6	g/g			
+MicrobialMatBiofilm	water_content	gram per gram or cubic centimeter per cubic centimeter	3	cubic centimeter per cubic centimeter	1	3	cm3/cm3			
+MigsBa	alt	meter	72	meter	3	216	m			
+MigsBa	depth	meter	72	meter	3	216	m			
+MigsBa	elev	meter	72	meter	3	216	m			
+MigsBa	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+MigsBa	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+MigsBa	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+MigsBa	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+MigsBa	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+MigsEu	alt	meter	72	meter	3	216	m			
+MigsEu	depth	meter	72	meter	3	216	m			
+MigsEu	elev	meter	72	meter	3	216	m			
+MigsEu	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+MigsEu	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+MigsEu	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+MigsEu	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+MigsEu	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+MigsOrg	alt	meter	72	meter	3	216	m			
+MigsOrg	depth	meter	72	meter	3	216	m			
+MigsOrg	elev	meter	72	meter	3	216	m			
+MigsOrg	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+MigsOrg	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+MigsOrg	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+MigsOrg	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+MigsOrg	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+MigsPl	alt	meter	72	meter	3	216	m			
+MigsPl	depth	meter	72	meter	3	216	m			
+MigsPl	elev	meter	72	meter	3	216	m			
+MigsPl	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+MigsPl	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+MigsPl	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+MigsPl	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+MigsPl	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+MigsVi	alt	meter	72	meter	3	216	m			
+MigsVi	depth	meter	72	meter	3	216	m			
+MigsVi	elev	meter	72	meter	3	216	m			
+MigsVi	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+MigsVi	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+MigsVi	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+MigsVi	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+MigsVi	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+Mimag	alt	meter	72	meter	3	216	m			
+Mimag	depth	meter	72	meter	3	216	m			
+Mimag	elev	meter	72	meter	3	216	m			
+Mimag	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+Mimag	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+Mimag	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+Mimag	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+Mimag	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+MimarksC	alt	meter	72	meter	3	216	m			
+MimarksC	depth	meter	72	meter	3	216	m			
+MimarksC	elev	meter	72	meter	3	216	m			
+MimarksC	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+MimarksC	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+MimarksC	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+MimarksC	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+MimarksC	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+MimarksS	alt	meter	72	meter	3	216	m			
+MimarksS	depth	meter	72	meter	3	216	m			
+MimarksS	elev	meter	72	meter	3	216	m			
+MimarksS	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+MimarksS	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+MimarksS	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+MimarksS	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+MimarksS	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+Mims	alt	meter	72	meter	3	216	m			
+Mims	depth	meter	72	meter	3	216	m			
+Mims	elev	meter	72	meter	3	216	m			
+Mims	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+Mims	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+Mims	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+Mims	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+Mims	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+Misag	alt	meter	72	meter	3	216	m			
+Misag	depth	meter	72	meter	3	216	m			
+Misag	elev	meter	72	meter	3	216	m			
+Misag	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+Misag	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+Misag	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+Misag	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+Misag	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+MiscellaneousNaturalOrArtificialEnvironment	alkalinity	milliequivalent per liter, milligram per liter	7	milliequivalent per liter	1	7	mEq/L			
+MiscellaneousNaturalOrArtificialEnvironment	alkalinity	milliequivalent per liter, milligram per liter	7	milligram per liter	15	105	mg/L			
+MiscellaneousNaturalOrArtificialEnvironment	alt	meter	72	meter	3	216	m			
+MiscellaneousNaturalOrArtificialEnvironment	ammonium	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+MiscellaneousNaturalOrArtificialEnvironment	ammonium	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+MiscellaneousNaturalOrArtificialEnvironment	ammonium	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+MiscellaneousNaturalOrArtificialEnvironment	biomass	ton, kilogram, gram	4	ton	2	8		Imperial = [ston_av]; Metric = t	biomass|microbial_biomass	
+MiscellaneousNaturalOrArtificialEnvironment	biomass	ton, kilogram, gram	4	kilogram	4	16	kg			
+MiscellaneousNaturalOrArtificialEnvironment	biomass	ton, kilogram, gram	4	gram	10	40	g			
+MiscellaneousNaturalOrArtificialEnvironment	bromide	parts per million	6	parts per million	11	66	[ppm]			
+MiscellaneousNaturalOrArtificialEnvironment	calcium	milligram per liter, micromole per liter, parts per million	6	milligram per liter	15	90	mg/L			
+MiscellaneousNaturalOrArtificialEnvironment	calcium	milligram per liter, micromole per liter, parts per million	6	micromole per liter	8	48	umol/L			
+MiscellaneousNaturalOrArtificialEnvironment	calcium	milligram per liter, micromole per liter, parts per million	6	parts per million	11	66	[ppm]			
+MiscellaneousNaturalOrArtificialEnvironment	chloride	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+MiscellaneousNaturalOrArtificialEnvironment	chloride	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+MiscellaneousNaturalOrArtificialEnvironment	chlorophyll	milligram per cubic meter, microgram per liter	4	milligram per cubic meter	2	8	mg/m3			
+MiscellaneousNaturalOrArtificialEnvironment	chlorophyll	milligram per cubic meter, microgram per liter	4	microgram per liter	6	24	ug/L			
+MiscellaneousNaturalOrArtificialEnvironment	density	gram per cubic meter, gram per cubic centimeter	5	gram per cubic meter	3	15	g/m3			
+MiscellaneousNaturalOrArtificialEnvironment	density	gram per cubic meter, gram per cubic centimeter	5	gram per cubic centimeter	1	5	g/cm3			
+MiscellaneousNaturalOrArtificialEnvironment	depth	meter	72	meter	3	216	m			
+MiscellaneousNaturalOrArtificialEnvironment	diether_lipids	nanogram per liter	4	nanogram per liter	2	8	ng/L			
+MiscellaneousNaturalOrArtificialEnvironment	diss_carb_dioxide	micromole per liter, milligram per liter	11	micromole per liter	8	88	umol/L			
+MiscellaneousNaturalOrArtificialEnvironment	diss_carb_dioxide	micromole per liter, milligram per liter	11	milligram per liter	15	165	mg/L			
+MiscellaneousNaturalOrArtificialEnvironment	diss_hydrogen	micromole per liter	24	micromole per liter	8	192	umol/L			
+MiscellaneousNaturalOrArtificialEnvironment	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	microgram per liter	6	36	ug/L			
+MiscellaneousNaturalOrArtificialEnvironment	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	milligram per liter	15	90	mg/L			
+MiscellaneousNaturalOrArtificialEnvironment	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	parts per million	11	66	[ppm]			
+MiscellaneousNaturalOrArtificialEnvironment	diss_oxygen	micromole per kilogram, milligram per liter	6	micromole per kilogram	2	12	umol/kg			
+MiscellaneousNaturalOrArtificialEnvironment	diss_oxygen	micromole per kilogram, milligram per liter	6	milligram per liter	15	90	mg/L			
+MiscellaneousNaturalOrArtificialEnvironment	elev	meter	72	meter	3	216	m			
+MiscellaneousNaturalOrArtificialEnvironment	nitrate	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+MiscellaneousNaturalOrArtificialEnvironment	nitrate	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+MiscellaneousNaturalOrArtificialEnvironment	nitrate	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+MiscellaneousNaturalOrArtificialEnvironment	nitrite	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+MiscellaneousNaturalOrArtificialEnvironment	nitrite	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+MiscellaneousNaturalOrArtificialEnvironment	nitrite	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+MiscellaneousNaturalOrArtificialEnvironment	nitro	micromole per liter	24	micromole per liter	8	192	umol/L			
+MiscellaneousNaturalOrArtificialEnvironment	org_matter	microgram per liter	7	microgram per liter	6	42	ug/L			
+MiscellaneousNaturalOrArtificialEnvironment	phosphate	micromole per liter	24	micromole per liter	8	192	umol/L			
+MiscellaneousNaturalOrArtificialEnvironment	potassium	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+MiscellaneousNaturalOrArtificialEnvironment	potassium	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+MiscellaneousNaturalOrArtificialEnvironment	pressure	atmosphere	6	atmosphere	2	12	atm			
+MiscellaneousNaturalOrArtificialEnvironment	salinity	practical salinity unit, percentage	17	practical salinity unit	1	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+MiscellaneousNaturalOrArtificialEnvironment	salinity	practical salinity unit, percentage	17	percentage	2	34	%			
+MiscellaneousNaturalOrArtificialEnvironment	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+MiscellaneousNaturalOrArtificialEnvironment	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+MiscellaneousNaturalOrArtificialEnvironment	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+MiscellaneousNaturalOrArtificialEnvironment	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+MiscellaneousNaturalOrArtificialEnvironment	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+MiscellaneousNaturalOrArtificialEnvironment	silicate	micromole per liter	24	micromole per liter	8	192	umol/L			
+MiscellaneousNaturalOrArtificialEnvironment	sodium	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+MiscellaneousNaturalOrArtificialEnvironment	sodium	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+MiscellaneousNaturalOrArtificialEnvironment	sulfate	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+MiscellaneousNaturalOrArtificialEnvironment	sulfate	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+MiscellaneousNaturalOrArtificialEnvironment	sulfate	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+MiscellaneousNaturalOrArtificialEnvironment	sulfide	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+MiscellaneousNaturalOrArtificialEnvironment	sulfide	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+MiscellaneousNaturalOrArtificialEnvironment	sulfide	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+MiscellaneousNaturalOrArtificialEnvironment	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+MiscellaneousNaturalOrArtificialEnvironment	water_current	cubic meter per second, knots	2	cubic meter per second	1	2	m3/s			
+MiscellaneousNaturalOrArtificialEnvironment	water_current	cubic meter per second, knots	2	knots	1	2	{nautical_mile}/h		water_current|atmospheric_data	wind speed;9 knots
+Miuvig	alt	meter	72	meter	3	216	m			
+Miuvig	depth	meter	72	meter	3	216	m			
+Miuvig	elev	meter	72	meter	3	216	m			
+Miuvig	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+Miuvig	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+Miuvig	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+Miuvig	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+Miuvig	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+PlantAssociated	air_temp_regm	meter	72	meter	3	216	m			
+PlantAssociated	antibiotic_regm	milligram	1	milligram	3	3	mg			
+PlantAssociated	chem_mutagen	milligram per liter	26	milligram per liter	15	390	mg/L			
+PlantAssociated	depth	meter	72	meter	3	216	m			
+PlantAssociated	elev	meter	72	meter	3	216	m			
+PlantAssociated	fertilizer_regm	gram, mole per liter, milligram per liter	13	gram	10	130	g			
+PlantAssociated	fertilizer_regm	gram, mole per liter, milligram per liter	13	mole per liter	7	91	mol/h			
+PlantAssociated	fertilizer_regm	gram, mole per liter, milligram per liter	13	milligram per liter	15	195	mg/L			
+PlantAssociated	fungicide_regm	gram, mole per liter, milligram per liter	13	gram	10	130	g			
+PlantAssociated	fungicide_regm	gram, mole per liter, milligram per liter	13	mole per liter	7	91	mol/h			
+PlantAssociated	fungicide_regm	gram, mole per liter, milligram per liter	13	milligram per liter	15	195	mg/L			
+PlantAssociated	gaseous_environment	micromole per liter	24	micromole per liter	8	192	umol/L			
+PlantAssociated	gravity	meter per square second, g	1	meter per square second	1	1	m/s2			
+PlantAssociated	gravity	meter per square second, g	1	g	1	1	g			
+PlantAssociated	growth_hormone_regm	gram, mole per liter, milligram per liter	13	gram	10	130	g			
+PlantAssociated	growth_hormone_regm	gram, mole per liter, milligram per liter	13	mole per liter	7	91	mol/h			
+PlantAssociated	growth_hormone_regm	gram, mole per liter, milligram per liter	13	milligram per liter	15	195	mg/L			
+PlantAssociated	herbicide_regm	gram, mole per liter, milligram per liter	13	gram	10	130	g			
+PlantAssociated	herbicide_regm	gram, mole per liter, milligram per liter	13	mole per liter	7	91	mol/h			
+PlantAssociated	herbicide_regm	gram, mole per liter, milligram per liter	13	milligram per liter	15	195	mg/L			
+PlantAssociated	host_age	year, day, hour	11	year	2	22	a	!		
+PlantAssociated	host_age	year, day, hour	11	day	1	11	d			
+PlantAssociated	host_age	year, day, hour	11	hour	2	22	h			
+PlantAssociated	host_dry_mass	kilogram, gram	17	kilogram	4	68	kg			
+PlantAssociated	host_dry_mass	kilogram, gram	17	gram	10	170	g			
+PlantAssociated	host_height	centimeter, millimeter, meter	15	centimeter	2	30	cm			
+PlantAssociated	host_height	centimeter, millimeter, meter	15	millimeter	2	30	mm			
+PlantAssociated	host_height	centimeter, millimeter, meter	15	meter	3	45	m			
+PlantAssociated	host_length	centimeter, millimeter, meter	15	centimeter	2	30	cm			
+PlantAssociated	host_length	centimeter, millimeter, meter	15	millimeter	2	30	mm			
+PlantAssociated	host_length	centimeter, millimeter, meter	15	meter	3	45	m			
+PlantAssociated	host_tot_mass	kilogram, gram	17	kilogram	4	68	kg			
+PlantAssociated	host_tot_mass	kilogram, gram	17	gram	10	170	g			
+PlantAssociated	host_wet_mass	kilogram, gram	17	kilogram	4	68	kg			
+PlantAssociated	host_wet_mass	kilogram, gram	17	gram	10	170	g			
+PlantAssociated	humidity_regm	gram per cubic meter	1	gram per cubic meter	3	3	g/m3			
+PlantAssociated	light_regm	lux; micrometer, nanometer, angstrom	1	lux	3	3	lx			
+PlantAssociated	light_regm	lux; micrometer, nanometer, angstrom	1	micrometer	2	2	um			
+PlantAssociated	light_regm	lux; micrometer, nanometer, angstrom	1	nanometer	1	1	nm			
+PlantAssociated	light_regm	lux; micrometer, nanometer, angstrom	1	angstrom	1	1	Ao			
+PlantAssociated	mineral_nutr_regm	gram, mole per liter, milligram per liter	13	gram	10	130	g			
+PlantAssociated	mineral_nutr_regm	gram, mole per liter, milligram per liter	13	mole per liter	7	91	mol/h			
+PlantAssociated	mineral_nutr_regm	gram, mole per liter, milligram per liter	13	milligram per liter	15	195	mg/L			
+PlantAssociated	non_min_nutr_regm	gram, mole per liter, milligram per liter	13	gram	10	130	g			
+PlantAssociated	non_min_nutr_regm	gram, mole per liter, milligram per liter	13	mole per liter	7	91	mol/h			
+PlantAssociated	non_min_nutr_regm	gram, mole per liter, milligram per liter	13	milligram per liter	15	195	mg/L			
+PlantAssociated	pesticide_regm	gram, mole per liter, milligram per liter	13	gram	10	130	g			
+PlantAssociated	pesticide_regm	gram, mole per liter, milligram per liter	13	mole per liter	7	91	mol/h			
+PlantAssociated	pesticide_regm	gram, mole per liter, milligram per liter	13	milligram per liter	15	195	mg/L			
+PlantAssociated	radiation_regm	rad, gray	1	rad	1	1	RAD			
+PlantAssociated	radiation_regm	rad, gray	1	gray	1	1	Gy			
+PlantAssociated	rainfall_regm	millimeter	6	millimeter	2	12	mm			
+PlantAssociated	root_med_carbon	milligram per liter	26	milligram per liter	15	390	mg/L			
+PlantAssociated	root_med_macronutr	milligram per liter	26	milligram per liter	15	390	mg/L			
+PlantAssociated	root_med_micronutr	milligram per liter	26	milligram per liter	15	390	mg/L			
+PlantAssociated	root_med_regl	milligram per liter	26	milligram per liter	15	390	mg/L			
+PlantAssociated	root_med_suppl	milligram per liter	26	milligram per liter	15	390	mg/L			
+PlantAssociated	salinity	practical salinity unit, percentage	17	practical salinity unit	1	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+PlantAssociated	salinity	practical salinity unit, percentage	17	percentage	2	34	%			
+PlantAssociated	salt_regm	gram, microgram, mole per liter, gram per liter	2	gram	10	20	g			
+PlantAssociated	salt_regm	gram, microgram, mole per liter, gram per liter	2	microgram	3	6	ug			
+PlantAssociated	salt_regm	gram, microgram, mole per liter, gram per liter	2	mole per liter	7	14	mol/h			
+PlantAssociated	salt_regm	gram, microgram, mole per liter, gram per liter	2	gram per liter	4	8	g/L			
+PlantAssociated	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+PlantAssociated	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+PlantAssociated	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+PlantAssociated	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+PlantAssociated	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+PlantAssociated	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+PlantAssociated	water_temp_regm	degree Celsius	88	degree Celsius	2	176	Cel			
+PlantAssociated	watering_regm	milliliter, liter	2	milliliter	4	8	mL			
+PlantAssociated	watering_regm	milliliter, liter	2	liter	1	2	L			
+Sediment	alkalinity	milliequivalent per liter, milligram per liter	7	milliequivalent per liter	1	7	mEq/L			
+Sediment	alkalinity	milliequivalent per liter, milligram per liter	7	milligram per liter	15	105	mg/L			
+Sediment	aminopept_act	mole per liter per hour	3	mole per liter per hour	1	3	mol/L/h			
+Sediment	ammonium	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+Sediment	ammonium	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+Sediment	ammonium	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+Sediment	biomass	ton, kilogram, gram	4	ton	2	8		Imperial = [ston_av]; Metric = t	biomass|microbial_biomass	
+Sediment	biomass	ton, kilogram, gram	4	kilogram	4	16	kg			
+Sediment	biomass	ton, kilogram, gram	4	gram	10	40	g			
+Sediment	bishomohopanol	microgram per liter, microgram per gram	3	microgram per liter	6	18	ug/L			
+Sediment	bishomohopanol	microgram per liter, microgram per gram	3	microgram per gram	2	6	ug/g			
+Sediment	bromide	parts per million	6	parts per million	11	66	[ppm]			
+Sediment	calcium	milligram per liter, micromole per liter, parts per million	6	milligram per liter	15	90	mg/L			
+Sediment	calcium	milligram per liter, micromole per liter, parts per million	6	micromole per liter	8	48	umol/L			
+Sediment	calcium	milligram per liter, micromole per liter, parts per million	6	parts per million	11	66	[ppm]			
+Sediment	chloride	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+Sediment	chloride	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+Sediment	chlorophyll	milligram per cubic meter, microgram per liter	4	milligram per cubic meter	2	8	mg/m3			
+Sediment	chlorophyll	milligram per cubic meter, microgram per liter	4	microgram per liter	6	24	ug/L			
+Sediment	density	gram per cubic meter, gram per cubic centimeter	5	gram per cubic meter	3	15	g/m3			
+Sediment	density	gram per cubic meter, gram per cubic centimeter	5	gram per cubic centimeter	1	5	g/cm3			
+Sediment	depth	meter	72	meter	3	216	m			
+Sediment	diether_lipids	nanogram per liter	4	nanogram per liter	2	8	ng/L			
+Sediment	diss_carb_dioxide	micromole per liter, milligram per liter	11	micromole per liter	8	88	umol/L			
+Sediment	diss_carb_dioxide	micromole per liter, milligram per liter	11	milligram per liter	15	165	mg/L			
+Sediment	diss_hydrogen	micromole per liter	24	micromole per liter	8	192	umol/L			
+Sediment	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	microgram per liter	6	36	ug/L			
+Sediment	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	milligram per liter	15	90	mg/L			
+Sediment	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	parts per million	11	66	[ppm]			
+Sediment	diss_org_carb	micromole per liter, milligram per liter	11	micromole per liter	8	88	umol/L			
+Sediment	diss_org_carb	micromole per liter, milligram per liter	11	milligram per liter	15	165	mg/L			
+Sediment	diss_oxygen	micromole per kilogram, milligram per liter	6	micromole per kilogram	2	12	umol/kg			
+Sediment	diss_oxygen	micromole per kilogram, milligram per liter	6	milligram per liter	15	90	mg/L			
+Sediment	elev	meter	72	meter	3	216	m			
+Sediment	glucosidase_act	mol per liter per hour	3	mol per liter per hour	1	3	mol/L/h			
+Sediment	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	mole per liter	7	35	mol/h			
+Sediment	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	milligram per liter	15	75	mg/L			
+Sediment	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	parts per million	11	55	[ppm]			
+Sediment	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	micromole per kilogram	2	10	umol/kg			
+Sediment	mean_frict_vel	meter per second	6	meter per second	1	6	m/s			
+Sediment	mean_peak_frict_vel	meter per second	6	meter per second	1	6	m/s			
+Sediment	methane	micromole per liter, parts per billion, parts per million	3	micromole per liter	8	24	umol/L			
+Sediment	methane	micromole per liter, parts per billion, parts per million	3	parts per billion	1	3	[ppb]			
+Sediment	methane	micromole per liter, parts per billion, parts per million	3	parts per million	11	33	[ppm]			
+Sediment	nitrate	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+Sediment	nitrate	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+Sediment	nitrate	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+Sediment	nitrite	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+Sediment	nitrite	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+Sediment	nitrite	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+Sediment	nitro	micromole per liter	24	micromole per liter	8	192	umol/L			
+Sediment	org_matter	microgram per liter	7	microgram per liter	6	42	ug/L			
+Sediment	particle_class	micrometer	7	micrometer	2	14	um			
+Sediment	petroleum_hydrocarb	micromole per liter	24	micromole per liter	8	192	umol/L			
+Sediment	phaeopigments	milligram per cubic meter	3	milligram per cubic meter	2	6	mg/m3			
+Sediment	phosphate	micromole per liter	24	micromole per liter	8	192	umol/L			
+Sediment	porosity	percentage	13	percentage	2	26	%			
+Sediment	potassium	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+Sediment	potassium	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+Sediment	pressure	atmosphere	6	atmosphere	2	12	atm			
+Sediment	redox_potential	millivolt	3	millivolt	1	3	mV			
+Sediment	salinity	practical salinity unit, percentage	17	practical salinity unit	1	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+Sediment	salinity	practical salinity unit, percentage	17	percentage	2	34	%			
+Sediment	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+Sediment	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+Sediment	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+Sediment	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+Sediment	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+Sediment	silicate	micromole per liter	24	micromole per liter	8	192	umol/L			
+Sediment	sodium	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+Sediment	sodium	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+Sediment	sulfate	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+Sediment	sulfate	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+Sediment	sulfate	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+Sediment	sulfide	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+Sediment	sulfide	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+Sediment	sulfide	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+Sediment	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+Sediment	tot_depth_water_col	meter	72	meter	3	216	m			
+Sediment	tot_org_carb	gram Carbon per kilogram sample material	5	gram Carbon per kilogram sample material	1	5	g{Carbon}/kg{sample_material}			
+Sediment	water_content	gram per gram or cubic centimeter per cubic centimeter	3	gram per gram	2	6	g/g			
+Sediment	water_content	gram per gram or cubic centimeter per cubic centimeter	3	cubic centimeter per cubic centimeter	1	3	cm3/cm3			
+Soil	agrochem_addition	gram, mole per liter, milligram per liter	13	gram	10	130	g			
+Soil	agrochem_addition	gram, mole per liter, milligram per liter	13	mole per liter	7	91	mol/h			
+Soil	agrochem_addition	gram, mole per liter, milligram per liter	13	milligram per liter	15	195	mg/L			
+Soil	al_sat	percentage	13	percentage	2	26	%			
+Soil	annual_precpt	millimeter	6	millimeter	2	12	mm			
+Soil	annual_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+Soil	depth	meter	72	meter	3	216	m			
+Soil	elev	meter	72	meter	3	216	m			
+Soil	heavy_metals	microgram per gram	1	microgram per gram	2	2	ug/g			
+Soil	microbial_biomass	ton, kilogram, gram per kilogram soil	2	ton	2	4		Imperial = [ston_av]; Metric = t	biomass|microbial_biomass	
+Soil	microbial_biomass	ton, kilogram, gram per kilogram soil	2	kilogram	4	8	kg			
+Soil	microbial_biomass	ton, kilogram, gram per kilogram soil	2	gram per kilogram soil	1	2	g/kg{soil}			
+Soil	org_matter	microgram per liter	7	microgram per liter	6	42	ug/L			
+Soil	pool_dna_extracts	gram, milliliter, microliter	5	gram	10	50	g			
+Soil	pool_dna_extracts	gram, milliliter, microliter	5	milliliter	4	20	mL			
+Soil	pool_dna_extracts	gram, milliliter, microliter	5	microliter	1	5	uL			
+Soil	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+Soil	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+Soil	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+Soil	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+Soil	season_precpt	millimeter	6	millimeter	2	12	mm			
+Soil	season_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+Soil	slope_aspect	degree	2	degree	1	2	deg		slope_aspect	
+Soil	slope_gradient	percentage	13	percentage	2	26	%			
+Soil	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+Soil	tot_org_carb	gram Carbon per kilogram sample material	5	gram Carbon per kilogram sample material	1	5	g{Carbon}/kg{sample_material}			
+Soil	water_content	gram per gram or cubic centimeter per cubic centimeter	3	gram per gram	2	6	g/g			
+Soil	water_content	gram per gram or cubic centimeter per cubic centimeter	3	cubic centimeter per cubic centimeter	1	3	cm3/cm3			
+SymbiontAssociated	alt	meter	72	meter	3	216	m			
+SymbiontAssociated	association_duration	year, day, hour	11	year	2	22	a	!		
+SymbiontAssociated	association_duration	year, day, hour	11	day	1	11	d			
+SymbiontAssociated	association_duration	year, day, hour	11	hour	2	22	h			
+SymbiontAssociated	depth	meter	72	meter	3	216	m			
+SymbiontAssociated	elev	meter	72	meter	3	216	m			
+SymbiontAssociated	host_age	year, day, hour	11	year	2	22	a	!		
+SymbiontAssociated	host_age	year, day, hour	11	day	1	11	d			
+SymbiontAssociated	host_age	year, day, hour	11	hour	2	22	h			
+SymbiontAssociated	host_dry_mass	kilogram, gram	17	kilogram	4	68	kg			
+SymbiontAssociated	host_dry_mass	kilogram, gram	17	gram	10	170	g			
+SymbiontAssociated	host_height	centimeter, millimeter, meter	15	centimeter	2	30	cm			
+SymbiontAssociated	host_height	centimeter, millimeter, meter	15	millimeter	2	30	mm			
+SymbiontAssociated	host_height	centimeter, millimeter, meter	15	meter	3	45	m			
+SymbiontAssociated	host_length	centimeter, millimeter, meter	15	centimeter	2	30	cm			
+SymbiontAssociated	host_length	centimeter, millimeter, meter	15	millimeter	2	30	mm			
+SymbiontAssociated	host_length	centimeter, millimeter, meter	15	meter	3	45	m			
+SymbiontAssociated	host_tot_mass	kilogram, gram	17	kilogram	4	68	kg			
+SymbiontAssociated	host_tot_mass	kilogram, gram	17	gram	10	170	g			
+SymbiontAssociated	salinity	practical salinity unit, percentage	17	practical salinity unit	1	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+SymbiontAssociated	salinity	practical salinity unit, percentage	17	percentage	2	34	%			
+SymbiontAssociated	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+SymbiontAssociated	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+SymbiontAssociated	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+SymbiontAssociated	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+SymbiontAssociated	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+SymbiontAssociated	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+WastewaterSludge	alkalinity	milliequivalent per liter, milligram per liter	7	milliequivalent per liter	1	7	mEq/L			
+WastewaterSludge	alkalinity	milliequivalent per liter, milligram per liter	7	milligram per liter	15	105	mg/L			
+WastewaterSludge	biochem_oxygen_dem	milligram per liter	26	milligram per liter	15	390	mg/L			
+WastewaterSludge	chem_oxygen_dem	milligram per liter	26	milligram per liter	15	390	mg/L			
+WastewaterSludge	depth	meter	72	meter	3	216	m			
+WastewaterSludge	efficiency_percent	micromole per liter	24	micromole per liter	8	192	umol/L			
+WastewaterSludge	emulsions	gram per liter	2	gram per liter	4	8	g/L			
+WastewaterSludge	gaseous_substances	micromole per liter	24	micromole per liter	8	192	umol/L			
+WastewaterSludge	indust_eff_percent	percentage	13	percentage	2	26	%			
+WastewaterSludge	inorg_particles	mole per liter, milligram per liter	1	mole per liter	7	7	mol/h			
+WastewaterSludge	inorg_particles	mole per liter, milligram per liter	1	milligram per liter	15	15	mg/L			
+WastewaterSludge	nitrate	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+WastewaterSludge	nitrate	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+WastewaterSludge	nitrate	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+WastewaterSludge	org_particles	gram per liter	2	gram per liter	4	8	g/L			
+WastewaterSludge	phosphate	micromole per liter	24	micromole per liter	8	192	umol/L			
+WastewaterSludge	salinity	practical salinity unit, percentage	17	practical salinity unit	1	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+WastewaterSludge	salinity	practical salinity unit, percentage	17	percentage	2	34	%			
+WastewaterSludge	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+WastewaterSludge	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+WastewaterSludge	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+WastewaterSludge	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+WastewaterSludge	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+WastewaterSludge	sludge_retent_time	hours	1	hours	2	2	h			
+WastewaterSludge	sodium	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+WastewaterSludge	sodium	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+WastewaterSludge	soluble_inorg_mat	gram, microgram, mole per liter, gram per liter, parts per million	2	gram	10	20	g			
+WastewaterSludge	soluble_inorg_mat	gram, microgram, mole per liter, gram per liter, parts per million	2	microgram	3	6	ug			
+WastewaterSludge	soluble_inorg_mat	gram, microgram, mole per liter, gram per liter, parts per million	2	mole per liter	7	14	mol/h			
+WastewaterSludge	soluble_inorg_mat	gram, microgram, mole per liter, gram per liter, parts per million	2	gram per liter	4	8	g/L			
+WastewaterSludge	soluble_inorg_mat	gram, microgram, mole per liter, gram per liter, parts per million	2	parts per million	11	22	[ppm]			
+WastewaterSludge	soluble_org_mat	gram, microgram, mole per liter, gram per liter, parts per million	2	gram	10	20	g			
+WastewaterSludge	soluble_org_mat	gram, microgram, mole per liter, gram per liter, parts per million	2	microgram	3	6	ug			
+WastewaterSludge	soluble_org_mat	gram, microgram, mole per liter, gram per liter, parts per million	2	mole per liter	7	14	mol/h			
+WastewaterSludge	soluble_org_mat	gram, microgram, mole per liter, gram per liter, parts per million	2	gram per liter	4	8	g/L			
+WastewaterSludge	soluble_org_mat	gram, microgram, mole per liter, gram per liter, parts per million	2	parts per million	11	22	[ppm]			
+WastewaterSludge	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	gram	10	30	g			
+WastewaterSludge	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	microgram	3	9	ug			
+WastewaterSludge	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	milligram per liter	15	45	mg/L			
+WastewaterSludge	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	mole per liter	7	21	mol/h			
+WastewaterSludge	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	gram per liter	4	12	g/L			
+WastewaterSludge	suspend_solids	gram, microgram, milligram per liter, mole per liter, gram per liter, part per million	3	part per million	1	3	[ppm]			
+WastewaterSludge	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+WastewaterSludge	tot_nitro	microgram per liter, micromole per liter, milligram per liter	4	microgram per liter	6	24	ug/L			
+WastewaterSludge	tot_nitro	microgram per liter, micromole per liter, milligram per liter	4	micromole per liter	8	32	umol/L			
+WastewaterSludge	tot_nitro	microgram per liter, micromole per liter, milligram per liter	4	milligram per liter	15	60	mg/L			
+WastewaterSludge	tot_phosphate	microgram per liter, micromole per liter	5	microgram per liter	6	30	ug/L			
+WastewaterSludge	tot_phosphate	microgram per liter, micromole per liter	5	micromole per liter	8	40	umol/L			
+Water	alkalinity	milliequivalent per liter, milligram per liter	7	milliequivalent per liter	1	7	mEq/L			
+Water	alkalinity	milliequivalent per liter, milligram per liter	7	milligram per liter	15	105	mg/L			
+Water	aminopept_act	mole per liter per hour	3	mole per liter per hour	1	3	mol/L/h			
+Water	ammonium	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+Water	ammonium	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+Water	ammonium	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+Water	bac_prod	milligram per cubic meter per day	1	milligram per cubic meter per day	3	3	mg/m3/d			
+Water	bac_resp	milligram per cubic meter per day, micromole oxygen per liter per hour	1	milligram per cubic meter per day	3	3	mg/m3/d			
+Water	bac_resp	milligram per cubic meter per day, micromole oxygen per liter per hour	1	micromole oxygen per liter per hour	1	1	umol{Oxygen}/h			
+Water	biomass	ton, kilogram, gram	4	ton	2	8		Imperial = [ston_av]; Metric = t	biomass|microbial_biomass	
+Water	biomass	ton, kilogram, gram	4	kilogram	4	16	kg			
+Water	biomass	ton, kilogram, gram	4	gram	10	40	g			
+Water	bishomohopanol	microgram per liter, microgram per gram	3	microgram per liter	6	18	ug/L			
+Water	bishomohopanol	microgram per liter, microgram per gram	3	microgram per gram	2	6	ug/g			
+Water	bromide	parts per million	6	parts per million	11	66	[ppm]			
+Water	calcium	milligram per liter, micromole per liter, parts per million	6	milligram per liter	15	90	mg/L			
+Water	calcium	milligram per liter, micromole per liter, parts per million	6	micromole per liter	8	48	umol/L			
+Water	calcium	milligram per liter, micromole per liter, parts per million	6	parts per million	11	66	[ppm]			
+Water	chloride	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+Water	chloride	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+Water	chlorophyll	milligram per cubic meter, microgram per liter	4	milligram per cubic meter	2	8	mg/m3			
+Water	chlorophyll	milligram per cubic meter, microgram per liter	4	microgram per liter	6	24	ug/L			
+Water	conduc	milliSiemens per centimeter	4	milliSiemens per centimeter	1	4	mS/cm			
+Water	density	gram per cubic meter, gram per cubic centimeter	5	gram per cubic meter	3	15	g/m3			
+Water	density	gram per cubic meter, gram per cubic centimeter	5	gram per cubic centimeter	1	5	g/cm3			
+Water	depth	meter	72	meter	3	216	m			
+Water	diether_lipids	nanogram per liter	4	nanogram per liter	2	8	ng/L			
+Water	diss_carb_dioxide	micromole per liter, milligram per liter	11	micromole per liter	8	88	umol/L			
+Water	diss_carb_dioxide	micromole per liter, milligram per liter	11	milligram per liter	15	165	mg/L			
+Water	diss_hydrogen	micromole per liter	24	micromole per liter	8	192	umol/L			
+Water	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	microgram per liter	6	36	ug/L			
+Water	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	milligram per liter	15	90	mg/L			
+Water	diss_inorg_carb	microgram per liter, milligram per liter, parts per million	6	parts per million	11	66	[ppm]			
+Water	diss_inorg_nitro	microgram per liter, micromole per liter	5	microgram per liter	6	30	ug/L			
+Water	diss_inorg_nitro	microgram per liter, micromole per liter	5	micromole per liter	8	40	umol/L			
+Water	diss_org_carb	micromole per liter, milligram per liter	11	micromole per liter	8	88	umol/L			
+Water	diss_org_carb	micromole per liter, milligram per liter	11	milligram per liter	15	165	mg/L			
+Water	diss_oxygen	micromole per kilogram, milligram per liter	6	micromole per kilogram	2	12	umol/kg			
+Water	diss_oxygen	micromole per kilogram, milligram per liter	6	milligram per liter	15	90	mg/L			
+Water	down_par	microEinstein per square meter per second, microEinstein per square centimeter per second	1	microEinstein per square meter per second	1	1	{microEinstein}/m2/s			
+Water	down_par	microEinstein per square meter per second, microEinstein per square centimeter per second	1	microEinstein per square centimeter per second	1	1	{microEinstein}/cm2/s			
+Water	elev	meter	72	meter	3	216	m			
+Water	fluor	milligram chlorophyll a per cubic meter, volts	1	milligram chlorophyll a per cubic meter	1	1	mg{chlorophyll}/m3			
+Water	fluor	milligram chlorophyll a per cubic meter, volts	1	volts	1	1	V			
+Water	glucosidase_act	mol per liter per hour	3	mol per liter per hour	1	3	mol/L/h			
+Water	light_intensity	lux	1	lux	3	3	lx			
+Water	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	mole per liter	7	35	mol/h			
+Water	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	milligram per liter	15	75	mg/L			
+Water	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	parts per million	11	55	[ppm]			
+Water	magnesium	mole per liter, milligram per liter, parts per million, micromole per kilogram	5	micromole per kilogram	2	10	umol/kg			
+Water	mean_frict_vel	meter per second	6	meter per second	1	6	m/s			
+Water	mean_peak_frict_vel	meter per second	6	meter per second	1	6	m/s			
+Water	nitrate	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+Water	nitrate	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+Water	nitrate	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+Water	nitrite	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+Water	nitrite	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+Water	nitrite	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+Water	nitro	micromole per liter	24	micromole per liter	8	192	umol/L			
+Water	org_matter	microgram per liter	7	microgram per liter	6	42	ug/L			
+Water	part_org_nitro	microgram per liter, micromole per liter	5	microgram per liter	6	30	ug/L			
+Water	part_org_nitro	microgram per liter, micromole per liter	5	micromole per liter	8	40	umol/L			
+Water	petroleum_hydrocarb	micromole per liter	24	micromole per liter	8	192	umol/L			
+Water	phaeopigments	milligram per cubic meter	3	milligram per cubic meter	2	6	mg/m3			
+Water	phosphate	micromole per liter	24	micromole per liter	8	192	umol/L			
+Water	photon_flux	number of photons per second per unit area	1	number of photons per second per unit area	1	1	umol{photons}/s/m2	“per unit area” Is a dimension specification. “per square meter” would be a unit specification. Note that the example expresses numbers in moles units.	photon_flux	3.926 micromole photons per second per square meter
+Water	potassium	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+Water	potassium	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+Water	pressure	atmosphere	6	atmosphere	2	12	atm			
+Water	primary_prod	milligram per cubic meter per day, gram per square meter per day	1	milligram per cubic meter per day	3	3	mg/m3/d			
+Water	primary_prod	milligram per cubic meter per day, gram per square meter per day	1	gram per square meter per day	1	1	g/m2/d			
+Water	redox_potential	millivolt	3	millivolt	1	3	mV			
+Water	salinity	practical salinity unit, percentage	17	practical salinity unit	1	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+Water	salinity	practical salinity unit, percentage	17	percentage	2	34	%			
+Water	samp_store_temp	degree Celsius	88	degree Celsius	2	176	Cel			
+Water	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milliliter	4	132	mL			
+Water	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	gram	10	330	g			
+Water	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	milligram	3	99	mg			
+Water	samp_vol_we_dna_ext	milliliter, gram, milligram, square centimeter	33	square centimeter	1	33	cm2			
+Water	silicate	micromole per liter	24	micromole per liter	8	192	umol/L			
+Water	size_frac_low	micrometer	7	micrometer	2	14	um			
+Water	size_frac_up	micrometer	7	micrometer	2	14	um			
+Water	sodium	milligram per liter, parts per million	32	milligram per liter	15	480	mg/L			
+Water	sodium	milligram per liter, parts per million	32	parts per million	11	352	[ppm]			
+Water	soluble_react_phosp	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+Water	soluble_react_phosp	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+Water	soluble_react_phosp	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+Water	sulfate	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+Water	sulfate	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+Water	sulfate	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+Water	sulfide	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+Water	sulfide	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+Water	sulfide	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+Water	suspend_part_matter	milligram per liter	26	milligram per liter	15	390	mg/L			
+Water	temp	degree Celsius	88	degree Celsius	2	176	Cel			
+Water	tot_depth_water_col	meter	72	meter	3	216	m			
+Water	tot_diss_nitro	microgram per liter	7	microgram per liter	6	42	ug/L			
+Water	tot_inorg_nitro	microgram per liter	7	microgram per liter	6	42	ug/L			
+Water	tot_nitro	microgram per liter, micromole per liter, milligram per liter	4	microgram per liter	6	24	ug/L			
+Water	tot_nitro	microgram per liter, micromole per liter, milligram per liter	4	micromole per liter	8	32	umol/L			
+Water	tot_nitro	microgram per liter, micromole per liter, milligram per liter	4	milligram per liter	15	60	mg/L			
+Water	tot_part_carb	microgram per liter, micromole per liter	5	microgram per liter	6	30	ug/L			
+Water	tot_part_carb	microgram per liter, micromole per liter	5	micromole per liter	8	40	umol/L			
+Water	tot_phosp	micromole per liter, milligram per liter, parts per million	35	micromole per liter	8	280	umol/L			
+Water	tot_phosp	micromole per liter, milligram per liter, parts per million	35	milligram per liter	15	525	mg/L			
+Water	tot_phosp	micromole per liter, milligram per liter, parts per million	35	parts per million	11	385	[ppm]			
+Water	water_current	cubic meter per second, knots	2	cubic meter per second	1	2	m3/s			
+Water	water_current	cubic meter per second, knots	2	knots	1	2	{nautical_mile}/h		water_current|atmospheric_data	wind speed;9 knots
