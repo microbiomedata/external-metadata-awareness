@@ -1,0 +1,233 @@
+unit_token	credible	notes
+5300020	0	
+african	0	
+ampere-hour	0	
+ampere-turn	0	
+astronomical	0	
+attoampere	0	
+attobarn	0	
+attowatt	0	
+bar	0	
+barn	0	
+barye	0	
+baud	0	
+board-foot	0	
+brazilian	0	
+bushel	0	
+calorie	0	
+carat	0	
+cent	0	
+centavo	0	
+century	0	
+decade	0	
+decibel	0	
+denier	0	
+dimensionless	0	
+dollar	0	
+dozen	0	
+drop	0	
+electronvolt	0	
+ell	0	
+euro	0	
+exaampere	0	
+exabit	0	
+exabyte	0	
+exametre	0	
+exawatt	0	
+exayear	0	
+fathom	0	
+femtoampere	0	
+gal	0	
+gauss	0	
+giga	0	
+gigaampere	0	
+gigafarad	0	
+gigametre	0	
+gram-force	0	
+hartree	0	
+hectolitre	0	
+hectometre	0	
+hectopascal	0	
+hertz	0	
+horsepower-hour	0	
+inverse	0	
+jansky	0	
+kilo	0	
+kiloampere	0	
+kilocalorie	0	
+kilogram-force	0	
+kiloton	0	
+league	0	
+light	0	
+light-year	0	
+maxwell	0	
+mega	0	
+megaampere	0	
+mill	0	
+mille	0	
+millibarn	0	
+millicoulomb	0	
+millijoule	0	
+nanoampere	0	
+nanobarn	0	
+nanometre	0	
+oersted	0	
+of	0	
+peck	0	
+penny	0	
+petabit	0	
+petabyte	0	
+petawatt	0	
+picobarn	0	
+picometre	0	
+pixel	0	
+quintal	0	
+rand	0	
+real	0	
+refrigeration	0	
+ruble	0	
+russian	0	
+rutherford	0	
+shake	0	
+short	0	
+south	0	
+speed	0	
+standard	0	
+statcoulomb	0	
+steradian	0	
+stere	0	
+sterling	0	
+stilb	0	
+stokes	0	
+tablespoon	0	
+teraampere	0	
+terametre	0	
+terayear	0	
+tesla	0	
+the	0	
+to	0	
+ton-force	0	
+tonne	0	
+turn	0	
+volt	0	
+yoctobarn	0	
+yoctometre	0	
+attometre	1	AM in time of day ages
+basis	1	BP age
+point	1	BP age
+byte	1	DAB age
+femtobarn	1	DAFB age
+dime	1	days in age, host_age and more
+petaampere	1	DPA age
+petayear	1	DPA age
+set	1	DPC age, PC diss_oxygen
+franc	1	FSW depth
+swiss	1	FSW depth
+femtowatt	1	FW age
+gross	1	gram samp_size
+gigawatt	1	GW age
+henry	1	hours
+farad	1	hours post fertilizastion in age
+horsepower	1	hours post fertilizastion in age
+base	1	kBP samp_size
+pair	1	kBP samp_size
+megabarn	1	MB age and samp size
+megaton	1	meters depth
+bit	1	Mpb samp_size
+megapixel	1	MPF age
+candela	1	NTU suspend_part_matter
+atomic	1	NTU suspend_part_matter, um
+mass	1	NTU suspend_part_matter, um
+unit	1	NTU suspend_part_matter, um
+petametre	1	PM in time of day ages
+decibar	1	pressure
+roentgen	1	RFU chlorphyll
+pint	1	salinity PSU
+pound-mass	1	samp_size in pounds and ounces
+arc	1	
+per	1	
+acre	1	
+ampere	1	
+angle	1	
+ångström	1	
+atmosphere	1	
+Celsius	1	
+centilitre	1	
+centimetre	1	
+centipoise	1	
+coulomb	1	
+count	1	
+cubic	1	
+curie	1	
+day	1	
+decilitre	1	
+decimetre	1	
+degree	1	
+erg	1	
+fahrenheit	1	
+foot	1	
+gallon	1	
+gigabit	1	
+gigabyte	1	
+gigayear	1	
+gram	1	
+gray	1	
+hectare	1	
+hour	1	
+inch	1	
+joule	1	
+kelvin	1	
+kibibyte	1	
+kilobit	1	
+kilogram	1	
+kilogray	1	
+kilometre	1	
+kilopascal	1	
+kilowatt	1	
+kiloyear	1	
+litre	1	
+lumen	1	
+lux	1	
+megabit	1	
+megabyte	1	
+megapascal	1	
+megayear	1	
+mercury	1	
+metre	1	
+microgram	1	
+micrometre	1	
+microsecond	1	
+mile	1	
+milliampere	1	
+milliampere-hour	1	
+milligram	1	
+millimeter	1	
+millimetre	1	
+millisecond	1	
+millivolt	1	
+minute	1	
+mole	1	
+month	1	
+nanosecond	1	
+nanowatt	1	
+newton	1	
+nucleotide	1	
+ounce	1	
+parts-per-billion	1	
+parts-per-million	1	
+parts-per-trillion	1	
+percentage	1	
+poise	1	
+pound	1	
+revolutions	1	
+second	1	
+siemens	1	
+square	1	
+terabyte	1	
+ton	1	
+unk	1	
+volt-ampere	1	
+watt	1	
+week	1	
+yard	1	
+year	1	

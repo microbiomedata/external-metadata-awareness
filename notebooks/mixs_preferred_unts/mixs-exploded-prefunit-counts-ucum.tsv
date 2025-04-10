@@ -1,0 +1,113 @@
+exploded_prefunit	annotation_times_explosion_count	ucum	notes	slots	example
+angstrom	1	Ao			
+atmosphere	12	atm			
+beats per minute	5	{beats}/min			
+cardinal direction	2		cardinal directions are N, NE, E, etc. Example is compound and should be split.	wind_direction	0 degrees; Northwest
+centimeter	30	cm			
+colony forming units per gram of dry weight	7	[CFU]/g{dry_weight}			
+colony forming units per milliliter	7	[CFU]/mL			
+cP at degree Celsius	2		compound specification, not a single unit. Should probably be expressed as X cP;Y Cel. Note: the schema provides the example in the description	viscosity	3.5 cp; 100 C
+cubic centimeter per cubic centimeter	3	cm3/cm3			
+cubic feet	1	[ft_i]3			
+cubic meter	1	m3			
+cubic meter per day	2	m3/d			
+cubic meter per minute	2	m3/min			
+cubic meter per second	2	m3/s			
+day	11	d			
+days	36	d			
+degree	2	deg		slope_aspect	
+degree Celsius	176	Cel			
+degrees	2	deg	also mentioned in org_count_qpcr_info and pcr_cond	wind_direction	
+degrees API	2	{api_gravity)	*	api	31.1 API
+dpi	3	d{post_infection}		study_timecourse	2 days post inoculation
+ergs per square centimeter per second	3	erg/cm2/s			
+g	1	g			
+gram	330	g			
+gram Carbon per kilogram sample material	5	g{Carbon}/kg{sample_material}			
+gram of air	2	g{air}			
+gram per cubic centimeter	5	g/cm3			
+gram per cubic meter	15	g/m3			
+gram per gram	6	g/g			
+gram per kilogram soil	2	g/kg{soil}			
+gram per liter	12	g/L			
+gram per square meter	1	g/m2			
+gram per square meter per day	1	g/m2/d			
+grams	3	g			
+gray	1	Gy			
+hour	22	h			
+hours	18	h			
+inch	1	[in_i]			
+joule per degree Celsius	3		https://ucum.nlm.nih.gov/ucum-lhc/demo.html says J/Cel is an Attempt to divide by non-ratio unit degree Celsius	ceil_thermal_mass|floor_thermal_mass|wall_thermal_mass	
+kilogram	68	kg			
+kilogram of air	2	kg{air}			
+kilogram per kilogram	1	kg/kg			
+kilogram per metre square	2	kg/m2			
+kilogram per square meter	5	kg/m2			
+kilopascal	2	kPa			
+kilowatt per square metre	1	kW/m2			
+kilowatts per square meter per day	3	kW/m2/d			
+knots	2	{nautical_mile}/h		water_current|atmospheric_data	wind speed;9 knots
+liter	2	L			
+liter per hour	1	L/h			
+liters per second	2	L/s			
+lumens per square meter	1	lm/m2			
+lux	3	lx			
+mD	1	{millidarcy}		permeability	
+meter	216	m			
+meter per second	6	m/s			
+meter per square second	1	m/s2			
+microEinstein per square centimeter per second	1	{microEinstein}/cm2/s			
+microEinstein per square meter per second	1	{microEinstein}/m2/s			
+microgram	9	ug			
+microgram per cubic meter	2	ug/m3			
+microgram per gram	6	ug/g			
+microgram per liter	42	ug/L			
+microliter	5	uL			
+micrometer	14	um			
+micromole oxygen per liter per hour	1	umol{Oxygen}/h			
+micromole per kilogram	12	umol/kg			
+micromole per liter	280	umol/L			
+millibar	1	mbar			
+milliequivalent per liter	7	mEq/L			
+milligram	99	mg			
+milligram chlorophyll a per cubic meter	1	mg{chlorophyll}/m3			
+milligram per cubic meter	8	mg/m3			
+milligram per cubic meter per day	3	mg/m3/d			
+milligram per kilogram	2	mg/kg			
+milligram per liter	525	mg/L			
+milliliter	132	mL			
+millimeter	30	mm			
+millimeter mercury	2	mm[Hg]			
+millimeter per year	1	mm/a			
+milliSiemens per centimeter	4	mS/cm			
+millivolt	3	mV			
+mol m-2 s-1	1	mol/m2/s			
+mol per liter per hour	3	mol/L/h			
+mole per liter	91	mol/h			
+mole per liter per hour	3	mol/L/h			
+nanogram per liter	8	ng/L			
+nanometer	1	nm			
+number of cells per cm^2		{cells}/cm2	see number of cells per gram (or ml or cm^2)		
+number of cells per gram		{cells}/g	see number of cells per gram (or ml or cm^2)		
+number of cells per gram (or ml or cm^2)			Example in description but isn’t aligned with specified preferred units	org_count_qpcr_info	Example: 16S rrna; FWD:ACGTAGCTATGACGT REV:GTGCTAGTCGAGTAC; initial denaturation:90C_5min; denaturation:90C_2min; annealing:52C_30 sec; elongation:72C_30 sec; 90 C for 1 min; final elongation:72C_5min; 30 cycles
+number of cells per ml		{cells}/mL	see number of cells per gram (or ml or cm^2)		
+number of photons per second per unit area	1	umol{photons}/s/m2	“per unit area” Is a dimension specification. “per square meter” would be a unit specification. Note that the example expresses numbers in moles units.	photon_flux	3.926 micromole photons per second per square meter
+part per million	3	[ppm]			
+parts per billion	3	[ppb]			
+parts per million	385	[ppm]			
+per day	1	/d			
+per month	1	/mo			
+per week	1	/wk			
+percent	10	%			
+percentage	34	%			
+pound	1	[lb_av]			
+practical salinity unit	17	{practical_salinity}	In TEOS-10, “PSU” is deprecated; the preferred terminology is “Practical Salinity” with no unit symbol. See also http://qudt.org/vocab/unit/PSU	salinity	25 practical salinity unit
+rad	1	RAD			
+square centimeter	33	cm2			
+square feet	1	[ft_i]2			
+square meter	12	m2			
+ton	8		Imperial = [ston_av]; Metric = t	biomass|microbial_biomass	
+volts	1	V			
+weeks	1	wk			
+year	22	a	!		
+years	1	a	!		
