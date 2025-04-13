@@ -131,7 +131,7 @@ local/nmdc-prod-mongodb-empirical-collection-names.txt:
 local/nmdc-prod-api-advertised-collection-stats.json:
 	curl -sSL 'https://api.microbiomedata.org/nmdcschema/collection_stats' | jq . > $@
 
-local/dumped-from-authenticated: local/nmdc-consensus-collections.txt
+local/dumped-from-authenticated: local/nmdc-consensus-collections.txt # 06:31 -
 	mkdir -p $@
 	( \
 	  set -a && . local/.env.nmdc-production && set +a && \
@@ -147,8 +147,8 @@ local/dumped-from-authenticated: local/nmdc-consensus-collections.txt
 	  done < $< \
 	)
 
-local/restored-to-unauthenticated: local/dumped-from-authenticated
-	@mkdir -p $@
+.PHONY: restore-to-unauthenticated
+restore-to-unauthenticated: local/dumped-from-authenticated
 	( \
 	  set -a && . local/.env.nmdc-production && set +a && \
 	  echo "Dropping database $$MONGO_DB..."; \
