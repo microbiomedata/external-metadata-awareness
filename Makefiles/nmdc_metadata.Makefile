@@ -101,6 +101,101 @@ local_nmdc_mongodb_restore: downloads/nmdc_select_mongodb_dump.gz
 		--archive=$< \
 		--db nmdc
 
+####
+
+local/nmdc-schema-known-collections.txt:
+	curl \
+		-sSL 'https://raw.githubusercontent.com/microbiomedata/nmdc-schema/refs/tags/v11.5.1/nmdc_schema/nmdc_materialized_patterns.yaml' | \
+		yq '.classes.Database.slots.[]' | sort > $@
+
+local/nmdc-prod-api-advertised-collections.txt:
+	curl \
+		-sSL 'https://api.microbiomedata.org/nmdcschema/collection_stats' | \
+			jq -r '.[].ns' | sed 's/nmdc\.//' | sort > $@
+
+# this doesn't tell us anything  about the size of the collections!
+local/nmdc-consensus-collections.txt: local/nmdc-prod-api-advertised-collections.txt local/nmdc-schema-known-collections.txt
+	comm -12 $^ | sort > $@
+
+local/nmdc-prod-mongodb-empirical-collection-names.txt:
+	( \
+	  set -a && . local/.env.nmdc-production && set +a && \
+	  mongosh "mongodb://localhost:$$MONGO_PORT/?directConnection=true&authMechanism=SCRAM-SHA-256&authSource=admin" \
+	    --username "$$MONGO_USERNAME" \
+	    --password "$$MONGO_PASSWORD" \
+	    --quiet \
+	    --eval 'db = db.getSiblingDB("nmdc"); print(JSON.stringify(db.getCollectionNames()))' \
+	    | jq -r '.[]' | sort > $@ \
+	)
+
+local/nmdc-prod-api-advertised-collection-stats.json:
+	curl -sSL 'https://api.microbiomedata.org/nmdcschema/collection_stats' | jq . > $@
+
+local/dumped-from-authenticated: local/nmdc-consensus-collections.txt # 06:31 -
+	mkdir -p $@
+	( \
+	  set -a && . local/.env.nmdc-production && set +a && \
+	  while read collection; do \
+	    echo "Dumping $$collection..."; \
+	    mongodump \
+	      --uri="mongodb://localhost:$$MONGO_PORT/?directConnection=true&authMechanism=SCRAM-SHA-256&authSource=admin" \
+	      --username="$$MONGO_USERNAME" \
+	      --password="$$MONGO_PASSWORD" \
+	      --db="$$MONGO_DB" \
+	      --collection="$$collection" \
+	      --out="$@"; \
+	  done < $< \
+	)
+
+.PHONY: restore-to-unauthenticated
+restore-to-unauthenticated: local/dumped-from-authenticated
+	( \
+	  set -a && . local/.env.nmdc-production && set +a && \
+	  echo "Dropping database $$MONGO_DB..."; \
+	  mongosh "mongodb://localhost:27017" --quiet --eval 'db.getSiblingDB("'"$$MONGO_DB"'").dropDatabase()'; \
+	  for bson_file in $</$${MONGO_DB}/*.bson; do \
+	    collection=$$(basename $$bson_file .bson); \
+	    echo "Restoring $$collection into $$MONGO_DB..."; \
+	    mongorestore \
+	      --host=localhost \
+	      --port=27017 \
+	      --db="$$MONGO_DB" \
+	      --collection="$$collection" \
+	      "$$bson_file"; \
+	  done \
+	)
+
+.PHONY: flatten-nmdc
+flatten-nmdc:
+	$(RUN) python external_metadata_awareness/flatten_nmdc_collections.py \
+		--mongo-uri mongodb://localhost:27017/nmdc
+
+# Use authenticated connection from .env file
+.PHONY: flatten-nmdc-auth
+flatten-nmdc-auth:
+	$(RUN) python external_metadata_awareness/flatten_nmdc_collections.py \
+		--auth \
+		--env-file local/.env \
+		--mongo-db nmdc
+
+# These collections are created by the flatten-nmdc target
+# NON _agg/_set COLLECTIONS
+#  flattened_biosample
+#  flattened_biosample_chem_administration
+#  flattened_biosample_field_counts
+#  flattened_study
+#  flattened_study_associated_dois
+#  flattened_study_has_credit_associations
+
+  #notes
+
+####
+
+.PHONY: nmdc-prod-to-other
+nmdc-prod-to-other:
+	mkdir -p local/nmdc-prod-to-other
+
+
 downloads/nmdc_select_mongodb_dump.gz:
 	# requires opening a ssh tunnel to the NMDC MongoDB, which requires NERSC credentials
 	#   and NMDC MongoDB credentials
