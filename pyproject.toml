@@ -7,19 +7,16 @@ readme = "CLAUDE.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-# Removed: textdistance = "^4.6.3" - Was only used by merge_in_reference_data.py
 click = "^8.1.7"
 db-dtypes = "^1.4.1"
 duckdb = "^1.0.0"
 duckdb-engine = "^0.14.0"
-#floweaver = "^2.0.1"
 folium = "^0.19.4" # maps
 git-filter-repo = "^2.47.0"
 google-cloud-bigquery = "^3.25.0"
 google-cloud-bigquery-storage = "^2.28.0"
 gsheet-pandas = "^0.2.8"
 gspread = "^6.1.2"
-#holoviews = "^1.20.2"
 jupyter = "^1.1.1"
 llm = "^0.15"
 lxml = "^5.3.0"
