@@ -169,12 +169,12 @@ restore-to-unauthenticated: local/dumped-from-authenticated
 .PHONY: restore-to-authenticated
 restore-to-authenticated: local/dumped-from-authenticated
 	( \
-	  set -a && . local/.env.ncbi-loadbalancer && set +a && \
+	  set -a && . local/.env.ncbi-loadbalancer.27778 && set +a && \
 	  for bson_file in $</$${SOURCE_MONGO_DB}/*.bson; do \
 	    collection=$$(basename $$bson_file .bson); \
 	    echo "Restoring $$collection into $$DEST_MONGO_DB..."; \
 	    mongorestore \
-	      --uri="mongodb://$$MONGO_USERNAME:$$MONGO_PASSWORD@$$MONGO_HOST:$$MONGO_PORT/$$DEST_MONGO_DB?authSource=admin&authMechanism=SCRAM-SHA-256&directConnection=true"
+	      --uri="mongodb://$$MONGO_USERNAME:$$MONGO_PASSWORD@$$MONGO_HOST:$$MONGO_PORT/$$DEST_MONGO_DB?authSource=admin&authMechanism=SCRAM-SHA-256&directConnection=true" \
 	      --collection="$$collection" \
 	      "$$bson_file"; \
 	  done \
@@ -188,7 +188,7 @@ flatten-nmdc:
 .PHONY: flatten-nmdc-auth
 flatten-nmdc-auth:
 	( \
-	  set -a && . local/.env.ncbi-loadbalancer && set +a && \
+	  set -a && . local/.env.ncbi-loadbalancer.27778 && set +a && \
 		$(RUN) python external_metadata_awareness/flatten_nmdc_collections.py \
 			--mongo-uri "mongodb://$$MONGO_USERNAME:$$MONGO_PASSWORD@$$MONGO_HOST:$$MONGO_PORT/$$DEST_MONGO_DB?authSource=admin&authMechanism=SCRAM-SHA-256&directConnection=true" \
 	)
@@ -198,11 +198,11 @@ flatten-nmdc-auth:
 .PHONY: nmdc-submissions-to-mongo
 nmdc-submissions-to-mongo:
 	( \
-	  set -a && . local/.env.ncbi-loadbalancer && set +a && \
+	  set -a && . local/.env.ncbi-loadbalancer.27778.submissions && set +a && \
 		$(RUN) python external_metadata_awareness/nmdc-submissions-to-mongo.py \
 			run-all \
 			--mongo-url "mongodb://$$MONGO_USERNAME:$$MONGO_PASSWORD@$$MONGO_HOST:$$MONGO_PORT/$$DEST_MONGO_DB?authSource=admin&authMechanism=SCRAM-SHA-256&directConnection=true" \
-			--env-path local/.env.ncbi-loadbalancer \
+			--env-path local/.env.ncbi-loadbalancer.27778.submissions \
 			--output-file nmdc-submissions-to-mongo.tsv \
 	)
 
