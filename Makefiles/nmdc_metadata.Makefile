@@ -120,7 +120,7 @@ local/nmdc-consensus-collections.txt: local/nmdc-prod-api-advertised-collections
 local/nmdc-prod-mongodb-empirical-collection-names.txt:
 	( \
 	  set -a && . local/.env.nmdc-production && set +a && \
-	  mongosh "mongodb://localhost:$$MONGO_PORT/?directConnection=true&authMechanism=SCRAM-SHA-256&authSource=admin" \
+	  mongosh "mongodb://$$MONGO_HOST:$$MONGO_PORT/?directConnection=true&authMechanism=SCRAM-SHA-256&authSource=admin" \
 	    --username "$$MONGO_USERNAME" \
 	    --password "$$MONGO_PASSWORD" \
 	    --quiet \
@@ -157,9 +157,24 @@ restore-to-unauthenticated: local/dumped-from-authenticated
 	    collection=$$(basename $$bson_file .bson); \
 	    echo "Restoring $$collection into $$MONGO_DB..."; \
 	    mongorestore \
-	      --host=localhost \
+	      --host=$$MONGO_HOST \
 	      --port=27017 \
 	      --db="$$MONGO_DB" \
+	      --collection="$$collection" \
+	      "$$bson_file"; \
+	  done \
+	)
+
+
+.PHONY: restore-to-authenticated
+restore-to-authenticated: local/dumped-from-authenticated
+	( \
+	  set -a && . local/.env.ncbi-loadbalancer && set +a && \
+	  for bson_file in $</$${SOURCE_MONGO_DB}/*.bson; do \
+	    collection=$$(basename $$bson_file .bson); \
+	    echo "Restoring $$collection into $$DEST_MONGO_DB..."; \
+	    mongorestore \
+	      --uri="mongodb://$$MONGO_USERNAME:$$MONGO_PASSWORD@$$MONGO_HOST:$$MONGO_PORT/$$DEST_MONGO_DB?authSource=admin&authMechanism=SCRAM-SHA-256&directConnection=true"
 	      --collection="$$collection" \
 	      "$$bson_file"; \
 	  done \
@@ -170,24 +185,26 @@ flatten-nmdc:
 	$(RUN) python external_metadata_awareness/flatten_nmdc_collections.py \
 		--mongo-uri mongodb://localhost:27017/nmdc
 
-# Use authenticated connection from .env file
 .PHONY: flatten-nmdc-auth
 flatten-nmdc-auth:
-	$(RUN) python external_metadata_awareness/flatten_nmdc_collections.py \
-		--auth \
-		--env-file local/.env \
-		--mongo-db nmdc
-
-# These collections are created by the flatten-nmdc target
-# NON _agg/_set COLLECTIONS
-#  flattened_biosample
-#  flattened_biosample_chem_administration
-#  flattened_biosample_field_counts
-#  flattened_study
-#  flattened_study_associated_dois
-#  flattened_study_has_credit_associations
+	( \
+	  set -a && . local/.env.ncbi-loadbalancer && set +a && \
+		$(RUN) python external_metadata_awareness/flatten_nmdc_collections.py \
+			--mongo-uri "mongodb://$$MONGO_USERNAME:$$MONGO_PASSWORD@$$MONGO_HOST:$$MONGO_PORT/$$DEST_MONGO_DB?authSource=admin&authMechanism=SCRAM-SHA-256&directConnection=true" \
+	)
 
   #notes
+
+.PHONY: nmdc-submissions-to-mongo
+nmdc-submissions-to-mongo:
+	( \
+	  set -a && . local/.env.ncbi-loadbalancer && set +a && \
+		$(RUN) python external_metadata_awareness/nmdc-submissions-to-mongo.py \
+			run-all \
+			--mongo-url "mongodb://$$MONGO_USERNAME:$$MONGO_PASSWORD@$$MONGO_HOST:$$MONGO_PORT/$$DEST_MONGO_DB?authSource=admin&authMechanism=SCRAM-SHA-256&directConnection=true" \
+			--env-path local/.env.ncbi-loadbalancer \
+			--output-file nmdc-submissions-to-mongo.tsv \
+	)
 
 ####
 
