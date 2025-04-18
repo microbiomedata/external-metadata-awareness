@@ -217,7 +217,10 @@ def cli():
 
 
 @cli.command()
-@click.option('--mongo_uri', '-m', type=str, required=True, help='MongoDB connection URI')
+@click.option('--mongo_uri', '-m', type=str, required=False, default=None, help='MongoDB connection URI')
+@click.option('--mongo_host', type=str, default='localhost', help='MongoDB host (used if mongo_uri not provided)')
+@click.option('--mongo_port', type=int, default=27017, help='MongoDB port (used if mongo_uri not provided)')
+@click.option('--env_file', type=str, default=None, help='Path to .env file for MongoDB credentials')
 @click.option('--db_name', '-d', type=str, required=True, help='Name of the MongoDB database')
 @click.option('--collection', '-c', type=str, required=True, help='Name of the MongoDB collection')
 @click.option('--duckdb_file', '-f', type=click.Path(exists=False), required=True,
@@ -227,9 +230,15 @@ def cli():
 @click.option('--max_docs', '-x', type=int, default=None,
               help='Maximum number of documents to process (default: no limit)')
 @click.option('--batch_size', '-b', type=int, default=20000, help='Batch size for processing data (default: 20000)')
-def extract(mongo_uri, db_name, collection, duckdb_file, paths, max_docs, batch_size):
+def extract(mongo_uri, mongo_host, mongo_port, env_file, db_name, collection, duckdb_file, paths, max_docs, batch_size):
     """Extract data from MongoDB and store it in a DuckDB database."""
-    client = pymongo.MongoClient(mongo_uri)
+    from mongodb_connection import get_mongo_client
+    client = get_mongo_client(
+        mongo_uri=mongo_uri,
+        host=mongo_host,
+        port=mongo_port,
+        env_file=env_file
+    )
     db = client[db_name]
     collection = db[collection]
 

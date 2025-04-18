@@ -1,9 +1,12 @@
 import time
+import os
+from pathlib import Path
 from typing import Optional
 
 import click
 from pymongo import MongoClient
 import lxml.etree as ET
+from mongodb_connection import get_mongo_client
 
 
 @click.command()
@@ -16,12 +19,15 @@ import lxml.etree as ET
               help='Maximum number of elements to process.')
 @click.option('--anticipated-last-id', default=45000000, type=int,
               help='Anticipated last ID for progress calculation.')
-@click.option('--mongo-host', default='localhost', help='MongoDB host address.')
-@click.option('--mongo-port', default=27017, type=int, help='MongoDB port.')
+@click.option('--mongo-uri', default=None, help='MongoDB connection URI. Overrides host/port if provided.')
+@click.option('--mongo-host', default='localhost', help='MongoDB host address (used if mongo-uri not provided).')
+@click.option('--mongo-port', default=27017, type=int, help='MongoDB port (used if mongo-uri not provided).')
+@click.option('--env-file', default=None, help='Path to .env file for MongoDB credentials.')
 def load_xml_to_mongodb(file_path: str, db_name: str, collection_name: str, node_type: str,
                         id_field: str, max_elements: Optional[int] = None,
-                        anticipated_last_id: Optional[int] = None, mongo_host: str = 'localhost',
-                        mongo_port: int = 27017):
+                        anticipated_last_id: Optional[int] = None, mongo_uri: Optional[str] = None,
+                        mongo_host: str = 'localhost', mongo_port: int = 27017,
+                        env_file: Optional[str] = None):
     """
     Loads data from an XML file into MongoDB, preserving the nested structure.
 
@@ -50,7 +56,12 @@ def load_xml_to_mongodb(file_path: str, db_name: str, collection_name: str, node
         return doc
 
     try:
-        client = MongoClient(host=mongo_host, port=mongo_port)
+        client = get_mongo_client(
+            mongo_uri=mongo_uri,
+            host=mongo_host,
+            port=mongo_port,
+            env_file=env_file
+        )
         db = client[db_name]
         collection = db[collection_name]
 
