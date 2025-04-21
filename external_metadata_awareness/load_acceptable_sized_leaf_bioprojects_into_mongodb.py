@@ -3,11 +3,12 @@ import lxml.etree as ET
 import xmltodict
 import json
 import os
-from pymongo import MongoClient
-import bson
 import time
+import sys
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import urlparse
+from external_metadata_awareness.mongodb_connection import get_mongo_client
 
 MAX_BSON_SIZE = 16 * 1024 * 1024  # MongoDB max document size (16MB)
 
@@ -60,19 +61,60 @@ def save_to_json_file(data, directory, filename):
     return filepath
 
 
-def parse_and_insert(xml_file, mongo_uri, db_name, project_collection, submission_collection, progress_interval, oversize_dir):
-    """Parses an NCBI BioProject XML file and inserts both `/PackageSet/Package/Project/Project` and `/PackageSet/Package/Project` paths into MongoDB."""
+def extract_db_name_from_uri(uri):
+    """Extract database name from MongoDB URI."""
+    if not uri:
+        return None
 
-    client = MongoClient(mongo_uri)
+    if not uri.startswith("mongodb://"):
+        click.echo("Error: URI must start with 'mongodb://'", err=True)
+        sys.exit(1)
+
+    parsed = urlparse(uri)
+
+    # Get database name if present
+    if parsed.path and parsed.path != "/":
+        # Remove leading slash and anything after ? (query params)
+        db_name = parsed.path.lstrip("/")
+        if "?" in db_name:
+            db_name = db_name.split("?")[0]
+        return db_name
+
+    return None
+
+
+def parse_and_insert(xml_file, uri, project_collection, submission_collection, progress_interval, oversize_dir,
+                     env_file=None, verbose=False):
+    """Parses an NCBI BioProject XML file and inserts both `/PackageSet/Package/Project/Project` and `/PackageSet/Package/Project` paths into MongoDB."""
+    # Extract database name from URI
+    db_name = extract_db_name_from_uri(uri)
+    if not db_name:
+        click.echo("Error: No database name specified in URI", err=True)
+        sys.exit(1)
+
+    click.echo("Attempting to connect to MongoDB...")
+    client = get_mongo_client(mongo_uri=uri, env_file=env_file, debug=verbose)
+
+    # Print connection information
+    if verbose:
+        click.echo(f"MongoDB client address: {client.address}")
+        click.echo(f"Using database: {db_name}")
+
     db = client[db_name]
     project_col = db[project_collection]
     submission_col = db[submission_collection]
-    
+
     # Ensure oversize directories exist
+    ensure_dir_exists(oversize_dir)
     oversize_project_dir = os.path.join(oversize_dir, "projects")
     oversize_submission_dir = os.path.join(oversize_dir, "submissions")
     ensure_dir_exists(oversize_project_dir)
     ensure_dir_exists(oversize_submission_dir)
+
+    # Check if the XML file exists
+    if not os.path.exists(xml_file):
+        click.echo(f"Error: XML file '{xml_file}' not found", err=True)
+        sys.exit(1)
 
     context = ET.iterparse(xml_file, events=("start", "end"))
     parent_stack = []
@@ -83,17 +125,17 @@ def parse_and_insert(xml_file, mongo_uri, db_name, project_collection, submissio
     total_projects_processed = 0
     total_submissions_processed = 0
     start_time = time.time()
-    
+
     # Dictionary to track bioproject accessions for each package
     # Key: Package identifier (using element id or path)
     # Value: List of bioproject accessions
     package_bioprojects = {}
     current_package_id = None
-    
+
     for event, elem in context:
         if event == "start":
             parent_stack.append(elem.tag)
-            
+
             # When we start a new Package, create a new entry for tracking bioprojects
             if elem.tag == "Package" and len(parent_stack) == 2 and parent_stack[-2:] == ["PackageSet", "Package"]:
                 current_package_id = elem.get("id", str(id(elem)))  # Use element's id attribute or object id
@@ -102,8 +144,8 @@ def parse_and_insert(xml_file, mongo_uri, db_name, project_collection, submissio
         elif event == "end":
             # Handle /PackageSet/Package/Project/Project (Project collection)
             if parent_stack[-1] == "Project" and len(parent_stack) >= 4 and parent_stack[-4:] == ["PackageSet",
-                                                                                                 "Package", "Project",
-                                                                                                 "Project"]:
+                                                                                                  "Package", "Project",
+                                                                                                  "Project"]:
                 total_projects_processed += 1
 
                 project_dict = xmltodict.parse(ET.tostring(elem, encoding="utf-8")).get("Project", {})
@@ -113,7 +155,7 @@ def parse_and_insert(xml_file, mongo_uri, db_name, project_collection, submissio
                     elem.clear()
                     parent_stack.pop()
                     continue
-                
+
                 # Extract project accession and add to the package's list
                 project_id = get_project_id(project_dict)
                 if current_package_id and project_id != "unknown":
@@ -122,11 +164,11 @@ def parse_and_insert(xml_file, mongo_uri, db_name, project_collection, submissio
                 bson_size = sum(len(str(value)) for value in project_dict.values()) + 500
                 if bson_size > MAX_BSON_SIZE:
                     oversize_projects += 1
-                    
+
                     # Save oversized project to file
                     filename = f"project_{project_id}_{int(time.time())}.json"
                     saved_path = save_to_json_file(project_dict, oversize_project_dir, filename)
-                    
+
                     # Insert reference to the file in MongoDB
                     project_col.insert_one({
                         "ProjectID": project_dict.get("ProjectID", {}),
@@ -134,7 +176,8 @@ def parse_and_insert(xml_file, mongo_uri, db_name, project_collection, submissio
                         "file_path": saved_path,
                         "size_bytes": bson_size
                     })
-                    click.echo(f"[{datetime.utcnow().isoformat()}] Oversized project (ID: {project_id}), saved to {filename}")
+                    click.echo(
+                        f"[{datetime.utcnow().isoformat()}] Oversized project (ID: {project_id}), saved to {filename}")
                 else:
                     project_col.insert_one(project_dict)
                     inserted_projects += 1
@@ -143,8 +186,8 @@ def parse_and_insert(xml_file, mongo_uri, db_name, project_collection, submissio
 
             # Handle /PackageSet/Package/Project (Submission collection)
             elif parent_stack[-1] == "Project" and len(parent_stack) >= 3 and parent_stack[-3:] == ["PackageSet",
-                                                                                                   "Package",
-                                                                                                   "Project"]:
+                                                                                                    "Package",
+                                                                                                    "Project"]:
                 total_submissions_processed += 1
 
                 submission_dict = xmltodict.parse(ET.tostring(elem, encoding="utf-8")).get("Project", {})
@@ -154,7 +197,7 @@ def parse_and_insert(xml_file, mongo_uri, db_name, project_collection, submissio
                     elem.clear()
                     parent_stack.pop()
                     continue
-                
+
                 # Add bioproject_accessions field to the submission document
                 if current_package_id and current_package_id in package_bioprojects:
                     submission_dict["bioproject_accessions"] = package_bioprojects[current_package_id]
@@ -163,7 +206,7 @@ def parse_and_insert(xml_file, mongo_uri, db_name, project_collection, submissio
                 if bson_size > MAX_BSON_SIZE:
                     oversize_submissions += 1
                     submission_id = get_submission_id(submission_dict)
-                    
+
                     # Extract bioproject accessions for the reference document
                     bioproject_accessions = []
                     if current_package_id and current_package_id in package_bioprojects:
@@ -173,7 +216,7 @@ def parse_and_insert(xml_file, mongo_uri, db_name, project_collection, submissio
                         # Save oversized submission to file
                         filename = f"submission_{submission_id}_{int(time.time())}.json"
                         saved_path = save_to_json_file(submission_dict, oversize_submission_dir, filename)
-                        
+
                         # Insert reference to the file in MongoDB
                         submission_col.insert_one({
                             "submission_id": submission_id,
@@ -182,13 +225,14 @@ def parse_and_insert(xml_file, mongo_uri, db_name, project_collection, submissio
                             "file_path": saved_path,
                             "size_bytes": bson_size
                         })
-                        click.echo(f"[{datetime.utcnow().isoformat()}] Oversized submission (ID: {submission_id}), saved to {filename}")
+                        click.echo(
+                            f"[{datetime.utcnow().isoformat()}] Oversized submission (ID: {submission_id}), saved to {filename}")
                     else:
                         # Even without submission_id, save the file with a timestamp
                         timestamp = int(time.time())
                         filename = f"submission_unknown_{timestamp}.json"
                         saved_path = save_to_json_file(submission_dict, oversize_submission_dir, filename)
-                        
+
                         # Insert reference to the file in MongoDB
                         submission_col.insert_one({
                             "timestamp": timestamp,
@@ -197,13 +241,14 @@ def parse_and_insert(xml_file, mongo_uri, db_name, project_collection, submissio
                             "file_path": saved_path,
                             "size_bytes": bson_size
                         })
-                        click.echo(f"[{datetime.utcnow().isoformat()}] Oversized submission without ID, saved to {filename}")
+                        click.echo(
+                            f"[{datetime.utcnow().isoformat()}] Oversized submission without ID, saved to {filename}")
                 else:
                     submission_col.insert_one(submission_dict)
                     inserted_submissions += 1
 
                 elem.clear()
-                
+
             # When a Package element ends, clean up its tracking entry to save memory
             elif elem.tag == "Package" and len(parent_stack) == 2 and parent_stack[-2:] == ["PackageSet", "Package"]:
                 if current_package_id and current_package_id in package_bioprojects:
@@ -228,35 +273,58 @@ def parse_and_insert(xml_file, mongo_uri, db_name, project_collection, submissio
 
 
 @click.command()
-@click.argument("xml_file", type=click.Path(exists=True))
-@click.option("--mongo-uri", default="mongodb://localhost:27017/", help="MongoDB connection URI.")
-@click.option("--db-name", default="ncbi_bioprojects", help="MongoDB database name.")
-@click.option("--project-collection", default="projects",
-              help="MongoDB collection for /PackageSet/Package/Project/Project.")
-@click.option("--submission-collection", default="submissions",
-              help="MongoDB collection for /PackageSet/Package/Project.")
-@click.option("--progress-interval", default=10, type=int, help="Progress report interval in seconds.")
-@click.option("--oversize-dir", default="local/oversize", 
-              help="Directory to save oversized projects and submissions.")
+@click.option("--xml-file", required=True, type=click.Path(exists=True), help="XML file containing BioProject data")
+@click.option("--uri", required=True,
+              help="MongoDB connection URI (must start with mongodb:// and include database name)")
+@click.option("--env-file", help="Path to .env file for MongoDB credentials")
+@click.option("--project-collection", default="bioprojects",
+              help="MongoDB collection for /PackageSet/Package/Project/Project")
+@click.option("--submission-collection", default="bioprojects_submissions",
+              help="MongoDB collection for /PackageSet/Package/Project")
+@click.option("--progress-interval", default=10, type=int, help="Progress report interval in seconds")
+@click.option("--oversize-dir", default="local/oversize",
+              help="Directory to save oversized projects and submissions")
 @click.option("--clear-collections", is_flag=True, default=False,
-              help="Clear the project and submission collections before inserting new data.")
-def main(xml_file, mongo_uri, db_name, project_collection, submission_collection, progress_interval, oversize_dir, clear_collections):
-    """CLI to process NCBI BioProject XML into MongoDB: both projects and submissions.
-    
+              help="Clear the project and submission collections before inserting new data")
+@click.option("--verbose", is_flag=True, default=False, help="Enable verbose output for MongoDB connection")
+def main(xml_file, uri, env_file, project_collection, submission_collection,
+         progress_interval, oversize_dir, clear_collections, verbose):
+    """Process NCBI BioProject XML into MongoDB.
+
+    This tool parses a BioProject XML file and loads the data into a MongoDB database.
+    The database name must be specified in the URI (mongodb://host:port/database).
+
     NOTE: This script does NOT clear collections by default! Use --clear-collections to drop
-    the target collections before inserting new data, or manually clear them with:
-    
-    mongosh --eval "db.getSiblingDB('db_name').collection_name.drop()"
+    the target collections before inserting new data.
     """
+    # Extract database name from URI for verification
+    db_name = extract_db_name_from_uri(uri)
+    if not db_name:
+        click.echo("Error: No database name specified in URI. Format should be: mongodb://host:port/database", err=True)
+        sys.exit(1)
+
+    if verbose:
+        click.echo(f"Verbose mode enabled")
+        click.echo(f"MongoDB URI: {uri}")
+        click.echo(f"Database name from URI: {db_name}")
+        click.echo(f"Environment file: {env_file}")
+        click.echo(f"Collections: {project_collection}, {submission_collection}")
+        click.echo(f"Oversize directory: {oversize_dir}")
+
+    # Ensure oversize dir exists
+    ensure_dir_exists(oversize_dir)
+
     if clear_collections:
-        client = MongoClient(mongo_uri)
+        client = get_mongo_client(mongo_uri=uri, env_file=env_file, debug=verbose)
         db = client[db_name]
         click.echo(f"Clearing collection: {project_collection}")
         db[project_collection].drop()
         click.echo(f"Clearing collection: {submission_collection}")
         db[submission_collection].drop()
-        
-    parse_and_insert(xml_file, mongo_uri, db_name, project_collection, submission_collection, progress_interval, oversize_dir)
+        client.close()
+
+    parse_and_insert(xml_file, uri, project_collection, submission_collection,
+                     progress_interval, oversize_dir, env_file, verbose)
 
 
 if __name__ == "__main__":

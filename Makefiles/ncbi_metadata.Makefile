@@ -102,6 +102,18 @@ load-biosamples-into-mongo: local/biosample_set.xml
 		--mongo-port $(MONGO_PORT)
 	date
 
+
+load-biosamples-into-remote-mongo: local/biosample_set.xml
+	date
+	$(RUN) xml-to-mongo \
+		--file-path $< \
+		--id-field id \
+		--mongo-uri 'mongodb://localhost:27778/staging?directConnection=true&authMechanism=SCRAM-SHA-256&authSource=admin' \
+		--collection-name biosamples \
+		--anticipated-last-id $(BIOSAMPLES_MAX_DOCS) \
+		--max-elements $(BIOSAMPLES_MAX_DOCS)
+	date
+
 local/biosample-count-mongodb.txt:
 	date && mongosh --eval "db.getSiblingDB('$(MONGO_DB)').biosamples.countDocuments()" > $@ && date # 1 minute # how to use Makefile variables here?
 
@@ -214,11 +226,24 @@ sra_accession_pairs_tsv_to_mongo: downloads/sra_accession_pairs.tsv
 
 load_acceptable_sized_leaf_bioprojects_into_mongodb: downloads/bioproject.xml
 	$(RUN) load-bioprojects-into-mongodb \
-		--mongo-uri mongodb://$(MONGO_HOST):$(MONGO_PORT) \
-		--db-name $(MONGO_DB) \
-		--project-collection bioprojects \
-		--submission-collection bioprojects_submissions \
-		--oversize-dir local/oversize $<
+       --xml-file $< \
+       --uri 'mongodb://localhost:27017/ncbi_metadata' \
+       --project-collection bioprojects \
+       --submission-collection bioprojects_submissions \
+       --clear-collections \
+       --oversize-dir local/oversize-bioprojects \
+       --verbose
+
+load_acceptable_sized_leaf_bioprojects_into_remote_mongodb: downloads/bioproject.xml
+	$(RUN) load-bioprojects-into-mongodb \
+       --xml-file $< \
+       --uri 'mongodb://localhost:27778/ncbi_metadata?directConnection=true&authMechanism=SCRAM-SHA-256&authSource=admin' \
+       --project-collection bioprojects \
+       --submission-collection bioprojects_submissions \
+       --clear-collections \
+       --env-file local/.env.27778.minimal \
+       --oversize-dir local/oversize-bioprojects \
+       --verbose
 
 local/bioproject_xpath_counts.json: downloads/bioproject.xml
 	poetry run count-xml-paths \
