@@ -6,7 +6,7 @@ from typing import Optional
 import click
 from pymongo import MongoClient
 import lxml.etree as ET
-from mongodb_connection import get_mongo_client
+from external_metadata_awareness.mongodb_connection import get_mongo_client
 
 
 @click.command()
@@ -58,8 +58,6 @@ def load_xml_to_mongodb(file_path: str, db_name: str, collection_name: str, node
     try:
         client = get_mongo_client(
             mongo_uri=mongo_uri,
-            host=mongo_host,
-            port=mongo_port,
             env_file=env_file
         )
         db = client[db_name]
