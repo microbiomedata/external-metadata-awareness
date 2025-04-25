@@ -10,10 +10,10 @@ downloads/ncbi-biosample-attributes.xml:
 downloads/ncbi-biosample-packages.xml:
 	$(WGET) -O $@ "https://www.ncbi.nlm.nih.gov/biosample/docs/packages/?format=xml"
 
-local/ncbi-biosample-packages.csv: downloads/ncbi-biosample-packages.xml
-	$(RUN) ncbi-packages-csv-report \
-	--xml-file $< \
-	--output-file $@
+#local/ncbi-biosample-packages.csv: downloads/ncbi-biosample-packages.xml
+#	$(RUN) ncbi-packages-csv-report \
+#	--xml-file $< \
+#	--output-file $@
 
 .PHONY: load-packages-into-mongo
 load-packages-into-mongo: downloads/ncbi-biosample-packages.xml
@@ -28,7 +28,7 @@ load-packages-into-mongo: downloads/ncbi-biosample-packages.xml
 		--mongo-port $(MONGO_PORT)
 	date
 
-.PHONY: load-packages-into-mongo
+.PHONY: load-attributes-into-mongo
 load-attributes-into-mongo: downloads/ncbi-biosample-attributes.xml
 	date
 	$(RUN) xml-to-mongo \

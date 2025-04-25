@@ -236,7 +236,7 @@ def process_submissions(mongo_url, output_file):
     ever_seen = set()
 
     # Build ontology adapters and load labels/obsolete terms
-    ontology_list = ["envo", "pato", "uberon"]
+    ontology_list = ["envo", "pato", "uberon", "po"]
     ontology_adapters = build_ontology_adapters(ontology_list)
     label_cache = load_ontology_labels(ontology_adapters)
     obsolete_terms_list = find_obsolete_terms(ontology_adapters)

@@ -276,6 +276,10 @@ downloads/bioproject.xml:
 
 .PHONY: fetch_sra_metadata_parquet_from_s3_to_perlmutter load_sra_metadata_parquet_into_mongo
 # cd into desired directory
+
+local/sra_metadata_parquet:
+	mkdir -p $@
+
 fetch_sra_metadata_parquet_from_s3_to_perlmutter: local/sra_metadata_parquet
 	shifter --image=amazon/aws-cli:latest aws s3 cp s3://sra-pub-metadata-us-east-1/sra/metadata/ $< --recursive --no-sign-request
 
