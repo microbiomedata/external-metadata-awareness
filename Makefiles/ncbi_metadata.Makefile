@@ -188,7 +188,7 @@ load_acceptable_sized_leaf_bioprojects_into_mongodb: downloads/bioproject.xml
 local/bioproject_xpath_counts.json: downloads/bioproject.xml
 	# --stop-after 999999999
 	poetry run count-xml-paths \
-		--always-count-path '/PackageSet/Package' \
+		--always-count-path '/PackageSet/Package/Project' \
 		--interval 10 \
 		--output $@ \
 		--xml-file $<
