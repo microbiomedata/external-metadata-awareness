@@ -1,11 +1,11 @@
 RUN=poetry run
 WGET=wget
 
-# Load environment variables from local/.env file if it exists
-ifneq (,$(wildcard local/.env))
-    include local/.env
-    export $(shell sed 's/=.*//' local/.env)
-endif
+## Load environment variables from local/.env file if it exists
+#ifneq (,$(wildcard local/.env))
+#    include local/.env
+#    export $(shell sed 's/=.*//' local/.env)
+#endif
 
 downloads/nmdc-production-studies.json:
 	wget -O $@.bak https://api.microbiomedata.org/nmdcschema/study_set?max_page_size=999999
