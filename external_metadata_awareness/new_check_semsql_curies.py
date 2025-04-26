@@ -3,7 +3,7 @@
 Generalized script to update env_triad_component_in_scope_curies_lc documents:
 For each document whose "prefix" field (case-insensitive) is one of ENVO, UBERON, or PO, this script:
   - Normalizes the stored CURIE (in the "curie_uc" field) so that the prefix is upper-case.
-  - Uses the corresponding OAK adapter (configured via a semantic SQL database) to retrieve the term’s label
+  - Uses the corresponding OAK adapter (configured via a semantic SQL database) to retrieve the term's label
     and check if the term is obsolete.
   - Updates the document by adding the "label" and "obsolete" fields.
 
@@ -12,9 +12,12 @@ Before running, ensure that:
   • The OAK adapter strings match your semantic SQL configurations.
 """
 
-from pymongo import MongoClient
+import click
+from pymongo import uri_parser
 from oaklib import get_adapter
 from tqdm import tqdm
+
+from external_metadata_awareness.mongodb_connection import get_mongo_client
 
 
 def attempt_oak_labelling(curie, adapter):
@@ -69,12 +72,27 @@ def process_documents(collection, query, adapter, ontology_name):
         collection.update_one({"_id": doc["_id"]}, {"$set": update_fields})
 
 
-def main():
-    # MongoDB connection configuration.
-    mongo_url = "mongodb://localhost:27017"
-    client = MongoClient(mongo_url)
-    db = client.ncbi_metadata
-    collection = db.env_triad_component_curies_uc
+@click.command()
+@click.option('--mongo-uri', default='mongodb://localhost:27017/ncbi_metadata', help='MongoDB connection URI (must start with mongodb:// and include database name)')
+@click.option('--env-file', default=None, help='Path to .env file for credentials (should contain MONGO_USER and MONGO_PASSWORD)')
+@click.option('--collection', default='env_triad_component_curies_uc', help='MongoDB collection name')
+@click.option('--verbose', is_flag=True, help='Show verbose connection output')
+def main(mongo_uri, env_file, collection, verbose):
+    # Connect to MongoDB
+    client = get_mongo_client(
+        mongo_uri=mongo_uri,
+        env_file=env_file,
+        debug=verbose
+    )
+    
+    # Extract database name from URI
+    parsed = uri_parser.parse_uri(mongo_uri)
+    db_name = parsed.get('database')
+    
+    if not db_name:
+        raise ValueError("MongoDB URI must include a database name")
+        
+    collection = client[db_name][collection]
 
     # Define the ontologies and their corresponding OAK adapter strings.
     ontologies = {

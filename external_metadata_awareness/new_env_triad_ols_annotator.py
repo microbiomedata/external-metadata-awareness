@@ -1,14 +1,12 @@
 import datetime
+import click
 
 import requests
 import requests_cache
-from pymongo import MongoClient
+from pymongo import uri_parser
 from tqdm import tqdm
 
-# --- Configuration ---
-MONGO_URL = "mongodb://localhost:27017"
-DATABASE_NAME = "ncbi_metadata"
-COLLECTION_NAME = "env_triad_component_labels"
+from external_metadata_awareness.mongodb_connection import get_mongo_client
 
 # OLS Search API endpoint and query parameters
 OLS_SEARCH_URL = "https://www.ebi.ac.uk/ols/api/search"
@@ -24,28 +22,42 @@ ROWS = 1000  # Number of results per page
 
 requests_cache_filename="external-metadata-awareness-requests-cache"
 
-# Enable requests caching (expires after 7 days)
+# Enable requests caching (expires after 30 days)
 requests_cache.install_cache(requests_cache_filename, expire_after=datetime.timedelta(days=30))
 
 
-def main():
+@click.command()
+@click.option('--mongo-uri', default='mongodb://localhost:27017/ncbi_metadata', help='MongoDB connection URI (must start with mongodb:// and include database name)')
+@click.option('--env-file', default=None, help='Path to .env file for credentials (should contain MONGO_USER and MONGO_PASSWORD)')
+@click.option('--collection', default='env_triad_component_labels', help='MongoDB collection name')
+@click.option('--min-length', default=3, type=int, help='Minimum label length to process')
+@click.option('--max-oak-coverage', default=0.9, type=float, help='Maximum oak coverage to process (documents below this value will be annotated)')
+@click.option('--verbose', is_flag=True, help='Show verbose connection output')
+def main(mongo_uri, env_file, collection, min_length, max_oak_coverage, verbose):
     # Connect to MongoDB
-    client = MongoClient(MONGO_URL)
-    db = client[DATABASE_NAME]
-    collection = db[COLLECTION_NAME]
+    client = get_mongo_client(
+        mongo_uri=mongo_uri,
+        env_file=env_file,
+        debug=verbose
+    )
+    
+    # Extract database name from URI
+    parsed = uri_parser.parse_uri(mongo_uri)
+    db_name = parsed.get('database')
+    
+    if not db_name:
+        raise ValueError("MongoDB URI must include a database name")
+        
+    db = client[db_name]
+    collection = db[collection]
 
-    # Find documents to update (in this example, those with combined_oak_coverage < 0.90)
-
-    min_length = 3
-    max_oak_coverage = 0.9
-
+    # Find documents to update (those with combined_oak_coverage < max_oak_coverage)
     query = {
         "label_digits_only": False,
         "label_length": {"$gte": min_length},
         "combined_oak_coverage": {"$lt": max_oak_coverage}
     }
 
-    # query = {"combined_oak_coverage": {"$lt": 0.90}}
     projection = {"label": 1}
     docs = list(collection.find(query, projection))
 
@@ -78,6 +90,8 @@ def main():
                 response.raise_for_status()
                 data = response.json()
             except Exception as e:
+                if verbose:
+                    print(f"Error: {e}")
                 break
 
             results = data.get("response", {}).get("docs", [])

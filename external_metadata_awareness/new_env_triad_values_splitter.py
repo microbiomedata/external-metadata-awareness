@@ -2,16 +2,15 @@ import datetime
 import os
 import re
 import string
-import urllib.parse
 
 import click
 import requests
 import requests_cache
 import yaml
-from dotenv import load_dotenv
 from oaklib import get_adapter
-from pymongo import MongoClient
 from tqdm import tqdm
+
+from external_metadata_awareness.mongodb_connection import get_mongo_client
 
 # todo doesnt' address ENV or ENV0 prefixes, but they are rare
 # seeing OF and TO prefixes that are defined in Bioportal. I'm suspicious.
@@ -190,35 +189,29 @@ def extract_components(text,
 
 
 @click.command()
-@click.option('--host', default='mongo-ncbi-loadbalancer.mam.production.svc.spin.nersc.org', help='MongoDB host')
-@click.option('--port', default=27017, type=int, help='MongoDB port')
-@click.option('--db', required=True, help='MongoDB database name')
+@click.option('--mongo-uri', required=True, help='MongoDB connection URI (must start with mongodb:// and include database name)')
+@click.option('--env-file', default=None, help='Path to .env file for credentials (should contain MONGO_USER and MONGO_PASSWORD)')
 @click.option('--collection', required=True, help='MongoDB collection name')
 @click.option('--field', default='env_triad_value', help='Field to parse')
-@click.option('--authenticate/--no-authenticate', default=True)
-@click.option('--env-file', default='../.env', help='Path to .env file')
 @click.option('--min-length', default=0, type=int, help='Minimum value of the length field to include a document')
-def main(host, port, db, collection, field, env_file, min_length, authenticate):
-    if authenticate:
-        load_dotenv(env_file)
-
-        # todo too much hard coding/assumptions
-        username = urllib.parse.quote_plus(os.getenv("MONGO_NCBI_LOADBALANCER_WRITING_USERNAME"))
-        password = urllib.parse.quote_plus(os.getenv("MONGO_NCBI_LOADBALANCER_WRITING_PW"))
-        auth_source = "admin"
-        auth_mechanism = "SCRAM-SHA-256"
-        extra_params = "directConnection=true"
-
-        mongo_uri = (
-            f"mongodb://{username}:{password}@{host}:{port}/?authSource={auth_source}&authMechanism={auth_mechanism}&{extra_params}"
-        )
-    else:
-        mongo_uri = (
-            f"mongodb://{host}:{port}/"
-        )
-
-    client = MongoClient(mongo_uri)
-    coll = client[db][collection]
+@click.option('--verbose', is_flag=True, help='Show verbose connection output')
+def main(mongo_uri, env_file, collection, field, min_length, verbose):
+    # Use the unified MongoDB connection utility
+    client = get_mongo_client(
+        mongo_uri=mongo_uri,
+        env_file=env_file,
+        debug=verbose
+    )
+    
+    # Extract database name from URI using pymongo's uri_parser
+    from pymongo import uri_parser
+    parsed = uri_parser.parse_uri(mongo_uri)
+    db_name = parsed.get('database')
+    
+    if not db_name:
+        raise ValueError("MongoDB URI must include a database name")
+        
+    coll = client[db_name][collection]
 
     envo_adapter_string = "sqlite:obo:envo"
     envo_adapter = get_adapter(envo_adapter_string)

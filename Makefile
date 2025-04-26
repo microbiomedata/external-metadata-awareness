@@ -4,7 +4,6 @@ RUN=poetry run
 # should include everything from Makefiles/
 
 include Makefiles/env_triads.Makefile
-include Makefiles/envo.Makefile
 include Makefiles/gold.Makefile
 include Makefiles/mixs.Makefile
 include Makefiles/ncbi_metadata.Makefile

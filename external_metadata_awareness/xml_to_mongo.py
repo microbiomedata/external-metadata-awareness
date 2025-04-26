@@ -78,12 +78,18 @@ def load_xml_to_mongodb(file_path: str, collection_name: str, node_type: str,
                 collection.insert_one(doc)
                 processed_count += 1
 
-                if anticipated_last_id:
-                    if processed_count % 10000 == 0:
+                # Show progress based on max_elements if provided, otherwise use anticipated_last_id
+                if processed_count % 10000 == 0:
+                    if max_elements:
+                        progress = (processed_count / max_elements) * 100
+                    elif anticipated_last_id:
                         progress = (int(elem.attrib.get(id_field, 0)) / anticipated_last_id) * 100
-                        elapsed_time = time.time() - start_time
-                        print(f"Processed {processed_count} {node_type} nodes ({progress:.2f}%), "
-                              f"elapsed time: {elapsed_time:.2f} seconds")
+                    else:
+                        progress = 0
+                        
+                    elapsed_time = time.time() - start_time
+                    print(f"Processed {processed_count} {node_type} nodes ({progress:.2f}%), "
+                          f"elapsed time: {elapsed_time:.2f} seconds")
 
                 if max_elements and processed_count >= max_elements:
                     print(f"Reached max_elements ({max_elements}). Stopping.")

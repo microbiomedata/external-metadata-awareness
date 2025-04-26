@@ -2,11 +2,11 @@ import click
 import pyarrow.parquet as pq
 import datetime
 import os
-import pymongo
 import time
-from dotenv import load_dotenv
 from tqdm import tqdm
 from itertools import islice
+
+from external_metadata_awareness.mongodb_connection import get_mongo_client
 
 
 def timestamp():
@@ -36,15 +36,7 @@ def get_parquet_files(parquet_dir):
     ]
 
 
-def maybe_inject_password(mongo_uri, dotenv_path):
-    load_dotenv(dotenv_path=dotenv_path)
-    if "mam-ncbi:@" in mongo_uri:
-        mongo_password = os.getenv("MONGO_PASSWORD")
-        if not mongo_password:
-            tqdm.write(f"{timestamp()} ERROR: MONGO_PASSWORD not found in .env file.")
-            raise click.Abort()
-        mongo_uri = mongo_uri.replace("mam-ncbi:@", f"mam-ncbi:{mongo_password}@")
-    return mongo_uri
+# Removed the maybe_inject_password function as it's replaced by get_mongo_client
 
 
 @click.command()
@@ -54,24 +46,36 @@ def maybe_inject_password(mongo_uri, dotenv_path):
               help="Max total records to insert (across all files)")
 @click.option("--progress-interval", default=5000, type=int,
               help="Print progress every N records")
-@click.option("--mongo-uri",
-              default="mongodb://mam-ncbi:@mongo-ncbi-loadbalancer.mam.production.svc.spin.nersc.org:27017/admin?directConnection=true&authMechanism=SCRAM-SHA-256&authSource=admin",
-              show_default=True, help="MongoDB URI")
-@click.option("--mongo-db", default="ncbi_metadata", show_default=True,
-              help="MongoDB database name")
+@click.option("--mongo-uri", required=True,
+              help="MongoDB connection URI (must start with mongodb:// and include database name)")
 @click.option("--mongo-collection", default="sra_metadata", show_default=True,
               help="MongoDB collection name")
 @click.option("--drop-collection", is_flag=True, default=False,
               help="Drop the MongoDB collection before inserting new records")
-@click.option("--dotenv-path", type=click.Path(exists=True, dir_okay=False), default=".env",
-              show_default=True, help="Path to the .env file to load")
+@click.option("--env-file", default=None,
+              help="Path to .env file for credentials (should contain MONGO_USER and MONGO_PASSWORD)")
+@click.option("--verbose", is_flag=True, help="Show verbose connection output")
 def insert_parquet_to_mongo(parquet_dir, nrows, progress_interval,
-                            mongo_uri, mongo_db, mongo_collection,
-                            drop_collection, dotenv_path):
+                            mongo_uri, mongo_collection,
+                            drop_collection, env_file, verbose):
     """Insert records from Parquet into MongoDB with optional row limit and progress bars."""
-    mongo_uri = maybe_inject_password(mongo_uri, dotenv_path)
-    client = pymongo.MongoClient(mongo_uri)
-    collection = client[mongo_db][mongo_collection]
+    # Use the unified MongoDB connection utility
+    client = get_mongo_client(
+        mongo_uri=mongo_uri,
+        env_file=env_file,
+        debug=verbose
+    )
+    
+    # Extract database name from URI using pymongo's uri_parser
+    from pymongo import uri_parser
+    parsed = uri_parser.parse_uri(mongo_uri)
+    db_name = parsed.get('database')
+    
+    if not db_name:
+        tqdm.write(f"{timestamp()} ERROR: MongoDB URI must include a database name")
+        raise click.Abort()
+        
+    collection = client[db_name][mongo_collection]
 
     if drop_collection:
         tqdm.write(f"{timestamp()} Dropping collection '{mongo_collection}'...")
