@@ -3,9 +3,9 @@ import sys
 import argparse
 from pathlib import Path
 from typing import Optional
-from urllib.parse import urlparse
 from dotenv import load_dotenv
 import pymongo
+from pymongo import uri_parser
 
 
 def get_mongo_client(
@@ -36,15 +36,21 @@ def get_mongo_client(
         raise ValueError("MongoDB URI must start with 'mongodb://'")
     
     # Check if URI has a database name
-    parsed = urlparse(mongo_uri)
-    if not parsed.path or parsed.path == "/":
-        raise ValueError("MongoDB URI must include a database name (mongodb://host:port/database)")
+    try:
+        parsed = uri_parser.parse_uri(mongo_uri)
+        if not parsed.get('database'):
+            raise ValueError("MongoDB URI must include a database name (mongodb://host:port/database)")
+    except pymongo.errors.InvalidURI:
+        raise ValueError("Invalid MongoDB URI format")
     
     # Create a copy of the URI that we might modify
     final_uri = mongo_uri
     
     # Load credentials from env file if provided
-    if env_file and Path(env_file).exists():
+    if env_file:
+        if not Path(env_file).exists():
+            raise ValueError(f"Error: .env file not found at {env_file}")
+            
         load_dotenv(env_file, override=True)
         if debug:
             print(f"Loaded .env file from {env_file}")
@@ -52,37 +58,30 @@ def get_mongo_client(
         username = os.getenv("MONGO_USER")
         password = os.getenv("MONGO_PASSWORD")
         
-        if username and password:
-            # If URI already has credentials, we'll replace them
-            if "@" in final_uri:
-                protocol, rest = final_uri.split("://", 1)
-                _, after_auth = rest.split("@", 1)
-                final_uri = f"{protocol}://{username}:{password}@{after_auth}"
-            else:
-                # No auth part, add it
-                protocol, rest = final_uri.split("://", 1)
-                final_uri = f"{protocol}://{username}:{password}@{rest}"
-                
-            if debug:
-                username_preview = username
-                if len(username_preview) > 4:
-                    username_preview = f"{username_preview[:2]}...{username_preview[-2:]}"
-                print(f"Loaded credentials from .env file - Username: {username_preview}")
+        if not username or not password:
+            raise ValueError(f"Error: MONGO_USER and MONGO_PASSWORD must be defined in {env_file}")
+            
+        # If URI already has credentials, we'll replace them
+        if "@" in final_uri:
+            protocol, rest = final_uri.split("://", 1)
+            _, after_auth = rest.split("@", 1)
+            final_uri = f"{protocol}://{username}:{password}@{after_auth}"
+        else:
+            # No auth part, add it
+            protocol, rest = final_uri.split("://", 1)
+            final_uri = f"{protocol}://{username}:{password}@{rest}"
+            
+        if debug:
+            print(f"Loaded credentials from .env file - Username: {username}")
     
-    # Create a masked URI for debug output
-    masked_uri = final_uri
-    if "@" in final_uri:
-        protocol, rest = final_uri.split("://", 1)
-        _, after_auth = rest.split("@", 1)
-        masked_uri = f"{protocol}://[credentials_masked]@{after_auth}"
-    
+    # Display the full URI with credentials for debug output
     if debug:
-        print(f"Final connection URI: {masked_uri}")
+        print(f"Final connection URI: {final_uri}")
     
     # For dry runs, return connection info instead of a client
     if dry_run:
         return {
-            "uri": masked_uri,
+            "uri": final_uri,
             "has_credentials": "@" in final_uri,
         }
     
@@ -115,15 +114,20 @@ def main():
         )
         
         if not args.connect:
-            # Show minimal connection info
-            print(f"Final connection URI: {result['uri']}")
+            # Show minimal connection info without duplicating the output from get_mongo_client
+            if not args.verbose:
+                print(f"Final connection URI: {result['uri']}")
             print(f"Using credentials: {result['has_credentials']}")
+            
+            # Show a sample mongosh command with the full URI including credentials
+            print("\nSample mongosh command:")
+            print(f'mongosh "{result["uri"]}"')
         else:
             # Actually try to connect
             print("Testing connection...")
             # Get database name from URI
-            parsed = urlparse(args.uri)
-            db_name = parsed.path.lstrip("/").split("?")[0]
+            parsed = uri_parser.parse_uri(args.uri)
+            db_name = parsed.get('database')
             
             # List collections in the database
             db = result[db_name]
