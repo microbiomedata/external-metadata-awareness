@@ -1,6 +1,9 @@
 import os
 import sys
+import re
 import argparse
+import json
+import subprocess
 from pathlib import Path
 from typing import Optional
 from dotenv import load_dotenv
@@ -58,21 +61,23 @@ def get_mongo_client(
         username = os.getenv("MONGO_USER")
         password = os.getenv("MONGO_PASSWORD")
         
-        if not username or not password:
-            raise ValueError(f"Error: MONGO_USER and MONGO_PASSWORD must be defined in {env_file}")
-            
-        # If URI already has credentials, we'll replace them
-        if "@" in final_uri:
-            protocol, rest = final_uri.split("://", 1)
-            _, after_auth = rest.split("@", 1)
-            final_uri = f"{protocol}://{username}:{password}@{after_auth}"
+        # Only use credentials if both username and password are provided
+        if username and password:
+            # If URI already has credentials, we'll replace them
+            if "@" in final_uri:
+                protocol, rest = final_uri.split("://", 1)
+                _, after_auth = rest.split("@", 1)
+                final_uri = f"{protocol}://{username}:{password}@{after_auth}"
+            else:
+                # No auth part, add it
+                protocol, rest = final_uri.split("://", 1)
+                final_uri = f"{protocol}://{username}:{password}@{rest}"
+                
+            if debug:
+                print(f"Loaded credentials from .env file - Username: {username}")
         else:
-            # No auth part, add it
-            protocol, rest = final_uri.split("://", 1)
-            final_uri = f"{protocol}://{username}:{password}@{rest}"
-            
-        if debug:
-            print(f"Loaded credentials from .env file - Username: {username}")
+            if debug:
+                print("No credentials found in .env file, continuing with unauthenticated connection")
     
     # Display the full URI with credentials for debug output
     if debug:
@@ -102,18 +107,19 @@ def main():
     parser.add_argument("--env-file", help="Path to .env file for credentials (should contain MONGO_USER and MONGO_PASSWORD)")
     parser.add_argument("--verbose", action="store_true", help="Show verbose output")
     parser.add_argument("--connect", action="store_true", help="Actually connect to the database")
+    parser.add_argument("--command", help="MongoDB command to execute (must be valid JavaScript/MongoDB shell command)")
     args = parser.parse_args()
     
     try:
-        # Get connection info in dry-run mode
-        result = get_mongo_client(
-            mongo_uri=args.uri,
-            env_file=args.env_file,
-            debug=args.verbose,
-            dry_run=not args.connect
-        )
-        
-        if not args.connect:
+        # Get connection info in dry-run mode if not connecting
+        if not args.connect and not args.command:
+            result = get_mongo_client(
+                mongo_uri=args.uri,
+                env_file=args.env_file,
+                debug=args.verbose,
+                dry_run=True
+            )
+            
             # Show minimal connection info without duplicating the output from get_mongo_client
             if not args.verbose:
                 print(f"Final connection URI: {result['uri']}")
@@ -123,17 +129,111 @@ def main():
             print("\nSample mongosh command:")
             print(f'mongosh "{result["uri"]}"')
         else:
-            # Actually try to connect
-            print("Testing connection...")
-            # Get database name from URI
+            # Actually connect to the database
+            client = get_mongo_client(
+                mongo_uri=args.uri,
+                env_file=args.env_file,
+                debug=args.verbose
+            )
+            
+            # Extract database name from URI
             parsed = uri_parser.parse_uri(args.uri)
             db_name = parsed.get('database')
             
-            # List collections in the database
-            db = result[db_name]
-            print(f"Connected to database: {db.name}")
-            print(f"Collections: {db.list_collection_names()}")
-            print("Connection test successful!")
+            if not db_name:
+                raise ValueError("MongoDB URI must include a database name")
+                
+            db = client[db_name]
+            
+            if args.command:
+                # Execute command
+                print(f"Executing command: {args.command}")
+                
+                # Parse MongoDB shell commands directly
+                # Example: db.collection.createIndex({ field: 1 })
+                index_match = re.match(r'db\.(\w+)\.createIndex\((.*)\)', args.command)
+                
+                if index_match:
+                    collection_name = index_match.group(1)
+                    index_spec_str = index_match.group(2)
+                    
+                    try:
+                        # Try to execute createIndex command directly with PyMongo
+                        collection = db[collection_name]
+                        
+                        # This is a simplified approach - we're executing the Python equivalent
+                        # of the MongoDB shell command. For complex index specs, we might need
+                        # more sophisticated parsing.
+                        
+                        # Convert JavaScript/MongoDB shell object notation to Python dict
+                        # First, replace JavaScript-style keys without quotes with Python-style keys with quotes
+                        index_spec_str = re.sub(r'(\s*)(\w+):', r'\1"\2":', index_spec_str)
+                        
+                        # Replace 'true' with 'True' and 'false' with 'False' for Python compatibility
+                        index_spec_str = index_spec_str.replace('true', 'True').replace('false', 'False')
+                        
+                        # Check if this is a complex index with options like {unique: true}
+                        complex_index_match = re.match(r'(\{[^}]+\})\s*,\s*(\{.+\})', index_spec_str)
+                        
+                        if complex_index_match:
+                            # We have both keys and options
+                            keys_str = complex_index_match.group(1)
+                            options_str = complex_index_match.group(2)
+                            
+                            # Parse the keys
+                            keys_dict = eval(f"dict({keys_str})")
+                            keys = [(k, v) for k, v in keys_dict.items()]
+                            
+                            # Parse the options
+                            options = eval(f"dict({options_str})")
+                            
+                            # Create the index with options
+                            result = collection.create_index(keys, **options)
+                        else:
+                            # Simple index without options
+                            index_spec = eval(f"dict({index_spec_str})")
+                            result = collection.create_index([(k, v) for k, v in index_spec.items()])
+                        
+                        # Log the result
+                        print(f"Created index: {result}")
+                    except Exception as e:
+                        print(f"Error creating index: {e}")
+                        raise
+                
+                # Add other command patterns here as needed
+                
+                else:
+                    # Try using mongosh directly as a fallback for unsupported command patterns
+                    try:
+                        print("Attempting to execute command with mongosh...")
+                        
+                        # Get the URI with credentials if any
+                        final_uri = args.uri
+                        credentials_text = ""
+                        if "@" in final_uri:
+                            credentials_text = " (with credentials)"
+                        
+                        # Run the command with mongosh
+                        cmd = ["mongosh", final_uri, "--eval", args.command]
+                        result = subprocess.run(cmd, capture_output=True, text=True)
+                        
+                        if result.returncode == 0:
+                            print(f"Command executed successfully via mongosh{credentials_text}")
+                            if result.stdout.strip():
+                                print(result.stdout)
+                        else:
+                            print(f"Error executing via mongosh: {result.stderr}")
+                            raise ValueError(f"mongosh execution failed: {result.stderr}")
+                    except Exception as e:
+                        print(f"Failed to execute command: {e}")
+                        print("Try using mongo-js-executor for complex operations.")
+                        raise
+            else:
+                # Just show connection info and list collections
+                print("Testing connection...")
+                print(f"Connected to database: {db.name}")
+                print(f"Collections: {db.list_collection_names()}")
+                print("Connection test successful!")
     
     except ValueError as e:
         print(f"Error: {e}")

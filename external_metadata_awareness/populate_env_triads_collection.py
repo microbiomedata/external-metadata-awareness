@@ -3,8 +3,10 @@ from collections.abc import Mapping
 from datetime import datetime
 
 import click
-from pymongo import MongoClient
+from pymongo import uri_parser
 from tqdm import tqdm
+
+from external_metadata_awareness.mongodb_connection import get_mongo_client
 
 
 def component_has_valid_label(components, min_len):
@@ -78,15 +80,29 @@ def add_triads_to_samples(field_name, collection, sample_map, annotation_map):
 
 
 @click.command()
-@click.option('--db-name', default='ncbi_metadata', help='Database name')
+@click.option('--mongo-uri', default='mongodb://localhost:27017/ncbi_metadata', help='MongoDB connection URI (must start with mongodb:// and include database name)')
+@click.option('--env-file', default=None, help='Path to .env file for credentials (should contain MONGO_USER and MONGO_PASSWORD)')
 @click.option('--dest-collection', default='env_triads', help='Destination collection for output')
 @click.option('--min-label-length', default=3, show_default=True, help='Minimum label length')
-@click.option('--mongo-uri', default='mongodb://localhost:27017', help='Mongo URI')
-@click.option('--recreate-indices/--no-recreate-indices', default=True)
+@click.option('--recreate-indices/--no-recreate-indices', default=True, help='Whether to recreate indices')
 @click.option('--acceptable-prefix', multiple=True,
               default=["DOID", "ENVO", "FOODON", "MONDO", "NCBITAXON", "PO", "UBERON"])
-def populate(mongo_uri, db_name, dest_collection, min_label_length, acceptable_prefix, recreate_indices):
-    client = MongoClient(mongo_uri)
+@click.option('--verbose', is_flag=True, help='Show verbose connection output')
+def populate(mongo_uri, env_file, dest_collection, min_label_length, acceptable_prefix, recreate_indices, verbose):
+    # Connect to MongoDB
+    client = get_mongo_client(
+        mongo_uri=mongo_uri,
+        env_file=env_file,
+        debug=verbose
+    )
+    
+    # Extract database name from URI
+    parsed = uri_parser.parse_uri(mongo_uri)
+    db_name = parsed.get('database')
+    
+    if not db_name:
+        raise ValueError("MongoDB URI must include a database name")
+        
     db = client[db_name]
 
     biosamples_flattened = db["biosamples_flattened"]
@@ -94,6 +110,7 @@ def populate(mongo_uri, db_name, dest_collection, min_label_length, acceptable_p
     env_triad_component_labels = db["env_triad_component_labels"]
     env_triad_component_curies_uc = db["env_triad_component_curies_uc"]
 
+    # Drop existing destination collection if it exists
     db.drop_collection(dest_collection)
     env_triads = db[dest_collection]
 
@@ -120,24 +137,31 @@ def populate(mongo_uri, db_name, dest_collection, min_label_length, acceptable_p
         recreate_index(env_triads, [("accession", 1)], unique=True)
         print("✅ Index setup complete.\n")
 
+    print("Retrieving triad documents with labels... (this takes ~5 minutes)")
     triad_docs = list(biosamples_env_triad_value_counts_gt_1.find(
         {"components": {"$elemMatch": {"label": {"$exists": True}}}},
-        {"env_triad_value": 1, "components.label": 1, "components.curie_uc": 1, "components.raw": 1, "_id": 0})) # todo let the user know that this takes ~ 5 minutes
+        {"env_triad_value": 1, "components.label": 1, "components.curie_uc": 1, "components.raw": 1, "_id": 0}))
 
-    # todo all takes place in memory. swap exhausted on 32 GB 2020 ish macbook pro
-
+    # Filter documents to only include those with valid labels of sufficient length
     triad_docs = [doc for doc in triad_docs if component_has_valid_label(doc.get("components", []), min_label_length)]
+    print(f"Found {len(triad_docs)} triad documents with valid labels")
 
+    print("Retrieving OAK annotations...")
     oak_annotations = list(env_triad_component_labels.find(
         {'oak_text_annotations': {'$elemMatch': {'prefix_uc': {'$in': list(acceptable_prefix)}}}},
         {'_id': 0, 'label': 1, 'oak_text_annotations': 1}))
+    print(f"Found {len(oak_annotations)} OAK annotations")
 
+    print("Retrieving OLS annotations...")
     ols_annotations = list(env_triad_component_labels.find(
         {'ols_text_annotations': {'$elemMatch': {'ontology_prefix_uc': {'$in': list(acceptable_prefix)}}}},
         {'_id': 0, 'label': 1, 'ols_text_annotations': 1}))
+    print(f"Found {len(ols_annotations)} OLS annotations")
 
+    # Map labels to their annotations
     label_to_annotations = defaultdict(list)
 
+    print("Processing OAK annotations...")
     for item in oak_annotations:
         for ann in item.get("oak_text_annotations", []):
             label = ann.get("rdfs_label") or ann.get("object_label")
@@ -150,6 +174,7 @@ def populate(mongo_uri, db_name, dest_collection, min_label_length, acceptable_p
                     "source": "OAK"
                 })
 
+    print("Processing OLS annotations...")
     for item in ols_annotations:
         for ann in item.get("ols_text_annotations", []):
             label = ann.get("label")
@@ -162,13 +187,17 @@ def populate(mongo_uri, db_name, dest_collection, min_label_length, acceptable_p
                     "source": "OLS"
                 })
 
+    # Deduplicate annotations for each label
     for label in label_to_annotations:
         label_to_annotations[label] = deduplicate_annotations(label_to_annotations[label])
 
+    print("Retrieving CURIE lookup data...")
     curie_lookup = list(env_triad_component_curies_uc.find(
         {"curie_uc": {"$exists": True}, "prefix_uc": {"$in": list(acceptable_prefix)}, "label": {"$exists": True}},
         {"curie_uc": 1, "label": 1, "prefix_uc": 1, "mappings": 1, "_id": 0}))
+    print(f"Found {len(curie_lookup)} CURIE lookup entries")
 
+    # Map CURIEs to their annotations
     curie_uc_to_annotation = defaultdict(list)
     for item in curie_lookup:
         curie_uc = item.get("curie_uc")
@@ -190,8 +219,9 @@ def populate(mongo_uri, db_name, dest_collection, min_label_length, acceptable_p
                         "source": "asserted CURIe mapping"
                     })
 
+    print("Building environmental triad annotations map...")
     env_triad_to_annotations = defaultdict(list)
-    for item in triad_docs:
+    for item in tqdm(triad_docs, desc="Processing triad documents"):
         raw_value = item.get("env_triad_value")
         for comp in item.get("components", []):
             label = comp.get("label")
@@ -212,16 +242,24 @@ def populate(mongo_uri, db_name, dest_collection, min_label_length, acceptable_p
                     "raw": comp.get("raw", label)
                 })
 
+    # Deduplicate the components for each environmental triad value
     for key in env_triad_to_annotations:
         env_triad_to_annotations[key] = deduplicate_annotations(env_triad_to_annotations[key])
 
+    print("Building accession-to-structured-sample map...")
     accession_to_structured_sample = {}
     for field in ["env_broad_scale", "env_local_scale", "env_medium"]:
+        print(f"Processing {field}...")
         add_triads_to_samples(field, biosamples_flattened, accession_to_structured_sample, env_triad_to_annotations)
 
+    print(f"Creating index on {dest_collection}.accession...")
     env_triads.create_index("accession", unique=True)
+    
+    print(f"Upserting {len(accession_to_structured_sample)} documents to {dest_collection}...")
     for accession, triad_data in tqdm(accession_to_structured_sample.items(), desc="Upserting env_triads"):
         env_triads.update_one({"accession": accession}, {"$set": triad_data}, upsert=True)
+
+    print(f"Successfully populated {dest_collection} collection with {len(accession_to_structured_sample)} documents")
 
 
 if __name__ == '__main__':

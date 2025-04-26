@@ -18,15 +18,17 @@ Notes:
 
 import os
 import re
+import click
 
 from oaklib import get_adapter
 from oaklib.datamodels.text_annotator import TextAnnotationConfiguration
 from oaklib.interfaces.text_annotator_interface import TextAnnotatorInterface
 from oaklib.utilities.lexical.lexical_indexer import load_lexical_index, create_lexical_index, save_lexical_index
-from pymongo import MongoClient
+from pymongo import uri_parser
 from tqdm import tqdm
 
-from oak_helpers import build_element_to_label_map
+from external_metadata_awareness.mongodb_connection import get_mongo_client
+from external_metadata_awareness.oak_helpers import build_element_to_label_map
 
 config = TextAnnotationConfiguration()
 config.match_whole_words_only = True
@@ -127,11 +129,26 @@ def compute_combined_oak_coverage(annotations, label_length):
     return total_covered / label_length
 
 
-def main():
+@click.command()
+@click.option('--mongo-uri', default='mongodb://localhost:27017/ncbi_metadata', help='MongoDB connection URI (must start with mongodb:// and include database name)')
+@click.option('--env-file', default=None, help='Path to .env file for credentials (should contain MONGO_USER and MONGO_PASSWORD)')
+@click.option('--verbose', is_flag=True, help='Show verbose connection output')
+def main(mongo_uri, env_file, verbose):
     # MongoDB connection configuration.
-    mongo_url = "mongodb://localhost:27017"
-    client = MongoClient(mongo_url)
-    db = client.ncbi_metadata
+    client = get_mongo_client(
+        mongo_uri=mongo_uri,
+        env_file=env_file,
+        debug=verbose
+    )
+    
+    # Extract database name from URI
+    parsed = uri_parser.parse_uri(mongo_uri)
+    db_name = parsed.get('database')
+    
+    if not db_name:
+        raise ValueError("MongoDB URI must include a database name")
+        
+    db = client[db_name]
     collection = db.env_triad_component_labels
 
     # Attempt to load the lexical index from file if it exists.
