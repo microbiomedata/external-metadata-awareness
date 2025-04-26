@@ -61,16 +61,16 @@ def save_to_json_file(data, directory, filename):
     return filepath
 
 
-def extract_db_name_from_uri(uri):
+def extract_db_name_from_uri(mongo_uri):
     """Extract database name from MongoDB URI."""
-    if not uri:
+    if not mongo_uri:
         return None
 
-    if not uri.startswith("mongodb://"):
+    if not mongo_uri.startswith("mongodb://"):
         click.echo("Error: URI must start with 'mongodb://'", err=True)
         sys.exit(1)
 
-    parsed = urlparse(uri)
+    parsed = urlparse(mongo_uri)
 
     # Get database name if present
     if parsed.path and parsed.path != "/":
@@ -83,17 +83,17 @@ def extract_db_name_from_uri(uri):
     return None
 
 
-def parse_and_insert(xml_file, uri, project_collection, submission_collection, progress_interval, oversize_dir,
+def parse_and_insert(xml_file, mongo_uri, project_collection, submission_collection, progress_interval, oversize_dir,
                      env_file=None, verbose=False):
     """Parses an NCBI BioProject XML file and inserts both `/PackageSet/Package/Project/Project` and `/PackageSet/Package/Project` paths into MongoDB."""
     # Extract database name from URI
-    db_name = extract_db_name_from_uri(uri)
+    db_name = extract_db_name_from_uri(mongo_uri)
     if not db_name:
         click.echo("Error: No database name specified in URI", err=True)
         sys.exit(1)
 
     click.echo("Attempting to connect to MongoDB...")
-    client = get_mongo_client(mongo_uri=uri, env_file=env_file, debug=verbose)
+    client = get_mongo_client(mongo_uri=mongo_uri, env_file=env_file, debug=verbose)
 
     # Print connection information
     if verbose:
@@ -274,9 +274,9 @@ def parse_and_insert(xml_file, uri, project_collection, submission_collection, p
 
 @click.command()
 @click.option("--xml-file", required=True, type=click.Path(exists=True), help="XML file containing BioProject data")
-@click.option("--uri", required=True,
+@click.option("--mongo-uri", required=True,
               help="MongoDB connection URI (must start with mongodb:// and include database name)")
-@click.option("--env-file", help="Path to .env file for MongoDB credentials")
+@click.option("--env-file", help="Path to .env file for credentials (should contain MONGO_USER and MONGO_PASSWORD)")
 @click.option("--project-collection", default="bioprojects",
               help="MongoDB collection for /PackageSet/Package/Project/Project")
 @click.option("--submission-collection", default="bioprojects_submissions",
@@ -287,7 +287,7 @@ def parse_and_insert(xml_file, uri, project_collection, submission_collection, p
 @click.option("--clear-collections", is_flag=True, default=False,
               help="Clear the project and submission collections before inserting new data")
 @click.option("--verbose", is_flag=True, default=False, help="Enable verbose output for MongoDB connection")
-def main(xml_file, uri, env_file, project_collection, submission_collection,
+def main(xml_file, mongo_uri, env_file, project_collection, submission_collection,
          progress_interval, oversize_dir, clear_collections, verbose):
     """Process NCBI BioProject XML into MongoDB.
 
@@ -298,14 +298,14 @@ def main(xml_file, uri, env_file, project_collection, submission_collection,
     the target collections before inserting new data.
     """
     # Extract database name from URI for verification
-    db_name = extract_db_name_from_uri(uri)
+    db_name = extract_db_name_from_uri(mongo_uri)
     if not db_name:
         click.echo("Error: No database name specified in URI. Format should be: mongodb://host:port/database", err=True)
         sys.exit(1)
 
     if verbose:
         click.echo(f"Verbose mode enabled")
-        click.echo(f"MongoDB URI: {uri}")
+        click.echo(f"MongoDB URI: {mongo_uri}")
         click.echo(f"Database name from URI: {db_name}")
         click.echo(f"Environment file: {env_file}")
         click.echo(f"Collections: {project_collection}, {submission_collection}")
@@ -315,7 +315,7 @@ def main(xml_file, uri, env_file, project_collection, submission_collection,
     ensure_dir_exists(oversize_dir)
 
     if clear_collections:
-        client = get_mongo_client(mongo_uri=uri, env_file=env_file, debug=verbose)
+        client = get_mongo_client(mongo_uri=mongo_uri, env_file=env_file, debug=verbose)
         db = client[db_name]
         click.echo(f"Clearing collection: {project_collection}")
         db[project_collection].drop()
@@ -323,7 +323,7 @@ def main(xml_file, uri, env_file, project_collection, submission_collection,
         db[submission_collection].drop()
         client.close()
 
-    parse_and_insert(xml_file, uri, project_collection, submission_collection,
+    parse_and_insert(xml_file, mongo_uri, project_collection, submission_collection,
                      progress_interval, oversize_dir, env_file, verbose)
 
 

@@ -2,41 +2,33 @@
 """Minimal script to fetch one document from a MongoDB collection."""
 
 import json
+from urllib.parse import urlparse
 import click
 from bson import json_util
 from external_metadata_awareness.mongodb_connection import get_mongo_client
 
 
 @click.command()
-@click.option("--uri", help="MongoDB URI (must start with mongodb://)")
-@click.option("--env-file", help="Path to .env file for credentials")
+@click.option("--mongo-uri", required=True, help="MongoDB URI (must start with mongodb:// and include database name)")
+@click.option("--env-file", help="Path to .env file for credentials (should contain MONGO_USER and MONGO_PASSWORD)")
 @click.option("--collection", required=True, help="Collection name to fetch document from")
 @click.option("--verbose", is_flag=True, help="Show verbose connection output")
-def fetch_document(uri, env_file, collection, verbose):
+def fetch_document(mongo_uri, env_file, collection, verbose):
     """Fetch a single document from a MongoDB collection."""
     try:
         # Get MongoDB client
         client = get_mongo_client(
-            mongo_uri=uri,
+            mongo_uri=mongo_uri,
             env_file=env_file,
             debug=verbose
         )
 
-        # Extract database name from URI if provided
-        db_name = None
-        if uri and '/' in uri:
-            parts = uri.split('/')
-            if len(parts) > 3:  # mongodb://host:port/dbname
-                db_part = parts[3]
-                if '?' in db_part:
-                    db_name = db_part.split('?')[0]
-                else:
-                    db_name = db_part
-
-        # Use default if no database in URI
-        if not db_name:
-            db_name = "test"
-            click.echo(f"No database specified in URI, using default: {db_name}")
+        # Extract database name from URI
+        parsed = urlparse(mongo_uri)
+        db_name = parsed.path.lstrip("/").split("?")[0]
+        
+        if verbose:
+            click.echo(f"Using database: {db_name}")
 
         # Access the database and collection
         db = client[db_name]

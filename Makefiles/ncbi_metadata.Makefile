@@ -7,14 +7,12 @@ MONGO_DB=ncbi_metadata
 MONGO_BIOSAMPLES_COLLECTION=biosamples
 BIOSAMPLES_MAX_DOCS=50000000
 #BIOSAMPLES_MAX_DOCS=500000 # initial 1%
-MONGO2DUCK_BATCH_SIZE=10000
+#MONGO2DUCK_BATCH_SIZE=10000
 
 # todo what cpu/ram resources are really required? 4 cores and 128 gb ram in ec2 was probably excessive
 #   but 32 gb 2020 macbook pro complains about swapping while running this code if many other "medium" apps are running
 
 # todo switch to more consistent mongodb connection strings
-
-# todo add a count from duckdb step
 
 # todo (efficiently) pre-count the number of biosamples in the XML file?
 
@@ -22,13 +20,6 @@ MONGO2DUCK_BATCH_SIZE=10000
 #   do other normalizations, like quantity values
 
 # todo update dev and user documentation; share database and documentation at NERSC portal
-#   document paths not included in duckdb
-#   document limitations of using DBeaver with large DuckDBs
-
-# todo warn about conflicting duckdb locks even when both processes are just reading
-# todo warn about apparent error messages when creating annotator
-
-# todo reassess duckdb table names
 
 # todo return to generating a wide table?
 
@@ -46,19 +37,11 @@ MONGO2DUCK_BATCH_SIZE=10000
 
 # todo add ranking of re-annotation predicates and prefixes
 
-
 .PHONY: add-ncbi-biosample-package-attributes \
 add-ncbi-biosamples-xml-download-date \
-duck-all \
 infer-env-triad-curies \
 load-biosamples-into-mongo \
 purge
-
-duck-all: purge \
-local/biosample-last-id-xml.txt \
-load-biosamples-into-mongo local/biosample-count-mongodb.txt \
-local/ncbi_biosamples.duckdb \
-add-ncbi-biosample-package-attributes add-ncbi-biosamples-xml-download-date infer-env-triad-curies
 
 purge:
 	rm -rf downloads/biosample_set.xml*
@@ -117,63 +100,15 @@ load-biosamples-into-remote-mongo: local/biosample_set.xml
 local/biosample-count-mongodb.txt:
 	date && mongosh --eval "db.getSiblingDB('$(MONGO_DB)').biosamples.countDocuments()" > $@ && date # 1 minute # how to use Makefile variables here?
 
-# no indexing necessary for the mongodb to duckdb convertion in notebooks/mongodb_biosamples_to_duckdb.ipynb
-# 1% MongoDB load 8 minutes on MAM Ubuntu NUC
-
-local/ncbi_biosamples.duckdb:
-	date
-	$(RUN) mongodb-biosamples-to-duckdb \
-		extract \
-		--batch_size $(MONGO2DUCK_BATCH_SIZE) \
-		--collection $(MONGO_BIOSAMPLES_COLLECTION) \
-		--db_name $(MONGO_DB) \
-		--duckdb_file $@ \
-		--max_docs $(BIOSAMPLES_MAX_DOCS) \
-		--mongo_uri mongodb://$(MONGO_HOST):$(MONGO_PORT)/
-	date
-# 1% DuckDB dump started at 2024-12-19T16:11:22; X minutes on MAM Ubuntu NUC
-# 2024-12-19T16:45:37.896939: Flushed batch for biosample, total 500000 docs processed for this path so far.
-# ~ 14k biosamples/minute
-# 800/hour?
-# 20 million/day?
-# also running many web browser tabs, one PyCharm window, compass (and Zoom for aprt of the time)
-# 18GB RAM used; no swappping;
-# 1 core in use @ 1 to 3 GHz out of 4.7 GHz max?
-# everything on one Samsung SSD 980 PRO, which is supposed to write 5 GB/s. looks like less than 1 MB/s write and wya less read
-# CPU bound?
-
 #downloads/ncbi-biosample-packages.xml:
 #	date
 #	$(WGET) -O $@ "https://www.ncbi.nlm.nih.gov/biosample/docs/packages/?format=xml"
 #	date
 
-local/ncbi-biosample-packages.tsv: downloads/ncbi-biosample-packages.xml
-	$(RUN) extract-ncbi-packages-fields \
-		--xml-file $< \
-		--output-file $@
-
-add-ncbi-biosample-package-attributes: downloads/ncbi-biosample-packages.xml local/ncbi_biosamples.duckdb
-	date
-	$(RUN) ncbi-package-info-to-duckdb \
-		--db-path $(word 2, $^) \
-		--table-name ncbi_package_info \
-		--xml-file $(word 1, $^) \
-		--overwrite
-	date
-
-add-ncbi-biosamples-xml-download-date: local/ncbi_biosamples.duckdb downloads/biosample_set.xml.gz
-	$(RUN) add-duckdb-key-value-row \
-		--db-path $< \
-		--table-name etl_log \
-		--key ncbi-biosamples-xml-download-date \
-    --value `stat -c %y downloads/biosample_set.xml.gz | cut -d ' ' -f 1`
-
-infer-env-triad-curies: local/ncbi_biosamples.duckdb
-	# ~ 15 minutes with envo and po. add bto and uberon: ~ 70 minutes. still running after 24 hours with NCBITaxon.
-	date
-	$(RUN) infer-biosample-env-context-curies \
-		--biosamples-duckdb-file $<
-	date
+#local/ncbi-biosample-packages.tsv: downloads/ncbi-biosample-packages.xml
+#	$(RUN) extract-ncbi-packages-fields \
+#		--xml-file $< \
+#		--output-file $@
 
 ####
 
@@ -311,3 +246,68 @@ split_env_triad_values_from_local:
 		--no-authenticate \
 		--field env_triad_value \
 		--min-length 3
+
+
+####
+
+# todo add a count from duckdb step
+#   document paths not included in duckdb
+#   document limitations of using DBeaver with large DuckDBs
+# todo warn about conflicting duckdb locks even when both processes are just reading
+# todo warn about apparent error messages when creating annotator
+# todo reassess duckdb table names
+
+#duck-all: purge \
+#local/biosample-last-id-xml.txt \
+#load-biosamples-into-mongo local/biosample-count-mongodb.txt \
+#local/ncbi_biosamples.duckdb \
+#add-ncbi-biosample-package-attributes add-ncbi-biosamples-xml-download-date infer-env-triad-curies
+
+# no indexing necessary for the mongodb to duckdb convertion in notebooks/mongodb_biosamples_to_duckdb.ipynb
+# 1% MongoDB load 8 minutes on MAM Ubuntu NUC
+
+#local/ncbi_biosamples.duckdb:
+#	date
+#	$(RUN) mongodb-biosamples-to-duckdb \
+#		extract \
+#		--batch_size $(MONGO2DUCK_BATCH_SIZE) \
+#		--collection $(MONGO_BIOSAMPLES_COLLECTION) \
+#		--db_name $(MONGO_DB) \
+#		--duckdb_file $@ \
+#		--max_docs $(BIOSAMPLES_MAX_DOCS) \
+#		--mongo_uri mongodb://$(MONGO_HOST):$(MONGO_PORT)/
+#	date
+
+# 1% DuckDB dump started at 2024-12-19T16:11:22; X minutes on MAM Ubuntu NUC
+# 2024-12-19T16:45:37.896939: Flushed batch for biosample, total 500000 docs processed for this path so far.
+# ~ 14k biosamples/minute
+# 800/hour?
+# 20 million/day?
+# also running many web browser tabs, one PyCharm window, compass (and Zoom for aprt of the time)
+# 18GB RAM used; no swappping;
+# 1 core in use @ 1 to 3 GHz out of 4.7 GHz max?
+# everything on one Samsung SSD 980 PRO, which is supposed to write 5 GB/s. looks like less than 1 MB/s write and wya less read
+# CPU bound?
+
+#infer-env-triad-curies: local/ncbi_biosamples.duckdb
+#	# ~ 15 minutes with envo and po. add bto and uberon: ~ 70 minutes. still running after 24 hours with NCBITaxon.
+#	date
+#	$(RUN) infer-biosample-env-context-curies \
+#		--biosamples-duckdb-file $<
+#	date
+
+#add-ncbi-biosamples-xml-download-date: local/ncbi_biosamples.duckdb downloads/biosample_set.xml.gz
+#	$(RUN) add-duckdb-key-value-row \
+#		--db-path $< \
+#		--table-name etl_log \
+#		--key ncbi-biosamples-xml-download-date \
+#    --value `stat -c %y downloads/biosample_set.xml.gz | cut -d ' ' -f 1`
+
+#add-ncbi-biosample-package-attributes: downloads/ncbi-biosample-packages.xml local/ncbi_biosamples.duckdb
+#	date
+#	$(RUN) ncbi-package-info-to-duckdb \
+#		--db-path $(word 2, $^) \
+#		--table-name ncbi_package_info \
+#		--xml-file $(word 1, $^) \
+#		--overwrite
+#	date
