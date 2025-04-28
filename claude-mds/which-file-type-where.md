@@ -4,12 +4,35 @@
    - notebooks/core.py (utility functions used by notebooks)
    - notebooks/environmental_context_value_sets/common.py
    - Several Python files in notebooks/studies_exploration/ and subdirectories:
-    - entire_submissions_extraction_flattening.py
+    - entire_submissions_extraction_flattening.py (deprecated, superseded by nmdc-submissions-to-mongo.py)
     - flattening/insert_all_flat_gold_biosamples.py
     - flattening/insert_all_flat_submission_biosamples.py
     - get_nmdc_submissions.py
 3. Tests:
    - tests/init.py (only contains initialization, no actual tests)
+
+## NMDC Submissions Scripts Comparison
+
+### Production Script (Active)
+- **Path:** `external_metadata_awareness/nmdc-submissions-to-mongo.py`
+- **Last Modified:** April 25, 2025
+- **Usage:** Integrated in `Makefiles/nmdc_metadata.Makefile`
+- **Features:**
+  - Proper Click command-line interface
+  - Configurable MongoDB connection with URI
+  - Better error handling
+  - Makefile integration
+
+### Development/Exploratory Script (Deprecated)
+- **Path:** `notebooks/studies_exploration/entire_submissions_extraction_flattening.py`
+- **Last Modified:** March 27, 2025
+- **Usage:** Not referenced in any Makefile or CLI alias
+- **Limitations:**
+  - Hardcoded paths
+  - Basic print statements instead of logging
+  - Not integrated with the build system
+
+The production script evolved from the exploratory script and should be considered the canonical implementation for NMDC submissions processing.
 
 
 - Markdown (.md): 4 files in root

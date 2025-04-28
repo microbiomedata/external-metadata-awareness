@@ -6,10 +6,12 @@ RUN=poetry run
 include Makefiles/env_triads.Makefile
 include Makefiles/gold.Makefile
 include Makefiles/mixs.Makefile
+include Makefiles/ncbi_biosample_measurements.Makefile
 include Makefiles/ncbi_metadata.Makefile
 include Makefiles/ncbi_schema.Makefile
 include Makefiles/nmdc_metadata.Makefile
 include Makefiles/nmdc_schema.Makefile
+include Makefiles/sra_metadata.Makefile
 
 local/envo_goldterms.db:
 	$(RUN) runoak --input sqlite:obo:envo ontology-metadata --all > /dev/null # ensure semsql file is cached
@@ -19,5 +21,3 @@ local/envo_goldterms.db:
 		--primary-db local/envo.db \
 		--secondary-db ~/.data/oaklib/goldterms.db
 	mv local/envo.db $@
-
-

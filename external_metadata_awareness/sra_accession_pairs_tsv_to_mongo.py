@@ -3,6 +3,7 @@ import csv
 import click
 import datetime
 from typing import List
+from external_metadata_awareness.mongodb_connection import get_mongo_client
 
 
 def get_iso_timestamp() -> str:
@@ -12,22 +13,22 @@ def get_iso_timestamp() -> str:
 
 @click.command()
 @click.option("--file-path", type=click.Path(exists=True), required=True, help="Path to the TSV file.")
-@click.option("--mongo-host", type=str, default="localhost", show_default=True, help="MongoDB host.")
-@click.option("--mongo-port", type=int, default=27017, show_default=True, help="MongoDB port.")
-@click.option("--database", type=str, default="biosamples", show_default=True, help="MongoDB database name.")
-@click.option("--collection", type=str, default="biosamples_bioprojects", show_default=True,
+@click.option("--mongo-uri", type=str, required=True, help="MongoDB connection URI (including database name).")
+@click.option("--env-file", type=str, help="Path to .env file with MongoDB credentials.")
+@click.option("--collection", type=str, default="sra_biosamples_bioprojects", show_default=True,
               help="MongoDB collection name.")
 @click.option("--batch-size", type=int, default=100000, show_default=True, help="Number of rows to insert per batch.")
 @click.option("--report-interval", type=int, default=500000, show_default=True,
               help="Rows processed before showing progress.")
+@click.option("--verbose", is_flag=True, help="Enable verbose output.")
 def load_tsv_to_mongo(
         file_path: str,
-        mongo_host: str,
-        mongo_port: int,
-        database: str,
+        mongo_uri: str,
         collection: str,
         batch_size: int,
-        report_interval: int
+        report_interval: int,
+        env_file: str = None,
+        verbose: bool = False
 ) -> None:
     """
     Load a large TSV file into MongoDB.
@@ -38,18 +39,32 @@ def load_tsv_to_mongo(
 
     Args:
         file_path (str): Path to the input TSV file.
-        mongo_host (str): MongoDB server hostname or IP.
-        mongo_port (int): MongoDB server port.
-        database (str): MongoDB database name.
+        mongo_uri (str): MongoDB connection URI.
         collection (str): MongoDB collection name.
         batch_size (int): Number of records to insert per batch.
         report_interval (int): Number of records to process before displaying progress.
+        env_file (str, optional): Path to environment file with MongoDB credentials.
+        verbose (bool, optional): Enable verbose output.
     """
 
+    if verbose:
+        print(f"[{get_iso_timestamp()}] Connecting to MongoDB using URI: {mongo_uri}")
+        
     # MongoDB connection
-    client = pymongo.MongoClient(host=mongo_host, port=mongo_port)
+    client = get_mongo_client(mongo_uri=mongo_uri, env_file=env_file, debug=verbose)
+    
+    # Extract database name from URI
+    if '/' in mongo_uri:
+        database = mongo_uri.split('/')[-1].split('?')[0]
+    else:
+        database = 'ncbi_metadata'  # Default database name
+        
+    if verbose:
+        print(f"[{get_iso_timestamp()}] Using database: {database}")
+        print(f"[{get_iso_timestamp()}] Using collection: {collection}")
+    
     db = client[database]
-    collection = db[collection]
+    coll = db[collection]
 
     total_rows = 0
     batch: List[dict] = []
@@ -74,7 +89,7 @@ def load_tsv_to_mongo(
 
             # Insert batch into MongoDB
             if len(batch) >= batch_size:
-                collection.insert_many(batch)
+                coll.insert_many(batch)
                 batch.clear()
 
             # Show progress at intervals
@@ -84,7 +99,7 @@ def load_tsv_to_mongo(
 
         # Insert remaining batch
         if batch:
-            collection.insert_many(batch)
+            coll.insert_many(batch)
 
     print(f"[{get_iso_timestamp()}] Data successfully loaded! Processed {total_rows:,} rows.")
 

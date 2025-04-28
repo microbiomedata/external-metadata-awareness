@@ -46,6 +46,7 @@ from tqdm import tqdm
 from oaklib import get_adapter
 from dotenv import load_dotenv
 from urllib.parse import urlparse, parse_qs, urlunparse
+from external_metadata_awareness.mongodb_connection import get_mongo_client
 
 def parse_mongo_uri(uri):
     """
@@ -83,69 +84,7 @@ def parse_mongo_uri(uri):
         'direct_connection': direct_connection
     }
 
-def get_mongo_client(
-        username=None,
-        password=None,
-        host="localhost",
-        port=27017,
-        auth_source="admin",
-        direct_connection=True,
-        auth_mechanism=None,
-        uri=None
-):
-    """
-    Establishes a connection to a MongoDB server.
-
-    Args:
-        username: Username for authentication (optional).
-        password: Password for authentication (optional).
-        host: Hostname of the MongoDB server (defaults to localhost).
-        port: Port of the MongoDB server (defaults to 27017).
-        auth_source: Authentication source database (defaults to admin).
-        direct_connection: Use a direct connection (defaults to True).
-        auth_mechanism: Authentication mechanism (optional).
-        uri: MongoDB URI (optional). If provided, other parameters are ignored
-             except for username and password, which will be inserted if provided.
-
-    Returns:
-        A pymongo.MongoClient instance.
-    """
-    if uri:
-        # If URI is provided but doesn't have credentials, insert them if provided
-        parsed_uri = urlparse(uri)
-        
-        if username and password and not parsed_uri.username:
-            # Original URI doesn't have credentials, so insert them
-            netloc_parts = parsed_uri.netloc.split('@')
-            if len(netloc_parts) == 1:  # No @ character, no credentials
-                host_part = netloc_parts[0]
-                new_netloc = f"{username}:{password}@{host_part}"
-                # Use components of parsed_uri to create a new URI
-                uri_components = list(parsed_uri)
-                uri_components[1] = new_netloc  # Replace netloc part
-                uri = urlunparse(uri_components)
-        
-        # Use the URI directly
-        client = MongoClient(uri)
-    elif username and password:
-        # Build URI with credentials
-        mongo_uri = f"mongodb://{username}:{password}@{host}:{port}/?authSource={auth_source}"
-        if auth_mechanism:
-            mongo_uri += f"&authMechanism={auth_mechanism}"
-        
-        client = MongoClient(
-            mongo_uri,
-            directConnection=direct_connection
-        )
-    else:
-        # Connect without credentials
-        client = MongoClient(
-            host,
-            port,
-            directConnection=direct_connection
-        )
-
-    return client
+# Using the imported get_mongo_client function instead of this local definition
 
 
 # ------------------------------------------------------------
@@ -361,44 +300,31 @@ def main(mongo_uri, mongo_host, mongo_port, mongo_username, mongo_password, mong
         else:
             db_name = db_name or os.getenv('MONGO_DB', 'gold_metadata')
         
-        # Use credentials from parameters if provided, otherwise from .env
-        mongo_username = mongo_username or env_username
-        mongo_password = mongo_password or env_password
+        # Print connection information
+        print(f"Using MongoDB URI: {mongo_uri}")
         
-        # Print connection information (without password)
-        if mongo_username:
-            print(f"Using MongoDB URI with authentication (credentials from {'parameters' if mongo_username != env_username else '.env file'})")
-        else:
-            print(f"Using MongoDB URI without authentication: {mongo_uri}")
-        
-        # Connect using URI
+        # Connect using the imported get_mongo_client function
         client = get_mongo_client(
-            username=mongo_username,
-            password=mongo_password,
-            uri=mongo_uri
+            mongo_uri=mongo_uri,
+            env_file=dotenv_path if os.path.exists(dotenv_path) else None,
+            debug=True
         )
     else:
-        # Use individual connection parameters
+        # Construct a MongoDB URI from individual components
         mongo_host = mongo_host or os.getenv('MONGO_HOST', 'localhost')
         mongo_port = mongo_port or int(os.getenv('MONGO_PORT', '27017'))
-        mongo_username = mongo_username or env_username
-        mongo_password = mongo_password or env_password
-        mongo_auth_source = mongo_auth_source or os.getenv('MONGO_AUTH_SOURCE', 'admin')
         db_name = db_name or os.getenv('MONGO_DB', 'gold_metadata')
         
-        # Print connection information (without password)
-        if mongo_username:
-            print(f"Using MongoDB connection: mongodb://{mongo_username}:***@{mongo_host}:{mongo_port}/?authSource={mongo_auth_source}")
-        else:
-            print(f"Using MongoDB connection: mongodb://{mongo_host}:{mongo_port}/")
+        # Construct the URI
+        constructed_uri = f"mongodb://{mongo_host}:{mongo_port}/{db_name}"
         
-        # Connect using individual parameters
+        print(f"Using constructed MongoDB URI: {constructed_uri}")
+        
+        # Connect using the imported get_mongo_client function
         client = get_mongo_client(
-            username=mongo_username,
-            password=mongo_password,
-            host=mongo_host,
-            port=mongo_port,
-            auth_source=mongo_auth_source
+            mongo_uri=constructed_uri,
+            env_file=dotenv_path if os.path.exists(dotenv_path) else None,
+            debug=True
         )
     
     print(f"Using database: {db_name}")

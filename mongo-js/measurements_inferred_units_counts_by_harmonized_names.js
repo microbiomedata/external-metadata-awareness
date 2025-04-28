@@ -36,6 +36,9 @@ db.biosamples_measurements.aggregate([
             total_count: 1
         }
     },
+    {
+        $sort: { total_count: -1 }
+    },
     // Write to target collection
     {
         $merge: {

@@ -33,7 +33,7 @@ graph TD
     G -->|new_check_envo_curies.py| J[validated CURIEs]
     G -->|new_bioportal_curie_mapper.py| K[BioPortal mappings]
     G -->|count_env_triad_in_scope_prefixes_lc.js| L[env_triad_in_scope_prefix_lc_counts]
-    E -->|count_env_traid_components_prefixes_lc.js| M[biosamples_env_triad_components_prefix_lc_counts]
+    E -->|count_env_triad_components_prefixes_lc.js| M[biosamples_env_triad_components_prefix_lc_counts]
     
     H --> P[plot_oak_annotation_coverage.py]
     P --> Q[Visualization of annotation coverage]
@@ -64,7 +64,7 @@ These JavaScript files create and transform collections:
 | `enriched_biosamples_env_triad_value_counts_gt_1.js` | biosamples_flattened | biosamples_env_triad_value_counts_gt_1 | Aggregates unique values |
 | `aggregate_env_triad_label_components.js` | biosamples_env_triad_value_counts_gt_1 | env_triad_component_labels | Extracts component labels |
 | `aggregate_env_triad_curies.js` | biosamples_env_triad_value_counts_gt_1 | env_triad_component_in_scope_curies_lc | Extracts valid CURIEs |
-| `count_env_traid_components_prefixes_lc.js` | biosamples_env_triad_value_counts_gt_1 | biosamples_env_triad_components_prefix_lc_counts | Counts CURIE prefixes |
+| `count_env_triad_components_prefixes_lc.js` | biosamples_env_triad_value_counts_gt_1 | biosamples_env_triad_components_prefix_lc_counts | Counts CURIE prefixes |
 | `count_env_triad_in_scope_prefixes_lc.js` | env_triad_component_in_scope_curies_lc | env_triad_in_scope_prefix_lc_counts | Counts validated prefixes |
 
 ## Python Processing Scripts
@@ -127,7 +127,7 @@ MongoDB JavaScript files perform initial data extraction and organization:
 - Flags labels with lingering ENVO text or digit-only content
 - Outputs to `env_triad_component_labels` collection
 
-#### `count_env_traid_components_prefixes_lc.js`
+#### `count_env_triad_components_prefixes_lc.js`
 - Counts all prefix occurrences including non-validated ones
 - Creates a statistics collection `biosamples_env_triad_components_prefix_lc_counts`
 
@@ -227,7 +227,7 @@ The system relies on these files:
 2. **MongoDB JS Aggregations**:
    - `aggregate_env_triad_curies.js`: Extracts CURIEs from components
    - `aggregate_env_triad_label_components.js`: Processes text labels
-   - `count_env_traid_components_prefixes_lc.js`: Counts all prefix occurrences
+   - `count_env_triad_components_prefixes_lc.js`: Counts all prefix occurrences
    - `count_env_triad_in_scope_prefixes_lc.js`: Counts validated prefix occurrences
 
 3. **Support Files**:
@@ -276,7 +276,7 @@ biosamples_env_triad_value_counts_gt_1 <-- aggregate_env_triad_value_counts_gt_1
          |                        v
          |            (text annotations with coverage stats)
          |
-         |--- count_env_traid_components_prefixes_lc.js
+         |--- count_env_triad_components_prefixes_lc.js
                       |
                       v
         biosamples_env_triad_components_prefix_lc_counts
@@ -328,7 +328,7 @@ To run the complete pipeline:
 2. Run the MongoDB aggregation scripts in this order:
    - `aggregate_env_triad_curies.js`
    - `aggregate_env_triad_label_components.js`
-   - `count_env_traid_components_prefixes_lc.js`
+   - `count_env_triad_components_prefixes_lc.js`
    - `count_env_triad_in_scope_prefixes_lc.js`
 3. Execute the Python scripts:
    - `new_env_triad_values_splitter.py`

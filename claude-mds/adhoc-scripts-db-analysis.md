@@ -1,4 +1,4 @@
-# Ad-hoc Scripts Database Connection Analysis
+# Ad-hoc Scripts and Database Operations
 
 ## Updated MongoDB Connection Pattern
 
@@ -10,6 +10,87 @@ The updated MongoDB connection pattern centralizes connection handling through t
 - Improved error handling
 
 The utility function `get_mongo_client()` is designed to be the single point of MongoDB connection creation.
+
+## MongoDB Collection Dependencies
+
+### Scripts in `mongo-js/needs_prerequisites`
+
+#### `measurement_evidence_by_harmonized_name.js`
+
+**Depends on:** `biosamples_measurements` collection
+
+**Creation path:**
+1. `biosamples` (original collection)
+2. `biosamples_flattened` (created by `flatten_biosamples.js` in `mongo-js/`)
+3. `biosamples_measurements` (created by `normalize_biosample_measurements.py`)
+
+**How to create the prerequisite collection:**
+```bash
+# First ensure biosamples_flattened exists
+poetry run mongo-js-executor --mongo-uri "mongodb://localhost:27017/ncbi_metadata" --js-file mongo-js/flatten_biosamples.js
+
+# Then create biosamples_measurements
+poetry run normalize-biosample-measurements
+```
+
+**Parameters for `normalize_biosample_measurements.py`:**
+- `--mongodb-uri` (default: 'mongodb://localhost:27017/ncbi_metadata')
+- `--input-collection` (default: 'biosamples_flattened')
+- `--output-collection` (default: 'biosamples_measurements')
+- `--field` (can be specified multiple times)
+
+**Notes:**
+- The `biosamples_flattened` collection creation is also included in `Makefiles/env_triads.Makefile`
+- Full dependency chain: biosamples → biosamples_flattened → biosamples_measurements → measurement_evidence_by_harmonized_name
+
+## SRA Biosample-Bioproject Extraction
+
+A MongoDB aggregation-based solution has been implemented to efficiently extract biosample-bioproject pairs from SRA metadata:
+
+```javascript
+// mongo-js/extract_sra_biosample_bioproject_pairs_simple.js
+db.sra_metadata.aggregate([
+    // Match documents with both biosample and bioproject fields
+    { $match: { 
+        biosample: { $exists: true, $ne: null },
+        bioproject: { $exists: true, $ne: null }
+    }},
+    
+    // Project just what we need
+    { $project: {
+        _id: 0,
+        biosample_accession: "$biosample",
+        bioproject_accession: "$bioproject"
+    }},
+    
+    // Group to get distinct pairs
+    { $group: {
+        _id: { 
+            biosample: "$biosample_accession", 
+            bioproject: "$bioproject_accession" 
+        },
+        biosample_accession: { $first: "$biosample_accession" },
+        bioproject_accession: { $first: "$bioproject_accession" }
+    }},
+    
+    // Write results to a new collection
+    { $out: "sra_biosamples_bioprojects" }
+], { allowDiskUse: true });
+```
+
+This approach:
+1. Extracts distinct pairs directly from MongoDB without intermediate files
+2. Uses MongoDB's $out operator to write results to the target collection
+3. Maintains a clean and simple aggregation pipeline
+4. Creates appropriate indices for query optimization
+5. Is compatible with all MongoDB versions
+
+The script is available via a Makefile target:
+```makefile
+make -f Makefiles/sra_metadata.Makefile extract-sra-biosample-bioproject-pairs
+```
+
+This solution is significantly more efficient than the previous BigQuery extraction approach, especially for large SRA datasets.
 
 ## Core Scripts Updated to Use the New Pattern
 
