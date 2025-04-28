@@ -1,9 +1,5 @@
-MONGO_DB = ncbi_metadata
-MONGO_HOST = localhost
-MONGO_PORT = 27017
-MONGO_COMMAND = mongosh
 RUN = poetry run
-MONGO_URI ?= mongodb://$(MONGO_HOST):$(MONGO_PORT)/$(MONGO_DB)
+MONGO_URI ?= mongodb://localhost:27017/ncbi_metadata
 
 # Optional environment file (user must set ENV_FILE externally if they want it)
 ifdef ENV_FILE
@@ -41,6 +37,20 @@ purge-derived-repos:
 		--connect \
 		--verbose \
 		--command "db.env_triad_component_curies_uc.drop()"
+	@echo "Purging biosamples_flattened collection..."
+	$(RUN) mongo-connect \
+		--uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--connect \
+		--verbose \
+		--command "db.biosamples_flattened.drop()"
+	@echo "Purging env_triads collection..."
+	$(RUN) mongo-connect \
+		--uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--connect \
+		--verbose \
+		--command "db.env_triads.drop()"
 	@date
 
 count-harmonizable-attribs: mongo-js/count_harmonizable_biosample_attribs.js
@@ -179,88 +189,22 @@ env-triad-value-counts:
 		--mongo-uri "$(MONGO_URI)" \
 		$(ENV_FILE_OPTION) # creates its own indices # 30 minutes + 6 for indexing
 
-# todo run populate_env_triads_collection with --no-recreate-indices ?
+####
 
-# not really triads related
-.PHONY: normalize-measurements
-normalize-measurements:
+# duplicative
+split-env-triad-values:
 	@date
 	@echo "Using MONGO_URI=$(MONGO_URI)"
-	$(RUN) normalize-biosample-measurements \
-		--mongodb-uri "$(MONGO_URI)" \
-		$(ENV_FILE_OPTION) \
-		--overwrite \
-		--field age \
-		--field elev \
-		--field samp_size
+	$(RUN) env-triad-values-splitter \
+			--mongo-uri "$(MONGO_URI)" \
+			--collection biosamples_env_triad_value_counts_gt_1 \
+			--field env_triad_value \
+			--min-length 3 \
+			--verbose \
+			$(ENV_FILE_OPTION)
+	@date
 
-# PRIOR TO THIS CODE
-#bioprojects
-#bioprojects_submissions
-#
-#biosamples # review, document and optimize indices
-#biosamples_attribute_name_counts_flat_gt_1
-#
-#biosamples_flattened # review, document and optimize indices
-#biosamples_ids
-#biosamples_links
-#
-#notes
-#
-#packages
-#
-#sra_attributes_k_doc_counts_gt_1
-#sra_biosamples_bioprojects ... index on both biosample_accession and bioproject_accession
-
-# AFTER THIS CODE
-#biosamples_env_triad_value_counts_gt_1
-#
-#env_triad_component_curies_uc
-#env_triad_component_labels
-
-
-#db.env_triad_component_labels.updateMany(
-#  {},
-#  { $unset: { oak_text_annotations: "", components_count: "oak_annotations_count" } }
-#);
-
-#use ncbi_metadata
-#
-#db.biosamples_env_triad_value_counts_gt_1.drop()
-#db.env_triad_component_curies_uc.drop()
-#db.env_triad_component_labels.drop()
-
-#db.biosamples_env_triad_value_counts_gt_1.updateMany(
-#  {},
-#  { $unset: { components: "", components_count: "" } }
-#);
-
-#db.biosamples_env_triad_value_counts_gt_1.aggregate([
-#  {
-#    $facet: {
-#      components_count: [
-#        { $match: { components_count: 2 } },
-#        { $count: "count" }
-#      ],
-#      lingering_envo: [
-#        { $match: { "components.lingering_envo": true } },
-#        { $count: "count" }
-#      ],
-#      prefix_uc_ENVO: [
-#        { $match: { "components.prefix_uc": "ENVO" } },
-#        { $count: "count" }
-#      ],
-#      prefix_uc_OF: [
-#        { $match: { "components.prefix_uc": "OF" } },
-#        { $count: "count" }
-#      ]
-#    }
-#  }
-#])
-
-#db.biosamples_env_triad_value_counts_gt_1.aggregate([
-#  { $unwind: "$components" },
-#  { $group: { _id: "$components.prefix_uc", count: { $sum: 1 } } },
-#  { $sort: { count: -1 } }
-#]);
+# Usage examples:
+# make split-env-triad-values
+# make split-env-triad-values MONGO_URI="mongodb://mongo-ncbi-loadbalancer.mam.production.svc.spin.nersc.org:27017/ncbi_metadata?authMechanism=SCRAM-SHA-256&authSource=admin&directConnection=true"
 

@@ -13,7 +13,6 @@ from external_metadata_awareness.mongodb_connection import get_mongo_client
 # these don't appear as a harmonized name attribute at all
 
 
-
 ###
 
 # {
@@ -366,7 +365,8 @@ def parse_measurements(client, db_name, collection_name, field_name, extra_verbo
 
 @click.command()
 @click.option('--mongodb-uri', default='mongodb://localhost:27017/ncbi_metadata', help='MongoDB connection URI')
-@click.option('--env-file', default=None, help='Path to .env file for credentials (should contain MONGO_USER and MONGO_PASSWORD)')
+@click.option('--env-file', default=None,
+              help='Path to .env file for credentials (should contain MONGO_USER and MONGO_PASSWORD)')
 @click.option('--input-collection', default='biosamples_flattened', help='Input collection name')
 @click.option('--output-collection', default='biosamples_measurements', help='Output collection name')
 @click.option('--field', required=False, multiple=True, default=curated_measurements, help='Field name(s) to parse.')
@@ -380,21 +380,21 @@ def main(mongodb_uri, env_file, input_collection, output_collection, field, verb
 
         if not is_quiet:
             click.echo(f"[{timestamp()}] Connecting to MongoDB at {mongodb_uri}...")
-        
+
         # Connect to MongoDB
         client = get_mongo_client(
             mongo_uri=mongodb_uri,
             env_file=env_file,
             debug=is_verbose
         )
-        
+
         # Extract database name from URI
         parsed = uri_parser.parse_uri(mongodb_uri)
         db_name = parsed.get('database')
-        
+
         if not db_name:
             raise ValueError("MongoDB URI must include a database name")
-        
+
         db = client[db_name]
         input_col = db[input_collection]
         output_col = db[output_collection]

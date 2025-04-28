@@ -19,9 +19,7 @@ WGET=wget
         infer-env-triad-curies \
         load-biosamples-into-mongo \
         purge \
-        split-env-triad-values \
-        load-sra-parquet-to-mongo \
-        fetch_sra_metadata_parquet_from_s3
+        split-env-triad-values
 
 purge:
 	rm -rf downloads/biosample_set.xml*
@@ -30,9 +28,6 @@ purge:
 	rm -rf local/biosample-last-id-val.txt
 	rm -rf local/biosample_set.xml*
 	rm -rf local/oversize-bioprojects/*
-	rm -rf local/sra_metadata_parquet
-#	@echo "Attempting to delete MongoDB database: $(MONGO_DB)"
-#	mongosh --quiet --eval "db.getSiblingDB('$(MONGO_DB)').dropDatabase()" || true
 
 downloads/biosample_set.xml.gz:
 	date
@@ -111,58 +106,6 @@ local/biosample_xpath_counts.json: local/biosample_set.xml
 
 ####
 
-MONGO_HOST=localhost
-MONGO_PORT=27017
-MONGO_DB=ncbi_metadata
-
-SRA_BIGQUERY_PROJECT = nmdc-377118
-SRA_BIGQUERY_DATASET = nih-sra-datastore.sra
-SRA_BIGQUERY_TABLE = metadata
-SRA_BIGQUERY_BATCH_SIZE = 100000
-SRA_BIGQUERY_LIMIT = 30000000 # expect ~ 30000000
-
-downloads/sra_metadata_table_schema.tsv:
-	$(RUN) dump-sra-metadata-schema \
-		--project $(SRA_BIGQUERY_PROJECT) \
-		--dataset $(SRA_BIGQUERY_DATASET) \
-		--table $(SRA_BIGQUERY_TABLE) \
-		--output $@ \
-		--format tsv
-
-# Preview mode: analyze the dataset without exporting
-biosample-bioproject-preview:
-	$(RUN) export-sra-accession-pairs \
-		--project $(SRA_BIGQUERY_PROJECT) \
-		--dataset $(SRA_BIGQUERY_DATASET) \
-		--table $(SRA_BIGQUERY_TABLE) \
-		--report-nulls \
-		--preview \
-		--verbose
-
-# Production mode: full export of accession pairs
-downloads/sra_accession_pairs.tsv:
-	$(RUN) export-sra-accession-pairs \
-		--project $(SRA_BIGQUERY_PROJECT) \
-		--dataset $(SRA_BIGQUERY_DATASET) \
-		--table $(SRA_BIGQUERY_TABLE) \
-		--batch-size $(SRA_BIGQUERY_BATCH_SIZE) \
-		--limit $(SRA_BIGQUERY_LIMIT) \
-		--exclude-nulls \
-		--output $@
-
-sra_accession_pairs_tsv_to_mongo: downloads/sra_accession_pairs.tsv
-	$(RUN) sra-accession-pairs-to-mongo \
-		--file-path $< \
-		--mongo-host $(MONGO_HOST) \
-		--mongo-port $(MONGO_PORT)  \
-		--database $(MONGO_DB) \
-		--collection sra_biosamples_bioprojects \
-		--batch-size 100000 \
-		--report-interval 500000
-
-
-####
-
 downloads/bioproject.xml:
 	date
 	$(WGET) -O $@ "https://ftp.ncbi.nlm.nih.gov/bioproject/bioproject.xml" # ~ 3 GB March 2025
@@ -193,77 +136,16 @@ local/bioproject_xpath_counts.json: downloads/bioproject.xml
 		--output $@ \
 		--xml-file $<
 
-####
+flatten_biosamples_ids:
+	date && time $(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/flatten_biosamples_ids.js \
+		--verbose && date
 
-local/sra_metadata_parquet:
-	mkdir -p $@
-
-# Default setup (set a flag for Perlmutter or local execution)
-USE_SHIFTER ?= 0  # Default to local (0 means not using shifter)
-
-# Main target to fetch the SRA metadata Parquet file
-fetch_sra_metadata_parquet_from_s3: local/sra_metadata_parquet
-	# Ensure necessary directories exist
-	@mkdir -p local/sra_metadata_parquet
-
-	@date
-	@if [ "$(USE_SHIFTER)" -eq 1 ]; then \
-		echo "Running on Perlmutter, using shifter..."; \
-		shifter --image=amazon/aws-cli:latest aws s3 cp s3://sra-pub-metadata-us-east-1/sra/metadata/ $< --recursive --no-sign-request; \
-	else \
-		echo "Running locally, skipping shifter..."; \
-		aws s3 cp s3://sra-pub-metadata-us-east-1/sra/metadata/ $< --recursive --no-sign-request; \
-	fi
-	@date
-
-
-# SRA Parquet collection variables
-SRA_PARQUET_MAX_ROWS ?=
-
-# Define row limit option if SRA_PARQUET_MAX_ROWS is set
-ifdef SRA_PARQUET_MAX_ROWS
-  SRA_PARQUET_ROWS_OPTION := --nrows $(SRA_PARQUET_MAX_ROWS)
-endif
-
-load-sra-parquet-to-mongo: local/sra_metadata_parquet
-	@date
-	@echo "Using MONGO_URI=$(MONGO_URI)"
-	$(RUN) sra-parquet-to-mongodb \
-			--parquet-dir $< \
-			--drop-collection \
-			--progress-interval 1000 \
-			--mongo-uri "$(MONGO_URI)" \
-			--mongo-collection sra_metadata \
-			$(SRA_PARQUET_ROWS_OPTION) \
-			$(ENV_FILE_OPTION) \
-			--verbose
-	@date
-
-
-# [2025-03-21 22:53:08] Completed processing 30 files in 1935.58 minutes. Total inserted: 35567948 records.
-
-
-####
-
-split-env-triad-values:
-	@date
-	@echo "Using MONGO_URI=$(MONGO_URI)"
-	$(RUN) env-triad-values-splitter \
-			--mongo-uri "$(MONGO_URI)" \
-			--collection biosamples_env_triad_value_counts_gt_1 \
-			--field env_triad_value \
-			--min-length 3 \
-			--verbose \
-			$(ENV_FILE_OPTION)
-	@date
-
-# Usage examples:
-# make split-env-triad-values
-# make split-env-triad-values MONGO_URI="mongodb://mongo-ncbi-loadbalancer.mam.production.svc.spin.nersc.org:27017/ncbi_metadata?authMechanism=SCRAM-SHA-256&authSource=admin&directConnection=true"
-
-
-####
-
-
-#local/biosample-count-mongodb.txt:
-#	date && mongosh --eval "db.getSiblingDB('$(MONGO_DB)').biosamples.countDocuments()" > $@ && date # 1 minute # how to use Makefile variables here?
+flatten_biosamples_links:
+	date && time $(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/flatten_biosamples_links.js \
+		--verbose && date
