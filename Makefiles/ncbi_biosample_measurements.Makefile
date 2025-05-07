@@ -1,6 +1,8 @@
 RUN = poetry run
 MONGO_URI ?= mongodb://localhost:27017/ncbi_metadata
 
+# todo measurements_evidence_by_harmonized_name not measurement_evidence_by_harmonized_name
+
 # Optional environment file (user must set ENV_FILE externally if they want it)
 ifdef ENV_FILE
   ENV_FILE_OPTION := --env-file $(ENV_FILE)

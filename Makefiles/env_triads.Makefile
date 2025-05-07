@@ -1,6 +1,10 @@
 RUN = poetry run
 MONGO_URI ?= mongodb://localhost:27017/ncbi_metadata
 
+# todo ?
+# env_triads_component_curies_uc instead of env_triad_component_curies_uc ?
+# env_triads_component_labels instead of env_triad_component_labels ?
+
 # Optional environment file (user must set ENV_FILE externally if they want it)
 ifdef ENV_FILE
   ENV_FILE_OPTION := --env-file $(ENV_FILE)
