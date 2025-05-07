@@ -14,8 +14,10 @@ endif
 local/goldData.xlsx:
 	curl -o $@ "https://gold.jgi.doe.gov/download?mode=site_excel"
 
-# This target will flatten GOLD biosamples stored in MongoDB and create
+# The flatten-gold-biosamples target will flatten GOLD biosamples stored in MongoDB and create
 # normalized collections with environmental context fields.
+#
+# It depends on populating a gold_metadata collection with the sample-annotator repo
 #
 # It performs the following tasks:
 # 1. Connects to MongoDB for gold_metadata database
@@ -24,7 +26,7 @@ local/goldData.xlsx:
 # 4. Looks up canonical labels and checks for obsolete terms
 # 5. Creates flattened_biosamples and flattened_biosample_contacts collections
 
-flatten-gold-biosamples: # depends on populating a gold_metadata collection with the sample-annotator repo
+flatten-gold-biosamples:
 	@echo "Using MONGO_URI=$(MONGO_URI)"
 	$(RUN) flatten-gold-biosamples \
 		$(ENV_FILE_OPTION) \

@@ -6,7 +6,7 @@ WGET=wget
 
 # todo update dev and user documentation; share database and documentation at NERSC portal
 
-# todo return to generating a wide table?
+# todo return to generating a wide table? done "biosamples_flattened". n(what doesn't that include?) Now working on long attributes table ""
 
 # todo add poetry CLI aliases for python scripts
 
@@ -14,12 +14,17 @@ WGET=wget
 
 # todo log don't print
 
-.PHONY: add-ncbi-biosample-package-attributes \
-        add-ncbi-biosamples-xml-download-date \
-        infer-env-triad-curies \
-        load-biosamples-into-mongo \
+# automation for
+
+# always "biosamples_" not "biosample_"
+
+.PHONY: load-biosamples-into-mongo \
         purge \
-        split-env-triad-values
+        load_acceptable_sized_leaf_bioprojects_into_mongodb \
+        flatten_biosamples_ids \
+        flatten_biosamples_links \
+        flatten_biosample_attributes \
+        flatten_biosample_packages
 
 purge:
 	rm -rf downloads/biosample_set.xml*
@@ -149,3 +154,31 @@ flatten_biosamples_links:
 		$(ENV_FILE_OPTION) \
 		--js-file mongo-js/flatten_biosamples_links.js \
 		--verbose && date
+
+flatten_biosample_attributes:
+	@date
+	@echo "Using MONGO_URI=$(MONGO_URI)"
+	$(RUN) flatten-biosample-attributes \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--source-collection biosamples \
+		--target-collection biosamples_attributes \
+		--verbose \
+		--batch-size 1000
+	@date
+
+# index all fields?
+# currently have
+#biosample_id
+#harmonized_name
+
+flatten_biosample_packages:
+	@date
+	@echo "Aggregating biosample packages from biosamples_flattened..."
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/flatten_biosample_packages.js \
+		--verbose
+	@date
+
