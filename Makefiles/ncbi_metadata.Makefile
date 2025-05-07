@@ -6,15 +6,11 @@ WGET=wget
 
 # todo update dev and user documentation; share database and documentation at NERSC portal
 
-# todo return to generating a wide table? done "biosamples_flattened". n(what doesn't that include?) Now working on long attributes table ""
-
 # todo add poetry CLI aliases for python scripts
 
 # todo what kind of logging/progress indication is really most useful?
 
 # todo log don't print
-
-# automation for
 
 # always "biosamples_" not "biosample_"
 
