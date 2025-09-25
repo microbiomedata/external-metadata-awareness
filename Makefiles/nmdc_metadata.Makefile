@@ -270,7 +270,9 @@ downloads/nmdc_select_mongodb_dump.gz:
 		--excludeCollection txn_log \
 		--excludeCollection typecodes \
 		--excludeCollection users \
-		--excludeCollection workflows
+		--excludeCollection workflows \
+		--excludeCollection functional_annotation_agg \
+		--excludeCollection tmp.alldocs.68acdd435117fa76620a1bfa
 
  #functional_annotation_agg,4543621539
  #workflow_execution_set,196286407
