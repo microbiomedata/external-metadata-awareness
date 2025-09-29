@@ -8,7 +8,8 @@ endif
 
 .PHONY: count-biosamples-per-harmonized-name count-biosamples-step1 count-bioprojects-step2 merge-counts-step3 \
 index-harmonized-name-counts count-biosamples-and-bioprojects-per-harmonized-name count-unit-assertions count-mixed-content \
-count-measurement-evidence calculate-measurement-ratios prioritize-targets process-priority-measurements export-flat-measurements clean-discovery
+count-measurement-evidence calculate-measurement-ratios prioritize-targets process-priority-measurements export-flat-measurements clean-discovery \
+rank-measurement-attributes rank-unified-measurement-attributes
 
 # Phase 0: Baseline counting
 
@@ -134,14 +135,91 @@ count-measurement-evidence: count-unit-assertions count-mixed-content
 	@echo "✅ Measurement evidence counting complete"
 	@echo "📊 Created collections: unit_assertion_counts, mixed_content_counts"
 
-# Calculate measurement evidence ratios by joining count collections
-calculate-measurement-ratios:
+# Calculate measurement evidence percentages by joining count collections
+calculate-measurement-percentages:
 	@date
-	@echo "Calculating measurement evidence ratios..."
+	@echo "Calculating measurement evidence percentages..."
 	$(RUN) mongo-js-executor \
 		--mongo-uri "$(MONGO_URI)" \
 		$(ENV_FILE_OPTION) \
 		--js-file mongo-js/calculate_measurement_evidence_ratios.js \
+		--verbose
+	@date
+
+# Count attribute_name + harmonized_name pairings
+count-attribute-harmonized-pairings:
+	@date
+	@echo "Counting attribute_name + harmonized_name pairings..."
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/count_attribute_harmonized_pairings.js \
+		--verbose
+	@date
+
+# Load global MIxS slot definitions into MongoDB
+load-global-mixs-slots:
+	@date
+	@echo "Loading global MIxS slot definitions into MongoDB..."
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/load_global_mixs_slots.js \
+		--verbose
+	@date
+
+# Analyze NMDC schema slot_usage statements with range assertions
+analyze-nmdc-slot-usage:
+	@date
+	@echo "Analyzing NMDC schema slot_usage statements..."
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/analyze_nmdc_slot_usage.js \
+		--verbose
+	@date
+
+# Generate detailed report of NMDC range slot_usage modifications
+report-nmdc-range-slot-usage:
+	@date
+	@echo "Generating detailed NMDC range slot_usage report..."
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/report_nmdc_range_slot_usage.js \
+		--verbose
+	@date
+
+# Load global NMDC slot definitions into MongoDB
+load-global-nmdc-slots:
+	@date
+	@echo "Loading global NMDC slot definitions into MongoDB..."
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/load_global_nmdc_slots.js \
+		--verbose
+	@date
+
+# Comprehensive ranking of measurement-like attributes across all sources
+rank-measurement-attributes:
+	@date
+	@echo "Ranking measurement attributes across NCBI, MIxS, and NMDC sources..."
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/rank_measurement_attributes.js \
+		--verbose
+	@date
+
+# Unified ranking that consolidates same attributes across sources  
+rank-unified-measurement-attributes:
+	@date
+	@echo "Creating unified measurement attribute rankings (consolidating overlaps)..."
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/rank_unified_measurement_attributes.js \
 		--verbose
 	@date
 

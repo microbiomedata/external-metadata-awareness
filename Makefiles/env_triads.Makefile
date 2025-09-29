@@ -78,7 +78,8 @@ count-harmonizable-attribs: mongo-js/count_harmonizable_biosample_attribs.js
 
 env-triads: biosamples-flattened env-triad-value-counts
 
-# Step 1: Flatten biosamples collection into biosamples_flattened
+# Step 1: Flatten biosamples collection into biosamples_flattened  
+# IMPORTANT: This target creates the biosamples_flattened collection used by measurement discovery pipeline
 biosamples-flattened:
 	@date
 	@echo "Using MONGO_URI=$(MONGO_URI)"

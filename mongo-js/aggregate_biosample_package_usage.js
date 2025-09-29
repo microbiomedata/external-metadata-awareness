@@ -8,12 +8,12 @@ db.biosamples_flattened.aggregate([
     }
   },
   { $sort: { count: -1 } },
-  { $out: "biosamples_packages" }
+  { $out: "biosample_package_usage" }
 ], { allowDiskUse: true });
 
 // Create an index on count for faster queries
-db.biosample_packages.createIndex({ count: -1 });
+db.biosample_package_usage.createIndex({ count: -1 });
 
 // Print minimal stats
-const totalPackages = db.biosample_packages.countDocuments();
-print(`Created collection with ${totalPackages} unique biosample packages.`);
+const totalPackages = db.biosample_package_usage.countDocuments();
+print(`Created collection with ${totalPackages} unique package types by usage.`);
