@@ -6,8 +6,10 @@ This script processes the satisfying biosamples CSV export to normalize:
 2. lat_lon to decimal degrees format (+/- DD.dddd)
 
 Uses dateparser for robust date parsing and geopy for coordinate conversion.
+Optimized to process unique values first, then map back to full dataset.
 """
 
+import re
 from pathlib import Path
 from typing import Optional
 
@@ -15,6 +17,36 @@ import click
 import dateparser
 import pandas as pd
 from geopy.point import Point
+
+
+def is_valid_iso_date(date_str: str) -> bool:
+    """
+    Check if string is already in YYYY-MM-DD format with valid ranges.
+
+    Args:
+        date_str: String to check
+
+    Returns:
+        True if valid YYYY-MM-DD with plausible year/month/day
+    """
+    pattern = r'^(\d{4})-(\d{2})-(\d{2})$'
+    match = re.match(pattern, date_str)
+    if not match:
+        return False
+
+    year = int(match.group(1))
+    month = int(match.group(2))
+    day = int(match.group(3))
+
+    # Validate ranges
+    if year < 2000 or year > 2050:
+        return False
+    if month < 1 or month > 12:
+        return False
+    if day < 1 or day > 31:
+        return False
+
+    return True
 
 
 def normalize_date(date_str: Optional[str]) -> Optional[str]:
@@ -30,11 +62,22 @@ def normalize_date(date_str: Optional[str]) -> Optional[str]:
     if pd.isna(date_str) or not date_str or str(date_str).strip() == "":
         return None
 
+    date_str = str(date_str).strip()
+
+    # Fast path: already valid ISO date
+    if is_valid_iso_date(date_str):
+        return date_str
+
     try:
         # Use dateparser for robust, messy format handling
-        parsed = dateparser.parse(str(date_str))
+        parsed = dateparser.parse(date_str)
         if parsed is None:
             return None
+
+        # Validate year range
+        if parsed.year < 2000 or parsed.year > 2050:
+            return None
+
         return parsed.strftime('%Y-%m-%d')
     except Exception:
         return None
@@ -94,16 +137,25 @@ def normalize_coordinate(coord_str: Optional[str]) -> tuple[Optional[float], Opt
     default=False,
     help='Print samples that failed normalization to stderr'
 )
+@click.option(
+    '--progress-interval',
+    type=int,
+    default=10,
+    help='Report progress every N unique values processed (default: 10)'
+)
 def normalize_biosamples(
     input_file: Path,
     output_file: Path,
-    report_failures: bool
+    report_failures: bool,
+    progress_interval: int
 ) -> None:
     """
     Normalize biosample dates and coordinates in CSV export.
 
     Reads the satisfying biosamples CSV, normalizes date and coordinate formats,
     and writes the result to a new CSV file.
+
+    Optimization: Processes unique values first, then maps back to full dataset.
     """
     click.echo(f"Reading input file: {input_file}")
 
@@ -119,51 +171,76 @@ def normalize_biosamples(
     coord_failed = 0
     failures = []
 
-    # Normalize dates
-    click.echo("Normalizing collection_date to YYYY-MM-DD format...")
+    # =========================================================================
+    # Normalize dates using unique value mapping
+    # =========================================================================
+    click.echo("\nNormalizing collection_date to YYYY-MM-DD format...")
     if 'collection_date' in df.columns:
-        for idx, row in df.iterrows():
-            original_date = row['collection_date']
-            normalized = normalize_date(original_date)
+        # Get unique values and sort alphabetically
+        unique_dates = sorted(df['collection_date'].unique(), key=lambda x: str(x))
+        total_unique = len(unique_dates)
+        click.echo(f"  Found {total_unique:,} unique date values")
 
-            if normalized is not None:
-                df.at[idx, 'collection_date'] = normalized
-                date_normalized += 1
-            else:
-                df.at[idx, 'collection_date'] = None
-                if pd.notna(original_date) and str(original_date).strip():
-                    date_failed += 1
-                    if report_failures:
-                        failures.append(f"Date failed: {row['accession']} - '{original_date}'")
+        # Process each unique value
+        date_map = {}
+        for idx, date_val in enumerate(unique_dates, start=1):
+            if idx % progress_interval == 0:
+                click.echo(f"  Processing date {idx}/{total_unique}: '{date_val}'")
 
-    # Normalize coordinates - split into separate latitude and longitude columns
-    click.echo("Normalizing lat_lon to separate latitude and longitude columns (+/- DD.dddd)...")
+            normalized = normalize_date(date_val)
+            date_map[date_val] = normalized
+
+        # Map back to dataframe
+        click.echo(f"  Mapping normalized dates back to {original_count:,} rows...")
+        df['collection_date'] = df['collection_date'].map(date_map)
+
+        # Count successes/failures
+        date_normalized = df['collection_date'].notna().sum()
+        date_failed = df['collection_date'].isna().sum()
+
+        if report_failures:
+            for orig_val, norm_val in date_map.items():
+                if norm_val is None and pd.notna(orig_val) and str(orig_val).strip():
+                    failures.append(f"Date failed: '{orig_val}'")
+
+    # =========================================================================
+    # Normalize coordinates using unique value mapping
+    # =========================================================================
+    click.echo("\nNormalizing lat_lon to separate latitude and longitude columns (+/- DD.dddd)...")
     if 'lat_lon' in df.columns:
-        # Create new columns
-        df['latitude'] = None
-        df['longitude'] = None
+        # Get unique values and sort alphabetically
+        unique_coords = sorted(df['lat_lon'].unique(), key=lambda x: str(x))
+        total_unique = len(unique_coords)
+        click.echo(f"  Found {total_unique:,} unique coordinate values")
 
-        for idx, row in df.iterrows():
-            original_coord = row['lat_lon']
-            lat, lon = normalize_coordinate(original_coord)
+        # Process each unique value
+        coord_map = {}
+        for idx, coord_val in enumerate(unique_coords, start=1):
+            if idx % progress_interval == 0:
+                click.echo(f"  Processing coordinate {idx}/{total_unique}: '{coord_val}'")
 
-            if lat is not None and lon is not None:
-                df.at[idx, 'latitude'] = lat
-                df.at[idx, 'longitude'] = lon
-                coord_normalized += 1
-            else:
-                df.at[idx, 'latitude'] = None
-                df.at[idx, 'longitude'] = None
-                if pd.notna(original_coord) and str(original_coord).strip():
-                    coord_failed += 1
-                    if report_failures:
-                        failures.append(f"Coord failed: {row['accession']} - '{original_coord}'")
+            lat, lon = normalize_coordinate(coord_val)
+            coord_map[coord_val] = (lat, lon)
 
-        # Drop the original lat_lon column
+        # Map back to dataframe - create separate columns
+        click.echo(f"  Mapping normalized coordinates back to {original_count:,} rows...")
+        df['latitude'] = df['lat_lon'].map(lambda x: coord_map.get(x, (None, None))[0])
+        df['longitude'] = df['lat_lon'].map(lambda x: coord_map.get(x, (None, None))[1])
+
+        # Count successes/failures
+        coord_normalized = df['latitude'].notna().sum()
+        coord_failed = df['latitude'].isna().sum()
+
+        if report_failures:
+            for orig_val, (lat, lon) in coord_map.items():
+                if lat is None and pd.notna(orig_val) and str(orig_val).strip():
+                    failures.append(f"Coord failed: '{orig_val}'")
+
+        # Drop original lat_lon column
         df = df.drop(columns=['lat_lon'])
 
     # Write output
-    click.echo(f"Writing normalized data to: {output_file}")
+    click.echo(f"\nWriting normalized data to: {output_file}")
     output_file.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(output_file, index=False)
 
