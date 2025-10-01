@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-08-19T15:35:30Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Mapping between LinkML schemas",
+  "name": "linkml-map",
+  "updatedAt": "2025-09-29T13:43:51Z",
+  "url": "https://github.com/linkml/linkml-map",
+  "firstCommitDate": "2025-09-29T13:43:46Z",
+  "lastCommitDate": "2025-09-29T13:43:46Z",
+  "topContributors": [
+    {
+      "contributions": 104,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 38,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 36,
+      "login": "ialarmedalien"
+    },
+    {
+      "contributions": 35,
+      "login": "amc-corey-cox"
+    },
+    {
+      "contributions": 14,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 8,
+      "login": "Silvanoc"
+    },
+    {
+      "contributions": 8,
+      "login": "martinwellman"
+    },
+    {
+      "contributions": 6,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 5,
+      "login": "yarikoptic"
+    },
+    {
+      "contributions": 2,
+      "login": "kevinschaper"
+    }
+  ]
+}

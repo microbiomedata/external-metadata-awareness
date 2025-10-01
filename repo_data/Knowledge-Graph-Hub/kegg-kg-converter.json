@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-12-14T19:32:07Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A simple data ingested using url constructors",
+  "name": "kegg-kg-converter",
+  "updatedAt": "2024-08-19T23:02:47Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/kegg-kg-converter",
+  "firstCommitDate": "2021-07-20T14:46:32Z",
+  "lastCommitDate": "2021-07-20T14:46:32Z",
+  "topContributors": [
+    {
+      "contributions": 54,
+      "login": "hrshdhgd"
+    }
+  ]
+}

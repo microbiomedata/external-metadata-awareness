@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-10-24T13:19:22Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Demonstration of bias in graph machine learning owing to negative example selection",
+  "name": "negativeExampleSelection",
+  "updatedAt": "2024-05-17T02:43:54Z",
+  "url": "https://github.com/monarch-initiative/negativeExampleSelection",
+  "firstCommitDate": "2023-11-24T14:22:02Z",
+  "lastCommitDate": "2023-11-24T14:22:02Z",
+  "topContributors": [
+    {
+      "contributions": 56,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 1,
+      "login": "LucaCappelletti94"
+    }
+  ]
+}

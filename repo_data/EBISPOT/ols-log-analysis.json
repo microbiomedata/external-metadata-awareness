@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-08-04T08:43:32Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "ols-log-analysis",
+  "updatedAt": "2022-05-03T15:51:33Z",
+  "url": "https://github.com/EBISPOT/ols-log-analysis",
+  "firstCommitDate": "2022-05-03T15:50:31Z",
+  "lastCommitDate": "2022-05-03T15:50:31Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "henrietteharmse"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-05-06T18:06:13Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A Python interface to the Prolog pengines library.  Makes it exceedingly easy to call out to SWI-Prolog within Python!",
+  "name": "PythonPengines",
+  "updatedAt": "2018-05-06T18:06:15Z",
+  "url": "https://github.com/cmungall/PythonPengines",
+  "firstCommitDate": "2018-05-03T05:01:24Z",
+  "lastCommitDate": "2018-05-03T05:01:24Z",
+  "topContributors": [
+    {
+      "contributions": 40,
+      "login": "ian-andrich"
+    }
+  ]
+}

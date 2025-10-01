@@ -1,0 +1,38 @@
+{
+  "createdAt": "2023-07-28T16:34:20Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Genomic Biodiversity Interest Group",
+  "name": "gbwg",
+  "updatedAt": "2023-07-31T13:18:45Z",
+  "url": "https://github.com/cmungall/gbwg",
+  "firstCommitDate": "2023-06-21T10:53:53Z",
+  "lastCommitDate": "2023-06-21T10:53:53Z",
+  "topContributors": [
+    {
+      "contributions": 30,
+      "login": "raissameyer"
+    },
+    {
+      "contributions": 25,
+      "login": "thomasstjerne"
+    },
+    {
+      "contributions": 8,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 5,
+      "login": "timrobertson100"
+    },
+    {
+      "contributions": 4,
+      "login": "gdadade"
+    },
+    {
+      "contributions": 1,
+      "login": "pbuttigieg"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-05-10T18:55:37Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Dealing with one synthetic biology modeling problem at a time",
+  "name": "synbio_bottomup",
+  "updatedAt": "2022-05-10T19:05:11Z",
+  "url": "https://github.com/turbomam/synbio_bottomup",
+  "firstCommitDate": "2022-05-10T20:30:18Z",
+  "lastCommitDate": "2022-05-10T20:30:18Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "turbomam"
+    }
+  ]
+}

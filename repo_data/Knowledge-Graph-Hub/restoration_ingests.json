@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-07-22T18:57:39Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "restoration_ingests",
+  "updatedAt": "2024-07-22T19:46:56Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/restoration_ingests",
+  "firstCommitDate": "2024-07-22T19:46:42Z",
+  "lastCommitDate": "2024-07-22T19:46:42Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "caufieldjh"
+    }
+  ]
+}

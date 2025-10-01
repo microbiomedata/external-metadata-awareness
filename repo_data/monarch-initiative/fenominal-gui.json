@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-07-13T20:47:50Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Graphical User Interface for Fenominal",
+  "name": "fenominal-gui",
+  "updatedAt": "2025-03-15T13:04:56Z",
+  "url": "https://github.com/monarch-initiative/fenominal-gui",
+  "firstCommitDate": "2022-07-19T16:23:46Z",
+  "lastCommitDate": "2022-07-19T16:23:46Z",
+  "topContributors": [
+    {
+      "contributions": 30,
+      "login": "pnrobinson"
+    }
+  ]
+}

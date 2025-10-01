@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-08-16T09:24:31Z",
+  "defaultBranchRef": {
+    "name": "develop"
+  },
+  "description": "Toolkit for accessing, Q/C, and maintenance of Phenopacket Store ",
+  "name": "phenopacket-store-toolkit",
+  "updatedAt": "2025-07-11T08:44:17Z",
+  "url": "https://github.com/monarch-initiative/phenopacket-store-toolkit",
+  "firstCommitDate": "2025-07-03T08:48:08Z",
+  "lastCommitDate": "2025-07-03T08:48:08Z",
+  "topContributors": [
+    {
+      "contributions": 68,
+      "login": "ielis"
+    },
+    {
+      "contributions": 3,
+      "login": "pnrobinson"
+    }
+  ]
+}

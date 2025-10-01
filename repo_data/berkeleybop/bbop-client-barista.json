@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-01-06T23:31:33Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Manager for handling per-model client-to-client and server-to-client communication via Barista.",
+  "name": "bbop-client-barista",
+  "updatedAt": "2016-02-19T00:44:59Z",
+  "url": "https://github.com/berkeleybop/bbop-client-barista",
+  "firstCommitDate": "2016-05-25T04:57:47Z",
+  "lastCommitDate": "2016-05-25T04:57:47Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "kltm"
+    },
+    {
+      "contributions": 1,
+      "login": "DoctorBud"
+    }
+  ]
+}

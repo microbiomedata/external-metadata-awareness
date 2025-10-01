@@ -1,0 +1,34 @@
+{
+  "createdAt": "2017-12-07T19:41:18Z",
+  "defaultBranchRef": {
+    "name": "develop"
+  },
+  "description": "A repository for the schemas used for the data object service.",
+  "name": "data-object-schemas",
+  "updatedAt": "2017-10-24T21:38:34Z",
+  "url": "https://github.com/cmungall/data-object-schemas",
+  "firstCommitDate": "2017-10-17T20:50:10Z",
+  "lastCommitDate": "2017-10-17T20:50:10Z",
+  "topContributors": [
+    {
+      "contributions": 45,
+      "login": "briandoconnor"
+    },
+    {
+      "contributions": 25,
+      "login": "david4096"
+    },
+    {
+      "contributions": 3,
+      "login": "geoffjentry"
+    },
+    {
+      "contributions": 1,
+      "login": "bwalsh"
+    },
+    {
+      "contributions": 1,
+      "login": "mr-c"
+    }
+  ]
+}

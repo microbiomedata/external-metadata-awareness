@@ -1,0 +1,26 @@
+{
+  "createdAt": "2021-09-21T14:31:03Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "lab-knowledgegraph-pipeline",
+  "updatedAt": "2022-01-07T18:36:01Z",
+  "url": "https://github.com/PennTURBO/lab-knowledgegraph-pipeline",
+  "firstCommitDate": "2023-02-23T17:25:37Z",
+  "lastCommitDate": "2023-02-23T17:25:37Z",
+  "topContributors": [
+    {
+      "contributions": 72,
+      "login": "th5"
+    },
+    {
+      "contributions": 59,
+      "login": "cstoeckert"
+    },
+    {
+      "contributions": 50,
+      "login": "hjwilli"
+    }
+  ]
+}

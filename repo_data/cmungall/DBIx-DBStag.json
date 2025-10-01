@@ -1,0 +1,22 @@
+{
+  "createdAt": "2009-12-14T23:31:02Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Relational Database to Hierarchical (Stag/XML) Mapping",
+  "name": "DBIx-DBStag",
+  "updatedAt": "2014-09-08T20:44:53Z",
+  "url": "https://github.com/cmungall/DBIx-DBStag",
+  "firstCommitDate": "2016-05-31T21:44:24Z",
+  "lastCommitDate": "2016-05-31T21:44:24Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 2,
+      "login": "scottcain"
+    }
+  ]
+}

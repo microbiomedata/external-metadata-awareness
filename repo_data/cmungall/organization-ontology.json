@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-06-22T00:17:47Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Development work -- an OBO, BFO organization ontology based on ROR/GRID",
+  "name": "organization-ontology",
+  "updatedAt": "2021-06-22T00:17:48Z",
+  "url": "https://github.com/cmungall/organization-ontology",
+  "firstCommitDate": "2021-06-21T23:46:15Z",
+  "lastCommitDate": "2021-06-21T23:46:15Z",
+  "topContributors": [
+    {
+      "contributions": 96,
+      "login": "mconlon17"
+    }
+  ]
+}

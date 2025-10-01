@@ -1,0 +1,22 @@
+{
+  "createdAt": "2009-07-10T20:54:10Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "prolog wrapper for PyGR Nested Containment Lists (NCLs)",
+  "name": "intervaldb",
+  "updatedAt": "2016-03-03T17:43:33Z",
+  "url": "https://github.com/cmungall/intervaldb",
+  "firstCommitDate": "2009-08-11T16:23:37Z",
+  "lastCommitDate": "2009-08-11T16:23:37Z",
+  "topContributors": [
+    {
+      "contributions": 17,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 10,
+      "login": "swv"
+    }
+  ]
+}

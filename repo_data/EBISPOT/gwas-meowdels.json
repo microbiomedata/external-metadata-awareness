@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-09-29T13:40:59Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Unified GWAS Catalog sumstat data models 🐈",
+  "name": "gwas-meowdels",
+  "updatedAt": "2025-09-29T14:14:42Z",
+  "url": "https://github.com/EBISPOT/gwas-meowdels",
+  "firstCommitDate": "2025-09-29T14:14:36Z",
+  "lastCommitDate": "2025-09-29T14:14:36Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "nebfield"
+    }
+  ]
+}

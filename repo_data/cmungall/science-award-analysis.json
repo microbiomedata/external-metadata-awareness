@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-03-16T19:15:19Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "science-award-analysis",
+  "name": "science-award-analysis",
+  "updatedAt": "2021-06-18T04:18:11Z",
+  "url": "https://github.com/cmungall/science-award-analysis",
+  "firstCommitDate": "2021-03-16T19:26:19Z",
+  "lastCommitDate": "2021-03-16T19:26:19Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

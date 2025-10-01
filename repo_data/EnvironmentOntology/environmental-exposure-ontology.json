@@ -1,0 +1,46 @@
+{
+  "createdAt": "2016-05-10T14:48:12Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Modular environmental exposures ontology",
+  "name": "environmental-exposure-ontology",
+  "updatedAt": "2025-06-19T13:53:57Z",
+  "url": "https://github.com/EnvironmentOntology/environmental-exposure-ontology",
+  "firstCommitDate": "2025-06-01T14:26:16Z",
+  "lastCommitDate": "2025-06-01T14:26:16Z",
+  "topContributors": [
+    {
+      "contributions": 269,
+      "login": "laurenechan"
+    },
+    {
+      "contributions": 140,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 115,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 89,
+      "login": "diatomsRcool"
+    },
+    {
+      "contributions": 33,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 26,
+      "login": "nicolevasilevsky"
+    },
+    {
+      "contributions": 1,
+      "login": "jmcmurry"
+    },
+    {
+      "contributions": 1,
+      "login": "nlharris"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-07-29T11:49:43Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "just enough to experiment with OAK and llm",
+  "name": "llmenv",
+  "updatedAt": "2024-08-16T16:02:54Z",
+  "url": "https://github.com/turbomam/llmenv",
+  "firstCommitDate": "2024-08-07T21:41:54Z",
+  "lastCommitDate": "2024-08-07T21:41:54Z",
+  "topContributors": [
+    {
+      "contributions": 28,
+      "login": "turbomam"
+    }
+  ]
+}

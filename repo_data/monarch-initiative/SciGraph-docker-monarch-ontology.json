@@ -1,0 +1,26 @@
+{
+  "createdAt": "2016-01-12T22:18:28Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "SciGraph-docker-monarch-ontology",
+  "updatedAt": "2023-01-28T17:15:02Z",
+  "url": "https://github.com/monarch-initiative/SciGraph-docker-monarch-ontology",
+  "firstCommitDate": "2019-09-13T21:57:59Z",
+  "lastCommitDate": "2019-09-13T21:57:59Z",
+  "topContributors": [
+    {
+      "contributions": 30,
+      "login": "jnguyenx"
+    },
+    {
+      "contributions": 19,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

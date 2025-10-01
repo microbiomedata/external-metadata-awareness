@@ -1,0 +1,26 @@
+{
+  "createdAt": "2020-02-11T09:28:15Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Backend for all sidora applications",
+  "name": "sidora.core",
+  "updatedAt": "2020-12-03T08:57:10Z",
+  "url": "https://github.com/jfy133/sidora.core",
+  "firstCommitDate": "2020-12-03T08:56:55Z",
+  "lastCommitDate": "2020-12-03T08:56:55Z",
+  "topContributors": [
+    {
+      "contributions": 123,
+      "login": "nevrome"
+    },
+    {
+      "contributions": 67,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 9,
+      "login": "stschiff"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-04-13T11:55:29Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Test data to be used for automated testing with the nf-core pipelines",
+  "name": "nf-core-test-datasets",
+  "updatedAt": "2022-03-26T01:34:12Z",
+  "url": "https://github.com/jfy133/nf-core-test-datasets",
+  "firstCommitDate": "2023-06-03T07:01:37Z",
+  "lastCommitDate": "2023-06-03T07:01:37Z",
+  "topContributors": [
+    {
+      "contributions": 23,
+      "login": "drpatelh"
+    },
+    {
+      "contributions": 17,
+      "login": "scorreard"
+    },
+    {
+      "contributions": 16,
+      "login": "reganhayward"
+    },
+    {
+      "contributions": 15,
+      "login": "sguizard"
+    },
+    {
+      "contributions": 12,
+      "login": "maxulysse"
+    },
+    {
+      "contributions": 7,
+      "login": "DSchreyer"
+    },
+    {
+      "contributions": 6,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 6,
+      "login": "ewels"
+    },
+    {
+      "contributions": 5,
+      "login": "apeltzer"
+    },
+    {
+      "contributions": 4,
+      "login": "jianhong"
+    }
+  ]
+}

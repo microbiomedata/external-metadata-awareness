@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-07-22T07:59:54Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Repository containing lists of all published ancient metagenome samples (and related) ",
+  "name": "AncientMetagenomeDir",
+  "updatedAt": "2025-07-14T14:17:22Z",
+  "url": "https://github.com/jfy133/AncientMetagenomeDir",
+  "firstCommitDate": "2025-06-26T09:38:02Z",
+  "lastCommitDate": "2025-06-26T09:38:02Z",
+  "topContributors": [
+    {
+      "contributions": 6069,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 1196,
+      "login": "aidaanva"
+    },
+    {
+      "contributions": 432,
+      "login": "alexhbnr"
+    },
+    {
+      "contributions": 351,
+      "login": "ashildv"
+    },
+    {
+      "contributions": 345,
+      "login": "KaHea-21"
+    },
+    {
+      "contributions": 328,
+      "login": "Becky-Cribdon"
+    },
+    {
+      "contributions": 289,
+      "login": "maxibor"
+    },
+    {
+      "contributions": 283,
+      "login": "ivelsko"
+    },
+    {
+      "contributions": 231,
+      "login": "pheintzman"
+    },
+    {
+      "contributions": 201,
+      "login": "DianaSpurite"
+    }
+  ]
+}

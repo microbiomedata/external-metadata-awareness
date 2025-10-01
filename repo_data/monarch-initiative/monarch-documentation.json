@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-10-11T19:18:35Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Technical documentation for all Monarch applications, packages, services and related projects.",
+  "name": "monarch-documentation",
+  "updatedAt": "2025-08-25T16:58:21Z",
+  "url": "https://github.com/monarch-initiative/monarch-documentation",
+  "firstCommitDate": "2025-08-25T16:58:18Z",
+  "lastCommitDate": "2025-08-25T16:58:18Z",
+  "topContributors": [
+    {
+      "contributions": 132,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 80,
+      "login": "varun-divya"
+    },
+    {
+      "contributions": 14,
+      "login": "sagehrke"
+    },
+    {
+      "contributions": 13,
+      "login": "amc-corey-cox"
+    },
+    {
+      "contributions": 11,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 7,
+      "login": "glass-ships"
+    },
+    {
+      "contributions": 5,
+      "login": "leokim-l"
+    },
+    {
+      "contributions": 3,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 2,
+      "login": "monarch-init"
+    },
+    {
+      "contributions": 2,
+      "login": "yaseminbridges"
+    }
+  ]
+}

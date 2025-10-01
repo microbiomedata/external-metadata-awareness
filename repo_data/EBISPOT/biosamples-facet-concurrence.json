@@ -1,0 +1,22 @@
+{
+  "createdAt": "2017-08-31T10:28:34Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "biosamples-facet-concurrence",
+  "updatedAt": "2017-08-31T11:15:27Z",
+  "url": "https://github.com/EBISPOT/biosamples-facet-concurrence",
+  "firstCommitDate": "2017-08-31T11:16:16Z",
+  "lastCommitDate": "2017-08-31T11:16:16Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "hewgreen"
+    },
+    {
+      "contributions": 1,
+      "login": "mcourtot"
+    }
+  ]
+}

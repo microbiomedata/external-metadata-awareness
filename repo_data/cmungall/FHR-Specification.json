@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-02-23T19:24:21Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Fair Formatted Reference Genome Standard",
+  "name": "FHR-Specification",
+  "updatedAt": "2023-02-13T17:11:54Z",
+  "url": "https://github.com/cmungall/FHR-Specification",
+  "firstCommitDate": "2023-02-13T16:57:47Z",
+  "lastCommitDate": "2023-02-13T16:57:47Z",
+  "topContributors": [
+    {
+      "contributions": 32,
+      "login": "molikd"
+    }
+  ]
+}

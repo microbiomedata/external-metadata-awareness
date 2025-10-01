@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-09-05T21:11:48Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Notebooks and analyses for the 2020 NAR submission",
+  "name": "2020-NAR",
+  "updatedAt": "2019-09-12T02:09:36Z",
+  "url": "https://github.com/monarch-initiative/2020-NAR",
+  "firstCommitDate": "2019-09-12T02:09:22Z",
+  "lastCommitDate": "2019-09-12T02:09:22Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "kshefchek"
+    }
+  ]
+}

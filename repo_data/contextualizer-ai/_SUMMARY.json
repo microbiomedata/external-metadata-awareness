@@ -1,0 +1,314 @@
+[
+  {
+    "createdAt": "2025-06-14T13:20:31Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "MCP approaches for getting textual representations of scientific literature from PMIDs, DOIs, etc.",
+    "name": "artl-mcp",
+    "updatedAt": "2025-08-17T02:45:54Z",
+    "url": "https://github.com/contextualizer-ai/artl-mcp",
+    "firstCommitDate": "2025-07-30T21:32:39Z",
+    "lastCommitDate": "2025-07-30T21:32:39Z",
+    "topContributors": [
+      {
+        "contributions": 242,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 11,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 2,
+        "login": "ct-parker"
+      },
+      {
+        "contributions": 1,
+        "login": "realmarcin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-09-09T21:49:51Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Infer AI-friendly metadata about biosamples from multiple sources",
+    "name": "biosample-enricher",
+    "updatedAt": "2025-09-15T14:22:45Z",
+    "url": "https://github.com/contextualizer-ai/biosample-enricher",
+    "firstCommitDate": "2025-09-15T14:22:41Z",
+    "lastCommitDate": "2025-09-15T14:22:41Z",
+    "topContributors": [
+      {
+        "contributions": 104,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-07-18T13:15:51Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Deterministic biosample enrichment for LLM-ready data preparation; optional PydanticAI agentic assessment",
+    "name": "crawl-first",
+    "updatedAt": "2025-08-25T14:02:42Z",
+    "url": "https://github.com/contextualizer-ai/crawl-first",
+    "firstCommitDate": "2025-08-22T15:23:41Z",
+    "lastCommitDate": "2025-08-22T15:23:41Z",
+    "topContributors": [
+      {
+        "contributions": 109,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-09-18T17:11:24Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Simple experiment to compare ENVO similarity to google embedding cosine similarity",
+    "name": "env-embeddings",
+    "updatedAt": "2025-09-18T23:10:30Z",
+    "url": "https://github.com/contextualizer-ai/env-embeddings",
+    "firstCommitDate": "2025-09-18T23:10:27Z",
+    "lastCommitDate": "2025-09-18T23:10:27Z",
+    "topContributors": [
+      {
+        "contributions": 21,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 19,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 7,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 5,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-09-17T18:59:02Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Example mcp to query a file for growth conditions about a gene/locus  ID",
+    "name": "fitness-mcp",
+    "updatedAt": "2025-09-18T18:04:16Z",
+    "url": "https://github.com/contextualizer-ai/fitness-mcp",
+    "firstCommitDate": "2025-09-18T18:04:06Z",
+    "lastCommitDate": "2025-09-18T18:04:06Z",
+    "topContributors": [
+      {
+        "contributions": 49,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 10,
+        "login": "realmarcin"
+      },
+      {
+        "contributions": 3,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-09-16T23:39:29Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Demonstration of AI review of existing functional annotations",
+    "name": "gene-function-review",
+    "updatedAt": "2025-09-27T07:42:15Z",
+    "url": "https://github.com/contextualizer-ai/gene-function-review",
+    "firstCommitDate": "2025-09-16T23:59:57Z",
+    "lastCommitDate": "2025-09-16T23:59:57Z",
+    "topContributors": [
+      {
+        "contributions": 25,
+        "login": "dragon-ai-agent"
+      },
+      {
+        "contributions": 6,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-09-15T20:33:40Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "tools for ingesting GOLD metadata (Biosamples, Studies, Projects) into MongoDB and flattening into something like DuckDB or Parquet. Adds some semantic realignment.",
+    "name": "gold-tools",
+    "updatedAt": "2025-09-16T18:34:08Z",
+    "url": "https://github.com/contextualizer-ai/gold-tools",
+    "firstCommitDate": "2025-09-16T18:33:59Z",
+    "lastCommitDate": "2025-09-16T18:33:59Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-07-01T17:59:14Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "landuse-mcp",
+    "updatedAt": "2025-07-15T14:06:25Z",
+    "url": "https://github.com/contextualizer-ai/landuse-mcp",
+    "firstCommitDate": "2025-07-15T14:06:21Z",
+    "lastCommitDate": "2025-07-15T14:06:21Z",
+    "topContributors": [
+      {
+        "contributions": 29,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-08-19T17:51:23Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Evaluation of MCPs that retrieve scientific literature",
+    "name": "mcp_literature_eval",
+    "updatedAt": "2025-09-17T23:41:25Z",
+    "url": "https://github.com/contextualizer-ai/mcp_literature_eval",
+    "firstCommitDate": "2025-09-17T23:41:14Z",
+    "lastCommitDate": "2025-09-17T23:41:14Z",
+    "topContributors": [
+      {
+        "contributions": 24,
+        "login": "ct-parker"
+      },
+      {
+        "contributions": 19,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-07-30T18:49:58Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Model Context Protocol (MCP) Server for Metabolomic data",
+    "name": "metabolome-mcp",
+    "updatedAt": "2025-07-30T21:23:29Z",
+    "url": "https://github.com/contextualizer-ai/metabolome-mcp",
+    "firstCommitDate": "2025-07-30T21:22:52Z",
+    "lastCommitDate": "2025-07-30T21:22:52Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "ct-parker"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-09-15T20:32:12Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "tools for ingesting NCBI metadata (Biosamples, Bioprojects, SRA metadata) into MongoDB and flattening into something like DuckDB or Parquet. Adds some minimal cleanup and aggregation.",
+    "name": "ncbi-tools",
+    "updatedAt": "2025-09-15T20:32:16Z",
+    "url": "https://github.com/contextualizer-ai/ncbi-tools",
+    "firstCommitDate": "2025-09-15T20:32:12Z",
+    "lastCommitDate": "2025-09-15T20:32:12Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-07-09T14:30:10Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "An MCP for retrieving information from the Ontology Lookup Service",
+    "name": "ols-mcp",
+    "updatedAt": "2025-09-16T17:08:39Z",
+    "url": "https://github.com/contextualizer-ai/ols-mcp",
+    "firstCommitDate": "2025-08-05T20:26:06Z",
+    "lastCommitDate": "2025-08-05T20:26:06Z",
+    "topContributors": [
+      {
+        "contributions": 16,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 5,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 3,
+        "login": "iimpulse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-09-19T14:32:45Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "tools for converting content in other databases (like Biosamples in MongoDB) to DuckDB",
+    "name": "to-duckdb",
+    "updatedAt": "2025-09-20T03:18:50Z",
+    "url": "https://github.com/contextualizer-ai/to-duckdb",
+    "firstCommitDate": "2025-09-20T03:18:46Z",
+    "lastCommitDate": "2025-09-20T03:18:46Z",
+    "topContributors": [
+      {
+        "contributions": 15,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-07-08T18:02:56Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "MCP interface for historical and normalized weather data",
+    "name": "weather-mcp",
+    "updatedAt": "2025-07-16T17:10:42Z",
+    "url": "https://github.com/contextualizer-ai/weather-mcp",
+    "firstCommitDate": "2025-07-15T23:13:16Z",
+    "lastCommitDate": "2025-07-15T23:13:16Z",
+    "topContributors": [
+      {
+        "contributions": 44,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 7,
+        "login": "ct-parker"
+      },
+      {
+        "contributions": 3,
+        "login": "justaddcoffee"
+      }
+    ]
+  }
+]

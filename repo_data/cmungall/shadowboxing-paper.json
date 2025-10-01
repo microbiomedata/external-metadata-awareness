@@ -1,0 +1,18 @@
+{
+  "createdAt": "2013-09-03T01:03:34Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "draft of paper: Shadowboxing: Mirroring the TBox in the ABox",
+  "name": "shadowboxing-paper",
+  "updatedAt": "2021-06-18T05:17:09Z",
+  "url": "https://github.com/cmungall/shadowboxing-paper",
+  "firstCommitDate": "2017-01-13T02:10:34Z",
+  "lastCommitDate": "2017-01-13T02:10:34Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "cmungall"
+    }
+  ]
+}

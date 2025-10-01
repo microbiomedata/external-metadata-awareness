@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-05-02T01:25:33Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "berkeleybop.github.io webpages.",
+  "name": "old-berkeleybop.github.io",
+  "updatedAt": "2016-05-09T23:53:53Z",
+  "url": "https://github.com/berkeleybop/old-berkeleybop.github.io",
+  "firstCommitDate": "2015-05-02T01:26:55Z",
+  "lastCommitDate": "2015-05-02T01:26:55Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "kltm"
+    }
+  ]
+}

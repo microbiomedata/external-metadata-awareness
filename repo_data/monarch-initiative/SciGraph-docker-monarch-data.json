@@ -1,0 +1,30 @@
+{
+  "createdAt": "2015-08-25T21:34:29Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Build two Docker images with the monarch configs. Uses master HEAD from the SciGraph github repo.",
+  "name": "SciGraph-docker-monarch-data",
+  "updatedAt": "2023-01-28T17:15:01Z",
+  "url": "https://github.com/monarch-initiative/SciGraph-docker-monarch-data",
+  "firstCommitDate": "2019-09-13T21:59:35Z",
+  "lastCommitDate": "2019-09-13T21:59:35Z",
+  "topContributors": [
+    {
+      "contributions": 60,
+      "login": "jnguyenx"
+    },
+    {
+      "contributions": 51,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "mbrush"
+    }
+  ]
+}

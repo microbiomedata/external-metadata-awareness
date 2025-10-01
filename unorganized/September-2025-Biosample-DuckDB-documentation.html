@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Biosample Flattening Project – DuckDB Outputs</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="pandoc-style.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Biosample Flattening Project – DuckDB Outputs</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#biosample-flattening-project--duckdb-outputs"
+id="toc-biosample-flattening-project--duckdb-outputs">Biosample
+Flattening Project – DuckDB Outputs</a>
+<ul>
+<li><a href="#table-of-contents" id="toc-table-of-contents">Table of
+Contents</a></li>
+<li><a href="#overview" id="toc-overview">Overview</a></li>
+<li><a href="#hosting-and-access" id="toc-hosting-and-access">Hosting
+and Access</a></li>
+<li><a href="#scope-and-filtering" id="toc-scope-and-filtering">Scope
+and Filtering</a></li>
+<li><a href="#current-duckdb-offerings"
+id="toc-current-duckdb-offerings">Current DuckDB Offerings</a>
+<ul>
+<li><a href="#ncbi-outputs" id="toc-ncbi-outputs">NCBI Outputs</a></li>
+<li><a href="#gold-outputs" id="toc-gold-outputs">GOLD Outputs</a></li>
+<li><a href="#nmdc-outputs" id="toc-nmdc-outputs">NMDC Outputs</a></li>
+</ul></li>
+<li><a href="#key-tables-ncbi-subset"
+id="toc-key-tables-ncbi-subset">Key Tables (NCBI Subset)</a>
+<ul>
+<li><a href="#biosamples_flattened--3037277-rows"
+id="toc-biosamples_flattened--3037277-rows"><code>biosamples_flattened</code>
+— 3,037,277 rows</a></li>
+<li><a href="#biosamples_attributes--52518729-rows"
+id="toc-biosamples_attributes--52518729-rows"><code>biosamples_attributes</code>
+— 52,518,729 rows</a></li>
+<li><a href="#env_triads_flattened--9262719-rows"
+id="toc-env_triads_flattened--9262719-rows"><code>env_triads_flattened</code>
+— 9,262,719 rows</a></li>
+<li><a href="#measurement_results_skip_filtered--87466-rows"
+id="toc-measurement_results_skip_filtered--87466-rows"><code>measurement_results_skip_filtered</code>
+— 87,466 rows</a></li>
+<li><a href="#sra_biosamples_bioprojects--31809491-rows"
+id="toc-sra_biosamples_bioprojects--31809491-rows"><code>sra_biosamples_bioprojects</code>
+— 31,809,491 rows</a></li>
+<li><a href="#biosamples_ids--7871449-rows"
+id="toc-biosamples_ids--7871449-rows"><code>biosamples_ids</code> —
+7,871,449 rows</a></li>
+<li><a href="#biosamples_links--2335376-rows"
+id="toc-biosamples_links--2335376-rows"><code>biosamples_links</code> —
+2,335,376 rows</a></li>
+<li><a href="#content_pairs_aggregated--2331732-rows"
+id="toc-content_pairs_aggregated--2331732-rows"><code>content_pairs_aggregated</code>
+— 2,331,732 rows</a></li>
+<li><a href="#attribute_harmonized_pairings--20937-rows"
+id="toc-attribute_harmonized_pairings--20937-rows"><code>attribute_harmonized_pairings</code>
+— 20,937 rows</a></li>
+<li><a href="#ncbi_attributes_flattened--960-rows"
+id="toc-ncbi_attributes_flattened--960-rows"><code>ncbi_attributes_flattened</code>
+— 960 rows</a></li>
+<li><a href="#ncbi_packages_flattened--229-rows"
+id="toc-ncbi_packages_flattened--229-rows"><code>ncbi_packages_flattened</code>
+— 229 rows</a></li>
+<li><a href="#harmonized_name_usage_stats--695-rows"
+id="toc-harmonized_name_usage_stats--695-rows"><code>harmonized_name_usage_stats</code>
+— 695 rows</a></li>
+<li><a href="#measurement_evidence_percentages--695-rows"
+id="toc-measurement_evidence_percentages--695-rows"><code>measurement_evidence_percentages</code>
+— 695 rows</a></li>
+<li><a href="#mixed_content_counts--440-rows"
+id="toc-mixed_content_counts--440-rows"><code>mixed_content_counts</code>
+— 440 rows</a></li>
+<li><a href="#harmonized_name_dimensional_stats--432-rows"
+id="toc-harmonized_name_dimensional_stats--432-rows"><code>harmonized_name_dimensional_stats</code>
+— 432 rows</a></li>
+<li><a href="#unit_assertion_counts--13-rows"
+id="toc-unit_assertion_counts--13-rows"><code>unit_assertion_counts</code>
+— 13 rows</a></li>
+</ul></li>
+<li><a href="#lineage-and-grain" id="toc-lineage-and-grain">Lineage and
+Grain</a>
+<ul>
+<li><a href="#data-flow" id="toc-data-flow">Data Flow</a></li>
+<li><a href="#analytics-vs-normalization"
+id="toc-analytics-vs-normalization">Analytics vs Normalization</a></li>
+</ul></li>
+<li><a href="#why-duckdb-now" id="toc-why-duckdb-now">Why DuckDB
+Now</a></li>
+<li><a href="#strengths" id="toc-strengths">Strengths</a></li>
+<li><a href="#limitations" id="toc-limitations">Limitations</a></li>
+<li><a href="#comparison-to-past-outputs"
+id="toc-comparison-to-past-outputs">Comparison to Past Outputs</a></li>
+<li><a href="#historical-systems-repos--engines--timeline"
+id="toc-historical-systems-repos--engines--timeline">Historical Systems
+(Repos × Engines × Timeline)</a></li>
+<li><a href="#validation-checklist"
+id="toc-validation-checklist">Validation Checklist</a></li>
+<li><a href="#known-discrepancies" id="toc-known-discrepancies">Known
+Discrepancies</a></li>
+<li><a href="#future-directions" id="toc-future-directions">Future
+Directions</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="biosample-flattening-project--duckdb-outputs">Biosample
+Flattening Project – DuckDB Outputs</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#hosting-and-access">Hosting and Access</a></li>
+<li><a href="#scope-and-filtering">Scope and Filtering</a></li>
+<li><a href="#current-duckdb-offerings">Current DuckDB Offerings</a>
+<ul>
+<li><a href="#ncbi-outputs">NCBI Outputs</a></li>
+<li><a href="#gold-outputs">GOLD Outputs</a></li>
+<li><a href="#nmdc-outputs">NMDC Outputs</a></li>
+</ul></li>
+<li><a href="#key-tables-ncbi-subset">Key Tables (NCBI Subset)</a></li>
+<li><a href="#lineage-and-grain">Lineage and Grain</a></li>
+<li><a href="#omitted-xml-paths">Omitted XML Paths</a></li>
+<li><a href="#why-duckdb-now">Why DuckDB Now</a></li>
+<li><a href="#strengths">Strengths</a></li>
+<li><a href="#limitations">Limitations</a></li>
+<li><a href="#comparison-to-past-outputs">Comparison to Past
+Outputs</a></li>
+<li><a href="#historical-systems-repos--engines--timeline">Historical
+Systems (Repos × Engines × Timeline)</a></li>
+<li><a href="#validation-checklist">Validation Checklist</a></li>
+<li><a href="#known-discrepancies">Known Discrepancies</a></li>
+<li><a href="#future-directions">Future Directions</a></li>
+</ul>
+<hr />
+<h2 id="overview">Overview</h2>
+<p>This project flattens and enriches biosample metadata from
+<strong>NCBI</strong>, <strong>GOLD</strong>, and <strong>NMDC</strong>,
+producing portable <strong>DuckDB databases</strong>.</p>
+<p>⚠️ <strong>Documentation freshness</strong>: Some of the inputs into
+this auto-generated documentation may be outdated or contradictory.
+Always <strong>defer to the most recent docs</strong> and confirm counts
+with the current DuckDB exports. Older portals are kept for provenance
+only.</p>
+<hr />
+<h2 id="hosting-and-access">Hosting and Access</h2>
+<ul>
+<li><p>✅ <strong>Active, authoritative portal</strong>:<br />
+<a
+href="https://portal.nersc.gov/cfs/m3408/biosamples_duckdb/"><span>https://portal.nersc.gov/cfs/m3408/biosamples\_duckdb/</span></a></p></li>
+<li><p>⚠️ <strong>Historical portal (for provenance
+only)</strong>:<br />
+<a
+href="https://portal.nersc.gov/project/m3513/biosample"><span>https://portal.nersc.gov/project/m3513/biosample</span></a></p></li>
+</ul>
+<hr />
+<h2 id="scope-and-filtering">Scope and Filtering</h2>
+<ul>
+<li><p><strong>NCBI BioSamples</strong> total: ~48 million as of
+2025-09-19</p></li>
+<li><p><strong>DuckDB subset</strong>:</p>
+<ul>
+<li>3,037,277 rows in <code>biosamples_flattened</code> (current
+authoritative count)</li>
+</ul></li>
+<li><p>Filtered because samples must:</p>
+<ul>
+<li>Have <code>collection_date ≥ 2017-01-01</code></li>
+<li>Contain all three MIxS <strong>environmental triads</strong>:
+<ul>
+<li><code>env_broad_scale</code></li>
+<li><code>env_local_scale</code></li>
+<li><code>env_medium</code></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Rationale</strong>: Matches the 2017–2024 window of the
+<a
+href="https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL">Google
+Earth Satellite Embedding V1 Annual</a>.</p></li>
+</ul>
+<hr />
+<h2 id="current-duckdb-offerings">Current DuckDB Offerings</h2>
+<h3 id="ncbi-outputs">NCBI Outputs</h3>
+<ul>
+<li><strong>Biosamples subset</strong>: 3.0M triad-complete samples</li>
+<li><strong>Attributes</strong>: 52.5M raw rows
+(<code>biosamples_attributes</code>)</li>
+<li><strong>Derived</strong>: normalized environmental triads, parsed
+measurements, aggregated content pairs, harmonization stats</li>
+</ul>
+<h3 id="gold-outputs">GOLD Outputs</h3>
+<p>Two complementary DuckDBs are offered:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Build</th>
+<th style="text-align: left;">Entity Coverage</th>
+<th style="text-align: left;">Field Richness</th>
+<th style="text-align: left;">Processing Lineage</th>
+<th style="text-align: left;">Typical Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>API-based</strong></td>
+<td style="text-align: left;">Studies and Sequencing Projects related to
+Biosamples (no Organism records or Organism-related Studies, etc.)</td>
+<td style="text-align: left;">~50+ biosample fields, full triads (e.g.
+latitude/longitude, env triads, sequencing depth)</td>
+<td style="text-align: left;">GOLD API → MongoDB → DuckDB</td>
+<td style="text-align: left;">Rich biosample analyses</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Excel-based</strong></td>
+<td style="text-align: left;">All entity types (incl. isolates)</td>
+<td style="text-align: left;">~15 fields per entity (e.g. study_id,
+project_id, organism_name, basic metadata)</td>
+<td style="text-align: left;">Bulk Excel export → flatten → DuckDB</td>
+<td style="text-align: left;">Broad coverage, lightweight schema</td>
+</tr>
+</tbody>
+</table>
+<p>💡 <strong>When to choose</strong>: API build for
+<strong>depth</strong>; Excel build for <strong>breadth</strong>. Use
+API when you need triads and rich biosample fields; Excel when you need
+isolates or all entities but can tolerate fewer columns.</p>
+<h3 id="nmdc-outputs">NMDC Outputs</h3>
+<ul>
+<li><strong>Source</strong>: NMDC production MongoDB via the <a
+href="https://api.microbiomedata.org/docs">NMDC **Runtime API</a>**</li>
+<li><strong>Flattened collections</strong>: Biosamples and Studies</li>
+<li><strong>Modeling</strong>: aligns with <strong>NMDC-schema
+(LinkML)</strong>; slots map cleanly into DuckDB columns.</li>
+<li><strong>Purpose</strong>: serves as schema-driven reference against
+noisier NCBI/GOLD.</li>
+</ul>
+<hr />
+<h2 id="key-tables-ncbi-subset">Key Tables (NCBI Subset)</h2>
+<p>Note: <strong>SQL queries are intentionally omitted for now</strong>.
+This section focuses on table shape, usage, and caveats.</p>
+<h3
+id="biosamples_flattened--3037277-rows"><code>biosamples_flattened</code>
+— 3,037,277 rows</h3>
+<ul>
+<li><p><strong>Grain</strong>: 1 row per BioSample accession</p></li>
+<li><p><strong>Canonicality</strong>: Canonical (authoritative for
+sample counts)</p></li>
+<li><p><strong>Parent source</strong>: Derived from
+<code>biosamples</code> collection which is loaded from the NCBI
+XML</p></li>
+<li><p><strong>Safe joins</strong>: join on
+<code>accession</code></p></li>
+<li><p><strong>Anti-patterns</strong>: don’t count samples using
+<code>env_triads_flattened</code> or
+<code>biosamples_attributes</code></p></li>
+<li><p>includes the following XML paths</p></li>
+<li><p><code>BioSample.Attributes.Attribute</code></p>
+<ul>
+<li><em>if the attribute has a <code>harmonized_name</code></em>
+<ul>
+<li><em>there are hundreds of these and they make up the majority of the
+columns</em></li>
+</ul></li>
+</ul></li>
+<li><p><code>BioSample.Curation</code></p></li>
+<li><p><code>BioSample.Description.Comment.Paragraph</code></p></li>
+<li><p><code>BioSample.Description.Organism</code></p></li>
+<li><p><code>BioSample.Description.Organism.OrganismName</code></p></li>
+<li><p><code>BioSample.Description.Synonym</code></p></li>
+<li><p><code>BioSample.Description.Title</code></p></li>
+<li><p><code>BioSample.Models.Model</code></p></li>
+<li><p><code>BioSample.Owner.Name</code></p></li>
+<li><p><code>BioSample.Package</code></p></li>
+<li><p><code>BioSample.Status</code></p></li>
+<li><p>Excludes</p>
+<ul>
+<li>/BioSampleSet/BioSample/Description/Comment/Table
+<ul>
+<li><em>antibiograms</em></li>
+</ul></li>
+<li>/BioSampleSet/BioSample/Description/Synonym
+<ul>
+<li><em>extremely sparse</em></li>
+</ul></li>
+<li>/BioSampleSet/BioSample/Models/Model
+<ul>
+<li><em>analogous, better structured information is captured in
+<code>package_content</code></em></li>
+</ul></li>
+<li>/BioSampleSet/BioSample/Owner/Contacts/Contact
+<ul>
+<li><em>excessive interleaving of list and dictionary like
+objects</em></li>
+</ul></li>
+</ul></li>
+<li><p>The following are captured in separate tables and described
+below</p>
+<ul>
+<li>/BioSampleSet/BioSample/Attributes/Attribute
+<ul>
+<li><em>even when lacking a <code>harmonized_name</code></em></li>
+</ul></li>
+<li>/BioSampleSet/BioSample/Ids/Id</li>
+<li>/BioSampleSet/BioSample/Links/Link</li>
+</ul></li>
+</ul>
+<h3
+id="biosamples_attributes--52518729-rows"><code>biosamples_attributes</code>
+— 52,518,729 rows</h3>
+<ul>
+<li><strong>Grain</strong>: 1 row per attribute-value pair</li>
+<li><strong>Canonicality</strong>: Derived from <code>biosamples</code>
+collection (raw long form)</li>
+<li><strong>Safe joins</strong>: join on <code>accession</code></li>
+<li><strong>Anti-patterns</strong>: treating every row as a
+measurement</li>
+<li><strong>Examples</strong>:
+<ul>
+<li><code>attribute_name="isolation source"</code>,
+<code>content="soil"</code></li>
+<li><code>attribute_name="altitude"</code>,
+<code>content="300 m"</code></li>
+</ul></li>
+</ul>
+<h3
+id="env_triads_flattened--9262719-rows"><code>env_triads_flattened</code>
+— 9,262,719 rows</h3>
+<ul>
+<li><strong>Grain</strong>: 1 row per triad component</li>
+<li><strong>Canonicality</strong>: Derived</li>
+<li><strong>Parent source</strong>: <code>biosamples_flattened</code>
+(triad fields exploded and normalized)</li>
+<li><strong>Safe joins</strong>: join back on
+<code>accession</code></li>
+<li><strong>Anti-patterns</strong>: counting samples here</li>
+<li><strong>Examples</strong>:
+<ul>
+<li><code>env_broad_scale="marine biome"</code></li>
+<li><code>env_medium="seawater"</code></li>
+</ul></li>
+</ul>
+<h3
+id="measurement_results_skip_filtered--87466-rows"><code>measurement_results_skip_filtered</code>
+— 87,466 rows</h3>
+<ul>
+<li><strong>Grain</strong>: 1 row per parsed measurement</li>
+<li><strong>Canonicality</strong>: Derived</li>
+<li><strong>Parent source</strong>:
+<code>biosamples_attributes</code></li>
+<li><strong>Safe joins</strong>:
+<code>(accession, harmonized_name)</code></li>
+<li><strong>Anti-patterns</strong>: assuming this is complete (skip list
+deliberately excludes non-measurements)</li>
+<li><strong>Known parsing pitfalls</strong>: PSU mis-parses; parentheses
+around units; ambiguous chemistry tokens</li>
+</ul>
+<h3
+id="sra_biosamples_bioprojects--31809491-rows"><code>sra_biosamples_bioprojects</code>
+— 31,809,491 rows</h3>
+<ul>
+<li><strong>Grain</strong>: 1 row per relation</li>
+<li><strong>Canonicality</strong>: Canonical</li>
+<li><strong>Parent source</strong>: SRA metadata Parquet files in AWS
+S3</li>
+<li><strong>Purpose</strong>: supports counting BIosamples per BioSample
+or per BioProject</li>
+<li><strong>Safe joins</strong>: join on
+<code>biosample_accession</code></li>
+<li><strong>Anti-patterns</strong>: counting rows as samples without
+deduplication</li>
+</ul>
+<h3 id="biosamples_ids--7871449-rows"><code>biosamples_ids</code> —
+7,871,449 rows</h3>
+<ul>
+<li><strong>Grain</strong>: 1 row per ID record</li>
+<li><strong>Canonicality</strong>: Derived from <code>biosamples</code>
+collection</li>
+<li><strong>Examples</strong>:
+<ul>
+<li><code>db="SRA"</code>, <code>is_primary=true</code></li>
+<li><code>label="BioSample: SAMN12345678"</code></li>
+</ul></li>
+</ul>
+<h3 id="biosamples_links--2335376-rows"><code>biosamples_links</code> —
+2,335,376 rows</h3>
+<ul>
+<li><strong>Grain</strong>: 1 row per link</li>
+<li><strong>Canonicality</strong>: Derived from <code>biosamples</code>
+collection</li>
+<li><strong>Purpose</strong>: cross-database references and
+provenance</li>
+</ul>
+<h3
+id="content_pairs_aggregated--2331732-rows"><code>content_pairs_aggregated</code>
+— 2,331,732 rows</h3>
+<ul>
+<li><strong>Grain</strong>: 1 row per unique (harmonized_name, content)
+pair</li>
+<li><strong>Canonicality</strong>: Derived</li>
+<li><strong>Purpose</strong>: informs skip list creation and
+normalization targets</li>
+<li><strong>Limitation</strong>: expensive at scale; best used for
+QA</li>
+</ul>
+<h3
+id="attribute_harmonized_pairings--20937-rows"><code>attribute_harmonized_pairings</code>
+— 20,937 rows</h3>
+<ul>
+<li><strong>Purpose</strong>: maps submitter-provided field names to
+harmonized names</li>
+<li><strong>Use</strong>: reconciliation, QA</li>
+</ul>
+<h3
+id="ncbi_attributes_flattened--960-rows"><code>ncbi_attributes_flattened</code>
+— 960 rows</h3>
+<ul>
+<li><strong>Purpose</strong>: schema-like dictionary of attributes from
+NCBI</li>
+<li><strong>Use</strong>: schema reference</li>
+</ul>
+<h3
+id="ncbi_packages_flattened--229-rows"><code>ncbi_packages_flattened</code>
+— 229 rows</h3>
+<ul>
+<li><strong>Purpose</strong>: schema-like package definitions (MIGS,
+MIMS, etc.)</li>
+<li><strong>Use</strong>: interpret package-level field
+expectations</li>
+</ul>
+<h3
+id="harmonized_name_usage_stats--695-rows"><code>harmonized_name_usage_stats</code>
+— 695 rows</h3>
+<ul>
+<li><strong>Purpose</strong>: counts of biosamples per harmonized
+field</li>
+<li><strong>Use</strong>: field prioritization</li>
+</ul>
+<h3
+id="measurement_evidence_percentages--695-rows"><code>measurement_evidence_percentages</code>
+— 695 rows</h3>
+<ul>
+<li><strong>Purpose</strong>: inexpensive assessment of which
+<code>harmonized_name</code>s are associated with measurement like
+<code>content</code> values</li>
+<li><strong>Use</strong>: validates which fields might yield numeric
+values plus unit labels</li>
+<li><strong>Canonicality</strong>: Combined from
+<code>mixed_content_counts</code> and <code>unit_assertion_counts</code>
+collections</li>
+</ul>
+<h3
+id="mixed_content_counts--440-rows"><code>mixed_content_counts</code> —
+440 rows</h3>
+<ul>
+<li><strong>Purpose</strong>: identifies attribute <code>content</code>
+values with numbers + letters</li>
+</ul>
+<h3
+id="harmonized_name_dimensional_stats--432-rows"><code>harmonized_name_dimensional_stats</code>
+— 432 rows</h3>
+<ul>
+<li><strong>Purpose</strong>: retrospective analysis of how
+measurement-like the attributes with a given
+<code>harmonized_name</code> are</li>
+</ul>
+<h3
+id="unit_assertion_counts--13-rows"><code>unit_assertion_counts</code> —
+13 rows</h3>
+<ul>
+<li><strong>Purpose</strong>: tabulation of <code>unit</code>s
+assertions included in submitted attributes (rare)</li>
+</ul>
+<hr />
+<h2 id="lineage-and-grain">Lineage and Grain</h2>
+<h3 id="data-flow">Data Flow</h3>
+<pre><code>biosamples_flattened ──→ env_triads_flattened
+       │
+       └─→ biosamples_attributes ──→ measurement_results_skip_filtered
+                         │
+                         └─→ content_pairs_aggregated</code></pre>
+<p>Summaries (e.g., <code>harmonized_name_*</code>,
+<code>mixed_content_counts</code>) derive from these.</p>
+<h3 id="analytics-vs-normalization">Analytics vs Normalization</h3>
+<p>This design is <strong>intentionally denormalized</strong> for
+analytics. Think of it as a <strong>star-schema/lakehouse</strong>: fact
+tables at different grains plus conformed dimensions. It is <em>not</em>
+3NF OLTP.</p>
+<p><strong>Implication</strong>: duplication across tables is
+deliberate. Correct use requires respecting row grain and join
+rules.</p>
+<hr />
+<h2 id="why-duckdb-now">Why DuckDB Now</h2>
+<ul>
+<li><strong>Portable</strong> <code>.duckdb</code> files</li>
+<li><strong>Performant</strong> on tens of millions of rows</li>
+<li><strong>Consistent</strong> schemas across NCBI/GOLD/NMDC</li>
+<li><strong>Adopted</strong> externally — already in use by other
+groups</li>
+</ul>
+<hr />
+<h2 id="strengths">Strengths</h2>
+<ul>
+<li>Triad-complete subset aligned with satellite embeddings</li>
+<li>Parsed measurements and normalized triads</li>
+<li>Portable, schema-stable exports</li>
+<li>Cross-database harmonization</li>
+</ul>
+<hr />
+<h2 id="limitations">Limitations</h2>
+<ul>
+<li>Schema instability → record version/date for every export</li>
+<li>Quantulum3 parsing pitfalls (PSU, parentheses, chemistry
+tokens)</li>
+<li>Subset bias: 3M of 48M NCBI samples included</li>
+<li>Computational constraints: full-corpus aggregates (e.g.
+<code>content_pairs_aggregated</code> at 45M scale) may be
+impractical</li>
+</ul>
+<hr />
+<h2 id="comparison-to-past-outputs">Comparison to Past Outputs</h2>
+<ul>
+<li><strong>2019–2020</strong>: XML DB experiments
+(<code>biosample-xmldb-sqldb</code>, <code>biosample-basex</code>) —
+overlapping efforts, different XML DB engines</li>
+<li><strong>2020–2021</strong>: Early MongoDB pipelines
+(<code>sample-annotator</code>, <code>biosample-analysis</code>)</li>
+<li><strong>2022–2023</strong>: External Metadata Awareness (MongoDB,
+SQLite, early DuckDB trials; scaled to 40M+)</li>
+<li><strong>2024–2025</strong>: Consolidated DuckDB distributions across
+NCBI, GOLD, NMDC</li>
+</ul>
+<hr />
+<h2 id="historical-systems-repos--engines--timeline">Historical Systems
+(Repos × Engines × Timeline)</h2>
+<p><em>Generated: 2025-09-30</em></p>
+<table>
+<thead>
+<tr>
+<th>Owner/Repo Notation</th>
+<th>DB/Tech</th>
+<th>Role</th>
+<th>First Commit</th>
+<th>Last Commit</th>
+<th>Top Contributors</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>turbomam/biosample-xmldb-sqldb</code></td>
+<td>XML→SQL</td>
+<td>NCBI XML relational prototype</td>
+<td>2024-08-16</td>
+<td>2024-08-16</td>
+<td>turbomam (76)</td>
+<td>BaseX → SQL transformation</td>
+</tr>
+<tr>
+<td><code>turbomam/biosample-basex</code></td>
+<td>BaseX (XML DB)</td>
+<td>XML-native store</td>
+<td>2024-08-16</td>
+<td>2024-08-16</td>
+<td>turbomam (222)</td>
+<td>Using BaseX XML database for structure discovery</td>
+</tr>
+<tr>
+<td><code>INCATools/biosample-analysis</code></td>
+<td>Python/OAK</td>
+<td>Analysis notebooks, cross-repo</td>
+<td>2022-01-05</td>
+<td>2022-01-05</td>
+<td>wdduncan (187), hrshdhgd (176), turbomam (34)</td>
+<td>Analysis of biosamples in INSDC</td>
+</tr>
+<tr>
+<td><code>microbiomedata/sample-annotator</code></td>
+<td>MongoDB</td>
+<td>Early flattening pipelines</td>
+<td>2025-04-21</td>
+<td>2025-04-21</td>
+<td>turbomam (93), sujaypatil96 (83), cmungall (27)</td>
+<td>NMDC Sample Annotator - predates xmldb/basex work</td>
+</tr>
+<tr>
+<td><code>microbiomedata/external-metadata-awareness</code></td>
+<td>MongoDB + SQLite + DuckDB</td>
+<td>Large-scale flattening, 40M+ corpus</td>
+<td>2025-09-25</td>
+<td>2025-09-25</td>
+<td>turbomam (491), dependabot[bot] (3)</td>
+<td>Tools for fetching and processing external schemas, ontologies and
+metadata</td>
+</tr>
+<tr>
+<td><code>contextualizer-ai/to-duckdb</code></td>
+<td>DuckDB</td>
+<td>Universal migration tooling</td>
+<td>2025-09-20</td>
+<td>2025-09-20</td>
+<td>turbomam (15)</td>
+<td>Tools for converting content in other databases to DuckDB</td>
+</tr>
+<tr>
+<td><code>contextualizer-ai/gold-tools</code></td>
+<td>MongoDB + DuckDB</td>
+<td>GOLD API ingestion</td>
+<td>2025-09-16</td>
+<td>2025-09-16</td>
+<td>turbomam (2)</td>
+<td>GOLD metadata ingestion into MongoDB and flattening</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="validation-checklist">Validation Checklist</h2>
+<ol type="1">
+<li><strong>Version banner</strong> (add to README header):<br />
+<code>Export: YYYY-MM-DD • Build: vX.Y • Code commit: &lt;hash&gt;</code></li>
+<li><strong>DuckDB table counts</strong></li>
+</ol>
+<pre class="shell"><code>duckdb -c &quot;SELECT table_name, row_count FROM duckdb_tables()&quot; file.duckdb</code></pre>
+<ol start="3" type="1">
+<li><strong>GitHub repo timelines &amp; contributors</strong></li>
+</ol>
+<pre class="shell"><code>git log --reverse --format=&quot;%ad %h %s&quot; | head -1
+git log -1 --format=&quot;%ad %h %s&quot;
+git shortlog -sne --all | head -20</code></pre>
+<hr />
+<h2 id="known-discrepancies">Known Discrepancies</h2>
+<ul>
+<li>GOLD builds differ: API vs Excel. See <a href="#gold-outputs">GOLD
+Outputs</a>.</li>
+<li>Schema names shift — always record export date/version.</li>
+</ul>
+<hr />
+<h2 id="future-directions">Future Directions</h2>
+<ul>
+<li>Replace/supplement Quantulum3 for unit parsing</li>
+<li>Extend beyond triad-complete subset</li>
+<li>Stabilize schema naming/versioning</li>
+<li>Integrate geospatial embeddings at scale</li>
+</ul>
+<hr />
+</body>
+</html>

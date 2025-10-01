@@ -1,0 +1,46 @@
+{
+  "createdAt": "2016-08-30T10:55:57Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A DOT language parser / writer for graphlib",
+  "name": "graphlib-dot",
+  "updatedAt": "2016-08-30T10:55:58Z",
+  "url": "https://github.com/cmungall/graphlib-dot",
+  "firstCommitDate": "2015-07-28T02:22:37Z",
+  "lastCommitDate": "2015-07-28T02:22:37Z",
+  "topContributors": [
+    {
+      "contributions": 51,
+      "login": "zenkyomu"
+    },
+    {
+      "contributions": 24,
+      "login": "dominictarr"
+    },
+    {
+      "contributions": 5,
+      "login": "cpettitt-linkedin"
+    },
+    {
+      "contributions": 3,
+      "login": "ress"
+    },
+    {
+      "contributions": 3,
+      "login": "shans"
+    },
+    {
+      "contributions": 2,
+      "login": "j-a-m-l"
+    },
+    {
+      "contributions": 1,
+      "login": "drom"
+    },
+    {
+      "contributions": 1,
+      "login": "tunnij"
+    }
+  ]
+}

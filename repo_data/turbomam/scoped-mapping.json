@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-05-19T22:22:40Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "when mapping strings from column/field X in some datasource, consider the values in column/field Y to determine what ontology to map to",
+  "name": "scoped-mapping",
+  "updatedAt": "2024-08-16T16:10:49Z",
+  "url": "https://github.com/turbomam/scoped-mapping",
+  "firstCommitDate": "2021-08-26T14:56:49Z",
+  "lastCommitDate": "2021-08-26T14:56:49Z",
+  "topContributors": [
+    {
+      "contributions": 84,
+      "login": "turbomam"
+    }
+  ]
+}

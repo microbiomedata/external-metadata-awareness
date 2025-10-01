@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-05-17T16:46:45Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A collection of JSON schema files including full API",
+  "name": "schemastore",
+  "updatedAt": "2022-05-17T19:05:14Z",
+  "url": "https://github.com/cmungall/schemastore",
+  "firstCommitDate": "2022-05-17T19:04:37Z",
+  "lastCommitDate": "2022-05-17T19:04:37Z",
+  "topContributors": [
+    {
+      "contributions": 375,
+      "login": "madskristensen"
+    },
+    {
+      "contributions": 119,
+      "login": "GerryFerdinandus"
+    },
+    {
+      "contributions": 49,
+      "login": "scottaddie"
+    },
+    {
+      "contributions": 19,
+      "login": "ssbarnea"
+    },
+    {
+      "contributions": 18,
+      "login": "MasterOdin"
+    },
+    {
+      "contributions": 18,
+      "login": "SethFalco"
+    },
+    {
+      "contributions": 15,
+      "login": "foxriver76"
+    },
+    {
+      "contributions": 15,
+      "login": "michaelcfanning"
+    },
+    {
+      "contributions": 15,
+      "login": "remcohaszing"
+    },
+    {
+      "contributions": 14,
+      "login": "hayssams"
+    }
+  ]
+}

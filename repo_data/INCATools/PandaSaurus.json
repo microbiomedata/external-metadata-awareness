@@ -1,0 +1,26 @@
+{
+  "createdAt": "2023-03-23T13:28:54Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Supporting simple queries over ontology annotations in dataframes, using UberGraph queries",
+  "name": "PandaSaurus",
+  "updatedAt": "2023-04-28T16:18:05Z",
+  "url": "https://github.com/INCATools/PandaSaurus",
+  "firstCommitDate": "2024-03-06T13:55:01Z",
+  "lastCommitDate": "2024-03-06T13:55:01Z",
+  "topContributors": [
+    {
+      "contributions": 69,
+      "login": "ubyndr"
+    },
+    {
+      "contributions": 6,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 2,
+      "login": "anitacaron"
+    }
+  ]
+}

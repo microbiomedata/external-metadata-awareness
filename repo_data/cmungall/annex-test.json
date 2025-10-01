@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-10-09T22:21:12Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "annex-test",
+  "updatedAt": "2017-10-09T22:21:12Z",
+  "url": "https://github.com/cmungall/annex-test",
+  "firstCommitDate": "2017-10-09T22:14:44Z",
+  "lastCommitDate": "2017-10-09T22:14:44Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

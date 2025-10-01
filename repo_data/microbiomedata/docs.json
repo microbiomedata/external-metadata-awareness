@@ -1,0 +1,54 @@
+{
+  "createdAt": "2024-08-28T23:27:25Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "User-facing, web-based documentation about the NMDC",
+  "name": "docs",
+  "updatedAt": "2025-08-25T20:30:29Z",
+  "url": "https://github.com/microbiomedata/docs",
+  "firstCommitDate": "2025-08-25T20:30:23Z",
+  "lastCommitDate": "2025-08-25T20:30:23Z",
+  "topContributors": [
+    {
+      "contributions": 284,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 110,
+      "login": "vlilanl"
+    },
+    {
+      "contributions": 108,
+      "login": "mslarae13"
+    },
+    {
+      "contributions": 64,
+      "login": "kaijli"
+    },
+    {
+      "contributions": 17,
+      "login": "aclum"
+    },
+    {
+      "contributions": 6,
+      "login": "AmitBinf"
+    },
+    {
+      "contributions": 4,
+      "login": "jkelliher-github"
+    },
+    {
+      "contributions": 4,
+      "login": "ssarrafan"
+    },
+    {
+      "contributions": 3,
+      "login": "emileyfadrosh"
+    },
+    {
+      "contributions": 3,
+      "login": "pkalita-lbl"
+    }
+  ]
+}

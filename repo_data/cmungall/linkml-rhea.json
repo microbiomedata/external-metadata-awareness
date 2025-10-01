@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-01-10T20:47:16Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "ALPHA linkml rendering of rhea",
+  "name": "linkml-rhea",
+  "updatedAt": "2022-01-10T20:47:17Z",
+  "url": "https://github.com/cmungall/linkml-rhea",
+  "firstCommitDate": "2022-01-10T20:02:42Z",
+  "lastCommitDate": "2022-01-10T20:02:42Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

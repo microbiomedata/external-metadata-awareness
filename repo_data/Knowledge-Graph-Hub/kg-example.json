@@ -1,0 +1,30 @@
+{
+  "createdAt": "2020-12-13T20:26:00Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Example repository for KG-Hub projects. Provides examples for downloading sources, transforming them, and merging them into knowledge graphs.",
+  "name": "kg-example",
+  "updatedAt": "2023-05-03T14:01:54Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/kg-example",
+  "firstCommitDate": "2023-05-03T14:01:48Z",
+  "lastCommitDate": "2023-05-03T14:01:48Z",
+  "topContributors": [
+    {
+      "contributions": 69,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 36,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 2,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 2,
+      "login": "deepakunni3"
+    }
+  ]
+}

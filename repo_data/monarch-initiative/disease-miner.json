@@ -1,0 +1,22 @@
+{
+  "createdAt": "2013-06-26T21:39:04Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "mining and merging disease resources",
+  "name": "disease-miner",
+  "updatedAt": "2023-05-01T15:29:58Z",
+  "url": "https://github.com/monarch-initiative/disease-miner",
+  "firstCommitDate": "2016-08-04T16:28:10Z",
+  "lastCommitDate": "2016-08-04T16:28:10Z",
+  "topContributors": [
+    {
+      "contributions": 17,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "jmcmurry"
+    }
+  ]
+}

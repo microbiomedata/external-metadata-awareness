@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-02-17T02:35:52Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "synbio-schema",
+  "updatedAt": "2021-11-18T15:37:13Z",
+  "url": "https://github.com/cmungall/synbio-schema",
+  "firstCommitDate": "2022-01-18T15:34:30Z",
+  "lastCommitDate": "2022-01-18T15:34:30Z",
+  "topContributors": [
+    {
+      "contributions": 74,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

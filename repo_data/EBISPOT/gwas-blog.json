@@ -1,0 +1,30 @@
+{
+  "createdAt": "2021-07-29T18:59:08Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "https://ebispot.github.io/gwas-blog",
+  "name": "gwas-blog",
+  "updatedAt": "2024-11-19T15:55:19Z",
+  "url": "https://github.com/EBISPOT/gwas-blog",
+  "firstCommitDate": "2024-11-19T15:55:08Z",
+  "lastCommitDate": "2024-11-19T15:55:08Z",
+  "topContributors": [
+    {
+      "contributions": 53,
+      "login": "sprintell"
+    },
+    {
+      "contributions": 25,
+      "login": "ala-ebi"
+    },
+    {
+      "contributions": 21,
+      "login": "ljwh2"
+    },
+    {
+      "contributions": 4,
+      "login": "jiyue1214"
+    }
+  ]
+}

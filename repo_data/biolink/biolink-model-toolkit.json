@@ -1,0 +1,54 @@
+{
+  "createdAt": "2019-01-15T16:31:40Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A collection of useful python functions for looking up information and working with the Biolink Model",
+  "name": "biolink-model-toolkit",
+  "updatedAt": "2025-05-27T23:32:20Z",
+  "url": "https://github.com/biolink/biolink-model-toolkit",
+  "firstCommitDate": "2025-05-27T23:32:16Z",
+  "lastCommitDate": "2025-05-27T23:32:16Z",
+  "topContributors": [
+    {
+      "contributions": 425,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 54,
+      "login": "deepakunni3"
+    },
+    {
+      "contributions": 47,
+      "login": "RichardBruskiewich"
+    },
+    {
+      "contributions": 14,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 6,
+      "login": "lhannest"
+    },
+    {
+      "contributions": 5,
+      "login": "patrickkwang"
+    },
+    {
+      "contributions": 2,
+      "login": "hsolbrig"
+    },
+    {
+      "contributions": 1,
+      "login": "gaurav"
+    },
+    {
+      "contributions": 1,
+      "login": "kennethbruskiewicz"
+    },
+    {
+      "contributions": 1,
+      "login": "nlharris"
+    }
+  ]
+}

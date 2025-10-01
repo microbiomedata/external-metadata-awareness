@@ -1,0 +1,30 @@
+{
+  "createdAt": "2021-05-22T13:42:00Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Phenomenal text mining for disease and phenotype concepts",
+  "name": "fenominal",
+  "updatedAt": "2025-06-13T13:38:16Z",
+  "url": "https://github.com/monarch-initiative/fenominal",
+  "firstCommitDate": "2024-01-25T22:05:25Z",
+  "lastCommitDate": "2024-01-25T22:05:25Z",
+  "topContributors": [
+    {
+      "contributions": 202,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 23,
+      "login": "ielis"
+    },
+    {
+      "contributions": 5,
+      "login": "tudorgroza"
+    },
+    {
+      "contributions": 1,
+      "login": "julesjacobsen"
+    }
+  ]
+}

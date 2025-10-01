@@ -1,0 +1,54 @@
+{
+  "createdAt": "2023-10-11T15:31:46Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Proving grounds for a refactored nmdc-schema",
+  "name": "monterey-schema",
+  "updatedAt": "2024-08-13T00:55:10Z",
+  "url": "https://github.com/microbiomedata/monterey-schema",
+  "firstCommitDate": "2023-10-13T19:32:43Z",
+  "lastCommitDate": "2023-10-13T19:32:43Z",
+  "topContributors": [
+    {
+      "contributions": 1087,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 566,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 123,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 49,
+      "login": "aclum"
+    },
+    {
+      "contributions": 27,
+      "login": "mslarae13"
+    },
+    {
+      "contributions": 16,
+      "login": "dwinston"
+    },
+    {
+      "contributions": 16,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 16,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 10,
+      "login": "scanon"
+    },
+    {
+      "contributions": 7,
+      "login": "dehays"
+    }
+  ]
+}

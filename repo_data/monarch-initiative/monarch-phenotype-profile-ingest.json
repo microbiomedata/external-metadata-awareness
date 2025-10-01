@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-08-29T05:04:25Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "human phenotype related ingests",
+  "name": "monarch-phenotype-profile-ingest",
+  "updatedAt": "2025-08-12T03:54:02Z",
+  "url": "https://github.com/monarch-initiative/monarch-phenotype-profile-ingest",
+  "firstCommitDate": "2025-08-12T03:53:57Z",
+  "lastCommitDate": "2025-08-12T03:53:57Z",
+  "topContributors": [
+    {
+      "contributions": 19,
+      "login": "AO33"
+    },
+    {
+      "contributions": 17,
+      "login": "kevinschaper"
+    }
+  ]
+}

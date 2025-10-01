@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-03-30T15:20:50Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A very basic library for parsing files in the UMLS RRF format",
+  "name": "umls-rrf-scala",
+  "updatedAt": "2023-09-20T03:36:18Z",
+  "url": "https://github.com/cancerDHC/umls-rrf-scala",
+  "firstCommitDate": "2020-11-04T22:30:20Z",
+  "lastCommitDate": "2020-11-04T22:30:20Z",
+  "topContributors": [
+    {
+      "contributions": 79,
+      "login": "gaurav"
+    }
+  ]
+}

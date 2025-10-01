@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-03-21T20:45:07Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "obographs-scala",
+  "updatedAt": "2017-03-21T20:45:16Z",
+  "url": "https://github.com/cmungall/obographs-scala",
+  "firstCommitDate": "2017-03-21T20:44:45Z",
+  "lastCommitDate": "2017-03-21T20:44:45Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

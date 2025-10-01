@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-07-24T14:38:02Z",
+  "defaultBranchRef": {
+    "name": "dev"
+  },
+  "description": "",
+  "name": "ols-semsim",
+  "updatedAt": "2025-08-06T08:32:15Z",
+  "url": "https://github.com/EBISPOT/ols-semsim",
+  "firstCommitDate": "2025-07-30T17:02:25Z",
+  "lastCommitDate": "2025-07-30T17:02:25Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "jamesamcl"
+    }
+  ]
+}

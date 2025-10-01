@@ -1,0 +1,38 @@
+{
+  "createdAt": "2024-05-07T17:38:45Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Analysis of LLMs for Clinical Observations",
+  "name": "pheval.llm",
+  "updatedAt": "2025-09-15T12:11:35Z",
+  "url": "https://github.com/monarch-initiative/pheval.llm",
+  "firstCommitDate": "2025-09-15T12:11:25Z",
+  "lastCommitDate": "2025-09-15T12:11:25Z",
+  "topContributors": [
+    {
+      "contributions": 89,
+      "login": "leokim-l"
+    },
+    {
+      "contributions": 19,
+      "login": "iimpulse"
+    },
+    {
+      "contributions": 11,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 8,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "enockniyonkuru"
+    }
+  ]
+}

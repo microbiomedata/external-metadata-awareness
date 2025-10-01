@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-10-21T12:24:40Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Generate ROBOT files to add terms to the HPO",
+  "name": "hpo2robot",
+  "updatedAt": "2025-08-13T11:25:03Z",
+  "url": "https://github.com/monarch-initiative/hpo2robot",
+  "firstCommitDate": "2024-07-21T07:27:34Z",
+  "lastCommitDate": "2024-07-21T07:27:34Z",
+  "topContributors": [
+    {
+      "contributions": 87,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 2,
+      "login": "ielis"
+    }
+  ]
+}

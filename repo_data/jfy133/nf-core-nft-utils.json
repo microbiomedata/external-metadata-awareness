@@ -1,0 +1,42 @@
+{
+  "createdAt": "2024-10-11T09:00:58Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "nf-test utility functions",
+  "name": "nf-core-nft-utils",
+  "updatedAt": "2024-10-14T09:53:51Z",
+  "url": "https://github.com/jfy133/nf-core-nft-utils",
+  "firstCommitDate": "2024-10-08T05:29:43Z",
+  "lastCommitDate": "2024-10-08T05:29:43Z",
+  "topContributors": [
+    {
+      "contributions": 88,
+      "login": "maxulysse"
+    },
+    {
+      "contributions": 5,
+      "login": "adamrtalbot"
+    },
+    {
+      "contributions": 2,
+      "login": "pinin4fjords"
+    },
+    {
+      "contributions": 2,
+      "login": "nvnieuwk"
+    },
+    {
+      "contributions": 1,
+      "login": "edmundmiller"
+    },
+    {
+      "contributions": 1,
+      "login": "lukfor"
+    },
+    {
+      "contributions": 1,
+      "login": "sateeshperi"
+    }
+  ]
+}

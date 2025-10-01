@@ -1,0 +1,46 @@
+{
+  "createdAt": "2020-11-02T20:42:32Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Metatranscriptomics workflow",
+  "name": "metaT",
+  "updatedAt": "2025-05-05T21:49:47Z",
+  "url": "https://github.com/microbiomedata/metaT",
+  "firstCommitDate": "2025-05-05T21:49:43Z",
+  "lastCommitDate": "2025-05-05T21:49:43Z",
+  "topContributors": [
+    {
+      "contributions": 173,
+      "login": "mshakya"
+    },
+    {
+      "contributions": 61,
+      "login": "kaijli"
+    },
+    {
+      "contributions": 5,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 4,
+      "login": "hubin-keio"
+    },
+    {
+      "contributions": 3,
+      "login": "chienchi"
+    },
+    {
+      "contributions": 2,
+      "login": "ssarrafan"
+    },
+    {
+      "contributions": 2,
+      "login": "mflynn-lanl"
+    },
+    {
+      "contributions": 1,
+      "login": "scanon"
+    }
+  ]
+}

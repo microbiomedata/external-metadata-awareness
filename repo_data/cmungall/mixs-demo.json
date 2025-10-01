@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-01-25T22:34:16Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "mixs-demo",
+  "updatedAt": "2021-04-13T17:58:50Z",
+  "url": "https://github.com/cmungall/mixs-demo",
+  "firstCommitDate": "2021-03-31T20:59:01Z",
+  "lastCommitDate": "2021-03-31T20:59:01Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

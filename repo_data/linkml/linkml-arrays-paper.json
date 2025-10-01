@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-03-29T19:46:56Z",
+  "defaultBranchRef": {
+    "name": "init-myst"
+  },
+  "description": "Perspective Paper on LinkML Arrays",
+  "name": "linkml-arrays-paper",
+  "updatedAt": "2024-10-29T20:03:10Z",
+  "url": "https://github.com/linkml/linkml-arrays-paper",
+  "firstCommitDate": "2024-04-20T05:05:06Z",
+  "lastCommitDate": "2024-04-20T05:05:06Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "sneakers-the-rat"
+    }
+  ]
+}

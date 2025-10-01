@@ -1,0 +1,54 @@
+{
+  "createdAt": "2015-08-04T22:50:22Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Automatically exported from code.google.com/p/obo-foundry-operations-committee",
+  "name": "obo-foundry-operations-committee",
+  "updatedAt": "2015-08-07T21:13:27Z",
+  "url": "https://github.com/cmungall/obo-foundry-operations-committee",
+  "firstCommitDate": "2015-07-06T15:45:05Z",
+  "lastCommitDate": "2015-07-06T15:45:05Z",
+  "topContributors": [
+    {
+      "contributions": 141,
+      "login": "mcourtot"
+    },
+    {
+      "contributions": 103,
+      "login": "ramonawalls"
+    },
+    {
+      "contributions": 18,
+      "login": "alanruttenberg"
+    },
+    {
+      "contributions": 8,
+      "login": "zhengj2007"
+    },
+    {
+      "contributions": 6,
+      "login": "proccaserra"
+    },
+    {
+      "contributions": 4,
+      "login": "batchelorc"
+    },
+    {
+      "contributions": 4,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 3,
+      "login": "bbopjenkins"
+    },
+    {
+      "contributions": 3,
+      "login": "cstoeckert"
+    },
+    {
+      "contributions": 2,
+      "login": "carlotorniai"
+    }
+  ]
+}

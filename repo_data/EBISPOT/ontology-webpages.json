@@ -1,0 +1,38 @@
+{
+  "createdAt": "2016-11-02T10:47:32Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Sourcecode for SPOT ontology web pages",
+  "name": "ontology-webpages",
+  "updatedAt": "2022-11-22T15:32:25Z",
+  "url": "https://github.com/EBISPOT/ontology-webpages",
+  "firstCommitDate": "2022-11-22T15:49:26Z",
+  "lastCommitDate": "2022-11-22T15:49:26Z",
+  "topContributors": [
+    {
+      "contributions": 120,
+      "login": "olgavrou"
+    },
+    {
+      "contributions": 39,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 12,
+      "login": "LLTommy"
+    },
+    {
+      "contributions": 7,
+      "login": "jamesamcl"
+    },
+    {
+      "contributions": 3,
+      "login": "serjoshua"
+    },
+    {
+      "contributions": 1,
+      "login": "paolaroncaglia"
+    }
+  ]
+}

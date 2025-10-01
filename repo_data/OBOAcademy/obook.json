@@ -1,0 +1,54 @@
+{
+  "createdAt": "2020-06-03T13:50:20Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "OBO Organized Knowledge: Training materials for becoming an OBO engineer ",
+  "name": "obook",
+  "updatedAt": "2025-09-27T22:09:57Z",
+  "url": "https://github.com/OBOAcademy/obook",
+  "firstCommitDate": "2025-07-17T17:53:25Z",
+  "lastCommitDate": "2025-07-17T17:53:25Z",
+  "topContributors": [
+    {
+      "contributions": 1197,
+      "login": "nicolevasilevsky"
+    },
+    {
+      "contributions": 293,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 168,
+      "login": "shawntanzk"
+    },
+    {
+      "contributions": 79,
+      "login": "sagehrke"
+    },
+    {
+      "contributions": 61,
+      "login": "valecipriani"
+    },
+    {
+      "contributions": 48,
+      "login": "beckyjackson"
+    },
+    {
+      "contributions": 40,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 33,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 27,
+      "login": "sabrinatoro"
+    },
+    {
+      "contributions": 26,
+      "login": "yaseminbridges"
+    }
+  ]
+}

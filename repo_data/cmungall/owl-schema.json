@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-08-17T02:36:54Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "schema for OWL in LinkML",
+  "name": "owl-schema",
+  "updatedAt": "2022-10-26T04:51:15Z",
+  "url": "https://github.com/cmungall/owl-schema",
+  "firstCommitDate": "2022-08-17T02:41:37Z",
+  "lastCommitDate": "2022-08-17T02:41:37Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

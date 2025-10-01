@@ -1,0 +1,18 @@
+{
+  "createdAt": "2014-06-27T01:33:10Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Formal specification of genome interval relations",
+  "name": "genomize-intervals-formalization",
+  "updatedAt": "2014-06-27T01:33:41Z",
+  "url": "https://github.com/cmungall/genomize-intervals-formalization",
+  "firstCommitDate": "2014-06-27T01:32:10Z",
+  "lastCommitDate": "2014-06-27T01:32:10Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

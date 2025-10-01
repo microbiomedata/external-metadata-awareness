@@ -1,0 +1,945 @@
+[
+  {
+    "createdAt": "2023-12-12T19:09:41Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Convert methylation data to sparse objects for machine learning.",
+    "name": "bam2tensor",
+    "updatedAt": "2025-06-02T16:57:57Z",
+    "url": "https://github.com/mcwdsi/bam2tensor",
+    "firstCommitDate": "2025-06-02T16:57:52Z",
+    "lastCommitDate": "2025-06-02T16:57:52Z",
+    "topContributors": [
+      {
+        "contributions": 108,
+        "login": "semenko"
+      },
+      {
+        "contributions": 42,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-01-02T14:50:49Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "common_utils",
+    "updatedAt": "2024-06-07T14:47:16Z",
+    "url": "https://github.com/mcwdsi/common_utils",
+    "firstCommitDate": "2024-06-07T14:47:09Z",
+    "lastCommitDate": "2024-06-07T14:47:09Z",
+    "topContributors": [
+      {
+        "contributions": 17,
+        "login": "hoganwr"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-06-23T14:57:07Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Automatically exported from code.google.com/p/demo-app-ontology",
+    "name": "demo-app-ontology",
+    "updatedAt": "2023-10-05T19:15:40Z",
+    "url": "https://github.com/mcwdsi/demo-app-ontology",
+    "firstCommitDate": "2018-11-18T04:33:09Z",
+    "lastCommitDate": "2018-11-18T04:33:09Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "hoganwr"
+      },
+      {
+        "contributions": 1,
+        "login": "sgarimalla"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-10-04T21:17:33Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Calls BioPortal API to look for matches in ChEBI to DrOn ingredient terms derived from RxNorm",
+    "name": "dron-chebi-mapper",
+    "updatedAt": "2023-10-06T13:21:06Z",
+    "url": "https://github.com/mcwdsi/dron-chebi-mapper",
+    "firstCommitDate": "2023-08-17T20:20:07Z",
+    "lastCommitDate": "2023-08-17T20:20:07Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "hoganwr"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-01-27T18:44:29Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "SPARQL queries written against Drug Ontology",
+    "name": "dron-query-sparql",
+    "updatedAt": "2023-10-05T19:18:01Z",
+    "url": "https://github.com/mcwdsi/dron-query-sparql",
+    "firstCommitDate": "2017-06-23T18:26:29Z",
+    "lastCommitDate": "2017-06-23T18:26:29Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "dillerm"
+      },
+      {
+        "contributions": 1,
+        "login": "nrejac"
+      },
+      {
+        "contributions": 1,
+        "login": "samiraamirovaa"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-10-30T15:45:48Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "command line app for querying Drug Ontology using DL queries via reasoner",
+    "name": "dron-query",
+    "updatedAt": "2023-10-06T13:21:36Z",
+    "url": "https://github.com/mcwdsi/dron-query",
+    "firstCommitDate": "2023-08-17T19:59:49Z",
+    "lastCommitDate": "2023-08-17T19:59:49Z",
+    "topContributors": [
+      {
+        "contributions": 33,
+        "login": "hoganwr"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-03-16T12:07:10Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "dron",
+    "updatedAt": "2025-08-21T18:21:29Z",
+    "url": "https://github.com/mcwdsi/dron",
+    "firstCommitDate": "2025-08-21T18:21:25Z",
+    "lastCommitDate": "2025-08-21T18:21:25Z",
+    "topContributors": [
+      {
+        "contributions": 123,
+        "login": "hoganwr"
+      },
+      {
+        "contributions": 53,
+        "login": "jamesaoverton"
+      },
+      {
+        "contributions": 29,
+        "login": "dexink"
+      },
+      {
+        "contributions": 25,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-10-14T19:35:44Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "The EXPOSD ontology represents surrogate data and markers for envirnmental exposures and health outcomes.",
+    "name": "exposd",
+    "updatedAt": "2023-10-05T19:16:39Z",
+    "url": "https://github.com/mcwdsi/exposd",
+    "firstCommitDate": "2018-02-13T15:07:14Z",
+    "lastCommitDate": "2018-02-13T15:07:14Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2018-02-26T17:46:56Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "The Florida Annotated Corpus for Translational Science (FACTS) - Corpus files, annotation files, and annotation guidelines",
+    "name": "FACTS_resources",
+    "updatedAt": "2023-10-05T19:41:55Z",
+    "url": "https://github.com/mcwdsi/FACTS_resources",
+    "firstCommitDate": "2018-05-15T18:51:47Z",
+    "lastCommitDate": "2018-05-15T18:51:47Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "aellenhicks"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-10-17T17:18:42Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Florida Annotated Corpus for Translational Science",
+    "name": "FACTS",
+    "updatedAt": "2023-10-05T19:17:04Z",
+    "url": "https://github.com/mcwdsi/FACTS",
+    "firstCommitDate": "2017-11-02T18:33:52Z",
+    "lastCommitDate": "2017-11-02T18:33:52Z",
+    "topContributors": [
+      {
+        "contributions": 79,
+        "login": "seljaseppala"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-03-22T17:07:51Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Java code to convert conventional data into to OWL2",
+    "name": "general-conversion-to-owl2",
+    "updatedAt": "2024-06-12T15:20:44Z",
+    "url": "https://github.com/mcwdsi/general-conversion-to-owl2",
+    "firstCommitDate": "2024-06-12T15:20:38Z",
+    "lastCommitDate": "2024-06-12T15:20:38Z",
+    "topContributors": [
+      {
+        "contributions": 233,
+        "login": "hoganwr"
+      },
+      {
+        "contributions": 5,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 1,
+        "login": "JohnLevander"
+      },
+      {
+        "contributions": 1,
+        "login": "dillerm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-06-25T13:45:43Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "An ontology and inventory of geopolitical entities (such as sovereign states and their administrative subdivisions) as well as various geographical regions (including but not limited to the specific ones over which the governments have jurisdiction)",
+    "name": "geographical-entity-ontology",
+    "updatedAt": "2025-08-10T05:52:44Z",
+    "url": "https://github.com/mcwdsi/geographical-entity-ontology",
+    "firstCommitDate": "2025-02-07T15:07:39Z",
+    "lastCommitDate": "2025-02-07T15:07:39Z",
+    "topContributors": [
+      {
+        "contributions": 81,
+        "login": "hoganwr"
+      },
+      {
+        "contributions": 23,
+        "login": "dillerm"
+      },
+      {
+        "contributions": 4,
+        "login": "aellenhicks"
+      },
+      {
+        "contributions": 2,
+        "login": "Sohj"
+      },
+      {
+        "contributions": 1,
+        "login": "cthoyt"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-01-11T20:41:47Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Implementation of ISO 8601 date/time formatting standard",
+    "name": "iso8601",
+    "updatedAt": "2024-06-07T14:47:49Z",
+    "url": "https://github.com/mcwdsi/iso8601",
+    "firstCommitDate": "2024-06-07T14:47:42Z",
+    "lastCommitDate": "2024-06-07T14:47:42Z",
+    "topContributors": [
+      {
+        "contributions": 24,
+        "login": "hoganwr"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-01-28T15:14:31Z",
+    "defaultBranchRef": {
+      "name": "oldmain"
+    },
+    "description": "Implementation of M1 with data format matching only",
+    "name": "m1-df-only",
+    "updatedAt": "2024-02-27T14:21:49Z",
+    "url": "https://github.com/mcwdsi/m1-df-only",
+    "firstCommitDate": "2024-01-28T15:14:32Z",
+    "lastCommitDate": "2024-01-28T15:14:32Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "hoganwr"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-02-19T14:15:02Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "mcc-portal-rdf-constraints",
+    "updatedAt": "2023-10-05T19:13:10Z",
+    "url": "https://github.com/mcwdsi/mcc-portal-rdf-constraints",
+    "firstCommitDate": "2021-02-19T14:18:18Z",
+    "lastCommitDate": "2021-02-19T14:18:18Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "hoganwr"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-06-30T19:38:07Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Website for the Data Science Institute at the Medical College of Wisconsin",
+    "name": "mcwdsi.github.io",
+    "updatedAt": "2024-06-30T23:30:55Z",
+    "url": "https://github.com/mcwdsi/mcwdsi.github.io",
+    "firstCommitDate": "2024-06-30T23:30:40Z",
+    "lastCommitDate": "2024-06-30T23:30:40Z",
+    "topContributors": [
+      {
+        "contributions": 16,
+        "login": "hoganwr"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-06-27T14:43:36Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "This api connects to the mdc stardog db specified and retrieves the data for the mdc_search",
+    "name": "mdc_api",
+    "updatedAt": "2023-10-05T19:17:24Z",
+    "url": "https://github.com/mcwdsi/mdc_api",
+    "firstCommitDate": "2017-06-27T14:51:50Z",
+    "lastCommitDate": "2017-06-27T14:51:50Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2017-06-07T20:02:26Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "SPARQL queries to compute FAIR metrics in MIDAS Digital Commons",
+    "name": "mdc_meter",
+    "updatedAt": "2023-10-05T19:12:21Z",
+    "url": "https://github.com/mcwdsi/mdc_meter",
+    "firstCommitDate": "2021-05-07T18:15:04Z",
+    "lastCommitDate": "2021-05-07T18:15:04Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "atloiaco"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-06-07T18:53:14Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "SPARQL queries for searching MIDAS Digital Commons for valid combinations of datasets and software",
+    "name": "mdc_search",
+    "updatedAt": "2023-10-05T19:11:07Z",
+    "url": "https://github.com/mcwdsi/mdc_search",
+    "firstCommitDate": "2021-05-07T18:15:55Z",
+    "lastCommitDate": "2021-05-07T18:15:55Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "atloiaco"
+      },
+      {
+        "contributions": 1,
+        "login": "dillerm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-06-07T20:16:11Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "mdc_tree",
+    "updatedAt": "2023-10-05T19:12:43Z",
+    "url": "https://github.com/mcwdsi/mdc_tree",
+    "firstCommitDate": "2021-05-07T18:14:14Z",
+    "lastCommitDate": "2021-05-07T18:14:14Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "atloiaco"
+      },
+      {
+        "contributions": 1,
+        "login": "dillerm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-05-11T19:01:58Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A parsing script written in Python 3.5 that parses DATS JSON files for datasets in the MIDAS Digital Commons. ",
+    "name": "mdc-dats-processor",
+    "updatedAt": "2023-10-05T19:15:01Z",
+    "url": "https://github.com/mcwdsi/mdc-dats-processor",
+    "firstCommitDate": "2019-05-03T19:21:47Z",
+    "lastCommitDate": "2019-05-03T19:21:47Z",
+    "topContributors": [
+      {
+        "contributions": 33,
+        "login": "dillerm"
+      },
+      {
+        "contributions": 5,
+        "login": "hoganwr"
+      },
+      {
+        "contributions": 2,
+        "login": "atloiaco"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-04-25T11:44:18Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "sparql queries for the midas digital commons",
+    "name": "mdc-sparql",
+    "updatedAt": "2023-10-05T19:30:54Z",
+    "url": "https://github.com/mcwdsi/mdc-sparql",
+    "firstCommitDate": "2022-10-19T14:40:04Z",
+    "lastCommitDate": "2022-10-19T14:40:04Z",
+    "topContributors": [
+      {
+        "contributions": 73,
+        "login": "hoganwr"
+      },
+      {
+        "contributions": 2,
+        "login": "dillerm"
+      },
+      {
+        "contributions": 2,
+        "login": "atloiaco"
+      },
+      {
+        "contributions": 1,
+        "login": "monadica"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-04-13T13:08:00Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Command line shell scripts for loading, backing up, saving off data from the Stardog backend of the MIDAS Digital Commons and OBC.ide",
+    "name": "mdc-stardog-scripts",
+    "updatedAt": "2023-10-05T19:14:38Z",
+    "url": "https://github.com/mcwdsi/mdc-stardog-scripts",
+    "firstCommitDate": "2020-05-14T23:41:07Z",
+    "lastCommitDate": "2020-05-14T23:41:07Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "hoganwr"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-03-05T13:35:21Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "midas-data-mapping-to-apollo-sv",
+    "updatedAt": "2023-10-05T19:29:41Z",
+    "url": "https://github.com/mcwdsi/midas-data-mapping-to-apollo-sv",
+    "firstCommitDate": "2021-11-28T16:33:11Z",
+    "lastCommitDate": "2021-11-28T16:33:11Z",
+    "topContributors": [
+      {
+        "contributions": 10,
+        "login": "hoganwr"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-06-07T18:59:32Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "obc_api",
+    "updatedAt": "2023-10-05T19:18:32Z",
+    "url": "https://github.com/mcwdsi/obc_api",
+    "firstCommitDate": "2017-06-07T18:57:46Z",
+    "lastCommitDate": "2017-06-07T18:57:46Z",
+    "topContributors": [
+      {
+        "contributions": 49,
+        "login": "atloiaco"
+      },
+      {
+        "contributions": 26,
+        "login": "joshhanna"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-03-16T18:03:22Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "OWL files for the OBC.ide project",
+    "name": "obc-ide-owl",
+    "updatedAt": "2023-10-05T19:32:47Z",
+    "url": "https://github.com/mcwdsi/obc-ide-owl",
+    "firstCommitDate": "2021-08-25T19:20:43Z",
+    "lastCommitDate": "2021-08-25T19:20:43Z",
+    "topContributors": [
+      {
+        "contributions": 51,
+        "login": "hoganwr"
+      },
+      {
+        "contributions": 19,
+        "login": "dillerm"
+      },
+      {
+        "contributions": 9,
+        "login": "JohnLevander"
+      },
+      {
+        "contributions": 8,
+        "login": "danielwelch"
+      },
+      {
+        "contributions": 8,
+        "login": "joshhanna"
+      },
+      {
+        "contributions": 2,
+        "login": "a-vhadgar"
+      },
+      {
+        "contributions": 1,
+        "login": "Amin-Tajgardoon"
+      },
+      {
+        "contributions": 1,
+        "login": "aellenhicks"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-12-16T15:02:13Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "obc-pubmed",
+    "updatedAt": "2023-10-05T19:48:37Z",
+    "url": "https://github.com/mcwdsi/obc-pubmed",
+    "firstCommitDate": "2023-05-23T20:27:44Z",
+    "lastCommitDate": "2023-05-23T20:27:44Z",
+    "topContributors": [
+      {
+        "contributions": 19,
+        "login": "danielwelch"
+      },
+      {
+        "contributions": 16,
+        "login": "a-vhadgar"
+      },
+      {
+        "contributions": 8,
+        "login": "dillerm"
+      },
+      {
+        "contributions": 2,
+        "login": "hoganwr"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-03-06T22:48:57Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "The Ontology for Modeling and Representation of Social Entities",
+    "name": "OMRSE",
+    "updatedAt": "2025-09-12T13:29:25Z",
+    "url": "https://github.com/mcwdsi/OMRSE",
+    "firstCommitDate": "2025-08-18T19:05:21Z",
+    "lastCommitDate": "2025-08-18T19:05:21Z",
+    "topContributors": [
+      {
+        "contributions": 135,
+        "login": "hoganwr"
+      },
+      {
+        "contributions": 117,
+        "login": "dillerm"
+      },
+      {
+        "contributions": 25,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 21,
+        "login": "aellenhicks"
+      },
+      {
+        "contributions": 15,
+        "login": "dexink"
+      },
+      {
+        "contributions": 9,
+        "login": "mbrochhausen"
+      },
+      {
+        "contributions": 6,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 4,
+        "login": "monadica"
+      },
+      {
+        "contributions": 4,
+        "login": "sjbost"
+      },
+      {
+        "contributions": 3,
+        "login": "CDowland"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-01-05T17:58:30Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Given two OWL files as input, outputs all the classes and properties they have in common.",
+    "name": "onto-intersect",
+    "updatedAt": "2025-01-17T16:19:56Z",
+    "url": "https://github.com/mcwdsi/onto-intersect",
+    "firstCommitDate": "2025-01-06T16:14:59Z",
+    "lastCommitDate": "2025-01-06T16:14:59Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "hoganwr"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-09-20T20:06:42Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Ontology for Representing CDM Semantics",
+    "name": "ORCS",
+    "updatedAt": "2023-10-05T19:11:39Z",
+    "url": "https://github.com/mcwdsi/ORCS",
+    "firstCommitDate": "2022-03-11T02:50:40Z",
+    "lastCommitDate": "2022-03-11T02:50:40Z",
+    "topContributors": [
+      {
+        "contributions": 9,
+        "login": "dillerm"
+      },
+      {
+        "contributions": 1,
+        "login": "hoganwr"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-12-12T20:29:12Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "some useful things done with owl-api, based on a generic, template-method based GenericOwlFileProcessor",
+    "name": "owl-utils",
+    "updatedAt": "2023-10-05T19:20:34Z",
+    "url": "https://github.com/mcwdsi/owl-utils",
+    "firstCommitDate": "2016-01-23T14:02:26Z",
+    "lastCommitDate": "2016-01-23T14:02:26Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "hoganwr"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-11-05T19:00:15Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Modelling the PCORnet CDM in an OBO Compliant OWL Ontology",
+    "name": "PCORowl",
+    "updatedAt": "2023-10-05T18:35:46Z",
+    "url": "https://github.com/mcwdsi/PCORowl",
+    "firstCommitDate": "2019-12-01T16:28:51Z",
+    "lastCommitDate": "2019-12-01T16:28:51Z",
+    "topContributors": [
+      {
+        "contributions": 44,
+        "login": "nrejac"
+      },
+      {
+        "contributions": 8,
+        "login": "aellenhicks"
+      },
+      {
+        "contributions": 1,
+        "login": "dillerm"
+      },
+      {
+        "contributions": 1,
+        "login": "hoganwr"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-08-30T14:43:58Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A Python script for generating OWL individuals that represent organism populations",
+    "name": "population-individuals-generator",
+    "updatedAt": "2023-10-05T19:44:19Z",
+    "url": "https://github.com/mcwdsi/population-individuals-generator",
+    "firstCommitDate": "2018-09-20T20:26:45Z",
+    "lastCommitDate": "2018-09-20T20:26:45Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "dillerm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-11-19T21:40:21Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Referent Tracking 2.0",
+    "name": "rt2",
+    "updatedAt": "2025-07-16T16:13:25Z",
+    "url": "https://github.com/mcwdsi/rt2",
+    "firstCommitDate": "2025-07-16T16:13:20Z",
+    "lastCommitDate": "2025-07-16T16:13:20Z",
+    "topContributors": [
+      {
+        "contributions": 46,
+        "login": "mrw8"
+      },
+      {
+        "contributions": 18,
+        "login": "hoganwr"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-08-16T13:52:17Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "rt2n4j",
+    "updatedAt": "2024-10-31T18:41:30Z",
+    "url": "https://github.com/mcwdsi/rt2n4j",
+    "firstCommitDate": "2024-10-31T18:41:27Z",
+    "lastCommitDate": "2024-10-31T18:41:27Z",
+    "topContributors": [
+      {
+        "contributions": 22,
+        "login": "mrw8"
+      },
+      {
+        "contributions": 2,
+        "login": "hoganwr"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-10-31T18:39:45Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Referent Tracking ETL for RT2.0",
+    "name": "rt2reflector",
+    "updatedAt": "2024-10-31T18:39:49Z",
+    "url": "https://github.com/mcwdsi/rt2reflector",
+    "firstCommitDate": "2024-10-31T18:39:45Z",
+    "lastCommitDate": "2024-10-31T18:39:45Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "hoganwr"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-12-14T20:55:19Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "a Neo4J based implementation of Referent Tracking",
+    "name": "RTDB-Neo4J",
+    "updatedAt": "2024-06-07T15:00:05Z",
+    "url": "https://github.com/mcwdsi/RTDB-Neo4J",
+    "firstCommitDate": "2024-06-07T14:59:59Z",
+    "lastCommitDate": "2024-06-07T14:59:59Z",
+    "topContributors": [
+      {
+        "contributions": 53,
+        "login": "hoganwr"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-01-02T14:29:14Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Core referent tracking fundamentals",
+    "name": "rts_core",
+    "updatedAt": "2024-06-26T17:51:50Z",
+    "url": "https://github.com/mcwdsi/rts_core",
+    "firstCommitDate": "2024-06-26T17:51:46Z",
+    "lastCommitDate": "2024-06-26T17:51:46Z",
+    "topContributors": [
+      {
+        "contributions": 83,
+        "login": "hoganwr"
+      },
+      {
+        "contributions": 3,
+        "login": "dillerm"
+      },
+      {
+        "contributions": 1,
+        "login": "gt-hub"
+      },
+      {
+        "contributions": 1,
+        "login": "mrw8"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-04-24T19:04:47Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "This contains the materials used to validate the OMRSE represenation of social identities.",
+    "name": "socid",
+    "updatedAt": "2023-10-05T19:20:12Z",
+    "url": "https://github.com/mcwdsi/socid",
+    "firstCommitDate": "2016-05-05T17:10:20Z",
+    "lastCommitDate": "2016-05-05T17:10:20Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "aellenhicks"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-05-05T17:32:08Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "synthia-rdf-converter",
+    "updatedAt": "2023-10-05T19:19:27Z",
+    "url": "https://github.com/mcwdsi/synthia-rdf-converter",
+    "firstCommitDate": "2016-07-27T17:59:39Z",
+    "lastCommitDate": "2016-07-27T17:59:39Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "hoganwr"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-06-26T16:27:50Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A representation of temporal relations as OWL object properties",
+    "name": "temporal-extension-ontology",
+    "updatedAt": "2023-10-05T19:20:58Z",
+    "url": "https://github.com/mcwdsi/temporal-extension-ontology",
+    "firstCommitDate": "2015-06-26T16:28:44Z",
+    "lastCommitDate": "2015-06-26T16:28:44Z",
+    "topContributors": []
+  }
+]

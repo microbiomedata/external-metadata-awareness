@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-11-23T16:48:44Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "apollo-log-scraper",
+  "updatedAt": "2016-11-23T16:48:46Z",
+  "url": "https://github.com/berkeleybop/apollo-log-scraper",
+  "firstCommitDate": "2016-11-23T16:25:35Z",
+  "lastCommitDate": "2016-11-23T16:25:35Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "nathandunn"
+    }
+  ]
+}

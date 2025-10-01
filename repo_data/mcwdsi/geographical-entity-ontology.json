@@ -1,0 +1,34 @@
+{
+  "createdAt": "2015-06-25T13:45:43Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "An ontology and inventory of geopolitical entities (such as sovereign states and their administrative subdivisions) as well as various geographical regions (including but not limited to the specific ones over which the governments have jurisdiction)",
+  "name": "geographical-entity-ontology",
+  "updatedAt": "2025-08-10T05:52:44Z",
+  "url": "https://github.com/mcwdsi/geographical-entity-ontology",
+  "firstCommitDate": "2025-02-07T15:07:39Z",
+  "lastCommitDate": "2025-02-07T15:07:39Z",
+  "topContributors": [
+    {
+      "contributions": 81,
+      "login": "hoganwr"
+    },
+    {
+      "contributions": 23,
+      "login": "dillerm"
+    },
+    {
+      "contributions": 4,
+      "login": "aellenhicks"
+    },
+    {
+      "contributions": 2,
+      "login": "Sohj"
+    },
+    {
+      "contributions": 1,
+      "login": "cthoyt"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-06-26T14:03:41Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "galaxy-monarch-curl",
+  "updatedAt": "2016-06-26T14:03:42Z",
+  "url": "https://github.com/berkeleybop/galaxy-monarch-curl",
+  "firstCommitDate": "2016-12-05T19:36:41Z",
+  "lastCommitDate": "2016-12-05T19:36:41Z",
+  "topContributors": [
+    {
+      "contributions": 65,
+      "login": "nathandunn"
+    }
+  ]
+}

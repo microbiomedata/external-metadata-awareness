@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-04-25T06:03:26Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "mondo-curation-analysis",
+  "updatedAt": "2025-01-18T01:54:03Z",
+  "url": "https://github.com/monarch-initiative/mondo-curation-analysis",
+  "firstCommitDate": "2025-01-18T01:54:00Z",
+  "lastCommitDate": "2025-01-18T01:54:00Z",
+  "topContributors": [
+    {
+      "contributions": 28,
+      "login": "twhetzel"
+    }
+  ]
+}

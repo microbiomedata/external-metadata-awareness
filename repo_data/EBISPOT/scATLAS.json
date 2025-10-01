@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-03-13T11:32:57Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Single Cell Atlas Ontology",
+  "name": "scATLAS",
+  "updatedAt": "2023-01-28T16:06:29Z",
+  "url": "https://github.com/EBISPOT/scATLAS",
+  "firstCommitDate": "2019-03-13T12:10:41Z",
+  "lastCommitDate": "2019-03-13T12:10:41Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "S2Ola"
+    }
+  ]
+}

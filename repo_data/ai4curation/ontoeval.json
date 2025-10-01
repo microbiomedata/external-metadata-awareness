@@ -1,0 +1,26 @@
+{
+  "createdAt": "2025-06-12T22:53:02Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Generates and runs evaluation benchmarks for ontology changes",
+  "name": "ontoeval",
+  "updatedAt": "2025-07-14T15:21:43Z",
+  "url": "https://github.com/ai4curation/ontoeval",
+  "firstCommitDate": "2025-07-08T01:00:22Z",
+  "lastCommitDate": "2025-07-08T01:00:22Z",
+  "topContributors": [
+    {
+      "contributions": 76,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 9,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "nlharris"
+    }
+  ]
+}

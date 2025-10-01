@@ -1,0 +1,46 @@
+{
+  "createdAt": "2022-02-25T20:25:20Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A template for LinkML projects using poetry and gen-project",
+  "name": "linkml-project-template",
+  "updatedAt": "2023-01-27T21:09:53Z",
+  "url": "https://github.com/linkml/linkml-project-template",
+  "firstCommitDate": "2022-09-16T21:02:03Z",
+  "lastCommitDate": "2022-09-16T21:02:03Z",
+  "topContributors": [
+    {
+      "contributions": 21,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 17,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 14,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 13,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 12,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 3,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 2,
+      "login": "bpow"
+    },
+    {
+      "contributions": 2,
+      "login": "StroemPhi"
+    }
+  ]
+}

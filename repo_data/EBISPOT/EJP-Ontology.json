@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-07-10T10:53:51Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "An ontological model for describing resources for  Rare Diseases catalogs including registries, biobanks, research infrastructures, genomes-phenome repositories, method standards, etc.  ",
+  "name": "EJP-Ontology",
+  "updatedAt": "2020-03-31T21:53:00Z",
+  "url": "https://github.com/EBISPOT/EJP-Ontology",
+  "firstCommitDate": "2020-03-31T21:48:46Z",
+  "lastCommitDate": "2020-03-31T21:48:46Z",
+  "topContributors": [
+    {
+      "contributions": 55,
+      "login": "S2Ola"
+    }
+  ]
+}

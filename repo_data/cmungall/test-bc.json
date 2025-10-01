@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-09-07T01:17:10Z",
+  "defaultBranchRef": {
+    "name": "gh-pages"
+  },
+  "description": "",
+  "name": "test-bc",
+  "updatedAt": "2016-09-07T01:21:27Z",
+  "url": "https://github.com/cmungall/test-bc",
+  "firstCommitDate": "2016-09-07T02:37:57Z",
+  "lastCommitDate": "2016-09-07T02:37:57Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-04-10T17:49:53Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A subset of the MIxS specification that's self-documenting and DataHarmonizer compatible. Comes with valid and invalid data examples. Subset = all checklists and all environmental packages, but partial combinations.",
+  "name": "mixs-subset-examples-first",
+  "updatedAt": "2024-08-16T16:08:45Z",
+  "url": "https://github.com/turbomam/mixs-subset-examples-first",
+  "firstCommitDate": "2023-05-16T15:33:48Z",
+  "lastCommitDate": "2023-05-16T15:33:48Z",
+  "topContributors": [
+    {
+      "contributions": 90,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 1,
+      "login": "only1chunts"
+    }
+  ]
+}

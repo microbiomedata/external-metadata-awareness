@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-11-20T02:28:24Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "sparql templates for linkml (alpha)",
+  "name": "sparqlfun",
+  "updatedAt": "2025-07-25T11:11:07Z",
+  "url": "https://github.com/linkml/sparqlfun",
+  "firstCommitDate": "2022-04-30T00:09:41Z",
+  "lastCommitDate": "2022-04-30T00:09:41Z",
+  "topContributors": [
+    {
+      "contributions": 25,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 6,
+      "login": "sujaypatil96"
+    }
+  ]
+}

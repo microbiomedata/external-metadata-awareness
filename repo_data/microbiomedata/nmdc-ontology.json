@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-05-03T23:39:07Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "nmdc-ontology",
+  "updatedAt": "2024-04-04T13:43:54Z",
+  "url": "https://github.com/microbiomedata/nmdc-ontology",
+  "firstCommitDate": "2024-04-04T13:43:48Z",
+  "lastCommitDate": "2024-04-04T13:43:48Z",
+  "topContributors": [
+    {
+      "contributions": 146,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 76,
+      "login": "turbomam"
+    }
+  ]
+}

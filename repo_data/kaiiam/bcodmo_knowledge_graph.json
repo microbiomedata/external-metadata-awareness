@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-01-31T10:13:46Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Experimenting with a knowledge graph for BCODMO",
+  "name": "bcodmo_knowledge_graph",
+  "updatedAt": "2023-04-22T16:23:31Z",
+  "url": "https://github.com/kaiiam/bcodmo_knowledge_graph",
+  "firstCommitDate": "2022-02-16T11:58:01Z",
+  "lastCommitDate": "2022-02-16T11:58:01Z",
+  "topContributors": [
+    {
+      "contributions": 10,
+      "login": "kaiiam"
+    }
+  ]
+}

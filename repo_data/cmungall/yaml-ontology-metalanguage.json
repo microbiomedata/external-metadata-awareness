@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-12-06T04:11:59Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A YAML syntax for OWL that adds MetaClasses (Design Patterns)",
+  "name": "yaml-ontology-metalanguage",
+  "updatedAt": "2022-03-06T20:24:41Z",
+  "url": "https://github.com/cmungall/yaml-ontology-metalanguage",
+  "firstCommitDate": "2016-04-09T18:00:19Z",
+  "lastCommitDate": "2016-04-09T18:00:19Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "cmungall"
+    }
+  ]
+}

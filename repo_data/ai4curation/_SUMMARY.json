@@ -1,0 +1,391 @@
+[
+  {
+    "createdAt": "2025-04-01T03:52:18Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Monarch agent tutorial",
+    "name": "agent-tutorial",
+    "updatedAt": "2025-07-11T02:41:38Z",
+    "url": "https://github.com/ai4curation/agent-tutorial",
+    "firstCommitDate": "2025-04-15T20:17:57Z",
+    "lastCommitDate": "2025-04-15T20:17:57Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-08-11T18:21:00Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "EXPERIMENTAL repo",
+    "name": "ai-gene-curation",
+    "updatedAt": "2025-09-02T15:25:46Z",
+    "url": "https://github.com/ai4curation/ai-gene-curation",
+    "firstCommitDate": "2025-08-11T18:23:31Z",
+    "lastCommitDate": "2025-08-11T18:23:31Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-08-27T01:27:09Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Demonstration of AI review of existing functional annotations",
+    "name": "ai-gene-review",
+    "updatedAt": "2025-09-24T03:14:43Z",
+    "url": "https://github.com/ai4curation/ai-gene-review",
+    "firstCommitDate": "2025-09-24T03:14:25Z",
+    "lastCommitDate": "2025-09-24T03:14:25Z",
+    "topContributors": [
+      {
+        "contributions": 27,
+        "login": "dragon-ai-agent"
+      },
+      {
+        "contributions": 5,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-06-04T23:24:02Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "GitHub action for detecting AI mentions",
+    "name": "ai-mention-detector-action",
+    "updatedAt": "2025-06-04T23:27:42Z",
+    "url": "https://github.com/ai4curation/ai-mention-detector-action",
+    "firstCommitDate": "2025-06-04T23:27:40Z",
+    "lastCommitDate": "2025-06-04T23:27:40Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-06-05T19:26:21Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "ai-ontology-tutorial",
+    "updatedAt": "2025-06-05T19:26:57Z",
+    "url": "https://github.com/ai4curation/ai-ontology-tutorial",
+    "firstCommitDate": "2025-06-05T19:26:54Z",
+    "lastCommitDate": "2025-06-05T19:26:54Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-06-04T23:17:03Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "main web page",
+    "name": "ai4curation.github.io",
+    "updatedAt": "2025-06-05T02:15:19Z",
+    "url": "https://github.com/ai4curation/ai4curation.github.io",
+    "firstCommitDate": "2025-06-05T02:15:09Z",
+    "lastCommitDate": "2025-06-05T02:15:09Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-06-05T02:02:30Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "aidocs",
+    "updatedAt": "2025-09-23T13:49:25Z",
+    "url": "https://github.com/ai4curation/aidocs",
+    "firstCommitDate": "2025-09-13T00:02:52Z",
+    "lastCommitDate": "2025-09-13T00:02:52Z",
+    "topContributors": [
+      {
+        "contributions": 51,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 5,
+        "login": "claude[bot]"
+      },
+      {
+        "contributions": 5,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 4,
+        "login": "kltm"
+      },
+      {
+        "contributions": 3,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 1,
+        "login": "sagehrke"
+      },
+      {
+        "contributions": 1,
+        "login": "google-labs-jules[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-08-15T23:42:49Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Copier template for adding AI integrations to a GH repo",
+    "name": "github-ai-integrations",
+    "updatedAt": "2025-09-07T15:11:45Z",
+    "url": "https://github.com/ai4curation/github-ai-integrations",
+    "firstCommitDate": "2025-09-07T15:11:39Z",
+    "lastCommitDate": "2025-09-07T15:11:39Z",
+    "topContributors": [
+      {
+        "contributions": 16,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 2,
+        "login": "claude[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-07-02T02:56:23Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "github action to trigger goose linkml agent",
+    "name": "goose-ai-linkml-action",
+    "updatedAt": "2025-07-02T03:56:43Z",
+    "url": "https://github.com/ai4curation/goose-ai-linkml-action",
+    "firstCommitDate": "2025-07-02T03:56:37Z",
+    "lastCommitDate": "2025-07-02T03:56:37Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-06-04T23:22:29Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "GitHub action for running goose over obo format repos",
+    "name": "goose-ai-obo-action",
+    "updatedAt": "2025-07-01T05:04:20Z",
+    "url": "https://github.com/ai4curation/goose-ai-obo-action",
+    "firstCommitDate": "2025-06-04T23:22:54Z",
+    "lastCommitDate": "2025-06-04T23:22:54Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-07-11T19:58:11Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Wrapper for multiple AI coders (goose, claude code, codex)",
+    "name": "metacoder",
+    "updatedAt": "2025-09-17T11:45:08Z",
+    "url": "https://github.com/ai4curation/metacoder",
+    "firstCommitDate": "2025-09-15T17:31:54Z",
+    "lastCommitDate": "2025-09-15T17:31:54Z",
+    "topContributors": [
+      {
+        "contributions": 19,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 3,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 2,
+        "login": "google-labs-jules[bot]"
+      },
+      {
+        "contributions": 1,
+        "login": "claude[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-06-09T01:30:41Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "The Ontology for Biomedical Investigations (forked for tutorial purposes)",
+    "name": "obi-tutorial",
+    "updatedAt": "2025-06-09T01:34:58Z",
+    "url": "https://github.com/ai4curation/obi-tutorial",
+    "firstCommitDate": "2025-06-09T01:34:53Z",
+    "lastCommitDate": "2025-06-09T01:34:53Z",
+    "topContributors": [
+      {
+        "contributions": 909,
+        "login": "jamesaoverton"
+      },
+      {
+        "contributions": 182,
+        "login": "sebastianduesing"
+      },
+      {
+        "contributions": 49,
+        "login": "beckyjackson"
+      },
+      {
+        "contributions": 33,
+        "login": "cstoeckert"
+      },
+      {
+        "contributions": 32,
+        "login": "adbartni"
+      },
+      {
+        "contributions": 29,
+        "login": "johnwjudkins"
+      },
+      {
+        "contributions": 27,
+        "login": "zhengj2007"
+      },
+      {
+        "contributions": 27,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 25,
+        "login": "DanBerrios"
+      },
+      {
+        "contributions": 15,
+        "login": "Daniel-Olson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-04-24T17:05:40Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Extension of ODK for AI coding",
+    "name": "odk-ai",
+    "updatedAt": "2025-06-05T21:11:00Z",
+    "url": "https://github.com/ai4curation/odk-ai",
+    "firstCommitDate": "2025-06-04T23:51:28Z",
+    "lastCommitDate": "2025-06-04T23:51:28Z",
+    "topContributors": [
+      {
+        "contributions": 23,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-06-12T22:53:58Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Results for running agents on ontoeval benchmarks",
+    "name": "ontodiff-curator",
+    "updatedAt": "2025-06-12T22:53:58Z",
+    "url": "https://github.com/ai4curation/ontodiff-curator",
+    "firstCommitDate": "2024-09-05T15:38:43Z",
+    "lastCommitDate": "2024-09-05T15:38:43Z",
+    "topContributors": [
+      {
+        "contributions": 61,
+        "login": "hrshdhgd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-06-12T22:53:02Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Generates and runs evaluation benchmarks for ontology changes",
+    "name": "ontoeval",
+    "updatedAt": "2025-07-14T15:21:43Z",
+    "url": "https://github.com/ai4curation/ontoeval",
+    "firstCommitDate": "2025-07-08T01:00:22Z",
+    "lastCommitDate": "2025-07-08T01:00:22Z",
+    "topContributors": [
+      {
+        "contributions": 76,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 9,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "nlharris"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-05-15T21:08:54Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "MCP server for OWL applications",
+    "name": "owl-mcp",
+    "updatedAt": "2025-08-19T19:36:30Z",
+    "url": "https://github.com/ai4curation/owl-mcp",
+    "firstCommitDate": "2025-06-05T00:44:53Z",
+    "lastCommitDate": "2025-06-05T00:44:53Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2025-06-09T00:25:00Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A model context protocol server for working with robot OWL templates",
+    "name": "robot-mcp",
+    "updatedAt": "2025-06-09T00:27:37Z",
+    "url": "https://github.com/ai4curation/robot-mcp",
+    "firstCommitDate": "2025-06-09T00:27:31Z",
+    "lastCommitDate": "2025-06-09T00:27:31Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "cmungall"
+      }
+    ]
+  }
+]

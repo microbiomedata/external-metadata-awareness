@@ -1,0 +1,26 @@
+{
+  "createdAt": "2010-10-08T18:57:15Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "AJAX Genome Browser",
+  "name": "jbrowse",
+  "updatedAt": "2016-03-14T20:27:10Z",
+  "url": "https://github.com/berkeleybop/jbrowse",
+  "firstCommitDate": "2013-09-12T11:51:58Z",
+  "lastCommitDate": "2013-09-12T11:51:58Z",
+  "topContributors": [
+    {
+      "contributions": 102,
+      "login": "GreggHelt2"
+    },
+    {
+      "contributions": 60,
+      "login": "rbuels"
+    },
+    {
+      "contributions": 9,
+      "login": "justaddcoffee"
+    }
+  ]
+}

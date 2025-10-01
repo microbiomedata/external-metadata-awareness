@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-09-15T20:33:40Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "tools for ingesting GOLD metadata (Biosamples, Studies, Projects) into MongoDB and flattening into something like DuckDB or Parquet. Adds some semantic realignment.",
+  "name": "gold-tools",
+  "updatedAt": "2025-09-16T18:34:08Z",
+  "url": "https://github.com/contextualizer-ai/gold-tools",
+  "firstCommitDate": "2025-09-16T18:33:59Z",
+  "lastCommitDate": "2025-09-16T18:33:59Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "turbomam"
+    }
+  ]
+}

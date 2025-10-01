@@ -1,0 +1,12 @@
+{
+  "createdAt": "2012-04-19T13:09:07Z",
+  "defaultBranchRef": {
+    "name": ""
+  },
+  "description": "Rhino Ontology Generation Engine",
+  "name": "roge-name",
+  "updatedAt": "2013-01-08T19:35:40Z",
+  "url": "https://github.com/cmungall/roge-name",
+  "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+  "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+}

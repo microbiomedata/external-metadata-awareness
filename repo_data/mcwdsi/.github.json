@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-10-06T13:28:21Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "MCW DSI overview",
+  "name": ".github",
+  "updatedAt": "2023-10-06T13:28:21Z",
+  "url": "https://github.com/mcwdsi/.github",
+  "firstCommitDate": "2023-10-06T18:46:06Z",
+  "lastCommitDate": "2023-10-06T18:46:06Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "hoganwr"
+    }
+  ]
+}

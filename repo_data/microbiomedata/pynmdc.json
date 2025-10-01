@@ -1,0 +1,38 @@
+{
+  "createdAt": "2020-12-18T21:48:38Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Python library and tools to work on NMDC data.",
+  "name": "pynmdc",
+  "updatedAt": "2022-02-15T18:11:18Z",
+  "url": "https://github.com/microbiomedata/pynmdc",
+  "firstCommitDate": "2022-03-18T20:22:33Z",
+  "lastCommitDate": "2022-03-18T20:22:33Z",
+  "topContributors": [
+    {
+      "contributions": 44,
+      "login": "hubin-keio"
+    },
+    {
+      "contributions": 8,
+      "login": "deepakunni3"
+    },
+    {
+      "contributions": 3,
+      "login": "dwinston"
+    },
+    {
+      "contributions": 3,
+      "login": "mshakya"
+    },
+    {
+      "contributions": 2,
+      "login": "poeli"
+    },
+    {
+      "contributions": 1,
+      "login": "chienchi"
+    }
+  ]
+}

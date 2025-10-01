@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-11-29T16:19:53Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A resting place for the MAMO ontology that is no longer maintained.",
+  "name": "mamo",
+  "updatedAt": "2023-11-29T16:19:53Z",
+  "url": "https://github.com/EBISPOT/mamo",
+  "firstCommitDate": "2023-11-29T16:40:47Z",
+  "lastCommitDate": "2023-11-29T16:40:47Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "henrietteharmse"
+    }
+  ]
+}

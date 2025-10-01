@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-09-16T23:49:04Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Start porting RAL to Pytorch/Tensorflow/MXNet, probably Pytorch. MVP would be nice, context for why it’s harder is ok, do awesome",
+  "name": "ralogic",
+  "updatedAt": "2019-10-01T20:33:20Z",
+  "url": "https://github.com/rsc3/ralogic",
+  "firstCommitDate": "2019-10-01T20:33:18Z",
+  "lastCommitDate": "2019-10-01T20:33:18Z",
+  "topContributors": [
+    {
+      "contributions": 17,
+      "login": "rsc3"
+    }
+  ]
+}

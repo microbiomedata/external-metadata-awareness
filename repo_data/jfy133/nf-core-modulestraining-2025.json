@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-03-21T21:14:45Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Slides with condensed version of nf-core modules training on nf-core website",
+  "name": "nf-core-modulestraining-2025",
+  "updatedAt": "2025-03-21T21:18:29Z",
+  "url": "https://github.com/jfy133/nf-core-modulestraining-2025",
+  "firstCommitDate": "2025-03-21T21:16:02Z",
+  "lastCommitDate": "2025-03-21T21:16:02Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "jfy133"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-03-25T20:07:09Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "verificado",
+  "updatedAt": "2024-06-12T13:46:49Z",
+  "url": "https://github.com/INCATools/verificado",
+  "firstCommitDate": "2024-06-12T13:46:45Z",
+  "lastCommitDate": "2024-06-12T13:46:45Z",
+  "topContributors": [
+    {
+      "contributions": 18,
+      "login": "anitacaron"
+    }
+  ]
+}

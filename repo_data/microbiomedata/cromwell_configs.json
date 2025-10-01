@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-08-29T18:16:45Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "cromwell_configs",
+  "updatedAt": "2021-10-26T20:36:29Z",
+  "url": "https://github.com/microbiomedata/cromwell_configs",
+  "firstCommitDate": "2021-10-26T20:35:51Z",
+  "lastCommitDate": "2021-10-26T20:35:51Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "scanon"
+    }
+  ]
+}

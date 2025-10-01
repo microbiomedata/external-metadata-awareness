@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-03-10T02:19:04Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "blast sequences to get ids of the taxon. gene, etc.",
+  "name": "seq2ids",
+  "updatedAt": "2022-06-06T22:43:14Z",
+  "url": "https://github.com/turbomam/seq2ids",
+  "firstCommitDate": "2022-07-05T13:51:42Z",
+  "lastCommitDate": "2022-07-05T13:51:42Z",
+  "topContributors": [
+    {
+      "contributions": 46,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 10,
+      "login": "sujaypatil96"
+    }
+  ]
+}

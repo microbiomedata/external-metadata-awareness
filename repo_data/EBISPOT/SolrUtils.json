@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-08-21T05:57:35Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Miscellaneous solr utils",
+  "name": "SolrUtils",
+  "updatedAt": "2024-08-30T11:31:01Z",
+  "url": "https://github.com/EBISPOT/SolrUtils",
+  "firstCommitDate": "2024-08-30T11:30:52Z",
+  "lastCommitDate": "2024-08-30T11:30:52Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "henrietteharmse"
+    }
+  ]
+}

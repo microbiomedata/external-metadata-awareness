@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-08-24T00:16:04Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "skos2obo",
+  "updatedAt": "2015-08-24T00:16:23Z",
+  "url": "https://github.com/cmungall/skos2obo",
+  "firstCommitDate": "2015-08-24T00:15:39Z",
+  "lastCommitDate": "2015-08-24T00:15:39Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

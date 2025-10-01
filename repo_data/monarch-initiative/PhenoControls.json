@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-02-23T18:00:18Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Java FX UI elements for HPO applications",
+  "name": "PhenoControls",
+  "updatedAt": "2024-02-23T18:05:25Z",
+  "url": "https://github.com/monarch-initiative/PhenoControls",
+  "firstCommitDate": "2024-02-23T18:02:47Z",
+  "lastCommitDate": "2024-02-23T18:02:47Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "ielis"
+    }
+  ]
+}

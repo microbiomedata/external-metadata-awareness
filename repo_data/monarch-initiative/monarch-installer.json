@@ -1,0 +1,22 @@
+{
+  "createdAt": "2014-08-05T21:57:32Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Installer for running Monarch system locally",
+  "name": "monarch-installer",
+  "updatedAt": "2014-08-05T21:57:32Z",
+  "url": "https://github.com/monarch-initiative/monarch-installer",
+  "firstCommitDate": "2014-11-17T17:26:34Z",
+  "lastCommitDate": "2014-11-17T17:26:34Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "harryhoch"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2025-03-20T21:56:16Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A Microbial Ontology of Phenotypic and Metabolic Characters, Assays, and Culture Media Found in Prokaryotic Taxonomic Descriptions",
+  "name": "MicrO",
+  "updatedAt": "2025-03-21T15:32:11Z",
+  "url": "https://github.com/turbomam/MicrO",
+  "firstCommitDate": "2025-03-21T15:32:05Z",
+  "lastCommitDate": "2025-03-21T15:32:05Z",
+  "topContributors": [
+    {
+      "contributions": 141,
+      "login": "carrineblank"
+    },
+    {
+      "contributions": 8,
+      "login": "turbomam"
+    }
+  ]
+}

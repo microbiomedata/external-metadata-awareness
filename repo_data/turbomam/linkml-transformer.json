@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-03-01T14:30:04Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "ALPHA data model mapping with linkml",
+  "name": "linkml-transformer",
+  "updatedAt": "2024-08-16T16:15:48Z",
+  "url": "https://github.com/turbomam/linkml-transformer",
+  "firstCommitDate": "2023-02-07T21:02:50Z",
+  "lastCommitDate": "2023-02-07T21:02:50Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "cmungall"
+    }
+  ]
+}

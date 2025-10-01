@@ -1,0 +1,54 @@
+{
+  "createdAt": "2017-06-05T12:15:00Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Github repo for the Experimental Factor Ontology (EFO)",
+  "name": "efo",
+  "updatedAt": "2025-09-26T13:08:16Z",
+  "url": "https://github.com/EBISPOT/efo",
+  "firstCommitDate": "2025-09-26T13:08:11Z",
+  "lastCommitDate": "2025-09-26T13:08:11Z",
+  "topContributors": [
+    {
+      "contributions": 1244,
+      "login": "zoependlington"
+    },
+    {
+      "contributions": 274,
+      "login": "twhetzel"
+    },
+    {
+      "contributions": 244,
+      "login": "ar-ibrahim"
+    },
+    {
+      "contributions": 237,
+      "login": "paolaroncaglia"
+    },
+    {
+      "contributions": 188,
+      "login": "kallia-p"
+    },
+    {
+      "contributions": 75,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 71,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 63,
+      "login": "daniwelter"
+    },
+    {
+      "contributions": 47,
+      "login": "siiraa"
+    },
+    {
+      "contributions": 24,
+      "login": "aleixpuigb"
+    }
+  ]
+}

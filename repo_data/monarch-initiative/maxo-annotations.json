@@ -1,0 +1,22 @@
+{
+  "createdAt": "2020-01-12T15:26:23Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Annotations to terms of the Medical Action Ontology (MAxO)",
+  "name": "maxo-annotations",
+  "updatedAt": "2025-08-17T11:49:05Z",
+  "url": "https://github.com/monarch-initiative/maxo-annotations",
+  "firstCommitDate": "2025-08-17T11:48:58Z",
+  "lastCommitDate": "2025-08-17T11:48:58Z",
+  "topContributors": [
+    {
+      "contributions": 33,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 2,
+      "login": "iimpulse"
+    }
+  ]
+}

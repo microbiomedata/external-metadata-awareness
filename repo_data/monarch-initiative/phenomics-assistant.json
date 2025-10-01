@@ -1,0 +1,26 @@
+{
+  "createdAt": "2023-08-27T02:39:22Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "LLM retrieval augmented generation agent for the Monarch Knowledge graph.",
+  "name": "phenomics-assistant",
+  "updatedAt": "2025-09-15T15:56:31Z",
+  "url": "https://github.com/monarch-initiative/phenomics-assistant",
+  "firstCommitDate": "2025-01-14T19:24:20Z",
+  "lastCommitDate": "2025-01-14T19:24:20Z",
+  "topContributors": [
+    {
+      "contributions": 47,
+      "login": "oneilsh"
+    },
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "nlharris"
+    }
+  ]
+}

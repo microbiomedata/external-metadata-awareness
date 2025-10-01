@@ -1,0 +1,22 @@
+{
+  "createdAt": "2015-10-07T23:18:23Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Ontology describing the anatomy of Danio rerio from a single cell to adult fish. The namespace of the ontology is zebrafish_anatomical_ontology the prefix is ZFA. Updates to ZFA are released every other month. A subset of the ZFS http://purl.obolibrary.org/obo/zfs.obo is packaged with this ontology. ",
+  "name": "zebrafish-anatomical-ontology",
+  "updatedAt": "2015-04-15T23:29:01Z",
+  "url": "https://github.com/cmungall/zebrafish-anatomical-ontology",
+  "firstCommitDate": "2015-10-13T20:34:05Z",
+  "lastCommitDate": "2015-10-13T20:34:05Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "cerivs"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

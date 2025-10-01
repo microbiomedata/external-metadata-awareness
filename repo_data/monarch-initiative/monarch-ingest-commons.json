@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-03-25T20:47:17Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Shared resources for Monarch KG ingests",
+  "name": "monarch-ingest-commons",
+  "updatedAt": "2025-04-01T20:10:27Z",
+  "url": "https://github.com/monarch-initiative/monarch-ingest-commons",
+  "firstCommitDate": "2025-04-01T20:09:41Z",
+  "lastCommitDate": "2025-04-01T20:09:41Z",
+  "topContributors": [
+    {
+      "contributions": 12,
+      "login": "ptgolden"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2019-09-05T11:38:41Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "initial commit ",
+  "name": "REST_to_RDF",
+  "updatedAt": "2019-09-05T11:38:43Z",
+  "url": "https://github.com/cmungall/REST_to_RDF",
+  "firstCommitDate": "2019-09-05T08:09:10Z",
+  "lastCommitDate": "2019-09-05T08:09:10Z",
+  "topContributors": [
+    {
+      "contributions": 17,
+      "login": "LLTommy"
+    },
+    {
+      "contributions": 1,
+      "login": "yamadaissaku"
+    }
+  ]
+}

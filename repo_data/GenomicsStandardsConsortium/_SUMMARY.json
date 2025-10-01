@@ -1,0 +1,740 @@
+[
+  {
+    "createdAt": "2020-02-28T23:59:43Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Public repository for the GSC web site.",
+    "name": "gensc.github.io",
+    "updatedAt": "2025-09-17T09:51:16Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/gensc.github.io",
+    "firstCommitDate": "2025-09-17T09:51:11Z",
+    "lastCommitDate": "2025-09-17T09:51:11Z",
+    "topContributors": [
+      {
+        "contributions": 549,
+        "login": "only1chunts"
+      },
+      {
+        "contributions": 30,
+        "login": "ramonawalls"
+      },
+      {
+        "contributions": 21,
+        "login": "lschriml"
+      },
+      {
+        "contributions": 3,
+        "login": "folker"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-06-07T16:08:55Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Template for reporting kit/instrument data to GSC",
+    "name": "gsc_industry_ingest_template",
+    "updatedAt": "2019-06-07T16:11:41Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/gsc_industry_ingest_template",
+    "firstCommitDate": "2019-06-07T16:11:20Z",
+    "lastCommitDate": "2019-06-07T16:11:20Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "folker"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-03-25T15:28:48Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "The web site of the Genomics Standards Consortium",
+    "name": "gsc-website",
+    "updatedAt": "2023-01-28T15:37:07Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/gsc-website",
+    "firstCommitDate": "2020-02-29T00:08:42Z",
+    "lastCommitDate": "2020-02-29T00:08:42Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "folker"
+      },
+      {
+        "contributions": 1,
+        "login": "ramonawalls"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-06-13T13:47:45Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "GSC22 Meeting in Moorea conference website.",
+    "name": "GSC22-Moorea",
+    "updatedAt": "2022-01-10T22:10:06Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/GSC22-Moorea",
+    "firstCommitDate": "2022-09-09T20:52:43Z",
+    "lastCommitDate": "2022-09-09T20:52:43Z",
+    "topContributors": [
+      {
+        "contributions": 115,
+        "login": "only1chunts"
+      },
+      {
+        "contributions": 3,
+        "login": "dna-helix"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-09-09T19:32:38Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "GSC23 Meeting in Bangkok conference website.",
+    "name": "GSC23-Bangkok",
+    "updatedAt": "2023-06-30T13:53:20Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/GSC23-Bangkok",
+    "firstCommitDate": "2023-08-25T15:28:55Z",
+    "lastCommitDate": "2023-08-25T15:28:55Z",
+    "topContributors": [
+      {
+        "contributions": 352,
+        "login": "only1chunts"
+      },
+      {
+        "contributions": 3,
+        "login": "dna-helix"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-07-10T15:22:06Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "The 24th GSC meeting to be held in Tucson, Arizona, USA",
+    "name": "GSC24-Tucson",
+    "updatedAt": "2024-07-30T08:26:08Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/GSC24-Tucson",
+    "firstCommitDate": "2024-07-30T08:26:01Z",
+    "lastCommitDate": "2024-07-30T08:26:01Z",
+    "topContributors": [
+      {
+        "contributions": 131,
+        "login": "only1chunts"
+      },
+      {
+        "contributions": 24,
+        "login": "lschriml"
+      },
+      {
+        "contributions": 1,
+        "login": "TinaJAZ"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-09-18T13:22:02Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "The GSC25 meeting page",
+    "name": "GSC25-Cambridge",
+    "updatedAt": "2025-07-11T16:12:00Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/GSC25-Cambridge",
+    "firstCommitDate": "2025-07-11T16:11:54Z",
+    "lastCommitDate": "2025-07-11T16:11:54Z",
+    "topContributors": [
+      {
+        "contributions": 740,
+        "login": "daattali"
+      },
+      {
+        "contributions": 84,
+        "login": "only1chunts"
+      },
+      {
+        "contributions": 15,
+        "login": "OCram85"
+      },
+      {
+        "contributions": 15,
+        "login": "epwalsh"
+      },
+      {
+        "contributions": 13,
+        "login": "VincentTam"
+      },
+      {
+        "contributions": 12,
+        "login": "lexicalunit"
+      },
+      {
+        "contributions": 7,
+        "login": "gpotter2"
+      },
+      {
+        "contributions": 7,
+        "login": "eugenius1"
+      },
+      {
+        "contributions": 5,
+        "login": "abelcheung"
+      },
+      {
+        "contributions": 5,
+        "login": "jennydaman"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-05-23T12:46:15Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "The GSC26 annual meeting in Rotorua, NZ.",
+    "name": "GSC26-Rotorua",
+    "updatedAt": "2025-09-18T16:19:39Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/GSC26-Rotorua",
+    "firstCommitDate": "2025-09-18T16:19:33Z",
+    "lastCommitDate": "2025-09-18T16:19:33Z",
+    "topContributors": [
+      {
+        "contributions": 749,
+        "login": "daattali"
+      },
+      {
+        "contributions": 15,
+        "login": "OCram85"
+      },
+      {
+        "contributions": 15,
+        "login": "epwalsh"
+      },
+      {
+        "contributions": 14,
+        "login": "only1chunts"
+      },
+      {
+        "contributions": 13,
+        "login": "VincentTam"
+      },
+      {
+        "contributions": 12,
+        "login": "lexicalunit"
+      },
+      {
+        "contributions": 9,
+        "login": "lschriml"
+      },
+      {
+        "contributions": 7,
+        "login": "gpotter2"
+      },
+      {
+        "contributions": 7,
+        "login": "eugenius1"
+      },
+      {
+        "contributions": 5,
+        "login": "abelcheung"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-10-09T11:43:15Z",
+    "defaultBranchRef": {
+      "name": "gh-pages"
+    },
+    "description": "This repository contains information, methodology and some insights of the Island Sampling Day Crete project. ",
+    "name": "isd-crete-website",
+    "updatedAt": "2025-02-25T16:43:13Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/isd-crete-website",
+    "firstCommitDate": "2022-10-10T07:40:34Z",
+    "lastCommitDate": "2022-10-10T07:40:34Z",
+    "topContributors": [
+      {
+        "contributions": 669,
+        "login": "daattali"
+      },
+      {
+        "contributions": 31,
+        "login": "savvas-paragkamian"
+      },
+      {
+        "contributions": 15,
+        "login": "OCram85"
+      },
+      {
+        "contributions": 15,
+        "login": "epwalsh"
+      },
+      {
+        "contributions": 12,
+        "login": "VincentTam"
+      },
+      {
+        "contributions": 12,
+        "login": "lexicalunit"
+      },
+      {
+        "contributions": 7,
+        "login": "gpotter2"
+      },
+      {
+        "contributions": 7,
+        "login": "eugenius1"
+      },
+      {
+        "contributions": 5,
+        "login": "abelcheung"
+      },
+      {
+        "contributions": 5,
+        "login": "jennydaman"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-10-09T09:34:34Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "This repository contains scripts for the analysis of the Island Sampling Day of Crete 2016, a project of the soil microbiome.",
+    "name": "ISD",
+    "updatedAt": "2025-07-27T19:28:47Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/ISD",
+    "firstCommitDate": "2025-07-27T19:17:37Z",
+    "lastCommitDate": "2025-07-27T19:17:37Z",
+    "topContributors": [
+      {
+        "contributions": 59,
+        "login": "savvas-paragkamian"
+      },
+      {
+        "contributions": 20,
+        "login": "hariszaf"
+      },
+      {
+        "contributions": 13,
+        "login": "lschriml"
+      },
+      {
+        "contributions": 5,
+        "login": "evangelospafilis"
+      },
+      {
+        "contributions": 1,
+        "login": "jbholm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-05-24T11:12:36Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Minimum Information for any Observatory",
+    "name": "mixo",
+    "updatedAt": "2019-05-24T11:12:41Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/mixo",
+    "firstCommitDate": "2019-05-24T11:12:38Z",
+    "lastCommitDate": "2019-05-24T11:12:38Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "ramonawalls"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-10-04T13:20:48Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "MIxS 6.2 schema, from GenomicsStandardsConsortium/mixs6.2_release_candidate. Ready for merge into GenomicsStandardsConsortium/mixs",
+    "name": "mixs-6-2-for-merge",
+    "updatedAt": "2023-10-16T17:21:42Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge",
+    "firstCommitDate": "2023-10-17T14:13:11Z",
+    "lastCommitDate": "2023-10-17T14:13:11Z",
+    "topContributors": [
+      {
+        "contributions": 63,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 50,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 36,
+        "login": "ramonawalls"
+      },
+      {
+        "contributions": 13,
+        "login": "folker"
+      },
+      {
+        "contributions": 10,
+        "login": "renzok"
+      },
+      {
+        "contributions": 8,
+        "login": "only1chunts"
+      },
+      {
+        "contributions": 8,
+        "login": "lschriml"
+      },
+      {
+        "contributions": 2,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 2,
+        "login": "genomicstandardsconsortium"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-03-25T15:12:32Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Spreadsheet formatted MIxS standard template",
+    "name": "mixs-legacy",
+    "updatedAt": "2023-03-22T02:43:01Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/mixs-legacy",
+    "firstCommitDate": "2022-02-28T02:40:05Z",
+    "lastCommitDate": "2022-02-28T02:40:05Z",
+    "topContributors": [
+      {
+        "contributions": 19,
+        "login": "ramonawalls"
+      },
+      {
+        "contributions": 1,
+        "login": "folker"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-09-05T18:29:16Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "experimentation with formal representations of missing data",
+    "name": "mixs-missing-value-sandbox",
+    "updatedAt": "2024-09-13T15:14:35Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/mixs-missing-value-sandbox",
+    "firstCommitDate": "2024-09-13T15:14:31Z",
+    "lastCommitDate": "2024-09-13T15:14:31Z",
+    "topContributors": [
+      {
+        "contributions": 13,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-08-28T12:52:08Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Next generation MIxS implementation",
+    "name": "mixs-ng",
+    "updatedAt": "2021-05-10T23:26:53Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/mixs-ng",
+    "firstCommitDate": "2021-05-10T23:26:51Z",
+    "lastCommitDate": "2021-05-10T23:26:51Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "folker"
+      },
+      {
+        "contributions": 1,
+        "login": "ramonawalls"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-01-13T19:16:01Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "mixs-rdf",
+    "updatedAt": "2021-08-17T20:30:09Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/mixs-rdf",
+    "firstCommitDate": "2021-08-17T20:30:05Z",
+    "lastCommitDate": "2021-08-17T20:30:05Z",
+    "topContributors": [
+      {
+        "contributions": 33,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 4,
+        "login": "ramonawalls"
+      },
+      {
+        "contributions": 3,
+        "login": "folker"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-05-10T23:33:48Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "mixs-source",
+    "updatedAt": "2021-11-15T17:03:01Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/mixs-source",
+    "firstCommitDate": "2022-01-23T18:34:52Z",
+    "lastCommitDate": "2022-01-23T18:34:52Z",
+    "topContributors": [
+      {
+        "contributions": 25,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 18,
+        "login": "ramonawalls"
+      },
+      {
+        "contributions": 18,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 2,
+        "login": "only1chunts"
+      },
+      {
+        "contributions": 1,
+        "login": "actions-user"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-05-31T13:36:20Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Minimum Information about any (X) Sequence” (MIxS) specification",
+    "name": "mixs",
+    "updatedAt": "2025-09-24T00:51:36Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/mixs",
+    "firstCommitDate": "2025-09-15T08:24:20Z",
+    "lastCommitDate": "2025-09-15T08:24:20Z",
+    "topContributors": [
+      {
+        "contributions": 350,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 161,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 64,
+        "login": "ramonawalls"
+      },
+      {
+        "contributions": 54,
+        "login": "mslarae13"
+      },
+      {
+        "contributions": 18,
+        "login": "only1chunts"
+      },
+      {
+        "contributions": 17,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 14,
+        "login": "lschriml"
+      },
+      {
+        "contributions": 13,
+        "login": "folker"
+      },
+      {
+        "contributions": 13,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 10,
+        "login": "renzok"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-08-25T17:31:09Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Code repo for converting MIxS 6.1 XLSX to MIxS 6.2 YAML",
+    "name": "mixs6.2_release_candidate",
+    "updatedAt": "2023-10-16T17:19:58Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/mixs6.2_release_candidate",
+    "firstCommitDate": "2023-10-05T18:45:30Z",
+    "lastCommitDate": "2023-10-05T18:45:30Z",
+    "topContributors": [
+      {
+        "contributions": 114,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 47,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 36,
+        "login": "ramonawalls"
+      },
+      {
+        "contributions": 13,
+        "login": "folker"
+      },
+      {
+        "contributions": 10,
+        "login": "renzok"
+      },
+      {
+        "contributions": 8,
+        "login": "lschriml"
+      },
+      {
+        "contributions": 7,
+        "login": "only1chunts"
+      },
+      {
+        "contributions": 2,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 2,
+        "login": "genomicstandardsconsortium"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-10-19T13:47:57Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Proposed code to remove `recommended` assertions in `slot_usages` if `required` is set",
+    "name": "required-supersedes-recommended",
+    "updatedAt": "2024-10-08T18:51:14Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/required-supersedes-recommended",
+    "firstCommitDate": "2024-10-08T18:50:34Z",
+    "lastCommitDate": "2024-10-08T18:50:34Z",
+    "topContributors": [
+      {
+        "contributions": 192,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 140,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 38,
+        "login": "ramonawalls"
+      },
+      {
+        "contributions": 25,
+        "login": "mslarae13"
+      },
+      {
+        "contributions": 13,
+        "login": "folker"
+      },
+      {
+        "contributions": 13,
+        "login": "lschriml"
+      },
+      {
+        "contributions": 10,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 10,
+        "login": "renzok"
+      },
+      {
+        "contributions": 9,
+        "login": "only1chunts"
+      },
+      {
+        "contributions": 7,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-04-26T00:38:40Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Website source code for w3id.org",
+    "name": "w3id.org",
+    "updatedAt": "2022-04-12T15:31:44Z",
+    "url": "https://github.com/GenomicsStandardsConsortium/w3id.org",
+    "firstCommitDate": "2022-04-11T17:37:21Z",
+    "lastCommitDate": "2022-04-11T17:37:21Z",
+    "topContributors": [
+      {
+        "contributions": 1456,
+        "login": "dgarijo"
+      },
+      {
+        "contributions": 950,
+        "login": "davidlehn"
+      },
+      {
+        "contributions": 151,
+        "login": "jhaag75"
+      },
+      {
+        "contributions": 88,
+        "login": "msporny"
+      },
+      {
+        "contributions": 78,
+        "login": "rapw3k"
+      },
+      {
+        "contributions": 73,
+        "login": "luigi-asprino"
+      },
+      {
+        "contributions": 60,
+        "login": "markwilkinson"
+      },
+      {
+        "contributions": 59,
+        "login": "essepuntato"
+      },
+      {
+        "contributions": 52,
+        "login": "stain"
+      },
+      {
+        "contributions": 48,
+        "login": "tkuhn"
+      }
+    ]
+  }
+]

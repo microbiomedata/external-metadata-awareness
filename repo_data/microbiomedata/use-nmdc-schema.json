@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-12-16T16:28:30Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Reality checks from outside of the nmdc-schema repo",
+  "name": "use-nmdc-schema",
+  "updatedAt": "2022-12-16T16:57:48Z",
+  "url": "https://github.com/microbiomedata/use-nmdc-schema",
+  "firstCommitDate": "2023-09-21T19:44:00Z",
+  "lastCommitDate": "2023-09-21T19:44:00Z",
+  "topContributors": [
+    {
+      "contributions": 10,
+      "login": "turbomam"
+    }
+  ]
+}

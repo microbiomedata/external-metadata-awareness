@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-12-03T01:32:10Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Canton-S substrains in Buridan's paradigm",
+  "name": "cs_buri",
+  "updatedAt": "2015-12-03T01:32:19Z",
+  "url": "https://github.com/cmungall/cs_buri",
+  "firstCommitDate": "2015-01-27T15:28:03Z",
+  "lastCommitDate": "2015-01-27T15:28:03Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "brembs"
+    }
+  ]
+}

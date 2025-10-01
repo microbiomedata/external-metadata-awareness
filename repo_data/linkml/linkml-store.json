@@ -1,0 +1,34 @@
+{
+  "createdAt": "2024-04-06T01:28:43Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "wrapper for multiple linkml storage engines",
+  "name": "linkml-store",
+  "updatedAt": "2025-09-25T10:25:12Z",
+  "url": "https://github.com/linkml/linkml-store",
+  "firstCommitDate": "2025-07-25T22:40:13Z",
+  "lastCommitDate": "2025-07-25T22:40:13Z",
+  "topContributors": [
+    {
+      "contributions": 91,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 34,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 34,
+      "login": "linkmluser"
+    },
+    {
+      "contributions": 1,
+      "login": "maparent"
+    },
+    {
+      "contributions": 1,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

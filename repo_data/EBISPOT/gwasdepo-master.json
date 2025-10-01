@@ -1,0 +1,26 @@
+{
+  "createdAt": "2020-02-16T10:48:04Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "gwasdepo-master",
+  "updatedAt": "2025-04-29T10:41:31Z",
+  "url": "https://github.com/EBISPOT/gwasdepo-master",
+  "firstCommitDate": "2025-04-29T10:41:27Z",
+  "lastCommitDate": "2025-04-29T10:41:27Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "ala-ebi"
+    },
+    {
+      "contributions": 1,
+      "login": "jstewart-ebi"
+    },
+    {
+      "contributions": 1,
+      "login": "tudorgroza"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-11-05T21:35:12Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "READY TO USE. Reporting format for File-level Metadata uploaded to the ESS-DIVE repository",
+  "name": "essdive-file-level-metadata",
+  "updatedAt": "2021-11-09T01:12:06Z",
+  "url": "https://github.com/cmungall/essdive-file-level-metadata",
+  "firstCommitDate": "2021-11-09T01:11:59Z",
+  "lastCommitDate": "2021-11-09T01:11:59Z",
+  "topContributors": [
+    {
+      "contributions": 18,
+      "login": "tvelliquette"
+    },
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

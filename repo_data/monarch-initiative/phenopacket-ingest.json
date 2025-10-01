@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-03-25T03:10:17Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "This is a modular ingest for phenopackets into the Monarch KG",
+  "name": "phenopacket-ingest",
+  "updatedAt": "2025-06-17T02:10:55Z",
+  "url": "https://github.com/monarch-initiative/phenopacket-ingest",
+  "firstCommitDate": "2025-06-17T02:10:49Z",
+  "lastCommitDate": "2025-06-17T02:10:49Z",
+  "topContributors": [
+    {
+      "contributions": 29,
+      "login": "iQuxLE"
+    }
+  ]
+}

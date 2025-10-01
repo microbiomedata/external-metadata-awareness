@@ -1,0 +1,54 @@
+{
+  "createdAt": "2023-05-08T17:07:41Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Web-based interface to the NMDC EDGE platform",
+  "name": "nmdc-edge",
+  "updatedAt": "2025-09-25T00:39:24Z",
+  "url": "https://github.com/microbiomedata/nmdc-edge",
+  "firstCommitDate": "2025-09-25T00:39:18Z",
+  "lastCommitDate": "2025-09-25T00:39:18Z",
+  "topContributors": [
+    {
+      "contributions": 666,
+      "login": "mflynn-lanl"
+    },
+    {
+      "contributions": 135,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 70,
+      "login": "yxu-lanl"
+    },
+    {
+      "contributions": 64,
+      "login": "vlilanl"
+    },
+    {
+      "contributions": 28,
+      "login": "kaijli"
+    },
+    {
+      "contributions": 23,
+      "login": "chienchi"
+    },
+    {
+      "contributions": 7,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 7,
+      "login": "mshakya"
+    },
+    {
+      "contributions": 3,
+      "login": "AmitBinf"
+    },
+    {
+      "contributions": 1,
+      "login": "kkudish"
+    }
+  ]
+}

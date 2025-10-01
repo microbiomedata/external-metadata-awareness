@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-10-11T12:27:56Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "zooma2sssom",
+  "updatedAt": "2025-06-18T11:56:55Z",
+  "url": "https://github.com/EBISPOT/zooma2sssom",
+  "firstCommitDate": "2025-06-18T11:56:31Z",
+  "lastCommitDate": "2025-06-18T11:56:31Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "anitacaron"
+    },
+    {
+      "contributions": 1,
+      "login": "jamesamcl"
+    }
+  ]
+}

@@ -41,3 +41,37 @@ load-attributes-into-mongo: downloads/ncbi-biosample-attributes.xml
 		--node-type Attribute
 	date
 
+# Extract comprehensive package fields to TSV
+local/ncbi_packages_fields.tsv: downloads/ncbi-biosample-packages.xml
+	@date
+	@echo "Extracting comprehensive NCBI package fields to TSV..."
+	@mkdir -p local
+	$(RUN) extract-ncbi-packages-fields \
+		--xml-file $< \
+		--output-file $@
+	@date
+
+# Flatten packages collection directly in MongoDB
+flatten-packages-collection:
+	@date
+	@echo "Flattening packages collection directly in MongoDB..."
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/flatten_ncbi_packages.js \
+		--verbose
+	@date
+
+# Flatten attributes collection directly in MongoDB
+flatten-attributes-collection:
+	@date
+	@echo "Flattening attributes collection directly in MongoDB..."
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/flatten_ncbi_attributes.js \
+		--verbose
+	@date
+
+.PHONY: extract-package-fields flatten-packages-collection flatten-attributes-collection
+

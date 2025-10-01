@@ -1,0 +1,54 @@
+{
+  "createdAt": "2015-08-12T02:02:25Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Automatically exported from code.google.com/p/obo-foundry-operations-committee",
+  "name": "Operations-Committee-RETIRED",
+  "updatedAt": "2019-08-07T18:51:13Z",
+  "url": "https://github.com/OBOFoundry/Operations-Committee-RETIRED",
+  "firstCommitDate": "2015-07-06T15:45:05Z",
+  "lastCommitDate": "2015-07-06T15:45:05Z",
+  "topContributors": [
+    {
+      "contributions": 141,
+      "login": "mcourtot"
+    },
+    {
+      "contributions": 103,
+      "login": "ramonawalls"
+    },
+    {
+      "contributions": 18,
+      "login": "alanruttenberg"
+    },
+    {
+      "contributions": 8,
+      "login": "zhengj2007"
+    },
+    {
+      "contributions": 6,
+      "login": "proccaserra"
+    },
+    {
+      "contributions": 4,
+      "login": "batchelorc"
+    },
+    {
+      "contributions": 4,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 3,
+      "login": "bbopjenkins"
+    },
+    {
+      "contributions": 3,
+      "login": "cstoeckert"
+    },
+    {
+      "contributions": 2,
+      "login": "carlotorniai"
+    }
+  ]
+}

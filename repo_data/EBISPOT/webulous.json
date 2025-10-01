@@ -1,0 +1,30 @@
+{
+  "createdAt": "2015-03-16T17:50:37Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Web version of ontology creation tool Populous",
+  "name": "webulous",
+  "updatedAt": "2024-11-27T21:34:33Z",
+  "url": "https://github.com/EBISPOT/webulous",
+  "firstCommitDate": "2022-03-16T14:39:45Z",
+  "lastCommitDate": "2022-03-16T14:39:45Z",
+  "topContributors": [
+    {
+      "contributions": 70,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 29,
+      "login": "daniwelter"
+    },
+    {
+      "contributions": 9,
+      "login": "siiraa"
+    },
+    {
+      "contributions": 1,
+      "login": "henrietteharmse"
+    }
+  ]
+}

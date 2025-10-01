@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-03-11T01:59:21Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Notes on Knocean Practises",
+  "name": "practises",
+  "updatedAt": "2021-03-11T01:59:22Z",
+  "url": "https://github.com/cmungall/practises",
+  "firstCommitDate": "2021-02-26T18:40:15Z",
+  "lastCommitDate": "2021-02-26T18:40:15Z",
+  "topContributors": [
+    {
+      "contributions": 26,
+      "login": "jamesaoverton"
+    }
+  ]
+}

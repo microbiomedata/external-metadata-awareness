@@ -1,0 +1,26 @@
+{
+  "createdAt": "2024-04-16T09:54:11Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "This repo will be having common components used across multiple services",
+  "name": "gwas-data-commons",
+  "updatedAt": "2025-08-07T14:44:31Z",
+  "url": "https://github.com/EBISPOT/gwas-data-commons",
+  "firstCommitDate": "2025-08-07T14:44:26Z",
+  "lastCommitDate": "2025-08-07T14:44:26Z",
+  "topContributors": [
+    {
+      "contributions": 64,
+      "login": "sajo-ebi"
+    },
+    {
+      "contributions": 10,
+      "login": "ala-ebi"
+    },
+    {
+      "contributions": 10,
+      "login": "sprintell"
+    }
+  ]
+}

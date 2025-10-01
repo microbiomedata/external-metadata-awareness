@@ -1,0 +1,54 @@
+{
+  "createdAt": "2013-08-30T12:14:19Z",
+  "defaultBranchRef": {
+    "name": "dev"
+  },
+  "description": "ZOOMA - Optimal Ontology Mapping Application. http://www.ebi.ac.uk/spot/zooma.",
+  "name": "zooma",
+  "updatedAt": "2025-08-13T11:11:05Z",
+  "url": "https://github.com/EBISPOT/zooma",
+  "firstCommitDate": "2025-07-01T14:49:15Z",
+  "lastCommitDate": "2025-07-01T14:49:15Z",
+  "topContributors": [
+    {
+      "contributions": 532,
+      "login": "tburdett"
+    },
+    {
+      "contributions": 104,
+      "login": "olgavrou"
+    },
+    {
+      "contributions": 99,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 52,
+      "login": "ypriverol"
+    },
+    {
+      "contributions": 38,
+      "login": "jamesamcl"
+    },
+    {
+      "contributions": 30,
+      "login": "tschaka1904"
+    },
+    {
+      "contributions": 29,
+      "login": "Kerruba"
+    },
+    {
+      "contributions": 29,
+      "login": "henrietteharmse"
+    },
+    {
+      "contributions": 29,
+      "login": "CatherineLeroy"
+    },
+    {
+      "contributions": 27,
+      "login": "haideriqbal"
+    }
+  ]
+}

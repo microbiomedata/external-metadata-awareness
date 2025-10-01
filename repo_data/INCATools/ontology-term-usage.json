@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-11-10T21:52:40Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "determines how an ontology term has been used",
+  "name": "ontology-term-usage",
+  "updatedAt": "2024-03-18T15:13:21Z",
+  "url": "https://github.com/INCATools/ontology-term-usage",
+  "firstCommitDate": "2021-12-07T21:15:19Z",
+  "lastCommitDate": "2021-12-07T21:15:19Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "cmungall"
+    }
+  ]
+}

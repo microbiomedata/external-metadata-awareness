@@ -1,0 +1,26 @@
+{
+  "createdAt": "2019-01-07T14:58:22Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A plug-in for Protege that provides entry fields for standard OBO annotation properties",
+  "name": "protege-obo-plugin",
+  "updatedAt": "2019-01-07T14:58:24Z",
+  "url": "https://github.com/monarch-initiative/protege-obo-plugin",
+  "firstCommitDate": "2017-08-19T02:50:53Z",
+  "lastCommitDate": "2017-08-19T02:50:53Z",
+  "topContributors": [
+    {
+      "contributions": 18,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 2,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 1,
+      "login": "hdietze"
+    }
+  ]
+}

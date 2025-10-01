@@ -1,0 +1,555 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "_id",
+    "access",
+    "accession",
+    "Attributes",
+    "Description",
+    "id",
+    "Ids",
+    "last_update",
+    "Models",
+    "Owner",
+    "Package",
+    "publication_date",
+    "Status",
+    "submission_date"
+  ],
+  "properties": {
+    "_id": {
+      "$ref": "#/$defs/ObjectId"
+    },
+    "access": {
+      "type": "string"
+    },
+    "accession": {
+      "type": "string"
+    },
+    "Attributes": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "Attribute": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "attribute_name"
+            ],
+            "properties": {
+              "attribute_name": {
+                "type": "string"
+              },
+              "content": {
+                "type": "string"
+              },
+              "display_name": {
+                "type": "string"
+              },
+              "harmonized_name": {
+                "type": "string"
+              },
+              "unit": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Description": {
+      "type": "object",
+      "required": [
+        "Organism",
+        "Title"
+      ],
+      "properties": {
+        "Comment": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "Paragraph": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "required": [
+                    "content"
+                  ],
+                  "properties": {
+                    "content": {
+                      "type": "string"
+                    }
+                  }
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "content"
+                    ],
+                    "properties": {
+                      "content": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "Table": {
+              "type": "object",
+              "required": [
+                "Body",
+                "Caption",
+                "Header"
+              ],
+              "properties": {
+                "Body": {
+                  "type": "object",
+                  "required": [
+                    "Row"
+                  ],
+                  "properties": {
+                    "Row": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "Cell"
+                        ],
+                        "properties": {
+                          "Cell": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "required": [
+                                "content"
+                              ],
+                              "properties": {
+                                "content": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "Caption": {
+                  "type": "object",
+                  "required": [
+                    "content"
+                  ],
+                  "properties": {
+                    "content": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "class": {
+                  "type": "string"
+                },
+                "Header": {
+                  "type": "object",
+                  "required": [
+                    "Cell"
+                  ],
+                  "properties": {
+                    "Cell": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "content"
+                        ],
+                        "properties": {
+                          "content": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Organism": {
+          "type": "object",
+          "required": [
+            "taxonomy_id",
+            "taxonomy_name"
+          ],
+          "properties": {
+            "OrganismName": {
+              "type": "object",
+              "required": [
+                "content"
+              ],
+              "properties": {
+                "content": {
+                  "type": "string"
+                }
+              }
+            },
+            "taxonomy_id": {
+              "type": "string"
+            },
+            "taxonomy_name": {
+              "type": "string"
+            }
+          }
+        },
+        "Synonym": {
+          "type": "object",
+          "required": [
+            "content",
+            "db"
+          ],
+          "properties": {
+            "content": {
+              "type": "string"
+            },
+            "db": {
+              "type": "string"
+            }
+          }
+        },
+        "Title": {
+          "type": "object",
+          "required": [
+            "content"
+          ],
+          "properties": {
+            "content": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "id": {
+      "type": "string"
+    },
+    "Ids": {
+      "type": "object",
+      "required": [
+        "Id"
+      ],
+      "properties": {
+        "Id": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "content"
+                ],
+                "properties": {
+                  "content": {
+                    "type": "string"
+                  },
+                  "db": {
+                    "type": "string"
+                  },
+                  "db_label": {
+                    "type": "string"
+                  },
+                  "is_hidden": {
+                    "type": "string"
+                  },
+                  "is_primary": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            {
+              "type": "object",
+              "required": [
+                "content",
+                "db",
+                "is_primary"
+              ],
+              "properties": {
+                "content": {
+                  "type": "string"
+                },
+                "db": {
+                  "type": "string"
+                },
+                "is_primary": {
+                  "type": "string"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "last_update": {
+      "type": "string"
+    },
+    "Links": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "Link": {
+          "anyOf": [
+            {
+              "type": "object",
+              "required": [
+                "content",
+                "label",
+                "type"
+              ],
+              "properties": {
+                "content": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "target": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                }
+              }
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "content",
+                  "label",
+                  "type"
+                ],
+                "properties": {
+                  "content": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "string"
+                  },
+                  "target": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "Models": {
+      "type": "object",
+      "required": [
+        "Model"
+      ],
+      "properties": {
+        "Model": {
+          "anyOf": [
+            {
+              "type": "object",
+              "required": [
+                "content"
+              ],
+              "properties": {
+                "content": {
+                  "type": "string"
+                },
+                "version": {
+                  "type": "string"
+                }
+              }
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "content"
+                ],
+                "properties": {
+                  "content": {
+                    "type": "string"
+                  },
+                  "version": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "Owner": {
+      "type": "object",
+      "required": [
+        "Name"
+      ],
+      "properties": {
+        "Contacts": {
+          "type": "object",
+          "required": [
+            "Contact"
+          ],
+          "properties": {
+            "Contact": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "Address": {
+                  "type": "object",
+                  "required": [
+                    "Street"
+                  ],
+                  "properties": {
+                    "Street": {
+                      "type": "object",
+                      "required": [
+                        "content"
+                      ],
+                      "properties": {
+                        "content": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "fax": {
+                  "type": "string"
+                },
+                "lab": {
+                  "type": "string"
+                },
+                "Name": {
+                  "type": "object",
+                  "required": [
+                    "Last"
+                  ],
+                  "properties": {
+                    "First": {
+                      "type": "object",
+                      "required": [
+                        "content"
+                      ],
+                      "properties": {
+                        "content": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "Last": {
+                      "type": "object",
+                      "required": [
+                        "content"
+                      ],
+                      "properties": {
+                        "content": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "Middle": {
+                      "type": "object",
+                      "required": [
+                        "content"
+                      ],
+                      "properties": {
+                        "content": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Name": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "abbreviation": {
+              "type": "string"
+            },
+            "content": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "Package": {
+      "type": "object",
+      "required": [
+        "content",
+        "display_name"
+      ],
+      "properties": {
+        "content": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        }
+      }
+    },
+    "publication_date": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "object",
+      "required": [
+        "status",
+        "when"
+      ],
+      "properties": {
+        "status": {
+          "type": "string"
+        },
+        "when": {
+          "type": "string"
+        }
+      }
+    },
+    "submission_date": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "ObjectId": {
+      "type": "object",
+      "properties": {
+        "$oid": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{24}$"
+        }
+      },
+      "required": [
+        "$oid"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

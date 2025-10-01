@@ -1,0 +1,54 @@
+{
+  "createdAt": "2015-06-03T00:33:07Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.",
+  "name": "bootstrap",
+  "updatedAt": "2015-06-03T00:33:16Z",
+  "url": "https://github.com/cmungall/bootstrap",
+  "firstCommitDate": "2015-06-02T10:21:26Z",
+  "lastCommitDate": "2015-06-02T10:21:26Z",
+  "topContributors": [
+    {
+      "contributions": 5769,
+      "login": "mdo"
+    },
+    {
+      "contributions": 1747,
+      "login": "cvrebert"
+    },
+    {
+      "contributions": 1152,
+      "login": "fat"
+    },
+    {
+      "contributions": 386,
+      "login": "XhmikosR"
+    },
+    {
+      "contributions": 194,
+      "login": "hnrch02"
+    },
+    {
+      "contributions": 128,
+      "login": "juthilo"
+    },
+    {
+      "contributions": 95,
+      "login": "twbs-grunt"
+    },
+    {
+      "contributions": 87,
+      "login": "patrickhlauke"
+    },
+    {
+      "contributions": 36,
+      "login": "StevenBlack"
+    },
+    {
+      "contributions": 34,
+      "login": "burnsra"
+    }
+  ]
+}

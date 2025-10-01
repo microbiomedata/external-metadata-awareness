@@ -1,0 +1,26 @@
+{
+  "createdAt": "2018-08-05T17:54:48Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A test repo demonstrating design pattern -based phenotype ontology development using the Ontology Development Kit",
+  "name": "Pheno_odk_test",
+  "updatedAt": "2018-10-15T13:02:48Z",
+  "url": "https://github.com/cmungall/Pheno_odk_test",
+  "firstCommitDate": "2018-08-06T04:39:36Z",
+  "lastCommitDate": "2018-08-06T04:39:36Z",
+  "topContributors": [
+    {
+      "contributions": 18,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 5,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 4,
+      "login": "matentzn"
+    }
+  ]
+}

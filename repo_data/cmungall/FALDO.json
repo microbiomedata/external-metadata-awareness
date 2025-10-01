@@ -1,0 +1,34 @@
+{
+  "createdAt": "2017-08-22T23:33:53Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Feature Annotation Location Description Ontology",
+  "name": "FALDO",
+  "updatedAt": "2017-08-22T23:33:55Z",
+  "url": "https://github.com/cmungall/FALDO",
+  "firstCommitDate": "2015-06-20T00:28:21Z",
+  "lastCommitDate": "2015-06-20T00:28:21Z",
+  "topContributors": [
+    {
+      "contributions": 61,
+      "login": "JervenBolleman"
+    },
+    {
+      "contributions": 19,
+      "login": "KimJBaran"
+    },
+    {
+      "contributions": 1,
+      "login": "rbuels"
+    },
+    {
+      "contributions": 1,
+      "login": "tfuji"
+    },
+    {
+      "contributions": 1,
+      "login": "ktym"
+    }
+  ]
+}

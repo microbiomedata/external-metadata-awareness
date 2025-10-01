@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-09-30T20:53:30Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "ontology-loader",
+  "updatedAt": "2025-06-11T19:21:16Z",
+  "url": "https://github.com/microbiomedata/ontology-loader",
+  "firstCommitDate": "2025-06-11T19:21:11Z",
+  "lastCommitDate": "2025-06-11T19:21:11Z",
+  "topContributors": [
+    {
+      "contributions": 155,
+      "login": "sierra-moxon"
+    }
+  ]
+}

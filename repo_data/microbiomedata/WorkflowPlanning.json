@@ -1,0 +1,38 @@
+{
+  "createdAt": "2019-07-18T17:49:54Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "This is primarily a repo for capturing policies and discussions around the different workflows for NMDC.  This is also used for project management related pieces.",
+  "name": "WorkflowPlanning",
+  "updatedAt": "2025-04-07T18:02:03Z",
+  "url": "https://github.com/microbiomedata/WorkflowPlanning",
+  "firstCommitDate": "2025-04-07T18:01:54Z",
+  "lastCommitDate": "2025-04-07T18:01:54Z",
+  "topContributors": [
+    {
+      "contributions": 41,
+      "login": "mshakya"
+    },
+    {
+      "contributions": 29,
+      "login": "chienchi"
+    },
+    {
+      "contributions": 9,
+      "login": "scanon"
+    },
+    {
+      "contributions": 4,
+      "login": "poeli"
+    },
+    {
+      "contributions": 2,
+      "login": "dehays"
+    },
+    {
+      "contributions": 1,
+      "login": "mhuntemann"
+    }
+  ]
+}

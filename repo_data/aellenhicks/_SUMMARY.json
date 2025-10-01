@@ -1,0 +1,266 @@
+[
+  {
+    "createdAt": "2018-05-28T18:44:54Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Awesome Public Datasets Core",
+    "name": "apd-core",
+    "updatedAt": "2018-05-28T18:44:56Z",
+    "url": "https://github.com/aellenhicks/apd-core",
+    "firstCommitDate": "2018-05-22T03:32:37Z",
+    "lastCommitDate": "2018-05-22T03:32:37Z",
+    "topContributors": [
+      {
+        "contributions": 48,
+        "login": "caesar0301"
+      },
+      {
+        "contributions": 2,
+        "login": "SidVal"
+      },
+      {
+        "contributions": 2,
+        "login": "bcbeidel"
+      },
+      {
+        "contributions": 1,
+        "login": "asopinka"
+      },
+      {
+        "contributions": 1,
+        "login": "antquinonez"
+      },
+      {
+        "contributions": 1,
+        "login": "jamesqo"
+      },
+      {
+        "contributions": 1,
+        "login": "loganbyers"
+      },
+      {
+        "contributions": 1,
+        "login": "misza222"
+      },
+      {
+        "contributions": 1,
+        "login": "meiremans"
+      },
+      {
+        "contributions": 1,
+        "login": "olegkleiman"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-03-05T15:31:06Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "htn_owl",
+    "updatedAt": "2022-04-19T23:19:14Z",
+    "url": "https://github.com/aellenhicks/htn_owl",
+    "firstCommitDate": "2022-04-19T23:19:10Z",
+    "lastCommitDate": "2022-04-19T23:19:10Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "aellenhicks"
+      },
+      {
+        "contributions": 1,
+        "login": "cthoyt"
+      }
+    ]
+  },
+  {
+    "createdAt": "2014-07-14T21:03:12Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "KYOTO Ontology",
+    "name": "KYOTO",
+    "updatedAt": "2015-07-20T15:28:03Z",
+    "url": "https://github.com/aellenhicks/KYOTO",
+    "firstCommitDate": "2015-07-20T15:27:57Z",
+    "lastCommitDate": "2015-07-20T15:27:57Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "aellenhicks"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-02-21T14:01:50Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "MIRO – Minimal Information for Reporting of an Ontology",
+    "name": "miro",
+    "updatedAt": "2017-06-07T13:04:53Z",
+    "url": "https://github.com/aellenhicks/miro",
+    "firstCommitDate": "2017-08-13T13:36:35Z",
+    "lastCommitDate": "2017-08-13T13:36:35Z",
+    "topContributors": [
+      {
+        "contributions": 29,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 12,
+        "login": "TheOntologist"
+      },
+      {
+        "contributions": 9,
+        "login": "jamesmalone"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-06-16T15:23:36Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "OBO Foundry Ontology Registry",
+    "name": "OBOFoundry.github.io",
+    "updatedAt": "2016-06-16T15:23:38Z",
+    "url": "https://github.com/aellenhicks/OBOFoundry.github.io",
+    "firstCommitDate": "2016-06-15T06:01:19Z",
+    "lastCommitDate": "2016-06-15T06:01:19Z",
+    "topContributors": [
+      {
+        "contributions": 412,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 57,
+        "login": "jamesaoverton"
+      },
+      {
+        "contributions": 37,
+        "login": "mcourtot"
+      },
+      {
+        "contributions": 26,
+        "login": "lschriml"
+      },
+      {
+        "contributions": 20,
+        "login": "nataled"
+      },
+      {
+        "contributions": 14,
+        "login": "zhengj2007"
+      },
+      {
+        "contributions": 14,
+        "login": "rgduser"
+      },
+      {
+        "contributions": 11,
+        "login": "bpeters42"
+      },
+      {
+        "contributions": 11,
+        "login": "ramonawalls"
+      },
+      {
+        "contributions": 11,
+        "login": "alanruttenberg"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-02-05T18:36:22Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A new system for managing OBO PURLs",
+    "name": "purl.obolibrary.org",
+    "updatedAt": "2018-02-05T18:36:24Z",
+    "url": "https://github.com/aellenhicks/purl.obolibrary.org",
+    "firstCommitDate": "2018-02-05T14:43:48Z",
+    "lastCommitDate": "2018-02-05T14:43:48Z",
+    "topContributors": [
+      {
+        "contributions": 305,
+        "login": "jamesaoverton"
+      },
+      {
+        "contributions": 176,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 33,
+        "login": "alanruttenberg"
+      },
+      {
+        "contributions": 29,
+        "login": "ramonawalls"
+      },
+      {
+        "contributions": 26,
+        "login": "mcourtot"
+      },
+      {
+        "contributions": 22,
+        "login": "mbrochhausen"
+      },
+      {
+        "contributions": 17,
+        "login": "zhengj2007"
+      },
+      {
+        "contributions": 11,
+        "login": "balhoff"
+      },
+      {
+        "contributions": 11,
+        "login": "FernandaFarinelli"
+      },
+      {
+        "contributions": 10,
+        "login": "hoganwr"
+      }
+    ]
+  },
+  {
+    "createdAt": "2014-12-31T18:00:23Z",
+    "defaultBranchRef": {
+      "name": ""
+    },
+    "description": "",
+    "name": "transgender-twitter-study",
+    "updatedAt": "2014-12-31T18:00:23Z",
+    "url": "https://github.com/aellenhicks/transgender-twitter-study",
+    "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+    "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+  },
+  {
+    "createdAt": "2015-02-18T17:20:53Z",
+    "defaultBranchRef": {
+      "name": ""
+    },
+    "description": "",
+    "name": "trauma-prelim",
+    "updatedAt": "2015-02-18T17:20:53Z",
+    "url": "https://github.com/aellenhicks/trauma-prelim",
+    "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+    "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+  },
+  {
+    "createdAt": "2015-02-18T17:18:08Z",
+    "defaultBranchRef": {
+      "name": ""
+    },
+    "description": "",
+    "name": "trauma-prelims",
+    "updatedAt": "2015-02-18T17:18:08Z",
+    "url": "https://github.com/aellenhicks/trauma-prelims",
+    "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+    "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+  }
+]

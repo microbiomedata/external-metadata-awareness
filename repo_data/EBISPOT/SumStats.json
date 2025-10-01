@@ -1,0 +1,34 @@
+{
+  "createdAt": "2017-08-09T12:01:07Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Summary statistics with HDF5",
+  "name": "SumStats",
+  "updatedAt": "2024-11-06T12:14:57Z",
+  "url": "https://github.com/EBISPOT/SumStats",
+  "firstCommitDate": "2021-07-14T15:43:17Z",
+  "lastCommitDate": "2021-07-14T15:43:17Z",
+  "topContributors": [
+    {
+      "contributions": 336,
+      "login": "olgavrou"
+    },
+    {
+      "contributions": 327,
+      "login": "jdhayhurst"
+    },
+    {
+      "contributions": 2,
+      "login": "spot-ebi"
+    },
+    {
+      "contributions": 1,
+      "login": "codacy-badger"
+    },
+    {
+      "contributions": 1,
+      "login": "buniello"
+    }
+  ]
+}

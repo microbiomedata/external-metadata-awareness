@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-12-12T20:29:12Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "some useful things done with owl-api, based on a generic, template-method based GenericOwlFileProcessor",
+  "name": "owl-utils",
+  "updatedAt": "2023-10-05T19:20:34Z",
+  "url": "https://github.com/mcwdsi/owl-utils",
+  "firstCommitDate": "2016-01-23T14:02:26Z",
+  "lastCommitDate": "2016-01-23T14:02:26Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "hoganwr"
+    }
+  ]
+}

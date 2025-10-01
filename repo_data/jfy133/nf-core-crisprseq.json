@@ -1,0 +1,54 @@
+{
+  "createdAt": "2025-09-23T14:11:22Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A pipeline for the analysis of CRISPR edited data. It allows the evaluation of the quality of gene editing experiments using targeted next generation sequencing (NGS) data (`targeted`) as well as the discovery of important genes from knock-out or activation CRISPR-Cas9 screens using CRISPR pooled DNA (`screening`).",
+  "name": "nf-core-crisprseq",
+  "updatedAt": "2025-09-23T14:11:22Z",
+  "url": "https://github.com/jfy133/nf-core-crisprseq",
+  "firstCommitDate": "2024-11-08T14:27:19Z",
+  "lastCommitDate": "2024-11-08T14:27:19Z",
+  "topContributors": [
+    {
+      "contributions": 578,
+      "login": "LaurenceKuhl"
+    },
+    {
+      "contributions": 484,
+      "login": "mirpedrol"
+    },
+    {
+      "contributions": 37,
+      "login": "nf-core-bot"
+    },
+    {
+      "contributions": 16,
+      "login": "mashehu"
+    },
+    {
+      "contributions": 13,
+      "login": "alan-tracey"
+    },
+    {
+      "contributions": 4,
+      "login": "mschaffer-incyte"
+    },
+    {
+      "contributions": 2,
+      "login": "MartaSanvicente"
+    },
+    {
+      "contributions": 2,
+      "login": "medmaca"
+    },
+    {
+      "contributions": 1,
+      "login": "joannakraw"
+    },
+    {
+      "contributions": 1,
+      "login": "msanvicente"
+    }
+  ]
+}

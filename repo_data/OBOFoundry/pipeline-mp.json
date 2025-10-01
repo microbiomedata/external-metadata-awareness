@@ -1,0 +1,22 @@
+{
+  "createdAt": "2019-05-01T01:25:38Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The Jenkins build pipeline for MP.",
+  "name": "pipeline-mp",
+  "updatedAt": "2021-02-10T16:50:48Z",
+  "url": "https://github.com/OBOFoundry/pipeline-mp",
+  "firstCommitDate": "2021-02-10T16:50:45Z",
+  "lastCommitDate": "2021-02-10T16:50:45Z",
+  "topContributors": [
+    {
+      "contributions": 23,
+      "login": "kltm"
+    },
+    {
+      "contributions": 15,
+      "login": "matentzn"
+    }
+  ]
+}

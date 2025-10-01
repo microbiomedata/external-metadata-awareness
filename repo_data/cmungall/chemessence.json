@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-08-24T01:48:30Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "EXPERIMENTAL extraction of essence from CHEBI",
+  "name": "chemessence",
+  "updatedAt": "2025-05-20T20:29:49Z",
+  "url": "https://github.com/cmungall/chemessence",
+  "firstCommitDate": "2025-01-09T20:00:31Z",
+  "lastCommitDate": "2025-01-09T20:00:31Z",
+  "topContributors": [
+    {
+      "contributions": 21,
+      "login": "cmungall"
+    }
+  ]
+}

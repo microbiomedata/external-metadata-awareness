@@ -1,0 +1,34 @@
+{
+  "createdAt": "2024-10-16T10:01:48Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "pheval-runner-template",
+  "updatedAt": "2025-08-06T14:52:29Z",
+  "url": "https://github.com/monarch-initiative/pheval-runner-template",
+  "firstCommitDate": "2025-08-06T14:52:25Z",
+  "lastCommitDate": "2025-08-06T14:52:25Z",
+  "topContributors": [
+    {
+      "contributions": 76,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 25,
+      "login": "yaseminbridges"
+    },
+    {
+      "contributions": 7,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 6,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 3,
+      "login": "amc-corey-cox"
+    }
+  ]
+}

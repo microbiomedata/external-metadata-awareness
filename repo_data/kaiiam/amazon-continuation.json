@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-04-22T23:43:51Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A new look at the Amazon Continuum Metagenomes",
+  "name": "amazon-continuation",
+  "updatedAt": "2023-04-22T16:22:56Z",
+  "url": "https://github.com/kaiiam/amazon-continuation",
+  "firstCommitDate": "2019-06-27T12:32:14Z",
+  "lastCommitDate": "2019-06-27T12:32:14Z",
+  "topContributors": [
+    {
+      "contributions": 19,
+      "login": "kaiiam"
+    }
+  ]
+}

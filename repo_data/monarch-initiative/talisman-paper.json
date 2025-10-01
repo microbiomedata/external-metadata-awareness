@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-04-26T17:44:50Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "talisman-paper",
+  "updatedAt": "2025-09-04T01:11:53Z",
+  "url": "https://github.com/monarch-initiative/talisman-paper",
+  "firstCommitDate": "2024-01-31T03:27:37Z",
+  "lastCommitDate": "2024-01-31T03:27:37Z",
+  "topContributors": [
+    {
+      "contributions": 43,
+      "login": "realmarcin"
+    },
+    {
+      "contributions": 24,
+      "login": "cmungall"
+    }
+  ]
+}

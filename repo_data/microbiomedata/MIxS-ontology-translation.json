@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-10-31T20:44:15Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "MIxS-ontology-translation",
+  "updatedAt": "2019-10-31T20:55:20Z",
+  "url": "https://github.com/microbiomedata/MIxS-ontology-translation",
+  "firstCommitDate": "2019-10-31T20:55:07Z",
+  "lastCommitDate": "2019-10-31T20:55:07Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "wdduncan"
+    }
+  ]
+}

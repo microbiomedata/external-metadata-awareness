@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-10-21T23:53:22Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "linkml-initializer",
+  "updatedAt": "2022-10-20T21:10:59Z",
+  "url": "https://github.com/cmungall/linkml-initializer",
+  "firstCommitDate": "2022-10-21T23:29:49Z",
+  "lastCommitDate": "2022-10-21T23:29:49Z",
+  "topContributors": [
+    {
+      "contributions": 23,
+      "login": "pkalita-lbl"
+    }
+  ]
+}

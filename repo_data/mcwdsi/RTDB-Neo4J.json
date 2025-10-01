@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-12-14T20:55:19Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "a Neo4J based implementation of Referent Tracking",
+  "name": "RTDB-Neo4J",
+  "updatedAt": "2024-06-07T15:00:05Z",
+  "url": "https://github.com/mcwdsi/RTDB-Neo4J",
+  "firstCommitDate": "2024-06-07T14:59:59Z",
+  "lastCommitDate": "2024-06-07T14:59:59Z",
+  "topContributors": [
+    {
+      "contributions": 53,
+      "login": "hoganwr"
+    },
+    {
+      "contributions": 1,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

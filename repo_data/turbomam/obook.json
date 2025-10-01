@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-09-26T13:48:53Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "OBO Organized Knowledge: Training materials for becoming an OBO engineer ",
+  "name": "obook",
+  "updatedAt": "2022-09-17T21:45:56Z",
+  "url": "https://github.com/turbomam/obook",
+  "firstCommitDate": "2022-09-25T17:40:47Z",
+  "lastCommitDate": "2022-09-25T17:40:47Z",
+  "topContributors": [
+    {
+      "contributions": 891,
+      "login": "nicolevasilevsky"
+    },
+    {
+      "contributions": 178,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 131,
+      "login": "shawntanzk"
+    },
+    {
+      "contributions": 48,
+      "login": "beckyjackson"
+    },
+    {
+      "contributions": 34,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 15,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 13,
+      "login": "sabrinatoro"
+    },
+    {
+      "contributions": 10,
+      "login": "sagehrke"
+    },
+    {
+      "contributions": 6,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 6,
+      "login": "manulera"
+    }
+  ]
+}

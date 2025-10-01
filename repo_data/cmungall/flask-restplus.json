@@ -1,0 +1,54 @@
+{
+  "createdAt": "2017-05-13T21:03:21Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Fully featured framework for fast, easy and documented API development with Flask",
+  "name": "flask-restplus",
+  "updatedAt": "2017-05-13T21:03:23Z",
+  "url": "https://github.com/cmungall/flask-restplus",
+  "firstCommitDate": "2017-05-13T08:55:14Z",
+  "lastCommitDate": "2017-05-13T08:55:14Z",
+  "topContributors": [
+    {
+      "contributions": 410,
+      "login": "noirbizarre"
+    },
+    {
+      "contributions": 34,
+      "login": "awiddersheim"
+    },
+    {
+      "contributions": 6,
+      "login": "frol"
+    },
+    {
+      "contributions": 4,
+      "login": "fixedd"
+    },
+    {
+      "contributions": 3,
+      "login": "mdesetty"
+    },
+    {
+      "contributions": 2,
+      "login": "tgoodyear"
+    },
+    {
+      "contributions": 2,
+      "login": "tzabal"
+    },
+    {
+      "contributions": 2,
+      "login": "leiserfg"
+    },
+    {
+      "contributions": 1,
+      "login": "ufian"
+    },
+    {
+      "contributions": 1,
+      "login": "nlohmann"
+    }
+  ]
+}

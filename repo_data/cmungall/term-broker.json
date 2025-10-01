@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-02-18T23:21:19Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "placeholder repo for initial requirements for term broker",
+  "name": "term-broker",
+  "updatedAt": "2016-02-18T23:21:19Z",
+  "url": "https://github.com/cmungall/term-broker",
+  "firstCommitDate": "2016-02-18T23:21:19Z",
+  "lastCommitDate": "2016-02-18T23:21:19Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2018-05-29T01:46:05Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Whelk is an OWL EL reasoner",
+  "name": "whelk",
+  "updatedAt": "2025-09-23T13:31:18Z",
+  "url": "https://github.com/INCATools/whelk",
+  "firstCommitDate": "2025-03-05T18:50:13Z",
+  "lastCommitDate": "2025-03-05T18:50:13Z",
+  "topContributors": [
+    {
+      "contributions": 292,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 112,
+      "login": "scala-steward"
+    }
+  ]
+}

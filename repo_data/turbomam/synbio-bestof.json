@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-05-17T21:39:40Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "synbio-bestof",
+  "updatedAt": "2022-12-07T14:30:05Z",
+  "url": "https://github.com/turbomam/synbio-bestof",
+  "firstCommitDate": "2022-08-29T17:41:27Z",
+  "lastCommitDate": "2022-08-29T17:41:27Z",
+  "topContributors": [
+    {
+      "contributions": 36,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 6,
+      "login": "sujaypatil96"
+    }
+  ]
+}

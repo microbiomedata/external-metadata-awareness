@@ -1,0 +1,38 @@
+{
+  "createdAt": "2009-08-21T18:08:57Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Meant to be a standard DBIx::Class layer for the Chado database schema.  Generated using DBIx::Class::Schema::Loader",
+  "name": "dbic_chado",
+  "updatedAt": "2025-01-31T14:58:38Z",
+  "url": "https://github.com/cmungall/dbic_chado",
+  "firstCommitDate": "2025-01-31T14:57:47Z",
+  "lastCommitDate": "2025-01-31T14:57:47Z",
+  "topContributors": [
+    {
+      "contributions": 265,
+      "login": "rbuels"
+    },
+    {
+      "contributions": 60,
+      "login": "nmenda"
+    },
+    {
+      "contributions": 53,
+      "login": "leto"
+    },
+    {
+      "contributions": 10,
+      "login": "isaak"
+    },
+    {
+      "contributions": 5,
+      "login": "lukasmueller"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

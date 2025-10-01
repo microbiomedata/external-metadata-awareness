@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-02-16T13:40:04Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A place to learn about linkml-run-examples. Brought to you by the LinkML Cookiecutter.",
+  "name": "example-runner-sandbox",
+  "updatedAt": "2024-08-16T16:09:28Z",
+  "url": "https://github.com/turbomam/example-runner-sandbox",
+  "firstCommitDate": "2023-02-16T15:57:40Z",
+  "lastCommitDate": "2023-02-16T15:57:40Z",
+  "topContributors": [
+    {
+      "contributions": 28,
+      "login": "turbomam"
+    }
+  ]
+}

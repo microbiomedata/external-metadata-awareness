@@ -1,0 +1,18 @@
+{
+  "createdAt": "2013-10-08T18:15:00Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "AmiGO is the public interface for the Gene Ontology.",
+  "name": "amigo",
+  "updatedAt": "2015-01-29T23:03:34Z",
+  "url": "https://github.com/cmungall/amigo",
+  "firstCommitDate": "2013-10-05T20:48:06Z",
+  "lastCommitDate": "2013-10-05T20:48:06Z",
+  "topContributors": [
+    {
+      "contributions": 599,
+      "login": "kltm"
+    }
+  ]
+}

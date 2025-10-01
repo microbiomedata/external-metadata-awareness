@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-07-15T16:42:54Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": ".github",
+  "updatedAt": "2025-09-17T16:52:49Z",
+  "url": "https://github.com/contextualizer-ai/.github",
+  "firstCommitDate": "2025-09-17T16:52:45Z",
+  "lastCommitDate": "2025-09-17T16:52:45Z",
+  "topContributors": [
+    {
+      "contributions": 10,
+      "login": "turbomam"
+    }
+  ]
+}

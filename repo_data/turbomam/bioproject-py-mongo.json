@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-08-13T01:10:52Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Convert NCBI Bioproject to MongoDB in Python",
+  "name": "bioproject-py-mongo",
+  "updatedAt": "2024-08-16T16:02:17Z",
+  "url": "https://github.com/turbomam/bioproject-py-mongo",
+  "firstCommitDate": "2024-08-14T03:47:01Z",
+  "lastCommitDate": "2024-08-14T03:47:01Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "turbomam"
+    }
+  ]
+}

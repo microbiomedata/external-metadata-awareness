@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-10-26T03:03:32Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "go-new-ontology",
+  "updatedAt": "2016-10-26T03:03:32Z",
+  "url": "https://github.com/cmungall/go-new-ontology",
+  "firstCommitDate": "2016-10-26T03:26:49Z",
+  "lastCommitDate": "2016-10-26T03:26:49Z",
+  "topContributors": [
+    {
+      "contributions": 373,
+      "login": "cmungall"
+    }
+  ]
+}

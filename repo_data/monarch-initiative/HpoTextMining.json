@@ -1,0 +1,30 @@
+{
+  "createdAt": "2017-06-20T20:52:42Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Perform text mining for identification of HPO terms in free text from scientific publication.",
+  "name": "HpoTextMining",
+  "updatedAt": "2024-10-31T18:52:47Z",
+  "url": "https://github.com/monarch-initiative/HpoTextMining",
+  "firstCommitDate": "2024-06-28T19:47:46Z",
+  "lastCommitDate": "2024-06-28T19:47:46Z",
+  "topContributors": [
+    {
+      "contributions": 21,
+      "login": "kingmanzhang"
+    },
+    {
+      "contributions": 7,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 6,
+      "login": "ielis"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

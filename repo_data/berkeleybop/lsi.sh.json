@@ -1,0 +1,26 @@
+{
+  "createdAt": "2017-03-24T00:58:56Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "MegaCLI script to configure and monitor LSI raid cards.",
+  "name": "lsi.sh",
+  "updatedAt": "2024-11-16T08:38:20Z",
+  "url": "https://github.com/berkeleybop/lsi.sh",
+  "firstCommitDate": "2023-01-13T21:30:21Z",
+  "lastCommitDate": "2023-01-13T21:30:21Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "kltm"
+    },
+    {
+      "contributions": 2,
+      "login": "neomantra"
+    },
+    {
+      "contributions": 1,
+      "login": "incebellipipo"
+    }
+  ]
+}

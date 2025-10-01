@@ -1,0 +1,26 @@
+{
+  "createdAt": "2020-08-25T15:44:42Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Dashboard for KG-COVID-19",
+  "name": "kg-covid-19-dashboard",
+  "updatedAt": "2023-01-04T20:56:03Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/kg-covid-19-dashboard",
+  "firstCommitDate": "2023-01-04T20:55:57Z",
+  "lastCommitDate": "2023-01-04T20:55:57Z",
+  "topContributors": [
+    {
+      "contributions": 9,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 8,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 5,
+      "login": "deepakunni3"
+    }
+  ]
+}

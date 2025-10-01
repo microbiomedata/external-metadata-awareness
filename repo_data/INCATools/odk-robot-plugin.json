@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-02-08T20:55:47Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "ROBOT plugin for the Ontology Development Kit",
+  "name": "odk-robot-plugin",
+  "updatedAt": "2025-09-17T11:45:13Z",
+  "url": "https://github.com/INCATools/odk-robot-plugin",
+  "firstCommitDate": "2025-09-15T16:56:38Z",
+  "lastCommitDate": "2025-09-15T16:56:38Z",
+  "topContributors": [
+    {
+      "contributions": 22,
+      "login": "gouttegd"
+    }
+  ]
+}

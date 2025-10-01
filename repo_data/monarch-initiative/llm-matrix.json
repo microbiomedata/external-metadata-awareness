@@ -1,0 +1,22 @@
+{
+  "createdAt": "2025-01-10T17:50:40Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Run multiple AI prompts in batch",
+  "name": "llm-matrix",
+  "updatedAt": "2025-05-08T04:48:35Z",
+  "url": "https://github.com/monarch-initiative/llm-matrix",
+  "firstCommitDate": "2025-03-11T03:10:45Z",
+  "lastCommitDate": "2025-03-11T03:10:45Z",
+  "topContributors": [
+    {
+      "contributions": 13,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 2,
+      "login": "dragon-ai-agent"
+    }
+  ]
+}

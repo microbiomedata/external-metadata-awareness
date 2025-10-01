@@ -1,0 +1,38 @@
+{
+  "createdAt": "2016-10-25T15:31:32Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A Tool to Annotate and Prioritize Exome Variants",
+  "name": "Exomiser",
+  "updatedAt": "2016-10-25T15:31:37Z",
+  "url": "https://github.com/cmungall/Exomiser",
+  "firstCommitDate": "2016-07-01T16:02:55Z",
+  "lastCommitDate": "2016-07-01T16:02:55Z",
+  "topContributors": [
+    {
+      "contributions": 248,
+      "login": "damiansm"
+    },
+    {
+      "contributions": 31,
+      "login": "holtgrewe"
+    },
+    {
+      "contributions": 19,
+      "login": "julesjacobsen"
+    },
+    {
+      "contributions": 18,
+      "login": "visze"
+    },
+    {
+      "contributions": 4,
+      "login": "buske"
+    },
+    {
+      "contributions": 1,
+      "login": "drseb"
+    }
+  ]
+}

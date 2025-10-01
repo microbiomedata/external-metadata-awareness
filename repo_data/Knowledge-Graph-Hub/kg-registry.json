@@ -1,0 +1,50 @@
+{
+  "createdAt": "2021-09-02T16:51:15Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A simple registry for KGHub projects",
+  "name": "kg-registry",
+  "updatedAt": "2025-09-29T14:53:16Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/kg-registry",
+  "firstCommitDate": "2025-09-29T14:53:11Z",
+  "lastCommitDate": "2025-09-29T14:53:11Z",
+  "topContributors": [
+    {
+      "contributions": 1348,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 52,
+      "login": "actions-user"
+    },
+    {
+      "contributions": 17,
+      "login": "iimpulse"
+    },
+    {
+      "contributions": 12,
+      "login": "Copilot"
+    },
+    {
+      "contributions": 3,
+      "login": "colleenXu"
+    },
+    {
+      "contributions": 2,
+      "login": "bsantan"
+    },
+    {
+      "contributions": 2,
+      "login": "andrewsu"
+    },
+    {
+      "contributions": 1,
+      "login": "DnlRKorn"
+    },
+    {
+      "contributions": 1,
+      "login": "justaddcoffee"
+    }
+  ]
+}

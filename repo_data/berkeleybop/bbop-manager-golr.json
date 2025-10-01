@@ -1,0 +1,26 @@
+{
+  "createdAt": "2015-11-16T00:37:45Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Manager for handling communication and callbacks with GOlr instances. ",
+  "name": "bbop-manager-golr",
+  "updatedAt": "2024-06-11T20:27:42Z",
+  "url": "https://github.com/berkeleybop/bbop-manager-golr",
+  "firstCommitDate": "2024-06-11T20:25:28Z",
+  "lastCommitDate": "2024-06-11T20:25:28Z",
+  "topContributors": [
+    {
+      "contributions": 34,
+      "login": "kltm"
+    },
+    {
+      "contributions": 9,
+      "login": "jnguyenx"
+    },
+    {
+      "contributions": 7,
+      "login": "pkalita-lbl"
+    }
+  ]
+}

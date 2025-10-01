@@ -1,0 +1,26 @@
+{
+  "createdAt": "2023-08-11T19:15:43Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "workflow for metatranscriptome assembly",
+  "name": "metaT_Assembly",
+  "updatedAt": "2025-04-15T21:26:53Z",
+  "url": "https://github.com/microbiomedata/metaT_Assembly",
+  "firstCommitDate": "2025-04-15T21:26:49Z",
+  "lastCommitDate": "2025-04-15T21:26:49Z",
+  "topContributors": [
+    {
+      "contributions": 49,
+      "login": "kaijli"
+    },
+    {
+      "contributions": 16,
+      "login": "mshakya"
+    },
+    {
+      "contributions": 2,
+      "login": "eecavanna"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-09-19T14:47:57Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Experiments and analysis related to OntoGPT methods.",
+  "name": "ontogpt-experiments",
+  "updatedAt": "2025-03-24T18:15:55Z",
+  "url": "https://github.com/monarch-initiative/ontogpt-experiments",
+  "firstCommitDate": "2024-08-07T17:11:33Z",
+  "lastCommitDate": "2024-08-07T17:11:33Z",
+  "topContributors": [
+    {
+      "contributions": 48,
+      "login": "caufieldjh"
+    }
+  ]
+}

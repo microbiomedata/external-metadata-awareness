@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-02-18T00:02:26Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Github Repo for BE502 Fundamentals of Computing course at the University of Arizona",
+  "name": "BE_502",
+  "updatedAt": "2023-04-22T16:26:04Z",
+  "url": "https://github.com/kaiiam/BE_502",
+  "firstCommitDate": "2020-05-06T00:17:28Z",
+  "lastCommitDate": "2020-05-06T00:17:28Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "kaiiam"
+    }
+  ]
+}

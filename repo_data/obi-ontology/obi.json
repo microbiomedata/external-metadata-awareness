@@ -1,0 +1,54 @@
+{
+  "createdAt": "2017-02-27T19:50:28Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The Ontology for Biomedical Investigations",
+  "name": "obi",
+  "updatedAt": "2025-09-29T18:00:29Z",
+  "url": "https://github.com/obi-ontology/obi",
+  "firstCommitDate": "2025-09-29T18:00:24Z",
+  "lastCommitDate": "2025-09-29T18:00:24Z",
+  "topContributors": [
+    {
+      "contributions": 937,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 211,
+      "login": "sebastianduesing"
+    },
+    {
+      "contributions": 49,
+      "login": "beckyjackson"
+    },
+    {
+      "contributions": 33,
+      "login": "cstoeckert"
+    },
+    {
+      "contributions": 32,
+      "login": "adbartni"
+    },
+    {
+      "contributions": 29,
+      "login": "johnwjudkins"
+    },
+    {
+      "contributions": 27,
+      "login": "zhengj2007"
+    },
+    {
+      "contributions": 27,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 25,
+      "login": "DanBerrios"
+    },
+    {
+      "contributions": 15,
+      "login": "Daniel-Olson"
+    }
+  ]
+}

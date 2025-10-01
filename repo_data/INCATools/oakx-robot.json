@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-06-07T20:00:36Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "robot plugin for OAK",
+  "name": "oakx-robot",
+  "updatedAt": "2022-06-08T00:46:59Z",
+  "url": "https://github.com/INCATools/oakx-robot",
+  "firstCommitDate": "2022-09-29T22:29:40Z",
+  "lastCommitDate": "2022-09-29T22:29:40Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

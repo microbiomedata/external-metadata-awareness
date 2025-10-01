@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-04-05T21:14:34Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Runtime system for NMDC data management and orchestration",
+  "name": "nmdc-runtime",
+  "updatedAt": "2025-09-29T08:22:35Z",
+  "url": "https://github.com/microbiomedata/nmdc-runtime",
+  "firstCommitDate": "2025-09-29T08:05:34Z",
+  "lastCommitDate": "2025-09-29T08:05:34Z",
+  "topContributors": [
+    {
+      "contributions": 1210,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 857,
+      "login": "dwinston"
+    },
+    {
+      "contributions": 311,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 164,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 132,
+      "login": "elais"
+    },
+    {
+      "contributions": 100,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 72,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 65,
+      "login": "aclum"
+    },
+    {
+      "contributions": 57,
+      "login": "shreddd"
+    },
+    {
+      "contributions": 39,
+      "login": "PeopleMakeCulture"
+    }
+  ]
+}

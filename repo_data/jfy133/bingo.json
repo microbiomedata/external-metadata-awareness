@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-03-19T19:29:22Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Bingo web app (work in progress)",
+  "name": "bingo",
+  "updatedAt": "2023-09-16T16:00:38Z",
+  "url": "https://github.com/jfy133/bingo",
+  "firstCommitDate": "2021-10-16T04:16:39Z",
+  "lastCommitDate": "2021-10-16T04:16:39Z",
+  "topContributors": [
+    {
+      "contributions": 35,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 30,
+      "login": "cordeliadillon"
+    }
+  ]
+}

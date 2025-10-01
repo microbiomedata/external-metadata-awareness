@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-12-20T17:34:22Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A cookiecutter template for KG generation.",
+  "name": "kg-cookiecutter",
+  "updatedAt": "2025-09-30T10:47:31Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/kg-cookiecutter",
+  "firstCommitDate": "2024-08-09T14:56:33Z",
+  "lastCommitDate": "2024-08-09T14:56:33Z",
+  "topContributors": [
+    {
+      "contributions": 135,
+      "login": "hrshdhgd"
+    }
+  ]
+}

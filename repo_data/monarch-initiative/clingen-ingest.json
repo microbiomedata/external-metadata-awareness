@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-06-08T02:49:36Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "clingen-ingest",
+  "updatedAt": "2025-04-02T22:21:35Z",
+  "url": "https://github.com/monarch-initiative/clingen-ingest",
+  "firstCommitDate": "2025-04-02T22:21:31Z",
+  "lastCommitDate": "2025-04-02T22:21:31Z",
+  "topContributors": [
+    {
+      "contributions": 17,
+      "login": "amc-corey-cox"
+    },
+    {
+      "contributions": 7,
+      "login": "kevinschaper"
+    }
+  ]
+}

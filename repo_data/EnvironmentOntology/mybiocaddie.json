@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-09-10T22:03:32Z",
+  "defaultBranchRef": {
+    "name": "gh-pages"
+  },
+  "description": "Repository for metadata about environmental datasets",
+  "name": "mybiocaddie",
+  "updatedAt": "2016-09-10T22:04:36Z",
+  "url": "https://github.com/EnvironmentOntology/mybiocaddie",
+  "firstCommitDate": "2016-09-11T18:09:33Z",
+  "lastCommitDate": "2016-09-11T18:09:33Z",
+  "topContributors": [
+    {
+      "contributions": 37,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "kshefchek"
+    }
+  ]
+}

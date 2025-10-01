@@ -1,0 +1,54 @@
+{
+  "createdAt": "2023-04-05T18:14:53Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Development of the Ocean Data and Information System (ODIS) architecture",
+  "name": "odis-arch",
+  "updatedAt": "2023-03-12T09:24:05Z",
+  "url": "https://github.com/cmungall/odis-arch",
+  "firstCommitDate": "2023-04-05T00:09:08Z",
+  "lastCommitDate": "2023-04-05T00:09:08Z",
+  "topContributors": [
+    {
+      "contributions": 361,
+      "login": "jmckenna"
+    },
+    {
+      "contributions": 277,
+      "login": "fils"
+    },
+    {
+      "contributions": 65,
+      "login": "pieterprovoost"
+    },
+    {
+      "contributions": 9,
+      "login": "pbuttigieg"
+    },
+    {
+      "contributions": 8,
+      "login": "arnounesco"
+    },
+    {
+      "contributions": 3,
+      "login": "sandrasa-INFOHUB"
+    },
+    {
+      "contributions": 2,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 2,
+      "login": "sptws001"
+    },
+    {
+      "contributions": 1,
+      "login": "marc-portier"
+    },
+    {
+      "contributions": 1,
+      "login": "skybristol"
+    }
+  ]
+}

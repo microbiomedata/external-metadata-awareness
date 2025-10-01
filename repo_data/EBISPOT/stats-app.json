@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-11-20T13:14:28Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Repository for fetching internal access stats of SPOT resources",
+  "name": "stats-app",
+  "updatedAt": "2025-08-19T22:36:44Z",
+  "url": "https://github.com/EBISPOT/stats-app",
+  "firstCommitDate": "2025-08-19T22:36:39Z",
+  "lastCommitDate": "2025-08-19T22:36:39Z",
+  "topContributors": [
+    {
+      "contributions": 36,
+      "login": "haideriqbal"
+    }
+  ]
+}

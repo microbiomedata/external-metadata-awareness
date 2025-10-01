@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-07-19T22:03:49Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "nmdc-mixs-supplement-for-envo",
+  "updatedAt": "2024-08-16T16:21:19Z",
+  "url": "https://github.com/turbomam/nmdc-mixs-supplement-for-envo",
+  "firstCommitDate": "2022-07-20T19:00:38Z",
+  "lastCommitDate": "2022-07-20T19:00:38Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "turbomam"
+    }
+  ]
+}

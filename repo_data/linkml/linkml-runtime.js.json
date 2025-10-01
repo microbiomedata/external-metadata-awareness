@@ -1,0 +1,26 @@
+{
+  "createdAt": "2022-02-11T03:02:31Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "An implementation of the linkml-runtime in javascript ALPHA VERSION",
+  "name": "linkml-runtime.js",
+  "updatedAt": "2025-06-18T08:18:17Z",
+  "url": "https://github.com/linkml/linkml-runtime.js",
+  "firstCommitDate": "2023-06-12T18:56:08Z",
+  "lastCommitDate": "2023-06-12T18:56:08Z",
+  "topContributors": [
+    {
+      "contributions": 31,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 5,
+      "login": "yarikoptic"
+    },
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

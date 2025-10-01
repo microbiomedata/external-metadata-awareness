@@ -1,0 +1,26 @@
+{
+  "createdAt": "2024-10-15T18:39:34Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Refactoring Code for Rest API",
+  "name": "gwas-rest-api",
+  "updatedAt": "2025-09-24T14:53:48Z",
+  "url": "https://github.com/EBISPOT/gwas-rest-api",
+  "firstCommitDate": "2025-09-24T14:53:43Z",
+  "lastCommitDate": "2025-09-24T14:53:43Z",
+  "topContributors": [
+    {
+      "contributions": 138,
+      "login": "sajo-ebi"
+    },
+    {
+      "contributions": 46,
+      "login": "ala-ebi"
+    },
+    {
+      "contributions": 10,
+      "login": "sprintell"
+    }
+  ]
+}

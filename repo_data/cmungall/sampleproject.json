@@ -1,0 +1,54 @@
+{
+  "createdAt": "2017-04-15T16:43:31Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A sample project that exists for PyPUG's \"Tutorial on Packaging and Distributing Projects\"",
+  "name": "sampleproject",
+  "updatedAt": "2017-04-15T16:43:33Z",
+  "url": "https://github.com/cmungall/sampleproject",
+  "firstCommitDate": "2017-03-01T14:59:52Z",
+  "lastCommitDate": "2017-03-01T14:59:52Z",
+  "topContributors": [
+    {
+      "contributions": 42,
+      "login": "qwcode"
+    },
+    {
+      "contributions": 11,
+      "login": "pfmoore"
+    },
+    {
+      "contributions": 5,
+      "login": "Ivoz"
+    },
+    {
+      "contributions": 2,
+      "login": "ionelmc"
+    },
+    {
+      "contributions": 2,
+      "login": "hulbert"
+    },
+    {
+      "contributions": 2,
+      "login": "svisser"
+    },
+    {
+      "contributions": 1,
+      "login": "AlexisHuet"
+    },
+    {
+      "contributions": 1,
+      "login": "carljm"
+    },
+    {
+      "contributions": 1,
+      "login": "cjerdonek"
+    },
+    {
+      "contributions": 1,
+      "login": "danrue"
+    }
+  ]
+}

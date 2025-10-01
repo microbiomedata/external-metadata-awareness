@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-11-15T21:10:46Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Model for complex diseases",
+  "name": "complexphen",
+  "updatedAt": "2021-11-22T00:15:00Z",
+  "url": "https://github.com/monarch-initiative/complexphen",
+  "firstCommitDate": "2021-11-22T00:14:56Z",
+  "lastCommitDate": "2021-11-22T00:14:56Z",
+  "topContributors": [
+    {
+      "contributions": 9,
+      "login": "pnrobinson"
+    }
+  ]
+}

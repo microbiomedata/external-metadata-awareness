@@ -1,0 +1,26 @@
+{
+  "createdAt": "2023-04-11T17:49:38Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "🔍 Lookup classes and instantiate them with style",
+  "name": "class-resolver",
+  "updatedAt": "2023-04-02T14:23:14Z",
+  "url": "https://github.com/cmungall/class-resolver",
+  "firstCommitDate": "2023-04-06T14:50:06Z",
+  "lastCommitDate": "2023-04-06T14:50:06Z",
+  "topContributors": [
+    {
+      "contributions": 166,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 18,
+      "login": "mberr"
+    },
+    {
+      "contributions": 1,
+      "login": "rusty1s"
+    }
+  ]
+}

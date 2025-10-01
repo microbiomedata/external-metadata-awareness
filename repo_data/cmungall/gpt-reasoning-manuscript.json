@@ -1,0 +1,54 @@
+{
+  "createdAt": "2023-05-23T17:48:31Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "gpt-reasoning-manuscript",
+  "updatedAt": "2024-12-15T04:20:37Z",
+  "url": "https://github.com/cmungall/gpt-reasoning-manuscript",
+  "firstCommitDate": "2023-06-07T02:49:39Z",
+  "lastCommitDate": "2023-06-07T02:49:39Z",
+  "topContributors": [
+    {
+      "contributions": 229,
+      "login": "dhimmel"
+    },
+    {
+      "contributions": 50,
+      "login": "agitter"
+    },
+    {
+      "contributions": 45,
+      "login": "cgreene"
+    },
+    {
+      "contributions": 28,
+      "login": "vincerubinetti"
+    },
+    {
+      "contributions": 8,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 6,
+      "login": "vsmalladi"
+    },
+    {
+      "contributions": 5,
+      "login": "slochower"
+    },
+    {
+      "contributions": 4,
+      "login": "miltondp"
+    },
+    {
+      "contributions": 3,
+      "login": "rgieseke"
+    },
+    {
+      "contributions": 2,
+      "login": "ctb"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "createdAt": "2020-11-02T09:10:51Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "gwas-curation-service",
+  "updatedAt": "2025-08-27T12:32:37Z",
+  "url": "https://github.com/EBISPOT/gwas-curation-service",
+  "firstCommitDate": "2025-08-27T12:32:31Z",
+  "lastCommitDate": "2025-08-27T12:32:31Z",
+  "topContributors": [
+    {
+      "contributions": 392,
+      "login": "sajo-ebi"
+    },
+    {
+      "contributions": 145,
+      "login": "ala-ebi"
+    },
+    {
+      "contributions": 31,
+      "login": "sprintell"
+    },
+    {
+      "contributions": 1,
+      "login": "tudorgroza"
+    }
+  ]
+}

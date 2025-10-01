@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-12-02T16:49:47Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A tutorial on using Open Biological and Biomedical Ontologies (OBO)",
+  "name": "obo-tutorial",
+  "updatedAt": "2015-12-02T16:49:48Z",
+  "url": "https://github.com/cmungall/obo-tutorial",
+  "firstCommitDate": "2015-07-12T18:23:50Z",
+  "lastCommitDate": "2015-07-12T18:23:50Z",
+  "topContributors": [
+    {
+      "contributions": 31,
+      "login": "jamesaoverton"
+    }
+  ]
+}

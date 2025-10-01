@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-09-03T20:51:32Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "package for preparing KGs for AI model training",
+  "name": "kg-ai-prep",
+  "updatedAt": "2025-09-24T06:16:19Z",
+  "url": "https://github.com/CultureBotAI/kg-ai-prep",
+  "firstCommitDate": "2025-09-07T06:36:24Z",
+  "lastCommitDate": "2025-09-07T06:36:24Z",
+  "topContributors": [
+    {
+      "contributions": 9,
+      "login": "realmarcin"
+    }
+  ]
+}

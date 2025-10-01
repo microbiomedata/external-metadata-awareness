@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-04-22T14:55:25Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Tools for building a catalog of variables in ESS-DIVE reporting formats",
+  "name": "ess-dive-variables-catalog",
+  "updatedAt": "2025-04-30T00:16:16Z",
+  "url": "https://github.com/turbomam/ess-dive-variables-catalog",
+  "firstCommitDate": "2025-04-30T00:16:12Z",
+  "lastCommitDate": "2025-04-30T00:16:12Z",
+  "topContributors": [
+    {
+      "contributions": 39,
+      "login": "turbomam"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-09-25T06:40:30Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "official website of the CultureBotAI project",
+  "name": "CultureBotAI.github.io",
+  "updatedAt": "2025-09-30T03:44:48Z",
+  "url": "https://github.com/CultureBotAI/CultureBotAI.github.io",
+  "firstCommitDate": "2025-09-30T03:44:38Z",
+  "lastCommitDate": "2025-09-30T03:44:38Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "realmarcin"
+    }
+  ]
+}

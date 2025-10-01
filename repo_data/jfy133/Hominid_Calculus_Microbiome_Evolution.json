@@ -1,0 +1,26 @@
+{
+  "createdAt": "2019-10-30T08:57:05Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Additional supplementary information and code, data repository for Fellows Yates, J.A. et al. (2021) PNAS. DOI: http://dx.doi.org/10.1073/pnas.2021655118",
+  "name": "Hominid_Calculus_Microbiome_Evolution",
+  "updatedAt": "2025-08-21T08:16:20Z",
+  "url": "https://github.com/jfy133/Hominid_Calculus_Microbiome_Evolution",
+  "firstCommitDate": "2021-10-20T06:13:22Z",
+  "lastCommitDate": "2021-10-20T06:13:22Z",
+  "topContributors": [
+    {
+      "contributions": 133,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 53,
+      "login": "ivelsko"
+    },
+    {
+      "contributions": 1,
+      "login": "warinner"
+    }
+  ]
+}

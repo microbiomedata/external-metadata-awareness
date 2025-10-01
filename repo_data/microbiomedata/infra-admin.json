@@ -1,0 +1,46 @@
+{
+  "createdAt": "2023-03-21T23:31:43Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Tools and docs for managing NMDC servers, storage, and networking",
+  "name": "infra-admin",
+  "updatedAt": "2025-08-01T21:19:08Z",
+  "url": "https://github.com/microbiomedata/infra-admin",
+  "firstCommitDate": "2025-08-01T21:19:04Z",
+  "lastCommitDate": "2025-08-01T21:19:04Z",
+  "topContributors": [
+    {
+      "contributions": 207,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 41,
+      "login": "shreddd"
+    },
+    {
+      "contributions": 27,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 11,
+      "login": "aclum"
+    },
+    {
+      "contributions": 3,
+      "login": "scanon"
+    },
+    {
+      "contributions": 2,
+      "login": "mbthornton-lbl"
+    },
+    {
+      "contributions": 2,
+      "login": "naglepuff"
+    },
+    {
+      "contributions": 1,
+      "login": "turbomam"
+    }
+  ]
+}

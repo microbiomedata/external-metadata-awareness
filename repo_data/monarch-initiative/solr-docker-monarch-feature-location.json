@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-11-04T16:31:41Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Docker image to create the solr index for the feature-location core.",
+  "name": "solr-docker-monarch-feature-location",
+  "updatedAt": "2020-02-04T00:48:37Z",
+  "url": "https://github.com/monarch-initiative/solr-docker-monarch-feature-location",
+  "firstCommitDate": "2020-02-04T00:48:34Z",
+  "lastCommitDate": "2020-02-04T00:48:34Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 7,
+      "login": "jnguyenx"
+    }
+  ]
+}

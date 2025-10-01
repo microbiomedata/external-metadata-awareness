@@ -1,0 +1,26 @@
+{
+  "createdAt": "2022-03-03T14:33:25Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "semantic_engineer_test",
+  "updatedAt": "2022-03-07T18:30:39Z",
+  "url": "https://github.com/EBISPOT/semantic_engineer_test",
+  "firstCommitDate": "2022-03-07T18:30:35Z",
+  "lastCommitDate": "2022-03-07T18:30:35Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 2,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 2,
+      "login": "hkir-dev"
+    }
+  ]
+}

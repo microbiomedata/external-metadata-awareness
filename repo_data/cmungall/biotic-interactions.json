@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-05-13T01:45:04Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "LinkML model for biotic interactions - designed for use with OntoGPT",
+  "name": "biotic-interactions",
+  "updatedAt": "2023-05-13T01:45:04Z",
+  "url": "https://github.com/cmungall/biotic-interactions",
+  "firstCommitDate": "2023-05-12T20:48:55Z",
+  "lastCommitDate": "2023-05-12T20:48:55Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "diatomsRcool"
+    }
+  ]
+}

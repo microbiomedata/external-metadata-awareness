@@ -1,0 +1,22 @@
+{
+  "createdAt": "2015-10-12T18:44:36Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A simple system for specifying OWL class design patterns for OBO-ish ontologies.",
+  "name": "dead_simple_owl_design_patterns",
+  "updatedAt": "2018-07-06T18:15:57Z",
+  "url": "https://github.com/cmungall/dead_simple_owl_design_patterns",
+  "firstCommitDate": "2015-10-12T18:45:12Z",
+  "lastCommitDate": "2015-10-12T18:45:12Z",
+  "topContributors": [
+    {
+      "contributions": 79,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

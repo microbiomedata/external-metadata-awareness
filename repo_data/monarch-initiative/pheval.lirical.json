@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-02-09T12:24:23Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A PhEval plugin integrating LIRICAL for efficient phenotype and variant prioritisation in a standardised pipeline.",
+  "name": "pheval.lirical",
+  "updatedAt": "2025-03-28T16:25:45Z",
+  "url": "https://github.com/monarch-initiative/pheval.lirical",
+  "firstCommitDate": "2025-03-28T16:25:41Z",
+  "lastCommitDate": "2025-03-28T16:25:41Z",
+  "topContributors": [
+    {
+      "contributions": 134,
+      "login": "yaseminbridges"
+    }
+  ]
+}

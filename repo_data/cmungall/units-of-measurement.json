@@ -1,0 +1,26 @@
+{
+  "createdAt": "2022-04-19T17:13:59Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "units-of-measurement",
+  "updatedAt": "2022-02-15T09:33:47Z",
+  "url": "https://github.com/cmungall/units-of-measurement",
+  "firstCommitDate": "2021-09-13T14:10:48Z",
+  "lastCommitDate": "2021-09-13T14:10:48Z",
+  "topContributors": [
+    {
+      "contributions": 40,
+      "login": "beckyjackson"
+    },
+    {
+      "contributions": 7,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 3,
+      "login": "kaiiam"
+    }
+  ]
+}

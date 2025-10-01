@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-06-19T02:52:32Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Cookiecutter for DRAGON-AI projects",
+  "name": "dragon-ai-cookiecutter",
+  "updatedAt": "2024-09-11T04:44:06Z",
+  "url": "https://github.com/monarch-initiative/dragon-ai-cookiecutter",
+  "firstCommitDate": "2024-09-11T04:43:59Z",
+  "lastCommitDate": "2024-09-11T04:43:59Z",
+  "topContributors": [
+    {
+      "contributions": 13,
+      "login": "cmungall"
+    }
+  ]
+}

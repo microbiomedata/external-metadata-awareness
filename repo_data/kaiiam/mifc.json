@@ -1,0 +1,34 @@
+{
+  "createdAt": "2023-03-29T09:02:14Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A minimum information standard checklist formalizing the description of food composition data and related metadata.",
+  "name": "mifc",
+  "updatedAt": "2025-07-22T13:40:15Z",
+  "url": "https://github.com/kaiiam/mifc",
+  "firstCommitDate": "2025-07-22T13:39:39Z",
+  "lastCommitDate": "2025-07-22T13:39:39Z",
+  "topContributors": [
+    {
+      "contributions": 362,
+      "login": "kaiiam"
+    },
+    {
+      "contributions": 10,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 6,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 2,
+      "login": "GregLyonJIFSAN"
+    },
+    {
+      "contributions": 1,
+      "login": "ahasanzadeh13"
+    }
+  ]
+}

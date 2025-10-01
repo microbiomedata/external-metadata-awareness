@@ -1,0 +1,26 @@
+{
+  "createdAt": "2019-11-01T21:13:35Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A git repo for whatever code we produce for the midterm project.",
+  "name": "ACIC2019-Midterm",
+  "updatedAt": "2023-04-22T16:25:13Z",
+  "url": "https://github.com/kaiiam/ACIC2019-Midterm",
+  "firstCommitDate": "2019-11-01T22:08:14Z",
+  "lastCommitDate": "2019-11-01T22:08:14Z",
+  "topContributors": [
+    {
+      "contributions": 45,
+      "login": "zhxu73"
+    },
+    {
+      "contributions": 4,
+      "login": "kaiiam"
+    },
+    {
+      "contributions": 1,
+      "login": "JLHonors"
+    }
+  ]
+}

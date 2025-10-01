@@ -1,0 +1,18 @@
+{
+  "createdAt": "2014-12-10T21:29:46Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "owl utilities enhancing swipl semweb library",
+  "name": "swipl-owly",
+  "updatedAt": "2023-03-12T10:29:41Z",
+  "url": "https://github.com/cmungall/swipl-owly",
+  "firstCommitDate": "2014-12-10T21:33:08Z",
+  "lastCommitDate": "2014-12-10T21:33:08Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

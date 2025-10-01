@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-03-12T17:55:11Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "validate-mappings for GO-RHEA",
+  "name": "rhea-go-llm-analysis",
+  "updatedAt": "2024-05-11T16:31:12Z",
+  "url": "https://github.com/cmungall/rhea-go-llm-analysis",
+  "firstCommitDate": "2024-03-12T18:01:00Z",
+  "lastCommitDate": "2024-03-12T18:01:00Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

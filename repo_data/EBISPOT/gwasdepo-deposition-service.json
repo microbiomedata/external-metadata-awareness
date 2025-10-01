@@ -1,0 +1,30 @@
+{
+  "createdAt": "2020-02-16T10:50:56Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "gwasdepo-deposition-service",
+  "updatedAt": "2025-06-13T16:12:06Z",
+  "url": "https://github.com/EBISPOT/gwasdepo-deposition-service",
+  "firstCommitDate": "2025-06-13T16:11:58Z",
+  "lastCommitDate": "2025-06-13T16:11:58Z",
+  "topContributors": [
+    {
+      "contributions": 297,
+      "login": "sajo-ebi"
+    },
+    {
+      "contributions": 127,
+      "login": "ala-ebi"
+    },
+    {
+      "contributions": 42,
+      "login": "tudorgroza"
+    },
+    {
+      "contributions": 1,
+      "login": "jstewart-ebi"
+    }
+  ]
+}

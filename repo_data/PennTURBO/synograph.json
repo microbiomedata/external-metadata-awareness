@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-05-08T14:39:47Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "tools for moving data between Synthea CSV, and OMOP schema, and a TURBO RDF graph",
+  "name": "synograph",
+  "updatedAt": "2019-09-12T22:36:26Z",
+  "url": "https://github.com/PennTURBO/synograph",
+  "firstCommitDate": "2019-09-12T22:35:39Z",
+  "lastCommitDate": "2019-09-12T22:35:39Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "turbomam"
+    }
+  ]
+}

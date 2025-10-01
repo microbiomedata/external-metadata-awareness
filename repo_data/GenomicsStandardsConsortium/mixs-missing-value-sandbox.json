@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-09-05T18:29:16Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "experimentation with formal representations of missing data",
+  "name": "mixs-missing-value-sandbox",
+  "updatedAt": "2024-09-13T15:14:35Z",
+  "url": "https://github.com/GenomicsStandardsConsortium/mixs-missing-value-sandbox",
+  "firstCommitDate": "2024-09-13T15:14:31Z",
+  "lastCommitDate": "2024-09-13T15:14:31Z",
+  "topContributors": [
+    {
+      "contributions": 13,
+      "login": "turbomam"
+    }
+  ]
+}

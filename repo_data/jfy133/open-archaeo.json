@@ -1,0 +1,42 @@
+{
+  "createdAt": "2021-04-20T10:47:13Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A list of open source archaeological software and resources",
+  "name": "open-archaeo",
+  "updatedAt": "2021-05-03T07:09:40Z",
+  "url": "https://github.com/jfy133/open-archaeo",
+  "firstCommitDate": "2021-05-03T07:09:36Z",
+  "lastCommitDate": "2021-05-03T07:09:36Z",
+  "topContributors": [
+    {
+      "contributions": 190,
+      "login": "zackbatist"
+    },
+    {
+      "contributions": 30,
+      "login": "joeroe"
+    },
+    {
+      "contributions": 3,
+      "login": "MartinHinz"
+    },
+    {
+      "contributions": 2,
+      "login": "nevrome"
+    },
+    {
+      "contributions": 2,
+      "login": "dirkseidensticker"
+    },
+    {
+      "contributions": 2,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 1,
+      "login": "gitter-badger"
+    }
+  ]
+}

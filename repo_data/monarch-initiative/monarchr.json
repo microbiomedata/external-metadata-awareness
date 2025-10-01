@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-05-11T20:55:48Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "R package for easy access, manipulation, and analysis of the Monarch Initiative or other KGX-formatted knowledge graphs.",
+  "name": "monarchr",
+  "updatedAt": "2025-09-29T19:33:24Z",
+  "url": "https://github.com/monarch-initiative/monarchr",
+  "firstCommitDate": "2025-08-14T11:48:04Z",
+  "lastCommitDate": "2025-08-14T11:48:04Z",
+  "topContributors": [
+    {
+      "contributions": 270,
+      "login": "oneilsh"
+    },
+    {
+      "contributions": 7,
+      "login": "bschilder"
+    }
+  ]
+}

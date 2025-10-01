@@ -1,0 +1,54 @@
+{
+  "createdAt": "2019-02-26T02:16:59Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Bootstrap an OBO Library ontology",
+  "name": "ontology-development-kit",
+  "updatedAt": "2019-02-26T02:17:01Z",
+  "url": "https://github.com/kaiiam/ontology-development-kit",
+  "firstCommitDate": "2019-02-26T01:08:05Z",
+  "lastCommitDate": "2019-02-26T01:08:05Z",
+  "topContributors": [
+    {
+      "contributions": 154,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 70,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 25,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 10,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 3,
+      "login": "pbuttigieg"
+    },
+    {
+      "contributions": 2,
+      "login": "dougli1sqrd"
+    },
+    {
+      "contributions": 2,
+      "login": "bjonnh"
+    },
+    {
+      "contributions": 2,
+      "login": "marieALaporte"
+    },
+    {
+      "contributions": 2,
+      "login": "marijane"
+    },
+    {
+      "contributions": 1,
+      "login": "nicolevasilevsky"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-06-04T23:24:02Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "GitHub action for detecting AI mentions",
+  "name": "ai-mention-detector-action",
+  "updatedAt": "2025-06-04T23:27:42Z",
+  "url": "https://github.com/ai4curation/ai-mention-detector-action",
+  "firstCommitDate": "2025-06-04T23:27:40Z",
+  "lastCommitDate": "2025-06-04T23:27:40Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "createdAt": "2022-04-08T02:22:21Z",
+  "defaultBranchRef": {
+    "name": ""
+  },
+  "description": "",
+  "name": ".github",
+  "updatedAt": "2022-04-08T02:22:21Z",
+  "url": "https://github.com/INCATools/.github",
+  "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+  "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+}

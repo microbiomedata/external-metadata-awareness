@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-05-23T23:57:21Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "zfin-genotype-to-phenotype-ingest",
+  "updatedAt": "2024-09-05T00:22:09Z",
+  "url": "https://github.com/monarch-initiative/zfin-genotype-to-phenotype-ingest",
+  "firstCommitDate": "2024-09-05T00:22:03Z",
+  "lastCommitDate": "2024-09-05T00:22:03Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 3,
+      "login": "AO33"
+    }
+  ]
+}

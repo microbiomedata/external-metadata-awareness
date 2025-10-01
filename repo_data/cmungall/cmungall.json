@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-05-18T17:30:25Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "cmungall",
+  "updatedAt": "2022-05-18T17:30:36Z",
+  "url": "https://github.com/cmungall/cmungall",
+  "firstCommitDate": "2022-05-18T17:31:29Z",
+  "lastCommitDate": "2022-05-18T17:31:29Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

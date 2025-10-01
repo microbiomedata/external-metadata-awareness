@@ -1,0 +1,30 @@
+{
+  "createdAt": "2020-10-26T17:08:34Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Configuration to deploy ontotools using docker compose",
+  "name": "ontotools-docker",
+  "updatedAt": "2025-07-09T05:38:10Z",
+  "url": "https://github.com/EBISPOT/ontotools-docker",
+  "firstCommitDate": "2024-06-04T14:10:34Z",
+  "lastCommitDate": "2024-06-04T14:10:34Z",
+  "topContributors": [
+    {
+      "contributions": 14,
+      "login": "jamesamcl"
+    },
+    {
+      "contributions": 6,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 2,
+      "login": "henrietteharmse"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

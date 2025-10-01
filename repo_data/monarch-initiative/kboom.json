@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-02-10T04:16:30Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Bayes OWL Ontology Merging",
+  "name": "kboom",
+  "updatedAt": "2025-08-13T11:14:40Z",
+  "url": "https://github.com/monarch-initiative/kboom",
+  "firstCommitDate": "2022-07-18T20:26:35Z",
+  "lastCommitDate": "2022-07-18T20:26:35Z",
+  "topContributors": [
+    {
+      "contributions": 36,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 3,
+      "login": "nlharris"
+    }
+  ]
+}

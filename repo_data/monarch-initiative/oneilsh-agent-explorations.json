@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-09-28T18:28:58Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Explorations with AI agents",
+  "name": "oneilsh-agent-explorations",
+  "updatedAt": "2023-11-08T21:37:34Z",
+  "url": "https://github.com/monarch-initiative/oneilsh-agent-explorations",
+  "firstCommitDate": "2023-11-08T21:37:12Z",
+  "lastCommitDate": "2023-11-08T21:37:12Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "oneilsh"
+    }
+  ]
+}

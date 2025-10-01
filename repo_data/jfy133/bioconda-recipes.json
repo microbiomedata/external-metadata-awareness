@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-09-08T18:21:57Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Conda recipes for the bioconda channel.",
+  "name": "bioconda-recipes",
+  "updatedAt": "2025-09-19T11:26:52Z",
+  "url": "https://github.com/jfy133/bioconda-recipes",
+  "firstCommitDate": "2025-09-19T11:25:38Z",
+  "lastCommitDate": "2025-09-19T11:25:38Z",
+  "topContributors": [
+    {
+      "contributions": 19753,
+      "login": "BiocondaBot"
+    },
+    {
+      "contributions": 3176,
+      "login": "bgruening"
+    },
+    {
+      "contributions": 1505,
+      "login": "druvus"
+    },
+    {
+      "contributions": 1417,
+      "login": "johanneskoester"
+    },
+    {
+      "contributions": 1326,
+      "login": "daler"
+    },
+    {
+      "contributions": 1113,
+      "login": "bioconda-bot"
+    },
+    {
+      "contributions": 1014,
+      "login": "epruesse"
+    },
+    {
+      "contributions": 882,
+      "login": "dpryan79"
+    },
+    {
+      "contributions": 868,
+      "login": "mencian"
+    },
+    {
+      "contributions": 840,
+      "login": "chapmanb"
+    }
+  ]
+}

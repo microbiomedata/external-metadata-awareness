@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-01-04T19:02:32Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "statement-aggregator",
+  "updatedAt": "2025-01-04T19:09:03Z",
+  "url": "https://github.com/turbomam/statement-aggregator",
+  "firstCommitDate": "2025-01-04T19:08:57Z",
+  "lastCommitDate": "2025-01-04T19:08:57Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "turbomam"
+    }
+  ]
+}

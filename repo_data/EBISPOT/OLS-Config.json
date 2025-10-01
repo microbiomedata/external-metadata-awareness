@@ -1,0 +1,38 @@
+{
+  "createdAt": "2019-11-28T15:14:02Z",
+  "defaultBranchRef": {
+    "name": "prod"
+  },
+  "description": "Configuration for OLS",
+  "name": "OLS-Config",
+  "updatedAt": "2023-01-08T21:48:55Z",
+  "url": "https://github.com/EBISPOT/OLS-Config",
+  "firstCommitDate": "2022-12-19T08:47:12Z",
+  "lastCommitDate": "2022-12-19T08:47:12Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "jamesamcl"
+    },
+    {
+      "contributions": 12,
+      "login": "serjoshua"
+    },
+    {
+      "contributions": 11,
+      "login": "henrietteharmse"
+    },
+    {
+      "contributions": 1,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 1,
+      "login": "rays22"
+    },
+    {
+      "contributions": 1,
+      "login": "shawntanzk"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "createdAt": "2013-10-11T10:33:48Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Cellular Microscopy Phenotype Ontology",
+  "name": "CMPO",
+  "updatedAt": "2020-11-05T15:29:20Z",
+  "url": "https://github.com/EBISPOT/CMPO",
+  "firstCommitDate": "2018-01-04T14:33:17Z",
+  "lastCommitDate": "2018-01-04T14:33:17Z",
+  "topContributors": [
+    {
+      "contributions": 4121,
+      "login": "tburdett"
+    },
+    {
+      "contributions": 77,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 1,
+      "login": "sbesson"
+    }
+  ]
+}

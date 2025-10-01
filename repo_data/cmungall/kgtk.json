@@ -1,0 +1,46 @@
+{
+  "createdAt": "2020-06-14T02:22:15Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Knowledge Graph Toolkit ",
+  "name": "kgtk",
+  "updatedAt": "2020-06-14T02:22:17Z",
+  "url": "https://github.com/cmungall/kgtk",
+  "firstCommitDate": "2020-06-12T22:53:34Z",
+  "lastCommitDate": "2020-06-12T22:53:34Z",
+  "topContributors": [
+    {
+      "contributions": 123,
+      "login": "rongpenl"
+    },
+    {
+      "contributions": 85,
+      "login": "filievski"
+    },
+    {
+      "contributions": 72,
+      "login": "naren954"
+    },
+    {
+      "contributions": 57,
+      "login": "GreatYYX"
+    },
+    {
+      "contributions": 49,
+      "login": "ckxz105"
+    },
+    {
+      "contributions": 39,
+      "login": "dgarijo"
+    },
+    {
+      "contributions": 37,
+      "login": "saggu"
+    },
+    {
+      "contributions": 2,
+      "login": "bhatiadivij"
+    }
+  ]
+}

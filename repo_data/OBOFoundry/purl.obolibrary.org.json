@@ -1,0 +1,54 @@
+{
+  "createdAt": "2014-11-26T14:27:30Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A system for managing OBO PURLs",
+  "name": "purl.obolibrary.org",
+  "updatedAt": "2025-09-23T12:47:51Z",
+  "url": "https://github.com/OBOFoundry/purl.obolibrary.org",
+  "firstCommitDate": "2025-09-03T15:16:38Z",
+  "lastCommitDate": "2025-09-03T15:16:38Z",
+  "topContributors": [
+    {
+      "contributions": 897,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 280,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 258,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 71,
+      "login": "zhengj2007"
+    },
+    {
+      "contributions": 47,
+      "login": "nataled"
+    },
+    {
+      "contributions": 47,
+      "login": "abessiari"
+    },
+    {
+      "contributions": 42,
+      "login": "ramonawalls"
+    },
+    {
+      "contributions": 39,
+      "login": "alanruttenberg"
+    },
+    {
+      "contributions": 34,
+      "login": "hoganwr"
+    },
+    {
+      "contributions": 32,
+      "login": "mcourtot"
+    }
+  ]
+}

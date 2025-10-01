@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-08-28T01:02:22Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "EXPERIMENTAL rendering of phenopackets in linkml",
+  "name": "linkml-phenopackets",
+  "updatedAt": "2024-12-17T16:10:21Z",
+  "url": "https://github.com/cmungall/linkml-phenopackets",
+  "firstCommitDate": "2024-07-03T17:04:02Z",
+  "lastCommitDate": "2024-07-03T17:04:02Z",
+  "topContributors": [
+    {
+      "contributions": 51,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 5,
+      "login": "sujaypatil96"
+    }
+  ]
+}

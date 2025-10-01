@@ -1,0 +1,26 @@
+{
+  "createdAt": "2013-07-12T16:23:17Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Cross-platform client and server JavaScript library, with a concentration on Solr, graphs, utilities, and convenience methods.",
+  "name": "bbop-js",
+  "updatedAt": "2015-03-16T23:02:40Z",
+  "url": "https://github.com/cmungall/bbop-js",
+  "firstCommitDate": "2013-07-26T16:11:14Z",
+  "lastCommitDate": "2013-07-26T16:11:14Z",
+  "topContributors": [
+    {
+      "contributions": 303,
+      "login": "kltm"
+    },
+    {
+      "contributions": 28,
+      "login": "skinner"
+    },
+    {
+      "contributions": 12,
+      "login": "cmungall"
+    }
+  ]
+}

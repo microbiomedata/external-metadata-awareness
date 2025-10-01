@@ -1,0 +1,54 @@
+{
+  "createdAt": "2015-12-15T14:28:35Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Ontology lifecycle management",
+  "name": "ontology-development-kit",
+  "updatedAt": "2025-09-21T11:51:13Z",
+  "url": "https://github.com/INCATools/ontology-development-kit",
+  "firstCommitDate": "2025-09-20T19:04:17Z",
+  "lastCommitDate": "2025-09-20T19:04:17Z",
+  "topContributors": [
+    {
+      "contributions": 1415,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 468,
+      "login": "gouttegd"
+    },
+    {
+      "contributions": 197,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 39,
+      "login": "shawntanzk"
+    },
+    {
+      "contributions": 27,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 26,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 15,
+      "login": "anitacaron"
+    },
+    {
+      "contributions": 11,
+      "login": "nicolevasilevsky"
+    },
+    {
+      "contributions": 9,
+      "login": "StroemPhi"
+    },
+    {
+      "contributions": 6,
+      "login": "ehartley"
+    }
+  ]
+}

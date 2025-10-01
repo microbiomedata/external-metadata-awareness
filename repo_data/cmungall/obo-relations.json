@@ -1,0 +1,30 @@
+{
+  "createdAt": "2015-11-18T21:06:30Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "RO is an ontology of relations for use with biological ontologies",
+  "name": "obo-relations",
+  "updatedAt": "2015-11-18T21:06:33Z",
+  "url": "https://github.com/cmungall/obo-relations",
+  "firstCommitDate": "2015-11-05T23:36:58Z",
+  "lastCommitDate": "2015-11-05T23:36:58Z",
+  "topContributors": [
+    {
+      "contributions": 294,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 19,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 5,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 2,
+      "login": "mbrush"
+    }
+  ]
+}

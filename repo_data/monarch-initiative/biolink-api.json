@@ -1,0 +1,54 @@
+{
+  "createdAt": "2016-12-17T01:42:34Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "API for linked biological knowledge",
+  "name": "biolink-api",
+  "updatedAt": "2025-09-12T03:09:58Z",
+  "url": "https://github.com/monarch-initiative/biolink-api",
+  "firstCommitDate": "2022-04-26T17:04:05Z",
+  "lastCommitDate": "2022-04-26T17:04:05Z",
+  "topContributors": [
+    {
+      "contributions": 252,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 193,
+      "login": "deepakunni3"
+    },
+    {
+      "contributions": 144,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 25,
+      "login": "selewis"
+    },
+    {
+      "contributions": 18,
+      "login": "falquaddoomi"
+    },
+    {
+      "contributions": 11,
+      "login": "jnguyenx"
+    },
+    {
+      "contributions": 10,
+      "login": "lpalbou"
+    },
+    {
+      "contributions": 4,
+      "login": "nathandunn"
+    },
+    {
+      "contributions": 2,
+      "login": "gaurav"
+    },
+    {
+      "contributions": 2,
+      "login": "jmcmurry"
+    }
+  ]
+}

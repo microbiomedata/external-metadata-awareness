@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-07-08T15:50:09Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "This is a repository to coordinate the metadata and dissemination of all Monarch-produced data sources across teams and organisations.",
+  "name": "monarch_data_registry",
+  "updatedAt": "2022-11-02T10:15:31Z",
+  "url": "https://github.com/monarch-initiative/monarch_data_registry",
+  "firstCommitDate": "2022-11-02T10:15:25Z",
+  "lastCommitDate": "2022-11-02T10:15:25Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "matentzn"
+    }
+  ]
+}

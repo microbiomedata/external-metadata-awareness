@@ -1,0 +1,38 @@
+{
+  "createdAt": "2021-05-07T14:48:08Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Configuration utility for generating linkml models in the linkml-model-template",
+  "name": "archived-template-configurator",
+  "updatedAt": "2023-01-28T00:49:45Z",
+  "url": "https://github.com/linkml/archived-template-configurator",
+  "firstCommitDate": "2021-12-18T00:38:29Z",
+  "lastCommitDate": "2021-12-18T00:38:29Z",
+  "topContributors": [
+    {
+      "contributions": 27,
+      "login": "hsolbrig"
+    },
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "actions-user"
+    },
+    {
+      "contributions": 1,
+      "login": "joeflack4"
+    },
+    {
+      "contributions": 1,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 1,
+      "login": "sujaypatil96"
+    }
+  ]
+}

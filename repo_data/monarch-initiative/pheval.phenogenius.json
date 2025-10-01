@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-11-25T18:00:12Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A PhEval plugin for integrating PhenoGenius, enabling gene prioritisation based on phenotypic data in a standardised pipeline.",
+  "name": "pheval.phenogenius",
+  "updatedAt": "2025-01-20T13:28:23Z",
+  "url": "https://github.com/monarch-initiative/pheval.phenogenius",
+  "firstCommitDate": "2024-12-02T10:58:14Z",
+  "lastCommitDate": "2024-12-02T10:58:14Z",
+  "topContributors": [
+    {
+      "contributions": 21,
+      "login": "yaseminbridges"
+    }
+  ]
+}

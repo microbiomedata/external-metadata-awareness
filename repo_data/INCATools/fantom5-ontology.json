@@ -1,0 +1,18 @@
+{
+  "createdAt": "2013-06-21T19:21:35Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "ontology categorizing samples from FANTOM5 project",
+  "name": "fantom5-ontology",
+  "updatedAt": "2025-07-13T06:45:45Z",
+  "url": "https://github.com/INCATools/fantom5-ontology",
+  "firstCommitDate": "2015-04-10T03:18:33Z",
+  "lastCommitDate": "2015-04-10T03:18:33Z",
+  "topContributors": [
+    {
+      "contributions": 57,
+      "login": "cmungall"
+    }
+  ]
+}

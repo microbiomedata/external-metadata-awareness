@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-06-13T21:32:00Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Relation Graph early draft rust/python",
+  "name": "relation-graph-py",
+  "updatedAt": "2022-06-13T21:32:12Z",
+  "url": "https://github.com/cmungall/relation-graph-py",
+  "firstCommitDate": "2022-06-13T21:31:32Z",
+  "lastCommitDate": "2022-06-13T21:31:32Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

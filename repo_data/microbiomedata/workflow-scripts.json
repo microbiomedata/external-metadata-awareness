@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-04-17T22:00:04Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Collection of scripts for handling the workflows",
+  "name": "workflow-scripts",
+  "updatedAt": "2021-11-02T16:08:47Z",
+  "url": "https://github.com/microbiomedata/workflow-scripts",
+  "firstCommitDate": "2022-05-20T22:26:27Z",
+  "lastCommitDate": "2022-05-20T22:26:27Z",
+  "topContributors": [
+    {
+      "contributions": 28,
+      "login": "scanon"
+    }
+  ]
+}

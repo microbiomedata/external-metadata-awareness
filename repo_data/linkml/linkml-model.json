@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-03-14T18:37:27Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Link Modeling Language (LinkML) model",
+  "name": "linkml-model",
+  "updatedAt": "2025-08-07T07:28:58Z",
+  "url": "https://github.com/linkml/linkml-model",
+  "firstCommitDate": "2025-05-30T17:47:12Z",
+  "lastCommitDate": "2025-05-30T17:47:12Z",
+  "topContributors": [
+    {
+      "contributions": 311,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 115,
+      "login": "hsolbrig"
+    },
+    {
+      "contributions": 89,
+      "login": "actions-user"
+    },
+    {
+      "contributions": 38,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 18,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 14,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 10,
+      "login": "yarikoptic"
+    },
+    {
+      "contributions": 10,
+      "login": "sneakers-the-rat"
+    },
+    {
+      "contributions": 6,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 5,
+      "login": "vincentvialard"
+    }
+  ]
+}

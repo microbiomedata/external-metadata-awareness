@@ -1,0 +1,34 @@
+{
+  "createdAt": "2022-12-27T20:17:27Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "CLI tool to convert metadata submissions from the NMDC submission portal to user facility Excel templates",
+  "name": "metadata-for-user-facility-template-transformations",
+  "updatedAt": "2025-08-28T23:28:25Z",
+  "url": "https://github.com/microbiomedata/metadata-for-user-facility-template-transformations",
+  "firstCommitDate": "2025-08-28T23:28:21Z",
+  "lastCommitDate": "2025-08-28T23:28:21Z",
+  "topContributors": [
+    {
+      "contributions": 43,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 23,
+      "login": "cristina-stonepedraza"
+    },
+    {
+      "contributions": 11,
+      "login": "Natalie-Winans"
+    },
+    {
+      "contributions": 6,
+      "login": "mslarae13"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

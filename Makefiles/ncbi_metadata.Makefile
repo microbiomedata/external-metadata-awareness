@@ -17,10 +17,13 @@ WGET=wget
 .PHONY: load-biosamples-into-mongo \
         purge \
         load_acceptable_sized_leaf_bioprojects_into_mongodb \
+        flatten_bioprojects \
         flatten_biosamples_ids \
         flatten_biosamples_links \
         flatten_biosample_attributes \
-        flatten_biosample_packages
+        flatten_biosample_packages \
+        create-environmental-candidates-2017-plus \
+        copy-environmental-candidates-to-ncbi-metadata
 
 purge:
 	rm -rf downloads/biosample_set.xml*
@@ -137,6 +140,13 @@ local/bioproject_xpath_counts.json: downloads/bioproject.xml
 		--output $@ \
 		--xml-file $<
 
+flatten_bioprojects: mongo-js/flatten_bioprojects_minimal.js
+	date && time $(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/flatten_bioprojects_minimal.js \
+		--verbose && date
+
 flatten_biosamples_ids:
 	date && time $(RUN) mongo-js-executor \
 		--mongo-uri "$(MONGO_URI)" \
@@ -168,13 +178,35 @@ flatten_biosample_attributes:
 #biosample_id
 #harmonized_name
 
-flatten_biosample_packages:
+aggregate-biosample-package-usage:
 	@date
-	@echo "Aggregating biosample packages from biosamples_flattened..."
+	@echo "Aggregating biosample package usage counts..."
 	$(RUN) mongo-js-executor \
 		--mongo-uri "$(MONGO_URI)" \
 		$(ENV_FILE_OPTION) \
-		--js-file mongo-js/flatten_biosample_packages.js \
+		--js-file mongo-js/aggregate_biosample_package_usage.js \
 		--verbose
+	@date
+
+create-environmental-candidates-2017-plus:
+	@date
+	@echo "Creating environmental candidates collection (2017+, complete triads)..."
+	$(RUN) mongo-connect \
+		--uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--connect \
+		--verbose \
+		--command 'db.biosamples.aggregate([{$$match: {"Attributes.Attribute": {$$all: [{$$elemMatch: {harmonized_name: "collection_date", content: {$$gte: "2017-01-01"}}}, {$$elemMatch: {harmonized_name: "env_broad_scale", content: {$$exists: true, $$ne: null, $$ne: ""}}}, {$$elemMatch: {harmonized_name: "env_local_scale", content: {$$exists: true, $$ne: null, $$ne: ""}}}, {$$elemMatch: {harmonized_name: "env_medium", content: {$$exists: true, $$ne: null, $$ne: ""}}}]}}}, {$$out: "environmental_candidates_2017_plus"}])'
+	@date
+
+copy-environmental-candidates-to-ncbi-metadata:
+	@date
+	@echo "Copying environmental candidates to ncbi_metadata.biosamples..."
+	$(RUN) mongo-connect \
+		--uri "mongodb://localhost:27017/ncbi_metadata_20250919" \
+		$(ENV_FILE_OPTION) \
+		--connect \
+		--verbose \
+		--command 'db.environmental_candidates_2017_plus.aggregate([{$$out: {db: "ncbi_metadata", coll: "biosamples"}}])'
 	@date
 

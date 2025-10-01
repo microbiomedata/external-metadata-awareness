@@ -1,0 +1,34 @@
+{
+  "createdAt": "2019-05-13T23:14:49Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A modern web UI for revealing and understanding Monarch Initiative information.",
+  "name": "monarch-ui",
+  "updatedAt": "2019-05-13T23:14:52Z",
+  "url": "https://github.com/cmungall/monarch-ui",
+  "firstCommitDate": "2019-05-10T23:22:33Z",
+  "lastCommitDate": "2019-05-10T23:22:33Z",
+  "topContributors": [
+    {
+      "contributions": 53,
+      "login": "DoctorBud"
+    },
+    {
+      "contributions": 34,
+      "login": "nathandunn"
+    },
+    {
+      "contributions": 1,
+      "login": "jmcmurry"
+    },
+    {
+      "contributions": 1,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 1,
+      "login": "putmantime"
+    }
+  ]
+}

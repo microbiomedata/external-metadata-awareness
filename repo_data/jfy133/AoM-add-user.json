@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-11-13T14:15:55Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Simple form to let users for the „Academics on Mastodon“ lists generate their csv entries and send them via E-mail",
+  "name": "AoM-add-user",
+  "updatedAt": "2022-11-13T14:20:39Z",
+  "url": "https://github.com/jfy133/AoM-add-user",
+  "firstCommitDate": "2022-11-14T08:39:46Z",
+  "lastCommitDate": "2022-11-14T08:39:46Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "trutzig89182"
+    },
+    {
+      "contributions": 4,
+      "login": "jfy133"
+    }
+  ]
+}

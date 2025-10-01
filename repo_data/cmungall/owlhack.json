@@ -1,0 +1,18 @@
+{
+  "createdAt": "2013-02-19T00:41:11Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "library for hacking owl in perl",
+  "name": "owlhack",
+  "updatedAt": "2014-09-09T08:27:37Z",
+  "url": "https://github.com/cmungall/owlhack",
+  "firstCommitDate": "2013-02-24T22:41:13Z",
+  "lastCommitDate": "2013-02-24T22:41:13Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "cmungall"
+    }
+  ]
+}

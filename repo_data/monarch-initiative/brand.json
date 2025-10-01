@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-08-25T17:23:17Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Single source of truth for Monarch Initiative brand assets and resources (e.g. logos",
+  "name": "brand",
+  "updatedAt": "2021-09-22T18:31:58Z",
+  "url": "https://github.com/monarch-initiative/brand",
+  "firstCommitDate": "2021-09-22T18:31:55Z",
+  "lastCommitDate": "2021-09-22T18:31:55Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "vincerubinetti"
+    }
+  ]
+}

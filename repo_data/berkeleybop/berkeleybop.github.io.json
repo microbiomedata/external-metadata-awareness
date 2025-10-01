@@ -1,0 +1,54 @@
+{
+  "createdAt": "2016-05-09T23:54:12Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Homepages for the Berkeley BOP.",
+  "name": "berkeleybop.github.io",
+  "updatedAt": "2025-09-29T22:01:26Z",
+  "url": "https://github.com/berkeleybop/berkeleybop.github.io",
+  "firstCommitDate": "2025-09-29T22:01:18Z",
+  "lastCommitDate": "2025-09-29T22:01:18Z",
+  "topContributors": [
+    {
+      "contributions": 374,
+      "login": "nlharris"
+    },
+    {
+      "contributions": 68,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 39,
+      "login": "nathandunn"
+    },
+    {
+      "contributions": 38,
+      "login": "kltm"
+    },
+    {
+      "contributions": 14,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 12,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 11,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 11,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 8,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 8,
+      "login": "deepakunni3"
+    }
+  ]
+}

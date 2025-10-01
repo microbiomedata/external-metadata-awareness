@@ -1,0 +1,42 @@
+{
+  "createdAt": "2016-03-10T21:14:04Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Ontology for representing scientific evidence and provenance information",
+  "name": "SEPIO-ontology",
+  "updatedAt": "2025-06-16T12:23:17Z",
+  "url": "https://github.com/monarch-initiative/SEPIO-ontology",
+  "firstCommitDate": "2024-07-26T14:08:10Z",
+  "lastCommitDate": "2024-07-26T14:08:10Z",
+  "topContributors": [
+    {
+      "contributions": 261,
+      "login": "mbrush"
+    },
+    {
+      "contributions": 25,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 2,
+      "login": "tnavatar"
+    },
+    {
+      "contributions": 1,
+      "login": "jhpoelen"
+    },
+    {
+      "contributions": 1,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 1,
+      "login": "pfabry"
+    }
+  ]
+}

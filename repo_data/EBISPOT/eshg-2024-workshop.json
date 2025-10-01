@@ -1,0 +1,26 @@
+{
+  "createdAt": "2024-05-09T12:26:59Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Workshop material for the European Human Genetics Conference 2024",
+  "name": "eshg-2024-workshop",
+  "updatedAt": "2024-07-22T13:30:27Z",
+  "url": "https://github.com/EBISPOT/eshg-2024-workshop",
+  "firstCommitDate": "2024-07-22T13:30:22Z",
+  "lastCommitDate": "2024-07-22T13:30:22Z",
+  "topContributors": [
+    {
+      "contributions": 28,
+      "login": "nebfield"
+    },
+    {
+      "contributions": 9,
+      "login": "eks-ebi"
+    },
+    {
+      "contributions": 1,
+      "login": "smlmbrt"
+    }
+  ]
+}

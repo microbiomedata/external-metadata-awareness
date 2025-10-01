@@ -1,0 +1,26 @@
+{
+  "createdAt": "2019-12-12T17:39:17Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "data-model-harmonization",
+  "updatedAt": "2021-10-26T00:12:59Z",
+  "url": "https://github.com/cancerDHC/data-model-harmonization",
+  "firstCommitDate": "2021-10-26T00:12:52Z",
+  "lastCommitDate": "2021-10-26T00:12:52Z",
+  "topContributors": [
+    {
+      "contributions": 65,
+      "login": "ShahimEssaid"
+    },
+    {
+      "contributions": 36,
+      "login": "mbrush"
+    },
+    {
+      "contributions": 18,
+      "login": "bfurner"
+    }
+  ]
+}

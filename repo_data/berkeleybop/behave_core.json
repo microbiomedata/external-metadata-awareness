@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-03-17T19:51:24Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A python library of common functionality and steps for use with the Behave testing framework.",
+  "name": "behave_core",
+  "updatedAt": "2015-03-18T20:01:06Z",
+  "url": "https://github.com/berkeleybop/behave_core",
+  "firstCommitDate": "2015-03-18T20:01:03Z",
+  "lastCommitDate": "2015-03-18T20:01:03Z",
+  "topContributors": [
+    {
+      "contributions": 14,
+      "login": "kltm"
+    }
+  ]
+}

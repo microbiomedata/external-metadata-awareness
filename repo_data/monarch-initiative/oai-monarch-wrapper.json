@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-04-18T20:49:36Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Alpha test for a Monarch-backed plugin for ChatGPT.",
+  "name": "oai-monarch-wrapper",
+  "updatedAt": "2023-05-01T15:30:01Z",
+  "url": "https://github.com/monarch-initiative/oai-monarch-wrapper",
+  "firstCommitDate": "2023-04-18T20:51:53Z",
+  "lastCommitDate": "2023-04-18T20:51:53Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "oneilsh"
+    }
+  ]
+}

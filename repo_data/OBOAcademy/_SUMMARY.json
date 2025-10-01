@@ -1,0 +1,74 @@
+[
+  {
+    "createdAt": "2024-07-10T14:07:37Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "This repo is for managing the OBO Academy Challenge 2024",
+    "name": "obo-academy-challenge-2024",
+    "updatedAt": "2024-07-24T08:38:25Z",
+    "url": "https://github.com/OBOAcademy/obo-academy-challenge-2024",
+    "firstCommitDate": "2024-07-24T08:38:21Z",
+    "lastCommitDate": "2024-07-24T08:38:21Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-06-03T13:50:20Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "OBO Organized Knowledge: Training materials for becoming an OBO engineer ",
+    "name": "obook",
+    "updatedAt": "2025-09-27T22:09:57Z",
+    "url": "https://github.com/OBOAcademy/obook",
+    "firstCommitDate": "2025-07-17T17:53:25Z",
+    "lastCommitDate": "2025-07-17T17:53:25Z",
+    "topContributors": [
+      {
+        "contributions": 1197,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 293,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 168,
+        "login": "shawntanzk"
+      },
+      {
+        "contributions": 79,
+        "login": "sagehrke"
+      },
+      {
+        "contributions": 61,
+        "login": "valecipriani"
+      },
+      {
+        "contributions": 48,
+        "login": "beckyjackson"
+      },
+      {
+        "contributions": 40,
+        "login": "jamesaoverton"
+      },
+      {
+        "contributions": 33,
+        "login": "balhoff"
+      },
+      {
+        "contributions": 27,
+        "login": "sabrinatoro"
+      },
+      {
+        "contributions": 26,
+        "login": "yaseminbridges"
+      }
+    ]
+  }
+]

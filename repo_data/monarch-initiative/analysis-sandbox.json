@@ -1,0 +1,26 @@
+{
+  "createdAt": "2016-05-30T21:56:30Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Scripts to analyze monarch data sets and scigraph",
+  "name": "analysis-sandbox",
+  "updatedAt": "2021-11-18T15:51:12Z",
+  "url": "https://github.com/monarch-initiative/analysis-sandbox",
+  "firstCommitDate": "2021-11-18T15:51:02Z",
+  "lastCommitDate": "2021-11-18T15:51:02Z",
+  "topContributors": [
+    {
+      "contributions": 141,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 3,
+      "login": "monicacecilia"
+    },
+    {
+      "contributions": 2,
+      "login": "jmcmurry"
+    }
+  ]
+}

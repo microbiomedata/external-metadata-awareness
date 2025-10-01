@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-09-30T13:14:31Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "OWL semantics for 1g property graph data model",
+  "name": "owl1g",
+  "updatedAt": "2022-09-30T13:14:43Z",
+  "url": "https://github.com/cmungall/owl1g",
+  "firstCommitDate": "2022-09-30T13:15:50Z",
+  "lastCommitDate": "2022-09-30T13:15:50Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

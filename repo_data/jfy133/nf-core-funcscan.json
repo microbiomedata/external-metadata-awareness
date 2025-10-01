@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-12-15T12:30:18Z",
+  "defaultBranchRef": {
+    "name": "dev"
+  },
+  "description": "Screening of functional components and natural products from assembled contigs",
+  "name": "nf-core-funcscan",
+  "updatedAt": "2025-06-01T13:47:17Z",
+  "url": "https://github.com/jfy133/nf-core-funcscan",
+  "firstCommitDate": "2024-09-06T12:06:50Z",
+  "lastCommitDate": "2024-09-06T12:06:50Z",
+  "topContributors": [
+    {
+      "contributions": 499,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 300,
+      "login": "Darcy220606"
+    },
+    {
+      "contributions": 188,
+      "login": "jasmezz"
+    },
+    {
+      "contributions": 171,
+      "login": "louperelo"
+    },
+    {
+      "contributions": 45,
+      "login": "nf-core-bot"
+    },
+    {
+      "contributions": 25,
+      "login": "Vedanth-Ramji"
+    },
+    {
+      "contributions": 6,
+      "login": "Midnighter"
+    },
+    {
+      "contributions": 3,
+      "login": "tavareshugo"
+    },
+    {
+      "contributions": 3,
+      "login": "mashehu"
+    },
+    {
+      "contributions": 2,
+      "login": "adamrtalbot"
+    }
+  ]
+}

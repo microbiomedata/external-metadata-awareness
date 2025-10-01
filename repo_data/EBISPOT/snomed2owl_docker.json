@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-06-09T15:42:44Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "snomed2owl docker container wrapping the official SNOMED tool kit for converting a SNOMED zip archive to OWL",
+  "name": "snomed2owl_docker",
+  "updatedAt": "2022-08-19T12:16:55Z",
+  "url": "https://github.com/EBISPOT/snomed2owl_docker",
+  "firstCommitDate": "2022-08-19T12:18:43Z",
+  "lastCommitDate": "2022-08-19T12:18:43Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "matentzn"
+    }
+  ]
+}

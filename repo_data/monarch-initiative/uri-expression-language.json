@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-06-17T16:21:38Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "uri-expression-language",
+  "updatedAt": "2025-08-19T04:31:44Z",
+  "url": "https://github.com/monarch-initiative/uri-expression-language",
+  "firstCommitDate": "2023-11-10T12:26:44Z",
+  "lastCommitDate": "2023-11-10T12:26:44Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "matentzn"
+    }
+  ]
+}

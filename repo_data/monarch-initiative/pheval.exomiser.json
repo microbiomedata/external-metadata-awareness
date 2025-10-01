@@ -1,0 +1,30 @@
+{
+  "createdAt": "2022-11-17T14:18:38Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Exomiser plugin for PhEval.",
+  "name": "pheval.exomiser",
+  "updatedAt": "2025-07-04T15:24:40Z",
+  "url": "https://github.com/monarch-initiative/pheval.exomiser",
+  "firstCommitDate": "2025-07-04T15:24:33Z",
+  "lastCommitDate": "2025-07-04T15:24:33Z",
+  "topContributors": [
+    {
+      "contributions": 400,
+      "login": "yaseminbridges"
+    },
+    {
+      "contributions": 22,
+      "login": "julesjacobsen"
+    },
+    {
+      "contributions": 13,
+      "login": "souzadevinicius"
+    },
+    {
+      "contributions": 3,
+      "login": "matentzn"
+    }
+  ]
+}

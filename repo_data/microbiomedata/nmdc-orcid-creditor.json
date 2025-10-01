@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-10-05T06:26:12Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Web app NMDC team members use to credit ambassadors and champions via ORCID",
+  "name": "nmdc-orcid-creditor",
+  "updatedAt": "2025-08-07T23:35:02Z",
+  "url": "https://github.com/microbiomedata/nmdc-orcid-creditor",
+  "firstCommitDate": "2025-08-07T23:34:58Z",
+  "lastCommitDate": "2025-08-07T23:34:58Z",
+  "topContributors": [
+    {
+      "contributions": 92,
+      "login": "eecavanna"
+    }
+  ]
+}

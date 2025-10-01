@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-11-19T14:02:42Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Terraform, scripts, and documentation for the monarch public file server",
+  "name": "monarch-file-server",
+  "updatedAt": "2022-08-31T17:54:51Z",
+  "url": "https://github.com/monarch-initiative/monarch-file-server",
+  "firstCommitDate": "2024-01-23T18:46:52Z",
+  "lastCommitDate": "2024-01-23T18:46:52Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 2,
+      "login": "kshefchek"
+    }
+  ]
+}

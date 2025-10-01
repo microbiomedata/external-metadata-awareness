@@ -1,0 +1,308 @@
+[
+  {
+    "createdAt": "2019-10-03T13:20:41Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "an ontology for biogeographic areas",
+    "name": "biorealm",
+    "updatedAt": "2022-04-20T10:12:58Z",
+    "url": "https://github.com/EnvironmentOntology/biorealm",
+    "firstCommitDate": "2022-04-23T06:08:18Z",
+    "lastCommitDate": "2022-04-23T06:08:18Z",
+    "topContributors": [
+      {
+        "contributions": 13,
+        "login": "thearyung"
+      },
+      {
+        "contributions": 9,
+        "login": "pbuttigieg"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-05-10T14:48:12Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Modular environmental exposures ontology",
+    "name": "environmental-exposure-ontology",
+    "updatedAt": "2025-06-19T13:53:57Z",
+    "url": "https://github.com/EnvironmentOntology/environmental-exposure-ontology",
+    "firstCommitDate": "2025-06-01T14:26:16Z",
+    "lastCommitDate": "2025-06-01T14:26:16Z",
+    "topContributors": [
+      {
+        "contributions": 269,
+        "login": "laurenechan"
+      },
+      {
+        "contributions": 140,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 115,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 89,
+        "login": "diatomsRcool"
+      },
+      {
+        "contributions": 33,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 26,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 1,
+        "login": "jmcmurry"
+      },
+      {
+        "contributions": 1,
+        "login": "nlharris"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-12-15T22:35:49Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Auto-generated habitat ontology",
+    "name": "envo-habitats",
+    "updatedAt": "2015-12-30T06:37:56Z",
+    "url": "https://github.com/EnvironmentOntology/envo-habitats",
+    "firstCommitDate": "2015-12-19T01:11:07Z",
+    "lastCommitDate": "2015-12-19T01:11:07Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-06-29T17:12:03Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "envo-p",
+    "updatedAt": "2016-08-06T19:55:20Z",
+    "url": "https://github.com/EnvironmentOntology/envo-p",
+    "firstCommitDate": "2016-08-06T19:55:11Z",
+    "lastCommitDate": "2016-08-06T19:55:11Z",
+    "topContributors": [
+      {
+        "contributions": 10,
+        "login": "ramonawalls"
+      },
+      {
+        "contributions": 7,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 3,
+        "login": "pbuttigieg"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-03-28T19:22:08Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A community-driven ontology for the representation of environments",
+    "name": "envo",
+    "updatedAt": "2025-09-19T18:45:45Z",
+    "url": "https://github.com/EnvironmentOntology/envo",
+    "firstCommitDate": "2025-08-19T17:09:41Z",
+    "lastCommitDate": "2025-08-19T17:09:41Z",
+    "topContributors": [
+      {
+        "contributions": 890,
+        "login": "pbuttigieg"
+      },
+      {
+        "contributions": 547,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 203,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 106,
+        "login": "kaiiam"
+      },
+      {
+        "contributions": 59,
+        "login": "iwilkie"
+      },
+      {
+        "contributions": 58,
+        "login": "meichen-liu"
+      },
+      {
+        "contributions": 46,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 43,
+        "login": "raissameyer"
+      },
+      {
+        "contributions": 30,
+        "login": "stevenchong"
+      },
+      {
+        "contributions": 29,
+        "login": "hrshdhgd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-06-25T22:13:38Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Source for the INCA form for environmental ontologies",
+    "name": "exposure-inca-form",
+    "updatedAt": "2017-06-25T22:29:28Z",
+    "url": "https://github.com/EnvironmentOntology/exposure-inca-form",
+    "firstCommitDate": "2017-07-04T00:05:36Z",
+    "lastCommitDate": "2017-07-04T00:05:36Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "DoctorBud"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-04-15T14:53:41Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "An open source gazetteer constructed on ontological principles",
+    "name": "gaz",
+    "updatedAt": "2024-05-16T13:01:34Z",
+    "url": "https://github.com/EnvironmentOntology/gaz",
+    "firstCommitDate": "2023-05-25T20:48:17Z",
+    "lastCommitDate": "2023-05-25T20:48:17Z",
+    "topContributors": [
+      {
+        "contributions": 10,
+        "login": "lschriml"
+      },
+      {
+        "contributions": 5,
+        "login": "pbuttigieg"
+      },
+      {
+        "contributions": 2,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "andrawaag"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-04-26T11:21:54Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "An ontology to index methods and best practices for environmental sensing",
+    "name": "meso",
+    "updatedAt": "2018-03-08T02:05:08Z",
+    "url": "https://github.com/EnvironmentOntology/meso",
+    "firstCommitDate": "2017-05-14T14:43:33Z",
+    "lastCommitDate": "2017-05-14T14:43:33Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "pbuttigieg"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-09-10T22:03:32Z",
+    "defaultBranchRef": {
+      "name": "gh-pages"
+    },
+    "description": "Repository for metadata about environmental datasets",
+    "name": "mybiocaddie",
+    "updatedAt": "2016-09-10T22:04:36Z",
+    "url": "https://github.com/EnvironmentOntology/mybiocaddie",
+    "firstCommitDate": "2016-09-11T18:09:33Z",
+    "lastCommitDate": "2016-09-11T18:09:33Z",
+    "topContributors": [
+      {
+        "contributions": 37,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "kshefchek"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-04-22T21:49:32Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Mappings from GCMD to ENVO and other OBOs",
+    "name": "obo-to-gcmd-mapping",
+    "updatedAt": "2024-06-18T19:30:43Z",
+    "url": "https://github.com/EnvironmentOntology/obo-to-gcmd-mapping",
+    "firstCommitDate": "2020-04-27T19:13:38Z",
+    "lastCommitDate": "2020-04-27T19:13:38Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-03-23T15:32:35Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "An ontology about groups of interacting organisms such as populations and communities",
+    "name": "pco",
+    "updatedAt": "2017-03-23T15:32:37Z",
+    "url": "https://github.com/EnvironmentOntology/pco",
+    "firstCommitDate": "2017-09-20T16:10:50Z",
+    "lastCommitDate": "2017-09-20T16:10:50Z",
+    "topContributors": [
+      {
+        "contributions": 115,
+        "login": "ramonawalls"
+      },
+      {
+        "contributions": 4,
+        "login": "pbuttigieg"
+      },
+      {
+        "contributions": 2,
+        "login": "marieALaporte"
+      },
+      {
+        "contributions": 1,
+        "login": "zhengj2007"
+      }
+    ]
+  }
+]

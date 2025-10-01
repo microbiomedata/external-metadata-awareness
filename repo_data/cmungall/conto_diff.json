@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-07-02T02:52:01Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "This project is the implementation of the ContoDiff approach.",
+  "name": "conto_diff",
+  "updatedAt": "2024-07-02T02:52:01Z",
+  "url": "https://github.com/cmungall/conto_diff",
+  "firstCommitDate": "2021-06-16T06:59:44Z",
+  "lastCommitDate": "2021-06-16T06:59:44Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "vicolinho"
+    },
+    {
+      "contributions": 6,
+      "login": "IgorPutinsky"
+    }
+  ]
+}

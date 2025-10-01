@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-04-16T16:41:44Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Format gwas summary statistic data into gwas-ssf",
+  "name": "gwas-sumstats-tools-ssf-morph",
+  "updatedAt": "2025-08-05T19:11:12Z",
+  "url": "https://github.com/EBISPOT/gwas-sumstats-tools-ssf-morph",
+  "firstCommitDate": "2025-08-05T19:11:07Z",
+  "lastCommitDate": "2025-08-05T19:11:07Z",
+  "topContributors": [
+    {
+      "contributions": 21,
+      "login": "jiyue1214"
+    },
+    {
+      "contributions": 19,
+      "login": "nebfield"
+    }
+  ]
+}

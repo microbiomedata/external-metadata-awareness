@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-03-10T06:52:41Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Ontological Interpretations for Web Property Graphs",
+  "name": "owlstar",
+  "updatedAt": "2025-06-23T15:46:30Z",
+  "url": "https://github.com/linkml/owlstar",
+  "firstCommitDate": "2021-02-05T22:14:54Z",
+  "lastCommitDate": "2021-02-05T22:14:54Z",
+  "topContributors": [
+    {
+      "contributions": 17,
+      "login": "cmungall"
+    }
+  ]
+}

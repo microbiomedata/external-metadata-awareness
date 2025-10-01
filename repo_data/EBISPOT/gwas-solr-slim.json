@@ -1,0 +1,30 @@
+{
+  "createdAt": "2018-06-26T10:28:47Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "gwas-solr-slim",
+  "updatedAt": "2024-10-10T16:28:37Z",
+  "url": "https://github.com/EBISPOT/gwas-solr-slim",
+  "firstCommitDate": "2024-10-10T16:28:33Z",
+  "lastCommitDate": "2024-10-10T16:28:33Z",
+  "topContributors": [
+    {
+      "contributions": 76,
+      "login": "twhetzel"
+    },
+    {
+      "contributions": 26,
+      "login": "jdhayhurst"
+    },
+    {
+      "contributions": 11,
+      "login": "karatugo"
+    },
+    {
+      "contributions": 3,
+      "login": "cmalangone"
+    }
+  ]
+}

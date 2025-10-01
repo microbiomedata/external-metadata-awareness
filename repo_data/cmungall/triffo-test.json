@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-07-31T13:20:39Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "test",
+  "name": "triffo-test",
+  "updatedAt": "2019-07-31T13:21:13Z",
+  "url": "https://github.com/cmungall/triffo-test",
+  "firstCommitDate": "2019-07-31T13:06:31Z",
+  "lastCommitDate": "2019-07-31T13:06:31Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "cmungall"
+    }
+  ]
+}

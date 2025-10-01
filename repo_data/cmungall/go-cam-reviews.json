@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-03-18T20:21:13Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "AI generated reviews of GO-CAMs",
+  "name": "go-cam-reviews",
+  "updatedAt": "2025-03-19T03:56:15Z",
+  "url": "https://github.com/cmungall/go-cam-reviews",
+  "firstCommitDate": "2025-03-19T03:56:06Z",
+  "lastCommitDate": "2025-03-19T03:56:06Z",
+  "topContributors": [
+    {
+      "contributions": 10,
+      "login": "cmungall"
+    }
+  ]
+}

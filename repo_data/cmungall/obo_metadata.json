@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-10-28T01:51:58Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "obo_metadata",
+  "updatedAt": "2023-03-12T10:29:33Z",
+  "url": "https://github.com/cmungall/obo_metadata",
+  "firstCommitDate": "2017-10-30T04:42:49Z",
+  "lastCommitDate": "2017-10-30T04:42:49Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "cmungall"
+    }
+  ]
+}

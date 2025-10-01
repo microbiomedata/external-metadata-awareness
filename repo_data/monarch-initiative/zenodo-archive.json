@@ -1,0 +1,13 @@
+{
+  "createdAt": "2022-03-11T21:27:59Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A collection of code to archive data from Google Cloud Storage to Zenodo",
+  "name": "zenodo-archive",
+  "updatedAt": "2023-11-20T19:58:44Z",
+  "url": "https://github.com/monarch-initiative/zenodo-archive",
+  "firstCommitDate": "2022-04-12T23:38:13Z",
+  "lastCommitDate": "2022-04-12T23:38:13Z",
+  "topContributors": []
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-08-25T02:34:14Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Metadata for the people",
+  "name": "all-about-me",
+  "updatedAt": "2025-07-18T07:40:41Z",
+  "url": "https://github.com/cmungall/all-about-me",
+  "firstCommitDate": "2022-08-25T02:36:46Z",
+  "lastCommitDate": "2022-08-25T02:36:46Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

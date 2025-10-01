@@ -1,0 +1,26 @@
+{
+  "createdAt": "2023-04-19T15:26:08Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "First pass at a thin wrapper around the Monarch API and ChatGPT plugin",
+  "name": "oai-monarch-plugin",
+  "updatedAt": "2025-09-08T19:51:11Z",
+  "url": "https://github.com/monarch-initiative/oai-monarch-plugin",
+  "firstCommitDate": "2025-03-21T22:05:21Z",
+  "lastCommitDate": "2025-03-21T22:05:21Z",
+  "topContributors": [
+    {
+      "contributions": 86,
+      "login": "oneilsh"
+    },
+    {
+      "contributions": 8,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

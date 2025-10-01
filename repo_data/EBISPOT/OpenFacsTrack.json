@@ -1,0 +1,26 @@
+{
+  "createdAt": "2020-04-02T17:07:36Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Software to track flow cytometry data",
+  "name": "OpenFacsTrack",
+  "updatedAt": "2025-05-31T00:56:22Z",
+  "url": "https://github.com/EBISPOT/OpenFacsTrack",
+  "firstCommitDate": "2021-01-12T12:16:21Z",
+  "lastCommitDate": "2021-01-12T12:16:21Z",
+  "topContributors": [
+    {
+      "contributions": 48,
+      "login": "ficolo"
+    },
+    {
+      "contributions": 38,
+      "login": "kbab"
+    },
+    {
+      "contributions": 2,
+      "login": "jmason-ebi"
+    }
+  ]
+}

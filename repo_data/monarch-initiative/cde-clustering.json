@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-05-20T17:34:20Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "cde-clustering",
+  "updatedAt": "2025-07-16T21:19:57Z",
+  "url": "https://github.com/monarch-initiative/cde-clustering",
+  "firstCommitDate": "2025-05-20T17:45:45Z",
+  "lastCommitDate": "2025-05-20T17:45:45Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "madanucd"
+    }
+  ]
+}

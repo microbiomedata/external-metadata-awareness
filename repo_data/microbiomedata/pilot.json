@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-01-29T17:44:01Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "pilot",
+  "updatedAt": "2020-04-06T13:29:28Z",
+  "url": "https://github.com/microbiomedata/pilot",
+  "firstCommitDate": "2020-04-06T13:29:16Z",
+  "lastCommitDate": "2020-04-06T13:29:16Z",
+  "topContributors": [
+    {
+      "contributions": 44,
+      "login": "jeffbaumes"
+    }
+  ]
+}

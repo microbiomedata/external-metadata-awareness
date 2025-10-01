@@ -1,0 +1,38 @@
+{
+  "createdAt": "2022-06-15T17:39:35Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Datamodel for KGCL (Knowledge Graph Change Language)",
+  "name": "kgcl",
+  "updatedAt": "2025-08-16T12:41:44Z",
+  "url": "https://github.com/INCATools/kgcl",
+  "firstCommitDate": "2024-11-15T20:49:54Z",
+  "lastCommitDate": "2024-11-15T20:49:54Z",
+  "topContributors": [
+    {
+      "contributions": 120,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 36,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 25,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 4,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 1,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 1,
+      "login": "sierra-moxon"
+    }
+  ]
+}

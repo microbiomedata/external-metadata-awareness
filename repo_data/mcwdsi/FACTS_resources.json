@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-02-26T17:46:56Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The Florida Annotated Corpus for Translational Science (FACTS) - Corpus files, annotation files, and annotation guidelines",
+  "name": "FACTS_resources",
+  "updatedAt": "2023-10-05T19:41:55Z",
+  "url": "https://github.com/mcwdsi/FACTS_resources",
+  "firstCommitDate": "2018-05-15T18:51:47Z",
+  "lastCommitDate": "2018-05-15T18:51:47Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "aellenhicks"
+    }
+  ]
+}

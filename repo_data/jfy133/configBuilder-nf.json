@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-10-10T15:12:29Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Nextflow config builder scripts for supported HPC infrastructures. ",
+  "name": "configBuilder-nf",
+  "updatedAt": "2023-10-26T04:07:07Z",
+  "url": "https://github.com/jfy133/configBuilder-nf",
+  "firstCommitDate": "2023-10-21T07:54:21Z",
+  "lastCommitDate": "2023-10-21T07:54:21Z",
+  "topContributors": [
+    {
+      "contributions": 46,
+      "login": "georgiesamaha"
+    },
+    {
+      "contributions": 2,
+      "login": "jfy133"
+    }
+  ]
+}

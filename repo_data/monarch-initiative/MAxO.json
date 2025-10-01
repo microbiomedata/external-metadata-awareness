@@ -1,0 +1,46 @@
+{
+  "createdAt": "2017-09-29T17:03:17Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Medical action ontology",
+  "name": "MAxO",
+  "updatedAt": "2025-09-04T17:04:21Z",
+  "url": "https://github.com/monarch-initiative/MAxO",
+  "firstCommitDate": "2025-09-04T17:04:16Z",
+  "lastCommitDate": "2025-09-04T17:04:16Z",
+  "topContributors": [
+    {
+      "contributions": 155,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 132,
+      "login": "kingmanzhang"
+    },
+    {
+      "contributions": 43,
+      "login": "LCCarmody"
+    },
+    {
+      "contributions": 21,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 20,
+      "login": "nicolevasilevsky"
+    },
+    {
+      "contributions": 18,
+      "login": "laurenechan"
+    },
+    {
+      "contributions": 4,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 4,
+      "login": "iimpulse"
+    }
+  ]
+}

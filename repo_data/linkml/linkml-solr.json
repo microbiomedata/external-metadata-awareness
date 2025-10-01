@@ -1,0 +1,30 @@
+{
+  "createdAt": "2021-07-24T00:52:04Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Simple wrapper for using Solr with LinkML schemas",
+  "name": "linkml-solr",
+  "updatedAt": "2025-09-11T18:30:36Z",
+  "url": "https://github.com/linkml/linkml-solr",
+  "firstCommitDate": "2025-09-11T18:30:28Z",
+  "lastCommitDate": "2025-09-11T18:30:28Z",
+  "topContributors": [
+    {
+      "contributions": 54,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 24,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 4,
+      "login": "actions-user"
+    },
+    {
+      "contributions": 1,
+      "login": "hoijui"
+    }
+  ]
+}

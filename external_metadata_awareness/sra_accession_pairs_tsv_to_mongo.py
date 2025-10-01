@@ -21,6 +21,8 @@ def get_iso_timestamp() -> str:
 @click.option("--report-interval", type=int, default=500000, show_default=True,
               help="Rows processed before showing progress.")
 @click.option("--verbose", is_flag=True, help="Enable verbose output.")
+@click.option("--biosample-column", default="biosample", help="Name of biosample column in TSV")
+@click.option("--bioproject-column", default="bioproject", help="Name of bioproject column in TSV")
 def load_tsv_to_mongo(
         file_path: str,
         mongo_uri: str,
@@ -28,7 +30,9 @@ def load_tsv_to_mongo(
         batch_size: int,
         report_interval: int,
         env_file: str = None,
-        verbose: bool = False
+        verbose: bool = False,
+        biosample_column: str = "biosample",
+        bioproject_column: str = "bioproject"
 ) -> None:
     """
     Load a large TSV file into MongoDB.
@@ -76,8 +80,8 @@ def load_tsv_to_mongo(
 
         next(reader)  # Skip header
         for row in reader:
-            biosample = row["biosample"].strip()
-            bioproject = row["bioproject"].strip()
+            biosample = row[biosample_column].strip()
+            bioproject = row[bioproject_column].strip()
 
             if biosample and bioproject:  # Ignore empty values
                 batch.append({

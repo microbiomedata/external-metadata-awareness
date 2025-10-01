@@ -1,0 +1,13 @@
+{
+  "createdAt": "2019-12-23T20:47:54Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "CCDH Terminology Workstream issues",
+  "name": "Terminology",
+  "updatedAt": "2020-01-13T22:53:28Z",
+  "url": "https://github.com/cancerDHC/Terminology",
+  "firstCommitDate": "2020-01-13T22:53:25Z",
+  "lastCommitDate": "2020-01-13T22:53:25Z",
+  "topContributors": []
+}

@@ -1,0 +1,50 @@
+{
+  "createdAt": "2022-08-22T21:27:19Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Semantic prefix map registry",
+  "name": "prefixmaps",
+  "updatedAt": "2025-06-03T23:26:54Z",
+  "url": "https://github.com/linkml/prefixmaps",
+  "firstCommitDate": "2024-10-17T16:29:58Z",
+  "lastCommitDate": "2024-10-17T16:29:58Z",
+  "topContributors": [
+    {
+      "contributions": 80,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 60,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 55,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 43,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 41,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 15,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 5,
+      "login": "amc-corey-cox"
+    },
+    {
+      "contributions": 4,
+      "login": "sneakers-the-rat"
+    },
+    {
+      "contributions": 3,
+      "login": "Silvanoc"
+    }
+  ]
+}

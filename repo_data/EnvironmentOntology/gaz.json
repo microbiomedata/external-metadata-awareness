@@ -1,0 +1,30 @@
+{
+  "createdAt": "2015-04-15T14:53:41Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "An open source gazetteer constructed on ontological principles",
+  "name": "gaz",
+  "updatedAt": "2024-05-16T13:01:34Z",
+  "url": "https://github.com/EnvironmentOntology/gaz",
+  "firstCommitDate": "2023-05-25T20:48:17Z",
+  "lastCommitDate": "2023-05-25T20:48:17Z",
+  "topContributors": [
+    {
+      "contributions": 10,
+      "login": "lschriml"
+    },
+    {
+      "contributions": 5,
+      "login": "pbuttigieg"
+    },
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "andrawaag"
+    }
+  ]
+}

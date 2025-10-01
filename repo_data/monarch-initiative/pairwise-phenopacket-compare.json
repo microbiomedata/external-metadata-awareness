@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-03-23T16:48:13Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "pairwise-phenopacket-compare",
+  "updatedAt": "2025-03-31T16:01:23Z",
+  "url": "https://github.com/monarch-initiative/pairwise-phenopacket-compare",
+  "firstCommitDate": "2025-03-31T16:00:52Z",
+  "lastCommitDate": "2025-03-31T16:00:52Z",
+  "topContributors": [
+    {
+      "contributions": 10,
+      "login": "AO33"
+    }
+  ]
+}

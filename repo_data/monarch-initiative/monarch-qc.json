@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-01-17T20:02:02Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "WORK IN PROGRESS - new effort at implementing a QC Dashboard for the Monarch KG and Ingest",
+  "name": "monarch-qc",
+  "updatedAt": "2025-04-10T16:55:31Z",
+  "url": "https://github.com/monarch-initiative/monarch-qc",
+  "firstCommitDate": "2025-04-10T16:55:26Z",
+  "lastCommitDate": "2025-04-10T16:55:26Z",
+  "topContributors": [
+    {
+      "contributions": 139,
+      "login": "amc-corey-cox"
+    },
+    {
+      "contributions": 9,
+      "login": "kevinschaper"
+    }
+  ]
+}

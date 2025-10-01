@@ -1,0 +1,34 @@
+{
+  "createdAt": "2018-06-01T15:24:40Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "goci-rest",
+  "updatedAt": "2025-02-13T15:14:50Z",
+  "url": "https://github.com/EBISPOT/goci-rest",
+  "firstCommitDate": "2025-02-13T15:14:41Z",
+  "lastCommitDate": "2025-02-13T15:14:41Z",
+  "topContributors": [
+    {
+      "contributions": 39,
+      "login": "jstewart-ebi"
+    },
+    {
+      "contributions": 28,
+      "login": "sprintell"
+    },
+    {
+      "contributions": 14,
+      "login": "sajo-ebi"
+    },
+    {
+      "contributions": 8,
+      "login": "ala-ebi"
+    },
+    {
+      "contributions": 3,
+      "login": "jdhayhurst"
+    }
+  ]
+}

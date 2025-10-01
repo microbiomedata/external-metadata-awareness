@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-05-30T18:10:34Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "go-cam-analysis",
+  "updatedAt": "2023-05-30T18:10:47Z",
+  "url": "https://github.com/cmungall/go-cam-analysis",
+  "firstCommitDate": "2023-05-30T18:25:41Z",
+  "lastCommitDate": "2023-05-30T18:25:41Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

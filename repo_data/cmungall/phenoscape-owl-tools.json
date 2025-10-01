@@ -1,0 +1,22 @@
+{
+  "createdAt": "2015-10-09T19:59:53Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "OWL-based reasoning and data processing utilities for assembling the Phenoscape RDF knowledgebase.",
+  "name": "phenoscape-owl-tools",
+  "updatedAt": "2015-10-09T19:59:54Z",
+  "url": "https://github.com/cmungall/phenoscape-owl-tools",
+  "firstCommitDate": "2015-08-06T20:03:47Z",
+  "lastCommitDate": "2015-08-06T20:03:47Z",
+  "topContributors": [
+    {
+      "contributions": 272,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 4,
+      "login": "prashanti"
+    }
+  ]
+}

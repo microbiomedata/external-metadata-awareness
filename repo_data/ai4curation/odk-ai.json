@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-04-24T17:05:40Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Extension of ODK for AI coding",
+  "name": "odk-ai",
+  "updatedAt": "2025-06-05T21:11:00Z",
+  "url": "https://github.com/ai4curation/odk-ai",
+  "firstCommitDate": "2025-06-04T23:51:28Z",
+  "lastCommitDate": "2025-06-04T23:51:28Z",
+  "topContributors": [
+    {
+      "contributions": 23,
+      "login": "cmungall"
+    }
+  ]
+}

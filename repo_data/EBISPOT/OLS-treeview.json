@@ -1,0 +1,26 @@
+{
+  "createdAt": "2016-08-23T10:26:02Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "This is the standalone widget for the OLS treeview",
+  "name": "OLS-treeview",
+  "updatedAt": "2023-09-26T18:33:44Z",
+  "url": "https://github.com/EBISPOT/OLS-treeview",
+  "firstCommitDate": "2018-06-21T16:11:44Z",
+  "lastCommitDate": "2018-06-21T16:11:44Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "LLTommy"
+    },
+    {
+      "contributions": 2,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 1,
+      "login": "glenn124f"
+    }
+  ]
+}
