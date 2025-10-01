@@ -7,9 +7,11 @@ This script processes the satisfying biosamples CSV export to normalize:
 
 Uses dateparser for robust date parsing and geopy for coordinate conversion.
 Optimized to process unique values first, then map back to full dataset.
+Preserves original values in output alongside normalized values.
 """
 
 import re
+from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
@@ -39,7 +41,8 @@ def is_valid_iso_date(date_str: str) -> bool:
     day = int(match.group(3))
 
     # Validate ranges
-    if year < 2000 or year > 2050:
+    today = datetime.now()
+    if year < 2000 or year > today.year:
         return False
     if month < 1 or month > 12:
         return False
@@ -49,12 +52,13 @@ def is_valid_iso_date(date_str: str) -> bool:
     return True
 
 
-def normalize_date(date_str: Optional[str]) -> Optional[str]:
+def normalize_date(date_str: Optional[str], imputation_log: list) -> Optional[str]:
     """
     Normalize date string to YYYY-MM-DD format using dateparser.
 
     Args:
         date_str: Input date string in various formats
+        imputation_log: List to append imputation messages to
 
     Returns:
         Date in YYYY-MM-DD format, or None if invalid/missing
@@ -74,9 +78,25 @@ def normalize_date(date_str: Optional[str]) -> Optional[str]:
         if parsed is None:
             return None
 
-        # Validate year range
-        if parsed.year < 2000 or parsed.year > 2050:
+        # Validate year range (must be between 2000 and today)
+        today = datetime.now()
+        if parsed.year < 2000 or parsed.year > today.year:
             return None
+
+        # Reject future dates
+        if parsed.date() > today.date():
+            return None
+
+        # Check if day or month was missing and imputed
+        # dateparser sets day=1 for year-month dates, month=1 and day=1 for year-only
+        original_lower = date_str.lower()
+
+        # Detect year-only format (e.g., "2017")
+        if re.match(r'^\d{4}$', date_str):
+            imputation_log.append(f"Imputed month=01, day=01 for year-only date: '{date_str}' → '{parsed.strftime('%Y-%m-%d')}'")
+        # Detect year-month format (e.g., "2017-02", "2017/02", "Feb 2017")
+        elif re.match(r'^\d{4}[-/]\d{1,2}$', date_str) or (len(date_str.split()) == 2 and parsed.day == 1):
+            imputation_log.append(f"Imputed day=01 for year-month date: '{date_str}' → '{parsed.strftime('%Y-%m-%d')}'")
 
         return parsed.strftime('%Y-%m-%d')
     except Exception:
@@ -140,8 +160,8 @@ def normalize_coordinate(coord_str: Optional[str]) -> tuple[Optional[float], Opt
 @click.option(
     '--progress-interval',
     type=int,
-    default=10,
-    help='Report progress every N unique values processed (default: 10)'
+    default=50,
+    help='Report progress every N unique values processed (default: 50)'
 )
 def normalize_biosamples(
     input_file: Path,
@@ -156,13 +176,14 @@ def normalize_biosamples(
     and writes the result to a new CSV file.
 
     Optimization: Processes unique values first, then maps back to full dataset.
+    Preserves original values alongside normalized values in output.
     """
-    click.echo(f"Reading input file: {input_file}")
+    click.echo(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Reading input file: {input_file}")
 
     # Read CSV
     df = pd.read_csv(input_file)
     original_count = len(df)
-    click.echo(f"Loaded {original_count:,} biosamples")
+    click.echo(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Loaded {original_count:,} biosamples")
 
     # Track normalization statistics
     date_normalized = 0
@@ -170,33 +191,34 @@ def normalize_biosamples(
     coord_normalized = 0
     coord_failed = 0
     failures = []
+    imputation_log = []
 
     # =========================================================================
     # Normalize dates using unique value mapping
     # =========================================================================
-    click.echo("\nNormalizing collection_date to YYYY-MM-DD format...")
+    click.echo(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Normalizing collection_date to YYYY-MM-DD format...")
     if 'collection_date' in df.columns:
         # Get unique values and sort alphabetically
         unique_dates = sorted(df['collection_date'].unique(), key=lambda x: str(x))
         total_unique = len(unique_dates)
-        click.echo(f"  Found {total_unique:,} unique date values")
+        click.echo(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}]   Found {total_unique:,} unique date values")
 
         # Process each unique value
         date_map = {}
         for idx, date_val in enumerate(unique_dates, start=1):
             if idx % progress_interval == 0:
-                click.echo(f"  Processing date {idx}/{total_unique}: '{date_val}'")
+                click.echo(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}]   Processing date {idx}/{total_unique}: '{date_val}'")
 
-            normalized = normalize_date(date_val)
+            normalized = normalize_date(date_val, imputation_log)
             date_map[date_val] = normalized
 
-        # Map back to dataframe
-        click.echo(f"  Mapping normalized dates back to {original_count:,} rows...")
-        df['collection_date'] = df['collection_date'].map(date_map)
+        # Map back to dataframe - create new normalized column, keep original
+        click.echo(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}]   Mapping normalized dates back to {original_count:,} rows...")
+        df['collection_date_norm'] = df['collection_date'].map(date_map)
 
         # Count successes/failures
-        date_normalized = df['collection_date'].notna().sum()
-        date_failed = df['collection_date'].isna().sum()
+        date_normalized = df['collection_date_norm'].notna().sum()
+        date_failed = df['collection_date_norm'].isna().sum()
 
         if report_failures:
             for orig_val, norm_val in date_map.items():
@@ -206,41 +228,38 @@ def normalize_biosamples(
     # =========================================================================
     # Normalize coordinates using unique value mapping
     # =========================================================================
-    click.echo("\nNormalizing lat_lon to separate latitude and longitude columns (+/- DD.dddd)...")
+    click.echo(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Normalizing lat_lon to separate latitude/longitude columns (+/- DD.dddd)...")
     if 'lat_lon' in df.columns:
         # Get unique values and sort alphabetically
         unique_coords = sorted(df['lat_lon'].unique(), key=lambda x: str(x))
         total_unique = len(unique_coords)
-        click.echo(f"  Found {total_unique:,} unique coordinate values")
+        click.echo(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}]   Found {total_unique:,} unique coordinate values")
 
         # Process each unique value
         coord_map = {}
         for idx, coord_val in enumerate(unique_coords, start=1):
             if idx % progress_interval == 0:
-                click.echo(f"  Processing coordinate {idx}/{total_unique}: '{coord_val}'")
+                click.echo(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}]   Processing coordinate {idx}/{total_unique}: '{coord_val}'")
 
             lat, lon = normalize_coordinate(coord_val)
             coord_map[coord_val] = (lat, lon)
 
-        # Map back to dataframe - create separate columns
-        click.echo(f"  Mapping normalized coordinates back to {original_count:,} rows...")
-        df['latitude'] = df['lat_lon'].map(lambda x: coord_map.get(x, (None, None))[0])
-        df['longitude'] = df['lat_lon'].map(lambda x: coord_map.get(x, (None, None))[1])
+        # Map back to dataframe - create new normalized columns, keep original
+        click.echo(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}]   Mapping normalized coordinates back to {original_count:,} rows...")
+        df['latitude_norm'] = df['lat_lon'].map(lambda x: coord_map.get(x, (None, None))[0])
+        df['longitude_norm'] = df['lat_lon'].map(lambda x: coord_map.get(x, (None, None))[1])
 
         # Count successes/failures
-        coord_normalized = df['latitude'].notna().sum()
-        coord_failed = df['latitude'].isna().sum()
+        coord_normalized = df['latitude_norm'].notna().sum()
+        coord_failed = df['latitude_norm'].isna().sum()
 
         if report_failures:
             for orig_val, (lat, lon) in coord_map.items():
                 if lat is None and pd.notna(orig_val) and str(orig_val).strip():
                     failures.append(f"Coord failed: '{orig_val}'")
 
-        # Drop original lat_lon column
-        df = df.drop(columns=['lat_lon'])
-
     # Write output
-    click.echo(f"\nWriting normalized data to: {output_file}")
+    click.echo(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Writing normalized data to: {output_file}")
     output_file.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(output_file, index=False)
 
@@ -256,6 +275,19 @@ def normalize_biosamples(
     click.echo(f"  Successfully normalized: {coord_normalized:,}")
     click.echo(f"  Failed to normalize:     {coord_failed:,}")
     click.echo("=" * 60)
+
+    # Report date imputations prominently
+    if imputation_log:
+        click.echo("\n" + "=" * 60)
+        click.echo("DATE IMPUTATION REPORT")
+        click.echo("=" * 60)
+        click.echo(f"Total imputations: {len(imputation_log)}")
+        click.echo("\nSample imputations (first 50):")
+        for imputation in imputation_log[:50]:
+            click.echo(f"  {imputation}")
+        if len(imputation_log) > 50:
+            click.echo(f"\n  ... and {len(imputation_log) - 50} more imputations")
+        click.echo("=" * 60)
 
     if report_failures and failures:
         click.echo("\nFailed normalizations:", err=True)
