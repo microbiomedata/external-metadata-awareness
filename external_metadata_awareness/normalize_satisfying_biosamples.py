@@ -218,13 +218,14 @@ def normalize_biosamples(
             normalized = normalize_date(date_val, imputation_log)
             date_map[date_val] = normalized
 
-        # Map back to dataframe - create new normalized column, keep original
+        # Map back to dataframe - rename original to _raw, normalized has no suffix
         click.echo(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}]   Mapping normalized dates back to {original_count:,} rows...")
-        df['collection_date_norm'] = df['collection_date'].map(date_map)
+        df['collection_date_raw'] = df['collection_date']
+        df['collection_date'] = df['collection_date_raw'].map(date_map)
 
         # Count successes/failures
-        date_normalized = df['collection_date_norm'].notna().sum()
-        date_failed = df['collection_date_norm'].isna().sum()
+        date_normalized = df['collection_date'].notna().sum()
+        date_failed = df['collection_date'].isna().sum()
 
         if report_failures:
             for orig_val, norm_val in date_map.items():
@@ -250,19 +251,41 @@ def normalize_biosamples(
             lat, lon = normalize_coordinate(coord_val)
             coord_map[coord_val] = (lat, lon)
 
-        # Map back to dataframe - create new normalized columns, keep original
+        # Map back to dataframe - rename original to _raw, normalized has no suffix
         click.echo(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}]   Mapping normalized coordinates back to {original_count:,} rows...")
-        df['latitude_norm'] = df['lat_lon'].map(lambda x: coord_map.get(x, (None, None))[0])
-        df['longitude_norm'] = df['lat_lon'].map(lambda x: coord_map.get(x, (None, None))[1])
+        df['lat_lon_raw'] = df['lat_lon']
+        df['latitude'] = df['lat_lon_raw'].map(lambda x: coord_map.get(x, (None, None))[0])
+        df['longitude'] = df['lat_lon_raw'].map(lambda x: coord_map.get(x, (None, None))[1])
+
+        # Drop the original lat_lon column (we have lat_lon_raw now)
+        df = df.drop(columns=['lat_lon'])
 
         # Count successes/failures
-        coord_normalized = df['latitude_norm'].notna().sum()
-        coord_failed = df['latitude_norm'].isna().sum()
+        coord_normalized = df['latitude'].notna().sum()
+        coord_failed = df['latitude'].isna().sum()
 
         if report_failures:
             for orig_val, (lat, lon) in coord_map.items():
                 if lat is None and pd.notna(orig_val) and str(orig_val).strip():
                     failures.append(f"Coord failed: '{orig_val}'")
+
+    # Filter out rows missing required normalized data
+    click.echo(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Filtering rows with incomplete normalized data...")
+    rows_before_filter = len(df)
+
+    # Must have all three: collection_date >= 2017-01-01, latitude, longitude
+    df = df[
+        df['collection_date'].notna() &
+        (df['collection_date'] >= '2017-01-01') &
+        df['latitude'].notna() &
+        df['longitude'].notna()
+    ]
+
+    rows_after_filter = len(df)
+    rows_removed = rows_before_filter - rows_after_filter
+
+    click.echo(f"  Removed {rows_removed:,} rows missing required data")
+    click.echo(f"  Retained {rows_after_filter:,} rows with complete normalization")
 
     # Write output
     click.echo(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Writing normalized data to: {output_file}")
@@ -273,13 +296,15 @@ def normalize_biosamples(
     click.echo("\n" + "=" * 60)
     click.echo("Normalization Summary")
     click.echo("=" * 60)
-    click.echo(f"Total biosamples:        {original_count:,}")
-    click.echo(f"\nDates:")
-    click.echo(f"  Successfully normalized: {date_normalized:,}")
-    click.echo(f"  Failed to normalize:     {date_failed:,}")
-    click.echo(f"\nCoordinates:")
-    click.echo(f"  Successfully normalized: {coord_normalized:,}")
-    click.echo(f"  Failed to normalize:     {coord_failed:,}")
+    click.echo(f"Input biosamples:                    {original_count:,}")
+    click.echo(f"\nNormalization results:")
+    click.echo(f"  Dates successfully normalized:     {date_normalized:,}")
+    click.echo(f"  Dates failed to normalize:         {date_failed:,}")
+    click.echo(f"  Coordinates successfully normalized: {coord_normalized:,}")
+    click.echo(f"  Coordinates failed to normalize:   {coord_failed:,}")
+    click.echo(f"\nFiltering (collection_date >= 2017-01-01 AND lat AND lon):")
+    click.echo(f"  Rows removed:                      {rows_removed:,}")
+    click.echo(f"  Rows retained in output:           {rows_after_filter:,}")
     click.echo("=" * 60)
 
     # Report date imputations prominently
