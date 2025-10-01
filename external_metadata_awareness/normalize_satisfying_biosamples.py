@@ -94,15 +94,23 @@ def normalize_date(date_str: Optional[str], imputation_log: list) -> Optional[st
             return None
 
         # Check if day or month was missing and imputed
-        # dateparser sets day=1 for year-month dates, month=1 and day=1 for year-only
-        original_lower = date_str.lower()
+        # For year-only or year-month formats, we need to force month=01 and/or day=01
 
         # Detect year-only format (e.g., "2017")
         if re.match(r'^\d{4}$', date_str):
-            imputation_log.append(f"Imputed month=01, day=01 for year-only date: '{date_str}' → '{parsed.strftime('%Y-%m-%d')}'")
-        # Detect year-month format (e.g., "2017-02", "2017/02", "Feb 2017")
-        elif re.match(r'^\d{4}[-/]\d{1,2}$', date_str) or (len(date_str.split()) == 2 and parsed.day == 1):
-            imputation_log.append(f"Imputed day=01 for year-month date: '{date_str}' → '{parsed.strftime('%Y-%m-%d')}'")
+            year = int(date_str)
+            result = f"{year:04d}-01-01"
+            imputation_log.append(f"Imputed month=01, day=01 for year-only date: '{date_str}' → '{result}'")
+            return result
+
+        # Detect year-month format (e.g., "2017-02", "2017/02")
+        year_month_match = re.match(r'^(\d{4})[-/](\d{1,2})$', date_str)
+        if year_month_match:
+            year = int(year_month_match.group(1))
+            month = int(year_month_match.group(2))
+            result = f"{year:04d}-{month:02d}-01"
+            imputation_log.append(f"Imputed day=01 for year-month date: '{date_str}' → '{result}'")
+            return result
 
         return parsed.strftime('%Y-%m-%d')
     except Exception:
