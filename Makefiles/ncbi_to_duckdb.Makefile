@@ -156,6 +156,20 @@ make-database: $(OUTPUT_DIR)
 	@echo "=== Export Complete! ==="
 	@$(MAKE) -f Makefiles/ncbi_to_duckdb.Makefile show-summary
 
+# Export satisfying biosamples to CSV (biosamples meeting all quality criteria)
+export-satisfying-biosamples:
+	@if [ ! -f "$(DUCKDB_FILE)" ]; then \
+		echo "Error: DuckDB file not found: $(DUCKDB_FILE)"; \
+		echo "Run 'make -f Makefiles/ncbi_to_duckdb.Makefile make-database' first"; \
+		exit 1; \
+	fi
+	@echo "Exporting satisfying biosamples to CSV..."
+	@echo "Query: sql/satisfying_biosamples.sql"
+	@duckdb "$(DUCKDB_FILE)" < sql/satisfying_biosamples.sql -csv > local/satisfying_biosamples.csv
+	@echo "✓ Exported to: local/satisfying_biosamples.csv"
+	@wc -l local/satisfying_biosamples.csv | awk '{printf "  %s biosamples (including header)\n", $$1}'
+	@ls -lh local/satisfying_biosamples.csv | awk '{printf "  File size: %s\n", $$5}'
+
 # Show summary of tables in DuckDB
 show-summary:
 	@if [ ! -f "$(DUCKDB_FILE)" ]; then \
@@ -209,8 +223,9 @@ help:
 	@echo "NCBI MongoDB to DuckDB Migration"
 	@echo ""
 	@echo "Primary targets:"
-	@echo "  export-bioprojects-to-duckdb   - Export bioprojects_flattened to separate DuckDB"
-	@echo "  make-database              - Export all flat collections and create DuckDB"
+	@echo "  make-database                    - Export all flat collections and create DuckDB"
+	@echo "  export-bioprojects-to-duckdb     - Export bioprojects_flattened to separate DuckDB"
+	@echo "  export-satisfying-biosamples     - Export biosamples meeting quality criteria to CSV"
 	@echo ""
 	@echo "Note: To flatten BioProjects first, use:"
 	@echo "  make -f Makefiles/ncbi_metadata.Makefile flatten_bioprojects MONGO_URI=mongodb://host:port/db"
@@ -243,5 +258,5 @@ help:
 	@echo "  make -f Makefiles/ncbi_to_duckdb.Makefile show-summary"
 
 .PHONY: list-flat-collections export-collection-json json-to-duckdb process-collection \
-        dump-json make-duckdb make-database export-bioprojects-to-duckdb show-summary \
-        clean clean-json clean-duckdb show-config help
+        dump-json make-duckdb make-database export-bioprojects-to-duckdb export-satisfying-biosamples \
+        show-summary clean clean-json clean-duckdb show-config help
