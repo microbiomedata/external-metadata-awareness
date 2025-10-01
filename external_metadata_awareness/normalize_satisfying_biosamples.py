@@ -8,6 +8,12 @@ This script processes the satisfying biosamples CSV export to normalize:
 Uses dateparser for robust date parsing and geopy for coordinate conversion.
 Optimized to process unique values first, then map back to full dataset.
 Preserves original values in output alongside normalized values.
+
+IMPORTANT LIMITATIONS:
+- Timezone information is discarded during date normalization
+  (e.g., '2017-03-23T23:30Z' → '2017-03-23')
+- Time-of-day information is discarded (dates only, no timestamps)
+- See issue #217 for future timestamp preservation work
 """
 
 import re
@@ -206,7 +212,7 @@ def normalize_biosamples(
         # Process each unique value
         date_map = {}
         for idx, date_val in enumerate(unique_dates, start=1):
-            if idx % progress_interval == 0:
+            if idx == 1 or idx % progress_interval == 1:
                 click.echo(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}]   Processing date {idx}/{total_unique}: '{date_val}'")
 
             normalized = normalize_date(date_val, imputation_log)
@@ -238,7 +244,7 @@ def normalize_biosamples(
         # Process each unique value
         coord_map = {}
         for idx, coord_val in enumerate(unique_coords, start=1):
-            if idx % progress_interval == 0:
+            if idx == 1 or idx % progress_interval == 1:
                 click.echo(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}]   Processing coordinate {idx}/{total_unique}: '{coord_val}'")
 
             lat, lon = normalize_coordinate(coord_val)
