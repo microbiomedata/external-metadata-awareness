@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-08-30T23:09:00Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A curated list of ontology things",
+  "name": "awesome-ontology",
+  "updatedAt": "2022-08-30T23:08:56Z",
+  "url": "https://github.com/cmungall/awesome-ontology",
+  "firstCommitDate": "2022-07-05T15:41:17Z",
+  "lastCommitDate": "2022-07-05T15:41:17Z",
+  "topContributors": [
+    {
+      "contributions": 64,
+      "login": "ozekik"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "createdAt": "2024-08-29T01:42:58Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Grounding of biomedical named entities with contextual disambiguation",
+  "name": "gilda",
+  "updatedAt": "2024-08-29T01:42:58Z",
+  "url": "https://github.com/cmungall/gilda",
+  "firstCommitDate": "2024-07-26T18:56:59Z",
+  "lastCommitDate": "2024-07-26T18:56:59Z",
+  "topContributors": [
+    {
+      "contributions": 645,
+      "login": "bgyori"
+    },
+    {
+      "contributions": 170,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 26,
+      "login": "kkaris"
+    },
+    {
+      "contributions": 14,
+      "login": "galileosteinberg"
+    },
+    {
+      "contributions": 2,
+      "login": "EFord36"
+    },
+    {
+      "contributions": 1,
+      "login": "PritiShaw"
+    }
+  ]
+}

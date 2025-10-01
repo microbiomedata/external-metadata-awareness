@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-09-10T18:55:10Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "KG_Microbe_embeddings",
+  "updatedAt": "2024-09-25T14:50:21Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/KG_Microbe_embeddings",
+  "firstCommitDate": "2024-09-25T14:50:11Z",
+  "lastCommitDate": "2024-09-25T14:50:11Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "justaddcoffee"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-04-20T02:28:48Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Prolog module for querying wikidata using sparqlprog framework",
+  "name": "sparqlprog_wikidata",
+  "updatedAt": "2023-03-12T10:29:14Z",
+  "url": "https://github.com/cmungall/sparqlprog_wikidata",
+  "firstCommitDate": "2021-03-16T00:01:19Z",
+  "lastCommitDate": "2021-03-16T00:01:19Z",
+  "topContributors": [
+    {
+      "contributions": 28,
+      "login": "cmungall"
+    }
+  ]
+}

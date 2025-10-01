@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-12-08T19:24:51Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "biocoreterms",
+  "updatedAt": "2023-12-08T20:03:28Z",
+  "url": "https://github.com/rsc3/biocoreterms",
+  "firstCommitDate": "2023-12-09T01:11:23Z",
+  "lastCommitDate": "2023-12-09T01:11:23Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "rsc3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-02-18T16:03:28Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "diachron_ols",
+  "updatedAt": "2017-10-17T15:54:43Z",
+  "url": "https://github.com/EBISPOT/diachron_ols",
+  "firstCommitDate": "2017-10-17T15:19:38Z",
+  "lastCommitDate": "2017-10-17T15:19:38Z",
+  "topContributors": [
+    {
+      "contributions": 58,
+      "login": "olgavrou"
+    },
+    {
+      "contributions": 38,
+      "login": "simonjupp"
+    }
+  ]
+}

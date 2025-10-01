@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-05-06T01:11:49Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Support for loading and dumping N-dimensional arrays in LinkML.",
+  "name": "linkml-arrays",
+  "updatedAt": "2025-07-28T17:03:06Z",
+  "url": "https://github.com/linkml/linkml-arrays",
+  "firstCommitDate": "2025-01-18T19:57:57Z",
+  "lastCommitDate": "2025-01-18T19:57:57Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "rly"
+    },
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

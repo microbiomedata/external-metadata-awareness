@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-10-04T17:20:15Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Knowledge graph construction for BacDive data",
+  "name": "kg-bacdive",
+  "updatedAt": "2023-10-27T20:51:55Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/kg-bacdive",
+  "firstCommitDate": "2023-10-27T17:52:40Z",
+  "lastCommitDate": "2023-10-27T17:52:40Z",
+  "topContributors": [
+    {
+      "contributions": 107,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 7,
+      "login": "realmarcin"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-05-06T15:42:40Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "allen-cell-experiments",
+  "updatedAt": "2016-05-06T15:44:21Z",
+  "url": "https://github.com/cmungall/allen-cell-experiments",
+  "firstCommitDate": "2016-05-06T15:42:59Z",
+  "lastCommitDate": "2016-05-06T15:42:59Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

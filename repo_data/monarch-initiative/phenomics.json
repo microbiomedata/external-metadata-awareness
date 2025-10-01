@@ -1,0 +1,42 @@
+{
+  "createdAt": "2019-10-20T15:59:50Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "for outreach and workshops",
+  "name": "phenomics",
+  "updatedAt": "2023-09-24T02:08:40Z",
+  "url": "https://github.com/monarch-initiative/phenomics",
+  "firstCommitDate": "2023-09-02T03:31:21Z",
+  "lastCommitDate": "2023-09-02T03:31:21Z",
+  "topContributors": [
+    {
+      "contributions": 453,
+      "login": "nicolevasilevsky"
+    },
+    {
+      "contributions": 20,
+      "login": "monicacecilia"
+    },
+    {
+      "contributions": 5,
+      "login": "jmcmurry"
+    },
+    {
+      "contributions": 1,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 1,
+      "login": "nlharris"
+    },
+    {
+      "contributions": 1,
+      "login": "diatomsRcool"
+    },
+    {
+      "contributions": 1,
+      "login": "sagehrke"
+    }
+  ]
+}

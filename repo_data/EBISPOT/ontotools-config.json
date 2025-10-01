@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-08-26T10:58:44Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A place to store all public configuration shared across all ontools services.",
+  "name": "ontotools-config",
+  "updatedAt": "2020-08-26T10:58:48Z",
+  "url": "https://github.com/EBISPOT/ontotools-config",
+  "firstCommitDate": "2020-08-26T10:58:45Z",
+  "lastCommitDate": "2020-08-26T10:58:45Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "matentzn"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2019-04-07T20:22:00Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A small R notebook describing how plot common (aDNA) population genetics PCAs using R and the tidyverse. ",
+  "name": "Tidy_PopGen_PCA_Plotting",
+  "updatedAt": "2025-08-21T17:26:37Z",
+  "url": "https://github.com/jfy133/Tidy_PopGen_PCA_Plotting",
+  "firstCommitDate": "2019-05-03T12:17:42Z",
+  "lastCommitDate": "2019-05-03T12:17:42Z",
+  "topContributors": [
+    {
+      "contributions": 23,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 2,
+      "login": "TCLamnidis"
+    }
+  ]
+}

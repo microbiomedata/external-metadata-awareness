@@ -1,0 +1,12 @@
+{
+  "createdAt": "2016-08-25T00:48:34Z",
+  "defaultBranchRef": {
+    "name": ""
+  },
+  "description": "",
+  "name": "goimport-ontology-editors-obofile",
+  "updatedAt": "2016-08-25T00:48:34Z",
+  "url": "https://github.com/cmungall/goimport-ontology-editors-obofile",
+  "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+  "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+}

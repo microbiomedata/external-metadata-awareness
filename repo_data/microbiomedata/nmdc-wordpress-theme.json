@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-09-21T00:25:34Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Development environment for the WordPress theme originally built by Comrade Web Agency",
+  "name": "nmdc-wordpress-theme",
+  "updatedAt": "2025-06-09T18:58:43Z",
+  "url": "https://github.com/microbiomedata/nmdc-wordpress-theme",
+  "firstCommitDate": "2025-06-09T18:58:38Z",
+  "lastCommitDate": "2025-06-09T18:58:38Z",
+  "topContributors": [
+    {
+      "contributions": 87,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 11,
+      "login": "pkalita-lbl"
+    }
+  ]
+}

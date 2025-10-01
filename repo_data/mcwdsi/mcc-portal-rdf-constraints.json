@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-02-19T14:15:02Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "mcc-portal-rdf-constraints",
+  "updatedAt": "2023-10-05T19:13:10Z",
+  "url": "https://github.com/mcwdsi/mcc-portal-rdf-constraints",
+  "firstCommitDate": "2021-02-19T14:18:18Z",
+  "lastCommitDate": "2021-02-19T14:18:18Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "hoganwr"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-04-10T20:27:51Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "monarch kg disease node pairwise similarity comparisons using semsimian termset_comparison method",
+  "name": "disease-pairwise-compare",
+  "updatedAt": "2025-04-10T21:20:11Z",
+  "url": "https://github.com/monarch-initiative/disease-pairwise-compare",
+  "firstCommitDate": "2025-04-10T21:19:59Z",
+  "lastCommitDate": "2025-04-10T21:19:59Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "AO33"
+    }
+  ]
+}

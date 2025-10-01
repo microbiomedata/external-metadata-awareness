@@ -1,0 +1,54 @@
+{
+  "createdAt": "2018-06-28T17:12:14Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Owlery is a set of REST web services which allow querying of an OWL reasoner containing a configured set of ontologies.",
+  "name": "owlery",
+  "updatedAt": "2018-06-28T17:12:16Z",
+  "url": "https://github.com/cmungall/owlery",
+  "firstCommitDate": "2018-06-27T17:24:38Z",
+  "lastCommitDate": "2018-06-27T17:24:38Z",
+  "topContributors": [
+    {
+      "contributions": 116,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 70,
+      "login": "sirthias"
+    },
+    {
+      "contributions": 17,
+      "login": "jrudolph"
+    },
+    {
+      "contributions": 12,
+      "login": "hlapp"
+    },
+    {
+      "contributions": 4,
+      "login": "jcranky"
+    },
+    {
+      "contributions": 2,
+      "login": "stillalex"
+    },
+    {
+      "contributions": 2,
+      "login": "Robbie1977"
+    },
+    {
+      "contributions": 1,
+      "login": "maxcom"
+    },
+    {
+      "contributions": 1,
+      "login": "p3t0r"
+    },
+    {
+      "contributions": 1,
+      "login": "vmunier"
+    }
+  ]
+}

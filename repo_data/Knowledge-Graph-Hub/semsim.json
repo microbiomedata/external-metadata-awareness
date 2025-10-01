@@ -1,0 +1,30 @@
+{
+  "createdAt": "2022-07-12T14:44:05Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Write out file with semantic similarity of all pairs of ontology terms in a given ontology",
+  "name": "semsim",
+  "updatedAt": "2022-11-29T13:17:18Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/semsim",
+  "firstCommitDate": "2022-11-16T21:50:45Z",
+  "lastCommitDate": "2022-11-16T21:50:45Z",
+  "topContributors": [
+    {
+      "contributions": 178,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 36,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 3,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 2,
+      "login": "LucaCappelletti94"
+    }
+  ]
+}

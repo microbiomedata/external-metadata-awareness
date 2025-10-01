@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-05-05T12:29:57Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The webpage describing all the metadata for the ejp rare diseases virtual platform for discovering catalogs/registries/biobanks resources",
+  "name": "ejprarediseases.github.io",
+  "updatedAt": "2020-05-18T14:04:51Z",
+  "url": "https://github.com/EBISPOT/ejprarediseases.github.io",
+  "firstCommitDate": "2020-05-18T14:02:59Z",
+  "lastCommitDate": "2020-05-18T14:02:59Z",
+  "topContributors": [
+    {
+      "contributions": 20,
+      "login": "S2Ola"
+    }
+  ]
+}

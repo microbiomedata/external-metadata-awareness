@@ -1,0 +1,26 @@
+{
+  "createdAt": "2015-10-27T23:39:41Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "operations",
+  "updatedAt": "2024-09-30T15:28:40Z",
+  "url": "https://github.com/monarch-initiative/operations",
+  "firstCommitDate": "2023-10-04T20:00:46Z",
+  "lastCommitDate": "2023-10-04T20:00:46Z",
+  "topContributors": [
+    {
+      "contributions": 32,
+      "login": "jmcmurry"
+    },
+    {
+      "contributions": 5,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 1,
+      "login": "monicacecilia"
+    }
+  ]
+}

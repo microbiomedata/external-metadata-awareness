@@ -1,0 +1,42 @@
+{
+  "createdAt": "2019-10-14T12:27:38Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "SCA_Ontology",
+  "name": "scatlas_ontology",
+  "updatedAt": "2024-08-01T07:58:31Z",
+  "url": "https://github.com/EBISPOT/scatlas_ontology",
+  "firstCommitDate": "2024-08-01T07:57:59Z",
+  "lastCommitDate": "2024-08-01T07:57:59Z",
+  "topContributors": [
+    {
+      "contributions": 31,
+      "login": "S2Ola"
+    },
+    {
+      "contributions": 22,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 16,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 12,
+      "login": "anitacaron"
+    },
+    {
+      "contributions": 3,
+      "login": "pcm32"
+    },
+    {
+      "contributions": 2,
+      "login": "gouttegd"
+    },
+    {
+      "contributions": 1,
+      "login": "pmb59"
+    }
+  ]
+}

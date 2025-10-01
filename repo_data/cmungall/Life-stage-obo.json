@@ -1,0 +1,22 @@
+{
+  "createdAt": "2014-03-09T22:06:16Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "C. elegans development ontology",
+  "name": "Life-stage-obo",
+  "updatedAt": "2023-09-11T14:45:22Z",
+  "url": "https://github.com/cmungall/Life-stage-obo",
+  "firstCommitDate": "2014-03-09T22:07:54Z",
+  "lastCommitDate": "2014-03-09T22:07:54Z",
+  "topContributors": [
+    {
+      "contributions": 36,
+      "login": "draciti"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "createdAt": "2024-04-01T20:59:51Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A Cruft cookiecutter for modular Koza ingests",
+  "name": "cookiecutter-monarch-ingest",
+  "updatedAt": "2025-02-07T22:09:47Z",
+  "url": "https://github.com/monarch-initiative/cookiecutter-monarch-ingest",
+  "firstCommitDate": "2025-02-07T22:09:43Z",
+  "lastCommitDate": "2025-02-07T22:09:43Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 3,
+      "login": "amc-corey-cox"
+    },
+    {
+      "contributions": 1,
+      "login": "DnlRKorn"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2015-07-28T20:25:50Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The is the \"new\" version of the manager event model for BBOP systems.",
+  "name": "bbop-rest-manager",
+  "updatedAt": "2021-06-02T03:35:04Z",
+  "url": "https://github.com/berkeleybop/bbop-rest-manager",
+  "firstCommitDate": "2021-06-02T03:35:00Z",
+  "lastCommitDate": "2021-06-02T03:35:00Z",
+  "topContributors": [
+    {
+      "contributions": 44,
+      "login": "kltm"
+    },
+    {
+      "contributions": 10,
+      "login": "lpalbou"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "createdAt": "2022-02-02T23:49:25Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "COGS Operates Google Sheets",
+  "name": "cogs",
+  "updatedAt": "2024-08-16T16:13:36Z",
+  "url": "https://github.com/turbomam/cogs",
+  "firstCommitDate": "2021-09-23T14:50:14Z",
+  "lastCommitDate": "2021-09-23T14:50:14Z",
+  "topContributors": [
+    {
+      "contributions": 50,
+      "login": "beckyjackson"
+    },
+    {
+      "contributions": 38,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 9,
+      "login": "bjonnh"
+    }
+  ]
+}

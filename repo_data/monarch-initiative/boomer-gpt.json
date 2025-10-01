@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-06-17T02:08:58Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "boomer-gpt",
+  "updatedAt": "2023-10-27T05:51:03Z",
+  "url": "https://github.com/monarch-initiative/boomer-gpt",
+  "firstCommitDate": "2023-07-25T21:58:37Z",
+  "lastCommitDate": "2023-07-25T21:58:37Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

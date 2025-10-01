@@ -1,0 +1,46 @@
+{
+  "createdAt": "2025-06-11T20:50:59Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Data for testing and experimenting with BERtron-related services",
+  "name": "data",
+  "updatedAt": "2025-09-19T22:29:18Z",
+  "url": "https://github.com/ber-data/data",
+  "firstCommitDate": "2025-09-19T22:29:11Z",
+  "lastCommitDate": "2025-09-19T22:29:11Z",
+  "topContributors": [
+    {
+      "contributions": 30,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 12,
+      "login": "ct-parker"
+    },
+    {
+      "contributions": 9,
+      "login": "shreddd"
+    },
+    {
+      "contributions": 7,
+      "login": "madettmann"
+    },
+    {
+      "contributions": 6,
+      "login": "JamesCarrPNNL"
+    },
+    {
+      "contributions": 2,
+      "login": "vchendrix"
+    },
+    {
+      "contributions": 1,
+      "login": "jeff-cohere"
+    },
+    {
+      "contributions": 1,
+      "login": "pkalita-lbl"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2019-03-05T15:31:06Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "htn_owl",
+  "updatedAt": "2022-04-19T23:19:14Z",
+  "url": "https://github.com/aellenhicks/htn_owl",
+  "firstCommitDate": "2022-04-19T23:19:10Z",
+  "lastCommitDate": "2022-04-19T23:19:10Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "aellenhicks"
+    },
+    {
+      "contributions": 1,
+      "login": "cthoyt"
+    }
+  ]
+}

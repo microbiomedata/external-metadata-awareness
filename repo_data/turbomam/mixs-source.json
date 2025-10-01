@@ -1,0 +1,34 @@
+{
+  "createdAt": "2021-12-06T22:23:32Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "mixs-source",
+  "updatedAt": "2024-08-16T16:13:12Z",
+  "url": "https://github.com/turbomam/mixs-source",
+  "firstCommitDate": "2022-02-01T23:59:59Z",
+  "lastCommitDate": "2022-02-01T23:59:59Z",
+  "topContributors": [
+    {
+      "contributions": 28,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 25,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 13,
+      "login": "ramonawalls"
+    },
+    {
+      "contributions": 2,
+      "login": "only1chunts"
+    },
+    {
+      "contributions": 1,
+      "login": "actions-user"
+    }
+  ]
+}

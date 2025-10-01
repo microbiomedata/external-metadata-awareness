@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-02-14T18:02:06Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "The Monarch Initiative Ontology dashboard focuses on increasing quality of all Monarch related ontologies",
+  "name": "monarch-ontology-dashboard",
+  "updatedAt": "2023-04-02T03:54:38Z",
+  "url": "https://github.com/monarch-initiative/monarch-ontology-dashboard",
+  "firstCommitDate": "2023-08-01T11:18:57Z",
+  "lastCommitDate": "2023-08-01T11:18:57Z",
+  "topContributors": [
+    {
+      "contributions": 31,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 11,
+      "login": "anitacaron"
+    }
+  ]
+}

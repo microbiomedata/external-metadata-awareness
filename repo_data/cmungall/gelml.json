@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-12-15T00:43:39Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "PSI standard for Gel experiments",
+  "name": "gelml",
+  "updatedAt": "2018-12-15T00:43:43Z",
+  "url": "https://github.com/cmungall/gelml",
+  "firstCommitDate": "2015-09-26T07:09:43Z",
+  "lastCommitDate": "2015-09-26T07:09:43Z",
+  "topContributors": [
+    {
+      "contributions": 35,
+      "login": "ypriverol"
+    }
+  ]
+}

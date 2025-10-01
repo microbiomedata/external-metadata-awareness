@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-08-11T18:21:00Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "EXPERIMENTAL repo",
+  "name": "ai-gene-curation",
+  "updatedAt": "2025-09-02T15:25:46Z",
+  "url": "https://github.com/ai4curation/ai-gene-curation",
+  "firstCommitDate": "2025-08-11T18:23:31Z",
+  "lastCommitDate": "2025-08-11T18:23:31Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "createdAt": "2023-03-01T14:47:42Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "submission-schema",
+  "updatedAt": "2025-09-25T18:42:32Z",
+  "url": "https://github.com/microbiomedata/submission-schema",
+  "firstCommitDate": "2025-09-25T18:42:27Z",
+  "lastCommitDate": "2025-09-25T18:42:27Z",
+  "topContributors": [
+    {
+      "contributions": 345,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 275,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 73,
+      "login": "mslarae13"
+    },
+    {
+      "contributions": 31,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 25,
+      "login": "bmeluch"
+    },
+    {
+      "contributions": 12,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 5,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 4,
+      "login": "aclum"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2025-08-19T17:51:23Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Evaluation of MCPs that retrieve scientific literature",
+  "name": "mcp_literature_eval",
+  "updatedAt": "2025-09-17T23:41:25Z",
+  "url": "https://github.com/contextualizer-ai/mcp_literature_eval",
+  "firstCommitDate": "2025-09-17T23:41:14Z",
+  "lastCommitDate": "2025-09-17T23:41:14Z",
+  "topContributors": [
+    {
+      "contributions": 24,
+      "login": "ct-parker"
+    },
+    {
+      "contributions": 19,
+      "login": "justaddcoffee"
+    }
+  ]
+}

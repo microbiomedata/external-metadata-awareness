@@ -1,0 +1,42 @@
+{
+  "createdAt": "2021-08-06T20:34:02Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "NMDC Sample Annotator",
+  "name": "sample-annotator",
+  "updatedAt": "2024-08-16T16:14:07Z",
+  "url": "https://github.com/turbomam/sample-annotator",
+  "firstCommitDate": "2022-03-01T18:39:18Z",
+  "lastCommitDate": "2022-03-01T18:39:18Z",
+  "topContributors": [
+    {
+      "contributions": 28,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 26,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 23,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 12,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 2,
+      "login": "kltm"
+    },
+    {
+      "contributions": 1,
+      "login": "StantonMartin"
+    },
+    {
+      "contributions": 1,
+      "login": "realmarcin"
+    }
+  ]
+}

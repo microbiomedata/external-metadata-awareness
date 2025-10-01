@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-06-09T19:30:49Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Unofficial collection of utility scripts for the EAGER v1.9.* genome reconstruction pipeline",
+  "name": "eagerutils",
+  "updatedAt": "2023-01-28T12:22:34Z",
+  "url": "https://github.com/jfy133/eagerutils",
+  "firstCommitDate": "2018-06-09T19:45:35Z",
+  "lastCommitDate": "2018-06-09T19:45:35Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "jfy133"
+    }
+  ]
+}

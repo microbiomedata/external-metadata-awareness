@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-06-09T02:22:56Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "elsevier_covid_19_pathway_data",
+  "updatedAt": "2023-09-18T18:48:16Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/elsevier_covid_19_pathway_data",
+  "firstCommitDate": "2020-06-09T02:33:01Z",
+  "lastCommitDate": "2020-06-09T02:33:01Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "justaddcoffee"
+    }
+  ]
+}

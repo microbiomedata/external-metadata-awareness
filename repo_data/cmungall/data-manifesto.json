@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-03-25T23:57:23Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "semantic modeling of data manifests",
+  "name": "data-manifesto",
+  "updatedAt": "2023-01-20T11:22:01Z",
+  "url": "https://github.com/cmungall/data-manifesto",
+  "firstCommitDate": "2022-04-02T00:41:13Z",
+  "lastCommitDate": "2022-04-02T00:41:13Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "cmungall"
+    }
+  ]
+}

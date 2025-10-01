@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-04-05T15:51:59Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Helpers for BBOP projects, esp. LinkML and NMDC",
+  "name": "bbop-helpers",
+  "updatedAt": "2024-08-16T16:34:08Z",
+  "url": "https://github.com/turbomam/bbop-helpers",
+  "firstCommitDate": "2023-04-05T15:56:45Z",
+  "lastCommitDate": "2023-04-05T15:56:45Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "turbomam"
+    }
+  ]
+}

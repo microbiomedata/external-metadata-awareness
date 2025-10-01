@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-01-15T10:28:45Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Ontology visualisation widget for EBI's Ontology Lookup Service (OLS)",
+  "name": "OLS-graphview",
+  "updatedAt": "2022-06-07T09:46:10Z",
+  "url": "https://github.com/EBISPOT/OLS-graphview",
+  "firstCommitDate": "2018-07-17T15:12:50Z",
+  "lastCommitDate": "2018-07-17T15:12:50Z",
+  "topContributors": [
+    {
+      "contributions": 40,
+      "login": "LLTommy"
+    }
+  ]
+}

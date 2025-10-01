@@ -1,0 +1,34 @@
+{
+  "createdAt": "2017-11-28T20:48:36Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "micropie2",
+  "updatedAt": "2017-11-28T20:48:39Z",
+  "url": "https://github.com/carrineblank/micropie2",
+  "firstCommitDate": "2017-10-26T08:37:13Z",
+  "lastCommitDate": "2017-10-26T08:37:13Z",
+  "topContributors": [
+    {
+      "contributions": 46,
+      "login": "danveno"
+    },
+    {
+      "contributions": 26,
+      "login": "rodenhausen"
+    },
+    {
+      "contributions": 17,
+      "login": "elviscat"
+    },
+    {
+      "contributions": 7,
+      "login": "hongcui"
+    },
+    {
+      "contributions": 1,
+      "login": "vikas95"
+    }
+  ]
+}

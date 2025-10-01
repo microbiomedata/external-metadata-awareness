@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-01-11T20:41:47Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Implementation of ISO 8601 date/time formatting standard",
+  "name": "iso8601",
+  "updatedAt": "2024-06-07T14:47:49Z",
+  "url": "https://github.com/mcwdsi/iso8601",
+  "firstCommitDate": "2024-06-07T14:47:42Z",
+  "lastCommitDate": "2024-06-07T14:47:42Z",
+  "topContributors": [
+    {
+      "contributions": 24,
+      "login": "hoganwr"
+    },
+    {
+      "contributions": 1,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

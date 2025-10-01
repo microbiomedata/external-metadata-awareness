@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-02-07T19:18:06Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "ashley_dobroszek_eportfolio",
+  "updatedAt": "2022-02-07T19:18:06Z",
+  "url": "https://github.com/kaiiam/ashley_dobroszek_eportfolio",
+  "firstCommitDate": "2022-02-08T16:34:50Z",
+  "lastCommitDate": "2022-02-08T16:34:50Z",
+  "topContributors": [
+    {
+      "contributions": 50,
+      "login": "kaiiam"
+    }
+  ]
+}

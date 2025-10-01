@@ -1,0 +1,18 @@
+{
+  "createdAt": "2013-03-06T23:15:19Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "paper in progress",
+  "name": "temporalized-relations-critique",
+  "updatedAt": "2021-06-23T02:40:38Z",
+  "url": "https://github.com/cmungall/temporalized-relations-critique",
+  "firstCommitDate": "2013-04-25T02:11:35Z",
+  "lastCommitDate": "2013-04-25T02:11:35Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "cmungall"
+    }
+  ]
+}

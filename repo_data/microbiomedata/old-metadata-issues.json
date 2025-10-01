@@ -1,0 +1,12 @@
+{
+  "createdAt": "2023-02-17T11:48:10Z",
+  "defaultBranchRef": {
+    "name": ""
+  },
+  "description": "",
+  "name": "old-metadata-issues",
+  "updatedAt": "2024-07-16T16:22:10Z",
+  "url": "https://github.com/microbiomedata/old-metadata-issues",
+  "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+  "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-06-13T13:47:45Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "GSC22 Meeting in Moorea conference website.",
+  "name": "GSC22-Moorea",
+  "updatedAt": "2022-01-10T22:10:06Z",
+  "url": "https://github.com/GenomicsStandardsConsortium/GSC22-Moorea",
+  "firstCommitDate": "2022-09-09T20:52:43Z",
+  "lastCommitDate": "2022-09-09T20:52:43Z",
+  "topContributors": [
+    {
+      "contributions": 115,
+      "login": "only1chunts"
+    },
+    {
+      "contributions": 3,
+      "login": "dna-helix"
+    }
+  ]
+}

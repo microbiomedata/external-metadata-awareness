@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-09-09T19:32:38Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "GSC23 Meeting in Bangkok conference website.",
+  "name": "GSC23-Bangkok",
+  "updatedAt": "2023-06-30T13:53:20Z",
+  "url": "https://github.com/GenomicsStandardsConsortium/GSC23-Bangkok",
+  "firstCommitDate": "2023-08-25T15:28:55Z",
+  "lastCommitDate": "2023-08-25T15:28:55Z",
+  "topContributors": [
+    {
+      "contributions": 352,
+      "login": "only1chunts"
+    },
+    {
+      "contributions": 3,
+      "login": "dna-helix"
+    }
+  ]
+}

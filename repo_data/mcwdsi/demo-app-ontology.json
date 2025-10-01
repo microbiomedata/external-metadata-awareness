@@ -1,0 +1,22 @@
+{
+  "createdAt": "2015-06-23T14:57:07Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Automatically exported from code.google.com/p/demo-app-ontology",
+  "name": "demo-app-ontology",
+  "updatedAt": "2023-10-05T19:15:40Z",
+  "url": "https://github.com/mcwdsi/demo-app-ontology",
+  "firstCommitDate": "2018-11-18T04:33:09Z",
+  "lastCommitDate": "2018-11-18T04:33:09Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "hoganwr"
+    },
+    {
+      "contributions": 1,
+      "login": "sgarimalla"
+    }
+  ]
+}

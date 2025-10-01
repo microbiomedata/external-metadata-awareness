@@ -1,0 +1,22 @@
+{
+  "createdAt": "2017-01-02T14:50:49Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "common_utils",
+  "updatedAt": "2024-06-07T14:47:16Z",
+  "url": "https://github.com/mcwdsi/common_utils",
+  "firstCommitDate": "2024-06-07T14:47:09Z",
+  "lastCommitDate": "2024-06-07T14:47:09Z",
+  "topContributors": [
+    {
+      "contributions": 17,
+      "login": "hoganwr"
+    },
+    {
+      "contributions": 1,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

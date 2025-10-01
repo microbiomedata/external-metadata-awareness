@@ -1,0 +1,30 @@
+{
+  "createdAt": "2019-11-12T22:11:00Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Prototyping a new version of the GWAS Catalog diagram",
+  "name": "gwas-diagram",
+  "updatedAt": "2024-08-22T04:30:28Z",
+  "url": "https://github.com/EBISPOT/gwas-diagram",
+  "firstCommitDate": "2023-03-15T13:43:06Z",
+  "lastCommitDate": "2023-03-15T13:43:06Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "DSuveges"
+    },
+    {
+      "contributions": 5,
+      "login": "jdhayhurst"
+    },
+    {
+      "contributions": 1,
+      "login": "sprintell"
+    },
+    {
+      "contributions": 1,
+      "login": "codacy-badger"
+    }
+  ]
+}

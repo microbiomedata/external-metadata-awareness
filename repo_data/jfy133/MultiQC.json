@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-12-13T07:17:44Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Aggregate results from bioinformatics analyses across many samples into a single report.",
+  "name": "MultiQC",
+  "updatedAt": "2023-12-18T11:54:20Z",
+  "url": "https://github.com/jfy133/MultiQC",
+  "firstCommitDate": "2023-06-16T14:51:51Z",
+  "lastCommitDate": "2023-06-16T14:51:51Z",
+  "topContributors": [
+    {
+      "contributions": 3207,
+      "login": "ewels"
+    },
+    {
+      "contributions": 166,
+      "login": "apeltzer"
+    },
+    {
+      "contributions": 146,
+      "login": "Redmar-van-den-Berg"
+    },
+    {
+      "contributions": 109,
+      "login": "vladsavelyev"
+    },
+    {
+      "contributions": 98,
+      "login": "ErikDanielsson"
+    },
+    {
+      "contributions": 73,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 61,
+      "login": "jchorl"
+    },
+    {
+      "contributions": 57,
+      "login": "chuan-wang"
+    },
+    {
+      "contributions": 48,
+      "login": "bnbowman"
+    },
+    {
+      "contributions": 44,
+      "login": "iimog"
+    }
+  ]
+}

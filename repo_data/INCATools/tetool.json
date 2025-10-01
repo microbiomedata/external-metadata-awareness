@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-06-21T19:21:15Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "NPM CLI tool for creating and manipulating INCA Form configuration files and directories",
+  "name": "tetool",
+  "updatedAt": "2018-06-26T17:34:52Z",
+  "url": "https://github.com/INCATools/tetool",
+  "firstCommitDate": "2018-06-22T02:51:13Z",
+  "lastCommitDate": "2018-06-22T02:51:13Z",
+  "topContributors": [
+    {
+      "contributions": 10,
+      "login": "DoctorBud"
+    }
+  ]
+}

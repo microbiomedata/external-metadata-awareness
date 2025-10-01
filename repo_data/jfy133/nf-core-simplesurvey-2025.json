@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-03-19T04:58:43Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Results and analysis of nf-core community survey 2025",
+  "name": "nf-core-simplesurvey-2025",
+  "updatedAt": "2025-03-21T13:04:57Z",
+  "url": "https://github.com/jfy133/nf-core-simplesurvey-2025",
+  "firstCommitDate": "2025-03-21T13:04:49Z",
+  "lastCommitDate": "2025-03-21T13:04:49Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "jfy133"
+    }
+  ]
+}

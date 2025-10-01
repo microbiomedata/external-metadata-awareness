@@ -1,0 +1,12 @@
+{
+  "createdAt": "2015-06-17T00:09:25Z",
+  "defaultBranchRef": {
+    "name": ""
+  },
+  "description": "for testing",
+  "name": "plant-eo-test",
+  "updatedAt": "2015-06-17T00:09:25Z",
+  "url": "https://github.com/cmungall/plant-eo-test",
+  "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+  "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+}

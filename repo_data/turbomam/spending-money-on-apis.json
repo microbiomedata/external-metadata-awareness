@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-05-28T15:49:16Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Test cases with OpenAI/ChatGPT, Anthropic Claude, Google Gemini, other Google APIs like stati maps, CBORG. Funding from Mark, Monarch, LBL allowance, Contextualizer LDRD...",
+  "name": "spending-money-on-apis",
+  "updatedAt": "2025-05-28T17:33:13Z",
+  "url": "https://github.com/turbomam/spending-money-on-apis",
+  "firstCommitDate": "2025-05-28T17:32:14Z",
+  "lastCommitDate": "2025-05-28T17:32:14Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "turbomam"
+    }
+  ]
+}

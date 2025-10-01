@@ -1,0 +1,42 @@
+{
+  "createdAt": "2022-12-06T12:31:35Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Python Phenopacket Tools",
+  "name": "pyphetools",
+  "updatedAt": "2025-08-01T09:23:02Z",
+  "url": "https://github.com/monarch-initiative/pyphetools",
+  "firstCommitDate": "2025-08-01T09:22:56Z",
+  "lastCommitDate": "2025-08-01T09:22:56Z",
+  "topContributors": [
+    {
+      "contributions": 404,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 96,
+      "login": "ielis"
+    },
+    {
+      "contributions": 18,
+      "login": "ldingemans"
+    },
+    {
+      "contributions": 6,
+      "login": "lnrekerle"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "KyranWissink"
+    },
+    {
+      "contributions": 1,
+      "login": "tudorgroza"
+    }
+  ]
+}

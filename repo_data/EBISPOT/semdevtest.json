@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-06-25T09:45:16Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "semdevtest",
+  "updatedAt": "2021-06-25T10:28:02Z",
+  "url": "https://github.com/EBISPOT/semdevtest",
+  "firstCommitDate": "2021-06-25T10:28:00Z",
+  "lastCommitDate": "2021-06-25T10:28:00Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "dosumis"
+    }
+  ]
+}

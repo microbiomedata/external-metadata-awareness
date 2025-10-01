@@ -1,0 +1,22 @@
+{
+  "createdAt": "2020-09-29T18:17:50Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "knowledge-graph-hub.github.io",
+  "updatedAt": "2025-07-26T12:16:49Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/knowledge-graph-hub.github.io",
+  "firstCommitDate": "2025-01-31T15:18:51Z",
+  "lastCommitDate": "2025-01-31T15:18:51Z",
+  "topContributors": [
+    {
+      "contributions": 179,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 4,
+      "login": "deepakunni3"
+    }
+  ]
+}

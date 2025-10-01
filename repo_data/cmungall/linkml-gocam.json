@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-04-03T19:38:06Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "linkml-gocam",
+  "updatedAt": "2021-07-08T18:52:48Z",
+  "url": "https://github.com/cmungall/linkml-gocam",
+  "firstCommitDate": "2021-07-08T15:02:44Z",
+  "lastCommitDate": "2021-07-08T15:02:44Z",
+  "topContributors": [
+    {
+      "contributions": 19,
+      "login": "cmungall"
+    }
+  ]
+}

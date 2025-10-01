@@ -1,0 +1,26 @@
+{
+  "createdAt": "2019-10-29T10:41:01Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Pipeline for creating Open Targets profile and slim files from EFO.",
+  "name": "otar_profiler",
+  "updatedAt": "2025-09-11T09:01:35Z",
+  "url": "https://github.com/EBISPOT/otar_profiler",
+  "firstCommitDate": "2025-09-11T09:01:23Z",
+  "lastCommitDate": "2025-09-11T09:01:23Z",
+  "topContributors": [
+    {
+      "contributions": 48,
+      "login": "zoependlington"
+    },
+    {
+      "contributions": 3,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 1,
+      "login": "ar-ibrahim"
+    }
+  ]
+}

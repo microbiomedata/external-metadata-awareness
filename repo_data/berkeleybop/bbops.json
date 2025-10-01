@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-03-09T00:47:32Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Berkeley BOP devops",
+  "name": "bbops",
+  "updatedAt": "2021-03-09T00:47:42Z",
+  "url": "https://github.com/berkeleybop/bbops",
+  "firstCommitDate": "2021-03-09T00:47:33Z",
+  "lastCommitDate": "2021-03-09T00:47:33Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "kltm"
+    }
+  ]
+}

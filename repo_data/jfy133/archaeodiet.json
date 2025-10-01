@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-07-16T07:57:31Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "[Under constrution] Pipeline for metagenomic identification and authentication of ancient dietary DNA from archaeological samples",
+  "name": "archaeodiet",
+  "updatedAt": "2025-08-21T08:15:17Z",
+  "url": "https://github.com/jfy133/archaeodiet",
+  "firstCommitDate": "2021-08-31T12:01:26Z",
+  "lastCommitDate": "2021-08-31T12:01:26Z",
+  "topContributors": [
+    {
+      "contributions": 48,
+      "login": "jfy133"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-10-30T12:46:14Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Documentation for the Human Phenotype Ontology",
+  "name": "hpo-docs",
+  "updatedAt": "2023-11-02T18:20:25Z",
+  "url": "https://github.com/monarch-initiative/hpo-docs",
+  "firstCommitDate": "2023-11-02T18:20:10Z",
+  "lastCommitDate": "2023-11-02T18:20:10Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 1,
+      "login": "matentzn"
+    }
+  ]
+}

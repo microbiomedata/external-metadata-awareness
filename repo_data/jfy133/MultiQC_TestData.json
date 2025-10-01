@@ -1,0 +1,54 @@
+{
+  "createdAt": "2020-05-06T07:39:57Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Test data for MultiQC. See https://github.com/ewels/MultiQC",
+  "name": "MultiQC_TestData",
+  "updatedAt": "2023-12-18T10:17:27Z",
+  "url": "https://github.com/jfy133/MultiQC_TestData",
+  "firstCommitDate": "2023-06-13T06:00:28Z",
+  "lastCommitDate": "2023-06-13T06:00:28Z",
+  "topContributors": [
+    {
+      "contributions": 545,
+      "login": "ewels"
+    },
+    {
+      "contributions": 33,
+      "login": "Redmar-van-den-Berg"
+    },
+    {
+      "contributions": 27,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 19,
+      "login": "ErikDanielsson"
+    },
+    {
+      "contributions": 17,
+      "login": "chuan-wang"
+    },
+    {
+      "contributions": 17,
+      "login": "apeltzer"
+    },
+    {
+      "contributions": 11,
+      "login": "matthdsm"
+    },
+    {
+      "contributions": 10,
+      "login": "zwdzwd"
+    },
+    {
+      "contributions": 10,
+      "login": "vladsavelyev"
+    },
+    {
+      "contributions": 9,
+      "login": "Hammarn"
+    }
+  ]
+}

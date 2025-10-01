@@ -1,0 +1,54 @@
+{
+  "createdAt": "2024-08-14T18:13:49Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "µbinfie blog",
+  "name": "ubinfie-blog",
+  "updatedAt": "2024-09-17T09:53:32Z",
+  "url": "https://github.com/jfy133/ubinfie-blog",
+  "firstCommitDate": "2024-09-13T10:26:37Z",
+  "lastCommitDate": "2024-09-13T10:26:37Z",
+  "topContributors": [
+    {
+      "contributions": 91,
+      "login": "hexylena"
+    },
+    {
+      "contributions": 48,
+      "login": "lskatz"
+    },
+    {
+      "contributions": 25,
+      "login": "pmenzel"
+    },
+    {
+      "contributions": 12,
+      "login": "boulund"
+    },
+    {
+      "contributions": 10,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 6,
+      "login": "happykhan"
+    },
+    {
+      "contributions": 4,
+      "login": "pvanheus"
+    },
+    {
+      "contributions": 3,
+      "login": "ammaraziz"
+    },
+    {
+      "contributions": 2,
+      "login": "thanhleviet"
+    },
+    {
+      "contributions": 1,
+      "login": "bebatut"
+    }
+  ]
+}

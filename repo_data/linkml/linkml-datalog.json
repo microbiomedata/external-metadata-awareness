@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-12-10T20:59:18Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Translates LinkML schemas into Datalog programs and executes them using Souffle, enabling advanced validation and inference over instance data. ALPHA.",
+  "name": "linkml-datalog",
+  "updatedAt": "2025-09-14T10:42:26Z",
+  "url": "https://github.com/linkml/linkml-datalog",
+  "firstCommitDate": "2022-01-29T03:25:11Z",
+  "lastCommitDate": "2022-01-29T03:25:11Z",
+  "topContributors": [
+    {
+      "contributions": 14,
+      "login": "cmungall"
+    }
+  ]
+}

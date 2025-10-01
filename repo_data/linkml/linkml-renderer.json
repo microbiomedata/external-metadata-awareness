@@ -1,0 +1,26 @@
+{
+  "createdAt": "2023-01-11T17:38:08Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Rendering of instance data as HTML, Markdown, Mermaid",
+  "name": "linkml-renderer",
+  "updatedAt": "2025-09-29T23:44:39Z",
+  "url": "https://github.com/linkml/linkml-renderer",
+  "firstCommitDate": "2024-06-26T02:58:38Z",
+  "lastCommitDate": "2024-06-26T02:58:38Z",
+  "topContributors": [
+    {
+      "contributions": 18,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 1,
+      "login": "pkalita-lbl"
+    }
+  ]
+}

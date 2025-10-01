@@ -1,0 +1,38 @@
+{
+  "createdAt": "2016-08-30T14:58:21Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Utility for working with DOSDP design patterns and OWL ontologies",
+  "name": "dosdp-tools",
+  "updatedAt": "2024-12-18T23:54:23Z",
+  "url": "https://github.com/INCATools/dosdp-tools",
+  "firstCommitDate": "2022-05-10T19:35:28Z",
+  "lastCommitDate": "2022-05-10T19:35:28Z",
+  "topContributors": [
+    {
+      "contributions": 394,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 141,
+      "login": "scala-steward"
+    },
+    {
+      "contributions": 28,
+      "login": "jdr0887"
+    },
+    {
+      "contributions": 9,
+      "login": "hkir-dev"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "rohmk"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-04-23T01:08:47Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "monarch-phenologs",
+  "updatedAt": "2025-09-04T16:13:59Z",
+  "url": "https://github.com/monarch-initiative/monarch-phenologs",
+  "firstCommitDate": "2025-09-04T16:13:50Z",
+  "lastCommitDate": "2025-09-04T16:13:50Z",
+  "topContributors": [
+    {
+      "contributions": 65,
+      "login": "AO33"
+    },
+    {
+      "contributions": 46,
+      "login": "bryanlaraway"
+    }
+  ]
+}

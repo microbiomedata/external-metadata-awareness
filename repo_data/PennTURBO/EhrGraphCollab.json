@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-07-22T19:58:46Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "File repository and issue tracker for RDF graphs about patient data: from an EHR, genomic flat files, or other sources",
+  "name": "EhrGraphCollab",
+  "updatedAt": "2019-10-01T16:07:39Z",
+  "url": "https://github.com/PennTURBO/EhrGraphCollab",
+  "firstCommitDate": "2019-10-01T16:07:36Z",
+  "lastCommitDate": "2019-10-01T16:07:36Z",
+  "topContributors": [
+    {
+      "contributions": 29,
+      "login": "turbomam"
+    }
+  ]
+}

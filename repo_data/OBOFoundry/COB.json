@@ -1,0 +1,54 @@
+{
+  "createdAt": "2018-08-31T12:18:04Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "An experimental ontology containing key terms from Open Biological and Biomedical Ontologies (OBO)",
+  "name": "COB",
+  "updatedAt": "2025-08-02T16:53:44Z",
+  "url": "https://github.com/OBOFoundry/COB",
+  "firstCommitDate": "2025-06-30T16:12:34Z",
+  "lastCommitDate": "2025-06-30T16:12:34Z",
+  "topContributors": [
+    {
+      "contributions": 127,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 103,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 62,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 18,
+      "login": "sebastianduesing"
+    },
+    {
+      "contributions": 11,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 8,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 5,
+      "login": "beckyjackson"
+    },
+    {
+      "contributions": 4,
+      "login": "bpeters42"
+    },
+    {
+      "contributions": 3,
+      "login": "ddooley"
+    },
+    {
+      "contributions": 1,
+      "login": "bjonnh"
+    }
+  ]
+}

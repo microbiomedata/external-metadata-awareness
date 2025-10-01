@@ -1,0 +1,27 @@
+collection_name	total_documents	flatness_score	max_depth	unique_simple_fields	unique_nested_fields	unique_array_fields	sampled_documents	top_nested_field	top_array_field
+attribute_harmonized_pairings	20937	100.0	0	4	0	0	100		
+biosamples_attributes	52518729	100.0	0	7	0	0	100		
+biosamples_flattened	3037277	100.0	0	163	0	0	100		
+biosamples_ids	7871449	100.0	0	6	0	0	100		
+biosamples_links	2335376	100.0	0	6	0	0	100		
+content_pairs_aggregated	2331732	100.0	0	5	0	0	100		
+env_triads_flattened	9262719	100.0	0	10	0	0	100		
+harmonized_name_dimensional_stats	432	100.0	0	14	0	0	100		
+harmonized_name_usage_stats	695	100.0	0	4	0	0	100		
+measurement_evidence_percentages	695	100.0	0	12	0	0	100		
+measurement_results_skip_filtered	87466	100.0	0	13	0	0	100		
+mixed_content_counts	440	100.0	0	3	0	0	100		
+ncbi_attributes_flattened	960	100.0	0	9	0	0	100		
+ncbi_packages_flattened	229	100.0	0	13	0	0	100		
+sra_biosamples_bioprojects	31809491	100.0	0	3	0	0	100		
+unit_assertion_counts	13	100.0	0	4	0	0	13		
+env_triad_component_curies_uc	4549	99.8	1	12	0	1	100		mappings
+biosamples_env_triad_value_counts_gt_1	49329	85.9	1	21	0	1	100		components
+nmdc_range_slot_usage_report	44	85.0	1	15	1	0	44	other_slot_usage_properties	
+env_triad_component_labels	35141	84.4	2	24	0	3	100		oak_text_annotations
+global_mixs_slots	772	74.2	1	24	2	4	100	annotations	keywords
+global_nmdc_slots	841	70.7	3	46	10	15	100	annotations	examples
+env_triads	3037277	50.6	2	20	3	3	100	env_broad_scale	env_broad_scale.components
+attributes	960	49.9	1	12	6	2	100	Name	Package
+packages	229	43.2	1	17	8	1	100	Name	Antibiogram
+biosamples	3037277	14.8	5	44	23	5	100	Ids	Attributes.Attribute

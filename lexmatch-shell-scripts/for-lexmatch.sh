@@ -1,5 +1,43 @@
 #!/bin/bash
 
+# ==============================================================================
+# Batch Lexical Matching for Ontology Alignment
+# ==============================================================================
+#
+# PURPOSE:
+#   Performs batch lexical matching between NMDC/MIxS terms and multiple
+#   ontologies using OAK (Ontology Access Kit) to generate SSSOM mapping files
+#   for semantic alignment research.
+#
+# USAGE:
+#   ./for-lexmatch.sh
+#
+# PREREQUISITES:
+#   - for-lexmatch.txt: Text file containing one ontology name per line (e.g., "envo", "chebi")
+#   - nmdc.db: SQLite database containing NMDC schema terms
+#   - env_triad_pvs_sheet.db: Environmental triad permissible values database
+#   - poetry environment with OAK installed
+#   - ../lexmatch-output/ directory for output files
+#
+# INPUT FILE FORMAT (for-lexmatch.txt):
+#   envo
+#   chebi
+#   go
+#   ...
+#
+# OUTPUTS:
+#   - ../lexmatch-output/nmdc_mixs_vs_${ontology}.SSSOM.tsv: MIxS term mappings
+#   - ../lexmatch-output/nmdc_nmdc_vs_${ontology}.SSSOM.tsv: NMDC term mappings
+#   - ../lexmatch-output/env_triad_pvs_vs_${ontology}.SSSOM.tsv: Environmental triad mappings
+#   - lexmatch-errors.txt: Error log from all operations
+#
+# NORMALIZATION STEPS:
+#   - Case normalization (lowercase)
+#   - Whitespace normalization (trim/collapse)
+#   - Word order normalization (alphabetical)
+#
+# ==============================================================================
+
 # Check if the input file exists
 if [ ! -f for-lexmatch.txt ]; then
   echo "File for-lexmatch.txt not found!"

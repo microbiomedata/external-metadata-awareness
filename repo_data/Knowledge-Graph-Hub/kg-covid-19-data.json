@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-07-30T23:09:09Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "data requiring UI interaction to download, fairly static, small files -- supporting kg-covid-19",
+  "name": "kg-covid-19-data",
+  "updatedAt": "2020-09-14T06:41:42Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/kg-covid-19-data",
+  "firstCommitDate": "2020-07-30T23:09:11Z",
+  "lastCommitDate": "2020-07-30T23:09:11Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "realmarcin"
+    }
+  ]
+}

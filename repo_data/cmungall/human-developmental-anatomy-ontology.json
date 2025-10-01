@@ -1,0 +1,22 @@
+{
+  "createdAt": "2014-06-26T00:35:08Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Ontology of human developmental anatomy",
+  "name": "human-developmental-anatomy-ontology",
+  "updatedAt": "2015-01-02T01:23:31Z",
+  "url": "https://github.com/cmungall/human-developmental-anatomy-ontology",
+  "firstCommitDate": "2014-12-06T01:38:02Z",
+  "lastCommitDate": "2014-12-06T01:38:02Z",
+  "topContributors": [
+    {
+      "contributions": 26,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 3,
+      "login": "c15mnw"
+    }
+  ]
+}

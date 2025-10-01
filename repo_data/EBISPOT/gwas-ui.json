@@ -1,0 +1,54 @@
+{
+  "createdAt": "2018-06-26T07:15:50Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "gwas-ui",
+  "updatedAt": "2025-09-26T15:42:13Z",
+  "url": "https://github.com/EBISPOT/gwas-ui",
+  "firstCommitDate": "2025-09-26T15:42:10Z",
+  "lastCommitDate": "2025-09-26T15:42:10Z",
+  "topContributors": [
+    {
+      "contributions": 408,
+      "login": "ala-ebi"
+    },
+    {
+      "contributions": 287,
+      "login": "twhetzel"
+    },
+    {
+      "contributions": 224,
+      "login": "eks-ebi"
+    },
+    {
+      "contributions": 135,
+      "login": "jstewart-ebi"
+    },
+    {
+      "contributions": 128,
+      "login": "ljwh2"
+    },
+    {
+      "contributions": 113,
+      "login": "sajo-ebi"
+    },
+    {
+      "contributions": 99,
+      "login": "sprintell"
+    },
+    {
+      "contributions": 95,
+      "login": "JalMacArthur"
+    },
+    {
+      "contributions": 54,
+      "login": "cmalangone"
+    },
+    {
+      "contributions": 50,
+      "login": "buniello"
+    }
+  ]
+}

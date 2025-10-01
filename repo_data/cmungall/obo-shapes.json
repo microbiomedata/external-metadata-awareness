@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-07-11T05:43:25Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Experiments using RDF shapes to constrain the structure of ontologies",
+  "name": "obo-shapes",
+  "updatedAt": "2019-07-11T06:54:57Z",
+  "url": "https://github.com/cmungall/obo-shapes",
+  "firstCommitDate": "2019-07-11T06:54:46Z",
+  "lastCommitDate": "2019-07-11T06:54:46Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

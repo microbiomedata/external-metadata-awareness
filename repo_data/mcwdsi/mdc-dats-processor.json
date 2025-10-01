@@ -1,0 +1,26 @@
+{
+  "createdAt": "2017-05-11T19:01:58Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A parsing script written in Python 3.5 that parses DATS JSON files for datasets in the MIDAS Digital Commons. ",
+  "name": "mdc-dats-processor",
+  "updatedAt": "2023-10-05T19:15:01Z",
+  "url": "https://github.com/mcwdsi/mdc-dats-processor",
+  "firstCommitDate": "2019-05-03T19:21:47Z",
+  "lastCommitDate": "2019-05-03T19:21:47Z",
+  "topContributors": [
+    {
+      "contributions": 33,
+      "login": "dillerm"
+    },
+    {
+      "contributions": 5,
+      "login": "hoganwr"
+    },
+    {
+      "contributions": 2,
+      "login": "atloiaco"
+    }
+  ]
+}

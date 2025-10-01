@@ -1,0 +1,54 @@
+{
+  "createdAt": "2018-02-05T18:36:22Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A new system for managing OBO PURLs",
+  "name": "purl.obolibrary.org",
+  "updatedAt": "2018-02-05T18:36:24Z",
+  "url": "https://github.com/aellenhicks/purl.obolibrary.org",
+  "firstCommitDate": "2018-02-05T14:43:48Z",
+  "lastCommitDate": "2018-02-05T14:43:48Z",
+  "topContributors": [
+    {
+      "contributions": 305,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 176,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 33,
+      "login": "alanruttenberg"
+    },
+    {
+      "contributions": 29,
+      "login": "ramonawalls"
+    },
+    {
+      "contributions": 26,
+      "login": "mcourtot"
+    },
+    {
+      "contributions": 22,
+      "login": "mbrochhausen"
+    },
+    {
+      "contributions": 17,
+      "login": "zhengj2007"
+    },
+    {
+      "contributions": 11,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 11,
+      "login": "FernandaFarinelli"
+    },
+    {
+      "contributions": 10,
+      "login": "hoganwr"
+    }
+  ]
+}

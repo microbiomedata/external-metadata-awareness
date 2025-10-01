@@ -1,0 +1,54 @@
+{
+  "createdAt": "2018-09-04T20:16:06Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Protege Desktop",
+  "name": "protege",
+  "updatedAt": "2018-09-04T20:16:11Z",
+  "url": "https://github.com/cmungall/protege",
+  "firstCommitDate": "2018-08-04T00:48:54Z",
+  "lastCommitDate": "2018-08-04T00:48:54Z",
+  "topContributors": [
+    {
+      "contributions": 1450,
+      "login": "stdotjohn"
+    },
+    {
+      "contributions": 1065,
+      "login": "matthewhorridge"
+    },
+    {
+      "contributions": 620,
+      "login": "jvendetti"
+    },
+    {
+      "contributions": 517,
+      "login": "nickdrummond"
+    },
+    {
+      "contributions": 27,
+      "login": "ykazakov"
+    },
+    {
+      "contributions": 9,
+      "login": "sesuncedu"
+    },
+    {
+      "contributions": 5,
+      "login": "csnyulas"
+    },
+    {
+      "contributions": 3,
+      "login": "tsarkov"
+    },
+    {
+      "contributions": 2,
+      "login": "saarus72"
+    },
+    {
+      "contributions": 2,
+      "login": "bdionne"
+    }
+  ]
+}

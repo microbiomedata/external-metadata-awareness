@@ -1,0 +1,50 @@
+{
+  "createdAt": "2023-08-25T17:31:09Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Code repo for converting MIxS 6.1 XLSX to MIxS 6.2 YAML",
+  "name": "mixs6.2_release_candidate",
+  "updatedAt": "2023-10-16T17:19:58Z",
+  "url": "https://github.com/GenomicsStandardsConsortium/mixs6.2_release_candidate",
+  "firstCommitDate": "2023-10-05T18:45:30Z",
+  "lastCommitDate": "2023-10-05T18:45:30Z",
+  "topContributors": [
+    {
+      "contributions": 114,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 47,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 36,
+      "login": "ramonawalls"
+    },
+    {
+      "contributions": 13,
+      "login": "folker"
+    },
+    {
+      "contributions": 10,
+      "login": "renzok"
+    },
+    {
+      "contributions": 8,
+      "login": "lschriml"
+    },
+    {
+      "contributions": 7,
+      "login": "only1chunts"
+    },
+    {
+      "contributions": 2,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 2,
+      "login": "genomicstandardsconsortium"
+    }
+  ]
+}

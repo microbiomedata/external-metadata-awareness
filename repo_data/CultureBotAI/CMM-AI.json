@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-09-24T00:13:40Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "CMM-AI",
+  "updatedAt": "2025-09-24T06:09:59Z",
+  "url": "https://github.com/CultureBotAI/CMM-AI",
+  "firstCommitDate": "2025-09-24T06:07:35Z",
+  "lastCommitDate": "2025-09-24T06:07:35Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "realmarcin"
+    }
+  ]
+}

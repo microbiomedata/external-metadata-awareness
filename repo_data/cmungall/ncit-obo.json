@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-02-19T22:26:31Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Convert NCI Thesaurus OWL to OBO-standard OWL",
+  "name": "ncit-obo",
+  "updatedAt": "2016-02-19T22:26:33Z",
+  "url": "https://github.com/cmungall/ncit-obo",
+  "firstCommitDate": "2016-02-19T20:58:10Z",
+  "lastCommitDate": "2016-02-19T20:58:10Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "jamesaoverton"
+    }
+  ]
+}

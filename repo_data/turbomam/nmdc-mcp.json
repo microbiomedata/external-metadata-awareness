@@ -1,0 +1,22 @@
+{
+  "createdAt": "2025-06-11T19:12:23Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "General purpose NMDC MCP with schema introspection",
+  "name": "nmdc-mcp",
+  "updatedAt": "2025-06-11T19:57:52Z",
+  "url": "https://github.com/turbomam/nmdc-mcp",
+  "firstCommitDate": "2025-06-11T19:57:48Z",
+  "lastCommitDate": "2025-06-11T19:57:48Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 1,
+      "login": "sujaypatil96"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "createdAt": "2021-06-17T01:39:33Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "ubuntu20-dev",
+  "updatedAt": "2021-06-17T01:54:34Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/ubuntu20-dev",
+  "firstCommitDate": "2021-06-17T01:54:27Z",
+  "lastCommitDate": "2021-06-17T01:54:27Z",
+  "topContributors": []
+}

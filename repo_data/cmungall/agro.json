@@ -1,0 +1,26 @@
+{
+  "createdAt": "2017-01-08T02:23:00Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "agro",
+  "updatedAt": "2017-01-08T02:23:03Z",
+  "url": "https://github.com/cmungall/agro",
+  "firstCommitDate": "2017-01-06T15:12:36Z",
+  "lastCommitDate": "2017-01-06T15:12:36Z",
+  "topContributors": [
+    {
+      "contributions": 126,
+      "login": "celineaubert"
+    },
+    {
+      "contributions": 36,
+      "login": "pbuttigieg"
+    },
+    {
+      "contributions": 31,
+      "login": "marieALaporte"
+    }
+  ]
+}

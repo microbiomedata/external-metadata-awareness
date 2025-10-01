@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-03-30T16:12:22Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Consolidation of NMDC's use of EMP500 data and metadata",
+  "name": "nmdc-emp500",
+  "updatedAt": "2022-03-30T16:32:40Z",
+  "url": "https://github.com/microbiomedata/nmdc-emp500",
+  "firstCommitDate": "2022-04-06T21:32:04Z",
+  "lastCommitDate": "2022-04-06T21:32:04Z",
+  "topContributors": [
+    {
+      "contributions": 15,
+      "login": "turbomam"
+    }
+  ]
+}

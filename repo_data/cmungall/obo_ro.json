@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-11-04T00:51:15Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "prolog predicate translation of OBO Relations Ontology",
+  "name": "obo_ro",
+  "updatedAt": "2023-03-12T10:29:28Z",
+  "url": "https://github.com/cmungall/obo_ro",
+  "firstCommitDate": "2018-02-08T00:47:07Z",
+  "lastCommitDate": "2018-02-08T00:47:07Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

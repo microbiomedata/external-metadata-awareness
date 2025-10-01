@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-09-15T20:32:12Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "tools for ingesting NCBI metadata (Biosamples, Bioprojects, SRA metadata) into MongoDB and flattening into something like DuckDB or Parquet. Adds some minimal cleanup and aggregation.",
+  "name": "ncbi-tools",
+  "updatedAt": "2025-09-15T20:32:16Z",
+  "url": "https://github.com/contextualizer-ai/ncbi-tools",
+  "firstCommitDate": "2025-09-15T20:32:12Z",
+  "lastCommitDate": "2025-09-15T20:32:12Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "turbomam"
+    }
+  ]
+}

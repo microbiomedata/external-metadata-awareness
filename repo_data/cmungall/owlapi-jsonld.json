@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-06-04T21:54:29Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "JSON-LD parser and writer for OWL API",
+  "name": "owlapi-jsonld",
+  "updatedAt": "2016-06-04T21:54:29Z",
+  "url": "https://github.com/cmungall/owlapi-jsonld",
+  "firstCommitDate": "2016-02-10T10:37:37Z",
+  "lastCommitDate": "2016-02-10T10:37:37Z",
+  "topContributors": [
+    {
+      "contributions": 55,
+      "login": "stain"
+    },
+    {
+      "contributions": 2,
+      "login": "ansell"
+    }
+  ]
+}

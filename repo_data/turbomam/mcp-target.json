@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-06-18T17:17:07Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "target for trying mcp actions like issue creation",
+  "name": "mcp-target",
+  "updatedAt": "2025-06-18T17:17:11Z",
+  "url": "https://github.com/turbomam/mcp-target",
+  "firstCommitDate": "2025-06-18T17:17:07Z",
+  "lastCommitDate": "2025-06-18T17:17:07Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "turbomam"
+    }
+  ]
+}

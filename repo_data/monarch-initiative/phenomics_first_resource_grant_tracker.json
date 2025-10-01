@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-10-19T12:09:57Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Project Management repository for the Phenomics First Resource (PFR) NHGRI CEGS grant.",
+  "name": "phenomics_first_resource_grant_tracker",
+  "updatedAt": "2025-01-31T22:34:44Z",
+  "url": "https://github.com/monarch-initiative/phenomics_first_resource_grant_tracker",
+  "firstCommitDate": "2025-01-15T20:58:23Z",
+  "lastCommitDate": "2025-01-15T20:58:23Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 2,
+      "login": "sagehrke"
+    }
+  ]
+}

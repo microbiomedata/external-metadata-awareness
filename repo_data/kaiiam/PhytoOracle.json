@@ -1,0 +1,54 @@
+{
+  "createdAt": "2019-12-14T04:39:01Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "2019 Final project",
+  "name": "PhytoOracle",
+  "updatedAt": "2023-04-22T16:30:07Z",
+  "url": "https://github.com/kaiiam/PhytoOracle",
+  "firstCommitDate": "2019-12-14T04:10:58Z",
+  "lastCommitDate": "2019-12-14T04:10:58Z",
+  "topContributors": [
+    {
+      "contributions": 46,
+      "login": "zhxu73"
+    },
+    {
+      "contributions": 26,
+      "login": "emmanuelgonz"
+    },
+    {
+      "contributions": 13,
+      "login": "sateeshperi"
+    },
+    {
+      "contributions": 5,
+      "login": "uacic"
+    },
+    {
+      "contributions": 3,
+      "login": "nasseralbalawi"
+    },
+    {
+      "contributions": 2,
+      "login": "nreppe"
+    },
+    {
+      "contributions": 1,
+      "login": "CosiMichele"
+    },
+    {
+      "contributions": 1,
+      "login": "JLHonors"
+    },
+    {
+      "contributions": 1,
+      "login": "jennenmaryniak"
+    },
+    {
+      "contributions": 1,
+      "login": "mohammadAbdolhosseiniMoghaddam"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2009-12-18T16:24:45Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Mappings to present bio-databases as SPARQL endpoints",
+  "name": "bio-d2rq-mappings",
+  "updatedAt": "2014-01-02T03:09:47Z",
+  "url": "https://github.com/cmungall/bio-d2rq-mappings",
+  "firstCommitDate": "2009-12-18T16:22:53Z",
+  "lastCommitDate": "2009-12-18T16:22:53Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

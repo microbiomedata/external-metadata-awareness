@@ -1,0 +1,30 @@
+{
+  "createdAt": "2020-02-13T18:11:05Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "shex.io web site",
+  "name": "shex.io",
+  "updatedAt": "2020-02-13T18:11:07Z",
+  "url": "https://github.com/cmungall/shex.io",
+  "firstCommitDate": "2020-02-08T12:07:37Z",
+  "lastCommitDate": "2020-02-08T12:07:37Z",
+  "topContributors": [
+    {
+      "contributions": 23,
+      "login": "gkellogg"
+    },
+    {
+      "contributions": 5,
+      "login": "labra"
+    },
+    {
+      "contributions": 1,
+      "login": "trebor"
+    },
+    {
+      "contributions": 1,
+      "login": "tombaker"
+    }
+  ]
+}

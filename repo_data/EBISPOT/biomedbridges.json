@@ -1,0 +1,18 @@
+{
+  "createdAt": "2014-12-15T15:30:21Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Contains code developed by the SPOT team at EBI as part of the BioMedBridges Project",
+  "name": "biomedbridges",
+  "updatedAt": "2014-12-17T17:14:18Z",
+  "url": "https://github.com/EBISPOT/biomedbridges",
+  "firstCommitDate": "2014-12-17T16:24:50Z",
+  "lastCommitDate": "2014-12-17T16:24:50Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "tburdett"
+    }
+  ]
+}

@@ -1,0 +1,480 @@
+[
+  {
+    "createdAt": "2017-02-21T01:43:54Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A lightweight web application using viz.js to render Graphviz files.",
+    "name": "biolink-graphviz-demo",
+    "updatedAt": "2017-02-21T01:44:28Z",
+    "url": "https://github.com/biolink/biolink-graphviz-demo",
+    "firstCommitDate": "2017-02-22T00:04:19Z",
+    "lastCommitDate": "2017-02-22T00:04:19Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 2,
+        "login": "DoctorBud"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-02-08T04:17:59Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "biolink-java-client",
+    "updatedAt": "2024-08-26T23:09:09Z",
+    "url": "https://github.com/biolink/biolink-java-client",
+    "firstCommitDate": "2017-02-08T04:16:00Z",
+    "lastCommitDate": "2017-02-08T04:16:00Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-02-08T00:13:01Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Automatically generated js client for biolink-api",
+    "name": "biolink-javascript-client",
+    "updatedAt": "2019-07-29T09:47:24Z",
+    "url": "https://github.com/biolink/biolink-javascript-client",
+    "firstCommitDate": "2017-02-08T00:20:27Z",
+    "lastCommitDate": "2017-02-08T00:20:27Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-01-15T16:31:40Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A collection of useful python functions for looking up information and working with the Biolink Model",
+    "name": "biolink-model-toolkit",
+    "updatedAt": "2025-05-27T23:32:20Z",
+    "url": "https://github.com/biolink/biolink-model-toolkit",
+    "firstCommitDate": "2025-05-27T23:32:16Z",
+    "lastCommitDate": "2025-05-27T23:32:16Z",
+    "topContributors": [
+      {
+        "contributions": 425,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 54,
+        "login": "deepakunni3"
+      },
+      {
+        "contributions": 47,
+        "login": "RichardBruskiewich"
+      },
+      {
+        "contributions": 14,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 6,
+        "login": "lhannest"
+      },
+      {
+        "contributions": 5,
+        "login": "patrickkwang"
+      },
+      {
+        "contributions": 2,
+        "login": "hsolbrig"
+      },
+      {
+        "contributions": 1,
+        "login": "gaurav"
+      },
+      {
+        "contributions": 1,
+        "login": "kennethbruskiewicz"
+      },
+      {
+        "contributions": 1,
+        "login": "nlharris"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-12-01T19:48:08Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Biolink Model Workshop at Biocuration 2020",
+    "name": "biolink-model-workshop",
+    "updatedAt": "2020-12-04T05:18:02Z",
+    "url": "https://github.com/biolink/biolink-model-workshop",
+    "firstCommitDate": "2020-12-04T05:17:59Z",
+    "lastCommitDate": "2020-12-04T05:17:59Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "deepakunni3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-12-04T04:45:18Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Schema and generated objects for biolink data model and upper ontology",
+    "name": "biolink-model",
+    "updatedAt": "2025-09-25T09:20:28Z",
+    "url": "https://github.com/biolink/biolink-model",
+    "firstCommitDate": "2025-09-10T00:12:22Z",
+    "lastCommitDate": "2025-09-10T00:12:22Z",
+    "topContributors": [
+      {
+        "contributions": 1829,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 322,
+        "login": "deepakunni3"
+      },
+      {
+        "contributions": 290,
+        "login": "actions-user"
+      },
+      {
+        "contributions": 203,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 155,
+        "login": "hsolbrig"
+      },
+      {
+        "contributions": 135,
+        "login": "RichardBruskiewich"
+      },
+      {
+        "contributions": 63,
+        "login": "colleenXu"
+      },
+      {
+        "contributions": 63,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 46,
+        "login": "cbizon"
+      },
+      {
+        "contributions": 39,
+        "login": "mbrush"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-01-26T01:07:26Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "DEPRECATED: replaced by linkml",
+    "name": "biolinkml",
+    "updatedAt": "2023-01-28T06:12:02Z",
+    "url": "https://github.com/biolink/biolinkml",
+    "firstCommitDate": "2021-04-04T20:05:59Z",
+    "lastCommitDate": "2021-04-04T20:05:59Z",
+    "topContributors": [
+      {
+        "contributions": 479,
+        "login": "hsolbrig"
+      },
+      {
+        "contributions": 113,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 98,
+        "login": "actions-user"
+      },
+      {
+        "contributions": 12,
+        "login": "RichardBruskiewich"
+      },
+      {
+        "contributions": 6,
+        "login": "rajshruti"
+      },
+      {
+        "contributions": 5,
+        "login": "deepakunni3"
+      },
+      {
+        "contributions": 2,
+        "login": "rajshruti18"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-05-20T17:28:53Z",
+    "defaultBranchRef": {
+      "name": ""
+    },
+    "description": "",
+    "name": "data",
+    "updatedAt": "2025-05-20T17:28:53Z",
+    "url": "https://github.com/biolink/data",
+    "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+    "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+  },
+  {
+    "createdAt": "2021-03-24T17:24:08Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A dummy project to test the reassignment of issues",
+    "name": "dummy",
+    "updatedAt": "2023-01-04T00:14:32Z",
+    "url": "https://github.com/biolink/dummy",
+    "firstCommitDate": "2021-03-24T17:24:10Z",
+    "lastCommitDate": "2021-03-24T17:24:10Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "hsolbrig"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-03-08T15:54:15Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "The information resource registry is a listing of data sources present in the NCATS Data Translator system.  Each information resource has an identifier, a short description, and an URL to more information about that resource.",
+    "name": "information-resource-registry",
+    "updatedAt": "2025-09-29T07:26:39Z",
+    "url": "https://github.com/biolink/information-resource-registry",
+    "firstCommitDate": "2025-09-29T07:26:34Z",
+    "lastCommitDate": "2025-09-29T07:26:34Z",
+    "topContributors": [
+      {
+        "contributions": 211,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 86,
+        "login": "actions-user"
+      },
+      {
+        "contributions": 24,
+        "login": "andrewsu"
+      },
+      {
+        "contributions": 13,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 12,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 11,
+        "login": "gglusman"
+      },
+      {
+        "contributions": 10,
+        "login": "karafecho"
+      },
+      {
+        "contributions": 8,
+        "login": "Qi-ISB"
+      },
+      {
+        "contributions": 5,
+        "login": "maximusunc"
+      },
+      {
+        "contributions": 4,
+        "login": "eKathleenCarter"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-06-24T21:32:07Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "ingest-metadata",
+    "updatedAt": "2025-09-22T20:54:17Z",
+    "url": "https://github.com/biolink/ingest-metadata",
+    "firstCommitDate": "2025-09-22T20:53:42Z",
+    "lastCommitDate": "2025-09-22T20:53:42Z",
+    "topContributors": [
+      {
+        "contributions": 26,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 6,
+        "login": "RichardBruskiewich"
+      },
+      {
+        "contributions": 4,
+        "login": "actions-user"
+      },
+      {
+        "contributions": 4,
+        "login": "mbrush"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-04-24T02:09:07Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "KGX is a Python library for exchanging Knowledge Graphs",
+    "name": "kgx",
+    "updatedAt": "2025-09-22T10:09:31Z",
+    "url": "https://github.com/biolink/kgx",
+    "firstCommitDate": "2025-09-03T23:32:36Z",
+    "lastCommitDate": "2025-09-03T23:32:36Z",
+    "topContributors": [
+      {
+        "contributions": 630,
+        "login": "deepakunni3"
+      },
+      {
+        "contributions": 491,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 225,
+        "login": "lhannest"
+      },
+      {
+        "contributions": 54,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 40,
+        "login": "RichardBruskiewich"
+      },
+      {
+        "contributions": 27,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 24,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 22,
+        "login": "kennethbruskiewicz"
+      },
+      {
+        "contributions": 14,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 11,
+        "login": "hrshdhgd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-04-18T23:36:22Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "python library for working with ontologies and ontology associations",
+    "name": "ontobio",
+    "updatedAt": "2025-09-29T18:08:58Z",
+    "url": "https://github.com/biolink/ontobio",
+    "firstCommitDate": "2024-12-16T21:13:42Z",
+    "lastCommitDate": "2024-12-16T21:13:42Z",
+    "topContributors": [
+      {
+        "contributions": 561,
+        "login": "dougli1sqrd"
+      },
+      {
+        "contributions": 413,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 252,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 195,
+        "login": "dustine32"
+      },
+      {
+        "contributions": 133,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 116,
+        "login": "mugitty"
+      },
+      {
+        "contributions": 87,
+        "login": "deepakunni3"
+      },
+      {
+        "contributions": 64,
+        "login": "kltm"
+      },
+      {
+        "contributions": 14,
+        "login": "lhannest"
+      },
+      {
+        "contributions": 7,
+        "login": "RichardBruskiewich"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-08-11T19:30:10Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A LinkML schema for describing the scope, rationale, and modeling approach for ingesting content from a single source.",
+    "name": "resource-ingest-guide-schema",
+    "updatedAt": "2025-09-23T01:00:51Z",
+    "url": "https://github.com/biolink/resource-ingest-guide-schema",
+    "firstCommitDate": "2025-09-23T01:00:46Z",
+    "lastCommitDate": "2025-09-23T01:00:46Z",
+    "topContributors": [
+      {
+        "contributions": 50,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 48,
+        "login": "RichardBruskiewich"
+      },
+      {
+        "contributions": 28,
+        "login": "mbrush"
+      },
+      {
+        "contributions": 1,
+        "login": "colleenXu"
+      }
+    ]
+  }
+]

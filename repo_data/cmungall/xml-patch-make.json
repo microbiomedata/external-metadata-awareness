@@ -1,0 +1,26 @@
+{
+  "createdAt": "2019-09-05T08:56:26Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "XML patch allowing GNU make to output the workflow as XML",
+  "name": "xml-patch-make",
+  "updatedAt": "2019-09-05T08:56:27Z",
+  "url": "https://github.com/cmungall/xml-patch-make",
+  "firstCommitDate": "2017-07-28T16:51:49Z",
+  "lastCommitDate": "2017-07-28T16:51:49Z",
+  "topContributors": [
+    {
+      "contributions": 39,
+      "login": "lindenb"
+    },
+    {
+      "contributions": 7,
+      "login": "sjackman"
+    },
+    {
+      "contributions": 2,
+      "login": "mr-c"
+    }
+  ]
+}

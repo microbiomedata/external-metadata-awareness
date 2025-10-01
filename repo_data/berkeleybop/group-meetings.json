@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-03-29T20:01:02Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "group-meetings",
+  "updatedAt": "2024-10-01T20:55:39Z",
+  "url": "https://github.com/berkeleybop/group-meetings",
+  "firstCommitDate": "2024-10-01T20:55:36Z",
+  "lastCommitDate": "2024-10-01T20:55:36Z",
+  "topContributors": [
+    {
+      "contributions": 9,
+      "login": "nlharris"
+    },
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

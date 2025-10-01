@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-03-27T14:50:56Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A tool to extract a list of ontology terms for importing into another ontology given parents are provided.",
+  "name": "ontology-extractor",
+  "updatedAt": "2019-03-27T14:58:14Z",
+  "url": "https://github.com/EBISPOT/ontology-extractor",
+  "firstCommitDate": "2019-03-27T14:57:59Z",
+  "lastCommitDate": "2019-03-27T14:57:59Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "zoependlington"
+    }
+  ]
+}

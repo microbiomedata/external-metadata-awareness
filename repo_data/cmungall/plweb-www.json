@@ -1,0 +1,54 @@
+{
+  "createdAt": "2019-11-18T16:40:53Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Submodule of plweb.git that contains the (wiki) web-pages",
+  "name": "plweb-www",
+  "updatedAt": "2019-11-18T16:40:55Z",
+  "url": "https://github.com/cmungall/plweb-www",
+  "firstCommitDate": "2019-11-10T08:19:24Z",
+  "lastCommitDate": "2019-11-10T08:19:24Z",
+  "topContributors": [
+    {
+      "contributions": 22,
+      "login": "JanWielemaker"
+    },
+    {
+      "contributions": 22,
+      "login": "Anniepoo"
+    },
+    {
+      "contributions": 12,
+      "login": "triska"
+    },
+    {
+      "contributions": 11,
+      "login": "filipesaraiva"
+    },
+    {
+      "contributions": 9,
+      "login": "sebity"
+    },
+    {
+      "contributions": 5,
+      "login": "wouterbeek"
+    },
+    {
+      "contributions": 3,
+      "login": "fnogatz"
+    },
+    {
+      "contributions": 2,
+      "login": "CapelliC"
+    },
+    {
+      "contributions": 2,
+      "login": "edom"
+    },
+    {
+      "contributions": 1,
+      "login": "borisvassilev"
+    }
+  ]
+}

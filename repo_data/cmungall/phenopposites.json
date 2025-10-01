@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-10-04T14:13:22Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Project to generate phenotype opposite_of relationships and investigate the effect on ontology-based algorithms",
+  "name": "phenopposites",
+  "updatedAt": "2020-06-05T13:08:53Z",
+  "url": "https://github.com/cmungall/phenopposites",
+  "firstCommitDate": "2017-03-17T08:00:39Z",
+  "lastCommitDate": "2017-03-17T08:00:39Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "drseb"
+    }
+  ]
+}

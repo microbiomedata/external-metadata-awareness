@@ -1,0 +1,2310 @@
+[
+  {
+    "createdAt": "2022-11-13T13:38:20Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A list of various lists consisting of academics on Mastodon",
+    "name": "academics-on-mastodon",
+    "updatedAt": "2022-11-13T13:01:00Z",
+    "url": "https://github.com/jfy133/academics-on-mastodon",
+    "firstCommitDate": "2022-11-13T13:39:18Z",
+    "lastCommitDate": "2022-11-13T13:39:18Z",
+    "topContributors": [
+      {
+        "contributions": 66,
+        "login": "nathanlesage"
+      },
+      {
+        "contributions": 17,
+        "login": "stark1tty"
+      },
+      {
+        "contributions": 7,
+        "login": "trutzig89182"
+      },
+      {
+        "contributions": 3,
+        "login": "eyssette"
+      },
+      {
+        "contributions": 3,
+        "login": "quinnanya"
+      },
+      {
+        "contributions": 2,
+        "login": "rotula"
+      },
+      {
+        "contributions": 2,
+        "login": "jocelynetienne"
+      },
+      {
+        "contributions": 2,
+        "login": "jorgesat"
+      },
+      {
+        "contributions": 1,
+        "login": "aserebrenik"
+      },
+      {
+        "contributions": 1,
+        "login": "Andy8chi"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-07-22T07:59:54Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Repository containing lists of all published ancient metagenome samples (and related) ",
+    "name": "AncientMetagenomeDir",
+    "updatedAt": "2025-07-14T14:17:22Z",
+    "url": "https://github.com/jfy133/AncientMetagenomeDir",
+    "firstCommitDate": "2025-06-26T09:38:02Z",
+    "lastCommitDate": "2025-06-26T09:38:02Z",
+    "topContributors": [
+      {
+        "contributions": 6069,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 1196,
+        "login": "aidaanva"
+      },
+      {
+        "contributions": 432,
+        "login": "alexhbnr"
+      },
+      {
+        "contributions": 351,
+        "login": "ashildv"
+      },
+      {
+        "contributions": 345,
+        "login": "KaHea-21"
+      },
+      {
+        "contributions": 328,
+        "login": "Becky-Cribdon"
+      },
+      {
+        "contributions": 289,
+        "login": "maxibor"
+      },
+      {
+        "contributions": 283,
+        "login": "ivelsko"
+      },
+      {
+        "contributions": 231,
+        "login": "pheintzman"
+      },
+      {
+        "contributions": 201,
+        "login": "DianaSpurite"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-11-13T14:15:55Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Simple form to let users for the „Academics on Mastodon“ lists generate their csv entries and send them via E-mail",
+    "name": "AoM-add-user",
+    "updatedAt": "2022-11-13T14:20:39Z",
+    "url": "https://github.com/jfy133/AoM-add-user",
+    "firstCommitDate": "2022-11-14T08:39:46Z",
+    "lastCommitDate": "2022-11-14T08:39:46Z",
+    "topContributors": [
+      {
+        "contributions": 11,
+        "login": "trutzig89182"
+      },
+      {
+        "contributions": 4,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-07-16T07:57:31Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "[Under constrution] Pipeline for metagenomic identification and authentication of ancient dietary DNA from archaeological samples",
+    "name": "archaeodiet",
+    "updatedAt": "2025-08-21T08:15:17Z",
+    "url": "https://github.com/jfy133/archaeodiet",
+    "firstCommitDate": "2021-08-31T12:01:26Z",
+    "lastCommitDate": "2021-08-31T12:01:26Z",
+    "topContributors": [
+      {
+        "contributions": 48,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-11-09T11:40:33Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Simple test framework for Nextflow pipelines",
+    "name": "askimed-nf-test",
+    "updatedAt": "2023-11-09T11:42:24Z",
+    "url": "https://github.com/jfy133/askimed-nf-test",
+    "firstCommitDate": "2023-11-09T11:46:47Z",
+    "lastCommitDate": "2023-11-09T11:46:47Z",
+    "topContributors": [
+      {
+        "contributions": 277,
+        "login": "lukfor"
+      },
+      {
+        "contributions": 36,
+        "login": "seppinho"
+      },
+      {
+        "contributions": 3,
+        "login": "sateeshperi"
+      },
+      {
+        "contributions": 3,
+        "login": "aaron-fishman-achillestx"
+      },
+      {
+        "contributions": 2,
+        "login": "ivopieniak"
+      },
+      {
+        "contributions": 2,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 2,
+        "login": "mashehu"
+      },
+      {
+        "contributions": 1,
+        "login": "afaulconbridge"
+      },
+      {
+        "contributions": 1,
+        "login": "edmundmiller"
+      },
+      {
+        "contributions": 1,
+        "login": "koenbossers"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-11-15T06:23:34Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Data and plot generation for Bergström, Fellows Yates and Warinner 2024",
+    "name": "bergstrom2024comment",
+    "updatedAt": "2025-08-21T08:27:09Z",
+    "url": "https://github.com/jfy133/bergstrom2024comment",
+    "firstCommitDate": "2024-12-03T09:59:54Z",
+    "lastCommitDate": "2024-12-03T09:59:54Z",
+    "topContributors": [
+      {
+        "contributions": 12,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 1,
+        "login": "bergstand"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-03-19T19:29:22Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Bingo web app (work in progress)",
+    "name": "bingo",
+    "updatedAt": "2023-09-16T16:00:38Z",
+    "url": "https://github.com/jfy133/bingo",
+    "firstCommitDate": "2021-10-16T04:16:39Z",
+    "lastCommitDate": "2021-10-16T04:16:39Z",
+    "topContributors": [
+      {
+        "contributions": 35,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 30,
+        "login": "cordeliadillon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-09-16T11:49:00Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Documentation for bioconda",
+    "name": "bioconda-bioconda-docs",
+    "updatedAt": "2024-09-16T11:49:00Z",
+    "url": "https://github.com/jfy133/bioconda-bioconda-docs",
+    "firstCommitDate": "2024-08-09T22:21:00Z",
+    "lastCommitDate": "2024-08-09T22:21:00Z",
+    "topContributors": [
+      {
+        "contributions": 25,
+        "login": "daler"
+      },
+      {
+        "contributions": 10,
+        "login": "johanneskoester"
+      },
+      {
+        "contributions": 8,
+        "login": "aliciaaevans"
+      },
+      {
+        "contributions": 5,
+        "login": "corneliusroemer"
+      },
+      {
+        "contributions": 1,
+        "login": "bgruening"
+      },
+      {
+        "contributions": 1,
+        "login": "dpryan79"
+      },
+      {
+        "contributions": 1,
+        "login": "epruesse"
+      },
+      {
+        "contributions": 1,
+        "login": "martin-g"
+      },
+      {
+        "contributions": 1,
+        "login": "peterjc"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-09-08T18:21:57Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Conda recipes for the bioconda channel.",
+    "name": "bioconda-recipes",
+    "updatedAt": "2025-09-19T11:26:52Z",
+    "url": "https://github.com/jfy133/bioconda-recipes",
+    "firstCommitDate": "2025-09-19T11:25:38Z",
+    "lastCommitDate": "2025-09-19T11:25:38Z",
+    "topContributors": [
+      {
+        "contributions": 19753,
+        "login": "BiocondaBot"
+      },
+      {
+        "contributions": 3176,
+        "login": "bgruening"
+      },
+      {
+        "contributions": 1505,
+        "login": "druvus"
+      },
+      {
+        "contributions": 1417,
+        "login": "johanneskoester"
+      },
+      {
+        "contributions": 1326,
+        "login": "daler"
+      },
+      {
+        "contributions": 1113,
+        "login": "bioconda-bot"
+      },
+      {
+        "contributions": 1014,
+        "login": "epruesse"
+      },
+      {
+        "contributions": 882,
+        "login": "dpryan79"
+      },
+      {
+        "contributions": 868,
+        "login": "mencian"
+      },
+      {
+        "contributions": 840,
+        "login": "chapmanb"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-02-21T09:53:21Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Small bash script to convert multiple (multi-)FASTAs into single file with single header",
+    "name": "collapse_fastas",
+    "updatedAt": "2019-02-26T09:58:15Z",
+    "url": "https://github.com/jfy133/collapse_fastas",
+    "firstCommitDate": "2019-02-26T09:57:24Z",
+    "lastCommitDate": "2019-02-26T09:57:24Z",
+    "topContributors": [
+      {
+        "contributions": 20,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-10-10T15:12:29Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Nextflow config builder scripts for supported HPC infrastructures. ",
+    "name": "configBuilder-nf",
+    "updatedAt": "2023-10-26T04:07:07Z",
+    "url": "https://github.com/jfy133/configBuilder-nf",
+    "firstCommitDate": "2023-10-21T07:54:21Z",
+    "lastCommitDate": "2023-10-21T07:54:21Z",
+    "topContributors": [
+      {
+        "contributions": 46,
+        "login": "georgiesamaha"
+      },
+      {
+        "contributions": 2,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-05-18T13:12:07Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "R library to generate 'Cumulative Percent Decay' curves for microbial taxonomic profiles",
+    "name": "cuperdec",
+    "updatedAt": "2025-05-20T08:11:02Z",
+    "url": "https://github.com/jfy133/cuperdec",
+    "firstCommitDate": "2022-09-12T10:53:39Z",
+    "lastCommitDate": "2022-09-12T10:53:39Z",
+    "topContributors": [
+      {
+        "contributions": 91,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-03-17T20:19:46Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Personal dotfiles",
+    "name": "dotfiles",
+    "updatedAt": "2025-06-20T12:44:07Z",
+    "url": "https://github.com/jfy133/dotfiles",
+    "firstCommitDate": "2025-06-20T12:44:03Z",
+    "lastCommitDate": "2025-06-20T12:44:03Z",
+    "topContributors": [
+      {
+        "contributions": 9,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-03-14T11:51:44Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "EAGER1 Tips and Tricks",
+    "name": "eager1-tips-and-tricks",
+    "updatedAt": "2023-01-28T12:22:35Z",
+    "url": "https://github.com/jfy133/eager1-tips-and-tricks",
+    "firstCommitDate": "2019-04-12T11:54:39Z",
+    "lastCommitDate": "2019-04-12T11:54:39Z",
+    "topContributors": [
+      {
+        "contributions": 22,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 10,
+        "login": "TCLamnidis"
+      },
+      {
+        "contributions": 1,
+        "login": "aidaanva"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-06-09T19:30:49Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Unofficial collection of utility scripts for the EAGER v1.9.* genome reconstruction pipeline",
+    "name": "eagerutils",
+    "updatedAt": "2023-01-28T12:22:34Z",
+    "url": "https://github.com/jfy133/eagerutils",
+    "firstCommitDate": "2018-06-09T19:45:35Z",
+    "lastCommitDate": "2018-06-09T19:45:35Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-01-09T05:58:20Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "endorS.py calculates endogenous DNA from samtools flagstat files and print to screen",
+    "name": "endorS.py",
+    "updatedAt": "2020-01-09T05:58:23Z",
+    "url": "https://github.com/jfy133/endorS.py",
+    "firstCommitDate": "2020-01-08T14:49:32Z",
+    "lastCommitDate": "2020-01-08T14:49:32Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "aidaanva"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-05-24T06:53:28Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Minimum Information about any (X) Sequence” (MIxS) specification",
+    "name": "genomics-standards-consortium-mixs",
+    "updatedAt": "2025-06-18T14:24:42Z",
+    "url": "https://github.com/jfy133/genomics-standards-consortium-mixs",
+    "firstCommitDate": "2025-06-09T19:40:21Z",
+    "lastCommitDate": "2025-06-09T19:40:21Z",
+    "topContributors": [
+      {
+        "contributions": 244,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 161,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 64,
+        "login": "ramonawalls"
+      },
+      {
+        "contributions": 48,
+        "login": "mslarae13"
+      },
+      {
+        "contributions": 14,
+        "login": "lschriml"
+      },
+      {
+        "contributions": 13,
+        "login": "folker"
+      },
+      {
+        "contributions": 13,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 12,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 11,
+        "login": "only1chunts"
+      },
+      {
+        "contributions": 10,
+        "login": "renzok"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-08-06T09:10:57Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": ":zap: Dynamically generated stats for your github readmes",
+    "name": "github-readme-stats",
+    "updatedAt": "2025-08-06T09:10:57Z",
+    "url": "https://github.com/jfy133/github-readme-stats",
+    "firstCommitDate": "2025-07-25T15:38:12Z",
+    "lastCommitDate": "2025-07-25T15:38:12Z",
+    "topContributors": [
+      {
+        "contributions": 395,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 338,
+        "login": "qwerty541"
+      },
+      {
+        "contributions": 266,
+        "login": "anuraghazra"
+      },
+      {
+        "contributions": 165,
+        "login": "rickstaa"
+      },
+      {
+        "contributions": 16,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 13,
+        "login": "nathanchu"
+      },
+      {
+        "contributions": 7,
+        "login": "Zo-Bro-23"
+      },
+      {
+        "contributions": 5,
+        "login": "nombrekeff"
+      },
+      {
+        "contributions": 5,
+        "login": "omidnikrah"
+      },
+      {
+        "contributions": 3,
+        "login": "Marcholio"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-10-30T08:57:05Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Additional supplementary information and code, data repository for Fellows Yates, J.A. et al. (2021) PNAS. DOI: http://dx.doi.org/10.1073/pnas.2021655118",
+    "name": "Hominid_Calculus_Microbiome_Evolution",
+    "updatedAt": "2025-08-21T08:16:20Z",
+    "url": "https://github.com/jfy133/Hominid_Calculus_Microbiome_Evolution",
+    "firstCommitDate": "2021-10-20T06:13:22Z",
+    "lastCommitDate": "2021-10-20T06:13:22Z",
+    "topContributors": [
+      {
+        "contributions": 133,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 53,
+        "login": "ivelsko"
+      },
+      {
+        "contributions": 1,
+        "login": "warinner"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-09-05T13:43:05Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "jfy133.github.io",
+    "updatedAt": "2025-07-29T21:06:48Z",
+    "url": "https://github.com/jfy133/jfy133.github.io",
+    "firstCommitDate": "2025-07-29T21:06:35Z",
+    "lastCommitDate": "2025-07-29T21:06:35Z",
+    "topContributors": [
+      {
+        "contributions": 69,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-06-18T06:44:42Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "jfy133",
+    "updatedAt": "2025-08-06T09:09:30Z",
+    "url": "https://github.com/jfy133/jfy133",
+    "firstCommitDate": "2025-08-06T09:09:26Z",
+    "lastCommitDate": "2025-08-06T09:09:26Z",
+    "topContributors": [
+      {
+        "contributions": 25,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-04-14T18:52:57Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Made with Manubot catalog (please add your manuscript!!)",
+    "name": "manubot-catalog",
+    "updatedAt": "2022-04-14T18:53:51Z",
+    "url": "https://github.com/jfy133/manubot-catalog",
+    "firstCommitDate": "2022-04-14T18:53:47Z",
+    "lastCommitDate": "2022-04-14T18:53:47Z",
+    "topContributors": [
+      {
+        "contributions": 61,
+        "login": "dhimmel"
+      },
+      {
+        "contributions": 11,
+        "login": "agitter"
+      },
+      {
+        "contributions": 4,
+        "login": "habi"
+      },
+      {
+        "contributions": 4,
+        "login": "vincerubinetti"
+      },
+      {
+        "contributions": 3,
+        "login": "trangdata"
+      },
+      {
+        "contributions": 2,
+        "login": "cthoyt"
+      },
+      {
+        "contributions": 2,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 2,
+        "login": "zietzm"
+      },
+      {
+        "contributions": 2,
+        "login": "lubianat"
+      },
+      {
+        "contributions": 1,
+        "login": "Adafede"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-11-13T12:53:19Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Most simple DIY webapp to bulk follow palaeogenomicist accounts on Mastodon. Originally by David Adler, Thomas Haase & Hendrik Erz for sociologist accounts.",
+    "name": "Mastodon-Palaeogenomicists",
+    "updatedAt": "2022-11-13T13:36:01Z",
+    "url": "https://github.com/jfy133/Mastodon-Palaeogenomicists",
+    "firstCommitDate": "2023-08-10T11:31:24Z",
+    "lastCommitDate": "2023-08-10T11:31:24Z",
+    "topContributors": [
+      {
+        "contributions": 134,
+        "login": "trutzig89182"
+      },
+      {
+        "contributions": 28,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 15,
+        "login": "thhaase"
+      },
+      {
+        "contributions": 9,
+        "login": "altinisik"
+      },
+      {
+        "contributions": 3,
+        "login": "nathanlesage"
+      },
+      {
+        "contributions": 1,
+        "login": "danwchan"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-12-19T21:09:40Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Interactive results viewer for maltExtract ",
+    "name": "MEx-IPA",
+    "updatedAt": "2021-05-19T15:39:28Z",
+    "url": "https://github.com/jfy133/MEx-IPA",
+    "firstCommitDate": "2021-05-19T08:48:51Z",
+    "lastCommitDate": "2021-05-19T08:48:51Z",
+    "topContributors": [
+      {
+        "contributions": 110,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-09-04T14:08:19Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A collection of unexpected challenges and learnings with nextflow and nf-core.",
+    "name": "midnighter-nextflow-gotchas",
+    "updatedAt": "2022-09-06T14:58:35Z",
+    "url": "https://github.com/jfy133/midnighter-nextflow-gotchas",
+    "firstCommitDate": "2023-05-12T10:52:10Z",
+    "lastCommitDate": "2023-05-12T10:52:10Z",
+    "topContributors": [
+      {
+        "contributions": 50,
+        "login": "Midnighter"
+      },
+      {
+        "contributions": 9,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 1,
+        "login": "bguo068"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-10-11T08:50:03Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Testing building mulled containers for multi-requirement tools.",
+    "name": "multi-package-containers",
+    "updatedAt": "2021-11-13T15:05:17Z",
+    "url": "https://github.com/jfy133/multi-package-containers",
+    "firstCommitDate": "2024-04-04T07:55:58Z",
+    "lastCommitDate": "2024-04-04T07:55:58Z",
+    "topContributors": [
+      {
+        "contributions": 2598,
+        "login": "bgruening"
+      },
+      {
+        "contributions": 178,
+        "login": "mvdbeek"
+      },
+      {
+        "contributions": 43,
+        "login": "tamuanand"
+      },
+      {
+        "contributions": 41,
+        "login": "ggabernet"
+      },
+      {
+        "contributions": 31,
+        "login": "apeltzer"
+      },
+      {
+        "contributions": 24,
+        "login": "Redmar-van-den-Berg"
+      },
+      {
+        "contributions": 23,
+        "login": "mirpedrol"
+      },
+      {
+        "contributions": 23,
+        "login": "JoseEspinosa"
+      },
+      {
+        "contributions": 23,
+        "login": "jmchilton"
+      },
+      {
+        "contributions": 22,
+        "login": "ypriverol"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-05-06T07:39:57Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Test data for MultiQC. See https://github.com/ewels/MultiQC",
+    "name": "MultiQC_TestData",
+    "updatedAt": "2023-12-18T10:17:27Z",
+    "url": "https://github.com/jfy133/MultiQC_TestData",
+    "firstCommitDate": "2023-06-13T06:00:28Z",
+    "lastCommitDate": "2023-06-13T06:00:28Z",
+    "topContributors": [
+      {
+        "contributions": 545,
+        "login": "ewels"
+      },
+      {
+        "contributions": 33,
+        "login": "Redmar-van-den-Berg"
+      },
+      {
+        "contributions": 27,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 19,
+        "login": "ErikDanielsson"
+      },
+      {
+        "contributions": 17,
+        "login": "chuan-wang"
+      },
+      {
+        "contributions": 17,
+        "login": "apeltzer"
+      },
+      {
+        "contributions": 11,
+        "login": "matthdsm"
+      },
+      {
+        "contributions": 10,
+        "login": "zwdzwd"
+      },
+      {
+        "contributions": 10,
+        "login": "vladsavelyev"
+      },
+      {
+        "contributions": 9,
+        "login": "Hammarn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-12-13T07:17:44Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Aggregate results from bioinformatics analyses across many samples into a single report.",
+    "name": "MultiQC",
+    "updatedAt": "2023-12-18T11:54:20Z",
+    "url": "https://github.com/jfy133/MultiQC",
+    "firstCommitDate": "2023-06-16T14:51:51Z",
+    "lastCommitDate": "2023-06-16T14:51:51Z",
+    "topContributors": [
+      {
+        "contributions": 3207,
+        "login": "ewels"
+      },
+      {
+        "contributions": 166,
+        "login": "apeltzer"
+      },
+      {
+        "contributions": 146,
+        "login": "Redmar-van-den-Berg"
+      },
+      {
+        "contributions": 109,
+        "login": "vladsavelyev"
+      },
+      {
+        "contributions": 98,
+        "login": "ErikDanielsson"
+      },
+      {
+        "contributions": 73,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 61,
+        "login": "jchorl"
+      },
+      {
+        "contributions": 57,
+        "login": "chuan-wang"
+      },
+      {
+        "contributions": 48,
+        "login": "bnbowman"
+      },
+      {
+        "contributions": 44,
+        "login": "iimog"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-01-31T08:08:32Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A DSL for data-driven computational pipelines",
+    "name": "nextflow-io-nextflow",
+    "updatedAt": "2024-07-08T15:23:50Z",
+    "url": "https://github.com/jfy133/nextflow-io-nextflow",
+    "firstCommitDate": "2024-07-08T13:47:57Z",
+    "lastCommitDate": "2024-07-08T13:47:57Z",
+    "topContributors": [
+      {
+        "contributions": 5715,
+        "login": "pditommaso"
+      },
+      {
+        "contributions": 203,
+        "login": "bentsherman"
+      },
+      {
+        "contributions": 61,
+        "login": "ewels"
+      },
+      {
+        "contributions": 43,
+        "login": "jorgeaguileraseqera"
+      },
+      {
+        "contributions": 39,
+        "login": "mribeirodantas"
+      },
+      {
+        "contributions": 25,
+        "login": "marcodelapierre"
+      },
+      {
+        "contributions": 25,
+        "login": "manuelesimi"
+      },
+      {
+        "contributions": 24,
+        "login": "abhi18av"
+      },
+      {
+        "contributions": 18,
+        "login": "robsyme"
+      },
+      {
+        "contributions": 18,
+        "login": "Lehmann-Fabian"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-09-06T09:55:03Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Place for me to play around and understand nextflow",
+    "name": "NextflowSandbox",
+    "updatedAt": "2019-09-19T18:05:59Z",
+    "url": "https://github.com/jfy133/NextflowSandbox",
+    "firstCommitDate": "2019-09-19T18:05:12Z",
+    "lastCommitDate": "2019-09-19T18:05:12Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-04-15T09:44:13Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Config files used to define parameters specific to compute environments at different Institutions",
+    "name": "nf-core-configs",
+    "updatedAt": "2025-08-25T16:01:26Z",
+    "url": "https://github.com/jfy133/nf-core-configs",
+    "firstCommitDate": "2025-08-25T16:01:22Z",
+    "lastCommitDate": "2025-08-25T16:01:22Z",
+    "topContributors": [
+      {
+        "contributions": 553,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 231,
+        "login": "maxulysse"
+      },
+      {
+        "contributions": 212,
+        "login": "apeltzer"
+      },
+      {
+        "contributions": 118,
+        "login": "drpatelh"
+      },
+      {
+        "contributions": 104,
+        "login": "edmundmiller"
+      },
+      {
+        "contributions": 99,
+        "login": "ewels"
+      },
+      {
+        "contributions": 74,
+        "login": "nf-core-bot"
+      },
+      {
+        "contributions": 69,
+        "login": "Joon-Klaps"
+      },
+      {
+        "contributions": 62,
+        "login": "nvnieuwk"
+      },
+      {
+        "contributions": 51,
+        "login": "phue"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-08-21T08:24:58Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Parallelised and automated construction of metagenomic classifier databases of different tools",
+    "name": "nf-core-createtaxdb",
+    "updatedAt": "2025-08-21T08:24:58Z",
+    "url": "https://github.com/jfy133/nf-core-createtaxdb",
+    "firstCommitDate": "2025-06-19T07:52:12Z",
+    "lastCommitDate": "2025-06-19T07:52:12Z",
+    "topContributors": [
+      {
+        "contributions": 350,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 55,
+        "login": "BioWilko"
+      },
+      {
+        "contributions": 39,
+        "login": "alxndrdiaz"
+      },
+      {
+        "contributions": 21,
+        "login": "nf-core-bot"
+      },
+      {
+        "contributions": 2,
+        "login": "LilyAnderssonLee"
+      },
+      {
+        "contributions": 2,
+        "login": "mashehu"
+      },
+      {
+        "contributions": 1,
+        "login": "mirpedrol"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-09-23T14:11:22Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A pipeline for the analysis of CRISPR edited data. It allows the evaluation of the quality of gene editing experiments using targeted next generation sequencing (NGS) data (`targeted`) as well as the discovery of important genes from knock-out or activation CRISPR-Cas9 screens using CRISPR pooled DNA (`screening`).",
+    "name": "nf-core-crisprseq",
+    "updatedAt": "2025-09-23T14:11:22Z",
+    "url": "https://github.com/jfy133/nf-core-crisprseq",
+    "firstCommitDate": "2024-11-08T14:27:19Z",
+    "lastCommitDate": "2024-11-08T14:27:19Z",
+    "topContributors": [
+      {
+        "contributions": 578,
+        "login": "LaurenceKuhl"
+      },
+      {
+        "contributions": 484,
+        "login": "mirpedrol"
+      },
+      {
+        "contributions": 37,
+        "login": "nf-core-bot"
+      },
+      {
+        "contributions": 16,
+        "login": "mashehu"
+      },
+      {
+        "contributions": 13,
+        "login": "alan-tracey"
+      },
+      {
+        "contributions": 4,
+        "login": "mschaffer-incyte"
+      },
+      {
+        "contributions": 2,
+        "login": "MartaSanvicente"
+      },
+      {
+        "contributions": 2,
+        "login": "medmaca"
+      },
+      {
+        "contributions": 1,
+        "login": "joannakraw"
+      },
+      {
+        "contributions": 1,
+        "login": "msanvicente"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-11-26T19:05:27Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A fully reproducible and state-of-the-art ancient DNA analysis pipeline",
+    "name": "nf-core-eager",
+    "updatedAt": "2023-05-12T08:31:12Z",
+    "url": "https://github.com/jfy133/nf-core-eager",
+    "firstCommitDate": "2023-05-12T08:30:54Z",
+    "lastCommitDate": "2023-05-12T08:30:54Z",
+    "topContributors": [
+      {
+        "contributions": 1893,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 737,
+        "login": "apeltzer"
+      },
+      {
+        "contributions": 170,
+        "login": "TCLamnidis"
+      },
+      {
+        "contributions": 118,
+        "login": "maxibor"
+      },
+      {
+        "contributions": 39,
+        "login": "ZandraFagernas"
+      },
+      {
+        "contributions": 18,
+        "login": "IdoBar"
+      },
+      {
+        "contributions": 15,
+        "login": "aidaanva"
+      },
+      {
+        "contributions": 8,
+        "login": "alexandregilardet"
+      },
+      {
+        "contributions": 7,
+        "login": "nf-core-bot"
+      },
+      {
+        "contributions": 7,
+        "login": "maxulysse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-12-13T08:34:27Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Pipeline to fetch metadata and raw FastQ files from public and private databases",
+    "name": "nf-core-fetchngs",
+    "updatedAt": "2022-06-11T03:53:02Z",
+    "url": "https://github.com/jfy133/nf-core-fetchngs",
+    "firstCommitDate": "2022-05-17T11:47:34Z",
+    "lastCommitDate": "2022-05-17T11:47:34Z",
+    "topContributors": [
+      {
+        "contributions": 197,
+        "login": "drpatelh"
+      },
+      {
+        "contributions": 40,
+        "login": "Midnighter"
+      },
+      {
+        "contributions": 21,
+        "login": "daisyhan97"
+      },
+      {
+        "contributions": 7,
+        "login": "nf-core-bot"
+      },
+      {
+        "contributions": 3,
+        "login": "JoseEspinosa"
+      },
+      {
+        "contributions": 3,
+        "login": "ewels"
+      },
+      {
+        "contributions": 2,
+        "login": "maxibor"
+      },
+      {
+        "contributions": 1,
+        "login": "alaindomissy"
+      },
+      {
+        "contributions": 1,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 1,
+        "login": "ojziff"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-12-15T12:30:18Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "Screening of functional components and natural products from assembled contigs",
+    "name": "nf-core-funcscan",
+    "updatedAt": "2025-06-01T13:47:17Z",
+    "url": "https://github.com/jfy133/nf-core-funcscan",
+    "firstCommitDate": "2024-09-06T12:06:50Z",
+    "lastCommitDate": "2024-09-06T12:06:50Z",
+    "topContributors": [
+      {
+        "contributions": 499,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 300,
+        "login": "Darcy220606"
+      },
+      {
+        "contributions": 188,
+        "login": "jasmezz"
+      },
+      {
+        "contributions": 171,
+        "login": "louperelo"
+      },
+      {
+        "contributions": 45,
+        "login": "nf-core-bot"
+      },
+      {
+        "contributions": 25,
+        "login": "Vedanth-Ramji"
+      },
+      {
+        "contributions": 6,
+        "login": "Midnighter"
+      },
+      {
+        "contributions": 3,
+        "login": "tavareshugo"
+      },
+      {
+        "contributions": 3,
+        "login": "mashehu"
+      },
+      {
+        "contributions": 2,
+        "login": "adamrtalbot"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-06-17T18:01:28Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Host nf-core logos and templates for making new logos",
+    "name": "nf-core-logos",
+    "updatedAt": "2024-06-20T14:33:12Z",
+    "url": "https://github.com/jfy133/nf-core-logos",
+    "firstCommitDate": "2024-06-18T18:55:38Z",
+    "lastCommitDate": "2024-06-18T18:55:38Z",
+    "topContributors": [
+      {
+        "contributions": 30,
+        "login": "drpatelh"
+      },
+      {
+        "contributions": 13,
+        "login": "maxulysse"
+      },
+      {
+        "contributions": 11,
+        "login": "apeltzer"
+      },
+      {
+        "contributions": 10,
+        "login": "ewels"
+      },
+      {
+        "contributions": 5,
+        "login": "mashehu"
+      },
+      {
+        "contributions": 4,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 1,
+        "login": "JayantGoel001"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-08-31T13:04:02Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Assembly and binning of metagenomes",
+    "name": "nf-core-mag",
+    "updatedAt": "2022-02-09T13:28:51Z",
+    "url": "https://github.com/jfy133/nf-core-mag",
+    "firstCommitDate": "2023-03-02T10:03:17Z",
+    "lastCommitDate": "2023-03-02T10:03:17Z",
+    "topContributors": [
+      {
+        "contributions": 697,
+        "login": "skrakau"
+      },
+      {
+        "contributions": 227,
+        "login": "d4straub"
+      },
+      {
+        "contributions": 226,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 128,
+        "login": "HadrienG"
+      },
+      {
+        "contributions": 45,
+        "login": "maxibor"
+      },
+      {
+        "contributions": 36,
+        "login": "AntoniaSchuster"
+      },
+      {
+        "contributions": 27,
+        "login": "nf-core-bot"
+      },
+      {
+        "contributions": 20,
+        "login": "prototaxites"
+      },
+      {
+        "contributions": 11,
+        "login": "alexhbnr"
+      },
+      {
+        "contributions": 9,
+        "login": "maxulysse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-08-09T08:50:07Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Repository to host tool-specific module files for the Nextflow DSL2 community!",
+    "name": "nf-core-modules",
+    "updatedAt": "2025-09-27T07:21:25Z",
+    "url": "https://github.com/jfy133/nf-core-modules",
+    "firstCommitDate": "2025-09-27T07:21:17Z",
+    "lastCommitDate": "2025-09-27T07:21:17Z",
+    "topContributors": [
+      {
+        "contributions": 536,
+        "login": "drpatelh"
+      },
+      {
+        "contributions": 409,
+        "login": "GallVp"
+      },
+      {
+        "contributions": 359,
+        "login": "nvnieuwk"
+      },
+      {
+        "contributions": 357,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 342,
+        "login": "maxulysse"
+      },
+      {
+        "contributions": 306,
+        "login": "matthdsm"
+      },
+      {
+        "contributions": 237,
+        "login": "edmundmiller"
+      },
+      {
+        "contributions": 200,
+        "login": "JoseEspinosa"
+      },
+      {
+        "contributions": 180,
+        "login": "FriederikeHanssen"
+      },
+      {
+        "contributions": 157,
+        "login": "LouisLeNezet"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-03-21T21:14:45Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Slides with condensed version of nf-core modules training on nf-core website",
+    "name": "nf-core-modulestraining-2025",
+    "updatedAt": "2025-03-21T21:18:29Z",
+    "url": "https://github.com/jfy133/nf-core-modulestraining-2025",
+    "firstCommitDate": "2025-03-21T21:16:02Z",
+    "lastCommitDate": "2025-03-21T21:16:02Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-10-11T09:00:58Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "nf-test utility functions",
+    "name": "nf-core-nft-utils",
+    "updatedAt": "2024-10-14T09:53:51Z",
+    "url": "https://github.com/jfy133/nf-core-nft-utils",
+    "firstCommitDate": "2024-10-08T05:29:43Z",
+    "lastCommitDate": "2024-10-08T05:29:43Z",
+    "topContributors": [
+      {
+        "contributions": 88,
+        "login": "maxulysse"
+      },
+      {
+        "contributions": 5,
+        "login": "adamrtalbot"
+      },
+      {
+        "contributions": 2,
+        "login": "pinin4fjords"
+      },
+      {
+        "contributions": 2,
+        "login": "nvnieuwk"
+      },
+      {
+        "contributions": 1,
+        "login": "edmundmiller"
+      },
+      {
+        "contributions": 1,
+        "login": "lukfor"
+      },
+      {
+        "contributions": 1,
+        "login": "sateeshperi"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-03-19T04:58:43Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Results and analysis of nf-core community survey 2025",
+    "name": "nf-core-simplesurvey-2025",
+    "updatedAt": "2025-03-21T13:04:57Z",
+    "url": "https://github.com/jfy133/nf-core-simplesurvey-2025",
+    "firstCommitDate": "2025-03-21T13:04:49Z",
+    "lastCommitDate": "2025-03-21T13:04:49Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-08-21T07:15:49Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Highly parallelised multi-taxonomic profiling of shotgun short- and long-read metagenomic data",
+    "name": "nf-core-taxprofiler",
+    "updatedAt": "2025-08-21T07:15:49Z",
+    "url": "https://github.com/jfy133/nf-core-taxprofiler",
+    "firstCommitDate": "2025-03-13T08:21:29Z",
+    "lastCommitDate": "2025-03-13T08:21:29Z",
+    "topContributors": [
+      {
+        "contributions": 1021,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 417,
+        "login": "sofstam"
+      },
+      {
+        "contributions": 403,
+        "login": "LilyAnderssonLee"
+      },
+      {
+        "contributions": 106,
+        "login": "Midnighter"
+      },
+      {
+        "contributions": 62,
+        "login": "nf-core-bot"
+      },
+      {
+        "contributions": 33,
+        "login": "ljmesi"
+      },
+      {
+        "contributions": 14,
+        "login": "MillironX"
+      },
+      {
+        "contributions": 13,
+        "login": "mjamy"
+      },
+      {
+        "contributions": 12,
+        "login": "jianhong"
+      },
+      {
+        "contributions": 11,
+        "login": "muniheart"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-04-13T11:55:29Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Test data to be used for automated testing with the nf-core pipelines",
+    "name": "nf-core-test-datasets",
+    "updatedAt": "2022-03-26T01:34:12Z",
+    "url": "https://github.com/jfy133/nf-core-test-datasets",
+    "firstCommitDate": "2023-06-03T07:01:37Z",
+    "lastCommitDate": "2023-06-03T07:01:37Z",
+    "topContributors": [
+      {
+        "contributions": 23,
+        "login": "drpatelh"
+      },
+      {
+        "contributions": 17,
+        "login": "scorreard"
+      },
+      {
+        "contributions": 16,
+        "login": "reganhayward"
+      },
+      {
+        "contributions": 15,
+        "login": "sguizard"
+      },
+      {
+        "contributions": 12,
+        "login": "maxulysse"
+      },
+      {
+        "contributions": 7,
+        "login": "DSchreyer"
+      },
+      {
+        "contributions": 6,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 6,
+        "login": "ewels"
+      },
+      {
+        "contributions": 5,
+        "login": "apeltzer"
+      },
+      {
+        "contributions": 4,
+        "login": "jianhong"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-08-13T19:11:08Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A small example pipeline used to test new nf-core infrastructure and common code.",
+    "name": "nf-core-testpipeline",
+    "updatedAt": "2021-05-11T20:25:04Z",
+    "url": "https://github.com/jfy133/nf-core-testpipeline",
+    "firstCommitDate": "2021-05-06T14:48:07Z",
+    "lastCommitDate": "2021-05-06T14:48:07Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "ggabernet"
+      },
+      {
+        "contributions": 3,
+        "login": "ewels"
+      },
+      {
+        "contributions": 1,
+        "login": "nf-core-bot"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-07-01T09:42:58Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Python package with helper tools for the nf-core community.",
+    "name": "nf-core-tools",
+    "updatedAt": "2025-09-01T07:34:25Z",
+    "url": "https://github.com/jfy133/nf-core-tools",
+    "firstCommitDate": "2025-07-08T09:42:22Z",
+    "lastCommitDate": "2025-07-08T09:42:22Z",
+    "topContributors": [
+      {
+        "contributions": 2414,
+        "login": "ewels"
+      },
+      {
+        "contributions": 2060,
+        "login": "mirpedrol"
+      },
+      {
+        "contributions": 1809,
+        "login": "mashehu"
+      },
+      {
+        "contributions": 978,
+        "login": "drpatelh"
+      },
+      {
+        "contributions": 737,
+        "login": "ErikDanielsson"
+      },
+      {
+        "contributions": 548,
+        "login": "KevinMenden"
+      },
+      {
+        "contributions": 421,
+        "login": "sven1103"
+      },
+      {
+        "contributions": 376,
+        "login": "fabianegli"
+      },
+      {
+        "contributions": 357,
+        "login": "nf-core-bot"
+      },
+      {
+        "contributions": 245,
+        "login": "apeltzer"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-07-02T07:14:01Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Code and files for the main nf-core website.",
+    "name": "nf-core-website",
+    "updatedAt": "2025-07-28T08:01:50Z",
+    "url": "https://github.com/jfy133/nf-core-website",
+    "firstCommitDate": "2025-07-28T02:58:17Z",
+    "lastCommitDate": "2025-07-28T02:58:17Z",
+    "topContributors": [
+      {
+        "contributions": 3098,
+        "login": "mashehu"
+      },
+      {
+        "contributions": 2394,
+        "login": "ewels"
+      },
+      {
+        "contributions": 1676,
+        "login": "nf-core-bot"
+      },
+      {
+        "contributions": 625,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 385,
+        "login": "FranBonath"
+      },
+      {
+        "contributions": 319,
+        "login": "apeltzer"
+      },
+      {
+        "contributions": 294,
+        "login": "renbot-bio"
+      },
+      {
+        "contributions": 290,
+        "login": "maxulysse"
+      },
+      {
+        "contributions": 276,
+        "login": "christopher-hakkaart"
+      },
+      {
+        "contributions": 173,
+        "login": "FriederikeHanssen"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-02-11T07:57:29Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Functionality for working with pipeline and sample sheet schema files in Nextflow pipelines",
+    "name": "nf-schema",
+    "updatedAt": "2025-02-11T07:57:30Z",
+    "url": "https://github.com/jfy133/nf-schema",
+    "firstCommitDate": "2025-02-06T10:41:28Z",
+    "lastCommitDate": "2025-02-06T10:41:28Z",
+    "topContributors": [
+      {
+        "contributions": 466,
+        "login": "nvnieuwk"
+      },
+      {
+        "contributions": 267,
+        "login": "mirpedrol"
+      },
+      {
+        "contributions": 63,
+        "login": "ewels"
+      },
+      {
+        "contributions": 23,
+        "login": "adamrtalbot"
+      },
+      {
+        "contributions": 21,
+        "login": "awgymer"
+      },
+      {
+        "contributions": 12,
+        "login": "mashehu"
+      },
+      {
+        "contributions": 7,
+        "login": "pditommaso"
+      },
+      {
+        "contributions": 5,
+        "login": "koenbossers"
+      },
+      {
+        "contributions": 4,
+        "login": "jorgeaguileraseqera"
+      },
+      {
+        "contributions": 3,
+        "login": "stekaz"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-12-27T13:53:42Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A minimal Jekyll Theme hosting my website",
+    "name": "online-cv",
+    "updatedAt": "2022-12-27T15:26:57Z",
+    "url": "https://github.com/jfy133/online-cv",
+    "firstCommitDate": "2022-12-27T15:26:43Z",
+    "lastCommitDate": "2022-12-27T15:26:43Z",
+    "topContributors": [
+      {
+        "contributions": 65,
+        "login": "sharu725"
+      },
+      {
+        "contributions": 30,
+        "login": "nelsonmestevao"
+      },
+      {
+        "contributions": 11,
+        "login": "dhmdmdhm"
+      },
+      {
+        "contributions": 6,
+        "login": "Redgadget"
+      },
+      {
+        "contributions": 6,
+        "login": "t-h-e"
+      },
+      {
+        "contributions": 2,
+        "login": "mkozjak"
+      },
+      {
+        "contributions": 1,
+        "login": "ChandanChainani"
+      },
+      {
+        "contributions": 1,
+        "login": "daniel-lanciana"
+      },
+      {
+        "contributions": 1,
+        "login": "titusjaka"
+      },
+      {
+        "contributions": 1,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-04-20T10:47:13Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A list of open source archaeological software and resources",
+    "name": "open-archaeo",
+    "updatedAt": "2021-05-03T07:09:40Z",
+    "url": "https://github.com/jfy133/open-archaeo",
+    "firstCommitDate": "2021-05-03T07:09:36Z",
+    "lastCommitDate": "2021-05-03T07:09:36Z",
+    "topContributors": [
+      {
+        "contributions": 190,
+        "login": "zackbatist"
+      },
+      {
+        "contributions": 30,
+        "login": "joeroe"
+      },
+      {
+        "contributions": 3,
+        "login": "MartinHinz"
+      },
+      {
+        "contributions": 2,
+        "login": "nevrome"
+      },
+      {
+        "contributions": 2,
+        "login": "dirkseidensticker"
+      },
+      {
+        "contributions": 2,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 1,
+        "login": "gitter-badger"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-06-23T10:29:42Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Schema of the Poseidon data format",
+    "name": "poseidon-schema",
+    "updatedAt": "2020-07-07T13:41:16Z",
+    "url": "https://github.com/jfy133/poseidon-schema",
+    "firstCommitDate": "2020-07-07T13:41:06Z",
+    "lastCommitDate": "2020-07-07T13:41:06Z",
+    "topContributors": [
+      {
+        "contributions": 33,
+        "login": "stschiff"
+      },
+      {
+        "contributions": 7,
+        "login": "nevrome"
+      },
+      {
+        "contributions": 1,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-06-23T13:09:51Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Bash wrapper script to generate count/taxon/OTU tables from RMA6 files (wrapper to MEGAN6 rma2info)",
+    "name": "rma-tabuliser",
+    "updatedAt": "2022-09-09T13:46:44Z",
+    "url": "https://github.com/jfy133/rma-tabuliser",
+    "firstCommitDate": "2022-09-09T11:22:10Z",
+    "lastCommitDate": "2022-09-09T11:22:10Z",
+    "topContributors": [
+      {
+        "contributions": 30,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-01-24T10:27:00Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Website for Reproducible research and data management workshop at MPI-SHH",
+    "name": "rrdm-shh.github.io",
+    "updatedAt": "2020-01-24T10:27:02Z",
+    "url": "https://github.com/jfy133/rrdm-shh.github.io",
+    "firstCommitDate": "2020-01-23T23:45:17Z",
+    "lastCommitDate": "2020-01-23T23:45:17Z",
+    "topContributors": [
+      {
+        "contributions": 64,
+        "login": "maxibor"
+      },
+      {
+        "contributions": 3,
+        "login": "chrzyki"
+      },
+      {
+        "contributions": 2,
+        "login": "nevrome"
+      },
+      {
+        "contributions": 2,
+        "login": "alexhbnr"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-02-11T09:28:15Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Backend for all sidora applications",
+    "name": "sidora.core",
+    "updatedAt": "2020-12-03T08:57:10Z",
+    "url": "https://github.com/jfy133/sidora.core",
+    "firstCommitDate": "2020-12-03T08:56:55Z",
+    "lastCommitDate": "2020-12-03T08:56:55Z",
+    "topContributors": [
+      {
+        "contributions": 123,
+        "login": "nevrome"
+      },
+      {
+        "contributions": 67,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 9,
+        "login": "stschiff"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-11-10T09:57:40Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Check validity of AncientMetagenomeDir dataset ",
+    "name": "spaam-community-AMDirT",
+    "updatedAt": "2022-11-09T16:38:40Z",
+    "url": "https://github.com/jfy133/spaam-community-AMDirT",
+    "firstCommitDate": "2022-04-06T14:01:19Z",
+    "lastCommitDate": "2022-04-06T14:01:19Z",
+    "topContributors": [
+      {
+        "contributions": 46,
+        "login": "maxibor"
+      },
+      {
+        "contributions": 1,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-11-09T12:30:30Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A place to submit conda recipes before they become fully fledged conda-forge feedstocks",
+    "name": "staged-recipes",
+    "updatedAt": "2025-01-14T13:13:26Z",
+    "url": "https://github.com/jfy133/staged-recipes",
+    "firstCommitDate": "2025-01-14T13:13:18Z",
+    "lastCommitDate": "2025-01-14T13:13:18Z",
+    "topContributors": [
+      {
+        "contributions": 6559,
+        "login": "ocefpaf"
+      },
+      {
+        "contributions": 6270,
+        "login": "conda-forge-admin"
+      },
+      {
+        "contributions": 3461,
+        "login": "jan-janssen"
+      },
+      {
+        "contributions": 2362,
+        "login": "xhochy"
+      },
+      {
+        "contributions": 2335,
+        "login": "scopatz"
+      },
+      {
+        "contributions": 2208,
+        "login": "jakirkham"
+      },
+      {
+        "contributions": 2147,
+        "login": "chrisburr"
+      },
+      {
+        "contributions": 2142,
+        "login": "cbrueffer"
+      },
+      {
+        "contributions": 2052,
+        "login": "thewchan"
+      },
+      {
+        "contributions": 1924,
+        "login": "goanpeca"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-07-13T14:33:33Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Empty repository for practising GitHub forking and pull requests",
+    "name": "summerschool-github-practise",
+    "updatedAt": "2024-07-13T14:51:56Z",
+    "url": "https://github.com/jfy133/summerschool-github-practise",
+    "firstCommitDate": "2024-07-13T14:51:53Z",
+    "lastCommitDate": "2024-07-13T14:51:53Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "jfy133"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-08-10T08:01:48Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "sunburst plots for taxonomy - working to update Krona",
+    "name": "taxburst",
+    "updatedAt": "2025-08-12T08:06:14Z",
+    "url": "https://github.com/jfy133/taxburst",
+    "firstCommitDate": "2025-08-06T15:06:04Z",
+    "lastCommitDate": "2025-08-06T15:06:04Z",
+    "topContributors": [
+      {
+        "contributions": 31,
+        "login": "ctb"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-12-05T13:08:31Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "TAXnomic Profile Aggregation and STAndardisation",
+    "name": "taxpasta",
+    "updatedAt": "2023-01-03T09:09:05Z",
+    "url": "https://github.com/jfy133/taxpasta",
+    "firstCommitDate": "2023-07-04T19:34:52Z",
+    "lastCommitDate": "2023-07-04T19:34:52Z",
+    "topContributors": [
+      {
+        "contributions": 422,
+        "login": "Midnighter"
+      },
+      {
+        "contributions": 38,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 24,
+        "login": "sofstam"
+      },
+      {
+        "contributions": 12,
+        "login": "maxibor"
+      },
+      {
+        "contributions": 1,
+        "login": "TheOafidian"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-05-20T08:26:19Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Repository of Quarto version of nf-core/taxprofiler manuscript",
+    "name": "taxprofiler-manuscript",
+    "updatedAt": "2023-07-13T04:00:07Z",
+    "url": "https://github.com/jfy133/taxprofiler-manuscript",
+    "firstCommitDate": "2023-10-20T09:00:41Z",
+    "lastCommitDate": "2023-10-20T09:00:41Z",
+    "topContributors": [
+      {
+        "contributions": 69,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 5,
+        "login": "sofstam"
+      },
+      {
+        "contributions": 4,
+        "login": "Midnighter"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-04-07T20:22:00Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A small R notebook describing how plot common (aDNA) population genetics PCAs using R and the tidyverse. ",
+    "name": "Tidy_PopGen_PCA_Plotting",
+    "updatedAt": "2025-08-21T17:26:37Z",
+    "url": "https://github.com/jfy133/Tidy_PopGen_PCA_Plotting",
+    "firstCommitDate": "2019-05-03T12:17:42Z",
+    "lastCommitDate": "2019-05-03T12:17:42Z",
+    "topContributors": [
+      {
+        "contributions": 23,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 2,
+        "login": "TCLamnidis"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-08-14T18:13:49Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "µbinfie blog",
+    "name": "ubinfie-blog",
+    "updatedAt": "2024-09-17T09:53:32Z",
+    "url": "https://github.com/jfy133/ubinfie-blog",
+    "firstCommitDate": "2024-09-13T10:26:37Z",
+    "lastCommitDate": "2024-09-13T10:26:37Z",
+    "topContributors": [
+      {
+        "contributions": 91,
+        "login": "hexylena"
+      },
+      {
+        "contributions": 48,
+        "login": "lskatz"
+      },
+      {
+        "contributions": 25,
+        "login": "pmenzel"
+      },
+      {
+        "contributions": 12,
+        "login": "boulund"
+      },
+      {
+        "contributions": 10,
+        "login": "jfy133"
+      },
+      {
+        "contributions": 6,
+        "login": "happykhan"
+      },
+      {
+        "contributions": 4,
+        "login": "pvanheus"
+      },
+      {
+        "contributions": 3,
+        "login": "ammaraziz"
+      },
+      {
+        "contributions": 2,
+        "login": "thanhleviet"
+      },
+      {
+        "contributions": 1,
+        "login": "bebatut"
+      }
+    ]
+  }
+]

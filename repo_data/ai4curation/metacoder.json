@@ -1,0 +1,30 @@
+{
+  "createdAt": "2025-07-11T19:58:11Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Wrapper for multiple AI coders (goose, claude code, codex)",
+  "name": "metacoder",
+  "updatedAt": "2025-09-17T11:45:08Z",
+  "url": "https://github.com/ai4curation/metacoder",
+  "firstCommitDate": "2025-09-15T17:31:54Z",
+  "lastCommitDate": "2025-09-15T17:31:54Z",
+  "topContributors": [
+    {
+      "contributions": 19,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 3,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 2,
+      "login": "google-labs-jules[bot]"
+    },
+    {
+      "contributions": 1,
+      "login": "claude[bot]"
+    }
+  ]
+}

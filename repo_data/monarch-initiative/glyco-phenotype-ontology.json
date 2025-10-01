@@ -1,0 +1,22 @@
+{
+  "createdAt": "2015-08-06T20:06:50Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "An ontology module describing molecular glyco-phenotypes",
+  "name": "glyco-phenotype-ontology",
+  "updatedAt": "2025-06-04T16:21:42Z",
+  "url": "https://github.com/monarch-initiative/glyco-phenotype-ontology",
+  "firstCommitDate": "2025-06-04T16:21:38Z",
+  "lastCommitDate": "2025-06-04T16:21:38Z",
+  "topContributors": [
+    {
+      "contributions": 15,
+      "login": "mbrush"
+    },
+    {
+      "contributions": 11,
+      "login": "matentzn"
+    }
+  ]
+}

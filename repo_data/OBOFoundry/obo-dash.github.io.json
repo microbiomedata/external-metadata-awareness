@@ -1,0 +1,26 @@
+{
+  "createdAt": "2020-10-19T21:56:59Z",
+  "defaultBranchRef": {
+    "name": "gh-pages"
+  },
+  "description": "Development version of OBO dashboard",
+  "name": "obo-dash.github.io",
+  "updatedAt": "2025-08-29T17:48:36Z",
+  "url": "https://github.com/OBOFoundry/obo-dash.github.io",
+  "firstCommitDate": "2025-08-29T17:48:22Z",
+  "lastCommitDate": "2025-08-29T17:48:22Z",
+  "topContributors": [
+    {
+      "contributions": 102,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 2,
+      "login": "anitacaron"
+    },
+    {
+      "contributions": 1,
+      "login": "jamesaoverton"
+    }
+  ]
+}

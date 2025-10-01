@@ -1,0 +1,22 @@
+{
+  "createdAt": "2020-07-28T20:59:36Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Harmonize fields in CSV files against the Cancer Data Standards Registry and Repository (caDSR)",
+  "name": "csv2caDSR",
+  "updatedAt": "2022-01-06T20:57:25Z",
+  "url": "https://github.com/cancerDHC/csv2caDSR",
+  "firstCommitDate": "2022-01-06T20:56:09Z",
+  "lastCommitDate": "2022-01-06T20:56:09Z",
+  "topContributors": [
+    {
+      "contributions": 112,
+      "login": "gaurav"
+    },
+    {
+      "contributions": 2,
+      "login": "balhoff"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-09-26T09:32:51Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "web pages for the CMPO website ",
+  "name": "cmpo-web-ols",
+  "updatedAt": "2017-09-26T09:36:49Z",
+  "url": "https://github.com/EBISPOT/cmpo-web-ols",
+  "firstCommitDate": "2017-12-19T10:25:38Z",
+  "lastCommitDate": "2017-12-19T10:25:38Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "simonjupp"
+    }
+  ]
+}

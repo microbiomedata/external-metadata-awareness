@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-01-07T23:47:23Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Fork or copy this repository and add your own species interaction data.",
+  "name": "dinosaur-biotic-interactions1",
+  "updatedAt": "2018-12-23T15:14:36Z",
+  "url": "https://github.com/cmungall/dinosaur-biotic-interactions1",
+  "firstCommitDate": "2015-12-10T21:59:21Z",
+  "lastCommitDate": "2015-12-10T21:59:21Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "KatjaSchulz"
+    }
+  ]
+}

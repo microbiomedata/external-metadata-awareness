@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-03-10T01:17:24Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "experiment",
+  "name": "cell-type-schema",
+  "updatedAt": "2021-06-24T21:37:28Z",
+  "url": "https://github.com/cmungall/cell-type-schema",
+  "firstCommitDate": "2021-03-10T01:40:59Z",
+  "lastCommitDate": "2021-03-10T01:40:59Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "cmungall"
+    }
+  ]
+}

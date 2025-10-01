@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-06-07T21:13:27Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "python script for golr",
+  "name": "pygolr",
+  "updatedAt": "2016-06-07T21:15:27Z",
+  "url": "https://github.com/cmungall/pygolr",
+  "firstCommitDate": "2016-06-07T21:15:21Z",
+  "lastCommitDate": "2016-06-07T21:15:21Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

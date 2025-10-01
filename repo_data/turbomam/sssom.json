@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-08-31T14:20:21Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Simple Standard for Sharing Ontology Mappings",
+  "name": "sssom",
+  "updatedAt": "2024-08-16T16:15:16Z",
+  "url": "https://github.com/turbomam/sssom",
+  "firstCommitDate": "2022-11-13T19:14:03Z",
+  "lastCommitDate": "2022-11-13T19:14:03Z",
+  "topContributors": [
+    {
+      "contributions": 166,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 59,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 9,
+      "login": "actions-user"
+    },
+    {
+      "contributions": 9,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 5,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 3,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 1,
+      "login": "ahwagner"
+    },
+    {
+      "contributions": 1,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 1,
+      "login": "jamesamcl"
+    },
+    {
+      "contributions": 1,
+      "login": "nicolevasilevsky"
+    }
+  ]
+}

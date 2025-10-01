@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-06-14T01:12:33Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "orthologs ingest from pantherdb",
+  "name": "pantherdb-orthologs-ingest",
+  "updatedAt": "2025-06-19T16:55:57Z",
+  "url": "https://github.com/monarch-initiative/pantherdb-orthologs-ingest",
+  "firstCommitDate": "2025-06-19T16:55:49Z",
+  "lastCommitDate": "2025-06-19T16:55:49Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "AO33"
+    }
+  ]
+}

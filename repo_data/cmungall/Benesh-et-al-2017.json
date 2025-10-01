@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-09-19T20:23:08Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Benesh, D. P., Lafferty, K. D. and Kuris, A. (2017), A life cycle database for parasitic acanthocephalans, cestodes, and nematodes. Ecology, 98: 882. doi:10.1002/ecy.1680",
+  "name": "Benesh-et-al-2017",
+  "updatedAt": "2017-09-18T18:15:31Z",
+  "url": "https://github.com/cmungall/Benesh-et-al-2017",
+  "firstCommitDate": "2017-09-19T12:04:43Z",
+  "lastCommitDate": "2017-09-19T12:04:43Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "millerse"
+    }
+  ]
+}

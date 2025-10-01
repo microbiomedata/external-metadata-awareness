@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-11-05T21:12:37Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Logic functions for continuously regulated gates",
+  "name": "continuousgates",
+  "updatedAt": "2019-07-15T03:50:51Z",
+  "url": "https://github.com/rsc3/continuousgates",
+  "firstCommitDate": "2018-11-06T01:11:08Z",
+  "lastCommitDate": "2018-11-06T01:11:08Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "rsc3"
+    }
+  ]
+}

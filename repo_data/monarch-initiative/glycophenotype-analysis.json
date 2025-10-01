@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-02-08T00:13:01Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Analysis of glyco-phenotypes in the HPO",
+  "name": "glycophenotype-analysis",
+  "updatedAt": "2023-01-28T14:52:07Z",
+  "url": "https://github.com/monarch-initiative/glycophenotype-analysis",
+  "firstCommitDate": "2020-04-23T00:43:44Z",
+  "lastCommitDate": "2020-04-23T00:43:44Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "kshefchek"
+    }
+  ]
+}

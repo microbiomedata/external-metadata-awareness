@@ -1,0 +1,34 @@
+{
+  "createdAt": "2022-08-29T12:29:55Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A framework for empirical evaluation of phenotype matching and prioritisation",
+  "name": "pheval",
+  "updatedAt": "2025-08-14T12:24:26Z",
+  "url": "https://github.com/monarch-initiative/pheval",
+  "firstCommitDate": "2025-08-14T12:24:22Z",
+  "lastCommitDate": "2025-08-14T12:24:22Z",
+  "topContributors": [
+    {
+      "contributions": 1263,
+      "login": "yaseminbridges"
+    },
+    {
+      "contributions": 166,
+      "login": "souzadevinicius"
+    },
+    {
+      "contributions": 69,
+      "login": "julesjacobsen"
+    },
+    {
+      "contributions": 22,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 13,
+      "login": "dpavam"
+    }
+  ]
+}

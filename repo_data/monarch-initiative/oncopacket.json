@@ -1,0 +1,46 @@
+{
+  "createdAt": "2023-06-15T19:32:24Z",
+  "defaultBranchRef": {
+    "name": "develop"
+  },
+  "description": "A package to convert cancer data to GA4GH phenopacket",
+  "name": "oncopacket",
+  "updatedAt": "2025-08-05T21:26:29Z",
+  "url": "https://github.com/monarch-initiative/oncopacket",
+  "firstCommitDate": "2025-08-05T21:26:24Z",
+  "lastCommitDate": "2025-08-05T21:26:24Z",
+  "topContributors": [
+    {
+      "contributions": 105,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 83,
+      "login": "ielis"
+    },
+    {
+      "contributions": 57,
+      "login": "msierk"
+    },
+    {
+      "contributions": 24,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 22,
+      "login": "rajdeepmondaldotcom"
+    },
+    {
+      "contributions": 17,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 3,
+      "login": "lnrekerle"
+    },
+    {
+      "contributions": 2,
+      "login": "madanucd"
+    }
+  ]
+}

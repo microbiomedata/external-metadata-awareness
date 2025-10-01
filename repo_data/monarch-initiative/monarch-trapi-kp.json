@@ -1,0 +1,26 @@
+{
+  "createdAt": "2023-12-13T03:46:14Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "NCATS Translator ARA TRAPI wrapper for the Monarch Initiative system",
+  "name": "monarch-trapi-kp",
+  "updatedAt": "2024-09-12T22:32:38Z",
+  "url": "https://github.com/monarch-initiative/monarch-trapi-kp",
+  "firstCommitDate": "2024-09-12T22:32:17Z",
+  "lastCommitDate": "2024-09-12T22:32:17Z",
+  "topContributors": [
+    {
+      "contributions": 156,
+      "login": "RichardBruskiewich"
+    },
+    {
+      "contributions": 5,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 4,
+      "login": "kevinschaper"
+    }
+  ]
+}

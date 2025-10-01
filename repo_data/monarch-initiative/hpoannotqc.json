@@ -1,0 +1,26 @@
+{
+  "createdAt": "2018-02-02T22:27:08Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "HPO Annotation QC",
+  "name": "hpoannotqc",
+  "updatedAt": "2025-08-06T14:23:20Z",
+  "url": "https://github.com/monarch-initiative/hpoannotqc",
+  "firstCommitDate": "2024-04-24T14:53:17Z",
+  "lastCommitDate": "2024-04-24T14:53:17Z",
+  "topContributors": [
+    {
+      "contributions": 134,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 37,
+      "login": "iimpulse"
+    },
+    {
+      "contributions": 1,
+      "login": "monicacecilia"
+    }
+  ]
+}

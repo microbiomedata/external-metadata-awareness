@@ -1,0 +1,34 @@
+{
+  "createdAt": "2024-02-17T14:08:32Z",
+  "defaultBranchRef": {
+    "name": "development"
+  },
+  "description": "An Angular/Springboot web application for the loading, editing, saving of data that follows the Phenopacket Schema",
+  "name": "PhenopacketLab",
+  "updatedAt": "2024-02-17T14:08:32Z",
+  "url": "https://github.com/cmungall/PhenopacketLab",
+  "firstCommitDate": "2023-09-06T18:13:20Z",
+  "lastCommitDate": "2023-09-06T18:13:20Z",
+  "topContributors": [
+    {
+      "contributions": 921,
+      "login": "belkassaby"
+    },
+    {
+      "contributions": 139,
+      "login": "ielis"
+    },
+    {
+      "contributions": 42,
+      "login": "iimpulse"
+    },
+    {
+      "contributions": 4,
+      "login": "BethSundberg"
+    },
+    {
+      "contributions": 2,
+      "login": "desais-jax"
+    }
+  ]
+}

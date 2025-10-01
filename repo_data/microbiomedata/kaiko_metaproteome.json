@@ -1,0 +1,26 @@
+{
+  "createdAt": "2023-03-30T15:48:04Z",
+  "defaultBranchRef": {
+    "name": "Kaiko-main"
+  },
+  "description": "Generates sample-specific protein databases from raw peptide spectra",
+  "name": "kaiko_metaproteome",
+  "updatedAt": "2025-08-11T19:03:22Z",
+  "url": "https://github.com/microbiomedata/kaiko_metaproteome",
+  "firstCommitDate": "2025-08-11T19:03:18Z",
+  "lastCommitDate": "2025-08-11T19:03:18Z",
+  "topContributors": [
+    {
+      "contributions": 105,
+      "login": "CamiloPosso"
+    },
+    {
+      "contributions": 13,
+      "login": "jynlee7"
+    },
+    {
+      "contributions": 1,
+      "login": "picowatt"
+    }
+  ]
+}

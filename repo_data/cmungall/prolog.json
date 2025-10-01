@@ -1,0 +1,26 @@
+{
+  "createdAt": "2017-10-09T02:55:38Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Prolog stuff",
+  "name": "prolog",
+  "updatedAt": "2023-03-12T10:29:20Z",
+  "url": "https://github.com/cmungall/prolog",
+  "firstCommitDate": "2017-10-06T14:26:24Z",
+  "lastCommitDate": "2017-10-06T14:26:24Z",
+  "topContributors": [
+    {
+      "contributions": 307,
+      "login": "samer--"
+    },
+    {
+      "contributions": 5,
+      "login": "samer-jukedeck"
+    },
+    {
+      "contributions": 3,
+      "login": "mndrix"
+    }
+  ]
+}

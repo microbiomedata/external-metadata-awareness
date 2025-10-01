@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-11-20T20:12:29Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "exomiser.reranking",
+  "updatedAt": "2024-11-21T14:07:19Z",
+  "url": "https://github.com/monarch-initiative/exomiser.reranking",
+  "firstCommitDate": "2024-09-17T16:52:29Z",
+  "lastCommitDate": "2024-09-17T16:52:29Z",
+  "topContributors": [
+    {
+      "contributions": 61,
+      "login": "yaseminbridges"
+    },
+    {
+      "contributions": 1,
+      "login": "julesjacobsen"
+    }
+  ]
+}

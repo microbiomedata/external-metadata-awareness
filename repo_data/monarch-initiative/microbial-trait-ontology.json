@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-05-17T22:57:40Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "microbial-trait-ontology",
+  "updatedAt": "2023-05-17T22:57:53Z",
+  "url": "https://github.com/monarch-initiative/microbial-trait-ontology",
+  "firstCommitDate": "2023-05-17T22:57:00Z",
+  "lastCommitDate": "2023-05-17T22:57:00Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

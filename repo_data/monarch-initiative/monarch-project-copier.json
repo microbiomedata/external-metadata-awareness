@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-08-13T02:07:32Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "New template for monarch repos, replaces old cookiecutter",
+  "name": "monarch-project-copier",
+  "updatedAt": "2025-08-20T14:43:17Z",
+  "url": "https://github.com/monarch-initiative/monarch-project-copier",
+  "firstCommitDate": "2025-08-20T14:43:11Z",
+  "lastCommitDate": "2025-08-20T14:43:11Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

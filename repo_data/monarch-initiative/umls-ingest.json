@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-07-13T15:38:37Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "UMLS ingest for mappings",
+  "name": "umls-ingest",
+  "updatedAt": "2024-11-02T15:47:08Z",
+  "url": "https://github.com/monarch-initiative/umls-ingest",
+  "firstCommitDate": "2023-11-30T02:06:00Z",
+  "lastCommitDate": "2023-11-30T02:06:00Z",
+  "topContributors": [
+    {
+      "contributions": 47,
+      "login": "hrshdhgd"
+    }
+  ]
+}

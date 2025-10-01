@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-01-31T19:32:19Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Scheduling utility for starting NEAT jobs for KG-Hub resources.",
+  "name": "NEAT-kghub-scheduler",
+  "updatedAt": "2024-06-11T14:34:44Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/NEAT-kghub-scheduler",
+  "firstCommitDate": "2024-06-11T14:34:40Z",
+  "lastCommitDate": "2024-06-11T14:34:40Z",
+  "topContributors": [
+    {
+      "contributions": 40,
+      "login": "caufieldjh"
+    }
+  ]
+}

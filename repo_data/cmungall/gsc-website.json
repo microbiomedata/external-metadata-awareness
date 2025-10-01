@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-11-25T16:28:00Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The web site of the Genomics Standards Consortium",
+  "name": "gsc-website",
+  "updatedAt": "2019-11-25T16:28:02Z",
+  "url": "https://github.com/cmungall/gsc-website",
+  "firstCommitDate": "2019-03-25T15:28:49Z",
+  "lastCommitDate": "2019-03-25T15:28:49Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "folker"
+    }
+  ]
+}

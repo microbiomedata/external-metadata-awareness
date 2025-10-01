@@ -1,0 +1,18 @@
+{
+  "createdAt": "2012-10-21T23:20:23Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Draxler prolog to SQL compiler",
+  "name": "sql_compiler-OLD",
+  "updatedAt": "2023-03-12T10:29:23Z",
+  "url": "https://github.com/cmungall/sql_compiler-OLD",
+  "firstCommitDate": "2018-07-10T00:48:51Z",
+  "lastCommitDate": "2018-07-10T00:48:51Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "cmungall"
+    }
+  ]
+}

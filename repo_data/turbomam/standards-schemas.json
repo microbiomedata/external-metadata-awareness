@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-02-15T22:32:25Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Data schema for Bridge2AI Standards.",
+  "name": "standards-schemas",
+  "updatedAt": "2024-08-16T16:16:14Z",
+  "url": "https://github.com/turbomam/standards-schemas",
+  "firstCommitDate": "2023-02-16T01:20:44Z",
+  "lastCommitDate": "2023-02-16T01:20:44Z",
+  "topContributors": [
+    {
+      "contributions": 68,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 1,
+      "login": "turbomam"
+    }
+  ]
+}

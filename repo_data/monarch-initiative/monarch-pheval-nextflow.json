@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-03-24T15:35:41Z",
+  "defaultBranchRef": {
+    "name": "dev"
+  },
+  "description": "",
+  "name": "monarch-pheval-nextflow",
+  "updatedAt": "2025-06-10T22:06:56Z",
+  "url": "https://github.com/monarch-initiative/monarch-pheval-nextflow",
+  "firstCommitDate": "2025-06-10T22:06:17Z",
+  "lastCommitDate": "2025-06-10T22:06:17Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "jamesamcl"
+    }
+  ]
+}

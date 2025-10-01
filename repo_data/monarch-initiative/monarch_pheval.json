@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-01-22T07:08:52Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "monarch_pheval",
+  "updatedAt": "2025-07-31T14:42:11Z",
+  "url": "https://github.com/monarch-initiative/monarch_pheval",
+  "firstCommitDate": "2025-07-31T14:42:04Z",
+  "lastCommitDate": "2025-07-31T14:42:04Z",
+  "topContributors": [
+    {
+      "contributions": 70,
+      "login": "souzadevinicius"
+    },
+    {
+      "contributions": 3,
+      "login": "matentzn"
+    }
+  ]
+}

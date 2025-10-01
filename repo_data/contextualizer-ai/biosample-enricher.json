@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-09-09T21:49:51Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Infer AI-friendly metadata about biosamples from multiple sources",
+  "name": "biosample-enricher",
+  "updatedAt": "2025-09-15T14:22:45Z",
+  "url": "https://github.com/contextualizer-ai/biosample-enricher",
+  "firstCommitDate": "2025-09-15T14:22:41Z",
+  "lastCommitDate": "2025-09-15T14:22:41Z",
+  "topContributors": [
+    {
+      "contributions": 104,
+      "login": "turbomam"
+    }
+  ]
+}

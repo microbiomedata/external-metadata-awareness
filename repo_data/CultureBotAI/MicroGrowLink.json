@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-04-12T04:22:39Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "MicroGrowLink",
+  "updatedAt": "2025-09-30T05:20:27Z",
+  "url": "https://github.com/CultureBotAI/MicroGrowLink",
+  "firstCommitDate": "2025-09-30T05:20:22Z",
+  "lastCommitDate": "2025-09-30T05:20:22Z",
+  "topContributors": [
+    {
+      "contributions": 634,
+      "login": "realmarcin"
+    }
+  ]
+}

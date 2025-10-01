@@ -1,0 +1,54 @@
+{
+  "createdAt": "2024-03-08T15:54:15Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "The information resource registry is a listing of data sources present in the NCATS Data Translator system.  Each information resource has an identifier, a short description, and an URL to more information about that resource.",
+  "name": "information-resource-registry",
+  "updatedAt": "2025-09-29T07:26:39Z",
+  "url": "https://github.com/biolink/information-resource-registry",
+  "firstCommitDate": "2025-09-29T07:26:34Z",
+  "lastCommitDate": "2025-09-29T07:26:34Z",
+  "topContributors": [
+    {
+      "contributions": 211,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 86,
+      "login": "actions-user"
+    },
+    {
+      "contributions": 24,
+      "login": "andrewsu"
+    },
+    {
+      "contributions": 13,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 12,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 11,
+      "login": "gglusman"
+    },
+    {
+      "contributions": 10,
+      "login": "karafecho"
+    },
+    {
+      "contributions": 8,
+      "login": "Qi-ISB"
+    },
+    {
+      "contributions": 5,
+      "login": "maximusunc"
+    },
+    {
+      "contributions": 4,
+      "login": "eKathleenCarter"
+    }
+  ]
+}

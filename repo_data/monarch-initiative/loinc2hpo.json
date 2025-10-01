@@ -1,0 +1,26 @@
+{
+  "createdAt": "2017-12-07T09:14:11Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Java library to map LOINC-encoded test results to Human Phenotype Ontology",
+  "name": "loinc2hpo",
+  "updatedAt": "2025-09-21T22:26:16Z",
+  "url": "https://github.com/monarch-initiative/loinc2hpo",
+  "firstCommitDate": "2023-06-08T14:46:32Z",
+  "lastCommitDate": "2023-06-08T14:46:32Z",
+  "topContributors": [
+    {
+      "contributions": 354,
+      "login": "kingmanzhang"
+    },
+    {
+      "contributions": 97,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 3,
+      "login": "ShahimEssaid"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-09-19T14:32:45Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "tools for converting content in other databases (like Biosamples in MongoDB) to DuckDB",
+  "name": "to-duckdb",
+  "updatedAt": "2025-09-20T03:18:50Z",
+  "url": "https://github.com/contextualizer-ai/to-duckdb",
+  "firstCommitDate": "2025-09-20T03:18:46Z",
+  "lastCommitDate": "2025-09-20T03:18:46Z",
+  "topContributors": [
+    {
+      "contributions": 15,
+      "login": "turbomam"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-06-12T22:53:58Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Results for running agents on ontoeval benchmarks",
+  "name": "ontodiff-curator",
+  "updatedAt": "2025-06-12T22:53:58Z",
+  "url": "https://github.com/ai4curation/ontodiff-curator",
+  "firstCommitDate": "2024-09-05T15:38:43Z",
+  "lastCommitDate": "2024-09-05T15:38:43Z",
+  "topContributors": [
+    {
+      "contributions": 61,
+      "login": "hrshdhgd"
+    }
+  ]
+}

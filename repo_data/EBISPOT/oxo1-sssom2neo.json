@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-01-26T16:32:13Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "SSSOM to Neo4J loader compliant with OxO 1 Neo4j database. Initially cloned from https://github.com/mapping-commons/sssom2neo",
+  "name": "oxo1-sssom2neo",
+  "updatedAt": "2024-01-26T17:18:14Z",
+  "url": "https://github.com/EBISPOT/oxo1-sssom2neo",
+  "firstCommitDate": "2024-02-09T13:11:02Z",
+  "lastCommitDate": "2024-02-09T13:11:02Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "jamesamcl"
+    },
+    {
+      "contributions": 5,
+      "login": "henrietteharmse"
+    }
+  ]
+}

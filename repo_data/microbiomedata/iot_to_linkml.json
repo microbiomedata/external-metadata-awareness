@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-11-09T17:56:56Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Convert Index of Terms to LinkML YAML",
+  "name": "iot_to_linkml",
+  "updatedAt": "2024-08-13T00:35:18Z",
+  "url": "https://github.com/microbiomedata/iot_to_linkml",
+  "firstCommitDate": "2021-11-18T15:35:15Z",
+  "lastCommitDate": "2021-11-18T15:35:15Z",
+  "topContributors": [
+    {
+      "contributions": 22,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 2,
+      "login": "markvong"
+    }
+  ]
+}

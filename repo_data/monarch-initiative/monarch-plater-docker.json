@@ -1,0 +1,26 @@
+{
+  "createdAt": "2022-01-25T06:47:13Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "monarch-plater-docker",
+  "updatedAt": "2022-05-26T15:54:02Z",
+  "url": "https://github.com/monarch-initiative/monarch-plater-docker",
+  "firstCommitDate": "2022-09-24T04:46:43Z",
+  "lastCommitDate": "2022-09-24T04:46:43Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "putmantime"
+    },
+    {
+      "contributions": 15,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 1,
+      "login": "RichardBruskiewich"
+    }
+  ]
+}

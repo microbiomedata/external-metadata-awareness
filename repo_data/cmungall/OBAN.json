@@ -1,0 +1,22 @@
+{
+  "createdAt": "2015-01-05T20:55:35Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Open Biomedical Annotations - used to describe associations between biomedical entities",
+  "name": "OBAN",
+  "updatedAt": "2014-09-30T15:53:27Z",
+  "url": "https://github.com/cmungall/OBAN",
+  "firstCommitDate": "2014-10-08T10:51:16Z",
+  "lastCommitDate": "2014-10-08T10:51:16Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "jamesmalone"
+    },
+    {
+      "contributions": 1,
+      "login": "simonjupp"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2017-08-16T20:24:00Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Scala toolkit for analyzing figshare figures",
+  "name": "figtools",
+  "updatedAt": "2019-03-08T23:22:41Z",
+  "url": "https://github.com/INCATools/figtools",
+  "firstCommitDate": "2019-03-08T23:22:31Z",
+  "lastCommitDate": "2019-03-08T23:22:31Z",
+  "topContributors": [
+    {
+      "contributions": 131,
+      "login": "benwbooth"
+    },
+    {
+      "contributions": 2,
+      "login": "nathandunn"
+    }
+  ]
+}

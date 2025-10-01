@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-06-30T19:44:57Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Schema for QC Reports on the Monarch KG",
+  "name": "monarch-kg-qc-schema",
+  "updatedAt": "2024-03-15T12:47:41Z",
+  "url": "https://github.com/monarch-initiative/monarch-kg-qc-schema",
+  "firstCommitDate": "2023-12-21T22:09:52Z",
+  "lastCommitDate": "2023-12-21T22:09:52Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "amc-corey-cox"
+    }
+  ]
+}

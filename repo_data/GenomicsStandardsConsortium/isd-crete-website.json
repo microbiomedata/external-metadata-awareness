@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-10-09T11:43:15Z",
+  "defaultBranchRef": {
+    "name": "gh-pages"
+  },
+  "description": "This repository contains information, methodology and some insights of the Island Sampling Day Crete project. ",
+  "name": "isd-crete-website",
+  "updatedAt": "2025-02-25T16:43:13Z",
+  "url": "https://github.com/GenomicsStandardsConsortium/isd-crete-website",
+  "firstCommitDate": "2022-10-10T07:40:34Z",
+  "lastCommitDate": "2022-10-10T07:40:34Z",
+  "topContributors": [
+    {
+      "contributions": 669,
+      "login": "daattali"
+    },
+    {
+      "contributions": 31,
+      "login": "savvas-paragkamian"
+    },
+    {
+      "contributions": 15,
+      "login": "OCram85"
+    },
+    {
+      "contributions": 15,
+      "login": "epwalsh"
+    },
+    {
+      "contributions": 12,
+      "login": "VincentTam"
+    },
+    {
+      "contributions": 12,
+      "login": "lexicalunit"
+    },
+    {
+      "contributions": 7,
+      "login": "gpotter2"
+    },
+    {
+      "contributions": 7,
+      "login": "eugenius1"
+    },
+    {
+      "contributions": 5,
+      "login": "abelcheung"
+    },
+    {
+      "contributions": 5,
+      "login": "jennydaman"
+    }
+  ]
+}

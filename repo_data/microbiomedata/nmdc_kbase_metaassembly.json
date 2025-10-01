@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-02-23T05:31:18Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "NMDC metaAssembly in KBase",
+  "name": "nmdc_kbase_metaassembly",
+  "updatedAt": "2021-03-05T16:57:11Z",
+  "url": "https://github.com/microbiomedata/nmdc_kbase_metaassembly",
+  "firstCommitDate": "2021-03-05T16:56:48Z",
+  "lastCommitDate": "2021-03-05T16:56:48Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "scanon"
+    }
+  ]
+}

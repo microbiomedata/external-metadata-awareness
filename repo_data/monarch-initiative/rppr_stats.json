@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-03-23T21:50:25Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "rppr_stats",
+  "updatedAt": "2025-04-04T17:39:17Z",
+  "url": "https://github.com/monarch-initiative/rppr_stats",
+  "firstCommitDate": "2025-01-25T23:21:06Z",
+  "lastCommitDate": "2025-01-25T23:21:06Z",
+  "topContributors": [
+    {
+      "contributions": 18,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 1,
+      "login": "hrshdhgd"
+    }
+  ]
+}

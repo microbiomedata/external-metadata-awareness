@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-10-12T18:13:15Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "synbio-alignments",
+  "updatedAt": "2022-01-05T20:10:56Z",
+  "url": "https://github.com/turbomam/synbio-alignments",
+  "firstCommitDate": "2022-02-11T15:04:27Z",
+  "lastCommitDate": "2022-02-11T15:04:27Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "beckyjackson"
+    },
+    {
+      "contributions": 3,
+      "login": "turbomam"
+    }
+  ]
+}

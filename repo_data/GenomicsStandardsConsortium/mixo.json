@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-05-24T11:12:36Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Minimum Information for any Observatory",
+  "name": "mixo",
+  "updatedAt": "2019-05-24T11:12:41Z",
+  "url": "https://github.com/GenomicsStandardsConsortium/mixo",
+  "firstCommitDate": "2019-05-24T11:12:38Z",
+  "lastCommitDate": "2019-05-24T11:12:38Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "ramonawalls"
+    }
+  ]
+}

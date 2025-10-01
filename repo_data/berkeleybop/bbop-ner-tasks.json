@@ -1,0 +1,26 @@
+{
+  "createdAt": "2021-07-28T21:23:27Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "bbop-ner-tasks",
+  "updatedAt": "2022-01-07T13:49:23Z",
+  "url": "https://github.com/berkeleybop/bbop-ner-tasks",
+  "firstCommitDate": "2023-05-05T18:03:04Z",
+  "lastCommitDate": "2023-05-05T18:03:04Z",
+  "topContributors": [
+    {
+      "contributions": 149,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 7,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 2,
+      "login": "caufieldjh"
+    }
+  ]
+}

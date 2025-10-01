@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-11-17T17:14:46Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "pl-genome",
+  "updatedAt": "2023-03-12T10:29:52Z",
+  "url": "https://github.com/cmungall/pl-genome",
+  "firstCommitDate": "2016-12-10T03:52:53Z",
+  "lastCommitDate": "2016-12-10T03:52:53Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "cmungall"
+    }
+  ]
+}

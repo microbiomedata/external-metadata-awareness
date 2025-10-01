@@ -1,0 +1,26 @@
+{
+  "createdAt": "2021-12-17T11:15:07Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Planet Microbe scripts and examples",
+  "name": "planet-microbe-scripts",
+  "updatedAt": "2023-04-22T16:29:00Z",
+  "url": "https://github.com/kaiiam/planet-microbe-scripts",
+  "firstCommitDate": "2021-12-17T16:07:38Z",
+  "lastCommitDate": "2021-12-17T16:07:38Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "mbomhoff"
+    },
+    {
+      "contributions": 6,
+      "login": "kaiiam"
+    },
+    {
+      "contributions": 1,
+      "login": "aponsero"
+    }
+  ]
+}

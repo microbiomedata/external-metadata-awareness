@@ -1,0 +1,22 @@
+{
+  "createdAt": "2015-10-01T00:41:34Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "BioCADDIE Harvester project using GitHub YAML and Markdown",
+  "name": "biocaddie-gym",
+  "updatedAt": "2016-09-08T18:28:54Z",
+  "url": "https://github.com/cmungall/biocaddie-gym",
+  "firstCommitDate": "2016-09-11T20:26:35Z",
+  "lastCommitDate": "2016-09-11T20:26:35Z",
+  "topContributors": [
+    {
+      "contributions": 17,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 2,
+      "login": "kshefchek"
+    }
+  ]
+}

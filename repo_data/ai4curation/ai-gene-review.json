@@ -1,0 +1,22 @@
+{
+  "createdAt": "2025-08-27T01:27:09Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Demonstration of AI review of existing functional annotations",
+  "name": "ai-gene-review",
+  "updatedAt": "2025-09-24T03:14:43Z",
+  "url": "https://github.com/ai4curation/ai-gene-review",
+  "firstCommitDate": "2025-09-24T03:14:25Z",
+  "lastCommitDate": "2025-09-24T03:14:25Z",
+  "topContributors": [
+    {
+      "contributions": 27,
+      "login": "dragon-ai-agent"
+    },
+    {
+      "contributions": 5,
+      "login": "cmungall"
+    }
+  ]
+}

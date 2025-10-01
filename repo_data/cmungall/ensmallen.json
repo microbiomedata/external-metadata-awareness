@@ -1,0 +1,38 @@
+{
+  "createdAt": "2022-10-17T18:03:31Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "🍇 Ensmallen is the Rust/Python high-performance graph processing submodule of the GRAPE library.",
+  "name": "ensmallen",
+  "updatedAt": "2022-09-23T09:05:04Z",
+  "url": "https://github.com/cmungall/ensmallen",
+  "firstCommitDate": "2022-10-12T19:42:59Z",
+  "lastCommitDate": "2022-10-12T19:42:59Z",
+  "topContributors": [
+    {
+      "contributions": 3628,
+      "login": "LucaCappelletti94"
+    },
+    {
+      "contributions": 936,
+      "login": "zommiommy"
+    },
+    {
+      "contributions": 20,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 2,
+      "login": "ElenaCasiraghi"
+    },
+    {
+      "contributions": 2,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 1,
+      "login": "bjorn3"
+    }
+  ]
+}

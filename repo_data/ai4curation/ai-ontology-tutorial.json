@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-06-05T19:26:21Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "ai-ontology-tutorial",
+  "updatedAt": "2025-06-05T19:26:57Z",
+  "url": "https://github.com/ai4curation/ai-ontology-tutorial",
+  "firstCommitDate": "2025-06-05T19:26:54Z",
+  "lastCommitDate": "2025-06-05T19:26:54Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

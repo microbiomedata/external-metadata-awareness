@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-01-26T20:29:53Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A PhEval plugin for integrating Phen2Gene, enabling gene prioritisation based on phenotypic data in a standardised pipeline.",
+  "name": "pheval.phen2gene",
+  "updatedAt": "2025-03-27T12:08:48Z",
+  "url": "https://github.com/monarch-initiative/pheval.phen2gene",
+  "firstCommitDate": "2025-03-27T12:08:44Z",
+  "lastCommitDate": "2025-03-27T12:08:44Z",
+  "topContributors": [
+    {
+      "contributions": 169,
+      "login": "yaseminbridges"
+    }
+  ]
+}

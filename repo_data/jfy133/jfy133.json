@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-06-18T06:44:42Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "jfy133",
+  "updatedAt": "2025-08-06T09:09:30Z",
+  "url": "https://github.com/jfy133/jfy133",
+  "firstCommitDate": "2025-08-06T09:09:26Z",
+  "lastCommitDate": "2025-08-06T09:09:26Z",
+  "topContributors": [
+    {
+      "contributions": 25,
+      "login": "jfy133"
+    }
+  ]
+}

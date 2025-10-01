@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-04-13T13:08:00Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Command line shell scripts for loading, backing up, saving off data from the Stardog backend of the MIDAS Digital Commons and OBC.ide",
+  "name": "mdc-stardog-scripts",
+  "updatedAt": "2023-10-05T19:14:38Z",
+  "url": "https://github.com/mcwdsi/mdc-stardog-scripts",
+  "firstCommitDate": "2020-05-14T23:41:07Z",
+  "lastCommitDate": "2020-05-14T23:41:07Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "hoganwr"
+    }
+  ]
+}

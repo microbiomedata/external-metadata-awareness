@@ -1,0 +1,22 @@
+{
+  "createdAt": "2017-03-18T00:43:28Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A demo of wtfgenes",
+  "name": "wtfgo",
+  "updatedAt": "2017-03-18T00:43:36Z",
+  "url": "https://github.com/cmungall/wtfgo",
+  "firstCommitDate": "2017-03-18T00:11:36Z",
+  "lastCommitDate": "2017-03-18T00:11:36Z",
+  "topContributors": [
+    {
+      "contributions": 17,
+      "login": "ihh"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-01-26T18:31:09Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "linkml-template",
+  "updatedAt": "2023-01-28T08:37:59Z",
+  "url": "https://github.com/linkml/linkml-template",
+  "firstCommitDate": "2021-05-28T02:32:04Z",
+  "lastCommitDate": "2021-05-28T02:32:04Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 2,
+      "login": "sierra-moxon"
+    }
+  ]
+}

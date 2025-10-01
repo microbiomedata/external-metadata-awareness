@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-03-03T04:22:19Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "envo-variable-parser",
+  "updatedAt": "2023-03-12T10:29:26Z",
+  "url": "https://github.com/cmungall/envo-variable-parser",
+  "firstCommitDate": "2018-03-04T03:36:46Z",
+  "lastCommitDate": "2018-03-04T03:36:46Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "cmungall"
+    }
+  ]
+}

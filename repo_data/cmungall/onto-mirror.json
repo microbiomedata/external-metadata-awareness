@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-07-05T22:15:37Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "maintain a local registry of ontologies using void.ttl files",
+  "name": "onto-mirror",
+  "updatedAt": "2019-07-05T22:15:58Z",
+  "url": "https://github.com/cmungall/onto-mirror",
+  "firstCommitDate": "2019-07-05T22:15:44Z",
+  "lastCommitDate": "2019-07-05T22:15:44Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

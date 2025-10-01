@@ -1,0 +1,34 @@
+{
+  "createdAt": "2015-06-03T15:26:18Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Bubastis is an ontology diff tool",
+  "name": "bubastis",
+  "updatedAt": "2025-04-29T15:40:46Z",
+  "url": "https://github.com/EBISPOT/bubastis",
+  "firstCommitDate": "2020-01-14T13:43:43Z",
+  "lastCommitDate": "2020-01-14T13:43:43Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "tburdett"
+    },
+    {
+      "contributions": 3,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 2,
+      "login": "zoependlington"
+    },
+    {
+      "contributions": 1,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 1,
+      "login": "olgavrou"
+    }
+  ]
+}

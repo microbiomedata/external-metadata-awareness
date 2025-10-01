@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-03-19T00:38:23Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "walks mapping graphs running boomer",
+  "name": "mapping-walker",
+  "updatedAt": "2025-05-12T09:45:01Z",
+  "url": "https://github.com/monarch-initiative/mapping-walker",
+  "firstCommitDate": "2022-05-24T23:55:21Z",
+  "lastCommitDate": "2022-05-24T23:55:21Z",
+  "topContributors": [
+    {
+      "contributions": 15,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 10,
+      "login": "pkalita-lbl"
+    }
+  ]
+}

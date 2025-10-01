@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-03-17T20:19:46Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Personal dotfiles",
+  "name": "dotfiles",
+  "updatedAt": "2025-06-20T12:44:07Z",
+  "url": "https://github.com/jfy133/dotfiles",
+  "firstCommitDate": "2025-06-20T12:44:03Z",
+  "lastCommitDate": "2025-06-20T12:44:03Z",
+  "topContributors": [
+    {
+      "contributions": 9,
+      "login": "jfy133"
+    }
+  ]
+}

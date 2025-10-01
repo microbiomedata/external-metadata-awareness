@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-08-12T05:30:18Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "python wrapper to sparqlprog logic programming framework",
+  "name": "sparqlprog-python",
+  "updatedAt": "2023-01-19T12:45:35Z",
+  "url": "https://github.com/cmungall/sparqlprog-python",
+  "firstCommitDate": "2019-08-12T23:23:24Z",
+  "lastCommitDate": "2019-08-12T23:23:24Z",
+  "topContributors": [
+    {
+      "contributions": 19,
+      "login": "cmungall"
+    }
+  ]
+}

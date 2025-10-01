@@ -1,0 +1,50 @@
+{
+  "createdAt": "2021-07-10T02:39:17Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "NMDC Sample Annotator",
+  "name": "sample-annotator",
+  "updatedAt": "2025-04-21T22:31:55Z",
+  "url": "https://github.com/microbiomedata/sample-annotator",
+  "firstCommitDate": "2025-04-21T22:31:50Z",
+  "lastCommitDate": "2025-04-21T22:31:50Z",
+  "topContributors": [
+    {
+      "contributions": 93,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 83,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 27,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 23,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 12,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 4,
+      "login": "dehays"
+    },
+    {
+      "contributions": 2,
+      "login": "kltm"
+    },
+    {
+      "contributions": 1,
+      "login": "StantonMartin"
+    },
+    {
+      "contributions": 1,
+      "login": "realmarcin"
+    }
+  ]
+}

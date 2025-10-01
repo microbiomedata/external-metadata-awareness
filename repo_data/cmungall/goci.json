@@ -1,0 +1,26 @@
+{
+  "createdAt": "2014-04-27T00:43:27Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "GWAS Catalog Ontology and Curation Infrastructure",
+  "name": "goci",
+  "updatedAt": "2015-01-26T14:51:35Z",
+  "url": "https://github.com/cmungall/goci",
+  "firstCommitDate": "2014-04-28T16:42:00Z",
+  "lastCommitDate": "2014-04-28T16:42:00Z",
+  "topContributors": [
+    {
+      "contributions": 308,
+      "login": "daniwelter"
+    },
+    {
+      "contributions": 225,
+      "login": "tburdett"
+    },
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

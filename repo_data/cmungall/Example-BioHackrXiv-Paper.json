@@ -1,0 +1,26 @@
+{
+  "createdAt": "2020-02-28T00:15:27Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "This is a working paper that can be generated with https://BioHackrXiv.genenetwork.org/",
+  "name": "Example-BioHackrXiv-Paper",
+  "updatedAt": "2020-02-28T00:15:29Z",
+  "url": "https://github.com/cmungall/Example-BioHackrXiv-Paper",
+  "firstCommitDate": "2020-02-06T06:38:00Z",
+  "lastCommitDate": "2020-02-06T06:38:00Z",
+  "topContributors": [
+    {
+      "contributions": 21,
+      "login": "webyrd"
+    },
+    {
+      "contributions": 20,
+      "login": "pjotrp"
+    },
+    {
+      "contributions": 7,
+      "login": "hchiba1"
+    }
+  ]
+}

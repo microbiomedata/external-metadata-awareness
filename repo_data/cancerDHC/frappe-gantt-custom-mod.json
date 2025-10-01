@@ -1,0 +1,54 @@
+{
+  "createdAt": "2020-12-11T19:55:08Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Custom modification of Frappe Gantt (https://github.com/frappe/gantt)",
+  "name": "frappe-gantt-custom-mod",
+  "updatedAt": "2021-06-15T16:56:13Z",
+  "url": "https://github.com/cancerDHC/frappe-gantt-custom-mod",
+  "firstCommitDate": "2021-06-14T20:30:23Z",
+  "lastCommitDate": "2021-06-14T20:30:23Z",
+  "topContributors": [
+    {
+      "contributions": 60,
+      "login": "netchampfaris"
+    },
+    {
+      "contributions": 11,
+      "login": "jen-martin"
+    },
+    {
+      "contributions": 4,
+      "login": "Anurag810"
+    },
+    {
+      "contributions": 2,
+      "login": "diegodurrod"
+    },
+    {
+      "contributions": 2,
+      "login": "gavindsouza"
+    },
+    {
+      "contributions": 1,
+      "login": "Alisher778"
+    },
+    {
+      "contributions": 1,
+      "login": "anto-christo"
+    },
+    {
+      "contributions": 1,
+      "login": "huchim"
+    },
+    {
+      "contributions": 1,
+      "login": "davidalves1"
+    },
+    {
+      "contributions": 1,
+      "login": "dalwadani"
+    }
+  ]
+}

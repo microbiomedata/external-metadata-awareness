@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-04-26T14:07:27Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "obo-patterns.github.io",
+  "updatedAt": "2022-10-16T09:37:13Z",
+  "url": "https://github.com/OBOFoundry/obo-patterns.github.io",
+  "firstCommitDate": "2021-04-27T08:04:55Z",
+  "lastCommitDate": "2021-04-27T08:04:55Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 2,
+      "login": "matentzn"
+    }
+  ]
+}

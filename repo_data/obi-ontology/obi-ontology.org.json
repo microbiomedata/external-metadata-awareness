@@ -1,0 +1,30 @@
+{
+  "createdAt": "2017-02-27T17:01:53Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Website for the Ontology for Biomedical Investigations",
+  "name": "obi-ontology.org",
+  "updatedAt": "2022-01-04T18:13:53Z",
+  "url": "https://github.com/obi-ontology/obi-ontology.org",
+  "firstCommitDate": "2022-09-26T22:06:24Z",
+  "lastCommitDate": "2022-09-26T22:06:24Z",
+  "topContributors": [
+    {
+      "contributions": 49,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 12,
+      "login": "rvita"
+    },
+    {
+      "contributions": 1,
+      "login": "cstoeckert"
+    },
+    {
+      "contributions": 1,
+      "login": "zhengj2007"
+    }
+  ]
+}

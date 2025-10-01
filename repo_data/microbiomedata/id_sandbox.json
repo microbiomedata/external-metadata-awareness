@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-08-03T13:34:15Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A place for trying out NMDC identifier principles",
+  "name": "id_sandbox",
+  "updatedAt": "2024-08-13T00:42:12Z",
+  "url": "https://github.com/microbiomedata/id_sandbox",
+  "firstCommitDate": "2022-08-03T21:57:01Z",
+  "lastCommitDate": "2022-08-03T21:57:01Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "turbomam"
+    }
+  ]
+}

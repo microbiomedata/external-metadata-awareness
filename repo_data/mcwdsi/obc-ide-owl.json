@@ -1,0 +1,46 @@
+{
+  "createdAt": "2015-03-16T18:03:22Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "OWL files for the OBC.ide project",
+  "name": "obc-ide-owl",
+  "updatedAt": "2023-10-05T19:32:47Z",
+  "url": "https://github.com/mcwdsi/obc-ide-owl",
+  "firstCommitDate": "2021-08-25T19:20:43Z",
+  "lastCommitDate": "2021-08-25T19:20:43Z",
+  "topContributors": [
+    {
+      "contributions": 51,
+      "login": "hoganwr"
+    },
+    {
+      "contributions": 19,
+      "login": "dillerm"
+    },
+    {
+      "contributions": 9,
+      "login": "JohnLevander"
+    },
+    {
+      "contributions": 8,
+      "login": "danielwelch"
+    },
+    {
+      "contributions": 8,
+      "login": "joshhanna"
+    },
+    {
+      "contributions": 2,
+      "login": "a-vhadgar"
+    },
+    {
+      "contributions": 1,
+      "login": "Amin-Tajgardoon"
+    },
+    {
+      "contributions": 1,
+      "login": "aellenhicks"
+    }
+  ]
+}

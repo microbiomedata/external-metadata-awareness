@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-12-27T19:57:30Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "dc_state_streets",
+  "updatedAt": "2021-12-27T19:59:13Z",
+  "url": "https://github.com/turbomam/dc_state_streets",
+  "firstCommitDate": "2021-12-27T19:58:52Z",
+  "lastCommitDate": "2021-12-27T19:58:52Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "turbomam"
+    }
+  ]
+}

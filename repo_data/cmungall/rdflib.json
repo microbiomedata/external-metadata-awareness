@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-07-19T01:07:31Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "RDFLib is a Python library for working with RDF, a simple yet powerful language for representing information.",
+  "name": "rdflib",
+  "updatedAt": "2021-07-19T01:07:31Z",
+  "url": "https://github.com/cmungall/rdflib",
+  "firstCommitDate": "2021-07-17T00:02:12Z",
+  "lastCommitDate": "2021-07-17T00:02:12Z",
+  "topContributors": [
+    {
+      "contributions": 526,
+      "login": "gromgull"
+    },
+    {
+      "contributions": 359,
+      "login": "joernhees"
+    },
+    {
+      "contributions": 122,
+      "login": "gjhiggins"
+    },
+    {
+      "contributions": 71,
+      "login": "white-gecko"
+    },
+    {
+      "contributions": 70,
+      "login": "ashleysommer"
+    },
+    {
+      "contributions": 55,
+      "login": "iherman"
+    },
+    {
+      "contributions": 41,
+      "login": "niklasl"
+    },
+    {
+      "contributions": 40,
+      "login": "edmondchuc"
+    },
+    {
+      "contributions": 30,
+      "login": "tgbugs"
+    },
+    {
+      "contributions": 26,
+      "login": "takluyver"
+    }
+  ]
+}

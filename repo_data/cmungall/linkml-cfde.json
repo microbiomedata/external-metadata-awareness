@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-07-08T19:54:54Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "EXPERIMENTAL rendering of Common Fund Data Ecocystem as LinkML",
+  "name": "linkml-cfde",
+  "updatedAt": "2022-07-08T19:58:49Z",
+  "url": "https://github.com/cmungall/linkml-cfde",
+  "firstCommitDate": "2023-05-26T20:27:45Z",
+  "lastCommitDate": "2023-05-26T20:27:45Z",
+  "topContributors": [
+    {
+      "contributions": 19,
+      "login": "cmungall"
+    }
+  ]
+}

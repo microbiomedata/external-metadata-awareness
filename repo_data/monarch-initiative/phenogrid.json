@@ -1,0 +1,54 @@
+{
+  "createdAt": "2014-09-22T02:00:30Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The phenogrid widget",
+  "name": "phenogrid",
+  "updatedAt": "2023-11-23T08:47:13Z",
+  "url": "https://github.com/monarch-initiative/phenogrid",
+  "firstCommitDate": "2022-01-28T16:14:35Z",
+  "lastCommitDate": "2022-01-28T16:14:35Z",
+  "topContributors": [
+    {
+      "contributions": 724,
+      "login": "yuanzhou"
+    },
+    {
+      "contributions": 123,
+      "login": "harryhoch"
+    },
+    {
+      "contributions": 41,
+      "login": "VincentIII"
+    },
+    {
+      "contributions": 20,
+      "login": "davism84"
+    },
+    {
+      "contributions": 20,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 15,
+      "login": "boesb"
+    },
+    {
+      "contributions": 15,
+      "login": "falquaddoomi"
+    },
+    {
+      "contributions": 9,
+      "login": "frdougal"
+    },
+    {
+      "contributions": 8,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 8,
+      "login": "iimpulse"
+    }
+  ]
+}

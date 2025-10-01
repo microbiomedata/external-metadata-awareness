@@ -1,0 +1,50 @@
+{
+  "createdAt": "2024-09-16T11:49:00Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Documentation for bioconda",
+  "name": "bioconda-bioconda-docs",
+  "updatedAt": "2024-09-16T11:49:00Z",
+  "url": "https://github.com/jfy133/bioconda-bioconda-docs",
+  "firstCommitDate": "2024-08-09T22:21:00Z",
+  "lastCommitDate": "2024-08-09T22:21:00Z",
+  "topContributors": [
+    {
+      "contributions": 25,
+      "login": "daler"
+    },
+    {
+      "contributions": 10,
+      "login": "johanneskoester"
+    },
+    {
+      "contributions": 8,
+      "login": "aliciaaevans"
+    },
+    {
+      "contributions": 5,
+      "login": "corneliusroemer"
+    },
+    {
+      "contributions": 1,
+      "login": "bgruening"
+    },
+    {
+      "contributions": 1,
+      "login": "dpryan79"
+    },
+    {
+      "contributions": 1,
+      "login": "epruesse"
+    },
+    {
+      "contributions": 1,
+      "login": "martin-g"
+    },
+    {
+      "contributions": 1,
+      "login": "peterjc"
+    }
+  ]
+}

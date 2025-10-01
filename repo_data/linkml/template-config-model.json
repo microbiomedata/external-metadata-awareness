@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-05-06T13:23:39Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Lightweight model for the linkml-model-template configuration parameters",
+  "name": "template-config-model",
+  "updatedAt": "2023-01-28T00:49:45Z",
+  "url": "https://github.com/linkml/template-config-model",
+  "firstCommitDate": "2021-05-24T21:16:08Z",
+  "lastCommitDate": "2021-05-24T21:16:08Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "hsolbrig"
+    },
+    {
+      "contributions": 9,
+      "login": "actions-user"
+    }
+  ]
+}

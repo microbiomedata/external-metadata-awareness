@@ -1,0 +1,22 @@
+{
+  "createdAt": "2025-07-18T17:13:22Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A client for the BERtron API",
+  "name": "bertron-client",
+  "updatedAt": "2025-08-20T23:37:21Z",
+  "url": "https://github.com/ber-data/bertron-client",
+  "firstCommitDate": "2025-08-20T23:37:04Z",
+  "lastCommitDate": "2025-08-20T23:37:04Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "shreddd"
+    },
+    {
+      "contributions": 7,
+      "login": "jeff-cohere"
+    }
+  ]
+}

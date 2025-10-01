@@ -1,0 +1,54 @@
+{
+  "createdAt": "2015-10-19T23:51:09Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "An awesome list of high-quality open datasets in public domains (on-going).",
+  "name": "awesome-public-datasets",
+  "updatedAt": "2016-12-18T07:08:18Z",
+  "url": "https://github.com/cmungall/awesome-public-datasets",
+  "firstCommitDate": "2015-10-14T15:17:02Z",
+  "lastCommitDate": "2015-10-14T15:17:02Z",
+  "topContributors": [
+    {
+      "contributions": 103,
+      "login": "caesar0301"
+    },
+    {
+      "contributions": 3,
+      "login": "alison985"
+    },
+    {
+      "contributions": 3,
+      "login": "narner"
+    },
+    {
+      "contributions": 2,
+      "login": "audy"
+    },
+    {
+      "contributions": 2,
+      "login": "saurzcode"
+    },
+    {
+      "contributions": 2,
+      "login": "fenollp"
+    },
+    {
+      "contributions": 2,
+      "login": "phillc73"
+    },
+    {
+      "contributions": 2,
+      "login": "znurgl"
+    },
+    {
+      "contributions": 2,
+      "login": "olivetreee"
+    },
+    {
+      "contributions": 2,
+      "login": "aguynamedben"
+    }
+  ]
+}

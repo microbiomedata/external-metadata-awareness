@@ -1,0 +1,34 @@
+{
+  "createdAt": "2024-06-05T02:26:43Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A library for Web Ontology Language in Python created using a bridge from horned-owl to python using PyO3. ",
+  "name": "py-horned-owl",
+  "updatedAt": "2024-06-14T07:40:55Z",
+  "url": "https://github.com/cmungall/py-horned-owl",
+  "firstCommitDate": "2024-04-12T06:45:12Z",
+  "lastCommitDate": "2024-04-12T06:45:12Z",
+  "topContributors": [
+    {
+      "contributions": 52,
+      "login": "b-gehrke"
+    },
+    {
+      "contributions": 14,
+      "login": "enioarz"
+    },
+    {
+      "contributions": 12,
+      "login": "jannahastings"
+    },
+    {
+      "contributions": 6,
+      "login": "areleu"
+    },
+    {
+      "contributions": 4,
+      "login": "web-flow"
+    }
+  ]
+}

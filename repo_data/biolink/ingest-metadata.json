@@ -1,0 +1,30 @@
+{
+  "createdAt": "2025-06-24T21:32:07Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "ingest-metadata",
+  "updatedAt": "2025-09-22T20:54:17Z",
+  "url": "https://github.com/biolink/ingest-metadata",
+  "firstCommitDate": "2025-09-22T20:53:42Z",
+  "lastCommitDate": "2025-09-22T20:53:42Z",
+  "topContributors": [
+    {
+      "contributions": 26,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 6,
+      "login": "RichardBruskiewich"
+    },
+    {
+      "contributions": 4,
+      "login": "actions-user"
+    },
+    {
+      "contributions": 4,
+      "login": "mbrush"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-12-05T02:54:02Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "spark-testing",
+  "updatedAt": "2016-12-05T02:54:14Z",
+  "url": "https://github.com/cmungall/spark-testing",
+  "firstCommitDate": "2016-12-05T17:30:35Z",
+  "lastCommitDate": "2016-12-05T17:30:35Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "cmungall"
+    }
+  ]
+}

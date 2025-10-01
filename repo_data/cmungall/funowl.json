@@ -1,0 +1,26 @@
+{
+  "createdAt": "2021-06-06T01:53:00Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Pythonic representation of OWL through the OWL functional syntax",
+  "name": "funowl",
+  "updatedAt": "2021-06-24T21:32:54Z",
+  "url": "https://github.com/cmungall/funowl",
+  "firstCommitDate": "2021-03-19T21:58:41Z",
+  "lastCommitDate": "2021-03-19T21:58:41Z",
+  "topContributors": [
+    {
+      "contributions": 90,
+      "login": "hsolbrig"
+    },
+    {
+      "contributions": 4,
+      "login": "linchihfan"
+    },
+    {
+      "contributions": 2,
+      "login": "actions-user"
+    }
+  ]
+}

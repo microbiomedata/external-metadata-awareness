@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-11-18T14:57:30Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Bio Namd Entity Recognition API",
+  "name": "PhenoNeER",
+  "updatedAt": "2022-11-18T21:35:14Z",
+  "url": "https://github.com/monarch-initiative/PhenoNeER",
+  "firstCommitDate": "2022-11-18T21:23:12Z",
+  "lastCommitDate": "2022-11-18T21:23:12Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "ielis"
+    }
+  ]
+}

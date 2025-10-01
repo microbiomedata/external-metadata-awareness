@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-12-28T15:32:03Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "aggregation of nmdc-schema utilities, with fastapi interface, deployed with docker",
+  "name": "fastapi_docker",
+  "updatedAt": "2024-08-16T16:33:39Z",
+  "url": "https://github.com/turbomam/fastapi_docker",
+  "firstCommitDate": "2023-01-12T00:51:19Z",
+  "lastCommitDate": "2023-01-12T00:51:19Z",
+  "topContributors": [
+    {
+      "contributions": 12,
+      "login": "turbomam"
+    }
+  ]
+}

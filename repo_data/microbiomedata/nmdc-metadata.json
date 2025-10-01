@@ -1,0 +1,54 @@
+{
+  "createdAt": "2019-08-28T21:42:16Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Managing metadata and policy around metadata in NMDC",
+  "name": "nmdc-metadata",
+  "updatedAt": "2025-02-14T22:26:31Z",
+  "url": "https://github.com/microbiomedata/nmdc-metadata",
+  "firstCommitDate": "2024-04-19T17:51:56Z",
+  "lastCommitDate": "2024-04-19T17:51:56Z",
+  "topContributors": [
+    {
+      "contributions": 621,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 157,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 66,
+      "login": "deepakunni3"
+    },
+    {
+      "contributions": 38,
+      "login": "dwinston"
+    },
+    {
+      "contributions": 10,
+      "login": "SamuelPurvine"
+    },
+    {
+      "contributions": 4,
+      "login": "chienchi"
+    },
+    {
+      "contributions": 3,
+      "login": "dehays"
+    },
+    {
+      "contributions": 2,
+      "login": "StantonMartin"
+    },
+    {
+      "contributions": 1,
+      "login": "Blancohl"
+    },
+    {
+      "contributions": 1,
+      "login": "kfagnan"
+    }
+  ]
+}

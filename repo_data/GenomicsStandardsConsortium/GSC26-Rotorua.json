@@ -1,0 +1,54 @@
+{
+  "createdAt": "2025-05-23T12:46:15Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The GSC26 annual meeting in Rotorua, NZ.",
+  "name": "GSC26-Rotorua",
+  "updatedAt": "2025-09-18T16:19:39Z",
+  "url": "https://github.com/GenomicsStandardsConsortium/GSC26-Rotorua",
+  "firstCommitDate": "2025-09-18T16:19:33Z",
+  "lastCommitDate": "2025-09-18T16:19:33Z",
+  "topContributors": [
+    {
+      "contributions": 749,
+      "login": "daattali"
+    },
+    {
+      "contributions": 15,
+      "login": "OCram85"
+    },
+    {
+      "contributions": 15,
+      "login": "epwalsh"
+    },
+    {
+      "contributions": 14,
+      "login": "only1chunts"
+    },
+    {
+      "contributions": 13,
+      "login": "VincentTam"
+    },
+    {
+      "contributions": 12,
+      "login": "lexicalunit"
+    },
+    {
+      "contributions": 9,
+      "login": "lschriml"
+    },
+    {
+      "contributions": 7,
+      "login": "gpotter2"
+    },
+    {
+      "contributions": 7,
+      "login": "eugenius1"
+    },
+    {
+      "contributions": 5,
+      "login": "abelcheung"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "createdAt": "2015-01-21T15:17:23Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Documentation for the MatchMakerExchange APIs",
+  "name": "mme-apis",
+  "updatedAt": "2014-11-14T15:02:45Z",
+  "url": "https://github.com/cmungall/mme-apis",
+  "firstCommitDate": "2015-01-21T15:21:51Z",
+  "lastCommitDate": "2015-01-21T15:21:51Z",
+  "topContributors": [
+    {
+      "contributions": 10,
+      "login": "sdumitriu"
+    },
+    {
+      "contributions": 5,
+      "login": "Relequestual"
+    },
+    {
+      "contributions": 3,
+      "login": "fschiettecatte"
+    },
+    {
+      "contributions": 3,
+      "login": "buske"
+    },
+    {
+      "contributions": 1,
+      "login": "allasm"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

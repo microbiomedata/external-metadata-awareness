@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-01-12T17:13:47Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "synbio-schema",
+  "updatedAt": "2022-02-02T23:02:23Z",
+  "url": "https://github.com/turbomam/synbio-schema",
+  "firstCommitDate": "2022-02-02T23:40:23Z",
+  "lastCommitDate": "2022-02-02T23:40:23Z",
+  "topContributors": [
+    {
+      "contributions": 102,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

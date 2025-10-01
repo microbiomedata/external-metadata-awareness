@@ -1,0 +1,54 @@
+{
+  "createdAt": "2025-03-05T04:39:42Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Agent Framework / shim to use Pydantic with LLMs",
+  "name": "pydantic-ai",
+  "updatedAt": "2025-03-05T04:39:42Z",
+  "url": "https://github.com/cmungall/pydantic-ai",
+  "firstCommitDate": "2025-03-04T20:50:45Z",
+  "lastCommitDate": "2025-03-04T20:50:45Z",
+  "topContributors": [
+    {
+      "contributions": 214,
+      "login": "samuelcolvin"
+    },
+    {
+      "contributions": 49,
+      "login": "sydney-runkle"
+    },
+    {
+      "contributions": 39,
+      "login": "dmontagu"
+    },
+    {
+      "contributions": 23,
+      "login": "Kludex"
+    },
+    {
+      "contributions": 12,
+      "login": "alexmojaki"
+    },
+    {
+      "contributions": 5,
+      "login": "kauabh"
+    },
+    {
+      "contributions": 4,
+      "login": "YanSte"
+    },
+    {
+      "contributions": 4,
+      "login": "lealre"
+    },
+    {
+      "contributions": 4,
+      "login": "petyosi"
+    },
+    {
+      "contributions": 4,
+      "login": "jlowin"
+    }
+  ]
+}

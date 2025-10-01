@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-03-11T22:41:20Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "This is the data repository for the models created and edited with WebPhenote, the Monarch instance of the Noctua tool stack.",
+  "name": "monarch-models",
+  "updatedAt": "2016-03-11T22:41:20Z",
+  "url": "https://github.com/monarch-initiative/monarch-models",
+  "firstCommitDate": "2016-07-29T19:55:53Z",
+  "lastCommitDate": "2016-07-29T19:55:53Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "DoctorBud"
+    },
+    {
+      "contributions": 2,
+      "login": "balhoff"
+    }
+  ]
+}

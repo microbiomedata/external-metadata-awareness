@@ -1,0 +1,30 @@
+{
+  "createdAt": "2020-03-11T16:17:44Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "HUPO-PSI mass spectrometry CV",
+  "name": "psi-ms-CV",
+  "updatedAt": "2020-03-11T16:17:46Z",
+  "url": "https://github.com/cmungall/psi-ms-CV",
+  "firstCommitDate": "2020-02-17T14:41:15Z",
+  "lastCommitDate": "2020-02-17T14:41:15Z",
+  "topContributors": [
+    {
+      "contributions": 89,
+      "login": "germa"
+    },
+    {
+      "contributions": 1,
+      "login": "AlanRace"
+    },
+    {
+      "contributions": 1,
+      "login": "mobiusklein"
+    },
+    {
+      "contributions": 1,
+      "login": "ypriverol"
+    }
+  ]
+}

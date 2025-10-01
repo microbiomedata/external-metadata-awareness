@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-09-01T02:41:37Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Prototype automation",
+  "name": "nmdc_automation",
+  "updatedAt": "2025-09-30T03:11:47Z",
+  "url": "https://github.com/microbiomedata/nmdc_automation",
+  "firstCommitDate": "2025-09-30T03:11:41Z",
+  "lastCommitDate": "2025-09-30T03:11:41Z",
+  "topContributors": [
+    {
+      "contributions": 1455,
+      "login": "mbthornton-lbl"
+    },
+    {
+      "contributions": 197,
+      "login": "mflynn-lanl"
+    },
+    {
+      "contributions": 143,
+      "login": "aclum"
+    },
+    {
+      "contributions": 140,
+      "login": "scanon"
+    },
+    {
+      "contributions": 65,
+      "login": "kaijli"
+    },
+    {
+      "contributions": 42,
+      "login": "Shalsh23"
+    },
+    {
+      "contributions": 13,
+      "login": "shreddd"
+    },
+    {
+      "contributions": 9,
+      "login": "jasmynp"
+    },
+    {
+      "contributions": 9,
+      "login": "vlilanl"
+    },
+    {
+      "contributions": 8,
+      "login": "AmitBinf"
+    }
+  ]
+}

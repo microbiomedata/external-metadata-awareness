@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-11-06T00:27:48Z",
+  "defaultBranchRef": {
+    "name": "development"
+  },
+  "description": "\"Silent companion\" library for performing genome arithmetics with genes and transcripts using Svart",
+  "name": "SilentGenes",
+  "updatedAt": "2022-02-07T13:15:42Z",
+  "url": "https://github.com/monarch-initiative/SilentGenes",
+  "firstCommitDate": "2023-04-11T01:02:52Z",
+  "lastCommitDate": "2023-04-11T01:02:52Z",
+  "topContributors": [
+    {
+      "contributions": 38,
+      "login": "ielis"
+    },
+    {
+      "contributions": 4,
+      "login": "iimpulse"
+    }
+  ]
+}

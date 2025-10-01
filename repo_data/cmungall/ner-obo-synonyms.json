@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-08-23T20:23:28Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Effect of OBO synonym scopes on Named Entity Recognition",
+  "name": "ner-obo-synonyms",
+  "updatedAt": "2018-10-01T18:24:47Z",
+  "url": "https://github.com/cmungall/ner-obo-synonyms",
+  "firstCommitDate": "2016-08-23T20:25:34Z",
+  "lastCommitDate": "2016-08-23T20:25:34Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

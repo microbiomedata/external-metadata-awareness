@@ -1,0 +1,18 @@
+{
+  "createdAt": "2013-06-28T01:11:56Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "historic analysis of OBO anatomy ontologies",
+  "name": "obo-anatomy-analysis",
+  "updatedAt": "2023-03-12T10:28:59Z",
+  "url": "https://github.com/cmungall/obo-anatomy-analysis",
+  "firstCommitDate": "2013-07-01T01:24:36Z",
+  "lastCommitDate": "2013-07-01T01:24:36Z",
+  "topContributors": [
+    {
+      "contributions": 10,
+      "login": "cmungall"
+    }
+  ]
+}

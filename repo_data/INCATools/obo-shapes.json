@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-04-11T16:29:22Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "SHACL and ShEx shapes for validating OBO ontologies",
+  "name": "obo-shapes",
+  "updatedAt": "2022-04-11T17:48:06Z",
+  "url": "https://github.com/INCATools/obo-shapes",
+  "firstCommitDate": "2022-04-12T14:42:04Z",
+  "lastCommitDate": "2022-04-12T14:42:04Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "balhoff"
+    }
+  ]
+}

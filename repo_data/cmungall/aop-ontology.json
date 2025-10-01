@@ -1,0 +1,22 @@
+{
+  "createdAt": "2019-09-20T17:28:15Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Adverse Outcome Pathway Ontology",
+  "name": "aop-ontology",
+  "updatedAt": "2019-09-20T17:28:17Z",
+  "url": "https://github.com/cmungall/aop-ontology",
+  "firstCommitDate": "2017-09-25T19:43:53Z",
+  "lastCommitDate": "2017-09-25T19:43:53Z",
+  "topContributors": [
+    {
+      "contributions": 27,
+      "login": "DataSciBurgoon"
+    },
+    {
+      "contributions": 1,
+      "login": "egonw"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "createdAt": "2021-08-21T17:02:06Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Plater automatically creates a TRAPI interface for a biolink-compliant neo4j graph.",
+  "name": "Plater",
+  "updatedAt": "2021-08-22T17:34:13Z",
+  "url": "https://github.com/monarch-initiative/Plater",
+  "firstCommitDate": "2021-08-22T17:33:53Z",
+  "lastCommitDate": "2021-08-22T17:33:53Z",
+  "topContributors": [
+    {
+      "contributions": 42,
+      "login": "YaphetKG"
+    },
+    {
+      "contributions": 38,
+      "login": "PhillipsOwen"
+    },
+    {
+      "contributions": 3,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 1,
+      "login": "cbizon"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-01-16T13:53:00Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "convert an unordered list of ontology terms into a ordered list, with leading whitespace to indicate heirarchy",
+  "name": "hident",
+  "updatedAt": "2024-08-16T16:19:51Z",
+  "url": "https://github.com/turbomam/hident",
+  "firstCommitDate": "2022-01-25T14:43:38Z",
+  "lastCommitDate": "2022-01-25T14:43:38Z",
+  "topContributors": [
+    {
+      "contributions": 25,
+      "login": "turbomam"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-04-22T01:48:04Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "eggnogtable",
+  "updatedAt": "2025-09-24T06:16:50Z",
+  "url": "https://github.com/CultureBotAI/eggnogtable",
+  "firstCommitDate": "2025-05-02T04:33:39Z",
+  "lastCommitDate": "2025-05-02T04:33:39Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "realmarcin"
+    }
+  ]
+}

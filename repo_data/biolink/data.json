@@ -1,0 +1,12 @@
+{
+  "createdAt": "2025-05-20T17:28:53Z",
+  "defaultBranchRef": {
+    "name": ""
+  },
+  "description": "",
+  "name": "data",
+  "updatedAt": "2025-05-20T17:28:53Z",
+  "url": "https://github.com/biolink/data",
+  "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+  "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+}

@@ -1,0 +1,26 @@
+{
+  "createdAt": "2025-01-30T18:44:47Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Mass spectrometry metadata generation",
+  "name": "nmdc_mass_spectrometry_metadata_generation",
+  "updatedAt": "2025-09-17T16:57:24Z",
+  "url": "https://github.com/microbiomedata/nmdc_mass_spectrometry_metadata_generation",
+  "firstCommitDate": "2025-09-17T16:57:20Z",
+  "lastCommitDate": "2025-09-17T16:57:20Z",
+  "topContributors": [
+    {
+      "contributions": 350,
+      "login": "hesspnnl"
+    },
+    {
+      "contributions": 63,
+      "login": "kheal"
+    },
+    {
+      "contributions": 9,
+      "login": "Copilot"
+    }
+  ]
+}

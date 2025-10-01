@@ -1,0 +1,30 @@
+{
+  "createdAt": "2019-07-09T18:45:02Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The Monarch Initiative Helpdesk",
+  "name": "helpdesk",
+  "updatedAt": "2025-08-20T20:50:40Z",
+  "url": "https://github.com/monarch-initiative/helpdesk",
+  "firstCommitDate": "2025-08-20T20:50:36Z",
+  "lastCommitDate": "2025-08-20T20:50:36Z",
+  "topContributors": [
+    {
+      "contributions": 10,
+      "login": "nlharris"
+    },
+    {
+      "contributions": 3,
+      "login": "monicacecilia"
+    },
+    {
+      "contributions": 3,
+      "login": "sagehrke"
+    },
+    {
+      "contributions": 1,
+      "login": "kshefchek"
+    }
+  ]
+}

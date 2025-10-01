@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-03-05T23:52:08Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "wtfgenes-appnote",
+  "updatedAt": "2017-03-05T23:52:10Z",
+  "url": "https://github.com/cmungall/wtfgenes-appnote",
+  "firstCommitDate": "2017-03-05T22:11:41Z",
+  "lastCommitDate": "2017-03-05T22:11:41Z",
+  "topContributors": [
+    {
+      "contributions": 24,
+      "login": "ihh"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "createdAt": "2014-10-25T16:49:58Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Data Ingestion Pipeline for Monarch",
+  "name": "dipper",
+  "updatedAt": "2024-08-20T04:11:43Z",
+  "url": "https://github.com/monarch-initiative/dipper",
+  "firstCommitDate": "2021-12-27T18:29:07Z",
+  "lastCommitDate": "2021-12-27T18:29:07Z",
+  "topContributors": [
+    {
+      "contributions": 1941,
+      "login": "TomConlin"
+    },
+    {
+      "contributions": 794,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 778,
+      "login": "nlwashington"
+    },
+    {
+      "contributions": 514,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 53,
+      "login": "mbrush"
+    },
+    {
+      "contributions": 35,
+      "login": "jmcmurry"
+    },
+    {
+      "contributions": 21,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 20,
+      "login": "putmantime"
+    },
+    {
+      "contributions": 12,
+      "login": "alpae"
+    },
+    {
+      "contributions": 3,
+      "login": "jnguyenx"
+    }
+  ]
+}

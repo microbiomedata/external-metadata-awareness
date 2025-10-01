@@ -1,0 +1,54 @@
+{
+  "createdAt": "2024-01-15T19:53:05Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Call all LLM APIs using the OpenAI format. Use Bedrock, Azure, OpenAI, Cohere, Anthropic, Ollama, Sagemaker, HuggingFace, Replicate (100+ LLMs)",
+  "name": "litellm",
+  "updatedAt": "2024-01-15T19:53:05Z",
+  "url": "https://github.com/cmungall/litellm",
+  "firstCommitDate": "2024-01-15T19:38:17Z",
+  "lastCommitDate": "2024-01-15T19:38:17Z",
+  "topContributors": [
+    {
+      "contributions": 3164,
+      "login": "ishaan-jaff"
+    },
+    {
+      "contributions": 2164,
+      "login": "krrishdholakia"
+    },
+    {
+      "contributions": 32,
+      "login": "coconut49"
+    },
+    {
+      "contributions": 23,
+      "login": "Manouchehri"
+    },
+    {
+      "contributions": 15,
+      "login": "WilliamEspegren"
+    },
+    {
+      "contributions": 13,
+      "login": "zakhar-kogan"
+    },
+    {
+      "contributions": 10,
+      "login": "maxdeichmann"
+    },
+    {
+      "contributions": 10,
+      "login": "toniengelhardt"
+    },
+    {
+      "contributions": 8,
+      "login": "MateoCamara"
+    },
+    {
+      "contributions": 8,
+      "login": "ryanh-ai"
+    }
+  ]
+}

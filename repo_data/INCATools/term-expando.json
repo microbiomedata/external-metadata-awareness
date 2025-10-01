@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-06-09T20:00:59Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Command line expansion of IDs and controlled terms in documents",
+  "name": "term-expando",
+  "updatedAt": "2021-02-04T02:50:35Z",
+  "url": "https://github.com/INCATools/term-expando",
+  "firstCommitDate": "2021-02-04T02:50:26Z",
+  "lastCommitDate": "2021-02-04T02:50:26Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

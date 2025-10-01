@@ -1,0 +1,22 @@
+{
+  "createdAt": "2019-06-10T17:25:36Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "ExomiserSimulations",
+  "updatedAt": "2019-08-06T14:29:07Z",
+  "url": "https://github.com/monarch-initiative/ExomiserSimulations",
+  "firstCommitDate": "2019-08-06T14:28:42Z",
+  "lastCommitDate": "2019-08-06T14:28:42Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "julesjacobsen"
+    },
+    {
+      "contributions": 1,
+      "login": "pnrobinson"
+    }
+  ]
+}

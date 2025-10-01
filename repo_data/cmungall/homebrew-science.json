@@ -1,0 +1,54 @@
+{
+  "createdAt": "2017-09-25T19:45:56Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": ":beer::microscope: Scientific formulae for the Homebrew package manager",
+  "name": "homebrew-science",
+  "updatedAt": "2017-09-25T19:46:00Z",
+  "url": "https://github.com/cmungall/homebrew-science",
+  "firstCommitDate": "2017-09-18T02:38:23Z",
+  "lastCommitDate": "2017-09-18T02:38:23Z",
+  "topContributors": [
+    {
+      "contributions": 1262,
+      "login": "sjackman"
+    },
+    {
+      "contributions": 815,
+      "login": "ilovezfs"
+    },
+    {
+      "contributions": 490,
+      "login": "ianml"
+    },
+    {
+      "contributions": 444,
+      "login": "dpo"
+    },
+    {
+      "contributions": 266,
+      "login": "iMichka"
+    },
+    {
+      "contributions": 168,
+      "login": "jacknagel"
+    },
+    {
+      "contributions": 148,
+      "login": "tseemann"
+    },
+    {
+      "contributions": 139,
+      "login": "fxcoudert"
+    },
+    {
+      "contributions": 130,
+      "login": "tdsmith"
+    },
+    {
+      "contributions": 126,
+      "login": "adamv"
+    }
+  ]
+}

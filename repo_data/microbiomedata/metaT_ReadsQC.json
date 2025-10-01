@@ -1,0 +1,26 @@
+{
+  "createdAt": "2024-01-11T23:15:27Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Workflow for metatranscriptome quality control",
+  "name": "metaT_ReadsQC",
+  "updatedAt": "2025-04-23T17:56:53Z",
+  "url": "https://github.com/microbiomedata/metaT_ReadsQC",
+  "firstCommitDate": "2025-04-23T17:56:50Z",
+  "lastCommitDate": "2025-04-23T17:56:50Z",
+  "topContributors": [
+    {
+      "contributions": 63,
+      "login": "kaijli"
+    },
+    {
+      "contributions": 3,
+      "login": "vlilanl"
+    },
+    {
+      "contributions": 2,
+      "login": "eecavanna"
+    }
+  ]
+}

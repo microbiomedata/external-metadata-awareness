@@ -1,0 +1,18 @@
+{
+  "createdAt": "2010-02-23T18:13:34Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "bioperl extensions for OWL generation",
+  "name": "bioperl-owl",
+  "updatedAt": "2021-06-23T02:41:35Z",
+  "url": "https://github.com/cmungall/bioperl-owl",
+  "firstCommitDate": "2010-02-23T18:12:34Z",
+  "lastCommitDate": "2010-02-23T18:12:34Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "cmungall"
+    }
+  ]
+}

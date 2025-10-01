@@ -1,0 +1,50 @@
+{
+  "createdAt": "2020-05-21T22:26:58Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "ReadsQC",
+  "updatedAt": "2025-09-05T19:39:55Z",
+  "url": "https://github.com/microbiomedata/ReadsQC",
+  "firstCommitDate": "2025-09-05T19:39:49Z",
+  "lastCommitDate": "2025-09-05T19:39:49Z",
+  "topContributors": [
+    {
+      "contributions": 58,
+      "login": "vlilanl"
+    },
+    {
+      "contributions": 38,
+      "login": "chienchi"
+    },
+    {
+      "contributions": 31,
+      "login": "kaijli"
+    },
+    {
+      "contributions": 13,
+      "login": "scanon"
+    },
+    {
+      "contributions": 4,
+      "login": "aclum"
+    },
+    {
+      "contributions": 2,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 2,
+      "login": "hubin-keio"
+    },
+    {
+      "contributions": 2,
+      "login": "dcassol"
+    },
+    {
+      "contributions": 1,
+      "login": "ssarrafan"
+    }
+  ]
+}

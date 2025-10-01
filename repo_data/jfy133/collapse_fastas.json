@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-02-21T09:53:21Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Small bash script to convert multiple (multi-)FASTAs into single file with single header",
+  "name": "collapse_fastas",
+  "updatedAt": "2019-02-26T09:58:15Z",
+  "url": "https://github.com/jfy133/collapse_fastas",
+  "firstCommitDate": "2019-02-26T09:57:24Z",
+  "lastCommitDate": "2019-02-26T09:57:24Z",
+  "topContributors": [
+    {
+      "contributions": 20,
+      "login": "jfy133"
+    }
+  ]
+}

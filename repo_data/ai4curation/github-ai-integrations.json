@@ -1,0 +1,22 @@
+{
+  "createdAt": "2025-08-15T23:42:49Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Copier template for adding AI integrations to a GH repo",
+  "name": "github-ai-integrations",
+  "updatedAt": "2025-09-07T15:11:45Z",
+  "url": "https://github.com/ai4curation/github-ai-integrations",
+  "firstCommitDate": "2025-09-07T15:11:39Z",
+  "lastCommitDate": "2025-09-07T15:11:39Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 2,
+      "login": "claude[bot]"
+    }
+  ]
+}

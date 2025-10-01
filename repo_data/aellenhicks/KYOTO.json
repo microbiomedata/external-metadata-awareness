@@ -1,0 +1,18 @@
+{
+  "createdAt": "2014-07-14T21:03:12Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "KYOTO Ontology",
+  "name": "KYOTO",
+  "updatedAt": "2015-07-20T15:28:03Z",
+  "url": "https://github.com/aellenhicks/KYOTO",
+  "firstCommitDate": "2015-07-20T15:27:57Z",
+  "lastCommitDate": "2015-07-20T15:27:57Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "aellenhicks"
+    }
+  ]
+}

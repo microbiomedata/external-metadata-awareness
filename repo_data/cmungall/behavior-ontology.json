@@ -1,0 +1,34 @@
+{
+  "createdAt": "2015-10-25T00:07:34Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Neuro Behaviour Ontology: an ontology for human and animal behaviour processes and behaviour phenotypes",
+  "name": "behavior-ontology",
+  "updatedAt": "2016-04-15T16:04:05Z",
+  "url": "https://github.com/cmungall/behavior-ontology",
+  "firstCommitDate": "2015-10-25T00:12:55Z",
+  "lastCommitDate": "2015-10-25T00:12:55Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "pmidford"
+    },
+    {
+      "contributions": 3,
+      "login": "leechuck"
+    },
+    {
+      "contributions": 2,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "CynthiaParr-USDA"
+    }
+  ]
+}

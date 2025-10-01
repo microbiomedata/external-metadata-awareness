@@ -1,0 +1,22 @@
+{
+  "createdAt": "2013-08-07T23:38:21Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Builtpack to use RingoJS with Heroku",
+  "name": "heroku-buildpack-ringojs-jdk7",
+  "updatedAt": "2013-08-08T00:07:16Z",
+  "url": "https://github.com/cmungall/heroku-buildpack-ringojs-jdk7",
+  "firstCommitDate": "2013-08-08T00:07:14Z",
+  "lastCommitDate": "2013-08-08T00:07:14Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "jockm"
+    },
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

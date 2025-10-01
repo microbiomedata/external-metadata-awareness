@@ -1,0 +1,26 @@
+{
+  "createdAt": "2022-03-23T02:53:01Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": ".github",
+  "updatedAt": "2022-03-23T02:53:01Z",
+  "url": "https://github.com/linkml/.github",
+  "firstCommitDate": "2023-01-14T00:13:46Z",
+  "lastCommitDate": "2023-01-14T00:13:46Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 4,
+      "login": "nlharris"
+    },
+    {
+      "contributions": 1,
+      "login": "sierra-moxon"
+    }
+  ]
+}

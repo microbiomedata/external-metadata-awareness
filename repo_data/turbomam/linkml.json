@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-07-21T12:31:54Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Linked Open Data Modeling Language",
+  "name": "linkml",
+  "updatedAt": "2021-07-21T12:37:14Z",
+  "url": "https://github.com/turbomam/linkml",
+  "firstCommitDate": "2021-07-21T12:37:05Z",
+  "lastCommitDate": "2021-07-21T12:37:05Z",
+  "topContributors": [
+    {
+      "contributions": 124,
+      "login": "hsolbrig"
+    },
+    {
+      "contributions": 64,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 52,
+      "login": "actions-user"
+    },
+    {
+      "contributions": 13,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 11,
+      "login": "gaurav"
+    },
+    {
+      "contributions": 8,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 4,
+      "login": "dwinston"
+    },
+    {
+      "contributions": 2,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 2,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 1,
+      "login": "bpow"
+    }
+  ]
+}

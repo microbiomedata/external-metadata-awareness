@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-07-29T18:21:53Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "go-cam-demo",
+  "updatedAt": "2025-07-31T03:06:06Z",
+  "url": "https://github.com/cmungall/go-cam-demo",
+  "firstCommitDate": "2025-07-31T03:05:59Z",
+  "lastCommitDate": "2025-07-31T03:05:59Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "cmungall"
+    }
+  ]
+}

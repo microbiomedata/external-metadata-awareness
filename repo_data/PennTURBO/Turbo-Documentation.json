@@ -1,0 +1,22 @@
+{
+  "createdAt": "2018-05-14T18:53:02Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Hosts the Github Pages site documenting the UPenn Biobank TURBO project",
+  "name": "Turbo-Documentation",
+  "updatedAt": "2025-02-03T08:35:45Z",
+  "url": "https://github.com/PennTURBO/Turbo-Documentation",
+  "firstCommitDate": "2023-08-03T13:28:43Z",
+  "lastCommitDate": "2023-08-03T13:28:43Z",
+  "topContributors": [
+    {
+      "contributions": 40,
+      "login": "greenguy33"
+    },
+    {
+      "contributions": 26,
+      "login": "cstoeckert"
+    }
+  ]
+}

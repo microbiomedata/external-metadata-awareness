@@ -1,0 +1,26 @@
+{
+  "createdAt": "2025-01-06T16:20:52Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Ingest for Micronutrient Information Center using OntoGPT",
+  "name": "mic-ingest",
+  "updatedAt": "2025-06-14T00:06:37Z",
+  "url": "https://github.com/monarch-initiative/mic-ingest",
+  "firstCommitDate": "2025-06-14T00:06:33Z",
+  "lastCommitDate": "2025-06-14T00:06:33Z",
+  "topContributors": [
+    {
+      "contributions": 18,
+      "login": "iQuxLE"
+    },
+    {
+      "contributions": 13,
+      "login": "amc-corey-cox"
+    },
+    {
+      "contributions": 10,
+      "login": "kevinschaper"
+    }
+  ]
+}

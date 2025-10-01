@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-02-02T02:27:55Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Iterative, OWL-friendly model of proteolytic reactions",
+  "name": "reactions-for-owl",
+  "updatedAt": "2024-08-16T16:03:59Z",
+  "url": "https://github.com/turbomam/reactions-for-owl",
+  "firstCommitDate": "2024-02-02T15:55:30Z",
+  "lastCommitDate": "2024-02-02T15:55:30Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "turbomam"
+    }
+  ]
+}

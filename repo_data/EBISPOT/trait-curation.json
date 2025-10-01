@@ -1,0 +1,26 @@
+{
+  "createdAt": "2020-10-29T10:11:26Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A web application for manual curation of trait-to-ontology mappings, including provenance and integration with EBI SPOT stack.",
+  "name": "trait-curation",
+  "updatedAt": "2020-10-29T10:11:28Z",
+  "url": "https://github.com/EBISPOT/trait-curation",
+  "firstCommitDate": "2020-09-18T10:43:09Z",
+  "lastCommitDate": "2020-09-18T10:43:09Z",
+  "topContributors": [
+    {
+      "contributions": 401,
+      "login": "joj0s"
+    },
+    {
+      "contributions": 27,
+      "login": "tskir"
+    },
+    {
+      "contributions": 1,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

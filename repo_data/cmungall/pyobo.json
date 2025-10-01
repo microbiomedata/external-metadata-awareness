@@ -1,0 +1,46 @@
+{
+  "createdAt": "2025-03-06T02:30:56Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "📛 A Python package for using ontologies, terminologies, and biomedical nomenclatures",
+  "name": "pyobo",
+  "updatedAt": "2025-03-06T02:30:56Z",
+  "url": "https://github.com/cmungall/pyobo",
+  "firstCommitDate": "2025-03-05T17:43:13Z",
+  "lastCommitDate": "2025-03-05T17:43:13Z",
+  "topContributors": [
+    {
+      "contributions": 1357,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 3,
+      "login": "bgyori"
+    },
+    {
+      "contributions": 2,
+      "login": "ddomingof"
+    },
+    {
+      "contributions": 2,
+      "login": "jplfaria"
+    },
+    {
+      "contributions": 2,
+      "login": "nanglo123"
+    },
+    {
+      "contributions": 1,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 1,
+      "login": "samuelbunga"
+    },
+    {
+      "contributions": 1,
+      "login": "kkaris"
+    }
+  ]
+}

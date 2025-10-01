@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-09-29T19:15:06Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Repository of analyses of data sources",
+  "name": "source-data-analysis",
+  "updatedAt": "2024-08-28T22:34:42Z",
+  "url": "https://github.com/monarch-initiative/source-data-analysis",
+  "firstCommitDate": "2024-08-13T19:32:04Z",
+  "lastCommitDate": "2024-08-13T19:32:04Z",
+  "topContributors": [
+    {
+      "contributions": 9,
+      "login": "madanucd"
+    },
+    {
+      "contributions": 1,
+      "login": "putmantime"
+    }
+  ]
+}

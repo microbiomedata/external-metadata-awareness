@@ -1,0 +1,42 @@
+{
+  "createdAt": "2023-04-07T12:02:44Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A cookiecutter for linkml projects which illustrates the Examples First design pattern",
+  "name": "examples-first-cookiecutter",
+  "updatedAt": "2024-08-16T16:06:21Z",
+  "url": "https://github.com/turbomam/examples-first-cookiecutter",
+  "firstCommitDate": "2023-05-12T19:56:51Z",
+  "lastCommitDate": "2023-05-12T19:56:51Z",
+  "topContributors": [
+    {
+      "contributions": 132,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 93,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 43,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 15,
+      "login": "noelmcloughlin"
+    },
+    {
+      "contributions": 14,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 6,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 3,
+      "login": "sujaypatil96"
+    }
+  ]
+}

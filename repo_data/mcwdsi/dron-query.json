@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-10-30T15:45:48Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "command line app for querying Drug Ontology using DL queries via reasoner",
+  "name": "dron-query",
+  "updatedAt": "2023-10-06T13:21:36Z",
+  "url": "https://github.com/mcwdsi/dron-query",
+  "firstCommitDate": "2023-08-17T19:59:49Z",
+  "lastCommitDate": "2023-08-17T19:59:49Z",
+  "topContributors": [
+    {
+      "contributions": 33,
+      "login": "hoganwr"
+    },
+    {
+      "contributions": 1,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

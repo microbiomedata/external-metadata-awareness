@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-08-25T01:09:41Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "to be named GO pythin lib",
+  "name": "tbn-go-python-lib",
+  "updatedAt": "2015-08-25T01:09:50Z",
+  "url": "https://github.com/cmungall/tbn-go-python-lib",
+  "firstCommitDate": "2016-01-06T01:21:49Z",
+  "lastCommitDate": "2016-01-06T01:21:49Z",
+  "topContributors": [
+    {
+      "contributions": 15,
+      "login": "cmungall"
+    }
+  ]
+}

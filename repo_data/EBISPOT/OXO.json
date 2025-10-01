@@ -1,0 +1,42 @@
+{
+  "createdAt": "2016-09-02T10:13:01Z",
+  "defaultBranchRef": {
+    "name": "dev"
+  },
+  "description": "Ontology cross-reference and mapping service",
+  "name": "OXO",
+  "updatedAt": "2025-05-12T12:39:44Z",
+  "url": "https://github.com/EBISPOT/OXO",
+  "firstCommitDate": "2025-05-01T12:12:54Z",
+  "lastCommitDate": "2025-05-01T12:12:54Z",
+  "topContributors": [
+    {
+      "contributions": 88,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 57,
+      "login": "LLTommy"
+    },
+    {
+      "contributions": 51,
+      "login": "jamesamcl"
+    },
+    {
+      "contributions": 8,
+      "login": "haideriqbal"
+    },
+    {
+      "contributions": 6,
+      "login": "serjoshua"
+    },
+    {
+      "contributions": 5,
+      "login": "warrenread"
+    },
+    {
+      "contributions": 5,
+      "login": "henrietteharmse"
+    }
+  ]
+}

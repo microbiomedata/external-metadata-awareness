@@ -1,0 +1,30 @@
+{
+  "createdAt": "2022-05-17T07:49:26Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Documentation on new GWAS Summary Statistics Standard",
+  "name": "gwas-summary-statistics-standard",
+  "updatedAt": "2025-08-27T04:26:55Z",
+  "url": "https://github.com/EBISPOT/gwas-summary-statistics-standard",
+  "firstCommitDate": "2024-08-14T10:33:58Z",
+  "lastCommitDate": "2024-08-14T10:33:58Z",
+  "topContributors": [
+    {
+      "contributions": 42,
+      "login": "jdhayhurst"
+    },
+    {
+      "contributions": 2,
+      "login": "karatugo"
+    },
+    {
+      "contributions": 2,
+      "login": "jiyue1214"
+    },
+    {
+      "contributions": 1,
+      "login": "sprintell"
+    }
+  ]
+}

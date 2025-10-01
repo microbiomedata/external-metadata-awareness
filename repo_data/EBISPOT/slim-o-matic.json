@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-10-07T14:43:34Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A semi-automated tool for GO slimming",
+  "name": "slim-o-matic",
+  "updatedAt": "2022-09-07T07:37:00Z",
+  "url": "https://github.com/EBISPOT/slim-o-matic",
+  "firstCommitDate": "2017-07-06T17:39:33Z",
+  "lastCommitDate": "2017-07-06T17:39:33Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "mcourtot"
+    }
+  ]
+}

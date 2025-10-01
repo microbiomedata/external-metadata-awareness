@@ -1,0 +1,482 @@
+[
+  {
+    "createdAt": "2018-08-31T12:18:04Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "An experimental ontology containing key terms from Open Biological and Biomedical Ontologies (OBO)",
+    "name": "COB",
+    "updatedAt": "2025-08-02T16:53:44Z",
+    "url": "https://github.com/OBOFoundry/COB",
+    "firstCommitDate": "2025-06-30T16:12:34Z",
+    "lastCommitDate": "2025-06-30T16:12:34Z",
+    "topContributors": [
+      {
+        "contributions": 127,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 103,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 62,
+        "login": "jamesaoverton"
+      },
+      {
+        "contributions": 18,
+        "login": "sebastianduesing"
+      },
+      {
+        "contributions": 11,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 8,
+        "login": "cthoyt"
+      },
+      {
+        "contributions": 5,
+        "login": "beckyjackson"
+      },
+      {
+        "contributions": 4,
+        "login": "bpeters42"
+      },
+      {
+        "contributions": 3,
+        "login": "ddooley"
+      },
+      {
+        "contributions": 1,
+        "login": "bjonnh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-02-12T11:05:10Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "dashboard-template",
+    "updatedAt": "2025-06-30T17:24:20Z",
+    "url": "https://github.com/OBOFoundry/dashboard-template",
+    "firstCommitDate": "2025-06-30T17:24:17Z",
+    "lastCommitDate": "2025-06-30T17:24:17Z",
+    "topContributors": [
+      {
+        "contributions": 12,
+        "login": "anitacaron"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-12-10T12:33:41Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Draft mapping between OBO(-ish) ontologies and wikidata",
+    "name": "obo_wikidata_mapping",
+    "updatedAt": "2022-10-16T09:36:19Z",
+    "url": "https://github.com/OBOFoundry/obo_wikidata_mapping",
+    "firstCommitDate": "2015-12-17T11:22:55Z",
+    "lastCommitDate": "2015-12-17T11:22:55Z",
+    "topContributors": [
+      {
+        "contributions": 17,
+        "login": "dosumis"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-10-19T21:56:59Z",
+    "defaultBranchRef": {
+      "name": "gh-pages"
+    },
+    "description": "Development version of OBO dashboard",
+    "name": "obo-dash.github.io",
+    "updatedAt": "2025-08-29T17:48:36Z",
+    "url": "https://github.com/OBOFoundry/obo-dash.github.io",
+    "firstCommitDate": "2025-08-29T17:48:22Z",
+    "lastCommitDate": "2025-08-29T17:48:22Z",
+    "topContributors": [
+      {
+        "contributions": 102,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 2,
+        "login": "anitacaron"
+      },
+      {
+        "contributions": 1,
+        "login": "jamesaoverton"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-11-21T14:52:52Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Summary Dashboard for Open Biological and Biomedical Ontologies",
+    "name": "OBO-Dashboard",
+    "updatedAt": "2025-09-24T01:51:27Z",
+    "url": "https://github.com/OBOFoundry/OBO-Dashboard",
+    "firstCommitDate": "2025-09-15T13:30:46Z",
+    "lastCommitDate": "2025-09-15T13:30:46Z",
+    "topContributors": [
+      {
+        "contributions": 121,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 15,
+        "login": "anitacaron"
+      },
+      {
+        "contributions": 12,
+        "login": "cthoyt"
+      },
+      {
+        "contributions": 9,
+        "login": "jamesaoverton"
+      },
+      {
+        "contributions": 5,
+        "login": "jsstevenson"
+      },
+      {
+        "contributions": 2,
+        "login": "beckyjackson"
+      },
+      {
+        "contributions": 1,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "balhoff"
+      },
+      {
+        "contributions": 1,
+        "login": "nlharris"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-02-25T23:15:46Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "OBO Metadata Editor",
+    "name": "OBO-Metadata-Editor",
+    "updatedAt": "2023-05-03T14:03:34Z",
+    "url": "https://github.com/OBOFoundry/OBO-Metadata-Editor",
+    "firstCommitDate": "2023-05-23T12:48:54Z",
+    "lastCommitDate": "2023-05-23T12:48:54Z",
+    "topContributors": [
+      {
+        "contributions": 26,
+        "login": "jamesaoverton"
+      },
+      {
+        "contributions": 5,
+        "login": "lmcmicu"
+      },
+      {
+        "contributions": 4,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 3,
+        "login": "jannahastings"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-12-09T15:42:51Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Repo that contains the specification of the metrics used to quantify stuff in the ontology (experimental).",
+    "name": "obo-metrics",
+    "updatedAt": "2020-12-09T15:43:23Z",
+    "url": "https://github.com/OBOFoundry/obo-metrics",
+    "firstCommitDate": "2020-12-09T15:41:48Z",
+    "lastCommitDate": "2020-12-09T15:41:48Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-11-02T21:21:25Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Repo to manage the dashboard for new term requests",
+    "name": "obo-nor.github.io",
+    "updatedAt": "2025-09-29T15:04:58Z",
+    "url": "https://github.com/OBOFoundry/obo-nor.github.io",
+    "firstCommitDate": "2025-09-29T15:04:54Z",
+    "lastCommitDate": "2025-09-29T15:04:54Z",
+    "topContributors": [
+      {
+        "contributions": 123,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 105,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 41,
+        "login": "pfabry"
+      },
+      {
+        "contributions": 7,
+        "login": "anitacaron"
+      },
+      {
+        "contributions": 2,
+        "login": "Dalalghamdi"
+      },
+      {
+        "contributions": 1,
+        "login": "BideZ"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-04-26T14:07:27Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "obo-patterns.github.io",
+    "updatedAt": "2022-10-16T09:37:13Z",
+    "url": "https://github.com/OBOFoundry/obo-patterns.github.io",
+    "firstCommitDate": "2021-04-27T08:04:55Z",
+    "lastCommitDate": "2021-04-27T08:04:55Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "dosumis"
+      },
+      {
+        "contributions": 2,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-07-29T02:24:48Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Metadata and website for the Open Bio Ontologies Foundry Ontology Registry",
+    "name": "OBOFoundry.github.io",
+    "updatedAt": "2025-09-30T16:27:24Z",
+    "url": "https://github.com/OBOFoundry/OBOFoundry.github.io",
+    "firstCommitDate": "2025-09-30T16:27:17Z",
+    "lastCommitDate": "2025-09-30T16:27:17Z",
+    "topContributors": [
+      {
+        "contributions": 963,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 521,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 465,
+        "login": "jamesaoverton"
+      },
+      {
+        "contributions": 343,
+        "login": "nataled"
+      },
+      {
+        "contributions": 221,
+        "login": "cthoyt"
+      },
+      {
+        "contributions": 211,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 178,
+        "login": "nlharris"
+      },
+      {
+        "contributions": 159,
+        "login": "rvita"
+      },
+      {
+        "contributions": 149,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 98,
+        "login": "lschriml"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-08-12T02:02:25Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Automatically exported from code.google.com/p/obo-foundry-operations-committee",
+    "name": "Operations-Committee-RETIRED",
+    "updatedAt": "2019-08-07T18:51:13Z",
+    "url": "https://github.com/OBOFoundry/Operations-Committee-RETIRED",
+    "firstCommitDate": "2015-07-06T15:45:05Z",
+    "lastCommitDate": "2015-07-06T15:45:05Z",
+    "topContributors": [
+      {
+        "contributions": 141,
+        "login": "mcourtot"
+      },
+      {
+        "contributions": 103,
+        "login": "ramonawalls"
+      },
+      {
+        "contributions": 18,
+        "login": "alanruttenberg"
+      },
+      {
+        "contributions": 8,
+        "login": "zhengj2007"
+      },
+      {
+        "contributions": 6,
+        "login": "proccaserra"
+      },
+      {
+        "contributions": 4,
+        "login": "batchelorc"
+      },
+      {
+        "contributions": 4,
+        "login": "jamesaoverton"
+      },
+      {
+        "contributions": 3,
+        "login": "bbopjenkins"
+      },
+      {
+        "contributions": 3,
+        "login": "cstoeckert"
+      },
+      {
+        "contributions": 2,
+        "login": "carlotorniai"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-05-01T01:25:38Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "The Jenkins build pipeline for MP.",
+    "name": "pipeline-mp",
+    "updatedAt": "2021-02-10T16:50:48Z",
+    "url": "https://github.com/OBOFoundry/pipeline-mp",
+    "firstCommitDate": "2021-02-10T16:50:45Z",
+    "lastCommitDate": "2021-02-10T16:50:45Z",
+    "topContributors": [
+      {
+        "contributions": 23,
+        "login": "kltm"
+      },
+      {
+        "contributions": 15,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2014-11-26T14:27:30Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A system for managing OBO PURLs",
+    "name": "purl.obolibrary.org",
+    "updatedAt": "2025-09-23T12:47:51Z",
+    "url": "https://github.com/OBOFoundry/purl.obolibrary.org",
+    "firstCommitDate": "2025-09-03T15:16:38Z",
+    "lastCommitDate": "2025-09-03T15:16:38Z",
+    "topContributors": [
+      {
+        "contributions": 897,
+        "login": "jamesaoverton"
+      },
+      {
+        "contributions": 280,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 258,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 71,
+        "login": "zhengj2007"
+      },
+      {
+        "contributions": 47,
+        "login": "nataled"
+      },
+      {
+        "contributions": 47,
+        "login": "abessiari"
+      },
+      {
+        "contributions": 42,
+        "login": "ramonawalls"
+      },
+      {
+        "contributions": 39,
+        "login": "alanruttenberg"
+      },
+      {
+        "contributions": 34,
+        "login": "hoganwr"
+      },
+      {
+        "contributions": 32,
+        "login": "mcourtot"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-07-10T09:58:31Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "robot-plugin-cookiecutter",
+    "updatedAt": "2025-04-01T13:15:15Z",
+    "url": "https://github.com/OBOFoundry/robot-plugin-cookiecutter",
+    "firstCommitDate": "2023-07-10T09:58:15Z",
+    "lastCommitDate": "2023-07-10T09:58:15Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      }
+    ]
+  }
+]

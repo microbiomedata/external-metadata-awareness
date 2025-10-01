@@ -1,0 +1,54 @@
+{
+  "createdAt": "2020-11-26T19:05:27Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A fully reproducible and state-of-the-art ancient DNA analysis pipeline",
+  "name": "nf-core-eager",
+  "updatedAt": "2023-05-12T08:31:12Z",
+  "url": "https://github.com/jfy133/nf-core-eager",
+  "firstCommitDate": "2023-05-12T08:30:54Z",
+  "lastCommitDate": "2023-05-12T08:30:54Z",
+  "topContributors": [
+    {
+      "contributions": 1893,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 737,
+      "login": "apeltzer"
+    },
+    {
+      "contributions": 170,
+      "login": "TCLamnidis"
+    },
+    {
+      "contributions": 118,
+      "login": "maxibor"
+    },
+    {
+      "contributions": 39,
+      "login": "ZandraFagernas"
+    },
+    {
+      "contributions": 18,
+      "login": "IdoBar"
+    },
+    {
+      "contributions": 15,
+      "login": "aidaanva"
+    },
+    {
+      "contributions": 8,
+      "login": "alexandregilardet"
+    },
+    {
+      "contributions": 7,
+      "login": "nf-core-bot"
+    },
+    {
+      "contributions": 7,
+      "login": "maxulysse"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-04-01T20:48:04Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Automated linkml rendering of schema.org",
+  "name": "linkml-schemaorg",
+  "updatedAt": "2025-07-25T07:47:12Z",
+  "url": "https://github.com/linkml/linkml-schemaorg",
+  "firstCommitDate": "2024-07-24T19:46:46Z",
+  "lastCommitDate": "2024-07-24T19:46:46Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "createdAt": "2021-09-29T17:00:24Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Coordinating the mondo-ingest with external sources",
+  "name": "mondo-ingest",
+  "updatedAt": "2025-09-16T17:41:49Z",
+  "url": "https://github.com/monarch-initiative/mondo-ingest",
+  "firstCommitDate": "2025-09-16T17:41:37Z",
+  "lastCommitDate": "2025-09-16T17:41:37Z",
+  "topContributors": [
+    {
+      "contributions": 397,
+      "login": "joeflack4"
+    },
+    {
+      "contributions": 394,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 331,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 118,
+      "login": "twhetzel"
+    },
+    {
+      "contributions": 22,
+      "login": "nicolevasilevsky"
+    },
+    {
+      "contributions": 19,
+      "login": "sabrinatoro"
+    }
+  ]
+}

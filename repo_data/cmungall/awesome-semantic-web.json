@@ -1,0 +1,54 @@
+{
+  "createdAt": "2019-12-10T00:14:09Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A curated list of various semantic web and linked data resources.",
+  "name": "awesome-semantic-web",
+  "updatedAt": "2025-05-31T13:12:25Z",
+  "url": "https://github.com/cmungall/awesome-semantic-web",
+  "firstCommitDate": "2019-12-03T19:32:25Z",
+  "lastCommitDate": "2019-12-03T19:32:25Z",
+  "topContributors": [
+    {
+      "contributions": 393,
+      "login": "zacharywhitley"
+    },
+    {
+      "contributions": 101,
+      "login": "maximveksler"
+    },
+    {
+      "contributions": 5,
+      "login": "barthanssens"
+    },
+    {
+      "contributions": 3,
+      "login": "jimkont"
+    },
+    {
+      "contributions": 3,
+      "login": "iddan"
+    },
+    {
+      "contributions": 3,
+      "login": "ledsoft"
+    },
+    {
+      "contributions": 2,
+      "login": "blake-regalia"
+    },
+    {
+      "contributions": 2,
+      "login": "hlapp"
+    },
+    {
+      "contributions": 2,
+      "login": "peterjohnlawrence"
+    },
+    {
+      "contributions": 2,
+      "login": "white-gecko"
+    }
+  ]
+}

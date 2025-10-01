@@ -1,0 +1,42 @@
+{
+  "createdAt": "2018-10-02T17:19:58Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Integrated OBO ontology store",
+  "name": "ubergraph",
+  "updatedAt": "2025-08-31T16:55:17Z",
+  "url": "https://github.com/INCATools/ubergraph",
+  "firstCommitDate": "2025-07-09T22:23:07Z",
+  "lastCommitDate": "2025-07-09T22:23:07Z",
+  "topContributors": [
+    {
+      "contributions": 219,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 15,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 2,
+      "login": "anitacaron"
+    },
+    {
+      "contributions": 2,
+      "login": "ubyndr"
+    },
+    {
+      "contributions": 1,
+      "login": "colinkcurtis"
+    },
+    {
+      "contributions": 1,
+      "login": "gouttegd"
+    },
+    {
+      "contributions": 1,
+      "login": "matentzn"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-12-02T01:22:19Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Python library for OBOGraphs",
+  "name": "obographs-py-ARCHIVED",
+  "updatedAt": "2019-04-03T00:18:22Z",
+  "url": "https://github.com/cmungall/obographs-py-ARCHIVED",
+  "firstCommitDate": "2016-12-02T01:52:03Z",
+  "lastCommitDate": "2016-12-02T01:52:03Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

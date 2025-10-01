@@ -1,0 +1,30 @@
+{
+  "createdAt": "2014-09-30T15:25:02Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Open Biomedical Annotations - used to describe associations between biomedical entities",
+  "name": "OBAN",
+  "updatedAt": "2020-09-22T18:04:59Z",
+  "url": "https://github.com/EBISPOT/OBAN",
+  "firstCommitDate": "2016-03-09T09:36:48Z",
+  "lastCommitDate": "2016-03-09T09:36:48Z",
+  "topContributors": [
+    {
+      "contributions": 20,
+      "login": "siiraa"
+    },
+    {
+      "contributions": 4,
+      "login": "jamesmalone"
+    },
+    {
+      "contributions": 2,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 1,
+      "login": "mbrush"
+    }
+  ]
+}

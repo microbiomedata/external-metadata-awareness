@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-11-11T19:39:19Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Repository for the coordination of design patterns across ontologies",
+  "name": "design-pattern-coordination",
+  "updatedAt": "2020-11-12T11:59:46Z",
+  "url": "https://github.com/monarch-initiative/design-pattern-coordination",
+  "firstCommitDate": "2020-11-12T11:59:39Z",
+  "lastCommitDate": "2020-11-12T11:59:39Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "matentzn"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-05-19T22:07:15Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "LinkML schema representation of SESAR / geosamples.org",
+  "name": "linkml-sesar",
+  "updatedAt": "2021-05-20T02:40:40Z",
+  "url": "https://github.com/cmungall/linkml-sesar",
+  "firstCommitDate": "2021-05-19T22:07:17Z",
+  "lastCommitDate": "2021-05-19T22:07:17Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

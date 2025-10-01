@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-03-27T14:54:02Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Lib for importing classes into an ontology",
+  "name": "mireotimporter",
+  "updatedAt": "2015-06-03T16:09:30Z",
+  "url": "https://github.com/EBISPOT/mireotimporter",
+  "firstCommitDate": "2015-06-03T16:10:32Z",
+  "lastCommitDate": "2015-06-03T16:10:32Z",
+  "topContributors": [
+    {
+      "contributions": 26,
+      "login": "jamesmalone"
+    }
+  ]
+}

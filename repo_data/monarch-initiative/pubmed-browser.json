@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-03-14T16:39:06Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "pubmed-browser",
+  "updatedAt": "2018-03-14T16:39:08Z",
+  "url": "https://github.com/monarch-initiative/pubmed-browser",
+  "firstCommitDate": "2018-03-14T16:39:07Z",
+  "lastCommitDate": "2018-03-14T16:39:07Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "jmcmurry"
+    }
+  ]
+}

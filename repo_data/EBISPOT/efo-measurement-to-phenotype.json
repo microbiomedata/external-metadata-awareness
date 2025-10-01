@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-03-29T11:56:40Z",
+  "defaultBranchRef": {
+    "name": "dev"
+  },
+  "description": "",
+  "name": "efo-measurement-to-phenotype",
+  "updatedAt": "2025-04-06T05:22:33Z",
+  "url": "https://github.com/EBISPOT/efo-measurement-to-phenotype",
+  "firstCommitDate": "2025-04-06T05:22:22Z",
+  "lastCommitDate": "2025-04-06T05:22:22Z",
+  "topContributors": [
+    {
+      "contributions": 9,
+      "login": "jamesamcl"
+    }
+  ]
+}

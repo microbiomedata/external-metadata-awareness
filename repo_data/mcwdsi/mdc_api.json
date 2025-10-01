@@ -1,0 +1,13 @@
+{
+  "createdAt": "2017-06-27T14:43:36Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "This api connects to the mdc stardog db specified and retrieves the data for the mdc_search",
+  "name": "mdc_api",
+  "updatedAt": "2023-10-05T19:17:24Z",
+  "url": "https://github.com/mcwdsi/mdc_api",
+  "firstCommitDate": "2017-06-27T14:51:50Z",
+  "lastCommitDate": "2017-06-27T14:51:50Z",
+  "topContributors": []
+}

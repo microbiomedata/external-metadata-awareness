@@ -1,0 +1,22 @@
+{
+  "createdAt": "2020-08-06T18:05:41Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "CCDH Terminology and Mapping Service",
+  "name": "ccdh-terminology-service",
+  "updatedAt": "2022-10-07T10:28:33Z",
+  "url": "https://github.com/cancerDHC/ccdh-terminology-service",
+  "firstCommitDate": "2021-12-16T21:24:20Z",
+  "lastCommitDate": "2021-12-16T21:24:20Z",
+  "topContributors": [
+    {
+      "contributions": 85,
+      "login": "joeflack4"
+    },
+    {
+      "contributions": 2,
+      "login": "wdduncan"
+    }
+  ]
+}

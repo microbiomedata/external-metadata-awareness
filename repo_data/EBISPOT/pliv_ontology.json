@@ -1,0 +1,26 @@
+{
+  "createdAt": "2017-11-14T10:19:18Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "OBSOLETE. replaced by https://github.com/echinoderm-ontology/ecao_ontology",
+  "name": "pliv_ontology",
+  "updatedAt": "2023-01-28T14:40:42Z",
+  "url": "https://github.com/EBISPOT/pliv_ontology",
+  "firstCommitDate": "2020-05-07T06:50:06Z",
+  "lastCommitDate": "2020-05-07T06:50:06Z",
+  "topContributors": [
+    {
+      "contributions": 13,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 4,
+      "login": "Jenicroce"
+    },
+    {
+      "contributions": 1,
+      "login": "matentzn"
+    }
+  ]
+}

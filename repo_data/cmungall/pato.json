@@ -1,0 +1,34 @@
+{
+  "createdAt": "2014-12-01T21:42:35Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": " PATO - the Phenotype And Trait Ontology",
+  "name": "pato",
+  "updatedAt": "2014-12-12T01:24:07Z",
+  "url": "https://github.com/cmungall/pato",
+  "firstCommitDate": "2014-12-12T01:23:52Z",
+  "lastCommitDate": "2014-12-12T01:23:52Z",
+  "topContributors": [
+    {
+      "contributions": 18,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 11,
+      "login": "wdahdul"
+    },
+    {
+      "contributions": 3,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 1,
+      "login": "gkoutos"
+    },
+    {
+      "contributions": 1,
+      "login": "ramonawalls"
+    }
+  ]
+}

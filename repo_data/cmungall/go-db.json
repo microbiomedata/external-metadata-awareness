@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-04-09T02:42:27Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "TEST bulk loading of go into duckdb",
+  "name": "go-db",
+  "updatedAt": "2024-05-01T01:26:16Z",
+  "url": "https://github.com/cmungall/go-db",
+  "firstCommitDate": "2024-05-01T01:26:10Z",
+  "lastCommitDate": "2024-05-01T01:26:10Z",
+  "topContributors": [
+    {
+      "contributions": 9,
+      "login": "cmungall"
+    }
+  ]
+}

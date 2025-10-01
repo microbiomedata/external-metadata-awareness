@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-12-19T04:07:13Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "optimize a weboost home with angle and azimuth data on my cabin",
+  "name": "boostoptimization",
+  "updatedAt": "2020-12-22T11:29:01Z",
+  "url": "https://github.com/rsc3/boostoptimization",
+  "firstCommitDate": "2020-12-22T11:28:52Z",
+  "lastCommitDate": "2020-12-22T11:28:52Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "rsc3"
+    }
+  ]
+}

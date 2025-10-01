@@ -1,0 +1,26 @@
+{
+  "createdAt": "2022-09-07T23:03:28Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Documentation has been moved to docs in https://github.com/mermaid-js/mermaid",
+  "name": "mermaidjs.github.io",
+  "updatedAt": "2022-09-02T03:14:14Z",
+  "url": "https://github.com/cmungall/mermaidjs.github.io",
+  "firstCommitDate": "2020-09-06T08:13:41Z",
+  "lastCommitDate": "2020-09-06T08:13:41Z",
+  "topContributors": [
+    {
+      "contributions": 23,
+      "login": "tylerlong"
+    },
+    {
+      "contributions": 21,
+      "login": "knsv"
+    },
+    {
+      "contributions": 2,
+      "login": "GDFaber"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-01-29T16:55:54Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Monarch and Linda Crrnic Center project on phenotype identification",
+  "name": "emods",
+  "updatedAt": "2025-04-28T21:02:42Z",
+  "url": "https://github.com/monarch-initiative/emods",
+  "firstCommitDate": "2025-04-28T21:02:37Z",
+  "lastCommitDate": "2025-04-28T21:02:37Z",
+  "topContributors": [
+    {
+      "contributions": 14,
+      "login": "amc-corey-cox"
+    }
+  ]
+}

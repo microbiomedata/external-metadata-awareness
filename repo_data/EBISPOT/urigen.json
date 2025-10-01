@@ -1,0 +1,22 @@
+{
+  "createdAt": "2015-04-02T09:37:40Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Automatically exported from code.google.com/p/urigen",
+  "name": "urigen",
+  "updatedAt": "2019-02-11T18:07:50Z",
+  "url": "https://github.com/EBISPOT/urigen",
+  "firstCommitDate": "2019-02-11T18:07:13Z",
+  "lastCommitDate": "2019-02-11T18:07:13Z",
+  "topContributors": [
+    {
+      "contributions": 24,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 4,
+      "login": "matthewhorridge"
+    }
+  ]
+}

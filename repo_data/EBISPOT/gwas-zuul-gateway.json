@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-06-10T09:50:37Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Zuul Proxy for Legacy Apps",
+  "name": "gwas-zuul-gateway",
+  "updatedAt": "2021-06-10T09:58:04Z",
+  "url": "https://github.com/EBISPOT/gwas-zuul-gateway",
+  "firstCommitDate": "2021-06-10T09:50:38Z",
+  "lastCommitDate": "2021-06-10T09:50:38Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "sajo-ebi"
+    }
+  ]
+}

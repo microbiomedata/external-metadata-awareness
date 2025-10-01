@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-04-02T16:08:47Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "GWAS Catalog gene-based tools",
+  "name": "gwas-gene-based",
+  "updatedAt": "2025-04-03T15:58:56Z",
+  "url": "https://github.com/EBISPOT/gwas-gene-based",
+  "firstCommitDate": "2025-04-03T15:58:50Z",
+  "lastCommitDate": "2025-04-03T15:58:50Z",
+  "topContributors": [
+    {
+      "contributions": 10,
+      "login": "nebfield"
+    }
+  ]
+}

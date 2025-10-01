@@ -1,0 +1,50 @@
+{
+  "createdAt": "2020-11-13T19:10:16Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "kg-microbe",
+  "updatedAt": "2025-09-26T22:49:16Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/kg-microbe",
+  "firstCommitDate": "2025-09-26T22:49:09Z",
+  "lastCommitDate": "2025-09-26T22:49:09Z",
+  "topContributors": [
+    {
+      "contributions": 770,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 192,
+      "login": "realmarcin"
+    },
+    {
+      "contributions": 188,
+      "login": "bsantan"
+    },
+    {
+      "contributions": 49,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 39,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 11,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 11,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 3,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 1,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

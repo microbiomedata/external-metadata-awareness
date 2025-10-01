@@ -1,0 +1,26 @@
+{
+  "createdAt": "2016-08-31T16:54:54Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Customizable translation of OBO graphs to dot for visualization using graphviz and other tools",
+  "name": "obographviz",
+  "updatedAt": "2025-06-23T06:22:07Z",
+  "url": "https://github.com/INCATools/obographviz",
+  "firstCommitDate": "2023-09-13T16:19:11Z",
+  "lastCommitDate": "2023-09-13T16:19:11Z",
+  "topContributors": [
+    {
+      "contributions": 67,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 35,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 6,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "createdAt": "2021-09-27T19:32:06Z",
+  "defaultBranchRef": {
+    "name": "develop"
+  },
+  "description": "Python package for conversion of Google Sheet to LinkML for CCDH",
+  "name": "sheet2linkml",
+  "updatedAt": "2021-12-15T13:15:15Z",
+  "url": "https://github.com/cancerDHC/sheet2linkml",
+  "firstCommitDate": "2021-12-13T17:56:44Z",
+  "lastCommitDate": "2021-12-13T17:56:44Z",
+  "topContributors": [
+    {
+      "contributions": 47,
+      "login": "gaurav"
+    },
+    {
+      "contributions": 38,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 7,
+      "login": "turbomam"
+    }
+  ]
+}

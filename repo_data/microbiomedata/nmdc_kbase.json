@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-09-28T22:18:49Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Tools for NMDC Integration with KBase",
+  "name": "nmdc_kbase",
+  "updatedAt": "2021-10-12T20:12:46Z",
+  "url": "https://github.com/microbiomedata/nmdc_kbase",
+  "firstCommitDate": "2021-10-12T20:08:45Z",
+  "lastCommitDate": "2021-10-12T20:08:45Z",
+  "topContributors": [
+    {
+      "contributions": 10,
+      "login": "scanon"
+    }
+  ]
+}

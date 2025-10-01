@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-03-19T19:26:12Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "Deldupemia",
+  "updatedAt": "2024-12-20T16:49:51Z",
+  "url": "https://github.com/rsc3/Deldupemia",
+  "firstCommitDate": "2024-12-20T16:49:47Z",
+  "lastCommitDate": "2024-12-20T16:49:47Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "rsc3"
+    }
+  ]
+}

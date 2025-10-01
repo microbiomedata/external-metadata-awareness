@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-07-27T17:27:47Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Sandbox for testing the content of various minimal schemas vs DataHarmonizer",
+  "name": "dh_testing",
+  "updatedAt": "2024-08-13T00:34:43Z",
+  "url": "https://github.com/microbiomedata/dh_testing",
+  "firstCommitDate": "2022-08-04T17:19:00Z",
+  "lastCommitDate": "2022-08-04T17:19:00Z",
+  "topContributors": [
+    {
+      "contributions": 9,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 2,
+      "login": "pkalita-lbl"
+    }
+  ]
+}

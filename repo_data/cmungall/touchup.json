@@ -1,0 +1,26 @@
+{
+  "createdAt": "2016-07-22T23:19:17Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "for keeping the PAINT GAF files up to date",
+  "name": "touchup",
+  "updatedAt": "2016-07-22T23:19:19Z",
+  "url": "https://github.com/cmungall/touchup",
+  "firstCommitDate": "2016-07-22T23:18:48Z",
+  "lastCommitDate": "2016-07-22T23:18:48Z",
+  "topContributors": [
+    {
+      "contributions": 92,
+      "login": "selewis"
+    },
+    {
+      "contributions": 1,
+      "login": "nathandunn"
+    },
+    {
+      "contributions": 1,
+      "login": "hdietze"
+    }
+  ]
+}

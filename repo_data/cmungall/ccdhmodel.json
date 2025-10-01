@@ -1,0 +1,46 @@
+{
+  "createdAt": "2021-08-23T18:43:55Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "CRDC-H model in LinkML, developed by the Center for Cancer Data Harmonization (CCDH)",
+  "name": "ccdhmodel",
+  "updatedAt": "2021-08-23T18:43:56Z",
+  "url": "https://github.com/cmungall/ccdhmodel",
+  "firstCommitDate": "2021-08-23T16:28:43Z",
+  "lastCommitDate": "2021-08-23T16:28:43Z",
+  "topContributors": [
+    {
+      "contributions": 278,
+      "login": "gaurav"
+    },
+    {
+      "contributions": 8,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 7,
+      "login": "joeflack4"
+    },
+    {
+      "contributions": 5,
+      "login": "mbrush"
+    },
+    {
+      "contributions": 4,
+      "login": "monicacecilia"
+    },
+    {
+      "contributions": 4,
+      "login": "hsolbrig"
+    },
+    {
+      "contributions": 3,
+      "login": "bfurner"
+    },
+    {
+      "contributions": 2,
+      "login": "turbomam"
+    }
+  ]
+}

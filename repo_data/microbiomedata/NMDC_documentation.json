@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-12-14T21:18:19Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Document workflows, schemas, and portal",
+  "name": "NMDC_documentation",
+  "updatedAt": "2025-05-08T00:40:06Z",
+  "url": "https://github.com/microbiomedata/NMDC_documentation",
+  "firstCommitDate": "2025-05-08T00:40:02Z",
+  "lastCommitDate": "2025-05-08T00:40:02Z",
+  "topContributors": [
+    {
+      "contributions": 44,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 44,
+      "login": "aclum"
+    },
+    {
+      "contributions": 25,
+      "login": "shreddd"
+    },
+    {
+      "contributions": 12,
+      "login": "yxu-lanl"
+    },
+    {
+      "contributions": 12,
+      "login": "mslarae13"
+    },
+    {
+      "contributions": 9,
+      "login": "kwdavenport"
+    },
+    {
+      "contributions": 6,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 4,
+      "login": "dwinston"
+    },
+    {
+      "contributions": 3,
+      "login": "jkelliher-github"
+    },
+    {
+      "contributions": 1,
+      "login": "hubin-keio"
+    }
+  ]
+}

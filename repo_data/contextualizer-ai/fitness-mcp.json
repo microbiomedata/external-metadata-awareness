@@ -1,0 +1,26 @@
+{
+  "createdAt": "2025-09-17T18:59:02Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Example mcp to query a file for growth conditions about a gene/locus  ID",
+  "name": "fitness-mcp",
+  "updatedAt": "2025-09-18T18:04:16Z",
+  "url": "https://github.com/contextualizer-ai/fitness-mcp",
+  "firstCommitDate": "2025-09-18T18:04:06Z",
+  "lastCommitDate": "2025-09-18T18:04:06Z",
+  "topContributors": [
+    {
+      "contributions": 49,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 10,
+      "login": "realmarcin"
+    },
+    {
+      "contributions": 3,
+      "login": "justaddcoffee"
+    }
+  ]
+}
