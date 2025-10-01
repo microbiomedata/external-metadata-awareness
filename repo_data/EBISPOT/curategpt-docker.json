@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-10-24T10:35:41Z",
+  "defaultBranchRef": {
+    "name": "dev"
+  },
+  "description": "Run CurateGPT using Docker",
+  "name": "curategpt-docker",
+  "updatedAt": "2024-10-24T14:31:36Z",
+  "url": "https://github.com/EBISPOT/curategpt-docker",
+  "firstCommitDate": "2024-10-24T14:30:48Z",
+  "lastCommitDate": "2024-10-24T14:30:48Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "jamesamcl"
+    }
+  ]
+}

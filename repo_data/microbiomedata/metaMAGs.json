@@ -1,0 +1,46 @@
+{
+  "createdAt": "2020-05-21T22:28:44Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Workflow for metagenome assembled genomes generation. ",
+  "name": "metaMAGs",
+  "updatedAt": "2025-06-18T21:59:14Z",
+  "url": "https://github.com/microbiomedata/metaMAGs",
+  "firstCommitDate": "2025-05-02T16:44:08Z",
+  "lastCommitDate": "2025-05-02T16:44:08Z",
+  "topContributors": [
+    {
+      "contributions": 74,
+      "login": "chienchi"
+    },
+    {
+      "contributions": 26,
+      "login": "scanon"
+    },
+    {
+      "contributions": 15,
+      "login": "aclum"
+    },
+    {
+      "contributions": 8,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 6,
+      "login": "vlilanl"
+    },
+    {
+      "contributions": 5,
+      "login": "mbthornton-lbl"
+    },
+    {
+      "contributions": 4,
+      "login": "kaijli"
+    },
+    {
+      "contributions": 1,
+      "login": "hubin-keio"
+    }
+  ]
+}

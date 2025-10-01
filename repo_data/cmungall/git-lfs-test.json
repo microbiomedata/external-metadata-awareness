@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-07-02T16:22:17Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "for testing LFS",
+  "name": "git-lfs-test",
+  "updatedAt": "2015-07-02T16:22:17Z",
+  "url": "https://github.com/cmungall/git-lfs-test",
+  "firstCommitDate": "2015-07-02T16:23:50Z",
+  "lastCommitDate": "2015-07-02T16:23:50Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

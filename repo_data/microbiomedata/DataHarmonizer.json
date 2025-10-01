@@ -1,0 +1,50 @@
+{
+  "createdAt": "2021-12-16T21:59:45Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Our dev interface is available via github pages:",
+  "name": "DataHarmonizer",
+  "updatedAt": "2024-07-12T21:57:58Z",
+  "url": "https://github.com/microbiomedata/DataHarmonizer",
+  "firstCommitDate": "2024-07-12T21:50:56Z",
+  "lastCommitDate": "2024-07-12T21:50:56Z",
+  "topContributors": [
+    {
+      "contributions": 180,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 44,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 38,
+      "login": "ddooley"
+    },
+    {
+      "contributions": 24,
+      "login": "cmrn-rhi"
+    },
+    {
+      "contributions": 3,
+      "login": "subdavis"
+    },
+    {
+      "contributions": 2,
+      "login": "ivansg44"
+    },
+    {
+      "contributions": 1,
+      "login": "mgopez"
+    },
+    {
+      "contributions": 1,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 1,
+      "login": "griffie"
+    }
+  ]
+}

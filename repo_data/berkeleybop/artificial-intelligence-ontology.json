@@ -1,0 +1,30 @@
+{
+  "createdAt": "2021-07-07T20:01:54Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "An ontology modeling classes and relationships describing deep learning networks, their component layers and activation functions, machine learning methods, as well as AI/ML potential biases.",
+  "name": "artificial-intelligence-ontology",
+  "updatedAt": "2025-08-17T13:02:10Z",
+  "url": "https://github.com/berkeleybop/artificial-intelligence-ontology",
+  "firstCommitDate": "2024-11-12T02:36:17Z",
+  "lastCommitDate": "2024-11-12T02:36:17Z",
+  "topContributors": [
+    {
+      "contributions": 101,
+      "login": "realmarcin"
+    },
+    {
+      "contributions": 81,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 63,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 6,
+      "login": "cmungall"
+    }
+  ]
+}

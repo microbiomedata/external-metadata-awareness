@@ -1,0 +1,46 @@
+{
+  "createdAt": "2017-11-30T00:37:47Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Blazegraph High Performance Graph Database",
+  "name": "database",
+  "updatedAt": "2017-11-30T00:38:07Z",
+  "url": "https://github.com/cmungall/database",
+  "firstCommitDate": "2016-08-31T14:27:32Z",
+  "lastCommitDate": "2016-08-31T14:27:32Z",
+  "topContributors": [
+    {
+      "contributions": 13205,
+      "login": "thompsonbry"
+    },
+    {
+      "contributions": 2289,
+      "login": "beebs-systap"
+    },
+    {
+      "contributions": 170,
+      "login": "igor-kim"
+    },
+    {
+      "contributions": 48,
+      "login": "binrush"
+    },
+    {
+      "contributions": 33,
+      "login": "mikepersonick"
+    },
+    {
+      "contributions": 5,
+      "login": "hartig"
+    },
+    {
+      "contributions": 2,
+      "login": "phaasenase"
+    },
+    {
+      "contributions": 1,
+      "login": "smalyshev"
+    }
+  ]
+}

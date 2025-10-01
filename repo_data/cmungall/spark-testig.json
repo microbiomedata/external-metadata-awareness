@@ -1,0 +1,12 @@
+{
+  "createdAt": "2016-12-05T02:53:51Z",
+  "defaultBranchRef": {
+    "name": ""
+  },
+  "description": "",
+  "name": "spark-testig",
+  "updatedAt": "2016-12-05T02:53:51Z",
+  "url": "https://github.com/cmungall/spark-testig",
+  "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+  "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+}

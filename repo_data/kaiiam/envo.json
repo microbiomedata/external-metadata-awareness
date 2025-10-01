@@ -1,0 +1,38 @@
+{
+  "createdAt": "2017-03-15T10:41:21Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A community-driven ontology for the representation of environments",
+  "name": "envo",
+  "updatedAt": "2017-10-23T18:09:14Z",
+  "url": "https://github.com/kaiiam/envo",
+  "firstCommitDate": "2017-10-09T16:44:35Z",
+  "lastCommitDate": "2017-10-09T16:44:35Z",
+  "topContributors": [
+    {
+      "contributions": 520,
+      "login": "pbuttigieg"
+    },
+    {
+      "contributions": 330,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 3,
+      "login": "marieALaporte"
+    },
+    {
+      "contributions": 2,
+      "login": "renzok"
+    },
+    {
+      "contributions": 1,
+      "login": "suzuki-shm"
+    },
+    {
+      "contributions": 1,
+      "login": "kaiiam"
+    }
+  ]
+}

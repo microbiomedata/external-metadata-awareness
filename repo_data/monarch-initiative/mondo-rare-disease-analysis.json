@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-10-08T02:02:12Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "mondo-rare-disease-analysis",
+  "updatedAt": "2023-07-31T20:39:15Z",
+  "url": "https://github.com/monarch-initiative/mondo-rare-disease-analysis",
+  "firstCommitDate": "2019-10-09T03:14:16Z",
+  "lastCommitDate": "2019-10-09T03:14:16Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "deepakunni3"
+    }
+  ]
+}

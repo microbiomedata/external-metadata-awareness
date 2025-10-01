@@ -1,0 +1,42 @@
+{
+  "createdAt": "2019-05-30T22:38:01Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Application to provide template related services for the deposition interface",
+  "name": "gwas-template-services",
+  "updatedAt": "2025-05-27T10:02:07Z",
+  "url": "https://github.com/EBISPOT/gwas-template-services",
+  "firstCommitDate": "2025-05-23T14:23:50Z",
+  "lastCommitDate": "2025-05-23T14:23:50Z",
+  "topContributors": [
+    {
+      "contributions": 55,
+      "login": "jdhayhurst"
+    },
+    {
+      "contributions": 42,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 15,
+      "login": "karatugo"
+    },
+    {
+      "contributions": 8,
+      "login": "ala-ebi"
+    },
+    {
+      "contributions": 8,
+      "login": "sajo-ebi"
+    },
+    {
+      "contributions": 1,
+      "login": "codacy-badger"
+    },
+    {
+      "contributions": 1,
+      "login": "tudorgroza"
+    }
+  ]
+}

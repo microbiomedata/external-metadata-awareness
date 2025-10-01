@@ -1,0 +1,13 @@
+{
+  "createdAt": "2025-02-07T15:58:34Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "monarchkg-model-organism-gene-transform",
+  "updatedAt": "2025-02-14T17:58:58Z",
+  "url": "https://github.com/monarch-initiative/monarchkg-model-organism-gene-transform",
+  "firstCommitDate": "2025-02-14T17:58:48Z",
+  "lastCommitDate": "2025-02-14T17:58:48Z",
+  "topContributors": []
+}

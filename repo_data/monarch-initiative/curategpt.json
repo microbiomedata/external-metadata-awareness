@@ -1,0 +1,46 @@
+{
+  "createdAt": "2023-05-27T00:56:51Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "LLM-driven curation assist tool",
+  "name": "curategpt",
+  "updatedAt": "2025-09-23T07:40:53Z",
+  "url": "https://github.com/monarch-initiative/curategpt",
+  "firstCommitDate": "2025-06-25T20:32:44Z",
+  "lastCommitDate": "2025-06-25T20:32:44Z",
+  "topContributors": [
+    {
+      "contributions": 158,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 104,
+      "login": "iQuxLE"
+    },
+    {
+      "contributions": 70,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 13,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 4,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 2,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 2,
+      "login": "realmarcin"
+    },
+    {
+      "contributions": 1,
+      "login": "oneilsh"
+    }
+  ]
+}

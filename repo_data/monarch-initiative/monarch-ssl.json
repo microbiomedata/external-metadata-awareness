@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-08-10T22:18:44Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "monarch-ssl",
+  "updatedAt": "2024-07-16T18:52:26Z",
+  "url": "https://github.com/monarch-initiative/monarch-ssl",
+  "firstCommitDate": "2024-07-16T18:52:23Z",
+  "lastCommitDate": "2024-07-16T18:52:23Z",
+  "topContributors": [
+    {
+      "contributions": 15,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 2,
+      "login": "falquaddoomi"
+    }
+  ]
+}

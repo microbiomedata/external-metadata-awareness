@@ -1,0 +1,42 @@
+{
+  "createdAt": "2025-02-14T01:33:36Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A motley crew of agents developed by the Monarch Initiative",
+  "name": "aurelian",
+  "updatedAt": "2025-09-29T11:28:44Z",
+  "url": "https://github.com/monarch-initiative/aurelian",
+  "firstCommitDate": "2025-07-18T17:56:46Z",
+  "lastCommitDate": "2025-07-18T17:56:46Z",
+  "topContributors": [
+    {
+      "contributions": 109,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 49,
+      "login": "iQuxLE"
+    },
+    {
+      "contributions": 36,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 32,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 18,
+      "login": "realmarcin"
+    },
+    {
+      "contributions": 2,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 2,
+      "login": "linkmluser"
+    }
+  ]
+}

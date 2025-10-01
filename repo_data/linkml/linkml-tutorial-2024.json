@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-06-24T23:13:56Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "linkml-tutorial-2024",
+  "updatedAt": "2024-07-09T17:01:35Z",
+  "url": "https://github.com/linkml/linkml-tutorial-2024",
+  "firstCommitDate": "2024-07-09T17:01:22Z",
+  "lastCommitDate": "2024-07-09T17:01:22Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 7,
+      "login": "pkalita-lbl"
+    }
+  ]
+}

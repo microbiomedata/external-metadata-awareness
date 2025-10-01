@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-02-24T14:16:19Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Example of Webpack, AngularJS, Falcor and SciGraph in a single page web application",
+  "name": "monarch-ng",
+  "updatedAt": "2016-02-24T14:49:01Z",
+  "url": "https://github.com/monarch-initiative/monarch-ng",
+  "firstCommitDate": "2016-05-31T09:59:54Z",
+  "lastCommitDate": "2016-05-31T09:59:54Z",
+  "topContributors": [
+    {
+      "contributions": 13,
+      "login": "DoctorBud"
+    },
+    {
+      "contributions": 8,
+      "login": "EstiiCoder"
+    }
+  ]
+}

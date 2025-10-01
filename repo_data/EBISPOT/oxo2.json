@@ -1,0 +1,30 @@
+{
+  "createdAt": "2024-11-01T10:41:19Z",
+  "defaultBranchRef": {
+    "name": "dev"
+  },
+  "description": "A SSSOM compliant implementation of OxO that is backwards compatible with OxO version 1",
+  "name": "oxo2",
+  "updatedAt": "2025-09-26T10:35:08Z",
+  "url": "https://github.com/EBISPOT/oxo2",
+  "firstCommitDate": "2025-09-26T10:35:00Z",
+  "lastCommitDate": "2025-09-26T10:35:00Z",
+  "topContributors": [
+    {
+      "contributions": 87,
+      "login": "henrietteharmse"
+    },
+    {
+      "contributions": 21,
+      "login": "serjoshua"
+    },
+    {
+      "contributions": 2,
+      "login": "jamesamcl"
+    },
+    {
+      "contributions": 1,
+      "login": "matentzn"
+    }
+  ]
+}

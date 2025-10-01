@@ -1,0 +1,42 @@
+{
+  "createdAt": "2019-01-26T01:07:26Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "DEPRECATED: replaced by linkml",
+  "name": "biolinkml",
+  "updatedAt": "2023-01-28T06:12:02Z",
+  "url": "https://github.com/biolink/biolinkml",
+  "firstCommitDate": "2021-04-04T20:05:59Z",
+  "lastCommitDate": "2021-04-04T20:05:59Z",
+  "topContributors": [
+    {
+      "contributions": 479,
+      "login": "hsolbrig"
+    },
+    {
+      "contributions": 113,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 98,
+      "login": "actions-user"
+    },
+    {
+      "contributions": 12,
+      "login": "RichardBruskiewich"
+    },
+    {
+      "contributions": 6,
+      "login": "rajshruti"
+    },
+    {
+      "contributions": 5,
+      "login": "deepakunni3"
+    },
+    {
+      "contributions": 2,
+      "login": "rajshruti18"
+    }
+  ]
+}

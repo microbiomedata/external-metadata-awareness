@@ -1,0 +1,26 @@
+{
+  "createdAt": "2016-05-15T20:07:46Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Extracts information from life-science websites and texts, generating phenopackets with the extracted information and correct external ontology references.",
+  "name": "phenopacket-scraper-core",
+  "updatedAt": "2016-05-26T19:24:19Z",
+  "url": "https://github.com/monarch-initiative/phenopacket-scraper-core",
+  "firstCommitDate": "2016-08-22T12:03:06Z",
+  "lastCommitDate": "2016-08-22T12:03:06Z",
+  "topContributors": [
+    {
+      "contributions": 30,
+      "login": "satwik77"
+    },
+    {
+      "contributions": 8,
+      "login": "DoctorBud"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

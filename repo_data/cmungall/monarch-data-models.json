@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-10-27T20:54:01Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "monarch-data-models",
+  "updatedAt": "2015-10-27T20:54:01Z",
+  "url": "https://github.com/cmungall/monarch-data-models",
+  "firstCommitDate": "2015-10-27T21:05:00Z",
+  "lastCommitDate": "2015-10-27T21:05:00Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

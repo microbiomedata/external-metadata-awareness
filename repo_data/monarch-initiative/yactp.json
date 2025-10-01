@@ -1,0 +1,26 @@
+{
+  "createdAt": "2020-09-01T15:15:47Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Yet Another Clinical Trials Parser",
+  "name": "yactp",
+  "updatedAt": "2025-05-06T20:48:43Z",
+  "url": "https://github.com/monarch-initiative/yactp",
+  "firstCommitDate": "2021-09-24T00:13:52Z",
+  "lastCommitDate": "2021-09-24T00:13:52Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 8,
+      "login": "vidarmehr"
+    },
+    {
+      "contributions": 2,
+      "login": "bcoleman96"
+    }
+  ]
+}

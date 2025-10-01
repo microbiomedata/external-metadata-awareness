@@ -1,0 +1,22 @@
+{
+  "createdAt": "2017-09-02T00:34:32Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Alignment between ESIP SWEET and Open Bio Ontologies",
+  "name": "sweet-obo-alignment",
+  "updatedAt": "2022-06-15T14:34:54Z",
+  "url": "https://github.com/cmungall/sweet-obo-alignment",
+  "firstCommitDate": "2019-07-22T06:20:27Z",
+  "lastCommitDate": "2019-07-22T06:20:27Z",
+  "topContributors": [
+    {
+      "contributions": 15,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "lewismc"
+    }
+  ]
+}

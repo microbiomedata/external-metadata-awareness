@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-04-02T05:27:07Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Special OLS instances loaded with SNOMED for testing purposes",
+  "name": "ols_snomed",
+  "updatedAt": "2020-08-29T14:20:03Z",
+  "url": "https://github.com/EBISPOT/ols_snomed",
+  "firstCommitDate": "2020-07-27T10:59:56Z",
+  "lastCommitDate": "2020-07-27T10:59:56Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "matentzn"
+    }
+  ]
+}

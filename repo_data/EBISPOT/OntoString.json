@@ -1,0 +1,30 @@
+{
+  "createdAt": "2021-01-27T10:23:08Z",
+  "defaultBranchRef": {
+    "name": "dev"
+  },
+  "description": "Tool for curating mappings from free text to ontology terms",
+  "name": "OntoString",
+  "updatedAt": "2023-04-25T14:34:43Z",
+  "url": "https://github.com/EBISPOT/OntoString",
+  "firstCommitDate": "2023-05-30T16:23:12Z",
+  "lastCommitDate": "2023-05-30T16:23:12Z",
+  "topContributors": [
+    {
+      "contributions": 60,
+      "login": "jamesamcl"
+    },
+    {
+      "contributions": 55,
+      "login": "tudorgroza"
+    },
+    {
+      "contributions": 14,
+      "login": "serjoshua"
+    },
+    {
+      "contributions": 8,
+      "login": "henrietteharmse"
+    }
+  ]
+}

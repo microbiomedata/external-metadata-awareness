@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-09-25T16:26:12Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Experiments with interfaces over Monarch data using Shiny (R)",
+  "name": "monarch-shiny",
+  "updatedAt": "2023-10-04T21:01:03Z",
+  "url": "https://github.com/monarch-initiative/monarch-shiny",
+  "firstCommitDate": "2015-09-26T00:24:46Z",
+  "lastCommitDate": "2015-09-26T00:24:46Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "nlwashington"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "createdAt": "2017-09-13T13:31:30Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A repository containing scripts/ideas/documents for semi-automated cleanup of the EBI Biosamples data.",
+  "name": "biosamples-data-curation",
+  "updatedAt": "2017-09-13T15:26:40Z",
+  "url": "https://github.com/EBISPOT/biosamples-data-curation",
+  "firstCommitDate": "2017-11-09T09:39:33Z",
+  "lastCommitDate": "2017-11-09T09:39:33Z",
+  "topContributors": [
+    {
+      "contributions": 38,
+      "login": "twhetzel"
+    },
+    {
+      "contributions": 10,
+      "login": "hewgreen"
+    },
+    {
+      "contributions": 1,
+      "login": "mcourtot"
+    }
+  ]
+}

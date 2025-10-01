@@ -1,0 +1,30 @@
+{
+  "createdAt": "2019-02-25T23:15:46Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "OBO Metadata Editor",
+  "name": "OBO-Metadata-Editor",
+  "updatedAt": "2023-05-03T14:03:34Z",
+  "url": "https://github.com/OBOFoundry/OBO-Metadata-Editor",
+  "firstCommitDate": "2023-05-23T12:48:54Z",
+  "lastCommitDate": "2023-05-23T12:48:54Z",
+  "topContributors": [
+    {
+      "contributions": 26,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 5,
+      "login": "lmcmicu"
+    },
+    {
+      "contributions": 4,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 3,
+      "login": "jannahastings"
+    }
+  ]
+}

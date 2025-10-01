@@ -1,0 +1,26 @@
+{
+  "createdAt": "2024-10-22T13:01:50Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "gwas-sumstats-harmoniser-documentation",
+  "name": "gwas-sumstats-harmoniser-documentation",
+  "updatedAt": "2025-02-26T12:17:19Z",
+  "url": "https://github.com/EBISPOT/gwas-sumstats-harmoniser-documentation",
+  "firstCommitDate": "2025-02-19T17:20:43Z",
+  "lastCommitDate": "2025-02-19T17:20:43Z",
+  "topContributors": [
+    {
+      "contributions": 58,
+      "login": "jiyue1214"
+    },
+    {
+      "contributions": 16,
+      "login": "earlEBI"
+    },
+    {
+      "contributions": 4,
+      "login": "karatugo"
+    }
+  ]
+}

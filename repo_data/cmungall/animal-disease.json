@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-02-05T15:59:08Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "animal-disease",
+  "updatedAt": "2023-03-12T10:29:16Z",
+  "url": "https://github.com/cmungall/animal-disease",
+  "firstCommitDate": "2016-08-03T19:08:22Z",
+  "lastCommitDate": "2016-08-03T19:08:22Z",
+  "topContributors": [
+    {
+      "contributions": 12,
+      "login": "cmungall"
+    }
+  ]
+}

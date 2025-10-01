@@ -1,0 +1,54 @@
+{
+  "createdAt": "2017-05-26T14:41:33Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Source ontology files for the Gene Ontology",
+  "name": "go-ontology",
+  "updatedAt": "2017-05-26T14:41:36Z",
+  "url": "https://github.com/cmungall/go-ontology",
+  "firstCommitDate": "2017-05-26T14:28:38Z",
+  "lastCommitDate": "2017-05-26T14:28:38Z",
+  "topContributors": [
+    {
+      "contributions": 232,
+      "login": "pgaudet"
+    },
+    {
+      "contributions": 140,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 110,
+      "login": "hdrabkin"
+    },
+    {
+      "contributions": 98,
+      "login": "ukemi"
+    },
+    {
+      "contributions": 65,
+      "login": "krchristie"
+    },
+    {
+      "contributions": 42,
+      "login": "monicacecilia"
+    },
+    {
+      "contributions": 34,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 33,
+      "login": "vanaukenk"
+    },
+    {
+      "contributions": 10,
+      "login": "mcourtot"
+    },
+    {
+      "contributions": 6,
+      "login": "paolaroncaglia"
+    }
+  ]
+}

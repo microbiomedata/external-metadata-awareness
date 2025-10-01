@@ -1,0 +1,54 @@
+{
+  "createdAt": "2020-03-19T15:20:10Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "An instance of KG Hub to produce a knowledge graph for COVID-19 response.",
+  "name": "kg-covid-19",
+  "updatedAt": "2025-06-21T08:57:58Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/kg-covid-19",
+  "firstCommitDate": "2023-08-03T13:56:33Z",
+  "lastCommitDate": "2023-08-03T13:56:33Z",
+  "topContributors": [
+    {
+      "contributions": 1036,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 165,
+      "login": "deepakunni3"
+    },
+    {
+      "contributions": 105,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 47,
+      "login": "LucaCappelletti94"
+    },
+    {
+      "contributions": 32,
+      "login": "realmarcin"
+    },
+    {
+      "contributions": 18,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 11,
+      "login": "callahantiff"
+    },
+    {
+      "contributions": 5,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 4,
+      "login": "nlharris"
+    },
+    {
+      "contributions": 3,
+      "login": "matentzn"
+    }
+  ]
+}

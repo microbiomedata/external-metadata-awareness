@@ -1,0 +1,26 @@
+{
+  "createdAt": "2019-07-03T14:00:01Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "gwas-deposition-app",
+  "updatedAt": "2019-12-04T16:47:23Z",
+  "url": "https://github.com/EBISPOT/gwas-deposition-app",
+  "firstCommitDate": "2019-12-04T16:47:20Z",
+  "lastCommitDate": "2019-12-04T16:47:20Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "twhetzel"
+    },
+    {
+      "contributions": 2,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 1,
+      "login": "tudorgroza"
+    }
+  ]
+}

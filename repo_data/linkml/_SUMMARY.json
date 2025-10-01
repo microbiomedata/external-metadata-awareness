@@ -1,0 +1,1405 @@
+[
+  {
+    "createdAt": "2021-05-05T20:14:45Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "DEPRECATED! Please use linkml-project-cookiecutter instead. ",
+    "name": "archived-linkml-model-template",
+    "updatedAt": "2023-05-15T11:05:51Z",
+    "url": "https://github.com/linkml/archived-linkml-model-template",
+    "firstCommitDate": "2023-05-12T21:15:08Z",
+    "lastCommitDate": "2023-05-12T21:15:08Z",
+    "topContributors": [
+      {
+        "contributions": 15,
+        "login": "hsolbrig"
+      },
+      {
+        "contributions": 7,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 3,
+        "login": "cthoyt"
+      },
+      {
+        "contributions": 2,
+        "login": "joeflack4"
+      },
+      {
+        "contributions": 1,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 1,
+        "login": "sierra-moxon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-05-07T14:48:08Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Configuration utility for generating linkml models in the linkml-model-template",
+    "name": "archived-template-configurator",
+    "updatedAt": "2023-01-28T00:49:45Z",
+    "url": "https://github.com/linkml/archived-template-configurator",
+    "firstCommitDate": "2021-12-18T00:38:29Z",
+    "lastCommitDate": "2021-12-18T00:38:29Z",
+    "topContributors": [
+      {
+        "contributions": 27,
+        "login": "hsolbrig"
+      },
+      {
+        "contributions": 4,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "actions-user"
+      },
+      {
+        "contributions": 1,
+        "login": "joeflack4"
+      },
+      {
+        "contributions": 1,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 1,
+        "login": "sujaypatil96"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-03-06T21:14:18Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "cmdr",
+    "updatedAt": "2025-08-09T00:08:37Z",
+    "url": "https://github.com/linkml/cmdr",
+    "firstCommitDate": "2025-08-09T00:08:33Z",
+    "lastCommitDate": "2025-08-09T00:08:33Z",
+    "topContributors": [
+      {
+        "contributions": 28,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 21,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 8,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 6,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 5,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 4,
+        "login": "putmantime"
+      },
+      {
+        "contributions": 1,
+        "login": "amc-corey-cox"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-01-08T22:45:57Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Data Model Based Ingestion Pipeline",
+    "name": "dm-bip",
+    "updatedAt": "2025-09-29T19:12:46Z",
+    "url": "https://github.com/linkml/dm-bip",
+    "firstCommitDate": "2025-09-29T19:12:41Z",
+    "lastCommitDate": "2025-09-29T19:12:41Z",
+    "topContributors": [
+      {
+        "contributions": 284,
+        "login": "amc-corey-cox"
+      },
+      {
+        "contributions": 100,
+        "login": "twhetzel"
+      },
+      {
+        "contributions": 27,
+        "login": "ptgolden"
+      },
+      {
+        "contributions": 3,
+        "login": "tursynay"
+      },
+      {
+        "contributions": 2,
+        "login": "madanucd"
+      },
+      {
+        "contributions": 1,
+        "login": "rjruizes"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-11-23T20:24:24Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Data type and interchange format library",
+    "name": "interchange",
+    "updatedAt": "2023-10-20T10:05:25Z",
+    "url": "https://github.com/linkml/interchange",
+    "firstCommitDate": "2021-10-14T07:19:42Z",
+    "lastCommitDate": "2021-10-14T07:19:42Z",
+    "topContributors": [
+      {
+        "contributions": 23,
+        "login": "technige"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-03-29T19:46:56Z",
+    "defaultBranchRef": {
+      "name": "init-myst"
+    },
+    "description": "Perspective Paper on LinkML Arrays",
+    "name": "linkml-arrays-paper",
+    "updatedAt": "2024-10-29T20:03:10Z",
+    "url": "https://github.com/linkml/linkml-arrays-paper",
+    "firstCommitDate": "2024-04-20T05:05:06Z",
+    "lastCommitDate": "2024-04-20T05:05:06Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "sneakers-the-rat"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-05-06T01:11:49Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Support for loading and dumping N-dimensional arrays in LinkML.",
+    "name": "linkml-arrays",
+    "updatedAt": "2025-07-28T17:03:06Z",
+    "url": "https://github.com/linkml/linkml-arrays",
+    "firstCommitDate": "2025-01-18T19:57:57Z",
+    "lastCommitDate": "2025-01-18T19:57:57Z",
+    "topContributors": [
+      {
+        "contributions": 16,
+        "login": "rly"
+      },
+      {
+        "contributions": 4,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-08-20T14:55:36Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "linkml-browser",
+    "updatedAt": "2025-08-29T12:45:03Z",
+    "url": "https://github.com/linkml/linkml-browser",
+    "firstCommitDate": "2025-08-20T21:32:13Z",
+    "lastCommitDate": "2025-08-20T21:32:13Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2024-02-02T02:02:35Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "ALPHA common modeling patterns",
+    "name": "linkml-common",
+    "updatedAt": "2025-07-12T06:02:40Z",
+    "url": "https://github.com/linkml/linkml-common",
+    "firstCommitDate": "2024-09-16T20:08:01Z",
+    "lastCommitDate": "2024-09-16T20:08:01Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "sierra-moxon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-07-29T23:43:45Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "LinkML to CSV conversion",
+    "name": "linkml-csv",
+    "updatedAt": "2023-01-28T06:51:18Z",
+    "url": "https://github.com/linkml/linkml-csv",
+    "firstCommitDate": "2021-08-31T19:56:32Z",
+    "lastCommitDate": "2021-08-31T19:56:32Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 2,
+        "login": "actions-user"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-12-10T20:59:18Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Translates LinkML schemas into Datalog programs and executes them using Souffle, enabling advanced validation and inference over instance data. ALPHA.",
+    "name": "linkml-datalog",
+    "updatedAt": "2025-09-14T10:42:26Z",
+    "url": "https://github.com/linkml/linkml-datalog",
+    "firstCommitDate": "2022-01-29T03:25:11Z",
+    "lastCommitDate": "2022-01-29T03:25:11Z",
+    "topContributors": [
+      {
+        "contributions": 14,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-09-20T21:56:12Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Data API for LinkML instance data",
+    "name": "linkml-dataops",
+    "updatedAt": "2025-03-27T17:28:49Z",
+    "url": "https://github.com/linkml/linkml-dataops",
+    "firstCommitDate": "2024-02-27T01:43:26Z",
+    "lastCommitDate": "2024-02-27T01:43:26Z",
+    "topContributors": [
+      {
+        "contributions": 25,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 5,
+        "login": "actions-user"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-08-19T15:35:30Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Mapping between LinkML schemas",
+    "name": "linkml-map",
+    "updatedAt": "2025-09-29T13:43:51Z",
+    "url": "https://github.com/linkml/linkml-map",
+    "firstCommitDate": "2025-09-29T13:43:46Z",
+    "lastCommitDate": "2025-09-29T13:43:46Z",
+    "topContributors": [
+      {
+        "contributions": 104,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 38,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 36,
+        "login": "ialarmedalien"
+      },
+      {
+        "contributions": 35,
+        "login": "amc-corey-cox"
+      },
+      {
+        "contributions": 14,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 8,
+        "login": "Silvanoc"
+      },
+      {
+        "contributions": 8,
+        "login": "martinwellman"
+      },
+      {
+        "contributions": 6,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 5,
+        "login": "yarikoptic"
+      },
+      {
+        "contributions": 2,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-03-14T18:37:27Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Link Modeling Language (LinkML) model",
+    "name": "linkml-model",
+    "updatedAt": "2025-08-07T07:28:58Z",
+    "url": "https://github.com/linkml/linkml-model",
+    "firstCommitDate": "2025-05-30T17:47:12Z",
+    "lastCommitDate": "2025-05-30T17:47:12Z",
+    "topContributors": [
+      {
+        "contributions": 311,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 115,
+        "login": "hsolbrig"
+      },
+      {
+        "contributions": 89,
+        "login": "actions-user"
+      },
+      {
+        "contributions": 38,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 18,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 14,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 10,
+        "login": "yarikoptic"
+      },
+      {
+        "contributions": 10,
+        "login": "sneakers-the-rat"
+      },
+      {
+        "contributions": 6,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 5,
+        "login": "vincentvialard"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-07-09T18:35:55Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Extension of LinkML runtime for converting instances of LinkML classes to OWL (classes or instances)",
+    "name": "linkml-owl",
+    "updatedAt": "2025-07-26T03:43:27Z",
+    "url": "https://github.com/linkml/linkml-owl",
+    "firstCommitDate": "2024-05-30T17:53:53Z",
+    "lastCommitDate": "2024-05-30T17:53:53Z",
+    "topContributors": [
+      {
+        "contributions": 94,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 10,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 1,
+        "login": "nlharris"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-03-21T15:55:31Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Benchmarking linkml object creation plus various loaders and dumpers",
+    "name": "linkml-performance-test",
+    "updatedAt": "2022-03-22T18:55:21Z",
+    "url": "https://github.com/linkml/linkml-performance-test",
+    "firstCommitDate": "2022-03-21T23:06:18Z",
+    "lastCommitDate": "2022-03-21T23:06:18Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-09-06T15:42:53Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A cookiecutter for linkml projects. An equivalent of `linkml-ws new project-name`.",
+    "name": "linkml-project-cookiecutter",
+    "updatedAt": "2025-07-24T22:20:06Z",
+    "url": "https://github.com/linkml/linkml-project-cookiecutter",
+    "firstCommitDate": "2025-02-12T21:02:58Z",
+    "lastCommitDate": "2025-02-12T21:02:58Z",
+    "topContributors": [
+      {
+        "contributions": 94,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 57,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 33,
+        "login": "noelmcloughlin"
+      },
+      {
+        "contributions": 31,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 19,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 19,
+        "login": "dalito"
+      },
+      {
+        "contributions": 10,
+        "login": "amc-corey-cox"
+      },
+      {
+        "contributions": 7,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 3,
+        "login": "yarikoptic"
+      },
+      {
+        "contributions": 2,
+        "login": "cpauvert"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-01-12T23:31:08Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A copier template for your next LinkML project",
+    "name": "linkml-project-copier",
+    "updatedAt": "2025-09-17T17:49:49Z",
+    "url": "https://github.com/linkml/linkml-project-copier",
+    "firstCommitDate": "2025-09-17T17:49:43Z",
+    "lastCommitDate": "2025-09-17T17:49:43Z",
+    "topContributors": [
+      {
+        "contributions": 129,
+        "login": "dalito"
+      },
+      {
+        "contributions": 6,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 3,
+        "login": "MirjamSchr"
+      },
+      {
+        "contributions": 2,
+        "login": "sierra-moxon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-02-25T20:25:20Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A template for LinkML projects using poetry and gen-project",
+    "name": "linkml-project-template",
+    "updatedAt": "2023-01-27T21:09:53Z",
+    "url": "https://github.com/linkml/linkml-project-template",
+    "firstCommitDate": "2022-09-16T21:02:03Z",
+    "lastCommitDate": "2022-09-16T21:02:03Z",
+    "topContributors": [
+      {
+        "contributions": 21,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 17,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 14,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 13,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 12,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 3,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 2,
+        "login": "bpow"
+      },
+      {
+        "contributions": 2,
+        "login": "StroemPhi"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-09-03T02:20:52Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "LinkML rendering of PROV",
+    "name": "linkml-prov",
+    "updatedAt": "2021-11-24T20:06:51Z",
+    "url": "https://github.com/linkml/linkml-prov",
+    "firstCommitDate": "2021-09-03T02:38:59Z",
+    "lastCommitDate": "2021-09-03T02:38:59Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-04-02T21:02:21Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Registry of schemas that use LinkML",
+    "name": "linkml-registry",
+    "updatedAt": "2025-09-29T07:08:59Z",
+    "url": "https://github.com/linkml/linkml-registry",
+    "firstCommitDate": "2025-09-29T07:08:55Z",
+    "lastCommitDate": "2025-09-29T07:08:55Z",
+    "topContributors": [
+      {
+        "contributions": 44,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 36,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 17,
+        "login": "actions-user"
+      },
+      {
+        "contributions": 4,
+        "login": "yarikoptic"
+      },
+      {
+        "contributions": 2,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 2,
+        "login": "nlharris"
+      },
+      {
+        "contributions": 1,
+        "login": "qgan7125"
+      },
+      {
+        "contributions": 1,
+        "login": "mellybelly"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-01-11T17:38:08Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Rendering of instance data as HTML, Markdown, Mermaid",
+    "name": "linkml-renderer",
+    "updatedAt": "2025-09-29T23:44:39Z",
+    "url": "https://github.com/linkml/linkml-renderer",
+    "firstCommitDate": "2024-06-26T02:58:38Z",
+    "lastCommitDate": "2024-06-26T02:58:38Z",
+    "topContributors": [
+      {
+        "contributions": 18,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 1,
+        "login": "pkalita-lbl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-02-11T03:02:31Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "An implementation of the linkml-runtime in javascript ALPHA VERSION",
+    "name": "linkml-runtime.js",
+    "updatedAt": "2025-06-18T08:18:17Z",
+    "url": "https://github.com/linkml/linkml-runtime.js",
+    "firstCommitDate": "2023-06-12T18:56:08Z",
+    "lastCommitDate": "2023-06-12T18:56:08Z",
+    "topContributors": [
+      {
+        "contributions": 31,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 5,
+        "login": "yarikoptic"
+      },
+      {
+        "contributions": 3,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-03-18T20:38:43Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Runtime support for linkml generated models",
+    "name": "linkml-runtime",
+    "updatedAt": "2025-09-29T18:39:27Z",
+    "url": "https://github.com/linkml/linkml-runtime",
+    "firstCommitDate": "2025-09-25T13:21:30Z",
+    "lastCommitDate": "2025-09-25T13:21:30Z",
+    "topContributors": [
+      {
+        "contributions": 397,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 210,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 105,
+        "login": "hsolbrig"
+      },
+      {
+        "contributions": 81,
+        "login": "sneakers-the-rat"
+      },
+      {
+        "contributions": 77,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 62,
+        "login": "dalito"
+      },
+      {
+        "contributions": 46,
+        "login": "ialarmedalien"
+      },
+      {
+        "contributions": 42,
+        "login": "vladistan"
+      },
+      {
+        "contributions": 37,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 26,
+        "login": "candleindark"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-04-01T20:48:04Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Automated linkml rendering of schema.org",
+    "name": "linkml-schemaorg",
+    "updatedAt": "2025-07-25T07:47:12Z",
+    "url": "https://github.com/linkml/linkml-schemaorg",
+    "firstCommitDate": "2024-07-24T19:46:46Z",
+    "lastCommitDate": "2024-07-24T19:46:46Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-07-24T00:52:04Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Simple wrapper for using Solr with LinkML schemas",
+    "name": "linkml-solr",
+    "updatedAt": "2025-09-11T18:30:36Z",
+    "url": "https://github.com/linkml/linkml-solr",
+    "firstCommitDate": "2025-09-11T18:30:28Z",
+    "lastCommitDate": "2025-09-11T18:30:28Z",
+    "topContributors": [
+      {
+        "contributions": 54,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 24,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 4,
+        "login": "actions-user"
+      },
+      {
+        "contributions": 1,
+        "login": "hoijui"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-07-20T02:30:58Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Maps LinkML queries to SPARQL and back (ALPHA)",
+    "name": "linkml-sparql",
+    "updatedAt": "2025-08-28T14:55:36Z",
+    "url": "https://github.com/linkml/linkml-sparql",
+    "firstCommitDate": "2021-07-20T02:29:53Z",
+    "lastCommitDate": "2021-07-20T02:29:53Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-04-06T01:28:43Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "wrapper for multiple linkml storage engines",
+    "name": "linkml-store",
+    "updatedAt": "2025-09-25T10:25:12Z",
+    "url": "https://github.com/linkml/linkml-store",
+    "firstCommitDate": "2025-07-25T22:40:13Z",
+    "lastCommitDate": "2025-07-25T22:40:13Z",
+    "topContributors": [
+      {
+        "contributions": 91,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 34,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 34,
+        "login": "linkmluser"
+      },
+      {
+        "contributions": 1,
+        "login": "maparent"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-01-26T18:31:09Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "linkml-template",
+    "updatedAt": "2023-01-28T08:37:59Z",
+    "url": "https://github.com/linkml/linkml-template",
+    "firstCommitDate": "2021-05-28T02:32:04Z",
+    "lastCommitDate": "2021-05-28T02:32:04Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 2,
+        "login": "sierra-moxon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-06-24T23:13:56Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "linkml-tutorial-2024",
+    "updatedAt": "2024-07-09T17:01:35Z",
+    "url": "https://github.com/linkml/linkml-tutorial-2024",
+    "firstCommitDate": "2024-07-09T17:01:22Z",
+    "lastCommitDate": "2024-07-09T17:01:22Z",
+    "topContributors": [
+      {
+        "contributions": 11,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 7,
+        "login": "pkalita-lbl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-09-15T23:45:10Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "linkml-tutorial",
+    "updatedAt": "2025-09-29T19:25:24Z",
+    "url": "https://github.com/linkml/linkml-tutorial",
+    "firstCommitDate": "2024-08-13T06:41:17Z",
+    "lastCommitDate": "2024-08-13T06:41:17Z",
+    "topContributors": [
+      {
+        "contributions": 41,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 2,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 2,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 2,
+        "login": "RichardBruskiewich"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-02-23T16:17:58Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "[retired]",
+    "name": "linkml-validator",
+    "updatedAt": "2023-11-21T20:16:59Z",
+    "url": "https://github.com/linkml/linkml-validator",
+    "firstCommitDate": "2023-11-21T20:15:43Z",
+    "lastCommitDate": "2023-11-21T20:15:43Z",
+    "topContributors": [
+      {
+        "contributions": 47,
+        "login": "deepakunni3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-03-30T01:35:56Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Website/splash page for main LinkML project",
+    "name": "linkml.github.io",
+    "updatedAt": "2025-09-19T19:04:21Z",
+    "url": "https://github.com/linkml/linkml.github.io",
+    "firstCommitDate": "2025-09-19T19:04:17Z",
+    "lastCommitDate": "2025-09-19T19:04:17Z",
+    "topContributors": [
+      {
+        "contributions": 95,
+        "login": "dwalkr"
+      },
+      {
+        "contributions": 60,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 32,
+        "login": "DirtyF"
+      },
+      {
+        "contributions": 13,
+        "login": "sagehrke"
+      },
+      {
+        "contributions": 7,
+        "login": "Germoe"
+      },
+      {
+        "contributions": 3,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 3,
+        "login": "iQuxLE"
+      },
+      {
+        "contributions": 2,
+        "login": "nlharris"
+      },
+      {
+        "contributions": 2,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 1,
+        "login": "jpatters"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-03-16T16:34:43Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Linked Open Data Modeling Language",
+    "name": "linkml",
+    "updatedAt": "2025-09-30T14:37:46Z",
+    "url": "https://github.com/linkml/linkml",
+    "firstCommitDate": "2025-09-30T14:37:41Z",
+    "lastCommitDate": "2025-09-30T14:37:41Z",
+    "topContributors": [
+      {
+        "contributions": 686,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 431,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 342,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 334,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 243,
+        "login": "actions-user"
+      },
+      {
+        "contributions": 235,
+        "login": "sneakers-the-rat"
+      },
+      {
+        "contributions": 131,
+        "login": "hsolbrig"
+      },
+      {
+        "contributions": 90,
+        "login": "ialarmedalien"
+      },
+      {
+        "contributions": 81,
+        "login": "kervel"
+      },
+      {
+        "contributions": 81,
+        "login": "hrshdhgd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-07-02T17:28:49Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "An empty model repository to test the model configurator software",
+    "name": "model_test_repository",
+    "updatedAt": "2021-07-02T17:29:33Z",
+    "url": "https://github.com/linkml/model_test_repository",
+    "firstCommitDate": "2021-07-02T17:29:30Z",
+    "lastCommitDate": "2021-07-02T17:29:30Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "hsolbrig"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-03-10T06:52:41Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Ontological Interpretations for Web Property Graphs",
+    "name": "owlstar",
+    "updatedAt": "2025-06-23T15:46:30Z",
+    "url": "https://github.com/linkml/owlstar",
+    "firstCommitDate": "2021-02-05T22:14:54Z",
+    "lastCommitDate": "2021-02-05T22:14:54Z",
+    "topContributors": [
+      {
+        "contributions": 17,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-08-22T21:27:19Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Semantic prefix map registry",
+    "name": "prefixmaps",
+    "updatedAt": "2025-06-03T23:26:54Z",
+    "url": "https://github.com/linkml/prefixmaps",
+    "firstCommitDate": "2024-10-17T16:29:58Z",
+    "lastCommitDate": "2024-10-17T16:29:58Z",
+    "topContributors": [
+      {
+        "contributions": 80,
+        "login": "cthoyt"
+      },
+      {
+        "contributions": 60,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 55,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 43,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 41,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 15,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 5,
+        "login": "amc-corey-cox"
+      },
+      {
+        "contributions": 4,
+        "login": "sneakers-the-rat"
+      },
+      {
+        "contributions": 3,
+        "login": "Silvanoc"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-02-03T01:52:26Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Example schema: RDA crosswalk",
+    "name": "rda-crosswalk",
+    "updatedAt": "2025-07-24T15:23:05Z",
+    "url": "https://github.com/linkml/rda-crosswalk",
+    "firstCommitDate": "2022-02-03T02:05:29Z",
+    "lastCommitDate": "2022-02-03T02:05:29Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-03-29T19:52:54Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Automated assistance for the schema development lifecycle",
+    "name": "schema-automator",
+    "updatedAt": "2025-09-29T23:45:50Z",
+    "url": "https://github.com/linkml/schema-automator",
+    "firstCommitDate": "2025-05-19T18:20:03Z",
+    "lastCommitDate": "2025-05-19T18:20:03Z",
+    "topContributors": [
+      {
+        "contributions": 125,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 96,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 63,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 38,
+        "login": "amc-corey-cox"
+      },
+      {
+        "contributions": 25,
+        "login": "multimeric"
+      },
+      {
+        "contributions": 25,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 5,
+        "login": "ptgolden"
+      },
+      {
+        "contributions": 4,
+        "login": "cthoyt"
+      },
+      {
+        "contributions": 3,
+        "login": "dalito"
+      },
+      {
+        "contributions": 2,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-01-04T16:59:50Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Structure your data in a FAIR way using google sheets or TSVs. These are then converted to LinkML, and from there other formats",
+    "name": "schemasheets",
+    "updatedAt": "2025-09-29T23:47:07Z",
+    "url": "https://github.com/linkml/schemasheets",
+    "firstCommitDate": "2025-04-29T17:25:14Z",
+    "lastCommitDate": "2025-04-29T17:25:14Z",
+    "topContributors": [
+      {
+        "contributions": 52,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 44,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 16,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 5,
+        "login": "djarecka"
+      },
+      {
+        "contributions": 5,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 5,
+        "login": "rly"
+      },
+      {
+        "contributions": 1,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 1,
+        "login": "VladimirAlexiev"
+      },
+      {
+        "contributions": 1,
+        "login": "yarikoptic"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-03-30T14:41:15Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Easy Domain Specific Languages for your Schemas",
+    "name": "semantic-dsl",
+    "updatedAt": "2025-09-29T23:44:34Z",
+    "url": "https://github.com/linkml/semantic-dsl",
+    "firstCommitDate": "2023-03-31T00:30:16Z",
+    "lastCommitDate": "2023-03-31T00:30:16Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 6,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 2,
+        "login": "linkmluser"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-03-04T03:16:05Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "ALPHA universal registry of semantic variables",
+    "name": "semantic-variable-registry",
+    "updatedAt": "2023-03-04T03:16:20Z",
+    "url": "https://github.com/linkml/semantic-variable-registry",
+    "firstCommitDate": "2023-03-06T16:37:46Z",
+    "lastCommitDate": "2023-03-06T16:37:46Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-11-20T02:28:24Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "sparql templates for linkml (alpha)",
+    "name": "sparqlfun",
+    "updatedAt": "2025-07-25T11:11:07Z",
+    "url": "https://github.com/linkml/sparqlfun",
+    "firstCommitDate": "2022-04-30T00:09:41Z",
+    "lastCommitDate": "2022-04-30T00:09:41Z",
+    "topContributors": [
+      {
+        "contributions": 25,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 6,
+        "login": "sujaypatil96"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-05-06T13:23:39Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Lightweight model for the linkml-model-template configuration parameters",
+    "name": "template-config-model",
+    "updatedAt": "2023-01-28T00:49:45Z",
+    "url": "https://github.com/linkml/template-config-model",
+    "firstCommitDate": "2021-05-24T21:16:08Z",
+    "lastCommitDate": "2021-05-24T21:16:08Z",
+    "topContributors": [
+      {
+        "contributions": 11,
+        "login": "hsolbrig"
+      },
+      {
+        "contributions": 9,
+        "login": "actions-user"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-06-03T18:58:03Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Templates for use in the linkml-template-configurator",
+    "name": "template-configurator-templates",
+    "updatedAt": "2023-03-24T21:39:55Z",
+    "url": "https://github.com/linkml/template-configurator-templates",
+    "firstCommitDate": "2021-07-19T13:49:48Z",
+    "lastCommitDate": "2021-07-19T13:49:48Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "hsolbrig"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-09-16T14:34:23Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Common value sets (enums) for science, biomedicine, computing, and other areas",
+    "name": "valuesets",
+    "updatedAt": "2025-09-27T23:12:49Z",
+    "url": "https://github.com/linkml/valuesets",
+    "firstCommitDate": "2025-09-27T22:52:30Z",
+    "lastCommitDate": "2025-09-27T22:52:30Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "dragon-ai-agent"
+      },
+      {
+        "contributions": 2,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  }
+]

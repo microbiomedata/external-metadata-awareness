@@ -1,0 +1,26 @@
+{
+  "createdAt": "2014-07-01T21:57:41Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "OwlSim on SciGraph",
+  "name": "SciGraph-Sim",
+  "updatedAt": "2023-01-28T18:45:56Z",
+  "url": "https://github.com/monarch-initiative/SciGraph-Sim",
+  "firstCommitDate": "2014-09-30T22:19:33Z",
+  "lastCommitDate": "2014-09-30T22:19:33Z",
+  "topContributors": [
+    {
+      "contributions": 38,
+      "login": "CheeseLord"
+    },
+    {
+      "contributions": 14,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 2,
+      "login": "ccondit"
+    }
+  ]
+}

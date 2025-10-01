@@ -1,0 +1,26 @@
+{
+  "createdAt": "2020-01-13T19:16:01Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "mixs-rdf",
+  "updatedAt": "2021-08-17T20:30:09Z",
+  "url": "https://github.com/GenomicsStandardsConsortium/mixs-rdf",
+  "firstCommitDate": "2021-08-17T20:30:05Z",
+  "lastCommitDate": "2021-08-17T20:30:05Z",
+  "topContributors": [
+    {
+      "contributions": 33,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 4,
+      "login": "ramonawalls"
+    },
+    {
+      "contributions": 3,
+      "login": "folker"
+    }
+  ]
+}

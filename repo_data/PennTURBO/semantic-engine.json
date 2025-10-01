@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-05-14T18:54:06Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "TURBO semantic engine (Drivetrain).  Transforms source-dependent RDF data into a source-independent, semantically rich RDF model.",
+  "name": "semantic-engine",
+  "updatedAt": "2022-03-03T16:53:38Z",
+  "url": "https://github.com/PennTURBO/semantic-engine",
+  "firstCommitDate": "2020-09-02T18:26:34Z",
+  "lastCommitDate": "2020-09-02T18:26:34Z",
+  "topContributors": [
+    {
+      "contributions": 465,
+      "login": "greenguy33"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-11-09T12:30:30Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A place to submit conda recipes before they become fully fledged conda-forge feedstocks",
+  "name": "staged-recipes",
+  "updatedAt": "2025-01-14T13:13:26Z",
+  "url": "https://github.com/jfy133/staged-recipes",
+  "firstCommitDate": "2025-01-14T13:13:18Z",
+  "lastCommitDate": "2025-01-14T13:13:18Z",
+  "topContributors": [
+    {
+      "contributions": 6559,
+      "login": "ocefpaf"
+    },
+    {
+      "contributions": 6270,
+      "login": "conda-forge-admin"
+    },
+    {
+      "contributions": 3461,
+      "login": "jan-janssen"
+    },
+    {
+      "contributions": 2362,
+      "login": "xhochy"
+    },
+    {
+      "contributions": 2335,
+      "login": "scopatz"
+    },
+    {
+      "contributions": 2208,
+      "login": "jakirkham"
+    },
+    {
+      "contributions": 2147,
+      "login": "chrisburr"
+    },
+    {
+      "contributions": 2142,
+      "login": "cbrueffer"
+    },
+    {
+      "contributions": 2052,
+      "login": "thewchan"
+    },
+    {
+      "contributions": 1924,
+      "login": "goanpeca"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "createdAt": "2025-02-24T17:18:48Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Cross-BER Data Integration",
+  "name": "bertron",
+  "updatedAt": "2025-09-19T18:13:22Z",
+  "url": "https://github.com/ber-data/bertron",
+  "firstCommitDate": "2025-09-19T18:13:17Z",
+  "lastCommitDate": "2025-09-19T18:13:17Z",
+  "topContributors": [
+    {
+      "contributions": 58,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 19,
+      "login": "shreddd"
+    },
+    {
+      "contributions": 10,
+      "login": "ct-parker"
+    },
+    {
+      "contributions": 6,
+      "login": "madettmann"
+    },
+    {
+      "contributions": 6,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 3,
+      "login": "Taurophylax"
+    },
+    {
+      "contributions": 2,
+      "login": "Copilot"
+    },
+    {
+      "contributions": 1,
+      "login": "JamesCarrPNNL"
+    },
+    {
+      "contributions": 1,
+      "login": "jeff-cohere"
+    },
+    {
+      "contributions": 1,
+      "login": "luizirber"
+    }
+  ]
+}

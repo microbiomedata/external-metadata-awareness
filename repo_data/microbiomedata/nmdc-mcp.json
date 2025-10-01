@@ -1,0 +1,30 @@
+{
+  "createdAt": "2025-06-10T21:53:44Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "nmdc-mcp",
+  "updatedAt": "2025-08-12T17:56:09Z",
+  "url": "https://github.com/microbiomedata/nmdc-mcp",
+  "firstCommitDate": "2025-08-12T17:56:06Z",
+  "lastCommitDate": "2025-08-12T17:56:06Z",
+  "topContributors": [
+    {
+      "contributions": 69,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 16,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 11,
+      "login": "shreddd"
+    },
+    {
+      "contributions": 6,
+      "login": "hesspnnl"
+    }
+  ]
+}

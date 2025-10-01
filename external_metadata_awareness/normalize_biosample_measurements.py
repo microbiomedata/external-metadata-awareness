@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+# NOTE: This script has been superseded by measurement_discovery_efficient.py
+# The new script provides better skip list management, enhanced quantulum3 processing,
+# and more comprehensive measurement discovery capabilities.
+
 import datetime
 import sys
 import time
@@ -370,10 +375,11 @@ def parse_measurements(client, db_name, collection_name, field_name, extra_verbo
 @click.option('--input-collection', default='biosamples_flattened', help='Input collection name')
 @click.option('--output-collection', default='biosamples_measurements', help='Output collection name')
 @click.option('--field', required=False, multiple=True, default=curated_measurements, help='Field name(s) to parse.')
+@click.option('--all-harmonized-names', is_flag=True, help='Process ALL harmonized_names from database instead of curated list (ignores --field)')
 @click.option('-v', '--verbosity', type=click.Choice(['quiet', 'normal', 'verbose']), default='normal',
               help='Verbosity level')
 @click.option('--overwrite', is_flag=True, help='Overwrite existing data for the specified field(s)')
-def main(mongodb_uri, env_file, input_collection, output_collection, field, verbosity, overwrite):
+def main(mongodb_uri, env_file, input_collection, output_collection, field, all_harmonized_names, verbosity, overwrite):
     try:
         is_quiet = verbosity == 'quiet'
         is_verbose = verbosity == 'verbose'
@@ -399,19 +405,68 @@ def main(mongodb_uri, env_file, input_collection, output_collection, field, verb
         input_col = db[input_collection]
         output_col = db[output_collection]
 
+        # Handle --all-harmonized-names flag
+        if all_harmonized_names:
+            if not is_quiet:
+                click.echo(f"[{timestamp()}] --all-harmonized-names flag set, running diagnostics and filtering...")
+
+            # Use existing harmonized_name_usage_stats collection for super-fast diagnostics
+            click.echo(f"[{timestamp()}] Using existing harmonized_name_usage_stats collection for diagnostics...")
+
+            stats_collection = db['harmonized_name_usage_stats']
+            harmonized_name_stats = list(stats_collection.find().sort("unique_biosamples_count", -1))
+
+            total_harmonized_names = len(harmonized_name_stats)
+            # Filter to only harmonized_names with actual biosample data
+            non_empty_harmonized_names = [stat for stat in harmonized_name_stats if stat["unique_biosamples_count"] > 0]
+            empty_harmonized_names = total_harmonized_names - len(non_empty_harmonized_names)
+
+            click.echo(f"[{timestamp()}] 📊 DIAGNOSTICS:")
+            click.echo(f"[{timestamp()}]   Total distinct harmonized_names: {total_harmonized_names}")
+            click.echo(f"[{timestamp()}]   Harmonized_names with data: {len(non_empty_harmonized_names)}")
+            click.echo(f"[{timestamp()}]   Empty harmonized_names (skipping): {empty_harmonized_names}")
+
+            if len(non_empty_harmonized_names) > 0:
+                total_documents = sum(stat["document_count"] for stat in non_empty_harmonized_names)
+                top_5 = non_empty_harmonized_names[:5]
+                click.echo(f"[{timestamp()}]   Total documents with harmonized_names: {total_documents:,}")
+                click.echo(f"[{timestamp()}]   Top 5 most common harmonized_names:")
+                for stat in top_5:
+                    click.echo(f"[{timestamp()}]     - {stat['_id']}: {stat['document_count']:,} documents")
+
+            # Filter to only process harmonized_names that have data
+            filtered_harmonized_names = [stat["_id"] for stat in non_empty_harmonized_names]
+
+            # Sort alphabetically for predictable progress
+            filtered_harmonized_names.sort()
+
+            if not is_quiet:
+                click.echo(f"[{timestamp()}] Will process {len(filtered_harmonized_names)} harmonized_names with data")
+                click.echo(f"[{timestamp()}] Ignoring --field arguments (using harmonized_names with data from database)")
+
+            # Override the field parameter
+            field = filtered_harmonized_names
+
         total_start_time = time.time()
         fields_processed = 0
         total_parsed = 0
 
-        for current_field in field:
-            click.echo(f"[{timestamp()}] Ensuring index on '{current_field}' in '{input_collection}'...")
-            ensure_index(input_col, current_field)
-
+        for i, current_field in enumerate(field, 1):
             if not is_quiet:
-                click.echo(f"[{timestamp()}] ------------------------------------------------------------")
-                click.echo(f"[{timestamp()}] Processing field: '{current_field}'")
+                click.echo(f"[{timestamp()}] ============================================================")
+                click.echo(f"[{timestamp()}] Processing field {i}/{len(field)}: '{current_field}'")
+
+            # Quick pre-check to avoid unnecessary indexing
+            quick_count = input_col.count_documents({current_field: {"$exists": True, "$ne": None}})
+            if quick_count == 0:
+                click.echo(f"[{timestamp()}] ⚠️  Field '{current_field}' has no documents - skipping (should not happen after diagnostics)")
+                continue
+
+            click.echo(f"[{timestamp()}] Field '{current_field}' has {quick_count:,} documents with content")
+            click.echo(f"[{timestamp()}] Creating index on '{current_field}' in '{input_collection}'...")
 
             field_start_time = time.time()
+            ensure_index(input_col, current_field)
 
             # Step 1: Aggregate
             processed_field = aggregate_measurements(

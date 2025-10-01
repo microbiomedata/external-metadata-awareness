@@ -1,0 +1,26 @@
+{
+  "createdAt": "2022-09-04T14:08:19Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A collection of unexpected challenges and learnings with nextflow and nf-core.",
+  "name": "midnighter-nextflow-gotchas",
+  "updatedAt": "2022-09-06T14:58:35Z",
+  "url": "https://github.com/jfy133/midnighter-nextflow-gotchas",
+  "firstCommitDate": "2023-05-12T10:52:10Z",
+  "lastCommitDate": "2023-05-12T10:52:10Z",
+  "topContributors": [
+    {
+      "contributions": 50,
+      "login": "Midnighter"
+    },
+    {
+      "contributions": 9,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 1,
+      "login": "bguo068"
+    }
+  ]
+}

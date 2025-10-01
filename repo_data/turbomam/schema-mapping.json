@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-05-28T15:37:08Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "use linkml-map to transform a schema (like MIxS -> nmdc-schema) using the LinkML metamodel as the specification",
+  "name": "schema-mapping",
+  "updatedAt": "2025-06-02T16:16:43Z",
+  "url": "https://github.com/turbomam/schema-mapping",
+  "firstCommitDate": "2025-06-02T16:16:37Z",
+  "lastCommitDate": "2025-06-02T16:16:37Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "turbomam"
+    }
+  ]
+}

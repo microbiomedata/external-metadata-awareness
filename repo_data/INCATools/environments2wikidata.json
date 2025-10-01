@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-05-07T01:15:16Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Mapping of GAZ and ENVO to Wikidata",
+  "name": "environments2wikidata",
+  "updatedAt": "2025-03-09T19:01:08Z",
+  "url": "https://github.com/INCATools/environments2wikidata",
+  "firstCommitDate": "2020-04-02T23:10:00Z",
+  "lastCommitDate": "2020-04-02T23:10:00Z",
+  "topContributors": [
+    {
+      "contributions": 21,
+      "login": "cmungall"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "createdAt": "2024-02-13T20:38:44Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "automaxo",
+  "updatedAt": "2025-05-12T16:58:38Z",
+  "url": "https://github.com/monarch-initiative/automaxo",
+  "firstCommitDate": "2025-05-12T16:58:27Z",
+  "lastCommitDate": "2025-05-12T16:58:27Z",
+  "topContributors": [
+    {
+      "contributions": 116,
+      "login": "enockniyonkuru"
+    },
+    {
+      "contributions": 10,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 5,
+      "login": "leokim-l"
+    },
+    {
+      "contributions": 5,
+      "login": "pnrobinson"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-07-22T18:38:22Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "fairtab",
+  "updatedAt": "2023-07-06T19:10:00Z",
+  "url": "https://github.com/cmungall/fairtab",
+  "firstCommitDate": "2022-07-22T18:38:01Z",
+  "lastCommitDate": "2022-07-22T18:38:01Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

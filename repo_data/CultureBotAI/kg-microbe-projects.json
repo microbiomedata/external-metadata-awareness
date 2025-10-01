@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-01-12T03:48:15Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "kg-microbe-projects",
+  "updatedAt": "2025-09-24T06:18:23Z",
+  "url": "https://github.com/CultureBotAI/kg-microbe-projects",
+  "firstCommitDate": "2025-09-13T00:43:00Z",
+  "lastCommitDate": "2025-09-13T00:43:00Z",
+  "topContributors": [
+    {
+      "contributions": 545,
+      "login": "realmarcin"
+    },
+    {
+      "contributions": 2,
+      "login": "bsantan"
+    }
+  ]
+}

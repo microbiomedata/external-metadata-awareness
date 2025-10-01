@@ -1,0 +1,30 @@
+{
+  "createdAt": "2025-01-12T23:31:08Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A copier template for your next LinkML project",
+  "name": "linkml-project-copier",
+  "updatedAt": "2025-09-17T17:49:49Z",
+  "url": "https://github.com/linkml/linkml-project-copier",
+  "firstCommitDate": "2025-09-17T17:49:43Z",
+  "lastCommitDate": "2025-09-17T17:49:43Z",
+  "topContributors": [
+    {
+      "contributions": 129,
+      "login": "dalito"
+    },
+    {
+      "contributions": 6,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 3,
+      "login": "MirjamSchr"
+    },
+    {
+      "contributions": 2,
+      "login": "sierra-moxon"
+    }
+  ]
+}

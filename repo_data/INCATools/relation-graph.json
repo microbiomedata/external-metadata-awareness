@@ -1,0 +1,26 @@
+{
+  "createdAt": "2020-08-16T01:52:18Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Materialize OWL existential relations",
+  "name": "relation-graph",
+  "updatedAt": "2025-09-01T06:46:08Z",
+  "url": "https://github.com/INCATools/relation-graph",
+  "firstCommitDate": "2025-05-17T16:29:52Z",
+  "lastCommitDate": "2025-05-17T16:29:52Z",
+  "topContributors": [
+    {
+      "contributions": 106,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 95,
+      "login": "scala-steward"
+    },
+    {
+      "contributions": 1,
+      "login": "wdduncan"
+    }
+  ]
+}

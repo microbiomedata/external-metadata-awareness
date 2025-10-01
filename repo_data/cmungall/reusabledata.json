@@ -1,0 +1,34 @@
+{
+  "createdAt": "2023-09-06T20:17:16Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The home repository for the (Re)usable Data Project.",
+  "name": "reusabledata",
+  "updatedAt": "2023-09-06T20:17:17Z",
+  "url": "https://github.com/cmungall/reusabledata",
+  "firstCommitDate": "2023-08-11T23:04:12Z",
+  "lastCommitDate": "2023-08-11T23:04:12Z",
+  "topContributors": [
+    {
+      "contributions": 495,
+      "login": "kltm"
+    },
+    {
+      "contributions": 13,
+      "login": "ahwagner"
+    },
+    {
+      "contributions": 4,
+      "login": "lwinfree"
+    },
+    {
+      "contributions": 2,
+      "login": "jmcmurry"
+    },
+    {
+      "contributions": 2,
+      "login": "lrwyatt"
+    }
+  ]
+}

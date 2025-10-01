@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-05-06T18:40:02Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "a python library for constructing prolog terms",
+  "name": "prologterms-py",
+  "updatedAt": "2021-08-20T11:06:23Z",
+  "url": "https://github.com/cmungall/prologterms-py",
+  "firstCommitDate": "2019-08-12T18:15:23Z",
+  "lastCommitDate": "2019-08-12T18:15:23Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "cmungall"
+    }
+  ]
+}

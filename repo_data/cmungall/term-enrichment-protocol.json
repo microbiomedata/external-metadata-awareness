@@ -1,0 +1,18 @@
+{
+  "createdAt": "2014-03-11T23:03:46Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Documentation on REST API and JSON payload for term enrichment services",
+  "name": "term-enrichment-protocol",
+  "updatedAt": "2015-02-10T07:56:08Z",
+  "url": "https://github.com/cmungall/term-enrichment-protocol",
+  "firstCommitDate": "2014-03-14T15:26:56Z",
+  "lastCommitDate": "2014-03-14T15:26:56Z",
+  "topContributors": [
+    {
+      "contributions": 20,
+      "login": "cmungall"
+    }
+  ]
+}

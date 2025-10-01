@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-12-14T02:00:41Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A knowledge extraction tool that uses a large language model to extract semantic information from text",
+  "name": "semantic-llama",
+  "updatedAt": "2025-06-28T14:02:33Z",
+  "url": "https://github.com/cmungall/semantic-llama",
+  "firstCommitDate": "2023-01-03T16:56:13Z",
+  "lastCommitDate": "2023-01-03T16:56:13Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "cmungall"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "createdAt": "2022-04-13T23:21:55Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "PyJSG -- JSON Schema Grammar bindings for Python",
+  "name": "pyjsg",
+  "updatedAt": "2021-12-13T18:38:21Z",
+  "url": "https://github.com/cmungall/pyjsg",
+  "firstCommitDate": "2021-12-13T18:38:18Z",
+  "lastCommitDate": "2021-12-13T18:38:18Z",
+  "topContributors": [
+    {
+      "contributions": 42,
+      "login": "hsolbrig"
+    },
+    {
+      "contributions": 9,
+      "login": "alejgh"
+    },
+    {
+      "contributions": 3,
+      "login": "actions-user"
+    }
+  ]
+}

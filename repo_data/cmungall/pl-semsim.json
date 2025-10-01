@@ -1,0 +1,18 @@
+{
+  "createdAt": "2014-07-22T02:35:31Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "semantic similarity implementation for swi-prolog",
+  "name": "pl-semsim",
+  "updatedAt": "2015-06-05T12:02:34Z",
+  "url": "https://github.com/cmungall/pl-semsim",
+  "firstCommitDate": "2014-07-22T02:36:58Z",
+  "lastCommitDate": "2014-07-22T02:36:58Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

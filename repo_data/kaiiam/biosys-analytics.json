@@ -1,0 +1,22 @@
+{
+  "createdAt": "2019-01-10T17:21:27Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "BE434/535 Biosystems Analytics",
+  "name": "biosys-analytics",
+  "updatedAt": "2023-04-22T16:28:24Z",
+  "url": "https://github.com/kaiiam/biosys-analytics",
+  "firstCommitDate": "2019-05-07T18:42:57Z",
+  "lastCommitDate": "2019-05-07T18:42:57Z",
+  "topContributors": [
+    {
+      "contributions": 170,
+      "login": "kyclark"
+    },
+    {
+      "contributions": 92,
+      "login": "kaiiam"
+    }
+  ]
+}

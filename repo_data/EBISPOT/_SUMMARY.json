@@ -1,0 +1,3716 @@
+[
+  {
+    "createdAt": "2017-11-14T10:20:13Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Home of the Amphioxus Development and Anatomy Ontology (AMPHX)",
+    "name": "amphx_ontology",
+    "updatedAt": "2021-12-29T00:05:55Z",
+    "url": "https://github.com/EBISPOT/amphx_ontology",
+    "firstCommitDate": "2020-12-18T17:58:14Z",
+    "lastCommitDate": "2020-12-18T17:58:14Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 4,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 2,
+        "login": "S2Ola"
+      },
+      {
+        "contributions": 1,
+        "login": "delphinedauga"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-10-09T14:15:58Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A validation script to ensure Annotare are informed of any important term changes.",
+    "name": "annotare-validator",
+    "updatedAt": "2019-06-07T14:45:10Z",
+    "url": "https://github.com/EBISPOT/annotare-validator",
+    "firstCommitDate": "2019-06-07T14:45:07Z",
+    "lastCommitDate": "2019-06-07T14:45:07Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 5,
+        "login": "zoependlington"
+      }
+    ]
+  },
+  {
+    "createdAt": "2014-12-15T15:30:21Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Contains code developed by the SPOT team at EBI as part of the BioMedBridges Project",
+    "name": "biomedbridges",
+    "updatedAt": "2014-12-17T17:14:18Z",
+    "url": "https://github.com/EBISPOT/biomedbridges",
+    "firstCommitDate": "2014-12-17T16:24:50Z",
+    "lastCommitDate": "2014-12-17T16:24:50Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "tburdett"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-11-08T11:53:23Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Contains python scripts and cypher to read BioSamples info from Solr, store in Neo4J database",
+    "name": "biosamples-analysis",
+    "updatedAt": "2017-08-14T13:51:57Z",
+    "url": "https://github.com/EBISPOT/biosamples-analysis",
+    "firstCommitDate": "2017-01-16T14:41:22Z",
+    "lastCommitDate": "2017-01-16T14:41:22Z",
+    "topContributors": [
+      {
+        "contributions": 84,
+        "login": "afaulconbridge"
+      },
+      {
+        "contributions": 44,
+        "login": "Kerruba"
+      },
+      {
+        "contributions": 7,
+        "login": "tburdett"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-09-13T13:31:30Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A repository containing scripts/ideas/documents for semi-automated cleanup of the EBI Biosamples data.",
+    "name": "biosamples-data-curation",
+    "updatedAt": "2017-09-13T15:26:40Z",
+    "url": "https://github.com/EBISPOT/biosamples-data-curation",
+    "firstCommitDate": "2017-11-09T09:39:33Z",
+    "lastCommitDate": "2017-11-09T09:39:33Z",
+    "topContributors": [
+      {
+        "contributions": 38,
+        "login": "twhetzel"
+      },
+      {
+        "contributions": 10,
+        "login": "hewgreen"
+      },
+      {
+        "contributions": 1,
+        "login": "mcourtot"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-08-31T10:28:34Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "biosamples-facet-concurrence",
+    "updatedAt": "2017-08-31T11:15:27Z",
+    "url": "https://github.com/EBISPOT/biosamples-facet-concurrence",
+    "firstCommitDate": "2017-08-31T11:16:16Z",
+    "lastCommitDate": "2017-08-31T11:16:16Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "hewgreen"
+      },
+      {
+        "contributions": 1,
+        "login": "mcourtot"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-04-11T13:23:14Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A project aiming \"to significantly advance the state of the art with regard to indexing and querying biomedical data with freely available open source software\"",
+    "name": "BioSolr",
+    "updatedAt": "2024-03-12T12:41:47Z",
+    "url": "https://github.com/EBISPOT/BioSolr",
+    "firstCommitDate": "2019-02-28T10:47:10Z",
+    "lastCommitDate": "2019-02-28T10:47:10Z",
+    "topContributors": [
+      {
+        "contributions": 21,
+        "login": "olgavrou"
+      },
+      {
+        "contributions": 20,
+        "login": "tburdett"
+      },
+      {
+        "contributions": 5,
+        "login": "flaxsearch"
+      },
+      {
+        "contributions": 1,
+        "login": "S2Ola"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-06-11T15:54:56Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Docker image for running a Blazegraph server",
+    "name": "blazegraph-docker",
+    "updatedAt": "2024-06-11T15:54:56Z",
+    "url": "https://github.com/EBISPOT/blazegraph-docker",
+    "firstCommitDate": "2022-02-03T18:24:46Z",
+    "lastCommitDate": "2022-02-03T18:24:46Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "balhoff"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-06-03T15:26:18Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Bubastis is an ontology diff tool",
+    "name": "bubastis",
+    "updatedAt": "2025-04-29T15:40:46Z",
+    "url": "https://github.com/EBISPOT/bubastis",
+    "firstCommitDate": "2020-01-14T13:43:43Z",
+    "lastCommitDate": "2020-01-14T13:43:43Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "tburdett"
+      },
+      {
+        "contributions": 3,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 2,
+        "login": "zoependlington"
+      },
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 1,
+        "login": "olgavrou"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-05-26T20:45:05Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "cell_finder",
+    "updatedAt": "2019-05-26T20:45:55Z",
+    "url": "https://github.com/EBISPOT/cell_finder",
+    "firstCommitDate": "2019-05-26T20:44:46Z",
+    "lastCommitDate": "2019-05-26T20:44:46Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "simonjupp"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-11-14T10:16:38Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Home of the Clytia hemisphaerica Development and Anatomy Ontology (CLYH)",
+    "name": "clyh_ontology",
+    "updatedAt": "2025-08-13T19:27:50Z",
+    "url": "https://github.com/EBISPOT/clyh_ontology",
+    "firstCommitDate": "2020-05-29T18:26:31Z",
+    "lastCommitDate": "2020-05-29T18:26:31Z",
+    "topContributors": [
+      {
+        "contributions": 10,
+        "login": "L-Leclere"
+      },
+      {
+        "contributions": 10,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 6,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 2,
+        "login": "momotsuyo"
+      },
+      {
+        "contributions": 1,
+        "login": "S2Ola"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-09-26T09:32:51Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "web pages for the CMPO website ",
+    "name": "cmpo-web-ols",
+    "updatedAt": "2017-09-26T09:36:49Z",
+    "url": "https://github.com/EBISPOT/cmpo-web-ols",
+    "firstCommitDate": "2017-12-19T10:25:38Z",
+    "lastCommitDate": "2017-12-19T10:25:38Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "simonjupp"
+      }
+    ]
+  },
+  {
+    "createdAt": "2013-10-11T10:33:48Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Cellular Microscopy Phenotype Ontology",
+    "name": "CMPO",
+    "updatedAt": "2020-11-05T15:29:20Z",
+    "url": "https://github.com/EBISPOT/CMPO",
+    "firstCommitDate": "2018-01-04T14:33:17Z",
+    "lastCommitDate": "2018-01-04T14:33:17Z",
+    "topContributors": [
+      {
+        "contributions": 4121,
+        "login": "tburdett"
+      },
+      {
+        "contributions": 77,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 1,
+        "login": "sbesson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-04-21T13:20:31Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Application ontology for the description of coronavirus data",
+    "name": "covoc",
+    "updatedAt": "2022-12-14T03:01:37Z",
+    "url": "https://github.com/EBISPOT/covoc",
+    "firstCommitDate": "2022-10-27T07:46:56Z",
+    "lastCommitDate": "2022-10-27T07:46:56Z",
+    "topContributors": [
+      {
+        "contributions": 45,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 16,
+        "login": "zoependlington"
+      },
+      {
+        "contributions": 2,
+        "login": "anitacaron"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-01-27T12:00:20Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "CTTVAssociations",
+    "updatedAt": "2015-03-30T10:55:52Z",
+    "url": "https://github.com/EBISPOT/CTTVAssociations",
+    "firstCommitDate": "2015-03-30T10:55:32Z",
+    "lastCommitDate": "2015-03-30T10:55:32Z",
+    "topContributors": [
+      {
+        "contributions": 25,
+        "login": "jamesmalone"
+      },
+      {
+        "contributions": 17,
+        "login": "vasant32"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-10-24T10:35:41Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "Run CurateGPT using Docker",
+    "name": "curategpt-docker",
+    "updatedAt": "2024-10-24T14:31:36Z",
+    "url": "https://github.com/EBISPOT/curategpt-docker",
+    "firstCommitDate": "2024-10-24T14:30:48Z",
+    "lastCommitDate": "2024-10-24T14:30:48Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "jamesamcl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-03-12T14:03:58Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "LLM-driven curation assist tool",
+    "name": "curategpt",
+    "updatedAt": "2025-03-12T14:09:50Z",
+    "url": "https://github.com/EBISPOT/curategpt",
+    "firstCommitDate": "2025-03-12T14:09:42Z",
+    "lastCommitDate": "2025-03-12T14:09:42Z",
+    "topContributors": [
+      {
+        "contributions": 138,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 102,
+        "login": "iQuxLE"
+      },
+      {
+        "contributions": 70,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 13,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 2,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 2,
+        "login": "aleixpuigb"
+      },
+      {
+        "contributions": 2,
+        "login": "realmarcin"
+      },
+      {
+        "contributions": 1,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 1,
+        "login": "oneilsh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-02-18T15:42:55Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "diachron_archive",
+    "updatedAt": "2016-02-18T15:53:05Z",
+    "url": "https://github.com/EBISPOT/diachron_archive",
+    "firstCommitDate": "2016-02-02T13:56:44Z",
+    "lastCommitDate": "2016-02-02T13:56:44Z",
+    "topContributors": [
+      {
+        "contributions": 20,
+        "login": "pateritsas"
+      },
+      {
+        "contributions": 20,
+        "login": "mmeimaris"
+      },
+      {
+        "contributions": 1,
+        "login": "simonjupp"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-02-18T15:43:38Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Maven Project with services which correspond on the Change Detection and Validation/Repair Modules ",
+    "name": "diachron_change_detection",
+    "updatedAt": "2016-02-18T15:50:31Z",
+    "url": "https://github.com/EBISPOT/diachron_change_detection",
+    "firstCommitDate": "2016-03-23T14:29:33Z",
+    "lastCommitDate": "2016-03-23T14:29:33Z",
+    "topContributors": [
+      {
+        "contributions": 47,
+        "login": "rousakis"
+      },
+      {
+        "contributions": 2,
+        "login": "olgavrou"
+      },
+      {
+        "contributions": 1,
+        "login": "simonjupp"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-02-18T16:03:28Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "diachron_ols",
+    "updatedAt": "2017-10-17T15:54:43Z",
+    "url": "https://github.com/EBISPOT/diachron_ols",
+    "firstCommitDate": "2017-10-17T15:19:38Z",
+    "lastCommitDate": "2017-10-17T15:19:38Z",
+    "topContributors": [
+      {
+        "contributions": 58,
+        "login": "olgavrou"
+      },
+      {
+        "contributions": 38,
+        "login": "simonjupp"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-10-19T07:00:06Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Ontology for consent codes and data use requirements",
+    "name": "DUO",
+    "updatedAt": "2025-07-09T10:04:19Z",
+    "url": "https://github.com/EBISPOT/DUO",
+    "firstCommitDate": "2022-09-21T14:41:14Z",
+    "lastCommitDate": "2022-09-21T14:41:14Z",
+    "topContributors": [
+      {
+        "contributions": 158,
+        "login": "mcourtot"
+      },
+      {
+        "contributions": 12,
+        "login": "solideoglori"
+      },
+      {
+        "contributions": 10,
+        "login": "CooperStansbury"
+      },
+      {
+        "contributions": 7,
+        "login": "fabiolib"
+      },
+      {
+        "contributions": 5,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 3,
+        "login": "MKonopko"
+      },
+      {
+        "contributions": 3,
+        "login": "lpaglione"
+      },
+      {
+        "contributions": 2,
+        "login": "jamesaoverton"
+      },
+      {
+        "contributions": 2,
+        "login": "nmcabili"
+      },
+      {
+        "contributions": 1,
+        "login": "amanjeev"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-08-14T12:26:44Z",
+    "defaultBranchRef": {
+      "name": "v1.3"
+    },
+    "description": "The EMBL-EBI Visual Framework for websites and services.",
+    "name": "EBI-Framework-Flex",
+    "updatedAt": "2020-08-14T12:27:11Z",
+    "url": "https://github.com/EBISPOT/EBI-Framework-Flex",
+    "firstCommitDate": "2020-08-14T12:24:11Z",
+    "lastCommitDate": "2020-08-14T12:24:11Z",
+    "topContributors": [
+      {
+        "contributions": 1010,
+        "login": "khawkins98"
+      },
+      {
+        "contributions": 10,
+        "login": "peter-walter"
+      },
+      {
+        "contributions": 2,
+        "login": "esanzgar"
+      },
+      {
+        "contributions": 2,
+        "login": "sebpca"
+      },
+      {
+        "contributions": 1,
+        "login": "jamesamcl"
+      },
+      {
+        "contributions": 1,
+        "login": "jonathanhickford"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-03-29T11:56:40Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "",
+    "name": "efo-measurement-to-phenotype",
+    "updatedAt": "2025-04-06T05:22:33Z",
+    "url": "https://github.com/EBISPOT/efo-measurement-to-phenotype",
+    "firstCommitDate": "2025-04-06T05:22:22Z",
+    "lastCommitDate": "2025-04-06T05:22:22Z",
+    "topContributors": [
+      {
+        "contributions": 9,
+        "login": "jamesamcl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-04-03T09:07:14Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "EFO-UKB-mappings",
+    "updatedAt": "2025-06-19T05:13:17Z",
+    "url": "https://github.com/EBISPOT/EFO-UKB-mappings",
+    "firstCommitDate": "2019-06-07T14:32:22Z",
+    "lastCommitDate": "2019-06-07T14:32:22Z",
+    "topContributors": [
+      {
+        "contributions": 11,
+        "login": "zoependlington"
+      },
+      {
+        "contributions": 2,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 2,
+        "login": "paolaroncaglia"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-01-04T11:22:32Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Source code for the EFO website at http://www.ebi.ac.uk/efo",
+    "name": "EFO-website",
+    "updatedAt": "2024-05-22T15:19:07Z",
+    "url": "https://github.com/EBISPOT/EFO-website",
+    "firstCommitDate": "2024-05-22T15:19:04Z",
+    "lastCommitDate": "2024-05-22T15:19:04Z",
+    "topContributors": [
+      {
+        "contributions": 16,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 7,
+        "login": "zoependlington"
+      },
+      {
+        "contributions": 3,
+        "login": "serjoshua"
+      },
+      {
+        "contributions": 1,
+        "login": "jamesamcl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-06-05T12:15:00Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Github repo for the Experimental Factor Ontology (EFO)",
+    "name": "efo",
+    "updatedAt": "2025-09-26T13:08:16Z",
+    "url": "https://github.com/EBISPOT/efo",
+    "firstCommitDate": "2025-09-26T13:08:11Z",
+    "lastCommitDate": "2025-09-26T13:08:11Z",
+    "topContributors": [
+      {
+        "contributions": 1244,
+        "login": "zoependlington"
+      },
+      {
+        "contributions": 274,
+        "login": "twhetzel"
+      },
+      {
+        "contributions": 244,
+        "login": "ar-ibrahim"
+      },
+      {
+        "contributions": 237,
+        "login": "paolaroncaglia"
+      },
+      {
+        "contributions": 188,
+        "login": "kallia-p"
+      },
+      {
+        "contributions": 75,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 71,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 63,
+        "login": "daniwelter"
+      },
+      {
+        "contributions": 47,
+        "login": "siiraa"
+      },
+      {
+        "contributions": 24,
+        "login": "aleixpuigb"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-07-10T10:53:51Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "An ontological model for describing resources for  Rare Diseases catalogs including registries, biobanks, research infrastructures, genomes-phenome repositories, method standards, etc.  ",
+    "name": "EJP-Ontology",
+    "updatedAt": "2020-03-31T21:53:00Z",
+    "url": "https://github.com/EBISPOT/EJP-Ontology",
+    "firstCommitDate": "2020-03-31T21:48:46Z",
+    "lastCommitDate": "2020-03-31T21:48:46Z",
+    "topContributors": [
+      {
+        "contributions": 55,
+        "login": "S2Ola"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-05-05T12:29:57Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "The webpage describing all the metadata for the ejp rare diseases virtual platform for discovering catalogs/registries/biobanks resources",
+    "name": "ejprarediseases.github.io",
+    "updatedAt": "2020-05-18T14:04:51Z",
+    "url": "https://github.com/EBISPOT/ejprarediseases.github.io",
+    "firstCommitDate": "2020-05-18T14:02:59Z",
+    "lastCommitDate": "2020-05-18T14:02:59Z",
+    "topContributors": [
+      {
+        "contributions": 20,
+        "login": "S2Ola"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-05-05T12:41:34Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "This is for publishing EJP-RD registries , Biobanks and Catalogs metadata, through the  extraction, conversion, RDF schema and validating the RDF data using the ShExC ",
+    "name": "ejprd-metadata-models",
+    "updatedAt": "2022-10-28T10:50:37Z",
+    "url": "https://github.com/EBISPOT/ejprd-metadata-models",
+    "firstCommitDate": "2020-08-07T18:39:00Z",
+    "lastCommitDate": "2020-08-07T18:39:00Z",
+    "topContributors": [
+      {
+        "contributions": 25,
+        "login": "S2Ola"
+      },
+      {
+        "contributions": 6,
+        "login": "henrietteharmse"
+      },
+      {
+        "contributions": 2,
+        "login": "Olusol"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-01-15T13:38:36Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "eQTL Catalogue REST API",
+    "name": "eqtl-rest-api",
+    "updatedAt": "2025-01-15T13:41:42Z",
+    "url": "https://github.com/EBISPOT/eqtl-rest-api",
+    "firstCommitDate": "2025-01-15T13:38:37Z",
+    "lastCommitDate": "2025-01-15T13:38:37Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "karatugo"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-07-09T10:48:06Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "eQTL Summary Statistics Service",
+    "name": "eqtl-sumstats-service",
+    "updatedAt": "2025-06-27T14:42:51Z",
+    "url": "https://github.com/EBISPOT/eqtl-sumstats-service",
+    "firstCommitDate": "2025-06-27T14:41:19Z",
+    "lastCommitDate": "2025-06-27T14:41:19Z",
+    "topContributors": [
+      {
+        "contributions": 82,
+        "login": "karatugo"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-05-09T12:26:59Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Workshop material for the European Human Genetics Conference 2024",
+    "name": "eshg-2024-workshop",
+    "updatedAt": "2024-07-22T13:30:27Z",
+    "url": "https://github.com/EBISPOT/eshg-2024-workshop",
+    "firstCommitDate": "2024-07-22T13:30:22Z",
+    "lastCommitDate": "2024-07-22T13:30:22Z",
+    "topContributors": [
+      {
+        "contributions": 28,
+        "login": "nebfield"
+      },
+      {
+        "contributions": 9,
+        "login": "eks-ebi"
+      },
+      {
+        "contributions": 1,
+        "login": "smlmbrt"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-11-01T09:53:48Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A test implementation for development of the GA4GH API over BioSamples.",
+    "name": "ga4gh-biosamples",
+    "updatedAt": "2017-05-05T10:10:36Z",
+    "url": "https://github.com/EBISPOT/ga4gh-biosamples",
+    "firstCommitDate": "2017-06-04T02:40:42Z",
+    "lastCommitDate": "2017-06-04T02:40:42Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "mcourtot"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-06-01T15:24:40Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "goci-rest",
+    "updatedAt": "2025-02-13T15:14:50Z",
+    "url": "https://github.com/EBISPOT/goci-rest",
+    "firstCommitDate": "2025-02-13T15:14:41Z",
+    "lastCommitDate": "2025-02-13T15:14:41Z",
+    "topContributors": [
+      {
+        "contributions": 39,
+        "login": "jstewart-ebi"
+      },
+      {
+        "contributions": 28,
+        "login": "sprintell"
+      },
+      {
+        "contributions": 14,
+        "login": "sajo-ebi"
+      },
+      {
+        "contributions": 8,
+        "login": "ala-ebi"
+      },
+      {
+        "contributions": 3,
+        "login": "jdhayhurst"
+      }
+    ]
+  },
+  {
+    "createdAt": "2011-12-16T14:25:43Z",
+    "defaultBranchRef": {
+      "name": "2.x-stable"
+    },
+    "description": "GWAS Catalog Ontology and Curation Infrastructure",
+    "name": "goci",
+    "updatedAt": "2025-09-23T20:37:25Z",
+    "url": "https://github.com/EBISPOT/goci",
+    "firstCommitDate": "2025-09-23T20:37:16Z",
+    "lastCommitDate": "2025-09-23T20:37:16Z",
+    "topContributors": [
+      {
+        "contributions": 2972,
+        "login": "emma-ebi"
+      },
+      {
+        "contributions": 1385,
+        "login": "daniwelter"
+      },
+      {
+        "contributions": 846,
+        "login": "tburdett"
+      },
+      {
+        "contributions": 290,
+        "login": "jstewart-ebi"
+      },
+      {
+        "contributions": 155,
+        "login": "sajo-ebi"
+      },
+      {
+        "contributions": 103,
+        "login": "ala-ebi"
+      },
+      {
+        "contributions": 102,
+        "login": "sprintell"
+      },
+      {
+        "contributions": 84,
+        "login": "hxin"
+      },
+      {
+        "contributions": 58,
+        "login": "JalMacArthur"
+      },
+      {
+        "contributions": 54,
+        "login": "twhetzel"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-12-31T04:12:08Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "HPC aggregation pipeline and API/MCP server for LLM-mediated knowledge graphs",
+    "name": "GrEBI",
+    "updatedAt": "2025-09-30T10:42:30Z",
+    "url": "https://github.com/EBISPOT/GrEBI",
+    "firstCommitDate": "2025-09-30T10:42:26Z",
+    "lastCommitDate": "2025-09-30T10:42:26Z",
+    "topContributors": [
+      {
+        "contributions": 374,
+        "login": "jamesamcl"
+      },
+      {
+        "contributions": 6,
+        "login": "souzadevinicius"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-05-02T08:53:58Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Training material for the GWAS Catalog REST API workshop",
+    "name": "GWAS_Catalog-workshop",
+    "updatedAt": "2025-02-25T15:20:24Z",
+    "url": "https://github.com/EBISPOT/GWAS_Catalog-workshop",
+    "firstCommitDate": "2019-10-15T16:23:12Z",
+    "lastCommitDate": "2019-10-15T16:23:12Z",
+    "topContributors": [
+      {
+        "contributions": 12,
+        "login": "jdhayhurst"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-04-15T19:57:06Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "",
+    "name": "gwas_harm_status",
+    "updatedAt": "2025-05-15T16:14:28Z",
+    "url": "https://github.com/EBISPOT/gwas_harm_status",
+    "firstCommitDate": "2025-05-15T16:14:24Z",
+    "lastCommitDate": "2025-05-15T16:14:24Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "jiyue1214"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-03-03T16:30:16Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "gwas-assoc-tools",
+    "updatedAt": "2025-06-05T11:05:47Z",
+    "url": "https://github.com/EBISPOT/gwas-assoc-tools",
+    "firstCommitDate": "2025-06-05T11:04:51Z",
+    "lastCommitDate": "2025-06-05T11:04:51Z",
+    "topContributors": [
+      {
+        "contributions": 51,
+        "login": "karatugo"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-11-26T16:39:51Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "gwas-associationFilter",
+    "updatedAt": "2019-10-02T10:23:19Z",
+    "url": "https://github.com/EBISPOT/gwas-associationFilter",
+    "firstCommitDate": "2019-05-17T12:54:21Z",
+    "lastCommitDate": "2019-05-17T12:54:21Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2021-07-29T18:59:08Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "https://ebispot.github.io/gwas-blog",
+    "name": "gwas-blog",
+    "updatedAt": "2024-11-19T15:55:19Z",
+    "url": "https://github.com/EBISPOT/gwas-blog",
+    "firstCommitDate": "2024-11-19T15:55:08Z",
+    "lastCommitDate": "2024-11-19T15:55:08Z",
+    "topContributors": [
+      {
+        "contributions": 53,
+        "login": "sprintell"
+      },
+      {
+        "contributions": 25,
+        "login": "ala-ebi"
+      },
+      {
+        "contributions": 21,
+        "login": "ljwh2"
+      },
+      {
+        "contributions": 4,
+        "login": "jiyue1214"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-11-02T09:10:51Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "gwas-curation-service",
+    "updatedAt": "2025-08-27T12:32:37Z",
+    "url": "https://github.com/EBISPOT/gwas-curation-service",
+    "firstCommitDate": "2025-08-27T12:32:31Z",
+    "lastCommitDate": "2025-08-27T12:32:31Z",
+    "topContributors": [
+      {
+        "contributions": 392,
+        "login": "sajo-ebi"
+      },
+      {
+        "contributions": 145,
+        "login": "ala-ebi"
+      },
+      {
+        "contributions": 31,
+        "login": "sprintell"
+      },
+      {
+        "contributions": 1,
+        "login": "tudorgroza"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-03-15T17:13:43Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "The New Curation Front End interface for the GWAS Catalog",
+    "name": "gwas-curation-ui",
+    "updatedAt": "2025-01-21T11:48:35Z",
+    "url": "https://github.com/EBISPOT/gwas-curation-ui",
+    "firstCommitDate": "2025-01-21T11:48:29Z",
+    "lastCommitDate": "2025-01-21T11:48:29Z",
+    "topContributors": [
+      {
+        "contributions": 288,
+        "login": "ala-ebi"
+      },
+      {
+        "contributions": 35,
+        "login": "sajo-ebi"
+      },
+      {
+        "contributions": 30,
+        "login": "sprintell"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-07-13T08:51:27Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Scripts to help enhance GWAS curation tasks.",
+    "name": "gwas-curation-utils",
+    "updatedAt": "2021-11-12T12:33:54Z",
+    "url": "https://github.com/EBISPOT/gwas-curation-utils",
+    "firstCommitDate": "2021-11-12T12:33:41Z",
+    "lastCommitDate": "2021-11-12T12:33:41Z",
+    "topContributors": [
+      {
+        "contributions": 27,
+        "login": "twhetzel"
+      },
+      {
+        "contributions": 3,
+        "login": "jdhayhurst"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-04-16T09:54:11Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "This repo will be having common components used across multiple services",
+    "name": "gwas-data-commons",
+    "updatedAt": "2025-08-07T14:44:31Z",
+    "url": "https://github.com/EBISPOT/gwas-data-commons",
+    "firstCommitDate": "2025-08-07T14:44:26Z",
+    "lastCommitDate": "2025-08-07T14:44:26Z",
+    "topContributors": [
+      {
+        "contributions": 64,
+        "login": "sajo-ebi"
+      },
+      {
+        "contributions": 10,
+        "login": "ala-ebi"
+      },
+      {
+        "contributions": 10,
+        "login": "sprintell"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-06-15T12:07:53Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "gwas-data-services",
+    "updatedAt": "2025-09-25T10:46:55Z",
+    "url": "https://github.com/EBISPOT/gwas-data-services",
+    "firstCommitDate": "2025-09-25T10:46:51Z",
+    "lastCommitDate": "2025-09-25T10:46:51Z",
+    "topContributors": [
+      {
+        "contributions": 277,
+        "login": "sajo-ebi"
+      },
+      {
+        "contributions": 54,
+        "login": "sprintell"
+      },
+      {
+        "contributions": 10,
+        "login": "ala-ebi"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-07-03T14:00:01Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "gwas-deposition-app",
+    "updatedAt": "2019-12-04T16:47:23Z",
+    "url": "https://github.com/EBISPOT/gwas-deposition-app",
+    "firstCommitDate": "2019-12-04T16:47:20Z",
+    "lastCommitDate": "2019-12-04T16:47:20Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "twhetzel"
+      },
+      {
+        "contributions": 2,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 1,
+        "login": "tudorgroza"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-05-22T14:57:13Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Deposition application for submitting GWAS data.",
+    "name": "gwas-deposition-ui",
+    "updatedAt": "2025-09-23T13:54:16Z",
+    "url": "https://github.com/EBISPOT/gwas-deposition-ui",
+    "firstCommitDate": "2025-09-23T13:54:08Z",
+    "lastCommitDate": "2025-09-23T13:54:08Z",
+    "topContributors": [
+      {
+        "contributions": 472,
+        "login": "twhetzel"
+      },
+      {
+        "contributions": 120,
+        "login": "ala-ebi"
+      },
+      {
+        "contributions": 17,
+        "login": "sajo-ebi"
+      },
+      {
+        "contributions": 13,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 10,
+        "login": "sprintell"
+      },
+      {
+        "contributions": 6,
+        "login": "jstewart-ebi"
+      },
+      {
+        "contributions": 2,
+        "login": "tudorgroza"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-11-12T22:11:00Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Prototyping a new version of the GWAS Catalog diagram",
+    "name": "gwas-diagram",
+    "updatedAt": "2024-08-22T04:30:28Z",
+    "url": "https://github.com/EBISPOT/gwas-diagram",
+    "firstCommitDate": "2023-03-15T13:43:06Z",
+    "lastCommitDate": "2023-03-15T13:43:06Z",
+    "topContributors": [
+      {
+        "contributions": 16,
+        "login": "DSuveges"
+      },
+      {
+        "contributions": 5,
+        "login": "jdhayhurst"
+      },
+      {
+        "contributions": 1,
+        "login": "sprintell"
+      },
+      {
+        "contributions": 1,
+        "login": "codacy-badger"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-07-30T19:22:46Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "gwas-ebi-search-index",
+    "updatedAt": "2024-08-06T13:20:52Z",
+    "url": "https://github.com/EBISPOT/gwas-ebi-search-index",
+    "firstCommitDate": "2024-08-06T13:20:42Z",
+    "lastCommitDate": "2024-08-06T13:20:42Z",
+    "topContributors": [
+      {
+        "contributions": 18,
+        "login": "twhetzel"
+      },
+      {
+        "contributions": 4,
+        "login": "jdhayhurst"
+      },
+      {
+        "contributions": 2,
+        "login": "karatugo"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-11-14T17:16:32Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "gwas-es-client",
+    "updatedAt": "2022-11-15T10:35:07Z",
+    "url": "https://github.com/EBISPOT/gwas-es-client",
+    "firstCommitDate": "2022-11-16T16:21:13Z",
+    "lastCommitDate": "2022-11-16T16:21:13Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "ala-ebi"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-03-21T15:22:02Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "gwas-fix-existing-obsolete-traits",
+    "updatedAt": "2025-09-30T15:12:36Z",
+    "url": "https://github.com/EBISPOT/gwas-fix-existing-obsolete-traits",
+    "firstCommitDate": "2025-09-30T15:12:28Z",
+    "lastCommitDate": "2025-09-30T15:12:28Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "ala-ebi"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-04-02T16:08:47Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "GWAS Catalog gene-based tools",
+    "name": "gwas-gene-based",
+    "updatedAt": "2025-04-03T15:58:56Z",
+    "url": "https://github.com/EBISPOT/gwas-gene-based",
+    "firstCommitDate": "2025-04-03T15:58:50Z",
+    "lastCommitDate": "2025-04-03T15:58:50Z",
+    "topContributors": [
+      {
+        "contributions": 10,
+        "login": "nebfield"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-09-29T13:40:59Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Unified GWAS Catalog sumstat data models 🐈",
+    "name": "gwas-meowdels",
+    "updatedAt": "2025-09-29T14:14:42Z",
+    "url": "https://github.com/EBISPOT/gwas-meowdels",
+    "firstCommitDate": "2025-09-29T14:14:36Z",
+    "lastCommitDate": "2025-09-29T14:14:36Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "nebfield"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-10-15T18:39:34Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Refactoring Code for Rest API",
+    "name": "gwas-rest-api",
+    "updatedAt": "2025-09-24T14:53:48Z",
+    "url": "https://github.com/EBISPOT/gwas-rest-api",
+    "firstCommitDate": "2025-09-24T14:53:43Z",
+    "lastCommitDate": "2025-09-24T14:53:43Z",
+    "topContributors": [
+      {
+        "contributions": 138,
+        "login": "sajo-ebi"
+      },
+      {
+        "contributions": 46,
+        "login": "ala-ebi"
+      },
+      {
+        "contributions": 10,
+        "login": "sprintell"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-06-26T10:28:47Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "gwas-solr-slim",
+    "updatedAt": "2024-10-10T16:28:37Z",
+    "url": "https://github.com/EBISPOT/gwas-solr-slim",
+    "firstCommitDate": "2024-10-10T16:28:33Z",
+    "lastCommitDate": "2024-10-10T16:28:33Z",
+    "topContributors": [
+      {
+        "contributions": 76,
+        "login": "twhetzel"
+      },
+      {
+        "contributions": 26,
+        "login": "jdhayhurst"
+      },
+      {
+        "contributions": 11,
+        "login": "karatugo"
+      },
+      {
+        "contributions": 3,
+        "login": "cmalangone"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-05-17T07:49:26Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Documentation on new GWAS Summary Statistics Standard",
+    "name": "gwas-summary-statistics-standard",
+    "updatedAt": "2025-08-27T04:26:55Z",
+    "url": "https://github.com/EBISPOT/gwas-summary-statistics-standard",
+    "firstCommitDate": "2024-08-14T10:33:58Z",
+    "lastCommitDate": "2024-08-14T10:33:58Z",
+    "topContributors": [
+      {
+        "contributions": 42,
+        "login": "jdhayhurst"
+      },
+      {
+        "contributions": 2,
+        "login": "karatugo"
+      },
+      {
+        "contributions": 2,
+        "login": "jiyue1214"
+      },
+      {
+        "contributions": 1,
+        "login": "sprintell"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-10-22T13:01:50Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "gwas-sumstats-harmoniser-documentation",
+    "name": "gwas-sumstats-harmoniser-documentation",
+    "updatedAt": "2025-02-26T12:17:19Z",
+    "url": "https://github.com/EBISPOT/gwas-sumstats-harmoniser-documentation",
+    "firstCommitDate": "2025-02-19T17:20:43Z",
+    "lastCommitDate": "2025-02-19T17:20:43Z",
+    "topContributors": [
+      {
+        "contributions": 58,
+        "login": "jiyue1214"
+      },
+      {
+        "contributions": 16,
+        "login": "earlEBI"
+      },
+      {
+        "contributions": 4,
+        "login": "karatugo"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-05-21T16:33:14Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "GWAS Summary Statistics Data Harmonisation",
+    "name": "gwas-sumstats-harmoniser",
+    "updatedAt": "2025-05-12T11:39:31Z",
+    "url": "https://github.com/EBISPOT/gwas-sumstats-harmoniser",
+    "firstCommitDate": "2025-01-13T18:33:23Z",
+    "lastCommitDate": "2025-01-13T18:33:23Z",
+    "topContributors": [
+      {
+        "contributions": 149,
+        "login": "jiyue1214"
+      },
+      {
+        "contributions": 58,
+        "login": "jdhayhurst"
+      },
+      {
+        "contributions": 3,
+        "login": "smlmbrt"
+      },
+      {
+        "contributions": 2,
+        "login": "karatugo"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-07-11T08:59:05Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Summary statistics service",
+    "name": "gwas-sumstats-service",
+    "updatedAt": "2025-09-01T13:02:10Z",
+    "url": "https://github.com/EBISPOT/gwas-sumstats-service",
+    "firstCommitDate": "2025-09-01T13:02:06Z",
+    "lastCommitDate": "2025-09-01T13:02:06Z",
+    "topContributors": [
+      {
+        "contributions": 691,
+        "login": "jdhayhurst"
+      },
+      {
+        "contributions": 124,
+        "login": "karatugo"
+      },
+      {
+        "contributions": 20,
+        "login": "jiyue1214"
+      },
+      {
+        "contributions": 4,
+        "login": "sajo-ebi"
+      },
+      {
+        "contributions": 3,
+        "login": "jstewart-ebi"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-04-23T19:40:04Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Documentation to gwas-sumstats-tools",
+    "name": "gwas-sumstats-tools-documentation",
+    "updatedAt": "2025-01-14T19:51:25Z",
+    "url": "https://github.com/EBISPOT/gwas-sumstats-tools-documentation",
+    "firstCommitDate": "2025-01-14T19:51:21Z",
+    "lastCommitDate": "2025-01-14T19:51:21Z",
+    "topContributors": [
+      {
+        "contributions": 23,
+        "login": "jiyue1214"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-04-16T16:41:44Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Format gwas summary statistic data into gwas-ssf",
+    "name": "gwas-sumstats-tools-ssf-morph",
+    "updatedAt": "2025-08-05T19:11:12Z",
+    "url": "https://github.com/EBISPOT/gwas-sumstats-tools-ssf-morph",
+    "firstCommitDate": "2025-08-05T19:11:07Z",
+    "lastCommitDate": "2025-08-05T19:11:07Z",
+    "topContributors": [
+      {
+        "contributions": 21,
+        "login": "jiyue1214"
+      },
+      {
+        "contributions": 19,
+        "login": "nebfield"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-02-10T17:34:29Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "gwas-sumstats-tools",
+    "name": "gwas-sumstats-tools",
+    "updatedAt": "2025-07-07T15:12:03Z",
+    "url": "https://github.com/EBISPOT/gwas-sumstats-tools",
+    "firstCommitDate": "2025-07-07T15:09:15Z",
+    "lastCommitDate": "2025-07-07T15:09:15Z",
+    "topContributors": [
+      {
+        "contributions": 89,
+        "login": "jdhayhurst"
+      },
+      {
+        "contributions": 30,
+        "login": "karatugo"
+      },
+      {
+        "contributions": 23,
+        "login": "jiyue1214"
+      },
+      {
+        "contributions": 1,
+        "login": "jaamarks"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-08-02T10:57:52Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "GWAS Summary Statistics File Validator",
+    "name": "gwas-sumstats-validator",
+    "updatedAt": "2025-04-09T15:26:26Z",
+    "url": "https://github.com/EBISPOT/gwas-sumstats-validator",
+    "firstCommitDate": "2023-04-11T15:58:41Z",
+    "lastCommitDate": "2023-04-11T15:58:41Z",
+    "topContributors": [
+      {
+        "contributions": 127,
+        "login": "jdhayhurst"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-05-30T22:38:01Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Application to provide template related services for the deposition interface",
+    "name": "gwas-template-services",
+    "updatedAt": "2025-05-27T10:02:07Z",
+    "url": "https://github.com/EBISPOT/gwas-template-services",
+    "firstCommitDate": "2025-05-23T14:23:50Z",
+    "lastCommitDate": "2025-05-23T14:23:50Z",
+    "topContributors": [
+      {
+        "contributions": 55,
+        "login": "jdhayhurst"
+      },
+      {
+        "contributions": 42,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 15,
+        "login": "karatugo"
+      },
+      {
+        "contributions": 8,
+        "login": "ala-ebi"
+      },
+      {
+        "contributions": 8,
+        "login": "sajo-ebi"
+      },
+      {
+        "contributions": 1,
+        "login": "codacy-badger"
+      },
+      {
+        "contributions": 1,
+        "login": "tudorgroza"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-06-17T15:40:09Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "gwas-template-validator",
+    "updatedAt": "2019-06-19T14:57:00Z",
+    "url": "https://github.com/EBISPOT/gwas-template-validator",
+    "firstCommitDate": "2019-06-19T14:56:18Z",
+    "lastCommitDate": "2019-06-19T14:56:18Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2018-06-26T07:15:50Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "gwas-ui",
+    "updatedAt": "2025-09-26T15:42:13Z",
+    "url": "https://github.com/EBISPOT/gwas-ui",
+    "firstCommitDate": "2025-09-26T15:42:10Z",
+    "lastCommitDate": "2025-09-26T15:42:10Z",
+    "topContributors": [
+      {
+        "contributions": 408,
+        "login": "ala-ebi"
+      },
+      {
+        "contributions": 287,
+        "login": "twhetzel"
+      },
+      {
+        "contributions": 224,
+        "login": "eks-ebi"
+      },
+      {
+        "contributions": 135,
+        "login": "jstewart-ebi"
+      },
+      {
+        "contributions": 128,
+        "login": "ljwh2"
+      },
+      {
+        "contributions": 113,
+        "login": "sajo-ebi"
+      },
+      {
+        "contributions": 99,
+        "login": "sprintell"
+      },
+      {
+        "contributions": 95,
+        "login": "JalMacArthur"
+      },
+      {
+        "contributions": 54,
+        "login": "cmalangone"
+      },
+      {
+        "contributions": 50,
+        "login": "buniello"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-07-09T20:08:57Z",
+    "defaultBranchRef": {
+      "name": ""
+    },
+    "description": "Repository to collect user requests and bug reports for the GWAS Catalog",
+    "name": "gwas-user-requests",
+    "updatedAt": "2020-11-03T03:54:20Z",
+    "url": "https://github.com/EBISPOT/gwas-user-requests",
+    "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+    "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+  },
+  {
+    "createdAt": "2019-04-15T09:35:22Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Collection of tools and scripts to manage GWAS Catalog related infrastructure.",
+    "name": "gwas-utils",
+    "updatedAt": "2025-06-02T12:28:34Z",
+    "url": "https://github.com/EBISPOT/gwas-utils",
+    "firstCommitDate": "2025-06-02T11:02:12Z",
+    "lastCommitDate": "2025-06-02T11:02:12Z",
+    "topContributors": [
+      {
+        "contributions": 259,
+        "login": "jdhayhurst"
+      },
+      {
+        "contributions": 39,
+        "login": "karatugo"
+      },
+      {
+        "contributions": 22,
+        "login": "ala-ebi"
+      },
+      {
+        "contributions": 21,
+        "login": "sajo-ebi"
+      },
+      {
+        "contributions": 20,
+        "login": "jstewart-ebi"
+      },
+      {
+        "contributions": 10,
+        "login": "DSuveges"
+      },
+      {
+        "contributions": 8,
+        "login": "twhetzel"
+      },
+      {
+        "contributions": 1,
+        "login": "eks-ebi"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-06-10T09:50:37Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Zuul Proxy for Legacy Apps",
+    "name": "gwas-zuul-gateway",
+    "updatedAt": "2021-06-10T09:58:04Z",
+    "url": "https://github.com/EBISPOT/gwas-zuul-gateway",
+    "firstCommitDate": "2021-06-10T09:50:38Z",
+    "lastCommitDate": "2021-06-10T09:50:38Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "sajo-ebi"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-02-16T10:51:52Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "gwasdepo-audit-service",
+    "updatedAt": "2025-06-11T10:38:21Z",
+    "url": "https://github.com/EBISPOT/gwasdepo-audit-service",
+    "firstCommitDate": "2025-06-11T10:38:16Z",
+    "lastCommitDate": "2025-06-11T10:38:16Z",
+    "topContributors": [
+      {
+        "contributions": 33,
+        "login": "sajo-ebi"
+      },
+      {
+        "contributions": 21,
+        "login": "tudorgroza"
+      },
+      {
+        "contributions": 10,
+        "login": "ala-ebi"
+      },
+      {
+        "contributions": 1,
+        "login": "jstewart-ebi"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-02-16T10:48:33Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "gwasdepo-commons",
+    "updatedAt": "2025-04-29T10:31:04Z",
+    "url": "https://github.com/EBISPOT/gwasdepo-commons",
+    "firstCommitDate": "2025-04-29T10:31:00Z",
+    "lastCommitDate": "2025-04-29T10:31:00Z",
+    "topContributors": [
+      {
+        "contributions": 153,
+        "login": "sajo-ebi"
+      },
+      {
+        "contributions": 67,
+        "login": "ala-ebi"
+      },
+      {
+        "contributions": 8,
+        "login": "sprintell"
+      },
+      {
+        "contributions": 5,
+        "login": "tudorgroza"
+      },
+      {
+        "contributions": 1,
+        "login": "jstewart-ebi"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-02-16T10:50:56Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "gwasdepo-deposition-service",
+    "updatedAt": "2025-06-13T16:12:06Z",
+    "url": "https://github.com/EBISPOT/gwasdepo-deposition-service",
+    "firstCommitDate": "2025-06-13T16:11:58Z",
+    "lastCommitDate": "2025-06-13T16:11:58Z",
+    "topContributors": [
+      {
+        "contributions": 297,
+        "login": "sajo-ebi"
+      },
+      {
+        "contributions": 127,
+        "login": "ala-ebi"
+      },
+      {
+        "contributions": 42,
+        "login": "tudorgroza"
+      },
+      {
+        "contributions": 1,
+        "login": "jstewart-ebi"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-02-16T10:51:28Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "gwasdepo-ingest-service",
+    "updatedAt": "2025-04-29T10:43:12Z",
+    "url": "https://github.com/EBISPOT/gwasdepo-ingest-service",
+    "firstCommitDate": "2025-04-29T10:43:07Z",
+    "lastCommitDate": "2025-04-29T10:43:07Z",
+    "topContributors": [
+      {
+        "contributions": 40,
+        "login": "sajo-ebi"
+      },
+      {
+        "contributions": 28,
+        "login": "ala-ebi"
+      },
+      {
+        "contributions": 24,
+        "login": "sprintell"
+      },
+      {
+        "contributions": 15,
+        "login": "tudorgroza"
+      },
+      {
+        "contributions": 1,
+        "login": "jstewart-ebi"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-02-16T10:48:04Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "gwasdepo-master",
+    "updatedAt": "2025-04-29T10:41:31Z",
+    "url": "https://github.com/EBISPOT/gwasdepo-master",
+    "firstCommitDate": "2025-04-29T10:41:27Z",
+    "lastCommitDate": "2025-04-29T10:41:27Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "ala-ebi"
+      },
+      {
+        "contributions": 1,
+        "login": "jstewart-ebi"
+      },
+      {
+        "contributions": 1,
+        "login": "tudorgroza"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-02-16T10:52:42Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "gwasdepo-template-validator",
+    "updatedAt": "2025-05-19T17:24:07Z",
+    "url": "https://github.com/EBISPOT/gwasdepo-template-validator",
+    "firstCommitDate": "2025-05-19T17:24:00Z",
+    "lastCommitDate": "2025-05-19T17:24:00Z",
+    "topContributors": [
+      {
+        "contributions": 27,
+        "login": "ala-ebi"
+      },
+      {
+        "contributions": 23,
+        "login": "sajo-ebi"
+      },
+      {
+        "contributions": 9,
+        "login": "tudorgroza"
+      },
+      {
+        "contributions": 1,
+        "login": "jstewart-ebi"
+      }
+    ]
+  },
+  {
+    "createdAt": "2014-05-14T09:00:30Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "hancestro",
+    "updatedAt": "2025-09-09T14:13:02Z",
+    "url": "https://github.com/EBISPOT/hancestro",
+    "firstCommitDate": "2025-09-09T14:12:51Z",
+    "lastCommitDate": "2025-09-09T14:12:51Z",
+    "topContributors": [
+      {
+        "contributions": 171,
+        "login": "daniwelter"
+      },
+      {
+        "contributions": 24,
+        "login": "anitacaron"
+      },
+      {
+        "contributions": 4,
+        "login": "aleixpuigb"
+      },
+      {
+        "contributions": 2,
+        "login": "EmilyBowlerBarnett"
+      },
+      {
+        "contributions": 1,
+        "login": "cthoyt"
+      },
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 1,
+        "login": "jamesamcl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-07-29T10:03:58Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "",
+    "name": "hra-ols",
+    "updatedAt": "2024-08-19T15:04:02Z",
+    "url": "https://github.com/EBISPOT/hra-ols",
+    "firstCommitDate": "2024-08-19T15:03:51Z",
+    "lastCommitDate": "2024-08-19T15:03:51Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "jamesamcl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-05-23T08:51:55Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Material for the ICBO workshop on SPOT ontology tools",
+    "name": "icbo-ontologies-workshop",
+    "updatedAt": "2017-05-23T08:52:06Z",
+    "url": "https://github.com/EBISPOT/icbo-ontologies-workshop",
+    "firstCommitDate": "2017-05-30T10:31:55Z",
+    "lastCommitDate": "2017-05-30T10:31:55Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "mcourtot"
+      },
+      {
+        "contributions": 1,
+        "login": "simonjupp"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-09-07T13:31:27Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "The SPOT Ontology Toolkit - Tutorial for ICBO 2017",
+    "name": "ICBO2017",
+    "updatedAt": "2023-08-16T18:29:11Z",
+    "url": "https://github.com/EBISPOT/ICBO2017",
+    "firstCommitDate": "2017-09-12T10:14:15Z",
+    "lastCommitDate": "2017-09-12T10:14:15Z",
+    "topContributors": [
+      {
+        "contributions": 16,
+        "login": "olgavrou"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-06-30T12:43:59Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "",
+    "name": "june-2025-phenio-debugging",
+    "updatedAt": "2025-06-30T12:45:58Z",
+    "url": "https://github.com/EBISPOT/june-2025-phenio-debugging",
+    "firstCommitDate": "2025-06-30T12:45:30Z",
+    "lastCommitDate": "2025-06-30T12:45:30Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "jamesamcl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2013-07-16T22:12:56Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Linked Data explorer and SPARQL endpoint",
+    "name": "lodestar",
+    "updatedAt": "2023-09-04T04:26:08Z",
+    "url": "https://github.com/EBISPOT/lodestar",
+    "firstCommitDate": "2018-06-05T08:53:50Z",
+    "lastCommitDate": "2018-06-05T08:53:50Z",
+    "topContributors": [
+      {
+        "contributions": 79,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 13,
+        "login": "danizen"
+      },
+      {
+        "contributions": 6,
+        "login": "tburdett"
+      },
+      {
+        "contributions": 2,
+        "login": "LLTommy"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-05-03T13:46:03Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Logos for spot tools",
+    "name": "logos",
+    "updatedAt": "2018-04-16T14:37:19Z",
+    "url": "https://github.com/EBISPOT/logos",
+    "firstCommitDate": "2018-04-16T14:37:17Z",
+    "lastCommitDate": "2018-04-16T14:37:17Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "simonjupp"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-11-29T16:19:53Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A resting place for the MAMO ontology that is no longer maintained.",
+    "name": "mamo",
+    "updatedAt": "2023-11-29T16:19:53Z",
+    "url": "https://github.com/EBISPOT/mamo",
+    "firstCommitDate": "2023-11-29T16:40:47Z",
+    "lastCommitDate": "2023-11-29T16:40:47Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "henrietteharmse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-03-27T14:54:02Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Lib for importing classes into an ontology",
+    "name": "mireotimporter",
+    "updatedAt": "2015-06-03T16:09:30Z",
+    "url": "https://github.com/EBISPOT/mireotimporter",
+    "firstCommitDate": "2015-06-03T16:10:32Z",
+    "lastCommitDate": "2015-06-03T16:10:32Z",
+    "topContributors": [
+      {
+        "contributions": 26,
+        "login": "jamesmalone"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-03-25T18:52:26Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "monarch_pheval",
+    "updatedAt": "2025-03-25T18:52:26Z",
+    "url": "https://github.com/EBISPOT/monarch_pheval",
+    "firstCommitDate": "2024-11-04T09:42:49Z",
+    "lastCommitDate": "2024-11-04T09:42:49Z",
+    "topContributors": [
+      {
+        "contributions": 58,
+        "login": "souzadevinicius"
+      }
+    ]
+  },
+  {
+    "createdAt": "2014-09-30T15:25:02Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Open Biomedical Annotations - used to describe associations between biomedical entities",
+    "name": "OBAN",
+    "updatedAt": "2020-09-22T18:04:59Z",
+    "url": "https://github.com/EBISPOT/OBAN",
+    "firstCommitDate": "2016-03-09T09:36:48Z",
+    "lastCommitDate": "2016-03-09T09:36:48Z",
+    "topContributors": [
+      {
+        "contributions": 20,
+        "login": "siiraa"
+      },
+      {
+        "contributions": 4,
+        "login": "jamesmalone"
+      },
+      {
+        "contributions": 2,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 1,
+        "login": "mbrush"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-04-02T05:27:07Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Special OLS instances loaded with SNOMED for testing purposes",
+    "name": "ols_snomed",
+    "updatedAt": "2020-08-29T14:20:03Z",
+    "url": "https://github.com/EBISPOT/ols_snomed",
+    "firstCommitDate": "2020-07-27T10:59:56Z",
+    "lastCommitDate": "2020-07-27T10:59:56Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-09-01T09:16:35Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Stand alone auto complete widget for ontologies using the Ontology Lookup Service (OLS) ",
+    "name": "OLS-autocomplete",
+    "updatedAt": "2023-09-26T18:33:41Z",
+    "url": "https://github.com/EBISPOT/OLS-autocomplete",
+    "firstCommitDate": "2018-07-17T14:42:58Z",
+    "lastCommitDate": "2018-07-17T14:42:58Z",
+    "topContributors": [
+      {
+        "contributions": 15,
+        "login": "LLTommy"
+      },
+      {
+        "contributions": 5,
+        "login": "simonjupp"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-05-27T10:03:51Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Java ols client designed for OLS-Dialog tool",
+    "name": "ols-client",
+    "updatedAt": "2024-10-07T10:04:23Z",
+    "url": "https://github.com/EBISPOT/ols-client",
+    "firstCommitDate": "2018-11-01T13:09:40Z",
+    "lastCommitDate": "2018-11-01T13:09:40Z",
+    "topContributors": [
+      {
+        "contributions": 67,
+        "login": "ypriverol"
+      },
+      {
+        "contributions": 35,
+        "login": "olgavrou"
+      },
+      {
+        "contributions": 30,
+        "login": "tschaka1904"
+      },
+      {
+        "contributions": 12,
+        "login": "Tobias-Ternent"
+      },
+      {
+        "contributions": 8,
+        "login": "mbdebian"
+      },
+      {
+        "contributions": 4,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 4,
+        "login": "proteomics-developers"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-11-28T15:14:02Z",
+    "defaultBranchRef": {
+      "name": "prod"
+    },
+    "description": "Configuration for OLS",
+    "name": "OLS-Config",
+    "updatedAt": "2023-01-08T21:48:55Z",
+    "url": "https://github.com/EBISPOT/OLS-Config",
+    "firstCommitDate": "2022-12-19T08:47:12Z",
+    "lastCommitDate": "2022-12-19T08:47:12Z",
+    "topContributors": [
+      {
+        "contributions": 16,
+        "login": "jamesamcl"
+      },
+      {
+        "contributions": 12,
+        "login": "serjoshua"
+      },
+      {
+        "contributions": 11,
+        "login": "henrietteharmse"
+      },
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 1,
+        "login": "rays22"
+      },
+      {
+        "contributions": 1,
+        "login": "shawntanzk"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-06-05T16:16:22Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "OLS-docker",
+    "updatedAt": "2020-01-31T15:18:52Z",
+    "url": "https://github.com/EBISPOT/OLS-docker",
+    "firstCommitDate": "2019-06-05T16:17:06Z",
+    "lastCommitDate": "2019-06-05T16:17:06Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "simonjupp"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-06-18T13:23:14Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Autocomplete widgets to consume the new-generation EBI Ontology Lookup Service API",
+    "name": "ols-ebi-widgets",
+    "updatedAt": "2015-06-18T13:23:14Z",
+    "url": "https://github.com/EBISPOT/ols-ebi-widgets",
+    "firstCommitDate": "2015-06-16T20:57:20Z",
+    "lastCommitDate": "2015-06-16T20:57:20Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2019-11-06T10:04:50Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Jupyter notebook describing steps to set up a custom instance of OLS on EMBL/EBI Embassy Cloud",
+    "name": "ols-embassy",
+    "updatedAt": "2019-11-14T06:33:46Z",
+    "url": "https://github.com/EBISPOT/ols-embassy",
+    "firstCommitDate": "2019-11-13T22:14:35Z",
+    "lastCommitDate": "2019-11-13T22:14:35Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "warrenread"
+      },
+      {
+        "contributions": 5,
+        "login": "simonjupp"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-01-15T10:28:45Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Ontology visualisation widget for EBI's Ontology Lookup Service (OLS)",
+    "name": "OLS-graphview",
+    "updatedAt": "2022-06-07T09:46:10Z",
+    "url": "https://github.com/EBISPOT/OLS-graphview",
+    "firstCommitDate": "2018-07-17T15:12:50Z",
+    "lastCommitDate": "2018-07-17T15:12:50Z",
+    "topContributors": [
+      {
+        "contributions": 40,
+        "login": "LLTommy"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-08-04T08:43:32Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "ols-log-analysis",
+    "updatedAt": "2022-05-03T15:51:33Z",
+    "url": "https://github.com/EBISPOT/ols-log-analysis",
+    "firstCommitDate": "2022-05-03T15:50:31Z",
+    "lastCommitDate": "2022-05-03T15:50:31Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "henrietteharmse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-07-24T14:38:02Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "",
+    "name": "ols-semsim",
+    "updatedAt": "2025-08-06T08:32:15Z",
+    "url": "https://github.com/EBISPOT/ols-semsim",
+    "firstCommitDate": "2025-07-30T17:02:25Z",
+    "lastCommitDate": "2025-07-30T17:02:25Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "jamesamcl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-06-23T22:03:04Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "ols-solr-docker",
+    "updatedAt": "2020-06-23T22:17:24Z",
+    "url": "https://github.com/EBISPOT/ols-solr-docker",
+    "firstCommitDate": "2020-06-23T22:03:41Z",
+    "lastCommitDate": "2020-06-23T22:03:41Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "jamesamcl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-07-08T15:59:46Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "ols-tabbed-term-treeview",
+    "updatedAt": "2019-08-14T12:19:09Z",
+    "url": "https://github.com/EBISPOT/ols-tabbed-term-treeview",
+    "firstCommitDate": "2019-08-14T12:18:46Z",
+    "lastCommitDate": "2019-08-14T12:18:46Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "henrietteharmse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-07-08T15:54:19Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "ols-term-type-treeview",
+    "updatedAt": "2019-11-18T14:36:00Z",
+    "url": "https://github.com/EBISPOT/ols-term-type-treeview",
+    "firstCommitDate": "2019-11-18T14:34:50Z",
+    "lastCommitDate": "2019-11-18T14:34:50Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "henrietteharmse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-08-23T10:26:02Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "This is the standalone widget for the OLS treeview",
+    "name": "OLS-treeview",
+    "updatedAt": "2023-09-26T18:33:44Z",
+    "url": "https://github.com/EBISPOT/OLS-treeview",
+    "firstCommitDate": "2018-06-21T16:11:44Z",
+    "lastCommitDate": "2018-06-21T16:11:44Z",
+    "topContributors": [
+      {
+        "contributions": 16,
+        "login": "LLTommy"
+      },
+      {
+        "contributions": 2,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 1,
+        "login": "glenn124f"
+      }
+    ]
+  },
+  {
+    "createdAt": "2014-11-03T15:00:58Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "Ontology Lookup Service from SPOT at EBI",
+    "name": "OLS",
+    "updatedAt": "2025-08-20T11:01:34Z",
+    "url": "https://github.com/EBISPOT/OLS",
+    "firstCommitDate": "2023-04-28T20:09:18Z",
+    "lastCommitDate": "2023-04-28T20:09:18Z",
+    "topContributors": [
+      {
+        "contributions": 369,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 171,
+        "login": "jamesamcl"
+      },
+      {
+        "contributions": 102,
+        "login": "henrietteharmse"
+      },
+      {
+        "contributions": 67,
+        "login": "LLTommy"
+      },
+      {
+        "contributions": 46,
+        "login": "warrenread"
+      },
+      {
+        "contributions": 36,
+        "login": "serjoshua"
+      },
+      {
+        "contributions": 8,
+        "login": "CatherineLeroy"
+      },
+      {
+        "contributions": 7,
+        "login": "giraygi"
+      },
+      {
+        "contributions": 5,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 4,
+        "login": "olgavrou"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-05-25T22:00:16Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "The EMBL-EBI Ontology Lookup Service (OLS)",
+    "name": "ols4",
+    "updatedAt": "2025-09-30T15:45:47Z",
+    "url": "https://github.com/EBISPOT/ols4",
+    "firstCommitDate": "2025-09-30T15:45:44Z",
+    "lastCommitDate": "2025-09-30T15:45:44Z",
+    "topContributors": [
+      {
+        "contributions": 654,
+        "login": "jamesamcl"
+      },
+      {
+        "contributions": 353,
+        "login": "henrietteharmse"
+      },
+      {
+        "contributions": 262,
+        "login": "haideriqbal"
+      },
+      {
+        "contributions": 101,
+        "login": "serjoshua"
+      },
+      {
+        "contributions": 14,
+        "login": "cthoyt"
+      },
+      {
+        "contributions": 6,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 5,
+        "login": "julian-schneider"
+      },
+      {
+        "contributions": 3,
+        "login": "giraygi"
+      },
+      {
+        "contributions": 2,
+        "login": "deepananbu"
+      },
+      {
+        "contributions": 2,
+        "login": "mdrishti"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-02-04T09:21:31Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Ontology training tutorial, built on ODK",
+    "name": "ont_training_tutorial",
+    "updatedAt": "2021-02-04T09:21:35Z",
+    "url": "https://github.com/EBISPOT/ont_training_tutorial",
+    "firstCommitDate": "2021-02-04T09:21:32Z",
+    "lastCommitDate": "2021-02-04T09:21:32Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "dosumis"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-12-06T10:01:08Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A collection of ontology editor training materials",
+    "name": "ontology_editor_training",
+    "updatedAt": "2023-04-13T12:51:51Z",
+    "url": "https://github.com/EBISPOT/ontology_editor_training",
+    "firstCommitDate": "2023-04-13T12:51:52Z",
+    "lastCommitDate": "2023-04-13T12:51:52Z",
+    "topContributors": [
+      {
+        "contributions": 18,
+        "login": "dosumis"
+      },
+      {
+        "contributions": 8,
+        "login": "shawntanzk"
+      },
+      {
+        "contributions": 2,
+        "login": "JArgasinska"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-03-27T14:50:56Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A tool to extract a list of ontology terms for importing into another ontology given parents are provided.",
+    "name": "ontology-extractor",
+    "updatedAt": "2019-03-27T14:58:14Z",
+    "url": "https://github.com/EBISPOT/ontology-extractor",
+    "firstCommitDate": "2019-03-27T14:57:59Z",
+    "lastCommitDate": "2019-03-27T14:57:59Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "zoependlington"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-11-02T10:47:32Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Sourcecode for SPOT ontology web pages",
+    "name": "ontology-webpages",
+    "updatedAt": "2022-11-22T15:32:25Z",
+    "url": "https://github.com/EBISPOT/ontology-webpages",
+    "firstCommitDate": "2022-11-22T15:49:26Z",
+    "lastCommitDate": "2022-11-22T15:49:26Z",
+    "topContributors": [
+      {
+        "contributions": 120,
+        "login": "olgavrou"
+      },
+      {
+        "contributions": 39,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 12,
+        "login": "LLTommy"
+      },
+      {
+        "contributions": 7,
+        "login": "jamesamcl"
+      },
+      {
+        "contributions": 3,
+        "login": "serjoshua"
+      },
+      {
+        "contributions": 1,
+        "login": "paolaroncaglia"
+      }
+    ]
+  },
+  {
+    "createdAt": "2014-11-04T16:52:54Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "ontologyReasoner",
+    "updatedAt": "2015-10-19T15:03:24Z",
+    "url": "https://github.com/EBISPOT/ontologyReasoner",
+    "firstCommitDate": "2015-10-22T15:13:13Z",
+    "lastCommitDate": "2015-10-22T15:13:13Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "daniwelter"
+      },
+      {
+        "contributions": 2,
+        "login": "CatherineLeroy"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-07-10T08:49:10Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "OntologyToolsTest",
+    "updatedAt": "2023-10-04T13:39:05Z",
+    "url": "https://github.com/EBISPOT/OntologyToolsTest",
+    "firstCommitDate": "2023-10-04T13:39:02Z",
+    "lastCommitDate": "2023-10-04T13:39:02Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "henrietteharmse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-05-09T10:58:55Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Regenerate and enrich the GWAS spreadsheet by mapping EFO terms to outside ontologies",
+    "name": "ontomapper",
+    "updatedAt": "2018-07-06T12:24:09Z",
+    "url": "https://github.com/EBISPOT/ontomapper",
+    "firstCommitDate": "2018-07-06T12:14:09Z",
+    "lastCommitDate": "2018-07-06T12:14:09Z",
+    "topContributors": [
+      {
+        "contributions": 40,
+        "login": "warrenread"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-02-20T12:46:14Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A set of tools that annotate free text to ontologies using LLMs.",
+    "name": "ontoSPOT-annotation",
+    "updatedAt": "2025-08-18T15:40:21Z",
+    "url": "https://github.com/EBISPOT/ontoSPOT-annotation",
+    "firstCommitDate": "2025-08-18T15:38:26Z",
+    "lastCommitDate": "2025-08-18T15:38:26Z",
+    "topContributors": [
+      {
+        "contributions": 13,
+        "login": "aleixpuigb"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-01-27T10:23:08Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "Tool for curating mappings from free text to ontology terms",
+    "name": "OntoString",
+    "updatedAt": "2023-04-25T14:34:43Z",
+    "url": "https://github.com/EBISPOT/OntoString",
+    "firstCommitDate": "2023-05-30T16:23:12Z",
+    "lastCommitDate": "2023-05-30T16:23:12Z",
+    "topContributors": [
+      {
+        "contributions": 60,
+        "login": "jamesamcl"
+      },
+      {
+        "contributions": 55,
+        "login": "tudorgroza"
+      },
+      {
+        "contributions": 14,
+        "login": "serjoshua"
+      },
+      {
+        "contributions": 8,
+        "login": "henrietteharmse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-08-26T10:58:44Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A place to store all public configuration shared across all ontools services.",
+    "name": "ontotools-config",
+    "updatedAt": "2020-08-26T10:58:48Z",
+    "url": "https://github.com/EBISPOT/ontotools-config",
+    "firstCommitDate": "2020-08-26T10:58:45Z",
+    "lastCommitDate": "2020-08-26T10:58:45Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-10-26T17:08:34Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Configuration to deploy ontotools using docker compose",
+    "name": "ontotools-docker",
+    "updatedAt": "2025-07-09T05:38:10Z",
+    "url": "https://github.com/EBISPOT/ontotools-docker",
+    "firstCommitDate": "2024-06-04T14:10:34Z",
+    "lastCommitDate": "2024-06-04T14:10:34Z",
+    "topContributors": [
+      {
+        "contributions": 14,
+        "login": "jamesamcl"
+      },
+      {
+        "contributions": 6,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 2,
+        "login": "henrietteharmse"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-04-02T17:07:36Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Software to track flow cytometry data",
+    "name": "OpenFacsTrack",
+    "updatedAt": "2025-05-31T00:56:22Z",
+    "url": "https://github.com/EBISPOT/OpenFacsTrack",
+    "firstCommitDate": "2021-01-12T12:16:21Z",
+    "lastCommitDate": "2021-01-12T12:16:21Z",
+    "topContributors": [
+      {
+        "contributions": 48,
+        "login": "ficolo"
+      },
+      {
+        "contributions": 38,
+        "login": "kbab"
+      },
+      {
+        "contributions": 2,
+        "login": "jmason-ebi"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-10-29T10:41:01Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Pipeline for creating Open Targets profile and slim files from EFO.",
+    "name": "otar_profiler",
+    "updatedAt": "2025-09-11T09:01:35Z",
+    "url": "https://github.com/EBISPOT/otar_profiler",
+    "firstCommitDate": "2025-09-11T09:01:23Z",
+    "lastCommitDate": "2025-09-11T09:01:23Z",
+    "topContributors": [
+      {
+        "contributions": 48,
+        "login": "zoependlington"
+      },
+      {
+        "contributions": 3,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 1,
+        "login": "ar-ibrahim"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-09-02T10:13:01Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "Ontology cross-reference and mapping service",
+    "name": "OXO",
+    "updatedAt": "2025-05-12T12:39:44Z",
+    "url": "https://github.com/EBISPOT/OXO",
+    "firstCommitDate": "2025-05-01T12:12:54Z",
+    "lastCommitDate": "2025-05-01T12:12:54Z",
+    "topContributors": [
+      {
+        "contributions": 88,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 57,
+        "login": "LLTommy"
+      },
+      {
+        "contributions": 51,
+        "login": "jamesamcl"
+      },
+      {
+        "contributions": 8,
+        "login": "haideriqbal"
+      },
+      {
+        "contributions": 6,
+        "login": "serjoshua"
+      },
+      {
+        "contributions": 5,
+        "login": "warrenread"
+      },
+      {
+        "contributions": 5,
+        "login": "henrietteharmse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-01-26T16:32:13Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "SSSOM to Neo4J loader compliant with OxO 1 Neo4j database. Initially cloned from https://github.com/mapping-commons/sssom2neo",
+    "name": "oxo1-sssom2neo",
+    "updatedAt": "2024-01-26T17:18:14Z",
+    "url": "https://github.com/EBISPOT/oxo1-sssom2neo",
+    "firstCommitDate": "2024-02-09T13:11:02Z",
+    "lastCommitDate": "2024-02-09T13:11:02Z",
+    "topContributors": [
+      {
+        "contributions": 11,
+        "login": "jamesamcl"
+      },
+      {
+        "contributions": 5,
+        "login": "henrietteharmse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-02-12T20:46:09Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "UI for OxO 2",
+    "name": "oxo2-frontend",
+    "updatedAt": "2024-10-31T13:41:23Z",
+    "url": "https://github.com/EBISPOT/oxo2-frontend",
+    "firstCommitDate": "2023-11-24T14:34:24Z",
+    "lastCommitDate": "2023-11-24T14:34:24Z",
+    "topContributors": [
+      {
+        "contributions": 21,
+        "login": "serjoshua"
+      },
+      {
+        "contributions": 2,
+        "login": "jamesamcl"
+      },
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-11-01T10:41:19Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "A SSSOM compliant implementation of OxO that is backwards compatible with OxO version 1",
+    "name": "oxo2",
+    "updatedAt": "2025-09-26T10:35:08Z",
+    "url": "https://github.com/EBISPOT/oxo2",
+    "firstCommitDate": "2025-09-26T10:35:00Z",
+    "lastCommitDate": "2025-09-26T10:35:00Z",
+    "topContributors": [
+      {
+        "contributions": 87,
+        "login": "henrietteharmse"
+      },
+      {
+        "contributions": 21,
+        "login": "serjoshua"
+      },
+      {
+        "contributions": 2,
+        "login": "jamesamcl"
+      },
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-11-14T10:19:18Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "OBSOLETE. replaced by https://github.com/echinoderm-ontology/ecao_ontology",
+    "name": "pliv_ontology",
+    "updatedAt": "2023-01-28T14:40:42Z",
+    "url": "https://github.com/EBISPOT/pliv_ontology",
+    "firstCommitDate": "2020-05-07T06:50:06Z",
+    "lastCommitDate": "2020-05-07T06:50:06Z",
+    "topContributors": [
+      {
+        "contributions": 13,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 4,
+        "login": "Jenicroce"
+      },
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-08-09T10:37:18Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "This is the github repo for the EBI-RDF platform.",
+    "name": "RDF-platform",
+    "updatedAt": "2023-09-22T12:08:50Z",
+    "url": "https://github.com/EBISPOT/RDF-platform",
+    "firstCommitDate": "2017-05-08T11:41:07Z",
+    "lastCommitDate": "2017-05-08T11:41:07Z",
+    "topContributors": [
+      {
+        "contributions": 42,
+        "login": "LLTommy"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-10-14T12:27:38Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "SCA_Ontology",
+    "name": "scatlas_ontology",
+    "updatedAt": "2024-08-01T07:58:31Z",
+    "url": "https://github.com/EBISPOT/scatlas_ontology",
+    "firstCommitDate": "2024-08-01T07:57:59Z",
+    "lastCommitDate": "2024-08-01T07:57:59Z",
+    "topContributors": [
+      {
+        "contributions": 31,
+        "login": "S2Ola"
+      },
+      {
+        "contributions": 22,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 16,
+        "login": "dosumis"
+      },
+      {
+        "contributions": 12,
+        "login": "anitacaron"
+      },
+      {
+        "contributions": 3,
+        "login": "pcm32"
+      },
+      {
+        "contributions": 2,
+        "login": "gouttegd"
+      },
+      {
+        "contributions": 1,
+        "login": "pmb59"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-03-13T11:32:57Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Single Cell Atlas Ontology",
+    "name": "scATLAS",
+    "updatedAt": "2023-01-28T16:06:29Z",
+    "url": "https://github.com/EBISPOT/scATLAS",
+    "firstCommitDate": "2019-03-13T12:10:41Z",
+    "lastCommitDate": "2019-03-13T12:10:41Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "S2Ola"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-03-05T10:38:12Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "scxa_2_cxg",
+    "updatedAt": "2024-09-03T09:45:29Z",
+    "url": "https://github.com/EBISPOT/scxa_2_cxg",
+    "firstCommitDate": "2024-09-03T09:45:16Z",
+    "lastCommitDate": "2024-09-03T09:45:16Z",
+    "topContributors": [
+      {
+        "contributions": 9,
+        "login": "anitacaron"
+      },
+      {
+        "contributions": 2,
+        "login": "jamesamcl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-03-26T12:55:55Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "scxa_kg",
+    "updatedAt": "2024-08-16T15:20:22Z",
+    "url": "https://github.com/EBISPOT/scxa_kg",
+    "firstCommitDate": "2024-08-16T15:20:18Z",
+    "lastCommitDate": "2024-08-16T15:20:18Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "anitacaron"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-03-03T14:33:25Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "semantic_engineer_test",
+    "updatedAt": "2022-03-07T18:30:39Z",
+    "url": "https://github.com/EBISPOT/semantic_engineer_test",
+    "firstCommitDate": "2022-03-07T18:30:35Z",
+    "lastCommitDate": "2022-03-07T18:30:35Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 2,
+        "login": "dosumis"
+      },
+      {
+        "contributions": 2,
+        "login": "hkir-dev"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-03-05T10:28:33Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "The semantic model for rare disease in EGA resources ",
+    "name": "Semantics-for-EGA",
+    "updatedAt": "2020-03-05T11:03:18Z",
+    "url": "https://github.com/EBISPOT/Semantics-for-EGA",
+    "firstCommitDate": "2020-03-05T11:01:43Z",
+    "lastCommitDate": "2020-03-05T11:01:43Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2021-06-25T09:45:16Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "semdevtest",
+    "updatedAt": "2021-06-25T10:28:02Z",
+    "url": "https://github.com/EBISPOT/semdevtest",
+    "firstCommitDate": "2021-06-25T10:28:00Z",
+    "lastCommitDate": "2021-06-25T10:28:00Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "dosumis"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-09-08T10:19:46Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Recruitment test",
+    "name": "semwebdevtest_fall_21",
+    "updatedAt": "2021-09-08T10:37:09Z",
+    "url": "https://github.com/EBISPOT/semwebdevtest_fall_21",
+    "firstCommitDate": "2021-09-08T10:37:06Z",
+    "lastCommitDate": "2021-09-08T10:37:06Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "dosumis"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-10-07T14:43:34Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A semi-automated tool for GO slimming",
+    "name": "slim-o-matic",
+    "updatedAt": "2022-09-07T07:37:00Z",
+    "url": "https://github.com/EBISPOT/slim-o-matic",
+    "firstCommitDate": "2017-07-06T17:39:33Z",
+    "lastCommitDate": "2017-07-06T17:39:33Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "mcourtot"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-06-09T15:42:44Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "snomed2owl docker container wrapping the official SNOMED tool kit for converting a SNOMED zip archive to OWL",
+    "name": "snomed2owl_docker",
+    "updatedAt": "2022-08-19T12:16:55Z",
+    "url": "https://github.com/EBISPOT/snomed2owl_docker",
+    "firstCommitDate": "2022-08-19T12:18:43Z",
+    "lastCommitDate": "2022-08-19T12:18:43Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-08-21T05:57:35Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Miscellaneous solr utils",
+    "name": "SolrUtils",
+    "updatedAt": "2024-08-30T11:31:01Z",
+    "url": "https://github.com/EBISPOT/SolrUtils",
+    "firstCommitDate": "2024-08-30T11:30:52Z",
+    "lastCommitDate": "2024-08-30T11:30:52Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "henrietteharmse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-11-20T13:14:28Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Repository for fetching internal access stats of SPOT resources",
+    "name": "stats-app",
+    "updatedAt": "2025-08-19T22:36:44Z",
+    "url": "https://github.com/EBISPOT/stats-app",
+    "firstCommitDate": "2025-08-19T22:36:39Z",
+    "lastCommitDate": "2025-08-19T22:36:39Z",
+    "topContributors": [
+      {
+        "contributions": 36,
+        "login": "haideriqbal"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-06-29T10:37:25Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A generic and scaleable GWAS summary statistics table formatter",
+    "name": "sum-stats-formatter",
+    "updatedAt": "2025-04-12T14:40:34Z",
+    "url": "https://github.com/EBISPOT/sum-stats-formatter",
+    "firstCommitDate": "2024-01-11T16:48:04Z",
+    "lastCommitDate": "2024-01-11T16:48:04Z",
+    "topContributors": [
+      {
+        "contributions": 185,
+        "login": "jdhayhurst"
+      },
+      {
+        "contributions": 5,
+        "login": "olgavrou"
+      },
+      {
+        "contributions": 2,
+        "login": "karatugo"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-08-09T12:01:07Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Summary statistics with HDF5",
+    "name": "SumStats",
+    "updatedAt": "2024-11-06T12:14:57Z",
+    "url": "https://github.com/EBISPOT/SumStats",
+    "firstCommitDate": "2021-07-14T15:43:17Z",
+    "lastCommitDate": "2021-07-14T15:43:17Z",
+    "topContributors": [
+      {
+        "contributions": 336,
+        "login": "olgavrou"
+      },
+      {
+        "contributions": 327,
+        "login": "jdhayhurst"
+      },
+      {
+        "contributions": 2,
+        "login": "spot-ebi"
+      },
+      {
+        "contributions": 1,
+        "login": "codacy-badger"
+      },
+      {
+        "contributions": 1,
+        "login": "buniello"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-04-16T16:43:03Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "T2D text mining",
+    "name": "T2D",
+    "updatedAt": "2016-01-14T15:57:54Z",
+    "url": "https://github.com/EBISPOT/T2D",
+    "firstCommitDate": "2016-01-15T10:42:42Z",
+    "lastCommitDate": "2016-01-15T10:42:42Z",
+    "topContributors": [
+      {
+        "contributions": 14,
+        "login": "siiraa"
+      },
+      {
+        "contributions": 3,
+        "login": "vasant32"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-10-29T10:11:26Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A web application for manual curation of trait-to-ontology mappings, including provenance and integration with EBI SPOT stack.",
+    "name": "trait-curation",
+    "updatedAt": "2020-10-29T10:11:28Z",
+    "url": "https://github.com/EBISPOT/trait-curation",
+    "firstCommitDate": "2020-09-18T10:43:09Z",
+    "lastCommitDate": "2020-09-18T10:43:09Z",
+    "topContributors": [
+      {
+        "contributions": 401,
+        "login": "joj0s"
+      },
+      {
+        "contributions": 27,
+        "login": "tskir"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-07-18T14:59:22Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Script that takes a set of new ontology terms and runs them through Urigen to batch-generated IDs",
+    "name": "urigen-id-generator",
+    "updatedAt": "2019-07-18T15:35:55Z",
+    "url": "https://github.com/EBISPOT/urigen-id-generator",
+    "firstCommitDate": "2019-07-18T15:26:21Z",
+    "lastCommitDate": "2019-07-18T15:26:21Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "daniwelter"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-04-02T09:37:40Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Automatically exported from code.google.com/p/urigen",
+    "name": "urigen",
+    "updatedAt": "2019-02-11T18:07:50Z",
+    "url": "https://github.com/EBISPOT/urigen",
+    "firstCommitDate": "2019-02-11T18:07:13Z",
+    "lastCommitDate": "2019-02-11T18:07:13Z",
+    "topContributors": [
+      {
+        "contributions": 24,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 4,
+        "login": "matthewhorridge"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-03-16T17:50:37Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Web version of ontology creation tool Populous",
+    "name": "webulous",
+    "updatedAt": "2024-11-27T21:34:33Z",
+    "url": "https://github.com/EBISPOT/webulous",
+    "firstCommitDate": "2022-03-16T14:39:45Z",
+    "lastCommitDate": "2022-03-16T14:39:45Z",
+    "topContributors": [
+      {
+        "contributions": 70,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 29,
+        "login": "daniwelter"
+      },
+      {
+        "contributions": 9,
+        "login": "siiraa"
+      },
+      {
+        "contributions": 1,
+        "login": "henrietteharmse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-11-30T13:47:29Z",
+    "defaultBranchRef": {
+      "name": ""
+    },
+    "description": "An internal repo for GWAS curators to track issues",
+    "name": "xgwas-curator-tasks",
+    "updatedAt": "2022-12-07T10:03:34Z",
+    "url": "https://github.com/EBISPOT/xgwas-curator-tasks",
+    "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+    "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+  },
+  {
+    "createdAt": "2013-08-30T12:14:19Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "ZOOMA - Optimal Ontology Mapping Application. http://www.ebi.ac.uk/spot/zooma.",
+    "name": "zooma",
+    "updatedAt": "2025-08-13T11:11:05Z",
+    "url": "https://github.com/EBISPOT/zooma",
+    "firstCommitDate": "2025-07-01T14:49:15Z",
+    "lastCommitDate": "2025-07-01T14:49:15Z",
+    "topContributors": [
+      {
+        "contributions": 532,
+        "login": "tburdett"
+      },
+      {
+        "contributions": 104,
+        "login": "olgavrou"
+      },
+      {
+        "contributions": 99,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 52,
+        "login": "ypriverol"
+      },
+      {
+        "contributions": 38,
+        "login": "jamesamcl"
+      },
+      {
+        "contributions": 30,
+        "login": "tschaka1904"
+      },
+      {
+        "contributions": 29,
+        "login": "Kerruba"
+      },
+      {
+        "contributions": 29,
+        "login": "henrietteharmse"
+      },
+      {
+        "contributions": 29,
+        "login": "CatherineLeroy"
+      },
+      {
+        "contributions": 27,
+        "login": "haideriqbal"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-09-26T00:21:16Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "",
+    "name": "zooma2",
+    "updatedAt": "2025-09-30T17:15:43Z",
+    "url": "https://github.com/EBISPOT/zooma2",
+    "firstCommitDate": "2025-09-30T17:15:26Z",
+    "lastCommitDate": "2025-09-30T17:15:26Z",
+    "topContributors": [
+      {
+        "contributions": 25,
+        "login": "jamesamcl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-10-11T12:27:56Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "zooma2sssom",
+    "updatedAt": "2025-06-18T11:56:55Z",
+    "url": "https://github.com/EBISPOT/zooma2sssom",
+    "firstCommitDate": "2025-06-18T11:56:31Z",
+    "lastCommitDate": "2025-06-18T11:56:31Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "anitacaron"
+      },
+      {
+        "contributions": 1,
+        "login": "jamesamcl"
+      }
+    ]
+  }
+]

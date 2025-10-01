@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-06-27T19:46:46Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "agent-smith-ai",
+  "updatedAt": "2025-09-15T15:57:33Z",
+  "url": "https://github.com/monarch-initiative/agent-smith-ai",
+  "firstCommitDate": "2024-05-07T05:42:26Z",
+  "lastCommitDate": "2024-05-07T05:42:26Z",
+  "topContributors": [
+    {
+      "contributions": 76,
+      "login": "oneilsh"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

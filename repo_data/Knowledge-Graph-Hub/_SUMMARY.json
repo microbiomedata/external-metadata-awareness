@@ -1,0 +1,1050 @@
+[
+  {
+    "createdAt": "2023-06-28T15:43:25Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Jenkins-based automation of phenotype semantic similarity on PHENIO with Semsimian. ",
+    "name": "automate-pheno-comparisons",
+    "updatedAt": "2025-07-23T16:36:02Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/automate-pheno-comparisons",
+    "firstCommitDate": "2025-07-23T16:35:58Z",
+    "lastCommitDate": "2025-07-23T16:35:58Z",
+    "topContributors": [
+      {
+        "contributions": 97,
+        "login": "caufieldjh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-11-29T21:02:12Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Simple code to make a graph-like hierachy for biolink model categories",
+    "name": "biolink_model_category_hierarchy",
+    "updatedAt": "2021-11-29T21:16:50Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/biolink_model_category_hierarchy",
+    "firstCommitDate": "2021-11-29T21:16:44Z",
+    "lastCommitDate": "2021-11-29T21:16:44Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2021-03-16T20:10:14Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "eco-kg",
+    "updatedAt": "2024-03-20T08:19:18Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/eco-kg",
+    "firstCommitDate": "2022-04-19T18:39:04Z",
+    "lastCommitDate": "2022-04-19T18:39:04Z",
+    "topContributors": [
+      {
+        "contributions": 95,
+        "login": "diatomsRcool"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-06-09T02:22:56Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "elsevier_covid_19_pathway_data",
+    "updatedAt": "2023-09-18T18:48:16Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/elsevier_covid_19_pathway_data",
+    "firstCommitDate": "2020-06-09T02:33:01Z",
+    "lastCommitDate": "2020-06-09T02:33:01Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-09-12T00:16:31Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A collection of metadata, tools, and files associated with the Gene Ontology public web presence.",
+    "name": "go-site",
+    "updatedAt": "2021-10-26T16:13:12Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/go-site",
+    "firstCommitDate": "2020-09-23T21:12:28Z",
+    "lastCommitDate": "2020-09-23T21:12:28Z",
+    "topContributors": [
+      {
+        "contributions": 744,
+        "login": "kltm"
+      },
+      {
+        "contributions": 632,
+        "login": "pgaudet"
+      },
+      {
+        "contributions": 527,
+        "login": "dougli1sqrd"
+      },
+      {
+        "contributions": 306,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 65,
+        "login": "tonysawfordebi"
+      },
+      {
+        "contributions": 65,
+        "login": "vanaukenk"
+      },
+      {
+        "contributions": 30,
+        "login": "dustine32"
+      },
+      {
+        "contributions": 23,
+        "login": "suzialeksander"
+      },
+      {
+        "contributions": 20,
+        "login": "malcolmfisher103"
+      },
+      {
+        "contributions": 18,
+        "login": "mcourtot"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-12-14T19:32:07Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A simple data ingested using url constructors",
+    "name": "kegg-kg-converter",
+    "updatedAt": "2024-08-19T23:02:47Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kegg-kg-converter",
+    "firstCommitDate": "2021-07-20T14:46:32Z",
+    "lastCommitDate": "2021-07-20T14:46:32Z",
+    "topContributors": [
+      {
+        "contributions": 54,
+        "login": "hrshdhgd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-09-10T18:55:10Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "KG_Microbe_embeddings",
+    "updatedAt": "2024-09-25T14:50:21Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/KG_Microbe_embeddings",
+    "firstCommitDate": "2024-09-25T14:50:11Z",
+    "lastCommitDate": "2024-09-25T14:50:11Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-01-29T19:17:11Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A knowledge graph integrating biomedical data related to Alzheimer's Disease",
+    "name": "kg-alzheimers",
+    "updatedAt": "2025-09-29T23:03:15Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-alzheimers",
+    "firstCommitDate": "2025-09-29T23:03:11Z",
+    "lastCommitDate": "2025-09-29T23:03:11Z",
+    "topContributors": [
+      {
+        "contributions": 889,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 122,
+        "login": "RichardBruskiewich"
+      },
+      {
+        "contributions": 34,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 28,
+        "login": "victoriasoesanto"
+      },
+      {
+        "contributions": 27,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 17,
+        "login": "amc-corey-cox"
+      },
+      {
+        "contributions": 14,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 7,
+        "login": "putmantime"
+      },
+      {
+        "contributions": 3,
+        "login": "iQuxLE"
+      },
+      {
+        "contributions": 3,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-10-04T17:20:15Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Knowledge graph construction for BacDive data",
+    "name": "kg-bacdive",
+    "updatedAt": "2023-10-27T20:51:55Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-bacdive",
+    "firstCommitDate": "2023-10-27T17:52:40Z",
+    "lastCommitDate": "2023-10-27T17:52:40Z",
+    "topContributors": [
+      {
+        "contributions": 107,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 7,
+        "login": "realmarcin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-07-09T18:01:50Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "kg-chat",
+    "updatedAt": "2025-03-20T05:19:28Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-chat",
+    "firstCommitDate": "2024-12-30T15:43:25Z",
+    "lastCommitDate": "2024-12-30T15:43:25Z",
+    "topContributors": [
+      {
+        "contributions": 287,
+        "login": "hrshdhgd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-12-20T17:34:22Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A cookiecutter template for KG generation.",
+    "name": "kg-cookiecutter",
+    "updatedAt": "2025-09-30T10:47:31Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-cookiecutter",
+    "firstCommitDate": "2024-08-09T14:56:33Z",
+    "lastCommitDate": "2024-08-09T14:56:33Z",
+    "topContributors": [
+      {
+        "contributions": 135,
+        "login": "hrshdhgd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-08-25T15:44:42Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Dashboard for KG-COVID-19",
+    "name": "kg-covid-19-dashboard",
+    "updatedAt": "2023-01-04T20:56:03Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-covid-19-dashboard",
+    "firstCommitDate": "2023-01-04T20:55:57Z",
+    "lastCommitDate": "2023-01-04T20:55:57Z",
+    "topContributors": [
+      {
+        "contributions": 9,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 8,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 5,
+        "login": "deepakunni3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-07-30T23:09:09Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "data requiring UI interaction to download, fairly static, small files -- supporting kg-covid-19",
+    "name": "kg-covid-19-data",
+    "updatedAt": "2020-09-14T06:41:42Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-covid-19-data",
+    "firstCommitDate": "2020-07-30T23:09:11Z",
+    "lastCommitDate": "2020-07-30T23:09:11Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "realmarcin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-03-19T15:20:10Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "An instance of KG Hub to produce a knowledge graph for COVID-19 response.",
+    "name": "kg-covid-19",
+    "updatedAt": "2025-06-21T08:57:58Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-covid-19",
+    "firstCommitDate": "2023-08-03T13:56:33Z",
+    "lastCommitDate": "2023-08-03T13:56:33Z",
+    "topContributors": [
+      {
+        "contributions": 1036,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 165,
+        "login": "deepakunni3"
+      },
+      {
+        "contributions": 105,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 47,
+        "login": "LucaCappelletti94"
+      },
+      {
+        "contributions": 32,
+        "login": "realmarcin"
+      },
+      {
+        "contributions": 18,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 11,
+        "login": "callahantiff"
+      },
+      {
+        "contributions": 5,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 4,
+        "login": "nlharris"
+      },
+      {
+        "contributions": 3,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-01-16T20:52:57Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "KG-ENP: a knowledge graph for experimental natural products, based off ENPKG",
+    "name": "kg-enp",
+    "updatedAt": "2025-01-03T23:18:12Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-enp",
+    "firstCommitDate": "2024-01-16T22:56:29Z",
+    "lastCommitDate": "2024-01-16T22:56:29Z",
+    "topContributors": [
+      {
+        "contributions": 18,
+        "login": "caufieldjh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-07-12T18:49:41Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "kg-envpolyreg",
+    "updatedAt": "2025-07-17T22:30:16Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-envpolyreg",
+    "firstCommitDate": "2021-08-24T16:11:13Z",
+    "lastCommitDate": "2021-08-24T16:11:13Z",
+    "topContributors": [
+      {
+        "contributions": 13,
+        "login": "laurenechan"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-12-13T20:26:00Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Example repository for KG-Hub projects. Provides examples for downloading sources, transforming them, and merging them into knowledge graphs.",
+    "name": "kg-example",
+    "updatedAt": "2023-05-03T14:01:54Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-example",
+    "firstCommitDate": "2023-05-03T14:01:48Z",
+    "lastCommitDate": "2023-05-03T14:01:48Z",
+    "topContributors": [
+      {
+        "contributions": 69,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 36,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 2,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 2,
+        "login": "deepakunni3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-09-27T17:27:00Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Documentation and code for using containers with the KG-Hub platform.",
+    "name": "kg-hub-containers",
+    "updatedAt": "2025-03-12T19:59:56Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-hub-containers",
+    "firstCommitDate": "2025-03-12T19:59:52Z",
+    "lastCommitDate": "2025-03-12T19:59:52Z",
+    "topContributors": [
+      {
+        "contributions": 18,
+        "login": "caufieldjh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-01-10T17:30:04Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Dashboard visualizations for KG-Hub projects.",
+    "name": "kg-hub-dashboard",
+    "updatedAt": "2024-11-02T01:14:35Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-hub-dashboard",
+    "firstCommitDate": "2023-12-11T21:07:38Z",
+    "lastCommitDate": "2023-12-11T21:07:38Z",
+    "topContributors": [
+      {
+        "contributions": 31,
+        "login": "caufieldjh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-05-09T12:33:31Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "kg-ibd",
+    "updatedAt": "2023-05-24T22:07:52Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-ibd",
+    "firstCommitDate": "2023-05-10T12:18:57Z",
+    "lastCommitDate": "2023-05-10T12:18:57Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-04-22T22:27:40Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A Knowledge Graph to Illuminate the Druggable Genome",
+    "name": "kg-idg",
+    "updatedAt": "2024-05-11T12:29:05Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-idg",
+    "firstCommitDate": "2023-05-30T20:00:03Z",
+    "lastCommitDate": "2023-05-30T20:00:03Z",
+    "topContributors": [
+      {
+        "contributions": 521,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 3,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 1,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-07-30T16:53:25Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "kg-microbe-merge",
+    "updatedAt": "2025-08-13T08:23:03Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-microbe-merge",
+    "firstCommitDate": "2025-03-17T17:54:34Z",
+    "lastCommitDate": "2025-03-17T17:54:34Z",
+    "topContributors": [
+      {
+        "contributions": 91,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 29,
+        "login": "realmarcin"
+      },
+      {
+        "contributions": 23,
+        "login": "bsantan"
+      },
+      {
+        "contributions": 1,
+        "login": "sierra-moxon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-11-13T19:10:16Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "kg-microbe",
+    "updatedAt": "2025-09-26T22:49:16Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-microbe",
+    "firstCommitDate": "2025-09-26T22:49:09Z",
+    "lastCommitDate": "2025-09-26T22:49:09Z",
+    "topContributors": [
+      {
+        "contributions": 770,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 192,
+        "login": "realmarcin"
+      },
+      {
+        "contributions": 188,
+        "login": "bsantan"
+      },
+      {
+        "contributions": 49,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 39,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 11,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 11,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 3,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-08-13T17:10:18Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A package to transform all OBO ontologies into KGX TSV format and OBO json, and put the transformed graph in KGhub",
+    "name": "kg-obo",
+    "updatedAt": "2024-11-02T01:14:03Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-obo",
+    "firstCommitDate": "2024-03-19T17:16:05Z",
+    "lastCommitDate": "2024-03-19T17:16:05Z",
+    "topContributors": [
+      {
+        "contributions": 686,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 13,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-02-11T17:32:44Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A graph for accessing and comparing knowledge concerning phenotypes across species and genetic backgrounds.",
+    "name": "kg-phenio",
+    "updatedAt": "2025-09-12T21:30:01Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-phenio",
+    "firstCommitDate": "2025-09-12T21:29:57Z",
+    "lastCommitDate": "2025-09-12T21:29:57Z",
+    "topContributors": [
+      {
+        "contributions": 484,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 6,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-09-02T16:51:15Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A simple registry for KGHub projects",
+    "name": "kg-registry",
+    "updatedAt": "2025-09-29T14:53:16Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/kg-registry",
+    "firstCommitDate": "2025-09-29T14:53:11Z",
+    "lastCommitDate": "2025-09-29T14:53:11Z",
+    "topContributors": [
+      {
+        "contributions": 1348,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 52,
+        "login": "actions-user"
+      },
+      {
+        "contributions": 17,
+        "login": "iimpulse"
+      },
+      {
+        "contributions": 12,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 3,
+        "login": "colleenXu"
+      },
+      {
+        "contributions": 2,
+        "login": "bsantan"
+      },
+      {
+        "contributions": 2,
+        "login": "andrewsu"
+      },
+      {
+        "contributions": 1,
+        "login": "DnlRKorn"
+      },
+      {
+        "contributions": 1,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-03-29T19:11:45Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Issues, support, and discussion for KG-Hub. Covers tools, infrastructure, and graph projects.",
+    "name": "knowledge-graph-hub-support",
+    "updatedAt": "2025-07-26T04:39:08Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/knowledge-graph-hub-support",
+    "firstCommitDate": "2023-05-05T19:48:11Z",
+    "lastCommitDate": "2023-05-05T19:48:11Z",
+    "topContributors": [
+      {
+        "contributions": 16,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 1,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-09-29T18:17:50Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "knowledge-graph-hub.github.io",
+    "updatedAt": "2025-07-26T12:16:49Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/knowledge-graph-hub.github.io",
+    "firstCommitDate": "2025-01-31T15:18:51Z",
+    "lastCommitDate": "2025-01-31T15:18:51Z",
+    "topContributors": [
+      {
+        "contributions": 179,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 4,
+        "login": "deepakunni3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-07-05T19:20:02Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "microbe-traits-ingest",
+    "updatedAt": "2024-07-16T20:59:52Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/microbe-traits-ingest",
+    "firstCommitDate": "2024-07-16T20:59:28Z",
+    "lastCommitDate": "2024-07-16T20:59:28Z",
+    "topContributors": [
+      {
+        "contributions": 18,
+        "login": "hrshdhgd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-06-08T17:12:47Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "monarch-embedding",
+    "updatedAt": "2021-11-24T18:25:49Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/monarch-embedding",
+    "firstCommitDate": "2021-07-09T16:03:06Z",
+    "lastCommitDate": "2021-07-09T16:03:06Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-02-23T22:32:08Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A utility for creating sets of templated indexes for local or remote directories.",
+    "name": "multi-indexer",
+    "updatedAt": "2022-04-11T16:48:13Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/multi-indexer",
+    "firstCommitDate": "2022-03-25T19:48:22Z",
+    "lastCommitDate": "2022-03-25T19:48:22Z",
+    "topContributors": [
+      {
+        "contributions": 24,
+        "login": "caufieldjh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-01-31T19:32:19Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Scheduling utility for starting NEAT jobs for KG-Hub resources.",
+    "name": "NEAT-kghub-scheduler",
+    "updatedAt": "2024-06-11T14:34:44Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/NEAT-kghub-scheduler",
+    "firstCommitDate": "2024-06-11T14:34:40Z",
+    "lastCommitDate": "2024-06-11T14:34:40Z",
+    "topContributors": [
+      {
+        "contributions": 40,
+        "login": "caufieldjh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-05-05T16:45:36Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A repository that contains the LinkML model for specifying graph ML pipelines",
+    "name": "neat-ml-schema",
+    "updatedAt": "2024-06-29T08:52:50Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/neat-ml-schema",
+    "firstCommitDate": "2022-09-08T21:50:09Z",
+    "lastCommitDate": "2022-09-08T21:50:09Z",
+    "topContributors": [
+      {
+        "contributions": 169,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 1,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 1,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-10-13T21:21:00Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Network Embedding All the Things",
+    "name": "neat-ml",
+    "updatedAt": "2024-07-15T09:28:38Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/neat-ml",
+    "firstCommitDate": "2022-09-27T18:03:21Z",
+    "lastCommitDate": "2022-09-27T18:03:21Z",
+    "topContributors": [
+      {
+        "contributions": 340,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 202,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 107,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 15,
+        "login": "deepakunni3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-12-04T20:53:28Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "OBO Fork for KGs",
+    "name": "OBOFoundry.github.io",
+    "updatedAt": "2024-12-11T16:58:08Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/OBOFoundry.github.io",
+    "firstCommitDate": "2024-12-06T01:34:12Z",
+    "lastCommitDate": "2024-12-06T01:34:12Z",
+    "topContributors": [
+      {
+        "contributions": 963,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 516,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 464,
+        "login": "jamesaoverton"
+      },
+      {
+        "contributions": 322,
+        "login": "nataled"
+      },
+      {
+        "contributions": 221,
+        "login": "cthoyt"
+      },
+      {
+        "contributions": 211,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 168,
+        "login": "nlharris"
+      },
+      {
+        "contributions": 159,
+        "login": "rvita"
+      },
+      {
+        "contributions": 133,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 98,
+        "login": "lschriml"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-07-22T18:57:39Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "restoration_ingests",
+    "updatedAt": "2024-07-22T19:46:56Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/restoration_ingests",
+    "firstCommitDate": "2024-07-22T19:46:42Z",
+    "lastCommitDate": "2024-07-22T19:46:42Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "caufieldjh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-07-12T14:44:05Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Write out file with semantic similarity of all pairs of ontology terms in a given ontology",
+    "name": "semsim",
+    "updatedAt": "2022-11-29T13:17:18Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/semsim",
+    "firstCommitDate": "2022-11-16T21:50:45Z",
+    "lastCommitDate": "2022-11-16T21:50:45Z",
+    "topContributors": [
+      {
+        "contributions": 178,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 36,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 3,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 2,
+        "login": "LucaCappelletti94"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-08-27T02:46:19Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Repo for generating the SRI Reference KG",
+    "name": "sri-reference-kg",
+    "updatedAt": "2023-09-18T18:45:53Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/sri-reference-kg",
+    "firstCommitDate": "2021-07-28T14:21:51Z",
+    "lastCommitDate": "2021-07-28T14:21:51Z",
+    "topContributors": [
+      {
+        "contributions": 38,
+        "login": "deepakunni3"
+      },
+      {
+        "contributions": 2,
+        "login": "kshefchek"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-06-17T01:39:33Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "ubuntu20-dev",
+    "updatedAt": "2021-06-17T01:54:34Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/ubuntu20-dev",
+    "firstCommitDate": "2021-06-17T01:54:27Z",
+    "lastCommitDate": "2021-06-17T01:54:27Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2024-02-21T20:01:42Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "uniprot2s3",
+    "updatedAt": "2025-05-12T10:12:37Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/uniprot2s3",
+    "firstCommitDate": "2025-02-15T20:37:06Z",
+    "lastCommitDate": "2025-02-15T20:37:06Z",
+    "topContributors": [
+      {
+        "contributions": 44,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 20,
+        "login": "bsantan"
+      },
+      {
+        "contributions": 10,
+        "login": "caufieldjh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-09-21T21:51:10Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "The KG-Hub Universalizer provides functions for knowledge graph cleanup and identifier normalization.",
+    "name": "universalizer",
+    "updatedAt": "2025-03-21T19:39:22Z",
+    "url": "https://github.com/Knowledge-Graph-Hub/universalizer",
+    "firstCommitDate": "2025-03-21T19:39:18Z",
+    "lastCommitDate": "2025-03-21T19:39:18Z",
+    "topContributors": [
+      {
+        "contributions": 148,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 1,
+        "login": "kevinschaper"
+      }
+    ]
+  }
+]

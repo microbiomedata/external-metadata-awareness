@@ -1,0 +1,34 @@
+{
+  "createdAt": "2014-08-08T10:03:11Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A simple system for specifying OWL class design patterns for OBO-ish ontologies.",
+  "name": "dead_simple_owl_design_patterns",
+  "updatedAt": "2025-07-30T16:44:06Z",
+  "url": "https://github.com/INCATools/dead_simple_owl_design_patterns",
+  "firstCommitDate": "2022-02-25T15:47:43Z",
+  "lastCommitDate": "2022-02-25T15:47:43Z",
+  "topContributors": [
+    {
+      "contributions": 287,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 72,
+      "login": "hkir-dev"
+    },
+    {
+      "contributions": 6,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "matentzn"
+    }
+  ]
+}

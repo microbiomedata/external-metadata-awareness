@@ -1,0 +1,26 @@
+{
+  "createdAt": "2025-07-08T18:02:56Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "MCP interface for historical and normalized weather data",
+  "name": "weather-mcp",
+  "updatedAt": "2025-07-16T17:10:42Z",
+  "url": "https://github.com/contextualizer-ai/weather-mcp",
+  "firstCommitDate": "2025-07-15T23:13:16Z",
+  "lastCommitDate": "2025-07-15T23:13:16Z",
+  "topContributors": [
+    {
+      "contributions": 44,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 7,
+      "login": "ct-parker"
+    },
+    {
+      "contributions": 3,
+      "login": "justaddcoffee"
+    }
+  ]
+}

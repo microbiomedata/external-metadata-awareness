@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-07-28T21:35:07Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Generic lightweight listener/callback registry system.",
+  "name": "bbop-registry",
+  "updatedAt": "2016-02-19T00:36:13Z",
+  "url": "https://github.com/berkeleybop/bbop-registry",
+  "firstCommitDate": "2016-02-19T00:36:36Z",
+  "lastCommitDate": "2016-02-19T00:36:36Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "kltm"
+    }
+  ]
+}

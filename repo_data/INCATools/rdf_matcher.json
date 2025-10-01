@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-08-09T23:42:23Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "swi rdf_matcher ",
+  "name": "rdf_matcher",
+  "updatedAt": "2025-07-09T05:38:57Z",
+  "url": "https://github.com/INCATools/rdf_matcher",
+  "firstCommitDate": "2021-02-07T23:35:11Z",
+  "lastCommitDate": "2021-02-07T23:35:11Z",
+  "topContributors": [
+    {
+      "contributions": 37,
+      "login": "cmungall"
+    }
+  ]
+}

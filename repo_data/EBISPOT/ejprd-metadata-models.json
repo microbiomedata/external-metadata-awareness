@@ -1,0 +1,30 @@
+{
+  "createdAt": "2020-05-05T12:41:34Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "This is for publishing EJP-RD registries , Biobanks and Catalogs metadata, through the  extraction, conversion, RDF schema and validating the RDF data using the ShExC ",
+  "name": "ejprd-metadata-models",
+  "updatedAt": "2022-10-28T10:50:37Z",
+  "url": "https://github.com/EBISPOT/ejprd-metadata-models",
+  "firstCommitDate": "2020-08-07T18:39:00Z",
+  "lastCommitDate": "2020-08-07T18:39:00Z",
+  "topContributors": [
+    {
+      "contributions": 25,
+      "login": "S2Ola"
+    },
+    {
+      "contributions": 6,
+      "login": "henrietteharmse"
+    },
+    {
+      "contributions": 2,
+      "login": "Olusol"
+    },
+    {
+      "contributions": 1,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "createdAt": "2020-10-16T14:16:12Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "enviroMS",
+  "updatedAt": "2025-09-02T16:32:24Z",
+  "url": "https://github.com/microbiomedata/enviroMS",
+  "firstCommitDate": "2025-09-02T16:32:08Z",
+  "lastCommitDate": "2025-09-02T16:32:08Z",
+  "topContributors": [
+    {
+      "contributions": 153,
+      "login": "corilo"
+    },
+    {
+      "contributions": 53,
+      "login": "alexandriai168"
+    },
+    {
+      "contributions": 10,
+      "login": "smcolby"
+    },
+    {
+      "contributions": 4,
+      "login": "kheal"
+    },
+    {
+      "contributions": 4,
+      "login": "bmeluch"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "createdAt": "2021-12-06T10:01:08Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A collection of ontology editor training materials",
+  "name": "ontology_editor_training",
+  "updatedAt": "2023-04-13T12:51:51Z",
+  "url": "https://github.com/EBISPOT/ontology_editor_training",
+  "firstCommitDate": "2023-04-13T12:51:52Z",
+  "lastCommitDate": "2023-04-13T12:51:52Z",
+  "topContributors": [
+    {
+      "contributions": 18,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 8,
+      "login": "shawntanzk"
+    },
+    {
+      "contributions": 2,
+      "login": "JArgasinska"
+    }
+  ]
+}

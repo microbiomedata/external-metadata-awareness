@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-04-18T14:57:27Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "HPO Protege Plugin, based on Protege-obo-pluging",
+  "name": "protege-hpo-plugin",
+  "updatedAt": "2019-04-26T21:29:21Z",
+  "url": "https://github.com/monarch-initiative/protege-hpo-plugin",
+  "firstCommitDate": "2019-04-26T21:29:15Z",
+  "lastCommitDate": "2019-04-26T21:29:15Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "pnrobinson"
+    }
+  ]
+}

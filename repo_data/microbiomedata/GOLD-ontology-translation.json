@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-10-16T17:20:54Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Translates the environmental level values in the GOLD dataset into a hierarchical ontology. ",
+  "name": "GOLD-ontology-translation",
+  "updatedAt": "2020-02-26T20:29:08Z",
+  "url": "https://github.com/microbiomedata/GOLD-ontology-translation",
+  "firstCommitDate": "2020-02-26T20:28:55Z",
+  "lastCommitDate": "2020-02-26T20:28:55Z",
+  "topContributors": [
+    {
+      "contributions": 27,
+      "login": "wdduncan"
+    }
+  ]
+}

@@ -17,6 +17,7 @@ WGET=wget
 .PHONY: load-biosamples-into-mongo \
         purge \
         load_acceptable_sized_leaf_bioprojects_into_mongodb \
+        flatten_bioprojects \
         flatten_biosamples_ids \
         flatten_biosamples_links \
         flatten_biosample_attributes \
@@ -138,6 +139,13 @@ local/bioproject_xpath_counts.json: downloads/bioproject.xml
 		--interval 10 \
 		--output $@ \
 		--xml-file $<
+
+flatten_bioprojects: mongo-js/flatten_bioprojects_minimal.js
+	date && time $(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/flatten_bioprojects_minimal.js \
+		--verbose && date
 
 flatten_biosamples_ids:
 	date && time $(RUN) mongo-js-executor \

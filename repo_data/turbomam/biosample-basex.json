@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-06-14T23:52:26Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Using the Base-X XML database to discover structure in NCBI's Biosample database",
+  "name": "biosample-basex",
+  "updatedAt": "2024-08-16T16:40:13Z",
+  "url": "https://github.com/turbomam/biosample-basex",
+  "firstCommitDate": "2024-08-16T16:28:00Z",
+  "lastCommitDate": "2024-08-16T16:28:00Z",
+  "topContributors": [
+    {
+      "contributions": 222,
+      "login": "turbomam"
+    }
+  ]
+}

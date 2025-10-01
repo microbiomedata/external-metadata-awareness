@@ -1,0 +1,76 @@
+# The Data Preprocessing Workflow
+
+## Summary
+
+This workflow is a replicate of the [QA protocol](https://jgi.doe.gov/data-and-tools/software-tools/bbtools/bb-tools-user-guide/data-preprocessing/) implemented at JGI for Illumina reads.
+
+This workflow utilizes the program `rqcfilter2` from BBTools to perform quality control on raw Illumina reads for **shortreads**. The workflow performs quality trimming, artifact removal, linker trimming, adapter trimming, and spike-in removal (using `BBDuk`), and performs human/cat/dog/mouse/microbe removal (using `BMap`).
+
+This workflow performs quality control on long reads from PacBio. The workflow performs duplicate removal (using `pbmarkdup`), inverted repeat filtering (using BBTools 
+`icecreamfinder.sh`), adapter trimming, and final filtering of reads with residual adapter sequences (using `bbduk`). The workflow is designed to handle input files in various formats, including .bam, .fq, or .fq.gz.
+
+## Required Database
+
+* [RQCFilterData Database](https://portal.nersc.gov/cfs/m3408/db/RQCFilterData.tgz): It is a 106G tar file includes reference datasets of artifacts, adapters, contaminants, phiX genome, host genomes.  
+
+* Prepare the Database
+
+```bash
+	mkdir -p refdata
+	wget https://portal.nersc.gov/cfs/m3408/db/RQCFilterData.tgz
+	tar xvzf RQCFilterData.tgz -C refdata
+	rm RQCFilterData.tgz
+```
+
+## The Docker image and Dockerfile can be found here
+
+[microbiomedata/bbtools:38.96](https://hub.docker.com/r/microbiomedata/bbtools)
+
+## Input files
+
+1. the path to the interleaved fastq file (longreads and shortreads) 
+2. forwards reads fastq file (when input_interleaved is false)
+3. reverse reads fastq file (when input_interleaved is false)  
+4. NCBI SRA accessions (mutually exclusive to above inputs. ex: SRR6324898)
+5. project id
+6. if the input is interleaved (boolean) 
+7. if the input is shortreads (boolean)
+
+```
+{
+	"rqcfilter.input_files": ["https://portal.nersc.gov/project/m3408//test_data/smalltest.int.fastq.gz"],
+    "rqcfilter.input_fq1": [],
+    "rqcfilter.input_fq2": [],
+    "rqcfilter.accessions": [],
+    "rqcfilter.proj": "nmdc:xxxxxxx",
+   	"rqcfilter.interleaved": true,
+    "rqcfilter.shortRead": true
+}
+```
+
+## Output files
+
+The output will have one directory named by prefix of the output files, including statistical numbers, status log and readsQC.info. When the input consists of SRA accessions (e.g., "rqcfilter.accessions": ["SRR34992488"]), the workflow will also output the corresponding FASTQ files (e.g., SRR34992488_1.fastq.gz and SRR34992488_2.fastq.gz) in addition to the standard output files.
+
+The main QC fastq output is named by prefix_filtered.fastq.gz. 
+
+```
+* Short Reads
+    output/
+    ├── nmdc_xxxxxxx_filtered.fastq.gz
+    ├── nmdc_xxxxxxx_filterStats.txt
+    ├── nmdc_xxxxxxx_filterStats2.txt
+    ├── nmdc_xxxxxxx_readsQC.info
+    └── nmdc_xxxxxxx_qa_stats.json
+# Long Reads
+    output/
+    ├── nmdc_xxxxxxx_pbmarkdupStats.txt
+    ├── nmdc_xxxxxxx_readsQC.info
+    ├── nmdc_xxxxxxx_bbdukEndsStats.json
+    ├── nmdc_xxxxxxx_icecreamStats.json
+    ├── nmdc_xxxxxxx_filtered.fastq.gz
+    └── nmdc_xxxxxxx_stats.json
+```
+
+## Link to Doc Site
+Please refer [here](https://docs.microbiomedata.org/workflows/chapters/3_Metagenome_Reads_QC/) for more information.

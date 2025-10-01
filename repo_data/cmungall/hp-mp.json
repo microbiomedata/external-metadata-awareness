@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-08-20T22:36:47Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "hp-mp",
+  "updatedAt": "2015-08-20T22:37:01Z",
+  "url": "https://github.com/cmungall/hp-mp",
+  "firstCommitDate": "2015-08-20T22:44:44Z",
+  "lastCommitDate": "2015-08-20T22:44:44Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

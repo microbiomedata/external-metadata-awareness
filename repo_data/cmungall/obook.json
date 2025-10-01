@@ -1,0 +1,30 @@
+{
+  "createdAt": "2021-06-11T22:09:31Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "OBO Organized Knowlegde",
+  "name": "obook",
+  "updatedAt": "2022-03-17T09:53:31Z",
+  "url": "https://github.com/cmungall/obook",
+  "firstCommitDate": "2021-06-10T15:38:17Z",
+  "lastCommitDate": "2021-06-10T15:38:17Z",
+  "topContributors": [
+    {
+      "contributions": 353,
+      "login": "nicolevasilevsky"
+    },
+    {
+      "contributions": 47,
+      "login": "beckyjackson"
+    },
+    {
+      "contributions": 30,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 26,
+      "login": "jamesaoverton"
+    }
+  ]
+}

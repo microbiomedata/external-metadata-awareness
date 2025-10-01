@@ -1,0 +1,50 @@
+{
+  "createdAt": "2023-04-04T19:42:01Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "GPT-based ontological extraction tools, including SPIRES",
+  "name": "ontogpt",
+  "updatedAt": "2024-08-16T16:18:23Z",
+  "url": "https://github.com/turbomam/ontogpt",
+  "firstCommitDate": "2023-04-04T19:08:29Z",
+  "lastCommitDate": "2023-04-04T19:08:29Z",
+  "topContributors": [
+    {
+      "contributions": 41,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 15,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 4,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 3,
+      "login": "realmarcin"
+    },
+    {
+      "contributions": 2,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 1,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 1,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 1,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 1,
+      "login": "vemonet"
+    }
+  ]
+}

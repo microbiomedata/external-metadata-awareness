@@ -1,0 +1,539 @@
+[
+  {
+    "createdAt": "2020-09-29T20:59:28Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "cancer-data-aggregator",
+    "updatedAt": "2020-09-29T21:02:46Z",
+    "url": "https://github.com/cancerDHC/cancer-data-aggregator",
+    "firstCommitDate": "2020-09-29T21:02:43Z",
+    "lastCommitDate": "2020-09-29T21:02:43Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "monicacecilia"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-05-26T18:01:30Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "cancerdhc.github.io",
+    "updatedAt": "2021-06-01T20:31:25Z",
+    "url": "https://github.com/cancerDHC/cancerdhc.github.io",
+    "firstCommitDate": "2021-06-01T20:31:23Z",
+    "lastCommitDate": "2021-06-01T20:31:23Z",
+    "topContributors": [
+      {
+        "contributions": 28,
+        "login": "jen-martin"
+      },
+      {
+        "contributions": 6,
+        "login": "monicacecilia"
+      },
+      {
+        "contributions": 1,
+        "login": "hsolbrig"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-08-06T18:05:41Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "CCDH Terminology and Mapping Service",
+    "name": "ccdh-terminology-service",
+    "updatedAt": "2022-10-07T10:28:33Z",
+    "url": "https://github.com/cancerDHC/ccdh-terminology-service",
+    "firstCommitDate": "2021-12-16T21:24:20Z",
+    "lastCommitDate": "2021-12-16T21:24:20Z",
+    "topContributors": [
+      {
+        "contributions": 85,
+        "login": "joeflack4"
+      },
+      {
+        "contributions": 2,
+        "login": "wdduncan"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-08-18T19:35:43Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "CRDC-H model in LinkML, developed by the Center for Cancer Data Harmonization (CCDH)",
+    "name": "ccdhmodel",
+    "updatedAt": "2023-11-22T08:09:35Z",
+    "url": "https://github.com/cancerDHC/ccdhmodel",
+    "firstCommitDate": "2022-01-07T20:06:08Z",
+    "lastCommitDate": "2022-01-07T20:06:08Z",
+    "topContributors": [
+      {
+        "contributions": 435,
+        "login": "gaurav"
+      },
+      {
+        "contributions": 94,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 20,
+        "login": "jooho-lee-kim"
+      },
+      {
+        "contributions": 16,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 9,
+        "login": "joeflack4"
+      },
+      {
+        "contributions": 8,
+        "login": "balhoff"
+      },
+      {
+        "contributions": 8,
+        "login": "mbrush"
+      },
+      {
+        "contributions": 4,
+        "login": "monicacecilia"
+      },
+      {
+        "contributions": 4,
+        "login": "hsolbrig"
+      },
+      {
+        "contributions": 3,
+        "login": "bfurner"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-07-14T17:46:15Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A repository for the work of the Community Development Workstream",
+    "name": "community-development",
+    "updatedAt": "2022-10-05T22:16:31Z",
+    "url": "https://github.com/cancerDHC/community-development",
+    "firstCommitDate": "2021-12-14T17:36:17Z",
+    "lastCommitDate": "2021-12-14T17:36:17Z",
+    "topContributors": [
+      {
+        "contributions": 12,
+        "login": "dvenckusuchgo"
+      },
+      {
+        "contributions": 12,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 4,
+        "login": "bfurner"
+      },
+      {
+        "contributions": 1,
+        "login": "monicacecilia"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-07-19T14:50:27Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "crdc-nodes-data-analysis",
+    "updatedAt": "2021-08-13T20:31:23Z",
+    "url": "https://github.com/cancerDHC/crdc-nodes-data-analysis",
+    "firstCommitDate": "2021-08-13T20:31:20Z",
+    "lastCommitDate": "2021-08-13T20:31:20Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "renee-ge"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-07-28T20:59:36Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Harmonize fields in CSV files against the Cancer Data Standards Registry and Repository (caDSR)",
+    "name": "csv2caDSR",
+    "updatedAt": "2022-01-06T20:57:25Z",
+    "url": "https://github.com/cancerDHC/csv2caDSR",
+    "firstCommitDate": "2022-01-06T20:56:09Z",
+    "lastCommitDate": "2022-01-06T20:56:09Z",
+    "topContributors": [
+      {
+        "contributions": 112,
+        "login": "gaurav"
+      },
+      {
+        "contributions": 2,
+        "login": "balhoff"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-09-15T04:06:55Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "CCDH Project GitHub Tasks Dashboard",
+    "name": "dashboard",
+    "updatedAt": "2021-09-20T17:15:08Z",
+    "url": "https://github.com/cancerDHC/dashboard",
+    "firstCommitDate": "2021-09-17T20:31:53Z",
+    "lastCommitDate": "2021-09-17T20:31:53Z",
+    "topContributors": [
+      {
+        "contributions": 35,
+        "login": "jen-martin"
+      },
+      {
+        "contributions": 1,
+        "login": "dvenckusuchgo"
+      },
+      {
+        "contributions": 1,
+        "login": "nlharris"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-12-12T17:39:17Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "data-model-harmonization",
+    "updatedAt": "2021-10-26T00:12:59Z",
+    "url": "https://github.com/cancerDHC/data-model-harmonization",
+    "firstCommitDate": "2021-10-26T00:12:52Z",
+    "lastCommitDate": "2021-10-26T00:12:52Z",
+    "topContributors": [
+      {
+        "contributions": 65,
+        "login": "ShahimEssaid"
+      },
+      {
+        "contributions": 36,
+        "login": "mbrush"
+      },
+      {
+        "contributions": 18,
+        "login": "bfurner"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-04-06T22:36:55Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "This repository is intended to act as a store of example data files from across the NCI Cancer Research Data Commons (CRDC) nodes in a number of formats.",
+    "name": "example-data",
+    "updatedAt": "2022-01-07T22:13:38Z",
+    "url": "https://github.com/cancerDHC/example-data",
+    "firstCommitDate": "2022-01-07T22:13:31Z",
+    "lastCommitDate": "2022-01-07T22:13:31Z",
+    "topContributors": [
+      {
+        "contributions": 192,
+        "login": "gaurav"
+      },
+      {
+        "contributions": 5,
+        "login": "jooho-lee-kim"
+      },
+      {
+        "contributions": 4,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 2,
+        "login": "balhoff"
+      },
+      {
+        "contributions": 2,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-12-11T19:55:08Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Custom modification of Frappe Gantt (https://github.com/frappe/gantt)",
+    "name": "frappe-gantt-custom-mod",
+    "updatedAt": "2021-06-15T16:56:13Z",
+    "url": "https://github.com/cancerDHC/frappe-gantt-custom-mod",
+    "firstCommitDate": "2021-06-14T20:30:23Z",
+    "lastCommitDate": "2021-06-14T20:30:23Z",
+    "topContributors": [
+      {
+        "contributions": 60,
+        "login": "netchampfaris"
+      },
+      {
+        "contributions": 11,
+        "login": "jen-martin"
+      },
+      {
+        "contributions": 4,
+        "login": "Anurag810"
+      },
+      {
+        "contributions": 2,
+        "login": "diegodurrod"
+      },
+      {
+        "contributions": 2,
+        "login": "gavindsouza"
+      },
+      {
+        "contributions": 1,
+        "login": "Alisher778"
+      },
+      {
+        "contributions": 1,
+        "login": "anto-christo"
+      },
+      {
+        "contributions": 1,
+        "login": "huchim"
+      },
+      {
+        "contributions": 1,
+        "login": "davidalves1"
+      },
+      {
+        "contributions": 1,
+        "login": "dalwadani"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-08-05T20:02:21Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "JSON Data Visualization and Transformation Tool",
+    "name": "jdvt",
+    "updatedAt": "2022-01-06T21:00:19Z",
+    "url": "https://github.com/cancerDHC/jdvt",
+    "firstCommitDate": "2022-01-06T21:00:03Z",
+    "lastCommitDate": "2022-01-06T21:00:03Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "gaurav"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-05-28T02:38:37Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Linked Open Data Modeling Language",
+    "name": "linkml",
+    "updatedAt": "2021-11-16T16:33:07Z",
+    "url": "https://github.com/cancerDHC/linkml",
+    "firstCommitDate": "2021-11-16T16:33:01Z",
+    "lastCommitDate": "2021-11-16T16:33:01Z",
+    "topContributors": [
+      {
+        "contributions": 247,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 140,
+        "login": "actions-user"
+      },
+      {
+        "contributions": 126,
+        "login": "hsolbrig"
+      },
+      {
+        "contributions": 85,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 30,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 24,
+        "login": "gaurav"
+      },
+      {
+        "contributions": 16,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 13,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 8,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 6,
+        "login": "joeflack4"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-05-26T15:42:05Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Configuration to deploy ontotools using docker compose",
+    "name": "ontotools-docker",
+    "updatedAt": "2021-05-26T15:42:06Z",
+    "url": "https://github.com/cancerDHC/ontotools-docker",
+    "firstCommitDate": "2021-05-26T10:21:50Z",
+    "lastCommitDate": "2021-05-26T10:21:50Z",
+    "topContributors": [
+      {
+        "contributions": 13,
+        "login": "jamesamcl"
+      },
+      {
+        "contributions": 6,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-10-16T02:01:31Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "for operational functions",
+    "name": "operations",
+    "updatedAt": "2022-10-05T22:16:34Z",
+    "url": "https://github.com/cancerDHC/operations",
+    "firstCommitDate": "2021-07-20T21:16:34Z",
+    "lastCommitDate": "2021-07-20T21:16:34Z",
+    "topContributors": [
+      {
+        "contributions": 28,
+        "login": "monicacecilia"
+      },
+      {
+        "contributions": 4,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 1,
+        "login": "jmcmurry"
+      },
+      {
+        "contributions": 1,
+        "login": "keblumhardt"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-09-27T19:32:06Z",
+    "defaultBranchRef": {
+      "name": "develop"
+    },
+    "description": "Python package for conversion of Google Sheet to LinkML for CCDH",
+    "name": "sheet2linkml",
+    "updatedAt": "2021-12-15T13:15:15Z",
+    "url": "https://github.com/cancerDHC/sheet2linkml",
+    "firstCommitDate": "2021-12-13T17:56:44Z",
+    "lastCommitDate": "2021-12-13T17:56:44Z",
+    "topContributors": [
+      {
+        "contributions": 47,
+        "login": "gaurav"
+      },
+      {
+        "contributions": 38,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 7,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-12-23T20:47:54Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "CCDH Terminology Workstream issues",
+    "name": "Terminology",
+    "updatedAt": "2020-01-13T22:53:28Z",
+    "url": "https://github.com/cancerDHC/Terminology",
+    "firstCommitDate": "2020-01-13T22:53:25Z",
+    "lastCommitDate": "2020-01-13T22:53:25Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2020-07-27T18:21:54Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A repository for the work of the Tools workstream for CCDH",
+    "name": "tools",
+    "updatedAt": "2021-05-18T22:01:07Z",
+    "url": "https://github.com/cancerDHC/tools",
+    "firstCommitDate": "2020-10-06T21:24:41Z",
+    "lastCommitDate": "2020-10-06T21:24:41Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 1,
+        "login": "monicacecilia"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-03-30T15:20:50Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A very basic library for parsing files in the UMLS RRF format",
+    "name": "umls-rrf-scala",
+    "updatedAt": "2023-09-20T03:36:18Z",
+    "url": "https://github.com/cancerDHC/umls-rrf-scala",
+    "firstCommitDate": "2020-11-04T22:30:20Z",
+    "lastCommitDate": "2020-11-04T22:30:20Z",
+    "topContributors": [
+      {
+        "contributions": 79,
+        "login": "gaurav"
+      }
+    ]
+  }
+]

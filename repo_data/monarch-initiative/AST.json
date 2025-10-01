@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-04-06T11:17:59Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Annotation Sufficienct Tool",
+  "name": "AST",
+  "updatedAt": "2021-04-07T17:46:07Z",
+  "url": "https://github.com/monarch-initiative/AST",
+  "firstCommitDate": "2021-04-07T17:45:10Z",
+  "lastCommitDate": "2021-04-07T17:45:10Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "pnrobinson"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-10-28T18:40:53Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Modular ingest of GOCAMs",
+  "name": "gocam-modular",
+  "updatedAt": "2025-09-04T18:29:35Z",
+  "url": "https://github.com/monarch-initiative/gocam-modular",
+  "firstCommitDate": "2025-09-04T18:12:07Z",
+  "lastCommitDate": "2025-09-04T18:12:07Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "justaddcoffee"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "createdAt": "2021-06-05T17:43:54Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Pydantic dataclasses for the Biolink model",
+  "name": "biolink-model-pydantic",
+  "updatedAt": "2021-12-03T14:43:54Z",
+  "url": "https://github.com/monarch-initiative/biolink-model-pydantic",
+  "firstCommitDate": "2022-04-20T20:08:37Z",
+  "lastCommitDate": "2022-04-20T20:08:37Z",
+  "topContributors": [
+    {
+      "contributions": 24,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 20,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 1,
+      "login": "RichardBruskiewich"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-05-16T19:57:07Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "user_research",
+  "updatedAt": "2023-05-16T19:57:07Z",
+  "url": "https://github.com/microbiomedata/user_research",
+  "firstCommitDate": "2023-09-25T17:16:33Z",
+  "lastCommitDate": "2023-09-25T17:16:33Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "ssarrafan"
+    },
+    {
+      "contributions": 3,
+      "login": "ljohnson09"
+    }
+  ]
+}

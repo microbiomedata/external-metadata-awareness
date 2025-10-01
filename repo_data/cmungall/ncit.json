@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-12-21T17:15:54Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Draft of NCIt mirroring repo",
+  "name": "ncit",
+  "updatedAt": "2016-04-27T23:07:11Z",
+  "url": "https://github.com/cmungall/ncit",
+  "firstCommitDate": "2016-04-28T01:34:33Z",
+  "lastCommitDate": "2016-04-28T01:34:33Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "cmungall"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "createdAt": "2011-12-16T14:25:43Z",
+  "defaultBranchRef": {
+    "name": "2.x-stable"
+  },
+  "description": "GWAS Catalog Ontology and Curation Infrastructure",
+  "name": "goci",
+  "updatedAt": "2025-09-23T20:37:25Z",
+  "url": "https://github.com/EBISPOT/goci",
+  "firstCommitDate": "2025-09-23T20:37:16Z",
+  "lastCommitDate": "2025-09-23T20:37:16Z",
+  "topContributors": [
+    {
+      "contributions": 2972,
+      "login": "emma-ebi"
+    },
+    {
+      "contributions": 1385,
+      "login": "daniwelter"
+    },
+    {
+      "contributions": 846,
+      "login": "tburdett"
+    },
+    {
+      "contributions": 290,
+      "login": "jstewart-ebi"
+    },
+    {
+      "contributions": 155,
+      "login": "sajo-ebi"
+    },
+    {
+      "contributions": 103,
+      "login": "ala-ebi"
+    },
+    {
+      "contributions": 102,
+      "login": "sprintell"
+    },
+    {
+      "contributions": 84,
+      "login": "hxin"
+    },
+    {
+      "contributions": 58,
+      "login": "JalMacArthur"
+    },
+    {
+      "contributions": 54,
+      "login": "twhetzel"
+    }
+  ]
+}

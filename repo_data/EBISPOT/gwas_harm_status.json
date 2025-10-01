@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-04-15T19:57:06Z",
+  "defaultBranchRef": {
+    "name": "dev"
+  },
+  "description": "",
+  "name": "gwas_harm_status",
+  "updatedAt": "2025-05-15T16:14:28Z",
+  "url": "https://github.com/EBISPOT/gwas_harm_status",
+  "firstCommitDate": "2025-05-15T16:14:24Z",
+  "lastCommitDate": "2025-05-15T16:14:24Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "jiyue1214"
+    }
+  ]
+}

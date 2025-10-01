@@ -1,0 +1,18 @@
+{
+  "createdAt": "2014-04-29T01:22:23Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "systems biology prolog library",
+  "name": "pl-sysbio",
+  "updatedAt": "2021-06-18T05:17:13Z",
+  "url": "https://github.com/cmungall/pl-sysbio",
+  "firstCommitDate": "2017-11-15T02:01:24Z",
+  "lastCommitDate": "2017-11-15T02:01:24Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "cmungall"
+    }
+  ]
+}

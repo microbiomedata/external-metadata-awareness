@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-05-28T23:36:01Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A subclass of bbop-graph that layers on a complete annotation and graph editing model for the Noctua set of tools.",
+  "name": "bbop-graph-noctua",
+  "updatedAt": "2020-07-02T22:43:41Z",
+  "url": "https://github.com/berkeleybop/bbop-graph-noctua",
+  "firstCommitDate": "2020-07-02T22:43:33Z",
+  "lastCommitDate": "2020-07-02T22:43:33Z",
+  "topContributors": [
+    {
+      "contributions": 127,
+      "login": "kltm"
+    }
+  ]
+}

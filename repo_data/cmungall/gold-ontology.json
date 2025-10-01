@@ -1,0 +1,26 @@
+{
+  "createdAt": "2021-06-09T02:47:28Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "gold-ontology",
+  "updatedAt": "2025-07-12T00:41:22Z",
+  "url": "https://github.com/cmungall/gold-ontology",
+  "firstCommitDate": "2025-01-27T23:08:03Z",
+  "lastCommitDate": "2025-01-27T23:08:03Z",
+  "topContributors": [
+    {
+      "contributions": 29,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 13,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 7,
+      "login": "turbomam"
+    }
+  ]
+}

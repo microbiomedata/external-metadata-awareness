@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-11-18T17:58:29Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "hgnc-sssom",
+  "updatedAt": "2021-12-08T16:43:56Z",
+  "url": "https://github.com/monarch-initiative/hgnc-sssom",
+  "firstCommitDate": "2021-12-08T16:42:44Z",
+  "lastCommitDate": "2021-12-08T16:42:44Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "kshefchek"
+    }
+  ]
+}

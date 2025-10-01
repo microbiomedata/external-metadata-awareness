@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-05-22T05:19:16Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "mondo-mappings",
+  "updatedAt": "2025-05-22T05:21:07Z",
+  "url": "https://github.com/cmungall/mondo-mappings",
+  "firstCommitDate": "2025-05-21T23:26:42Z",
+  "lastCommitDate": "2025-05-21T23:26:42Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

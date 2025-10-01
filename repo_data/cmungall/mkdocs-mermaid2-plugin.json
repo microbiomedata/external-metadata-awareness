@@ -1,0 +1,50 @@
+{
+  "createdAt": "2023-01-05T01:10:09Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A Mermaid graphs plugin for mkdocs",
+  "name": "mkdocs-mermaid2-plugin",
+  "updatedAt": "2023-01-02T17:06:08Z",
+  "url": "https://github.com/cmungall/mkdocs-mermaid2-plugin",
+  "firstCommitDate": "2021-12-11T12:24:53Z",
+  "lastCommitDate": "2021-12-11T12:24:53Z",
+  "topContributors": [
+    {
+      "contributions": 14,
+      "login": "fralau"
+    },
+    {
+      "contributions": 7,
+      "login": "pugong"
+    },
+    {
+      "contributions": 3,
+      "login": "PeterJCLaw"
+    },
+    {
+      "contributions": 2,
+      "login": "kratsg"
+    },
+    {
+      "contributions": 2,
+      "login": "ribetm"
+    },
+    {
+      "contributions": 2,
+      "login": "patrislav1"
+    },
+    {
+      "contributions": 1,
+      "login": "jannschu"
+    },
+    {
+      "contributions": 1,
+      "login": "sblaisot"
+    },
+    {
+      "contributions": 1,
+      "login": "ultrabug"
+    }
+  ]
+}

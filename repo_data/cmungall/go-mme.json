@@ -1,0 +1,18 @@
+{
+  "createdAt": "2014-03-06T21:51:45Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Prototype editor frontend for the Molecular Modal Environment for the Gene Ontology.",
+  "name": "go-mme",
+  "updatedAt": "2015-01-30T00:07:29Z",
+  "url": "https://github.com/cmungall/go-mme",
+  "firstCommitDate": "2014-03-06T20:39:17Z",
+  "lastCommitDate": "2014-03-06T20:39:17Z",
+  "topContributors": [
+    {
+      "contributions": 239,
+      "login": "kltm"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-02-20T12:46:14Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A set of tools that annotate free text to ontologies using LLMs.",
+  "name": "ontoSPOT-annotation",
+  "updatedAt": "2025-08-18T15:40:21Z",
+  "url": "https://github.com/EBISPOT/ontoSPOT-annotation",
+  "firstCommitDate": "2025-08-18T15:38:26Z",
+  "lastCommitDate": "2025-08-18T15:38:26Z",
+  "topContributors": [
+    {
+      "contributions": 13,
+      "login": "aleixpuigb"
+    }
+  ]
+}

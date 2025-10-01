@@ -1,0 +1,54 @@
+{
+  "createdAt": "2018-01-27T14:14:30Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "phenol: Phenotype ontology library",
+  "name": "phenol",
+  "updatedAt": "2025-08-13T11:18:10Z",
+  "url": "https://github.com/monarch-initiative/phenol",
+  "firstCommitDate": "2025-03-13T09:51:04Z",
+  "lastCommitDate": "2025-03-13T09:51:04Z",
+  "topContributors": [
+    {
+      "contributions": 495,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 277,
+      "login": "ielis"
+    },
+    {
+      "contributions": 155,
+      "login": "holtgrewe"
+    },
+    {
+      "contributions": 59,
+      "login": "julesjacobsen"
+    },
+    {
+      "contributions": 50,
+      "login": "iimpulse"
+    },
+    {
+      "contributions": 21,
+      "login": "yy20716"
+    },
+    {
+      "contributions": 19,
+      "login": "kingmanzhang"
+    },
+    {
+      "contributions": 12,
+      "login": "hannahblau"
+    },
+    {
+      "contributions": 4,
+      "login": "aeyates"
+    },
+    {
+      "contributions": 3,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

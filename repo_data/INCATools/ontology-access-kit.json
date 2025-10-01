@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-03-28T15:50:45Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Ontology Access Kit: A python library and command line application for working with ontologies",
+  "name": "ontology-access-kit",
+  "updatedAt": "2025-09-18T01:29:40Z",
+  "url": "https://github.com/INCATools/ontology-access-kit",
+  "firstCommitDate": "2025-06-05T23:32:26Z",
+  "lastCommitDate": "2025-06-05T23:32:26Z",
+  "topContributors": [
+    {
+      "contributions": 381,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 118,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 22,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 21,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 11,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 8,
+      "login": "realmarcin"
+    },
+    {
+      "contributions": 7,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 7,
+      "login": "joeflack4"
+    },
+    {
+      "contributions": 6,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 5,
+      "login": "dalito"
+    }
+  ]
+}

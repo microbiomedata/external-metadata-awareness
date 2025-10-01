@@ -1,0 +1,22 @@
+{
+  "createdAt": "2017-01-13T19:09:25Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "R library and scripts to process sleep data for clustering",
+  "name": "sleep-apnea-clustering",
+  "updatedAt": "2023-10-04T21:01:41Z",
+  "url": "https://github.com/monarch-initiative/sleep-apnea-clustering",
+  "firstCommitDate": "2017-10-10T00:27:19Z",
+  "lastCommitDate": "2017-10-10T00:27:19Z",
+  "topContributors": [
+    {
+      "contributions": 122,
+      "login": "jasonli1717"
+    },
+    {
+      "contributions": 1,
+      "login": "kshefchek"
+    }
+  ]
+}

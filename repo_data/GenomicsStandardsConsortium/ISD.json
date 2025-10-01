@@ -1,0 +1,34 @@
+{
+  "createdAt": "2019-10-09T09:34:34Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "This repository contains scripts for the analysis of the Island Sampling Day of Crete 2016, a project of the soil microbiome.",
+  "name": "ISD",
+  "updatedAt": "2025-07-27T19:28:47Z",
+  "url": "https://github.com/GenomicsStandardsConsortium/ISD",
+  "firstCommitDate": "2025-07-27T19:17:37Z",
+  "lastCommitDate": "2025-07-27T19:17:37Z",
+  "topContributors": [
+    {
+      "contributions": 59,
+      "login": "savvas-paragkamian"
+    },
+    {
+      "contributions": 20,
+      "login": "hariszaf"
+    },
+    {
+      "contributions": 13,
+      "login": "lschriml"
+    },
+    {
+      "contributions": 5,
+      "login": "evangelospafilis"
+    },
+    {
+      "contributions": 1,
+      "login": "jbholm"
+    }
+  ]
+}

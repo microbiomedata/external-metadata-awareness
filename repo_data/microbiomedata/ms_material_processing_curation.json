@@ -1,0 +1,34 @@
+{
+  "createdAt": "2024-11-19T00:20:46Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "This repo is a place for the MS Material Processing Metadata Squad to save scripts and files related to the curation of the mass spectrometry material processing and processed sample metadata.",
+  "name": "ms_material_processing_curation",
+  "updatedAt": "2025-09-15T17:32:34Z",
+  "url": "https://github.com/microbiomedata/ms_material_processing_curation",
+  "firstCommitDate": "2025-09-15T17:32:28Z",
+  "lastCommitDate": "2025-09-15T17:32:28Z",
+  "topContributors": [
+    {
+      "contributions": 149,
+      "login": "samobermiller"
+    },
+    {
+      "contributions": 42,
+      "login": "bmeluch"
+    },
+    {
+      "contributions": 19,
+      "login": "kheal"
+    },
+    {
+      "contributions": 12,
+      "login": "mslarae13"
+    },
+    {
+      "contributions": 2,
+      "login": "hesspnnl"
+    }
+  ]
+}

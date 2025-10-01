@@ -1,0 +1,26 @@
+{
+  "createdAt": "2020-09-15T04:06:55Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "CCDH Project GitHub Tasks Dashboard",
+  "name": "dashboard",
+  "updatedAt": "2021-09-20T17:15:08Z",
+  "url": "https://github.com/cancerDHC/dashboard",
+  "firstCommitDate": "2021-09-17T20:31:53Z",
+  "lastCommitDate": "2021-09-17T20:31:53Z",
+  "topContributors": [
+    {
+      "contributions": 35,
+      "login": "jen-martin"
+    },
+    {
+      "contributions": 1,
+      "login": "dvenckusuchgo"
+    },
+    {
+      "contributions": 1,
+      "login": "nlharris"
+    }
+  ]
+}

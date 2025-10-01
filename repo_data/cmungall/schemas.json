@@ -1,0 +1,54 @@
+{
+  "createdAt": "2014-10-19T22:12:04Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Work on data models and APIs for Genomic data.",
+  "name": "schemas",
+  "updatedAt": "2017-08-24T16:50:27Z",
+  "url": "https://github.com/cmungall/schemas",
+  "firstCommitDate": "2014-10-02T17:00:21Z",
+  "lastCommitDate": "2014-10-02T17:00:21Z",
+  "topContributors": [
+    {
+      "contributions": 106,
+      "login": "cassiedoll"
+    },
+    {
+      "contributions": 47,
+      "login": "dglazer"
+    },
+    {
+      "contributions": 27,
+      "login": "delagoya"
+    },
+    {
+      "contributions": 19,
+      "login": "benedictpaten"
+    },
+    {
+      "contributions": 18,
+      "login": "adamnovak"
+    },
+    {
+      "contributions": 16,
+      "login": "fnothaft"
+    },
+    {
+      "contributions": 14,
+      "login": "lh3"
+    },
+    {
+      "contributions": 13,
+      "login": "massie"
+    },
+    {
+      "contributions": 12,
+      "login": "calbach"
+    },
+    {
+      "contributions": 9,
+      "login": "richarddurbin"
+    }
+  ]
+}

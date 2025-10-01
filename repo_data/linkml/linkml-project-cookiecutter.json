@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-09-06T15:42:53Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A cookiecutter for linkml projects. An equivalent of `linkml-ws new project-name`.",
+  "name": "linkml-project-cookiecutter",
+  "updatedAt": "2025-07-24T22:20:06Z",
+  "url": "https://github.com/linkml/linkml-project-cookiecutter",
+  "firstCommitDate": "2025-02-12T21:02:58Z",
+  "lastCommitDate": "2025-02-12T21:02:58Z",
+  "topContributors": [
+    {
+      "contributions": 94,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 57,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 33,
+      "login": "noelmcloughlin"
+    },
+    {
+      "contributions": 31,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 19,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 19,
+      "login": "dalito"
+    },
+    {
+      "contributions": 10,
+      "login": "amc-corey-cox"
+    },
+    {
+      "contributions": 7,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 3,
+      "login": "yarikoptic"
+    },
+    {
+      "contributions": 2,
+      "login": "cpauvert"
+    }
+  ]
+}

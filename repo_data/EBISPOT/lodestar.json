@@ -1,0 +1,30 @@
+{
+  "createdAt": "2013-07-16T22:12:56Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Linked Data explorer and SPARQL endpoint",
+  "name": "lodestar",
+  "updatedAt": "2023-09-04T04:26:08Z",
+  "url": "https://github.com/EBISPOT/lodestar",
+  "firstCommitDate": "2018-06-05T08:53:50Z",
+  "lastCommitDate": "2018-06-05T08:53:50Z",
+  "topContributors": [
+    {
+      "contributions": 79,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 13,
+      "login": "danizen"
+    },
+    {
+      "contributions": 6,
+      "login": "tburdett"
+    },
+    {
+      "contributions": 2,
+      "login": "LLTommy"
+    }
+  ]
+}

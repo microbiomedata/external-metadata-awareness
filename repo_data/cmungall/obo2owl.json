@@ -1,0 +1,22 @@
+{
+  "createdAt": "2010-04-09T18:20:08Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "collected documents specifying new obo<->owl translation",
+  "name": "obo2owl",
+  "updatedAt": "2017-04-07T14:14:36Z",
+  "url": "https://github.com/cmungall/obo2owl",
+  "firstCommitDate": "2011-07-11T17:50:32Z",
+  "lastCommitDate": "2011-07-11T17:50:32Z",
+  "topContributors": [
+    {
+      "contributions": 56,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "balhoff"
+    }
+  ]
+}

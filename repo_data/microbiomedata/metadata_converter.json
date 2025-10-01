@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-06-17T18:38:15Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Conversion of schemas/templates/metadata to biolinkml",
+  "name": "metadata_converter",
+  "updatedAt": "2023-02-13T14:15:00Z",
+  "url": "https://github.com/microbiomedata/metadata_converter",
+  "firstCommitDate": "2021-04-19T23:34:19Z",
+  "lastCommitDate": "2021-04-19T23:34:19Z",
+  "topContributors": [
+    {
+      "contributions": 25,
+      "login": "cmungall"
+    }
+  ]
+}

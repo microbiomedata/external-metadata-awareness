@@ -1,0 +1,38 @@
+{
+  "createdAt": "2025-03-10T19:03:39Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Collections of GA4GH phenopackets that represent individuals with Mendelian diseases.",
+  "name": "phenopacket-store",
+  "updatedAt": "2025-03-10T19:03:39Z",
+  "url": "https://github.com/cmungall/phenopacket-store",
+  "firstCommitDate": "2025-03-05T16:44:41Z",
+  "lastCommitDate": "2025-03-05T16:44:41Z",
+  "topContributors": [
+    {
+      "contributions": 950,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 178,
+      "login": "ielis"
+    },
+    {
+      "contributions": 66,
+      "login": "ldingemans"
+    },
+    {
+      "contributions": 5,
+      "login": "adamklocperk"
+    },
+    {
+      "contributions": 5,
+      "login": "tudorgroza"
+    },
+    {
+      "contributions": 4,
+      "login": "hansenp"
+    }
+  ]
+}

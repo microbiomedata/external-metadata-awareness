@@ -1,0 +1,26 @@
+{
+  "createdAt": "2018-06-29T10:37:25Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A generic and scaleable GWAS summary statistics table formatter",
+  "name": "sum-stats-formatter",
+  "updatedAt": "2025-04-12T14:40:34Z",
+  "url": "https://github.com/EBISPOT/sum-stats-formatter",
+  "firstCommitDate": "2024-01-11T16:48:04Z",
+  "lastCommitDate": "2024-01-11T16:48:04Z",
+  "topContributors": [
+    {
+      "contributions": 185,
+      "login": "jdhayhurst"
+    },
+    {
+      "contributions": 5,
+      "login": "olgavrou"
+    },
+    {
+      "contributions": 2,
+      "login": "karatugo"
+    }
+  ]
+}

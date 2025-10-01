@@ -1,0 +1,34 @@
+{
+  "createdAt": "2015-12-11T11:52:28Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "plant-trait-ontology",
+  "updatedAt": "2015-12-11T11:52:29Z",
+  "url": "https://github.com/cmungall/plant-trait-ontology",
+  "firstCommitDate": "2015-12-10T23:57:22Z",
+  "lastCommitDate": "2015-12-10T23:57:22Z",
+  "topContributors": [
+    {
+      "contributions": 63,
+      "login": "cooperl09"
+    },
+    {
+      "contributions": 62,
+      "login": "ejohnson1"
+    },
+    {
+      "contributions": 36,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 24,
+      "login": "elserj"
+    },
+    {
+      "contributions": 1,
+      "login": "seymourmegan"
+    }
+  ]
+}

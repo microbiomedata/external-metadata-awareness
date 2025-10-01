@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-08-05T20:31:35Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "maxo-annotation-ingest",
+  "updatedAt": "2025-01-13T19:13:50Z",
+  "url": "https://github.com/monarch-initiative/maxo-annotation-ingest",
+  "firstCommitDate": "2025-01-13T19:13:45Z",
+  "lastCommitDate": "2025-01-13T19:13:45Z",
+  "topContributors": [
+    {
+      "contributions": 18,
+      "login": "kevinschaper"
+    }
+  ]
+}

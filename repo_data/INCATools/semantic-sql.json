@@ -1,0 +1,42 @@
+{
+  "createdAt": "2021-05-04T21:31:08Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "SQL and SQLite builds of OWL ontologies",
+  "name": "semantic-sql",
+  "updatedAt": "2025-09-11T14:05:37Z",
+  "url": "https://github.com/INCATools/semantic-sql",
+  "firstCommitDate": "2025-02-25T19:18:52Z",
+  "lastCommitDate": "2025-02-25T19:18:52Z",
+  "topContributors": [
+    {
+      "contributions": 223,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 24,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 2,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 1,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 1,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 1,
+      "login": "ialarmedalien"
+    },
+    {
+      "contributions": 1,
+      "login": "realmarcin"
+    }
+  ]
+}

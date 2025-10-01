@@ -1,0 +1,22 @@
+{
+  "createdAt": "2014-11-04T16:52:54Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "ontologyReasoner",
+  "updatedAt": "2015-10-19T15:03:24Z",
+  "url": "https://github.com/EBISPOT/ontologyReasoner",
+  "firstCommitDate": "2015-10-22T15:13:13Z",
+  "lastCommitDate": "2015-10-22T15:13:13Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "daniwelter"
+    },
+    {
+      "contributions": 2,
+      "login": "CatherineLeroy"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-06-12T21:49:08Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A repo of very experimental code for calling APIs with langchain et al.",
+  "name": "oneilsh-llm-tools-tests",
+  "updatedAt": "2023-06-13T17:23:47Z",
+  "url": "https://github.com/monarch-initiative/oneilsh-llm-tools-tests",
+  "firstCommitDate": "2023-06-14T16:59:58Z",
+  "lastCommitDate": "2023-06-14T16:59:58Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "oneilsh"
+    }
+  ]
+}

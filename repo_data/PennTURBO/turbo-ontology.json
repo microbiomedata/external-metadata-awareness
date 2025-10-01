@@ -1,0 +1,26 @@
+{
+  "createdAt": "2018-05-14T18:54:59Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Hosts the TURBO Ontology and supporting files.",
+  "name": "turbo-ontology",
+  "updatedAt": "2022-03-01T14:13:36Z",
+  "url": "https://github.com/PennTURBO/turbo-ontology",
+  "firstCommitDate": "2022-06-09T17:07:03Z",
+  "lastCommitDate": "2022-06-09T17:07:03Z",
+  "topContributors": [
+    {
+      "contributions": 81,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 30,
+      "login": "cstoeckert"
+    },
+    {
+      "contributions": 3,
+      "login": "greenguy33"
+    }
+  ]
+}

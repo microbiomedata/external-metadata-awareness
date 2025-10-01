@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-09-06T09:55:03Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Place for me to play around and understand nextflow",
+  "name": "NextflowSandbox",
+  "updatedAt": "2019-09-19T18:05:59Z",
+  "url": "https://github.com/jfy133/NextflowSandbox",
+  "firstCommitDate": "2019-09-19T18:05:12Z",
+  "lastCommitDate": "2019-09-19T18:05:12Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "jfy133"
+    }
+  ]
+}

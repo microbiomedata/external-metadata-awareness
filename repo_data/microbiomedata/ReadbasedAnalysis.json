@@ -1,0 +1,54 @@
+{
+  "createdAt": "2020-08-07T21:45:39Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "ReadbasedAnalysis",
+  "updatedAt": "2025-06-30T20:37:01Z",
+  "url": "https://github.com/microbiomedata/ReadbasedAnalysis",
+  "firstCommitDate": "2025-06-24T15:54:42Z",
+  "lastCommitDate": "2025-06-24T15:54:42Z",
+  "topContributors": [
+    {
+      "contributions": 36,
+      "login": "poeli"
+    },
+    {
+      "contributions": 27,
+      "login": "mflynn-lanl"
+    },
+    {
+      "contributions": 24,
+      "login": "vlilanl"
+    },
+    {
+      "contributions": 12,
+      "login": "kaijli"
+    },
+    {
+      "contributions": 10,
+      "login": "scanon"
+    },
+    {
+      "contributions": 8,
+      "login": "aclum"
+    },
+    {
+      "contributions": 7,
+      "login": "chienchi"
+    },
+    {
+      "contributions": 4,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 2,
+      "login": "hubin-keio"
+    },
+    {
+      "contributions": 1,
+      "login": "jfroula"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "createdAt": "2023-05-24T06:53:28Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Minimum Information about any (X) Sequence” (MIxS) specification",
+  "name": "genomics-standards-consortium-mixs",
+  "updatedAt": "2025-06-18T14:24:42Z",
+  "url": "https://github.com/jfy133/genomics-standards-consortium-mixs",
+  "firstCommitDate": "2025-06-09T19:40:21Z",
+  "lastCommitDate": "2025-06-09T19:40:21Z",
+  "topContributors": [
+    {
+      "contributions": 244,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 161,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 64,
+      "login": "ramonawalls"
+    },
+    {
+      "contributions": 48,
+      "login": "mslarae13"
+    },
+    {
+      "contributions": 14,
+      "login": "lschriml"
+    },
+    {
+      "contributions": 13,
+      "login": "folker"
+    },
+    {
+      "contributions": 13,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 12,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 11,
+      "login": "only1chunts"
+    },
+    {
+      "contributions": 10,
+      "login": "renzok"
+    }
+  ]
+}

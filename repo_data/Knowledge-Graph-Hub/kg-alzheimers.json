@@ -1,0 +1,54 @@
+{
+  "createdAt": "2025-01-29T19:17:11Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A knowledge graph integrating biomedical data related to Alzheimer's Disease",
+  "name": "kg-alzheimers",
+  "updatedAt": "2025-09-29T23:03:15Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/kg-alzheimers",
+  "firstCommitDate": "2025-09-29T23:03:11Z",
+  "lastCommitDate": "2025-09-29T23:03:11Z",
+  "topContributors": [
+    {
+      "contributions": 889,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 122,
+      "login": "RichardBruskiewich"
+    },
+    {
+      "contributions": 34,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 28,
+      "login": "victoriasoesanto"
+    },
+    {
+      "contributions": 27,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 17,
+      "login": "amc-corey-cox"
+    },
+    {
+      "contributions": 14,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 7,
+      "login": "putmantime"
+    },
+    {
+      "contributions": 3,
+      "login": "iQuxLE"
+    },
+    {
+      "contributions": 3,
+      "login": "matentzn"
+    }
+  ]
+}

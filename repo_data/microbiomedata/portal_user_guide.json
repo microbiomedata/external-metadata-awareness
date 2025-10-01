@@ -1,0 +1,30 @@
+{
+  "createdAt": "2021-09-24T19:30:46Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "portal_user_guide",
+  "updatedAt": "2025-02-20T20:15:41Z",
+  "url": "https://github.com/microbiomedata/portal_user_guide",
+  "firstCommitDate": "2025-02-20T20:15:37Z",
+  "lastCommitDate": "2025-02-20T20:15:37Z",
+  "topContributors": [
+    {
+      "contributions": 12,
+      "login": "hubin-keio"
+    },
+    {
+      "contributions": 5,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 4,
+      "login": "mflynn-lanl"
+    },
+    {
+      "contributions": 2,
+      "login": "kwdavenport"
+    }
+  ]
+}

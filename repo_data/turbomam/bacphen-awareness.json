@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-07-31T11:46:21Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Exploring microbial phenotype resources ",
+  "name": "bacphen-awareness",
+  "updatedAt": "2025-08-13T16:34:19Z",
+  "url": "https://github.com/turbomam/bacphen-awareness",
+  "firstCommitDate": "2025-08-13T16:34:15Z",
+  "lastCommitDate": "2025-08-13T16:34:15Z",
+  "topContributors": [
+    {
+      "contributions": 18,
+      "login": "turbomam"
+    }
+  ]
+}

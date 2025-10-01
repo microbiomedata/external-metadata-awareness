@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-08-14T20:28:09Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Tools for fetching and processing external schemas, ontologies and metadata records. Includes value set maintenance and some GitHub org exploration.",
+  "name": "external-metadata-awareness",
+  "updatedAt": "2025-09-25T18:41:22Z",
+  "url": "https://github.com/microbiomedata/external-metadata-awareness",
+  "firstCommitDate": "2025-09-25T18:41:18Z",
+  "lastCommitDate": "2025-09-25T18:41:18Z",
+  "topContributors": [
+    {
+      "contributions": 491,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 3,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

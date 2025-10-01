@@ -1,0 +1,46 @@
+{
+  "createdAt": "2022-02-15T21:36:19Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Configuration to deploy ontotools using docker compose",
+  "name": "ontotools-docker",
+  "updatedAt": "2025-08-14T15:32:16Z",
+  "url": "https://github.com/monarch-initiative/ontotools-docker",
+  "firstCommitDate": "2025-08-14T15:32:12Z",
+  "lastCommitDate": "2025-08-14T15:32:12Z",
+  "topContributors": [
+    {
+      "contributions": 45,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 23,
+      "login": "falquaddoomi"
+    },
+    {
+      "contributions": 16,
+      "login": "jamesamcl"
+    },
+    {
+      "contributions": 7,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 6,
+      "login": "twhetzel"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "sabrinatoro"
+    },
+    {
+      "contributions": 1,
+      "login": "henrietteharmse"
+    }
+  ]
+}

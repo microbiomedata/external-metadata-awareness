@@ -1,0 +1,54 @@
+{
+  "createdAt": "2018-02-14T23:25:27Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "OWLTools",
+  "name": "owltools",
+  "updatedAt": "2018-02-14T23:25:32Z",
+  "url": "https://github.com/cmungall/owltools",
+  "firstCommitDate": "2018-02-14T22:52:05Z",
+  "lastCommitDate": "2018-02-14T22:52:05Z",
+  "topContributors": [
+    {
+      "contributions": 1067,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 192,
+      "login": "kltm"
+    },
+    {
+      "contributions": 54,
+      "login": "fbastian"
+    },
+    {
+      "contributions": 18,
+      "login": "dougli1sqrd"
+    },
+    {
+      "contributions": 16,
+      "login": "selewis"
+    },
+    {
+      "contributions": 14,
+      "login": "smanzoor"
+    },
+    {
+      "contributions": 9,
+      "login": "hdietze"
+    },
+    {
+      "contributions": 6,
+      "login": "tudorgroza"
+    },
+    {
+      "contributions": 3,
+      "login": "nathandunn"
+    },
+    {
+      "contributions": 2,
+      "login": "yy20716"
+    }
+  ]
+}

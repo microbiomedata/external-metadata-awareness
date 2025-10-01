@@ -1,0 +1,26 @@
+{
+  "createdAt": "2023-03-30T14:41:15Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Easy Domain Specific Languages for your Schemas",
+  "name": "semantic-dsl",
+  "updatedAt": "2025-09-29T23:44:34Z",
+  "url": "https://github.com/linkml/semantic-dsl",
+  "firstCommitDate": "2023-03-31T00:30:16Z",
+  "lastCommitDate": "2023-03-31T00:30:16Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 6,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 2,
+      "login": "linkmluser"
+    }
+  ]
+}

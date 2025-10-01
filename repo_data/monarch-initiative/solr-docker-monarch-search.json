@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-11-02T22:53:25Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Docker image to create the solr index for the search core.",
+  "name": "solr-docker-monarch-search",
+  "updatedAt": "2020-11-21T20:33:35Z",
+  "url": "https://github.com/monarch-initiative/solr-docker-monarch-search",
+  "firstCommitDate": "2020-11-21T20:33:32Z",
+  "lastCommitDate": "2020-11-21T20:33:32Z",
+  "topContributors": [
+    {
+      "contributions": 19,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 11,
+      "login": "jnguyenx"
+    }
+  ]
+}

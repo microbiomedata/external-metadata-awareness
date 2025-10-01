@@ -1,0 +1,38 @@
+{
+  "createdAt": "2021-04-09T16:35:06Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Data ingest pipeline for OMIM.",
+  "name": "omim",
+  "updatedAt": "2025-09-23T18:37:32Z",
+  "url": "https://github.com/monarch-initiative/omim",
+  "firstCommitDate": "2025-09-23T18:37:26Z",
+  "lastCommitDate": "2025-09-23T18:37:26Z",
+  "topContributors": [
+    {
+      "contributions": 285,
+      "login": "joeflack4"
+    },
+    {
+      "contributions": 100,
+      "login": "twhetzel"
+    },
+    {
+      "contributions": 21,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 7,
+      "login": "MeeSiing"
+    },
+    {
+      "contributions": 4,
+      "login": "sabrinatoro"
+    },
+    {
+      "contributions": 2,
+      "login": "Copilot"
+    }
+  ]
+}

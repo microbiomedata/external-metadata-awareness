@@ -1,0 +1,30 @@
+{
+  "createdAt": "2021-12-14T01:50:22Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "(subjective) overview of projects which are related both to python and semantic technologies (RDF, OWL, Reasoning, ...)",
+  "name": "semantic-python-overview",
+  "updatedAt": "2022-04-15T17:04:41Z",
+  "url": "https://github.com/cmungall/semantic-python-overview",
+  "firstCommitDate": "2021-11-23T16:46:52Z",
+  "lastCommitDate": "2021-11-23T16:46:52Z",
+  "topContributors": [
+    {
+      "contributions": 32,
+      "login": "cknoll"
+    },
+    {
+      "contributions": 2,
+      "login": "arenas-guerrero-julian"
+    },
+    {
+      "contributions": 1,
+      "login": "felixocker"
+    },
+    {
+      "contributions": 1,
+      "login": "sap218"
+    }
+  ]
+}

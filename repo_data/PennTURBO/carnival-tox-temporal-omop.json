@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-05-11T19:33:07Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Evaluation project to create temporal patient data graphs from OMOP data for the ComptoxAI project using the Carnival framework",
+  "name": "carnival-tox-temporal-omop",
+  "updatedAt": "2024-10-15T19:37:25Z",
+  "url": "https://github.com/PennTURBO/carnival-tox-temporal-omop",
+  "firstCommitDate": "2024-10-15T19:37:20Z",
+  "lastCommitDate": "2024-10-15T19:37:20Z",
+  "topContributors": [
+    {
+      "contributions": 64,
+      "login": "hjwilli"
+    },
+    {
+      "contributions": 28,
+      "login": "th5"
+    }
+  ]
+}

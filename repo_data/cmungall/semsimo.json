@@ -1,0 +1,18 @@
+{
+  "createdAt": "2012-11-04T19:55:34Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Semantic similarity ontology",
+  "name": "semsimo",
+  "updatedAt": "2022-04-20T12:30:58Z",
+  "url": "https://github.com/cmungall/semsimo",
+  "firstCommitDate": "2013-05-01T01:25:45Z",
+  "lastCommitDate": "2013-05-01T01:25:45Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "cmungall"
+    }
+  ]
+}

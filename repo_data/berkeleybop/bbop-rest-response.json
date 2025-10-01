@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-07-28T23:27:44Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Generic handler for dealing with the gross parsing and handling of responses from a REST service.",
+  "name": "bbop-rest-response",
+  "updatedAt": "2016-02-19T00:39:28Z",
+  "url": "https://github.com/berkeleybop/bbop-rest-response",
+  "firstCommitDate": "2016-10-21T01:05:18Z",
+  "lastCommitDate": "2016-10-21T01:05:18Z",
+  "topContributors": [
+    {
+      "contributions": 10,
+      "login": "kltm"
+    }
+  ]
+}

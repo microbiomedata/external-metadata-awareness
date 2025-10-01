@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-08-02T12:50:06Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Aligning GEMET to OBOs",
+  "name": "gemet-obo",
+  "updatedAt": "2021-06-18T04:27:30Z",
+  "url": "https://github.com/cmungall/gemet-obo",
+  "firstCommitDate": "2016-08-02T12:52:18Z",
+  "lastCommitDate": "2016-08-02T12:52:18Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

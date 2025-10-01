@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-05-06T01:18:34Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "big-science-ontology",
+  "updatedAt": "2016-05-06T02:36:25Z",
+  "url": "https://github.com/cmungall/big-science-ontology",
+  "firstCommitDate": "2016-05-06T02:36:19Z",
+  "lastCommitDate": "2016-05-06T02:36:19Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

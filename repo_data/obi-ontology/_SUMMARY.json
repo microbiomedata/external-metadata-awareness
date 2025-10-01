@@ -1,0 +1,140 @@
+[
+  {
+    "createdAt": "2017-02-27T19:40:48Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "An archive of OBI's SourceForge Subversion repository - DO NOT MODIFY",
+    "name": "obi-legacy-svn",
+    "updatedAt": "2017-02-28T15:49:09Z",
+    "url": "https://github.com/obi-ontology/obi-legacy-svn",
+    "firstCommitDate": "2017-02-28T15:39:38Z",
+    "lastCommitDate": "2017-02-28T15:39:38Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "jamesaoverton"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-02-27T19:49:13Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "An archive of OBI's MediaWiki content - DO NOT MODIFY",
+    "name": "obi-legacy-wiki",
+    "updatedAt": "2023-08-31T08:45:31Z",
+    "url": "https://github.com/obi-ontology/obi-legacy-wiki",
+    "firstCommitDate": "2017-02-28T15:30:58Z",
+    "lastCommitDate": "2017-02-28T15:30:58Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "jamesaoverton"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-02-27T17:01:53Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Website for the Ontology for Biomedical Investigations",
+    "name": "obi-ontology.org",
+    "updatedAt": "2022-01-04T18:13:53Z",
+    "url": "https://github.com/obi-ontology/obi-ontology.org",
+    "firstCommitDate": "2022-09-26T22:06:24Z",
+    "lastCommitDate": "2022-09-26T22:06:24Z",
+    "topContributors": [
+      {
+        "contributions": 49,
+        "login": "jamesaoverton"
+      },
+      {
+        "contributions": 12,
+        "login": "rvita"
+      },
+      {
+        "contributions": 1,
+        "login": "cstoeckert"
+      },
+      {
+        "contributions": 1,
+        "login": "zhengj2007"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-02-19T21:17:57Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Temporary OBI repository",
+    "name": "obi-temp",
+    "updatedAt": "2017-02-19T21:22:15Z",
+    "url": "https://github.com/obi-ontology/obi-temp",
+    "firstCommitDate": "2017-02-19T21:21:33Z",
+    "lastCommitDate": "2017-02-19T21:21:33Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "jamesaoverton"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-02-27T19:50:28Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "The Ontology for Biomedical Investigations",
+    "name": "obi",
+    "updatedAt": "2025-09-29T18:00:29Z",
+    "url": "https://github.com/obi-ontology/obi",
+    "firstCommitDate": "2025-09-29T18:00:24Z",
+    "lastCommitDate": "2025-09-29T18:00:24Z",
+    "topContributors": [
+      {
+        "contributions": 937,
+        "login": "jamesaoverton"
+      },
+      {
+        "contributions": 211,
+        "login": "sebastianduesing"
+      },
+      {
+        "contributions": 49,
+        "login": "beckyjackson"
+      },
+      {
+        "contributions": 33,
+        "login": "cstoeckert"
+      },
+      {
+        "contributions": 32,
+        "login": "adbartni"
+      },
+      {
+        "contributions": 29,
+        "login": "johnwjudkins"
+      },
+      {
+        "contributions": 27,
+        "login": "zhengj2007"
+      },
+      {
+        "contributions": 27,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 25,
+        "login": "DanBerrios"
+      },
+      {
+        "contributions": 15,
+        "login": "Daniel-Olson"
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-05-18T18:34:26Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Packer schemas for building Jenkins agent images",
+  "name": "jenkins-packer-schemas",
+  "updatedAt": "2022-11-11T19:36:55Z",
+  "url": "https://github.com/monarch-initiative/jenkins-packer-schemas",
+  "firstCommitDate": "2024-01-23T00:39:15Z",
+  "lastCommitDate": "2024-01-23T00:39:15Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 1,
+      "login": "falquaddoomi"
+    }
+  ]
+}

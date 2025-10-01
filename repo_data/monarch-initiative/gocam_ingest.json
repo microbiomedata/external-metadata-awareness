@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-07-18T19:58:33Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Ingest of GOCAM suitable for inclusion in KG",
+  "name": "gocam_ingest",
+  "updatedAt": "2025-07-31T16:52:06Z",
+  "url": "https://github.com/monarch-initiative/gocam_ingest",
+  "firstCommitDate": "2025-07-21T19:44:47Z",
+  "lastCommitDate": "2025-07-21T19:44:47Z",
+  "topContributors": [
+    {
+      "contributions": 18,
+      "login": "justaddcoffee"
+    }
+  ]
+}

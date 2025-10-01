@@ -1,0 +1,38 @@
+{
+  "createdAt": "2014-11-06T21:13:45Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Python scripts to find enrichment of GO terms",
+  "name": "goatools",
+  "updatedAt": "2014-11-06T21:33:19Z",
+  "url": "https://github.com/cmungall/goatools",
+  "firstCommitDate": "2014-11-06T21:32:33Z",
+  "lastCommitDate": "2014-11-06T21:32:33Z",
+  "topContributors": [
+    {
+      "contributions": 50,
+      "login": "tanghaibao"
+    },
+    {
+      "contributions": 15,
+      "login": "brentp"
+    },
+    {
+      "contributions": 5,
+      "login": "patflick"
+    },
+    {
+      "contributions": 4,
+      "login": "bicycle1885"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "yunesj"
+    }
+  ]
+}

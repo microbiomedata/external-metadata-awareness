@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-04-01T19:38:28Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Engagement, presentations, program planning, etc.",
+  "name": "Engagement",
+  "updatedAt": "2023-07-19T16:19:39Z",
+  "url": "https://github.com/microbiomedata/Engagement",
+  "firstCommitDate": "2023-07-17T20:24:05Z",
+  "lastCommitDate": "2023-07-17T20:24:05Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "ssarrafan"
+    }
+  ]
+}

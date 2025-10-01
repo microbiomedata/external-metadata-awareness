@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-08-30T00:50:12Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "rdf-sql-bulkloader",
+  "updatedAt": "2022-09-08T14:42:58Z",
+  "url": "https://github.com/INCATools/rdf-sql-bulkloader",
+  "firstCommitDate": "2023-03-02T21:36:39Z",
+  "lastCommitDate": "2023-03-02T21:36:39Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 6,
+      "login": "hrshdhgd"
+    }
+  ]
+}

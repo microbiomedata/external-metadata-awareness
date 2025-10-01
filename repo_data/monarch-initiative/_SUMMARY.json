@@ -1,0 +1,7094 @@
+[
+  {
+    "createdAt": "2019-09-05T21:11:48Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Notebooks and analyses for the 2020 NAR submission",
+    "name": "2020-NAR",
+    "updatedAt": "2019-09-12T02:09:36Z",
+    "url": "https://github.com/monarch-initiative/2020-NAR",
+    "firstCommitDate": "2019-09-12T02:09:22Z",
+    "lastCommitDate": "2019-09-12T02:09:22Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "kshefchek"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-06-27T19:46:46Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "agent-smith-ai",
+    "updatedAt": "2025-09-15T15:57:33Z",
+    "url": "https://github.com/monarch-initiative/agent-smith-ai",
+    "firstCommitDate": "2024-05-07T05:42:26Z",
+    "lastCommitDate": "2024-05-07T05:42:26Z",
+    "topContributors": [
+      {
+        "contributions": 76,
+        "login": "oneilsh"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-05-21T17:54:59Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "alliance-disease-association-ingest",
+    "updatedAt": "2025-08-13T16:48:56Z",
+    "url": "https://github.com/monarch-initiative/alliance-disease-association-ingest",
+    "firstCommitDate": "2025-08-13T16:48:42Z",
+    "lastCommitDate": "2025-08-13T16:48:42Z",
+    "topContributors": [
+      {
+        "contributions": 13,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 4,
+        "login": "madanucd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-04-30T23:53:00Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "alliance-genotype-ingest",
+    "updatedAt": "2025-05-20T22:09:24Z",
+    "url": "https://github.com/monarch-initiative/alliance-genotype-ingest",
+    "firstCommitDate": "2025-05-20T22:09:14Z",
+    "lastCommitDate": "2025-05-20T22:09:14Z",
+    "topContributors": [
+      {
+        "contributions": 21,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-05-13T17:05:05Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "alliance-phenotype-association-ingest",
+    "updatedAt": "2024-09-05T01:13:57Z",
+    "url": "https://github.com/monarch-initiative/alliance-phenotype-association-ingest",
+    "firstCommitDate": "2024-09-05T01:13:50Z",
+    "lastCommitDate": "2024-09-05T01:13:50Z",
+    "topContributors": [
+      {
+        "contributions": 10,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-05-07T16:01:49Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "alliance-variant-allele-ingest",
+    "updatedAt": "2024-05-07T16:03:00Z",
+    "url": "https://github.com/monarch-initiative/alliance-variant-allele-ingest",
+    "firstCommitDate": "2024-05-07T16:00:43Z",
+    "lastCommitDate": "2024-05-07T16:00:43Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-05-30T21:56:30Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Scripts to analyze monarch data sets and scigraph",
+    "name": "analysis-sandbox",
+    "updatedAt": "2021-11-18T15:51:12Z",
+    "url": "https://github.com/monarch-initiative/analysis-sandbox",
+    "firstCommitDate": "2021-11-18T15:51:02Z",
+    "lastCommitDate": "2021-11-18T15:51:02Z",
+    "topContributors": [
+      {
+        "contributions": 141,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 3,
+        "login": "monicacecilia"
+      },
+      {
+        "contributions": 2,
+        "login": "jmcmurry"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-04-06T11:17:59Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Annotation Sufficienct Tool",
+    "name": "AST",
+    "updatedAt": "2021-04-07T17:46:07Z",
+    "url": "https://github.com/monarch-initiative/AST",
+    "firstCommitDate": "2021-04-07T17:45:10Z",
+    "lastCommitDate": "2021-04-07T17:45:10Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "pnrobinson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-02-14T01:33:36Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A motley crew of agents developed by the Monarch Initiative",
+    "name": "aurelian",
+    "updatedAt": "2025-09-29T11:28:44Z",
+    "url": "https://github.com/monarch-initiative/aurelian",
+    "firstCommitDate": "2025-07-18T17:56:46Z",
+    "lastCommitDate": "2025-07-18T17:56:46Z",
+    "topContributors": [
+      {
+        "contributions": 109,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 49,
+        "login": "iQuxLE"
+      },
+      {
+        "contributions": 36,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 32,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 18,
+        "login": "realmarcin"
+      },
+      {
+        "contributions": 2,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 2,
+        "login": "linkmluser"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-02-13T20:38:44Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "automaxo",
+    "updatedAt": "2025-05-12T16:58:38Z",
+    "url": "https://github.com/monarch-initiative/automaxo",
+    "firstCommitDate": "2025-05-12T16:58:27Z",
+    "lastCommitDate": "2025-05-12T16:58:27Z",
+    "topContributors": [
+      {
+        "contributions": 116,
+        "login": "enockniyonkuru"
+      },
+      {
+        "contributions": 10,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 5,
+        "login": "leokim-l"
+      },
+      {
+        "contributions": 5,
+        "login": "pnrobinson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-05-02T11:14:54Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "automaxoviewer",
+    "name": "automaxoviewer",
+    "updatedAt": "2025-05-11T07:39:25Z",
+    "url": "https://github.com/monarch-initiative/automaxoviewer",
+    "firstCommitDate": "2025-05-11T07:39:21Z",
+    "lastCommitDate": "2025-05-11T07:39:21Z",
+    "topContributors": [
+      {
+        "contributions": 43,
+        "login": "pnrobinson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-05-21T05:29:44Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A format for language profiles for ontologies",
+    "name": "babelon",
+    "updatedAt": "2025-01-09T13:21:13Z",
+    "url": "https://github.com/monarch-initiative/babelon",
+    "firstCommitDate": "2025-01-09T13:21:08Z",
+    "lastCommitDate": "2025-01-09T13:21:08Z",
+    "topContributors": [
+      {
+        "contributions": 97,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 31,
+        "login": "souzadevinicius"
+      },
+      {
+        "contributions": 20,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 8,
+        "login": "victoriasoesanto"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-10-24T19:06:35Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "BioGRID ingest",
+    "name": "biogrid-ingest",
+    "updatedAt": "2024-12-03T19:25:18Z",
+    "url": "https://github.com/monarch-initiative/biogrid-ingest",
+    "firstCommitDate": "2024-12-03T19:25:01Z",
+    "lastCommitDate": "2024-12-03T19:25:01Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 4,
+        "login": "RichardBruskiewich"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-12-17T01:42:34Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "API for linked biological knowledge",
+    "name": "biolink-api",
+    "updatedAt": "2025-09-12T03:09:58Z",
+    "url": "https://github.com/monarch-initiative/biolink-api",
+    "firstCommitDate": "2022-04-26T17:04:05Z",
+    "lastCommitDate": "2022-04-26T17:04:05Z",
+    "topContributors": [
+      {
+        "contributions": 252,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 193,
+        "login": "deepakunni3"
+      },
+      {
+        "contributions": 144,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 25,
+        "login": "selewis"
+      },
+      {
+        "contributions": 18,
+        "login": "falquaddoomi"
+      },
+      {
+        "contributions": 11,
+        "login": "jnguyenx"
+      },
+      {
+        "contributions": 10,
+        "login": "lpalbou"
+      },
+      {
+        "contributions": 4,
+        "login": "nathandunn"
+      },
+      {
+        "contributions": 2,
+        "login": "gaurav"
+      },
+      {
+        "contributions": 2,
+        "login": "jmcmurry"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-06-05T17:43:54Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Pydantic dataclasses for the Biolink model",
+    "name": "biolink-model-pydantic",
+    "updatedAt": "2021-12-03T14:43:54Z",
+    "url": "https://github.com/monarch-initiative/biolink-model-pydantic",
+    "firstCommitDate": "2022-04-20T20:08:37Z",
+    "lastCommitDate": "2022-04-20T20:08:37Z",
+    "topContributors": [
+      {
+        "contributions": 24,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 20,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 1,
+        "login": "RichardBruskiewich"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-12-15T02:42:10Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Research Prototype for BioWeave Language and Tools",
+    "name": "BioWeave",
+    "updatedAt": "2023-03-02T17:36:58Z",
+    "url": "https://github.com/monarch-initiative/BioWeave",
+    "firstCommitDate": "2017-02-12T13:35:16Z",
+    "lastCommitDate": "2017-02-12T13:35:16Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "DoctorBud"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-05-25T13:02:48Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "For testing and debugging purposes of boomer",
+    "name": "boomer-examples",
+    "updatedAt": "2022-11-07T15:57:58Z",
+    "url": "https://github.com/monarch-initiative/boomer-examples",
+    "firstCommitDate": "2022-07-01T16:09:36Z",
+    "lastCommitDate": "2022-07-01T16:09:36Z",
+    "topContributors": [
+      {
+        "contributions": 9,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-06-17T02:08:58Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "boomer-gpt",
+    "updatedAt": "2023-10-27T05:51:03Z",
+    "url": "https://github.com/monarch-initiative/boomer-gpt",
+    "firstCommitDate": "2023-07-25T21:58:37Z",
+    "lastCommitDate": "2023-07-25T21:58:37Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-09-27T02:02:38Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "boomer-py",
+    "updatedAt": "2025-09-27T13:54:31Z",
+    "url": "https://github.com/monarch-initiative/boomer-py",
+    "firstCommitDate": "2025-09-27T02:09:25Z",
+    "lastCommitDate": "2025-09-27T02:09:25Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "cmungall-lbl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-08-25T17:23:17Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Single source of truth for Monarch Initiative brand assets and resources (e.g. logos",
+    "name": "brand",
+    "updatedAt": "2021-09-22T18:31:58Z",
+    "url": "https://github.com/monarch-initiative/brand",
+    "firstCommitDate": "2021-09-22T18:31:55Z",
+    "lastCommitDate": "2021-09-22T18:31:55Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "vincerubinetti"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-04-19T20:38:00Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Tooling for merging individual source KGX files in the Monarch ingest pipeline",
+    "name": "cat-merge",
+    "updatedAt": "2025-09-16T16:15:26Z",
+    "url": "https://github.com/monarch-initiative/cat-merge",
+    "firstCommitDate": "2025-09-16T16:15:21Z",
+    "lastCommitDate": "2025-09-16T16:15:21Z",
+    "topContributors": [
+      {
+        "contributions": 129,
+        "login": "amc-corey-cox"
+      },
+      {
+        "contributions": 107,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 2,
+        "login": "victoriasoesanto"
+      },
+      {
+        "contributions": 2,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 1,
+        "login": "putmantime"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-11-20T19:04:34Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Complex-Common Disease PhenoteFX",
+    "name": "CCPnoteFX",
+    "updatedAt": "2021-11-22T13:58:35Z",
+    "url": "https://github.com/monarch-initiative/CCPnoteFX",
+    "firstCommitDate": "2021-11-22T00:51:41Z",
+    "lastCommitDate": "2021-11-22T00:51:41Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "pnrobinson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-05-20T17:34:20Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "cde-clustering",
+    "updatedAt": "2025-07-16T21:19:57Z",
+    "url": "https://github.com/monarch-initiative/cde-clustering",
+    "firstCommitDate": "2025-05-20T17:45:45Z",
+    "lastCommitDate": "2025-05-20T17:45:45Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "madanucd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-02-23T19:18:09Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Initial private repo for P1 CDE harmonization",
+    "name": "cde-harmonization",
+    "updatedAt": "2025-09-23T04:46:08Z",
+    "url": "https://github.com/monarch-initiative/cde-harmonization",
+    "firstCommitDate": "2025-09-11T21:49:25Z",
+    "lastCommitDate": "2025-09-11T21:49:25Z",
+    "topContributors": [
+      {
+        "contributions": 55,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 16,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 5,
+        "login": "madanucd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-06-08T02:49:36Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "clingen-ingest",
+    "updatedAt": "2025-04-02T22:21:35Z",
+    "url": "https://github.com/monarch-initiative/clingen-ingest",
+    "firstCommitDate": "2025-04-02T22:21:31Z",
+    "lastCommitDate": "2025-04-02T22:21:31Z",
+    "topContributors": [
+      {
+        "contributions": 17,
+        "login": "amc-corey-cox"
+      },
+      {
+        "contributions": 7,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-06-07T04:42:40Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "clinvar-ingest",
+    "updatedAt": "2025-04-19T01:23:19Z",
+    "url": "https://github.com/monarch-initiative/clinvar-ingest",
+    "firstCommitDate": "2025-04-19T01:23:08Z",
+    "lastCommitDate": "2025-04-19T01:23:08Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 6,
+        "login": "AO33"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-06-08T19:08:20Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Add closure expansion fields to kgx files following the Golr pattern",
+    "name": "closurizer",
+    "updatedAt": "2025-09-12T00:12:36Z",
+    "url": "https://github.com/monarch-initiative/closurizer",
+    "firstCommitDate": "2025-09-12T00:12:24Z",
+    "lastCommitDate": "2025-09-12T00:12:24Z",
+    "topContributors": [
+      {
+        "contributions": 97,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-06-26T18:35:35Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A data repository for capturing and curating disease annotation records ",
+    "name": "community-annotation",
+    "updatedAt": "2025-07-15T16:16:51Z",
+    "url": "https://github.com/monarch-initiative/community-annotation",
+    "firstCommitDate": "2025-07-15T16:16:45Z",
+    "lastCommitDate": "2025-07-15T16:16:45Z",
+    "topContributors": [
+      {
+        "contributions": 24,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-11-15T21:10:46Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Model for complex diseases",
+    "name": "complexphen",
+    "updatedAt": "2021-11-22T00:15:00Z",
+    "url": "https://github.com/monarch-initiative/complexphen",
+    "firstCommitDate": "2021-11-22T00:14:56Z",
+    "lastCommitDate": "2021-11-22T00:14:56Z",
+    "topContributors": [
+      {
+        "contributions": 9,
+        "login": "pnrobinson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-06-18T14:22:26Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Cookiecutter for making MCPs that we can plug into LLMs, agents, etc",
+    "name": "cookiecutter-mcp",
+    "updatedAt": "2025-09-25T20:27:39Z",
+    "url": "https://github.com/monarch-initiative/cookiecutter-mcp",
+    "firstCommitDate": "2025-07-24T16:33:37Z",
+    "lastCommitDate": "2025-07-24T16:33:37Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 2,
+        "login": "caufieldjh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-04-01T20:59:51Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A Cruft cookiecutter for modular Koza ingests",
+    "name": "cookiecutter-monarch-ingest",
+    "updatedAt": "2025-02-07T22:09:47Z",
+    "url": "https://github.com/monarch-initiative/cookiecutter-monarch-ingest",
+    "firstCommitDate": "2025-02-07T22:09:43Z",
+    "lastCommitDate": "2025-02-07T22:09:43Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 3,
+        "login": "amc-corey-cox"
+      },
+      {
+        "contributions": 1,
+        "login": "DnlRKorn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-05-27T00:56:51Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "LLM-driven curation assist tool",
+    "name": "curategpt",
+    "updatedAt": "2025-09-23T07:40:53Z",
+    "url": "https://github.com/monarch-initiative/curategpt",
+    "firstCommitDate": "2025-06-25T20:32:44Z",
+    "lastCommitDate": "2025-06-25T20:32:44Z",
+    "topContributors": [
+      {
+        "contributions": 158,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 104,
+        "login": "iQuxLE"
+      },
+      {
+        "contributions": 70,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 13,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 4,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 2,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 2,
+        "login": "realmarcin"
+      },
+      {
+        "contributions": 1,
+        "login": "oneilsh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-09-14T21:20:13Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Monarch-curated genotype-phenotype data.",
+    "name": "data-boutique",
+    "updatedAt": "2023-04-14T20:43:09Z",
+    "url": "https://github.com/monarch-initiative/data-boutique",
+    "firstCommitDate": "2018-09-06T19:59:35Z",
+    "lastCommitDate": "2018-09-06T19:59:35Z",
+    "topContributors": [
+      {
+        "contributions": 141,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 45,
+        "login": "lwinfree"
+      },
+      {
+        "contributions": 22,
+        "login": "nlwashington"
+      },
+      {
+        "contributions": 11,
+        "login": "benwbooth"
+      },
+      {
+        "contributions": 5,
+        "login": "putmantime"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-02-27T17:31:47Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Deprecated, see README",
+    "name": "deprecated-human-disease-ontology",
+    "updatedAt": "2016-02-03T22:20:28Z",
+    "url": "https://github.com/monarch-initiative/deprecated-human-disease-ontology",
+    "firstCommitDate": "2016-02-03T22:22:39Z",
+    "lastCommitDate": "2016-02-03T22:22:39Z",
+    "topContributors": [
+      {
+        "contributions": 168,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 78,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 8,
+        "login": "elviram"
+      },
+      {
+        "contributions": 3,
+        "login": "sbello"
+      },
+      {
+        "contributions": 2,
+        "login": "ShahimEssaid"
+      },
+      {
+        "contributions": 1,
+        "login": "twhetzel"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-11-11T19:39:19Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Repository for the coordination of design patterns across ontologies",
+    "name": "design-pattern-coordination",
+    "updatedAt": "2020-11-12T11:59:46Z",
+    "url": "https://github.com/monarch-initiative/design-pattern-coordination",
+    "firstCommitDate": "2020-11-12T11:59:39Z",
+    "lastCommitDate": "2020-11-12T11:59:39Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-08-11T21:18:53Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "dipper-integration-test",
+    "updatedAt": "2023-01-28T17:50:08Z",
+    "url": "https://github.com/monarch-initiative/dipper-integration-test",
+    "firstCommitDate": "2017-05-19T01:30:47Z",
+    "lastCommitDate": "2017-05-19T01:30:47Z",
+    "topContributors": [
+      {
+        "contributions": 18,
+        "login": "jnguyenx"
+      },
+      {
+        "contributions": 2,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 1,
+        "login": "TomConlin"
+      },
+      {
+        "contributions": 1,
+        "login": "hdietze"
+      }
+    ]
+  },
+  {
+    "createdAt": "2014-10-25T16:49:58Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Data Ingestion Pipeline for Monarch",
+    "name": "dipper",
+    "updatedAt": "2024-08-20T04:11:43Z",
+    "url": "https://github.com/monarch-initiative/dipper",
+    "firstCommitDate": "2021-12-27T18:29:07Z",
+    "lastCommitDate": "2021-12-27T18:29:07Z",
+    "topContributors": [
+      {
+        "contributions": 1941,
+        "login": "TomConlin"
+      },
+      {
+        "contributions": 794,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 778,
+        "login": "nlwashington"
+      },
+      {
+        "contributions": 514,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 53,
+        "login": "mbrush"
+      },
+      {
+        "contributions": 35,
+        "login": "jmcmurry"
+      },
+      {
+        "contributions": 21,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 20,
+        "login": "putmantime"
+      },
+      {
+        "contributions": 12,
+        "login": "alpae"
+      },
+      {
+        "contributions": 3,
+        "login": "jnguyenx"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-10-17T18:09:30Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Prefetch tens of gigs of files & provide more robust update info downstream  ",
+    "name": "DipperCache",
+    "updatedAt": "2021-11-22T19:49:49Z",
+    "url": "https://github.com/monarch-initiative/DipperCache",
+    "firstCommitDate": "2021-07-01T15:06:41Z",
+    "lastCommitDate": "2021-07-01T15:06:41Z",
+    "topContributors": [
+      {
+        "contributions": 156,
+        "login": "TomConlin"
+      },
+      {
+        "contributions": 1,
+        "login": "kshefchek"
+      }
+    ]
+  },
+  {
+    "createdAt": "2013-06-26T21:39:04Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "mining and merging disease resources",
+    "name": "disease-miner",
+    "updatedAt": "2023-05-01T15:29:58Z",
+    "url": "https://github.com/monarch-initiative/disease-miner",
+    "firstCommitDate": "2016-08-04T16:28:10Z",
+    "lastCommitDate": "2016-08-04T16:28:10Z",
+    "topContributors": [
+      {
+        "contributions": 17,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "jmcmurry"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-04-10T20:27:51Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "monarch kg disease node pairwise similarity comparisons using semsimian termset_comparison method",
+    "name": "disease-pairwise-compare",
+    "updatedAt": "2025-04-10T21:20:11Z",
+    "url": "https://github.com/monarch-initiative/disease-pairwise-compare",
+    "firstCommitDate": "2025-04-10T21:19:59Z",
+    "lastCommitDate": "2025-04-10T21:19:59Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "AO33"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-06-17T21:19:53Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "DEMO example knowledge base created using DRAGON-AI",
+    "name": "dppkb",
+    "updatedAt": "2024-11-18T14:00:36Z",
+    "url": "https://github.com/monarch-initiative/dppkb",
+    "firstCommitDate": "2024-09-27T23:34:44Z",
+    "lastCommitDate": "2024-09-27T23:34:44Z",
+    "topContributors": [
+      {
+        "contributions": 26,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-06-19T02:52:32Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Cookiecutter for DRAGON-AI projects",
+    "name": "dragon-ai-cookiecutter",
+    "updatedAt": "2024-09-11T04:44:06Z",
+    "url": "https://github.com/monarch-initiative/dragon-ai-cookiecutter",
+    "firstCommitDate": "2024-09-11T04:43:59Z",
+    "lastCommitDate": "2024-09-11T04:43:59Z",
+    "topContributors": [
+      {
+        "contributions": 13,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-09-05T18:42:23Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "dragon-ai-results",
+    "updatedAt": "2025-09-12T05:45:55Z",
+    "url": "https://github.com/monarch-initiative/dragon-ai-results",
+    "firstCommitDate": "2024-07-29T02:22:11Z",
+    "lastCommitDate": "2024-07-29T02:22:11Z",
+    "topContributors": [
+      {
+        "contributions": 26,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "nlharris"
+      },
+      {
+        "contributions": 1,
+        "login": "sabrinatoro"
+      },
+      {
+        "contributions": 1,
+        "login": "oneilsh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-11-29T01:04:23Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Disease set phenotypic profile comparison",
+    "name": "dsppc",
+    "updatedAt": "2019-05-14T21:39:29Z",
+    "url": "https://github.com/monarch-initiative/dsppc",
+    "firstCommitDate": "2019-05-14T21:39:26Z",
+    "lastCommitDate": "2019-05-14T21:39:26Z",
+    "topContributors": [
+      {
+        "contributions": 40,
+        "login": "hannahblau"
+      },
+      {
+        "contributions": 2,
+        "login": "pnrobinson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-12-18T12:18:01Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "LLM embeddings for rare disease diagnostics",
+    "name": "ELDER",
+    "updatedAt": "2025-09-17T22:09:17Z",
+    "url": "https://github.com/monarch-initiative/ELDER",
+    "firstCommitDate": "2025-08-25T22:23:46Z",
+    "lastCommitDate": "2025-08-25T22:23:46Z",
+    "topContributors": [
+      {
+        "contributions": 115,
+        "login": "iQuxLE"
+      },
+      {
+        "contributions": 4,
+        "login": "iimpulse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-01-07T10:30:46Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "🍇 Embiggen is the Python Graph Representation learning, Prediction and Evaluation submodule of the GRAPE library.",
+    "name": "embiggen",
+    "updatedAt": "2024-12-15T09:16:15Z",
+    "url": "https://github.com/monarch-initiative/embiggen",
+    "firstCommitDate": "2023-12-05T19:53:59Z",
+    "lastCommitDate": "2023-12-05T19:53:59Z",
+    "topContributors": [
+      {
+        "contributions": 2204,
+        "login": "LucaCappelletti94"
+      },
+      {
+        "contributions": 203,
+        "login": "vidarmehr"
+      },
+      {
+        "contributions": 173,
+        "login": "callahantiff"
+      },
+      {
+        "contributions": 170,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 165,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 25,
+        "login": "zommiommy"
+      },
+      {
+        "contributions": 14,
+        "login": "deepakunni3"
+      },
+      {
+        "contributions": 5,
+        "login": "realmarcin"
+      },
+      {
+        "contributions": 3,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-01-29T16:55:54Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Monarch and Linda Crrnic Center project on phenotype identification",
+    "name": "emods",
+    "updatedAt": "2025-04-28T21:02:42Z",
+    "url": "https://github.com/monarch-initiative/emods",
+    "firstCommitDate": "2025-04-28T21:02:37Z",
+    "lastCommitDate": "2025-04-28T21:02:37Z",
+    "topContributors": [
+      {
+        "contributions": 14,
+        "login": "amc-corey-cox"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-07-31T15:23:22Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Identifier equivalency service",
+    "name": "Equiv",
+    "updatedAt": "2018-10-01T17:03:57Z",
+    "url": "https://github.com/monarch-initiative/Equiv",
+    "firstCommitDate": "2018-10-01T17:04:02Z",
+    "lastCommitDate": "2018-10-01T17:04:02Z",
+    "topContributors": [
+      {
+        "contributions": 20,
+        "login": "diatomsRcool"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-05-10T09:56:25Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Repo for generating monarch data dependencies like the one used by exomiser",
+    "name": "exomiser-phenotype-data-revised",
+    "updatedAt": "2022-03-09T18:04:53Z",
+    "url": "https://github.com/monarch-initiative/exomiser-phenotype-data-revised",
+    "firstCommitDate": "2022-03-09T11:07:58Z",
+    "lastCommitDate": "2022-03-09T11:07:58Z",
+    "topContributors": [
+      {
+        "contributions": 29,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 1,
+        "login": "kshefchek"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-11-20T20:12:29Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "exomiser.reranking",
+    "updatedAt": "2024-11-21T14:07:19Z",
+    "url": "https://github.com/monarch-initiative/exomiser.reranking",
+    "firstCommitDate": "2024-09-17T16:52:29Z",
+    "lastCommitDate": "2024-09-17T16:52:29Z",
+    "topContributors": [
+      {
+        "contributions": 61,
+        "login": "yaseminbridges"
+      },
+      {
+        "contributions": 1,
+        "login": "julesjacobsen"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-06-10T17:25:36Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "ExomiserSimulations",
+    "updatedAt": "2019-08-06T14:29:07Z",
+    "url": "https://github.com/monarch-initiative/ExomiserSimulations",
+    "firstCommitDate": "2019-08-06T14:28:42Z",
+    "lastCommitDate": "2019-08-06T14:28:42Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "julesjacobsen"
+      },
+      {
+        "contributions": 1,
+        "login": "pnrobinson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-03-29T18:23:26Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Fanconi Anemia INCAForm site",
+    "name": "fa-incaform",
+    "updatedAt": "2018-03-29T18:23:29Z",
+    "url": "https://github.com/monarch-initiative/fa-incaform",
+    "firstCommitDate": "2018-03-29T18:23:27Z",
+    "lastCommitDate": "2018-03-29T18:23:27Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "DoctorBud"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-07-13T20:47:50Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Graphical User Interface for Fenominal",
+    "name": "fenominal-gui",
+    "updatedAt": "2025-03-15T13:04:56Z",
+    "url": "https://github.com/monarch-initiative/fenominal-gui",
+    "firstCommitDate": "2022-07-19T16:23:46Z",
+    "lastCommitDate": "2022-07-19T16:23:46Z",
+    "topContributors": [
+      {
+        "contributions": 30,
+        "login": "pnrobinson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-05-22T13:42:00Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Phenomenal text mining for disease and phenotype concepts",
+    "name": "fenominal",
+    "updatedAt": "2025-06-13T13:38:16Z",
+    "url": "https://github.com/monarch-initiative/fenominal",
+    "firstCommitDate": "2024-01-25T22:05:25Z",
+    "lastCommitDate": "2024-01-25T22:05:25Z",
+    "topContributors": [
+      {
+        "contributions": 202,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 23,
+        "login": "ielis"
+      },
+      {
+        "contributions": 5,
+        "login": "tudorgroza"
+      },
+      {
+        "contributions": 1,
+        "login": "julesjacobsen"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-04-03T13:28:10Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Python convenience wrappers for Phenopacket Schema",
+    "name": "ga4gh-phenopacket-core",
+    "updatedAt": "2024-04-03T15:19:47Z",
+    "url": "https://github.com/monarch-initiative/ga4gh-phenopacket-core",
+    "firstCommitDate": "2024-04-03T15:29:37Z",
+    "lastCommitDate": "2024-04-03T15:29:37Z",
+    "topContributors": [
+      {
+        "contributions": 12,
+        "login": "ielis"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-03-02T11:05:39Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "GA4GH Phenopacket Templater",
+    "name": "ga4gh-ppt",
+    "updatedAt": "2024-03-03T08:38:09Z",
+    "url": "https://github.com/monarch-initiative/ga4gh-ppt",
+    "firstCommitDate": "2024-03-08T09:22:03Z",
+    "lastCommitDate": "2024-03-08T09:22:03Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "pnrobinson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-03-12T19:55:21Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Implementation of the ga4gh/schemas",
+    "name": "ga4gh-server",
+    "updatedAt": "2016-07-09T14:45:50Z",
+    "url": "https://github.com/monarch-initiative/ga4gh-server",
+    "firstCommitDate": "2015-12-10T06:31:33Z",
+    "lastCommitDate": "2015-12-10T06:31:33Z",
+    "topContributors": [
+      {
+        "contributions": 15,
+        "login": "jnguyenx"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "jmcmurry"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-03-04T20:22:12Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "GARD ingest.",
+    "name": "gard",
+    "updatedAt": "2024-10-16T01:46:46Z",
+    "url": "https://github.com/monarch-initiative/gard",
+    "firstCommitDate": "2024-03-08T20:09:35Z",
+    "lastCommitDate": "2024-03-08T20:09:35Z",
+    "topContributors": [
+      {
+        "contributions": 31,
+        "login": "joeflack4"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-05-07T16:51:18Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "gene-to-disease-a-thon",
+    "updatedAt": "2024-06-07T13:28:20Z",
+    "url": "https://github.com/monarch-initiative/gene-to-disease-a-thon",
+    "firstCommitDate": "2024-06-07T13:28:12Z",
+    "lastCommitDate": "2024-06-07T13:28:12Z",
+    "topContributors": [
+      {
+        "contributions": 12,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 5,
+        "login": "julesjacobsen"
+      }
+    ]
+  },
+  {
+    "createdAt": "2014-11-12T00:58:59Z",
+    "defaultBranchRef": {
+      "name": "develop"
+    },
+    "description": "Repository for representing genotypes and their association with phenotypes",
+    "name": "GENO-ontology",
+    "updatedAt": "2025-08-04T16:05:22Z",
+    "url": "https://github.com/monarch-initiative/GENO-ontology",
+    "firstCommitDate": "2025-07-28T10:00:51Z",
+    "lastCommitDate": "2025-07-28T10:00:51Z",
+    "topContributors": [
+      {
+        "contributions": 184,
+        "login": "mbrush"
+      },
+      {
+        "contributions": 44,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 2,
+        "login": "anitacaron"
+      },
+      {
+        "contributions": 2,
+        "login": "sbello"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-08-06T20:06:50Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "An ontology module describing molecular glyco-phenotypes",
+    "name": "glyco-phenotype-ontology",
+    "updatedAt": "2025-06-04T16:21:42Z",
+    "url": "https://github.com/monarch-initiative/glyco-phenotype-ontology",
+    "firstCommitDate": "2025-06-04T16:21:38Z",
+    "lastCommitDate": "2025-06-04T16:21:38Z",
+    "topContributors": [
+      {
+        "contributions": 15,
+        "login": "mbrush"
+      },
+      {
+        "contributions": 11,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-08-06T20:09:10Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "glycomics-phenotype-annotation-data",
+    "updatedAt": "2023-10-04T20:18:32Z",
+    "url": "https://github.com/monarch-initiative/glycomics-phenotype-annotation-data",
+    "firstCommitDate": "2015-08-10T23:40:20Z",
+    "lastCommitDate": "2015-08-10T23:40:20Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "mbrush"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-02-08T00:13:01Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Analysis of glyco-phenotypes in the HPO",
+    "name": "glycophenotype-analysis",
+    "updatedAt": "2023-01-28T14:52:07Z",
+    "url": "https://github.com/monarch-initiative/glycophenotype-analysis",
+    "firstCommitDate": "2020-04-23T00:43:44Z",
+    "lastCommitDate": "2020-04-23T00:43:44Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "kshefchek"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-11-07T04:19:53Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "gene ontology ingest from gene association formatted files",
+    "name": "go-ingest",
+    "updatedAt": "2025-09-03T23:41:41Z",
+    "url": "https://github.com/monarch-initiative/go-ingest",
+    "firstCommitDate": "2025-09-03T23:41:37Z",
+    "lastCommitDate": "2025-09-03T23:41:37Z",
+    "topContributors": [
+      {
+        "contributions": 12,
+        "login": "AO33"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-07-18T19:58:33Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Ingest of GOCAM suitable for inclusion in KG",
+    "name": "gocam_ingest",
+    "updatedAt": "2025-07-31T16:52:06Z",
+    "url": "https://github.com/monarch-initiative/gocam_ingest",
+    "firstCommitDate": "2025-07-21T19:44:47Z",
+    "lastCommitDate": "2025-07-21T19:44:47Z",
+    "topContributors": [
+      {
+        "contributions": 18,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-10-28T18:40:53Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Modular ingest of GOCAMs",
+    "name": "gocam-modular",
+    "updatedAt": "2025-09-04T18:29:35Z",
+    "url": "https://github.com/monarch-initiative/gocam-modular",
+    "firstCommitDate": "2025-09-04T18:12:07Z",
+    "lastCommitDate": "2025-09-04T18:12:07Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-01-29T07:34:30Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Utility to generate a schema.xml from a yaml config file.",
+    "name": "golr-schema",
+    "updatedAt": "2023-04-03T16:41:36Z",
+    "url": "https://github.com/monarch-initiative/golr-schema",
+    "firstCommitDate": "2018-02-03T19:02:51Z",
+    "lastCommitDate": "2018-02-03T19:02:51Z",
+    "topContributors": [
+      {
+        "contributions": 17,
+        "login": "jnguyenx"
+      },
+      {
+        "contributions": 1,
+        "login": "kshefchek"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-06-01T01:19:16Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "gpt-mapping-manuscript",
+    "updatedAt": "2025-03-07T18:49:23Z",
+    "url": "https://github.com/monarch-initiative/gpt-mapping-manuscript",
+    "firstCommitDate": "2023-09-29T11:49:22Z",
+    "lastCommitDate": "2023-09-29T11:49:22Z",
+    "topContributors": [
+      {
+        "contributions": 22,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 8,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 2,
+        "login": "nlharris"
+      },
+      {
+        "contributions": 1,
+        "login": "hrshdhgd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-03-03T21:18:56Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Working directory for reusable \"simple\" devops for the graph agent",
+    "name": "graph-agent-devops",
+    "updatedAt": "2025-07-29T22:49:31Z",
+    "url": "https://github.com/monarch-initiative/graph-agent-devops",
+    "firstCommitDate": "2025-07-29T22:49:28Z",
+    "lastCommitDate": "2025-07-29T22:49:28Z",
+    "topContributors": [
+      {
+        "contributions": 62,
+        "login": "kltm"
+      },
+      {
+        "contributions": 1,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-10-16T03:09:05Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Phenotype search with Annotations and Asset discovery ",
+    "name": "HeliumPhenotypeSearch",
+    "updatedAt": "2021-01-06T18:24:16Z",
+    "url": "https://github.com/monarch-initiative/HeliumPhenotypeSearch",
+    "firstCommitDate": "2021-01-06T18:24:12Z",
+    "lastCommitDate": "2021-01-06T18:24:12Z",
+    "topContributors": [
+      {
+        "contributions": 63,
+        "login": "putmantime"
+      },
+      {
+        "contributions": 16,
+        "login": "deepakunni3"
+      },
+      {
+        "contributions": 2,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-07-09T18:45:02Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "The Monarch Initiative Helpdesk",
+    "name": "helpdesk",
+    "updatedAt": "2025-08-20T20:50:40Z",
+    "url": "https://github.com/monarch-initiative/helpdesk",
+    "firstCommitDate": "2025-08-20T20:50:36Z",
+    "lastCommitDate": "2025-08-20T20:50:36Z",
+    "topContributors": [
+      {
+        "contributions": 10,
+        "login": "nlharris"
+      },
+      {
+        "contributions": 3,
+        "login": "monicacecilia"
+      },
+      {
+        "contributions": 3,
+        "login": "sagehrke"
+      },
+      {
+        "contributions": 1,
+        "login": "kshefchek"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-11-18T17:58:29Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "hgnc-sssom",
+    "updatedAt": "2021-12-08T16:43:56Z",
+    "url": "https://github.com/monarch-initiative/hgnc-sssom",
+    "firstCommitDate": "2021-12-08T16:42:44Z",
+    "lastCommitDate": "2021-12-08T16:42:44Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "kshefchek"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-10-30T12:46:14Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Documentation for the Human Phenotype Ontology",
+    "name": "hpo-docs",
+    "updatedAt": "2023-11-02T18:20:25Z",
+    "url": "https://github.com/monarch-initiative/hpo-docs",
+    "firstCommitDate": "2023-11-02T18:20:10Z",
+    "lastCommitDate": "2023-11-02T18:20:10Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-02-25T18:21:35Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Generates a solr index of plain language terms in the HPO and their grouping classes",
+    "name": "hpo-plain-index",
+    "updatedAt": "2018-11-14T21:14:41Z",
+    "url": "https://github.com/monarch-initiative/hpo-plain-index",
+    "firstCommitDate": "2018-11-14T21:14:39Z",
+    "lastCommitDate": "2018-11-14T21:14:39Z",
+    "topContributors": [
+      {
+        "contributions": 22,
+        "login": "kshefchek"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-08-03T21:14:09Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Toolkit for analyzing surveys utilizing the HPO",
+    "name": "hpo-survey-analysis",
+    "updatedAt": "2025-07-20T16:51:41Z",
+    "url": "https://github.com/monarch-initiative/hpo-survey-analysis",
+    "firstCommitDate": "2025-07-20T16:51:34Z",
+    "lastCommitDate": "2025-07-20T16:51:34Z",
+    "topContributors": [
+      {
+        "contributions": 79,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 1,
+        "login": "jmcmurry"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-11-05T16:22:03Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "EXPERIMENTAL: generate synthetic rare patients for HPO annotations for ML purposes",
+    "name": "hpo-synthetic-patient-generator",
+    "updatedAt": "2019-11-14T00:03:33Z",
+    "url": "https://github.com/monarch-initiative/hpo-synthetic-patient-generator",
+    "firstCommitDate": "2019-11-14T00:03:24Z",
+    "lastCommitDate": "2019-11-14T00:03:24Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-06-16T12:12:54Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Repository for HPO UMLS integration QA code and tracking issues",
+    "name": "HPO-UMLS-Integration",
+    "updatedAt": "2017-08-04T13:44:56Z",
+    "url": "https://github.com/monarch-initiative/HPO-UMLS-Integration",
+    "firstCommitDate": "2017-08-04T13:44:55Z",
+    "lastCommitDate": "2017-08-04T13:44:55Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "drseb"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-04-30T18:33:09Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "static files for HPO website",
+    "name": "hpo-web-config",
+    "updatedAt": "2024-09-18T20:06:24Z",
+    "url": "https://github.com/monarch-initiative/hpo-web-config",
+    "firstCommitDate": "2024-09-18T20:06:21Z",
+    "lastCommitDate": "2024-09-18T20:06:21Z",
+    "topContributors": [
+      {
+        "contributions": 27,
+        "login": "iimpulse"
+      },
+      {
+        "contributions": 23,
+        "login": "drseb"
+      },
+      {
+        "contributions": 9,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 2,
+        "login": "sebo-hub"
+      },
+      {
+        "contributions": 1,
+        "login": "kingmanzhang"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-10-21T12:24:40Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Generate ROBOT files to add terms to the HPO",
+    "name": "hpo2robot",
+    "updatedAt": "2025-08-13T11:25:03Z",
+    "url": "https://github.com/monarch-initiative/hpo2robot",
+    "firstCommitDate": "2024-07-21T07:27:34Z",
+    "lastCommitDate": "2024-07-21T07:27:34Z",
+    "topContributors": [
+      {
+        "contributions": 87,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 2,
+        "login": "ielis"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-02-02T22:27:08Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "HPO Annotation QC",
+    "name": "hpoannotqc",
+    "updatedAt": "2025-08-06T14:23:20Z",
+    "url": "https://github.com/monarch-initiative/hpoannotqc",
+    "firstCommitDate": "2024-04-24T14:53:17Z",
+    "lastCommitDate": "2024-04-24T14:53:17Z",
+    "topContributors": [
+      {
+        "contributions": 134,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 37,
+        "login": "iimpulse"
+      },
+      {
+        "contributions": 1,
+        "login": "monicacecilia"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-06-13T20:58:32Z",
+    "defaultBranchRef": {
+      "name": "development"
+    },
+    "description": "Next-generation Biocuration App for annotating cases and PhenoPackets",
+    "name": "HpoCaseAnnotator",
+    "updatedAt": "2025-01-28T18:52:00Z",
+    "url": "https://github.com/monarch-initiative/HpoCaseAnnotator",
+    "firstCommitDate": "2023-05-08T20:57:43Z",
+    "lastCommitDate": "2023-05-08T20:57:43Z",
+    "topContributors": [
+      {
+        "contributions": 212,
+        "login": "ielis"
+      },
+      {
+        "contributions": 52,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 6,
+        "login": "mabeckwith"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-06-20T20:52:42Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Perform text mining for identification of HPO terms in free text from scientific publication.",
+    "name": "HpoTextMining",
+    "updatedAt": "2024-10-31T18:52:47Z",
+    "url": "https://github.com/monarch-initiative/HpoTextMining",
+    "firstCommitDate": "2024-06-28T19:47:46Z",
+    "lastCommitDate": "2024-06-28T19:47:46Z",
+    "topContributors": [
+      {
+        "contributions": 21,
+        "login": "kingmanzhang"
+      },
+      {
+        "contributions": 7,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 6,
+        "login": "ielis"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-07-11T10:49:09Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Materials for an HPO Workshop",
+    "name": "HpoWorkshop",
+    "updatedAt": "2025-03-31T08:10:58Z",
+    "url": "https://github.com/monarch-initiative/HpoWorkshop",
+    "firstCommitDate": "2022-07-20T10:38:43Z",
+    "lastCommitDate": "2022-07-20T10:38:43Z",
+    "topContributors": [
+      {
+        "contributions": 12,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 1,
+        "login": "nlharris"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-02-09T21:32:10Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Data ingest pipeline for ICD-10-CM.",
+    "name": "icd10cm",
+    "updatedAt": "2024-11-06T21:35:29Z",
+    "url": "https://github.com/monarch-initiative/icd10cm",
+    "firstCommitDate": "2022-05-26T23:38:38Z",
+    "lastCommitDate": "2022-05-26T23:38:38Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "joeflack4"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-03-27T22:57:39Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "ICD10WHO ingest.",
+    "name": "icd10who",
+    "updatedAt": "2024-11-01T21:50:15Z",
+    "url": "https://github.com/monarch-initiative/icd10who",
+    "firstCommitDate": "2022-03-27T22:57:39Z",
+    "lastCommitDate": "2022-03-27T22:57:39Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "joeflack4"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-03-04T20:22:10Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "ICD11 foundation ingest.",
+    "name": "icd11",
+    "updatedAt": "2025-01-30T03:26:59Z",
+    "url": "https://github.com/monarch-initiative/icd11",
+    "firstCommitDate": "2025-01-30T03:26:55Z",
+    "lastCommitDate": "2025-01-30T03:26:55Z",
+    "topContributors": [
+      {
+        "contributions": 17,
+        "login": "joeflack4"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-10-15T15:31:43Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Describing and assessing impact of ontologies and the open source application",
+    "name": "impact",
+    "updatedAt": "2018-08-24T17:25:05Z",
+    "url": "https://github.com/monarch-initiative/impact",
+    "firstCommitDate": "2018-08-24T17:25:03Z",
+    "lastCommitDate": "2018-08-24T17:25:03Z",
+    "topContributors": [
+      {
+        "contributions": 26,
+        "login": "jmcmurry"
+      },
+      {
+        "contributions": 5,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 3,
+        "login": "harryhoch"
+      },
+      {
+        "contributions": 3,
+        "login": "damiansm"
+      },
+      {
+        "contributions": 1,
+        "login": "micheldumontier"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-03-15T22:06:16Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "store artifacts generated ingesting Monarch's sources via Dipper",
+    "name": "ingest-artifacts",
+    "updatedAt": "2018-06-15T20:43:18Z",
+    "url": "https://github.com/monarch-initiative/ingest-artifacts",
+    "firstCommitDate": "2018-06-15T20:43:08Z",
+    "lastCommitDate": "2018-06-15T20:43:08Z",
+    "topContributors": [
+      {
+        "contributions": 51,
+        "login": "mbrush"
+      },
+      {
+        "contributions": 8,
+        "login": "TomConlin"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "putmantime"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-05-08T14:51:19Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "iscn-utils",
+    "updatedAt": "2015-05-11T21:36:00Z",
+    "url": "https://github.com/monarch-initiative/iscn-utils",
+    "firstCommitDate": "2015-05-11T21:35:12Z",
+    "lastCommitDate": "2015-05-11T21:35:12Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "nlwashington"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-05-18T18:34:26Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Packer schemas for building Jenkins agent images",
+    "name": "jenkins-packer-schemas",
+    "updatedAt": "2022-11-11T19:36:55Z",
+    "url": "https://github.com/monarch-initiative/jenkins-packer-schemas",
+    "firstCommitDate": "2024-01-23T00:39:15Z",
+    "lastCommitDate": "2024-01-23T00:39:15Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 1,
+        "login": "falquaddoomi"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-12-29T20:45:24Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Jenkins configuration for monarch",
+    "name": "jenkins",
+    "updatedAt": "2021-12-16T19:22:38Z",
+    "url": "https://github.com/monarch-initiative/jenkins",
+    "firstCommitDate": "2021-12-16T19:22:35Z",
+    "lastCommitDate": "2021-12-16T19:22:35Z",
+    "topContributors": [
+      {
+        "contributions": 57,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 6,
+        "login": "TomConlin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-02-10T04:16:30Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Bayes OWL Ontology Merging",
+    "name": "kboom",
+    "updatedAt": "2025-08-13T11:14:40Z",
+    "url": "https://github.com/monarch-initiative/kboom",
+    "firstCommitDate": "2022-07-18T20:26:35Z",
+    "lastCommitDate": "2022-07-18T20:26:35Z",
+    "topContributors": [
+      {
+        "contributions": 36,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 3,
+        "login": "nlharris"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-12-08T19:42:10Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Configuration based file caching downloader",
+    "name": "kghub-downloader",
+    "updatedAt": "2025-08-04T21:55:43Z",
+    "url": "https://github.com/monarch-initiative/kghub-downloader",
+    "firstCommitDate": "2025-08-04T21:55:38Z",
+    "lastCommitDate": "2025-08-04T21:55:38Z",
+    "topContributors": [
+      {
+        "contributions": 41,
+        "login": "ptgolden"
+      },
+      {
+        "contributions": 32,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 26,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 17,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 2,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 1,
+        "login": "caufieldjh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-12-17T16:25:47Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Data transformation framework for LinkML data models",
+    "name": "koza",
+    "updatedAt": "2025-09-26T19:39:46Z",
+    "url": "https://github.com/monarch-initiative/koza",
+    "firstCommitDate": "2025-09-26T19:39:42Z",
+    "lastCommitDate": "2025-09-26T19:39:42Z",
+    "topContributors": [
+      {
+        "contributions": 140,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 43,
+        "login": "ptgolden"
+      },
+      {
+        "contributions": 42,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 3,
+        "login": "DnlRKorn"
+      },
+      {
+        "contributions": 2,
+        "login": "EvanDietzMorris"
+      },
+      {
+        "contributions": 2,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 2,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "nlharris"
+      },
+      {
+        "contributions": 1,
+        "login": "RichardBruskiewich"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-01-10T17:50:40Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Run multiple AI prompts in batch",
+    "name": "llm-matrix",
+    "updatedAt": "2025-05-08T04:48:35Z",
+    "url": "https://github.com/monarch-initiative/llm-matrix",
+    "firstCommitDate": "2025-03-11T03:10:45Z",
+    "lastCommitDate": "2025-03-11T03:10:45Z",
+    "topContributors": [
+      {
+        "contributions": 13,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 2,
+        "login": "dragon-ai-agent"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-12-07T09:14:11Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Java library to map LOINC-encoded test results to Human Phenotype Ontology",
+    "name": "loinc2hpo",
+    "updatedAt": "2025-09-21T22:26:16Z",
+    "url": "https://github.com/monarch-initiative/loinc2hpo",
+    "firstCommitDate": "2023-06-08T14:46:32Z",
+    "lastCommitDate": "2023-06-08T14:46:32Z",
+    "topContributors": [
+      {
+        "contributions": 354,
+        "login": "kingmanzhang"
+      },
+      {
+        "contributions": 97,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 3,
+        "login": "ShahimEssaid"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-05-19T19:49:50Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "loinc2hpoAnnotation",
+    "updatedAt": "2023-05-19T19:50:20Z",
+    "url": "https://github.com/monarch-initiative/loinc2hpoAnnotation",
+    "firstCommitDate": "2023-06-05T13:21:28Z",
+    "lastCommitDate": "2023-06-05T13:21:28Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "ShahimEssaid"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-03-19T00:38:23Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "walks mapping graphs running boomer",
+    "name": "mapping-walker",
+    "updatedAt": "2025-05-12T09:45:01Z",
+    "url": "https://github.com/monarch-initiative/mapping-walker",
+    "firstCommitDate": "2022-05-24T23:55:21Z",
+    "lastCommitDate": "2022-05-24T23:55:21Z",
+    "topContributors": [
+      {
+        "contributions": 15,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 10,
+        "login": "pkalita-lbl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-08-05T20:31:35Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "maxo-annotation-ingest",
+    "updatedAt": "2025-01-13T19:13:50Z",
+    "url": "https://github.com/monarch-initiative/maxo-annotation-ingest",
+    "firstCommitDate": "2025-01-13T19:13:45Z",
+    "lastCommitDate": "2025-01-13T19:13:45Z",
+    "topContributors": [
+      {
+        "contributions": 18,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-01-12T15:26:23Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Annotations to terms of the Medical Action Ontology (MAxO)",
+    "name": "maxo-annotations",
+    "updatedAt": "2025-08-17T11:49:05Z",
+    "url": "https://github.com/monarch-initiative/maxo-annotations",
+    "firstCommitDate": "2025-08-17T11:48:58Z",
+    "lastCommitDate": "2025-08-17T11:48:58Z",
+    "topContributors": [
+      {
+        "contributions": 33,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 2,
+        "login": "iimpulse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-09-29T17:03:17Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Medical action ontology",
+    "name": "MAxO",
+    "updatedAt": "2025-09-04T17:04:21Z",
+    "url": "https://github.com/monarch-initiative/MAxO",
+    "firstCommitDate": "2025-09-04T17:04:16Z",
+    "lastCommitDate": "2025-09-04T17:04:16Z",
+    "topContributors": [
+      {
+        "contributions": 155,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 132,
+        "login": "kingmanzhang"
+      },
+      {
+        "contributions": 43,
+        "login": "LCCarmody"
+      },
+      {
+        "contributions": 21,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 20,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 18,
+        "login": "laurenechan"
+      },
+      {
+        "contributions": 4,
+        "login": "cthoyt"
+      },
+      {
+        "contributions": 4,
+        "login": "iimpulse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-02-13T22:42:38Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Monarch Cancer Knowledge Base",
+    "name": "mckb",
+    "updatedAt": "2024-09-23T20:59:29Z",
+    "url": "https://github.com/monarch-initiative/mckb",
+    "firstCommitDate": "2017-05-04T02:40:44Z",
+    "lastCommitDate": "2017-05-04T02:40:44Z",
+    "topContributors": [
+      {
+        "contributions": 183,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 23,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 5,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 2,
+        "login": "mbrush"
+      },
+      {
+        "contributions": 1,
+        "login": "nlwashington"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-01-27T13:42:02Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Monarch Disease Association Consortium (MDAC)",
+    "name": "MDAC",
+    "updatedAt": "2017-04-20T20:38:04Z",
+    "url": "https://github.com/monarch-initiative/MDAC",
+    "firstCommitDate": "2017-02-24T18:50:41Z",
+    "lastCommitDate": "2017-02-24T18:50:41Z",
+    "topContributors": [
+      {
+        "contributions": 27,
+        "login": "pnrobinson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-03-04T20:22:14Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "MedGen ingest.",
+    "name": "medgen",
+    "updatedAt": "2025-02-27T08:06:13Z",
+    "url": "https://github.com/monarch-initiative/medgen",
+    "firstCommitDate": "2024-11-06T03:16:29Z",
+    "lastCommitDate": "2024-11-06T03:16:29Z",
+    "topContributors": [
+      {
+        "contributions": 36,
+        "login": "joeflack4"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-01-06T16:20:52Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Ingest for Micronutrient Information Center using OntoGPT",
+    "name": "mic-ingest",
+    "updatedAt": "2025-06-14T00:06:37Z",
+    "url": "https://github.com/monarch-initiative/mic-ingest",
+    "firstCommitDate": "2025-06-14T00:06:33Z",
+    "lastCommitDate": "2025-06-14T00:06:33Z",
+    "topContributors": [
+      {
+        "contributions": 18,
+        "login": "iQuxLE"
+      },
+      {
+        "contributions": 13,
+        "login": "amc-corey-cox"
+      },
+      {
+        "contributions": 10,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-05-17T22:57:40Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "microbial-trait-ontology",
+    "updatedAt": "2023-05-17T22:57:53Z",
+    "url": "https://github.com/monarch-initiative/microbial-trait-ontology",
+    "firstCommitDate": "2023-05-17T22:57:00Z",
+    "lastCommitDate": "2023-05-17T22:57:00Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-07-08T15:50:09Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "This is a repository to coordinate the metadata and dissemination of all Monarch-produced data sources across teams and organisations.",
+    "name": "monarch_data_registry",
+    "updatedAt": "2022-11-02T10:15:31Z",
+    "url": "https://github.com/monarch-initiative/monarch_data_registry",
+    "firstCommitDate": "2022-11-02T10:15:25Z",
+    "lastCommitDate": "2022-11-02T10:15:25Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-01-22T07:08:52Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "monarch_pheval",
+    "updatedAt": "2025-07-31T14:42:11Z",
+    "url": "https://github.com/monarch-initiative/monarch_pheval",
+    "firstCommitDate": "2025-07-31T14:42:04Z",
+    "lastCommitDate": "2025-07-31T14:42:04Z",
+    "topContributors": [
+      {
+        "contributions": 70,
+        "login": "souzadevinicius"
+      },
+      {
+        "contributions": 3,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-01-30T23:29:04Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Project Management repository for the Monarch Initiative R24 grant. ",
+    "name": "monarch_R24_grant_tracker",
+    "updatedAt": "2025-01-31T21:47:22Z",
+    "url": "https://github.com/monarch-initiative/monarch_R24_grant_tracker",
+    "firstCommitDate": "2025-01-30T23:31:58Z",
+    "lastCommitDate": "2025-01-30T23:31:58Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "sagehrke"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-07-05T22:21:28Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Monarch Initiative website and API",
+    "name": "monarch-app",
+    "updatedAt": "2025-09-30T01:35:21Z",
+    "url": "https://github.com/monarch-initiative/monarch-app",
+    "firstCommitDate": "2025-09-30T01:35:15Z",
+    "lastCommitDate": "2025-09-30T01:35:15Z",
+    "topContributors": [
+      {
+        "contributions": 675,
+        "login": "varun-divya"
+      },
+      {
+        "contributions": 287,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 80,
+        "login": "vincerubinetti"
+      },
+      {
+        "contributions": 19,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 17,
+        "login": "amc-corey-cox"
+      },
+      {
+        "contributions": 17,
+        "login": "ptgolden"
+      },
+      {
+        "contributions": 15,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 10,
+        "login": "falquaddoomi"
+      },
+      {
+        "contributions": 9,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 7,
+        "login": "iQuxLE"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-12-08T19:44:43Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "monarch-assistant-cypher",
+    "updatedAt": "2025-03-08T16:13:36Z",
+    "url": "https://github.com/monarch-initiative/monarch-assistant-cypher",
+    "firstCommitDate": "2023-12-23T00:42:05Z",
+    "lastCommitDate": "2023-12-23T00:42:05Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "oneilsh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-12-07T14:42:50Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "monarch-cypher-queries",
+    "updatedAt": "2023-05-01T15:30:01Z",
+    "url": "https://github.com/monarch-initiative/monarch-cypher-queries",
+    "firstCommitDate": "2021-09-20T18:26:47Z",
+    "lastCommitDate": "2021-09-20T18:26:47Z",
+    "topContributors": [
+      {
+        "contributions": 147,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 18,
+        "login": "jnguyenx"
+      },
+      {
+        "contributions": 4,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "benwbooth"
+      },
+      {
+        "contributions": 1,
+        "login": "harryhoch"
+      },
+      {
+        "contributions": 1,
+        "login": "TomConlin"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-07-21T01:21:32Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "THIS IS THE OLD REPO: Use this one instead: https://github.com/monarch-initiative/mondo-build",
+    "name": "monarch-disease-ontology-RETIRED",
+    "updatedAt": "2023-05-01T15:29:35Z",
+    "url": "https://github.com/monarch-initiative/monarch-disease-ontology-RETIRED",
+    "firstCommitDate": "2021-02-05T03:18:35Z",
+    "lastCommitDate": "2021-02-05T03:18:35Z",
+    "topContributors": [
+      {
+        "contributions": 273,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 68,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 16,
+        "login": "sbello"
+      },
+      {
+        "contributions": 4,
+        "login": "kilodalton"
+      },
+      {
+        "contributions": 1,
+        "login": "gitter-badger"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-10-11T19:18:35Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Technical documentation for all Monarch applications, packages, services and related projects.",
+    "name": "monarch-documentation",
+    "updatedAt": "2025-08-25T16:58:21Z",
+    "url": "https://github.com/monarch-initiative/monarch-documentation",
+    "firstCommitDate": "2025-08-25T16:58:18Z",
+    "lastCommitDate": "2025-08-25T16:58:18Z",
+    "topContributors": [
+      {
+        "contributions": 132,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 80,
+        "login": "varun-divya"
+      },
+      {
+        "contributions": 14,
+        "login": "sagehrke"
+      },
+      {
+        "contributions": 13,
+        "login": "amc-corey-cox"
+      },
+      {
+        "contributions": 11,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 7,
+        "login": "glass-ships"
+      },
+      {
+        "contributions": 5,
+        "login": "leokim-l"
+      },
+      {
+        "contributions": 3,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 2,
+        "login": "monarch-init"
+      },
+      {
+        "contributions": 2,
+        "login": "yaseminbridges"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-11-19T14:02:42Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Terraform, scripts, and documentation for the monarch public file server",
+    "name": "monarch-file-server",
+    "updatedAt": "2022-08-31T17:54:51Z",
+    "url": "https://github.com/monarch-initiative/monarch-file-server",
+    "firstCommitDate": "2024-01-23T18:46:52Z",
+    "lastCommitDate": "2024-01-23T18:46:52Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 2,
+        "login": "kshefchek"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-05-24T17:36:16Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Code for mapping source namespaces to preffered namespacing",
+    "name": "monarch-gene-mapping",
+    "updatedAt": "2024-08-07T09:24:33Z",
+    "url": "https://github.com/monarch-initiative/monarch-gene-mapping",
+    "firstCommitDate": "2023-12-14T22:19:07Z",
+    "lastCommitDate": "2023-12-14T22:19:07Z",
+    "topContributors": [
+      {
+        "contributions": 34,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 16,
+        "login": "amc-corey-cox"
+      },
+      {
+        "contributions": 7,
+        "login": "RichardBruskiewich"
+      },
+      {
+        "contributions": 3,
+        "login": "putmantime"
+      },
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-03-25T20:47:17Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Shared resources for Monarch KG ingests",
+    "name": "monarch-ingest-commons",
+    "updatedAt": "2025-04-01T20:10:27Z",
+    "url": "https://github.com/monarch-initiative/monarch-ingest-commons",
+    "firstCommitDate": "2025-04-01T20:09:41Z",
+    "lastCommitDate": "2025-04-01T20:09:41Z",
+    "topContributors": [
+      {
+        "contributions": 12,
+        "login": "ptgolden"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-10-22T18:55:40Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Dashboard prototype for translator-testing repository",
+    "name": "monarch-ingest-dashboard",
+    "updatedAt": "2021-11-01T16:54:58Z",
+    "url": "https://github.com/monarch-initiative/monarch-ingest-dashboard",
+    "firstCommitDate": "2021-10-22T21:52:50Z",
+    "lastCommitDate": "2021-10-22T21:52:50Z",
+    "topContributors": [
+      {
+        "contributions": 9,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 5,
+        "login": "deepakunni3"
+      },
+      {
+        "contributions": 2,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-06-25T03:06:25Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Data ingest application for Monarch Initiative knowledge graph using Koza",
+    "name": "monarch-ingest",
+    "updatedAt": "2025-09-18T19:25:37Z",
+    "url": "https://github.com/monarch-initiative/monarch-ingest",
+    "firstCommitDate": "2025-09-18T19:25:31Z",
+    "lastCommitDate": "2025-09-18T19:25:31Z",
+    "topContributors": [
+      {
+        "contributions": 960,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 122,
+        "login": "RichardBruskiewich"
+      },
+      {
+        "contributions": 28,
+        "login": "victoriasoesanto"
+      },
+      {
+        "contributions": 17,
+        "login": "amc-corey-cox"
+      },
+      {
+        "contributions": 14,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 9,
+        "login": "DnlRKorn"
+      },
+      {
+        "contributions": 7,
+        "login": "putmantime"
+      },
+      {
+        "contributions": 6,
+        "login": "iQuxLE"
+      },
+      {
+        "contributions": 4,
+        "login": "AO33"
+      },
+      {
+        "contributions": 3,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2014-08-05T21:57:32Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Installer for running Monarch system locally",
+    "name": "monarch-installer",
+    "updatedAt": "2014-08-05T21:57:32Z",
+    "url": "https://github.com/monarch-initiative/monarch-installer",
+    "firstCommitDate": "2014-11-17T17:26:34Z",
+    "lastCommitDate": "2014-11-17T17:26:34Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "harryhoch"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-06-30T19:44:57Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Schema for QC Reports on the Monarch KG",
+    "name": "monarch-kg-qc-schema",
+    "updatedAt": "2024-03-15T12:47:41Z",
+    "url": "https://github.com/monarch-initiative/monarch-kg-qc-schema",
+    "firstCommitDate": "2023-12-21T22:09:52Z",
+    "lastCommitDate": "2023-12-21T22:09:52Z",
+    "topContributors": [
+      {
+        "contributions": 16,
+        "login": "amc-corey-cox"
+      }
+    ]
+  },
+  {
+    "createdAt": "2013-07-30T01:30:34Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Monarch web application and API",
+    "name": "monarch-legacy",
+    "updatedAt": "2023-05-01T15:29:16Z",
+    "url": "https://github.com/monarch-initiative/monarch-legacy",
+    "firstCommitDate": "2020-02-10T21:49:10Z",
+    "lastCommitDate": "2020-02-10T21:49:10Z",
+    "topContributors": [
+      {
+        "contributions": 1563,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 604,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 264,
+        "login": "sarahjkim"
+      },
+      {
+        "contributions": 245,
+        "login": "yuanzhou"
+      },
+      {
+        "contributions": 199,
+        "login": "harryhoch"
+      },
+      {
+        "contributions": 164,
+        "login": "kltm"
+      },
+      {
+        "contributions": 130,
+        "login": "VincentIII"
+      },
+      {
+        "contributions": 125,
+        "login": "DoctorBud"
+      },
+      {
+        "contributions": 99,
+        "login": "jmcmurry"
+      },
+      {
+        "contributions": 92,
+        "login": "nlwashington"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-03-09T16:38:18Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Building a fully exectuable workflow for boomer",
+    "name": "monarch-mapping-commons",
+    "updatedAt": "2025-07-09T16:45:42Z",
+    "url": "https://github.com/monarch-initiative/monarch-mapping-commons",
+    "firstCommitDate": "2025-07-09T16:45:36Z",
+    "lastCommitDate": "2025-07-09T16:45:36Z",
+    "topContributors": [
+      {
+        "contributions": 142,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 79,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 14,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 10,
+        "login": "souzadevinicius"
+      },
+      {
+        "contributions": 3,
+        "login": "cthoyt"
+      },
+      {
+        "contributions": 3,
+        "login": "jamesamcl"
+      },
+      {
+        "contributions": 2,
+        "login": "ptgolden"
+      },
+      {
+        "contributions": 1,
+        "login": "AO33"
+      },
+      {
+        "contributions": 1,
+        "login": "anitacaron"
+      },
+      {
+        "contributions": 1,
+        "login": "RichardBruskiewich"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-01-12T21:46:58Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Matchmaker Exchange for Monarch",
+    "name": "monarch-mme",
+    "updatedAt": "2017-09-29T18:25:26Z",
+    "url": "https://github.com/monarch-initiative/monarch-mme",
+    "firstCommitDate": "2017-09-28T01:29:19Z",
+    "lastCommitDate": "2017-09-28T01:29:19Z",
+    "topContributors": [
+      {
+        "contributions": 30,
+        "login": "jnguyenx"
+      },
+      {
+        "contributions": 4,
+        "login": "DoctorBud"
+      },
+      {
+        "contributions": 2,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-03-11T22:41:20Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "This is the data repository for the models created and edited with WebPhenote, the Monarch instance of the Noctua tool stack.",
+    "name": "monarch-models",
+    "updatedAt": "2016-03-11T22:41:20Z",
+    "url": "https://github.com/monarch-initiative/monarch-models",
+    "firstCommitDate": "2016-07-29T19:55:53Z",
+    "lastCommitDate": "2016-07-29T19:55:53Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "DoctorBud"
+      },
+      {
+        "contributions": 2,
+        "login": "balhoff"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-01-05T23:17:02Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Dockerized Managed Neo4j Database for Monarch",
+    "name": "monarch-neo4j",
+    "updatedAt": "2025-01-29T15:24:51Z",
+    "url": "https://github.com/monarch-initiative/monarch-neo4j",
+    "firstCommitDate": "2023-12-19T22:06:41Z",
+    "lastCommitDate": "2023-12-19T22:06:41Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 3,
+        "login": "falquaddoomi"
+      },
+      {
+        "contributions": 3,
+        "login": "RichardBruskiewich"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-02-24T14:16:19Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Example of Webpack, AngularJS, Falcor and SciGraph in a single page web application",
+    "name": "monarch-ng",
+    "updatedAt": "2016-02-24T14:49:01Z",
+    "url": "https://github.com/monarch-initiative/monarch-ng",
+    "firstCommitDate": "2016-05-31T09:59:54Z",
+    "lastCommitDate": "2016-05-31T09:59:54Z",
+    "topContributors": [
+      {
+        "contributions": 13,
+        "login": "DoctorBud"
+      },
+      {
+        "contributions": 8,
+        "login": "EstiiCoder"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-02-14T18:02:06Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "The Monarch Initiative Ontology dashboard focuses on increasing quality of all Monarch related ontologies",
+    "name": "monarch-ontology-dashboard",
+    "updatedAt": "2023-04-02T03:54:38Z",
+    "url": "https://github.com/monarch-initiative/monarch-ontology-dashboard",
+    "firstCommitDate": "2023-08-01T11:18:57Z",
+    "lastCommitDate": "2023-08-01T11:18:57Z",
+    "topContributors": [
+      {
+        "contributions": 31,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 11,
+        "login": "anitacaron"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-02-16T20:25:52Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Jenkins build file for monarch-ontology",
+    "name": "monarch-ontology-jenkins",
+    "updatedAt": "2022-02-16T20:25:52Z",
+    "url": "https://github.com/monarch-initiative/monarch-ontology-jenkins",
+    "firstCommitDate": "2022-04-25T17:34:06Z",
+    "lastCommitDate": "2022-04-25T17:34:06Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-07-06T22:45:12Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Top level monarch importer ontology",
+    "name": "monarch-ontology",
+    "updatedAt": "2023-02-19T15:00:54Z",
+    "url": "https://github.com/monarch-initiative/monarch-ontology",
+    "firstCommitDate": "2022-01-20T11:17:05Z",
+    "lastCommitDate": "2022-01-20T11:17:05Z",
+    "topContributors": [
+      {
+        "contributions": 50,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 16,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 11,
+        "login": "kshefchek"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-07-03T21:06:18Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "monarch-owlsim-data",
+    "updatedAt": "2023-04-27T19:55:17Z",
+    "url": "https://github.com/monarch-initiative/monarch-owlsim-data",
+    "firstCommitDate": "2021-12-14T17:00:41Z",
+    "lastCommitDate": "2021-12-14T17:00:41Z",
+    "topContributors": [
+      {
+        "contributions": 37,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 13,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 9,
+        "login": "jnguyenx"
+      },
+      {
+        "contributions": 2,
+        "login": "nlwashington"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-04-23T01:08:47Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "monarch-phenologs",
+    "updatedAt": "2025-09-04T16:13:59Z",
+    "url": "https://github.com/monarch-initiative/monarch-phenologs",
+    "firstCommitDate": "2025-09-04T16:13:50Z",
+    "lastCommitDate": "2025-09-04T16:13:50Z",
+    "topContributors": [
+      {
+        "contributions": 65,
+        "login": "AO33"
+      },
+      {
+        "contributions": 46,
+        "login": "bryanlaraway"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-01-15T23:56:49Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "stub for monarch phenote",
+    "name": "monarch-phenote",
+    "updatedAt": "2023-05-01T15:30:06Z",
+    "url": "https://github.com/monarch-initiative/monarch-phenote",
+    "firstCommitDate": "2016-11-17T02:13:21Z",
+    "lastCommitDate": "2016-11-17T02:13:21Z",
+    "topContributors": [
+      {
+        "contributions": 18,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 6,
+        "login": "DoctorBud"
+      },
+      {
+        "contributions": 4,
+        "login": "jnguyenx"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-08-29T05:04:25Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "human phenotype related ingests",
+    "name": "monarch-phenotype-profile-ingest",
+    "updatedAt": "2025-08-12T03:54:02Z",
+    "url": "https://github.com/monarch-initiative/monarch-phenotype-profile-ingest",
+    "firstCommitDate": "2025-08-12T03:53:57Z",
+    "lastCommitDate": "2025-08-12T03:53:57Z",
+    "topContributors": [
+      {
+        "contributions": 19,
+        "login": "AO33"
+      },
+      {
+        "contributions": 17,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-03-24T15:35:41Z",
+    "defaultBranchRef": {
+      "name": "dev"
+    },
+    "description": "",
+    "name": "monarch-pheval-nextflow",
+    "updatedAt": "2025-06-10T22:06:56Z",
+    "url": "https://github.com/monarch-initiative/monarch-pheval-nextflow",
+    "firstCommitDate": "2025-06-10T22:06:17Z",
+    "lastCommitDate": "2025-06-10T22:06:17Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "jamesamcl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-01-25T06:47:13Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "monarch-plater-docker",
+    "updatedAt": "2022-05-26T15:54:02Z",
+    "url": "https://github.com/monarch-initiative/monarch-plater-docker",
+    "firstCommitDate": "2022-09-24T04:46:43Z",
+    "lastCommitDate": "2022-09-24T04:46:43Z",
+    "topContributors": [
+      {
+        "contributions": 16,
+        "login": "putmantime"
+      },
+      {
+        "contributions": 15,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 1,
+        "login": "RichardBruskiewich"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-08-13T02:07:32Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "New template for monarch repos, replaces old cookiecutter",
+    "name": "monarch-project-copier",
+    "updatedAt": "2025-08-20T14:43:17Z",
+    "url": "https://github.com/monarch-initiative/monarch-project-copier",
+    "firstCommitDate": "2025-08-20T14:43:11Z",
+    "lastCommitDate": "2025-08-20T14:43:11Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-03-28T13:39:01Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A Cookiecutter to kickstart Python based projects.",
+    "name": "monarch-project-template",
+    "updatedAt": "2025-01-31T21:26:10Z",
+    "url": "https://github.com/monarch-initiative/monarch-project-template",
+    "firstCommitDate": "2025-01-31T21:26:04Z",
+    "lastCommitDate": "2025-01-31T21:26:04Z",
+    "topContributors": [
+      {
+        "contributions": 76,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 24,
+        "login": "amc-corey-cox"
+      },
+      {
+        "contributions": 7,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 7,
+        "login": "sierra-moxon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-07-18T20:46:37Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Monarch Python API",
+    "name": "monarch-py",
+    "updatedAt": "2023-07-14T21:29:04Z",
+    "url": "https://github.com/monarch-initiative/monarch-py",
+    "firstCommitDate": "2023-07-14T22:03:12Z",
+    "lastCommitDate": "2023-07-14T22:03:12Z",
+    "topContributors": [
+      {
+        "contributions": 197,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 1,
+        "login": "putmantime"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-08-08T15:13:02Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Project to create QC Reports for the Monarch Knowledge Graph.",
+    "name": "monarch-qc-reports",
+    "updatedAt": "2024-03-15T12:47:46Z",
+    "url": "https://github.com/monarch-initiative/monarch-qc-reports",
+    "firstCommitDate": "2023-08-17T14:27:20Z",
+    "lastCommitDate": "2023-08-17T14:27:20Z",
+    "topContributors": [
+      {
+        "contributions": 12,
+        "login": "amc-corey-cox"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-01-17T20:02:02Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "WORK IN PROGRESS - new effort at implementing a QC Dashboard for the Monarch KG and Ingest",
+    "name": "monarch-qc",
+    "updatedAt": "2025-04-10T16:55:31Z",
+    "url": "https://github.com/monarch-initiative/monarch-qc",
+    "firstCommitDate": "2025-04-10T16:55:26Z",
+    "lastCommitDate": "2025-04-10T16:55:26Z",
+    "topContributors": [
+      {
+        "contributions": 139,
+        "login": "amc-corey-cox"
+      },
+      {
+        "contributions": 9,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-07-19T08:38:15Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Repository to manage monarch specific ROBOT extensions",
+    "name": "monarch-robot-plugins",
+    "updatedAt": "2024-06-20T16:23:17Z",
+    "url": "https://github.com/monarch-initiative/monarch-robot-plugins",
+    "firstCommitDate": "2024-04-10T07:55:05Z",
+    "lastCommitDate": "2024-04-10T07:55:05Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-06-19T09:13:38Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "monarch-semantic-similarity-profiles",
+    "updatedAt": "2025-01-31T06:49:24Z",
+    "url": "https://github.com/monarch-initiative/monarch-semantic-similarity-profiles",
+    "firstCommitDate": "2025-01-31T06:49:21Z",
+    "lastCommitDate": "2025-01-31T06:49:21Z",
+    "topContributors": [
+      {
+        "contributions": 31,
+        "login": "souzadevinicius"
+      },
+      {
+        "contributions": 21,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-06-23T23:39:58Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Monarch Semantic Similarity",
+    "name": "monarch-semsim",
+    "updatedAt": "2022-06-23T23:40:13Z",
+    "url": "https://github.com/monarch-initiative/monarch-semsim",
+    "firstCommitDate": "2022-06-23T23:53:22Z",
+    "lastCommitDate": "2022-06-23T23:53:22Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "putmantime"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-09-25T16:26:12Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Experiments with interfaces over Monarch data using Shiny (R)",
+    "name": "monarch-shiny",
+    "updatedAt": "2023-10-04T21:01:03Z",
+    "url": "https://github.com/monarch-initiative/monarch-shiny",
+    "firstCommitDate": "2015-09-26T00:24:46Z",
+    "lastCommitDate": "2015-09-26T00:24:46Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "nlwashington"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-03-07T15:23:48Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Solr Indexing for the new Monarch graph",
+    "name": "monarch-solr",
+    "updatedAt": "2023-01-10T00:44:40Z",
+    "url": "https://github.com/monarch-initiative/monarch-solr",
+    "firstCommitDate": "2023-01-10T21:09:57Z",
+    "lastCommitDate": "2023-01-10T21:09:57Z",
+    "topContributors": [
+      {
+        "contributions": 11,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 1,
+        "login": "putmantime"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-08-10T22:18:44Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "monarch-ssl",
+    "updatedAt": "2024-07-16T18:52:26Z",
+    "url": "https://github.com/monarch-initiative/monarch-ssl",
+    "firstCommitDate": "2024-07-16T18:52:23Z",
+    "lastCommitDate": "2024-07-16T18:52:23Z",
+    "topContributors": [
+      {
+        "contributions": 15,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 2,
+        "login": "falquaddoomi"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-02-22T22:19:49Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A work-in-progress deployment harness for the monarch v3 stack",
+    "name": "monarch-stack-v3",
+    "updatedAt": "2025-08-29T21:32:55Z",
+    "url": "https://github.com/monarch-initiative/monarch-stack-v3",
+    "firstCommitDate": "2025-08-29T21:32:50Z",
+    "lastCommitDate": "2025-08-29T21:32:50Z",
+    "topContributors": [
+      {
+        "contributions": 125,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 69,
+        "login": "falquaddoomi"
+      },
+      {
+        "contributions": 31,
+        "login": "DnlRKorn"
+      },
+      {
+        "contributions": 2,
+        "login": "amc-corey-cox"
+      },
+      {
+        "contributions": 1,
+        "login": "iQuxLE"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-05-07T18:46:48Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Specification for building monarch with docker-compose",
+    "name": "monarch-stack",
+    "updatedAt": "2021-12-27T19:51:05Z",
+    "url": "https://github.com/monarch-initiative/monarch-stack",
+    "firstCommitDate": "2023-01-31T18:37:27Z",
+    "lastCommitDate": "2023-01-31T18:37:27Z",
+    "topContributors": [
+      {
+        "contributions": 22,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 21,
+        "login": "falquaddoomi"
+      },
+      {
+        "contributions": 1,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-12-13T03:46:14Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "NCATS Translator ARA TRAPI wrapper for the Monarch Initiative system",
+    "name": "monarch-trapi-kp",
+    "updatedAt": "2024-09-12T22:32:38Z",
+    "url": "https://github.com/monarch-initiative/monarch-trapi-kp",
+    "firstCommitDate": "2024-09-12T22:32:17Z",
+    "lastCommitDate": "2024-09-12T22:32:17Z",
+    "topContributors": [
+      {
+        "contributions": 156,
+        "login": "RichardBruskiewich"
+      },
+      {
+        "contributions": 5,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 4,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-09-07T14:44:11Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "DO NOT USE",
+    "name": "monarch-ui-new",
+    "updatedAt": "2024-09-24T22:51:41Z",
+    "url": "https://github.com/monarch-initiative/monarch-ui-new",
+    "firstCommitDate": "2023-05-04T19:49:40Z",
+    "lastCommitDate": "2023-05-04T19:49:40Z",
+    "topContributors": [
+      {
+        "contributions": 60,
+        "login": "vincerubinetti"
+      },
+      {
+        "contributions": 2,
+        "login": "monicacecilia"
+      },
+      {
+        "contributions": 1,
+        "login": "kshefchek"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-09-26T02:34:48Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "The previous version of the Monarch Initiative website",
+    "name": "monarch-ui",
+    "updatedAt": "2024-10-31T09:33:30Z",
+    "url": "https://github.com/monarch-initiative/monarch-ui",
+    "firstCommitDate": "2024-01-26T00:42:20Z",
+    "lastCommitDate": "2024-01-26T00:42:20Z",
+    "topContributors": [
+      {
+        "contributions": 199,
+        "login": "iimpulse"
+      },
+      {
+        "contributions": 145,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 141,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 60,
+        "login": "DoctorBud"
+      },
+      {
+        "contributions": 58,
+        "login": "nathandunn"
+      },
+      {
+        "contributions": 57,
+        "login": "vincerubinetti"
+      },
+      {
+        "contributions": 45,
+        "login": "monicacecilia"
+      },
+      {
+        "contributions": 34,
+        "login": "jen-martin"
+      },
+      {
+        "contributions": 18,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 14,
+        "login": "jmcmurry"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-02-07T15:58:34Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "monarchkg-model-organism-gene-transform",
+    "updatedAt": "2025-02-14T17:58:58Z",
+    "url": "https://github.com/monarch-initiative/monarchkg-model-organism-gene-transform",
+    "firstCommitDate": "2025-02-14T17:58:48Z",
+    "lastCommitDate": "2025-02-14T17:58:48Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2025-02-17T19:54:20Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "monarchkg-model-organism-phenotype-transform",
+    "updatedAt": "2025-03-12T17:29:01Z",
+    "url": "https://github.com/monarch-initiative/monarchkg-model-organism-phenotype-transform",
+    "firstCommitDate": "2025-03-12T17:28:53Z",
+    "lastCommitDate": "2025-03-12T17:28:53Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2023-05-11T20:55:48Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "R package for easy access, manipulation, and analysis of the Monarch Initiative or other KGX-formatted knowledge graphs.",
+    "name": "monarchr",
+    "updatedAt": "2025-09-29T19:33:24Z",
+    "url": "https://github.com/monarch-initiative/monarchr",
+    "firstCommitDate": "2025-08-14T11:48:04Z",
+    "lastCommitDate": "2025-08-14T11:48:04Z",
+    "topContributors": [
+      {
+        "contributions": 270,
+        "login": "oneilsh"
+      },
+      {
+        "contributions": 7,
+        "login": "bschilder"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-08-03T23:21:26Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Analysis of Mondo's contribution to biomedical ontologies.",
+    "name": "mondo-analysis",
+    "updatedAt": "2024-11-08T19:48:37Z",
+    "url": "https://github.com/monarch-initiative/mondo-analysis",
+    "firstCommitDate": "2022-06-29T14:41:01Z",
+    "lastCommitDate": "2022-06-29T14:41:01Z",
+    "topContributors": [
+      {
+        "contributions": 42,
+        "login": "joeflack4"
+      },
+      {
+        "contributions": 36,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 18,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 6,
+        "login": "deepakunni3"
+      },
+      {
+        "contributions": 5,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 4,
+        "login": "realmarcin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-04-25T06:03:26Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "mondo-curation-analysis",
+    "updatedAt": "2025-01-18T01:54:03Z",
+    "url": "https://github.com/monarch-initiative/mondo-curation-analysis",
+    "firstCommitDate": "2025-01-18T01:54:00Z",
+    "lastCommitDate": "2025-01-18T01:54:00Z",
+    "topContributors": [
+      {
+        "contributions": 28,
+        "login": "twhetzel"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-09-29T17:00:24Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Coordinating the mondo-ingest with external sources",
+    "name": "mondo-ingest",
+    "updatedAt": "2025-09-16T17:41:49Z",
+    "url": "https://github.com/monarch-initiative/mondo-ingest",
+    "firstCommitDate": "2025-09-16T17:41:37Z",
+    "lastCommitDate": "2025-09-16T17:41:37Z",
+    "topContributors": [
+      {
+        "contributions": 397,
+        "login": "joeflack4"
+      },
+      {
+        "contributions": 394,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 331,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 118,
+        "login": "twhetzel"
+      },
+      {
+        "contributions": 22,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 19,
+        "login": "sabrinatoro"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-11-23T16:32:35Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Repo to coordinate the work on Mondo papers",
+    "name": "mondo-paper",
+    "updatedAt": "2022-11-23T16:32:35Z",
+    "url": "https://github.com/monarch-initiative/mondo-paper",
+    "firstCommitDate": "2022-11-23T16:34:43Z",
+    "lastCommitDate": "2022-11-23T16:34:43Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-10-08T02:02:12Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "mondo-rare-disease-analysis",
+    "updatedAt": "2023-07-31T20:39:15Z",
+    "url": "https://github.com/monarch-initiative/mondo-rare-disease-analysis",
+    "firstCommitDate": "2019-10-09T03:14:16Z",
+    "lastCommitDate": "2019-10-09T03:14:16Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "deepakunni3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-06-27T15:48:00Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Mondo translator subset which removes certain classes from the official Mondo release.",
+    "name": "mondo-translator-subset",
+    "updatedAt": "2024-11-04T22:47:21Z",
+    "url": "https://github.com/monarch-initiative/mondo-translator-subset",
+    "firstCommitDate": "2023-06-28T14:42:09Z",
+    "lastCommitDate": "2023-06-28T14:42:09Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 1,
+        "login": "sierra-moxon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-09-20T16:46:09Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Mondo Disease Ontology",
+    "name": "mondo",
+    "updatedAt": "2025-09-30T14:48:16Z",
+    "url": "https://github.com/monarch-initiative/mondo",
+    "firstCommitDate": "2025-09-30T14:48:10Z",
+    "lastCommitDate": "2025-09-30T14:48:10Z",
+    "topContributors": [
+      {
+        "contributions": 7390,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 2150,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 965,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 910,
+        "login": "sabrinatoro"
+      },
+      {
+        "contributions": 216,
+        "login": "twhetzel"
+      },
+      {
+        "contributions": 183,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 109,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 108,
+        "login": "katiermullen"
+      },
+      {
+        "contributions": 101,
+        "login": "MeeSiing"
+      },
+      {
+        "contributions": 70,
+        "login": "yshwetar"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-07-01T17:10:16Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "This repository provides example code for creating a Mondo to OMOP mapping table that can be used to connect Mondo to an OMOP instance and generate Mondo patient cohorts",
+    "name": "mondo2omop",
+    "updatedAt": "2025-07-15T19:29:40Z",
+    "url": "https://github.com/monarch-initiative/mondo2omop",
+    "firstCommitDate": "2025-07-15T19:29:01Z",
+    "lastCommitDate": "2025-07-15T19:29:01Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "bryanlaraway"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-06-10T18:44:03Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Python library for mondo QC",
+    "name": "mondolib",
+    "updatedAt": "2023-11-14T18:24:14Z",
+    "url": "https://github.com/monarch-initiative/mondolib",
+    "firstCommitDate": "2024-03-21T22:58:05Z",
+    "lastCommitDate": "2024-03-21T22:58:05Z",
+    "topContributors": [
+      {
+        "contributions": 43,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 7,
+        "login": "twhetzel"
+      },
+      {
+        "contributions": 3,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "joeflack4"
+      },
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-07-02T21:01:50Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Standardized identifiers and OWL classes for chromosomes and chromosomal parts across species ",
+    "name": "monochrom",
+    "updatedAt": "2025-06-01T14:49:05Z",
+    "url": "https://github.com/monarch-initiative/monochrom",
+    "firstCommitDate": "2025-06-01T14:49:01Z",
+    "lastCommitDate": "2025-06-01T14:49:01Z",
+    "topContributors": [
+      {
+        "contributions": 37,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 30,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 3,
+        "login": "sabrinatoro"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-04-06T14:12:19Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Medical Questionnaire Ontology Questioniser",
+    "name": "mquestioniser",
+    "updatedAt": "2018-05-18T01:07:34Z",
+    "url": "https://github.com/monarch-initiative/mquestioniser",
+    "firstCommitDate": "2018-05-18T01:07:28Z",
+    "lastCommitDate": "2018-05-18T01:07:28Z",
+    "topContributors": [
+      {
+        "contributions": 12,
+        "login": "pnrobinson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-08-20T18:33:30Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "namo",
+    "updatedAt": "2025-08-20T19:22:00Z",
+    "url": "https://github.com/monarch-initiative/namo",
+    "firstCommitDate": "2025-08-20T19:21:52Z",
+    "lastCommitDate": "2025-08-20T19:21:52Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2024-04-08T16:18:44Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "NCBI-gene-pyobo",
+    "updatedAt": "2024-04-09T16:19:38Z",
+    "url": "https://github.com/monarch-initiative/NCBI-gene-pyobo",
+    "firstCommitDate": "2024-04-12T13:24:44Z",
+    "lastCommitDate": "2024-04-12T13:24:44Z",
+    "topContributors": [
+      {
+        "contributions": 36,
+        "login": "hrshdhgd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-04-04T16:29:55Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "ncbi-gene",
+    "updatedAt": "2025-03-27T03:38:10Z",
+    "url": "https://github.com/monarch-initiative/ncbi-gene",
+    "firstCommitDate": "2025-03-27T03:38:06Z",
+    "lastCommitDate": "2025-03-27T03:38:06Z",
+    "topContributors": [
+      {
+        "contributions": 11,
+        "login": "iQuxLE"
+      },
+      {
+        "contributions": 9,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 3,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 2,
+        "login": "twhetzel"
+      },
+      {
+        "contributions": 1,
+        "login": "katiermullen"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-10-24T13:19:22Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Demonstration of bias in graph machine learning owing to negative example selection",
+    "name": "negativeExampleSelection",
+    "updatedAt": "2024-05-17T02:43:54Z",
+    "url": "https://github.com/monarch-initiative/negativeExampleSelection",
+    "firstCommitDate": "2023-11-24T14:22:02Z",
+    "lastCommitDate": "2023-11-24T14:22:02Z",
+    "topContributors": [
+      {
+        "contributions": 56,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 1,
+        "login": "LucaCappelletti94"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-04-19T15:26:08Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "First pass at a thin wrapper around the Monarch API and ChatGPT plugin",
+    "name": "oai-monarch-plugin",
+    "updatedAt": "2025-09-08T19:51:11Z",
+    "url": "https://github.com/monarch-initiative/oai-monarch-plugin",
+    "firstCommitDate": "2025-03-21T22:05:21Z",
+    "lastCommitDate": "2025-03-21T22:05:21Z",
+    "topContributors": [
+      {
+        "contributions": 86,
+        "login": "oneilsh"
+      },
+      {
+        "contributions": 8,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 4,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-04-18T20:49:36Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Alpha test for a Monarch-backed plugin for ChatGPT.",
+    "name": "oai-monarch-wrapper",
+    "updatedAt": "2023-05-01T15:30:01Z",
+    "url": "https://github.com/monarch-initiative/oai-monarch-wrapper",
+    "firstCommitDate": "2023-04-18T20:51:53Z",
+    "lastCommitDate": "2023-04-18T20:51:53Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "oneilsh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-09-07T16:58:14Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Evaluations for the Monarch OpenAI Plugin/Monarch Assistant against benchmarks.",
+    "name": "oai-plugin-evals",
+    "updatedAt": "2023-10-23T21:31:39Z",
+    "url": "https://github.com/monarch-initiative/oai-plugin-evals",
+    "firstCommitDate": "2023-12-24T19:47:24Z",
+    "lastCommitDate": "2023-12-24T19:47:24Z",
+    "topContributors": [
+      {
+        "contributions": 29,
+        "login": "oneilsh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-06-23T14:31:27Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A model context protocol (MCP) to help agents interact with ontologies and the ontology access kit",
+    "name": "oak-mcp",
+    "updatedAt": "2025-07-31T09:50:53Z",
+    "url": "https://github.com/monarch-initiative/oak-mcp",
+    "firstCommitDate": "2025-07-08T16:11:31Z",
+    "lastCommitDate": "2025-07-08T16:11:31Z",
+    "topContributors": [
+      {
+        "contributions": 75,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 1,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-04-01T11:06:16Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A dockerised version of the OLS for Monarch Ontologies",
+    "name": "ols_monarch",
+    "updatedAt": "2023-10-24T07:48:13Z",
+    "url": "https://github.com/monarch-initiative/ols_monarch",
+    "firstCommitDate": "2023-10-24T07:48:00Z",
+    "lastCommitDate": "2023-10-24T07:48:00Z",
+    "topContributors": [
+      {
+        "contributions": 45,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 2,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 2,
+        "login": "putmantime"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-04-14T02:46:40Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Source files for axiomatizing the ontology of OMIA",
+    "name": "omia-ontology",
+    "updatedAt": "2023-02-19T15:07:40Z",
+    "url": "https://github.com/monarch-initiative/omia-ontology",
+    "firstCommitDate": "2023-02-19T15:07:28Z",
+    "lastCommitDate": "2023-02-19T15:07:28Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-04-09T16:35:06Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Data ingest pipeline for OMIM.",
+    "name": "omim",
+    "updatedAt": "2025-09-23T18:37:32Z",
+    "url": "https://github.com/monarch-initiative/omim",
+    "firstCommitDate": "2025-09-23T18:37:26Z",
+    "lastCommitDate": "2025-09-23T18:37:26Z",
+    "topContributors": [
+      {
+        "contributions": 285,
+        "login": "joeflack4"
+      },
+      {
+        "contributions": 100,
+        "login": "twhetzel"
+      },
+      {
+        "contributions": 21,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 7,
+        "login": "MeeSiing"
+      },
+      {
+        "contributions": 4,
+        "login": "sabrinatoro"
+      },
+      {
+        "contributions": 2,
+        "login": "Copilot"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-06-15T19:32:24Z",
+    "defaultBranchRef": {
+      "name": "develop"
+    },
+    "description": "A package to convert cancer data to GA4GH phenopacket",
+    "name": "oncopacket",
+    "updatedAt": "2025-08-05T21:26:29Z",
+    "url": "https://github.com/monarch-initiative/oncopacket",
+    "firstCommitDate": "2025-08-05T21:26:24Z",
+    "lastCommitDate": "2025-08-05T21:26:24Z",
+    "topContributors": [
+      {
+        "contributions": 105,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 83,
+        "login": "ielis"
+      },
+      {
+        "contributions": 57,
+        "login": "msierk"
+      },
+      {
+        "contributions": 24,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 22,
+        "login": "rajdeepmondaldotcom"
+      },
+      {
+        "contributions": 17,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 3,
+        "login": "lnrekerle"
+      },
+      {
+        "contributions": 2,
+        "login": "madanucd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-09-28T18:28:58Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Explorations with AI agents",
+    "name": "oneilsh-agent-explorations",
+    "updatedAt": "2023-11-08T21:37:34Z",
+    "url": "https://github.com/monarch-initiative/oneilsh-agent-explorations",
+    "firstCommitDate": "2023-11-08T21:37:12Z",
+    "lastCommitDate": "2023-11-08T21:37:12Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "oneilsh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-06-12T21:49:08Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A repo of very experimental code for calling APIs with langchain et al.",
+    "name": "oneilsh-llm-tools-tests",
+    "updatedAt": "2023-06-13T17:23:47Z",
+    "url": "https://github.com/monarch-initiative/oneilsh-llm-tools-tests",
+    "firstCommitDate": "2023-06-14T16:59:58Z",
+    "lastCommitDate": "2023-06-14T16:59:58Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "oneilsh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-11-14T00:16:51Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "ont-review",
+    "updatedAt": "2018-05-02T05:50:28Z",
+    "url": "https://github.com/monarch-initiative/ont-review",
+    "firstCommitDate": "2018-05-02T05:50:26Z",
+    "lastCommitDate": "2018-05-02T05:50:26Z",
+    "topContributors": [
+      {
+        "contributions": 27,
+        "login": "jmcmurry"
+      },
+      {
+        "contributions": 4,
+        "login": "putmantime"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-04-05T16:10:46Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "python library for working with ontologies and ontology associations",
+    "name": "ontobio",
+    "updatedAt": "2022-04-05T16:24:20Z",
+    "url": "https://github.com/monarch-initiative/ontobio",
+    "firstCommitDate": "2022-04-08T19:14:08Z",
+    "lastCommitDate": "2022-04-08T19:14:08Z",
+    "topContributors": [
+      {
+        "contributions": 561,
+        "login": "dougli1sqrd"
+      },
+      {
+        "contributions": 413,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 160,
+        "login": "dustine32"
+      },
+      {
+        "contributions": 133,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 103,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 87,
+        "login": "deepakunni3"
+      },
+      {
+        "contributions": 56,
+        "login": "kltm"
+      },
+      {
+        "contributions": 14,
+        "login": "lhannest"
+      },
+      {
+        "contributions": 9,
+        "login": "falquaddoomi"
+      },
+      {
+        "contributions": 7,
+        "login": "RichardBruskiewich"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-09-19T14:47:57Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Experiments and analysis related to OntoGPT methods.",
+    "name": "ontogpt-experiments",
+    "updatedAt": "2025-03-24T18:15:55Z",
+    "url": "https://github.com/monarch-initiative/ontogpt-experiments",
+    "firstCommitDate": "2024-08-07T17:11:33Z",
+    "lastCommitDate": "2024-08-07T17:11:33Z",
+    "topContributors": [
+      {
+        "contributions": 48,
+        "login": "caufieldjh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-01-03T16:53:25Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "LLM-based ontological extraction tools, including SPIRES",
+    "name": "ontogpt",
+    "updatedAt": "2025-09-27T13:18:56Z",
+    "url": "https://github.com/monarch-initiative/ontogpt",
+    "firstCommitDate": "2025-09-26T19:41:47Z",
+    "lastCommitDate": "2025-09-26T19:41:47Z",
+    "topContributors": [
+      {
+        "contributions": 1626,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 199,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 46,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 46,
+        "login": "AgranyaGitHub"
+      },
+      {
+        "contributions": 16,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 16,
+        "login": "realmarcin"
+      },
+      {
+        "contributions": 7,
+        "login": "k-bandi"
+      },
+      {
+        "contributions": 6,
+        "login": "yarikoptic"
+      },
+      {
+        "contributions": 6,
+        "login": "diatomsRcool"
+      },
+      {
+        "contributions": 3,
+        "login": "nlharris"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-05-13T18:15:46Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "ontorunner",
+    "updatedAt": "2024-06-29T06:47:52Z",
+    "url": "https://github.com/monarch-initiative/ontorunner",
+    "firstCommitDate": "2022-12-11T19:03:36Z",
+    "lastCommitDate": "2022-12-11T19:03:36Z",
+    "topContributors": [
+      {
+        "contributions": 461,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 9,
+        "login": "deepakunni3"
+      },
+      {
+        "contributions": 3,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-02-15T21:36:19Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Configuration to deploy ontotools using docker compose",
+    "name": "ontotools-docker",
+    "updatedAt": "2025-08-14T15:32:16Z",
+    "url": "https://github.com/monarch-initiative/ontotools-docker",
+    "firstCommitDate": "2025-08-14T15:32:12Z",
+    "lastCommitDate": "2025-08-14T15:32:12Z",
+    "topContributors": [
+      {
+        "contributions": 45,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 23,
+        "login": "falquaddoomi"
+      },
+      {
+        "contributions": 16,
+        "login": "jamesamcl"
+      },
+      {
+        "contributions": 7,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 6,
+        "login": "twhetzel"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "sabrinatoro"
+      },
+      {
+        "contributions": 1,
+        "login": "henrietteharmse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-10-27T23:39:41Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "operations",
+    "updatedAt": "2024-09-30T15:28:40Z",
+    "url": "https://github.com/monarch-initiative/operations",
+    "firstCommitDate": "2023-10-04T20:00:46Z",
+    "lastCommitDate": "2023-10-04T20:00:46Z",
+    "topContributors": [
+      {
+        "contributions": 32,
+        "login": "jmcmurry"
+      },
+      {
+        "contributions": 5,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 1,
+        "login": "monicacecilia"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-12-22T18:25:19Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A registry of organoids",
+    "name": "organoid-registry",
+    "updatedAt": "2021-08-30T22:30:00Z",
+    "url": "https://github.com/monarch-initiative/organoid-registry",
+    "firstCommitDate": "2015-12-22T23:30:48Z",
+    "lastCommitDate": "2015-12-22T23:30:48Z",
+    "topContributors": [
+      {
+        "contributions": 9,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2014-05-08T22:21:19Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "owlsim-hadoop",
+    "updatedAt": "2023-10-04T20:59:36Z",
+    "url": "https://github.com/monarch-initiative/owlsim-hadoop",
+    "firstCommitDate": "2014-05-08T22:52:04Z",
+    "lastCommitDate": "2014-05-08T22:52:04Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-01-26T23:29:31Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Configuration for OwlSim3 for Monarch",
+    "name": "owlsim-v3-config",
+    "updatedAt": "2017-01-26T23:29:31Z",
+    "url": "https://github.com/monarch-initiative/owlsim-v3-config",
+    "firstCommitDate": "2017-01-27T00:14:11Z",
+    "lastCommitDate": "2017-01-27T00:14:11Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 2,
+        "login": "jnguyenx"
+      }
+    ]
+  },
+  {
+    "createdAt": "2014-08-25T14:57:36Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Ontology Based Profile Matching",
+    "name": "owlsim-v3",
+    "updatedAt": "2025-06-30T14:05:50Z",
+    "url": "https://github.com/monarch-initiative/owlsim-v3",
+    "firstCommitDate": "2020-07-17T16:12:32Z",
+    "lastCommitDate": "2020-07-17T16:12:32Z",
+    "topContributors": [
+      {
+        "contributions": 117,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 39,
+        "login": "jnguyenx"
+      },
+      {
+        "contributions": 30,
+        "login": "nlwashington"
+      },
+      {
+        "contributions": 15,
+        "login": "julesjacobsen"
+      },
+      {
+        "contributions": 6,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 4,
+        "login": "tudorgroza"
+      },
+      {
+        "contributions": 2,
+        "login": "balhoff"
+      },
+      {
+        "contributions": 1,
+        "login": "nathandunn"
+      },
+      {
+        "contributions": 1,
+        "login": "drseb"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-03-23T16:48:13Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "pairwise-phenopacket-compare",
+    "updatedAt": "2025-03-31T16:01:23Z",
+    "url": "https://github.com/monarch-initiative/pairwise-phenopacket-compare",
+    "firstCommitDate": "2025-03-31T16:00:52Z",
+    "lastCommitDate": "2025-03-31T16:00:52Z",
+    "topContributors": [
+      {
+        "contributions": 10,
+        "login": "AO33"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-06-14T01:12:33Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "orthologs ingest from pantherdb",
+    "name": "pantherdb-orthologs-ingest",
+    "updatedAt": "2025-06-19T16:55:57Z",
+    "url": "https://github.com/monarch-initiative/pantherdb-orthologs-ingest",
+    "firstCommitDate": "2025-06-19T16:55:49Z",
+    "lastCommitDate": "2025-06-19T16:55:49Z",
+    "topContributors": [
+      {
+        "contributions": 11,
+        "login": "AO33"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-05-12T15:36:07Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "An integrated ontology for Phenomics",
+    "name": "phenio",
+    "updatedAt": "2025-09-18T16:43:37Z",
+    "url": "https://github.com/monarch-initiative/phenio",
+    "firstCommitDate": "2025-09-18T16:43:32Z",
+    "lastCommitDate": "2025-09-18T16:43:32Z",
+    "topContributors": [
+      {
+        "contributions": 263,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 41,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 1,
+        "login": "gouttegd"
+      },
+      {
+        "contributions": 1,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-01-06T11:31:37Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Phenotype plugin for Protege 5",
+    "name": "pheno.plugin",
+    "updatedAt": "2019-01-06T12:58:13Z",
+    "url": "https://github.com/monarch-initiative/pheno.plugin",
+    "firstCommitDate": "2019-01-06T12:58:07Z",
+    "lastCommitDate": "2019-01-06T12:58:07Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "pnrobinson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-06-13T21:00:40Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Phenotype Compare",
+    "name": "phenoCompare",
+    "updatedAt": "2019-05-12T23:17:15Z",
+    "url": "https://github.com/monarch-initiative/phenoCompare",
+    "firstCommitDate": "2019-05-12T23:17:12Z",
+    "lastCommitDate": "2019-05-12T23:17:12Z",
+    "topContributors": [
+      {
+        "contributions": 93,
+        "login": "hannahblau"
+      },
+      {
+        "contributions": 12,
+        "login": "pnrobinson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-02-23T18:00:18Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Java FX UI elements for HPO applications",
+    "name": "PhenoControls",
+    "updatedAt": "2024-02-23T18:05:25Z",
+    "url": "https://github.com/monarch-initiative/PhenoControls",
+    "firstCommitDate": "2024-02-23T18:02:47Z",
+    "lastCommitDate": "2024-02-23T18:02:47Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "ielis"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-11-19T01:25:51Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Forms and components for Monarch JavaFX tools",
+    "name": "phenofx",
+    "updatedAt": "2021-11-30T02:24:53Z",
+    "url": "https://github.com/monarch-initiative/phenofx",
+    "firstCommitDate": "2021-11-30T02:24:43Z",
+    "lastCommitDate": "2021-11-30T02:24:43Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "ielis"
+      }
+    ]
+  },
+  {
+    "createdAt": "2014-09-22T02:00:30Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "The phenogrid widget",
+    "name": "phenogrid",
+    "updatedAt": "2023-11-23T08:47:13Z",
+    "url": "https://github.com/monarch-initiative/phenogrid",
+    "firstCommitDate": "2022-01-28T16:14:35Z",
+    "lastCommitDate": "2022-01-28T16:14:35Z",
+    "topContributors": [
+      {
+        "contributions": 724,
+        "login": "yuanzhou"
+      },
+      {
+        "contributions": 123,
+        "login": "harryhoch"
+      },
+      {
+        "contributions": 41,
+        "login": "VincentIII"
+      },
+      {
+        "contributions": 20,
+        "login": "davism84"
+      },
+      {
+        "contributions": 20,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 15,
+        "login": "boesb"
+      },
+      {
+        "contributions": 15,
+        "login": "falquaddoomi"
+      },
+      {
+        "contributions": 9,
+        "login": "frdougal"
+      },
+      {
+        "contributions": 8,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 8,
+        "login": "iimpulse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-05-27T17:59:58Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A tool for distorting phenopackets in disease/gene prioritizer benchmarks.",
+    "name": "PhenoImp",
+    "updatedAt": "2022-06-07T13:24:27Z",
+    "url": "https://github.com/monarch-initiative/PhenoImp",
+    "firstCommitDate": "2022-07-13T13:51:25Z",
+    "lastCommitDate": "2022-07-13T13:51:25Z",
+    "topContributors": [
+      {
+        "contributions": 103,
+        "login": "ielis"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-01-27T14:14:30Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "phenol: Phenotype ontology library",
+    "name": "phenol",
+    "updatedAt": "2025-08-13T11:18:10Z",
+    "url": "https://github.com/monarch-initiative/phenol",
+    "firstCommitDate": "2025-03-13T09:51:04Z",
+    "lastCommitDate": "2025-03-13T09:51:04Z",
+    "topContributors": [
+      {
+        "contributions": 495,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 277,
+        "login": "ielis"
+      },
+      {
+        "contributions": 155,
+        "login": "holtgrewe"
+      },
+      {
+        "contributions": 59,
+        "login": "julesjacobsen"
+      },
+      {
+        "contributions": 50,
+        "login": "iimpulse"
+      },
+      {
+        "contributions": 21,
+        "login": "yy20716"
+      },
+      {
+        "contributions": 19,
+        "login": "kingmanzhang"
+      },
+      {
+        "contributions": 12,
+        "login": "hannahblau"
+      },
+      {
+        "contributions": 4,
+        "login": "aeyates"
+      },
+      {
+        "contributions": 3,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-05-10T18:50:46Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "phenologs-transform",
+    "updatedAt": "2024-05-10T20:28:03Z",
+    "url": "https://github.com/monarch-initiative/phenologs-transform",
+    "firstCommitDate": "2024-05-10T20:19:05Z",
+    "lastCommitDate": "2024-05-10T20:19:05Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "AO33"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-10-19T12:09:57Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Project Management repository for the Phenomics First Resource (PFR) NHGRI CEGS grant.",
+    "name": "phenomics_first_resource_grant_tracker",
+    "updatedAt": "2025-01-31T22:34:44Z",
+    "url": "https://github.com/monarch-initiative/phenomics_first_resource_grant_tracker",
+    "firstCommitDate": "2025-01-15T20:58:23Z",
+    "lastCommitDate": "2025-01-15T20:58:23Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 2,
+        "login": "sagehrke"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-08-27T02:39:22Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "LLM retrieval augmented generation agent for the Monarch Knowledge graph.",
+    "name": "phenomics-assistant",
+    "updatedAt": "2025-09-15T15:56:31Z",
+    "url": "https://github.com/monarch-initiative/phenomics-assistant",
+    "firstCommitDate": "2025-01-14T19:24:20Z",
+    "lastCommitDate": "2025-01-14T19:24:20Z",
+    "topContributors": [
+      {
+        "contributions": 47,
+        "login": "oneilsh"
+      },
+      {
+        "contributions": 3,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "nlharris"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-10-20T15:59:50Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "for outreach and workshops",
+    "name": "phenomics",
+    "updatedAt": "2023-09-24T02:08:40Z",
+    "url": "https://github.com/monarch-initiative/phenomics",
+    "firstCommitDate": "2023-09-02T03:31:21Z",
+    "lastCommitDate": "2023-09-02T03:31:21Z",
+    "topContributors": [
+      {
+        "contributions": 453,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 20,
+        "login": "monicacecilia"
+      },
+      {
+        "contributions": 5,
+        "login": "jmcmurry"
+      },
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 1,
+        "login": "nlharris"
+      },
+      {
+        "contributions": 1,
+        "login": "diatomsRcool"
+      },
+      {
+        "contributions": 1,
+        "login": "sagehrke"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-11-18T14:57:30Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Bio Namd Entity Recognition API",
+    "name": "PhenoNeER",
+    "updatedAt": "2022-11-18T21:35:14Z",
+    "url": "https://github.com/monarch-initiative/PhenoNeER",
+    "firstCommitDate": "2022-11-18T21:23:12Z",
+    "lastCommitDate": "2022-11-18T21:23:12Z",
+    "topContributors": [
+      {
+        "contributions": 11,
+        "login": "ielis"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-03-25T03:10:17Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "This is a modular ingest for phenopackets into the Monarch KG",
+    "name": "phenopacket-ingest",
+    "updatedAt": "2025-06-17T02:10:55Z",
+    "url": "https://github.com/monarch-initiative/phenopacket-ingest",
+    "firstCommitDate": "2025-06-17T02:10:49Z",
+    "lastCommitDate": "2025-06-17T02:10:49Z",
+    "topContributors": [
+      {
+        "contributions": 29,
+        "login": "iQuxLE"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-06-23T19:16:17Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "REST API for phenopacket-scraper",
+    "name": "phenopacket-scraper-api",
+    "updatedAt": "2016-06-28T20:15:26Z",
+    "url": "https://github.com/monarch-initiative/phenopacket-scraper-api",
+    "firstCommitDate": "2016-08-23T18:36:40Z",
+    "lastCommitDate": "2016-08-23T18:36:40Z",
+    "topContributors": [
+      {
+        "contributions": 20,
+        "login": "satwik77"
+      },
+      {
+        "contributions": 8,
+        "login": "DoctorBud"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-05-15T20:07:46Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Extracts information from life-science websites and texts, generating phenopackets with the extracted information and correct external ontology references.",
+    "name": "phenopacket-scraper-core",
+    "updatedAt": "2016-05-26T19:24:19Z",
+    "url": "https://github.com/monarch-initiative/phenopacket-scraper-core",
+    "firstCommitDate": "2016-08-22T12:03:06Z",
+    "lastCommitDate": "2016-08-22T12:03:06Z",
+    "topContributors": [
+      {
+        "contributions": 30,
+        "login": "satwik77"
+      },
+      {
+        "contributions": 8,
+        "login": "DoctorBud"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-05-15T20:14:35Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "phenopacket-scraper-webapp",
+    "updatedAt": "2024-09-22T16:05:26Z",
+    "url": "https://github.com/monarch-initiative/phenopacket-scraper-webapp",
+    "firstCommitDate": "2016-08-23T18:35:36Z",
+    "lastCommitDate": "2016-08-23T18:35:36Z",
+    "topContributors": [
+      {
+        "contributions": 13,
+        "login": "satwik77"
+      },
+      {
+        "contributions": 5,
+        "login": "DoctorBud"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-08-16T09:24:31Z",
+    "defaultBranchRef": {
+      "name": "develop"
+    },
+    "description": "Toolkit for accessing, Q/C, and maintenance of Phenopacket Store ",
+    "name": "phenopacket-store-toolkit",
+    "updatedAt": "2025-07-11T08:44:17Z",
+    "url": "https://github.com/monarch-initiative/phenopacket-store-toolkit",
+    "firstCommitDate": "2025-07-03T08:48:08Z",
+    "lastCommitDate": "2025-07-03T08:48:08Z",
+    "topContributors": [
+      {
+        "contributions": 68,
+        "login": "ielis"
+      },
+      {
+        "contributions": 3,
+        "login": "pnrobinson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-12-19T13:30:51Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Collections of GA4GH phenopackets that represent individuals with Mendelian diseases.",
+    "name": "phenopacket-store",
+    "updatedAt": "2025-09-30T15:02:12Z",
+    "url": "https://github.com/monarch-initiative/phenopacket-store",
+    "firstCommitDate": "2025-09-30T15:02:05Z",
+    "lastCommitDate": "2025-09-30T15:02:05Z",
+    "topContributors": [
+      {
+        "contributions": 973,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 187,
+        "login": "ielis"
+      },
+      {
+        "contributions": 66,
+        "login": "ldingemans"
+      },
+      {
+        "contributions": 5,
+        "login": "adamklocperk"
+      },
+      {
+        "contributions": 5,
+        "login": "tudorgroza"
+      },
+      {
+        "contributions": 4,
+        "login": "hansenp"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-05-21T21:59:35Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "PhenoteFX",
+    "name": "PhenoteFX",
+    "updatedAt": "2024-09-30T15:28:53Z",
+    "url": "https://github.com/monarch-initiative/PhenoteFX",
+    "firstCommitDate": "2023-11-20T13:32:54Z",
+    "lastCommitDate": "2023-11-20T13:32:54Z",
+    "topContributors": [
+      {
+        "contributions": 212,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 39,
+        "login": "kingmanzhang"
+      },
+      {
+        "contributions": 1,
+        "login": "ielis"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-04-19T11:21:59Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Phenotype2Phenopacket is a command-line tool that converts a phenotype annotation into GA4GH Phenopackets, facilitating standardised phenotypic data representation.",
+    "name": "phenotype2phenopacket",
+    "updatedAt": "2025-06-30T15:36:17Z",
+    "url": "https://github.com/monarch-initiative/phenotype2phenopacket",
+    "firstCommitDate": "2025-06-30T15:36:12Z",
+    "lastCommitDate": "2025-06-30T15:36:12Z",
+    "topContributors": [
+      {
+        "contributions": 235,
+        "login": "yaseminbridges"
+      },
+      {
+        "contributions": 9,
+        "login": "dpavam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-04-23T17:25:00Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "phenotypr-body",
+    "updatedAt": "2021-06-18T21:21:34Z",
+    "url": "https://github.com/monarch-initiative/phenotypr-body",
+    "firstCommitDate": "2021-06-18T21:21:30Z",
+    "lastCommitDate": "2021-06-18T21:21:30Z",
+    "topContributors": [
+      {
+        "contributions": 190,
+        "login": "heathharrelson"
+      },
+      {
+        "contributions": 38,
+        "login": "kirenotneb"
+      },
+      {
+        "contributions": 13,
+        "login": "wsams"
+      },
+      {
+        "contributions": 10,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 6,
+        "login": "lizohsu"
+      },
+      {
+        "contributions": 5,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 3,
+        "login": "jmcmurry"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-03-02T18:21:45Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Patient self-phenotyping tools and project management",
+    "name": "phenotypr",
+    "updatedAt": "2018-03-02T18:21:45Z",
+    "url": "https://github.com/monarch-initiative/phenotypr",
+    "firstCommitDate": "2018-03-02T18:21:46Z",
+    "lastCommitDate": "2018-03-02T18:21:46Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "jmcmurry"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-11-20T13:53:12Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "PhenoUnit testing framework",
+    "name": "phenounit",
+    "updatedAt": "2018-11-29T10:36:35Z",
+    "url": "https://github.com/monarch-initiative/phenounit",
+    "firstCommitDate": "2018-11-29T10:36:30Z",
+    "lastCommitDate": "2018-11-29T10:36:30Z",
+    "topContributors": [
+      {
+        "contributions": 11,
+        "login": "drseb"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-01-10T19:59:15Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "pheval-paper",
+    "updatedAt": "2025-03-28T16:42:30Z",
+    "url": "https://github.com/monarch-initiative/pheval-paper",
+    "firstCommitDate": "2025-03-28T16:42:26Z",
+    "lastCommitDate": "2025-03-28T16:42:26Z",
+    "topContributors": [
+      {
+        "contributions": 26,
+        "login": "yaseminbridges"
+      },
+      {
+        "contributions": 4,
+        "login": "julesjacobsen"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-10-16T10:01:48Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "pheval-runner-template",
+    "updatedAt": "2025-08-06T14:52:29Z",
+    "url": "https://github.com/monarch-initiative/pheval-runner-template",
+    "firstCommitDate": "2025-08-06T14:52:25Z",
+    "lastCommitDate": "2025-08-06T14:52:25Z",
+    "topContributors": [
+      {
+        "contributions": 76,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 25,
+        "login": "yaseminbridges"
+      },
+      {
+        "contributions": 7,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 6,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 3,
+        "login": "amc-corey-cox"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-05-10T14:11:12Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A PhEval plugin for integrating AI-MARRVEL, enabling variant prioritisation based on phenotypic data in a standardised pipeline.",
+    "name": "pheval.ai_marrvel",
+    "updatedAt": "2025-03-28T16:21:26Z",
+    "url": "https://github.com/monarch-initiative/pheval.ai_marrvel",
+    "firstCommitDate": "2025-03-28T16:21:22Z",
+    "lastCommitDate": "2025-03-28T16:21:22Z",
+    "topContributors": [
+      {
+        "contributions": 95,
+        "login": "yaseminbridges"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-11-17T14:18:38Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Exomiser plugin for PhEval.",
+    "name": "pheval.exomiser",
+    "updatedAt": "2025-07-04T15:24:40Z",
+    "url": "https://github.com/monarch-initiative/pheval.exomiser",
+    "firstCommitDate": "2025-07-04T15:24:33Z",
+    "lastCommitDate": "2025-07-04T15:24:33Z",
+    "topContributors": [
+      {
+        "contributions": 400,
+        "login": "yaseminbridges"
+      },
+      {
+        "contributions": 22,
+        "login": "julesjacobsen"
+      },
+      {
+        "contributions": 13,
+        "login": "souzadevinicius"
+      },
+      {
+        "contributions": 3,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-10-03T10:34:58Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A PhEval plugin for integrating GADO, enabling gene prioritisation based on phenotypic data in a standardised pipeline.",
+    "name": "pheval.gado",
+    "updatedAt": "2025-04-07T18:21:00Z",
+    "url": "https://github.com/monarch-initiative/pheval.gado",
+    "firstCommitDate": "2025-04-07T18:20:56Z",
+    "lastCommitDate": "2025-04-07T18:20:56Z",
+    "topContributors": [
+      {
+        "contributions": 37,
+        "login": "yaseminbridges"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-08-29T12:29:55Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A framework for empirical evaluation of phenotype matching and prioritisation",
+    "name": "pheval",
+    "updatedAt": "2025-08-14T12:24:26Z",
+    "url": "https://github.com/monarch-initiative/pheval",
+    "firstCommitDate": "2025-08-14T12:24:22Z",
+    "lastCommitDate": "2025-08-14T12:24:22Z",
+    "topContributors": [
+      {
+        "contributions": 1263,
+        "login": "yaseminbridges"
+      },
+      {
+        "contributions": 166,
+        "login": "souzadevinicius"
+      },
+      {
+        "contributions": 69,
+        "login": "julesjacobsen"
+      },
+      {
+        "contributions": 22,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 13,
+        "login": "dpavam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-08-13T19:22:52Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "pheval.kghg",
+    "updatedAt": "2024-11-27T04:11:10Z",
+    "url": "https://github.com/monarch-initiative/pheval.kghg",
+    "firstCommitDate": "2024-11-27T04:11:06Z",
+    "lastCommitDate": "2024-11-27T04:11:06Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "AO33"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-02-09T12:24:23Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A PhEval plugin integrating LIRICAL for efficient phenotype and variant prioritisation in a standardised pipeline.",
+    "name": "pheval.lirical",
+    "updatedAt": "2025-03-28T16:25:45Z",
+    "url": "https://github.com/monarch-initiative/pheval.lirical",
+    "firstCommitDate": "2025-03-28T16:25:41Z",
+    "lastCommitDate": "2025-03-28T16:25:41Z",
+    "topContributors": [
+      {
+        "contributions": 134,
+        "login": "yaseminbridges"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-05-07T17:38:45Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Analysis of LLMs for Clinical Observations",
+    "name": "pheval.llm",
+    "updatedAt": "2025-09-15T12:11:35Z",
+    "url": "https://github.com/monarch-initiative/pheval.llm",
+    "firstCommitDate": "2025-09-15T12:11:25Z",
+    "lastCommitDate": "2025-09-15T12:11:25Z",
+    "topContributors": [
+      {
+        "contributions": 89,
+        "login": "leokim-l"
+      },
+      {
+        "contributions": 19,
+        "login": "iimpulse"
+      },
+      {
+        "contributions": 11,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 8,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 4,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "enockniyonkuru"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-05-16T15:24:31Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "pheval.oak",
+    "updatedAt": "2024-11-04T18:33:34Z",
+    "url": "https://github.com/monarch-initiative/pheval.oak",
+    "firstCommitDate": "2024-05-22T09:31:06Z",
+    "lastCommitDate": "2024-05-22T09:31:06Z",
+    "topContributors": [
+      {
+        "contributions": 43,
+        "login": "yaseminbridges"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-06-16T12:28:00Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A PhEval plugin for integrating LLMs, enabling gene and disease prioritisation based on phenotypic data in a standardised pipeline.",
+    "name": "pheval.ontogpt",
+    "updatedAt": "2024-11-04T18:34:08Z",
+    "url": "https://github.com/monarch-initiative/pheval.ontogpt",
+    "firstCommitDate": "2024-05-24T14:32:09Z",
+    "lastCommitDate": "2024-05-24T14:32:09Z",
+    "topContributors": [
+      {
+        "contributions": 92,
+        "login": "yaseminbridges"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-01-26T20:29:53Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A PhEval plugin for integrating Phen2Gene, enabling gene prioritisation based on phenotypic data in a standardised pipeline.",
+    "name": "pheval.phen2gene",
+    "updatedAt": "2025-03-27T12:08:48Z",
+    "url": "https://github.com/monarch-initiative/pheval.phen2gene",
+    "firstCommitDate": "2025-03-27T12:08:44Z",
+    "lastCommitDate": "2025-03-27T12:08:44Z",
+    "topContributors": [
+      {
+        "contributions": 169,
+        "login": "yaseminbridges"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-11-25T18:00:12Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A PhEval plugin for integrating PhenoGenius, enabling gene prioritisation based on phenotypic data in a standardised pipeline.",
+    "name": "pheval.phenogenius",
+    "updatedAt": "2025-01-20T13:28:23Z",
+    "url": "https://github.com/monarch-initiative/pheval.phenogenius",
+    "firstCommitDate": "2024-12-02T10:58:14Z",
+    "lastCommitDate": "2024-12-02T10:58:14Z",
+    "topContributors": [
+      {
+        "contributions": 21,
+        "login": "yaseminbridges"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-08-09T22:59:40Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "pheval.semphen",
+    "updatedAt": "2024-11-27T02:14:16Z",
+    "url": "https://github.com/monarch-initiative/pheval.semphen",
+    "firstCommitDate": "2024-11-27T02:14:06Z",
+    "lastCommitDate": "2024-11-27T02:14:06Z",
+    "topContributors": [
+      {
+        "contributions": 18,
+        "login": "AO33"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-05-09T16:23:16Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A PhEval plugin for integrating SvAnna, enabling structural variant prioritisation in a standardised pipeline.",
+    "name": "pheval.svanna",
+    "updatedAt": "2025-03-28T16:25:22Z",
+    "url": "https://github.com/monarch-initiative/pheval.svanna",
+    "firstCommitDate": "2025-03-28T16:25:17Z",
+    "lastCommitDate": "2025-03-28T16:25:17Z",
+    "topContributors": [
+      {
+        "contributions": 46,
+        "login": "yaseminbridges"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-01-11T12:29:39Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A PhEval plugin for integrating a test runner, enabling testing of the  standardised pipeline.",
+    "name": "pheval.template",
+    "updatedAt": "2025-03-28T16:24:20Z",
+    "url": "https://github.com/monarch-initiative/pheval.template",
+    "firstCommitDate": "2025-03-28T16:24:16Z",
+    "lastCommitDate": "2025-03-28T16:24:16Z",
+    "topContributors": [
+      {
+        "contributions": 39,
+        "login": "yaseminbridges"
+      },
+      {
+        "contributions": 7,
+        "login": "souzadevinicius"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-08-21T17:02:06Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Plater automatically creates a TRAPI interface for a biolink-compliant neo4j graph.",
+    "name": "Plater",
+    "updatedAt": "2021-08-22T17:34:13Z",
+    "url": "https://github.com/monarch-initiative/Plater",
+    "firstCommitDate": "2021-08-22T17:33:53Z",
+    "lastCommitDate": "2021-08-22T17:33:53Z",
+    "topContributors": [
+      {
+        "contributions": 42,
+        "login": "YaphetKG"
+      },
+      {
+        "contributions": 38,
+        "login": "PhillipsOwen"
+      },
+      {
+        "contributions": 3,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 1,
+        "login": "cbizon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-04-18T14:57:27Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "HPO Protege Plugin, based on Protege-obo-pluging",
+    "name": "protege-hpo-plugin",
+    "updatedAt": "2019-04-26T21:29:21Z",
+    "url": "https://github.com/monarch-initiative/protege-hpo-plugin",
+    "firstCommitDate": "2019-04-26T21:29:15Z",
+    "lastCommitDate": "2019-04-26T21:29:15Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "pnrobinson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-01-07T14:58:22Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A plug-in for Protege that provides entry fields for standard OBO annotation properties",
+    "name": "protege-obo-plugin",
+    "updatedAt": "2019-01-07T14:58:24Z",
+    "url": "https://github.com/monarch-initiative/protege-obo-plugin",
+    "firstCommitDate": "2017-08-19T02:50:53Z",
+    "lastCommitDate": "2017-08-19T02:50:53Z",
+    "topContributors": [
+      {
+        "contributions": 18,
+        "login": "balhoff"
+      },
+      {
+        "contributions": 2,
+        "login": "simonjupp"
+      },
+      {
+        "contributions": 1,
+        "login": "hdietze"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-02-18T12:20:33Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Publication Manager",
+    "name": "pubman",
+    "updatedAt": "2020-03-28T10:45:53Z",
+    "url": "https://github.com/monarch-initiative/pubman",
+    "firstCommitDate": "2020-03-28T10:45:45Z",
+    "lastCommitDate": "2020-03-28T10:45:45Z",
+    "topContributors": [
+      {
+        "contributions": 42,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 2,
+        "login": "kingmanzhang"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-03-14T16:39:06Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "pubmed-browser",
+    "updatedAt": "2018-03-14T16:39:08Z",
+    "url": "https://github.com/monarch-initiative/pubmed-browser",
+    "firstCommitDate": "2018-03-14T16:39:07Z",
+    "lastCommitDate": "2018-03-14T16:39:07Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "jmcmurry"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-12-06T12:31:35Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Python Phenopacket Tools",
+    "name": "pyphetools",
+    "updatedAt": "2025-08-01T09:23:02Z",
+    "url": "https://github.com/monarch-initiative/pyphetools",
+    "firstCommitDate": "2025-08-01T09:22:56Z",
+    "lastCommitDate": "2025-08-01T09:22:56Z",
+    "topContributors": [
+      {
+        "contributions": 404,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 96,
+        "login": "ielis"
+      },
+      {
+        "contributions": 18,
+        "login": "ldingemans"
+      },
+      {
+        "contributions": 6,
+        "login": "lnrekerle"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "KyranWissink"
+      },
+      {
+        "contributions": 1,
+        "login": "tudorgroza"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-04-16T15:41:09Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Pyrophen generates a FHIR Code system representing the Human Phenotype Ontology",
+    "name": "pyrophen",
+    "updatedAt": "2023-01-02T00:40:54Z",
+    "url": "https://github.com/monarch-initiative/pyrophen",
+    "firstCommitDate": "2022-08-09T22:40:12Z",
+    "lastCommitDate": "2022-08-09T22:40:12Z",
+    "topContributors": [
+      {
+        "contributions": 20,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 2,
+        "login": "ShahimEssaid"
+      },
+      {
+        "contributions": 1,
+        "login": "joeflack4"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-10-24T18:23:17Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "QC",
+    "updatedAt": "2025-03-11T19:28:38Z",
+    "url": "https://github.com/monarch-initiative/QC",
+    "firstCommitDate": "2021-11-09T18:26:01Z",
+    "lastCommitDate": "2021-11-09T18:26:01Z",
+    "topContributors": [
+      {
+        "contributions": 31,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 17,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 11,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 7,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 1,
+        "login": "nlharris"
+      },
+      {
+        "contributions": 1,
+        "login": "TomConlin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-05-29T17:50:08Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Utilities for generating tsv downloads, release diffs, and other reports from scigraph and solr",
+    "name": "release-utils",
+    "updatedAt": "2021-12-17T17:37:19Z",
+    "url": "https://github.com/monarch-initiative/release-utils",
+    "firstCommitDate": "2021-07-01T13:40:10Z",
+    "lastCommitDate": "2021-07-01T13:40:10Z",
+    "topContributors": [
+      {
+        "contributions": 39,
+        "login": "kshefchek"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-01-30T11:13:02Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Library for generating simulated rare-disease VCF and associated phenotypes",
+    "name": "replicant",
+    "updatedAt": "2019-01-30T12:12:45Z",
+    "url": "https://github.com/monarch-initiative/replicant",
+    "firstCommitDate": "2019-01-30T12:05:26Z",
+    "lastCommitDate": "2019-01-30T12:05:26Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "julesjacobsen"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-10-15T00:06:34Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "ribbon_experiment",
+    "updatedAt": "2021-11-15T12:51:22Z",
+    "url": "https://github.com/monarch-initiative/ribbon_experiment",
+    "firstCommitDate": "2021-11-15T12:51:11Z",
+    "lastCommitDate": "2021-11-15T12:51:11Z",
+    "topContributors": [
+      {
+        "contributions": 15,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 3,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 3,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-03-23T21:50:25Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "rppr_stats",
+    "updatedAt": "2025-04-04T17:39:17Z",
+    "url": "https://github.com/monarch-initiative/rppr_stats",
+    "firstCommitDate": "2025-01-25T23:21:06Z",
+    "lastCommitDate": "2025-01-25T23:21:06Z",
+    "topContributors": [
+      {
+        "contributions": 18,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 1,
+        "login": "hrshdhgd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-08-25T21:34:29Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Build two Docker images with the monarch configs. Uses master HEAD from the SciGraph github repo.",
+    "name": "SciGraph-docker-monarch-data",
+    "updatedAt": "2023-01-28T17:15:01Z",
+    "url": "https://github.com/monarch-initiative/SciGraph-docker-monarch-data",
+    "firstCommitDate": "2019-09-13T21:59:35Z",
+    "lastCommitDate": "2019-09-13T21:59:35Z",
+    "topContributors": [
+      {
+        "contributions": 60,
+        "login": "jnguyenx"
+      },
+      {
+        "contributions": 51,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 3,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "mbrush"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-01-12T22:18:28Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "SciGraph-docker-monarch-ontology",
+    "updatedAt": "2023-01-28T17:15:02Z",
+    "url": "https://github.com/monarch-initiative/SciGraph-docker-monarch-ontology",
+    "firstCommitDate": "2019-09-13T21:57:59Z",
+    "lastCommitDate": "2019-09-13T21:57:59Z",
+    "topContributors": [
+      {
+        "contributions": 30,
+        "login": "jnguyenx"
+      },
+      {
+        "contributions": 19,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-04-20T11:18:36Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Docker image for SciGraph ncats instance",
+    "name": "SciGraph-docker-ncats",
+    "updatedAt": "2017-04-20T20:26:02Z",
+    "url": "https://github.com/monarch-initiative/SciGraph-docker-ncats",
+    "firstCommitDate": "2017-04-20T13:50:43Z",
+    "lastCommitDate": "2017-04-20T13:50:43Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "jnguyenx"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-05-10T02:54:16Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "SciGraph docker image and monarch specific configurations",
+    "name": "scigraph-docker",
+    "updatedAt": "2021-12-17T18:25:45Z",
+    "url": "https://github.com/monarch-initiative/scigraph-docker",
+    "firstCommitDate": "2021-12-17T18:25:42Z",
+    "lastCommitDate": "2021-12-17T18:25:42Z",
+    "topContributors": [
+      {
+        "contributions": 48,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 2,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 2,
+        "login": "TomConlin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2014-07-01T21:57:41Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "OwlSim on SciGraph",
+    "name": "SciGraph-Sim",
+    "updatedAt": "2023-01-28T18:45:56Z",
+    "url": "https://github.com/monarch-initiative/SciGraph-Sim",
+    "firstCommitDate": "2014-09-30T22:19:33Z",
+    "lastCommitDate": "2014-09-30T22:19:33Z",
+    "topContributors": [
+      {
+        "contributions": 38,
+        "login": "CheeseLord"
+      },
+      {
+        "contributions": 14,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 2,
+        "login": "ccondit"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-08-04T17:10:50Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Gene and disease prioritization via semsimian algorithm wrapped around phenio.db + monarch-kg",
+    "name": "semphen",
+    "updatedAt": "2025-08-19T11:41:20Z",
+    "url": "https://github.com/monarch-initiative/semphen",
+    "firstCommitDate": "2025-08-04T23:39:38Z",
+    "lastCommitDate": "2025-08-04T23:39:38Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "AO33"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-10-04T21:36:32Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Rust web server for Semsimian - a semantic similarity implementation",
+    "name": "semsimian-server",
+    "updatedAt": "2025-09-12T17:47:07Z",
+    "url": "https://github.com/monarch-initiative/semsimian-server",
+    "firstCommitDate": "2025-09-12T17:47:03Z",
+    "lastCommitDate": "2025-09-12T17:47:03Z",
+    "topContributors": [
+      {
+        "contributions": 42,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 14,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 13,
+        "login": "glass-ships"
+      },
+      {
+        "contributions": 3,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 2,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-02-03T18:04:12Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Simple rust implementation of semantic similarity",
+    "name": "semsimian",
+    "updatedAt": "2025-06-24T14:12:06Z",
+    "url": "https://github.com/monarch-initiative/semsimian",
+    "firstCommitDate": "2024-08-26T16:57:55Z",
+    "lastCommitDate": "2024-08-26T16:57:55Z",
+    "topContributors": [
+      {
+        "contributions": 614,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 113,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 15,
+        "login": "iQuxLE"
+      },
+      {
+        "contributions": 11,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 2,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-03-10T21:14:04Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Ontology for representing scientific evidence and provenance information",
+    "name": "SEPIO-ontology",
+    "updatedAt": "2025-06-16T12:23:17Z",
+    "url": "https://github.com/monarch-initiative/SEPIO-ontology",
+    "firstCommitDate": "2024-07-26T14:08:10Z",
+    "lastCommitDate": "2024-07-26T14:08:10Z",
+    "topContributors": [
+      {
+        "contributions": 261,
+        "login": "mbrush"
+      },
+      {
+        "contributions": 25,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 3,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 2,
+        "login": "tnavatar"
+      },
+      {
+        "contributions": 1,
+        "login": "jhpoelen"
+      },
+      {
+        "contributions": 1,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 1,
+        "login": "pfabry"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-11-06T00:27:48Z",
+    "defaultBranchRef": {
+      "name": "development"
+    },
+    "description": "\"Silent companion\" library for performing genome arithmetics with genes and transcripts using Svart",
+    "name": "SilentGenes",
+    "updatedAt": "2022-02-07T13:15:42Z",
+    "url": "https://github.com/monarch-initiative/SilentGenes",
+    "firstCommitDate": "2023-04-11T01:02:52Z",
+    "lastCommitDate": "2023-04-11T01:02:52Z",
+    "topContributors": [
+      {
+        "contributions": 38,
+        "login": "ielis"
+      },
+      {
+        "contributions": 4,
+        "login": "iimpulse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-01-22T18:48:28Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "SLDBGen",
+    "updatedAt": "2025-02-24T12:11:38Z",
+    "url": "https://github.com/monarch-initiative/SLDBGen",
+    "firstCommitDate": "2022-05-18T16:40:42Z",
+    "lastCommitDate": "2022-05-18T16:40:42Z",
+    "topContributors": [
+      {
+        "contributions": 157,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 25,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 20,
+        "login": "LeoPompidou"
+      },
+      {
+        "contributions": 13,
+        "login": "deepakunni3"
+      },
+      {
+        "contributions": 5,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 2,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-01-13T19:09:25Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "R library and scripts to process sleep data for clustering",
+    "name": "sleep-apnea-clustering",
+    "updatedAt": "2023-10-04T21:01:41Z",
+    "url": "https://github.com/monarch-initiative/sleep-apnea-clustering",
+    "firstCommitDate": "2017-10-10T00:27:19Z",
+    "lastCommitDate": "2017-10-10T00:27:19Z",
+    "topContributors": [
+      {
+        "contributions": 122,
+        "login": "jasonli1717"
+      },
+      {
+        "contributions": 1,
+        "login": "kshefchek"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-11-04T16:31:41Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Docker image to create the solr index for the feature-location core.",
+    "name": "solr-docker-monarch-feature-location",
+    "updatedAt": "2020-02-04T00:48:37Z",
+    "url": "https://github.com/monarch-initiative/solr-docker-monarch-feature-location",
+    "firstCommitDate": "2020-02-04T00:48:34Z",
+    "lastCommitDate": "2020-02-04T00:48:34Z",
+    "topContributors": [
+      {
+        "contributions": 11,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 7,
+        "login": "jnguyenx"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-11-03T00:00:00Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Docker image to create the solr index for the golr core.",
+    "name": "solr-docker-monarch-golr",
+    "updatedAt": "2021-10-10T14:57:02Z",
+    "url": "https://github.com/monarch-initiative/solr-docker-monarch-golr",
+    "firstCommitDate": "2021-10-10T14:56:59Z",
+    "lastCommitDate": "2021-10-10T14:56:59Z",
+    "topContributors": [
+      {
+        "contributions": 61,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 16,
+        "login": "jnguyenx"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-11-02T22:53:25Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Docker image to create the solr index for the search core.",
+    "name": "solr-docker-monarch-search",
+    "updatedAt": "2020-11-21T20:33:35Z",
+    "url": "https://github.com/monarch-initiative/solr-docker-monarch-search",
+    "firstCommitDate": "2020-11-21T20:33:32Z",
+    "lastCommitDate": "2020-11-21T20:33:32Z",
+    "topContributors": [
+      {
+        "contributions": 19,
+        "login": "kshefchek"
+      },
+      {
+        "contributions": 11,
+        "login": "jnguyenx"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-09-29T19:15:06Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Repository of analyses of data sources",
+    "name": "source-data-analysis",
+    "updatedAt": "2024-08-28T22:34:42Z",
+    "url": "https://github.com/monarch-initiative/source-data-analysis",
+    "firstCommitDate": "2024-08-13T19:32:04Z",
+    "lastCommitDate": "2024-08-13T19:32:04Z",
+    "topContributors": [
+      {
+        "contributions": 9,
+        "login": "madanucd"
+      },
+      {
+        "contributions": 1,
+        "login": "putmantime"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-10-15T13:16:04Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Interpretable prioritization of splice variants in diagnostic next-generation sequencing",
+    "name": "Squirls",
+    "updatedAt": "2025-07-23T14:47:38Z",
+    "url": "https://github.com/monarch-initiative/Squirls",
+    "firstCommitDate": "2023-05-05T20:19:01Z",
+    "lastCommitDate": "2023-05-05T20:19:01Z",
+    "topContributors": [
+      {
+        "contributions": 60,
+        "login": "ielis"
+      },
+      {
+        "contributions": 1,
+        "login": "iimpulse"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-05-11T08:40:31Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "SSSOM API",
+    "name": "sssom-api",
+    "updatedAt": "2023-05-11T08:40:32Z",
+    "url": "https://github.com/monarch-initiative/sssom-api",
+    "firstCommitDate": "2023-05-11T08:42:03Z",
+    "lastCommitDate": "2023-05-11T08:42:03Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-09-23T19:11:25Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Modular ingest of STRING PPIs",
+    "name": "string_modular",
+    "updatedAt": "2024-10-28T18:36:56Z",
+    "url": "https://github.com/monarch-initiative/string_modular",
+    "firstCommitDate": "2024-10-28T18:36:48Z",
+    "lastCommitDate": "2024-10-28T18:36:48Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-07-12T16:54:49Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Efficient and accurate pathogenicity prediction for coding and regulatory structural variants in long-read genome sequencing",
+    "name": "SvAnna",
+    "updatedAt": "2025-09-19T16:35:11Z",
+    "url": "https://github.com/monarch-initiative/SvAnna",
+    "firstCommitDate": "2023-11-21T19:41:40Z",
+    "lastCommitDate": "2023-11-21T19:41:40Z",
+    "topContributors": [
+      {
+        "contributions": 238,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 70,
+        "login": "ielis"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-09-07T20:06:57Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "synonymizer",
+    "updatedAt": "2022-07-19T15:32:22Z",
+    "url": "https://github.com/monarch-initiative/synonymizer",
+    "firstCommitDate": "2022-06-29T17:47:35Z",
+    "lastCommitDate": "2022-06-29T17:47:35Z",
+    "topContributors": [
+      {
+        "contributions": 63,
+        "login": "hrshdhgd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-04-26T17:44:50Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "talisman-paper",
+    "updatedAt": "2025-09-04T01:11:53Z",
+    "url": "https://github.com/monarch-initiative/talisman-paper",
+    "firstCommitDate": "2024-01-31T03:27:37Z",
+    "lastCommitDate": "2024-01-31T03:27:37Z",
+    "topContributors": [
+      {
+        "contributions": 43,
+        "login": "realmarcin"
+      },
+      {
+        "contributions": 24,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-01-04T18:48:25Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "LLM-based gene function enrichment tool",
+    "name": "talisman",
+    "updatedAt": "2025-09-11T14:34:22Z",
+    "url": "https://github.com/monarch-initiative/talisman",
+    "firstCommitDate": "2024-06-10T01:20:57Z",
+    "lastCommitDate": "2024-06-10T01:20:57Z",
+    "topContributors": [
+      {
+        "contributions": 640,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 199,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 46,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 46,
+        "login": "AgranyaGitHub"
+      },
+      {
+        "contributions": 24,
+        "login": "realmarcin"
+      },
+      {
+        "contributions": 16,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 6,
+        "login": "diatomsRcool"
+      },
+      {
+        "contributions": 3,
+        "login": "nlharris"
+      },
+      {
+        "contributions": 3,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 2,
+        "login": "balhoff"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-09-07T22:33:53Z",
+    "defaultBranchRef": {
+      "name": ""
+    },
+    "description": "this will never be used outside testing",
+    "name": "test_externalIntegration_test",
+    "updatedAt": "2021-09-07T22:33:53Z",
+    "url": "https://github.com/monarch-initiative/test_externalIntegration_test",
+    "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+    "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+  },
+  {
+    "createdAt": "2023-07-13T15:38:37Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "UMLS ingest for mappings",
+    "name": "umls-ingest",
+    "updatedAt": "2024-11-02T15:47:08Z",
+    "url": "https://github.com/monarch-initiative/umls-ingest",
+    "firstCommitDate": "2023-11-30T02:06:00Z",
+    "lastCommitDate": "2023-11-30T02:06:00Z",
+    "topContributors": [
+      {
+        "contributions": 47,
+        "login": "hrshdhgd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-03-12T20:59:16Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "upheno-cross-species-ingest",
+    "updatedAt": "2025-03-19T21:23:21Z",
+    "url": "https://github.com/monarch-initiative/upheno-cross-species-ingest",
+    "firstCommitDate": "2025-03-19T21:23:17Z",
+    "lastCommitDate": "2025-03-19T21:23:17Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "DnlRKorn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-01-08T18:15:48Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Repo to manage some simple conversions of post composed phenotypes into dospd patterns.",
+    "name": "uphenotizer",
+    "updatedAt": "2024-08-22T15:07:10Z",
+    "url": "https://github.com/monarch-initiative/uphenotizer",
+    "firstCommitDate": "2024-03-13T18:56:44Z",
+    "lastCommitDate": "2024-03-13T18:56:44Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 3,
+        "login": "kevinschaper"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-06-17T16:21:38Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "uri-expression-language",
+    "updatedAt": "2025-08-19T04:31:44Z",
+    "url": "https://github.com/monarch-initiative/uri-expression-language",
+    "firstCommitDate": "2023-11-10T12:26:44Z",
+    "lastCommitDate": "2023-11-10T12:26:44Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-12-10T17:36:40Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "vertebrate-breed-ontology",
+    "updatedAt": "2025-09-22T20:01:49Z",
+    "url": "https://github.com/monarch-initiative/vertebrate-breed-ontology",
+    "firstCommitDate": "2025-09-22T20:01:36Z",
+    "lastCommitDate": "2025-09-22T20:01:36Z",
+    "topContributors": [
+      {
+        "contributions": 221,
+        "login": "sabrinatoro"
+      },
+      {
+        "contributions": 61,
+        "login": "katiermullen"
+      },
+      {
+        "contributions": 36,
+        "login": "marius-mather"
+      },
+      {
+        "contributions": 31,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 14,
+        "login": "nicolevasilevsky"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-12-07T14:07:27Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A repo to collect and produce video tutorials relevant to the Monarch Initiative stack",
+    "name": "video-tutorials",
+    "updatedAt": "2020-12-07T14:19:59Z",
+    "url": "https://github.com/monarch-initiative/video-tutorials",
+    "firstCommitDate": "2020-12-07T14:19:56Z",
+    "lastCommitDate": "2020-12-07T14:19:56Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-07-27T01:03:42Z",
+    "defaultBranchRef": {
+      "name": "develop"
+    },
+    "description": "The Monarch HIPPO: Deriving insight from the medical literature by fuzzy semantic searches over diseases and phenotypes.",
+    "name": "web-hippo",
+    "updatedAt": "2018-10-19T19:17:22Z",
+    "url": "https://github.com/monarch-initiative/web-hippo",
+    "firstCommitDate": "2018-09-27T05:37:08Z",
+    "lastCommitDate": "2018-09-27T05:37:08Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "li-plaintext"
+      },
+      {
+        "contributions": 3,
+        "login": "fastmuaz"
+      },
+      {
+        "contributions": 1,
+        "login": "cmcnamara87"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-08-16T01:05:02Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Phenopacket generator",
+    "name": "web-phenopacket-generator",
+    "updatedAt": "2018-08-29T03:53:54Z",
+    "url": "https://github.com/monarch-initiative/web-phenopacket-generator",
+    "firstCommitDate": "2018-08-29T03:53:53Z",
+    "lastCommitDate": "2018-08-29T03:53:53Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "jmcmurry"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-09-01T15:15:47Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Yet Another Clinical Trials Parser",
+    "name": "yactp",
+    "updatedAt": "2025-05-06T20:48:43Z",
+    "url": "https://github.com/monarch-initiative/yactp",
+    "firstCommitDate": "2021-09-24T00:13:52Z",
+    "lastCommitDate": "2021-09-24T00:13:52Z",
+    "topContributors": [
+      {
+        "contributions": 16,
+        "login": "pnrobinson"
+      },
+      {
+        "contributions": 8,
+        "login": "vidarmehr"
+      },
+      {
+        "contributions": 2,
+        "login": "bcoleman96"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-03-11T21:27:59Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A collection of code to archive data from Google Cloud Storage to Zenodo",
+    "name": "zenodo-archive",
+    "updatedAt": "2023-11-20T19:58:44Z",
+    "url": "https://github.com/monarch-initiative/zenodo-archive",
+    "firstCommitDate": "2022-04-12T23:38:13Z",
+    "lastCommitDate": "2022-04-12T23:38:13Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2024-05-23T23:57:21Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "zfin-genotype-to-phenotype-ingest",
+    "updatedAt": "2024-09-05T00:22:09Z",
+    "url": "https://github.com/monarch-initiative/zfin-genotype-to-phenotype-ingest",
+    "firstCommitDate": "2024-09-05T00:22:03Z",
+    "lastCommitDate": "2024-09-05T00:22:03Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "kevinschaper"
+      },
+      {
+        "contributions": 3,
+        "login": "AO33"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-12-11T20:13:50Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "zfin-orthology-ingest",
+    "updatedAt": "2024-12-16T17:32:41Z",
+    "url": "https://github.com/monarch-initiative/zfin-orthology-ingest",
+    "firstCommitDate": "2024-12-16T17:32:32Z",
+    "lastCommitDate": "2024-12-16T17:32:32Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "kevinschaper"
+      }
+    ]
+  }
+]

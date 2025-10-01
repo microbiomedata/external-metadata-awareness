@@ -1,0 +1,26 @@
+{
+  "createdAt": "2023-01-05T23:17:02Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Dockerized Managed Neo4j Database for Monarch",
+  "name": "monarch-neo4j",
+  "updatedAt": "2025-01-29T15:24:51Z",
+  "url": "https://github.com/monarch-initiative/monarch-neo4j",
+  "firstCommitDate": "2023-12-19T22:06:41Z",
+  "lastCommitDate": "2023-12-19T22:06:41Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 3,
+      "login": "falquaddoomi"
+    },
+    {
+      "contributions": 3,
+      "login": "RichardBruskiewich"
+    }
+  ]
+}

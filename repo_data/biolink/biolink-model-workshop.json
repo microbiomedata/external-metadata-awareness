@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-12-01T19:48:08Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Biolink Model Workshop at Biocuration 2020",
+  "name": "biolink-model-workshop",
+  "updatedAt": "2020-12-04T05:18:02Z",
+  "url": "https://github.com/biolink/biolink-model-workshop",
+  "firstCommitDate": "2020-12-04T05:17:59Z",
+  "lastCommitDate": "2020-12-04T05:17:59Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "deepakunni3"
+    }
+  ]
+}

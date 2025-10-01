@@ -1,0 +1,38 @@
+{
+  "createdAt": "2022-11-13T12:53:19Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Most simple DIY webapp to bulk follow palaeogenomicist accounts on Mastodon. Originally by David Adler, Thomas Haase & Hendrik Erz for sociologist accounts.",
+  "name": "Mastodon-Palaeogenomicists",
+  "updatedAt": "2022-11-13T13:36:01Z",
+  "url": "https://github.com/jfy133/Mastodon-Palaeogenomicists",
+  "firstCommitDate": "2023-08-10T11:31:24Z",
+  "lastCommitDate": "2023-08-10T11:31:24Z",
+  "topContributors": [
+    {
+      "contributions": 134,
+      "login": "trutzig89182"
+    },
+    {
+      "contributions": 28,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 15,
+      "login": "thhaase"
+    },
+    {
+      "contributions": 9,
+      "login": "altinisik"
+    },
+    {
+      "contributions": 3,
+      "login": "nathanlesage"
+    },
+    {
+      "contributions": 1,
+      "login": "danwchan"
+    }
+  ]
+}

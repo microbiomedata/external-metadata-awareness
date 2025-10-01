@@ -1,0 +1,30 @@
+{
+  "createdAt": "2019-10-16T02:01:31Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "for operational functions",
+  "name": "operations",
+  "updatedAt": "2022-10-05T22:16:34Z",
+  "url": "https://github.com/cancerDHC/operations",
+  "firstCommitDate": "2021-07-20T21:16:34Z",
+  "lastCommitDate": "2021-07-20T21:16:34Z",
+  "topContributors": [
+    {
+      "contributions": 28,
+      "login": "monicacecilia"
+    },
+    {
+      "contributions": 4,
+      "login": "nicolevasilevsky"
+    },
+    {
+      "contributions": 1,
+      "login": "jmcmurry"
+    },
+    {
+      "contributions": 1,
+      "login": "keblumhardt"
+    }
+  ]
+}

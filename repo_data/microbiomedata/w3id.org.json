@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-04-21T16:30:23Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "w3id purl redirections for NMDC schema files and per-term help pages",
+  "name": "w3id.org",
+  "updatedAt": "2025-09-25T20:55:54Z",
+  "url": "https://github.com/microbiomedata/w3id.org",
+  "firstCommitDate": "2025-09-25T19:46:41Z",
+  "lastCommitDate": "2025-09-25T19:46:41Z",
+  "topContributors": [
+    {
+      "contributions": 3326,
+      "login": "dgarijo"
+    },
+    {
+      "contributions": 1624,
+      "login": "davidlehn"
+    },
+    {
+      "contributions": 157,
+      "login": "rapw3k"
+    },
+    {
+      "contributions": 155,
+      "login": "jhaag75"
+    },
+    {
+      "contributions": 110,
+      "login": "tkuhn"
+    },
+    {
+      "contributions": 108,
+      "login": "msporny"
+    },
+    {
+      "contributions": 104,
+      "login": "markwilkinson"
+    },
+    {
+      "contributions": 82,
+      "login": "luigi-asprino"
+    },
+    {
+      "contributions": 81,
+      "login": "pedropaulofb"
+    },
+    {
+      "contributions": 77,
+      "login": "essepuntato"
+    }
+  ]
+}

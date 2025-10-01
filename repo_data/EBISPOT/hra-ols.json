@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-07-29T10:03:58Z",
+  "defaultBranchRef": {
+    "name": "dev"
+  },
+  "description": "",
+  "name": "hra-ols",
+  "updatedAt": "2024-08-19T15:04:02Z",
+  "url": "https://github.com/EBISPOT/hra-ols",
+  "firstCommitDate": "2024-08-19T15:03:51Z",
+  "lastCommitDate": "2024-08-19T15:03:51Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "jamesamcl"
+    }
+  ]
+}

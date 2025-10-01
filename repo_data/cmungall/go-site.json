@@ -1,0 +1,22 @@
+{
+  "createdAt": "2015-02-11T03:10:55Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A collection of metadata, tools, and files associated with the Gene Ontology public web presence.",
+  "name": "go-site",
+  "updatedAt": "2015-02-11T03:40:14Z",
+  "url": "https://github.com/cmungall/go-site",
+  "firstCommitDate": "2015-02-11T03:40:07Z",
+  "lastCommitDate": "2015-02-11T03:40:07Z",
+  "topContributors": [
+    {
+      "contributions": 70,
+      "login": "kltm"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

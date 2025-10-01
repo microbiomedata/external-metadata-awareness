@@ -1,0 +1,22 @@
+{
+  "createdAt": "2019-03-25T15:12:32Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Spreadsheet formatted MIxS standard template",
+  "name": "mixs-legacy",
+  "updatedAt": "2023-03-22T02:43:01Z",
+  "url": "https://github.com/GenomicsStandardsConsortium/mixs-legacy",
+  "firstCommitDate": "2022-02-28T02:40:05Z",
+  "lastCommitDate": "2022-02-28T02:40:05Z",
+  "topContributors": [
+    {
+      "contributions": 19,
+      "login": "ramonawalls"
+    },
+    {
+      "contributions": 1,
+      "login": "folker"
+    }
+  ]
+}

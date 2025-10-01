@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-09-07T17:06:50Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "End-to-end metaG workflow (WIP)",
+  "name": "metaG",
+  "updatedAt": "2023-04-20T15:45:50Z",
+  "url": "https://github.com/microbiomedata/metaG",
+  "firstCommitDate": "2021-11-02T18:06:30Z",
+  "lastCommitDate": "2021-11-02T18:06:30Z",
+  "topContributors": [
+    {
+      "contributions": 9,
+      "login": "scanon"
+    }
+  ]
+}

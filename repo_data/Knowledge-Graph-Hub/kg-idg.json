@@ -1,0 +1,30 @@
+{
+  "createdAt": "2021-04-22T22:27:40Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A Knowledge Graph to Illuminate the Druggable Genome",
+  "name": "kg-idg",
+  "updatedAt": "2024-05-11T12:29:05Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/kg-idg",
+  "firstCommitDate": "2023-05-30T20:00:03Z",
+  "lastCommitDate": "2023-05-30T20:00:03Z",
+  "topContributors": [
+    {
+      "contributions": 521,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 3,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 1,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 1,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

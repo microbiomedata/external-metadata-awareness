@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-03-18T20:58:19Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A minimal ontology for demonstrating TBox (defining terminology, esp classes and object properties) and ABox (making instances of those classes and forming relations between the instances)",
+  "name": "abox_tbox_examples",
+  "updatedAt": "2024-08-16T16:33:00Z",
+  "url": "https://github.com/turbomam/abox_tbox_examples",
+  "firstCommitDate": "2022-03-18T21:00:07Z",
+  "lastCommitDate": "2022-03-18T21:00:07Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "turbomam"
+    }
+  ]
+}

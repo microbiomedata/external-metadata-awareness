@@ -1,0 +1,54 @@
+{
+  "createdAt": "2024-09-18T13:22:02Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "The GSC25 meeting page",
+  "name": "GSC25-Cambridge",
+  "updatedAt": "2025-07-11T16:12:00Z",
+  "url": "https://github.com/GenomicsStandardsConsortium/GSC25-Cambridge",
+  "firstCommitDate": "2025-07-11T16:11:54Z",
+  "lastCommitDate": "2025-07-11T16:11:54Z",
+  "topContributors": [
+    {
+      "contributions": 740,
+      "login": "daattali"
+    },
+    {
+      "contributions": 84,
+      "login": "only1chunts"
+    },
+    {
+      "contributions": 15,
+      "login": "OCram85"
+    },
+    {
+      "contributions": 15,
+      "login": "epwalsh"
+    },
+    {
+      "contributions": 13,
+      "login": "VincentTam"
+    },
+    {
+      "contributions": 12,
+      "login": "lexicalunit"
+    },
+    {
+      "contributions": 7,
+      "login": "gpotter2"
+    },
+    {
+      "contributions": 7,
+      "login": "eugenius1"
+    },
+    {
+      "contributions": 5,
+      "login": "abelcheung"
+    },
+    {
+      "contributions": 5,
+      "login": "jennydaman"
+    }
+  ]
+}

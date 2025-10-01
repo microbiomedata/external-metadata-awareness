@@ -1,0 +1,34 @@
+{
+  "createdAt": "2015-06-16T23:11:00Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "migrates tickets to GH from SF",
+  "name": "gosf2github",
+  "updatedAt": "2024-12-30T07:06:00Z",
+  "url": "https://github.com/cmungall/gosf2github",
+  "firstCommitDate": "2018-08-03T05:30:19Z",
+  "lastCommitDate": "2018-08-03T05:30:19Z",
+  "topContributors": [
+    {
+      "contributions": 29,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 4,
+      "login": "scop"
+    },
+    {
+      "contributions": 1,
+      "login": "mangstadt"
+    },
+    {
+      "contributions": 1,
+      "login": "oflebbe"
+    },
+    {
+      "contributions": 1,
+      "login": "nickl-"
+    }
+  ]
+}

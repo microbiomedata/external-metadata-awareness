@@ -1,0 +1,190 @@
+[
+  {
+    "createdAt": "2025-09-16T19:54:29Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "code for extracting AUTO terms from ontoGPT output",
+    "name": "auto-term-catalog",
+    "updatedAt": "2025-09-24T06:16:40Z",
+    "url": "https://github.com/CultureBotAI/auto-term-catalog",
+    "firstCommitDate": "2025-09-24T06:12:25Z",
+    "lastCommitDate": "2025-09-24T06:12:25Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "lukewangCS121"
+      },
+      {
+        "contributions": 1,
+        "login": "realmarcin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-09-24T00:13:40Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "CMM-AI",
+    "updatedAt": "2025-09-24T06:09:59Z",
+    "url": "https://github.com/CultureBotAI/CMM-AI",
+    "firstCommitDate": "2025-09-24T06:07:35Z",
+    "lastCommitDate": "2025-09-24T06:07:35Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "realmarcin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-09-25T06:40:30Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "official website of the CultureBotAI project",
+    "name": "CultureBotAI.github.io",
+    "updatedAt": "2025-09-30T03:44:48Z",
+    "url": "https://github.com/CultureBotAI/CultureBotAI.github.io",
+    "firstCommitDate": "2025-09-30T03:44:38Z",
+    "lastCommitDate": "2025-09-30T03:44:38Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "realmarcin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-05-03T20:24:05Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "eggnog_runner",
+    "updatedAt": "2025-09-24T06:17:17Z",
+    "url": "https://github.com/CultureBotAI/eggnog_runner",
+    "firstCommitDate": "2025-05-03T20:45:35Z",
+    "lastCommitDate": "2025-05-03T20:45:35Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "realmarcin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-04-22T01:48:04Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "eggnogtable",
+    "updatedAt": "2025-09-24T06:16:50Z",
+    "url": "https://github.com/CultureBotAI/eggnogtable",
+    "firstCommitDate": "2025-05-02T04:33:39Z",
+    "lastCommitDate": "2025-05-02T04:33:39Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "realmarcin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-09-03T20:51:32Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "package for preparing KGs for AI model training",
+    "name": "kg-ai-prep",
+    "updatedAt": "2025-09-24T06:16:19Z",
+    "url": "https://github.com/CultureBotAI/kg-ai-prep",
+    "firstCommitDate": "2025-09-07T06:36:24Z",
+    "lastCommitDate": "2025-09-07T06:36:24Z",
+    "topContributors": [
+      {
+        "contributions": 9,
+        "login": "realmarcin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-01-12T03:48:15Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "kg-microbe-projects",
+    "updatedAt": "2025-09-24T06:18:23Z",
+    "url": "https://github.com/CultureBotAI/kg-microbe-projects",
+    "firstCommitDate": "2025-09-13T00:43:00Z",
+    "lastCommitDate": "2025-09-13T00:43:00Z",
+    "topContributors": [
+      {
+        "contributions": 545,
+        "login": "realmarcin"
+      },
+      {
+        "contributions": 2,
+        "login": "bsantan"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-02-04T01:51:49Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "MATE-LLM",
+    "updatedAt": "2025-09-24T06:17:48Z",
+    "url": "https://github.com/CultureBotAI/MATE-LLM",
+    "firstCommitDate": "2025-04-08T01:51:51Z",
+    "lastCommitDate": "2025-04-08T01:51:51Z",
+    "topContributors": [
+      {
+        "contributions": 11,
+        "login": "realmarcin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-04-12T04:22:39Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "MicroGrowLink",
+    "updatedAt": "2025-09-30T05:20:27Z",
+    "url": "https://github.com/CultureBotAI/MicroGrowLink",
+    "firstCommitDate": "2025-09-30T05:20:22Z",
+    "lastCommitDate": "2025-09-30T05:20:22Z",
+    "topContributors": [
+      {
+        "contributions": 634,
+        "login": "realmarcin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-08-17T01:01:47Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "MicroMediaParam",
+    "updatedAt": "2025-09-25T01:56:51Z",
+    "url": "https://github.com/CultureBotAI/MicroMediaParam",
+    "firstCommitDate": "2025-09-25T01:56:41Z",
+    "lastCommitDate": "2025-09-25T01:56:41Z",
+    "topContributors": [
+      {
+        "contributions": 14,
+        "login": "realmarcin"
+      }
+    ]
+  }
+]

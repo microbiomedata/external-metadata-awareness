@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-03-05T10:38:12Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "scxa_2_cxg",
+  "updatedAt": "2024-09-03T09:45:29Z",
+  "url": "https://github.com/EBISPOT/scxa_2_cxg",
+  "firstCommitDate": "2024-09-03T09:45:16Z",
+  "lastCommitDate": "2024-09-03T09:45:16Z",
+  "topContributors": [
+    {
+      "contributions": 9,
+      "login": "anitacaron"
+    },
+    {
+      "contributions": 2,
+      "login": "jamesamcl"
+    }
+  ]
+}

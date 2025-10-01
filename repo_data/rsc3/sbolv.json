@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-06-29T18:18:54Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The Synthetic Biology Open Language Visual Repository",
+  "name": "sbolv",
+  "updatedAt": "2019-07-15T03:50:54Z",
+  "url": "https://github.com/rsc3/sbolv",
+  "firstCommitDate": "2017-06-29T19:26:49Z",
+  "lastCommitDate": "2017-06-29T19:26:49Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "rsc3"
+    }
+  ]
+}

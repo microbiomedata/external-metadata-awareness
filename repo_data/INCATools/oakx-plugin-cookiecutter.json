@@ -1,0 +1,26 @@
+{
+  "createdAt": "2022-08-31T22:44:36Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "cookiecutter for OAK plugins",
+  "name": "oakx-plugin-cookiecutter",
+  "updatedAt": "2023-01-13T17:20:34Z",
+  "url": "https://github.com/INCATools/oakx-plugin-cookiecutter",
+  "firstCommitDate": "2023-01-11T16:52:41Z",
+  "lastCommitDate": "2023-01-11T16:52:41Z",
+  "topContributors": [
+    {
+      "contributions": 21,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 4,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

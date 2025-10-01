@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-04-28T00:07:48Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Light Source Facility Ontology",
+  "name": "lsfo",
+  "updatedAt": "2025-04-28T02:08:45Z",
+  "url": "https://github.com/cmungall/lsfo",
+  "firstCommitDate": "2025-04-28T02:08:41Z",
+  "lastCommitDate": "2025-04-28T02:08:41Z",
+  "topContributors": [
+    {
+      "contributions": 10,
+      "login": "cmungall"
+    }
+  ]
+}

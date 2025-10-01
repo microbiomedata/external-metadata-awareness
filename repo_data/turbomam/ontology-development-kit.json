@@ -1,0 +1,54 @@
+{
+  "createdAt": "2025-03-13T14:42:56Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Bootstrap an OBO Library ontology",
+  "name": "ontology-development-kit",
+  "updatedAt": "2025-03-13T14:42:56Z",
+  "url": "https://github.com/turbomam/ontology-development-kit",
+  "firstCommitDate": "2025-03-10T16:28:21Z",
+  "lastCommitDate": "2025-03-10T16:28:21Z",
+  "topContributors": [
+    {
+      "contributions": 1401,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 370,
+      "login": "gouttegd"
+    },
+    {
+      "contributions": 197,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 39,
+      "login": "shawntanzk"
+    },
+    {
+      "contributions": 27,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 26,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 15,
+      "login": "anitacaron"
+    },
+    {
+      "contributions": 11,
+      "login": "nicolevasilevsky"
+    },
+    {
+      "contributions": 9,
+      "login": "StroemPhi"
+    },
+    {
+      "contributions": 6,
+      "login": "hrshdhgd"
+    }
+  ]
+}

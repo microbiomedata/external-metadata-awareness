@@ -1,0 +1,30 @@
+{
+  "createdAt": "2020-02-16T10:52:42Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "gwasdepo-template-validator",
+  "updatedAt": "2025-05-19T17:24:07Z",
+  "url": "https://github.com/EBISPOT/gwasdepo-template-validator",
+  "firstCommitDate": "2025-05-19T17:24:00Z",
+  "lastCommitDate": "2025-05-19T17:24:00Z",
+  "topContributors": [
+    {
+      "contributions": 27,
+      "login": "ala-ebi"
+    },
+    {
+      "contributions": 23,
+      "login": "sajo-ebi"
+    },
+    {
+      "contributions": 9,
+      "login": "tudorgroza"
+    },
+    {
+      "contributions": 1,
+      "login": "jstewart-ebi"
+    }
+  ]
+}

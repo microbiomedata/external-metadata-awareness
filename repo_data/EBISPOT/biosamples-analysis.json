@@ -1,0 +1,26 @@
+{
+  "createdAt": "2016-11-08T11:53:23Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Contains python scripts and cypher to read BioSamples info from Solr, store in Neo4J database",
+  "name": "biosamples-analysis",
+  "updatedAt": "2017-08-14T13:51:57Z",
+  "url": "https://github.com/EBISPOT/biosamples-analysis",
+  "firstCommitDate": "2017-01-16T14:41:22Z",
+  "lastCommitDate": "2017-01-16T14:41:22Z",
+  "topContributors": [
+    {
+      "contributions": 84,
+      "login": "afaulconbridge"
+    },
+    {
+      "contributions": 44,
+      "login": "Kerruba"
+    },
+    {
+      "contributions": 7,
+      "login": "tburdett"
+    }
+  ]
+}

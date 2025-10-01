@@ -1,0 +1,26 @@
+{
+  "createdAt": "2017-01-31T00:15:06Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Lightweight CSV/TSV editor that supports autocomplete and is guided by a DOSDP-aware YAML configuration.",
+  "name": "table-editor",
+  "updatedAt": "2023-05-01T15:30:07Z",
+  "url": "https://github.com/INCATools/table-editor",
+  "firstCommitDate": "2021-10-15T16:01:52Z",
+  "lastCommitDate": "2021-10-15T16:01:52Z",
+  "topContributors": [
+    {
+      "contributions": 67,
+      "login": "DoctorBud"
+    },
+    {
+      "contributions": 10,
+      "login": "jmcmurry"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

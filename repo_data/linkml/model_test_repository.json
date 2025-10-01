@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-07-02T17:28:49Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "An empty model repository to test the model configurator software",
+  "name": "model_test_repository",
+  "updatedAt": "2021-07-02T17:29:33Z",
+  "url": "https://github.com/linkml/model_test_repository",
+  "firstCommitDate": "2021-07-02T17:29:30Z",
+  "lastCommitDate": "2021-07-02T17:29:30Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "hsolbrig"
+    }
+  ]
+}

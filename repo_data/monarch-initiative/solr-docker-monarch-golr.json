@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-11-03T00:00:00Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Docker image to create the solr index for the golr core.",
+  "name": "solr-docker-monarch-golr",
+  "updatedAt": "2021-10-10T14:57:02Z",
+  "url": "https://github.com/monarch-initiative/solr-docker-monarch-golr",
+  "firstCommitDate": "2021-10-10T14:56:59Z",
+  "lastCommitDate": "2021-10-10T14:56:59Z",
+  "topContributors": [
+    {
+      "contributions": 61,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 16,
+      "login": "jnguyenx"
+    }
+  ]
+}

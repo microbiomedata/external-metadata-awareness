@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-11-29T06:57:44Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "sculptor",
+  "updatedAt": "2023-03-12T10:29:30Z",
+  "url": "https://github.com/cmungall/sculptor",
+  "firstCommitDate": "2017-11-29T06:57:26Z",
+  "lastCommitDate": "2017-11-29T06:57:26Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

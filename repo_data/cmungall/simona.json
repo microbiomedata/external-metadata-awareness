@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-04-04T22:38:35Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Semantic Similarity in Bio-Ontologies",
+  "name": "simona",
+  "updatedAt": "2024-04-04T22:38:35Z",
+  "url": "https://github.com/cmungall/simona",
+  "firstCommitDate": "2024-04-04T14:22:53Z",
+  "lastCommitDate": "2024-04-04T14:22:53Z",
+  "topContributors": [
+    {
+      "contributions": 80,
+      "login": "jokergoo"
+    }
+  ]
+}

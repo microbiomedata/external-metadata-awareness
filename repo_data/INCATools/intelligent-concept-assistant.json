@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-08-02T18:59:41Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "intelligent-concept-assistant",
+  "updatedAt": "2025-02-04T18:39:09Z",
+  "url": "https://github.com/INCATools/intelligent-concept-assistant",
+  "firstCommitDate": "2016-12-06T18:35:43Z",
+  "lastCommitDate": "2016-12-06T18:35:43Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "cmungall"
+    }
+  ]
+}

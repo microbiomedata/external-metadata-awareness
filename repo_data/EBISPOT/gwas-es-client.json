@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-11-14T17:16:32Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "gwas-es-client",
+  "updatedAt": "2022-11-15T10:35:07Z",
+  "url": "https://github.com/EBISPOT/gwas-es-client",
+  "firstCommitDate": "2022-11-16T16:21:13Z",
+  "lastCommitDate": "2022-11-16T16:21:13Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "ala-ebi"
+    }
+  ]
+}

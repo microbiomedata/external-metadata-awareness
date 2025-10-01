@@ -1,0 +1,38 @@
+{
+  "createdAt": "2020-04-10T22:26:21Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "This repository contains the documentation template for the NDMC workflows. ",
+  "name": "workflow_documentation",
+  "updatedAt": "2025-02-20T20:15:52Z",
+  "url": "https://github.com/microbiomedata/workflow_documentation",
+  "firstCommitDate": "2025-02-20T20:15:48Z",
+  "lastCommitDate": "2025-02-20T20:15:48Z",
+  "topContributors": [
+    {
+      "contributions": 65,
+      "login": "hubin-keio"
+    },
+    {
+      "contributions": 10,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 4,
+      "login": "kwdavenport"
+    },
+    {
+      "contributions": 3,
+      "login": "aclum"
+    },
+    {
+      "contributions": 2,
+      "login": "jagadishcs"
+    },
+    {
+      "contributions": 1,
+      "login": "emileyfadrosh"
+    }
+  ]
+}

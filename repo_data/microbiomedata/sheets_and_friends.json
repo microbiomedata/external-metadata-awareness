@@ -1,0 +1,30 @@
+{
+  "createdAt": "2022-02-11T16:05:19Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Enhance a LinkML model with imported and optionally modified slots",
+  "name": "sheets_and_friends",
+  "updatedAt": "2024-10-07T23:58:04Z",
+  "url": "https://github.com/microbiomedata/sheets_and_friends",
+  "firstCommitDate": "2024-10-07T23:58:00Z",
+  "lastCommitDate": "2024-10-07T23:58:00Z",
+  "topContributors": [
+    {
+      "contributions": 193,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 31,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 13,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 12,
+      "login": "subdavis"
+    }
+  ]
+}

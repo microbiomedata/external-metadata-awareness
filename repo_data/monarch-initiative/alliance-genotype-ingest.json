@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-04-30T23:53:00Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "alliance-genotype-ingest",
+  "updatedAt": "2025-05-20T22:09:24Z",
+  "url": "https://github.com/monarch-initiative/alliance-genotype-ingest",
+  "firstCommitDate": "2025-05-20T22:09:14Z",
+  "lastCommitDate": "2025-05-20T22:09:14Z",
+  "topContributors": [
+    {
+      "contributions": 21,
+      "login": "kevinschaper"
+    }
+  ]
+}

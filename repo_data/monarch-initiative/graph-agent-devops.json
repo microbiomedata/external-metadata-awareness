@@ -1,0 +1,22 @@
+{
+  "createdAt": "2025-03-03T21:18:56Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Working directory for reusable \"simple\" devops for the graph agent",
+  "name": "graph-agent-devops",
+  "updatedAt": "2025-07-29T22:49:31Z",
+  "url": "https://github.com/monarch-initiative/graph-agent-devops",
+  "firstCommitDate": "2025-07-29T22:49:28Z",
+  "lastCommitDate": "2025-07-29T22:49:28Z",
+  "topContributors": [
+    {
+      "contributions": 62,
+      "login": "kltm"
+    },
+    {
+      "contributions": 1,
+      "login": "justaddcoffee"
+    }
+  ]
+}

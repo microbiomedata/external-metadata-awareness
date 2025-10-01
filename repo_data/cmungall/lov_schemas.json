@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-01-27T01:52:21Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Selected LOV schemas converted to prolog",
+  "name": "lov_schemas",
+  "updatedAt": "2023-03-12T10:29:28Z",
+  "url": "https://github.com/cmungall/lov_schemas",
+  "firstCommitDate": "2018-01-23T02:56:43Z",
+  "lastCommitDate": "2018-01-23T02:56:43Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

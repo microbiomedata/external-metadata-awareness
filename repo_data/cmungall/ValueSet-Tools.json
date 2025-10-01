@@ -1,0 +1,26 @@
+{
+  "createdAt": "2022-02-10T18:43:35Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Various converters to convert value sets from CSV to JSON, etc.",
+  "name": "ValueSet-Tools",
+  "updatedAt": "2022-01-31T20:10:03Z",
+  "url": "https://github.com/cmungall/ValueSet-Tools",
+  "firstCommitDate": "2022-02-10T17:57:20Z",
+  "lastCommitDate": "2022-02-10T17:57:20Z",
+  "topContributors": [
+    {
+      "contributions": 73,
+      "login": "joeflack4"
+    },
+    {
+      "contributions": 36,
+      "login": "stephanieshong"
+    },
+    {
+      "contributions": 14,
+      "login": "Sigfried"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-08-10T13:02:04Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A sandbox for NMDC team members to hack the schema",
+  "name": "schema_hackathon",
+  "updatedAt": "2024-08-13T00:37:08Z",
+  "url": "https://github.com/microbiomedata/schema_hackathon",
+  "firstCommitDate": "2022-09-07T16:07:31Z",
+  "lastCommitDate": "2022-09-07T16:07:31Z",
+  "topContributors": [
+    {
+      "contributions": 13,
+      "login": "turbomam"
+    }
+  ]
+}

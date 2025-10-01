@@ -1,0 +1,54 @@
+{
+  "createdAt": "2020-02-04T14:14:04Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Data portal client and server for NMDC.",
+  "name": "nmdc-server",
+  "updatedAt": "2025-09-25T21:11:57Z",
+  "url": "https://github.com/microbiomedata/nmdc-server",
+  "firstCommitDate": "2025-09-25T21:11:53Z",
+  "lastCommitDate": "2025-09-25T21:11:53Z",
+  "topContributors": [
+    {
+      "contributions": 833,
+      "login": "naglepuff"
+    },
+    {
+      "contributions": 470,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 416,
+      "login": "jbeezley"
+    },
+    {
+      "contributions": 272,
+      "login": "marySalvi"
+    },
+    {
+      "contributions": 215,
+      "login": "subdavis"
+    },
+    {
+      "contributions": 202,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 90,
+      "login": "mcovalt"
+    },
+    {
+      "contributions": 68,
+      "login": "cristina-stonepedraza"
+    },
+    {
+      "contributions": 66,
+      "login": "zachmullen"
+    },
+    {
+      "contributions": 50,
+      "login": "jeffbaumes"
+    }
+  ]
+}

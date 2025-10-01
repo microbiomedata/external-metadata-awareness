@@ -1,0 +1,34 @@
+{
+  "createdAt": "2021-04-06T22:36:55Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "This repository is intended to act as a store of example data files from across the NCI Cancer Research Data Commons (CRDC) nodes in a number of formats.",
+  "name": "example-data",
+  "updatedAt": "2022-01-07T22:13:38Z",
+  "url": "https://github.com/cancerDHC/example-data",
+  "firstCommitDate": "2022-01-07T22:13:31Z",
+  "lastCommitDate": "2022-01-07T22:13:31Z",
+  "topContributors": [
+    {
+      "contributions": 192,
+      "login": "gaurav"
+    },
+    {
+      "contributions": 5,
+      "login": "jooho-lee-kim"
+    },
+    {
+      "contributions": 4,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 2,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 2,
+      "login": "turbomam"
+    }
+  ]
+}

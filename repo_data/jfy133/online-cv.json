@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-12-27T13:53:42Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A minimal Jekyll Theme hosting my website",
+  "name": "online-cv",
+  "updatedAt": "2022-12-27T15:26:57Z",
+  "url": "https://github.com/jfy133/online-cv",
+  "firstCommitDate": "2022-12-27T15:26:43Z",
+  "lastCommitDate": "2022-12-27T15:26:43Z",
+  "topContributors": [
+    {
+      "contributions": 65,
+      "login": "sharu725"
+    },
+    {
+      "contributions": 30,
+      "login": "nelsonmestevao"
+    },
+    {
+      "contributions": 11,
+      "login": "dhmdmdhm"
+    },
+    {
+      "contributions": 6,
+      "login": "Redgadget"
+    },
+    {
+      "contributions": 6,
+      "login": "t-h-e"
+    },
+    {
+      "contributions": 2,
+      "login": "mkozjak"
+    },
+    {
+      "contributions": 1,
+      "login": "ChandanChainani"
+    },
+    {
+      "contributions": 1,
+      "login": "daniel-lanciana"
+    },
+    {
+      "contributions": 1,
+      "login": "titusjaka"
+    },
+    {
+      "contributions": 1,
+      "login": "jfy133"
+    }
+  ]
+}

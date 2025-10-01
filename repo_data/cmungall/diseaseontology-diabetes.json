@@ -1,0 +1,18 @@
+{
+  "createdAt": "2013-04-16T08:48:20Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Merge of OrphaNet rare genetic diabetes subset plus DO",
+  "name": "diseaseontology-diabetes",
+  "updatedAt": "2014-04-11T04:39:32Z",
+  "url": "https://github.com/cmungall/diseaseontology-diabetes",
+  "firstCommitDate": "2013-04-23T14:01:40Z",
+  "lastCommitDate": "2013-04-23T14:01:40Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "cmungall"
+    }
+  ]
+}

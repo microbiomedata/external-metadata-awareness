@@ -1,0 +1,18 @@
+{
+  "createdAt": "2014-11-04T22:34:07Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "implementation of probabilistic methods for owlsim",
+  "name": "owlsim-probabilistic",
+  "updatedAt": "2015-02-02T17:45:03Z",
+  "url": "https://github.com/cmungall/owlsim-probabilistic",
+  "firstCommitDate": "2014-11-04T22:34:55Z",
+  "lastCommitDate": "2014-11-04T22:34:55Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

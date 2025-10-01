@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-03-22T18:55:01Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "New, non-backwards compatible version of the original jsonasobj",
+  "name": "jsonasobj2",
+  "updatedAt": "2021-07-08T02:41:38Z",
+  "url": "https://github.com/cmungall/jsonasobj2",
+  "firstCommitDate": "2021-06-02T17:39:49Z",
+  "lastCommitDate": "2021-06-02T17:39:49Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "hsolbrig"
+    }
+  ]
+}

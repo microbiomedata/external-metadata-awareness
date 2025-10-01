@@ -1,0 +1,50 @@
+{
+  "createdAt": "2015-06-16T16:00:36Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Initial attempt to move repo from gcode. USE OBOPHENOTYPE",
+  "name": "cell-ontology-DO-NOT-USE",
+  "updatedAt": "2015-10-29T20:24:16Z",
+  "url": "https://github.com/cmungall/cell-ontology-DO-NOT-USE",
+  "firstCommitDate": "2015-06-16T15:02:42Z",
+  "lastCommitDate": "2015-06-16T15:02:42Z",
+  "topContributors": [
+    {
+      "contributions": 264,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 47,
+      "login": "nicolevasilevsky"
+    },
+    {
+      "contributions": 25,
+      "login": "addiehl"
+    },
+    {
+      "contributions": 4,
+      "login": "mbrush"
+    },
+    {
+      "contributions": 3,
+      "login": "alanruttenberg"
+    },
+    {
+      "contributions": 3,
+      "login": "paolaroncaglia"
+    },
+    {
+      "contributions": 3,
+      "login": "ybradford"
+    },
+    {
+      "contributions": 1,
+      "login": "janelomax"
+    },
+    {
+      "contributions": 1,
+      "login": "cerivs"
+    }
+  ]
+}

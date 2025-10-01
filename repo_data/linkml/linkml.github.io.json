@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-03-30T01:35:56Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Website/splash page for main LinkML project",
+  "name": "linkml.github.io",
+  "updatedAt": "2025-09-19T19:04:21Z",
+  "url": "https://github.com/linkml/linkml.github.io",
+  "firstCommitDate": "2025-09-19T19:04:17Z",
+  "lastCommitDate": "2025-09-19T19:04:17Z",
+  "topContributors": [
+    {
+      "contributions": 95,
+      "login": "dwalkr"
+    },
+    {
+      "contributions": 60,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 32,
+      "login": "DirtyF"
+    },
+    {
+      "contributions": 13,
+      "login": "sagehrke"
+    },
+    {
+      "contributions": 7,
+      "login": "Germoe"
+    },
+    {
+      "contributions": 3,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 3,
+      "login": "iQuxLE"
+    },
+    {
+      "contributions": 2,
+      "login": "nlharris"
+    },
+    {
+      "contributions": 2,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 1,
+      "login": "jpatters"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2025-06-18T14:22:26Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Cookiecutter for making MCPs that we can plug into LLMs, agents, etc",
+  "name": "cookiecutter-mcp",
+  "updatedAt": "2025-09-25T20:27:39Z",
+  "url": "https://github.com/monarch-initiative/cookiecutter-mcp",
+  "firstCommitDate": "2025-07-24T16:33:37Z",
+  "lastCommitDate": "2025-07-24T16:33:37Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 2,
+      "login": "caufieldjh"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-06-30T12:43:59Z",
+  "defaultBranchRef": {
+    "name": "dev"
+  },
+  "description": "",
+  "name": "june-2025-phenio-debugging",
+  "updatedAt": "2025-06-30T12:45:58Z",
+  "url": "https://github.com/EBISPOT/june-2025-phenio-debugging",
+  "firstCommitDate": "2025-06-30T12:45:30Z",
+  "lastCommitDate": "2025-06-30T12:45:30Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "jamesamcl"
+    }
+  ]
+}

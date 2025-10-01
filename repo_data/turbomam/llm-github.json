@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-06-27T17:07:03Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "llm-github/",
+  "name": "llm-github",
+  "updatedAt": "2025-04-08T10:34:07Z",
+  "url": "https://github.com/turbomam/llm-github",
+  "firstCommitDate": "2024-07-08T18:30:09Z",
+  "lastCommitDate": "2024-07-08T18:30:09Z",
+  "topContributors": [
+    {
+      "contributions": 14,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 1,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

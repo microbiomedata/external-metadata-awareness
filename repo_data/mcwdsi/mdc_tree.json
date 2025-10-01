@@ -1,0 +1,22 @@
+{
+  "createdAt": "2017-06-07T20:16:11Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "mdc_tree",
+  "updatedAt": "2023-10-05T19:12:43Z",
+  "url": "https://github.com/mcwdsi/mdc_tree",
+  "firstCommitDate": "2021-05-07T18:14:14Z",
+  "lastCommitDate": "2021-05-07T18:14:14Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "atloiaco"
+    },
+    {
+      "contributions": 1,
+      "login": "dillerm"
+    }
+  ]
+}

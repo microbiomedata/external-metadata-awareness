@@ -1,0 +1,50 @@
+{
+  "createdAt": "2014-08-25T14:57:36Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Ontology Based Profile Matching",
+  "name": "owlsim-v3",
+  "updatedAt": "2025-06-30T14:05:50Z",
+  "url": "https://github.com/monarch-initiative/owlsim-v3",
+  "firstCommitDate": "2020-07-17T16:12:32Z",
+  "lastCommitDate": "2020-07-17T16:12:32Z",
+  "topContributors": [
+    {
+      "contributions": 117,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 39,
+      "login": "jnguyenx"
+    },
+    {
+      "contributions": 30,
+      "login": "nlwashington"
+    },
+    {
+      "contributions": 15,
+      "login": "julesjacobsen"
+    },
+    {
+      "contributions": 6,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 4,
+      "login": "tudorgroza"
+    },
+    {
+      "contributions": 2,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 1,
+      "login": "nathandunn"
+    },
+    {
+      "contributions": 1,
+      "login": "drseb"
+    }
+  ]
+}

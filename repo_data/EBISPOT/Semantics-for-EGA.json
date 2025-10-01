@@ -1,0 +1,13 @@
+{
+  "createdAt": "2020-03-05T10:28:33Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The semantic model for rare disease in EGA resources ",
+  "name": "Semantics-for-EGA",
+  "updatedAt": "2020-03-05T11:03:18Z",
+  "url": "https://github.com/EBISPOT/Semantics-for-EGA",
+  "firstCommitDate": "2020-03-05T11:01:43Z",
+  "lastCommitDate": "2020-03-05T11:01:43Z",
+  "topContributors": []
+}

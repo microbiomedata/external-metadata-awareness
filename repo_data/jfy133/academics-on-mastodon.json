@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-11-13T13:38:20Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A list of various lists consisting of academics on Mastodon",
+  "name": "academics-on-mastodon",
+  "updatedAt": "2022-11-13T13:01:00Z",
+  "url": "https://github.com/jfy133/academics-on-mastodon",
+  "firstCommitDate": "2022-11-13T13:39:18Z",
+  "lastCommitDate": "2022-11-13T13:39:18Z",
+  "topContributors": [
+    {
+      "contributions": 66,
+      "login": "nathanlesage"
+    },
+    {
+      "contributions": 17,
+      "login": "stark1tty"
+    },
+    {
+      "contributions": 7,
+      "login": "trutzig89182"
+    },
+    {
+      "contributions": 3,
+      "login": "eyssette"
+    },
+    {
+      "contributions": 3,
+      "login": "quinnanya"
+    },
+    {
+      "contributions": 2,
+      "login": "rotula"
+    },
+    {
+      "contributions": 2,
+      "login": "jocelynetienne"
+    },
+    {
+      "contributions": 2,
+      "login": "jorgesat"
+    },
+    {
+      "contributions": 1,
+      "login": "aserebrenik"
+    },
+    {
+      "contributions": 1,
+      "login": "Andy8chi"
+    }
+  ]
+}

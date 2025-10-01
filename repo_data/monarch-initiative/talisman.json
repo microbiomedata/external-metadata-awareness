@@ -1,0 +1,54 @@
+{
+  "createdAt": "2024-01-04T18:48:25Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "LLM-based gene function enrichment tool",
+  "name": "talisman",
+  "updatedAt": "2025-09-11T14:34:22Z",
+  "url": "https://github.com/monarch-initiative/talisman",
+  "firstCommitDate": "2024-06-10T01:20:57Z",
+  "lastCommitDate": "2024-06-10T01:20:57Z",
+  "topContributors": [
+    {
+      "contributions": 640,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 199,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 46,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 46,
+      "login": "AgranyaGitHub"
+    },
+    {
+      "contributions": 24,
+      "login": "realmarcin"
+    },
+    {
+      "contributions": 16,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 6,
+      "login": "diatomsRcool"
+    },
+    {
+      "contributions": 3,
+      "login": "nlharris"
+    },
+    {
+      "contributions": 3,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 2,
+      "login": "balhoff"
+    }
+  ]
+}

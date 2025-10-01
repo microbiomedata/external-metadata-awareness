@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-08-13T17:10:18Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A package to transform all OBO ontologies into KGX TSV format and OBO json, and put the transformed graph in KGhub",
+  "name": "kg-obo",
+  "updatedAt": "2024-11-02T01:14:03Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/kg-obo",
+  "firstCommitDate": "2024-03-19T17:16:05Z",
+  "lastCommitDate": "2024-03-19T17:16:05Z",
+  "topContributors": [
+    {
+      "contributions": 686,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 13,
+      "login": "justaddcoffee"
+    }
+  ]
+}

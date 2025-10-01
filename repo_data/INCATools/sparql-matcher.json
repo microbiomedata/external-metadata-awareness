@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-06-01T02:36:30Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "sparql-matcher",
+  "updatedAt": "2025-02-04T18:39:41Z",
+  "url": "https://github.com/INCATools/sparql-matcher",
+  "firstCommitDate": "2020-06-01T02:42:00Z",
+  "lastCommitDate": "2020-06-01T02:42:00Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

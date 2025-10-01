@@ -1,0 +1,22 @@
+{
+  "createdAt": "2019-07-05T18:15:03Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "An experimental ontology containing key terms from Open Biological and Biomedical Ontologies (OBO)",
+  "name": "Experimental-OBO-Core",
+  "updatedAt": "2019-07-05T18:15:05Z",
+  "url": "https://github.com/cmungall/Experimental-OBO-Core",
+  "firstCommitDate": "2019-06-13T21:50:52Z",
+  "lastCommitDate": "2019-06-13T21:50:52Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 1,
+      "login": "bpeters42"
+    }
+  ]
+}

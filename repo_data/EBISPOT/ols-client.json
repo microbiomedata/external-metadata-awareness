@@ -1,0 +1,42 @@
+{
+  "createdAt": "2016-05-27T10:03:51Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Java ols client designed for OLS-Dialog tool",
+  "name": "ols-client",
+  "updatedAt": "2024-10-07T10:04:23Z",
+  "url": "https://github.com/EBISPOT/ols-client",
+  "firstCommitDate": "2018-11-01T13:09:40Z",
+  "lastCommitDate": "2018-11-01T13:09:40Z",
+  "topContributors": [
+    {
+      "contributions": 67,
+      "login": "ypriverol"
+    },
+    {
+      "contributions": 35,
+      "login": "olgavrou"
+    },
+    {
+      "contributions": 30,
+      "login": "tschaka1904"
+    },
+    {
+      "contributions": 12,
+      "login": "Tobias-Ternent"
+    },
+    {
+      "contributions": 8,
+      "login": "mbdebian"
+    },
+    {
+      "contributions": 4,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 4,
+      "login": "proteomics-developers"
+    }
+  ]
+}

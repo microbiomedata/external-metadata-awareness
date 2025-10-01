@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-11-15T06:23:34Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Data and plot generation for Bergström, Fellows Yates and Warinner 2024",
+  "name": "bergstrom2024comment",
+  "updatedAt": "2025-08-21T08:27:09Z",
+  "url": "https://github.com/jfy133/bergstrom2024comment",
+  "firstCommitDate": "2024-12-03T09:59:54Z",
+  "lastCommitDate": "2024-12-03T09:59:54Z",
+  "topContributors": [
+    {
+      "contributions": 12,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 1,
+      "login": "bergstand"
+    }
+  ]
+}

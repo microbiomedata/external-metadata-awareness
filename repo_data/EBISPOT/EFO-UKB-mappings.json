@@ -1,0 +1,26 @@
+{
+  "createdAt": "2019-04-03T09:07:14Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "EFO-UKB-mappings",
+  "updatedAt": "2025-06-19T05:13:17Z",
+  "url": "https://github.com/EBISPOT/EFO-UKB-mappings",
+  "firstCommitDate": "2019-06-07T14:32:22Z",
+  "lastCommitDate": "2019-06-07T14:32:22Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "zoependlington"
+    },
+    {
+      "contributions": 2,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 2,
+      "login": "paolaroncaglia"
+    }
+  ]
+}

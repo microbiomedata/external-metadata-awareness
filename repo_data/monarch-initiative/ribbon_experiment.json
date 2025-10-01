@@ -1,0 +1,26 @@
+{
+  "createdAt": "2021-10-15T00:06:34Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "ribbon_experiment",
+  "updatedAt": "2021-11-15T12:51:22Z",
+  "url": "https://github.com/monarch-initiative/ribbon_experiment",
+  "firstCommitDate": "2021-11-15T12:51:11Z",
+  "lastCommitDate": "2021-11-15T12:51:11Z",
+  "topContributors": [
+    {
+      "contributions": 15,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 3,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 3,
+      "login": "matentzn"
+    }
+  ]
+}

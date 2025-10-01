@@ -1,0 +1,54 @@
+{
+  "createdAt": "2013-07-11T16:31:31Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Sequence Feature streams",
+  "name": "Bio-FeatureIO",
+  "updatedAt": "2014-09-09T12:38:34Z",
+  "url": "https://github.com/cmungall/Bio-FeatureIO",
+  "firstCommitDate": "2013-11-30T20:59:02Z",
+  "lastCommitDate": "2013-11-30T20:59:02Z",
+  "topContributors": [
+    {
+      "contributions": 19,
+      "login": "sendu"
+    },
+    {
+      "contributions": 18,
+      "login": "rbuels"
+    },
+    {
+      "contributions": 9,
+      "login": "fangly"
+    },
+    {
+      "contributions": 8,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 8,
+      "login": "hyphaltip"
+    },
+    {
+      "contributions": 7,
+      "login": "heikkil"
+    },
+    {
+      "contributions": 6,
+      "login": "scottcain"
+    },
+    {
+      "contributions": 3,
+      "login": "bosborne"
+    },
+    {
+      "contributions": 2,
+      "login": "carandraug"
+    },
+    {
+      "contributions": 2,
+      "login": "cjfields"
+    }
+  ]
+}

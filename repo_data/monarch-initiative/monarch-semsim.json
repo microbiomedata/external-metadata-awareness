@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-06-23T23:39:58Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Monarch Semantic Similarity",
+  "name": "monarch-semsim",
+  "updatedAt": "2022-06-23T23:40:13Z",
+  "url": "https://github.com/monarch-initiative/monarch-semsim",
+  "firstCommitDate": "2022-06-23T23:53:22Z",
+  "lastCommitDate": "2022-06-23T23:53:22Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "putmantime"
+    }
+  ]
+}

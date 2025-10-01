@@ -1,0 +1,30 @@
+{
+  "createdAt": "2025-09-18T17:11:24Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Simple experiment to compare ENVO similarity to google embedding cosine similarity",
+  "name": "env-embeddings",
+  "updatedAt": "2025-09-18T23:10:30Z",
+  "url": "https://github.com/contextualizer-ai/env-embeddings",
+  "firstCommitDate": "2025-09-18T23:10:27Z",
+  "lastCommitDate": "2025-09-18T23:10:27Z",
+  "topContributors": [
+    {
+      "contributions": 21,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 19,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 7,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 5,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

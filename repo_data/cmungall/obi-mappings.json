@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-03-07T21:30:09Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "obi-mappings",
+  "updatedAt": "2023-03-12T10:25:28Z",
+  "url": "https://github.com/cmungall/obi-mappings",
+  "firstCommitDate": "2021-03-07T21:29:51Z",
+  "lastCommitDate": "2021-03-07T21:29:51Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "createdAt": "2020-02-28T23:59:43Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Public repository for the GSC web site.",
+  "name": "gensc.github.io",
+  "updatedAt": "2025-09-17T09:51:16Z",
+  "url": "https://github.com/GenomicsStandardsConsortium/gensc.github.io",
+  "firstCommitDate": "2025-09-17T09:51:11Z",
+  "lastCommitDate": "2025-09-17T09:51:11Z",
+  "topContributors": [
+    {
+      "contributions": 549,
+      "login": "only1chunts"
+    },
+    {
+      "contributions": 30,
+      "login": "ramonawalls"
+    },
+    {
+      "contributions": 21,
+      "login": "lschriml"
+    },
+    {
+      "contributions": 3,
+      "login": "folker"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "createdAt": "2025-06-09T01:30:41Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The Ontology for Biomedical Investigations (forked for tutorial purposes)",
+  "name": "obi-tutorial",
+  "updatedAt": "2025-06-09T01:34:58Z",
+  "url": "https://github.com/ai4curation/obi-tutorial",
+  "firstCommitDate": "2025-06-09T01:34:53Z",
+  "lastCommitDate": "2025-06-09T01:34:53Z",
+  "topContributors": [
+    {
+      "contributions": 909,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 182,
+      "login": "sebastianduesing"
+    },
+    {
+      "contributions": 49,
+      "login": "beckyjackson"
+    },
+    {
+      "contributions": 33,
+      "login": "cstoeckert"
+    },
+    {
+      "contributions": 32,
+      "login": "adbartni"
+    },
+    {
+      "contributions": 29,
+      "login": "johnwjudkins"
+    },
+    {
+      "contributions": 27,
+      "login": "zhengj2007"
+    },
+    {
+      "contributions": 27,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 25,
+      "login": "DanBerrios"
+    },
+    {
+      "contributions": 15,
+      "login": "Daniel-Olson"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-01-28T15:14:31Z",
+  "defaultBranchRef": {
+    "name": "oldmain"
+  },
+  "description": "Implementation of M1 with data format matching only",
+  "name": "m1-df-only",
+  "updatedAt": "2024-02-27T14:21:49Z",
+  "url": "https://github.com/mcwdsi/m1-df-only",
+  "firstCommitDate": "2024-01-28T15:14:32Z",
+  "lastCommitDate": "2024-01-28T15:14:32Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "hoganwr"
+    }
+  ]
+}

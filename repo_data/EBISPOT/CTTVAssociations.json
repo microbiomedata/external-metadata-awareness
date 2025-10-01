@@ -1,0 +1,22 @@
+{
+  "createdAt": "2015-01-27T12:00:20Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "CTTVAssociations",
+  "updatedAt": "2015-03-30T10:55:52Z",
+  "url": "https://github.com/EBISPOT/CTTVAssociations",
+  "firstCommitDate": "2015-03-30T10:55:32Z",
+  "lastCommitDate": "2015-03-30T10:55:32Z",
+  "topContributors": [
+    {
+      "contributions": 25,
+      "login": "jamesmalone"
+    },
+    {
+      "contributions": 17,
+      "login": "vasant32"
+    }
+  ]
+}

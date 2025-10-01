@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-09-23T19:11:25Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Modular ingest of STRING PPIs",
+  "name": "string_modular",
+  "updatedAt": "2024-10-28T18:36:56Z",
+  "url": "https://github.com/monarch-initiative/string_modular",
+  "firstCommitDate": "2024-10-28T18:36:48Z",
+  "lastCommitDate": "2024-10-28T18:36:48Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "justaddcoffee"
+    }
+  ]
+}

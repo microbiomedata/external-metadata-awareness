@@ -1,0 +1,30 @@
+{
+  "createdAt": "2023-03-28T13:39:01Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A Cookiecutter to kickstart Python based projects.",
+  "name": "monarch-project-template",
+  "updatedAt": "2025-01-31T21:26:10Z",
+  "url": "https://github.com/monarch-initiative/monarch-project-template",
+  "firstCommitDate": "2025-01-31T21:26:04Z",
+  "lastCommitDate": "2025-01-31T21:26:04Z",
+  "topContributors": [
+    {
+      "contributions": 76,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 24,
+      "login": "amc-corey-cox"
+    },
+    {
+      "contributions": 7,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 7,
+      "login": "sierra-moxon"
+    }
+  ]
+}

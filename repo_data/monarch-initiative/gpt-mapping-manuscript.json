@@ -1,0 +1,30 @@
+{
+  "createdAt": "2023-06-01T01:19:16Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "gpt-mapping-manuscript",
+  "updatedAt": "2025-03-07T18:49:23Z",
+  "url": "https://github.com/monarch-initiative/gpt-mapping-manuscript",
+  "firstCommitDate": "2023-09-29T11:49:22Z",
+  "lastCommitDate": "2023-09-29T11:49:22Z",
+  "topContributors": [
+    {
+      "contributions": 22,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 8,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 2,
+      "login": "nlharris"
+    },
+    {
+      "contributions": 1,
+      "login": "hrshdhgd"
+    }
+  ]
+}

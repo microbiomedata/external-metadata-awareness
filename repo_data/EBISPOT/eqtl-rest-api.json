@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-01-15T13:38:36Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "eQTL Catalogue REST API",
+  "name": "eqtl-rest-api",
+  "updatedAt": "2025-01-15T13:41:42Z",
+  "url": "https://github.com/EBISPOT/eqtl-rest-api",
+  "firstCommitDate": "2025-01-15T13:38:37Z",
+  "lastCommitDate": "2025-01-15T13:38:37Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "karatugo"
+    }
+  ]
+}

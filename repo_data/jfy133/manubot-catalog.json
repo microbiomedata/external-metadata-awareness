@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-04-14T18:52:57Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Made with Manubot catalog (please add your manuscript!!)",
+  "name": "manubot-catalog",
+  "updatedAt": "2022-04-14T18:53:51Z",
+  "url": "https://github.com/jfy133/manubot-catalog",
+  "firstCommitDate": "2022-04-14T18:53:47Z",
+  "lastCommitDate": "2022-04-14T18:53:47Z",
+  "topContributors": [
+    {
+      "contributions": 61,
+      "login": "dhimmel"
+    },
+    {
+      "contributions": 11,
+      "login": "agitter"
+    },
+    {
+      "contributions": 4,
+      "login": "habi"
+    },
+    {
+      "contributions": 4,
+      "login": "vincerubinetti"
+    },
+    {
+      "contributions": 3,
+      "login": "trangdata"
+    },
+    {
+      "contributions": 2,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 2,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 2,
+      "login": "zietzm"
+    },
+    {
+      "contributions": 2,
+      "login": "lubianat"
+    },
+    {
+      "contributions": 1,
+      "login": "Adafede"
+    }
+  ]
+}

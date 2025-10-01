@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-02-08T00:13:01Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Automatically generated js client for biolink-api",
+  "name": "biolink-javascript-client",
+  "updatedAt": "2019-07-29T09:47:24Z",
+  "url": "https://github.com/biolink/biolink-javascript-client",
+  "firstCommitDate": "2017-02-08T00:20:27Z",
+  "lastCommitDate": "2017-02-08T00:20:27Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

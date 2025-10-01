@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-09-09T17:02:27Z",
+  "defaultBranchRef": {
+    "name": "gh-pages"
+  },
+  "description": "",
+  "name": "monarch-metadata",
+  "updatedAt": "2016-09-09T18:52:59Z",
+  "url": "https://github.com/cmungall/monarch-metadata",
+  "firstCommitDate": "2016-09-09T18:52:51Z",
+  "lastCommitDate": "2016-09-09T18:52:51Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

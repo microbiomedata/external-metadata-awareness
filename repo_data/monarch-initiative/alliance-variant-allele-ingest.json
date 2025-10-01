@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-05-07T16:01:49Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "alliance-variant-allele-ingest",
+  "updatedAt": "2024-05-07T16:03:00Z",
+  "url": "https://github.com/monarch-initiative/alliance-variant-allele-ingest",
+  "firstCommitDate": "2024-05-07T16:00:43Z",
+  "lastCommitDate": "2024-05-07T16:00:43Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "kevinschaper"
+    }
+  ]
+}

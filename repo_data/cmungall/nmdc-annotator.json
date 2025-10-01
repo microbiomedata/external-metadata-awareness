@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-06-03T23:07:22Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "nmdc-annotator",
+  "updatedAt": "2023-01-28T07:47:49Z",
+  "url": "https://github.com/cmungall/nmdc-annotator",
+  "firstCommitDate": "2021-06-03T23:07:23Z",
+  "lastCommitDate": "2021-06-03T23:07:23Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

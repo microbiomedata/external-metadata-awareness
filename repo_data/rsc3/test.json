@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-01-29T01:40:14Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "test",
+  "updatedAt": "2017-01-29T01:40:14Z",
+  "url": "https://github.com/rsc3/test",
+  "firstCommitDate": "2017-02-08T02:07:00Z",
+  "lastCommitDate": "2017-02-08T02:07:00Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "rsc3"
+    }
+  ]
+}

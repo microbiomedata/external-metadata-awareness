@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-06-02T23:48:53Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "sf-test",
+  "updatedAt": "2015-06-02T23:48:53Z",
+  "url": "https://github.com/cmungall/sf-test",
+  "firstCommitDate": "2015-06-19T19:52:23Z",
+  "lastCommitDate": "2015-06-19T19:52:23Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-08-30T14:43:58Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A Python script for generating OWL individuals that represent organism populations",
+  "name": "population-individuals-generator",
+  "updatedAt": "2023-10-05T19:44:19Z",
+  "url": "https://github.com/mcwdsi/population-individuals-generator",
+  "firstCommitDate": "2018-09-20T20:26:45Z",
+  "lastCommitDate": "2018-09-20T20:26:45Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "dillerm"
+    }
+  ]
+}

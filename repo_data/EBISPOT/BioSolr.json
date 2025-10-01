@@ -1,0 +1,30 @@
+{
+  "createdAt": "2017-04-11T13:23:14Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A project aiming \"to significantly advance the state of the art with regard to indexing and querying biomedical data with freely available open source software\"",
+  "name": "BioSolr",
+  "updatedAt": "2024-03-12T12:41:47Z",
+  "url": "https://github.com/EBISPOT/BioSolr",
+  "firstCommitDate": "2019-02-28T10:47:10Z",
+  "lastCommitDate": "2019-02-28T10:47:10Z",
+  "topContributors": [
+    {
+      "contributions": 21,
+      "login": "olgavrou"
+    },
+    {
+      "contributions": 20,
+      "login": "tburdett"
+    },
+    {
+      "contributions": 5,
+      "login": "flaxsearch"
+    },
+    {
+      "contributions": 1,
+      "login": "S2Ola"
+    }
+  ]
+}

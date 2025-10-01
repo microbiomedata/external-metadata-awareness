@@ -1,0 +1,26 @@
+{
+  "createdAt": "2024-02-23T19:18:09Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Initial private repo for P1 CDE harmonization",
+  "name": "cde-harmonization",
+  "updatedAt": "2025-09-23T04:46:08Z",
+  "url": "https://github.com/monarch-initiative/cde-harmonization",
+  "firstCommitDate": "2025-09-11T21:49:25Z",
+  "lastCommitDate": "2025-09-11T21:49:25Z",
+  "topContributors": [
+    {
+      "contributions": 55,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 16,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 5,
+      "login": "madanucd"
+    }
+  ]
+}

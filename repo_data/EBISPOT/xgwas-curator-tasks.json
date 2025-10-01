@@ -1,0 +1,12 @@
+{
+  "createdAt": "2022-11-30T13:47:29Z",
+  "defaultBranchRef": {
+    "name": ""
+  },
+  "description": "An internal repo for GWAS curators to track issues",
+  "name": "xgwas-curator-tasks",
+  "updatedAt": "2022-12-07T10:03:34Z",
+  "url": "https://github.com/EBISPOT/xgwas-curator-tasks",
+  "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+  "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+}

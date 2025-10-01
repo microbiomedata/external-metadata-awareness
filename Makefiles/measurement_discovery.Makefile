@@ -8,8 +8,7 @@ endif
 
 .PHONY: count-biosamples-per-harmonized-name count-biosamples-step1 count-bioprojects-step2 merge-counts-step3 \
 index-harmonized-name-counts count-biosamples-and-bioprojects-per-harmonized-name count-unit-assertions count-mixed-content \
-count-measurement-evidence calculate-measurement-ratios prioritize-targets process-priority-measurements export-flat-measurements clean-discovery \
-rank-measurement-attributes rank-unified-measurement-attributes
+count-measurement-evidence clean-discovery
 
 # Phase 0: Baseline counting
 
@@ -168,16 +167,6 @@ load-global-mixs-slots:
 		--verbose
 	@date
 
-# Analyze NMDC schema slot_usage statements with range assertions
-analyze-nmdc-slot-usage:
-	@date
-	@echo "Analyzing NMDC schema slot_usage statements..."
-	$(RUN) mongo-js-executor \
-		--mongo-uri "$(MONGO_URI)" \
-		$(ENV_FILE_OPTION) \
-		--js-file mongo-js/analyze_nmdc_slot_usage.js \
-		--verbose
-	@date
 
 # Generate detailed report of NMDC range slot_usage modifications
 report-nmdc-range-slot-usage:
@@ -201,94 +190,17 @@ load-global-nmdc-slots:
 		--verbose
 	@date
 
-# Comprehensive ranking of measurement-like attributes across all sources
-rank-measurement-attributes:
-	@date
-	@echo "Ranking measurement attributes across NCBI, MIxS, and NMDC sources..."
-	$(RUN) mongo-js-executor \
-		--mongo-uri "$(MONGO_URI)" \
-		$(ENV_FILE_OPTION) \
-		--js-file mongo-js/rank_measurement_attributes.js \
-		--verbose
-	@date
 
-# Unified ranking that consolidates same attributes across sources  
-rank-unified-measurement-attributes:
-	@date
-	@echo "Creating unified measurement attribute rankings (consolidating overlaps)..."
-	$(RUN) mongo-js-executor \
-		--mongo-uri "$(MONGO_URI)" \
-		$(ENV_FILE_OPTION) \
-		--js-file mongo-js/rank_unified_measurement_attributes.js \
-		--verbose
-	@date
 
-# Phase 2: Target prioritization from file checkpoints → priority list
-prioritize-targets: local/priority_measurement_fields.json
-
-local/priority_measurement_fields.json: local/measurement_fields_with_units.json local/numeric_content_fields.json
-	@date
-	@echo "Prioritizing measurement targets from discovery checkpoints..."
-	$(RUN) prioritize-measurement-targets \
-		--units-file local/measurement_fields_with_units.json \
-		--numeric-file local/numeric_content_fields.json \
-		--output-file $@ \
-		--min-count 100 \
-		--verbose
-	@date
-
-# Phase 3: Process priority measurements with unit correction
-process-priority-measurements: local/priority_measurement_fields.json
-	@date
-	@echo "Processing priority measurement fields with unit correction..."
-	$(RUN) normalize-biosample-measurements \
-		--mongodb-uri "$(MONGO_URI)" \
-		$(ENV_FILE_OPTION) \
-		--input-collection biosamples_flattened \
-		--output-collection biosamples_measurements \
-		$(shell jq -r '.[].harmonized_name' local/priority_measurement_fields.json | sed 's/^/--field /' | tr '\n' ' ') \
-		--overwrite
-	@date
-
-# Phase 4: Export flat measurement tuples
-export-flat-measurements: local/flat_measurements.tsv
-
-local/flat_measurements.tsv:
-	@date
-	@echo "Exporting flat measurement tuples..."
-	$(RUN) mongo-js-executor \
-		--mongo-uri "$(MONGO_URI)" \
-		$(ENV_FILE_OPTION) \
-		--js-file mongo-js/export_flat_measurements.js \
-		--verbose
-	@echo "Exporting to TSV checkpoint..."
-	mongosh "$(MONGO_URI)" \
-		--eval 'db.flat_measurements.find({}, {_id: 0}).forEach(doc => print([doc.biosample_id, doc.harmonized_name, doc.value, doc.unit].join("\t")))' \
-		> $@
-	@date
-
-# Complete pipeline
-measurement-pipeline: discover-measurement-fields discover-numeric-fields prioritize-targets process-priority-measurements export-flat-measurements
-	@echo "✅ Complete measurement discovery pipeline completed"
-	@echo "📊 Checkpoints saved:"
-	@echo "   - local/measurement_fields_with_units.json"
-	@echo "   - local/numeric_content_fields.json" 
-	@echo "   - local/priority_measurement_fields.json"
-	@echo "   - local/flat_measurements.tsv"
 
 # Cleanup
 clean-discovery:
-	@echo "Cleaning all measurement/unit discovery files and collections..."
-	@echo "Removing local checkpoint files..."
-	rm -f local/measurement_fields_with_units.json
-	rm -f local/numeric_content_fields.json
-	rm -f local/priority_measurement_fields.json
-	rm -f local/flat_measurements.tsv
+	@echo "Cleaning measurement discovery collections..."
 	@echo "Dropping MongoDB collections (preserving beneficial indexes)..."
 	$(RUN) mongo-connect \
 		--uri "$(MONGO_URI)" \
 		$(ENV_FILE_OPTION) \
 		--connect \
-		--command "db.measurement_fields_with_units.drop(); db.numeric_content_fields.drop(); db.flat_measurements.drop(); db.biosamples_measurements.drop()"
-	@echo "Note: Preserving indexes on biosamples_flattened and biosamples_attributes collections"
-	@echo "✅ Cleanup complete - ready for fresh pipeline execution"
+		--command "db.measurement_results_skip_filtered.drop(); db.content_pairs_aggregated.drop()"
+	@echo "Note: Preserving indexes on biosamples_attributes collection"
+	@echo "✅ Cleanup complete - ready for fresh measurement discovery execution"

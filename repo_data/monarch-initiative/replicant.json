@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-01-30T11:13:02Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Library for generating simulated rare-disease VCF and associated phenotypes",
+  "name": "replicant",
+  "updatedAt": "2019-01-30T12:12:45Z",
+  "url": "https://github.com/monarch-initiative/replicant",
+  "firstCommitDate": "2019-01-30T12:05:26Z",
+  "lastCommitDate": "2019-01-30T12:05:26Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "julesjacobsen"
+    }
+  ]
+}

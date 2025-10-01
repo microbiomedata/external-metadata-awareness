@@ -1,0 +1,54 @@
+{
+  "createdAt": "2017-01-03T01:36:36Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Pysolr — the official source.",
+  "name": "pysolr",
+  "updatedAt": "2017-01-03T01:36:39Z",
+  "url": "https://github.com/cmungall/pysolr",
+  "firstCommitDate": "2016-11-09T00:17:39Z",
+  "lastCommitDate": "2016-11-09T00:17:39Z",
+  "topContributors": [
+    {
+      "contributions": 126,
+      "login": "acdha"
+    },
+    {
+      "contributions": 67,
+      "login": "toastdriven"
+    },
+    {
+      "contributions": 5,
+      "login": "dcramer"
+    },
+    {
+      "contributions": 5,
+      "login": "skirsdeda"
+    },
+    {
+      "contributions": 3,
+      "login": "anti-social"
+    },
+    {
+      "contributions": 2,
+      "login": "gthb"
+    },
+    {
+      "contributions": 2,
+      "login": "pabluk"
+    },
+    {
+      "contributions": 2,
+      "login": "tongwang"
+    },
+    {
+      "contributions": 2,
+      "login": "atuljangra"
+    },
+    {
+      "contributions": 1,
+      "login": "andreif"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "createdAt": "2016-02-18T15:43:38Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Maven Project with services which correspond on the Change Detection and Validation/Repair Modules ",
+  "name": "diachron_change_detection",
+  "updatedAt": "2016-02-18T15:50:31Z",
+  "url": "https://github.com/EBISPOT/diachron_change_detection",
+  "firstCommitDate": "2016-03-23T14:29:33Z",
+  "lastCommitDate": "2016-03-23T14:29:33Z",
+  "topContributors": [
+    {
+      "contributions": 47,
+      "login": "rousakis"
+    },
+    {
+      "contributions": 2,
+      "login": "olgavrou"
+    },
+    {
+      "contributions": 1,
+      "login": "simonjupp"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2015-04-16T16:43:03Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "T2D text mining",
+  "name": "T2D",
+  "updatedAt": "2016-01-14T15:57:54Z",
+  "url": "https://github.com/EBISPOT/T2D",
+  "firstCommitDate": "2016-01-15T10:42:42Z",
+  "lastCommitDate": "2016-01-15T10:42:42Z",
+  "topContributors": [
+    {
+      "contributions": 14,
+      "login": "siiraa"
+    },
+    {
+      "contributions": 3,
+      "login": "vasant32"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "createdAt": "2022-01-07T01:12:45Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Official outputs from the RDA DMP Common Standards WG ",
+  "name": "RDA-DMP-Common-Standard",
+  "updatedAt": "2022-01-07T01:12:46Z",
+  "url": "https://github.com/cmungall/RDA-DMP-Common-Standard",
+  "firstCommitDate": "2021-08-05T14:40:06Z",
+  "lastCommitDate": "2021-08-05T14:40:06Z",
+  "topContributors": [
+    {
+      "contributions": 73,
+      "login": "TomMiksa"
+    },
+    {
+      "contributions": 71,
+      "login": "JoaoMFCardoso"
+    },
+    {
+      "contributions": 62,
+      "login": "paulwalk"
+    },
+    {
+      "contributions": 20,
+      "login": "peterneish"
+    },
+    {
+      "contributions": 4,
+      "login": "ljgarcia"
+    },
+    {
+      "contributions": 4,
+      "login": "SotosTsepe"
+    },
+    {
+      "contributions": 1,
+      "login": "fekaputra"
+    },
+    {
+      "contributions": 1,
+      "login": "jochenklar"
+    },
+    {
+      "contributions": 1,
+      "login": "ccronje"
+    }
+  ]
+}

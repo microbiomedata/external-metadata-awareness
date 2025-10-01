@@ -1,0 +1,30 @@
+{
+  "createdAt": "2020-07-14T17:46:15Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A repository for the work of the Community Development Workstream",
+  "name": "community-development",
+  "updatedAt": "2022-10-05T22:16:31Z",
+  "url": "https://github.com/cancerDHC/community-development",
+  "firstCommitDate": "2021-12-14T17:36:17Z",
+  "lastCommitDate": "2021-12-14T17:36:17Z",
+  "topContributors": [
+    {
+      "contributions": 12,
+      "login": "dvenckusuchgo"
+    },
+    {
+      "contributions": 12,
+      "login": "nicolevasilevsky"
+    },
+    {
+      "contributions": 4,
+      "login": "bfurner"
+    },
+    {
+      "contributions": 1,
+      "login": "monicacecilia"
+    }
+  ]
+}

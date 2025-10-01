@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-12-11T16:39:31Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Here's a first step in modelling assays* with OBO* terms. It generates a template that can be executed by the ROBOT* application, leading to an RDF data model. Assays currently in scope have a specimen collected from an organism as the evaluant and can be used in EHR 2ry research or in vivo basic research. We currently bootstrapping the models from LOINC, but they are not intended for patient care.",
+  "name": "turbo-assay-templating",
+  "updatedAt": "2020-08-07T19:52:08Z",
+  "url": "https://github.com/PennTURBO/turbo-assay-templating",
+  "firstCommitDate": "2020-08-07T19:52:04Z",
+  "lastCommitDate": "2020-08-07T19:52:04Z",
+  "topContributors": [
+    {
+      "contributions": 94,
+      "login": "turbomam"
+    }
+  ]
+}

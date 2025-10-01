@@ -1,0 +1,26 @@
+{
+  "createdAt": "2021-06-15T12:07:53Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "gwas-data-services",
+  "updatedAt": "2025-09-25T10:46:55Z",
+  "url": "https://github.com/EBISPOT/gwas-data-services",
+  "firstCommitDate": "2025-09-25T10:46:51Z",
+  "lastCommitDate": "2025-09-25T10:46:51Z",
+  "topContributors": [
+    {
+      "contributions": 277,
+      "login": "sajo-ebi"
+    },
+    {
+      "contributions": 54,
+      "login": "sprintell"
+    },
+    {
+      "contributions": 10,
+      "login": "ala-ebi"
+    }
+  ]
+}

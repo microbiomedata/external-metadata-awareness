@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-04-24T19:04:47Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "This contains the materials used to validate the OMRSE represenation of social identities.",
+  "name": "socid",
+  "updatedAt": "2023-10-05T19:20:12Z",
+  "url": "https://github.com/mcwdsi/socid",
+  "firstCommitDate": "2016-05-05T17:10:20Z",
+  "lastCommitDate": "2016-05-05T17:10:20Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "aellenhicks"
+    }
+  ]
+}

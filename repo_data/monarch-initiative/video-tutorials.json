@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-12-07T14:07:27Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A repo to collect and produce video tutorials relevant to the Monarch Initiative stack",
+  "name": "video-tutorials",
+  "updatedAt": "2020-12-07T14:19:59Z",
+  "url": "https://github.com/monarch-initiative/video-tutorials",
+  "firstCommitDate": "2020-12-07T14:19:56Z",
+  "lastCommitDate": "2020-12-07T14:19:56Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "matentzn"
+    }
+  ]
+}

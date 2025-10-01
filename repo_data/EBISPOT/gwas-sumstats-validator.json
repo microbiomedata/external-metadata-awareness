@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-08-02T10:57:52Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "GWAS Summary Statistics File Validator",
+  "name": "gwas-sumstats-validator",
+  "updatedAt": "2025-04-09T15:26:26Z",
+  "url": "https://github.com/EBISPOT/gwas-sumstats-validator",
+  "firstCommitDate": "2023-04-11T15:58:41Z",
+  "lastCommitDate": "2023-04-11T15:58:41Z",
+  "topContributors": [
+    {
+      "contributions": 127,
+      "login": "jdhayhurst"
+    }
+  ]
+}

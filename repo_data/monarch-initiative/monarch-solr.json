@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-03-07T15:23:48Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Solr Indexing for the new Monarch graph",
+  "name": "monarch-solr",
+  "updatedAt": "2023-01-10T00:44:40Z",
+  "url": "https://github.com/monarch-initiative/monarch-solr",
+  "firstCommitDate": "2023-01-10T21:09:57Z",
+  "lastCommitDate": "2023-01-10T21:09:57Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 1,
+      "login": "putmantime"
+    }
+  ]
+}

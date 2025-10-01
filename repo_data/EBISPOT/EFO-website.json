@@ -1,0 +1,30 @@
+{
+  "createdAt": "2017-01-04T11:22:32Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Source code for the EFO website at http://www.ebi.ac.uk/efo",
+  "name": "EFO-website",
+  "updatedAt": "2024-05-22T15:19:07Z",
+  "url": "https://github.com/EBISPOT/EFO-website",
+  "firstCommitDate": "2024-05-22T15:19:04Z",
+  "lastCommitDate": "2024-05-22T15:19:04Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 7,
+      "login": "zoependlington"
+    },
+    {
+      "contributions": 3,
+      "login": "serjoshua"
+    },
+    {
+      "contributions": 1,
+      "login": "jamesamcl"
+    }
+  ]
+}

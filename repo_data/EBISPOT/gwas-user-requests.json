@@ -1,0 +1,12 @@
+{
+  "createdAt": "2020-07-09T20:08:57Z",
+  "defaultBranchRef": {
+    "name": ""
+  },
+  "description": "Repository to collect user requests and bug reports for the GWAS Catalog",
+  "name": "gwas-user-requests",
+  "updatedAt": "2020-11-03T03:54:20Z",
+  "url": "https://github.com/EBISPOT/gwas-user-requests",
+  "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+  "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+}

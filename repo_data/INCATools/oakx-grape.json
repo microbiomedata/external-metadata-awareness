@@ -1,0 +1,38 @@
+{
+  "createdAt": "2022-09-01T00:35:43Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Experimental OAK plugin for Grape",
+  "name": "oakx-grape",
+  "updatedAt": "2022-11-15T02:52:07Z",
+  "url": "https://github.com/INCATools/oakx-grape",
+  "firstCommitDate": "2022-11-30T18:52:25Z",
+  "lastCommitDate": "2022-11-30T18:52:25Z",
+  "topContributors": [
+    {
+      "contributions": 31,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 30,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 25,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 11,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 5,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 1,
+      "login": "justaddcoffee"
+    }
+  ]
+}

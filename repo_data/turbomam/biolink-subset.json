@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-06-26T16:11:13Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "biolink-subset",
+  "updatedAt": "2024-08-16T16:08:10Z",
+  "url": "https://github.com/turbomam/biolink-subset",
+  "firstCommitDate": "2023-06-26T16:25:15Z",
+  "lastCommitDate": "2023-06-26T16:25:15Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "turbomam"
+    }
+  ]
+}

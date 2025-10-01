@@ -194,6 +194,83 @@ env-triad-value-counts:
 		--mongo-uri "$(MONGO_URI)" \
 		$(ENV_FILE_OPTION) # creates its own indices # 30 minutes + 6 for indexing
 
+# Step 3a: Prepare env_triads for flattening with beneficial indexes
+env-triads-flatten-prep:
+	@date
+	@echo "🔧 [PREP] Using MONGO_URI=$(MONGO_URI)"
+	@echo "🔧 [PREP] Checking if accession index exists on env_triads..."
+	time $(RUN) mongo-connect \
+		--uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--connect \
+		--verbose \
+		--command 'try { db.env_triads.createIndex({accession: 1}, {background: true}); print("✅ Index created"); } catch(e) { if(e.code === 86) { print("✅ Index already exists (OK)"); } else { throw e; } }'
+	@echo "✅ [PREP] Pre-flattening index creation completed"
+	@date
+
+# Step 3b: Transform env_triads into multi-component relational structure
+env-triads-flatten-transform: env-triads-flatten-prep
+	@date
+	@echo "🔄 [TRANSFORM] Using MONGO_URI=$(MONGO_URI)"
+	@echo "🔄 [TRANSFORM] Starting flattening transformation: env_triads -> env_triads_flattened"
+	@echo "🔄 [TRANSFORM] This will create one record per component with dual rawness levels"
+	time $(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/flatten_env_triads_multi_component.js \
+		--verbose
+	@echo "✅ [TRANSFORM] Multi-component flattening transformation completed"
+	@date
+
+# Step 3c: Create optimized indexes on flattened collection
+env-triads-flatten-index: env-triads-flatten-transform
+	@date
+	@echo "📊 [INDEX] Using MONGO_URI=$(MONGO_URI)"
+	@echo "📊 [INDEX] Creating accession index for biosample lookups..."
+	time $(RUN) mongo-connect \
+		--uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--connect \
+		--verbose \
+		--command 'try { db.env_triads_flattened.createIndex({accession: 1}, {background: true}); print("✅ Index created"); } catch(e) { if(e.code === 86) { print("✅ Index already exists (OK)"); } else { throw e; } }'
+	@echo "📊 [INDEX] Creating attribute+instance index for scale type queries..."
+	time $(RUN) mongo-connect \
+		--uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--connect \
+		--verbose \
+		--command 'db.env_triads_flattened.createIndex({attribute: 1, instance: 1}, {background: true})'
+	@echo "📊 [INDEX] Creating CURIE ID index for reverse lookups..."
+	time $(RUN) mongo-connect \
+		--uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--connect \
+		--verbose \
+		--command 'db.env_triads_flattened.createIndex({id: 1}, {background: true})'
+	@echo "📊 [INDEX] Creating prefix index for ontology filtering..."
+	time $(RUN) mongo-connect \
+		--uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--connect \
+		--verbose \
+		--command 'db.env_triads_flattened.createIndex({prefix: 1}, {background: true})'
+	@echo "📊 [INDEX] Creating compound index for complex queries..."
+	time $(RUN) mongo-connect \
+		--uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--connect \
+		--verbose \
+		--command 'db.env_triads_flattened.createIndex({accession: 1, attribute: 1, instance: 1}, {background: true})'
+	@echo "✅ [INDEX] All optimized indexes created on env_triads_flattened"
+	@date
+
+# Step 3: Complete flattening pipeline (meta-target)
+env-triads-flattened: env-triads-flatten-index
+	@echo "🎉 ✅ ENV TRIADS FLATTENING COMPLETE 🎉"
+	@echo "📋 Created collection: env_triads_flattened"
+	@echo "📋 Structure: accession | attribute | instance | raw_original | raw_component | id | label | prefix | source"
+	@echo "📋 Indexes: accession, attribute+instance, id, prefix, accession+attribute+instance"
+
 ####
 
 # duplicative

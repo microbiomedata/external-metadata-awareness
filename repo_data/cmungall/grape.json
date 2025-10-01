@@ -1,0 +1,42 @@
+{
+  "createdAt": "2022-08-31T23:20:51Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "🍇 GRAPE is a Rust/Python library for Graph Representation Learning, Predictions and Evaluations",
+  "name": "grape",
+  "updatedAt": "2022-08-28T19:10:17Z",
+  "url": "https://github.com/cmungall/grape",
+  "firstCommitDate": "2022-08-24T17:50:07Z",
+  "lastCommitDate": "2022-08-24T17:50:07Z",
+  "topContributors": [
+    {
+      "contributions": 203,
+      "login": "LucaCappelletti94"
+    },
+    {
+      "contributions": 46,
+      "login": "gvalentini58"
+    },
+    {
+      "contributions": 23,
+      "login": "zommiommy"
+    },
+    {
+      "contributions": 11,
+      "login": "ElenaCasiraghi"
+    },
+    {
+      "contributions": 3,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 1,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 1,
+      "login": "pnrobinson"
+    }
+  ]
+}

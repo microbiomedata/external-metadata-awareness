@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-09-21T19:56:41Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "EXPERIMENTAL",
+  "name": "basin3d_schema",
+  "updatedAt": "2022-09-21T19:58:11Z",
+  "url": "https://github.com/cmungall/basin3d_schema",
+  "firstCommitDate": "2022-09-22T15:20:24Z",
+  "lastCommitDate": "2022-09-22T15:20:24Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "cmungall"
+    }
+  ]
+}

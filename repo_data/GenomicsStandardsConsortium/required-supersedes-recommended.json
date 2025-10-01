@@ -1,0 +1,54 @@
+{
+  "createdAt": "2023-10-19T13:47:57Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Proposed code to remove `recommended` assertions in `slot_usages` if `required` is set",
+  "name": "required-supersedes-recommended",
+  "updatedAt": "2024-10-08T18:51:14Z",
+  "url": "https://github.com/GenomicsStandardsConsortium/required-supersedes-recommended",
+  "firstCommitDate": "2024-10-08T18:50:34Z",
+  "lastCommitDate": "2024-10-08T18:50:34Z",
+  "topContributors": [
+    {
+      "contributions": 192,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 140,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 38,
+      "login": "ramonawalls"
+    },
+    {
+      "contributions": 25,
+      "login": "mslarae13"
+    },
+    {
+      "contributions": 13,
+      "login": "folker"
+    },
+    {
+      "contributions": 13,
+      "login": "lschriml"
+    },
+    {
+      "contributions": 10,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 10,
+      "login": "renzok"
+    },
+    {
+      "contributions": 9,
+      "login": "only1chunts"
+    },
+    {
+      "contributions": 7,
+      "login": "cmungall"
+    }
+  ]
+}

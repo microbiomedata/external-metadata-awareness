@@ -1,0 +1,30 @@
+{
+  "createdAt": "2019-06-14T11:50:54Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Pipeline to generate an RDF knowledgegraph that links MonDO disease classes to ICD code terms.",
+  "name": "disease-diagnosis-knowledgegraph-pipeline",
+  "updatedAt": "2025-09-08T07:46:01Z",
+  "url": "https://github.com/PennTURBO/disease-diagnosis-knowledgegraph-pipeline",
+  "firstCommitDate": "2023-08-04T00:58:48Z",
+  "lastCommitDate": "2023-08-04T00:58:48Z",
+  "topContributors": [
+    {
+      "contributions": 257,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 26,
+      "login": "greenguy33"
+    },
+    {
+      "contributions": 3,
+      "login": "hjwilli"
+    },
+    {
+      "contributions": 1,
+      "login": "cstoeckert"
+    }
+  ]
+}

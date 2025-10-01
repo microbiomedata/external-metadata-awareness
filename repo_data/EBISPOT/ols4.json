@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-05-25T22:00:16Z",
+  "defaultBranchRef": {
+    "name": "dev"
+  },
+  "description": "The EMBL-EBI Ontology Lookup Service (OLS)",
+  "name": "ols4",
+  "updatedAt": "2025-09-30T15:45:47Z",
+  "url": "https://github.com/EBISPOT/ols4",
+  "firstCommitDate": "2025-09-30T15:45:44Z",
+  "lastCommitDate": "2025-09-30T15:45:44Z",
+  "topContributors": [
+    {
+      "contributions": 654,
+      "login": "jamesamcl"
+    },
+    {
+      "contributions": 353,
+      "login": "henrietteharmse"
+    },
+    {
+      "contributions": 262,
+      "login": "haideriqbal"
+    },
+    {
+      "contributions": 101,
+      "login": "serjoshua"
+    },
+    {
+      "contributions": 14,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 6,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 5,
+      "login": "julian-schneider"
+    },
+    {
+      "contributions": 3,
+      "login": "giraygi"
+    },
+    {
+      "contributions": 2,
+      "login": "deepananbu"
+    },
+    {
+      "contributions": 2,
+      "login": "mdrishti"
+    }
+  ]
+}

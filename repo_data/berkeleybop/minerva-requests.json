@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-06-30T20:43:53Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "JavaScript library for generating request information for interactions with a Minerva server.",
+  "name": "minerva-requests",
+  "updatedAt": "2020-07-02T23:25:40Z",
+  "url": "https://github.com/berkeleybop/minerva-requests",
+  "firstCommitDate": "2020-07-02T23:25:32Z",
+  "lastCommitDate": "2020-07-02T23:25:32Z",
+  "topContributors": [
+    {
+      "contributions": 48,
+      "login": "kltm"
+    }
+  ]
+}

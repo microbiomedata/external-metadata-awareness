@@ -1,0 +1,34 @@
+{
+  "createdAt": "2020-02-16T10:48:33Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "gwasdepo-commons",
+  "updatedAt": "2025-04-29T10:31:04Z",
+  "url": "https://github.com/EBISPOT/gwasdepo-commons",
+  "firstCommitDate": "2025-04-29T10:31:00Z",
+  "lastCommitDate": "2025-04-29T10:31:00Z",
+  "topContributors": [
+    {
+      "contributions": 153,
+      "login": "sajo-ebi"
+    },
+    {
+      "contributions": 67,
+      "login": "ala-ebi"
+    },
+    {
+      "contributions": 8,
+      "login": "sprintell"
+    },
+    {
+      "contributions": 5,
+      "login": "tudorgroza"
+    },
+    {
+      "contributions": 1,
+      "login": "jstewart-ebi"
+    }
+  ]
+}

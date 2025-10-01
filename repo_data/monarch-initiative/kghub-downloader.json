@@ -1,0 +1,38 @@
+{
+  "createdAt": "2021-12-08T19:42:10Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Configuration based file caching downloader",
+  "name": "kghub-downloader",
+  "updatedAt": "2025-08-04T21:55:43Z",
+  "url": "https://github.com/monarch-initiative/kghub-downloader",
+  "firstCommitDate": "2025-08-04T21:55:38Z",
+  "lastCommitDate": "2025-08-04T21:55:38Z",
+  "topContributors": [
+    {
+      "contributions": 41,
+      "login": "ptgolden"
+    },
+    {
+      "contributions": 32,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 26,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 17,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 2,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 1,
+      "login": "caufieldjh"
+    }
+  ]
+}

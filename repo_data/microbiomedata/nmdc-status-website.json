@@ -1,0 +1,26 @@
+{
+  "createdAt": "2023-09-29T20:27:54Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Static web page(s) used to display messages during outages and other special events",
+  "name": "nmdc-status-website",
+  "updatedAt": "2025-09-25T18:19:57Z",
+  "url": "https://github.com/microbiomedata/nmdc-status-website",
+  "firstCommitDate": "2025-09-25T18:19:54Z",
+  "lastCommitDate": "2025-09-25T18:19:54Z",
+  "topContributors": [
+    {
+      "contributions": 28,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 5,
+      "login": "shreddd"
+    },
+    {
+      "contributions": 1,
+      "login": "pkalita-lbl"
+    }
+  ]
+}

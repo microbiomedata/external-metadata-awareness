@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-05-13T18:47:00Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Website source code for w3id.org.",
+  "name": "w3id.org",
+  "updatedAt": "2022-08-23T11:54:52Z",
+  "url": "https://github.com/turbomam/w3id.org",
+  "firstCommitDate": "2022-09-13T13:26:23Z",
+  "lastCommitDate": "2022-09-13T13:26:23Z",
+  "topContributors": [
+    {
+      "contributions": 1586,
+      "login": "dgarijo"
+    },
+    {
+      "contributions": 981,
+      "login": "davidlehn"
+    },
+    {
+      "contributions": 151,
+      "login": "jhaag75"
+    },
+    {
+      "contributions": 88,
+      "login": "msporny"
+    },
+    {
+      "contributions": 81,
+      "login": "rapw3k"
+    },
+    {
+      "contributions": 78,
+      "login": "luigi-asprino"
+    },
+    {
+      "contributions": 66,
+      "login": "markwilkinson"
+    },
+    {
+      "contributions": 59,
+      "login": "essepuntato"
+    },
+    {
+      "contributions": 52,
+      "login": "stain"
+    },
+    {
+      "contributions": 49,
+      "login": "tkuhn"
+    }
+  ]
+}

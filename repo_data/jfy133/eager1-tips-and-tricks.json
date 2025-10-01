@@ -1,0 +1,26 @@
+{
+  "createdAt": "2019-03-14T11:51:44Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "EAGER1 Tips and Tricks",
+  "name": "eager1-tips-and-tricks",
+  "updatedAt": "2023-01-28T12:22:35Z",
+  "url": "https://github.com/jfy133/eager1-tips-and-tricks",
+  "firstCommitDate": "2019-04-12T11:54:39Z",
+  "lastCommitDate": "2019-04-12T11:54:39Z",
+  "topContributors": [
+    {
+      "contributions": 22,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 10,
+      "login": "TCLamnidis"
+    },
+    {
+      "contributions": 1,
+      "login": "aidaanva"
+    }
+  ]
+}

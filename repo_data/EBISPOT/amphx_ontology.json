@@ -1,0 +1,30 @@
+{
+  "createdAt": "2017-11-14T10:20:13Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Home of the Amphioxus Development and Anatomy Ontology (AMPHX)",
+  "name": "amphx_ontology",
+  "updatedAt": "2021-12-29T00:05:55Z",
+  "url": "https://github.com/EBISPOT/amphx_ontology",
+  "firstCommitDate": "2020-12-18T17:58:14Z",
+  "lastCommitDate": "2020-12-18T17:58:14Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 4,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 2,
+      "login": "S2Ola"
+    },
+    {
+      "contributions": 1,
+      "login": "delphinedauga"
+    }
+  ]
+}

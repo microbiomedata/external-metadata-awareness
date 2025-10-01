@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-10-12T20:03:18Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "FigureIdentifier",
+  "updatedAt": "2019-07-07T18:08:06Z",
+  "url": "https://github.com/INCATools/FigureIdentifier",
+  "firstCommitDate": "2018-10-23T21:03:52Z",
+  "lastCommitDate": "2018-10-23T21:03:52Z",
+  "topContributors": [
+    {
+      "contributions": 17,
+      "login": "nathandunn"
+    }
+  ]
+}

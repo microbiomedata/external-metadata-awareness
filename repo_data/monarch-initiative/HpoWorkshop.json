@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-07-11T10:49:09Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Materials for an HPO Workshop",
+  "name": "HpoWorkshop",
+  "updatedAt": "2025-03-31T08:10:58Z",
+  "url": "https://github.com/monarch-initiative/HpoWorkshop",
+  "firstCommitDate": "2022-07-20T10:38:43Z",
+  "lastCommitDate": "2022-07-20T10:38:43Z",
+  "topContributors": [
+    {
+      "contributions": 12,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 1,
+      "login": "nlharris"
+    }
+  ]
+}

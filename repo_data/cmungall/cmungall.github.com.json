@@ -1,0 +1,18 @@
+{
+  "createdAt": "2010-11-12T02:44:29Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "cmungall.github.com",
+  "updatedAt": "2012-12-15T23:27:56Z",
+  "url": "https://github.com/cmungall/cmungall.github.com",
+  "firstCommitDate": "2010-11-12T02:43:20Z",
+  "lastCommitDate": "2010-11-12T02:43:20Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

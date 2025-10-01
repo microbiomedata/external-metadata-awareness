@@ -1,0 +1,22 @@
+{
+  "createdAt": "2020-10-15T13:16:04Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Interpretable prioritization of splice variants in diagnostic next-generation sequencing",
+  "name": "Squirls",
+  "updatedAt": "2025-07-23T14:47:38Z",
+  "url": "https://github.com/monarch-initiative/Squirls",
+  "firstCommitDate": "2023-05-05T20:19:01Z",
+  "lastCommitDate": "2023-05-05T20:19:01Z",
+  "topContributors": [
+    {
+      "contributions": 60,
+      "login": "ielis"
+    },
+    {
+      "contributions": 1,
+      "login": "iimpulse"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-08-16T01:05:02Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Phenopacket generator",
+  "name": "web-phenopacket-generator",
+  "updatedAt": "2018-08-29T03:53:54Z",
+  "url": "https://github.com/monarch-initiative/web-phenopacket-generator",
+  "firstCommitDate": "2018-08-29T03:53:53Z",
+  "lastCommitDate": "2018-08-29T03:53:53Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "jmcmurry"
+    }
+  ]
+}

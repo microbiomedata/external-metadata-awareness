@@ -1,0 +1,22 @@
+{
+  "createdAt": "2019-02-18T12:20:33Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Publication Manager",
+  "name": "pubman",
+  "updatedAt": "2020-03-28T10:45:53Z",
+  "url": "https://github.com/monarch-initiative/pubman",
+  "firstCommitDate": "2020-03-28T10:45:45Z",
+  "lastCommitDate": "2020-03-28T10:45:45Z",
+  "topContributors": [
+    {
+      "contributions": 42,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 2,
+      "login": "kingmanzhang"
+    }
+  ]
+}

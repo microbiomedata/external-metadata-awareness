@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-09-15T15:17:16Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Files for schemasheets exercises at ICBO 2022",
+  "name": "sheets-for-person-schema",
+  "updatedAt": "2022-12-07T14:29:26Z",
+  "url": "https://github.com/turbomam/sheets-for-person-schema",
+  "firstCommitDate": "2022-09-15T15:44:28Z",
+  "lastCommitDate": "2022-09-15T15:44:28Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "turbomam"
+    }
+  ]
+}

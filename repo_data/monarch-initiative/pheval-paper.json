@@ -1,0 +1,22 @@
+{
+  "createdAt": "2025-01-10T19:59:15Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "pheval-paper",
+  "updatedAt": "2025-03-28T16:42:30Z",
+  "url": "https://github.com/monarch-initiative/pheval-paper",
+  "firstCommitDate": "2025-03-28T16:42:26Z",
+  "lastCommitDate": "2025-03-28T16:42:26Z",
+  "topContributors": [
+    {
+      "contributions": 26,
+      "login": "yaseminbridges"
+    },
+    {
+      "contributions": 4,
+      "login": "julesjacobsen"
+    }
+  ]
+}

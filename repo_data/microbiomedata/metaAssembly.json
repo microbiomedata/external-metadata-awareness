@@ -1,0 +1,54 @@
+{
+  "createdAt": "2020-05-21T22:24:45Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Workflow for metagenome assembly",
+  "name": "metaAssembly",
+  "updatedAt": "2025-08-05T21:55:03Z",
+  "url": "https://github.com/microbiomedata/metaAssembly",
+  "firstCommitDate": "2025-08-05T21:54:59Z",
+  "lastCommitDate": "2025-08-05T21:54:59Z",
+  "topContributors": [
+    {
+      "contributions": 55,
+      "login": "vlilanl"
+    },
+    {
+      "contributions": 43,
+      "login": "kaijli"
+    },
+    {
+      "contributions": 16,
+      "login": "scanon"
+    },
+    {
+      "contributions": 9,
+      "login": "chienchi"
+    },
+    {
+      "contributions": 3,
+      "login": "aclum"
+    },
+    {
+      "contributions": 3,
+      "login": "hubin-keio"
+    },
+    {
+      "contributions": 2,
+      "login": "mbthornton-lbl"
+    },
+    {
+      "contributions": 2,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 1,
+      "login": "jfroula"
+    },
+    {
+      "contributions": 1,
+      "login": "ssarrafan"
+    }
+  ]
+}

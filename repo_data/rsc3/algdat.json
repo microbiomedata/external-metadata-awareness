@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-07-22T16:59:04Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Matlab Code for Algorithms For Data Science",
+  "name": "algdat",
+  "updatedAt": "2021-08-08T15:38:54Z",
+  "url": "https://github.com/rsc3/algdat",
+  "firstCommitDate": "2021-08-08T15:38:11Z",
+  "lastCommitDate": "2021-08-08T15:38:11Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "rsc3"
+    }
+  ]
+}

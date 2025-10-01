@@ -1,0 +1,26 @@
+{
+  "createdAt": "2021-03-15T17:13:43Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The New Curation Front End interface for the GWAS Catalog",
+  "name": "gwas-curation-ui",
+  "updatedAt": "2025-01-21T11:48:35Z",
+  "url": "https://github.com/EBISPOT/gwas-curation-ui",
+  "firstCommitDate": "2025-01-21T11:48:29Z",
+  "lastCommitDate": "2025-01-21T11:48:29Z",
+  "topContributors": [
+    {
+      "contributions": 288,
+      "login": "ala-ebi"
+    },
+    {
+      "contributions": 35,
+      "login": "sajo-ebi"
+    },
+    {
+      "contributions": 30,
+      "login": "sprintell"
+    }
+  ]
+}

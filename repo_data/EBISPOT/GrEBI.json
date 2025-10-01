@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-12-31T04:12:08Z",
+  "defaultBranchRef": {
+    "name": "dev"
+  },
+  "description": "HPC aggregation pipeline and API/MCP server for LLM-mediated knowledge graphs",
+  "name": "GrEBI",
+  "updatedAt": "2025-09-30T10:42:30Z",
+  "url": "https://github.com/EBISPOT/GrEBI",
+  "firstCommitDate": "2025-09-30T10:42:26Z",
+  "lastCommitDate": "2025-09-30T10:42:26Z",
+  "topContributors": [
+    {
+      "contributions": 374,
+      "login": "jamesamcl"
+    },
+    {
+      "contributions": 6,
+      "login": "souzadevinicius"
+    }
+  ]
+}

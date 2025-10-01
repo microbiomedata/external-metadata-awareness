@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-06-24T17:55:03Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Minimal Information About a New Cell Type",
+  "name": "mianct-schema",
+  "updatedAt": "2023-06-28T17:57:12Z",
+  "url": "https://github.com/cmungall/mianct-schema",
+  "firstCommitDate": "2021-06-24T23:09:20Z",
+  "lastCommitDate": "2021-06-24T23:09:20Z",
+  "topContributors": [
+    {
+      "contributions": 15,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 4,
+      "login": "actions-user"
+    }
+  ]
+}

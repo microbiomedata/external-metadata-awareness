@@ -1,0 +1,50 @@
+{
+  "createdAt": "2023-10-04T13:20:48Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "MIxS 6.2 schema, from GenomicsStandardsConsortium/mixs6.2_release_candidate. Ready for merge into GenomicsStandardsConsortium/mixs",
+  "name": "mixs-6-2-for-merge",
+  "updatedAt": "2023-10-16T17:21:42Z",
+  "url": "https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge",
+  "firstCommitDate": "2023-10-17T14:13:11Z",
+  "lastCommitDate": "2023-10-17T14:13:11Z",
+  "topContributors": [
+    {
+      "contributions": 63,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 50,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 36,
+      "login": "ramonawalls"
+    },
+    {
+      "contributions": 13,
+      "login": "folker"
+    },
+    {
+      "contributions": 10,
+      "login": "renzok"
+    },
+    {
+      "contributions": 8,
+      "login": "only1chunts"
+    },
+    {
+      "contributions": 8,
+      "login": "lschriml"
+    },
+    {
+      "contributions": 2,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 2,
+      "login": "genomicstandardsconsortium"
+    }
+  ]
+}

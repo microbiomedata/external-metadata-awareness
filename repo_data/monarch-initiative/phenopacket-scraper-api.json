@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-06-23T19:16:17Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "REST API for phenopacket-scraper",
+  "name": "phenopacket-scraper-api",
+  "updatedAt": "2016-06-28T20:15:26Z",
+  "url": "https://github.com/monarch-initiative/phenopacket-scraper-api",
+  "firstCommitDate": "2016-08-23T18:36:40Z",
+  "lastCommitDate": "2016-08-23T18:36:40Z",
+  "topContributors": [
+    {
+      "contributions": 20,
+      "login": "satwik77"
+    },
+    {
+      "contributions": 8,
+      "login": "DoctorBud"
+    }
+  ]
+}

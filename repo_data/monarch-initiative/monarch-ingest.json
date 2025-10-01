@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-06-25T03:06:25Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Data ingest application for Monarch Initiative knowledge graph using Koza",
+  "name": "monarch-ingest",
+  "updatedAt": "2025-09-18T19:25:37Z",
+  "url": "https://github.com/monarch-initiative/monarch-ingest",
+  "firstCommitDate": "2025-09-18T19:25:31Z",
+  "lastCommitDate": "2025-09-18T19:25:31Z",
+  "topContributors": [
+    {
+      "contributions": 960,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 122,
+      "login": "RichardBruskiewich"
+    },
+    {
+      "contributions": 28,
+      "login": "victoriasoesanto"
+    },
+    {
+      "contributions": 17,
+      "login": "amc-corey-cox"
+    },
+    {
+      "contributions": 14,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 9,
+      "login": "DnlRKorn"
+    },
+    {
+      "contributions": 7,
+      "login": "putmantime"
+    },
+    {
+      "contributions": 6,
+      "login": "iQuxLE"
+    },
+    {
+      "contributions": 4,
+      "login": "AO33"
+    },
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

@@ -78,7 +78,6 @@ env-triad-oak-annotator = 'external_metadata_awareness.new_env_triad_oak_annotat
 env-triad-ols-annotator = 'external_metadata_awareness.new_env_triad_ols_annotator:main'
 env-triad-check-semsql-curies = 'external_metadata_awareness.new_check_semsql_curies:main'
 env-triad-bioportal-curie-mapper = 'external_metadata_awareness.new_bioportal_curie_mapper:main'
-prioritize-measurement-targets = 'external_metadata_awareness.prioritize_measurement_targets:main'
 populate-env-triads-collection = 'external_metadata_awareness.populate_env_triads_collection:populate'
 normalize-biosample-measurements = 'external_metadata_awareness.normalize_biosample_measurements:main'
 export-sra-accession-pairs = 'external_metadata_awareness.export_sra_accession_pairs:main'
@@ -102,8 +101,8 @@ flatten-biosample-attributes = 'external_metadata_awareness.flatten_biosample_at
 # GitHub tools
 fetch-github-releases = 'external_metadata_awareness.fetch_github_releases:main'
 
-# Semantic analysis tools
-analyze-attribute-definitions-tfidf = 'external_metadata_awareness.analyze_attribute_definitions_tfidf:main'
+# Measurement discovery tools
+measurement-discovery-efficient = 'external_metadata_awareness.measurement_discovery_efficient:main'
 
 [tool.deptry.per_rule_ignores]
 DEP001 = ["common", "core"] # locally defined

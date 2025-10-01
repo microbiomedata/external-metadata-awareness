@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-02-04T01:51:49Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "MATE-LLM",
+  "updatedAt": "2025-09-24T06:17:48Z",
+  "url": "https://github.com/CultureBotAI/MATE-LLM",
+  "firstCommitDate": "2025-04-08T01:51:51Z",
+  "lastCommitDate": "2025-04-08T01:51:51Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "realmarcin"
+    }
+  ]
+}

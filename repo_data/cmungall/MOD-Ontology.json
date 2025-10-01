@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-01-11T18:54:06Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Metadata for Ontology Description and Publication Ontology",
+  "name": "MOD-Ontology",
+  "updatedAt": "2022-01-06T12:22:14Z",
+  "url": "https://github.com/cmungall/MOD-Ontology",
+  "firstCommitDate": "2021-12-04T20:10:42Z",
+  "lastCommitDate": "2021-12-04T20:10:42Z",
+  "topContributors": [
+    {
+      "contributions": 28,
+      "login": "jonquet"
+    },
+    {
+      "contributions": 17,
+      "login": "biswanathdutta"
+    }
+  ]
+}

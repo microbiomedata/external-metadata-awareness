@@ -1,0 +1,26 @@
+{
+  "createdAt": "2016-04-19T21:16:36Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Automatically exported from code.google.com/p/ogms",
+  "name": "ogms",
+  "updatedAt": "2016-04-19T21:16:38Z",
+  "url": "https://github.com/cmungall/ogms",
+  "firstCommitDate": "2015-10-21T03:05:46Z",
+  "lastCommitDate": "2015-10-21T03:05:46Z",
+  "topContributors": [
+    {
+      "contributions": 19,
+      "login": "awqbi"
+    },
+    {
+      "contributions": 4,
+      "login": "sbjain"
+    },
+    {
+      "contributions": 2,
+      "login": "alanruttenberg"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "createdAt": "2020-05-21T16:33:14Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "GWAS Summary Statistics Data Harmonisation",
+  "name": "gwas-sumstats-harmoniser",
+  "updatedAt": "2025-05-12T11:39:31Z",
+  "url": "https://github.com/EBISPOT/gwas-sumstats-harmoniser",
+  "firstCommitDate": "2025-01-13T18:33:23Z",
+  "lastCommitDate": "2025-01-13T18:33:23Z",
+  "topContributors": [
+    {
+      "contributions": 149,
+      "login": "jiyue1214"
+    },
+    {
+      "contributions": 58,
+      "login": "jdhayhurst"
+    },
+    {
+      "contributions": 3,
+      "login": "smlmbrt"
+    },
+    {
+      "contributions": 2,
+      "login": "karatugo"
+    }
+  ]
+}

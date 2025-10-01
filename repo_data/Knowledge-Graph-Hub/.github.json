@@ -1,0 +1,30 @@
+{
+  "createdAt": "2022-08-17T02:08:23Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Welcome to KG-Hub",
+  "name": ".github",
+  "updatedAt": "2025-08-25T18:41:02Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/.github",
+  "firstCommitDate": "2025-08-25T18:40:58Z",
+  "lastCommitDate": "2025-08-25T18:40:58Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 1,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 1,
+      "login": "nlharris"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

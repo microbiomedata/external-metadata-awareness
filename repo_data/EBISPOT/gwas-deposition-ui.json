@@ -1,0 +1,42 @@
+{
+  "createdAt": "2019-05-22T14:57:13Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Deposition application for submitting GWAS data.",
+  "name": "gwas-deposition-ui",
+  "updatedAt": "2025-09-23T13:54:16Z",
+  "url": "https://github.com/EBISPOT/gwas-deposition-ui",
+  "firstCommitDate": "2025-09-23T13:54:08Z",
+  "lastCommitDate": "2025-09-23T13:54:08Z",
+  "topContributors": [
+    {
+      "contributions": 472,
+      "login": "twhetzel"
+    },
+    {
+      "contributions": 120,
+      "login": "ala-ebi"
+    },
+    {
+      "contributions": 17,
+      "login": "sajo-ebi"
+    },
+    {
+      "contributions": 13,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 10,
+      "login": "sprintell"
+    },
+    {
+      "contributions": 6,
+      "login": "jstewart-ebi"
+    },
+    {
+      "contributions": 2,
+      "login": "tudorgroza"
+    }
+  ]
+}

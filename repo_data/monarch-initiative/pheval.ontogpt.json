@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-06-16T12:28:00Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A PhEval plugin for integrating LLMs, enabling gene and disease prioritisation based on phenotypic data in a standardised pipeline.",
+  "name": "pheval.ontogpt",
+  "updatedAt": "2024-11-04T18:34:08Z",
+  "url": "https://github.com/monarch-initiative/pheval.ontogpt",
+  "firstCommitDate": "2024-05-24T14:32:09Z",
+  "lastCommitDate": "2024-05-24T14:32:09Z",
+  "topContributors": [
+    {
+      "contributions": 92,
+      "login": "yaseminbridges"
+    }
+  ]
+}

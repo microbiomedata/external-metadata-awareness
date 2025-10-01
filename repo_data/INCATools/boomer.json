@@ -1,0 +1,34 @@
+{
+  "createdAt": "2019-12-04T16:16:30Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Bayesian OWL ontology merging",
+  "name": "boomer",
+  "updatedAt": "2025-07-11T07:39:00Z",
+  "url": "https://github.com/INCATools/boomer",
+  "firstCommitDate": "2025-06-04T23:13:39Z",
+  "lastCommitDate": "2025-06-04T23:13:39Z",
+  "topContributors": [
+    {
+      "contributions": 212,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 143,
+      "login": "scala-steward"
+    },
+    {
+      "contributions": 10,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 5,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 2,
+      "login": "wdduncan"
+    }
+  ]
+}

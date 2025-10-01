@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-03-02T20:00:55Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "obo-relations-test",
+  "updatedAt": "2023-09-11T14:45:24Z",
+  "url": "https://github.com/cmungall/obo-relations-test",
+  "firstCommitDate": "2015-03-03T16:32:24Z",
+  "lastCommitDate": "2015-03-03T16:32:24Z",
+  "topContributors": [
+    {
+      "contributions": 9,
+      "login": "cmungall"
+    }
+  ]
+}

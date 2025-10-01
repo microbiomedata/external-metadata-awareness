@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-04-03T00:54:27Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "National Microbiome Data Collaborative (NMDC) unified data model",
+  "name": "nmdc-schema",
+  "updatedAt": "2025-09-25T19:22:55Z",
+  "url": "https://github.com/microbiomedata/nmdc-schema",
+  "firstCommitDate": "2025-09-25T19:22:47Z",
+  "lastCommitDate": "2025-09-25T19:22:47Z",
+  "topContributors": [
+    {
+      "contributions": 2074,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 677,
+      "login": "aclum"
+    },
+    {
+      "contributions": 566,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 460,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 242,
+      "login": "kheal"
+    },
+    {
+      "contributions": 234,
+      "login": "mslarae13"
+    },
+    {
+      "contributions": 205,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 196,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 136,
+      "login": "mbthornton-lbl"
+    },
+    {
+      "contributions": 109,
+      "login": "hesspnnl"
+    }
+  ]
+}

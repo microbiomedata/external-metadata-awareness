@@ -1,0 +1,46 @@
+{
+  "createdAt": "2024-05-09T18:05:46Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Scripts that periodically aggregate data related to KEGG search",
+  "name": "nmdc-aggregator",
+  "updatedAt": "2025-09-02T20:09:07Z",
+  "url": "https://github.com/microbiomedata/nmdc-aggregator",
+  "firstCommitDate": "2025-09-02T20:09:02Z",
+  "lastCommitDate": "2025-09-02T20:09:02Z",
+  "topContributors": [
+    {
+      "contributions": 34,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 24,
+      "login": "kheal"
+    },
+    {
+      "contributions": 20,
+      "login": "hesspnnl"
+    },
+    {
+      "contributions": 12,
+      "login": "aclum"
+    },
+    {
+      "contributions": 8,
+      "login": "chienchi"
+    },
+    {
+      "contributions": 3,
+      "login": "mbthornton-lbl"
+    },
+    {
+      "contributions": 1,
+      "login": "dwinston"
+    },
+    {
+      "contributions": 1,
+      "login": "picowatt"
+    }
+  ]
+}

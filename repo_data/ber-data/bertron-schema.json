@@ -1,0 +1,50 @@
+{
+  "createdAt": "2025-03-07T22:34:07Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "LinkML schema for BERtron project.",
+  "name": "bertron-schema",
+  "updatedAt": "2025-09-17T21:13:13Z",
+  "url": "https://github.com/ber-data/bertron-schema",
+  "firstCommitDate": "2025-09-15T21:35:47Z",
+  "lastCommitDate": "2025-09-15T21:35:47Z",
+  "topContributors": [
+    {
+      "contributions": 49,
+      "login": "ialarmedalien"
+    },
+    {
+      "contributions": 27,
+      "login": "mslarae13"
+    },
+    {
+      "contributions": 17,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 10,
+      "login": "aclum"
+    },
+    {
+      "contributions": 9,
+      "login": "shreddd"
+    },
+    {
+      "contributions": 4,
+      "login": "madettmann"
+    },
+    {
+      "contributions": 4,
+      "login": "Copilot"
+    },
+    {
+      "contributions": 3,
+      "login": "vchendrix"
+    },
+    {
+      "contributions": 1,
+      "login": "jeff-cohere"
+    }
+  ]
+}

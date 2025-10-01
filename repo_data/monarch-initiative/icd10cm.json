@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-02-09T21:32:10Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Data ingest pipeline for ICD-10-CM.",
+  "name": "icd10cm",
+  "updatedAt": "2024-11-06T21:35:29Z",
+  "url": "https://github.com/monarch-initiative/icd10cm",
+  "firstCommitDate": "2022-05-26T23:38:38Z",
+  "lastCommitDate": "2022-05-26T23:38:38Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "joeflack4"
+    }
+  ]
+}

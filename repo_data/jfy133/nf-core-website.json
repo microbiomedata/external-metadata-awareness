@@ -1,0 +1,54 @@
+{
+  "createdAt": "2024-07-02T07:14:01Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Code and files for the main nf-core website.",
+  "name": "nf-core-website",
+  "updatedAt": "2025-07-28T08:01:50Z",
+  "url": "https://github.com/jfy133/nf-core-website",
+  "firstCommitDate": "2025-07-28T02:58:17Z",
+  "lastCommitDate": "2025-07-28T02:58:17Z",
+  "topContributors": [
+    {
+      "contributions": 3098,
+      "login": "mashehu"
+    },
+    {
+      "contributions": 2394,
+      "login": "ewels"
+    },
+    {
+      "contributions": 1676,
+      "login": "nf-core-bot"
+    },
+    {
+      "contributions": 625,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 385,
+      "login": "FranBonath"
+    },
+    {
+      "contributions": 319,
+      "login": "apeltzer"
+    },
+    {
+      "contributions": 294,
+      "login": "renbot-bio"
+    },
+    {
+      "contributions": 290,
+      "login": "maxulysse"
+    },
+    {
+      "contributions": 276,
+      "login": "christopher-hakkaart"
+    },
+    {
+      "contributions": 173,
+      "login": "FriederikeHanssen"
+    }
+  ]
+}

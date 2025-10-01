@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-11-22T00:09:45Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A service API and minimal webapp for accessing bulk numbers and calculations from a GOlr backend.",
+  "name": "golr-numbers-service",
+  "updatedAt": "2016-02-06T03:25:42Z",
+  "url": "https://github.com/berkeleybop/golr-numbers-service",
+  "firstCommitDate": "2016-02-06T03:25:29Z",
+  "lastCommitDate": "2016-02-06T03:25:29Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "kltm"
+    }
+  ]
+}

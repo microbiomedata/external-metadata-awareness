@@ -1,0 +1,26 @@
+{
+  "createdAt": "2019-05-10T02:54:16Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "SciGraph docker image and monarch specific configurations",
+  "name": "scigraph-docker",
+  "updatedAt": "2021-12-17T18:25:45Z",
+  "url": "https://github.com/monarch-initiative/scigraph-docker",
+  "firstCommitDate": "2021-12-17T18:25:42Z",
+  "lastCommitDate": "2021-12-17T18:25:42Z",
+  "topContributors": [
+    {
+      "contributions": 48,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 2,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 2,
+      "login": "TomConlin"
+    }
+  ]
+}

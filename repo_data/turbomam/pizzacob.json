@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-09-13T19:44:50Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "What happens when you add COB as an upper ontology to pizza.owl?",
+  "name": "pizzacob",
+  "updatedAt": "2024-08-16T16:11:47Z",
+  "url": "https://github.com/turbomam/pizzacob",
+  "firstCommitDate": "2021-09-14T15:37:39Z",
+  "lastCommitDate": "2021-09-14T15:37:39Z",
+  "topContributors": [
+    {
+      "contributions": 39,
+      "login": "turbomam"
+    }
+  ]
+}

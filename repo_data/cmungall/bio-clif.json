@@ -1,0 +1,18 @@
+{
+  "createdAt": "2009-12-18T00:17:23Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Common logic axioms enhancing various bio-ontologies",
+  "name": "bio-clif",
+  "updatedAt": "2021-01-19T14:15:56Z",
+  "url": "https://github.com/cmungall/bio-clif",
+  "firstCommitDate": "2009-12-18T00:18:25Z",
+  "lastCommitDate": "2009-12-18T00:18:25Z",
+  "topContributors": [
+    {
+      "contributions": 13,
+      "login": "cmungall"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-04-26T00:38:40Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Website source code for w3id.org",
+  "name": "w3id.org",
+  "updatedAt": "2022-04-12T15:31:44Z",
+  "url": "https://github.com/GenomicsStandardsConsortium/w3id.org",
+  "firstCommitDate": "2022-04-11T17:37:21Z",
+  "lastCommitDate": "2022-04-11T17:37:21Z",
+  "topContributors": [
+    {
+      "contributions": 1456,
+      "login": "dgarijo"
+    },
+    {
+      "contributions": 950,
+      "login": "davidlehn"
+    },
+    {
+      "contributions": 151,
+      "login": "jhaag75"
+    },
+    {
+      "contributions": 88,
+      "login": "msporny"
+    },
+    {
+      "contributions": 78,
+      "login": "rapw3k"
+    },
+    {
+      "contributions": 73,
+      "login": "luigi-asprino"
+    },
+    {
+      "contributions": 60,
+      "login": "markwilkinson"
+    },
+    {
+      "contributions": 59,
+      "login": "essepuntato"
+    },
+    {
+      "contributions": 52,
+      "login": "stain"
+    },
+    {
+      "contributions": 48,
+      "login": "tkuhn"
+    }
+  ]
+}

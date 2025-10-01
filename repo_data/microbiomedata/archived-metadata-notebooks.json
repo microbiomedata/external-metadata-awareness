@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-02-19T19:47:42Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "archived-metadata-notebooks",
+  "updatedAt": "2024-05-31T19:01:45Z",
+  "url": "https://github.com/microbiomedata/archived-metadata-notebooks",
+  "firstCommitDate": "2021-02-19T19:47:04Z",
+  "lastCommitDate": "2021-02-19T19:47:04Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}
