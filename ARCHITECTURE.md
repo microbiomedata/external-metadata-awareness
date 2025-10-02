@@ -25,13 +25,47 @@ Technical reference for database systems, data flow, and infrastructure patterns
 #### 1. ncbi_metadata (~25GB local, ~50GB loadbalancer)
 Main database storing NCBI-related data.
 
-**Core Collections**:
-- `biosamples`: 44M documents - Raw NCBI BioSample XML data
-- `biosample_harmonized_attributes`: 44M documents - Flattened attributes
-- `env_triads_flattened`: ~200K documents - Environmental context values
-- `unique_triad_values`: 192K documents - Unique environmental values
-- `class_label_cache`: 10K documents - Ontology class labels
-- `triad_components_labels`: 46K documents - Environmental context labels
+**Core BioSample Collections** (Two Collections):
+- `biosamples`: 3M+ documents - **Raw XML structure** preserved as nested documents
+  - Contains full XML hierarchy from NCBI biosample_set.xml.gz
+  - Nested structure: Ids, Description, Owner, Attributes, etc.
+  - Used for complete data access and re-processing
+- `biosamples_flattened`: 3M+ documents - **Normalized tabular structure**
+  - Flattened from `biosamples` for easier querying
+  - Top-level fields: accession, collection_date, lat_lon, env_broad_scale, env_local_scale, env_medium, etc.
+  - Used for analytical queries and DuckDB export
+- `biosamples_attributes`: 44M+ documents - Individual attribute key-value pairs
+  - One document per attribute occurrence across all biosamples
+  - Used for attribute frequency analysis and harmonization
+
+**Environmental Context Collections**:
+- `env_triads_flattened`: Environmental context values extracted from biosamples
+- `env_triad_component_labels`: Labels for environmental context components (46K documents)
+- `env_triad_component_curies_uc`: CURIE mappings for environmental values
+- `biosamples_env_triad_value_counts_gt_1`: Frequency counts for env triad values
+
+**Supporting Collections**:
+- `attributes`: Attribute definitions and metadata
+- `biosamples_ids`: Identifier mappings (SAMN, SRS, etc.)
+- `biosamples_links`: Cross-references to other databases
+- `harmonized_name_dimensional_stats`: Statistics on harmonized attribute names
+- `harmonized_name_usage_stats`: Usage frequency of harmonized names
+- `attribute_harmonized_pairings`: Mappings between raw and harmonized attribute names
+- `content_pairs_aggregated`: Aggregated content analysis
+
+**Schema & Metadata Collections**:
+- `global_nmdc_slots`: NMDC schema slot definitions
+- `global_mixs_slots`: MIxS schema slot definitions
+- `nmdc_range_slot_usage_report`: NMDC slot usage analysis
+- `ncbi_packages_flattened`: NCBI package definitions (flattened)
+- `ncbi_attributes_flattened`: NCBI attribute definitions (flattened)
+- `packages`: NCBI package metadata (228 documents)
+
+**Measurement Analysis Collections**:
+- `measurement_evidence_percentages`: Measurement extraction confidence scores
+- `measurement_results_skip_filtered`: Filtered measurement extraction results
+- `unit_assertion_counts`: Unit occurrence frequencies
+- `mixed_content_counts`: Analysis of mixed content types
 
 **BioProject Collections**:
 - `bioprojects`: 893K documents (~1.5GB) - BioProject metadata

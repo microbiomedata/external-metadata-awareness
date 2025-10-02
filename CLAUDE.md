@@ -9,6 +9,7 @@ Quick reference for AI assistants working on this codebase.
 - 🗺️ **Current Priorities**: See [PRIORITY_ROADMAP.md](PRIORITY_ROADMAP.md)
 - 🏗️ **Architecture & Data**: See [ARCHITECTURE.md](ARCHITECTURE.md)
 - 💻 **Development Guide**: See [DEVELOPMENT.md](DEVELOPMENT.md)
+- 🌍 **Environmental Triad Workflow**: See [ENV_TRIAD_WORKFLOW.md](ENV_TRIAD_WORKFLOW.md)
 - 📋 **Active Work**: Tracking issues [#222](https://github.com/microbiomedata/external-metadata-awareness/issues/222) (Biosample Normalization) and [#223](https://github.com/microbiomedata/external-metadata-awareness/issues/223) (Infrastructure)
 
 ---
@@ -85,21 +86,13 @@ Converting text to ontology identifiers:
 ### 1. Environmental Context Voting Sheets
 Generate standardized environmental context value sets for submission-schema.
 
-**Location**: `notebooks/environmental_context_value_sets/`
-
 **Quick Start**:
 1. Start Jupyter: `poetry run jupyter notebook`
-2. Open: `generate_voting_sheet.ipynb`
+2. Open: `notebooks/environmental_context_value_sets/generate_voting_sheet.ipynb`
 3. Ensure DuckDB file exists: `ncbi_biosamples_*.duckdb`
 4. Run all cells → generates TSV files in `voting_sheets_output/`
 
-**Review Process**:
-1. TSVs shared as Google Sheets
-2. Domain experts vote (+1/-1) on term inclusion
-3. Votes compiled, sum threshold ≥1 typically used
-4. Final value sets → submission-schema as LinkML enumerations
-
-**See**: [voting-sheet-generation-readme.md](notebooks/environmental_context_value_sets/voting-sheet-generation-readme.md)
+**Complete Workflow**: See **[ENV_TRIAD_WORKFLOW.md](ENV_TRIAD_WORKFLOW.md)** for the full end-to-end process across external-metadata-awareness, submission-schema, and envo repositories.
 
 ### 2. NCBI Biosample Processing
 Download, parse, and analyze 44M+ NCBI biosamples.
