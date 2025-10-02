@@ -170,6 +170,22 @@ export-satisfying-biosamples:
 	@wc -l local/satisfying_biosamples.csv | awk '{printf "  %s biosamples (including header)\n", $$1}'
 	@ls -lh local/satisfying_biosamples.csv | awk '{printf "  File size: %s\n", $$5}'
 
+# Normalize satisfying biosamples (dates to YYYY-MM-DD, coordinates to separate lat/lon columns)
+normalize-satisfying-biosamples:
+	@if [ ! -f "local/satisfying_biosamples.csv" ]; then \
+		echo "Error: local/satisfying_biosamples.csv not found"; \
+		echo "Run 'make -f Makefiles/ncbi_to_duckdb.Makefile export-satisfying-biosamples' first"; \
+		exit 1; \
+	fi
+	@echo "Normalizing biosample dates and coordinates..."
+	@poetry run normalize-satisfying-biosamples \
+		--input-file local/satisfying_biosamples.csv \
+		--output-file local/satisfying_biosamples_normalized.csv
+	@echo ""
+	@echo "✓ Normalized file created: local/satisfying_biosamples_normalized.csv"
+	@wc -l local/satisfying_biosamples_normalized.csv | awk '{printf "  %s biosamples (including header)\\n", $$1}'
+	@ls -lh local/satisfying_biosamples_normalized.csv | awk '{printf "  File size: %s\\n", $$5}'
+
 # Show summary of tables in DuckDB
 show-summary:
 	@if [ ! -f "$(DUCKDB_FILE)" ]; then \
@@ -226,6 +242,7 @@ help:
 	@echo "  make-database                    - Export all flat collections and create DuckDB"
 	@echo "  export-bioprojects-to-duckdb     - Export bioprojects_flattened to separate DuckDB"
 	@echo "  export-satisfying-biosamples     - Export biosamples meeting quality criteria to CSV"
+	@echo "  normalize-satisfying-biosamples  - Normalize dates and split coordinates into lat/lon columns"
 	@echo ""
 	@echo "Note: To flatten BioProjects first, use:"
 	@echo "  make -f Makefiles/ncbi_metadata.Makefile flatten_bioprojects MONGO_URI=mongodb://host:port/db"
@@ -259,4 +276,4 @@ help:
 
 .PHONY: list-flat-collections export-collection-json json-to-duckdb process-collection \
         dump-json make-duckdb make-database export-bioprojects-to-duckdb export-satisfying-biosamples \
-        show-summary clean clean-json clean-duckdb show-config help
+        normalize-satisfying-biosamples show-summary clean clean-json clean-duckdb show-config help
