@@ -127,7 +127,7 @@ load_acceptable_sized_leaf_bioprojects_into_mongodb: downloads/bioproject.xml
        --oversize-dir local/oversize-bioprojects \
        --project-collection bioprojects \
        --submission-collection bioprojects_submissions \
-       --uri $(MONGO_URI) \
+       --mongo-uri $(MONGO_URI) \
        --verbose \
        --xml-file $< \
        $(ENV_FILE_OPTION)
