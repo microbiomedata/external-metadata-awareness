@@ -55,6 +55,7 @@ curies = "^0.10.11"
 case-converter = "^1.2.0"
 dateparser = "^1.2.2"
 geopy = "^2.4.1"
+json-tabulate = "^0.1.4"
 
 [tool.poetry.group.dev.dependencies]
 deptry = "^0.23.0"
