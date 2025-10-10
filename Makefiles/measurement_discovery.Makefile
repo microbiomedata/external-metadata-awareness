@@ -12,7 +12,48 @@ count-measurement-evidence clean-discovery
 
 # Phase 0: Baseline counting
 
-# Count biosamples per harmonized_name (foundation for all measurement discovery)
+# Atomic, resumable biosample counting (Issue #237)
+# Each step checks if output exists and skips if already done
+
+count-biosamples-per-hn-step1:
+	@echo "Step 1: Counting biosamples per harmonized_name (dedupe)..."
+	@date
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/count_biosamples_per_hn_step1.js \
+		--verbose
+	@date
+
+count-biosamples-per-hn-step2:
+	@echo "Step 2: Counting totals and unit coverage per harmonized_name..."
+	@date
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/count_biosamples_per_hn_step2.js \
+		--verbose
+	@date
+
+count-biosamples-per-hn-step3:
+	@echo "Step 3: Joining temp tables and creating final collection..."
+	@date
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/count_biosamples_per_hn_step3.js \
+		--verbose
+	@date
+
+count-biosamples-per-hn-cleanup:
+	@echo "Cleaning up temp collections..."
+	mongosh "$(MONGO_URI)" --eval "db.__tmp_hn_counts.drop(); db.__tmp_hn_totals.drop(); print('Dropped __tmp_hn_counts and __tmp_hn_totals');"
+
+# Meta-target: Run all steps in sequence
+count-biosamples-per-harmonized-name-atomic: count-biosamples-per-hn-step1 count-biosamples-per-hn-step2 count-biosamples-per-hn-step3
+	@echo "✅ Biosample counting complete (atomic steps)"
+
+# Original monolithic target (deprecated - prefer atomic version above)
 count-biosamples-per-harmonized-name:
 	@date
 	@echo "Counting biosamples per harmonized_name..."
