@@ -8,20 +8,29 @@ print(`[${startTime.toISOString()}] Starting global MIxS slot definitions loadin
 const { execSync } = require('child_process');
 const fs = require('fs');
 
-// MIxS schema URL
 const mixsSchemaUrl = 'https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/refs/heads/main/src/mixs/schema/mixs.yaml';
-const tempFile = '/tmp/mixs_schema.yaml';
+const localSchemaFile = 'downloads/mixs.yaml';
 const tempJsonFile = '/tmp/global_mixs_slots.json';
 
 try {
-    // Download MIxS schema
-    print(`[${new Date().toISOString()}] Downloading MIxS schema from GitHub...`);
-    execSync(`curl -s -L "${mixsSchemaUrl}" -o "${tempFile}"`);
-    print(`[${new Date().toISOString()}] Downloaded MIxS schema to ${tempFile}`);
-    
-    // Step 1: Extract .slots section to JSON
+    // Check if local schema file exists
+    if (!fs.existsSync(localSchemaFile)) {
+        print(`[${new Date().toISOString()}] Local MIxS schema not found, downloading...`);
+
+        // Ensure downloads directory exists
+        if (!fs.existsSync('downloads')) {
+            fs.mkdirSync('downloads');
+        }
+
+        execSync(`curl -s -L "${mixsSchemaUrl}" -o "${localSchemaFile}"`);
+        print(`[${new Date().toISOString()}] Downloaded MIxS schema to ${localSchemaFile}`);
+    } else {
+        print(`[${new Date().toISOString()}] Using existing MIxS schema: ${localSchemaFile}`);
+    }
+
+    // Extract .slots section to JSON
     print(`[${new Date().toISOString()}] Extracting .slots section to JSON...`);
-    const extractSlotsCommand = `yq eval '.slots' "${tempFile}" -o=json > "${tempJsonFile}"`;
+    const extractSlotsCommand = `yq eval '.slots' "${localSchemaFile}" -o=json > "${tempJsonFile}"`;
     execSync(extractSlotsCommand);
     
     // Step 2: Read and parse the slots JSON
@@ -95,9 +104,8 @@ try {
         print(`Range compound index exists: ${e.message}`);
     }
     
-    // Cleanup temporary files
+    // Cleanup temporary file
     try {
-        fs.unlinkSync(tempFile);
         fs.unlinkSync(tempJsonFile);
         print(`[${new Date().toISOString()}] Cleaned up temporary files`);
     } catch(e) {
