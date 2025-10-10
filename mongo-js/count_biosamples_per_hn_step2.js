@@ -5,8 +5,8 @@
 const startTime = new Date();
 print(`[${startTime.toISOString()}] Step 2: Counting totals and unit coverage per harmonized_name`);
 
-// Check if already done
-const existingCount = db.__tmp_hn_totals.estimatedDocumentCount();
+// Check if already done (use getCollection for names with __)
+const existingCount = db.getCollection("__tmp_hn_totals").estimatedDocumentCount();
 if (existingCount > 0) {
     print(`[${new Date().toISOString()}] ✓ Step 2 already complete (__tmp_hn_totals has ${existingCount} records)`);
     print(`[${new Date().toISOString()}] Skipping - delete __tmp_hn_totals to rerun`);
@@ -14,7 +14,7 @@ if (existingCount > 0) {
 }
 
 // Drop output collection
-db.__tmp_hn_totals.drop();
+db.getCollection("__tmp_hn_totals").drop();
 
 // Count total attributes and unit coverage per harmonized_name
 print(`[${new Date().toISOString()}] Running aggregation (may take 15-30 min for 712M records)...`);
@@ -81,7 +81,7 @@ db.biosamples_attributes.aggregate([
 
 const endTime = new Date();
 const elapsed = ((endTime - startTime) / 1000).toFixed(2);
-const resultCount = db.__tmp_hn_totals.countDocuments();
+const resultCount = db.getCollection("__tmp_hn_totals").countDocuments();
 
 print(`[${endTime.toISOString()}] ✅ Step 2 complete`);
 print(`[${endTime.toISOString()}] Created ${resultCount} records in __tmp_hn_totals`);

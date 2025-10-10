@@ -13,9 +13,9 @@ if (existingCount > 0) {
     quit(0);
 }
 
-// Check prerequisites
-const countsExist = db.__tmp_hn_counts.estimatedDocumentCount();
-const totalsExist = db.__tmp_hn_totals.estimatedDocumentCount();
+// Check prerequisites (use getCollection for names with __)
+const countsExist = db.getCollection("__tmp_hn_counts").estimatedDocumentCount();
+const totalsExist = db.getCollection("__tmp_hn_totals").estimatedDocumentCount();
 
 if (countsExist === 0) {
     print(`[${new Date().toISOString()}] ERROR: __tmp_hn_counts is empty - run Step 1 first`);
@@ -43,7 +43,7 @@ db.harmonized_name_biosample_counts.drop();
 
 // Join temp tables
 print(`[${new Date().toISOString()}] Joining temp tables (may take 5-10 min)...`);
-db.__tmp_hn_counts.aggregate([
+db.getCollection("__tmp_hn_counts").aggregate([
     {
         $lookup: {
             from: "__tmp_hn_totals",
