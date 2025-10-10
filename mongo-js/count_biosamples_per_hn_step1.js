@@ -5,8 +5,8 @@
 const startTime = new Date();
 print(`[${startTime.toISOString()}] Step 1: Counting biosamples per harmonized_name (dedupe)`);
 
-// Check if already done
-const existingCount = db.__tmp_hn_counts.estimatedDocumentCount();
+// Check if already done (use getCollection for names with __)
+const existingCount = db.getCollection("__tmp_hn_counts").estimatedDocumentCount();
 if (existingCount > 0) {
     print(`[${new Date().toISOString()}] ✓ Step 1 already complete (__tmp_hn_counts has ${existingCount} records)`);
     print(`[${new Date().toISOString()}] Skipping - delete __tmp_hn_counts to rerun`);
@@ -14,7 +14,7 @@ if (existingCount > 0) {
 }
 
 // Drop output collection
-db.__tmp_hn_counts.drop();
+db.getCollection("__tmp_hn_counts").drop();
 
 // Deduplicate harmonized_name + accession pairs and count
 print(`[${new Date().toISOString()}] Running aggregation (may take 30-60 min for 712M records)...`);
@@ -50,7 +50,7 @@ db.biosamples_attributes.aggregate([
 
 const endTime = new Date();
 const elapsed = ((endTime - startTime) / 1000).toFixed(2);
-const resultCount = db.__tmp_hn_counts.countDocuments();
+const resultCount = db.getCollection("__tmp_hn_counts").countDocuments();
 
 print(`[${endTime.toISOString()}] ✅ Step 1 complete`);
 print(`[${endTime.toISOString()}] Created ${resultCount} records in __tmp_hn_counts`);
