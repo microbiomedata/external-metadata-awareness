@@ -64,45 +64,26 @@ count-biosamples-per-harmonized-name:
 		--verbose
 	@date
 
-# Step 1: Count unique biosamples per harmonized_name
+# Step 1: Count unique biosamples per harmonized_name (uses JavaScript file to avoid $addToSet memory limit)
 count-biosamples-step1:
 	@date
-	@echo "Step 1: Creating indexes and counting unique biosamples per harmonized_name..."
-	mongosh "$(MONGO_URI)" --eval "\
-		print('[' + new Date().toISOString() + '] Ensuring beneficial indexes exist for Step 1'); \
-		try { db.biosamples_attributes.createIndex({harmonized_name: 1}, {background: true}); } catch(e) { print('harmonized_name index exists: ' + e.message); } \
-		try { db.biosamples_attributes.createIndex({accession: 1}, {background: true}); } catch(e) { print('accession index exists: ' + e.message); } \
-		print('[' + new Date().toISOString() + '] Dropping temp collections'); \
-		db.temp_biosample_counts.drop(); \
-		print('[' + new Date().toISOString() + '] Starting biosample counts aggregation'); \
-		db.biosamples_attributes.aggregate([ \
-			{ \$$group: { _id: '\$$harmonized_name', unique_biosamples: { \$$addToSet: '\$$accession' } } }, \
-			{ \$$project: { harmonized_name: '\$$_id', unique_biosamples_count: { \$$size: '\$$unique_biosamples' }, _id: 0 } }, \
-			{ \$$out: 'temp_biosample_counts' } \
-		], { allowDiskUse: true }); \
-		print('[' + new Date().toISOString() + '] Created ' + db.temp_biosample_counts.countDocuments() + ' biosample counts');"
+	@echo "Step 1: Counting unique biosamples per harmonized_name..."
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/count_biosamples_usage_stats_step1.js \
+		--verbose
 	@date
 
-# Step 2: Count unique bioprojects per harmonized_name  
+# Step 2: Count unique bioprojects per harmonized_name (uses JavaScript file to avoid $addToSet memory limit)
 count-bioprojects-step2:
 	@date
-	@echo "Step 2: Creating critical index and counting unique bioprojects per harmonized_name..."
-	mongosh "$(MONGO_URI)" --eval "\
-		print('[' + new Date().toISOString() + '] Ensuring critical index exists for lookup join'); \
-		try { db.sra_biosamples_bioprojects.createIndex({biosample_accession: 1}, {background: true}); } catch(e) { print('Index already exists: ' + e.message); } \
-		print('[' + new Date().toISOString() + '] Dropping temp bioproject collection'); \
-		db.temp_bioproject_counts.drop(); \
-		print('[' + new Date().toISOString() + '] Starting bioproject counts aggregation'); \
-		db.biosamples_attributes.aggregate([ \
-			{ \$$group: { _id: '\$$harmonized_name', unique_biosamples: { \$$addToSet: '\$$accession' } } }, \
-			{ \$$unwind: '\$$unique_biosamples' }, \
-			{ \$$lookup: { from: 'sra_biosamples_bioprojects', localField: 'unique_biosamples', foreignField: 'biosample_accession', as: 'bioproject_info' } }, \
-			{ \$$unwind: { path: '\$$bioproject_info', preserveNullAndEmptyArrays: false } }, \
-			{ \$$group: { _id: '\$$_id', unique_bioprojects: { \$$addToSet: '\$$bioproject_info.bioproject_accession' } } }, \
-			{ \$$project: { harmonized_name: '\$$_id', unique_bioprojects_count: { \$$size: '\$$unique_bioprojects' }, _id: 0 } }, \
-			{ \$$out: 'temp_bioproject_counts' } \
-		], { allowDiskUse: true }); \
-		print('[' + new Date().toISOString() + '] Created ' + db.temp_bioproject_counts.countDocuments() + ' bioproject counts');"
+	@echo "Step 2: Counting unique bioprojects per harmonized_name via SRA linkage..."
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/count_bioprojects_usage_stats_step2.js \
+		--verbose
 	@date
 
 # Step 3: Merge biosample and bioproject counts
