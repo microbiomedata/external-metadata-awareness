@@ -6,9 +6,10 @@ ifdef ENV_FILE
   ENV_FILE_OPTION := --env-file $(ENV_FILE)
 endif
 
-.PHONY: count-biosamples-per-harmonized-name count-biosamples-step1 count-bioprojects-step2 merge-counts-step3 \
-index-harmonized-name-counts count-biosamples-and-bioprojects-per-harmonized-name count-unit-assertions count-mixed-content \
-count-measurement-evidence clean-discovery
+.PHONY: count-biosamples-per-harmonized-name count-biosamples-step1 count-bioprojects-step2 \
+count-bioprojects-step2a count-bioprojects-step2b count-bioprojects-step2c count-bioprojects-step2d \
+merge-counts-step3 index-harmonized-name-counts count-biosamples-and-bioprojects-per-harmonized-name \
+count-unit-assertions count-mixed-content count-measurement-evidence clean-discovery
 
 # Phase 0: Baseline counting
 
@@ -75,16 +76,51 @@ count-biosamples-step1:
 		--verbose
 	@date
 
-# Step 2: Count unique bioprojects per harmonized_name (uses JavaScript file to avoid $addToSet memory limit)
-count-bioprojects-step2:
+# Step 2: Count unique bioprojects per harmonized_name (atomic sub-steps for performance)
+
+count-bioprojects-step2a:
+	@echo "Step 2a: Deduplicating harmonized_name + accession pairs..."
 	@date
-	@echo "Step 2: Counting unique bioprojects per harmonized_name via SRA linkage..."
 	$(RUN) mongo-js-executor \
 		--mongo-uri "$(MONGO_URI)" \
 		$(ENV_FILE_OPTION) \
-		--js-file mongo-js/count_bioprojects_usage_stats_step2.js \
+		--js-file mongo-js/count_bioprojects_step2a_dedupe_accessions.js \
 		--verbose
 	@date
+
+count-bioprojects-step2b:
+	@echo "Step 2b: Creating index on temp collection..."
+	@date
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/count_bioprojects_step2b_index_temp.js \
+		--verbose
+	@date
+
+count-bioprojects-step2c:
+	@echo "Step 2c: Joining with SRA and counting bioprojects..."
+	@date
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/count_bioprojects_step2c_sra_join.js \
+		--verbose
+	@date
+
+count-bioprojects-step2d:
+	@echo "Step 2d: Cleaning up intermediate collection..."
+	@date
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/count_bioprojects_step2d_cleanup.js \
+		--verbose
+	@date
+
+# Meta-target: Run all Step 2 sub-steps in sequence
+count-bioprojects-step2: count-bioprojects-step2a count-bioprojects-step2b count-bioprojects-step2c count-bioprojects-step2d
+	@echo "✅ Bioproject counting complete (atomic steps)"
 
 # Step 3: Merge biosample and bioproject counts
 merge-counts-step3:
