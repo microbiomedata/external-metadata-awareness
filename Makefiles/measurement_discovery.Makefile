@@ -47,7 +47,7 @@ count-biosamples-per-hn-step3:
 
 count-biosamples-per-hn-cleanup:
 	@echo "Cleaning up temp collections..."
-	mongosh "$(MONGO_URI)" --eval "db.__tmp_hn_counts.drop(); db.__tmp_hn_totals.drop(); print('Dropped __tmp_hn_counts and __tmp_hn_totals');"
+	mongosh "$(MONGO_URI)" --eval "db.getCollection('__tmp_hn_counts').drop(); db.getCollection('__tmp_hn_totals').drop(); print('Dropped __tmp_hn_counts and __tmp_hn_totals');"
 
 # Meta-target: Run all steps in sequence
 count-biosamples-per-harmonized-name-atomic: count-biosamples-per-hn-step1 count-biosamples-per-hn-step2 count-biosamples-per-hn-step3
