@@ -5,6 +5,14 @@
 const startTime = new Date();
 print(`[${startTime.toISOString()}] Step 1: Counting unique biosamples per harmonized_name`);
 
+// Check if already done
+const existingCount = db.temp_biosample_counts.estimatedDocumentCount();
+if (existingCount > 0) {
+    print(`[${new Date().toISOString()}] ✓ Step 1 already complete (temp_biosample_counts has ${existingCount} records)`);
+    print(`[${new Date().toISOString()}] Skipping - drop temp_biosample_counts to rerun`);
+    quit(0);
+}
+
 // Drop output collection
 db.temp_biosample_counts.drop();
 
