@@ -9,7 +9,7 @@ endif
 .PHONY: count-biosamples-per-harmonized-name count-biosamples-step1 count-bioprojects-step2 \
 count-bioprojects-step2a count-bioprojects-step2b count-bioprojects-step2c count-bioprojects-step2d \
 merge-counts-step3 index-harmonized-name-counts count-biosamples-and-bioprojects-per-harmonized-name \
-count-unit-assertions count-mixed-content count-measurement-evidence clean-discovery
+count-unit-assertions count-mixed-content count-measurement-evidence run-measurement-discovery clean-discovery
 
 # Phase 0: Baseline counting
 
@@ -191,6 +191,24 @@ count-mixed-content:
 count-measurement-evidence: count-unit-assertions count-mixed-content
 	@echo "✅ Measurement evidence counting complete"
 	@echo "📊 Created collections: unit_assertion_counts, mixed_content_counts"
+
+# Run quantulum3 measurement discovery (creates measurement_results_skip_filtered + content_pairs_aggregated)
+run-measurement-discovery:
+	@date
+	@echo "Running quantulum3 measurement discovery..."
+	@echo "Skip list: 224 harmonized_names"
+	@echo "Input: biosamples_attributes (712M records)"
+	@echo "Output: measurement_results_skip_filtered + content_pairs_aggregated"
+	@echo "Estimated time: 4-8 hours for full dataset"
+	$(RUN) measurement-discovery-efficient \
+		--mongo-uri "$(MONGO_URI)" \
+		--save-aggregation \
+		--clear-output \
+		--min-count 1 \
+		--progress-every 100
+	@date
+	@echo "✅ Quantulum3 parsing complete"
+	@echo "📊 Check measurement_results_skip_filtered for parsed measurements"
 
 # Calculate measurement evidence percentages by joining count collections
 calculate-measurement-percentages:
