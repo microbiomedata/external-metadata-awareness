@@ -10,9 +10,11 @@ from tqdm import tqdm
 # Original criteria: Skip harmonized_names with <5% dimensional content rate from quantulum3 parsing
 # Extended criteria: Skip fields containing name, id (whole word), type, method, regm, process, date
 # Final criteria: MAM semantic review of data-driven skip candidates (2025-09-29)
+# Additional expansion: 2025-10-12 - Issue #244 consistency improvements
 # Categories skipped: identifiers, person_info, dates, categorical fields, descriptive text, methods, processes,
 #                   administrative metadata, experimental protocols, qualitative classifications
-# Excludes 208 harmonized_names that are unlikely to contain extractable measurement data
+# Semantic rules: ALWAYS skip *_regm, *_cond, *_meth, multi-part info about treatments/sources/names/locations
+# Excludes 224 harmonized_names that are unlikely to contain extractable measurement data
 SKIP_HARMONIZED_NAMES = {
     # Original collaborative skip list (156 fields)
     'agrochem_addition', 'al_sat_meth', 'ances_data', 'animal_diet', 'antibiotic_regm',
@@ -52,7 +54,20 @@ SKIP_HARMONIZED_NAMES = {
     'indoor_surf', 'isol_growth_condt', 'last_clean', 'lat_lon', 'light_type', 'menarche', 'misc_param',
     'molecular_data_type', 'oxy_stat_samp', 'particle_class', 'perturbation', 'rel_to_oxygen', 'route_transmission',
     'samp_mat_process', 'sediment_type', 'serogroup', 'soil_horizon', 'soil_text_measure', 'special_diet',
-    'submitter_handle', 'type_status'
+    'submitter_handle', 'type_status',
+
+    # Issue #244 additions (18 fields - 2025-10-12)
+    # Regimen fields (*_regm) - consistency with existing regimen skips
+    'watering_regm', 'air_temp_regm', 'humidity_regm', 'light_regm', 'salt_regm', 'water_temp_regm', 'standing_water_regm',
+
+    # Condition fields (*_cond) - categorical/descriptive conditions
+    'host_growth_cond', 'root_cond', 'store_cond',
+
+    # Method fields (*_meth) - methodology descriptions, not measurements
+    'salinity_meth', 'heavy_metals_meth', 'horizon_meth',
+
+    # Multi-part descriptive fields - treatments, sources, names, locations
+    'description', 'food_source', 'source_name', 'secondary_treatment', 'samp_store_loc'
 }
 
 @click.command()
