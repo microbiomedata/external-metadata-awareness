@@ -193,6 +193,13 @@ count-measurement-evidence: count-unit-assertions count-mixed-content
 	@echo "📊 Created collections: unit_assertion_counts, mixed_content_counts"
 
 # Run quantulum3 measurement discovery (creates measurement_results_skip_filtered + content_pairs_aggregated)
+# FULL PRODUCTION RUN: Processes all 64M (harmonized_name, content) pairs
+# Options explained:
+#   --save-aggregation: Saves all 64M pairs to content_pairs_aggregated (adds ~10-15 min)
+#   --clear-output: Drops measurement_results_skip_filtered before starting
+#   --min-count 1: Process all content values (even if only 1 biosample has it)
+#   --progress-every 100: Show detailed output every 100 quantulum3 parses
+# Performance: Phase 1 (aggregation) ~30-40 min, Phase 2 (save) ~10-15 min, Phase 3 (quantulum3) ~4-8 hours
 run-measurement-discovery:
 	@date
 	@echo "Running quantulum3 measurement discovery..."
@@ -209,6 +216,40 @@ run-measurement-discovery:
 	@date
 	@echo "✅ Quantulum3 parsing complete"
 	@echo "📊 Check measurement_results_skip_filtered for parsed measurements"
+
+# Quick test run to validate pipeline and memory handling
+# Uses --limit to process only 50k pairs instead of 64M (~1-2 minutes total)
+# Useful for: Testing after code changes, validating no OOM errors, CI/CD checks
+test-measurement-discovery:
+	@date
+	@echo "Running QUICK TEST of measurement discovery pipeline..."
+	@echo "Limiting to 50,000 pairs (instead of 64M) for fast validation"
+	@echo "Estimated time: 1-2 minutes"
+	$(RUN) measurement-discovery-efficient \
+		--mongo-uri "$(MONGO_URI)" \
+		--save-aggregation \
+		--clear-output \
+		--limit 50000 \
+		--progress-every 100
+	@date
+	@echo "✅ Quick test complete - pipeline working correctly"
+
+# Focus on common measurements only (faster than full run)
+# Uses --min-count 10 to process only values appearing in 10+ biosamples
+# Reduces dataset from 64M to ~20M pairs (~2-3 hours instead of 4-8)
+run-measurement-discovery-common:
+	@date
+	@echo "Running measurement discovery for COMMON values only..."
+	@echo "Min count: 10 biosamples (reduces ~64M pairs to ~20M)"
+	@echo "Estimated time: 2-3 hours"
+	$(RUN) measurement-discovery-efficient \
+		--mongo-uri "$(MONGO_URI)" \
+		--save-aggregation \
+		--clear-output \
+		--min-count 10 \
+		--progress-every 100
+	@date
+	@echo "✅ Common measurements discovery complete"
 
 # Calculate measurement evidence percentages by joining count collections
 calculate-measurement-percentages:
