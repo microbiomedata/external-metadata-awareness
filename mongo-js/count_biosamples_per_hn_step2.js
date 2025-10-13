@@ -33,7 +33,8 @@ db.biosamples_attributes.aggregate([
                     $cond: [
                         {
                             $and: [
-                                { $ne: ["$unit", null] },
+                                { $ne: [{ $type: "$unit" }, "null"] },
+                                { $ne: [{ $type: "$unit" }, "missing"] },
                                 { $ne: ["$unit", ""] }
                             ]
                         },
