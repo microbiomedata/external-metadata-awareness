@@ -125,62 +125,72 @@ def main(mongo_uri, min_count, progress_every, batch_size, limit, save_aggregati
 
     start_time = time.time()
     cursor = db.biosamples_attributes.aggregate(pipeline, allowDiskUse=True)
-    results = list(cursor)
+
+    # Stream results to avoid loading all 64M documents into memory (Issue #262)
+    agg_collection = db['content_pairs_aggregated'] if save_aggregation else None
+    if save_aggregation:
+        print(f"[{time.strftime('%H:%M:%S')}] Streaming aggregation results to content_pairs_aggregated collection...")
+        agg_collection.drop()
+
+    # Streaming variables
+    agg_batch = []
+    agg_batch_size = 10000
+    quantulum_results = []
+    total_count = 0
+    saved_count = 0
+    skipped_count = 0
+    total_biosamples = 0
+    first_five = []
+
+    # Stream cursor and process in one pass
+    for result in cursor:
+        total_count += 1
+        total_biosamples += result['biosample_count']
+
+        # Collect first 5 for display
+        if len(first_five) < 5:
+            first_five.append(result)
+
+        # Save to aggregation collection if requested
+        if save_aggregation:
+            result['aggregated_at'] = time.time()
+            agg_batch.append(result)
+
+            if len(agg_batch) >= agg_batch_size:
+                agg_collection.insert_many(agg_batch)
+                saved_count += len(agg_batch)
+                agg_batch = []
+
+                # Progress every 1M
+                if saved_count % 1000000 == 0:
+                    print(f"[{time.strftime('%H:%M:%S')}] Saved {saved_count:,} aggregation results...")
+
+        # Filter for quantulum3 processing
+        if result['harmonized_name'] not in SKIP_HARMONIZED_NAMES:
+            quantulum_results.append(result)
+        else:
+            skipped_count += 1
+
     agg_time = time.time() - start_time
 
+    # Save final aggregation batch
+    if save_aggregation and agg_batch:
+        agg_collection.insert_many(agg_batch)
+        saved_count += len(agg_batch)
+        print(f"[{time.strftime('%H:%M:%S')}] Saved {saved_count:,} aggregation results")
+
     print(f"[{time.strftime('%H:%M:%S')}] Aggregation completed in {agg_time:.1f}s")
-    print(f"[{time.strftime('%H:%M:%S')}] Found {len(results):,} (harmonized_name, content) pairs with ≥{min_count} biosamples (ALL harmonized_names)")
+    print(f"[{time.strftime('%H:%M:%S')}] Found {total_count:,} (harmonized_name, content) pairs with ≥{min_count} biosamples (ALL harmonized_names)")
 
-    # Save aggregation results if requested
-    if save_aggregation:
-        agg_collection = db['content_pairs_aggregated']
-        print(f"[{time.strftime('%H:%M:%S')}] Saving aggregation results to content_pairs_aggregated collection...")
-
-        # Clear existing data
-        agg_collection.drop()
-        if results:
-            # Add timestamp and save in batches to avoid memory issues (Issue #250)
-            batch = []
-            batch_size = 10000  # Insert 10k documents at a time
-            saved_count = 0
-
-            for i, result in enumerate(results):
-                result['aggregated_at'] = time.time()
-                batch.append(result)
-
-                # Save batch when it reaches batch_size
-                if len(batch) >= batch_size:
-                    agg_collection.insert_many(batch)
-                    saved_count += len(batch)
-                    batch = []
-
-                    # Print progress every 1M documents
-                    if saved_count % 1000000 == 0:
-                        print(f"[{time.strftime('%H:%M:%S')}] Saved {saved_count:,}/{len(results):,} aggregation results...")
-
-            # Save final batch
-            if batch:
-                agg_collection.insert_many(batch)
-                saved_count += len(batch)
-
-            print(f"[{time.strftime('%H:%M:%S')}] Saved {saved_count:,} aggregation results")
-        else:
-            print(f"[{time.strftime('%H:%M:%S')}] No aggregation results to save")
-
-    if len(results) > 0:
-        total_biosamples = sum(r['biosample_count'] for r in results)
+    if total_count > 0:
         print(f"[{time.strftime('%H:%M:%S')}] Covering {total_biosamples:,} total biosample instances")
         print(f"[{time.strftime('%H:%M:%S')}] Top 5 most common:")
-        for i, result in enumerate(results[:5]):
+        for i, result in enumerate(first_five):
             print(f"[{time.strftime('%H:%M:%S')}]   {i+1}. {result['harmonized_name']}: \"{result['content']}\" ({result['biosample_count']:,} biosamples)")
 
-    if len(results) == 0:
+    if total_count == 0:
         print(f"[{time.strftime('%H:%M:%S')}] No results found - try lowering min_count")
         return
-
-    # Filter results to exclude skip list for quantulum3 processing
-    quantulum_results = [r for r in results if r['harmonized_name'] not in SKIP_HARMONIZED_NAMES]
-    skipped_count = len(results) - len(quantulum_results)
 
     print(f"[{time.strftime('%H:%M:%S')}] Applying skip list for quantulum3 processing...")
     print(f"[{time.strftime('%H:%M:%S')}] Will process {len(quantulum_results):,} pairs ({skipped_count:,} pairs skipped)")
