@@ -136,17 +136,34 @@ def main(mongo_uri, min_count, progress_every, batch_size, limit, save_aggregati
         agg_collection = db['content_pairs_aggregated']
         print(f"[{time.strftime('%H:%M:%S')}] Saving aggregation results to content_pairs_aggregated collection...")
 
-        # Clear existing data and insert new results
+        # Clear existing data
         agg_collection.drop()
         if results:
-            # Add timestamp to each document
-            timestamped_results = []
-            for result in results:
-                result['aggregated_at'] = time.time()
-                timestamped_results.append(result)
+            # Add timestamp and save in batches to avoid memory issues (Issue #250)
+            batch = []
+            batch_size = 10000  # Insert 10k documents at a time
+            saved_count = 0
 
-            agg_collection.insert_many(timestamped_results)
-            print(f"[{time.strftime('%H:%M:%S')}] Saved {len(results):,} aggregation results")
+            for i, result in enumerate(results):
+                result['aggregated_at'] = time.time()
+                batch.append(result)
+
+                # Save batch when it reaches batch_size
+                if len(batch) >= batch_size:
+                    agg_collection.insert_many(batch)
+                    saved_count += len(batch)
+                    batch = []
+
+                    # Print progress every 1M documents
+                    if saved_count % 1000000 == 0:
+                        print(f"[{time.strftime('%H:%M:%S')}] Saved {saved_count:,}/{len(results):,} aggregation results...")
+
+            # Save final batch
+            if batch:
+                agg_collection.insert_many(batch)
+                saved_count += len(batch)
+
+            print(f"[{time.strftime('%H:%M:%S')}] Saved {saved_count:,} aggregation results")
         else:
             print(f"[{time.strftime('%H:%M:%S')}] No aggregation results to save")
 
