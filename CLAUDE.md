@@ -68,10 +68,33 @@ NCBI biosamples use different attribute names for the same concept:
 
 ### Measurement Discovery
 Identifying which biosample attributes are measurements:
-- Numeric values detected
+- Numeric values detected using quantulum3 parser
 - Unit assertions validated
 - UCUM (Unified Code for Units of Measure) mapping
+- Skip list (224 harmonized_names) excludes non-measurement fields
 - See: `measurement_discovery_efficient.py`
+
+**Quick Commands**:
+```bash
+# Test the pipeline (1-2 minutes)
+make -f Makefiles/measurement_discovery.Makefile test-measurement-discovery
+
+# Focus on common measurements (2-3 hours)
+make -f Makefiles/measurement_discovery.Makefile run-measurement-discovery-common
+
+# Full production run (4-8 hours)
+make -f Makefiles/measurement_discovery.Makefile run-measurement-discovery
+```
+
+**Performance Tips**:
+- Use `--limit 50000` for quick validation (testing mode)
+- Use `--min-count 10` to focus on common values (faster processing)
+- Use `--save-aggregation` to save all 64M aggregation pairs (adds ~10-15 min)
+- Script uses streaming + batching to avoid OOM on 64M+ pairs (Issue #262)
+
+**Output Collections**:
+- `content_pairs_aggregated`: All (harmonized_name, content, biosample_count) pairs
+- `measurement_results_skip_filtered`: Parsed quantities with units
 
 ### CURIE Extraction
 Converting text to ontology identifiers:

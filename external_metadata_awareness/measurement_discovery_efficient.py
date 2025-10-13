@@ -1,4 +1,57 @@
 #!/usr/bin/env python3
+"""
+Measurement Discovery using Quantulum3 Parser
+
+This script identifies measurement values and units in NCBI biosample attributes using
+quantulum3 parsing. It processes millions of (harmonized_name, content) pairs from the
+biosamples_attributes collection.
+
+PERFORMANCE CHARACTERISTICS:
+    Phase 1: MongoDB Aggregation (712M → 64M pairs)
+        - Time: ~30-40 minutes
+        - Memory: Constant (streaming with batching)
+        - Affected by: --min-count, --limit
+
+    Phase 2: Save Aggregation Results (optional, if --save-aggregation)
+        - Time: ~10-15 minutes for 64M documents
+        - Memory: 10k batch buffer (10k docs * ~200 bytes = ~2MB)
+        - Output: content_pairs_aggregated collection
+
+    Phase 3: Quantulum3 Processing (~40M pairs after skip list)
+        - Time: 4-8 hours (CPU-intensive)
+        - Memory: Moderate (batch buffer + results list)
+        - Output: measurement_results_skip_filtered collection
+
+USAGE EXAMPLES:
+
+    # Quick test (1-2 minutes) - verify no OOM errors
+    poetry run measurement-discovery-efficient \\
+        --mongo-uri "mongodb://localhost:27017/ncbi_metadata" \\
+        --save-aggregation \\
+        --clear-output \\
+        --limit 50000
+
+    # Focus on common values only (faster, ~20M pairs)
+    poetry run measurement-discovery-efficient \\
+        --mongo-uri "mongodb://localhost:27017/ncbi_metadata" \\
+        --save-aggregation \\
+        --clear-output \\
+        --min-count 10
+
+    # Full production run (4-8 hours)
+    make -f Makefiles/measurement_discovery.Makefile run-measurement-discovery
+
+OUTPUT COLLECTIONS:
+    - content_pairs_aggregated: All (harmonized_name, content, biosample_count) pairs
+    - measurement_results_skip_filtered: Parsed quantities (value, unit, entity)
+
+MEMORY MANAGEMENT:
+    - Streams aggregation cursor to avoid loading 64M docs into memory (Issue #262)
+    - Batched inserts (10k documents per batch) for aggregation saves
+    - Skip list (224 harmonized_names) reduces quantulum3 processing by ~40%
+
+See: https://github.com/microbiomedata/external-metadata-awareness/issues/262
+"""
 
 import click
 import time
@@ -71,15 +124,78 @@ SKIP_HARMONIZED_NAMES = {
 }
 
 @click.command()
-@click.option('--mongo-uri', default='mongodb://localhost:27017/ncbi_metadata', help='MongoDB URI')
-@click.option('--min-count', default=1, help='Minimum biosample count for content')
-@click.option('--progress-every', default=25, help='Show quantulum3 input every N values')
-@click.option('--batch-size', default=1000, help='Process in batches')
-@click.option('--limit', default=None, type=int, help='Limit total processing for testing')
-@click.option('--save-aggregation', is_flag=True, help='Save aggregation results to content_pairs_aggregated collection')
-@click.option('--clear-output', is_flag=True, help='Clear output collection before processing')
+@click.option(
+    '--mongo-uri',
+    default='mongodb://localhost:27017/ncbi_metadata',
+    help='MongoDB connection URI. Performance impact: None (just connection target).'
+)
+@click.option(
+    '--min-count',
+    default=1,
+    type=int,
+    help='Minimum biosample count threshold. MAJOR IMPACT: Filters in aggregation pipeline. '
+         'Examples: 1 = 64M pairs (full), 10 = ~20M pairs, 100 = ~5M pairs. '
+         'Use higher values to focus on common measurements and reduce processing time.'
+)
+@click.option(
+    '--progress-every',
+    default=25,
+    type=int,
+    help='Show detailed quantulum3 output every N values. MINIMAL IMPACT: Display only. '
+         'Larger = cleaner logs, smaller = more verbose debugging output.'
+)
+@click.option(
+    '--batch-size',
+    default=1000,
+    type=int,
+    help='Save quantulum3 results every N parses. MODERATE IMPACT: I/O frequency. '
+         'Larger = fewer writes (faster), smaller = more frequent saves (safer). '
+         'Sweet spot: 1000-5000.'
+)
+@click.option(
+    '--limit',
+    default=None,
+    type=int,
+    help='Limit aggregation to first N pairs. MAJOR IMPACT: Total work to do. '
+         'Use for testing: --limit 50000 takes ~1-2 minutes. '
+         'Production: omit this flag for full 64M pair processing.'
+)
+@click.option(
+    '--save-aggregation',
+    is_flag=True,
+    help='Save all aggregation results to content_pairs_aggregated collection. '
+         'MODERATE IMPACT: Adds ~10-15 minutes to save 64M documents. '
+         'Use when you need aggregation results for later analysis.'
+)
+@click.option(
+    '--clear-output',
+    is_flag=True,
+    help='Drop measurement_results_skip_filtered before processing. MINIMAL IMPACT: ~1-2 seconds. '
+         'Use when starting fresh (not resuming).'
+)
 def main(mongo_uri, min_count, progress_every, batch_size, limit, save_aggregation, clear_output):
-    """Efficient measurement discovery using biosamples_attributes aggregation with skip list"""
+    """
+    Efficient measurement discovery using biosamples_attributes aggregation with skip list.
+
+    This command processes NCBI biosample attributes to identify and extract measurement
+    values with their units using the quantulum3 library. It uses streaming and batching
+    to handle 64M+ (harmonized_name, content) pairs without OOM errors.
+
+    PERFORMANCE:
+        - Quick test: --limit 50000 = 1-2 minutes
+        - Common values only: --min-count 10 = ~2-3 hours
+        - Full run: default settings = 4-8 hours
+
+    EXAMPLES:
+        # Test the pipeline quickly
+        $ poetry run measurement-discovery-efficient --limit 50000 --save-aggregation --clear-output
+
+        # Production run for common measurements
+        $ poetry run measurement-discovery-efficient --min-count 10 --save-aggregation --clear-output
+
+        # Full production run (use Makefile target instead)
+        $ make -f Makefiles/measurement_discovery.Makefile run-measurement-discovery
+    """
 
     print(f"[{time.strftime('%H:%M:%S')}] Starting efficient measurement discovery...")
     print(f"[{time.strftime('%H:%M:%S')}] Using skip list: {len(SKIP_HARMONIZED_NAMES)} harmonized_names will be skipped")
