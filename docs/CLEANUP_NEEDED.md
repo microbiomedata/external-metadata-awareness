@@ -2,7 +2,7 @@
 
 ## Newly Created Holding Areas (Need Review)
 
-### `claude-mds/`
+### `docs/`
 Claude-generated documentation and analysis files. Need to assess:
 - Which are still relevant/accurate vs outdated
 - What should move to proper documentation locations
@@ -61,7 +61,7 @@ Multiple subdirectories including:
 
 ## Recommended Next Steps
 
-1. **Triage Session 1: claude-mds/**
+1. **Triage Session 1: docs/**
    - Review each file's relevance
    - Move keepers to appropriate docs locations
    - Delete outdated analysis

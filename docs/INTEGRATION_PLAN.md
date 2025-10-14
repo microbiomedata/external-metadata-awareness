@@ -34,10 +34,10 @@
 ### Current State
 Content is **scattered** across multiple files:
 - CLAUDE.md: High-level overview (85 lines, too much detail)
-- `claude-mds/nmdc-env-triad-valueset-lifecycle.md`: Comprehensive 299-line doc with full workflow
+- `docs/nmdc-env-triad-valueset-lifecycle.md`: Comprehensive 299-line doc with full workflow
 - `unorganized/README_environmental_context_value_sets.md`: submission-schema focused (59 lines)
 - `notebooks/environmental_context_value_sets/voting-sheet-generation-readme.md`: Implementation details
-- `claude-mds/submission-schema-CLAUDE.md`: submission-schema repo documentation
+- `docs/submission-schema-CLAUDE.md`: submission-schema repo documentation
 
 ### Recommended Structure
 
@@ -63,7 +63,7 @@ Content is **scattered** across multiple files:
 4. **For More Detail** (~20 lines)
    - Link to detailed README in notebooks/environmental_context_value_sets/
    - Link to submission-schema documentation
-   - Link to historical analysis in claude-mds/
+   - Link to historical analysis in docs/
 
 **Total**: ~320 lines (manageable, authoritative)
 
@@ -71,7 +71,7 @@ Content is **scattered** across multiple files:
 1. **Keep in CLAUDE.md**: Only 15-20 lines pointing to ENV_TRIAD_WORKFLOW.md
 2. **Move to ENV_TRIAD_WORKFLOW.md**: Consolidated content from all sources
 3. **Update cross-links**: Ensure all docs point to new authoritative file
-4. **Preserve historical**: Keep claude-mds/ files intact with note they're superseded
+4. **Preserve historical**: Keep docs/ files intact with note they're superseded
 
 ---
 
@@ -102,13 +102,13 @@ Content is **scattered** across multiple files:
 See [Issue #224](https://github.com/microbiomedata/external-metadata-awareness/issues/224)
 
 ### Files to Review
-- `claude-mds/` (35+ files) - Keep for historical context
+- `docs/` (35+ files) - Keep for historical context
 - `unorganized/` (50+ files) - Needs categorization
 - Root directory MDs - Already handled (moved to phase 1 docs)
 
 ### Strategy
 1. Create `docs/archive/` for superseded analysis
-2. Keep `claude-mds/` for session notes (useful for troubleshooting)
+2. Keep `docs/` for session notes (useful for troubleshooting)
 3. Move truly obsolete files to archive
 4. Update README in each directory explaining status
 
@@ -130,7 +130,7 @@ See [Issue #224](https://github.com/microbiomedata/external-metadata-awareness/i
 ### Future Session (Issue #224)
 1. Historical documentation consolidation
 2. Archive creation and organization
-3. README updates for claude-mds/ and unorganized/
+3. README updates for docs/ and unorganized/
 
 ---
 
