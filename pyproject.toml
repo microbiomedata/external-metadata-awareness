@@ -75,6 +75,7 @@ xml-to-mongo = 'external_metadata_awareness.xml_to_mongo:load_xml_to_mongodb'
 
 # New aliases for Makefile scripts
 add-duckdb-key-value-row = 'external_metadata_awareness.add_duckdb_key_value_row:main'
+analyze-collection-flatness = 'external_metadata_awareness.analyze_collection_flatness:main'
 dump-sra-metadata-schema = 'external_metadata_awareness.dump_sra_metadata_table_schema:main'
 env-triad-values-splitter = 'external_metadata_awareness.new_env_triad_values_splitter:main'
 env-triad-oak-annotator = 'external_metadata_awareness.new_env_triad_oak_annotator:main'

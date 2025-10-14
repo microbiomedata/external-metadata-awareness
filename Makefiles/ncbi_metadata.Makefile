@@ -210,3 +210,17 @@ copy-environmental-candidates-to-ncbi-metadata:
 		--command 'db.environmental_candidates_2017_plus.aggregate([{$$out: {db: "ncbi_metadata", coll: "biosamples"}}])'
 	@date
 
+# Analyze collection structure complexity (flatness scoring)
+# Output: TSV with flatness scores (0-100), useful for identifying export-ready collections
+local/collection_flatness.tsv:
+	@date
+	@echo "Analyzing MongoDB collection flatness..."
+	@echo "Using MONGO_URI=$(MONGO_URI)"
+	$(RUN) analyze-collection-flatness \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--output-format tsv \
+		--output-file $@ \
+		--verbose
+	@date
+

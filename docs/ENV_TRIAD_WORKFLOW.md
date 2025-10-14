@@ -402,7 +402,7 @@ environments:
 
 ### Implementation Details
 - **Voting sheet technical notes**: `notebooks/environmental_context_value_sets/voting-sheet-generation-readme.md`
-- **Historical workflow analysis**: `claude-mds/nmdc-env-triad-valueset-lifecycle.md` (299 lines)
+- **Historical workflow analysis**: `docs/nmdc-env-triad-valueset-lifecycle.md` (299 lines)
 - **Submission schema README**: `repo_data/microbiomedata/submission-schema_README.md`
 
 ### Repository Links
