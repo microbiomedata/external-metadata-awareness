@@ -9,7 +9,8 @@ endif
 .PHONY: count-biosamples-per-harmonized-name count-biosamples-step1 count-bioprojects-step2 \
 count-bioprojects-step2a count-bioprojects-step2b count-bioprojects-step2c count-bioprojects-step2d \
 merge-counts-step3 index-harmonized-name-counts count-biosamples-and-bioprojects-per-harmonized-name \
-count-unit-assertions count-mixed-content count-measurement-evidence run-measurement-discovery clean-discovery
+count-unit-assertions count-mixed-content count-measurement-evidence run-measurement-discovery \
+create-dimensional-stats clean-discovery
 
 # Phase 0: Baseline counting
 
@@ -307,6 +308,20 @@ load-global-nmdc-slots:
 		--verbose
 	@date
 
+# Create harmonized_name_dimensional_stats from measurement results
+# Requires: measurement_results_skip_filtered collection (from run-measurement-discovery)
+# Produces: harmonized_name_dimensional_stats collection
+# See Issue #275 for methodology and comparison with 3M DuckDB version
+create-dimensional-stats:
+	@date
+	@echo "Creating harmonized_name_dimensional_stats from measurement results..."
+	@echo "Using MONGO_URI=$(MONGO_URI)"
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/create_harmonized_name_dimensional_stats.js \
+		--verbose
+	@date
 
 
 
