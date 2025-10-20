@@ -13,8 +13,12 @@ BIOPROJECTS_DB ?= ncbi_metadata_20250919
 # Output configuration
 OUTPUT_DIR ?= ./local/ncbi_duckdb_export
 DATE_STAMP := $(shell date +%Y%m%d)
-DUCKDB_FILE ?= $(OUTPUT_DIR)/ncbi_metadata_flat_$(DATE_STAMP).duckdb
-BIOPROJECTS_DUCKDB_FILE ?= $(OUTPUT_DIR)/ncbi_bioprojects_$(DATE_STAMP).duckdb
+# Dated files for archival
+DUCKDB_FILE_DATED ?= $(OUTPUT_DIR)/ncbi_metadata_flat_$(DATE_STAMP).duckdb
+BIOPROJECTS_DUCKDB_FILE_DATED ?= $(OUTPUT_DIR)/ncbi_bioprojects_$(DATE_STAMP).duckdb
+# Symlinks to latest (avoids date rollover issues)
+DUCKDB_FILE ?= $(OUTPUT_DIR)/ncbi_metadata_flat_latest.duckdb
+BIOPROJECTS_DUCKDB_FILE ?= $(OUTPUT_DIR)/ncbi_bioprojects_latest.duckdb
 
 # List of 100% flat collections (flatness_score = 100.0)
 FLAT_COLLECTIONS := \
@@ -111,7 +115,7 @@ dump-json: $(OUTPUT_DIR)
 # Create DuckDB database from existing JSON files
 make-duckdb: $(OUTPUT_DIR)
 	@echo "Creating DuckDB database from JSON files..."
-	@echo "Database: $(DUCKDB_FILE)"
+	@echo "Database: $(DUCKDB_FILE_DATED)"
 	@echo ""
 	@for collection in $(FLAT_COLLECTIONS); do \
 		json_file="$(OUTPUT_DIR)/$$collection.json"; \
@@ -121,39 +125,46 @@ make-duckdb: $(OUTPUT_DIR)
 		fi; \
 		echo "Loading $$collection into DuckDB..."; \
 		table_name=$$(echo "$$collection" | sed 's/\./_/g'); \
-		duckdb "$(DUCKDB_FILE)" -c "CREATE OR REPLACE TABLE $$table_name AS SELECT * EXCLUDE _id FROM read_json('$$json_file', auto_detect=true, union_by_name=true, maximum_object_size=16777216);"; \
+		duckdb "$(DUCKDB_FILE_DATED)" -c "CREATE OR REPLACE TABLE $$table_name AS SELECT * EXCLUDE _id FROM read_json('$$json_file', auto_detect=true, union_by_name=true, maximum_object_size=16777216);"; \
 		echo "  ✓ Table created: $$table_name"; \
 	done
 	@echo ""
 	@echo "DuckDB database created successfully!"
+	@echo "Creating symlink to latest database..."
+	@cd $(OUTPUT_DIR) && ln -sf $$(basename $(DUCKDB_FILE_DATED)) $$(basename $(DUCKDB_FILE))
+	@echo "✓ Symlink created: $(DUCKDB_FILE) -> $(DUCKDB_FILE_DATED)"
 	@$(MAKE) -f Makefiles/ncbi_to_duckdb.Makefile show-summary
 
 # Process all collections (JSON + DuckDB) - primary target
+# Space-optimized: Exports, loads, then deletes JSON for each collection
 make-database: $(OUTPUT_DIR)
 	@echo "=== NCBI Metadata to DuckDB Export ==="
 	@echo "Source: $(MONGO_URI)"
-	@echo "Target: $(DUCKDB_FILE)"
+	@echo "Target: $(DUCKDB_FILE_DATED)"
+	@echo "Symlink: $(DUCKDB_FILE)"
+	@echo "Strategy: Export → Load → Clean (space-optimized)"
 	@echo ""
-	@echo "Step 1: Exporting all flat collections to JSON..."
 	@for collection in $(FLAT_COLLECTIONS); do \
-		echo "  Exporting $$collection..."; \
+		echo "Processing $$collection..."; \
+		json_file="$(OUTPUT_DIR)/$$collection.json"; \
+		echo "  [1/3] Exporting to JSON..."; \
 		mongoexport --uri="$(MONGO_URI)" \
 			--collection="$$collection" \
 			--type=json \
-			--out="$(OUTPUT_DIR)/$$collection.json" 2>&1 | grep -v "connected to"; \
-		echo "    ✓ Exported"; \
-	done
-	@echo ""
-	@echo "Step 2: Loading all collections into DuckDB..."
-	@for collection in $(FLAT_COLLECTIONS); do \
-		json_file="$(OUTPUT_DIR)/$$collection.json"; \
-		echo "  Loading $$collection..."; \
+			--out="$$json_file" 2>&1 | grep -v "connected to"; \
+		echo "  [2/3] Loading into DuckDB..."; \
 		table_name=$$(echo "$$collection" | sed 's/\./_/g'); \
-		duckdb "$(DUCKDB_FILE)" -c "CREATE OR REPLACE TABLE $$table_name AS SELECT * EXCLUDE _id FROM read_json('$$json_file', auto_detect=true, union_by_name=true, maximum_object_size=16777216);"; \
-		echo "    ✓ Table created: $$table_name"; \
+		duckdb "$(DUCKDB_FILE_DATED)" -c "CREATE OR REPLACE TABLE $$table_name AS SELECT * EXCLUDE _id FROM read_json('$$json_file', auto_detect=true, union_by_name=true, maximum_object_size=16777216);"; \
+		echo "  [3/3] Cleaning up JSON..."; \
+		rm -f "$$json_file"; \
+		json_size=$$(du -h "$(OUTPUT_DIR)" 2>/dev/null | tail -1 | awk '{print $$1}'); \
+		echo "  ✓ $$collection complete (temp files cleaned, DuckDB size: $$json_size)"; \
+		echo ""; \
 	done
-	@echo ""
 	@echo "=== Export Complete! ==="
+	@echo "Creating symlink to latest database..."
+	@cd $(OUTPUT_DIR) && ln -sf $$(basename $(DUCKDB_FILE_DATED)) $$(basename $(DUCKDB_FILE))
+	@echo "✓ Symlink created: $(DUCKDB_FILE) -> $(DUCKDB_FILE_DATED)"
 	@$(MAKE) -f Makefiles/ncbi_to_duckdb.Makefile show-summary
 
 # Export satisfying biosamples to CSV (biosamples meeting all quality criteria)
@@ -194,7 +205,7 @@ show-summary:
 	fi
 	@echo "=== Database Summary ==="
 	@echo "Database: $(DUCKDB_FILE)"
-	@file_size=$$(ls -lh "$(DUCKDB_FILE)" | awk '{print $$5}'); \
+	@file_size=$$(ls -lLh "$(DUCKDB_FILE)" | awk '{print $$5}'); \
 	echo "File size: $$file_size"
 	@echo ""
 	@echo "Tables:"
