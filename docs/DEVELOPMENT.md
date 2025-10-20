@@ -140,6 +140,49 @@ Closes #214
 
 ---
 
+## Shared Output Files
+
+### NERSC Shared Directory
+
+**Location**: `/global/cfs/cdirs/m3408/www/biosamples_duckdb/`
+
+**Public Access**: https://portal.nersc.gov/cfs/m3408/www/biosamples_duckdb/
+
+### Directory Structure
+```
+biosamples_duckdb/
+├── gold/                    # GOLD database exports
+├── nmdc-flattened/          # NMDC API exports
+├── non-duckdb/              # CSV/TSV exports (mostly zipped)
+└── old/                     # Archived versions by date
+    └── YYYY-MM-DD/
+```
+
+### File Naming Standards
+
+**Pattern**: `{source}_{description}_{YYYYMMDD}.{ext}`
+
+**Examples**:
+- ✅ `ncbi_metadata_flat_20251019.duckdb`
+- ✅ `gold_api_20250919.duckdb`
+- ✅ `nmdc_flattened_biosamples_20251006.csv.zip`
+
+**Rules**:
+- Use underscores, never hyphens (hyphens require quoting in DuckDB SQL)
+- Date format: `YYYYMMDD` (not `YYYY-MM-DD` or timestamps)
+- DuckDB extension: `.duckdb` (not `.db`)
+- Compression: Add `.gz` or `.zip` for files >100MB
+- Source names: `ncbi`, `gold_api`, `nmdc_api` (underscores, not hyphens)
+
+**Archival**:
+- Move superseded versions to `old/YYYY-MM-DD/` subdirectories
+- Keep latest version in main directory
+- Include README or documentation for major releases
+
+See [Issue #282](https://github.com/microbiomedata/external-metadata-awareness/issues/282) for complete naming conventions.
+
+---
+
 ## Testing
 
 ### Current State
