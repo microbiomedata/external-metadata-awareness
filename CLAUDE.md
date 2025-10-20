@@ -49,6 +49,16 @@ poetry run mongo-connect --uri mongodb://localhost:27017/ncbi_metadata --connect
 
 ---
 
+## Code Guidelines
+
+**MongoDB JavaScript (mongo-js/)**:
+- Keep scripts small and focused on atomic tasks (< 5K preferred)
+- Single responsibility: one aggregation/transformation per file
+- Document complexity if larger files are needed (see existing 9-11K files)
+- Use standard header with Purpose/Input/Output (see DEVELOPMENT.md)
+
+---
+
 ## Key Locations
 
 - `Makefiles/`: Pipeline orchestration
