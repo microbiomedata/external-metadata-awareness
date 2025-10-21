@@ -78,7 +78,6 @@ try {
         ...slot,
         schema_source: "MIxS",
         schema_url: mixsSchemaUrl,
-        loaded_at: new Date(),
         schema_version: "main",  // Could extract actual version if needed
         induction_applied: false  // These are global/uninduced definitions
     }));

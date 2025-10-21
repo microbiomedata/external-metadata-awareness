@@ -35,6 +35,10 @@ Guidelines for contributing code, testing, and maintaining this repository.
 - **Variables/Functions**: `snake_case` (e.g., `calculate_value`, `biosample_id`)
 - **Classes**: `PascalCase` (e.g., `MongoDBConnection`, `BioportalMapper`)
 - **Constants**: `UPPER_SNAKE_CASE` (e.g., `MAX_BATCH_SIZE`, `DEFAULT_TIMEOUT`)
+- **DuckDB Files**: Use underscores, not hyphens (e.g., `ncbi_metadata_flat_20251019.duckdb`)
+  - Pattern: `{source}_{description}_{YYYYMMDD}.duckdb`
+  - Rationale: Hyphens require quoting in DuckDB SQL
+  - See: [Issue #282](https://github.com/microbiomedata/external-metadata-awareness/issues/282)
 
 ### CLI Tools
 - **Framework**: Use Click library for CLI commands
@@ -133,6 +137,49 @@ Closes #214
 ❌ Generated data (DuckDB files, CSVs) - Use `local/` directory
 ❌ Virtual environments - Poetry manages dependencies
 ❌ IDE configs (.vscode/, .idea/) - Use global gitignore
+
+---
+
+## Shared Output Files
+
+### NERSC Shared Directory
+
+**Location**: `/global/cfs/cdirs/m3408/www/biosamples_duckdb/`
+
+**Public Access**: https://portal.nersc.gov/project/m3408/biosamples_duckdb
+
+### Directory Structure
+```
+biosamples_duckdb/
+├── gold/                    # GOLD database exports
+├── nmdc-flattened/          # NMDC API exports
+├── non-duckdb/              # CSV/TSV exports (mostly zipped)
+└── old/                     # Archived versions by date
+    └── YYYY-MM-DD/
+```
+
+### File Naming Standards
+
+**Pattern**: `{source}_{description}_{YYYYMMDD}.{ext}`
+
+**Examples**:
+- ✅ `ncbi_metadata_flat_20251019.duckdb`
+- ✅ `gold_api_20250919.duckdb`
+- ✅ `nmdc_flattened_biosamples_20251006.csv.zip`
+
+**Rules**:
+- Use underscores, never hyphens (hyphens require quoting in DuckDB SQL)
+- Date format: `YYYYMMDD` (not `YYYY-MM-DD` or timestamps)
+- DuckDB extension: `.duckdb` (not `.db`)
+- Compression: Add `.gz` or `.zip` for files >100MB
+- Source names: `ncbi`, `gold_api`, `nmdc_api` (underscores, not hyphens)
+
+**Archival**:
+- Move superseded versions to `old/YYYY-MM-DD/` subdirectories
+- Keep latest version in main directory
+- Include README or documentation for major releases
+
+See [Issue #282](https://github.com/microbiomedata/external-metadata-awareness/issues/282) for complete naming conventions.
 
 ---
 
@@ -282,6 +329,76 @@ Create indexes for frequently queried fields:
 db.biosamples_attributes.createIndex({harmonized_name: 1}, {background: true});
 db.env_triads_flattened.createIndex({accession: 1, component: 1}, {background: true});
 ```
+
+---
+
+## MongoDB JavaScript Patterns
+
+### Execution Methods
+
+**Preferred: mongo-js-executor** (Python wrapper - standardized interface)
+
+Use for all production scripts in `mongo-js/` directory:
+```bash
+# Standard pattern
+$(RUN) mongo-js-executor \
+  --mongo-uri "$(MONGO_URI)" \
+  $(ENV_FILE_OPTION) \
+  --js-file mongo-js/your_script.js \
+  --verbose
+```
+
+Benefits:
+- Consistent URI handling across all scripts
+- Supports .env files for configuration
+- Better error handling and logging
+- Database name can be parameterized via URI
+
+**Alternative: mongosh --eval** (Direct shell - use sparingly)
+
+Use only for:
+- One-line commands (drop collections, quick counts)
+- Ad-hoc debugging queries
+- Simple maintenance tasks
+
+```bash
+mongosh "$(MONGO_URI)" --eval "db.collection.countDocuments()"
+```
+
+Limitations:
+- Harder to parameterize database names
+- No .env file support
+- Inconsistent quoting across shells
+
+### Best Practices for JS Scripts
+
+**Database Inheritance**: JS scripts inherit DB from connection URI
+```javascript
+// ✅ Good: Use db object from mongosh context
+const collection = db.measurement_results_skip_filtered;
+
+// ❌ Avoid: Hardcoding database names
+const collection = db.getSiblingDB('ncbi_metadata').measurement_results;
+```
+
+**Documentation Headers**: Include standard header in all scripts
+```javascript
+// Purpose: One-line description
+// Input: Source collection(s) and expected size
+// Output: Target collection and expected size
+// Related: Issue #XXX
+```
+
+**Progress Reporting**: For long-running operations
+```javascript
+print(`Processing ${total} documents...`);
+// ... operation
+print(`✓ Created ${result.insertedCount} documents`);
+```
+
+### Related Issues
+- [#281](https://github.com/microbiomedata/external-metadata-awareness/issues/281) - Database name parameterization
+- [#282](https://github.com/microbiomedata/external-metadata-awareness/issues/282) - Naming conventions
 
 ---
 

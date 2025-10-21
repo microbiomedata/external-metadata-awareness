@@ -13,6 +13,7 @@ import click
 import csv
 import json
 import logging
+import os
 import time
 from collections import Counter
 from typing import Dict, Any, List
@@ -81,8 +82,8 @@ def calculate_flatness(analysis: Dict[str, Any]) -> float:
 
 
 @click.command()
-@click.option('--mongo-uri', default='mongodb://localhost:27017/ncbi_metadata',
-              help='MongoDB connection URI')
+@click.option('--mongo-uri', default=lambda: os.getenv('MONGO_URI', 'mongodb://localhost:27017/ncbi_metadata'),
+              help='MongoDB connection URI (default: $MONGO_URI or mongodb://localhost:27017/ncbi_metadata)')
 @click.option('--sample-percent', default=1.0, type=float,
               help='Percentage of documents to sample (default: 1.0%)')
 @click.option('--min-sample-size', default=1000, type=int,

@@ -81,11 +81,10 @@ try {
     if (rangeModifications.length > 0) {
         const reportsWithMetadata = rangeModifications.map(report => ({
             ...report,
-            analyzed_at: new Date(),
             schema_source: "NMDC",
             schema_file: localSchemaFile
         }));
-        
+
         db.nmdc_range_slot_usage_report.insertMany(reportsWithMetadata);
     }
     

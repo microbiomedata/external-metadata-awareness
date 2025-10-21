@@ -34,11 +34,7 @@ db.packages.aggregate([
             
             // XML attributes (if any exist)
             group: "$group",
-            antibiogram: "$antibiogram",
-            
-            // Processing metadata
-            flattened_at: new Date(),
-            source_collection: "packages"
+            antibiogram: "$antibiogram"
         }
     },
     {

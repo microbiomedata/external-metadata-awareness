@@ -178,7 +178,7 @@ flatten_biosample_attributes:
 #biosample_id
 #harmonized_name
 
-aggregate-biosample-package-usage:
+aggregate-biosample-package-usage: biosamples-flattened
 	@date
 	@echo "Aggregating biosample package usage counts..."
 	$(RUN) mongo-js-executor \
@@ -203,11 +203,11 @@ copy-environmental-candidates-to-ncbi-metadata:
 	@date
 	@echo "Copying environmental candidates to ncbi_metadata.biosamples..."
 	$(RUN) mongo-connect \
-		--uri "mongodb://localhost:27017/ncbi_metadata_20250919" \
+		--uri "$(MONGO_URI)" \
 		$(ENV_FILE_OPTION) \
 		--connect \
 		--verbose \
-		--command 'db.environmental_candidates_2017_plus.aggregate([{$$out: {db: "ncbi_metadata", coll: "biosamples"}}])'
+		--command 'db.environmental_candidates_2017_plus.aggregate([{$$out: {db: "$(shell echo $(MONGO_URI) | sed 's|.*/||')", coll: "biosamples"}}])'
 	@date
 
 # Analyze collection structure complexity (flatness scoring)

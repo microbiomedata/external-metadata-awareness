@@ -191,9 +191,7 @@ db.temp_total_attributes.aggregate([
                     },
                     2
                 ]
-            },
-            
-            processed_at: new Date()
+            }
         }
     },
     

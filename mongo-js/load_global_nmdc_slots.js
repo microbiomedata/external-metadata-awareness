@@ -77,7 +77,6 @@ try {
         ...slot,
         schema_source: "NMDC",
         schema_file: localSchemaFile,
-        loaded_at: new Date(),
         schema_version: "main",  // Could extract actual version if needed
         induction_applied: false  // These are global/uninduced definitions
     }));
