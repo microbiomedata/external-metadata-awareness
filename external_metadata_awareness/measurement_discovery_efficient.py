@@ -269,7 +269,6 @@ def main(mongo_uri, min_count, progress_every, batch_size, limit, save_aggregati
 
         # Save to aggregation collection if requested
         if save_aggregation:
-            result['aggregated_at'] = time.time()
             agg_batch.append(result)
 
             if len(agg_batch) >= agg_batch_size:

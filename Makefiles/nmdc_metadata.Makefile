@@ -1,5 +1,6 @@
 RUN=poetry run
 WGET=wget
+MONGO_URI ?= mongodb://localhost:27017/nmdc
 
 ## Load environment variables from local/.env file if it exists
 #ifneq (,$(wildcard local/.env))
@@ -152,13 +153,15 @@ restore-to-unauthenticated: local/dumped-from-authenticated
 	( \
 	  set -a && . local/.env.nmdc-production && set +a && \
 	  echo "Dropping database $$MONGO_DB..."; \
-	  mongosh "mongodb://localhost:27017" --quiet --eval 'db.getSiblingDB("'"$$MONGO_DB"'").dropDatabase()'; \
+	  MONGO_HOST=$$(echo "$(MONGO_URI)" | sed -E 's|mongodb://([^/:]+).*|\1|'); \
+	  MONGO_PORT=$$(echo "$(MONGO_URI)" | sed -E 's|mongodb://[^:]+:([0-9]+).*|\1|'); \
+	  mongosh "mongodb://$$MONGO_HOST:$$MONGO_PORT" --quiet --eval 'db.getSiblingDB("'"$$MONGO_DB"'").dropDatabase()'; \
 	  for bson_file in $</$${MONGO_DB}/*.bson; do \
 	    collection=$$(basename $$bson_file .bson); \
 	    echo "Restoring $$collection into $$MONGO_DB..."; \
 	    mongorestore \
 	      --host=$$MONGO_HOST \
-	      --port=27017 \
+	      --port=$$MONGO_PORT \
 	      --db="$$MONGO_DB" \
 	      --collection="$$collection" \
 	      "$$bson_file"; \
@@ -183,7 +186,7 @@ restore-to-authenticated: local/dumped-from-authenticated
 .PHONY: flatten-nmdc
 flatten-nmdc:
 	$(RUN) python external_metadata_awareness/flatten_nmdc_collections.py \
-		--mongo-uri mongodb://localhost:27017/nmdc
+		--mongo-uri "$(MONGO_URI)"
 
 .PHONY: flatten-nmdc-auth
 flatten-nmdc-auth:

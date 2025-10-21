@@ -53,6 +53,7 @@ count-biosamples-per-hn-cleanup:
 
 # Meta-target: Run all steps in sequence
 count-biosamples-per-harmonized-name-atomic: count-biosamples-per-hn-step1 count-biosamples-per-hn-step2 count-biosamples-per-hn-step3
+	@$(MAKE) -f Makefiles/measurement_discovery.Makefile count-biosamples-per-hn-cleanup MONGO_URI="$(MONGO_URI)"
 	@echo "✅ Biosample counting complete (atomic steps)"
 
 # Original monolithic target (deprecated - prefer atomic version above)

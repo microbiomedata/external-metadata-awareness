@@ -17,7 +17,7 @@ endif
 SRA_BIGQUERY_PROJECT = nmdc-377118
 SRA_BIGQUERY_DATASET = nih-sra-datastore.sra
 SRA_BIGQUERY_TABLE = metadata
-SRA_BIGQUERY_BATCH_SIZE = 100000
+SRA_BIGQUERY_BATCH_SIZE = 1000000  # 1M per batch - faster export with fewer API calls
 SRA_BIGQUERY_LIMIT = 30000000 # expect ~ 30000000
 
 # Target: purge-sra
@@ -55,15 +55,15 @@ biosample-bioproject-preview:
 # Target: sra_accession_pairs_tsv_to_mongo
 # Exports BioSample-BioProject pairs from SRA to MongoDB
 downloads/sra_accession_pairs.tsv:
-	@echo "Exporting SRA accession pairs to TSV..."
+	@echo "Exporting ALL SRA accession pairs to TSV (no limit)..."
 	$(RUN) export-sra-accession-pairs \
 		--project $(SRA_BIGQUERY_PROJECT) \
 		--dataset $(SRA_BIGQUERY_DATASET) \
 		--table $(SRA_BIGQUERY_TABLE) \
 		--batch-size $(SRA_BIGQUERY_BATCH_SIZE) \
-		--limit $(SRA_BIGQUERY_LIMIT) \
 		--exclude-nulls \
-		--output $@
+		--output $@ \
+		--verbose
 
 sra_accession_pairs_tsv_to_mongo: downloads/sra_accession_pairs.tsv
 	@echo "Loading SRA accession pairs into MongoDB..."

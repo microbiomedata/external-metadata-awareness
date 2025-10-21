@@ -42,7 +42,7 @@ const DIMENSIONLESS_ENTITIES = [
     'dimensionless', 'count', 'fraction', 'percentage', 'ratio', 'unknown'
 ];
 
-const analysisTimestamp = new Date().toISOString();
+
 
 print("[" + new Date().toISOString() + "] Source collection: measurement_results_skip_filtered");
 print("[" + new Date().toISOString() + "] Output collection: harmonized_name_dimensional_stats");
@@ -201,8 +201,7 @@ db.measurement_results_skip_filtered.aggregate([
                     },
                     2
                 ]
-            },
-            analysis_timestamp: analysisTimestamp
+            }
         }
     },
 
@@ -236,7 +235,7 @@ print("Summary:");
 print("  Total harmonized_names: " + totalFields.toLocaleString());
 print("  With dimensional quantities: " + withDimensional.toLocaleString());
 print("  Only dimensionless quantities: " + onlyDimensionless.toLocaleString());
-print("  Analysis timestamp: " + analysisTimestamp);
+
 print("");
 print("Note: This collection covers harmonized_names with parseable quantities");
 print("after skip list filtering (224 fields excluded). See Issue #275 for details.");
