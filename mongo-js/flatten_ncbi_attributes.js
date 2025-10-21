@@ -90,11 +90,7 @@ db.attributes.aggregate([
                         }
                     }
                 }
-            },
-            
-            // Processing metadata
-            flattened_at: new Date(),
-            source_collection: "attributes"
+            }
         }
     },
     {

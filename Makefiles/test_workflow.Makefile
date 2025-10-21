@@ -208,6 +208,7 @@ process-env-triads: biosamples-flattened env-triad-value-counts split-env-triad-
 	@echo "✓ Environmental triads processing complete (with OAK/OLS/BioPortal annotation)"
 
 # Step 3: Run measurement discovery and stats (reuses targets from measurement_discovery.Makefile)
-process-measurements: run-measurement-discovery calculate-measurement-percentages create-dimensional-stats count-attribute-harmonized-pairings count-unit-assertions count-mixed-content count-biosamples-and-bioprojects-per-harmonized-name count-biosamples-per-harmonized-name-atomic load-global-mixs-slots load-global-nmdc-slots report-nmdc-range-slot-usage
+# Order optimized: prospective collections (before quantulum3) → run-measurement-discovery → retrospective collections
+process-measurements: count-unit-assertions count-mixed-content count-biosamples-and-bioprojects-per-harmonized-name calculate-measurement-percentages run-measurement-discovery create-dimensional-stats count-attribute-harmonized-pairings count-biosamples-per-harmonized-name-atomic load-global-mixs-slots load-global-nmdc-slots report-nmdc-range-slot-usage
 	@echo "✓ Measurement discovery complete"
 

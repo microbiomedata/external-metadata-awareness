@@ -362,8 +362,7 @@ def main(mongo_uri, min_count, progress_every, batch_size, limit, save_aggregati
                             'span_end': quantity.span[1] if quantity.span else None,
                             'surface_text': quantity.surface if hasattr(quantity, 'surface') else None,
                             'coverage_pct': round(coverage_pct, 1),
-                            'content_length': len(content),
-                            'processed_at': time.time()
+                            'content_length': len(content)
                         }
                         parsed_results.append(doc)
 

@@ -146,7 +146,7 @@ Closes #214
 
 **Location**: `/global/cfs/cdirs/m3408/www/biosamples_duckdb/`
 
-**Public Access**: https://portal.nersc.gov/cfs/m3408/www/biosamples_duckdb/
+**Public Access**: https://portal.nersc.gov/project/m3408/biosamples_duckdb
 
 ### Directory Structure
 ```
