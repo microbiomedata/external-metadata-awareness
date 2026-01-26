@@ -107,7 +107,7 @@ Generate standardized environmental context value sets for submission-schema.
 3. Ensure DuckDB file exists: `ncbi_biosamples_*.duckdb`
 4. Run all cells → generates TSV files in `voting_sheets_output/`
 
-**Complete Workflow**: See **[ENV_TRIAD_WORKFLOW.md](ENV_TRIAD_WORKFLOW.md)** for the full end-to-end process across external-metadata-awareness, submission-schema, and envo repositories.
+**Complete Workflow**: See **[environmental-triad-value-set-lifecycle.md](environmental-triad-value-set-lifecycle.md)** for the value set curation workflow, and **[env-triad-data-pipeline.md](env-triad-data-pipeline.md)** for the MongoDB annotation pipeline.
 
 ### 2. NCBI Biosample Processing
 Download, parse, and analyze 44M+ NCBI biosamples.

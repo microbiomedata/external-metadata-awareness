@@ -85,7 +85,8 @@ poetry run mongo-connect --uri mongodb://localhost:27017/ncbi_metadata --connect
 - [ARCHITECTURE.md](docs/ARCHITECTURE.md) - Collections, schemas, data flow
 - [DEVELOPMENT.md](docs/DEVELOPMENT.md) - Code style, testing
 - [PRIORITY_ROADMAP.md](docs/PRIORITY_ROADMAP.md) - Issue priorities
-- [ENV_TRIAD_WORKFLOW.md](docs/ENV_TRIAD_WORKFLOW.md) - Environmental triad pipeline
+- [environmental-triad-value-set-lifecycle.md](docs/environmental-triad-value-set-lifecycle.md) - Environmental triad value set workflow
+- [env-triad-data-pipeline.md](docs/env-triad-data-pipeline.md) - MongoDB annotation pipeline (technical reference)
 
 **Historical context** (rarely needed):
 - `docs/` - Session notes, analysis (49 files, may be outdated)

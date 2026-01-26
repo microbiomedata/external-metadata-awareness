@@ -7,7 +7,7 @@ Claude-generated documentation and analysis files. Need to assess:
 - Which are still relevant/accurate vs outdated
 - What should move to proper documentation locations
 - What can be archived or deleted
-- Examples: env-triad-annotation.md, makefile-analysis.md, gold-knowledge-management.md
+- Examples: makefile-analysis.md, gold-knowledge-management.md
 
 ### `unorganized/`
 Miscellaneous files moved from other locations. Needs full audit.
