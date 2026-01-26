@@ -1,8 +1,12 @@
-# Environmental Triad Context Value Processing Pipeline Report
+# Environmental Triad Data Pipeline
+
+> **Note**: This document consolidates the former `env_triads.md` and `env-triad-annotation.md` files.
+>
+> For the value set curation workflow (voting sheets, expert voting, enum injection), see [environmental-triad-value-set-lifecycle.md](./environmental-triad-value-set-lifecycle.md).
 
 ## Overview
 
-This report summarizes the data processing pipeline for environmental triad context values in the external-metadata-awareness repository. The pipeline extracts, normalizes, and enriches environmental context metadata fields (env_broad_scale, env_local_scale, env_medium) from NCBI BioSamples using MongoDB aggregation operations and Python-based ontology mapping tools.
+This document describes the data processing pipeline for environmental triad context values in the external-metadata-awareness repository. The pipeline extracts, normalizes, and enriches environmental context metadata fields (env_broad_scale, env_local_scale, env_medium) from NCBI BioSamples using MongoDB aggregation operations and Python-based ontology mapping tools.
 
 ## System Components
 
@@ -320,9 +324,27 @@ Several challenges exist in this pipeline:
 3. **BioPortal Mapping Errors**: Some ontologies in BioPortal cause mapping errors
 4. **Coverage Computation**: Requires sophisticated handling of overlapping text regions
 
+## Quick Start
+
+If you have a raw biosamples collection in MongoDB with no indices besides _id_, you can run the entire pipeline with:
+
+```bash
+# Using default MongoDB connection
+make -f Makefiles/env_triads.Makefile env-triads
+
+# With custom MongoDB URI and credentials from .env file
+make -f Makefiles/env_triads.Makefile env-triads MONGO_URI="mongodb://custom-host:27017/ncbi_metadata" ENV_FILE=local/.env
+```
+
+The env-triads makefile target depends on:
+1. biosamples-flattened - Flattens the biosamples collection
+2. env-triad-value-counts - Extracts unique values with counts
+
+These prerequisites will run automatically as part of the make process.
+
 ## Execution Sequence
 
-To run the complete pipeline:
+To run the complete pipeline manually:
 
 1. Set up MongoDB with biosamples data and create the `biosamples_env_triad_value_counts_gt_1` collection
 2. Run the MongoDB aggregation scripts in this order:
@@ -334,6 +356,29 @@ To run the complete pipeline:
    - `new_env_triad_values_splitter.py`
    - `new_check_envo_curies.py`
    - `new_env_triad_oak_annotator.py`
+
+## Performance Expectations
+
+- **Flattening biosamples**: ~30 minutes for ~45 million biosamples
+- **Extracting values**: ~3 minutes
+- **Splitting values**: <1 minute
+- **OAK annotation**: ~3 minutes
+- **OLS annotation**: ~7 minutes with cache, ~7 hours without
+- **BioPortal mapping**: ~2 minutes with cache, ~13 minutes without
+- **Populating final collection**: ~30 minutes + 6 minutes for indexing
+
+**Total process time**: ~1.5 hours with cache, ~9 hours without
+
+### Collection Sizes (approximate)
+
+| Collection | Documents | Size |
+|------------|-----------|------|
+| biosamples | ~45M | ~120GB |
+| biosamples_flattened | ~45M | ~15GB |
+| biosamples_env_triad_value_counts_gt_1 | ~190K | ~80MB |
+| env_triad_component_labels | ~45K | ~4MB |
+| env_triad_component_curies_uc | ~10K | ~2MB |
+| env_triads | ~190K | ~300MB |
 
 ## Lexical Index Creation and Usage
 

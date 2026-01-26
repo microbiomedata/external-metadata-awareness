@@ -194,7 +194,7 @@ make -f Makefiles/env_triads.Makefile env-triads-flattened ENV_FILE=local/.env
 
 ## Recommendations for Documentation
 
-1. **Update ENV_TRIAD_WORKFLOW.md**:
+1. **Update env-triad-data-pipeline.md** (formerly ENV_TRIAD_WORKFLOW.md):
    - Add realistic time estimates with cache considerations
    - Document cache hit rate impact
    - Add collection size expectations
