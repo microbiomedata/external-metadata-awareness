@@ -9,6 +9,7 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
 import bson
+import bson.errors
 from external_metadata_awareness.mongodb_connection import get_mongo_client
 
 MAX_BSON_SIZE = 16 * 1024 * 1024  # MongoDB max document size (16MB)
@@ -18,8 +19,8 @@ def get_bson_size(doc):
     """Get actual BSON size of a document."""
     try:
         return len(bson.encode(doc))
-    except Exception:
-        # Fallback to conservative estimate if encoding fails
+    except (bson.errors.InvalidDocument, OverflowError):
+        # Fallback to conservative estimate if encoding fails for expected reasons
         return MAX_BSON_SIZE + 1  # Force oversize handling
 
 

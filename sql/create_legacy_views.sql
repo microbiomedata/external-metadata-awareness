@@ -19,7 +19,7 @@ SELECT
     a.harmonized_name,
     b.package_content
 FROM biosamples_attributes a
-JOIN biosamples_flattened b ON a.accession = b.accession;
+LEFT JOIN biosamples_flattened b ON a.accession = b.accession;
 
 -- Create 'links' view matching old schema
 -- Old schema expected columns: id, content, target
