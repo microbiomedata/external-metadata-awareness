@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-07-01T17:10:16Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "This repository provides example code for creating a Mondo to OMOP mapping table that can be used to connect Mondo to an OMOP instance and generate Mondo patient cohorts",
+  "name": "mondo2omop",
+  "updatedAt": "2025-07-15T19:29:40Z",
+  "url": "https://github.com/monarch-initiative/mondo2omop",
+  "firstCommitDate": "2025-07-15T19:29:01Z",
+  "lastCommitDate": "2025-07-15T19:29:01Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "bryanlaraway"
+    }
+  ]
+}

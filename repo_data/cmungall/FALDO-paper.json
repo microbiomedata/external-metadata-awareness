@@ -1,0 +1,30 @@
+{
+  "createdAt": "2013-07-11T23:21:41Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "FALDO-paper",
+  "updatedAt": "2013-07-12T08:08:49Z",
+  "url": "https://github.com/cmungall/FALDO-paper",
+  "firstCommitDate": "2013-07-11T23:52:55Z",
+  "lastCommitDate": "2013-07-11T23:52:55Z",
+  "topContributors": [
+    {
+      "contributions": 42,
+      "login": "peterjc"
+    },
+    {
+      "contributions": 33,
+      "login": "JervenBolleman"
+    },
+    {
+      "contributions": 4,
+      "login": "rjpbonnal"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

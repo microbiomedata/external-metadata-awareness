@@ -1,0 +1,12 @@
+{
+  "createdAt": "2017-02-18T21:11:53Z",
+  "defaultBranchRef": {
+    "name": ""
+  },
+  "description": "",
+  "name": "test-lfs",
+  "updatedAt": "2017-02-18T21:11:53Z",
+  "url": "https://github.com/cmungall/test-lfs",
+  "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+  "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+}

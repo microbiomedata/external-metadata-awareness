@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-02-02T02:02:35Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "ALPHA common modeling patterns",
+  "name": "linkml-common",
+  "updatedAt": "2025-07-12T06:02:40Z",
+  "url": "https://github.com/linkml/linkml-common",
+  "firstCommitDate": "2024-09-16T20:08:01Z",
+  "lastCommitDate": "2024-09-16T20:08:01Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "sierra-moxon"
+    }
+  ]
+}

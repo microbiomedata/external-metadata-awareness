@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-02-15T19:27:37Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Data-driven Knowledge Graph management system. Apache license.",
+  "name": "LinkedDataHub",
+  "updatedAt": "2022-02-15T19:27:33Z",
+  "url": "https://github.com/cmungall/LinkedDataHub",
+  "firstCommitDate": "2021-12-08T11:55:31Z",
+  "lastCommitDate": "2021-12-08T11:55:31Z",
+  "topContributors": [
+    {
+      "contributions": 1064,
+      "login": "namedgraph"
+    },
+    {
+      "contributions": 1,
+      "login": "tmciver"
+    }
+  ]
+}

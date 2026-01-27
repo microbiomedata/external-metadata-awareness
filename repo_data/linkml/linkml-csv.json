@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-07-29T23:43:45Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "LinkML to CSV conversion",
+  "name": "linkml-csv",
+  "updatedAt": "2023-01-28T06:51:18Z",
+  "url": "https://github.com/linkml/linkml-csv",
+  "firstCommitDate": "2021-08-31T19:56:32Z",
+  "lastCommitDate": "2021-08-31T19:56:32Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 2,
+      "login": "actions-user"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-02-20T22:39:53Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Utility application to transform RDF triples into a neo4j property graph.",
+  "name": "rdf-to-neo4j",
+  "updatedAt": "2020-08-06T18:36:46Z",
+  "url": "https://github.com/PennTURBO/rdf-to-neo4j",
+  "firstCommitDate": "2020-08-06T18:36:28Z",
+  "lastCommitDate": "2020-08-06T18:36:28Z",
+  "topContributors": [
+    {
+      "contributions": 15,
+      "login": "greenguy33"
+    }
+  ]
+}

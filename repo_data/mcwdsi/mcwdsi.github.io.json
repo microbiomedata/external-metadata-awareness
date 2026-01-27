@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-06-30T19:38:07Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Website for the Data Science Institute at the Medical College of Wisconsin",
+  "name": "mcwdsi.github.io",
+  "updatedAt": "2024-06-30T23:30:55Z",
+  "url": "https://github.com/mcwdsi/mcwdsi.github.io",
+  "firstCommitDate": "2024-06-30T23:30:40Z",
+  "lastCommitDate": "2024-06-30T23:30:40Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "hoganwr"
+    }
+  ]
+}

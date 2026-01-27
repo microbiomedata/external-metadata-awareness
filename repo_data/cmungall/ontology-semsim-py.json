@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-04-01T00:54:52Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "yet another semantic similarity implementation",
+  "name": "ontology-semsim-py",
+  "updatedAt": "2020-04-03T23:12:53Z",
+  "url": "https://github.com/cmungall/ontology-semsim-py",
+  "firstCommitDate": "2020-04-03T23:12:47Z",
+  "lastCommitDate": "2020-04-03T23:12:47Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "cmungall"
+    }
+  ]
+}

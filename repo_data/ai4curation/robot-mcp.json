@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-06-09T00:25:00Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A model context protocol server for working with robot OWL templates",
+  "name": "robot-mcp",
+  "updatedAt": "2025-06-09T00:27:37Z",
+  "url": "https://github.com/ai4curation/robot-mcp",
+  "firstCommitDate": "2025-06-09T00:27:31Z",
+  "lastCommitDate": "2025-06-09T00:27:31Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

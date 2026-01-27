@@ -1,0 +1,22 @@
+{
+  "createdAt": "2025-06-23T14:31:27Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A model context protocol (MCP) to help agents interact with ontologies and the ontology access kit",
+  "name": "oak-mcp",
+  "updatedAt": "2025-07-31T09:50:53Z",
+  "url": "https://github.com/monarch-initiative/oak-mcp",
+  "firstCommitDate": "2025-07-08T16:11:31Z",
+  "lastCommitDate": "2025-07-08T16:11:31Z",
+  "topContributors": [
+    {
+      "contributions": 75,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 1,
+      "login": "justaddcoffee"
+    }
+  ]
+}

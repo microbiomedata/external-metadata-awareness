@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-04-25T16:24:05Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Fragments of schemas including features that may not work with all genrated artifacts",
+  "name": "linkml-gen-something-functional",
+  "updatedAt": "2024-04-30T15:51:40Z",
+  "url": "https://github.com/turbomam/linkml-gen-something-functional",
+  "firstCommitDate": "2024-04-30T15:51:32Z",
+  "lastCommitDate": "2024-04-30T15:51:32Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "turbomam"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "createdAt": "2016-10-19T07:00:06Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Ontology for consent codes and data use requirements",
+  "name": "DUO",
+  "updatedAt": "2025-07-09T10:04:19Z",
+  "url": "https://github.com/EBISPOT/DUO",
+  "firstCommitDate": "2022-09-21T14:41:14Z",
+  "lastCommitDate": "2022-09-21T14:41:14Z",
+  "topContributors": [
+    {
+      "contributions": 158,
+      "login": "mcourtot"
+    },
+    {
+      "contributions": 12,
+      "login": "solideoglori"
+    },
+    {
+      "contributions": 10,
+      "login": "CooperStansbury"
+    },
+    {
+      "contributions": 7,
+      "login": "fabiolib"
+    },
+    {
+      "contributions": 5,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 3,
+      "login": "MKonopko"
+    },
+    {
+      "contributions": 3,
+      "login": "lpaglione"
+    },
+    {
+      "contributions": 2,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 2,
+      "login": "nmcabili"
+    },
+    {
+      "contributions": 1,
+      "login": "amanjeev"
+    }
+  ]
+}

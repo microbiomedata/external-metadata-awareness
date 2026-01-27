@@ -1,0 +1,13 @@
+{
+  "createdAt": "2009-12-14T23:37:07Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Stag SQL templates for various bio-databases",
+  "name": "biostag",
+  "updatedAt": "2014-09-08T20:44:53Z",
+  "url": "https://github.com/cmungall/biostag",
+  "firstCommitDate": "2004-07-02T22:12:43Z",
+  "lastCommitDate": "2004-07-02T22:12:43Z",
+  "topContributors": []
+}

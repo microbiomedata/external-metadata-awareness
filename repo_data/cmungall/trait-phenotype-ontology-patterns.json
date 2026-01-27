@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-04-16T00:12:10Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "The goal of this repo is to reconcile our discussions on trait & phenotype modelling patterns, including measurements and other entities.",
+  "name": "trait-phenotype-ontology-patterns",
+  "updatedAt": "2021-04-16T00:12:11Z",
+  "url": "https://github.com/cmungall/trait-phenotype-ontology-patterns",
+  "firstCommitDate": "2021-04-15T10:26:36Z",
+  "lastCommitDate": "2021-04-15T10:26:36Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "matentzn"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-03-07T22:36:58Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "DEMO",
+  "updatedAt": "2020-11-23T21:38:23Z",
+  "url": "https://github.com/kaiiam/DEMO",
+  "firstCommitDate": "2020-11-23T21:35:28Z",
+  "lastCommitDate": "2020-11-23T21:35:28Z",
+  "topContributors": [
+    {
+      "contributions": 13,
+      "login": "kaiiam"
+    }
+  ]
+}

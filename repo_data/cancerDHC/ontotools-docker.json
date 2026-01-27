@@ -1,0 +1,26 @@
+{
+  "createdAt": "2021-05-26T15:42:05Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Configuration to deploy ontotools using docker compose",
+  "name": "ontotools-docker",
+  "updatedAt": "2021-05-26T15:42:06Z",
+  "url": "https://github.com/cancerDHC/ontotools-docker",
+  "firstCommitDate": "2021-05-26T10:21:50Z",
+  "lastCommitDate": "2021-05-26T10:21:50Z",
+  "topContributors": [
+    {
+      "contributions": 13,
+      "login": "jamesamcl"
+    },
+    {
+      "contributions": 6,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

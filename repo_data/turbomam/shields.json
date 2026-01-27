@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-06-04T18:04:12Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Concise, consistent, and legible badges in SVG and raster format",
+  "name": "shields",
+  "updatedAt": "2024-08-16T16:12:43Z",
+  "url": "https://github.com/turbomam/shields",
+  "firstCommitDate": "2021-06-04T13:16:13Z",
+  "lastCommitDate": "2021-06-04T13:16:13Z",
+  "topContributors": [
+    {
+      "contributions": 1387,
+      "login": "dependabot-preview[bot]"
+    },
+    {
+      "contributions": 873,
+      "login": "espadrine"
+    },
+    {
+      "contributions": 697,
+      "login": "paulmelnikow"
+    },
+    {
+      "contributions": 385,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 323,
+      "login": "chris48s"
+    },
+    {
+      "contributions": 208,
+      "login": "calebcartwright"
+    },
+    {
+      "contributions": 163,
+      "login": "PyvesB"
+    },
+    {
+      "contributions": 59,
+      "login": "RedSparr0w"
+    },
+    {
+      "contributions": 58,
+      "login": "platan"
+    },
+    {
+      "contributions": 30,
+      "login": "raphink"
+    }
+  ]
+}

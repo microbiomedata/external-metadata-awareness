@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-01-27T13:42:02Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Monarch Disease Association Consortium (MDAC)",
+  "name": "MDAC",
+  "updatedAt": "2017-04-20T20:38:04Z",
+  "url": "https://github.com/monarch-initiative/MDAC",
+  "firstCommitDate": "2017-02-24T18:50:41Z",
+  "lastCommitDate": "2017-02-24T18:50:41Z",
+  "topContributors": [
+    {
+      "contributions": 27,
+      "login": "pnrobinson"
+    }
+  ]
+}

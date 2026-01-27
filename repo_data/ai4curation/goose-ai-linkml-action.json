@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-07-02T02:56:23Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "github action to trigger goose linkml agent",
+  "name": "goose-ai-linkml-action",
+  "updatedAt": "2025-07-02T03:56:43Z",
+  "url": "https://github.com/ai4curation/goose-ai-linkml-action",
+  "firstCommitDate": "2025-07-02T03:56:37Z",
+  "lastCommitDate": "2025-07-02T03:56:37Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "cmungall"
+    }
+  ]
+}

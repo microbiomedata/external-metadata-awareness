@@ -53,6 +53,9 @@ prefixmaps = "^0.2.6"
 linkml = "^1.8.7"
 curies = "^0.10.11"
 case-converter = "^1.2.0"
+dateparser = "^1.2.2"
+geopy = "^2.4.1"
+json-tabulate = "^0.1.4"
 
 [tool.poetry.group.dev.dependencies]
 deptry = "^0.23.0"
@@ -67,12 +70,12 @@ biosample-json-to-context-tsv = 'external_metadata_awareness.biosample_json_to_c
 build-prompt-from-template = 'external_metadata_awareness.build_prompt_from_template:process_files'
 count-xml-paths = 'external_metadata_awareness.count_xml_paths:main'
 get-extension-unique-slots = 'external_metadata_awareness.get_extension_unique_slots:process_json'
-ncbi-packages-csv-report = 'external_metadata_awareness.ncbi_packages_csv_report:xml_to_csv'
 random-sample-resources = 'external_metadata_awareness.adhoc.random_sample_resources:downsample_json_resources'
 xml-to-mongo = 'external_metadata_awareness.xml_to_mongo:load_xml_to_mongodb'
 
 # New aliases for Makefile scripts
 add-duckdb-key-value-row = 'external_metadata_awareness.add_duckdb_key_value_row:main'
+analyze-collection-flatness = 'external_metadata_awareness.analyze_collection_flatness:main'
 dump-sra-metadata-schema = 'external_metadata_awareness.dump_sra_metadata_table_schema:main'
 env-triad-values-splitter = 'external_metadata_awareness.new_env_triad_values_splitter:main'
 env-triad-oak-annotator = 'external_metadata_awareness.new_env_triad_oak_annotator:main'
@@ -90,17 +93,26 @@ mongo-connect = 'external_metadata_awareness.mongodb_connection:main'
 mongo-js-executor = 'external_metadata_awareness.mongo_js_executor:main'
 ncbi-package-info-to-duckdb = 'external_metadata_awareness.ncbi_package_info_to_duck_db:main'
 prioritize-lexmatch-results = 'external_metadata_awareness.prioritize_lexmatch_results:main'
-sra-accession-pairs-to-mongo = 'external_metadata_awareness.sra_accession_pairs_tsv_to_mongo:main'
+sra-accession-pairs-to-mongo = 'external_metadata_awareness.sra_accession_pairs_tsv_to_mongo:load_tsv_to_mongo'
 sra-parquet-to-mongodb = 'external_metadata_awareness.sra_parquet_to_mongodb:insert_parquet_to_mongo'
 
 # Gold Makefile aliases
 flatten-gold-biosamples = 'external_metadata_awareness.insert_all_flat_gold_biosamples:main'
+flatten-gold-studies = 'external_metadata_awareness.insert_all_flat_gold_studies:main'
+flatten-gold-seq-projects = 'external_metadata_awareness.insert_all_flat_gold_seq_projects:main'
+export-flattened-gold-csv = 'external_metadata_awareness.export_flattened_gold_to_csv:main'
 
 # Biosample attributes scripts
 flatten-biosample-attributes = 'external_metadata_awareness.flatten_biosample_attributes:extract_attributes'
 
 # GitHub tools
 fetch-github-releases = 'external_metadata_awareness.fetch_github_releases:main'
+
+# Measurement discovery tools
+measurement-discovery-efficient = 'external_metadata_awareness.measurement_discovery_efficient:main'
+
+# Biosample normalization tools
+normalize-satisfying-biosamples = 'external_metadata_awareness.normalize_satisfying_biosamples:normalize_biosamples'
 
 # NMDC analysis tools
 analyze-nmdc-biosample-coverage = 'external_metadata_awareness.analyze_nmdc_biosample_coverage:main'

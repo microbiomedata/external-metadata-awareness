@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-06-03T18:16:25Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A handling library for OWL-style class expressions in JavaScript.",
+  "name": "class-expression",
+  "updatedAt": "2017-10-01T13:15:25Z",
+  "url": "https://github.com/berkeleybop/class-expression",
+  "firstCommitDate": "2017-10-01T13:15:19Z",
+  "lastCommitDate": "2017-10-01T13:15:19Z",
+  "topContributors": [
+    {
+      "contributions": 29,
+      "login": "kltm"
+    }
+  ]
+}

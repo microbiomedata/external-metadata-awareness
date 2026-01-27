@@ -1,0 +1,26 @@
+{
+  "createdAt": "2024-02-21T20:01:42Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "uniprot2s3",
+  "updatedAt": "2025-05-12T10:12:37Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/uniprot2s3",
+  "firstCommitDate": "2025-02-15T20:37:06Z",
+  "lastCommitDate": "2025-02-15T20:37:06Z",
+  "topContributors": [
+    {
+      "contributions": 44,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 20,
+      "login": "bsantan"
+    },
+    {
+      "contributions": 10,
+      "login": "caufieldjh"
+    }
+  ]
+}

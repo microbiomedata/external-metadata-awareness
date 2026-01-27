@@ -1,0 +1,26 @@
+{
+  "createdAt": "2018-07-27T01:03:42Z",
+  "defaultBranchRef": {
+    "name": "develop"
+  },
+  "description": "The Monarch HIPPO: Deriving insight from the medical literature by fuzzy semantic searches over diseases and phenotypes.",
+  "name": "web-hippo",
+  "updatedAt": "2018-10-19T19:17:22Z",
+  "url": "https://github.com/monarch-initiative/web-hippo",
+  "firstCommitDate": "2018-09-27T05:37:08Z",
+  "lastCommitDate": "2018-09-27T05:37:08Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "li-plaintext"
+    },
+    {
+      "contributions": 3,
+      "login": "fastmuaz"
+    },
+    {
+      "contributions": 1,
+      "login": "cmcnamara87"
+    }
+  ]
+}

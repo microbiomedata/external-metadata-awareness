@@ -1,0 +1,30 @@
+{
+  "createdAt": "2017-01-02T14:29:14Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Core referent tracking fundamentals",
+  "name": "rts_core",
+  "updatedAt": "2024-06-26T17:51:50Z",
+  "url": "https://github.com/mcwdsi/rts_core",
+  "firstCommitDate": "2024-06-26T17:51:46Z",
+  "lastCommitDate": "2024-06-26T17:51:46Z",
+  "topContributors": [
+    {
+      "contributions": 83,
+      "login": "hoganwr"
+    },
+    {
+      "contributions": 3,
+      "login": "dillerm"
+    },
+    {
+      "contributions": 1,
+      "login": "gt-hub"
+    },
+    {
+      "contributions": 1,
+      "login": "mrw8"
+    }
+  ]
+}

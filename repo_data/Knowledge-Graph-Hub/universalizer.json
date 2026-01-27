@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-09-21T21:51:10Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "The KG-Hub Universalizer provides functions for knowledge graph cleanup and identifier normalization.",
+  "name": "universalizer",
+  "updatedAt": "2025-03-21T19:39:22Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/universalizer",
+  "firstCommitDate": "2025-03-21T19:39:18Z",
+  "lastCommitDate": "2025-03-21T19:39:18Z",
+  "topContributors": [
+    {
+      "contributions": 148,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 1,
+      "login": "kevinschaper"
+    }
+  ]
+}

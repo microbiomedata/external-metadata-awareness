@@ -1,0 +1,42 @@
+{
+  "createdAt": "2025-06-05T02:02:30Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "aidocs",
+  "updatedAt": "2025-09-23T13:49:25Z",
+  "url": "https://github.com/ai4curation/aidocs",
+  "firstCommitDate": "2025-09-13T00:02:52Z",
+  "lastCommitDate": "2025-09-13T00:02:52Z",
+  "topContributors": [
+    {
+      "contributions": 51,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 5,
+      "login": "claude[bot]"
+    },
+    {
+      "contributions": 5,
+      "login": "Copilot"
+    },
+    {
+      "contributions": 4,
+      "login": "kltm"
+    },
+    {
+      "contributions": 3,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 1,
+      "login": "sagehrke"
+    },
+    {
+      "contributions": 1,
+      "login": "google-labs-jules[bot]"
+    }
+  ]
+}

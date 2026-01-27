@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-05-16T00:02:46Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "General purpose (mathematical) graph library in JavaScript.",
+  "name": "bbop-graph",
+  "updatedAt": "2022-08-02T00:04:39Z",
+  "url": "https://github.com/berkeleybop/bbop-graph",
+  "firstCommitDate": "2022-08-10T00:34:14Z",
+  "lastCommitDate": "2022-08-10T00:34:14Z",
+  "topContributors": [
+    {
+      "contributions": 67,
+      "login": "kltm"
+    }
+  ]
+}

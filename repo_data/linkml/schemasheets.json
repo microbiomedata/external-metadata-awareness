@@ -1,0 +1,50 @@
+{
+  "createdAt": "2022-01-04T16:59:50Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Structure your data in a FAIR way using google sheets or TSVs. These are then converted to LinkML, and from there other formats",
+  "name": "schemasheets",
+  "updatedAt": "2025-09-29T23:47:07Z",
+  "url": "https://github.com/linkml/schemasheets",
+  "firstCommitDate": "2025-04-29T17:25:14Z",
+  "lastCommitDate": "2025-04-29T17:25:14Z",
+  "topContributors": [
+    {
+      "contributions": 52,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 44,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 16,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 5,
+      "login": "djarecka"
+    },
+    {
+      "contributions": 5,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 5,
+      "login": "rly"
+    },
+    {
+      "contributions": 1,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 1,
+      "login": "VladimirAlexiev"
+    },
+    {
+      "contributions": 1,
+      "login": "yarikoptic"
+    }
+  ]
+}

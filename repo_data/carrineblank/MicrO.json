@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-04-23T02:15:32Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A Microbial Ontology of Phenotypic and Metabolic Characters, Assays, and Culture Media Found in Prokaryotic Taxonomic Descriptions",
+  "name": "MicrO",
+  "updatedAt": "2024-07-12T06:24:11Z",
+  "url": "https://github.com/carrineblank/MicrO",
+  "firstCommitDate": "2018-06-14T23:49:56Z",
+  "lastCommitDate": "2018-06-14T23:49:56Z",
+  "topContributors": [
+    {
+      "contributions": 141,
+      "login": "carrineblank"
+    }
+  ]
+}

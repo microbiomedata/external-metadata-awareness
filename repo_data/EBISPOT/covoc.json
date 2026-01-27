@@ -1,0 +1,26 @@
+{
+  "createdAt": "2020-04-21T13:20:31Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Application ontology for the description of coronavirus data",
+  "name": "covoc",
+  "updatedAt": "2022-12-14T03:01:37Z",
+  "url": "https://github.com/EBISPOT/covoc",
+  "firstCommitDate": "2022-10-27T07:46:56Z",
+  "lastCommitDate": "2022-10-27T07:46:56Z",
+  "topContributors": [
+    {
+      "contributions": 45,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 16,
+      "login": "zoependlington"
+    },
+    {
+      "contributions": 2,
+      "login": "anitacaron"
+    }
+  ]
+}

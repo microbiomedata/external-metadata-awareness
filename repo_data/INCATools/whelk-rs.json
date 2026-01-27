@@ -1,0 +1,26 @@
+{
+  "createdAt": "2022-06-24T02:07:22Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Whelk is an OWL EL reasoner",
+  "name": "whelk-rs",
+  "updatedAt": "2025-07-08T23:25:14Z",
+  "url": "https://github.com/INCATools/whelk-rs",
+  "firstCommitDate": "2023-03-10T20:44:23Z",
+  "lastCommitDate": "2023-03-10T20:44:23Z",
+  "topContributors": [
+    {
+      "contributions": 13,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 5,
+      "login": "jdr0887"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

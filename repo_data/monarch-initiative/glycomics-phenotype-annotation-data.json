@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-08-06T20:09:10Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "glycomics-phenotype-annotation-data",
+  "updatedAt": "2023-10-04T20:18:32Z",
+  "url": "https://github.com/monarch-initiative/glycomics-phenotype-annotation-data",
+  "firstCommitDate": "2015-08-10T23:40:20Z",
+  "lastCommitDate": "2015-08-10T23:40:20Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "mbrush"
+    }
+  ]
+}

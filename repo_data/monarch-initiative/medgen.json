@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-03-04T20:22:14Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "MedGen ingest.",
+  "name": "medgen",
+  "updatedAt": "2025-02-27T08:06:13Z",
+  "url": "https://github.com/monarch-initiative/medgen",
+  "firstCommitDate": "2024-11-06T03:16:29Z",
+  "lastCommitDate": "2024-11-06T03:16:29Z",
+  "topContributors": [
+    {
+      "contributions": 36,
+      "login": "joeflack4"
+    }
+  ]
+}

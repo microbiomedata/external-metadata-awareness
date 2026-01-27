@@ -1,0 +1,54 @@
+{
+  "createdAt": "2023-11-09T11:40:33Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Simple test framework for Nextflow pipelines",
+  "name": "askimed-nf-test",
+  "updatedAt": "2023-11-09T11:42:24Z",
+  "url": "https://github.com/jfy133/askimed-nf-test",
+  "firstCommitDate": "2023-11-09T11:46:47Z",
+  "lastCommitDate": "2023-11-09T11:46:47Z",
+  "topContributors": [
+    {
+      "contributions": 277,
+      "login": "lukfor"
+    },
+    {
+      "contributions": 36,
+      "login": "seppinho"
+    },
+    {
+      "contributions": 3,
+      "login": "sateeshperi"
+    },
+    {
+      "contributions": 3,
+      "login": "aaron-fishman-achillestx"
+    },
+    {
+      "contributions": 2,
+      "login": "ivopieniak"
+    },
+    {
+      "contributions": 2,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 2,
+      "login": "mashehu"
+    },
+    {
+      "contributions": 1,
+      "login": "afaulconbridge"
+    },
+    {
+      "contributions": 1,
+      "login": "edmundmiller"
+    },
+    {
+      "contributions": 1,
+      "login": "koenbossers"
+    }
+  ]
+}

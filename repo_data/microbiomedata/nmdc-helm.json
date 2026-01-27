@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-08-31T05:13:16Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "nmdc-helm",
+  "updatedAt": "2024-05-14T21:30:33Z",
+  "url": "https://github.com/microbiomedata/nmdc-helm",
+  "firstCommitDate": "2024-05-14T21:30:29Z",
+  "lastCommitDate": "2024-05-14T21:30:29Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "kfox1111"
+    },
+    {
+      "contributions": 6,
+      "login": "shreddd"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-02-23T16:17:58Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "[retired]",
+  "name": "linkml-validator",
+  "updatedAt": "2023-11-21T20:16:59Z",
+  "url": "https://github.com/linkml/linkml-validator",
+  "firstCommitDate": "2023-11-21T20:15:43Z",
+  "lastCommitDate": "2023-11-21T20:15:43Z",
+  "topContributors": [
+    {
+      "contributions": 47,
+      "login": "deepakunni3"
+    }
+  ]
+}

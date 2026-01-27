@@ -1,0 +1,22 @@
+{
+  "createdAt": "2017-12-29T20:45:24Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Jenkins configuration for monarch",
+  "name": "jenkins",
+  "updatedAt": "2021-12-16T19:22:38Z",
+  "url": "https://github.com/monarch-initiative/jenkins",
+  "firstCommitDate": "2021-12-16T19:22:35Z",
+  "lastCommitDate": "2021-12-16T19:22:35Z",
+  "topContributors": [
+    {
+      "contributions": 57,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 6,
+      "login": "TomConlin"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-04-15T09:44:13Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Config files used to define parameters specific to compute environments at different Institutions",
+  "name": "nf-core-configs",
+  "updatedAt": "2025-08-25T16:01:26Z",
+  "url": "https://github.com/jfy133/nf-core-configs",
+  "firstCommitDate": "2025-08-25T16:01:22Z",
+  "lastCommitDate": "2025-08-25T16:01:22Z",
+  "topContributors": [
+    {
+      "contributions": 553,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 231,
+      "login": "maxulysse"
+    },
+    {
+      "contributions": 212,
+      "login": "apeltzer"
+    },
+    {
+      "contributions": 118,
+      "login": "drpatelh"
+    },
+    {
+      "contributions": 104,
+      "login": "edmundmiller"
+    },
+    {
+      "contributions": 99,
+      "login": "ewels"
+    },
+    {
+      "contributions": 74,
+      "login": "nf-core-bot"
+    },
+    {
+      "contributions": 69,
+      "login": "Joon-Klaps"
+    },
+    {
+      "contributions": 62,
+      "login": "nvnieuwk"
+    },
+    {
+      "contributions": 51,
+      "login": "phue"
+    }
+  ]
+}

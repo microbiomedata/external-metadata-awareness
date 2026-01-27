@@ -1,0 +1,26 @@
+{
+  "createdAt": "2023-07-10T15:22:06Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "The 24th GSC meeting to be held in Tucson, Arizona, USA",
+  "name": "GSC24-Tucson",
+  "updatedAt": "2024-07-30T08:26:08Z",
+  "url": "https://github.com/GenomicsStandardsConsortium/GSC24-Tucson",
+  "firstCommitDate": "2024-07-30T08:26:01Z",
+  "lastCommitDate": "2024-07-30T08:26:01Z",
+  "topContributors": [
+    {
+      "contributions": 131,
+      "login": "only1chunts"
+    },
+    {
+      "contributions": 24,
+      "login": "lschriml"
+    },
+    {
+      "contributions": 1,
+      "login": "TinaJAZ"
+    }
+  ]
+}

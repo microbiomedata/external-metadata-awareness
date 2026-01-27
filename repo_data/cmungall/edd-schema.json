@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-06-30T23:41:23Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "edd-schema",
+  "updatedAt": "2024-05-31T23:07:03Z",
+  "url": "https://github.com/cmungall/edd-schema",
+  "firstCommitDate": "2024-05-31T23:06:59Z",
+  "lastCommitDate": "2024-05-31T23:06:59Z",
+  "topContributors": [
+    {
+      "contributions": 10,
+      "login": "cmungall"
+    }
+  ]
+}

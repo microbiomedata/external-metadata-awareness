@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-03-20T00:13:45Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "make a covid detector from the human genome",
+  "name": "covid-detector",
+  "updatedAt": "2020-04-07T01:18:51Z",
+  "url": "https://github.com/rsc3/covid-detector",
+  "firstCommitDate": "2020-04-07T01:18:40Z",
+  "lastCommitDate": "2020-04-07T01:18:40Z",
+  "topContributors": [
+    {
+      "contributions": 23,
+      "login": "rsc3"
+    }
+  ]
+}

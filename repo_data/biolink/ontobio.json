@@ -1,0 +1,54 @@
+{
+  "createdAt": "2017-04-18T23:36:22Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "python library for working with ontologies and ontology associations",
+  "name": "ontobio",
+  "updatedAt": "2025-09-29T18:08:58Z",
+  "url": "https://github.com/biolink/ontobio",
+  "firstCommitDate": "2024-12-16T21:13:42Z",
+  "lastCommitDate": "2024-12-16T21:13:42Z",
+  "topContributors": [
+    {
+      "contributions": 561,
+      "login": "dougli1sqrd"
+    },
+    {
+      "contributions": 413,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 252,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 195,
+      "login": "dustine32"
+    },
+    {
+      "contributions": 133,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 116,
+      "login": "mugitty"
+    },
+    {
+      "contributions": 87,
+      "login": "deepakunni3"
+    },
+    {
+      "contributions": 64,
+      "login": "kltm"
+    },
+    {
+      "contributions": 14,
+      "login": "lhannest"
+    },
+    {
+      "contributions": 7,
+      "login": "RichardBruskiewich"
+    }
+  ]
+}

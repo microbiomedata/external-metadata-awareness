@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-01-27T01:35:39Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Performs magic on bibliographies",
+  "name": "bibliomancer",
+  "updatedAt": "2025-07-18T07:31:50Z",
+  "url": "https://github.com/cmungall/bibliomancer",
+  "firstCommitDate": "2024-03-04T18:42:42Z",
+  "lastCommitDate": "2024-03-04T18:42:42Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

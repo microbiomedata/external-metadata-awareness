@@ -1,0 +1,26 @@
+{
+  "createdAt": "2017-01-27T18:44:29Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "SPARQL queries written against Drug Ontology",
+  "name": "dron-query-sparql",
+  "updatedAt": "2023-10-05T19:18:01Z",
+  "url": "https://github.com/mcwdsi/dron-query-sparql",
+  "firstCommitDate": "2017-06-23T18:26:29Z",
+  "lastCommitDate": "2017-06-23T18:26:29Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "dillerm"
+    },
+    {
+      "contributions": 1,
+      "login": "nrejac"
+    },
+    {
+      "contributions": 1,
+      "login": "samiraamirovaa"
+    }
+  ]
+}

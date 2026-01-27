@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-06-28T15:43:25Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Jenkins-based automation of phenotype semantic similarity on PHENIO with Semsimian. ",
+  "name": "automate-pheno-comparisons",
+  "updatedAt": "2025-07-23T16:36:02Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/automate-pheno-comparisons",
+  "firstCommitDate": "2025-07-23T16:35:58Z",
+  "lastCommitDate": "2025-07-23T16:35:58Z",
+  "topContributors": [
+    {
+      "contributions": 97,
+      "login": "caufieldjh"
+    }
+  ]
+}

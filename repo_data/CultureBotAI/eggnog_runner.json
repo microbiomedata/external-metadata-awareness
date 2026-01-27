@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-05-03T20:24:05Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "eggnog_runner",
+  "updatedAt": "2025-09-24T06:17:17Z",
+  "url": "https://github.com/CultureBotAI/eggnog_runner",
+  "firstCommitDate": "2025-05-03T20:45:35Z",
+  "lastCommitDate": "2025-05-03T20:45:35Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "realmarcin"
+    }
+  ]
+}

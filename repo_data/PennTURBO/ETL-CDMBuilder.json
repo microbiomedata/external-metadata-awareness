@@ -1,0 +1,42 @@
+{
+  "createdAt": "2024-10-24T19:58:15Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "ETL-CDMBuilder is a repo containing a .NET Core application to perform ETL to OMOP CDM for multiple databases",
+  "name": "ETL-CDMBuilder",
+  "updatedAt": "2024-10-24T20:08:04Z",
+  "url": "https://github.com/PennTURBO/ETL-CDMBuilder",
+  "firstCommitDate": "2024-10-24T20:07:40Z",
+  "lastCommitDate": "2024-10-24T20:07:40Z",
+  "topContributors": [
+    {
+      "contributions": 145,
+      "login": "ericaVoss"
+    },
+    {
+      "contributions": 54,
+      "login": "clairblacketer"
+    },
+    {
+      "contributions": 15,
+      "login": "anthonysena"
+    },
+    {
+      "contributions": 3,
+      "login": "bradanton"
+    },
+    {
+      "contributions": 2,
+      "login": "aguynamedryan"
+    },
+    {
+      "contributions": 1,
+      "login": "pbr6cornell"
+    },
+    {
+      "contributions": 1,
+      "login": "th5"
+    }
+  ]
+}

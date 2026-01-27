@@ -1,0 +1,54 @@
+{
+  "createdAt": "2017-01-19T23:58:31Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "smartAPI",
+  "name": "swagger-editor",
+  "updatedAt": "2017-01-19T23:58:35Z",
+  "url": "https://github.com/cmungall/swagger-editor",
+  "firstCommitDate": "2017-01-18T23:04:09Z",
+  "lastCommitDate": "2017-01-18T23:04:09Z",
+  "topContributors": [
+    {
+      "contributions": 1087,
+      "login": "mohsen1"
+    },
+    {
+      "contributions": 265,
+      "login": "saharj"
+    },
+    {
+      "contributions": 121,
+      "login": "MMux"
+    },
+    {
+      "contributions": 60,
+      "login": "earth2marsh"
+    },
+    {
+      "contributions": 38,
+      "login": "fehguy"
+    },
+    {
+      "contributions": 7,
+      "login": "chrisdudley"
+    },
+    {
+      "contributions": 6,
+      "login": "webron"
+    },
+    {
+      "contributions": 5,
+      "login": "dnephin"
+    },
+    {
+      "contributions": 5,
+      "login": "prabhatjha"
+    },
+    {
+      "contributions": 5,
+      "login": "iflamed"
+    }
+  ]
+}

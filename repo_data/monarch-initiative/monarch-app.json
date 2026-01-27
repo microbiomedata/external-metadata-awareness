@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-07-05T22:21:28Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Monarch Initiative website and API",
+  "name": "monarch-app",
+  "updatedAt": "2025-09-30T01:35:21Z",
+  "url": "https://github.com/monarch-initiative/monarch-app",
+  "firstCommitDate": "2025-09-30T01:35:15Z",
+  "lastCommitDate": "2025-09-30T01:35:15Z",
+  "topContributors": [
+    {
+      "contributions": 675,
+      "login": "varun-divya"
+    },
+    {
+      "contributions": 287,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 80,
+      "login": "vincerubinetti"
+    },
+    {
+      "contributions": 19,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 17,
+      "login": "amc-corey-cox"
+    },
+    {
+      "contributions": 17,
+      "login": "ptgolden"
+    },
+    {
+      "contributions": 15,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 10,
+      "login": "falquaddoomi"
+    },
+    {
+      "contributions": 9,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 7,
+      "login": "iQuxLE"
+    }
+  ]
+}

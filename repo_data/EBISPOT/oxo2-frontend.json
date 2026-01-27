@@ -1,0 +1,26 @@
+{
+  "createdAt": "2023-02-12T20:46:09Z",
+  "defaultBranchRef": {
+    "name": "dev"
+  },
+  "description": "UI for OxO 2",
+  "name": "oxo2-frontend",
+  "updatedAt": "2024-10-31T13:41:23Z",
+  "url": "https://github.com/EBISPOT/oxo2-frontend",
+  "firstCommitDate": "2023-11-24T14:34:24Z",
+  "lastCommitDate": "2023-11-24T14:34:24Z",
+  "topContributors": [
+    {
+      "contributions": 21,
+      "login": "serjoshua"
+    },
+    {
+      "contributions": 2,
+      "login": "jamesamcl"
+    },
+    {
+      "contributions": 1,
+      "login": "matentzn"
+    }
+  ]
+}

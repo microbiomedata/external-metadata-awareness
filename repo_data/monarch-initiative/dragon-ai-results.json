@@ -1,0 +1,30 @@
+{
+  "createdAt": "2023-09-05T18:42:23Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "dragon-ai-results",
+  "updatedAt": "2025-09-12T05:45:55Z",
+  "url": "https://github.com/monarch-initiative/dragon-ai-results",
+  "firstCommitDate": "2024-07-29T02:22:11Z",
+  "lastCommitDate": "2024-07-29T02:22:11Z",
+  "topContributors": [
+    {
+      "contributions": 26,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "nlharris"
+    },
+    {
+      "contributions": 1,
+      "login": "sabrinatoro"
+    },
+    {
+      "contributions": 1,
+      "login": "oneilsh"
+    }
+  ]
+}

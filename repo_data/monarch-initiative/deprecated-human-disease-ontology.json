@@ -1,0 +1,38 @@
+{
+  "createdAt": "2015-02-27T17:31:47Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Deprecated, see README",
+  "name": "deprecated-human-disease-ontology",
+  "updatedAt": "2016-02-03T22:20:28Z",
+  "url": "https://github.com/monarch-initiative/deprecated-human-disease-ontology",
+  "firstCommitDate": "2016-02-03T22:22:39Z",
+  "lastCommitDate": "2016-02-03T22:22:39Z",
+  "topContributors": [
+    {
+      "contributions": 168,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 78,
+      "login": "nicolevasilevsky"
+    },
+    {
+      "contributions": 8,
+      "login": "elviram"
+    },
+    {
+      "contributions": 3,
+      "login": "sbello"
+    },
+    {
+      "contributions": 2,
+      "login": "ShahimEssaid"
+    },
+    {
+      "contributions": 1,
+      "login": "twhetzel"
+    }
+  ]
+}

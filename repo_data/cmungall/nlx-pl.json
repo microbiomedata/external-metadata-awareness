@@ -1,0 +1,18 @@
+{
+  "createdAt": "2014-07-21T22:04:02Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Neurolex prolog utils",
+  "name": "nlx-pl",
+  "updatedAt": "2023-03-12T10:29:40Z",
+  "url": "https://github.com/cmungall/nlx-pl",
+  "firstCommitDate": "2014-12-22T18:57:59Z",
+  "lastCommitDate": "2014-12-22T18:57:59Z",
+  "topContributors": [
+    {
+      "contributions": 19,
+      "login": "cmungall"
+    }
+  ]
+}

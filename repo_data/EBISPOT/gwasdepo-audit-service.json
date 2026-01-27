@@ -1,0 +1,30 @@
+{
+  "createdAt": "2020-02-16T10:51:52Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "gwasdepo-audit-service",
+  "updatedAt": "2025-06-11T10:38:21Z",
+  "url": "https://github.com/EBISPOT/gwasdepo-audit-service",
+  "firstCommitDate": "2025-06-11T10:38:16Z",
+  "lastCommitDate": "2025-06-11T10:38:16Z",
+  "topContributors": [
+    {
+      "contributions": 33,
+      "login": "sajo-ebi"
+    },
+    {
+      "contributions": 21,
+      "login": "tudorgroza"
+    },
+    {
+      "contributions": 10,
+      "login": "ala-ebi"
+    },
+    {
+      "contributions": 1,
+      "login": "jstewart-ebi"
+    }
+  ]
+}

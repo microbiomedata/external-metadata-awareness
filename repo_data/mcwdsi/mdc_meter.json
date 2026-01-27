@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-06-07T20:02:26Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "SPARQL queries to compute FAIR metrics in MIDAS Digital Commons",
+  "name": "mdc_meter",
+  "updatedAt": "2023-10-05T19:12:21Z",
+  "url": "https://github.com/mcwdsi/mdc_meter",
+  "firstCommitDate": "2021-05-07T18:15:04Z",
+  "lastCommitDate": "2021-05-07T18:15:04Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "atloiaco"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2019-10-03T13:20:41Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "an ontology for biogeographic areas",
+  "name": "biorealm",
+  "updatedAt": "2022-04-20T10:12:58Z",
+  "url": "https://github.com/EnvironmentOntology/biorealm",
+  "firstCommitDate": "2022-04-23T06:08:18Z",
+  "lastCommitDate": "2022-04-23T06:08:18Z",
+  "topContributors": [
+    {
+      "contributions": 13,
+      "login": "thearyung"
+    },
+    {
+      "contributions": 9,
+      "login": "pbuttigieg"
+    }
+  ]
+}

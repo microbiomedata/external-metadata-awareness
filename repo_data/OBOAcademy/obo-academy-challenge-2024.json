@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-07-10T14:07:37Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "This repo is for managing the OBO Academy Challenge 2024",
+  "name": "obo-academy-challenge-2024",
+  "updatedAt": "2024-07-24T08:38:25Z",
+  "url": "https://github.com/OBOAcademy/obo-academy-challenge-2024",
+  "firstCommitDate": "2024-07-24T08:38:21Z",
+  "lastCommitDate": "2024-07-24T08:38:21Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "matentzn"
+    }
+  ]
+}

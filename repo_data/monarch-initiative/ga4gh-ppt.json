@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-03-02T11:05:39Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "GA4GH Phenopacket Templater",
+  "name": "ga4gh-ppt",
+  "updatedAt": "2024-03-03T08:38:09Z",
+  "url": "https://github.com/monarch-initiative/ga4gh-ppt",
+  "firstCommitDate": "2024-03-08T09:22:03Z",
+  "lastCommitDate": "2024-03-08T09:22:03Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "pnrobinson"
+    }
+  ]
+}

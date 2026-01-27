@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-03-09T21:25:09Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "LLM plugin for models hosted by OpenRouter",
+  "name": "llm-openrouter",
+  "updatedAt": "2024-03-09T21:25:09Z",
+  "url": "https://github.com/cmungall/llm-openrouter",
+  "firstCommitDate": "2023-08-21T07:02:45Z",
+  "lastCommitDate": "2023-08-21T07:02:45Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "simonw"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-07-19T08:38:15Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Repository to manage monarch specific ROBOT extensions",
+  "name": "monarch-robot-plugins",
+  "updatedAt": "2024-06-20T16:23:17Z",
+  "url": "https://github.com/monarch-initiative/monarch-robot-plugins",
+  "firstCommitDate": "2024-04-10T07:55:05Z",
+  "lastCommitDate": "2024-04-10T07:55:05Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "matentzn"
+    }
+  ]
+}

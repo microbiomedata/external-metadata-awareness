@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-04-20T16:37:39Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Ontology enrichment tool for CxG standard AnnData files",
+  "name": "pandasaurus_cxg",
+  "updatedAt": "2025-08-19T09:02:30Z",
+  "url": "https://github.com/INCATools/pandasaurus_cxg",
+  "firstCommitDate": "2025-08-19T09:02:25Z",
+  "lastCommitDate": "2025-08-19T09:02:25Z",
+  "topContributors": [
+    {
+      "contributions": 50,
+      "login": "ubyndr"
+    },
+    {
+      "contributions": 11,
+      "login": "dosumis"
+    }
+  ]
+}

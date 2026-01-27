@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-07-22T01:15:44Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Models for the \"generic\" Noctua.",
+  "name": "obo-models",
+  "updatedAt": "2016-10-27T20:08:57Z",
+  "url": "https://github.com/berkeleybop/obo-models",
+  "firstCommitDate": "2016-10-27T20:08:55Z",
+  "lastCommitDate": "2016-10-27T20:08:55Z",
+  "topContributors": [
+    {
+      "contributions": 22,
+      "login": "kltm"
+    },
+    {
+      "contributions": 16,
+      "login": "cmungall"
+    }
+  ]
+}

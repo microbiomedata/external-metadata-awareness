@@ -1,0 +1,22 @@
+{
+  "createdAt": "2014-07-20T00:02:11Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "RDF schema to prolog compiler",
+  "name": "rdfs2pl",
+  "updatedAt": "2023-03-12T10:29:32Z",
+  "url": "https://github.com/cmungall/rdfs2pl",
+  "firstCommitDate": "2017-10-30T04:51:22Z",
+  "lastCommitDate": "2017-10-30T04:51:22Z",
+  "topContributors": [
+    {
+      "contributions": 15,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "samer--"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-11-27T20:38:17Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Tools used to collect metrics-related data about the NMDC system",
+  "name": "nmdc-metrics-fetcher",
+  "updatedAt": "2025-06-25T18:50:44Z",
+  "url": "https://github.com/microbiomedata/nmdc-metrics-fetcher",
+  "firstCommitDate": "2025-06-25T18:50:40Z",
+  "lastCommitDate": "2025-06-25T18:50:40Z",
+  "topContributors": [
+    {
+      "contributions": 14,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 2,
+      "login": "shreddd"
+    }
+  ]
+}

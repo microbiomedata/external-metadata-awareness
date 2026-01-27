@@ -1,0 +1,54 @@
+{
+  "createdAt": "2015-03-28T19:22:08Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A community-driven ontology for the representation of environments",
+  "name": "envo",
+  "updatedAt": "2025-09-19T18:45:45Z",
+  "url": "https://github.com/EnvironmentOntology/envo",
+  "firstCommitDate": "2025-08-19T17:09:41Z",
+  "lastCommitDate": "2025-08-19T17:09:41Z",
+  "topContributors": [
+    {
+      "contributions": 890,
+      "login": "pbuttigieg"
+    },
+    {
+      "contributions": 547,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 203,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 106,
+      "login": "kaiiam"
+    },
+    {
+      "contributions": 59,
+      "login": "iwilkie"
+    },
+    {
+      "contributions": 58,
+      "login": "meichen-liu"
+    },
+    {
+      "contributions": 46,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 43,
+      "login": "raissameyer"
+    },
+    {
+      "contributions": 30,
+      "login": "stevenchong"
+    },
+    {
+      "contributions": 29,
+      "login": "hrshdhgd"
+    }
+  ]
+}

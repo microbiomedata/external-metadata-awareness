@@ -1,0 +1,54 @@
+{
+  "createdAt": "2020-09-12T00:16:31Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A collection of metadata, tools, and files associated with the Gene Ontology public web presence.",
+  "name": "go-site",
+  "updatedAt": "2021-10-26T16:13:12Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/go-site",
+  "firstCommitDate": "2020-09-23T21:12:28Z",
+  "lastCommitDate": "2020-09-23T21:12:28Z",
+  "topContributors": [
+    {
+      "contributions": 744,
+      "login": "kltm"
+    },
+    {
+      "contributions": 632,
+      "login": "pgaudet"
+    },
+    {
+      "contributions": 527,
+      "login": "dougli1sqrd"
+    },
+    {
+      "contributions": 306,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 65,
+      "login": "tonysawfordebi"
+    },
+    {
+      "contributions": 65,
+      "login": "vanaukenk"
+    },
+    {
+      "contributions": 30,
+      "login": "dustine32"
+    },
+    {
+      "contributions": 23,
+      "login": "suzialeksander"
+    },
+    {
+      "contributions": 20,
+      "login": "malcolmfisher103"
+    },
+    {
+      "contributions": 18,
+      "login": "mcourtot"
+    }
+  ]
+}

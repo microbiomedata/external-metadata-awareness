@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-03-16T16:34:43Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Linked Open Data Modeling Language",
+  "name": "linkml",
+  "updatedAt": "2025-09-30T14:37:46Z",
+  "url": "https://github.com/linkml/linkml",
+  "firstCommitDate": "2025-09-30T14:37:41Z",
+  "lastCommitDate": "2025-09-30T14:37:41Z",
+  "topContributors": [
+    {
+      "contributions": 686,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 431,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 342,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 334,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 243,
+      "login": "actions-user"
+    },
+    {
+      "contributions": 235,
+      "login": "sneakers-the-rat"
+    },
+    {
+      "contributions": 131,
+      "login": "hsolbrig"
+    },
+    {
+      "contributions": 90,
+      "login": "ialarmedalien"
+    },
+    {
+      "contributions": 81,
+      "login": "kervel"
+    },
+    {
+      "contributions": 81,
+      "login": "hrshdhgd"
+    }
+  ]
+}

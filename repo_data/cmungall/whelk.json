@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-05-10T22:51:25Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Whelk is an OWL EL reasoner",
+  "name": "whelk",
+  "updatedAt": "2024-01-20T18:16:28Z",
+  "url": "https://github.com/cmungall/whelk",
+  "firstCommitDate": "2021-03-04T20:29:21Z",
+  "lastCommitDate": "2021-03-04T20:29:21Z",
+  "topContributors": [
+    {
+      "contributions": 251,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 70,
+      "login": "scala-steward"
+    }
+  ]
+}

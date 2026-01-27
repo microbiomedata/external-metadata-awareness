@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-01-18T01:19:38Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Python parser for UCUM (Unified Code for Units of Measure) incl. converter to pint units",
+  "name": "ucumvert",
+  "updatedAt": "2024-01-21T06:18:35Z",
+  "url": "https://github.com/cmungall/ucumvert",
+  "firstCommitDate": "2024-01-17T13:55:59Z",
+  "lastCommitDate": "2024-01-17T13:55:59Z",
+  "topContributors": [
+    {
+      "contributions": 39,
+      "login": "dalito"
+    },
+    {
+      "contributions": 3,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

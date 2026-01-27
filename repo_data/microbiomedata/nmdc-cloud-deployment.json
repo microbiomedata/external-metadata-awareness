@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-06-11T22:16:58Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Terraform code, helm charts, etc., related to deploying NMDC services to the cloud",
+  "name": "nmdc-cloud-deployment",
+  "updatedAt": "2025-08-03T23:07:08Z",
+  "url": "https://github.com/microbiomedata/nmdc-cloud-deployment",
+  "firstCommitDate": "2025-08-03T23:07:01Z",
+  "lastCommitDate": "2025-08-03T23:07:01Z",
+  "topContributors": [
+    {
+      "contributions": 149,
+      "login": "sanjaypjana"
+    },
+    {
+      "contributions": 43,
+      "login": "eecavanna"
+    }
+  ]
+}

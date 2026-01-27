@@ -1,0 +1,34 @@
+{
+  "createdAt": "2020-02-16T10:51:28Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "gwasdepo-ingest-service",
+  "updatedAt": "2025-04-29T10:43:12Z",
+  "url": "https://github.com/EBISPOT/gwasdepo-ingest-service",
+  "firstCommitDate": "2025-04-29T10:43:07Z",
+  "lastCommitDate": "2025-04-29T10:43:07Z",
+  "topContributors": [
+    {
+      "contributions": 40,
+      "login": "sajo-ebi"
+    },
+    {
+      "contributions": 28,
+      "login": "ala-ebi"
+    },
+    {
+      "contributions": 24,
+      "login": "sprintell"
+    },
+    {
+      "contributions": 15,
+      "login": "tudorgroza"
+    },
+    {
+      "contributions": 1,
+      "login": "jstewart-ebi"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "createdAt": "2017-03-23T15:32:35Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "An ontology about groups of interacting organisms such as populations and communities",
+  "name": "pco",
+  "updatedAt": "2017-03-23T15:32:37Z",
+  "url": "https://github.com/EnvironmentOntology/pco",
+  "firstCommitDate": "2017-09-20T16:10:50Z",
+  "lastCommitDate": "2017-09-20T16:10:50Z",
+  "topContributors": [
+    {
+      "contributions": 115,
+      "login": "ramonawalls"
+    },
+    {
+      "contributions": 4,
+      "login": "pbuttigieg"
+    },
+    {
+      "contributions": 2,
+      "login": "marieALaporte"
+    },
+    {
+      "contributions": 1,
+      "login": "zhengj2007"
+    }
+  ]
+}

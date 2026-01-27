@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-04-03T13:28:10Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Python convenience wrappers for Phenopacket Schema",
+  "name": "ga4gh-phenopacket-core",
+  "updatedAt": "2024-04-03T15:19:47Z",
+  "url": "https://github.com/monarch-initiative/ga4gh-phenopacket-core",
+  "firstCommitDate": "2024-04-03T15:29:37Z",
+  "lastCommitDate": "2024-04-03T15:29:37Z",
+  "topContributors": [
+    {
+      "contributions": 12,
+      "login": "ielis"
+    }
+  ]
+}

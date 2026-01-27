@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-05-24T22:59:02Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "📮 An integrative registry of biological databases, ontologies, and nomenclatures.",
+  "name": "bioregistry",
+  "updatedAt": "2023-08-04T18:33:27Z",
+  "url": "https://github.com/cmungall/bioregistry",
+  "firstCommitDate": "2023-08-04T01:29:30Z",
+  "lastCommitDate": "2023-08-04T01:29:30Z",
+  "topContributors": [
+    {
+      "contributions": 1737,
+      "login": "actions-user"
+    },
+    {
+      "contributions": 1563,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 49,
+      "login": "github-actions[bot]"
+    },
+    {
+      "contributions": 11,
+      "login": "egonw"
+    },
+    {
+      "contributions": 8,
+      "login": "bgyori"
+    },
+    {
+      "contributions": 5,
+      "login": "dhimmel"
+    },
+    {
+      "contributions": 4,
+      "login": "Adafede"
+    },
+    {
+      "contributions": 2,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 2,
+      "login": "CondeArcana333"
+    },
+    {
+      "contributions": 1,
+      "login": "svempati21"
+    }
+  ]
+}

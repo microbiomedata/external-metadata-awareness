@@ -1,0 +1,54 @@
+{
+  "createdAt": "2020-04-30T08:36:37Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Private payments for mobile devices.",
+  "name": "mobilecoin",
+  "updatedAt": "2020-10-22T02:29:46Z",
+  "url": "https://github.com/rsc3/mobilecoin",
+  "firstCommitDate": "2020-04-29T22:15:20Z",
+  "lastCommitDate": "2020-04-29T22:15:20Z",
+  "topContributors": [
+    {
+      "contributions": 29,
+      "login": "mfaulk"
+    },
+    {
+      "contributions": 21,
+      "login": "eranrund"
+    },
+    {
+      "contributions": 21,
+      "login": "sugargoat"
+    },
+    {
+      "contributions": 7,
+      "login": "cbeck88"
+    },
+    {
+      "contributions": 6,
+      "login": "rjwalters"
+    },
+    {
+      "contributions": 5,
+      "login": "jcape"
+    },
+    {
+      "contributions": 4,
+      "login": "joekottke"
+    },
+    {
+      "contributions": 3,
+      "login": "kylefleming"
+    },
+    {
+      "contributions": 3,
+      "login": "tsegaran"
+    },
+    {
+      "contributions": 2,
+      "login": "brson"
+    }
+  ]
+}

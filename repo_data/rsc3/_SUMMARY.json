@@ -1,0 +1,352 @@
+[
+  {
+    "createdAt": "2021-07-22T16:59:04Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Matlab Code for Algorithms For Data Science",
+    "name": "algdat",
+    "updatedAt": "2021-08-08T15:38:54Z",
+    "url": "https://github.com/rsc3/algdat",
+    "firstCommitDate": "2021-08-08T15:38:11Z",
+    "lastCommitDate": "2021-08-08T15:38:11Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "rsc3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-09-06T18:52:11Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Resources related to ingesting AnVIL datasets into Terra Data Repository",
+    "name": "anvil_tdr_ingest",
+    "updatedAt": "2024-09-06T18:52:11Z",
+    "url": "https://github.com/rsc3/anvil_tdr_ingest",
+    "firstCommitDate": "2024-09-05T11:27:22Z",
+    "lastCommitDate": "2024-09-05T11:27:22Z",
+    "topContributors": [
+      {
+        "contributions": 22,
+        "login": "ncalvanese1"
+      },
+      {
+        "contributions": 3,
+        "login": "KutnerBroadie"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-12-08T19:24:51Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "biocoreterms",
+    "updatedAt": "2023-12-08T20:03:28Z",
+    "url": "https://github.com/rsc3/biocoreterms",
+    "firstCommitDate": "2023-12-09T01:11:23Z",
+    "lastCommitDate": "2023-12-09T01:11:23Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "rsc3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-12-19T04:07:13Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "optimize a weboost home with angle and azimuth data on my cabin",
+    "name": "boostoptimization",
+    "updatedAt": "2020-12-22T11:29:01Z",
+    "url": "https://github.com/rsc3/boostoptimization",
+    "firstCommitDate": "2020-12-22T11:28:52Z",
+    "lastCommitDate": "2020-12-22T11:28:52Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "rsc3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-05-20T18:33:01Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "CUDA+conda+pytorch",
+    "name": "bunzhun",
+    "updatedAt": "2024-05-20T19:53:35Z",
+    "url": "https://github.com/rsc3/bunzhun",
+    "firstCommitDate": "2024-05-20T19:53:16Z",
+    "lastCommitDate": "2024-05-20T19:53:16Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "rsc3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-11-05T21:12:37Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Logic functions for continuously regulated gates",
+    "name": "continuousgates",
+    "updatedAt": "2019-07-15T03:50:51Z",
+    "url": "https://github.com/rsc3/continuousgates",
+    "firstCommitDate": "2018-11-06T01:11:08Z",
+    "lastCommitDate": "2018-11-06T01:11:08Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "rsc3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-03-20T00:13:45Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "make a covid detector from the human genome",
+    "name": "covid-detector",
+    "updatedAt": "2020-04-07T01:18:51Z",
+    "url": "https://github.com/rsc3/covid-detector",
+    "firstCommitDate": "2020-04-07T01:18:40Z",
+    "lastCommitDate": "2020-04-07T01:18:40Z",
+    "topContributors": [
+      {
+        "contributions": 23,
+        "login": "rsc3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-03-19T19:26:12Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "Deldupemia",
+    "updatedAt": "2024-12-20T16:49:51Z",
+    "url": "https://github.com/rsc3/Deldupemia",
+    "firstCommitDate": "2024-12-20T16:49:47Z",
+    "lastCommitDate": "2024-12-20T16:49:47Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "rsc3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-06-21T19:35:22Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Tests and examples of linkml",
+    "name": "linkml-examples",
+    "updatedAt": "2023-06-21T19:35:38Z",
+    "url": "https://github.com/rsc3/linkml-examples",
+    "firstCommitDate": "2023-06-21T19:32:27Z",
+    "lastCommitDate": "2023-06-21T19:32:27Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "rsc3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-04-30T08:36:37Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Private payments for mobile devices.",
+    "name": "mobilecoin",
+    "updatedAt": "2020-10-22T02:29:46Z",
+    "url": "https://github.com/rsc3/mobilecoin",
+    "firstCommitDate": "2020-04-29T22:15:20Z",
+    "lastCommitDate": "2020-04-29T22:15:20Z",
+    "topContributors": [
+      {
+        "contributions": 29,
+        "login": "mfaulk"
+      },
+      {
+        "contributions": 21,
+        "login": "eranrund"
+      },
+      {
+        "contributions": 21,
+        "login": "sugargoat"
+      },
+      {
+        "contributions": 7,
+        "login": "cbeck88"
+      },
+      {
+        "contributions": 6,
+        "login": "rjwalters"
+      },
+      {
+        "contributions": 5,
+        "login": "jcape"
+      },
+      {
+        "contributions": 4,
+        "login": "joekottke"
+      },
+      {
+        "contributions": 3,
+        "login": "kylefleming"
+      },
+      {
+        "contributions": 3,
+        "login": "tsegaran"
+      },
+      {
+        "contributions": 2,
+        "login": "brson"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-09-16T23:49:04Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Start porting RAL to Pytorch/Tensorflow/MXNet, probably Pytorch. MVP would be nice, context for why it’s harder is ok, do awesome",
+    "name": "ralogic",
+    "updatedAt": "2019-10-01T20:33:20Z",
+    "url": "https://github.com/rsc3/ralogic",
+    "firstCommitDate": "2019-10-01T20:33:18Z",
+    "lastCommitDate": "2019-10-01T20:33:18Z",
+    "topContributors": [
+      {
+        "contributions": 17,
+        "login": "rsc3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-06-29T18:18:54Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "The Synthetic Biology Open Language Visual Repository",
+    "name": "sbolv",
+    "updatedAt": "2019-07-15T03:50:54Z",
+    "url": "https://github.com/rsc3/sbolv",
+    "firstCommitDate": "2017-06-29T19:26:49Z",
+    "lastCommitDate": "2017-06-29T19:26:49Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "rsc3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-01-25T22:12:39Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "screen_cost",
+    "updatedAt": "2019-04-19T17:34:09Z",
+    "url": "https://github.com/rsc3/screen_cost",
+    "firstCommitDate": "2017-01-25T19:14:58Z",
+    "lastCommitDate": "2017-01-25T19:14:58Z",
+    "topContributors": [
+      {
+        "contributions": 16,
+        "login": "gochs"
+      },
+      {
+        "contributions": 3,
+        "login": "cameronstrachan"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-01-29T01:40:14Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "test",
+    "updatedAt": "2017-01-29T01:40:14Z",
+    "url": "https://github.com/rsc3/test",
+    "firstCommitDate": "2017-02-08T02:07:00Z",
+    "lastCommitDate": "2017-02-08T02:07:00Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "rsc3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-04-28T19:03:43Z",
+    "defaultBranchRef": {
+      "name": "develop"
+    },
+    "description": "WDL Analysis Research Pipelines",
+    "name": "warp",
+    "updatedAt": "2025-04-29T18:05:19Z",
+    "url": "https://github.com/rsc3/warp",
+    "firstCommitDate": "2025-04-29T18:05:11Z",
+    "lastCommitDate": "2025-04-29T18:05:11Z",
+    "topContributors": [
+      {
+        "contributions": 363,
+        "login": "ekiernan"
+      },
+      {
+        "contributions": 273,
+        "login": "nikellepetrillo"
+      },
+      {
+        "contributions": 167,
+        "login": "gbggrant"
+      },
+      {
+        "contributions": 149,
+        "login": "jessicaway"
+      },
+      {
+        "contributions": 139,
+        "login": "wjdingman1"
+      },
+      {
+        "contributions": 103,
+        "login": "aawdeh"
+      },
+      {
+        "contributions": 95,
+        "login": "schaluva"
+      },
+      {
+        "contributions": 89,
+        "login": "khajoue2"
+      },
+      {
+        "contributions": 78,
+        "login": "kishorikonwar"
+      },
+      {
+        "contributions": 62,
+        "login": "dependabot[bot]"
+      }
+    ]
+  }
+]

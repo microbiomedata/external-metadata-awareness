@@ -1,0 +1,3392 @@
+
+=== biosamples_attributes ===
+
+_id
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer.0
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"104":1000}
+
+_id.buffer.1
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"215":353,"216":647}
+
+_id.buffer.10
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"13":7,"25":9,"26":7,"27":7,"30":7,"31":8,"35":7,"38":8,"41":9,"61":8,"62":10,"72":7,"132":8,"148":8,"153":8,"156":10,"194":8,"217":8,"228":8,"243":9}
+
+_id.buffer.11
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"6":7,"8":7,"18":8,"24":7,"29":8,"30":7,"72":8,"74":9,"75":8,"123":8,"138":8,"144":8,"156":8,"171":10,"199":8,"202":9,"211":8,"236":9,"247":8,"248":8}
+
+_id.buffer.2
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"0":148,"1":153,"2":248,"3":98,"253":78,"254":119,"255":156}
+
+_id.buffer.3
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"9":8,"21":7,"32":8,"76":11,"84":7,"101":9,"116":10,"121":7,"127":7,"140":11,"143":9,"155":8,"156":7,"161":8,"178":8,"179":8,"189":10,"209":9,"220":8,"244":8}
+
+_id.buffer.4
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"144":1000}
+
+_id.buffer.5
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"13":1000}
+
+_id.buffer.6
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"141":1000}
+
+_id.buffer.7
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"228":1000}
+
+_id.buffer.8
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"169":1000}
+
+_id.buffer.9
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"4":6,"8":9,"13":6,"28":8,"32":7,"51":7,"60":7,"76":8,"103":7,"106":7,"156":7,"157":7,"185":8,"191":7,"195":7,"217":9,"220":12,"235":9,"239":7,"254":8}
+
+accession
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"SAMN13684568":1,"SAMN37099602":1,"SAMEA113947443":1,"SAMEA4786757":1,"SAMEA6784143":1,"SAMN38818349":1,"SAMN39081685":1,"SAMN09786675":1,"SAMN29821255":1,"SAMN34405283":1,"SAMEA6742893":1,"SAMD00147234":1,"SAMN13931217":1,"SAMEA8601323":1,"SAMN45895662":1,"SAMD00297689":1,"SAMEA14416834":1,"SAMN28207553":1,"SAMEA6356613":1,"SAMEA6463279":1}
+
+attribute_name
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"env_medium":56,"collection_date":55,"env_local_scale":51,"env_broad_scale":49,"geo_loc_name":47,"lat_lon":43,"host":29,"isolate":17,"depth":17,"collection date":15,"isolation_source":14,"environment (biome)":11,"environment (feature)":10,"INSDC first public":10,"ENA-CHECKLIST":10,"INSDC status":10,"scientific_name":9,"taxonomic identity marker":9,"environment (material)":9,"num_replicons":8}
+
+biosample_id
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"2389489":1,"2738491":1,"2822029":1,"3003101":1,"3106904":1,"3568020":1,"3844979":1,"4670283":1,"5216507":1,"5408693":1,"5445971":1,"5877764":1,"6131970":1,"6205752":1,"6259235":1,"6260413":1,"6296163":1,"6676718":1,"6921729":1,"7353501":1}
+
+content
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"0":8,"1":12,"2":6,"missing":80,"not applicable":57,"NA":16,"not collected":14,"not provided":13,"Homo sapiens":11,"public":10,"multi-marker approach":9,"human gut metagenome":9,"feces":9,"human gut":8,"ERC000050":7,"human-associated habitat":6,"faeces":5,"default":5,"No":5,"USA":5}
+
+display_name
+  Coverage: 69.4% (694/1000)
+  Types: {"string":694}
+  Top 20 values: {"environmental medium":75,"collection date":70,"local-scale environmental context":66,"broad-scale environmental context":62,"geographic location":57,"latitude and longitude":43,"host":30,"isolate":17,"depth":17,"isolation source":16,"sample name":12,"number of replicons":8,"isolation and growth condition":7,"host age":7,"sample type":6,"metagenome source":6,"project name":6,"host subject id":6,"cultivar":6,"ecotype":6}
+
+harmonized_name
+  Coverage: 69.4% (694/1000)
+  Types: {"string":694}
+  Top 20 values: {"env_medium":75,"collection_date":70,"env_local_scale":66,"env_broad_scale":62,"geo_loc_name":57,"lat_lon":43,"host":30,"isolate":17,"depth":17,"isolation_source":16,"sample_name":12,"num_replicons":8,"isol_growth_condt":7,"host_age":7,"sample_type":6,"metagenome_source":6,"project_name":6,"host_subject_id":6,"cultivar":6,"ecotype":6}
+
+=== sra_biosamples_bioprojects ===
+
+_id
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer.0
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"104":1000}
+
+_id.buffer.1
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"216":1000}
+
+_id.buffer.10
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"0":7,"8":7,"9":7,"10":8,"25":8,"36":11,"44":9,"46":7,"49":7,"52":11,"71":7,"91":13,"132":8,"177":8,"180":9,"189":8,"213":9,"232":11,"240":8,"254":8}
+
+_id.buffer.11
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"12":8,"25":7,"37":8,"43":7,"46":7,"54":7,"61":7,"87":8,"108":7,"120":7,"122":7,"138":8,"145":8,"167":7,"174":8,"175":7,"196":7,"198":7,"205":8,"245":8}
+
+_id.buffer.2
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"49":7,"50":734,"51":259}
+
+_id.buffer.3
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"2":9,"6":11,"8":7,"10":8,"16":11,"17":11,"20":10,"22":8,"23":9,"24":7,"25":14,"33":8,"46":11,"57":8,"58":9,"70":8,"109":10,"120":9,"131":9,"254":9}
+
+_id.buffer.4
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"250":1000}
+
+_id.buffer.5
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"136":1000}
+
+_id.buffer.6
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"72":1000}
+
+_id.buffer.7
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"233":1000}
+
+_id.buffer.8
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"9":1000}
+
+_id.buffer.9
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"9":7,"13":7,"17":10,"18":9,"27":8,"29":8,"35":8,"36":7,"38":17,"47":10,"50":8,"55":10,"58":9,"63":11,"76":9,"77":9,"88":8,"95":8,"137":9,"211":8}
+
+bioproject_accession
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"PRJEB37886":87,"PRJNA716984":18,"PRJEB72496":16,"PRJNA716985":14,"PRJNA230403":14,"PRJNA731148":10,"PRJNA750736":9,"PRJNA218110":9,"PRJNA720050":7,"PRJNA614995":6,"PRJNA612578":4,"PRJNA731149":4,"PRJNA767338":3,"PRJNA715749":3,"PRJNA686984":3,"PRJNA1127537":3,"PRJNA952985":3,"PRJNA934666":3,"PRJNA284954":3,"PRJNA731152":3}
+
+biosample_accession
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"SAMN29211108":1,"SAMEA110080588":1,"SAMEA9713566":1,"SAMN11295918":1,"SAMN20014197":1,"SAMD00144700":1,"SAMN03393134":1,"SAMN04197037":1,"SAMEA10398465":1,"SAMN23721963":1,"SAMN37038728":1,"SAMEA4662397":1,"SAMN50243771":1,"SAMEA5392825":1,"SAMN28530581":1,"SAMN32230164":1,"SAMN08364427":1,"SAMN22676937":1,"SAMN32536751":1,"SAMN13297078":1}
+
+=== env_triads_flattened ===
+
+_id
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer.0
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"104":1000}
+
+_id.buffer.1
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"219":1000}
+
+_id.buffer.10
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"11":7,"21":7,"25":7,"51":7,"52":8,"63":10,"81":7,"88":9,"95":7,"102":7,"110":7,"112":9,"114":7,"122":7,"158":11,"159":8,"199":8,"217":9,"232":9,"247":8}
+
+_id.buffer.11
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"2":6,"23":8,"25":9,"29":7,"90":7,"91":7,"122":7,"136":7,"146":8,"151":9,"165":8,"179":7,"200":7,"203":7,"228":9,"233":9,"237":8,"243":8,"253":8,"254":7}
+
+_id.buffer.2
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"23":1000}
+
+_id.buffer.3
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"79":15,"80":20,"82":15,"97":19,"98":15,"101":17,"102":17,"103":18,"104":19,"107":16,"111":16,"112":27,"114":18,"115":17,"116":23,"118":16,"120":19,"125":25,"128":17,"129":28}
+
+_id.buffer.4
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"172":1000}
+
+_id.buffer.5
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"130":1000}
+
+_id.buffer.6
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"191":1000}
+
+_id.buffer.7
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"92":1000}
+
+_id.buffer.8
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"128":1000}
+
+_id.buffer.9
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"2":14,"5":14,"11":12,"12":12,"16":17,"18":14,"205":12,"213":14,"216":12,"228":12,"229":14,"232":14,"233":13,"234":12,"235":12,"238":15,"242":12,"248":15,"250":12,"252":16}
+
+accession
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"SAMN34009045":1,"SAMN51000987":1,"SAMN45157139":1,"SAMEA5840480":1,"SAMN25948529":1,"SAMN15430909":1,"SAMN32244690":1,"SAMD00468720":1,"SAMEA7439499":1,"SAMEA5501992":1,"SAMN14123739":1,"SAMD00473367":1,"SAMN32745106":1,"SAMEA9969347":1,"SAMD00235052":1,"SAMN21543045":1,"SAMEA5511566":1,"SAMN21465915":1,"SAMN47242076":1,"SAMN39413539":1}
+
+attribute
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Common values: {"env_local_scale":346,"env_medium":345,"env_broad_scale":309}
+
+id
+  Coverage: 100.0% (1000/1000)
+  Types: {"null":334,"string":666}
+  Nulls: 334
+  Top 20 values: {"UBERON:0001988":69,"ENVO:00000029":65,"ENVO:00001998":33,"ENVO:00009003":31,"NCBITaxon:9606":24,"ENVO:00002003":15,"ENVO:00000428":11,"ENVO:00002011":9,"ENVO:00002149":8,"ENVO:00002006":7,"ENVO:01000020":7,"ENVO:03600087":6,"ENVO:00000114":6,"ENVO:01000352":5,"ENVO:00002001":5,"UBERON:0001836":5,"ENVO:2100002":5,"ENVO:01001029":5,"UBERON:0002553":4,"ENVO:00000150":4}
+
+instance
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"0":983,"1":8,"2":7,"3":2}
+
+label
+  Coverage: 100.0% (1000/1000)
+  Types: {"null":334,"string":666}
+  Nulls: 334
+  Top 20 values: {"feces":69,"watercourse":65,"soil":33,"human-associated habitat":31,"Homo sapiens":24,"fecal material":15,"biome":11,"fresh water":9,"sea water":8,"liquid water":7,"estuarine biome":7,"greenhouse":6,"agricultural field":6,"field":5,"waste water":5,"saliva":5,"intestine environment":5,"fecal environment":5,"anatomical cavity":4,"coral reef":4}
+
+prefix
+  Coverage: 100.0% (1000/1000)
+  Types: {"null":334,"string":666}
+  Nulls: 334
+  Common values: {"UBERON":127,"NCBITAXON":41,"ENVO":475,"FOODON":12,"PO":5,"MONDO":5,"DOID":1}
+
+raw_component
+  Coverage: 100.0% (1000/1000)
+  Types: {"null":226,"string":774}
+  Nulls: 226
+  Top 20 values: {"human gut":36,"faeces":32,"human-associated habitat":31,"feces":18,"Soil":14,"stool":10,"soil":9,"fecal material [ENVO:00002003]":7,"water":6,"gut":5,"Human gut":4,"freshwater":4,"soil [ENVO:00001998]":4,"stomach":4,"estuarine water [ENVO:01000301]":4,"urban biome":4,"Stool":4,"Gallus gallus domesticus":4,"bodily fluid":4,"estuarine biome [ENVO:01000020]":4}
+
+raw_original
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"not applicable":78,"missing":37,"human gut":36,"faeces":32,"human-associated habitat":31,"feces":18,"not collected":16,"Soil":14,"NA":10,"stool":10,"soil":9,"Not applicable":8,"fecal material [ENVO:00002003]":7,"water":6,"ENVO:00000428":5,"gut":5,"Human gut":4,"freshwater":4,"soil [ENVO:00001998]":4,"stomach":4}
+
+source
+  Coverage: 100.0% (1000/1000)
+  Types: {"null":334,"string":666}
+  Nulls: 334
+  Common values: {"OAK":617,"OLS":47,"asserted CURIe":2}
+
+=== biosamples_ids ===
+
+_id
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer.0
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"104":1000}
+
+_id.buffer.1
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"215":1000}
+
+_id.buffer.10
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"1":7,"6":7,"8":8,"13":7,"31":8,"50":8,"56":8,"65":7,"77":7,"81":7,"88":7,"98":7,"101":7,"133":8,"141":8,"150":8,"199":9,"218":11,"243":8,"245":8}
+
+_id.buffer.11
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"0":7,"13":7,"44":7,"45":7,"62":7,"69":7,"79":7,"110":7,"123":10,"129":8,"132":7,"138":8,"139":7,"149":8,"167":8,"180":9,"181":8,"190":10,"236":9,"249":8}
+
+_id.buffer.2
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"252":458,"253":542}
+
+_id.buffer.3
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"4":16,"7":13,"8":13,"10":17,"13":13,"22":16,"27":15,"33":16,"35":14,"48":16,"49":14,"51":19,"54":16,"214":15,"222":16,"230":15,"235":15,"243":21,"247":15,"252":15}
+
+_id.buffer.4
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"189":1000}
+
+_id.buffer.5
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"243":1000}
+
+_id.buffer.6
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"184":1000}
+
+_id.buffer.7
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"209":1000}
+
+_id.buffer.8
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"158":1000}
+
+_id.buffer.9
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"65":11,"77":11,"98":18,"108":11,"117":12,"118":12,"122":11,"123":13,"125":12,"129":13,"130":13,"136":11,"138":12,"143":12,"146":13,"152":14,"158":13,"167":13,"170":16,"173":16}
+
+accession
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"SAMN30427521":1,"SAMN15816278":1,"SAMN16374933":1,"SAMN38986513":1,"SAMEA6751890":1,"SAMN43279049":1,"SAMN27726061":1,"SAMN31634502":1,"SAMN39425150":1,"SAMN19768115":1,"SAMN42722542":1,"SAMD00430948":1,"SAMN08510232":1,"SAMN47825150":1,"SAMN13277018":1,"SAMD00647978":1,"SAMN11946993":1,"SAMN28202129":1,"SAMN31887749":1,"SAMN47908482":1}
+
+content
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"1414":1,"1858":1,"7324":1,"7743":1,"10393":1,"3000125":1,"3106250":1,"19507903":1,"1004603448":1,"SAMN30427521":1,"SRS7201914":1,"SRS7478574":1,"21_J_Shr_1A_T4":1,"SAMEA6751890":1,"TJYK52":1,"SAMN27726061":1,"SAMN31634502":1,"SAMN39425150":1,"SRS9238403":1,"SRS22080102":1}
+
+db
+  Coverage: 72.9% (729/1000)
+  Types: {"string":729}
+  Common values: {"BioSample":401,"SRA":303,"DOE Joint Genome Institute":9,"NIAID Bioinformatics and Computational Biosciences Branch":1,"Exploratory Science Center, Merck and Co., Inc., Cambridge, Massachusetts, USA":1,"University of Michigan":2,"NGDC":5,"ICER Cambodia":1,"National Microbiome Data Collaborative":2,"INRAE":1,"NIZO food research":1,"INRAe (INRAe Montpellier)":1,"UCSDMI":1}
+
+is_primary
+  Coverage: 40.0% (400/1000)
+  Types: {"string":400}
+  Common values: {"1":400}
+
+label
+  Coverage: 27.4% (274/1000)
+  Types: {"string":274}
+  Common values: {"Sample name":274}
+
+=== biosamples_flattened ===
+
+_id
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer.0
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"104":1000}
+
+_id.buffer.1
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"218":1000}
+
+_id.buffer.10
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"11":7,"21":7,"26":7,"29":11,"30":7,"32":9,"43":7,"60":9,"61":8,"85":9,"101":7,"106":7,"123":8,"131":7,"153":8,"161":8,"180":8,"185":8,"241":9,"243":9}
+
+_id.buffer.11
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"20":10,"34":7,"41":7,"47":7,"74":7,"90":7,"92":8,"93":8,"98":7,"111":7,"114":8,"135":10,"155":8,"158":7,"160":7,"197":7,"199":7,"219":8,"236":7,"246":9}
+
+_id.buffer.2
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"252":390,"253":608,"254":2}
+
+_id.buffer.3
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"2":13,"8":11,"25":10,"67":11,"94":12,"137":15,"142":11,"154":13,"156":10,"160":13,"163":17,"165":10,"178":11,"180":12,"182":13,"187":11,"188":12,"212":12,"224":11,"231":12}
+
+_id.buffer.4
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"172":1000}
+
+_id.buffer.5
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"130":1000}
+
+_id.buffer.6
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"191":1000}
+
+_id.buffer.7
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"92":1000}
+
+_id.buffer.8
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"128":1000}
+
+_id.buffer.9
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"105":40,"106":30,"107":33,"108":30,"109":35,"111":27,"112":37,"114":42,"115":27,"116":27,"118":32,"120":31,"123":37,"125":31,"127":34,"128":31,"131":32,"132":32,"133":40,"134":28}
+
+abs_air_humidity
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not collected":1,"Not availiable":1}
+
+access
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Common values: {"public":1000}
+
+accession
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"SAMN14053600":1,"SAMEA6613697":1,"SAMN11336637":1,"SAMN35444302":1,"SAMN34331208":1,"SAMN30360250":1,"SAMN38370410":1,"SAMN31037159":1,"SAMEA5439390":1,"SAMN14246129":1,"SAMN27572869":1,"SAMN35790216":1,"SAMEA5516878":1,"SAMN08109206":1,"SAMD00334378":1,"SAMN19768400":1,"SAMN15193619":1,"SAMN10289975":1,"SAMN31463228":1,"SAMN32987433":1}
+
+age
+  Coverage: 1.8% (18/1000)
+  Types: {"string":18}
+  Common values: {"5":1,"21":1,"25":1,"27":1,"30":1,"37":1,"51":1,"59":1,"61":1,"68":1,"76":1,"81":1,"83":1,"97":1,"5.39":1,"68.77":1,"1y":1,"18y":1}
+
+agrochem_addition
+  Coverage: 0.9% (9/1000)
+  Types: {"string":9}
+  Common values: {"not applicable":1,"none":1,"missing":6,"manure eq. 75 kg/ha N in Aug.":1}
+
+air_temp
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not collected":1,"Not collected":1}
+
+air_temp_regm
+  Coverage: 0.9% (9/1000)
+  Types: {"string":9}
+  Common values: {"25":1,"maintained 20 degrees Celsius":6,"28C day, 22C night":2}
+
+al_sat
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"not applicable":1,"missing":6}
+
+al_sat_meth
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"not applicable":1,"missing":6}
+
+alkalinity
+  Coverage: 0.5% (5/1000)
+  Types: {"string":5}
+  Common values: {"118":1,"NA":1,"not collected":1,"not applicable":2}
+
+alkyl_diethers
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"not applicable":2}
+
+altitude
+  Coverage: 3.1% (31/1000)
+  Types: {"string":31}
+  Common values: {"0":1,"495":1,"6498209":1,"not collected":3,"not applicable":5,"176m":1,"15m":1,"1680 m":1,"1440 m":1,"892 m":1,"NA":2,"268 m":1,"1200 m":1,"missing":6,"3630 masl":1,"0.9":1,"1944 m":1,"850 m":1,"91.1":1}
+
+aminopept_act
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"not applicable":2}
+
+ammonium
+  Coverage: 0.9% (9/1000)
+  Types: {"string":9}
+  Common values: {"0":1,"NA":1,"0.410222296136149":1,"369.84 milligram per liter":1,"0.233937579688453":1,"0.060978989966184":1,"0.22136 µmol/kg":1,"not applicable":2}
+
+annual_precpt
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"928 mm":1}
+
+annual_season_precpt
+  Coverage: 1.0% (10/1000)
+  Types: {"string":10}
+  Common values: {"930":1,"not applicable":1,"missing":6,"807 mm":1,"annual: 978":1}
+
+annual_season_temp
+  Coverage: 1.0% (10/1000)
+  Types: {"string":10}
+  Common values: {"14":1,"not applicable":1,"missing":6,"21.5 °C":1,"annual: 14.6":1}
+
+annual_temp
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"7.5 C":1}
+
+area_samp_size
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"30.48 cm2":1}
+
+atmospheric_data
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"not collected":1}
+
+avg_temp
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"15°C":1}
+
+bac_prod
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"not collected":1}
+
+bac_resp
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"not collected":1}
+
+bacteria_carb_prod
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"not applicable":2}
+
+biol_stat
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"wild":2}
+
+biomass
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"NA":1,"Total cell per mL:13066; Intact cell per mL:9475":1,"not applicable":2}
+
+biomaterial_provider
+  Coverage: 0.6% (6/1000)
+  Types: {"string":6}
+  Common values: {"Kihara Institute for Biological Research, Yokohama City University":1,"Kotaro Ishizawa in Primary school of Batou and Hirokuni Miyamoto in Chiba University":1,"Dr. Mark Hauber, University of Illinois at Urbana-Champaign":1}
+
+biotic_relationship
+  Coverage: 0.5% (5/1000)
+  Types: {"string":5}
+  Common values: {"commensal":2,"parasite":1,"free living":1,"symbiont":1}
+
+birth_control
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Cu-IUD":1}
+
+bishomohopanol
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"not applicable":2}
+
+body_habitat
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"UBERON:feces":2}
+
+body_mass_index
+  Coverage: 0.6% (6/1000)
+  Types: {"string":6}
+  Common values: {"0.504142012":1,"21.56":1,"78.59297083":1,"25.11":1,"25.84":1,"26.666666666666668":1}
+
+body_product
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"gut content":1,"UBERON:feces":2}
+
+bromide
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"NA":1,"not collected":1,"not applicable":2}
+
+build_occup_type
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"commercial":1,"not applicable":1}
+
+building_setting
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"rural":1,"missing":1}
+
+calcium
+  Coverage: 0.5% (5/1000)
+  Types: {"string":5}
+  Common values: {"NA":1,"not collected":1,"not applicable":2,"688.3":1}
+
+carb_dioxide
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not collected":1,"Not applicable":1}
+
+carb_nitro_ratio
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"not applicable":2}
+
+chem_administration
+  Coverage: 2.9% (29/1000)
+  Types: {"string":29}
+  Top 20 values: {"NA":6,"not applicable":3,"placebo":2,"FTC/TDF":1,"S239":1,"?-Amino-NValericAcid":1,"100 mg kg -1 phenanthrene":1,"nor collected":1,"2,3-Butanediol":1,"Enrofloxacin":1,"antibiotics":1,"not collected":1,"VSL3":1,"S9":1,"PGLa":1,"phosphite, rumen fluid, carbon dioxide":1,"missing":1,"bleomycin [CHEBI:22907]":1,"exclusion":1,"Sterile water":1}
+
+chem_oxygen_dem
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"3474":1}
+
+chloride
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"NA":1,"not collected":1,"not applicable":2}
+
+chlorophyll
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"NA":1,"not collected":1,"not applicable":2}
+
+climate_environment
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not applicable":2}
+
+coll_site_geo_feat
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"Lianyungang, China":1,"fish processing building [ENVO:01000928]":1,"Swine barn":1,"NA":1}
+
+collected_by
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"Mie Damborg":1,"LiPuma":1,"TATA INSTITUTE FOR GENETICS AND SOCIETY, Banaglore, INDIA":1,"Nicholas D. Antonson":1}
+
+collection_date
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"2018":23,"2019":34,"2020":15,"2021":7,"2022":5,"missing":118,"not provided":95,"not applicable":36,"not collected":35,"NA":14,"N/A":7,"Unknown":7,"2021-08-01":7,"2017-05":5,"2019-02-12":5,"2017-04":4,"2019-05-19":4,"2019-10":4,"2017-06":4,"Not applicable":4}
+
+collection_device
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"eppi":1}
+
+collection_method
+  Coverage: 1.5% (15/1000)
+  Types: {"string":15}
+  Common values: {"3M sponge":1,"https://www.fda.gov/media/94358/download":1,"NA":2,"Fecal collection":1,"fecal DNA extract":1,"in vitro fermentation":2,"necropsy":1,"CTD rosette":1,"not applicable":2,"Three 2mL tubes collected and 0.25mg DNA extracted":1,"cannual method":1,"soil core":1}
+
+compound
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Taxifolin":1}
+
+conduc
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"102.2":1}
+
+crop_rotation
+  Coverage: 0.9% (9/1000)
+  Types: {"string":9}
+  Common values: {"not applicable":1,"missing":6,"no":2}
+
+cult_result
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"negative":1}
+
+cult_result_org
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Negative":1}
+
+cult_target
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Listeria monocytogenes [NCIT:C86502]|1639":1}
+
+cultivar
+  Coverage: 10.2% (102/1000)
+  Types: {"string":102}
+  Top 20 values: {"1032":1,"94006":1,"140809":1,"not applicable":39,"missing":12,"not collected":5,"Not applicable":4,"Chardonnay":2,"Vitis vinifera cv. Pinot Noir":2,"BTx623 25M2-0090":1,"Akamochi":1,"C4-5353xC4-8134 132":1,"CC1690_21gr":1,"NA":1,"FIL2 x HAL2 f6":1,"Bd21":1,"1_60_3_26704":1,"Kitaake FN3376-S":1,"Bacteria-WGB211":1,"Kitaake ubi-XA21 FN1131 -S":1}
+
+culture_collection
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"CBS:49790":1,"DSM:25663":1,"ATCC:700779":1,"DSM:22419":1}
+
+cur_land_use
+  Coverage: 0.5% (5/1000)
+  Types: {"string":5}
+  Common values: {"not applicable":1,"hayland":1,"small grains":1,"conifers (e.g. pine,spruce,fir,cypress)":1,"hardwoods (e.g. oak,hickory,elm,aspen)":1}
+
+cur_vegetation
+  Coverage: 1.1% (11/1000)
+  Types: {"string":11}
+  Common values: {"not applicable":1,"missing":6,"rice":1,"tomato":1,"Pinus-nigra":1,"Acer saccharum-dominated mesic forest with Quercus alba and Tilia americana":1}
+
+cur_vegetation_meth
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"not applicable":1,"missing":6}
+
+curation_date
+  Coverage: 100.0% (1000/1000)
+  Types: {"null":1000}
+  Nulls: 1000
+
+curation_status
+  Coverage: 100.0% (1000/1000)
+  Types: {"null":1000}
+  Nulls: 1000
+
+density
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"NA":1,"not collected":1,"not applicable":2}
+
+depth
+  Coverage: 21.6% (216/1000)
+  Types: {"string":216}
+  Top 20 values: {"0":13,"1":4,"3":3,"10":3,"not applicable":13,"missing":13,"0-20cm":8,"20cm":7,"NA":6,"0-10 cm":6,"0 m":5,"not collected":5,"10 cm":4,"20 cm":3,"surface":3,"5cm":3,"0-10cm":3,"0.5m":3,"Surface":3,"0-50cm":3}
+
+derived_from
+  Coverage: 8.4% (84/1000)
+  Types: {"string":84}
+  Top 20 values: {"SAMN05422037":2,"SAMN35448925":1,"SAMN38148583":1,"SAMN34728233":1,"SAMN17836440":1,"NA":1,"SAMN22064492":1,"SAMN30677860":1,"This BioSample is a metagenomic assembly obtained from the BioSample: SAMN35302353":1,"SAMN33325033":1,"SRR29060565":1,"SAMN37794724":1,"SAMN17836448":1,"SAMN28093205":1,"SAMN17836433":1,"SAMN37794814":1,"SAMN23377318":1,"SAMN17035734":1,"SAMN34727351":1,"SAMN22237344":1}
+
+description
+  Coverage: 2.2% (22/1000)
+  Types: {"string":22}
+  Common values: {"V4 region 16S microbiome":1,"diarrheal_control":1,"Cruise: October2018; CTD Station: 35; Depth: 78m":1,"DNA sequencing of LSU-D2 rDNA region from roots using the MiSeq Illumina system.":1,"infant fecal sample":1,"human_derived_bioreactor_community":1,"not applicable":1,"Sample from ex situ biomethanation flask inoculum 10":1,"missing":7,"1236_2B":1,"case":1,"Febrile illness study":1,"Blank_Pellet":1,"vaginal swab":1,"rectal swab":1,"Fwd_13_Rev_13":1}
+
+description_comment
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"1553":1,"Keywords: GSC:MIxS;MIMARKS:6.0":291,"Keywords: GSC:MIxS;MIMS:6.0":150,"Keywords: GSC:MIxS;MIGS:6.0":92,"Keywords: GSC:MIxS;MIMAG:6.0":87,"":43,"Keywords: GSC:MIxS;MISAG:6.0":8,"Leaf bacterial community":2,"Fecal":2,"pool":2,"NA Keywords: GSC:MIxS;MIMARKS:6.0":2,"Healthy":2,"sample Keywords: GSC:MIxS;MIMARKS:6.0":2,"C. reinhardtii phycosphere mesocosms experiment":2,"not applicable Keywords: GSC:MIxS;MIMARKS:6.0":2,"American Gut Project Stool sample":2,"This sample represents a MAG from the metagenomic run SRR5579986":2,"Bacterial endophytes found in canker scar tissue of apple tree leaves":2,"not applicable Keywords: GSC:MIxS;MIMAG:6.0":2,"Pregnancy-associated microbiota Keywords: GSC:MIxS;MIMARKS:6.0":2}
+
+description_title
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"Metagenome-Assembled Genome (MAG)":80,"MIMARKS Survey related sample from human gut metagenome":21,"MIMS Environmental/Metagenome sample from soil metagenome":17,"MIMARKS Survey related sample from metagenome":14,"MIMARKS Survey related sample from soil metagenome":13,"MIMARKS Survey related sample from human metagenome":13,"MIMS Environmental/Metagenome sample from human gut metagenome":12,"TEDDY OU Gut MAG":10,"MIMARKS Survey related sample from plant metagenome":9,"MIMS Environmental/Metagenome sample from metagenome":9,"MIMARKS Survey related sample from human oral metagenome":5,"MIMARKS Survey related sample from root metagenome":5,"MIMARKS Survey related sample from bovine metagenome":5,"MIMS Environmental/Metagenome sample from gut metagenome":5,"MIMARKS Specimen sample from soil metagenome":5,"MIMARKS Survey related sample from rhizosphere metagenome":5,"MIMARKS Survey related sample from human vaginal metagenome":4,"MIMARKS Specimen sample from activated sludge metagenome":4,"MIMARKS Survey related sample from human lung metagenome":4,"MIMARKS Survey related sample from mouse gut metagenome":4}
+
+dev_stage
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"Nymph":1,"Early stem elongation":1,"Early dough development":1,"nestling":1}
+
+diet
+  Coverage: 0.8% (8/1000)
+  Types: {"string":8}
+  Common values: {"0":1,"Chow diet":1,"Omnivore":1,"Control":1,"brm":1,"omnivore":1,"fat":1,"Normal":1}
+
+diether_lipids
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"NA":1,"not collected":1,"not applicable":2}
+
+disease
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"None":1,"DOID:9563":1}
+
+disease_stage
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Stability":1}
+
+diss_carb_dioxide
+  Coverage: 0.6% (6/1000)
+  Types: {"string":6}
+  Common values: {"NA":1,"225.2877854":1,"61.3540008":1,"not collected":1,"not applicable":2}
+
+diss_hydrogen
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"NA":1,"not collected":1,"not applicable":2}
+
+diss_inorg_carb
+  Coverage: 0.5% (5/1000)
+  Types: {"string":5}
+  Common values: {"NA":1,"not collected":1,"2110.3 µmol/kg":1,"not applicable":2}
+
+diss_inorg_nitro
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not collected":1,"0.257":1}
+
+diss_inorg_phosp
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"not collected":1}
+
+diss_org_carb
+  Coverage: 0.6% (6/1000)
+  Types: {"string":6}
+  Common values: {"924.175943117387":1,"840.916849142848":1,"not collected":1,"295.7":1,"not applicable":2}
+
+diss_org_nitro
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"NA":1,"not collected":1,"not applicable":2}
+
+diss_oxygen
+  Coverage: 0.5% (5/1000)
+  Types: {"string":5}
+  Common values: {"NA":1,"0 micromole per kilogram":1,"192.296 µmol/kg":1,"not applicable":2}
+
+dominant_hand
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"right":1,"I am right handed":2}
+
+down_par
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"not collected":1}
+
+drainage_class
+  Coverage: 0.8% (8/1000)
+  Types: {"string":8}
+  Common values: {"not applicable":1,"missing":6,"poorly":1}
+
+drug_usage
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"Amoxicillin/clavulanate":1,"dalacin, citodon, stesolid, esitalopram, theralen, propavan, xanor":1,"COTRIMOXAZOLE":1}
+
+ecotype
+  Coverage: 8.0% (80/1000)
+  Types: {"string":80}
+  Top 20 values: {"not applicable":35,"missing":14,"not collected":6,"Not applicable":4,"forest":2,"Vietnam":1,"Wheat field":1,"NA":1,"Palm Islands":1,"Col-0":1,"Ordos Basin":1,"RT003":1,"Singapore":1,"Taiwan":1,"not provided":1,"Monterey X Naples, CA":1,"Asian":1,"Brachypodium distachyon Bd21 (wild type)":1,"DEX 1":1,"Central-Finland":1}
+
+elev
+  Coverage: 16.0% (160/1000)
+  Types: {"string":160}
+  Top 20 values: {"0":1,"6":2,"10":1,"13":1,"14":1,"20":1,"25":1,"270":2,"1000":2,"missing":19,"not collected":17,"not applicable":9,"NA":5,"50 m":4,"150 m":4,"Not applicable":3,"40 m":3,"1 m":2,"N/A":2,"886_":2}
+
+env_broad_scale
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"missing":104,"not applicable":98,"human-associated habitat":85,"not collected":22,"human gut":20,"human":14,"NA":11,"Not applicable":8,"marine":8,"soil":7,"oral cavity":7,"urban biome":7,"terrestrial biome [ENVO:00000446]":7,"Bos taurus":6,"anthropogenic environment [ENVO:01000313]":6,"farm":6,"Small river biome":6,"Gut":6,"gut microbiome":5,"marine biome":5}
+
+env_local_scale
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"not applicable":127,"missing":113,"human gut":94,"not collected":29,"Not applicable":11,"NA":11,"N/A":10,"gut":9,"feces":8,"stomach":7,"laboratory environment [ENVO:01001405]":6,"fecal environment [ENVO:01001029]":6,"animal-associated habitat":6,"stream":6,"Intestinal":6,"river":6,"human-associated habitat":5,"forest":5,"coastal":5,"landfill [ENVO:00000533]":5}
+
+env_medium
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"not applicable":110,"missing":104,"faeces":83,"feces":37,"soil":34,"not collected":22,"NA":22,"stool":21,"water":21,"fecal":14,"Not applicable":11,"fecal material [ENVO:00002003]":7,"Feces":7,"Soil":7,"fecal material":7,"ENVO:00001998":6,"bodily fluid":6,"supragingival dental plaque":6,"sea water":6,"groundwater":5}
+
+env_monitoring_zone
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Zone 2":1}
+
+env_package
+  Coverage: 1.6% (16/1000)
+  Types: {"string":16}
+  Common values: {"host-associated":6,"human-skin":1,"missing":3,"human-gut":3,"soil":3}
+
+estimated_size
+  Coverage: 5.3% (53/1000)
+  Types: {"string":53}
+  Common values: {"1884000":1,"368 Mb":1,"missing":41,"390 Mb":1,"3 Gb":2,"1.5 Gb":1,"370 Mb":1,"C-value (pg): ~5.23":1,"Not collected":1,"2.5G":1,"780 Mb":1,"1.75 Gbp":1}
+
+ethnicity
+  Coverage: 3.0% (30/1000)
+  Types: {"string":30}
+  Common values: {"Achuar":1,"NA":3,"han":1,"Hispanic":3,"Japanese":6,"Caucasian":3,"not applicable":1,"Not Hispanic or Latino":1,"Mexican American":1,"missing":1,"non-hispanic":2,"Non_Hispanic_White":1,"white or caucasian":1,"Han":1,"Fula":1,"White":1,"kazakh":1,"black":1}
+
+experimental_factor
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"BMT_Ldlrko_23ko_to_wt":1,"non-irrigated":2,"missing":1,"not applicable":2,"disease status":1}
+
+extreme_event
+  Coverage: 0.8% (8/1000)
+  Types: {"string":8}
+  Common values: {"not applicable":1,"missing":6,"Human Decomposition":1}
+
+extreme_salinity
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"not applicable":1,"missing":6}
+
+fao_class
+  Coverage: 0.9% (9/1000)
+  Types: {"string":9}
+  Common values: {"not applicable":1,"missing":6,"Nitisol":1,"Luvisols":1}
+
+fertilizer_regm
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"LowN":1}
+
+field
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"Kolluvisol":1,"field A":2}
+
+filter_type
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not collected":1,"Not applicable":1}
+
+fire
+  Coverage: 0.9% (9/1000)
+  Types: {"string":9}
+  Common values: {"not applicable":1,"missing":7,"no":1}
+
+flooding
+  Coverage: 0.8% (8/1000)
+  Types: {"string":8}
+  Common values: {"not applicable":1,"missing":6,"artificially flooded":1}
+
+floor_area
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"1600 cm2":1}
+
+floor_struc
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Concrete":1}
+
+fluor
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not collected":1,"0.0458":1}
+
+food_contact_surf
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"not applicable":1,"NA":1}
+
+food_origin
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Canada":1}
+
+food_prod_char
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Swine":1}
+
+food_product_qual
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"not applicable":1,"NA":1}
+
+food_product_type
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"not collected":1,"not applicable":2,"food metagenomes of raw beef 5EM,modified atmosphere packaging,4°C,10 days,first sampling":1}
+
+food_source
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"Peach bloom":1,"T. cacao plant":1}
+
+fungicide_regm
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"No Spray control 13 days post-spray":1,"not applicable":1}
+
+gaseous_environment
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"sealed jar":2,"elevated CO2":1}
+
+gastrointest_disord
+  Coverage: 0.9% (9/1000)
+  Types: {"string":9}
+  Common values: {"NA":3,"no":1,"not applicable":1,"ulcerative colitis":1,"missing":1,"Control":1,"Non-IBD":1}
+
+genotype
+  Coverage: 1.2% (12/1000)
+  Types: {"string":12}
+  Common values: {"7":1,"PI585954":1,"C":2,"Nipponbare NRT1.1B - indica":1,"AP20":1,"TAM17500":1,"OF3":1,"RERT2-Cdc20(D/AAA)":1,"IR24":1,"B":2}
+
+geo_loc_name
+  Coverage: 99.8% (998/1000)
+  Types: {"string":998}
+  Top 20 values: {"missing":75,"USA":63,"China":46,"not applicable":40,"Germany":18,"Japan":17,"United Kingdom":17,"Denmark":17,"Spain":16,"Sweden":11,"France":11,"restricted access":10,"Finland":9,"NA":9,"Australia":9,"not collected":7,"Netherlands":7,"N/A":6,"Not applicable":6,"Poland: Torun":6}
+
+gestation_state
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"pregnant":2}
+
+glucosidase_act
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"not applicable":2}
+
+gravidity
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"no":1,"NA":1}
+
+growth_facil
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"field":1}
+
+health_state
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"healthy":1}
+
+heat_cool_type
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not collected":1,"Not applicable":1}
+
+heavy_metals
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"not applicable":1,"missing":6}
+
+heavy_metals_meth
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"not applicable":1,"missing":6}
+
+height_or_length
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"156":1}
+
+horizon_meth
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"not applicable":1,"missing":6}
+
+host
+  Coverage: 50.9% (509/1000)
+  Types: {"string":509}
+  Top 20 values: {"Homo sapiens":212,"not applicable":55,"Mus musculus":34,"Bos taurus":10,"Beta vulgaris (common beet)":6,"missing":6,"Vitis vinifera":5,"Zea mays":5,"Gallus gallus":4,"Sus scrofa domesticus":4,"Apis mellifera":3,"camel":3,"Canis lupus familiaris":3,"chicken":3,"Goat":3,"Oryza sativa":3,"NA":2,"Sepia officinalis":2,"Macaca mulatta":2,"Populus trichocarpa":2}
+
+host_age
+  Coverage: 10.1% (101/1000)
+  Types: {"string":101}
+  Top 20 values: {"0":1,"1":1,"4":3,"5":1,"6":1,"15":1,"17":1,"21":2,"24":2,"25":1,"31":1,"36":2,"37":2,"42":2,"76":2,"NA":6,"4 weeks post acclimation to ex vitro conditions":6,"8 weeks after planting":3,"30 days":2,"13-25":2}
+
+host_blood_press_diast
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not collected":1,"NA":1}
+
+host_blood_press_syst
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not collected":1,"NA":1}
+
+host_body_habitat
+  Coverage: 3.2% (32/1000)
+  Types: {"string":32}
+  Top 20 values: {"not applicable":5,"UBERON:feces":4,"Teat apex":4,"lung":1,"UBERON:skin":1,"skin":1,"whole polyp":1,"not collected":1,"hindgut":1,"gill":1,"UBERON:gastrointestinal system":1,"tentacles":1,"mammary gland":1,"cecum":1,"whole body":1,"Vagina":1,"feces":1,"gut":1,"caecum":1,"Rectum":1}
+
+host_body_mass_index
+  Coverage: 3.3% (33/1000)
+  Types: {"string":33}
+  Top 20 values: {"30":1,"43":1,"NA":3,"not applicable":2,"15.930324242339058":1,"16.44444444":1,"27.14":1,"22.0719108581543":1,"28.3":1,"21.875000000000004":1,"27.87":1,"20.55":1,"21.12188365650969":1,"22.608506314414285":1,"18.5":1,"Normal-weight":1,"24.3":1,"29.91156197":1,"25.29":1,"missing":1}
+
+host_body_product
+  Coverage: 4.5% (45/1000)
+  Types: {"string":45}
+  Top 20 values: {"stool":7,"Feces":3,"feces":3,"UBERON:feces":3,"NA":3,"buccal mucosa":3,"not applicable":3,"fecal pellet":2,"rectal":2,"Stool":2,"saliva":2,"UBERON:sebum":1,"sputum":1,"UBERON:lumen of gut":1,"milk":1,"skin":1,"Fecal":1,"human feces":1,"missing":1,"Saliva":1}
+
+host_body_temp
+  Coverage: 0.9% (9/1000)
+  Types: {"string":9}
+  Common values: {"NA":4,"nor collected":1,"not collected":1,"not applicable":2,"missing":1}
+
+host_color
+  Coverage: 0.6% (6/1000)
+  Types: {"string":6}
+  Common values: {"Black":1,"black":2,"Dark grey":1,"agouti":1,"NA":1}
+
+host_common_name
+  Coverage: 2.4% (24/1000)
+  Types: {"string":24}
+  Common values: {"human":4,"Eastern gamagrass":1,"pedunculate hoak":1,"cuttlefish":2,"Tibetan Antelope":1,"holm hoak":1,"mouse":1,"English oak, pedunculate oak, truffle oak":1,"aggregating anemone":1,"wild strawberry":1,"Tibetan Sheep":1,"Mouse":1,"not applicable":2,"Prothonotary Warbler":1,"starling":1,"honey bee":1,"Tibetan Yak":2,"Cocoa plant":1}
+
+host_diet
+  Coverage: 4.0% (40/1000)
+  Types: {"string":40}
+  Top 20 values: {"3":1,"NA":4,"omnivore":3,"Teklad 2918":2,"Control":2,"not applicable":2,"Exclusive breastfeeding":2,"cal":2,"Western diet":1,"wes":1,"CD":1,"Tributyrin 0.1% fish 2":1,"corn soybean-meal basal diet":1,"omnivorous":1,"vegetarian":1,"sow milk":1,"HFD":1,"GF_diet":1,"missing":1,"Restricted dietary intake":1}
+
+host_disease
+  Coverage: 3.4% (34/1000)
+  Types: {"string":34}
+  Top 20 values: {"NA":3,"benign breast disease":1,"Downy mildew":1,"Heathy":1,"diabetes":1,"Fusarium wilt":1,"peritonitis":1,"cystic fibrosis":1,"health":1,"CDI positive":1,"None":1,"not collected":1,"Graft rejection":1,"CON":1,"Nrml":1,"Case obese":1,"Sibling":1,"mild anxiety/depression":1,"Cervical Cancer":1,"CD":1}
+
+host_dry_mass
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not collected":1,"NA":1}
+
+host_family_relationship
+  Coverage: 1.0% (10/1000)
+  Types: {"string":10}
+  Common values: {"child (self)":1,"missing":2,"NA":4,"Cichlaidae":1,"not applicable":2}
+
+host_genotype
+  Coverage: 3.9% (39/1000)
+  Types: {"string":39}
+  Top 20 values: {"H":4,"NA":4,"not applicable":3,"CHECK":2,"Sorghum bicolor ssp. bicolor var. BTx623":2,"C57BL/6":2,"K18-hACE2 het":1,"Purple":1,"Col_0":1,"North Atlantic":1,"OH43E":1,"Ames 27133":1,"not collected":1,"KO":1,"C57BL/6N":1,"Col-0":1,"balb/c":1,"WT":1,"JH-/-":1,"Schwaebische Alb":1}
+
+host_growth_cond
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"Sedentary":1,"NA":1}
+
+host_height
+  Coverage: 1.8% (18/1000)
+  Types: {"string":18}
+  Common values: {"160":1,"170":1,"174":1,"184":1,"185":1,"192":1,"NA":5,"not applicable":2,"not collected":1,"126.6":1,"missing":1,"15 cm":1,"61.07388196":1}
+
+host_hiv_stat
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"yes;no":1,"yes":1}
+
+host_infra_specific_name
+  Coverage: 1.2% (12/1000)
+  Types: {"string":12}
+  Common values: {"C57Bl6/N":1,"ssp. Vulgaris cv. ‘Casino’":2,"C57BL/6NJ":2,"not collected":1,"ssp. vulgaris cv. 'Bravo'":3,"ASUKAMINORI(NORIN 281)":1,"ssp. maritima":1,"NA":1}
+
+host_infra_specific_rank
+  Coverage: 1.0% (10/1000)
+  Types: {"string":10}
+  Common values: {"cultivar":5,"strain":2,"not collected":1,"subspecies":1,"NA":1}
+
+host_last_meal
+  Coverage: 1.0% (10/1000)
+  Types: {"string":10}
+  Common values: {"NA":4,"24h":1,"The feeding fish feed was stopped 88 h before the experiment.":1,"not applicable":2,"missing":1,"Commercial pellets":1}
+
+host_length
+  Coverage: 0.5% (5/1000)
+  Types: {"string":5}
+  Common values: {"349":1,"9.5± 4 cm":1,"NA":3}
+
+host_life_stage
+  Coverage: 3.2% (32/1000)
+  Types: {"string":32}
+  Top 20 values: {"adult":5,"Prepartum":3,"Seedling":3,"not applicable":2,"perennial adult":1,"V10":1,"Nonreproductive":1,"R4R":1,"not collected":1,"Young":1,"Postpartum":1,"14 day-old seedling":1,"lactation":1,"Tadpoles":1,"Puppy":1,"harvested grain":1,"Forager":1,"larva":1,"reproductively mature":1,"Mature":1}
+
+host_occupation
+  Coverage: 0.8% (8/1000)
+  Types: {"string":8}
+  Common values: {"NA":3,"not applicable":1,"missing":2,"Unknown":1,"children":1}
+
+host_phenotype
+  Coverage: 1.8% (18/1000)
+  Types: {"string":18}
+  Common values: {"130":1,"Healthy control":6,"NA":6,"Oreochromis niloticus":1,"not applicable":2,"missing":1,"Normal":1}
+
+host_pulse
+  Coverage: 0.6% (6/1000)
+  Types: {"string":6}
+  Common values: {"NA":3,"not applicable":2,"missing":1}
+
+host_sex
+  Coverage: 11.3% (113/1000)
+  Types: {"string":113}
+  Common values: {"female":59,"male":47,"NA":4,"not applicable":1,"not collected":1,"Not Applicable":1}
+
+host_shape
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"Mouse":1,"fish":1,"NA":1}
+
+host_subject_id
+  Coverage: 11.4% (114/1000)
+  Types: {"string":114}
+  Top 20 values: {"3":1,"4":1,"7":2,"9":1,"15":1,"33":1,"47":1,"68":1,"129":1,"168":1,"190":1,"203":1,"406":1,"728":1,"1058":1,"1075":1,"1201":1,"NA":5,"1-102":3,"not applicable":2}
+
+host_subspecf_genlin
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"cross-bred (angus based- black hided) some bos indicus influence)":1}
+
+host_substrate
+  Coverage: 0.5% (5/1000)
+  Types: {"string":5}
+  Common values: {"not collected":1,"rock":2,"DC254_S9":1,"NA":1}
+
+host_symbiont
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"NA":2}
+
+host_taxid
+  Coverage: 5.7% (57/1000)
+  Types: {"string":57}
+  Top 20 values: {"1758":1,"3555":5,"6610":2,"8030":1,"9544":1,"9606":7,"9615":1,"9654":1,"9825":1,"9913":4,"10090":11,"28940":1,"29655":1,"38112":1,"38942":1,"57918":1,"122232":1,"182944":1,"350892":1,"not applicable":3}
+
+host_tissue_sampled
+  Coverage: 5.8% (58/1000)
+  Types: {"string":58}
+  Top 20 values: {"Supragingival plaque":6,"not applicable":4,"NA":4,"cecum content":3,"UBERON:feces":3,"saliva [UBERON:0001836]":3,"tongue":2,"rectum":2,"vaginal epithelial surface":2,"gut":2,"UBERON:skin of hand":1,"CRC_adjacent normal tissue":1,"prepuce":1,"ileum":1,"Lung":1,"Int":1,"nasopharynx":1,"Gut":1,"jejunum-ileum":1,"The gut and its contents":1}
+
+host_tot_mass
+  Coverage: 1.4% (14/1000)
+  Types: {"string":14}
+  Common values: {"9":1,"20":1,"51":1,"109":1,"NA":6,"not collected":1,"not applicable":1,"missing":1,"28.4":1}
+
+id
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"216972":1,"2261276":1,"2726984":1,"2821399":1,"2863564":1,"2899913":1,"3255719":1,"3271787":1,"3494451":1,"3494785":1,"3844298":1,"3845343":1,"4185070":1,"4385995":1,"4397036":1,"4491472":1,"4521620":1,"4521755":1,"4542812":1,"5409383":1}
+
+ifsac_category
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"not collected":1,"not applicable":1,"land animals":1,"NA":1}
+
+ihmc_medication_code
+  Coverage: 0.5% (5/1000)
+  Types: {"string":5}
+  Common values: {"NA":3,"not applicable":1,"missing":1}
+
+indoor_space
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"restricted access":1,"Not applicable":1}
+
+intended_consumer
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"not applicable":1}
+
+investigation_type
+  Coverage: 17.9% (179/1000)
+  Types: {"string":179}
+  Common values: {"metagenome":48,"metagenome-assembled genome":96,"eukaryote":5,"bacteria_archaea":17,"mimarks-survey":9,"virus":2,"amplicon sequencing":1,"single amplified genome":1}
+
+is_reference
+  Coverage: 100.0% (1000/1000)
+  Types: {"null":1000}
+  Nulls: 1000
+
+isol_growth_condt
+  Coverage: 21.1% (211/1000)
+  Types: {"string":211}
+  Top 20 values: {"28588316":1,"28893599":1,"29042534":1,"34810258":1,"missing":84,"not applicable":60,"Not applicable":10,"not collected":8,"NA":4,"SPF":2,"uncultured":2,"DOI":2,"colonic digesta":1,"https://www.mn-net.com/us/nucleospin-soil-mini-kit-for-dna-from-soil-740780.50?number=":1,"Fecal and MRS Media":1,"N/A":1,"to be published":1,"https://www.mn-net.com/media/pdf/f5/e4/7a/Instruction-NucleoSpin-Soil.pdf":1,"https://onlinelibrary.wiley.com/doi/full/10.1111/eva.13187":1,"Zobell 2293E":1}
+
+isolate
+  Coverage: 21.8% (218/1000)
+  Types: {"string":218}
+  Top 20 values: {"13":1,"313":1,"374":1,"1078":1,"15868":1,"not applicable":35,"missing":14,"not collected":6,"Not applicable":2,"NA":2,"YPbin6":1,"Bovine blood":1,"Mus musculus - feces":1,"US161":1,"DeWolfe-196":1,"SKYG5":1,"NC_groundwater_844_Pr1_B-0.1um_64_16":1,"RUI327":1,"kanda-river FeCl 115":1,"Mus musculus":1}
+
+isolate_name_alias
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"gut microbiome 327":1,"LacPavin_0419_WC70L_Bacteria_66_7":1,"gut microbiome 32":1,"gut microbiome 266":1}
+
+isolation_source
+  Coverage: 36.4% (364/1000)
+  Types: {"string":364}
+  Top 20 values: {"human gut":91,"missing":51,"soil":13,"feces":10,"stool":7,"saliva":7,"groundwater":6,"cattle rumen":6,"fecal samples":6,"NA":5,"rhizosphere":5,"single cell amplified by WGA-X; Bigelow Laboratory Dock":4,"stream sediment":4,"sludge sample":4,"high altitude fresh fecal sample":4,"fecal sample":4,"not applicable":3,"rumen":3,"metagenome":3,"lake water":3}
+
+label
+  Coverage: 0.6% (6/1000)
+  Types: {"string":6}
+  Common values: {"KC753":1,"WHM1536":1,"OortTP006M":1,"M_chips":1,"T1DM patient 13 6-month intervention":1,"Day_030_Peptone":1}
+
+last_clean
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Within 24 h before sample collection":1}
+
+last_update
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"2022-06-01T20:02:41.000":6,"2022-04-03T20:47:10.000":2,"2024-01-10T00:40:12.000":2,"2022-03-21T20:24:26.000":2,"2020-07-18T05:44:03.279":1,"2024-02-06T22:19:41.000":1,"2020-04-08T00:50:23.257":1,"2023-07-10T10:53:05.571":1,"2024-05-30T00:50:14.983":1,"2022-08-18T18:03:23.587":1,"2023-11-24T12:43:23.190":1,"2022-09-27T12:03:25.447":1,"2024-02-06T14:33:16.000":1,"2020-02-28T10:01:39.263":1,"2022-04-14T00:49:27.290":1,"2023-07-22T10:25:09.726":1,"2024-02-06T15:25:12.000":1,"2017-11-29T19:07:20.230":1,"2024-06-02T08:14:37.140":1,"2022-07-31T00:52:21.830":1}
+
+lat_lon
+  Coverage: 81.2% (812/1000)
+  Types: {"string":812}
+  Top 20 values: {"missing":108,"not applicable":79,"not collected":66,"N/A":17,"NA":17,"Not applicable":12,"53.020265 N 18.567283 E":6,"37.7631 N 122.4575 W":6,"38.96 N 75.67 W":5,"43.860494 N 69.578706 W":4,"Missing":4,"47.6062 N 122.3321 W":3,"53.50 N 10.42 E":3,"35.8400 N 50.9391 E":3,"40.7641 N 73.9568 W":3,"40.85 N 96.61 W":3,"50.17 N 107.41 W":3,"Not collected":3,"3.9956 N 101.3933 E":2,"42.2820973 N 83.7338904 W":2}
+
+life_stage
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"adult":1}
+
+light_intensity
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"not collected":1}
+
+light_type
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not collected":1,"Not applicable":1}
+
+link_addit_analys
+  Coverage: 0.8% (8/1000)
+  Types: {"string":8}
+  Common values: {"not applicable":1,"missing":6,"Guava 1":1}
+
+link_class_info
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"not applicable":1,"missing":6}
+
+link_climate_info
+  Coverage: 0.9% (9/1000)
+  Types: {"string":9}
+  Common values: {"not applicable":1,"autumn":1,"missing":6}
+
+liver_disord
+  Coverage: 0.5% (5/1000)
+  Types: {"string":5}
+  Common values: {"NA":3,"not applicable":1,"missing":1}
+
+local_class
+  Coverage: 0.8% (8/1000)
+  Types: {"string":8}
+  Common values: {"not applicable":1,"missing":6,"Virgil silt loam":1}
+
+local_class_meth
+  Coverage: 0.8% (8/1000)
+  Types: {"string":8}
+  Common values: {"not applicable":1,"missing":6,"USDA soil classification":1}
+
+magnesium
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"110":1,"not collected":1,"not applicable":2}
+
+mean_frict_vel
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"not applicable":2}
+
+mean_peak_frict_vel
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"not applicable":2}
+
+mechanical_damage
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Healthy":1}
+
+medic_hist_perform
+  Coverage: 0.5% (5/1000)
+  Types: {"string":5}
+  Common values: {"NA":3,"not applicable":1,"missing":1}
+
+metagenome_source
+  Coverage: 9.3% (93/1000)
+  Types: {"string":93}
+  Top 20 values: {"human gut metagenome":13,"gut metagenome":11,"soil metagenome":8,"groundwater metagenome":6,"human oral metagenome":6,"landfill metagenome":5,"freshwater sediment metagenome":4,"wastewater metagenome":3,"bioreactor sludge metagenome":3,"mine drainage metagenome":3,"cold seep metagenome":3,"hot springs metagenome":2,"peat metagenome":2,"pig gut metagenome":2,"activated sludge metagenome":2,"marine sediment metagenome":2,"seawater metagenome":2,"wetland metagenome":1,"marine metagenome":1,"human bile metagenome":1}
+
+methane
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"2.40148932":1,"1.440347065":1,"not applicable":2}
+
+microb_cult_med
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"UVM broth":1}
+
+microbial_biomass
+  Coverage: 0.9% (9/1000)
+  Types: {"string":9}
+  Common values: {"not applicable":1,"missing":6,"NA":2}
+
+microbial_biomass_meth
+  Coverage: 0.9% (9/1000)
+  Types: {"string":9}
+  Common values: {"not applicable":1,"missing":6,"NA":2}
+
+misc_param
+  Coverage: 3.5% (35/1000)
+  Types: {"string":35}
+  Top 20 values: {"missing":7,"NA":6,"not applicable":4,"GPS coordinates are exact.":1,"shark_buccal_17":1,"B02":1,"FirmBB_S17":1,"B01":1,"F06":1,"A05":1,"not collected":1,"A10":1,"13.5":1,"Baseline":1,"Sigmoid":1,"Rep_1_R2":1,"Individual 330":1,"Individual 407":1,"run1":1,"446.8888889 Fe ppm in pellet":1}
+
+n_alkanes
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"not applicable":2}
+
+neg_cont_type
+  Coverage: 1.3% (13/1000)
+  Types: {"string":13}
+  Common values: {"not applicable":8,"Sterile sponge":1,"lysis buffer":1,"NA":3}
+
+nitrate
+  Coverage: 1.1% (11/1000)
+  Types: {"string":11}
+  Common values: {"NA":1,"1.12249193208924":1,"0.02":1,"1.2973750000000002":1,"1.14507079279218":1,"0.476":1,"0.22":1,"0.000290299637609":1,"0.17748 µmol/kg":1,"not applicable":2}
+
+nitrite
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"NA":1,"17.23936":1,"not collected":1,"0.03":1,"0.30425 µmol/kg":1,"not applicable":2}
+
+nitro
+  Coverage: 0.6% (6/1000)
+  Types: {"string":6}
+  Common values: {"NA":1,"21.9894764648347":1,"22.3464484853677":1,"not collected":1,"not applicable":2}
+
+num_replicons
+  Coverage: 9.1% (91/1000)
+  Types: {"string":91}
+  Common values: {"1":6,"4":1,"48":1,"90":1,"147":1,"missing":62,"NA":2,"not applicable":9,"not collected":2,"Three":1,"Missing":1,"not determined":1,"Not collected":1,"z":1,"scsio 64092":1}
+
+occup_samp
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not collected":1,"Not applicable":1}
+
+occupant_dens_samp
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not collected":1,"Not applicable":1}
+
+omics_observ_id
+  Coverage: 1.3% (13/1000)
+  Types: {"string":13}
+  Common values: {"12":1,"not applicable":4,"4d3c8b28539ebcae883142f066edbc93":1,"NA":4,"not collected":2,"missing":1}
+
+org_carb
+  Coverage: 0.6% (6/1000)
+  Types: {"string":6}
+  Common values: {"NA":1,"957.479580707203":1,"882.546396130117":1,"1.766":1,"not applicable":2}
+
+org_matter
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"NA":1,"not collected":1,"not applicable":2}
+
+org_nitro
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"NA":1,"not collected":1,"not applicable":2}
+
+organism_count
+  Coverage: 1.5% (15/1000)
+  Types: {"string":15}
+  Common values: {"11":1,"APC log10 3.57 per sample":1,"24.15384615":1,"NA":5,"not collected":2,"not applicable":3,"missing":1,"Not applicable":1}
+
+organism_name
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":997,"null":3}
+  Nulls: 3
+  Top 20 values: {"soil metagenome":91,"human gut metagenome":73,"metagenome":64,"gut metagenome":31,"mouse gut metagenome":25,"human metagenome":25,"human oral metagenome":24,"plant metagenome":22,"Homo sapiens":15,"freshwater metagenome":14,"root metagenome":12,"seawater metagenome":12,"uncultured Eubacteriales bacterium":12,"human lung metagenome":12,"rhizosphere metagenome":11,"human skin metagenome":10,"bacterium":10,"bovine metagenome":9,"mouse metagenome":8,"pig gut metagenome":8}
+
+orgmod_note
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"Montesol18_Bp1_coassembly_Omnitrophica_64_16":1,"strain coidentity: A033":1,"SR2-18-Sp2_coassembly_Kerfeldbacteria_48_12":1}
+
+owner_abbreviation
+  Coverage: 100.0% (1000/1000)
+  Types: {"null":917,"string":83}
+  Nulls: 917
+  Common values: {"NIAID-BCBB":1,"ClinVar-Cancer Diagnostics Division":1,"mothur":11,"BanfieldLab":4,"JGI":43,"JMF":6,"jgeorge@som.umaryland.edu's shared submissions":6,"Pitt-Microbiome-ALI":1,"Castro Lab":1,"bigcas-kl":7,"BCM":1,"Galapagos":1}
+
+owner_name
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"EBI":188,"DOE Joint Genome Institute":44,"University of Minnesota":12,"Waseda University":12,"mothur":11,"University of Michigan":10,"University of Nebraska-Lincoln":8,"Stanford University":8,"Sun Yat-sen University":7,"University of Copenhagen":7,"Oregon State University":7,"Beijing Institute of Genomics Chinese Acad of Sci - Key Lab":7,"Joint Microbiome Facility":6,"Nicolaus Copernicus University":6,"University of Florida":6,"EPFL":6,"Jain Aluvathingal's shared submissions":6,"Department of Statistical Genetics, Osaka University Graduate School of Medicine":6,"Zhejiang University":5,"Toju Laboratory, Center for Ecological Research, Kyoto University":5}
+
+owner_url
+  Coverage: 100.0% (1000/1000)
+  Types: {"null":797,"string":203}
+  Nulls: 797
+  Top 20 values: {"http://jgi.doe.gov/":43,"https://jmf.univie.ac.at/":6,"http://www.umk.pl/":6,"https://uwaterloo.ca/hug-research-group/":5,"http://ggkbase.berkeley.edu/":4,"http://www.kazusa.or.jp/":4,"https://thewalklab.com":4,"https://isbscience.org":3,"https://rrc.uic.edu/cores/genome-research/genome-research-core/":3,"http://microcell.ufl.edu/":3,"http://nrifs.fra.affrc.go.jp":3,"https://www.ecomicro.it/it/":2,"http://jax.org/":2,"https://research.fhcrc.org/fredricks/en.html":2,"http://www.broadinstitute.org/":2,"http://www.biken.osaka-u.ac.jp/lab/molmicro/":2,"http://www.genetics.ac.cn":2,"https://www.purinamills.com":2,"https://microbiology-science-oregonstate-edu.ezproxy.proxy.library.oregonstate.edu/":2,"https://www.unl.edu":2}
+
+oxy_stat_samp
+  Coverage: 1.3% (13/1000)
+  Types: {"string":13}
+  Common values: {"NA":5,"not collected":2,"anaerobic":3,"not applicable":3}
+
+oxygen
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"0.6":1,"7.37":1,"0.06":1}
+
+package_content
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"Generic.1.0":189,"MIMARKS.survey.host-associated.6.0":68,"MIGS.eu.6.0":67,"MIMARKS.survey.human-gut.6.0":51,"MIMS.me.soil.6.0":46,"MIMARKS.survey.plant-associated.6.0":45,"MIMS.me.human-gut.6.0":34,"MIMARKS.survey.water.6.0":32,"MIMS.me.host-associated.6.0":31,"MIMARKS.survey.human-associated.6.0":31,"MIMS.me.water.6.0":25,"Metagenome.environmental.1.0":24,"MIMARKS.survey.soil.6.0":22,"MIGS.ba.6.0":19,"MIMS.me.plant-associated.6.0":17,"MIMAG.6.0":16,"MIMARKS.specimen.host-associated.6.0":15,"MIMAG.host-associated.6.0":13,"MIMAG.sediment.6.0":13,"MIMAG.human-gut.6.0":13}
+
+part_org_carb
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"22":1,"not collected":1,"not applicable":2}
+
+part_org_nitro
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"not collected":1}
+
+particle_class
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not applicable":2}
+
+pathogenicity
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"NA":2}
+
+perturbation
+  Coverage: 1.5% (15/1000)
+  Types: {"string":15}
+  Common values: {"NA":5,"before_wash":1,"not collected":2,"mice were treated with sterilized water for 14 days":1,"None":1,"not applicable":3,"normal wastewater treatment plant operation":1,"missing":1}
+
+pet_farm_animal
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Yes":1}
+
+petroleum_hydrocarb
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"not applicable":2}
+
+ph
+  Coverage: 2.9% (29/1000)
+  Types: {"string":29}
+  Top 20 values: {"0":1,"5":1,"7":1,"missing":6,"not applicable":3,"NA":1,"5.5":1,"5.04":1,"5.45":1,"6.7":1,"8.04":1,"6.15":1,"7.3":1,"6.43":1,"5.87":1,"6.6±0.1":1,"7.93":1,"5.4":1,"7.42":1,"8.5":1}
+
+ph_meth
+  Coverage: 1.1% (11/1000)
+  Types: {"string":11}
+  Common values: {"not applicable":1,"missing":6,"H2O":1,"in 0.01 M CaCl2":1,"PMID29747376":1,"1:1 CaCl2":1}
+
+phaeopigments
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"not applicable":2}
+
+phosphate
+  Coverage: 1.0% (10/1000)
+  Types: {"string":10}
+  Common values: {"NA":1,"0.018742484579568":1,"missing":1,"14.0":1,"0.024323112010563":1,"not collected":1,"0.03":1,"0.05461 µmol/kg":1,"not applicable":2}
+
+phosplipid_fatt_acid
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"NA":1,"not collected":1,"not applicable":2}
+
+photon_flux
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"not collected":1}
+
+plant_body_site
+  Coverage: 0.5% (5/1000)
+  Types: {"string":5}
+  Common values: {"root-ball soil":1,"PO:0009025":1,"spike":1,"rhizosphere":1,"Flag leaf":1}
+
+plant_product
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"root":1,"rhizosphere":1}
+
+plant_struc
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"tertiary lateral root":1}
+
+ploidy
+  Coverage: 5.5% (55/1000)
+  Types: {"string":55}
+  Common values: {"2":1,"4":1,"diploid":9,"missing":38,"Diploid":2,"tetraploid":1,"autohexaploid":1,"allotetroploid":1,"haploid":1}
+
+pool_dna_extracts
+  Coverage: 1.0% (10/1000)
+  Types: {"string":10}
+  Common values: {"2":1,"not applicable":1,"missing":6,"no":1,"not pooled":1}
+
+porosity
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not applicable":2}
+
+pos_cont_type
+  Coverage: 1.1% (11/1000)
+  Types: {"string":11}
+  Common values: {"not applicable":7,"ZymoBIOMICS Microbial Community Standard":1,"NA":3}
+
+potassium
+  Coverage: 0.5% (5/1000)
+  Types: {"string":5}
+  Common values: {"129":1,"NA":1,"not collected":1,"not applicable":2}
+
+pressure
+  Coverage: 0.5% (5/1000)
+  Types: {"string":5}
+  Common values: {"NA":1,"not collected":1,"74 dbar":1,"not applicable":2}
+
+previous_land_use
+  Coverage: 1.0% (10/1000)
+  Types: {"string":10}
+  Common values: {"not applicable":1,"missing":6,"paddy rice field":1,"Permanent before 1974":1,"partially cleared but never plowed":1}
+
+previous_land_use_meth
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"not applicable":1,"missing":6}
+
+primary_prod
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"not collected":1}
+
+profile_position
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"not applicable":1,"missing":6}
+
+project_name
+  Coverage: 22.3% (223/1000)
+  Types: {"string":223}
+  Top 20 values: {"Human gut MAGs":78,"PRJEB40730":10,"Metagenomic sequencing of the rumen of 240 cattle from Scotland":5,"Amplicon metagenomics":4,"microbes in stratified freshwaters":3,"Amplicon sequence of fish mitochondrial 12S rRNA":3,"NGB":2,"The bacterial biome of ticks and their wildlife hosts at the urban-wildland interface.":2,"Actrade":2,"Daily sampling reveals personalized diet-microbiome associations":2,"Shared features between the Chlamydomonas and Arabidopsis microbiota":2,"PRJEB34458":2,"PRJEB51054":2,"Environmental DNA monitoring of biodiversity hot-spots in Danish marine waters":2,"missing":2,"Amplicom seaquence of Japanese oral microbiome":2,"Detection of ecological communities in rice paddy fields":2,"POP":1,"Global biogeography and evolution of the invasive honey bee Varroa mites":1,"Commensal helminth alters host immune system and the gut microbiota in a rat model system":1}
+
+propagation
+  Coverage: 5.3% (53/1000)
+  Types: {"string":53}
+  Common values: {"Sexual reproduction and arrhenotokous parthenogenesis":1,"missing":44,"sexual":8}
+
+publication_date
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"2021-01-18T00:00:00.000":35,"2021-01-30T00:00:00.000":10,"2023-11-24T00:00:00.000":6,"2019-05-21T00:00:00.000":6,"2018-02-08T00:00:00.000":6,"2022-05-07T00:00:00.000":6,"2023-12-21T00:00:00.000":5,"2022-01-19T00:00:00.000":5,"2023-07-22T00:00:00.000":4,"2023-01-11T00:00:00.000":4,"2022-02-21T00:00:00.000":4,"2021-12-09T00:00:00.000":4,"2019-04-16T00:00:00.000":4,"2020-08-30T00:00:00.000":4,"2019-06-05T00:00:00.000":4,"2023-01-13T00:00:00.000":4,"2019-04-23T00:00:00.000":4,"2023-10-25T00:00:00.000":4,"2020-06-15T00:00:00.000":4,"2023-12-26T00:00:00.000":4}
+
+pulmonary_disord
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"Tuberculosis":1,"bronchiectasis":1,"HIV-associated chronic lung disease":1}
+
+purpose_of_sampling
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Research":1}
+
+race
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"Hispanic or Latino":1,"Decline":1,"Caucasian":3,"Other":1,"Indian":1}
+
+reactor_type
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"batch, multistage":1,"Mesophilic":1,"EGSB":1}
+
+redox_potential
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"not applicable":2}
+
+ref_biomaterial
+  Coverage: 9.8% (98/1000)
+  Types: {"string":98}
+  Common values: {"NA":3,"missing":67,"Fecal":1,"Decoupling of respiration rates and abundance in marine prokaryoplankton":4,"Urban_Rodent_gut_microbiome":1,"not applicable":8,"not collected":3,"Not applicable":1,"3300045595_1":1,"DSM 13557":1,"not determined":1,"not yet published":1,"q":1,"Muricauda lutaonensis":1,"https://www.pnas.org/content/113/24/E3431.long#sec-1":1}
+
+rel_air_humidity
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not collected":1,"Not applicable":1}
+
+rel_to_oxygen
+  Coverage: 3.1% (31/1000)
+  Types: {"string":31}
+  Common values: {"not applicable":4,"NA":5,"anaerobe":13,"not collected":2,"missing":1,"aerobe":5,"facultative":1}
+
+salinity
+  Coverage: 1.0% (10/1000)
+  Types: {"string":10}
+  Common values: {"39":1,"16.6":1,"NA":1,"not collected":1,"31.375459999999997":1,"36.284 psu":1,"not applicable":2,"missing":1,"0.27":1}
+
+salinity_meth
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"not applicable":1,"missing":6}
+
+samp_collect_device
+  Coverage: 7.1% (71/1000)
+  Types: {"string":71}
+  Top 20 values: {"missing":8,"not applicable":6,"Foam swab":6,"0.22 micron sterivex filter":5,"Sterile gauze square":4,"NA":4,"Fresh fecal":4,"swab":4,"Ruttner water sampler":2,"Eppendorf tube, liquid nitrogen frosting":1,"Niskin caroussel":1,"76x20 mm faeces tube (Sarstedt, Germany)":1,"baermann":1,"Coughing":1,"pre-moistened swab stick [OBI:0002823]":1,"Burkard 7-day volumetric spore trap":1,"Fresh feces in collection tube, followed by freezing":1,"collection of the M_chips with chip":1,"not collected":1,"9 cm ice corer":1}
+
+samp_mat_process
+  Coverage: 6.0% (60/1000)
+  Types: {"string":60}
+  Top 20 values: {"missing":8,"not applicable":6,"NA":5,"DNA extraction with Qiagen Powersoil kit, Illumina HiSeq sequencing PE 150 bp":5,"freeze":4,"Sterile gauze square premoistened with 10X phosphate buffer saline":3,"Water filtered on membrane filters (0.2µm pore size, 47mm ?) and freezing at -80C":2,"Zymo Research ZD6010 kit":1,"whole body":1,"MICOIintF-tag|jgHCO2198-tag":1,"DNA extraction":1,"ZymoBIOMICS DNA Mini kit (ZymoResearch)":1,"Thawing, homogeneization, centrifugation and DNA extraction from fecal pellets using Protocol Q":1,"stored in the freezer":1,"not collected":1,"Ultrasonicated":1,"Sterile gauze square premoistened with 1X phosphate buffer saline":1,"direct melt of ice in air-tight bag":1,"Biomass centrifuged 10 min 10,000xg, aliquot frozen for DNA extraction":1,"Modified PowerWater extraction":1}
+
+samp_mat_type
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"built environment specimen [GENEPIO:0001248]":1,"raw beef":1}
+
+samp_rep_biol
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"1":1}
+
+samp_salinity
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"NA":4,"10 PSU":1,"not collected":1,"not applicable":1}
+
+samp_size
+  Coverage: 4.8% (48/1000)
+  Types: {"string":48}
+  Top 20 values: {"2":2,"258":1,"2000":1,"missing":8,"not applicable":5,"NA":5,"5ml":4,"250-500 mL":2,"1.5 L":1,"3L":1,"less than 5g":1,"250 mg":1,"not collected":1,"1L":1,"2 milliliter":1,"2 mL":1,"1 L":1,"40 particles":1,"Single cell":1,"ca. 15 g":1}
+
+samp_source_mat_cat
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"environmental swab specimen [OBI:0002613]":1,"NA":1}
+
+samp_stor_device
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"Whirlpak sampling bag [GENEPIO:0002122]":1,"NA":1}
+
+samp_stor_media
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"Dey-Engley neutralizing broth":1,"NA":1}
+
+samp_store_dur
+  Coverage: 1.5% (15/1000)
+  Types: {"string":15}
+  Common values: {"NA":7,"not collected":1,"not applicable":3,"2-3 month":1,"1 year":1,"missing":1,"3 Months":1}
+
+samp_store_loc
+  Coverage: 2.0% (20/1000)
+  Types: {"string":20}
+  Common values: {"UH / BI / JERNVALL":1,"NA":7,"not collected":1,"BIOS":1,"Freezer":1,"not applicable":3,"Singapore Centre for Environmental Life Sciences Engineering":1,"laboratory":1,"NOAA/AOML Room 248":1,"missing":1,"CALeDNA collection":1,"South Dakota State University":1}
+
+samp_store_temp
+  Coverage: 3.7% (37/1000)
+  Types: {"string":37}
+  Common values: {"-20°C":1,"-80C":9,"not applicable":5,"NA":5,"-80":4,"-20 C":1,"not collected":1,"-80 degree Celcius":1,"-82":1,"-80 °C":2,"-80℃":1,"-80°C":2,"-20 °C":1,"missing":1,"-20 Celsius":1,"-80 degrees":1}
+
+samp_vol_we_dna_ext
+  Coverage: 1.9% (19/1000)
+  Types: {"string":19}
+  Common values: {"980":1,"2 milliliter":1,"NA":3,"0.25g":2,"not applicable":3,"missing":6,"1980 ml":1,"250 mg":1,"500 mL":1}
+
+sample_name
+  Coverage: 25.6% (256/1000)
+  Types: {"string":256}
+  Top 20 values: {"14":1,"308":1,"712":1,"830":1,"2685":1,"P2-P12_S232_L001_R1_001":1,"MAG-GUT21054":1,"MAG-GUT87313":1,"US161_1_VdAm":1,"MAG-GUT55941":1,"SRR413587_bin.2":1,"qiita_sid_10333:10333.Che.248.huma":1,"E4_day11_mar17":1,"PRO057B":1,"TEDDY_OU_SUBJ1828768537_MAG36":1,"CoV-sap-015 critical":1,"Chicken_7_mag_102":1,"ERR2824912_bin.6":1,"Water64-3":1,"miGLY":1}
+
+sample_type
+  Coverage: 11.7% (117/1000)
+  Types: {"string":117}
+  Top 20 values: {"metagenomic assembly":82,"Sample":4,"soil":3,"Fecal":2,"pure culture":2,"Stool":2,"skin":1,"Synthetic standard":1,"human cystic fibrosis sputum":1,"Green tea":1,"metagenome assembly":1,"ETA":1,"FACS":1,"sample":1,"AD_135_C1 Saliva":1,"single cell":1,"colon content":1,"seagrass roots":1,"seawater":1,"missing":1}
+
+season
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"Fall":1,"Late spring":1,"Spring":1,"Autumn_2021":1}
+
+season_environment
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"summer":1}
+
+sediment_type
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not applicable":2}
+
+sequenced_by
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"National Centre for Biological Sciences, Bangalore":1}
+
+serovar
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Weltevreden":1}
+
+sewage_type
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"municipal wastewater treatment plant":1,"industrial":1,"municipal":1}
+
+sex
+  Coverage: 2.2% (22/1000)
+  Types: {"string":22}
+  Common values: {"female":11,"male":11}
+
+sieving
+  Coverage: 1.4% (14/1000)
+  Types: {"string":14}
+  Common values: {"not applicable":1,"2mm":2,"missing":6,"NA":2,"2 mm, entire sample was sieved":1,"Composite sample of six independent samples and sieving at 4mm":1,"2 mm":1}
+
+silicate
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"NA":1,"not collected":1,"6.4":1,"0.158":1,"1.85669 µmol/kg":1,"not applicable":2}
+
+size_frac
+  Coverage: 2.4% (24/1000)
+  Types: {"string":24}
+  Common values: {"K3T3":1,"not applicable":4,"0.45":1,"NA":4,"0.22 micron":5,"not collected":2,"missing":1,">0.2 um":1,"Not applicable":1,"0.22 µm":1,"according to Quiagen DNeasy® PowerSoil® Pro Kit":1,"0-2 mm":1,"250 miligram":1}
+
+size_frac_low
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"no pre-filter":1}
+
+size_frac_up
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"0.22 µm":1}
+
+slope_aspect
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"not applicable":1,"missing":6}
+
+slope_gradient
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"not applicable":1,"missing":6}
+
+sludge_retent_time
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"5":1}
+
+smoker
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"no":2}
+
+sodium
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"NA":1,"not collected":1,"not applicable":2}
+
+soil_horizon
+  Coverage: 1.1% (11/1000)
+  Types: {"string":11}
+  Common values: {"not applicable":1,"missing":6,"C horizon":1,"O horizon":1,"A horizon":2}
+
+soil_temp
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"isohyperthermic":1,"NA":1}
+
+soil_text_measure
+  Coverage: 0.8% (8/1000)
+  Types: {"string":8}
+  Common values: {"not applicable":1,"missing":6,"silt loam":1}
+
+soil_texture_class
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Silt loam":1}
+
+soil_texture_meth
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"not applicable":1,"missing":6}
+
+soil_type
+  Coverage: 1.5% (15/1000)
+  Types: {"string":15}
+  Common values: {"not applicable":1,"Agricultural Mollisol from a Fallow Casssava Field":2,"missing":6,"rhizosphere":1,"NA":2,"nitisol":1,"Virgil silt loam":1,"loam":1}
+
+soil_type_meth
+  Coverage: 1.1% (11/1000)
+  Types: {"string":11}
+  Common values: {"not applicable":1,"missing":6,"NA":2,"WRB":1,"USDA soil classification":1}
+
+soluble_inorg_mat
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"3.40 (ammonia)":1}
+
+soluble_react_phosp
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"not collected":1}
+
+source_material_id
+  Coverage: 6.3% (63/1000)
+  Types: {"string":63}
+  Top 20 values: {"8":1,"12":1,"123":1,"246":1,"171475":1,"missing":8,"NA":4,"not applicable":3,"not collected":2,"extraction kit 3":1,"22001612561722|GFM-1079-007":1,"Kge cow field":1,"R:pot116_4-S2.C.I .C":1,"NBRC 103173":1,"patient 59":1,"Miseq":1,"K:S1.B.T1.I-D3.R4":1,"Metagenome assembled genome from Japanese gut-JMAG_GENOME_14688":1,"USB_063":1,"fecal":1}
+
+source_uvig
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"viral single amplified genome (vSAG)":2,"metagenome (not viral targeted)":1}
+
+space_typ_state
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"restricted access":1,"Not applicable":1}
+
+special_diet
+  Coverage: 0.5% (5/1000)
+  Types: {"string":5}
+  Common values: {"NA":3,"not applicable":1,"missing":1}
+
+status_status
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Common values: {"live":998,"suppressed":2}
+
+status_when
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"2022-03-23T16:06:11":2,"2020-07-18T05:44:03.279":1,"2020-05-13T14:09:52.563":1,"2020-04-08T00:50:23.257":1,"2023-05-30T16:40:45.901":1,"2024-05-30T00:50:14.983":1,"2022-08-18T15:22:15.205":1,"2023-11-24T12:18:29.401":1,"2022-09-27T11:51:04.225":1,"2019-04-18T10:35:58.700":1,"2020-02-28T09:49:08.670":1,"2022-04-13T23:57:10.280":1,"2023-07-22T10:25:09.726":1,"2019-06-12T10:15:25.710":1,"2017-11-29T12:04:07.920":1,"2023-01-17T01:01:42.079":1,"2022-07-31T00:52:21.830":1,"2020-09-01T00:51:57.230":1,"2018-10-24T16:36:20.753":1,"2022-11-08T08:45:02.269":1}
+
+store_cond
+  Coverage: 1.2% (12/1000)
+  Types: {"string":12}
+  Common values: {"not applicable":1,"missing":6,"NA":1,"<12h, in fridge at 4 deg, in ziploc bags":1,"After three day, freezing at -20°C before the DNA extraction for one year":1,"-20C":1}
+
+strain
+  Coverage: 13.7% (137/1000)
+  Types: {"string":137}
+  Top 20 values: {"40":1,"8020":1,"not applicable":43,"missing":15,"Not applicable":5,"not collected":4,"NSG":2,"C57Bl6/N":1,"NBC_00828":1,"LAM2020":1,"ND01":1,"SPARC3":1,"13P849(54)":1,"N/A":1,"K-12":1,"CBS 49790":1,"NA":1,"DSM 6637":1,"KHSU-134326-099":1,"FGSC 2489":1}
+
+study_complt_stat
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"completed 18 months":1}
+
+sub_species
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"enterica":1}
+
+submission_date
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"2020-02-07T01:27:05.280":1,"2020-05-12T14:09:08.146":1,"2019-04-03T22:21:14.550":1,"2023-05-27T10:26:06.216":1,"2023-04-23T10:48:03.683":1,"2022-08-17T06:40:05.423":1,"2023-11-22T12:31:04.410":1,"2022-09-27T11:51:04.227":1,"2019-04-16T11:08:10.220":1,"2020-02-28T09:49:08.670":1,"2022-04-13T23:57:10.280":1,"2023-06-19T04:35:15.113":1,"2019-06-12T08:21:44.306":1,"2017-11-29T10:38:09.367":1,"2023-01-16T08:16:38.760":1,"2021-06-17T20:48:13.293":1,"2020-06-09T16:54:10.317":1,"2018-10-24T16:36:20.750":1,"2022-10-26T13:58:08.683":1,"2023-02-01T02:11:07.263":1}
+
+subspecf_gen_lin
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Landrace x Large White":1}
+
+substrain
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"MDS42":1}
+
+sulfate
+  Coverage: 0.6% (6/1000)
+  Types: {"string":6}
+  Common values: {"NA":1,"0.606":1,"0.658":1,"not collected":1,"not applicable":2}
+
+sulfide
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"NA":1,"not collected":1,"not applicable":2}
+
+suspend_part_matter
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"not collected":1}
+
+suspend_solids
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"160":1,"0.0924":1}
+
+taxonomy_id
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"9606":15,"172733":12,"256318":64,"408170":73,"408172":8,"410658":91,"410661":25,"433733":12,"447426":24,"449393":14,"539655":10,"646099":25,"749906":31,"939928":11,"1118232":12,"1218275":9,"1297885":22,"1441287":8,"1561972":12,"1869227":10}
+
+taxonomy_name
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"soil metagenome":91,"human gut metagenome":73,"metagenome":64,"gut metagenome":31,"mouse gut metagenome":25,"human metagenome":25,"human oral metagenome":24,"plant metagenome":22,"Homo sapiens":15,"freshwater metagenome":14,"root metagenome":12,"seawater metagenome":12,"uncultured Eubacteriales bacterium":12,"human lung metagenome":12,"rhizosphere metagenome":11,"human skin metagenome":10,"bacterium":10,"bovine metagenome":9,"mouse metagenome":8,"pig gut metagenome":8}
+
+teleomorph
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Mycosphaerella graminicola":1}
+
+temp
+  Coverage: 3.0% (30/1000)
+  Types: {"string":30}
+  Top 20 values: {"16":1,"19":1,"20":1,"25":1,"90":1,"NA":6,"not applicable":3,"28C day, 22C night":2,"20.82":1,"15.6":1,"not collected":1,"21 degree Celcius":1,"30 °C":1,"16.5":1,"18 C":1,"12.43":1,"20C":1,"-1.41736":1,"22.945 °C":1,"20°C":1}
+
+tidal_stage
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"not collected":1,"not applicable":2}
+
+tillage
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"not applicable":1,"missing":6}
+
+timepoint
+  Coverage: 1.9% (19/1000)
+  Types: {"string":19}
+  Common values: {"0":1,"1":1,"16":1,"BL":1,"A":1,"P48H":1,"6 hours":1,"3m":1,"22D":1,"D":1,"T3":1,"15 MO":1,"T4":1,"T2":1,"0hr":1,"T0":1,"4wk Abx":1,"T1":1,"Crosssectional":1}
+
+tissue
+  Coverage: 0.5% (5/1000)
+  Types: {"string":5}
+  Common values: {"root":1,"UBERON:feces":2,"Back":1,"sputum":1}
+
+tot_carb
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not applicable":2}
+
+tot_depth_water_col
+  Coverage: 0.5% (5/1000)
+  Types: {"string":5}
+  Common values: {"4":1,"not collected":1,"880 m":1,"not applicable":2}
+
+tot_diss_nitro
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"not collected":1}
+
+tot_inorg_nitro
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"not collected":1}
+
+tot_mass
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"84":1,"188":1,"261":1}
+
+tot_n_meth
+  Coverage: 0.9% (9/1000)
+  Types: {"string":9}
+  Common values: {"not applicable":1,"missing":6,"CN elemental analyzer (combustion)":1,"flash combustion":1}
+
+tot_nitro
+  Coverage: 1.5% (15/1000)
+  Types: {"string":15}
+  Common values: {"not applicable":3,"34.15":1,"missing":6,"not collected":1,"0.0010733333333333333":1,"6.3":1,"0.00487009406":1,"0.171%":1}
+
+tot_nitro_cont_meth
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"flash combustion":1}
+
+tot_org_c_meth
+  Coverage: 0.9% (9/1000)
+  Types: {"string":9}
+  Common values: {"not applicable":1,"missing":6,"CN elemental analyzer (combustion)":1,"flash combustion":1}
+
+tot_org_carb
+  Coverage: 1.4% (14/1000)
+  Types: {"string":14}
+  Common values: {"not applicable":3,"missing":6,"15.1":1,"0.01422":1,"247.02":1,"0.06201564789":1,"1.68%":1}
+
+tot_part_carb
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"not collected":1}
+
+tot_phosp
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not collected":1,"0.003583678340397":1}
+
+tot_phosphate
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"20.5":1}
+
+treatment
+  Coverage: 3.7% (37/1000)
+  Types: {"string":37}
+  Top 20 values: {"2":1,"Control":2,"zeritol":2,"Roots in autoclaved sediment at end of experiment":1,"NA":1,"treatment: pre-KD FMT":1,"P_d0_d2_a":1,"CCHH":1,"Reduced Diversity":1,"T0_2.39_µg/L_R2_PMA.untreated":1,"Treatment":1,"no amendment":1,"DOM":1,"Neonatal":1,"Defoliation":1,"uncaged":1,"NVP1704":1,"Lugol":1,"Fish_Shading":1,"LF":1}
+
+trophic_level
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"Missing":1}
+
+turbidity
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not applicable":2}
+
+typ_occupant_dens
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not collected":1,"Not applicable":1}
+
+type_strain
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"No":1}
+
+variety
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"NA":1}
+
+ventilation_type
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not collected":1,"Not applicable":1}
+
+virus_enrich_appr
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"FeCl Precipitation":1,"ultracentrifugation":1,"not applicable":1}
+
+wastewater_type
+  Coverage: 0.4% (4/1000)
+  Types: {"string":4}
+  Common values: {"human waste":2,"total sample of food processing wastewater":1,"synthetic dairy":1}
+
+water_content
+  Coverage: 0.2% (2/1000)
+  Types: {"string":2}
+  Common values: {"not applicable":2}
+
+water_content_soil
+  Coverage: 0.9% (9/1000)
+  Types: {"string":9}
+  Common values: {"not applicable":1,"0.7":1,"missing":6,"0.02":1}
+
+water_content_soil_meth
+  Coverage: 0.7% (7/1000)
+  Types: {"string":7}
+  Common values: {"not applicable":1,"missing":6}
+
+water_current
+  Coverage: 0.3% (3/1000)
+  Types: {"string":3}
+  Common values: {"STRONG":1,"NA":1,"not collected":1}
+
+water_temp_regm
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"20.82":1}
+
+watering_regm
+  Coverage: 0.8% (8/1000)
+  Types: {"string":8}
+  Common values: {"every other day 100 ml to pot tray and 200 ml to pot":4,"10 mL of sterile, distilled water":2,"watered with water volume depending on soil amount when water potential (pF) fell below 4.0":2}
+
+ww_population
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"400000":1}
+
+ww_sample_duration
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"168":1}
+
+ww_sample_matrix
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"missing":1}
+
+ww_sample_type
+  Coverage: 0.1% (1/1000)
+  Types: {"string":1}
+  Common values: {"missing":1}
+
+=== biosamples_links ===
+
+_id
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer.0
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"104":1000}
+
+_id.buffer.1
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"215":1000}
+
+_id.buffer.10
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"3":7,"7":7,"38":10,"43":7,"47":7,"48":8,"49":8,"59":7,"64":8,"66":7,"72":9,"84":7,"104":8,"118":8,"126":7,"127":7,"143":7,"190":9,"209":8,"242":8}
+
+_id.buffer.11
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"6":9,"24":7,"26":8,"47":9,"49":8,"55":8,"62":7,"69":7,"85":7,"117":8,"123":9,"136":8,"155":7,"163":7,"177":9,"209":7,"217":7,"221":9,"223":7,"250":9}
+
+_id.buffer.2
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"253":1000}
+
+_id.buffer.3
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"61":53,"63":35,"66":25,"67":34,"73":31,"75":30,"78":38,"80":38,"82":31,"84":30,"86":29,"89":40,"91":42,"93":29,"94":32,"96":47,"98":41,"100":36,"102":26,"105":66}
+
+_id.buffer.4
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"189":1000}
+
+_id.buffer.5
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"243":1000}
+
+_id.buffer.6
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"184":1000}
+
+_id.buffer.7
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"209":1000}
+
+_id.buffer.8
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"158":1000}
+
+_id.buffer.9
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"175":37,"176":31,"179":34,"180":29,"182":30,"183":30,"184":28,"185":27,"186":34,"189":29,"192":26,"197":31,"199":37,"200":27,"203":35,"204":31,"205":35,"207":28,"208":37,"209":48}
+
+accession
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"SAMN38661660":1,"SAMN42321159":1,"SAMN24518700":1,"SAMN51279476":1,"SAMN51253284":1,"SAMN06263458":1,"SAMN32733694":1,"SAMN30353406":1,"SAMN32168715":1,"SAMN43368624":1,"SAMN17673467":1,"SAMN13189970":1,"SAMN37995976":1,"SAMN37526024":1,"SAMN46795431":1,"SAMN24657637":1,"SAMD00482843":1,"SAMN14480446":1,"SAMN27163778":1,"SAMN50236149":1}
+
+content
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"326441":4,"576550":3,"682348":3,"771711":3,"781406":4,"792398":3,"804208":3,"844601":10,"863333":3,"923276":4,"975532":5,"983538":5,"992073":3,"1026956":4,"1030165":4,"1039175":9,"1071982":4,"1124946":4,"1128023":5,"1297772":5}
+
+label
+  Coverage: 99.9% (999/1000)
+  Types: {"string":999}
+  Top 20 values: {"PRJDB13556":10,"PRJDB17001":9,"PRJNA1297772":5,"PRJNA975532":5,"PRJNA983538":5,"PRJNA1128023":5,"PRJNA1124946":4,"PRJNA1030165":4,"PRJNA781406":4,"PRJNA1071982":4,"PRJNA923276":4,"PRJNA1026956":4,"PRJNA326441":4,"GOLD Project":3,"PRJNA1291454":3,"PRJNA682348":3,"PRJNA576550":3,"PRJNA992073":3,"PRJNA1297890":3,"PRJNA1242586":3}
+
+target
+  Coverage: 96.7% (967/1000)
+  Types: {"string":967}
+  Common values: {"bioproject":967}
+
+type
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Common values: {"entrez":967,"url":33}
+
+=== content_pairs_aggregated ===
+
+_id
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer.0
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"104":1000}
+
+_id.buffer.1
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"218":1000}
+
+_id.buffer.10
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"4":7,"8":8,"9":7,"11":9,"19":7,"23":8,"24":9,"27":7,"38":7,"42":8,"60":8,"77":9,"82":9,"116":8,"138":8,"148":10,"156":9,"166":9,"188":8,"203":11}
+
+_id.buffer.11
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"5":7,"9":7,"29":8,"35":9,"53":7,"73":8,"92":7,"93":7,"125":7,"136":7,"146":8,"158":9,"163":8,"166":8,"180":8,"198":10,"212":9,"217":8,"224":11,"225":12}
+
+_id.buffer.2
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"142":1000}
+
+_id.buffer.3
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"135":41,"136":34,"137":61,"138":52,"139":43,"140":71,"141":72,"142":65,"143":35,"144":106,"145":22,"146":123,"147":16,"148":106,"149":84,"150":12,"151":57}
+
+_id.buffer.4
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"227":1000}
+
+_id.buffer.5
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"80":1000}
+
+_id.buffer.6
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"70":1000}
+
+_id.buffer.7
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"212":1000}
+
+_id.buffer.8
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"140":1000}
+
+_id.buffer.9
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"38":28,"41":33,"42":32,"43":37,"46":31,"47":32,"48":29,"49":27,"52":40,"55":28,"59":29,"60":31,"61":33,"62":31,"63":27,"64":29,"66":30,"67":31,"69":32,"72":31}
+
+aggregated_at
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"1759153798.357814":2,"1759153798.6131358":2,"1759153798.273082":2,"1759153798.294883":1,"1759153798.362529":1,"1759153798.605568":1,"1759153798.2868009":1,"1759153798.286738":1,"1759153798.300032":1,"1759153798.663095":1,"1759153798.5930219":1,"1759153798.5290399":1,"1759153798.4479392":1,"1759153798.255289":1,"1759153798.3532622":1,"1759153798.214102":1,"1759153798.6581042":1,"1759153798.674578":1,"1759153798.633028":1,"1759153798.3034198":1}
+
+biosample_count
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"1":805,"2":67,"3":25,"4":16,"5":4,"6":6,"8":5,"9":3,"10":5,"11":4,"12":2,"13":2,"14":2,"16":2,"18":2,"20":2,"23":2,"24":2,"26":2,"27":3}
+
+content
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"19":1,"51":1,"104":1,"123":1,"309":1,"774":1,"973":1,"1090":1,"1390":1,"2040":1,"2398":1,"2706":1,"3057":1,"3210":1,"3421":1,"3453":1,"3490":1,"4038":1,"5598":1,"16297":1}
+
+harmonized_name
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"sample_name":301,"isolate":177,"host_subject_id":53,"lat_lon":53,"strain":49,"source_material_id":49,"env_medium":33,"env_local_scale":28,"geo_loc_name":21,"env_broad_scale":20,"isolation_source":11,"collection_date":10,"isol_growth_condt":10,"description":10,"derived_from":9,"temp":9,"cultivar":9,"misc_param":9,"host_age":7,"label":6}
+
+=== measurement_results_skip_filtered ===
+
+_id
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer.0
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"104":1000}
+
+_id.buffer.1
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"218":1000}
+
+_id.buffer.10
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"10":7,"38":7,"47":8,"58":8,"73":7,"75":7,"79":7,"82":8,"86":10,"89":11,"113":9,"114":8,"127":10,"128":8,"129":8,"137":10,"151":11,"158":8,"160":16,"230":8}
+
+_id.buffer.11
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"6":8,"20":7,"26":10,"29":9,"58":8,"70":7,"95":8,"97":7,"98":7,"101":7,"106":10,"108":8,"114":10,"146":7,"158":9,"195":7,"202":7,"232":9,"241":9,"245":8}
+
+_id.buffer.2
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"142":418,"143":582}
+
+_id.buffer.3
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"2":28,"4":25,"15":28,"23":16,"27":19,"42":37,"47":34,"52":20,"64":26,"76":19,"83":30,"99":33,"122":22,"172":19,"210":36,"222":33,"228":18,"234":34,"237":26,"241":24}
+
+_id.buffer.4
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"227":1000}
+
+_id.buffer.5
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"80":1000}
+
+_id.buffer.6
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"70":1000}
+
+_id.buffer.7
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"212":1000}
+
+_id.buffer.8
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"140":1000}
+
+_id.buffer.9
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"73":529,"74":471}
+
+biosample_count
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"1":665,"2":116,"3":61,"4":18,"5":11,"6":11,"7":2,"8":10,"9":5,"10":6,"11":3,"12":5,"13":3,"16":3,"18":3,"19":3,"21":3,"23":5,"34":3,"51":3}
+
+content_length
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"4":32,"5":46,"6":68,"7":64,"8":57,"9":65,"10":64,"11":60,"12":55,"13":23,"14":17,"15":37,"20":10,"21":18,"22":13,"26":10,"49":17,"144":18,"145":14,"146":12}
+
+coverage_pct
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"4":6,"25":8,"50":8,"100":549,"1.4":30,"0.7":25,"2.5":15,"6.1":13,"28.6":11,"4.2":8,"1.3":8,"1.9":8,"31.8":7,"4.5":7,"1.5":7,"12.5":7,"11.9":7,"33.3":6,"11.6":6,"12.4":6}
+
+entity
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Common values: {"dimensionless":357,"length":195,"unknown":181,"temperature":37,"mass":34,"volume":9,"time":79,"density":57,"pressure":4,"magnetic field":1,"currency":5,"electrical conductance":22,"speed":3,"data storage":7,"concentration":1,"angle":4,"dynamic viscosity":1,"force":1,"power":2}
+
+harmonized_name
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"description":203,"depth":95,"elev":77,"organism_count":63,"temp":51,"host_age":49,"ref_biomaterial":37,"salinity":29,"samp_size":22,"store_cond":21,"ammonium":19,"diss_oxygen":18,"estimated_size":16,"host_tot_mass":13,"turbidity":13,"density":12,"oxygen":12,"silicate":12,"part_org_carb":10,"phosphate":10}
+
+original_content
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"1.5 cm long; 4 replicates per tree; 6 trees total":2,"16S sample 235691020, extracted from human stool.":2,"4.1E-11":1,"20 - 50 cm":1,"35.2897 PSU":1,"1210PM,40F,NO WIND,LILY POND":1,"0.148 dS/m":1,"22.4963 average kg m-3":1,"0-0.3 m":1,"1970 g":1,"43 msnm":1,"410 m":1,"35.3757 PSU":1,"406(ug/L)":1,"12.18 μmol/L":1,"Cruise: August2018; CTD Station: FG53; Depth: 4m":1,"0.5 - 1.5 m":1,"10cm from the surface":1,"16.733 degC":1,"0-150m":1}
+
+processed_at
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"1759153923.848068":1,"1759153872.0803132":1,"1759153992.487825":1,"1759153832.3532548":1,"1759153866.653847":1,"1759153868.3450692":1,"1759153884.8698602":1,"1759153885.285512":1,"1759153868.7162519":1,"1759153946.952075":1,"1759153923.981727":1,"1759153923.9085739":1,"1759153992.566123":1,"1759154043.576714":1,"1759153896.144958":1,"1759153893.538174":1,"1759153970.0242372":1,"1759153883.1282618":1,"1759153869.878844":1,"1759153870.615509":1}
+
+span_end
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"2":8,"3":32,"4":47,"5":68,"6":80,"7":70,"8":59,"9":59,"10":58,"11":60,"12":51,"13":21,"14":18,"15":41,"16":9,"20":14,"21":16,"22":11,"23":8,"30":11}
+
+span_start
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"0":641,"2":5,"4":23,"5":5,"10":8,"11":6,"15":23,"16":14,"17":9,"18":5,"28":8,"29":9,"37":6,"46":6,"50":6,"55":6,"68":6,"69":6,"142":9,"146":7}
+
+surface_text
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"0":10,"1":19,"2":17,"3":13,"4":10,"5":5,"8":5,"9":3,"10":7,"11":4,"14":3,"15":5,"2023":4,"16S":20,"-2":7,"-3":7,"0-10":6,"3m":6,"20m":4,"54.136923676313565":4}
+
+unit
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"dimensionless":334,"metre":122,"centimetre":47,"milligram per litre":43,"unk mole per litre":39,"degree Celsius":36,"gram":28,"siemens":22,"degree angle degree Celsius":18,"month":18,"year":17,"day":16,"week":16,"poise siemens atomic mass unit":15,"microsecond mole per kilogram":15,"candela per square metre atomic mass unit":13,"hour":12,"micrometre":11,"basis point":11,"kilogram per cubic metre":11}
+
+value
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"0":14,"1":27,"2":22,"3":25,"4":17,"5":14,"6":8,"7":5,"8":9,"9":4,"10":13,"11":4,"12":5,"13":5,"14":5,"15":8,"16":23,"20":7,"-2":8,"-3":7}
+
+=== attribute_harmonized_pairings ===
+
+_id
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer
+  Coverage: 100.0% (1000/1000)
+  Types: {"object":1000}
+
+_id.buffer.0
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"104":1000}
+
+_id.buffer.1
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"217":1000}
+
+_id.buffer.10
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"0":18,"1":15,"178":15,"179":16,"182":17,"190":22,"194":18,"199":17,"202":17,"207":15,"212":16,"218":18,"222":18,"223":18,"224":17,"233":17,"236":17,"247":17,"248":15,"254":19}
+
+_id.buffer.11
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"3":7,"8":7,"15":7,"24":8,"33":7,"36":7,"45":7,"48":7,"57":8,"67":8,"74":7,"90":7,"91":7,"94":7,"108":7,"117":7,"121":9,"139":7,"167":9,"197":9}
+
+_id.buffer.2
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"127":1000}
+
+_id.buffer.3
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"6":1000}
+
+_id.buffer.4
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"189":1000}
+
+_id.buffer.5
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"243":1000}
+
+_id.buffer.6
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"184":1000}
+
+_id.buffer.7
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"209":1000}
+
+_id.buffer.8
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"158":1000}
+
+_id.buffer.9
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Common values: {"210":967,"211":33}
+
+attribute_name
+  Coverage: 100.0% (1000/1000)
+  Types: {"string":1000}
+  Top 20 values: {"arrayexpress_compound":1,"Potassium (ppm)":1,"date_of_birth":1,"Env_type":1,"Floor":1,"filename26":1,"How_often_do_you_eat_GRAINS":1,"Zhuqing Mao":1,"sample_title":1,"study_timepoint":1,"Dil_1_800_RBD_IgG_OD":1,"depression_in_past":1,"sibling_3_allergies":1,"Diet_Phase":1,"n_species":1,"local_scale_environmental_context":1,"dna_concentration_units":1,"miscellaneousnaturalorartificialenvironment environmental package":1,"Total parenteral nutrition (24-30 weeks postmenstrual age)":1,"oxygen_meth":1}
+
+count
+  Coverage: 100.0% (1000/1000)
+  Types: {"number":1000}
+  Top 20 values: {"1":47,"2":16,"6":10,"8":7,"12":7,"17":11,"19":10,"30":11,"32":14,"34":8,"37":9,"40":14,"48":33,"54":8,"60":13,"66":9,"72":13,"78":10,"98":9,"420":8}
+
+harmonized_name
+  Coverage: 7.5% (75/1000)
+  Types: {"string":75}
+  Top 20 values: {"geo_loc_name":3,"env_local_scale":2,"last_meal":2,"env_medium":2,"water_current":2,"host":2,"dev_stage":1,"env_broad_scale":1,"soil_type":1,"hiv_stat":1,"air_flow_impede":1,"timepoint":1,"isolation_source":1,"animal_am_freq":1,"size_frac_low":1,"additional_info":1,"health_state":1,"space_typ_state":1,"host_of_host_env_loc":1,"host_cellular_loc":1}
+
+=== ncbi_attributes_flattened ===
+
+_id
+  Coverage: 100.0% (960/960)
+  Types: {"object":960}
+
+_id.buffer
+  Coverage: 100.0% (960/960)
+  Types: {"object":960}
+
+_id.buffer.0
+  Coverage: 100.0% (960/960)
+  Types: {"number":960}
+  Common values: {"104":960}
+
+_id.buffer.1
+  Coverage: 100.0% (960/960)
+  Types: {"number":960}
+  Common values: {"217":960}
+
+_id.buffer.10
+  Coverage: 100.0% (960/960)
+  Types: {"number":960}
+  Common values: {"2":28,"3":256,"4":256,"5":256,"6":164}
+
+_id.buffer.11
+  Coverage: 100.0% (960/960)
+  Types: {"number":960}
+  Top 20 values: {"0":4,"1":4,"2":4,"3":4,"4":4,"5":4,"6":4,"7":4,"8":4,"9":4,"10":4,"11":4,"12":4,"13":4,"14":4,"15":4,"16":4,"17":4,"18":4,"19":4}
+
+_id.buffer.2
+  Coverage: 100.0% (960/960)
+  Types: {"number":960}
+  Common values: {"176":960}
+
+_id.buffer.3
+  Coverage: 100.0% (960/960)
+  Types: {"number":960}
+  Common values: {"16":960}
+
+_id.buffer.4
+  Coverage: 100.0% (960/960)
+  Types: {"number":960}
+  Common values: {"189":960}
+
+_id.buffer.5
+  Coverage: 100.0% (960/960)
+  Types: {"number":960}
+  Common values: {"243":960}
+
+_id.buffer.6
+  Coverage: 100.0% (960/960)
+  Types: {"number":960}
+  Common values: {"184":960}
+
+_id.buffer.7
+  Coverage: 100.0% (960/960)
+  Types: {"number":960}
+  Common values: {"209":960}
+
+_id.buffer.8
+  Coverage: 100.0% (960/960)
+  Types: {"number":960}
+  Common values: {"158":960}
+
+_id.buffer.9
+  Coverage: 100.0% (960/960)
+  Types: {"number":960}
+  Common values: {"211":960}
+
+description
+  Coverage: 96.3% (924/960)
+  Types: {"string":924}
+  Top 20 values: {"dbgap_public dictionary":13,"technical dictionary":8,"measurement of dry mass":2,"most frequent job performed by subject":2,"a measure of the relative oxygen-depletion effect of a waste contaminant":2,"taxonomic information subspecies level":2,"HIV status of subject, if yes HAART initiation status should also be indicated as [YES or NO]":2,"The symbol of the gene used in the diagnostic test.":2,"original body habitat where the sample was obtained from":2,"taxonomic rank information below subspecies level, such as variety, form, rank etc.":2,"measurement of wet mass":2,"The value of the result from a diagnostic test.":2,"The subway line name, e.g., red, green, orange":1,"Daily volumetric flow through collection site, in units of liters per day, e.g., 110000000.":1,"The name of the gene used in the second diagnostic SARS-CoV-2 RT-PCR test.":1,"Depth of the original oil water contact (OWC) zone (average) (m TVDSS)":1,"information about the sediment type based on major constituents":1,"Concentration of toluene in the sample":1,"methane (gas) amount or concentration at the time of sampling":1,"Name for the clone or subculture from which the sample was taken.":1}
+
+flattened_at
+  Coverage: 100.0% (960/960)
+  Types: {"object":960}
+
+format
+  Coverage: 87.4% (839/960)
+  Types: {"string":839}
+  Top 20 values: {"{text}":301,"{float} {unit}":180,"{integer}":43,"{text};{float} {unit}":30,"{timestamp}":22,"{PMID|DOI|URL}":21,"{term}":17,"{text}|{termLabel} {[termID]}":15,"{termLabel} {[termID]}":14,"{text};{float} {unit};{period};{interval};{period}":12,"{float}":9,"{float} {unit};{period};{interval};{period}":7,"{text}|{PMID}|{DOI}|{URL}":7,"{termLabel} {[termID]}|{integer}":7,"{boolean}":4,"{text};{integer}":4,"{integer} {unit}":4,"['', 'no', 'yes']":4,"{float}{text}":4,"{text};{text}":3}
+
+harmonized_name
+  Coverage: 100.0% (960/960)
+  Types: {"string":960}
+  Top 20 values: {"growth_facil":1,"rainfall_regm":1,"host_dry_mass":1,"org_particles":1,"train_line":1,"aero_struc":1,"ww_flow":1,"sars_cov_2_diag_gene_name_2":1,"owc_tvdss":1,"sediment_type":1,"toluene":1,"methane":1,"plant_reprod_crop":1,"radiation_regm":1,"clone":1,"growth_med":1,"populated_area_type":1,"birth_date":1,"mean_frict_vel":1,"suspend_part_matter":1}
+
+name
+  Coverage: 100.0% (960/960)
+  Types: {"string":960}
+  Top 20 values: {"growth facility":1,"rainfall regimen":1,"host dry mass":1,"organic particles":1,"train line":1,"aerospace structure":1,"wastewater flow":1,"SARS-CoV-2 diagnostic gene name 2":1,"oil water contact depth":1,"sediment type":1,"toluene":1,"methane":1,"plant reproductive part":1,"radiation regimen":1,"clone":1,"growth media":1,"populated area type":1,"birth date":1,"mean friction velocity":1,"suspended particulate matter":1}
+
+packages
+  Coverage: 100.0% (960/960)
+  Types: {"string":960}
+  Common values: {"":210,"Pathogen.cl.1.0; Pathogen.env.1.0":3,"Human.1.0; Invertebrate.1.0; Model.organism.animal.1.0; Plant.1.0":4,"Pathogen.cl.1.0; SARS-CoV-2.cl.1.0":2,"Human.1.0; Model.organism.animal.1.0":2,"Human.1.0; Plant.1.0":1,"PHA4GE.wwsurv.1.0; SARS-CoV-2.cl.1.0":1,"Microbe.1.0; Model.organism.animal.1.0; Pathogen.cl.1.0; Pathogen.env.1.0; Plant.1.0; Virus.1.0":1,"Microbe.1.0; Pathogen.cl.1.0; Pathogen.env.1.0; Virus.1.0":1,"Human.1.0; Microbe.1.0; Model.organism.animal.1.0; Plant.1.0":1,"Human.1.0; Model.organism.animal.1.0; Plant.1.0":5,"Invertebrate.1.0; Model.organism.animal.1.0":1,"Microbe.1.0; OneHealthEnteric.1.0; Pathogen.cl.1.0; Pathogen.env.1.0":1,"Beta-lactamase.1.0; Microbe.1.0; Virus.1.0":1,"Human.1.0; Invertebrate.1.0; Microbe.1.0; Model.organism.animal.1.0; Plant.1.0; Virus.1.0":1,"OneHealthEnteric.1.0; SARS-CoV-2.cl.1.0; SARS-CoV-2.wwsurv.1.0":1,"Invertebrate.1.0; Microbe.1.0; Virus.1.0":1,"Human.1.0; Model.organism.animal.1.0; Plant.1.0; Virus.1.0":1,"Model.organism.animal.1.0; Plant.1.0":1,"Microbe.1.0; OneHealthEnteric.1.0; Pathogen.cl.1.0; Pathogen.env.1.0; Virus.1.0":1}
+
+source_collection
+  Coverage: 100.0% (960/960)
+  Types: {"string":960}
+  Common values: {"attributes":960}
+
+synonyms
+  Coverage: 100.0% (960/960)
+  Types: {"string":960}
+  Top 20 values: {"":854,"sars cov 2 diag gene name 2; sars cov 2 diagnostic gene name 2":1,"tot n meth; total n method":1,"bio material; biomaterial":1,"samp room id; sampling room id or name":1,"local class; soil taxonomic/local classification":1,"donor sex; experimental factor: sex; gender; sample gender; sample sex":1,"size frac up; size fraction upper threshold":1,"isolate source; isolationsource; source of isolate":1,"size frac low; size fraction lower threshold":1,"tot n; tot nitro; total n":1,"org count qpcr info; organism count qpcr information":1,"host blood press syst; host blood press systolic":1,"date of prior antiviral treat; date of prior sars cov 2 antiviral treatment":1,"spike in with antibiotics; spikein antibiotic":1,"narms id; narms isolate number":1,"submitter asserted type strain; type strain":1,"local class meth; soil taxonomic/local classification method":1,"ifsac category; ifsac+ category; interagency food safety analytics collaboration (ifsac) category":1,"spike in organism count; spikein count":1}
+
+=== harmonized_name_usage_stats ===
+
+_id
+  Coverage: 100.0% (695/695)
+  Types: {"object":695}
+
+_id.buffer
+  Coverage: 100.0% (695/695)
+  Types: {"object":695}
+
+_id.buffer.0
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"104":695}
+
+_id.buffer.1
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"216":695}
+
+_id.buffer.10
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"152":47,"153":256,"154":256,"155":136}
+
+_id.buffer.11
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Top 20 values: {"0":3,"1":3,"2":3,"3":3,"4":3,"5":3,"6":3,"7":3,"8":3,"9":3,"10":3,"11":3,"12":3,"13":3,"14":3,"15":3,"16":3,"17":3,"18":3,"19":3}
+
+_id.buffer.2
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"102":695}
+
+_id.buffer.3
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"201":695}
+
+_id.buffer.4
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"189":695}
+
+_id.buffer.5
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"243":695}
+
+_id.buffer.6
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"184":695}
+
+_id.buffer.7
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"209":695}
+
+_id.buffer.8
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"158":695}
+
+_id.buffer.9
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"210":695}
+
+harmonized_name
+  Coverage: 100.0% (695/695)
+  Types: {"string":694,"null":1}
+  Nulls: 1
+  Top 20 values: {"surface_orientation":1,"urine_collect_meth":1,"food_dis_point":1,"ferm_ph":1,"sewage_type":1,"collection_method":1,"animal_env":1,"extrachrom_elements":1,"part_plant_animal":1,"soluble_inorg_mat":1,"slope_aspect":1,"specimen_voucher":1,"water_content_soil":1,"host_tot_mass":1,"tot_iron":1,"sanitizer_used_postharvest":1,"store_cond":1,"disease_stage":1,"profile_position":1,"haccp_term":1}
+
+unique_bioprojects_count
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Top 20 values: {"0":24,"1":53,"2":48,"3":29,"4":22,"5":20,"6":14,"7":13,"8":21,"9":12,"10":11,"11":12,"12":13,"13":10,"14":8,"15":6,"18":10,"24":6,"26":6,"53":7}
+
+unique_biosamples_count
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Top 20 values: {"1":13,"2":14,"4":4,"9":3,"12":7,"14":4,"18":5,"52":4,"66":6,"78":4,"98":4,"106":3,"108":3,"150":4,"215":4,"365":4,"460":11,"953":5,"11326":5,"3037277":4}
+
+=== measurement_evidence_percentages ===
+
+_id
+  Coverage: 100.0% (695/695)
+  Types: {"object":695}
+
+_id.buffer
+  Coverage: 100.0% (695/695)
+  Types: {"object":695}
+
+_id.buffer.0
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"104":695}
+
+_id.buffer.1
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"217":695}
+
+_id.buffer.10
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"173":129,"174":256,"175":256,"176":54}
+
+_id.buffer.11
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Top 20 values: {"0":3,"1":3,"2":3,"3":3,"4":3,"5":3,"6":3,"7":3,"8":3,"9":3,"10":3,"11":3,"12":3,"13":3,"14":3,"15":3,"16":3,"17":3,"18":3,"19":3}
+
+_id.buffer.2
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"119":695}
+
+_id.buffer.3
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"143":695}
+
+_id.buffer.4
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"189":695}
+
+_id.buffer.5
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"243":695}
+
+_id.buffer.6
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"184":695}
+
+_id.buffer.7
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"209":695}
+
+_id.buffer.8
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"158":695}
+
+_id.buffer.9
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"210":695}
+
+attributes_with_mixed_content
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Top 20 values: {"0":255,"1":9,"2":9,"3":6,"5":2,"6":7,"7":3,"8":2,"9":3,"10":3,"11":2,"12":2,"19":3,"20":3,"24":3,"29":3,"51":3,"56":3,"60":3,"152":3}
+
+attributes_with_units
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"0":687,"20":1,"60":1,"63":3,"81":1,"123":1,"17747":1}
+
+avg_evidence_percentage
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Top 20 values: {"0":255,"0.5":7,"0.00008829242450997704":2,"0.007608695652173913":2,"0.35714285714285715":2,"0.014056847545219638":1,"0.04949579831932773":1,"0.09337349397590361":1,"0.0020897185845639454":1,"0.12639542510176208":1,"0.007252559726962458":1,"0.059196167154644666":1,"0.0967741935483871":1,"0.0410408011079152":1,"0.00065359477124183":1,"0.35414960414960417":1,"0.45830985915492956":1,"0.05338078291814947":1,"0.0000495523768623435":1,"0.1932053345596689":1}
+
+harmonized_name
+  Coverage: 100.0% (695/695)
+  Types: {"string":694,"null":1}
+  Nulls: 1
+  Top 20 values: {"link_climate_info":1,"plant_body_site":1,"cult_isol_date":1,"liver_disord":1,"nose_throat_disord":1,"project_name":1,"gap_subject_id":1,"api":1,"samp_store_loc":1,"arch_struc":1,"birth_location":1,"food_source":1,"ph_regm":1,"dominant_hand":1,"annual_temp":1,"root_cond":1,"farm_equip":1,"last_clean":1,"biovar":1,"light_type":1}
+
+mixed_content_percentage
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Top 20 values: {"0":255,"1":7,"0.0001765848490199541":2,"0.015217391304347827":2,"0.7142857142857143":2,"0.028113695090439275":1,"0.09899159663865546":1,"0.18674698795180722":1,"0.004179437169127891":1,"0.25279085020352415":1,"0.014505119453924915":1,"0.11839233430928933":1,"0.1935483870967742":1,"0.0820816022158304":1,"0.00130718954248366":1,"0.7082992082992083":1,"0.9166197183098591":1,"0.10676156583629894":1,"0.000099104753724687":1,"0.3864106691193378":1}
+
+processed_at
+  Coverage: 100.0% (695/695)
+  Types: {"object":695}
+
+total_attributes
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Top 20 values: {"1":13,"2":14,"4":4,"9":3,"12":7,"14":4,"18":5,"52":4,"66":6,"78":4,"98":4,"106":3,"108":3,"132":3,"150":4,"215":4,"365":4,"460":11,"953":5,"11326":5}
+
+unique_bioprojects_count
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Top 20 values: {"0":24,"1":53,"2":48,"3":29,"4":22,"5":20,"6":14,"7":13,"8":21,"9":12,"10":11,"11":12,"12":13,"13":10,"14":8,"15":6,"18":10,"24":6,"26":6,"53":7}
+
+unique_biosamples_count
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Top 20 values: {"1":13,"2":14,"4":4,"9":3,"12":7,"14":4,"18":5,"52":4,"66":6,"78":4,"98":4,"106":3,"108":3,"150":4,"215":4,"365":4,"460":11,"953":5,"11326":5,"3037277":4}
+
+unique_units_count
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"0":687,"1":5,"2":1,"3":2}
+
+unit_assertion_percentage
+  Coverage: 100.0% (695/695)
+  Types: {"number":695}
+  Common values: {"0":687,"0.0013702569654729078":1,"0.000029781670573029123":1,"0.011304503857886236":1,"0.00096054850258461":1,"0.0006465450888229801":1,"0.0013211147692243168":1,"0.0013552584026020962":1,"0.00042076599937056143":1}
+
+=== mixed_content_counts ===
+
+_id
+  Coverage: 100.0% (440/440)
+  Types: {"object":440}
+
+_id.buffer
+  Coverage: 100.0% (440/440)
+  Types: {"object":440}
+
+_id.buffer.0
+  Coverage: 100.0% (440/440)
+  Types: {"number":440}
+  Common values: {"104":440}
+
+_id.buffer.1
+  Coverage: 100.0% (440/440)
+  Types: {"number":440}
+  Common values: {"218":440}
+
+_id.buffer.10
+  Coverage: 100.0% (440/440)
+  Types: {"number":440}
+  Common values: {"2":162,"3":256,"4":22}
+
+_id.buffer.11
+  Coverage: 100.0% (440/440)
+  Types: {"number":440}
+  Top 20 values: {"0":2,"1":2,"2":2,"3":2,"4":2,"5":2,"6":2,"7":2,"8":2,"9":2,"10":2,"11":2,"12":2,"13":2,"14":2,"15":2,"16":2,"17":2,"18":2,"19":2}
+
+_id.buffer.2
+  Coverage: 100.0% (440/440)
+  Types: {"number":440}
+  Common values: {"145":440}
+
+_id.buffer.3
+  Coverage: 100.0% (440/440)
+  Types: {"number":440}
+  Common values: {"226":440}
+
+_id.buffer.4
+  Coverage: 100.0% (440/440)
+  Types: {"number":440}
+  Common values: {"172":440}
+
+_id.buffer.5
+  Coverage: 100.0% (440/440)
+  Types: {"number":440}
+  Common values: {"130":440}
+
+_id.buffer.6
+  Coverage: 100.0% (440/440)
+  Types: {"number":440}
+  Common values: {"191":440}
+
+_id.buffer.7
+  Coverage: 100.0% (440/440)
+  Types: {"number":440}
+  Common values: {"92":440}
+
+_id.buffer.8
+  Coverage: 100.0% (440/440)
+  Types: {"number":440}
+  Common values: {"128":440}
+
+_id.buffer.9
+  Coverage: 100.0% (440/440)
+  Types: {"number":440}
+  Common values: {"10":440}
+
+count
+  Coverage: 100.0% (440/440)
+  Types: {"number":440}
+  Top 20 values: {"1":9,"2":9,"3":6,"5":2,"6":7,"7":3,"8":2,"9":3,"10":3,"11":2,"12":2,"15":2,"19":3,"20":3,"24":3,"29":3,"51":3,"56":3,"60":3,"152":3}
+
+harmonized_name
+  Coverage: 100.0% (440/440)
+  Types: {"string":439,"null":1}
+  Nulls: 1
+  Top 20 values: {"food_contain_wrap":1,"nitrite":1,"enrichment_protocol":1,"reactor_type":1,"surf_temp":1,"food_cooking_proc":1,"host_wet_mass":1,"foetal_health_stat":1,"ifsac_category":1,"serogroup":1,"samp_capt_status":1,"ref_biomaterial":1,"life_stage":1,"store_cond":1,"alkalinity_method":1,"typ_occupant_dens":1,"component_organism":1,"season":1,"vfa_fw":1,"biomaterial_provider":1}
+
+=== harmonized_name_dimensional_stats ===
+
+_id
+  Coverage: 100.0% (432/432)
+  Types: {"object":432}
+
+_id.buffer
+  Coverage: 100.0% (432/432)
+  Types: {"object":432}
+
+_id.buffer.0
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Common values: {"104":432}
+
+_id.buffer.1
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Common values: {"217":432}
+
+_id.buffer.10
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Common values: {"0":256,"1":167,"255":9}
+
+_id.buffer.11
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Top 20 values: {"0":2,"1":2,"2":2,"3":2,"4":2,"5":2,"6":2,"7":2,"8":2,"9":2,"10":2,"11":2,"12":2,"13":2,"14":2,"15":2,"16":2,"17":2,"18":2,"19":2}
+
+_id.buffer.2
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Common values: {"252":432}
+
+_id.buffer.3
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Common values: {"243":432}
+
+_id.buffer.4
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Common values: {"183":432}
+
+_id.buffer.5
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Common values: {"200":432}
+
+_id.buffer.6
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Common values: {"159":432}
+
+_id.buffer.7
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Common values: {"9":432}
+
+_id.buffer.8
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Common values: {"244":432}
+
+_id.buffer.9
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Common values: {"88":9,"89":423}
+
+analysis_timestamp
+  Coverage: 100.0% (432/432)
+  Types: {"object":432}
+
+content_extraction_rate_pct
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Top 20 values: {"5":2,"20":3,"25":6,"40":3,"50":14,"60":3,"75":8,"80":2,"100":44,"33.33333333333333":9,"83.33333333333334":6,"7.142857142857142":4,"16.666666666666664":4,"85.71428571428571":4,"14.285714285714285":4,"6.666666666666667":4,"7.6923076923076925":4,"11.11111111111111":3,"9.090909090909092":3,"3.7037037037037033":3}
+
+dimensional_content_rate_pct
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Top 20 values: {"0":139,"5":4,"20":3,"25":7,"40":2,"50":6,"75":3,"100":7,"11.11111111111111":4,"33.33333333333333":4,"66.66666666666666":3,"8.333333333333332":3,"5.88235294117647":3,"42.857142857142854":3,"3.7037037037037033":3,"21.73913043478261":2,"2.7777777777777777":2,"57.14285714285714":2,"37.5":2,"3.125":2}
+
+dimensional_of_extracted_pct
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Top 20 values: {"0":139,"20":6,"25":4,"40":5,"50":16,"75":3,"100":39,"66.66666666666666":6,"33.33333333333333":6,"14.285714285714285":4,"37.5":4,"12.5":3,"2.272727272727273":2,"91.66666666666666":2,"44.44444444444444":2,"42.857142857142854":2,"28.57142857142857":2,"6.666666666666667":2,"85.71428571428571":2,"94.44444444444444":2}
+
+dimensional_quantities
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Top 20 values: {"0":139,"1":45,"2":26,"3":21,"4":12,"5":8,"6":11,"7":5,"8":6,"9":3,"10":6,"11":4,"12":6,"13":3,"14":5,"15":3,"16":4,"21":3,"23":3,"31":4}
+
+dimensionless_quantities
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Top 20 values: {"0":32,"1":56,"2":33,"3":22,"4":13,"5":11,"6":10,"7":7,"8":8,"9":5,"10":9,"11":4,"12":7,"14":4,"16":5,"18":4,"19":4,"23":3,"32":3,"35":5}
+
+harmonized_name
+  Coverage: 100.0% (432/432)
+  Types: {"string":432}
+  Top 20 values: {"diss_org_nitro":1,"association_duration":1,"pregnancy":1,"inorg_particles":1,"biol_stat":1,"food_additive":1,"omics_observ_id":1,"host_body_product":1,"ww_sample_duration":1,"birth_date":1,"area_samp_size":1,"food_origin":1,"al_sat":1,"samp_source_mat_cat":1,"biomaterial_provider":1,"pressure":1,"salinity_meth":1,"samp_transport_temp":1,"food_product_type":1,"host_occupation":1}
+
+total_content_pairs
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Top 20 values: {"1":15,"2":7,"3":12,"4":11,"5":6,"6":5,"7":8,"8":10,"9":7,"10":8,"11":5,"12":5,"13":6,"15":9,"17":6,"19":7,"20":6,"23":6,"24":5,"49":7}
+
+total_quantities_found
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Top 20 values: {"1":47,"2":34,"3":25,"4":13,"5":13,"6":15,"7":9,"8":11,"9":6,"10":8,"12":9,"13":5,"16":7,"18":5,"19":5,"21":5,"26":5,"35":6,"40":4,"78":4}
+
+unique_content_with_any_units
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Top 20 values: {"1":61,"2":30,"3":24,"4":16,"5":17,"6":9,"7":11,"8":13,"9":5,"10":8,"11":5,"12":5,"16":5,"17":3,"18":5,"19":5,"21":4,"26":5,"35":6,"36":5}
+
+unique_content_with_dimensional_units
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Top 20 values: {"0":139,"1":50,"2":25,"3":24,"4":12,"5":8,"6":8,"7":7,"8":7,"9":2,"10":5,"11":7,"12":5,"13":4,"14":6,"16":3,"17":2,"21":3,"23":4,"31":5}
+
+unique_dimensional_units
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Top 20 values: {"0":139,"1":97,"2":49,"3":29,"4":20,"5":13,"6":14,"7":3,"8":6,"9":2,"10":10,"11":4,"12":4,"13":4,"14":2,"15":4,"16":2,"18":2,"22":2,"31":3}
+
+unique_units_total
+  Coverage: 100.0% (432/432)
+  Types: {"number":432}
+  Top 20 values: {"1":157,"2":89,"3":41,"4":28,"5":19,"6":13,"7":14,"8":3,"9":6,"10":2,"11":11,"12":3,"13":4,"14":4,"15":2,"16":4,"17":2,"19":2,"23":2,"32":3}
+
+=== ncbi_packages_flattened ===
+
+_id
+  Coverage: 100.0% (229/229)
+  Types: {"object":229}
+
+_id.buffer
+  Coverage: 100.0% (229/229)
+  Types: {"object":229}
+
+_id.buffer.0
+  Coverage: 100.0% (229/229)
+  Types: {"number":229}
+  Common values: {"104":229}
+
+_id.buffer.1
+  Coverage: 100.0% (229/229)
+  Types: {"number":229}
+  Common values: {"217":229}
+
+_id.buffer.10
+  Coverage: 100.0% (229/229)
+  Types: {"number":229}
+  Common values: {"1":1,"2":228}
+
+_id.buffer.11
+  Coverage: 100.0% (229/229)
+  Types: {"number":229}
+  Top 20 values: {"0":1,"1":1,"2":1,"3":1,"4":1,"5":1,"6":1,"7":1,"8":1,"9":1,"10":1,"11":1,"12":1,"13":1,"14":1,"15":1,"16":1,"17":1,"18":1,"19":1}
+
+_id.buffer.2
+  Coverage: 100.0% (229/229)
+  Types: {"number":229}
+  Common values: {"173":229}
+
+_id.buffer.3
+  Coverage: 100.0% (229/229)
+  Types: {"number":229}
+  Common values: {"175":229}
+
+_id.buffer.4
+  Coverage: 100.0% (229/229)
+  Types: {"number":229}
+  Common values: {"189":229}
+
+_id.buffer.5
+  Coverage: 100.0% (229/229)
+  Types: {"number":229}
+  Common values: {"243":229}
+
+_id.buffer.6
+  Coverage: 100.0% (229/229)
+  Types: {"number":229}
+  Common values: {"184":229}
+
+_id.buffer.7
+  Coverage: 100.0% (229/229)
+  Types: {"number":229}
+  Common values: {"209":229}
+
+_id.buffer.8
+  Coverage: 100.0% (229/229)
+  Types: {"number":229}
+  Common values: {"158":229}
+
+_id.buffer.9
+  Coverage: 100.0% (229/229)
+  Types: {"number":229}
+  Common values: {"211":229}
+
+antibiogram
+  Coverage: 1.3% (3/229)
+  Types: {"string":3}
+  Common values: {"true":3}
+
+description
+  Coverage: 100.0% (229/229)
+  Types: {"string":229}
+  Common values: {"Use for eukaryotic genomic sequences. Organism must have lineage Eukaryota.":24,"Use for virus genomic sequences. Organism must have lineage Viruses.":24,"Use for any invertebrate sample.":1,"Environmental, food or other pathogen":1,"Use for beta-lactamase gene transformants that have sequence and antibiotic resistance data.":1,"Generic":1,"Clinical or host-associated pathogen":1,"Use for any plant sample or cell line.":1}
+
+display_name
+  Coverage: 100.0% (229/229)
+  Types: {"string":229}
+  Top 20 values: {"MISAG: single amplified genome, water; version 6.0":1,"MIMAG: metagenome-assembled genome, sediment; version 6.0":1,"MIGS: eukaryote; version 6.0":1,"MISAG: single amplified genome, wastewater; version 6.0":1,"MIMARKS: specimen, soil; version 6.0":1,"Model organism or animal; version 1.0":1,"MIGS: virus, air; version 6.0":1,"MIMARKS: survey, human-gut; version 6.0":1,"MIGS: cultured bacteria/archaea, soil; version 6.0":1,"MIGS: cultured bacteria/archaea, water; version 6.0":1,"MIGS: virus, sediment; version 6.0":1,"MIMARKS: survey, symbiont-associated; version 6.0":1,"MIMARKS: specimen, human-vaginal; version 6.0":1,"MIGS: cultured bacteria/archaea, hydrocarbon resources-fluids/swabs; version 6.0":1,"MIMS: metagenome/environmental, air; version 6.0":1,"MIMARKS: survey, miscellaneous; version 6.0":1,"MIGS: cultured bacteria/archaea, food-human foods; version 6.0":1,"MIMARKS: specimen, food-food production facility; version 6.0":1,"MISAG: single amplified genome, miscellaneous; version 6.0":1,"MISAG: single amplified genome, host-associated; version 6.0":1}
+
+env_package
+  Coverage: 93.4% (214/229)
+  Types: {"string":214}
+  Top 20 values: {"water":9,"sediment":9,"wastewater":9,"soil":9,"air":9,"human-gut":9,"symbiont-associated":9,"human-vaginal":9,"hydrocarbon-fluids_swabs":9,"miscellaneous":9,"food-human_foods":9,"food-prod_facility":9,"host-associated":9,"hydrocarbon-cores":9,"human-associated":9,"microbial":9,"human-oral":9,"built":9,"plant-associated":9,"human-skin":9}
+
+env_package_display
+  Coverage: 93.4% (214/229)
+  Types: {"string":214}
+  Top 20 values: {"water":9,"sediment":9,"soil":9,"air":9,"human-gut":9,"symbiont-associated":9,"human-vaginal":9,"hydrocarbon resources-fluids/swabs":9,"miscellaneous or artificial":9,"food-human foods":9,"food-food production facility":9,"host-associated":9,"hydrocarbon resources-cores":9,"human-associated":9,"microbial mat/biofilm":9,"human-oral":9,"built":9,"plant-associated":9,"human-skin":9,"agriculture":9}
+
+example
+  Coverage: 44.1% (101/229)
+  Types: {"string":101}
+  Top 20 values: {"SAMN02412548":8,"SAMN00780298":5,"SAMN02909964":5,"SAMN02905116":4,"SAMN02900669":3,"SAMN02256168":3,"SAMN02676578":3,"SAMN02256130":3,"SAMN02872842":2,"SAMN02468916":1,"SAMN02905883":1,"SAMN02722276":1,"SAMN02853142":1,"SAMN02867807":1,"SAMN02904796":1,"SAMN02721610":1,"SAMN02364111":1,"SAMN02928772":1,"SAMN02378805":1,"SAMN02839585":1}
+
+flattened_at
+  Coverage: 100.0% (229/229)
+  Types: {"object":229}
+
+group
+  Coverage: 94.3% (216/229)
+  Types: {"string":216}
+  Common values: {"MISAG":24,"MIMAG":24,"MIGS.eu":24,"MIMARKS.specimen":24,"MIGS.vi":24,"MIMARKS.survey":23,"MIGS.ba":24,"MIMS.me":23,"MIUVIG":24,"Pathogen":2}
+
+name
+  Coverage: 100.0% (229/229)
+  Types: {"string":229}
+  Top 20 values: {"MISAG.water.6.0":1,"MIMAG.sediment.6.0":1,"MIGS.eu.6.0":1,"MISAG.wastewater.6.0":1,"MIMARKS.specimen.soil.6.0":1,"Model.organism.animal.1.0":1,"MIGS.vi.air.6.0":1,"MIMARKS.survey.human-gut.6.0":1,"MIGS.ba.soil.6.0":1,"MIGS.ba.water.6.0":1,"MIGS.vi.sediment.6.0":1,"MIMARKS.survey.symbiont-associated.6.0":1,"MIMARKS.specimen.human-vaginal.6.0":1,"MIGS.ba.hydrocarbon-fluids_swabs.6.0":1,"MIMS.me.air.6.0":1,"MIMARKS.survey.miscellaneous.6.0":1,"MIGS.ba.food-human_foods.6.0":1,"MIMARKS.specimen.food-prod_facility.6.0":1,"MISAG.miscellaneous.6.0":1,"MISAG.host-associated.6.0":1}
+
+not_appropriate_for
+  Coverage: 75.5% (173/229)
+  Types: {"string":173}
+  Common values: {"wgs_diploid":73,"wgs_single;wgs_batch;wgs_diploid":100}
+
+short_name
+  Coverage: 99.6% (228/229)
+  Types: {"string":228}
+  Top 20 values: {"MISAG Single Amplified Genome":24,"MIMAG Metagenome-assembled Genome":24,"MIGS Eukaryotic":24,"MIMARKS Specimen":24,"MIGS Viral":24,"MIGS Cultured Bacterial/Archaeal":24,"MIUVIG Uncultivated Virus Genome":24,"MIMARKS Survey related":23,"MIMS Environmental/Metagenome":23,"Model organism or animal":1,"Invertebrate":1,"SARS-CoV-2: clinical or host-associated":1,"Pathogen: environmental/food/other":1,"Human":1,"Beta-lactamase":1,"SARS-CoV-2: wastewater surveillance":1,"PHA4GE: wastewater surveillance":1,"One Health Enteric":1,"Viral":1,"Pathogen: clinical or host-associated":1}
+
+source_collection
+  Coverage: 100.0% (229/229)
+  Types: {"string":229}
+  Common values: {"packages":229}
+
+=== unit_assertion_counts ===
+
+_id
+  Coverage: 100.0% (13/13)
+  Types: {"object":13}
+
+_id.buffer
+  Coverage: 100.0% (13/13)
+  Types: {"object":13}
+
+_id.buffer.0
+  Coverage: 100.0% (13/13)
+  Types: {"number":13}
+  Common values: {"104":13}
+
+_id.buffer.1
+  Coverage: 100.0% (13/13)
+  Types: {"number":13}
+  Common values: {"217":13}
+
+_id.buffer.10
+  Coverage: 100.0% (13/13)
+  Types: {"number":13}
+  Common values: {"160":13}
+
+_id.buffer.11
+  Coverage: 100.0% (13/13)
+  Types: {"number":13}
+  Common values: {"198":1,"199":1,"200":1,"201":1,"202":1,"203":1,"204":1,"205":1,"206":1,"207":1,"208":1,"209":1,"210":1}
+
+_id.buffer.2
+  Coverage: 100.0% (13/13)
+  Types: {"number":13}
+  Common values: {"99":13}
+
+_id.buffer.3
+  Coverage: 100.0% (13/13)
+  Types: {"number":13}
+  Common values: {"29":13}
+
+_id.buffer.4
+  Coverage: 100.0% (13/13)
+  Types: {"number":13}
+  Common values: {"189":13}
+
+_id.buffer.5
+  Coverage: 100.0% (13/13)
+  Types: {"number":13}
+  Common values: {"243":13}
+
+_id.buffer.6
+  Coverage: 100.0% (13/13)
+  Types: {"number":13}
+  Common values: {"184":13}
+
+_id.buffer.7
+  Coverage: 100.0% (13/13)
+  Types: {"number":13}
+  Common values: {"209":13}
+
+_id.buffer.8
+  Coverage: 100.0% (13/13)
+  Types: {"number":13}
+  Common values: {"158":13}
+
+_id.buffer.9
+  Coverage: 100.0% (13/13)
+  Types: {"number":13}
+  Common values: {"210":13}
+
+count
+  Coverage: 100.0% (13/13)
+  Types: {"number":13}
+  Common values: {"1":1,"20":2,"49":1,"60":3,"63":4,"1528":1,"16170":1}
+
+harmonized_name
+  Coverage: 76.9% (10/13)
+  Types: {"string":10}
+  Common values: {"samp_vol_we_dna_ext":3,"host_age":2,"host_dry_mass":1,"host_tot_mass":1,"samp_store_temp":1,"samp_store_dur":1,"depth":1}
+
+unit
+  Coverage: 100.0% (13/13)
+  Types: {"string":13}
+  Common values: {"DD":1,"l":1,"%":1,"days":1,"g":3,"mg":1,"m":2,"weeks":1,"Â°C":1,"months":1}

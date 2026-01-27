@@ -1,0 +1,30 @@
+{
+  "createdAt": "2025-06-14T13:20:31Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "MCP approaches for getting textual representations of scientific literature from PMIDs, DOIs, etc.",
+  "name": "artl-mcp",
+  "updatedAt": "2025-08-17T02:45:54Z",
+  "url": "https://github.com/contextualizer-ai/artl-mcp",
+  "firstCommitDate": "2025-07-30T21:32:39Z",
+  "lastCommitDate": "2025-07-30T21:32:39Z",
+  "topContributors": [
+    {
+      "contributions": 242,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 11,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 2,
+      "login": "ct-parker"
+    },
+    {
+      "contributions": 1,
+      "login": "realmarcin"
+    }
+  ]
+}

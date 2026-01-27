@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-11-16T23:15:52Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "GOlr configuration file handling and API.",
+  "name": "golr-conf",
+  "updatedAt": "2016-10-21T05:15:48Z",
+  "url": "https://github.com/berkeleybop/golr-conf",
+  "firstCommitDate": "2016-10-21T21:42:18Z",
+  "lastCommitDate": "2016-10-21T21:42:18Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "kltm"
+    }
+  ]
+}

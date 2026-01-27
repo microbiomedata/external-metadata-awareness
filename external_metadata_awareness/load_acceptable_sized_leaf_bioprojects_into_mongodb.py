@@ -8,9 +8,20 @@ import sys
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
+import bson
+import bson.errors
 from external_metadata_awareness.mongodb_connection import get_mongo_client
 
 MAX_BSON_SIZE = 16 * 1024 * 1024  # MongoDB max document size (16MB)
+
+
+def get_bson_size(doc):
+    """Get actual BSON size of a document."""
+    try:
+        return len(bson.encode(doc))
+    except (bson.errors.InvalidDocument, OverflowError):
+        # Fallback to conservative estimate if encoding fails for expected reasons
+        return MAX_BSON_SIZE + 1  # Force oversize handling
 
 
 def clean_dict(d):
@@ -161,7 +172,7 @@ def parse_and_insert(xml_file, mongo_uri, project_collection, submission_collect
                 if current_package_id and project_id != "unknown":
                     package_bioprojects[current_package_id].append(project_id)
 
-                bson_size = sum(len(str(value)) for value in project_dict.values()) + 500
+                bson_size = get_bson_size(project_dict)
                 if bson_size > MAX_BSON_SIZE:
                     oversize_projects += 1
 
@@ -202,7 +213,7 @@ def parse_and_insert(xml_file, mongo_uri, project_collection, submission_collect
                 if current_package_id and current_package_id in package_bioprojects:
                     submission_dict["bioproject_accessions"] = package_bioprojects[current_package_id]
 
-                bson_size = sum(len(str(value)) for value in submission_dict.values()) + 500
+                bson_size = get_bson_size(submission_dict)
                 if bson_size > MAX_BSON_SIZE:
                     oversize_submissions += 1
                     submission_id = get_submission_id(submission_dict)

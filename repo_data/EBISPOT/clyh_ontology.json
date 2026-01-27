@@ -1,0 +1,34 @@
+{
+  "createdAt": "2017-11-14T10:16:38Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Home of the Clytia hemisphaerica Development and Anatomy Ontology (CLYH)",
+  "name": "clyh_ontology",
+  "updatedAt": "2025-08-13T19:27:50Z",
+  "url": "https://github.com/EBISPOT/clyh_ontology",
+  "firstCommitDate": "2020-05-29T18:26:31Z",
+  "lastCommitDate": "2020-05-29T18:26:31Z",
+  "topContributors": [
+    {
+      "contributions": 10,
+      "login": "L-Leclere"
+    },
+    {
+      "contributions": 10,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 6,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 2,
+      "login": "momotsuyo"
+    },
+    {
+      "contributions": 1,
+      "login": "S2Ola"
+    }
+  ]
+}

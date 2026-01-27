@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-05-09T10:58:55Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Regenerate and enrich the GWAS spreadsheet by mapping EFO terms to outside ontologies",
+  "name": "ontomapper",
+  "updatedAt": "2018-07-06T12:24:09Z",
+  "url": "https://github.com/EBISPOT/ontomapper",
+  "firstCommitDate": "2018-07-06T12:14:09Z",
+  "lastCommitDate": "2018-07-06T12:14:09Z",
+  "topContributors": [
+    {
+      "contributions": 40,
+      "login": "warrenread"
+    }
+  ]
+}

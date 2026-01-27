@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-08-04T14:52:18Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Currently includes some gists used by R code in multiple TURBO repos",
+  "name": "turbo-globals",
+  "updatedAt": "2021-03-03T22:46:01Z",
+  "url": "https://github.com/PennTURBO/turbo-globals",
+  "firstCommitDate": "2021-03-03T22:45:59Z",
+  "lastCommitDate": "2021-03-03T22:45:59Z",
+  "topContributors": [
+    {
+      "contributions": 27,
+      "login": "turbomam"
+    }
+  ]
+}

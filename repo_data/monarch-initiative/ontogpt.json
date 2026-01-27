@@ -1,0 +1,54 @@
+{
+  "createdAt": "2023-01-03T16:53:25Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "LLM-based ontological extraction tools, including SPIRES",
+  "name": "ontogpt",
+  "updatedAt": "2025-09-27T13:18:56Z",
+  "url": "https://github.com/monarch-initiative/ontogpt",
+  "firstCommitDate": "2025-09-26T19:41:47Z",
+  "lastCommitDate": "2025-09-26T19:41:47Z",
+  "topContributors": [
+    {
+      "contributions": 1626,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 199,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 46,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 46,
+      "login": "AgranyaGitHub"
+    },
+    {
+      "contributions": 16,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 16,
+      "login": "realmarcin"
+    },
+    {
+      "contributions": 7,
+      "login": "k-bandi"
+    },
+    {
+      "contributions": 6,
+      "login": "yarikoptic"
+    },
+    {
+      "contributions": 6,
+      "login": "diatomsRcool"
+    },
+    {
+      "contributions": 3,
+      "login": "nlharris"
+    }
+  ]
+}

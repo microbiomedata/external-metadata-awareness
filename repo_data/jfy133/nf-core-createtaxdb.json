@@ -1,0 +1,42 @@
+{
+  "createdAt": "2025-08-21T08:24:58Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Parallelised and automated construction of metagenomic classifier databases of different tools",
+  "name": "nf-core-createtaxdb",
+  "updatedAt": "2025-08-21T08:24:58Z",
+  "url": "https://github.com/jfy133/nf-core-createtaxdb",
+  "firstCommitDate": "2025-06-19T07:52:12Z",
+  "lastCommitDate": "2025-06-19T07:52:12Z",
+  "topContributors": [
+    {
+      "contributions": 350,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 55,
+      "login": "BioWilko"
+    },
+    {
+      "contributions": 39,
+      "login": "alxndrdiaz"
+    },
+    {
+      "contributions": 21,
+      "login": "nf-core-bot"
+    },
+    {
+      "contributions": 2,
+      "login": "LilyAnderssonLee"
+    },
+    {
+      "contributions": 2,
+      "login": "mashehu"
+    },
+    {
+      "contributions": 1,
+      "login": "mirpedrol"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-05-10T18:28:11Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "kboom-paper",
+  "updatedAt": "2021-03-12T08:17:15Z",
+  "url": "https://github.com/cmungall/kboom-paper",
+  "firstCommitDate": "2019-01-28T22:13:15Z",
+  "lastCommitDate": "2019-01-28T22:13:15Z",
+  "topContributors": [
+    {
+      "contributions": 29,
+      "login": "cmungall"
+    }
+  ]
+}

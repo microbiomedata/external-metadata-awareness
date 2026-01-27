@@ -1,0 +1,13 @@
+{
+  "createdAt": "2015-06-26T16:27:50Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A representation of temporal relations as OWL object properties",
+  "name": "temporal-extension-ontology",
+  "updatedAt": "2023-10-05T19:20:58Z",
+  "url": "https://github.com/mcwdsi/temporal-extension-ontology",
+  "firstCommitDate": "2015-06-26T16:28:44Z",
+  "lastCommitDate": "2015-06-26T16:28:44Z",
+  "topContributors": []
+}

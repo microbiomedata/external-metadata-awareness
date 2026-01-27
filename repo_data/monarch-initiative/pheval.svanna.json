@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-05-09T16:23:16Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A PhEval plugin for integrating SvAnna, enabling structural variant prioritisation in a standardised pipeline.",
+  "name": "pheval.svanna",
+  "updatedAt": "2025-03-28T16:25:22Z",
+  "url": "https://github.com/monarch-initiative/pheval.svanna",
+  "firstCommitDate": "2025-03-28T16:25:17Z",
+  "lastCommitDate": "2025-03-28T16:25:17Z",
+  "topContributors": [
+    {
+      "contributions": 46,
+      "login": "yaseminbridges"
+    }
+  ]
+}

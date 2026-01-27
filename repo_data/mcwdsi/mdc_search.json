@@ -1,0 +1,22 @@
+{
+  "createdAt": "2017-06-07T18:53:14Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "SPARQL queries for searching MIDAS Digital Commons for valid combinations of datasets and software",
+  "name": "mdc_search",
+  "updatedAt": "2023-10-05T19:11:07Z",
+  "url": "https://github.com/mcwdsi/mdc_search",
+  "firstCommitDate": "2021-05-07T18:15:55Z",
+  "lastCommitDate": "2021-05-07T18:15:55Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "atloiaco"
+    },
+    {
+      "contributions": 1,
+      "login": "dillerm"
+    }
+  ]
+}

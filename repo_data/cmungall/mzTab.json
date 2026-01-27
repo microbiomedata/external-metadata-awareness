@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-05-03T18:46:46Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "mzTab Reporting MS-based Proteomics and Metabolomics Results",
+  "name": "mzTab",
+  "updatedAt": "2021-04-29T07:07:57Z",
+  "url": "https://github.com/cmungall/mzTab",
+  "firstCommitDate": "2021-04-29T07:07:49Z",
+  "lastCommitDate": "2021-04-29T07:07:49Z",
+  "topContributors": [
+    {
+      "contributions": 141,
+      "login": "jgriss"
+    },
+    {
+      "contributions": 93,
+      "login": "andrewrobertjones"
+    },
+    {
+      "contributions": 44,
+      "login": "timosachsenberg"
+    },
+    {
+      "contributions": 24,
+      "login": "ypriverol"
+    },
+    {
+      "contributions": 19,
+      "login": "kayrein"
+    },
+    {
+      "contributions": 18,
+      "login": "sneumann"
+    },
+    {
+      "contributions": 17,
+      "login": "noedelta"
+    },
+    {
+      "contributions": 16,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 10,
+      "login": "mwalzer"
+    },
+    {
+      "contributions": 8,
+      "login": "florianEBI"
+    }
+  ]
+}

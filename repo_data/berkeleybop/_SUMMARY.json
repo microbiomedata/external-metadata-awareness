@@ -1,0 +1,888 @@
+[
+  {
+    "createdAt": "2016-11-23T16:48:44Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "apollo-log-scraper",
+    "updatedAt": "2016-11-23T16:48:46Z",
+    "url": "https://github.com/berkeleybop/apollo-log-scraper",
+    "firstCommitDate": "2016-11-23T16:25:35Z",
+    "lastCommitDate": "2016-11-23T16:25:35Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "nathandunn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-07-07T20:01:54Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "An ontology modeling classes and relationships describing deep learning networks, their component layers and activation functions, machine learning methods, as well as AI/ML potential biases.",
+    "name": "artificial-intelligence-ontology",
+    "updatedAt": "2025-08-17T13:02:10Z",
+    "url": "https://github.com/berkeleybop/artificial-intelligence-ontology",
+    "firstCommitDate": "2024-11-12T02:36:17Z",
+    "lastCommitDate": "2024-11-12T02:36:17Z",
+    "topContributors": [
+      {
+        "contributions": 101,
+        "login": "realmarcin"
+      },
+      {
+        "contributions": 81,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 63,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 6,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-01-06T23:31:33Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Manager for handling per-model client-to-client and server-to-client communication via Barista.",
+    "name": "bbop-client-barista",
+    "updatedAt": "2016-02-19T00:44:59Z",
+    "url": "https://github.com/berkeleybop/bbop-client-barista",
+    "firstCommitDate": "2016-05-25T04:57:47Z",
+    "lastCommitDate": "2016-05-25T04:57:47Z",
+    "topContributors": [
+      {
+        "contributions": 11,
+        "login": "kltm"
+      },
+      {
+        "contributions": 1,
+        "login": "DoctorBud"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-05-16T01:09:49Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A set of useful and common JavaScript functions to supplement other more basic utility libraries.",
+    "name": "bbop-core",
+    "updatedAt": "2024-06-11T16:52:49Z",
+    "url": "https://github.com/berkeleybop/bbop-core",
+    "firstCommitDate": "2024-06-11T16:13:05Z",
+    "lastCommitDate": "2024-06-11T16:13:05Z",
+    "topContributors": [
+      {
+        "contributions": 22,
+        "login": "kltm"
+      },
+      {
+        "contributions": 5,
+        "login": "pkalita-lbl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-05-28T23:36:01Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A subclass of bbop-graph that layers on a complete annotation and graph editing model for the Noctua set of tools.",
+    "name": "bbop-graph-noctua",
+    "updatedAt": "2020-07-02T22:43:41Z",
+    "url": "https://github.com/berkeleybop/bbop-graph-noctua",
+    "firstCommitDate": "2020-07-02T22:43:33Z",
+    "lastCommitDate": "2020-07-02T22:43:33Z",
+    "topContributors": [
+      {
+        "contributions": 127,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-05-16T00:02:46Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "General purpose (mathematical) graph library in JavaScript.",
+    "name": "bbop-graph",
+    "updatedAt": "2022-08-02T00:04:39Z",
+    "url": "https://github.com/berkeleybop/bbop-graph",
+    "firstCommitDate": "2022-08-10T00:34:14Z",
+    "lastCommitDate": "2022-08-10T00:34:14Z",
+    "topContributors": [
+      {
+        "contributions": 67,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2012-10-31T01:49:25Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Cross-platform client and server JavaScript library, with a concentration on Solr, graphs, utilities, and convenience methods.",
+    "name": "bbop-js",
+    "updatedAt": "2020-07-03T10:31:22Z",
+    "url": "https://github.com/berkeleybop/bbop-js",
+    "firstCommitDate": "2015-11-14T02:06:11Z",
+    "lastCommitDate": "2015-11-14T02:06:11Z",
+    "topContributors": [
+      {
+        "contributions": 664,
+        "login": "kltm"
+      },
+      {
+        "contributions": 54,
+        "login": "skinner"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-01-16T01:20:52Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A collection of external and in-house layout engines producing an abstract common output for JavaScript graphs.",
+    "name": "bbop-layout",
+    "updatedAt": "2020-10-31T07:31:36Z",
+    "url": "https://github.com/berkeleybop/bbop-layout",
+    "firstCommitDate": "2016-02-19T01:09:34Z",
+    "lastCommitDate": "2016-02-19T01:09:34Z",
+    "topContributors": [
+      {
+        "contributions": 12,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-01-13T22:06:19Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "BBOP object to try and take some of the pain out of managing the boolean logic that seems to show up periodically.",
+    "name": "bbop-logic",
+    "updatedAt": "2016-01-13T23:09:14Z",
+    "url": "https://github.com/berkeleybop/bbop-logic",
+    "firstCommitDate": "2016-01-14T01:27:17Z",
+    "lastCommitDate": "2016-01-14T01:27:17Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-11-16T00:37:45Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Manager for handling communication and callbacks with GOlr instances. ",
+    "name": "bbop-manager-golr",
+    "updatedAt": "2024-06-11T20:27:42Z",
+    "url": "https://github.com/berkeleybop/bbop-manager-golr",
+    "firstCommitDate": "2024-06-11T20:25:28Z",
+    "lastCommitDate": "2024-06-11T20:25:28Z",
+    "topContributors": [
+      {
+        "contributions": 34,
+        "login": "kltm"
+      },
+      {
+        "contributions": 9,
+        "login": "jnguyenx"
+      },
+      {
+        "contributions": 7,
+        "login": "pkalita-lbl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-07-29T18:18:32Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Manager for handling communication and callbacks with Minerva instances (mediated by Barista).",
+    "name": "bbop-manager-minerva",
+    "updatedAt": "2021-06-04T01:03:44Z",
+    "url": "https://github.com/berkeleybop/bbop-manager-minerva",
+    "firstCommitDate": "2021-06-04T01:03:38Z",
+    "lastCommitDate": "2021-06-04T01:03:38Z",
+    "topContributors": [
+      {
+        "contributions": 57,
+        "login": "kltm"
+      },
+      {
+        "contributions": 3,
+        "login": "lpalbou"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-09-12T02:35:49Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Manager for handling communication and callbacks with a SPARQL endpoint; also allows for use of templates.",
+    "name": "bbop-manager-sparql",
+    "updatedAt": "2018-07-03T22:19:28Z",
+    "url": "https://github.com/berkeleybop/bbop-manager-sparql",
+    "firstCommitDate": "2018-07-03T22:19:26Z",
+    "lastCommitDate": "2018-07-03T22:19:26Z",
+    "topContributors": [
+      {
+        "contributions": 16,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-07-28T21:23:27Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "bbop-ner-tasks",
+    "updatedAt": "2022-01-07T13:49:23Z",
+    "url": "https://github.com/berkeleybop/bbop-ner-tasks",
+    "firstCommitDate": "2023-05-05T18:03:04Z",
+    "lastCommitDate": "2023-05-05T18:03:04Z",
+    "topContributors": [
+      {
+        "contributions": 149,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 7,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 2,
+        "login": "caufieldjh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-07-28T21:35:07Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Generic lightweight listener/callback registry system.",
+    "name": "bbop-registry",
+    "updatedAt": "2016-02-19T00:36:13Z",
+    "url": "https://github.com/berkeleybop/bbop-registry",
+    "firstCommitDate": "2016-02-19T00:36:36Z",
+    "lastCommitDate": "2016-02-19T00:36:36Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-07-29T17:06:11Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Response handler for dealing with the parsing of responses from Barista (enveloping Minerva).",
+    "name": "bbop-response-barista",
+    "updatedAt": "2020-07-02T22:46:24Z",
+    "url": "https://github.com/berkeleybop/bbop-response-barista",
+    "firstCommitDate": "2020-07-02T22:46:17Z",
+    "lastCommitDate": "2020-07-02T22:46:17Z",
+    "topContributors": [
+      {
+        "contributions": 29,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-11-17T05:34:10Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Response type and API for handling the returns from a GOlr instance in a standard way.",
+    "name": "bbop-response-golr",
+    "updatedAt": "2016-03-29T00:16:36Z",
+    "url": "https://github.com/berkeleybop/bbop-response-golr",
+    "firstCommitDate": "2016-10-24T22:05:55Z",
+    "lastCommitDate": "2016-10-24T22:05:55Z",
+    "topContributors": [
+      {
+        "contributions": 12,
+        "login": "kltm"
+      },
+      {
+        "contributions": 2,
+        "login": "jnguyenx"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-07-28T20:25:50Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "The is the \"new\" version of the manager event model for BBOP systems.",
+    "name": "bbop-rest-manager",
+    "updatedAt": "2021-06-02T03:35:04Z",
+    "url": "https://github.com/berkeleybop/bbop-rest-manager",
+    "firstCommitDate": "2021-06-02T03:35:00Z",
+    "lastCommitDate": "2021-06-02T03:35:00Z",
+    "topContributors": [
+      {
+        "contributions": 44,
+        "login": "kltm"
+      },
+      {
+        "contributions": 10,
+        "login": "lpalbou"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-07-28T23:27:44Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Generic handler for dealing with the gross parsing and handling of responses from a REST service.",
+    "name": "bbop-rest-response",
+    "updatedAt": "2016-02-19T00:39:28Z",
+    "url": "https://github.com/berkeleybop/bbop-rest-response",
+    "firstCommitDate": "2016-10-21T01:05:18Z",
+    "lastCommitDate": "2016-10-21T01:05:18Z",
+    "topContributors": [
+      {
+        "contributions": 10,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-03-14T20:32:34Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "The set package for commpnly used BBOP widgets. This replaces the widgets from the old monolithic bundle.",
+    "name": "bbop-widget-set",
+    "updatedAt": "2016-03-14T20:50:07Z",
+    "url": "https://github.com/berkeleybop/bbop-widget-set",
+    "firstCommitDate": "2016-03-21T17:22:53Z",
+    "lastCommitDate": "2016-03-21T17:22:53Z",
+    "topContributors": [
+      {
+        "contributions": 56,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-07-22T23:03:22Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Autocomplete widget for Solr.",
+    "name": "bbop-widget-solr-autocomplete",
+    "updatedAt": "2015-07-22T23:14:11Z",
+    "url": "https://github.com/berkeleybop/bbop-widget-solr-autocomplete",
+    "firstCommitDate": "2015-07-28T18:53:44Z",
+    "lastCommitDate": "2015-07-28T18:53:44Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "jnguyenx"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-03-09T00:47:32Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Berkeley BOP devops",
+    "name": "bbops",
+    "updatedAt": "2021-03-09T00:47:42Z",
+    "url": "https://github.com/berkeleybop/bbops",
+    "firstCommitDate": "2021-03-09T00:47:33Z",
+    "lastCommitDate": "2021-03-09T00:47:33Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2014-07-22T17:34:55Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Experimental and in-development libraries for BBOP JS (bbop-js).",
+    "name": "bbopx-js",
+    "updatedAt": "2016-09-17T01:02:38Z",
+    "url": "https://github.com/berkeleybop/bbopx-js",
+    "firstCommitDate": "2016-09-17T01:03:43Z",
+    "lastCommitDate": "2016-09-17T01:03:43Z",
+    "topContributors": [
+      {
+        "contributions": 197,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-03-17T19:51:24Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A python library of common functionality and steps for use with the Behave testing framework.",
+    "name": "behave_core",
+    "updatedAt": "2015-03-18T20:01:06Z",
+    "url": "https://github.com/berkeleybop/behave_core",
+    "firstCommitDate": "2015-03-18T20:01:03Z",
+    "lastCommitDate": "2015-03-18T20:01:03Z",
+    "topContributors": [
+      {
+        "contributions": 14,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-05-09T23:54:12Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Homepages for the Berkeley BOP.",
+    "name": "berkeleybop.github.io",
+    "updatedAt": "2025-09-29T22:01:26Z",
+    "url": "https://github.com/berkeleybop/berkeleybop.github.io",
+    "firstCommitDate": "2025-09-29T22:01:18Z",
+    "lastCommitDate": "2025-09-29T22:01:18Z",
+    "topContributors": [
+      {
+        "contributions": 374,
+        "login": "nlharris"
+      },
+      {
+        "contributions": 68,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 39,
+        "login": "nathandunn"
+      },
+      {
+        "contributions": 38,
+        "login": "kltm"
+      },
+      {
+        "contributions": 14,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 12,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 11,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 11,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 8,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 8,
+        "login": "deepakunni3"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-04-24T21:53:59Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Generic repo for BBOP.",
+    "name": "berkeleybop",
+    "updatedAt": "2019-04-24T21:54:48Z",
+    "url": "https://github.com/berkeleybop/berkeleybop",
+    "firstCommitDate": "2019-04-24T21:54:46Z",
+    "lastCommitDate": "2019-04-24T21:54:46Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-05-24T19:51:28Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Biological and Environmental Research Ontology (BERO)",
+    "name": "bero",
+    "updatedAt": "2022-05-26T22:16:14Z",
+    "url": "https://github.com/berkeleybop/bero",
+    "firstCommitDate": "2023-03-27T17:36:09Z",
+    "lastCommitDate": "2023-03-27T17:36:09Z",
+    "topContributors": [
+      {
+        "contributions": 48,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 12,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-06-03T18:16:25Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A handling library for OWL-style class expressions in JavaScript.",
+    "name": "class-expression",
+    "updatedAt": "2017-10-01T13:15:25Z",
+    "url": "https://github.com/berkeleybop/class-expression",
+    "firstCommitDate": "2017-10-01T13:15:19Z",
+    "lastCommitDate": "2017-10-01T13:15:19Z",
+    "topContributors": [
+      {
+        "contributions": 29,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-03-19T18:54:10Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "contextualizer",
+    "updatedAt": "2025-05-22T18:28:29Z",
+    "url": "https://github.com/berkeleybop/contextualizer",
+    "firstCommitDate": "2025-05-16T21:33:53Z",
+    "lastCommitDate": "2025-05-16T21:33:53Z",
+    "topContributors": [
+      {
+        "contributions": 19,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 11,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 1,
+        "login": "gazimahmud"
+      },
+      {
+        "contributions": 1,
+        "login": "MrCreosote"
+      },
+      {
+        "contributions": 1,
+        "login": "iQuxLE"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-06-26T14:03:41Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "galaxy-monarch-curl",
+    "updatedAt": "2016-06-26T14:03:42Z",
+    "url": "https://github.com/berkeleybop/galaxy-monarch-curl",
+    "firstCommitDate": "2016-12-05T19:36:41Z",
+    "lastCommitDate": "2016-12-05T19:36:41Z",
+    "topContributors": [
+      {
+        "contributions": 65,
+        "login": "nathandunn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-11-16T23:15:52Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "GOlr configuration file handling and API.",
+    "name": "golr-conf",
+    "updatedAt": "2016-10-21T05:15:48Z",
+    "url": "https://github.com/berkeleybop/golr-conf",
+    "firstCommitDate": "2016-10-21T21:42:18Z",
+    "lastCommitDate": "2016-10-21T21:42:18Z",
+    "topContributors": [
+      {
+        "contributions": 11,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-11-22T00:09:45Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A service API and minimal webapp for accessing bulk numbers and calculations from a GOlr backend.",
+    "name": "golr-numbers-service",
+    "updatedAt": "2016-02-06T03:25:42Z",
+    "url": "https://github.com/berkeleybop/golr-numbers-service",
+    "firstCommitDate": "2016-02-06T03:25:29Z",
+    "lastCommitDate": "2016-02-06T03:25:29Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-08-30T03:55:28Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Utility to generate a schema.xml from a yaml config file.",
+    "name": "golr-schema",
+    "updatedAt": "2016-08-30T03:58:53Z",
+    "url": "https://github.com/berkeleybop/golr-schema",
+    "firstCommitDate": "2016-11-01T22:30:39Z",
+    "lastCommitDate": "2016-11-01T22:30:39Z",
+    "topContributors": [
+      {
+        "contributions": 15,
+        "login": "jnguyenx"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-03-29T20:01:02Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "group-meetings",
+    "updatedAt": "2024-10-01T20:55:39Z",
+    "url": "https://github.com/berkeleybop/group-meetings",
+    "firstCommitDate": "2024-10-01T20:55:36Z",
+    "lastCommitDate": "2024-10-01T20:55:36Z",
+    "topContributors": [
+      {
+        "contributions": 9,
+        "login": "nlharris"
+      },
+      {
+        "contributions": 2,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2010-10-08T18:57:15Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "AJAX Genome Browser",
+    "name": "jbrowse",
+    "updatedAt": "2016-03-14T20:27:10Z",
+    "url": "https://github.com/berkeleybop/jbrowse",
+    "firstCommitDate": "2013-09-12T11:51:58Z",
+    "lastCommitDate": "2013-09-12T11:51:58Z",
+    "topContributors": [
+      {
+        "contributions": 102,
+        "login": "GreggHelt2"
+      },
+      {
+        "contributions": 60,
+        "login": "rbuels"
+      },
+      {
+        "contributions": 9,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-05-14T18:51:33Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Schema for configurations / stylesheets for visualizing ontology and KGs",
+    "name": "kgviz-model",
+    "updatedAt": "2022-08-16T23:25:59Z",
+    "url": "https://github.com/berkeleybop/kgviz-model",
+    "firstCommitDate": "2022-08-17T00:02:20Z",
+    "lastCommitDate": "2022-08-17T00:02:20Z",
+    "topContributors": [
+      {
+        "contributions": 14,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-03-24T00:58:56Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "MegaCLI script to configure and monitor LSI raid cards.",
+    "name": "lsi.sh",
+    "updatedAt": "2024-11-16T08:38:20Z",
+    "url": "https://github.com/berkeleybop/lsi.sh",
+    "firstCommitDate": "2023-01-13T21:30:21Z",
+    "lastCommitDate": "2023-01-13T21:30:21Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "kltm"
+      },
+      {
+        "contributions": 2,
+        "login": "neomantra"
+      },
+      {
+        "contributions": 1,
+        "login": "incebellipipo"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-03-12T15:46:38Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Microbial ecophysiological trait and phenotype ontology",
+    "name": "metpo",
+    "updatedAt": "2025-09-23T19:08:27Z",
+    "url": "https://github.com/berkeleybop/metpo",
+    "firstCommitDate": "2025-09-23T19:08:21Z",
+    "lastCommitDate": "2025-09-23T19:08:21Z",
+    "topContributors": [
+      {
+        "contributions": 189,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 6,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 2,
+        "login": "realmarcin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-06-30T20:43:53Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "JavaScript library for generating request information for interactions with a Minerva server.",
+    "name": "minerva-requests",
+    "updatedAt": "2020-07-02T23:25:40Z",
+    "url": "https://github.com/berkeleybop/minerva-requests",
+    "firstCommitDate": "2020-07-02T23:25:32Z",
+    "lastCommitDate": "2020-07-02T23:25:32Z",
+    "topContributors": [
+      {
+        "contributions": 48,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-07-22T01:15:44Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Models for the \"generic\" Noctua.",
+    "name": "obo-models",
+    "updatedAt": "2016-10-27T20:08:57Z",
+    "url": "https://github.com/berkeleybop/obo-models",
+    "firstCommitDate": "2016-10-27T20:08:55Z",
+    "lastCommitDate": "2016-10-27T20:08:55Z",
+    "topContributors": [
+      {
+        "contributions": 22,
+        "login": "kltm"
+      },
+      {
+        "contributions": 16,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-05-02T01:25:33Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "berkeleybop.github.io webpages.",
+    "name": "old-berkeleybop.github.io",
+    "updatedAt": "2016-05-09T23:53:53Z",
+    "url": "https://github.com/berkeleybop/old-berkeleybop.github.io",
+    "firstCommitDate": "2015-05-02T01:26:55Z",
+    "lastCommitDate": "2015-05-02T01:26:55Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "kltm"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-10-10T21:38:13Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Server for maintaining certbot setup for letsencrypt wildcards.",
+    "name": "wildcard-certbot-server",
+    "updatedAt": "2022-10-11T02:44:06Z",
+    "url": "https://github.com/berkeleybop/wildcard-certbot-server",
+    "firstCommitDate": "2023-08-29T23:48:35Z",
+    "lastCommitDate": "2023-08-29T23:48:35Z",
+    "topContributors": [
+      {
+        "contributions": 17,
+        "login": "kltm"
+      },
+      {
+        "contributions": 11,
+        "login": "abessiari"
+      }
+    ]
+  }
+]

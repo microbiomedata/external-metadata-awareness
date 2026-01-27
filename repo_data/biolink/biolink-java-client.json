@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-02-08T04:17:59Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "biolink-java-client",
+  "updatedAt": "2024-08-26T23:09:09Z",
+  "url": "https://github.com/biolink/biolink-java-client",
+  "firstCommitDate": "2017-02-08T04:16:00Z",
+  "lastCommitDate": "2017-02-08T04:16:00Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

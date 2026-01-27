@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-07-10T09:58:31Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "robot-plugin-cookiecutter",
+  "updatedAt": "2025-04-01T13:15:15Z",
+  "url": "https://github.com/OBOFoundry/robot-plugin-cookiecutter",
+  "firstCommitDate": "2023-07-10T09:58:15Z",
+  "lastCommitDate": "2023-07-10T09:58:15Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "matentzn"
+    }
+  ]
+}

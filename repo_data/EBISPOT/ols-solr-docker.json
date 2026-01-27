@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-06-23T22:03:04Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "ols-solr-docker",
+  "updatedAt": "2020-06-23T22:17:24Z",
+  "url": "https://github.com/EBISPOT/ols-solr-docker",
+  "firstCommitDate": "2020-06-23T22:03:41Z",
+  "lastCommitDate": "2020-06-23T22:03:41Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "jamesamcl"
+    }
+  ]
+}

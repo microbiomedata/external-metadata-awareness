@@ -1,0 +1,54 @@
+{
+  "createdAt": "2017-09-20T16:46:09Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Mondo Disease Ontology",
+  "name": "mondo",
+  "updatedAt": "2025-09-30T14:48:16Z",
+  "url": "https://github.com/monarch-initiative/mondo",
+  "firstCommitDate": "2025-09-30T14:48:10Z",
+  "lastCommitDate": "2025-09-30T14:48:10Z",
+  "topContributors": [
+    {
+      "contributions": 7390,
+      "login": "nicolevasilevsky"
+    },
+    {
+      "contributions": 2150,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 965,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 910,
+      "login": "sabrinatoro"
+    },
+    {
+      "contributions": 216,
+      "login": "twhetzel"
+    },
+    {
+      "contributions": 183,
+      "login": "github-actions[bot]"
+    },
+    {
+      "contributions": 109,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 108,
+      "login": "katiermullen"
+    },
+    {
+      "contributions": 101,
+      "login": "MeeSiing"
+    },
+    {
+      "contributions": 70,
+      "login": "yshwetar"
+    }
+  ]
+}

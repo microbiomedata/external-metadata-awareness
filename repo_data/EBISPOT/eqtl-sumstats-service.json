@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-07-09T10:48:06Z",
+  "defaultBranchRef": {
+    "name": "dev"
+  },
+  "description": "eQTL Summary Statistics Service",
+  "name": "eqtl-sumstats-service",
+  "updatedAt": "2025-06-27T14:42:51Z",
+  "url": "https://github.com/EBISPOT/eqtl-sumstats-service",
+  "firstCommitDate": "2025-06-27T14:41:19Z",
+  "lastCommitDate": "2025-06-27T14:41:19Z",
+  "topContributors": [
+    {
+      "contributions": 82,
+      "login": "karatugo"
+    }
+  ]
+}

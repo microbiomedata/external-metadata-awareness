@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-11-01T09:53:48Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A test implementation for development of the GA4GH API over BioSamples.",
+  "name": "ga4gh-biosamples",
+  "updatedAt": "2017-05-05T10:10:36Z",
+  "url": "https://github.com/EBISPOT/ga4gh-biosamples",
+  "firstCommitDate": "2017-06-04T02:40:42Z",
+  "lastCommitDate": "2017-06-04T02:40:42Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "mcourtot"
+    }
+  ]
+}

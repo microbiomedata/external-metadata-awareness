@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-05-06T13:23:09Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Resources for data-driven and collaboratively refined mappings between ontology classes like ENVO:00002259 ‘agricultural soil’ to MIxS environmental context questions like env_medium, subsetted according to MIxS environmental extensions like Agriculture.",
+  "name": "context-collaboration",
+  "updatedAt": "2025-02-10T15:07:32Z",
+  "url": "https://github.com/microbiomedata/context-collaboration",
+  "firstCommitDate": "2024-05-13T16:37:40Z",
+  "lastCommitDate": "2024-05-13T16:37:40Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "turbomam"
+    }
+  ]
+}

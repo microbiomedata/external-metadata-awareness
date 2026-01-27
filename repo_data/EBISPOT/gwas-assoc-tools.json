@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-03-03T16:30:16Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "gwas-assoc-tools",
+  "updatedAt": "2025-06-05T11:05:47Z",
+  "url": "https://github.com/EBISPOT/gwas-assoc-tools",
+  "firstCommitDate": "2025-06-05T11:04:51Z",
+  "lastCommitDate": "2025-06-05T11:04:51Z",
+  "topContributors": [
+    {
+      "contributions": 51,
+      "login": "karatugo"
+    }
+  ]
+}

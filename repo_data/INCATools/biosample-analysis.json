@@ -1,0 +1,34 @@
+{
+  "createdAt": "2020-08-11T23:57:58Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "analysis of biosamples in INSDC",
+  "name": "biosample-analysis",
+  "updatedAt": "2022-01-05T19:25:22Z",
+  "url": "https://github.com/INCATools/biosample-analysis",
+  "firstCommitDate": "2022-01-05T19:25:07Z",
+  "lastCommitDate": "2022-01-05T19:25:07Z",
+  "topContributors": [
+    {
+      "contributions": 187,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 176,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 34,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 23,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 14,
+      "login": "realmarcin"
+    }
+  ]
+}

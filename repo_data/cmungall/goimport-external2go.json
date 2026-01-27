@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-06-07T23:01:39Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "goimport-external2go",
+  "updatedAt": "2016-06-07T23:01:39Z",
+  "url": "https://github.com/cmungall/goimport-external2go",
+  "firstCommitDate": "2016-06-07T09:20:52Z",
+  "lastCommitDate": "2016-06-07T09:20:52Z",
+  "topContributors": [
+    {
+      "contributions": 1019,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 45,
+      "login": "kltm"
+    }
+  ]
+}

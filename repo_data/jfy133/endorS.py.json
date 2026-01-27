@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-01-09T05:58:20Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "endorS.py calculates endogenous DNA from samtools flagstat files and print to screen",
+  "name": "endorS.py",
+  "updatedAt": "2020-01-09T05:58:23Z",
+  "url": "https://github.com/jfy133/endorS.py",
+  "firstCommitDate": "2020-01-08T14:49:32Z",
+  "lastCommitDate": "2020-01-08T14:49:32Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "aidaanva"
+    }
+  ]
+}

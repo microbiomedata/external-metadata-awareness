@@ -1,0 +1,22 @@
+{
+  "createdAt": "2016-09-10T22:07:15Z",
+  "defaultBranchRef": {
+    "name": "gh-pages"
+  },
+  "description": "test for biocaddie-gym",
+  "name": "mybiocaddie",
+  "updatedAt": "2016-09-10T22:07:17Z",
+  "url": "https://github.com/cmungall/mybiocaddie",
+  "firstCommitDate": "2016-09-11T05:36:37Z",
+  "lastCommitDate": "2016-09-11T05:36:37Z",
+  "topContributors": [
+    {
+      "contributions": 48,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "kshefchek"
+    }
+  ]
+}

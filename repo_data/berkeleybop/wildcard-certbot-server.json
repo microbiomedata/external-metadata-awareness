@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-10-10T21:38:13Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Server for maintaining certbot setup for letsencrypt wildcards.",
+  "name": "wildcard-certbot-server",
+  "updatedAt": "2022-10-11T02:44:06Z",
+  "url": "https://github.com/berkeleybop/wildcard-certbot-server",
+  "firstCommitDate": "2023-08-29T23:48:35Z",
+  "lastCommitDate": "2023-08-29T23:48:35Z",
+  "topContributors": [
+    {
+      "contributions": 17,
+      "login": "kltm"
+    },
+    {
+      "contributions": 11,
+      "login": "abessiari"
+    }
+  ]
+}

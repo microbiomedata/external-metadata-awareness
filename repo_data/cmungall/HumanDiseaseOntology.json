@@ -1,0 +1,26 @@
+{
+  "createdAt": "2016-02-18T04:13:55Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Repository for the Human Disease Ontology - work in progress, check back later",
+  "name": "HumanDiseaseOntology",
+  "updatedAt": "2016-02-18T04:14:06Z",
+  "url": "https://github.com/cmungall/HumanDiseaseOntology",
+  "firstCommitDate": "2016-02-17T16:48:17Z",
+  "lastCommitDate": "2016-02-17T16:48:17Z",
+  "topContributors": [
+    {
+      "contributions": 27,
+      "login": "lschriml"
+    },
+    {
+      "contributions": 23,
+      "login": "elviram"
+    },
+    {
+      "contributions": 13,
+      "login": "andrawaag"
+    }
+  ]
+}

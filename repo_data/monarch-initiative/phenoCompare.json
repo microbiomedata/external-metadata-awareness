@@ -1,0 +1,22 @@
+{
+  "createdAt": "2017-06-13T21:00:40Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Phenotype Compare",
+  "name": "phenoCompare",
+  "updatedAt": "2019-05-12T23:17:15Z",
+  "url": "https://github.com/monarch-initiative/phenoCompare",
+  "firstCommitDate": "2019-05-12T23:17:12Z",
+  "lastCommitDate": "2019-05-12T23:17:12Z",
+  "topContributors": [
+    {
+      "contributions": 93,
+      "login": "hannahblau"
+    },
+    {
+      "contributions": 12,
+      "login": "pnrobinson"
+    }
+  ]
+}

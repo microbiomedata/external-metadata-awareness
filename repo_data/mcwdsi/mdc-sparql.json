@@ -1,0 +1,30 @@
+{
+  "createdAt": "2017-04-25T11:44:18Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "sparql queries for the midas digital commons",
+  "name": "mdc-sparql",
+  "updatedAt": "2023-10-05T19:30:54Z",
+  "url": "https://github.com/mcwdsi/mdc-sparql",
+  "firstCommitDate": "2022-10-19T14:40:04Z",
+  "lastCommitDate": "2022-10-19T14:40:04Z",
+  "topContributors": [
+    {
+      "contributions": 73,
+      "login": "hoganwr"
+    },
+    {
+      "contributions": 2,
+      "login": "dillerm"
+    },
+    {
+      "contributions": 2,
+      "login": "atloiaco"
+    },
+    {
+      "contributions": 1,
+      "login": "monadica"
+    }
+  ]
+}

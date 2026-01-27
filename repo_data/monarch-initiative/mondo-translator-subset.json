@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-06-27T15:48:00Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Mondo translator subset which removes certain classes from the official Mondo release.",
+  "name": "mondo-translator-subset",
+  "updatedAt": "2024-11-04T22:47:21Z",
+  "url": "https://github.com/monarch-initiative/mondo-translator-subset",
+  "firstCommitDate": "2023-06-28T14:42:09Z",
+  "lastCommitDate": "2023-06-28T14:42:09Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 1,
+      "login": "sierra-moxon"
+    }
+  ]
+}

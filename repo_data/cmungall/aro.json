@@ -1,0 +1,22 @@
+{
+  "createdAt": "2025-03-07T05:28:51Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The Antibiotic Resistance Ontology (ARO) organizes the information describing the ability of a microorganism to withstand the effects of an antibiotic",
+  "name": "aro",
+  "updatedAt": "2025-03-07T05:28:51Z",
+  "url": "https://github.com/cmungall/aro",
+  "firstCommitDate": "2024-12-18T18:51:38Z",
+  "lastCommitDate": "2024-12-18T18:51:38Z",
+  "topContributors": [
+    {
+      "contributions": 37,
+      "login": "raphenya"
+    },
+    {
+      "contributions": 1,
+      "login": "althonos"
+    }
+  ]
+}

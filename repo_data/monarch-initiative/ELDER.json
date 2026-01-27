@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-12-18T12:18:01Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "LLM embeddings for rare disease diagnostics",
+  "name": "ELDER",
+  "updatedAt": "2025-09-17T22:09:17Z",
+  "url": "https://github.com/monarch-initiative/ELDER",
+  "firstCommitDate": "2025-08-25T22:23:46Z",
+  "lastCommitDate": "2025-08-25T22:23:46Z",
+  "topContributors": [
+    {
+      "contributions": 115,
+      "login": "iQuxLE"
+    },
+    {
+      "contributions": 4,
+      "login": "iimpulse"
+    }
+  ]
+}

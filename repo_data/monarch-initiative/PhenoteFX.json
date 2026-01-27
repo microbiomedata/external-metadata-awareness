@@ -1,0 +1,30 @@
+{
+  "createdAt": "2017-05-21T21:59:35Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "PhenoteFX",
+  "name": "PhenoteFX",
+  "updatedAt": "2024-09-30T15:28:53Z",
+  "url": "https://github.com/monarch-initiative/PhenoteFX",
+  "firstCommitDate": "2023-11-20T13:32:54Z",
+  "lastCommitDate": "2023-11-20T13:32:54Z",
+  "topContributors": [
+    {
+      "contributions": 212,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 39,
+      "login": "kingmanzhang"
+    },
+    {
+      "contributions": 1,
+      "login": "ielis"
+    },
+    {
+      "contributions": 1,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

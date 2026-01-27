@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-09-12T02:35:49Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Manager for handling communication and callbacks with a SPARQL endpoint; also allows for use of templates.",
+  "name": "bbop-manager-sparql",
+  "updatedAt": "2018-07-03T22:19:28Z",
+  "url": "https://github.com/berkeleybop/bbop-manager-sparql",
+  "firstCommitDate": "2018-07-03T22:19:26Z",
+  "lastCommitDate": "2018-07-03T22:19:26Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "kltm"
+    }
+  ]
+}

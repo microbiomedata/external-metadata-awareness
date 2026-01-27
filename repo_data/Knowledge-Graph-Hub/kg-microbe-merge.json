@@ -1,0 +1,30 @@
+{
+  "createdAt": "2024-07-30T16:53:25Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "kg-microbe-merge",
+  "updatedAt": "2025-08-13T08:23:03Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/kg-microbe-merge",
+  "firstCommitDate": "2025-03-17T17:54:34Z",
+  "lastCommitDate": "2025-03-17T17:54:34Z",
+  "topContributors": [
+    {
+      "contributions": 91,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 29,
+      "login": "realmarcin"
+    },
+    {
+      "contributions": 23,
+      "login": "bsantan"
+    },
+    {
+      "contributions": 1,
+      "login": "sierra-moxon"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2019-08-28T12:52:08Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Next generation MIxS implementation",
+  "name": "mixs-ng",
+  "updatedAt": "2021-05-10T23:26:53Z",
+  "url": "https://github.com/GenomicsStandardsConsortium/mixs-ng",
+  "firstCommitDate": "2021-05-10T23:26:51Z",
+  "lastCommitDate": "2021-05-10T23:26:51Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "folker"
+    },
+    {
+      "contributions": 1,
+      "login": "ramonawalls"
+    }
+  ]
+}

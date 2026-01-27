@@ -1,0 +1,22 @@
+{
+  "createdAt": "2020-07-02T22:18:00Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Simple CLI for Blazegraph",
+  "name": "blazegraph-runner",
+  "updatedAt": "2020-07-02T22:18:02Z",
+  "url": "https://github.com/cmungall/blazegraph-runner",
+  "firstCommitDate": "2020-06-22T19:20:47Z",
+  "lastCommitDate": "2020-06-22T19:20:47Z",
+  "topContributors": [
+    {
+      "contributions": 53,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 6,
+      "login": "dougli1sqrd"
+    }
+  ]
+}

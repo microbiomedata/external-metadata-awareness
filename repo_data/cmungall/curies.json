@@ -1,0 +1,26 @@
+{
+  "createdAt": "2022-08-15T14:48:17Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "🐸 Idiomatic conversion between URIs and compact URIs (CURIEs)",
+  "name": "curies",
+  "updatedAt": "2024-01-30T10:13:16Z",
+  "url": "https://github.com/cmungall/curies",
+  "firstCommitDate": "2023-07-31T13:08:25Z",
+  "lastCommitDate": "2023-07-31T13:08:25Z",
+  "topContributors": [
+    {
+      "contributions": 121,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "vemonet"
+    }
+  ]
+}

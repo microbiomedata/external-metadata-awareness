@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-06-19T09:13:38Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "monarch-semantic-similarity-profiles",
+  "updatedAt": "2025-01-31T06:49:24Z",
+  "url": "https://github.com/monarch-initiative/monarch-semantic-similarity-profiles",
+  "firstCommitDate": "2025-01-31T06:49:21Z",
+  "lastCommitDate": "2025-01-31T06:49:21Z",
+  "topContributors": [
+    {
+      "contributions": 31,
+      "login": "souzadevinicius"
+    },
+    {
+      "contributions": 21,
+      "login": "matentzn"
+    }
+  ]
+}

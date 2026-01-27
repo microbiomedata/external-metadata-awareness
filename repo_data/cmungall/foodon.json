@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-05-25T14:07:38Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The core repository for the FOODON food ontology project. This will hold the key classes of the ontology; larger files and the results of text-mining projects will be stored in other repos. ",
+  "name": "foodon",
+  "updatedAt": "2016-05-25T14:07:39Z",
+  "url": "https://github.com/cmungall/foodon",
+  "firstCommitDate": "2016-03-22T11:50:14Z",
+  "lastCommitDate": "2016-03-22T11:50:14Z",
+  "topContributors": [
+    {
+      "contributions": 9,
+      "login": "pbuttigieg"
+    }
+  ]
+}

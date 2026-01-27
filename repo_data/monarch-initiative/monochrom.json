@@ -1,0 +1,26 @@
+{
+  "createdAt": "2019-07-02T21:01:50Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Standardized identifiers and OWL classes for chromosomes and chromosomal parts across species ",
+  "name": "monochrom",
+  "updatedAt": "2025-06-01T14:49:05Z",
+  "url": "https://github.com/monarch-initiative/monochrom",
+  "firstCommitDate": "2025-06-01T14:49:01Z",
+  "lastCommitDate": "2025-06-01T14:49:01Z",
+  "topContributors": [
+    {
+      "contributions": 37,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 30,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 3,
+      "login": "sabrinatoro"
+    }
+  ]
+}

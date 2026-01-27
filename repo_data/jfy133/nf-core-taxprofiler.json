@@ -1,0 +1,54 @@
+{
+  "createdAt": "2025-08-21T07:15:49Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Highly parallelised multi-taxonomic profiling of shotgun short- and long-read metagenomic data",
+  "name": "nf-core-taxprofiler",
+  "updatedAt": "2025-08-21T07:15:49Z",
+  "url": "https://github.com/jfy133/nf-core-taxprofiler",
+  "firstCommitDate": "2025-03-13T08:21:29Z",
+  "lastCommitDate": "2025-03-13T08:21:29Z",
+  "topContributors": [
+    {
+      "contributions": 1021,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 417,
+      "login": "sofstam"
+    },
+    {
+      "contributions": 403,
+      "login": "LilyAnderssonLee"
+    },
+    {
+      "contributions": 106,
+      "login": "Midnighter"
+    },
+    {
+      "contributions": 62,
+      "login": "nf-core-bot"
+    },
+    {
+      "contributions": 33,
+      "login": "ljmesi"
+    },
+    {
+      "contributions": 14,
+      "login": "MillironX"
+    },
+    {
+      "contributions": 13,
+      "login": "mjamy"
+    },
+    {
+      "contributions": 12,
+      "login": "jianhong"
+    },
+    {
+      "contributions": 11,
+      "login": "muniheart"
+    }
+  ]
+}

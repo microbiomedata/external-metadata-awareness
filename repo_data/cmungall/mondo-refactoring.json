@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-07-12T01:39:00Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "mondo-refactoring",
+  "updatedAt": "2023-07-12T01:40:04Z",
+  "url": "https://github.com/cmungall/mondo-refactoring",
+  "firstCommitDate": "2023-07-13T17:05:57Z",
+  "lastCommitDate": "2023-07-13T17:05:57Z",
+  "topContributors": [
+    {
+      "contributions": 9,
+      "login": "cmungall"
+    }
+  ]
+}

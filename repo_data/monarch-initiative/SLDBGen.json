@@ -1,0 +1,38 @@
+{
+  "createdAt": "2020-01-22T18:48:28Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "SLDBGen",
+  "updatedAt": "2025-02-24T12:11:38Z",
+  "url": "https://github.com/monarch-initiative/SLDBGen",
+  "firstCommitDate": "2022-05-18T16:40:42Z",
+  "lastCommitDate": "2022-05-18T16:40:42Z",
+  "topContributors": [
+    {
+      "contributions": 157,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 25,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 20,
+      "login": "LeoPompidou"
+    },
+    {
+      "contributions": 13,
+      "login": "deepakunni3"
+    },
+    {
+      "contributions": 5,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    }
+  ]
+}

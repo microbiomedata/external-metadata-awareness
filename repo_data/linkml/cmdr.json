@@ -1,0 +1,42 @@
+{
+  "createdAt": "2023-03-06T21:14:18Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "cmdr",
+  "updatedAt": "2025-08-09T00:08:37Z",
+  "url": "https://github.com/linkml/cmdr",
+  "firstCommitDate": "2025-08-09T00:08:33Z",
+  "lastCommitDate": "2025-08-09T00:08:33Z",
+  "topContributors": [
+    {
+      "contributions": 28,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 21,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 8,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 6,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 5,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 4,
+      "login": "putmantime"
+    },
+    {
+      "contributions": 1,
+      "login": "amc-corey-cox"
+    }
+  ]
+}

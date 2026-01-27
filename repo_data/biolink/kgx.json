@@ -1,0 +1,54 @@
+{
+  "createdAt": "2018-04-24T02:09:07Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "KGX is a Python library for exchanging Knowledge Graphs",
+  "name": "kgx",
+  "updatedAt": "2025-09-22T10:09:31Z",
+  "url": "https://github.com/biolink/kgx",
+  "firstCommitDate": "2025-09-03T23:32:36Z",
+  "lastCommitDate": "2025-09-03T23:32:36Z",
+  "topContributors": [
+    {
+      "contributions": 630,
+      "login": "deepakunni3"
+    },
+    {
+      "contributions": 491,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 225,
+      "login": "lhannest"
+    },
+    {
+      "contributions": 54,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 40,
+      "login": "RichardBruskiewich"
+    },
+    {
+      "contributions": 27,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 24,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 22,
+      "login": "kennethbruskiewicz"
+    },
+    {
+      "contributions": 14,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 11,
+      "login": "hrshdhgd"
+    }
+  ]
+}

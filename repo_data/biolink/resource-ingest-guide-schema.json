@@ -1,0 +1,30 @@
+{
+  "createdAt": "2025-08-11T19:30:10Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A LinkML schema for describing the scope, rationale, and modeling approach for ingesting content from a single source.",
+  "name": "resource-ingest-guide-schema",
+  "updatedAt": "2025-09-23T01:00:51Z",
+  "url": "https://github.com/biolink/resource-ingest-guide-schema",
+  "firstCommitDate": "2025-09-23T01:00:46Z",
+  "lastCommitDate": "2025-09-23T01:00:46Z",
+  "topContributors": [
+    {
+      "contributions": 50,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 48,
+      "login": "RichardBruskiewich"
+    },
+    {
+      "contributions": 28,
+      "login": "mbrush"
+    },
+    {
+      "contributions": 1,
+      "login": "colleenXu"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "createdAt": "2013-07-30T01:30:34Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Monarch web application and API",
+  "name": "monarch-legacy",
+  "updatedAt": "2023-05-01T15:29:16Z",
+  "url": "https://github.com/monarch-initiative/monarch-legacy",
+  "firstCommitDate": "2020-02-10T21:49:10Z",
+  "lastCommitDate": "2020-02-10T21:49:10Z",
+  "topContributors": [
+    {
+      "contributions": 1563,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 604,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 264,
+      "login": "sarahjkim"
+    },
+    {
+      "contributions": 245,
+      "login": "yuanzhou"
+    },
+    {
+      "contributions": 199,
+      "login": "harryhoch"
+    },
+    {
+      "contributions": 164,
+      "login": "kltm"
+    },
+    {
+      "contributions": 130,
+      "login": "VincentIII"
+    },
+    {
+      "contributions": 125,
+      "login": "DoctorBud"
+    },
+    {
+      "contributions": 99,
+      "login": "jmcmurry"
+    },
+    {
+      "contributions": 92,
+      "login": "nlwashington"
+    }
+  ]
+}

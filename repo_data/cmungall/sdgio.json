@@ -1,0 +1,26 @@
+{
+  "createdAt": "2015-08-06T02:58:41Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The repository for the Sustainable Development Goals Interface Ontology",
+  "name": "sdgio",
+  "updatedAt": "2015-08-31T14:10:39Z",
+  "url": "https://github.com/cmungall/sdgio",
+  "firstCommitDate": "2015-08-31T13:20:16Z",
+  "lastCommitDate": "2015-08-31T13:20:16Z",
+  "topContributors": [
+    {
+      "contributions": 22,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 7,
+      "login": "pbuttigieg"
+    },
+    {
+      "contributions": 1,
+      "login": "ramonawalls"
+    }
+  ]
+}

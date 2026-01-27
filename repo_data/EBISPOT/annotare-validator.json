@@ -1,0 +1,22 @@
+{
+  "createdAt": "2018-10-09T14:15:58Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A validation script to ensure Annotare are informed of any important term changes.",
+  "name": "annotare-validator",
+  "updatedAt": "2019-06-07T14:45:10Z",
+  "url": "https://github.com/EBISPOT/annotare-validator",
+  "firstCommitDate": "2019-06-07T14:45:07Z",
+  "lastCommitDate": "2019-06-07T14:45:07Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 5,
+      "login": "zoependlington"
+    }
+  ]
+}

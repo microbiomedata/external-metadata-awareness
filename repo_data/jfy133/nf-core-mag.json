@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-08-31T13:04:02Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Assembly and binning of metagenomes",
+  "name": "nf-core-mag",
+  "updatedAt": "2022-02-09T13:28:51Z",
+  "url": "https://github.com/jfy133/nf-core-mag",
+  "firstCommitDate": "2023-03-02T10:03:17Z",
+  "lastCommitDate": "2023-03-02T10:03:17Z",
+  "topContributors": [
+    {
+      "contributions": 697,
+      "login": "skrakau"
+    },
+    {
+      "contributions": 227,
+      "login": "d4straub"
+    },
+    {
+      "contributions": 226,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 128,
+      "login": "HadrienG"
+    },
+    {
+      "contributions": 45,
+      "login": "maxibor"
+    },
+    {
+      "contributions": 36,
+      "login": "AntoniaSchuster"
+    },
+    {
+      "contributions": 27,
+      "login": "nf-core-bot"
+    },
+    {
+      "contributions": 20,
+      "login": "prototaxites"
+    },
+    {
+      "contributions": 11,
+      "login": "alexhbnr"
+    },
+    {
+      "contributions": 9,
+      "login": "maxulysse"
+    }
+  ]
+}

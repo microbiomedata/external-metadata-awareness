@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-02-03T01:52:26Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Example schema: RDA crosswalk",
+  "name": "rda-crosswalk",
+  "updatedAt": "2025-07-24T15:23:05Z",
+  "url": "https://github.com/linkml/rda-crosswalk",
+  "firstCommitDate": "2022-02-03T02:05:29Z",
+  "lastCommitDate": "2022-02-03T02:05:29Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

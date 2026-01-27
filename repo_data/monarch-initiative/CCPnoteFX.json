@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-11-20T19:04:34Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Complex-Common Disease PhenoteFX",
+  "name": "CCPnoteFX",
+  "updatedAt": "2021-11-22T13:58:35Z",
+  "url": "https://github.com/monarch-initiative/CCPnoteFX",
+  "firstCommitDate": "2021-11-22T00:51:41Z",
+  "lastCommitDate": "2021-11-22T00:51:41Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "pnrobinson"
+    }
+  ]
+}

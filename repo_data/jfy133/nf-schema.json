@@ -1,0 +1,54 @@
+{
+  "createdAt": "2025-02-11T07:57:29Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Functionality for working with pipeline and sample sheet schema files in Nextflow pipelines",
+  "name": "nf-schema",
+  "updatedAt": "2025-02-11T07:57:30Z",
+  "url": "https://github.com/jfy133/nf-schema",
+  "firstCommitDate": "2025-02-06T10:41:28Z",
+  "lastCommitDate": "2025-02-06T10:41:28Z",
+  "topContributors": [
+    {
+      "contributions": 466,
+      "login": "nvnieuwk"
+    },
+    {
+      "contributions": 267,
+      "login": "mirpedrol"
+    },
+    {
+      "contributions": 63,
+      "login": "ewels"
+    },
+    {
+      "contributions": 23,
+      "login": "adamrtalbot"
+    },
+    {
+      "contributions": 21,
+      "login": "awgymer"
+    },
+    {
+      "contributions": 12,
+      "login": "mashehu"
+    },
+    {
+      "contributions": 7,
+      "login": "pditommaso"
+    },
+    {
+      "contributions": 5,
+      "login": "koenbossers"
+    },
+    {
+      "contributions": 4,
+      "login": "jorgeaguileraseqera"
+    },
+    {
+      "contributions": 3,
+      "login": "stekaz"
+    }
+  ]
+}

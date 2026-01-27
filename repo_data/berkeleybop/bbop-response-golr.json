@@ -1,0 +1,22 @@
+{
+  "createdAt": "2015-11-17T05:34:10Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Response type and API for handling the returns from a GOlr instance in a standard way.",
+  "name": "bbop-response-golr",
+  "updatedAt": "2016-03-29T00:16:36Z",
+  "url": "https://github.com/berkeleybop/bbop-response-golr",
+  "firstCommitDate": "2016-10-24T22:05:55Z",
+  "lastCommitDate": "2016-10-24T22:05:55Z",
+  "topContributors": [
+    {
+      "contributions": 12,
+      "login": "kltm"
+    },
+    {
+      "contributions": 2,
+      "login": "jnguyenx"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-07-03T00:04:36Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Base framework for creating semantic QC dashboards",
+  "name": "dasher",
+  "updatedAt": "2020-07-03T04:25:33Z",
+  "url": "https://github.com/cmungall/dasher",
+  "firstCommitDate": "2020-07-03T02:06:25Z",
+  "lastCommitDate": "2020-07-03T02:06:25Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "cmungall"
+    }
+  ]
+}

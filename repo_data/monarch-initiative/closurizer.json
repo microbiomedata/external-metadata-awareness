@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-06-08T19:08:20Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Add closure expansion fields to kgx files following the Golr pattern",
+  "name": "closurizer",
+  "updatedAt": "2025-09-12T00:12:36Z",
+  "url": "https://github.com/monarch-initiative/closurizer",
+  "firstCommitDate": "2025-09-12T00:12:24Z",
+  "lastCommitDate": "2025-09-12T00:12:24Z",
+  "topContributors": [
+    {
+      "contributions": 97,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

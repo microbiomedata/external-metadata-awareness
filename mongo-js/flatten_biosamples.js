@@ -107,6 +107,10 @@ db.biosamples.aggregate([
         }
     },
     {
-        $out: "biosamples_flattened"
+        $out: "biosamples_flattened"  // IMPORTANT: Creates collection used by measurement discovery pipeline
     }
 ])
+
+// This script flattens the nested biosamples XML structure into a tabular format
+// Input: biosamples collection (nested XML structure)
+// Output: biosamples_flattened collection (tabular format with harmonized attributes as top-level fields)

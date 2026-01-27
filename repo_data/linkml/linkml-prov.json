@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-09-03T02:20:52Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "LinkML rendering of PROV",
+  "name": "linkml-prov",
+  "updatedAt": "2021-11-24T20:06:51Z",
+  "url": "https://github.com/linkml/linkml-prov",
+  "firstCommitDate": "2021-09-03T02:38:59Z",
+  "lastCommitDate": "2021-09-03T02:38:59Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

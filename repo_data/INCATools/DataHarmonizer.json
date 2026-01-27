@@ -1,0 +1,38 @@
+{
+  "createdAt": "2021-12-14T01:58:42Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A standardized browser-based spreadsheet editor and validator that can be run offline and locally, and which includes templates for SARS-CoV-2 sampling data.",
+  "name": "DataHarmonizer",
+  "updatedAt": "2021-12-14T01:58:44Z",
+  "url": "https://github.com/INCATools/DataHarmonizer",
+  "firstCommitDate": "2021-12-09T18:31:15Z",
+  "lastCommitDate": "2021-12-09T18:31:15Z",
+  "topContributors": [
+    {
+      "contributions": 38,
+      "login": "ddooley"
+    },
+    {
+      "contributions": 24,
+      "login": "cmrn-rhi"
+    },
+    {
+      "contributions": 2,
+      "login": "ivansg44"
+    },
+    {
+      "contributions": 1,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 1,
+      "login": "mgopez"
+    },
+    {
+      "contributions": 1,
+      "login": "griffie"
+    }
+  ]
+}

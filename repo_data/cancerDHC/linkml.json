@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-05-28T02:38:37Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Linked Open Data Modeling Language",
+  "name": "linkml",
+  "updatedAt": "2021-11-16T16:33:07Z",
+  "url": "https://github.com/cancerDHC/linkml",
+  "firstCommitDate": "2021-11-16T16:33:01Z",
+  "lastCommitDate": "2021-11-16T16:33:01Z",
+  "topContributors": [
+    {
+      "contributions": 247,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 140,
+      "login": "actions-user"
+    },
+    {
+      "contributions": 126,
+      "login": "hsolbrig"
+    },
+    {
+      "contributions": 85,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 30,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 24,
+      "login": "gaurav"
+    },
+    {
+      "contributions": 16,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 13,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 8,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 6,
+      "login": "joeflack4"
+    }
+  ]
+}

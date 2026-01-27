@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-08-25T01:57:57Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "New repo for building bio-chebi",
+  "name": "bio-chebi",
+  "updatedAt": "2017-01-06T02:44:18Z",
+  "url": "https://github.com/cmungall/bio-chebi",
+  "firstCommitDate": "2017-01-06T02:44:08Z",
+  "lastCommitDate": "2017-01-06T02:44:08Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

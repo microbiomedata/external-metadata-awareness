@@ -1,0 +1,22 @@
+{
+  "createdAt": "2015-11-13T17:10:18Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Web-application for pattern-based ontology class generation",
+  "name": "termgenie",
+  "updatedAt": "2015-11-13T17:10:22Z",
+  "url": "https://github.com/cmungall/termgenie",
+  "firstCommitDate": "2015-11-10T18:08:39Z",
+  "lastCommitDate": "2015-11-10T18:08:39Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "hdietze"
+    },
+    {
+      "contributions": 1,
+      "login": "bbopjenkins"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "createdAt": "2020-06-30T01:50:17Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Tools for working with KGCL",
+  "name": "kgcl-rdflib",
+  "updatedAt": "2025-04-24T13:42:09Z",
+  "url": "https://github.com/INCATools/kgcl-rdflib",
+  "firstCommitDate": "2024-11-19T16:41:31Z",
+  "lastCommitDate": "2024-11-19T16:41:31Z",
+  "topContributors": [
+    {
+      "contributions": 230,
+      "login": "ckindermann"
+    },
+    {
+      "contributions": 102,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 60,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 1,
+      "login": "nlharris"
+    },
+    {
+      "contributions": 1,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 1,
+      "login": "joeflack4"
+    }
+  ]
+}

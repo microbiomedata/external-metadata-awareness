@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-04-20T11:18:36Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Docker image for SciGraph ncats instance",
+  "name": "SciGraph-docker-ncats",
+  "updatedAt": "2017-04-20T20:26:02Z",
+  "url": "https://github.com/monarch-initiative/SciGraph-docker-ncats",
+  "firstCommitDate": "2017-04-20T13:50:43Z",
+  "lastCommitDate": "2017-04-20T13:50:43Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "jnguyenx"
+    }
+  ]
+}

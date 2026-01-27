@@ -1,0 +1,22 @@
+{
+  "createdAt": "2014-04-19T01:24:04Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "plant trait ontology",
+  "name": "plant-trait-ontology-TRY",
+  "updatedAt": "2015-04-21T23:02:18Z",
+  "url": "https://github.com/cmungall/plant-trait-ontology-TRY",
+  "firstCommitDate": "2014-04-30T00:27:13Z",
+  "lastCommitDate": "2014-04-30T00:27:13Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "ramonawalls"
+    }
+  ]
+}

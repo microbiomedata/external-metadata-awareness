@@ -175,10 +175,10 @@ def extract_components(text,
                 'local_digits_only': is_digits_only(local),
                 'prefix_uc': prefix,
                 'raw': ann,
-                'uses_bioportal_prefix': (bioportal_ontology_indicators_lc and
-                                          prefix in {x.upper() for x in bioportal_ontology_indicators_lc}),
-                'uses_obo_prefix': (obo_ontology_indicators_lc and
-                                    prefix in {x.upper() for x in obo_ontology_indicators_lc}),
+                'uses_bioportal_prefix': bool(bioportal_ontology_indicators_lc and
+                                               prefix in {x.upper() for x in bioportal_ontology_indicators_lc}),
+                'uses_obo_prefix': bool(obo_ontology_indicators_lc and
+                                        prefix in {x.upper() for x in obo_ontology_indicators_lc}),
             })
         else:
             components.append(make_plain_component(ann))

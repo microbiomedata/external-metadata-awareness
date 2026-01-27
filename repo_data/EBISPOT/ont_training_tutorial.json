@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-02-04T09:21:31Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Ontology training tutorial, built on ODK",
+  "name": "ont_training_tutorial",
+  "updatedAt": "2021-02-04T09:21:35Z",
+  "url": "https://github.com/EBISPOT/ont_training_tutorial",
+  "firstCommitDate": "2021-02-04T09:21:32Z",
+  "lastCommitDate": "2021-02-04T09:21:32Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "dosumis"
+    }
+  ]
+}

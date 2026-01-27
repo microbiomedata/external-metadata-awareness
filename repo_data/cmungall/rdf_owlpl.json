@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-01-16T19:33:09Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "OWL using swipl semweb/rdf libraries",
+  "name": "rdf_owlpl",
+  "updatedAt": "2023-08-03T02:23:21Z",
+  "url": "https://github.com/cmungall/rdf_owlpl",
+  "firstCommitDate": "2018-01-16T19:29:32Z",
+  "lastCommitDate": "2018-01-16T19:29:32Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

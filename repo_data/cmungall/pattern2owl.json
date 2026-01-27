@@ -1,0 +1,22 @@
+{
+  "createdAt": "2015-10-20T04:12:37Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "pattern2owl",
+  "updatedAt": "2018-01-23T12:05:07Z",
+  "url": "https://github.com/cmungall/pattern2owl",
+  "firstCommitDate": "2018-03-07T23:36:01Z",
+  "lastCommitDate": "2018-03-07T23:36:01Z",
+  "topContributors": [
+    {
+      "contributions": 20,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "marieALaporte"
+    }
+  ]
+}

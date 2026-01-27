@@ -1,0 +1,13 @@
+{
+  "createdAt": "2025-08-20T14:55:36Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "linkml-browser",
+  "updatedAt": "2025-08-29T12:45:03Z",
+  "url": "https://github.com/linkml/linkml-browser",
+  "firstCommitDate": "2025-08-20T21:32:13Z",
+  "lastCommitDate": "2025-08-20T21:32:13Z",
+  "topContributors": []
+}

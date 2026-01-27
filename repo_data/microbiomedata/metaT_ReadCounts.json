@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-07-08T23:18:55Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Workflow for metatranscriptome read counting",
+  "name": "metaT_ReadCounts",
+  "updatedAt": "2025-04-15T23:07:14Z",
+  "url": "https://github.com/microbiomedata/metaT_ReadCounts",
+  "firstCommitDate": "2025-04-15T23:07:09Z",
+  "lastCommitDate": "2025-04-15T23:07:09Z",
+  "topContributors": [
+    {
+      "contributions": 40,
+      "login": "kaijli"
+    },
+    {
+      "contributions": 2,
+      "login": "eecavanna"
+    }
+  ]
+}

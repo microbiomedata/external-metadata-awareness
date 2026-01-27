@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-09-27T02:02:38Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "boomer-py",
+  "updatedAt": "2025-09-27T13:54:31Z",
+  "url": "https://github.com/monarch-initiative/boomer-py",
+  "firstCommitDate": "2025-09-27T02:09:25Z",
+  "lastCommitDate": "2025-09-27T02:09:25Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "cmungall-lbl"
+    }
+  ]
+}

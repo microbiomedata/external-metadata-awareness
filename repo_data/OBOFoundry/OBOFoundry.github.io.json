@@ -1,0 +1,54 @@
+{
+  "createdAt": "2015-07-29T02:24:48Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Metadata and website for the Open Bio Ontologies Foundry Ontology Registry",
+  "name": "OBOFoundry.github.io",
+  "updatedAt": "2025-09-30T16:27:24Z",
+  "url": "https://github.com/OBOFoundry/OBOFoundry.github.io",
+  "firstCommitDate": "2025-09-30T16:27:17Z",
+  "lastCommitDate": "2025-09-30T16:27:17Z",
+  "topContributors": [
+    {
+      "contributions": 963,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 521,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 465,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 343,
+      "login": "nataled"
+    },
+    {
+      "contributions": 221,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 211,
+      "login": "nicolevasilevsky"
+    },
+    {
+      "contributions": 178,
+      "login": "nlharris"
+    },
+    {
+      "contributions": 159,
+      "login": "rvita"
+    },
+    {
+      "contributions": 149,
+      "login": "github-actions[bot]"
+    },
+    {
+      "contributions": 98,
+      "login": "lschriml"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "createdAt": "2022-08-13T19:11:08Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A small example pipeline used to test new nf-core infrastructure and common code.",
+  "name": "nf-core-testpipeline",
+  "updatedAt": "2021-05-11T20:25:04Z",
+  "url": "https://github.com/jfy133/nf-core-testpipeline",
+  "firstCommitDate": "2021-05-06T14:48:07Z",
+  "lastCommitDate": "2021-05-06T14:48:07Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "ggabernet"
+    },
+    {
+      "contributions": 3,
+      "login": "ewels"
+    },
+    {
+      "contributions": 1,
+      "login": "nf-core-bot"
+    }
+  ]
+}

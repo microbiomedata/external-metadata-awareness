@@ -1,0 +1,30 @@
+{
+  "createdAt": "2024-07-13T19:26:32Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Command-line program that scans NMDC database for referential integrity violations",
+  "name": "refscan",
+  "updatedAt": "2025-09-01T00:14:44Z",
+  "url": "https://github.com/microbiomedata/refscan",
+  "firstCommitDate": "2025-09-01T00:14:40Z",
+  "lastCommitDate": "2025-09-01T00:14:40Z",
+  "topContributors": [
+    {
+      "contributions": 213,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 2,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 2,
+      "login": "Copilot"
+    },
+    {
+      "contributions": 1,
+      "login": "shreddd"
+    }
+  ]
+}

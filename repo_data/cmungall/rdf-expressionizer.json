@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-01-29T19:32:06Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Translates named classes to equivalent class expressions",
+  "name": "rdf-expressionizer",
+  "updatedAt": "2025-03-31T19:58:53Z",
+  "url": "https://github.com/cmungall/rdf-expressionizer",
+  "firstCommitDate": "2024-01-29T19:57:26Z",
+  "lastCommitDate": "2024-01-29T19:57:26Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

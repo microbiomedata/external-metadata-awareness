@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-03-29T19:11:45Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Issues, support, and discussion for KG-Hub. Covers tools, infrastructure, and graph projects.",
+  "name": "knowledge-graph-hub-support",
+  "updatedAt": "2025-07-26T04:39:08Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/knowledge-graph-hub-support",
+  "firstCommitDate": "2023-05-05T19:48:11Z",
+  "lastCommitDate": "2023-05-05T19:48:11Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 1,
+      "login": "justaddcoffee"
+    }
+  ]
+}

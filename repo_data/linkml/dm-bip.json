@@ -1,0 +1,38 @@
+{
+  "createdAt": "2025-01-08T22:45:57Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Data Model Based Ingestion Pipeline",
+  "name": "dm-bip",
+  "updatedAt": "2025-09-29T19:12:46Z",
+  "url": "https://github.com/linkml/dm-bip",
+  "firstCommitDate": "2025-09-29T19:12:41Z",
+  "lastCommitDate": "2025-09-29T19:12:41Z",
+  "topContributors": [
+    {
+      "contributions": 284,
+      "login": "amc-corey-cox"
+    },
+    {
+      "contributions": 100,
+      "login": "twhetzel"
+    },
+    {
+      "contributions": 27,
+      "login": "ptgolden"
+    },
+    {
+      "contributions": 3,
+      "login": "tursynay"
+    },
+    {
+      "contributions": 2,
+      "login": "madanucd"
+    },
+    {
+      "contributions": 1,
+      "login": "rjruizes"
+    }
+  ]
+}

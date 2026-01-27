@@ -1,0 +1,38 @@
+{
+  "createdAt": "2023-02-03T18:04:12Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Simple rust implementation of semantic similarity",
+  "name": "semsimian",
+  "updatedAt": "2025-06-24T14:12:06Z",
+  "url": "https://github.com/monarch-initiative/semsimian",
+  "firstCommitDate": "2024-08-26T16:57:55Z",
+  "lastCommitDate": "2024-08-26T16:57:55Z",
+  "topContributors": [
+    {
+      "contributions": 614,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 113,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 15,
+      "login": "iQuxLE"
+    },
+    {
+      "contributions": 11,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 2,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "kevinschaper"
+    }
+  ]
+}

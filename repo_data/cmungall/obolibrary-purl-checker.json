@@ -1,0 +1,18 @@
+{
+  "createdAt": "2014-03-02T22:30:47Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Checks obolibrary.org PURLs",
+  "name": "obolibrary-purl-checker",
+  "updatedAt": "2014-03-03T16:05:33Z",
+  "url": "https://github.com/cmungall/obolibrary-purl-checker",
+  "firstCommitDate": "2014-03-03T16:05:24Z",
+  "lastCommitDate": "2014-03-03T16:05:24Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "cmungall"
+    }
+  ]
+}

@@ -1,0 +1,593 @@
+🔍 Analyzing collections in database: ncbi_metadata
+📊 Sample size per collection: 100
+================================================================================
+
+📁 Analyzing collection: attribute_harmonized_pairings
+
+📁 Analyzing collection: attributes
+
+📁 Analyzing collection: biosamples
+
+📁 Analyzing collection: biosamples_attributes
+
+📁 Analyzing collection: biosamples_env_triad_value_counts_gt_1
+
+📁 Analyzing collection: biosamples_flattened
+
+📁 Analyzing collection: biosamples_ids
+
+📁 Analyzing collection: biosamples_links
+
+📁 Analyzing collection: content_pairs_aggregated
+
+📁 Analyzing collection: env_triad_component_curies_uc
+
+📁 Analyzing collection: env_triad_component_labels
+
+📁 Analyzing collection: env_triads
+
+📁 Analyzing collection: env_triads_flattened
+
+📁 Analyzing collection: global_mixs_slots
+
+📁 Analyzing collection: global_nmdc_slots
+
+📁 Analyzing collection: harmonized_name_dimensional_stats
+
+📁 Analyzing collection: harmonized_name_usage_stats
+
+📁 Analyzing collection: measurement_evidence_percentages
+
+📁 Analyzing collection: measurement_results_skip_filtered
+
+📁 Analyzing collection: mixed_content_counts
+
+📁 Analyzing collection: ncbi_attributes_flattened
+
+📁 Analyzing collection: ncbi_packages_flattened
+
+📁 Analyzing collection: nmdc_range_slot_usage_report
+
+📁 Analyzing collection: packages
+
+📁 Analyzing collection: sra_biosamples_bioprojects
+
+📁 Analyzing collection: unit_assertion_counts
+
+================================================================================
+📈 FLATNESS SUMMARY (sorted by flatness score)
+================================================================================
+{
+  "attribute_harmonized_pairings": {
+    "collection_name": "attribute_harmonized_pairings",
+    "total_documents": 20937,
+    "sampled_documents": 100,
+    "flatness_score": 100.0,
+    "max_depth": 0,
+    "unique_simple_fields": 4,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 0,
+    "most_common_nested": [],
+    "most_common_arrays": []
+  },
+  "attributes": {
+    "collection_name": "attributes",
+    "total_documents": 960,
+    "sampled_documents": 100,
+    "flatness_score": 49.7,
+    "max_depth": 1,
+    "unique_simple_fields": 12,
+    "unique_nested_fields": 6,
+    "unique_array_fields": 2,
+    "most_common_nested": [
+      [
+        "Name",
+        100
+      ],
+      [
+        "HarmonizedName",
+        100
+      ],
+      [
+        "Description",
+        99
+      ],
+      [
+        "Format",
+        94
+      ],
+      [
+        "Synonym",
+        62
+      ]
+    ],
+    "most_common_arrays": [
+      [
+        "Package",
+        82
+      ],
+      [
+        "Synonym",
+        9
+      ]
+    ]
+  },
+  "biosamples": {
+    "collection_name": "biosamples",
+    "total_documents": 3037277,
+    "sampled_documents": 100,
+    "flatness_score": 15.3,
+    "max_depth": 5,
+    "unique_simple_fields": 43,
+    "unique_nested_fields": 23,
+    "unique_array_fields": 5,
+    "most_common_nested": [
+      [
+        "Ids",
+        100
+      ],
+      [
+        "Description",
+        100
+      ],
+      [
+        "Description.Title",
+        100
+      ],
+      [
+        "Description.Organism",
+        100
+      ],
+      [
+        "Owner",
+        100
+      ]
+    ],
+    "most_common_arrays": [
+      [
+        "Attributes.Attribute",
+        100
+      ],
+      [
+        "Ids.Id",
+        99
+      ],
+      [
+        "Models.Model",
+        52
+      ],
+      [
+        "Description.Comment.Paragraph",
+        20
+      ],
+      [
+        "Links.Link",
+        3
+      ]
+    ]
+  },
+  "biosamples_attributes": {
+    "collection_name": "biosamples_attributes",
+    "total_documents": 52518729,
+    "sampled_documents": 100,
+    "flatness_score": 100.0,
+    "max_depth": 0,
+    "unique_simple_fields": 7,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 0,
+    "most_common_nested": [],
+    "most_common_arrays": []
+  },
+  "biosamples_env_triad_value_counts_gt_1": {
+    "collection_name": "biosamples_env_triad_value_counts_gt_1",
+    "total_documents": 49329,
+    "sampled_documents": 100,
+    "flatness_score": 85.9,
+    "max_depth": 1,
+    "unique_simple_fields": 21,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 1,
+    "most_common_nested": [],
+    "most_common_arrays": [
+      [
+        "components",
+        97
+      ]
+    ]
+  },
+  "biosamples_flattened": {
+    "collection_name": "biosamples_flattened",
+    "total_documents": 3037277,
+    "sampled_documents": 100,
+    "flatness_score": 100.0,
+    "max_depth": 0,
+    "unique_simple_fields": 145,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 0,
+    "most_common_nested": [],
+    "most_common_arrays": []
+  },
+  "biosamples_ids": {
+    "collection_name": "biosamples_ids",
+    "total_documents": 7871449,
+    "sampled_documents": 100,
+    "flatness_score": 100.0,
+    "max_depth": 0,
+    "unique_simple_fields": 6,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 0,
+    "most_common_nested": [],
+    "most_common_arrays": []
+  },
+  "biosamples_links": {
+    "collection_name": "biosamples_links",
+    "total_documents": 2335376,
+    "sampled_documents": 100,
+    "flatness_score": 100.0,
+    "max_depth": 0,
+    "unique_simple_fields": 6,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 0,
+    "most_common_nested": [],
+    "most_common_arrays": []
+  },
+  "content_pairs_aggregated": {
+    "collection_name": "content_pairs_aggregated",
+    "total_documents": 2331732,
+    "sampled_documents": 100,
+    "flatness_score": 100.0,
+    "max_depth": 0,
+    "unique_simple_fields": 5,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 0,
+    "most_common_nested": [],
+    "most_common_arrays": []
+  },
+  "env_triad_component_curies_uc": {
+    "collection_name": "env_triad_component_curies_uc",
+    "total_documents": 4549,
+    "sampled_documents": 100,
+    "flatness_score": 99.6,
+    "max_depth": 1,
+    "unique_simple_fields": 12,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 1,
+    "most_common_nested": [],
+    "most_common_arrays": [
+      [
+        "mappings",
+        2
+      ]
+    ]
+  },
+  "env_triad_component_labels": {
+    "collection_name": "env_triad_component_labels",
+    "total_documents": 35141,
+    "sampled_documents": 100,
+    "flatness_score": 83.8,
+    "max_depth": 2,
+    "unique_simple_fields": 24,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 3,
+    "most_common_nested": [],
+    "most_common_arrays": [
+      [
+        "oak_text_annotations",
+        100
+      ],
+      [
+        "ols_text_annotations",
+        9
+      ],
+      [
+        "ols_text_annotations[0].synonyms",
+        9
+      ]
+    ]
+  },
+  "env_triads": {
+    "collection_name": "env_triads",
+    "total_documents": 3037277,
+    "sampled_documents": 100,
+    "flatness_score": 52.0,
+    "max_depth": 2,
+    "unique_simple_fields": 20,
+    "unique_nested_fields": 3,
+    "unique_array_fields": 3,
+    "most_common_nested": [
+      [
+        "env_broad_scale",
+        100
+      ],
+      [
+        "env_local_scale",
+        100
+      ],
+      [
+        "env_medium",
+        100
+      ]
+    ],
+    "most_common_arrays": [
+      [
+        "env_broad_scale.components",
+        100
+      ],
+      [
+        "env_local_scale.components",
+        100
+      ],
+      [
+        "env_medium.components",
+        100
+      ]
+    ]
+  },
+  "env_triads_flattened": {
+    "collection_name": "env_triads_flattened",
+    "total_documents": 9262719,
+    "sampled_documents": 100,
+    "flatness_score": 100.0,
+    "max_depth": 0,
+    "unique_simple_fields": 10,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 0,
+    "most_common_nested": [],
+    "most_common_arrays": []
+  },
+  "global_mixs_slots": {
+    "collection_name": "global_mixs_slots",
+    "total_documents": 772,
+    "sampled_documents": 100,
+    "flatness_score": 74.3,
+    "max_depth": 1,
+    "unique_simple_fields": 23,
+    "unique_nested_fields": 2,
+    "unique_array_fields": 4,
+    "most_common_nested": [
+      [
+        "annotations",
+        59
+      ],
+      [
+        "structured_pattern",
+        41
+      ]
+    ],
+    "most_common_arrays": [
+      [
+        "keywords",
+        83
+      ],
+      [
+        "examples",
+        68
+      ],
+      [
+        "in_subset",
+        13
+      ],
+      [
+        "comments",
+        3
+      ]
+    ]
+  },
+  "global_nmdc_slots": {
+    "collection_name": "global_nmdc_slots",
+    "total_documents": 841,
+    "sampled_documents": 100,
+    "flatness_score": 72.6,
+    "max_depth": 2,
+    "unique_simple_fields": 40,
+    "unique_nested_fields": 7,
+    "unique_array_fields": 11,
+    "most_common_nested": [
+      [
+        "annotations",
+        54
+      ],
+      [
+        "annotations.expected_value",
+        53
+      ],
+      [
+        "annotations.occurrence",
+        49
+      ],
+      [
+        "annotations.preferred_unit",
+        11
+      ],
+      [
+        "annotations.storage_units",
+        8
+      ]
+    ],
+    "most_common_arrays": [
+      [
+        "examples",
+        63
+      ],
+      [
+        "aliases",
+        56
+      ],
+      [
+        "comments",
+        11
+      ],
+      [
+        "see_also",
+        7
+      ],
+      [
+        "mixins",
+        7
+      ]
+    ]
+  },
+  "harmonized_name_dimensional_stats": {
+    "collection_name": "harmonized_name_dimensional_stats",
+    "total_documents": 432,
+    "sampled_documents": 100,
+    "flatness_score": 100.0,
+    "max_depth": 0,
+    "unique_simple_fields": 14,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 0,
+    "most_common_nested": [],
+    "most_common_arrays": []
+  },
+  "harmonized_name_usage_stats": {
+    "collection_name": "harmonized_name_usage_stats",
+    "total_documents": 695,
+    "sampled_documents": 100,
+    "flatness_score": 100.0,
+    "max_depth": 0,
+    "unique_simple_fields": 4,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 0,
+    "most_common_nested": [],
+    "most_common_arrays": []
+  },
+  "measurement_evidence_percentages": {
+    "collection_name": "measurement_evidence_percentages",
+    "total_documents": 695,
+    "sampled_documents": 100,
+    "flatness_score": 100.0,
+    "max_depth": 0,
+    "unique_simple_fields": 12,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 0,
+    "most_common_nested": [],
+    "most_common_arrays": []
+  },
+  "measurement_results_skip_filtered": {
+    "collection_name": "measurement_results_skip_filtered",
+    "total_documents": 87466,
+    "sampled_documents": 100,
+    "flatness_score": 100.0,
+    "max_depth": 0,
+    "unique_simple_fields": 13,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 0,
+    "most_common_nested": [],
+    "most_common_arrays": []
+  },
+  "mixed_content_counts": {
+    "collection_name": "mixed_content_counts",
+    "total_documents": 440,
+    "sampled_documents": 100,
+    "flatness_score": 100.0,
+    "max_depth": 0,
+    "unique_simple_fields": 3,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 0,
+    "most_common_nested": [],
+    "most_common_arrays": []
+  },
+  "ncbi_attributes_flattened": {
+    "collection_name": "ncbi_attributes_flattened",
+    "total_documents": 960,
+    "sampled_documents": 100,
+    "flatness_score": 100.0,
+    "max_depth": 0,
+    "unique_simple_fields": 9,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 0,
+    "most_common_nested": [],
+    "most_common_arrays": []
+  },
+  "ncbi_packages_flattened": {
+    "collection_name": "ncbi_packages_flattened",
+    "total_documents": 229,
+    "sampled_documents": 100,
+    "flatness_score": 100.0,
+    "max_depth": 0,
+    "unique_simple_fields": 13,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 0,
+    "most_common_nested": [],
+    "most_common_arrays": []
+  },
+  "nmdc_range_slot_usage_report": {
+    "collection_name": "nmdc_range_slot_usage_report",
+    "total_documents": 44,
+    "sampled_documents": 44,
+    "flatness_score": 85.0,
+    "max_depth": 1,
+    "unique_simple_fields": 15,
+    "unique_nested_fields": 1,
+    "unique_array_fields": 0,
+    "most_common_nested": [
+      [
+        "other_slot_usage_properties",
+        44
+      ]
+    ],
+    "most_common_arrays": []
+  },
+  "packages": {
+    "collection_name": "packages",
+    "total_documents": 229,
+    "sampled_documents": 100,
+    "flatness_score": 43.4,
+    "max_depth": 1,
+    "unique_simple_fields": 17,
+    "unique_nested_fields": 8,
+    "unique_array_fields": 1,
+    "most_common_nested": [
+      [
+        "Name",
+        100
+      ],
+      [
+        "DisplayName",
+        100
+      ],
+      [
+        "ShortName",
+        100
+      ],
+      [
+        "EnvPackage",
+        100
+      ],
+      [
+        "EnvPackageDisplay",
+        100
+      ]
+    ],
+    "most_common_arrays": [
+      [
+        "Antibiogram",
+        2
+      ]
+    ]
+  },
+  "sra_biosamples_bioprojects": {
+    "collection_name": "sra_biosamples_bioprojects",
+    "total_documents": 31809491,
+    "sampled_documents": 100,
+    "flatness_score": 100.0,
+    "max_depth": 0,
+    "unique_simple_fields": 3,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 0,
+    "most_common_nested": [],
+    "most_common_arrays": []
+  },
+  "unit_assertion_counts": {
+    "collection_name": "unit_assertion_counts",
+    "total_documents": 13,
+    "sampled_documents": 13,
+    "flatness_score": 100.0,
+    "max_depth": 0,
+    "unique_simple_fields": 4,
+    "unique_nested_fields": 0,
+    "unique_array_fields": 0,
+    "most_common_nested": [],
+    "most_common_arrays": []
+  }
+}

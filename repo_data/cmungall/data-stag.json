@@ -1,0 +1,22 @@
+{
+  "createdAt": "2009-12-14T23:17:25Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "perl module  for querying and manipulating complex data as recursively nested tag/value pairs (Structured tags or Simple Tree aggreggates)",
+  "name": "data-stag",
+  "updatedAt": "2018-12-11T10:14:16Z",
+  "url": "https://github.com/cmungall/data-stag",
+  "firstCommitDate": "2015-07-25T00:10:07Z",
+  "lastCommitDate": "2015-07-25T00:10:07Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "haaninjo"
+    }
+  ]
+}

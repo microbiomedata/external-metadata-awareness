@@ -1,0 +1,26 @@
+{
+  "createdAt": "2023-05-20T08:26:19Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Repository of Quarto version of nf-core/taxprofiler manuscript",
+  "name": "taxprofiler-manuscript",
+  "updatedAt": "2023-07-13T04:00:07Z",
+  "url": "https://github.com/jfy133/taxprofiler-manuscript",
+  "firstCommitDate": "2023-10-20T09:00:41Z",
+  "lastCommitDate": "2023-10-20T09:00:41Z",
+  "topContributors": [
+    {
+      "contributions": 69,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 5,
+      "login": "sofstam"
+    },
+    {
+      "contributions": 4,
+      "login": "Midnighter"
+    }
+  ]
+}

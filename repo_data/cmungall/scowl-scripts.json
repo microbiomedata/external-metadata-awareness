@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-03-02T02:44:50Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "initial experimentation with wrapping useful scowl utils in scripts",
+  "name": "scowl-scripts",
+  "updatedAt": "2020-03-02T02:45:06Z",
+  "url": "https://github.com/cmungall/scowl-scripts",
+  "firstCommitDate": "2020-03-02T02:44:08Z",
+  "lastCommitDate": "2020-03-02T02:44:08Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

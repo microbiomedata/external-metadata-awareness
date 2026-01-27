@@ -1,0 +1,26 @@
+{
+  "createdAt": "2024-11-21T15:28:48Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Repository to hold the DBT etl scripts to transform deidentified data into a form consumable by the Apheris node",
+  "name": "intonate-etl",
+  "updatedAt": "2025-06-18T22:40:28Z",
+  "url": "https://github.com/PennTURBO/intonate-etl",
+  "firstCommitDate": "2025-06-18T22:40:23Z",
+  "lastCommitDate": "2025-06-18T22:40:23Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "hjwilli"
+    },
+    {
+      "contributions": 9,
+      "login": "alabarga"
+    },
+    {
+      "contributions": 5,
+      "login": "th5"
+    }
+  ]
+}

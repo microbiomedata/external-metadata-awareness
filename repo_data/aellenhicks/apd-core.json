@@ -1,0 +1,54 @@
+{
+  "createdAt": "2018-05-28T18:44:54Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Awesome Public Datasets Core",
+  "name": "apd-core",
+  "updatedAt": "2018-05-28T18:44:56Z",
+  "url": "https://github.com/aellenhicks/apd-core",
+  "firstCommitDate": "2018-05-22T03:32:37Z",
+  "lastCommitDate": "2018-05-22T03:32:37Z",
+  "topContributors": [
+    {
+      "contributions": 48,
+      "login": "caesar0301"
+    },
+    {
+      "contributions": 2,
+      "login": "SidVal"
+    },
+    {
+      "contributions": 2,
+      "login": "bcbeidel"
+    },
+    {
+      "contributions": 1,
+      "login": "asopinka"
+    },
+    {
+      "contributions": 1,
+      "login": "antquinonez"
+    },
+    {
+      "contributions": 1,
+      "login": "jamesqo"
+    },
+    {
+      "contributions": 1,
+      "login": "loganbyers"
+    },
+    {
+      "contributions": 1,
+      "login": "misza222"
+    },
+    {
+      "contributions": 1,
+      "login": "meiremans"
+    },
+    {
+      "contributions": 1,
+      "login": "olegkleiman"
+    }
+  ]
+}

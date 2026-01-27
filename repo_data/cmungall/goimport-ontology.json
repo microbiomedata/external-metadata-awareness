@@ -1,0 +1,12 @@
+{
+  "createdAt": "2016-06-07T23:19:20Z",
+  "defaultBranchRef": {
+    "name": ""
+  },
+  "description": "",
+  "name": "goimport-ontology",
+  "updatedAt": "2016-06-07T23:19:20Z",
+  "url": "https://github.com/cmungall/goimport-ontology",
+  "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+  "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+}

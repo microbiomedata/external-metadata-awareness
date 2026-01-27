@@ -1,0 +1,34 @@
+{
+  "createdAt": "2024-10-02T01:05:38Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Semantics preserving mapping of OWL 2 EL and Neo4J.",
+  "name": "neo4j2owl",
+  "updatedAt": "2024-10-02T01:05:38Z",
+  "url": "https://github.com/cmungall/neo4j2owl",
+  "firstCommitDate": "2023-04-19T11:15:47Z",
+  "lastCommitDate": "2023-04-19T11:15:47Z",
+  "topContributors": [
+    {
+      "contributions": 156,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 3,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 3,
+      "login": "hkir-dev"
+    },
+    {
+      "contributions": 1,
+      "login": "Robbie1977"
+    },
+    {
+      "contributions": 1,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

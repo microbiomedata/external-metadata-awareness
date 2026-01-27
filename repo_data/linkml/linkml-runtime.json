@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-03-18T20:38:43Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Runtime support for linkml generated models",
+  "name": "linkml-runtime",
+  "updatedAt": "2025-09-29T18:39:27Z",
+  "url": "https://github.com/linkml/linkml-runtime",
+  "firstCommitDate": "2025-09-25T13:21:30Z",
+  "lastCommitDate": "2025-09-25T13:21:30Z",
+  "topContributors": [
+    {
+      "contributions": 397,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 210,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 105,
+      "login": "hsolbrig"
+    },
+    {
+      "contributions": 81,
+      "login": "sneakers-the-rat"
+    },
+    {
+      "contributions": 77,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 62,
+      "login": "dalito"
+    },
+    {
+      "contributions": 46,
+      "login": "ialarmedalien"
+    },
+    {
+      "contributions": 42,
+      "login": "vladistan"
+    },
+    {
+      "contributions": 37,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 26,
+      "login": "candleindark"
+    }
+  ]
+}

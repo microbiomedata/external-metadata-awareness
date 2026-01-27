@@ -1,0 +1,54 @@
+{
+  "createdAt": "2020-01-07T10:30:46Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "🍇 Embiggen is the Python Graph Representation learning, Prediction and Evaluation submodule of the GRAPE library.",
+  "name": "embiggen",
+  "updatedAt": "2024-12-15T09:16:15Z",
+  "url": "https://github.com/monarch-initiative/embiggen",
+  "firstCommitDate": "2023-12-05T19:53:59Z",
+  "lastCommitDate": "2023-12-05T19:53:59Z",
+  "topContributors": [
+    {
+      "contributions": 2204,
+      "login": "LucaCappelletti94"
+    },
+    {
+      "contributions": 203,
+      "login": "vidarmehr"
+    },
+    {
+      "contributions": 173,
+      "login": "callahantiff"
+    },
+    {
+      "contributions": 170,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 165,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 25,
+      "login": "zommiommy"
+    },
+    {
+      "contributions": 14,
+      "login": "deepakunni3"
+    },
+    {
+      "contributions": 5,
+      "login": "realmarcin"
+    },
+    {
+      "contributions": 3,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

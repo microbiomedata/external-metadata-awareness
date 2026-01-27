@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-07-18T20:46:37Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Monarch Python API",
+  "name": "monarch-py",
+  "updatedAt": "2023-07-14T21:29:04Z",
+  "url": "https://github.com/monarch-initiative/monarch-py",
+  "firstCommitDate": "2023-07-14T22:03:12Z",
+  "lastCommitDate": "2023-07-14T22:03:12Z",
+  "topContributors": [
+    {
+      "contributions": 197,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 1,
+      "login": "putmantime"
+    }
+  ]
+}

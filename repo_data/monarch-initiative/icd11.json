@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-03-04T20:22:10Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "ICD11 foundation ingest.",
+  "name": "icd11",
+  "updatedAt": "2025-01-30T03:26:59Z",
+  "url": "https://github.com/monarch-initiative/icd11",
+  "firstCommitDate": "2025-01-30T03:26:55Z",
+  "lastCommitDate": "2025-01-30T03:26:55Z",
+  "topContributors": [
+    {
+      "contributions": 17,
+      "login": "joeflack4"
+    }
+  ]
+}

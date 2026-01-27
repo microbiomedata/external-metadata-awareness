@@ -1,0 +1,30 @@
+{
+  "createdAt": "2015-11-05T19:00:15Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Modelling the PCORnet CDM in an OBO Compliant OWL Ontology",
+  "name": "PCORowl",
+  "updatedAt": "2023-10-05T18:35:46Z",
+  "url": "https://github.com/mcwdsi/PCORowl",
+  "firstCommitDate": "2019-12-01T16:28:51Z",
+  "lastCommitDate": "2019-12-01T16:28:51Z",
+  "topContributors": [
+    {
+      "contributions": 44,
+      "login": "nrejac"
+    },
+    {
+      "contributions": 8,
+      "login": "aellenhicks"
+    },
+    {
+      "contributions": 1,
+      "login": "dillerm"
+    },
+    {
+      "contributions": 1,
+      "login": "hoganwr"
+    }
+  ]
+}

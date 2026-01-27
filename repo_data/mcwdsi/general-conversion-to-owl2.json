@@ -1,0 +1,30 @@
+{
+  "createdAt": "2017-03-22T17:07:51Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Java code to convert conventional data into to OWL2",
+  "name": "general-conversion-to-owl2",
+  "updatedAt": "2024-06-12T15:20:44Z",
+  "url": "https://github.com/mcwdsi/general-conversion-to-owl2",
+  "firstCommitDate": "2024-06-12T15:20:38Z",
+  "lastCommitDate": "2024-06-12T15:20:38Z",
+  "topContributors": [
+    {
+      "contributions": 233,
+      "login": "hoganwr"
+    },
+    {
+      "contributions": 5,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 1,
+      "login": "JohnLevander"
+    },
+    {
+      "contributions": 1,
+      "login": "dillerm"
+    }
+  ]
+}

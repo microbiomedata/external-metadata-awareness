@@ -1,0 +1,22 @@
+{
+  "createdAt": "2020-08-27T02:46:19Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Repo for generating the SRI Reference KG",
+  "name": "sri-reference-kg",
+  "updatedAt": "2023-09-18T18:45:53Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/sri-reference-kg",
+  "firstCommitDate": "2021-07-28T14:21:51Z",
+  "lastCommitDate": "2021-07-28T14:21:51Z",
+  "topContributors": [
+    {
+      "contributions": 38,
+      "login": "deepakunni3"
+    },
+    {
+      "contributions": 2,
+      "login": "kshefchek"
+    }
+  ]
+}

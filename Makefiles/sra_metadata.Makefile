@@ -10,13 +10,14 @@ endif
 
 .PHONY: biosample-bioproject-preview sra_accession_pairs_tsv_to_mongo \
         fetch_sra_metadata_parquet_from_s3 load-sra-parquet-to-mongo \
-        purge-sra dump-sra-metadata-schema extract-sra-biosample-bioproject-pairs
+        purge-sra dump-sra-metadata-schema extract-sra-biosample-bioproject-pairs \
+        load-sra-pairs-to-mongo index-sra-pairs
 
 # SRA BigQuery parameters
 SRA_BIGQUERY_PROJECT = nmdc-377118
 SRA_BIGQUERY_DATASET = nih-sra-datastore.sra
 SRA_BIGQUERY_TABLE = metadata
-SRA_BIGQUERY_BATCH_SIZE = 100000
+SRA_BIGQUERY_BATCH_SIZE = 1000000  # 1M per batch - faster export with fewer API calls
 SRA_BIGQUERY_LIMIT = 30000000 # expect ~ 30000000
 
 # Target: purge-sra
@@ -54,15 +55,15 @@ biosample-bioproject-preview:
 # Target: sra_accession_pairs_tsv_to_mongo
 # Exports BioSample-BioProject pairs from SRA to MongoDB
 downloads/sra_accession_pairs.tsv:
-	@echo "Exporting SRA accession pairs to TSV..."
+	@echo "Exporting ALL SRA accession pairs to TSV (no limit)..."
 	$(RUN) export-sra-accession-pairs \
 		--project $(SRA_BIGQUERY_PROJECT) \
 		--dataset $(SRA_BIGQUERY_DATASET) \
 		--table $(SRA_BIGQUERY_TABLE) \
 		--batch-size $(SRA_BIGQUERY_BATCH_SIZE) \
-		--limit $(SRA_BIGQUERY_LIMIT) \
 		--exclude-nulls \
-		--output $@
+		--output $@ \
+		--verbose
 
 sra_accession_pairs_tsv_to_mongo: downloads/sra_accession_pairs.tsv
 	@echo "Loading SRA accession pairs into MongoDB..."
@@ -146,3 +147,33 @@ count_sra_metadata_keys:
 		$(ENV_FILE_OPTION) \
 		--js-file mongo-js/count_sra_metadata_keys.js \
 		--verbose && date
+
+local/sra_biosample_bioproject_pairs.tsv: sql/extract_sra_biosample_bioproject_pairs_to_tsv.sql local/sra_metadata_parquet
+	@echo "Extracting biosample-bioproject pairs from SRA parquet files using DuckDB..."
+	duckdb local/sra.duckdb < $<
+	@echo "Exported biosample-bioproject pairs to $@"
+
+# Target: load-sra-pairs-to-mongo
+# Loads the TSV file into MongoDB collection with proper field names
+load-sra-pairs-to-mongo: local/sra_biosample_bioproject_pairs.tsv
+	@echo "Loading SRA biosample-bioproject pairs into MongoDB..."
+	$(RUN) sra-accession-pairs-to-mongo \
+		--file-path $< \
+		--mongo-uri "mongodb://localhost:27017/ncbi_metadata" \
+		$(ENV_FILE_OPTION) \
+		--collection sra_biosamples_bioprojects \
+		--biosample-column biosample \
+		--bioproject-column bioproject \
+		--batch-size 100000 \
+		--report-interval 500000 \
+		--verbose
+
+# Target: index-sra-pairs  
+# Creates indexes on the sra_biosamples_bioprojects collection
+index-sra-pairs:
+	@echo "Creating indexes on sra_biosamples_bioprojects collection..."
+	mongosh mongodb://localhost:27017/ncbi_metadata --eval "\
+		db.sra_biosamples_bioprojects.createIndex({biosample_accession: 1}, {name: 'idx_biosample'}); \
+		db.sra_biosamples_bioprojects.createIndex({bioproject_accession: 1}, {name: 'idx_bioproject'}); \
+		db.sra_biosamples_bioprojects.createIndex({biosample_accession: 1, bioproject_accession: 1}, {name: 'idx_compound'}); \
+		print('Indexes created successfully');"

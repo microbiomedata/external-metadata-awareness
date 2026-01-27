@@ -1,0 +1,22 @@
+{
+  "createdAt": "2023-04-19T11:21:59Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Phenotype2Phenopacket is a command-line tool that converts a phenotype annotation into GA4GH Phenopackets, facilitating standardised phenotypic data representation.",
+  "name": "phenotype2phenopacket",
+  "updatedAt": "2025-06-30T15:36:17Z",
+  "url": "https://github.com/monarch-initiative/phenotype2phenopacket",
+  "firstCommitDate": "2025-06-30T15:36:12Z",
+  "lastCommitDate": "2025-06-30T15:36:12Z",
+  "topContributors": [
+    {
+      "contributions": 235,
+      "login": "yaseminbridges"
+    },
+    {
+      "contributions": 9,
+      "login": "dpavam"
+    }
+  ]
+}

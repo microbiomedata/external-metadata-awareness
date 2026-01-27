@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-07-12T21:15:52Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Illustrations for ICBO 2021 submission",
+  "name": "schemas-for-schemaless",
+  "updatedAt": "2025-03-06T18:36:04Z",
+  "url": "https://github.com/turbomam/schemas-for-schemaless",
+  "firstCommitDate": "2021-09-10T12:23:37Z",
+  "lastCommitDate": "2021-09-10T12:23:37Z",
+  "topContributors": [
+    {
+      "contributions": 19,
+      "login": "turbomam"
+    }
+  ]
+}

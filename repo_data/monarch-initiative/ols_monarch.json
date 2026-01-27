@@ -1,0 +1,26 @@
+{
+  "createdAt": "2020-04-01T11:06:16Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A dockerised version of the OLS for Monarch Ontologies",
+  "name": "ols_monarch",
+  "updatedAt": "2023-10-24T07:48:13Z",
+  "url": "https://github.com/monarch-initiative/ols_monarch",
+  "firstCommitDate": "2023-10-24T07:48:00Z",
+  "lastCommitDate": "2023-10-24T07:48:00Z",
+  "topContributors": [
+    {
+      "contributions": 45,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 2,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 2,
+      "login": "putmantime"
+    }
+  ]
+}

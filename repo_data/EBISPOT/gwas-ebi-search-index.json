@@ -1,0 +1,26 @@
+{
+  "createdAt": "2020-07-30T19:22:46Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "gwas-ebi-search-index",
+  "updatedAt": "2024-08-06T13:20:52Z",
+  "url": "https://github.com/EBISPOT/gwas-ebi-search-index",
+  "firstCommitDate": "2024-08-06T13:20:42Z",
+  "lastCommitDate": "2024-08-06T13:20:42Z",
+  "topContributors": [
+    {
+      "contributions": 18,
+      "login": "twhetzel"
+    },
+    {
+      "contributions": 4,
+      "login": "jdhayhurst"
+    },
+    {
+      "contributions": 2,
+      "login": "karatugo"
+    }
+  ]
+}

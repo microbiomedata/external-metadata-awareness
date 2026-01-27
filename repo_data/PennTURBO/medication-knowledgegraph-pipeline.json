@@ -1,0 +1,34 @@
+{
+  "createdAt": "2019-04-12T20:02:09Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Pipeline that maps strings describing medication orders to RxNorm terms, and generates an RDF knowledgegraph that links those strings to multiple ontologies including DrOn, ChEBI, ATC and NDF-RT.",
+  "name": "medication-knowledgegraph-pipeline",
+  "updatedAt": "2024-09-28T09:46:55Z",
+  "url": "https://github.com/PennTURBO/medication-knowledgegraph-pipeline",
+  "firstCommitDate": "2021-03-12T19:39:48Z",
+  "lastCommitDate": "2021-03-12T19:39:48Z",
+  "topContributors": [
+    {
+      "contributions": 218,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 7,
+      "login": "github-actions[bot]"
+    },
+    {
+      "contributions": 4,
+      "login": "greenguy33"
+    },
+    {
+      "contributions": 2,
+      "login": "cstoeckert"
+    },
+    {
+      "contributions": 2,
+      "login": "hjwilli"
+    }
+  ]
+}

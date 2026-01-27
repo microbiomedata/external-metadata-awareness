@@ -1,0 +1,18 @@
+{
+  "createdAt": "2014-07-22T17:34:55Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Experimental and in-development libraries for BBOP JS (bbop-js).",
+  "name": "bbopx-js",
+  "updatedAt": "2016-09-17T01:02:38Z",
+  "url": "https://github.com/berkeleybop/bbopx-js",
+  "firstCommitDate": "2016-09-17T01:03:43Z",
+  "lastCommitDate": "2016-09-17T01:03:43Z",
+  "topContributors": [
+    {
+      "contributions": 197,
+      "login": "kltm"
+    }
+  ]
+}

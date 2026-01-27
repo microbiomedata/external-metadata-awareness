@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-12-13T08:34:27Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Pipeline to fetch metadata and raw FastQ files from public and private databases",
+  "name": "nf-core-fetchngs",
+  "updatedAt": "2022-06-11T03:53:02Z",
+  "url": "https://github.com/jfy133/nf-core-fetchngs",
+  "firstCommitDate": "2022-05-17T11:47:34Z",
+  "lastCommitDate": "2022-05-17T11:47:34Z",
+  "topContributors": [
+    {
+      "contributions": 197,
+      "login": "drpatelh"
+    },
+    {
+      "contributions": 40,
+      "login": "Midnighter"
+    },
+    {
+      "contributions": 21,
+      "login": "daisyhan97"
+    },
+    {
+      "contributions": 7,
+      "login": "nf-core-bot"
+    },
+    {
+      "contributions": 3,
+      "login": "JoseEspinosa"
+    },
+    {
+      "contributions": 3,
+      "login": "ewels"
+    },
+    {
+      "contributions": 2,
+      "login": "maxibor"
+    },
+    {
+      "contributions": 1,
+      "login": "alaindomissy"
+    },
+    {
+      "contributions": 1,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 1,
+      "login": "ojziff"
+    }
+  ]
+}

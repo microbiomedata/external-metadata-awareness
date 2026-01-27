@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-11-20T13:53:12Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "PhenoUnit testing framework",
+  "name": "phenounit",
+  "updatedAt": "2018-11-29T10:36:35Z",
+  "url": "https://github.com/monarch-initiative/phenounit",
+  "firstCommitDate": "2018-11-29T10:36:30Z",
+  "lastCommitDate": "2018-11-29T10:36:30Z",
+  "topContributors": [
+    {
+      "contributions": 11,
+      "login": "drseb"
+    }
+  ]
+}

@@ -1,0 +1,534 @@
+[
+  {
+    "createdAt": "2019-11-01T21:13:35Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A git repo for whatever code we produce for the midterm project.",
+    "name": "ACIC2019-Midterm",
+    "updatedAt": "2023-04-22T16:25:13Z",
+    "url": "https://github.com/kaiiam/ACIC2019-Midterm",
+    "firstCommitDate": "2019-11-01T22:08:14Z",
+    "lastCommitDate": "2019-11-01T22:08:14Z",
+    "topContributors": [
+      {
+        "contributions": 45,
+        "login": "zhxu73"
+      },
+      {
+        "contributions": 4,
+        "login": "kaiiam"
+      },
+      {
+        "contributions": 1,
+        "login": "JLHonors"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-04-22T23:43:51Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A new look at the Amazon Continuum Metagenomes",
+    "name": "amazon-continuation",
+    "updatedAt": "2023-04-22T16:22:56Z",
+    "url": "https://github.com/kaiiam/amazon-continuation",
+    "firstCommitDate": "2019-06-27T12:32:14Z",
+    "lastCommitDate": "2019-06-27T12:32:14Z",
+    "topContributors": [
+      {
+        "contributions": 19,
+        "login": "kaiiam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-02-07T19:18:06Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "ashley_dobroszek_eportfolio",
+    "updatedAt": "2022-02-07T19:18:06Z",
+    "url": "https://github.com/kaiiam/ashley_dobroszek_eportfolio",
+    "firstCommitDate": "2022-02-08T16:34:50Z",
+    "lastCommitDate": "2022-02-08T16:34:50Z",
+    "topContributors": [
+      {
+        "contributions": 50,
+        "login": "kaiiam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-01-31T10:13:46Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Experimenting with a knowledge graph for BCODMO",
+    "name": "bcodmo_knowledge_graph",
+    "updatedAt": "2023-04-22T16:23:31Z",
+    "url": "https://github.com/kaiiam/bcodmo_knowledge_graph",
+    "firstCommitDate": "2022-02-16T11:58:01Z",
+    "lastCommitDate": "2022-02-16T11:58:01Z",
+    "topContributors": [
+      {
+        "contributions": 10,
+        "login": "kaiiam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-02-18T00:02:26Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Github Repo for BE502 Fundamentals of Computing course at the University of Arizona",
+    "name": "BE_502",
+    "updatedAt": "2023-04-22T16:26:04Z",
+    "url": "https://github.com/kaiiam/BE_502",
+    "firstCommitDate": "2020-05-06T00:17:28Z",
+    "lastCommitDate": "2020-05-06T00:17:28Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "kaiiam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-01-10T17:21:27Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "BE434/535 Biosystems Analytics",
+    "name": "biosys-analytics",
+    "updatedAt": "2023-04-22T16:28:24Z",
+    "url": "https://github.com/kaiiam/biosys-analytics",
+    "firstCommitDate": "2019-05-07T18:42:57Z",
+    "lastCommitDate": "2019-05-07T18:42:57Z",
+    "topContributors": [
+      {
+        "contributions": 170,
+        "login": "kyclark"
+      },
+      {
+        "contributions": 92,
+        "login": "kaiiam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-03-07T22:36:58Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "DEMO",
+    "updatedAt": "2020-11-23T21:38:23Z",
+    "url": "https://github.com/kaiiam/DEMO",
+    "firstCommitDate": "2020-11-23T21:35:28Z",
+    "lastCommitDate": "2020-11-23T21:35:28Z",
+    "topContributors": [
+      {
+        "contributions": 13,
+        "login": "kaiiam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-03-15T10:41:21Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A community-driven ontology for the representation of environments",
+    "name": "envo",
+    "updatedAt": "2017-10-23T18:09:14Z",
+    "url": "https://github.com/kaiiam/envo",
+    "firstCommitDate": "2017-10-09T16:44:35Z",
+    "lastCommitDate": "2017-10-09T16:44:35Z",
+    "topContributors": [
+      {
+        "contributions": 520,
+        "login": "pbuttigieg"
+      },
+      {
+        "contributions": 330,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 3,
+        "login": "marieALaporte"
+      },
+      {
+        "contributions": 2,
+        "login": "renzok"
+      },
+      {
+        "contributions": 1,
+        "login": "suzuki-shm"
+      },
+      {
+        "contributions": 1,
+        "login": "kaiiam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-04-20T12:42:47Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "humann_hpc",
+    "updatedAt": "2022-08-01T00:44:30Z",
+    "url": "https://github.com/kaiiam/humann_hpc",
+    "firstCommitDate": "2023-01-27T15:33:34Z",
+    "lastCommitDate": "2023-01-27T15:33:34Z",
+    "topContributors": [
+      {
+        "contributions": 92,
+        "login": "kaiiam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-04-26T09:50:22Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A test run to practice creating an Ontology",
+    "name": "KaiO",
+    "updatedAt": "2023-04-22T16:21:40Z",
+    "url": "https://github.com/kaiiam/KaiO",
+    "firstCommitDate": "2017-04-26T09:53:20Z",
+    "lastCommitDate": "2017-04-26T09:53:20Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2025-06-08T19:50:55Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "kaoibhinn",
+    "updatedAt": "2025-07-12T16:45:32Z",
+    "url": "https://github.com/kaiiam/kaoibhinn",
+    "firstCommitDate": "2025-07-12T16:45:19Z",
+    "lastCommitDate": "2025-07-12T16:45:19Z",
+    "topContributors": [
+      {
+        "contributions": 13,
+        "login": "kaiiam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-09-18T12:06:15Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Masters thesis work for Kai Blumberg conducted at the MPI Bremen and University Bremen, conducted under the supervision of Dr. Pier Luigi Buttigieg.",
+    "name": "kblumberg_masters_thesis",
+    "updatedAt": "2023-04-22T16:26:39Z",
+    "url": "https://github.com/kaiiam/kblumberg_masters_thesis",
+    "firstCommitDate": "2018-04-30T11:17:06Z",
+    "lastCommitDate": "2018-04-30T11:17:06Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2023-03-29T09:02:14Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A minimum information standard checklist formalizing the description of food composition data and related metadata.",
+    "name": "mifc",
+    "updatedAt": "2025-07-22T13:40:15Z",
+    "url": "https://github.com/kaiiam/mifc",
+    "firstCommitDate": "2025-07-22T13:39:39Z",
+    "lastCommitDate": "2025-07-22T13:39:39Z",
+    "topContributors": [
+      {
+        "contributions": 362,
+        "login": "kaiiam"
+      },
+      {
+        "contributions": 10,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 6,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 2,
+        "login": "GregLyonJIFSAN"
+      },
+      {
+        "contributions": 1,
+        "login": "ahasanzadeh13"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-02-26T02:16:59Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Bootstrap an OBO Library ontology",
+    "name": "ontology-development-kit",
+    "updatedAt": "2019-02-26T02:17:01Z",
+    "url": "https://github.com/kaiiam/ontology-development-kit",
+    "firstCommitDate": "2019-02-26T01:08:05Z",
+    "lastCommitDate": "2019-02-26T01:08:05Z",
+    "topContributors": [
+      {
+        "contributions": 154,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 70,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 25,
+        "login": "dosumis"
+      },
+      {
+        "contributions": 10,
+        "login": "balhoff"
+      },
+      {
+        "contributions": 3,
+        "login": "pbuttigieg"
+      },
+      {
+        "contributions": 2,
+        "login": "dougli1sqrd"
+      },
+      {
+        "contributions": 2,
+        "login": "bjonnh"
+      },
+      {
+        "contributions": 2,
+        "login": "marieALaporte"
+      },
+      {
+        "contributions": 2,
+        "login": "marijane"
+      },
+      {
+        "contributions": 1,
+        "login": "nicolevasilevsky"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-10-30T07:12:16Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": " PATO - the Phenotype And Trait Ontology",
+    "name": "pato",
+    "updatedAt": "2020-10-30T07:12:18Z",
+    "url": "https://github.com/kaiiam/pato",
+    "firstCommitDate": "2020-08-20T11:03:59Z",
+    "lastCommitDate": "2020-08-20T11:03:59Z",
+    "topContributors": [
+      {
+        "contributions": 109,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 91,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 76,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 30,
+        "login": "dosumis"
+      },
+      {
+        "contributions": 12,
+        "login": "wdahdul"
+      },
+      {
+        "contributions": 6,
+        "login": "balhoff"
+      },
+      {
+        "contributions": 4,
+        "login": "srobb1"
+      },
+      {
+        "contributions": 3,
+        "login": "pbuttigieg"
+      },
+      {
+        "contributions": 3,
+        "login": "drseb"
+      },
+      {
+        "contributions": 2,
+        "login": "Clare72"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-08-22T20:07:08Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "phd",
+    "updatedAt": "2021-11-26T08:43:57Z",
+    "url": "https://github.com/kaiiam/phd",
+    "firstCommitDate": "2023-06-08T11:37:03Z",
+    "lastCommitDate": "2023-06-08T11:37:03Z",
+    "topContributors": [
+      {
+        "contributions": 13,
+        "login": "kaiiam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-12-14T04:39:01Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "2019 Final project",
+    "name": "PhytoOracle",
+    "updatedAt": "2023-04-22T16:30:07Z",
+    "url": "https://github.com/kaiiam/PhytoOracle",
+    "firstCommitDate": "2019-12-14T04:10:58Z",
+    "lastCommitDate": "2019-12-14T04:10:58Z",
+    "topContributors": [
+      {
+        "contributions": 46,
+        "login": "zhxu73"
+      },
+      {
+        "contributions": 26,
+        "login": "emmanuelgonz"
+      },
+      {
+        "contributions": 13,
+        "login": "sateeshperi"
+      },
+      {
+        "contributions": 5,
+        "login": "uacic"
+      },
+      {
+        "contributions": 3,
+        "login": "nasseralbalawi"
+      },
+      {
+        "contributions": 2,
+        "login": "nreppe"
+      },
+      {
+        "contributions": 1,
+        "login": "CosiMichele"
+      },
+      {
+        "contributions": 1,
+        "login": "JLHonors"
+      },
+      {
+        "contributions": 1,
+        "login": "jennenmaryniak"
+      },
+      {
+        "contributions": 1,
+        "login": "mohammadAbdolhosseiniMoghaddam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-12-17T11:15:07Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Planet Microbe scripts and examples",
+    "name": "planet-microbe-scripts",
+    "updatedAt": "2023-04-22T16:29:00Z",
+    "url": "https://github.com/kaiiam/planet-microbe-scripts",
+    "firstCommitDate": "2021-12-17T16:07:38Z",
+    "lastCommitDate": "2021-12-17T16:07:38Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "mbomhoff"
+      },
+      {
+        "contributions": 6,
+        "login": "kaiiam"
+      },
+      {
+        "contributions": 1,
+        "login": "aponsero"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-06-30T09:51:50Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Marmic masters, Lab rotation 3, 2017, field sampling campaignes to spiekeroog under direction of Dr. Soeren Ahmerkamp",
+    "name": "Spiekeroog_biogeo",
+    "updatedAt": "2023-04-22T16:27:21Z",
+    "url": "https://github.com/kaiiam/Spiekeroog_biogeo",
+    "firstCommitDate": "2017-10-11T08:07:52Z",
+    "lastCommitDate": "2017-10-11T08:07:52Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "SoerenAhmerkamp"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-04-22T16:33:07Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "tune-tools",
+    "updatedAt": "2023-12-28T01:01:52Z",
+    "url": "https://github.com/kaiiam/tune-tools",
+    "firstCommitDate": "2023-11-23T12:32:51Z",
+    "lastCommitDate": "2023-11-23T12:32:51Z",
+    "topContributors": [
+      {
+        "contributions": 11,
+        "login": "kaiiam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-01-10T16:43:14Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "UO_revamp",
+    "updatedAt": "2024-03-21T12:27:25Z",
+    "url": "https://github.com/kaiiam/UO_revamp",
+    "firstCommitDate": "2021-07-02T12:00:31Z",
+    "lastCommitDate": "2021-07-02T12:00:31Z",
+    "topContributors": [
+      {
+        "contributions": 120,
+        "login": "kaiiam"
+      }
+    ]
+  }
+]

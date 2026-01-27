@@ -1,0 +1,26 @@
+{
+  "createdAt": "2025-07-09T14:30:10Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "An MCP for retrieving information from the Ontology Lookup Service",
+  "name": "ols-mcp",
+  "updatedAt": "2025-09-16T17:08:39Z",
+  "url": "https://github.com/contextualizer-ai/ols-mcp",
+  "firstCommitDate": "2025-08-05T20:26:06Z",
+  "lastCommitDate": "2025-08-05T20:26:06Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 5,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 3,
+      "login": "iimpulse"
+    }
+  ]
+}

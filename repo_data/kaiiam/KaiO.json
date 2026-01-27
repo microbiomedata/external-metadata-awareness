@@ -1,0 +1,13 @@
+{
+  "createdAt": "2017-04-26T09:50:22Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A test run to practice creating an Ontology",
+  "name": "KaiO",
+  "updatedAt": "2023-04-22T16:21:40Z",
+  "url": "https://github.com/kaiiam/KaiO",
+  "firstCommitDate": "2017-04-26T09:53:20Z",
+  "lastCommitDate": "2017-04-26T09:53:20Z",
+  "topContributors": []
+}

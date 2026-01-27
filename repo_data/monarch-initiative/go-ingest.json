@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-11-07T04:19:53Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "gene ontology ingest from gene association formatted files",
+  "name": "go-ingest",
+  "updatedAt": "2025-09-03T23:41:41Z",
+  "url": "https://github.com/monarch-initiative/go-ingest",
+  "firstCommitDate": "2025-09-03T23:41:37Z",
+  "lastCommitDate": "2025-09-03T23:41:37Z",
+  "topContributors": [
+    {
+      "contributions": 12,
+      "login": "AO33"
+    }
+  ]
+}

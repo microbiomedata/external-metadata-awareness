@@ -1,0 +1,54 @@
+{
+  "createdAt": "2023-01-31T08:08:32Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A DSL for data-driven computational pipelines",
+  "name": "nextflow-io-nextflow",
+  "updatedAt": "2024-07-08T15:23:50Z",
+  "url": "https://github.com/jfy133/nextflow-io-nextflow",
+  "firstCommitDate": "2024-07-08T13:47:57Z",
+  "lastCommitDate": "2024-07-08T13:47:57Z",
+  "topContributors": [
+    {
+      "contributions": 5715,
+      "login": "pditommaso"
+    },
+    {
+      "contributions": 203,
+      "login": "bentsherman"
+    },
+    {
+      "contributions": 61,
+      "login": "ewels"
+    },
+    {
+      "contributions": 43,
+      "login": "jorgeaguileraseqera"
+    },
+    {
+      "contributions": 39,
+      "login": "mribeirodantas"
+    },
+    {
+      "contributions": 25,
+      "login": "marcodelapierre"
+    },
+    {
+      "contributions": 25,
+      "login": "manuelesimi"
+    },
+    {
+      "contributions": 24,
+      "login": "abhi18av"
+    },
+    {
+      "contributions": 18,
+      "login": "robsyme"
+    },
+    {
+      "contributions": 18,
+      "login": "Lehmann-Fabian"
+    }
+  ]
+}

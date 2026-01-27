@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-05-28T15:38:19Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "biosamples-taxa-attributes",
+  "updatedAt": "2025-05-28T15:50:35Z",
+  "url": "https://github.com/turbomam/biosamples-taxa-attributes",
+  "firstCommitDate": "2025-05-28T15:50:32Z",
+  "lastCommitDate": "2025-05-28T15:50:32Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "turbomam"
+    }
+  ]
+}

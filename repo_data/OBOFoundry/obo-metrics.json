@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-12-09T15:42:51Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Repo that contains the specification of the metrics used to quantify stuff in the ontology (experimental).",
+  "name": "obo-metrics",
+  "updatedAt": "2020-12-09T15:43:23Z",
+  "url": "https://github.com/OBOFoundry/obo-metrics",
+  "firstCommitDate": "2020-12-09T15:41:48Z",
+  "lastCommitDate": "2020-12-09T15:41:48Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "matentzn"
+    }
+  ]
+}

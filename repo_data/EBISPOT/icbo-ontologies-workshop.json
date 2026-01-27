@@ -1,0 +1,22 @@
+{
+  "createdAt": "2017-05-23T08:51:55Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Material for the ICBO workshop on SPOT ontology tools",
+  "name": "icbo-ontologies-workshop",
+  "updatedAt": "2017-05-23T08:52:06Z",
+  "url": "https://github.com/EBISPOT/icbo-ontologies-workshop",
+  "firstCommitDate": "2017-05-30T10:31:55Z",
+  "lastCommitDate": "2017-05-30T10:31:55Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "mcourtot"
+    },
+    {
+      "contributions": 1,
+      "login": "simonjupp"
+    }
+  ]
+}

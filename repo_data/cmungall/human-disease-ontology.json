@@ -1,0 +1,30 @@
+{
+  "createdAt": "2014-12-06T00:00:38Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "New repository for managing the source for the human disease ontology",
+  "name": "human-disease-ontology",
+  "updatedAt": "2014-12-06T00:00:40Z",
+  "url": "https://github.com/cmungall/human-disease-ontology",
+  "firstCommitDate": "2014-12-05T23:59:27Z",
+  "lastCommitDate": "2014-12-05T23:59:27Z",
+  "topContributors": [
+    {
+      "contributions": 53,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 8,
+      "login": "elviram"
+    },
+    {
+      "contributions": 2,
+      "login": "ShahimEssaid"
+    },
+    {
+      "contributions": 1,
+      "login": "twhetzel"
+    }
+  ]
+}

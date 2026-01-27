@@ -1,0 +1,18 @@
+{
+  "createdAt": "2010-03-12T20:48:39Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "scratchpad area for ontology demos etc",
+  "name": "onto-scratch",
+  "updatedAt": "2021-06-23T02:41:38Z",
+  "url": "https://github.com/cmungall/onto-scratch",
+  "firstCommitDate": "2010-03-12T21:05:57Z",
+  "lastCommitDate": "2010-03-12T21:05:57Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "cmungall"
+    }
+  ]
+}

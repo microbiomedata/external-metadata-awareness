@@ -1,0 +1,34 @@
+{
+  "createdAt": "2016-12-16T15:02:13Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "obc-pubmed",
+  "updatedAt": "2023-10-05T19:48:37Z",
+  "url": "https://github.com/mcwdsi/obc-pubmed",
+  "firstCommitDate": "2023-05-23T20:27:44Z",
+  "lastCommitDate": "2023-05-23T20:27:44Z",
+  "topContributors": [
+    {
+      "contributions": 19,
+      "login": "danielwelch"
+    },
+    {
+      "contributions": 16,
+      "login": "a-vhadgar"
+    },
+    {
+      "contributions": 8,
+      "login": "dillerm"
+    },
+    {
+      "contributions": 2,
+      "login": "hoganwr"
+    },
+    {
+      "contributions": 1,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

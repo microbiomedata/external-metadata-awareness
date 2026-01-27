@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-07-20T02:30:58Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Maps LinkML queries to SPARQL and back (ALPHA)",
+  "name": "linkml-sparql",
+  "updatedAt": "2025-08-28T14:55:36Z",
+  "url": "https://github.com/linkml/linkml-sparql",
+  "firstCommitDate": "2021-07-20T02:29:53Z",
+  "lastCommitDate": "2021-07-20T02:29:53Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

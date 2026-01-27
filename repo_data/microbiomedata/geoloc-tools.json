@@ -1,0 +1,30 @@
+{
+  "createdAt": "2023-09-15T18:26:35Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "geoloc-tools",
+  "updatedAt": "2025-08-04T15:36:54Z",
+  "url": "https://github.com/microbiomedata/geoloc-tools",
+  "firstCommitDate": "2025-08-04T15:36:50Z",
+  "lastCommitDate": "2025-08-04T15:36:50Z",
+  "topContributors": [
+    {
+      "contributions": 53,
+      "login": "pkalita-lbl"
+    },
+    {
+      "contributions": 26,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 10,
+      "login": "holdb103"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

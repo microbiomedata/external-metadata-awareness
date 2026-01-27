@@ -1,0 +1,26 @@
+{
+  "createdAt": "2022-05-05T16:45:36Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A repository that contains the LinkML model for specifying graph ML pipelines",
+  "name": "neat-ml-schema",
+  "updatedAt": "2024-06-29T08:52:50Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/neat-ml-schema",
+  "firstCommitDate": "2022-09-08T21:50:09Z",
+  "lastCommitDate": "2022-09-08T21:50:09Z",
+  "topContributors": [
+    {
+      "contributions": 169,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 1,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 1,
+      "login": "justaddcoffee"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-11-17T23:04:01Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "obo-schema",
+  "name": "obo-schema",
+  "updatedAt": "2020-11-18T01:50:45Z",
+  "url": "https://github.com/cmungall/obo-schema",
+  "firstCommitDate": "2020-11-18T01:50:37Z",
+  "lastCommitDate": "2020-11-18T01:50:37Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "cmungall"
+    }
+  ]
+}

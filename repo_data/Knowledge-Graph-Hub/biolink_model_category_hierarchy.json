@@ -1,0 +1,13 @@
+{
+  "createdAt": "2021-11-29T21:02:12Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Simple code to make a graph-like hierachy for biolink model categories",
+  "name": "biolink_model_category_hierarchy",
+  "updatedAt": "2021-11-29T21:16:50Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/biolink_model_category_hierarchy",
+  "firstCommitDate": "2021-11-29T21:16:44Z",
+  "lastCommitDate": "2021-11-29T21:16:44Z",
+  "topContributors": []
+}

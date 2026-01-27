@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-09-07T13:31:27Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The SPOT Ontology Toolkit - Tutorial for ICBO 2017",
+  "name": "ICBO2017",
+  "updatedAt": "2023-08-16T18:29:11Z",
+  "url": "https://github.com/EBISPOT/ICBO2017",
+  "firstCommitDate": "2017-09-12T10:14:15Z",
+  "lastCommitDate": "2017-09-12T10:14:15Z",
+  "topContributors": [
+    {
+      "contributions": 16,
+      "login": "olgavrou"
+    }
+  ]
+}

@@ -1,0 +1,2810 @@
+[
+  {
+    "createdAt": "2021-02-19T19:47:42Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "archived-metadata-notebooks",
+    "updatedAt": "2024-05-31T19:01:45Z",
+    "url": "https://github.com/microbiomedata/archived-metadata-notebooks",
+    "firstCommitDate": "2021-02-19T19:47:04Z",
+    "lastCommitDate": "2021-02-19T19:47:04Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-01-20T23:43:24Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Vendor-neutral collection of terms for describing Environmental Biosamples",
+    "name": "attributes-of-biosamples",
+    "updatedAt": "2024-08-13T00:38:33Z",
+    "url": "https://github.com/microbiomedata/attributes-of-biosamples",
+    "firstCommitDate": "2023-01-21T04:49:27Z",
+    "lastCommitDate": "2023-01-21T04:49:27Z",
+    "topContributors": [
+      {
+        "contributions": 21,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-12-12T16:34:18Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A fork of the nmdc-schema, for refactoring based on Monterey insights",
+    "name": "berkeley-schema-fy24",
+    "updatedAt": "2024-11-04T15:25:20Z",
+    "url": "https://github.com/microbiomedata/berkeley-schema-fy24",
+    "firstCommitDate": "2024-11-04T15:25:14Z",
+    "lastCommitDate": "2024-11-04T15:25:14Z",
+    "topContributors": [
+      {
+        "contributions": 1883,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 566,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 443,
+        "login": "aclum"
+      },
+      {
+        "contributions": 340,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 203,
+        "login": "mslarae13"
+      },
+      {
+        "contributions": 179,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 127,
+        "login": "mbthornton-lbl"
+      },
+      {
+        "contributions": 118,
+        "login": "kheal"
+      },
+      {
+        "contributions": 48,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 45,
+        "login": "bmeluch"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-10-26T19:13:23Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "research: can we expose nmdc-schema jupyter notebooks in binder? what config files are acceptable?",
+    "name": "binder-for-linkml-proj",
+    "updatedAt": "2024-08-13T00:46:35Z",
+    "url": "https://github.com/microbiomedata/binder-for-linkml-proj",
+    "firstCommitDate": "2023-10-26T19:59:48Z",
+    "lastCommitDate": "2023-10-26T19:59:48Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-11-01T20:48:20Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Clean-room reboot of NMDC schema",
+    "name": "cleanroom-schema",
+    "updatedAt": "2024-08-13T00:37:49Z",
+    "url": "https://github.com/microbiomedata/cleanroom-schema",
+    "firstCommitDate": "2022-12-13T15:06:23Z",
+    "lastCommitDate": "2022-12-13T15:06:23Z",
+    "topContributors": [
+      {
+        "contributions": 25,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-01-23T23:23:09Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "common",
+    "updatedAt": "2025-01-24T00:15:49Z",
+    "url": "https://github.com/microbiomedata/common",
+    "firstCommitDate": "2025-01-24T00:15:46Z",
+    "lastCommitDate": "2025-01-24T00:15:46Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "ssarrafan"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-05-06T13:23:09Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Resources for data-driven and collaboratively refined mappings between ontology classes like ENVO:00002259 ‘agricultural soil’ to MIxS environmental context questions like env_medium, subsetted according to MIxS environmental extensions like Agriculture.",
+    "name": "context-collaboration",
+    "updatedAt": "2025-02-10T15:07:32Z",
+    "url": "https://github.com/microbiomedata/context-collaboration",
+    "firstCommitDate": "2024-05-13T16:37:40Z",
+    "lastCommitDate": "2024-05-13T16:37:40Z",
+    "topContributors": [
+      {
+        "contributions": 16,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-08-29T18:16:45Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "cromwell_configs",
+    "updatedAt": "2021-10-26T20:36:29Z",
+    "url": "https://github.com/microbiomedata/cromwell_configs",
+    "firstCommitDate": "2021-10-26T20:35:51Z",
+    "lastCommitDate": "2021-10-26T20:35:51Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "scanon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-12-16T21:59:45Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Our dev interface is available via github pages:",
+    "name": "DataHarmonizer",
+    "updatedAt": "2024-07-12T21:57:58Z",
+    "url": "https://github.com/microbiomedata/DataHarmonizer",
+    "firstCommitDate": "2024-07-12T21:50:56Z",
+    "lastCommitDate": "2024-07-12T21:50:56Z",
+    "topContributors": [
+      {
+        "contributions": 180,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 44,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 38,
+        "login": "ddooley"
+      },
+      {
+        "contributions": 24,
+        "login": "cmrn-rhi"
+      },
+      {
+        "contributions": 3,
+        "login": "subdavis"
+      },
+      {
+        "contributions": 2,
+        "login": "ivansg44"
+      },
+      {
+        "contributions": 1,
+        "login": "mgopez"
+      },
+      {
+        "contributions": 1,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 1,
+        "login": "griffie"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-07-27T17:27:47Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Sandbox for testing the content of various minimal schemas vs DataHarmonizer",
+    "name": "dh_testing",
+    "updatedAt": "2024-08-13T00:34:43Z",
+    "url": "https://github.com/microbiomedata/dh_testing",
+    "firstCommitDate": "2022-08-04T17:19:00Z",
+    "lastCommitDate": "2022-08-04T17:19:00Z",
+    "topContributors": [
+      {
+        "contributions": 9,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 2,
+        "login": "pkalita-lbl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-08-28T23:27:25Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "User-facing, web-based documentation about the NMDC",
+    "name": "docs",
+    "updatedAt": "2025-08-25T20:30:29Z",
+    "url": "https://github.com/microbiomedata/docs",
+    "firstCommitDate": "2025-08-25T20:30:23Z",
+    "lastCommitDate": "2025-08-25T20:30:23Z",
+    "topContributors": [
+      {
+        "contributions": 284,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 110,
+        "login": "vlilanl"
+      },
+      {
+        "contributions": 108,
+        "login": "mslarae13"
+      },
+      {
+        "contributions": 64,
+        "login": "kaijli"
+      },
+      {
+        "contributions": 17,
+        "login": "aclum"
+      },
+      {
+        "contributions": 6,
+        "login": "AmitBinf"
+      },
+      {
+        "contributions": 4,
+        "login": "jkelliher-github"
+      },
+      {
+        "contributions": 4,
+        "login": "ssarrafan"
+      },
+      {
+        "contributions": 3,
+        "login": "emileyfadrosh"
+      },
+      {
+        "contributions": 3,
+        "login": "pkalita-lbl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-04-01T19:38:28Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Engagement, presentations, program planning, etc.",
+    "name": "Engagement",
+    "updatedAt": "2023-07-19T16:19:39Z",
+    "url": "https://github.com/microbiomedata/Engagement",
+    "firstCommitDate": "2023-07-17T20:24:05Z",
+    "lastCommitDate": "2023-07-17T20:24:05Z",
+    "topContributors": [
+      {
+        "contributions": 1,
+        "login": "ssarrafan"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-10-02T13:52:20Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "env-triad-curation",
+    "name": "env-triad-curation",
+    "updatedAt": "2024-10-02T15:50:51Z",
+    "url": "https://github.com/microbiomedata/env-triad-curation",
+    "firstCommitDate": "2024-10-02T15:50:44Z",
+    "lastCommitDate": "2024-10-02T15:50:44Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-10-16T14:16:12Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "enviroMS",
+    "updatedAt": "2025-09-02T16:32:24Z",
+    "url": "https://github.com/microbiomedata/enviroMS",
+    "firstCommitDate": "2025-09-02T16:32:08Z",
+    "lastCommitDate": "2025-09-02T16:32:08Z",
+    "topContributors": [
+      {
+        "contributions": 153,
+        "login": "corilo"
+      },
+      {
+        "contributions": 53,
+        "login": "alexandriai168"
+      },
+      {
+        "contributions": 10,
+        "login": "smcolby"
+      },
+      {
+        "contributions": 4,
+        "login": "kheal"
+      },
+      {
+        "contributions": 4,
+        "login": "bmeluch"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-08-14T20:28:09Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Tools for fetching and processing external schemas, ontologies and metadata records. Includes value set maintenance and some GitHub org exploration.",
+    "name": "external-metadata-awareness",
+    "updatedAt": "2025-09-25T18:41:22Z",
+    "url": "https://github.com/microbiomedata/external-metadata-awareness",
+    "firstCommitDate": "2025-09-25T18:41:18Z",
+    "lastCommitDate": "2025-09-25T18:41:18Z",
+    "topContributors": [
+      {
+        "contributions": 491,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 3,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-09-15T18:26:35Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "geoloc-tools",
+    "updatedAt": "2025-08-04T15:36:54Z",
+    "url": "https://github.com/microbiomedata/geoloc-tools",
+    "firstCommitDate": "2025-08-04T15:36:50Z",
+    "lastCommitDate": "2025-08-04T15:36:50Z",
+    "topContributors": [
+      {
+        "contributions": 53,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 26,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 10,
+        "login": "holdb103"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-03-29T16:16:05Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "experimental repo for testing R and R package installation in GH actions",
+    "name": "get-neon-data-with-r",
+    "updatedAt": "2024-08-13T00:39:59Z",
+    "url": "https://github.com/microbiomedata/get-neon-data-with-r",
+    "firstCommitDate": "2023-04-07T23:03:50Z",
+    "lastCommitDate": "2023-04-07T23:03:50Z",
+    "topContributors": [
+      {
+        "contributions": 38,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 2,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 1,
+        "login": "aclum"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-10-16T17:20:54Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Translates the environmental level values in the GOLD dataset into a hierarchical ontology. ",
+    "name": "GOLD-ontology-translation",
+    "updatedAt": "2020-02-26T20:29:08Z",
+    "url": "https://github.com/microbiomedata/GOLD-ontology-translation",
+    "firstCommitDate": "2020-02-26T20:28:55Z",
+    "lastCommitDate": "2020-02-26T20:28:55Z",
+    "topContributors": [
+      {
+        "contributions": 27,
+        "login": "wdduncan"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-08-03T13:34:15Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A place for trying out NMDC identifier principles",
+    "name": "id_sandbox",
+    "updatedAt": "2024-08-13T00:42:12Z",
+    "url": "https://github.com/microbiomedata/id_sandbox",
+    "firstCommitDate": "2022-08-03T21:57:01Z",
+    "lastCommitDate": "2022-08-03T21:57:01Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-03-21T23:31:43Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Tools and docs for managing NMDC servers, storage, and networking",
+    "name": "infra-admin",
+    "updatedAt": "2025-08-01T21:19:08Z",
+    "url": "https://github.com/microbiomedata/infra-admin",
+    "firstCommitDate": "2025-08-01T21:19:04Z",
+    "lastCommitDate": "2025-08-01T21:19:04Z",
+    "topContributors": [
+      {
+        "contributions": 207,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 41,
+        "login": "shreddd"
+      },
+      {
+        "contributions": 27,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 11,
+        "login": "aclum"
+      },
+      {
+        "contributions": 3,
+        "login": "scanon"
+      },
+      {
+        "contributions": 2,
+        "login": "mbthornton-lbl"
+      },
+      {
+        "contributions": 2,
+        "login": "naglepuff"
+      },
+      {
+        "contributions": 1,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-11-09T17:56:56Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Convert Index of Terms to LinkML YAML",
+    "name": "iot_to_linkml",
+    "updatedAt": "2024-08-13T00:35:18Z",
+    "url": "https://github.com/microbiomedata/iot_to_linkml",
+    "firstCommitDate": "2021-11-18T15:35:15Z",
+    "lastCommitDate": "2021-11-18T15:35:15Z",
+    "topContributors": [
+      {
+        "contributions": 22,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 2,
+        "login": "markvong"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-08-18T22:00:52Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "public repo for issues related to NMDC work",
+    "name": "issues",
+    "updatedAt": "2025-07-11T18:51:32Z",
+    "url": "https://github.com/microbiomedata/issues",
+    "firstCommitDate": "2025-07-11T18:51:27Z",
+    "lastCommitDate": "2025-07-11T18:51:27Z",
+    "topContributors": [
+      {
+        "contributions": 54,
+        "login": "mslarae13"
+      },
+      {
+        "contributions": 37,
+        "login": "shreddd"
+      },
+      {
+        "contributions": 31,
+        "login": "aclum"
+      },
+      {
+        "contributions": 26,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 12,
+        "login": "ssarrafan"
+      },
+      {
+        "contributions": 4,
+        "login": "dwinston"
+      },
+      {
+        "contributions": 3,
+        "login": "kheal"
+      },
+      {
+        "contributions": 3,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 3,
+        "login": "mflynn-lanl"
+      },
+      {
+        "contributions": 1,
+        "login": "PeopleMakeCulture"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-03-30T15:48:04Z",
+    "defaultBranchRef": {
+      "name": "Kaiko-main"
+    },
+    "description": "Generates sample-specific protein databases from raw peptide spectra",
+    "name": "kaiko_metaproteome",
+    "updatedAt": "2025-08-11T19:03:22Z",
+    "url": "https://github.com/microbiomedata/kaiko_metaproteome",
+    "firstCommitDate": "2025-08-11T19:03:18Z",
+    "lastCommitDate": "2025-08-11T19:03:18Z",
+    "topContributors": [
+      {
+        "contributions": 105,
+        "login": "CamiloPosso"
+      },
+      {
+        "contributions": 13,
+        "login": "jynlee7"
+      },
+      {
+        "contributions": 1,
+        "login": "picowatt"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-05-21T22:24:45Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Workflow for metagenome assembly",
+    "name": "metaAssembly",
+    "updatedAt": "2025-08-05T21:55:03Z",
+    "url": "https://github.com/microbiomedata/metaAssembly",
+    "firstCommitDate": "2025-08-05T21:54:59Z",
+    "lastCommitDate": "2025-08-05T21:54:59Z",
+    "topContributors": [
+      {
+        "contributions": 55,
+        "login": "vlilanl"
+      },
+      {
+        "contributions": 43,
+        "login": "kaijli"
+      },
+      {
+        "contributions": 16,
+        "login": "scanon"
+      },
+      {
+        "contributions": 9,
+        "login": "chienchi"
+      },
+      {
+        "contributions": 3,
+        "login": "aclum"
+      },
+      {
+        "contributions": 3,
+        "login": "hubin-keio"
+      },
+      {
+        "contributions": 2,
+        "login": "mbthornton-lbl"
+      },
+      {
+        "contributions": 2,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 1,
+        "login": "jfroula"
+      },
+      {
+        "contributions": 1,
+        "login": "ssarrafan"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-06-17T18:38:15Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Conversion of schemas/templates/metadata to biolinkml",
+    "name": "metadata_converter",
+    "updatedAt": "2023-02-13T14:15:00Z",
+    "url": "https://github.com/microbiomedata/metadata_converter",
+    "firstCommitDate": "2021-04-19T23:34:19Z",
+    "lastCommitDate": "2021-04-19T23:34:19Z",
+    "topContributors": [
+      {
+        "contributions": 25,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-12-27T20:17:27Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "CLI tool to convert metadata submissions from the NMDC submission portal to user facility Excel templates",
+    "name": "metadata-for-user-facility-template-transformations",
+    "updatedAt": "2025-08-28T23:28:25Z",
+    "url": "https://github.com/microbiomedata/metadata-for-user-facility-template-transformations",
+    "firstCommitDate": "2025-08-28T23:28:21Z",
+    "lastCommitDate": "2025-08-28T23:28:21Z",
+    "topContributors": [
+      {
+        "contributions": 43,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 23,
+        "login": "cristina-stonepedraza"
+      },
+      {
+        "contributions": 11,
+        "login": "Natalie-Winans"
+      },
+      {
+        "contributions": 6,
+        "login": "mslarae13"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-09-07T17:06:50Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "End-to-end metaG workflow (WIP)",
+    "name": "metaG",
+    "updatedAt": "2023-04-20T15:45:50Z",
+    "url": "https://github.com/microbiomedata/metaG",
+    "firstCommitDate": "2021-11-02T18:06:30Z",
+    "lastCommitDate": "2021-11-02T18:06:30Z",
+    "topContributors": [
+      {
+        "contributions": 9,
+        "login": "scanon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-05-21T22:28:44Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Workflow for metagenome assembled genomes generation. ",
+    "name": "metaMAGs",
+    "updatedAt": "2025-06-18T21:59:14Z",
+    "url": "https://github.com/microbiomedata/metaMAGs",
+    "firstCommitDate": "2025-05-02T16:44:08Z",
+    "lastCommitDate": "2025-05-02T16:44:08Z",
+    "topContributors": [
+      {
+        "contributions": 74,
+        "login": "chienchi"
+      },
+      {
+        "contributions": 26,
+        "login": "scanon"
+      },
+      {
+        "contributions": 15,
+        "login": "aclum"
+      },
+      {
+        "contributions": 8,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 6,
+        "login": "vlilanl"
+      },
+      {
+        "contributions": 5,
+        "login": "mbthornton-lbl"
+      },
+      {
+        "contributions": 4,
+        "login": "kaijli"
+      },
+      {
+        "contributions": 1,
+        "login": "hubin-keio"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-05-18T19:55:49Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Metabolomics Workflows for GC- and LC-MS Metabolomics and LC-MS Lipidomics",
+    "name": "metaMS",
+    "updatedAt": "2025-09-25T08:48:23Z",
+    "url": "https://github.com/microbiomedata/metaMS",
+    "firstCommitDate": "2025-09-09T20:53:53Z",
+    "lastCommitDate": "2025-09-09T20:53:53Z",
+    "topContributors": [
+      {
+        "contributions": 210,
+        "login": "kheal"
+      },
+      {
+        "contributions": 70,
+        "login": "corilo"
+      },
+      {
+        "contributions": 24,
+        "login": "smcolby"
+      },
+      {
+        "contributions": 12,
+        "login": "bmeluch"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-05-15T16:41:18Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Workflow for meta-proteomics analysis",
+    "name": "metaPro",
+    "updatedAt": "2025-08-19T21:41:03Z",
+    "url": "https://github.com/microbiomedata/metaPro",
+    "firstCommitDate": "2025-07-11T20:27:05Z",
+    "lastCommitDate": "2025-07-11T20:27:05Z",
+    "topContributors": [
+      {
+        "contributions": 195,
+        "login": "picowatt"
+      },
+      {
+        "contributions": 3,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 3,
+        "login": "pdpiehowski"
+      },
+      {
+        "contributions": 3,
+        "login": "ssarrafan"
+      },
+      {
+        "contributions": 3,
+        "login": "kaijli"
+      },
+      {
+        "contributions": 2,
+        "login": "mflynn-lanl"
+      },
+      {
+        "contributions": 1,
+        "login": "anubhav0fnu"
+      },
+      {
+        "contributions": 1,
+        "login": "hubin-keio"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-08-11T19:15:43Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "workflow for metatranscriptome assembly",
+    "name": "metaT_Assembly",
+    "updatedAt": "2025-04-15T21:26:53Z",
+    "url": "https://github.com/microbiomedata/metaT_Assembly",
+    "firstCommitDate": "2025-04-15T21:26:49Z",
+    "lastCommitDate": "2025-04-15T21:26:49Z",
+    "topContributors": [
+      {
+        "contributions": 49,
+        "login": "kaijli"
+      },
+      {
+        "contributions": 16,
+        "login": "mshakya"
+      },
+      {
+        "contributions": 2,
+        "login": "eecavanna"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-07-08T23:18:55Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Workflow for metatranscriptome read counting",
+    "name": "metaT_ReadCounts",
+    "updatedAt": "2025-04-15T23:07:14Z",
+    "url": "https://github.com/microbiomedata/metaT_ReadCounts",
+    "firstCommitDate": "2025-04-15T23:07:09Z",
+    "lastCommitDate": "2025-04-15T23:07:09Z",
+    "topContributors": [
+      {
+        "contributions": 40,
+        "login": "kaijli"
+      },
+      {
+        "contributions": 2,
+        "login": "eecavanna"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-01-11T23:15:27Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Workflow for metatranscriptome quality control",
+    "name": "metaT_ReadsQC",
+    "updatedAt": "2025-04-23T17:56:53Z",
+    "url": "https://github.com/microbiomedata/metaT_ReadsQC",
+    "firstCommitDate": "2025-04-23T17:56:50Z",
+    "lastCommitDate": "2025-04-23T17:56:50Z",
+    "topContributors": [
+      {
+        "contributions": 63,
+        "login": "kaijli"
+      },
+      {
+        "contributions": 3,
+        "login": "vlilanl"
+      },
+      {
+        "contributions": 2,
+        "login": "eecavanna"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-11-02T20:42:32Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Metatranscriptomics workflow",
+    "name": "metaT",
+    "updatedAt": "2025-05-05T21:49:47Z",
+    "url": "https://github.com/microbiomedata/metaT",
+    "firstCommitDate": "2025-05-05T21:49:43Z",
+    "lastCommitDate": "2025-05-05T21:49:43Z",
+    "topContributors": [
+      {
+        "contributions": 173,
+        "login": "mshakya"
+      },
+      {
+        "contributions": 61,
+        "login": "kaijli"
+      },
+      {
+        "contributions": 5,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 4,
+        "login": "hubin-keio"
+      },
+      {
+        "contributions": 3,
+        "login": "chienchi"
+      },
+      {
+        "contributions": 2,
+        "login": "ssarrafan"
+      },
+      {
+        "contributions": 2,
+        "login": "mflynn-lanl"
+      },
+      {
+        "contributions": 1,
+        "login": "scanon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-03-28T20:51:07Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Metagenome Annotation Workflow",
+    "name": "mg_annotation",
+    "updatedAt": "2025-06-18T22:07:34Z",
+    "url": "https://github.com/microbiomedata/mg_annotation",
+    "firstCommitDate": "2025-05-02T17:37:28Z",
+    "lastCommitDate": "2025-05-02T17:37:28Z",
+    "topContributors": [
+      {
+        "contributions": 132,
+        "login": "kaijli"
+      },
+      {
+        "contributions": 41,
+        "login": "scanon"
+      },
+      {
+        "contributions": 34,
+        "login": "aclum"
+      },
+      {
+        "contributions": 23,
+        "login": "mflynn-lanl"
+      },
+      {
+        "contributions": 9,
+        "login": "chienchi"
+      },
+      {
+        "contributions": 4,
+        "login": "hubin-keio"
+      },
+      {
+        "contributions": 4,
+        "login": "vlilanl"
+      },
+      {
+        "contributions": 2,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 2,
+        "login": "kltm"
+      },
+      {
+        "contributions": 1,
+        "login": "poeli"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-08-02T18:56:50Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "minimal-metab",
+    "updatedAt": "2023-08-03T00:10:30Z",
+    "url": "https://github.com/microbiomedata/minimal-metab",
+    "firstCommitDate": "2023-08-04T21:09:46Z",
+    "lastCommitDate": "2023-08-04T21:09:46Z",
+    "topContributors": [
+      {
+        "contributions": 9,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-02-13T17:30:21Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A MIxS repo that uses LinkML cookiecutter and schemasheets from the beginning",
+    "name": "mixs_fresh_start",
+    "updatedAt": "2024-08-13T00:39:16Z",
+    "url": "https://github.com/microbiomedata/mixs_fresh_start",
+    "firstCommitDate": "2023-02-21T12:34:57Z",
+    "lastCommitDate": "2023-02-21T12:34:57Z",
+    "topContributors": [
+      {
+        "contributions": 25,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-05-17T17:26:06Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Proposed, Harmonized MIxS 6.2",
+    "name": "mixs-6-2-release-candidate",
+    "updatedAt": "2023-09-28T17:50:17Z",
+    "url": "https://github.com/microbiomedata/mixs-6-2-release-candidate",
+    "firstCommitDate": "2023-08-02T02:04:18Z",
+    "lastCommitDate": "2023-08-02T02:04:18Z",
+    "topContributors": [
+      {
+        "contributions": 300,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-10-31T20:44:15Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "MIxS-ontology-translation",
+    "updatedAt": "2019-10-31T20:55:20Z",
+    "url": "https://github.com/microbiomedata/MIxS-ontology-translation",
+    "firstCommitDate": "2019-10-31T20:55:07Z",
+    "lastCommitDate": "2019-10-31T20:55:07Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "wdduncan"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-05-19T14:27:10Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Minimum Information about any (X) Sequence” (MIxS) specification",
+    "name": "mixs",
+    "updatedAt": "2022-06-09T21:43:36Z",
+    "url": "https://github.com/microbiomedata/mixs",
+    "firstCommitDate": "2023-04-05T13:02:50Z",
+    "lastCommitDate": "2023-04-05T13:02:50Z",
+    "topContributors": [
+      {
+        "contributions": 53,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 39,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 36,
+        "login": "ramonawalls"
+      },
+      {
+        "contributions": 13,
+        "login": "folker"
+      },
+      {
+        "contributions": 10,
+        "login": "renzok"
+      },
+      {
+        "contributions": 8,
+        "login": "lschriml"
+      },
+      {
+        "contributions": 4,
+        "login": "only1chunts"
+      },
+      {
+        "contributions": 2,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 2,
+        "login": "genomicstandardsconsortium"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-10-11T15:31:46Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Proving grounds for a refactored nmdc-schema",
+    "name": "monterey-schema",
+    "updatedAt": "2024-08-13T00:55:10Z",
+    "url": "https://github.com/microbiomedata/monterey-schema",
+    "firstCommitDate": "2023-10-13T19:32:43Z",
+    "lastCommitDate": "2023-10-13T19:32:43Z",
+    "topContributors": [
+      {
+        "contributions": 1087,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 566,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 123,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 49,
+        "login": "aclum"
+      },
+      {
+        "contributions": 27,
+        "login": "mslarae13"
+      },
+      {
+        "contributions": 16,
+        "login": "dwinston"
+      },
+      {
+        "contributions": 16,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 16,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 10,
+        "login": "scanon"
+      },
+      {
+        "contributions": 7,
+        "login": "dehays"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-10-13T16:13:25Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "message of the day (motd) site for informing users about e.g. changes in system availability",
+    "name": "motd",
+    "updatedAt": "2024-05-21T04:54:33Z",
+    "url": "https://github.com/microbiomedata/motd",
+    "firstCommitDate": "2022-10-13T18:44:48Z",
+    "lastCommitDate": "2022-10-13T18:44:48Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "dwinston"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-11-19T00:20:46Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "This repo is a place for the MS Material Processing Metadata Squad to save scripts and files related to the curation of the mass spectrometry material processing and processed sample metadata.",
+    "name": "ms_material_processing_curation",
+    "updatedAt": "2025-09-15T17:32:34Z",
+    "url": "https://github.com/microbiomedata/ms_material_processing_curation",
+    "firstCommitDate": "2025-09-15T17:32:28Z",
+    "lastCommitDate": "2025-09-15T17:32:28Z",
+    "topContributors": [
+      {
+        "contributions": 149,
+        "login": "samobermiller"
+      },
+      {
+        "contributions": 42,
+        "login": "bmeluch"
+      },
+      {
+        "contributions": 19,
+        "login": "kheal"
+      },
+      {
+        "contributions": 12,
+        "login": "mslarae13"
+      },
+      {
+        "contributions": 2,
+        "login": "hesspnnl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-12-09T19:13:11Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A library designed to simplify various research tasks for users looking to leverage the NMDC (National Microbiome Data Collaborative) APIs. The library provides a collection of general-purpose functions that facilitate easy access, manipulation, and analysis of microbiome data.",
+    "name": "nmdc_api_utilities",
+    "updatedAt": "2025-08-28T13:26:06Z",
+    "url": "https://github.com/microbiomedata/nmdc_api_utilities",
+    "firstCommitDate": "2025-08-28T13:26:02Z",
+    "lastCommitDate": "2025-08-28T13:26:02Z",
+    "topContributors": [
+      {
+        "contributions": 176,
+        "login": "hesspnnl"
+      },
+      {
+        "contributions": 2,
+        "login": "Copilot"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-09-01T02:41:37Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Prototype automation",
+    "name": "nmdc_automation",
+    "updatedAt": "2025-09-30T03:11:47Z",
+    "url": "https://github.com/microbiomedata/nmdc_automation",
+    "firstCommitDate": "2025-09-30T03:11:41Z",
+    "lastCommitDate": "2025-09-30T03:11:41Z",
+    "topContributors": [
+      {
+        "contributions": 1455,
+        "login": "mbthornton-lbl"
+      },
+      {
+        "contributions": 197,
+        "login": "mflynn-lanl"
+      },
+      {
+        "contributions": 143,
+        "login": "aclum"
+      },
+      {
+        "contributions": 140,
+        "login": "scanon"
+      },
+      {
+        "contributions": 65,
+        "login": "kaijli"
+      },
+      {
+        "contributions": 42,
+        "login": "Shalsh23"
+      },
+      {
+        "contributions": 13,
+        "login": "shreddd"
+      },
+      {
+        "contributions": 9,
+        "login": "jasmynp"
+      },
+      {
+        "contributions": 9,
+        "login": "vlilanl"
+      },
+      {
+        "contributions": 8,
+        "login": "AmitBinf"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-12-14T21:18:19Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Document workflows, schemas, and portal",
+    "name": "NMDC_documentation",
+    "updatedAt": "2025-05-08T00:40:06Z",
+    "url": "https://github.com/microbiomedata/NMDC_documentation",
+    "firstCommitDate": "2025-05-08T00:40:02Z",
+    "lastCommitDate": "2025-05-08T00:40:02Z",
+    "topContributors": [
+      {
+        "contributions": 44,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 44,
+        "login": "aclum"
+      },
+      {
+        "contributions": 25,
+        "login": "shreddd"
+      },
+      {
+        "contributions": 12,
+        "login": "yxu-lanl"
+      },
+      {
+        "contributions": 12,
+        "login": "mslarae13"
+      },
+      {
+        "contributions": 9,
+        "login": "kwdavenport"
+      },
+      {
+        "contributions": 6,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 4,
+        "login": "dwinston"
+      },
+      {
+        "contributions": 3,
+        "login": "jkelliher-github"
+      },
+      {
+        "contributions": 1,
+        "login": "hubin-keio"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-02-23T05:31:18Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "NMDC metaAssembly in KBase",
+    "name": "nmdc_kbase_metaassembly",
+    "updatedAt": "2021-03-05T16:57:11Z",
+    "url": "https://github.com/microbiomedata/nmdc_kbase_metaassembly",
+    "firstCommitDate": "2021-03-05T16:56:48Z",
+    "lastCommitDate": "2021-03-05T16:56:48Z",
+    "topContributors": [
+      {
+        "contributions": 6,
+        "login": "scanon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-09-28T22:18:49Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Tools for NMDC Integration with KBase",
+    "name": "nmdc_kbase",
+    "updatedAt": "2021-10-12T20:12:46Z",
+    "url": "https://github.com/microbiomedata/nmdc_kbase",
+    "firstCommitDate": "2021-10-12T20:08:45Z",
+    "lastCommitDate": "2021-10-12T20:08:45Z",
+    "topContributors": [
+      {
+        "contributions": 10,
+        "login": "scanon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-01-30T18:44:47Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Mass spectrometry metadata generation",
+    "name": "nmdc_mass_spectrometry_metadata_generation",
+    "updatedAt": "2025-09-17T16:57:24Z",
+    "url": "https://github.com/microbiomedata/nmdc_mass_spectrometry_metadata_generation",
+    "firstCommitDate": "2025-09-17T16:57:20Z",
+    "lastCommitDate": "2025-09-17T16:57:20Z",
+    "topContributors": [
+      {
+        "contributions": 350,
+        "login": "hesspnnl"
+      },
+      {
+        "contributions": 63,
+        "login": "kheal"
+      },
+      {
+        "contributions": 9,
+        "login": "Copilot"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-10-11T17:29:08Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Jupyter Notebooks demonstrating R and Python-based access to NMDC metadata and data",
+    "name": "nmdc_notebooks",
+    "updatedAt": "2025-08-18T20:47:23Z",
+    "url": "https://github.com/microbiomedata/nmdc_notebooks",
+    "firstCommitDate": "2025-08-18T20:47:19Z",
+    "lastCommitDate": "2025-08-18T20:47:19Z",
+    "topContributors": [
+      {
+        "contributions": 175,
+        "login": "bmeluch"
+      },
+      {
+        "contributions": 135,
+        "login": "samobermiller"
+      },
+      {
+        "contributions": 109,
+        "login": "kheal"
+      },
+      {
+        "contributions": 35,
+        "login": "CamiloPosso"
+      },
+      {
+        "contributions": 22,
+        "login": "hesspnnl"
+      },
+      {
+        "contributions": 16,
+        "login": "brynnz22"
+      },
+      {
+        "contributions": 12,
+        "login": "simroux"
+      },
+      {
+        "contributions": 2,
+        "login": "scanon"
+      },
+      {
+        "contributions": 1,
+        "login": "emileyfadrosh"
+      },
+      {
+        "contributions": 1,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-05-09T18:05:46Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Scripts that periodically aggregate data related to KEGG search",
+    "name": "nmdc-aggregator",
+    "updatedAt": "2025-09-02T20:09:07Z",
+    "url": "https://github.com/microbiomedata/nmdc-aggregator",
+    "firstCommitDate": "2025-09-02T20:09:02Z",
+    "lastCommitDate": "2025-09-02T20:09:02Z",
+    "topContributors": [
+      {
+        "contributions": 34,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 24,
+        "login": "kheal"
+      },
+      {
+        "contributions": 20,
+        "login": "hesspnnl"
+      },
+      {
+        "contributions": 12,
+        "login": "aclum"
+      },
+      {
+        "contributions": 8,
+        "login": "chienchi"
+      },
+      {
+        "contributions": 3,
+        "login": "mbthornton-lbl"
+      },
+      {
+        "contributions": 1,
+        "login": "dwinston"
+      },
+      {
+        "contributions": 1,
+        "login": "picowatt"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-10-17T16:57:33Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Not the real app. Not even a prototype.",
+    "name": "nmdc-app-prototype",
+    "updatedAt": "2024-06-12T22:33:27Z",
+    "url": "https://github.com/microbiomedata/nmdc-app-prototype",
+    "firstCommitDate": "2023-10-23T16:15:54Z",
+    "lastCommitDate": "2023-10-23T16:15:54Z",
+    "topContributors": [
+      {
+        "contributions": 10,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 5,
+        "login": "eecavanna"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-06-11T22:16:58Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Terraform code, helm charts, etc., related to deploying NMDC services to the cloud",
+    "name": "nmdc-cloud-deployment",
+    "updatedAt": "2025-08-03T23:07:08Z",
+    "url": "https://github.com/microbiomedata/nmdc-cloud-deployment",
+    "firstCommitDate": "2025-08-03T23:07:01Z",
+    "lastCommitDate": "2025-08-03T23:07:01Z",
+    "topContributors": [
+      {
+        "contributions": 149,
+        "login": "sanjaypjana"
+      },
+      {
+        "contributions": 43,
+        "login": "eecavanna"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-02-14T19:46:00Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Datasets that are stored in the central NMDC database.",
+    "name": "nmdc-datasets",
+    "updatedAt": "2024-08-19T16:39:25Z",
+    "url": "https://github.com/microbiomedata/nmdc-datasets",
+    "firstCommitDate": "2024-08-19T16:38:54Z",
+    "lastCommitDate": "2024-08-19T16:38:54Z",
+    "topContributors": [
+      {
+        "contributions": 34,
+        "login": "sujaypatil96"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-08-29T17:58:24Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "nmdc-edge-docs",
+    "updatedAt": "2023-08-29T17:58:25Z",
+    "url": "https://github.com/microbiomedata/nmdc-edge-docs",
+    "firstCommitDate": "2023-08-29T19:21:26Z",
+    "lastCommitDate": "2023-08-29T19:21:26Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2023-05-08T17:07:41Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Web-based interface to the NMDC EDGE platform",
+    "name": "nmdc-edge",
+    "updatedAt": "2025-09-25T00:39:24Z",
+    "url": "https://github.com/microbiomedata/nmdc-edge",
+    "firstCommitDate": "2025-09-25T00:39:18Z",
+    "lastCommitDate": "2025-09-25T00:39:18Z",
+    "topContributors": [
+      {
+        "contributions": 666,
+        "login": "mflynn-lanl"
+      },
+      {
+        "contributions": 135,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 70,
+        "login": "yxu-lanl"
+      },
+      {
+        "contributions": 64,
+        "login": "vlilanl"
+      },
+      {
+        "contributions": 28,
+        "login": "kaijli"
+      },
+      {
+        "contributions": 23,
+        "login": "chienchi"
+      },
+      {
+        "contributions": 7,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 7,
+        "login": "mshakya"
+      },
+      {
+        "contributions": 3,
+        "login": "AmitBinf"
+      },
+      {
+        "contributions": 1,
+        "login": "kkudish"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-03-30T16:12:22Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Consolidation of NMDC's use of EMP500 data and metadata",
+    "name": "nmdc-emp500",
+    "updatedAt": "2022-03-30T16:32:40Z",
+    "url": "https://github.com/microbiomedata/nmdc-emp500",
+    "firstCommitDate": "2022-04-06T21:32:04Z",
+    "lastCommitDate": "2022-04-06T21:32:04Z",
+    "topContributors": [
+      {
+        "contributions": 15,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-12-18T23:58:21Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Mobile app for metadata collection on the go",
+    "name": "nmdc-field-notes",
+    "updatedAt": "2025-08-20T22:37:13Z",
+    "url": "https://github.com/microbiomedata/nmdc-field-notes",
+    "firstCommitDate": "2025-08-20T22:34:48Z",
+    "lastCommitDate": "2025-08-20T22:34:48Z",
+    "topContributors": [
+      {
+        "contributions": 388,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 281,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 16,
+        "login": "yxu-lanl"
+      },
+      {
+        "contributions": 3,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 1,
+        "login": "simroux"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-08-31T05:13:16Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "nmdc-helm",
+    "updatedAt": "2024-05-14T21:30:33Z",
+    "url": "https://github.com/microbiomedata/nmdc-helm",
+    "firstCommitDate": "2024-05-14T21:30:29Z",
+    "lastCommitDate": "2024-05-14T21:30:29Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "kfox1111"
+      },
+      {
+        "contributions": 6,
+        "login": "shreddd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-06-10T21:53:44Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "nmdc-mcp",
+    "updatedAt": "2025-08-12T17:56:09Z",
+    "url": "https://github.com/microbiomedata/nmdc-mcp",
+    "firstCommitDate": "2025-08-12T17:56:06Z",
+    "lastCommitDate": "2025-08-12T17:56:06Z",
+    "topContributors": [
+      {
+        "contributions": 69,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 16,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 11,
+        "login": "shreddd"
+      },
+      {
+        "contributions": 6,
+        "login": "hesspnnl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-08-28T21:42:16Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Managing metadata and policy around metadata in NMDC",
+    "name": "nmdc-metadata",
+    "updatedAt": "2025-02-14T22:26:31Z",
+    "url": "https://github.com/microbiomedata/nmdc-metadata",
+    "firstCommitDate": "2024-04-19T17:51:56Z",
+    "lastCommitDate": "2024-04-19T17:51:56Z",
+    "topContributors": [
+      {
+        "contributions": 621,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 157,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 66,
+        "login": "deepakunni3"
+      },
+      {
+        "contributions": 38,
+        "login": "dwinston"
+      },
+      {
+        "contributions": 10,
+        "login": "SamuelPurvine"
+      },
+      {
+        "contributions": 4,
+        "login": "chienchi"
+      },
+      {
+        "contributions": 3,
+        "login": "dehays"
+      },
+      {
+        "contributions": 2,
+        "login": "StantonMartin"
+      },
+      {
+        "contributions": 1,
+        "login": "Blancohl"
+      },
+      {
+        "contributions": 1,
+        "login": "kfagnan"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-11-27T20:38:17Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Tools used to collect metrics-related data about the NMDC system",
+    "name": "nmdc-metrics-fetcher",
+    "updatedAt": "2025-06-25T18:50:44Z",
+    "url": "https://github.com/microbiomedata/nmdc-metrics-fetcher",
+    "firstCommitDate": "2025-06-25T18:50:40Z",
+    "lastCommitDate": "2025-06-25T18:50:40Z",
+    "topContributors": [
+      {
+        "contributions": 14,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 2,
+        "login": "shreddd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-08-04T00:35:19Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Demonstration of migrating a Mongo database",
+    "name": "nmdc-mongo-migration-demo",
+    "updatedAt": "2024-06-12T22:33:26Z",
+    "url": "https://github.com/microbiomedata/nmdc-mongo-migration-demo",
+    "firstCommitDate": "2023-08-17T21:27:25Z",
+    "lastCommitDate": "2023-08-17T21:27:25Z",
+    "topContributors": [
+      {
+        "contributions": 20,
+        "login": "eecavanna"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-05-03T23:39:07Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "nmdc-ontology",
+    "updatedAt": "2024-04-04T13:43:54Z",
+    "url": "https://github.com/microbiomedata/nmdc-ontology",
+    "firstCommitDate": "2024-04-04T13:43:48Z",
+    "lastCommitDate": "2024-04-04T13:43:48Z",
+    "topContributors": [
+      {
+        "contributions": 146,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 76,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-10-05T06:26:12Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Web app NMDC team members use to credit ambassadors and champions via ORCID",
+    "name": "nmdc-orcid-creditor",
+    "updatedAt": "2025-08-07T23:35:02Z",
+    "url": "https://github.com/microbiomedata/nmdc-orcid-creditor",
+    "firstCommitDate": "2025-08-07T23:34:58Z",
+    "lastCommitDate": "2025-08-07T23:34:58Z",
+    "topContributors": [
+      {
+        "contributions": 92,
+        "login": "eecavanna"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-04-05T21:14:34Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Runtime system for NMDC data management and orchestration",
+    "name": "nmdc-runtime",
+    "updatedAt": "2025-09-29T08:22:35Z",
+    "url": "https://github.com/microbiomedata/nmdc-runtime",
+    "firstCommitDate": "2025-09-29T08:05:34Z",
+    "lastCommitDate": "2025-09-29T08:05:34Z",
+    "topContributors": [
+      {
+        "contributions": 1210,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 857,
+        "login": "dwinston"
+      },
+      {
+        "contributions": 311,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 164,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 132,
+        "login": "elais"
+      },
+      {
+        "contributions": 100,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 72,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 65,
+        "login": "aclum"
+      },
+      {
+        "contributions": 57,
+        "login": "shreddd"
+      },
+      {
+        "contributions": 39,
+        "login": "PeopleMakeCulture"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-04-03T00:54:27Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "National Microbiome Data Collaborative (NMDC) unified data model",
+    "name": "nmdc-schema",
+    "updatedAt": "2025-09-25T19:22:55Z",
+    "url": "https://github.com/microbiomedata/nmdc-schema",
+    "firstCommitDate": "2025-09-25T19:22:47Z",
+    "lastCommitDate": "2025-09-25T19:22:47Z",
+    "topContributors": [
+      {
+        "contributions": 2074,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 677,
+        "login": "aclum"
+      },
+      {
+        "contributions": 566,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 460,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 242,
+        "login": "kheal"
+      },
+      {
+        "contributions": 234,
+        "login": "mslarae13"
+      },
+      {
+        "contributions": 205,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 196,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 136,
+        "login": "mbthornton-lbl"
+      },
+      {
+        "contributions": 109,
+        "login": "hesspnnl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-02-04T14:14:04Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Data portal client and server for NMDC.",
+    "name": "nmdc-server",
+    "updatedAt": "2025-09-25T21:11:57Z",
+    "url": "https://github.com/microbiomedata/nmdc-server",
+    "firstCommitDate": "2025-09-25T21:11:53Z",
+    "lastCommitDate": "2025-09-25T21:11:53Z",
+    "topContributors": [
+      {
+        "contributions": 833,
+        "login": "naglepuff"
+      },
+      {
+        "contributions": 470,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 416,
+        "login": "jbeezley"
+      },
+      {
+        "contributions": 272,
+        "login": "marySalvi"
+      },
+      {
+        "contributions": 215,
+        "login": "subdavis"
+      },
+      {
+        "contributions": 202,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 90,
+        "login": "mcovalt"
+      },
+      {
+        "contributions": 68,
+        "login": "cristina-stonepedraza"
+      },
+      {
+        "contributions": 66,
+        "login": "zachmullen"
+      },
+      {
+        "contributions": 50,
+        "login": "jeffbaumes"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-09-29T20:27:54Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Static web page(s) used to display messages during outages and other special events",
+    "name": "nmdc-status-website",
+    "updatedAt": "2025-09-25T18:19:57Z",
+    "url": "https://github.com/microbiomedata/nmdc-status-website",
+    "firstCommitDate": "2025-09-25T18:19:54Z",
+    "lastCommitDate": "2025-09-25T18:19:54Z",
+    "topContributors": [
+      {
+        "contributions": 28,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 5,
+        "login": "shreddd"
+      },
+      {
+        "contributions": 1,
+        "login": "pkalita-lbl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-09-21T00:25:34Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Development environment for the WordPress theme originally built by Comrade Web Agency",
+    "name": "nmdc-wordpress-theme",
+    "updatedAt": "2025-06-09T18:58:43Z",
+    "url": "https://github.com/microbiomedata/nmdc-wordpress-theme",
+    "firstCommitDate": "2025-06-09T18:58:38Z",
+    "lastCommitDate": "2025-06-09T18:58:38Z",
+    "topContributors": [
+      {
+        "contributions": 87,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 11,
+        "login": "pkalita-lbl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-05-13T01:17:34Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "ChatGPT plugin for NMDC (ALPHA)",
+    "name": "oai-nmdc-plugin",
+    "updatedAt": "2024-07-25T15:31:23Z",
+    "url": "https://github.com/microbiomedata/oai-nmdc-plugin",
+    "firstCommitDate": "2023-05-13T01:26:21Z",
+    "lastCommitDate": "2023-05-13T01:26:21Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-02-17T11:48:10Z",
+    "defaultBranchRef": {
+      "name": ""
+    },
+    "description": "",
+    "name": "old-metadata-issues",
+    "updatedAt": "2024-07-16T16:22:10Z",
+    "url": "https://github.com/microbiomedata/old-metadata-issues",
+    "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+    "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+  },
+  {
+    "createdAt": "2024-09-30T20:53:30Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "ontology-loader",
+    "updatedAt": "2025-06-11T19:21:16Z",
+    "url": "https://github.com/microbiomedata/ontology-loader",
+    "firstCommitDate": "2025-06-11T19:21:11Z",
+    "lastCommitDate": "2025-06-11T19:21:11Z",
+    "topContributors": [
+      {
+        "contributions": 155,
+        "login": "sierra-moxon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-01-29T17:44:01Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "pilot",
+    "updatedAt": "2020-04-06T13:29:28Z",
+    "url": "https://github.com/microbiomedata/pilot",
+    "firstCommitDate": "2020-04-06T13:29:16Z",
+    "lastCommitDate": "2020-04-06T13:29:16Z",
+    "topContributors": [
+      {
+        "contributions": 44,
+        "login": "jeffbaumes"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-09-24T19:30:46Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "portal_user_guide",
+    "updatedAt": "2025-02-20T20:15:41Z",
+    "url": "https://github.com/microbiomedata/portal_user_guide",
+    "firstCommitDate": "2025-02-20T20:15:37Z",
+    "lastCommitDate": "2025-02-20T20:15:37Z",
+    "topContributors": [
+      {
+        "contributions": 12,
+        "login": "hubin-keio"
+      },
+      {
+        "contributions": 5,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 4,
+        "login": "mflynn-lanl"
+      },
+      {
+        "contributions": 2,
+        "login": "kwdavenport"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-12-18T21:48:38Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Python library and tools to work on NMDC data.",
+    "name": "pynmdc",
+    "updatedAt": "2022-02-15T18:11:18Z",
+    "url": "https://github.com/microbiomedata/pynmdc",
+    "firstCommitDate": "2022-03-18T20:22:33Z",
+    "lastCommitDate": "2022-03-18T20:22:33Z",
+    "topContributors": [
+      {
+        "contributions": 44,
+        "login": "hubin-keio"
+      },
+      {
+        "contributions": 8,
+        "login": "deepakunni3"
+      },
+      {
+        "contributions": 3,
+        "login": "dwinston"
+      },
+      {
+        "contributions": 3,
+        "login": "mshakya"
+      },
+      {
+        "contributions": 2,
+        "login": "poeli"
+      },
+      {
+        "contributions": 1,
+        "login": "chienchi"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-08-07T21:45:39Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "ReadbasedAnalysis",
+    "updatedAt": "2025-06-30T20:37:01Z",
+    "url": "https://github.com/microbiomedata/ReadbasedAnalysis",
+    "firstCommitDate": "2025-06-24T15:54:42Z",
+    "lastCommitDate": "2025-06-24T15:54:42Z",
+    "topContributors": [
+      {
+        "contributions": 36,
+        "login": "poeli"
+      },
+      {
+        "contributions": 27,
+        "login": "mflynn-lanl"
+      },
+      {
+        "contributions": 24,
+        "login": "vlilanl"
+      },
+      {
+        "contributions": 12,
+        "login": "kaijli"
+      },
+      {
+        "contributions": 10,
+        "login": "scanon"
+      },
+      {
+        "contributions": 8,
+        "login": "aclum"
+      },
+      {
+        "contributions": 7,
+        "login": "chienchi"
+      },
+      {
+        "contributions": 4,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 2,
+        "login": "hubin-keio"
+      },
+      {
+        "contributions": 1,
+        "login": "jfroula"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-05-21T22:26:58Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "ReadsQC",
+    "updatedAt": "2025-09-05T19:39:55Z",
+    "url": "https://github.com/microbiomedata/ReadsQC",
+    "firstCommitDate": "2025-09-05T19:39:49Z",
+    "lastCommitDate": "2025-09-05T19:39:49Z",
+    "topContributors": [
+      {
+        "contributions": 58,
+        "login": "vlilanl"
+      },
+      {
+        "contributions": 38,
+        "login": "chienchi"
+      },
+      {
+        "contributions": 31,
+        "login": "kaijli"
+      },
+      {
+        "contributions": 13,
+        "login": "scanon"
+      },
+      {
+        "contributions": 4,
+        "login": "aclum"
+      },
+      {
+        "contributions": 2,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 2,
+        "login": "hubin-keio"
+      },
+      {
+        "contributions": 2,
+        "login": "dcassol"
+      },
+      {
+        "contributions": 1,
+        "login": "ssarrafan"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-07-13T19:26:32Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Command-line program that scans NMDC database for referential integrity violations",
+    "name": "refscan",
+    "updatedAt": "2025-09-01T00:14:44Z",
+    "url": "https://github.com/microbiomedata/refscan",
+    "firstCommitDate": "2025-09-01T00:14:40Z",
+    "lastCommitDate": "2025-09-01T00:14:40Z",
+    "topContributors": [
+      {
+        "contributions": 213,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 2,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 2,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 1,
+        "login": "shreddd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-07-10T02:39:17Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "NMDC Sample Annotator",
+    "name": "sample-annotator",
+    "updatedAt": "2025-04-21T22:31:55Z",
+    "url": "https://github.com/microbiomedata/sample-annotator",
+    "firstCommitDate": "2025-04-21T22:31:50Z",
+    "lastCommitDate": "2025-04-21T22:31:50Z",
+    "topContributors": [
+      {
+        "contributions": 93,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 83,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 27,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 23,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 12,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 4,
+        "login": "dehays"
+      },
+      {
+        "contributions": 2,
+        "login": "kltm"
+      },
+      {
+        "contributions": 1,
+        "login": "StantonMartin"
+      },
+      {
+        "contributions": 1,
+        "login": "realmarcin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-08-10T13:02:04Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A sandbox for NMDC team members to hack the schema",
+    "name": "schema_hackathon",
+    "updatedAt": "2024-08-13T00:37:08Z",
+    "url": "https://github.com/microbiomedata/schema_hackathon",
+    "firstCommitDate": "2022-09-07T16:07:31Z",
+    "lastCommitDate": "2022-09-07T16:07:31Z",
+    "topContributors": [
+      {
+        "contributions": 13,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-02-11T16:05:19Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Enhance a LinkML model with imported and optionally modified slots",
+    "name": "sheets_and_friends",
+    "updatedAt": "2024-10-07T23:58:04Z",
+    "url": "https://github.com/microbiomedata/sheets_and_friends",
+    "firstCommitDate": "2024-10-07T23:58:00Z",
+    "lastCommitDate": "2024-10-07T23:58:00Z",
+    "topContributors": [
+      {
+        "contributions": 193,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 31,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 13,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 12,
+        "login": "subdavis"
+      }
+    ]
+  },
+  {
+    "createdAt": "2024-07-02T17:43:19Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "ncbi export ",
+    "name": "SRA_submit",
+    "updatedAt": "2025-05-01T20:49:09Z",
+    "url": "https://github.com/microbiomedata/SRA_submit",
+    "firstCommitDate": "2025-05-01T20:49:03Z",
+    "lastCommitDate": "2025-05-01T20:49:03Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "scanon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-03-01T14:47:42Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "submission-schema",
+    "updatedAt": "2025-09-25T18:42:32Z",
+    "url": "https://github.com/microbiomedata/submission-schema",
+    "firstCommitDate": "2025-09-25T18:42:27Z",
+    "lastCommitDate": "2025-09-25T18:42:27Z",
+    "topContributors": [
+      {
+        "contributions": 345,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 275,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 73,
+        "login": "mslarae13"
+      },
+      {
+        "contributions": 31,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 25,
+        "login": "bmeluch"
+      },
+      {
+        "contributions": 12,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 5,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 4,
+        "login": "aclum"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-12-16T16:28:30Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Reality checks from outside of the nmdc-schema repo",
+    "name": "use-nmdc-schema",
+    "updatedAt": "2022-12-16T16:57:48Z",
+    "url": "https://github.com/microbiomedata/use-nmdc-schema",
+    "firstCommitDate": "2023-09-21T19:44:00Z",
+    "lastCommitDate": "2023-09-21T19:44:00Z",
+    "topContributors": [
+      {
+        "contributions": 10,
+        "login": "turbomam"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-05-16T19:57:07Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "user_research",
+    "updatedAt": "2023-05-16T19:57:07Z",
+    "url": "https://github.com/microbiomedata/user_research",
+    "firstCommitDate": "2023-09-25T17:16:33Z",
+    "lastCommitDate": "2023-09-25T17:16:33Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "ssarrafan"
+      },
+      {
+        "contributions": 3,
+        "login": "ljohnson09"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-10-12T16:31:21Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "virusPlasmids",
+    "updatedAt": "2025-03-19T22:19:04Z",
+    "url": "https://github.com/microbiomedata/virusPlasmids",
+    "firstCommitDate": "2025-03-19T22:19:00Z",
+    "lastCommitDate": "2025-03-19T22:19:00Z",
+    "topContributors": [
+      {
+        "contributions": 3,
+        "login": "kaijli"
+      },
+      {
+        "contributions": 2,
+        "login": "mflynn-lanl"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-04-21T16:30:23Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "w3id purl redirections for NMDC schema files and per-term help pages",
+    "name": "w3id.org",
+    "updatedAt": "2025-09-25T20:55:54Z",
+    "url": "https://github.com/microbiomedata/w3id.org",
+    "firstCommitDate": "2025-09-25T19:46:41Z",
+    "lastCommitDate": "2025-09-25T19:46:41Z",
+    "topContributors": [
+      {
+        "contributions": 3326,
+        "login": "dgarijo"
+      },
+      {
+        "contributions": 1624,
+        "login": "davidlehn"
+      },
+      {
+        "contributions": 157,
+        "login": "rapw3k"
+      },
+      {
+        "contributions": 155,
+        "login": "jhaag75"
+      },
+      {
+        "contributions": 110,
+        "login": "tkuhn"
+      },
+      {
+        "contributions": 108,
+        "login": "msporny"
+      },
+      {
+        "contributions": 104,
+        "login": "markwilkinson"
+      },
+      {
+        "contributions": 82,
+        "login": "luigi-asprino"
+      },
+      {
+        "contributions": 81,
+        "login": "pedropaulofb"
+      },
+      {
+        "contributions": 77,
+        "login": "essepuntato"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-04-10T22:26:21Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "This repository contains the documentation template for the NDMC workflows. ",
+    "name": "workflow_documentation",
+    "updatedAt": "2025-02-20T20:15:52Z",
+    "url": "https://github.com/microbiomedata/workflow_documentation",
+    "firstCommitDate": "2025-02-20T20:15:48Z",
+    "lastCommitDate": "2025-02-20T20:15:48Z",
+    "topContributors": [
+      {
+        "contributions": 65,
+        "login": "hubin-keio"
+      },
+      {
+        "contributions": 10,
+        "login": "eecavanna"
+      },
+      {
+        "contributions": 4,
+        "login": "kwdavenport"
+      },
+      {
+        "contributions": 3,
+        "login": "aclum"
+      },
+      {
+        "contributions": 2,
+        "login": "jagadishcs"
+      },
+      {
+        "contributions": 1,
+        "login": "emileyfadrosh"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-09-23T18:02:02Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Nmdc testing documentation ",
+    "name": "workflow_testing",
+    "updatedAt": "2021-09-23T18:05:59Z",
+    "url": "https://github.com/microbiomedata/workflow_testing",
+    "firstCommitDate": "2021-09-23T18:04:07Z",
+    "lastCommitDate": "2021-09-23T18:04:07Z",
+    "topContributors": []
+  },
+  {
+    "createdAt": "2021-04-17T22:00:04Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Collection of scripts for handling the workflows",
+    "name": "workflow-scripts",
+    "updatedAt": "2021-11-02T16:08:47Z",
+    "url": "https://github.com/microbiomedata/workflow-scripts",
+    "firstCommitDate": "2022-05-20T22:26:27Z",
+    "lastCommitDate": "2022-05-20T22:26:27Z",
+    "topContributors": [
+      {
+        "contributions": 28,
+        "login": "scanon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-07-18T17:49:54Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "This is primarily a repo for capturing policies and discussions around the different workflows for NMDC.  This is also used for project management related pieces.",
+    "name": "WorkflowPlanning",
+    "updatedAt": "2025-04-07T18:02:03Z",
+    "url": "https://github.com/microbiomedata/WorkflowPlanning",
+    "firstCommitDate": "2025-04-07T18:01:54Z",
+    "lastCommitDate": "2025-04-07T18:01:54Z",
+    "topContributors": [
+      {
+        "contributions": 41,
+        "login": "mshakya"
+      },
+      {
+        "contributions": 29,
+        "login": "chienchi"
+      },
+      {
+        "contributions": 9,
+        "login": "scanon"
+      },
+      {
+        "contributions": 4,
+        "login": "poeli"
+      },
+      {
+        "contributions": 2,
+        "login": "dehays"
+      },
+      {
+        "contributions": 1,
+        "login": "mhuntemann"
+      }
+    ]
+  }
+]

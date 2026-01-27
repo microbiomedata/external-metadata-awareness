@@ -1,0 +1,54 @@
+{
+  "createdAt": "2022-07-01T09:42:58Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Python package with helper tools for the nf-core community.",
+  "name": "nf-core-tools",
+  "updatedAt": "2025-09-01T07:34:25Z",
+  "url": "https://github.com/jfy133/nf-core-tools",
+  "firstCommitDate": "2025-07-08T09:42:22Z",
+  "lastCommitDate": "2025-07-08T09:42:22Z",
+  "topContributors": [
+    {
+      "contributions": 2414,
+      "login": "ewels"
+    },
+    {
+      "contributions": 2060,
+      "login": "mirpedrol"
+    },
+    {
+      "contributions": 1809,
+      "login": "mashehu"
+    },
+    {
+      "contributions": 978,
+      "login": "drpatelh"
+    },
+    {
+      "contributions": 737,
+      "login": "ErikDanielsson"
+    },
+    {
+      "contributions": 548,
+      "login": "KevinMenden"
+    },
+    {
+      "contributions": 421,
+      "login": "sven1103"
+    },
+    {
+      "contributions": 376,
+      "login": "fabianegli"
+    },
+    {
+      "contributions": 357,
+      "login": "nf-core-bot"
+    },
+    {
+      "contributions": 245,
+      "login": "apeltzer"
+    }
+  ]
+}

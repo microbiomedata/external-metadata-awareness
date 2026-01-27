@@ -1,0 +1,22 @@
+{
+  "createdAt": "2019-08-27T15:12:07Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "bulk retrieval of similar terms from different ontologies, using BioPortal API",
+  "name": "getBpMappingsFromTermList",
+  "updatedAt": "2019-11-14T14:54:25Z",
+  "url": "https://github.com/PennTURBO/getBpMappingsFromTermList",
+  "firstCommitDate": "2019-11-14T14:54:22Z",
+  "lastCommitDate": "2019-11-14T14:54:22Z",
+  "topContributors": [
+    {
+      "contributions": 40,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 1,
+      "login": "cstoeckert"
+    }
+  ]
+}

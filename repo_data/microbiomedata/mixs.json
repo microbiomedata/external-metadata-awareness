@@ -1,0 +1,50 @@
+{
+  "createdAt": "2022-05-19T14:27:10Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Minimum Information about any (X) Sequence” (MIxS) specification",
+  "name": "mixs",
+  "updatedAt": "2022-06-09T21:43:36Z",
+  "url": "https://github.com/microbiomedata/mixs",
+  "firstCommitDate": "2023-04-05T13:02:50Z",
+  "lastCommitDate": "2023-04-05T13:02:50Z",
+  "topContributors": [
+    {
+      "contributions": 53,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 39,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 36,
+      "login": "ramonawalls"
+    },
+    {
+      "contributions": 13,
+      "login": "folker"
+    },
+    {
+      "contributions": 10,
+      "login": "renzok"
+    },
+    {
+      "contributions": 8,
+      "login": "lschriml"
+    },
+    {
+      "contributions": 4,
+      "login": "only1chunts"
+    },
+    {
+      "contributions": 2,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 2,
+      "login": "genomicstandardsconsortium"
+    }
+  ]
+}

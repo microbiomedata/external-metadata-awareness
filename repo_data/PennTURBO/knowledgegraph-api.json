@@ -1,0 +1,22 @@
+{
+  "createdAt": "2018-08-29T19:15:20Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Application that provides a rest API to communicate with the resources produced by the knowledgegraph pipelines.",
+  "name": "knowledgegraph-api",
+  "updatedAt": "2023-08-13T08:39:53Z",
+  "url": "https://github.com/PennTURBO/knowledgegraph-api",
+  "firstCommitDate": "2021-02-22T18:17:39Z",
+  "lastCommitDate": "2021-02-22T18:17:39Z",
+  "topContributors": [
+    {
+      "contributions": 68,
+      "login": "greenguy33"
+    },
+    {
+      "contributions": 30,
+      "login": "hjwilli"
+    }
+  ]
+}

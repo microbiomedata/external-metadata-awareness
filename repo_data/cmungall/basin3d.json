@@ -1,0 +1,30 @@
+{
+  "createdAt": "2022-09-21T17:00:44Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "The core BASIN-3D application that uses a generalized data synthesis model that applies across a variety of earth science observation types (hydrology, geochemistry, climate etc.).  https://basin3d.readthedocs.io/",
+  "name": "basin3d",
+  "updatedAt": "2023-06-12T20:51:40Z",
+  "url": "https://github.com/cmungall/basin3d",
+  "firstCommitDate": "2021-12-11T02:13:16Z",
+  "lastCommitDate": "2021-12-11T02:13:16Z",
+  "topContributors": [
+    {
+      "contributions": 23,
+      "login": "vchendrix"
+    },
+    {
+      "contributions": 9,
+      "login": "dschristianson"
+    },
+    {
+      "contributions": 4,
+      "login": "heycatwonton"
+    },
+    {
+      "contributions": 1,
+      "login": "team-think"
+    }
+  ]
+}

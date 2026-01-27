@@ -1,0 +1,42 @@
+{
+  "createdAt": "2016-06-02T19:38:14Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "desktop-phenote",
+  "updatedAt": "2016-06-02T19:51:45Z",
+  "url": "https://github.com/cmungall/desktop-phenote",
+  "firstCommitDate": "2014-05-12T16:49:23Z",
+  "lastCommitDate": "2014-05-12T16:49:23Z",
+  "topContributors": [
+    {
+      "contributions": 780,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 433,
+      "login": "nlwashington"
+    },
+    {
+      "contributions": 37,
+      "login": "hlapp"
+    },
+    {
+      "contributions": 8,
+      "login": "nathandunn"
+    },
+    {
+      "contributions": 6,
+      "login": "selewis"
+    },
+    {
+      "contributions": 4,
+      "login": "dosumis"
+    },
+    {
+      "contributions": 1,
+      "login": "ybradford"
+    }
+  ]
+}

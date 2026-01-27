@@ -1,0 +1,54 @@
+{
+  "createdAt": "2025-08-06T09:10:57Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": ":zap: Dynamically generated stats for your github readmes",
+  "name": "github-readme-stats",
+  "updatedAt": "2025-08-06T09:10:57Z",
+  "url": "https://github.com/jfy133/github-readme-stats",
+  "firstCommitDate": "2025-07-25T15:38:12Z",
+  "lastCommitDate": "2025-07-25T15:38:12Z",
+  "topContributors": [
+    {
+      "contributions": 395,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 338,
+      "login": "qwerty541"
+    },
+    {
+      "contributions": 266,
+      "login": "anuraghazra"
+    },
+    {
+      "contributions": 165,
+      "login": "rickstaa"
+    },
+    {
+      "contributions": 16,
+      "login": "github-actions[bot]"
+    },
+    {
+      "contributions": 13,
+      "login": "nathanchu"
+    },
+    {
+      "contributions": 7,
+      "login": "Zo-Bro-23"
+    },
+    {
+      "contributions": 5,
+      "login": "nombrekeff"
+    },
+    {
+      "contributions": 5,
+      "login": "omidnikrah"
+    },
+    {
+      "contributions": 3,
+      "login": "Marcholio"
+    }
+  ]
+}

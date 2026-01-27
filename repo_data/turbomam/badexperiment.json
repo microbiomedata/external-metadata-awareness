@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-11-01T12:29:41Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Convert Index of Terms to LinkML YAML. Many moving parts = bad experiment",
+  "name": "badexperiment",
+  "updatedAt": "2023-05-11T12:35:32Z",
+  "url": "https://github.com/turbomam/badexperiment",
+  "firstCommitDate": "2021-11-08T23:29:15Z",
+  "lastCommitDate": "2021-11-08T23:29:15Z",
+  "topContributors": [
+    {
+      "contributions": 13,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 2,
+      "login": "markvong"
+    }
+  ]
+}

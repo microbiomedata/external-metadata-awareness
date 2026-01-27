@@ -1,0 +1,12 @@
+{
+  "createdAt": "2015-06-03T01:11:40Z",
+  "defaultBranchRef": {
+    "name": ""
+  },
+  "description": "",
+  "name": "go-test",
+  "updatedAt": "2015-06-03T01:11:40Z",
+  "url": "https://github.com/cmungall/go-test",
+  "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+  "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+}

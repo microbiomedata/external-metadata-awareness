@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-04-23T19:40:04Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Documentation to gwas-sumstats-tools",
+  "name": "gwas-sumstats-tools-documentation",
+  "updatedAt": "2025-01-14T19:51:25Z",
+  "url": "https://github.com/EBISPOT/gwas-sumstats-tools-documentation",
+  "firstCommitDate": "2025-01-14T19:51:21Z",
+  "lastCommitDate": "2025-01-14T19:51:21Z",
+  "topContributors": [
+    {
+      "contributions": 23,
+      "login": "jiyue1214"
+    }
+  ]
+}

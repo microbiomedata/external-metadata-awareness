@@ -1,0 +1,38 @@
+{
+  "createdAt": "2020-11-02T21:21:25Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Repo to manage the dashboard for new term requests",
+  "name": "obo-nor.github.io",
+  "updatedAt": "2025-09-29T15:04:58Z",
+  "url": "https://github.com/OBOFoundry/obo-nor.github.io",
+  "firstCommitDate": "2025-09-29T15:04:54Z",
+  "lastCommitDate": "2025-09-29T15:04:54Z",
+  "topContributors": [
+    {
+      "contributions": 123,
+      "login": "github-actions[bot]"
+    },
+    {
+      "contributions": 105,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 41,
+      "login": "pfabry"
+    },
+    {
+      "contributions": 7,
+      "login": "anitacaron"
+    },
+    {
+      "contributions": 2,
+      "login": "Dalalghamdi"
+    },
+    {
+      "contributions": 1,
+      "login": "BideZ"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-06-26T18:35:35Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A data repository for capturing and curating disease annotation records ",
+  "name": "community-annotation",
+  "updatedAt": "2025-07-15T16:16:51Z",
+  "url": "https://github.com/monarch-initiative/community-annotation",
+  "firstCommitDate": "2025-07-15T16:16:45Z",
+  "lastCommitDate": "2025-07-15T16:16:45Z",
+  "topContributors": [
+    {
+      "contributions": 24,
+      "login": "kevinschaper"
+    }
+  ]
+}

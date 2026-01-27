@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-06-30T09:51:50Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Marmic masters, Lab rotation 3, 2017, field sampling campaignes to spiekeroog under direction of Dr. Soeren Ahmerkamp",
+  "name": "Spiekeroog_biogeo",
+  "updatedAt": "2023-04-22T16:27:21Z",
+  "url": "https://github.com/kaiiam/Spiekeroog_biogeo",
+  "firstCommitDate": "2017-10-11T08:07:52Z",
+  "lastCommitDate": "2017-10-11T08:07:52Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "SoerenAhmerkamp"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "createdAt": "2024-01-11T12:29:39Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A PhEval plugin for integrating a test runner, enabling testing of the  standardised pipeline.",
+  "name": "pheval.template",
+  "updatedAt": "2025-03-28T16:24:20Z",
+  "url": "https://github.com/monarch-initiative/pheval.template",
+  "firstCommitDate": "2025-03-28T16:24:16Z",
+  "lastCommitDate": "2025-03-28T16:24:16Z",
+  "topContributors": [
+    {
+      "contributions": 39,
+      "login": "yaseminbridges"
+    },
+    {
+      "contributions": 7,
+      "login": "souzadevinicius"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

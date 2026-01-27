@@ -1,0 +1,22 @@
+{
+  "createdAt": "2018-07-13T08:51:27Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Scripts to help enhance GWAS curation tasks.",
+  "name": "gwas-curation-utils",
+  "updatedAt": "2021-11-12T12:33:54Z",
+  "url": "https://github.com/EBISPOT/gwas-curation-utils",
+  "firstCommitDate": "2021-11-12T12:33:41Z",
+  "lastCommitDate": "2021-11-12T12:33:41Z",
+  "topContributors": [
+    {
+      "contributions": 27,
+      "login": "twhetzel"
+    },
+    {
+      "contributions": 3,
+      "login": "jdhayhurst"
+    }
+  ]
+}

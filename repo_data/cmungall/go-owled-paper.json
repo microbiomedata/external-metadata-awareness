@@ -1,0 +1,22 @@
+{
+  "createdAt": "2014-07-31T00:36:31Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "latex source for GO OWLED paer (not google doc is still primary)",
+  "name": "go-owled-paper",
+  "updatedAt": "2014-09-16T17:46:38Z",
+  "url": "https://github.com/cmungall/go-owled-paper",
+  "firstCommitDate": "2014-10-14T10:24:42Z",
+  "lastCommitDate": "2014-10-14T10:24:42Z",
+  "topContributors": [
+    {
+      "contributions": 19,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 2,
+      "login": "dosumis"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "createdAt": "2020-08-14T12:26:44Z",
+  "defaultBranchRef": {
+    "name": "v1.3"
+  },
+  "description": "The EMBL-EBI Visual Framework for websites and services.",
+  "name": "EBI-Framework-Flex",
+  "updatedAt": "2020-08-14T12:27:11Z",
+  "url": "https://github.com/EBISPOT/EBI-Framework-Flex",
+  "firstCommitDate": "2020-08-14T12:24:11Z",
+  "lastCommitDate": "2020-08-14T12:24:11Z",
+  "topContributors": [
+    {
+      "contributions": 1010,
+      "login": "khawkins98"
+    },
+    {
+      "contributions": 10,
+      "login": "peter-walter"
+    },
+    {
+      "contributions": 2,
+      "login": "esanzgar"
+    },
+    {
+      "contributions": 2,
+      "login": "sebpca"
+    },
+    {
+      "contributions": 1,
+      "login": "jamesamcl"
+    },
+    {
+      "contributions": 1,
+      "login": "jonathanhickford"
+    }
+  ]
+}

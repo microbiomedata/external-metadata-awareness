@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-08-04T17:10:50Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Gene and disease prioritization via semsimian algorithm wrapped around phenio.db + monarch-kg",
+  "name": "semphen",
+  "updatedAt": "2025-08-19T11:41:20Z",
+  "url": "https://github.com/monarch-initiative/semphen",
+  "firstCommitDate": "2025-08-04T23:39:38Z",
+  "lastCommitDate": "2025-08-04T23:39:38Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "AO33"
+    }
+  ]
+}

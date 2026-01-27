@@ -1,0 +1,38 @@
+{
+  "createdAt": "2021-05-05T20:14:45Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "DEPRECATED! Please use linkml-project-cookiecutter instead. ",
+  "name": "archived-linkml-model-template",
+  "updatedAt": "2023-05-15T11:05:51Z",
+  "url": "https://github.com/linkml/archived-linkml-model-template",
+  "firstCommitDate": "2023-05-12T21:15:08Z",
+  "lastCommitDate": "2023-05-12T21:15:08Z",
+  "topContributors": [
+    {
+      "contributions": 15,
+      "login": "hsolbrig"
+    },
+    {
+      "contributions": 7,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 3,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 2,
+      "login": "joeflack4"
+    },
+    {
+      "contributions": 1,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 1,
+      "login": "sierra-moxon"
+    }
+  ]
+}

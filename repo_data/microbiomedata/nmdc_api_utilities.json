@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-12-09T19:13:11Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A library designed to simplify various research tasks for users looking to leverage the NMDC (National Microbiome Data Collaborative) APIs. The library provides a collection of general-purpose functions that facilitate easy access, manipulation, and analysis of microbiome data.",
+  "name": "nmdc_api_utilities",
+  "updatedAt": "2025-08-28T13:26:06Z",
+  "url": "https://github.com/microbiomedata/nmdc_api_utilities",
+  "firstCommitDate": "2025-08-28T13:26:02Z",
+  "lastCommitDate": "2025-08-28T13:26:02Z",
+  "topContributors": [
+    {
+      "contributions": 176,
+      "login": "hesspnnl"
+    },
+    {
+      "contributions": 2,
+      "login": "Copilot"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-06-11T15:54:56Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Docker image for running a Blazegraph server",
+  "name": "blazegraph-docker",
+  "updatedAt": "2024-06-11T15:54:56Z",
+  "url": "https://github.com/EBISPOT/blazegraph-docker",
+  "firstCommitDate": "2022-02-03T18:24:46Z",
+  "lastCommitDate": "2022-02-03T18:24:46Z",
+  "topContributors": [
+    {
+      "contributions": 7,
+      "login": "balhoff"
+    }
+  ]
+}

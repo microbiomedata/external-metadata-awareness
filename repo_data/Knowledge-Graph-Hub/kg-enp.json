@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-01-16T20:52:57Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "KG-ENP: a knowledge graph for experimental natural products, based off ENPKG",
+  "name": "kg-enp",
+  "updatedAt": "2025-01-03T23:18:12Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/kg-enp",
+  "firstCommitDate": "2024-01-16T22:56:29Z",
+  "lastCommitDate": "2024-01-16T22:56:29Z",
+  "topContributors": [
+    {
+      "contributions": 18,
+      "login": "caufieldjh"
+    }
+  ]
+}

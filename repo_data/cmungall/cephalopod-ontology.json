@@ -1,0 +1,22 @@
+{
+  "createdAt": "2015-07-07T20:49:28Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Ontology of cephalopod anatomy and traits",
+  "name": "cephalopod-ontology",
+  "updatedAt": "2021-06-18T04:23:23Z",
+  "url": "https://github.com/cmungall/cephalopod-ontology",
+  "firstCommitDate": "2015-07-08T00:12:58Z",
+  "lastCommitDate": "2015-07-08T00:12:58Z",
+  "topContributors": [
+    {
+      "contributions": 54,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "OnToologyUser"
+    }
+  ]
+}

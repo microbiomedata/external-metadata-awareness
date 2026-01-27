@@ -1,0 +1,30 @@
+{
+  "createdAt": "2014-11-12T00:58:59Z",
+  "defaultBranchRef": {
+    "name": "develop"
+  },
+  "description": "Repository for representing genotypes and their association with phenotypes",
+  "name": "GENO-ontology",
+  "updatedAt": "2025-08-04T16:05:22Z",
+  "url": "https://github.com/monarch-initiative/GENO-ontology",
+  "firstCommitDate": "2025-07-28T10:00:51Z",
+  "lastCommitDate": "2025-07-28T10:00:51Z",
+  "topContributors": [
+    {
+      "contributions": 184,
+      "login": "mbrush"
+    },
+    {
+      "contributions": 44,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 2,
+      "login": "anitacaron"
+    },
+    {
+      "contributions": 2,
+      "login": "sbello"
+    }
+  ]
+}

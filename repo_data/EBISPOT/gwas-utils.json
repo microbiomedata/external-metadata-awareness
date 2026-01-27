@@ -1,0 +1,46 @@
+{
+  "createdAt": "2019-04-15T09:35:22Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Collection of tools and scripts to manage GWAS Catalog related infrastructure.",
+  "name": "gwas-utils",
+  "updatedAt": "2025-06-02T12:28:34Z",
+  "url": "https://github.com/EBISPOT/gwas-utils",
+  "firstCommitDate": "2025-06-02T11:02:12Z",
+  "lastCommitDate": "2025-06-02T11:02:12Z",
+  "topContributors": [
+    {
+      "contributions": 259,
+      "login": "jdhayhurst"
+    },
+    {
+      "contributions": 39,
+      "login": "karatugo"
+    },
+    {
+      "contributions": 22,
+      "login": "ala-ebi"
+    },
+    {
+      "contributions": 21,
+      "login": "sajo-ebi"
+    },
+    {
+      "contributions": 20,
+      "login": "jstewart-ebi"
+    },
+    {
+      "contributions": 10,
+      "login": "DSuveges"
+    },
+    {
+      "contributions": 8,
+      "login": "twhetzel"
+    },
+    {
+      "contributions": 1,
+      "login": "eks-ebi"
+    }
+  ]
+}

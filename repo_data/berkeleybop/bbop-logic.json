@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-01-13T22:06:19Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "BBOP object to try and take some of the pain out of managing the boolean logic that seems to show up periodically.",
+  "name": "bbop-logic",
+  "updatedAt": "2016-01-13T23:09:14Z",
+  "url": "https://github.com/berkeleybop/bbop-logic",
+  "firstCommitDate": "2016-01-14T01:27:17Z",
+  "lastCommitDate": "2016-01-14T01:27:17Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "kltm"
+    }
+  ]
+}

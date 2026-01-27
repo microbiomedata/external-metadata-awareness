@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-05-24T19:51:28Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Biological and Environmental Research Ontology (BERO)",
+  "name": "bero",
+  "updatedAt": "2022-05-26T22:16:14Z",
+  "url": "https://github.com/berkeleybop/bero",
+  "firstCommitDate": "2023-03-27T17:36:09Z",
+  "lastCommitDate": "2023-03-27T17:36:09Z",
+  "topContributors": [
+    {
+      "contributions": 48,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 12,
+      "login": "matentzn"
+    }
+  ]
+}

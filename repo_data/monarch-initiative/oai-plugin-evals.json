@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-09-07T16:58:14Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Evaluations for the Monarch OpenAI Plugin/Monarch Assistant against benchmarks.",
+  "name": "oai-plugin-evals",
+  "updatedAt": "2023-10-23T21:31:39Z",
+  "url": "https://github.com/monarch-initiative/oai-plugin-evals",
+  "firstCommitDate": "2023-12-24T19:47:24Z",
+  "lastCommitDate": "2023-12-24T19:47:24Z",
+  "topContributors": [
+    {
+      "contributions": 29,
+      "login": "oneilsh"
+    }
+  ]
+}

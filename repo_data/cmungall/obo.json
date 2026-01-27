@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-10-24T22:47:14Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A python parser for OBO ontology files",
+  "name": "obo",
+  "updatedAt": "2023-01-11T21:40:42Z",
+  "url": "https://github.com/cmungall/obo",
+  "firstCommitDate": "2015-07-27T23:46:28Z",
+  "lastCommitDate": "2015-07-27T23:46:28Z",
+  "topContributors": [
+    {
+      "contributions": 18,
+      "login": "dhimmel"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": "2024-10-24T19:06:35Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "BioGRID ingest",
+  "name": "biogrid-ingest",
+  "updatedAt": "2024-12-03T19:25:18Z",
+  "url": "https://github.com/monarch-initiative/biogrid-ingest",
+  "firstCommitDate": "2024-12-03T19:25:01Z",
+  "lastCommitDate": "2024-12-03T19:25:01Z",
+  "topContributors": [
+    {
+      "contributions": 6,
+      "login": "kevinschaper"
+    },
+    {
+      "contributions": 4,
+      "login": "RichardBruskiewich"
+    }
+  ]
+}

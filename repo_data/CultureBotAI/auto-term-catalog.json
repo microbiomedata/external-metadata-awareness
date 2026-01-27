@@ -1,0 +1,22 @@
+{
+  "createdAt": "2025-09-16T19:54:29Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "code for extracting AUTO terms from ontoGPT output",
+  "name": "auto-term-catalog",
+  "updatedAt": "2025-09-24T06:16:40Z",
+  "url": "https://github.com/CultureBotAI/auto-term-catalog",
+  "firstCommitDate": "2025-09-24T06:12:25Z",
+  "lastCommitDate": "2025-09-24T06:12:25Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "lukewangCS121"
+    },
+    {
+      "contributions": 1,
+      "login": "realmarcin"
+    }
+  ]
+}

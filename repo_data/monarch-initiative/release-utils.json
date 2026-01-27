@@ -1,0 +1,18 @@
+{
+  "createdAt": "2019-05-29T17:50:08Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Utilities for generating tsv downloads, release diffs, and other reports from scigraph and solr",
+  "name": "release-utils",
+  "updatedAt": "2021-12-17T17:37:19Z",
+  "url": "https://github.com/monarch-initiative/release-utils",
+  "firstCommitDate": "2021-07-01T13:40:10Z",
+  "lastCommitDate": "2021-07-01T13:40:10Z",
+  "topContributors": [
+    {
+      "contributions": 39,
+      "login": "kshefchek"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-02-05T11:59:14Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Tools for loading NCBI Biosample into an XML database and then transforming that into a SQL database",
+  "name": "biosample-xmldb-sqldb",
+  "updatedAt": "2025-09-19T20:31:30Z",
+  "url": "https://github.com/turbomam/biosample-xmldb-sqldb",
+  "firstCommitDate": "2024-08-16T16:32:24Z",
+  "lastCommitDate": "2024-08-16T16:32:24Z",
+  "topContributors": [
+    {
+      "contributions": 76,
+      "login": "turbomam"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-08-09T10:37:18Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "This is the github repo for the EBI-RDF platform.",
+  "name": "RDF-platform",
+  "updatedAt": "2023-09-22T12:08:50Z",
+  "url": "https://github.com/EBISPOT/RDF-platform",
+  "firstCommitDate": "2017-05-08T11:41:07Z",
+  "lastCommitDate": "2017-05-08T11:41:07Z",
+  "topContributors": [
+    {
+      "contributions": 42,
+      "login": "LLTommy"
+    }
+  ]
+}

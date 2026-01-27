@@ -1,0 +1,54 @@
+{
+  "createdAt": "2025-07-22T15:03:20Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Minimum Information about any (X) Sequence” (MIxS) specification. Focused on the build-to-release process and reporting differences between MIxS releases.",
+  "name": "mixs",
+  "updatedAt": "2025-09-02T15:36:00Z",
+  "url": "https://github.com/turbomam/mixs",
+  "firstCommitDate": "2025-09-02T15:35:43Z",
+  "lastCommitDate": "2025-09-02T15:35:43Z",
+  "topContributors": [
+    {
+      "contributions": 349,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 161,
+      "login": "sujaypatil96"
+    },
+    {
+      "contributions": 64,
+      "login": "ramonawalls"
+    },
+    {
+      "contributions": 54,
+      "login": "mslarae13"
+    },
+    {
+      "contributions": 18,
+      "login": "only1chunts"
+    },
+    {
+      "contributions": 14,
+      "login": "lschriml"
+    },
+    {
+      "contributions": 13,
+      "login": "folker"
+    },
+    {
+      "contributions": 13,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 12,
+      "login": "jfy133"
+    },
+    {
+      "contributions": 10,
+      "login": "renzok"
+    }
+  ]
+}

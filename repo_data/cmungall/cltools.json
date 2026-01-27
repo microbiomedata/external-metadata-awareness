@@ -1,0 +1,18 @@
+{
+  "createdAt": "2009-08-11T03:07:48Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "tools for common-logic",
+  "name": "cltools",
+  "updatedAt": "2025-09-13T11:51:35Z",
+  "url": "https://github.com/cmungall/cltools",
+  "firstCommitDate": "2013-03-05T22:16:35Z",
+  "lastCommitDate": "2013-03-05T22:16:35Z",
+  "topContributors": [
+    {
+      "contributions": 40,
+      "login": "cmungall"
+    }
+  ]
+}

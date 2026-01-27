@@ -1,0 +1,34 @@
+{
+  "createdAt": "2019-10-21T15:31:41Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "LIkelihood Ratio Interpretation of Clinical AbnormaLities",
+  "name": "LIRICAL",
+  "updatedAt": "2019-10-21T15:31:43Z",
+  "url": "https://github.com/cmungall/LIRICAL",
+  "firstCommitDate": "2019-10-11T23:43:44Z",
+  "lastCommitDate": "2019-10-11T23:43:44Z",
+  "topContributors": [
+    {
+      "contributions": 344,
+      "login": "pnrobinson"
+    },
+    {
+      "contributions": 49,
+      "login": "vidarmehr"
+    },
+    {
+      "contributions": 4,
+      "login": "jeremy9959"
+    },
+    {
+      "contributions": 4,
+      "login": "julesjacobsen"
+    },
+    {
+      "contributions": 2,
+      "login": "kingmanzhang"
+    }
+  ]
+}

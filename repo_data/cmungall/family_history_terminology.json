@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-10-12T00:27:27Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "family_history_terminology",
+  "updatedAt": "2024-06-27T12:22:12Z",
+  "url": "https://github.com/cmungall/family_history_terminology",
+  "firstCommitDate": "2021-09-16T23:42:01Z",
+  "lastCommitDate": "2021-09-16T23:42:01Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "lindsmith"
+    }
+  ]
+}

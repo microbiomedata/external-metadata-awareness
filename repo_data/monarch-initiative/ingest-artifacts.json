@@ -1,0 +1,30 @@
+{
+  "createdAt": "2017-03-15T22:06:16Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "store artifacts generated ingesting Monarch's sources via Dipper",
+  "name": "ingest-artifacts",
+  "updatedAt": "2018-06-15T20:43:18Z",
+  "url": "https://github.com/monarch-initiative/ingest-artifacts",
+  "firstCommitDate": "2018-06-15T20:43:08Z",
+  "lastCommitDate": "2018-06-15T20:43:08Z",
+  "topContributors": [
+    {
+      "contributions": 51,
+      "login": "mbrush"
+    },
+    {
+      "contributions": 8,
+      "login": "TomConlin"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "putmantime"
+    }
+  ]
+}

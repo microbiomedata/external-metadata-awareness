@@ -1,0 +1,22 @@
+{
+  "createdAt": "2018-03-01T14:01:08Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The Children's Health Exposure Analysis Resource (CHEAR) Ontology",
+  "name": "chear-ontology",
+  "updatedAt": "2018-03-01T14:01:10Z",
+  "url": "https://github.com/cmungall/chear-ontology",
+  "firstCommitDate": "2017-07-06T17:19:14Z",
+  "lastCommitDate": "2017-07-06T17:19:14Z",
+  "topContributors": [
+    {
+      "contributions": 13,
+      "login": "jpmccu"
+    },
+    {
+      "contributions": 9,
+      "login": "rashidsabbir"
+    }
+  ]
+}

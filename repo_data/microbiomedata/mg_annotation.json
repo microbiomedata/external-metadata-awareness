@@ -1,0 +1,54 @@
+{
+  "createdAt": "2020-03-28T20:51:07Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Metagenome Annotation Workflow",
+  "name": "mg_annotation",
+  "updatedAt": "2025-06-18T22:07:34Z",
+  "url": "https://github.com/microbiomedata/mg_annotation",
+  "firstCommitDate": "2025-05-02T17:37:28Z",
+  "lastCommitDate": "2025-05-02T17:37:28Z",
+  "topContributors": [
+    {
+      "contributions": 132,
+      "login": "kaijli"
+    },
+    {
+      "contributions": 41,
+      "login": "scanon"
+    },
+    {
+      "contributions": 34,
+      "login": "aclum"
+    },
+    {
+      "contributions": 23,
+      "login": "mflynn-lanl"
+    },
+    {
+      "contributions": 9,
+      "login": "chienchi"
+    },
+    {
+      "contributions": 4,
+      "login": "hubin-keio"
+    },
+    {
+      "contributions": 4,
+      "login": "vlilanl"
+    },
+    {
+      "contributions": 2,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 2,
+      "login": "kltm"
+    },
+    {
+      "contributions": 1,
+      "login": "poeli"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2024-05-02T11:14:54Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "automaxoviewer",
+  "name": "automaxoviewer",
+  "updatedAt": "2025-05-11T07:39:25Z",
+  "url": "https://github.com/monarch-initiative/automaxoviewer",
+  "firstCommitDate": "2025-05-11T07:39:21Z",
+  "lastCommitDate": "2025-05-11T07:39:21Z",
+  "topContributors": [
+    {
+      "contributions": 43,
+      "login": "pnrobinson"
+    }
+  ]
+}

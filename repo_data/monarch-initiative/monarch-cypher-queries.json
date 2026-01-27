@@ -1,0 +1,42 @@
+{
+  "createdAt": "2015-12-07T14:42:50Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "monarch-cypher-queries",
+  "updatedAt": "2023-05-01T15:30:01Z",
+  "url": "https://github.com/monarch-initiative/monarch-cypher-queries",
+  "firstCommitDate": "2021-09-20T18:26:47Z",
+  "lastCommitDate": "2021-09-20T18:26:47Z",
+  "topContributors": [
+    {
+      "contributions": 147,
+      "login": "kshefchek"
+    },
+    {
+      "contributions": 18,
+      "login": "jnguyenx"
+    },
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "benwbooth"
+    },
+    {
+      "contributions": 1,
+      "login": "harryhoch"
+    },
+    {
+      "contributions": 1,
+      "login": "TomConlin"
+    },
+    {
+      "contributions": 1,
+      "login": "dependabot[bot]"
+    }
+  ]
+}

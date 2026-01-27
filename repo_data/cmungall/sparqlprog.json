@@ -1,0 +1,30 @@
+{
+  "createdAt": "2018-01-27T01:47:27Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "logic programming with SPARQL",
+  "name": "sparqlprog",
+  "updatedAt": "2024-11-01T20:59:25Z",
+  "url": "https://github.com/cmungall/sparqlprog",
+  "firstCommitDate": "2021-11-17T04:10:36Z",
+  "lastCommitDate": "2021-11-17T04:10:36Z",
+  "topContributors": [
+    {
+      "contributions": 173,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 4,
+      "login": "hchiba1"
+    },
+    {
+      "contributions": 2,
+      "login": "skwsm"
+    },
+    {
+      "contributions": 1,
+      "login": "gitter-badger"
+    }
+  ]
+}

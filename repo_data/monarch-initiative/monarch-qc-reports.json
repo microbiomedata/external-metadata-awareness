@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-08-08T15:13:02Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Project to create QC Reports for the Monarch Knowledge Graph.",
+  "name": "monarch-qc-reports",
+  "updatedAt": "2024-03-15T12:47:46Z",
+  "url": "https://github.com/monarch-initiative/monarch-qc-reports",
+  "firstCommitDate": "2023-08-17T14:27:20Z",
+  "lastCommitDate": "2023-08-17T14:27:20Z",
+  "topContributors": [
+    {
+      "contributions": 12,
+      "login": "amc-corey-cox"
+    }
+  ]
+}

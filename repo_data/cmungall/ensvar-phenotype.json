@@ -1,0 +1,18 @@
+{
+  "createdAt": "2012-04-14T10:51:31Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "ontologizing phenotype descriptions from ensvar",
+  "name": "ensvar-phenotype",
+  "updatedAt": "2023-03-12T10:29:04Z",
+  "url": "https://github.com/cmungall/ensvar-phenotype",
+  "firstCommitDate": "2012-04-14T11:18:44Z",
+  "lastCommitDate": "2012-04-14T11:18:44Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "cmungall"
+    }
+  ]
+}

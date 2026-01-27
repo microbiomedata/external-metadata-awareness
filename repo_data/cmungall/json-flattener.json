@@ -1,0 +1,22 @@
+{
+  "createdAt": "2021-07-29T01:31:08Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Python library for denormalizing nested dicts or json objects to tables and back",
+  "name": "json-flattener",
+  "updatedAt": "2025-07-18T07:27:51Z",
+  "url": "https://github.com/cmungall/json-flattener",
+  "firstCommitDate": "2023-04-03T19:51:19Z",
+  "lastCommitDate": "2023-04-03T19:51:19Z",
+  "topContributors": [
+    {
+      "contributions": 40,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "dalito"
+    }
+  ]
+}

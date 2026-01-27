@@ -1,0 +1,56 @@
+[
+  {
+    "createdAt": "2013-05-07T21:07:36Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Website source code for w3id.org.",
+    "name": "w3id.org",
+    "updatedAt": "2025-09-30T13:45:50Z",
+    "url": "https://github.com/perma-id/w3id.org",
+    "firstCommitDate": "2025-09-30T13:45:45Z",
+    "lastCommitDate": "2025-09-30T13:45:45Z",
+    "topContributors": [
+      {
+        "contributions": 3332,
+        "login": "dgarijo"
+      },
+      {
+        "contributions": 1624,
+        "login": "davidlehn"
+      },
+      {
+        "contributions": 157,
+        "login": "rapw3k"
+      },
+      {
+        "contributions": 155,
+        "login": "jhaag75"
+      },
+      {
+        "contributions": 110,
+        "login": "tkuhn"
+      },
+      {
+        "contributions": 108,
+        "login": "msporny"
+      },
+      {
+        "contributions": 104,
+        "login": "markwilkinson"
+      },
+      {
+        "contributions": 82,
+        "login": "luigi-asprino"
+      },
+      {
+        "contributions": 81,
+        "login": "pedropaulofb"
+      },
+      {
+        "contributions": 77,
+        "login": "essepuntato"
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "createdAt": "2017-03-29T16:00:55Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "It's a party of information!",
+  "name": "carnival-penn",
+  "updatedAt": "2021-07-16T20:46:03Z",
+  "url": "https://github.com/pennbiobank/carnival-penn",
+  "firstCommitDate": "2021-07-16T20:45:59Z",
+  "lastCommitDate": "2021-07-16T20:45:59Z",
+  "topContributors": [
+    {
+      "contributions": 937,
+      "login": "augustearth"
+    },
+    {
+      "contributions": 653,
+      "login": "hjwilli"
+    },
+    {
+      "contributions": 132,
+      "login": "greenguy33"
+    },
+    {
+      "contributions": 49,
+      "login": "PaulKBaumann"
+    },
+    {
+      "contributions": 12,
+      "login": "dependabot[bot]"
+    },
+    {
+      "contributions": 2,
+      "login": "th5"
+    }
+  ]
+}

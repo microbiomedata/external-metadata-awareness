@@ -1,0 +1,26 @@
+{
+  "createdAt": "2016-02-18T15:42:55Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "",
+  "name": "diachron_archive",
+  "updatedAt": "2016-02-18T15:53:05Z",
+  "url": "https://github.com/EBISPOT/diachron_archive",
+  "firstCommitDate": "2016-02-02T13:56:44Z",
+  "lastCommitDate": "2016-02-02T13:56:44Z",
+  "topContributors": [
+    {
+      "contributions": 20,
+      "login": "pateritsas"
+    },
+    {
+      "contributions": 20,
+      "login": "mmeimaris"
+    },
+    {
+      "contributions": 1,
+      "login": "simonjupp"
+    }
+  ]
+}

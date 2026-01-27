@@ -1,0 +1,46 @@
+{
+  "createdAt": "2020-05-15T16:41:18Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Workflow for meta-proteomics analysis",
+  "name": "metaPro",
+  "updatedAt": "2025-08-19T21:41:03Z",
+  "url": "https://github.com/microbiomedata/metaPro",
+  "firstCommitDate": "2025-07-11T20:27:05Z",
+  "lastCommitDate": "2025-07-11T20:27:05Z",
+  "topContributors": [
+    {
+      "contributions": 195,
+      "login": "picowatt"
+    },
+    {
+      "contributions": 3,
+      "login": "eecavanna"
+    },
+    {
+      "contributions": 3,
+      "login": "pdpiehowski"
+    },
+    {
+      "contributions": 3,
+      "login": "ssarrafan"
+    },
+    {
+      "contributions": 3,
+      "login": "kaijli"
+    },
+    {
+      "contributions": 2,
+      "login": "mflynn-lanl"
+    },
+    {
+      "contributions": 1,
+      "login": "anubhav0fnu"
+    },
+    {
+      "contributions": 1,
+      "login": "hubin-keio"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-05-19T19:49:50Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "loinc2hpoAnnotation",
+  "updatedAt": "2023-05-19T19:50:20Z",
+  "url": "https://github.com/monarch-initiative/loinc2hpoAnnotation",
+  "firstCommitDate": "2023-06-05T13:21:28Z",
+  "lastCommitDate": "2023-06-05T13:21:28Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "ShahimEssaid"
+    }
+  ]
+}

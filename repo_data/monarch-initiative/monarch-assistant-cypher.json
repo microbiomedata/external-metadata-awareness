@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-12-08T19:44:43Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "monarch-assistant-cypher",
+  "updatedAt": "2025-03-08T16:13:36Z",
+  "url": "https://github.com/monarch-initiative/monarch-assistant-cypher",
+  "firstCommitDate": "2023-12-23T00:42:05Z",
+  "lastCommitDate": "2023-12-23T00:42:05Z",
+  "topContributors": [
+    {
+      "contributions": 4,
+      "login": "oneilsh"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-03-14T20:32:34Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "The set package for commpnly used BBOP widgets. This replaces the widgets from the old monolithic bundle.",
+  "name": "bbop-widget-set",
+  "updatedAt": "2016-03-14T20:50:07Z",
+  "url": "https://github.com/berkeleybop/bbop-widget-set",
+  "firstCommitDate": "2016-03-21T17:22:53Z",
+  "lastCommitDate": "2016-03-21T17:22:53Z",
+  "topContributors": [
+    {
+      "contributions": 56,
+      "login": "kltm"
+    }
+  ]
+}

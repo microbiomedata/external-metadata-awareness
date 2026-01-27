@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-06-03T18:58:03Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Templates for use in the linkml-template-configurator",
+  "name": "template-configurator-templates",
+  "updatedAt": "2023-03-24T21:39:55Z",
+  "url": "https://github.com/linkml/template-configurator-templates",
+  "firstCommitDate": "2021-07-19T13:49:48Z",
+  "lastCommitDate": "2021-07-19T13:49:48Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "hsolbrig"
+    }
+  ]
+}

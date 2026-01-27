@@ -1,0 +1,54 @@
+{
+  "createdAt": "2023-10-11T17:29:08Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Jupyter Notebooks demonstrating R and Python-based access to NMDC metadata and data",
+  "name": "nmdc_notebooks",
+  "updatedAt": "2025-08-18T20:47:23Z",
+  "url": "https://github.com/microbiomedata/nmdc_notebooks",
+  "firstCommitDate": "2025-08-18T20:47:19Z",
+  "lastCommitDate": "2025-08-18T20:47:19Z",
+  "topContributors": [
+    {
+      "contributions": 175,
+      "login": "bmeluch"
+    },
+    {
+      "contributions": 135,
+      "login": "samobermiller"
+    },
+    {
+      "contributions": 109,
+      "login": "kheal"
+    },
+    {
+      "contributions": 35,
+      "login": "CamiloPosso"
+    },
+    {
+      "contributions": 22,
+      "login": "hesspnnl"
+    },
+    {
+      "contributions": 16,
+      "login": "brynnz22"
+    },
+    {
+      "contributions": 12,
+      "login": "simroux"
+    },
+    {
+      "contributions": 2,
+      "login": "scanon"
+    },
+    {
+      "contributions": 1,
+      "login": "emileyfadrosh"
+    },
+    {
+      "contributions": 1,
+      "login": "turbomam"
+    }
+  ]
+}

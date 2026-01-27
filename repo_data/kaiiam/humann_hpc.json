@@ -1,0 +1,18 @@
+{
+  "createdAt": "2022-04-20T12:42:47Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "humann_hpc",
+  "updatedAt": "2022-08-01T00:44:30Z",
+  "url": "https://github.com/kaiiam/humann_hpc",
+  "firstCommitDate": "2023-01-27T15:33:34Z",
+  "lastCommitDate": "2023-01-27T15:33:34Z",
+  "topContributors": [
+    {
+      "contributions": 92,
+      "login": "kaiiam"
+    }
+  ]
+}

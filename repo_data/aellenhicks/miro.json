@@ -1,0 +1,26 @@
+{
+  "createdAt": "2018-02-21T14:01:50Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "MIRO – Minimal Information for Reporting of an Ontology",
+  "name": "miro",
+  "updatedAt": "2017-06-07T13:04:53Z",
+  "url": "https://github.com/aellenhicks/miro",
+  "firstCommitDate": "2017-08-13T13:36:35Z",
+  "lastCommitDate": "2017-08-13T13:36:35Z",
+  "topContributors": [
+    {
+      "contributions": 29,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 12,
+      "login": "TheOntologist"
+    },
+    {
+      "contributions": 9,
+      "login": "jamesmalone"
+    }
+  ]
+}

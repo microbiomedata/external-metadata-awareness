@@ -1,0 +1,50 @@
+{
+  "createdAt": "2025-03-12T14:03:58Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "LLM-driven curation assist tool",
+  "name": "curategpt",
+  "updatedAt": "2025-03-12T14:09:50Z",
+  "url": "https://github.com/EBISPOT/curategpt",
+  "firstCommitDate": "2025-03-12T14:09:42Z",
+  "lastCommitDate": "2025-03-12T14:09:42Z",
+  "topContributors": [
+    {
+      "contributions": 138,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 102,
+      "login": "iQuxLE"
+    },
+    {
+      "contributions": 70,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 13,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 2,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 2,
+      "login": "aleixpuigb"
+    },
+    {
+      "contributions": 2,
+      "login": "realmarcin"
+    },
+    {
+      "contributions": 1,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 1,
+      "login": "oneilsh"
+    }
+  ]
+}

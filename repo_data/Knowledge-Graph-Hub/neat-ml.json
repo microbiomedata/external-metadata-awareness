@@ -1,0 +1,30 @@
+{
+  "createdAt": "2020-10-13T21:21:00Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Network Embedding All the Things",
+  "name": "neat-ml",
+  "updatedAt": "2024-07-15T09:28:38Z",
+  "url": "https://github.com/Knowledge-Graph-Hub/neat-ml",
+  "firstCommitDate": "2022-09-27T18:03:21Z",
+  "lastCommitDate": "2022-09-27T18:03:21Z",
+  "topContributors": [
+    {
+      "contributions": 340,
+      "login": "caufieldjh"
+    },
+    {
+      "contributions": 202,
+      "login": "justaddcoffee"
+    },
+    {
+      "contributions": 107,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 15,
+      "login": "deepakunni3"
+    }
+  ]
+}

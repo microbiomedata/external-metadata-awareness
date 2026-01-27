@@ -1,0 +1,22 @@
+{
+  "createdAt": "2025-07-01T17:59:14Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "landuse-mcp",
+  "updatedAt": "2025-07-15T14:06:25Z",
+  "url": "https://github.com/contextualizer-ai/landuse-mcp",
+  "firstCommitDate": "2025-07-15T14:06:21Z",
+  "lastCommitDate": "2025-07-15T14:06:21Z",
+  "topContributors": [
+    {
+      "contributions": 29,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

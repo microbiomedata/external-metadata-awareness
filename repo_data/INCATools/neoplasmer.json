@@ -1,0 +1,18 @@
+{
+  "createdAt": "2018-08-22T07:17:04Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Neoplasm Entity Recognition: matching disease names to ontology classes",
+  "name": "neoplasmer",
+  "updatedAt": "2025-02-04T18:37:42Z",
+  "url": "https://github.com/INCATools/neoplasmer",
+  "firstCommitDate": "2019-07-15T19:14:25Z",
+  "lastCommitDate": "2019-07-15T19:14:25Z",
+  "topContributors": [
+    {
+      "contributions": 9,
+      "login": "cmungall"
+    }
+  ]
+}

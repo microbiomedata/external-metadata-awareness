@@ -1,0 +1,22 @@
+{
+  "createdAt": "2018-01-29T07:34:30Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Utility to generate a schema.xml from a yaml config file.",
+  "name": "golr-schema",
+  "updatedAt": "2023-04-03T16:41:36Z",
+  "url": "https://github.com/monarch-initiative/golr-schema",
+  "firstCommitDate": "2018-02-03T19:02:51Z",
+  "lastCommitDate": "2018-02-03T19:02:51Z",
+  "topContributors": [
+    {
+      "contributions": 17,
+      "login": "jnguyenx"
+    },
+    {
+      "contributions": 1,
+      "login": "kshefchek"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "createdAt": "2021-09-07T22:33:53Z",
+  "defaultBranchRef": {
+    "name": ""
+  },
+  "description": "this will never be used outside testing",
+  "name": "test_externalIntegration_test",
+  "updatedAt": "2021-09-07T22:33:53Z",
+  "url": "https://github.com/monarch-initiative/test_externalIntegration_test",
+  "firstCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A",
+  "lastCommitDate": "{\"message\":\"Git Repository is empty.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#list-commits\",\"status\":\"409\"}N/A"
+}

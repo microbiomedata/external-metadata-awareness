@@ -1,0 +1,30 @@
+{
+  "createdAt": "2020-01-24T10:27:00Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Website for Reproducible research and data management workshop at MPI-SHH",
+  "name": "rrdm-shh.github.io",
+  "updatedAt": "2020-01-24T10:27:02Z",
+  "url": "https://github.com/jfy133/rrdm-shh.github.io",
+  "firstCommitDate": "2020-01-23T23:45:17Z",
+  "lastCommitDate": "2020-01-23T23:45:17Z",
+  "topContributors": [
+    {
+      "contributions": 64,
+      "login": "maxibor"
+    },
+    {
+      "contributions": 3,
+      "login": "chrzyki"
+    },
+    {
+      "contributions": 2,
+      "login": "nevrome"
+    },
+    {
+      "contributions": 2,
+      "login": "alexhbnr"
+    }
+  ]
+}

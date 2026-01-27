@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-05-03T20:10:51Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "RDF Tables in Rust",
+  "name": "rdftab.rs",
+  "updatedAt": "2021-05-03T20:10:52Z",
+  "url": "https://github.com/cmungall/rdftab.rs",
+  "firstCommitDate": "2021-02-24T16:10:19Z",
+  "lastCommitDate": "2021-02-24T16:10:19Z",
+  "topContributors": [
+    {
+      "contributions": 20,
+      "login": "jamesaoverton"
+    }
+  ]
+}

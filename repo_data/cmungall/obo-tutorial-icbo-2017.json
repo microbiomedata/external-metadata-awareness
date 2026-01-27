@@ -1,0 +1,18 @@
+{
+  "createdAt": "2017-03-31T22:00:50Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "OBO Tutorial at ICBO 2017",
+  "name": "obo-tutorial-icbo-2017",
+  "updatedAt": "2017-03-31T22:00:52Z",
+  "url": "https://github.com/cmungall/obo-tutorial-icbo-2017",
+  "firstCommitDate": "2017-03-31T16:36:39Z",
+  "lastCommitDate": "2017-03-31T16:36:39Z",
+  "topContributors": [
+    {
+      "contributions": 2,
+      "login": "jamesaoverton"
+    }
+  ]
+}

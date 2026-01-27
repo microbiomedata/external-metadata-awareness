@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-12-22T18:25:19Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A registry of organoids",
+  "name": "organoid-registry",
+  "updatedAt": "2021-08-30T22:30:00Z",
+  "url": "https://github.com/monarch-initiative/organoid-registry",
+  "firstCommitDate": "2015-12-22T23:30:48Z",
+  "lastCommitDate": "2015-12-22T23:30:48Z",
+  "topContributors": [
+    {
+      "contributions": 9,
+      "login": "cmungall"
+    }
+  ]
+}

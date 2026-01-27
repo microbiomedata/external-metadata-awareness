@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-07-18T13:15:51Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Deterministic biosample enrichment for LLM-ready data preparation; optional PydanticAI agentic assessment",
+  "name": "crawl-first",
+  "updatedAt": "2025-08-25T14:02:42Z",
+  "url": "https://github.com/contextualizer-ai/crawl-first",
+  "firstCommitDate": "2025-08-22T15:23:41Z",
+  "lastCommitDate": "2025-08-22T15:23:41Z",
+  "topContributors": [
+    {
+      "contributions": 109,
+      "login": "turbomam"
+    }
+  ]
+}

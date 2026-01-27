@@ -1,0 +1,18 @@
+{
+  "createdAt": "2013-03-09T00:27:29Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "modeling of behavioral sequence using lego formalism",
+  "name": "behavior-lego",
+  "updatedAt": "2014-04-15T22:02:56Z",
+  "url": "https://github.com/cmungall/behavior-lego",
+  "firstCommitDate": "2013-03-09T01:45:25Z",
+  "lastCommitDate": "2013-03-09T01:45:25Z",
+  "topContributors": [
+    {
+      "contributions": 8,
+      "login": "cmungall"
+    }
+  ]
+}

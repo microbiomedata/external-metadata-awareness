@@ -1,0 +1,18 @@
+{
+  "createdAt": "2025-06-08T19:50:55Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "kaoibhinn",
+  "updatedAt": "2025-07-12T16:45:32Z",
+  "url": "https://github.com/kaiiam/kaoibhinn",
+  "firstCommitDate": "2025-07-12T16:45:19Z",
+  "lastCommitDate": "2025-07-12T16:45:19Z",
+  "topContributors": [
+    {
+      "contributions": 13,
+      "login": "kaiiam"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "createdAt": "2017-10-13T02:54:55Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "A python library and command-line client for file storage on OSF",
+  "name": "osf-cli",
+  "updatedAt": "2017-10-13T02:54:57Z",
+  "url": "https://github.com/cmungall/osf-cli",
+  "firstCommitDate": "2017-10-11T14:14:05Z",
+  "lastCommitDate": "2017-10-11T14:14:05Z",
+  "topContributors": [
+    {
+      "contributions": 151,
+      "login": "betatim"
+    },
+    {
+      "contributions": 27,
+      "login": "gedankenstuecke"
+    },
+    {
+      "contributions": 16,
+      "login": "ctb"
+    },
+    {
+      "contributions": 6,
+      "login": "untzag"
+    },
+    {
+      "contributions": 2,
+      "login": "ethanwhite"
+    },
+    {
+      "contributions": 1,
+      "login": "djsutherland"
+    },
+    {
+      "contributions": 1,
+      "login": "luizirber"
+    },
+    {
+      "contributions": 1,
+      "login": "chanaysavoyen"
+    }
+  ]
+}

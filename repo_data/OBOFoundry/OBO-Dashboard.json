@@ -1,0 +1,54 @@
+{
+  "createdAt": "2019-11-21T14:52:52Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Summary Dashboard for Open Biological and Biomedical Ontologies",
+  "name": "OBO-Dashboard",
+  "updatedAt": "2025-09-24T01:51:27Z",
+  "url": "https://github.com/OBOFoundry/OBO-Dashboard",
+  "firstCommitDate": "2025-09-15T13:30:46Z",
+  "lastCommitDate": "2025-09-15T13:30:46Z",
+  "topContributors": [
+    {
+      "contributions": 121,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 15,
+      "login": "anitacaron"
+    },
+    {
+      "contributions": 12,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 9,
+      "login": "jamesaoverton"
+    },
+    {
+      "contributions": 5,
+      "login": "jsstevenson"
+    },
+    {
+      "contributions": 2,
+      "login": "beckyjackson"
+    },
+    {
+      "contributions": 1,
+      "login": "wdduncan"
+    },
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 1,
+      "login": "balhoff"
+    },
+    {
+      "contributions": 1,
+      "login": "nlharris"
+    }
+  ]
+}

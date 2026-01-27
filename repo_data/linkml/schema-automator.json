@@ -1,0 +1,54 @@
+{
+  "createdAt": "2021-03-29T19:52:54Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Automated assistance for the schema development lifecycle",
+  "name": "schema-automator",
+  "updatedAt": "2025-09-29T23:45:50Z",
+  "url": "https://github.com/linkml/schema-automator",
+  "firstCommitDate": "2025-05-19T18:20:03Z",
+  "lastCommitDate": "2025-05-19T18:20:03Z",
+  "topContributors": [
+    {
+      "contributions": 125,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 96,
+      "login": "turbomam"
+    },
+    {
+      "contributions": 63,
+      "login": "sierra-moxon"
+    },
+    {
+      "contributions": 38,
+      "login": "amc-corey-cox"
+    },
+    {
+      "contributions": 25,
+      "login": "multimeric"
+    },
+    {
+      "contributions": 25,
+      "login": "hrshdhgd"
+    },
+    {
+      "contributions": 5,
+      "login": "ptgolden"
+    },
+    {
+      "contributions": 4,
+      "login": "cthoyt"
+    },
+    {
+      "contributions": 3,
+      "login": "dalito"
+    },
+    {
+      "contributions": 2,
+      "login": "matentzn"
+    }
+  ]
+}

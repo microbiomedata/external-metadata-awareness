@@ -1,0 +1,1062 @@
+[
+  {
+    "createdAt": "2020-08-11T23:57:58Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "analysis of biosamples in INSDC",
+    "name": "biosample-analysis",
+    "updatedAt": "2022-01-05T19:25:22Z",
+    "url": "https://github.com/INCATools/biosample-analysis",
+    "firstCommitDate": "2022-01-05T19:25:07Z",
+    "lastCommitDate": "2022-01-05T19:25:07Z",
+    "topContributors": [
+      {
+        "contributions": 187,
+        "login": "wdduncan"
+      },
+      {
+        "contributions": 176,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 34,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 23,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 14,
+        "login": "realmarcin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-12-04T16:16:30Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Bayesian OWL ontology merging",
+    "name": "boomer",
+    "updatedAt": "2025-07-11T07:39:00Z",
+    "url": "https://github.com/INCATools/boomer",
+    "firstCommitDate": "2025-06-04T23:13:39Z",
+    "lastCommitDate": "2025-06-04T23:13:39Z",
+    "topContributors": [
+      {
+        "contributions": 212,
+        "login": "balhoff"
+      },
+      {
+        "contributions": 143,
+        "login": "scala-steward"
+      },
+      {
+        "contributions": 10,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 5,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 2,
+        "login": "wdduncan"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-12-14T01:58:42Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A standardized browser-based spreadsheet editor and validator that can be run offline and locally, and which includes templates for SARS-CoV-2 sampling data.",
+    "name": "DataHarmonizer",
+    "updatedAt": "2021-12-14T01:58:44Z",
+    "url": "https://github.com/INCATools/DataHarmonizer",
+    "firstCommitDate": "2021-12-09T18:31:15Z",
+    "lastCommitDate": "2021-12-09T18:31:15Z",
+    "topContributors": [
+      {
+        "contributions": 38,
+        "login": "ddooley"
+      },
+      {
+        "contributions": 24,
+        "login": "cmrn-rhi"
+      },
+      {
+        "contributions": 2,
+        "login": "ivansg44"
+      },
+      {
+        "contributions": 1,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 1,
+        "login": "mgopez"
+      },
+      {
+        "contributions": 1,
+        "login": "griffie"
+      }
+    ]
+  },
+  {
+    "createdAt": "2014-08-08T10:03:11Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A simple system for specifying OWL class design patterns for OBO-ish ontologies.",
+    "name": "dead_simple_owl_design_patterns",
+    "updatedAt": "2025-07-30T16:44:06Z",
+    "url": "https://github.com/INCATools/dead_simple_owl_design_patterns",
+    "firstCommitDate": "2022-02-25T15:47:43Z",
+    "lastCommitDate": "2022-02-25T15:47:43Z",
+    "topContributors": [
+      {
+        "contributions": 287,
+        "login": "dosumis"
+      },
+      {
+        "contributions": 72,
+        "login": "hkir-dev"
+      },
+      {
+        "contributions": 6,
+        "login": "balhoff"
+      },
+      {
+        "contributions": 3,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-08-30T14:58:21Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Utility for working with DOSDP design patterns and OWL ontologies",
+    "name": "dosdp-tools",
+    "updatedAt": "2024-12-18T23:54:23Z",
+    "url": "https://github.com/INCATools/dosdp-tools",
+    "firstCommitDate": "2022-05-10T19:35:28Z",
+    "lastCommitDate": "2022-05-10T19:35:28Z",
+    "topContributors": [
+      {
+        "contributions": 394,
+        "login": "balhoff"
+      },
+      {
+        "contributions": 141,
+        "login": "scala-steward"
+      },
+      {
+        "contributions": 28,
+        "login": "jdr0887"
+      },
+      {
+        "contributions": 9,
+        "login": "hkir-dev"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "rohmk"
+      }
+    ]
+  },
+  {
+    "createdAt": "2019-05-07T01:15:16Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Mapping of GAZ and ENVO to Wikidata",
+    "name": "environments2wikidata",
+    "updatedAt": "2025-03-09T19:01:08Z",
+    "url": "https://github.com/INCATools/environments2wikidata",
+    "firstCommitDate": "2020-04-02T23:10:00Z",
+    "lastCommitDate": "2020-04-02T23:10:00Z",
+    "topContributors": [
+      {
+        "contributions": 21,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2013-06-21T19:21:35Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "ontology categorizing samples from FANTOM5 project",
+    "name": "fantom5-ontology",
+    "updatedAt": "2025-07-13T06:45:45Z",
+    "url": "https://github.com/INCATools/fantom5-ontology",
+    "firstCommitDate": "2015-04-10T03:18:33Z",
+    "lastCommitDate": "2015-04-10T03:18:33Z",
+    "topContributors": [
+      {
+        "contributions": 57,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-08-16T20:24:00Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Scala toolkit for analyzing figshare figures",
+    "name": "figtools",
+    "updatedAt": "2019-03-08T23:22:41Z",
+    "url": "https://github.com/INCATools/figtools",
+    "firstCommitDate": "2019-03-08T23:22:31Z",
+    "lastCommitDate": "2019-03-08T23:22:31Z",
+    "topContributors": [
+      {
+        "contributions": 131,
+        "login": "benwbooth"
+      },
+      {
+        "contributions": 2,
+        "login": "nathandunn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-10-12T20:03:18Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "FigureIdentifier",
+    "updatedAt": "2019-07-07T18:08:06Z",
+    "url": "https://github.com/INCATools/FigureIdentifier",
+    "firstCommitDate": "2018-10-23T21:03:52Z",
+    "lastCommitDate": "2018-10-23T21:03:52Z",
+    "topContributors": [
+      {
+        "contributions": 17,
+        "login": "nathandunn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-06-13T09:14:19Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "A site for publishing public facing documentation for INCATools",
+    "name": "INCATools.github.io",
+    "updatedAt": "2020-06-13T09:23:03Z",
+    "url": "https://github.com/INCATools/INCATools.github.io",
+    "firstCommitDate": "2020-06-13T09:22:47Z",
+    "lastCommitDate": "2020-06-13T09:22:47Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "dosumis"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-08-02T18:59:41Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "intelligent-concept-assistant",
+    "updatedAt": "2025-02-04T18:39:09Z",
+    "url": "https://github.com/INCATools/intelligent-concept-assistant",
+    "firstCommitDate": "2016-12-06T18:35:43Z",
+    "lastCommitDate": "2016-12-06T18:35:43Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-06-30T01:50:17Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Tools for working with KGCL",
+    "name": "kgcl-rdflib",
+    "updatedAt": "2025-04-24T13:42:09Z",
+    "url": "https://github.com/INCATools/kgcl-rdflib",
+    "firstCommitDate": "2024-11-19T16:41:31Z",
+    "lastCommitDate": "2024-11-19T16:41:31Z",
+    "topContributors": [
+      {
+        "contributions": 230,
+        "login": "ckindermann"
+      },
+      {
+        "contributions": 102,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 60,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 1,
+        "login": "jamesaoverton"
+      },
+      {
+        "contributions": 1,
+        "login": "nlharris"
+      },
+      {
+        "contributions": 1,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 1,
+        "login": "joeflack4"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-06-15T17:39:35Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Datamodel for KGCL (Knowledge Graph Change Language)",
+    "name": "kgcl",
+    "updatedAt": "2025-08-16T12:41:44Z",
+    "url": "https://github.com/INCATools/kgcl",
+    "firstCommitDate": "2024-11-15T20:49:54Z",
+    "lastCommitDate": "2024-11-15T20:49:54Z",
+    "topContributors": [
+      {
+        "contributions": 120,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 36,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 25,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 4,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 1,
+        "login": "cthoyt"
+      },
+      {
+        "contributions": 1,
+        "login": "sierra-moxon"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-08-22T07:17:04Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Neoplasm Entity Recognition: matching disease names to ontology classes",
+    "name": "neoplasmer",
+    "updatedAt": "2025-02-04T18:37:42Z",
+    "url": "https://github.com/INCATools/neoplasmer",
+    "firstCommitDate": "2019-07-15T19:14:25Z",
+    "lastCommitDate": "2019-07-15T19:14:25Z",
+    "topContributors": [
+      {
+        "contributions": 9,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-09-01T00:35:43Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Experimental OAK plugin for Grape",
+    "name": "oakx-grape",
+    "updatedAt": "2022-11-15T02:52:07Z",
+    "url": "https://github.com/INCATools/oakx-grape",
+    "firstCommitDate": "2022-11-30T18:52:25Z",
+    "lastCommitDate": "2022-11-30T18:52:25Z",
+    "topContributors": [
+      {
+        "contributions": 31,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 30,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 25,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 11,
+        "login": "sierra-moxon"
+      },
+      {
+        "contributions": 5,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 1,
+        "login": "justaddcoffee"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-08-31T22:44:36Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "cookiecutter for OAK plugins",
+    "name": "oakx-plugin-cookiecutter",
+    "updatedAt": "2023-01-13T17:20:34Z",
+    "url": "https://github.com/INCATools/oakx-plugin-cookiecutter",
+    "firstCommitDate": "2023-01-11T16:52:41Z",
+    "lastCommitDate": "2023-01-11T16:52:41Z",
+    "topContributors": [
+      {
+        "contributions": 21,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 4,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 2,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-06-07T20:00:36Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "robot plugin for OAK",
+    "name": "oakx-robot",
+    "updatedAt": "2022-06-08T00:46:59Z",
+    "url": "https://github.com/INCATools/oakx-robot",
+    "firstCommitDate": "2022-09-29T22:29:40Z",
+    "lastCommitDate": "2022-09-29T22:29:40Z",
+    "topContributors": [
+      {
+        "contributions": 5,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 4,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-04-11T16:29:22Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "SHACL and ShEx shapes for validating OBO ontologies",
+    "name": "obo-shapes",
+    "updatedAt": "2022-04-11T17:48:06Z",
+    "url": "https://github.com/INCATools/obo-shapes",
+    "firstCommitDate": "2022-04-12T14:42:04Z",
+    "lastCommitDate": "2022-04-12T14:42:04Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "balhoff"
+      }
+    ]
+  },
+  {
+    "createdAt": "2016-08-31T16:54:54Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Customizable translation of OBO graphs to dot for visualization using graphviz and other tools",
+    "name": "obographviz",
+    "updatedAt": "2025-06-23T06:22:07Z",
+    "url": "https://github.com/INCATools/obographviz",
+    "firstCommitDate": "2023-09-13T16:19:11Z",
+    "lastCommitDate": "2023-09-13T16:19:11Z",
+    "topContributors": [
+      {
+        "contributions": 67,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 35,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 6,
+        "login": "dependabot[bot]"
+      }
+    ]
+  },
+  {
+    "createdAt": "2025-02-08T20:55:47Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "ROBOT plugin for the Ontology Development Kit",
+    "name": "odk-robot-plugin",
+    "updatedAt": "2025-09-17T11:45:13Z",
+    "url": "https://github.com/INCATools/odk-robot-plugin",
+    "firstCommitDate": "2025-09-15T16:56:38Z",
+    "lastCommitDate": "2025-09-15T16:56:38Z",
+    "topContributors": [
+      {
+        "contributions": 22,
+        "login": "gouttegd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-07-12T23:34:33Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "A GitHub bot for modifying ontology resources.",
+    "name": "ontobot-change-agent",
+    "updatedAt": "2024-09-26T22:49:22Z",
+    "url": "https://github.com/INCATools/ontobot-change-agent",
+    "firstCommitDate": "2024-09-26T22:49:15Z",
+    "lastCommitDate": "2024-09-26T22:49:15Z",
+    "topContributors": [
+      {
+        "contributions": 537,
+        "login": "hrshdhgd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-03-28T15:50:45Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Ontology Access Kit: A python library and command line application for working with ontologies",
+    "name": "ontology-access-kit",
+    "updatedAt": "2025-09-18T01:29:40Z",
+    "url": "https://github.com/INCATools/ontology-access-kit",
+    "firstCommitDate": "2025-06-05T23:32:26Z",
+    "lastCommitDate": "2025-06-05T23:32:26Z",
+    "topContributors": [
+      {
+        "contributions": 381,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 118,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 22,
+        "login": "pkalita-lbl"
+      },
+      {
+        "contributions": 21,
+        "login": "cthoyt"
+      },
+      {
+        "contributions": 11,
+        "login": "sujaypatil96"
+      },
+      {
+        "contributions": 8,
+        "login": "realmarcin"
+      },
+      {
+        "contributions": 7,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 7,
+        "login": "joeflack4"
+      },
+      {
+        "contributions": 6,
+        "login": "justaddcoffee"
+      },
+      {
+        "contributions": 5,
+        "login": "dalito"
+      }
+    ]
+  },
+  {
+    "createdAt": "2015-12-15T14:28:35Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Ontology lifecycle management",
+    "name": "ontology-development-kit",
+    "updatedAt": "2025-09-21T11:51:13Z",
+    "url": "https://github.com/INCATools/ontology-development-kit",
+    "firstCommitDate": "2025-09-20T19:04:17Z",
+    "lastCommitDate": "2025-09-20T19:04:17Z",
+    "topContributors": [
+      {
+        "contributions": 1415,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 468,
+        "login": "gouttegd"
+      },
+      {
+        "contributions": 197,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 39,
+        "login": "shawntanzk"
+      },
+      {
+        "contributions": 27,
+        "login": "balhoff"
+      },
+      {
+        "contributions": 26,
+        "login": "dosumis"
+      },
+      {
+        "contributions": 15,
+        "login": "anitacaron"
+      },
+      {
+        "contributions": 11,
+        "login": "nicolevasilevsky"
+      },
+      {
+        "contributions": 9,
+        "login": "StroemPhi"
+      },
+      {
+        "contributions": 6,
+        "login": "ehartley"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-11-10T21:52:40Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "determines how an ontology term has been used",
+    "name": "ontology-term-usage",
+    "updatedAt": "2024-03-18T15:13:21Z",
+    "url": "https://github.com/INCATools/ontology-term-usage",
+    "firstCommitDate": "2021-12-07T21:15:19Z",
+    "lastCommitDate": "2021-12-07T21:15:19Z",
+    "topContributors": [
+      {
+        "contributions": 8,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-09-02T23:32:30Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "generate DOSDP patterns from OWL ontologies",
+    "name": "owl_patternizer",
+    "updatedAt": "2021-12-14T01:55:31Z",
+    "url": "https://github.com/INCATools/owl_patternizer",
+    "firstCommitDate": "2022-02-28T17:47:34Z",
+    "lastCommitDate": "2022-02-28T17:47:34Z",
+    "topContributors": [
+      {
+        "contributions": 85,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-04-20T16:37:39Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Ontology enrichment tool for CxG standard AnnData files",
+    "name": "pandasaurus_cxg",
+    "updatedAt": "2025-08-19T09:02:30Z",
+    "url": "https://github.com/INCATools/pandasaurus_cxg",
+    "firstCommitDate": "2025-08-19T09:02:25Z",
+    "lastCommitDate": "2025-08-19T09:02:25Z",
+    "topContributors": [
+      {
+        "contributions": 50,
+        "login": "ubyndr"
+      },
+      {
+        "contributions": 11,
+        "login": "dosumis"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-03-23T13:28:54Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Supporting simple queries over ontology annotations in dataframes, using UberGraph queries",
+    "name": "PandaSaurus",
+    "updatedAt": "2023-04-28T16:18:05Z",
+    "url": "https://github.com/INCATools/PandaSaurus",
+    "firstCommitDate": "2024-03-06T13:55:01Z",
+    "lastCommitDate": "2024-03-06T13:55:01Z",
+    "topContributors": [
+      {
+        "contributions": 69,
+        "login": "ubyndr"
+      },
+      {
+        "contributions": 6,
+        "login": "dosumis"
+      },
+      {
+        "contributions": 2,
+        "login": "anitacaron"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-08-09T23:42:23Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "swi rdf_matcher ",
+    "name": "rdf_matcher",
+    "updatedAt": "2025-07-09T05:38:57Z",
+    "url": "https://github.com/INCATools/rdf_matcher",
+    "firstCommitDate": "2021-02-07T23:35:11Z",
+    "lastCommitDate": "2021-02-07T23:35:11Z",
+    "topContributors": [
+      {
+        "contributions": 37,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-08-30T00:50:12Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "rdf-sql-bulkloader",
+    "updatedAt": "2022-09-08T14:42:58Z",
+    "url": "https://github.com/INCATools/rdf-sql-bulkloader",
+    "firstCommitDate": "2023-03-02T21:36:39Z",
+    "lastCommitDate": "2023-03-02T21:36:39Z",
+    "topContributors": [
+      {
+        "contributions": 11,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 6,
+        "login": "hrshdhgd"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-08-16T01:52:18Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Materialize OWL existential relations",
+    "name": "relation-graph",
+    "updatedAt": "2025-09-01T06:46:08Z",
+    "url": "https://github.com/INCATools/relation-graph",
+    "firstCommitDate": "2025-05-17T16:29:52Z",
+    "lastCommitDate": "2025-05-17T16:29:52Z",
+    "topContributors": [
+      {
+        "contributions": 106,
+        "login": "balhoff"
+      },
+      {
+        "contributions": 95,
+        "login": "scala-steward"
+      },
+      {
+        "contributions": 1,
+        "login": "wdduncan"
+      }
+    ]
+  },
+  {
+    "createdAt": "2021-05-04T21:31:08Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "SQL and SQLite builds of OWL ontologies",
+    "name": "semantic-sql",
+    "updatedAt": "2025-09-11T14:05:37Z",
+    "url": "https://github.com/INCATools/semantic-sql",
+    "firstCommitDate": "2025-02-25T19:18:52Z",
+    "lastCommitDate": "2025-02-25T19:18:52Z",
+    "topContributors": [
+      {
+        "contributions": 223,
+        "login": "cmungall"
+      },
+      {
+        "contributions": 24,
+        "login": "hrshdhgd"
+      },
+      {
+        "contributions": 2,
+        "login": "caufieldjh"
+      },
+      {
+        "contributions": 1,
+        "login": "turbomam"
+      },
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      },
+      {
+        "contributions": 1,
+        "login": "ialarmedalien"
+      },
+      {
+        "contributions": 1,
+        "login": "realmarcin"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-06-01T02:36:30Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "",
+    "name": "sparql-matcher",
+    "updatedAt": "2025-02-04T18:39:41Z",
+    "url": "https://github.com/INCATools/sparql-matcher",
+    "firstCommitDate": "2020-06-01T02:42:00Z",
+    "lastCommitDate": "2020-06-01T02:42:00Z",
+    "topContributors": [
+      {
+        "contributions": 2,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-01-31T00:15:06Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Lightweight CSV/TSV editor that supports autocomplete and is guided by a DOSDP-aware YAML configuration.",
+    "name": "table-editor",
+    "updatedAt": "2023-05-01T15:30:07Z",
+    "url": "https://github.com/INCATools/table-editor",
+    "firstCommitDate": "2021-10-15T16:01:52Z",
+    "lastCommitDate": "2021-10-15T16:01:52Z",
+    "topContributors": [
+      {
+        "contributions": 67,
+        "login": "DoctorBud"
+      },
+      {
+        "contributions": 10,
+        "login": "jmcmurry"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2020-06-09T20:00:59Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Command line expansion of IDs and controlled terms in documents",
+    "name": "term-expando",
+    "updatedAt": "2021-02-04T02:50:35Z",
+    "url": "https://github.com/INCATools/term-expando",
+    "firstCommitDate": "2021-02-04T02:50:26Z",
+    "lastCommitDate": "2021-02-04T02:50:26Z",
+    "topContributors": [
+      {
+        "contributions": 4,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2017-06-21T19:21:15Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "NPM CLI tool for creating and manipulating INCA Form configuration files and directories",
+    "name": "tetool",
+    "updatedAt": "2018-06-26T17:34:52Z",
+    "url": "https://github.com/INCATools/tetool",
+    "firstCommitDate": "2018-06-22T02:51:13Z",
+    "lastCommitDate": "2018-06-22T02:51:13Z",
+    "topContributors": [
+      {
+        "contributions": 10,
+        "login": "DoctorBud"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-10-02T17:19:58Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Integrated OBO ontology store",
+    "name": "ubergraph",
+    "updatedAt": "2025-08-31T16:55:17Z",
+    "url": "https://github.com/INCATools/ubergraph",
+    "firstCommitDate": "2025-07-09T22:23:07Z",
+    "lastCommitDate": "2025-07-09T22:23:07Z",
+    "topContributors": [
+      {
+        "contributions": 219,
+        "login": "balhoff"
+      },
+      {
+        "contributions": 15,
+        "login": "dosumis"
+      },
+      {
+        "contributions": 2,
+        "login": "anitacaron"
+      },
+      {
+        "contributions": 2,
+        "login": "ubyndr"
+      },
+      {
+        "contributions": 1,
+        "login": "colinkcurtis"
+      },
+      {
+        "contributions": 1,
+        "login": "gouttegd"
+      },
+      {
+        "contributions": 1,
+        "login": "matentzn"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-03-25T20:07:09Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "",
+    "name": "verificado",
+    "updatedAt": "2024-06-12T13:46:49Z",
+    "url": "https://github.com/INCATools/verificado",
+    "firstCommitDate": "2024-06-12T13:46:45Z",
+    "lastCommitDate": "2024-06-12T13:46:45Z",
+    "topContributors": [
+      {
+        "contributions": 18,
+        "login": "anitacaron"
+      }
+    ]
+  },
+  {
+    "createdAt": "2023-11-15T19:26:19Z",
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "description": "Code for Whelk performance analyses",
+    "name": "whelk-paper",
+    "updatedAt": "2024-09-30T19:28:30Z",
+    "url": "https://github.com/INCATools/whelk-paper",
+    "firstCommitDate": "2024-09-30T19:27:59Z",
+    "lastCommitDate": "2024-09-30T19:27:59Z",
+    "topContributors": [
+      {
+        "contributions": 7,
+        "login": "balhoff"
+      }
+    ]
+  },
+  {
+    "createdAt": "2022-06-24T02:07:22Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Whelk is an OWL EL reasoner",
+    "name": "whelk-rs",
+    "updatedAt": "2025-07-08T23:25:14Z",
+    "url": "https://github.com/INCATools/whelk-rs",
+    "firstCommitDate": "2023-03-10T20:44:23Z",
+    "lastCommitDate": "2023-03-10T20:44:23Z",
+    "topContributors": [
+      {
+        "contributions": 13,
+        "login": "balhoff"
+      },
+      {
+        "contributions": 5,
+        "login": "jdr0887"
+      },
+      {
+        "contributions": 1,
+        "login": "cmungall"
+      }
+    ]
+  },
+  {
+    "createdAt": "2018-05-29T01:46:05Z",
+    "defaultBranchRef": {
+      "name": "master"
+    },
+    "description": "Whelk is an OWL EL reasoner",
+    "name": "whelk",
+    "updatedAt": "2025-09-23T13:31:18Z",
+    "url": "https://github.com/INCATools/whelk",
+    "firstCommitDate": "2025-03-05T18:50:13Z",
+    "lastCommitDate": "2025-03-05T18:50:13Z",
+    "topContributors": [
+      {
+        "contributions": 292,
+        "login": "balhoff"
+      },
+      {
+        "contributions": 112,
+        "login": "scala-steward"
+      }
+    ]
+  }
+]

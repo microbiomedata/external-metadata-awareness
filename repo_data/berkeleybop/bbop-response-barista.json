@@ -1,0 +1,18 @@
+{
+  "createdAt": "2015-07-29T17:06:11Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Response handler for dealing with the parsing of responses from Barista (enveloping Minerva).",
+  "name": "bbop-response-barista",
+  "updatedAt": "2020-07-02T22:46:24Z",
+  "url": "https://github.com/berkeleybop/bbop-response-barista",
+  "firstCommitDate": "2020-07-02T22:46:17Z",
+  "lastCommitDate": "2020-07-02T22:46:17Z",
+  "topContributors": [
+    {
+      "contributions": 29,
+      "login": "kltm"
+    }
+  ]
+}

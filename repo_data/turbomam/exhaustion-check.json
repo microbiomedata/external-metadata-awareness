@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-05-16T14:07:32Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "Check whether an instance of a LinkML class has used all of the associated classes",
+  "name": "exhaustion-check",
+  "updatedAt": "2023-05-16T14:51:33Z",
+  "url": "https://github.com/turbomam/exhaustion-check",
+  "firstCommitDate": "2023-07-17T14:25:18Z",
+  "lastCommitDate": "2023-07-17T14:25:18Z",
+  "topContributors": [
+    {
+      "contributions": 5,
+      "login": "turbomam"
+    }
+  ]
+}

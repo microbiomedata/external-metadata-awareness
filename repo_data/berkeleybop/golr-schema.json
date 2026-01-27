@@ -1,0 +1,18 @@
+{
+  "createdAt": "2016-08-30T03:55:28Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Utility to generate a schema.xml from a yaml config file.",
+  "name": "golr-schema",
+  "updatedAt": "2016-08-30T03:58:53Z",
+  "url": "https://github.com/berkeleybop/golr-schema",
+  "firstCommitDate": "2016-11-01T22:30:39Z",
+  "lastCommitDate": "2016-11-01T22:30:39Z",
+  "topContributors": [
+    {
+      "contributions": 15,
+      "login": "jnguyenx"
+    }
+  ]
+}

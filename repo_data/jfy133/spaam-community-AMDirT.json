@@ -1,0 +1,22 @@
+{
+  "createdAt": "2022-11-10T09:57:40Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Check validity of AncientMetagenomeDir dataset ",
+  "name": "spaam-community-AMDirT",
+  "updatedAt": "2022-11-09T16:38:40Z",
+  "url": "https://github.com/jfy133/spaam-community-AMDirT",
+  "firstCommitDate": "2022-04-06T14:01:19Z",
+  "lastCommitDate": "2022-04-06T14:01:19Z",
+  "topContributors": [
+    {
+      "contributions": 46,
+      "login": "maxibor"
+    },
+    {
+      "contributions": 1,
+      "login": "jfy133"
+    }
+  ]
+}

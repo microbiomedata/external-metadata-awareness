@@ -1,0 +1,18 @@
+{
+  "createdAt": "2023-04-28T11:31:53Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "A Schema with processes for splitting, pooling and modifying material entities. Intended to illustrate solutions for NMDC modeling of NEON metadata and metabolomics data. Based on https://github.com/turbomam/examples-first-cookiecutter. ",
+  "name": "split-pool-mod-schema",
+  "updatedAt": "2024-08-16T16:34:29Z",
+  "url": "https://github.com/turbomam/split-pool-mod-schema",
+  "firstCommitDate": "2023-05-02T20:23:49Z",
+  "lastCommitDate": "2023-05-02T20:23:49Z",
+  "topContributors": [
+    {
+      "contributions": 17,
+      "login": "turbomam"
+    }
+  ]
+}

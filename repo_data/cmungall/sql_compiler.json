@@ -1,0 +1,18 @@
+{
+  "createdAt": "2020-08-04T16:55:40Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "Translates logic program queries to SQL",
+  "name": "sql_compiler",
+  "updatedAt": "2024-04-27T23:35:43Z",
+  "url": "https://github.com/cmungall/sql_compiler",
+  "firstCommitDate": "2020-08-04T16:54:56Z",
+  "lastCommitDate": "2020-08-04T16:54:56Z",
+  "topContributors": [
+    {
+      "contributions": 1,
+      "login": "cmungall"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "createdAt": "2014-11-03T15:00:58Z",
+  "defaultBranchRef": {
+    "name": "dev"
+  },
+  "description": "Ontology Lookup Service from SPOT at EBI",
+  "name": "OLS",
+  "updatedAt": "2025-08-20T11:01:34Z",
+  "url": "https://github.com/EBISPOT/OLS",
+  "firstCommitDate": "2023-04-28T20:09:18Z",
+  "lastCommitDate": "2023-04-28T20:09:18Z",
+  "topContributors": [
+    {
+      "contributions": 369,
+      "login": "simonjupp"
+    },
+    {
+      "contributions": 171,
+      "login": "jamesamcl"
+    },
+    {
+      "contributions": 102,
+      "login": "henrietteharmse"
+    },
+    {
+      "contributions": 67,
+      "login": "LLTommy"
+    },
+    {
+      "contributions": 46,
+      "login": "warrenread"
+    },
+    {
+      "contributions": 36,
+      "login": "serjoshua"
+    },
+    {
+      "contributions": 8,
+      "login": "CatherineLeroy"
+    },
+    {
+      "contributions": 7,
+      "login": "giraygi"
+    },
+    {
+      "contributions": 5,
+      "login": "matentzn"
+    },
+    {
+      "contributions": 4,
+      "login": "olgavrou"
+    }
+  ]
+}

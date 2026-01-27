@@ -1,0 +1,22 @@
+{
+  "createdAt": "2010-05-13T22:56:28Z",
+  "defaultBranchRef": {
+    "name": "master"
+  },
+  "description": "biological logic programming toolkit",
+  "name": "blipkit",
+  "updatedAt": "2025-09-30T11:05:10Z",
+  "url": "https://github.com/cmungall/blipkit",
+  "firstCommitDate": "2016-08-28T00:45:15Z",
+  "lastCommitDate": "2016-08-28T00:45:15Z",
+  "topContributors": [
+    {
+      "contributions": 232,
+      "login": "cmungall"
+    },
+    {
+      "contributions": 4,
+      "login": "bbopjenkins"
+    }
+  ]
+}

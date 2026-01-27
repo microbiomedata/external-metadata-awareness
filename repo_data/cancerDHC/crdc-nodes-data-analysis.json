@@ -1,0 +1,18 @@
+{
+  "createdAt": "2021-07-19T14:50:27Z",
+  "defaultBranchRef": {
+    "name": "main"
+  },
+  "description": "",
+  "name": "crdc-nodes-data-analysis",
+  "updatedAt": "2021-08-13T20:31:23Z",
+  "url": "https://github.com/cancerDHC/crdc-nodes-data-analysis",
+  "firstCommitDate": "2021-08-13T20:31:20Z",
+  "lastCommitDate": "2021-08-13T20:31:20Z",
+  "topContributors": [
+    {
+      "contributions": 3,
+      "login": "renee-ge"
+    }
+  ]
+}
