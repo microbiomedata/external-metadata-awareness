@@ -209,6 +209,18 @@ nmdc-submissions-to-mongo:
 			--output-file nmdc-submissions-to-mongo.tsv \
 	)
 
+# Analyze NMDC biosample schema coverage against flattened CSV
+# Usage: make -f Makefiles/nmdc_metadata.Makefile analyze-nmdc-biosample-coverage CSV_FILE=path/to/flattened.csv [OUTPUT_FILE=path/to/results.json]
+OUTPUT_FILE ?= unorganized/biosample_coverage_results.json
+.PHONY: analyze-nmdc-biosample-coverage
+analyze-nmdc-biosample-coverage:
+ifndef CSV_FILE
+	$(error CSV_FILE is required. Usage: make ... analyze-nmdc-biosample-coverage CSV_FILE=path/to/flattened.csv)
+endif
+	$(RUN) analyze-nmdc-biosample-coverage \
+		--csv-file $(CSV_FILE) \
+		--output-file $(OUTPUT_FILE)
+
 ####
 
 .PHONY: nmdc-prod-to-other

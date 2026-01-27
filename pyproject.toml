@@ -114,6 +114,9 @@ measurement-discovery-efficient = 'external_metadata_awareness.measurement_disco
 # Biosample normalization tools
 normalize-satisfying-biosamples = 'external_metadata_awareness.normalize_satisfying_biosamples:normalize_biosamples'
 
+# NMDC analysis tools
+analyze-nmdc-biosample-coverage = 'external_metadata_awareness.analyze_nmdc_biosample_coverage:main'
+
 [tool.deptry.per_rule_ignores]
 DEP001 = ["common", "core"] # locally defined
 DEP002 = [
