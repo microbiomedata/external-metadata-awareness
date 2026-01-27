@@ -71,7 +71,7 @@ The existing 12 value sets were created using one-off Jupyter notebooks with var
 
 1. **Request ENVO deprecate NMDC subset annotation properties**
 
-   Request deprecation of `ENVO:03605010` (NMDC environmental context subsets) and all its subproperties, as NMDC will no longer maintain them.
+   Request deprecation of `ENVO:03605010` (NMDC environmental context subsets) and all its sub-properties, as NMDC will no longer maintain them.
 
 2. **Archive ROBOT template generation code**
 
