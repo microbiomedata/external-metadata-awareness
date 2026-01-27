@@ -51,7 +51,7 @@ export-bioprojects-to-duckdb: $(OUTPUT_DIR)
 		--type=json \
 		--out="$(OUTPUT_DIR)/bioprojects_flattened.json"
 	@echo "Loading into DuckDB: $(BIOPROJECTS_DUCKDB_FILE)"
-	@duckdb "$(BIOPROJECTS_DUCKDB_FILE)" -c "CREATE OR REPLACE TABLE bioprojects_flattened AS SELECT * EXCLUDE _id FROM read_json('$(OUTPUT_DIR)/bioprojects_flattened.json', auto_detect=true, union_by_name=true, maximum_object_size=16777216);"
+	@duckdb "$(BIOPROJECTS_DUCKDB_FILE)" -c "CREATE OR REPLACE TABLE bioprojects_flattened AS SELECT * EXCLUDE _id FROM read_json('$(OUTPUT_DIR)/bioprojects_flattened.json', auto_detect=true, union_by_name=true, maximum_object_size=16777216, field_appearance_threshold=0);"
 	@echo "✓ BioProjects exported to $(BIOPROJECTS_DUCKDB_FILE)"
 	@echo ""
 	@echo "Summary:"
@@ -93,7 +93,7 @@ json-to-duckdb: $(OUTPUT_DIR)
 	fi
 	@echo "Loading $(COLLECTION).json into DuckDB table..."
 	@table_name=$$(echo "$(COLLECTION)" | sed 's/\./_/g'); \
-	duckdb "$(DUCKDB_FILE)" -c "CREATE OR REPLACE TABLE $$table_name AS SELECT * EXCLUDE _id FROM read_json('$(OUTPUT_DIR)/$(COLLECTION).json', auto_detect=true, union_by_name=true, maximum_object_size=16777216);"
+	duckdb "$(DUCKDB_FILE)" -c "CREATE OR REPLACE TABLE $$table_name AS SELECT * EXCLUDE _id FROM read_json('$(OUTPUT_DIR)/$(COLLECTION).json', auto_detect=true, union_by_name=true, maximum_object_size=16777216, field_appearance_threshold=0);"
 	@echo "Loaded into table: $$table_name"
 
 # Process single collection (export + convert)
@@ -125,7 +125,7 @@ make-duckdb: $(OUTPUT_DIR)
 		fi; \
 		echo "Loading $$collection into DuckDB..."; \
 		table_name=$$(echo "$$collection" | sed 's/\./_/g'); \
-		duckdb "$(DUCKDB_FILE_DATED)" -c "CREATE OR REPLACE TABLE $$table_name AS SELECT * EXCLUDE _id FROM read_json('$$json_file', auto_detect=true, union_by_name=true, maximum_object_size=16777216);"; \
+		duckdb "$(DUCKDB_FILE_DATED)" -c "CREATE OR REPLACE TABLE $$table_name AS SELECT * EXCLUDE _id FROM read_json('$$json_file', auto_detect=true, union_by_name=true, maximum_object_size=16777216, field_appearance_threshold=0);"; \
 		echo "  ✓ Table created: $$table_name"; \
 	done
 	@echo ""
@@ -154,7 +154,7 @@ make-database: $(OUTPUT_DIR)
 			--out="$$json_file" 2>&1 | grep -v "connected to"; \
 		echo "  [2/3] Loading into DuckDB..."; \
 		table_name=$$(echo "$$collection" | sed 's/\./_/g'); \
-		duckdb "$(DUCKDB_FILE_DATED)" -c "CREATE OR REPLACE TABLE $$table_name AS SELECT * EXCLUDE _id FROM read_json('$$json_file', auto_detect=true, union_by_name=true, maximum_object_size=16777216);"; \
+		duckdb "$(DUCKDB_FILE_DATED)" -c "CREATE OR REPLACE TABLE $$table_name AS SELECT * EXCLUDE _id FROM read_json('$$json_file', auto_detect=true, union_by_name=true, maximum_object_size=16777216, field_appearance_threshold=0);"; \
 		echo "  [3/3] Cleaning up JSON..."; \
 		rm -f "$$json_file"; \
 		json_size=$$(du -h "$(OUTPUT_DIR)" 2>/dev/null | tail -1 | awk '{print $$1}'); \
@@ -269,6 +269,7 @@ help:
 	@echo "  list-flat-collections      - List all 16 flat collections"
 	@echo "  show-summary               - Show table counts in DuckDB"
 	@echo "  show-config                - Show current configuration"
+	@echo "  create-legacy-views        - Create 'attributes'/'links' views for voting sheet notebook"
 	@echo ""
 	@echo "Cleanup targets:"
 	@echo "  clean-json                 - Remove JSON dumps"
@@ -285,6 +286,20 @@ help:
 	@echo "  make -f Makefiles/ncbi_to_duckdb.Makefile make-database"
 	@echo "  make -f Makefiles/ncbi_to_duckdb.Makefile show-summary"
 
+# Create legacy views for voting sheet notebook compatibility
+# The generate_voting_sheet.ipynb expects 'attributes' and 'links' tables with specific columns
+# This creates views on top of the new flattened schema
+create-legacy-views:
+	@echo "Creating legacy views for voting sheet compatibility..."
+	@if [ ! -f "$(DUCKDB_FILE)" ]; then \
+		echo "ERROR: DuckDB file not found: $(DUCKDB_FILE)"; \
+		echo "Run 'make make-database' first"; \
+		exit 1; \
+	fi
+	duckdb "$(DUCKDB_FILE)" < sql/create_legacy_views.sql
+	@echo "✓ Legacy views created: 'attributes' and 'links'"
+
 .PHONY: list-flat-collections export-collection-json json-to-duckdb process-collection \
         dump-json make-duckdb make-database export-bioprojects-to-duckdb export-satisfying-biosamples \
-        normalize-satisfying-biosamples show-summary clean clean-json clean-duckdb show-config help
+        normalize-satisfying-biosamples show-summary clean clean-json clean-duckdb show-config help \
+        create-legacy-views
