@@ -151,7 +151,7 @@ research_infrastructure_nearby:
 | `temp` | WorldClim, ERA5 | Historical climate normals |
 | `ph` | SoilGrids | Soil pH predictions |
 | `salinity` | Global soil salinity maps | Geospatial lookup |
-| `grow_habit` | Plant trait databases | Species-based inference |
+| `growth_habit` | Plant trait databases | Species-based inference |
 | `root_cond` | Root zone databases | Soil-climate correlation |
 
 ### 5. Critical Minerals Proximity Analysis
@@ -203,10 +203,10 @@ def analyze_critical_minerals_proximity(lat, lon, search_radius_km=50):
 ```python
 # Rate limiting framework
 api_limits = {
-    'usgs_elevation': 1000/hour,
-    'weather_api': 10000/day, 
-    'soil_grids': 500/hour,
-    'osm_overpass': 10000/day
+    'usgs_elevation': 1000,   # per hour
+    'weather_api': 10000,     # per day
+    'soil_grids': 500,        # per hour
+    'osm_overpass': 10000     # per day
 }
 
 # Intelligent batching

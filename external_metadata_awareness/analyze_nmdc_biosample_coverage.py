@@ -5,15 +5,15 @@ Analyze coverage of NMDC Biosample schema slots in flattened CSV export.
 This script:
 1. Fetches the NMDC LinkML schema from GitHub
 2. Extracts Biosample class slots
-3. Checks which slots appear as substrings in CSV column headers
-4. Reports missing slots and population rates
+3. Checks which slots appear as exact CSV column headers or with known flattening suffixes
+4. Reports missing slots and population rates based on these matched columns
 """
 
 import csv
 import json
 import logging
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import List
 
 import click
 import requests
@@ -84,60 +84,67 @@ def find_slot_matches(slot: str, csv_columns: List[str]) -> List[str]:
     return matches
 
 
-def analyze_slot_population(csv_path: Path, slot: str, matching_columns: List[str]) -> float:
-    """Calculate the percentage of rows where at least one matching column is populated."""
-    if not matching_columns:
-        return 0.0
+def analyze_all_slot_populations(csv_path: Path, slot_to_columns: dict) -> dict:
+    """Calculate population rates for all slots in a single CSV pass."""
+    if not slot_to_columns:
+        return {}
 
-    populated_rows = 0
+    # Initialize counters
+    slot_populated_counts = {slot: 0 for slot in slot_to_columns}
     total_rows = 0
 
+    logger.info("  Reading CSV for population analysis (single pass)...")
     with open(csv_path, 'r') as f:
         reader = csv.DictReader(f)
 
         for row in reader:
             total_rows += 1
+            if total_rows % 10000 == 0:
+                logger.info(f"    Processed {total_rows} rows...")
 
-            # Check if any of the matching columns has a non-empty value
-            has_value = False
-            for col in matching_columns:
-                if col in row and row[col] and row[col].strip():
-                    has_value = True
-                    break
+            # Check each slot's matching columns
+            for slot, columns in slot_to_columns.items():
+                for col in columns:
+                    if col in row and row[col] and row[col].strip():
+                        slot_populated_counts[slot] += 1
+                        break  # Only count once per slot per row
 
-            if has_value:
-                populated_rows += 1
+    # Calculate percentages
+    if total_rows == 0:
+        return {slot: 0.0 for slot in slot_to_columns}
 
-    return (populated_rows / total_rows * 100) if total_rows > 0 else 0.0
+    return {slot: (count / total_rows * 100) for slot, count in slot_populated_counts.items()}
 
 
-def analyze_biosample_coverage(csv_path: Path, output_path: Path = None) -> dict:
+def analyze_biosample_coverage(csv_path: Path, output_path: Path = None, schema_url: str = NMDC_SCHEMA_URL) -> dict:
     """Main analysis function."""
     logger.info("NMDC Biosample Schema Coverage Analysis")
     logger.info("=" * 50)
 
     # Get data
-    schema = fetch_nmdc_schema()
+    schema = fetch_nmdc_schema(schema_url)
     biosample_slots = get_biosample_slots(schema)
     csv_columns = get_csv_columns(csv_path)
 
-    # Check coverage and analyze population
-    logger.info("Analyzing slot coverage and population rates...")
+    # Check coverage - precompute slot→columns mapping
+    logger.info("Analyzing slot coverage...")
     missing_slots = []
-    represented_slots = []
-    slot_populations = {}
+    slot_to_columns = {}
 
-    for i, slot in enumerate(sorted(biosample_slots), 1):
-        if i % 50 == 0:
-            logger.info(f"  Processed {i}/{len(biosample_slots)} slots...")
-
+    for slot in sorted(biosample_slots):
         matches = find_slot_matches(slot, csv_columns)
         if matches:
-            population_rate = analyze_slot_population(csv_path, slot, matches)
-            represented_slots.append((slot, matches, population_rate))
-            slot_populations[slot] = population_rate
+            slot_to_columns[slot] = matches
         else:
             missing_slots.append(slot)
+
+    # Analyze population rates in single pass
+    logger.info("Analyzing population rates...")
+    slot_populations = analyze_all_slot_populations(csv_path, slot_to_columns)
+
+    # Build represented_slots list
+    represented_slots = [(slot, slot_to_columns[slot], slot_populations[slot])
+                         for slot in slot_to_columns]
 
     # Results
     total_slots = len(biosample_slots)
@@ -195,6 +202,7 @@ def analyze_biosample_coverage(csv_path: Path, output_path: Path = None) -> dict
     if output_path is None:
         output_path = csv_path.parent / 'biosample_coverage_results.json'
 
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, 'w') as f:
         json.dump(results, f, indent=2)
 
@@ -217,7 +225,7 @@ def main(csv_file: Path, output_file: Path, schema_url: str):
     which slots appear in the CSV column headers. Reports missing slots and
     population rates for represented slots.
     """
-    analyze_biosample_coverage(csv_file, output_file)
+    analyze_biosample_coverage(csv_file, output_file, schema_url)
 
 
 if __name__ == "__main__":
