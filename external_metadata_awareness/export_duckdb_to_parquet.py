@@ -28,28 +28,31 @@ def export_duckdb_to_parquet(duckdb_file: Path, output_dir: Path) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
 
     conn = duckdb.connect(str(duckdb_file), read_only=True)
-    tables = [
-        row[0]
-        for row in conn.execute(
-            "SELECT table_name FROM duckdb_tables() ORDER BY table_name"
-        ).fetchall()
-    ]
+    try:
+        tables = [
+            (row[0], row[1])
+            for row in conn.execute(
+                "SELECT table_name, estimated_size "
+                "FROM duckdb_tables() "
+                "WHERE schema_name = 'main' "
+                "ORDER BY table_name"
+            ).fetchall()
+        ]
 
-    if not tables:
-        logger.warning("No tables found in %s", duckdb_file)
+        if not tables:
+            logger.warning("No tables found in %s", duckdb_file)
+            return
+
+        logger.info("Exporting %d tables from %s to %s", len(tables), duckdb_file, output_dir)
+
+        for table, estimated_rows in tables:
+            out_path = output_dir / f"{table}.parquet"
+            conn.execute(
+                f'COPY "{table}" TO \'{out_path}\' (FORMAT PARQUET, COMPRESSION ZSTD)'
+            )
+            size_mb = out_path.stat().st_size / (1024 * 1024)
+            logger.info("  %-40s ~%10d rows  %8.1f MB", table, estimated_rows, size_mb)
+
+        logger.info("Done. %d Parquet files written to %s", len(tables), output_dir)
+    finally:
         conn.close()
-        return
-
-    logger.info("Exporting %d tables from %s to %s", len(tables), duckdb_file, output_dir)
-
-    for table in tables:
-        out_path = output_dir / f"{table}.parquet"
-        conn.execute(
-            f"COPY {table} TO '{out_path}' (FORMAT PARQUET, COMPRESSION ZSTD)"
-        )
-        row_count = conn.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
-        size_mb = out_path.stat().st_size / (1024 * 1024)
-        logger.info("  %-40s %10d rows  %8.1f MB", table, row_count, size_mb)
-
-    conn.close()
-    logger.info("Done. %d Parquet files written to %s", len(tables), output_dir)
