@@ -114,6 +114,9 @@ measurement-discovery-efficient = 'external_metadata_awareness.measurement_disco
 # Biosample normalization tools
 normalize-satisfying-biosamples = 'external_metadata_awareness.normalize_satisfying_biosamples:normalize_biosamples'
 
+# DuckDB export tools
+export-duckdb-to-parquet = 'external_metadata_awareness.export_duckdb_to_parquet:export_duckdb_to_parquet'
+
 # NMDC analysis tools
 analyze-nmdc-biosample-coverage = 'external_metadata_awareness.analyze_nmdc_biosample_coverage:main'
 

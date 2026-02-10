@@ -7,22 +7,19 @@ MONGO_PORT ?= 27017
 MONGO_DB ?= ncbi_metadata
 MONGO_URI ?= mongodb://$(MONGO_HOST):$(MONGO_PORT)/$(MONGO_DB)
 
-# BioProjects source database
-BIOPROJECTS_DB ?= ncbi_metadata_20250919
-
 # Output configuration
 OUTPUT_DIR ?= ./local/ncbi_duckdb_export
+PARQUET_DIR ?= $(OUTPUT_DIR)/parquet
 DATE_STAMP := $(shell date +%Y%m%d)
 # Dated files for archival
 DUCKDB_FILE_DATED ?= $(OUTPUT_DIR)/ncbi_metadata_flat_$(DATE_STAMP).duckdb
-BIOPROJECTS_DUCKDB_FILE_DATED ?= $(OUTPUT_DIR)/ncbi_bioprojects_$(DATE_STAMP).duckdb
 # Symlinks to latest (avoids date rollover issues)
 DUCKDB_FILE ?= $(OUTPUT_DIR)/ncbi_metadata_flat_latest.duckdb
-BIOPROJECTS_DUCKDB_FILE ?= $(OUTPUT_DIR)/ncbi_bioprojects_latest.duckdb
 
 # List of 100% flat collections (flatness_score = 100.0)
 FLAT_COLLECTIONS := \
 	attribute_harmonized_pairings \
+	bioprojects_flattened \
 	biosamples_attributes \
 	biosamples_flattened \
 	biosamples_ids \
@@ -42,21 +39,6 @@ FLAT_COLLECTIONS := \
 # Create output directory
 $(OUTPUT_DIR):
 	mkdir -p $(OUTPUT_DIR)
-
-# Export flattened BioProjects to DuckDB (requires bioprojects_flattened collection to exist)
-export-bioprojects-to-duckdb: $(OUTPUT_DIR)
-	@echo "Exporting bioprojects_flattened to DuckDB..."
-	@mongoexport --uri="mongodb://$(MONGO_HOST):$(MONGO_PORT)/$(BIOPROJECTS_DB)" \
-		--collection="bioprojects_flattened" \
-		--type=json \
-		--out="$(OUTPUT_DIR)/bioprojects_flattened.json"
-	@echo "Loading into DuckDB: $(BIOPROJECTS_DUCKDB_FILE)"
-	@duckdb "$(BIOPROJECTS_DUCKDB_FILE)" -c "CREATE OR REPLACE TABLE bioprojects_flattened AS SELECT * EXCLUDE _id FROM read_json('$(OUTPUT_DIR)/bioprojects_flattened.json', auto_detect=true, union_by_name=true, maximum_object_size=16777216, field_appearance_threshold=0);"
-	@echo "✓ BioProjects exported to $(BIOPROJECTS_DUCKDB_FILE)"
-	@echo ""
-	@echo "Summary:"
-	@duckdb "$(BIOPROJECTS_DUCKDB_FILE)" -c "SELECT COUNT(*) as row_count FROM bioprojects_flattened;"
-	@duckdb "$(BIOPROJECTS_DUCKDB_FILE)" -c "SELECT COUNT(*) as column_count FROM (SELECT * FROM pragma_table_info('bioprojects_flattened'));"
 
 # List all flat collections
 list-flat-collections:
@@ -93,7 +75,7 @@ json-to-duckdb: $(OUTPUT_DIR)
 	fi
 	@echo "Loading $(COLLECTION).json into DuckDB table..."
 	@table_name=$$(echo "$(COLLECTION)" | sed 's/\./_/g'); \
-	duckdb "$(DUCKDB_FILE)" -c "CREATE OR REPLACE TABLE $$table_name AS SELECT * EXCLUDE _id FROM read_json('$(OUTPUT_DIR)/$(COLLECTION).json', auto_detect=true, union_by_name=true, maximum_object_size=16777216, field_appearance_threshold=0);"
+	duckdb "$(DUCKDB_FILE)" -c "CREATE OR REPLACE TABLE $$table_name AS SELECT * EXCLUDE _id FROM read_json('$(OUTPUT_DIR)/$(COLLECTION).json', auto_detect=true, union_by_name=true, maximum_object_size=16777216, field_appearance_threshold=0, dateformat='DISABLED', timestampformat='DISABLED');"
 	@echo "Loaded into table: $$table_name"
 
 # Process single collection (export + convert)
@@ -101,7 +83,7 @@ process-collection: export-collection-json json-to-duckdb
 
 # Dump all flat collections to JSON only
 dump-json: $(OUTPUT_DIR)
-	@echo "Dumping all 16 flat collections to JSON..."
+	@echo "Dumping all 17 flat collections to JSON..."
 	@for collection in $(FLAT_COLLECTIONS); do \
 		echo "Exporting collection: $$collection"; \
 		mongoexport --uri="$(MONGO_URI)" \
@@ -125,7 +107,7 @@ make-duckdb: $(OUTPUT_DIR)
 		fi; \
 		echo "Loading $$collection into DuckDB..."; \
 		table_name=$$(echo "$$collection" | sed 's/\./_/g'); \
-		duckdb "$(DUCKDB_FILE_DATED)" -c "CREATE OR REPLACE TABLE $$table_name AS SELECT * EXCLUDE _id FROM read_json('$$json_file', auto_detect=true, union_by_name=true, maximum_object_size=16777216, field_appearance_threshold=0);"; \
+		duckdb "$(DUCKDB_FILE_DATED)" -c "CREATE OR REPLACE TABLE $$table_name AS SELECT * EXCLUDE _id FROM read_json('$$json_file', auto_detect=true, union_by_name=true, maximum_object_size=16777216, field_appearance_threshold=0, dateformat='DISABLED', timestampformat='DISABLED');"; \
 		echo "  ✓ Table created: $$table_name"; \
 	done
 	@echo ""
@@ -144,7 +126,8 @@ make-database: $(OUTPUT_DIR)
 	@echo "Symlink: $(DUCKDB_FILE)"
 	@echo "Strategy: Export → Load → Clean (space-optimized)"
 	@echo ""
-	@for collection in $(FLAT_COLLECTIONS); do \
+	@failed_collections=""; \
+	for collection in $(FLAT_COLLECTIONS); do \
 		echo "Processing $$collection..."; \
 		json_file="$(OUTPUT_DIR)/$$collection.json"; \
 		echo "  [1/3] Exporting to JSON..."; \
@@ -152,20 +135,48 @@ make-database: $(OUTPUT_DIR)
 			--collection="$$collection" \
 			--type=json \
 			--out="$$json_file" 2>&1 | grep -v "connected to"; \
+		if [ ! -f "$$json_file" ] || [ ! -s "$$json_file" ]; then \
+			echo "  ✗ FAILED: mongoexport produced no output for $$collection"; \
+			failed_collections="$$failed_collections $$collection"; \
+			continue; \
+		fi; \
 		echo "  [2/3] Loading into DuckDB..."; \
 		table_name=$$(echo "$$collection" | sed 's/\./_/g'); \
-		duckdb "$(DUCKDB_FILE_DATED)" -c "CREATE OR REPLACE TABLE $$table_name AS SELECT * EXCLUDE _id FROM read_json('$$json_file', auto_detect=true, union_by_name=true, maximum_object_size=16777216, field_appearance_threshold=0);"; \
+		if ! duckdb "$(DUCKDB_FILE_DATED)" -c "CREATE OR REPLACE TABLE $$table_name AS SELECT * EXCLUDE _id FROM read_json('$$json_file', auto_detect=true, union_by_name=true, maximum_object_size=16777216, field_appearance_threshold=0, dateformat='DISABLED', timestampformat='DISABLED');"; then \
+			echo "  ✗ FAILED: DuckDB load failed for $$collection (JSON preserved at $$json_file)"; \
+			failed_collections="$$failed_collections $$collection"; \
+			continue; \
+		fi; \
 		echo "  [3/3] Cleaning up JSON..."; \
 		rm -f "$$json_file"; \
-		json_size=$$(du -h "$(OUTPUT_DIR)" 2>/dev/null | tail -1 | awk '{print $$1}'); \
-		echo "  ✓ $$collection complete (temp files cleaned, DuckDB size: $$json_size)"; \
+		db_size=$$(du -h "$(OUTPUT_DIR)" 2>/dev/null | tail -1 | awk '{print $$1}'); \
+		echo "  ✓ $$collection complete (temp files cleaned, DuckDB size: $$db_size)"; \
 		echo ""; \
-	done
+	done; \
+	if [ -n "$$failed_collections" ]; then \
+		echo ""; \
+		echo "=== WARNING: The following collections FAILED to export: $$failed_collections ==="; \
+		echo "Re-run individually with: make -f Makefiles/ncbi_to_duckdb.Makefile process-collection COLLECTION=<name>"; \
+		echo ""; \
+	fi
 	@echo "=== Export Complete! ==="
 	@echo "Creating symlink to latest database..."
 	@cd $(OUTPUT_DIR) && ln -sf $$(basename $(DUCKDB_FILE_DATED)) $$(basename $(DUCKDB_FILE))
 	@echo "✓ Symlink created: $(DUCKDB_FILE) -> $(DUCKDB_FILE_DATED)"
 	@$(MAKE) -f Makefiles/ncbi_to_duckdb.Makefile show-summary
+
+# Export all DuckDB tables to individual Parquet files
+export-parquet:
+	@if [ ! -f "$(DUCKDB_FILE)" ]; then \
+		echo "Error: DuckDB file not found: $(DUCKDB_FILE)"; \
+		echo "Run 'make -f Makefiles/ncbi_to_duckdb.Makefile make-database' first"; \
+		exit 1; \
+	fi
+	@echo "Exporting DuckDB tables to Parquet..."
+	poetry run export-duckdb-to-parquet "$(DUCKDB_FILE)" --output-dir "$(PARQUET_DIR)"
+
+# Full pipeline: create DuckDB then export to Parquet
+export-all: make-database export-parquet
 
 # Export satisfying biosamples to CSV (biosamples meeting all quality criteria)
 export-satisfying-biosamples:
@@ -215,7 +226,7 @@ show-summary:
 		printf "  %-40s %15s rows, %4s columns\n" "$$table" "$$row_count" "$$col_count"; \
 	done
 	@echo ""
-	@total_rows=$$(duckdb "$(DUCKDB_FILE)" -noheader -list -c "SELECT SUM(cnt) FROM (SELECT COUNT(*) as cnt FROM attribute_harmonized_pairings UNION ALL SELECT COUNT(*) FROM biosamples_attributes UNION ALL SELECT COUNT(*) FROM biosamples_flattened UNION ALL SELECT COUNT(*) FROM biosamples_ids UNION ALL SELECT COUNT(*) FROM biosamples_links UNION ALL SELECT COUNT(*) FROM content_pairs_aggregated UNION ALL SELECT COUNT(*) FROM env_triads_flattened UNION ALL SELECT COUNT(*) FROM harmonized_name_dimensional_stats UNION ALL SELECT COUNT(*) FROM harmonized_name_usage_stats UNION ALL SELECT COUNT(*) FROM measurement_evidence_percentages UNION ALL SELECT COUNT(*) FROM measurement_results_skip_filtered UNION ALL SELECT COUNT(*) FROM mixed_content_counts UNION ALL SELECT COUNT(*) FROM ncbi_attributes_flattened UNION ALL SELECT COUNT(*) FROM ncbi_packages_flattened UNION ALL SELECT COUNT(*) FROM sra_biosamples_bioprojects UNION ALL SELECT COUNT(*) FROM unit_assertion_counts);" 2>/dev/null); \
+	@total_rows=$$(duckdb "$(DUCKDB_FILE)" -noheader -list -c "SELECT SUM(cnt) FROM (SELECT COUNT(*) as cnt FROM attribute_harmonized_pairings UNION ALL SELECT COUNT(*) FROM bioprojects_flattened UNION ALL SELECT COUNT(*) FROM biosamples_attributes UNION ALL SELECT COUNT(*) FROM biosamples_flattened UNION ALL SELECT COUNT(*) FROM biosamples_ids UNION ALL SELECT COUNT(*) FROM biosamples_links UNION ALL SELECT COUNT(*) FROM content_pairs_aggregated UNION ALL SELECT COUNT(*) FROM env_triads_flattened UNION ALL SELECT COUNT(*) FROM harmonized_name_dimensional_stats UNION ALL SELECT COUNT(*) FROM harmonized_name_usage_stats UNION ALL SELECT COUNT(*) FROM measurement_evidence_percentages UNION ALL SELECT COUNT(*) FROM measurement_results_skip_filtered UNION ALL SELECT COUNT(*) FROM mixed_content_counts UNION ALL SELECT COUNT(*) FROM ncbi_attributes_flattened UNION ALL SELECT COUNT(*) FROM ncbi_packages_flattened UNION ALL SELECT COUNT(*) FROM sra_biosamples_bioprojects UNION ALL SELECT COUNT(*) FROM unit_assertion_counts);" 2>/dev/null); \
 	echo "Total rows across all tables: $$total_rows"
 
 # Clean up JSON dumps
@@ -250,13 +261,13 @@ help:
 	@echo "NCBI MongoDB to DuckDB Migration"
 	@echo ""
 	@echo "Primary targets:"
-	@echo "  make-database                    - Export all flat collections and create DuckDB"
-	@echo "  export-bioprojects-to-duckdb     - Export bioprojects_flattened to separate DuckDB"
+	@echo "  make-database                    - Export all 17 flat collections and create DuckDB"
+	@echo "  export-parquet                   - Export DuckDB tables to individual Parquet files"
+	@echo "  export-all                       - Full pipeline: make-database + export-parquet"
 	@echo "  export-satisfying-biosamples     - Export biosamples meeting quality criteria to CSV"
 	@echo "  normalize-satisfying-biosamples  - Normalize dates and split coordinates into lat/lon columns"
 	@echo ""
-	@echo "Note: To flatten BioProjects first, use:"
-	@echo "  make -f Makefiles/ncbi_metadata.Makefile flatten_bioprojects MONGO_URI=mongodb://host:port/db"
+	@echo "Batch targets:"
 	@echo "  dump-json                  - Export all collections to JSON only"
 	@echo "  make-duckdb                - Create DuckDB from existing JSON files"
 	@echo ""
@@ -266,7 +277,7 @@ help:
 	@echo "  process-collection COLLECTION=name      - Export + load single collection"
 	@echo ""
 	@echo "Information targets:"
-	@echo "  list-flat-collections      - List all 16 flat collections"
+	@echo "  list-flat-collections      - List all 17 flat collections"
 	@echo "  show-summary               - Show table counts in DuckDB"
 	@echo "  show-config                - Show current configuration"
 	@echo "  create-legacy-views        - Create 'attributes'/'links' views for voting sheet notebook"
@@ -300,6 +311,6 @@ create-legacy-views:
 	@echo "✓ Legacy views created: 'attributes' and 'links'"
 
 .PHONY: list-flat-collections export-collection-json json-to-duckdb process-collection \
-        dump-json make-duckdb make-database export-bioprojects-to-duckdb export-satisfying-biosamples \
+        dump-json make-duckdb make-database export-parquet export-all export-satisfying-biosamples \
         normalize-satisfying-biosamples show-summary clean clean-json clean-duckdb show-config help \
         create-legacy-views
