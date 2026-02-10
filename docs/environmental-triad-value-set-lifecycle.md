@@ -431,7 +431,61 @@ After voting, add aggregate column:
 
 Terms are included if: `vote_sum >= 1`
 
-An inter-annotator agreement (IAA) calculation script (`iaa.py`) is available for analyzing vote consistency when needed.
+### 3.5 Inter-Annotator Agreement (IAA)
+
+**Current recommendation**: Skip IAA. Per CJM (Chris Mungall), just use `vote_sum >= 1` for filtering.
+
+If IAA is needed (e.g., for analyzing voter agreement patterns), the formula is:
+
+```
+IAA = (number of agreeing voter pairs) / (total voter pairs)
+```
+
+Example with 5 voters (10 pairs = C(5,2)):
+- All agree → 10/10 = **1.0**
+- 4 agree, 1 differs → 6/10 = **0.6**
+- Complete disagreement → **0.0**
+
+**Single-voter scenarios**: IAA is meaningless with one voter. Just use the vote column directly as `vote_sum`.
+
+> **Note**: An `iaa.py` script was planned but does not currently exist in this repo. If IAA calculation is needed, it would take vote columns from a downloaded CSV and compute pairwise agreement.
+
+### 3.6 Google Sheets Voting Workbook Inventory
+
+The canonical sheet IDs are those referenced in the [microbiomedata/submission-schema](https://github.com/microbiomedata/submission-schema) repository's `post_google_sheets_*.ipynb` notebooks. Many additional copies exist in Google Drive from earlier voting rounds — those are historical and not actively used.
+
+#### Canonical Sheets (referenced in submission-schema notebooks)
+
+| Environment | Slot | Sheet ID | Notes |
+|-------------|------|----------|-------|
+| plant_associated | env_broad_scale | `1MvXbYlBkJrgU02Ydh8UxlZjCbOQq3LjwpfaWjaRFKF0` | |
+| plant_associated | env_local_scale | `1YvNu1DDQz56rjRHGf8jl8krHliGs1yleF5Ent5S0dIs` | |
+| plant_associated | env_medium | `1gBgwdjSF7tBwZAa6HBxkmj2iAI0KFiQaTVV2y0yv-1A` | |
+| water | env_broad_scale | `1lMjVxyADmZM1rZI7Qo99RnN6V5K8B8GjAevVoKENViw` | |
+| water | env_local_scale | `1nD0ZaJooi6KAmRG4KiGbaCJ6Q6gEc93_dU35NXawcp0` | |
+| water | env_medium | `1jMhQ6QK_50jK1MoJq8_raEfrW1FgYQJbB5r1D2SjFQ0` | |
+| sediment | env_broad_scale | `1T0i2MkSBqY48dsjwVYwtI4nvy1RuEN864ouE-HwIe00` | |
+| sediment | env_local_scale | `1t7ZMU-xc5813hXelA6xSwJdrVsoKHhBuGmcfZJ1mJUk` | |
+| sediment | env_medium | `1jTSoWT4QxEPXGapkemj1EBJkUSGFs4OKvPhiglNz5gY` | |
+| soil | env_local_scale | `1epul_bXtEOlmIZYNRhngulI3-HaHhe_tU_BPUia5isQ` | |
+| soil | env_broad_scale | — | Procedural (ENVO query, no voting sheet) |
+| soil | env_medium | — | Procedural (ENVO query, no voting sheet) |
+
+To open any sheet: `https://docs.google.com/spreadsheets/d/{Sheet ID}`
+
+#### Sheets Not Yet Referenced in Submission-Schema Notebooks
+
+| Environment | Slot | Sheet ID | Notes |
+|-------------|------|----------|-------|
+| built | env_medium | `1gJXHl2_yGNKoGliYt8Af2K047d77MDFffEJTWtk0vr0` | Ready for voting |
+
+#### Other Resources
+
+| Name | ID |
+|------|-----|
+| Environmental context value set provenance | `1O7uNLG7GOJRiJ6rKUahObdyIGyUT-eO60q4h4oI-Sd4` |
+
+All sheets must be shared with the service account: `env-context-voting-sheets@env-context-voting-sheets.iam.gserviceaccount.com`
 
 ---
 
