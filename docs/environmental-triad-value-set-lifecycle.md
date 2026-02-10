@@ -433,7 +433,7 @@ Terms are included if: `vote_sum >= 1`
 
 ### 3.5 Inter-Annotator Agreement (IAA)
 
-**Current recommendation**: Skip IAA. Per CJM, just use `vote_sum >= 1` for filtering.
+**Current recommendation**: Skip IAA. Per CJM (Chris Mungall), just use `vote_sum >= 1` for filtering.
 
 If IAA is needed (e.g., for analyzing voter agreement patterns), the formula is:
 
@@ -452,7 +452,7 @@ Example with 5 voters (10 pairs = C(5,2)):
 
 ### 3.6 Google Sheets Voting Workbook Inventory
 
-The canonical sheet IDs are those referenced in the submission-schema `post_google_sheets_*.ipynb` notebooks. Many additional copies exist in Google Drive from earlier voting rounds — those are historical and not actively used.
+The canonical sheet IDs are those referenced in the [microbiomedata/submission-schema](https://github.com/microbiomedata/submission-schema) repository's `post_google_sheets_*.ipynb` notebooks. Many additional copies exist in Google Drive from earlier voting rounds — those are historical and not actively used.
 
 #### Canonical Sheets (referenced in submission-schema notebooks)
 
@@ -473,7 +473,7 @@ The canonical sheet IDs are those referenced in the submission-schema `post_goog
 
 To open any sheet: `https://docs.google.com/spreadsheets/d/{Sheet ID}`
 
-#### Sheets Not Yet in Submission-Schema
+#### Sheets Not Yet Referenced in Submission-Schema Notebooks
 
 | Environment | Slot | Sheet ID | Notes |
 |-------------|------|----------|-------|
