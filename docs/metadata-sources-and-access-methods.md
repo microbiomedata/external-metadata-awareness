@@ -26,6 +26,57 @@ This document clarifies where different people can get or reshape different form
 | submission-schema | Schema definitions | microbiomedata/submission-schema |
 | This repo | API → MongoDB → flattened/normalized | `make -f Makefiles/nmdc_metadata.Makefile nmdc-submissions-to-mongo` (requires NMDC_DATA_SUBMISSION_REFRESH_TOKEN) |
 
+### Setting Up NMDC Submission Portal Credentials
+
+The `nmdc-submissions-to-mongo` target requires a refresh token that grants access to `https://data.microbiomedata.org/api/metadata_submission`. To see **all** submissions (not just your own), you also need admin privileges.
+
+#### Step 1: Get a Refresh Token
+
+1. Open `https://data.microbiomedata.org` in a browser
+2. Click **Sign In** — you'll authenticate via ORCID
+3. After login, open browser DevTools (F12) → **Application** tab → **Local Storage** → `https://data.microbiomedata.org`
+4. Copy the value of `storage.refreshToken`
+   - This is a JWT valid for **365 days**
+   - It is exchanged for short-lived access tokens via `POST /auth/refresh`
+
+#### Step 2: Request Admin Access (Required to See All Submissions)
+
+Without admin, the API only returns submissions where you have an explicit role (owner/editor/viewer).
+
+1. Ask someone with **Postgres database access** to set `is_admin = True` on your user record
+2. Known contacts with access: **Patrick Kalita**, **Shreyas Cholia**, or **Eric Cavanna**
+3. Reach out via `#nmdc-server` or `#infra-admin` in NMDC Slack
+4. Provide your **ORCID iD** so they can find your user record
+
+There is no self-service path — this is a direct database update.
+
+#### Step 3: Create the Env File
+
+Create `local/.env.nmdc-submissions`:
+
+```bash
+NMDC_DATA_SUBMISSION_REFRESH_TOKEN=<paste_refresh_token_here>
+```
+
+#### Step 4: Run the Pipeline
+
+```bash
+make -f Makefiles/nmdc_metadata.Makefile nmdc-submissions-to-mongo
+```
+
+> **Note:** The Makefile target currently references the old env file path. Issue [#303](https://github.com/microbiomedata/external-metadata-awareness/issues/303) tracks updating it to use `local/.env.nmdc-submissions` and local MongoDB.
+
+#### Auth Flow Reference
+
+| Endpoint | Method | Purpose |
+|----------|--------|---------|
+| `/auth/login?redirect_uri=...` | GET | Initiates ORCID OAuth (browser) |
+| `/auth/token` | POST | Exchanges authorization code for access + refresh tokens |
+| `/auth/refresh` | POST | Exchanges refresh token for new access token (24hr expiry) |
+| `/api/metadata_submission` | GET | Lists submissions (paginated, requires Bearer token) |
+
+Source: [microbiomedata/nmdc-server](https://github.com/microbiomedata/nmdc-server) — `nmdc_server/auth.py`
+
 ## GOLD Metadata
 
 | Method | Description | Tool/Repo |
