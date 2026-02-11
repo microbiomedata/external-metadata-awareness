@@ -1,6 +1,20 @@
 RUN=poetry run
 WGET=wget
 MONGO_URI ?= mongodb://localhost:27017/nmdc
+NMDC_EXPORT_DIR ?= ./local/nmdc_export
+NMDC_PARQUET_DIR ?= $(NMDC_EXPORT_DIR)/parquet
+NMDC_CSV_DIR ?= $(NMDC_EXPORT_DIR)/csv
+NMDC_DUCKDB_FILE ?= $(NMDC_EXPORT_DIR)/nmdc_flattened.duckdb
+
+OUTPUT_FILE ?= $(NMDC_EXPORT_DIR)/biosample_coverage_results.json
+
+NMDC_FLATTENED_COLLECTIONS = \
+	flattened_biosample \
+	flattened_biosample_chem_administration \
+	flattened_biosample_field_counts \
+	flattened_study \
+	flattened_study_associated_dois \
+	flattened_study_has_credit_associations
 
 ## Load environment variables from local/.env file if it exists
 #ifneq (,$(wildcard local/.env))
@@ -196,7 +210,78 @@ flatten-nmdc-auth:
 			--mongo-uri "mongodb://$$MONGO_USERNAME:$$MONGO_PASSWORD@$$MONGO_HOST:$$MONGO_PORT/$$DEST_MONGO_DB?authSource=admin&authMechanism=SCRAM-SHA-256&directConnection=true" \
 	)
 
-  #notes
+# Export flattened biosamples to CSV
+NMDC_BIOSAMPLE_CSV ?= $(NMDC_CSV_DIR)/flattened_biosample.csv
+NMDC_BIOSAMPLE_FIELDS_FILE ?= $(NMDC_CSV_DIR)/flattened_biosample.fields
+.PHONY: export-flattened-biosample-csv
+export-flattened-biosample-csv:
+	@mkdir -p $(NMDC_CSV_DIR)
+	@echo "Building full field list from flattened_biosample_field_counts..."
+	@mongosh "$(MONGO_URI)" --quiet \
+		--eval 'db.flattened_biosample_field_counts.distinct("field").sort().join("\n")' \
+		> "$(NMDC_BIOSAMPLE_FIELDS_FILE)"
+	@echo "Exporting flattened_biosample to CSV..."
+	@mongoexport --uri="$(MONGO_URI)" \
+		--collection="flattened_biosample" \
+		--type=csv \
+		--fieldFile="$(NMDC_BIOSAMPLE_FIELDS_FILE)" \
+		--out="$(NMDC_BIOSAMPLE_CSV)"
+	@echo "✓ Exported to $(NMDC_BIOSAMPLE_CSV)"
+
+# Export all flattened collections to DuckDB
+.PHONY: export-nmdc-duckdb
+export-nmdc-duckdb:
+	@mkdir -p $(NMDC_EXPORT_DIR)
+	@echo "=== NMDC Flattened Collections to DuckDB ==="
+	@for collection in $(NMDC_FLATTENED_COLLECTIONS); do \
+		echo "Processing $$collection..."; \
+		json_file="$(NMDC_EXPORT_DIR)/$$collection.json"; \
+		mongoexport --uri="$(MONGO_URI)" \
+			--collection="$$collection" \
+			--type=json \
+			--out="$$json_file" 2>&1 | grep -v "connected to"; \
+		if [ ! -s "$$json_file" ]; then \
+			echo "  ✗ FAILED: mongoexport produced no output for $$collection"; \
+			continue; \
+		fi; \
+		duckdb "$(NMDC_DUCKDB_FILE)" -c \
+			"CREATE OR REPLACE TABLE $$collection AS SELECT * EXCLUDE (_id) FROM read_json('$$json_file', auto_detect=true, union_by_name=true, dateformat='DISABLED', timestampformat='DISABLED');"; \
+		echo "  ✓ $$collection loaded"; \
+		rm -f "$$json_file"; \
+	done
+	@echo "=== DuckDB export complete: $(NMDC_DUCKDB_FILE) ==="
+
+# Export DuckDB to individual Parquet files for DLH loading
+.PHONY: export-nmdc-parquet
+export-nmdc-parquet: export-nmdc-duckdb
+	@echo "Exporting DuckDB tables to Parquet..."
+	$(RUN) export-duckdb-to-parquet "$(NMDC_DUCKDB_FILE)" --output-dir "$(NMDC_PARQUET_DIR)"
+
+# Analyze NMDC biosample schema coverage against a CSV
+# With CSV_FILE: make ... analyze-nmdc-biosample-coverage CSV_FILE=path/to/file.csv
+# Without:      uses the default export path and exports first if needed
+.PHONY: analyze-nmdc-biosample-coverage
+analyze-nmdc-biosample-coverage:
+ifndef CSV_FILE
+	@$(MAKE) --no-print-directory -f Makefiles/nmdc_metadata.Makefile export-flattened-biosample-csv
+	$(RUN) analyze-nmdc-biosample-coverage \
+		--csv-file $(NMDC_BIOSAMPLE_CSV) \
+		--output-file $(OUTPUT_FILE)
+else
+	$(RUN) analyze-nmdc-biosample-coverage \
+		--csv-file $(CSV_FILE) \
+		--output-file $(OUTPUT_FILE)
+endif
+
+# Full NMDC pipeline: flatten → DuckDB → Parquet → CSV → coverage analysis
+.PHONY: flatten-and-export-nmdc
+flatten-and-export-nmdc: flatten-nmdc export-nmdc-parquet analyze-nmdc-biosample-coverage
+	@echo ""
+	@echo "=== NMDC flatten and export complete ==="
+	@echo "DuckDB:   $(NMDC_DUCKDB_FILE)"
+	@echo "Parquet:  $(NMDC_PARQUET_DIR)"
+	@echo "CSV:      $(NMDC_BIOSAMPLE_CSV)"
+	@echo "Coverage: $(OUTPUT_FILE)"
 
 .PHONY: nmdc-submissions-to-mongo
 nmdc-submissions-to-mongo:
@@ -208,18 +293,6 @@ nmdc-submissions-to-mongo:
 			--env-path local/.env.ncbi-loadbalancer.27778.submissions \
 			--output-file nmdc-submissions-to-mongo.tsv \
 	)
-
-# Analyze NMDC biosample schema coverage against flattened CSV
-# Usage: make -f Makefiles/nmdc_metadata.Makefile analyze-nmdc-biosample-coverage CSV_FILE=path/to/flattened.csv [OUTPUT_FILE=path/to/results.json]
-OUTPUT_FILE ?= unorganized/biosample_coverage_results.json
-.PHONY: analyze-nmdc-biosample-coverage
-analyze-nmdc-biosample-coverage:
-ifndef CSV_FILE
-	$(error CSV_FILE is required. Usage: make ... analyze-nmdc-biosample-coverage CSV_FILE=path/to/flattened.csv)
-endif
-	$(RUN) analyze-nmdc-biosample-coverage \
-		--csv-file $(CSV_FILE) \
-		--output-file $(OUTPUT_FILE)
 
 ####
 
