@@ -6,7 +6,7 @@ NMDC_PARQUET_DIR ?= $(NMDC_EXPORT_DIR)/parquet
 NMDC_CSV_DIR ?= $(NMDC_EXPORT_DIR)/csv
 NMDC_DUCKDB_FILE ?= $(NMDC_EXPORT_DIR)/nmdc_flattened.duckdb
 
-OUTPUT_FILE ?= unorganized/biosample_coverage_results.json
+OUTPUT_FILE ?= $(NMDC_EXPORT_DIR)/biosample_coverage_results.json
 
 NMDC_FLATTENED_COLLECTIONS = \
 	flattened_biosample \
@@ -212,14 +212,19 @@ flatten-nmdc-auth:
 
 # Export flattened biosamples to CSV
 NMDC_BIOSAMPLE_CSV ?= $(NMDC_CSV_DIR)/flattened_biosample.csv
+NMDC_BIOSAMPLE_FIELDS_FILE ?= $(NMDC_CSV_DIR)/flattened_biosample.fields
 .PHONY: export-flattened-biosample-csv
 export-flattened-biosample-csv:
 	@mkdir -p $(NMDC_CSV_DIR)
+	@echo "Building full field list from flattened_biosample_field_counts..."
+	@mongosh "$(MONGO_URI)" --quiet \
+		--eval 'db.flattened_biosample_field_counts.distinct("field").sort().join("\n")' \
+		> "$(NMDC_BIOSAMPLE_FIELDS_FILE)"
 	@echo "Exporting flattened_biosample to CSV..."
 	@mongoexport --uri="$(MONGO_URI)" \
 		--collection="flattened_biosample" \
 		--type=csv \
-		--fields="$$(mongosh "$(MONGO_URI)" --quiet --eval 'Object.keys(db.flattened_biosample.findOne({}, {_id:0})).sort().join(",")')" \
+		--fieldFile="$(NMDC_BIOSAMPLE_FIELDS_FILE)" \
 		--out="$(NMDC_BIOSAMPLE_CSV)"
 	@echo "✓ Exported to $(NMDC_BIOSAMPLE_CSV)"
 
