@@ -300,6 +300,15 @@ nmdc-submissions-to-mongo:
 		--env-path "$(NMDC_SUBMISSIONS_ENV)" \
 		--output-file "$(NMDC_SUBMISSIONS_TSV)"
 
+NMDC_SUBMISSION_COLLECTIONS = nmdc_submissions flattened_submission_biosamples submission_biosample_rows submission_biosample_slot_counts
+
+.PHONY: drop-nmdc-submissions
+drop-nmdc-submissions:
+	@echo "Dropping submission collections from $(MONGO_URI)..."
+	@for coll in $(NMDC_SUBMISSION_COLLECTIONS); do \
+		mongosh "$(MONGO_URI)" --quiet --eval "db.getCollection('$$coll').drop(); print('Dropped: $$coll');" ; \
+	done
+
 ####
 
 .PHONY: nmdc-prod-to-other

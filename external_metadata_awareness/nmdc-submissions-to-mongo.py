@@ -399,6 +399,110 @@ def run_aggregation_pipeline(mongo_url):
 
 
 # =============================================================================
+# VALUE SET COMPLIANCE CHECK
+# =============================================================================
+# Mapping from sampleData keys to the CamelCase suffix used in enum names
+SAMPLE_DATA_KEY_TO_ENUM_SUFFIX = {
+    "soil_data": "Soil",
+    "water_data": "Water",
+    "sediment_data": "Sediment",
+    "plant_associated_data": "PlantAssociated",
+    "air_data": "Air",
+    "biofilm_data": "Biofilm",
+    "built_env_data": "BuiltEnv",
+    "host_associated_data": "HostAssociated",
+    "misc_envs_data": "MiscEnvs",
+    "hcr_cores_data": "HcrCores",
+    "hcr_fluids_swabs_data": "HcrFluidsSwabs",
+    "wastewater_sludge_data": "WastewaterSludge",
+}
+
+ENV_TRIAD_SLOTS = ["env_broad_scale", "env_local_scale", "env_medium"]
+ENV_TRIAD_ENUM_PREFIXES = {
+    "env_broad_scale": "EnvBroadScale",
+    "env_local_scale": "EnvLocalScale",
+    "env_medium": "EnvMedium",
+}
+
+
+def load_submission_schema_enums():
+    """
+    Load all env triad enums from the nmdc-submission-schema package.
+    Returns a dict like:
+        {("EnvBroadScale", "Soil"): {"label [CURIE]", ...}, ...}
+    """
+    import importlib.resources
+    schema_path = importlib.resources.files('nmdc_submission_schema') / 'schema' / 'nmdc_submission_schema.yaml'
+    sv = SchemaView(str(schema_path))
+    all_enums = sv.all_enums()
+
+    enum_lookup = {}
+    for prefix in ENV_TRIAD_ENUM_PREFIXES.values():
+        for name, enum_def in all_enums.items():
+            if name.startswith(prefix) and name.endswith("Enum"):
+                suffix = name[len(prefix):-len("Enum")]
+                pvs = set(enum_def.permissible_values.keys())
+                enum_lookup[(prefix, suffix)] = pvs
+    return enum_lookup
+
+
+def check_value_set_compliance(mongo_url):
+    """
+    For each document in flattened_submission_biosamples, check whether the
+    env_broad_scale, env_local_scale, and env_medium values are in the
+    approved value sets from the submission schema.
+
+    Adds fields:
+        env_broad_scale_in_value_set: True/False/None
+        env_local_scale_in_value_set: True/False/None
+        env_medium_in_value_set: True/False/None
+        value_set_enum_suffix: the CamelCase suffix used for lookup (e.g. "Soil")
+
+    None means no enum exists for that extension+slot combination.
+    """
+    click.echo("Loading submission schema enums...")
+    enum_lookup = load_submission_schema_enums()
+    discovered = sorted(set(s for _, s in enum_lookup.keys()))
+    click.echo(f"Found enums for extensions: {', '.join(discovered)}")
+
+    client = MongoClient(mongo_url)
+    db_name = client.get_database().name or 'misc_metadata'
+    db = client[db_name]
+    collection = db['flattened_submission_biosamples']
+
+    total = collection.count_documents({})
+    updated = 0
+    for doc in tqdm(collection.find(), total=total, desc="Checking value set compliance"):
+        sample_data_key = doc.get('sampleData')
+        suffix = SAMPLE_DATA_KEY_TO_ENUM_SUFFIX.get(sample_data_key)
+
+        updates = {"value_set_enum_suffix": suffix}
+        for slot in ENV_TRIAD_SLOTS:
+            prefix = ENV_TRIAD_ENUM_PREFIXES[slot]
+            field_name = f"{slot}_in_value_set"
+            value = doc.get(slot)
+
+            if not suffix or (prefix, suffix) not in enum_lookup:
+                updates[field_name] = None
+                continue
+
+            if not value:
+                updates[field_name] = None
+                continue
+
+            permitted = enum_lookup[(prefix, suffix)]
+            # Strip leading underscores to match enum format
+            cleaned = value.lstrip('_').strip()
+            updates[field_name] = cleaned in permitted
+
+        collection.update_one({"_id": doc["_id"]}, {"$set": updates})
+        updated += 1
+
+    click.echo(f"Updated {updated} documents with value set compliance fields.")
+    return True
+
+
+# =============================================================================
 # CLI COMMANDS
 # =============================================================================
 @click.group()
@@ -466,6 +570,18 @@ def aggregate_cmd(mongo_url):
         click.echo("Failed to execute aggregation pipeline.")
 
 
+@cli.command('check-compliance')
+@click.option('--mongo-url', required=True, help='MongoDB connection URL')
+def check_compliance_cmd(mongo_url):
+    """Check env triad values against submission schema value sets."""
+    click.echo("Checking value set compliance...")
+    success = check_value_set_compliance(mongo_url)
+    if success:
+        click.echo("Value set compliance check completed successfully.")
+    else:
+        click.echo("Failed to check value set compliance.")
+
+
 @cli.command('run-all')
 @click.option('--mongo-url', required=True, help='MongoDB connection URL')
 @click.option('--env-path', default="../../local/.env", help='Path to .env file containing auth tokens')
@@ -492,6 +608,11 @@ def run_all_cmd(mongo_url, env_path, output_file):
     click.echo("\n4. Running aggregation pipeline...")
     if not run_aggregation_pipeline(mongo_url):
         click.echo("Failed to run aggregation pipeline. Aborting pipeline.")
+        return
+
+    click.echo("\n5. Checking value set compliance...")
+    if not check_value_set_compliance(mongo_url):
+        click.echo("Failed to check value set compliance. Aborting pipeline.")
         return
 
     click.echo("\nComplete pipeline executed successfully!")
