@@ -160,23 +160,54 @@ MONGO_AUTH_SOURCE=admin
 
 Either command creates the following collections in the NMDC database:
 
-- `flattened_biosample`: Flattened view of biosamples with all fields normalized and environmental fields decorated with ontology information
-- `flattened_biosample_chem_administration`: Extracted chemical administration details from biosamples
-- `flattened_biosample_field_counts`: Statistics on field usage across all biosamples 
-- `flattened_study`: Flattened view of studies with all fields normalized
-- `flattened_study_associated_dois`: Extracted DOIs associated with studies
-- `flattened_study_has_credit_associations`: Extracted credit associations from studies
+| Output Collection | Source | Description |
+|-------------------|--------|-------------|
+| `flattened_biosample` | `biosample_set` (14,857 docs) | Flattened biosamples with environmental fields decorated with ontology info |
+| `flattened_biosample_chem_administration` | `biosample_set` | Extracted `chem_administration` sub-objects |
+| `flattened_biosample_field_counts` | `biosample_set` | Non-null field frequency across all biosamples |
+| `flattened_study` | `study_set` (48 docs) | Flattened studies with environmental fields decorated |
+| `flattened_study_associated_dois` | `study_set` | Extracted `associated_dois` sub-objects |
+| `flattened_study_has_credit_associations` | `study_set` | Extracted `has_credit_associations` sub-objects |
 
 The flattening process:
 1. Reads data directly from your local MongoDB (using the already restored NMDC collections)
    - Automatically detects alternative collection names (`study_set`, `studies`, or `study` and `biosample_set`, `biosamples`, or `biosample`)
-2. Processes complex nested structures into simple dot-notation fields
-3. Converts arrays to pipe-separated strings for easier querying
-4. Decorates environmental context fields with detailed ontology information:
-   - Adds `*_normalized_curie`: The properly formatted CURIE with colon separator (e.g., ENVO:01000253)
-   - Adds `*_canonical_label`: The authoritative label from the ontology
-   - Adds `*_obsolete`: Boolean indicating if the term is obsolete
-   - Adds `*_label_match`: Boolean indicating if the asserted label matches the canonical label
-5. Extracts sub-objects into specialized collections
+2. Uses the NMDC schema (`SchemaView`) to identify `ControlledTermValue` slots for special handling
+3. Flattens nested structures into underscore-separated field names
+4. Converts arrays of scalars to pipe-separated strings
+5. Handles typed value objects:
+   - **ControlledTermValue** (env_broad_scale, env_local_scale, env_medium) → extracts `has_raw_value`, `term.id`, `term.name`
+   - **QuantityValue** (depth, temp, ammonium, etc.) → extracts `has_numeric_value`, `has_unit`, `has_raw_value`
+   - **TextValue** (geo_loc_name, collection_date) → extracts `has_raw_value`
+   - **GeolocationValue** (lat_lon) → extracts `has_raw_value`, `latitude`, `longitude`
+6. Decorates environmental context fields with ontology information (ENVO, PATO, UBERON):
+   - `*_normalized_curie`: Properly formatted CURIE with colon separator (e.g., ENVO:01000253)
+   - `*_canonical_label`: Authoritative label from the ontology
+   - `*_is_obsolete`: Boolean indicating if the term is obsolete
+   - `*_label_match`: Boolean indicating if the asserted label matches the canonical label
+7. Extracts sub-objects into specialized collections
+
+### Collections not currently flattened
+
+The script only processes `biosample_set` and `study_set`. These NMDC collections are **not flattened**:
+
+| Collection | Rows | Notes |
+|------------|------|-------|
+| `data_object_set` | 233,420 | Already mostly flat (8 fields) |
+| `workflow_execution_set` | 25,107 | 13 fields, has arrays (`has_input`, `has_output`) |
+| `processed_sample_set` | 18,360 | 3 fields, trivially flat |
+| `material_processing_set` | 17,156 | 6 fields, mostly flat |
+| `data_generation_set` | 10,424 | 14 fields, has arrays + GOLD identifiers |
+| `field_research_site_set` | 110 | 3 fields, trivially flat |
+| `manifest_set` | 34 | Tiny |
+| `calibration_set` | 20 | Mass spec calibration config |
+| `configuration_set` | 20 | Mass spec acquisition config |
+| `instrument_set` | 16 | Tiny |
+
+### Known limitations within flattened biosamples
+
+- **`misc_param`** (array of `PropertyAssertion` with attribute labels, CURIEs, numeric values, and units) — gets JSON-stringified, losing structured measurement data
+- **Lists of `TextValue` dicts** (`agrochem_addition`, `air_temp_regm`, `fertilizer_regm`, `gaseous_environment`, `perturbation`, `watering_regm`) — raw values extracted only when each dict has a single non-`type` key; multi-key entries get JSON-dumped
+- **`protocol_link`** in studies (array of `{url, type}`) — stringified
 
 The implementation is in `external_metadata_awareness/flatten_nmdc_collections.py`.
