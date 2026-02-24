@@ -120,6 +120,7 @@ export-duckdb-to-parquet = 'external_metadata_awareness.export_duckdb_to_parquet
 
 # NMDC analysis tools
 analyze-nmdc-biosample-coverage = 'external_metadata_awareness.analyze_nmdc_biosample_coverage:main'
+extract-nmdc-doi-inventory = 'external_metadata_awareness.extract_nmdc_doi_inventory:extract_nmdc_doi_inventory'
 
 [tool.deptry.per_rule_ignores]
 DEP001 = ["common", "core"] # locally defined
