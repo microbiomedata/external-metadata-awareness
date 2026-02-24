@@ -283,16 +283,31 @@ flatten-and-export-nmdc: flatten-nmdc export-nmdc-parquet analyze-nmdc-biosample
 	@echo "CSV:      $(NMDC_BIOSAMPLE_CSV)"
 	@echo "Coverage: $(OUTPUT_FILE)"
 
+NMDC_SUBMISSIONS_ENV ?= local/.env.nmdc-submissions
+NMDC_SUBMISSIONS_TSV ?= $(NMDC_EXPORT_DIR)/flattened_submission_biosamples.tsv
+
 .PHONY: nmdc-submissions-to-mongo
 nmdc-submissions-to-mongo:
-	( \
-	  set -a && . local/.env.ncbi-loadbalancer.27778.submissions && set +a && \
-		$(RUN) python external_metadata_awareness/nmdc-submissions-to-mongo.py \
-			run-all \
-			--mongo-url "mongodb://$$MONGO_USERNAME:$$MONGO_PASSWORD@$$MONGO_HOST:$$MONGO_PORT/$$DEST_MONGO_DB?authSource=admin&authMechanism=SCRAM-SHA-256&directConnection=true" \
-			--env-path local/.env.ncbi-loadbalancer.27778.submissions \
-			--output-file nmdc-submissions-to-mongo.tsv \
-	)
+	@if [ ! -f "$(NMDC_SUBMISSIONS_ENV)" ]; then \
+		echo "Error: $(NMDC_SUBMISSIONS_ENV) not found."; \
+		echo "Create it with: NMDC_DATA_SUBMISSION_REFRESH_TOKEN=<your-token>"; \
+		exit 1; \
+	fi
+	@mkdir -p $(NMDC_EXPORT_DIR)
+	$(RUN) python external_metadata_awareness/nmdc-submissions-to-mongo.py \
+		run-all \
+		--mongo-url "$(MONGO_URI)" \
+		--env-path "$(NMDC_SUBMISSIONS_ENV)" \
+		--output-file "$(NMDC_SUBMISSIONS_TSV)"
+
+NMDC_SUBMISSION_COLLECTIONS = nmdc_submissions flattened_submission_biosamples submission_biosample_rows submission_biosample_slot_counts
+
+.PHONY: drop-nmdc-submissions
+drop-nmdc-submissions:
+	@echo "Dropping submission collections from $(MONGO_URI)..."
+	@for coll in $(NMDC_SUBMISSION_COLLECTIONS); do \
+		mongosh "$(MONGO_URI)" --quiet --eval "db.getCollection('$$coll').drop(); print('Dropped: $$coll');" ; \
+	done
 
 ####
 
