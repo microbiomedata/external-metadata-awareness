@@ -71,8 +71,7 @@ poetry run mongo-connect --uri mongodb://localhost:27017/ncbi_metadata --connect
 
 ## Current Work
 
-- **#222**: Biosample normalization
-- **#223**: Infrastructure improvements
+See the [issue tracker](https://github.com/microbiomedata/external-metadata-awareness/issues) for current priorities.
 
 ---
 
