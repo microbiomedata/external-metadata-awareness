@@ -26,11 +26,17 @@ log = logging.getLogger(__name__)
 
 
 def _export_flattened_submission_biosamples(db, conn):
-    """Export flattened_submission_biosamples (already flat, cast to string for mixed types)."""
+    """Export flattened_submission_biosamples (cast to string for mixed-type columns)."""
     log.info("Exporting flattened_submission_biosamples...")
     docs = list(db.flattened_submission_biosamples.find({}, {"_id": 0}))
-    df = pd.DataFrame(docs).astype(str).replace("None", None).replace("nan", None)
-    conn.execute("CREATE OR REPLACE TABLE flattened_submission_biosamples AS SELECT * FROM df")
+    df = pd.DataFrame(docs)
+    # Cast object columns to string — MongoDB docs have mixed types (e.g. int and str
+    # in the same column like '281 degrees') that DuckDB cannot auto-infer.
+    for col in df.select_dtypes(include=["object"]).columns:
+        df[col] = df[col].astype(str).replace({"None": None, "nan": None})
+    conn.register("_tmp_df", df)
+    conn.execute("CREATE OR REPLACE TABLE flattened_submission_biosamples AS SELECT * FROM _tmp_df")
+    conn.unregister("_tmp_df")
     log.info(f"  {len(df)} rows, {len(df.columns)} columns")
 
 
@@ -39,7 +45,9 @@ def _export_submission_biosample_slot_counts(db, conn):
     log.info("Exporting submission_biosample_slot_counts...")
     docs = list(db.submission_biosample_slot_counts.find({}, {"_id": 0}))
     df = pd.DataFrame(docs)
-    conn.execute("CREATE OR REPLACE TABLE submission_biosample_slot_counts AS SELECT * FROM df")
+    conn.register("_tmp_df", df)
+    conn.execute("CREATE OR REPLACE TABLE submission_biosample_slot_counts AS SELECT * FROM _tmp_df")
+    conn.unregister("_tmp_df")
     log.info(f"  {len(df)} rows")
 
 
@@ -56,7 +64,9 @@ def _export_submission_biosample_rows(db, conn):
                 value = json.dumps(value)
             rows.append({**base, "field": field, "value": str(value) if value is not None else None})
     df = pd.DataFrame(rows)
-    conn.execute("CREATE OR REPLACE TABLE submission_biosample_rows AS SELECT * FROM df")
+    conn.register("_tmp_df", df)
+    conn.execute("CREATE OR REPLACE TABLE submission_biosample_rows AS SELECT * FROM _tmp_df")
+    conn.unregister("_tmp_df")
     log.info(f"  {len(df)} rows (field-value pairs)")
 
 
@@ -97,7 +107,9 @@ def _export_nmdc_submissions(db, conn):
         flat_rows.append(row)
 
     df = pd.DataFrame(flat_rows)
-    conn.execute("CREATE OR REPLACE TABLE nmdc_submissions AS SELECT * FROM df")
+    conn.register("_tmp_df", df)
+    conn.execute("CREATE OR REPLACE TABLE nmdc_submissions AS SELECT * FROM _tmp_df")
+    conn.unregister("_tmp_df")
     log.info(f"  {len(df)} rows")
 
 
@@ -117,20 +129,17 @@ def _export_nmdc_submissions(db, conn):
 )
 def main(mongo_uri: str, output: str) -> None:
     """Export NMDC submission collections from MongoDB to a DuckDB file."""
-    client = MongoClient(mongo_uri)
-    db_name = mongo_uri.rsplit("/", 1)[-1]
-    db = client[db_name]
+    db_name = mongo_uri.rsplit("/", 1)[-1].split("?")[0]
 
-    conn = duckdb.connect(output)
+    with MongoClient(mongo_uri) as client:
+        db = client[db_name]
 
-    _export_flattened_submission_biosamples(db, conn)
-    _export_submission_biosample_slot_counts(db, conn)
-    _export_submission_biosample_rows(db, conn)
-    _export_nmdc_submissions(db, conn)
+        with duckdb.connect(output) as conn:
+            _export_flattened_submission_biosamples(db, conn)
+            _export_submission_biosample_slot_counts(db, conn)
+            _export_submission_biosample_rows(db, conn)
+            _export_nmdc_submissions(db, conn)
 
-    log.info(f"\nDone. Written to {output}")
-    for tbl in conn.execute("SELECT table_name, estimated_size FROM duckdb_tables()").fetchall():
-        log.info(f"  {tbl[0]:45s} ~{tbl[1]} rows")
-
-    conn.close()
-    client.close()
+            log.info(f"\nDone. Written to {output}")
+            for tbl in conn.execute("SELECT table_name, estimated_size FROM duckdb_tables()").fetchall():
+                log.info(f"  {tbl[0]:45s} ~{tbl[1]} rows")
