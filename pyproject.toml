@@ -117,6 +117,7 @@ normalize-satisfying-biosamples = 'external_metadata_awareness.normalize_satisfy
 
 # DuckDB export tools
 export-duckdb-to-parquet = 'external_metadata_awareness.export_duckdb_to_parquet:export_duckdb_to_parquet'
+export-submissions-to-duckdb = 'external_metadata_awareness.export_submissions_to_duckdb:main'
 
 # NMDC analysis tools
 analyze-nmdc-biosample-coverage = 'external_metadata_awareness.analyze_nmdc_biosample_coverage:main'
