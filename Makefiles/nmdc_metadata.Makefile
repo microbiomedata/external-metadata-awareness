@@ -300,6 +300,21 @@ nmdc-submissions-to-mongo:
 		--env-path "$(NMDC_SUBMISSIONS_ENV)" \
 		--output-file "$(NMDC_SUBMISSIONS_TSV)"
 
+NMDC_SUBMISSIONS_DUCKDB ?= local/nmdc_submissions.duckdb
+NMDC_EVAL_INPUT_TARGET_TSV ?= $(NMDC_EXPORT_DIR)/eval_input_target_pairs.tsv
+
+.PHONY: export-submissions-to-duckdb
+export-submissions-to-duckdb:
+	@mkdir -p $(dir $(NMDC_SUBMISSIONS_DUCKDB))
+	$(RUN) export-submissions-to-duckdb --output "$(NMDC_SUBMISSIONS_DUCKDB)"
+	@echo "Written: $(NMDC_SUBMISSIONS_DUCKDB)"
+
+.PHONY: eval-input-target-tsv
+eval-input-target-tsv: export-submissions-to-duckdb
+	@mkdir -p $(NMDC_EXPORT_DIR)
+	duckdb "$(NMDC_SUBMISSIONS_DUCKDB)" -csv -separator '	' < sql/eval_input_target_pairs.sql > "$(NMDC_EVAL_INPUT_TARGET_TSV)"
+	@echo "Written: $(NMDC_EVAL_INPUT_TARGET_TSV) ($$(wc -l < "$(NMDC_EVAL_INPUT_TARGET_TSV)") lines)"
+
 NMDC_SUBMISSION_COLLECTIONS = nmdc_submissions flattened_submission_biosamples submission_biosample_rows submission_biosample_slot_counts
 
 .PHONY: drop-nmdc-submissions
