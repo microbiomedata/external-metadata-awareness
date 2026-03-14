@@ -1,1 +1,0 @@
-# obo-relations-test

@@ -1,2 +1,0 @@
-# bbops
-Berkeley BOP devops
