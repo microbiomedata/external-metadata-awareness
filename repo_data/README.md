@@ -29,41 +29,25 @@ This directory should support that document, not compete with it.
 
 ## How To Use This Directory
 
-### Active monitoring folders
+The machine-readable owner catalog lives in:
 
-These align directly with the current default monitoring set and are the first folders to consult when deeper repo-level detail is needed:
+- `repo_data/catalog.yaml`
 
-- `berkeleybop`
-- `linkml`
-- `monarch-initiative`
-- `microbiomedata`
-- `Knowledge-Graph-Hub`
-- `CultureBotAI`
-- `ai4curation`
-- `biolink`
-- `INCATools`
-- `GenomicsStandardsConsortium`
-- `EnvironmentOntology`
-- `contextualizer-ai`
+That file categorizes every current top-level owner directory so future cleanup and re-fetch work can be done intentionally.
 
-### Secondary spillover folders
+### Category meanings
 
-These are useful when the authoritative doc indicates colleague activity outside the default monitoring set:
+`default_monitoring`
+- first-class monitoring owners that align to the authoritative doc
 
-- `OBOAcademy`
-- `OBOFoundry`
-- `oborel`
-- `perma-id`
-- `ber-data`
-- `EBISPOT`
+`spillover_org`
+- org-level caches outside the default set that still matter because colleagues work there
 
-### Broad historical crawls
+`person_or_small_scope_cache`
+- narrow caches that are useful as support, but should not drive monitoring priority
 
-These folders contain useful historical breadth, but should not be used to decide monitoring priority:
-
-- `cmungall`
-- `turbomam`
-- `mcwdsi`
+`broad_historical_crawl`
+- high-breadth historical caches that are valuable for exploration but not priority-setting
 
 ## Non-Goals
 
