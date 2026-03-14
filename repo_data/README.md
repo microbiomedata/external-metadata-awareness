@@ -15,9 +15,7 @@ It is **not** the authority on which GitHub orgs Mark should monitor.
 
 ## Monitoring Authority
 
-Monitoring priority is defined outside this repo in:
-
-- `/home/mark/bookmark-consolidation/bbop_orgs_to_monitor_authoritative.md`
+Monitoring priority is defined by an external operator-maintained monitoring document outside this repo.
 
 That document answers:
 

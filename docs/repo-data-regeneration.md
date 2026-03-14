@@ -5,9 +5,7 @@
 `repo_data/` is a local cache of GitHub repository metadata and README content for selected GitHub owners.
 
 It is not the authority for "which orgs should I monitor?".
-That authority lives in:
-
-- `/home/mark/bookmark-consolidation/bbop_orgs_to_monitor_authoritative.md`
+That authority should live in an external operator-maintained monitoring document, not in `repo_data/`.
 
 This document explains the current reproducible path for rebuilding the existing `repo_data/` structure.
 

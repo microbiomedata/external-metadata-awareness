@@ -1,6 +1,6 @@
 version: 1
 authority:
-  monitoring_doc: /home/mark/bookmark-consolidation/bbop_orgs_to_monitor_authoritative.md
+  monitoring_doc: external operator-maintained monitoring document
   notes:
     - repo_data is a cache/evidence store, not the authority for monitoring priorities
     - folder category should drive attention level before any future cleanup or re-fetch work
