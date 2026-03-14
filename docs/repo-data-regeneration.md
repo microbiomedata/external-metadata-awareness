@@ -2,7 +2,9 @@
 
 ## Purpose
 
-`repo_data/` is a local cache of GitHub repository metadata and README content for selected GitHub owners.
+`repo_data/` used to hold checked-in GitHub repository metadata and README content for selected GitHub owners.
+
+The generated owner caches have now been removed from git and should be treated as disposable local artifacts that can be rebuilt when needed.
 
 It is not the authority for "which orgs should I monitor?".
 That authority should live in an external operator-maintained monitoring document, not in `repo_data/`.
@@ -11,7 +13,7 @@ This document explains the current reproducible path for rebuilding the existing
 
 ## Current Generator
 
-The current on-disk `repo_data/` layout matches:
+The previous checked-in `repo_data/` layout matched:
 
 - [`unorganized/fetch_repos.sh`](/home/mark/gitrepos/external-metadata-awareness/unorganized/fetch_repos.sh)
 
@@ -23,7 +25,7 @@ This script generates, for each owner:
 
 ## Evidence This Is the Active Match
 
-The script fetches and writes the same fields seen in current cache files:
+The script fetches and writes the same fields that were present in the former checked-in cache files:
 
 - `name`
 - `description`
@@ -36,11 +38,6 @@ The script fetches and writes the same fields seen in current cache files:
 - `topContributors` when `-c` is used
 
 It also writes owner-level `_SUMMARY.json` files by aggregating `*.json` files in each owner directory.
-
-That matches the current shape of files such as:
-
-- [`repo_data/berkeleybop/berkeleybop.json`](/home/mark/gitrepos/external-metadata-awareness/repo_data/berkeleybop/berkeleybop.json)
-- [`repo_data/berkeleybop/_SUMMARY.json`](/home/mark/gitrepos/external-metadata-awareness/repo_data/berkeleybop/_SUMMARY.json)
 
 ## Prerequisites
 
@@ -72,7 +69,7 @@ bash unorganized/fetch_repos.sh \
   -o contextualizer-ai
 ```
 
-That command aligns with the current default monitoring set.
+That command aligns with the current default monitoring set and would recreate a local working cache under `repo_data/`.
 
 To include spillover or person-centric caches, add more `-o` flags for owners such as:
 
@@ -102,7 +99,7 @@ For each owner, the script:
 - It depends on live GitHub API access and current `gh` auth state.
 - `firstCommitDate` is inferred from a lightweight commits query and should be treated as a practical cache value, not audited provenance.
 - `_SUMMARY.json` is derived from the local files present in an owner directory.
-- There is no single manifest in the repo that declares which owners must be present in `repo_data/`.
+- The intended owner set now lives in `repo_data/catalog.yaml`, but regeneration is still script-driven rather than fully packaged.
 
 ## Related But Different GitHub Tooling
 

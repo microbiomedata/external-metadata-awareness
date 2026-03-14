@@ -3,7 +3,8 @@ authority:
   monitoring_doc: external operator-maintained monitoring document
   notes:
     - repo_data is a cache/evidence store, not the authority for monitoring priorities
-    - folder category should drive attention level before any future cleanup or re-fetch work
+    - owner category should drive attention level before any future re-fetch work
+    - generated owner snapshot trees are intentionally not kept in git
 
 categories:
   default_monitoring:

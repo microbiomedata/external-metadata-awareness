@@ -1,1 +1,0 @@
-# OMOP-Cohort-Exporter

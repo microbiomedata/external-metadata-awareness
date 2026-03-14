@@ -2,14 +2,13 @@
 
 ## Purpose
 
-`repo_data/` is a local cache and evidence store for GitHub organization and repository snapshots.
+`repo_data/` is now a structural directory for repo-cataloging metadata, not a checked-in cache of GitHub snapshots.
 
 It is useful for:
 
-- repo-level lookup
-- cached contributor summaries
-- broad historical context
-- supporting research on adjacent org ecosystems
+- documenting intended monitoring tiers for future regeneration
+- keeping repo-cataloging guidance close to the regeneration notes
+- making future cleanup and rebuild work explicit
 
 It is **not** the authority on which GitHub orgs Mark should monitor.
 
@@ -31,7 +30,7 @@ The machine-readable owner catalog lives in:
 
 - `repo_data/catalog.yaml`
 
-That file categorizes every current top-level owner directory so future cleanup and re-fetch work can be done intentionally.
+That file describes intended owner tiers for future re-fetch work. The repo no longer keeps the generated owner snapshot trees under version control.
 
 ### Category meanings
 
@@ -51,16 +50,15 @@ That file categorizes every current top-level owner directory so future cleanup 
 
 This README does **not** imply:
 
-- deletion of cached org folders
 - deletion of local clones
 - removal of notes about these orgs
-- a guarantee that every folder is current
+- that generated repo snapshots belong in git
 
 ## Practical Rule
 
 When deciding whether an org deserves active attention:
 
 1. Start with the authoritative monitoring doc.
-2. If the org is in the default monitoring set, use `repo_data/<org>/` as supporting detail.
-3. If the org is not in the default set but appears in the colleague spillover section, use `repo_data/` as secondary context.
+2. Use `repo_data/catalog.yaml` to decide which owners belong in a regenerated local cache.
+3. Regenerate snapshots locally when repo-level detail is actually needed.
 4. If an org appears only here and not in the authoritative doc, do not treat it as a monitoring priority without new evidence.

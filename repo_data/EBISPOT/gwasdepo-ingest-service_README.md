@@ -1,1 +1,0 @@
-# gwasdepo-ingest-service
