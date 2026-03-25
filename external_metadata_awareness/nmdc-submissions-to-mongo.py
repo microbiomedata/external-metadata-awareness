@@ -33,6 +33,9 @@ def fetch_nmdc_submissions(mongo_url, env_path, base_url="https://data.microbiom
         click.echo("NMDC_DATA_SUBMISSION_REFRESH_TOKEN not found in env.")
         return False
 
+    # Normalize base URL to avoid double-slash in endpoint paths
+    base_url = base_url.rstrip('/')
+
     # Refresh token to get an access token
     url_auth = f'{base_url}/auth/refresh'
     payload = {"refresh_token": refresh_token}
@@ -41,6 +44,9 @@ def fetch_nmdc_submissions(mongo_url, env_path, base_url="https://data.microbiom
     response = requests.post(url_auth, data=json.dumps(payload), headers=auth_headers)
     if response.status_code == 200:
         access_token = response.json().get('access_token')
+        if not access_token:
+            click.echo("Auth response did not contain an access token.")
+            return False
         click.echo("Access token obtained successfully.")
     else:
         click.echo(f"Failed to get access token: {response.status_code}")
