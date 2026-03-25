@@ -15,10 +15,16 @@ from oaklib import get_adapter
 # =============================================================================
 # FETCH NMDC SUBMISSIONS FROM THE API
 # =============================================================================
-def fetch_nmdc_submissions(mongo_url, env_path):
+def fetch_nmdc_submissions(mongo_url, env_path, base_url="https://data.microbiomedata.org"):
     """
     Fetch NMDC submissions from the API and insert them into the MongoDB
-    collection 'nmdc_submissions' in the 'misc_metadata' database.
+    collection 'nmdc_submissions'.
+
+    Args:
+        mongo_url: MongoDB connection URL (database name determines target).
+        env_path: Path to .env file containing NMDC_DATA_SUBMISSION_REFRESH_TOKEN.
+        base_url: Portal base URL. Use "https://data-dev.microbiomedata.org"
+                  for the dev environment.
     """
     # Load environment variables from .env file
     env_vars = dotenv_values(env_path)
@@ -28,20 +34,21 @@ def fetch_nmdc_submissions(mongo_url, env_path):
         return False
 
     # Refresh token to get an access token
-    url_auth = 'https://data.microbiomedata.org/auth/refresh'
+    url_auth = f'{base_url}/auth/refresh'
     payload = {"refresh_token": refresh_token}
     auth_headers = {'Content-Type': 'application/json'}
+    click.echo(f"Authenticating against {base_url} ...")
     response = requests.post(url_auth, data=json.dumps(payload), headers=auth_headers)
     if response.status_code == 200:
         access_token = response.json().get('access_token')
-        click.echo(f"Access Token: {access_token}")
+        click.echo("Access token obtained successfully.")
     else:
         click.echo(f"Failed to get access token: {response.status_code}")
         click.echo(response.text)
         return False
 
     # Set up API call for metadata submissions
-    url_submissions = 'https://data.microbiomedata.org/api/metadata_submission'
+    url_submissions = f'{base_url}/api/metadata_submission'
     headers = {
         'Content-Type': 'application/json',
         'Authorization': f'Bearer {access_token}'
@@ -523,10 +530,12 @@ def cli():
 @cli.command('fetch')
 @click.option('--mongo-url', required=True, help='MongoDB connection URL')
 @click.option('--env-path', default="../../local/.env", help='Path to .env file containing auth tokens')
-def fetch_cmd(mongo_url, env_path):
+@click.option('--base-url', default="https://data.microbiomedata.org",
+              help='Portal base URL (use https://data-dev.microbiomedata.org for dev)')
+def fetch_cmd(mongo_url, env_path, base_url):
     """Fetch NMDC submissions from the API and store in MongoDB."""
-    click.echo(f"Fetching NMDC submissions using {env_path} for auth tokens...")
-    success = fetch_nmdc_submissions(mongo_url, env_path)
+    click.echo(f"Fetching NMDC submissions from {base_url} ...")
+    success = fetch_nmdc_submissions(mongo_url, env_path, base_url)
     if success:
         click.echo("Submissions fetched successfully.")
     else:
@@ -586,12 +595,14 @@ def check_compliance_cmd(mongo_url):
 @click.option('--mongo-url', required=True, help='MongoDB connection URL')
 @click.option('--env-path', default="../../local/.env", help='Path to .env file containing auth tokens')
 @click.option('--output-file', default='flattened_submission_biosamples.tsv', help='Output TSV file path')
-def run_all_cmd(mongo_url, env_path, output_file):
+@click.option('--base-url', default="https://data.microbiomedata.org",
+              help='Portal base URL (use https://data-dev.microbiomedata.org for dev)')
+def run_all_cmd(mongo_url, env_path, output_file, base_url):
     """Run the complete extraction and processing pipeline."""
-    click.echo("Running the complete pipeline...")
+    click.echo(f"Running the complete pipeline against {base_url} ...")
 
     click.echo("\n1. Fetching submissions...")
-    if not fetch_nmdc_submissions(mongo_url, env_path):
+    if not fetch_nmdc_submissions(mongo_url, env_path, base_url):
         click.echo("Failed to fetch submissions. Aborting pipeline.")
         return
 
