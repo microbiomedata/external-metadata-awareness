@@ -285,6 +285,13 @@ flatten-and-export-nmdc: flatten-nmdc export-nmdc-parquet analyze-nmdc-biosample
 
 NMDC_SUBMISSIONS_ENV ?= local/.env.nmdc-submissions
 NMDC_SUBMISSIONS_TSV ?= $(NMDC_EXPORT_DIR)/flattened_submission_biosamples.tsv
+NMDC_SUBMISSIONS_BASE_URL ?= https://data.microbiomedata.org
+
+# Data-dev environment config
+NMDC_SUBMISSIONS_DEV_ENV ?= local/.env.nmdc-submissions-data-dev
+NMDC_SUBMISSIONS_DEV_TSV ?= $(NMDC_EXPORT_DIR)/flattened_submission_biosamples_data_dev.tsv
+NMDC_DATA_DEV_MONGO_URI ?= mongodb://localhost:27017/nmdc_data_dev
+NMDC_SUBMISSIONS_DEV_BASE_URL ?= https://data-dev.microbiomedata.org
 
 .PHONY: nmdc-submissions-to-mongo
 nmdc-submissions-to-mongo:
@@ -298,7 +305,24 @@ nmdc-submissions-to-mongo:
 		run-all \
 		--mongo-url "$(MONGO_URI)" \
 		--env-path "$(NMDC_SUBMISSIONS_ENV)" \
-		--output-file "$(NMDC_SUBMISSIONS_TSV)"
+		--output-file "$(NMDC_SUBMISSIONS_TSV)" \
+		--base-url "$(NMDC_SUBMISSIONS_BASE_URL)"
+
+.PHONY: nmdc-submissions-to-mongo-dev
+nmdc-submissions-to-mongo-dev:
+	@if [ ! -f "$(NMDC_SUBMISSIONS_DEV_ENV)" ]; then \
+		echo "Error: $(NMDC_SUBMISSIONS_DEV_ENV) not found."; \
+		echo "Create it with: NMDC_DATA_SUBMISSION_REFRESH_TOKEN=<your-token>"; \
+		echo "Token source: https://data-dev.microbiomedata.org (Local Storage after ORCID login)"; \
+		exit 1; \
+	fi
+	@mkdir -p $(NMDC_EXPORT_DIR)
+	$(RUN) python external_metadata_awareness/nmdc-submissions-to-mongo.py \
+		run-all \
+		--mongo-url "$(NMDC_DATA_DEV_MONGO_URI)" \
+		--env-path "$(NMDC_SUBMISSIONS_DEV_ENV)" \
+		--output-file "$(NMDC_SUBMISSIONS_DEV_TSV)" \
+		--base-url "$(NMDC_SUBMISSIONS_DEV_BASE_URL)"
 
 NMDC_SUBMISSIONS_DUCKDB ?= local/nmdc_submissions.duckdb
 NMDC_EVAL_INPUT_TARGET_TSV ?= $(NMDC_EXPORT_DIR)/eval_input_target_pairs.tsv
