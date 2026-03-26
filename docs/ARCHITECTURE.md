@@ -354,23 +354,62 @@ poetry run script-name --mongo-uri $(MONGO_URI)
 
 ## Performance Considerations
 
-### MongoDB
-- **Indexes**: Critical for large collections (44M biosamples)
-- **Batch Size**: Most scripts use 1k-10k record batches
-- **Aggregation Pipelines**: Used for complex transformations
-- **Memory**: Large aggregations may require `allowDiskUse: true`
+### Data Volume Scale (as of 2026-02-08)
+
+| Dataset | Documents | Data Size | Storage (with indexes) |
+|---------|-----------|-----------|----------------------|
+| `biosamples` | 51.7M | 134 GB | ~175 GB |
+| `biosamples_attributes` | 756M | 137 GB | ~175 GB |
+| `sra_biosamples_bioprojects` | 33.7M | 3.2 GB | ~5 GB |
+| `bioprojects` | 1M | 2.4 GB | ~3 GB |
+| `content_pairs_aggregated` | 66.4M | — | — |
+| **Total ncbi_metadata** | — | ~52 GB | ~93 GB (52 GB data + 41 GB indexes) |
+| **DuckDB export (17 flat collections)** | — | 14 GB | single file |
+
+### MongoDB Operation Benchmarks
+
+These timings are from the 2026-02-05 to 2026-02-08 full clean-slate rebuild (51.7M biosamples).
+
+**XML Loading:**
+- `biosamples` XML load: ~10.5 hours (51.7M documents, ~1,370 docs/sec)
+- `bioprojects` XML load: ~15 minutes (1M documents)
+- 3 oversized documents (>16MB) saved as files in `local/oversize/`
+
+**Flattening Operations:**
+- `flatten_biosamples.js`: ~3 hours (51.7M → 51.7M flat documents)
+- `flatten_biosamples_attributes.js`: ~8 hours (51.7M → 756M attribute rows)
+- `flatten_env_triads_multi_component.js`: ~45 minutes (7.7M env triad documents → 20.7M flattened rows)
+- `flatten_bioprojects_minimal.js`: ~2 minutes (1M documents)
+
+**Aggregation Operations:**
+- `count_biosamples_per_hn` (3-step): ~2 hours total (756M attributes → 810 usage stats)
+- `count_bioprojects_usage_stats` (4-step): ~3 hours total (requires SRA join)
+- `create_harmonized_name_dimensional_stats`: ~10 minutes (1.34M → 354 documents)
+- `enriched_biosamples_env_triad_value_counts_gt_1.js`: <4 minutes
+
+**Measurement Discovery:**
+- quantulum3 parsing (465K documents): ~2.5 hours, ~85% parse success rate
+
+**DuckDB Export:**
+- Full `export-all` (17 collections → DuckDB + Parquet): ~45 minutes
+- `biosamples_flattened` alone: ~20 minutes (51.7M rows)
+
+**Full Pipeline (end-to-end):** 3-4 days for a complete clean-slate rebuild.
+
+### MongoDB Performance Patterns
+
+- **Indexes are critical**: `biosamples_attributes` has compound indexes on `harmonized_name + accession`, `attribute_name + harmonized_name`, and `unit + harmonized_name`. Without these, aggregation operations that scan 756M documents time out.
+- **`allowDiskUse: true`**: Required for any aggregation over collections >1M documents. All `mongo-js/` scripts use this.
+- **Batch sizes**: Python scripts use 1K-10K record batches for insert operations. Larger batches risk memory pressure.
+- **Multi-step workflows**: Operations that would exceed the 100MB aggregation memory limit are broken into multiple steps with intermediate temp collections (e.g., `count_bioprojects_step2a` through `step2d`).
+- **`$out` replaces entire collections**: Every `$out` stage drops and recreates the target. This is atomic but means partial failures require full re-runs.
 
 ### DuckDB
-- **Compression**: .duckdb.gz files are ~50% of raw size
-- **Query Performance**: Much faster than MongoDB for analytical queries
-- **Memory Usage**: Entire database fits in memory on modern machines
-- **Portability**: Single file, easy to share/archive
 
-### Data Volume Scale
-- **NCBI Biosamples**: 44M records, ~117GB raw in MongoDB
-- **SRA Metadata**: 35M records, ~108GB raw
-- **BioProjects**: 893K records, ~2.4GB raw
-- **Total Storage**: ~150-200GB across all databases
+- **Compression**: `.duckdb` files are ~27% of raw MongoDB data size (14 GB from ~52 GB)
+- **Query performance**: Orders of magnitude faster than MongoDB for analytical queries over flat collections
+- **Portability**: Single file, easy to share via NERSC portal
+- **Distribution**: `https://portal.nersc.gov/project/m3408/biosamples_duckdb/`
 
 ---
 
