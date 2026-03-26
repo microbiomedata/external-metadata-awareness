@@ -49,11 +49,12 @@ limitations of the GOLD APIs.
 | Study | `study` | `Gs` | 70,440 |
 | Biosample | `biosample` | `Gb` | 273,139 |
 | Organism | `organism_v2` | `Go` | 598,061 |
-| Sequencing Project | `project` | `Gp` | 705,395 |
+| Sequencing Project | `"img-db-2 postgresql".img_gold.gold_sequencing_project` | `Gp` | 705,395 |
 | Analysis Project | `analysis_project` | `Ga` | 620,264 |
 
 ```sql
--- Check ID prefix distribution in any table
+-- Check ID prefix distribution in a specific GOLD table
+-- Replace organism_v2 with e.g. study, biosample, or analysis_project
 SELECT LEFT(gold_id, 2) AS prefix, COUNT(*) AS cnt
 FROM "gold-db-2 postgresql".gold.organism_v2
 GROUP BY LEFT(gold_id, 2) ORDER BY cnt DESC
@@ -265,7 +266,7 @@ The `gold_tool.py` pipeline populates the `gold_metadata` MongoDB database:
 - Sequencing strategy must be **Metagenome** or **Metatranscriptome**
 - For DOE JGI projects, status must be **"Permanent Draft"** or **"Complete and Published"**
 - Biosample ingested only if linked to ≥1 valid project; Analysis Project only if all associated projects are valid
-- Disableable: `GoldStudyTranslator(enable_biosample_filtering=False)`
+- Can be disabled: `GoldStudyTranslator(enable_biosample_filtering=False)`
 
 ---
 
@@ -285,7 +286,7 @@ After GOLD data is loaded into MongoDB (via `sample-annotator`), the
 ```bash
 make -f Makefiles/gold.Makefile flatten-gold-biosamples    # -> flattened_biosamples + flattened_biosample_contacts
 make -f Makefiles/gold.Makefile flatten-gold-studies        # -> flattened_studies + flattened_studies_contacts
-make -f Makefiles/gold.Makefile flatten-gold-seq-projects   # -> flattened_seq_projects + contacts/publications/experiments/SRA-experiments
+make -f Makefiles/gold.Makefile flatten-gold-seq-projects   # -> flattened_seq_projects + contacts/publications/experiments (SRA)
 make -f Makefiles/gold.Makefile export-gold-flattened-csv   # -> local/csv_exports/
 ```
 
