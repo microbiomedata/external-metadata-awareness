@@ -29,23 +29,35 @@ The function validates the URI (must include a database name), optionally loads 
 
 ### Standard Click options
 
-Python CLI tools use this option set (see `insert_all_flat_gold_biosamples.py` for the full pattern):
+Python CLI tools use two patterns:
 
+**Minimal** (`mongo_js_executor.py` and similar):
 ```python
-@click.option('--mongo-uri', default=None, help='MongoDB URI')
+@click.option('--mongo-uri', required=True, help='MongoDB URI')
+@click.option('--env-file', help='Path to .env file')
+@click.option('--verbose', is_flag=True)
+```
+
+**Full** (`insert_all_flat_gold_biosamples.py` and similar — includes auth and collection params):
+```python
+@click.option('--mongo-uri', default=None, help='MongoDB URI (overrides host/port/db)')
 @click.option('--mongo-host', default=None, help='MongoDB host')
 @click.option('--mongo-port', default=None, type=int, help='MongoDB port')
+@click.option('--mongo-username', default=None, help='MongoDB username')
+@click.option('--mongo-password', default=None, help='MongoDB password')
+@click.option('--mongo-auth-source', default=None, help='MongoDB auth source')
 @click.option('--db-name', default=None, help='MongoDB database name')
 @click.option('--dotenv-path', default='local/.env', help='Path to .env file')
 ```
 
-Simpler scripts (like `mongo_js_executor.py`) use just `--mongo-uri` + `--env-file` + `--verbose`.
+The full pattern also includes collection name options (`--source-collection`, `--target-collection`, etc.) specific to each script.
 
 ### Environment variables
 
-Credentials are loaded from `.env` files (never hardcoded):
-- `MONGO_USER` / `MONGO_PASSWORD` — authentication
-- `MONGO_HOST` / `MONGO_PORT` / `MONGO_DB` — connection details (fallbacks when `--mongo-uri` not provided)
+Credentials are loaded from `.env` files (never hardcoded), but different scripts use different variable names:
+
+- **`get_mongo_client()`-based scripts**: Read `MONGO_USER` / `MONGO_PASSWORD` from `.env` and inject them into the provided `mongo_uri`. Does **not** read `MONGO_HOST` / `MONGO_PORT` / `MONGO_DB` — it requires a full URI with database name.
+- **Full-option CLIs** (e.g., `insert_all_flat_gold_biosamples.py`): Read `MONGO_USERNAME` / `MONGO_PASSWORD` for auth, and `MONGO_HOST` / `MONGO_PORT` / `MONGO_DB` to construct a URI when `--mongo-uri` is not provided.
 
 ---
 
@@ -112,7 +124,7 @@ From [#240](https://github.com/microbiomedata/external-metadata-awareness/issues
 ### Requirements
 
 1. **Single responsibility**: One script creates one output collection from one or two input collections.
-2. **Idempotent**: Running a script twice produces the same result. All scripts use `$out` which replaces atomically.
+2. **Idempotent**: Running a script twice produces the same result. Aggregation pipelines use `$out` to atomically replace their target; loader/report scripts that use `drop()` + `insertMany()` must also be written so a rerun leaves the collection in the same final state.
 3. **Skip if complete**: Scripts should check if the output collection already has the expected document count before running. (Not yet implemented in all scripts — tracked in [#254](https://github.com/microbiomedata/external-metadata-awareness/issues/254).)
 4. **Progress reporting**: Log timestamps at start, finish, and at intermediate milestones for long operations.
 5. **Small file size**: Keep scripts under 5K when possible. If a script exceeds that, document why in a comment.
