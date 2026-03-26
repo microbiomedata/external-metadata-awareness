@@ -271,22 +271,5 @@ env-triads-flattened: env-triads-flatten-index
 	@echo "📋 Structure: accession | attribute | instance | raw_original | raw_component | id | label | prefix | source"
 	@echo "📋 Indexes: accession, attribute+instance, id, prefix, accession+attribute+instance"
 
-####
 
-# duplicative
-split-env-triad-values:
-	@date
-	@echo "Using MONGO_URI=$(MONGO_URI)"
-	$(RUN) env-triad-values-splitter \
-			--mongo-uri "$(MONGO_URI)" \
-			--collection biosamples_env_triad_value_counts_gt_1 \
-			--field env_triad_value \
-			--min-length 3 \
-			--verbose \
-			$(ENV_FILE_OPTION)
-	@date
-
-# Usage examples:
-# make split-env-triad-values
-# make split-env-triad-values MONGO_URI="mongodb://mongo-ncbi-loadbalancer.mam.production.svc.spin.nersc.org:27017/ncbi_metadata?authMechanism=SCRAM-SHA-256&authSource=admin&directConnection=true"
 

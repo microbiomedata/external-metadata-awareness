@@ -204,7 +204,7 @@ flatten-test-biosamples: flatten_biosample_attributes flatten_biosamples_ids fla
 
 # Step 2: Process environmental triads with full annotation pipeline (reuses targets from env_triads.Makefile)
 # This includes OAK, OLS, and BioPortal annotation - requires API key and cache
-process-env-triads: biosamples-flattened env-triad-value-counts split-env-triad-values env-triads-flattened count-harmonizable-attribs
+process-env-triads: biosamples-flattened env-triad-value-counts env-triads-flattened count-harmonizable-attribs
 	@echo "✓ Environmental triads processing complete (with OAK/OLS/BioPortal annotation)"
 
 # Step 3: Run measurement discovery and stats (reuses targets from measurement_discovery.Makefile)
