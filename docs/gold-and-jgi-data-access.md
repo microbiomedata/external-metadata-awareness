@@ -415,9 +415,22 @@ These exist on JGI's side but are **not exposed** through Dremio:
 | [berkeleybop/contextualizer](https://github.com/berkeleybop/contextualizer) | Lat/lon-based metadata inference, conceptual overlap with env triad enrichment |
 | [berkeleybop/metpo](https://github.com/berkeleybop/metpo) | METPO ontology with GOLD field analysis |
 | [contextualizer-ai/to-duckdb](https://github.com/contextualizer-ai/to-duckdb) | MongoDB -> DuckDB framework; EMA has its own equivalent scripts internally |
-| [contextualizer-ai/biosample-enricher](https://github.com/contextualizer-ai/biosample-enricher) | Biosample attribute enrichment via OAK/ontology lookup; predecessor to crawl-first |
+| [contextualizer-ai/biosample-enricher](https://github.com/contextualizer-ai/biosample-enricher) | Geographic/geospatial biosample enrichment (OSM, SoilGrids, MODIS, elevation) → ENVO triad + NMDC slots |
 | [contextualizer-ai/crawl-first](https://github.com/contextualizer-ai/crawl-first) | Deterministic biosample enrichment for LLM-ready data; optional PydanticAI agentic layer (Sep 2025) |
-| [INCATools/biosample-analysis](https://github.com/INCATools/biosample-analysis) | Biosample metadata analysis |
+| [INCATools/biosample-analysis](https://github.com/INCATools/biosample-analysis) | **Predecessor to EMA** (2020–2022): INSDC biosample harmonization, ENVO triad normalization, NER annotation. Contributors: cmungall, turbomam, wdduncan, hrshdhgd, realmarcin. Dormant since Jan 2022; EMA supersedes this work. |
+| [contextualizer-ai/ncbi-tools](https://github.com/contextualizer-ai/ncbi-tools) | NCBI metadata (biosamples/bioprojects/SRA) → MongoDB → DuckDB/Parquet; overlaps with EMA's NCBI pipeline |
+
+### Archival Candidates
+
+Repos that overlap with EMA and may no longer need active maintenance:
+
+| Repo | Reason | Recommended action |
+|------|--------|-------------------|
+| [contextualizer-ai/to-duckdb](https://github.com/contextualizer-ai/to-duckdb) | EMA has equivalent MongoDB→DuckDB scripts internally; no active importers | Archive |
+| [contextualizer-ai/ncbi-tools](https://github.com/contextualizer-ai/ncbi-tools) | Scope fully covered by EMA's NCBI pipeline | Archive or merge into EMA |
+| [contextualizer-ai/gold-tools](https://github.com/contextualizer-ai/gold-tools) | Scope covered by EMA's GOLD pipeline + sample-annotator | Archive |
+| [INCATools/biosample-analysis](https://github.com/INCATools/biosample-analysis) | Dormant since 2022; EMA supersedes it. Multi-contributor repo — notify INCATools before archiving. | Propose archival via INCATools |
+| [microbiomedata/GOLD-ontology-translation](https://github.com/microbiomedata/GOLD-ontology-translation) | Dormant since 2020; not turbomam's repo. Issue filed: microbiomedata/issues#1658 | Pending maintainer response |
 
 ---
 
