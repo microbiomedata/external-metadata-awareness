@@ -1,7 +1,7 @@
 # GOLD and JGI Data Access — Consolidated Reference
 
 > **Canonical location:** This is the single source of truth for how to access GOLD metadata and other JGI data.
-> All other docs should point here rather than duplicating this content.
+> New links should point directly to `docs/gold-and-jgi-data-access.md` in this repo.
 >
 > Previous versions lived in `sample-annotator/gold-knowledge-management.md` and
 > `external-metadata-awareness/docs/gold-knowledge-management.md`. Both now redirect here.
@@ -86,7 +86,7 @@ LIMIT 10
 1. Open `https://lakehouse.jgi.lbl.gov` in a browser
 2. Authenticate through Cloudflare Access (LBL identity)
 3. Browser DevTools > Application > Cookies > `CF_Authorization`
-4. Copy the value into your `.env` file
+4. Copy the value into your **local, git-ignored** `.env` file. **Never commit this value to git.**
 
 **Python auth pattern:**
 ```python
@@ -144,11 +144,11 @@ GET /biosamples?studyGoldId=Gs0000008
 
 | Detail | Value |
 |--------|-------|
-| Base URL | `https://gold.jgi.doe.gov/rest/nmdc` |
+| Base URL | `https://gold.jgi.doe.gov` |
 | Auth | **HTTP Basic Auth** with NMDC-shared credentials |
-| Documentation | [Google Doc](https://docs.google.com/document/d/1PgrFYmc7AU7Kd5Dtg-xbpAyC6ZcLw4ChFwg3bHV1JQg/edit?tab=t.0) (not public) |
+| Documentation | [NMDC GOLD API Google Doc](https://docs.google.com/document/d/1PgrFYmc7AU7Kd5Dtg-xbpAyC6ZcLw4ChFwg3bHV1JQg/edit?tab=t.0) (requires LBL/NMDC access) |
 
-**Endpoints:**
+**Endpoints** (relative to base URL):
 ```
 GET /rest/nmdc/biosamples?studyGoldId=Gs0114675
 GET /rest/nmdc/biosamples?itsProposalId=1777
