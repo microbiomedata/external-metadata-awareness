@@ -11,9 +11,41 @@ This document provides a complete technical overview of how metadata from the **
 
 ---
 
-## Original Interfaces and Their Limitations
+## Recommended Access Method: JGI Dremio Lakehouse
 
-### 🖥️ GOLD Website
+The **JGI Dremio data lakehouse** is now the recommended way to access GOLD metadata at scale. It provides direct SQL access to GOLD's relational tables without the single-ID query limitations of the GOLD API.
+
+**Access details:**
+- URL: `https://lakehouse.jgi.doe.gov`
+- Auth: `DREMIO_USER` / `DREMIO_PASSWORD` + Cloudflare Access cookie (`CF_AUTHORIZATION`)
+- SQL path: `"gold-db-2 postgresql".gold.<table_name>`
+- Tables: `study`, `biosample`, `organism_v2`, `analysis_project`
+- Sequencing projects: `"img-db-2 postgresql".img_gold.gold_sequencing_project`
+
+**Query example:**
+```sql
+SELECT * FROM "gold-db-2 postgresql".gold.biosample LIMIT 10
+```
+
+**Tools:**
+- [turbomam/jgi-dremio-exploration](https://github.com/turbomam/jgi-dremio-exploration) — minimal Python client with two-stage Dremio auth
+- [cmungall/lakehouse-skills](https://github.com/cmungall/lakehouse-skills) — Claude Code skills for lakehouse queries
+- [linkml/linkml-store](https://github.com/linkml/linkml-store) — unified access layer with `linkml-store[dremio]` extra
+
+**Limitations:**
+- Cloudflare Access cookie has limited lifetime (obtain from browser)
+- Flight SQL port 32010 is blocked — only REST API via HTTPS works
+- No programmatic token refresh for `CF_AUTHORIZATION` yet
+
+**When to still use the GOLD API pipeline (below):** When you need environmental context fields (`env_broad_scale`, `env_local_scale`, `env_medium`) that come from the NMDC-specific GOLD API and are not present in the Dremio tables, or when you need the post-processing enrichment (ontology alignment, CURIE normalization) that this repo's flattening scripts provide.
+
+See also: [`metadata-sources-and-access-methods.md`](metadata-sources-and-access-methods.md) for a comparison table of all access methods.
+
+---
+
+## Legacy Interfaces and Their Limitations
+
+### GOLD Website
 
 - URL: [https://gold.jgi.doe.gov/](https://gold.jgi.doe.gov/)
 - Offers filtering on select combinations of fields.
@@ -24,7 +56,7 @@ This document provides a complete technical overview of how metadata from the **
 
 ---
 
-### 📊 Public Excel File (`goldData.xlsx`)
+### Public Excel File (`goldData.xlsx`)
 
 - Link: [https://gold.jgi.doe.gov/download?mode=site_excel](https://gold.jgi.doe.gov/download?mode=site_excel)
 - Downloaded file name: `goldData.xlsx`
@@ -44,7 +76,7 @@ This document provides a complete technical overview of how metadata from the **
 
 ---
 
-### 🧩 GOLD Swagger API
+### GOLD Swagger API
 
 - Swagger UI: [https://gold-ws.jgi.doe.gov/swagger-ui/index.html](https://gold-ws.jgi.doe.gov/swagger-ui/index.html)
 - Provides JSON access for metadata via `/biosamples`, `/studies`, etc.
@@ -61,7 +93,7 @@ GET /biosamples?studyGoldId=Gs0000008
 
 ---
 
-### 🔐 NMDC-specific GOLD API
+### NMDC-specific GOLD API
 
 - Base URL: `https://gold.jgi.doe.gov/rest/nmdc`
 - Authenticated using NMDC-shared credentials (via HTTP Basic Auth).

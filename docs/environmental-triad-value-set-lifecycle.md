@@ -52,7 +52,7 @@ Pre-built DuckDB files are available from NERSC, though they may not reflect the
 
 - **Portal**: https://portal.nersc.gov/cfs/m3408/biosamples_duckdb/
 - **Required tables**: `biosamples_flattened`, `env_triads_flattened`
-- **Documentation**: [README-duckdb-biosamples-full.md](./README-duckdb-biosamples-full.md)
+- **Documentation**: [data-products-inventory.md](./data-products-inventory.md)
 
 ```bash
 mkdir -p local
@@ -175,7 +175,7 @@ The voting sheet generation requires these tables:
 | `biosamples_flattened` | 3M+ | One row per biosample with env fields |
 | `env_triads_flattened` | 9M+ | One row per triad component |
 
-See [README-duckdb-biosamples-full.md](./README-duckdb-biosamples-full.md) for complete table documentation.
+See [data-products-inventory.md](./data-products-inventory.md) for complete table documentation.
 
 ---
 
@@ -682,7 +682,7 @@ duckdb local/ncbi_biosamples_2024-09-23.duckdb -c "SHOW TABLES;"
 ## Related Documentation
 
 - [ADR-0015: Environmental Triad Value Sets](https://github.com/microbiomedata/issues/blob/main/decisions/0015-env-triad-value-sets.md)
-- [README-duckdb-biosamples-full.md](./README-duckdb-biosamples-full.md)
+- [data-products-inventory.md](./data-products-inventory.md)
 - [env-triad-curation](https://github.com/microbiomedata/env-triad-curation)
 
 ---

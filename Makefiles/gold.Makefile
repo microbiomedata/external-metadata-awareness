@@ -1,5 +1,10 @@
 RUN=poetry run
 
+# NOTE (2026): For raw GOLD data access, the JGI Dremio data lakehouse is now recommended.
+# See docs/gold-knowledge-management.md for SQL paths and auth details.
+# This Makefile pipeline remains relevant for CURIE normalization and ontology enrichment
+# that Dremio does not provide (canonical CURIEs, obsolete term flags, label lookups).
+
 # see also https://github.com/microbiomedata/sample-annotator/blob/b48b62d2cd83d57dff4c56342b4b5bf7154c9ade/make-gold-cache.Makefile
 
 .PHONY: flatten-gold-biosamples flatten-gold-studies flatten-gold-seq-projects export-gold-flattened-csv

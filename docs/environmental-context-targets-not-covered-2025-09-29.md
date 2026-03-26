@@ -83,10 +83,12 @@ make -f Makefiles/ncbi_metadata.Makefile copy-environmental-candidates-to-ncbi-m
 
 **Purpose:** Process GOLD database environmental context fields
 
+> **Note (2026):** For raw GOLD data access, the **JGI Dremio data lakehouse** is now recommended (see [`gold-knowledge-management.md`](gold-knowledge-management.md)). This Makefile pipeline remains relevant specifically for the CURIE normalization and ontology enrichment that Dremio does not provide.
+
 **Key Target:**
 ```bash
-# Full GOLD processing including environmental context normalization
-make -f Makefiles/gold.Makefile gold-all
+# GOLD flattening with environmental context normalization
+make -f Makefiles/gold.Makefile flatten-gold-biosamples
 ```
 
 **Features:**
@@ -94,7 +96,7 @@ make -f Makefiles/gold.Makefile gold-all
 - Converts environmental IDs to canonical CURIEs
 - Creates normalized collections with environmental context fields
 
-**Value:** Provides environmental context processing for GOLD ecosystem data
+**Value:** Provides CURIE-normalized, ontology-aligned environmental context data from GOLD — enrichments not available through Dremio
 
 ## Workflow Recommendations
 

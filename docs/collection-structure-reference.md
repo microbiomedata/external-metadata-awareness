@@ -77,6 +77,78 @@ Last verified: 2026-02-08 (51.7M biosamples, 1M bioprojects).
 | `global_nmdc_slots` | **Nested** | 846 | **Yes** | slot_name + variable NMDC YAML properties (domain, range, unit, description, slot_uri, annotations [nested], minimum_value, maximum_value, etc.) |
 | `nmdc_range_slot_usage_report` | **Nested** | 55 | Slightly | slot_name, global_range, global_slot_uri, class_name, slot_usage_range, slot_usage_slot_uri, is_override, is_same_range, other_slot_usage_properties [nested object] |
 
+## Collection Methodology: `harmonized_name_dimensional_stats`
+
+This collection classifies NCBI biosample attribute fields by whether their values contain physical (dimensional) or dimensionless quantities.
+
+### Generator
+
+`mongo-js/create_harmonized_name_dimensional_stats.js`
+
+### Input
+
+`measurement_results_skip_filtered` — 1.34M documents containing quantulum3 parse results. Each document has a `harmonized_name`, `original_content`, `entity` (quantity type), and `unit`.
+
+### Pipeline
+
+The aggregation pipeline has 6 stages:
+
+1. **`$project`** — classify each measurement as dimensional or dimensionless by checking `entity` against two reference lists:
+   - **Dimensional** (33 types): acceleration, amount of substance, angle, area, capacitance, catalytic activity, concentration, current, density, energy, force, frequency, illuminance, inductance, length, luminosity, magnetic flux, magnetic flux density, mass, molality, momentum, power, pressure, radiation, radioactivity, resistance, specific volume, speed, substance, temperature, time, voltage, volume
+   - **Dimensionless** (6 types): dimensionless, count, fraction, percentage, ratio, unknown
+2. **`$group`** by `harmonized_name` — collect unique content values, count dimensional vs dimensionless quantities, collect unique units
+3. **`$project`** — calculate `$size` of collected sets to get counts
+4. **`$addFields`** — compute three percentage metrics:
+   - `content_extraction_rate_pct` — % of unique content values that yielded any quantity
+   - `dimensional_content_rate_pct` — % of unique content values with dimensional units
+   - `dimensional_of_extracted_pct` — % of extracted quantities that are dimensional
+5. **`$project`** — remove temporary calculation fields
+6. **`$sort`** + **`$out`** — sort by `harmonized_name`, write to `harmonized_name_dimensional_stats`
+
+Uses `allowDiskUse: true`. Creates a unique index on `harmonized_name`.
+
+### Output
+
+~351 documents (one per harmonized_name with parseable quantities). The exact count varies slightly with input data; the script header says 351, while the Stage 7 table above records 354 from an earlier run.
+
+### Skip List and the 5% Threshold
+
+This collection's document count has changed over time due to the evolution of the upstream skip list:
+
+| Version | Documents | Date | Context |
+|---|---|---|---|
+| Original (pre-skip-list) | 432 | 2025-09-29 | All harmonized_names with quantulum3-parseable content |
+| After skip list v1 | ~351-354 | 2025-10-12 | After 224-field skip list applied upstream |
+
+The skip list in `measurement_discovery_efficient.py` excludes 224 harmonized_names from quantulum3 parsing. It was developed in three phases:
+
+1. **Data-driven phase (156 fields)**: Fields with `dimensional_content_rate_pct < 5%` in the original 432-doc analysis were flagged. The 5% threshold was chosen because fields below it were overwhelmingly identifiers, categorical values, and free-text descriptions — not measurement data. Examples: `sample_name` (0% dimensional), `geo_loc_name` (0.3% dimensional).
+
+2. **Semantic expansion (+52 fields)**: Mark reviewed the remaining fields and added those matching patterns like `*_regm` (regimen), `*_cond` (condition), `*_meth` (method), plus fields containing names, IDs, dates, and qualitative classifications.
+
+3. **Consistency pass (+16 fields, [#244](https://github.com/microbiomedata/external-metadata-awareness/issues/244))**: Additional fields added for consistency after reviewing edge cases.
+
+The current collection (354 docs) operates on `measurement_results_skip_filtered`, which is the post-skip-list version. To reproduce the original 432-doc analysis, you would need to run the pipeline against `content_pairs_aggregated` without the skip list filter.
+
+### Schema
+
+| Field | Type | Description |
+|---|---|---|
+| `harmonized_name` | string | NCBI harmonized attribute name |
+| `total_content_pairs` | int | Unique content values analyzed |
+| `total_quantities_found` | int | Total quantities parsed by quantulum3 |
+| `dimensional_quantities` | int | Quantities with physical units |
+| `dimensionless_quantities` | int | Pure numbers, percentages, ratios |
+| `unique_content_with_any_units` | int | Unique content strings with parseable units |
+| `unique_content_with_dimensional_units` | int | Unique content strings with dimensional units |
+| `unique_units_total` | int | Distinct unit strings |
+| `unique_dimensional_units` | int | Distinct dimensional unit strings |
+| `content_extraction_rate_pct` | float | % of content yielding quantities |
+| `dimensional_content_rate_pct` | float | % of content with dimensional units |
+| `dimensional_of_extracted_pct` | float | % of extracted quantities that are dimensional |
+
+---
+
 ## Summary
 
 - **Naming convention**: Collections with `_flattened` in the name are always flat. But many flat collections don't have `_flattened` in the name.

@@ -354,23 +354,93 @@ poetry run script-name --mongo-uri $(MONGO_URI)
 
 ## Performance Considerations
 
-### MongoDB
-- **Indexes**: Critical for large collections (44M biosamples)
-- **Batch Size**: Most scripts use 1k-10k record batches
-- **Aggregation Pipelines**: Used for complex transformations
-- **Memory**: Large aggregations may require `allowDiskUse: true`
+### Data Volume Scale (as of 2026-02-08)
+
+Sizes from `db.collection.stats()`. "Data" = logical (uncompressed) size; "Storage" = on-disk WiredTiger compressed size.
+
+| Dataset | Documents | Data (logical) | Storage (compressed) |
+|---------|-----------|----------------|---------------------|
+| `biosamples` | 51.7M | 134 GB | 18 GB |
+| `biosamples_attributes` | 756M | 137 GB | 18 GB |
+| `sra_biosamples_bioprojects` | 33.7M | 3.2 GB | 1 GB |
+| `bioprojects` | 1M | 2.4 GB | 0.6 GB |
+| `content_pairs_aggregated` | 66.4M | — | — |
+| **Total ncbi_metadata (29 collections)** | — | **~350 GB logical** | **~52 GB on-disk + 41 GB indexes** |
+| **DuckDB export (17 flat collections)** | — | 14 GB | single file |
+
+See [`data-products-inventory.md`](data-products-inventory.md) for the full per-collection breakdown.
+
+### MongoDB Operation Benchmarks
+
+These timings are from the 2026-02-05 to 2026-02-08 full clean-slate rebuild (51.7M biosamples).
+
+**XML Loading:**
+- `biosamples` XML load: ~10.5 hours (51.7M documents, ~1,370 docs/sec)
+- `bioprojects` XML load: ~15 minutes (1M documents)
+- 3 oversized documents (>16MB) saved as files in `local/oversize/`
+
+**Flattening Operations:**
+- `flatten_biosamples.js`: ~3 hours (51.7M → 51.7M flat documents)
+- `flatten_biosamples_attributes.js`: ~8 hours (51.7M → 756M attribute rows)
+- `flatten_env_triads_multi_component.js`: ~45 minutes (7.7M env triad documents → 20.7M flattened rows)
+- `flatten_bioprojects_minimal.js`: ~2 minutes (1M documents)
+
+**Aggregation Operations:**
+- `count_biosamples_per_hn` (3-step): ~2 hours total (756M attributes → 810 usage stats)
+- `count_bioprojects_usage_stats` (4-step): ~3 hours total (requires SRA join)
+- `create_harmonized_name_dimensional_stats`: ~10 minutes (1.34M → 354 documents)
+- `enriched_biosamples_env_triad_value_counts_gt_1.js`: <4 minutes
+
+**Measurement Discovery:**
+- quantulum3 parsing (465K documents): ~2.5 hours, ~85% parse success rate
+
+**DuckDB Export:**
+- Full `export-all` (17 collections → DuckDB + Parquet): ~45 minutes
+- `biosamples_flattened` alone: ~20 minutes (51.7M rows)
+
+**Full Pipeline (end-to-end):** 3-4 days for a complete clean-slate rebuild.
+
+### MongoDB Performance Patterns
+
+- **Indexes are critical**: `biosamples_attributes` has compound indexes on `harmonized_name + accession`, `attribute_name + harmonized_name`, and `unit + harmonized_name`. Without these, aggregation operations that scan 756M documents time out.
+- **`allowDiskUse: true`**: Required for any aggregation over collections >1M documents. All `mongo-js/` scripts use this.
+- **Batch sizes**: Python scripts use 1K-10K record batches for insert operations. Larger batches risk memory pressure.
+- **Multi-step workflows**: Operations that would exceed the 100MB aggregation memory limit are broken into multiple steps with intermediate temp collections (e.g., `count_bioprojects_step2a` through `step2d`).
+- **`$out` replaces entire collections**: Every `$out` stage drops and recreates the target. This is atomic but means partial failures require full re-runs.
+
+### Performance Anti-Patterns
+
+| Anti-Pattern | Symptom | Duration | Fix |
+|---|---|---|---|
+| `$lookup` on unindexed collection | Hangs or >8 hours | 8+ hours | Create index on join field first |
+| `$addToSet` collecting >100MB per group | `ExceededMemoryLimit` error | Fails | Use multi-step deduplicate-then-count (see [MONGODB_PATTERNS.md](MONGODB_PATTERNS.md#multi-step-workflows)) |
+| `$group` without `allowDiskUse` | Silent incomplete results or hang | Varies | Always pass `{ allowDiskUse: true }` |
+| `$out` to source collection | Source data destroyed mid-pipeline | Immediate | Always write to a different collection |
+| Scanning 756M attributes without index | Query never returns | Hours | Ensure compound indexes exist (see [MONGODB_PATTERNS.md](MONGODB_PATTERNS.md#indexing-strategy)) |
+| `skip().limit()` pagination on large collections | Progressively slower pages | Varies | Use `_id > last_seen_id` cursor-style pagination |
+
+### Hang Detection
+
+If an operation is running >2x the benchmark time above, it's likely hung or hitting an anti-pattern. Check:
+1. `db.currentOp()` — is the operation still active?
+2. Index usage — did the aggregation fall back to a collection scan?
+3. Memory — is the mongod process swapping?
+
+### Hardware Reference
+
+Benchmarks above were measured on:
+- **NUC workstation**: Intel i7, 64 GB RAM, NVMe SSD, Ubuntu 22.04
+- **MongoDB**: 7.x community, `localhost:27017`, WiredTiger storage engine
+- **Disk**: NVMe with ~500 GB free during rebuild
+
+The full pipeline requires ~300 GB free disk (source XML + MongoDB data + indexes + DuckDB export). MongoDB memory usage peaks at ~40 GB during large aggregations with `allowDiskUse`.
 
 ### DuckDB
-- **Compression**: .duckdb.gz files are ~50% of raw size
-- **Query Performance**: Much faster than MongoDB for analytical queries
-- **Memory Usage**: Entire database fits in memory on modern machines
-- **Portability**: Single file, easy to share/archive
 
-### Data Volume Scale
-- **NCBI Biosamples**: 44M records, ~117GB raw in MongoDB
-- **SRA Metadata**: 35M records, ~108GB raw
-- **BioProjects**: 893K records, ~2.4GB raw
-- **Total Storage**: ~150-200GB across all databases
+- **Compression**: `.duckdb` files are ~27% of raw MongoDB data size (14 GB from ~52 GB)
+- **Query performance**: Orders of magnitude faster than MongoDB for analytical queries over flat collections
+- **Portability**: Single file, easy to share via NERSC portal
+- **Distribution**: `https://portal.nersc.gov/project/m3408/biosamples_duckdb/`
 
 ---
 
