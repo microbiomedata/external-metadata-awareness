@@ -414,7 +414,9 @@ These exist on JGI's side but are **not exposed** through Dremio:
 | [microbiomedata/nmdc-metadata-suggestor-ai-tool](https://github.com/microbiomedata/nmdc-metadata-suggestor-ai-tool) | Test data provenance traces to EMA |
 | [berkeleybop/contextualizer](https://github.com/berkeleybop/contextualizer) | Lat/lon-based metadata inference, conceptual overlap with env triad enrichment |
 | [berkeleybop/metpo](https://github.com/berkeleybop/metpo) | METPO ontology with GOLD field analysis |
-| [contextualizer-ai/to-duckdb](https://github.com/contextualizer-ai/to-duckdb) | MongoDB -> DuckDB framework used by EMA |
+| [contextualizer-ai/to-duckdb](https://github.com/contextualizer-ai/to-duckdb) | MongoDB -> DuckDB framework; EMA has its own equivalent scripts internally |
+| [contextualizer-ai/biosample-enricher](https://github.com/contextualizer-ai/biosample-enricher) | Biosample attribute enrichment via OAK/ontology lookup; predecessor to crawl-first |
+| [contextualizer-ai/crawl-first](https://github.com/contextualizer-ai/crawl-first) | Deterministic biosample enrichment for LLM-ready data; optional PydanticAI agentic layer (Sep 2025) |
 | [INCATools/biosample-analysis](https://github.com/INCATools/biosample-analysis) | Biosample metadata analysis |
 
 ---
