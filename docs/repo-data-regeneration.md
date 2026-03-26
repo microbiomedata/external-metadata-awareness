@@ -15,7 +15,7 @@ This document explains the current reproducible path for rebuilding the existing
 
 The previous checked-in `repo_data/` layout matched:
 
-- [`unorganized/fetch_repos.sh`](/home/mark/gitrepos/external-metadata-awareness/unorganized/fetch_repos.sh)
+- [`unorganized/fetch_repos.sh`](../unorganized/fetch_repos.sh)
 
 This script generates, for each owner:
 
@@ -33,7 +33,7 @@ The script fetches and writes the same fields that were present in the former ch
 - `updatedAt`
 - `url`
 - `defaultBranchRef`
-- `firstCommitDate`
+- `firstCommitDate` (see Limitations — currently identical to `lastCommitDate`)
 - `lastCommitDate`
 - `topContributors` when `-c` is used
 
@@ -97,7 +97,7 @@ For each owner, the script:
 
 - This is a shell workflow, not yet a packaged Python or Makefile target.
 - It depends on live GitHub API access and current `gh` auth state.
-- `firstCommitDate` is inferred from a lightweight commits query and should be treated as a practical cache value, not audited provenance.
+- `firstCommitDate` and `lastCommitDate` both come from a `per_page=1` commits query, so in practice they return the same value (the most recent commit date). Treat these as practical cache values, not audited provenance. A follow-up could fix the first-commit query to paginate to the oldest commit.
 - `_SUMMARY.json` is derived from the local files present in an owner directory.
 - The intended owner set now lives in `repo_data/catalog.yaml`, but regeneration is still script-driven rather than fully packaged.
 
@@ -105,11 +105,11 @@ For each owner, the script:
 
 These are GitHub-related, but they do not regenerate the current `repo_data/` tree:
 
-- [`Makefiles/github.Makefile`](/home/mark/gitrepos/external-metadata-awareness/Makefiles/github.Makefile)
+- [`Makefiles/github.Makefile`](../Makefiles/github.Makefile)
   - fetches release notes, not repo cache snapshots
-- [`notebooks/github-repo-metadata/sample_extraction_commands.sh`](/home/mark/gitrepos/external-metadata-awareness/notebooks/github-repo-metadata/sample_extraction_commands.sh)
+- [`notebooks/github-repo-metadata/sample_extraction_commands.sh`](../notebooks/github-repo-metadata/sample_extraction_commands.sh)
   - extracts PR participants from saved JSON, not repo metadata trees
-- [`external_metadata_awareness/adhoc/infer_first_committer.py`](/home/mark/gitrepos/external-metadata-awareness/external_metadata_awareness/adhoc/infer_first_committer.py)
+- [`external_metadata_awareness/adhoc/infer_first_committer.py`](../external_metadata_awareness/adhoc/infer_first_committer.py)
   - a GitHub API utility, not the owner-cache generator
 
 ## Recommended Next Cleanup Step

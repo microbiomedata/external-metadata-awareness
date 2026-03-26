@@ -10,7 +10,7 @@ It is useful for:
 - keeping repo-cataloging guidance close to the regeneration notes
 - making future cleanup and rebuild work explicit
 
-It is **not** the authority on which GitHub orgs Mark should monitor.
+It is **not** the authority on which GitHub orgs should be actively monitored.
 
 ## Monitoring Authority
 
