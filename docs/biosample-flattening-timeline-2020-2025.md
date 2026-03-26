@@ -316,6 +316,8 @@ The canonical output from this processing pipeline is **DuckDB databases** conta
 
 ### GOLD Database DuckDBs (Two Approaches)
 
+> **Update (2026):** The **JGI Dremio data lakehouse** now provides direct SQL access to GOLD tables, making the API-based and Excel-based DuckDB pipelines below largely superseded for raw data access. The pipelines remain relevant for CURIE-normalized, ontology-enriched outputs. See [`gold-knowledge-management.md`](gold-knowledge-management.md).
+
 **API-based DuckDB:**
 - **Entity Coverage**: Studies, Projects, and Biosamples (excludes organism/isolate records)
 - **Field Richness**: 50+ biosample fields including complete MIxS environmental context triads

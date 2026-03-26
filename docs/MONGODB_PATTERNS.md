@@ -1,6 +1,137 @@
 # MongoDB Patterns
 
-Patterns and conventions used in this repository's MongoDB operations. For execution methods and JS script headers, see [DEVELOPMENT.md](DEVELOPMENT.md#mongodb-javascript-patterns).
+Comprehensive guide to MongoDB patterns in this repository. Covers Python connections, JavaScript aggregations, Makefile integration, and when to use which approach.
+
+For JS execution methods and script header conventions, see [DEVELOPMENT.md](DEVELOPMENT.md#mongodb-javascript-patterns).
+
+Related issues: [#176](https://github.com/microbiomedata/external-metadata-awareness/issues/176) (connection unification), [#237](https://github.com/microbiomedata/external-metadata-awareness/issues/237) (atomic counting), [#240](https://github.com/microbiomedata/external-metadata-awareness/issues/240) (atomic transformations), [#282](https://github.com/microbiomedata/external-metadata-awareness/issues/282) (naming conventions).
+
+---
+
+## Python Connection Patterns
+
+### `get_mongo_client()` — the standard connection factory
+
+All Python scripts that connect to MongoDB should use the utility in `external_metadata_awareness/mongodb_connection.py`:
+
+```python
+from external_metadata_awareness.mongodb_connection import get_mongo_client
+
+client = get_mongo_client(
+    mongo_uri="mongodb://localhost:27017/ncbi_metadata",
+    env_file="local/.env",   # optional — loads MONGO_USER/MONGO_PASSWORD
+    debug=True
+)
+db = client.get_default_database()
+```
+
+The function validates the URI (must include a database name), optionally loads credentials from `.env`, and injects them into the URI.
+
+### Standard Click options
+
+Python CLI tools use this option set (see `insert_all_flat_gold_biosamples.py` for the full pattern):
+
+```python
+@click.option('--mongo-uri', default=None, help='MongoDB URI')
+@click.option('--mongo-host', default=None, help='MongoDB host')
+@click.option('--mongo-port', default=None, type=int, help='MongoDB port')
+@click.option('--db-name', default=None, help='MongoDB database name')
+@click.option('--dotenv-path', default='local/.env', help='Path to .env file')
+```
+
+Simpler scripts (like `mongo_js_executor.py`) use just `--mongo-uri` + `--env-file` + `--verbose`.
+
+### Environment variables
+
+Credentials are loaded from `.env` files (never hardcoded):
+- `MONGO_USER` / `MONGO_PASSWORD` — authentication
+- `MONGO_HOST` / `MONGO_PORT` / `MONGO_DB` — connection details (fallbacks when `--mongo-uri` not provided)
+
+---
+
+## Makefile Patterns
+
+### `mongo-js-executor` for all JS aggregation scripts
+
+Every Makefile target that runs a `mongo-js/` script uses this pattern:
+
+```makefile
+flatten_bioprojects: mongo-js/flatten_bioprojects_minimal.js
+	date && time $(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/flatten_bioprojects_minimal.js \
+		--verbose && date
+```
+
+- `$(RUN)` = `poetry run`
+- `$(MONGO_URI)` = `mongodb://$(MONGO_HOST):$(MONGO_PORT)/$(MONGO_DB)` (defaults to `localhost:27017/ncbi_metadata`)
+- `$(ENV_FILE_OPTION)` = `--env-file $(ENV_FILE)` when `ENV_FILE` is set, empty otherwise
+- `date && time ... && date` wraps every target for timing
+
+### Inline `mongosh` — only for one-liners
+
+Use inline `mongosh --eval` only for simple operations that don't warrant a script file:
+
+```makefile
+drop-temp-collections:
+	mongosh "$(MONGO_URI)" --eval "db.getCollection('__tmp_hn_accessions').drop()"
+```
+
+For anything with an aggregation pipeline, use a `.js` file + `mongo-js-executor`.
+
+### Standard Makefile variables
+
+```makefile
+MONGO_HOST ?= localhost
+MONGO_PORT ?= 27017
+MONGO_DB ?= ncbi_metadata
+MONGO_URI ?= mongodb://$(MONGO_HOST):$(MONGO_PORT)/$(MONGO_DB)
+```
+
+---
+
+## Python vs JavaScript — When to Use Which
+
+| Use JavaScript (`mongo-js/`) | Use Python (`external_metadata_awareness/`) |
+|---|---|
+| MongoDB aggregation pipelines | External API calls (GOLD, NCBI, BioPortal) |
+| Collection-to-collection transforms (`$out`) | Complex data manipulation (pandas, numpy) |
+| Index creation | Ontology lookups (OAK) |
+| Simple counting / reporting | CLI tools with Click |
+| Temp collection management | Anything needing quantulum3, dateparser, geopy |
+
+**Rule of thumb**: If the operation is purely MongoDB → MongoDB, use JavaScript. If it needs Python libraries or external data, use Python.
+
+---
+
+## Atomic Transformation Principles
+
+From [#240](https://github.com/microbiomedata/external-metadata-awareness/issues/240): MongoDB transformations should be atomic, resumable, and small.
+
+### Requirements
+
+1. **Single responsibility**: One script creates one output collection from one or two input collections.
+2. **Idempotent**: Running a script twice produces the same result. All scripts use `$out` which replaces atomically.
+3. **Skip if complete**: Scripts should check if the output collection already has the expected document count before running. (Not yet implemented in all scripts — tracked in [#254](https://github.com/microbiomedata/external-metadata-awareness/issues/254).)
+4. **Progress reporting**: Log timestamps at start, finish, and at intermediate milestones for long operations.
+5. **Small file size**: Keep scripts under 5K when possible. If a script exceeds that, document why in a comment.
+
+### Temp collection conventions
+
+- Prefix with `__tmp_` (double underscore) or `temp_`
+- **Important**: `mongosh` interprets `db.__tmp_foo` as a private property. Use `db.getCollection('__tmp_foo')` instead:
+
+```javascript
+// ✅ Correct
+db.getCollection('__tmp_hn_accessions').aggregate([...]);
+
+// ❌ Fails silently in mongosh
+db.__tmp_hn_accessions.aggregate([...]);
+```
+
+- Always drop temp collections in a dedicated cleanup step
+- Name cleanup scripts with a `_cleanup` or step-number suffix (e.g., `step2d`)
 
 ---
 

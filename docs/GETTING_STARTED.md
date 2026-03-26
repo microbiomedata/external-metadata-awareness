@@ -216,9 +216,11 @@ See [CLAUDE.md - MongoDB Infrastructure](CLAUDE.md#mongodb-infrastructure) for c
 ## Getting Help
 
 ### Documentation
-- **CLAUDE.md**: Comprehensive reference for commands, workflows, data sources
-- **PRIORITY_ROADMAP.md**: Current priorities and issue categorization
-- **Notebook READMEs**: Specific workflow documentation
+- **[ARCHITECTURE.md](ARCHITECTURE.md)**: Database infrastructure, data flow, and performance benchmarks (operation timings, hardware requirements)
+- **[MONGODB_PATTERNS.md](MONGODB_PATTERNS.md)**: MongoDB conventions — connections, aggregation patterns, multi-step workflows, common pitfalls
+- **[DEVELOPMENT.md](DEVELOPMENT.md)**: Code style, testing, JS script conventions
+- **CLAUDE.md**: AI assistant reference (commands, key concepts)
+- **[PRIORITY_ROADMAP.md](PRIORITY_ROADMAP.md)**: Current priorities and issue categorization
 
 ### Issues
 - Browse [open issues](https://github.com/microbiomedata/external-metadata-awareness/issues)

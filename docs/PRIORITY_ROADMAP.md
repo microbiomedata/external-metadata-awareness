@@ -202,14 +202,8 @@ This repository has **46 open issues** spanning 14 months (Aug 2024 - Oct 2025).
 
 ## Files That Could Be Consolidated/Archived
 
-**Root directory** has 6 MD files - consider moving to `/docs`:
-- architectural-pattern-inconsistency-analysis.md
-- bioproject_metadata_completeness_analysis.md
-- ncbi-duckdb-export-summary-2025-09-30.md
-- September-2025-Biosample-DuckDB-documentation.md
-- CLEANUP_NEEDED.md (meta!)
-
-**claude-mds/** has 30+ session summaries - consider archiving older ones
+**Documentation cleanup** tracked in [#318](https://github.com/microbiomedata/external-metadata-awareness/issues/318).
+Session notes, outdated DuckDB docs, and duplicate files removed in docs cleanup PR.
 
 **unorganized/** directory - as the name suggests, needs organization
 

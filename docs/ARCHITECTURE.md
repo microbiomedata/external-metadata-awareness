@@ -404,6 +404,33 @@ These timings are from the 2026-02-05 to 2026-02-08 full clean-slate rebuild (51
 - **Multi-step workflows**: Operations that would exceed the 100MB aggregation memory limit are broken into multiple steps with intermediate temp collections (e.g., `count_bioprojects_step2a` through `step2d`).
 - **`$out` replaces entire collections**: Every `$out` stage drops and recreates the target. This is atomic but means partial failures require full re-runs.
 
+### Performance Anti-Patterns
+
+| Anti-Pattern | Symptom | Duration | Fix |
+|---|---|---|---|
+| `$lookup` on unindexed collection | Hangs or >8 hours | 8+ hours | Create index on join field first |
+| `$addToSet` collecting >100MB per group | `ExceededMemoryLimit` error | Fails | Use multi-step deduplicate-then-count (see [MONGODB_PATTERNS.md](MONGODB_PATTERNS.md#multi-step-workflows)) |
+| `$group` without `allowDiskUse` | Silent incomplete results or hang | Varies | Always pass `{ allowDiskUse: true }` |
+| `$out` to source collection | Source data destroyed mid-pipeline | Immediate | Always write to a different collection |
+| Scanning 756M attributes without index | Query never returns | Hours | Ensure compound indexes exist (see [MONGODB_PATTERNS.md](MONGODB_PATTERNS.md#indexing-strategy)) |
+| `skip().limit()` pagination on large collections | Progressively slower pages | Varies | Use `_id > last_seen_id` cursor-style pagination |
+
+### Hang Detection
+
+If an operation is running >2x the benchmark time above, it's likely hung or hitting an anti-pattern. Check:
+1. `db.currentOp()` — is the operation still active?
+2. Index usage — did the aggregation fall back to a collection scan?
+3. Memory — is the mongod process swapping?
+
+### Hardware Reference
+
+Benchmarks above were measured on:
+- **NUC workstation**: Intel i7, 64 GB RAM, NVMe SSD, Ubuntu 22.04
+- **MongoDB**: 7.x community, `localhost:27017`, WiredTiger storage engine
+- **Disk**: NVMe with ~500 GB free during rebuild
+
+The full pipeline requires ~300 GB free disk (source XML + MongoDB data + indexes + DuckDB export). MongoDB memory usage peaks at ~40 GB during large aggregations with `allowDiskUse`.
+
 ### DuckDB
 
 - **Compression**: `.duckdb` files are ~27% of raw MongoDB data size (14 GB from ~52 GB)

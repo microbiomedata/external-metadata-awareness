@@ -109,7 +109,26 @@ Uses `allowDiskUse: true`. Creates a unique index on `harmonized_name`.
 
 ### Output
 
-354 documents (one per harmonized_name with parseable quantities). 224 harmonized_names are excluded by the skip list filter applied upstream in `measurement_results_skip_filtered`.
+354 documents (one per harmonized_name with parseable quantities).
+
+### Skip List and the 5% Threshold
+
+This collection's document count has changed over time due to the evolution of the upstream skip list:
+
+| Version | Documents | Date | Context |
+|---|---|---|---|
+| Original (pre-skip-list) | 432 | 2025-09-29 | All harmonized_names with quantulum3-parseable content |
+| After skip list v1 | ~354 | 2025-10-12 | After 224-field skip list applied upstream |
+
+The skip list in `measurement_discovery_efficient.py` excludes 224 harmonized_names from quantulum3 parsing. It was developed in three phases:
+
+1. **Data-driven phase (156 fields)**: Fields with `dimensional_content_rate_pct < 5%` in the original 432-doc analysis were flagged. The 5% threshold was chosen because fields below it were overwhelmingly identifiers, categorical values, and free-text descriptions — not measurement data. Examples: `sample_name` (0% dimensional), `geo_loc_name` (0.3% dimensional).
+
+2. **Semantic expansion (+52 fields)**: Mark reviewed the remaining fields and added those matching patterns like `*_regm` (regimen), `*_cond` (condition), `*_meth` (method), plus fields containing names, IDs, dates, and qualitative classifications.
+
+3. **Consistency pass (+16 fields, [#244](https://github.com/microbiomedata/external-metadata-awareness/issues/244))**: Additional fields added for consistency after reviewing edge cases.
+
+The current collection (354 docs) operates on `measurement_results_skip_filtered`, which is the post-skip-list version. To reproduce the original 432-doc analysis, you would need to run the pipeline against `content_pairs_aggregated` without the skip list filter.
 
 ### Schema
 

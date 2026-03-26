@@ -334,6 +334,8 @@ db.env_triads_flattened.createIndex({accession: 1, component: 1}, {background: t
 
 ## MongoDB JavaScript Patterns
 
+> For the full MongoDB guide — including Python connections, Makefile patterns, aggregation conventions, multi-step workflows, and common pitfalls — see [MONGODB_PATTERNS.md](MONGODB_PATTERNS.md).
+
 ### Execution Methods
 
 **Preferred: mongo-js-executor** (Python wrapper - standardized interface)
