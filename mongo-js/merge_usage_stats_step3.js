@@ -3,8 +3,8 @@
 // Part of harmonized_name usage stats workflow
 
 print('[' + new Date().toISOString() + '] Ensuring indexes exist before merge');
-try { db.temp_bioproject_counts.createIndex({harmonized_name: 1}, {background: true}); } catch(e) { print('temp index exists: ' + e.message); }
-try { db.temp_biosample_counts.createIndex({harmonized_name: 1}, {background: true}); } catch(e) { print('biosample temp index exists: ' + e.message); }
+db.temp_bioproject_counts.createIndex({harmonized_name: 1}, {background: true});
+db.temp_biosample_counts.createIndex({harmonized_name: 1}, {background: true});
 
 print('[' + new Date().toISOString() + '] Dropping final collection');
 db.harmonized_name_usage_stats.drop();

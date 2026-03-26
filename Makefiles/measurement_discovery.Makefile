@@ -118,14 +118,12 @@ count-bioprojects-step2: count-bioprojects-step2a count-bioprojects-step2b count
 
 # Step 3: Merge biosample and bioproject counts
 merge-counts-step3:
-	@date
 	@echo "Step 3: Creating final index and merging biosample and bioproject counts..."
 	$(RUN) mongo-js-executor \
 		--mongo-uri "$(MONGO_URI)" \
 		$(ENV_FILE_OPTION) \
 		--js-file mongo-js/merge_usage_stats_step3.js \
 		--verbose
-	@date
 
 # Index harmonized_name_usage_stats for efficient querying of biosample/bioproject counts per field
 index-harmonized-name-counts:
