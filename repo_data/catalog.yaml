@@ -1,0 +1,54 @@
+version: 1
+authority:
+  monitoring_doc: external operator-maintained monitoring document
+  notes:
+    - repo_data is a cache/evidence store, not the authority for monitoring priorities
+    - owner category should drive attention level before any future re-fetch work
+    - generated owner snapshot trees are intentionally not kept in git
+
+categories:
+  default_monitoring:
+    description: Owners in the current default org monitoring set.
+    owners:
+      - berkeleybop
+      - linkml
+      - monarch-initiative
+      - microbiomedata
+      - Knowledge-Graph-Hub
+      - CultureBotAI
+      - ai4curation
+      - biolink
+      - INCATools
+      - GenomicsStandardsConsortium
+      - EnvironmentOntology
+      - contextualizer-ai
+
+  spillover_org:
+    description: Org-level caches outside the default set that still have active colleague relevance.
+    owners:
+      - OBOAcademy
+      - OBOFoundry
+      - oborel
+      - perma-id
+      - ber-data
+      - EBISPOT
+      - cancerDHC
+      - obi-ontology
+      - PennTURBO
+      - pennbiobank
+      - rsc3
+
+  person_or_small_scope_cache:
+    description: Person-centric or otherwise narrow caches that can be useful as supporting context but should not drive monitoring decisions.
+    owners:
+      - aellenhicks
+      - carrineblank
+      - jfy133
+      - kaiiam
+
+  broad_historical_crawl:
+    description: High-breadth caches that are useful for exploration and historical context, but not as priority-setting sources.
+    owners:
+      - cmungall
+      - turbomam
+      - mcwdsi
