@@ -154,7 +154,7 @@ db.source_collection.aggregate([
 ### Key rules
 
 - **Always use `allowDiskUse: true`** for any aggregation over >1M documents.
-- **`$out` replaces the entire target collection.** There is no upsert/merge mode — the previous collection is dropped atomically. A partial failure means the old data is gone and you must re-run.
+- **`$out` replaces the entire target collection atomically on success.** There is no upsert/merge mode — MongoDB writes results to a temporary collection and swaps it into place only if the pipeline completes successfully. If the pipeline fails, the previous collection remains unchanged and you must re-run to produce new output.
 - **`$addToSet` has a 100MB memory limit per group.** For high-cardinality grouping (e.g., counting unique biosamples per harmonized_name across 756M attributes), use multi-step workflows instead.
 
 ---
@@ -254,19 +254,19 @@ Downstream collections (`harmonized_name_dimensional_stats`, `measurement_eviden
 
 ## `$out` vs Manual Insert
 
-This repo exclusively uses `$out` for collection creation (not `insertMany` or `bulkWrite` from aggregation results). This means:
+Aggregation-based build scripts in this repo use `$out` for collection creation (not `insertMany` or `bulkWrite` from aggregation results). This means:
 
 - **Atomic replacement**: target is fully replaced on each run
 - **No incremental updates**: partial results require full re-runs
 - **Idempotent**: running the same script twice produces the same output (assuming source data hasn't changed)
 
-This is intentional — the pipeline is designed for full rebuilds, not incremental updates.
+This is intentional — these aggregation pipelines are designed for full rebuilds, not incremental updates. Separately, some loader scripts (`load_global_mixs_slots.js`, `load_global_nmdc_slots.js`) drop a collection and repopulate it via `insertMany`.
 
 ---
 
 ## Database Inheritance
 
-Scripts inherit the database from the `mongosh` connection URI. They never call `db.getSiblingDB()` or hardcode database names.
+Production aggregation scripts inherit the database from the `mongosh` connection URI and should not call `db.getSiblingDB()` or hardcode database names. (Some utility scripts in `mongo-js/prints_does_not_insert/` do use `getSiblingDB` to enumerate across databases — that's acceptable for read-only reporting.)
 
 ```bash
 # Database comes from URI — script uses whatever `db` points to
@@ -294,7 +294,7 @@ This allows the same scripts to run against different database instances without
 ## Common Pitfalls
 
 1. **Forgetting `allowDiskUse`**: Aggregations over large collections silently fail or produce incomplete results without it.
-2. **`$out` to the source collection**: Never `$out` to the same collection you're reading — this drops the source mid-pipeline.
-3. **Missing indexes after `$out`**: `$out` creates a new collection with no indexes. Always recreate indexes after.
+2. **`$out` to the source collection**: Never `$out` to the same collection you're reading — this can corrupt the pipeline.
+3. **Missing indexes after `$out`**: `$out` replaces the target with a new collection that has no indexes. Always recreate indexes after.
 4. **`$addToSet` memory**: Collecting millions of unique values into a set per group exceeds the 100MB limit. Use multi-step deduplication instead.
 5. **Assuming `estimatedDocumentCount` is exact**: It uses collection metadata and can be stale after bulk operations. Use `countDocuments({})` when precision matters.

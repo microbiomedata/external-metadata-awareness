@@ -94,7 +94,7 @@ This collection classifies NCBI biosample attribute fields by whether their valu
 The aggregation pipeline has 6 stages:
 
 1. **`$project`** — classify each measurement as dimensional or dimensionless by checking `entity` against two reference lists:
-   - **Dimensional** (32 types): acceleration, amount of substance, angle, area, capacitance, concentration, current, density, energy, force, frequency, length, mass, power, pressure, speed, temperature, time, voltage, volume, etc.
+   - **Dimensional** (33 types): acceleration, amount of substance, angle, area, capacitance, catalytic activity, concentration, current, density, energy, force, frequency, illuminance, inductance, length, luminosity, magnetic flux, magnetic flux density, mass, molality, momentum, power, pressure, radiation, radioactivity, resistance, specific volume, speed, substance, temperature, time, voltage, volume
    - **Dimensionless** (6 types): dimensionless, count, fraction, percentage, ratio, unknown
 2. **`$group`** by `harmonized_name` — collect unique content values, count dimensional vs dimensionless quantities, collect unique units
 3. **`$project`** — calculate `$size` of collected sets to get counts
@@ -109,7 +109,7 @@ Uses `allowDiskUse: true`. Creates a unique index on `harmonized_name`.
 
 ### Output
 
-354 documents (one per harmonized_name with parseable quantities).
+~351 documents (one per harmonized_name with parseable quantities). The exact count varies slightly with input data; the script header says 351, while the Stage 7 table above records 354 from an earlier run.
 
 ### Skip List and the 5% Threshold
 
@@ -118,7 +118,7 @@ This collection's document count has changed over time due to the evolution of t
 | Version | Documents | Date | Context |
 |---|---|---|---|
 | Original (pre-skip-list) | 432 | 2025-09-29 | All harmonized_names with quantulum3-parseable content |
-| After skip list v1 | ~354 | 2025-10-12 | After 224-field skip list applied upstream |
+| After skip list v1 | ~351-354 | 2025-10-12 | After 224-field skip list applied upstream |
 
 The skip list in `measurement_discovery_efficient.py` excludes 224 harmonized_names from quantulum3 parsing. It was developed in three phases:
 

@@ -356,15 +356,19 @@ poetry run script-name --mongo-uri $(MONGO_URI)
 
 ### Data Volume Scale (as of 2026-02-08)
 
-| Dataset | Documents | Data Size | Storage (with indexes) |
-|---------|-----------|-----------|----------------------|
-| `biosamples` | 51.7M | 134 GB | ~175 GB |
-| `biosamples_attributes` | 756M | 137 GB | ~175 GB |
-| `sra_biosamples_bioprojects` | 33.7M | 3.2 GB | ~5 GB |
-| `bioprojects` | 1M | 2.4 GB | ~3 GB |
+Sizes from `db.collection.stats()`. "Data" = logical (uncompressed) size; "Storage" = on-disk WiredTiger compressed size.
+
+| Dataset | Documents | Data (logical) | Storage (compressed) |
+|---------|-----------|----------------|---------------------|
+| `biosamples` | 51.7M | 134 GB | 18 GB |
+| `biosamples_attributes` | 756M | 137 GB | 18 GB |
+| `sra_biosamples_bioprojects` | 33.7M | 3.2 GB | 1 GB |
+| `bioprojects` | 1M | 2.4 GB | 0.6 GB |
 | `content_pairs_aggregated` | 66.4M | — | — |
-| **Total ncbi_metadata** | — | ~52 GB | ~93 GB (52 GB data + 41 GB indexes) |
+| **Total ncbi_metadata (29 collections)** | — | **~350 GB logical** | **~52 GB on-disk + 41 GB indexes** |
 | **DuckDB export (17 flat collections)** | — | 14 GB | single file |
+
+See [`data-products-inventory.md`](data-products-inventory.md) for the full per-collection breakdown.
 
 ### MongoDB Operation Benchmarks
 
