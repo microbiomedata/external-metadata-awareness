@@ -42,6 +42,24 @@ limitations of the GOLD APIs.
 | Sequencing projects | `"img-db-2 postgresql".img_gold.gold_sequencing_project` (different source) |
 | Isolate submissions | `"gold-db-2 postgresql".gold.dw_samples` JOIN `dw_sample_taxonomy_info` ON `sample_id` |
 
+**GOLD entity counts in Dremio** (as of early 2026):
+
+| Entity | Table | ID Prefix | Count |
+|--------|-------|-----------|-------|
+| Study | `study` | `Gs` | 70,440 |
+| Biosample | `biosample` | `Gb` | 273,139 |
+| Organism | `organism_v2` | `Go` | 598,061 |
+| Sequencing Project | `"img-db-2 postgresql".img_gold.gold_sequencing_project` | `Gp` | 705,395 |
+| Analysis Project | `analysis_project` | `Ga` | 620,264 |
+
+```sql
+-- Check ID prefix distribution in a specific GOLD table
+-- Replace organism_v2 with e.g. study, biosample, or analysis_project
+SELECT LEFT(gold_id, 2) AS prefix, COUNT(*) AS cnt
+FROM "gold-db-2 postgresql".gold.organism_v2
+GROUP BY LEFT(gold_id, 2) ORDER BY cnt DESC
+```
+
 ```sql
 -- Example: all GOLD biosamples
 SELECT * FROM "gold-db-2 postgresql".gold.biosample LIMIT 10
@@ -230,13 +248,25 @@ For bulk loading (not production ingest), there is a separate pipeline in the
 
 Both use `config/gold-key.txt` for HTTP Basic Auth credentials against the NMDC-specific API.
 
+**Performance:** ~22 studies/min; ~3.5–4 hours for the full ~4,760 studies-with-biosamples set.
+
+**Two-level resume protection:**
+1. MongoDB check (default `--resume`): skips studies already present in the target collection — no API call made.
+2. Disk cache (`cache_from_local_mongodb/`): serves cached responses for studies not yet in Mongo — still no API call.
+
 The `gold_tool.py` pipeline populates the `gold_metadata` MongoDB database:
-| Collection | Key Field | Records |
-|------------|-----------|---------|
-| `studies` | `studyGoldId` | ~4,700 |
-| `biosamples` | `biosampleGoldId` | ~217,000 |
-| `seq_projects` | `projectGoldId` | ~221,000 |
-| `study_import_failures` | `studyGoldId` | Error traces |
+| Collection | Key Field | Notes |
+|------------|-----------|-------|
+| `studies` | `studyGoldId` | ~4,700 records |
+| `biosamples` | `biosampleGoldId` | ~217,000 records |
+| `seq_projects` | `projectGoldId` | ~221,000 records |
+| `study_import_failures` | `studyGoldId` | Error traces with timestamps |
+
+**nmdc-runtime filtering** (applies to Workflow 2 / `GoldStudyTranslator`, not `gold_tool.py`):
+- Sequencing strategy must be **Metagenome** or **Metatranscriptome**
+- For DOE JGI projects, status must be **"Permanent Draft"** or **"Complete and Published"**
+- Biosample ingested only if linked to ≥1 valid project; Analysis Project only if all associated projects are valid
+- Can be disabled: `GoldStudyTranslator(enable_biosample_filtering=False)`
 
 ---
 
@@ -256,7 +286,7 @@ After GOLD data is loaded into MongoDB (via `sample-annotator`), the
 ```bash
 make -f Makefiles/gold.Makefile flatten-gold-biosamples    # -> flattened_biosamples + flattened_biosample_contacts
 make -f Makefiles/gold.Makefile flatten-gold-studies        # -> flattened_studies + flattened_studies_contacts
-make -f Makefiles/gold.Makefile flatten-gold-seq-projects   # -> flattened_seq_projects + contacts/publications/experiments
+make -f Makefiles/gold.Makefile flatten-gold-seq-projects   # -> flattened_seq_projects + contacts/publications/experiments (SRA)
 make -f Makefiles/gold.Makefile export-gold-flattened-csv   # -> local/csv_exports/
 ```
 
@@ -441,3 +471,7 @@ Three code generations of GOLD date handling:
 | Alicia Clum | JGI isolate metadata, sample submission forms | NMDC Slack, DMs |
 | Patrick Kalita | NMDC submission portal, runtime GOLD translator | NMDC Slack `#nmdc-server` |
 | Sierra Moxon | nmdc-runtime, cross-lakehouse queries | NMDC Slack `#ber_lakehouse` |
+| Gazi Mahmud | KBase lakehouse ingestion | NMDC Slack `#ber_lakehouse` |
+| Adam Ireland | KBase ingestion module | NMDC Slack `#ber_lakehouse` |
+| Paramvir Dehal | BERIL (agentic AI over KBase lakehouse) | NMDC/LBL |
+| Chris Petzold (JBEI) | Ganymede (Google BigQuery), BERIL integration | Via Sierra Moxon |
