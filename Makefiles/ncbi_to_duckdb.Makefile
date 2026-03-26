@@ -134,7 +134,8 @@ make-database: $(OUTPUT_DIR)
 		mongoexport --uri="$(MONGO_URI)" \
 			--collection="$$collection" \
 			--type=json \
-			--out="$$json_file" 2>/dev/null; \
+			--quiet \
+			--out="$$json_file"; \
 		if [ ! -f "$$json_file" ] || [ ! -s "$$json_file" ]; then \
 			echo "  ✗ FAILED: mongoexport produced no output for $$collection"; \
 			failed_collections="$$failed_collections $$collection"; \
