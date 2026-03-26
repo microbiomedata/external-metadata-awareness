@@ -6,7 +6,7 @@ ifdef ENV_FILE
   ENV_FILE_OPTION := --env-file $(ENV_FILE)
 endif
 
-.PHONY: count-biosamples-per-harmonized-name count-biosamples-step1 count-bioprojects-step2 \
+.PHONY: count-biosamples-step1 count-bioprojects-step2 \
 count-bioprojects-step2a count-bioprojects-step2b count-bioprojects-step2c count-bioprojects-step2d \
 merge-counts-step3 index-harmonized-name-counts count-biosamples-and-bioprojects-per-harmonized-name \
 count-unit-assertions count-mixed-content count-measurement-evidence run-measurement-discovery \
@@ -49,23 +49,15 @@ count-biosamples-per-hn-step3:
 
 count-biosamples-per-hn-cleanup:
 	@echo "Cleaning up temp collections..."
-	mongosh "$(MONGO_URI)" --eval "db.getCollection('__tmp_hn_counts').drop(); db.getCollection('__tmp_hn_totals').drop(); print('Dropped __tmp_hn_counts and __tmp_hn_totals');"
-
-# Meta-target: Run all steps in sequence
-count-biosamples-per-harmonized-name-atomic: count-biosamples-per-hn-step1 count-biosamples-per-hn-step2 count-biosamples-per-hn-step3
-	@$(MAKE) -f Makefiles/measurement_discovery.Makefile count-biosamples-per-hn-cleanup MONGO_URI="$(MONGO_URI)"
-	@echo "✅ Biosample counting complete (atomic steps)"
-
-# Original monolithic target (deprecated - prefer atomic version above)
-count-biosamples-per-harmonized-name:
-	@date
-	@echo "Counting biosamples per harmonized_name..."
 	$(RUN) mongo-js-executor \
 		--mongo-uri "$(MONGO_URI)" \
 		$(ENV_FILE_OPTION) \
-		--js-file mongo-js/count_biosamples_per_harmonized_name.js \
+		--js-file mongo-js/count_biosamples_per_hn_cleanup.js \
 		--verbose
-	@date
+
+# Meta-target: Run all steps in sequence
+count-biosamples-per-harmonized-name-atomic: count-biosamples-per-hn-step1 count-biosamples-per-hn-step2 count-biosamples-per-hn-step3 count-biosamples-per-hn-cleanup
+	@echo "✅ Biosample counting complete (atomic steps)"
 
 # Step 1: Count unique biosamples per harmonized_name (uses JavaScript file to avoid $addToSet memory limit)
 count-biosamples-step1:
@@ -126,40 +118,21 @@ count-bioprojects-step2: count-bioprojects-step2a count-bioprojects-step2b count
 
 # Step 3: Merge biosample and bioproject counts
 merge-counts-step3:
-	@date
 	@echo "Step 3: Creating final index and merging biosample and bioproject counts..."
-	mongosh "$(MONGO_URI)" --eval "\
-		print('[' + new Date().toISOString() + '] Ensuring indexes exist before merge'); \
-		try { db.temp_bioproject_counts.createIndex({harmonized_name: 1}, {background: true}); } catch(e) { print('temp index exists: ' + e.message); } \
-		try { db.temp_biosample_counts.createIndex({harmonized_name: 1}, {background: true}); } catch(e) { print('biosample temp index exists: ' + e.message); } \
-		print('[' + new Date().toISOString() + '] Dropping final collection'); \
-		db.harmonized_name_usage_stats.drop(); \
-		print('[' + new Date().toISOString() + '] Merging counts'); \
-		db.temp_biosample_counts.aggregate([ \
-			{ \$$lookup: { from: 'temp_bioproject_counts', localField: 'harmonized_name', foreignField: 'harmonized_name', as: 'bioproject_data' } }, \
-			{ \$$project: { harmonized_name: 1, unique_biosamples_count: 1, unique_bioprojects_count: { \$$ifNull: [{ \$$arrayElemAt: ['\$$bioproject_data.unique_bioprojects_count', 0] }, 0] } } }, \
-			{ \$$sort: { unique_biosamples_count: -1 } }, \
-			{ \$$out: 'harmonized_name_usage_stats' } \
-		], { allowDiskUse: true }); \
-		print('[' + new Date().toISOString() + '] Created ' + db.harmonized_name_usage_stats.countDocuments() + ' final stats'); \
-		db.temp_biosample_counts.drop(); \
-		db.temp_bioproject_counts.drop(); \
-		print('[' + new Date().toISOString() + '] Cleaned up temp collections');"
-	@date
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/merge_usage_stats_step3.js \
+		--verbose
 
 # Index harmonized_name_usage_stats for efficient querying of biosample/bioproject counts per field
 index-harmonized-name-counts:
 	@echo "Creating indexes on harmonized_name_usage_stats collection..."
-	mongosh "$(MONGO_URI)" --eval "\
-		print('[' + new Date().toISOString() + '] Creating index on harmonized_name'); \
-		try { db.harmonized_name_usage_stats.createIndex({harmonized_name: 1}, {background: true}); } catch(e) { print('harmonized_name index exists: ' + e.message); } \
-		print('[' + new Date().toISOString() + '] Creating index on unique_biosamples_count'); \
-		try { db.harmonized_name_usage_stats.createIndex({unique_biosamples_count: 1}, {background: true}); } catch(e) { print('biosamples_count index exists: ' + e.message); } \
-		print('[' + new Date().toISOString() + '] Creating index on unique_bioprojects_count'); \
-		try { db.harmonized_name_usage_stats.createIndex({unique_bioprojects_count: 1}, {background: true}); } catch(e) { print('bioprojects_count index exists: ' + e.message); } \
-		print('[' + new Date().toISOString() + '] Creating compound index for sorting/filtering'); \
-		try { db.harmonized_name_usage_stats.createIndex({unique_biosamples_count: -1, unique_bioprojects_count: -1}, {background: true}); } catch(e) { print('compound index exists: ' + e.message); } \
-		print('[' + new Date().toISOString() + '] All indexes created successfully');"
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/index_harmonized_name_usage_stats.js \
+		--verbose
 
 # Combined target: all three steps plus indexing
 count-biosamples-and-bioprojects-per-harmonized-name: count-biosamples-step1 count-bioprojects-step2 merge-counts-step3 index-harmonized-name-counts

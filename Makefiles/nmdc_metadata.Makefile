@@ -263,7 +263,7 @@ export-nmdc-parquet: export-nmdc-duckdb
 .PHONY: analyze-nmdc-biosample-coverage
 analyze-nmdc-biosample-coverage:
 ifndef CSV_FILE
-	@$(MAKE) --no-print-directory -f Makefiles/nmdc_metadata.Makefile export-flattened-biosample-csv
+	@$(MAKE) --no-print-directory -f Makefiles/nmdc_metadata.Makefile export-flattened-biosample-csv MONGO_URI="$(MONGO_URI)" ENV_FILE="$(ENV_FILE)"
 	$(RUN) analyze-nmdc-biosample-coverage \
 		--csv-file $(NMDC_BIOSAMPLE_CSV) \
 		--output-file $(OUTPUT_FILE)

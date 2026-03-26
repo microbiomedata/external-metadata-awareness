@@ -12,6 +12,8 @@ RUN=poetry run
 MONGO_URI ?= mongodb://localhost:27017/gold_metadata # this conflicts with earlier imports into the root Makefile, so always user make -f
 
 # Optional environment file (user must set ENV_FILE externally if they want it)
+# NOTE: GOLD scripts use --dotenv-path (not --env-file like other CLIs in this repo).
+# This is a known inconsistency — the GOLD flatten scripts predate the convention.
 ifdef ENV_FILE
   ENV_FILE_OPTION := --dotenv-path $(ENV_FILE)
 endif

@@ -1,7 +1,10 @@
 RUN=poetry run
 
 # Default MongoDB connection
-MONGO_URI ?= mongodb://localhost:27017/sra_metadata  # this conflicts with earlier imports into the root Makefile, so always user make -f
+MONGO_URI ?= mongodb://localhost:27017/sra_metadata  # this conflicts with earlier imports into the root Makefile, so always use make -f
+
+# SRA pairs are loaded into ncbi_metadata (not sra_metadata)
+NCBI_MONGO_URI ?= mongodb://localhost:27017/ncbi_metadata
 
 # Optional environment file (user must set ENV_FILE externally if they want it)
 ifdef ENV_FILE
@@ -159,7 +162,7 @@ load-sra-pairs-to-mongo: local/sra_biosample_bioproject_pairs.tsv
 	@echo "Loading SRA biosample-bioproject pairs into MongoDB..."
 	$(RUN) sra-accession-pairs-to-mongo \
 		--file-path $< \
-		--mongo-uri "mongodb://localhost:27017/ncbi_metadata" \
+		--mongo-uri "$(NCBI_MONGO_URI)" \
 		$(ENV_FILE_OPTION) \
 		--collection sra_biosamples_bioprojects \
 		--biosample-column biosample \
@@ -172,7 +175,7 @@ load-sra-pairs-to-mongo: local/sra_biosample_bioproject_pairs.tsv
 # Creates indexes on the sra_biosamples_bioprojects collection
 index-sra-pairs:
 	@echo "Creating indexes on sra_biosamples_bioprojects collection..."
-	mongosh mongodb://localhost:27017/ncbi_metadata --eval "\
+	mongosh "$(NCBI_MONGO_URI)" --eval "\
 		db.sra_biosamples_bioprojects.createIndex({biosample_accession: 1}, {name: 'idx_biosample'}); \
 		db.sra_biosamples_bioprojects.createIndex({bioproject_accession: 1}, {name: 'idx_bioproject'}); \
 		db.sra_biosamples_bioprojects.createIndex({biosample_accession: 1, bioproject_accession: 1}, {name: 'idx_compound'}); \
