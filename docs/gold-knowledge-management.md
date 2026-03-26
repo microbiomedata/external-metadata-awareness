@@ -1,5 +1,19 @@
 # NMDC-GOLD Metadata Ingestion and Management Pipeline
 
+> **This document has been superseded.** The canonical reference is now:
+>
+> **[gold-and-jgi-data-access.md](gold-and-jgi-data-access.md)**
+>
+> That document consolidates all GOLD and JGI data access methods, authentication,
+> the EMA flattening pipeline, non-GOLD JGI data in the lakehouse, what NMDC uses
+> in production, and all related repos.
+
+---
+
+*The original content below is retained for historical reference but may be outdated.*
+
+---
+
 ## Overview
 
 This document provides a complete technical overview of how metadata from the **Genomes Online Database (GOLD)** is ingested, cached, and structured for use within the **National Microbiome Data Collaborative (NMDC)**. This pipeline was developed to overcome key limitations in GOLD's available interfaces and formats, enabling:
