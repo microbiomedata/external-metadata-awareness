@@ -56,8 +56,7 @@ count-biosamples-per-hn-cleanup:
 		--verbose
 
 # Meta-target: Run all steps in sequence
-count-biosamples-per-harmonized-name-atomic: count-biosamples-per-hn-step1 count-biosamples-per-hn-step2 count-biosamples-per-hn-step3
-	@$(MAKE) -f Makefiles/measurement_discovery.Makefile count-biosamples-per-hn-cleanup MONGO_URI="$(MONGO_URI)" ENV_FILE="$(ENV_FILE)"
+count-biosamples-per-harmonized-name-atomic: count-biosamples-per-hn-step1 count-biosamples-per-hn-step2 count-biosamples-per-hn-step3 count-biosamples-per-hn-cleanup
 	@echo "✅ Biosample counting complete (atomic steps)"
 
 # Step 1: Count unique biosamples per harmonized_name (uses JavaScript file to avoid $addToSet memory limit)
