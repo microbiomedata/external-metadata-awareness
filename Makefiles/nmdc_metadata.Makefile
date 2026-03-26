@@ -239,7 +239,8 @@ export-nmdc-duckdb:
 		mongoexport --uri="$(MONGO_URI)" \
 			--collection="$$collection" \
 			--type=json \
-			--out="$$json_file" 2>&1 | grep -v "connected to"; \
+			--quiet \
+			--out="$$json_file"; \
 		if [ ! -s "$$json_file" ]; then \
 			echo "  ✗ FAILED: mongoexport produced no output for $$collection"; \
 			continue; \
@@ -263,7 +264,7 @@ export-nmdc-parquet: export-nmdc-duckdb
 .PHONY: analyze-nmdc-biosample-coverage
 analyze-nmdc-biosample-coverage:
 ifndef CSV_FILE
-	@$(MAKE) --no-print-directory -f Makefiles/nmdc_metadata.Makefile export-flattened-biosample-csv
+	@$(MAKE) --no-print-directory -f Makefiles/nmdc_metadata.Makefile export-flattened-biosample-csv MONGO_URI="$(MONGO_URI)" ENV_FILE="$(ENV_FILE)"
 	$(RUN) analyze-nmdc-biosample-coverage \
 		--csv-file $(NMDC_BIOSAMPLE_CSV) \
 		--output-file $(OUTPUT_FILE)
