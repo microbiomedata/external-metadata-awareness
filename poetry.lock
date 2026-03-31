@@ -4024,14 +4024,14 @@ test-extras = ["pytest-mpl", "pytest-randomly"]
 
 [[package]]
 name = "nmdc-submission-schema"
-version = "11.16.0"
+version = "11.17.0"
 description = "The NMDC submission schema"
 optional = false
 python-versions = "<4.0,>=3.10"
 groups = ["main"]
 files = [
-    {file = "nmdc_submission_schema-11.16.0-py3-none-any.whl", hash = "sha256:e6816ec3c33f3652a5cb494267a015eca9c5af056ca771627bec41cf0e20f40f"},
-    {file = "nmdc_submission_schema-11.16.0.tar.gz", hash = "sha256:54aedc5d76c0dadd0876014b575cc5fb54569c5c181a8b04a0d6ffcc46b6d0ce"},
+    {file = "nmdc_submission_schema-11.17.0-py3-none-any.whl", hash = "sha256:bd36933a27293e22945f2c992acae4460df1d945d02c1cc09d1e20242b28a24d"},
+    {file = "nmdc_submission_schema-11.17.0.tar.gz", hash = "sha256:6f78dfb33b69f37ae9a11cb8d519199928c1038da08ee90b9d1db902705b811c"},
 ]
 
 [package.dependencies]
@@ -8001,4 +8001,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "6a60750b36ce80c841b53391e88979f6fc5b3f01792e52f9be5cdcc0c0eacdf1"
+content-hash = "6f6f723a50462e08f6b42b631e10f9fdabbccce2d5de30551cf0dd185dca5296"
