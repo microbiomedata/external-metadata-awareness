@@ -139,7 +139,7 @@ def main():
             # Show minimal connection info without duplicating the output from get_mongo_client
             if not args.verbose:
                 logger.debug("Connection URI prepared")
-            logger.debug(f"Using credentials: {result['has_credentials']}")
+            logger.debug("Credential presence determined")
 
             logger.debug("Sample mongosh command omitted from logs for security")
         else:
