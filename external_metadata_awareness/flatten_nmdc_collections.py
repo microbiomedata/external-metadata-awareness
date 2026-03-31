@@ -615,7 +615,7 @@ def main(mongo_uri: str, mongo_db: Optional[str] = None, auth: bool = False, env
         else:
             db_name = 'nmdc'  # Default database name
 
-    logger.info(f"Using database: {db_name}")
+    logger.debug(f"Using database: {db_name}")
     db = client[db_name]
 
     # Set up ontology tools

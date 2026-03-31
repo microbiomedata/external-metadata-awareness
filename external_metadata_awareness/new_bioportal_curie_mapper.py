@@ -1,9 +1,12 @@
 import datetime
+import logging
 import os
 import pprint
 import urllib.parse
 import click
 from typing import List, Dict
+
+logger = logging.getLogger(__name__)
 
 import requests
 import requests_cache
@@ -113,7 +116,7 @@ def fetch_mappings(mappings_url, api_key, verbose=False):
         else:
             full_url = mappings_url + f"?apikey={api_key}"
         if verbose:
-            print(f"Following mappings URL: {full_url}")
+            logger.debug(f"Following mappings URL: {mappings_url}")  # Don't log apikey
         response = requests.get(full_url, timeout=10)
         response.raise_for_status()
         mappings_obj = response.json()
@@ -182,7 +185,7 @@ def process_document(doc, collection, api_key, verbose=False):
     data = bioportal_info["data"]
     pref_label = data.get("prefLabel")
     if verbose:
-        print(f"BioPortal prefLabel for {curie}: {pref_label}")
+        logger.debug(f"BioPortal prefLabel for {curie}: {pref_label}")
 
     update_fields = {
         "label": pref_label,
