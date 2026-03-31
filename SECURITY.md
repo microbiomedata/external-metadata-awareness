@@ -6,7 +6,7 @@ If you discover a security vulnerability in this project, please report it respo
 
 **Do not open a public GitHub issue for security vulnerabilities.**
 
-Instead, please use GitHub private vulnerability reporting for this repository.
+Instead, please use GitHub private vulnerability reporting for this repository. If that is unavailable, please email your report to [MAM@lbl.gov](mailto:MAM@lbl.gov) so the maintainers can review it privately.
 
 ## Supported Versions
 

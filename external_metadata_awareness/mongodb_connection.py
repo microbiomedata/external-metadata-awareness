@@ -89,14 +89,15 @@ def get_mongo_client(
                 final_uri = f"{protocol}://{username}:{password}@{rest}"
                 
             if debug:
-                logger.debug(f"Loaded credentials from .env file - Username: {username}")
+                logger.debug("Loaded credentials from .env file")
         else:
             if debug:
                 logger.debug("No credentials found in .env file, continuing with unauthenticated connection")
     
-    # Display the redacted URI for debug output
+    # Avoid logging connection URIs, even redacted ones, to keep credentials
+    # and infrastructure details out of logs.
     if debug:
-        logger.debug(f"Final connection URI: {_redact_uri(final_uri)}")
+        logger.debug("Final connection URI prepared")
     
     # For dry runs, return connection info instead of a client
     if dry_run:
@@ -110,7 +111,7 @@ def get_mongo_client(
     
     # Verify connection information
     if debug:
-        logger.debug(f"MongoDB client address: {client.address}")
+        logger.debug("MongoDB client initialized")
     
     return client
 
@@ -137,12 +138,10 @@ def main():
             
             # Show minimal connection info without duplicating the output from get_mongo_client
             if not args.verbose:
-                logger.debug(f"Final connection URI: {_redact_uri(result['uri'])}")
+                logger.debug("Connection URI prepared")
             logger.debug(f"Using credentials: {result['has_credentials']}")
 
-            # Show a sample mongosh command with redacted credentials
-            logger.debug(f"\nSample mongosh command:")
-            logger.debug(f'mongosh "{_redact_uri(result["uri"])}"')
+            logger.debug("Sample mongosh command omitted from logs for security")
         else:
             # Actually connect to the database
             client = get_mongo_client(
