@@ -597,7 +597,7 @@ def main(mongo_uri: str, mongo_db: Optional[str] = None, auth: bool = False, env
         mongo_uri = f"mongodb://{username}:{password}@{mongo_host}:{mongo_port}/?authSource={auth_source}"
         logger.info(f"Using authenticated connection to {mongo_host}:{mongo_port}")
     else:
-        logger.info(f"Using connection string: {mongo_uri}")
+        logger.info("Using provided MongoDB connection string")
 
     # Connect to MongoDB
     client = MongoClient(mongo_uri)
@@ -615,7 +615,7 @@ def main(mongo_uri: str, mongo_db: Optional[str] = None, auth: bool = False, env
         else:
             db_name = 'nmdc'  # Default database name
 
-    logger.debug(f"Using database: {db_name}")
+    logger.debug("Using configured database")
     db = client[db_name]
 
     # Set up ontology tools

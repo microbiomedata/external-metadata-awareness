@@ -116,7 +116,7 @@ def fetch_mappings(mappings_url, api_key, verbose=False):
         else:
             full_url = mappings_url + f"?apikey={api_key}"
         if verbose:
-            logger.debug(f"Following mappings URL: {mappings_url}")  # Don't log apikey
+            logger.debug("Following BioPortal mappings link")
         response = requests.get(full_url, timeout=10)
         response.raise_for_status()
         mappings_obj = response.json()
@@ -161,7 +161,7 @@ def fetch_mappings(mappings_url, api_key, verbose=False):
 def process_document(doc, collection, api_key, verbose=False):
     """
     Process a document: expand its CURIE, fetch BioPortal info, and update the document with fetched data and mappings.
-    Logs a summary message with the CURIE, expansion status, the prefLabel from BioPortal, and mapping details.
+    Verbose mode emits generic progress messages without logging CURIEs, labels, or URLs.
     """
     curie = doc.get("curie_uc")
 
@@ -185,7 +185,7 @@ def process_document(doc, collection, api_key, verbose=False):
     data = bioportal_info["data"]
     pref_label = data.get("prefLabel")
     if verbose:
-        logger.debug(f"BioPortal prefLabel for {curie}: {pref_label}")
+        logger.debug("Fetched BioPortal preferred label")
 
     update_fields = {
         "label": pref_label,
