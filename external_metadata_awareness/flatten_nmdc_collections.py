@@ -8,6 +8,10 @@ This script creates the following collections from NMDC data:
   - flattened_study: Flattened study records with environmental terms enhanced with ontology information
   - flattened_study_associated_dois: Extracted DOI information from studies
   - flattened_study_has_credit_associations: Extracted credit association information from studies
+  - flattened_data_generation: Flattened data generation records (sequencing events) with nmdc_type preserved
+  - flattened_workflow_execution: Flattened workflow execution records with nmdc_type preserved
+  - flattened_workflow_execution_mags: Extracted MAG bin records from workflow executions
+  - flattened_data_object: Flattened data object records with nmdc_type preserved
 
 The flattening process:
 1. Fetches data from local MongoDB
@@ -33,6 +37,8 @@ from typing import Dict, List, Set, Any, Optional
 
 import click
 import dotenv
+import pyarrow as pa
+import pyarrow.parquet as pq
 from linkml_runtime import SchemaView
 from oaklib import get_adapter
 from pymongo import MongoClient
@@ -182,7 +188,8 @@ def stringify_singleton_dict_list(dict_list: List[Dict]) -> str:
 
 
 def flatten_documents(documents: List[Dict], controlled_term_slots: Optional[Set[str]] = None,
-                      skip_fields: Optional[Set[str]] = None) -> List[Dict]:
+                      skip_fields: Optional[Set[str]] = None,
+                      keep_type_as: Optional[str] = None) -> List[Dict]:
     """
     Flattens nested document structures for easier querying:
     1. Converts nested dictionaries to fields with underscore notation
@@ -194,6 +201,7 @@ def flatten_documents(documents: List[Dict], controlled_term_slots: Optional[Set
         documents: List of documents to flatten
         controlled_term_slots: Fields with ControlledTermValue range
         skip_fields: Fields to skip during flattening
+        keep_type_as: If set, rename the top-level 'type' field to this name instead of skipping it
 
     Returns:
         List of flattened documents with fields in alphabetical order
@@ -212,7 +220,11 @@ def flatten_documents(documents: List[Dict], controlled_term_slots: Optional[Set
 
         for key, value in doc.items():
             # Skip type fields and specified skip fields
-            if key == "type" or key in skip_fields:
+            if key == "type":
+                if keep_type_as:
+                    temp_doc[keep_type_as] = value
+                continue
+            if key in skip_fields:
                 continue
 
             # Handle simple scalar values directly
@@ -516,6 +528,46 @@ def extract_chem_administration(biosamples: List[Dict]) -> List[Dict]:
     return chem_entries
 
 
+def extract_mags_list(workflow_executions: List[Dict]) -> List[Dict]:
+    """
+    Extracts MAG bin information from workflow executions into a separate collection.
+    Each MAG bin becomes its own document linked back to the parent workflow execution.
+
+    Args:
+        workflow_executions: List of workflow execution documents
+
+    Returns:
+        List of MAG bin entries with workflow_execution_id added, fields in alphabetical order
+    """
+    mag_entries = []
+
+    for wf in tqdm(workflow_executions, desc="Extracting MAG bins"):
+        wf_id = wf.get("id")
+        mags_list = wf.get("mags_list", [])
+
+        for mag in mags_list:
+            if isinstance(mag, dict):
+                temp_entry = {"workflow_execution_id": wf_id}
+                for k, v in mag.items():
+                    if k == "type":
+                        continue
+                    if isinstance(v, list) and all(
+                            isinstance(item, (str, int, float, bool, type(None))) for item in v):
+                        temp_entry[k] = "|".join(map(str, v))
+                    elif isinstance(v, (str, int, float, bool, type(None))):
+                        temp_entry[k] = v
+                    else:
+                        temp_entry[k] = stringify_value(v)
+
+                ordered_entry = {}
+                for key in sorted(temp_entry.keys()):
+                    ordered_entry[key] = temp_entry[key]
+
+                mag_entries.append(ordered_entry)
+
+    return mag_entries
+
+
 def calculate_field_counts(documents: List[Dict]) -> List[Dict]:
     """
     Calculates the frequency of each field across all documents.
@@ -542,6 +594,75 @@ def calculate_field_counts(documents: List[Dict]) -> List[Dict]:
     return count_entries
 
 
+def export_to_parquet(name: str, documents: List[Dict], output_dir: pathlib.Path) -> Optional[pathlib.Path]:
+    """
+    Export a list of flattened documents directly to a Parquet file via PyArrow.
+
+    All values are cast to string to avoid mixed-type inference failures.
+    Numeric columns that are consistently typed survive round-tripping through
+    DuckDB or Spark with auto-detect, so string-safety here is conservative
+    but correct.
+
+    Args:
+        name: Collection name (used as filename)
+        documents: List of flattened document dicts
+        output_dir: Directory to write the parquet file
+
+    Returns:
+        Path to the written parquet file, or None if no documents
+    """
+    if not documents:
+        return None
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    out_path = output_dir / f"{name}.parquet"
+
+    # Collect all field names across all documents (union schema)
+    all_fields = sorted({k for doc in documents for k in doc.keys()})
+
+    # Build columns as lists, casting everything to string for safety
+    columns = {field: [] for field in all_fields}
+    for doc in documents:
+        for field in all_fields:
+            val = doc.get(field)
+            if val is None:
+                columns[field].append(None)
+            else:
+                columns[field].append(str(val))
+
+    table = pa.table({field: pa.array(values, type=pa.string()) for field, values in columns.items()})
+    pq.write_table(table, out_path, compression='zstd')
+
+    size_mb = out_path.stat().st_size / (1024 * 1024)
+    logger.info(f"  {name:40s} {len(documents):>10,} rows  {size_mb:8.1f} MB  -> {out_path}")
+    return out_path
+
+
+# All collection groups that can be processed
+COLLECTION_GROUPS = {
+    'studies': {
+        'source': 'study_set',
+        'outputs': ['flattened_study', 'flattened_study_associated_dois', 'flattened_study_has_credit_associations'],
+    },
+    'biosamples': {
+        'source': 'biosample_set',
+        'outputs': ['flattened_biosample', 'flattened_biosample_chem_administration', 'flattened_biosample_field_counts'],
+    },
+    'data_generation': {
+        'source': 'data_generation_set',
+        'outputs': ['flattened_data_generation'],
+    },
+    'workflow_execution': {
+        'source': 'workflow_execution_set',
+        'outputs': ['flattened_workflow_execution', 'flattened_workflow_execution_mags'],
+    },
+    'data_object': {
+        'source': 'data_object_set',
+        'outputs': ['flattened_data_object'],
+    },
+}
+
+
 @click.command()
 @click.option('--mongo-uri', default='mongodb://localhost:27017/nmdc',
               help='MongoDB connection URI. Can include database name.')
@@ -551,7 +672,16 @@ def calculate_field_counts(documents: List[Dict]) -> List[Dict]:
               help='Use authenticated connection from .env file')
 @click.option('--env-file', default='local/.env',
               help='Path to .env file for authenticated connections.')
-def main(mongo_uri: str, mongo_db: Optional[str] = None, auth: bool = False, env_file: str = 'local/.env'):
+@click.option('--collections', default=None, type=str,
+              help='Comma-separated list of collection groups to process. '
+                   f'Available: {", ".join(COLLECTION_GROUPS.keys())}. '
+                   'Default: all.')
+@click.option('--export-parquet', default=None, type=click.Path(path_type=pathlib.Path),
+              help='Export flattened collections directly to Parquet files in this directory '
+                   '(bypasses the JSON->DuckDB->Parquet pipeline).')
+def main(mongo_uri: str, mongo_db: Optional[str] = None, auth: bool = False,
+         env_file: str = 'local/.env', collections: Optional[str] = None,
+         export_parquet: Optional[pathlib.Path] = None):
     """
     Flattens NMDC collections and creates enhanced views for easier querying.
 
@@ -561,7 +691,30 @@ def main(mongo_uri: str, mongo_db: Optional[str] = None, auth: bool = False, env
     Authentication options:
       - Without --auth: Uses connection string as provided
       - With --auth: Loads credentials from .env file (MONGO_USERNAME, MONGO_PASSWORD, etc.)
+
+    Collection selection:
+      --collections studies,biosamples       Only process studies and biosamples
+      --collections workflow_execution       Only process workflow executions
+
+    Direct Parquet export:
+      --export-parquet local/parquet/         Write Parquet files directly (skips DuckDB)
     """
+    # Parse collection groups to process
+    if collections:
+        selected_groups = {g.strip() for g in collections.split(',')}
+        invalid = selected_groups - set(COLLECTION_GROUPS.keys())
+        if invalid:
+            logger.error(f"Unknown collection groups: {', '.join(sorted(invalid))}. "
+                         f"Available: {', '.join(sorted(COLLECTION_GROUPS.keys()))}")
+            sys.exit(1)
+    else:
+        selected_groups = set(COLLECTION_GROUPS.keys())
+
+    logger.info(f"Processing collection groups: {', '.join(sorted(selected_groups))}")
+
+    # Determine if ontology tools are needed (only for studies and biosamples)
+    needs_ontology = bool(selected_groups & {'studies', 'biosamples'})
+
     # Set up MongoDB connection
     if auth:
         # Check if env file exists
@@ -618,36 +771,43 @@ def main(mongo_uri: str, mongo_db: Optional[str] = None, auth: bool = False, env
     logger.debug(f"Using database: {db_name}")
     db = client[db_name]
 
-    # Set up ontology tools
-    logger.info("Setting up ontology tools...")
-    ontology_list = ["envo", "pato", "uberon"]
-    label_cache, obsolete_terms = build_ontology_tools(ontology_list)
-    logger.info(f"Loaded {len(label_cache)} ontology labels and {len(obsolete_terms)} obsolete terms")
-
-    # Load NMDC schema
-    logger.info("Loading NMDC schema...")
-    schema_view = SchemaView(NMDC_SCHEMA_URL)
-    schema_usage_index = schema_view.usage_index()
-
-    # Identify slots using ControlledTermValue
+    # Set up ontology tools (only needed for studies/biosamples env field enhancement)
+    label_cache = {}
+    obsolete_terms = []
     controlled_term_slots = set()
-    for usage_type in ['ControlledTermValue', 'ControlledIdentifiedTermValue']:
-        if usage_type in schema_usage_index:
-            for usage in schema_usage_index[usage_type]:
-                controlled_term_slots.add(usage.slot)
+    env_id_fields = []
 
-    logger.info(f"Found {len(controlled_term_slots)} slots using ControlledTermValue")
+    if needs_ontology:
+        logger.info("Setting up ontology tools...")
+        ontology_list = ["envo", "pato", "uberon"]
+        label_cache, obsolete_terms = build_ontology_tools(ontology_list)
+        logger.info(f"Loaded {len(label_cache)} ontology labels and {len(obsolete_terms)} obsolete terms")
 
-    # Define environmental ID fields to enhance
-    env_id_fields = [
-        'env_broad_scale_term_id', 'env_local_scale_term_id', 'env_medium_term_id',
-        'env_broad_scale_id', 'env_local_scale_id', 'env_medium_id',
-        'envoBroadScale_id', 'envoLocalScale_id', 'envoMedium_id',
-    ]
+        # Load NMDC schema
+        logger.info("Loading NMDC schema...")
+        schema_view = SchemaView(NMDC_SCHEMA_URL)
+        schema_usage_index = schema_view.usage_index()
+
+        # Identify slots using ControlledTermValue
+        for usage_type in ['ControlledTermValue', 'ControlledIdentifiedTermValue']:
+            if usage_type in schema_usage_index:
+                for usage in schema_usage_index[usage_type]:
+                    controlled_term_slots.add(usage.slot)
+
+        logger.info(f"Found {len(controlled_term_slots)} slots using ControlledTermValue")
+
+        # Define environmental ID fields to enhance
+        env_id_fields = [
+            'env_broad_scale_term_id', 'env_local_scale_term_id', 'env_medium_term_id',
+            'env_broad_scale_id', 'env_local_scale_id', 'env_medium_id',
+            'envoBroadScale_id', 'envoLocalScale_id', 'envoMedium_id',
+        ]
+    else:
+        logger.info("Skipping ontology setup (not needed for selected collections)")
 
     # Find collection names
-    collections = db.list_collection_names()
-    logger.info(f"Available collections: {collections}")
+    db_collections = db.list_collection_names()
+    logger.info(f"Available collections: {db_collections}")
 
     collection_alternatives = {
         "study_set": ["study_set", "studies", "study"],
@@ -656,102 +816,116 @@ def main(mongo_uri: str, mongo_db: Optional[str] = None, auth: bool = False, env
 
     def find_collection(preferred, alternatives):
         """Find the best matching collection name"""
-        if preferred in collections:
+        if preferred in db_collections:
             return preferred
         for alt in alternatives:
-            if alt in collections:
+            if alt in db_collections:
                 logger.info(f"Using alternative collection: {alt} instead of {preferred}")
                 return alt
         logger.warning(f"Could not find collection {preferred} or alternatives")
         return preferred
 
+    # Collect all outputs: list of (collection_name, documents) pairs
+    outputs: List[tuple] = []
+
     # Process studies
-    study_collection = find_collection("study_set", collection_alternatives["study_set"])
-    logger.info(f"Processing studies from {study_collection}...")
-    studies = fetch_documents_from_mongodb(client, db_name, study_collection)
+    if 'studies' in selected_groups:
+        study_collection = find_collection("study_set", collection_alternatives["study_set"])
+        logger.info(f"Processing studies from {study_collection}...")
+        studies = fetch_documents_from_mongodb(client, db_name, study_collection)
 
-    # Create flattened studies
-    flattened_studies = flatten_documents(
-        studies,
-        controlled_term_slots=controlled_term_slots,
-        skip_fields={'associated_dois', 'has_credit_associations'}
-    )
+        flattened_studies = flatten_documents(
+            studies,
+            controlled_term_slots=controlled_term_slots,
+            skip_fields={'associated_dois', 'has_credit_associations'}
+        )
+        flattened_studies = enhance_env_fields(flattened_studies, label_cache, obsolete_terms, env_id_fields)
+        doi_entries = extract_associated_dois(studies)
+        credit_entries = extract_credit_associations(studies)
 
-    # Enhance environmental fields in studies
-    flattened_studies = enhance_env_fields(
-        flattened_studies,
-        label_cache,
-        obsolete_terms,
-        env_id_fields
-    )
-
-    # Extract specialized collections from studies
-    doi_entries = extract_associated_dois(studies)
-    credit_entries = extract_credit_associations(studies)
+        outputs.append(('flattened_study', flattened_studies))
+        outputs.append(('flattened_study_associated_dois', doi_entries))
+        outputs.append(('flattened_study_has_credit_associations', credit_entries))
 
     # Process biosamples
-    biosample_collection = find_collection("biosample_set", collection_alternatives["biosample_set"])
-    logger.info(f"Processing biosamples from {biosample_collection}...")
-    biosamples = fetch_documents_from_mongodb(client, db_name, biosample_collection)
+    if 'biosamples' in selected_groups:
+        biosample_collection = find_collection("biosample_set", collection_alternatives["biosample_set"])
+        logger.info(f"Processing biosamples from {biosample_collection}...")
+        biosamples = fetch_documents_from_mongodb(client, db_name, biosample_collection)
 
-    # Create flattened biosamples
-    flattened_biosamples = flatten_documents(
-        biosamples,
-        controlled_term_slots=controlled_term_slots,
-        skip_fields={"chem_administration"}
-    )
+        flattened_biosamples = flatten_documents(
+            biosamples,
+            controlled_term_slots=controlled_term_slots,
+            skip_fields={"chem_administration"}
+        )
+        flattened_biosamples = enhance_env_fields(flattened_biosamples, label_cache, obsolete_terms, env_id_fields)
+        chem_admin_entries = extract_chem_administration(biosamples)
+        biosample_field_counts = calculate_field_counts(flattened_biosamples)
 
-    # Enhance environmental fields in biosamples
-    flattened_biosamples = enhance_env_fields(
-        flattened_biosamples,
-        label_cache,
-        obsolete_terms,
-        env_id_fields
-    )
+        outputs.append(('flattened_biosample', flattened_biosamples))
+        outputs.append(('flattened_biosample_chem_administration', chem_admin_entries))
+        outputs.append(('flattened_biosample_field_counts', biosample_field_counts))
 
-    # Extract chemical administration data
-    chem_admin_entries = extract_chem_administration(biosamples)
+    # Process data_generation_set
+    if 'data_generation' in selected_groups:
+        if "data_generation_set" in db_collections:
+            logger.info("Processing data_generation_set...")
+            data_generations = fetch_documents_from_mongodb(client, db_name, "data_generation_set")
+            flattened_data_generations = flatten_documents(
+                data_generations,
+                controlled_term_slots=controlled_term_slots,
+                keep_type_as="nmdc_type"
+            )
+            outputs.append(('flattened_data_generation', flattened_data_generations))
+        else:
+            logger.warning("data_generation_set not found in database, skipping")
 
-    # Calculate field frequency statistics
-    biosample_field_counts = calculate_field_counts(flattened_biosamples)
+    # Process workflow_execution_set
+    if 'workflow_execution' in selected_groups:
+        if "workflow_execution_set" in db_collections:
+            logger.info("Processing workflow_execution_set...")
+            workflow_executions = fetch_documents_from_mongodb(client, db_name, "workflow_execution_set")
+            flattened_workflow_executions = flatten_documents(
+                workflow_executions,
+                controlled_term_slots=controlled_term_slots,
+                skip_fields={"mags_list"},
+                keep_type_as="nmdc_type"
+            )
+            mag_entries = extract_mags_list(workflow_executions)
+            outputs.append(('flattened_workflow_execution', flattened_workflow_executions))
+            outputs.append(('flattened_workflow_execution_mags', mag_entries))
+        else:
+            logger.warning("workflow_execution_set not found in database, skipping")
+
+    # Process data_object_set
+    if 'data_object' in selected_groups:
+        if "data_object_set" in db_collections:
+            logger.info("Processing data_object_set...")
+            data_objects = fetch_documents_from_mongodb(client, db_name, "data_object_set")
+            flattened_data_objects = flatten_documents(
+                data_objects,
+                controlled_term_slots=controlled_term_slots,
+                keep_type_as="nmdc_type"
+            )
+            outputs.append(('flattened_data_object', flattened_data_objects))
+        else:
+            logger.warning("data_object_set not found in database, skipping")
 
     # Insert into MongoDB
     logger.info("Inserting data into MongoDB...")
+    for name, docs in outputs:
+        db[name].drop()
+        if docs:
+            db[name].insert_many(docs)
+            logger.info(f"Inserted {len(docs):,} documents into {name}")
 
-    # Clear existing collections
-    db.flattened_biosample.drop()
-    db.flattened_biosample_chem_administration.drop()
-    db.flattened_biosample_field_counts.drop()
-    db.flattened_study.drop()
-    db.flattened_study_associated_dois.drop()
-    db.flattened_study_has_credit_associations.drop()
+    # Export to Parquet if requested
+    if export_parquet:
+        logger.info(f"Exporting to Parquet in {export_parquet}...")
+        for name, docs in outputs:
+            export_to_parquet(name, docs, export_parquet)
 
-    # Insert new data
-    if flattened_studies:
-        db.flattened_study.insert_many(flattened_studies)
-        logger.info(f"Inserted {len(flattened_studies)} documents into flattened_study")
-
-    if doi_entries:
-        db.flattened_study_associated_dois.insert_many(doi_entries)
-        logger.info(f"Inserted {len(doi_entries)} documents into flattened_study_associated_dois")
-
-    if credit_entries:
-        db.flattened_study_has_credit_associations.insert_many(credit_entries)
-        logger.info(f"Inserted {len(credit_entries)} documents into flattened_study_has_credit_associations")
-
-    if flattened_biosamples:
-        db.flattened_biosample.insert_many(flattened_biosamples)
-        logger.info(f"Inserted {len(flattened_biosamples)} documents into flattened_biosample")
-
-    if chem_admin_entries:
-        db.flattened_biosample_chem_administration.insert_many(chem_admin_entries)
-        logger.info(f"Inserted {len(chem_admin_entries)} documents into flattened_biosample_chem_administration")
-
-    if biosample_field_counts:
-        db.flattened_biosample_field_counts.insert_many(biosample_field_counts)
-        logger.info(f"Inserted {len(biosample_field_counts)} documents into flattened_biosample_field_counts")
-
-    logger.info("Done! Successfully created all flattened NMDC collections.")
+    logger.info("Done!")
 
 
 if __name__ == "__main__":
