@@ -14,7 +14,11 @@ NMDC_FLATTENED_COLLECTIONS = \
 	flattened_biosample_field_counts \
 	flattened_study \
 	flattened_study_associated_dois \
-	flattened_study_has_credit_associations
+	flattened_study_has_credit_associations \
+	flattened_data_generation \
+	flattened_workflow_execution \
+	flattened_workflow_execution_mags \
+	flattened_data_object
 
 ## Load environment variables from local/.env file if it exists
 #ifneq (,$(wildcard local/.env))
@@ -200,7 +204,17 @@ restore-to-authenticated: local/dumped-from-authenticated
 .PHONY: flatten-nmdc
 flatten-nmdc:
 	$(RUN) python external_metadata_awareness/flatten_nmdc_collections.py \
-		--mongo-uri "$(MONGO_URI)"
+		--mongo-uri "$(MONGO_URI)" $(if $(COLLECTIONS),--collections "$(COLLECTIONS)",)
+
+# Flatten and export directly to Parquet (skips JSON->DuckDB intermediate)
+# Usage: make -f ... flatten-nmdc-parquet
+# Usage: make -f ... flatten-nmdc-parquet COLLECTIONS=workflow_execution,data_generation
+.PHONY: flatten-nmdc-parquet
+flatten-nmdc-parquet:
+	$(RUN) python external_metadata_awareness/flatten_nmdc_collections.py \
+		--mongo-uri "$(MONGO_URI)" \
+		--export-parquet "$(NMDC_PARQUET_DIR)" \
+		$(if $(COLLECTIONS),--collections "$(COLLECTIONS)",)
 
 .PHONY: flatten-nmdc-auth
 flatten-nmdc-auth:
@@ -208,6 +222,7 @@ flatten-nmdc-auth:
 	  set -a && . local/.env.ncbi-loadbalancer.27778 && set +a && \
 		$(RUN) python external_metadata_awareness/flatten_nmdc_collections.py \
 			--mongo-uri "mongodb://$$MONGO_USERNAME:$$MONGO_PASSWORD@$$MONGO_HOST:$$MONGO_PORT/$$DEST_MONGO_DB?authSource=admin&authMechanism=SCRAM-SHA-256&directConnection=true" \
+			$(if $(COLLECTIONS),--collections "$(COLLECTIONS)",) \
 	)
 
 # Export flattened biosamples to CSV
