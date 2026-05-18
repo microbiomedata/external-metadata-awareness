@@ -171,12 +171,16 @@ load-sra-pairs-to-mongo: local/sra_biosample_bioproject_pairs.tsv
 		--report-interval 500000 \
 		--verbose
 
-# Target: index-sra-pairs  
-# Creates indexes on the sra_biosamples_bioprojects collection
+# Target: index-sra-pairs
+# Creates indexes on the sra_biosamples_bioprojects collection.
+# Uses mongo-js-executor so it honors $(ENV_FILE) like sibling targets,
+# instead of the bare-mongosh invocation that ignored auth.
 index-sra-pairs:
+	@date
 	@echo "Creating indexes on sra_biosamples_bioprojects collection..."
-	mongosh "$(NCBI_MONGO_URI)" --eval "\
-		db.sra_biosamples_bioprojects.createIndex({biosample_accession: 1}, {name: 'idx_biosample'}); \
-		db.sra_biosamples_bioprojects.createIndex({bioproject_accession: 1}, {name: 'idx_bioproject'}); \
-		db.sra_biosamples_bioprojects.createIndex({biosample_accession: 1, bioproject_accession: 1}, {name: 'idx_compound'}); \
-		print('Indexes created successfully');"
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(NCBI_MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/index_sra_biosamples_bioprojects.js \
+		--verbose
+	@date

@@ -113,7 +113,10 @@ count-bioprojects-step2d:
 	@date
 
 # Meta-target: Run all Step 2 sub-steps in sequence
-count-bioprojects-step2: count-bioprojects-step2a count-bioprojects-step2b count-bioprojects-step2c count-bioprojects-step2d
+# index-sra-pairs (defined in Makefiles/sra_metadata.Makefile) must run before
+# step2c, which pre-flights for the biosample_accession index. Without it the
+# pre-flight fails after step 1 + step 2a + step 2b have already burned ~70 min.
+count-bioprojects-step2: index-sra-pairs count-bioprojects-step2a count-bioprojects-step2b count-bioprojects-step2c count-bioprojects-step2d
 	@echo "✅ Bioproject counting complete (atomic steps)"
 
 # Step 3: Merge biosample and bioproject counts

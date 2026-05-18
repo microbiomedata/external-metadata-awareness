@@ -19,6 +19,8 @@ from collections import Counter
 from typing import Dict, Any, List
 from pymongo import MongoClient
 
+from external_metadata_awareness.mongodb_connection import get_mongo_client
+
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 logger = logging.getLogger(__name__)
 
@@ -84,6 +86,8 @@ def calculate_flatness(analysis: Dict[str, Any]) -> float:
 @click.command()
 @click.option('--mongo-uri', default=lambda: os.getenv('MONGO_URI', 'mongodb://localhost:27017/ncbi_metadata'),
               help='MongoDB connection URI (default: $MONGO_URI or mongodb://localhost:27017/ncbi_metadata)')
+@click.option('--env-file', type=click.Path(exists=True),
+              help='Path to .env file for credentials (should contain MONGO_USER and MONGO_PASSWORD)')
 @click.option('--sample-percent', default=1.0, type=float,
               help='Percentage of documents to sample (default: 1.0%)')
 @click.option('--min-sample-size', default=1000, type=int,
@@ -96,11 +100,11 @@ def calculate_flatness(analysis: Dict[str, Any]) -> float:
               help='Output file (for tsv/json formats)')
 @click.option('--collection', help='Analyze single collection (default: all)')
 @click.option('--verbose', is_flag=True, help='Show detailed analysis')
-def main(mongo_uri, sample_percent, min_sample_size, max_sample_size,
+def main(mongo_uri, env_file, sample_percent, min_sample_size, max_sample_size,
          output_format, output_file, collection, verbose):
     """Analyze MongoDB collection flatness for export compatibility."""
 
-    client = MongoClient(mongo_uri)
+    client = get_mongo_client(mongo_uri=mongo_uri, env_file=env_file, debug=verbose)
     db_name = mongo_uri.split('/')[-1].split('?')[0]
     db = client[db_name]
 
