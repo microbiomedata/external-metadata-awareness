@@ -66,7 +66,7 @@ local/biosample-last-id-val.txt: local/biosample-last-id-line.txt
 	@echo "Building $@"
 	sed -n 's/.*id="\([0-9]*\)".*/\1/p' $< > $@
 
-load-biosamples-into-mongo: local/biosample_set.xml
+load-biosamples-into-mongo: local/biosample_set.xml local/biosample-last-id-val.txt
 	@date
 	$(eval LAST_BIOSAMPLE_ID_VAL := $(if $(LAST_BIOSAMPLE_ID),$(LAST_BIOSAMPLE_ID),$(shell cat $(LAST_BIOSAMPLE_ID_FILE) 2>/dev/null)))
 	@if [ -z "$(LAST_BIOSAMPLE_ID_VAL)" ]; then \
@@ -177,6 +177,28 @@ flatten_biosample_attributes:
 # currently have
 #biosample_id
 #harmonized_name
+
+# IMPORTANT: biosamples_flattened is the collection used by both the
+# measurement-discovery pipeline and the env-triads pipeline. Owning the
+# target here (rather than in env_triads.Makefile) lets `make -f` invocations
+# of NCBI-side aggregators resolve the prereq.
+biosamples-flattened:
+	@date
+	@echo "Using MONGO_URI=$(MONGO_URI)"
+	@echo "Flattening biosamples collection into biosamples_flattened..."
+	time $(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/flatten_biosamples.js \
+		--verbose
+	@echo "Creating index on env field in biosamples_flattened..."
+	time $(RUN) mongo-connect \
+		--uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--connect \
+		--verbose \
+		--command 'db.biosamples_flattened.createIndex({ env_broad_scale: 1, env_local_scale: 1, env_medium: 1 })'
+	@date
 
 aggregate-biosample-package-usage: biosamples-flattened
 	@date

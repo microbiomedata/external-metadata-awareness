@@ -11,6 +11,7 @@ db.biosamples.aggregate([
             publication_date: 1,
             submission_date: 1,
             package_content: {$ifNull: ["$Package.content", null]},
+            model_content: {$ifNull: ["$Models.Model.content", null]},
             status_status: {$ifNull: ["$Status.status", null]},
             status_when: {$ifNull: ["$Status.when", null]},
             is_reference: {$ifNull: ["$is_reference", null]},
