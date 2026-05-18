@@ -29,35 +29,22 @@ The function validates the URI (must include a database name), optionally loads 
 
 ### Standard Click options
 
-Python CLI tools use two patterns:
+Python CLI tools use:
 
-**Minimal** (`mongo_js_executor.py` and similar):
 ```python
 @click.option('--mongo-uri', required=True, help='MongoDB URI')
 @click.option('--env-file', help='Path to .env file')
 @click.option('--verbose', is_flag=True)
 ```
 
-**Full** (`insert_all_flat_gold_biosamples.py` and similar — includes auth and collection params):
-```python
-@click.option('--mongo-uri', default=None, help='MongoDB URI (overrides host/port/db)')
-@click.option('--mongo-host', default=None, help='MongoDB host')
-@click.option('--mongo-port', default=None, type=int, help='MongoDB port')
-@click.option('--mongo-username', default=None, help='MongoDB username')
-@click.option('--mongo-password', default=None, help='MongoDB password')
-@click.option('--mongo-auth-source', default=None, help='MongoDB auth source')
-@click.option('--db-name', default=None, help='MongoDB database name')
-@click.option('--dotenv-path', default='local/.env', help='Path to .env file')
-```
-
-The full pattern also includes collection name options (`--source-collection`, `--target-collection`, etc.) specific to each script.
+A handful of NMDC-specific scripts add `--mongo-username` / `--mongo-password` and friends; see #412 for the cleanup-to-MONGO_USER plan.
 
 ### Environment variables
 
-Credentials are loaded from `.env` files (never hardcoded), but different scripts use different variable names:
+Credentials are loaded from `.env` files (never hardcoded). The standard pattern is:
 
-- **`get_mongo_client()`-based scripts**: Read `MONGO_USER` / `MONGO_PASSWORD` from `.env` and inject them into the provided `mongo_uri`. Does **not** read `MONGO_HOST` / `MONGO_PORT` / `MONGO_DB` — it requires a full URI with database name.
-- **Full-option CLIs** (e.g., `insert_all_flat_gold_biosamples.py`): Read `MONGO_USERNAME` / `MONGO_PASSWORD` for auth, and `MONGO_HOST` / `MONGO_PORT` / `MONGO_DB` to construct a URI when `--mongo-uri` is not provided.
+- **`get_mongo_client()`-based scripts**: Read `MONGO_USER` / `MONGO_PASSWORD` from `.env` and inject them into the provided `mongo_uri`. Requires a full URI with database name; appends `?authSource=admin` (or `MONGO_AUTH_SOURCE`) if absent.
+- A few NMDC-only scripts still read `MONGO_USERNAME` instead of `MONGO_USER`; tracked in #412.
 
 ---
 
