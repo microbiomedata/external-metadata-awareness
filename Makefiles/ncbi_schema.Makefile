@@ -49,7 +49,7 @@ load-attributes-into-mongo: $(DOWNLOADS_DIR)/ncbi-biosample-attributes.xml
 $(LOCAL_DIR)/ncbi_packages_fields.tsv: $(DOWNLOADS_DIR)/ncbi-biosample-packages.xml
 	@date
 	@echo "Extracting comprehensive NCBI package fields to TSV..."
-	@mkdir -p local
+	@mkdir -p $(LOCAL_DIR)
 	$(RUN) extract-ncbi-packages-fields \
 		--xml-file $< \
 		--output-file $@

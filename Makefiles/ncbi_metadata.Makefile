@@ -121,7 +121,7 @@ $(DOWNLOADS_DIR)/bioproject.xml:
 load_acceptable_sized_leaf_bioprojects_into_mongodb: $(DOWNLOADS_DIR)/bioproject.xml
 	# Ensure necessary directories exist
 	@mkdir -p $(LOCAL_DIR)/oversize-bioprojects
-	@mkdir -p downloads
+	@mkdir -p $(DOWNLOADS_DIR)
 
 	@date
 	@echo "Using MONGO_URI=$(MONGO_URI)"
