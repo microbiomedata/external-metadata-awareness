@@ -33,9 +33,12 @@ print(`[${new Date().toISOString()}] Running aggregation (expect ~10-30 min on 4
 
 srcColl.aggregate([
     {
+        // Filter null and empty-string in one operator — JS object literals
+        // silently keep only the last duplicate key, so {$ne: null, $ne: ""}
+        // collapses to {$ne: ""} and lets null values through.
         $match: {
-            biosample:  {$exists: true, $ne: null, $ne: ""},
-            bioproject: {$exists: true, $ne: null, $ne: ""}
+            biosample:  {$exists: true, $nin: [null, ""]},
+            bioproject: {$exists: true, $nin: [null, ""]}
         }
     },
     {
