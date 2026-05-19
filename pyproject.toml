@@ -1,9 +1,9 @@
 [tool.poetry]
 name = "external-metadata-awareness"
 version = "0.1.0"
-description = "Tools for fetching and processing external schemas, ontologies and metadata records. Includes value set maintenance."
+description = "MongoDB + Parquet analytics for NCBI BioSample/BioProject/SRA and NMDC submission-portal metadata. Environmental triad annotation, harmonized-attribute counts, measurement discovery, value-set voting sheets."
 authors = ["Mark A. Miller <MAM@lbl.gov>"]
-readme = "CLAUDE.md"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
