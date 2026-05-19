@@ -297,3 +297,28 @@ This allows the same scripts to run against different database instances without
 3. **Missing indexes after `$out`**: `$out` replaces the target with a new collection that has no indexes. Always recreate indexes after.
 4. **`$addToSet` memory**: Collecting millions of unique values into a set per group exceeds the 100MB limit. Use multi-step deduplication instead.
 5. **Assuming `estimatedDocumentCount` is exact**: It uses collection metadata and can be stale after bulk operations. Use `countDocuments({})` when precision matters.
+
+---
+
+## Field-Rename-in-Place Protocol
+
+When renaming a field in an existing collection, do **all three** in the same PR so the new name is applied both to the data and to the code that produces it. No after-the-fact backfill scripts to remember.
+
+1. **Edit the producer** — change the field name in the aggregation script (`mongo-js/...`) that writes the collection. Update any index recipe lines that name the field.
+2. **Rename in place** on the existing collection:
+   ```javascript
+   db.<collection>.updateMany(
+     {old_name: {$exists: true}},
+     {$rename: {old_name: "new_name"}}
+   )
+   ```
+   **Cost:** `$rename` is *not* metadata-only. MongoDB rewrites every matched document (the field is stored under its new key in each BSON record) and the `{old_name: {$exists: true}}` filter is a full collection scan when the field isn't indexed. For a small collection like `harmonized_name_biosample_counts` (810 docs) this completes in milliseconds; for a 56M-doc collection like `biosamples_flattened` it would be a multi-minute operation comparable to the original `$merge` that wrote the collection. Check `db.<collection>.estimatedDocumentCount()` first and schedule accordingly.
+3. **Update consumers** — grep the repo for the old name (`grep -rn '<old_name>'`) and update Python scripts, JS aggregations, notebooks, and docs that reference it. Watch for false positives where the old name is a substring (e.g., `coverage_percent` vs. `unit_coverage_percent`).
+
+**Verify after step 2:**
+```javascript
+db.<collection>.countDocuments({old_name: {$exists: true}})  // expect 0
+db.<collection>.findOne().new_name                            // expect the original value
+```
+
+If the renamed field has an index, drop the old-name index after the rename and create a new-name index in the same step; otherwise reruns of the producer (which `$out` replaces the collection) will fail to find the named index.
