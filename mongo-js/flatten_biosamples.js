@@ -11,7 +11,32 @@ db.biosamples.aggregate([
             publication_date: 1,
             submission_date: 1,
             package_content: {$ifNull: ["$Package.content", null]},
-            model_content: {$ifNull: ["$Models.Model.content", null]},
+            // Flattened collections must hold scalars only — pipe-join the
+            // ~5% multi-model array case so the column type stays uniform.
+            model_content: {
+                $let: {
+                    vars: {raw: {$ifNull: ["$Models.Model.content", null]}},
+                    in: {
+                        $cond: [
+                            {$isArray: "$$raw"},
+                            {
+                                $reduce: {
+                                    input: "$$raw",
+                                    initialValue: "",
+                                    in: {
+                                        $cond: [
+                                            {$eq: ["$$value", ""]},
+                                            {$toString: "$$this"},
+                                            {$concat: ["$$value", "|", {$toString: "$$this"}]}
+                                        ]
+                                    }
+                                }
+                            },
+                            "$$raw"
+                        ]
+                    }
+                }
+            },
             status_status: {$ifNull: ["$Status.status", null]},
             status_when: {$ifNull: ["$Status.when", null]},
             is_reference: {$ifNull: ["$is_reference", null]},
