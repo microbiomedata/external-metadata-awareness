@@ -1,3 +1,8 @@
+# Configurable storage roots. Override per invocation, e.g.
+#   make TARGET LOCAL_DIR=/Volumes/owc-nvme/local DOWNLOADS_DIR=/Volumes/owc-nvme/downloads
+DOWNLOADS_DIR ?= downloads
+LOCAL_DIR ?= local
+
 RUN = poetry run
 MONGO_URI ?= mongodb://localhost:27017/ncbi_metadata
 
@@ -74,7 +79,6 @@ count-harmonizable-attribs: mongo-js/count_harmonizable_biosample_attribs.js
 		--js-file $< \
 		--verbose # 30? minutes
 	@date
-
 
 env-triads: biosamples-flattened env-triad-value-counts
 
@@ -255,6 +259,4 @@ env-triads-flattened: env-triads-flatten-index
 	@echo "📋 Created collection: env_triads_flattened"
 	@echo "📋 Structure: accession | attribute | instance | raw_original | raw_component | id | label | prefix | source"
 	@echo "📋 Indexes: accession, attribute+instance, id, prefix, accession+attribute+instance"
-
-
 

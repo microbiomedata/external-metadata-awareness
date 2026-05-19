@@ -1,3 +1,8 @@
+# Configurable storage roots. Override per invocation, e.g.
+#   make TARGET LOCAL_DIR=/Volumes/owc-nvme/local DOWNLOADS_DIR=/Volumes/owc-nvme/downloads
+DOWNLOADS_DIR ?= downloads
+LOCAL_DIR ?= local
+
 RUN=poetry run
 WGET=wget
 
@@ -28,30 +33,29 @@ WGET=wget
         copy-environmental-candidates-to-ncbi-metadata
 
 purge:
-	rm -rf downloads/biosample_set.xml*
-	rm -rf local/biosample-count-mongodb.txt
-	rm -rf local/biosample-last-id-line.txt
-	rm -rf local/biosample-last-id-val.txt
-	rm -rf local/biosample_set.xml*
-	rm -rf local/oversize-bioprojects/*
+	rm -rf $(DOWNLOADS_DIR)/biosample_set.xml*
+	rm -rf $(LOCAL_DIR)/biosample-count-mongodb.txt
+	rm -rf $(LOCAL_DIR)/biosample-last-id-line.txt
+	rm -rf $(LOCAL_DIR)/biosample-last-id-val.txt
+	rm -rf $(LOCAL_DIR)/biosample_set.xml*
+	rm -rf $(LOCAL_DIR)/oversize-bioprojects/*
 
-downloads/biosample_set.xml.gz:
+$(DOWNLOADS_DIR)/biosample_set.xml.gz:
 	date
 	$(WGET) -O $@ "https://ftp.ncbi.nlm.nih.gov/biosample/biosample_set.xml.gz" # ~ 3 GB August 2024
 	date
 
 # wget 2 minutes on MAM Ubuntu NUC
 
-local/biosample_set.xml: downloads/biosample_set.xml.gz
+$(LOCAL_DIR)/biosample_set.xml: $(DOWNLOADS_DIR)/biosample_set.xml.gz
 	date
 	gunzip -c $< > $@
 	date
 
 # unzip 9 minutes on MAM Ubuntu NUC
 
-
 # Default file for last ID
-LAST_BIOSAMPLE_ID_FILE := local/biosample-last-id-val.txt
+LAST_BIOSAMPLE_ID_FILE := $(LOCAL_DIR)/biosample-last-id-val.txt
 MONGO_URI ?= mongodb://localhost:27017/ncbi_metadata
 
 # Optional environment file (user must set ENV_FILE externally if they want it)
@@ -70,15 +74,15 @@ LAST_ID_PREREQS := $(LAST_BIOSAMPLE_ID_FILE)
 endif
 
 # These rules generate the ID file, if possible
-local/biosample-last-id-line.txt: local/biosample_set.xml
+$(LOCAL_DIR)/biosample-last-id-line.txt: $(LOCAL_DIR)/biosample_set.xml
 	@echo "Building $@"
 	tac $< | grep -m 1 '<BioSample' > $@
 
-local/biosample-last-id-val.txt: local/biosample-last-id-line.txt
+$(LOCAL_DIR)/biosample-last-id-val.txt: $(LOCAL_DIR)/biosample-last-id-line.txt
 	@echo "Building $@"
 	sed -n 's/.*id="\([0-9]*\)".*/\1/p' $< > $@
 
-load-biosamples-into-mongo: local/biosample_set.xml $(LAST_ID_PREREQS)
+load-biosamples-into-mongo: $(LOCAL_DIR)/biosample_set.xml $(LAST_ID_PREREQS)
 	@date
 	$(eval LAST_BIOSAMPLE_ID_VAL := $(if $(LAST_BIOSAMPLE_ID),$(LAST_BIOSAMPLE_ID),$(shell cat $(LAST_BIOSAMPLE_ID_FILE) 2>/dev/null)))
 	@if [ -z "$(LAST_BIOSAMPLE_ID_VAL)" ]; then \
@@ -101,7 +105,6 @@ load-biosamples-into-mongo: local/biosample_set.xml $(LAST_ID_PREREQS)
 	  --anticipated-last-id $(LAST_BIOSAMPLE_ID_VAL)
 	@date
 
-
 # sample usages:
 # make load-biosamples-into-mongo MAX_ELEMENTS=100000
 # make load-biosamples-into-mongo \
@@ -111,7 +114,7 @@ load-biosamples-into-mongo: local/biosample_set.xml $(LAST_ID_PREREQS)
 
 # status update frequency is currently hardcoded with "if processed_count % 10000 == 0"
 
-local/biosample_xpath_counts.json: local/biosample_set.xml
+$(LOCAL_DIR)/biosample_xpath_counts.json: $(LOCAL_DIR)/biosample_set.xml
 	#  --stop-after 999999999
 	# --interval is a number of seconds between updates
 	poetry run count-xml-paths \
@@ -122,21 +125,21 @@ local/biosample_xpath_counts.json: local/biosample_set.xml
 
 ####
 
-downloads/bioproject.xml:
+$(DOWNLOADS_DIR)/bioproject.xml:
 	date
 	$(WGET) -O $@ "https://ftp.ncbi.nlm.nih.gov/bioproject/bioproject.xml" # ~ 3 GB March 2025
 	date
 
-load_acceptable_sized_leaf_bioprojects_into_mongodb: downloads/bioproject.xml
+load_acceptable_sized_leaf_bioprojects_into_mongodb: $(DOWNLOADS_DIR)/bioproject.xml
 	# Ensure necessary directories exist
-	@mkdir -p local/oversize-bioprojects
-	@mkdir -p downloads
+	@mkdir -p $(LOCAL_DIR)/oversize-bioprojects
+	@mkdir -p $(DOWNLOADS_DIR)
 
 	@date
 	@echo "Using MONGO_URI=$(MONGO_URI)"
 	$(RUN) load-bioprojects-into-mongodb \
        --clear-collections \
-       --oversize-dir local/oversize-bioprojects \
+       --oversize-dir $(LOCAL_DIR)/oversize-bioprojects \
        --project-collection bioprojects \
        --submission-collection bioprojects_submissions \
        --mongo-uri "$(MONGO_URI)" \
@@ -144,7 +147,7 @@ load_acceptable_sized_leaf_bioprojects_into_mongodb: downloads/bioproject.xml
        --xml-file $< \
        $(ENV_FILE_OPTION)
 
-local/bioproject_xpath_counts.json: downloads/bioproject.xml
+$(LOCAL_DIR)/bioproject_xpath_counts.json: $(DOWNLOADS_DIR)/bioproject.xml
 	# --stop-after 999999999
 	poetry run count-xml-paths \
 		--always-count-path '/PackageSet/Package/Project' \
@@ -246,7 +249,7 @@ copy-environmental-candidates-to-ncbi-metadata:
 
 # Analyze collection structure complexity (flatness scoring)
 # Output: TSV with flatness scores (0-100), useful for identifying export-ready collections
-local/collection_flatness.tsv:
+$(LOCAL_DIR)/collection_flatness.tsv:
 	@date
 	@echo "Analyzing MongoDB collection flatness..."
 	@echo "Using MONGO_URI=$(MONGO_URI)"

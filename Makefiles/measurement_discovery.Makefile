@@ -8,9 +8,10 @@ endif
 
 .PHONY: count-biosamples-step1 count-bioprojects-step2 \
 count-bioprojects-step2a count-bioprojects-step2b count-bioprojects-step2c count-bioprojects-step2d \
+ensure-sra-biosample-accession-index \
 merge-counts-step3 index-harmonized-name-counts count-biosamples-and-bioprojects-per-harmonized-name \
 count-unit-assertions count-mixed-content count-measurement-evidence run-measurement-discovery \
-create-dimensional-stats clean-discovery
+create-dimensional-stats aggregate-content-pairs clean-discovery
 
 # Phase 0: Baseline counting
 
@@ -112,8 +113,21 @@ count-bioprojects-step2d:
 		--verbose
 	@date
 
+# Ensure the biosample_accession index on sra_biosamples_bioprojects that
+# count-bioprojects-step2c pre-flight requires. Creating this is fast (~few
+# minutes on 35M+ rows) and idempotent. Closes #402.
+ensure-sra-biosample-accession-index:
+	@echo "Ensuring biosample_accession index on sra_biosamples_bioprojects..."
+	@date
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/create_sra_biosamples_bioprojects_index.js \
+		--verbose
+	@date
+
 # Meta-target: Run all Step 2 sub-steps in sequence
-count-bioprojects-step2: count-bioprojects-step2a count-bioprojects-step2b count-bioprojects-step2c count-bioprojects-step2d
+count-bioprojects-step2: ensure-sra-biosample-accession-index count-bioprojects-step2a count-bioprojects-step2b count-bioprojects-step2c count-bioprojects-step2d
 	@echo "✅ Bioproject counting complete (atomic steps)"
 
 # Step 3: Merge biosample and bioproject counts
@@ -166,6 +180,21 @@ count-mixed-content:
 count-measurement-evidence: count-unit-assertions count-mixed-content
 	@echo "✅ Measurement evidence counting complete"
 	@echo "📊 Created collections: unit_assertion_counts, mixed_content_counts"
+
+# Build content_pairs_aggregated: distinct (harmonized_name, content) pairs with biosample counts.
+# Matches K-BERDL's nmdc_ncbi_biosamples.content_pairs_aggregated. Closes #405.
+# Standalone pure-aggregation path — no NER, no API calls. (run-measurement-discovery
+# also produces this collection via --save-aggregation, but bundled with a 4-8 hour
+# quantulum3 NER run; this target is for parity loads where NER is not needed.)
+aggregate-content-pairs:
+	@date
+	@echo "Aggregating (harmonized_name, content) pairs..."
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/aggregate_content_pairs.js \
+		--verbose
+	@date
 
 # Run quantulum3 measurement discovery (creates measurement_results_skip_filtered + content_pairs_aggregated)
 # FULL PRODUCTION RUN: Processes all 64M (harmonized_name, content) pairs

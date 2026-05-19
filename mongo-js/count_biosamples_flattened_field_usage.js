@@ -43,7 +43,7 @@ db.biosamples_flattened.aggregate([
             harmonized_name: "$_id",
             biosample_count: 1,
             unique_accessions: { $size: "$sample_accessions" },
-            coverage_percent: {
+            biosample_coverage_percent: {
                 $round: [{
                     $multiply: [
                         { $divide: ["$biosample_count", totalBiosamples] },

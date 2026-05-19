@@ -1,6 +1,9 @@
-// Load global MIxS slot definitions into MongoDB  
+// Load global MIxS slot definitions into MongoDB
 // Fetches MIxS schema YAML, extracts slots (excluding MixsCompliantData domain), loads to MongoDB
 // These are uninduced/global slot definitions without inheritance or slot_usage applied
+//
+// Target collection override (for testing without clobbering production data):
+//   mongosh ... --eval "var __targetCollection='global_mixs_slots_test';" --file load_global_mixs_slots.js
 
 const startTime = new Date();
 print(`[${startTime.toISOString()}] Starting global MIxS slot definitions loading`);
@@ -9,8 +12,31 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 
 const mixsSchemaUrl = 'https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/refs/heads/main/src/mixs/schema/mixs.yaml';
+const mixsGitRepo = 'https://github.com/GenomicsStandardsConsortium/mixs.git';
+const mixsRef = 'refs/heads/main';
 const localSchemaFile = 'downloads/mixs.yaml';
 const tempJsonFile = '/tmp/global_mixs_slots.json';
+
+const targetCollection = (typeof __targetCollection !== 'undefined') ? __targetCollection : 'global_mixs_slots';
+print(`[${new Date().toISOString()}] Target collection: ${targetCollection}`);
+
+// Resolve upstream SHA at load time. This reflects upstream HEAD now; if the
+// cached YAML was fetched from an older commit, source_sha may be newer than
+// the file actually loaded. See #395 for the cache-revalidation follow-up.
+let upstreamSha = null;
+try {
+    // 10s matches the network-call timeout used in new_bioportal_curie_mapper.py.
+    // Empirically measured `git ls-remote` against this repo: ~0.2-0.3s steady,
+    // 0.73s cold — 10s is ~14x the cold-case observation.
+    const lsRemoteOut = execSync(
+        `git ls-remote "${mixsGitRepo}" "${mixsRef}"`,
+        {timeout: 10000, stdio: ['ignore', 'pipe', 'pipe']}
+    ).toString().trim();
+    upstreamSha = lsRemoteOut.split(/\s+/)[0] || null;
+    print(`[${new Date().toISOString()}] Upstream ${mixsRef} SHA: ${upstreamSha}`);
+} catch(e) {
+    print(`[${new Date().toISOString()}] Could not resolve upstream SHA (offline?): ${e.message}`);
+}
 
 try {
     // Check if local schema file exists
@@ -32,11 +58,11 @@ try {
     print(`[${new Date().toISOString()}] Extracting .slots section to JSON...`);
     const extractSlotsCommand = `yq eval '.slots' "${localSchemaFile}" -o=json > "${tempJsonFile}"`;
     execSync(extractSlotsCommand);
-    
+
     // Step 2: Read and parse the slots JSON
     const slotsJson = fs.readFileSync(tempJsonFile, 'utf8');
     const slotsObject = JSON.parse(slotsJson);
-    
+
     // Step 3: Convert object to array and filter out MixsCompliantData domain
     print(`[${new Date().toISOString()}] Converting to array and filtering out MixsCompliantData domain...`);
     const slots = Object.entries(slotsObject)
@@ -45,64 +71,70 @@ try {
             slot_name: key,
             ...value
         }));
-    
+
     print(`[${new Date().toISOString()}] Extracted ${slots.length} global slot definitions (excluding MixsCompliantData domain)`);
-    
+
+    const coll = db.getCollection(targetCollection);
+
     // Create beneficial indexes (error tolerant)
     print(`[${new Date().toISOString()}] Ensuring beneficial indexes exist`);
     try {
-        db.global_mixs_slots.createIndex({slot_name: 1}, {background: true});
+        coll.createIndex({slot_name: 1}, {background: true});
     } catch(e) {
         print(`Slot_name index exists: ${e.message}`);
     }
     try {
-        db.global_mixs_slots.createIndex({domain: 1}, {background: true});
+        coll.createIndex({domain: 1}, {background: true});
     } catch(e) {
         print(`Domain index exists: ${e.message}`);
     }
     try {
-        db.global_mixs_slots.createIndex({range: 1}, {background: true});
+        coll.createIndex({range: 1}, {background: true});
     } catch(e) {
         print(`Range index exists: ${e.message}`);
     }
-    
+
     // Drop and recreate collection
-    print(`[${new Date().toISOString()}] Dropping existing global_mixs_slots collection`);
-    db.global_mixs_slots.drop();
-    
+    print(`[${new Date().toISOString()}] Dropping existing ${targetCollection} collection`);
+    coll.drop();
+
     // Insert slot definitions
-    print(`[${new Date().toISOString()}] Inserting ${slots.length} global slot definitions into global_mixs_slots collection`);
-    
-    // Add metadata to each slot
+    print(`[${new Date().toISOString()}] Inserting ${slots.length} global slot definitions into ${targetCollection} collection`);
+
+    const loadedAt = new Date().toISOString();
     const slotsWithMetadata = slots.map(slot => ({
         ...slot,
         schema_source: "MIxS",
         schema_url: mixsSchemaUrl,
-        schema_version: "main",  // Could extract actual version if needed
-        induction_applied: false  // These are global/uninduced definitions
+        schema_version: "main",
+        source_repo: mixsGitRepo,
+        source_ref: mixsRef,
+        source_sha: upstreamSha,
+        loaded_at: loadedAt,
+        induction_applied: false
     }));
-    
-    const result = db.global_mixs_slots.insertMany(slotsWithMetadata);
+
+    const result = coll.insertMany(slotsWithMetadata);
     print(`[${new Date().toISOString()}] Successfully inserted ${result.insertedIds.length} global slot definitions`);
-    
+
     // Create additional indexes on output collection
-    print(`[${new Date().toISOString()}] Creating additional indexes on global_mixs_slots collection`);
+    print(`[${new Date().toISOString()}] Creating additional indexes on ${targetCollection} collection`);
     try {
-        db.global_mixs_slots.createIndex({unit: 1}, {background: true});
+        coll.createIndex({unit: 1}, {background: true});
     } catch(e) {
         print(`Unit index exists: ${e.message}`);
     }
     try {
-        db.global_mixs_slots.createIndex({"annotations.storage_units": 1}, {background: true});
+        coll.createIndex({"annotations.storage_units": 1}, {background: true});
     } catch(e) {
         print(`Storage_units annotation index exists: ${e.message}`);
     }
     try {
-        db.global_mixs_slots.createIndex({minimum_value: 1, maximum_value: 1}, {background: true});
+        coll.createIndex({minimum_value: 1, maximum_value: 1}, {background: true});
     } catch(e) {
         print(`Range compound index exists: ${e.message}`);
     }
-    
+
     // Cleanup temporary file
     try {
         fs.unlinkSync(tempJsonFile);
@@ -110,17 +142,17 @@ try {
     } catch(e) {
         print(`Cleanup warning: ${e.message}`);
     }
-    
+
     // Show summary statistics
     print(`[${new Date().toISOString()}] Collection summary:`);
-    print(`  Total global slots: ${db.global_mixs_slots.countDocuments()}`);
-    print(`  Slots with units: ${db.global_mixs_slots.countDocuments({unit: {$exists: true, $ne: null}})}`);
-    print(`  Slots with ranges: ${db.global_mixs_slots.countDocuments({$or: [{minimum_value: {$exists: true}}, {maximum_value: {$exists: true}}]})}`);
-    print(`  Slots with annotations: ${db.global_mixs_slots.countDocuments({annotations: {$exists: true}})}`);
-    
+    print(`  Total global slots: ${coll.countDocuments()}`);
+    print(`  Slots with units: ${coll.countDocuments({unit: {$exists: true, $ne: null}})}`);
+    print(`  Slots with ranges: ${coll.countDocuments({$or: [{minimum_value: {$exists: true}}, {maximum_value: {$exists: true}}]})}`);
+    print(`  Slots with annotations: ${coll.countDocuments({annotations: {$exists: true}})}`);
+
     // Show sample slots for verification
     print(`[${new Date().toISOString()}] Sample global slot definitions:`);
-    db.global_mixs_slots.find().limit(3).forEach(slot => {
+    coll.find().limit(3).forEach(slot => {
         print(`  ${slot.slot_name}: ${slot.description || 'No description'}`);
         if (slot.unit) print(`    Unit: ${slot.unit}`);
         if (slot.range) print(`    Range: ${slot.range}`);
