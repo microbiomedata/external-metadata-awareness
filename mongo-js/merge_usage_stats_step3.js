@@ -2,6 +2,26 @@
 // Input: temp_biosample_counts + temp_bioproject_counts → Output: harmonized_name_usage_stats
 // Part of harmonized_name usage stats workflow
 
+// Pre-flight: refuse to merge if either input is empty.
+// Closes #404 — previously merge would silently $ifNull to 0 for every bioproject_count
+// when temp_bioproject_counts was empty (e.g., step 2c interrupted by mongosh
+// PoolClearedOnNetworkError while server-side aggregation kept running).
+const tbsCount = db.temp_biosample_counts.estimatedDocumentCount();
+if (tbsCount === 0) {
+    print('[' + new Date().toISOString() + '] ❌ ERROR: temp_biosample_counts is empty');
+    print('[' + new Date().toISOString() + '] Step 1 (count-biosamples-step1) may not have completed');
+    print('[' + new Date().toISOString() + '] Refusing to merge — would produce empty output');
+    quit(1);
+}
+const tbpCount = db.temp_bioproject_counts.estimatedDocumentCount();
+if (tbpCount === 0) {
+    print('[' + new Date().toISOString() + '] ❌ ERROR: temp_bioproject_counts is empty');
+    print('[' + new Date().toISOString() + '] Step 2c (count-bioprojects-step2c) may not have completed');
+    print('[' + new Date().toISOString() + '] Refusing to merge — would produce all-zero unique_bioprojects_count');
+    quit(1);
+}
+print('[' + new Date().toISOString() + '] Pre-flight passed: temp_biosample_counts=' + tbsCount + ', temp_bioproject_counts=' + tbpCount);
+
 print('[' + new Date().toISOString() + '] Ensuring indexes exist before merge');
 db.temp_bioproject_counts.createIndex({harmonized_name: 1}, {background: true});
 db.temp_biosample_counts.createIndex({harmonized_name: 1}, {background: true});
