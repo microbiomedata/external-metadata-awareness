@@ -325,7 +325,7 @@ When renaming a field in an existing collection, do **all three** in the same PR
      {$rename: {old_name: "new_name"}}
    )
    ```
-   `$rename` is metadata-cheap (no index rebuild if the field isn't indexed; one index drop+create if it is). 810-doc renames complete in milliseconds.
+   **Cost:** `$rename` is *not* metadata-only. MongoDB rewrites every matched document (the field is stored under its new key in each BSON record) and the `{old_name: {$exists: true}}` filter is a full collection scan when the field isn't indexed. For a small collection like `harmonized_name_biosample_counts` (810 docs) this completes in milliseconds; for a 56M-doc collection like `biosamples_flattened` it would be a multi-minute operation comparable to the original `$merge` that wrote the collection. Check `db.<collection>.estimatedDocumentCount()` first and schedule accordingly.
 3. **Update consumers** — grep the repo for the old name (`grep -rn '<old_name>'`) and update Python scripts, JS aggregations, notebooks, and docs that reference it. Watch for false positives where the old name is a substring (e.g., `coverage_percent` vs. `unit_coverage_percent`).
 
 **Verify after step 2:**
