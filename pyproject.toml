@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "MongoDB + Parquet analytics for NCBI BioSample/BioProject/SRA and NMDC submission-portal metadata. Environmental triad annotation, harmonized-attribute counts, measurement discovery, value-set voting sheets."
 authors = ["Mark A. Miller <MAM@lbl.gov>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
