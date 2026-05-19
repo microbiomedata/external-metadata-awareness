@@ -87,7 +87,15 @@ def get_mongo_client(
                 # No auth part, add it
                 protocol, rest = final_uri.split("://", 1)
                 final_uri = f"{protocol}://{username}:{password}@{rest}"
-                
+
+            # Ensure authSource is set. Without it, MongoDB tries to authenticate
+            # against the URI's database, which usually doesn't hold the user
+            # record and fails with "Authentication failed".
+            auth_source = os.getenv("MONGO_AUTH_SOURCE", "admin")
+            if "authSource=" not in final_uri:
+                separator = "&" if "?" in final_uri else "?"
+                final_uri = f"{final_uri}{separator}authSource={auth_source}"
+
             if debug:
                 logger.debug("Loaded credentials from .env file")
         else:
