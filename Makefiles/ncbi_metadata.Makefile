@@ -22,6 +22,8 @@ WGET=wget
         flatten_biosamples_links \
         flatten_biosample_attributes \
         flatten_biosample_packages \
+        biosamples-flattened \
+        aggregate-biosample-package-usage \
         create-environmental-candidates-2017-plus \
         copy-environmental-candidates-to-ncbi-metadata
 
@@ -57,6 +59,16 @@ ifdef ENV_FILE
   ENV_FILE_OPTION := --env-file $(ENV_FILE)
 endif
 
+# Only require building the last-id file when the caller hasn't supplied
+# LAST_BIOSAMPLE_ID directly. Building it from the 154 GB biosample_set.xml
+# is expensive (tac + grep) and uses GNU coreutils' `tac`, which isn't on
+# default macOS; supplying LAST_BIOSAMPLE_ID lets users skip both costs.
+ifdef LAST_BIOSAMPLE_ID
+LAST_ID_PREREQS :=
+else
+LAST_ID_PREREQS := $(LAST_BIOSAMPLE_ID_FILE)
+endif
+
 # These rules generate the ID file, if possible
 local/biosample-last-id-line.txt: local/biosample_set.xml
 	@echo "Building $@"
@@ -66,7 +78,7 @@ local/biosample-last-id-val.txt: local/biosample-last-id-line.txt
 	@echo "Building $@"
 	sed -n 's/.*id="\([0-9]*\)".*/\1/p' $< > $@
 
-load-biosamples-into-mongo: local/biosample_set.xml local/biosample-last-id-val.txt
+load-biosamples-into-mongo: local/biosample_set.xml $(LAST_ID_PREREQS)
 	@date
 	$(eval LAST_BIOSAMPLE_ID_VAL := $(if $(LAST_BIOSAMPLE_ID),$(LAST_BIOSAMPLE_ID),$(shell cat $(LAST_BIOSAMPLE_ID_FILE) 2>/dev/null)))
 	@if [ -z "$(LAST_BIOSAMPLE_ID_VAL)" ]; then \
