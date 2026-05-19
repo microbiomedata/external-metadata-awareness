@@ -15,14 +15,13 @@ const specs = [
     {key: {biosample_accession: 1, bioproject_accession: 1}, options: {name: 'idx_compound'}}
 ];
 
+// MongoDB compound index key order is part of the index definition — a key
+// {a:1, b:1} is not interchangeable with {b:1, a:1}. Compare position-by-
+// position via JSON.stringify on the ordered entries (Object.keys preserves
+// insertion order for string keys, and getIndexes() returns the same order
+// the index was created with).
 function keyEquals(a, b) {
-    const ak = Object.keys(a);
-    const bk = Object.keys(b);
-    if (ak.length !== bk.length) return false;
-    for (const k of ak) {
-        if (a[k] !== b[k]) return false;
-    }
-    return true;
+    return JSON.stringify(Object.entries(a)) === JSON.stringify(Object.entries(b));
 }
 
 const existing = coll.getIndexes();
