@@ -5,9 +5,6 @@ from tqdm import tqdm
 
 # 25 minutes for NCBI? use XYZ installed
 
-# db_name = "gold_metadata"
-# collection_name = "flattened_biosamples"
-
 # db_name = "ncbi_metadata"
 # collection_name = "biosamples_flattened"
 

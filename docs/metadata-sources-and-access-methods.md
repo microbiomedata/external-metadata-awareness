@@ -8,7 +8,9 @@ This document clarifies where different people can get or reshape different form
 |--------|-------------|-----------|
 | NMDC API | Official runtime API | nmdc-runtime |
 | KBase/BERDL lakehouse | `nmdc_core` table via REST API | linkml-store, cmungall/lakehouse-skills (requires KBASE_TOKEN) |
-| This repo | MongoDB cache + flattening | `make -f Makefiles/nmdc_metadata.Makefile flatten-nmdc` |
+| Ad-hoc tunnel + analytical scripts in this repo | Live NMDC Mongo via SSH tunnel; this repo no longer manages the data lifecycle | See [`nmdc-data-access.md`](nmdc-data-access.md) |
+
+This repo retired the NMDC main-Mongo ingest/flatten pipeline (`flatten-nmdc`, `restore-to-{un,}authenticated`, etc.) on 2026-05-18; lakehouse-ready parquet now comes from [`kbase/data-lakehouse-ingest`](https://github.com/kbase/data-lakehouse-ingest). The analytical scripts (`analyze-nmdc-biosample-coverage`, `extract-nmdc-doi-inventory`, schema/slot utilities) remain and run against whatever Mongo URI you pass — see `nmdc-data-access.md`.
 
 > **TODO:** Gather more information about the `nmdc_core` namespace in KBase/BERDL lakehouse:
 > - Who created/maintains it?

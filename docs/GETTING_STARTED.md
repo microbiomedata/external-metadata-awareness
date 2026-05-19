@@ -1,6 +1,6 @@
 # Getting Started with External Metadata Awareness
 
-Welcome! This repository analyzes and standardizes environmental metadata from NCBI BioSamples, GOLD, and NMDC for microbiome research.
+Welcome! This repository analyzes and standardizes environmental metadata from NCBI BioSamples and NMDC for microbiome research.
 
 ---
 
