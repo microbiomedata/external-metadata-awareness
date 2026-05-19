@@ -2,7 +2,7 @@
 
 Quick reference for every collection in the `ncbi_metadata` database. Describes nesting, sparsity, and field inventories.
 
-Last verified: 2026-02-08 (51.7M biosamples, 1M bioprojects).
+Last verified: 2026-05-18 (56.3M biosamples, 1.07M bioprojects).
 
 ## Terminology
 
