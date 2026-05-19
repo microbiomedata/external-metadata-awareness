@@ -133,6 +133,8 @@ load-sra-parquet-to-mongo: $(LOCAL_DIR)/sra_metadata_parquet
 
 # Target: extract-sra-biosample-bioproject-pairs
 # Extracts biosample-bioproject pairs from SRA metadata and stores them in a separate collection
+# in the SAME database the connection points at. See `derive-sra-pairs-from-parquet` below
+# for the cross-DB variant that materializes the pair table directly into ncbi_metadata.
 extract-sra-biosample-bioproject-pairs:
 	@date
 	@echo "Using MONGO_URI=$(MONGO_URI)"
@@ -143,10 +145,29 @@ extract-sra-biosample-bioproject-pairs:
 		--verbose
 	@date
 
+# Target: derive-sra-pairs-from-parquet (issue #399)
+# Materializes ncbi_metadata.sra_biosamples_bioprojects from sra_metadata.sra_metadata via a
+# single cross-DB aggregation. Field-name shim, $group dedup, $out: {db, coll}. Replaces the
+# legacy DuckDB/BigQuery routes (load-sra-pairs-to-mongo, sra_accession_pairs_tsv_to_mongo)
+# and the same-DB Mongo route (extract-sra-biosample-bioproject-pairs). Invoke with
+# MONGO_URI pointing at sra_metadata (the source DB); the $out writes into ncbi_metadata.
+derive-sra-pairs-from-parquet:
+	@date
+	@echo "Using MONGO_URI=$(MONGO_URI) (source DB; output is written to ncbi_metadata)"
+	$(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/derive_sra_pairs_into_ncbi.js \
+		--verbose
+	@date
+
 # Usage examples:
 # make -f Makefiles/sra_metadata.Makefile load-sra-parquet-to-mongo
 # make -f Makefiles/sra_metadata.Makefile sra_accession_pairs_tsv_to_mongo
 # make -f Makefiles/sra_metadata.Makefile extract-sra-biosample-bioproject-pairs
+# make -f Makefiles/sra_metadata.Makefile derive-sra-pairs-from-parquet \
+#   ENV_FILE=local/.env \
+#   MONGO_URI="mongodb://localhost:27017/sra_metadata?authSource=admin"
 # make -f Makefiles/sra_metadata.Makefile load-sra-parquet-to-mongo MONGO_URI="mongodb://host:port/database" ENV_FILE=local/.env.auth
 
 count_sra_metadata_keys:
