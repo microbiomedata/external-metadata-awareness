@@ -13,6 +13,7 @@ import requests_cache
 from dotenv import load_dotenv
 from prefixmaps.io.parser import load_converter
 from pymongo import uri_parser
+from tqdm import tqdm
 
 from external_metadata_awareness.mongodb_connection import get_mongo_client
 
@@ -244,11 +245,12 @@ def main(mongo_uri, env_file, collection, verbose):
     # Get all documents matching the query
     docs_cursor = collection.find(query)
     doc_count = collection.count_documents(query)
-    
+
     print(f"Found {doc_count} documents to process")
 
-    # Process each document
-    for doc in docs_cursor:
+    # Process each document. Each call may make multiple BioPortal API requests,
+    # so wrap the iteration in tqdm for a visible progress bar.
+    for doc in tqdm(docs_cursor, total=doc_count, desc="BioPortal mapping", unit="doc"):
         process_document(doc, collection, BIOPORTAL_API_KEY, verbose)
 
     print("Processing complete.")

@@ -63,31 +63,9 @@ The response is paginated, returning a ListResponse object with:
 - resources: Array of matching biosamples
 - next_page_token: Token for the next page of results (if more results exist)
 
-I can connect to the MongoDB with a string like
-
-`mongodb://<USERNAME>:<PASSWORD>@localhost:27777/?directConnection=true&authMechanism=SCRAM-SHA-256&authSource=admin`
-
-After establishing a tunnel like this if necessary
-
-```shell
-ssh -i ~/.ssh/nersc -L27777:mongo-loadbalancer.nmdc.production.svc.spin.nersc.org:27017 -o ServerAliveInterval=60 <USERNAME>@dtn01.nersc.gov
-```
-
-That illustration uses an ssh key that was created with the [sshproxy](https://docs.nersc.gov/connect/mfa/#sshproxy)
-
-Like
-
-```shell
-~/sshproxy -u mam -f
-```
-
-You can learn about any ssh tunnels running on your computer with a command like
-
-```shell
-ps -ef | grep ssh
-```
-
-But this article won't describe that interpretation process.
+Ad-hoc MongoDB access against the NMDC Metadata MongoDB is no longer codified
+in this repo. For tunnel patterns and per-script backend guidance, see
+[nmdc-data-access.md](nmdc-data-access.md).
 
 ----
 

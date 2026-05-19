@@ -1,9 +1,9 @@
 [tool.poetry]
 name = "external-metadata-awareness"
 version = "0.1.0"
-description = "Tools for fetching and processing external schemas, ontologies and metadata records. Includes value set maintenance."
+description = "MongoDB + Parquet analytics for NCBI BioSample/BioProject/SRA and NMDC submission-portal metadata. Environmental triad annotation, harmonized-attribute counts, measurement discovery, value-set voting sheets."
 authors = ["Mark A. Miller <MAM@lbl.gov>"]
-readme = "CLAUDE.md"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -75,7 +75,6 @@ random-sample-resources = 'external_metadata_awareness.adhoc.random_sample_resou
 xml-to-mongo = 'external_metadata_awareness.xml_to_mongo:load_xml_to_mongodb'
 
 # New aliases for Makefile scripts
-add-duckdb-key-value-row = 'external_metadata_awareness.add_duckdb_key_value_row:main'
 analyze-collection-flatness = 'external_metadata_awareness.analyze_collection_flatness:main'
 dump-sra-metadata-schema = 'external_metadata_awareness.dump_sra_metadata_table_schema:main'
 env-triad-values-splitter = 'external_metadata_awareness.new_env_triad_values_splitter:main'
@@ -96,12 +95,6 @@ ncbi-package-info-to-duckdb = 'external_metadata_awareness.ncbi_package_info_to_
 prioritize-lexmatch-results = 'external_metadata_awareness.prioritize_lexmatch_results:main'
 sra-accession-pairs-to-mongo = 'external_metadata_awareness.sra_accession_pairs_tsv_to_mongo:load_tsv_to_mongo'
 sra-parquet-to-mongodb = 'external_metadata_awareness.sra_parquet_to_mongodb:insert_parquet_to_mongo'
-
-# Gold Makefile aliases
-flatten-gold-biosamples = 'external_metadata_awareness.insert_all_flat_gold_biosamples:main'
-flatten-gold-studies = 'external_metadata_awareness.insert_all_flat_gold_studies:main'
-flatten-gold-seq-projects = 'external_metadata_awareness.insert_all_flat_gold_seq_projects:main'
-export-flattened-gold-csv = 'external_metadata_awareness.export_flattened_gold_to_csv:main'
 
 # Biosample attributes scripts
 flatten-biosample-attributes = 'external_metadata_awareness.flatten_biosample_attributes:extract_attributes'

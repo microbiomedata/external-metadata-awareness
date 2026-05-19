@@ -5,7 +5,6 @@ RUN=poetry run
 
 include Makefiles/env_triads.Makefile
 include Makefiles/github.Makefile
-include Makefiles/gold.Makefile
 include Makefiles/mixs.Makefile
 include Makefiles/ncbi_biosample_measurements.Makefile
 include Makefiles/ncbi_metadata.Makefile
