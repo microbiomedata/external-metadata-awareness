@@ -151,7 +151,6 @@ Closes #214
 ### Directory Structure
 ```
 biosamples_duckdb/
-├── gold/                    # GOLD database exports
 ├── nmdc-flattened/          # NMDC API exports
 ├── non-duckdb/              # CSV/TSV exports (mostly zipped)
 └── old/                     # Archived versions by date
@@ -164,7 +163,6 @@ biosamples_duckdb/
 
 **Examples**:
 - ✅ `ncbi_metadata_flat_20251019.duckdb`
-- ✅ `gold_api_20250919.duckdb`
 - ✅ `nmdc_flattened_biosamples_20251006.csv.zip`
 
 **Rules**:
@@ -172,7 +170,7 @@ biosamples_duckdb/
 - Date format: `YYYYMMDD` (not `YYYY-MM-DD` or timestamps)
 - DuckDB extension: `.duckdb` (not `.db`)
 - Compression: Add `.gz` or `.zip` for files >100MB
-- Source names: `ncbi`, `gold_api`, `nmdc_api` (underscores, not hyphens)
+- Source names: `ncbi`, `nmdc_api` (underscores, not hyphens)
 
 **Archival**:
 - Move superseded versions to `old/YYYY-MM-DD/` subdirectories

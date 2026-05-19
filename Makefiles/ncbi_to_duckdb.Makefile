@@ -1,3 +1,8 @@
+# Configurable storage roots. Override per invocation, e.g.
+#   make TARGET LOCAL_DIR=/Volumes/owc-nvme/local DOWNLOADS_DIR=/Volumes/owc-nvme/downloads
+DOWNLOADS_DIR ?= downloads
+LOCAL_DIR ?= local
+
 # NCBI MongoDB to DuckDB Migration Makefile
 # Dumps 100% flat collections from ncbi_metadata MongoDB to DuckDB
 
@@ -187,26 +192,26 @@ export-satisfying-biosamples:
 	fi
 	@echo "Exporting satisfying biosamples to CSV..."
 	@echo "Query: sql/satisfying_biosamples.sql"
-	@duckdb "$(DUCKDB_FILE)" < sql/satisfying_biosamples.sql -csv > local/satisfying_biosamples.csv
-	@echo "✓ Exported to: local/satisfying_biosamples.csv"
-	@wc -l local/satisfying_biosamples.csv | awk '{printf "  %s biosamples (including header)\n", $$1}'
-	@ls -lh local/satisfying_biosamples.csv | awk '{printf "  File size: %s\n", $$5}'
+	@duckdb "$(DUCKDB_FILE)" < sql/satisfying_biosamples.sql -csv > $(LOCAL_DIR)/satisfying_biosamples.csv
+	@echo "✓ Exported to: $(LOCAL_DIR)/satisfying_biosamples.csv"
+	@wc -l $(LOCAL_DIR)/satisfying_biosamples.csv | awk '{printf "  %s biosamples (including header)\n", $$1}'
+	@ls -lh $(LOCAL_DIR)/satisfying_biosamples.csv | awk '{printf "  File size: %s\n", $$5}'
 
 # Normalize satisfying biosamples (dates to YYYY-MM-DD, coordinates to separate lat/lon columns)
 normalize-satisfying-biosamples:
-	@if [ ! -f "local/satisfying_biosamples.csv" ]; then \
-		echo "Error: local/satisfying_biosamples.csv not found"; \
+	@if [ ! -f "$(LOCAL_DIR)/satisfying_biosamples.csv" ]; then \
+		echo "Error: $(LOCAL_DIR)/satisfying_biosamples.csv not found"; \
 		echo "Run 'make -f Makefiles/ncbi_to_duckdb.Makefile export-satisfying-biosamples' first"; \
 		exit 1; \
 	fi
 	@echo "Normalizing biosample dates and coordinates..."
 	@poetry run normalize-satisfying-biosamples \
-		--input-file local/satisfying_biosamples.csv \
-		--output-file local/satisfying_biosamples_normalized.csv
+		--input-file $(LOCAL_DIR)/satisfying_biosamples.csv \
+		--output-file $(LOCAL_DIR)/satisfying_biosamples_normalized.csv
 	@echo ""
-	@echo "✓ Normalized file created: local/satisfying_biosamples_normalized.csv"
-	@wc -l local/satisfying_biosamples_normalized.csv | awk '{printf "  %s biosamples (including header)\\n", $$1}'
-	@ls -lh local/satisfying_biosamples_normalized.csv | awk '{printf "  File size: %s\\n", $$5}'
+	@echo "✓ Normalized file created: $(LOCAL_DIR)/satisfying_biosamples_normalized.csv"
+	@wc -l $(LOCAL_DIR)/satisfying_biosamples_normalized.csv | awk '{printf "  %s biosamples (including header)\\n", $$1}'
+	@ls -lh $(LOCAL_DIR)/satisfying_biosamples_normalized.csv | awk '{printf "  File size: %s\\n", $$5}'
 
 # Show summary of tables in DuckDB
 show-summary:

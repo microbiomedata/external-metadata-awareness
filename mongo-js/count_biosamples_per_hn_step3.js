@@ -63,7 +63,7 @@ db.getCollection("__tmp_hn_counts").aggregate([
             total_attribute_records: "$t.total_attribute_records",
             has_unit_records: "$t.has_unit_records",
             unit_coverage_percent: "$t.unit_coverage_percent",
-            coverage_percent: {
+            biosample_coverage_percent: {
                 $cond: [
                     { $gt: [totalUniqueAccessions, 0] },
                     {

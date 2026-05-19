@@ -15,7 +15,6 @@ All Makefiles are invoked with `make -f Makefiles/<name>.Makefile <target>`.
 | `measurement_discovery.Makefile` | ncbi_metadata | Measurement parsing with quantulum3, usage stats, dimensional analysis |
 | `ncbi_biosample_measurements.Makefile` | ncbi_metadata | Normalize and flatten biosample measurement fields |
 | `ncbi_to_duckdb.Makefile` | ncbi_metadata | Export flat MongoDB collections to DuckDB and Parquet |
-| `gold.Makefile` | gold_metadata | Flatten GOLD biosamples/studies/seq_projects with ontology enrichment |
 | `nmdc_metadata.Makefile` | nmdc_metadata | Flatten NMDC collections, fetch submissions, export to DuckDB |
 | `nmdc_schema.Makefile` | — | Download and extract NMDC submission schema definitions |
 | `mixs.Makefile` | — | Download and extract MIxS schema definitions |
@@ -32,7 +31,7 @@ MONGO_URI   ?= mongodb://localhost:27017/<db_name>
 ENV_FILE     # optional — set to path of .env file for credentials
 ```
 
-When `ENV_FILE` is set, it's passed as `--env-file $(ENV_FILE)` to CLIs (except GOLD scripts, which use `--dotenv-path`).
+When `ENV_FILE` is set, it's passed as `--env-file $(ENV_FILE)` to CLIs.
 
 ## Conventions
 

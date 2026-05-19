@@ -1,3 +1,8 @@
+# Configurable storage roots. Override per invocation, e.g.
+#   make TARGET LOCAL_DIR=/Volumes/owc-nvme/local DOWNLOADS_DIR=/Volumes/owc-nvme/downloads
+DOWNLOADS_DIR ?= downloads
+LOCAL_DIR ?= local
+
 RUN=poetry run
 
 # Default MongoDB connection
@@ -26,15 +31,15 @@ SRA_BIGQUERY_LIMIT = 30000000 # expect ~ 30000000
 # Target: purge-sra
 # Removes all SRA data files and temporary directories
 purge-sra:
-	rm -rf downloads/sra_accession_pairs.tsv
-	rm -rf downloads/sra_metadata_table_schema.tsv
-	rm -rf local/sra_metadata_parquet
+	rm -rf $(DOWNLOADS_DIR)/sra_accession_pairs.tsv
+	rm -rf $(DOWNLOADS_DIR)/sra_metadata_table_schema.tsv
+	rm -rf $(LOCAL_DIR)/sra_metadata_parquet
 
 # Target: dump-sra-metadata-schema
 # Dumps the BigQuery SRA metadata table schema to a TSV file
-dump-sra-metadata-schema: downloads/sra_metadata_table_schema.tsv
+dump-sra-metadata-schema: $(DOWNLOADS_DIR)/sra_metadata_table_schema.tsv
 
-downloads/sra_metadata_table_schema.tsv:
+$(DOWNLOADS_DIR)/sra_metadata_table_schema.tsv:
 	@echo "Dumping SRA metadata schema from BigQuery..."
 	$(RUN) dump-sra-metadata-schema \
 		--project $(SRA_BIGQUERY_PROJECT) \
@@ -57,7 +62,7 @@ biosample-bioproject-preview:
 
 # Target: sra_accession_pairs_tsv_to_mongo
 # Exports BioSample-BioProject pairs from SRA to MongoDB
-downloads/sra_accession_pairs.tsv:
+$(DOWNLOADS_DIR)/sra_accession_pairs.tsv:
 	@echo "Exporting ALL SRA accession pairs to TSV (no limit)..."
 	$(RUN) export-sra-accession-pairs \
 		--project $(SRA_BIGQUERY_PROJECT) \
@@ -68,7 +73,7 @@ downloads/sra_accession_pairs.tsv:
 		--output $@ \
 		--verbose
 
-sra_accession_pairs_tsv_to_mongo: downloads/sra_accession_pairs.tsv
+sra_accession_pairs_tsv_to_mongo: $(DOWNLOADS_DIR)/sra_accession_pairs.tsv
 	@echo "Loading SRA accession pairs into MongoDB..."
 	@echo "Using MONGO_URI=$(MONGO_URI)"
 	$(RUN) sra-accession-pairs-to-mongo \
@@ -81,15 +86,15 @@ sra_accession_pairs_tsv_to_mongo: downloads/sra_accession_pairs.tsv
 
 # Target: fetch_sra_metadata_parquet_from_s3
 # Fetches SRA metadata Parquet files from S3
-local/sra_metadata_parquet:
+$(LOCAL_DIR)/sra_metadata_parquet:
 	mkdir -p $@
 
 # Default setup (set a flag for Perlmutter or local execution)
 USE_SHIFTER ?= 0  # Default to local (0 means not using shifter)
 
-fetch_sra_metadata_parquet_from_s3: local/sra_metadata_parquet
+fetch_sra_metadata_parquet_from_s3: $(LOCAL_DIR)/sra_metadata_parquet
 	# Ensure necessary directories exist
-	@mkdir -p local/sra_metadata_parquet
+	@mkdir -p $(LOCAL_DIR)/sra_metadata_parquet
 
 	@date
 	@if [ "$(USE_SHIFTER)" -eq 1 ]; then \
@@ -112,7 +117,7 @@ ifdef SRA_PARQUET_MAX_ROWS
   SRA_PARQUET_ROWS_OPTION := --nrows $(SRA_PARQUET_MAX_ROWS)
 endif
 
-load-sra-parquet-to-mongo: local/sra_metadata_parquet
+load-sra-parquet-to-mongo: $(LOCAL_DIR)/sra_metadata_parquet
 	@date
 	@echo "Using MONGO_URI=$(MONGO_URI)"
 	$(RUN) sra-parquet-to-mongodb \
@@ -151,14 +156,14 @@ count_sra_metadata_keys:
 		--js-file mongo-js/count_sra_metadata_keys.js \
 		--verbose && date
 
-local/sra_biosample_bioproject_pairs.tsv: sql/extract_sra_biosample_bioproject_pairs_to_tsv.sql local/sra_metadata_parquet
+$(LOCAL_DIR)/sra_biosample_bioproject_pairs.tsv: sql/extract_sra_biosample_bioproject_pairs_to_tsv.sql $(LOCAL_DIR)/sra_metadata_parquet
 	@echo "Extracting biosample-bioproject pairs from SRA parquet files using DuckDB..."
-	duckdb local/sra.duckdb < $<
+	duckdb $(LOCAL_DIR)/sra.duckdb < $<
 	@echo "Exported biosample-bioproject pairs to $@"
 
 # Target: load-sra-pairs-to-mongo
 # Loads the TSV file into MongoDB collection with proper field names
-load-sra-pairs-to-mongo: local/sra_biosample_bioproject_pairs.tsv
+load-sra-pairs-to-mongo: $(LOCAL_DIR)/sra_biosample_bioproject_pairs.tsv
 	@echo "Loading SRA biosample-bioproject pairs into MongoDB..."
 	$(RUN) sra-accession-pairs-to-mongo \
 		--file-path $< \

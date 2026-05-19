@@ -29,35 +29,22 @@ The function validates the URI (must include a database name), optionally loads 
 
 ### Standard Click options
 
-Python CLI tools use two patterns:
+Python CLI tools use:
 
-**Minimal** (`mongo_js_executor.py` and similar):
 ```python
 @click.option('--mongo-uri', required=True, help='MongoDB URI')
 @click.option('--env-file', help='Path to .env file')
 @click.option('--verbose', is_flag=True)
 ```
 
-**Full** (`insert_all_flat_gold_biosamples.py` and similar — includes auth and collection params):
-```python
-@click.option('--mongo-uri', default=None, help='MongoDB URI (overrides host/port/db)')
-@click.option('--mongo-host', default=None, help='MongoDB host')
-@click.option('--mongo-port', default=None, type=int, help='MongoDB port')
-@click.option('--mongo-username', default=None, help='MongoDB username')
-@click.option('--mongo-password', default=None, help='MongoDB password')
-@click.option('--mongo-auth-source', default=None, help='MongoDB auth source')
-@click.option('--db-name', default=None, help='MongoDB database name')
-@click.option('--dotenv-path', default='local/.env', help='Path to .env file')
-```
-
-The full pattern also includes collection name options (`--source-collection`, `--target-collection`, etc.) specific to each script.
+A handful of NMDC-specific scripts add `--mongo-username` / `--mongo-password` and friends; see #412 for the cleanup-to-MONGO_USER plan.
 
 ### Environment variables
 
-Credentials are loaded from `.env` files (never hardcoded), but different scripts use different variable names:
+Credentials are loaded from `.env` files (never hardcoded). The standard pattern is:
 
-- **`get_mongo_client()`-based scripts**: Read `MONGO_USER` / `MONGO_PASSWORD` from `.env` and inject them into the provided `mongo_uri`. Does **not** read `MONGO_HOST` / `MONGO_PORT` / `MONGO_DB` — it requires a full URI with database name.
-- **Full-option CLIs** (e.g., `insert_all_flat_gold_biosamples.py`): Read `MONGO_USERNAME` / `MONGO_PASSWORD` for auth, and `MONGO_HOST` / `MONGO_PORT` / `MONGO_DB` to construct a URI when `--mongo-uri` is not provided.
+- **`get_mongo_client()`-based scripts**: Read `MONGO_USER` / `MONGO_PASSWORD` from `.env` and inject them into the provided `mongo_uri`. Requires a full URI with database name; appends `?authSource=admin` (or `MONGO_AUTH_SOURCE`) if absent.
+- A few NMDC-only scripts still read `MONGO_USERNAME` instead of `MONGO_USER`; tracked in #412.
 
 ---
 
@@ -310,3 +297,28 @@ This allows the same scripts to run against different database instances without
 3. **Missing indexes after `$out`**: `$out` replaces the target with a new collection that has no indexes. Always recreate indexes after.
 4. **`$addToSet` memory**: Collecting millions of unique values into a set per group exceeds the 100MB limit. Use multi-step deduplication instead.
 5. **Assuming `estimatedDocumentCount` is exact**: It uses collection metadata and can be stale after bulk operations. Use `countDocuments({})` when precision matters.
+
+---
+
+## Field-Rename-in-Place Protocol
+
+When renaming a field in an existing collection, do **all three** in the same PR so the new name is applied both to the data and to the code that produces it. No after-the-fact backfill scripts to remember.
+
+1. **Edit the producer** — change the field name in the aggregation script (`mongo-js/...`) that writes the collection. Update any index recipe lines that name the field.
+2. **Rename in place** on the existing collection:
+   ```javascript
+   db.<collection>.updateMany(
+     {old_name: {$exists: true}},
+     {$rename: {old_name: "new_name"}}
+   )
+   ```
+   **Cost:** `$rename` is *not* metadata-only. MongoDB rewrites every matched document (the field is stored under its new key in each BSON record) and the `{old_name: {$exists: true}}` filter is a full collection scan when the field isn't indexed. For a small collection like `harmonized_name_biosample_counts` (810 docs) this completes in milliseconds; for a 56M-doc collection like `biosamples_flattened` it would be a multi-minute operation comparable to the original `$merge` that wrote the collection. Check `db.<collection>.estimatedDocumentCount()` first and schedule accordingly.
+3. **Update consumers** — grep the repo for the old name (`grep -rn '<old_name>'`) and update Python scripts, JS aggregations, notebooks, and docs that reference it. Watch for false positives where the old name is a substring (e.g., `coverage_percent` vs. `unit_coverage_percent`).
+
+**Verify after step 2:**
+```javascript
+db.<collection>.countDocuments({old_name: {$exists: true}})  // expect 0
+db.<collection>.findOne().new_name                            // expect the original value
+```
+
+If the renamed field has an index, drop the old-name index after the rename and create a new-name index in the same step; otherwise reruns of the producer (which `$out` replaces the collection) will fail to find the named index.

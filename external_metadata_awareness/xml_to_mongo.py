@@ -20,11 +20,14 @@ from external_metadata_awareness.mongodb_connection import get_mongo_client
               help='Anticipated last ID for progress calculation.')
 @click.option('--mongo-uri', required=True, help='MongoDB connection URI (must start with mongodb:// and include database name).')
 @click.option('--env-file', default=None, help='Path to .env file for credentials (should contain MONGO_USER and MONGO_PASSWORD).')
+@click.option('--batch-size', default=1000, type=int,
+              help='Documents per bulk insert (default 1000). Larger batches trade memory for throughput.')
 @click.option('--verbose', is_flag=True, help='Show verbose connection output.')
 def load_xml_to_mongodb(file_path: str, collection_name: str, node_type: str,
                         id_field: str, max_elements: Optional[int] = None,
                         anticipated_last_id: Optional[int] = None, mongo_uri: str = None,
-                        env_file: Optional[str] = None, verbose: bool = False):
+                        env_file: Optional[str] = None, batch_size: int = 1000,
+                        verbose: bool = False):
     """
     Loads data from an XML file into MongoDB, preserving the nested structure.
 
@@ -71,12 +74,20 @@ def load_xml_to_mongodb(file_path: str, collection_name: str, node_type: str,
 
         start_time = time.time()
         processed_count = 0
+        batch = []
+
+        def flush(batch):
+            if batch:
+                collection.insert_many(batch, ordered=False)
+                batch.clear()
 
         for event, elem in ET.iterparse(file_path, events=('end',)):
             if elem.tag == node_type:
-                doc = element_to_dict(elem)
-                collection.insert_one(doc)
+                batch.append(element_to_dict(elem))
                 processed_count += 1
+
+                if len(batch) >= batch_size:
+                    flush(batch)
 
                 # Show progress based on max_elements if provided, otherwise use anticipated_last_id
                 if processed_count % 10000 == 0:
@@ -86,7 +97,7 @@ def load_xml_to_mongodb(file_path: str, collection_name: str, node_type: str,
                         progress = (int(elem.attrib.get(id_field, 0)) / anticipated_last_id) * 100
                     else:
                         progress = 0
-                        
+
                     elapsed_time = time.time() - start_time
                     print(f"Processed {processed_count} {node_type} nodes ({progress:.2f}%), "
                           f"elapsed time: {elapsed_time:.2f} seconds")
@@ -96,6 +107,8 @@ def load_xml_to_mongodb(file_path: str, collection_name: str, node_type: str,
                     break
 
                 elem.clear()
+
+        flush(batch)
 
     except Exception as e:
         print(f"An error occurred: {e}")

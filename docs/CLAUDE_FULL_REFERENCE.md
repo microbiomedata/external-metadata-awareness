@@ -165,7 +165,6 @@ make -f Makefiles/ncbi_to_duckdb.Makefile show-summary
 - Access via Google BigQuery client with application default credentials
 
 ### Other Sources
-- **GOLD**: `gold.jgi.doe.gov/download?mode=site_excel`
 - **Ontologies**: Via OAK (`sqlite:obo:envo`, `sqlite:obo:po`)
 - **BioPortal**: `data.bioontology.org` (requires API key in .env)
 
@@ -175,7 +174,6 @@ make -f Makefiles/ncbi_to_duckdb.Makefile show-summary
 
 ### Databases
 - **ncbi_metadata**: Primary database (44M biosamples, 893K bioprojects, env triads)
-- **gold_metadata**: GOLD data (217K biosamples, 221K projects)
 - **nmdc**: NMDC data (9K biosamples, workflow executions)
 - **biosamples**: SRA metadata (35M records)
 

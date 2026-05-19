@@ -83,12 +83,7 @@ Main database storing NCBI-related data.
 - `sra_metadata`: 35M documents (~108GB) - Complete SRA metadata
 - `metagenomic_wgs_metadata`: 973K documents - WGS-specific metadata
 
-#### 3. gold_metadata (~87MB)
-- `biosamples`: 217K documents - GOLD biosample data
-- `projects`: 221K documents - GOLD projects
-- `studies`: 4,697 documents - GOLD studies
-
-#### 4. nmdc (~1.6GB)
+#### 3. nmdc (~1.6GB)
 - `biosample_set`: 9,349 documents - NMDC biosamples
 - `functional_annotation_agg`: 20M documents - Functional annotations
 - `data_object_set`: 112K documents - NMDC data objects
@@ -277,12 +272,11 @@ See `mongo-js/` directory for index creation scripts:
 - **MIxS Schema**: `raw.githubusercontent.com/GenomicsStandardsConsortium/mixs`
 
 ### Other Sources
-- **GOLD Data**: `gold.jgi.doe.gov/download?mode=site_excel` (Excel format)
 - **Unpaywall API**: `api.unpaywall.org/v2/{doi}` (for open access PDFs)
 
 ### Fetching Tools
 - **wget**: Large FTP XML files
-- **curl**: GOLD data, smaller API calls
+- **curl**: smaller API calls
 - **requests**: Python API calls (NCBI E-utils, BioPortal, Unpaywall)
 - **Google BigQuery client**: SRA metadata
 
