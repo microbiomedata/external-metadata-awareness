@@ -27,6 +27,8 @@ WGET=wget
         flatten_biosamples_links \
         flatten_biosample_attributes \
         flatten_biosample_packages \
+        biosamples-flattened \
+        aggregate-biosample-package-usage \
         create-environmental-candidates-2017-plus \
         copy-environmental-candidates-to-ncbi-metadata
 
@@ -61,6 +63,16 @@ ifdef ENV_FILE
   ENV_FILE_OPTION := --env-file $(ENV_FILE)
 endif
 
+# Only require building the last-id file when the caller hasn't supplied
+# LAST_BIOSAMPLE_ID directly. Building it from the 154 GB biosample_set.xml
+# is expensive (tac + grep) and uses GNU coreutils' `tac`, which isn't on
+# default macOS; supplying LAST_BIOSAMPLE_ID lets users skip both costs.
+ifdef LAST_BIOSAMPLE_ID
+LAST_ID_PREREQS :=
+else
+LAST_ID_PREREQS := $(LAST_BIOSAMPLE_ID_FILE)
+endif
+
 # These rules generate the ID file, if possible
 $(LOCAL_DIR)/biosample-last-id-line.txt: $(LOCAL_DIR)/biosample_set.xml
 	@echo "Building $@"
@@ -70,7 +82,7 @@ $(LOCAL_DIR)/biosample-last-id-val.txt: $(LOCAL_DIR)/biosample-last-id-line.txt
 	@echo "Building $@"
 	sed -n 's/.*id="\([0-9]*\)".*/\1/p' $< > $@
 
-load-biosamples-into-mongo: $(LOCAL_DIR)/biosample_set.xml
+load-biosamples-into-mongo: $(LOCAL_DIR)/biosample_set.xml $(LAST_ID_PREREQS)
 	@date
 	$(eval LAST_BIOSAMPLE_ID_VAL := $(if $(LAST_BIOSAMPLE_ID),$(LAST_BIOSAMPLE_ID),$(shell cat $(LAST_BIOSAMPLE_ID_FILE) 2>/dev/null)))
 	@if [ -z "$(LAST_BIOSAMPLE_ID_VAL)" ]; then \
@@ -180,6 +192,28 @@ flatten_biosample_attributes:
 # currently have
 #biosample_id
 #harmonized_name
+
+# IMPORTANT: biosamples_flattened is the collection used by both the
+# measurement-discovery pipeline and the env-triads pipeline. Owning the
+# target here (rather than in env_triads.Makefile) lets `make -f` invocations
+# of NCBI-side aggregators resolve the prereq.
+biosamples-flattened:
+	@date
+	@echo "Using MONGO_URI=$(MONGO_URI)"
+	@echo "Flattening biosamples collection into biosamples_flattened..."
+	time $(RUN) mongo-js-executor \
+		--mongo-uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--js-file mongo-js/flatten_biosamples.js \
+		--verbose
+	@echo "Creating index on env field in biosamples_flattened..."
+	time $(RUN) mongo-connect \
+		--uri "$(MONGO_URI)" \
+		$(ENV_FILE_OPTION) \
+		--connect \
+		--verbose \
+		--command 'db.biosamples_flattened.createIndex({ env_broad_scale: 1, env_local_scale: 1, env_medium: 1 })'
+	@date
 
 aggregate-biosample-package-usage: biosamples-flattened
 	@date

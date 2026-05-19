@@ -82,25 +82,10 @@ count-harmonizable-attribs: mongo-js/count_harmonizable_biosample_attribs.js
 
 env-triads: biosamples-flattened env-triad-value-counts
 
-# Step 1: Flatten biosamples collection into biosamples_flattened  
-# IMPORTANT: This target creates the biosamples_flattened collection used by measurement discovery pipeline
-biosamples-flattened:
-	@date
-	@echo "Using MONGO_URI=$(MONGO_URI)"
-	@echo "Flattening biosamples collection into biosamples_flattened..."
-	time $(RUN) mongo-js-executor \
-		--mongo-uri "$(MONGO_URI)" \
-		$(ENV_FILE_OPTION) \
-		--js-file mongo-js/flatten_biosamples.js \
-		--verbose
-	@echo "Creating index on env field in biosamples_flattened..."
-	time $(RUN) mongo-connect \
-		--uri "$(MONGO_URI)" \
-		$(ENV_FILE_OPTION) \
-		--connect \
-		--verbose \
-		--command 'db.biosamples_flattened.createIndex({ env_broad_scale: 1, env_local_scale: 1, env_medium: 1 })'
-	@date
+# biosamples-flattened lives in Makefiles/ncbi_metadata.Makefile so that
+# `make -f Makefiles/ncbi_metadata.Makefile aggregate-biosample-package-usage`
+# resolves the prereq. Both Makefiles are included by the root Makefile, so
+# `env-triads` continues to work from there.
 
 # Step 2: Extract unique environmental triad values with counts
 env-triad-value-counts: 
