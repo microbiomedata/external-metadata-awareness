@@ -25,7 +25,13 @@ print(`[${new Date().toISOString()}] Target collection: ${targetCollection}`);
 // the file actually loaded. See #395 for the cache-revalidation follow-up.
 let upstreamSha = null;
 try {
-    const lsRemoteOut = execSync(`git ls-remote "${mixsGitRepo}" "${mixsRef}"`).toString().trim();
+    // 10s matches the network-call timeout used in new_bioportal_curie_mapper.py.
+    // Empirically measured `git ls-remote` against this repo: ~0.2-0.3s steady,
+    // 0.73s cold — 10s is ~14x the cold-case observation.
+    const lsRemoteOut = execSync(
+        `git ls-remote "${mixsGitRepo}" "${mixsRef}"`,
+        {timeout: 10000, stdio: ['ignore', 'pipe', 'pipe']}
+    ).toString().trim();
     upstreamSha = lsRemoteOut.split(/\s+/)[0] || null;
     print(`[${new Date().toISOString()}] Upstream ${mixsRef} SHA: ${upstreamSha}`);
 } catch(e) {

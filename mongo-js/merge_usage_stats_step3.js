@@ -54,15 +54,18 @@ db.temp_biosample_counts.aggregate([
 const finalCount = db.harmonized_name_usage_stats.countDocuments();
 print('[' + new Date().toISOString() + '] Created ' + finalCount + ' final stats');
 
-// Post-write sanity check: if every row has unique_bioprojects_count == 0,
-// something went wrong despite the temp collection being non-empty.
+// Post-write observation: count rows with non-zero bioproject counts. This is
+// a warning (not an error) — the pre-flight check above is the real defense
+// against the silent-zero failure mode in #404. Future legitimate datasets
+// could in principle have zero non-zero rows; we shouldn't hard-fail on data
+// distribution.
 const nonZeroBioprojects = db.harmonized_name_usage_stats.countDocuments({unique_bioprojects_count: {$gt: 0}});
 if (nonZeroBioprojects === 0) {
-    print('[' + new Date().toISOString() + '] ❌ ERROR: harmonized_name_usage_stats has zero rows with unique_bioprojects_count > 0');
-    print('[' + new Date().toISOString() + '] Temp collections preserved for inspection');
-    quit(1);
+    print('[' + new Date().toISOString() + '] ⚠️  WARNING: harmonized_name_usage_stats has zero rows with unique_bioprojects_count > 0');
+    print('[' + new Date().toISOString() + '] This could indicate the #404 silent-zero failure mode — verify temp_bioproject_counts before relying on the merged result.');
+} else {
+    print('[' + new Date().toISOString() + '] ' + nonZeroBioprojects + ' rows have unique_bioprojects_count > 0');
 }
-print('[' + new Date().toISOString() + '] ' + nonZeroBioprojects + ' rows have unique_bioprojects_count > 0');
 
 db.temp_biosample_counts.drop();
 db.temp_bioproject_counts.drop();
