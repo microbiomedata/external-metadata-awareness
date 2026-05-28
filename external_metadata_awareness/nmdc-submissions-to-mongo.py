@@ -12,6 +12,22 @@ from linkml_runtime import SchemaView
 from oaklib import get_adapter
 
 
+# Per-env config keys read from the .env file when CLI flags aren't supplied.
+# The env file is the canonical per-environment config; CLI flags override.
+ENV_CONFIG_KEYS = ("MONGO_URI", "BASE_URL", "OUTPUT_FILE")
+
+
+def resolve_env_config(env_path, **cli_overrides):
+    """Merge per-env config from `env_path` with CLI overrides.
+
+    CLI overrides win; missing CLI values fall back to the env file; missing
+    env values stay None so callers can apply their own defaults or error out.
+    """
+    env_vars = dotenv_values(env_path) if env_path else {}
+    return {key: cli_overrides.get(key.lower()) or env_vars.get(key)
+            for key in ENV_CONFIG_KEYS}
+
+
 # =============================================================================
 # FETCH NMDC SUBMISSIONS FROM THE API
 # =============================================================================
@@ -533,15 +549,24 @@ def cli():
     pass
 
 
+_ENV_PATH_HELP = ('Path to .env file. Holds NMDC_DATA_SUBMISSION_REFRESH_TOKEN'
+                  ' and per-env config (MONGO_URI, BASE_URL, OUTPUT_FILE).')
+
+
 @cli.command('fetch')
-@click.option('--mongo-url', required=True, help='MongoDB connection URL')
-@click.option('--env-path', default="../../local/.env", help='Path to .env file containing auth tokens')
-@click.option('--base-url', default="https://data.microbiomedata.org",
-              help='Portal base URL (use https://data-dev.microbiomedata.org for dev)')
-def fetch_cmd(mongo_url, env_path, base_url):
+@click.option('--env-path', required=True, help=_ENV_PATH_HELP)
+@click.option('--mongo-url', default=None, help='Overrides MONGO_URI from env file')
+@click.option('--base-url', default=None, help='Overrides BASE_URL from env file')
+def fetch_cmd(env_path, mongo_url, base_url):
     """Fetch NMDC submissions from the API and store in MongoDB."""
-    click.echo(f"Fetching NMDC submissions from {base_url} ...")
-    success = fetch_nmdc_submissions(mongo_url, env_path, base_url)
+    cfg = resolve_env_config(env_path, mongo_uri=mongo_url, base_url=base_url)
+    if not cfg['MONGO_URI']:
+        raise click.UsageError(
+            f"MONGO_URI not in {env_path} and --mongo-url not supplied."
+        )
+    base = cfg['BASE_URL'] or 'https://data.microbiomedata.org'
+    click.echo(f"Fetching NMDC submissions from {base} ...")
+    success = fetch_nmdc_submissions(cfg['MONGO_URI'], env_path, base)
     if success:
         click.echo("Submissions fetched successfully.")
     else:
@@ -598,13 +623,26 @@ def check_compliance_cmd(mongo_url):
 
 
 @cli.command('run-all')
-@click.option('--mongo-url', required=True, help='MongoDB connection URL')
-@click.option('--env-path', default="../../local/.env", help='Path to .env file containing auth tokens')
-@click.option('--output-file', default='flattened_submission_biosamples.tsv', help='Output TSV file path')
-@click.option('--base-url', default="https://data.microbiomedata.org",
-              help='Portal base URL (use https://data-dev.microbiomedata.org for dev)')
-def run_all_cmd(mongo_url, env_path, output_file, base_url):
+@click.option('--env-path', required=True, help=_ENV_PATH_HELP)
+@click.option('--mongo-url', default=None, help='Overrides MONGO_URI from env file')
+@click.option('--output-file', default=None, help='Overrides OUTPUT_FILE from env file')
+@click.option('--base-url', default=None, help='Overrides BASE_URL from env file')
+def run_all_cmd(env_path, mongo_url, output_file, base_url):
     """Run the complete extraction and processing pipeline."""
+    cfg = resolve_env_config(
+        env_path,
+        mongo_uri=mongo_url,
+        base_url=base_url,
+        output_file=output_file,
+    )
+    if not cfg['MONGO_URI']:
+        raise click.UsageError(
+            f"MONGO_URI not in {env_path} and --mongo-url not supplied."
+        )
+    mongo_url = cfg['MONGO_URI']
+    base_url = cfg['BASE_URL'] or 'https://data.microbiomedata.org'
+    output_file = cfg['OUTPUT_FILE'] or 'flattened_submission_biosamples.tsv'
+
     click.echo(f"Running the complete pipeline against {base_url} ...")
 
     click.echo("\n1. Fetching submissions...")
