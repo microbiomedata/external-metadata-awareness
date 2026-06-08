@@ -1,0 +1,24 @@
+# Gitleaks configuration for external-metadata-awareness.
+#
+# Extends the built-in ruleset and adds rules for credentials that gitleaks'
+# default rules miss because they are bare UUIDs with no provider prefix. The
+# motivating case: NCBO BioPortal / BioOntology API keys are plain UUIDs
+# (e.g. in a `?apikey=<uuid>` URL or a `BIOPORTAL_API_KEY=<uuid>` assignment).
+# GitHub's native secret scanning and most default rules skip bare UUIDs to
+# avoid false positives, so the only reliable signal is the apikey CONTEXT.
+title = "external-metadata-awareness gitleaks config"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "bioportal-ncbo-api-key"
+description = "BioPortal / NCBO BioOntology API key (UUID in an apikey context)"
+regex = '''(?i)(?:bioportal[_-]?(?:api[_-]?key|token)|api[_-]?key|apikey)["'\s:=>]{0,4}(?:token=)?[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}'''
+keywords = ["apikey", "api_key", "bioportal", "bioontology"]
+
+[[rules]]
+id = "bioportal-ncbo-apikey-url"
+description = "BioPortal / NCBO API key embedded in a bioontology.org URL"
+regex = '''bioontology\.org[^\s"'<>]*apikey=[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}'''
+keywords = ["bioontology"]

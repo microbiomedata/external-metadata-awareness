@@ -1,0 +1,12 @@
+# See https://pre-commit.com
+#
+# nbstripout removes Jupyter notebook OUTPUT cells before commit. This is
+# prevention for a whole class of leak (any credential, token, or PII that
+# ends up in a rendered cell output), independent of pattern matching. It is
+# here because a BioPortal API key leaked into a notebook output cell in this
+# repo. Detection of committed secrets is handled separately by gitleaks in CI.
+repos:
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.9.1
+    hooks:
+      - id: nbstripout
