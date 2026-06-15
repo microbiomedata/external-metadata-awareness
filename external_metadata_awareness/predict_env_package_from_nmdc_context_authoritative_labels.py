@@ -11,7 +11,6 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
 from scipy.sparse import hstack
 
-import numpy as np
 
 # Initialize cache dictionaries
 ancestor_cache = {}
@@ -85,9 +84,7 @@ def get_hierarchy_terms(curie: str, adapter) -> dict:
     Returns:
         dict: Dictionary containing lists of ancestor and descendant terms.
     """
-    if curie in ancestor_cache:
-        ancestors = ancestor_cache[curie]
-    else:
+    if curie not in ancestor_cache:
         try:
             ancestors = list(adapter.ancestors(curie, predicates=[IS_A]))
             ancestor_cache[curie] = [adapter.label(ancestor) for ancestor in ancestors if ancestor]
@@ -95,9 +92,7 @@ def get_hierarchy_terms(curie: str, adapter) -> dict:
             print(f"Error retrieving ancestors for {curie}: {e}")
             ancestor_cache[curie] = []
 
-    if curie in descendant_cache:
-        descendants = descendant_cache[curie]
-    else:
+    if curie not in descendant_cache:
         try:
             descendants = list(adapter.descendants(curie, predicates=[IS_A]))
             descendant_cache[curie] = [adapter.label(descendant) for descendant in descendants if descendant]

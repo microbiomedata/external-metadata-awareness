@@ -4,7 +4,6 @@ import datetime
 import os
 import time
 from tqdm import tqdm
-from itertools import islice
 
 from external_metadata_awareness.mongodb_connection import get_mongo_client
 

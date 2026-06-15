@@ -102,7 +102,7 @@ db.env_triads.aggregate([
     {
         // Include all records: those with components AND those with only raw_original
         $match: {
-            raw_original: { $exists: true, $ne: null, $ne: "" }
+            raw_original: { $exists: true, $nin: [null, ""] }
         }
     },
     {

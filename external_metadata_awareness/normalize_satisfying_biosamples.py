@@ -213,7 +213,7 @@ def normalize_biosamples(
     click.echo(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Normalizing collection_date to YYYY-MM-DD format...")
     if 'collection_date' in df.columns:
         # Get unique values and sort alphabetically
-        unique_dates = sorted(df['collection_date'].unique(), key=lambda x: str(x))
+        unique_dates = sorted(df['collection_date'].unique(), key=str)
         total_unique = len(unique_dates)
         click.echo(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}]   Found {total_unique:,} unique date values")
 
@@ -246,7 +246,7 @@ def normalize_biosamples(
     click.echo(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Normalizing lat_lon to separate latitude/longitude columns (+/- DD.dddd)...")
     if 'lat_lon' in df.columns:
         # Get unique values and sort alphabetically
-        unique_coords = sorted(df['lat_lon'].unique(), key=lambda x: str(x))
+        unique_coords = sorted(df['lat_lon'].unique(), key=str)
         total_unique = len(unique_coords)
         click.echo(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}]   Found {total_unique:,} unique coordinate values")
 

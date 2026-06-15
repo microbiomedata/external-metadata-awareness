@@ -2,7 +2,6 @@
 
 import csv
 import re
-import sys
 from collections import Counter
 
 import click

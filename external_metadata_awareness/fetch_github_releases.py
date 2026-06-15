@@ -1,7 +1,6 @@
 import os
 import click
 import requests
-from pathlib import Path
 from typing import Optional, Dict
 
 def get_github_api_url(owner: str, repo: str) -> str:
