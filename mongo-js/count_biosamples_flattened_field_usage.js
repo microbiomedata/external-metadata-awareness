@@ -25,7 +25,7 @@ db.biosamples_flattened.aggregate([
     { 
         $match: { 
             "kvArray.k": { $nin: ["_id", "accession"] },
-            "kvArray.v": { $ne: null, $ne: "", $exists: true }
+            "kvArray.v": { $nin: [null, ""], $exists: true }
         } 
     },
     // Count usage per harmonized field name

@@ -2,6 +2,7 @@
 """Minimal script to fetch one document from a MongoDB collection."""
 
 import json
+import sys
 from urllib.parse import urlparse
 import click
 from bson import json_util
@@ -45,7 +46,7 @@ def fetch_document(mongo_uri, env_file, collection, verbose):
 
     except Exception as e:
         click.echo(f"Error: {e}", err=True)
-        exit(1)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

@@ -22,6 +22,7 @@ def recreate_index(collection, keys, **kwargs):
         collection.drop_index(index_name)
         print(f"   ↪ Dropped existing index: {index_name}")
     except Exception:
+        # Index may not exist yet on a fresh collection; nothing to drop.
         pass
     collection.create_index(keys, **kwargs)
     print(f"   ↪ Created index: {index_name}")

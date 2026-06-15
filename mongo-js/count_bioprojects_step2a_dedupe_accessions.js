@@ -20,8 +20,8 @@ print(`[${new Date().toISOString()}] Running aggregation (may take 60-90 min for
 db.biosamples_attributes.aggregate([
     {
         $match: {
-            harmonized_name: {$exists: true, $ne: "", $ne: null},
-            accession: {$exists: true, $ne: "", $ne: null}
+            harmonized_name: {$exists: true, $nin: ["", null]},
+            accession: {$exists: true, $nin: ["", null]}
         }
     },
     // Deduplicate harmonized_name + accession pairs

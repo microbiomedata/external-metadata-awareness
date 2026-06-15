@@ -34,5 +34,5 @@ for m in models:
         )
 
         print(f"Model: {m}\nResponse: {response.choices[-1].message.content}")
-    except:
+    except Exception:
         print(f"Error calling model {m}")

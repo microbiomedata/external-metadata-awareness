@@ -16,7 +16,7 @@ import logging
 import os
 import time
 from collections import Counter
-from typing import Dict, Any, List
+from typing import Dict, Any
 
 from external_metadata_awareness.mongodb_connection import get_mongo_client
 

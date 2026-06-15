@@ -10,7 +10,6 @@ import os
 import sys
 import subprocess
 import click
-from pymongo import uri_parser
 
 from external_metadata_awareness.mongodb_connection import get_mongo_client
 
