@@ -28,9 +28,7 @@ WGET=wget
         flatten_biosample_attributes \
         flatten_biosample_packages \
         biosamples-flattened \
-        aggregate-biosample-package-usage \
-        create-environmental-candidates-2017-plus \
-        copy-environmental-candidates-to-ncbi-metadata
+        aggregate-biosample-package-usage
 
 purge:
 	rm -rf $(DOWNLOADS_DIR)/biosample_set.xml*
@@ -223,28 +221,6 @@ aggregate-biosample-package-usage: biosamples-flattened
 		$(ENV_FILE_OPTION) \
 		--js-file mongo-js/aggregate_biosample_package_usage.js \
 		--verbose
-	@date
-
-create-environmental-candidates-2017-plus:
-	@date
-	@echo "Creating environmental candidates collection (2017+, complete triads)..."
-	$(RUN) mongo-connect \
-		--uri "$(MONGO_URI)" \
-		$(ENV_FILE_OPTION) \
-		--connect \
-		--verbose \
-		--command 'db.biosamples.aggregate([{$$match: {"Attributes.Attribute": {$$all: [{$$elemMatch: {harmonized_name: "collection_date", content: {$$gte: "2017-01-01"}}}, {$$elemMatch: {harmonized_name: "env_broad_scale", content: {$$exists: true, $$ne: null, $$ne: ""}}}, {$$elemMatch: {harmonized_name: "env_local_scale", content: {$$exists: true, $$ne: null, $$ne: ""}}}, {$$elemMatch: {harmonized_name: "env_medium", content: {$$exists: true, $$ne: null, $$ne: ""}}}]}}}, {$$out: "environmental_candidates_2017_plus"}])'
-	@date
-
-copy-environmental-candidates-to-ncbi-metadata:
-	@date
-	@echo "Copying environmental candidates to ncbi_metadata.biosamples..."
-	$(RUN) mongo-connect \
-		--uri "$(MONGO_URI)" \
-		$(ENV_FILE_OPTION) \
-		--connect \
-		--verbose \
-		--command 'db.environmental_candidates_2017_plus.aggregate([{$$out: {db: "$(shell echo $(MONGO_URI) | sed 's|.*/||')", coll: "biosamples"}}])'
 	@date
 
 # Analyze collection structure complexity (flatness scoring)
