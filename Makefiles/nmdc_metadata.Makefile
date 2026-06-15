@@ -145,7 +145,7 @@ nmdc-submissions-to-mongo nmdc-submissions-to-mongo-dev:
 		echo "  MONGO_URI=mongodb://<user>:<pw>@<host>:<port>/<db>?authSource=admin"; \
 		echo "Optional (the CLI supplies defaults when omitted):"; \
 		echo "  BASE_URL=https://data.microbiomedata.org   (or https://data-dev.microbiomedata.org)"; \
-		echo "  OUTPUT_FILE=local/nmdc-metadata-out/flattened_submission_biosamples.tsv"; \
+		echo "  OUTPUT_FILE=local/nmdc_export/flattened_submission_biosamples.tsv  (under the default NMDC_EXPORT_DIR)"; \
 		exit 1; \
 	fi
 	@mkdir -p $(NMDC_EXPORT_DIR)
