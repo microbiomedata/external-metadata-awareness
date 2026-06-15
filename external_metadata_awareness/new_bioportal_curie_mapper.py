@@ -65,7 +65,7 @@ def safe_expand(curie):
     """Expand a CURIE using the converter."""
     try:
         return converter.expand(curie.upper())
-    except Exception as e:
+    except Exception:
         # print(f"CURIE: {curie} - Expansion error: {e}")
         return None
 
@@ -84,7 +84,7 @@ def get_bioportal_info(term_uri, prefix, api_key):
         data = response.json()
         mappings_link = data.get("links", {}).get("mappings")
         return {"mappings_link": mappings_link, "data": data}
-    except Exception as e:
+    except Exception:
         # print(f"Error fetching BioPortal info for {url}: {e}")
         return None
 
@@ -102,7 +102,7 @@ def get_mapped_term_info(self_link, api_key):
         response = requests.get(url, timeout=10)
         response.raise_for_status()
         return response.json()
-    except Exception as e:
+    except Exception:
         # print(f"Error fetching mapped term info from {self_link}: {e}")
         return {}
 
@@ -154,7 +154,7 @@ def fetch_mappings(mappings_url, api_key, verbose=False):
         if verbose:
             pprint.pprint(accepted_mappings)
         return accepted_mappings
-    except Exception as e:
+    except Exception:
         # print(f"Error fetching mappings from {mappings_url}: {e}")
         return []
 
