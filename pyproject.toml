@@ -11,7 +11,7 @@ python = "^3.10"
 click = "^8.1.7"
 db-dtypes = "^1.4.1"
 duckdb = "^1.0.0"
-duckdb-engine = "^0.14.0"
+duckdb-engine = ">=0.14,<0.18"
 folium = "^0.19.4" # maps
 git-filter-repo = "^2.47.0"
 google-cloud-bigquery = "^3.25.0"

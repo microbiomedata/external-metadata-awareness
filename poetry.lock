@@ -1307,14 +1307,14 @@ all = ["adbc-driver-manager", "fsspec", "ipython", "numpy", "pandas", "pyarrow"]
 
 [[package]]
 name = "duckdb-engine"
-version = "0.14.2"
+version = "0.17.0"
 description = "SQLAlchemy driver for duckdb"
 optional = false
-python-versions = "<4,>=3.8"
+python-versions = "<4,>=3.9"
 groups = ["main"]
 files = [
-    {file = "duckdb_engine-0.14.2-py3-none-any.whl", hash = "sha256:9c0634e53b91a2b43bbd74b06f275eca80acd7ad02ebb0193ef6d9a22ed29b49"},
-    {file = "duckdb_engine-0.14.2.tar.gz", hash = "sha256:a1e068d8c61d3368405a35740e652b236ae23e98fbbfbe02093855586e07caaf"},
+    {file = "duckdb_engine-0.17.0-py3-none-any.whl", hash = "sha256:3aa72085e536b43faab635f487baf77ddc5750069c16a2f8d9c6c3cb6083e979"},
+    {file = "duckdb_engine-0.17.0.tar.gz", hash = "sha256:396b23869754e536aa80881a92622b8b488015cf711c5a40032d05d2cf08f3cf"},
 ]
 
 [package.dependencies]
@@ -8016,4 +8016,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "415a4e8ed8c110c43a5b8292c50387da47379987d38ace3a497a3423e0352e2c"
+content-hash = "f2d0bca909388dcd0c38ec359015f9512a891682eca0a1e914873199adcc4daa"
