@@ -128,46 +128,29 @@ local/nmdc-consensus-collections.txt: local/nmdc-prod-api-advertised-collections
 local/nmdc-prod-api-advertised-collection-stats.json:
 	curl -sSL 'https://api.microbiomedata.org/nmdcschema/collection_stats' | jq . > $@
 
+# Submissions fetch: the .env file is the canonical per-environment config.
+# It holds NMDC_DATA_SUBMISSION_REFRESH_TOKEN plus MONGO_URI, BASE_URL, and
+# OUTPUT_FILE for that environment. The dev target overrides only which env
+# file to load; everything else lives inside the file.
 NMDC_SUBMISSIONS_ENV ?= local/.env.nmdc-submissions
-NMDC_SUBMISSIONS_TSV ?= $(NMDC_EXPORT_DIR)/flattened_submission_biosamples.tsv
-NMDC_SUBMISSIONS_BASE_URL ?= https://data.microbiomedata.org
 
-# Data-dev environment config
-NMDC_SUBMISSIONS_DEV_ENV ?= local/.env.nmdc-submissions-data-dev
-NMDC_SUBMISSIONS_DEV_TSV ?= $(NMDC_EXPORT_DIR)/flattened_submission_biosamples_data_dev.tsv
-NMDC_DATA_DEV_MONGO_URI ?= mongodb://localhost:27017/nmdc_data_dev
-NMDC_SUBMISSIONS_DEV_BASE_URL ?= https://data-dev.microbiomedata.org
+nmdc-submissions-to-mongo-dev: NMDC_SUBMISSIONS_ENV := local/.env.nmdc-submissions-data-dev
 
-.PHONY: nmdc-submissions-to-mongo
-nmdc-submissions-to-mongo:
+.PHONY: nmdc-submissions-to-mongo nmdc-submissions-to-mongo-dev
+nmdc-submissions-to-mongo nmdc-submissions-to-mongo-dev:
 	@if [ ! -f "$(NMDC_SUBMISSIONS_ENV)" ]; then \
 		echo "Error: $(NMDC_SUBMISSIONS_ENV) not found."; \
-		echo "Create it with: NMDC_DATA_SUBMISSION_REFRESH_TOKEN=<your-token>"; \
+		echo "Create it with at minimum:"; \
+		echo "  NMDC_DATA_SUBMISSION_REFRESH_TOKEN=<token from data[-dev].microbiomedata.org Local Storage>"; \
+		echo "  MONGO_URI=mongodb://<user>:<pw>@<host>:<port>/<db>?authSource=admin"; \
+		echo "  BASE_URL=https://data.microbiomedata.org   (or https://data-dev.microbiomedata.org)"; \
+		echo "  OUTPUT_FILE=$(NMDC_EXPORT_DIR)/flattened_submission_biosamples.tsv"; \
 		exit 1; \
 	fi
 	@mkdir -p $(NMDC_EXPORT_DIR)
 	$(RUN) python external_metadata_awareness/nmdc-submissions-to-mongo.py \
 		run-all \
-		--mongo-url "$(MONGO_URI)" \
-		--env-path "$(NMDC_SUBMISSIONS_ENV)" \
-		--output-file "$(NMDC_SUBMISSIONS_TSV)" \
-		--base-url "$(NMDC_SUBMISSIONS_BASE_URL)"
-
-.PHONY: nmdc-submissions-to-mongo-dev
-nmdc-submissions-to-mongo-dev:
-	@if [ ! -f "$(NMDC_SUBMISSIONS_DEV_ENV)" ]; then \
-		echo "Error: $(NMDC_SUBMISSIONS_DEV_ENV) not found."; \
-		echo "Create it with: NMDC_DATA_SUBMISSION_REFRESH_TOKEN=<your-token>"; \
-		echo "Token source: https://data-dev.microbiomedata.org (Local Storage after ORCID login)"; \
-		exit 1; \
-	fi
-	@mkdir -p $(NMDC_EXPORT_DIR)
-	$(RUN) python external_metadata_awareness/nmdc-submissions-to-mongo.py \
-		run-all \
-		--mongo-url "$(NMDC_DATA_DEV_MONGO_URI)" \
-		--env-path "$(NMDC_SUBMISSIONS_DEV_ENV)" \
-		--output-file "$(NMDC_SUBMISSIONS_DEV_TSV)" \
-		--base-url "$(NMDC_SUBMISSIONS_DEV_BASE_URL)"
+		--env-path "$(NMDC_SUBMISSIONS_ENV)"
 
 NMDC_SUBMISSIONS_DUCKDB ?= local/nmdc_submissions.duckdb
 NMDC_EVAL_INPUT_TARGET_TSV ?= $(NMDC_EXPORT_DIR)/eval_input_target_pairs.tsv
@@ -186,9 +169,19 @@ eval-input-target-tsv: export-submissions-to-duckdb
 
 NMDC_SUBMISSION_COLLECTIONS = nmdc_submissions flattened_submission_biosamples submission_biosample_rows submission_biosample_slot_counts
 
-.PHONY: drop-nmdc-submissions
-drop-nmdc-submissions:
-	@echo "Dropping submission collections from $(MONGO_URI)..."
-	@for coll in $(NMDC_SUBMISSION_COLLECTIONS); do \
-		mongosh "$(MONGO_URI)" --quiet --eval "db.getCollection('$$coll').drop(); print('Dropped: $$coll');" ; \
+# Reads MONGO_URI from $(NMDC_SUBMISSIONS_ENV) so the credentials never appear
+# on the command line or in echoed recipes. Dev target overrides which file is
+# loaded, same as the fetch targets above.
+nmdc-submissions-drop-dev: NMDC_SUBMISSIONS_ENV := local/.env.nmdc-submissions-data-dev
+
+.PHONY: drop-nmdc-submissions nmdc-submissions-drop-dev
+drop-nmdc-submissions nmdc-submissions-drop-dev:
+	@if [ ! -f "$(NMDC_SUBMISSIONS_ENV)" ]; then \
+		echo "Error: $(NMDC_SUBMISSIONS_ENV) not found."; \
+		exit 1; \
+	fi
+	@echo "Dropping submission collections from MongoDB configured by $(NMDC_SUBMISSIONS_ENV) ..."
+	@set -a && . "$(NMDC_SUBMISSIONS_ENV)" && set +a && \
+	for coll in $(NMDC_SUBMISSION_COLLECTIONS); do \
+		mongosh "$$MONGO_URI" --quiet --eval "db.getCollection('$$coll').drop(); print('Dropped: $$coll');" ; \
 	done
