@@ -8,6 +8,7 @@ from datetime import datetime
 from dotenv import dotenv_values
 from tqdm import tqdm
 from pymongo import MongoClient
+from pymongo.uri_parser import parse_uri
 from linkml_runtime import SchemaView
 from oaklib import get_adapter
 
@@ -85,7 +86,7 @@ def fetch_nmdc_submissions(mongo_url, env_path, base_url="https://data.microbiom
     # Connect to MongoDB
     client = MongoClient(mongo_url)
     # Use provided database or default to 'misc_metadata'
-    db_name = client.get_database().name or 'misc_metadata'
+    db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
     db = client[db_name]
     collection = db['nmdc_submissions']
 
@@ -273,7 +274,7 @@ def process_submissions(mongo_url, output_file):
     # Connect to MongoDB
     client = MongoClient(mongo_url)
     # Use provided database or default to 'misc_metadata'
-    db_name = client.get_database().name or 'misc_metadata'
+    db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
     submissions_db = client[db_name]
     submissions_collection = submissions_db['nmdc_submissions']
 
@@ -366,7 +367,7 @@ def create_biosample_rows(mongo_url):
     """
     client = MongoClient(mongo_url)
     # Use provided database or default to 'misc_metadata'
-    db_name = client.get_database().name or 'misc_metadata'
+    db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
     db = client[db_name]
     submissions_collection = db['nmdc_submissions']
     biosample_rows = []
@@ -405,7 +406,7 @@ def run_aggregation_pipeline(mongo_url):
     """
     client = MongoClient(mongo_url)
     # Use provided database or default to 'misc_metadata'
-    db_name = client.get_database().name or 'misc_metadata'
+    db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
     db = client[db_name]
     pipeline = [
         {"$unwind": "$row_data"},
@@ -495,7 +496,7 @@ def check_value_set_compliance(mongo_url):
     click.echo(f"Found enums for extensions: {', '.join(discovered)}")
 
     client = MongoClient(mongo_url)
-    db_name = client.get_database().name or 'misc_metadata'
+    db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
     db = client[db_name]
     collection = db['flattened_submission_biosamples']
 
