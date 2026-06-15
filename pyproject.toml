@@ -169,7 +169,8 @@ DEP002 = [
 #    - May be used in manual git operations or scripting
 
 [tool.ruff]
-# Lints only the source tree; notebooks are out of CodeQL's scan scope too.
+# `ruff check .` lints every .py file in the repo; only Jupyter notebooks
+# are excluded, matching CodeQL's scan scope (which also skips .ipynb).
 extend-exclude = ["*.ipynb"]
 
 [tool.ruff.lint]
