@@ -60,7 +60,7 @@ json-tabulate = "^0.1.4"
 nmdc-submission-schema = "^11.17.0"
 
 [tool.poetry.group.dev.dependencies]
-deptry = "^0.23.0"
+deptry = ">=0.23,<0.26"
 
 [build-system]
 requires = ["poetry-core"]
