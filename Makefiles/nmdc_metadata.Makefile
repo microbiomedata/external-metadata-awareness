@@ -140,11 +140,12 @@ nmdc-submissions-to-mongo-dev: NMDC_SUBMISSIONS_ENV := local/.env.nmdc-submissio
 nmdc-submissions-to-mongo nmdc-submissions-to-mongo-dev:
 	@if [ ! -f "$(NMDC_SUBMISSIONS_ENV)" ]; then \
 		echo "Error: $(NMDC_SUBMISSIONS_ENV) not found."; \
-		echo "Create it with at minimum:"; \
+		echo "Required:"; \
 		echo "  NMDC_DATA_SUBMISSION_REFRESH_TOKEN=<token from data[-dev].microbiomedata.org Local Storage>"; \
 		echo "  MONGO_URI=mongodb://<user>:<pw>@<host>:<port>/<db>?authSource=admin"; \
+		echo "Optional (the CLI supplies defaults when omitted):"; \
 		echo "  BASE_URL=https://data.microbiomedata.org   (or https://data-dev.microbiomedata.org)"; \
-		echo "  OUTPUT_FILE=$(NMDC_EXPORT_DIR)/flattened_submission_biosamples.tsv"; \
+		echo "  OUTPUT_FILE=local/nmdc-metadata-out/flattened_submission_biosamples.tsv"; \
 		exit 1; \
 	fi
 	@mkdir -p $(NMDC_EXPORT_DIR)
@@ -169,9 +170,12 @@ eval-input-target-tsv: export-submissions-to-duckdb
 
 NMDC_SUBMISSION_COLLECTIONS = nmdc_submissions flattened_submission_biosamples submission_biosample_rows submission_biosample_slot_counts
 
-# Reads MONGO_URI from $(NMDC_SUBMISSIONS_ENV) so the credentials never appear
-# on the command line or in echoed recipes. Dev target overrides which file is
-# loaded, same as the fetch targets above.
+# Reads MONGO_URI from $(NMDC_SUBMISSIONS_ENV) with a non-executing dotenv
+# parser (not shell sourcing, which would mishandle URIs containing '&' and
+# would run any code in the file) and passes it to mongosh through the
+# environment rather than as an argv parameter, so the credential is not
+# visible in process listings or echoed recipes. Dev target overrides which
+# file is loaded, same as the fetch targets above.
 nmdc-submissions-drop-dev: NMDC_SUBMISSIONS_ENV := local/.env.nmdc-submissions-data-dev
 
 .PHONY: drop-nmdc-submissions nmdc-submissions-drop-dev
@@ -181,7 +185,7 @@ drop-nmdc-submissions nmdc-submissions-drop-dev:
 		exit 1; \
 	fi
 	@echo "Dropping submission collections from MongoDB configured by $(NMDC_SUBMISSIONS_ENV) ..."
-	@set -a && . "$(NMDC_SUBMISSIONS_ENV)" && set +a && \
-	for coll in $(NMDC_SUBMISSION_COLLECTIONS); do \
-		mongosh "$$MONGO_URI" --quiet --eval "db.getCollection('$$coll').drop(); print('Dropped: $$coll');" ; \
-	done
+	@MONGO_URI="$$($(RUN) python -c 'from dotenv import dotenv_values; print(dotenv_values("$(NMDC_SUBMISSIONS_ENV)").get("MONGO_URI") or "")')"; \
+	if [ -z "$$MONGO_URI" ]; then echo "Error: MONGO_URI not set in $(NMDC_SUBMISSIONS_ENV)"; exit 1; fi; \
+	MONGO_URI="$$MONGO_URI" NMDC_SUBMISSION_COLLECTIONS="$(NMDC_SUBMISSION_COLLECTIONS)" \
+		mongosh --nodb --quiet --eval 'const db = connect(process.env.MONGO_URI); process.env.NMDC_SUBMISSION_COLLECTIONS.split(/\s+/).forEach(function (c) { db.getCollection(c).drop(); print("Dropped: " + c); });'
