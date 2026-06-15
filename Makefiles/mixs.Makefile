@@ -5,8 +5,10 @@ WGET=wget
 # https://github.com/microbiomedata/external-metadata-awareness/issues/449).
 # Install it separately to run the sex/gender analysis recipe below, e.g.:
 #   uv tool install llm && llm install llm-anthropic
-# Override with LLM=/path/to/llm if it is not on PATH.
-LLM ?= llm
+# Override with LLM_CLI=/path/to/llm if it is not on PATH. The name is
+# specific (not plain LLM) so it cannot be clobbered by a user's exported
+# LLM environment variable, which Make would otherwise import.
+LLM_CLI ?= llm
 
 # preferable to use a tagged release, but theres good stuff in this commit that hasn't been released yet
 MIXS_YAML_URL=https://raw.githubusercontent.com/GenomicsStandardsConsortium/mixs/b0b1e03b705cb432d08914c686ea820985b9cb20/src/mixs/schema/mixs.yaml
@@ -28,7 +30,7 @@ local/mixs-slots-enums-no-MixsCompliantData-domain.json
 
 local/mixs-slots-sex-gender-analysis-response.txt: local/mixs-slots-sex-gender-analysis-prompt.txt
 	# cborg/claude-opus
-	cat $(word 1,$^) | $(LLM) prompt --model claude-3.5-sonnet -o temperature 0.01 | tee $@
+	cat $(word 1,$^) | $(LLM_CLI) prompt --model claude-3.5-sonnet -o temperature 0.01 | tee $@
 
 # getting fragments of MIxS because the whole thing is too large to feed into an LLM
 local/mixs-extensions-with-slots.json: downloads/mixs.yaml

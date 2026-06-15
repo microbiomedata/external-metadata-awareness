@@ -1,3 +1,4 @@
+---
 # See https://pre-commit.com
 #
 # nbstripout removes Jupyter notebook OUTPUT cells before commit. This is
