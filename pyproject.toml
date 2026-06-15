@@ -19,7 +19,6 @@ google-cloud-bigquery-storage = "^2.28.0"
 gsheet-pandas = "^0.2.8"
 gspread = "^6.1.2"
 jupyter = "^1.1.1"
-llm = "^0.15"
 lxml = "^6.0.2"
 matplotlib = "^3.10.8"
 notebook = "^7.3.2"
@@ -125,7 +124,6 @@ DEP002 = [
     "git-filter-repo",
     "gspread", # gsheets_helper.py
     "jupyter",
-    "llm",
     "notebook",
     "oauth2client",
     "openpyxl",
@@ -169,5 +167,3 @@ DEP002 = [
 #  10. git-filter-repo:
 #    - No direct usage in code, but mentioned in CLAUDE.md
 #    - May be used in manual git operations or scripting
-#  11. llm:
-#    - No direct or clear indirect usage found

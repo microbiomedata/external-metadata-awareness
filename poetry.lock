@@ -666,24 +666,6 @@ files = [
 colorama = {version = "*", markers = "platform_system == \"Windows\""}
 
 [[package]]
-name = "click-default-group"
-version = "1.2.4"
-description = "click_default_group"
-optional = false
-python-versions = ">=2.7"
-groups = ["main"]
-files = [
-    {file = "click_default_group-1.2.4-py2.py3-none-any.whl", hash = "sha256:9b60486923720e7fc61731bdb32b617039aba820e22e1c88766b1125592eaa5f"},
-    {file = "click_default_group-1.2.4.tar.gz", hash = "sha256:eb3f3c99ec0d456ca6cd2a7f08f7d4e91771bef51b01bdd9580cc6450fe1251e"},
-]
-
-[package.dependencies]
-click = "*"
-
-[package.extras]
-test = ["pytest"]
-
-[[package]]
 name = "click-plugins"
 version = "1.1.1.2"
 description = "An extension module for click to enable registering CLI commands via setuptools entry-points."
@@ -3390,35 +3372,6 @@ rdflib = ">=6.0.0"
 requests = "*"
 
 [[package]]
-name = "llm"
-version = "0.15"
-description = "A CLI utility and Python library for interacting with Large Language Models, including OpenAI, PaLM and local models installed on your own machine."
-optional = false
-python-versions = ">=3.8"
-groups = ["main"]
-files = [
-    {file = "llm-0.15-py3-none-any.whl", hash = "sha256:a0f028b46fdc3cd8fd2dcbf52a0784a21a2f8d09f9d70d195dc620d253a972d0"},
-    {file = "llm-0.15.tar.gz", hash = "sha256:9da5c195b514d446f81e63aa48fc2c208a44e791eb16c3529c48ae8d6021e339"},
-]
-
-[package.dependencies]
-click = "*"
-click-default-group = ">=1.2.3"
-openai = ">=1.0"
-pip = "*"
-pluggy = "*"
-pydantic = ">=1.10.2"
-pyreadline3 = {version = "*", markers = "sys_platform == \"win32\""}
-python-ulid = "*"
-PyYAML = "*"
-setuptools = "*"
-sqlite-migrate = ">=0.1a2"
-sqlite-utils = ">=3.37"
-
-[package.extras]
-test = ["black (>=24.1.0)", "cogapp", "mypy (>=1.10.0)", "numpy", "pytest", "pytest-httpx", "ruff", "types-PyYAML", "types-click", "types-setuptools"]
-
-[[package]]
 name = "lxml"
 version = "6.1.0"
 description = "Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API."
@@ -4625,18 +4578,6 @@ tests = ["check-manifest", "coverage (>=7.4.2)", "defusedxml", "markdown2", "ole
 xmp = ["defusedxml"]
 
 [[package]]
-name = "pip"
-version = "26.1"
-description = "The PyPA recommended tool for installing Python packages."
-optional = false
-python-versions = ">=3.10"
-groups = ["main"]
-files = [
-    {file = "pip-26.1-py3-none-any.whl", hash = "sha256:4e8486d821d814b77319acb7b9e8bf5a4ee7590a643e7cb21029f209be8573c1"},
-    {file = "pip-26.1.tar.gz", hash = "sha256:81e13ebcca3ffa8cc85e4deff5c27e1ee26dea0aa7fc2f294a073ac208806ff3"},
-]
-
-[[package]]
 name = "platformdirs"
 version = "4.5.0"
 description = "A small Python package for determining appropriate platform-specific dirs, e.g. a `user data dir`."
@@ -5432,22 +5373,6 @@ files = [
 diagrams = ["jinja2", "railroad-diagrams"]
 
 [[package]]
-name = "pyreadline3"
-version = "3.5.4"
-description = "A python implementation of GNU readline."
-optional = false
-python-versions = ">=3.8"
-groups = ["main"]
-markers = "sys_platform == \"win32\""
-files = [
-    {file = "pyreadline3-3.5.4-py3-none-any.whl", hash = "sha256:eaf8e6cc3c49bcccf145fc6067ba8643d1df34d604a1ec0eccbf7a18e6d3fae6"},
-    {file = "pyreadline3-3.5.4.tar.gz", hash = "sha256:8d57d53039a1c75adba8e50dd3d992b28143480816187ea5efbd5c78e6c885b7"},
-]
-
-[package.extras]
-dev = ["build", "flake8", "mypy", "pytest", "twine"]
-
-[[package]]
 name = "pyshex"
 version = "0.8.1"
 description = "Python ShEx Implementation"
@@ -5618,21 +5543,6 @@ files = [
 
 [package.extras]
 dev = ["backports.zoneinfo ; python_version < \"3.9\"", "black", "build", "freezegun", "mdx_truly_sane_lists", "mike", "mkdocs", "mkdocs-awesome-pages-plugin", "mkdocs-gen-files", "mkdocs-literate-nav", "mkdocs-material (>=8.5)", "mkdocstrings[python]", "msgspec ; implementation_name != \"pypy\"", "mypy", "orjson ; implementation_name != \"pypy\"", "pylint", "pytest", "tzdata", "validate-pyproject[all]"]
-
-[[package]]
-name = "python-ulid"
-version = "3.1.0"
-description = "Universally unique lexicographically sortable identifier"
-optional = false
-python-versions = ">=3.9"
-groups = ["main"]
-files = [
-    {file = "python_ulid-3.1.0-py3-none-any.whl", hash = "sha256:e2cdc979c8c877029b4b7a38a6fba3bc4578e4f109a308419ff4d3ccf0a46619"},
-    {file = "python_ulid-3.1.0.tar.gz", hash = "sha256:ff0410a598bc5f6b01b602851a3296ede6f91389f913a5d5f8c496003836f636"},
-]
-
-[package.extras]
-pydantic = ["pydantic (>=2.0)"]
 
 [[package]]
 name = "pytrie"
@@ -7278,66 +7188,6 @@ timezone = ["python-dateutil"]
 url = ["furl (>=0.4.1)"]
 
 [[package]]
-name = "sqlite-fts4"
-version = "1.0.3"
-description = "Python functions for working with SQLite FTS4 search"
-optional = false
-python-versions = "*"
-groups = ["main"]
-files = [
-    {file = "sqlite-fts4-1.0.3.tar.gz", hash = "sha256:78b05eeaf6680e9dbed8986bde011e9c086a06cb0c931b3cf7da94c214e8930c"},
-    {file = "sqlite_fts4-1.0.3-py3-none-any.whl", hash = "sha256:0359edd8dea6fd73c848989e1e2b1f31a50fe5f9d7272299ff0e8dbaa62d035f"},
-]
-
-[package.extras]
-test = ["pytest"]
-
-[[package]]
-name = "sqlite-migrate"
-version = "0.1b0"
-description = "A simple database migration system for SQLite, based on sqlite-utils"
-optional = false
-python-versions = "*"
-groups = ["main"]
-files = [
-    {file = "sqlite-migrate-0.1b0.tar.gz", hash = "sha256:8d502b3ca4b9c45e56012bd35c03d23235f0823c976d4ce940cbb40e33087ded"},
-    {file = "sqlite_migrate-0.1b0-py3-none-any.whl", hash = "sha256:a4125e35e1de3dc56b6b6ec60e9833ce0ce20192b929ddcb2d4246c5098859c6"},
-]
-
-[package.dependencies]
-sqlite-utils = "*"
-
-[package.extras]
-test = ["black", "mypy", "pytest", "ruff"]
-
-[[package]]
-name = "sqlite-utils"
-version = "3.38"
-description = "CLI tool and Python library for manipulating SQLite databases"
-optional = false
-python-versions = ">=3.8"
-groups = ["main"]
-files = [
-    {file = "sqlite_utils-3.38-py3-none-any.whl", hash = "sha256:8a27441015c3b2ef475f555861f7a2592f73bc60d247af9803a11b65fc605bf9"},
-    {file = "sqlite_utils-3.38.tar.gz", hash = "sha256:1ae77b931384052205a15478d429464f6c67a3ac3b4eafd3c674ac900f623aab"},
-]
-
-[package.dependencies]
-click = "*"
-click-default-group = ">=1.2.3"
-pluggy = "*"
-python-dateutil = "*"
-sqlite-fts4 = "*"
-tabulate = "*"
-
-[package.extras]
-docs = ["beanbag-docutils (>=2.0)", "codespell", "furo", "pygments-csv-lexer", "sphinx-autobuild", "sphinx-copybutton"]
-flake8 = ["flake8"]
-mypy = ["data-science-types", "mypy", "types-click", "types-pluggy", "types-python-dateutil", "types-tabulate"]
-test = ["black (>=24.1.1)", "cogapp", "hypothesis", "pytest"]
-tui = ["trogon"]
-
-[[package]]
 name = "sssom"
 version = "0.4.17"
 description = "Operations on SSSOM mapping tables"
@@ -7415,21 +7265,6 @@ files = [
     {file = "stemming-1.0.1.tar.gz", hash = "sha256:59678702e1d06caffecee82910f048edf12ad89dcf430776b4b05bfb8850bc51"},
     {file = "stemming-1.0.1.zip", hash = "sha256:3a812fbe64a8c74e95651f5a48bae3a7a47282aa58cd5a61f3384e73674ac23d"},
 ]
-
-[[package]]
-name = "tabulate"
-version = "0.9.0"
-description = "Pretty-print tabular data"
-optional = false
-python-versions = ">=3.7"
-groups = ["main"]
-files = [
-    {file = "tabulate-0.9.0-py3-none-any.whl", hash = "sha256:024ca478df22e9340661486f85298cff5f6dcdba14f3813e8830015b9ed1948f"},
-    {file = "tabulate-0.9.0.tar.gz", hash = "sha256:0095b12bf5966de529c0feb1fa08671671b3368eec77d7ef7ab114be2c068b3c"},
-]
-
-[package.extras]
-widechars = ["wcwidth"]
 
 [[package]]
 name = "tenacity"
@@ -8017,4 +7852,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "15b6095040e6d4f79f5ef2bd427f22490edcc7044a900bf6d08a17925174ceeb"
+content-hash = "5ad46944862ba0588f4d4aa29a8b4eb1c7d23bafd705d709f1b3029c196e6180"
