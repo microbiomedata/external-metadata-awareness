@@ -29,7 +29,7 @@ db.unit_assertion_counts.drop();
 db.biosamples_attributes.aggregate([
     {
         $match: {
-            unit: { $exists: true, $ne: null, $ne: "" },
+            unit: { $exists: true, $nin: [null, ""] },
             harmonized_name: { $exists: true, $ne: null }
         }
     },

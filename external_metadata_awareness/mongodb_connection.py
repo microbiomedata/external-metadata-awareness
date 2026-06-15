@@ -3,7 +3,6 @@ import os
 import sys
 import re
 import argparse
-import json
 import subprocess
 from pathlib import Path
 from typing import Optional
@@ -137,7 +136,7 @@ def main():
     try:
         # Get connection info in dry-run mode if not connecting
         if not args.connect and not args.command:
-            result = get_mongo_client(
+            get_mongo_client(
                 mongo_uri=args.uri,
                 env_file=args.env_file,
                 debug=args.verbose,

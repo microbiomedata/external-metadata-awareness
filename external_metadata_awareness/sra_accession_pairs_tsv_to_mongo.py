@@ -1,4 +1,3 @@
-import pymongo
 import csv
 import click
 import datetime

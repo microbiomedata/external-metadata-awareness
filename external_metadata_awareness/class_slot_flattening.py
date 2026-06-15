@@ -2,7 +2,6 @@ import click
 import pandas as pd
 from linkml_runtime import SchemaView
 from jsonasobj2 import as_dict
-import os
 import collections.abc
 from linkml_runtime.utils.yamlutils import extended_int
 

@@ -72,10 +72,6 @@ def merge_caches(source_files, target_file):
             
             # Process each table
             for table in ['responses', 'redirects']:
-                # Get column names
-                source_cur.execute(f"PRAGMA table_info({table})")
-                columns = [col[1] for col in source_cur.fetchall()]
-                
                 # Count records before importing
                 target_cur.execute(f"SELECT COUNT(*) FROM {table}")
                 before_count = target_cur.fetchone()[0]

@@ -1,12 +1,12 @@
 import csv
 import os
+import sys
 import click
-import pprint
 from tqdm import tqdm
 
 from typing import List, Any, Dict
 from dotenv import load_dotenv
-from github import Github, Repository, RateLimitExceededException, UnknownObjectException, GithubException
+from github import Github, RateLimitExceededException, UnknownObjectException, GithubException
 
 dotenv_path = os.path.join('local', '.env')
 load_dotenv(dotenv_path, verbose=True)
@@ -24,7 +24,7 @@ def main(org_name: str, repo_type: str, output_file: str):
     github_token = os.environ.get("GITHUB_TOKEN")
     if not github_token:
         print("Please set the GITHUB_TOKEN environment variable.")
-        exit(1)
+        sys.exit(1)
 
     repos = get_all_org_repos(org_name, github_token, repo_type)
     commit_data = []
