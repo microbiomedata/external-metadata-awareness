@@ -1,9 +1,9 @@
 ---
 name: build
 
-# Validates that the dependency tree still resolves and installs, and that
-# poetry.lock is in sync with pyproject.toml. There is no test suite to run
-# yet, so this is the "does it still build" check for PRs.
+# Validates that the dependency tree resolves and installs, that poetry.lock is
+# in sync with pyproject.toml, and runs the smoke tests (entry points import and
+# click commands respond to --help). No MongoDB or network is needed.
 
 on:
   push:
@@ -29,3 +29,5 @@ jobs:
         run: poetry check --lock
       - name: Install dependencies
         run: poetry install --no-interaction --no-root
+      - name: Smoke tests (entry points + CLI --help)
+        run: poetry run pytest -q
