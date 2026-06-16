@@ -14,8 +14,12 @@ covered by the load test; their ``--help`` is just not exercised here.
 """
 
 import importlib
-import tomllib
 from pathlib import Path
+
+try:
+    import tomllib  # Python 3.11+
+except ModuleNotFoundError:  # Python 3.10
+    import tomli as tomllib
 
 import click
 import pytest

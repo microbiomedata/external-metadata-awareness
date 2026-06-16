@@ -61,6 +61,7 @@ nmdc-submission-schema = "^11.17.0"
 [tool.poetry.group.dev.dependencies]
 deptry = ">=0.23,<0.26"
 pytest = ">=8.3,<9"
+tomli = { version = ">=2.0,<3", python = "<3.11" }
 
 [build-system]
 requires = ["poetry-core"]
