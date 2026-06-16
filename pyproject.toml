@@ -60,6 +60,8 @@ nmdc-submission-schema = "^11.17.0"
 
 [tool.poetry.group.dev.dependencies]
 deptry = ">=0.23,<0.26"
+pytest = ">=8.3,<9"
+tomli = { version = ">=2.0,<3", python = "<3.11" }
 
 [build-system]
 requires = ["poetry-core"]
@@ -70,7 +72,6 @@ build-backend = "poetry.core.masonry.api"
 biosample-json-to-context-tsv = 'external_metadata_awareness.biosample_json_to_context_tsv:create_biosample_table'
 build-prompt-from-template = 'external_metadata_awareness.build_prompt_from_template:process_files'
 count-xml-paths = 'external_metadata_awareness.count_xml_paths:main'
-get-extension-unique-slots = 'external_metadata_awareness.get_extension_unique_slots:process_json'
 random-sample-resources = 'external_metadata_awareness.adhoc.random_sample_resources:downsample_json_resources'
 xml-to-mongo = 'external_metadata_awareness.xml_to_mongo:load_xml_to_mongodb'
 
@@ -86,12 +87,9 @@ populate-env-triads-collection = 'external_metadata_awareness.populate_env_triad
 normalize-biosample-measurements = 'external_metadata_awareness.normalize_biosample_measurements:main'
 export-sra-accession-pairs = 'external_metadata_awareness.export_sra_accession_pairs:main'
 extract-ncbi-packages-fields = 'external_metadata_awareness.extract_all_ncbi_packages_fields:main'
-infer-biosample-env-context-curies = 'external_metadata_awareness.infer_biosample_env_context_obo_curies:main'
 load-bioprojects-into-mongodb = 'external_metadata_awareness.load_acceptable_sized_leaf_bioprojects_into_mongodb:main'
-mongodb-biosamples-to-duckdb = 'external_metadata_awareness.mongodb_biosamples_to_duckdb:main'
 mongo-connect = 'external_metadata_awareness.mongodb_connection:main'
 mongo-js-executor = 'external_metadata_awareness.mongo_js_executor:main'
-ncbi-package-info-to-duckdb = 'external_metadata_awareness.ncbi_package_info_to_duck_db:main'
 prioritize-lexmatch-results = 'external_metadata_awareness.prioritize_lexmatch_results:main'
 sra-accession-pairs-to-mongo = 'external_metadata_awareness.sra_accession_pairs_tsv_to_mongo:load_tsv_to_mongo'
 sra-parquet-to-mongodb = 'external_metadata_awareness.sra_parquet_to_mongodb:insert_parquet_to_mongo'
@@ -177,3 +175,9 @@ extend-exclude = ["*.ipynb"]
 # Code-quality rules matching the CodeQL standard findings resolved in #454:
 # unused import, unused local, bare except, exit()/quit(), unnecessary lambda.
 select = ["F401", "F841", "E722", "PLR1722", "PLW0108"]
+
+[tool.pytest.ini_options]
+# Only collect the dedicated test suite; do not auto-discover the adhoc
+# scripts (e.g. cborg_test.py matches pytest's *_test.py pattern and has
+# import-time side effects).
+testpaths = ["tests"]
