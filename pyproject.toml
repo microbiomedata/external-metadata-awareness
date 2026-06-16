@@ -167,3 +167,13 @@ DEP002 = [
 #  10. git-filter-repo:
 #    - No direct usage in code, but mentioned in CLAUDE.md
 #    - May be used in manual git operations or scripting
+
+[tool.ruff]
+# `ruff check .` lints every .py file in the repo; only Jupyter notebooks
+# are excluded, matching CodeQL's scan scope (which also skips .ipynb).
+extend-exclude = ["*.ipynb"]
+
+[tool.ruff.lint]
+# Code-quality rules matching the CodeQL standard findings resolved in #454:
+# unused import, unused local, bare except, exit()/quit(), unnecessary lambda.
+select = ["F401", "F841", "E722", "PLR1722", "PLW0108"]

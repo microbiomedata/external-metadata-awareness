@@ -32,7 +32,7 @@ def summarize_slot_range_pairs(nmdc_path, output_path):
     grouped["range_is_nmdc_class"] = grouped["range"].apply(lambda r: r in known_classes)
 
     # Convert domain list to string for export
-    grouped["domain"] = grouped["domain"].apply(lambda lst: ", ".join(lst))
+    grouped["domain"] = grouped["domain"].apply(", ".join)
 
     # Save result
     grouped.to_csv(output_path, sep="\t", index=False)
