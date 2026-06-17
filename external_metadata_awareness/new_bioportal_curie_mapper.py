@@ -43,7 +43,10 @@ map_to = {
 dont_map_from = {
     "BFO",
     "IAO",
-    "OF",  # todo garbage CURIes? double check where they come from
+    # TODO: Verify where `OF:*` CURIEs originate in source metadata (likely malformed/truncated prefixes).
+    # If they are invalid, keep `OF` in `dont_map_from`; if valid, add explicit normalization/mapping and
+    # remove `OF` from this ignore list to allow BioPortal CURIE mapping.
+    "OF",
     "RO",
 }
 ignore = list(map_to | dont_map_from)
