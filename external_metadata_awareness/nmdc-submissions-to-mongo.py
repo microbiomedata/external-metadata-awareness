@@ -89,6 +89,7 @@ def fetch_nmdc_submissions(mongo_url, env_path, base_url="https://data.microbiom
     db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
     db = client[db_name]
     collection = db['nmdc_submissions']
+    inserted_this_run = 0
 
     # Paginate through API results
     while True:
@@ -100,12 +101,20 @@ def fetch_nmdc_submissions(mongo_url, env_path, base_url="https://data.microbiom
             if not results:
                 break
 
-            # Insert fetched submissions into MongoDB
-            collection.insert_many(results)
+            # Insert/update fetched submissions into MongoDB.
+            # Use upsert to avoid duplicate key failures when pagination overlaps.
+            for doc in results:
+                doc_id = doc.get('_id')
+                if doc_id is not None:
+                    collection.replace_one({'_id': doc_id}, doc, upsert=True)
+                else:
+                    # Fallback when no stable identifier is present.
+                    collection.insert_one(doc)
+            inserted_this_run += len(results)
 
             # Check if we've fetched all records based on the reported total count
             total_count = data.get('count')
-            if total_count and collection.count_documents({}) >= total_count:
+            if total_count and inserted_this_run >= total_count:
                 break
 
             # Move to the next page
@@ -261,9 +270,8 @@ def process_submissions(mongo_url, output_file):
     to_label_check = [
         'env_broad_scale.id', 'env_local_scale.id', 'env_medium.id',
         'env_broad_scale.term.id', 'env_local_scale.term.id', 'env_medium.term.id',
-        'envoBroadScale.id', 'envoLocalScale.id', 'envoLocalScale.id',
+        'envoBroadScale.id', 'envoLocalScale.id', 'envoMedium.id',
     ]
-    ever_seen = set()
 
     # Build ontology adapters and load labels/obsolete terms
     ontology_list = ["envo", "pato", "uberon", "po"]
@@ -313,7 +321,6 @@ def process_submissions(mongo_url, output_file):
     for sample in tqdm(submission_biosamples, desc="Post-processing biosamples"):
         for key in to_label_check:
             if key in sample:
-                ever_seen.add(sample[key])
                 if sample[key] in label_cache:
                     sample[f"{key}_canonical_label"] = label_cache[sample[key]]
                 sample[f"{key}_obsolete"] = (sample[key] in obsolete_terms_list)
@@ -345,10 +352,13 @@ def process_submissions(mongo_url, output_file):
         click.echo(f"TSV file '{output_file}' written successfully.")
 
     # Insert flattened samples into the target collection
-    flattened_collection = submissions_db['flattened_submission_biosamples']
+    flattened_collection_name = 'flattened_submission_biosamples'
     if submission_biosamples:
-        flattened_collection.delete_many({})  # Clear existing data
-        insert_result = flattened_collection.insert_many(submission_biosamples)
+        temp_collection_name = f"{flattened_collection_name}_tmp"
+        temp_collection = submissions_db[temp_collection_name]
+        temp_collection.delete_many({})
+        insert_result = temp_collection.insert_many(submission_biosamples)
+        temp_collection.rename(flattened_collection_name, dropTarget=True)
         click.echo(
             f"Inserted {len(insert_result.inserted_ids)} documents into 'flattened_submission_biosamples' collection.")
 

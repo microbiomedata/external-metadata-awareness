@@ -26,7 +26,36 @@ import pytest
 from click.testing import CliRunner
 
 _PYPROJECT = Path(__file__).resolve().parent.parent / "pyproject.toml"
-_SCRIPTS = tomllib.loads(_PYPROJECT.read_text())["tool"]["poetry"].get("scripts", {})
+
+
+def _load_scripts_config():
+    try:
+        raw = _PYPROJECT.read_text(encoding="utf-8")
+    except OSError as exc:
+        pytest.fail(f"Unable to read {_PYPROJECT}: {exc}", pytrace=False)
+
+    try:
+        data = tomllib.loads(raw)
+    except tomllib.TOMLDecodeError as exc:
+        pytest.fail(f"Unable to parse TOML in {_PYPROJECT}: {exc}", pytrace=False)
+
+    try:
+        scripts = data["tool"]["poetry"].get("scripts", {})
+    except (KeyError, TypeError, AttributeError) as exc:
+        pytest.fail(
+            f"{_PYPROJECT} is missing expected [tool.poetry] structure: {exc}",
+            pytrace=False,
+        )
+
+    if not isinstance(scripts, dict):
+        pytest.fail(
+            f"{_PYPROJECT} has invalid [tool.poetry.scripts] value; expected a table/dict.",
+            pytrace=False,
+        )
+    return scripts
+
+
+_SCRIPTS = _load_scripts_config()
 _ENTRY_POINTS = sorted(_SCRIPTS.items())
 _IDS = [name for name, _ in _ENTRY_POINTS]
 
