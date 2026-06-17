@@ -1,3 +1,15 @@
+## Status (2026)
+
+This is the **original** env-triad mining pipeline. The happy path is now the
+production `env_triads` Makefile target plus `external_metadata_awareness/new_env_triad_*.py`
+(see `docs/env-triad-data-pipeline.md`). Kept for reference and because a few
+algorithms were never ported to the scripts:
+- the `compact_mined_triads` 4-way join (in `compact_mined_triads.ipynb`),
+- the greedy longest-match coverage optimizer (`optimize_annotations()` in the NER notebook),
+- the CURIE-repair regex (in `extract_and_parse_env_triad_values.ipynb`).
+
+Rerun only to re-derive those un-ported pieces or to study how the pipeline was built.
+
 ## Notebook order 
 
 1. biosample_flattening_etc_cleanup.ipynb
