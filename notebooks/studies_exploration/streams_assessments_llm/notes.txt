@@ -19,7 +19,7 @@ Skipped "Environmental Microbiology - 2022 - Olmsted - Environmental predictors 
 
 25 articles + 67 standards elements?
 
-Net steps:
+Next steps:
 	Automate with OntoGPT (which will require converting the streams_final.tsv into a LinkML schema template
 	Ask for section and page identifiers in all responses plus an extract of the supporting text
 	Refine strategy for dealing with non-TSV content, especially if we continue to do thsi interactively
