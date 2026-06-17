@@ -106,7 +106,7 @@ def fetch_nmdc_submissions(mongo_url, env_path, base_url="https://data.microbiom
             for doc in results:
                 doc_id = doc.get('_id')
                 if doc_id is not None:
-                    collection.update_one({'_id': doc_id}, {'$set': doc}, upsert=True)
+                    collection.replace_one({'_id': doc_id}, doc, upsert=True)
                 else:
                     # Fallback when no stable identifier is present.
                     collection.insert_one(doc)
