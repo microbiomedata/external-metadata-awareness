@@ -15,7 +15,7 @@ Click download button (or copy from chat flow and paste into text editor). Renam
 
 Attach next PDF and "now analyze this article"
 
-Skipped "Environmental Microbiology - 2022 - Olmsted - Environmental predictors of electroactive bacterioplankton in small boreal.pdf" because it exceeded Clause's upload size limit
+Skipped "Environmental Microbiology - 2022 - Olmsted - Environmental predictors of electroactive bacterioplankton in small boreal.pdf" because it exceeded Claude's upload size limit
 
 25 articles + 67 standards elements?
 
