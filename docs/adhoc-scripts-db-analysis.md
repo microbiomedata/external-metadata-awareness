@@ -155,10 +155,10 @@ All scripts in the `adhoc` directory avoid using PyMongo or direct MongoDB conne
 3. **dict_print_biosamples_from_efetch.py**: Uses the NCBI E-utilities API (REST), no database
 4. **extract_left_bioproject_by_accession.py**: Processes XML files directly, no database
 5. **random_sample_resources.py**: Processes JSON files, no database
-6. **infer_first_committer.py**: Uses GitHub API, no database
+6. **infer_first_committer.py**: Uses GitHub API, no database _(removed in #467)_
 7. **gsheets_helper.py**: Uses Google Sheets API, no database
 8. **detect_curies_in_subset.py**: Processes TSV files with pandas, no database
-9. **cborg_test.py**: Tests OpenAI API access, no database
+9. **cborg_test.py**: Tests OpenAI API access, no database _(removed in #467)_
 
 ### Alternative Data Access Patterns in Ad-hoc Scripts:
 
