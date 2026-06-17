@@ -41,7 +41,7 @@ def _load_scripts_config():
 
     try:
         scripts = data["tool"]["poetry"].get("scripts", {})
-    except (KeyError, TypeError) as exc:
+    except (KeyError, TypeError, AttributeError) as exc:
         pytest.fail(
             f"{_PYPROJECT} is missing expected [tool.poetry] structure: {exc}",
             pytrace=False,
