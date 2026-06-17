@@ -144,6 +144,8 @@ def fetch_mappings(mappings_url, api_key, verbose=False):
             target_cls = classes[1]
             class_links = target_cls.get("links", {})
             ontology_url = class_links.get("ontology", "")
+            if not ontology_url:
+                continue
             ontology_id = ontology_url.rstrip("/").split("/")[-1].upper()
             mapped_curie = converter.compress(target_cls["@id"])
             if not mapped_curie:
