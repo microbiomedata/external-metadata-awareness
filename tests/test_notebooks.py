@@ -21,6 +21,12 @@ _NOTEBOOKS = sorted((_REPO / "notebooks").rglob("*.ipynb"))
 _IDS = [str(p.relative_to(_REPO)) for p in _NOTEBOOKS]
 
 
+def test_notebooks_were_discovered():
+    """Fail loudly if discovery finds nothing (e.g. a path rename or shallow
+    checkout), so the smoke test can never silently become a no-op."""
+    assert _NOTEBOOKS, "no .ipynb discovered under notebooks/"
+
+
 def _is_cell_magic(src: str) -> bool:
     for line in src.splitlines():
         if line.strip():
