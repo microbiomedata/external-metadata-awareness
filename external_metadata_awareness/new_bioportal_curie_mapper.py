@@ -135,7 +135,8 @@ def fetch_mappings(mappings_url, api_key, verbose=False):
             if not mapped_curie:
                 continue
             mapped_prefix = mapped_curie.split(":")[0]
-            if mapped_prefix.upper() in map_to and ontology_url.upper() in ontology_url.upper():
+            map_to_upper = {m.upper() for m in map_to}
+            if mapped_prefix.upper() in map_to_upper and ontology_url.upper() in map_to_upper:
                 self_link = class_links.get("self")
                 mapped_info = get_mapped_term_info(self_link, api_key) if self_link else {}
                 if mapped_info.get("prefLabel"):
