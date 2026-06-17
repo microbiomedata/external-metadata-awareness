@@ -62,7 +62,16 @@ def deduplicate_dicts(lst: List[Dict]) -> List[Dict]:
 
 
 def safe_expand(curie):
-    """Expand a CURIE using the converter."""
+    """
+    Expand a CURIE string using the configured converter.
+
+    Args:
+        curie (str): A CURIE identifier to expand.
+
+    Returns:
+        str | None: The expanded URI string if expansion succeeds; otherwise
+        None when expansion fails (for example, invalid input or unknown prefix).
+    """
     try:
         return converter.expand(curie.upper())
     except Exception:
