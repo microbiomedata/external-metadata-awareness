@@ -229,12 +229,10 @@ poetry install
 ```
 
 ### Dependency Audit
-- **Check unused**: [Issue #42](https://github.com/microbiomedata/external-metadata-awareness/issues/42)
-- **Known unused** (as of 2025-10-02):
-  - `git-filter-repo`
-  - `llm`
-  - `textdistance`
-  - `case-converter`
+- **Tracked in**: [Issue #468](https://github.com/microbiomedata/external-metadata-awareness/issues/468) (remove unused declared dependencies) and [Issue #42](https://github.com/microbiomedata/external-metadata-awareness/issues/42).
+- **Removed as unused**: `llm` ([PR #450](https://github.com/microbiomedata/external-metadata-awareness/pull/450)); `git-filter-repo`, `oauth2client`, `psycopg2-binary`, `rapidfuzz`, `stemming` ([Issue #468](https://github.com/microbiomedata/external-metadata-awareness/issues/468)).
+- **Still flagged by deptry, needs review**: `gsheet-pandas`, `nmdc-submission-schema`. (`json-tabulate` is a deptry false positive: it is imported in ~11 files.)
+- Verify usage across both `.py` and notebooks (parse `.ipynb` code cells, do not grep raw JSON) before removing anything.
 
 ### Security Updates
 ```bash
