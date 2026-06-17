@@ -2,7 +2,8 @@
 
 Adhoc scripts deleted because each existed only to use a heavy dependency that
 nothing else in the repo needed. Recoverable from git history
-(`git log --all --diff-filter=D -- <path>`); both are small and easy to recreate.
+(`git log --all --diff-filter=D -- <path>` to find the deletion commit, then
+`git show <sha>^:<path>` to view or restore the file); both are small and easy to recreate.
 
 ## `cborg_test.py`
 - **What it did:** a connectivity probe for the CBORG LLM gateway via the

@@ -109,8 +109,8 @@ These are GitHub-related, but they do not regenerate the current `repo_data/` tr
   - fetches release notes, not repo cache snapshots
 - [`notebooks/github-repo-metadata/sample_extraction_commands.sh`](../notebooks/github-repo-metadata/sample_extraction_commands.sh)
   - extracts PR participants from saved JSON, not repo metadata trees
-- [`external_metadata_awareness/adhoc/infer_first_committer.py`](../external_metadata_awareness/adhoc/infer_first_committer.py)
-  - a GitHub API utility, not the owner-cache generator
+- `external_metadata_awareness/adhoc/infer_first_committer.py` (removed in #467; see `external_metadata_awareness/adhoc/REMOVED.md`)
+  - was a GitHub API utility, not the owner-cache generator
 
 ## Recommended Next Cleanup Step
 

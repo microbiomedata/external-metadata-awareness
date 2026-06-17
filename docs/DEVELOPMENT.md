@@ -268,7 +268,6 @@ See [Issue #223](https://github.com/microbiomedata/external-metadata-awareness/i
 ### Known Issues
 
 **Orphaned Scripts** (may need cleanup):
-- `cborg_test.py`: CBORG API test script
 - `dict_print_biosamples_from_efetch.py`: Standalone script
 - `entrez_vs_mongodb.py`: Comparison tool
 - `study-image-table.py`: Non-standard naming
