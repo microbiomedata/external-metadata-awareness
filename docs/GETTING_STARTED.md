@@ -80,7 +80,7 @@ external-metadata-awareness/
 ├── notebooks/                      # Jupyter notebooks
 │   ├── environmental_context_value_sets/  # Voting sheet generation
 │   ├── studies_exploration/        # One-off analyses
-│   └── mixs_preferred_unts/        # Unit mapping work
+│   └── mixs_preferred_units/        # Unit mapping work
 ├── mongo-js/                       # MongoDB JavaScript scripts
 ├── local/                          # Generated data (gitignored)
 ├── CLAUDE.md                       # Comprehensive documentation
