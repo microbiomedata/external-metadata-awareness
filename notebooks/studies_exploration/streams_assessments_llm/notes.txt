@@ -6,7 +6,7 @@ Upload a PDF and "streams_final.tsv" (does the order matter?)
 Paste in claude_3.5_sonnet_prompt_v2.txt and click the submit button
 
 Hasn't ever provide a link for downloading a TSV file.
-Usually puts tab-separated content in the artifact pane to the right with a click to download button. The files obtained form that have almost always had an .md extnesion, but they have always been tab separated values.
+Usually puts tab-separated content in the artifact pane to the right with a click to download button. The files obtained form that have almost always had an .md extension, but they have always been tab separated values.
 Sometimes puts response in chat flow with click to copy button
 Sometimes generates outline-like analysis, either in the artifact pane (instead of TSV) or in the chat flow, in addition to the TSV in the artifact pane
 	The first that time happened, I uploaded a completed TSV output and said to regenerate the output in the same style, without retaining any of the content, but rather extracting new content from the PDF. Don't remember which PDF that was for.
