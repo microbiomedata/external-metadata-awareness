@@ -132,6 +132,7 @@ def fetch_mappings(mappings_url, api_key, verbose=False):
         mappings_obj = response.json()
         loom_count = 0
         accepted_mappings = []
+        map_to_upper = {m.upper() for m in map_to}
         for item in mappings_obj:
             if item.get("source") != "LOOM":
                 continue
@@ -142,13 +143,13 @@ def fetch_mappings(mappings_url, api_key, verbose=False):
             # Use the second class as the mapped target
             target_cls = classes[1]
             class_links = target_cls.get("links", {})
-            ontology_url = class_links.get("ontology", "").lower()
+            ontology_url = class_links.get("ontology", "")
+            ontology_id = ontology_url.rstrip("/").split("/")[-1].upper()
             mapped_curie = converter.compress(target_cls["@id"])
             if not mapped_curie:
                 continue
             mapped_prefix = mapped_curie.split(":")[0]
-            map_to_upper = {m.upper() for m in map_to}
-            if mapped_prefix.upper() in map_to_upper and ontology_url.upper() in map_to_upper:
+            if mapped_prefix.upper() in map_to_upper and ontology_id in map_to_upper:
                 self_link = class_links.get("self")
                 mapped_info = get_mapped_term_info(self_link, api_key) if self_link else {}
                 if mapped_info.get("prefLabel"):
