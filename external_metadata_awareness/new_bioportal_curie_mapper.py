@@ -226,7 +226,7 @@ def main(mongo_uri, env_file, collection, verbose):
     if not db_name:
         raise ValueError("MongoDB URI must include a database name")
         
-    collection = client[db_name][collection]
+    mongo_collection = client[db_name][collection]
 
     # Build query for documents to process
     query = {
@@ -239,15 +239,15 @@ def main(mongo_uri, env_file, collection, verbose):
     }
 
     # Get all documents matching the query
-    docs_cursor = collection.find(query)
-    doc_count = collection.count_documents(query)
+    docs_cursor = mongo_collection.find(query)
+    doc_count = mongo_collection.count_documents(query)
 
     print(f"Found {doc_count} documents to process")
 
     # Process each document. Each call may make multiple BioPortal API requests,
     # so wrap the iteration in tqdm for a visible progress bar.
     for doc in tqdm(docs_cursor, total=doc_count, desc="BioPortal mapping", unit="doc"):
-        process_document(doc, collection, BIOPORTAL_API_KEY, verbose)
+        process_document(doc, mongo_collection, BIOPORTAL_API_KEY, verbose)
 
     print("Processing complete.")
 
