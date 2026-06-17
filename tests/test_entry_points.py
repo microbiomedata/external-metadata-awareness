@@ -36,7 +36,7 @@ def _load_scripts_config():
 
     try:
         data = tomllib.loads(raw)
-    except Exception as exc:
+    except tomllib.TOMLDecodeError as exc:
         pytest.fail(f"Unable to parse TOML in {_PYPROJECT}: {exc}", pytrace=False)
 
     try:
