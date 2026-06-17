@@ -77,7 +77,9 @@ $(LOCAL_DIR)/biosample-last-id-line.txt: $(LOCAL_DIR)/biosample_set.xml
 	@# Read from the end (fast: grep -m 1 stops at the last match and the
 	@# reverser exits). Use whichever reverser is preinstalled: tac on Linux,
 	@# tail -r on macOS/BSD. Avoids a full forward scan of the 154 GB file.
-	reverse=$$(command -v tac >/dev/null 2>&1 && echo tac || echo "tail -r"); \
+	@if command -v tac >/dev/null 2>&1; then reverse="tac"; \
+	elif tail -r /dev/null >/dev/null 2>&1; then reverse="tail -r"; \
+	else echo "Error: need 'tac' (Linux/coreutils) or 'tail -r' (macOS/BSD) to read $< from the end; install coreutils" >&2; exit 1; fi; \
 	$$reverse $< | grep -m 1 '<BioSample' > $@
 
 $(LOCAL_DIR)/biosample-last-id-val.txt: $(LOCAL_DIR)/biosample-last-id-line.txt
