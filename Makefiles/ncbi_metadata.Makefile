@@ -63,8 +63,8 @@ endif
 
 # Only require building the last-id file when the caller hasn't supplied
 # LAST_BIOSAMPLE_ID directly. Building it from the 154 GB biosample_set.xml
-# is expensive (tac + grep) and uses GNU coreutils' `tac`, which isn't on
-# default macOS; supplying LAST_BIOSAMPLE_ID lets users skip both costs.
+# reads the file from the end (cheap) but still touches a lot of I/O;
+# supplying LAST_BIOSAMPLE_ID lets users skip it.
 ifdef LAST_BIOSAMPLE_ID
 LAST_ID_PREREQS :=
 else
@@ -74,7 +74,11 @@ endif
 # These rules generate the ID file, if possible
 $(LOCAL_DIR)/biosample-last-id-line.txt: $(LOCAL_DIR)/biosample_set.xml
 	@echo "Building $@"
-	tac $< | grep -m 1 '<BioSample' > $@
+	@# Read from the end (fast: grep -m 1 stops at the last match and the
+	@# reverser exits). Use whichever reverser is preinstalled: tac on Linux,
+	@# tail -r on macOS/BSD. Avoids a full forward scan of the 154 GB file.
+	reverse=$$(command -v tac >/dev/null 2>&1 && echo tac || echo "tail -r"); \
+	$$reverse $< | grep -m 1 '<BioSample' > $@
 
 $(LOCAL_DIR)/biosample-last-id-val.txt: $(LOCAL_DIR)/biosample-last-id-line.txt
 	@echo "Building $@"
