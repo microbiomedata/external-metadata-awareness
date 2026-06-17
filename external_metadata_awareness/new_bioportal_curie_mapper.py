@@ -43,7 +43,10 @@ map_to = {
 dont_map_from = {
     "BFO",
     "IAO",
-    "OF",  # todo garbage CURIes? double check where they come from
+    # TODO: Verify where `OF:*` CURIEs originate in source metadata (likely malformed/truncated prefixes).
+    # If they are invalid, keep `OF` in `dont_map_from`; if valid, add explicit normalization/mapping and
+    # remove `OF` from this ignore list to allow BioPortal CURIE mapping.
+    "OF",
     "RO",
 }
 ignore = list(map_to | dont_map_from)
@@ -62,7 +65,16 @@ def deduplicate_dicts(lst: List[Dict]) -> List[Dict]:
 
 
 def safe_expand(curie):
-    """Expand a CURIE using the converter."""
+    """
+    Expand a CURIE string using the configured converter.
+
+    Args:
+        curie (str): A CURIE identifier to expand.
+
+    Returns:
+        str | None: The expanded URI string if expansion succeeds; otherwise
+        None when expansion fails (for example, invalid input or unknown prefix).
+    """
     try:
         return converter.expand(curie.upper())
     except Exception:
@@ -120,6 +132,7 @@ def fetch_mappings(mappings_url, api_key, verbose=False):
         mappings_obj = response.json()
         loom_count = 0
         accepted_mappings = []
+        map_to_upper = {m.upper() for m in map_to}
         for item in mappings_obj:
             if item.get("source") != "LOOM":
                 continue
@@ -130,12 +143,15 @@ def fetch_mappings(mappings_url, api_key, verbose=False):
             # Use the second class as the mapped target
             target_cls = classes[1]
             class_links = target_cls.get("links", {})
-            ontology_url = class_links.get("ontology", "").lower()
+            ontology_url = class_links.get("ontology", "")
+            if not ontology_url:
+                continue
+            ontology_id = ontology_url.rstrip("/").split("/")[-1].upper()
             mapped_curie = converter.compress(target_cls["@id"])
             if not mapped_curie:
                 continue
             mapped_prefix = mapped_curie.split(":")[0]
-            if mapped_prefix.upper() in map_to and ontology_url.upper() in ontology_url.upper():
+            if mapped_prefix.upper() in map_to_upper and ontology_id in map_to_upper:
                 self_link = class_links.get("self")
                 mapped_info = get_mapped_term_info(self_link, api_key) if self_link else {}
                 if mapped_info.get("prefLabel"):
@@ -226,7 +242,7 @@ def main(mongo_uri, env_file, collection, verbose):
     if not db_name:
         raise ValueError("MongoDB URI must include a database name")
         
-    collection = client[db_name][collection]
+    mongo_collection = client[db_name][collection]
 
     # Build query for documents to process
     query = {
@@ -239,15 +255,15 @@ def main(mongo_uri, env_file, collection, verbose):
     }
 
     # Get all documents matching the query
-    docs_cursor = collection.find(query)
-    doc_count = collection.count_documents(query)
+    docs_cursor = mongo_collection.find(query)
+    doc_count = mongo_collection.count_documents(query)
 
     print(f"Found {doc_count} documents to process")
 
     # Process each document. Each call may make multiple BioPortal API requests,
     # so wrap the iteration in tqdm for a visible progress bar.
     for doc in tqdm(docs_cursor, total=doc_count, desc="BioPortal mapping", unit="doc"):
-        process_document(doc, collection, BIOPORTAL_API_KEY, verbose)
+        process_document(doc, mongo_collection, BIOPORTAL_API_KEY, verbose)
 
     print("Processing complete.")
 
