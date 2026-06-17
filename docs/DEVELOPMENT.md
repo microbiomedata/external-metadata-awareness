@@ -229,8 +229,8 @@ poetry install
 ```
 
 ### Dependency Audit
-- **Tracked in**: #468 (remove unused declared dependencies) and #42.
-- **Removed as unused**: `llm` (#450); `git-filter-repo`, `oauth2client`, `psycopg2-binary`, `rapidfuzz`, `stemming` (#468).
+- **Tracked in**: [Issue #468](https://github.com/microbiomedata/external-metadata-awareness/issues/468) (remove unused declared dependencies) and [Issue #42](https://github.com/microbiomedata/external-metadata-awareness/issues/42).
+- **Removed as unused**: `llm` ([PR #450](https://github.com/microbiomedata/external-metadata-awareness/pull/450)); `git-filter-repo`, `oauth2client`, `psycopg2-binary`, `rapidfuzz`, `stemming` ([Issue #468](https://github.com/microbiomedata/external-metadata-awareness/issues/468)).
 - **Still flagged by deptry, needs review**: `gsheet-pandas`, `nmdc-submission-schema`. (`json-tabulate` is a deptry false positive: it is imported in ~11 files.)
 - Verify usage across both `.py` and notebooks (parse `.ipynb` code cells, do not grep raw JSON) before removing anything.
 
