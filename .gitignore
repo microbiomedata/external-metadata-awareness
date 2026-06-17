@@ -20,3 +20,7 @@ local/
 *.gz
 *.sqlite
 *.db
+
+# generated outputs / logs (issue #478)
+*.log
+notebooks/mixs_preferred_units/ncbi_metadata.biosamples_measurements_flattened.json
