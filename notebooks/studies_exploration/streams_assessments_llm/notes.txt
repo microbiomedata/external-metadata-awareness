@@ -6,7 +6,7 @@ Upload a PDF and "streams_final.tsv" (does the order matter?)
 Paste in claude_3.5_sonnet_prompt_v2.txt and click the submit button
 
 Hasn't ever provide a link for downloading a TSV file.
-Usually puts tab-separated content in the artifact pane to the right with a click to download button. The files obtained form that have almost always had an .md extnesion, but they have always been tab separated values.
+Usually puts tab-separated content in the artifact pane to the right with a click to download button. The files obtained form that have almost always had an .md extension, but they have always been tab separated values.
 Sometimes puts response in chat flow with click to copy button
 Sometimes generates outline-like analysis, either in the artifact pane (instead of TSV) or in the chat flow, in addition to the TSV in the artifact pane
 	The first that time happened, I uploaded a completed TSV output and said to regenerate the output in the same style, without retaining any of the content, but rather extracting new content from the PDF. Don't remember which PDF that was for.
@@ -15,13 +15,13 @@ Click download button (or copy from chat flow and paste into text editor). Renam
 
 Attach next PDF and "now analyze this article"
 
-Skipped "Environmental Microbiology - 2022 - Olmsted - Environmental predictors of electroactive bacterioplankton in small boreal.pdf" because it exceeded Clause's upload size limit
+Skipped "Environmental Microbiology - 2022 - Olmsted - Environmental predictors of electroactive bacterioplankton in small boreal.pdf" because it exceeded Claude's upload size limit
 
 25 articles + 67 standards elements?
 
-Net steps:
+Next steps:
 	Automate with OntoGPT (which will require converting the streams_final.tsv into a LinkML schema template
-	Ask for section and page identifiers in all reponses plus an extract of the suporting text
+	Ask for section and page identifiers in all responses plus an extract of the supporting text
 	Refine strategy for dealing with non-TSV content, especially if we continue to do thsi interactively
 	Ask for a review of the TSV output so far and ask for suggesting about refining the
 
