@@ -60,6 +60,19 @@ mongosh "mongodb://localhost:27124/nmdc?authSource=admin&directConnection=true" 
     --username "<your-mongo-username>" --eval 'db.biosample_set.estimatedDocumentCount()'
 ```
 
+## Read-only alternative (no tunnel)
+
+For read-only aggregate queries you do not need the tunnel at all: the
+prod-backed public API serves the same records. For example, biosample
+`env_package` values (the basis for the `env-package` weights) come from:
+
+```
+https://api.microbiomedata.org/nmdcschema/biosample_set?max_page_size=999999&projection=env_package
+```
+
+Use the tunnel when you need direct MongoDB access (aggregation pipelines,
+collections the API does not expose, or write access).
+
 ## Use from the report tool
 
 With the tunnel up and `--env-file` pointing at your git-ignored `.env`:
