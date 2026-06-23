@@ -106,6 +106,7 @@ export-submissions-to-duckdb = 'external_metadata_awareness.export_submissions_t
 # NMDC analysis tools
 analyze-nmdc-biosample-coverage = 'external_metadata_awareness.analyze_nmdc_biosample_coverage:main'
 extract-nmdc-doi-inventory = 'external_metadata_awareness.extract_nmdc_doi_inventory:extract_nmdc_doi_inventory'
+mixs-required-slot-report = 'external_metadata_awareness.mixs_required_slot_report:main'
 
 [tool.deptry.per_rule_ignores]
 DEP001 = ["common", "core"] # locally defined
