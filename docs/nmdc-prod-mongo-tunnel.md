@@ -57,7 +57,8 @@ mongodb://<user>:<password>@localhost:27124/nmdc?authSource=admin&directConnecti
 
 ```bash
 mongosh "mongodb://localhost:27124/nmdc?authSource=admin&directConnection=true" \
-    --username "<your-mongo-username>" --eval 'db.biosample_set.estimatedDocumentCount()'
+    --username "<your-mongo-username>" --password \
+    --eval 'db.biosample_set.estimatedDocumentCount()'
 ```
 
 ## Read-only alternative (no tunnel)

@@ -238,9 +238,10 @@ def connect_mongo(mongo_uri: str, env_file: str | None) -> MongoClient:
                 break
         else:
             click.echo(
-                "Warning: no credentials resolved (URI has none and no "
-                f"{'/'.join(p[0] for p in MONGO_CRED_KEY_PAIRS)} pair in the env "
-                "file); connecting unauthenticated, which will fail against an "
+                "Warning: no credentials resolved (URI has none and the env "
+                "file has none of these user/password pairs: "
+                f"{', '.join(f'{u}/{p}' for u, p in MONGO_CRED_KEY_PAIRS)}); "
+                "connecting unauthenticated, which will fail against an "
                 "authenticated server.",
                 err=True,
             )

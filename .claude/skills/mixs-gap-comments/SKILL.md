@@ -44,12 +44,13 @@ Do not invent importance. Each comment rests on three verifiable inputs:
    when the usage weight is low or absent. Keep these entries dated and
    issue-linked; revisit as work lands.
 3. **Existing NMDC mechanism.** Whether the concept is already captured, even
-   under a different slot name or modeling pattern. **This is the input that
-   must be verified, never guessed** (see the
-   `feedback-verify-slot-coverage-claims` memory). Read the MIxS slot's real
-   `description` and `range`, then look in the NMDC schema for a native slot or
-   process class that captures the same concept, and read *its* definition
-   before claiming coverage.
+   under a different slot name or modeling pattern. **This must be verified,
+   never guessed: a name match is not coverage.** For example, NMDC `contigs`
+   is a contiguity score (sum of length*log(length)), not a contig count, and
+   `asm_score` is a numeric float, not MIxS `assembly_qual`'s categorical tier.
+   Read the MIxS slot's real `description` and `range`, then look in the NMDC
+   schema for a native slot or process class that captures the same concept, and
+   read *its* definition before claiming coverage.
 
 ## Procedure
 
