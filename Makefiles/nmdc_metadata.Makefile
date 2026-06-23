@@ -189,3 +189,42 @@ drop-nmdc-submissions nmdc-submissions-drop-dev:
 	if [ -z "$$MONGO_URI" ]; then echo "Error: MONGO_URI not set in $(NMDC_SUBMISSIONS_ENV)"; exit 1; fi; \
 	MONGO_URI="$$MONGO_URI" NMDC_SUBMISSION_COLLECTIONS="$(NMDC_SUBMISSION_COLLECTIONS)" \
 		mongosh --nodb --quiet --eval 'const db = connect(process.env.MONGO_URI); process.env.NMDC_SUBMISSION_COLLECTIONS.split(/\s+/).forEach(function (c) { db.getCollection(c).drop(); print("Dropped: " + c); });'
+
+# ---------- MIxS required-slot gap report ----------
+# Two phases; see docs/mixs-required-slot-report.md.
+
+# Phase 1 (deterministic), offline baked weight snapshot.
+local/mixs_required_slot_report.tsv:
+	@mkdir -p local
+	$(RUN) mixs-required-slot-report -o $@
+
+.PHONY: mixs-required-slot-report
+mixs-required-slot-report: local/mixs_required_slot_report.tsv
+
+# Phase 1 with live weights from prod biosample_set. Open the jump-dev tunnel
+# first (docs/nmdc-prod-mongo-tunnel.md). Override MIXS_REPORT_ENV_FILE if the
+# prod credentials live in a different .env.
+MIXS_REPORT_ENV_FILE ?= local/.env
+.PHONY: mixs-required-slot-report-live
+mixs-required-slot-report-live:
+	@mkdir -p local
+	$(RUN) mixs-required-slot-report --weight-source env-package --refresh-weights --env-file $(MIXS_REPORT_ENV_FILE) -o local/mixs_required_slot_report.tsv
+
+# Phase 2 (agentic layer): merge curated priority/comment annotations. Produce
+# MIXS_GAP_ANNOTATIONS with the mixs-gap-comments skill, or start from the seed
+# at .claude/skills/mixs-gap-comments/mixs_gap_annotations.seed.tsv.
+MIXS_GAP_ANNOTATIONS ?= local/mixs_gap_annotations.tsv
+.PHONY: mixs-required-slot-report-annotated
+mixs-required-slot-report-annotated:
+	@mkdir -p local
+	$(RUN) mixs-required-slot-report --annotations $(MIXS_GAP_ANNOTATIONS) -o local/mixs_required_slot_report_annotated.tsv
+
+# Cleanup: generated report outputs (regenerable). The working annotations TSV
+# is curated Phase-2 input, so it has its own explicit target.
+.PHONY: mixs-required-slot-report-clean
+mixs-required-slot-report-clean:
+	rm -f local/mixs_required_slot_report.tsv local/mixs_required_slot_report_annotated.tsv
+
+.PHONY: mixs-gap-annotations-clean
+mixs-gap-annotations-clean:
+	rm -f local/mixs_gap_annotations.tsv
