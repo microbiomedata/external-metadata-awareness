@@ -4,18 +4,18 @@ description: >-
   Annotate the MIxS checklist/extension slot report with grounded priority and
   comment columns judging how important it is for NMDC to add each missing MIxS
   slot. Use when asked to assess MIxS slot gaps, prioritize slots to add to
-  nmdc-schema, or produce the report Alicia Clum requested. Builds on
-  src/scripts/mixs_required_slot_report.py.
+  nmdc-schema, or produce the report Alicia Clum requested. Builds on the
+  mixs-required-slot-report tool.
 ---
 
 # MIxS gap comments
 
 Produce a prioritized, commented version of the MIxS required-slot report. The
-mechanical report (`src/scripts/mixs_required_slot_report.py`) says *which* MIxS
-checklist/extension slots are required/recommended and whether they already have
-an NMDC home. This skill adds the editorial layer: for each gap slot, **how
-important is it for NMDC to add, and does NMDC already capture the concept
-another way?**
+mechanical report (`mixs-required-slot-report`, see
+`docs/mixs-required-slot-report.md`) says *which* MIxS checklist/extension slots
+are required/recommended and whether they already have an NMDC home. This skill
+adds the editorial layer: for each gap slot, **how important is it for NMDC to
+add, and does NMDC already capture the concept another way?**
 
 ## Inputs that ground the judgment
 
@@ -23,21 +23,21 @@ Do not invent importance. Each comment rests on three verifiable inputs:
 
 1. **Source class + relevance weight.** The report's `class_type`,
    `nmdc_supported`, and `nmdc_relevance_weight` columns. The weight is the
-   share of NMDC submission-portal biosamples in that environment
-   (`NMDC_EXTENSION_WEIGHTS` in the script, from
-   `nmdc_metadata.submission_biosample_rows`). Soil (~0.70) and Water (~0.15)
-   dominate; BuiltEnvironment, MicrobialMatBiofilm, HydrocarbonResourcesCores
-   and WastewaterSludge are marginal. A slot required only in an out-of-scope
-   extension (food, human, symbiont, agriculture) is low priority by mission.
+   share of biosamples in that environment for the chosen `--weight-source`:
+   `env-package` (realized prod `biosample_set.env_package`, the default;
+   Soil dominates, then Water) or `submission-rows` (submission portal). The
+   baked snapshots live in `EXTENSION_WEIGHT_SNAPSHOTS` in the tool. A slot
+   required only in an out-of-scope extension (food, human, symbiont,
+   agriculture) is low priority by mission.
 2. **Mission alignment.** NMDC is an environmental-microbiome resource. In-scope
    checklists for this report are `Mims` and `MigsBa` (Alicia Clum's
    2026-06-18 scope). The genome/marker checklists (Mimag, Miuvig, Mimarks*,
    Migs{Eu,Pl,Vi,Org}) and non-environmental extensions are out of mission
    unless the user widens scope.
 
-   **Recency overlay.** Historical submission counts miss active work. The
-   report's `nmdc_active_work` / `nmdc_active_work_note` columns
-   (`NMDC_ACTIVE_WORK_BOOST` in the script) flag classes under current
+   **Recency overlay.** Historical counts miss active work. The report's
+   `nmdc_active_work` / `nmdc_active_work_note` columns
+   (`NMDC_ACTIVE_WORK_BOOST` in the tool) flag classes under current
    development whose future volume the weights do not capture, e.g. `MigsBa` is
    boosted because JGI isolate modeling (issue #2803) will export isolates to
    NCBI as MIGS-BA. Treat an active-work flag as an upweight in step 5, even
@@ -47,7 +47,7 @@ Do not invent importance. Each comment rests on three verifiable inputs:
    under a different slot name or modeling pattern. **This is the input that
    must be verified, never guessed** (see the
    `feedback-verify-slot-coverage-claims` memory). Read the MIxS slot's real
-   `description` and `range`, then search nmdc-schema for a native slot or
+   `description` and `range`, then look in the NMDC schema for a native slot or
    process class that captures the same concept, and read *its* definition
    before claiming coverage.
 
@@ -56,8 +56,7 @@ Do not invent importance. Each comment rests on three verifiable inputs:
 1. **Run the mechanical report** (no annotations yet):
 
    ```bash
-   poetry run python src/scripts/mixs_required_slot_report.py \
-       --output local/mixs_required_slot_report.tsv
+   mixs-required-slot-report -o local/mixs_required_slot_report.tsv
    ```
 
 2. **Pick the slots to comment on.** Default scope: distinct slots that are
@@ -72,13 +71,23 @@ Do not invent importance. Each comment rests on three verifiable inputs:
    (Columns: 3=nmdc_supported, 8=slot, 9=required, 11=in_nmdc_schema. Always
    confirm positions against the header, which changes as columns are added.)
 
-3. **For each candidate slot, gather evidence before writing anything:**
-   - MIxS definition and range: read the slot block in
-     `src/schema/mixs.yaml` (NMDC's imported subset) or the GSC source.
-   - Which in-scope classes require it, and their weights (from the report).
-   - Candidate NMDC mechanism: `grep -rin "<concept words>" src/schema/*.yaml`
-     for a native slot or class, then read that slot's `description`/`range`.
-     Confirm the concept matches; do not match on slot name alone.
+3. **For each candidate slot, gather evidence before writing anything.** This
+   repo has no `src/schema`; read definitions with `SchemaView` against the
+   schemas the tool uses (or a local nmdc-schema clone, if present):
+
+   ```python
+   from linkml_runtime import SchemaView
+   from external_metadata_awareness.mixs_required_slot_report import (
+       DEFAULT_MIXS_SCHEMA, DEFAULT_NMDC_SCHEMA,
+   )
+   mixs = SchemaView(DEFAULT_MIXS_SCHEMA)
+   nmdc = SchemaView(DEFAULT_NMDC_SCHEMA)
+   slot = mixs.get_slot("num_replicons")          # MIxS range + description
+   # candidate NMDC mechanism: scan nmdc.all_slots() / nmdc.get_slot(name)
+   # and read the candidate's .range and .description before claiming coverage.
+   ```
+   Also note which in-scope classes require the slot and their weights (from the
+   report). Confirm the concept matches; do not match on slot name alone.
 
 4. **Grade the coverage claim** as one of:
    - `not-covered` - no NMDC slot or pattern captures the concept.
@@ -96,17 +105,20 @@ Do not invent importance. Each comment rests on three verifiable inputs:
    low; say so in the comment.
 
 6. **Write the annotations TSV** (`local/mixs_gap_annotations.tsv`), one row per
-   slot, header `slot<TAB>priority<TAB>comment`. Keep comments to one or two
+   slot, header `slot<TAB>priority<TAB>comment`. Start from the committed seed
+   `mixs_gap_annotations.seed.tsv` next to this file. Keep comments to one or two
    sentences that name the source class(es) + weight, the mission read, and the
    graded coverage finding. No em dashes; plain language.
 
 7. **Merge and emit the final report:**
 
    ```bash
-   poetry run python src/scripts/mixs_required_slot_report.py \
+   mixs-required-slot-report \
        --annotations local/mixs_gap_annotations.tsv \
-       --output local/mixs_required_slot_report_annotated.tsv
+       -o local/mixs_required_slot_report_annotated.tsv
    ```
+
+   Or use the Makefile target `make mixs-required-slot-report-annotated`.
 
 ## Output discipline
 
@@ -118,4 +130,4 @@ Do not invent importance. Each comment rests on three verifiable inputs:
   class, weight, and coverage grade plainly. Never assert coverage you did not
   verify against the native slot's definition.
 - `local/` is gitignored scratch; this skill writes there and does not touch
-  committed schema files.
+  committed files.

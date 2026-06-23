@@ -224,14 +224,26 @@ def connect_mongo(mongo_uri: str, env_file: str | None) -> MongoClient:
     logged. The URI must include a database name.
     """
     final_uri = mongo_uri
-    if env_file and "@" not in mongo_uri and Path(env_file).exists():
-        config = dotenv_values(env_file)
+    if "@" not in mongo_uri:
+        config = {}
+        if env_file and Path(env_file).exists():
+            config = dotenv_values(env_file)
+        elif env_file:
+            click.echo(f"Warning: env file not found: {env_file}", err=True)
         for user_key, pass_key in MONGO_CRED_KEY_PAIRS:
             user, password = config.get(user_key), config.get(pass_key)
             if user and password:
                 protocol, rest = mongo_uri.split("://", 1)
                 final_uri = f"{protocol}://{quote_plus(user)}:{quote_plus(password)}@{rest}"
                 break
+        else:
+            click.echo(
+                "Warning: no credentials resolved (URI has none and no "
+                f"{'/'.join(p[0] for p in MONGO_CRED_KEY_PAIRS)} pair in the env "
+                "file); connecting unauthenticated, which will fail against an "
+                "authenticated server.",
+                err=True,
+            )
     return MongoClient(final_uri, serverSelectionTimeoutMS=8000)
 
 
