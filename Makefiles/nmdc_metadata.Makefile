@@ -218,3 +218,13 @@ MIXS_GAP_ANNOTATIONS ?= local/mixs_gap_annotations.tsv
 mixs-required-slot-report-annotated:
 	@mkdir -p local
 	$(RUN) mixs-required-slot-report --annotations $(MIXS_GAP_ANNOTATIONS) -o local/mixs_required_slot_report_annotated.tsv
+
+# Cleanup: generated report outputs (regenerable). The working annotations TSV
+# is curated Phase-2 input, so it has its own explicit target.
+.PHONY: mixs-required-slot-report-clean
+mixs-required-slot-report-clean:
+	rm -f local/mixs_required_slot_report.tsv local/mixs_required_slot_report_annotated.tsv
+
+.PHONY: mixs-gap-annotations-clean
+mixs-gap-annotations-clean:
+	rm -f local/mixs_gap_annotations.tsv

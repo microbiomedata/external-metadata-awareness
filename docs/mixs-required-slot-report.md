@@ -95,3 +95,11 @@ make mixs-required-slot-report-annotated  # Phase 2, merge MIXS_GAP_ANNOTATIONS
 
 Override `MIXS_REPORT_ENV_FILE` (prod credentials) or `MIXS_GAP_ANNOTATIONS`
 (annotations path) as needed.
+
+Cleanup (generated outputs are regenerable; the annotations target is separate
+because that file is curated Phase-2 input):
+
+```bash
+make mixs-required-slot-report-clean   # remove the generated report TSVs
+make mixs-gap-annotations-clean        # remove the working annotations TSV
+```
