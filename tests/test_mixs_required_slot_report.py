@@ -9,6 +9,7 @@ from external_metadata_awareness import mixs_required_slot_report as report
 def test_is_nmdc_supported_class_combination_and_other_are_unsupported():
     assert report.is_nmdc_supported_class("MigsBaSoil", "combination", {}) is False
     assert report.is_nmdc_supported_class("SomeClass", "other", {}) is False
+    assert report.is_nmdc_supported_class("SomeClass", "unknown", {}) is False
 
 
 def test_connect_mongo_injects_credentials_when_uri_lacks_credentials(

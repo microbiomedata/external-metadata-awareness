@@ -57,6 +57,7 @@ DEFAULT_MIXS_SCHEMA = (
 ENV_PACKAGE_WEIGHT_PIPELINE = [
     {"$group": {"_id": "$env_package.has_raw_value", "n": {"$sum": 1}}}
 ]
+REQUIRED_ANNOTATION_COLUMNS = frozenset({"slot", "priority", "comment"})
 # NMDC materialized schema, matching analyze_nmdc_biosample_coverage.py.
 DEFAULT_NMDC_SCHEMA = (
     "https://raw.githubusercontent.com/microbiomedata/nmdc-schema/"
@@ -246,11 +247,11 @@ def connect_mongo(mongo_uri: str, env_file: str | None) -> MongoClient:
         for user_key, pass_key in MONGO_CRED_KEY_PAIRS:
             user, password = config.get(user_key), config.get(pass_key)
             if user and password:
-                target_netloc = parsed.netloc.rsplit("@", 1)[-1]
+                host_without_credentials = parsed.netloc.rsplit("@", 1)[-1]
                 final_uri = urlunparse(
                     (
                         parsed.scheme,
-                        f"{quote_plus(user)}:{quote_plus(password)}@{target_netloc}",
+                        f"{quote_plus(user)}:{quote_plus(password)}@{host_without_credentials}",
                         parsed.path,
                         parsed.params,
                         parsed.query,
@@ -329,9 +330,8 @@ def load_annotations(annotations_path: Path) -> dict[str, tuple[str, str]]:
     annotations: dict[str, tuple[str, str]] = {}
     with annotations_path.open(newline="") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
-        required_columns = {"slot", "priority", "comment"}
         present_columns = set(reader.fieldnames or [])
-        missing_columns = sorted(required_columns - present_columns)
+        missing_columns = sorted(REQUIRED_ANNOTATION_COLUMNS - present_columns)
         if missing_columns:
             present = ", ".join(sorted(present_columns)) if present_columns else "<none>"
             missing = ", ".join(missing_columns)
