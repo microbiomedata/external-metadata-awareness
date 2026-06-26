@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Script to plot the distribution of combined_oak_envo_coverage values
-from the env_triad_component_labels collection for documents with
-combined_oak_envo_coverage > 0.001.
+from the env_triad_component_labels collection for documents above a
+configurable coverage threshold.
 """
 
 import click
