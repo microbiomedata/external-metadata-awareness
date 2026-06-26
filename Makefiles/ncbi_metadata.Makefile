@@ -19,24 +19,24 @@ WGET=wget
 
 # always "biosamples_" not "biosample_"
 
-.PHONY: load_biosamples_into_mongo \
-        load-biosamples-into-mongo \
+.PHONY: load-biosamples-into-mongo \
+        load_biosamples_into_mongo \
         purge \
-        load-acceptable-sized-leaf-bioprojects-into-mongodb \
         load_acceptable_sized_leaf_bioprojects_into_mongodb \
+        load-acceptable-sized-leaf-bioprojects-into-mongodb \
         flatten_bioprojects \
         flatten_biosamples_ids \
         flatten_biosamples_links \
         flatten_biosample_attributes \
-        biosamples_flattended \
         biosamples-flattened \
-        aggregate_biosample_package_usage \
-        aggregate-biosample-package-usage
+        biosamples_flattened \
+        aggregate-biosample-package-usage \
+        aggregate_biosample_package_usage
 
-# Backward-compatible aliases for legacy hyphenated target names.
-load-biosamples-into-mongo: load_biosamples_into_mongo
-biosamples-flattened: biosamples_flattended
-aggregate-biosample-package-usage: aggregate_biosample_package_usage
+# Underscore aliases for naming consistency (recipes live on the hyphenated targets).
+load_biosamples_into_mongo: load-biosamples-into-mongo
+biosamples_flattened: biosamples-flattened
+aggregate_biosample_package_usage: aggregate-biosample-package-usage
 
 purge:
 	rm -rf $(DOWNLOADS_DIR)/biosample_set.xml*
@@ -68,9 +68,6 @@ MONGO_URI ?= mongodb://localhost:27017/ncbi_metadata
 ifdef ENV_FILE
   ENV_FILE_OPTION := --env-file $(ENV_FILE)
 endif
-
-# Backward-compatible alias for naming consistency.
-load_acceptable_sized_leaf_bioprojects_into_mongodb: load-acceptable-sized-leaf-bioprojects-into-mongodb ;
 
 # Only require building the last-id file when the caller hasn't supplied
 # LAST_BIOSAMPLE_ID directly. Building it from the 154 GB biosample_set.xml
@@ -155,14 +152,17 @@ load_acceptable_sized_leaf_bioprojects_into_mongodb: $(DOWNLOADS_DIR)/bioproject
 	@date
 	@echo "Using MONGO_URI=$(MONGO_URI)"
 	$(RUN) load-bioprojects-into-mongodb \
-	--clear-collections \
-	--oversize-dir $(LOCAL_DIR)/oversize-bioprojects \
-	--project-collection bioprojects \
-	--submission-collection bioprojects_submissions \
-	--mongo-uri "$(MONGO_URI)" \
-	--verbose \
-	--xml-file $< \
-	$(ENV_FILE_OPTION)
+       --clear-collections \
+       --oversize-dir $(LOCAL_DIR)/oversize-bioprojects \
+       --project-collection bioprojects \
+       --submission-collection bioprojects_submissions \
+       --mongo-uri "$(MONGO_URI)" \
+       --verbose \
+       --xml-file $< \
+       $(ENV_FILE_OPTION)
+
+# Hyphen alias for naming consistency (recipe lives on the underscore target).
+load-acceptable-sized-leaf-bioprojects-into-mongodb: load_acceptable_sized_leaf_bioprojects_into_mongodb
 
 $(LOCAL_DIR)/bioproject_xpath_counts.json: $(DOWNLOADS_DIR)/bioproject.xml
 	# --stop-after 999999999
