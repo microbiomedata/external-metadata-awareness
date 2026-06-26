@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 import re
 import csv
 import json
@@ -25,8 +26,14 @@ def resolve_env_config(env_path, **cli_overrides):
     env values stay None so callers can apply their own defaults or error out.
     """
     env_vars = dotenv_values(env_path) if env_path else {}
-    return {key: cli_overrides.get(key.lower()) or env_vars.get(key)
-            for key in ENV_CONFIG_KEYS}
+    return {
+        key: (
+            cli_overrides.get(key.lower())
+            if cli_overrides.get(key.lower()) is not None
+            else env_vars.get(key)
+        )
+        for key in ENV_CONFIG_KEYS
+    }
 
 
 # =============================================================================
@@ -84,45 +91,45 @@ def fetch_nmdc_submissions(mongo_url, env_path, base_url="https://data.microbiom
     }
 
     # Connect to MongoDB
-    client = MongoClient(mongo_url)
-    # Use provided database or default to 'misc_metadata'
-    db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
-    db = client[db_name]
-    collection = db['nmdc_submissions']
-    inserted_this_run = 0
+    with MongoClient(mongo_url) as client:
+        # Use provided database or default to 'misc_metadata'
+        db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
+        db = client[db_name]
+        collection = db['nmdc_submissions']
+        inserted_this_run = 0
 
-    # Paginate through API results
-    while True:
-        click.echo(f"Request sent at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        response = requests.get(url_submissions, headers=headers, params=params)
-        if response.status_code == 200:
-            data = response.json()
-            results = data.get('results', [])
-            if not results:
+        # Paginate through API results
+        while True:
+            click.echo(f"Request sent at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+            response = requests.get(url_submissions, headers=headers, params=params)
+            if response.status_code == 200:
+                data = response.json()
+                results = data.get('results', [])
+                if not results:
+                    break
+
+                # Insert/update fetched submissions into MongoDB.
+                # Use upsert to avoid duplicate key failures when pagination overlaps.
+                for doc in results:
+                    doc_id = doc.get('_id')
+                    if doc_id is not None:
+                        collection.replace_one({'_id': doc_id}, doc, upsert=True)
+                    else:
+                        # Fallback when no stable identifier is present.
+                        collection.insert_one(doc)
+                inserted_this_run += len(results)
+
+                # Check if we've fetched all records based on the reported total count
+                total_count = data.get('count')
+                if total_count and inserted_this_run >= total_count:
+                    break
+
+                # Move to the next page
+                params['offset'] += params['limit']
+            else:
+                click.echo(f"Failed to fetch submissions: {response.status_code}")
+                click.echo(response.text)
                 break
-
-            # Insert/update fetched submissions into MongoDB.
-            # Use upsert to avoid duplicate key failures when pagination overlaps.
-            for doc in results:
-                doc_id = doc.get('_id')
-                if doc_id is not None:
-                    collection.replace_one({'_id': doc_id}, doc, upsert=True)
-                else:
-                    # Fallback when no stable identifier is present.
-                    collection.insert_one(doc)
-            inserted_this_run += len(results)
-
-            # Check if we've fetched all records based on the reported total count
-            total_count = data.get('count')
-            if total_count and inserted_this_run >= total_count:
-                break
-
-            # Move to the next page
-            params['offset'] += params['limit']
-        else:
-            click.echo(f"Failed to fetch submissions: {response.status_code}")
-            click.echo(response.text)
-            break
 
     return True
 
@@ -280,87 +287,88 @@ def process_submissions(mongo_url, output_file):
     obsolete_terms_list = find_obsolete_terms(ontology_adapters)
 
     # Connect to MongoDB
-    client = MongoClient(mongo_url)
-    # Use provided database or default to 'misc_metadata'
-    db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
-    submissions_db = client[db_name]
-    submissions_collection = submissions_db['nmdc_submissions']
+    with MongoClient(mongo_url) as client:
+        # Use provided database or default to 'misc_metadata'
+        db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
+        submissions_db = client[db_name]
+        submissions_collection = submissions_db['nmdc_submissions']
 
-    submission_biosamples = []
-    skip_templates = [
-        'emsl_data', 'host_associated_data', 'jgi_mg_data', 'jgi_mg_lr_data', 'jgi_mt_data'
-    ]
+        submission_biosamples = []
+        skip_templates = [
+            'emsl_data', 'host_associated_data', 'jgi_mg_data', 'jgi_mg_lr_data', 'jgi_mt_data'
+        ]
 
-    total_docs = submissions_collection.count_documents({})
-    for doc in tqdm(submissions_collection.find(), total=total_docs, desc="Processing submissions"):
-        if 'metadata_submission' in doc and 'sampleData' in doc['metadata_submission']:
-            sample_data = doc['metadata_submission']['sampleData']
-            for key, sample_list in tqdm(sample_data.items(), total=len(sample_data),
-                                         desc=f"Submission {doc.get('id')} sampleData processing"):
-                if key in skip_templates:
-                    continue
-                if isinstance(sample_list, list):
-                    for sample in tqdm(sample_list, desc=f"Processing samples in '{key}'", leave=False):
-                        for k, v in list(sample.items()):
-                            if k in ctv_using_slots:
-                                parsed = parse_label_curie(v)
-                                if parsed:
-                                    sample[f"{k}_id"] = parsed['curie']
-                                    sample[f"{k}_claimed_label"] = parsed['label']
-                        if isinstance(sample, dict):
-                            sample_with_id = sample.copy()
-                            sample_with_id['sampleData'] = key
-                            sample_with_id['submission_id'] = doc.get('id')
-                            sample_with_id['created'] = doc.get('created')
-                            sample_with_id['date_last_modified'] = doc.get('date_last_modified')
-                            sample_with_id['status'] = doc.get('status')
-                            flattened_sample = flatten_sample(sample_with_id)
-                            submission_biosamples.append(flattened_sample)
+        total_docs = submissions_collection.count_documents({})
+        for doc in tqdm(submissions_collection.find(), total=total_docs, desc="Processing submissions"):
+            if 'metadata_submission' in doc and 'sampleData' in doc['metadata_submission']:
+                sample_data = doc['metadata_submission']['sampleData']
+                for key, sample_list in tqdm(sample_data.items(), total=len(sample_data),
+                                             desc=f"Submission {doc.get('id')} sampleData processing", disable=True):
+                    if key in skip_templates:
+                        continue
+                    if isinstance(sample_list, list):
+                        for sample in tqdm(sample_list, desc=f"Processing samples in '{key}'", leave=False, disable=True):
+                            for k, v in list(sample.items()):
+                                if k in ctv_using_slots:
+                                    parsed = parse_label_curie(v)
+                                    if parsed:
+                                        sample[f"{k}_id"] = parsed['curie']
+                                        sample[f"{k}_claimed_label"] = parsed['label']
+                            if isinstance(sample, dict):
+                                sample_with_id = sample.copy()
+                                sample_with_id['sampleData'] = key
+                                sample_with_id['submission_id'] = doc.get('id')
+                                sample_with_id['created'] = doc.get('created')
+                                sample_with_id['date_last_modified'] = doc.get('date_last_modified')
+                                sample_with_id['status'] = doc.get('status')
+                                flattened_sample = flatten_sample(sample_with_id)
+                                submission_biosamples.append(flattened_sample)
 
-    # Additional label checks for non-environmental fields
-    for sample in tqdm(submission_biosamples, desc="Post-processing biosamples"):
-        for key in to_label_check:
-            if key in sample:
-                if sample[key] in label_cache:
-                    sample[f"{key}_canonical_label"] = label_cache[sample[key]]
-                sample[f"{key}_obsolete"] = (sample[key] in obsolete_terms_list)
+        # Additional label checks for non-environmental fields
+        for sample in tqdm(submission_biosamples, desc="Post-processing biosamples"):
+            for key in to_label_check:
+                if key in sample:
+                    if sample[key] in label_cache:
+                        sample[f"{key}_canonical_label"] = label_cache[sample[key]]
+                    sample[f"{key}_obsolete"] = (sample[key] in obsolete_terms_list)
 
-    # Process environmental context fields
-    environmental_fields = ["env_broad_scale", "env_local_scale", "env_medium"]
-    for sample in tqdm(submission_biosamples, desc="Processing environmental context fields"):
-        for field in environmental_fields:
-            if field in sample and sample[field]:
-                parsed = parse_env_context_field(sample[field])
-                sample[f"{field}_parsed_label"] = parsed["label"]
-                sample[f"{field}_parsed_curie"] = parsed["curie"]
-                if parsed["curie"] and parsed["curie"] in label_cache:
-                    sample[f"{field}_canonical_label"] = label_cache[parsed["curie"]]
-                sample[f"{field}_obsolete"] = (parsed["curie"] in obsolete_terms_list)
-                # Check if parsed label matches canonical label
-                sample[f"{field}_match"] = (parsed["label"] == sample.get(f"{field}_canonical_label"))
+        # Process environmental context fields
+        environmental_fields = ["env_broad_scale", "env_local_scale", "env_medium"]
+        for sample in tqdm(submission_biosamples, desc="Processing environmental context fields"):
+            for field in environmental_fields:
+                if field in sample and sample[field]:
+                    parsed = parse_env_context_field(sample[field])
+                    sample[f"{field}_parsed_label"] = parsed["label"]
+                    sample[f"{field}_parsed_curie"] = parsed["curie"]
+                    if parsed["curie"] and parsed["curie"] in label_cache:
+                        sample[f"{field}_canonical_label"] = label_cache[parsed["curie"]]
+                    sample[f"{field}_obsolete"] = (parsed["curie"] in obsolete_terms_list)
+                    # Check if parsed label matches canonical label
+                    sample[f"{field}_match"] = (parsed["label"] == sample.get(f"{field}_canonical_label"))
 
-    # Write flattened samples to a TSV file with sorted columns
-    if submission_biosamples:
-        all_keys = set()
-        for sample in submission_biosamples:
-            all_keys.update(sample.keys())
-        all_keys = sorted(all_keys)
-        with open(output_file, 'w', newline='', encoding='utf-8') as tsvfile:
-            writer = csv.DictWriter(tsvfile, fieldnames=all_keys, delimiter='\t')
-            writer.writeheader()
-            writer.writerows(submission_biosamples)
-        click.echo(f"TSV file '{output_file}' written successfully.")
+        # Write flattened samples to a TSV file with sorted columns
+        if submission_biosamples:
+            all_keys = set()
+            for sample in submission_biosamples:
+                all_keys.update(sample.keys())
+            all_keys = sorted(all_keys)
+            with open(output_file, 'w', newline='', encoding='utf-8') as tsvfile:
+                writer = csv.DictWriter(tsvfile, fieldnames=all_keys, delimiter='\t')
+                writer.writeheader()
+                writer.writerows(submission_biosamples)
+            click.echo(f"TSV file '{output_file}' written successfully.")
 
-    # Insert flattened samples into the target collection
-    flattened_collection_name = 'flattened_submission_biosamples'
-    if submission_biosamples:
-        temp_collection_name = f"{flattened_collection_name}_tmp"
-        temp_collection = submissions_db[temp_collection_name]
-        temp_collection.delete_many({})
-        insert_result = temp_collection.insert_many(submission_biosamples)
-        temp_collection.rename(flattened_collection_name, dropTarget=True)
-        click.echo(
-            f"Inserted {len(insert_result.inserted_ids)} documents into 'flattened_submission_biosamples' collection.")
+        # Insert flattened samples into the target collection
+        flattened_collection_name = 'flattened_submission_biosamples'
+        if submission_biosamples:
+            unique_suffix = datetime.utcnow().strftime("%Y%m%d%H%M%S%f")
+            temp_collection_name = f"{flattened_collection_name}_tmp_{unique_suffix}_{os.getpid()}"
+            temp_collection = submissions_db[temp_collection_name]
+            temp_collection.delete_many({})
+            insert_result = temp_collection.insert_many(submission_biosamples)
+            temp_collection.rename(flattened_collection_name, dropTarget=True)
+            click.echo(
+                f"Inserted {len(insert_result.inserted_ids)} documents into 'flattened_submission_biosamples' collection.")
 
     return True
 
