@@ -98,19 +98,17 @@ def get_bioportal_info(term_uri, prefix, api_key):
         return {"mappings_link": mappings_link, "data": data}
     except requests.exceptions.RequestException as e:
         logger.warning(
-            "BioPortal request failed for term_uri=%s prefix=%s url=%s: %s",
+            "BioPortal request failed for term_uri=%s prefix=%s: %s",
             term_uri,
             prefix,
-            url,
             e,
         )
         return None
     except ValueError as e:
         logger.warning(
-            "BioPortal response JSON decode failed for term_uri=%s prefix=%s url=%s: %s",
+            "BioPortal response JSON decode failed for term_uri=%s prefix=%s: %s",
             term_uri,
             prefix,
-            url,
             e,
         )
         return None
