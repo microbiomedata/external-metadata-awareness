@@ -8,6 +8,8 @@ import sqlite3
 import os
 from pathlib import Path
 
+import click
+
 # Define the source cache files and target combined cache
 SOURCE_FILES = [
     'requests_cache.sqlite',
@@ -115,9 +117,29 @@ def merge_caches(source_files, target_file):
     print(f"Total redirects in combined cache: {redirects_count}")
 
 
-if __name__ == "__main__":
+@click.command()
+@click.option(
+    "--source",
+    "sources",
+    multiple=True,
+    default=SOURCE_FILES,
+    show_default=True,
+    help="requests-cache SQLite file to merge (repeatable).",
+)
+@click.option(
+    "--output",
+    default=COMBINED_CACHE,
+    show_default=True,
+    help="Path of the combined cache file to create.",
+)
+def main(sources, output):
+    """Combine multiple requests-cache SQLite files into a single cache file."""
     print("Starting cache merge operation...")
-    merge_caches(SOURCE_FILES, COMBINED_CACHE)
-    print(f"\nSuccessfully created combined cache at: {COMBINED_CACHE}")
+    merge_caches(list(sources), output)
+    print(f"\nSuccessfully created combined cache at: {output}")
     print("NOTE: This is a new file that doesn't affect the existing cache files.")
     print("To use it, you'll need to update your application code to point to this file.")
+
+
+if __name__ == "__main__":
+    main()
