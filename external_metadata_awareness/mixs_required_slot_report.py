@@ -36,7 +36,7 @@ import csv
 import sys
 from collections import defaultdict
 from pathlib import Path
-from urllib.parse import quote_plus, urlparse
+from urllib.parse import quote_plus, urlparse, urlunparse
 
 import click
 from dotenv import dotenv_values
@@ -210,7 +210,7 @@ def is_nmdc_supported_class(
     if class_type in {"combination", "other"}:
         # Intentionally out of NMDC supported scope for this report.
         return False
-    # Defensive default for unexpected class_type values.
+    # Defensive default for any unexpected class_type value.
     return False
 
 
@@ -246,8 +246,17 @@ def connect_mongo(mongo_uri: str, env_file: str | None) -> MongoClient:
         for user_key, pass_key in MONGO_CRED_KEY_PAIRS:
             user, password = config.get(user_key), config.get(pass_key)
             if user and password:
-                protocol, rest = mongo_uri.split("://", 1)
-                final_uri = f"{protocol}://{quote_plus(user)}:{quote_plus(password)}@{rest}"
+                target_netloc = parsed.netloc.rsplit("@", 1)[-1]
+                final_uri = urlunparse(
+                    (
+                        parsed.scheme,
+                        f"{quote_plus(user)}:{quote_plus(password)}@{target_netloc}",
+                        parsed.path,
+                        parsed.params,
+                        parsed.query,
+                        parsed.fragment,
+                    )
+                )
                 break
         else:
             click.echo(
@@ -263,15 +272,9 @@ def connect_mongo(mongo_uri: str, env_file: str | None) -> MongoClient:
         client.admin.command("ping")
         return client
     except OperationFailure as exc:
-        raise click.ClickException(
-            "MongoDB authentication/authorization failed. "
-            "Check username/password and database permissions."
-        ) from exc
+        raise click.ClickException("MongoDB authentication/authorization failed.") from exc
     except ConnectionFailure as exc:
-        raise click.ClickException(
-            "Could not reach MongoDB server. "
-            "Check host/port, network access, and tunnel configuration."
-        ) from exc
+        raise click.ClickException("Could not reach MongoDB server.") from exc
     except PyMongoError as exc:
         raise click.ClickException(f"MongoDB client error: {exc}") from exc
 

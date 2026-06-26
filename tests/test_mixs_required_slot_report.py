@@ -11,7 +11,7 @@ def test_is_nmdc_supported_class_combination_and_other_are_unsupported():
     assert report.is_nmdc_supported_class("SomeClass", "other", {}) is False
 
 
-def test_connect_mongo_injects_credentials_when_uri_contains_non_credential_at_symbol(
+def test_connect_mongo_injects_credentials_when_uri_lacks_credentials(
     monkeypatch, tmp_path: Path
 ):
     env_file = tmp_path / ".env"
@@ -30,11 +30,37 @@ def test_connect_mongo_injects_credentials_when_uri_contains_non_credential_at_s
             self.admin = FakeAdmin()
 
     monkeypatch.setattr(report, "MongoClient", FakeClient)
+    # appName includes an '@' in the query string to ensure URI parsing does not
+    # mistake query text for inline credentials.
     report.connect_mongo(
         "mongodb://localhost:27017/nmdc?appName=user@example.com", str(env_file)
     )
 
     assert "test-user:test-pass@" in captured["uri"]
+    assert captured["timeout"] == "8000"
+
+
+def test_connect_mongo_replaces_partial_inline_credentials(monkeypatch, tmp_path: Path):
+    env_file = tmp_path / ".env"
+    env_file.write_text("MONGO_USER=test-user\nMONGO_PASSWORD=test-pass\n")
+    captured: dict[str, str] = {}
+
+    class FakeAdmin:
+        def command(self, command_name: str):
+            assert command_name == "ping"
+            return {"ok": 1}
+
+    class FakeClient:
+        def __init__(self, uri: str, serverSelectionTimeoutMS: int):
+            captured["uri"] = uri
+            captured["timeout"] = str(serverSelectionTimeoutMS)
+            self.admin = FakeAdmin()
+
+    monkeypatch.setattr(report, "MongoClient", FakeClient)
+    report.connect_mongo("mongodb://useronly@localhost:27017/nmdc", str(env_file))
+
+    assert "useronly@" not in captured["uri"]
+    assert "@localhost:27017/nmdc" in captured["uri"]
     assert captured["timeout"] == "8000"
 
 
@@ -52,7 +78,7 @@ def test_connect_mongo_injects_credentials_when_uri_contains_non_credential_at_s
         (PyMongoError("generic"), "MongoDB client error: generic"),
     ],
 )
-def test_connect_mongo_wraps_client_exceptions(monkeypatch, error, expected):
+def test_connect_mongo_wraps_ping_exceptions(monkeypatch, error, expected):
     class FakeAdmin:
         def command(self, command_name: str):
             raise error
