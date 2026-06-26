@@ -128,10 +128,10 @@ def get_mapped_term_info(self_link, api_key):
         response.raise_for_status()
         return response.json()
     except requests.exceptions.RequestException as e:
-        logger.warning("Mapped term request failed for self_link=%s url=%s: %s", self_link, url, e)
+        logger.warning("Mapped term request failed for self_link: %s", e)
         return {}
     except ValueError as e:
-        logger.warning("Mapped term JSON decode failed for self_link=%s url=%s: %s", self_link, url, e)
+        logger.warning("Mapped term JSON decode failed for self_link: %s", e)
         return {}
 
 
