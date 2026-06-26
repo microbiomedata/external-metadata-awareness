@@ -19,16 +19,24 @@ WGET=wget
 
 # always "biosamples_" not "biosample_"
 
-.PHONY: load-biosamples-into-mongo \
+.PHONY: load_biosamples_into_mongo \
+        load-biosamples-into-mongo \
         purge \
+        load-acceptable-sized-leaf-bioprojects-into-mongodb \
         load_acceptable_sized_leaf_bioprojects_into_mongodb \
         flatten_bioprojects \
         flatten_biosamples_ids \
         flatten_biosamples_links \
         flatten_biosample_attributes \
-        flatten_biosample_packages \
+        biosamples_flattended \
         biosamples-flattened \
+        aggregate_biosample_package_usage \
         aggregate-biosample-package-usage
+
+# Backward-compatible aliases for legacy hyphenated target names.
+load-biosamples-into-mongo: load_biosamples_into_mongo
+biosamples-flattened: biosamples_flattended
+aggregate-biosample-package-usage: aggregate_biosample_package_usage
 
 purge:
 	rm -rf $(DOWNLOADS_DIR)/biosample_set.xml*
@@ -61,6 +69,9 @@ ifdef ENV_FILE
   ENV_FILE_OPTION := --env-file $(ENV_FILE)
 endif
 
+# Backward-compatible alias for naming consistency.
+load_acceptable_sized_leaf_bioprojects_into_mongodb: load-acceptable-sized-leaf-bioprojects-into-mongodb ;
+
 # Only require building the last-id file when the caller hasn't supplied
 # LAST_BIOSAMPLE_ID directly. Building it from the 154 GB biosample_set.xml
 # reads the file from the end (cheap) but still touches a lot of I/O;
@@ -74,9 +85,11 @@ endif
 # These rules generate the ID file, if possible
 $(LOCAL_DIR)/biosample-last-id-line.txt: $(LOCAL_DIR)/biosample_set.xml
 	@echo "Building $@"
-	@# Read from the end (fast: grep -m 1 stops at the last match and the
-	@# reverser exits). Use whichever reverser is preinstalled: tac on Linux,
-	@# tail -r on macOS/BSD. Avoids a full forward scan of the 154 GB file.
+	@# Read from the end (fast: grep -m 1 stops at the first match in the
+	@# reversed stream, which corresponds to the last match in the original;
+	@# then the reverser exits). Use whichever reverser is preinstalled:
+	@# tac on Linux, tail -r on macOS/BSD. Avoids a full forward scan of the
+	@# 154 GB file.
 	@if command -v tac >/dev/null 2>&1; then reverse="tac"; \
 	elif tail -r /dev/null >/dev/null 2>&1; then reverse="tail -r"; \
 	else echo "Error: need 'tac' (Linux/coreutils) or 'tail -r' (macOS/BSD) to read $< from the end; install coreutils" >&2; exit 1; fi; \
@@ -142,14 +155,14 @@ load_acceptable_sized_leaf_bioprojects_into_mongodb: $(DOWNLOADS_DIR)/bioproject
 	@date
 	@echo "Using MONGO_URI=$(MONGO_URI)"
 	$(RUN) load-bioprojects-into-mongodb \
-       --clear-collections \
-       --oversize-dir $(LOCAL_DIR)/oversize-bioprojects \
-       --project-collection bioprojects \
-       --submission-collection bioprojects_submissions \
-       --mongo-uri "$(MONGO_URI)" \
-       --verbose \
-       --xml-file $< \
-       $(ENV_FILE_OPTION)
+	--clear-collections \
+	--oversize-dir $(LOCAL_DIR)/oversize-bioprojects \
+	--project-collection bioprojects \
+	--submission-collection bioprojects_submissions \
+	--mongo-uri "$(MONGO_URI)" \
+	--verbose \
+	--xml-file $< \
+	$(ENV_FILE_OPTION)
 
 $(LOCAL_DIR)/bioproject_xpath_counts.json: $(DOWNLOADS_DIR)/bioproject.xml
 	# --stop-after 999999999
