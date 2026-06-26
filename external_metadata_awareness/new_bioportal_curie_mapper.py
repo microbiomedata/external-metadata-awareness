@@ -17,7 +17,7 @@ from tqdm import tqdm
 
 from external_metadata_awareness.mongodb_connection import get_mongo_client
 
-requests_cache_filename="external-metadata-awareness-requests-cache"
+requests_cache_filename = "external-metadata-awareness-requests-cache"
 
 # Enable requests caching (expires after 30 days)
 requests_cache.install_cache(requests_cache_filename, expire_after=datetime.timedelta(days=30))
@@ -88,14 +88,31 @@ def get_bioportal_info(term_uri, prefix, api_key):
     """
     ontology = prefix.upper()
     encoded_uri = urllib.parse.quote(term_uri, safe="")
-    url = f"https://data.bioontology.org/ontologies/{ontology}/classes/{encoded_uri}?apikey={api_key}"
+    url = f"https://data.bioontology.org/ontologies/{ontology}/classes/{encoded_uri}"
+    headers = {"Authorization": f"apikey token={api_key}"}
     try:
-        response = requests.get(url, timeout=10)
+        response = requests.get(url, headers=headers, timeout=10)
         response.raise_for_status()
         data = response.json()
         mappings_link = data.get("links", {}).get("mappings")
         return {"mappings_link": mappings_link, "data": data}
-    except Exception:
+    except requests.exceptions.RequestException as e:
+        logger.warning(
+            "BioPortal request failed for term_uri=%s prefix=%s url=%s: %s",
+            term_uri,
+            prefix,
+            url,
+            e,
+        )
+        return None
+    except ValueError as e:
+        logger.warning(
+            "BioPortal response JSON decode failed for term_uri=%s prefix=%s url=%s: %s",
+            term_uri,
+            prefix,
+            url,
+            e,
+        )
         return None
 
 
@@ -104,15 +121,17 @@ def get_mapped_term_info(self_link, api_key):
     Given a mapped term's self link, fetch its details from BioPortal.
     Returns the JSON data.
     """
-    if "?" in self_link:
-        url = self_link + f"&apikey={api_key}"
-    else:
-        url = self_link + f"?apikey={api_key}"
+    url = self_link
+    headers = {"Authorization": f"apikey token={api_key}"}
     try:
-        response = requests.get(url, timeout=10)
+        response = requests.get(url, headers=headers, timeout=10)
         response.raise_for_status()
         return response.json()
-    except Exception:
+    except requests.exceptions.RequestException as e:
+        logger.warning("Mapped term request failed for self_link=%s url=%s: %s", self_link, url, e)
+        return {}
+    except ValueError as e:
+        logger.warning("Mapped term JSON decode failed for self_link=%s url=%s: %s", self_link, url, e)
         return {}
 
 
