@@ -36,12 +36,13 @@ import csv
 import sys
 from collections import defaultdict
 from pathlib import Path
-from urllib.parse import quote_plus
+from urllib.parse import quote_plus, urlparse, urlunparse
 
 import click
 from dotenv import dotenv_values
 from linkml_runtime import SchemaView
 from pymongo import MongoClient
+from pymongo.errors import ConnectionFailure, OperationFailure, PyMongoError
 
 # GSC MIxS v6.3.0 is the version NMDC imports slots from; see nmdc-schema's
 # assets/import_mixs_slots_regardless.tsv.
@@ -49,6 +50,14 @@ DEFAULT_MIXS_SCHEMA = (
     "https://raw.githubusercontent.com/GenomicsStandardsConsortium/"
     "mixs/v6.3.0/src/mixs/schema/mixs.yaml"
 )
+
+# Aggregate biosamples by the raw env_package value as stored in MongoDB.
+# The grouped key is nested under `env_package.has_raw_value`; grouped values
+# are later normalized via ENV_PACKAGE_TO_EXTENSION.
+ENV_PACKAGE_WEIGHT_PIPELINE = [
+    {"$group": {"_id": "$env_package.has_raw_value", "n": {"$sum": 1}}}
+]
+REQUIRED_ANNOTATION_COLUMNS = frozenset({"slot", "priority", "comment"})
 # NMDC materialized schema, matching analyze_nmdc_biosample_coverage.py.
 DEFAULT_NMDC_SCHEMA = (
     "https://raw.githubusercontent.com/microbiomedata/nmdc-schema/"
@@ -199,6 +208,10 @@ def is_nmdc_supported_class(
         return class_name in extension_weights
     if class_type == "checklist":
         return class_name in NMDC_SUPPORTED_CHECKLISTS
+    if class_type in {"combination", "other"}:
+        # Intentionally out of NMDC supported scope for this report.
+        return False
+    # Defensive default for any unexpected class_type value.
     return False
 
 
@@ -224,7 +237,8 @@ def connect_mongo(mongo_uri: str, env_file: str | None) -> MongoClient:
     logged. The URI must include a database name.
     """
     final_uri = mongo_uri
-    if "@" not in mongo_uri:
+    parsed = urlparse(mongo_uri)
+    if not (parsed.username and parsed.password):
         config = {}
         if env_file and Path(env_file).exists():
             config = dotenv_values(env_file)
@@ -233,8 +247,17 @@ def connect_mongo(mongo_uri: str, env_file: str | None) -> MongoClient:
         for user_key, pass_key in MONGO_CRED_KEY_PAIRS:
             user, password = config.get(user_key), config.get(pass_key)
             if user and password:
-                protocol, rest = mongo_uri.split("://", 1)
-                final_uri = f"{protocol}://{quote_plus(user)}:{quote_plus(password)}@{rest}"
+                host_without_credentials = parsed.netloc.rsplit("@", 1)[-1]
+                final_uri = urlunparse(
+                    (
+                        parsed.scheme,
+                        f"{quote_plus(user)}:{quote_plus(password)}@{host_without_credentials}",
+                        parsed.path,
+                        parsed.params,
+                        parsed.query,
+                        parsed.fragment,
+                    )
+                )
                 break
         else:
             click.echo(
@@ -245,7 +268,16 @@ def connect_mongo(mongo_uri: str, env_file: str | None) -> MongoClient:
                 "authenticated server.",
                 err=True,
             )
-    return MongoClient(final_uri, serverSelectionTimeoutMS=8000)
+    try:
+        client = MongoClient(final_uri, serverSelectionTimeoutMS=8000)
+        client.admin.command("ping")
+        return client
+    except OperationFailure as exc:
+        raise click.ClickException("MongoDB authentication/authorization failed.") from exc
+    except ConnectionFailure as exc:
+        raise click.ClickException("Could not reach MongoDB server.") from exc
+    except PyMongoError as exc:
+        raise click.ClickException(f"MongoDB client error: {exc}") from exc
 
 
 def fetch_env_package_weights(mongo_uri: str, env_file: str | None) -> dict[str, int]:
@@ -256,9 +288,8 @@ def fetch_env_package_weights(mongo_uri: str, env_file: str | None) -> dict[str,
     """
     client = connect_mongo(mongo_uri, env_file)
     collection = client.get_default_database()["biosample_set"]
-    pipeline = [{"$group": {"_id": "$env_package.has_raw_value", "n": {"$sum": 1}}}]
     counts: dict[str, int] = {extension: 0 for extension in SUPPORTED_EXTENSIONS}
-    for record in collection.aggregate(pipeline):
+    for record in collection.aggregate(ENV_PACKAGE_WEIGHT_PIPELINE):
         raw = record["_id"]
         if not raw:
             continue
@@ -299,6 +330,15 @@ def load_annotations(annotations_path: Path) -> dict[str, tuple[str, str]]:
     annotations: dict[str, tuple[str, str]] = {}
     with annotations_path.open(newline="") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
+        present_columns = set(reader.fieldnames or [])
+        missing_columns = sorted(REQUIRED_ANNOTATION_COLUMNS - present_columns)
+        if missing_columns:
+            present = ", ".join(sorted(present_columns)) if present_columns else "<none>"
+            missing = ", ".join(missing_columns)
+            raise ValueError(
+                f"Annotation TSV is missing required columns: {missing}. "
+                f"Present columns: {present}"
+            )
         for record in reader:
             slot_name = (record.get("slot") or "").strip()
             if not slot_name:
