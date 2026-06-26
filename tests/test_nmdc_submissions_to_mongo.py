@@ -2,6 +2,7 @@ import importlib.util
 import sys
 import types
 from datetime import datetime as real_datetime
+from pathlib import Path
 
 
 def _load_script_module(monkeypatch):
@@ -18,7 +19,11 @@ def _load_script_module(monkeypatch):
     if 'oaklib' not in sys.modules:
         monkeypatch.setitem(sys.modules, 'oaklib', types.SimpleNamespace(get_adapter=lambda _x: None))
 
-    path = '/home/runner/work/external-metadata-awareness/external-metadata-awareness/external_metadata_awareness/nmdc-submissions-to-mongo.py'
+    path = (
+        Path(__file__).resolve().parent.parent
+        / 'external_metadata_awareness'
+        / 'nmdc-submissions-to-mongo.py'
+    )
     spec = importlib.util.spec_from_file_location('nmdc_submissions_to_mongo_script', path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
@@ -61,8 +66,8 @@ def test_process_submissions_uses_unique_temp_collection_name(monkeypatch, tmp_p
         def insert_many(self, docs):
             return types.SimpleNamespace(inserted_ids=list(range(len(docs))))
 
-        def rename(self, name, dropTarget=True):  # noqa: N803
-            self.renamed_to = (name, dropTarget)
+        def rename(self, name, **kwargs):
+            self.renamed_to = (name, kwargs.get('dropTarget'))
 
     class FakeSubmissionsCollection:
         def count_documents(self, _query):
