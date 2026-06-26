@@ -1,7 +1,7 @@
 import importlib.util
 import sys
 import types
-from datetime import datetime as real_datetime
+from datetime import datetime as real_datetime, timezone
 from pathlib import Path
 
 
@@ -53,8 +53,9 @@ def test_process_submissions_uses_unique_temp_collection_name(monkeypatch, tmp_p
 
     class FixedDateTime:
         @staticmethod
-        def utcnow():
-            return real_datetime(2024, 1, 2, 3, 4, 5, 6789)
+        def now(tz=None):
+            assert tz is timezone.utc
+            return real_datetime(2024, 1, 2, 3, 4, 5, 6789, tzinfo=timezone.utc)
 
     class FakeTempCollection:
         def __init__(self):
@@ -140,4 +141,149 @@ def test_process_submissions_uses_unique_temp_collection_name(monkeypatch, tmp_p
 
     inner_calls = [c for c in tqdm_calls if 'desc' in c and ('sampleData processing' in c['desc'] or 'Processing samples' in c['desc'])]
     assert inner_calls
-    assert all(call.get('disable') is True for call in inner_calls)
+    assert all('disable' not in call for call in inner_calls)
+
+
+def test_process_submissions_drops_temp_collection_on_rename_failure(monkeypatch, tmp_path):
+    module = _load_script_module(monkeypatch)
+
+    class FakeSchemaView:
+        def __init__(self, _url):
+            pass
+
+        def usage_index(self):
+            return {'ControlledTermValue': []}
+
+    class FixedDateTime:
+        @staticmethod
+        def now(tz=None):
+            assert tz is timezone.utc
+            return real_datetime(2024, 1, 2, 3, 4, 5, 6789, tzinfo=timezone.utc)
+
+    class FakeTempCollection:
+        def delete_many(self, _query):
+            return None
+
+        def insert_many(self, docs):
+            return types.SimpleNamespace(inserted_ids=list(range(len(docs))))
+
+        def rename(self, _name, **_kwargs):
+            raise RuntimeError('rename failed')
+
+    class FakeSubmissionsCollection:
+        def count_documents(self, _query):
+            return 1
+
+        def find(self):
+            return [{
+                'id': 'sub-1',
+                'metadata_submission': {'sampleData': {'soil_data': [{'foo': 'bar'}]}},
+            }]
+
+    class FakeDB:
+        def __init__(self):
+            self.submissions = FakeSubmissionsCollection()
+            self.temp_collection = FakeTempCollection()
+            self.dropped = []
+
+        def __getitem__(self, key):
+            if key == 'nmdc_submissions':
+                return self.submissions
+            return self.temp_collection
+
+        def drop_collection(self, name):
+            self.dropped.append(name)
+
+    class FakeMongoClient:
+        def __init__(self, _url):
+            self.db = FakeDB()
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            return False
+
+        def __getitem__(self, _name):
+            return self.db
+
+    client = FakeMongoClient('mongodb://example/misc_metadata')
+    monkeypatch.setattr(module, 'SchemaView', FakeSchemaView)
+    monkeypatch.setattr(module, 'build_ontology_adapters', lambda _x: {})
+    monkeypatch.setattr(module, 'load_ontology_labels', lambda _x: {})
+    monkeypatch.setattr(module, 'find_obsolete_terms', lambda _x: [])
+    monkeypatch.setattr(module, 'parse_uri', lambda _u: {'database': 'misc_metadata'})
+    monkeypatch.setattr(module, 'MongoClient', lambda _u: client)
+    monkeypatch.setattr(module, 'datetime', FixedDateTime)
+    monkeypatch.setattr(module.os, 'getpid', lambda: 4321)
+    monkeypatch.setattr(module, 'tqdm', lambda iterable, **_kwargs: iterable)
+
+    try:
+        module.process_submissions('mongodb://example/misc_metadata', str(tmp_path / 'out.tsv'))
+    except RuntimeError as err:
+        assert str(err) == 'rename failed'
+    else:
+        raise AssertionError('expected rename failure')
+
+    assert client.db.dropped == ['flattened_submission_biosamples_tmp_20240102030405006789_4321']
+
+
+def test_additional_functions_close_mongo_client(monkeypatch):
+    module = _load_script_module(monkeypatch)
+
+    class FakeCursorCollection:
+        def count_documents(self, _query):
+            return 0
+
+        def find(self):
+            return []
+
+        def delete_many(self, _query):
+            return None
+
+        def insert_many(self, _docs):
+            return types.SimpleNamespace(inserted_ids=[])
+
+        def aggregate(self, _pipeline):
+            return []
+
+        def update_one(self, _query, _update):
+            return None
+
+    class FakeDB:
+        def __init__(self):
+            self.nmdc_submissions = FakeCursorCollection()
+            self.submission_biosample_rows = FakeCursorCollection()
+            self.flattened_submission_biosamples = FakeCursorCollection()
+
+        def __getitem__(self, key):
+            return getattr(self, key)
+
+    class FakeMongoClient:
+        entered = 0
+        exited = 0
+
+        def __init__(self, _url):
+            self.db = FakeDB()
+
+        def __enter__(self):
+            FakeMongoClient.entered += 1
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            FakeMongoClient.exited += 1
+            return False
+
+        def __getitem__(self, _name):
+            return self.db
+
+    monkeypatch.setattr(module, 'MongoClient', FakeMongoClient)
+    monkeypatch.setattr(module, 'parse_uri', lambda _u: {'database': 'misc_metadata'})
+    monkeypatch.setattr(module, 'tqdm', lambda iterable, **_kwargs: iterable)
+    monkeypatch.setattr(module, 'load_submission_schema_enums', lambda: {})
+
+    assert module.create_biosample_rows('mongodb://example/misc_metadata') is True
+    assert module.run_aggregation_pipeline('mongodb://example/misc_metadata') is True
+    assert module.check_value_set_compliance('mongodb://example/misc_metadata') is True
+    assert FakeMongoClient.entered == 3
+    assert FakeMongoClient.exited == 3
