@@ -5,29 +5,36 @@ from the env_triad_component_labels collection for documents with
 combined_oak_envo_coverage > 0.001.
 """
 
+import click
 from pymongo import MongoClient
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import gaussian_kde
 
 
-def main():
-    # MongoDB connection configuration.
-    mongo_url = "mongodb://localhost:27017"
-    client = MongoClient(mongo_url)
-    db = client.ncbi_metadata
+@click.command()
+@click.option("--mongo-uri", default="mongodb://localhost:27017", show_default=True,
+              help="MongoDB connection URI.")
+@click.option("--db-name", default="ncbi_metadata", show_default=True,
+              help="Database holding the env_triad_component_labels collection.")
+@click.option("--threshold", default=0.001, show_default=True, type=float,
+              help="Minimum combined_oak_envo_coverage to include.")
+def main(mongo_uri, db_name, threshold):
+    """Plot the distribution of combined_oak_envo_coverage above a threshold."""
+    client = MongoClient(mongo_uri)
+    db = client[db_name]
     collection = db.env_triad_component_labels
 
-    # Query for documents with combined_oak_envo_coverage > 0.001.
+    # Query for documents above the coverage threshold.
     cursor = collection.find(
-        {"combined_oak_envo_coverage": {"$gt": 0.001}},
+        {"combined_oak_envo_coverage": {"$gt": threshold}},
         {"combined_oak_envo_coverage": 1, "_id": 0}
     )
     # Extract the coverage values.
     values = [doc["combined_oak_envo_coverage"] for doc in cursor if "combined_oak_envo_coverage" in doc]
 
     if not values:
-        print("No documents found with combined_oak_envo_coverage > 0.001")
+        print(f"No documents found with combined_oak_envo_coverage > {threshold}")
         return
 
     # Create a histogram.
@@ -41,7 +48,7 @@ def main():
 
     plt.xlabel("Combined ENVO Coverage")
     plt.ylabel("Density")
-    plt.title("Distribution of combined_oak_envo_coverage (values > 0.001)")
+    plt.title(f"Distribution of combined_oak_envo_coverage (values > {threshold})")
     plt.legend()
     plt.show()
 

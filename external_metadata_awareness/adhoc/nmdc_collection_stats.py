@@ -1,11 +1,16 @@
+import click
 import requests
 import pandas as pd
 
 
-def make_collection_stats_table():
-    # Fetch the data from the API
-    url = "https://api.microbiomedata.org/nmdcschema/collection_stats"
-    tsv_out_filename = "nmdc_collection_stats.tsv"
+@click.command()
+@click.option("--api-url", default="https://api.microbiomedata.org/nmdcschema/collection_stats",
+              show_default=True, help="NMDC collection_stats API endpoint.")
+@click.option("--output", "tsv_out_filename", default="nmdc_collection_stats.tsv",
+              show_default=True, help="Path of the TSV file to write.")
+def main(api_url, tsv_out_filename):
+    """Fetch NMDC collection storage stats and write them to a TSV file."""
+    url = api_url
     response = requests.get(url)
 
     if response.status_code != 200:
@@ -34,4 +39,4 @@ def make_collection_stats_table():
 
 
 if __name__ == "__main__":
-    make_collection_stats_table()
+    main()
