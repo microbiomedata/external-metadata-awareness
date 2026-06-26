@@ -11,7 +11,7 @@ import pandas as pd
 def main(api_url, tsv_out_filename):
     """Fetch NMDC collection storage stats and write them to a TSV file."""
     url = api_url
-    response = requests.get(url)
+    response = requests.get(url, timeout=30)
 
     if response.status_code != 200:
         print(f"Failed to fetch data. Status code: {response.status_code}")
