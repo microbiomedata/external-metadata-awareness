@@ -149,6 +149,28 @@ The current collection (354 docs) operates on `measurement_results_skip_filtered
 
 ---
 
+## Biosample-to-bioproject linkage across sources
+
+Three collections link biosamples to bioprojects, with different scope and shape:
+
+- `sra_biosamples_bioprojects` (Stage 2): the widest coverage (~34M pairs), flat
+  `biosample_accession` / `bioproject_accession`. Prefer this for broad joins.
+- `biosamples_links` (Stage 3): per-biosample links parsed from the BioSample
+  XML. The link value is in `content`, and `type` distinguishes two shapes:
+  - `type: "entrez"` with `target: "bioproject"` means `content` is the numeric
+    Entrez project ID (e.g. `19655`).
+  - `type: "url"` with `label: "BioProject"` means `content` is a BioProject URL,
+    which usually needs parsing rather than a clean join.
+- `bioprojects_flattened` (Stage 3): one row per bioproject carrying both
+  `project_id` (numeric Entrez) and `accession` (e.g. `PRJNA...`), so it bridges
+  the numeric IDs in `biosamples_links` and the accessions used elsewhere.
+
+To resolve a numeric bioproject ID to its accession, join
+`biosamples_links.content` (where `type = "entrez"` and `target = "bioproject"`)
+to `bioprojects_flattened.project_id`.
+
+---
+
 ## Summary
 
 - **Naming convention**: Collections with `_flattened` in the name are always flat. But many flat collections don't have `_flattened` in the name.
