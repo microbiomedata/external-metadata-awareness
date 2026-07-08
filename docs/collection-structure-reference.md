@@ -34,7 +34,7 @@ Last verified: 2026-05-18 (56.3M biosamples, 1.07M bioprojects).
 | `biosamples_flattened` | **Flat** | 56.3M | **Yes** — 40 possible fields, many null per doc | accession, id, submission_date, last_update, publication_date, access, package_content, model_content, status_status, status_when, is_reference, curation_date, curation_status, owner_abbreviation, owner_name, owner_url, description_title, organism_name, taxonomy_id, taxonomy_name, description_comment, plus attribute fields (collection_date, geo_loc_name, env_broad_scale, env_local_scale, env_medium, host, etc.). `model_content` is pipe-joined when a biosample claims conformance to multiple model templates (~5% of docs). |
 | `biosamples_attributes` | **Flat** | 756M | **Yes** — `harmonized_name`, `display_name`, `unit` not always present | biosample_id, accession, attribute_name, content, [harmonized_name], [display_name], [unit] |
 | `biosamples_ids` | **Flat** | 128M | Minimal | biosample_id, accession, db, db_label, id_value |
-| `biosamples_links` | **Flat** | 30.6M | Minimal | biosample_id, accession, type, label, target |
+| `biosamples_links` | **Flat** | 30.6M | Minimal | accession, content (the link value), type (`entrez` or `url`), label, target (present only on `entrez`-type links) |
 | `bioprojects_flattened` | **Flat** | 1M | No | 17 fields |
 
 ### Stage 4: NCBI Schema
