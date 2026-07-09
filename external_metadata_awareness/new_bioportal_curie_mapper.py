@@ -3,11 +3,9 @@ import logging
 import os
 import pprint
 import urllib.parse
-import click
 from typing import List, Dict
 
-logger = logging.getLogger(__name__)
-
+import click
 import requests
 import requests_cache
 from dotenv import load_dotenv
@@ -16,6 +14,8 @@ from pymongo import uri_parser
 from tqdm import tqdm
 
 from external_metadata_awareness.mongodb_connection import get_mongo_client
+
+logger = logging.getLogger(__name__)
 
 requests_cache_filename = "external-metadata-awareness-requests-cache"
 
@@ -43,9 +43,8 @@ map_to = {
 dont_map_from = {
     "BFO",
     "IAO",
-    # TODO: Verify where `OF:*` CURIEs originate in source metadata (likely malformed/truncated prefixes).
-    # If they are invalid, keep `OF` in `dont_map_from`; if valid, add explicit normalization/mapping and
-    # remove `OF` from this ignore list to allow BioPortal CURIE mapping.
+    # Tracking: see ISSUE-OF-CURIE-VALIDATION to verify `OF:*` CURIE provenance and decide whether to
+    # keep `OF` excluded or add explicit normalization/mapping before enabling BioPortal CURIE mapping.
     "OF",
     "RO",
 }
@@ -171,11 +170,12 @@ def fetch_mappings(mappings_url, api_key, verbose=False):
             if mapped_prefix.upper() in map_to_upper and ontology_id in map_to_upper:
                 self_link = class_links.get("self")
                 mapped_info = get_mapped_term_info(self_link, api_key) if self_link else {}
-                if mapped_info.get("prefLabel"):
+                pref_label = mapped_info.get("prefLabel")
+                if isinstance(pref_label, str) and pref_label:
                     mapping_obj = {
                         "curie": mapped_curie,
                         "prefix": mapped_prefix,
-                        "label_lc": mapped_info.get("prefLabel").lower(),
+                        "label_lc": pref_label.lower(),
                         "obsolete": mapped_info.get("obsolete", False)
                     }
 
@@ -209,7 +209,8 @@ def process_document(doc, collection, api_key, verbose=False):
 
     bioportal_info = get_bioportal_info(term_uri, reverse_engineered_prefix, api_key)
     if not bioportal_info:
-        # print(f"Failed to fetch BioPortal info for CURIE: {curie}")
+        if verbose:
+            logger.debug("Failed to fetch BioPortal info")
         return
 
     data = bioportal_info["data"]
@@ -241,8 +242,8 @@ def main(mongo_uri, env_file, collection, verbose):
     load_dotenv(env_file)
     
     # Get BIOPORTAL_API_KEY from environment
-    BIOPORTAL_API_KEY = os.environ.get("BIOPORTAL_API_KEY")
-    if not BIOPORTAL_API_KEY:
+    bioportal_api_key = os.environ.get("BIOPORTAL_API_KEY")
+    if not bioportal_api_key:
         raise Exception(f"Please set the BIOPORTAL_API_KEY environment variable in {env_file}")
     
     # Connect to MongoDB
@@ -280,7 +281,7 @@ def main(mongo_uri, env_file, collection, verbose):
     # Process each document. Each call may make multiple BioPortal API requests,
     # so wrap the iteration in tqdm for a visible progress bar.
     for doc in tqdm(docs_cursor, total=doc_count, desc="BioPortal mapping", unit="doc"):
-        process_document(doc, mongo_collection, BIOPORTAL_API_KEY, verbose)
+        process_document(doc, mongo_collection, bioportal_api_key, verbose)
 
     print("Processing complete.")
 
