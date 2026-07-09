@@ -26,14 +26,11 @@ def resolve_env_config(env_path, **cli_overrides):
     env values stay None so callers can apply their own defaults or error out.
     """
     env_vars = dotenv_values(env_path) if env_path else {}
-    return {
-        key: (
-            cli_overrides.get(key.lower())
-            if cli_overrides.get(key.lower()) is not None
-            else env_vars.get(key)
-        )
-        for key in ENV_CONFIG_KEYS
-    }
+    resolved = {}
+    for key in ENV_CONFIG_KEYS:
+        cli_value = cli_overrides.get(key.lower())
+        resolved[key] = cli_value if cli_value is not None else env_vars.get(key)
+    return resolved
 
 
 # =============================================================================
