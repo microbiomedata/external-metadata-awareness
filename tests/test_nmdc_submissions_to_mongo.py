@@ -141,7 +141,7 @@ def test_process_submissions_uses_unique_temp_collection_name(monkeypatch, tmp_p
 
     inner_calls = [c for c in tqdm_calls if 'desc' in c and ('sampleData processing' in c['desc'] or 'Processing samples' in c['desc'])]
     assert inner_calls
-    assert all('disable' not in call for call in inner_calls)
+    assert all(call.get('disable') is True for call in inner_calls)
 
 
 def test_process_submissions_drops_temp_collection_on_rename_failure(monkeypatch, tmp_path):

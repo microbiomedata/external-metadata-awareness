@@ -303,11 +303,13 @@ def process_submissions(mongo_url, output_file):
             if 'metadata_submission' in doc and 'sampleData' in doc['metadata_submission']:
                 sample_data = doc['metadata_submission']['sampleData']
                 for key, sample_list in tqdm(sample_data.items(), total=len(sample_data),
-                                             desc=f"Submission {doc.get('id')} sampleData processing"):
+                                             desc=f"Submission {doc.get('id')} sampleData processing",
+                                             disable=True):
                     if key in skip_templates:
                         continue
                     if isinstance(sample_list, list):
-                        for sample in tqdm(sample_list, desc=f"Processing samples in '{key}'", leave=False):
+                        for sample in tqdm(sample_list, desc=f"Processing samples in '{key}'", leave=False,
+                                           disable=True):
                             for k, v in list(sample.items()):
                                 if k in ctv_using_slots:
                                     parsed = parse_label_curie(v)
