@@ -34,6 +34,7 @@ Example:
 
 import csv
 import sys
+import warnings
 from collections import defaultdict
 from pathlib import Path
 from urllib.parse import quote_plus, urlparse, urlunparse
@@ -243,7 +244,7 @@ def connect_mongo(mongo_uri: str, env_file: str | None) -> MongoClient:
         if env_file and Path(env_file).exists():
             config = dotenv_values(env_file)
         elif env_file:
-            click.echo(f"Warning: env file not found: {env_file}", err=True)
+            warnings.warn(f"env file not found: {env_file}")
         for user_key, pass_key in MONGO_CRED_KEY_PAIRS:
             user, password = config.get(user_key), config.get(pass_key)
             if user and password:
@@ -289,8 +290,8 @@ def fetch_env_package_weights(mongo_uri: str, env_file: str | None) -> dict[str,
     client = connect_mongo(mongo_uri, env_file)
     collection = client.get_default_database()["biosample_set"]
     counts: dict[str, int] = {extension: 0 for extension in SUPPORTED_EXTENSIONS}
-    for record in collection.aggregate(ENV_PACKAGE_WEIGHT_PIPELINE):
-        raw = record["_id"]
+    for record in (collection.aggregate(ENV_PACKAGE_WEIGHT_PIPELINE) or []):
+        raw = record.get("_id")
         if not raw:
             continue
         extension = ENV_PACKAGE_TO_EXTENSION.get(str(raw).strip().lower())
