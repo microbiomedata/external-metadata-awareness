@@ -210,7 +210,7 @@ def process_document(doc, collection, api_key, verbose=False):
     bioportal_info = get_bioportal_info(term_uri, reverse_engineered_prefix, api_key)
     if not bioportal_info:
         if verbose:
-            logger.debug("Failed to fetch BioPortal info for CURIE: %s", curie)
+            logger.debug("Failed to fetch BioPortal info")
         return
 
     data = bioportal_info["data"]
