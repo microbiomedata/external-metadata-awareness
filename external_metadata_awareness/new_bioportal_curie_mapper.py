@@ -125,30 +125,28 @@ def get_mapped_term_info(self_link, api_key):
         response.raise_for_status()
         return response.json()
     except requests.exceptions.RequestException as e:
-        logger.warning("Mapped term request failed for self_link: %s", e)
+        logger.warning("Mapped term request failed for self_link=%s: %s", self_link, e)
         return {}
     except ValueError as e:
-        logger.warning("Mapped term JSON decode failed for self_link: %s", e)
+        logger.warning("Mapped term JSON decode failed for self_link=%s: %s", self_link, e)
         return {}
 
 
-def fetch_mappings(mappings_url, api_key, verbose=False):
+def fetch_mappings(mappings_url, api_key, source_class_id, verbose=False):
     """
     Fetch LOOM-type mappings from BioPortal using the mappings_link.
     """
     try:
-        if "?" in mappings_url:
-            full_url = mappings_url + f"&apikey={api_key}"
-        else:
-            full_url = mappings_url + f"?apikey={api_key}"
+        headers = {"Authorization": f"apikey token={api_key}"}
         if verbose:
             logger.debug("Following BioPortal mappings link")
-        response = requests.get(full_url, timeout=10)
+        response = requests.get(mappings_url, headers=headers, timeout=10)
         response.raise_for_status()
         mappings_obj = response.json()
         loom_count = 0
         accepted_mappings = []
         map_to_upper = {m.upper() for m in map_to}
+        source_class_id_norm = source_class_id.rstrip("/") if isinstance(source_class_id, str) else None
         for item in mappings_obj:
             if item.get("source") != "LOOM":
                 continue
@@ -156,8 +154,16 @@ def fetch_mappings(mappings_url, api_key, verbose=False):
             classes = item.get("classes", [])
             if len(classes) < 2:
                 continue
-            # Use the second class as the mapped target
-            target_cls = classes[1]
+            target_candidates = []
+            for cls in classes:
+                cls_id = cls.get("@id")
+                cls_id_norm = cls_id.rstrip("/") if isinstance(cls_id, str) else None
+                if source_class_id_norm is not None and cls_id_norm == source_class_id_norm:
+                    continue
+                target_candidates.append(cls)
+            if not target_candidates:
+                continue
+            target_cls = target_candidates[0]
             class_links = target_cls.get("links", {})
             ontology_url = class_links.get("ontology", "")
             if not ontology_url:
@@ -225,7 +231,7 @@ def process_document(doc, collection, api_key, verbose=False):
 
     if bioportal_info.get("mappings_link"):
         mappings_url = bioportal_info["mappings_link"]
-        accepted_mappings = fetch_mappings(mappings_url, api_key, verbose)
+        accepted_mappings = fetch_mappings(mappings_url, api_key, term_uri, verbose)
         if accepted_mappings:
             update_fields["mappings"] = accepted_mappings
 
