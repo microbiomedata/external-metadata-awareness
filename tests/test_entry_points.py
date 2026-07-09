@@ -99,15 +99,7 @@ def test_non_click_entry_point_invokes(name, target, monkeypatch):
     assert callable(obj), f"{name} entry point target is not callable"
     monkeypatch.setattr(sys, "argv", [name, "--help"])
 
-    exited = False
-    completed_without_exit = False
     try:
         obj()
-        completed_without_exit = True
     except SystemExit as exc:
-        exited = True
         assert exc.code in (0, None), f"{name} exited with non-zero code: {exc.code}"
-
-    assert (
-        exited or completed_without_exit
-    ), f"{name} entry point invocation path was not evaluated"
