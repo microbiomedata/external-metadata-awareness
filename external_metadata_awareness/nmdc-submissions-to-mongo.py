@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import re
-import os
 import uuid
 import csv
 import json
@@ -368,7 +367,7 @@ def process_submissions(mongo_url, output_file):
             # Insert flattened samples into the target collection
             flattened_collection_name = 'flattened_submission_biosamples'
             unique_suffix = uuid.uuid4().hex[:12]
-            temp_collection_name = f"{flattened_collection_name}_tmp_{unique_suffix}_{os.getpid()}"
+            temp_collection_name = f"{flattened_collection_name}_tmp_{unique_suffix}"
             temp_collection = submissions_db[temp_collection_name]
             try:
                 temp_collection.delete_many({})
@@ -376,9 +375,9 @@ def process_submissions(mongo_url, output_file):
                 temp_collection.rename(flattened_collection_name, dropTarget=True)
                 click.echo(
                     f"Inserted {len(insert_result.inserted_ids)} documents into 'flattened_submission_biosamples' collection.")
-            finally:
-                if temp_collection_name in submissions_db.list_collection_names():
-                    submissions_db.drop_collection(temp_collection_name)
+            except Exception:
+                submissions_db.drop_collection(temp_collection_name)
+                raise
 
     return True
 
