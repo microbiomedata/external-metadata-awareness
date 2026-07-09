@@ -28,14 +28,14 @@ WGET=wget
         flatten_biosamples_ids \
         flatten_biosamples_links \
         flatten_biosample_attributes \
-        biosamples_flattended \
+        biosamples_flattened \
         biosamples-flattened \
         aggregate_biosample_package_usage \
         aggregate-biosample-package-usage
 
 # Backward-compatible aliases for legacy hyphenated target names.
 load-biosamples-into-mongo: load_biosamples_into_mongo
-biosamples-flattened: biosamples_flattended
+biosamples-flattened: biosamples_flattened
 aggregate-biosample-package-usage: aggregate_biosample_package_usage
 
 # Backward-compatible alias for naming consistency.
