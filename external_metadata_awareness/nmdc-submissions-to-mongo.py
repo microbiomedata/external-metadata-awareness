@@ -310,21 +310,22 @@ def process_submissions(mongo_url, output_file):
                     if isinstance(sample_list, list):
                         for sample in tqdm(sample_list, desc=f"Processing samples in '{key}'", leave=False,
                                            disable=True):
+                            if not isinstance(sample, dict):
+                                continue
                             for k, v in list(sample.items()):
                                 if k in ctv_using_slots:
                                     parsed = parse_label_curie(v)
                                     if parsed:
                                         sample[f"{k}_id"] = parsed['curie']
                                         sample[f"{k}_claimed_label"] = parsed['label']
-                            if isinstance(sample, dict):
-                                sample_with_id = sample.copy()
-                                sample_with_id['sampleData'] = key
-                                sample_with_id['submission_id'] = doc.get('id')
-                                sample_with_id['created'] = doc.get('created')
-                                sample_with_id['date_last_modified'] = doc.get('date_last_modified')
-                                sample_with_id['status'] = doc.get('status')
-                                flattened_sample = flatten_sample(sample_with_id)
-                                submission_biosamples.append(flattened_sample)
+                            sample_with_id = sample.copy()
+                            sample_with_id['sampleData'] = key
+                            sample_with_id['submission_id'] = doc.get('id')
+                            sample_with_id['created'] = doc.get('created')
+                            sample_with_id['date_last_modified'] = doc.get('date_last_modified')
+                            sample_with_id['status'] = doc.get('status')
+                            flattened_sample = flatten_sample(sample_with_id)
+                            submission_biosamples.append(flattened_sample)
 
         # Additional label checks for non-environmental fields
         for sample in tqdm(submission_biosamples, desc="Post-processing biosamples"):
