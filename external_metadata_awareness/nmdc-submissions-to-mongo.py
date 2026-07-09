@@ -284,7 +284,7 @@ def process_submissions(mongo_url, output_file):
     ontology_list = ["envo", "pato", "uberon", "po"]
     ontology_adapters = build_ontology_adapters(ontology_list)
     label_cache = load_ontology_labels(ontology_adapters)
-    obsolete_terms_list = find_obsolete_terms(ontology_adapters)
+    obsolete_terms_set = set(find_obsolete_terms(ontology_adapters))
 
     # Connect to MongoDB
     with MongoClient(mongo_url) as client:
@@ -313,7 +313,7 @@ def process_submissions(mongo_url, output_file):
                             if not isinstance(sample, dict):
                                 continue
                             for k, v in list(sample.items()):
-                                if k in ctv_using_slots:
+                                if k in ctv_using_slots and isinstance(v, str):
                                     parsed = parse_label_curie(v)
                                     if parsed:
                                         sample[f"{k}_id"] = parsed['curie']
@@ -333,7 +333,7 @@ def process_submissions(mongo_url, output_file):
                 if key in sample:
                     if sample[key] in label_cache:
                         sample[f"{key}_canonical_label"] = label_cache[sample[key]]
-                    sample[f"{key}_obsolete"] = (sample[key] in obsolete_terms_list)
+                    sample[f"{key}_obsolete"] = (sample[key] in obsolete_terms_set)
 
         # Process environmental context fields
         environmental_fields = ["env_broad_scale", "env_local_scale", "env_medium"]
@@ -345,7 +345,7 @@ def process_submissions(mongo_url, output_file):
                     sample[f"{field}_parsed_curie"] = parsed["curie"]
                     if parsed["curie"] and parsed["curie"] in label_cache:
                         sample[f"{field}_canonical_label"] = label_cache[parsed["curie"]]
-                    sample[f"{field}_obsolete"] = (parsed["curie"] in obsolete_terms_list)
+                    sample[f"{field}_obsolete"] = (parsed["curie"] in obsolete_terms_set)
                     # Check if parsed label matches canonical label
                     sample[f"{field}_match"] = (parsed["label"] == sample.get(f"{field}_canonical_label"))
 
