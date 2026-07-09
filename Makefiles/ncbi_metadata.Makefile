@@ -39,7 +39,7 @@ biosamples-flattened: biosamples_flattened
 aggregate-biosample-package-usage: aggregate_biosample_package_usage
 
 # Backward-compatible alias for naming consistency.
-load_acceptable_sized_leaf_bioprojects_into_mongodb: load-acceptable-sized-leaf-bioprojects-into-mongodb ;
+load-acceptable-sized-leaf-bioprojects-into-mongodb: load_acceptable_sized_leaf_bioprojects_into_mongodb
 
 purge:
 	rm -rf $(DOWNLOADS_DIR)/biosample_set.xml*
