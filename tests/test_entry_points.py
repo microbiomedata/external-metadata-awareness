@@ -19,7 +19,7 @@ from pathlib import Path
 
 try:
     import tomllib  # Python 3.11+
-except ModuleNotFoundError:  # Python 3.10
+except ModuleNotFoundError:  # Python < 3.11
     import tomli as tomllib
 
 import click
