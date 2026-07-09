@@ -1283,14 +1283,14 @@ ssh = ["bcrypt (>=3.1.5)"]
 
 [[package]]
 name = "curies"
-version = "0.13.13"
+version = "0.14.1"
 description = "Idiomatic conversion between URIs and compact URIs (CURIEs)"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "curies-0.13.13-py3-none-any.whl", hash = "sha256:43051140cd1f089a832f139633b14d473c09fa48a2f36e1b9b94c1270812267e"},
-    {file = "curies-0.13.13.tar.gz", hash = "sha256:aac8b3175680315566395ac754f6fa0878112d0fa6e8997cb65d9af91c66b778"},
+    {file = "curies-0.14.1-py3-none-any.whl", hash = "sha256:04de52080536881108b52ca864e8d4096140a7c3f5f556d8c2836c8ff99adc8f"},
+    {file = "curies-0.14.1.tar.gz", hash = "sha256:543942892d1da01ba59e63720d223d504d97908d5c2c83458f33af54b87c92b3"},
 ]
 
 [package.dependencies]
@@ -1346,14 +1346,14 @@ langdetect = ["langdetect (>=1.0.0)"]
 
 [[package]]
 name = "db-dtypes"
-version = "1.7.0"
+version = "1.7.1"
 description = "Pandas Data Types for SQL systems (BigQuery, Spanner)"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "db_dtypes-1.7.0-py3-none-any.whl", hash = "sha256:c80a1d9bc7dda3cc63638a3f2cf4ec27af50b809ec2d92b8a94cb9d8438cdc76"},
-    {file = "db_dtypes-1.7.0.tar.gz", hash = "sha256:30951c7cda9e5455e43636eebe041c9a637ff28bc49a95d82cb68759d7625467"},
+    {file = "db_dtypes-1.7.1-py3-none-any.whl", hash = "sha256:450b94cd010cfa6d4d13cca2593009eba4fbe15516084c332cde1a47bbce0625"},
+    {file = "db_dtypes-1.7.1.tar.gz", hash = "sha256:75adf3bdf3174a6474ea4162d9a345ea0b3102ec4fd603e69ec26b6e8a99145a"},
 ]
 
 [package.dependencies]
@@ -2156,18 +2156,18 @@ tool = ["click (>=6.0.0)"]
 
 [[package]]
 name = "google-cloud-bigquery"
-version = "3.42.1"
+version = "3.42.2"
 description = "Google BigQuery API client library"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "google_cloud_bigquery-3.42.1-py3-none-any.whl", hash = "sha256:159143c1b7248858f35549c09efea5d031c2883145623419ea7c505a50c0899a"},
-    {file = "google_cloud_bigquery-3.42.1.tar.gz", hash = "sha256:3c6878f424fc2b21f0bb414ca7262abd008465575a7b7c44c552105278a18914"},
+    {file = "google_cloud_bigquery-3.42.2-py3-none-any.whl", hash = "sha256:41658c19e8ed5b83307011b4e55aca3b1f72052545a22788f1d637984615173f"},
+    {file = "google_cloud_bigquery-3.42.2.tar.gz", hash = "sha256:08d4b264e5ee4790f719724c76b538f204b7190999328a2f1a6a95eaab74ca39"},
 ]
 
 [package.dependencies]
-google-api-core = {version = ">=2.11.1,<3.0.0", extras = ["grpc"]}
+google-api-core = {version = ">=2.25.0,<3.0.0", extras = ["grpc"]}
 google-auth = {version = ">=2.14.1,<3.0.0", extras = ["pyopenssl"]}
 google-cloud-core = ">=2.4.1,<3.0.0"
 google-resumable-media = ">=2.0.0,<3.0.0"
@@ -6598,14 +6598,14 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<8)"]
 
 [[package]]
 name = "requests-cache"
-version = "1.3.2"
+version = "1.3.3"
 description = "A persistent cache for python requests"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "requests_cache-1.3.2-py3-none-any.whl", hash = "sha256:c52666c76b08daa94d05a99327dd24afc46f405abc044e8c2267b540f90673d0"},
-    {file = "requests_cache-1.3.2.tar.gz", hash = "sha256:bdc3680931f98a1dea509d339ea6b45cea526945b47b250ce63ffd2744ee0b14"},
+    {file = "requests_cache-1.3.3-py3-none-any.whl", hash = "sha256:c8df20ff874ebfc026959e3874e6c12bd6724934cdb10925915908453d4b17e4"},
+    {file = "requests_cache-1.3.3.tar.gz", hash = "sha256:79b72d5ac5143992d1836ad78f4d8e65666061dd44e220548caab3723089826b"},
 ]
 
 [package.dependencies]
@@ -7782,14 +7782,14 @@ files = [
 
 [[package]]
 name = "tqdm"
-version = "4.68.3"
+version = "4.68.4"
 description = "Fast, Extensible Progress Meter"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "tqdm-4.68.3-py3-none-any.whl", hash = "sha256:39832cc2def2789a6f29df83f172db7416cea70052c0907a57801c5f2fdccb03"},
-    {file = "tqdm-4.68.3.tar.gz", hash = "sha256:00dfa48452b6b6cfae3dd9885636c23d3422d1ec97c66d96818cbd5e0821d482"},
+    {file = "tqdm-4.68.4-py3-none-any.whl", hash = "sha256:5168118b2368f48c561afda8020fd79195b1bdb0bdf8086b88442c267a315dc2"},
+    {file = "tqdm-4.68.4.tar.gz", hash = "sha256:19829c9673638f2a0b8617da4cdcb927e831cd88bcfcb6e78d42a4d1af131520"},
 ]
 
 [package.dependencies]
@@ -8346,4 +8346,4 @@ propcache = ">=0.2.1"
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "43a3b71e511b847e061693b3997d82044926429b6c8f99faa1d7a0d19b7b3239"
+content-hash = "18896af1fc68ee732ae555ef3dcb9c092c20eabab460e61c722868ad39f20f78"
