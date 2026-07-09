@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 import re
 import os
+import uuid
 import csv
 import json
 import click
 import requests
-from datetime import datetime, timezone
+from datetime import datetime
 from dotenv import dotenv_values
 from tqdm import tqdm
 from pymongo import MongoClient
@@ -366,7 +367,7 @@ def process_submissions(mongo_url, output_file):
 
             # Insert flattened samples into the target collection
             flattened_collection_name = 'flattened_submission_biosamples'
-            unique_suffix = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S%f")
+            unique_suffix = uuid.uuid4().hex[:12]
             temp_collection_name = f"{flattened_collection_name}_tmp_{unique_suffix}_{os.getpid()}"
             temp_collection = submissions_db[temp_collection_name]
             temp_collection.delete_many({})
