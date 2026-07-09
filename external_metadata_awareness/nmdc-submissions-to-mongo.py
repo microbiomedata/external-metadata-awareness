@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
+import os
 import re
 import os
 import csv
 import json
 import click
 import requests
-from datetime import datetime
+from datetime import datetime, timezone
 from dotenv import dotenv_values
 from tqdm import tqdm
 from pymongo import MongoClient
@@ -303,26 +304,29 @@ def process_submissions(mongo_url, output_file):
             if 'metadata_submission' in doc and 'sampleData' in doc['metadata_submission']:
                 sample_data = doc['metadata_submission']['sampleData']
                 for key, sample_list in tqdm(sample_data.items(), total=len(sample_data),
-                                             desc=f"Submission {doc.get('id')} sampleData processing", disable=True):
+                                             desc=f"Submission {doc.get('id')} sampleData processing",
+                                             disable=True):
                     if key in skip_templates:
                         continue
                     if isinstance(sample_list, list):
-                        for sample in tqdm(sample_list, desc=f"Processing samples in '{key}'", leave=False, disable=True):
+                        for sample in tqdm(sample_list, desc=f"Processing samples in '{key}'", leave=False,
+                                           disable=True):
+                            if not isinstance(sample, dict):
+                                continue
                             for k, v in list(sample.items()):
                                 if k in ctv_using_slots:
                                     parsed = parse_label_curie(v)
                                     if parsed:
                                         sample[f"{k}_id"] = parsed['curie']
                                         sample[f"{k}_claimed_label"] = parsed['label']
-                            if isinstance(sample, dict):
-                                sample_with_id = sample.copy()
-                                sample_with_id['sampleData'] = key
-                                sample_with_id['submission_id'] = doc.get('id')
-                                sample_with_id['created'] = doc.get('created')
-                                sample_with_id['date_last_modified'] = doc.get('date_last_modified')
-                                sample_with_id['status'] = doc.get('status')
-                                flattened_sample = flatten_sample(sample_with_id)
-                                submission_biosamples.append(flattened_sample)
+                            sample_with_id = sample.copy()
+                            sample_with_id['sampleData'] = key
+                            sample_with_id['submission_id'] = doc.get('id')
+                            sample_with_id['created'] = doc.get('created')
+                            sample_with_id['date_last_modified'] = doc.get('date_last_modified')
+                            sample_with_id['status'] = doc.get('status')
+                            flattened_sample = flatten_sample(sample_with_id)
+                            submission_biosamples.append(flattened_sample)
 
         # Additional label checks for non-environmental fields
         for sample in tqdm(submission_biosamples, desc="Post-processing biosamples"):
@@ -361,14 +365,20 @@ def process_submissions(mongo_url, output_file):
         # Insert flattened samples into the target collection
         flattened_collection_name = 'flattened_submission_biosamples'
         if submission_biosamples:
-            unique_suffix = datetime.utcnow().strftime("%Y%m%d%H%M%S%f")
+            unique_suffix = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S%f")
             temp_collection_name = f"{flattened_collection_name}_tmp_{unique_suffix}_{os.getpid()}"
             temp_collection = submissions_db[temp_collection_name]
-            temp_collection.delete_many({})
-            insert_result = temp_collection.insert_many(submission_biosamples)
-            temp_collection.rename(flattened_collection_name, dropTarget=True)
-            click.echo(
-                f"Inserted {len(insert_result.inserted_ids)} documents into 'flattened_submission_biosamples' collection.")
+            renamed = False
+            try:
+                temp_collection.delete_many({})
+                insert_result = temp_collection.insert_many(submission_biosamples)
+                temp_collection.rename(flattened_collection_name, dropTarget=True)
+                renamed = True
+                click.echo(
+                    f"Inserted {len(insert_result.inserted_ids)} documents into 'flattened_submission_biosamples' collection.")
+            finally:
+                if not renamed:
+                    submissions_db.drop_collection(temp_collection_name)
 
     return True
 
@@ -383,9 +393,9 @@ def create_biosample_rows(mongo_url):
     and a list of field/value pairs from the row.
     Inserts the resulting documents into the collection 'submission_biosample_rows'.
     """
-    # Use provided database or default to 'misc_metadata'
-    db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
     with MongoClient(mongo_url) as client:
+        # Use provided database or default to 'misc_metadata'
+        db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
         db = client[db_name]
         submissions_collection = db['nmdc_submissions']
         biosample_rows = []
@@ -422,9 +432,9 @@ def run_aggregation_pipeline(mongo_url):
     The pipeline unwinds the 'row_data' array, groups by each field in the row_data,
     projects the field and count, and writes the result to 'submission_biosample_slot_counts'.
     """
-    # Use provided database or default to 'misc_metadata'
-    db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
     with MongoClient(mongo_url) as client:
+        # Use provided database or default to 'misc_metadata'
+        db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
         db = client[db_name]
         pipeline = [
             {"$unwind": "$row_data"},
@@ -441,7 +451,7 @@ def run_aggregation_pipeline(mongo_url):
         ]
         # Execute the aggregation pipeline.
         list(db.submission_biosample_rows.aggregate(pipeline))
-    click.echo("Aggregation pipeline executed; output written to collection 'submission_biosample_slot_counts'.")
+        click.echo("Aggregation pipeline executed; output written to collection 'submission_biosample_slot_counts'.")
 
     return True
 
@@ -513,8 +523,8 @@ def check_value_set_compliance(mongo_url):
     discovered = sorted(set(s for _, s in enum_lookup.keys()))
     click.echo(f"Found enums for extensions: {', '.join(discovered)}")
 
-    db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
     with MongoClient(mongo_url) as client:
+        db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
         db = client[db_name]
         collection = db['flattened_submission_biosamples']
 
