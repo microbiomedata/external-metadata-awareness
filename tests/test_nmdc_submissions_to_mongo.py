@@ -325,8 +325,10 @@ def test_ctv_slot_parsing_non_string_and_matching_string(monkeypatch, tmp_path):
     inserted = temp_col.inserted
     assert len(inserted) == 4
 
-    # Non-string values (None, [], 123) must not raise and must not add parsed keys
-    for i in range(3):
+    # Non-string values (None, [], 123) must not raise and must not add parsed keys;
+    # the original value must still be present in the inserted document.
+    for i, expected in enumerate([None, '', 123]):
+        assert inserted[i].get('analysis_type') == expected  # [] flattens to ''
         assert 'analysis_type_id' not in inserted[i]
         assert 'analysis_type_claimed_label' not in inserted[i]
 
