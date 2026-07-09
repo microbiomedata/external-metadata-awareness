@@ -244,7 +244,11 @@ def connect_mongo(mongo_uri: str, env_file: str | None) -> MongoClient:
         if env_file and Path(env_file).exists():
             config = dotenv_values(env_file)
         elif env_file:
-            warnings.warn(f"env file not found: {env_file}")
+            warnings.warn(
+                f"env file not found: {env_file}",
+                UserWarning,
+                stacklevel=2,
+            )
         for user_key, pass_key in MONGO_CRED_KEY_PAIRS:
             user, password = config.get(user_key), config.get(pass_key)
             if user and password:
