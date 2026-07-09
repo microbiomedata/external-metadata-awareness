@@ -19,16 +19,25 @@ WGET=wget
 
 # always "biosamples_" not "biosample_"
 
-.PHONY: load-biosamples-into-mongo \
+.PHONY: load_biosamples_into_mongo \
+        load-biosamples-into-mongo \
         purge \
+        load-acceptable-sized-leaf-bioprojects-into-mongodb \
         load_acceptable_sized_leaf_bioprojects_into_mongodb \
         flatten_bioprojects \
         flatten_biosamples_ids \
         flatten_biosamples_links \
         flatten_biosample_attributes \
-        flatten_biosample_packages \
+        biosamples_flattened \
         biosamples-flattened \
+        aggregate_biosample_package_usage \
         aggregate-biosample-package-usage
+
+# Backward-compatible aliases for legacy hyphenated target names.
+load-biosamples-into-mongo: load_biosamples_into_mongo
+load-acceptable-sized-leaf-bioprojects-into-mongodb: load_acceptable_sized_leaf_bioprojects_into_mongodb
+biosamples-flattened: biosamples_flattened
+aggregate-biosample-package-usage: aggregate_biosample_package_usage
 
 purge:
 	rm -rf $(DOWNLOADS_DIR)/biosample_set.xml*
@@ -71,12 +80,14 @@ else
 LAST_ID_PREREQS := $(LAST_BIOSAMPLE_ID_FILE)
 endif
 
-# These rules generate the ID file, if possible
+# These rules generate the ID file, if possible.
 $(LOCAL_DIR)/biosample-last-id-line.txt: $(LOCAL_DIR)/biosample_set.xml
 	@echo "Building $@"
-	@# Read from the end (fast: grep -m 1 stops at the last match and the
-	@# reverser exits). Use whichever reverser is preinstalled: tac on Linux,
-	@# tail -r on macOS/BSD. Avoids a full forward scan of the 154 GB file.
+	@# Read from the end (fast: grep -m 1 stops at the first match in the
+	@# reversed stream, which corresponds to the last match in the original;
+	@# then the reverser exits). Use whichever reverser is preinstalled:
+	@# tac on Linux, tail -r on macOS/BSD. Avoids a full forward scan of the
+	@# 154 GB file.
 	@if command -v tac >/dev/null 2>&1; then reverse="tac"; \
 	elif tail -r /dev/null >/dev/null 2>&1; then reverse="tail -r"; \
 	else echo "Error: need 'tac' (Linux/coreutils) or 'tail -r' (macOS/BSD) to read $< from the end; install coreutils" >&2; exit 1; fi; \
@@ -86,7 +97,7 @@ $(LOCAL_DIR)/biosample-last-id-val.txt: $(LOCAL_DIR)/biosample-last-id-line.txt
 	@echo "Building $@"
 	sed -n 's/.*id="\([0-9]*\)".*/\1/p' $< > $@
 
-load-biosamples-into-mongo: $(LOCAL_DIR)/biosample_set.xml $(LAST_ID_PREREQS)
+load_biosamples_into_mongo: $(LOCAL_DIR)/biosample_set.xml $(LAST_ID_PREREQS)
 	@date
 	$(eval LAST_BIOSAMPLE_ID_VAL := $(if $(LAST_BIOSAMPLE_ID),$(LAST_BIOSAMPLE_ID),$(shell cat $(LAST_BIOSAMPLE_ID_FILE) 2>/dev/null)))
 	@if [ -z "$(LAST_BIOSAMPLE_ID_VAL)" ]; then \
@@ -110,8 +121,8 @@ load-biosamples-into-mongo: $(LOCAL_DIR)/biosample_set.xml $(LAST_ID_PREREQS)
 	@date
 
 # sample usages:
-# make load-biosamples-into-mongo MAX_ELEMENTS=100000
-# make load-biosamples-into-mongo \
+# make load_biosamples_into_mongo MAX_ELEMENTS=100000
+# make load_biosamples_into_mongo \
 #    MAX_ELEMENTS=100000 \
 #    MONGO_URI="mongodb://localhost:27778/ncbi_metadata?authMechanism=SCRAM-SHA-256&authSource=admin&directConnection=true" \
 #    ENV_FILE=local/.env.mongo-ncbi-loadbalancer.mam
@@ -142,14 +153,14 @@ load_acceptable_sized_leaf_bioprojects_into_mongodb: $(DOWNLOADS_DIR)/bioproject
 	@date
 	@echo "Using MONGO_URI=$(MONGO_URI)"
 	$(RUN) load-bioprojects-into-mongodb \
-       --clear-collections \
-       --oversize-dir $(LOCAL_DIR)/oversize-bioprojects \
-       --project-collection bioprojects \
-       --submission-collection bioprojects_submissions \
-       --mongo-uri "$(MONGO_URI)" \
-       --verbose \
-       --xml-file $< \
-       $(ENV_FILE_OPTION)
+		--clear-collections \
+		--oversize-dir $(LOCAL_DIR)/oversize-bioprojects \
+		--project-collection bioprojects \
+		--submission-collection bioprojects_submissions \
+		--mongo-uri "$(MONGO_URI)" \
+		--verbose \
+		--xml-file $< \
+		$(ENV_FILE_OPTION)
 
 $(LOCAL_DIR)/bioproject_xpath_counts.json: $(DOWNLOADS_DIR)/bioproject.xml
 	# --stop-after 999999999
@@ -201,7 +212,7 @@ flatten_biosample_attributes:
 # measurement-discovery pipeline and the env-triads pipeline. Owning the
 # target here (rather than in env_triads.Makefile) lets `make -f` invocations
 # of NCBI-side aggregators resolve the prereq.
-biosamples-flattened:
+biosamples_flattened:
 	@date
 	@echo "Using MONGO_URI=$(MONGO_URI)"
 	@echo "Flattening biosamples collection into biosamples_flattened..."
@@ -219,7 +230,7 @@ biosamples-flattened:
 		--command 'db.biosamples_flattened.createIndex({ env_broad_scale: 1, env_local_scale: 1, env_medium: 1 })'
 	@date
 
-aggregate-biosample-package-usage: biosamples-flattened
+aggregate_biosample_package_usage: biosamples_flattened
 	@date
 	@echo "Aggregating biosample package usage counts..."
 	$(RUN) mongo-js-executor \
@@ -242,4 +253,3 @@ $(LOCAL_DIR)/collection_flatness.tsv:
 		--output-file $@ \
 		--verbose
 	@date
-
