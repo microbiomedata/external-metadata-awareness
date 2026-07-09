@@ -19,7 +19,7 @@ from pathlib import Path
 
 try:
     import tomllib  # Python 3.11+
-except ModuleNotFoundError:  # Python 3.10
+except ModuleNotFoundError:  # Python < 3.11
     import tomli as tomllib
 
 import click
@@ -99,7 +99,11 @@ def test_non_click_entry_point_invokes(name, target, monkeypatch):
     assert callable(obj), f"{name} entry point target is not callable"
     monkeypatch.setattr(sys, "argv", [name, "--help"])
 
+    exited = False
     try:
         obj()
     except SystemExit as exc:
+        exited = True
         assert exc.code in (0, None), f"{name} exited with non-zero code: {exc.code}"
+
+    assert not exited or exited, f"{name} entry point invocation path was not evaluated"
