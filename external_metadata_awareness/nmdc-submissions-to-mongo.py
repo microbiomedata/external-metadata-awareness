@@ -370,11 +370,15 @@ def process_submissions(mongo_url, output_file):
             unique_suffix = uuid.uuid4().hex[:12]
             temp_collection_name = f"{flattened_collection_name}_tmp_{unique_suffix}_{os.getpid()}"
             temp_collection = submissions_db[temp_collection_name]
-            temp_collection.delete_many({})
-            insert_result = temp_collection.insert_many(submission_biosamples)
-            temp_collection.rename(flattened_collection_name, dropTarget=True)
-            click.echo(
-                f"Inserted {len(insert_result.inserted_ids)} documents into 'flattened_submission_biosamples' collection.")
+            try:
+                temp_collection.delete_many({})
+                insert_result = temp_collection.insert_many(submission_biosamples)
+                temp_collection.rename(flattened_collection_name, dropTarget=True)
+                click.echo(
+                    f"Inserted {len(insert_result.inserted_ids)} documents into 'flattened_submission_biosamples' collection.")
+            finally:
+                if temp_collection_name in submissions_db.list_collection_names():
+                    submissions_db.drop_collection(temp_collection_name)
 
     return True
 
