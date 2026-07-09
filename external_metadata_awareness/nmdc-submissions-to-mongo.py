@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os
 import re
+import os
 import csv
 import json
 import click
@@ -129,7 +130,7 @@ def fetch_nmdc_submissions(mongo_url, env_path, base_url="https://data.microbiom
             else:
                 click.echo(f"Failed to fetch submissions: {response.status_code}")
                 click.echo(response.text)
-                break
+                return False
 
     return True
 
