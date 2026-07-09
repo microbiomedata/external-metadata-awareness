@@ -100,10 +100,14 @@ def test_non_click_entry_point_invokes(name, target, monkeypatch):
     monkeypatch.setattr(sys, "argv", [name, "--help"])
 
     exited = False
+    completed_without_exit = False
     try:
         obj()
+        completed_without_exit = True
     except SystemExit as exc:
         exited = True
         assert exc.code in (0, None), f"{name} exited with non-zero code: {exc.code}"
 
-    assert not exited or exited, f"{name} entry point invocation path was not evaluated"
+    assert (
+        exited or completed_without_exit
+    ), f"{name} entry point invocation path was not evaluated"
