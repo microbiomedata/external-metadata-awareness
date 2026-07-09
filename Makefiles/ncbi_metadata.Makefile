@@ -33,10 +33,10 @@ WGET=wget
         aggregate_biosample_package_usage \
         aggregate-biosample-package-usage
 
-# Backward-compatible aliases for legacy hyphenated target names.
-load-biosamples-into-mongo: load_biosamples_into_mongo
-biosamples-flattened: biosamples_flattened
-aggregate-biosample-package-usage: aggregate_biosample_package_usage
+# Backward-compatible aliases for underscore target names.
+load_biosamples_into_mongo: load-biosamples-into-mongo
+biosamples_flattened: biosamples-flattened
+aggregate_biosample_package_usage: aggregate-biosample-package-usage
 
 # Backward-compatible alias for naming consistency.
 load-acceptable-sized-leaf-bioprojects-into-mongodb: load_acceptable_sized_leaf_bioprojects_into_mongodb
