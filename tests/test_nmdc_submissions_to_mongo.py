@@ -3,6 +3,7 @@ import sys
 import types
 from datetime import datetime as real_datetime, timezone
 from pathlib import Path
+import pytest
 
 
 def _load_script_module(monkeypatch):
@@ -218,12 +219,8 @@ def test_process_submissions_drops_temp_collection_on_rename_failure(monkeypatch
     monkeypatch.setattr(module.os, 'getpid', lambda: 4321)
     monkeypatch.setattr(module, 'tqdm', lambda iterable, **_kwargs: iterable)
 
-    try:
+    with pytest.raises(RuntimeError, match='rename failed'):
         module.process_submissions('mongodb://example/misc_metadata', str(tmp_path / 'out.tsv'))
-    except RuntimeError as err:
-        assert str(err) == 'rename failed'
-    else:
-        raise AssertionError('expected rename failure')
 
     assert client.db.dropped == ['flattened_submission_biosamples_tmp_20240102030405006789_4321']
 
@@ -364,9 +361,14 @@ def test_additional_functions_close_mongo_client(monkeypatch):
             self.nmdc_submissions = FakeCursorCollection()
             self.submission_biosample_rows = FakeCursorCollection()
             self.flattened_submission_biosamples = FakeCursorCollection()
+            self._dynamic_collections = {}
 
         def __getitem__(self, key):
-            return getattr(self, key)
+            if hasattr(self, key):
+                return getattr(self, key)
+            if key not in self._dynamic_collections:
+                self._dynamic_collections[key] = FakeCursorCollection()
+            return self._dynamic_collections[key]
 
     class FakeMongoClient:
         entered = 0
