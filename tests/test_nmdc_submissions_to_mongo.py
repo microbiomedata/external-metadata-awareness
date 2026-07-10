@@ -364,9 +364,14 @@ def test_additional_functions_close_mongo_client(monkeypatch):
             self.nmdc_submissions = FakeCursorCollection()
             self.submission_biosample_rows = FakeCursorCollection()
             self.flattened_submission_biosamples = FakeCursorCollection()
+            self._dynamic_collections = {}
 
         def __getitem__(self, key):
-            return getattr(self, key)
+            if hasattr(self, key):
+                return getattr(self, key)
+            if key not in self._dynamic_collections:
+                self._dynamic_collections[key] = FakeCursorCollection()
+            return self._dynamic_collections[key]
 
     class FakeMongoClient:
         entered = 0
