@@ -36,6 +36,33 @@ def resolve_env_config(env_path, **cli_overrides):
     }
 
 
+# Keys index_information() reports that create_index does not accept back.
+_INDEX_METADATA_KEYS = {"key", "v", "ns"}
+
+
+def _secondary_index_specs(db, collection_name):
+    """Return the non-_id indexes on a collection, if it exists.
+
+    Shaped for _restore_secondary_indexes. Returns an empty list when the
+    collection is absent, which is the normal case on a first run.
+    """
+    if collection_name not in db.list_collection_names():
+        return []
+    specs = []
+    for name, spec in db[collection_name].index_information().items():
+        if name == "_id_":
+            continue
+        options = {k: v for k, v in spec.items() if k not in _INDEX_METADATA_KEYS}
+        specs.append((name, spec["key"], options))
+    return specs
+
+
+def _restore_secondary_indexes(collection, specs):
+    """Recreate indexes captured by _secondary_index_specs."""
+    for name, keys, options in specs:
+        collection.create_index(keys, name=name, **options)
+
+
 # =============================================================================
 # FETCH NMDC SUBMISSIONS FROM THE API
 # =============================================================================
@@ -96,7 +123,7 @@ def fetch_nmdc_submissions(mongo_url, env_path, base_url="https://data.microbiom
         db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
         db = client[db_name]
         collection = db['nmdc_submissions']
-        inserted_this_run = 0
+        fetched_this_run = 0
 
         # Paginate through API results
         while True:
@@ -112,20 +139,31 @@ def fetch_nmdc_submissions(mongo_url, env_path, base_url="https://data.microbiom
                 # Use upsert to avoid duplicate key failures when pagination overlaps.
                 for doc in results:
                     doc_id = doc.get('_id')
+                    api_id = doc.get('id')
                     if doc_id is not None:
                         collection.replace_one({'_id': doc_id}, doc, upsert=True)
+                    elif api_id is not None:
+                        # The submissions API returns 'id', not Mongo's '_id',
+                        # so this is the branch actually taken. Keying on 'id'
+                        # is what makes the upsert above do anything; without
+                        # it every document took the insert_one fallback and
+                        # overlapping pages duplicated records.
+                        collection.replace_one({'id': api_id}, doc, upsert=True)
                     else:
                         # Fallback when no stable identifier is present.
                         collection.insert_one(doc)
-                inserted_this_run += len(results)
+                fetched_this_run += len(results)
 
-                # Check if we've fetched all records based on the reported total count
-                total_count = data.get('count')
-                if total_count and inserted_this_run >= total_count:
-                    break
-
-                # Move to the next page
+                # Advance the page before deciding whether to stop, and compare
+                # the offset rather than a running document count. Counting
+                # documents ends pagination early when pages overlap, because
+                # the same record is counted twice and the total is reached
+                # before every page has been requested.
                 params['offset'] += params['limit']
+
+                total_count = data.get('count')
+                if total_count and params['offset'] >= total_count:
+                    break
             else:
                 click.echo(f"Failed to fetch submissions: {response.status_code}")
                 click.echo(response.text)
@@ -368,11 +406,25 @@ def process_submissions(mongo_url, output_file):
             temp_collection_name = f"{flattened_collection_name}_tmp_{unique_suffix}_{os.getpid()}"
             temp_collection = submissions_db[temp_collection_name]
             renamed = False
+
+            # rename(dropTarget=True) replaces the target wholesale, so any
+            # secondary indexes on it are lost. Record them first and put them
+            # back afterwards.
+            preserved_indexes = _secondary_index_specs(
+                submissions_db, flattened_collection_name)
+
             try:
-                temp_collection.delete_many({})
+                # No pre-clean: temp_collection_name carries a microsecond UTC
+                # timestamp and the pid, so the collection is new on every run
+                # and has neither documents nor indexes to clear. The previous
+                # delete_many({}) implied otherwise while not clearing indexes,
+                # which is what would actually have followed the rename across.
                 insert_result = temp_collection.insert_many(submission_biosamples)
                 temp_collection.rename(flattened_collection_name, dropTarget=True)
                 renamed = True
+                if preserved_indexes:
+                    _restore_secondary_indexes(
+                        submissions_db[flattened_collection_name], preserved_indexes)
                 click.echo(
                     f"Inserted {len(insert_result.inserted_ids)} documents into 'flattened_submission_biosamples' collection.")
             finally:

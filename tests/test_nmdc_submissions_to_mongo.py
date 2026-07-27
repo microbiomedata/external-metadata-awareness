@@ -100,6 +100,9 @@ def test_process_submissions_uses_unique_temp_collection_name(monkeypatch, tmp_p
             self.temp_collection_name = key
             return self.temp_collection
 
+        def list_collection_names(self):
+            return []
+
     class FakeMongoClient:
         def __init__(self, _url):
             self.db = FakeDB()
@@ -191,6 +194,9 @@ def test_process_submissions_drops_temp_collection_on_rename_failure(monkeypatch
             if key == 'nmdc_submissions':
                 return self.submissions
             return self.temp_collection
+
+        def list_collection_names(self):
+            return []
 
         def drop_collection(self, name):
             self.dropped.append(name)
@@ -292,6 +298,9 @@ def test_ctv_slot_parsing_non_string_and_matching_string(monkeypatch, tmp_path):
             if key == 'nmdc_submissions':
                 return self.submissions
             return temp_col
+
+        def list_collection_names(self):
+            return []
 
     class FakeMongoClient:
         def __init__(self, _url):
@@ -398,3 +407,149 @@ def test_additional_functions_close_mongo_client(monkeypatch):
     assert module.check_value_set_compliance('mongodb://example/misc_metadata') is True
     assert FakeMongoClient.entered == 3
     assert FakeMongoClient.exited == 3
+
+
+class _FakeCollection:
+    """Records upsert filters and inserts so paging behavior can be asserted."""
+
+    def __init__(self):
+        self.replace_filters = []
+        self.inserted = []
+
+    def replace_one(self, flt, doc, upsert=False):
+        self.replace_filters.append(flt)
+
+    def insert_one(self, doc):
+        self.inserted.append(doc)
+
+
+def _run_fetch(monkeypatch, module, pages, count):
+    """Drive fetch_nmdc_submissions against canned API pages."""
+    collection = _FakeCollection()
+
+    class FakeDB:
+        def __getitem__(self, _name):
+            return collection
+
+    class FakeClient:
+        def __init__(self, *_a, **_k):
+            pass
+
+        def __getitem__(self, _name):
+            return FakeDB()
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_exc):
+            return False
+
+        def close(self):
+            pass
+
+    requested_offsets = []
+
+    def fake_get(url, headers=None, params=None):
+        requested_offsets.append(params['offset'])
+        index = len(requested_offsets) - 1
+        body = pages[index] if index < len(pages) else []
+        return types.SimpleNamespace(
+            status_code=200,
+            json=lambda: {'results': body, 'count': count},
+        )
+
+    def fake_post(url, data=None, headers=None):
+        return types.SimpleNamespace(
+            status_code=200,
+            json=lambda: {'access_token': 'token'},
+        )
+
+    monkeypatch.setattr(module, 'MongoClient', FakeClient, raising=False)
+    monkeypatch.setattr(module, 'dotenv_values', lambda _p: {
+        'NMDC_DATA_SUBMISSION_REFRESH_TOKEN': 'refresh'})
+    monkeypatch.setattr(module.requests, 'get', fake_get)
+    monkeypatch.setattr(module.requests, 'post', fake_post)
+    monkeypatch.setattr(module, 'parse_uri', lambda _u: {'database': 'misc_metadata'})
+    module.fetch_nmdc_submissions('mongodb://localhost:27017/testdb', None)
+    return collection, requested_offsets
+
+
+def test_submissions_are_upserted_on_api_id(monkeypatch):
+    """The API returns 'id', not '_id', so the upsert must key on 'id'.
+
+    Keying only on '_id' meant every document took insert_one, so re-running
+    duplicated every submission.
+    """
+    module = _load_script_module(monkeypatch)
+    collection, _ = _run_fetch(
+        monkeypatch, module, pages=[[{'id': 'sub-1'}, {'id': 'sub-2'}]], count=2)
+
+    assert collection.replace_filters == [{'id': 'sub-1'}, {'id': 'sub-2'}]
+    assert collection.inserted == []
+
+
+def test_pagination_terminates_on_offset_not_document_count(monkeypatch):
+    """Stop when the offset has covered the reported total, not when a running
+    document tally reaches it.
+
+    The offset advances by the requested limit, so a tally of returned
+    documents only diverges from it when the server returns a page larger than
+    the limit it was asked for. When that happens the tally reaches the total
+    while whole offset ranges are still unrequested, and those records are
+    never fetched.
+    """
+    module = _load_script_module(monkeypatch)
+    oversized = [{'id': f'doc-{i}'} for i in range(60)]  # limit is 25
+    _, offsets = _run_fetch(
+        monkeypatch, module, pages=[oversized, oversized, oversized, oversized], count=100)
+
+    assert offsets == [0, 25, 50, 75], (
+        f"offset should walk the full range up to count, got {offsets}")
+
+
+def test_secondary_index_specs_skips_missing_collection(monkeypatch):
+    module = _load_script_module(monkeypatch)
+
+    class FakeDB:
+        def list_collection_names(self):
+            return []
+
+    assert module._secondary_index_specs(FakeDB(), 'absent') == []
+
+
+def test_secondary_index_specs_drops_id_index_and_metadata_keys(monkeypatch):
+    module = _load_script_module(monkeypatch)
+
+    class FakeColl:
+        def index_information(self):
+            return {
+                '_id_': {'key': [('_id', 1)], 'v': 2},
+                'x_idx': {'key': [('x', 1)], 'v': 2},
+                'y_uniq': {'key': [('y', -1)], 'v': 2, 'unique': True},
+            }
+
+    class FakeDB:
+        def list_collection_names(self):
+            return ['target']
+
+        def __getitem__(self, _name):
+            return FakeColl()
+
+    specs = sorted(module._secondary_index_specs(FakeDB(), 'target'))
+    assert specs == [
+        ('x_idx', [('x', 1)], {}),
+        ('y_uniq', [('y', -1)], {'unique': True}),
+    ]
+
+
+def test_restore_secondary_indexes_replays_options(monkeypatch):
+    module = _load_script_module(monkeypatch)
+    calls = []
+
+    class FakeColl:
+        def create_index(self, keys, **kwargs):
+            calls.append((keys, kwargs))
+
+    module._restore_secondary_indexes(
+        FakeColl(), [('y_uniq', [('y', -1)], {'unique': True})])
+    assert calls == [([('y', -1)], {'name': 'y_uniq', 'unique': True})]
