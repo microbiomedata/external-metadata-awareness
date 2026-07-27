@@ -1,0 +1,130 @@
+"""Unit tests for MongoDB connection URI resolution.
+
+get_mongo_client(dry_run=True) builds the connection URI without opening a
+connection, so the credential-injection logic can be tested without a server.
+These guard two silent-failure bugs: credentials supplied via --env-file not
+reaching the URI at all, and the dry-run path returning nothing usable.
+"""
+
+import subprocess
+import sys
+import types
+
+import pytest
+
+from external_metadata_awareness import mongodb_connection
+from external_metadata_awareness.mongodb_connection import get_mongo_client
+
+_URI = "mongodb://localhost:27017/testdb"
+
+
+@pytest.fixture
+def env_file(tmp_path, monkeypatch):
+    """A .env file with credentials, isolated from any ambient MONGO_* vars."""
+    for var in ("MONGO_USER", "MONGO_PASSWORD", "MONGO_AUTH_SOURCE"):
+        monkeypatch.delenv(var, raising=False)
+    path = tmp_path / ".env"
+    path.write_text("MONGO_USER=testuser\nMONGO_PASSWORD=testpass\n")
+    return str(path)
+
+
+def test_dry_run_returns_connection_info_without_connecting():
+    info = get_mongo_client(mongo_uri=_URI, dry_run=True)
+    assert info["uri"] == _URI
+    assert info["has_credentials"] is False
+
+
+def test_env_file_credentials_are_injected_into_uri(env_file):
+    """--env-file credentials must reach the URI; mongosh is handed this value."""
+    info = get_mongo_client(mongo_uri=_URI, env_file=env_file, dry_run=True)
+    assert info["has_credentials"] is True
+    assert "testuser" in info["uri"]
+    assert "/testdb" in info["uri"]
+
+
+def test_env_file_credentials_add_auth_source(env_file):
+    """Without authSource, auth is attempted against the URI's own database."""
+    info = get_mongo_client(mongo_uri=_URI, env_file=env_file, dry_run=True)
+    assert "authSource=admin" in info["uri"]
+
+
+def test_existing_uri_credentials_are_replaced(env_file):
+    info = get_mongo_client(
+        mongo_uri="mongodb://olduser:oldpass@localhost:27017/testdb",
+        env_file=env_file,
+        dry_run=True,
+    )
+    assert "olduser" not in info["uri"]
+    assert "testuser" in info["uri"]
+
+
+def test_missing_env_file_is_an_error():
+    with pytest.raises(ValueError, match="not found"):
+        get_mongo_client(mongo_uri=_URI, env_file="/nonexistent/.env", dry_run=True)
+
+
+def test_dry_run_cli_reports_on_stdout(env_file, monkeypatch, capsys):
+    """The dry-run CLI must print something.
+
+    It previously reported only through logger.debug, and nothing configures
+    logging, so `mongo-connect --uri ...` produced no output at all.
+    """
+    monkeypatch.setattr(
+        sys, "argv", ["mongo-connect", "--uri", _URI, "--env-file", env_file]
+    )
+
+    mongodb_connection.main()
+    out = capsys.readouterr().out
+
+    assert out.strip(), "dry-run CLI produced no output"
+    assert "Credentials present in URI: yes" in out
+    assert "testpass" not in out, "the URI must never be printed"
+
+
+def test_mongosh_fallback_receives_env_file_credentials(env_file, monkeypatch, capsys):
+    """The mongosh fallback must be handed the credential-injected URI.
+
+    It previously passed the raw --uri straight through, so --env-file
+    credentials never reached mongosh and auth failed even though the PyMongo
+    client had connected fine. pymongo.MongoClient connects lazily, so no
+    server is needed; only subprocess.run has to be stubbed out.
+    """
+    captured = {}
+
+    def fake_run(cmd, *args, **kwargs):
+        captured["cmd"] = cmd
+        return types.SimpleNamespace(returncode=0, stdout="", stderr="")
+
+    monkeypatch.setattr(subprocess, "run", fake_run)
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "mongo-connect",
+            "--uri", _URI,
+            "--env-file", env_file,
+            "--command", "db.runCommand({ping: 1})",
+        ],
+    )
+
+    mongodb_connection.main()
+    capsys.readouterr()
+
+    assert captured["cmd"][0] == "mongosh"
+    mongosh_uri = captured["cmd"][1]
+    assert "testuser" in mongosh_uri, "credentials from --env-file never reached mongosh"
+    assert "authSource=" in mongosh_uri
+    assert "/testdb" in mongosh_uri
+
+
+@pytest.mark.parametrize(
+    "bad_uri,message",
+    [
+        ("", "required"),
+        ("http://localhost:27017/testdb", "must start with"),
+        ("mongodb://localhost:27017", "database name"),
+    ],
+)
+def test_invalid_uris_are_rejected(bad_uri, message):
+    with pytest.raises(ValueError, match=message):
+        get_mongo_client(mongo_uri=bad_uri, dry_run=True)

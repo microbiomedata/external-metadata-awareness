@@ -132,23 +132,32 @@ def main():
     parser.add_argument("--connect", action="store_true", help="Actually connect to the database")
     parser.add_argument("--command", help="MongoDB command to execute (must be valid JavaScript/MongoDB shell command)")
     args = parser.parse_args()
-    
+
+    # Nothing else configures logging, so the debug messages get_mongo_client
+    # emits under debug=True were being discarded and --verbose did nothing.
+    # Configure it here, at the entry point, rather than at import time.
+    logging.basicConfig(
+        level=logging.DEBUG if args.verbose else logging.WARNING,
+        format="%(levelname)s %(name)s: %(message)s",
+    )
+
     try:
         # Get connection info in dry-run mode if not connecting
         if not args.connect and not args.command:
-            get_mongo_client(
+            connection_info = get_mongo_client(
                 mongo_uri=args.uri,
                 env_file=args.env_file,
                 debug=args.verbose,
                 dry_run=True
             )
-            
-            # Show minimal connection info without duplicating the output from get_mongo_client
-            if not args.verbose:
-                logger.debug("Connection URI prepared")
-            logger.debug("Credential presence determined")
 
-            logger.debug("Sample mongosh command omitted from logs for security")
+            # Report on stdout, not through logger.debug: this is the result the
+            # user asked for, and it has to show up without a --verbose flag.
+            # The URI itself is never printed, since it can carry credentials.
+            credentials = "yes" if connection_info["has_credentials"] else "no"
+            print("Dry run: connection URI prepared, no connection attempted.")
+            print(f"Credentials present in URI: {credentials}")
+            print("Re-run with --connect to open a connection.")
         else:
             # Actually connect to the database
             client = get_mongo_client(
@@ -228,10 +237,18 @@ def main():
                     try:
                         print("Attempting to execute command with mongosh...")
                         
-                        # Get the URI with credentials if any
-                        final_uri = args.uri
+                        # Resolve the same URI the PyMongo client used, so that
+                        # credentials supplied via --env-file reach mongosh too.
+                        # dry_run=True builds the URI without opening a connection.
+                        connection_info = get_mongo_client(
+                            mongo_uri=args.uri,
+                            env_file=args.env_file,
+                            debug=args.verbose,
+                            dry_run=True
+                        )
+                        final_uri = connection_info["uri"]
                         credentials_text = ""
-                        if "@" in final_uri:
+                        if connection_info["has_credentials"]:
                             credentials_text = " (with credentials)"
                         
                         # Run the command with mongosh
