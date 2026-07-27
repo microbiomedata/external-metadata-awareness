@@ -111,9 +111,17 @@ def get_mongo_client(
         # Ask the URI parser for a username rather than looking for an "@",
         # which also matches option values such as ?appName=user@example.com
         # and would report credentials that are not there.
+        try:
+            parsed_final = uri_parser.parse_uri(final_uri)
+        except pymongo.errors.InvalidURI as exc:
+            # Credentials needing percent-encoding produce a URI that only
+            # fails once parsed. Raise ValueError like the other URI problems
+            # above, so callers get the same handling and format guidance.
+            raise ValueError(f"Invalid MongoDB URI after applying credentials: {exc}")
+
         return {
             "uri": final_uri,
-            "has_credentials": bool(uri_parser.parse_uri(final_uri).get("username")),
+            "has_credentials": bool(parsed_final.get("username")),
         }
     
     # Create the MongoDB client
@@ -137,9 +145,13 @@ def main(uri, env_file, verbose, connect, command):
     # Nothing else configures logging, so the debug messages get_mongo_client
     # emits under debug=True were being discarded and --verbose did nothing.
     # Configure it here, at the entry point, rather than at import time.
+    # force=True because basicConfig does nothing when handlers already exist,
+    # which would leave --verbose silent under a test runner or any importer
+    # that configured logging first.
     logging.basicConfig(
         level=logging.DEBUG if verbose else logging.WARNING,
         format="%(levelname)s %(name)s: %(message)s",
+        force=True,
     )
 
     try:

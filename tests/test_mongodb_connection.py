@@ -6,6 +6,7 @@ These guard two silent-failure bugs: credentials supplied via --env-file not
 reaching the URI at all, and the dry-run path returning nothing usable.
 """
 
+import logging
 import subprocess
 import types
 
@@ -73,6 +74,50 @@ def test_at_sign_in_option_value_is_not_read_as_credentials():
         dry_run=True,
     )
     assert info["has_credentials"] is False
+
+
+def test_credentials_needing_escaping_raise_value_error(tmp_path, monkeypatch):
+    """A password with reserved characters must surface as ValueError.
+
+    Injecting it produces a URI that only fails when parsed. pymongo raises
+    InvalidURI, which is not a ValueError, so it would skip the caller's
+    URI-format error handling.
+    """
+    for var in ("MONGO_USER", "MONGO_PASSWORD", "MONGO_AUTH_SOURCE"):
+        monkeypatch.delenv(var, raising=False)
+    path = tmp_path / ".env"
+    path.write_text("MONGO_USER=user\nMONGO_PASSWORD=p@ssw0rd\n")
+
+    with pytest.raises(ValueError, match="after applying credentials"):
+        get_mongo_client(mongo_uri=_URI, env_file=str(path), dry_run=True)
+
+
+def test_cli_reports_uri_format_guidance_for_unescaped_credentials(tmp_path, monkeypatch):
+    """The CLI keeps its URI-format guidance for that case."""
+    for var in ("MONGO_USER", "MONGO_PASSWORD", "MONGO_AUTH_SOURCE"):
+        monkeypatch.delenv(var, raising=False)
+    path = tmp_path / ".env"
+    path.write_text("MONGO_USER=user\nMONGO_PASSWORD=p@ssw0rd\n")
+
+    result = CliRunner().invoke(main, ["--uri", _URI, "--env-file", str(path)])
+
+    assert result.exit_code == 1
+    assert "The MongoDB URI must use the format" in result.output
+
+
+def test_verbose_wins_over_preconfigured_logging(env_file):
+    """--verbose must work even when something already configured logging.
+
+    logging.basicConfig is a no-op once handlers exist, so without force=True
+    the flag silently does nothing under a test runner or any importer that
+    configured logging first.
+    """
+    logging.basicConfig(level=logging.WARNING)
+
+    result = CliRunner().invoke(main, ["--uri", _URI, "--env-file", env_file, "--verbose"])
+
+    assert result.exit_code == 0, result.output
+    assert logging.getLogger().level == logging.DEBUG
 
 
 def test_dry_run_cli_reports_on_stdout(env_file):
