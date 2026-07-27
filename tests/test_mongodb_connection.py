@@ -109,17 +109,30 @@ def test_credentials_needing_escaping_raise_value_error(tmp_path, monkeypatch):
         get_mongo_client(mongo_uri=_URI, env_file=str(path), dry_run=True)
 
 
-def test_cli_reports_uri_format_guidance_for_unescaped_credentials(tmp_path, monkeypatch):
-    """The CLI keeps its URI-format guidance for that case."""
+@pytest.mark.parametrize("extra_args", [[], ["--connect"]], ids=["dry-run", "connect"])
+def test_cli_reports_uri_format_guidance_for_unescaped_credentials(
+    tmp_path, monkeypatch, extra_args
+):
+    """Both paths report unescaped credentials the same way.
+
+    Validating only in the dry-run branch left --connect surfacing pymongo's
+    raw message with none of the guidance.
+    """
     for var in ("MONGO_USER", "MONGO_PASSWORD", "MONGO_AUTH_SOURCE"):
         monkeypatch.delenv(var, raising=False)
     path = tmp_path / ".env"
     path.write_text("MONGO_USER=user\nMONGO_PASSWORD=p@ssw0rd\n")
 
-    result = CliRunner().invoke(main, ["--uri", _URI, "--env-file", str(path)])
+    result = CliRunner().invoke(
+        main, ["--uri", _URI, "--env-file", str(path)] + extra_args
+    )
 
     assert result.exit_code == 1
+    assert "must be percent-encoded per RFC 3986" in result.output
     assert "The MongoDB URI must use the format" in result.output
+    assert "escaped according to RFC 3986" not in result.output, (
+        "pymongo's raw parser message leaked into the output"
+    )
 
 
 def test_verbose_wins_over_preconfigured_logging(env_file):

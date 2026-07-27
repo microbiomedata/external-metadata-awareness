@@ -106,25 +106,29 @@ def get_mongo_client(
     if debug:
         logger.debug("Final connection URI prepared")
     
+    # Re-parse now that credentials have been applied. This runs for both the
+    # dry-run and connect paths so they fail the same way; validating only in
+    # the dry run left --connect reporting the raw parser message with none of
+    # the guidance below.
+    try:
+        parsed_final = uri_parser.parse_uri(final_uri)
+    except pymongo.errors.InvalidURI as exc:
+        # Credentials needing percent-encoding produce a URI that only fails
+        # once parsed. Raise ValueError like the other URI problems above, so
+        # callers get the same handling and format guidance. The parser message
+        # is not interpolated: this point is reached after credentials were
+        # applied, so it is kept out of the output.
+        raise ValueError(
+            "Invalid MongoDB URI after applying credentials. Username and "
+            "password must be percent-encoded per RFC 3986; see "
+            "urllib.parse.quote_plus."
+        ) from exc
+
     # For dry runs, return connection info instead of a client
     if dry_run:
         # Ask the URI parser for a username rather than looking for an "@",
         # which also matches option values such as ?appName=user@example.com
         # and would report credentials that are not there.
-        try:
-            parsed_final = uri_parser.parse_uri(final_uri)
-        except pymongo.errors.InvalidURI as exc:
-            # Credentials needing percent-encoding produce a URI that only
-            # fails once parsed. Raise ValueError like the other URI problems
-            # above, so callers get the same handling and format guidance.
-            # The parser message is not interpolated: this point is reached
-            # after credentials were applied, so it is kept out of the output.
-            raise ValueError(
-                "Invalid MongoDB URI after applying credentials. Username and "
-                "password must be percent-encoded per RFC 3986; see "
-                "urllib.parse.quote_plus."
-            ) from exc
-
         return {
             "uri": final_uri,
             "has_credentials": bool(parsed_final.get("username")),
