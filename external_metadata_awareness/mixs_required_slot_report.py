@@ -59,6 +59,15 @@ ENV_PACKAGE_WEIGHT_PIPELINE = [
     {"$group": {"_id": "$env_package.has_raw_value", "n": {"$sum": 1}}}
 ]
 REQUIRED_ANNOTATION_COLUMNS = frozenset({"slot", "priority", "comment"})
+
+
+class AnnotationFormatError(click.ClickException, ValueError):
+    """Raised when the --annotations TSV is missing required columns.
+
+    Subclasses ClickException so the CLI prints a clean "Error: ..." line
+    instead of a traceback, and ValueError so library callers can keep
+    catching it as one.
+    """
 # NMDC materialized schema, matching analyze_nmdc_biosample_coverage.py.
 DEFAULT_NMDC_SCHEMA = (
     "https://raw.githubusercontent.com/microbiomedata/nmdc-schema/"
@@ -278,9 +287,16 @@ def connect_mongo(mongo_uri: str, env_file: str | None) -> MongoClient:
         client.admin.command("ping")
         return client
     except OperationFailure as exc:
-        raise click.ClickException("MongoDB authentication/authorization failed.") from exc
+        raise click.ClickException(
+            "MongoDB authentication/authorization failed. Check MONGO_USER and "
+            "MONGO_PASSWORD in the --env-file, and that the user has read access "
+            "to the database named in the URI."
+        ) from exc
     except ConnectionFailure as exc:
-        raise click.ClickException("Could not reach MongoDB server.") from exc
+        raise click.ClickException(
+            "Could not reach MongoDB server. Check the host and port in the URI, "
+            "and whether an SSH tunnel or VPN is required to reach it."
+        ) from exc
     except PyMongoError as exc:
         raise click.ClickException(f"MongoDB client error: {exc}") from exc
 
@@ -340,7 +356,7 @@ def load_annotations(annotations_path: Path) -> dict[str, tuple[str, str]]:
         if missing_columns:
             present = ", ".join(sorted(present_columns)) if present_columns else "<none>"
             missing = ", ".join(missing_columns)
-            raise ValueError(
+            raise AnnotationFormatError(
                 f"Annotation TSV is missing required columns: {missing}. "
                 f"Present columns: {present}"
             )
