@@ -50,6 +50,11 @@ dateparser = "^1.2.2"
 geopy = "^2.4.1"
 json-tabulate = "^0.1.4"
 nmdc-submission-schema = "^11.17.0"
+# setuptools 82.0.0 removed pkg_resources, which eutils 0.6.0 imports at load time.
+# oaklib requires eutils, so oaklib.selector fails to import without it.
+# eutils 0.6.1 drops the import but requires Python 3.12+, which this project does not.
+# See https://github.com/microbiomedata/external-metadata-awareness/pull/523
+setuptools = "<82"
 
 [tool.poetry.group.dev.dependencies]
 deptry = ">=0.23,<0.26"
