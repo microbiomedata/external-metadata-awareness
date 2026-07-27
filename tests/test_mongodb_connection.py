@@ -31,6 +31,12 @@ def restore_root_logger():
     try:
         yield
     finally:
+        # Close whatever basicConfig added before dropping it, so the handler
+        # is not left open. Only handlers that appeared during the test are
+        # touched; the originals are put back untouched.
+        for handler in root.handlers:
+            if handler not in saved_handlers:
+                handler.close()
         root.handlers[:] = saved_handlers
         root.setLevel(saved_level)
 
