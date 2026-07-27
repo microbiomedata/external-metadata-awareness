@@ -123,7 +123,6 @@ def fetch_nmdc_submissions(mongo_url, env_path, base_url="https://data.microbiom
         db_name = parse_uri(mongo_url).get('database') or 'misc_metadata'
         db = client[db_name]
         collection = db['nmdc_submissions']
-        fetched_this_run = 0
 
         # Paginate through API results
         while True:
@@ -152,8 +151,6 @@ def fetch_nmdc_submissions(mongo_url, env_path, base_url="https://data.microbiom
                     else:
                         # Fallback when no stable identifier is present.
                         collection.insert_one(doc)
-                fetched_this_run += len(results)
-
                 # Advance the page before deciding whether to stop, and compare
                 # the offset rather than a running document count. Counting
                 # documents ends pagination early when pages overlap, because
@@ -414,11 +411,13 @@ def process_submissions(mongo_url, output_file):
                 submissions_db, flattened_collection_name)
 
             try:
-                # No pre-clean: temp_collection_name carries a microsecond UTC
-                # timestamp and the pid, so the collection is new on every run
-                # and has neither documents nor indexes to clear. The previous
-                # delete_many({}) implied otherwise while not clearing indexes,
-                # which is what would actually have followed the rename across.
+                # temp_collection_name carries a microsecond UTC timestamp and
+                # the pid, which makes a collision unlikely but not impossible
+                # (clock resolution, or two runs inside one process). Drop
+                # rather than delete_many: on a collision, emptying would leave
+                # the old collection's indexes to ride the rename onto the
+                # target, which is the case the previous delete_many missed.
+                submissions_db.drop_collection(temp_collection_name)
                 insert_result = temp_collection.insert_many(submission_biosamples)
                 temp_collection.rename(flattened_collection_name, dropTarget=True)
                 renamed = True

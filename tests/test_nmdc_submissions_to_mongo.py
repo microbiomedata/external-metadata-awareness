@@ -103,6 +103,9 @@ def test_process_submissions_uses_unique_temp_collection_name(monkeypatch, tmp_p
         def list_collection_names(self):
             return []
 
+        def drop_collection(self, name):
+            pass
+
     class FakeMongoClient:
         def __init__(self, _url):
             self.db = FakeDB()
@@ -228,7 +231,10 @@ def test_process_submissions_drops_temp_collection_on_rename_failure(monkeypatch
     with pytest.raises(RuntimeError, match='rename failed'):
         module.process_submissions('mongodb://example/misc_metadata', str(tmp_path / 'out.tsv'))
 
-    assert client.db.dropped == ['flattened_submission_biosamples_tmp_20240102030405006789_4321']
+    # Dropped twice: once defensively before inserting, once by the cleanup in
+    # the finally block after the rename raised.
+    temp_name = 'flattened_submission_biosamples_tmp_20240102030405006789_4321'
+    assert client.db.dropped == [temp_name, temp_name]
 
 
 def test_ctv_slot_parsing_non_string_and_matching_string(monkeypatch, tmp_path):
@@ -301,6 +307,9 @@ def test_ctv_slot_parsing_non_string_and_matching_string(monkeypatch, tmp_path):
 
         def list_collection_names(self):
             return []
+
+        def drop_collection(self, name):
+            pass
 
     class FakeMongoClient:
         def __init__(self, _url):
