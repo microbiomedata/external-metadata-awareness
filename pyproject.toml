@@ -7,7 +7,7 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.13"
 click = "^8.1.7"
 db-dtypes = "^1.4.1"
 duckdb = "^1.0.0"
@@ -38,28 +38,22 @@ tqdm = "^4.66.5"
 xmltodict = ">=0.13,<1.1"
 requests = "^2.33.0"
 pyyaml = "^6.0.2"
-linkml-runtime = "^1.9.1"
+linkml-runtime = "^1.11.1"
 sqlalchemy = "^2.0.40"
 requests-cache = "^1.2.1"
 jsonasobj2 = "^1.0.4"
 prefixmaps = "^0.2.6"
-linkml = "^1.8.7"
+linkml = "^1.11.1"
 curies = ">=0.10.11,<0.15.0"
 case-converter = "^1.2.0"
 dateparser = "^1.2.2"
 geopy = "^2.4.1"
 json-tabulate = "^0.1.4"
 nmdc-submission-schema = "^11.17.0"
-# setuptools 82.0.0 removed pkg_resources, which eutils 0.6.0 imports at load time.
-# oaklib requires eutils, so oaklib.selector fails to import without it.
-# eutils 0.6.1 drops the import but requires Python 3.12+, which this project does not.
-# See https://github.com/microbiomedata/external-metadata-awareness/pull/523
-setuptools = "<82"
 
 [tool.poetry.group.dev.dependencies]
 deptry = ">=0.23,<0.26"
 pytest = ">=8.3,<10"
-tomli = { version = ">=2.0,<3", python = "<3.11" }
 
 [build-system]
 requires = ["poetry-core"]
