@@ -287,10 +287,14 @@ def connect_mongo(mongo_uri: str, env_file: str | None) -> MongoClient:
         client.admin.command("ping")
         return client
     except OperationFailure as exc:
+        # Built from MONGO_CRED_KEY_PAIRS so the message cannot drift from the
+        # pairs actually tried. Naming only MONGO_USER/MONGO_PASSWORD misdirects
+        # anyone using the SOURCE_ or NMDC_ pairs.
+        accepted_keys = " or ".join("/".join(pair) for pair in MONGO_CRED_KEY_PAIRS)
         raise click.ClickException(
-            "MongoDB authentication/authorization failed. Check MONGO_USER and "
-            "MONGO_PASSWORD in the --env-file, and that the user has read access "
-            "to the database named in the URI."
+            "MongoDB authentication/authorization failed. Check the credentials "
+            f"in the --env-file ({accepted_keys}), and that the user has read "
+            "access to the database named in the URI."
         ) from exc
     except ConnectionFailure as exc:
         raise click.ClickException(
