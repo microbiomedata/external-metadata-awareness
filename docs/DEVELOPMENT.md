@@ -7,7 +7,7 @@ Guidelines for contributing code, testing, and maintaining this repository.
 ## Code Style Guidelines
 
 ### Python Requirements
-- **Version**: Python >= 3.10 required
+- **Version**: Python >= 3.13 required
 - **Type Hints**: Expected for all function parameters and returns
   ```python
   from typing import List, Dict, Tuple, Optional
