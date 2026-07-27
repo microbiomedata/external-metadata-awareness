@@ -106,11 +106,32 @@ def get_mongo_client(
     if debug:
         logger.debug("Final connection URI prepared")
     
+    # Re-parse now that credentials have been applied. This runs for both the
+    # dry-run and connect paths so they fail the same way; validating only in
+    # the dry run left --connect reporting the raw parser message with none of
+    # the guidance below.
+    try:
+        parsed_final = uri_parser.parse_uri(final_uri)
+    except pymongo.errors.InvalidURI as exc:
+        # Credentials needing percent-encoding produce a URI that only fails
+        # once parsed. Raise ValueError like the other URI problems above, so
+        # callers get the same handling and format guidance. The parser message
+        # is not interpolated: this point is reached after credentials were
+        # applied, so it is kept out of the output.
+        raise ValueError(
+            "Invalid MongoDB URI after applying credentials. Username and "
+            "password must be percent-encoded per RFC 3986; see "
+            "urllib.parse.quote_plus."
+        ) from exc
+
     # For dry runs, return connection info instead of a client
     if dry_run:
+        # Ask the URI parser for a username rather than looking for an "@",
+        # which also matches option values such as ?appName=user@example.com
+        # and would report credentials that are not there.
         return {
             "uri": final_uri,
-            "has_credentials": "@" in final_uri,
+            "has_credentials": bool(parsed_final.get("username")),
         }
     
     # Create the MongoDB client
@@ -131,22 +152,35 @@ def get_mongo_client(
 @click.option("--command", help="MongoDB command to execute (must be valid JavaScript/MongoDB shell command)")
 def main(uri, env_file, verbose, connect, command):
     """Test MongoDB connection using a URI and optional env file."""
+    # Nothing else configures logging, so the debug messages get_mongo_client
+    # emits under debug=True were being discarded and --verbose did nothing.
+    # Configure it here, at the entry point, rather than at import time.
+    # force=True because basicConfig does nothing when handlers already exist,
+    # which would leave --verbose silent under a test runner or any importer
+    # that configured logging first.
+    logging.basicConfig(
+        level=logging.DEBUG if verbose else logging.WARNING,
+        format="%(levelname)s %(name)s: %(message)s",
+        force=True,
+    )
+
     try:
         # Get connection info in dry-run mode if not connecting
         if not connect and not command:
-            get_mongo_client(
+            connection_info = get_mongo_client(
                 mongo_uri=uri,
                 env_file=env_file,
                 debug=verbose,
                 dry_run=True
             )
-            
-            # Show minimal connection info without duplicating the output from get_mongo_client
-            if not verbose:
-                logger.debug("Connection URI prepared")
-            logger.debug("Credential presence determined")
 
-            logger.debug("Sample mongosh command omitted from logs for security")
+            # Report on stdout, not through logger.debug: this is the result the
+            # user asked for, and it has to show up without a --verbose flag.
+            # The URI itself is never printed, since it can carry credentials.
+            credentials = "yes" if connection_info["has_credentials"] else "no"
+            print("Dry run: connection URI prepared, no connection attempted.")
+            print(f"Credentials present in URI: {credentials}")
+            print("Re-run with --connect to open a connection.")
         else:
             # Actually connect to the database
             client = get_mongo_client(
@@ -226,10 +260,18 @@ def main(uri, env_file, verbose, connect, command):
                     try:
                         print("Attempting to execute command with mongosh...")
                         
-                        # Get the URI with credentials if any
-                        final_uri = uri
+                        # Resolve the same URI the PyMongo client used, so that
+                        # credentials supplied via --env-file reach mongosh too.
+                        # dry_run=True builds the URI without opening a connection.
+                        connection_info = get_mongo_client(
+                            mongo_uri=uri,
+                            env_file=env_file,
+                            debug=verbose,
+                            dry_run=True
+                        )
+                        final_uri = connection_info["uri"]
                         credentials_text = ""
-                        if "@" in final_uri:
+                        if connection_info["has_credentials"]:
                             credentials_text = " (with credentials)"
 
                         # Run the command with mongosh
