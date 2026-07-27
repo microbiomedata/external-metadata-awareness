@@ -7,13 +7,12 @@ reaching the URI at all, and the dry-run path returning nothing usable.
 """
 
 import subprocess
-import sys
 import types
 
 import pytest
+from click.testing import CliRunner
 
-from external_metadata_awareness import mongodb_connection
-from external_metadata_awareness.mongodb_connection import get_mongo_client
+from external_metadata_awareness.mongodb_connection import get_mongo_client, main
 
 _URI = "mongodb://localhost:27017/testdb"
 
@@ -63,25 +62,34 @@ def test_missing_env_file_is_an_error():
         get_mongo_client(mongo_uri=_URI, env_file="/nonexistent/.env", dry_run=True)
 
 
-def test_dry_run_cli_reports_on_stdout(env_file, monkeypatch, capsys):
+def test_at_sign_in_option_value_is_not_read_as_credentials():
+    """An "@" in an option value must not be reported as credentials.
+
+    has_credentials used to be `"@" in uri`, which matches option values such
+    as ?appName=user@example.com and claimed credentials that are not there.
+    """
+    info = get_mongo_client(
+        mongo_uri="mongodb://localhost:27017/testdb?appName=user@example.com",
+        dry_run=True,
+    )
+    assert info["has_credentials"] is False
+
+
+def test_dry_run_cli_reports_on_stdout(env_file):
     """The dry-run CLI must print something.
 
     It previously reported only through logger.debug, and nothing configures
     logging, so `mongo-connect --uri ...` produced no output at all.
     """
-    monkeypatch.setattr(
-        sys, "argv", ["mongo-connect", "--uri", _URI, "--env-file", env_file]
-    )
+    result = CliRunner().invoke(main, ["--uri", _URI, "--env-file", env_file])
 
-    mongodb_connection.main()
-    out = capsys.readouterr().out
-
-    assert out.strip(), "dry-run CLI produced no output"
-    assert "Credentials present in URI: yes" in out
-    assert "testpass" not in out, "the URI must never be printed"
+    assert result.exit_code == 0, result.output
+    assert result.output.strip(), "dry-run CLI produced no output"
+    assert "Credentials present in URI: yes" in result.output
+    assert "testpass" not in result.output, "the URI must never be printed"
 
 
-def test_mongosh_fallback_receives_env_file_credentials(env_file, monkeypatch, capsys):
+def test_mongosh_fallback_receives_env_file_credentials(env_file, monkeypatch):
     """The mongosh fallback must be handed the credential-injected URI.
 
     It previously passed the raw --uri straight through, so --env-file
@@ -96,20 +104,17 @@ def test_mongosh_fallback_receives_env_file_credentials(env_file, monkeypatch, c
         return types.SimpleNamespace(returncode=0, stdout="", stderr="")
 
     monkeypatch.setattr(subprocess, "run", fake_run)
-    monkeypatch.setattr(
-        sys,
-        "argv",
+
+    result = CliRunner().invoke(
+        main,
         [
-            "mongo-connect",
             "--uri", _URI,
             "--env-file", env_file,
             "--command", "db.runCommand({ping: 1})",
         ],
     )
 
-    mongodb_connection.main()
-    capsys.readouterr()
-
+    assert result.exit_code == 0, result.output
     assert captured["cmd"][0] == "mongosh"
     mongosh_uri = captured["cmd"][1]
     assert "testuser" in mongosh_uri, "credentials from --env-file never reached mongosh"
