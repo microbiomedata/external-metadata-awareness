@@ -157,7 +157,13 @@ def fetch_mappings(mappings_url, api_key, source_class_id, verbose=False):
             target_candidates = []
             for cls in classes:
                 cls_id = cls.get("@id")
-                cls_id_norm = cls_id.rstrip("/") if isinstance(cls_id, str) else None
+                if not isinstance(cls_id, str) or not cls_id:
+                    # Without a usable @id this class cannot be compressed to a
+                    # CURIE later. Skipping it here keeps one malformed entry
+                    # from raising inside the outer try and discarding every
+                    # mapping for this source term.
+                    continue
+                cls_id_norm = cls_id.rstrip("/")
                 if source_class_id_norm is not None and cls_id_norm == source_class_id_norm:
                     continue
                 target_candidates.append(cls)
