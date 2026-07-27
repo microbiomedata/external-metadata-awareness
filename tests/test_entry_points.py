@@ -14,13 +14,9 @@ MongoDB or network access:
 """
 
 import importlib
-import sys
 from pathlib import Path
 
-try:
-    import tomllib  # Python 3.11+
-except ModuleNotFoundError:  # Python 3.10
-    import tomli as tomllib
+import tomllib
 
 import click
 import pytest
@@ -82,26 +78,9 @@ def test_click_entry_point_help(name, target):
     """Every entry point is a click command whose --help exits 0."""
     module_path, _, func_name = target.partition(":")
     obj = getattr(importlib.import_module(module_path), func_name)
-    assert isinstance(obj, click.BaseCommand), (
+    assert isinstance(obj, click.Command), (
         f"{name} ({target}) is not a click command; all console_scripts in this "
         "project use click."
     )
     result = CliRunner().invoke(obj, ["--help"])
     assert result.exit_code == 0, f"{name} --help exited {result.exit_code}:\n{result.output}"
-
-
-@pytest.mark.parametrize("name,target", _ENTRY_POINTS, ids=_IDS)
-def test_non_click_entry_point_invokes(name, target, monkeypatch):
-    """Non-click entry points are callable and can be invoked in a smoke mode."""
-    module_path, _, func_name = target.partition(":")
-    obj = getattr(importlib.import_module(module_path), func_name)
-    if isinstance(obj, click.BaseCommand):
-        pytest.skip(f"{name} is a click command")
-
-    assert callable(obj), f"{name} entry point target is not callable"
-    monkeypatch.setattr(sys, "argv", [name, "--help"])
-
-    try:
-        obj()
-    except SystemExit as exc:
-        assert exc.code in (0, None), f"{name} exited with non-zero code: {exc.code}"

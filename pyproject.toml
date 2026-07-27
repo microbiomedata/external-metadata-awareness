@@ -7,7 +7,7 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.13"
 click = "^8.1.7"
 db-dtypes = "^1.4.1"
 duckdb = "^1.0.0"
@@ -15,7 +15,6 @@ duckdb-engine = ">=0.14,<0.18"
 folium = ">=0.19.4,<0.21.0" # maps
 google-cloud-bigquery = "^3.25.0"
 google-cloud-bigquery-storage = "^2.28.0"
-gsheet-pandas = ">=0.2.8,<0.4.0"
 gspread = "^6.1.2"
 jupyter = "^1.1.1"
 lxml = "^6.0.2"
@@ -26,7 +25,7 @@ oaklib = "^0.6.14"
 openpyxl = "^3.1.5"
 pandas = "^2.2.2"
 plotly = "^6.0.1"
-pyarrow = ">=23.0.1,<25.0.0"
+pyarrow = ">=23.0.1,<26.0.0"
 pymongo = "^4.8.0"
 pymupdf = "^1.26.7"
 python-dotenv = "^1.0.1"
@@ -38,23 +37,20 @@ tqdm = "^4.66.5"
 xmltodict = ">=0.13,<1.1"
 requests = "^2.33.0"
 pyyaml = "^6.0.2"
-linkml-runtime = "^1.9.1"
-sqlalchemy = "^2.0.40"
+linkml-runtime = "^1.11.1"
 requests-cache = "^1.2.1"
 jsonasobj2 = "^1.0.4"
 prefixmaps = "^0.2.6"
-linkml = "^1.8.7"
-curies = ">=0.10.11,<0.14.0"
+linkml = "^1.11.1"
+curies = ">=0.10.11,<0.15.0"
 case-converter = "^1.2.0"
 dateparser = "^1.2.2"
 geopy = "^2.4.1"
-json-tabulate = "^0.1.4"
 nmdc-submission-schema = "^11.17.0"
 
 [tool.poetry.group.dev.dependencies]
 deptry = ">=0.23,<0.26"
 pytest = ">=8.3,<10"
-tomli = { version = ">=2.0,<3", python = "<3.11" }
 
 [build-system]
 requires = ["poetry-core"]
@@ -121,6 +117,7 @@ DEP002 = [
     "duckdb-engine", # infer_biosample_env_context_obo_curies.py
     "gspread", # gsheets_helper.py
     "jupyter",
+    "nmdc-submission-schema", # nmdc-submissions-to-mongo.py
     "notebook",
     "openpyxl",
 ]
@@ -131,6 +128,8 @@ DEP002 = [
 #   duckdb-engine        SQLAlchemy engine for DuckDB
 #   gspread              adhoc/gsheets_helper.py
 #   jupyter, notebook    running the notebooks
+#   nmdc-submission-schema  loaded by name with importlib.resources.files in
+#                        nmdc-submissions-to-mongo.py, so there is no import to detect
 
 [tool.ruff]
 # `ruff check .` lints every .py file in the repo; only Jupyter notebooks
