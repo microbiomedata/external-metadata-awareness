@@ -6,15 +6,14 @@ MongoDB or network access:
 - Every entry-point target must import and expose its referenced function.
   This catches dead entries (a renamed/deleted module) and any import-time
   breakage from a dependency bump.
-- For click-based entry points, ``--help`` must exit 0 (via click's CliRunner,
-  which does not run the command body, so nothing connects or hangs).
-
-Entry points that are not click commands (e.g. argparse-based) are still
-covered by the load test; their ``--help`` is just not exercised here.
+- Every entry point must be a click command whose ``--help`` exits 0 (via
+  click's CliRunner, which does not run the command body, so nothing connects
+  or hangs). All console_scripts in this project use click; the test enforces
+  that convention so a new argparse- or bare-``sys.argv``-based entry point
+  fails here instead of silently diverging.
 """
 
 import importlib
-import sys
 from pathlib import Path
 
 import tomllib
@@ -76,27 +75,12 @@ def test_entry_point_loads(name, target):
 
 @pytest.mark.parametrize("name,target", _ENTRY_POINTS, ids=_IDS)
 def test_click_entry_point_help(name, target):
-    """click-based entry points respond to --help with exit code 0."""
+    """Every entry point is a click command whose --help exits 0."""
     module_path, _, func_name = target.partition(":")
     obj = getattr(importlib.import_module(module_path), func_name)
-    if not isinstance(obj, click.Command):
-        pytest.skip(f"{name} is not a click command")
+    assert isinstance(obj, click.Command), (
+        f"{name} ({target}) is not a click command; all console_scripts in this "
+        "project use click."
+    )
     result = CliRunner().invoke(obj, ["--help"])
     assert result.exit_code == 0, f"{name} --help exited {result.exit_code}:\n{result.output}"
-
-
-@pytest.mark.parametrize("name,target", _ENTRY_POINTS, ids=_IDS)
-def test_non_click_entry_point_invokes(name, target, monkeypatch):
-    """Non-click entry points are callable and can be invoked in a smoke mode."""
-    module_path, _, func_name = target.partition(":")
-    obj = getattr(importlib.import_module(module_path), func_name)
-    if isinstance(obj, click.Command):
-        pytest.skip(f"{name} is a click command")
-
-    assert callable(obj), f"{name} entry point target is not callable"
-    monkeypatch.setattr(sys, "argv", [name, "--help"])
-
-    try:
-        obj()
-    except SystemExit as exc:
-        assert exc.code in (0, None), f"{name} exited with non-zero code: {exc.code}"

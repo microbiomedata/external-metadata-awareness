@@ -16,6 +16,8 @@ Requirements:
 """
 
 import re
+
+import click
 from oaklib import get_adapter
 from oaklib.datamodels.lexical_index import (
     LexicalIndex,
@@ -239,10 +241,18 @@ def create_punctuation_insensitive_index(oi):
     return lexical_index
 
 
-def main():
+@click.command()
+@click.option("--envo-adapter", "envo_adapter_string", default=ENVO_ADAPTER_STRING,
+              show_default=True, help="oaklib adapter string for ENVO.")
+@click.option("--po-adapter", "po_adapter_string", default=PO_ADAPTER_STRING,
+              show_default=True, help="oaklib adapter string for PO.")
+@click.option("--output", "output_file", default="expanded_envo_po_lexical_index.yaml",
+              show_default=True, help="Path of the merged lexical index YAML to write.")
+def main(envo_adapter_string, po_adapter_string, output_file):
+    """Combine punctuation-insensitive ENVO and PO lexical indices into one YAML."""
     # Obtain ontology adapters.
-    envo_adapter = get_adapter(ENVO_ADAPTER_STRING)
-    po_adapter = get_adapter(PO_ADAPTER_STRING)
+    envo_adapter = get_adapter(envo_adapter_string)
+    po_adapter = get_adapter(po_adapter_string)
 
     # Create punctuation-insensitive lexical indices for each ontology.
     print("Creating ENVO punctuation-insensitive index...")
@@ -262,7 +272,6 @@ def main():
         merged_index = merge_lexical_indexes(envo_index, po_index, validate_pipelines=False)
 
     # Save the merged lexical index to a YAML file.
-    output_file = "expanded_envo_po_lexical_index.yaml"
     save_lexical_index(merged_index, output_file)
     print(f"Merged lexical index saved to {output_file}")
 

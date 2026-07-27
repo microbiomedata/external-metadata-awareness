@@ -2,12 +2,12 @@ import logging
 import os
 import sys
 import re
-import argparse
 import subprocess
 from pathlib import Path
 from typing import Optional
 from urllib.parse import urlparse, urlunparse
 
+import click
 from dotenv import load_dotenv
 import pymongo
 from pymongo import uri_parser
@@ -123,28 +123,26 @@ def get_mongo_client(
     return client
 
 
-def main():
-    """Command-line interface for testing MongoDB connection parameters."""
-    parser = argparse.ArgumentParser(description="Test MongoDB connection using a URI and optional env file")
-    parser.add_argument("--uri", required=True, help="MongoDB connection URI (must start with mongodb:// and include database name)")
-    parser.add_argument("--env-file", help="Path to .env file for credentials (should contain MONGO_USER and MONGO_PASSWORD)")
-    parser.add_argument("--verbose", action="store_true", help="Show verbose output")
-    parser.add_argument("--connect", action="store_true", help="Actually connect to the database")
-    parser.add_argument("--command", help="MongoDB command to execute (must be valid JavaScript/MongoDB shell command)")
-    args = parser.parse_args()
-    
+@click.command()
+@click.option("--uri", required=True, help="MongoDB connection URI (must start with mongodb:// and include database name)")
+@click.option("--env-file", "env_file", help="Path to .env file for credentials (should contain MONGO_USER and MONGO_PASSWORD)")
+@click.option("--verbose", is_flag=True, help="Show verbose output")
+@click.option("--connect", is_flag=True, help="Actually connect to the database")
+@click.option("--command", help="MongoDB command to execute (must be valid JavaScript/MongoDB shell command)")
+def main(uri, env_file, verbose, connect, command):
+    """Test MongoDB connection using a URI and optional env file."""
     try:
         # Get connection info in dry-run mode if not connecting
-        if not args.connect and not args.command:
+        if not connect and not command:
             get_mongo_client(
-                mongo_uri=args.uri,
-                env_file=args.env_file,
-                debug=args.verbose,
+                mongo_uri=uri,
+                env_file=env_file,
+                debug=verbose,
                 dry_run=True
             )
             
             # Show minimal connection info without duplicating the output from get_mongo_client
-            if not args.verbose:
+            if not verbose:
                 logger.debug("Connection URI prepared")
             logger.debug("Credential presence determined")
 
@@ -152,27 +150,27 @@ def main():
         else:
             # Actually connect to the database
             client = get_mongo_client(
-                mongo_uri=args.uri,
-                env_file=args.env_file,
-                debug=args.verbose
+                mongo_uri=uri,
+                env_file=env_file,
+                debug=verbose
             )
-            
+
             # Extract database name from URI
-            parsed = uri_parser.parse_uri(args.uri)
+            parsed = uri_parser.parse_uri(uri)
             db_name = parsed.get('database')
-            
+
             if not db_name:
                 raise ValueError("MongoDB URI must include a database name")
-                
+
             db = client[db_name]
-            
-            if args.command:
+
+            if command:
                 # Execute command
-                print(f"Executing command: {args.command}")
-                
+                print(f"Executing command: {command}")
+
                 # Parse MongoDB shell commands directly
                 # Example: db.collection.createIndex({ field: 1 })
-                index_match = re.match(r'db\.(\w+)\.createIndex\((.*)\)', args.command)
+                index_match = re.match(r'db\.(\w+)\.createIndex\((.*)\)', command)
                 
                 if index_match:
                     collection_name = index_match.group(1)
@@ -229,13 +227,13 @@ def main():
                         print("Attempting to execute command with mongosh...")
                         
                         # Get the URI with credentials if any
-                        final_uri = args.uri
+                        final_uri = uri
                         credentials_text = ""
                         if "@" in final_uri:
                             credentials_text = " (with credentials)"
-                        
+
                         # Run the command with mongosh
-                        cmd = ["mongosh", final_uri, "--eval", args.command]
+                        cmd = ["mongosh", final_uri, "--eval", command]
                         result = subprocess.run(cmd, capture_output=True, text=True)
                         
                         if result.returncode == 0:
