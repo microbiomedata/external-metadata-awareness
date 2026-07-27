@@ -18,6 +18,23 @@ from external_metadata_awareness.mongodb_connection import get_mongo_client, mai
 _URI = "mongodb://localhost:27017/testdb"
 
 
+@pytest.fixture(autouse=True)
+def restore_root_logger():
+    """Undo the CLI's logging.basicConfig(force=True) after each test.
+
+    main() reconfigures the root logger by design, which would otherwise
+    persist for the rest of the session and make test order matter.
+    """
+    root = logging.getLogger()
+    saved_handlers = root.handlers[:]
+    saved_level = root.level
+    try:
+        yield
+    finally:
+        root.handlers[:] = saved_handlers
+        root.setLevel(saved_level)
+
+
 @pytest.fixture
 def env_file(tmp_path, monkeypatch):
     """A .env file with credentials, isolated from any ambient MONGO_* vars."""

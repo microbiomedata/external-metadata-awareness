@@ -117,7 +117,13 @@ def get_mongo_client(
             # Credentials needing percent-encoding produce a URI that only
             # fails once parsed. Raise ValueError like the other URI problems
             # above, so callers get the same handling and format guidance.
-            raise ValueError(f"Invalid MongoDB URI after applying credentials: {exc}")
+            # The parser message is not interpolated: this point is reached
+            # after credentials were applied, so it is kept out of the output.
+            raise ValueError(
+                "Invalid MongoDB URI after applying credentials. Username and "
+                "password must be percent-encoded per RFC 3986; see "
+                "urllib.parse.quote_plus."
+            ) from exc
 
         return {
             "uri": final_uri,
