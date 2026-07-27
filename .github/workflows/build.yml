@@ -2,8 +2,9 @@
 name: build
 
 # Validates that the dependency tree resolves and installs, that poetry.lock is
-# in sync with pyproject.toml, and runs the smoke tests (entry points import and
-# click commands respond to --help). No MongoDB or network is needed.
+# in sync with pyproject.toml, runs the smoke tests (entry points import and
+# click commands respond to --help), and checks that declared dependencies match
+# what the code actually imports. No MongoDB or network is needed.
 
 on:
   push:
@@ -31,3 +32,5 @@ jobs:
         run: poetry install --no-interaction --no-root
       - name: Smoke tests (entry points + CLI --help)
         run: poetry run pytest -q
+      - name: Dependency hygiene (config in pyproject.toml [tool.deptry])
+        run: poetry run deptry .
