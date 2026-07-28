@@ -210,10 +210,10 @@ def process_document(doc, collection, api_key, verbose=False):
     term_uri = safe_expand(curie)
     if term_uri:
         if verbose:
-            print(f"Expansion success: {curie} -> {term_uri}")
+            logger.debug("CURIE expansion succeeded")
     else:
         if verbose:
-            print(f"Expansion failed for CURIE: {curie}")
+            logger.debug("CURIE expansion failed")
         return
 
     reverse_engineered = converter.compress(term_uri)
