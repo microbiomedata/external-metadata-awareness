@@ -250,6 +250,16 @@ def process_document(doc, collection, api_key, verbose=False):
 @click.option('--collection', default='env_triad_component_curies_uc', help='MongoDB collection name')
 @click.option('--verbose', is_flag=True, help='Show verbose connection and processing output')
 def main(mongo_uri, env_file, collection, verbose):
+    # Nothing else configures logging, so every logger.debug guarded by
+    # `if verbose` was being dropped: the root logger defaults to WARNING.
+    # force=True because basicConfig is a no-op once handlers exist, which
+    # would leave --verbose silent under any importer that configured first.
+    logging.basicConfig(
+        level=logging.DEBUG if verbose else logging.WARNING,
+        format="%(levelname)s %(name)s: %(message)s",
+        force=True,
+    )
+
     # Load environment variables from .env file
     load_dotenv(env_file)
     
