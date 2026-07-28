@@ -59,6 +59,15 @@ ENV_PACKAGE_WEIGHT_PIPELINE = [
     {"$group": {"_id": "$env_package.has_raw_value", "n": {"$sum": 1}}}
 ]
 REQUIRED_ANNOTATION_COLUMNS = frozenset({"slot", "priority", "comment"})
+
+
+class AnnotationFormatError(click.ClickException, ValueError):
+    """Raised when the --annotations TSV is missing required columns.
+
+    Subclasses ClickException so the CLI prints a clean "Error: ..." line
+    instead of a traceback, and ValueError so library callers can keep
+    catching it as one.
+    """
 # NMDC materialized schema, matching analyze_nmdc_biosample_coverage.py.
 DEFAULT_NMDC_SCHEMA = (
     "https://raw.githubusercontent.com/microbiomedata/nmdc-schema/"
@@ -239,7 +248,8 @@ def connect_mongo(mongo_uri: str, env_file: str | None) -> MongoClient:
     """
     final_uri = mongo_uri
     parsed = urlparse(mongo_uri)
-    if not (parsed.username and parsed.password):
+    uri_has_credentials = bool(parsed.username and parsed.password)
+    if not uri_has_credentials:
         config = {}
         if env_file and Path(env_file).exists():
             config = dotenv_values(env_file)
@@ -278,9 +288,24 @@ def connect_mongo(mongo_uri: str, env_file: str | None) -> MongoClient:
         client.admin.command("ping")
         return client
     except OperationFailure as exc:
-        raise click.ClickException("MongoDB authentication/authorization failed.") from exc
+        # Point at whichever source the credentials actually came from. The env
+        # file is not consulted at all when the URI carries its own, so naming
+        # it there sends people to the wrong place. The key pairs are built from
+        # MONGO_CRED_KEY_PAIRS so the message cannot drift from what is tried.
+        if uri_has_credentials:
+            hint = "Check the username and password embedded in the URI"
+        else:
+            accepted_keys = " or ".join("/".join(p) for p in MONGO_CRED_KEY_PAIRS)
+            hint = f"Check the credentials in the --env-file ({accepted_keys})"
+        raise click.ClickException(
+            f"MongoDB authentication/authorization failed. {hint}, and that the "
+            "user has read access to the database named in the URI."
+        ) from exc
     except ConnectionFailure as exc:
-        raise click.ClickException("Could not reach MongoDB server.") from exc
+        raise click.ClickException(
+            "Could not reach MongoDB server. Check the host and port in the URI, "
+            "and whether an SSH tunnel or VPN is required to reach it."
+        ) from exc
     except PyMongoError as exc:
         raise click.ClickException(f"MongoDB client error: {exc}") from exc
 
@@ -340,7 +365,7 @@ def load_annotations(annotations_path: Path) -> dict[str, tuple[str, str]]:
         if missing_columns:
             present = ", ".join(sorted(present_columns)) if present_columns else "<none>"
             missing = ", ".join(missing_columns)
-            raise ValueError(
+            raise AnnotationFormatError(
                 f"Annotation TSV is missing required columns: {missing}. "
                 f"Present columns: {present}"
             )
