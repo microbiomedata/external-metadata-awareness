@@ -254,11 +254,17 @@ def main(mongo_uri, env_file, collection, verbose):
     # `if verbose` was being dropped: the root logger defaults to WARNING.
     # force=True because basicConfig is a no-op once handlers exist, which
     # would leave --verbose silent under any importer that configured first.
+    #
+    # The root stays at WARNING and only this module's logger goes to DEBUG.
+    # Putting the root at DEBUG would switch on urllib3 and requests_cache
+    # debug output, which logs full request URLs and would defeat the point of
+    # keeping CURIEs and URLs out of the verbose messages below.
     logging.basicConfig(
-        level=logging.DEBUG if verbose else logging.WARNING,
+        level=logging.WARNING,
         format="%(levelname)s %(name)s: %(message)s",
         force=True,
     )
+    logger.setLevel(logging.DEBUG if verbose else logging.WARNING)
 
     # Load environment variables from .env file
     load_dotenv(env_file)
