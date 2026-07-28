@@ -210,10 +210,10 @@ def process_document(doc, collection, api_key, verbose=False):
     term_uri = safe_expand(curie)
     if term_uri:
         if verbose:
-            print(f"Expansion success: {curie} -> {term_uri}")
+            logger.debug("CURIE expansion succeeded")
     else:
         if verbose:
-            print(f"Expansion failed for CURIE: {curie}")
+            logger.debug("CURIE expansion failed")
         return
 
     reverse_engineered = converter.compress(term_uri)
@@ -250,6 +250,22 @@ def process_document(doc, collection, api_key, verbose=False):
 @click.option('--collection', default='env_triad_component_curies_uc', help='MongoDB collection name')
 @click.option('--verbose', is_flag=True, help='Show verbose connection and processing output')
 def main(mongo_uri, env_file, collection, verbose):
+    # Nothing else configures logging, so every logger.debug guarded by
+    # `if verbose` was being dropped: the root logger defaults to WARNING.
+    # force=True because basicConfig is a no-op once handlers exist, which
+    # would leave --verbose silent under any importer that configured first.
+    #
+    # The root stays at WARNING and only this module's logger goes to DEBUG.
+    # Putting the root at DEBUG would switch on urllib3 and requests_cache
+    # debug output, which logs full request URLs and would defeat the point of
+    # keeping CURIEs and URLs out of the verbose messages below.
+    logging.basicConfig(
+        level=logging.WARNING,
+        format="%(levelname)s %(name)s: %(message)s",
+        force=True,
+    )
+    logger.setLevel(logging.DEBUG if verbose else logging.WARNING)
+
     # Load environment variables from .env file
     load_dotenv(env_file)
     
