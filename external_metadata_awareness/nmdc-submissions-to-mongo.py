@@ -152,10 +152,11 @@ def fetch_nmdc_submissions(mongo_url, env_path, base_url="https://data.microbiom
                         # Fallback when no stable identifier is present.
                         collection.insert_one(doc)
                 # Advance the page before deciding whether to stop, and compare
-                # the offset rather than a running document count. Counting
-                # documents ends pagination early when pages overlap, because
-                # the same record is counted twice and the total is reached
-                # before every page has been requested.
+                # the offset rather than a running count of returned documents.
+                # The two agree as long as the server honors offset/limit. They
+                # diverge when it returns a page larger than the limit asked
+                # for: the tally then reaches the total while whole offset
+                # ranges are still unrequested, and those records are skipped.
                 params['offset'] += params['limit']
 
                 total_count = data.get('count')
