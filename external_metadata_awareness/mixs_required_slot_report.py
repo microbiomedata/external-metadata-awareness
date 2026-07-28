@@ -248,7 +248,8 @@ def connect_mongo(mongo_uri: str, env_file: str | None) -> MongoClient:
     """
     final_uri = mongo_uri
     parsed = urlparse(mongo_uri)
-    if not (parsed.username and parsed.password):
+    uri_has_credentials = bool(parsed.username and parsed.password)
+    if not uri_has_credentials:
         config = {}
         if env_file and Path(env_file).exists():
             config = dotenv_values(env_file)
@@ -287,14 +288,18 @@ def connect_mongo(mongo_uri: str, env_file: str | None) -> MongoClient:
         client.admin.command("ping")
         return client
     except OperationFailure as exc:
-        # Built from MONGO_CRED_KEY_PAIRS so the message cannot drift from the
-        # pairs actually tried. Naming only MONGO_USER/MONGO_PASSWORD misdirects
-        # anyone using the SOURCE_ or NMDC_ pairs.
-        accepted_keys = " or ".join("/".join(pair) for pair in MONGO_CRED_KEY_PAIRS)
+        # Point at whichever source the credentials actually came from. The env
+        # file is not consulted at all when the URI carries its own, so naming
+        # it there sends people to the wrong place. The key pairs are built from
+        # MONGO_CRED_KEY_PAIRS so the message cannot drift from what is tried.
+        if uri_has_credentials:
+            hint = "Check the username and password embedded in the URI"
+        else:
+            accepted_keys = " or ".join("/".join(p) for p in MONGO_CRED_KEY_PAIRS)
+            hint = f"Check the credentials in the --env-file ({accepted_keys})"
         raise click.ClickException(
-            "MongoDB authentication/authorization failed. Check the credentials "
-            f"in the --env-file ({accepted_keys}), and that the user has read "
-            "access to the database named in the URI."
+            f"MongoDB authentication/authorization failed. {hint}, and that the "
+            "user has read access to the database named in the URI."
         ) from exc
     except ConnectionFailure as exc:
         raise click.ClickException(
