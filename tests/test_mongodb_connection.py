@@ -13,6 +13,7 @@ import types
 import pytest
 from click.testing import CliRunner
 
+from external_metadata_awareness import mongodb_connection
 from external_metadata_awareness.mongodb_connection import get_mongo_client, main
 
 _URI = "mongodb://localhost:27017/testdb"
@@ -153,7 +154,24 @@ def test_verbose_wins_over_preconfigured_logging(env_file):
     result = CliRunner().invoke(main, ["--uri", _URI, "--env-file", env_file, "--verbose"])
 
     assert result.exit_code == 0, result.output
-    assert logging.getLogger().level == logging.DEBUG
+    assert mongodb_connection.logger.isEnabledFor(logging.DEBUG)
+
+
+def test_verbose_does_not_enable_third_party_debug(env_file):
+    """--verbose must not raise the root logger.
+
+    Root at DEBUG turns on pymongo.command and pymongo.connection, which carry
+    connection details and command payloads, in a module that deliberately
+    never logs the URI even redacted.
+    """
+    logging.basicConfig(level=logging.WARNING)
+
+    result = CliRunner().invoke(main, ["--uri", _URI, "--env-file", env_file, "--verbose"])
+
+    assert result.exit_code == 0, result.output
+    assert logging.getLogger().level == logging.WARNING
+    for name in ("pymongo", "pymongo.command", "pymongo.connection", "urllib3"):
+        assert not logging.getLogger(name).isEnabledFor(logging.DEBUG), name
 
 
 def test_dry_run_cli_reports_on_stdout(env_file):

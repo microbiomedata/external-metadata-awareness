@@ -158,11 +158,16 @@ def main(uri, env_file, verbose, connect, command):
     # force=True because basicConfig does nothing when handlers already exist,
     # which would leave --verbose silent under a test runner or any importer
     # that configured logging first.
+    # Keep the root at WARNING and raise only this module's logger. Putting the
+    # root at DEBUG switches on pymongo.command and pymongo.connection debug
+    # output, which carries connection details and command payloads, in a
+    # function that deliberately never logs the URI even redacted.
     logging.basicConfig(
-        level=logging.DEBUG if verbose else logging.WARNING,
+        level=logging.WARNING,
         format="%(levelname)s %(name)s: %(message)s",
         force=True,
     )
+    logger.setLevel(logging.DEBUG if verbose else logging.WARNING)
 
     try:
         # Get connection info in dry-run mode if not connecting
