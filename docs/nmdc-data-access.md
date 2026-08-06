@@ -53,6 +53,6 @@ The repo deliberately does not codify the SSH command (NERSC vs. GCP details, ju
 - `make local_nmdc_mongodb_restore`, `make restore-to-{un,}authenticated`, `make nmdc-prod-to-other`, `downloads/nmdc_select_mongodb_dump.gz` — dump/restore of an NMDC Mongo via the NERSC SSH tunnel
 - `make export-nmdc-{duckdb,parquet}`, `make export-flattened-biosample-csv` — DuckDB/parquet/CSV exports of flattened NMDC collections
 - `docs/nmdc-flattening-lakehouse-export.md` — documented the chain above; now described upstream in `kbase/data-lakehouse-ingest`
-- `NMDC_MONGO_USER` / `NMDC_MONGO_PASSWORD` slots in `local/.env.template`
+- `MONGO_USER` / `MONGO_PASSWORD` slots in `local/.env.template`
 
 For historical context see `docs/biosample-flattening-timeline-2020-2025.md` and the retrospective sections of `docs/pipeline-rebuild-pain-points.md`.
