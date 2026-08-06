@@ -5,8 +5,17 @@ ifdef ENV_FILE
   ENV_FILE_OPTION := --env-file $(ENV_FILE)
 endif
 
-# GitHub API Token (can be set via GITHUB_TOKEN environment variable)
-ifdef GITHUB_TOKEN
+# GitHub API token. Taken from the gh CLI, which stores it in the macOS Keychain,
+# so no copy is kept in a .env file. An explicit GITHUB_TOKEN still wins if set.
+#
+# ifdef was wrong here: in Make it is true for a variable set to empty, so an empty
+# GITHUB_TOKEN produced "--token " with no value and the command got a malformed flag
+# instead of falling back to unauthenticated.
+# Treat unset and set-but-empty the same way, so both fall back to gh.
+ifeq ($(strip $(GITHUB_TOKEN)),)
+  GITHUB_TOKEN := $(shell gh auth token 2>/dev/null)
+endif
+ifneq ($(strip $(GITHUB_TOKEN)),)
   TOKEN_OPTION := --token $(GITHUB_TOKEN)
 endif
 
