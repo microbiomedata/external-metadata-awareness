@@ -1,7 +1,7 @@
 import datetime
 import os
-import re
-import string
+
+
 
 import click
 import requests
@@ -18,15 +18,7 @@ from external_metadata_awareness.mongodb_connection import get_mongo_client
 requests_cache_filename = "external-metadata-awareness-requests-cache"
 
 # Precompiled regex patterns (assumed global in your file; repeated here for clarity).
-from external_metadata_awareness.env_triad_parsing import (
-    bracketed_pattern,
-    extract_components,
-    improved_curie_pattern,
-    is_digits_only,
-    make_plain_component,
-    normalize_label,
-    trailing_curie_pattern,
-)
+from external_metadata_awareness.env_triad_parsing import extract_components
 
 obo_registry_yaml_url = "https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/refs/heads/master/registry/ontologies.yml"
 
