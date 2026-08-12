@@ -24,3 +24,6 @@ local/
 # generated outputs / logs (issue #478)
 *.log
 notebooks/mixs_preferred_units/ncbi_metadata.biosamples_measurements_flattened.json
+
+# uv writes this and nothing here reads it. Never tracked in this repo.
+uv.lock
