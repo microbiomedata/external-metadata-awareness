@@ -25,5 +25,12 @@ local/
 *.log
 notebooks/mixs_preferred_units/ncbi_metadata.biosamples_measurements_flattened.json
 
-# uv writes this and nothing here reads it. Never tracked in this repo.
+# Both written by one `uv run` on 2026-08-11. Neither was wanted here, and nothing
+# in the Makefiles, CI, or docs reads either one.
 uv.lock
+
+# .venv is currently ignored only by a .gitignore that uv wrote INSIDE it, which
+# disappears when the directory is removed. A venv made by `python -m venv` or by
+# poetry writes no such file and would be fully stageable. Verified by probe:
+# `mkdir .venv-probe/bin && touch .venv-probe/bin/python` shows up in `git status`.
+.venv/
