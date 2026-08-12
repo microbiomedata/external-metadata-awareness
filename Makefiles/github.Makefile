@@ -11,13 +11,17 @@ endif
 # ifdef was wrong here: in Make it is true for a variable set to empty, so an empty
 # GITHUB_TOKEN produced "--token " with no value and the command got a malformed flag
 # instead of falling back to unauthenticated.
-# Treat unset and set-but-empty the same way, so both fall back to gh.
-ifeq ($(strip $(GITHUB_TOKEN)),)
-  GITHUB_TOKEN := $(shell gh auth token 2>/dev/null)
-endif
-ifneq ($(strip $(GITHUB_TOKEN)),)
-  TOKEN_OPTION := --token $(GITHUB_TOKEN)
-endif
+# Deliberately lazy. `:=` with $(shell ...) runs `gh auth token` every time anything
+# PARSES this file, including tools that only want to inspect it. `=` defers it until a
+# recipe actually expands TOKEN_OPTION, so `make -n`, a linter, or a code scanner reading
+# the Makefile never invokes gh at all.
+#
+# An explicit GITHUB_TOKEN still wins. Unset and set-but-empty are treated the same, since
+# `ifdef` is true for a variable set to empty, which is what produced a malformed
+# "--token " with no value after it.
+GH_TOKEN_FALLBACK = $(shell gh auth token 2>/dev/null)
+EFFECTIVE_TOKEN = $(or $(strip $(GITHUB_TOKEN)),$(strip $(GH_TOKEN_FALLBACK)))
+TOKEN_OPTION = $(if $(EFFECTIVE_TOKEN),--token $(EFFECTIVE_TOKEN),)
 
 # Default values for GitHub repositories
 GITHUB_OWNER ?= microbiomedata
