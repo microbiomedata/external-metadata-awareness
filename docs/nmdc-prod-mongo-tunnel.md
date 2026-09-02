@@ -18,7 +18,7 @@ This is the connection EMA tools use for realized prod biosamples, for example
    infrastructure lead). Put the username and password in a git-ignored `.env`
    under one of the key pairs EMA tools read, in order:
    `MONGO_USER`/`MONGO_PASSWORD`, then `SOURCE_MONGO_USER`/`SOURCE_MONGO_PASS`,
-   then `NMDC_MONGO_USER`/`NMDC_MONGO_PASSWORD`. Never commit the `.env`.
+   then `MONGO_USER`/`MONGO_PASSWORD`. Never commit the `.env`.
 
 ## Open the tunnel
 

@@ -320,7 +320,7 @@ See `mongo-js/` directory for index creation scripts:
 
 **Authentication Handling**:
 - Most scripts: No authentication (localhost only)
-- Some notebooks: `.env` files with `NMDC_MONGO_USER`, `NMDC_MONGO_PASSWORD`
+- Some notebooks: `.env` files with `MONGO_USER`, `MONGO_PASSWORD`
 - `mongodb_connection.py`: Proper auth with `MONGO_USER`, `MONGO_PASSWORD`
 
 **Target State** (from Issue #223):
