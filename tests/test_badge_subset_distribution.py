@@ -81,7 +81,7 @@ def test_emptiness_rule(value, populated):
     subsets = {"scored": {"bar": 1, "slots": ["ph"]}}
     collection = FakeCollection([{"ph": value}])
 
-    counts = bsd.populated_counts(collection, subsets)
+    counts, _ = bsd.populated_counts(collection, subsets)
 
     assert counts["scored"] == [1 if populated else 0]
 
@@ -90,7 +90,7 @@ def test_absent_key_counts_as_unpopulated():
     subsets = {"scored": {"bar": 1, "slots": ["ph", "host_diet"]}}
     collection = FakeCollection([{"ph": 7.0}])
 
-    assert bsd.populated_counts(collection, subsets)["scored"] == [1]
+    assert bsd.populated_counts(collection, subsets)[0]["scored"] == [1]
 
 
 def test_counts_are_independent_per_subset():
@@ -100,9 +100,19 @@ def test_counts_are_independent_per_subset():
     }
     collection = FakeCollection([{"ph": 7.0, "host_diet": "grain"}])
 
-    counts = bsd.populated_counts(collection, subsets)
+    counts, _ = bsd.populated_counts(collection, subsets)
 
     assert counts == {"a": [1], "b": [2]}
+
+
+def test_per_slot_totals_include_slots_no_document_populates():
+    """A slot nobody fills must appear with a zero, not vanish from the tally."""
+    subsets = {"scored": {"bar": 1, "slots": ["ph", "never_filled"]}}
+    collection = FakeCollection([{"ph": 7.0}, {"ph": 8.0}])
+
+    _, per_slot = bsd.populated_counts(collection, subsets)
+
+    assert per_slot == {"scored": {"ph": 2, "never_filled": 0}}
 
 
 def test_distribution_is_cumulative_and_flags_the_current_bar():

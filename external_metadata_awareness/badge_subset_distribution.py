@@ -66,23 +66,33 @@ def badge_subsets(view: SchemaView, annotation: str) -> dict[str, dict[str, Any]
     return subsets
 
 
-def populated_counts(collection, subsets: dict[str, dict[str, Any]]) -> dict[str, list[int]]:
-    """Per document, how many of each subset's slots it populates.
+def populated_counts(
+    collection, subsets: dict[str, dict[str, Any]]
+) -> tuple[dict[str, list[int]], dict[str, dict[str, int]]]:
+    """How many slots each document populates, and how many documents populate each slot.
 
     One pass over the collection, projecting only the slots any badge subset names, so
     the wide Biosample documents are not pulled over the tunnel in full.
+
+    The per-slot totals are what show whether a subset is carrying slots nobody fills,
+    which is a different question from where to set the bar and bears on whether a slot
+    belongs in the subset at all.
     """
     slots = sorted({slot for spec in subsets.values() for slot in spec['slots']})
     projection = {slot: 1 for slot in slots}
     projection['_id'] = 0
 
     counts: dict[str, list[int]] = {name: [] for name in subsets}
+    per_slot: dict[str, dict[str, int]] = {
+        name: dict.fromkeys(spec['slots'], 0) for name, spec in subsets.items()
+    }
     for document in collection.find({}, projection):
         for name, spec in subsets.items():
-            counts[name].append(
-                sum(1 for slot in spec['slots'] if document.get(slot) not in EMPTY)
-            )
-    return counts
+            populated = [slot for slot in spec['slots'] if document.get(slot) not in EMPTY]
+            counts[name].append(len(populated))
+            for slot in populated:
+                per_slot[name][slot] += 1
+    return counts, per_slot
 
 
 def distribution_rows(
@@ -149,7 +159,7 @@ def main(
 
     client = get_mongo_client(mongo_uri, env_file=env_file)
     database = client.get_database()
-    counts = populated_counts(database[collection], subsets)
+    counts, per_slot = populated_counts(database[collection], subsets)
 
     # The materialized-patterns file carries no release version, so the ref the user
     # named is the only honest identifier for which schema these bars came from.
@@ -171,6 +181,11 @@ def main(
             # The shipped bar is off the end of the report, so nothing was flagged.
             logger.info('  current bar %d is above --max-bar %d', spec['bar'], max_bar)
         logger.info('  most slots on any one record: %d', max(counts[name], default=0))
+        dead = sorted(slot for slot, count in per_slot[name].items() if count == 0)
+        if dead:
+            logger.info('  populated on no record (%d): %s', len(dead), ', '.join(dead))
+        top = sorted(per_slot[name].items(), key=lambda item: -item[1])[:8]
+        logger.info('  most populated: %s', ', '.join(f'{k}={v:,}' for k, v in top))
 
     if output:
         write_tsv(output, rows)
