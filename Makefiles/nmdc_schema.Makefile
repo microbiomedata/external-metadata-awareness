@@ -48,3 +48,25 @@ local/EnvMediumSoilEnum.png: local/EnvMediumSoilEnum-pvs-keys-parsed-unique.csv
 	cat $< | tail -n +2  | cut -f1 -d, > $@.ids.txt
 	$(RUN) runoak --input sqlite:obo:envo viz --gap-fill --no-view --output $@ .idfile $@.ids.txt
 	rm -rf $@.ids.txt
+
+# Which biosamples would earn each metadata-quality badge, at each qualifying bar.
+# Counts NMDC production MongoDB through the jump-server tunnel on 27124, so bring that
+# up first, and local/nmdc-prod.env must hold MONGO_USER and MONGO_PASSWORD for
+# production, which are not the credentials in local/.env. SCHEMA_REF picks the
+# nmdc-schema branch, tag or commit whose subsets and current bars are reported.
+# One run writes two files: earn rate per subset and bar, and fill per subset and slot.
+SCHEMA_REF ?= main
+NMDC_PROD_MONGO_URI ?= mongodb://localhost:27124/nmdc?directConnection=true
+
+BADGE_ENV_FILE ?= local/nmdc-prod.env
+
+# Phony although it names a file: the source is a live database, so there is no
+# prerequisite whose timestamp could tell make the TSV is still current.
+.PHONY: local/badge_subset_distribution.tsv
+local/badge_subset_distribution.tsv:
+	$(RUN) python -m external_metadata_awareness.badge_subset_distribution \
+		--mongo-uri $(NMDC_PROD_MONGO_URI) \
+		--env-file $(BADGE_ENV_FILE) \
+		--schema-ref $(SCHEMA_REF) \
+		--output $@ \
+		--slot-output $(@:.tsv=_by_slot.tsv)
