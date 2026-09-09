@@ -113,6 +113,25 @@ def distribution_rows(
     return rows
 
 
+def slot_rows(name: str, per_slot: dict[str, int], records: int) -> list[dict[str, Any]]:
+    """One row per slot in a subset, most populated first.
+
+    A different grain from the bar table, so a different file: that one has a row per
+    subset and bar, this one a row per subset and slot. Joining them would give a
+    meaningless cross product.
+    """
+    return [
+        {
+            'subset': name,
+            'slot': slot,
+            'populated': count,
+            'records': records,
+            'pct': f'{100 * count / records:.2f}' if records else '',
+        }
+        for slot, count in sorted(per_slot.items(), key=lambda item: (-item[1], item[0]))
+    ]
+
+
 def write_tsv(path: pathlib.Path, rows: Iterable[dict[str, Any]]) -> None:
     rows = list(rows)
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -139,7 +158,9 @@ def write_tsv(path: pathlib.Path, rows: Iterable[dict[str, Any]]) -> None:
 @click.option('--max-bar', default=5, show_default=True, type=click.IntRange(min=1),
               help='Highest bar to report.')
 @click.option('--output', type=click.Path(path_type=pathlib.Path),
-              help='Write the distribution to this TSV as well as logging it.')
+              help='Write the earn rate per subset and bar to this TSV.')
+@click.option('--slot-output', type=click.Path(path_type=pathlib.Path),
+              help='Write how many records populate each slot to this TSV.')
 def main(
     mongo_uri: str,
     env_file: str,
@@ -149,6 +170,7 @@ def main(
     bar_annotation: str,
     max_bar: int,
     output: pathlib.Path | None,
+    slot_output: pathlib.Path | None,
 ) -> None:
     """Report badge earn rates per record, at bars 1 through --max-bar."""
     source = schema or SCHEMA_URL_TEMPLATE.format(ref=schema_ref)
@@ -166,10 +188,11 @@ def main(
     logger.info('schema %s', schema or f'nmdc-schema {schema_ref}')
     logger.info('%s.%s', database.name, collection)
 
-    rows = []
+    rows, by_slot = [], []
     for name, spec in sorted(subsets.items()):
         subset_rows = distribution_rows(name, spec, counts[name], max_bar)
         rows.extend(subset_rows)
+        by_slot.extend(slot_rows(name, per_slot[name], len(counts[name])))
         logger.info('')
         logger.info('%s: %d slots, current bar %d', name, len(spec['slots']), spec['bar'])
         logger.info('  bar  earners      pct')
@@ -187,10 +210,11 @@ def main(
         top = sorted(per_slot[name].items(), key=lambda item: -item[1])[:8]
         logger.info('  most populated: %s', ', '.join(f'{k}={v:,}' for k, v in top))
 
-    if output:
-        write_tsv(output, rows)
-        logger.info('')
-        logger.info('wrote %s', output)
+    logger.info('')
+    for path, written in ((output, rows), (slot_output, by_slot)):
+        if path:
+            write_tsv(path, written)
+            logger.info('wrote %s (%d rows)', path, len(written))
 
 
 if __name__ == '__main__':

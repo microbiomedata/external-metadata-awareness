@@ -54,6 +54,7 @@ local/EnvMediumSoilEnum.png: local/EnvMediumSoilEnum-pvs-keys-parsed-unique.csv
 # up first, and local/nmdc-prod.env must hold MONGO_USER and MONGO_PASSWORD for
 # production, which are not the credentials in local/.env. SCHEMA_REF picks the
 # nmdc-schema branch, tag or commit whose subsets and current bars are reported.
+# One run writes two files: earn rate per subset and bar, and fill per subset and slot.
 SCHEMA_REF ?= main
 NMDC_PROD_MONGO_URI ?= mongodb://localhost:27124/nmdc?directConnection=true
 
@@ -67,4 +68,5 @@ local/badge_subset_distribution.tsv:
 		--mongo-uri $(NMDC_PROD_MONGO_URI) \
 		--env-file $(BADGE_ENV_FILE) \
 		--schema-ref $(SCHEMA_REF) \
-		--output $@
+		--output $@ \
+		--slot-output $(@:.tsv=_by_slot.tsv)

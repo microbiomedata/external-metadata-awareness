@@ -133,6 +133,21 @@ def test_no_bar_is_flagged_when_the_current_bar_is_above_max_bar():
     assert not any(row["is_current_bar"] for row in rows)
 
 
+def test_slot_rows_are_ordered_by_fill_then_name():
+    rows = bsd.slot_rows("scored", {"a": 1, "b": 3, "c": 1}, records=4)
+
+    assert [row["slot"] for row in rows] == ["b", "a", "c"]
+    assert [row["populated"] for row in rows] == [3, 1, 1]
+    assert rows[0]["pct"] == "75.00"
+
+
+def test_slot_rows_keep_slots_no_record_populates():
+    """The zeros are the point: they show a subset carrying slots nobody fills."""
+    rows = bsd.slot_rows("scored", {"filled": 2, "empty": 0}, records=2)
+
+    assert [(row["slot"], row["populated"]) for row in rows] == [("filled", 2), ("empty", 0)]
+
+
 def test_write_tsv_round_trips(tmp_path):
     path = tmp_path / "nested" / "out.tsv"
 
