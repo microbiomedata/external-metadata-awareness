@@ -13,10 +13,10 @@ table, and ignoring them undercounts any subset that contains one.
 
 The schema is a path or URL, so this is not tied to nmdc-schema.
 
-Example:
-    poetry run badge-subset-distribution \\
-        --dump-dir ~/gitrepos/nmdc-lakehouse/local/mongodb-metadata-20260908_112721 \\
-        --output local/badge_distribution.tsv
+Run it through make, which names the target after the TSV it produces:
+
+    make local/badge_subset_distribution.tsv
+    make local/badge_subset_distribution.tsv NMDC_DUMP_DIR=/path/to/a/newer/dump
 """
 
 import csv
@@ -59,15 +59,21 @@ def badge_subsets(view: SchemaView, annotation: str) -> dict[str, dict[str, Any]
 
 
 def side_table_members(dump_dir: pathlib.Path, stem: str) -> dict[str, set[str]]:
-    """Record ids present in each side table, keyed by the slot that table holds."""
+    """Record ids present in each side table, keyed by the slot that table holds.
+
+    Only the id column is read. Side tables carry every flattened field of the nested
+    value, and reading all of them to collect one column costs memory proportional to
+    the whole dump for no gain.
+    """
     members: dict[str, set[str]] = {}
     for path in dump_dir.glob(f'{stem}_*.parquet'):
-        table = pq.read_table(path)
-        id_columns = [c for c in SIDE_TABLE_ID_COLUMNS if c in table.column_names]
-        if id_columns:
-            members[path.stem[len(stem) + 1:]] = set(table.column(id_columns[0]).to_pylist())
-        else:
+        available = pq.ParquetFile(path).schema_arrow.names
+        id_columns = [c for c in SIDE_TABLE_ID_COLUMNS if c in available]
+        if not id_columns:
             logger.warning('no id column in %s, its slot will read as unpopulated', path.name)
+            continue
+        column = pq.read_table(path, columns=[id_columns[0]]).column(id_columns[0])
+        members[path.stem[len(stem) + 1:]] = set(column.to_pylist())
     return members
 
 
@@ -75,20 +81,23 @@ def slot_populated(
     slot: str,
     table: Any,
     columns: set[str],
-    ids: list[str],
+    ids: np.ndarray,
     side: dict[str, set[str]],
 ) -> tuple[np.ndarray, bool]:
     """Per-record mask for one slot, and whether the slot was found at all.
 
     The prefix match is what picks up a QuantityValue slot's expansion into
     `<slot>_has_numeric_value` and its siblings.
+
+    This runs once per slot per subset, so it stays in numpy. Going through
+    `to_pylist()` here builds a Python list per column and dominates the runtime.
     """
     mask = np.zeros(table.num_rows, dtype=bool)
     matched = [c for c in columns if c == slot or c.startswith(f'{slot}_')]
     for column in matched:
-        mask |= ~np.array(table.column(column).is_null().to_pylist(), dtype=bool)
+        mask |= table.column(column).is_valid().to_numpy(zero_copy_only=False)
     if slot in side:
-        mask |= np.array([record_id in side[slot] for record_id in ids], dtype=bool)
+        mask |= np.isin(ids, list(side[slot]))
     return mask, bool(matched) or slot in side
 
 
@@ -114,7 +123,8 @@ def write_tsv(path: pathlib.Path, rows: Iterable[dict[str, Any]]) -> None:
               help='LinkML schema path or URL supplying subset membership.')
 @click.option('--bar-annotation', default=DEFAULT_BAR_ANNOTATION, show_default=True,
               help='Subset annotation carrying the qualifying bar.')
-@click.option('--max-bar', default=5, show_default=True, help='Highest bar to report.')
+@click.option('--max-bar', default=5, show_default=True, type=click.IntRange(min=1),
+              help='Highest bar to report.')
 @click.option('--output', type=click.Path(path_type=pathlib.Path),
               help='Write the distribution to this TSV as well as logging it.')
 def main(
@@ -137,7 +147,7 @@ def main(
 
     table = pq.read_table(main_table)
     columns = set(table.column_names)
-    ids = table.column('id').to_pylist()
+    ids = table.column('id').to_numpy(zero_copy_only=False)
     side = side_table_members(dump_dir, stem)
 
     logger.info('schema %s, %s records from %s', view.schema.version, f'{table.num_rows:,}', dump_dir.name)

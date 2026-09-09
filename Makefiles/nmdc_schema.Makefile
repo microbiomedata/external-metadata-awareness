@@ -48,3 +48,14 @@ local/EnvMediumSoilEnum.png: local/EnvMediumSoilEnum-pvs-keys-parsed-unique.csv
 	cat $< | tail -n +2  | cut -f1 -d, > $@.ids.txt
 	$(RUN) runoak --input sqlite:obo:envo viz --gap-fill --no-view --output $@ .idfile $@.ids.txt
 	rm -rf $@.ids.txt
+
+# Which biosamples would earn each metadata-quality badge, at each qualifying bar.
+# NMDC_DUMP_DIR holds the flattened parquet the nmdc-lakehouse ETL writes; override it
+# to point at a newer dump. Not phony: the TSV is the product, so make skips the rerun
+# when it is newer than the dump.
+NMDC_DUMP_DIR ?= $(HOME)/gitrepos/nmdc-lakehouse/local/mongodb-metadata-20260908_112721
+
+local/badge_subset_distribution.tsv: $(NMDC_DUMP_DIR)/biosample_set.parquet
+	$(RUN) python -m external_metadata_awareness.badge_subset_distribution \
+		--dump-dir $(NMDC_DUMP_DIR) \
+		--output $@
