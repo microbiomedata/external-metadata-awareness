@@ -1,14 +1,10 @@
-"""Unit tests for badge subset discovery and slot-population counting.
+"""Unit tests for badge subset discovery, slot counting, and bar flagging.
 
-Two behaviours here are easy to break silently and both change the reported earn
-rate rather than raising: a slot whose value lives only in a side table must not
-read as unpopulated, and a QuantityValue slot must be found through its flattened
-`<slot>_has_numeric_value` columns rather than an exact name match.
+The failure that matters here is silent: a wrong emptiness rule or a wrong bar flag
+changes the reported earn rate without raising anything, and the number goes into a
+squad decision about where to set the bar.
 """
 
-import numpy as np
-import pyarrow as pa
-import pyarrow.parquet as pq
 import pytest
 from linkml_runtime.linkml_model.annotations import Annotation
 from linkml_runtime.linkml_model.meta import (
@@ -21,9 +17,21 @@ from linkml_runtime.utils.schemaview import SchemaView
 from external_metadata_awareness import badge_subset_distribution as bsd
 
 
+class FakeCollection:
+    """Stands in for a pymongo collection, recording the projection it was given."""
+
+    def __init__(self, documents):
+        self.documents = documents
+        self.projection = None
+
+    def find(self, query, projection):
+        self.projection = projection
+        return iter(self.documents)
+
+
 @pytest.fixture
 def view():
-    """Two subsets, one carrying a bar and one not, with three slots between them."""
+    """One subset carrying a bar of 3, one carrying none."""
     schema = SchemaDefinition(id="https://example.invalid/test", name="test")
     scored = SubsetDefinition(name="scored")
     scored.annotations["badge_minimum_slots"] = Annotation(tag="badge_minimum_slots", value=3)
@@ -33,26 +41,6 @@ def view():
     schema.slots["host_diet"] = SlotDefinition(name="host_diet", in_subset=["scored"])
     schema.slots["elsewhere"] = SlotDefinition(name="elsewhere", in_subset=["unscored"])
     return SchemaView(schema)
-
-
-@pytest.fixture
-def dump(tmp_path):
-    """A main table and one side table, in the shape the lakehouse ETL writes."""
-    pq.write_table(
-        pa.table(
-            {
-                "id": ["a", "b", "c"],
-                "ph_has_numeric_value": [7.0, None, None],
-                "elsewhere": ["x", None, None],
-            }
-        ),
-        tmp_path / "biosample_set.parquet",
-    )
-    pq.write_table(
-        pa.table({"biosample_set_id": ["b"], "has_raw_value": ["grain"]}),
-        tmp_path / "biosample_set_host_diet.parquet",
-    )
-    return tmp_path
 
 
 def test_badge_subsets_reads_only_annotated_subsets(view):
@@ -67,63 +55,72 @@ def test_badge_subsets_is_empty_when_no_subset_carries_the_annotation(view):
     assert bsd.badge_subsets(view, "no_such_annotation") == {}
 
 
-def test_side_table_members_keys_on_the_slot_name(dump):
-    assert bsd.side_table_members(dump, "biosample_set") == {"host_diet": {"b"}}
+def test_projection_asks_only_for_badge_slots():
+    """Biosample documents are wide; pulling them whole over the tunnel is the slow path."""
+    subsets = {"scored": {"bar": 2, "slots": ["ph", "host_diet"]}}
+    collection = FakeCollection([{}])
+
+    bsd.populated_counts(collection, subsets)
+
+    assert collection.projection == {"ph": 1, "host_diet": 1, "_id": 0}
 
 
-def test_side_table_without_an_id_column_is_skipped(tmp_path):
-    pq.write_table(pa.table({"value": [1]}), tmp_path / "biosample_set_orphan.parquet")
+@pytest.mark.parametrize(
+    "value, populated",
+    [
+        (7.0, True),
+        (0, True),  # a real measurement of zero is data, not absence
+        ({"has_numeric_value": 7.0}, True),
+        (None, False),
+        ("", False),
+        ([], False),
+        ({}, False),
+    ],
+)
+def test_emptiness_rule(value, populated):
+    subsets = {"scored": {"bar": 1, "slots": ["ph"]}}
+    collection = FakeCollection([{"ph": value}])
 
-    assert bsd.side_table_members(tmp_path, "biosample_set") == {}
+    counts = bsd.populated_counts(collection, subsets)
 
-
-def _fixture_args(dump):
-    table = pq.read_table(dump / "biosample_set.parquet")
-    return (
-        table,
-        set(table.column_names),
-        table.column("id").to_numpy(zero_copy_only=False),
-        bsd.side_table_members(dump, "biosample_set"),
-    )
-
-
-def test_quantity_value_slot_is_found_through_its_flattened_column(dump):
-    table, columns, ids, side = _fixture_args(dump)
-
-    mask, found = bsd.slot_populated("ph", table, columns, ids, side)
-
-    assert found
-    assert list(mask) == [True, False, False]
+    assert counts["scored"] == [1 if populated else 0]
 
 
-def test_side_table_only_slot_counts_as_populated(dump):
-    table, columns, ids, side = _fixture_args(dump)
+def test_absent_key_counts_as_unpopulated():
+    subsets = {"scored": {"bar": 1, "slots": ["ph", "host_diet"]}}
+    collection = FakeCollection([{"ph": 7.0}])
 
-    mask, found = bsd.slot_populated("host_diet", table, columns, ids, side)
-
-    assert found
-    # Record b has no column for this slot at all, only a side-table row.
-    assert list(mask) == [False, True, False]
+    assert bsd.populated_counts(collection, subsets)["scored"] == [1]
 
 
-def test_absent_slot_reports_not_found_rather_than_all_false(dump):
-    table, columns, ids, side = _fixture_args(dump)
+def test_counts_are_independent_per_subset():
+    subsets = {
+        "a": {"bar": 1, "slots": ["ph"]},
+        "b": {"bar": 1, "slots": ["host_diet", "ph"]},
+    }
+    collection = FakeCollection([{"ph": 7.0, "host_diet": "grain"}])
 
-    mask, found = bsd.slot_populated("never_flattened", table, columns, ids, side)
+    counts = bsd.populated_counts(collection, subsets)
 
-    assert not found
-    assert not mask.any()
+    assert counts == {"a": [1], "b": [2]}
 
 
-def test_prefix_match_does_not_leak_across_slot_names(dump):
-    """`ph` must not pick up a hypothetical `phosphate`; the separator is required."""
-    table = pa.table({"id": ["a"], "phosphate": [1.0]})
-    ids = np.array(["a"])
+def test_distribution_is_cumulative_and_flags_the_current_bar():
+    spec = {"bar": 2, "slots": ["a", "b", "c"]}
 
-    mask, found = bsd.slot_populated("ph", table, set(table.column_names), ids, {})
+    rows = bsd.distribution_rows("scored", spec, [0, 1, 2, 3], max_bar=3)
 
-    assert not found
-    assert not mask.any()
+    assert [row["earners"] for row in rows] == [3, 2, 1]
+    assert [row["is_current_bar"] for row in rows] == [False, True, False]
+    assert rows[0]["pct"] == "75.00"
+
+
+def test_no_bar_is_flagged_when_the_current_bar_is_above_max_bar():
+    spec = {"bar": 9, "slots": ["a"]}
+
+    rows = bsd.distribution_rows("scored", spec, [1], max_bar=3)
+
+    assert not any(row["is_current_bar"] for row in rows)
 
 
 def test_write_tsv_round_trips(tmp_path):

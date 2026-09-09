@@ -50,12 +50,21 @@ local/EnvMediumSoilEnum.png: local/EnvMediumSoilEnum-pvs-keys-parsed-unique.csv
 	rm -rf $@.ids.txt
 
 # Which biosamples would earn each metadata-quality badge, at each qualifying bar.
-# NMDC_DUMP_DIR holds the flattened parquet the nmdc-lakehouse ETL writes; override it
-# to point at a newer dump. Not phony: the TSV is the product, so make skips the rerun
-# when it is newer than the dump.
-NMDC_DUMP_DIR ?= $(HOME)/gitrepos/nmdc-lakehouse/local/mongodb-metadata-20260908_112721
+# Counts NMDC production MongoDB through the jump-server tunnel on 27124, so bring that
+# up first, and local/nmdc-prod.env must hold MONGO_USER and MONGO_PASSWORD for
+# production, which are not the credentials in local/.env. SCHEMA_REF picks the
+# nmdc-schema branch, tag or commit whose subsets and current bars are reported.
+SCHEMA_REF ?= main
+NMDC_PROD_MONGO_URI ?= mongodb://localhost:27124/nmdc?directConnection=true
 
-local/badge_subset_distribution.tsv: $(NMDC_DUMP_DIR)/biosample_set.parquet
+BADGE_ENV_FILE ?= local/nmdc-prod.env
+
+# Phony although it names a file: the source is a live database, so there is no
+# prerequisite whose timestamp could tell make the TSV is still current.
+.PHONY: local/badge_subset_distribution.tsv
+local/badge_subset_distribution.tsv:
 	$(RUN) python -m external_metadata_awareness.badge_subset_distribution \
-		--dump-dir $(NMDC_DUMP_DIR) \
+		--mongo-uri $(NMDC_PROD_MONGO_URI) \
+		--env-file $(BADGE_ENV_FILE) \
+		--schema-ref $(SCHEMA_REF) \
 		--output $@
