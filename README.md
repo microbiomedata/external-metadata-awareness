@@ -25,6 +25,11 @@ poetry install
 cp local/.env.template local/.env
 $EDITOR local/.env
 
+# Only for targets that read NMDC production MongoDB through the jump-server tunnel.
+# Separate file: local/.env holds local MongoDB credentials, not production ones.
+cp local/nmdc-prod.env.template local/nmdc-prod.env
+$EDITOR local/nmdc-prod.env
+
 # A simple connection check
 poetry run mongo-connect --uri mongodb://localhost:27017/ncbi_metadata --env-file local/.env --connect
 ```
