@@ -42,7 +42,7 @@ In nmdc_metadata.Makefile, the target downloads/nmdc_select_mongodb_dump.gz requ
 
 - SSH tunnel to NMDC MongoDB
 - NERSC credentials
-- NMDC MongoDB credentials (NMDC_MONGO_USER and NMDC_MONGO_PASSWORD)
+- NMDC MongoDB credentials (MONGO_USER and MONGO_PASSWORD)
 
 6. Missing Local Directory Structure
 
