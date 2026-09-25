@@ -5,7 +5,7 @@ they take strings and return strings/dicts with no I/O, so they are cheap to
 test and guard the core parsing logic against refactors.
 """
 
-from external_metadata_awareness.new_env_triad_values_splitter import (
+from external_metadata_awareness.env_triad_parsing import (
     extract_components,
     is_digits_only,
     make_plain_component,
