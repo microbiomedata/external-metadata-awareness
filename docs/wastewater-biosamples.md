@@ -1,0 +1,71 @@
+# Wastewater biosamples in NCBI BioSample
+
+First cut for https://github.com/microbiomedata/external-metadata-awareness/issues/570, Find wastewater biosamples without relying on the NCBI package. Counts measured 2026-09-29 on a local `biosamples_flattened` load of 56,254,160 biosamples whose newest `submission_date` is 2026-05-12.
+
+Reproduce:
+
+```bash
+mongosh "$MONGO_URI/ncbi_metadata?authSource=admin" mongo-js/find_wastewater_biosamples.js    # about 4 min
+mongosh "$MONGO_URI/ncbi_metadata?authSource=admin" mongo-js/report_wastewater_biosamples.js
+```
+
+## Definition
+
+- **Wastewater**: any of `package_content`, `env_package`, `taxonomy_name`, `env_broad_scale`, `env_local_scale`, `env_medium`, `isolation_source` or `description_title` matches `/wast[e]?[ -]?water|sewage|sewer|wwtp/i`.
+- **Adjacent**: none of those match, but one matches `/sludge|effluent|influent|digester|biosolid/i`.
+- **Wastewater package**: the nine MIxS `*.wastewater.6.0` packages, plus NCBI's `SARS-CoV-2.wwsurv.1.0` and `PHA4GE.wwsurv.1.0`.
+
+## Counts
+
+| set | biosamples |
+|---|---|
+| wastewater | 481,508 |
+| adjacent only | 97,565 |
+| wastewater, MIxS wastewater package | 97,100 |
+| wastewater, `SARS-CoV-2.wwsurv.1.0` or `PHA4GE.wwsurv.1.0` | 208,465 |
+| wastewater, no wastewater package | 175,943 |
+
+Filtering on package would miss 36.5% of wastewater samples. The largest groups outside a wastewater package are `Generic.1.0` (94,577) and `Metagenome.environmental.1.0` (44,591).
+
+Wastewater samples found by only one field:
+
+| field | found only by this field |
+|---|---|
+| isolation_source | 43,262 |
+| package_content | 25,688 |
+| taxonomy_name | 21,141 |
+| env_medium | 10,207 |
+| description_title | 5,680 |
+| env_broad_scale | 4,013 |
+| env_local_scale | 2,627 |
+| env_package | 329 |
+
+The `package_content` row counts only MIxS wastewater packages, because the `wwsurv` package names do not match the terms.
+
+Most common organisms are "wastewater metagenome" (328,759), SARS-CoV-2 (13,224) and "activated sludge metagenome" (12,666). The largest submitters are EBI (83,454), the US CDC National Wastewater Surveillance System (44,660), Biobot Analytics (30,953) and Verily Life Sciences (28,443).
+
+## env_broad_scale, env_local_scale, env_medium
+
+| field | absent | ENVO id present | distinct values |
+|---|---|---|---|
+| env_broad_scale | 298,136 | 33,851 | 10,167 |
+| env_local_scale | 354,335 | 32,160 | 5,505 |
+| env_medium | 298,543 | 32,112 | 8,997 |
+
+- The surveillance packages explain most absences: 208,459 of the 208,465 `wwsurv` samples have no `env_broad_scale`.
+- Within MIxS wastewater packages, 25,247 of 97,100 samples (26.0%) have an ENVO id in `env_medium`.
+- Most common values: `env_broad_scale` "sewage treatment plant" (37,186), `env_local_scale` "wastewater treatment plant" (7,671), `env_medium` "sewage" (40,325).
+
+## Curation problems
+
+- Facilities in `env_broad_scale`, where a biome belongs: "sewage treatment plant", "wastewater treatment plant".
+- Placeholders ("missing", "not applicable", "not collected", "restricted access") on about 9,000 to 12,000 samples per env field.
+- Misspelling "wastwater" in `isolation_source` (2,165 samples, plus 12 "WASTWATER").
+- Label and id mixed with formatting noise: "waste water [ENVO:00002001 ]", "activated sludge[ENVO_00002046]".
+- Several values in one field: "anaerobic digester| wastewater treatment plant".
+
+## Limits
+
+- Precision was checked by eye on 25 random wastewater samples outside any wastewater package: 23 were wastewater or treatment-plant samples; 2 matched on fields not reviewed. The terms also catch hospital wastewater and industrial effluent.
+- Not yet run against the BERDL (KBase BER Data Lakehouse) copy of NCBI BioSample, and not yet checked for recall against a known list of wastewater accessions.
+- The value sets that would fix the env fields are requested in https://github.com/microbiomedata/submission-schema/issues/486, Add wastewater value sets for env_broad_scale, env_local_scale and env_medium.
