@@ -64,8 +64,22 @@ Most common organisms are "wastewater metagenome" (328,759), SARS-CoV-2 (13,224)
 - Label and id mixed with formatting noise: "waste water [ENVO:00002001 ]", "activated sludge[ENVO_00002046]".
 - Several values in one field: "anaerobic digester| wastewater treatment plant".
 
+## Recall check
+
+Checked 2026-09-30 against the 491 BioSamples in the five wastewater BioProjects curated in https://github.com/cmungall/site-kb (`db/raw/research/wastewater_expansion_ena.json`, retrieved 2026-09-23). All 491 are in the local corpus and all 491 are candidates. 389 match the wastewater terms; the other 102 are all from PRJNA432264 and say only "activated sludge", so they count as adjacent.
+
+| BioProject | biosamples | wastewater | adjacent only |
+|---|---|---|---|
+| PRJNA1012295 | 222 | 222 | 0 |
+| PRJNA1149857 | 134 | 134 | 0 |
+| PRJNA432264 | 114 | 12 | 102 |
+| PRJNA1037153 | 11 | 11 | 0 |
+| PRJNA505617 | 10 | 10 | 0 |
+
+How these studies were chosen isn't recorded here; if they were found by searching for wastewater, this is a weak test of recall. It does suggest that activated sludge belongs in the wastewater set rather than the adjacent one.
+
 ## Limits
 
 - Precision was checked by eye on 25 random wastewater samples outside any wastewater package: 23 were wastewater or treatment-plant samples; 2 matched on fields not reviewed. The terms also catch hospital wastewater and industrial effluent.
-- Not yet run against the BERDL (KBase BER Data Lakehouse) copy of NCBI BioSample, and not yet checked for recall against a known list of wastewater accessions.
+- Not yet run against the BERDL (KBase BER Data Lakehouse) copy of NCBI BioSample.
 - The value sets that would fix the env fields are requested in https://github.com/microbiomedata/submission-schema/issues/486, Add wastewater value sets for env_broad_scale, env_local_scale and env_medium.
