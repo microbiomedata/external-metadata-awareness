@@ -22,6 +22,7 @@ mongosh "$MONGO_URI" mongo-js/report_wastewater_biosamples.js
 | set | biosamples |
 |---|---|
 | wastewater | 503,365 |
+| of which matched only by "activated sludge" | 21,857 |
 | adjacent only | 75,708 |
 | wastewater, MIxS wastewater package | 97,100 |
 | wastewater, `SARS-CoV-2.wwsurv.1.0` or `PHA4GE.wwsurv.1.0` | 208,465 |
@@ -84,6 +85,6 @@ How these studies were chosen isn't recorded here; if they were found by searchi
 
 ## Limits
 
-- Precision was checked by eye on 25 random wastewater samples outside any wastewater package, under the original terms: 23 were wastewater or treatment-plant samples; 2 matched on fields not reviewed. The 21,857 samples added by activated sludge were not spot-checked. The terms also catch hospital wastewater and industrial effluent.
+- Precision was checked by eye on 25 random wastewater samples outside any wastewater package, under the original terms: 23 were wastewater or treatment-plant samples; 2 matched on fields not reviewed. The 21,857 samples that match only "activated sludge" were checked separately on 50 random samples (2026-10-01, one reader, judged from the record's own fields): 2 state a treatment plant, 9 a lab or pilot reactor, microcosm or experiment, 12 are genomes derived from activated sludge with no setting given, and 27 give no setting. So this row cannot be read as treatment-plant samples; exclude it if lab reactors should not count. The terms also catch hospital wastewater and industrial effluent.
 - Not yet run against the BERDL (KBase BER Data Lakehouse) copy of NCBI BioSample.
 - The value sets that would fix the env fields are requested in https://github.com/microbiomedata/submission-schema/issues/486, Add wastewater value sets for env_broad_scale, env_local_scale and env_medium.
