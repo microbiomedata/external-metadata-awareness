@@ -52,8 +52,8 @@ top("taxonomy_name", { $nor: CORE.$or }, 12);
 
 print("\n== env fields among core samples");
 ENV_FIELDS.forEach(f => print(`${f}: distinct ${c.distinct(f, CORE).length}, absent ${c.countDocuments(and({ [f]: { $exists: false } }))}, placeholder ${c.countDocuments(and({ [f]: PLACEHOLDER }))}, has ENVO id ${c.countDocuments(and({ [f]: /ENVO[:_]\d+/i }))}`));
-print(`wwsurv package with no env_broad_scale: ${c.countDocuments({ package_content: /wwsurv/, env_broad_scale: null })} of ${c.countDocuments({ package_content: /wwsurv/ })}`);
-print(`MIxS wastewater package with ENVO id in env_medium: ${c.countDocuments({ package_content: /wastewater/, env_medium: /ENVO[:_]\d+/i })} of ${c.countDocuments({ package_content: /wastewater/ })}`);
+print(`wwsurv package with no env_broad_scale: ${c.countDocuments(and({ package_content: /wwsurv/, env_broad_scale: null }))} of ${c.countDocuments(and({ package_content: /wwsurv/ }))}`);
+print(`MIxS wastewater package with ENVO id in env_medium: ${c.countDocuments(and({ package_content: /wastewater/, env_medium: /ENVO[:_]\d+/i }))} of ${c.countDocuments(and({ package_content: /wastewater/ }))}`);
 
 print("\n== spellings of isolation_source that are only the word wastewater");
 top("isolation_source", { isolation_source: /^\s*wast[e]?[ -]?water\s*$/i }, 10);

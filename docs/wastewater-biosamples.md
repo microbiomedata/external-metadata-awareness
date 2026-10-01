@@ -5,8 +5,10 @@ First cut for https://github.com/microbiomedata/external-metadata-awareness/issu
 Reproduce:
 
 ```bash
-mongosh "$MONGO_URI/ncbi_metadata?authSource=admin" mongo-js/find_wastewater_biosamples.js    # about 4 min
-mongosh "$MONGO_URI/ncbi_metadata?authSource=admin" mongo-js/report_wastewater_biosamples.js
+# MONGO_URI is the full URI including the database, e.g. mongodb://localhost:27017/ncbi_metadata
+# (add credentials and ?authSource=admin if auth is on; see docs/MONGODB_PATTERNS.md)
+mongosh "$MONGO_URI" mongo-js/find_wastewater_biosamples.js    # about 4 min
+mongosh "$MONGO_URI" mongo-js/report_wastewater_biosamples.js
 ```
 
 ## Definition
