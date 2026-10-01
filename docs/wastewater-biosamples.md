@@ -83,6 +83,19 @@ PRJNA1037153's 13 runs carry 11 different child study accessions (PRJNA1029202 t
 
 How these studies were chosen isn't recorded here; if they were found by searching for wastewater, this is a weak test of recall.
 
+## MGnify cross-check
+
+Checked 2026-10-01 against the 4,256 samples MGnify files under `root:Engineered:Wastewater` and its child biomes (API v1, `/biomes/root:Engineered:Wastewater/samples`). Every one carries a BioSample accession, and all 4,256 are in the local NCBI corpus, so MGnify adds no samples NCBI lacks.
+
+| tier in this scan | MGnify wastewater samples |
+|---|---|
+| wastewater, original terms | 3,258 |
+| wastewater, "activated sludge" only | 18 |
+| adjacent only | 132 |
+| not a candidate | 848 |
+
+The 848 have no wastewater, sludge or effluent wording in any of the eight fields. The largest groups are duck (*Anas platyrhynchos*) water and cecal contents (338), "riverine metagenome" stream water (192), pig-manure biogas fermenters (60) and biofilters (48). Whether MGnify's biome or the NCBI record is wrong for these is not settled here.
+
 ## Limits
 
 - Precision was checked by eye on 25 random wastewater samples outside any wastewater package, under the original terms: 23 were wastewater or treatment-plant samples; 2 matched on fields not reviewed. The 21,857 samples that match only "activated sludge" were checked separately on 50 random samples (2026-10-01, one reader, judged from the record's own fields): 2 state a treatment plant, 9 a lab or pilot reactor, microcosm or experiment, 12 are genomes derived from activated sludge with no setting given, and 27 give no setting. So this row cannot be read as treatment-plant samples; exclude it if lab reactors should not count. The terms also catch hospital wastewater and industrial effluent.
