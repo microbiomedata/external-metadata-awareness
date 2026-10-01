@@ -4,7 +4,7 @@
 // Related: https://github.com/microbiomedata/external-metadata-awareness/issues/570
 
 const c = db.wastewater_biosample_candidates;
-const CORE_TERMS = /wast[e]?[ -]?water|sewage|sewer|wwtp/i;
+const CORE_TERMS = /wast[e]?[ -]?water|sewage|sewer|wwtp|activated[ -]?sludge/i;
 const WW_PACKAGE = /wastewater|wwsurv/;
 const FIELDS = [
   "package_content", "env_package", "taxonomy_name",
