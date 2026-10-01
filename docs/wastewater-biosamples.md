@@ -78,6 +78,8 @@ Checked 2026-09-30 against the 491 BioSamples in the five wastewater BioProjects
 | PRJNA1037153 | 11 | 11 | 0 |
 | PRJNA505617 | 10 | 10 | 0 |
 
+PRJNA1037153's 13 runs carry 11 different child study accessions (PRJNA1029202 to PRJNA1029224), so it looks like an umbrella BioProject; its samples are filed under the child projects.
+
 How these studies were chosen isn't recorded here; if they were found by searching for wastewater, this is a weak test of recall. It does suggest that activated sludge belongs in the wastewater set rather than the adjacent one.
 
 ## Limits
