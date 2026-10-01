@@ -94,10 +94,11 @@ Checked 2026-10-01 against the 4,256 samples MGnify files under `root:Engineered
 | adjacent only | 132 |
 | not a candidate | 848 |
 
-The 848 have no wastewater, sludge or effluent wording in any of the eight fields. The largest groups are duck (*Anas platyrhynchos*) water and cecal contents (338), "riverine metagenome" stream water (192), pig-manure biogas fermenters (60) and biofilters (48). Whether MGnify's biome or the NCBI record is wrong for these is not settled here.
+The 848 have no wastewater, sludge or effluent wording in any of the eight fields. The largest groups are duck (*Anas platyrhynchos*) water and cecal contents (338), "riverine metagenome" stream water (192), pig-manure biogas fermenters (60) and biofilters (48). Reading 20 of them at random (2026-10-01): 3 are sediment from a wastewater treatment plant that the NCBI record names only in `geo_loc_name`; the other 17 are duck farm water and cecal contents, stream water, pig-manure biogas digesters, aquarium-style tanks and biofilters, which look like MGnify filing broader material under wastewater.
 
 ## Limits
 
 - Precision was checked by eye on 25 random wastewater samples outside any wastewater package, under the original terms: 23 were wastewater or treatment-plant samples; 2 matched on fields not reviewed. The 21,857 samples that match only "activated sludge" were checked separately on 50 random samples (2026-10-01, one reader, judged from the record's own fields): 2 state a treatment plant, 9 a lab or pilot reactor, microcosm or experiment, 12 are genomes derived from activated sludge with no setting given, and 27 give no setting. So this row cannot be read as treatment-plant samples; exclude it if lab reactors should not count. The terms also catch hospital wastewater and industrial effluent.
+- `geo_loc_name` is not scanned. 556 biosamples name a treatment plant or sewer only there (for example "USA: Altavista Wastewater Treatment Plant, Altavista, Virgina"), some of them river samples upstream or downstream of a plant.
 - Not yet run against the BERDL (KBase BER Data Lakehouse) copy of NCBI BioSample.
 - The value sets that would fix the env fields are requested in https://github.com/microbiomedata/submission-schema/issues/486, Add wastewater value sets for env_broad_scale, env_local_scale and env_medium.
