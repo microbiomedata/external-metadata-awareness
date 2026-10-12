@@ -50,8 +50,8 @@ db.wastewater_biosample_candidates.aggregate([
       bp: {
         $cond: [
           { $gt: [{ $size: "$bp_links" }, 0] },
-          "$bp_links",
-          { $map: { input: { $setUnion: ["$bp_sra.bioproject_accession"] }, as: "a", in: { label: "$$a" } } }
+          { $setUnion: ["$bp_links.label"] },
+          { $setUnion: ["$bp_sra.bioproject_accession"] }
         ]
       },
       bp_source: { $cond: [{ $gt: [{ $size: "$bp_links" }, 0] }, "biosample", { $cond: [{ $gt: [{ $size: "$bp_sra" }, 0] }, "sra", "none"] }] }
@@ -66,10 +66,12 @@ db.wastewater_biosample_candidates.aggregate([
       wwsurv_pkg: { $regexMatch: { input: { $ifNull: ["$package_content", ""] }, regex: /wwsurv/ } },
       in_mgnify: { $gt: [{ $size: { $ifNull: ["$mg", []] } }, 0] },
       country: { $trim: { input: { $arrayElemAt: [{ $split: [{ $ifNull: ["$geo_loc_name", ""] }, ":"] }, 0] } } },
-      bioproject: { $ifNull: [{ $arrayElemAt: ["$bp.label", 0] }, "(no BioProject link)"] },
       n_bioprojects: { $size: "$bp" }
     }
   },
+  // A biosample linked to several BioProjects is counted under each, so every row shows that project's full membership
+  { $unwind: { path: "$bp", preserveNullAndEmptyArrays: true } },
+  { $addFields: { bioproject: { $ifNull: ["$bp", "(no BioProject link)"] } } },
   {
     $group: {
       _id: "$bioproject",

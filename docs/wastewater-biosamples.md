@@ -98,28 +98,27 @@ The 848 have no wastewater, sludge or effluent wording in any of the eight field
 
 ## By BioProject
 
-[wastewater-bioprojects.tsv](wastewater-bioprojects.tsv) has one row per BioProject (15,429 rows, plus one for candidates with no BioProject), so a subset can be picked by whole project. Built 2026-10-12 from the same candidates:
+[wastewater-bioprojects.tsv](wastewater-bioprojects.tsv) has one row per BioProject (15,514 rows, plus one for candidates with no BioProject), so a subset can be picked by whole project. Built 2026-10-12 from the same candidates:
 
 ```bash
 mongosh "$MONGO_URI" mongo-js/wastewater_bioproject_table.js > docs/wastewater-bioprojects.tsv
 ```
 
-The BioProject comes from the BioSample record's own link, or from the SRA run table when the record has none, which is common for EBI samples. The `in_mgnify` column needs a `mgnify_wastewater_samples` collection, one document per MGnify sample with its BioSample accession in `accession`; without that collection the script still runs and counts every sample as not in MGnify.
+The BioProject comes from the BioSample record's own link, or from the SRA run table when the record has none, which is common for EBI samples. A biosample linked to several BioProjects is counted in each row, so each row is that project's full membership and the column sums exceed the totals above. The `in_mgnify` column needs a `mgnify_wastewater_samples` collection, one document per MGnify sample with its BioSample accession in `accession`; without that collection the script still runs and counts every sample as not in MGnify. Fields containing a double quote are quoted, so read the file with a quote-aware TSV reader.
 
-| set | BioProjects | wastewater biosamples |
+| BioProjects by wastewater biosamples | BioProjects | sum of wastewater biosamples |
 |---|---|---|
-| any wastewater biosample | 9,404 | 444,658 |
-| 1 to 9 | 6,424 | 16,970 |
-| 10 to 99 | 2,481 | 73,171 |
-| 100 to 999 | 443 | 113,512 |
-| 1,000 or more | 56 | 241,005 |
-| no surveillance-package samples | 9,238 | 235,154 |
-| some MGnify wastewater samples | 148 | |
+| any | 9,457 | 446,710 |
+| 1 to 9 | 6,455 | 17,040 |
+| 10 to 99 | 2,499 | 73,648 |
+| 100 to 999 | 447 | 114,981 |
+| 1,000 or more | 56 | 241,041 |
+| no surveillance-package samples | 9,286 | 237,116 |
+| some MGnify wastewater samples | 150 | |
 
-- 58,707 wastewater biosamples (11.7%) have no BioProject in either source.
-- 2,269 candidates link to more than one BioProject; each is counted under the first link only.
+- 444,658 distinct wastewater biosamples have a BioProject; 58,707 (11.7%) have none in either source.
 - The largest projects are SARS-CoV-2 surveillance (for example PRJNA839090, Biobot Analytics, 22,153).
-- PRJEB13831 (Global surveillance of infectious diseases and antimicrobial resistance from sewage) has 97 wastewater biosamples, 81 of them in MGnify.
+- PRJEB13831 (Global surveillance of infectious diseases and antimicrobial resistance from sewage) has 97 wastewater biosamples, 81 of them in MGnify. Those 81 are also in PRJEB23496 (COMPARE global sewage snapshot virome sequencing part).
 - PRJNA1037153 from site-kb has no row; its samples are filed under the child projects.
 
 ## Limits
