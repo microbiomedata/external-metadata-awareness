@@ -96,6 +96,32 @@ Checked 2026-10-01 against the 4,256 samples MGnify files under `root:Engineered
 
 The 848 have no wastewater, sludge or effluent wording in any of the eight fields. The largest groups are duck (*Anas platyrhynchos*) water and cecal contents (338), "riverine metagenome" stream water (192), pig-manure biogas fermenters (60) and biofilters (48). Reading 20 of them at random (2026-10-01): 3 are sediment from a wastewater treatment plant that the NCBI record names only in `geo_loc_name`; the other 17 are duck farm water and cecal contents, stream water, pig-manure biogas digesters, aquarium-style tanks and biofilters, which look like MGnify filing broader material under wastewater.
 
+## By BioProject
+
+[wastewater-bioprojects.tsv](wastewater-bioprojects.tsv) has one row per BioProject (15,429 rows, plus one for candidates with no BioProject), so a subset can be picked by whole project. Built 2026-10-12 from the same candidates:
+
+```bash
+mongosh "$MONGO_URI" mongo-js/wastewater_bioproject_table.js > docs/wastewater-bioprojects.tsv
+```
+
+The BioProject comes from the BioSample record's own link, or from the SRA run table when the record has none, which is common for EBI samples. The `in_mgnify` column needs a `mgnify_wastewater_samples` collection, one document per MGnify sample with its BioSample accession in `accession`; without that collection the script still runs and counts every sample as not in MGnify.
+
+| set | BioProjects | wastewater biosamples |
+|---|---|---|
+| any wastewater biosample | 9,404 | 444,658 |
+| 1 to 9 | 6,424 | 16,970 |
+| 10 to 99 | 2,481 | 73,171 |
+| 100 to 999 | 443 | 113,512 |
+| 1,000 or more | 56 | 241,005 |
+| no surveillance-package samples | 9,238 | 235,154 |
+| some MGnify wastewater samples | 148 | |
+
+- 58,707 wastewater biosamples (11.7%) have no BioProject in either source.
+- 2,269 candidates link to more than one BioProject; each is counted under the first link only.
+- The largest projects are SARS-CoV-2 surveillance (for example PRJNA839090, Biobot Analytics, 22,153).
+- PRJEB13831 (Global surveillance of infectious diseases and antimicrobial resistance from sewage) has 97 wastewater biosamples, 81 of them in MGnify.
+- PRJNA1037153 from site-kb has no row; its samples are filed under the child projects.
+
 ## Limits
 
 - Precision was checked by eye on 25 random wastewater samples outside any wastewater package, under the original terms: 23 were wastewater or treatment-plant samples; 2 matched on fields not reviewed. The 21,857 samples that match only "activated sludge" were checked separately on 50 random samples (2026-10-01, one reader, judged from the record's own fields): 2 state a treatment plant, 9 a lab or pilot reactor, microcosm or experiment, 12 are genomes derived from activated sludge with no setting given, and 27 give no setting. So this row cannot be read as treatment-plant samples; exclude it if lab reactors should not count. The terms also catch hospital wastewater and industrial effluent.
