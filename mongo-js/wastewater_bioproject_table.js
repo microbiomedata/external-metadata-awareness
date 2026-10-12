@@ -20,6 +20,16 @@ const anyField = re => ({ $or: FIELDS.map(f => ({ $regexMatch: { input: { $ifNul
 const flag = cond => ({ $sum: { $cond: [cond, 1, 0] } });
 const hasMgnify = db.getCollectionNames().includes("mgnify_wastewater_samples");
 
+// The lookups below need these; the flattening scripts do not create them. Skip any that already exist under another name.
+const ensureIndex = (coll, key) => {
+  const k = JSON.stringify(key);
+  if (!coll.getIndexes().some(i => JSON.stringify(i.key) === k)) coll.createIndex(key);
+};
+ensureIndex(db.biosamples_links, { target: 1, accession: 1 });
+ensureIndex(db.sra_biosamples_bioprojects, { biosample_accession: 1 });
+ensureIndex(db.bioprojects_flattened, { accession: 1 });
+if (hasMgnify) ensureIndex(db.mgnify_wastewater_samples, { accession: 1 });
+
 db.wastewater_biosample_candidates.aggregate([
   { $project: Object.assign({ accession: 1, owner_name: 1, geo_loc_name: 1 }, Object.fromEntries(FIELDS.map(f => [f, 1]))) },
   {
@@ -93,7 +103,11 @@ db.wastewater_biosample_candidates.aggregate([
   { $out: "wastewater_bioproject_summary" }
 ], { allowDiskUse: true });
 
-const clean = s => (s === null || s === undefined ? "" : String(s).replace(/[\t\r\n]+/g, " ").trim());
+// Quote a field that contains a double quote, doubling the quotes, so quote-aware TSV readers keep every row
+const clean = s => {
+  const v = s === null || s === undefined ? "" : String(s).replace(/[\t\r\n]+/g, " ").trim();
+  return v.includes('"') ? `"${v.replace(/"/g, '""')}"` : v;
+};
 const list = a => (a || []).filter(x => x).sort().join("; ");
 const cols = ["bioproject", "title", "biosamples", "wastewater", "activated_sludge_only", "adjacent_only",
   "mixs_wastewater_package", "wwsurv_package", "in_mgnify", "in_site_kb", "linked_to_several_bioprojects", "bioproject_from_sra_runs",
