@@ -98,7 +98,7 @@ The 848 have no wastewater, sludge or effluent wording in any of the eight field
 
 ## By BioProject
 
-[wastewater-bioprojects.tsv](wastewater-bioprojects.tsv) has one row per BioProject (15,514 rows, plus one for candidates with no BioProject), so a subset can be picked by whole project. Built 2026-10-12 from the same candidates:
+[wastewater-bioprojects.tsv](wastewater-bioprojects.tsv) has one row per BioProject (15,514 rows, plus one for candidates with no BioProject), so a subset can be picked by whole project. Built 2026-10-12 from the same candidates, with the inflow and outflow columns added 2026-10-13:
 
 ```bash
 mongosh "$MONGO_URI" mongo-js/wastewater_bioproject_table.js > docs/wastewater-bioprojects.tsv
@@ -120,6 +120,35 @@ The BioProject comes from the BioSample record's own link, or from the SRA run t
 - The largest projects are SARS-CoV-2 surveillance (for example PRJNA839090, Biobot Analytics, 22,153).
 - PRJEB13831 (Global surveillance of infectious diseases and antimicrobial resistance from sewage) has 97 wastewater biosamples, 81 of them in MGnify. Those 81 are also in PRJEB23496 (COMPARE global sewage snapshot virome sequencing part).
 - PRJNA1037153 from site-kb has no row; its samples are filed under the child projects.
+
+## Inflow and outflow
+
+Inflow here means untreated sewage entering a plant or sampled in the sewer; outflow means effluent. Measured 2026-10-13 on the same 579,073 candidates. Three columns of the BioProject table count them:
+
+- `inflow_ww_sample_matrix`: `ww_sample_matrix` is "raw wastewater" or "post grit removal". 207,072 of the 207,847 biosamples that have this field are in the NCBI `SARS-CoV-2.wwsurv.1.0` package; its other values are "primary effluent", "secondary effluent", "primary sludge", "sewer pipeline sediments" and placeholders.
+- `inflow_wording`: any of `env_broad_scale`, `env_local_scale`, `env_medium`, `isolation_source` or `description_title` matches `/influent|inflow|in-flow|raw (sewage|wastewater|waste water)|untreated (sewage|wastewater|waste water)|plant inlet|\binlet\b/i`, except "surface water influent", which is river water.
+- `outflow`: `ww_sample_matrix` contains "effluent", or one of those five fields matches `/effluent|outflow|outfall|treated (sewage|wastewater|waste water)|discharge/i`, not counting "untreated".
+
+| set | biosamples |
+|---|---|
+| inflow by `ww_sample_matrix` | 196,969 |
+| inflow by wording | 53,598 |
+| inflow by wording only, not by `ww_sample_matrix` | 49,113 |
+| inflow by either | 246,082 |
+| outflow | 13,426 |
+| both inflow and outflow | 36 |
+
+| BioProjects with at least one | BioProjects | sum of biosamples |
+|---|---|---|
+| inflow by `ww_sample_matrix` | 148 | 196,520 |
+| inflow by wording | 507 | 16,310 |
+| inflow by wording, no surveillance-package samples | 500 | |
+| outflow | 1,280 | 12,781 |
+
+- Most inflow samples come from the surveillance package; the largest such project is PRJNA839090 (Biobot Analytics, 22,008 by `ww_sample_matrix`).
+- Outside those packages the largest inflow projects are PRJNA1247874 (CASPER metagenomic sequencing, 1,729), PRJNA966185 (Baylor, 808), PRJNA729801 (Southern California metatranscriptomes, 640) and PRJEB53227 (614).
+- 37,300 of the wording matches have no BioProject. 37,057 of those are EBI samples in `Generic.1.0` titled "European sewage" with `isolation_source` "untreated sewage"; none has a BioProject link or an SRA run in the local copy.
+- Outflow wording also catches bioreactor and biofilter effluent, palm oil mill effluent, hospital effluent and "ileostomy effluent", so read the outflow column as samples to drop from an inflow set, not as treatment-plant effluent.
 
 ## Limits
 
