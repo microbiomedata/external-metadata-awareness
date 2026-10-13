@@ -13,7 +13,6 @@ Related: https://github.com/microbiomedata/external-metadata-awareness/issues/58
 
 import json
 import logging
-import re
 from pathlib import Path
 
 import click
@@ -66,6 +65,24 @@ def mask(text: pd.Series) -> pd.Series:
     return out.str.replace(r"\s+", " ", regex=True).str.strip()
 
 
+def project_groups(bioprojects: pd.Series) -> list[str | None]:
+    """One group per set of BioProjects that share a sample, so a held-out project shares no sample with training."""
+    parent: dict[str, str] = {}
+
+    def find(a: str) -> str:
+        while parent.setdefault(a, a) != a:
+            parent[a] = parent[parent[a]]
+            a = parent[a]
+        return a
+
+    for bps in bioprojects:
+        if isinstance(bps, list) and bps:
+            root = find(bps[0])
+            for other in bps[1:]:
+                parent[find(other)] = root
+    return [find(bps[0]) if isinstance(bps, list) and bps else None for bps in bioprojects]
+
+
 def load(mongo_uri: str, env_file: str | None) -> pd.DataFrame:
     client = get_mongo_client(mongo_uri, env_file)
     db = client.get_default_database()
@@ -76,8 +93,8 @@ def load(mongo_uri: str, env_file: str | None) -> pd.DataFrame:
     for f in TEXT_FIELDS + ["sample_name", "package_content"]:
         df[f] = df[f].fillna("").astype(str) if f in df else ""
     df["text_raw"] = df[TEXT_FIELDS + ["sample_name"]].agg(" | ".join, axis=1)
-    # Hold out by the first BioProject; a sample with none is its own group
-    df["group"] = [bp[0] if isinstance(bp, list) and bp else acc for bp, acc in zip(df["bioprojects"], df["accession"])]
+    # Samples with no BioProject get no group; they are used for training only
+    df["group"] = project_groups(df["bioprojects"])
     return df
 
 
@@ -96,7 +113,10 @@ def main(mongo_uri: str, env_file: str | None, out_dir: Path, threshold: float, 
     text = mask(df["text_raw"])
     logger.info("samples %d, with any rule label %d", len(df), int(labels.any(axis=1).sum()))
 
-    train_idx, test_idx = next(GroupShuffleSplit(n_splits=1, test_size=0.2, random_state=seed).split(df, groups=df["group"]))
+    linked = np.flatnonzero(df["group"].notna().to_numpy())
+    unlinked = np.flatnonzero(df["group"].isna().to_numpy())
+    tr, te = next(GroupShuffleSplit(n_splits=1, test_size=0.2, random_state=seed).split(linked, groups=df["group"].iloc[linked]))
+    train_idx, test_idx = np.concatenate([linked[tr], unlinked]), linked[te]
     # Words of three or more letters only: character n-grams and digits let the model memorize sample-ID schemes of single projects
     vec = TfidfVectorizer(analyzer="word", token_pattern=r"(?u)\b[^\W\d_]{3,}\b", ngram_range=(1, 2), min_df=20, max_features=200_000, sublinear_tf=True, lowercase=True)
     x_train = vec.fit_transform(text.iloc[train_idx])
@@ -116,14 +136,15 @@ def main(mongo_uri: str, env_file: str | None, out_dir: Path, threshold: float, 
         row["unlabeled_predicted"] = int((prob[unlabeled] >= threshold).sum())
         report.append(row)
         # Highest-scoring unlabeled samples, for reading by eye
-        top = np.argsort(-np.where(unlabeled, prob, -1))[:200]
+        candidates = np.flatnonzero(unlabeled)
+        top = candidates[np.argsort(-prob[candidates])[:200]]
         pd.DataFrame({"accession": df["accession"].iloc[top], "probability": prob[top].round(3), "group": df["group"].iloc[top],
                       "text": df["text_raw"].iloc[top]}).to_csv(out_dir / f"unlabeled_top_{subtype}.tsv", sep="\t", index=False)
         terms = np.array(vec.get_feature_names_out())[np.argsort(-model.coef_[0])[:25]]
         logger.info("%s top features: %s", subtype, ", ".join(repr(t) for t in terms))
 
     pd.DataFrame(report).to_csv(out_dir / "report.tsv", sep="\t", index=False)
-    (out_dir / "run.json").write_text(json.dumps({"seed": seed, "threshold": threshold, "train": len(train_idx), "test": len(test_idx)}, indent=2))
+    (out_dir / "run.json").write_text(json.dumps({"seed": seed, "threshold": threshold, "train": len(train_idx), "test": len(test_idx), "train_without_bioproject": len(unlinked)}, indent=2))
     click.echo(pd.DataFrame(report).to_string(index=False))
 
 

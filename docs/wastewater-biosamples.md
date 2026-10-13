@@ -186,24 +186,27 @@ A first try at https://github.com/microbiomedata/external-metadata-awareness/iss
 MONGO_URI=... poetry run wastewater-subtype-classifier --out-dir local/wastewater_subtype/<date>
 ```
 
-Labels come from rules: inflow and effluent from `wastewater_flow_labels`, plus sludge (`sludge|mixed liquor|biosolid`), digester (`digest(er|or|ate|ion)|biogas`, which wins over sludge) and sewer (`sewer`, `manhole`, `sewershed`, pump or lift station). The rule words are removed from the text before training, so the model has to learn from the rest of the record. The model is one logistic regression per subtype, on word unigrams and bigrams (letters only, so it can't memorize sample-ID patterns), from `env_broad_scale`, `env_local_scale`, `env_medium`, `isolation_source`, `description_title` and the sample name. 20% of BioProjects are held out (80,999 of 579,073 samples; seed 0).
+Labels come from rules: inflow and effluent from `wastewater_flow_labels`, plus sludge (`sludge|mixed liquor|biosolid`), digester (`digest(er|or|ate|ion)|biogas`, which wins over sludge) and sewer (`sewer`, `manhole`, `sewershed`, pump or lift station). The rule words are removed from the text before training, so the model has to learn from the rest of the record. The model is one logistic regression per subtype, on word unigrams and bigrams (letters only, so it can't memorize sample-ID patterns), from `env_broad_scale`, `env_local_scale`, `env_medium`, `isolation_source`, `description_title` and the sample name.
 
-| subtype | rule labels | held-out projects with a positive | held-out F1 | held-out F1, no surveillance package | unlabeled samples predicted at 0.8 |
+Evaluation holds out 20% of BioProject groups (79,918 of 579,073 samples; seed 0). BioProjects that share a sample form one group, and the 65,712 samples with no BioProject are used for training only. An earlier run that split those samples one by one put near-identical "European sewage" records on both sides and reported inflow F1 0.817 outside the surveillance package; with them kept out of the test set it is 0.146.
+
+| subtype | rule labels | held-out groups with a positive | held-out F1 | held-out F1, no surveillance package | unlabeled samples predicted at 0.8 |
 |---|---|---|---|---|---|
-| inflow | 246,889 | 7,692 | 0.844 | 0.817 | 12,483 |
-| effluent | 14,464 | 417 | 0.186 | 0.189 | 9,499 |
-| sludge | 119,364 | 2,989 | 0.778 | 0.796 | 3,564 |
-| digester | 40,568 | 1,764 | 0.883 | 0.883 | 259 |
-| sewer | 5,964 | 26 | 0.039 | 0.040 | 1,268 |
+| inflow | 246,889 | 143 | 0.789 | 0.146 | 12,170 |
+| effluent | 14,464 | 275 | 0.163 | 0.263 | 11,474 |
+| sludge | 119,364 | 1,329 | 0.801 | 0.802 | 3,562 |
+| digester | 40,568 | 489 | 0.760 | 0.760 | 283 |
+| sewer | 5,964 | 21 | 0.078 | 0.088 | 659 |
 
-Reading 12 random samples from each subtype's 200 highest-scoring unlabeled samples (one reader):
+Reading each subtype's 200 highest-scoring unlabeled samples (one reader, 8 random ones each plus counts):
 
-- Inflow: all 12 are SARS-CoV-2 surveillance samples without `ww_sample_matrix`. The model learned that surveillance means inflow, which may be true but is not evidence.
-- Effluent: catches what the rules miss, such as the misspelling "effulent" and "Treated municipal sewage", but also "Hexane-treated" and "pesticide treated".
-- Digester and sludge: mostly lab anaerobic reactors, anammox granules and bioreactor biomass; some real, some not.
+- Inflow: 197 of 200 are SARS-CoV-2 surveillance samples without `ww_sample_matrix`. The model learned that surveillance means inflow, which may be true but is not evidence, and it does not carry inflow to other projects.
+- Effluent: finds rule gaps, such as "A secondary Aug14" and river water downstream of a plant, but also "Incoming wastewater from a wastewater treatment plant, after removal of large particulate matter", which is inflow the inflow rule misses.
+- Digester: mostly anaerobic digesters and reactors ("Mesophilic AD", "Anaerobic reactor"), plus food waste.
+- Sludge: treatment-plant and EBPR or anammox reactor biomass, plus one stool sample.
 - Sewer has too few projects to train or test.
 
-So far this classifier mostly relearns the rules and package habits. It is useful for finding gaps in the rules, not as an independent label. A real test needs a hand-checked set of samples that the rules don't decide.
+Sludge and digester transfer to unseen projects; inflow, effluent and sewer do not. The main use so far is finding gaps in the rules. A real test needs a hand-checked set of samples that the rules don't decide.
 
 ## Limits
 
