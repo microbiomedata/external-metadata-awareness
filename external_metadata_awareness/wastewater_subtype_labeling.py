@@ -49,7 +49,9 @@ def sample(mongo_uri: str, env_file: str | None, predictions: Path, sheet: Path,
     def take(frame: pd.DataFrame, n: int, stratum: str) -> None:
         frame = frame[~frame["accession"].isin(picked)]
         # At most MAX_PER_GROUP from one BioProject group, so one project can't fill a band
-        frame = frame.sample(frac=1, random_state=int(rng.integers(1 << 31))).groupby("group").head(MAX_PER_GROUP)
+        frame = frame.sample(frac=1, random_state=int(rng.integers(1 << 31)))
+        # A sample with no BioProject counts as its own group
+        frame = frame.groupby(frame["group"].fillna(frame["accession"])).head(MAX_PER_GROUP)
         for acc in frame["accession"].head(n):
             picked[acc] = stratum
 
@@ -81,12 +83,14 @@ def sample(mongo_uri: str, env_file: str | None, predictions: Path, sheet: Path,
 @click.option("--key", type=click.Path(exists=True, path_type=Path), required=True, help="Sampling key, or held_out_predictions.tsv from a run with --hold-out")
 @click.option("--other", type=click.Path(exists=True, path_type=Path), default=None, help="A second labeler's sheet, to measure agreement")
 @click.option("--threshold", type=click.FloatRange(0, 1), default=0.5, show_default=True)
-def score(sheet: Path, key: Path, other: Path | None, threshold: float) -> None:
+@click.option("--label-column", default="labels", show_default=True, help="Column holding the labels, e.g. labels_first in the committed hand-checked file")
+@click.option("--other-column", default="labels", show_default=True, help="Label column in --other")
+def score(sheet: Path, key: Path, other: Path | None, threshold: float, label_column: str, other_column: str) -> None:
     """Precision and recall of the classifier against the hand labels, per subtype."""
     lab = pd.read_csv(sheet, sep="\t", dtype=str).fillna("")
     k = pd.read_csv(key, sep="\t")
     # Join on accession, so --key can be the sampling key or held_out_predictions.tsv from a later run
-    df = lab[["item", "accession", "labels"]].assign(item=lambda d: d["item"].astype(int)).merge(k.drop(columns=["item"], errors="ignore"), on="accession")
+    df = lab[["item", "accession", label_column]].rename(columns={label_column: "labels"}).assign(item=lambda d: d["item"].astype(int)).merge(k.drop(columns=["item"], errors="ignore"), on="accession")
     if len(df) < len(lab):
         logger.warning("%d labeled samples have no scores in %s", len(lab) - len(df), key)
     sets = df["labels"].str.lower().str.replace(" ", "").str.split(",").apply(set)
@@ -105,6 +109,6 @@ def score(sheet: Path, key: Path, other: Path | None, threshold: float) -> None:
     click.echo("labels: " + str(pd.Series([x for s in sets for x in s]).value_counts().to_dict()))
     if other is not None:
         o = pd.read_csv(other, sep="\t", dtype=str).fillna("")
-        o_sets = o.set_index(o["item"].astype(int))["labels"].str.lower().str.replace(" ", "").str.split(",").apply(set)
+        o_sets = o.set_index(o["item"].astype(int))[other_column].str.lower().str.replace(" ", "").str.split(",").apply(set)
         same = [s == o_sets.get(i, set()) for i, s in zip(df["item"], sets)]
         click.echo(f"exact label-set agreement with the other labeler: {sum(same)} of {len(same)}")

@@ -215,6 +215,9 @@ Against the rules, sludge and digester transfer to unseen projects and inflow, e
 ```bash
 poetry run wastewater-subtype-labeling sample --predictions <run>/held_out_predictions.tsv --sheet sheet.tsv --key key.tsv
 poetry run wastewater-subtype-labeling score --sheet labeled.tsv --key key.tsv [--other second_labeled.tsv]
+# reproduce the table below from the committed file
+poetry run wastewater-subtype-labeling score --sheet docs/wastewater-subtype-handchecked-2026-10-13.tsv --label-column labels_first \
+  --key docs/wastewater-subtype-handchecked-2026-10-13.tsv --other docs/wastewater-subtype-handchecked-2026-10-13.tsv --other-column labels_second
 ```
 
 Both labelers are language models: the first was Claude in the working session, the second a separate Claude model with only the guide and the sheet. They gave the same label to 279 of 300 samples (Cohen's kappa 0.88), including all 4 inflow and all 4 effluent samples. Most disagreements were "unclear" against a subtype. A person has not yet checked them.
