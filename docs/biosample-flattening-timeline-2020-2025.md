@@ -316,7 +316,7 @@ The canonical output from this processing pipeline is **DuckDB databases** conta
 
 ### GOLD Database DuckDBs (Two Approaches)
 
-> **Update (2026):** The **JGI lakehouse** (Starburst, which replaced JGI Dremio in 2026) now provides direct SQL access to GOLD tables, making the API-based and Excel-based DuckDB pipelines below largely superseded for raw data access. The pipelines remain relevant for CURIE-normalized, ontology-enriched outputs. See [`metadata-sources-and-access-methods.md`](metadata-sources-and-access-methods.md).
+> **Historical (2026):** Both GOLD DuckDB pipelines below were removed in [PR #418](https://github.com/microbiomedata/external-metadata-awareness/pull/418) (May 2026) and are described here as history. For GOLD data now, see [`metadata-sources-and-access-methods.md`](metadata-sources-and-access-methods.md); the JGI lakehouse (Starburst, which replaced JGI Dremio in 2026) gives direct SQL access to GOLD tables.
 
 **API-based DuckDB:**
 - **Entity Coverage**: Studies, Projects, and Biosamples (excludes organism/isolate records)
