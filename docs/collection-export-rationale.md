@@ -19,7 +19,7 @@ Status legend:
 
 ### bioprojects_flattened — export
 
-- Consumer: NMDC lakehouse, JGI Dremio cross-source joins
+- Consumer: NMDC lakehouse
 - Query: "Join biosamples to their parent BioProject on `project_accession`; filter by submission date range."
 - Reason: the only flat representation of BioProject metadata. Cross-source joins need it.
 
@@ -103,7 +103,7 @@ Status legend:
 
 ### sra_biosamples_bioprojects — export
 
-- Consumer: NMDC lakehouse, JGI Dremio, anyone joining sequencing data to sample metadata
+- Consumer: NMDC lakehouse, anyone joining sequencing data to sample metadata
 - Query: "Given BioSample accession X, list all SRA runs and their parent BioProjects."
 - Reason: the cross-DB derive (PR #400) is the join key for sequencing-aware analytics.
 
