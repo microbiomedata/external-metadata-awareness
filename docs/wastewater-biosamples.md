@@ -208,6 +208,31 @@ Reading each subtype's 200 highest-scoring unlabeled samples (one reader, 8 rand
 
 Sludge and digester transfer to unseen projects; inflow, effluent and sewer do not. The main use so far is finding gaps in the rules. A real test needs a hand-checked set of samples that the rules don't decide.
 
+### Hand-checked set
+
+[wastewater-subtype-handchecked-2026-10-13.tsv](wastewater-subtype-handchecked-2026-10-13.tsv) holds 300 held-out samples that the rules leave unlabeled, labeled by reading each record against [wastewater-subtype-labeling-guide.md](wastewater-subtype-labeling-guide.md), which was written before any sample was read. For each subtype, 25 come from classifier scores of 0.8 or more, 15 from 0.5 to 0.8 and 10 from 0.2 to 0.5, plus 50 at random, with at most 3 per BioProject group in a band. The labeling sheet had no scores on it.
+
+```bash
+poetry run wastewater-subtype-labeling sample --predictions <run>/held_out_predictions.tsv --sheet sheet.tsv --key key.tsv
+poetry run wastewater-subtype-labeling score --sheet labeled.tsv --key key.tsv [--other second_labeled.tsv]
+```
+
+Both labelers are language models: the first was Claude in the working session, the second a separate Claude model with only the guide and the sheet. They gave the same label to 279 of 300 samples (Cohen's kappa 0.88), including all 4 inflow and all 4 effluent samples. Most disagreements were "unclear" against a subtype. A person has not yet checked them.
+
+First labeler's counts: unclear 191, none 47, sludge 24, digester 17, sewer 13, inflow 4, effluent 4. Of the 50 random samples, 33 are unclear, 13 none, 3 sludge and 1 sewer, so most samples the rules miss carry too little in the record to decide.
+
+Classifier against the first labeler, at a score of 0.5:
+
+| subtype | hand positives | predicted | correct | precision | recall |
+|---|---|---|---|---|---|
+| inflow | 4 | 53 | 0 | 0.00 | 0.00 |
+| effluent | 4 | 90 | 1 | 0.01 | 0.25 |
+| sludge | 24 | 92 | 7 | 0.08 | 0.29 |
+| digester | 17 | 42 | 16 | 0.38 | 0.94 |
+| sewer | 13 | 45 | 10 | 0.22 | 0.77 |
+
+These are on a sample drawn mostly from high scores, so they describe the score bands, not the corpus. In the top band (0.8 or more), 13 of 25 digester picks are digesters and 6 of 25 sewer picks are sewer samples. None of the 25 inflow picks is inflow (all unclear), and 11 of 25 sludge picks are not wastewater: compost (4), crude oil enrichments (3), growth medium (2), a plasmid stock and a pit latrine. Sludge scored F1 0.80 against the rules but has 0.08 precision here, so agreement with the rules says little about samples the rules don't decide.
+
 ## Limits
 
 - Precision was checked by eye on 25 random wastewater samples outside any wastewater package, under the original terms: 23 were wastewater or treatment-plant samples; 2 matched on fields not reviewed. The 21,857 samples that match only "activated sludge" were checked separately on 50 random samples (2026-10-01, one reader, judged from the record's own fields): 2 state a treatment plant, 9 a lab or pilot reactor, microcosm or experiment, 12 are genomes derived from activated sludge with no setting given, and 27 give no setting. So this row cannot be read as treatment-plant samples; exclude it if lab reactors should not count. The terms also catch hospital wastewater and industrial effluent.

@@ -124,11 +124,15 @@ def main(mongo_uri: str, env_file: str | None, out_dir: Path, threshold: float, 
     wwsurv = df["package_content"].str.contains("wwsurv", regex=False).to_numpy()
 
     report, unlabeled = [], ~labels.any(axis=1).to_numpy()
+    held_out = pd.DataFrame({"accession": df["accession"].iloc[test_idx].to_numpy(), "group": df["group"].iloc[test_idx].to_numpy(),
+                             "wwsurv": wwsurv[test_idx], "rule_unlabeled": unlabeled[test_idx]})
     for subtype in SUBTYPES:
         y = labels[subtype].to_numpy()
         model = LogisticRegression(max_iter=2000, class_weight="balanced", solver="liblinear")
         model.fit(x_train, y[train_idx])
         prob = model.predict_proba(x_all)[:, 1]
+        held_out[f"rule_{subtype}"] = y[test_idx]
+        held_out[f"prob_{subtype}"] = prob[test_idx].round(4)
         row = {"subtype": subtype, "rule_positive": int(y.sum()), "held_out_positive_groups": int(df["group"].iloc[test_idx][y[test_idx]].nunique())}
         for name, sel in (("held_out", test_idx), ("held_out_not_wwsurv", test_idx[~wwsurv[test_idx]])):
             p, r, f, _ = precision_recall_fscore_support(y[sel], prob[sel] >= 0.5, average="binary", zero_division=0)
@@ -144,6 +148,8 @@ def main(mongo_uri: str, env_file: str | None, out_dir: Path, threshold: float, 
         logger.info("%s top features: %s", subtype, ", ".join(repr(t) for t in terms))
 
     pd.DataFrame(report).to_csv(out_dir / "report.tsv", sep="\t", index=False)
+    # Scores for every held-out sample, for building and scoring a hand-checked set
+    held_out.to_csv(out_dir / "held_out_predictions.tsv", sep="\t", index=False)
     (out_dir / "run.json").write_text(json.dumps({"seed": seed, "threshold": threshold, "train": len(train_idx), "test": len(test_idx), "train_without_bioproject": len(unlinked)}, indent=2))
     click.echo(pd.DataFrame(report).to_string(index=False))
 
