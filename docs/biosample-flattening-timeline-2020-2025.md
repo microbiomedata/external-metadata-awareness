@@ -316,7 +316,7 @@ The canonical output from this processing pipeline is **DuckDB databases** conta
 
 ### GOLD Database DuckDBs (Two Approaches)
 
-> **Historical (2026):** Both GOLD DuckDB pipelines below were removed in [PR #418](https://github.com/microbiomedata/external-metadata-awareness/pull/418) (May 2026) and are described here as history. For GOLD data now, see [`metadata-sources-and-access-methods.md`](metadata-sources-and-access-methods.md); the JGI lakehouse (Starburst, which replaced JGI Dremio in 2026) gives direct SQL access to GOLD tables.
+> **Historical (2026):** [PR #418](https://github.com/microbiomedata/external-metadata-awareness/pull/418) (May 2026) removed EMA's own parts of these workflows: `Makefiles/gold.Makefile` and the GOLD flatten and export scripts. The `gold-tools` and `to-duckdb` steps were never part of EMA. For GOLD data now, see [`metadata-sources-and-access-methods.md`](metadata-sources-and-access-methods.md); the JGI lakehouse (Starburst, which replaced JGI Dremio in 2026) gives direct SQL access to GOLD tables.
 
 **API-based DuckDB:**
 - **Entity Coverage**: Studies, Projects, and Biosamples (excludes organism/isolate records)

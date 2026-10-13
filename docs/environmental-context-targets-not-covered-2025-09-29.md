@@ -120,13 +120,10 @@ make -f Makefiles/env_triads.Makefile env-triads
 # 1. Process NCBI environmental triads
 make -f Makefiles/env_triads.Makefile env-triads
 
-# 2. Process GOLD environmental context
-make -f Makefiles/gold.Makefile gold-all
-
-# 3. Get MIxS schema definitions for reference
+# 2. Get MIxS schema definitions for reference
 make -f Makefiles/mixs.Makefile local/mixs-env-triad.json
 
-# 4. Process NMDC environmental context (if NMDC data available)
+# 3. Process NMDC environmental context (if NMDC data available)
 make -f Makefiles/nmdc_metadata.Makefile local/nmdc-production-biosamples-env-context-columns.tsv
 ```
 
