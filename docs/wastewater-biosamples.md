@@ -150,6 +150,34 @@ Inflow here means untreated sewage entering a plant or sampled in the sewer; out
 - 37,300 of the wording matches have no BioProject. 37,057 of those are EBI samples in `Generic.1.0` titled "European sewage" with `isolation_source` "untreated sewage"; none has a BioProject link or an SRA run in the local copy.
 - Outflow wording also catches bioreactor and biofilter effluent, palm oil mill effluent, hospital effluent and "ileostomy effluent", so read the outflow column as samples to drop from an inflow set, not as treatment-plant effluent.
 
+### Sample names
+
+Some submitters mark flow only in the BioSample sample name: PRJNA1224513 says "Wastewater treatment plant" in `isolation_source`, and influent only in names like "JNW-IN_Virome". Two more columns count this (measured 2026-10-13; 383,097 of the 579,073 candidates have a sample name, from `biosamples_ids` label "Sample name"):
+
+- `inflow_sample_name`: the name matches the inflow regex, or has a separate token IN, INF, INFL, Inf or Infl (no letter on either side; case-sensitive).
+- `outflow_sample_name`: the name matches the outflow regex, or has a token EF, EFF, Eff or OUT.
+
+```bash
+mongosh "$MONGO_URI" mongo-js/wastewater_sample_name_flow_check.js
+```
+
+checks each name rule against the field-based flags. "Agree" means the fields say the same flow, "disagree" only the other one, "new" neither.
+
+| name rule | agree | disagree | new | agreement % | without the largest project % |
+|---|---|---|---|---|---|
+| inflow tokens | 5,374 | 27 | 683 | 99.5 | 96.7 |
+| inflow words | 403 | 3 | 94 | 99.3 | 99.1 |
+| outflow tokens | 469 | 11 | 913 | 97.7 | 99.5 |
+| outflow words | 374 | 0 | 114 | 100.0 | 100.0 |
+| RAW, Raw, RW tokens (not used) | 488 | 106 | 176 | 82.2 | 73.2 |
+
+- One project carries the inflow tokens: PRJNA938474 (OHA/OSU wastewater project, names like "ALB-Inf-3-29-23-A") holds 4,591 of the 5,374 agreements.
+- "Influent" can mean the influent to one treatment step. In two water reclamation projects, names like "O3_INF" and "SE1_Inf" appear to mark the feed to an ozone or filter step, while the fields say effluent; PRJNA749122's `isolation_source` is "Liquid sample from filtered secondary wastewater effluent" (PRJNA849266, 14 samples; PRJNA749122, 6).
+- Some records contradict themselves: PRJNA1083020 (CIWARS) names samples "..._EFF_..." with `isolation_source` "influent sewage" (9 samples).
+- RAW disagrees mostly in PRJNA951863, where "Raw1_bin" is a genome bin from palm oil mill effluent sludge.
+- Sample names add 777 inflow and 1,027 outflow samples that the fields say nothing about. Inflow by fields or name is 246,889. 82 BioProjects have inflow only by sample name (704 samples).
+- `wastewater_flow_labels` keeps one document per candidate with every flag, for training a subtype classifier (https://github.com/microbiomedata/external-metadata-awareness/issues/580).
+
 ## Limits
 
 - Precision was checked by eye on 25 random wastewater samples outside any wastewater package, under the original terms: 23 were wastewater or treatment-plant samples; 2 matched on fields not reviewed. The 21,857 samples that match only "activated sludge" were checked separately on 50 random samples (2026-10-01, one reader, judged from the record's own fields): 2 state a treatment plant, 9 a lab or pilot reactor, microcosm or experiment, 12 are genomes derived from activated sludge with no setting given, and 27 give no setting. So this row cannot be read as treatment-plant samples; exclude it if lab reactors should not count. The terms also catch hospital wastewater and industrial effluent.
