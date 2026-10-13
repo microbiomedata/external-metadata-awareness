@@ -1,5 +1,6 @@
 // Purpose: Summarize wastewater candidate biosamples by BioProject, so a subset can be picked by whole project
 // Input: wastewater_biosample_candidates (from find_wastewater_biosamples.js), biosamples_flattened (for ww_sample_matrix),
+//        biosamples_ids (for the BioSample "Sample name"),
 //        biosamples_links, sra_biosamples_bioprojects, bioprojects_flattened,
 //        and optionally mgnify_wastewater_samples (one document per MGnify sample, field accession = BioSample accession)
 // Output: wastewater_bioproject_summary (replaced by $out), then one TSV row per BioProject on stdout
@@ -19,6 +20,11 @@ const FIELDS = [
 const INFLOW_TERMS = /(?<!surface water )influent|inflow|in-flow|raw (sewage|wastewater|waste water)|untreated (sewage|wastewater|waste water)|plant inlet|\binlet\b/i;
 const OUTFLOW_TERMS = /effluent|outflow|outfall|(?<!un)treated (sewage|wastewater|waste water)|discharge/i;
 const FLOW_FIELDS = ["env_broad_scale", "env_local_scale", "env_medium", "isolation_source", "description_title"];
+// Some submitters mark flow only in the sample name, as a word or a separate token ("JNW-IN_Virome", "S_XM_QP_INF_2").
+// A token must not touch a letter on either side. Case-sensitive, so lower-case "in" does not count.
+// RAW and RW are left out: on 2026-10-13 they disagreed with the field-based flags on 106 of 594 samples.
+const NAME_INFLOW_TOKENS = /(^|[^A-Za-z])(IN|INF|INFL|Inf|Infl)([^A-Za-z]|$)/;
+const NAME_OUTFLOW_TOKENS = /(^|[^A-Za-z])(EF|EFF|Eff|OUT)([^A-Za-z]|$)/;
 // ww_sample_matrix is an enumerated field of the NCBI SARS-CoV-2.wwsurv and PHA4GE.wwsurv packages
 const MATRIX_INFLOW = /^(raw wastewater|post grit removal)$/i;
 const MATRIX_OUTFLOW = /effluent/i;
@@ -39,12 +45,14 @@ ensureIndex(db.biosamples_links, { target: 1, accession: 1 });
 ensureIndex(db.sra_biosamples_bioprojects, { biosample_accession: 1 });
 ensureIndex(db.bioprojects_flattened, { accession: 1 });
 ensureIndex(db.biosamples_flattened, { accession: 1 });
+ensureIndex(db.biosamples_ids, { accession: 1 });
 if (hasMgnify) ensureIndex(db.mgnify_wastewater_samples, { accession: 1 });
 
 db.wastewater_biosample_candidates.aggregate([
   { $project: Object.assign({ accession: 1, owner_name: 1, geo_loc_name: 1 }, Object.fromEntries(FIELDS.map(f => [f, 1]))) },
   { $lookup: { from: "biosamples_flattened", localField: "accession", foreignField: "accession", pipeline: [{ $project: { _id: 0, ww_sample_matrix: 1 } }], as: "flat" } },
-  { $addFields: { ww_sample_matrix: { $arrayElemAt: ["$flat.ww_sample_matrix", 0] } } },
+  { $lookup: { from: "biosamples_ids", localField: "accession", foreignField: "accession", pipeline: [{ $match: { label: "Sample name" } }, { $project: { _id: 0, content: 1 } }], as: "ids" } },
+  { $addFields: { ww_sample_matrix: { $arrayElemAt: ["$flat.ww_sample_matrix", 0] }, sample_name: { $ifNull: [{ $arrayElemAt: ["$ids.content", 0] }, ""] } } },
   {
     $lookup: {
       from: "biosamples_links",
@@ -80,6 +88,8 @@ db.wastewater_biosample_candidates.aggregate([
       inflow_matrix: matches("ww_sample_matrix", MATRIX_INFLOW),
       inflow_wording: anyField(INFLOW_TERMS, FLOW_FIELDS),
       outflow: { $or: [matches("ww_sample_matrix", MATRIX_OUTFLOW), anyField(OUTFLOW_TERMS, FLOW_FIELDS)] },
+      inflow_name: { $or: [matches("sample_name", INFLOW_TERMS), matches("sample_name", NAME_INFLOW_TOKENS)] },
+      outflow_name: { $or: [matches("sample_name", OUTFLOW_TERMS), matches("sample_name", NAME_OUTFLOW_TOKENS)] },
       in_mgnify: { $gt: [{ $size: { $ifNull: ["$mg", []] } }, 0] },
       country: { $trim: { input: { $arrayElemAt: [{ $split: [{ $ifNull: ["$geo_loc_name", ""] }, ":"] }, 0] } } },
       n_bioprojects: { $size: "$bp" }
@@ -100,6 +110,8 @@ db.wastewater_biosample_candidates.aggregate([
       inflow_ww_sample_matrix: flag("$inflow_matrix"),
       inflow_wording: flag("$inflow_wording"),
       outflow: flag("$outflow"),
+      inflow_sample_name: flag("$inflow_name"),
+      outflow_sample_name: flag("$outflow_name"),
       in_mgnify: flag("$in_mgnify"),
       linked_to_several_bioprojects: flag({ $gt: ["$n_bioprojects", 1] }),
       bioproject_from_sra_runs: flag({ $eq: ["$bp_source", "sra"] }),
@@ -115,7 +127,7 @@ db.wastewater_biosample_candidates.aggregate([
       bioproject: "$_id",
       title: { $ifNull: [{ $arrayElemAt: ["$p.title", 0] }, { $arrayElemAt: ["$p.name", 0] }] },
       biosamples: 1, wastewater: 1, activated_sludge_only: 1, adjacent_only: 1,
-      mixs_wastewater_package: 1, wwsurv_package: 1, inflow_ww_sample_matrix: 1, inflow_wording: 1, outflow: 1, in_mgnify: 1, linked_to_several_bioprojects: 1, bioproject_from_sra_runs: 1,
+      mixs_wastewater_package: 1, wwsurv_package: 1, inflow_ww_sample_matrix: 1, inflow_wording: 1, outflow: 1, inflow_sample_name: 1, outflow_sample_name: 1, in_mgnify: 1, linked_to_several_bioprojects: 1, bioproject_from_sra_runs: 1,
       in_site_kb: { $in: ["$_id", SITE_KB] },
       owners: 1, countries: 1, packages: 1
     }
@@ -131,7 +143,7 @@ const clean = s => {
 };
 const list = a => (a || []).filter(x => x).sort().join("; ");
 const cols = ["bioproject", "title", "biosamples", "wastewater", "activated_sludge_only", "adjacent_only",
-  "mixs_wastewater_package", "wwsurv_package", "inflow_ww_sample_matrix", "inflow_wording", "outflow", "in_mgnify", "in_site_kb", "linked_to_several_bioprojects", "bioproject_from_sra_runs",
+  "mixs_wastewater_package", "wwsurv_package", "inflow_ww_sample_matrix", "inflow_wording", "outflow", "inflow_sample_name", "outflow_sample_name", "in_mgnify", "in_site_kb", "linked_to_several_bioprojects", "bioproject_from_sra_runs",
   "owners", "countries", "packages"];
 print(cols.join("\t"));
 db.wastewater_bioproject_summary.find().sort({ wastewater: -1, biosamples: -1 }).forEach(d =>
