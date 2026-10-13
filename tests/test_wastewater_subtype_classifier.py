@@ -56,3 +56,16 @@ def test_hold_out_keeps_named_samples_out_of_training(tmp_path):
     assert not ({0, 1, 10} & set(train_idx))
     assert 11 in train_idx
     assert sorted(list(train_idx) + list(test_idx)) == list(range(12))
+
+
+def test_score_reads_predictions_without_item_numbers(tmp_path):
+    from external_metadata_awareness.wastewater_subtype_labeling import main as labeling
+
+    sheet, preds = tmp_path / "sheet.tsv", tmp_path / "preds.tsv"
+    pd.DataFrame({"item": [1, 2], "accession": ["S1", "S2"], "labels": ["digester", "unclear"]}).to_csv(sheet, sep="\t", index=False)
+    probs = {f"prob_{s}": [0.0, 0.0] for s in ["inflow", "effluent", "sludge", "sewer"]}
+    pd.DataFrame({"accession": ["S2", "S1"], "prob_digester": [0.1, 0.9], **probs}).to_csv(preds, sep="\t", index=False)
+    result = CliRunner().invoke(labeling, ["score", "--sheet", str(sheet), "--key", str(preds)])
+    assert result.exit_code == 0, result.output
+    digester = next(line for line in result.output.splitlines() if line.strip().startswith("digester"))
+    assert digester.split()[1:5] == ["1", "1", "0", "1"]

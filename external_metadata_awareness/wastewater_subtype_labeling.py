@@ -78,14 +78,17 @@ def sample(mongo_uri: str, env_file: str | None, predictions: Path, sheet: Path,
 
 @main.command()
 @click.option("--sheet", type=click.Path(exists=True, path_type=Path), required=True, help="Labeled sheet (labels column, comma-separated)")
-@click.option("--key", type=click.Path(exists=True, path_type=Path), required=True)
+@click.option("--key", type=click.Path(exists=True, path_type=Path), required=True, help="Sampling key, or held_out_predictions.tsv from a run with --hold-out")
 @click.option("--other", type=click.Path(exists=True, path_type=Path), default=None, help="A second labeler's sheet, to measure agreement")
 @click.option("--threshold", type=click.FloatRange(0, 1), default=0.5, show_default=True)
 def score(sheet: Path, key: Path, other: Path | None, threshold: float) -> None:
     """Precision and recall of the classifier against the hand labels, per subtype."""
     lab = pd.read_csv(sheet, sep="\t", dtype=str).fillna("")
     k = pd.read_csv(key, sep="\t")
-    df = k.merge(lab[["item", "labels"]].assign(item=lambda d: d["item"].astype(int)), on="item")
+    # Join on accession, so --key can be the sampling key or held_out_predictions.tsv from a later run
+    df = lab[["item", "accession", "labels"]].assign(item=lambda d: d["item"].astype(int)).merge(k.drop(columns=["item"], errors="ignore"), on="accession")
+    if len(df) < len(lab):
+        logger.warning("%d labeled samples have no scores in %s", len(lab) - len(df), key)
     sets = df["labels"].str.lower().str.replace(" ", "").str.split(",").apply(set)
     rows = []
     for subtype in SUBTYPES:

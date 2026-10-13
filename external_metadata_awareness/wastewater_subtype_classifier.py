@@ -172,7 +172,7 @@ def main(mongo_uri: str, env_file: str | None, out_dir: Path, threshold: float, 
     pd.DataFrame(report).to_csv(out_dir / "report.tsv", sep="\t", index=False)
     # Scores for every held-out sample, for building and scoring a hand-checked set
     held_out.to_csv(out_dir / "held_out_predictions.tsv", sep="\t", index=False)
-    (out_dir / "run.json").write_text(json.dumps({"seed": seed, "threshold": threshold, "train": len(train_idx), "test": len(test_idx), "train_without_bioproject": int(df["group"].isna().sum())}, indent=2))
+    (out_dir / "run.json").write_text(json.dumps({"seed": seed, "threshold": threshold, "train": len(train_idx), "test": len(test_idx), "train_without_bioproject": int(df["group"].iloc[train_idx].isna().sum())}, indent=2))
     click.echo(pd.DataFrame(report).to_string(index=False))
 
 

@@ -231,6 +231,8 @@ Classifier against the first labeler, at a score of 0.5:
 | digester | 17 | 42 | 14 | 16 | 0.38 | 0.57 | 0.94 |
 | sewer | 13 | 45 | 29 | 10 | 0.22 | 0.63 | 0.77 |
 
+Scoring the rerun with `--hold-out` (`--key <run>/held_out_predictions.tsv`) gives similar results: precision among decided samples 0.59 for digester, 0.75 for sewer, 0.21 for sludge, 0.12 for effluent, and no decided inflow predictions.
+
 These are on a sample drawn mostly from high scores, so they describe the score bands, not the corpus. In the top band (0.8 or more), 13 of 25 digester picks are digesters and 6 of 25 sewer picks are sewer samples. None of the 25 inflow picks is inflow (all unclear), and 11 of 25 sludge picks are not wastewater: compost (4), crude oil enrichments (3), growth medium (2), a plasmid stock and a pit latrine. Sludge scored F1 0.78 against the rules but has 0.18 precision among decided samples here, so agreement with the rules says little about samples the rules don't decide.
 
 ## Limits
