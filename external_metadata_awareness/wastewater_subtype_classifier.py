@@ -80,7 +80,12 @@ def project_groups(bioprojects: pd.Series) -> list[str | None]:
             root = find(bps[0])
             for other in bps[1:]:
                 parent[find(other)] = root
-    return [find(bps[0]) if isinstance(bps, list) and bps else None for bps in bioprojects]
+    # Name each group by its smallest BioProject accession, so the split does not depend on array or cursor order
+    smallest: dict[str, str] = {}
+    for bp in parent:
+        r = find(bp)
+        smallest[r] = min(smallest.get(r, bp), bp)
+    return [smallest[find(bps[0])] if isinstance(bps, list) and bps else None for bps in bioprojects]
 
 
 def load(mongo_uri: str, env_file: str | None) -> pd.DataFrame:
@@ -104,7 +109,9 @@ def load(mongo_uri: str, env_file: str | None) -> pd.DataFrame:
 @click.option("--out-dir", type=click.Path(path_type=Path), default=Path("local/wastewater_subtype"), show_default=True)
 @click.option("--threshold", default=0.8, show_default=True, help="Probability for counting a prediction on unlabeled samples")
 @click.option("--seed", default=0, show_default=True)
-def main(mongo_uri: str, env_file: str | None, out_dir: Path, threshold: float, seed: int) -> None:
+@click.option("--hold-out", "hold_out", type=click.Path(exists=True, path_type=Path), default=None,
+              help="TSV with an accession column (such as the hand-checked set); their BioProject groups always go to the test set")
+def main(mongo_uri: str, env_file: str | None, out_dir: Path, threshold: float, seed: int, hold_out: Path | None) -> None:
     """Train one classifier per wastewater subtype and report held-out agreement with the rules."""
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -115,8 +122,15 @@ def main(mongo_uri: str, env_file: str | None, out_dir: Path, threshold: float, 
 
     linked = np.flatnonzero(df["group"].notna().to_numpy())
     unlinked = np.flatnonzero(df["group"].isna().to_numpy())
-    tr, te = next(GroupShuffleSplit(n_splits=1, test_size=0.2, random_state=seed).split(linked, groups=df["group"].iloc[linked]))
-    train_idx, test_idx = np.concatenate([linked[tr], unlinked]), linked[te]
+    groups = df["group"].iloc[linked].to_numpy()
+    forced = set()
+    if hold_out is not None:
+        keep = set(pd.read_csv(hold_out, sep="\t", usecols=["accession"])["accession"])
+        forced = set(df.loc[df["accession"].isin(keep) & df["group"].notna(), "group"])
+    is_forced = np.isin(groups, list(forced))
+    rest = linked[~is_forced]
+    tr, te = next(GroupShuffleSplit(n_splits=1, test_size=0.2, random_state=seed).split(rest, groups=groups[~is_forced]))
+    train_idx, test_idx = np.concatenate([rest[tr], unlinked]), np.concatenate([rest[te], linked[is_forced]])
     # Words of three or more letters only: character n-grams and digits let the model memorize sample-ID schemes of single projects
     vec = TfidfVectorizer(analyzer="word", token_pattern=r"(?u)\b[^\W\d_]{3,}\b", ngram_range=(1, 2), min_df=20, max_features=200_000, sublinear_tf=True, lowercase=True)
     x_train = vec.fit_transform(text.iloc[train_idx])

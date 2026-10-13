@@ -91,9 +91,13 @@ def score(sheet: Path, key: Path, other: Path | None, threshold: float) -> None:
     for subtype in SUBTYPES:
         gold = sets.apply(lambda s: subtype in s).to_numpy()
         pred = (df[f"prob_{subtype}"] >= threshold).to_numpy()
+        decided = ~sets.apply(lambda s: s == {"unclear"}).to_numpy()
         tp = int((gold & pred).sum())
-        rows.append({"subtype": subtype, "hand_positive": int(gold.sum()), "predicted": int(pred.sum()), "true_positive": tp,
-                     "precision": round(tp / pred.sum(), 3) if pred.sum() else None, "recall": round(tp / gold.sum(), 3) if gold.sum() else None})
+        pred_decided = int((pred & decided).sum())
+        # "precision" counts unclear samples as wrong, so it is a lower bound; "precision_decided" leaves them out
+        rows.append({"subtype": subtype, "hand_positive": int(gold.sum()), "predicted": int(pred.sum()), "predicted_unclear": int(pred.sum()) - pred_decided,
+                     "true_positive": tp, "precision": round(tp / pred.sum(), 3) if pred.sum() else None,
+                     "precision_decided": round(tp / pred_decided, 3) if pred_decided else None, "recall": round(tp / gold.sum(), 3) if gold.sum() else None})
     click.echo(pd.DataFrame(rows).to_string(index=False))
     click.echo("labels: " + str(pd.Series([x for s in sets for x in s]).value_counts().to_dict()))
     if other is not None:

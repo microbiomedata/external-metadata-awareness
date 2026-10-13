@@ -183,22 +183,22 @@ checks each name rule against the field-based flags. "Agree" means the fields sa
 A first try at https://github.com/microbiomedata/external-metadata-awareness/issues/580 scope item 3, run 2026-10-13:
 
 ```bash
-MONGO_URI=... poetry run wastewater-subtype-classifier --out-dir local/wastewater_subtype/<date>
+MONGO_URI=... poetry run wastewater-subtype-classifier --out-dir local/wastewater_subtype/<date> --hold-out docs/wastewater-subtype-handchecked-2026-10-13.tsv
 ```
 
 Labels come from rules: inflow and effluent from `wastewater_flow_labels`, plus sludge (`sludge|mixed liquor|biosolid`), digester (`digest(er|or|ate|ion)|biogas`, which wins over sludge) and sewer (`sewer`, `manhole`, `sewershed`, pump or lift station). The rule words are removed from the text before training, so the model has to learn from the rest of the record. The model is one logistic regression per subtype, on word unigrams and bigrams (letters only, so it can't memorize sample-ID patterns), from `env_broad_scale`, `env_local_scale`, `env_medium`, `isolation_source`, `description_title` and the sample name.
 
-Evaluation holds out 20% of BioProject groups (79,918 of 579,073 samples; seed 0). BioProjects that share a sample form one group, and the 65,712 samples with no BioProject are used for training only. An earlier run that split those samples one by one put near-identical "European sewage" records on both sides and reported inflow F1 0.817 outside the surveillance package; with them kept out of the test set it is 0.146.
+Evaluation holds out 20% of BioProject groups, plus every group that holds a hand-checked sample (132,622 of 579,073 samples; seed 0). BioProjects that share a sample form one group, named by its smallest accession so the split doesn't depend on input order, and the 65,712 samples with no BioProject are used for training only. An earlier run that split those samples one by one put near-identical "European sewage" records on both sides and reported inflow F1 0.817 outside the surveillance package; with them kept out of the test set it is 0.08 to 0.15, depending on the split.
 
 | subtype | rule labels | held-out groups with a positive | held-out F1 | held-out F1, no surveillance package | unlabeled samples predicted at 0.8 |
 |---|---|---|---|---|---|
-| inflow | 246,889 | 143 | 0.789 | 0.146 | 12,170 |
-| effluent | 14,464 | 275 | 0.163 | 0.263 | 11,474 |
-| sludge | 119,364 | 1,329 | 0.801 | 0.802 | 3,562 |
-| digester | 40,568 | 489 | 0.760 | 0.760 | 283 |
-| sewer | 5,964 | 21 | 0.078 | 0.088 | 659 |
+| inflow | 246,889 | 155 | 0.892 | 0.082 | 12,118 |
+| effluent | 14,464 | 265 | 0.120 | 0.149 | 11,673 |
+| sludge | 119,364 | 1,376 | 0.779 | 0.781 | 4,169 |
+| digester | 40,568 | 520 | 0.855 | 0.855 | 382 |
+| sewer | 5,964 | 26 | 0.048 | 0.134 | 449 |
 
-Reading each subtype's 200 highest-scoring unlabeled samples (one reader, 8 random ones each plus counts):
+Reading each subtype's 200 highest-scoring unlabeled samples in an earlier run with the same features (one reader, 8 random ones each plus counts):
 
 - Inflow: 197 of 200 are SARS-CoV-2 surveillance samples without `ww_sample_matrix`. The model learned that surveillance means inflow, which may be true but is not evidence, and it does not carry inflow to other projects.
 - Effluent: finds rule gaps, such as "A secondary Aug14" and river water downstream of a plant, but also "Incoming wastewater from a wastewater treatment plant, after removal of large particulate matter", which is inflow the inflow rule misses.
@@ -206,11 +206,11 @@ Reading each subtype's 200 highest-scoring unlabeled samples (one reader, 8 rand
 - Sludge: treatment-plant and EBPR or anammox reactor biomass, plus one stool sample.
 - Sewer has too few projects to train or test.
 
-Sludge and digester transfer to unseen projects; inflow, effluent and sewer do not. The main use so far is finding gaps in the rules. A real test needs a hand-checked set of samples that the rules don't decide.
+Against the rules, sludge and digester transfer to unseen projects and inflow, effluent and sewer do not. The hand-checked set below tests the samples the rules don't decide, and there only digester and sewer hold up.
 
 ### Hand-checked set
 
-[wastewater-subtype-handchecked-2026-10-13.tsv](wastewater-subtype-handchecked-2026-10-13.tsv) holds 300 held-out samples that the rules leave unlabeled, labeled by reading each record against [wastewater-subtype-labeling-guide.md](wastewater-subtype-labeling-guide.md), which was written before any sample was read. For each subtype, 25 come from classifier scores of 0.8 or more, 15 from 0.5 to 0.8 and 10 from 0.2 to 0.5, plus 50 at random, with at most 3 per BioProject group in a band. The labeling sheet had no scores on it.
+[wastewater-subtype-handchecked-2026-10-13.tsv](wastewater-subtype-handchecked-2026-10-13.tsv) holds 300 held-out samples that the rules leave unlabeled, labeled by reading each record against [wastewater-subtype-labeling-guide.md](wastewater-subtype-labeling-guide.md), which was written before any sample was read. For each subtype, 25 come from classifier scores of 0.8 or more, 15 from 0.5 to 0.8 and 10 from 0.2 to 0.5, plus 50 at random, with at most 3 per BioProject group in a band. The labeling sheet had no scores on it. The scores in the file come from the run that drew the set (head a84ac04, before group names were made order-independent); later runs keep these samples in the test set through `--hold-out`.
 
 ```bash
 poetry run wastewater-subtype-labeling sample --predictions <run>/held_out_predictions.tsv --sheet sheet.tsv --key key.tsv
@@ -223,15 +223,15 @@ First labeler's counts: unclear 191, none 47, sludge 24, digester 17, sewer 13, 
 
 Classifier against the first labeler, at a score of 0.5:
 
-| subtype | hand positives | predicted | correct | precision | recall |
-|---|---|---|---|---|---|
-| inflow | 4 | 53 | 0 | 0.00 | 0.00 |
-| effluent | 4 | 90 | 1 | 0.01 | 0.25 |
-| sludge | 24 | 92 | 7 | 0.08 | 0.29 |
-| digester | 17 | 42 | 16 | 0.38 | 0.94 |
-| sewer | 13 | 45 | 10 | 0.22 | 0.77 |
+| subtype | hand positives | predicted | predicted but unclear | correct | precision, unclear counted wrong | precision among decided | recall |
+|---|---|---|---|---|---|---|---|
+| inflow | 4 | 53 | 52 | 0 | 0.00 | 0.00 | 0.00 |
+| effluent | 4 | 90 | 59 | 1 | 0.01 | 0.03 | 0.25 |
+| sludge | 24 | 92 | 54 | 7 | 0.08 | 0.18 | 0.29 |
+| digester | 17 | 42 | 14 | 16 | 0.38 | 0.57 | 0.94 |
+| sewer | 13 | 45 | 29 | 10 | 0.22 | 0.63 | 0.77 |
 
-These are on a sample drawn mostly from high scores, so they describe the score bands, not the corpus. In the top band (0.8 or more), 13 of 25 digester picks are digesters and 6 of 25 sewer picks are sewer samples. None of the 25 inflow picks is inflow (all unclear), and 11 of 25 sludge picks are not wastewater: compost (4), crude oil enrichments (3), growth medium (2), a plasmid stock and a pit latrine. Sludge scored F1 0.80 against the rules but has 0.08 precision here, so agreement with the rules says little about samples the rules don't decide.
+These are on a sample drawn mostly from high scores, so they describe the score bands, not the corpus. In the top band (0.8 or more), 13 of 25 digester picks are digesters and 6 of 25 sewer picks are sewer samples. None of the 25 inflow picks is inflow (all unclear), and 11 of 25 sludge picks are not wastewater: compost (4), crude oil enrichments (3), growth medium (2), a plasmid stock and a pit latrine. Sludge scored F1 0.78 against the rules but has 0.18 precision among decided samples here, so agreement with the rules says little about samples the rules don't decide.
 
 ## Limits
 
