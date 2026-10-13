@@ -83,7 +83,7 @@ make -f Makefiles/ncbi_metadata.Makefile copy-environmental-candidates-to-ncbi-m
 
 **Purpose:** Process GOLD database environmental context fields
 
-> **Note (2026):** For raw GOLD data access, the **JGI Dremio data lakehouse** is now recommended (see [`gold-and-jgi-data-access.md`](gold-and-jgi-data-access.md)). This Makefile pipeline remains relevant specifically for the CURIE normalization and ontology enrichment that Dremio does not provide.
+> **Historical (2026):** This pipeline was removed in [PR #418](https://github.com/microbiomedata/external-metadata-awareness/pull/418) (May 2026); `Makefiles/gold.Makefile` and its commands no longer exist, so the section below describes what it did, not something you can run. For GOLD data now, see [`metadata-sources-and-access-methods.md`](metadata-sources-and-access-methods.md).
 
 **Key Target:**
 ```bash
@@ -96,7 +96,7 @@ make -f Makefiles/gold.Makefile flatten-gold-biosamples
 - Converts environmental IDs to canonical CURIEs
 - Creates normalized collections with environmental context fields
 
-**Value:** Provides CURIE-normalized, ontology-aligned environmental context data from GOLD — enrichments not available through Dremio
+**Value (when it existed):** Provided CURIE-normalized, ontology-aligned environmental context data from GOLD.
 
 ## Workflow Recommendations
 
@@ -120,13 +120,10 @@ make -f Makefiles/env_triads.Makefile env-triads
 # 1. Process NCBI environmental triads
 make -f Makefiles/env_triads.Makefile env-triads
 
-# 2. Process GOLD environmental context
-make -f Makefiles/gold.Makefile gold-all
-
-# 3. Get MIxS schema definitions for reference
+# 2. Get MIxS schema definitions for reference
 make -f Makefiles/mixs.Makefile local/mixs-env-triad.json
 
-# 4. Process NMDC environmental context (if NMDC data available)
+# 3. Process NMDC environmental context (if NMDC data available)
 make -f Makefiles/nmdc_metadata.Makefile local/nmdc-production-biosamples-env-context-columns.tsv
 ```
 

@@ -75,7 +75,7 @@ In scope:
 - Environmental triad annotation, measurement discovery, voting sheets, schema/slot loaders
 
 Retired in 2026-05:
-- **GOLD pipeline** (see [PR #418](https://github.com/microbiomedata/external-metadata-awareness/pull/418)) — for raw GOLD access, see the JGI Dremio lakehouse
+- **GOLD pipeline** (see [PR #418](https://github.com/microbiomedata/external-metadata-awareness/pull/418)) — for raw GOLD access, see [docs/metadata-sources-and-access-methods.md](docs/metadata-sources-and-access-methods.md) (JGI's Starburst lakehouse replaced JGI Dremio in 2026)
 - **NMDC main-Mongo ingest/flatten chain** (see [PR #422](https://github.com/microbiomedata/external-metadata-awareness/pull/422)) — replaced upstream by [`kbase/data-lakehouse-ingest`](https://github.com/kbase/data-lakehouse-ingest)
 
 ## Contributing
