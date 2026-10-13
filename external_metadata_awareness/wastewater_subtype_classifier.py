@@ -88,6 +88,24 @@ def project_groups(bioprojects: pd.Series) -> list[str | None]:
     return [smallest[find(bps[0])] if isinstance(bps, list) and bps else None for bps in bioprojects]
 
 
+def split(df: pd.DataFrame, seed: int, hold_out: Path | None) -> tuple[np.ndarray, np.ndarray]:
+    """Train and test row positions: 20% of BioProject groups, plus every group or unlinked sample named in hold_out, go to test.
+
+    Samples with no BioProject train only, unless hold_out names them.
+    """
+    keep = set(pd.read_csv(hold_out, sep="\t", usecols=["accession"])["accession"]) if hold_out is not None else set()
+    named = df["accession"].isin(keep).to_numpy()
+    has_group = df["group"].notna().to_numpy()
+    forced_groups = set(df.loc[named & has_group, "group"])
+    forced = has_group & df["group"].isin(forced_groups).to_numpy()
+    rest = np.flatnonzero(has_group & ~forced)
+    tr, te = next(GroupShuffleSplit(n_splits=1, test_size=0.2, random_state=seed).split(rest, groups=df["group"].to_numpy()[rest]))
+    unlinked = ~has_group
+    train_idx = np.concatenate([rest[tr], np.flatnonzero(unlinked & ~named)])
+    test_idx = np.concatenate([rest[te], np.flatnonzero(forced), np.flatnonzero(unlinked & named)])
+    return train_idx, test_idx
+
+
 def load(mongo_uri: str, env_file: str | None) -> pd.DataFrame:
     client = get_mongo_client(mongo_uri, env_file)
     db = client.get_default_database()
@@ -120,17 +138,7 @@ def main(mongo_uri: str, env_file: str | None, out_dir: Path, threshold: float, 
     text = mask(df["text_raw"])
     logger.info("samples %d, with any rule label %d", len(df), int(labels.any(axis=1).sum()))
 
-    linked = np.flatnonzero(df["group"].notna().to_numpy())
-    unlinked = np.flatnonzero(df["group"].isna().to_numpy())
-    groups = df["group"].iloc[linked].to_numpy()
-    forced = set()
-    if hold_out is not None:
-        keep = set(pd.read_csv(hold_out, sep="\t", usecols=["accession"])["accession"])
-        forced = set(df.loc[df["accession"].isin(keep) & df["group"].notna(), "group"])
-    is_forced = np.isin(groups, list(forced))
-    rest = linked[~is_forced]
-    tr, te = next(GroupShuffleSplit(n_splits=1, test_size=0.2, random_state=seed).split(rest, groups=groups[~is_forced]))
-    train_idx, test_idx = np.concatenate([rest[tr], unlinked]), np.concatenate([rest[te], linked[is_forced]])
+    train_idx, test_idx = split(df, seed, hold_out)
     # Words of three or more letters only: character n-grams and digits let the model memorize sample-ID schemes of single projects
     vec = TfidfVectorizer(analyzer="word", token_pattern=r"(?u)\b[^\W\d_]{3,}\b", ngram_range=(1, 2), min_df=20, max_features=200_000, sublinear_tf=True, lowercase=True)
     x_train = vec.fit_transform(text.iloc[train_idx])
@@ -164,7 +172,7 @@ def main(mongo_uri: str, env_file: str | None, out_dir: Path, threshold: float, 
     pd.DataFrame(report).to_csv(out_dir / "report.tsv", sep="\t", index=False)
     # Scores for every held-out sample, for building and scoring a hand-checked set
     held_out.to_csv(out_dir / "held_out_predictions.tsv", sep="\t", index=False)
-    (out_dir / "run.json").write_text(json.dumps({"seed": seed, "threshold": threshold, "train": len(train_idx), "test": len(test_idx), "train_without_bioproject": len(unlinked)}, indent=2))
+    (out_dir / "run.json").write_text(json.dumps({"seed": seed, "threshold": threshold, "train": len(train_idx), "test": len(test_idx), "train_without_bioproject": int(df["group"].isna().sum())}, indent=2))
     click.echo(pd.DataFrame(report).to_string(index=False))
 
 

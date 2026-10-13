@@ -42,3 +42,17 @@ def test_threshold_outside_zero_to_one_is_rejected():
     result = CliRunner().invoke(main, ["--mongo-uri", "mongodb://localhost:27017/x", "--threshold", "1.5"])
     assert result.exit_code != 0
     assert "1.5" in result.output
+
+
+def test_hold_out_keeps_named_samples_out_of_training(tmp_path):
+    from external_metadata_awareness.wastewater_subtype_classifier import split
+
+    df = pd.DataFrame({"accession": [f"S{i}" for i in range(12)],
+                       "group": ["P1", "P1", "P2", "P2", "P3", "P3", "P4", "P4", "P5", "P5", None, None]})
+    hold = tmp_path / "hold.tsv"
+    pd.DataFrame({"accession": ["S0", "S10"]}).to_csv(hold, sep="\t", index=False)
+    train_idx, test_idx = split(df, 0, hold)
+    assert {0, 1, 10} <= set(test_idx)
+    assert not ({0, 1, 10} & set(train_idx))
+    assert 11 in train_idx
+    assert sorted(list(train_idx) + list(test_idx)) == list(range(12))
