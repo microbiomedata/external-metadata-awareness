@@ -107,7 +107,7 @@ def load(mongo_uri: str, env_file: str | None) -> pd.DataFrame:
 @click.option("--mongo-uri", envvar="MONGO_URI", required=True, help="URI including the database, e.g. mongodb://localhost:27017/ncbi_metadata")
 @click.option("--env-file", default=None, help="Optional .env with MONGO_USER and MONGO_PASSWORD")
 @click.option("--out-dir", type=click.Path(path_type=Path), default=Path("local/wastewater_subtype"), show_default=True)
-@click.option("--threshold", default=0.8, show_default=True, help="Probability for counting a prediction on unlabeled samples")
+@click.option("--threshold", type=click.FloatRange(0, 1), default=0.8, show_default=True, help="Probability for counting a prediction on unlabeled samples")
 @click.option("--seed", default=0, show_default=True)
 @click.option("--hold-out", "hold_out", type=click.Path(exists=True, path_type=Path), default=None,
               help="TSV with an accession column (such as the hand-checked set); their BioProject groups always go to the test set")

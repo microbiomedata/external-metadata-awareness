@@ -80,7 +80,7 @@ def sample(mongo_uri: str, env_file: str | None, predictions: Path, sheet: Path,
 @click.option("--sheet", type=click.Path(exists=True, path_type=Path), required=True, help="Labeled sheet (labels column, comma-separated)")
 @click.option("--key", type=click.Path(exists=True, path_type=Path), required=True)
 @click.option("--other", type=click.Path(exists=True, path_type=Path), default=None, help="A second labeler's sheet, to measure agreement")
-@click.option("--threshold", default=0.5, show_default=True)
+@click.option("--threshold", type=click.FloatRange(0, 1), default=0.5, show_default=True)
 def score(sheet: Path, key: Path, other: Path | None, threshold: float) -> None:
     """Precision and recall of the classifier against the hand labels, per subtype."""
     lab = pd.read_csv(sheet, sep="\t", dtype=str).fillna("")
