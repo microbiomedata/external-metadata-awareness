@@ -94,8 +94,8 @@ Status as of 2026-10-13, checked from an LBL laptop on the LBL VPN. "Works" mean
 | GOLD Excel download | Works | Nothing | `goldData.xlsx` from gold.jgi.doe.gov; lacks some fields present in the database. |
 | GOLD website | Works | Nothing | Manual, no bulk export. |
 | contextualizer-ai/gold-tools | Not checked | | |
-
-Other JGI sources reachable without a login: the Secondary Metabolism Collaboratory (SMC) API at https://smc.jgi.doe.gov (its data usage policy says the data are "freely available without restriction") and the JGI Data Portal file search at https://files.jgi.doe.gov.
+| SMC API, https://smc.jgi.doe.gov | Works | Nothing | Secondary Metabolism Collaboratory: biosynthetic gene clusters and their source genomes. Its data usage policy says the data are "freely available without restriction". |
+| JGI Data Portal file search, https://files.jgi.doe.gov/search/ | Works | Nothing | Search returns JSON; downloads were not tested. |
 
 ## INSDC BioSample
 
