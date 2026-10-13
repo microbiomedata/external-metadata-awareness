@@ -178,6 +178,33 @@ checks each name rule against the field-based flags. "Agree" means the fields sa
 - Sample names add 777 inflow and 1,027 outflow samples that the fields say nothing about. Inflow by fields or name is 246,889: the 246,082 from fields, the 777, and 30 samples whose name says inflow while the fields say outflow. 82 BioProjects have inflow only by sample name (704 samples).
 - `wastewater_flow_labels` keeps one document per candidate with every flag, for training a subtype classifier (https://github.com/microbiomedata/external-metadata-awareness/issues/580).
 
+## Subtype classifier, first baseline
+
+A first try at https://github.com/microbiomedata/external-metadata-awareness/issues/580 scope item 3, run 2026-10-13:
+
+```bash
+MONGO_URI=... poetry run wastewater-subtype-classifier --out-dir local/wastewater_subtype/<date>
+```
+
+Labels come from rules: inflow and effluent from `wastewater_flow_labels`, plus sludge (`sludge|mixed liquor|biosolid`), digester (`digest(er|or|ate|ion)|biogas`, which wins over sludge) and sewer (`sewer`, `manhole`, `sewershed`, pump or lift station). The rule words are removed from the text before training, so the model has to learn from the rest of the record. The model is one logistic regression per subtype, on word unigrams and bigrams (letters only, so it can't memorize sample-ID patterns), from `env_broad_scale`, `env_local_scale`, `env_medium`, `isolation_source`, `description_title` and the sample name. 20% of BioProjects are held out (80,999 of 579,073 samples; seed 0).
+
+| subtype | rule labels | held-out projects with a positive | held-out F1 | held-out F1, no surveillance package | unlabeled samples predicted at 0.8 |
+|---|---|---|---|---|---|
+| inflow | 246,889 | 7,692 | 0.844 | 0.817 | 12,483 |
+| effluent | 14,464 | 417 | 0.186 | 0.189 | 9,499 |
+| sludge | 119,364 | 2,989 | 0.778 | 0.796 | 3,564 |
+| digester | 40,568 | 1,764 | 0.883 | 0.883 | 259 |
+| sewer | 5,964 | 26 | 0.039 | 0.040 | 1,268 |
+
+Reading 12 random samples from each subtype's 200 highest-scoring unlabeled samples (one reader):
+
+- Inflow: all 12 are SARS-CoV-2 surveillance samples without `ww_sample_matrix`. The model learned that surveillance means inflow, which may be true but is not evidence.
+- Effluent: catches what the rules miss, such as the misspelling "effulent" and "Treated municipal sewage", but also "Hexane-treated" and "pesticide treated".
+- Digester and sludge: mostly lab anaerobic reactors, anammox granules and bioreactor biomass; some real, some not.
+- Sewer has too few projects to train or test.
+
+So far this classifier mostly relearns the rules and package habits. It is useful for finding gaps in the rules, not as an independent label. A real test needs a hand-checked set of samples that the rules don't decide.
+
 ## Limits
 
 - Precision was checked by eye on 25 random wastewater samples outside any wastewater package, under the original terms: 23 were wastewater or treatment-plant samples; 2 matched on fields not reviewed. The 21,857 samples that match only "activated sludge" were checked separately on 50 random samples (2026-10-01, one reader, judged from the record's own fields): 2 state a treatment plant, 9 a lab or pilot reactor, microcosm or experiment, 12 are genomes derived from activated sludge with no setting given, and 27 give no setting. So this row cannot be read as treatment-plant samples; exclude it if lab reactors should not count. The terms also catch hospital wastewater and industrial effluent.
