@@ -19,6 +19,16 @@ const NAME_RAW_TOKENS = /(^|[^A-Za-z])(RAW|Raw|RW)([^A-Za-z]|$)/;
 const matches = (f, re) => ({ $regexMatch: { input: { $toString: { $ifNull: [`$${f}`, ""] } }, regex: re } });
 const anyField = (re) => ({ $or: FLOW_FIELDS.map(f => matches(f, re)) });
 
+// The lookups below need these; the flattening scripts do not create them. Skip any that already exist under another name.
+const ensureIndex = (coll, key) => {
+  const k = JSON.stringify(key);
+  if (!coll.getIndexes().some(i => JSON.stringify(i.key) === k)) coll.createIndex(key);
+};
+ensureIndex(db.biosamples_flattened, { accession: 1 });
+ensureIndex(db.biosamples_ids, { accession: 1 });
+ensureIndex(db.biosamples_links, { target: 1, accession: 1 });
+ensureIndex(db.sra_biosamples_bioprojects, { biosample_accession: 1 });
+
 db.wastewater_biosample_candidates.aggregate([
   { $project: Object.assign({ _id: 0, accession: 1 }, Object.fromEntries(FLOW_FIELDS.map(f => [f, 1]))) },
   { $lookup: { from: "biosamples_flattened", localField: "accession", foreignField: "accession", pipeline: [{ $project: { _id: 0, ww_sample_matrix: 1 } }], as: "flat" } },
@@ -72,16 +82,18 @@ RULES.forEach(([label, rule, same, other]) => {
     { $match: { [rule]: true, $or: [{ [same]: true }, { [other]: true }] } },
     { $unwind: { path: "$bioprojects", preserveNullAndEmptyArrays: true } },
     { $group: { _id: { $ifNull: ["$bioprojects", "(none)"] }, agree: { $sum: { $cond: [`$${same}`, 1, 0] } }, disagree: { $sum: { $cond: [{ $not: [`$${same}`] }, 1, 0] } } } },
-    { $sort: { agree: -1 } }
+    { $sort: { agree: -1, _id: 1 } }
   ], { allowDiskUse: true }).toArray();
   const sumAgree = byBp.reduce((s, d) => s + d.agree, 0);
   const top = byBp[0] || { agree: 0, disagree: 0 };
   const rest = byBp.slice(1);
   const restAgree = rest.reduce((s, d) => s + d.agree, 0), restDis = rest.reduce((s, d) => s + d.disagree, 0);
   const perProject = byBp.filter(d => d.agree + d.disagree >= 5).map(d => d.agree / (d.agree + d.disagree)).sort((a, b) => a - b);
-  const median = perProject.length ? (100 * perProject[Math.floor(perProject.length / 2)]).toFixed(1) : "";
+  const mid = Math.floor(perProject.length / 2);
+  const median = !perProject.length ? "" :
+    (100 * (perProject.length % 2 ? perProject[mid] : (perProject[mid - 1] + perProject[mid]) / 2)).toFixed(1);
   print([label, tot.agree, tot.disagree, tot.neither, pct(tot.agree, tot.agree + tot.disagree), byBp.length,
     pct(top.agree, sumAgree), pct(restAgree, restAgree + restDis), median].join("\t"));
   print(`  largest: ${top._id} (${top.agree} agree, ${top.disagree} disagree); projects with a disagreement: ` +
-    byBp.filter(d => d.disagree > 0).sort((a, b) => b.disagree - a.disagree).slice(0, 5).map(d => `${d._id} ${d.disagree}/${d.agree + d.disagree}`).join(", "));
+    byBp.filter(d => d.disagree > 0).sort((a, b) => b.disagree - a.disagree || String(a._id).localeCompare(String(b._id))).slice(0, 5).map(d => `${d._id} ${d.disagree}/${d.agree + d.disagree}`).join(", "));
 });
