@@ -161,13 +161,13 @@ Some submitters mark flow only in the BioSample sample name: PRJNA1224513 says "
 mongosh "$MONGO_URI" mongo-js/wastewater_sample_name_flow_check.js
 ```
 
-checks each name rule against the field-based flags. "Agree" means the fields say the same flow, "disagree" only the other one, "new" neither.
+checks each name rule against the field-based flags. "Agree" means the fields say the same flow, "disagree" only the other one, "new" neither. The last column leaves out samples with no BioProject.
 
 | name rule | agree | disagree | new | agreement % | without the largest project % |
 |---|---|---|---|---|---|
-| inflow tokens | 5,374 | 27 | 683 | 99.5 | 96.7 |
+| inflow tokens | 5,374 | 27 | 683 | 99.5 | 97.5 |
 | inflow words | 403 | 3 | 94 | 99.3 | 99.1 |
-| outflow tokens | 469 | 11 | 913 | 97.7 | 99.5 |
+| outflow tokens | 469 | 11 | 913 | 97.7 | 99.4 |
 | outflow words | 374 | 0 | 114 | 100.0 | 100.0 |
 | RAW, Raw, RW tokens (not used) | 488 | 106 | 176 | 82.2 | 73.2 |
 
@@ -175,7 +175,7 @@ checks each name rule against the field-based flags. "Agree" means the fields sa
 - "Influent" can mean the influent to one treatment step. In two water reclamation projects, names like "O3_INF" and "SE1_Inf" appear to mark the feed to an ozone or filter step, while the fields say effluent; PRJNA749122's `isolation_source` is "Liquid sample from filtered secondary wastewater effluent" (PRJNA849266, 14 samples; PRJNA749122, 6).
 - Some records contradict themselves: PRJNA1083020 (CIWARS) names samples "..._EFF_..." with `isolation_source` "influent sewage" (9 samples).
 - RAW disagrees mostly in PRJNA951863, where "Raw1_bin" is a genome bin from palm oil mill effluent sludge.
-- Sample names add 777 inflow and 1,027 outflow samples that the fields say nothing about. Inflow by fields or name is 246,889. 82 BioProjects have inflow only by sample name (704 samples).
+- Sample names add 777 inflow and 1,027 outflow samples that the fields say nothing about. Inflow by fields or name is 246,889: the 246,082 from fields, the 777, and 30 samples whose name says inflow while the fields say outflow. 82 BioProjects have inflow only by sample name (704 samples).
 - `wastewater_flow_labels` keeps one document per candidate with every flag, for training a subtype classifier (https://github.com/microbiomedata/external-metadata-awareness/issues/580).
 
 ## Limits

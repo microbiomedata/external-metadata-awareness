@@ -77,13 +77,15 @@ RULES.forEach(([label, rule, same, other]) => {
     { $match: { [rule]: true } },
     { $group: { _id: null, agree: { $sum: { $cond: [`$${same}`, 1, 0] } }, disagree: { $sum: { $cond: [{ $and: [`$${other}`, { $not: [`$${same}`] }] }, 1, 0] } }, neither: { $sum: { $cond: [{ $or: [`$${same}`, `$${other}`] }, 0, 1] } } } }
   ]).toArray()[0] || { agree: 0, disagree: 0, neither: 0 };
-  // A sample in several BioProjects counts in each; a sample with none counts under "(none)"
-  const byBp = L.aggregate([
+  // A sample in several BioProjects counts in each. Samples with no BioProject are grouped as "(none)" and kept out of the project statistics.
+  const grouped = L.aggregate([
     { $match: { [rule]: true, $or: [{ [same]: true }, { [other]: true }] } },
     { $unwind: { path: "$bioprojects", preserveNullAndEmptyArrays: true } },
     { $group: { _id: { $ifNull: ["$bioprojects", "(none)"] }, agree: { $sum: { $cond: [`$${same}`, 1, 0] } }, disagree: { $sum: { $cond: [{ $not: [`$${same}`] }, 1, 0] } } } },
     { $sort: { agree: -1, _id: 1 } }
   ], { allowDiskUse: true }).toArray();
+  const none = grouped.find(d => d._id === "(none)") || { agree: 0, disagree: 0 };
+  const byBp = grouped.filter(d => d._id !== "(none)");
   const sumAgree = byBp.reduce((s, d) => s + d.agree, 0);
   const top = byBp[0] || { agree: 0, disagree: 0 };
   const rest = byBp.slice(1);
@@ -95,5 +97,6 @@ RULES.forEach(([label, rule, same, other]) => {
   print([label, tot.agree, tot.disagree, tot.neither, pct(tot.agree, tot.agree + tot.disagree), byBp.length,
     pct(top.agree, sumAgree), pct(restAgree, restAgree + restDis), median].join("\t"));
   print(`  largest: ${top._id} (${top.agree} agree, ${top.disagree} disagree); projects with a disagreement: ` +
-    byBp.filter(d => d.disagree > 0).sort((a, b) => b.disagree - a.disagree || String(a._id).localeCompare(String(b._id))).slice(0, 5).map(d => `${d._id} ${d.disagree}/${d.agree + d.disagree}`).join(", "));
+    byBp.filter(d => d.disagree > 0).sort((a, b) => b.disagree - a.disagree || String(a._id).localeCompare(String(b._id))).slice(0, 5).map(d => `${d._id} ${d.disagree}/${d.agree + d.disagree}`).join(", ") +
+    `; no BioProject: ${none.agree} agree, ${none.disagree} disagree`);
 });
