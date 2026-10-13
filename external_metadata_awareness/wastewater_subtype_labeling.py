@@ -24,6 +24,7 @@ logger = logging.getLogger(__name__)
 BANDS = [(0.8, 1.01, 25), (0.5, 0.8, 15), (0.2, 0.5, 10)]
 RANDOM_EXTRA = 50
 MAX_PER_GROUP = 3
+LABELS = {*SUBTYPES, "none", "unclear"}
 
 
 @click.group()
@@ -78,6 +79,15 @@ def sample(mongo_uri: str, env_file: str | None, predictions: Path, sheet: Path,
     click.echo(f"{len(out)} samples; strata: {keyframe['stratum'].str.split().str[0].value_counts().to_dict()}")
 
 
+def parse_labels(items: pd.Series, labels: pd.Series, column: str) -> pd.Series:
+    """Label sets per row; fail on blank or unknown labels, or none/unclear mixed with another label."""
+    sets = labels.str.lower().str.replace(" ", "").str.split(",").apply(lambda xs: {x for x in xs if x})
+    bad = [f"item {i}: {raw!r}" for i, raw, s in zip(items, labels, sets) if not s or s - LABELS or (len(s) > 1 and s & {"none", "unclear"})]
+    if bad:
+        raise click.ClickException(f"{len(bad)} rows in {column} need fixing (allowed: {', '.join(sorted(LABELS))}; none and unclear stand alone): " + "; ".join(bad[:10]))
+    return sets
+
+
 @main.command()
 @click.option("--sheet", type=click.Path(exists=True, path_type=Path), required=True, help="Labeled sheet (labels column, comma-separated)")
 @click.option("--key", type=click.Path(exists=True, path_type=Path), required=True, help="Sampling key, or held_out_predictions.tsv from a run with --hold-out")
@@ -93,7 +103,7 @@ def score(sheet: Path, key: Path, other: Path | None, threshold: float, label_co
     df = lab[["item", "accession", label_column]].rename(columns={label_column: "labels"}).assign(item=lambda d: d["item"].astype(int)).merge(k.drop(columns=["item"], errors="ignore"), on="accession")
     if len(df) < len(lab):
         logger.warning("%d labeled samples have no scores in %s", len(lab) - len(df), key)
-    sets = df["labels"].str.lower().str.replace(" ", "").str.split(",").apply(set)
+    sets = parse_labels(df["item"], df["labels"], label_column)
     rows = []
     for subtype in SUBTYPES:
         gold = sets.apply(lambda s: subtype in s).to_numpy()
@@ -109,6 +119,7 @@ def score(sheet: Path, key: Path, other: Path | None, threshold: float, label_co
     click.echo("labels: " + str(pd.Series([x for s in sets for x in s]).value_counts().to_dict()))
     if other is not None:
         o = pd.read_csv(other, sep="\t", dtype=str).fillna("")
-        o_sets = o.set_index(o["item"].astype(int))[other_column].str.lower().str.replace(" ", "").str.split(",").apply(set)
+        o_sets = parse_labels(o["item"], o[other_column], other_column)
+        o_sets.index = o["item"].astype(int)
         same = [s == o_sets.get(i, set()) for i, s in zip(df["item"], sets)]
         click.echo(f"exact label-set agreement with the other labeler: {sum(same)} of {len(same)}")

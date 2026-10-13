@@ -69,3 +69,16 @@ def test_score_reads_predictions_without_item_numbers(tmp_path):
     assert result.exit_code == 0, result.output
     digester = next(line for line in result.output.splitlines() if line.strip().startswith("digester"))
     assert digester.split()[1:5] == ["1", "1", "0", "1"]
+
+
+def test_score_rejects_blank_unknown_or_mixed_labels(tmp_path):
+    from external_metadata_awareness.wastewater_subtype_labeling import main as labeling
+
+    preds = tmp_path / "preds.tsv"
+    pd.DataFrame({"accession": ["S1", "S2", "S3"], **{f"prob_{s}": [0.0] * 3 for s in ["inflow", "effluent", "sludge", "digester", "sewer"]}}).to_csv(preds, sep="\t", index=False)
+    for labels in (["digester", "", "none"], ["digester", "sluge", "none"], ["digester", "none,sludge", "none"]):
+        sheet = tmp_path / "sheet.tsv"
+        pd.DataFrame({"item": [1, 2, 3], "accession": ["S1", "S2", "S3"], "labels": labels}).to_csv(sheet, sep="\t", index=False)
+        result = CliRunner().invoke(labeling, ["score", "--sheet", str(sheet), "--key", str(preds)])
+        assert result.exit_code != 0, labels
+        assert "item 2" in result.output

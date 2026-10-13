@@ -213,7 +213,7 @@ Against the rules, sludge and digester transfer to unseen projects and inflow, e
 [wastewater-subtype-handchecked-2026-10-13.tsv](wastewater-subtype-handchecked-2026-10-13.tsv) holds 300 held-out samples that the rules leave unlabeled, labeled by reading each record against [wastewater-subtype-labeling-guide.md](wastewater-subtype-labeling-guide.md), which was written before any sample was read. For each subtype, 25 come from classifier scores of 0.8 or more, 15 from 0.5 to 0.8 and 10 from 0.2 to 0.5, plus 50 at random, with at most 3 per BioProject group in a band. The labeling sheet had no scores on it. The scores in the file come from the run that drew the set (head a84ac04, before group names were made order-independent); later runs keep these samples in the test set through `--hold-out`.
 
 ```bash
-poetry run wastewater-subtype-labeling sample --predictions <run>/held_out_predictions.tsv --sheet sheet.tsv --key key.tsv
+MONGO_URI=... poetry run wastewater-subtype-labeling sample --predictions <run>/held_out_predictions.tsv --sheet sheet.tsv --key key.tsv
 poetry run wastewater-subtype-labeling score --sheet labeled.tsv --key key.tsv [--other second_labeled.tsv]
 # reproduce the table below from the committed file
 poetry run wastewater-subtype-labeling score --sheet docs/wastewater-subtype-handchecked-2026-10-13.tsv --label-column labels_first \
