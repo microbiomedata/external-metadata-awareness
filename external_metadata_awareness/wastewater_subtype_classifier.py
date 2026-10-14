@@ -30,8 +30,8 @@ logger = logging.getLogger(__name__)
 TEXT_FIELDS = ["env_broad_scale", "env_local_scale", "env_medium", "isolation_source", "description_title"]
 
 # Same wording as mongo-js/wastewater_bioproject_table.js and wastewater_sample_name_flow_check.js
-INFLOW = r"(?<!surface water )influent|inflow|in-flow|raw (?:sewage|wastewater|waste water)|untreated (?:sewage|wastewater|waste water)|plant inlet|\binlet\b"
-OUTFLOW = r"effluent|outflow|outfall|(?<!un)treated (?:sewage|wastewater|waste water)|discharge"
+INFLOW = r"(?<!surface water )influent|inflow|in-flow|raw (?:sewage|wastewater|waste water)|untreated (?:sewage|wastewater|waste water)|incoming (?:[a-z-]+ )?(?:sewage|wastewater|waste water)|plant inlet|\binlet\b"
+OUTFLOW = r"effluent|effulent|\befluent|effleunt|outflow|outfall|(?<!un)treated (?:[a-z-]+ )?(?:sewage|wastewater|waste water)(?! ?sludge)|secondary[- ]treated (?:water|wastewater|waste water|sewage|effluent)|after secondary (?:treatment|clarifier|clarification)|discharge"
 NAME_INFLOW_TOKENS = r"(?<![A-Za-z])(?:IN|INF|INFL|Inf|Infl)(?![A-Za-z])"
 NAME_OUTFLOW_TOKENS = r"(?<![A-Za-z])(?:EF|EFF|Eff|OUT)(?![A-Za-z])"
 SLUDGE = r"sludge|mixed liquor|biosolid"

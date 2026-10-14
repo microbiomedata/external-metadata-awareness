@@ -7,8 +7,8 @@
 //
 // The patterns are copied from wastewater_bioproject_table.js; keep the two in step.
 
-const INFLOW_TERMS = /(?<!surface water )influent|inflow|in-flow|raw (sewage|wastewater|waste water)|untreated (sewage|wastewater|waste water)|plant inlet|\binlet\b/i;
-const OUTFLOW_TERMS = /effluent|outflow|outfall|(?<!un)treated (sewage|wastewater|waste water)|discharge/i;
+const INFLOW_TERMS = /(?<!surface water )influent|inflow|in-flow|raw (sewage|wastewater|waste water)|untreated (sewage|wastewater|waste water)|incoming ([a-z-]+ )?(sewage|wastewater|waste water)|plant inlet|\binlet\b/i;
+const OUTFLOW_TERMS = /effluent|effulent|\befluent|effleunt|outflow|outfall|(?<!un)treated ([a-z-]+ )?(sewage|wastewater|waste water)(?! ?sludge)|secondary[- ]treated (water|wastewater|waste water|sewage|effluent)|after secondary (treatment|clarifier|clarification)|discharge/i;
 const FLOW_FIELDS = ["env_broad_scale", "env_local_scale", "env_medium", "isolation_source", "description_title"];
 const MATRIX_INFLOW = /^(raw wastewater|post grit removal)$/i;
 const MATRIX_OUTFLOW = /effluent/i;

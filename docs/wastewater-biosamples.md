@@ -123,32 +123,46 @@ The BioProject comes from the BioSample record's own link, or from the SRA run t
 
 ## Inflow and outflow
 
-Inflow here means untreated sewage entering a plant or sampled in the sewer; outflow means effluent. Measured 2026-10-13 on the same 579,073 candidates. Three columns of the BioProject table count them:
+Inflow here means untreated sewage entering a plant or sampled in the sewer; outflow means effluent. Measured 2026-10-13 on the same 579,073 candidates, and again 2026-10-14 after the rule additions below. Three columns of the BioProject table count them:
 
 - `inflow_ww_sample_matrix`: `ww_sample_matrix` is "raw wastewater" or "post grit removal". 207,072 of the 207,847 biosamples that have this field are in the NCBI `SARS-CoV-2.wwsurv.1.0` package; its other values are "primary effluent", "secondary effluent", "primary sludge", "sewer pipeline sediments" and placeholders.
-- `inflow_wording`: any of `env_broad_scale`, `env_local_scale`, `env_medium`, `isolation_source` or `description_title` matches `/influent|inflow|in-flow|raw (sewage|wastewater|waste water)|untreated (sewage|wastewater|waste water)|plant inlet|\binlet\b/i`, except "surface water influent", which is river water.
-- `outflow`: `ww_sample_matrix` contains "effluent", or one of those five fields matches `/effluent|outflow|outfall|treated (sewage|wastewater|waste water)|discharge/i`, not counting "untreated".
+- `inflow_wording`: any of `env_broad_scale`, `env_local_scale`, `env_medium`, `isolation_source` or `description_title` matches `/influent|inflow|in-flow|raw (sewage|wastewater|waste water)|untreated (sewage|wastewater|waste water)|incoming ([a-z-]+ )?(sewage|wastewater|waste water)|plant inlet|\binlet\b/i`, except "surface water influent", which is river water.
+- `outflow`: `ww_sample_matrix` contains "effluent", or one of those five fields matches `/effluent|effulent|\befluent|effleunt|outflow|outfall|treated ([a-z-]+ )?(sewage|wastewater|waste water)(?! ?sludge)|secondary[- ]treated (water|wastewater|waste water|sewage|effluent)|after secondary (treatment|clarifier|clarification)|discharge/i`, not counting "untreated".
 
 | set | biosamples |
 |---|---|
 | inflow by `ww_sample_matrix` | 196,969 |
-| inflow by wording | 53,598 |
-| inflow by wording only, not by `ww_sample_matrix` | 49,113 |
-| inflow by either | 246,082 |
-| outflow | 13,426 |
-| both inflow and outflow | 36 |
+| inflow by wording | 53,617 |
+| inflow by wording only, not by `ww_sample_matrix` | 49,132 |
+| inflow by either | 246,101 |
+| outflow | 13,636 |
+| both inflow and outflow | 37 |
 
 | BioProjects with at least one | BioProjects | sum of biosamples |
 |---|---|---|
 | inflow by `ww_sample_matrix` | 148 | 196,520 |
-| inflow by wording | 507 | 16,310 |
-| inflow by wording, no surveillance-package samples | 500 | |
-| outflow | 1,280 | 12,781 |
+| inflow by wording | 509 | 16,329 |
+| inflow by wording, no surveillance-package samples | 502 | |
+| outflow | 1,287 | 12,993 |
 
 - Most inflow samples come from the surveillance package; the largest such project is PRJNA839090 (Biobot Analytics, 22,008 by `ww_sample_matrix`).
 - Outside those packages the largest inflow projects are PRJNA1247874 (CASPER metagenomic sequencing, 1,729), PRJNA966185 (Baylor, 808), PRJNA729801 (Southern California metatranscriptomes, 640) and PRJEB53227 (614).
 - 37,300 of the wording matches have no BioProject. 37,057 of those are EBI samples in `Generic.1.0` titled "European sewage" with `isolation_source` "untreated sewage"; none has a BioProject link or an SRA run in the local copy.
 - Outflow wording also catches bioreactor and biofilter effluent, palm oil mill effluent, hospital effluent and "ileostomy effluent", so read the outflow column as samples to drop from an inflow set, not as treatment-plant effluent.
+
+Rule additions, 2026-10-14. The classifier's top unlabeled predictions pointed at wording the rules missed. Each addition below was counted against the candidates and checked by reading up to 20 random new matches:
+
+| addition | flow | new samples | read | right |
+|---|---|---|---|---|
+| "incoming", optionally one word, before sewage or wastewater | inflow | 19 | 19 | 19 |
+| misspellings "effulent", "efluent", "effleunt" | outflow | 15 | 15 | 15 |
+| "treated" with one word before sewage or wastewater ("Treated municipal sewage"), not when "sludge" follows | outflow | 71 | 20 | 16 |
+| "secondary treated" water, wastewater, sewage or effluent, or "after secondary" treatment, clarifier or clarification | outflow | 124 | 20 | 20 |
+
+- The 4 of 20 "treated" matches not counted right are "anaerobic treated pharmaceutical wastewater" in sludge metagenomes, which could be reactor contents. Without the "sludge" exclusion, 5 more of 20 were "heat treated municipal wastewater sludge".
+- Most of the 124 "secondary" matches come from one DDBJ project ("Train A, secondary treated water").
+- Left out: "secondary" alone (898 new samples, mixing secondary sludge, sedimentation tank sludge and clarifier water), "secondary clarifier" alone (water or settled sludge, often not said), and "affluent" (9 samples, "affluent of wastewater treatment plant", probably a misspelling of influent, all already marked inflow).
+- One sample newly marked outflow by the "treated" addition already had an inflow flag; no other new match has a flag for the opposite flow.
 
 ### Sample names
 
@@ -168,19 +182,19 @@ checks each name rule against the field-based flags. "Agree" means the fields sa
 | inflow tokens | 5,374 | 27 | 683 | 99.5 | 97.5 |
 | inflow words | 403 | 3 | 94 | 99.3 | 99.1 |
 | outflow tokens | 469 | 11 | 913 | 97.7 | 99.4 |
-| outflow words | 374 | 0 | 114 | 100.0 | 100.0 |
-| RAW, Raw, RW tokens (not used) | 488 | 106 | 176 | 82.2 | 73.2 |
+| outflow words | 381 | 0 | 109 | 100.0 | 100.0 |
+| RAW, Raw, RW tokens (not used) | 488 | 107 | 175 | 82.0 | 73.0 |
 
 - One project carries the inflow tokens: PRJNA938474 (OHA/OSU wastewater project, names like "ALB-Inf-3-29-23-A") holds 4,591 of the 5,374 agreements.
 - "Influent" can mean the influent to one treatment step. In two water reclamation projects, names like "O3_INF" and "SE1_Inf" appear to mark the feed to an ozone or filter step, while the fields say effluent; PRJNA749122's `isolation_source` is "Liquid sample from filtered secondary wastewater effluent" (PRJNA849266, 14 samples; PRJNA749122, 6).
 - Some records contradict themselves: PRJNA1083020 (CIWARS) names samples "..._EFF_..." with `isolation_source` "influent sewage" (9 samples).
 - RAW disagrees mostly in PRJNA951863, where "Raw1_bin" is a genome bin from palm oil mill effluent sludge.
-- Sample names add 777 inflow and 1,027 outflow samples that the fields say nothing about. Inflow by fields or name is 246,889: the 246,082 from fields, the 777, and 30 samples whose name says inflow while the fields say outflow. 82 BioProjects have inflow only by sample name (704 samples).
+- Sample names add 777 inflow and 1,022 outflow samples that the fields say nothing about. Inflow by fields or name is 246,908: the 246,101 from fields, the 777, and 30 samples whose name says inflow while the fields say outflow. 82 BioProjects have inflow only by sample name (704 samples).
 - `wastewater_flow_labels` keeps one document per candidate with every flag, for training a subtype classifier (https://github.com/microbiomedata/external-metadata-awareness/issues/580).
 
 ## Subtype classifier, first baseline
 
-A first try at https://github.com/microbiomedata/external-metadata-awareness/issues/580 scope item 3, run 2026-10-13:
+A first try at https://github.com/microbiomedata/external-metadata-awareness/issues/580 scope item 3, first run 2026-10-13, rerun 2026-10-14 after the rule additions:
 
 ```bash
 MONGO_URI=... poetry run wastewater-subtype-classifier --out-dir local/wastewater_subtype/<date> --hold-out docs/wastewater-subtype-handchecked-2026-10-13.tsv
@@ -192,9 +206,9 @@ Evaluation holds out 20% of BioProject groups, plus every group that holds a han
 
 | subtype | rule labels | held-out groups with a positive | held-out F1 | held-out F1, no surveillance package | unlabeled samples predicted at 0.8 |
 |---|---|---|---|---|---|
-| inflow | 246,889 | 155 | 0.892 | 0.082 | 12,118 |
-| effluent | 14,464 | 265 | 0.120 | 0.149 | 11,673 |
-| sludge | 119,364 | 1,376 | 0.779 | 0.781 | 4,169 |
+| inflow | 246,908 | 156 | 0.892 | 0.082 | 12,119 |
+| effluent | 14,669 | 266 | 0.120 | 0.150 | 11,481 |
+| sludge | 119,364 | 1,376 | 0.778 | 0.780 | 4,168 |
 | digester | 40,568 | 520 | 0.855 | 0.855 | 382 |
 | sewer | 5,964 | 26 | 0.048 | 0.134 | 449 |
 
@@ -210,7 +224,7 @@ Against the rules, sludge and digester transfer to unseen projects and inflow, e
 
 ### Hand-checked set
 
-[wastewater-subtype-handchecked-2026-10-13.tsv](wastewater-subtype-handchecked-2026-10-13.tsv) holds 300 held-out samples that the rules leave unlabeled, labeled by reading each record against [wastewater-subtype-labeling-guide.md](wastewater-subtype-labeling-guide.md), which was written before any sample was read. For each subtype, 25 come from classifier scores of 0.8 or more, 15 from 0.5 to 0.8 and 10 from 0.2 to 0.5, plus 50 at random, with at most 3 per BioProject group in a band. The labeling sheet had no scores on it. The scores in the file come from the run that drew the set (head a84ac04, before group names were made order-independent); later runs keep these samples in the test set through `--hold-out`.
+[wastewater-subtype-handchecked-2026-10-13.tsv](wastewater-subtype-handchecked-2026-10-13.tsv) holds 300 held-out samples that the rules leave unlabeled, labeled by reading each record against [wastewater-subtype-labeling-guide.md](wastewater-subtype-labeling-guide.md), which was written before any sample was read. For each subtype, 25 come from classifier scores of 0.8 or more, 15 from 0.5 to 0.8 and 10 from 0.2 to 0.5, plus 50 at random, with at most 3 per BioProject group in a band. The labeling sheet had no scores on it. After the 2026-10-14 rule additions, one of the 300 (SAMN12429470, "Incoming wastewater ...") gets a rule label, inflow, which agrees with its hand label. The scores in the file come from the run that drew the set (head a84ac04, before group names were made order-independent); later runs keep these samples in the test set through `--hold-out`.
 
 ```bash
 MONGO_URI=... poetry run wastewater-subtype-labeling sample --predictions <run>/held_out_predictions.tsv --sheet sheet.tsv --key key.tsv
