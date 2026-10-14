@@ -35,7 +35,7 @@ OUTFLOW = r"effluent|effulent|\befluent|effleunt|outflow|outfall|(?<!un)treated 
 NAME_INFLOW_TOKENS = r"(?<![A-Za-z])(?:IN|INF|INFL|Inf|Infl)(?![A-Za-z])"
 NAME_OUTFLOW_TOKENS = r"(?<![A-Za-z])(?:EF|EFF|Eff|OUT)(?![A-Za-z])"
 SLUDGE = r"sludge|mixed liquor|biosolid"
-DIGESTER = r"digest(?:er|or|ate|ion)|biogas"
+DIGESTER = r"digest(?:er|or|ate|ion|ed)|biogas"
 SEWER = r"\bsewers?\b|sewer pipe|manhole|sewershed|pump(?:ing)? station|lift station"
 
 # A digester sample often says "anaerobic sludge"; count it as digester only
