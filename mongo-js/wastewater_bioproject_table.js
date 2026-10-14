@@ -17,8 +17,8 @@ const FIELDS = [
 ];
 // Inflow (untreated sewage entering a plant) and outflow (effluent). FLOW_FIELDS leaves out package, organism and env_package names.
 // "surface water influent" is a river feeding a reservoir, not sewage, so it is excluded.
-const INFLOW_TERMS = /(?<!surface water )influent|inflow|in-flow|raw (sewage|wastewater|waste water)|untreated (sewage|wastewater|waste water)|plant inlet|\binlet\b/i;
-const OUTFLOW_TERMS = /effluent|outflow|outfall|(?<!un)treated (sewage|wastewater|waste water)|discharge/i;
+const INFLOW_TERMS = /(?<!surface water )influent|inflow|in-flow|raw (sewage|wastewater|waste water)|untreated (sewage|wastewater|waste water)|incoming ([a-z-]+ )?(sewage|wastewater|waste water)|plant inlet|\binlet\b/i;
+const OUTFLOW_TERMS = /effluent|effulent|\befluent|effleunt|outflow|outfall|(?<!un)treated ([a-z-]+ )?(sewage|wastewater|waste water)(?! ?sludge)|secondary[- ]treated (water|wastewater|waste water|sewage|effluent)|after secondary (treatment|clarifier|clarification)|discharge/i;
 const FLOW_FIELDS = ["env_broad_scale", "env_local_scale", "env_medium", "isolation_source", "description_title"];
 // Some submitters mark flow only in the sample name, as a word or a separate token ("JNW-IN_Virome", "S_XM_QP_INF_2").
 // A token must not touch a letter on either side. Case-sensitive, so lower-case "in" does not count.
@@ -132,7 +132,7 @@ db.wastewater_biosample_candidates.aggregate([
       owners: 1, countries: 1, packages: 1
     }
   },
-  { $sort: { wastewater: -1, biosamples: -1 } },
+  { $sort: { wastewater: -1, biosamples: -1, bioproject: 1 } },
   { $out: "wastewater_bioproject_summary" }
 ], { allowDiskUse: true });
 
@@ -146,5 +146,6 @@ const cols = ["bioproject", "title", "biosamples", "wastewater", "activated_slud
   "mixs_wastewater_package", "wwsurv_package", "inflow_ww_sample_matrix", "inflow_wording", "outflow", "inflow_sample_name", "outflow_sample_name", "in_mgnify", "in_site_kb", "linked_to_several_bioprojects", "bioproject_from_sra_runs",
   "owners", "countries", "packages"];
 print(cols.join("\t"));
-db.wastewater_bioproject_summary.find().sort({ wastewater: -1, biosamples: -1 }).forEach(d =>
+// bioproject breaks ties, so rows keep their order from run to run
+db.wastewater_bioproject_summary.find().sort({ wastewater: -1, biosamples: -1, bioproject: 1 }).forEach(d =>
   print(cols.map(c => (Array.isArray(d[c]) ? clean(list(d[c])) : clean(d[c]))).join("\t")));

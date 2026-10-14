@@ -82,3 +82,19 @@ def test_score_rejects_blank_unknown_or_mixed_labels(tmp_path):
         result = CliRunner().invoke(labeling, ["score", "--sheet", str(sheet), "--key", str(preds)])
         assert result.exit_code != 0, labels
         assert "item 2" in result.output
+
+
+def test_flow_wording_added_2026_10_14():
+    import re
+
+    from external_metadata_awareness.wastewater_subtype_classifier import INFLOW, OUTFLOW
+
+    def has(pattern, text):
+        return re.search(pattern, text, re.IGNORECASE) is not None
+
+    assert has(INFLOW, "Incoming wastewater from a wastewater treatment plant")
+    for text in ["effulent", "Waste water PDA Efluent C", "wastewater secondary effleunt", "Treated municipal sewage44",
+                 "Train A, secondary treated water", "DNA extracted from after secondary treatment"]:
+        assert has(OUTFLOW, text), text
+    for text in ["heat treated municipal wastewater sludge", "untreated municipal sewage", "secondary sludge"]:
+        assert not has(OUTFLOW, text), text
