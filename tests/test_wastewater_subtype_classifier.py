@@ -39,12 +39,12 @@ def test_digester_wording_wins_over_sludge():
 
 
 def test_digested_sludge_counts_as_digester():
-    df = pd.DataFrame({"text_raw": ["Anaerobically digested sludge", "digested sludge with secondary sludge"],
-                       "field_inflow": [False, False], "field_outflow": [False, False], "name_inflow_words": [False, False],
-                       "name_inflow_tokens": [False, False], "name_outflow_words": [False, False], "name_outflow_tokens": [False, False]})
+    df = pd.DataFrame({"text_raw": ["Anaerobically digested sludge", "digested sludge with secondary sludge", "Undigested primary sludge"],
+                       "field_inflow": [False] * 3, "field_outflow": [False] * 3, "name_inflow_words": [False] * 3,
+                       "name_inflow_tokens": [False] * 3, "name_outflow_words": [False] * 3, "name_outflow_tokens": [False] * 3})
     labels = rule_labels(df)
-    assert labels["digester"].tolist() == [True, True]
-    assert labels["sludge"].tolist() == [False, False]
+    assert labels["digester"].tolist() == [True, True, False]
+    assert labels["sludge"].tolist() == [False, False, True]
 
 
 def test_threshold_outside_zero_to_one_is_rejected():
