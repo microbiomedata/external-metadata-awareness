@@ -217,7 +217,7 @@ The process creates a lexical index for annotation and uses it to map terms:
   - `new_bioportal_curie_mapper.py` retrieves BioPortal mappings for terms
   - `plot_oak_annotation_coverage.py` visualizes the coverage statistics
 
-The annotation adds labels, synonyms, obsolete status flags, and ontology mappings to the collections. API errors are logged to `bioportal-class-mapping-errors.txt`, which contains the terminal output from the most recent run.
+The annotation adds labels, synonyms, obsolete status flags, and ontology mappings to the collections.
 
 ## Key Files
 
@@ -448,13 +448,7 @@ Several additional files support the pipeline's functionality:
    - Created by `new_expand_envo_po_lexical_index.py`
    - Used by `new_env_triad_oak_annotator.py` for text annotation
 
-3. **Error Logs**:
-   - `bioportal-class-mapping-errors.txt`: Logs errors encountered during BioPortal API requests
-   - Contains the terminal output buffer from the most recent run of `new_bioportal_curie_mapper.py`
-   - Used for debugging and monitoring the BioPortal mapping process
-   - Shows patterns of access restrictions and problematic ontology prefixes
-
-4. **Collection Inventory**:
+3. **Collection Inventory**:
    - `env-triad-annotation-etc-collections.tsv`: Comprehensive inventory of MongoDB collections
    - Renamed from `mongo-ncbi-loadbalancer-collections.tsv`
    - Documents source, transformation steps, and database location for collections
