@@ -5,10 +5,23 @@ ifdef ENV_FILE
   ENV_FILE_OPTION := --env-file $(ENV_FILE)
 endif
 
-# GitHub API Token (can be set via GITHUB_TOKEN environment variable)
-ifdef GITHUB_TOKEN
-  TOKEN_OPTION := --token $(GITHUB_TOKEN)
-endif
+# GitHub API token. Taken from the gh CLI, which stores it in the macOS Keychain,
+# so no copy is kept in a .env file. An explicit GITHUB_TOKEN still wins if set.
+#
+# ifdef was wrong here: in Make it is true for a variable set to empty, so an empty
+# GITHUB_TOKEN produced "--token " with no value and the command got a malformed flag
+# instead of falling back to unauthenticated.
+# Deliberately lazy. `:=` with $(shell ...) runs `gh auth token` every time anything
+# PARSES this file, including tools that only want to inspect it. `=` defers it until a
+# recipe actually expands TOKEN_OPTION, so `make -n`, a linter, or a code scanner reading
+# the Makefile never invokes gh at all.
+#
+# An explicit GITHUB_TOKEN still wins. Unset and set-but-empty are treated the same, since
+# `ifdef` is true for a variable set to empty, which is what produced a malformed
+# "--token " with no value after it.
+GH_TOKEN_FALLBACK = $(shell gh auth token 2>/dev/null)
+EFFECTIVE_TOKEN = $(or $(strip $(GITHUB_TOKEN)),$(strip $(GH_TOKEN_FALLBACK)))
+TOKEN_OPTION = $(if $(EFFECTIVE_TOKEN),--token $(EFFECTIVE_TOKEN),)
 
 # Default values for GitHub repositories
 GITHUB_OWNER ?= microbiomedata
